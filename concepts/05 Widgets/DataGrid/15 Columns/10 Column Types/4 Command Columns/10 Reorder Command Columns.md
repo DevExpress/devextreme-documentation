@@ -1,0 +1,1 @@
+Command columns are reordered similarly to regular columns. Refer to the [Column Reordering](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Reordering/') article for more information.

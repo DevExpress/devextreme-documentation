@@ -1,0 +1,1 @@
+DevExtreme Scaffolder enables you to scaffold data-bound DevExtreme controls. You can insert them into an existing view or create a new view. The following articles provide step-by-step instructions for both cases:

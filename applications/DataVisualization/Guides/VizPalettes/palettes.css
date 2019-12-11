@@ -1,0 +1,12 @@
+﻿#chart {
+     width: 300px;
+     height: 300px;
+     margin: 0 auto;
+     margin-bottom: 15px
+}
+
+.select-box {
+     width: 180px;
+     height: 35px;
+     margin: 0 auto;
+}

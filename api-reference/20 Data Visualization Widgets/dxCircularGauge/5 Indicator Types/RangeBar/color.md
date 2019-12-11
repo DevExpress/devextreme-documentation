@@ -1,0 +1,3 @@
+---
+default: '#CBC5CF'
+---

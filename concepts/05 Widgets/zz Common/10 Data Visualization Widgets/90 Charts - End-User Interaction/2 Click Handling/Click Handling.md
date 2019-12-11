@@ -1,0 +1,2 @@
+This topic explains how to handle user clicks. To learn about hover and selection, refer to the <a href="/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_End-User_Interaction/Hover_Handling/">Hover Handling</a> and <a href="/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_End-User_Interaction/Selection_Handling/">Selection Handling</a> topics, respectively.
+

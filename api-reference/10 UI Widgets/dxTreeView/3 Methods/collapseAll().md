@@ -1,0 +1,5 @@
+---
+##### shortDescription
+Collapses all items.
+
+---

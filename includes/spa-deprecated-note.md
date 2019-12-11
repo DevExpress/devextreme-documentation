@@ -1,0 +1,1 @@
+[note] From v18.1, the DevExtreme hybrid mobile-related tools, including DevExtreme SPA Framework, are <span style="color:red">deprecated</span>. See [this blog post](https://community.devexpress.com/blogs/aspnet/archive/2018/02/26/devextreme-hybrid-mobile-tools-deprecation-in-v18-1.aspx) for more information.

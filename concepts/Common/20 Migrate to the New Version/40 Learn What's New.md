@@ -1,0 +1,1 @@
+See [What's New in v18.2](https://js.devexpress.com/New/18_2) to learn about the new features, or browse the [DevExtreme version history](https://www.devexpress.com/Support/Center/VersionHistory?TechnologyName=DevExtreme) for details on which features any major or minor release implemented and the issues they resolved.

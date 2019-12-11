@@ -1,0 +1,3 @@
+When modifying a format, you can change the markup tag associated with it and limit format values. Refer to the [getModule(modulePath)](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/getModule(modulePath).md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#getModulemodulePath') description to see a code example.
+
+Module modification is also possible but can cause the module to malfunction.

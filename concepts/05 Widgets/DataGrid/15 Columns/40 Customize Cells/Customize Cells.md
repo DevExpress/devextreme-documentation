@@ -1,0 +1,1 @@
+[tags]dataGRid, data grid, customize cell text, customize cell value, unbound column, customizeText, calculateCellValue, cellTemplate, onCellPrepared

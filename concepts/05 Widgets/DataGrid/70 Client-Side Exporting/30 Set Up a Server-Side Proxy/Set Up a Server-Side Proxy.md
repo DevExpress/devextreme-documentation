@@ -1,0 +1,1 @@
+If you need the export function in browsers that do not provide an API for saving files (that is, in **Safari on Mac OS**), implement a server-side proxy that streams the resulting file back to an end user in response to a POST request. The proxy implementation is different for each platform.

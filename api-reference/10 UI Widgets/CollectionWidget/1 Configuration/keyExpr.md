@@ -1,0 +1,14 @@
+---
+default: null
+type: String | function()
+---
+---
+##### shortDescription
+Specifies which data field provides keys for widget items.
+
+---
+[note]The key value should be unique within the data array.
+
+#####See Also#####
+- [Specify data using **dataSource** option](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource')
+- [Specify data using **items** option](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/items.md '{basewidgetpath}/Configuration/#items')

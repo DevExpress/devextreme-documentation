@@ -1,0 +1,1 @@
+Use the ${{enum}} enum to specify this option when the widget is used as an [ASP.NET MVC Control](/concepts/35%20ASP.NET%20MVC%20Controls/20%20Fundamentals/Fundamentals.md '/Documentation/Guide/ASP.NET_MVC_Controls/Fundamentals/'). This enum accepts the following values: ${{values}}.

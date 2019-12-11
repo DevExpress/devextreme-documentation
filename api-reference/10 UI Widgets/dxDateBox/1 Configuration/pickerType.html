@@ -1,0 +1,86 @@
+<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">native</div>
+        <div class="dx-field-value" data-bind="dxDateBox: { 
+            pickerType: 'native',
+            format: 'datetime'
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">calendar</div>
+        <div class="dx-field-value" data-bind="dxDateBox: { 
+            pickerType: 'calendar',
+            format: 'date'
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">rollers</div>
+        <div class="dx-field-value" data-bind="dxDateBox: { 
+            pickerType: 'rollers',
+            format: 'datetime'
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">list</div>
+        <div class="dx-field-value" data-bind="dxDateBox: { 
+            pickerType: 'list',
+            format: 'time'
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">native</div>
+            <div class="dx-field-value" dx-date-box="{ 
+                pickerType: 'native',
+                format: 'datetime'
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">calendar</div>
+            <div class="dx-field-value" dx-date-box="{ 
+                pickerType: 'calendar',
+                format: 'date'
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">rollers</div>
+            <div class="dx-field-value" dx-date-box="{ 
+                pickerType: 'rollers',
+                format: 'datetime'
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">list</div>
+            <div class="dx-field-value" dx-date-box="{ 
+                pickerType: 'list',
+                format: 'time'
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">native</div>
+        <div class="dx-field-value" id="nativePicker"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">calendar</div>
+        <div class="dx-field-value" id="calendarPicker"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">rollers</div>
+        <div class="dx-field-value" id="rollersPicker"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">list</div>
+        <div class="dx-field-value" id="listPicker"></div>
+    </div>
+</div>
+<!--/@jQuery-->

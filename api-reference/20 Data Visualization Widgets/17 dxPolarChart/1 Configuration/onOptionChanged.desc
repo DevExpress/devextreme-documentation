@@ -1,0 +1,1 @@
+﻿In this example, use the checkbox below to change the legend's visibility. When you change it, the [optionChanged](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Events/#optionChanged) event handler puts information on this event to the container at the bottom.

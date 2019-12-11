@@ -1,0 +1,44 @@
+<!--@Knockout-->
+<div class="dateBox" data-bind="dxDateBox: {
+    applyValueMode: applyMode,
+    format: 'date',
+    pickerType: 'calendar'
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">applyValueMode</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            dataSource: applyModes,
+            value: applyMode
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dateBox" dx-date-box="{
+        format: 'date',
+        pickerType: 'calendar',
+        bindingOptions: {
+            applyValueMode: 'applyMode'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">applyValueMode</div>
+            <div class="dx-field-value" ng-model="applyMode" dx-select-box="{
+                dataSource: applyModes
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dateBox" id="myDateBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">applyValueMode</div>
+        <div class="dx-field-value" id="modeSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

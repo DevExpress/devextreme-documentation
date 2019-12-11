@@ -1,0 +1,22 @@
+﻿<div id="demo-box" data-bind="dxScrollView: { showScrollBar: 'always' }">
+    <div class="wrapper">
+        <div class="checkBox" data-bind="dxCheckBox: { value: collapsible, text: 'Collapsible' }"></div>
+        <div class="checkBox" data-bind="dxCheckBox: { value: multiple, text: 'Multiple' }"></div>
+        <div data-bind="dxAccordion:{
+            dataSource: accordionData,
+            collapsible: collapsible,
+            multiple: multiple
+        }">
+            <div data-options="dxTemplate : { name: 'title' } ">
+                <h1 data-bind="text: $data.title"></h1>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'item' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" data-bind="foreach: dataArray">
+                        <p><span data-bind="text: propertyKey"></span>: <b data-bind="text: propertyValue"></b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

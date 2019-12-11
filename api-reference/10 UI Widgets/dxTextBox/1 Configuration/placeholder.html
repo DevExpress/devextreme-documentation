@@ -1,0 +1,37 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTextBox: {
+    placeholder: placeholderText
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">placeholder</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            value: placeholderText
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-text-box="{
+        bindingOptions: {
+            placeholder: 'placeholderText'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">placeholder</div>
+            <div class="dx-field-value" ng-model="placeholderText" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTextBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">placeholder</div>
+        <div class="dx-field-value" id="placeholderBox"></div>
+    </div>
+</div>
+<!--/@jQuery-->

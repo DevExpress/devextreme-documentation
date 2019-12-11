@@ -1,0 +1,21 @@
+﻿<!--@jQuery-->
+<div style="text-align:center">
+    <div id="circularGaugeContainer" style="height:330px; max-width:350px; display:inline-block; margin: 0 auto"></div>
+    <div id="barGaugeContainer" style="height:330px; max-width:450px; display:inline-block; margin: 0 auto"></div>
+    <div id="linearGaugeContainer" style="height:120px; max-width:330px; display:block; margin: 0 auto"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="text-align:center">
+    <div style="height:330px; max-width:350px; display:inline-block; margin: 0 auto" data-bind="dxCircularGauge: circularGaugeConfig"></div>
+    <div style="height:330px; max-width:450px; display:inline-block; margin: 0 auto" data-bind="dxBarGauge: barGaugeConfig"></div>
+    <div style="height:120px; max-width:330px; display:block; margin: 0 auto" data-bind="dxLinearGauge: linearGaugeConfig"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="gaugesController" style="text-align:center">
+    <div style="height:330px; max-width:350px; display:inline-block; margin: 0 auto" dx-circular-gauge="circularGaugeConfig"></div>
+    <div style="height:330px; max-width:450px; display:inline-block; margin: 0 auto" dx-bar-gauge="barGaugeConfig"></div>
+    <div style="height:120px; max-width:330px; display:block; margin: 0 auto" dx-linear-gauge="linearGaugeConfig"></div>
+</div>
+<!--/@AngularJS-->

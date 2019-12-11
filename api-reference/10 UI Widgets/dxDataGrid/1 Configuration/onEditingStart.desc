@@ -1,0 +1,1 @@
+﻿In this example, only buffered rows can be edited. If you try to edit a row that is already in the data source, your attempt will be ignored. This behavior is accomplished by setting the **cancel** flag depending on the value of the **key** field inside the **onEditingStart** function.

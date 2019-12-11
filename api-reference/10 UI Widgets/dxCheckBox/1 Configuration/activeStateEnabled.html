@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div class="checkBox" data-bind="dxCheckBox: { 
+    text: 'Check me',
+    activeStateEnabled: enableActiveState
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: enableActiveState
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="checkBox" dx-check-box="{ 
+        text: 'Check me',
+        bindingOptions: {
+            activeStateEnabled: 'enableActiveState'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Value</div>
+            <div class="dx-field-value" ng-model="enableActiveState" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="checkBox" id="myCheckBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" id="stateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

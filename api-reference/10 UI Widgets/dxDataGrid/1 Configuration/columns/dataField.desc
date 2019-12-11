@@ -1,0 +1,1 @@
+﻿In this example, the **dataField** option is used to specify data source fields for the *"Title"*, *"Position"*, *"Birth Date"* and *"Hire Date"* columns. Data source fields for the other columns are specified without using this option, because these columns do not require any customizations.

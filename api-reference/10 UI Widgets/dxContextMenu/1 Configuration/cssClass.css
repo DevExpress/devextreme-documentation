@@ -1,0 +1,33 @@
+.demo-page{
+    background-color: #F0F0F0;
+    height: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.target1 {
+    background-image: url(/Content/images/doc/14_2/PhoneJS/cherry.jpg);
+    background-size: cover;
+    float: left;
+    height: 150px; 
+    width:100px; 
+}
+
+.target2 {
+    background-image: url(/Content/images/doc/14_2/PhoneJS/headphone.jpg);
+    background-size: cover;
+    float: left;
+    height: 150px; 
+    width:100px; 
+    margin-left: 150px;
+}
+
+.dx-context-menu .dx-menu-item
+{
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.customClass .dx-menu-item 
+{
+    border-bottom: none;
+}

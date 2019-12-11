@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+.dx-button{
+    margin: 10px;
+}
+.dx-popup-title{
+    border-bottom: solid 2px red;
+    padding-bottom: 10px;
+}

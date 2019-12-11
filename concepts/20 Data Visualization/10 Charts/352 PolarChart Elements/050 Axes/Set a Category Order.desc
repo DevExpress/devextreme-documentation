@@ -1,0 +1,1 @@
+﻿In this example, discrete arguments on the argument axis are sequenced alphabetically using the **categories** array. Note that *'Wisconsin'* is omitted from this array. However, it appears on the axis, because omitted arguments are added to the end of the **categories** array automatically.  

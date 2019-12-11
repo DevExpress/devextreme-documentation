@@ -1,0 +1,54 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:400px; max-width:630px; margin: 0 auto">
+    <div style="height:350px; margin: 5px auto" data-bind="dxDataGrid: {
+    dataSource: {
+        store: {
+            type: 'odata',
+            url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+        }
+    },
+    scrolling: { mode: 'virtual' },
+    columns: columns,
+    onContentReady: getDataGrid,
+    loadPanel: {
+        height: 150,
+        width: 400,
+        text: 'Data is loading...'
+    }
+}"></div>
+    <div data-bind="dxButton: {
+    text: 'Refresh',
+    onClick: refreshGrid
+}"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:400px; max-width:630px; margin: 0 auto">
+    <div style="height:350px; margin: 5px auto" dx-data-grid="{
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        scrolling: { mode: 'virtual' },
+        columns: columns,
+        onContentReady: getDataGrid,
+        loadPanel: {
+            height: 150,
+            width: 400,
+            text: 'Data is loading...'
+        }
+    }"></div>
+    <div dx-button="{
+        text: 'Refresh',
+        onClick: refreshGrid
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="text-align:center; height:400px; max-width:630px; margin: 0 auto"></div>
+<div style="text-align: center; margin: 10px auto">
+    <div id="buttonContainer" style="height: 40px"></div>
+</div>
+<!--/@jQuery-->

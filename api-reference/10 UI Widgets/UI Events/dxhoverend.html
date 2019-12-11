@@ -1,0 +1,23 @@
+<!--@Knockout-->
+<div style="height:250px; width: 300px; margin: auto; text-align: center;">
+    <p>Place the mouse pointer over the yellow element</p>
+    <div id="myElement" data-bind="event: {
+        dxhoverend: endEventHandler,
+        dxhoverstart: startEventHandler
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height:250px; width: 300px; margin: auto; text-align: center;">
+        <p>Place the mouse pointer over the yellow element</p>
+        <div id="myElement"
+             dx-hoverend="endEventHandler($event)"
+             dx-hoverstart="startEventHandler($event)"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Place the mouse pointer over the yellow element</p>
+<div id="myElement"></div>
+<!--/@jQuery-->

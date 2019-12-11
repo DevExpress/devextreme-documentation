@@ -1,0 +1,76 @@
+<!--@Knockout-->
+<div data-bind="dxList: {
+    dataSource: listDataSource,
+    height: '80%',
+    itemTemplate: currentTemplate
+}">
+    <div data-options="dxTemplate:{ name:'brief' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+    <div style="text-align: left;" data-options="dxTemplate:{ name:'full' }">
+        <div style="display:inline-block; margin: 5px;">
+            <img style="margin:5px;" data-bind="attr: { src: imagePath }" />
+        </div>
+        <div style="display:inline-block; margin: 5px;">
+            <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+            <p>Capital: <i data-bind="text: capital"></i></p>
+        </div>
+        <p>Area: <i data-bind="text: area"></i> km2</p>
+        <p>Population: <i data-bind="text: population"></i></p>
+    </div>
+</div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label" style="width: 60%">itemTemplate</div>
+        <div class="dx-field-value" style="width: 40%" data-bind="dxSelectBox: { 
+            dataSource: itemTemplates,
+            value: currentTemplate
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-list="{
+        dataSource: listDataSource,
+        height: '80%',
+        bindingOptions: {
+            itemTemplate: 'currentTemplate'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'brief' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+        <div style="text-align: left;" data-options="dxTemplate:{ name:'full' }">
+            <div style="display:inline-block; margin: 5px;">
+                <img style="margin:5px;" ng-attr-src="{{itemObj.imagePath}}" />
+            </div>
+            <div style="display:inline-block; margin: 5px;">
+                <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+                <p>Capital: <i>{{itemObj.capital}}</i></p>
+            </div>
+            <p>Area: <i>{{itemObj.area}}</i> km2</p>
+            <p>Population: <i>{{itemObj.population}}</i></p>
+        </div>
+    </div>
+    <div style="margin-top: 15px;" class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label" style="width: 60%">itemTemplate</div>
+            <div class="dx-field-value" style="width: 40%" ng-model="currentTemplate" dx-select-box="{
+                dataSource: itemTemplates
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myList"></div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">itemTemplate</div>
+        <div class="dx-field-value" id="templateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

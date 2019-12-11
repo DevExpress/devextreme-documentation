@@ -1,0 +1,14 @@
+<!--@Knockout-->
+<p>Swipe the yellow element</p>
+<div id="myElement" data-bind="event: { dxswipestart: myEventHandler }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <p>Swipe the yellow element</p>
+    <div id="myElement" dx-swipestart="myEventHandler($event)"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Swipe the yellow element</p>
+<div id="myElement"></div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, when you click a point, information about the argument of this point appears below the chart. This information is taken from the tag field that is specified for each argument in the chart data source.

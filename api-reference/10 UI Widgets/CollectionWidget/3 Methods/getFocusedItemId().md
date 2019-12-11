@@ -1,0 +1,9 @@
+---
+hidden: 
+---
+---
+##### shortDescription
+
+##### return: string
+
+---

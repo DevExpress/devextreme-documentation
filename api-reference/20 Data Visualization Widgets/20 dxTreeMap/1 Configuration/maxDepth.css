@@ -1,0 +1,16 @@
+﻿#treeMapContainer {
+    height: 350px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#numberBoxContainer {
+    height: 35px;
+    width: 70px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.inline > div {
+    display: inline-block;
+}

@@ -1,0 +1,57 @@
+<!--@Knockout-->
+<div id="myList" data-bind="dxList: {
+    height: '80%',
+    dataSource: listDataSource,
+    autoPagingEnabled: false,
+    pullRefreshEnabled: true,
+    showNextButton: true,
+    nextButtonText: nextText
+}">
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">nextButtonText</div>
+        <div class="dx-field-value" data-bind="dxTextBox: { 
+            value: nextText
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="myList" dx-list="{
+        height: '80%',
+        dataSource: listDataSource,
+        autoPagingEnabled: false,
+        pullRefreshEnabled: true,
+        showNextButton: true,
+        bindingOptions: {
+            nextButtonText: 'nextText',
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div style="margin-top: 15px;" class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">nextButtonText</div>
+            <div class="dx-field-value" ng-model="nextText" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myList"></div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">nextButtonText</div>
+        <div class="dx-field-value" id="textField"></div>
+    </div>
+</div>
+<!--/@jQuery-->

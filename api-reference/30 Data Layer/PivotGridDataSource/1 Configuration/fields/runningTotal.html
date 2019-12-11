@@ -1,0 +1,41 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:300px; max-width:750px; margin:0 auto"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Calculate running totals against&nbsp;
+    <div id="selectBoxContainer" style="width:250px; display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:300px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: pivotGridDataSource,
+    fieldChooser: { enabled: false }
+}"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Calculate running totals against&nbsp;
+    <div style="width:250px; display:inline-block; vertical-align:middle" data-bind="dxSelectBox: {
+        dataSource: selectBoxDataSource,
+        valueExpr: 'value',
+        displayExpr: 'name',
+        value: 'row',
+        onValueChanged: changeRunningTotal
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:300px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: pivotGridDataSource,
+        fieldChooser: { enabled: false }
+    }"></div>
+    <div style="height:40px; margin-top:5px; text-align:center">
+        Calculate running totals against&nbsp;
+        <div style="width:250px; display:inline-block; vertical-align:middle" dx-select-box="{
+            dataSource: selectBoxDataSource,
+            valueExpr: 'value',
+            displayExpr: 'name',
+            value: 'row',
+            onValueChanged: changeRunningTotal
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

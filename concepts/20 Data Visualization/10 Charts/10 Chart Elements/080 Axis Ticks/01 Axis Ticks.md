@@ -1,0 +1,14 @@
+Ticks divide an axis into sections by a step that is determined automatically, or by the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/10%20dxChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/tickInterval/') and [axisDivisionFactor](/api-reference/20%20Data%20Visualization%20Widgets/10%20dxChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#axisDivisionFactor') options of an axis. Ticks improve the comprehension of chart data. However, they are not visible by default in the **Chart** widget. Instead, [axis labels](/concepts/20%20Data%20Visualization/10%20Charts/10%20Chart%20Elements/070%20Axis%20Labels.md '/Documentation/Guide/Data_Visualization/Charts/Chart_Elements/#Axis_Labels') and [grid lines](/concepts/20%20Data%20Visualization/10%20Charts/10%20Chart%20Elements/090%20Grid/01%20Grid.md '/Documentation/Guide/Data_Visualization/Charts/Chart_Elements/#Grid') represent axis division.
+
+To make ticks visible, use the **visible** property of the [tick](/api-reference/20%20Data%20Visualization%20Widgets/10%20dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/tick/') object within the **argumentAxis**, **valueAxis** or **commonAxisSettings** configuration object.
+
+	<!--JavaScript-->var chartOptions = {
+		commonAxisSettings: {
+			tick: { visible: true }
+		},
+		//...
+	};
+
+![Axis Ticks](/images/ChartJS/Ticks.png)
+
+In addition, you can change the default tick dimensions, color and opacity, using the [width](/api-reference/20%20Data%20Visualization%20Widgets/10%20dxChart/1%20Configuration/commonAxisSettings/tick/width.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/tick/#width'), [length](/api-reference/20%20Data%20Visualization%20Widgets/10%20dxChart/1%20Configuration/commonAxisSettings/tick/length.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/tick/#length'), [color](/api-reference/20%20Data%20Visualization%20Widgets/10%20dxChart/1%20Configuration/commonAxisSettings/tick/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/tick/#color') and [opacity](/api-reference/20%20Data%20Visualization%20Widgets/10%20dxChart/1%20Configuration/commonAxisSettings/tick/opacity.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/tick/#opacity') properties of the **tick** object.

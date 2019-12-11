@@ -1,0 +1,1 @@
+﻿In this demo, you can specify the text of the _"Sort Column by Summary Value"_ context menu item at runtime. Type any text in the text box below the pivot grid. Then, right-click any column header in the grid to invoke the context menu. The _"Sort Column by Summary Value"_ item from that menu will display the specified text.

@@ -1,0 +1,14 @@
+<!--@Knockout-->
+<div style="text-align: center" data-bind="dxButton:{ text: 'Subscribe to ItemClick event', onClick: clickHandler }"></div>
+<div data-bind="dxToolbar: { dataSource: toolbarItems, onInitialized: initializedHandler }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="text-align: center" dx-button="{ text: 'Subscribe for ItemClick event' ,onClick: clickHandler }"></div></br>
+    <div dx-toolbar="{ dataSource: toolbarItems, onInitialized: initializedHandler }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align: center" id="myButton"></div></br>
+<div id="myToolbar"></div>
+<!--/@jQuery-->

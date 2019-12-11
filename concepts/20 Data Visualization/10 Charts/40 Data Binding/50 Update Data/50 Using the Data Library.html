@@ -1,0 +1,59 @@
+<!--@jQuery-->
+<div style="text-align:center">
+    <div id="chartContainer" style="height:200px; width: 400px; margin: 0 auto; display:inline-block"></div>
+    <div id="pieChartContainer" style="height:200px; width: 400px; margin: 0 auto; display:inline-block"></div>
+</div>
+<div style="margin:5px; text-align:center">
+    <div id="voteJohnButton" style="height: 40px"></div>
+    <div id="voteMikeButton" style="height: 40px"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="text-align:center">
+    <div style="height:200px; width: 400px; margin: 0 auto; display:inline-block" data-bind="dxChart: {
+        animation: false,
+        dataSource: data,
+        series: {
+            argumentField: 'candidate',
+            valueField: 'value',
+            type: 'bar',
+            color: 'skyblue'
+        },
+        valueAxis: { max: 50 },
+        legend: { visible: false }
+    }"></div>
+    <div style="height:200px; width: 400px; margin: 0 auto; display:inline-block" data-bind="dxPieChart: {
+        animation: false,
+        dataSource: data,
+        series: {
+            argumentField: 'candidate',
+            valueField: 'value'
+        },
+        palette: 'Soft'
+    }"></div>
+</div>
+<div style="margin:5px; text-align:center">
+    <div style="height: 40px" data-bind="dxButton: {
+        text: 'John',
+        onClick: function () {
+            vote('John');
+        }
+    }"></div>
+    <div style="height: 40px" data-bind="dxButton: {
+        text: 'Mike',
+        onClick: function () {
+            vote('Mike');
+        }
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController" style="text-align:center">
+    <div style="height:200px; width: 400px; margin: 0 auto; display:inline-block" dx-chart="chartConfig"></div>
+    <div style="height:200px; width: 400px; margin: 0 auto; display:inline-block" dx-pie-chart="pieChartConfig"></div>
+</div>
+<div ng-controller="buttonsController" style="margin:5px; text-align:center">
+    <div style="height:40px" dx-button="johnButtonConfig"></div>
+    <div style="height: 40px" dx-button="mikeButtonConfig"></div>
+</div>
+<!--/@AngularJS-->

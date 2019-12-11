@@ -1,0 +1,1 @@
+﻿In this example, grouping is enabled for the whole grid by making the group panel visible. However, grouping by the *"Order ID"* and *"Shipped Date"* columns is prohibited as the **allowGrouping** option is set to *false* for them. To group grid records by one of the other columns, drag it by the header and drop it onto the group panel.

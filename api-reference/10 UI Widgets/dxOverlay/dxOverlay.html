@@ -1,0 +1,44 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{
+    text: 'Show overlay',
+    onClick: showOverlay
+}"></div>
+<div data-bind="dxOverlay: {
+    closeOnOutsideClick: true,
+    visible: overlayVisible
+}">
+  <div data-options="dxTemplate: { name: 'content' }" class="overlayContent">
+      <p>The overlay window text.</p>
+      <div class="button" data-bind="dxButton: { 
+          text: 'Hide overlay',
+          onClick: hideOverlay
+      }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{
+        text: 'Show overlay',
+        onClick: showOverlay
+    }"></div>
+    <div dx-overlay="{
+        closeOnOutsideClick: true,
+        bindingOptions:{
+            visible: 'overlayVisible'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'content' }" class="overlayContent">
+            <p>The overlay window text.</p>
+            <div class="button" dx-button="{
+                text: 'Hide overlay',
+                onClick: hideOverlay
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="showButton"></div>
+<div id="myOverlay"></div>
+<!--/@jQuery-->

@@ -1,0 +1,46 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="option">
+        <div>Label location:</div>
+        <div data-bind="dxSelectBox:{
+            dataSource: [ 'left', 'top','right'],
+            width: 200,
+            value: labelLocation
+        }"></div>
+    </div>
+    <div data-bind="dxForm: {
+        formData: employee,
+        colCount: 2,
+        showColonAfterLabel: false,
+        labelLocation: labelLocation,
+        }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="option">
+        <div>Label location:</div>
+        <div ng-model="labelLocation" dx-select-box="{
+            dataSource: [ 'left', 'top','right'],
+            width: 200
+        }"></div>
+    </div>
+    <div dx-form="{
+        formData: employee,
+        colCount: 2,
+        showColonAfterLabel: false,
+        bindingOptions:{
+            labelLocation: 'labelLocation'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="option">
+        <div>Label location:</div>
+        <div id="labelLocationSelectBox"></div>
+    </div>
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

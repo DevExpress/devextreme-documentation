@@ -1,0 +1,1 @@
+In this example, you can spot the difference between the checkbox row display policies provided by the **DataGrid** widget. Choose the required policy using the select box under the grid, and then click one or several grid records. Data for this example is obtained from *www.odata.org*.

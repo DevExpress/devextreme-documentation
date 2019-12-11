@@ -1,0 +1,60 @@
+<!--@Knockout-->
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    valueExpr: 'country',
+    placeholder: 'Type country name',
+    maxLength: maxLength
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        Country: <b data-bind="text: country"></b><br />
+        <span style="color:grey;">Capital: <span data-bind="text: capital"></span></span>
+    </div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">maxLength</div>
+    <div class="dx-field-value" data-bind="dxNumberBox: {
+        min: 3,
+        max: 30,
+        showSpinButtons: true,
+        value: maxLength
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="autocomplete" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        valueExpr: 'country',
+        placeholder: 'Type country name',
+        bindingOptions: {
+            maxLength: 'maxLength'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            Country: <b>{{itemObj.country}}</b><br />
+            <span style="color:grey;">Capital: {{itemObj.capital}}</span>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">maxLength</div>
+            <div class="dx-field-value" ng-model="maxLength" dx-number-box="{
+                min: 3,
+                max: 30,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="autocomplete" id="myAutocomplete"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">maxLength</div>
+    <div class="dx-field-value" id="maxLengthSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,51 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="option">
+        <div data-bind="dxSlider:{
+            min: 170,
+            max: 400,
+            step: 10,
+            width: 200,
+            value: minColumnWidth
+        }"></div>
+        <p> minColWidth: <span data-bind="text: minColumnWidth"></span></p>
+    </div>
+    <div data-bind="dxForm: {
+        formData: employee,
+        labelLocation: 'left',
+        colCount: 'auto',
+        minColWidth: minColumnWidth
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="option">
+        <div ng-model="minColumnWidth" dx-slider="{
+            min: 170,
+            max: 400,
+            step: 10,
+            width: 200
+        }">
+        </div>
+        <p> minColWidth: <span>{{minColumnWidth}}</span></p>
+    </div>
+    <div dx-form="{
+        formData: employee,
+        labelLocation: 'left',
+        colCount: 'auto',
+        bindingOptions: {
+            minColWidth: 'minColumnWidth'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="option">
+        <div id="minColumnWidthSlider"></div>
+        <p>minColWidth <span id="minColValue"></span><p>
+    </div>
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

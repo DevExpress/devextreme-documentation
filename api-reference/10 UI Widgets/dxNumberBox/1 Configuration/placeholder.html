@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div class="numberBox" data-bind="dxNumberBox: {
+    value: null,
+    placeholder: numberBoxPlaceholder
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">placeholder</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            value: numberBoxPlaceholder
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="numberBox" dx-number-box="{
+        value: null,
+        bindingOptions: {
+            placeholder: 'numberBoxPlaceholder'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">placeholder</div>
+            <div class="dx-field-value" ng-model="numberBoxPlaceholder" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="numberBox" id="myNumberBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">placeholder</div>
+        <div class="dx-field-value" id="placeholderField"></div>
+    </div>
+</div>
+<!--/@jQuery-->

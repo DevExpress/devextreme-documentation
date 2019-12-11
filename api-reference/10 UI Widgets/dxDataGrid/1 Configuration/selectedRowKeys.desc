@@ -1,0 +1,1 @@
+In this example, several grid records appear selected initially. It is accomplished by assigning their keys in the form of an array to the **selectedRowKeys** option.

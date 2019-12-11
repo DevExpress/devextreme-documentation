@@ -1,0 +1,31 @@
+﻿<!--@Knockout-->
+<div data-bind="dxSelectBox:{
+    dataSource: selectBoxData,
+    placeholder: 'Select a state',
+    displayExpr: 'name',
+    valueExpr: 'capital',
+    value: capital
+}"></div>
+<div>
+    <p>Selected state capitals: <b data-bind="text: capital"></b></p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div ng-model="capital" dx-select-box="{
+        dataSource: selectBoxData,
+        placeholder: 'Select a state',
+        displayExpr: 'name',
+        valueExpr: 'capital'
+    }"></div>
+    <div>
+        <p>Selected state capital: <b>{{capital}}</b></p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySelectBox"></div>
+<div>
+    <p>Selected state capital: <b id="capital"></b></p>
+</div>
+<!--/@jQuery-->

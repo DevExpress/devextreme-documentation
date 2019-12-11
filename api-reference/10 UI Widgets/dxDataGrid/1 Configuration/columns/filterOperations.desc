@@ -1,0 +1,1 @@
+In this example, filtering is enabled in a grid. Each column has a default set of available filter operations, except for *"Order ID"*, whose set is restricted to only one filter operation using the **filterOperations** option. Hover over the magnifying glass icon of a column to see the list of filters available for this column.

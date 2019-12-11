@@ -1,0 +1,24 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div data-bind="dxButton: { text: 'Subscribe to SubmenuHidden and SubmenuShown event', onClick: clickHandler }"></div>
+    <div data-bind="dxMenu: {
+        items: menuItems,
+        onInitialized: onInitialized
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to SubmenuHidden and SubmenuShown events', onClick: clickHandler }"></div>
+    <div dx-menu="{
+        items: menuItems,
+        onInitialized: onInitialized,
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div id="button"></div>
+    <div id="myMenu"></div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+﻿Click the *'Change the container size'* button to switch between two sizes of the widget container. You can set the size either to 400x600 or 300x500 pixels. The **render** method without parameters is used to redraw the widget after the container size changes.

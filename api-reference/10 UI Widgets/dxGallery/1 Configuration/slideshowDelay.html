@@ -1,0 +1,56 @@
+<!--@Knockout-->
+<div data-bind="dxGallery: { 
+    dataSource: galleryData,
+    width: '100%',
+    height: 370,
+    loop: true,
+    animationDuration: 500,
+    slideshowDelay: delayValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">slideshowDelay</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: 0,
+            max: 3000,
+            step: 100,
+            showSpinButtons: true,
+            value: delayValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-gallery="{ 
+        dataSource: galleryData,
+        width: '100%',
+        height: 370,
+        loop: true,
+        animationDuration: 500,
+        bindingOptions: {
+            slideshowDelay: 'delayValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">slideshowDelay</div>
+            <div class="dx-field-value" ng-model="delayValue" dx-number-box="{
+                min: 0,
+                max: 3000,
+                step: 100,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myGallery"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">slideshowDelay</div>
+        <div class="dx-field-value" id="delaySelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

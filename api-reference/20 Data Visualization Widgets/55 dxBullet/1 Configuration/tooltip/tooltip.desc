@@ -1,0 +1,1 @@
+﻿In this example, several tooltip options are altered. The tooltip is colored in '*seashell*' using the **color** option. The main and target values are displayed in the *'fixedPoint'* format with a precision of 2. In addition, tooltip font options are changed.

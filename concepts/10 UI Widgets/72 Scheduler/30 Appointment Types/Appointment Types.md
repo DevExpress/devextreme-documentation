@@ -1,0 +1,1 @@
+The **Scheduler** widget allows you to create appointments of different types. Specifying different sets of fields for appointment objects, you will get different types of appointments displayed in the widget's timetable. Read below to see how to define different appointment types in code and in a UI.

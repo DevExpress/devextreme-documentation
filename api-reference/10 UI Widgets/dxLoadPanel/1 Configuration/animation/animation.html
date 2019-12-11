@@ -1,0 +1,50 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{ text: 'Load', onClick: startLoading }"></div>
+<div data-bind="dxLoadPanel:{
+    message: 'Loading...',
+    visible: loadPanelVisible,
+    animation: animationConfig
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Animation Type</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: {
+      dataSource: animationTypes,
+      onValueChanged: typeChanged,
+      title: 'Animation type'
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{ text: 'Load', onClick: startLoading }"></div><br />
+    <div id="myLoadPanel" dx-load-panel="{ 
+        message: 'Loading...',
+        bindingOptions: { 
+            visible: 'loadPanelVisible',
+            animation: 'animationConfig'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Animation Type</div>
+            <div class="dx-field-value" dx-select-box="{
+                dataSource: animationTypes,
+                onValueChanged: typeChanged,
+                title: 'Animation type'
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="loadButton"></div><br />
+<div id="myLoadPanel"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Animation Type</div>
+    <div class="dx-field-value" id="animationTypeSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

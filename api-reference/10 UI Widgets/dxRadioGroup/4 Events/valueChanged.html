@@ -1,0 +1,27 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div></br>
+<p><b>Choose color</b></p>
+<div data-bind="dxRadioGroup:{
+    items: colors,
+    onInitialized: onInitialized,
+    valueExpr: 'value',
+    value: currentColor
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div></br>
+    <p><b>Choose color</b></p>
+    <div dx-radio-group="{
+        items: colors,
+        valueExpr: 'value',
+        onInitialized: onInitialized,
+        value: currentColor
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div></br>
+<p><b>Choose color</b></p>
+<div id="myRadioGroup"></div>
+<!--/@jQuery-->

@@ -1,0 +1,45 @@
+﻿<!--@Knockout-->
+<div data-bind="dxSlider: {
+    min: 1,
+    max: 100,
+    value: currentValue
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Value</div>
+    <div class="dx-field-value" data-bind="dxNumberBox: {
+        min: 1,
+        max: 100,
+        showSpinButtons: true,
+        value: currentValue
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div ng-model="currentValue" dx-slider="{
+        min: 1,
+        max: 100
+    }"></div>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+          <div class="dx-field-value" ng-model="currentValue" dx-number-box="{
+            min: 1,
+            max: 100,
+            showSpinButtons: true
+        }"></div>
+      </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlider"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+        <div class="dx-field-value" id="valueBox"></div>
+    </div>
+</div>
+<!--/@jQuery-->

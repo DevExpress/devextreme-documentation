@@ -1,0 +1,3 @@
+The [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/') widget displays selected items as a scrollable list. Refer to the [dxList guide](/concepts/10%20UI%20Widgets/20%20UI%20Widgets%20-%20Deep%20Dive/dxList '/Documentation/Guide/UI_Widgets/UI_Widgets_-_Deep_Dive/dxList/') for more information.
+
+<a href="http://js.devexpress.com/Demos/WidgetsGallery/#demo/actionsandlistslistlistlisteditingandapi/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Demo</a>

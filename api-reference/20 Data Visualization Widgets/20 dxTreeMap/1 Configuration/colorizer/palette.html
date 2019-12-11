@@ -1,0 +1,42 @@
+﻿<!--@jQuery-->
+<div id="treeMapContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>Palette:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="treeMapContainer" data-bind="dxTreeMap: {
+    dataSource: '/Content/data/displays.json',
+    colorizer: { palette: currentPalette }
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>Palette:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: {
+        items: ['Default', 'Soft Pastel', 'Harmony Light', 'Pastel',
+            'Bright', 'Soft', 'Ocean', 'Vintage', 'Violet'],
+        value: currentPalette
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="treeMapController">
+    <div id="treeMapContainer" dx-tree-map="{
+        dataSource: '/Content/data/displays.json',
+        colorizer: { palette: 'Default' },
+        bindingOptions: {
+            'colorizer.palette': 'currentPalette'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>Palette:&nbsp;</div>
+        <div id="selectBoxContainer" dx-select-box="{
+            items: ['Default', 'Soft Pastel', 'Harmony Light', 'Pastel',
+                'Bright', 'Soft', 'Ocean', 'Vintage', 'Violet'],
+            bindingOptions: {
+                value: 'currentPalette'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

@@ -1,0 +1,60 @@
+<!--@Knockout-->
+<div id="button" data-bind="dxButton:{ text:'Hover over me' }, event: { mouseover: toggleTooltip, mouseout: toggleTooltip } "></div>
+<div data-bind="dxTooltip:{
+    target: '#button',
+    visible: tooltipVisible,
+    animation: animationConfig
+}">
+    <div data-options="dxTemplate:{ name: 'content' }">
+        <p>This is a button.</p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div style="width: 60%" class="dx-field-label">Animation type</div>
+        <div style="width: 40%" class="dx-field-value" data-bind="dxSelectBox: {
+            items: animationTypes,
+            value: 'fade',
+            onValueChanged: typeChanged
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="button" dx-button="{ text:'Hover over me' }" ng-mouseover="toggleTooltip()" ng-mouseout="toggleTooltip()"></div>
+    <div dx-tooltip="{ 
+        target: '#button',
+        bindingOptions: {
+            visible: 'tooltipVisible',
+            animation: {
+                deep: false,
+                dataPath: 'animationConfig'
+            }
+        }
+    }">
+        <div data-options="dxTemplate:{ name: 'content' }">
+            <p>This is a button.</p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Animation type</div>
+            <div class="dx-field-value" ng-model="fade" dx-select-box="{
+                items: animationTypes,
+                onValueChanged: typeChanged
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myTooltip"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Animation type</div>
+        <div class="dx-field-value" id="animationSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

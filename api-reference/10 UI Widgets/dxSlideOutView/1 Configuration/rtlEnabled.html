@@ -1,0 +1,119 @@
+﻿<!--@Knockout-->
+<div data-bind="dxSlideOutView:{
+    menuVisible: menuVisible,
+    contentTemplate: currentTemplate,
+    menuPosition: menuPositionValue,
+    rtlEnabled: rtlEnabledValue
+}">
+    <div data-options="dxTemplate : { name: 'emptyContent' } ">
+        <p>Swipe the view to show the menu.</p>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">rtlEnabled:</div>
+                <div class="dx-field-value" data-bind="dxSwitch:{ value: $root.rtlEnabledValue }"></div>
+            </div>
+        </div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">Menu position:</div>
+                <div class="dx-field-value" data-bind="dxSelectBox:{
+                    items: ['normal', 'inverted'],
+                    value: $root.menuPositionValue
+                }"></div>
+            </div>
+        </div>
+    </div>
+    <div data-options="dxTemplate : { name: 'content' } ">
+        <h1 data-bind="text: currentCategory"></h1>
+        <h2 data-bind="text: currentName"></h2>
+        <p><b>phone:</b><br /><span data-bind="text: currentPhone"></span></p>
+        <p><b>e-mail:</b><br /><span data-bind="text: currentEmail"></span></p>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">rtlEnabled:</div>
+                <div class="dx-field-value" data-bind="dxSwitch:{ value: $root.rtlEnabledValue  }"></div>
+            </div>
+        </div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">Menu position:</div>
+                <div class="dx-field-value" data-bind="dxSelectBox:{
+                    items: ['normal', 'inverted'],
+                    value: $root.menuPositionValue
+                }"></div>
+            </div>
+        </div>
+    </div>
+    <div data-options="dxTemplate : { name: 'menu' }" style="height: 100%;">
+        <div data-bind="dxList: {
+            dataSource: menuData,
+            grouped: true,
+            onItemClick: itemClicked
+        }">
+            <p data-bind="text: name"></p>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-slide-out-view="{
+        bindingOptions: {
+            menuVisible: 'menuVisible',
+            contentTemplate: 'currentTemplate',
+            menuPosition: 'menuPositionValue',
+            rtlEnabled: 'rtlEnabledValue'
+        }
+    }">
+        <div data-options="dxTemplate : { name: 'emptyContent' } ">
+            <p>Swipe the view to the right to show the menu.</p>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">rtlEnabled:</div>
+                    <div class="dx-field-value" ng-model="$parent.rtlEnabledValue" dx-switch="{    }"></div>
+                </div>
+            </div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Menu position:</div>
+                    <div class="dx-field-value" ng-model="$parent.menuPositionValue" dx-select-box="{
+                        items: ['normal', 'inverted']
+                    }"></div>
+                </div>
+            </div>
+        </div>
+        <div data-options="dxTemplate : { name: 'content' } ">
+            <h1>{{currentCategory}}</h1>
+            <h2>{{currentName}}</h2>
+            <p><b>phone:</b><br />{{currentPhone}}</p>
+            <p><b>e-mail:</b><br />{{currentEmail}}</p>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">rtlEnabled:</div>
+                    <div class="dx-field-value" ng-model="$parent.rtlEnabledValue" dx-switch="{    }"></div>
+                </div>
+            </div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Menu position:</div>
+                    <div class="dx-field-value" ng-model="$parent.menuPositionValue" dx-select-box="{
+                        items: ['normal', 'inverted']
+                    }"></div>
+                </div>
+            </div>
+        </div>
+        <div data-options="dxTemplate : { name: 'menu' }" style="height: 100%;">
+            <div dx-list="{
+                dataSource: menuData,
+                grouped: true,
+                onItemClick: itemClicked
+            }" dx-item-alias="itemObj">
+                <p>{{itemObj.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlideOutView"></div>
+<!--/@jQuery-->

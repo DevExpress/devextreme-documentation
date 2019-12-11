@@ -1,0 +1,1 @@
+﻿In this example, you can change the grid's options for sorting by group summary. Use the controls at the bottom of the grid: the [SelectBox](/Documentation/ApiReference/UI_Widgets/dxSelectBox/) widget changes the summary item involved in sorting process; the [Switch](/Documentation/ApiReference/UI_Widgets/dxSwitch/) widget changes the order of sorting.

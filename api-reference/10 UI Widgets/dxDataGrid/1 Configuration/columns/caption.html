@@ -1,0 +1,29 @@
+<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: dataSource,
+    columns: [
+        { dataField: 'author_of_the_book', caption: 'Author' },
+        { dataField: 'title', width: 210 },
+        'year',
+        'genre',
+        'format'
+    ]
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height:390px; max-width:630px; margin: 0 auto" dx-data-grid="{
+        dataSource: dataSource,
+        columns: [
+            { dataField: 'author_of_the_book', caption: 'Author' },
+            { dataField: 'title', width: 210 },
+            'year',
+            'genre',
+            'format'
+        ]
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

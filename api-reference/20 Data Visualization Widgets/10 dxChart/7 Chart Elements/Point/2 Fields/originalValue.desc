@@ -1,0 +1,1 @@
+Click a point on the chart to display the data about this point. In this example, the point's **originalValue** field is used to receive a non-formatted population number of a country.

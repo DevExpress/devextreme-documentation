@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    title: 'States',
+    cleanSearchOnOpening: cleanSearch
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">cleanSearchOnOpening</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: cleanSearch
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        title: 'States',
+        bindingOptions: {
+            cleanSearchOnOpening: 'cleanSearch'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">cleanSearchOnOpening</div>
+            <div class="dx-field-value" ng-model="cleanSearch" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">cleanSearchOnOpening</div>
+        <div class="dx-field-value" id="cleanSearchSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,5 @@
+To make your application, which was built using the DevExtreme UI widgets, appear native on the device it is running, a specific theme must be applied. DevExtreme includes [a set of themes](/concepts/60%20Themes/10%20Predefined%20Themes '/Documentation/Guide/Themes/Predefined_Themes/') that are specific to different platforms. The generic "light" and "dark" themes are also available. These themes are not specific to a particular platform, but make the application look consistent on the desktop, as well as on any device.
+
+Theme specific style settings are stored in a *.css* file with the appropriate name. For example, the *dx.ios7.default.css* file. Common style settings are stored in the *dx.common.css* stylesheet, which should always be linked to an application.
+
+Review the subsections below to learn of two possible ways to provide links to the necessary files.

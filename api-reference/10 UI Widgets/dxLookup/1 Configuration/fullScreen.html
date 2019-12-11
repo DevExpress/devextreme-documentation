@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    title: 'States',
+    fullScreen: fullScreenValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">fullScreen</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: fullScreenValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        title: 'States',
+        bindingOptions: {
+            fullScreen: 'fullScreenValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">fullScreen</div>
+            <div class="dx-field-value" ng-model="fullScreenValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">fullScreen</div>
+        <div class="dx-field-value" id="fullScreenSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

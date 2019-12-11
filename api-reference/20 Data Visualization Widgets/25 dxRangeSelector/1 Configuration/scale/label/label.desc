@@ -1,0 +1,1 @@
+﻿In this example, the scale labels are formatted as *'currency'* using the **format** option and indented from the scale by 3 pixels using the **topIndent** option.

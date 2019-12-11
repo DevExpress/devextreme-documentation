@@ -1,0 +1,56 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div class="dx-fieldset" style="width: 350px;">
+        <div class="dx-field">
+            <div class="dx-field-label">Choose target</div>
+            <div class="dx-field-value" data-bind="dxSelectBox: {
+                dataSource: targets,
+                displayExpr: 'name',
+                valueExpr: 'id',
+                value: menuTarget
+            }"></div>
+        </div>
+    </div>
+    <div id="target1"></div>
+    <div id="target2"></div>
+    <div data-bind="dxContextMenu: { 
+        dataSource: menuItems,
+        target: menuTarget
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="dx-fieldset" style="width: 350px;">
+        <div class="dx-field">
+            <div class="dx-field-label">Choose target</div>
+            <div class="dx-field-value" ng-model="menuTarget" dx-select-box="{
+                dataSource: targets,
+                displayExpr: 'name',
+                valueExpr: 'id'
+            }"></div>
+        </div>
+    </div>
+    <div id="target1"></div>
+    <div id="target2"></div>
+    <div dx-context-menu="{
+        dataSource: menuItems,
+        bindingOptions: {
+            target: 'menuTarget'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="dx-fieldset" style="width: 350px;">
+        <div class="dx-field">
+            <div class="dx-field-label">Choose target</div>
+            <div class="dx-field-value" id="targetSelector"></div>
+        </div>
+    </div>
+    <div id="target1"></div>
+    <div id="target2"></div>
+    <div id="myContextMenu"></div>
+</div>
+<!--/@jQuery-->

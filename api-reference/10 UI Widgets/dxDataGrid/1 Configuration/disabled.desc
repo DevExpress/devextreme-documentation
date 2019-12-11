@@ -1,0 +1,1 @@
+﻿In this example, you can enable/disable the **DataGrid** widget by toggling the check box below. When the widget is enabled, you can interact with it, for example, apply sorting or switch between pages. When the widget is disabled, it does not respond to your actions. 

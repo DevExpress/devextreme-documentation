@@ -1,0 +1,1 @@
+In this example, arguments for the sparkline are provided by the 'month' field of the data source using the **argumentField** option.

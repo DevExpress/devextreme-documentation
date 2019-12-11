@@ -1,0 +1,5 @@
+In the following example, the **instance()** method is used to get access to the polar chart options. This method is not called like the other methods. To call the **instance()** method, the following construction is used. 
+
+    <!--JavaScript-->$("#chartContainer").dxChart("instance")
+
+Use the check box below to switch between the values of the **commonAxisSettings | visible** option.

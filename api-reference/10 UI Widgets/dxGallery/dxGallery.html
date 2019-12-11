@@ -1,0 +1,19 @@
+﻿<!--@Knockout-->
+<div data-bind="dxGallery: { 
+    dataSource: galleryData,
+    width: '100%',
+    height: 370
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-gallery="{
+        dataSource: galleryData,
+        width: '100%',
+        height: 370
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myGallery"></div>
+<!--/@jQuery-->

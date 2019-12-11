@@ -1,0 +1,66 @@
+<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-fieldset-header">Personal Data</div>
+    <div class="dx-field">
+        <div class="dx-field-label">First Name</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {value: firstName}">
+        </div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Last Name</div>
+        <div class="dx-field-value" data-bind="dxTextBox: { value: lastName }">
+        </div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Full Name</div>
+        <div class="dx-field-value-static">
+            <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dx-fieldset">
+        <div class="dx-fieldset-header">Personal Data</div>
+        <div class="dx-field">
+            <div class="dx-field-label">First Name</div>
+            <div class="dx-field-value" ng-model="firstName" dx-text-box="{}">
+            </div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">Last Name</div>
+            <div class="dx-field-value" ng-model="lastName" dx-text-box="{}" ">
+            </div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">Full Name</div>
+            <div class="dx-field-value-static">
+                <span>{{firstName}} {{lastName}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-fieldset-header">Personal Data</div>
+    <div class="dx-field">
+        <div class="dx-field-label">First Name</div>
+        <div class="dx-field-value" id="firstNameTextBox">
+        </div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Last Name</div>
+        <div class="dx-field-value" id="lastNameTextBox">
+        </div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Full Name</div>
+        <div class="dx-field-value-static">
+            <span id="firstName">John</span> <span id="lastName">Smith</span>
+        </div>
+    </div>
+</div>
+
+<!--/@jQuery-->

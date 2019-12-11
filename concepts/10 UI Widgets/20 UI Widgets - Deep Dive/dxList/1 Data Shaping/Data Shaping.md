@@ -1,0 +1,1 @@
+Usually the DataSource instance used by the **List** widget to access data supports data shaping (sorting, filtering, grouping, etc.). The **List** widget includes special features for the following kinds of data shaping.

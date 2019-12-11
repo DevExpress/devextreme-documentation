@@ -1,0 +1,1 @@
+In this example, the *"Region"*, *"Country"* and *"City"* fields are collected in the *"Location"* group. Their hierarchy in this group is specified by the **groupIndex** option.

@@ -1,0 +1,1 @@
+In this example, the *"Is Discounted"* column contains values of a boolean data type. The *true* and *false* values of this column are replaced by *Yes* and *No* using the **trueText** and **falseText** options. Note that the **showEditorAlways** option is set to *false*. This setting prohibits check boxes from indicating boolean values.

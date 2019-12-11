@@ -1,0 +1,1 @@
+﻿In this example, several markers are displayed on the map. These markers indicate the capitals of ten most populous states in the USA. The state names are stored in the **attribures** of each marker object. The name of the attribute is passed to the **dataField** option.

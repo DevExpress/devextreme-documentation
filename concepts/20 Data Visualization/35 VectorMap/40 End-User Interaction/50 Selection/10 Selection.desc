@@ -1,0 +1,1 @@
+In this example, map areas and markers can be selected by a click. Their appearance in the selected state is specified by the **selectedColor** and **selectedBorderColor** options. Selection is executed in the multiple selection mode. In addition, when an area or a marker changes its selection state, a message notifying you about that appears under the map.

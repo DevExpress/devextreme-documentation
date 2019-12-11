@@ -1,0 +1,1 @@
+In this example, several options of the gauge scale are changed. The scale is divided using the **startValue** and **endValue** options. Both the major and minor scale ticks are colored in *black*. In addition, the scale labels are displayed in a *currency* format.

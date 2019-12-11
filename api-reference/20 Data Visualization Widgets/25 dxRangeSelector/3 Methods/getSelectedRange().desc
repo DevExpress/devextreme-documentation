@@ -1,0 +1,1 @@
+﻿In this example, a click on the *'Get selected range'* button displays the currently selected range. Here, the **getSelectedRange()** method is used to obtain this range.

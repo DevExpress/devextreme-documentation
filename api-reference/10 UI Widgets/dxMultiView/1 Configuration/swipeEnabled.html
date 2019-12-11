@@ -1,0 +1,69 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: '<< prev', onClick: goBack }"></div>
+<div data-bind="dxButton: { text: 'next >>', onClick: goForward }"></div>
+<div data-bind="dxMultiView: {
+    dataSource: multiViewItems,
+    selectedIndex: currentIndex,
+    swipeEnabled: enableSwiping,
+    height: 160
+}">
+    <div data-options="dxTemplate : { name: 'item' } ">
+        <div style="margin:25px;">
+            <h1 data-bind="text: title"></h1>
+            <p>&nbsp;</p>
+            <div style="text-align:left;" data-bind="foreach: dataArray">
+                <p><span data-bind="text: propertyKey"></span>: <b data-bind="text: propertyValue"></b></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">swipeEnabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: enableSwiping
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-button="{ text: '<< prev', onClick: goBack }"></div>
+    <div dx-button="{ text: 'next >>', onClick: goForward }"></div>
+    <div dx-multi-view="{
+        dataSource: multiViewItems,
+        height: 160,
+        bindingOptions: {
+            selectedIndex: 'currentIndex',
+            swipeEnabled: 'enableSwiping'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            <div style="margin:25px;">
+                <h1>{{itemObj.title}}</h1>
+                <p>&nbsp;</p>
+                <div style="text-align:left;" ng-repeat="(key, value) in itemObj.data">
+                    <p>{{key}}: <b>{{value}}</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">swipeEnabled</div>
+            <div class="dx-field-value" ng-model="enableSwiping" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="backButton"></div>
+<div id="forwardButton"></div>
+<div id="myMultiView"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">swipeEnabled</div>
+        <div class="dx-field-value" id="swipeSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

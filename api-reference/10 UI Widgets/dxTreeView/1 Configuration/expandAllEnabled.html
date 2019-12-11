@@ -1,0 +1,59 @@
+﻿<!--@Knockout-->
+<div style="height:400px; max-width:750px; margin: 0 auto" data-bind="dxScrollView: { showScrollbar: 'always' }">
+    <div class="wrapper">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">expandAllEnabled</div>
+                <div class="dx-field-value" data-bind="dxSwitch:{ 
+                    onValueChanged: expandAllChanged,
+                    value: expandAll
+                }"></div>
+            </div>
+        </div>
+        <p class="hint dx-state-invisible"><b>Press the "*" key to expand all child nodes of the current node.</b></p>
+        <div data-bind="dxTreeView: {
+            dataSource: treeViewData,
+            width: 'auto',
+            expandAllEnabled: expandAll
+        }">
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:400px; max-width:750px; margin: 0 auto" dx-scroll-view="{ showScrollbar: 'always' }" ng-controller="demoController">
+    <div class="wrapper">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">expandAllEnabled</div>
+                <div class="dx-field-value" ng-model="expandAll" dx-switch="{
+                    onValueChanged: expandAllChanged
+                }"></div>
+            </div>
+        </div>
+        <p class="hint dx-state-invisible"><b>Press the "*" key to expand all child nodes of the current node.</b></p>
+        <div dx-tree-view="{
+            dataSource: treeViewData,
+            width: 'auto',
+            bindingOptions: {
+                expandAllEnabled: 'expandAll'
+            }
+        }">
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:400px; max-width:750px; margin: 0 auto" id="demoBox">
+    <div class="wrapper">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">expandAllEnabled</div>
+                <div class="dx-field-value" id="expandAllSelector"></div>
+            </div>
+        </div>
+        <p class="hint dx-state-invisible"><b>Press the "*" key to expand all child nodes of the current node.</b></p>
+        <div id="myTreeView"></div>
+    </div>
+</div>
+<!--/@jQuery-->

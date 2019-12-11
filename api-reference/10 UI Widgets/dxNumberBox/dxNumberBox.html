@@ -1,0 +1,25 @@
+﻿<!--@Knockout-->
+<div class="numberBox" data-bind="dxNumberBox: {
+    min: 0,
+    max: 100,
+    showSpinButtons: true,
+    step: 5,
+    value: number
+}"></div>
+<p>The current value is <b data-bind="text: number"></b>.</p>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="numberBox" ng-model="number" dx-number-box="{
+        min: 0,
+        max: 100,
+        showSpinButtons: true,
+        step: 5
+    }"></div>
+    <p>The current value is <b>{{number}}</b>.</p>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="numberBox" id="myNumberBox"></div>
+<p>The current value is <b id="valueField">0</b>.</p>
+<!--/@jQuery-->

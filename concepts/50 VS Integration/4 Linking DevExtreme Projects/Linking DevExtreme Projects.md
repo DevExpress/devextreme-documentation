@@ -1,0 +1,5 @@
+*Linking* a DevExtreme project to another project means that files from the DevExtreme project are linked to the other project in the same manner as if you *added* these files *as links* one by another using the Visual Studio **Add** | **Existing item...** dialog. Linking of DevExtreme projects is used in the [DevExtreme Multi-Channel Application](/concepts/50%20VS%20Integration/0%20Project%20Templates/15%20Multi-Channel%20Application '/Documentation/Guide/VS_Integration/Project_Templates/#Multi-Channel_Application') template. In the solution created by using this template, the Shared and Mobile projects are linked to the Windows 8 and Windows Phone 8 projects respectively. You may need to link DevExtreme projects to other projects during [deployment](/concepts/40%20SPA%20Framework/00%20Application%20Development/Deployment '/Documentation/Guide/SPA_Framework/Application_Development/#Deployment') by yourself. In this article, you will learn the specifics of linking DevExtreme projects to other projects.
+
+
+
+ 

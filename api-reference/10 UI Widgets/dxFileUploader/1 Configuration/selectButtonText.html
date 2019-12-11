@@ -1,0 +1,35 @@
+﻿<!--@Knockout-->
+<div class="uploader" data-bind="dxFileUploader: {
+    selectButtonText: buttonTextValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectButtonText</div>
+        <div class="dx-field-value" data-bind="dxTextBox: { value: buttonTextValue }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="uploader" dx-file-uploader="{
+        bindingOptions: {
+            selectButtonText: 'buttonTextValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">selectButtonText</div>
+            <div class="dx-field-value" ng-model="buttonTextValue" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="uploader" id="myFileUploader"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectButtonText</div>
+        <div class="dx-field-value" id="buttonTextField"></div>
+    </div>
+</div>
+<!--/@jQuery-->

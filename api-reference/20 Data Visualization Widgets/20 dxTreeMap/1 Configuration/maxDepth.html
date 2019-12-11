@@ -1,0 +1,41 @@
+﻿<!--@jQuery-->
+<div id="treeMapContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>maxDepth:&nbsp;</div>
+    <div id="numberBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="treeMapContainer" data-bind="dxTreeMap: {
+    dataSource: '/Content/data/mostPopulatedCities.json',
+    maxDepth: currentMaxDepth
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>maxDepth:&nbsp;</div>
+    <div id="numberBoxContainer" data-bind="dxNumberBox: {
+        min: 1, max: 3,
+        showSpinButtons: true,
+        value: currentMaxDepth
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="treeMapController">
+    <div id="treeMapContainer" dx-tree-map="{
+        dataSource: '/Content/data/mostPopulatedCities.json',
+        bindingOptions: {
+            maxDepth: 'currentMaxDepth'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>maxDepth:&nbsp;</div>
+        <div id="numberBoxContainer" dx-number-box="{
+            min: 1, max: 3,
+            showSpinButtons: true,
+            bindingOptions: {
+                value: 'currentMaxDepth'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

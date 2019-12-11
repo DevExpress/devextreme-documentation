@@ -1,0 +1,69 @@
+<!--@Knockout-->
+<div data-bind="dxList: {
+    dataSource: listDataSource,
+    grouped: true,
+    height: '80%',
+    groupTemplate: currentTemplate
+}">
+    <div data-options="dxTemplate:{ name:'full' }">
+        <span style="color:red; font-size:larger;" data-bind="text: key + '&nbsp;'"></span>
+        <span data-bind="text: boundaryItems"></span>
+    </div>
+    <div data-options="dxTemplate:{ name:'brief' }">
+        <h1 style="color:blue; text-align: left;" data-bind="text: key"></h1>
+    </div>
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label" style="width: 60%">groupTemplate</div>
+        <div class="dx-field-value" style="width: 40%" data-bind="dxSelectBox: { 
+            dataSource: groupTemplates,
+            value: currentTemplate
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-list="{
+        dataSource: listDataSource,
+        grouped: true,
+        height: '80%',
+        bindingOptions: {
+            groupTemplate: 'currentTemplate'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'full' }">
+            <span style="color:red; font-size:larger;">{{itemObj.key + '&nbsp;'}}</span>{{itemObj.boundaryItems}}
+        </div>
+        <div data-options="dxTemplate:{ name:'brief' }">
+            <h1 style="color:blue; text-align: left;">{{itemObj.key}}</h1>
+        </div>
+        <div data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div style="margin-top: 15px;" class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label" style="width: 60%">groupTemplate</div>
+            <div class="dx-field-value" style="width: 40%" ng-model="currentTemplate" dx-select-box="{
+                dataSource: groupTemplates
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myList"></div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">groupTemplate</div>
+        <div class="dx-field-value" id="templateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

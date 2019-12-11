@@ -1,0 +1,3 @@
+When developing mobile applications, you have to run them on different devices to see how they look, feel and function. The DevExtreme applications (those that are built using [DevExtreme project templates](/concepts/50%20VS%20Integration/0%20Project%20Templates '/Documentation/Guide/VS_Integration/Project_Templates/') ) can be viewed on any device using the DevExtreme device-simulating tools.
+
+<a href="http://www.youtube.com/watch?v=1VCT0yRIr4Y&list=PL8h4jt35t1wjGvgflbHEH_e3b23AA30-z&index=20" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">Watch Video</a>

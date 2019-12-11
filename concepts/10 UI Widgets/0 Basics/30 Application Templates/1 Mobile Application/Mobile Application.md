@@ -1,0 +1,3 @@
+The [DevExtreme Mobile](/concepts/Common/07%20DevExtreme%20Packages/10%20DevExtreme%20Mobile.md '/Documentation/Guide/Common/DevExtreme_Packages/#DevExtreme_Mobile') package supplies a big library of mobile-optimized widgets. To help you build a mobile application using these widgets, use the DevExtreme application templates. They are located in the **Application Templates** folder of the DevExtreme Mobile zip archive.
+
+DevExtreme widgets can be used in Knockout and Angular -based applications. Thus, Knockout and AngularJS application templates are provided.

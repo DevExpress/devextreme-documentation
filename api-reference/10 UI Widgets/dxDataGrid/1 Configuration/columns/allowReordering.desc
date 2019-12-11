@@ -1,0 +1,1 @@
+﻿In this example, column reordering is enabled in a grid using the **allowColumnReordering** option. Drag a column by its header and drop it on the required place to change the order of grid columns. Note that the *"Author"*, *"Title"* and *"Year"* columns cannot be used in reordering as the **allowReordering** option for them is set to *false*.

@@ -1,0 +1,38 @@
+﻿<!--@Knockout-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+	<div data-bind="dxTextBox: { value: email, mode: 'email', placeholder: 'Email' },
+		dxValidator: { validationRules: [
+            { type: 'required', message: 'Email is required' },
+            { type: 'email' }
+        ] }">	   
+	</div>		
+	<div data-bind="dxTextBox: { value: password, mode: 'password', placeholder: 'Password' },
+		dxValidator: {  validationRules: [{ type: 'required', message: 'Password can not be empty.' }] }">
+	</div>
+	<div data-bind="dxValidationSummary: { }"></div>
+	<div data-bind="dxButton: { text: 'Register', onClick: validateAndLogin }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:200px;max-width:200px;margin:0px auto" ng-controller="demoController">
+    <div ng-model="email" dx-text-box="{ mode: 'email', placeholder: 'Email' }"
+         dx-validator="{ validationRules: [
+            { type: 'required', message: 'Email is required' },
+            { type: 'email' }
+        ] }">
+    </div>
+    <div ng-model="password" dx-text-box="{ mode: 'password', placeholder: 'Password' }"
+         dx-validator="{ validationRules: [ { type: 'required', message: 'Password can not be empty.' } ] }">
+    </div>
+	<div dx-validation-summary="{ }"></div>
+	<div dx-button="{ text: 'Register', onClick: validateAndLogin }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+    <div id="email"></div>
+    <div id="password"></div>
+    <div id="summary"></div>
+    <div id="button"></div>
+</div>
+<!--/@jQuery-->

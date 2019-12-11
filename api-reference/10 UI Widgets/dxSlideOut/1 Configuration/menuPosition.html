@@ -1,0 +1,57 @@
+<!--@Knockout-->
+<div data-bind="dxSlideOut: {
+    dataSource: slideOutItems,
+    menuVisible: showMenu,
+    onItemClick: changeMenuVisibility,
+    menuPosition: menuPositionValue
+}">
+    <div data-options="dxTemplate : { name: 'item' } ">
+        <div data-bind="dxButton: {
+            text: 'Show Menu',
+            onClick: $root.changeMenuVisibility
+        }"></div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">Menu position:</div>
+                <div class="dx-field-value" data-bind="dxSelectBox:{
+                    items: ['normal', 'inverted'],
+                    value: $root.menuPositionValue
+                }"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-slide-out="{
+        dataSource: slideOutItems,
+        onItemClick: changeMenuVisibility,
+        bindingOptions: {
+            menuPosition: 'menuPositionValue',
+            menuVisible: 'showMenu'
+        }
+    }">
+        <div data-options="dxTemplate : { name: 'item' } ">
+            <div dx-button="{
+                text: 'Show Menu',
+                onClick: $parent.changeMenuVisibility
+            }"></div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Menu position:</div>
+                    <div class="dx-field-value" dx-select-box="{
+                        items: ['normal', 'inverted'],
+                        bindingOptions: {
+                            value: '$parent.menuPositionValue'
+                        }
+                    }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlideOut"></div>
+<!--/@jQuery-->

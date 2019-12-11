@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div class="ui-element" data-bind="dxCheckBox: { value: menuRtl, text: 'rtlEnabled' }"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div data-bind="dxContextMenu: {
+        dataSource: menuItems,
+        target: '#contextMenuTarget',
+        rtlEnabled: menuRtl
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="ui-element" ng-model="menuRtl" dx-check-box="{
+        text: 'rtlEnabled'
+    }"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div dx-context-menu="{
+        dataSource: menuItems,
+        target: '#contextMenuTarget',
+        bindingOptions: {
+            rtlEnabled: 'menuRtl'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="ui-element" id="disabledSelector"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div id="myContextMenu"></div>
+</div>
+<!--/@jQuery-->

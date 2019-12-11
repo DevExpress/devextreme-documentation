@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div style="width: 100%; height: 100%;">
+        <div data-bind="dxMenu: { 
+            items: menuItems,
+            orientation: currentOrientation
+        }"></div>
+    </div>
+    <div class="option">
+        <div>Orientation</div>
+        <div data-bind="dxSelectBox: {
+            items: orientationValues,
+            value: currentOrientation
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div style="width: 100%; height: 100%;">
+        <div dx-menu="{
+            items: menuItems,
+            bindingOptions: {
+                orientation: 'currentOrientation'
+            }
+        }"></div>
+    </div>
+    <div class="option">
+        <div>Orientation</div>
+        <div ng-model="currentOrientation" dx-select-box="{
+            items: orientationValues
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div style="width: 100%; height: 100%;">
+        <div id="myMenu"></div>
+    </div>
+    <div class="option">
+        <div>Orientation</div>
+        <div id="orientationSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

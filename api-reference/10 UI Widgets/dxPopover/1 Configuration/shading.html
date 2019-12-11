@@ -1,0 +1,54 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { onClick: togglePopover, text: 'Choose color' }"></div>
+<div data-bind="dxPopover: {
+    width: 200,
+    visible: visible,
+    target: '.dx-button',
+    shading: shadeScreen
+}">
+    <div data-options="dxTemplate: { name: 'content' }">
+        <div data-bind="dxList: { dataSource: colors, onItemClick: togglePopover }"></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">shading</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: shadeScreen
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-button="{ onClick: togglePopover, text: 'Choose color' }"></div>
+    <div dx-popover="{
+        width: 200,
+        target: '.dx-button',
+        bindingOptions: {
+            visible: 'visible',
+            shading: 'shadeScreen'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'content' }">
+            <div dx-list="{ dataSource: colors, onItemClick: togglePopover }"></div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">shading</div>
+            <div class="dx-field-value" ng-model="shadeScreen" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="toggleButton"></div>
+<div id="myPopover"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">shading</div>
+        <div class="dx-field-value" id="shadingSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

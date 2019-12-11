@@ -1,0 +1,1 @@
+﻿In this example, click a series to select it. Since the **seriesSelectionMode** is set to *multiple*, more than one series can be selected. To deselect all the series, click the *Clear selected series* button. The polar chart's **clearSelection()** method will be called.

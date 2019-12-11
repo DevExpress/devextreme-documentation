@@ -1,0 +1,31 @@
+<div id="background" style ="height: 320px;">
+    <div style="text-align:left;" data-bind="dxForm: {
+        formData: employeeData,
+        labelLocation: 'top',
+        items: [
+            {
+                itemType: 'group',
+                caption: 'Personal Data',
+                colCount: 3,
+                items: [
+                    'FirstName',
+                    'LastName',
+                    'Position',
+                    'BirthDate',
+                    'HireDate',
+                    'City'
+                ]
+            },
+            {
+                itemType: 'group',
+                caption: 'Contacts',
+                colCount: 2,
+                items: [
+                    'Phone',
+                    'Email'
+                ]
+            }
+        ]
+    }">
+    </div>
+</div>

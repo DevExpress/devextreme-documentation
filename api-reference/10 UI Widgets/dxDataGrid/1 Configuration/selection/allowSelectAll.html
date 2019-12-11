@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" data-bind="dxDataGrid: {
+        dataSource: books,
+        columns: columns,
+        paging: { pageSize: 8 },
+        selection: {
+            mode: 'multiple',
+            allowSelectAll: checkBoxState
+        }
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'Allow the Selection of All Records',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: books,
+        columns: columns,
+        paging: { pageSize: 8 },
+        selection: { mode: 'multiple' },
+        bindingOptions: {
+            'selection.allowSelectAll': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Allow the Selection of All Records'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:380px;"></div>
+    <div id="allowSelectAllCheckbox"></div>
+</div>
+<!--/@jQuery-->

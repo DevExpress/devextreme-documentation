@@ -1,0 +1,1 @@
+In this example, when you hover the mouse pointer over a series, the chart calculates the maximum point value from this series and outputs it below. To get all the points of the series the mouse is currently hovering over, the series' [getAllPoints](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods#getAllPoints) method is used.

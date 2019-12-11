@@ -1,0 +1,1 @@
+﻿In this example, click a series on the chart to select/deselect it. When the chart series is selected, the pie chart displays the information about the population in the year corresponding to the selected series. When none of the chart series is selected, the pie chart displays the information about the population by year overall.

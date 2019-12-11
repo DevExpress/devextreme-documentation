@@ -1,0 +1,1 @@
+In this example, a callback function is assigned to the **onRowClick** property. This function applies a CSS style to a clicked row. To see the function in action, click a row in the grid. You will see this row painted *gray*.

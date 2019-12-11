@@ -1,0 +1,68 @@
+﻿<!--@jQuery-->
+<div id="chartContainer" style="height:400px; max-width:700px; margin:0 auto"></div>
+<div style="text-align:center">
+    <div id="checkBoxContainer" style="margin-top:5px"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" style="height:400px; max-width:700px; margin:0 auto" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'year'
+    },
+    series: [
+        { valueField: 'europe', name: 'Europe' },
+        { valueField: 'americas', name: 'Americas' },
+        { valueField: 'africa', name: 'Africa' }
+    ],
+    animation: false,
+    valueAxis: {
+        label: { format: 'largeNumber' }
+    },
+    commonAxisSettings: {
+        grid: { visible: false },
+        visible: true,
+        tick: { visible: true },
+        minorTick: { visible: checkBoxState }
+    }
+}"></div>
+<div style="text-align:center">
+    <div style="margin-top:5px" data-bind="dxCheckBox: {
+        text: 'Show minor ticks',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" style="height:400px; max-width:700px; margin:0 auto" dx-chart="{
+        dataSource: data,
+        commonSeriesSettings: {
+            argumentField: 'year'
+        },
+        series: [
+            { valueField: 'europe', name: 'Europe' },
+            { valueField: 'americas', name: 'Americas' },
+            { valueField: 'africa', name: 'Africa' }
+        ],
+        animation: false,
+        valueAxis: {
+            label: { format: 'largeNumber' }
+        },
+        commonAxisSettings: {
+            grid: { visible: false },
+            visible: true,
+            tick: { visible: true },
+            minorTick: { visible: false }
+        },
+        bindingOptions: {
+            'commonAxisSettings.minorTick.visible': 'checkBoxState'
+        }
+    }"></div>
+    <div style="text-align:center">
+        <div style="margin-top:5px" ng-model="checkBoxState" dx-check-box="{
+            text: 'Show minor ticks'
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

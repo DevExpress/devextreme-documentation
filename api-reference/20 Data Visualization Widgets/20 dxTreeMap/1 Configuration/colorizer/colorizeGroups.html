@@ -1,0 +1,39 @@
+﻿<!--@jQuery-->
+<div id="treeMapContainer" style="height:300px; max-width:700px; margin:0 auto"></div>
+<div style="text-align:center">
+    <div id="checkBoxContainer" style="margin-top:5px; height: 25px;"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:300px; max-width:700px; margin:0 auto" data-bind="dxTreeMap: {
+    dataSource: '/Content/data/displays.json',
+    colorizer: { 
+        colorizeGroups: colorizeGroups
+    }
+}"></div>
+<div style="text-align:center">
+    <div style="margin-top:5px; height: 25px;" data-bind="dxCheckBox: {
+        text: 'colorizeGroups',
+        value: colorizeGroups
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="treeMapController">
+    <div style="height:300px; max-width:700px; margin:0 auto" dx-tree-map="{
+        dataSource: '/Content/data/displays.json',
+        colorizer: { colorizeGroups: false },
+        bindingOptions: {
+            'colorizer.colorizeGroups': 'colorizeGroups'
+        }
+    }"></div>
+    <div style="text-align:center;">
+        <div style="margin-top:5px; height: 25px;" dx-check-box="{
+            text: 'colorizeGroups',
+            bindingOptions: {
+                value: 'colorizeGroups'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

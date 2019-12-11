@@ -1,0 +1,54 @@
+<!--@Knockout-->
+<div data-bind="dxList: {
+    dataSource: listDataSource,
+    height: '80%',
+    showScrollbar: showScrollbar
+}">
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showScrollbar</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: { 
+            dataSource: availableValues,
+            value: showScrollbar
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-list="{
+        dataSource: listDataSource,
+        height: '80%',
+        bindingOptions: {
+            showScrollbar: 'showScrollbar',
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div style="margin-top: 15px;" class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showScrollbar</div>
+            <div class="dx-field-value" ng-model="showScrollbar" dx-select-box="{
+                dataSource: availableValues
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myList"></div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showScrollbar</div>
+        <div class="dx-field-value" id="showScrollbarSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

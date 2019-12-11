@@ -1,0 +1,23 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div data-bind="dxMenu: {
+        items: menuItems,
+        onSubmenuHidden: submenuHidden,
+        onSubmenuShown: submenuShown
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div dx-menu="{
+        items: menuItems,
+        onSubmenuHidden: submenuHidden,
+        onSubmenuShown: submenuShown
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div id="myMenu"></div>
+</div>
+<!--/@jQuery-->

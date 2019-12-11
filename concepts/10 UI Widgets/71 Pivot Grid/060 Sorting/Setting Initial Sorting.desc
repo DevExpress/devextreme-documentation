@@ -1,0 +1,1 @@
+In this example, items of the *"Region"* field, which is located in the row area, are sorted by the summary values of the *"2015"* column. This sorting setting cannot be changed by the end-user, because the **allowSorting** and **allowSortingBySummary** options are set to *false*.

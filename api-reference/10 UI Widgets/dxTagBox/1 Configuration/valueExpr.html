@@ -1,0 +1,61 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTagBox: {
+    placeholder: 'Select states',
+    dataSource: tagBoxData,
+    displayExpr: 'name',
+    valueExpr: currentExpr,
+    value: selectedValues
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">valueExpr</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: ['name', 'capital'],
+            value: currentExpr
+        }"></div>
+    </div>
+</div>
+<p><b>Selected values</b></p>
+<ul data-bind="foreach: selectedValues">
+    <li>"<span data-bind="text: $data"></span>"</li>
+</ul>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-tag-box="{
+        placeholder: 'Select states',
+        dataSource: tagBoxData,
+        displayExpr: 'name',
+        bindingOptions: {
+            valueExpr: 'currentExpr',
+            value: {
+                deep: true,
+                dataPath: 'selectedValues'
+            }
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">valueExpr</div>
+            <div class="dx-field-value" ng-model="currentExpr" dx-select-box="{
+                items: ['name', 'capital']
+            }"></div>
+        </div>
+    </div>
+    <p><b>Selected values</b></p>
+    <ul ng-repeat="value in selectedValues">
+        <li>"{{value}}"</li>
+    </ul>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTagBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">valueExpr</div>
+        <div class="dx-field-value" id="exprSelector"></div>
+    </div>
+</div>
+<p><b>Selected values</b></p>
+<ul id="valuesList"></ul>
+<!--/@jQuery-->

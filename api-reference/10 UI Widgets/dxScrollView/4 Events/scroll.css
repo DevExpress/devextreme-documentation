@@ -1,0 +1,16 @@
+p{
+    padding: 5px 10px;
+    margin: 0;
+}
+.content{
+    height: 100%;
+}
+#textContainer p:first-child{
+    font-size: large;
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+#myScrollView{
+    margin: 10px;
+}

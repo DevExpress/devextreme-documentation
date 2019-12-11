@@ -1,0 +1,1 @@
+﻿In this example, grid records are initially filtered by the *"Author"* column using its **filterValue** property. Also, the grid filter row is made visible in order to enable you to change the filtering.

@@ -1,0 +1,29 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: {text: 'Show notification', onClick: showNotification}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Type</div>
+        <div class="dx-field-value" data-bind="dxLookup: { dataSource: notificationTypes, value: currentType }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{text: 'Show notification', onClick: showNotification}"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Type</div>
+            <div class="dx-field-value" ng-model="currentType" dx-lookup="{ dataSource: notificationTypes }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Type</div>
+        <div class="dx-field-value" id="lookup"></div>
+    </div>
+</div>
+<!--/@jQuery-->

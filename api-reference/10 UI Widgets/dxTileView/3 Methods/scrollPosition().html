@@ -1,0 +1,20 @@
+<div id="tileView" data-bind="dxTileView: {
+    dataSource: tileViewDataSource,
+    itemMargin: 20,
+    baseItemHeight: 120,
+    baseItemWidth: 180,
+    height: '70%'
+}">
+  <div class="tile" data-options="dxTemplate:{name:'item'}">
+    <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+    <img style="margin:5px;" data-bind="attr: { src: getImagePath(name) }" />
+    <p>Capital: <i data-bind="text: capital"></i></p>
+  </div>
+</div>
+<div class="button" data-bind="dxButton: {text: 'Get scroll position', onClick: getScrollPosition}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Scroll position</div>
+        <div class="dx-field-value" data-bind="text: scrollPosition"></div>
+    </div>
+</div>

@@ -1,0 +1,1 @@
+In this example, the *"Year"* and *"Quarter"* fields belong to the column area. Originally, *"Year"* goes before *"Quarter"* in the hierarchy. To swap them, click the button located below the pivot grid. Internally, this action will swap the values of the **areaIndex** option of these fields.

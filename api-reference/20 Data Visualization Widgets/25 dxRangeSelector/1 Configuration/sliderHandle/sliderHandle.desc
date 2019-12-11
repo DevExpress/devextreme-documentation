@@ -1,0 +1,1 @@
+﻿In this example, the slider handles are colored in '*brown*' using the **color** option. In addition, the **width** and **opacity** options of the **sliderHandle** configuration object are changed.

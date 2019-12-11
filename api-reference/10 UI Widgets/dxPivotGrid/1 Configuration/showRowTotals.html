@@ -1,0 +1,86 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:400px; max-width:750px; margin:0 auto"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Show Row Totals:&nbsp;
+    <div id="switchContainer" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:400px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: {
+        store: sales,
+        fields: [{
+            dataField: 'region',
+            width: 120,
+            area: 'row',
+            expanded: true
+        }, {
+            dataField: 'city',
+            width: 150,
+            area: 'row',
+            selector: function (data) {
+                return data.city + ' (' + data.country + ')';
+            }
+        }, {
+            dataField: 'date',
+            dataType: 'date',
+            area: 'column'
+        }, {
+            dataField: 'amount',
+            summaryType: 'sum',
+            format: 'currency',
+            area: 'data'
+        }]
+    },
+    fieldChooser: { enabled: false },
+    showRowTotals: showRowTotals
+}"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Show Row Totals:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxSwitch: {
+        onText: 'true',
+        offText: 'false',
+        value: showRowTotals
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:400px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: {
+            store: sales,
+            fields: [{
+                dataField: 'region',
+                width: 120,
+                area: 'row',
+                expanded: true
+            }, {
+                dataField: 'city',
+                width: 150,
+                area: 'row',
+                selector: cityText
+            }, {
+                dataField: 'date',
+                dataType: 'date',
+                area: 'column'
+            }, {
+                dataField: 'amount',
+                summaryType: 'sum',
+                format: 'currency',
+                area: 'data'
+            }]
+        },
+        fieldChooser: { enabled: false },
+        bindingOptions: {
+            showRowTotals: 'showRowTotals'
+        }
+    }"></div>
+    <div style="height:40px; margin-top:5px; text-align:center">
+        Show Row Totals:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" ng-model="showRowTotals" dx-switch="{
+            onText: 'true',
+            offText: 'false'
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

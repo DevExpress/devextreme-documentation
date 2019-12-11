@@ -1,0 +1,36 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: columns,
+    paging: { pageSize: 8 },
+    editing: { allowUpdating: checkBoxState }
+}"></div>
+    <div data-bind="dxCheckBox: {
+    text: 'Enable Row Editing',
+    value: checkBoxState
+}"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: books,
+        columns: columns,
+        paging: { pageSize: 8 },
+        editing: { allowUpdating: true },
+        bindingOptions: {
+            'editing.allowUpdating': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Enable Row Editing'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:380px;"></div>
+    <div id="enableEditingCheckbox"></div>
+</div>
+<!--/@jQuery-->

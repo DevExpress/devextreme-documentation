@@ -1,0 +1,1 @@
+﻿In this example, choose one of the point indexes using the radio buttons. Here, the **getPointByPos(positionIndex)** method is used to select all points with the chosen index.

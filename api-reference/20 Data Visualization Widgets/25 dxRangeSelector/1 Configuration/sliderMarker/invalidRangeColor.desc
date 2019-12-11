@@ -1,0 +1,1 @@
+In this example, if you try to select a range less than 10 and greater than 20, the slider markers will be colored in *'darkred'*.

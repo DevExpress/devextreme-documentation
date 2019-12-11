@@ -1,0 +1,17 @@
+﻿#demo-box{
+    height:500px !important;
+    max-width:600px !important;
+    margin: 0 auto;
+    text-align: left;
+    border: solid 2px gray;
+}
+.wrapper{
+    padding: 20px;
+}
+.checkBox{
+    margin: 10px;
+}
+.item-body{
+    background-color:white;
+    border: solid 1px gray;
+}

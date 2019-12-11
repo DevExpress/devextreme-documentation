@@ -1,0 +1,75 @@
+<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    showDoneButton: true,
+    showCancelButton: true,
+    showClearButton: true,
+    doneButtonText: doneText,
+    cancelButtonText: cancelText,
+    clearButtonText: clearText,
+    title: 'States'
+}"></div>
+<div class="dx-fieldset" style="text-align:left;">
+    <div class="dx-field">
+        <p><b>Done Button Text:</b></p>
+        <p data-bind="dxTextBox: { value: doneText }"></p>
+    </div>
+    <div class="dx-field">
+        <p><b>Cancel Button Text:</b></p>
+        <p data-bind="dxTextBox: { value: cancelText }"></p>
+    </div>
+    <div class="dx-field">
+        <p><b>Clear Button Text:</b></p>
+        <p data-bind="dxTextBox: { value: clearText }"></p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        showDoneButton: true,
+        showCancelButton: true,
+        showClearButton: true,
+        title: 'States',
+        bindingOptions: {
+            doneButtonText: 'doneText',
+            cancelButtonText: 'cancelText',
+            clearButtonText: 'clearText'
+        }
+    }"></div>
+    <div class="dx-fieldset" style="text-align:left;">
+        <div class="dx-field">
+            <p><b>Done Button Text:</b></p>
+            <p ng-model="doneText" dx-text-box="{ }"></p>
+        </div>
+        <div class="dx-field">
+            <p><b>Cancel Button Text:</b></p>
+            <p ng-model="cancelText" dx-text-box="{ }"></p>
+        </div>
+        <div class="dx-field">
+            <p><b>Clear Button Text:</b></p>
+            <p ng-model="clearText" dx-text-box="{ }"></p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="dx-fieldset" style="text-align:left;">
+    <div class="dx-field">
+        <p><b>Done Button Text:</b></p>
+        <p id="doneTextField"></p>
+    </div>
+    <div class="dx-field">
+        <p><b>Cancel Button Text:</b></p>
+        <p id="cancelTextField"></p>
+    </div>
+    <div class="dx-field">
+        <p><b>Clear Button Text:</b></p>
+        <p id="clearTextField"></p>
+    </div>
+</div>
+<!--/@jQuery-->

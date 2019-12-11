@@ -1,0 +1,99 @@
+Starting with version 16.1, DevExtreme provides the following bundles.
+
+<div class="simple-table">
+<table>
+<thead>
+    <tr>
+    <th>16.1 Bundle</th>
+    <th>15.2 Bundles</th>
+    <th>15.2 Modules</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <td>dx.mobile</td>
+    <td>dx.phonejs</td>
+    <td>
+        <ul>
+            <li>dx.module-core</li>
+            <li>dx.module-framework</li>
+            <li>dx.module-widgets-base</li>
+            <li>dx.module-widgets-mobile</li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td>dx.viz</td>
+    <td>dx.chartjs</td>
+    <td>
+        <ul>
+            <li>dx.module-core</li>
+            <li>dx.module-viz-core</li>
+            <li>dx.module-viz-charts</li>
+            <li>dx.module-viz-gauges</li>
+            <li>dx.module-viz-rangeselector</li>
+            <li>dx.module-viz-sparklines</li>
+            <li>dx.module-viz-treemap</li>
+            <li>dx.module-viz-vectormap</li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td>dx.web</td>
+    <td>dx.webappjs</td>
+    <td>
+        <ul>
+            <li>dx.module-core</li>
+            <li>dx.module-framework</li>
+            <li>dx.module-widgets-base</li>
+            <li>dx.module-widgets-web</li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td>dx.viz-web</td>
+    <td>
+        dx.webappjs<br/>
+        dx.chartjs
+    </td>
+    <td>
+        <ul>
+            <li>dx.module-core</li>
+            <li>dx.module-framework</li>
+            <li>dx.module-widgets-base</li>
+            <li>dx.module-widgets-web</li>
+            <li>dx.module-viz-core</li>
+            <li>dx.module-viz-charts</li>
+            <li>dx.module-viz-gauges</li>
+            <li>dx.module-viz-rangeselector</li>
+            <li>dx.module-viz-sparklines</li>
+            <li>dx.module-viz-treemap</li>
+            <li>dx.module-viz-vectormap</li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td>dx.all</td>
+    <td>dx.all</td>
+    <td>
+        <ul>
+            <li>dx.module-core</li>
+            <li>dx.module-framework</li>
+            <li>dx.module-widgets-base</li>
+            <li>dx.module-widgets-mobile</li>
+            <li>dx.module-widgets-web</li>
+            <li>dx.module-viz-core</li>
+            <li>dx.module-viz-charts</li>
+            <li>dx.module-viz-gauges</li>
+            <li>dx.module-viz-rangeselector</li>
+            <li>dx.module-viz-sparklines</li>
+            <li>dx.module-viz-treemap</li>
+            <li>dx.module-viz-vectormap</li>
+        </ul>
+    </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+[note]You can reference only one bundle per application. Combining them can cause unexpected results.

@@ -1,0 +1,1 @@
+﻿In this example, grid records are grouped by the *"Format"* column initially. You can also group records by the other columns. To ungroup records, click the *"Clear Grouping"* button located below the grid. A click on this button calls the grid's **clearGrouping()** method.

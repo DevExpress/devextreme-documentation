@@ -1,0 +1,1 @@
+In this example, click the button under the map to select an area. The area to be selected is chosen randomly from a pool of all the map areas. The array of the map areas is obtained using the **getAreas()** method.

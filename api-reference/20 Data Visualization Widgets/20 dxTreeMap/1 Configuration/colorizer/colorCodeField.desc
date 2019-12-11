@@ -1,0 +1,1 @@
+﻿In this example, each data source object has two fields providing numeric values. You can assign one of these fields to the **colorCodeField** option at runtime using the select box under the treemap. Note that the **range** option will be changed also, because different color code fields require different value ranges.

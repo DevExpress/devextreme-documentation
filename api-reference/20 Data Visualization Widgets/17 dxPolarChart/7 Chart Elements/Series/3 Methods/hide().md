@@ -1,0 +1,3 @@
+This method hides a series at runtime. To specify a series hidden at design-time, set the **series** | [visible](/api-reference/20%20Data%20Visualization%20Widgets/17%20dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonSeriesSettings/#visible') option to *false*.
+
+[note] When the series is invisible, the marker of its [legend item](/concepts/20%20Data%20Visualization/10%20Charts/352%20PolarChart%20Elements/120%20Legend.md '/Documentation/Guide/Data_Visualization/Charts/PolarChart_Elements/#Legend') is faded.

@@ -1,0 +1,59 @@
+<!--@Knockout-->
+<div data-bind="dxButton: {
+    text: 'Show toast',
+    onClick: showToast
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div style="width: 60%" class="dx-field-label">Animation type</div>
+        <div style="width: 40%" class="dx-field-value" data-bind="dxSelectBox: {
+            items: animationTypes,
+            value: 'fade',
+            onValueChanged: typeChanged
+        }"></div>
+    </div>
+</div>
+<div data-bind="dxToast: { 
+    message: 'Toast message', 
+    animation: animationConfig,
+    visible: toastVisible
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-button="{
+        text: 'Show toast',
+        onClick: showToast
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Animation type</div>
+            <div class="dx-field-value" dx-select-box="{ 
+                items: animationTypes,
+                onValueChanged: typeChanged,
+                value: 'fade'
+            }"></div>
+        </div>
+    </div>
+    <div dx-toast="{
+        message: 'Toast message',
+        bindingOptions: {
+            visible: 'toastVisible',
+            animation: {
+                deep: false,
+                dataPath: 'animationConfig'
+            }
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="showButton"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Animation type</div>
+        <div class="dx-field-value" id="animationSelector"></div>
+    </div>
+</div>
+<div id="myToast"></div>
+<!--/@jQuery-->

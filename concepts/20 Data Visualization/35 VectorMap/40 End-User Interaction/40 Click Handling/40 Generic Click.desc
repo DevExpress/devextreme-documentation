@@ -1,0 +1,1 @@
+In this example, the coordinates of the clicked point are displayed below the map. Note that each clicked point is represented by a client area and geographical coordinates. The **onClick** function handling the click event accepts only client area coordinates. To convert them into geographical coordinates, the **convertCoordinates(x,y)** method is used.

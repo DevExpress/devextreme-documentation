@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div data-bind="dxTextBox: {
+    placeholder: 'Type your text here',
+    maxLength: textLength
+}"></div><br/>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">maxLength</div>
+    <div class="dx-field-value" data-bind="dxNumberBox: {
+        min: 1,
+        max: 50,
+        value: textLength,
+        showSpinButtons: true
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-text-box="{
+        placeholder: 'Type your text here',
+        bindingOptions: {
+            maxLength: 'textLength'
+        }
+    }"></div><br/>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">maxLength</div>
+            <div class="dx-field-value" ng-model="textLength" dx-number-box="{
+                min: 1,
+                max: 50,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTextBox"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">maxLength</div>
+    <div class="dx-field-value" id="maxLengthSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

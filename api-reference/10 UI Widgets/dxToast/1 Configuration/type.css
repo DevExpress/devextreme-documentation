@@ -1,0 +1,32 @@
+body{
+  text-align: center;
+}
+.dx-button{
+  margin: 10px;
+}
+.dx-theme-ios .dx-toast-custom{
+  background-color: orange;
+  font-size: 28px;
+}
+.dx-theme-android .dx-toast-custom{
+  background-color: #3f3f3f;
+  font-size: 28px;
+}
+.dx-theme-win8 .dx-toast-custom{
+  background-color: #00C60E;
+  font-size: 28px;
+}
+.dx-theme-tizen .dx-toast-custom{
+  border: 1px solid #85837e;
+  background-color: #E0FFE4;
+  font-size: 28px;
+}
+.dx-theme-generic .dx-toast-custom{
+  background-color: orange;
+  font-size: 28px;
+}
+.dx-icon {
+  display: inline-block;
+  font-size: 56px;
+  vertical-align: middle;
+}

@@ -1,0 +1,50 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div class="ui-element" data-bind="dxCheckBox: { value: alternateInvocation, text: 'invokeOnlyFromCode' }"></div><br />
+    <div id="invokeButton" data-bind="dxButton: {
+        text: 'Show context menu',
+        visible: alternateInvocation
+    }"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div data-bind="dxContextMenu: {
+        dataSource: menuItems,
+        target: '#contextMenuTarget',
+        alternativeInvocationMode: {
+            enabled: alternateInvocation,
+            invokingElement: '#invokeButton'
+        }
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="ui-element" ng-model="alternateInvocation" dx-check-box="{
+        text: 'Show context menu'
+    }"></div><br />
+    <div id="invokeButton" dx-button="{
+        text: 'Show context menu',
+        bindingOptions: {
+            visible: 'alternateInvocation'
+        }
+    }"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div dx-context-menu="{
+        dataSource: menuItems,
+        target: '#contextMenuTarget',
+        alternativeInvocationMode: {
+            invokingElement: '#invokeButton'
+        },
+        bindingOptions: {
+            'alternativeInvocationMode.enabled': 'alternateInvocation',
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="ui-element" id="invocationSelector"></div><br />
+    <div id="invokeButton"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div id="myContextMenu"></div>
+</div>
+<!--/@jQuery-->

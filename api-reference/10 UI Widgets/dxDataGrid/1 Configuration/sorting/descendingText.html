@@ -1,0 +1,41 @@
+﻿<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin:0 auto" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: columns,
+    paging: { pageSize: 8 },
+    sorting: {
+        mode: 'multiple',
+        descendingText: descendingText
+    }
+}"></div>
+<div style="width:300px; margin:0 auto" data-bind="dxTextBox: {
+    placeholder: 'Enter a value of the descendingText option',
+    valueChangeEvent: 'keyup',
+    height: 40,
+    width: 300,
+    value: descendingText
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:450px" ng-controller="demoController">
+    <div style="height:390px; max-width:630px; margin:0 auto" dx-data-grid="{
+        dataSource: books,
+        columns: columns,
+        paging: { pageSize: 8 },
+        sorting: { mode: 'multiple' },
+        bindingOptions: {
+            'sorting.descendingText': 'descendingText'
+        }
+    }"></div>
+    <div style="width:300px; margin:0 auto;" ng-model="descendingText" dx-text-box="{
+        placeholder: 'Enter a value of the descendingText option',
+        valueChangeEvent: 'keyup',
+        height: 40,
+        width: 300
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height: 380px; max-width: 630px; margin: 0 auto"></div>
+<div id="textBoxContainer" style="height: 45px; width: 280px; margin:0 auto"></div>
+<!--/@jQuery-->

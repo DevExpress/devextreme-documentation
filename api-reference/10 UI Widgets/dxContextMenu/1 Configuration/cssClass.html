@@ -1,0 +1,24 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div class="target1" id="contextMenuTarget1"></div>
+    <div class="target2" id="contextMenuTarget2"></div>
+    <div data-bind="dxContextMenu: { dataSource: menuItems, target: '#contextMenuTarget1' }"></div>
+    <div data-bind="dxContextMenu: { dataSource: menuItems, target: '#contextMenuTarget2', cssClass: 'customClass' }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="target1" id="contextMenuTarget1"></div>
+    <div class="target2" id="contextMenuTarget2"></div>
+    <div dx-context-menu="{ dataSource: menuItems, target: '#contextMenuTarget1' }"></div>
+    <div dx-context-menu="{ dataSource: menuItems, target: '#contextMenuTarget2', cssClass: 'customClass' }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="target1" id="contextMenuTarget1"></div>
+    <div class="target2" id="contextMenuTarget2"></div>
+    <div id="contextMenu1"></div>
+    <div id="contextMenu2"></div>
+</div>
+<!--/@jQuery-->

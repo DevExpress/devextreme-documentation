@@ -1,0 +1,25 @@
+<div class="button" data-bind="dxButton: { text: 'Show popup', onClick: showPopup }"></div>
+<p style="text-align:center"><b>Position</b></p>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Collision</div>
+    <div class="dx-field-value" data-bind="dxLookup: { dataSource: collisionValues, value: collisionValue }"></div>
+  </div>
+</div>
+<div id="targetElement"></div>
+<div id="myPopup" data-bind="dxPopup: {
+    title: 'My Popup',
+    visible: popupVisible,
+    height: 150,
+    width: 180,
+    onClick: hidePopup,
+    position: {
+        my: 'top',
+        at: 'bottom left',
+        of: $('#targetElement'),
+        collision: collisionValue()
+    }
+}">
+      <p>The popup text.</p>
+      <div class="button" data-bind="dxButton: { text: 'Hide popup', onClick: hidePopup }"></div>
+</div>

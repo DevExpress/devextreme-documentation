@@ -1,0 +1,1 @@
+﻿In this example, you can change the name of the context-menu item that resets sorting in a column. Type your text in the text box under the grid. After that, make the text box lose focus by clicking the surrounding area. The typed text will be assigned to the **sorting** | **clearText** option. To see the result of this alteration, right-click any column header.

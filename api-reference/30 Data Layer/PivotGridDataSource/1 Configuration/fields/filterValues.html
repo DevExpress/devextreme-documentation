@@ -1,0 +1,74 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:290px; max-width:850px; margin:0 auto"></div>
+<div style="height:70px; width:250px; margin:0 auto; margin-top:5px; display:block; vertical-align:top">
+    filterType:&nbsp;
+    <div id="switchContainer" style="vertical-align:middle; margin-bottom:5px"></div><br/>
+    <div id="checkbox2013" style="vertical-align:middle"></div>&nbsp;
+    <div id="checkbox2014" style="vertical-align:middle"></div>&nbsp;
+    <div id="checkbox2015" style="vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:290px; max-width:850px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: dataSource,
+    fieldChooser: { enabled: false }
+}"></div>
+<div style="height:70px; width:250px; margin:0 auto; margin-top:5px; display:block; vertical-align:top">
+    filterType:&nbsp;
+    <div style="vertical-align:middle; margin-bottom:5px" data-bind="dxSwitch: {
+        onText: 'include',
+        offText: 'exclude',
+        value: true,
+        width: 80,
+        onValueChanged: changeFilterType
+    }"></div><br/>
+    <div style="vertical-align:middle" data-bind="dxCheckBox: {
+        text: '2013',
+        value: true,
+        onValueChanged: changeFilterValues
+    }"></div>&nbsp;
+    <div style="vertical-align:middle" data-bind="dxCheckBox: {
+        text: '2014',
+        value: true,
+        onValueChanged: changeFilterValues
+    }"></div>&nbsp;
+    <div style="vertical-align:middle" data-bind="dxCheckBox: {
+        text: '2015',
+        value: true,
+        onValueChanged: changeFilterValues
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:290px; max-width:850px; margin:0 auto" dx-pivot-grid="{
+        dataSource: dataSource,
+        fieldChooser: { enabled: false }
+    }"></div>
+    <div style="height:70px; width:250px; margin:0 auto; margin-top:5px; display:block; vertical-align:top">
+        filterType:&nbsp;
+        <div style="vertical-align:middle; margin-bottom:5px" dx-switch="{
+            onText: 'include',
+            offText: 'exclude',
+            value: true,
+            width: 80,
+            onValueChanged: changeFilterType
+        }"></div><br/>
+        <div style="vertical-align:middle" dx-check-box="{
+            text: '2013',
+            value: true,
+            onValueChanged: changeFilterValues
+        }"></div>&nbsp;
+        <div style="vertical-align:middle" dx-check-box="{
+            text: '2014',
+            value: true,
+            onValueChanged: changeFilterValues
+        }"></div>&nbsp;
+        <div style="vertical-align:middle" dx-check-box="{
+            text: '2015',
+            value: true,
+            onValueChanged: changeFilterValues
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

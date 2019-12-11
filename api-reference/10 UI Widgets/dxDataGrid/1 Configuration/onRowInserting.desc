@@ -1,0 +1,1 @@
+﻿In this example, if you try to save a new row without the *"Author"* or *"Title"* field specified, this row will be rejected and the alert dialog box will appear.

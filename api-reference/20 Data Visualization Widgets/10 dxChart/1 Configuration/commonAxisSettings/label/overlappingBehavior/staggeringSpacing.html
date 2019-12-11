@@ -1,0 +1,84 @@
+﻿<!--@jQuery-->
+<div id="chartContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>commonAxisSettings | label | overlappingBehavior | staggeringSpacing:&nbsp;</div>
+    <div id="sliderContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'year'
+    },
+    series: [
+        { valueField: 'europe', name: 'Europe' },
+        { valueField: 'americas', name: 'Americas' },
+        { valueField: 'africa', name: 'Africa' }
+    ],
+    animation: false,
+    valueAxis: {
+        label: { format: 'largeNumber' },
+        tickInterval: 100000000
+    },
+    argumentAxis: { tickInterval: 5 },
+    commonAxisSettings: {
+        label: {
+            overlappingBehavior: {
+                mode: 'stagger',
+                staggeringSpacing: sliderValue
+            }
+        }
+    }
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>commonAxisSettings | label | overlappingBehavior | staggeringSpacing:&nbsp;</div>
+    <div id="sliderContainer" data-bind="dxSlider: {
+        min: 0, max: 10,
+        step: 1,
+        label: { visible: true },
+        showRange: false,
+        value: sliderValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" dx-chart="{
+        dataSource: data,
+            commonSeriesSettings: {
+            argumentField: 'year'
+        },
+        series: [
+            { valueField: 'europe', name: 'Europe' },
+            { valueField: 'americas', name: 'Americas' },
+            { valueField: 'africa', name: 'Africa' }
+        ],
+        animation: false,
+        valueAxis: {
+            label: { format: 'largeNumber' },
+            tickInterval: 100000000
+        },
+        argumentAxis: { tickInterval: 5 },
+        commonAxisSettings: {
+            label: {
+                overlappingBehavior: {
+                    mode: 'stagger'
+                }
+            }
+        },
+        bindingOptions: {
+            'commonAxisSettings.label.overlappingBehavior.staggeringSpacing': 'sliderValue'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>commonAxisSettings | label | overlappingBehavior | staggeringSpacing:</div>
+        <div id="sliderContainer" ng-model="sliderValue" dx-slider="{
+            min: 0, max: 10,
+            step: 1,
+            label: { visible: true },
+            showRange: false
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

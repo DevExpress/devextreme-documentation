@@ -1,0 +1,1 @@
+﻿In this example, use the [Switch](/Documentation/ApiReference/UI_Widgets/dxSwitch/) control at the bottom to change the location of the "Total sales" summary item. Note that being placed to the footer, this item is displayed in the "OrderNumber" column instead of "SaleAmount", because its **showInColumn** option is set to "OrderNumber".

@@ -1,0 +1,1 @@
+The **List** widget enables an end user to perform the following operations on items.

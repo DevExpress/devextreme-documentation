@@ -1,0 +1,3 @@
+The [Lookup](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/') widget allows an end-user to select predefined values from a lookup window. Refer to the [dxLookup guide](/concepts/10%20UI%20Widgets/20%20UI%20Widgets%20-%20Deep%20Dive/dxLookup '/Documentation/Guide/UI_Widgets/UI_Widgets_-_Deep_Dive/dxLookup/') for more information.
+
+<a href="http://js.devexpress.com/Demos/WidgetsGallery/#demo/actionsandlistslookuplookuplookup/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Demo</a>

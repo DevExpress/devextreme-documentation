@@ -1,0 +1,58 @@
+﻿<!--@jQuery-->
+<div id="chartContainer" style="height:350px; max-width:700px; margin:0 auto"></div>
+<div style="text-align:center">
+    <div id="checkBoxContainer" style="margin-top:5px"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" style="height:350px; max-width:700px; margin:0 auto" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'year'
+    },
+    series: [
+        { valueField: 'europe', name: 'Europe' },
+        { valueField: 'americas', name: 'Americas' },
+        { valueField: 'africa', name: 'Africa' }
+    ],
+    animation: false,
+    valueAxis: {
+        label: { format: 'largeNumber' }
+    },
+    argumentAxis: { inverted: checkBoxState }
+}"></div>
+<div style="text-align:center">
+    <div style="margin-top:5px" data-bind="dxCheckBox: {
+        text: 'Invert the argument axis',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" style="height:350px; max-width:700px; margin:0 auto" dx-chart="{
+        dataSource: data,
+        commonSeriesSettings: {
+            argumentField: 'year'
+        },
+        series: [
+            { valueField: 'europe', name: 'Europe' },
+            { valueField: 'americas', name: 'Americas' },
+            { valueField: 'africa', name: 'Africa' }
+        ],
+        animation: false,
+        valueAxis: {
+            label: { format: 'largeNumber' }
+        },
+        argumentAxis: { inverted: false },
+        bindingOptions: {
+            'argumentAxis.inverted': 'checkBoxState'
+        }
+    }"></div>
+    <div style="text-align:center">
+        <div style="margin-top:5px" ng-model="checkBoxState" dx-check-box="{
+            text: 'Invert the argument axis'
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

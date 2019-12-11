@@ -1,0 +1,3 @@
+The [Form](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/') widget is intended to visually represent and edit data stored in an object that has a specific structure. The widget enables you to bind each layout item to an appropriate field of an existing data object, as well as to generate a new data object according to current values of the form fields.
+
+<a href="http://js.devexpress.com/Demos/WidgetsGallery/#demo/forms_and_multi-purpose-form-overview" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Demo</a>

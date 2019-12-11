@@ -1,0 +1,23 @@
+body{
+    text-align:center;
+}
+p{
+    margin: 10px;
+}
+.button{
+    margin-top:25px;
+}
+.box{
+    margin: 10px;
+}
+.actionSheetButton {
+    margin: 5px auto;
+    background-color: white;
+    color: blue;
+    padding: 10px;
+    border: 1px dotted #080;
+}
+.actionSheetButton a{
+    color: #080;
+    text-decoration: none;
+}

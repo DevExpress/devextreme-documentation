@@ -1,0 +1,17 @@
+p{
+    margin:10px;
+}
+#parentElement {
+    color:blue;
+    margin: 10px;
+    background-color: cyan;
+    border:solid 2px blue;
+}
+#childElement {
+    margin: 10px;
+    float: left;
+    width: 30%;
+    color:brown;
+    background-color: yellow;
+    border:solid 2px brown;
+}

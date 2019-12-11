@@ -1,0 +1,24 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to Scroll event', onClick: clickHandler }"></div>
+<div id="myScrollView" data-bind="dxScrollView: {
+    onInitialized: initializedHAndler
+}">
+    <div id="textContainer"><h3>Scroll the text</h3></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to Scroll event', onClick: clickHandler }"></div>
+    <div id="myScrollView" dx-scroll-view="{
+        onInitialized: initializedHandler
+    }">
+        <div id="textContainer"><h3>Scroll the text</h3></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myScrollView">
+    <div id="textContainer"><h3>Scroll the text</h3></div>
+</div>
+<!--/@jQuery-->

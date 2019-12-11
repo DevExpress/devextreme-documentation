@@ -1,0 +1,18 @@
+<div class="button" data-bind="dxButton: { text: 'Show overlay', onClick: showOverlay }"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div style="width: 70%" class="dx-field-label">Animation Type</div>
+    <div style="width: 30%" class="dx-field-value" data-bind="dxLookup: {
+      dataSource: animationTypes,
+      value: animationType,
+      title: 'Animation type',
+      onValueChanged: typeChanged
+    }"></div>
+  </div>
+</div>
+<div id="myOverlay" data-bind="dxOverlay: { visible: overlayVisible, animation: animationConfig, width:'60%', height:'50%' }">
+  <div class="overlayContents">
+    <p>The overlay window text.</p>
+    <div class="button" data-bind="dxButton: { text: 'Hide overlay', onClick: hideOverlay }"></div>
+  </div>
+</div>

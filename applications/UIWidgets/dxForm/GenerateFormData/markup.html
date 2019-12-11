@@ -1,0 +1,15 @@
+<div id="background" style ="height: 470px;">
+    <div style="text-align:right;" data-bind="dxForm: {
+        items: myFormItems,
+        colCount: 2,
+        onFieldDataChanged: updateFormData
+    }">
+    </div>
+    <div class="objectStructure">
+        <p>formData = {</p>
+            <ul data-bind="foreach: formDataStructure">
+                <li>&nbsp;&nbsp;<span data-bind="text: propertyKey"></span>: "<span data-bind="text: propertyValue"></span>"</li>
+            </ul>
+        <p>}</p>
+    </div>
+</div>

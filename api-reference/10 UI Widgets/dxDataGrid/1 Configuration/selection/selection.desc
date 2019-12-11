@@ -1,0 +1,1 @@
+In this example, you can select multiple records in a grid. This feature is enabled by setting the **selection** | **mode** option to *"multiple"*. However, you cannot select all records at once as the **allowSelectAll** option is set to *false*.

@@ -1,0 +1,1 @@
+In this example, a number of the tooltip options are changed. The tooltip value is displayed in a *currency* format with the precision of 2. In addition, the font **size** and **weight** options are changed. To see the tooltip, hover over the red range bar.

@@ -1,0 +1,1 @@
+Here, years in the chart's data source are represented as strings. By default, they will be displayed on the argument axis in the same order as they are listed in the data source. To display them in another order, the **categories** option is used.

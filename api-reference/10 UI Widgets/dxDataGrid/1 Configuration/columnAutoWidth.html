@@ -1,0 +1,47 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" data-bind="dxDataGrid: {
+        dataSource: orders,
+        columns: [
+            'OrderID', 'CustomerID', 'EmployeeID',
+            { dataField: 'OrderDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'RequiredDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'ShippedDate', dataType: 'date', format: 'shortDate' },
+            'ShipVia', 'Freight', 'ShipName', 'ShipAddress', 'ShipCity'
+        ],
+        paging: { pageSize: 8 },
+        columnAutoWidth: checkBoxState
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'columnAutoWidth',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: orders,
+        columns: [
+            'OrderID', 'CustomerID', 'EmployeeID',
+            { dataField: 'OrderDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'RequiredDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'ShippedDate', dataType: 'date', format: 'shortDate' },
+            'ShipVia', 'Freight', 'ShipName', 'ShipAddress', 'ShipCity'
+        ],
+        paging: { pageSize: 8 },
+        bindingOptions: {
+            columnAutoWidth: 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'columnAutoWidth'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:380px;"></div>
+    <div id="columnAutoWidthCheckbox"></div>
+</div>
+<!--/@jQuery-->

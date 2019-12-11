@@ -1,0 +1,1 @@
+In this example, you can change the **showGrandTotals** option of the *"Amount"* field at runtime. By default, this option is *true*. Turn the switch below the pivot grid to *false*. This will cause the grand total values to be hidden.

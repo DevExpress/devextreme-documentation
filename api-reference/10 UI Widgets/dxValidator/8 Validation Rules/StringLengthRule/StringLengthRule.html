@@ -1,0 +1,42 @@
+﻿<!--@Knockout-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+    <div data-bind="dxTextBox: { value: login, placeholder: 'Login' },
+        dxValidator: { validationRules: [
+            { type: 'required', message: 'Login is required' }
+        ] }">	   
+    </div>		
+    <div data-bind="dxTextBox: { value: password, mode: 'password', placeholder: 'Password' },
+        dxValidator: {  validationRules: [
+            { type: 'required', message: 'Password can not be empty.' },
+            { type: 'stringLength', min: 4, max: 6, message: 'Password length should be in a range from 4 to 6 symbols.' }
+        ] }">
+    </div>
+    <div data-bind="dxValidationSummary: { }"></div>
+    <div data-bind="dxButton: { text: 'Register', onClick: validateAndLogin }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:200px;max-width:200px;margin:0px auto" ng-controller="demoController">
+    <div ng-model="login" dx-text-box="{ placeholder: 'Login' }"
+         dx-validator="{ validationRules: [
+            { type: 'required', message: 'Login is required' }
+        ] }">
+    </div>
+    <div ng-model="password" dx-text-box="{ mode: 'password', placeholder: 'Password' }"
+         dx-validator="{ validationRules: [
+            { type: 'required', message: 'Password can not be empty.' },
+            { type: 'stringLength', min: 4, max: 6, message: 'Password length should be in a range from 4 to 6 symbols.' }
+        ] }">
+    </div>
+    <div dx-validation-summary="{ }"></div>
+    <div dx-button="{ text: 'Register', onClick: validateAndLogin }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+    <div id="login"></div>
+    <div id="password"></div>
+    <div id="summary"></div>
+    <div id="button"></div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, grid settings allow you to edit rows in batch mode. Note that when you save changes, rows that have the *format* field equaling *"hardcover"* will not be updated in the data source. It is the result of implementing the **onRowUpdating** function that prohibits these rows from being updated.

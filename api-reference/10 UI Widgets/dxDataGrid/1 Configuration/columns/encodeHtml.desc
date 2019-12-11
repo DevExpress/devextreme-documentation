@@ -1,0 +1,1 @@
+In this example, the values of the data source field providing data for the *"Title"* column contain HTML tags. Initially, these values are displayed with applied HTML tags, since the **encodeHtml** property of the column is set to *false*. You can change the value of this property at runtime by clicking the check box below the grid.

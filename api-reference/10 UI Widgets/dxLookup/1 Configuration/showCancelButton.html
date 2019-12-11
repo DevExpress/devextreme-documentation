@@ -1,0 +1,75 @@
+<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    title: 'States',
+    showDoneButton: showDone,
+    showCancelButton: showCancel,
+    showClearButton: showClear
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showDoneButton</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: showDone
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">showCancelButton</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: showCancel
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">showClearButton</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: showClear
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        title: 'States',
+        bindingOptions: {
+            showDoneButton: 'showDone',
+            showCancelButton: 'showCancel',
+            showClearButton: 'showClear',
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showDoneButton</div>
+            <div class="dx-field-value" ng-model="showDone" dx-switch="{ }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">showCancelButton</div>
+            <div class="dx-field-value" ng-model="showCancel" dx-switch="{ }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">showClearButton</div>
+            <div class="dx-field-value" ng-model="showClear" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showDoneButton</div>
+        <div class="dx-field-value" id="showDoneSelector"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">showCancelButton</div>
+        <div class="dx-field-value" id="showCancelSelector"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">showClearButton</div>
+        <div class="dx-field-value" id="showClearSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

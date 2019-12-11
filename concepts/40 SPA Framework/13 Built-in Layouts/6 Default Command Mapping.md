@@ -1,0 +1,87 @@
+Built-in layouts come with default [command mapping](/api-reference/40%20SPA%20Framework/HtmlApplication/1%20Configuration/commandMapping.md '/Documentation/ApiReference/SPA_Framework/HtmlApplication/Configuration/#commandMapping'). This means that if you use particular identifiers for your commands, these commands are automatically added to the command containers of the predefined layouts. The following table details a command location on a toolbar representing a command container according default command mapping.
+
+<div class="simple-table">
+<table>
+    <thead>
+    <tr >
+        <th>Command Container</th>
+        <th>Before</th>
+        <th>Center</th>
+        <th>After</th>
+        <th>Menu</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>ios-header-toolbar</td>
+        <td>"back"<br/>"cancel"</td>
+        <td></td>
+        <td>"edit"<br/>"save"<br/>"create"</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ios-view-footer</td>
+        <td></td>
+        <td>"delete"</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>android-header-toolbar</td>
+        <td>"back"</td>
+        <td></td>
+        <td>"edit"<br/>"save"<br/>"create"</td>
+        <td>"cancel"<br/>"delete"</td>
+    </tr>
+    <tr>
+        <td>android-footer-toolbar</td>
+        <td>"edit"<br/>"save"</td>
+        <td>"create"</td>
+        <td></td>
+        <td>"delete"</td>
+    </tr>
+    <tr>
+        <td>android-simple-toolbar</td>
+        <td>"back"<br/>"save"</td>
+        <td></td>
+        <td>"create"</td>
+        <td>"edit"<br/>"cancel"<br/>"delete"</td>
+    </tr>
+    <tr>
+        <td>generic-header-toolbar</td>
+        <td>"back"<br/>"cancel"</td>
+        <td></td>
+        <td>"edit"<br/>"save"<br/>"create"</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>generic-view-footer</td>
+        <td></td>
+        <td>"delete"</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>win8-appbar</td>
+        <td>"create"</td>
+        <td></td>
+        <td>"edit"<br/>"cancel"<br/>"save"<br/>"delete"</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>win8-toolbar</td>
+        <td>"previousPage"</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>win8-phone-appbar</td>
+        <td></td>
+        <td>"create"<br/>"edit"<br/>"cancel"<br/>"save"</td>
+        <td></td>
+        <td>"delete"</td>
+    </tr>
+    </tbody>
+</table>
+</div>

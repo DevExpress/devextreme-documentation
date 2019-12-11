@@ -1,0 +1,1 @@
+﻿In this example, a tooltip appears when you hover the mouse pointer over an area. This behavior is specified by the **enabled** and **customizeTooltip** options of the **tooltip** object. In addition, the appearance of tooltips is adjusted.

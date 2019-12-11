@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div data-bind="dxNavBar:{
+    dataSource: navItems,
+    selectedIndex: currentIndex
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectedIndex</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: -1,
+            max: maxIndex,
+            showSpinButtons: true,
+            value: currentIndex
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-nav-bar="{
+        dataSource: navItems,
+        bindingOptions: {
+            selectedIndex: 'currentIndex'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">selectedIndex</div>
+            <div class="dx-field-value" ng-model="currentIndex" dx-number-box="{
+                min: -1,
+                max: maxIndex,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myNavBar"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectedIndex</div>
+        <div class="dx-field-value" id="indexSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

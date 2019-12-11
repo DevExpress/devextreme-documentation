@@ -1,0 +1,41 @@
+<!--@Knockout-->
+<div data-bind="dxSlider: {
+    min: 1,
+    max: 100,
+    value: 38,
+    showRange: showRangeValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showRange</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { value: showRangeValue }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-slider="{
+        min: 1,
+        max: 100,
+        value: 38,
+        bindingOptions: {
+            showRange: 'showRangeValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showRange</div>
+            <div class="dx-field-value" ng-model="showRangeValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlider"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showRange</div>
+        <div class="dx-field-value" id="showRangeSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

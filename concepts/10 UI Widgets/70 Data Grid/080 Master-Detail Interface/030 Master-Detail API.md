@@ -1,0 +1,17 @@
+If you need to expand and collapse master-detail rows programmatically, use the following API methods.
+
+* [expandRow(key)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/expandRow(key).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#expandRowkey') &#8212; to expand a specific row		
+* [expandAll(-1)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/expandAll(groupIndex).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#expandAllgroupIndex') &#8212; to expand all master rows		
+* [collapseRow(key)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/collapseRow(key).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#collapseRowkey') &#8212; to collapse a specific row		
+* [collapseAll(-1)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/collapseAll(groupIndex).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#collapseAllgroupIndex') &#8212; to collapse all master rows		
+* [isRowExpanded(key)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/isRowExpanded(key).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#isRowExpandedkey') &#8212; to find out whether a specific master row is expanded or collapsed		
+
+[note] Pass the "-1" parameter to the **expandAll()**/**collapseAll()** methods to force expanding/collapsing master rows only.
+
+These API methods work regardless of the [enabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/masterDetail/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/#enabled') option, so you can expand/collapse a master section by handling any required event with the [master-detail expand buttons](/concepts/10%20UI%20Widgets/70%20Data%20Grid/080%20Master-Detail%20Interface/010%20Enable%20the%20Master-Detail%20Interface.md '/Documentation/Guide/UI_Widgets/Data_Grid/Master-Detail_Interface/#Enable_the_Master-Detail_Interface') hidden.
+
+<a href="http://js.devexpress.com/Demos/WidgetsGallery/#demo/datagridgridmaster-detailmasterdetailsapi/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Demo</a>
+
+In addition to the methods listed above, there is a **grouping** | [autoExpandAll](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/autoExpandAll.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#autoExpandAll') option that defines the initial rows state.
+
+You can also perform custom actions before or after expanding/collapsing detail sections. For this purpose, use the [rowExpanding](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events/rowExpanding.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowExpanding'), [rowExpanded](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events/rowExpanded.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowExpanded'), [rowCollapsing](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events/rowCollapsing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowCollapsing') and [rowCollapsed](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events/rowCollapsed.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowCollapsed') events. To learn more about expanding and collapsing groups in the **DataGrid** widget, refer to the [Expanding and Collapsing Groups](/concepts/10%20UI%20Widgets/70%20Data%20Grid/040%20Grouping/050%20Expanding%20and%20Collapsing%20Groups.md '/Documentation/Guide/UI_Widgets/Data_Grid/Grouping/#Expanding_and_Collapsing_Groups') topic.

@@ -1,0 +1,15 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:600px; max-width:850px; margin:0 auto"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:600px; max-width:850px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: dataSource
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:600px; max-width:850px; margin:0 auto" dx-pivot-grid="{
+        dataSource: dataSource
+    }"></div>
+</div>
+<!--/@AngularJS-->

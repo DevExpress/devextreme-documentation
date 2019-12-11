@@ -1,0 +1,4 @@
+---
+default: 'useButtons'
+type: string
+---

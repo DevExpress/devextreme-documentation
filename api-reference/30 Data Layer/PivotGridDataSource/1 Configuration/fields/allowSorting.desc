@@ -1,0 +1,1 @@
+In this example, you can change the **allowSorting** option of the *"Region"* row field at runtime. Turn the switch below the pivot grid to *true*. Then, invoke the Field Chooser using the icon in the upper-left corner of the pivot grid. You can notice the sorting icon that accompanies the *"Region"* field. Click this icon to sort this field in ascending/descending order.

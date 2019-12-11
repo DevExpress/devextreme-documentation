@@ -1,0 +1,1 @@
+When working with an editor widget, you can often encounter tasks common for all editor widgets. This section describes the most important common tasks, such as getting and setting the widget value and handling the value change event.

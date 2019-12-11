@@ -1,0 +1,1 @@
+In this example, tick intervals are intentionally set to very small values so that axis labels overlap each other. You can choose an overlap resolving algorithm using the select box under the chart. Note that the *"stagger"* and *"rotate"* algorithms apply to the labels of the argument axis only.

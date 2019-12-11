@@ -1,0 +1,20 @@
+body{
+  text-align: center;
+}
+.button{
+  margin: 10px;
+}
+.overlayContents{
+  color: darkblue;
+  background-color:darkorange;
+  border-radius: 15px;
+  height:100%;
+}
+#targetElement {
+  margin-top: 40px;
+  display: inline-block;
+  width: 80%;
+  height: 170px;
+  border-style: solid;
+  background-color: lightgreen;
+}

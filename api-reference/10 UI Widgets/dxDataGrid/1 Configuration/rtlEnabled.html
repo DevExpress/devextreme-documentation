@@ -1,0 +1,43 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: [
+        'author',
+        { dataField: 'title', width: 210 },
+        'year', 'genre', 'format'
+    ],
+    paging: { pageSize: 8 },
+    rtlEnabled: checkBoxState
+}"></div>
+    <div data-bind="dxCheckBox: {
+    text: 'Enable the Right-To-Left Representation',
+    value: checkBoxState
+}"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            'year', 'genre', 'format'
+        ],
+        paging: { pageSize: 8 },
+        bindingOptions: {
+            rtlEnabled: 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Enable the Right-To-Left Representation'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:380px;"></div>
+    <div id="checkboxContainer"></div>
+</div>
+<!--/@jQuery-->

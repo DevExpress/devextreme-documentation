@@ -1,0 +1,22 @@
+﻿body {
+    text-align: center;
+}
+.box{
+    margin: 10px auto;
+    border: solid 2px;
+}
+.subitem{
+    border: solid 1px blue;
+    background-color: white;
+    margin: 10px 10px 0 10px;
+}
+#item1{ 
+    background-color: #f39e6c; 
+}
+#item2{ 
+    background-color: #f5e5a6;
+    padding-bottom: 10px;
+}
+#item3{ 
+    background-color: #94d7c7; 
+}

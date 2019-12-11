@@ -1,0 +1,20 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to FocusIn and FocusOut events', onClick: clickHandler }"></div>
+<div data-bind="dxColorBox: {
+    value: '#FF0000',
+    onInitialized: onInitialized
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to FocusIn and FocusOut events', onClick: clickHandler }"></div>
+    <div dx-color-box="{
+        value: '#FF0000',
+        onInitialized: onInitialized
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myColorBox"></div>
+<!--/@jQuery-->

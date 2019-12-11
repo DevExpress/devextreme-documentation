@@ -1,0 +1,1 @@
+When working with a collection container widget, you can often encounter tasks common for all collection containers. This section describes the most important common tasks such as specifying a data source, handling item events and customizing the appearance of widget items.

@@ -1,0 +1,19 @@
+<!--@Knockout-->
+<div data-bind="dxTagBox:{
+    dataSource: tagBoxData,
+    onValueChanged: processValueChange,
+    displayExpr: 'name'
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-tag-box="{
+        dataSource: tagBoxData,
+        onValueChanged: processValueChange,
+        displayExpr: 'name'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTagBox"></div>
+<!--/@jQuery-->

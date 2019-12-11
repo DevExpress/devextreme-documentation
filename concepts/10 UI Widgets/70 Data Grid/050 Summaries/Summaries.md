@@ -1,0 +1,3 @@
+The **DataGrid** widget allows you aggregate information on particular columns across the total grid or within groups of rows. For instance, you can obtain the number of records or maximum value, etc. Such information is called a summary. This topic provides basic information about different types of summaries.
+
+<a href="https://www.youtube.com/watch?v=Ru43cnfrqGM&index=40&list=PL8h4jt35t1wjGvgflbHEH_e3b23AA30-z" class="button orange small fix-width-155" target="_blank">Watch Video</a>

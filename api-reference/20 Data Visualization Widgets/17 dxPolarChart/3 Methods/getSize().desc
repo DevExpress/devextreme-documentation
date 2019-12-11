@@ -1,0 +1,1 @@
+In this example, the polar chart size is acquired using the **getSize()** function after the widget is drawn. The returned value is placed to the container at the bottom of the chart.

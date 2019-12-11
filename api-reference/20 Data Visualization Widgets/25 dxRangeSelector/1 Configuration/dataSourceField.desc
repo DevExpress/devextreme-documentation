@@ -1,0 +1,1 @@
+﻿In this example, the *'x'* field of the data source is set as the data source field for the scale using the **dataSourceField** option.

@@ -1,0 +1,1 @@
+﻿In this example, you can add a row to the grid using the *"Add a New Row"* button. This button calls the grid's **addRow()** method. Additionally, you can save or cancel the added row using the *"Save the Row"* or *"Cancel"* button. These buttons call the **saveEditData()** or **cancelEditData()** method respectively.

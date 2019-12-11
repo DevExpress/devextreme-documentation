@@ -1,0 +1,1 @@
+In this example, you can perform various operations in a grid, including sorting, grouping and filtering. Doing this, you may notice when the function assigned to the **onContentReady** option is called. This function counts its own invocations and displays this number.

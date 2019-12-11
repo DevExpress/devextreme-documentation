@@ -1,0 +1,58 @@
+﻿<!--@Knockout-->
+<div style="height:390px; max-width:700px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: [
+        'author',
+        { dataField: 'title', width: 210 },
+        'year', 'genre', 'format'
+    ],
+    paging: { pageSize: 8 },
+    pager: {
+        showPageSizeSelector: true,
+        allowedPageSizes: selectedPageSizes
+    }
+}"></div>
+<div style="height:40px; width:320px; margin:0 auto">
+    Select a Set of Page Sizes:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxSelectBox: {
+        height: 35,
+        width: 150,
+        items: pageSizes,
+        value: selectedPageSizes
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height:390px; max-width:700px; margin:0 auto" dx-data-grid="{
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            'year', 'genre', 'format'
+        ],
+        paging: { pageSize: 8 },
+        pager: {
+            showPageSizeSelector: true
+        },
+        bindingOptions: {
+            'pager.allowedPageSizes': 'selectedPageSizes'
+        }
+    }"></div>
+    <div style="height:40px; width:320px; margin:0 auto">
+        Select a Set of Page Sizes:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" ng-model="selectedPageSizes" dx-select-box="{
+            height: 35,
+            width: 150,
+            items: pageSizes
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:700px; margin:0 auto"></div>
+<div style="text-align:center; height:40px">
+    Select a Set of Page Sizes:&nbsp;
+    <div id="pageSizesSelectBox" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->

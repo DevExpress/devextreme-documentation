@@ -1,0 +1,1 @@
+﻿In this example, widget animation is disabled using the **animationEnabled** option. You can use the [moveSelectedRangeByClick](/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/behavior/#moveSelectedRangeByClick) feature to see the difference.

@@ -1,0 +1,1 @@
+In this example, *"Format"* is declared as a lookup column. To filter grid records by this column, use the select box that occupies the filter row cell of this column. Note that in this select box, the operation of clearing the applied filter is represented by the *'(Show All)'* item. Text for this item is set using the **filterRow** | **showAllText** option. 

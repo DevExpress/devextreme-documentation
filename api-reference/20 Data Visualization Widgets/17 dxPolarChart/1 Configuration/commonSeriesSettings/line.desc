@@ -1,0 +1,1 @@
+In this example, the series points are made hidden for all series of the *line* type using the **line** field of the **commonSeriesSettings** object.

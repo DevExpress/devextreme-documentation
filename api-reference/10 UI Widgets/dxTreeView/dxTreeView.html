@@ -1,0 +1,23 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="treeView" data-bind="dxTreeView: {
+        dataSource: treeViewData,
+        width: 'auto'
+    }">
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="treeView" dx-tree-view="{
+        dataSource: treeViewData,
+        width: 'auto'
+    }">
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="treeView" id="myTreeView"></div>
+</div>
+<!--/@jQuery-->

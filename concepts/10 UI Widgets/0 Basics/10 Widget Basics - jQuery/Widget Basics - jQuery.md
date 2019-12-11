@@ -1,0 +1,3 @@
+[note]This article assumes that you have successfully linked all the necessary scripts. If not, read the [Installation](/concepts/10%20UI%20Widgets/0%20Basics/01%20Installation '/Documentation/Guide/UI_Widgets/Basics/Installation/') guide first.
+
+From this article, you will learn how to perform basic operations on a DevExtreme widget using jQuery tools. Similar articles are available for the [AngularJS](/concepts/10%20UI%20Widgets/0%20Basics/20%20Widget%20Basics%20-%20AngularJS '/Documentation/Guide/UI_Widgets/Basics/Widget_Basics_-_AngularJS/') and [Knockout](/concepts/10%20UI%20Widgets/0%20Basics/25%20Widget%20Basics%20-%20Knockout '/Documentation/Guide/UI_Widgets/Basics/Widget_Basics_-_Knockout/') frameworks.

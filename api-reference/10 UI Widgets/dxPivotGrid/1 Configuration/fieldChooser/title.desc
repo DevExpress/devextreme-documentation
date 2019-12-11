@@ -1,0 +1,1 @@
+﻿In this demo, you can change the title of the field chooser at runtime. Type any text in the text box below the pivot grid. Then, invoke the field chooser using the icon in the upper-left corner of the grid and check that the title has changed.

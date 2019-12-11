@@ -1,0 +1,12 @@
+﻿body{
+    text-align: center;
+}
+#targetElement {
+    margin-top: 40px;
+    padding-top: 40px;
+    display: inline-block;
+    width: 80%;
+    height: 170px;
+    border-style: solid;
+    background-color: lightgreen;
+}

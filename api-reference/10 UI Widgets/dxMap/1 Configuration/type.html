@@ -1,0 +1,57 @@
+<!--@Knockout-->
+<div data-bind="dxTabs: {
+    dataSource: types,
+    onItemClick: tabClicked,
+    selectedIndex: 0
+}"></div>
+<div data-bind="dxMap: {
+    center: '40.749825, -73.987963',
+    zoom: 13,
+    provider: currentProvider,
+    type: currentType
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">provider</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            dataSource: providers,
+            value: currentProvider
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-tabs="{
+        dataSource: types,
+        onItemClick: tabClicked,
+        selectedIndex: 0
+    }"></div>
+    <div dx-map="{
+        center: '40.749825, -73.987963',
+        zoom: 13,
+        bindingOptions: {
+            provider: 'currentProvider',
+            type: 'currentType'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">provider</div>
+            <div class="dx-field-value" ng-model="currentProvider" dx-select-box="{
+                dataSource: providers
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="typeTabs"></div>
+<div id="myMap"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">provider</div>
+        <div class="dx-field-value" id="providerSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+﻿In this example, the font style of group cells is altered using the callback function assigned to the **groupCellTemplate** option of each column.

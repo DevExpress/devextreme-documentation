@@ -1,0 +1,1 @@
+In this example, a number of options within the **rangeContainer** configuration object is changed. The range container is divided into ranges that are defined by the **ranges** option. These ranges are moved from the scale to a 5-pixel distance using the **offset** option. In addition, the **backgroundColor** option is set to *firebrick*.

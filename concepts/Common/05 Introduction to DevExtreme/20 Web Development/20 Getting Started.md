@@ -1,0 +1,8 @@
+All the products discussed above are supplied with the [DevExtreme Web](/concepts/Common/07%20DevExtreme%20Packages/20%20DevExtreme%20Web.md '/Documentation/Guide/Common/DevExtreme_Packages/#DevExtreme_Web') and [DevExtreme Complete](/concepts/Common/07%20DevExtreme%20Packages/30%20DevExtreme%20Complete.md '/Documentation/Guide/Common/DevExtreme_Packages/#DevExtreme_Complete') packages. The DevExtreme Complete package has the same libraries as the DevExtreme Mobile package, but the latter is enlarged by tools for [mobile development](/concepts/Common/05%20Introduction%20to%20DevExtreme/10%20Mobile%20Development '/Documentation/Guide/Common/Introduction_to_DevExtreme/#Mobile_Development'). To learn details on DevExtreme installations, read the [DevExtreme Packages](/Documentation/Guide/Common/DevExtreme_Packages/#DevExtreme_Packages) article.
+
+DevExtreme widgets can easily be used **in any web project** (ASP.NET MVC, PHP or any other). You should just add the required scripts and themes to your application. 
+
+#####See Also#####
+- [Widget Basics - jQuery](/concepts/20%20Data%20Visualization/05%20Basics/10%20Widget%20Basics%20-%20jQuery '/Documentation/Guide/Data_Visualization/Basics/Widget_Basics_-_jQuery/')
+- [Widget Basics - AngularJS](/concepts/20%20Data%20Visualization/05%20Basics/20%20Widget%20Basics%20-%20AngularJS '/Documentation/Guide/Data_Visualization/Basics/Widget_Basics_-_AngularJS/')
+- [Widget Basics - Knockout](/concepts/20%20Data%20Visualization/05%20Basics/30%20Widget%20Basics%20-%20Knockout '/Documentation/Guide/Data_Visualization/Basics/Widget_Basics_-_Knockout/')

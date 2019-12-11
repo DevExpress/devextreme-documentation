@@ -1,0 +1,1 @@
+﻿In this example, tiles are colored using the *"gradient"* colorization algorithm. It requires the **range** option to be set. You can change the value of this option at runtime using the range slider under the treemap.

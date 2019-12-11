@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div data-bind="dxSelectBox:{
+    dataSource: selectBoxData,
+    placeholder: 'Select a state',
+    displayExpr: 'name',
+    disabled: selectBoxDisabled
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: selectBoxDisabled
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-select-box="{
+        dataSource: selectBoxData,
+        placeholder: 'Select a state',
+        displayExpr: 'name',
+        bindingOptions: {
+            disabled: 'selectBoxDisabled'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="selectBoxDisabled" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySelectBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

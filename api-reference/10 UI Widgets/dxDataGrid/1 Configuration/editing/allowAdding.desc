@@ -1,0 +1,1 @@
+In this example, you can change the value of the **allowAdding** option at runtime using the check box below. If this option is *true*, the grid is supplied with a button that inserts a new record into the grid. Otherwise, this button is hidden, and you cannot insert records into the grid.

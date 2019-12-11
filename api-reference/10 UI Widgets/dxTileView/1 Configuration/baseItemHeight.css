@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+.tile {
+    text-align: center;
+    color: white;
+    background: gray;
+    padding: 10px;
+}
+.dx-tileview{
+    background-color: lightgray;
+}

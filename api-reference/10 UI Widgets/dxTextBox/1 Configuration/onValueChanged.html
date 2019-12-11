@@ -1,0 +1,17 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTextBox: {
+    placeholder: 'Type text here',
+    onValueChanged: valueChanged
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-text-box="{
+        placeholder: 'Type text here',
+        onValueChanged: valueChanged
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTextBox"></div>
+<!--/@jQuery-->

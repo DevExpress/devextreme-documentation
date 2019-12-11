@@ -1,0 +1,33 @@
+﻿body{
+    text-align: center;
+}
+ul{
+    text-align: left;
+    margin-left: 20px;
+}
+#handles{
+    border-bottom: dotted 2px;
+}
+.dx-resizable{
+    display:inline-block;
+    margin-top: 20px;
+    border: solid 2px #053;
+    background-color: #ccc;
+}
+.dx-resizable p{
+    color: #333;
+    margin-top: 20px;
+    font-size: larger;
+}
+.dx-resizable-handle-top {
+    border-top: solid 2px yellow;
+}
+.dx-resizable-handle-bottom {
+    border-bottom: solid 2px yellow;
+}
+.dx-resizable-handle-left {
+    border-left: solid 2px yellow;
+}
+.dx-resizable-handle-right {
+    border-right: solid 2px yellow;
+}

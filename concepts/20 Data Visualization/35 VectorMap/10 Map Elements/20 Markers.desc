@@ -1,0 +1,1 @@
+In this example, a color is set for all markers using the **layer** | **color** option. Note that a different color and size are set for the "Albuquerque" marker using the **customize** function. Additionally, particular appearances are specified for markers in the hovered and selected state.

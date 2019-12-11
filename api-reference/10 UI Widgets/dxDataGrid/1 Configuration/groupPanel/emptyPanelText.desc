@@ -1,0 +1,1 @@
+﻿In this example, you can place a required text into the empty group panel. Type your text in the text box under the grid. After that, make the text box lose focus by clicking the surrounding area. The typed text will be assigned to the **groupPanel** | **emptyPanelText** option and appear in the empty group panel.

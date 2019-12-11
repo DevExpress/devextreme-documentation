@@ -1,0 +1,60 @@
+<!--@Knockout-->
+<div class="target" data-bind="event: { click: togglePopover }, style: { 'background-color': currentColor }">&nbsp;</div>
+<p>Click the square.</p>
+<div data-bind="dxPopover: {
+    width: 100,
+    visible: visible,
+    target: '.target',
+    position: currentPosition
+}">
+    <div data-options="dxTemplate: { name: 'content' }">
+        <div data-bind="dxList: { dataSource: colors, onItemClick: chooseColor }"></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">position</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: positionValues,
+            value: currentPosition
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="target" ng-click="togglePopover()" ng-style="{ 'background-color': currentColor }">&nbsp;</div>
+    <p>Click the square.</p>
+    <div dx-popover="{
+        width: 100,
+        target: '.target',
+        bindingOptions: {
+            visible: 'visible',
+            position: 'currentPosition'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'content' }">
+            <div dx-list="{ dataSource: colors, onItemClick: chooseColor }"></div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">position</div>
+            <div class="dx-field-value" ng-model="currentPosition" dx-select-box="{
+                items: positionValues
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="target" id="targetElement" style="background-color:red;">&nbsp;</div>
+<p>Click the square.</p>
+<div id="myPopover"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">position</div>
+        <div class="dx-field-value" id="positionSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,13 @@
+body{
+    text-align:center;
+}
+.demo-page{
+    max-width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+    text-align: left;
+}
+#button{
+    margin: 10px;
+}

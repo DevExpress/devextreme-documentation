@@ -1,0 +1,1 @@
+﻿In this example, areas are painted using the *'Vintage'* palette. To specify different colors from this palette for the areas, the **customize** function returns an object that contains the specified **palleteIndex** field.

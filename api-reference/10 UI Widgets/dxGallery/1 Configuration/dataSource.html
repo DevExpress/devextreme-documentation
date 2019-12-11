@@ -1,0 +1,56 @@
+<!--@Knockout-->
+<div data-bind="dxGallery: { 
+    dataSource: galleryDataSource,
+    width: '100%',
+    height: 370
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        <img data-bind="attr: { src: src }" />
+        <p><b>Name</b>: <span data-bind="text: name"></span> (Age: <span data-bind="text: age"></span>)</p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Sort by</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: { 
+            dataSource: sortConditions,
+            title: 'Sort by',
+            value: 'none',
+            onValueChanged: sortConditionChanged
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-gallery="{
+        dataSource: galleryDataSource,
+        width: '100%',
+        height: 370
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            <img ng-attr-src="{{itemObj.src}}" />
+            <p><b>Name</b>: {{itemObj.name}} (Age: {{itemObj.age}})</p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Sort by</div>
+            <div class="dx-field-value" dx-select-box="{ 
+                dataSource: sortConditions,
+                title: 'Sort by',
+                onValueChanged: sortConditionChanged
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myGallery"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Sort by</div>
+        <div class="dx-field-value" id="sortSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

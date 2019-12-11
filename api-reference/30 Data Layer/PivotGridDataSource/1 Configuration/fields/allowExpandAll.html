@@ -1,0 +1,39 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:340px; max-width:850px; margin:0 auto"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    allowExpandAll of the "Year" field:&nbsp;
+    <div id="switchContainer" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:340px; max-width:850px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: dataSource,
+    fieldChooser: { enabled: false }
+}"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    allowExpandAll of the "Year" field:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxSwitch: {
+        onText: 'true',
+        offText: 'false',
+        value: false,
+        onValueChanged: changeAllowExpandAll
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:340px; max-width:850px; margin:0 auto" dx-pivot-grid="{
+        dataSource: dataSource,
+        fieldChooser: { enabled: false }
+    }"></div>
+    <div style="height:40px; margin-top:5px; text-align:center">
+        allowExpandAll of the "Year" field:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" dx-switch="{
+            onText: 'true',
+            offText: 'false',
+            value: false,
+            onValueChanged: changeAllowExpandAll
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

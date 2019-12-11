@@ -1,0 +1,48 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="option">
+        <div>Columns count:</div>
+        <div data-bind="dxNumberBox: {
+            min: 1,
+            max: 4,
+            width: 150,
+            showSpinButtons: true,
+            value: columnCount
+        }"></div>
+    </div>
+    <div data-bind="dxForm:{
+        formData: employee,
+        labelLocation: 'top',
+        colCount: columnCount
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="option">
+        <div>Columns count:</div>
+        <div ng-model="columnCount" dx-number-box="{
+            min: 1,
+            max: 4,
+            width: 150,
+            showSpinButtons: true
+        }"></div>
+    </div>
+    <div dx-form="{
+        formData: employee,
+        labelLocation: 'top',
+        bindingOptions:{
+            colCount: 'columnCount'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="option">
+        <div>Columns count:</div>
+        <div id="columnsCountNumberBox"></div>
+    </div>
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

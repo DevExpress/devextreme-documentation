@@ -1,0 +1,1 @@
+﻿In this example, the page size selector is made visible using the **pager** | **showPageSizeSelector** option. In addition, the set of allowed page sizes is altered by setting the **pager** | **allowedPageSizes** option.

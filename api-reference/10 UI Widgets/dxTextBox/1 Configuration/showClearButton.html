@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTextBox: {
+    placeholder: 'Type your text here',
+    value: 'Your text',
+    showClearButton: clearButtonVisible
+}"></div><br/>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label" style="width:60%;">showClearButton</div>
+    <div class="dx-field-value" data-bind="dxSwitch: { value: clearButtonVisible }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-text-box="{
+        placeholder: 'Type your text here',
+        value: 'Your text',
+        bindingOptions: {
+            showClearButton: 'clearButtonVisible'
+        }
+    }"></div><br/>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label" style="width:60%;">showClearButton</div>
+            <div class="dx-field-value" ng-model="clearButtonVisible" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTextBox"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label" style="width:60%;">showClearButton</div>
+    <div class="dx-field-value" id="showButtonSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

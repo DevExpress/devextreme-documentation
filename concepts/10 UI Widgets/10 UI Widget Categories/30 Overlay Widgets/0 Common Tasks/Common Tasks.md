@@ -1,0 +1,1 @@
+When working with an overlay widget, you can often encounter tasks common for all overlays. This section describes the most important common tasks such as controlling widget visibility, positioning the widget, adjusting animation options, etc.

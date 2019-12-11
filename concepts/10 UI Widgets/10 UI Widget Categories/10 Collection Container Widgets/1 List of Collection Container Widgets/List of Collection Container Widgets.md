@@ -1,0 +1,1 @@
+The following DevExtreme UI widgets are related to the collection containers category.

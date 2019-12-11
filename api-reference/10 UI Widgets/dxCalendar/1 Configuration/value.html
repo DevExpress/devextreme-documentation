@@ -1,0 +1,34 @@
+﻿<!--@Knockout-->
+<div data-bind="dxCalendar:{ value: calendarValue }"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+        <div class="dx-field-value" data-bind="dxDateBox:{ 
+            format: 'date',
+            value: calendarValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div ng-model="calendarValue" dx-calendar="{ }"></div> 
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Value</div>
+            <div class="dx-field-value" ng-model="calendarValue" dx-date-box="{
+                format: 'date'
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myCalendar"></div> 
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+        <div class="dx-field-value" id="valueSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

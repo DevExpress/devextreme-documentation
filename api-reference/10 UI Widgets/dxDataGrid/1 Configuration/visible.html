@@ -1,0 +1,43 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div data-bind="dxCheckBox: {
+        text: 'Show dxDataGrid',
+        value: checkBoxState
+    }"></div>
+    <div style="height:360px" data-bind="    dxDataGrid: {
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            'year', 'genre', 'language', 'format'
+        ],
+        paging: { pageSize: 8 },
+        visible: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Show dxDataGrid'
+    }"></div>
+    <div style="height:360px" dx-data-grid="{
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            'year', 'genre', 'language', 'format'
+        ],
+        paging: { pageSize: 8 },
+        bindingOptions: {
+            visible: 'checkBoxState'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div id="showWidgetCheckbox"></div>
+    <div id="gridContainer" style="height:360px;"></div>
+</div>
+<!--/@jQuery-->

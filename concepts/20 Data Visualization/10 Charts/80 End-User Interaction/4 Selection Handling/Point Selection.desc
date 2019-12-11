@@ -1,0 +1,1 @@
+In this example, clicking a point selects that point as well as all the points with the same argument. Information about this argument appears below the chart. This information is taken from the tag field that is provided in the chart data source.

@@ -1,0 +1,14 @@
+﻿<!--@jQuery-->
+<div id="vectorMapContainer" style="height:400px; max-width:750px; margin: 0 auto"></div>
+<div id="textArea" style="height:25px; text-align:center; margin-top: 5px"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:400px; max-width:750px; margin: 0 auto" data-bind="dxVectorMap: vectorMapCfg"></div>
+<div style="height:25px; text-align:center; margin-top: 5px" data-bind="text: text"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="vectorMapController">
+    <div style="height:400px; max-width:750px; margin: 0 auto" dx-vector-map="vectorMapCfg"></div>
+    <div ng-bind="text" style="height:25px; text-align:center; margin-top: 5px"></div> 
+</div>
+<!--/@AngularJS-->

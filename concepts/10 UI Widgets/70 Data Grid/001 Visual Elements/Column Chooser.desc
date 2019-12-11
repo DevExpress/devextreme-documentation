@@ -1,0 +1,1 @@
+This example illustrates differences between the modes of the column chooser. Choose a mode from the select box below the grid. Then, click the icon in the upper-right corner of the grid to invoke the column chooser. Depending on the chosen mode, you will be able either to select column headers or move them to/from the column chooser by drag-and-drop.

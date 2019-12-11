@@ -1,0 +1,60 @@
+<!--@Knockout-->
+<div data-bind="dxTileView: {
+    dataSource: tileViewDataSource,
+    itemMargin: 20,
+    baseItemHeight: 130,
+    baseItemWidth: 180,
+    height: '85%',
+    showScrollbar: scrollBarVisible
+
+}">
+    <div class="tile" data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <img style="margin:5px;" data-bind="attr: { src: imagePath }" />
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showScrollbar</div>
+        <div class="dx-field-value" data-bind="dxSwitch:{ 
+            value: scrollBarVisible
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-tile-view="{
+        dataSource: tileViewDataSource,
+        itemMargin: 20,
+        baseItemHeight: 130,
+        baseItemWidth: 180,
+        height: '85%',
+        bindingOptions: {
+            showScrollbar: 'scrollBarVisible'
+        }
+    }" dx-item-alias="itemObj">
+        <div class="tile" data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <img style="margin:5px;" ng-attr-src="{{itemObj.imagePath}}" />
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showScrollbar</div>
+            <div class="dx-field-value" ng-model="scrollBarVisible" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTileView"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showScrollbar</div>
+        <div class="dx-field-value" id="showScrollbarSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

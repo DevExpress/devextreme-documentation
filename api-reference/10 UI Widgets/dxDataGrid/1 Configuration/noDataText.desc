@@ -1,0 +1,1 @@
+In this example, the grid is empty because no data source is assigned to it. You can specify the text to be displayed in the empty grid. Type your text in the text box under the grid. After that, make the text box lose focus by clicking the surrounding area. The typed text will be assigned to the **noDataText** option and will appear in the grid.

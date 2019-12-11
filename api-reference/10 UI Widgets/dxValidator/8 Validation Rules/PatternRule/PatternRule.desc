@@ -1,0 +1,1 @@
+﻿In this example, the 'pattern' rule is applied to the 'Login' editor. This rule demands that the editor value has no digits. To check this rule, use digits when specifying a login.

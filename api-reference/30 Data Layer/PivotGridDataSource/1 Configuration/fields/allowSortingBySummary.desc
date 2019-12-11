@@ -1,0 +1,1 @@
+In this example, you can change the **allowSortingBySummary** option of the *"Region"* row field at runtime. Turn the switch below the pivot grid to *true*. Then, right-click any column header to invoke a context menu. It will offer to sort the *"Region"* field by this column.

@@ -1,0 +1,1 @@
+This example shows the use of the grid's **getSelectedRowsData()** method. Select several records in the grid and then click the *"Update List"* button located below the grid. This button calls the aforementioned method and updates the **List** widget located on the right. As a result, the selected records appear in this widget.

@@ -1,0 +1,48 @@
+﻿<!--@Knockout-->
+<div style="height:500px; max-width:750px; margin: 0 auto">
+    <div data-bind="dxColorBox: {
+        value: colorValue,
+        applyValueMode: applyMode
+    }"></div>
+    <div class="dx-fieldset" style="width: 300px;">
+        <div class="dx-field">
+            <div class="dx-field-label">applyValueMode</div>
+            <div class="dx-field-value" data-bind="dxSelectBox: {
+                dataSource: applyModes,
+                value: applyMode
+            }"></div>
+        </div>
+    </div>
+    <p class="text" data-bind="style: { color: colorValue }">Colored Text</p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:500px; max-width:750px; margin: 0 auto" ng-controller="demoController">
+    <div ng-model="colorValue" dx-color-box="{
+        bindingOptions: {
+            applyValueMode: 'applyMode',
+        }
+    }"></div>
+    <div class="dx-fieldset" style="width: 300px;">
+        <div class="dx-field">
+            <div class="dx-field-label">applyValueMode</div>
+            <div class="dx-field-value" ng-model="applyMode" dx-select-box="{
+                dataSource: applyModes
+            }"></div>
+        </div>
+    </div>
+    <p class="text" ng-style="{ color: colorValue }">Colored Text</p>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:500px; max-width:750px; margin: 0 auto">
+    <div id="myColorBox"></div>
+    <div class="dx-fieldset" style="width: 300px;">
+        <div class="dx-field">
+            <div class="dx-field-label">applyValueMode</div>
+            <div class="dx-field-value" id="modeSelector"></div>
+        </div>
+    </div>
+    <p class="text" id="coloredText">Colored Text</p>
+</div>
+<!--/@jQuery-->

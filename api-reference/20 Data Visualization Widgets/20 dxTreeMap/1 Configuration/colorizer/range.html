@@ -1,0 +1,54 @@
+﻿<!--@jQuery-->
+<div id="treeMapContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>Select a Color Value Range:&nbsp;</div>
+    <div id="rangeSliderContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="treeMapContainer" data-bind="dxTreeMap: {
+    dataSource: data,
+    tile: { color: 'white' },
+    colorizer: {
+        type: 'gradient',
+        palette: ['orange', 'blue'],
+        range: currentRange
+    }
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>Select a Color Value Range:&nbsp;</div>
+    <div id="rangeSliderContainer" data-bind="dxRangeSlider: {
+        min: 1, max: 10,
+        start: currentStart, end: currentEnd,
+        step: 1,
+        label: { visible: true }
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="treeMapController">
+    <div id="treeMapContainer" dx-tree-map="{
+        dataSource: data,
+        tile: { color: 'white' },
+        colorizer: {
+            type: 'gradient',
+            palette: ['orange', 'blue']
+        },
+        bindingOptions: {
+            'colorizer.range': 'currentRange'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>Select a Color Value Range:&nbsp;</div>
+        <div id="rangeSliderContainer" dx-range-slider="{
+            min: 1, max: 10,
+            step: 1,
+            label: { visible: true },
+            bindingOptions: {
+                start: 'currentStart',
+                end: 'currentEnd'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

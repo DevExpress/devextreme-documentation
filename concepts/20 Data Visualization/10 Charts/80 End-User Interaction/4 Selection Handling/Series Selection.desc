@@ -1,0 +1,1 @@
+In this example, clicking a series selects it. The **onSeriesSelectionChanged** event handler calculates the maximum point value of the selected series and outputs it below the chart. To get the points of the selected series, its **getAllPoints()** method is used.

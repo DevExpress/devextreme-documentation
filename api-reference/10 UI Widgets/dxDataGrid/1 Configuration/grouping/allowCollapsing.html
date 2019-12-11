@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:480px; max-width:630px; margin: 0 auto">
+    <div style="height:450px" data-bind="dxDataGrid: {
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 9 },
+        groupPanel: { visible: true },
+        grouping: {
+            allowCollapsing: checkBoxState
+        }
+    }"></div>
+        <div data-bind="dxCheckBox: {
+        text: 'Allow Group Collapsing',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:480px; max-width:630px; margin: 0 auto">
+    <div style="height:450px" dx-data-grid="{
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 9 },
+        groupPanel: { visible: true },
+        bindingOptions: {
+            'grouping.allowCollapsing': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Allow Group Collapsing'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:480px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:450px;"></div>
+    <div id="allowCollapsingCheckbox"></div>
+</div>
+<!--/@jQuery-->

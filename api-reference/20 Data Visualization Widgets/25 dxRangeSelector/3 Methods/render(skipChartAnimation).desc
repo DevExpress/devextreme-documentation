@@ -1,0 +1,1 @@
+﻿In this example, you can change the container size using the button below. In order to redraw the range selector after the container size is changed, its **render** method is called. The chart within the range selector is animated on redraw because *false* is passed as the parameter to the **render** method. 

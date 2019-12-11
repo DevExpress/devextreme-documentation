@@ -1,0 +1,1 @@
+﻿In this example, the 'stringLength' rule is applied to the 'Password' editor. This rule demands that the editor value length be from 4 to 6 symbols. To check this rule, specify a password with a length out of this range.

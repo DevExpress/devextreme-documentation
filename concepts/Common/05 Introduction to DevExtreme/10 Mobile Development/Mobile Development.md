@@ -1,0 +1,1 @@
+DevExtreme contains everything you'll need to create native client applications using HTML5 & JavaScript and to deliver solutions with a single codebase that target today's most popular smartphones and tablet devices.

@@ -1,0 +1,1 @@
+In this example, the **argumentField** option is set for all series of the *fullStackedBar* type at once using the **fullstackedbar** field of the **commonSeriesSettings** object.

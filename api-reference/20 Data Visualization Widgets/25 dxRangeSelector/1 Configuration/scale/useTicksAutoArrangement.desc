@@ -1,0 +1,1 @@
+Toggle the check box below to change the **useTicksAutoArrangement** option. Here, when this option is set to *'false'*, the scale labels overlap each other. Otherwise, the major tick interval is calculated automatically so as to prevent labels from overlapping.

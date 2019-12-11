@@ -1,0 +1,16 @@
+﻿#chartContainer {
+    height: 350px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sliderContainer {
+    height: 45px;
+    width: 200px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.inline > div {
+    display: inline-block;
+}

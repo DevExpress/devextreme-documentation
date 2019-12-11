@@ -1,0 +1,1 @@
+In this example, several options of the **subvalueIndicator** configuration object are changed. Here, the gauge subvalues are indicated by triangle markers. The appearance of these markers is customized using the **color** and **length** options.

@@ -1,0 +1,7 @@
+<div class="button" data-bind="dxButton: { text: 'Show overlay', onClick: showOverlay }"></div>
+<div id="overlayContainer" data-bind="dxOverlay: { visible: overlayVisible, onHiding: processHiding }">
+  <div class="overlayContents">
+    <p>The overlay window text.</p>
+      <div class="button" data-bind="dxButton: { text: 'Hide overlay', onClick: hideOverlay }"></div>
+  </div>
+</div>

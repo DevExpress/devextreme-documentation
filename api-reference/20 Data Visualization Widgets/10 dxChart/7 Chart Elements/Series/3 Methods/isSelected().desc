@@ -1,0 +1,1 @@
+﻿Click a series on the chart to select this series. Information about the maximum point value of the selected series will appear under the chart. Click this series again and the information will disappear. This behavior is achieved using the **isSelected()** method of the clicked series.

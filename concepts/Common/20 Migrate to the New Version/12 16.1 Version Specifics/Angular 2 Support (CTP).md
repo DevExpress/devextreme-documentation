@@ -1,0 +1,1 @@
+DevExtreme provides the [Angular 2 Integration module (CTP)](https://github.com/DevExpress/devextreme-angular2), which enables you to use UI widgets as Angular 2 components.

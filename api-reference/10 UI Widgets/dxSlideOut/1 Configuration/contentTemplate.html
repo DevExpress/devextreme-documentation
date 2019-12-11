@@ -1,0 +1,51 @@
+<!--@Knockout-->
+<div data-bind="dxSlideOut: {
+    dataSource: slideOutData,
+    onSelectionChanged: selectionChanged,
+    menuVisible: categoriesVisible
+}">
+    <div data-options="dxTemplate : { name: 'content' } ">
+        <p class="header">Current category: <b data-bind="text: selectedCategory"></b></p>
+        <div class="button" data-bind="dxButton:{
+            text: 'Select category',
+            onClick: showCategories
+        }"></div>
+        <div data-bind="dxList: { dataSource: listData }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <div data-bind="text: name"></div>
+                <div data-bind="text: phone"></div>
+                <div data-bind="text: email"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-slide-out="{
+        dataSource: slideOutData,
+        onSelectionChanged: selectionChanged,
+        bindingOptions: {
+            menuVisible: 'categoriesVisible'
+        }
+    }" dx-item-alias="category">
+        <div data-options="dxTemplate : { name: 'content' } ">
+            <p class="header">Current category: <b>{{category.selectedCategory}}</b></p>
+            <div class="button" dx-button="{
+                text: 'Select category',
+                onClick: showCategories
+            }"></div>
+            <div dx-list="{ dataSource: listData }" dx-item-alias="contact">
+                <div data-options="dxTemplate : { name: 'item' } ">
+                    <div>{{contact.name}}</div>
+                    <div>{{contact.phone}}</div>
+                    <div>{{contact.email}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlideOut"></div>
+<!--/@jQuery-->

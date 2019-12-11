@@ -1,0 +1,39 @@
+﻿<!--@jQuery-->
+<div id="treeMapContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>layoutAlgorithm:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="treeMapContainer" data-bind="dxTreeMap: {
+    dataSource: '/Content/data/displays.json'
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>layoutAlgorithm:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: {
+        dataSource: layoutAlgorithms,
+        displayExpr: 'name',
+        valueExpr: 'value',
+        value: layoutAlgorithms[0].value,
+        onValueChanged: updateLayoutAlgorithm
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="treeMapController">
+    <div id="treeMapContainer" dx-tree-map="{
+        dataSource: '/Content/data/displays.json'
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>layoutAlgorithm:&nbsp;</div>
+        <div id="selectBoxContainer" dx-select-box="{
+            dataSource: layoutAlgorithms,
+            displayExpr: 'name',
+            valueExpr: 'value',
+            value: layoutAlgorithms[0].value,
+            onValueChanged: updateLayoutAlgorithm
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

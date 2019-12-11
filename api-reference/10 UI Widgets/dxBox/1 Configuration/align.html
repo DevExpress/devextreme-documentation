@@ -1,0 +1,56 @@
+<!--@Knockout-->
+<div class="box" data-bind="dxBox:{
+    align: alignValue,
+    height: '40%',
+    width: '90%'
+}">
+    <div id="item1" data-options="dxItem:{ baseSize: '20%' }"><p></p></div>
+    <div id="item2" data-options="dxItem:{ baseSize: '35%' }"><p></p></div>
+    <div id="item3" data-options="dxItem:{ baseSize: '25%' }"><p></p></div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">align</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: {
+        value: alignValue,
+        dataSource: alignValues
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="box" dx-box="{
+        height: '40%',
+        width: '90%',
+        bindingOptions: {
+            align: 'alignValue'
+        }
+    }">
+        <div id="item1" data-options="dxItem:{ baseSize: '20%' }"><p></p></div>
+        <div id="item2" data-options="dxItem:{ baseSize: '35%' }"><p></p></div>
+        <div id="item3" data-options="dxItem:{ baseSize: '25%' }"><p></p></div>
+    </div>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">align</div>
+          <div class="dx-field-value" ng-model="alignValue" dx-select-box="{
+            dataSource: alignValues
+        }"></div>
+      </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="box" id="myBox">
+    <div id="item1" data-options="dxItem:{ baseSize: '20%' }"><p></p></div>
+    <div id="item2" data-options="dxItem:{ baseSize: '35%' }"><p></p></div>
+    <div id="item3" data-options="dxItem:{ baseSize: '25%' }"><p></p></div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">align</div>
+    <div class="dx-field-value" id="alignSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

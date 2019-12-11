@@ -1,0 +1,73 @@
+<!--@Knockout-->
+<div style="height:500px; max-width:750px; margin: 0 auto" data-bind="dxScrollView: { showScrollbar: 'always' }">
+    <div class="wrapper">
+        <div data-bind="dxAccordion:{
+            dataSource: accordionData,
+            collapsible: true,
+            onSelectionChanged: selectionChanged
+        }">
+            <div data-options="dxTemplate : { name: 'title' } ">
+                <h1 data-bind="text: $data.title"></h1>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'item' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" data-bind="foreach: dataArray">
+                        <p><span data-bind="text: propertyKey"></span>: <b data-bind="text: propertyValue"></b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-bind="dxToast: {
+            visible: toastVisible,
+            type: 'custom',
+            displayTime: 2000
+        }">
+            <p data-bind="style: { display: expandedDisplayStyle }"><b style="color: #080" data-bind="text: expandedItem"></b> expanded<p>
+            <p data-bind="style: { display: collapsedDisplayStyle }"><b style="color: #F00" data-bind="text: collapsedItem"></b> collapsed<p>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:500px; max-width:750px; margin: 0 auto" dx-scroll-view="{ showScrollbar: 'always' }" ng-controller="demoController">
+    <div class="wrapper">
+        <div dx-accordion="{
+            dataSource: accordionData,
+            collapsible: true,
+            onSelectionChanged: selectionChanged
+        }" dx-item-alias="itemObj">
+            <div data-options="dxTemplate : { name: 'title' } ">
+                <h1>{{itemObj.title}}</h1>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'item' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" ng-repeat="(key, value) in itemObj.data">
+                        <p>{{key}}: <b>{{value}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dx-toast="{
+            type: 'custom',
+            displayTime: 2000,
+            bindingOptions: {
+                visible: 'toastVisible'
+            }
+        }">
+            <p ng-style="{ 'display': expandedDisplayStyle }"><b style="color: #080">{{expandedItem}}</b> expanded<p>
+            <p ng-style="{ 'display': collapsedDisplayStyle }"><b style="color: #F00">{{collapsedItem}}</b> collapsed<p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:500px; max-width:750px; margin: 0 auto" id="demoBox">
+    <div class="wrapper">
+        <div id="myAccordion"></div>
+        <div id="toast">
+            <p id="expanded"><b id="expandedTitle" style="color: #080"></b> expanded<p>
+            <p id="collapsed"><b id="collapsedTitle" style="color: #F00"></b> collapsed<p>
+        </div>
+    </div>
+</div>
+<!--/@jQuery-->

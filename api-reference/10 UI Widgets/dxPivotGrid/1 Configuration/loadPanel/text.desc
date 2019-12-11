@@ -1,0 +1,1 @@
+﻿In this demo, you can change the text of the load panel at runtime. Type any text in the text box below the pivot grid. Then, click the *"Reload Data"* button to invoke the load panel. It will display the specified text.

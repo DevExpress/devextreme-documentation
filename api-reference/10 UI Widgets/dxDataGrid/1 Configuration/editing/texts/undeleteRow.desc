@@ -1,0 +1,1 @@
+﻿In this example, the **editing** | **texts** | **undeleteRow** option is used to alter the text of the button that restores a removed row in the batch edit mode. To see the altered text, click one of the *"Delete"* buttons accompanying each grid row.

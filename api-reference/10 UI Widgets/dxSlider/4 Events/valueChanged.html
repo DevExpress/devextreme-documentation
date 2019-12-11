@@ -1,0 +1,24 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div>
+<div data-bind="dxSlider: {
+    min: 1,
+    max: 99,
+    value: 65,
+    onInitialized: initializedHandler
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div>
+    <div dx-slider="{
+        min: 1,
+        max: 99,
+        value: 65,
+        onInitialized: initializedHandler
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="mySlider"></div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, click the pie series to select it. Then, click it once again to unselect it. This action is performed using the **clearSelection()** method.

@@ -1,0 +1,1 @@
+﻿In this example, you can zoom the **Chart** widget using the **RangeSelector** widget. Note that the value axis of the **Chart** widget adjusts itself to the selected range. To disable this feature of the value axis, click the check box under the widgets.

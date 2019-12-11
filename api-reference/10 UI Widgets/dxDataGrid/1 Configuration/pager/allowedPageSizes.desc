@@ -1,0 +1,1 @@
+In this example, you can change the set of page sizes that can be selected by a user. To do this, select an item in the select box located below the grid. The value of the selected item will be assigned to the **pager** | **allowedPageSizes** option.

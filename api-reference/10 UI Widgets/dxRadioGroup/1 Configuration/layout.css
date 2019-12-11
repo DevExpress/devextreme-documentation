@@ -1,0 +1,13 @@
+﻿body{
+    text-align: center;
+}
+.wrapper {
+    margin: 10px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid red;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+}

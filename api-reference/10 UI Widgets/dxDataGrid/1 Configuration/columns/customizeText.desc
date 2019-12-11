@@ -1,0 +1,1 @@
+﻿In this example, the data source field providing data for the *"Language"* column contains truncated identifiers of languages, i.e., 'EN' for 'English', 'GER' for 'German', etc. To display the full names of languages instead of identifiers, a callback function is implemented and assigned to the **customizeText** option of the *"Language"* column. 

@@ -1,0 +1,1 @@
+Hover over a point on the chart and information about the country of the hovered series point will appear under the chart. When the point that has been hovered over is hovered out, the information disappears. This behavior is achieved using the **isHovered()** method of the hovered point.

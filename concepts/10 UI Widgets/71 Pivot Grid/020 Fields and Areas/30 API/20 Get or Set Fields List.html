@@ -1,0 +1,61 @@
+﻿<!--@jQuery-->
+<div style="text-align:center">
+    <div id="rowCheckBox" class="checkbox"></div>
+    <div id="columnCheckBox" class="checkbox"></div>
+    <div id="dataCheckBox" class="checkbox"></div>
+</div>
+<div id="pivotGridContainer"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="text-align:center">
+    <div id="rowCheckBox" class="checkbox" data-bind="dxCheckBox: {
+        text: 'Populate Row Area',
+        value: rowCheckBoxValue,
+        onValueChanged: updateFields
+    }"></div>
+    <div id="columnCheckBox" class="checkbox" data-bind="dxCheckBox: {
+        text: 'Populate Column Area',
+        value: columnCheckBoxValue,
+        onValueChanged: updateFields
+    }"></div>
+    <div id="dataCheckBox" class="checkbox" data-bind="dxCheckBox: {
+        text: 'Populate Data Area',
+        value: dataCheckBoxValue,
+        onValueChanged: updateFields
+    }"></div>
+</div>
+<div id="pivotGridContainer" data-bind="dxPivotGrid: {
+    dataSource: gridDataSource,
+    allowExpandAll: true,
+    allowFiltering: true,
+    allowSorting: true,
+    allowSortingBySummary: true,
+    fieldChooser: { enabled: false }
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="exampleController">
+    <div style="text-align:center">
+        <div id="rowCheckBox" ng-model="rowCheckBoxValue" class="checkbox" dx-check-box="{
+            text: 'Populate Row Area',
+            onValueChanged: updateFields
+        }"></div>
+        <div id="columnCheckBox" ng-model="columnCheckBoxValue" class="checkbox" dx-check-box="{
+            text: 'Populate Column Area',
+            onValueChanged: updateFields
+        }"></div>
+        <div id="dataCheckBox" ng-model="dataCheckBoxValue" class="checkbox" dx-check-box="{
+            text: 'Populate Data Area',
+            onValueChanged: updateFields
+        }"></div>
+    </div>
+    <div id="pivotGridContainer" dx-pivot-grid="{
+        dataSource: gridDataSource,
+        allowExpandAll: true,
+        allowFiltering: true,
+        allowSorting: true,
+        allowSortingBySummary: true,
+        fieldChooser: { enabled: false }
+    }"></div>
+</div>
+<!--/@AngularJS-->

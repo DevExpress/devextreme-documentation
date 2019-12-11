@@ -1,0 +1,1 @@
+﻿In this example, the **filterRow** | **resetOperationText** option is used to alter the text that represents the reset operation in a filter list. To see the altered text, hover over the filter operation chooser of any grid column.

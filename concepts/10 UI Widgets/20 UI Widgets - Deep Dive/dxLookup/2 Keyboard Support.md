@@ -1,0 +1,1 @@
+An end-user can use the **Enter** key to show the popup window. When the window is displayed, a user can move focus from the text field to the list and back using **Tab** and **Shift+Tab** shortcuts.

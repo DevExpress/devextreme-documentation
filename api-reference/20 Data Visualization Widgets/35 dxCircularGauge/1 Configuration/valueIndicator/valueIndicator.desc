@@ -1,0 +1,1 @@
+In this example, several options of the **valueIndicator** configuration object are changed. Here, the gauge value is indicated by a two-color needle. The appearance of this needle is customized using the **color**, **secondColor** and **width** options. In addition, the look of the spindle is altered using the **spindleSize** and **spindleGapSize** options.

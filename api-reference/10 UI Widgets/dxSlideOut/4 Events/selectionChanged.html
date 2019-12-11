@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div data-bind="dxSlideOut:{
+    dataSource: slideOutData,
+    selectedIndex: currentIndex,
+    menuVisible: showMenu,
+    onItemClick: changeMenuVisibility,
+    onInitialized: initializedHandler
+}">
+    <div data-options="dxTemplate : { name: 'item' } ">
+        <div data-bind="dxButton: {
+            text: 'Show Menu',
+            onClick: $root.changeMenuVisibility
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height: 600px" dx-slide-out="{
+        dataSource: slideOutData,
+        selectedIndex: currentIndex,
+        onInitialized: initializedHandler,
+        onItemClick: changeMenuVisibility,
+        bindingOptions:{
+            menuVisible: 'showMenu'
+        }
+    }">
+        <div data-options="dxTemplate : { name: 'item' } ">
+            <div dx-button="{
+                text: 'Show Menu',
+                onClick: changeMenuVisibility
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlideOut"></div>
+<!--/@jQuery-->

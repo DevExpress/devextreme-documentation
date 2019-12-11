@@ -1,0 +1,1 @@
+In this example, a grid displays data starting from the page number 10 because the **paging** | **pageIndex** option is set to 9. Data for this example is obtained from *www.odata.org*.

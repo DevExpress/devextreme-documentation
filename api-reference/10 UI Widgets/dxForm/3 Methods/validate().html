@@ -1,0 +1,36 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div data-bind="dxForm: {
+        formData: employee,
+        items: itemsOptions,
+        labelLocation: 'left',
+        colCount: 1,
+        onInitialized: initializedHandler,
+        showValidationSummary: true
+    }"></div>
+    <div data-bind="dxButton:{
+        text: 'Submit',
+        onClick: validateAndSubmit,
+        type: 'success'
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div dx-form="{
+        formData: employee,
+        items: itemsOptions,
+        labelLocation: 'left',
+        onInitialized: initializedHandler,
+        showValidationSummary: true,
+        colCount: 1
+    }"></div>
+    <div dx-button="{ text: 'Submit', onClick: validateAndSubmit, type: 'success' }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div id="myForm"></div>
+    <div id="myButton"></div>
+</div>
+<!--/@jQuery-->

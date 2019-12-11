@@ -1,0 +1,1 @@
+﻿In this example, grid rows can be deleted using the set of controls below the grid. To delete a row, select its index in the number box and then click the *"Delete Row"* button. This button calls the **deleteRow(rowIndex)** method.

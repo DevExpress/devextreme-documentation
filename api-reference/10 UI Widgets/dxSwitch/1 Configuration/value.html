@@ -1,0 +1,17 @@
+<!--@Knockout-->
+<div data-bind="dxSwitch: { value: switchValue }"></div><br />
+<div data-bind="dxButton: { text: 'Change value', onClick: changeValue }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div ng-model="switchValue" dx-switch="{ }"></div><br />
+    <div dx-button="{
+        text: 'Change value',
+        onClick: changeValue
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySwitch"></div><br />
+<div id="changeValueButton"></div>
+<!--/@jQuery-->

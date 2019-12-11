@@ -1,0 +1,62 @@
+﻿<!--@jQuery-->
+<div id="gridContainer" style="height: 350px; max-width: 800px; margin: 0 auto"></div>
+<div style="text-align: center; height: 38px; margin-top: 10px">
+    Select a Scrolling Mode:
+    <div id="scrollingModeSelectBox" style="display: inline-block; vertical-align: middle;"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="gridContainer" style="height: 350px; max-width: 800px; margin: 0 auto" data-bind="dxDataGrid: {
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        columns: [
+            { dataField: 'ProductID', caption: 'ID' },
+            { dataField: 'ProductName', caption: 'Name', width: 220 },
+            { dataField: 'QuantityPerUnit', caption: 'Quantity', width: 150 },
+            { dataField: 'UnitPrice', caption: 'Price' },
+            { dataField: 'UnitsInStock', caption: 'In Stock' }
+        ],
+        scrolling: { mode: selectedMode }
+}"></div>
+<div style="text-align: center; height: 38px; margin-top: 10px">
+    Select a Scrolling Mode:
+    <div id="scrollingModeSelectBox" style="display: inline-block; vertical-align: middle;" data-bind="dxSelectBox: {
+        height: 35,
+        width: 150,
+        items: scrollingModes,
+        value: selectedMode
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div id="gridContainer" style="height: 350px; max-width: 800px; margin: 0 auto" dx-data-grid="{
+         dataSource: data,
+         columns: [
+            { dataField: 'ProductID', caption: 'ID' },
+            { dataField: 'ProductName', caption: 'Name', width: 220 },
+            { dataField: 'QuantityPerUnit', caption: 'Quantity', width: 150 },
+            { dataField: 'UnitPrice', caption: 'Price' },
+            { dataField: 'UnitsInStock', caption: 'In Stock' }
+         ],
+         bindingOptions: {
+             'scrolling.mode': 'selectedMode'
+         } 
+    }"></div>
+    <div style="text-align: center; height: 38px; margin-top: 10px; display:block">
+        Select a Scrolling Mode:
+        <div id="scrollingModeSelectBox" style="display: inline-block; vertical-align: middle" dx-select-box="{
+            height: 35,
+            width: 150,
+            bindingOptions: {
+                items: 'scrollingModes',
+                value: 'selectedMode'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

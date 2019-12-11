@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+.dx-button{
+    margin: 10px;
+}
+#targetElement {
+    display: inline-block;
+    width: 80%;
+    height: 170px;
+    border-style: solid;
+    background-color: lightgreen;
+}

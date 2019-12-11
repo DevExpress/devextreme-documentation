@@ -1,0 +1,14 @@
+<!--@jQuery-->
+<div id="chartContainer" style="height:350px; max-width:800px; margin: 0px auto"></div>
+<div id="rangeSelectorContainer" style="height:120px; max-width:800px; margin: 0px auto"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:350px; max-width:800px; margin: 0px auto" data-bind="dxChart: chartConfiguration"></div>
+<div style="height:120px; max-width:800px; margin: 0px auto" data-bind="dxRangeSelector: rangeSelectorConfiguration"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="exampleController">
+    <div style="height:350px; max-width:800px; margin: 0px auto" dx-chart="chartConfiguration"></div>
+    <div style="height:120px; max-width:800px; margin: 0px auto" dx-range-selector="rangeSelectorConfiguration"></div>
+</div>
+<!--/@AngularJS-->

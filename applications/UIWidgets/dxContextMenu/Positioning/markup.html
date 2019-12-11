@@ -1,0 +1,21 @@
+<div id="background" style="background-color: #F0F0F0; height: 500px; max-width: 600px; padding-top: 10px; padding-left: 10px ">
+<div data-bind="dxButton: {
+    text: 'Click to show a menu',
+    width: 200,
+    onClick: function() { { contextMenuVisible(true); } }
+}"></div>
+
+<div id="targetElement" style="background: url(/Content/images/doc/16_1/PhoneJS/menus/cherry.png); background-size:contain; height: 300px; width: 200px; margin-bottom: 200px; margin-top: 10px">
+</div>
+<div data-bind="dxContextMenu: {
+    items: menuItems,
+    target: '#targetElement',
+    onItemClick: itemClicked,
+    invokeOnlyFromCode: true,
+    visible: contextMenuVisible,
+    position: {
+        at: 'center',
+        my: 'top left'
+    }
+}"></div>
+</div>

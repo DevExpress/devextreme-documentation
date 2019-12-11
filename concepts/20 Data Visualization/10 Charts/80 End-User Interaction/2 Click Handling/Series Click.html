@@ -1,0 +1,14 @@
+<!--@jQuery-->
+<div id="chartContainer" style="height:500px; max-width:700px; margin: 0px auto"></div>
+<div id="outputText" style="height:20px; margin:5px; text-align:center; font-family:'Segoe UI'; font-size:10pt"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:500px; max-width:700px; margin: 0px auto" data-bind="dxChart: chartConfiguration"></div>
+<div style="height:20px; margin:5px; text-align:center; font-family:'Segoe UI'; font-size:10pt" data-bind="text: outputText"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="exampleController">
+    <div style="height:500px; max-width:700px; margin: 0px auto" dx-chart="chartConfiguration"></div>
+    <div style="height:20px; margin:5px; text-align:center; font-family:'Segoe UI'; font-size:10pt">{{ outputText }}</div>
+</div>
+<!--/@AngularJS-->

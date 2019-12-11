@@ -1,0 +1,1 @@
+﻿In this example, you can show and hide tooltips using the corresponding buttons below. When clicking the *Show next tooltip* button, the **showTooltip()** method of the next point in the order will be called. When clicking the **Hide all tooltips** button, the chart's **hideTooltip()** method will be called. This method clears the chart plot from tooltips.

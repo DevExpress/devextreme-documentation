@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div class="checkBox" data-bind="dxCheckBox: { 
+    text: 'Check me',
+    value: checkBoxState
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            dataSource: availableStates,
+            value: selectedState
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="checkBox" ng-model="checkBoxState" dx-check-box="{
+        text: 'Check me'
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Value</div>
+            <div class="dx-field-value" ng-model="selectedState" dx-select-box="{
+                dataSource: availableStates
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="checkBox" id="myCheckBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+        <div class="dx-field-value" id="stateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

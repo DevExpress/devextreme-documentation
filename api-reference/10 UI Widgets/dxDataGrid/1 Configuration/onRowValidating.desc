@@ -1,0 +1,1 @@
+In this example, grid settings allow you to edit rows. The **onRowValidating** function checks whether the 'Year' value is less than the current year, and highlights the cell in case this criterion is not satisfied.

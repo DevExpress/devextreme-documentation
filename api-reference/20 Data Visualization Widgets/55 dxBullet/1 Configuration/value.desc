@@ -1,0 +1,1 @@
+﻿In this example, you can change the value indicated by the bullet bar using the button below. If this value is greater than the target value, the bullet bar becomes red. Otherwise, it is colored in blue.

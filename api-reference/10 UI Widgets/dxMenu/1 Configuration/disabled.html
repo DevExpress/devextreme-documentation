@@ -1,0 +1,31 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div data-bind="dxMenu: { 
+        items: menuItems,
+        disabled: menuDisabled
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'disabled',
+        value: menuDisabled
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div dx-menu="{
+        items: menuItems,
+        bindingOptions: {
+            disabled: 'menuDisabled'
+        }
+    }"></div>
+    <div ng-model="menuDisabled" dx-check-box="{
+        text: 'disabled'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div id="myMenu"></div>
+    <div id="disabledSelector"></div>
+</div>
+<!--/@jQuery-->

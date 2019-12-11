@@ -1,0 +1,111 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:650px; max-width:750px; margin:0 auto"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Choose the Layout of the Field Chooser:&nbsp;
+    <div id="radioGroupContainer" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:650px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: {
+        store: sales,
+        fields: [{
+            dataField: 'region',
+            width: 120,
+            area: 'row',
+            expanded: true
+        }, {
+            dataField: 'city',
+            width: 150,
+            area: 'row',
+            selector: function (data) {
+                return data.city + ' (' + data.country + ')';
+            }
+        }, {
+            dataField: 'date',
+            dataType: 'date',
+            area: 'column'
+        }, {
+            dataField: 'amount',
+            summaryType: 'sum',
+            format: 'currency',
+            area: 'data'
+        }]
+    },
+    fieldChooser: {
+        enabled: true,
+        layout: layoutNumber
+    },
+    onInitialized: function (e) {
+        e.model.pivotGridInstance = e.component;
+    }
+}"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Choose the Layout of the Field Chooser:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxRadioGroup: {
+        dataSource: [
+            { name: '0', value: 0 },
+            { name: '1', value: 1 },
+            { name: '2', value: 2 }
+        ],
+        valueExpr: 'value',
+        displayExpr: 'name',
+        value: layoutNumber,
+        layout: 'horizontal',
+        onValueChanged: function (e) {
+            pivotGridInstance.getFieldChooserPopup().show();
+        }
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:650px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: {
+            store: sales,
+            fields: [{
+                dataField: 'region',
+                width: 120,
+                area: 'row',
+                expanded: true
+            }, {
+                dataField: 'city',
+                width: 150,
+                area: 'row',
+                selector: cityText
+            }, {
+                dataField: 'date',
+                dataType: 'date',
+                area: 'column'
+            }, {
+                dataField: 'amount',
+                summaryType: 'sum',
+                format: 'currency',
+                area: 'data'
+            }]
+        },
+        fieldChooser: { enabled: true },
+        onInitialized: savePivotGridInstance,
+        bindingOptions: {
+            'fieldChooser.layout': 'layoutNumber'
+        }
+    }"></div>
+    <div style="height:40px; margin-top:5px; text-align:center">
+        Choose the Layout of the Field Chooser:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" dx-radio-group="{
+            dataSource: [
+                { name: '0', value: 0 },
+                { name: '1', value: 1 },
+                { name: '2', value: 2 }
+            ],
+            valueExpr: 'value',
+            displayExpr: 'name',
+            layout: 'horizontal',
+            onValueChanged: showFieldChooser,
+            bindingOptions: {
+                value: 'layoutNumber'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

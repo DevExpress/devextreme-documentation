@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div data-bind="dxSwitch: { activeStateEnabled: enableActiveState }"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { value: enableActiveState }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-switch="{
+        bindingOptions: {
+            activeStateEnabled: 'enableActiveState'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">activeStateEnabled</div>
+            <div class="dx-field-value" ng-model="enableActiveState" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySwitch"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" id="activeStateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,54 @@
+﻿<!--@Knockout-->
+<div class="wrapper" data-bind="style: { 'border-color': currentColor }">
+    <p><b>Choose border color</b></p>
+    <div data-bind="dxRadioGroup:{ 
+        items: colors,
+        onValueChanged: changeColor,
+        layout: layoutValue,
+        valueExpr: 'value',
+        value: currentColor
+    }"></div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">layout</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: { dataSource: [ 'vertical', 'horizontal' ], value: layoutValue }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="wrapper" ng-style="{ 'border-color': currentColor }">
+        <p><b>Choose border color</b></p>
+        <div dx-radio-group="{ 
+            items: colors,
+            onValueChanged: changeColor,
+            valueExpr: 'value',
+            bindingOptions: {
+                layout: 'layoutValue',
+                value: 'currentColor'
+            }
+        }"></div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">layout</div>
+            <div class="dx-field-value" ng-model="layoutValue" dx-select-box="{
+                dataSource: [ 'vertical', 'horizontal' ]
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper" id="radioGroupWrapper">
+    <p><b>Choose border color</b></p>
+    <div id="myRadioGroup"></div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">layout</div>
+        <div class="dx-field-value" id="layoutSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

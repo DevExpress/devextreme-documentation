@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div data-bind="dxGallery: { 
+    dataSource: galleryData,
+    width: '100%',
+    height: 370,
+    showIndicator: showIndicatorValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showIndicator</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: showIndicatorValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-gallery="{ 
+        dataSource: galleryData,
+        width: '100%',
+        height: 370,
+        bindingOptions: {
+            showIndicator: 'showIndicatorValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showIndicator</div>
+            <div class="dx-field-value" ng-model="showIndicatorValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myGallery"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showIndicator</div>
+        <div class="dx-field-value" id="showIndicatorSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

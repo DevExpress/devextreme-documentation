@@ -1,0 +1,19 @@
+<!--@Knockout-->
+<div data-bind="dxSelectBox:{
+    dataSource: selectBoxData,
+    onValueChanged: processValueChange,
+    displayExpr: 'name'
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-select-box="{
+        dataSource: selectBoxData,
+        onValueChanged: processValueChange,
+        displayExpr: 'name'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySelectBox"></div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+Click the *'Change the container size'* button to switch between two sizes of the map container. You can set the size either to 500x800 or 400x700 pixels. The **render()** method is used to redraw the map after the container size changes.

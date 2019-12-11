@@ -1,0 +1,1 @@
+In this example, you can apply a filter to the *"Date"* field at runtime using a set of widgets located below the pivot grid. Use the **CheckBox** widgets to select years that must be pushed in the **filterValues** array. Turn the **Switch** widget to choose whether to include or exclude the selected years from the pivot grid.

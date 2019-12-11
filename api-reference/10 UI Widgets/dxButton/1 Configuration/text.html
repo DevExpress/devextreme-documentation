@@ -1,0 +1,42 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{
+    text: buttonText,
+    onClick: buttonClicked
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">text</div>
+    <div class="dx-field-value" data-bind="dxTextBox: {
+        maxLength: 30,
+        value: buttonText
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="button" dx-button="{
+        onClick: buttonClicked,
+        bindingOptions: {
+            text: 'buttonText'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">text</div>
+          <div class="dx-field-value" ng-model="buttonText" dx-text-box="{
+            maxLength: 30
+        }"></div>
+      </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="myButton"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">text</div>
+    <div class="dx-field-value" id="textField"></div>
+  </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,43 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: [
+        'author',
+        { dataField: 'title', width: 210 },
+        'year', 'genre', 'language', 'format'
+    ],
+    paging: { pageSize: 8 },
+    wordWrapEnabled: checkBoxState
+}"></div>
+    <div data-bind="dxCheckBox: {
+    text: 'Enable Word Wrap',
+    value: checkBoxState
+}"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            'year', 'genre', 'language', 'format'
+        ],
+        paging: { pageSize: 8 },
+        bindingOptions: {
+            wordWrapEnabled: 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Enable Word Wrap'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:380px;"></div>
+    <div id="wordWrapEnabledCheckbox"></div>
+</div>
+<!--/@jQuery-->

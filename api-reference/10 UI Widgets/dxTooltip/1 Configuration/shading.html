@@ -1,0 +1,53 @@
+<!--@Knockout-->
+<div id="button" data-bind="dxButton:{ text:'Hover over me' }, event: { mouseover: showTooltip } "></div>
+<div data-bind="dxTooltip:{
+    target: '#button',
+    visible: tooltipVisible,
+    showCloseButton: true,
+    shading: shadeScreen
+}">
+    <div data-options="dxTemplate:{ name: 'content' }">
+        <p>Click outside to close.</p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">shading</div>
+        <div class="dx-field-value" data-bind="dxSwitch:{ 
+            value: shadeScreen
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="button" dx-button="{ text:'Hover over me' }" ng-mouseover="showTooltip()"></div>
+    <div dx-tooltip="{ 
+        target: '#button',
+        bindingOptions: {
+            visible: 'tooltipVisible',
+            shading: 'shadeScreen'
+        }
+    }">
+        <div data-options="dxTemplate:{ name: 'content' }">
+            <p>Click outside to close.</p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">shading</div>
+            <div class="dx-field-value" ng-model="shadeScreen" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myTooltip"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">shading</div>
+        <div class="dx-field-value" id="shadingSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

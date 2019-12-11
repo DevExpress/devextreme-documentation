@@ -1,0 +1,1 @@
+﻿In this example, you can change the value of the **autoExpandAll** option at runtime using the check box under the grid. To see the changes, group grid records by dragging a column header onto the group panel. If **autoExpandAll** is *true*, groups appear expanded. If not, they appear collapsed.

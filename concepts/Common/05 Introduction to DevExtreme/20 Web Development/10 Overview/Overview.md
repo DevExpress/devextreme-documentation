@@ -1,0 +1,5 @@
+DevExtreme includes a comprehensive library of client-side touch-enabled widgets - ready-to-use UI elements rendered to a web page. Typically, a widget is bound to data and provides user interactions. It is represented by an HTML element (container) and JavaScript code.
+
+To work with these widgets, you will have to use only HTML, Java Script and CSS (for styling UI widgets). In addition, you will need basic knowledge of [jQuery](https://jquery.com).
+
+Each DevExtreme widget includes a jQuery plugin and bindings to [AngularJS](https://angularjs.org) and [KnockoutJS](https://knockoutjs.com). You can choose whether to create a widget by using the standard jQuery method or use the declarative bindings and support for MVVM by creating the widget for AngularJS or KnockoutJS. Regardless of the approach you choose, you create and initialize the widget once, passing an object with specified configuration options.

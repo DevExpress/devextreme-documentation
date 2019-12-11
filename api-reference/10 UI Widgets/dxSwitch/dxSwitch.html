@@ -1,0 +1,38 @@
+﻿<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Switch</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { value: switchValue }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+        <div class="dx-field-value" data-bind="text: switchValue"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Switch</div>
+            <div class="dx-field-value" ng-model="switchValue" dx-switch="{ }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">Value</div>
+            <div class="dx-field-value">{{switchValue}}</div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Switch</div>
+        <div class="dx-field-value" id="mySwitch"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Value</div>
+        <div class="dx-field-value" id="switchValue"></div>
+    </div>
+</div>
+<!--/@jQuery-->

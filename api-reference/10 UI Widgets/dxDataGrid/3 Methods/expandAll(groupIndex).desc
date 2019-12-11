@@ -1,0 +1,1 @@
+In this example, grid records are grouped by the *"Format"* column initially. In addition, the group panel is made visible enabling you to change grouping. Moreover, you can expand or collapse groups by clicking the *"Expand Groups"* or *"Collapse Groups"* button located below the grid.

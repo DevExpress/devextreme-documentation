@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+.text{
+    margin-top: 50px;
+    font-size: 100px;
+}
+.checkbox{
+    display: block;
+    margin: 20px;
+    text-align: left;
+}

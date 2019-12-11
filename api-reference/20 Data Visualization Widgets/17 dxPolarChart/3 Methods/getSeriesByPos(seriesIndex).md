@@ -1,0 +1,3 @@
+Series in the chart's series collection are arranged as they are defined in the **series** array of the chart's configuration object. Note that the series are numbered from zero in the series collection.
+
+To learn about series' members that you can use, refer to the description of the [Series](/api-reference/20%20Data%20Visualization%20Widgets/17%20dxPolarChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Chart_Elements/Series/') object.

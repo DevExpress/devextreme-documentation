@@ -1,0 +1,33 @@
+﻿<!--@Knockout-->
+<div data-bind="dxSelectBox:{
+    dataSource: selectBoxData,
+    displayExpr: 'name',
+    fieldTemplate: 'field'
+}">
+    <div data-options="dxTemplate: { name: 'field' }">
+        <div data-bind="dxTextBox: { 
+            placeholder: 'Select a state',
+            value: $data !== null ? name + ' (' + capital + ')' : ''
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-select-box="{
+        dataSource: selectBoxData,
+        displayExpr: 'name',
+        fieldTemplate: 'field'
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'field' }">
+            <div dx-text-box="{
+                placeholder: 'Select a state',
+                value: itemObj.capital ? itemObj.name + ' (' + itemObj.capital + ')' : ''
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySelectBox"></div>
+<!--/@jQuery-->

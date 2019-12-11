@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:480px; max-width:630px; margin: 0 auto">
+    <div style="height:450px" data-bind="dxDataGrid: {
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 9 },
+        groupPanel: {
+            visible: true,
+            allowColumnDragging: checkBoxState
+        }
+    }"></div>
+        <div data-bind="dxCheckBox: {
+        text: 'Allow Column Dragging',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:480px; max-width:630px; margin: 0 auto">
+    <div style="height:450px" dx-data-grid="{
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 9 },
+        groupPanel: { visible: true },
+        bindingOptions: {
+            'groupPanel.allowColumnDragging': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Allow Column Dragging'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:480px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:450px;"></div>
+    <div id="checkboxContainer"></div>
+</div>
+<!--/@jQuery-->

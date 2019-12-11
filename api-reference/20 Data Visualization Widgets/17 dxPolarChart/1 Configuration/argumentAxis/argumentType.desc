@@ -1,0 +1,1 @@
+Here, the 'year' field of the 'dataSource' array is intentionally set in the 'numeric' format. To display the values of this field in the 'datetime' format on the chart, use the **argumentType** option.

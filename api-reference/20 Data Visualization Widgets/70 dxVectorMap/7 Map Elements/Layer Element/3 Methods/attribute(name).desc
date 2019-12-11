@@ -1,0 +1,1 @@
+In this example, the **attribute(name)** method is used to obtain the name of the marker that is currently hovered over. This name is displayed by a tooltip.

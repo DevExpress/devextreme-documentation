@@ -1,0 +1,1 @@
+In this example, you can insert rows into a grid. Before a new row appears, the **onInitNewRow** function initializes its *format* data field with a *"paperback"* value.

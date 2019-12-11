@@ -1,0 +1,42 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" data-bind="dxDataGrid: {
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 7 },
+        searchPanel: {
+            visible: true,
+            highlightSearchText:  checkBoxState
+        }
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'Highlight Search Text',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 7 },
+        searchPanel: {
+            visible: true,
+            highlightSearchText: true
+        },
+        bindingOptions: {
+            'searchPanel.highlightSearchText': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Highlight Search Text'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:380px;"></div>
+    <div id="highlightSearchTextCheckbox"></div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,13 @@
+<div class="button" data-bind="dxButton: { text: 'Show overlay', onClick: showOverlay }"></div>
+<div id="overlayContainer" data-bind="dxOverlay: { visible: overlayVisible, shading: overlayShading }">
+  <div class="overlayContents">
+    <p>The overlay window text.</p>
+      <div class="button" data-bind="dxButton: { text: 'Hide overlay', onClick: hideOverlay }"></div>
+  </div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Shading</div>
+    <div class="dx-field-value" data-bind="dxSwitch: { value: overlayShading }"></div>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+In this example, the **selected()** method is used to check whether the clicked marker is already selected. If so, this marker deselects using the **selected(state)** method. Otherwise, it selects using the same method.

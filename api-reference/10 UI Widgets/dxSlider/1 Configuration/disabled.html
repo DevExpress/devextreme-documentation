@@ -1,0 +1,41 @@
+<!--@Knockout-->
+<div data-bind="dxSlider: {
+    min: 1,
+    max: 100,
+    value: 38,
+    disabled: disabledValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { value: disabledValue }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-slider="{
+        min: 1,
+        max: 100,
+        value: 38,
+        bindingOptions: {
+            disabled: 'disabledValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="disabledValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlider"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

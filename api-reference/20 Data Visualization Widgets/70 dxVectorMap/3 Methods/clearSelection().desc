@@ -1,0 +1,1 @@
+In this example, you can select several areas and markers on the map by clicking. To clear the selection, click the *Deselect the Map Elements* button under the map. This button calls the **clearSelection()** method of the widget instance, which deselects all the map areas and markers.

@@ -1,0 +1,40 @@
+﻿<!--@Knockout-->
+<div style="height:380px; max-width:800px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: orders,
+    columns: [
+        'OrderID', 'CustomerID',
+        { dataField: 'OrderDate', dataType: 'date', format: 'shortDate' },
+        { dataField: 'RequiredDate', dataType: 'date', format: 'shortDate' },
+        'Freight', 'ShipName'
+    ],
+    paging: { pageSize: 6 },
+    filterRow: { visible: true },
+    groupPanel: { visible: true },
+    selection: { mode: 'single' },
+    onContentReady: onContentReady
+}"></div>
+<div style="height:20px;margin:5px auto;text-align:center"><b>onContentReady</b> has been called for the <span data-bind="text: message"></span></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:400px; max-width:800px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: orders,
+        columns: [
+            'OrderID', 'CustomerID',
+            { dataField: 'OrderDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'RequiredDate', dataType: 'date', format: 'shortDate' },
+            'Freight', 'ShipName'
+        ],
+        paging: { pageSize: 6 },
+        filterRow: { visible: true },
+        groupPanel: { visible: true },
+        selection: { mode: 'single' },
+        onContentReady: onContentReady
+    }"></div>
+    <div style="height:20px;margin:5px auto;text-align:center"><b>onContentReady</b> has been called for the {{count}} time<span ng-if="count > 1">s</span></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:380px; max-width:800px; margin: 0 auto"></div>
+<div id="messageContainer" style="height:20px;margin:5px auto;text-align:center"></div>
+<!--/@jQuery-->

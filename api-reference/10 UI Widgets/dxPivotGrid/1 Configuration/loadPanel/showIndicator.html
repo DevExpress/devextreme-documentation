@@ -1,0 +1,87 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:180px; max-width:750px; margin:0 auto"></div>
+<div style="height:80px; text-align:center">
+    Show the Loading Indicator:&nbsp;
+    <div id="switchContainer" style="display:inline-block; vertical-align:middle"></div>
+    <div id="buttonContainer" style="display:block; margin:0 auto; margin-top:10px"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:180px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: {
+        fields: [
+            { dataField: '[Product].[Category]', area: 'row' },
+            { dataField: '[Product].[Subcategory]', area: 'row' },
+            { dataField: '[Ship Date].[Calendar Year]', area: 'column' },
+            { dataField: '[Ship Date].[Month of Year]', area: 'column' },
+            { dataField: '[Measures].[Customer Count]', area: 'data' }
+        ],
+        store: {
+            type: 'xmla',
+            url: 'https://demos.devexpress.com/Services/OLAP/msmdpump.dll',
+            catalog: 'Adventure Works DW Standard Edition',
+            cube: 'Adventure Works'
+        }
+    },
+    fieldChooser: { enabled: false },
+    loadPanel: {
+        showIndicator: showLoadingIndicator
+    },
+    onInitialized: function (e) {
+        pivotGridInstance = e.component;
+    }
+}"></div>
+<div style="height:80px; text-align:center">
+    Show the Loading Indicator:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxSwitch: {
+        onText: 'true',
+        offText: 'false',
+        value: showLoadingIndicator
+    }"></div>
+    <div style="display:block; margin:0 auto; margin-top:10px" data-bind="dxButton: {
+        text: 'Reload Data',
+        width: 150,
+        onClick: function (e) {
+            pivotGridInstance.getDataSource().load();
+        }
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:180px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: {
+            fields: [
+                { dataField: '[Product].[Category]', area: 'row' },
+                { dataField: '[Product].[Subcategory]', area: 'row' },
+                { dataField: '[Ship Date].[Calendar Year]', area: 'column' },
+                { dataField: '[Ship Date].[Month of Year]', area: 'column' },
+                { dataField: '[Measures].[Customer Count]', area: 'data' }
+            ],
+            store: {
+                type: 'xmla',
+                url: 'https://demos.devexpress.com/Services/OLAP/msmdpump.dll',
+                catalog: 'Adventure Works DW Standard Edition',
+                cube: 'Adventure Works'
+            }
+        },
+        fieldChooser: { enabled: false },
+        onInitialized: savePivotGridInstance,
+        bindingOptions: {
+            'loadPanel.showIndicator': 'showLoadingIndicator'
+        }
+    }"></div>
+    <div style="height:80px; text-align:center">
+        Show the Loading Indicator:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" ng-model="showLoadingIndicator" dx-switch="{
+            onText: 'true',
+            offText: 'false'
+        }"></div>
+        <div style="display:block; margin:0 auto; margin-top:10px" dx-button="{
+            text: 'Reload Data',
+            width: 150,
+            onClick: reloadData
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

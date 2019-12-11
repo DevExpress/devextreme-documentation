@@ -1,0 +1,1 @@
+In this example, the height of the load panel is set to 100 using the **loadPanel** | **height** option. To see the changes, refresh the grid's data source by clicking the *"Refresh"* button. Data for this example is obtained from *www.odata.org*.

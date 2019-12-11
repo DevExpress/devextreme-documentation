@@ -1,0 +1,21 @@
+.demo-page{
+    background-color: #F0F0F0;
+    height: 500px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ui-element{
+    display: block;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.target {
+    background-image: url(/Content/images/doc/14_2/PhoneJS/cherry.jpg);
+    background-size: cover;
+    height: 150px; 
+    width:100px; 
+    margin-top: 20px;
+}

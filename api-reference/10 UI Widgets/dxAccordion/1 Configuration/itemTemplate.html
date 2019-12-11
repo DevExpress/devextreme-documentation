@@ -1,0 +1,76 @@
+<!--@Knockout-->
+<div style="height:500px; max-width:750px; margin: 0 auto" data-bind="dxScrollView: { showScrollbar: 'always' }">
+    <div class="wrapper">
+        <p>Use the following item template</p>
+        <div class="box" data-bind="dxSelectBox: {
+            dataSource: templates,
+            value: currentTemplate
+        }"></div>
+        <div data-bind="dxAccordion:{
+            dataSource: accordionData,
+            itemTemplate: currentTemplate
+        }">
+            <div data-options="dxTemplate : { name: 'title' } ">
+                <h1 data-bind="text: $data.title"></h1>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'template1' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" data-bind="foreach: dataArray">
+                        <p><span data-bind="text: propertyKey"></span>: <b data-bind="text: propertyValue"></b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'template2' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" data-bind="foreach: dataArray">
+                        <p><span style="color:blue;" data-bind="text: propertyValue"></span> (<i data-bind="text: propertyKey"></i>)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:500px; max-width:750px; margin: 0 auto" dx-scroll-view="{ showScrollbar: 'always' }" ng-controller="demoController">
+    <div class="wrapper">
+        <p>Use the following item template</p>
+        <div class="box" ng-model="currentTemplate" dx-select-box="{
+            dataSource: templates
+        }"></div>
+        <div dx-accordion="{
+            dataSource: accordionData,
+            bindingOptions: {
+                itemTemplate: 'currentTemplate'
+            }
+        }" dx-item-alias="itemObj">
+            <div data-options="dxTemplate : { name: 'title' } ">
+                <h1>{{itemObj.title}}</h1>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'template1' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" ng-repeat="(key, value) in itemObj.data">
+                        <p>{{key}}: <b>{{value}}</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'template2' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" ng-repeat="(key, value) in itemObj.data">
+                        <p><span style="color:blue;">{{value}}</span> (<i>{{key}}</i>)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:500px; max-width:750px; margin: 0 auto" id="demoBox">
+    <div class="wrapper">
+        <p>Use the following item template</p>
+        <div class="box" id="templateSelector"></div>
+        <div id="myAccordion"></div>
+    </div>
+</div>
+<!--/@jQuery-->

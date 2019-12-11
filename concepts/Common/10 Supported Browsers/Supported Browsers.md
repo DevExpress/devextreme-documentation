@@ -1,0 +1,1 @@
+Below you will learn what browsers are supported in DevExtreme libraries.

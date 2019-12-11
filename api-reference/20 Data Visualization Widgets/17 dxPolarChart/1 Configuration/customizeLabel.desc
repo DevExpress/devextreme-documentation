@@ -1,0 +1,1 @@
+This example shows how to customize point labels using the **customizeLabel** option. On this chart, if the argument of a point is greater than 20, the label of this point is colored in *'darkorange'*.

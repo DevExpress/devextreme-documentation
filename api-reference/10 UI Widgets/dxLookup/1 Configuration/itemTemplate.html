@@ -1,0 +1,57 @@
+<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    title: 'States',
+    itemTemplate: currentTemplate
+}">
+    <div data-options="dxTemplate: { name: 'custom' }">
+        <p>Name: <b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Use template</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: false,
+            onValueChanged: useTemplateChanged
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        title: 'States',
+        bindingOptions: {
+            itemTemplate: 'currentTemplate'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'custom' }">
+            <p>Name: <b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Use template</div>
+            <div class="dx-field-value" dx-switch="{
+                value: false,
+                onValueChanged: useTemplateChanged
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Use template</div>
+        <div class="dx-field-value" id="useTemplateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

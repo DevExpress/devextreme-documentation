@@ -1,0 +1,1 @@
+﻿In this example, the 'email' rule is applied to the 'Email' editor. This rule demands that the editor value match the Email pattern. To check this rule, specify a wrong email.

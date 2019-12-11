@@ -1,0 +1,45 @@
+<!--@Knockout-->
+<div data-bind="dxGallery: { 
+    dataSource: galleryData,
+    initialItemWidth: 120,
+    width: '100%',
+    height: 200,
+    stretchImages: stretchValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">stretchImages</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: stretchValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-gallery="{ 
+        dataSource: galleryData,
+        initialItemWidth: 120,
+        width: '100%',
+        height: 200,
+        bindingOptions: {
+            stretchImages: 'stretchValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">stretchImages</div>
+            <div class="dx-field-value" ng-model="stretchValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myGallery"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">stretchImages</div>
+        <div class="dx-field-value" id="stretchSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

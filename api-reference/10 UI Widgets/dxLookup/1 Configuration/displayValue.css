@@ -1,0 +1,18 @@
+#myLookup{
+    margin: 10px;
+}
+.info {
+    margin: 10px;
+    border: solid 1px blue;
+    background: #fed;
+    color: #332;
+}
+.info p{
+    margin: 5px;
+}
+.info p:first-child{
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 10px;
+    border-bottom: solid 1px blue;
+}

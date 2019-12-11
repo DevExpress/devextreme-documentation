@@ -1,0 +1,1 @@
+﻿Click a point on the chart to select this point. Information about the country of the selected series point will appear under the chart. Click this point again and the information will disappear. This behavior is achieved using the **isSelected()** method of the clicked point.

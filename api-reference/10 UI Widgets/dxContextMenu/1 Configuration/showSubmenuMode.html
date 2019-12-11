@@ -1,0 +1,52 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div class="dx-fieldset" style="width: 350px;">
+        <div class="dx-field">
+            <div class="dx-field-label">showSubmenuMode</div>
+            <div class="dx-field-value" data-bind="dxSelectBox: {
+                dataSource: showModes,
+                value: showMode
+            }"></div>
+        </div>
+    </div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div data-bind="dxContextMenu: {
+        dataSource: menuItems,
+        target: '#contextMenuTarget',
+        showSubmenuMode: showMode
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="dx-fieldset" style="width: 350px;">
+        <div class="dx-field">
+            <div class="dx-field-label">showSubmenuMode</div>
+            <div class="dx-field-value" ng-model="showMode" dx-select-box="{
+                dataSource: showModes
+            }"></div>
+        </div>
+    </div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div dx-context-menu="{
+        dataSource: menuItems,
+        target: '#contextMenuTarget',
+        bindingOptions: {
+            visible: 'menuVisible',
+            showSubmenuMode: 'showMode'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="dx-fieldset" style="width: 350px;">
+        <div class="dx-field">
+            <div class="dx-field-label">showSubmenuMode</div>
+            <div class="dx-field-value" id="showModeSelector"></div>
+        </div>
+    </div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div id="myContextMenu"></div>
+</div>
+<!--/@jQuery-->

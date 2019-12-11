@@ -1,0 +1,79 @@
+﻿<!--@Knockout-->
+<div id="container">
+    <div class="indentation" data-bind="dxTextBox: { value: name, placeholder: 'Name' },
+        dxValidator: { name: 'Name', validationRules: [{ type: 'required' }]}"></div>
+    <div class="indentation" data-bind="dxSelectBox: { dataSource: ['Ground', '1','2','3'], placeholder: 'Floor #' },
+        dxValidator: { name: 'Floor', validationRules: [{ type: 'required' }]}"></div>
+    <div class="indentation" data-bind="dxNumberBox: { value: age, placeholder: 'Age' },
+        dxValidator: { name: 'Age',  validationRules: [{ type: 'required' }]}"></div>
+    <div class="indentation" data-bind="dxAutocomplete: { placeholder: 'Room Type', valueExpr: 'text',
+            dataSource: [{ text: 'Suite' }, { text: 'One-Bedroom Suite' }, { text: 'Two-Bedroom King Suite' }, { text: 'King Room' }] },
+        dxValidator: { name: 'Room Type', validationRules: [{ type: 'required'}]}"></div>	
+    <div class="indentation" data-bind="dxRadioGroup: { dataSource: [{ text: 'Ocean' }, { text: 'Mountains' }, { text: 'Slave market' }], layout:'vertical' },
+        dxValidator: { name: 'Room View', validationRules: [{ type: 'required', message: 'Room View is not chosen' }]}">
+    </div>
+    <div class="indentation" data-bind="dxLookup: { searchEnabled: false, displayExpr: 'name', valueExpr: 'this', title: 'States',
+            dataSource: [{ id: 1, name: 'South' }, { id: 2, name: 'North' }, { id: 3, name: 'North-East' }] },
+        dxValidator: { name: 'Building', validationRules: [{ type: 'required' }]}">
+    </div>
+    <div class="indentation" data-bind="dxCalendar: { }, dxValidator: { name: 'Check In Date', validationRules: [{ type: 'required' }]}"></div>
+    <div class="indentation" data-bind="dxDateBox: { value: undefined, pickerType: 'calendar', placeholder: 'Check Out', width: 200},
+        dxValidator: { name: 'Check Out Date', validationRules: [{ type: 'required' }]}"></div>	
+    <div class="indentation" data-bind="dxCheckBox: { value: false,  text: 'I accept the terms' },
+        dxValidator: { name: 'Agreement', validationRules: [{ type: 'required' }]}"></div>	
+    <div class="indentation" data-bind="dxValidationSummary: { }"></div>
+    <div data-bind="dxButton: { text: 'Validate and submit', onClick: validateAndSubmit }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div id="container" ng-controller="demoController">
+    <div class="indentation" ng-model="name" dx-text-box="{ placeholder: 'Name' }"
+         dx-validator="{ name: 'Name', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" dx-select-box="{ dataSource: ['Ground', '1','2','3'], placeholder: 'Floor #' }"
+         dx-validator="{ name: 'Floor', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" ng-model="age" dx-number-box="{ placeholder: 'Age'}"
+         dx-validator="{ name: 'Age', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" dx-autocomplete="{ placeholder: 'Room Type',
+            dataSource: ['Suite','One-Bedroom Suite','Two-Bedroom King Suite','King Room']
+        }"
+         dx-validator="{ name: 'Room Type', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" dx-radio-group="{ dataSource: [{ text: 'Ocean' }, { text: 'Mountains' }, { text: 'Slave market' }], layout:'vertical'}"
+         dx-validator="{ name: 'Room View', validationRules: [ { type: 'required', message: 'Room View is not chosen' } ] }">
+    </div>
+    <div dx-lookup="{ searchEnabled: false, displayExpr: 'name', valueExpr: 'this', title: 'States',
+            dataSource: [{ id: 1, name: 'South' }, { id: 2, name: 'North' }, { id: 3, name: 'North-East' }] }"
+         dx-validator="{ name: 'Building', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" dx-calendar="{}"
+         dx-validator="{ name: 'Check In Date', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" dx-date-box="{ value: undefined, pickerType: 'calendar', placeholder: 'Check Out', width: 200 }"
+         dx-validator="{ name: 'Check Out Date', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" dx-check-box="{ value: false,  text: 'I accept the terms' }"
+         dx-validator="{ name: 'Agreement', validationRules: [ { type: 'required' } ] }">
+    </div>
+    <div class="indentation" dx-validation-summary="{ }"></div>
+    <div dx-button="{ text: 'Validate and submit', onClick: validateAndSubmit }"></div>
+
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id ="container">
+    <div class="indentation" id="Name"></div>
+    <div class="indentation" id="Floor"></div>
+    <div class="indentation" id="Age"></div>
+    <div class="indentation" id="RoomType"></div>
+    <div class="indentation" id="RoomView"></div>
+    <div class="indentation" id="Building"></div>
+    <div class="indentation" id="CheckInDate"></div>
+    <div class="indentation" id="CheckOutDate"></div>
+    <div class="indentation" id="Agreement"></div>
+    <div class="indentation" id="summary"></div>
+    <div class="indentation" id="button"></div>
+</div>
+<!--/@jQuery-->

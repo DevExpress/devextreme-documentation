@@ -1,0 +1,6 @@
+To access a widget, you need to obtain its instance first. Note that the variable that will contain the widget instance should have a `DevExpress.ui.WidgetName` type. For example, see how you can obtain the instance of a **Button** widget.
+
+    var buttonInstance: DevExpress.ui.dxButton;
+    buttonInstance = $('#buttonContainer').dxButton('instance');
+
+Now that you have the widget instance, use jQuery to [get and set widget options](/concepts/10%20UI%20Widgets/0%20Basics/10%20Widget%20Basics%20-%20jQuery/05%20Get%20and%20Set%20Options.md '/Documentation/Guide/UI_Widgets/Basics/Widget_Basics_-_jQuery/#Get_and_Set_Options'), [call methods](/concepts/10%20UI%20Widgets/0%20Basics/10%20Widget%20Basics%20-%20jQuery/10%20Call%20Methods.md '/Documentation/Guide/UI_Widgets/Basics/Widget_Basics_-_jQuery/#Call_Methods') or [handle events](/concepts/10%20UI%20Widgets/0%20Basics/10%20Widget%20Basics%20-%20jQuery/15%20Handle%20Events.md '/Documentation/Guide/UI_Widgets/Basics/Widget_Basics_-_jQuery/#Handle_Events').

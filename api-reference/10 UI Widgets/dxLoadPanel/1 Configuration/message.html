@@ -1,0 +1,42 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{text: 'Load', onClick: startLoading}"></div>
+<div data-bind="dxLoadPanel:{
+    visible: loadPanelVisible,
+    message: loadMessage
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">delay</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            value: loadMessage
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{ text: 'Load', onClick: startLoading }"></div><br />
+    <div id="myLoadPanel" dx-load-panel="{ 
+        bindingOptions: { 
+            visible: 'loadPanelVisible',
+            message: 'loadMessage'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">delay</div>
+            <div class="dx-field-value" ng-model="loadMessage" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="loadButton"></div><br />
+<div id="myLoadPanel"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label"></div>
+        <div class="dx-field-value" id="messageField"></div>
+    </div>
+</div>
+<!--/@jQuery-->

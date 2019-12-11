@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTextBox: {
+    placeholder: 'Type your text here',
+    value: 'Your text',
+    readOnly: readOnlyValue
+}"></div><br/>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">readOnly</div>
+    <div class="dx-field-value" data-bind="dxSwitch: { value: readOnlyValue }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-text-box="{
+        placeholder: 'Type your text here',
+        value: 'Your text',
+        bindingOptions: {
+            readOnly: 'readOnlyValue'
+        }
+    }"></div><br/>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">readOnly</div>
+            <div class="dx-field-value" ng-model="readOnlyValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTextBox"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">readOnly</div>
+    <div class="dx-field-value" id="readOnlySelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

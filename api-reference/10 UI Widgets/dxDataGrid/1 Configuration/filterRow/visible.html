@@ -1,0 +1,38 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" data-bind="dxDataGrid: {
+    dataSource: orders,
+    columns: columns,
+    pager: { visible: false },
+    scrolling: { mode: 'infinite' },
+    filterRow: { visible: checkBoxState }
+}"></div>
+    <div data-bind="dxCheckBox: {
+    text: 'Show Filter Row',
+    value: checkBoxState
+}"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:380px" dx-data-grid="{
+        dataSource: orders,
+        columns: columns,
+        pager: { visible: false },
+        scrolling: { mode: 'infinite' },
+        filterRow: { visible: true },
+        bindingOptions: {
+            'filterRow.visible': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Show Filter Row'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:380px;"></div>
+    <div id="showFilterRowCheckbox"></div>
+</div>
+<!--/@jQuery-->

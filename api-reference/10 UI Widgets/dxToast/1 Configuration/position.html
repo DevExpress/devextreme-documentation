@@ -1,0 +1,100 @@
+<!--@Knockout-->
+<div data-bind="dxButton: {
+    text: 'Show toast',
+    onClick: showToast
+}"></div>
+<p style="text-align:center"><b>Position</b></p>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">my</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: positionValues,
+            value: myValue
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">at</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: positionValues,
+            value: atValue
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">offset</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            value: offsetValue
+        }"></div>
+    </div>
+</div>
+<div id="targetElement"></div>
+<div data-bind="dxToast: {
+    message: 'Toast message',
+    visible: toastVisible,
+    position: {
+        my: myValue(),
+        at: atValue(),
+        of: $('#targetElement'),
+        offset: offsetValue()
+    }
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-button="{
+        text: 'Show toast',
+        onClick: showToast
+    }"></div>
+    <p style="text-align:center"><b>Position</b></p>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">my</div>
+            <div class="dx-field-value" ng-model="myValue" dx-select-box="{
+                items: positionValues
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">at</div>
+            <div class="dx-field-value" ng-model="atValue" dx-select-box="{
+                items: positionValues
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">offset</div>
+            <div class="dx-field-value" ng-model="offsetValue" dx-text-box="{ }"></div>
+        </div>
+    </div>
+    <div id="targetElement"></div>
+    <div dx-toast="{
+        message: 'Toast message', 
+        position: {
+            of: '#targetElement'
+        },
+        bindingOptions: {
+            visible: 'toastVisible',
+            'position.my': 'myValue',
+            'position.at': 'atValue',
+            'position.offset': 'offsetValue'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="showButton"></div>
+<p style="text-align:center"><b>Position</b></p>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">my</div>
+        <div class="dx-field-value" id="mySelector"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">at</div>
+        <div class="dx-field-value" id="atSelector"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">offset</div>
+        <div class="dx-field-value" id="offsetSelector"></div>
+    </div>
+</div>
+<div id="targetElement"></div>
+<div id="myToast"></div>
+<!--/@jQuery-->

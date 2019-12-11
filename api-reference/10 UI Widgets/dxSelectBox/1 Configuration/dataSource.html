@@ -1,0 +1,53 @@
+﻿<!--@Knockout-->
+<div data-bind="dxSelectBox:{
+    dataSource: selectBoxData,
+    placeholder: 'Select a state',
+    displayExpr: 'name'
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        <p><b data-bind="text: name"></b> (<span data-bind="text: capital"></span>)</p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Sort by</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: ['name', 'capital'],
+            value: 'name',
+            onValueChanged: sortByChanged
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-select-box="{
+        dataSource: selectBoxData,
+        placeholder: 'Select a state',
+        displayExpr: 'name'
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            <p><b>{{itemObj.name}}</b> ({{itemObj.capital}})</p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Sort by</div>
+            <div class="dx-field-value" dx-select-box="{
+                items: ['name', 'capital'],
+                value: 'name',
+                onValueChanged: sortByChanged
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySelectBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Sort by</div>
+        <div class="dx-field-value" id="sortBySelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

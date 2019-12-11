@@ -1,0 +1,47 @@
+<!--@Knockout-->
+<div data-bind="dxTileView: {
+    dataSource: tileViewDataSource,
+    itemMargin: 10,
+    baseItemHeight: 150,
+    baseItemWidth: 200
+}">
+    <div class="tile" data-options="dxTemplate:{name:'item'}">
+        <div class="inlineElement">
+            <img data-bind="attr: { src: imagePath }"/>
+        </div>
+        <div class="inlineElement">
+            <b style="font-size: larger;" data-bind="text: name"></b>
+        </div>
+        <p>&nbsp;</p>
+        <p>Area: <i data-bind="text: area"></i> km2</p>
+        <p>Population: <i data-bind="text: population"></i></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-tile-view="{
+        dataSource: tileViewDataSource,
+        itemMargin: 10,
+        baseItemHeight: 150,
+        baseItemWidth: 200
+    }" dx-item-alias="itemObj">
+        <div class="tile" data-options="dxTemplate:{ name:'item' }">
+            <div class="inlineElement">
+                <img ng-attr-src="{{itemObj.imagePath}}" />
+            </div>
+            <div class="inlineElement">
+                <b style="font-size: larger;">{{itemObj.name}}</b>
+            </div>
+            <p>&nbsp;</p>
+            <p>Area: <i>{{itemObj.area}}</i> km2</p>
+            <p>Population: <i>{{itemObj.population}}</i></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTileView"></div>
+<!--/@jQuery-->

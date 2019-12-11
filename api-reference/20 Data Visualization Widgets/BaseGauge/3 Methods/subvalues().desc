@@ -1,0 +1,1 @@
+In this example, the **subvalues()** method is used to obtain a set of gauge subvalues. Initially, all the subvalues are set to 0. Click the button under the gauge to increase one of these subvalues by 1. The subvalue to be increased is chosen randomly.

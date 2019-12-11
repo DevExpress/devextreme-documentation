@@ -1,0 +1,27 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div data-bind="dxForm: {
+        formData: employee,
+        labelLocation: 'left',
+        colCount: 2,
+        onFieldDataChanged: notify
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div dx-form="{
+        formData: employee,
+        labelLocation: 'left',
+        colCount: 2,
+        bindingOptions: {
+            onFieldDataChanged: 'notify'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

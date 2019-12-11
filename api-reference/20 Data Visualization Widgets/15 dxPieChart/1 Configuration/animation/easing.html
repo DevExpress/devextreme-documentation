@@ -1,0 +1,23 @@
+﻿<!--@jQuery-->
+<div id="pieChartContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>animation | easing:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="pieChartContainer" data-bind="dxPieChart: pieChartOptions"></div>
+<div class="inline" style="text-align:center">
+    <div>animation | easing:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: selectBoxOptions"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pieChartController">
+    <div id="pieChartContainer" dx-pie-chart="pieChartOptions"></div>
+    <div class="inline" style="text-align:center">
+        <div>animation | easing:&nbsp;</div>
+        <div id="selectBoxContainer" dx-select-box="selectBoxOptions"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

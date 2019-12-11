@@ -1,0 +1,50 @@
+<!--@Knockout-->
+<p>&nbsp;</p>
+<p>Text box with <b>useMaskedValue</b> set to <b>true</b></p>
+<div data-bind="dxTextBox: {
+    mask: '+1(000)000-0000',
+    useMaskedValue: true,
+    valueChangeEvent: 'keyup',
+    value: currentValue1
+}"></div>
+<p>Value: "<i data-bind="text: currentValue1"></i>"</p>
+<p>&nbsp;</p>
+<p>Text box with <b>useMaskedValue</b> set to <b>false</b></p>
+<div data-bind="dxTextBox: {
+    mask: '+1(000)000-0000',
+    useMaskedValue: false,
+    valueChangeEvent: 'keyup',
+    value: currentValue2
+}"></div>
+<p>Value: "<i data-bind="text: currentValue2"></i>"</p>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <p>&nbsp;</p>
+    <p>Text box with <b>useMaskedValue</b> set to <b>true</b></p>
+    <div ng-model="currentValue1" dx-text-box="{
+        mask: '+1(000)000-0000',
+        valueChangeEvent: 'keyup',
+        useMaskedValue: true
+    }"></div>
+    <p>Current value: "<i>{{currentValue1}}</i>"</p>
+    <p>&nbsp;</p>
+    <p>Text box with <b>useMaskedValue</b> set to <b>false</b></p>
+    <div ng-model="currentValue2" dx-text-box="{
+        mask: '+1(000)000-0000',
+        valueChangeEvent: 'keyup',
+        useMaskedValue: false
+    }"></div>
+    <p>Current value: "<i>{{currentValue2}}</i>"</p>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>&nbsp;</p>
+<p>Text box with <b>useMaskedValue</b> set to <b>true</b></p>
+<div id="myTextBox1"></div>
+<p>Value: "<i id="currentValue1"></i>"</p>
+<p>&nbsp;</p>
+<p>Text box with <b>useMaskedValue</b> set to <b>false</b></p>
+<div id="myTextBox2"></div>
+<p>Value: "<i id="currentValue2"></i>"</p>
+<!--/@jQuery-->

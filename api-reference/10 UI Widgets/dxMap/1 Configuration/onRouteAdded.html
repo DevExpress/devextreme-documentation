@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div id="myMap" data-bind="dxMap: {
+    onClick: processClick,
+    onMarkerAdded: markerAdded,
+    onRouteAdded: routeAdded,
+    onRouteRemoved: routeRemoved,
+    center: 'USA',
+    zoom: 3,
+    width: '100%'
+}"></div>
+<p class="hint">Create two markers to generate a route. To create a marker click the map.</p>
+<div class="button" data-bind="dxButton: { text: 'Remove last route', onClick: removeRoute }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="myMap" dx-map="{
+        onClick: processClick,
+        onMarkerAdded: markerAdded,
+        onRouteAdded: routeAdded,
+        onRouteRemoved: routeRemoved,
+        center: 'USA',
+        zoom: 3,
+        width: '100%'
+    }"></div>
+    <p class="hint">Create two markers to generate a route. To create a marker click the map.</p>
+    <div dx-button="{ text: 'Remove last route', onClick: removeRoute }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myMap"></div>
+<p class="hint">Create two markers to generate a route. To create a marker click the map.</p>
+<div id="removeButton"></div>
+<!--/@jQuery-->

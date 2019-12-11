@@ -1,0 +1,1 @@
+﻿In this example, a callback function is assigned to the **onCellHoverChanged** property. Within this function a CSS style is applied to a cell when it is hovered over. Once the cell is hovered out, the style is removed. Thus, this callback function implements a custom hot-track feature for grid cells.

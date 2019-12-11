@@ -1,0 +1,1 @@
+﻿In this example, an image of a plane is displayed in the background. The image's **url** option is used to set the path to this image. The image's **location** option is changed to 'rightTop'.

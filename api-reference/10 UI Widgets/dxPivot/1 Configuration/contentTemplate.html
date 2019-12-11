@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div data-bind="dxPivot: {
+    dataSource: pivotData,
+    contentTemplate: 'customTemplate',
+    onSelectionChanged: selectionChanged
+}">
+    <div data-options="dxTemplate : { name: 'customTemplate' } ">
+        <div data-bind="dxList: { dataSource: listData }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <div data-bind="text: name"></div>
+                <div data-bind="text: phone"></div>
+                <div data-bind="text: email"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-pivot="{
+        dataSource: pivotData,
+        contentTemplate: 'customTemplate',
+        onSelectionChanged: selectionChanged
+    }">
+        <div data-options="dxTemplate : { name: 'customTemplate' } ">
+            <div dx-list="{ dataSource: listData }" dx-item-alias="itemObj">
+                <div data-options="dxTemplate : { name: 'item' } ">
+                    <div>{{itemObj.name}}</div>
+                    <div>{{itemObj.phone}}</div>
+                    <div>{{itemObj.email}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myPivot"></div>
+<!--/@jQuery-->

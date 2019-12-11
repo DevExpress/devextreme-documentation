@@ -1,0 +1,1 @@
+﻿In this example, the text displayed by the load panel is changed using the **loadPanel** | **text** option. To see the changes, refresh the grid's data source by clicking the *"Refresh"* button. Data for this example are obtained from *www.odata.org*.

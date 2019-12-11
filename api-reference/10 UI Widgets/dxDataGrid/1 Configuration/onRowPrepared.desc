@@ -1,0 +1,1 @@
+﻿In this example, all grid records that represent books written in the 19th century are colored in *silver* using the handler assigned to the **onRowPrepared** property.

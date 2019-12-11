@@ -1,0 +1,1 @@
+In this example, you can enable/disable paging in a grid using the check box below. When paging is enabled, the grid is supplied with a pager to help a user navigate through grid records. Otherwise, only scrolling is available. Also, note that in this setting, the grid operates noticeably slower. The data for this example is obtained from *www.odata.org*.

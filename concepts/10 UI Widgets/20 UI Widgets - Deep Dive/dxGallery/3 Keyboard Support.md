@@ -1,0 +1,1 @@
+An end-user can use the Left/Right arrow key to display previous/next item.

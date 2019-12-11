@@ -1,0 +1,1 @@
+﻿In this example, tooltips display the name of the area that is currently hovered over. The tooltips' borders are colored in *'royalblue'* using the **border** | **color** option. In addition, the tooltips' font color is set to *'dodgerblue'* using the **font** | **color** option.

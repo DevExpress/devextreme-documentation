@@ -1,0 +1,42 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: columns,
+    paging: { pageSize: 8 },
+    pager: {
+        allowedPageSizes: [5, 8, 10],
+        showPageSizeSelector: checkBoxState
+    }
+}"></div>
+    <div data-bind="dxCheckBox: {
+    text: 'Show Page Size Selector',
+    value: checkBoxState
+}"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" dx-data-grid="{
+        dataSource: books,
+        columns: columns,
+        paging: { pageSize: 8 },
+        pager: {
+            allowedPageSizes: [5, 8, 10],
+            showPageSizeSelector: true
+        },
+        bindingOptions: {
+            'pager.showPageSizeSelector': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Show Page Size Selector'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:360px;"></div>
+    <div id="showPageSizeSelectorCheckbox"></div>
+</div>
+<!--/@jQuery-->

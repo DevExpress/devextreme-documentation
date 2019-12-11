@@ -1,0 +1,66 @@
+﻿<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Maxlength</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            maxLength: length,
+            placeholder: lengthDescription
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Password</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            mode: passMode,
+            placeholder: secretDescription
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Read-only</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            readOnly: readonly,
+            value: readonlyDescription
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Maxlength</div>
+        <div class="dx-field-value" dx-text-box="{
+            maxLength: length,
+            placeholder: lengthDescription
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Password</div>
+        <div class="dx-field-value" dx-text-box="{
+            mode: passMode,
+            placeholder: secretDescription
+        }"></div>
+    </div>
+        <div class="dx-field">
+        <div class="dx-field-label">Read-only</div>
+        <div class="dx-field-value" dx-text-box="{
+            readOnly: readonly,
+            value: readonlyDescription
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Maxlength</div>
+        <div class="dx-field-value" id="myTextBox1"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Password</div>
+        <div class="dx-field-value" id="myTextBox2"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Read-only</div>
+        <div class="dx-field-value" id="myTextBox3"></div>
+    </div>
+</div>
+<!--/@jQuery-->

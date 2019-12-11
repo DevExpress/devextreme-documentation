@@ -1,0 +1,1 @@
+In this example, a custom theme is implemented and applied to a gauge. In addition, you can change the type of the value indicator using the drop-down menu under the gauge. Note that options for the value indicator of each type are specified in separate objects within the **gauge** | **valueIndicator** configuration object.

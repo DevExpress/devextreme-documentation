@@ -1,0 +1,56 @@
+<!--@Knockout-->
+<div class="box" data-bind="dxBox:{
+    direction: directionValue,
+    height: '40%',
+    width: '90%'
+}">
+    <div id="item1" data-options="dxItem:{ ratio: 2 }"><p></p></div>
+    <div id="item2" data-options="dxItem:{ ratio: 4 }"><p></p></div>
+    <div id="item3" data-options="dxItem:{ ratio: 3 }"><p></p></div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">direction</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: {
+        dataSource: directionValues,
+        value: directionValue
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="box" dx-box="{
+        height: '40%',
+        width: '90%',
+        bindingOptions: {
+            direction: 'directionValue'
+        }
+    }">
+        <div id="item1" data-options="dxItem:{ ratio: 2 }"><p></p></div>
+        <div id="item2" data-options="dxItem:{ ratio: 4 }"><p></p></div>
+        <div id="item3" data-options="dxItem:{ ratio: 3 }"><p></p></div>
+    </div>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">direction</div>
+          <div class="dx-field-value" ng-model="directionValue" dx-select-box="{
+            dataSource: directionValues
+        }"></div>
+      </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="box" id="myBox">
+    <div id="item1" data-options="dxItem:{ ratio: 2 }"><p></p></div>
+    <div id="item2" data-options="dxItem:{ ratio: 4 }"><p></p></div>
+    <div id="item3" data-options="dxItem:{ ratio: 3 }"><p></p></div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">direction</div>
+    <div class="dx-field-value" id="directionSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

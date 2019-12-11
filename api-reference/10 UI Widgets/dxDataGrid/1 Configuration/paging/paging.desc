@@ -1,0 +1,1 @@
+In this example, fields of the **paging** object are used to specify paging settings. The size of a grid page is set to 8 records using the **paging** | **pageSize** option. In addition, the index of a start page is specified using the **paging** | **pageIndex** option. Data for this example is obtained from *www.odata.org*.

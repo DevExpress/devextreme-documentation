@@ -1,0 +1,9 @@
+<!--@jQuery-->
+To see this example, change the binding approach to *AngularJS*.
+<!--/@jQuery-->
+<!--@Knockout-->
+To see this example, change the binding approach to *AngularJS*.
+<!--/@Knockout-->
+<!--@AngularJS-->
+In this example, the **Sparkline** widget refreshes itself automatically when its data source is updated. The data source is declared as a variable of the scope and bound to the widget using the **bindingOptions** object.
+<!--/@AngularJS-->

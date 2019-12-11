@@ -1,0 +1,1 @@
+﻿Click a point to select it. Then, click it once again to deselect it. The deselection is performed using the **clearSelection()** method.

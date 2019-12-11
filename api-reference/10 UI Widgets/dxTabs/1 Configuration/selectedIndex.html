@@ -1,0 +1,53 @@
+<!--@Knockout-->
+<div data-bind="dxTabs: {
+    dataSource: tabs,
+    onSelectionChanged: selectionChanged,
+    selectedIndex: selectedTab
+}"></div>
+<div class="tabContent" data-bind="text: tabContent"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectedIndex</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: -1,
+            max: 2,
+            showSpinButtons: true,
+            value: selectedTab
+        }"></div>
+    </div>
+</div>
+
+
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-tabs="{
+        dataSource: tabs,
+        onSelectionChanged: selectionChanged,
+        bindingOptions: {
+            selectedIndex: 'selectedTab'
+        }
+    }"></div>
+    <div class="tabContent">{{tabContent}}</div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">selectedIndex</div>
+            <div class="dx-field-value" ng-model="selectedTab" dx-number-box="{
+                min: -1,
+                max: 2,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTabs"></div>
+<div class="tabContent" id="myTabContent">Select a tab</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectedIndex</div>
+        <div class="dx-field-value" id="indexBox"></div>
+    </div>
+</div>
+<!--/@jQuery-->

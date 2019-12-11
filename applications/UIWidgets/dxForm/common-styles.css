@@ -1,0 +1,11 @@
+﻿body{
+    text-align:center;
+}
+#background{
+    max-width: 600px;
+}
+.dx-form{
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #eee;
+}

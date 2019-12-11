@@ -1,0 +1,75 @@
+﻿<!--@jQuery-->
+<div id="chartContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>discreteAxisDivisionMode:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'year'
+    },
+    series: [
+        { valueField: 'europe', name: 'Europe' },
+        { valueField: 'americas', name: 'Americas' },
+        { valueField: 'africa', name: 'Africa' }
+    ],
+    valueAxis: {
+        label: { format: 'largeNumber' }
+    },
+    animation: false,
+    argumentAxis: {
+        type: 'discrete',
+        grid: { visible: true },
+        position: 'top'
+    },
+    commonAxisSettings: {
+        discreteAxisDivisionMode: selectBoxValue
+    }
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>discreteAxisDivisionMode:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: {
+        items: ['betweenLabels', 'crossLabels'],
+        value: selectBoxValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" dx-chart="{
+        dataSource: data,
+        commonSeriesSettings: {
+            argumentField: 'year'
+        },
+        series: [
+            { valueField: 'europe', name: 'Europe' },
+            { valueField: 'americas', name: 'Americas' },
+            { valueField: 'africa', name: 'Africa' }
+        ],
+        valueAxis: {
+            label: { format: 'largeNumber' }
+        },
+        animation: false,
+        argumentAxis: {
+            type: 'discrete',
+            grid: { visible: true },
+            position: 'top'
+        },
+        commonAxisSettings: {
+            discreteAxisDivisionMode: 'betweenLabels'
+        },
+        bindingOptions: {
+            'commonAxisSettings.discreteAxisDivisionMode': 'selectBoxValue'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>discreteAxisDivisionMode:&nbsp;</div>
+        <div id="selectBoxContainer" ng-model="selectBoxValue" dx-select-box="{
+            items: ['betweenLabels', 'crossLabels']
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

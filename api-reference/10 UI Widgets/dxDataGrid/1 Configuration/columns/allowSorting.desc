@@ -1,0 +1,1 @@
+In this example, you can sort grid records by any column, except *"Customer ID"* and *"Ship Name"*. For these columns, sorting is disabled using the **allowSorting** option set to *false*. To sort grid records by any other column, click its header.

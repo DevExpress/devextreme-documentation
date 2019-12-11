@@ -1,0 +1,26 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div class="target" id="contextMenuTarget"></div>
+    <div data-bind="dxContextMenu: {
+        items: menuItems,
+        target: '#contextMenuTarget',
+        onShown: menuShown
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="target" id="contextMenuTarget"></div>
+    <div dx-context-menu="{
+        items: menuItems,
+        target: '#contextMenuTarget',
+        onShown: menuShown
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="target" id="contextMenuTarget"></div>
+    <div id="myContextMenu"></div>
+</div>
+<!--/@jQuery-->

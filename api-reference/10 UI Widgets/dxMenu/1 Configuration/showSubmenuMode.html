@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div style="width: 100%; height: 100%;">
+        <div data-bind="dxMenu: { 
+            items: menuItems,
+            showSubmenuMode: currentMode
+        }"></div>
+    </div>
+    <div class="option">
+        <div>showSubmenuMode</div>
+        <div data-bind="dxSelectBox: {
+            items: modeValues,
+            value: currentMode
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div style="width: 100%; height: 100%;">
+        <div dx-menu="{
+            items: menuItems,
+            bindingOptions: {
+                showSubmenuMode: 'currentMode'
+            }
+        }"></div>
+    </div>
+    <div class="option">
+        <div>showSubmenuMode</div>
+        <div ng-model="currentMode" dx-select-box="{
+            items: modeValues
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div style="width: 100%; height: 100%;">
+        <div id="myMenu"></div>
+    </div>
+    <div class="option">
+        <div>showSubmenuMode</div>
+        <div id="modeSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

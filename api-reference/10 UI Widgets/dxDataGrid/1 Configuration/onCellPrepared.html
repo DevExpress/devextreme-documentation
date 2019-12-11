@@ -1,0 +1,25 @@
+<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: beers,
+    columns: [
+        'name', 'beer_style', 'alcohol_content', 'brewery_brand', 'from_region'
+    ],
+    paging: { pageSize: 8 },
+    onCellPrepared: onCellPrepared
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:390px; max-width:630px; margin: 0 auto">
+    <div dx-data-grid="{
+        dataSource: beers,
+        columns: [
+            'name', 'beer_style', 'alcohol_content', 'brewery_brand', 'from_region'
+        ],
+        paging: { pageSize: 8 },
+        onCellPrepared: onCellPrepared
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

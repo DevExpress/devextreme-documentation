@@ -1,0 +1,1 @@
+﻿In this example, the **option(options)** method is used to alter a set of options at once. To change the values of the **behavior | allowSlidersSwap** and **scale | showMinorTicks** options, use the check box below.

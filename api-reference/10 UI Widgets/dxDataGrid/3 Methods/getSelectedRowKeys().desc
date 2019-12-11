@@ -1,0 +1,1 @@
+In this example, the button located under the grid calls the **getSelectedRowKeys()** method of the grid. In the area between the grid and the button, you can see the contents of the array returned by this method.

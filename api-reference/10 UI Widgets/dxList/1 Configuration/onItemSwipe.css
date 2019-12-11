@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+.hint{
+    padding: 10px;
+    border-bottom: 1px solid red;
+    color: blue;
+    background-color: #ffe;
+    font-size: large;
+}

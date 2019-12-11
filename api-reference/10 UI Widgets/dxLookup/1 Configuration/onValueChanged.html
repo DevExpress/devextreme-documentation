@@ -1,0 +1,25 @@
+<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    valueExpr: 'capital',
+    title: 'States',
+    fullScreen: false,
+    onValueChanged: lookupValueChanged
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        valueExpr: 'capital',
+        title: 'States',
+        fullScreen: false,
+        onValueChanged: lookupValueChanged
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<!--/@jQuery-->

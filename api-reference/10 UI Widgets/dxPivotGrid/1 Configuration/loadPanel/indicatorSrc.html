@@ -1,0 +1,102 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:180px; max-width:750px; margin:0 auto"></div>
+<div style="height:80px; text-align:center">
+    Choose a Loading Indicator:&nbsp;
+    <div id="radioGroupContainer" style="display:inline-block; vertical-align:middle"></div>
+    <div id="buttonContainer" style="display:block; margin:0 auto; margin-top:10px"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:180px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: {
+        fields: [
+            { dataField: '[Product].[Category]', area: 'row' },
+            { dataField: '[Product].[Subcategory]', area: 'row' },
+            { dataField: '[Ship Date].[Calendar Year]', area: 'column' },
+            { dataField: '[Ship Date].[Month of Year]', area: 'column' },
+            { dataField: '[Measures].[Customer Count]', area: 'data' }
+        ],
+        store: {
+            type: 'xmla',
+            url: 'https://demos.devexpress.com/Services/OLAP/msmdpump.dll',
+            catalog: 'Adventure Works DW Standard Edition',
+            cube: 'Adventure Works'
+        }
+    },
+    fieldChooser: { enabled: false },
+    loadPanel: {
+        indicatorSrc: indicatorSrc
+    },
+    onInitialized: function (e) {
+        pivotGridInstance = e.component;
+    }
+}"></div>
+<div style="height:80px; text-align:center">
+    Choose a Loading Indicator:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxRadioGroup: {
+        dataSource: [
+            { name: '1', value: '/Content/data/loadingIcons/default.svg' },
+            { name: '2', value: '/Content/data/loadingIcons/ring.svg' },
+            { name: '3', value: '/Content/data/loadingIcons/rolling.svg' }
+        ],
+        valueExpr: 'value',
+        displayExpr: 'name', 
+        value: indicatorSrc,
+        layout: 'horizontal'
+    }"></div>
+    <div style="display:block; margin:0 auto; margin-top:10px" data-bind="dxButton: {
+        text: 'Reload Data',
+        width: 150,
+        onClick: function (e) {
+            pivotGridInstance.getDataSource().load();
+        }
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:180px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: {
+            fields: [
+                { dataField: '[Product].[Category]', area: 'row' },
+                { dataField: '[Product].[Subcategory]', area: 'row' },
+                { dataField: '[Ship Date].[Calendar Year]', area: 'column' },
+                { dataField: '[Ship Date].[Month of Year]', area: 'column' },
+                { dataField: '[Measures].[Customer Count]', area: 'data' }
+            ],
+            store: {
+                type: 'xmla',
+                url: 'https://demos.devexpress.com/Services/OLAP/msmdpump.dll',
+                catalog: 'Adventure Works DW Standard Edition',
+                cube: 'Adventure Works'
+            }
+        },
+        fieldChooser: { enabled: false },
+        onInitialized: savePivotGridInstance,
+        bindingOptions: {
+            'loadPanel.indicatorSrc': 'indicatorSrc'
+        }
+    }"></div>
+    <div style="height:80px; text-align:center">
+        Choose a Loading Indicator:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" dx-radio-group="{
+            dataSource: [
+                { name: '1', value: '/Content/data/loadingIcons/default.svg' },
+                { name: '2', value: '/Content/data/loadingIcons/ring.svg' },
+                { name: '3', value: '/Content/data/loadingIcons/rolling.svg' }
+            ],
+            valueExpr: 'value',
+            displayExpr: 'name', 
+            layout: 'horizontal',
+            bindingOptions: {
+                value: 'indicatorSrc'
+            }
+        }"></div>
+        <div style="display:block; margin:0 auto; margin-top:10px" dx-button="{
+            text: 'Reload Data',
+            width: 150,
+            onClick: reloadData
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

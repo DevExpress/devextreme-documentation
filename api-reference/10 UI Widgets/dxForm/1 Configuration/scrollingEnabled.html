@@ -1,0 +1,43 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="option">
+        <div data-bind="dxCheckBox: {
+            text: 'scrollingEnabled',
+            value: scrollingEnabled
+    }"></div>
+    </div>
+    <div data-bind="dxForm: {
+        formData: employee,
+        labelLocation: 'left',
+        height: 200,
+        colCount: 1,
+        scrollingEnabled: scrollingEnabled
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="option">
+        <div ng-model="scrollingEnabled" dx-check-box="{
+            text: 'scrollingEnabled'
+        }"></div>
+    </div>
+    <div dx-form="{
+        formData: employee,
+        labelLocation: 'left',
+        colCount: 1,
+        height: 200,
+        bindingOptions: {
+            scrollingEnabled: 'scrollingEnabled'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="option">
+        <div id="scrollingEnabledCheckBox"></div>
+    </div>
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

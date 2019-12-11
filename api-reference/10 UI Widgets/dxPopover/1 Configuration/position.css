@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+.dx-overlay-content{
+    padding: 0 !important;
+}
+.dx-list-item-content{
+    padding: 10px 0 10px 0;
+}
+.target{
+    margin: 200px 0 50px 0;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: solid 1px grey;
+}

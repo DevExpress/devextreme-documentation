@@ -1,0 +1,75 @@
+<!--@Knockout-->
+<div data-bind="dxTileView: {
+    dataSource: tiles,
+    height: 300,
+    baseItemHeight: baseHeight,
+    baseItemWidth: baseWidth
+}">
+    <div class="tile" data-options="dxTemplate:{ name:'item' }">
+        <p data-bind="text:id"></p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <p>Base item height = <span data-bind="text: baseHeight"></span></p>
+        <div data-bind="dxSlider: { 
+            value: baseHeight,
+            min: 10,
+            max: 30
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <p>Base item width = <span data-bind="text: baseWidth"></span></p>
+        <div data-bind="dxSlider: {
+            value: baseWidth,
+            min: 10,
+            max: 30
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-tile-view="{
+        dataSource: tiles,
+        height: 300,
+        bindingOptions: {
+            baseItemHeight: 'baseHeight',
+            baseItemWidth: 'baseWidth'
+        }
+    }" dx-item-alias="itemObj">
+        <div class="tile" data-options="dxTemplate:{ name:'item' }">
+            <p>{{itemObj.id}}</p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <p>Base item height = {{baseHeight}}</p>
+            <div ng-model="baseHeight" dx-slider="{
+                min: 10,
+                max: 30
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <p>Base item width = {{baseWidth}}</p>
+            <div ng-model="baseWidth" dx-slider="{
+                min: 10,
+                max: 30
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTileView"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <p>Base item height = <span id="heightValue">20</span></p>
+        <div id="heightSelector"></div>
+    </div>
+    <div class="dx-field">
+        <p>Base item width = <span id="widthValue">20</span></p>
+        <div id="widthSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,31 @@
+<!--@Knockout-->
+<div data-bind="dxNavBar:{
+    dataSource: navItems,
+    selectedIndex: 0,
+    itemTemplate: 'customTemplate'
+}">
+    <div data-options="dxTemplate: { name: 'customTemplate' }">
+        <div data-bind="attr: { class: 'icon dx-icon-' + icon }">
+            <p>&nbsp</p>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-nav-bar="{
+        dataSource: navItems,
+        selectedIndex: 0,
+        itemTemplate: 'customTemplate'
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'customTemplate' }">
+            <div ng-attr-class="{{'icon dx-icon-' + itemObj.icon}}">
+                <p>&nbsp</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myNavBar"></div>
+<!--/@jQuery-->

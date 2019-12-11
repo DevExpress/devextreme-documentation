@@ -1,0 +1,1 @@
+﻿In this demo, you can specify the text of the _"Collapse All"_ menu item at runtime. Type any text in the text box below the pivot grid. Then, right-click any row or column header to invoke the context menu. The _"Collapse All"_ item from that menu will display the specified text.

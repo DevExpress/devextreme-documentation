@@ -1,0 +1,48 @@
+﻿<!--@Knockout-->
+<div data-bind="dxCalendar: { firstDayOfWeek: firstDayOfWeekValue }"></div> 
+<div class="dx-fieldset">
+    <div class="dx-field-label">
+        firstDayOfWeek
+    </div>
+    <div class="dx-field-value">
+        <div data-bind="dxNumberBox: { 
+            value: firstDayOfWeekValue,
+            min: 0,
+            max: 6,
+            showSpinButtons: true
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-calendar="{ 
+        bindingOptions: { 
+            firstDayOfWeek: 'firstDayOfWeekValue'
+        }
+    }"></div> 
+    <div class="dx-fieldset">
+        <div class="dx-field-label">
+            firstDayOfWeek
+        </div>
+        <div class="dx-field-value">
+            <div ng-model="firstDayOfWeekValue" dx-number-box="{
+                min: 0,
+                max: 6,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myCalendar"></div> 
+<div class="dx-fieldset">
+    <div class="dx-field-label">
+        firstDayOfWeek
+    </div>
+    <div class="dx-field-value">
+        <div id="firstDaySelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,20 @@
+body{
+  text-align: center;
+}
+.demo-page{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.demo-page > div{
+    display: inline-block;
+    background-color: #F0F0F0;
+    margin: 10px;
+    height: 250px;
+}
+.customClass .dx-submenu .dx-menu-item{
+    background-color: #ffc;
+    border-bottom: 1px dotted rgba(0,0,0,.2);
+}
+.customClass .dx-submenu li:last-child .dx-menu-item {
+    border: none;
+}

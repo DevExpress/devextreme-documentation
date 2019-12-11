@@ -1,0 +1,16 @@
+﻿#treeMapContainer {
+    height: 350px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#rangeSliderContainer {
+    height: 50px;
+    width: 200px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.inline > div {
+    display: inline-block;
+}

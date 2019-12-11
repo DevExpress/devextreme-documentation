@@ -1,0 +1,1 @@
+In this example, you can perform all kinds of data modifications available in the **DataGrid** widget: row editing, insertion and removal. These operations are conducted in the batch edit mode. All these settings are specified using the fields of the **editing** configuration object.

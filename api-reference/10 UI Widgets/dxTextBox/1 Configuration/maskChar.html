@@ -1,0 +1,92 @@
+<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Zip code</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            mask: '000000',
+            maskChar: currentChar
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Phone number</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            mask: '+1(999)000-0000',
+            maskChar: currentChar
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Price</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            mask: '$9999,00',
+            maskChar: currentChar
+        }"></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">maskChar</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            value: currentChar
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Zip code</div>
+        <div class="dx-field-value" dx-text-box="{
+            mask: '000000',
+            bindingOptions: {
+                maskChar: 'currentChar'
+            }
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Phone number</div>
+        <div class="dx-field-value" dx-text-box="{
+            mask: '+1(999)000-0000',
+            bindingOptions: {
+                maskChar: 'currentChar'
+            }
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Price</div>
+        <div class="dx-field-value" dx-text-box="{
+            mask: '$9999,00',
+            bindingOptions: {
+                maskChar: 'currentChar'
+            }
+        }"></div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">maskChar</div>
+            <div class="dx-field-value" ng-model="currentChar" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Zip code</div>
+        <div class="dx-field-value" id="zip"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Phone number</div>
+        <div class="dx-field-value" id="phone"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Price</div>
+        <div class="dx-field-value" id="price"></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">maskChar</div>
+        <div class="dx-field-value" id="charSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

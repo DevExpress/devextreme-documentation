@@ -1,0 +1,1 @@
+﻿In this example, the filter row is made visible by setting the **filterRow** | **visible** option to *true*. In addition, a filter operation is selected for each grid column from code using the **selectedFilterOperation** option. This operation can not be changed at runtime, because the **filterRow** | **showOperationChooser** option is set to *false*.

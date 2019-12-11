@@ -1,0 +1,1 @@
+In this example, grid records appear sorted first by the *"Author"* column and then by the *"Year"* column. This sequence of applying sorting to columns is specified using the **sortIndex** option.

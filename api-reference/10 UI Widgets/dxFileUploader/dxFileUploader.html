@@ -1,0 +1,19 @@
+﻿<!--@Knockout-->
+<div class="uploader" data-bind="dxFileUploader: {
+    multiple: true,
+    uploadMode: 'useButtons',
+    uploadUrl: '/Content/Services/upload.aspx'
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="uploader" dx-file-uploader="{
+        multiple: true,
+        uploadMode: 'useButtons',
+        uploadUrl: '/Content/Services/upload.aspx'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="uploader" id="myFileUploader"></div>
+<!--/@jQuery-->

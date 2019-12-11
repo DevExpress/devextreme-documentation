@@ -1,0 +1,1 @@
+﻿In this example, you can change the **showCustomBoundaryTicks** option using the check box below. Here, when this option is set to *'true'*, the tick at the right boundary of the scale is set. Otherwise, this tick is not generated, and you can not select the whole scale as the scale's **snapToTicks** option is set to *'true'*.

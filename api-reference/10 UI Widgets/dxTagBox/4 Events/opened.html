@@ -1,0 +1,28 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to Closed event', onClick: clickHandler }"></div>
+<div class="tagBox" data-bind="dxTagBox:{
+    dataSource: tagBoxData,
+    placeholder: 'Select states',
+    displayExpr: 'name',
+    valueExpr: 'capital',
+    value: capitals,
+    onInitialized: initializedHandler
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to Closed event', onClick: clickHandler }"></div>
+    <div class="tagBox" dx-tag-box="{
+        dataSource: tagBoxData,
+        placeholder: 'Select states',
+        displayExpr: 'name',
+        valueExpr: 'capital',
+        onInitialized: initializedHandler,
+        value: capitals
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div class="tagBox" id="myTagBox"></div>
+<!--/@jQuery-->

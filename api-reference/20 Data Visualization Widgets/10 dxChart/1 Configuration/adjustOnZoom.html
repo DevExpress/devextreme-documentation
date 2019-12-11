@@ -1,0 +1,54 @@
+﻿<!--@jQuery-->
+<div id="chartContainer" style="height:350px; max-width:800px; margin:0 auto"></div>
+<div id="rangeSelectorContainer" style="height:150px; max-width:800px; margin:0 auto"></div>
+<div style="text-align:center">
+    <div id="checkBoxContainer" style="margin-top:5px"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" style="height:350px; max-width:800px; margin:0 auto" data-bind="dxChart: {
+    dataSource: data,
+    series: seriesSettings,
+    legend: { visible: false },
+    adjustOnZoom: checkBoxState
+}"></div>
+<div style="height:150px; max-width:800px; margin:0 auto" data-bind="dxRangeSelector: {
+    dataSource: data,
+    chart: {
+        series: seriesSettings
+    },
+    behavior: { callSelectedRangeChanged: 'onMoving' },
+    onSelectedRangeChanged: zoomChart
+}"></div>
+<div style="text-align:center">
+    <div style="margin-top:5px" data-bind="dxCheckBox: {
+        text: 'adjustOnZoom',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" style="height:350px; max-width:800px; margin:0 auto" dx-chart="{
+        dataSource: data,
+        series: seriesSettings,
+        legend: { visible: false },
+        bindingOptions: {
+            adjustOnZoom: 'checkBoxState'
+        }
+    }"></div>
+    <div style="height:150px; max-width:800px; margin:0 auto" dx-range-selector="{
+        dataSource: data,
+        chart: {
+            series: seriesSettings
+        },
+        behavior: { callSelectedRangeChanged: 'onMoving' },
+        onSelectedRangeChanged: zoomChart
+    }"></div>
+    <div style="text-align:center">
+        <div style="margin-top:5px" ng-model="checkBoxState" dx-check-box="{
+            text: 'adjustOnZoom'
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

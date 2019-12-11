@@ -1,0 +1,1 @@
+In the example below, the fist category, "N" (north), is displayed directly to the north of the chart, because the "firstPointOnStartAngle" option is set to true and the start angle coincides with the north direction.

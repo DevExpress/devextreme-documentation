@@ -1,0 +1,18 @@
+﻿.dx-slideoutview-content{
+    background-color: grey;
+}
+h1{
+    padding: 10px;
+    background-color: #399;
+    color: white !important;
+    text-align: center;
+}
+h2{
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px red;
+}
+p{
+    margin: 10px;
+    font-size: larger;
+}

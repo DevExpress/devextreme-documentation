@@ -1,0 +1,13 @@
+.wrapper{
+    padding: 20px;
+}
+.checkBox{
+    margin: 10px;
+}
+.item-body{
+    background-color:white;
+    border: solid 1px gray;
+}
+.dx-button {
+    margin-bottom: 10px;
+}

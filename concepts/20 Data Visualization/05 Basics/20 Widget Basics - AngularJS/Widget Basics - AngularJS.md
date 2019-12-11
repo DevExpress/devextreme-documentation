@@ -1,0 +1,5 @@
+[note]This article assumes that you have successfully linked all the necessary scripts. If not, read the [Installation](/concepts/20%20Data%20Visualization/05%20Basics/01%20Installation '/Documentation/Guide/Data_Visualization/Basics/Installation/') guide first.
+
+From this article, you will learn how to perform basic operations on a DevExtreme widget using the AngularJS framework. Similar articles are available for the [jQuery](/concepts/20%20Data%20Visualization/05%20Basics/10%20Widget%20Basics%20-%20jQuery '/Documentation/Guide/Data_Visualization/Basics/Widget_Basics_-_jQuery/') library and the [Knockout](/concepts/20%20Data%20Visualization/05%20Basics/30%20Widget%20Basics%20-%20Knockout '/Documentation/Guide/Data_Visualization/Basics/Widget_Basics_-_Knockout/') framework.
+
+[note]DevExtreme provides a CTP version of the [Angular 2 integration module](https://github.com/DevExpress/devextreme-angular2). This version is available for your evaluation, yet it has certain issues that are in the process of being addressed. Keep track of them or post a newly-found one on [this GitHub page](https://github.com/DevExpress/devextreme-angular2/issues).

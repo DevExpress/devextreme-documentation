@@ -1,0 +1,38 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { onClick: togglePopover, text: 'Choose color' }"></div>
+<div data-bind="dxPopover: {
+    width: 200,
+    height: 'auto',
+    visible: visible,
+    target: '.dx-button',
+    onShown: popoverShown,
+    onHidden: popoverHidden
+}">
+    <div data-options="dxTemplate: {name: 'content'}">
+        <div data-bind="dxList: { dataSource: colors, onItemClick: togglePopover }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-button="{ onClick: togglePopover, text: 'Choose color' }"></div>
+    <div dx-popover="{
+        width: 200,
+        height: 'auto',
+        target: '.dx-button',
+        onShown: popoverShown,
+        onHidden: popoverHidden,
+        bindingOptions: {
+            visible: 'visible'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'content' }">
+            <div dx-list="{ dataSource: colors, onItemClick: togglePopover }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="toggleButton"></div>
+<div id="myPopover"></div>
+<!--/@jQuery-->

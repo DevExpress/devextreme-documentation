@@ -1,0 +1,99 @@
+﻿<!--@jQuery-->
+<div id="gridContainer" style="height:520px; max-width:800px; margin: 0 auto"></div>
+<div style="height:40px;width:500px;text-align:center;margin:5px auto;">
+	"Total sales" summary item location: <div id="switchContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="gridContainer" style="height:520px; max-width:800px; margin: 0 auto" data-bind="dxDataGrid: {
+        dataSource: ordersNew,
+        columns: [{
+            dataField: 'OrderNumber',
+            width: 130
+        }, {
+            dataField: 'OrderDate',
+            dataType: 'date'
+        }, {
+            dataField: 'CustomerStoreCity',
+            caption: 'City'
+        }, {
+            dataField: 'CustomerStoreState',
+            caption: 'State',
+            groupIndex: 0
+        }, {
+            dataField: 'SaleAmount',
+            format: 'currency'
+        }],
+        summary: {
+            groupItems: [{
+                column: 'OrderNumber',
+                summaryType: 'count',
+                displayFormat: '{0} orders'
+            }, {
+                column: 'SaleAmount',
+                summaryType: 'sum',
+                valueFormat: 'currency',
+                showInColumn: 'OrderNumber',
+                displayFormat: 'Total: {0}',
+                showInGroupFooter: true
+            }]
+        }    
+}"></div>
+<div style="height:40px;width:500px;text-align:center;margin:5px auto;">
+	"Total sales" summary item location: <div id="switchContainer" data-bind="dxSwitch: {
+        onText: 'Footer',
+        offText: 'Header',
+        width: 100,
+        value: true,
+        onValueChanged: switched
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div id="gridContainer" style="height:520px; max-width:800px; margin: 0 auto" dx-data-grid="{
+            dataSource: orders,
+            columns: [{
+                dataField: 'OrderNumber',
+                width: 130
+            }, {
+                dataField: 'OrderDate',
+                dataType: 'date'
+            }, {
+                dataField: 'CustomerStoreCity',
+                caption: 'City'
+            }, {
+                dataField: 'CustomerStoreState',
+                caption: 'State',
+                groupIndex: 0
+            }, {
+                dataField: 'SaleAmount',
+                format: 'currency'
+            }],
+            summary: {
+                groupItems: [{
+                    column: 'OrderNumber',
+                    summaryType: 'count',
+                    displayFormat: '{0} orders'
+                }, {
+                    column: 'SaleAmount',
+                    summaryType: 'sum',
+                    valueFormat: 'currency',
+                    showInColumn: 'OrderNumber',
+                    displayFormat: 'Total: {0}',
+                    showInGroupFooter: true
+                }]
+            },
+            bindingOptions: {
+                'summary.groupItems[1].showInGroupFooter': 'switchValue'
+            }
+    }"></div>
+    <div style="height:40px;width:400px;text-align:center;margin:5px auto;">
+        "Total sales" summary item location: <div id="switchContainer" ng-model="switchValue" dx-switch="{
+            onText: 'Footer',
+            offText: 'Header',
+            width: 100
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

@@ -1,0 +1,1 @@
+﻿In this example, you can change the value of the **pager** | [visible](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager#visible) option at runtime using the check box under the grid. In code, this value is changed by calling the grid's **option(optionName, optionValue)** method.

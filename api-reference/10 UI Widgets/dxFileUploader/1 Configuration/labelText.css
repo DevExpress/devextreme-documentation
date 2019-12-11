@@ -1,0 +1,13 @@
+﻿body {
+    text-align: center;
+}
+.uploader {
+    margin: 25px 25px 50px 25px;
+}
+.demoBox{
+    height:250px;
+    max-width:400px;
+    margin: 0 auto;
+    border: solid 1px grey;
+    background-color: #f9f9f9;
+}

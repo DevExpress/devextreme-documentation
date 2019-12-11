@@ -1,0 +1,26 @@
+body{
+  text-align: center;
+}
+.dx-button{
+  margin: 20px;
+}
+
+.dx-theme-android5 .dx-icon-myicon
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAcElEQVRo3u3XIQ6AMAxA0fbQUzM1Uzv0sFgEYcD7uknzTJPmWiu+XAICAgICAgICAgK+FVhjXhk/L8uIiOoNEBAQEBAQEBAQEPA3wBrzsR+rektAQEcGEBAQEBAQEBAQEPB24O4BAgICAgICAgJu2wG3bCOgMHkN8wAAAABJRU5ErkJggg==);
+}
+
+.dx-theme-ios .dx-icon-myicon
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAQAAABtnpmgAAAAZUlEQVRo3u3SsQkAIAwEQDOw0ziwFhZiY6OixX0VCDwXSNT0ZwIMDAwMDAwMDAwMDAzsJKyMsVfFvM9gYGBgYGBgYCvG1h05wL6BeX4wMDAwMDCw27BbAQMDAwMDAwMDAwMDe5IGFJGKAcyLcs4AAAAASUVORK5CYII=);
+}
+
+.dx-theme-win10 .dx-icon-myicon
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAQAAAACj/OVAAAARElEQVRYw+3WKQ4AIAADMPb/R4PHIDgTOr/ULUstZxPgfbAvBAgEAoFAIPAhcPebChAIHIKmDQgEAoFA4E/g7JcCrk4DW5xoAVzaKL0AAAAASUVORK5CYII=);
+}
+
+.dx-theme-generic .dx-icon-myicon
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAcElEQVRo3u3XIQ6AMAxA0fbQUzM1Uzv0sFgEYcD7uknzTJPmWiu+XAICAgICAgICAgK+FVhjXhk/L8uIiOoNEBAQEBAQEBAQEPA3wBrzsR+rektAQEcGEBAQEBAQEBAQEPB24O4BAgICAgICAgJu2wG3bCOgMHkN8wAAAABJRU5ErkJggg==);
+}

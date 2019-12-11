@@ -1,0 +1,73 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:280px; max-width:750px; margin:0 auto"></div>
+<div id="textBoxContainer" style="height:40px; width:300px; margin-top:10px; margin:0 auto"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:280px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: {
+        store: sales,
+        fields: [{
+            dataField: 'region',
+            width: 120,
+            area: 'row'
+        }, {
+            dataField: 'city',
+            width: 150,
+            area: 'row',
+            selector: function (data) {
+                return data.city + ' (' + data.country + ')';
+            }
+        }, {
+            dataField: 'date',
+            dataType: 'date',
+            area: 'column'
+        }, {
+            dataField: 'amount',
+            summaryType: 'sum',
+            format: 'currency',
+            area: 'data'
+        }]
+    },
+    fieldChooser: { enabled: false },
+    texts: { grandTotal: grandTotalText }
+}"></div>
+<div style="height:40px; width:300px; margin-top:10px; margin:0 auto" data-bind="dxTextBox: {
+    placeholder: 'Type in a Text for the `Grand Total` Menu Item...',
+    value: grandTotalText
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:280px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: {
+            store: sales,
+            fields: [{
+                dataField: 'region',
+                width: 120,
+                area: 'row'
+            }, {
+                dataField: 'city',
+                width: 150,
+                area: 'row',
+                selector: cityText
+            }, {
+                dataField: 'date',
+                dataType: 'date',
+                area: 'column'
+            }, {
+                dataField: 'amount',
+                summaryType: 'sum',
+                format: 'currency',
+                area: 'data'
+            }]
+        },
+        fieldChooser: { enabled: false },
+        bindingOptions: {
+            'texts.grandTotal': 'grandTotalText'
+        }
+    }"></div>
+    <div style="height:40px; width:300px; margin-top:10px; margin:0 auto" ng-model="grandTotalText" dx-text-box="{
+        placeholder: 'Type in a Text for the `Grand Total` Menu Item...'
+    }"></div>
+</div>
+<!--/@AngularJS-->

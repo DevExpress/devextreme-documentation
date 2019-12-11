@@ -1,0 +1,1 @@
+﻿In this example, the data source is declared as an array of objects that each contain the *'author'*, *'title'*, *'year'*, *'genre'* and *'format'* fields. The corresponding columns are generated automatically. Captions for column headers are generated based on the data field names.

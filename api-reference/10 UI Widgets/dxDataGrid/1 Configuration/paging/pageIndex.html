@@ -1,0 +1,29 @@
+<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: {
+        store: {
+            type: 'odata',
+            url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+        }
+    },
+    columns: columns,
+    paging: { pageIndex: 9 }
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height:390px; max-width:630px; margin: 0 auto" dx-data-grid="{
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        columns: columns,
+        paging: { pageIndex: 9 }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

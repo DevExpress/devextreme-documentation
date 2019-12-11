@@ -1,0 +1,1 @@
+﻿In this example, grid records are sorted initially by the *"Year"* column descending using the **sortOrder** option of this column set to *'desc'*.

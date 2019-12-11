@@ -1,0 +1,21 @@
+<!--@Knockout-->
+<div id="myScrollView" data-bind="dxScrollView: {
+    onPullDown: pulledDown
+}">
+    <div id="textContainer"><p>Pull the text down</p></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div id="myScrollView" dx-scroll-view="{
+        onPullDown: pulledDown
+    }">
+        <div id="textContainer"><p>Pull the text down</p></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myScrollView">
+    <div id="textContainer"><p>Pull the text down</p></div>
+</div>
+<!--/@jQuery-->

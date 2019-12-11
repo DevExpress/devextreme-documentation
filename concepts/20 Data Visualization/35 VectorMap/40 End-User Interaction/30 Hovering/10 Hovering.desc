@@ -1,0 +1,1 @@
+In this example, map areas and markers change their color to yellow with the red border when the mouse pointer hovers over them. This behavior is specified by the **hoveredBorder** and **hoveredBorderColor** options.

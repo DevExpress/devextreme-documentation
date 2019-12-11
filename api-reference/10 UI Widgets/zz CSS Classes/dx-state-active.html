@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div class="tileView" data-bind="dxTileView: {
+    dataSource: tileViewDataSource,
+    itemMargin: 20,
+    baseItemHeight: 130,
+    baseItemWidth: 180
+}">
+    <div class="tile" data-options="dxTemplate:{name:'item'}">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <img style="margin:5px;" data-bind="attr: { src: getImagePath(name) }" />
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="tileView" dx-tile-view="{
+        dataSource: tileViewDataSource,
+        itemMargin: 20,
+        baseItemHeight: 130,
+        baseItemWidth: 180
+    }" dx-item-alias="itemObj">
+        <div class="tile" data-options="dxTemplate:{name:'item'}">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <img style="margin:5px;" ng-attr-src="{{getImagePath(itemObj.name)}}" />
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTileView"></div>
+<!--/@jQuery-->

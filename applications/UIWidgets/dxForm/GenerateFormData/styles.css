@@ -1,0 +1,13 @@
+﻿.objectStructure{
+    margin: 20px;
+    padding: 20px;
+    background-color: #eee;
+    font-family: 'Courier New';
+    text-align: left;
+}
+.objectStructure ul{
+    list-style-type: none;
+}
+.objectStructure li:not(:last-child):after{
+    content: ",";
+}

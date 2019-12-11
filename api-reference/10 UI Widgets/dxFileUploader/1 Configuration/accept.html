@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div class="uploader" data-bind="dxFileUploader: {
+    multiple: true,
+    accept: acceptValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">accept</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            value: acceptValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="uploader" dx-file-uploader="{
+        multiple: true,
+        bindingOptions: {
+            accept: 'acceptValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">accept</div>
+            <div class="dx-field-value" ng-model="acceptValue" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="uploader" id="myFileUploader"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">accept</div>
+        <div class="dx-field-value" id="acceptSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

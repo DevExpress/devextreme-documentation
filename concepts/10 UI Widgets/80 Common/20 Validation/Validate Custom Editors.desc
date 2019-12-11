@@ -1,0 +1,1 @@
+This example illustrates how to define an adapter for the **Validator** widget, to show a message for an end user when neither an email or phone number is specified.

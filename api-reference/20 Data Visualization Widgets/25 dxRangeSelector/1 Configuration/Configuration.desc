@@ -1,0 +1,1 @@
+This example shows how to display the **RangeSelector** widget. The only option which is specifically set is the **dataSource**. The other option - the **dataSourceField** - thought required, does not have to be specified because it is set to 'arg' (a required data source field) by default.

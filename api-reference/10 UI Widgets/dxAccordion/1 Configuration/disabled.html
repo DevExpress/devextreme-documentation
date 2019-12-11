@@ -1,0 +1,54 @@
+<!--@Knockout-->
+<div style="height:500px; max-width:750px; margin: 0 auto" data-bind="dxScrollView: { showScrollbar: 'always' }">
+    <div class="wrapper">
+        <div class="checkBox" data-bind="dxCheckBox: { value: disabled, text: 'Disabled' }"></div>
+        <div data-bind="dxAccordion:{
+            dataSource: accordionData,
+            disabled: disabled
+        }">
+            <div data-options="dxTemplate : { name: 'title' } ">
+                <h1 data-bind="text: $data.title"></h1>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'item' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" data-bind="foreach: dataArray">
+                        <p><span data-bind="text: propertyKey"></span>: <b data-bind="text: propertyValue"></b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:500px; max-width:750px; margin: 0 auto" dx-scroll-view="{ showScrollbar: 'always' }" ng-controller="demoController">
+    <div class="wrapper">
+        <div class="checkBox" ng-model="disabled" dx-check-box="{ text: 'Disabled' }"></div>
+        <div dx-accordion="{
+            dataSource: accordionData,
+            bindingOptions: {
+                disabled: 'disabled'
+            }
+        }" dx-item-alias="itemObj">
+            <div data-options="dxTemplate : { name: 'title' } ">
+                <h1>{{itemObj.title}}</h1>
+            </div>
+            <div class="item-body" data-options="dxTemplate : { name: 'item' } ">
+                <div style="margin:25px;">
+                    <div style="text-align:left;" ng-repeat="(key, value) in itemObj.data">
+                        <p>{{key}}: <b>{{value}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:500px; max-width:750px; margin: 0 auto" id="demoBox">
+    <div class="wrapper">
+        <div class="checkBox" id="disabledCheckBox"></div>
+        <div id="myAccordion"></div>
+    </div>
+</div>
+<!--/@jQuery-->

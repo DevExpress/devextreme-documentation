@@ -1,0 +1,1 @@
+﻿In this example, markers are accompanied by labels. Texts for these labels are provided by the **text** field of objects in the **markers** array. In addition, font options of marker labels are changed.

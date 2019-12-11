@@ -1,0 +1,10 @@
+body{
+  text-align: center;
+}
+.button{
+  margin:10px;
+}
+#scrollView{
+  margin: 10px;
+  height: 80%;
+}

@@ -1,0 +1,10 @@
+﻿body{
+  text-align: center;
+}
+#myList{
+    height: 70%;
+}
+.listItem {
+  text-align: left;
+  padding: 5px;
+}

@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+.dx-button{
+    margin: 10px;
+}
+.dx-list{
+    margin-bottom: 20px;
+}
+.col-marker{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}

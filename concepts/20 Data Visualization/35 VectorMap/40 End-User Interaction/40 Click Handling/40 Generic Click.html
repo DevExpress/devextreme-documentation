@@ -1,0 +1,20 @@
+﻿<!--@jQuery-->
+<div id="vectorMapContainer" style="height:400px; max-width:750px; margin: 0 auto"></div>
+<div class="textArea"><b>Clicked Point Coordinates</b></div>
+<div class="textArea" id="clientAreaCoordinates"></div>
+<div class="textArea" id="geographicalCoordinates"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:400px; max-width:750px; margin: 0 auto" data-bind="dxVectorMap: vectorMapCfg"></div>
+<div class="textArea"><b>Clicked Point Coordinates</b></div>
+<div class="textArea" data-bind="text: clientAreaCoordinates"></div>
+<div class="textArea" data-bind="text: geographicalCoordinates"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="vectorMapController">
+    <div style="height:400px; max-width:750px; margin: 0 auto" dx-vector-map="vectorMapCfg"></div>
+    <div class="textArea"><b>Clicked Point Coordinates</b></div>
+    <div class="textArea" ng-bind="clientAreaCoordinates"></div>
+    <div class="textArea" ng-bind="geographicalCoordinates"></div>
+</div>
+<!--/@AngularJS-->

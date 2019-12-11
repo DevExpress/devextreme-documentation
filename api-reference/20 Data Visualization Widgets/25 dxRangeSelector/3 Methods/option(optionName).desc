@@ -1,0 +1,1 @@
+﻿In this example, the **option(optionName)** method is used to obtain the value of the **behavior | allowSlidersSwap** option and display it under the range selector. To change this value, use the check box below.

@@ -1,0 +1,1 @@
+In this example, the data source contains both positive and negative values. The positive values are painted 'dodgerblue' using the **barPositiveColor** option while the negative values are painted 'salmon' using the **barNegativeColor** option. 

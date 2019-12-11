@@ -1,0 +1,53 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{text: 'Load', onClick: startLoading}"></div>
+<div data-bind="dxLoadPanel:{
+    message: 'Loading...',
+    visible: loadPanelVisible,
+    delay: delayValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">delay</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: 0,
+            max: 2000,
+            step: 100,
+            showSpinButtons: true,
+            value: delayValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{ text: 'Load', onClick: startLoading }"></div><br />
+    <div id="myLoadPanel" dx-load-panel="{ 
+        message: 'Loading...',
+        bindingOptions: { 
+            visible: 'loadPanelVisible',
+            delay: 'delayValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">delay</div>
+            <div class="dx-field-value" ng-model="delayValue" dx-number-box="{
+                min: 0,
+                max: 2000,
+                step: 100,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="loadButton"></div><br />
+<div id="myLoadPanel"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">delay</div>
+        <div class="dx-field-value" id="delayField"></div>
+    </div>
+</div>
+<!--/@jQuery-->

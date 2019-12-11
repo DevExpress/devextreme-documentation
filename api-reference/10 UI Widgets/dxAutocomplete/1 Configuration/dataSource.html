@@ -1,0 +1,31 @@
+﻿<!--@Knockout-->
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    displayExpr: 'country',
+    placeholder: 'Type country name',
+    itemTemplate: 'item'
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        Country: <b data-bind="text: country"></b><br />
+        <span style="color:grey;">Capital: <span data-bind="text: capital"></span></span>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="autocomplete" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        displayExpr: 'country',
+        placeholder: 'Type country name',
+        itemTemplate: 'item'
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            Country: <b>{{itemObj.country}}</b><br/>
+            <span style="color:grey;">Capital: {{itemObj.capital}}</span>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="autocomplete" id="myAutocomplete"></div>
+<!--/@jQuery-->

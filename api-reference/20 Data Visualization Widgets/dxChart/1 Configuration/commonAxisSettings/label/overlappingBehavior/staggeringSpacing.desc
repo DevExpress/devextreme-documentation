@@ -1,0 +1,1 @@
+In this example, the tick interval of the argument axis is intentionally set to a very small value so that axis labels overlap each other. The overlapping is resolved by staggering the axis lables. You can change the staggering spacing using the slider under the chart.

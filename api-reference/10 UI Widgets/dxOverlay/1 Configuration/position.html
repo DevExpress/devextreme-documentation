@@ -1,0 +1,29 @@
+<div class="button" data-bind="dxButton: { text: 'Show overlay', onClick: showOverlay }"></div>
+<p style="text-align:center"><b>Position</b></p>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">my</div>
+    <div class="dx-field-value" data-bind="dxLookup: { dataSource: positionValues, value: myValue }"></div>
+  </div>
+  <div class="dx-field">
+    <div class="dx-field-label">at</div>
+    <div class="dx-field-value" data-bind="dxLookup: { dataSource: positionValues, value:atValue }"></div>
+  </div>
+</div>
+<div id="targetElement"></div>
+<div id="overlay" data-bind="dxOverlay: {
+  visible: overlayVisible,
+  onClick: hideOverlay, 
+  height: 90,
+  width: 200,
+  position: {
+    my: myValue(),
+    at: atValue(),
+    of: $('#targetElement'),
+  }
+}">
+  <div class="overlayContents">
+    <p>The overlay window text.</p>
+      <div class="button" data-bind="dxButton: { text: 'Hide overlay', onClick: hideOverlay }"></div>
+  </div>
+</div>

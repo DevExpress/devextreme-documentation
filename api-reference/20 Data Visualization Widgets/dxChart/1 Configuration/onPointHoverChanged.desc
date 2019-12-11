@@ -1,0 +1,1 @@
+﻿In this example, when a point on the chart is hovered over, the pie chart displays the information about the Olympic medals won by the US team in the year corresponding to the hovered point. When none of the chart points are hovered, the pie chart displays the information about medals won by this team overall.

@@ -1,0 +1,1 @@
+﻿In this demo, you can specify the text displayed by the pivot grid when it contains no data. Type any text in the text box below the pivot grid and make the text box lose focus. The specified text will immediately appear in the grid.

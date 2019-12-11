@@ -1,0 +1,1 @@
+﻿In this example, click a series point (a segment in a stacked bar) to select/deselect it. The **pointSelectionMode** option is set to *multiple* so that you can select multiple points. When selecting a point, the *Total value of selected parts* number presented below is changed. Click the *Clear selected parts* button to deselect all points at once.

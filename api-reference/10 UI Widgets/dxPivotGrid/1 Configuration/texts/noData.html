@@ -1,0 +1,27 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:120px; max-width:750px; margin:0 auto"></div>
+<div id="textBoxContainer" style="height:40px; width:300px; margin-top:10px; margin:0 auto"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:120px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    fieldChooser: { enabled: false },
+    texts: { noData: noDataText }
+}"></div>
+<div style="height:40px; width:300px; margin-top:10px; margin:0 auto" data-bind="dxTextBox: {
+    placeholder: 'Type in a Text for an Empty Pivot Grid...',
+    value: noDataText
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:120px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        fieldChooser: { enabled: false },
+        bindingOptions: {
+            'texts.noData': 'noDataText'
+        }
+    }"></div>
+    <div style="height:40px; width:300px; margin-top:10px; margin:0 auto" ng-model="noDataText" dx-text-box="{
+        placeholder: 'Type in a Text for an Empty Pivot Grid...'
+    }"></div>
+</div>
+<!--/@AngularJS-->

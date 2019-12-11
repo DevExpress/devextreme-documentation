@@ -1,0 +1,75 @@
+﻿<!--@Knockout-->
+<div class="toolbar">
+    <p class="selection">Select layout: 
+        <a href="#" onclick="setLayout('xs');">Phone</a>,
+        <a href="#" onclick="setLayout('sm');">Tablet</a>,
+        <a href="#" onclick="setLayout('lg');">Desktop</a>
+    </p>
+</div>
+<div class="box" data-bind="dxResponsiveBox: {
+    singleColumnScreen: 'xs',
+    rows: rowItems,
+    cols: colItems,
+    screenByWidth: getScreenFactor
+}">
+    <div class="header" data-options="dxItem: { 
+        location: [{ row: 0, col: 0, colspan: 3, screen: 'lg'}, { row: 0, col: 0, colspan: 2, screen: 'xs sm md'}]}"><p></p></div>
+    <div class="content" data-options="dxItem: { 
+        location: [{ row: 1, col: 1, screen: 'lg' }, { row: 1, col: 0, colspan: 2, screen: 'xs sm md' }]}"><p></p></div>
+    <div class="left-side-bar" data-options="dxItem: { 
+        location: [ { row: 1, col: 0, screen: 'lg' }, { row: 2, col: 0, screen: 'xs sm md' }]}"><p></p></div>
+    <div class="right-side-bar" data-options="dxItem: { 
+        location: [ { row: 1, col: 2, screen: 'lg' }, { row: 2, col: 1, screen: 'xs sm md' }]}"><p></p></div>  
+    <div class="footer" data-options="dxItem: {
+            location: [ { row: 2, col: 0, colspan: 3, screen: 'lg' }, { row: 3, col: 0, colspan: 2, screen: 'xs sm md' }]}"><p></p></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="toolbar">
+        <p class="selection">Select layout: 
+            <a href="#" onclick="setLayout('xs');">Phone</a>,
+            <a href="#" onclick="setLayout('sm');">Tablet</a>,
+            <a href="#" onclick="setLayout('lg');">Desktop</a>
+        </p>
+    </div>
+    <div class="box" dx-responsive-box="{
+        singleColumnScreen: 'xs',
+        rows: rowItems,
+        cols: colItems,
+        screenByWidth: getScreenFactor
+    }">
+        <div class="header" data-options="dxItem: { 
+            location: [{ row: 0, col: 0, colspan: 3, screen: 'lg'}, { row: 0, col: 0, colspan: 2, screen: 'xs sm md'}]}"><p></p></div>
+        <div class="content" data-options="dxItem: { 
+            location: [{ row: 1, col: 1, screen: 'lg' }, { row: 1, col: 0, colspan: 2, screen: 'xs sm md' }]}"><p></p></div>
+        <div class="left-side-bar" data-options="dxItem: { 
+            location: [ { row: 1, col: 0, screen: 'lg' }, { row: 2, col: 0, screen: 'xs sm md' }]}"><p></p></div>
+        <div class="right-side-bar" data-options="dxItem: { 
+            location: [ { row: 1, col: 2, screen: 'lg' }, { row: 2, col: 1, screen: 'xs sm md' }]}"><p></p></div>  
+        <div class="footer" data-options="dxItem: {
+                location: [ { row: 2, col: 0, colspan: 3, screen: 'lg' }, { row: 3, col: 0, colspan: 2, screen: 'xs sm md' }]}"><p></p></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="toolbar">
+    <p class="selection">Select layout: 
+        <a href="#" onclick="setLayout('xs');">Phone</a>,
+        <a href="#" onclick="setLayout('sm');">Tablet</a>,
+        <a href="#" onclick="setLayout('lg');">Desktop</a>
+    </p>
+</div>
+<div class="box" id="myResponsiveBox">
+    <div class="header" data-options="dxItem: { 
+        location: [{ row: 0, col: 0, colspan: 3, screen: 'lg'}, { row: 0, col: 0, colspan: 2, screen: 'xs sm md'}]}"><p></p></div>
+    <div class="content" data-options="dxItem: { 
+        location: [{ row: 1, col: 1, screen: 'lg' }, { row: 1, col: 0, colspan: 2, screen: 'xs sm md' }]}"><p></p></div>
+    <div class="left-side-bar" data-options="dxItem: { 
+        location: [ { row: 1, col: 0, screen: 'lg' }, { row: 2, col: 0, screen: 'xs sm md' }]}"><p></p></div>
+    <div class="right-side-bar" data-options="dxItem: { 
+        location: [ { row: 1, col: 2, screen: 'lg' }, { row: 2, col: 1, screen: 'xs sm md' }]}"><p></p></div>  
+    <div class="footer" data-options="dxItem: {
+        location: [ { row: 2, col: 0, colspan: 3, screen: 'lg' }, { row: 3, col: 0, colspan: 2, screen: 'xs sm md' }]}"><p></p></div>
+</div>
+<!--/@jQuery-->

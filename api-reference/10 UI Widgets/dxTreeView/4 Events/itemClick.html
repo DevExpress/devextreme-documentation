@@ -1,0 +1,27 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div data-bind="dxButton:{ text: 'Subscribe to ItemClick event', onClick: clickHandler }"></div>
+    <div class="treeView" data-bind="dxTreeView: {
+        dataSource: treeViewData,
+        onInitialized: initializedHandler,
+        width: 'auto'
+    }">
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe for ItemClick event' ,onClick: clickHandler }"></div>
+    <div class="treeView" dx-tree-view="{
+        dataSource: treeViewData,
+        onInitialized: initializedHandler,
+        width: 'auto'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div id="myButton"></div>
+    <div class="treeView" id="myTreeView"></div>
+</div>
+<!--/@jQuery-->

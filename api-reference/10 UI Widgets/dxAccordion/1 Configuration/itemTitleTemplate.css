@@ -1,0 +1,13 @@
+.wrapper{
+    padding: 20px;
+}
+.box{
+    margin: 10px;
+}
+.item-body{
+    background-color:white;
+    border: solid 1px gray;
+}
+.inline-item:not(:last-child):after{
+    content: ",";
+}

@@ -1,0 +1,1 @@
+﻿In this example, the 'range' rule is applied to the editor. This rule demands that the editor value be within 25 and 35. To check this rule, specify a value out of this range.

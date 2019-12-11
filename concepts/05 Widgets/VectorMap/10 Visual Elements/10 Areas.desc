@@ -1,0 +1,1 @@
+﻿In this example, a palette is used to colorize map areas. However, for the 'Canada' area, a color is set explicitly within the **customize** function. Additionally, specific appearances are set for areas in the hovered and selected state.

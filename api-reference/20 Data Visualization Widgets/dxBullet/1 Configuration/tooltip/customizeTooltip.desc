@@ -1,0 +1,1 @@
+In this example, you can change the bullet value using the buttons below. While this value is under the target value, a tooltip has the default color, but once it exceeds the target value, the tooltip becomes painted in *'orangered'*.

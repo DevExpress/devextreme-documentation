@@ -1,0 +1,56 @@
+﻿<!--@jQuery-->
+<div id="gridContainer" style="height:380px; max-width:750px; margin:0 auto"></div>
+<div style="height:40px; text-align:center">
+    Column Chooser's Mode:&nbsp;
+    <div id="selectBoxContainer" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:380px; max-width:750px; margin:0 auto" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: [
+        'author', 'title', 'year', 'genre', 'format',
+        { dataField: 'price', visible: false },
+        { dataField: 'language', visible: false },
+        { dataField: 'length', visible: false }
+    ],
+    paging: { pageSize: 8 },
+    columnChooser: {
+        enabled: true,
+        mode: selectedMode
+    }
+}"></div>
+<div style="height:40px; text-align:center">
+    Column Chooser's Mode:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxSelectBox: {
+        items: availableModes,
+        value: selectedMode
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="gridController">
+    <div style="height:380px; max-width:750px; margin:0 auto" dx-data-grid="{
+        dataSource: books,
+        columns: [
+            'author', 'title', 'year', 'genre', 'format',
+            { dataField: 'price', visible: false },
+            { dataField: 'language', visible: false },
+            { dataField: 'length', visible: false }
+        ],
+        paging: { pageSize: 8 },
+        columnChooser: {
+            enabled: true
+        },
+        bindingOptions: {
+            'columnChooser.mode': 'selectedMode'
+        }
+    }"></div>
+    <div style="height:40px; text-align:center">
+        Column Chooser's Mode:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" ng-model="selectedMode" dx-select-box="{
+            items: availableModes
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

@@ -1,0 +1,35 @@
+<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: orders,
+    columns: [
+        'OrderID',
+        { dataField: 'CustomerID', allowSorting: false },
+        { dataField: 'OrderDate', dataType: 'date' },
+        { dataField: 'ShippedDate', dataType: 'date' },
+        { dataField: 'ShipName', allowSorting: false },
+        { dataField: 'ShipCountry', caption: 'Ship To' }
+    ],
+    paging: { pageSize: 8 },
+    onCellHoverChanged: onCellHoverChanged
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:390px; max-width:630px; margin: 0 auto">
+    <div dx-data-grid="{
+        dataSource: orders,
+        columns: [
+            'OrderID',
+            { dataField: 'CustomerID', allowSorting: false },
+            { dataField: 'OrderDate', dataType: 'date' },
+            { dataField: 'ShippedDate', dataType: 'date' },
+            { dataField: 'ShipName', allowSorting: false },
+            { dataField: 'ShipCountry', caption: 'Ship To' }
+        ],
+        paging: { pageSize: 8 },
+        onCellHoverChanged: onCellHoverChanged
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

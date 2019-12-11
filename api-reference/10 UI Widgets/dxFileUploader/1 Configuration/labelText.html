@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div class="demoBox">
+    <div class="uploader" data-bind="dxFileUploader: {
+        labelText: labelTextValue
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">labelText</div>
+            <div class="dx-field-value" data-bind="dxTextBox: { value: labelTextValue }"></div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" class="demoBox">
+    <div class="uploader" dx-file-uploader="{
+        bindingOptions: {
+            labelText: 'labelTextValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">labelText</div>
+            <div class="dx-field-value" ng-model="labelTextValue" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demoBox">
+    <div class="uploader" id="myFileUploader"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">labelText</div>
+            <div class="dx-field-value" id="buttonTextField"></div>
+        </div>
+    </div>
+</div>
+<!--/@jQuery-->

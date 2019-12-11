@@ -1,0 +1,35 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to EnterKey event', onClick: clickHandler }"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Text Box:</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            placeholder: 'Press Enter key within the widget',
+            onInitialized: initializedHandler
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to EnterKey event', onClick: clickHandler }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Text Box:</div>
+            <div class="dx-field-value" dx-text-box="{
+                onInitialized: initializedHandler,
+                placeholder: 'Press Enter within the widget'
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Text Box:</div>
+        <div class="dx-field-value" id="myTextBox"></div>
+    </div>
+</div>
+<!--/@jQuery-->

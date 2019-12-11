@@ -1,0 +1,1 @@
+In this example, the **convertToAxisDataType** option is set to *true* in order to convert the string values from the data source into the numeric format.

@@ -1,0 +1,1 @@
+This example shows the argument axis of a continuous type. Here, the axis' start angle is 90 degrees and labels are customized to indicate degrees as the unit of the axis' values. In addition, the minor grid lines of the axis are made invisible and major grid lines are drawn with an interval equal to 10.

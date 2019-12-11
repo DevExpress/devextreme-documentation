@@ -1,0 +1,1 @@
+﻿In this example, the *population* field of the data source is set as the value field for the chart series using the **valueField** option.

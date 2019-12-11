@@ -1,0 +1,24 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to Opened and Closed events', onClick: clickHandler }"></div>
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    title: 'States',
+    onInitialized: initializedHandler
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to Opened and Closed events', onClick: clickHandler }"></div>
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        title: 'States',
+        onInitialized: initializedHandler
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div class="lookup" id="myLookup"></div>
+<!--/@jQuery-->

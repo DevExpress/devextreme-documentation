@@ -1,0 +1,60 @@
+<!--@Knockout-->
+<div id="button" data-bind="dxButton: {text: 'Choose square color', onClick: togglePopover }"></div>
+<div id="square" data-bind="style: { 'background-color': currentColor }">&nbsp;</div>
+<div data-bind="dxPopover: {
+    width: 200,
+    visible: visible,
+    target: currentTarget
+}">
+    <div data-options="dxTemplate: { name: 'content' }">
+        <div data-bind="dxList: { dataSource: colors, onItemClick: chooseColor }"></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">target</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: targets,
+            value: currentTarget
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="button" dx-button="{ text: 'Choose square color', onClick: togglePopover }"></div>
+    <div id="square" ng-style="{ 'background-color': currentColor }">&nbsp;</div>
+    <p>Click the square.</p>
+    <div dx-popover="{
+        width: 200,
+        target: '.target',
+        bindingOptions: {
+            visible: 'visible',
+            target: 'currentTarget'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'content' }">
+            <div dx-list="{ dataSource: colors, onItemClick: chooseColor }"></div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">target</div>
+            <div class="dx-field-value" ng-model="currentTarget" dx-select-box="{
+                items: targets
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="square" style="background-color:red;">&nbsp;</div>
+<div id="myPopover"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">target</div>
+        <div class="dx-field-value" id="targetSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

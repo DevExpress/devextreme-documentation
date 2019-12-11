@@ -1,0 +1,3 @@
+When choosing **Win** in the DevExtreme Project Wizard, a project for the Windows platform is created. This project has a standard template for Win applications. In addition, this project has links to files from the [Shared project](/concepts/50%20VS%20Integration/0%20Project%20Templates/15%20Multi-Channel%20Application/10%20Shared%20Project.md '/Documentation/Guide/VS_Integration/Project_Templates/#Multi-Channel_Application/Shared_Project'). This makes it possible for you to develop a DevExtreme application for Windows.
+
+To package an application created using the Win project, use standard procedures (see [Packaging your Windows Store app using Visual Studio 2012](https://msdn.microsoft.com/en-us/library/hh454036.aspx)).

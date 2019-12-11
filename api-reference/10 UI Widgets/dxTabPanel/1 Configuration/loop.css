@@ -1,0 +1,15 @@
+﻿body{
+    text-align:center;
+}
+.tip{
+    margin: 20px;
+    padding: 10px;
+    font-size: large;
+    background-color: #ff0;
+    color: #444;
+    border: solid 1px red;
+}
+.dx-color-scheme-black .tip{
+    background-color: #444;
+    color: #ff0;
+}

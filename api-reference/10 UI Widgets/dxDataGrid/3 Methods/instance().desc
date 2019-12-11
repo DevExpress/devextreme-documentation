@@ -1,0 +1,1 @@
+﻿In this example, the **instance** method is used to obtain the instance of the **DataGrid** widget. Next, the [clearSelection()](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods#clearSelection) method is called of this instance.

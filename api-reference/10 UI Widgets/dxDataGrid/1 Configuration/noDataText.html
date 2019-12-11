@@ -1,0 +1,35 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:300px" data-bind="dxDataGrid: {
+        dataSource: undefined,
+        noDataText: noDataText
+    }"></div>
+    <div data-bind="dxTextBox: {
+        placeholder: 'Enter a text for the empty grid',
+        height: 40,
+        width: 300,
+        value: noDataText
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:410px; max-width:630px; margin: 0 auto">
+    <div style="height:300px" dx-data-grid="{
+        dataSource: undefined,
+        bindingOptions: {
+            noDataText: 'noDataText'
+        }
+    }"></div>
+    <div ng-model="noDataText" dx-text-box="{
+        placeholder: 'Enter a text for the empty grid',
+        height: 40,
+        width: 300
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:300px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height: 250px"></div>
+    <div id="noDataTextBox" style="height: 45px; width: 280px; text-align: center"></div>
+</div>
+<!--/@jQuery-->

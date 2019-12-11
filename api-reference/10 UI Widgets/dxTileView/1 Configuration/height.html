@@ -1,0 +1,55 @@
+<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <p>Height = <span data-bind="text: tileViewHeight"></span></p>
+        <div data-bind="dxSlider: {
+            value: tileViewHeight,
+            min: 50, max: 350
+        }"></div>
+    </div>
+</div>
+<div data-bind="dxTileView: {
+    dataSource: tiles,
+    baseItemHeight: 50,
+    baseItemWidth: 50,
+    height: tileViewHeight
+}">
+    <div class="tile" data-options="dxTemplate:{ name:'item'}">
+        <p data-bind="text:id"></p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <p>Height = {{tileViewHeight}}</p>
+            <div ng-model="tileViewHeight" dx-slider="{
+                min: 50,
+                max: 350
+            }"></div>
+        </div>
+    </div>
+    <div dx-tile-view="{
+        dataSource: tiles,
+        baseItemHeight: 50,
+        baseItemWidth: 50,
+        bindingOptions: {
+            height: 'tileViewHeight'
+        }
+    }" dx-item-alias="itemObj">
+        <div class="tile" data-options="dxTemplate:{ name:'item'}">
+            <p>{{itemObj.id}}</p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <p>Height = <span id="heightValue"></span></p>
+        <div id="heightSlider"></div>
+    </div>
+</div>
+<div id="myTileView"></div>
+<!--/@jQuery-->

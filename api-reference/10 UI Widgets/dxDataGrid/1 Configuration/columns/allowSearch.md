@@ -1,0 +1,13 @@
+---
+default: true
+type: Boolean
+---
+---
+##### shortDescription
+Specifies if a column can be used for searching grid records. Setting this option makes sense only when the [search panel](/concepts/05%20Widgets/DataGrid/001%20Visual%20Elements/080%20Search%20Panel.md '/Documentation/Guide/Widgets/DataGrid/Visual_Elements/#Search_Panel') is visible.
+
+---
+By default, searching is performed in all columns. But you can disable it in certain columns. For this purpose, set the [allowSearch](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns/allowSearch.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowSearch') option to *false*.
+
+#####See Also#####
+- [DataGrid - Filtering in UI](/Documentation/Guide/Widgets/DataGrid/Filtering/#Filtering_in_UI)

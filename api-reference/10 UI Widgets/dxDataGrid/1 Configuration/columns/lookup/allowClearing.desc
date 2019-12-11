@@ -1,0 +1,1 @@
+In this example, *"Format"* is declared as a lookup column. When a cell of this column is in the editing state, it is supplied with a button that nullifies its value. You can hide this button at runtime by toggling the check box under the grid.

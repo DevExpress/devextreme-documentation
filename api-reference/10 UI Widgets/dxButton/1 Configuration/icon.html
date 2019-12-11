@@ -1,0 +1,44 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{
+    text:buttonText,
+    onClick: buttonClicked,
+    icon: buttonIcon
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">icon</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: {
+        dataSource: icons,
+        value: buttonIcon
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="button" dx-button="{
+        text:buttonText,
+        onClick: buttonClicked,
+        bindingOptions: {
+            icon: 'buttonIcon'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">icon</div>
+          <div class="dx-field-value" ng-model="buttonIcon" dx-select-box="{
+            dataSource: icons
+        }"></div>
+      </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="myButton"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">icon</div>
+    <div class="dx-field-value" id="iconSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

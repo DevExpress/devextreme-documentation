@@ -1,0 +1,57 @@
+﻿<!--@Knockout-->
+<div style="height:500px; max-width:750px; margin: 0 auto">
+    <div data-bind="dxColorBox: {
+        value: colorValue,
+        applyButtonText: applyText,
+        cancelButtonText: cancelText
+    }"></div>
+    <div class="dx-fieldset" style="width: 300px;">
+        <div class="dx-field">
+            <div class="dx-field-label">applyButtonText</div>
+            <div class="dx-field-value" data-bind="dxTextBox: { value: applyText }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">cancelButtonText</div>
+            <div class="dx-field-value" data-bind="dxTextBox: { value: cancelText }"></div>
+        </div>
+    </div>
+    <p class="text" data-bind="style: { color: colorValue }">Colored Text</p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:500px; max-width:750px; margin: 0 auto" ng-controller="demoController">
+    <div ng-model="colorValue" dx-color-box="{
+        bindingOptions: {
+            applyButtonText: 'applyText',
+            cancelButtonText: 'cancelText'
+        }
+    }"></div>
+    <div class="dx-fieldset" style="width: 300px;">
+        <div class="dx-field">
+            <div class="dx-field-label">applyButtonText</div>
+            <div class="dx-field-value" ng-model="applyText" dx-text-box="{ }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">cancelButtonText</div>
+            <div class="dx-field-value" ng-model="cancelText" dx-text-box="{ }"></div>
+        </div>
+    </div>
+    <p class="text" ng-style="{ color: colorValue }">Colored Text</p>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:500px; max-width:750px; margin: 0 auto">
+    <div id="myColorBox"></div>
+    <div class="dx-fieldset" style="width: 300px;">
+        <div class="dx-field">
+            <div class="dx-field-label">applyButtonText</div>
+            <div class="dx-field-value" id="applyTextField"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">cancelButtonText</div>
+            <div class="dx-field-value" id="cancelTextField"></div>
+        </div>
+    </div>
+    <p class="text" id="coloredText">Colored Text</p>
+</div>
+<!--/@jQuery-->

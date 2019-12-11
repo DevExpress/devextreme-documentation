@@ -1,0 +1,14 @@
+<!--@Knockout-->
+<p>Click or tap the yellow element</p>
+<div id="myElement" data-bind="event: { dxpointerup: myEventHandler }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <p>Click or tap the yellow element</p>
+    <div id="myElement" dx-pointerup="myEventHandler($event)"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Click or tap the yellow element</p>
+<div id="myElement"></div>
+<!--/@jQuery-->

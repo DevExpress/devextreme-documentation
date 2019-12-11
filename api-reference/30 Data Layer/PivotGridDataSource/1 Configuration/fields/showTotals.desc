@@ -1,0 +1,1 @@
+In this example, you can change the **showTotals** option of the *"Quarter"* column field at runtime. By default, this option is *true*. Turn the switch below the pivot grid to *false* to hide the total values of the *"Quarter"* field. Please note that the *"Year"* field, despite being a parent field for *"Quarter"*, does not hide its total values.

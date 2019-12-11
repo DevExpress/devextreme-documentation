@@ -1,0 +1,1 @@
+In this example, the data source fields providing data for the *"Order Date"* and *"Shipped Date"* columns contain values in a string format. To convert them into correct dates, set the **dataType** option for these columns to *'date'*.

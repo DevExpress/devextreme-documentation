@@ -1,0 +1,18 @@
+﻿<!--@Knockout-->
+<div style="height:500px; max-width:750px; margin: 0 auto">
+    <div data-bind="dxColorBox: { value: colorValue }"></div>
+    <p class="text" data-bind="style: { color: colorValue }">Colored Text</p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:500px; max-width:750px; margin: 0 auto" ng-controller="demoController">
+    <div ng-model="colorValue" dx-color-box="{ }"></div>
+    <p class="text" ng-style="{ color: colorValue }">Colored Text</p>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:500px; max-width:750px; margin: 0 auto">
+    <div id="myColorBox"></div>
+    <p class="text" id="coloredText">Colored Text</p>
+</div>
+<!--/@jQuery-->

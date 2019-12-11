@@ -1,0 +1,57 @@
+﻿<!--@Knockout-->
+<div data-bind="dxSlider: {
+    min: 0,
+    max: 100,
+    value: 50,
+    step: currentStep,
+    tooltip: {
+        enabled: true,
+        showMode: 'always'
+    }
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">step</div>
+    <div class="dx-field-value" data-bind="dxNumberBox: {
+        min: 0,
+        max: 10,
+        showSpinButtons: true,
+        value: currentStep
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-slider="{
+        min: 0,
+        max: 100,
+        tooltip: {
+            enabled: true,
+            showMode: 'always'
+        },
+        bindingOptions: {
+            step: 'currentStep'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">step</div>
+          <div class="dx-field-value" ng-model="currentStep" dx-number-box="{
+            min: 0,
+            max: 100,
+            showSpinButtons: true
+        }"></div>
+      </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlider"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">step</div>
+        <div class="dx-field-value" id="stepBox"></div>
+    </div>
+</div>
+<!--/@jQuery-->

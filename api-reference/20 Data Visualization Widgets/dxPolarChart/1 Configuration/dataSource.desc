@@ -1,0 +1,1 @@
+In this example, the data source is declared as an array of objects that each contain the 'arg', 'y1', 'y2' and 'y3' fields. The 'arg' field is used as an argument field for all series. The other fields are used as value fields for each series respectively.

@@ -1,0 +1,23 @@
+﻿<!--@jQuery-->
+<div id="polarChartContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>animation | easing:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="polarChartContainer" data-bind="dxPolarChart: polarChartOptions"></div>
+<div class="inline" style="text-align:center">
+    <div>animation | easing:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: selectBoxOptions"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="polarChartController">
+    <div id="polarChartContainer" dx-polar-chart="polarChartOptions"></div>
+    <div class="inline" style="text-align:center">
+        <div>animation | easing:&nbsp;</div>
+        <div id="selectBoxContainer" dx-select-box="selectBoxOptions"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

@@ -1,0 +1,1 @@
+In this example, you can change the value of the **allowUpdating** option at runtime using the check box below. If this option is *true*, the grid is supplied with an additional column that contains *"Edit"* buttons enabling you to edit grid records. Otherwise, this column is hidden, and the grid records cannot be edited.

@@ -1,0 +1,1 @@
+In the example below, the legend items are displayed in 2 columns with 200 pixel spacing. In addition, the position of the legend is set using the **horizontalAlignment** and **verticalAlignment** options.

@@ -1,0 +1,16 @@
+﻿.dx-treeview{
+    margin: auto;
+    width: 200px;
+}
+.wrapper{
+    padding: 20px;
+}
+.dx-fieldset {
+    width:250px;
+}
+.dx-field-label {
+    width: 70%;
+}
+.hint {
+    margin: 20px;
+}

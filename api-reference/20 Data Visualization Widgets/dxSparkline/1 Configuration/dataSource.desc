@@ -1,0 +1,1 @@
+In this example, the data source is declared as an array of objects, each of which contains the 'month' and '2010' fields. The 'month' field provides arguments for the sparkline, while the '2010' field provides values.

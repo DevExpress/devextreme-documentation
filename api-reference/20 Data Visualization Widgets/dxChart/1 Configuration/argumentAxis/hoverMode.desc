@@ -1,0 +1,1 @@
+﻿In this example, you can change the value of the **argumentAxis** | **hoverMode** option using the select box under the chart. To spot the difference between the *"none"* and *"allArgumentPoints"* settings, point to an axis label.

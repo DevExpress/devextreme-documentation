@@ -1,0 +1,1 @@
+﻿In this example, the search panel is made visible using the **visible** option of the **searchPanel** object. Additionally, its width is changed using the **width** option of the same object.

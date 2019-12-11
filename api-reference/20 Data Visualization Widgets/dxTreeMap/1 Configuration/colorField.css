@@ -1,0 +1,16 @@
+﻿#treeMapContainer {
+    height: 350px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#selectBoxContainer {
+    height: 35px;
+    max-width: 200px;
+    margin-top: 5px;
+}
+
+.inline > div {
+    display: inline-block;
+    vertical-align: middle;
+}

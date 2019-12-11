@@ -1,0 +1,45 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:380px; max-width:630px; margin: 0 auto">
+    <div style="height:350px" data-bind="dxDataGrid: {
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        columns: columns,
+        paging: {
+            enabled: checkBoxState
+        }
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'Enable Paging',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:380px; max-width:630px; margin: 0 auto">
+    <div style="height:350px" dx-data-grid="{
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        columns: columns,
+        bindingOptions: {
+            'paging.enabled': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Enable Paging'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:380px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:350px;"></div>
+    <div id="checkboxContainer"></div>
+</div>
+<!--/@jQuery-->

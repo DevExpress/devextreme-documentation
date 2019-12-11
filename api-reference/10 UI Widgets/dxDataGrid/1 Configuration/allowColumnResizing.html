@@ -1,0 +1,49 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:330px; max-width:630px; margin: 0 auto">
+    <div style="height:300px" data-bind="dxDataGrid: {
+        dataSource: employees,
+        columns: [
+            { dataField: 'TitleOfCourtesy', caption: 'Title' },
+            'FirstName',
+            'LastName',
+            { dataField: 'Title', caption: 'Position', width: 150 },
+            { dataField: 'BirthDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'HireDate', dataType: 'date', format: 'shortDate' }
+        ],
+        paging: { pageSize: 6 },
+        allowColumnResizing: checkBoxState
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'Allow Column Resizing',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:330px; max-width:630px; margin: 0 auto">
+    <div style="height:300px" dx-data-grid="{
+        dataSource: employees,
+        columns: [
+            { dataField: 'TitleOfCourtesy', caption: 'Title' },
+            'FirstName',
+            'LastName',
+            { dataField: 'Title', caption: 'Position', width: 150 },
+            { dataField: 'BirthDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'HireDate', dataType: 'date', format: 'shortDate' }
+        ],
+        paging: { pageSize: 6 },
+        bindingOptions: {
+            allowColumnResizing: 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Allow Column Resizing'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:330px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:300px;"></div>
+    <div id="allowColumnResizingCheckbox"></div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,26 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to FocusIn and FocusOut events', onClick: clickHandler }"></div>
+<div data-bind="dxSelectBox:{
+    dataSource: selectBoxData,
+    placeholder: 'Select a state',
+    displayExpr: 'name',
+    valueExpr: 'capital',
+    onInitialized: initializedHandler
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to FocusIn and FocusOut events', onClick: clickHandler }"></div>
+    <div ng-model="capital" dx-select-box="{
+        dataSource: selectBoxData,
+        placeholder: 'Select a state',
+        displayExpr: 'name',
+        valueExpr: 'capital',
+        onInitialized: initializedHandler
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="mySelectBox"></div>
+<!--/@jQuery-->

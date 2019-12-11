@@ -1,0 +1,45 @@
+<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    title: 'States',
+    showClearButton: true,
+    placeholder: placeholderText
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">placeholder</div>
+        <div class="dx-field-value" data-bind="dxTextBox: {
+            value: placeholderText
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        title: 'States',
+        showClearButton: true,
+        bindingOptions: {
+            placeholder: 'placeholderText'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">placeholder</div>
+            <div class="dx-field-value" ng-model="placeholderText" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">placeholder</div>
+        <div class="dx-field-value" id="placeholderField"></div>
+    </div>
+</div>
+<!--/@jQuery-->

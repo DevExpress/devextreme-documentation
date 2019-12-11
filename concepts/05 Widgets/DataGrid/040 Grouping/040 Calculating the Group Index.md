@@ -1,0 +1,3 @@
+A group index is an integer number greater or equal to 0 that indicates the  grouping order. The group index is used when specifying an initial grouping order or expanding/collapsing groups in code. Columns that are not used in grouping have the *undefined* group index. The following image illustrates how to calculate the group index.
+
+![DevExtreme DataGrid GroupIndexes](/images/DataGrid/GroupIndexes.png)

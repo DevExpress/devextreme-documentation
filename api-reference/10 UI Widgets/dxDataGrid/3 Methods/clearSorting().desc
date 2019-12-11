@@ -1,0 +1,1 @@
+﻿In this example, grid records are sorted by the *"Year"* column initially. You can also apply sorting to the other columns. To clear sorting settings, click the *"Clear Sorting"* button located below the grid. A click on this button calls the grid's **clearSorting()** method.

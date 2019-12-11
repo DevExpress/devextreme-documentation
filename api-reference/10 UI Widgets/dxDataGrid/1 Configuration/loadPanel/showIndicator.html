@@ -1,0 +1,58 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:400px; max-width:630px; margin: 0 auto">
+    <div style="height:350px; margin: 5px auto" data-bind="dxDataGrid: {
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        scrolling: { mode: 'virtual' },
+        columns: columns,
+        onContentReady: getDataGrid,
+        loadPanel: {
+            showIndicator: checkBoxState
+        }
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'Show the Load Indicator on the Load Panel',
+        value: checkBoxState
+    }"></div>
+    <div data-bind="dxButton: {
+        text: 'Refresh',
+        onClick: refreshGrid
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:400px; max-width:630px; margin: 0 auto">
+    <div style="height:350px; margin: 5px auto" dx-data-grid="{
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        scrolling: { mode: 'virtual' },
+        columns: columns,
+        onContentReady: getDataGrid,
+        bindingOptions: {
+            'loadPanel.showIndicator': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Show the Load Indicator on the Load Panel'
+    }"></div>
+    <div dx-button="{
+        text: 'Refresh',
+        onClick: refreshGrid
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="text-align:center; height:400px; max-width:630px; margin: 0 auto"></div>
+<div style="text-align: center; height:75px; margin: 5px auto">
+    <div id="checkboxContainer" style="height:25px; width:auto"></div>
+    <div id="refreshButton" style="margin: 10px auto"></div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, if you click the pie series, only points with the value equal to 1 billion or more will be selected. The second click on the series unselects all previously selected points using the **deselectPoint(point)** method.

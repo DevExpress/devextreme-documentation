@@ -1,0 +1,1 @@
+﻿In this example, cells that have empty values are colored in *cornsilk* using a handler assigned to the **onCellPrepared** property.

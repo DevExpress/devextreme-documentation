@@ -1,0 +1,1 @@
+In this example, when you hover the mouse pointer over a point, information about the argument of this point appears below the chart. This information is taken from the tag field that is provided for each argument in the chart data source. Additionally, the point hover mode is set to *'allArgumentPoints'*.

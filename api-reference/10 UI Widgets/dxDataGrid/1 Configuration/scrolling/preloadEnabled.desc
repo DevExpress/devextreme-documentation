@@ -1,0 +1,1 @@
+﻿In this example, you can change the value of the **scrolling** | **preloadEnabled** option at runtime using the check box under the grid. Scroll grid records to spot the difference between the enabled and disabled page preloading. Data for this example is obtained from *www.odata.org*.

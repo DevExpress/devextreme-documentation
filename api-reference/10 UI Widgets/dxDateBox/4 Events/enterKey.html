@@ -1,0 +1,20 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to EnterKey event', onClick: clickHandler }"></div>
+<div data-bind="dxDateBox: {
+    value: currentDate,
+    onInitialized: onInitialized
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to EnterKey event', onClick: clickHandler }"></div>
+    <div dx-date-box="{
+        value: currentDate,
+        onInitialized: onInitialized
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myDateBox"></div>
+<!--/@jQuery-->

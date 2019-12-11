@@ -1,0 +1,1 @@
+[tags]form, columns, column number, number of columns, minColWidth, span columns, size qualifier, screen resolution

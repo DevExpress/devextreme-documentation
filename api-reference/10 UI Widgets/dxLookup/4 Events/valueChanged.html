@@ -1,0 +1,56 @@
+﻿<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    valueExpr: 'this',
+    title: 'States',
+    onInitialized: initializedHandler
+}"></div>
+<div class="info dx-state-invisible">
+    <div class="info-image">
+        <img style="margin:5px;" data-bind="attr: { src: imagePath }" />
+    </div>
+    <div class="info-name">
+        <b style="text-align:center; font-size:larger;" data-bind="text: name"></b>
+    </div>
+    <p>Capital: <i data-bind="text: capital"></i></p>
+    <p>Population: <i data-bind="text: population"></i></p>
+    <p>Area: <i data-bind="text: area"></i></p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        valueExpr: 'this',
+        title: 'States',
+        onInitialized: initializedHandler
+    }"></div>
+    <div class="info dx-state-invisible">
+        <div class="info-image">
+            <img style="margin:5px;" ng-attr-src="{{imagePath}}" />
+        </div>
+        <div class="info-name">
+            <b style="text-align:center; font-size:larger;">{{name}}</b>
+        </div>
+        <p>Capital: <i>{{capital}}</i></p>
+        <p>Population: <i>{{population}}</i></p>
+        <p>Area: <i>{{area}}</i></p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="info dx-state-invisible">
+    <div class="info-image">
+        <img style="margin:5px;" id="image" />
+    </div>
+    <div class="info-name">
+        <b style="text-align:center; font-size:larger;" id="stateField"></b>
+    </div>
+    <p>Capital: <i id="capitalField"></i></p>
+    <p>Population: <i id="populationField"></i></p>
+    <p>Area: <i id="areaField"></i></p>
+</div>
+<!--/@jQuery-->

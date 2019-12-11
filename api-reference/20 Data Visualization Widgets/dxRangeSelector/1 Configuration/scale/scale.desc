@@ -1,0 +1,1 @@
+In this example, the scale is divided using the values assigned to the **startValue** and **endValue** fields, and major tick interval is set to 2 using the **majorTickInteval** option. In addition, minor ticks are hidden, because the **showMinorTicks** option is set to *'false'*.

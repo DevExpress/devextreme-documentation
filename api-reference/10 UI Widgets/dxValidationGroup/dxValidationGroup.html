@@ -1,0 +1,77 @@
+﻿<!--@Knockout-->
+<div data-bind="dxValidationGroup: {}">
+    <div data-bind="dxTextBox: {value: login, placeholder: 'Login'}, 
+        dxValidator: {
+            name: 'Login',
+            validationRules: [{
+                type: 'required'
+            }, {
+                type: 'pattern',
+                pattern: '^[a-zA-Z]+$',
+                message: 'Do not use digits.'
+            }]
+        }">
+    </div>
+    <div data-bind="dxTextBox: { value: password, mode: 'password', placeholder:'Password' },
+        dxValidator: { 
+            validationRules: [{
+                type: 'required',
+                message: 'Password is required'
+            }]
+        }"> 
+	</div>
+    <div data-bind="dxValidationSummary: {}"></div>
+    <div data-bind="dxButton: { text: 'Validate and submit', onClick: validateAndSubmit }"></div>
+</div>
+<div data-bind="dxValidationGroup: {}">
+    <div data-bind="dxTextBox: { value: phone, placeholder: 'Input your phone...' },
+		dxValidator: {  name: 'phone', validationRules: [{ type: 'required' },{ type: 'numeric' }] }">
+	</div>
+	<div data-bind="dxValidationSummary: { }"></div>
+	<div data-bind="dxButton: { text: 'Submit', onClick: submit }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-validation-group="{}">
+        <div ng-model="login" dx-text-box="{ placeholder: 'Login' }"
+             dx-validator="{
+                name: 'Login',
+                validationRules: [{
+                    type: 'required'
+                }, {
+                    type: 'pattern',
+                    pattern: '^[a-zA-Z]+$',
+                    message: 'Do not use digits.'
+                }]
+            }">
+        </div>
+        <div ng-model="password" dx-text-box="{ mode: 'password', placeholder:'Password' }"
+             dx-validator="{
+                validationRules: [{
+                    type: 'required',
+                    message: 'Password is required'
+                }]
+            }">
+        </div>
+        <div dx-validation-summary="{}"></div>
+        <div dx-button="{ text: 'Validate and submit', onClick: validateAndSubmit }"></div>
+    </div>
+    <div dx-validation-group="{}">
+        <div ng-model="phone" dx-text-box="{ placeholder: 'Input your phone...' }"
+             dx-validator="{ name: 'phone', validationRules: [ { type: 'required' },{ type: 'numeric' } ] }">
+        </div>
+	    <div dx-validation-summary="{ }"></div>
+	    <div dx-button="{ text: 'Submit', onClick: submit }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="login"></div>
+<div id="password"></div>
+<div id="summary1"></div>
+<div id="button1"></div>
+<div id="phone"></div>
+<div id="summary2"></div>
+<div id="button2"></div>
+<!--/@jQuery-->

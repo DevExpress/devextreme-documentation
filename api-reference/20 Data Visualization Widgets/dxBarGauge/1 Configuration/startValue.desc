@@ -1,0 +1,1 @@
+In this example, the range of values that can be indicated by bars is specified using the **startValue** and **endValue** options. Note that here the start value is greater than the end value. As a result, the bars grow from the right end of the bar tracks.

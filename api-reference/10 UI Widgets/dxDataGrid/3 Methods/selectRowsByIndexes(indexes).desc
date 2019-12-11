@@ -1,0 +1,1 @@
+In this example, you can select grid records using the tag box located under the grid. The selection is performed by calling the **selectRowsByIndexes(indexes)** method. Note that group rows cannot be selected even though their indexes can be passed to this method.

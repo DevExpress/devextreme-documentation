@@ -1,0 +1,35 @@
+In the **List** widget, selection is disabled by default. To enable it, choose one of selection modes using the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') option.
+
+    <!--JavaScript-->
+    $(function() {
+		$("#listContainer").dxList({
+            // ...
+            selectionMode: "single" // or "multiple" | "all" | "none" (disables selection)
+        });
+    });
+
+To select a **List** item, an end user simply clicks or taps it. Selected items become shaded. If you want to indicate selected items more manifestly, set the [showSelectionControls](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#showSelectionControls') option to *true*. This setting adds a check box to each item on the **List**. Also, make this setting if you use the *"all"* **selectionMode**. Otherwise, the *"Select All"* check box will be missing.
+
+    <!--JavaScript-->
+    $(function() {
+		$("#listContainer").dxList({
+            // ...
+            showSelectionControls: true
+        });
+    });
+
+When data in the **List** is [paginated](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/Widgets/List/Paging/'), you can choose whether the *"Select All"* check box will select all items on all pages or items on the currently rendered pages only. To make this choice, specify the [selectAllMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectAllMode') option.
+
+    <!--JavaScript-->
+    $(function() {
+		$("#listContainer").dxList({
+            // ...
+            selectAllMode: "allPages" // or "page"
+        });
+    });
+
+<a href="https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/jQuery/Light/" class="button orange small fix-width-155" target="_blank">View Demo</a>
+
+#####See Also#####
+- [Widget Basics - Create and Configure a Widget](/concepts/00%20Getting%20Started/10%20Widget%20Basics%20-%20jQuery/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Create_and_Configure_a_Widget/')
+- [List - Localization](/concepts/05%20Widgets/List/50%20Localization.md '/Documentation/Guide/Widgets/List/Localization/')

@@ -1,0 +1,58 @@
+﻿<!--@Knockout-->
+<div data-bind="dxList: {
+    dataSource: listDataSource,
+    editEnabled: true,
+    height: '80%',
+    allowItemDeleting: true,
+    itemDeleteMode: deleteMode
+}">
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">itemDeleteMode</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            dataSource: deleteModes,
+            value: deleteMode
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-list="{
+        dataSource: listDataSource,
+        editEnabled: true,
+        height: '80%',
+        allowItemDeleting: true,
+        bindingOptions: {
+            itemDeleteMode: 'deleteMode'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div style="margin-top: 15px;" class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">itemDeleteMode</div>
+            <div class="dx-field-value" ng-model="deleteMode" dx-select-box="{
+                dataSource: deleteModes
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myList"></div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">itemDeleteMode</div>
+        <div class="dx-field-value" id="deleteModeSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

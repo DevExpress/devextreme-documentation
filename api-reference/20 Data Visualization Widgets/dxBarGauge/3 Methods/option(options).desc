@@ -1,0 +1,1 @@
+In this example, the **option(options)** method is used to set the value of both the **tooltip** | **enabled**  and **animation** | **enabled** options at runtime. To change this value, use the check box below. Hover over a bar to see whether any tooltips appear or not. In addition, change the set of indicated values using the radio buttons to check whether animation performs. 

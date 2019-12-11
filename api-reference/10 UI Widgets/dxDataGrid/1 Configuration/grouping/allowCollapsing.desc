@@ -1,0 +1,1 @@
+﻿In this example, you can change the value of the **allowCollapsing** option at runtime using the check box under the grid. To see the changes, drag a column header onto the group panel and then try to collapse one of the appeared groups.

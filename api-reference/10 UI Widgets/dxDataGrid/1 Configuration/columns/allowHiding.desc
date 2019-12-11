@@ -1,0 +1,1 @@
+﻿In this example, you can hide grid columns by dragging their headers onto the column chooser panel. To invoke this panel, click the column chooser icon. However, the *"Author"*, *"Title"* and *"Year"* columns cannot be hidden as the **allowHiding** option is set to *false* for them.

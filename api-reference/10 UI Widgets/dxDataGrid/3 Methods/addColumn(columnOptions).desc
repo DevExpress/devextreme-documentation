@@ -1,0 +1,1 @@
+﻿In this example, you can add columns to a grid at runtime using the controls below the grid. Choose a data field for a new column from the select box. Then, click the *'Add Column'* button to generate a column on the base of the chosen data field.

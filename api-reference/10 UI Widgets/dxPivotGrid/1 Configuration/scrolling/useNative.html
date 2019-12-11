@@ -1,0 +1,98 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:280px; max-width:750px; margin:0 auto"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Use Native Scrolling:&nbsp;
+    <div id="selectBoxContainer" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:280px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: {
+        store: sales,
+        fields: [{
+            dataField: 'region',
+            width: 120,
+            area: 'row',
+            expanded: true 
+        }, {
+            dataField: 'city',
+            width: 150,
+            area: 'row',
+            selector: function (data) {
+                return data.city + ' (' + data.country + ')';
+            }
+        }, {
+            dataField: 'date',
+            dataType: 'date',
+            area: 'column'
+        }, {
+            dataField: 'amount',
+            summaryType: 'sum',
+            format: 'currency',
+            area: 'data'
+        }]
+    },
+    fieldChooser: { enabled: false },
+    scrolling: {
+        useNative: useNativeScrolling
+    }
+}"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Use Native Scrolling:&nbsp;
+    <div style="display:inline-block; vertical-align:middle" data-bind="dxSelectBox: {
+        dataSource: [
+            { name: 'auto', value: 'auto' },
+            { name: 'true', value: true },
+            { name: 'false', value: false }
+        ],
+        valueExpr: 'value',
+        displayExpr: 'name',
+        value: useNativeScrolling
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:280px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: {
+            store: sales,
+            fields: [{
+                dataField: 'region',
+                width: 120,
+                area: 'row',
+                expanded: true
+            }, {
+                dataField: 'city',
+                width: 150,
+                area: 'row',
+                selector: cityText
+            }, {
+                dataField: 'date',
+                dataType: 'date',
+                area: 'column'
+            }, {
+                dataField: 'amount',
+                summaryType: 'sum',
+                format: 'currency',
+                area: 'data'
+            }]
+        },
+        fieldChooser: { enabled: false },
+        bindingOptions: {
+            'scrolling.useNative': 'useNativeScrolling'
+        }
+    }"></div>
+    <div style="height:40px; margin-top:5px; text-align:center">
+        Use Native Scrolling:&nbsp;
+        <div style="display:inline-block; vertical-align:middle" ng-model="useNativeScrolling" dx-select-box="{
+            dataSource: [
+                { name: 'auto', value: 'auto' },
+                { name: 'true', value: true },
+                { name: 'false', value: false }
+            ],
+            valueExpr: 'value',
+            displayExpr: 'name'
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

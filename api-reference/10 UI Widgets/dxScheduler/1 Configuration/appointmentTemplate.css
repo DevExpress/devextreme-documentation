@@ -1,0 +1,22 @@
+﻿.wrapper{
+    padding: 20px;
+}
+.demo-page{
+    height: 700px;
+    margin: 0 auto;
+}
+.appointment-header{
+    background-color: yellow;
+    border-top: solid 1px blue;
+    padding: 5px;
+    text-align: center;
+    color: blue;
+    width: 100%;
+    white-space: normal;
+    font-size: small;
+}
+.appointment-time{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}

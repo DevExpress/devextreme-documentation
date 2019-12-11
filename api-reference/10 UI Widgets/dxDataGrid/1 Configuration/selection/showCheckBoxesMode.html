@@ -1,0 +1,64 @@
+﻿<!--@Knockout-->
+<div style="text-align:center;height:500px; width:800px; margin: 0 auto">
+    <div style="max-height:450px" data-bind="dxDataGrid: {
+        height: 500,
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        columns: columns,
+        paging: { pageSize: 8 },
+        selection: {
+            mode: 'multiple',
+            showCheckBoxesMode: showCheckBoxesMode
+        }
+    }"></div>
+    <div style="height:70px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;text-align:center">
+        <div style="display:table-cell;vertical-align:middle">Select a Checkbox Row Display Policy:&nbsp;</div>
+        <div style="display:table-cell;width:150px" data-bind="dxSelectBox: {
+            items: showCheckBoxesModes,
+            value: showCheckBoxesMode
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:500px; max-width:800px; margin: 0 auto">
+    <div style="height:500px; width:800px">
+        <div style="max-height:450px" dx-data-grid="{
+            height: 500,
+            dataSource: {
+                store: {
+                    type: 'odata',
+                    url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+                }
+            },
+            columns: columns,
+            paging: { pageSize: 8 },
+            selection: {
+                mode: 'multiple',
+            },
+            bindingOptions: {
+                'selection.showCheckBoxesMode': 'showCheckBoxesMode'
+            }
+        }"></div>
+        <div style="height:70px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;text-align:center">
+            <div style="display:table-cell;vertical-align:middle">Select a Checkbox Row Display Policy:&nbsp;</div>
+            <div style="display:table-cell;width:150px" ng-model="showCheckBoxesMode" dx-select-box="{
+                items: showCheckBoxesModes
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center;height:500px; width:800px; margin: 0 auto">
+    <div id="gridContainer" style="max-height:450px"></div>
+    <div style="height:70px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;text-align:center">
+        <div style="display:table-cell;vertical-align:middle">Select a Checkbox Row Display Policy:&nbsp;</div>
+        <div style="display:table-cell;width:150px" id="selectBoxContainer"></div>
+    </div>
+</div>
+<!--/@jQuery-->

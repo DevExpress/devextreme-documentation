@@ -1,0 +1,1 @@
+In this example, gauge animation lasts for ten seconds because the **duration** option is set to 10000.

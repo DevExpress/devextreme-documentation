@@ -1,0 +1,1 @@
+In this example, you can select the summary type of the *"Sales"* data field at runtime. Right-click this data field on the field panel and choose the required summary type. Note that along with the summary type, the data field's caption and the format of summary values change.

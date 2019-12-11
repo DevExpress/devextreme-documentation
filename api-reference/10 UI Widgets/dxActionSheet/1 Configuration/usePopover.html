@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div id="showButton" data-bind="dxButton:{ text:'Show action sheet', onClick: showActionSheet }"></div>
+<div data-bind="dxActionSheet: { 
+    dataSource: actionSheetData,
+    visible: actionSheetVisible,
+    showTitle: false,
+    usePopover: displayAsPopover,
+    target: '#showButton'
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">usePopover</div>
+    <div class="dx-field-value" data-bind="dxSwitch: { value: displayAsPopover }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div id="showButton" dx-button="{text:'Show action sheet', onClick: showActionSheet}"></div>
+    <div dx-action-sheet="{ 
+        dataSource: actionSheetData,
+        target: '#showButton',
+        showTitle: false,
+        bindingOptions: {
+            visible: 'actionSheetVisible',
+            usePopover: 'displayAsPopover'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">usePopover</div>
+            <div class="dx-field-value" ng-model="displayAsPopover" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="showButton"></div>
+<div id="myActionSheet"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">usePopover</div>
+    <div class="dx-field-value" id="usePopoverSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

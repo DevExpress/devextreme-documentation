@@ -1,0 +1,46 @@
+﻿<!--@Knockout-->
+<div id="myScrollView" data-bind="dxScrollView: {
+    direction: scrollingDirection
+}">
+    <div id="textContainer"></div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">direction</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: { 
+            items: directions,
+            value: scrollingDirection
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div id="myScrollView" dx-scroll-view="{
+        bindingOptions: {
+            direction: 'scrollingDirection'
+        }
+    }">
+        <div id="textContainer"></div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">direction</div>
+            <div class="dx-field-value" ng-model="scrollingDirection" dx-select-box="{
+                items: directions
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myScrollView">
+    <div id="textContainer"></div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">direction</div>
+        <div class="dx-field-value" id="directionSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, you can change the **allowFiltering** option of the *"Region"* row field at runtime. Turn the switch below the pivot grid to *true*. Then, invoke the Field Chooser using the icon in the upper-left corner of the pivot grid. You can notice the filtering icon that accompanies the *"Region"* field. This icon can be used to apply a filter to this field.

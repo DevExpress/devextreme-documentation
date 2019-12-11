@@ -1,0 +1,1 @@
+In this example, you can change the visibility of the column chooser using the check box below the grid. After the column chooser has been hidden, the area occupied by it becomes free. In order to adapt the layout of the grid to the container, the grid's **repaint()** method is called. The same operation is required after the column chooser has been made visible.

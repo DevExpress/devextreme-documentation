@@ -1,0 +1,1 @@
+In this example, you can call the **totalCount()** method by clicking the *"Get Total Count"* button located under the grid. Note that if grid records are filtered, this method returns a different value.

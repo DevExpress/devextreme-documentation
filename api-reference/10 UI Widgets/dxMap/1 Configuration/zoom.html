@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div data-bind="dxTabs: {
+    dataSource: providers,
+    onItemClick: tabClicked,
+    selectedIndex: 1
+}"></div>
+<p>Zoom: <span data-bind="text: mapZoom"></span></p>
+<div data-bind="dxSlider: { min: 0, max: 22, value: mapZoom }"></div>
+<div data-bind="dxMap: {
+    center: '40.749825, -73.987963',
+    zoom: 13,
+    provider: currentProvider,
+    zoom: mapZoom
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-tabs="{
+        dataSource: providers,
+        onItemClick: tabClicked,
+        selectedIndex: 1
+    }"></div>
+    <p>Zoom: {{mapZoom}}</p>
+    <div ng-model="mapZoom" dx-slider="{
+        min: 0,
+        max: 22
+    }"></div>
+    <div dx-map="{
+        center: '40.749825, -73.987963',
+        zoom: 13,
+        bindingOptions: {
+            provider: 'currentProvider',
+            zoom: 'mapZoom'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="providersTabs"></div>
+<p>Zoom: <span id="zoomValue">1</span></p>
+<div id="zoomSlider"></div>
+<div id="myMap"></div>
+<!--/@jQuery-->

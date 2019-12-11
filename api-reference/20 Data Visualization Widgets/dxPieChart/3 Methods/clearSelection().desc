@@ -1,0 +1,1 @@
+﻿In this example, click a slice to select it. Since the **pointSelectionMode** is set to *multiple*, more than one slice can be selected. To deselect all the slices, click the *'Clear selected points'* button. The chart's **clearSelection()** method will be called.

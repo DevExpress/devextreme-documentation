@@ -1,0 +1,1 @@
+**View (Type Script)** template is similar to the [View](/concepts/50%20VS%20Integration/05%20Project%20Item%20Templates/10%20View.md '/Documentation/Guide/VS_Integration/Project_Item_Templates/#View') item template, but the TypeScript language is used in it.

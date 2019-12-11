@@ -1,0 +1,53 @@
+<!--@Knockout-->
+<div data-bind="dxTabs: {
+    dataSource: tabs,
+    onSelectionChanged: selectionChanged,
+    selectionMode: selectionMode,
+    selectedItems: selectedItems
+}"></div>
+<div class="tabContent" data-bind="html: tabContent"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectionMode</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: ['single', 'multi'],
+            value: selectionMode
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-tabs="{
+        dataSource: tabs,
+        onSelectionChanged: selectionChanged,
+        bindingOptions: {
+            selectedIndex: 'selectedTab',
+            selectionMode: 'selectionMode',
+            selectedItems: {
+                deep: true,
+                dataPath: 'selectedItems'
+            }
+        }
+    }"></div>
+    <div class="tabContent" ng-bind-html="tabContent"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">selectionMode</div>
+            <div class="dx-field-value" ng-model="selectionMode" dx-select-box="{
+                items: ['single', 'multi']
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTabs"></div>
+<div class="tabContent" id="myTabContent">Select a tab</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectionMode</div>
+        <div class="dx-field-value" id="modeSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

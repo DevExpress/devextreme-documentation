@@ -1,0 +1,3 @@
+To create an ASP.NET MVC application that involves DevExtreme widgets, use the **ASP.NET MVC 5 Application** project template. It allows you to employ [DevExtreme ASP.NET MVC Wrappers](/concepts/35%20ASP.NET%20MVC%20Wrappers/20%20Fundamentals '/Documentation/Guide/ASP.NET_MVC_Wrappers/Fundamentals/') for configuring DevExtreme widgets.
+
+Folders in this project template have a structure [typical for an ASP.NET MVC application](https://msdn.microsoft.com/en-us/library/dd410120(v=vs.100).aspx#Anchor_3). Their standard contents are extended by scripts, libraries and stylesheets required by DevExtreme ASP.NET MVC Wrappers and DevExtreme itself.

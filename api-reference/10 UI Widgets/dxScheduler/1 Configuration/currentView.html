@@ -1,0 +1,61 @@
+﻿<!--@Knockout-->
+<div class="demo-page">
+    <div class="wrapper">
+        <div class="dx-fieldset" style="width: 300px">
+            <div class="dx-field">
+                <div class="dx-field-label">currentView</div>
+                <div class="dx-field-value" data-bind="dxSelectBox: {
+                    items: schedulerViews,
+                    value: selectedView
+                }"></div>
+            </div>
+        </div>
+        <div data-bind="dxScheduler: {
+            dataSource: schedulerData,
+            startDayHour: 9,
+            endDayHour: 18,
+            views: ['day', 'week', 'workWeek', 'month'],
+            currentView: selectedView,
+            height: 650
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="wrapper">
+        <div class="dx-fieldset" style="width: 300px">
+            <div class="dx-field">
+                <div class="dx-field-label">currentView</div>
+                <div class="dx-field-value" ng-model="selectedView" dx-select-box="{
+                    items: schedulerViews
+                }"></div>
+            </div>
+        </div>
+        <div dx-scheduler="{
+            dataSource: schedulerData,
+            startDayHour: 9,
+            endDayHour: 18,
+            height: 650,
+            views: ['day', 'week', 'workWeek', 'month'],
+            bindingOptions: {
+                currentView: 'selectedView'
+            }
+        }">
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="wrapper">
+        <div class="dx-fieldset" style="width: 300px">
+            <div class="dx-field">
+                <div class="dx-field-label">currentView</div>
+                <div class="dx-field-value" id="viewSelector"></div>
+            </div>
+        </div>
+        <div id="myScheduler"></div>
+    </div>
+</div>
+<!--/@jQuery-->

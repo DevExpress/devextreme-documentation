@@ -1,0 +1,34 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to Scroll event', onClick: clickHandler }"></div>
+<div data-bind="dxList: {
+    dataSource: listDataSource,
+    scrollingEnabled: true,
+    height: 370,
+    onInitialized: onInitialized
+}">
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to Scroll event', onClick: clickHandler }"></div>
+    <div dx-list="{
+        dataSource: listDataSource,
+        onInitialized: onInitialized,
+        height: 370,
+        scrollingEnabled: true
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myList"></div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+﻿In this example, a click on a column applies the *"clicked"* style to this column. This operation is performed in code by changing the [cssClass](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns#cssClass) option of the clicked column using the **columnOption(id, optionName, optionValue)** method.

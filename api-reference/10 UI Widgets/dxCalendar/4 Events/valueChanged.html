@@ -1,0 +1,14 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div>
+<div data-bind="dxCalendar: { onInitialized: onInitialized }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div>
+    <div dx-calendar="{ onInitialized: onInitialized }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myCalendar"></div>
+<!--/@jQuery-->

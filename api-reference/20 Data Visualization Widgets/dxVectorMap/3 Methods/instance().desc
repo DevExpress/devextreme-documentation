@@ -1,0 +1,5 @@
+﻿In the following example, the **instance()** method is used to get access to the map options. This method is called not like the other methods. To call the **instance()** method, the following construction is used.
+
+    <!--JavaScript-->$('#mapContainer').dxVectorMap('instance')
+
+Use the drop-down menu below to choose which palette to use for coloring the map.

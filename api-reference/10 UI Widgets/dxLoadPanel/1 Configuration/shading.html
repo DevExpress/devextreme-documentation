@@ -1,0 +1,44 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{text: 'Load', onClick: startLoading}"></div>
+<div data-bind="dxLoadPanel:{
+    message: 'Loading...',
+    visible: loadPanelVisible,
+    shading: shadingValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">shading</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: shadingValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{ text: 'Load', onClick: startLoading }"></div><br />
+    <div id="myLoadPanel" dx-load-panel="{
+        message: 'Loading...',
+        bindingOptions: { 
+            visible: 'loadPanelVisible',
+            shading: 'shadingValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">shading</div>
+            <div class="dx-field-value" ng-model="shadingValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="loadButton"></div><br />
+<div id="myLoadPanel"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">shading</div>
+        <div class="dx-field-value" id="shadingSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

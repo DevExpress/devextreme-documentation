@@ -1,0 +1,37 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:280px; max-width:750px; margin:0 auto"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Choose a Column:&nbsp;
+    <div id="selectBoxContainer" style="width:250px; display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:280px; max-width:750px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: pivotGridDataSource
+}"></div>
+<div style="height:40px; margin-top:5px; text-align:center">
+    Choose a Column:&nbsp;
+    <div style="width:250px; display:inline-block; vertical-align:middle" data-bind="dxSelectBox: {
+        dataSource: selectBoxDataSource,
+        displayExpr: 'text',
+        valueExpr: 'value',
+        onValueChanged: changeSummaryPath
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:280px; max-width:750px; margin:0 auto" dx-pivot-grid="{
+        dataSource: pivotGridDataSource
+    }"></div>
+    <div style="height:40px; margin-top:5px; text-align:center">
+        Choose a Column:&nbsp;
+        <div style="width:250px; display:inline-block; vertical-align:middle" dx-select-box="{
+            dataSource: selectBoxDataSource,
+            displayExpr: 'text',
+            valueExpr: 'value',
+            onValueChanged: changeSummaryPath
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

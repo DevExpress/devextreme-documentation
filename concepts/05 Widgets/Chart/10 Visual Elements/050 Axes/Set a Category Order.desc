@@ -1,0 +1,1 @@
+This example shows how to specify the sequence of arguments on the argument axis using the **categories** array. Note that the *"June"* argument is omitted from this array. However, it appears on the axis, because omitted arguments are added to the end of the **categories** array.

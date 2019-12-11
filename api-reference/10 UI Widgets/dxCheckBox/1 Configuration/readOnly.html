@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div class="checkBox" data-bind="dxCheckBox: { 
+    text: 'Check me',
+    readOnly: readOnlyValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">readOnly</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: readOnlyValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="checkBox" dx-check-box="{ 
+        text: 'Check me',
+        bindingOptions: {
+            readOnly: 'readOnlyValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">readOnly</div>
+            <div class="dx-field-value" ng-model="readOnlyValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="checkBox" id="myCheckBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">readOnly</div>
+        <div class="dx-field-value" id="readOnlySelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

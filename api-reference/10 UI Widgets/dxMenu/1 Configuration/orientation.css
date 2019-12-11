@@ -1,0 +1,22 @@
+body{
+    text-align:center;
+}
+.demo-page{
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+    text-align: center;
+}
+.option{
+    width: auto;
+    margin: -70px 40px;
+    border-top: dotted 1px #888;
+    border-bottom: dotted 1px #888;
+}
+.option > div{
+    margin: 5px;
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}

@@ -1,0 +1,1 @@
+In this example, the displayed chart is indented from the bottom of the background. The indent is calculated using the value that is set to the **bottomIndent** option.

@@ -1,0 +1,1 @@
+Click the *'Change the container size'* button to switch between two sizes of the widget container. The **render()** method is used to redraw the widget after the container size changes.

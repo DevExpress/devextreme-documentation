@@ -1,0 +1,1 @@
+﻿In this example, the top ten most populated countries are colored in *'dodgerblue'* using the **color** option of the object returned by the **customize** function. The other countries are colored in *'powderblue'* using the **color** option of the **layer**.

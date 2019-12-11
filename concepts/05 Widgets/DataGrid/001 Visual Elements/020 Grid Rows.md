@@ -1,0 +1,17 @@
+Along with [grid columns](/concepts/05%20Widgets/DataGrid/001%20Visual%20Elements/010%20Grid%20Columns '/Documentation/Guide/Widgets/DataGrid/Visual_Elements/#Grid_Columns'), grid rows are a fundamental element in the **DataGrid** widget. A grid row is a grid element representing a structured data item. In fact, a grid can be thought of as consisting of rows and columns.
+
+![DevExtreme DataGrid GridRows](/images/DataGrid/GridRows.png)
+
+In **DataGrid**, you specify data for grid columns mostly, while grid rows are formed automatically based on the contents of data source objects. Normally, a grid row is generated for each data source object.
+
+To identify a row, a row index is used. If [paging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/paging '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/') is enabled (that is, data is divided into portions), grid rows are indexed beginning with 0 on each page. Otherwise, grid rows are indexed beginning with 0 continuously. Note that [group rows](/concepts/05%20Widgets/DataGrid/001%20Visual%20Elements/100%20Group%20Rows '/Documentation/Guide/Widgets/DataGrid/Visual_Elements/#Group_Rows') are counted too and thus have row indexes.
+
+![DevExtreme DataGrid GridRows](/images/DataGrid/GridRows_RowIndexes.png)
+
+There are several features of grid rows that you can configure. They are listed below.
+
+* **Appearance**		
+By default, all grid rows are displayed on a monochrome area without visual distinctions between them. If you need to distinguish one row from its neighboring rows visually, set the [rowAlternationEnabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/rowAlternationEnabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#rowAlternationEnabled') option to *true*. In this case, ordinary-looking rows will alternate with slightly shaded ones. Also, grid rows can be highlighted when the mouse pointer moves over them. To enable this capability, set the [hoverStateEnabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/hoverStateEnabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#hoverStateEnabled') property to *true*. Additionally, you can change the visibility of row lines using the [showRowLines](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/showRowLines.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#showRowLines') property.
+
+* **Customization**		
+After a row has been rendered, you can apply final customizations to it. For this purpose, implement a function that handles the [rowPrepared](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events/rowPrepared.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowPrepared') event and assign it to the [onRowPrepared](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onRowPrepared.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onRowPrepared') property. Usually, handling the **rowPrepared** event is sufficient for grid rows to appear according to your needs. However, some scenarios require defining grid rows in full. In such a case, implement a row template and assign it to the grid's [rowTemplate](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/rowTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#rowTemplate') property.

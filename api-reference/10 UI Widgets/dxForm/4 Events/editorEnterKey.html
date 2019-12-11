@@ -1,0 +1,26 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div data-bind="dxButton: { text: 'Subscribe to EditorEnterKey event', onClick: clickHandler }"></div>
+    <div data-bind="dxForm: {
+        formData: companyData,
+        colCount: 2,
+        onInitialized: onInitialized
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div data-bind="dxButton: { text: 'Subscribe to EditorEnterKey event', onClick: clickHandler }"></div>
+    <div data-bind="dxForm: {
+        formData: companyData,
+        colCount: 2,
+        onInitialized: onInitialized
+        }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div id="button"></div>
+    <div id="myForm"></div>
+</div>
+<!--/@jQuery-->

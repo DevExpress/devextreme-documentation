@@ -1,0 +1,16 @@
+body{
+  text-align: center;
+}
+.button {
+    margin-top: 25px;
+}
+.tile {
+  border-radius: .5em;
+  text-align: center;
+  color: white;
+  background: gray;
+  padding: 5px;
+}
+#tileView{
+  background-color: lightgray;
+}

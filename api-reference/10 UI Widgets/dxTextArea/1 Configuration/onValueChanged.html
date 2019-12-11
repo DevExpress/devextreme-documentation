@@ -1,0 +1,19 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTextArea: {
+    height: 300,
+    onValueChanged: valueChanged,
+    placeholder: 'Type text here'
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-text-area="{ 
+        height: 300,
+        onValueChanged: valueChanged,
+        placeholder: 'Type text here'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTextArea"></div>
+<!--/@jQuery-->

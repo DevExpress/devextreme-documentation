@@ -1,0 +1,6 @@
+<div class="button" data-bind="dxButton: { text: 'Show action sheet', onClick: showActionSheet }"></div>
+<div id="actionSheetContainer" data-bind="dxActionSheet: {
+  dataSource: actionSheetData,
+  visible: actionSheetVisible,
+  onContentReady: processContentReady
+}"></div>

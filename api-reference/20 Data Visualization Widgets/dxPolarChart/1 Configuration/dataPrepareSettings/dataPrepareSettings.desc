@@ -1,0 +1,1 @@
+In this example, the data source has values of different types. These value types are checked and converted into the axis type as the **checkTypeForAllData** and **convertToAxisDataType** options are set to *true*. In addition, the series points are sorted in descending order by values using the function assigned to the **sortingMethod** option.

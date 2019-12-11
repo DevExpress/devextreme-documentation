@@ -1,0 +1,1 @@
+﻿In this example, grid columns can be resized by dragging their borders as the **allowColumnResizing** option is set to *true*. However, the *"Title"* column, which has its width specified, is restricted from being resized by setting its **allowResizing** option to *false*.

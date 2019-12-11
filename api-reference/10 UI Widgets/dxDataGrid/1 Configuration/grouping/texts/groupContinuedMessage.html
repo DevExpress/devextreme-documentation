@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div style="height:450px; max-width:800px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: orders,
+    columns: columns,
+    paging: { pageSize: 9 },
+    groupPanel: { visible: true },
+    grouping: {
+        texts: {
+            groupContinuedMessage: groupContinuedMessage
+        }
+    }
+}"></div>
+<div style="width:300px; margin:5px auto 5px auto;" data-bind="dxTextBox: {
+    placeholder: 'Enter a text for the group continued message',
+    value: groupContinuedMessage
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:500px;" ng-controller="demoController">
+    <div style="height:450px; max-width:800px; margin: 0 auto" dx-data-grid="{
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 9 },
+        groupPanel: { visible: true },
+        bindingOptions: {
+            'grouping.texts.groupContinuedMessage': 'groupContinuedMessage'
+        }
+    }"></div>
+    <div style="width:300px; margin:5px auto 5px auto;" ng-model="groupContinuedMessage" dx-text-box="{
+        placeholder: 'Enter a text for the group continued message'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:500px">
+    <div id="gridContainer" style="height:450px; max-width:800px; margin: 0 auto"></div>
+    <div style="width:300px; margin:5px auto 5px auto;" id="groupContinuedMessage"></div>
+</div>
+<!--/@jQuery-->

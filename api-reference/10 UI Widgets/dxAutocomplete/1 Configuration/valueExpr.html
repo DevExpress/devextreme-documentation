@@ -1,0 +1,54 @@
+﻿<!--@Knockout-->
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    placeholder: 'Type country name',
+    valueExpr: currentExpr
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        Country: <b data-bind="text: country"></b><br />
+        <span style="color:grey;">Capital: <span data-bind="text: capital"></span></span>
+    </div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">valueExpr</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: {
+        dataSource: fields,
+        value: currentExpr
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="autocomplete" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        placeholder: 'Type country name',
+        bindingOptions: {
+            valueExpr: 'currentExpr'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            Country: <b>{{itemObj.country}}</b><br />
+            <span style="color:grey;">Capital: {{itemObj.capital}}</span>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">valueExpr</div>
+            <div class="dx-field-value" ng-model="currentExpr" dx-select-box="{
+                dataSource: fields
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="autocomplete" id="myAutocomplete"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">valueExpr</div>
+    <div class="dx-field-value" id="exprSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+﻿In this example, you can show and hide tooltips using the corresponding buttons below. When clicking the *Show next tooltip* button, the **showTooltip()** method of the next point in the order will be called. When clicking the **Hide all tooltips** button, the polar chart's **hideTooltip()** method is called. This method clears the chart from tooltips.

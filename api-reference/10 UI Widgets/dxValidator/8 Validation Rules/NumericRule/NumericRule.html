@@ -1,0 +1,25 @@
+﻿<!--@Knockout-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+	<div data-bind="dxTextBox: { value: phone, placeholder: 'Input your phone...' },
+		dxValidator: {  validationRules: [{ type: 'numeric' }] }">
+	</div>
+	<div data-bind="dxValidationSummary: { }"></div>
+	<div data-bind="dxButton: { text: 'Submit', onClick: submit }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:200px;max-width:200px;margin:0px auto" ng-controller="demoController">
+    <div ng-model="phone" dx-text-box="{ placeholder: 'Input your phone...' }"
+         dx-validator="{ validationRules: [ { type: 'numeric' } ] }">
+    </div>
+	<div dx-validation-summary="{ }"></div>
+	<div dx-button="{ text: 'Submit', onClick: submit }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+    <div id="phone"></div>
+    <div id="summary"></div>
+    <div id="button"></div>
+</div>
+<!--/@jQuery-->

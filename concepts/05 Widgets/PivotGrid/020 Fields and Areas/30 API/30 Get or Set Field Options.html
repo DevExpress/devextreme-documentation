@@ -1,0 +1,34 @@
+﻿<!--@jQuery-->
+<div style="text-align:center"><div id="relocateFieldButton"></div></div>
+<div id="pivotGridContainer" style="height:400px; width:100%; margin-top: 10px"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="text-align:center"><div id="relocateFieldButton" data-bind="dxButton: {
+    text: 'Relocate the Year field',
+    onClick: buttonClicked
+}"></div></div>
+<div id="pivotGridContainer" style="height:400px; width:100%; margin-top: 10px" data-bind="dxPivotGrid: {
+    dataSource: pivotGridDataSource,
+    allowExpandAll: true,
+    allowFiltering: true,
+    allowSorting: true,
+    allowSortingBySummary: true,
+    fieldChooser: { enabled: false }
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="exampleController">
+    <div style="text-align:center"><div id="relocateFieldButton" dx-button="{
+        text: 'Relocate the Year field',
+        onClick: buttonClicked
+    }"></div></div>
+    <div id="pivotGridContainer" style="height:400px; width:100%; margin-top: 10px" dx-pivot-grid="{
+        dataSource: pivotGridDataSource,
+        allowExpandAll: true,
+        allowFiltering: true,
+        allowSorting: true,
+        allowSortingBySummary: true,
+        fieldChooser: { enabled: false }
+    }"></div>
+</div>
+<!--/@AngularJS-->

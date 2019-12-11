@@ -1,0 +1,1 @@
+﻿In this example, the 'numeric' rule is applied to the editor. This rule demands that the editor has a numeric value. To check this rule, specify a string in the editor.

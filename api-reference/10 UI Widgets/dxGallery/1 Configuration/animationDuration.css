@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+}
+.dx-field .dx-field-label{
+    width:60%;
+}
+.dx-field .dx-field-value{
+    width:40% !important;
+}

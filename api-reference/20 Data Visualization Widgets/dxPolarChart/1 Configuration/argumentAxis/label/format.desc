@@ -1,0 +1,1 @@
+﻿The example below represents a chart with formatted argument axis labels. The format of these labels is set to 'fixedPoint' using the **format** option.

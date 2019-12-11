@@ -1,0 +1,1 @@
+﻿In this example, the *"Freight"* column contains values in a *'fixedPoint'* format with a precision of 2. These parameters are specified using the **format** option of this column.

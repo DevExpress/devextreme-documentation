@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div data-bind="dxSlider: {
+    min: 0,
+    max: 100,
+    value: 38,
+    label: {
+        visible: labelVisible
+    }
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Show label</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { value: labelVisible }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-slider="{
+        min: 0,
+        max: 100,
+        value: 38,
+        bindingOptions: {
+            'label.visible': 'labelVisible'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Show label</div>
+            <div class="dx-field-value" ng-model="labelVisible" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlider"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Show label</div>
+        <div class="dx-field-value" id="labelSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+﻿In this example, editing is enabled in a grid using the **editing** | **allowUpdating** option. However, you cannot edit values in the *"Author"*, *"Title"* and *"Year"* columns as the **allowEditing** option for them is set to *false*.

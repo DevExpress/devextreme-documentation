@@ -1,0 +1,117 @@
+﻿<!--@Knockout-->
+<div id="myLookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    title: 'States',
+    onValueChanged: lookupValueChanged,
+    displayExpr: displayExprValue,
+    valueExpr: valueExprValue,
+    displayValue: displayedText,
+    value: currentValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">displayExpr</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            dataSource: displayExprValues,
+            value: displayExprValue,
+            onValueChanged: exprChanged
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">valueExpr</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            dataSource: valueExprValues,
+            value: valueExprValue,
+            onValueChanged: exprChanged
+        }"></div>
+    </div>
+</div>
+<div class="info" data-bind="css: { 'dx-state-invisible': hideDisplayedText() }">
+    <p>Displayed value</p>
+    <p><b data-bind="text: displayedText"></b></p>
+</div>
+<div class="info" data-bind="css: { 'dx-state-invisible': hideObjInfo() }">
+    <p>Selected value</p>
+    <p>Name: <b data-bind="text: nameValue"></b></p>
+    <p>Capital: <b data-bind="text: capitalValue"></b></p>
+    <p>Population: <b data-bind="text: populationValue"></b></p>
+    <p>Area: <b data-bind="text: areaValue"></b></p>
+</div>
+<div class="info" data-bind="css: { 'dx-state-invisible': hideFieldInfo() }">
+    <p>Selected value</p>
+    <p><span data-bind="text: valueExprValue"></span>: <b data-bind="text: currentValue"></b></p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div id="myLookup" ng-model="currentValue" dx-lookup="{
+        dataSource: lookupDataSource,
+        title: 'States',
+        onValueChanged: lookupValueChanged,
+        bindingOptions: {
+            displayExpr: 'displayExprValue',
+            valueExpr: 'valueExprValue',
+            displayValue: 'displayedText'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">displayExpr</div>
+            <div class="dx-field-value" ng-model="displayExprValue" dx-select-box="{
+                dataSource: displayExprValues,
+                onValueChanged: exprChanged
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">valueExpr</div>
+            <div class="dx-field-value" ng-model="valueExprValue" dx-select-box="{
+                dataSource: valueExprValues,
+                onValueChanged: exprChanged
+            }"></div>
+        </div>
+    </div>
+    <div class="info" ng-class="{ 'dx-state-invisible': hideDisplayedText() }">
+        <p>Displayed value</p>
+        <p><b>{{displayedText}}</b></p>
+    </div>
+    <div class="info" ng-class="{ 'dx-state-invisible': hideObjInfo() }">
+        <p>Selected value</p>
+        <p>Name: <b>{{nameValue}}</b></p>
+        <p>Capital: <b>{{capitalValue}}</b></p>
+        <p>Population: <b>{{populationValue}}</b></p>
+        <p>Area: <b>{{areaValue}}</b></p>
+    </div>
+    <div class="info" ng-class="{ 'dx-state-invisible': hideFieldInfo() }">
+        <p>Selected value</p>
+        <p>{{valueExprValue}}: <b>{{currentValue}}</b></p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myLookup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">displayExpr</div>
+        <div class="dx-field-value" id="displayExprSelector"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">valueExpr</div>
+        <div class="dx-field-value" id="valueExprSelector"></div>
+    </div>
+</div>
+<div class="info dx-state-invisible" id="displayedTextInfo">
+    <p>Displayed value</p>
+    <p><b id="displayedText"></b></p>
+</div>
+<div class="info dx-state-invisible" id="selectedObjInfo">
+    <p>Selected value</p>
+    <p>Name: <b id="nameValue"></b></p>
+    <p>Capital: <b id="capitalValue"></b></p>
+    <p>Population: <b id="populationValue"></b></p>
+    <p>Area: <b id="areaValue"></b></p>
+</div>
+<div class="info dx-state-invisible" id="selectedFieldInfo">
+    <p>Selected value</p>
+    <p><span id="selectedFieldName"></span>: <b id="selectedFieldValue"></b></p>
+</div>
+<!--/@jQuery-->

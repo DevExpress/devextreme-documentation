@@ -1,0 +1,1 @@
+﻿In this example, you can enable/disable the column chooser using the check box below. At first, several grid columns are already hidden as their **visible** option is set to *false*. Using the column chooser, you can make them visible as well as hide one of the other columns.

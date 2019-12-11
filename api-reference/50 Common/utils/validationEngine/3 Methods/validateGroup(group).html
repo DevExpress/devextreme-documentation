@@ -1,0 +1,82 @@
+<!--@Knockout-->
+<p><b>"Sample" group</b></p>
+<div id="sampleGroup" data-bind="dxValidationGroup">
+    <div data-bind="
+        dxTextBox: {
+            placeholder: 'Enter text'
+        },
+        dxValidator: {
+            validationRules: [{
+                type: 'required',
+                message: 'Text is required'
+            }]
+        }
+    "></div>
+</div><br />
+<p><b>Default group</b></p>
+<div data-bind="
+    dxTextBox: {
+        placeholder: 'Enter text'
+    },
+    dxValidator: {
+        validationRules: [{
+            type: 'required',
+            message: 'Text is required'
+        }]
+    }
+"></div>
+<br />
+<div data-bind="dxButton: {
+    text: 'Validate \'Sample\' group',
+    onClick: validateSampleGroup
+}"></div>
+<div data-bind="dxButton: {
+    text: 'Validate default group',
+    onClick: validateDefaultGroup
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <p><b>"Sample" group</b></p>
+    <div id="sampleGroup" dx-validation-group="{}">
+        <div dx-text-box="{
+            placeholder: 'Enter text'
+        }"
+        dx-validator="{
+            validationRules: [{
+                type: 'required',
+                message: 'Text is required'
+            }]
+        }"></div>
+    </div><br />
+    <p><b>Default group</b></p>
+    <div dx-text-box="{
+        placeholder: 'Enter text'
+    }"
+    dx-validator="{
+        validationRules: [{
+            type: 'required',
+            message: 'Text is required'
+        }]
+    }"></div>
+    <br />
+    <div dx-button="{
+        text: 'Validate \'Sample\' group',
+        onClick: validateSampleGroup
+    }"></div>
+    <div dx-button="{
+        text: 'Validate default group',
+        onClick: validateDefaultGroup
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p><b>"Sample" group</b></p>
+<div id="sampleGroup">
+    <div id="myTextBox"></div>
+</div><br />
+<p><b>Default group</b></p>
+<div id="myTextBox1"></div><br />
+<div id="validateSampleButton"></div>
+<div id="validateDefaultButton"></div>
+<!--/@jQuery-->

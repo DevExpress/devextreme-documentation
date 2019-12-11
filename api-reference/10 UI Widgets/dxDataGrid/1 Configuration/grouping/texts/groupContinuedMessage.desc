@@ -1,0 +1,1 @@
+﻿In this example, you can change the value of the **groupContinuedMessage** option at runtime using the controls under the grid. Enter a new value for this option into the text box and apply it by making the text box lose focus. To see the changes, group grid records by dragging a column header onto the group panel and then switch between pages.

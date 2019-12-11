@@ -1,0 +1,38 @@
+<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field" style="text-align:center;">
+        Apply <b>"dx-clearfix"</b> class to parent element<br />
+        <div data-bind="dxSwitch: { value: applyClass, onValueChanged: changeValue }"></div>
+    </div>
+</div>
+<div id="parentElement">
+    <div id="childElement"><p>Floating child element.</p></div>
+    <p>Parent element</p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dx-fieldset">
+        <div class="dx-field" style="text-align:center;">
+            Apply <b>"dx-clearfix"</b> class to parent element<br />
+            <div ng-model="applyClass" dx-switch="{ onValueChanged: changeValue }"></div>
+        </div>
+    </div>
+    <div id="parentElement">
+        <div id="childElement"><p>Floating child element.</p></div>
+        <p>Parent element</p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field" style="text-align:center;">
+        Apply <b>"dx-clearfix"</b> class to parent element<br />
+        <div id="classSelector"></div>
+    </div>
+</div>
+<div id="parentElement">
+    <div id="childElement"><p>Floating child element.</p></div>
+    <p>Parent element</p>
+</div>
+<!--/@jQuery-->

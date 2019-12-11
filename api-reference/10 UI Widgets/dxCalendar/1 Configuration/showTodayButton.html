@@ -1,0 +1,37 @@
+﻿<!--@Knockout-->
+<div data-bind="dxCalendar:{
+    showTodayButton: todayButtonVisible
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showTodayButton</div>
+        <div class="dx-field-value" data-bind="dxSwitch:{
+            value: todayButtonVisible
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-calendar="{ 
+        bindingOptions: { 
+            showTodayButton: 'todayButtonVisible'
+        }
+    }"></div> 
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showTodayButton</div>
+            <div class="dx-field-value" ng-model="todayButtonVisible" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myCalendar"></div> 
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showTodayButton</div>
+        <div class="dx-field-value" id="todayButtonSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

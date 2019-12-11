@@ -1,0 +1,1 @@
+﻿In this example, if you click a series, only points with the value equal to 20 or more will be selected. The second click on the series deselects all previously selected points using the **deselectPoint(point)** method.

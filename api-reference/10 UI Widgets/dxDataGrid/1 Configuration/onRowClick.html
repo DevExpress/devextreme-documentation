@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: employees,
+    columns: [
+        { dataField: 'TitleOfCourtesy', caption: 'Title' },
+        'FirstName',
+        'LastName',
+        { dataField: 'Title', caption: 'Position', width: 150 },
+        { dataField: 'BirthDate', dataType: 'date', format: 'shortDate' },
+        { dataField: 'HireDate', dataType: 'date', format: 'shortDate' }
+    ],
+    onRowClick: onRowClick
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height:390px; max-width:630px; margin: 0 auto" dx-data-grid="{
+        dataSource: employees,
+        columns: [
+            { dataField: 'TitleOfCourtesy', caption: 'Title' },
+            'FirstName',
+            'LastName',
+            { dataField: 'Title', caption: 'Position', width: 150 },
+            { dataField: 'BirthDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'HireDate', dataType: 'date', format: 'shortDate' }
+        ],
+        onRowClick: onRowClick
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+﻿In this demo, you can specify the text of the _"Total"_ headers at runtime. Type any text in the text box below the pivot grid and make the text box lose focus. The specified text will immediately appear in _"Total"_ row and column headers.

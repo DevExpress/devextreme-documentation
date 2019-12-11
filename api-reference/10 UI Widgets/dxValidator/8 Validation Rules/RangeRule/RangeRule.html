@@ -1,0 +1,31 @@
+﻿<!--@Knockout-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+    <div data-bind="dxTextBox: { value: age, placeholder: 'Input your age...' },
+        dxValidator: { validationRules: [
+            { type: 'required' },
+            {type: 'range', min: 25, max: 35, message: 'Sorry, we submit only the age from 25 to 35.' }
+        ] }">	   
+    </div>		
+    <div data-bind="dxValidationSummary: { }"></div>
+    <div data-bind="dxButton: { text: 'Submit', onClick: submit }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:200px;max-width:200px;margin:0px auto" ng-controller="demoController">
+    <div ng-model="age" dx-text-box="{ placeholder: 'Input your age...' }"
+         dx-validator="{ validationRules: [
+            { type: 'required' },
+            { type: 'range', min: 25, max: 35, message: 'Sorry, we submit only the age from 25 to 35.' }
+        ] }">
+    </div>
+    <div dx-validation-summary="{ }"></div>
+    <div dx-button="{ text: 'Submit', onClick: submit }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:200px;max-width:200px;margin:0px auto">
+    <div id="age"></div>
+    <div id="summary"></div>
+    <div id="button"></div>
+</div>
+<!--/@jQuery-->

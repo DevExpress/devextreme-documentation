@@ -1,0 +1,37 @@
+<!--@Knockout-->
+<div data-bind="dxMap: {
+    disabled: disabledValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: disabledValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-map="{
+        bindingOptions: {
+            disabled: 'disabledValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="disabledValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myMap"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

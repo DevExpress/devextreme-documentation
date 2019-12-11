@@ -1,0 +1,68 @@
+On desktops and iOS devices, the drop-down menu is the [Popover](/concepts/05%20Widgets/Popover/00%20Overview.md '/Documentation/Guide/Widgets/Popover/Overview/') widget; on other devices, it is the [Popup](/concepts/05%20Widgets/Popup/00%20Overview.md '/Documentation/Guide/Widgets/Popup/Overview/') widget. To use the **Popup** on all devices, assign *false* to the [usePopover](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#usePopover') option. In this case, you can specify whether to [shade](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#shading') the area beneath the **Popup** and whether the **Popup** should occupy the [full screen](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/fullScreen.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#fullScreen'). 
+
+    <!--JavaScript-->
+    $(function() {
+        $("#lookupContainer").dxLookup({
+            dataSource: [
+                "HD Video Player",
+                "SuperHD Video Player",
+                "SuperPlasma 50",
+                // . . .
+            ],
+            usePopover: false,
+            shading: false,
+            fullScreen: false
+        });
+    });
+
+To change the size of the drop-down menu and position it against a specific element on your page, specify the **popupHeight**, **popupWidth** and [position](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#position') options, respectively. The following configuration of the **position** option reads as follows: "place **my** *left* side **at** the *left* side **of** the *"#targetElement"*.
+
+    <!--JavaScript-->
+    $(function() {
+        $("#lookupContainer").dxLookup({
+            dataSource: [
+                "HD Video Player",
+                "SuperHD Video Player",
+                "SuperPlasma 50",
+                // . . .
+            ],
+            popupHeight: 300,
+            popupWidth: 300,
+            position: {
+                my: "left",
+                at: "left",
+                of: "#targetElement"
+            }
+        });
+    });
+
+The drop-down menu can have a title. Use the [title](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#title') option to specify its text, or the [titleTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/titleTemplate.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#titleTemplate') option to redesign it completely. For details on implementing templates, see the [Customize Item Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/Customize_Item_Appearance/') topic.
+
+    <!--JavaScript-->
+    $(function() {
+        $("#lookupContainer").dxLookup({
+            dataSource: [
+                "HD Video Player",
+                "SuperHD Video Player",
+                "SuperPlasma 50",
+                // . . .
+            ],
+            title: "Products"
+            /*
+            titleTemplate: function () {
+                return $("<div style='color: blue'>Products</div>");
+            }
+            */
+        });
+    });
+
+If you have not specified anything to be displayed in the title, hide it by assigning *false* to the [showPopupTitle](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/showPopupTitle.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#showPopupTitle') option.
+
+#####See Also#####
+- [Customize Widget Element Appearance](/Documentation/Guide/Widgets/Common/UI_Widgets/Customize_Widget_Element_Appearance/#Customize_Widget_Element_Appearance/)
+- [Customize Widget Element Appearance - MVVM Approach](/concepts/05%20Widgets/zz%20Common/05%20UI%20Widgets/35%20Customize%20Widget%20Element%20Appearance%20-%20MVVM%20Approach '/Documentation/Guide/Widgets/Common/UI_Widgets/Customize_Widget_Element_Appearance_-_MVVM_Approach/')
+- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Templates)
+- [Lookup API Reference](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/')
+
+
+[tags]lookup, drop-down menu, size, width, height, popover, popup, position, title, custom title template, title template

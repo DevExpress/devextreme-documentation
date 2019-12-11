@@ -1,0 +1,26 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:300px; max-width:850px; margin:0 auto"></div>
+<div id="buttonContainer" style="width:160px; display:block; margin:0 auto"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:300px; max-width:850px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: dataSource,
+    fieldChooser: { enabled: false }
+}"></div>
+<div style="width:160px; display:block; margin:0 auto" data-bind="dxButton: {
+    text: 'Swap area indexes',
+    onClick: swapAreaIndexes
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:300px; max-width:850px; margin:0 auto" dx-pivot-grid="{
+        dataSource: dataSource,
+        fieldChooser: { enabled: false }
+    }"></div>
+    <div style="width:160px; display:block; margin:0 auto" dx-button="{
+        text: 'Swap area indexes',
+        onClick: swapAreaIndexes
+    }"></div>
+</div>
+<!--/@AngularJS-->

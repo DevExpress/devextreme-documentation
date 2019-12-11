@@ -1,0 +1,74 @@
+﻿<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">state</div>
+        <div class="dx-field-value" data-bind="dxSelectBox:{
+            placeholder: 'Select',
+            dataSource: selectBoxData,
+            displayExpr: 'name',
+            value: selectedValue,
+            valueExpr: currentExpr
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label" data-bind="text: currentExpr"></div>
+        <div class="dx-field-value-static"><b data-bind="text: selectedValue"></b></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">valueExpr</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: ['name', 'capital'],
+            value: currentExpr
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">state</div>
+            <div class="dx-field-value" ng-model="selectedValue" dx-select-box="{
+                placeholder: 'Select',
+                dataSource: selectBoxData,
+                displayExpr: 'name',
+                bindingOptions: {
+                    valueExpr: 'currentExpr'
+                }
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">{{currentExpr}}</div>
+            <div class="dx-field-value-static"><b>{{selectedValue}}</b></div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">valueExpr</div>
+            <div class="dx-field-value" ng-model="currentExpr" dx-select-box="{
+                items: ['name', 'capital']
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">state</div>
+        <div class="dx-field-value" id="mySelectBox"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label" id="valueFieldCaption">name</div>
+        <div class="dx-field-value-static"><b id="valueField"></b></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">valueExpr</div>
+        <div class="dx-field-value" id="exprSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,57 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { onClick: togglePopup, text: 'Show popup' }"></div>
+<div data-bind="dxPopup: {
+    height: 200,
+    title: 'My Popup',
+    visible: visible,
+    showTitle: true,
+    dragEnabled: enableDragging
+}">
+    <div data-options="dxTemplate: { name: 'content' }">
+        <p>The popup text.</p>
+        <div data-bind="dxButton: { text: 'Hide popup', onClick: togglePopup }"></div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">dragEnabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: enableDragging
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-button="{ onClick: togglePopup, text: 'Show popup' }"></div>
+    <div dx-popup="{
+        height: 200,
+        title: 'My Popup',
+        bindingOptions: {
+            visible: 'visible',
+            dragEnabled: 'enableDragging'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'content' }">
+            <p>The popup text.</p>
+            <div dx-button="{ text: 'Hide popup', onClick: togglePopup }"></div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">dragEnabled</div>
+            <div class="dx-field-value" ng-model="enableDragging" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="toggleButton"></div>
+<div id="myPopup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">dragEnabled</div>
+        <div class="dx-field-value" id="dragSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

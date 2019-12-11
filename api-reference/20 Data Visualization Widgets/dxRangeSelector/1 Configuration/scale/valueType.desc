@@ -1,0 +1,1 @@
+In this example, the data source contains string values. To generate a scale using this data source, the scale's **valueType** option must be set to *'numeric'*.

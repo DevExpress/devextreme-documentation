@@ -1,0 +1,1 @@
+﻿In this example, the **editing** | **texts** | **cancelRowChanges** option is used to alter the text of the button that cancels changes, which were made in a grid row. To see the altered text, click one of the *"Edit"* buttons accompanying each grid row.

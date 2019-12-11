@@ -1,0 +1,65 @@
+<!--@Knockout-->
+<p class="hint"><b>Hold a list item</b></p>
+<div data-bind="dxList: {
+    dataSource: listDataSource,
+    height: '70%',
+    onItemHold: itemHeld,
+    itemHoldTimeout: holdTimeout
+}">
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label" style="width: 60%;">itemHoldTimeout</div>
+        <div class="dx-field-value" style="width: 40%;" data-bind="dxNumberBox: {
+            min: 250,
+            max: 2000,
+            step: 50,
+            showSpinButtons: true,
+            value: holdTimeout
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <p class="hint"><b>Hold a list item</b></p>
+    <div dx-list="{
+        dataSource: listDataSource,
+        height: '70%',
+        onItemHold: itemHeld,
+        bindingOptions: {
+            itemHoldTimeout: 'holdTimeout'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div style="margin-top: 15px;" class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label" style="width: 60%;">itemHoldTimeout</div>
+            <div class="dx-field-value" style="width: 40%;" ng-model="holdTimeout" dx-number-box="{
+                min: 250,
+                max: 2000,
+                step: 50,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p class="hint"><b>Hold a list item</b></p>
+<div id="myList"></div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label" style="width: 60%;">itemHoldTimeout</div>
+        <div class="dx-field-value" style="width: 40%;" id="timeoutSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

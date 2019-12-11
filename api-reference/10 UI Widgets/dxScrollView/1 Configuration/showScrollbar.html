@@ -1,0 +1,48 @@
+<!--@Knockout-->
+<div id="myScrollView" data-bind="dxScrollView: {
+    showScrollbar: showScrollbarMode,
+    useNative: false
+}">
+    <div id="textContainer"></div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showScrollbar</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: { 
+            items: showScrollbarModes,
+            value: showScrollbarMode
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div id="myScrollView" dx-scroll-view="{
+        useNative: false,
+        bindingOptions: {
+            showScrollbar: 'showScrollbarMode'
+        }
+    }">
+        <div id="textContainer"></div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showScrollbar</div>
+            <div class="dx-field-value" ng-model="showScrollbarMode" dx-select-box="{
+                items: showScrollbarModes
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myScrollView">
+    <div id="textContainer"></div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showScrollbar</div>
+        <div class="dx-field-value" id="showModeSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

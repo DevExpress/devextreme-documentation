@@ -1,0 +1,1 @@
+In this example, grid records are grouped initially by the *"Format"* column using the **groupIndex** option of this column, which is set to 0. Note that the group panel is not visible, thus, initial grouping cannot be changed by a user.

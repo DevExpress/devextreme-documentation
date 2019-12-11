@@ -1,0 +1,69 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTabPanel: {
+    dataSource: tabPanelItems,
+    titleTemplate: 'title',
+    itemTemplate: 'tab',
+    height: 300,
+    activeStateEnabled: enableActiveState
+}">
+    <div data-options="dxTemplate : { name: 'title' } ">
+        <p data-bind="text: title"></p>
+    </div>
+    <div data-options="dxTemplate : { name: 'tab' } ">
+        <div style="margin:25px;">
+            <h1 data-bind="text: title"></h1>
+            <p>&nbsp;</p>
+            <div style="text-align:left;" data-bind="foreach: dataArray">
+                <p><span data-bind="text: propertyKey"></span>: <b data-bind="text: propertyValue"></b></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { value: enableActiveState }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-tab-panel="{
+        dataSource: tabPanelItems,
+        titleTemplate: 'title',
+        itemTemplate: 'tab',
+        height: 300,
+        bindingOptions: {
+            activeStateEnabled: 'enableActiveState'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate : { name: 'title' } ">
+            <p>{{itemObj.title}}</p>
+        </div>
+        <div data-options="dxTemplate : { name: 'tab' } ">
+            <div style="margin:25px;">
+                <h1>{{itemObj.title}}</h1>
+                <p>&nbsp;</p>
+                <div style="text-align:left;" ng-repeat="item in itemObj.dataArray">
+                    <p>{{item.propertyKey}}: <b>{{item.propertyValue}}</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">activeStateEnabled</div>
+            <div class="dx-field-value" ng-model="enableActiveState" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTabPanel"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" id="activeStateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

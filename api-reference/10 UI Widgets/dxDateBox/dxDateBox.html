@@ -1,0 +1,53 @@
+﻿<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Date</div>
+        <div class="dx-field-value" data-bind="
+            dxDateBox: { value: date, format: 'date' }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Time</div>
+        <div class="dx-field-value" data-bind="
+            dxDateBox: { value: time, format: 'time' }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Date and Time</div>
+        <div class="dx-field-value" data-bind="
+            dxDateBox: { value: dateTime, format: 'datetime' }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Date</div>
+            <div class="dx-field-value" dx-date-box="{ value: date, format: 'date' }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">Time</div>
+            <div class="dx-field-value" dx-date-box="{ value: time, format: 'time' }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">Date and Time</div>
+            <div class="dx-field-value" dx-date-box="{ value: dateTime, format: 'datetime' }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Date</div>
+        <div class="dx-field-value" id="dateFormat"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Time</div>
+        <div class="dx-field-value" id="timeFormat"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Date and Time</div>
+        <div class="dx-field-value" id="dateTimeFormat"></div>
+    </div>
+</div>
+<!--/@jQuery-->

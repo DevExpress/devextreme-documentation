@@ -1,0 +1,3 @@
+To make your map more interactive, supply your map with the selection feature. In the **VectorMap** widget, an end-user may be able to select areas and markers. While selected, the appearance of an area or a marker differs from unselected ones. This appearance can be configured separately.
+
+Selection is configured identically for areas and markers. Therefore, in the following subtopics, when both areas and markers are in question, they are referred to as "map elements" for brevity.

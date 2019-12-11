@@ -1,0 +1,50 @@
+﻿<!--@Knockout-->
+<div data-bind="dxCalendar:{ min: minDate, max: maxDate }"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Min</div>
+        <div class="dx-field-value" data-bind="dxDateBox:{ format: 'date', value: minDate }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Max</div>
+        <div class="dx-field-value" data-bind="dxDateBox:{ format: 'date', value: maxDate }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-calendar="{ 
+        bindingOptions: { 
+            min: 'minDate',
+            max: 'maxDate'
+        }
+    }"></div> 
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Min</div>
+            <div class="dx-field-value" ng-model="minDate" dx-date-box="{
+                format: 'date'
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">Max</div>
+            <div class="dx-field-value" ng-model="maxDate" dx-date-box="{
+                format: 'date'
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myCalendar"></div> 
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Min</div>
+        <div class="dx-field-value" id="minSelector"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">Max</div>
+        <div class="dx-field-value" id="maxSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

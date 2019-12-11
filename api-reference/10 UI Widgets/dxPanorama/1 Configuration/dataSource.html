@@ -1,0 +1,31 @@
+<!--@Knockout-->
+<div data-bind="dxPanorama: {
+        title: 'Online restaurant',
+        dataSource: panoramaData
+    }">
+    <div data-options="dxTemplate : { name: 'item' } ">
+        <div data-bind="text: text"></div>
+        <div data-bind="foreach: images">
+            <img data-bind="attr: { src: src }" />
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-panorama="{
+        title: 'Online restaurant',
+        dataSource: panoramaData
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate : { name: 'item' } ">
+            <div>{{itemObj.text}}</div>
+            <div>
+                <img ng-repeat="image in itemObj.images" ng-attr-src="{{image.src}}" />
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myPanorama"></div>
+<!--/@jQuery-->

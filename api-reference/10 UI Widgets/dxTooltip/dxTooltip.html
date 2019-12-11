@@ -1,0 +1,30 @@
+<!--@Knockout-->
+<div id="button" data-bind="dxButton:{ text:'Hover over me' }, event: { mouseover: toggleTooltip, mouseout: toggleTooltip } "></div>
+<div data-bind="dxTooltip:{
+    target: '#button',
+    visible: tooltipVisible
+}">
+    <div data-options="dxTemplate:{ name: 'content' }">
+        <p>This is a button.</p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="button" dx-button="{ text:'Hover over me' }" ng-mouseover="toggleTooltip()" ng-mouseout="toggleTooltip()"></div>
+    <div dx-tooltip="{ 
+        target: '#button',
+        bindingOptions: {
+            visible: 'tooltipVisible'
+        }
+    }">
+        <div data-options="dxTemplate:{ name: 'content' }">
+            <p>This is a button.</p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myTooltip"></div>
+<!--/@jQuery-->

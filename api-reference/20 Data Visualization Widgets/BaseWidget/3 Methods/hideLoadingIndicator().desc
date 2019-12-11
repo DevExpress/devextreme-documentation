@@ -1,0 +1,1 @@
+In this example, data is loaded with five seconds delay. You can show/hide the loading indicator using the buttons under the widget. Note that the loading indicator can be displayed or concealed manually at any time no matter whether the data is loaded or not.

@@ -1,0 +1,3 @@
+Regardless of the way you choose to browse data in your grid, switching between pages is available in code. **DataGrid** provides the [pageIndex](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/pageIndex().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#pageIndex') method for this purpose. Being called without arguments, this method returns the index of the current page. To switch the grid to a required page, pass the index of this page to this method. Note that the page index is zero-based. Thus, page 1 has index 0, page 2 - index 1, etc. For example, the following code switches the grid to page 10.
+
+	<!--JavaScript-->dataGridInstance.pageIndex(9);

@@ -1,0 +1,63 @@
+﻿<!--@jQuery-->
+<div id="gridContainer" style="height:440px; max-width:750px; margin: 0 auto"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:440px; max-width:750px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: [{ id: 1 }, { id: 2 }, { id: 3 }],
+    columns: [{
+        dataField: 'id',
+        lookup: {
+            dataSource: items,
+            valueExpr: 'id',
+            displayExpr: 'name'
+        },
+        editCellTemplate: 'myTemplate'
+    }],
+    editing: {
+        mode: 'row',
+        allowUpdating: true
+    }
+}">
+    <div data-options="dxTemplate:{ name:'myTemplate' }">
+        <div data-bind="dxLookup: {
+                dataSource: $root.items,
+                valueExpr: 'id',
+                displayExpr: 'name',
+                onValueChanged: function (e) {
+                    setValue(e.value);
+                }
+            }">
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:440px; max-width:750px; margin: 0 auto" ng-controller="MyCtrl">
+    <div dx-data-grid="{
+        dataSource: [{ id: 1 }, { id: 2 }, { id: 3 }],
+        columns: [{
+            dataField: 'id',
+            lookup: {
+                dataSource: items,
+                valueExpr: 'id',
+                displayExpr: 'name'
+            },
+            editCellTemplate: 'myTemplate'
+        }],
+        editing: {
+            mode: 'row',
+            allowUpdating: true
+        }
+    }">
+        <div data-options="dxTemplate:{ name:'myTemplate' }">
+            <div dx-lookup="{
+                    dataSource: $parent.items, 
+                    valueExpr: 'id',
+                    displayExpr: 'name',
+                    onValueChanged: $parent.valueChangeAction
+                }">
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->

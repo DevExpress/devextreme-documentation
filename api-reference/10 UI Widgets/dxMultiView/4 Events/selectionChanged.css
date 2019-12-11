@@ -1,0 +1,10 @@
+﻿body{
+    text-align:center;
+}
+.dx-button{
+    margin: 10px;
+}
+.hint{
+    padding: 10px;
+    border-bottom: solid 1px red;
+}

@@ -1,0 +1,16 @@
+﻿body {
+    text-align: center;
+}
+.dx-checkbox{
+    margin-top: 5px;
+}
+.dx-button{
+    margin-top: 25px;
+}
+.dx-popup-wrapper .dx-button{
+    margin-top: 25px;
+}
+.dx-popup-title{
+    border-bottom: solid 2px red;
+    padding-bottom: 10px;
+}

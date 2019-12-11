@@ -1,0 +1,1 @@
+In this example, the value fields for all *candleStick* series are configured using the **candlestick** field of the **commonSeriesSettings** object.

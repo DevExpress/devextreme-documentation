@@ -1,0 +1,67 @@
+﻿<!--@jQuery-->
+<div id="chartContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>commonAxisSettings | label | alignment:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'year'
+    },
+    series: [
+        { valueField: 'europe', name: 'Europe' },
+        { valueField: 'americas', name: 'Americas' },
+        { valueField: 'africa', name: 'Africa' }
+    ],
+    animation: false,
+    valueAxis: {
+        label: { format: 'largeNumber' }
+    },
+    commonAxisSettings: {
+        tick: { visible: true },
+        label: { alignment: selectBoxValue }
+    }
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>commonAxisSettings | label | alignment:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: {
+        items: ['left', 'center', 'right'],
+        value: selectBoxValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" dx-chart="{
+        dataSource: data,
+        commonSeriesSettings: {
+            argumentField: 'year'
+        },
+        series: [
+            { valueField: 'europe', name: 'Europe' },
+            { valueField: 'americas', name: 'Americas' },
+            { valueField: 'africa', name: 'Africa' }
+        ],
+        animation: false,
+        valueAxis: {
+            label: { format: 'largeNumber' }
+        },
+        commonAxisSettings: {
+            tick: { visible: true },
+            label: { alignment: 'center' }
+        },
+        bindingOptions: {
+            'commonAxisSettings.label.alignment': 'selectBoxValue'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>commonAxisSettings | label | alignment:&nbsp;</div>
+        <div id="selectBoxContainer" ng-model="selectBoxValue" dx-select-box="{
+            items: ['left', 'center', 'right']
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

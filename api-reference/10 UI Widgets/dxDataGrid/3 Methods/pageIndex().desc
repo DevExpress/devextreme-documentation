@@ -1,0 +1,1 @@
+﻿This example illustrates how to obtain the current page index using the grid's **pageIndex()** method. You can call this method by clicking the *"Get the Current Page Index"* button located under the grid.

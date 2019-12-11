@@ -1,0 +1,1 @@
+In this example, those pie slices that have a value greater than 500 million are colored in *'pink'* using the **customizePoint** option. The other slices are painted in a color from a predefined palette.

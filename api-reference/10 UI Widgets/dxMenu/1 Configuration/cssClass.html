@@ -1,0 +1,30 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div>
+        <div data-bind="dxMenu: { dataSource: menuItems }"></div>
+    </div>
+    <div>
+        <div data-bind="dxMenu: { dataSource: menuItems, cssClass: 'customClass' }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div>
+        <div dx-menu="{ dataSource: menuItems }"></div>
+    </div>
+    <div>
+        <div dx-menu="{ dataSource: menuItems, cssClass: 'customClass' }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div>
+        <div id="menuWithoutCssClass"></div>
+    </div>
+    <div>
+        <div id="menuWithCssClass"></div>
+    </div>
+</div>
+<!--/@jQuery-->

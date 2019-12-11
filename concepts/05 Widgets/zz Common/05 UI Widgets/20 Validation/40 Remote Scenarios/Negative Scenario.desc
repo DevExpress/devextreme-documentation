@@ -1,0 +1,1 @@
+In this example, the 'Login' editor is considered invalid while waiting a response from a server. Enter the 'Alex' login to get a negative response from the server and see how the 'custom' rule is broken.

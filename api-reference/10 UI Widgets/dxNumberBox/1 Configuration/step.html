@@ -1,0 +1,50 @@
+<!--@Knockout-->
+<div class="numberBox" data-bind="dxNumberBox: {
+    min: 0,
+    max: 100,
+    showSpinButtons: true,
+    step: stepValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">step</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: 1,
+            max: 10,
+            showSpinButtons: true,
+            value: stepValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="numberBox" dx-number-box="{
+        min: 0,
+        max: 100,
+        showSpinButtons: true,
+        bindingOptions: {
+            step: 'stepValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">step</div>
+            <div class="dx-field-value" ng-model="stepValue" dx-number-box="{
+                min: 1,
+                max: 10,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="numberBox" id="myNumberBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">step</div>
+        <div class="dx-field-value" id="stepSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

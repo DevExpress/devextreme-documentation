@@ -1,0 +1,12 @@
+#myElement{
+    width: 250px;
+    height: 150px;
+    margin: 10px auto;
+    background-color: yellow;
+    border: 2px solid blue;
+    text-align: center;
+}
+p{
+    margin: 10px;
+    font-size:larger;
+}

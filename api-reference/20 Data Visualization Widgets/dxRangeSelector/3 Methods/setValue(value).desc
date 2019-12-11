@@ -1,0 +1,1 @@
+﻿In this example, the [5, 8] range is selected after the **RangeSelector** widget is displayed. Change the selected range and click the *'Set default selected range'* button. The [5, 8] range will be selected using the **setValue** method.

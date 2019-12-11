@@ -1,0 +1,1 @@
+In this example, the **argumentField** option is set for all series of the *fullStackedLine* type at once using the **fullstackedline** field of the **commonSeriesSettings** object.

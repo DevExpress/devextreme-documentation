@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+#myElement{
+    margin: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 2px solid blue;
+    text-align: center;
+}
+#innerElement{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    border: 2px solid blue;
+    text-align: center;
+}
+p{
+    margin: 10px;
+    font-size:larger;
+}

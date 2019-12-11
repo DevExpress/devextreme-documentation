@@ -1,0 +1,26 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div>
+<div data-bind="dxNumberBox: {
+    min: 0,
+    max: 100,
+    showSpinButtons: true,
+    step: 5,
+    onInitialized: onInitialized
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to ValueChanged event', onClick: clickHandler }"></div>
+    <div dx-number-box="{
+        min: 0,
+        max: 100,
+        showSpinButtons: true,
+        step: 5,
+        onInitialized: onInitialized
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myNumberBox"></div>
+<!--/@jQuery-->

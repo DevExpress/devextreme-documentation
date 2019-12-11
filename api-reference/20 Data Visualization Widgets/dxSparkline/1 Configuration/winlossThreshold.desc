@@ -1,0 +1,1 @@
+In this example, the **winlossThreshold** option is set to 2100. It means that the values greater than 2100 are represented by bars growing up from the threshold line while the other values are represented by bars going down from this line.

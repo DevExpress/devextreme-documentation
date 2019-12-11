@@ -1,0 +1,13 @@
+.wrapper{
+    padding: 20px;
+}
+.checkBox{
+    margin: 10px;
+}
+.item-body{
+    background-color:white;
+    border: solid 1px gray;
+}
+.dx-theme-generic .dx-toast-custom{
+  background-color: #8AF;
+}

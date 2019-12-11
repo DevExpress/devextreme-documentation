@@ -1,0 +1,1 @@
+﻿Choose an index of the series using the set of radio buttons below and click the *Display maximum value* button to call the **getSeriesByPos(seriesIndex)** method. The maximum value in the series with the specified index will be displayed.

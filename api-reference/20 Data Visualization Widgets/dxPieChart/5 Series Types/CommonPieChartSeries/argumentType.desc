@@ -1,0 +1,1 @@
+﻿Here, the 'year' field of the 'dataSource' array is intentionally set in the 'numeric' format. To convert the values of this field into the proper format, the **argumentType** option is used.

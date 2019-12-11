@@ -1,0 +1,1 @@
+In this example, when you click a legend item, the chart calculates the maximum point value from this series and outputs it below. To get the points of the series to which the clicked legend item belongs, the series' [getAllPoints](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods#getAllPoints) method is used.

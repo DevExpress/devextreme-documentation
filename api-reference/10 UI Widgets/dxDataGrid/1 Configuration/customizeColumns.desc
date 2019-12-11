@@ -1,0 +1,1 @@
+﻿In this example, grid columns are created automatically on the base of the data source. Further, the widths of the *"Author"* and *"Title"* columns are adjusted using a callback function assigned to the **customizeColumns** option.

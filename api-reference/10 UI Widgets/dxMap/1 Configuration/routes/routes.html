@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div data-bind="dxTabs: {
+    dataSource: providers,
+    onItemClick: tabClicked,
+    selectedIndex: 1
+}"></div>
+<div data-bind="dxMap: {
+    center: '40.753935, -73.983963',
+    routes: mapRoutes,
+    zoom: 14,
+    provider: currentProvider
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-tabs="{
+        dataSource: providers,
+        onItemClick: tabClicked,
+        selectedIndex: 1
+    }"></div>
+    <div dx-map="{
+        routes: mapRoutes,
+        zoom: 14,
+        bindingOptions: {
+            provider: 'currentProvider'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="providersTabs"></div>
+<div id="myMap"></div>
+<!--/@jQuery-->

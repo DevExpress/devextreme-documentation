@@ -1,0 +1,1 @@
+This example demonstrates different ways of specifying the tick interval. Ticks on the argument axis are set explicitly using the **tickInterval** property. Ticks on the value axis are set implicitly using the **axisDivisionFactor** property.

@@ -1,0 +1,83 @@
+﻿<!--@Knockout-->
+<div style="text-align:center;height:500px; width:800px; margin: 0 auto">
+    <div style="max-height:450px" data-bind="dxDataGrid: {
+        dataSource: orders,
+        height: 350,
+        columns: [
+            'OrderID', 'CustomerID',
+            { dataField: 'OrderDate', dataType: 'date' },
+            { dataField: 'ShippedDate', dataType: 'date' },
+            'ShipName',
+            { dataField: 'ShipCountry', caption: 'Ship To' }
+        ],
+        pager: { visible: false },
+        scrolling: { mode: 'infinite' },
+        filterRow: { visible: true },
+        onContentReady: getDataGrid
+    }"></div>
+    <div style="height:40px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;text-align:center">
+        <div style="display:table-cell;vertical-align:middle">Choose a filter operation:&nbsp;</div>
+        <div style="display:table-cell;width:150px" data-bind="dxSelectBox: {
+            dataSource: filterOperations,
+            valueExpr: 'value',
+            displayExpr: 'value',
+            value: filterOperation,
+        }"></div>
+    </div>
+    <div style="width:300px; margin:5px auto 5px auto;" data-bind="dxTextBox: {
+        placeholder: 'Enter a description for the chosen operation',
+        value: operationDescription
+    }"></div>
+    <div data-bind="dxButton: {
+        text: 'Change Description',
+        onClick: buttonClick
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:500px; max-width:800px; margin: 0 auto">
+    <div style="height:500px; width:800px">
+        <div style="max-height:450px" dx-data-grid="{
+            dataSource: orders,
+            height: 350,
+            columns: [
+                'OrderID', 'CustomerID',
+                { dataField: 'OrderDate', dataType: 'date' },
+                { dataField: 'ShippedDate', dataType: 'date' },
+                'ShipName',
+                { dataField: 'ShipCountry', caption: 'Ship To' }
+            ],
+            pager: { visible: false },
+            scrolling: { mode: 'infinite' },
+            filterRow: { visible: true },
+            onContentReady: getDataGrid
+        }"></div>
+        <div style="height:40px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;text-align:center">
+            <div style="display:table-cell;vertical-align:middle">Choose a filter operation:&nbsp;</div>
+            <div style="display:table-cell;width:150px" ng-model="filterOperation" dx-select-box="{
+                dataSource: filterOperations,
+                valueExpr: 'value',
+                displayExpr: 'value'
+            }"></div>
+        </div>
+        <div style="width:300px; margin:5px auto 5px auto;" ng-model="operationDescription" dx-text-box="{
+        placeholder: 'Enter a description for the chosen operation'
+    }"></div>
+    <div dx-button="{
+        text: 'Change Description',
+        onClick: buttonClick
+    }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center;height:500px; width:800px; margin: 0 auto">
+    <div id="gridContainer" style="max-height:350px"></div>
+    <div style="height:40px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;text-align:center">
+        <div style="display:table-cell;vertical-align:middle">Choose a filter operation:&nbsp;</div>
+        <div style="display:table-cell;width:150px" id="selectBoxContainer"></div>
+    </div>
+    <div style="width:300px; margin:5px auto 5px auto;" id="operationDescription"></div>
+    <div id="changeDescriptionButton"></div>
+</div>
+<!--/@jQuery-->

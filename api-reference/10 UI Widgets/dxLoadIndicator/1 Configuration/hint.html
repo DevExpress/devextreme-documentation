@@ -1,0 +1,42 @@
+<!--@Knockout-->
+<p>Place the mouse pointer over the load indicator.</p>
+<div data-bind="dxLoadIndicator: { 
+    visible: true,
+    hint: loadHint
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">hint</div>
+        <div class="dx-field-value" data-bind="dxTextBox: { 
+            value: loadHint 
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <p>Place the mouse pointer over the load indicator.</p>
+    <div id="myLoadIndicator" dx-load-indicator="{
+        visible: true,
+        bindingOptions: {
+            hint: 'loadHint'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">hint</div>
+            <div class="dx-field-value" ng-model="loadHint" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Place the mouse pointer over the load indicator.</p>
+<div id="myLoadIndicator"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">hint</div>
+        <div class="dx-field-value" id="hintField"></div>
+    </div>
+</div>
+<!--/@jQuery-->

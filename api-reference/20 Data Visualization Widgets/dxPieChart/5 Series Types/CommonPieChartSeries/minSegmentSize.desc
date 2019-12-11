@@ -1,0 +1,1 @@
+In this example, the **minSegmentSize** option is set to 5. Therefore, the points that represent the smallest values (here it is the values of the 'Antarctica' and 'Australia' points) are displayed as 5-degree slices.

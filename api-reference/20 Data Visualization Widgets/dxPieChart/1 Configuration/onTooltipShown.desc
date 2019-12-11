@@ -1,0 +1,1 @@
+In this example, when a tooltip is made hidden, the function assigned to the **onTooltipHidden** option is called. When a tooltip is shown, the function assigned to the **onTooltipShown** option is called. These functions display messages with corresponding content.

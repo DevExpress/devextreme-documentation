@@ -1,0 +1,22 @@
+﻿.wrapper{
+    height: 300px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.option{
+    margin: 20px 0 20px 0;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+}
+.option>*{
+    margin-bottom: 10px;
+}
+.option .dx-checkbox{
+    display: inline-block;
+    vertical-align: middle;
+    width: 170px;
+}
+.option .dx-textbox{
+    display: inline-block;
+    vertical-align: middle;
+}

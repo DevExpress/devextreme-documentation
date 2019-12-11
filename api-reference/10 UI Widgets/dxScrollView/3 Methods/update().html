@@ -1,0 +1,28 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Resize scroll view', onClick: resizeScrollView }"></div>
+<div data-bind="dxCheckBox: { text: 'Update scroll view on resize', value: updateScrollView }"></div>
+<div id="myScrollView" style="" data-bind="dxScrollView: {}">
+    <div id="textContainer"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div class="button" dx-button="{ text: 'Resize scroll view', onClick: resizeScrollView }"></div>
+    <div dx-check-box="{
+        text: 'Update scroll view on resize',
+        bindingOptions: {
+            value: 'updateScrollView'
+        }
+    }"></div>
+    <div id="myScrollView" dx-scroll-view="{}">
+        <div id="textContainer"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="resizeButton"></div>
+<div id="updateSelector"></div>
+<div id="myScrollView">
+    <div id="textContainer"></div>
+</div>
+<!--/@jQuery-->

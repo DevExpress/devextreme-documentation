@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div class="switch" data-bind="dxSwitch: { onText: onTextValue, offText: offTextValue }"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">onText</div>
+        <div class="dx-field-value" data-bind="dxTextBox: { value: onTextValue }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">offText</div>
+        <div class="dx-field-value" data-bind="dxTextBox: { value: offTextValue }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="switch" dx-switch="{
+        bindingOptions: {
+            onText: 'onTextValue',
+            offText: 'offTextValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">onText</div>
+            <div class="dx-field-value" ng-model="onTextValue" dx-text-box="{ }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">offText</div>
+            <div class="dx-field-value" ng-model="offTextValue" dx-text-box="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySwitch"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">onText</div>
+        <div class="dx-field-value" id="onTextBox"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">offText</div>
+        <div class="dx-field-value" id="offTextBox"></div>
+    </div>
+</div>
+<!--/@jQuery-->

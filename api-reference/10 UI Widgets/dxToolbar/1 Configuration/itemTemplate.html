@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div data-bind="dxToolbar: {
+    dataSource: toolbarItems,
+    itemTemplate: 'customItem',
+    onItemClick: itemClickHandler
+}">
+    <div data-options="dxTemplate: { name: 'title' }">
+        <b style="color:red;" data-bind="text: text"></b>
+    </div>
+    <div data-options="dxTemplate: { name: 'customItem' }">
+        <i style="margin:0 5px 0 5px; cursor: pointer;" data-bind="text: text"></i>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-toolbar="{
+        dataSource: toolbarItems,
+        itemTemplate: 'customItem',
+        onItemClick: itemClickHandler
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'title' }">
+            <b style="color:red;">{{itemObj.text}}</b>
+        </div>
+        <div data-options="dxTemplate: { name: 'customItem' }">
+            <i style="margin:0 5px 0 5px; cursor: pointer;">{{itemObj.text}}</i>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myToolbar"></div>
+<!--/@jQuery-->

@@ -1,0 +1,5 @@
+﻿In the following example, the **instance()** method is used to get access to the chart options. This method is called not like the other methods. To call the **instance()** method, the following construction is used: 
+
+    <!--JavaScript-->$("#pieChartContainer").dxPieChart("instance")
+    
+Use the button below to show the tooltip of the next point in order.

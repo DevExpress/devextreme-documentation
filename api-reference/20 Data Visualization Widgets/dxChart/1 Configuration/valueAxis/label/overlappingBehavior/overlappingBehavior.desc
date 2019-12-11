@@ -1,0 +1,1 @@
+In the following example, the chart is rotated and the value axis tick interval is intentionally set to a very small value, so that the labels overlap each other. The overlap is resolved by staggering the labels with 2 pixel spacing.

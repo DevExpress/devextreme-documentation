@@ -1,0 +1,32 @@
+﻿<!--@Knockout-->
+<div class="wrapper" data-bind="style: { 'border-color': currentColor }">
+    <p><b>Choose border color</b></p>
+    <div data-bind="dxRadioGroup:{ 
+        items: colors,
+        onValueChanged: changeColor,
+        valueExpr: 'value',
+        value: currentColor
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="wrapper" ng-style="{ 'border-color': currentColor }">
+        <p><b>Choose border color</b></p>
+        <div dx-radio-group="{ 
+            items: colors,
+            onValueChanged: changeColor,
+            valueExpr: 'value',
+            bindingOptions: {
+                value: 'currentColor'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper" id="radioGroupWrapper">
+    <p><b>Choose border color</b></p>
+    <div id="myRadioGroup"></div>
+</div>
+<!--/@jQuery-->

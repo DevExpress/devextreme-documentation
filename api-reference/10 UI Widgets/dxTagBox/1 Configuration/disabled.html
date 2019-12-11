@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div data-bind="dxTagBox:{
+    dataSource: tagBoxData,
+    placeholder: 'Select states',
+    displayExpr: 'name',
+    disabled: tagBoxDisabled
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: tagBoxDisabled
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-tag-box="{
+        dataSource: tagBoxData,
+        placeholder: 'Select states',
+        displayExpr: 'name',
+        bindingOptions: {
+            disabled: 'tagBoxDisabled'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="tagBoxDisabled" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTagBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

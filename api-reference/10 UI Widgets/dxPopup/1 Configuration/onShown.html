@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { onClick: togglePopup, text: 'Show popup' }"></div>
+<div data-bind="dxPopup: {
+    height: 200,
+    title: 'My Popup',
+    visible: visible,
+    showTitle: true,
+    onShown: popupShown,
+    onHidden: popupHidden
+}">
+    <div data-options="dxTemplate: { name: 'content' }">
+        <p>The popup text.</p>
+        <div data-bind="dxButton: { text: 'Hide popup', onClick: togglePopup }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-button="{ onClick: togglePopup, text: 'Show popup' }"></div>
+    <div dx-popup="{
+        height: 200,
+        title: 'My Popup',
+        onShown: popupShown,
+        onHidden: popupHidden,
+        bindingOptions: {
+            visible: 'visible'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'content' }">
+            <p>The popup text.</p>
+            <div dx-button="{ text: 'Hide popup', onClick: togglePopup }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="toggleButton"></div>
+<div id="myPopup"></div>
+<!--/@jQuery-->

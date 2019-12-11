@@ -1,0 +1,1 @@
+In this example, the range container has the shape of a trapezoid, which can be made using the **start** and **end** fields of the **width** configuration object set to different values.

@@ -1,0 +1,44 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{
+    text: buttonText,
+    onClick: buttonClicked,
+    type: buttonType
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">type</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: {
+        dataSource: buttonTypes,
+        value: buttonType
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="button" dx-button="{
+        text: buttonText,
+        onClick: buttonClicked,
+        bindingOptions: {
+            type: 'buttonType'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">type</div>
+          <div class="dx-field-value" ng-model="buttonType" dx-select-box="{
+            dataSource: buttonTypes
+        }"></div>
+      </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="myButton"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">type</div>
+    <div class="dx-field-value" id="typeSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

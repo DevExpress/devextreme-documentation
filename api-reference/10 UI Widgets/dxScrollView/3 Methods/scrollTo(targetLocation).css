@@ -1,0 +1,10 @@
+body{
+  text-align: center;
+}
+#scrollViewContainer{
+  margin: 10px;
+  height: 60%;
+}
+.dx-button-text {
+    color: blue;
+}

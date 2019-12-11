@@ -1,0 +1,2 @@
+In this demo, you can change the name of the exported file at runtime. Type any text in the text box below the pivot grid. Then, export the grid using the icon in its upper-left corner. The exported file will have the exact name you have typed.
+[note] This example will not work in IE9 and Safari.

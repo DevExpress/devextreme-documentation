@@ -1,0 +1,14 @@
+﻿body{
+    text-align: center;
+}
+.dx-resizable{
+    display:inline-block;
+    margin-top: 20px;
+    border: solid 2px #053;
+    background-color: #ccc;
+}
+.dx-resizable p{
+    color: #333;
+    margin-top: 20px;
+    font-size: larger;
+}

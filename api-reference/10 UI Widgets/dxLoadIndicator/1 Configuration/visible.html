@@ -1,0 +1,14 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{text: 'Load', onClick: showIndicator}"></div><br />
+<div data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{ text: 'Load', onClick: showIndicator }"></div><br />
+    <div id="myLoadIndicator" dx-load-indicator="{ bindingOptions: { visible: 'indicatorVisible' }}"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="loadButton"></div><br />
+<div id="myLoadIndicator"></div>
+<!--/@jQuery-->

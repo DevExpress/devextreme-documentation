@@ -1,0 +1,29 @@
+<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: orders,
+    columns: columns,
+    pager: { visible: false },
+    scrolling: { mode: 'infinite' },
+    filterRow: {
+        visible: true,
+        resetOperationText: 'Restore default'
+    }
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height:390px; max-width:630px; margin: 0 auto" dx-data-grid="{
+        dataSource: orders,
+        columns: columns,
+        pager: { visible: false },
+        scrolling: { mode: 'infinite' },
+        filterRow: {
+            visible: true,
+            resetOperationText: 'Restore default'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

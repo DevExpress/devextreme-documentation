@@ -1,0 +1,34 @@
+<!--@Knockout-->
+<div data-bind="dxButton:{ text: 'Subscribe to ItemClick event', onClick: clickHandler }"></div></br>
+<div data-bind="dxPivot: { dataSource: pivotData, onInitialized: initializedHandler }">
+    <div data-options="dxTemplate : { name: 'item' } ">
+        <div data-bind="dxList: { dataSource: listData }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <div data-bind="text: name"></div>
+                <div data-bind="text: phone"></div>
+                <div data-bind="text: email"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 500px;">
+    <div dx-button="{ text: 'Subscribe for ItemClick event' ,onClick: clickHandler }"></div>
+    <div dx-pivot="{ dataSource: pivotData, onInitialized: initializedHandler }" dx-item-alias="group">
+        <div data-options="dxTemplate : { name: 'item' } ">
+            <div dx-list="{ dataSource: group.listData }" dx-item-alias="contact">
+                <div data-options="dxTemplate : { name: 'item' } ">
+                    <div>{{contact.name}}</div>
+                    <div>{{contact.phone}}</div>
+                    <div>{{contact.email}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myButton"></div></br>
+<div id="myPivot"></div>
+<!--/@jQuery-->

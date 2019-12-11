@@ -1,0 +1,25 @@
+.lookup{
+    margin: 10px;
+}
+.info {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px blue;
+    background: #fed;
+    color: #332;
+}
+.info-image{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+.info-name{
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+    width: 60%;
+    text-align: left;
+}
+.info p{
+    margin: 5px;
+}

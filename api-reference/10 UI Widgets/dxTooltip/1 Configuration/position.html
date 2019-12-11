@@ -1,0 +1,55 @@
+<!--@Knockout-->
+<div id="button" data-bind="dxButton:{ text:'Button' }, event: { mouseover: toggleTooltip, mouseout: toggleTooltip } "></div>
+<div data-bind="dxTooltip:{
+    target: '#button',
+    visible: tooltipVisible,
+    position: currentPosition
+}">
+    <div data-options="dxTemplate:{ name: 'content' }">
+        <p>Button</p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">position</div>
+        <div class="dx-field-value" data-bind="dxSelectBox: {
+            items: ['top', 'bottom', 'left', 'right'],
+            value: currentPosition
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="button" dx-button="{ text:'Button' }" ng-mouseover="toggleTooltip()" ng-mouseout="toggleTooltip()"></div>
+    <div dx-tooltip="{ 
+        target: '#button',
+        bindingOptions: {
+            visible: 'tooltipVisible',
+            position: 'currentPosition'
+        }
+    }">
+        <div data-options="dxTemplate:{ name: 'content' }">
+            <p>Button</p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">position</div>
+            <div class="dx-field-value" ng-model="currentPosition" dx-select-box="{
+                items: ['top', 'bottom', 'left', 'right']
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myTooltip"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">position</div>
+        <div class="dx-field-value" id="positionSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,27 @@
+<!--@Knockout-->
+<div style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: orders,
+    columns: columns,
+    paging: { pageSize: 7 },
+    searchPanel: {
+        visible: true,
+        text: 'Brazil'
+    }
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div style="height:390px; max-width:630px; margin: 0 auto" dx-data-grid="{
+        dataSource: orders,
+        columns: columns,
+        paging: { pageSize: 7 },
+        searchPanel: {
+            visible: true,
+            text: 'Brazil'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

@@ -1,0 +1,48 @@
+﻿<!--@Knockout-->
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    displayExpr: 'country',
+    placeholder: 'Type country name',
+    value: autocompleteValue
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        Country: <b data-bind="text: country"></b><br />
+        <span style="color:grey;">Capital: <span data-bind="text: capital"></span></span>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">value</div>
+        <div class="dx-field-value"><b data-bind="text: autocompleteValue"></b></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="autocomplete" ng-model="autocompleteValue" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        displayExpr: 'country',
+        placeholder: 'Type country name'
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            Country: <b>{{itemObj.country}}</b><br />
+            <span style="color:grey;">Capital: {{itemObj.capital}}</span>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">value</div>
+            <div class="dx-field-value"><b>{{autocompleteValue}}</b></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="autocomplete" id="myAutocomplete"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">value</div>
+    <div class="dx-field-value"><b id="value"></div>
+  </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,81 @@
+﻿<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label" style="width:30%;">
+            <span id="handles" data-bind="event: { dxhoverstart: showTooltip }">handles</span>
+        </div>
+        <div class="dx-field-value" style="width:70%;" data-bind="dxTextBox: {
+            value: handlesValue
+        }"></div>
+    </div>
+</div>
+<div data-bind="dxResizable: {
+    handles: handlesValue,
+    minHeight: 100,
+    minWidth: 200,
+    maxHeight: 300,
+    maxWidth: 300,
+    width: 200,
+    height: 100
+}">
+    <p><b>Resize this element</b></p>
+</div>
+<div data-bind="dxTooltip: {
+    visible: tooltipVisible,
+    target: '#handles'
+}">
+    <p>Available values:</p>
+    <ul><li>"all"</li><li>"top"</li><li>"bottom"</li><li>"left"</li><li>"right"</li></ul>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label" style="width:30%;">
+                <span id="handles" dx-hoverstart="showTooltip();">handles</span>
+            </div>
+            <div class="dx-field-value" style="width:70%;" ng-model="handlesValue" dx-text-box="{ }"></div>
+        </div>
+    </div>
+    <div dx-resizable="{
+        minHeight: 100,
+        minWidth: 200,
+        maxHeight: 300,
+        maxWidth: 300,
+        width: 200,
+        height: 100,
+        bindingOptions: {
+            handles: 'handlesValue'
+        }
+    }">
+        <p><b>Resize this element</b></p>
+    </div>
+    <div dx-tooltip="{
+        target: '#handles',
+        bindingOptions: {
+            visible: 'tooltipVisible'
+        }
+    }">
+        <p>Available values:</p>
+        <ul><li>"all"</li><li>"top"</li><li>"bottom"</li><li>"left"</li><li>"right"</li></ul>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label" style="width:30%;">
+            <span id="handles">handles</span>
+        </div>
+        <div class="dx-field-value" style="width:70%;" id="handlesTextBox"></div>
+    </div>
+</div>
+<div id="myResizable">
+    <p><b>Resize this element</b></p>
+</div>
+<div id="handlesTooltip">
+    <p>Available values:</p>
+    <ul><li>"all"</li><li>"top"</li><li>"bottom"</li><li>"left"</li><li>"right"</li></ul>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, you can select grid records using the tag box located under the grid. The selection is performed by calling the **selectRows(keys, preserve)** method.

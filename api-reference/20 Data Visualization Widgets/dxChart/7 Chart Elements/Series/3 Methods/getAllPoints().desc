@@ -1,0 +1,1 @@
+﻿In this example, the maximum point value in the clicked series is displayed. The series' **getAllPoints()** method is used to calculate the maximum value from all the points.

@@ -1,0 +1,5 @@
+In the following example, the **instance()** method is used to get access to the range selector options. This method is not called like the other methods. To call the **instance()** method, the following construction is used.
+
+    <!--JavaScript -->$("#rangeSelectorContainer").dxRangeSelector("instance")
+
+Click the button below to display the currently selected range.

@@ -1,0 +1,51 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to SelectionChanged event', onClick: clickHandler }"></div>
+<div data-bind="dxTabs: {
+    dataSource: tabs,
+    selectedIndex: currentIndex,
+    onInitialized: initializedHandler
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectedIndex</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: 0,
+            max: 2,
+            showSpinButtons: true,
+            value: currentIndex
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to SelectionChanged event', onClick: clickHandler }"></div>
+    <div dx-tabs="{
+        dataSource: tabs,
+        onInitialized: initializedHandler,
+        bindingOptions:{
+            selectedIndex: 'currentIndex'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">selectedIndex</div>
+            <div class="dx-field-value" ng-model="currentIndex" dx-number-box="{
+                min: 0,
+                max: 2,
+                showSpinButtons: true
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myTabs"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">selectedIndex</div>
+        <div class="dx-field-value" id="indexSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

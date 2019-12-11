@@ -1,0 +1,1 @@
+﻿In this example, the point's **showTooltip()** method is called within the handler of the *Show next tooltip* button click. Here, this handler displays the tooltip of the next point in the order.

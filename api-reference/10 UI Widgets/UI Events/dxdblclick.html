@@ -1,0 +1,15 @@
+<!--@Knockout-->
+<p>Perform a double click on the yellow element</p>
+<div id="myElement" data-bind="event: { dxdblclick: myEventHandler }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <p>Perform a double click on the yellow element</p>
+    <div id="myElement" dx-dblclick="myEventHandler($event)"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Perform a double click on the yellow element</p>
+<div id="myElement"></div>
+<!--/@jQuery-->
+

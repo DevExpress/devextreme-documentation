@@ -1,0 +1,53 @@
+<!--@Knockout-->
+<div id="myList" data-bind="dxList: {
+    dataSource: listDataSource,
+    height: '80%',
+    grouped: 'true'
+}">
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">grouped</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { 
+            value: true,
+            onValueChanged: groupedValueChanged
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div id="myList" dx-list="{
+        dataSource: listDataSource,
+        height: '80%',
+        grouped: true
+    }" dx-item-alias="itemObj">
+        <div class="listItem" data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div style="margin-top: 15px;" class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">grouped</div>
+            <div class="dx-field-value" dx-switch="{
+                value: true,
+                onValueChanged: groupedValueChanged
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myList"></div>
+<div style="margin-top: 15px;" class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">grouped</div>
+        <div class="dx-field-value" id="groupedSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

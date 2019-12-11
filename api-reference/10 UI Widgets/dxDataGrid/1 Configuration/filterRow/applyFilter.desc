@@ -1,0 +1,1 @@
+﻿In this example, the **applyFilter** option is set to *'onClick'*. This setting supplies the grid with the *"Apply Filter"* button. Type a text in any filter row cell and then click the *"Apply Filter"* button to apply filtering.

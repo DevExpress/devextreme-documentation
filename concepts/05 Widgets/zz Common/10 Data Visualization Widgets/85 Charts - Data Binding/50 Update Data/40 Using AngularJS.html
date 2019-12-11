@@ -1,0 +1,36 @@
+<!--@jQuery-->
+<p>To see this example, change the binding approach to <i>AngularJS</i> in the <b>Documentation Settings</b> (<img src="/Content/images/doc/16_2/Common/settings_active.png" alt="Documentation Settings" style="vertical-align:middle"/>).</p>
+<!--/@jQuery-->
+<!--@Knockout-->
+<p>To see this example, change the binding approach to <i>AngularJS</i> in the <b>Documentation Settings</b> (<img src="/Content/images/doc/16_2/Common/settings_active.png" alt="Documentation Settings" style="vertical-align:middle"/>).</p>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="exampleController">
+    <div style="height:60px; width: 250px; margin: 0 auto; text-align: center" dx-sparkline="{
+        argumentField: 'time',
+        valueField: 'velocity',
+        type: 'spline',
+        bindingOptions: {
+            dataSource: 'data'
+        }
+    }"></div>
+
+    <div style="margin:5px; text-align:center">
+        <div style="height: 40px" dx-button="{
+            text: 'Start',
+            onClick: start,
+            bindingOptions: {
+                disabled: 'isStarted'
+            }
+        }"></div>
+
+        <div style="height: 40px" dx-button="{
+            text: 'Stop',
+            onClick: stop,
+            bindingOptions: {
+                disabled: '!isStarted'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

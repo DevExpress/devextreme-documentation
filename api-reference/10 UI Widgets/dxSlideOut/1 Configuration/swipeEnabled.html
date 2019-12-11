@@ -1,0 +1,49 @@
+<!--@Knockout-->
+<div data-bind="dxSlideOut: {
+    items: slideOutItems,
+    menuVisible: showMenu,
+    onItemClick: changeMenuVisibility,
+    swipeEnabled: swipeEnabledValue
+}">
+    <div data-options="dxTemplate : { name: 'content' } ">
+        <div data-bind="dxButton: {
+            text: 'Show Menu',
+            onClick: $root.changeMenuVisibility
+        }"></div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">swipeEnabled:</div>
+                <div class="dx-field-value" data-bind="dxSwitch:{ value: $root.swipeEnabledValue }"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-slide-out="{
+        items: slideOutItems,
+        onItemClick: changeMenuVisibility,
+        bindingOptions: {
+            menuVisible: 'showMenu',
+            swipeEnabled: 'swipeEnabledValue'
+        }
+    }">
+        <div data-options="dxTemplate : { name: 'content' } ">
+            <div dx-button="{
+                text: 'Show Menu',
+                onClick: $parent.changeMenuVisibility
+            }"></div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">swipeEnabled:</div>
+                    <div class="dx-field-value" ng-model="$parent.swipeEnabledValue" dx-switch="{ }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySlideOut"></div>
+<!--/@jQuery-->

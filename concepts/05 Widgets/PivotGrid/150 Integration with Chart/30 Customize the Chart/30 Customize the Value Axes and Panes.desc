@@ -1,0 +1,1 @@
+﻿In this example, **Chart** is integrated with **PivotGrid** using the **bindChart(chart, integrationOptions)** method. **PivotGrid** has two data fields: *"Total"* and *"Average"*. Series generated from each field occupy an individual pane. Additionally, the panes are colored differently using the **customizeChart** function.

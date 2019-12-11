@@ -1,0 +1,36 @@
+<!--@Knockout-->
+<div data-bind="dxList: {
+    dataSource: listDataSource,
+    height: '80%',
+    itemDeleteMode: 'static',
+    allowItemDeleting: allowDeleting
+}">
+    <div data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<p>allowItemDeleting <span data-bind="dxSwitch :{ value: allowDeleting }"></span></p>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-list="{
+        dataSource: listDataSource,
+        height: '80%',
+        itemDeleteMode: 'static',
+        bindingOptions: {
+            allowItemDeleting: 'allowDeleting',
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <p>allowItemDeleting <span class="dx-field-value" ng-model="allowDeleting" dx-switch="{ }"></span></p>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myList"></div>
+<p>allowItemDeleting <span id="allowDeletingSelector"></span></p>
+<!--/@jQuery-->

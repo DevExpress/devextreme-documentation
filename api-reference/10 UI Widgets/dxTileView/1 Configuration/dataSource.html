@@ -1,0 +1,93 @@
+<!--@Knockout-->
+<div data-bind="dxTileView: {
+    dataSource: tileViewDataSource,
+    itemMargin: 10,
+    baseItemHeight: 150,
+    baseItemWidth: 200,
+    height: '75%'
+}">
+    <div class="tile" data-options="dxTemplate:{name:'item'}">
+        <div class="inlineElement">
+            <img data-bind="attr: { src: imagePath }"/>
+        </div>
+        <div class="inlineElement">
+            <b style="font-size: larger;" data-bind="text: name"></b>
+        </div>
+        <p>&nbsp;</p>
+        <p>Area: <i data-bind="text: area"></i> km2</p>
+        <p>Population: <i data-bind="text: population"></i></p>
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <p>Population</p>
+        <div data-bind="dxRangeSlider: {
+            min: 0,
+            max: 40000000,
+            start: minPopulation,
+            end: maxPopulation,
+            onValueChanged: updateValues
+        }"></div>
+        <div style="text-align:left;">
+            <p>min: <span data-bind="text: minPopulation"></span></p>
+            <p>max: <span data-bind="text: maxPopulation"></span></p>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-tile-view="{
+        dataSource: tileViewDataSource,
+        itemMargin: 10,
+        baseItemHeight: 150,
+        baseItemWidth: 200,
+        height: '75%'
+    }" dx-item-alias="itemObj">
+        <div class="tile" data-options="dxTemplate:{ name:'item' }">
+            <div class="inlineElement">
+                <img ng-attr-src="{{itemObj.imagePath}}" />
+            </div>
+            <div class="inlineElement">
+                <b style="font-size: larger;">{{itemObj.name}}</b>
+            </div>
+            <p>&nbsp;</p>
+            <p>Area: <i>{{itemObj.area}}</i> km2</p>
+            <p>Population: <i>{{itemObj.population}}</i></p>
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <p>Population</p>
+            <div dx-range-slider="{
+                min: 0,
+                max: 40000000,
+                onValueChanged: updateValues,
+                bindingOptions: {
+                    start: 'minPopulation',
+                    end: 'maxPopulation'
+                }
+            }"></div>
+            <div style="text-align:left;">
+                <p>min: {{minPopulation}}</p>
+                <p>max: {{maxPopulation}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTileView"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <p>Population</p>
+        <div id="populationRangeSlider"></div>
+        <div style="text-align:left;">
+            <p>min: <span id="minPopulation"></span></p>
+            <p>max: <span id="maxPopulation"></span></p>
+        </div>
+    </div>
+</div>
+<!--/@jQuery-->

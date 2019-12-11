@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { onClick: togglePopover, text: 'Choose color' }"></div>
+<div data-bind="dxPopover: {
+    width: 200,
+    visible: visible,
+    target: '.dx-button',
+    contentTemplate: 'popoverContent'
+}">
+    <div data-options="dxTemplate: { name: 'popoverContent' }">
+        <div data-bind="dxList: { dataSource: colors, onItemClick: chooseColor }"></div>
+        <div style="display: inline-block;">Selected color:</div>
+        <div class="col-marker" data-bind="style: { 'background-color': currentColor }">&nbsp;</div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-button="{ onClick: togglePopover, text: 'Choose color' }"></div>
+    <div dx-popover="{
+        width: 200,
+        height: 'auto',
+        target: '.dx-button',
+        contentTemplate: 'popoverContent',
+        bindingOptions: {
+            visible: 'visible'
+        }
+    }">
+        <div data-options="dxTemplate: { name: 'popoverContent' }">
+            <div dx-list="{ dataSource: colors, onItemClick: chooseColor }"></div>
+            <div style="display: inline-block;">Selected color:</div>
+            <div class="col-marker" ng-style="{ 'background-color': currentColor }">&nbsp;</div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="toggleButton"></div>
+<div id="myPopover"></div>
+<!--/@jQuery-->

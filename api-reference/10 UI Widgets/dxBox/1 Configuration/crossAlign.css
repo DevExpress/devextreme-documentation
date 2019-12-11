@@ -1,0 +1,28 @@
+﻿body{
+    text-align:center;
+}
+.box{
+    margin: 10px auto;
+    border: solid 2px;
+}
+.dx-box-item {
+    overflow: hidden;
+}
+#item1{ 
+    background-color: #f39e6c; 
+}
+#item2{ 
+    background-color: #f5e5a6; 
+}
+#item3{ 
+    background-color: #94d7c7; 
+}
+#item1 .innerBox{ 
+    height: 140px;
+}
+#item2 .innerBox{ 
+    height: 120px;
+}
+#item3 .innerBox{ 
+    height: 150px;
+}

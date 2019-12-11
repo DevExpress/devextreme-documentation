@@ -1,0 +1,14 @@
+﻿p{
+    padding: 5px 10px;
+    margin: 0;
+}
+.content{
+    height: 100%;
+}
+.dx-scrollable-content{
+    width: 200%;
+}
+#myScrollView{
+    margin: 10px;
+    height: 70%;
+}

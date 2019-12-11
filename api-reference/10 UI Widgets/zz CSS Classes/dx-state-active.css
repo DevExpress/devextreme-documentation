@@ -1,0 +1,9 @@
+.dx-state-active{
+  border: solid 4px red;
+}
+.tile {
+  border-radius: .5em;
+  text-align: center;
+  color: white;
+  background: gray;
+}

@@ -1,0 +1,1 @@
+﻿In the following example, several appearance options of the constant lines are changed. These lines are drawn in the *yellowgreen* color with a 2-pixel width. The dash style of the lines is changed to *longDash*. In addition, the constant line labels are colored in *lightskyblue*.

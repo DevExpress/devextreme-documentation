@@ -1,0 +1,3 @@
+If an end-user is equipped with a keyboard, he or she can clear and apply sorting to multiple columns without using the context menu. In this instance, the user must click a column header with the CTRL key pressed to clear sorting settings of the column.
+
+When [multiple sorting](/concepts/05%20Widgets/DataGrid/020%20Sorting/020%20Sorting%20in%20UI/30%20Multiple%20Mode.md '/Documentation/Guide/Widgets/DataGrid/Sorting/#Sorting_in_UI/Multiple_Mode') is allowed, the first click on a column header with the SHIFT key pressed applies sorting in the ascending order to this column. Subsequent clicks with SHIFT pressed reverses the sort order. In that case, the existing sorting settings of other columns are preserved.

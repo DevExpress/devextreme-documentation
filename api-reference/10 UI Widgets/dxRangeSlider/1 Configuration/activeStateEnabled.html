@@ -1,0 +1,41 @@
+<!--@Knockout-->
+<div data-bind="dxRangeSlider: {
+    min:50,
+    max: 100,
+    activeStateEnabled: enableActiveState
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: enableActiveState
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-range-slider="{
+        min:50,
+        max: 100,
+        bindingOptions: {
+            activeStateEnabled: 'enableActiveState'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">activeStateEnabled</div>
+            <div class="dx-field-value" ng-model="enableActiveState" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myRangeSlider"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">activeStateEnabled</div>
+        <div class="dx-field-value" id="stateSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

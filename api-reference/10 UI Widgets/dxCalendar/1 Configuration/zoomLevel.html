@@ -1,0 +1,35 @@
+﻿<!--@Knockout-->
+<div data-bind="dxCalendar: { 
+    zoomLevel: currentZoom
+}"></div> 
+<div class="dx-fieldset">
+    <div class="dx-field-label">zoomLevel</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: { 
+        items: ['month', 'year', 'decade', 'century'],
+        value: currentZoom
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-calendar="{ 
+        bindingOptions: { 
+            zoomLevel: 'currentZoom'
+        }
+    }"></div> 
+    <div class="dx-fieldset">
+        <div class="dx-field-label">zoomLevel</div>
+        <div class="dx-field-value" ng-model="currentZoom" dx-select-box="{
+            items: ['month', 'year', 'decade', 'century']
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myCalendar"></div> 
+<div class="dx-fieldset">
+    <div class="dx-field-label">zoomLevel</div>
+    <div class="dx-field-value" id="zoomSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

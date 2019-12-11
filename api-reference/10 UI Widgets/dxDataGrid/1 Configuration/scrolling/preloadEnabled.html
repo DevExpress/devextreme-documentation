@@ -1,0 +1,50 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" data-bind="dxDataGrid: {
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        columns: columns,
+        scrolling: {
+            mode: 'virtual',
+            preloadEnabled: checkBoxState
+        }
+    }"></div>
+        <div data-bind="dxCheckBox: {
+        text: 'Enable Page Preloading',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" dx-data-grid="{
+        dataSource: {
+            store: {
+                type: 'odata',
+                url: 'https://sampleservices.devexpress.com/Northwind.svc/Products'
+            }
+        },
+        columns: columns,
+        scrolling: {
+            mode: 'virtual',
+            preloadEnabled: true
+        },
+        bindingOptions: {
+            'scrolling.preloadEnabled': 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Enable Page Preloading'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:360px;"></div>
+    <div id="enablePreloadCheckbox"></div>
+</div>
+<!--/@jQuery-->

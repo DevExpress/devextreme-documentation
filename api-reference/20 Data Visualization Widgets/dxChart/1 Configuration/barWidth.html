@@ -1,0 +1,66 @@
+﻿<!--@jQuery-->
+<div id="chartContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>barWidth:&nbsp;</div>
+    <div id="sliderContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'type',
+        type: 'bar'
+    },
+    series: [
+        { valueField: 'brazil', name: 'Brazil' },
+        { valueField: 'china', name: 'China' },
+        { valueField: 'usa', name: 'USA' }
+    ],
+    valueAxis: {
+        label: { format: 'largeNumber' }
+    },
+    barWidth: sliderValue
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>barWidth:&nbsp;</div>
+    <div id="sliderContainer" data-bind="dxSlider: {
+        min: 0.01, max: 1,
+        step: 0.01,
+        label: { visible: true },
+        showRange: false,
+        value: sliderValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" dx-chart="{
+        dataSource: data,
+        commonSeriesSettings: {
+            argumentField: 'type',
+            type: 'bar'
+        },
+        series: [
+            { valueField: 'brazil', name: 'Brazil' },
+            { valueField: 'china', name: 'China' },
+            { valueField: 'usa', name: 'USA' }
+        ],
+        valueAxis: {
+            label: { format: 'largeNumber' }
+        },
+        bindingOptions: {
+            barWidth: 'sliderValue'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>barWidth:&nbsp;</div>
+        <div id="sliderContainer" ng-model="sliderValue" dx-slider="{
+            min: 0.01, max: 1,
+            step: 0.01,
+            label: { visible: true },
+            showRange: false
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

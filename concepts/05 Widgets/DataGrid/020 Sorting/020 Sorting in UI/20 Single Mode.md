@@ -1,0 +1,3 @@
+By default, a single mode is set. In this mode, records can be sorted only one column at a time. Applying sorting to a column clears sorting settings of other columns. Also, a context menu, which appears when you right-click (long tap in touch UI) a column header, can be used to apply or clear sorting settings of a column. The following animation shows the entire process of sorting in single mode.
+
+![DevExtreme DataGrid SortingSingleMode](/images/DataGrid/SortingSingleMode.gif)

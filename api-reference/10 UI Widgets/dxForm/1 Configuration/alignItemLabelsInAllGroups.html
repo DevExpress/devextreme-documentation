@@ -1,0 +1,26 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="option">
+        <div data-bind="dxCheckBox: alignLabelsInAllGroupsOptions"></div>
+    </div>
+    <div data-bind="dxForm: formOptions"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="option">
+        <div ng-model="alignLabelsInAllGroups" dx-check-box="{
+            text: 'Align labels in all groups'
+        }"></div>
+    </div>
+    <div dx-form="formOptions"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="option">
+        <div id="alignLabelsInAllGroupsCheckBox"></div>
+    </div>
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

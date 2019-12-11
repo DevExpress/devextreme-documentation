@@ -1,0 +1,9 @@
+﻿body {
+    text-align: center;
+}
+.tabContent {
+    padding: 20px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid;
+}

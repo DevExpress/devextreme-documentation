@@ -1,0 +1,56 @@
+﻿<!--@Knockout-->
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    displayExpr: 'country',
+    placeholder: 'Type country name',
+    searchMode: currentMode
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        Country: <b data-bind="text: country"></b><br />
+        <span style="color:grey;">Capital: <span data-bind="text: capital"></span></span>
+    </div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div style="width:60%;" class="dx-field-label">searchMode</div>
+    <div style="width:40%;" class="dx-field-value" data-bind="dxSelectBox: {
+        dataSource: searchModes,
+        value: currentMode
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="autocomplete" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        displayExpr: 'country',
+        placeholder: 'Type country name',
+        bindingOptions: {
+            searchMode: 'currentMode'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            Country: <b>{{itemObj.country}}</b><br />
+            <span style="color:grey;">Capital: {{itemObj.capital}}</span>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div style="width:60%;" class="dx-field-label">maxLength</div>
+            <div style="width:40%;" class="dx-field-value" ng-model="currentMode" dx-select-box="{
+                dataSource: searchModes
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="autocomplete" id="myAutocomplete"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div style="width:60%;" class="dx-field-label">searchMode</div>
+    <div style="width:40%;" class="dx-field-value" id="modeSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,3 @@
+---
+dep: texts\groupContinuesMessage.md
+---

@@ -1,0 +1,47 @@
+﻿<!--@Knockout-->
+<div style="margin: 10px;" data-bind="dxList: {
+    dataSource: listDataSource,
+    grouped: true
+}">
+  <div data-options="dxTemplate:{ name:'group' }">
+    <h1 data-bind="text: key"></h1>
+  </div>
+  <div class="listItem" data-options="dxTemplate:{ name:'item' }">
+    <div style="display:inline-block; margin: 5px;">
+      <img style="margin:5px;" data-bind="attr: { src: imagePath }" />
+    </div>
+    <div style="display:inline-block; margin: 5px;">
+      <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+      <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+    <p>Area: <i data-bind="text: area"></i> km2</p>
+    <p>Population: <i data-bind="text: population"></i></p>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-list="{
+        dataSource: listDataSource,
+        grouped: true
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'group' }">
+            <h1>{{itemObj.key}}</h1>
+        </div>
+        <div data-options="dxTemplate: { name: 'item' }">
+            <div style="display:inline-block; margin: 5px;">
+                <img style="margin:5px;" ng-attr-src="{{itemObj.imagePath}}" />
+            </div>
+            <div style="display:inline-block; margin: 5px;">
+                <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+                <p>Capital: <i>{{itemObj.capital}}</i></p>
+            </div>
+            <p>Area: <i>{{itemObj.area}}</i> km2</p>
+            <p>Population: <i>{{itemObj.population}}</i></p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="margin: 10px;" id="myList"></div>
+<!--/@jQuery-->

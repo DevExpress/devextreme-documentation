@@ -1,0 +1,1 @@
+﻿In this example, the content of the *"First Name"* and *"Last Name"* columns is centered using the **alignment** option specified for these columns in the **columns** array.

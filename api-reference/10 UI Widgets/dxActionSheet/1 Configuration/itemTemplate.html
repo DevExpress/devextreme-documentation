@@ -1,0 +1,57 @@
+<!--@Knockout-->
+<p>Use the following item template</p>
+<div class="box" data-bind="dxSelectBox: {
+    dataSource: itemTemplates,
+    value: currentItemTemplate
+}"></div>
+<div class="button" data-bind="dxButton:{ text:'Show action sheet', onClick: showActionSheet }"></div>
+<div data-bind="dxActionSheet: { 
+    dataSource: actionSheetData,
+    visible: actionSheetVisible,
+    title: 'Choose action',
+    showTitle: true,
+    itemTemplate: currentItemTemplate,
+    onItemClick: itemClicked
+}">
+    <div data-options="dxTemplate: { name: 'links' }">
+        <div class="actionSheetButton">
+            <a href="#" data-bind="text: text"></a>
+        </div>
+    </div>
+    <div data-options="dxTemplate: { name: 'buttons' }" data-bind="dxButton: { text: text, icon: icon }">
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <p>Use the following item template</p>
+    <div class="box" ng-model="currentItemTemplate" dx-select-box="{
+        dataSource: itemTemplates
+    }"></div>
+    <div class="button" dx-button="{ text:'Show action sheet', onClick: showActionSheet }"></div>
+    <div dx-action-sheet="{
+        dataSource: actionSheetData,
+        title: 'Choose action',
+        showTitle: true,
+        onItemClick: itemClicked,
+        bindingOptions: {
+            itemTemplate: 'currentItemTemplate',
+            visible: 'actionSheetVisible'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'links' }">
+            <div class="actionSheetButton">
+                <a href="#">{{itemObj.text}}</a>
+            </div>
+        </div>
+        <div data-options="dxTemplate: { name: 'buttons' }" dx-button="{ text: itemObj.text, icon: itemObj.icon }">
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Use the following item template</p>
+<div class="box" id="templateSelector"></div>
+<div class="button" id="showButton"></div>
+<div id="myActionSheet"></div>
+<!--/@jQuery-->

@@ -1,0 +1,55 @@
+﻿<!--@Knockout-->
+<div style="height:400px; max-width:750px; margin: 0 auto" data-bind="dxScrollView: { showScrollbar: 'always' }">
+    <div class="wrapper">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">selectAllEnabled</div>
+                <div class="dx-field-value" data-bind="dxSwitch:{ 
+                    value: selectAll
+                }"></div>
+            </div>
+        </div>
+        <div data-bind="dxTreeView: {
+            dataSource: treeViewData,
+            width: 'auto',
+            showCheckBoxes: true,
+            selectAllEnabled: selectAll
+        }">
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:400px; max-width:750px; margin: 0 auto" dx-scroll-view="{ showScrollbar: 'always' }" ng-controller="demoController">
+    <div class="wrapper">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">selectAllEnabled</div>
+                <div class="dx-field-value" ng-model="selectAll" dx-switch="{ }"></div>
+            </div>
+        </div>
+        <div dx-tree-view="{
+            dataSource: treeViewData,
+            width: 'auto',
+            showCheckBoxes: true,
+            bindingOptions: {
+                selectAllEnabled: 'selectAll'
+            }
+        }">
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:400px; max-width:750px; margin: 0 auto" id="demoBox">
+    <div class="wrapper">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">selectAllEnabled</div>
+                <div class="dx-field-value" id="selectAllSelector"></div>
+            </div>
+        </div>
+        <div id="myTreeView"></div>
+    </div>
+</div>
+<!--/@jQuery-->

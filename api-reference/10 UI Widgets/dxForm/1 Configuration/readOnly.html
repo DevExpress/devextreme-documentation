@@ -1,0 +1,41 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="option">
+        <div data-bind="dxCheckBox:{
+            text: 'ReadOnly',
+            value: readOnlyValue
+        }"></div>
+    </div>
+    <div data-bind="dxForm: {
+        formData: employee,
+        colCount: 2,
+        labelLocation: 'top',
+        readOnly: readOnlyValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="option">
+        <div ng-model="readOnlyValue" dx-check-box="{
+            text: 'ReadOnly'
+        }"></div>
+    </div>
+    <div dx-form="{
+        formData: employee,
+        colCount: 2,
+        labelLocation: 'top',
+        bindingOptions:{
+            readOnly: 'readOnlyValue'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="option">
+        <div id="readOnlyCheckBox"></div>
+    </div>
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,27 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTagBox:{
+    dataSource: tagBoxData,
+    displayExpr: 'name',
+    tagTemplate: 'tag'
+}">
+    <div data-options="dxTemplate: { name: 'tag' }">
+        <p><b data-bind="text: name"></b> (<span data-bind="text: capital"></span>)</p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-tag-box="{
+        dataSource: tagBoxData,
+        displayExpr: 'name',
+        tagTemplate: 'tag'
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'tag' }">
+            <p><b>{{itemObj.name}}</b> ({{itemObj.capital}})</p>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTagBox"></div>
+<!--/@jQuery-->

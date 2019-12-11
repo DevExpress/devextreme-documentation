@@ -1,0 +1,10 @@
+﻿.dx-treeview{
+    margin: auto;
+    width: 200px;
+    height: 300px;
+}
+.wrapper{
+    height:400px;
+    max-width:550px;
+    margin: 0 auto;
+}

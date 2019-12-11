@@ -1,0 +1,59 @@
+﻿<!--@jQuery-->
+<div id="chartContainer" style="height:400px; max-width:700px; margin:0 auto"></div>
+<div style="text-align:center">
+    <div id="checkBoxContainer" style="margin-top:5px"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" style="height:400px; max-width:700px; margin:0 auto" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'type',
+        type: 'bar'
+    },
+    series: [
+        { valueField: 'brazil', name: 'Brazil' },
+        { valueField: 'china', name: 'China' },
+        { valueField: 'usa', name: 'USA' }
+    ],
+    animation: false,
+    valueAxis: {
+        label: { format: 'largeNumber' }
+    },
+    rotated: checkBoxState
+}"></div>
+<div style="text-align:center">
+    <div style="margin-top:5px" data-bind="dxCheckBox: {
+        text: 'Rotate the chart',
+        value: checkBoxState
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" style="height:400px; max-width:700px; margin:0 auto" dx-chart="{
+        dataSource: data,
+        commonSeriesSettings: {
+            argumentField: 'type',
+            type: 'bar'
+        },
+        series: [
+            { valueField: 'brazil', name: 'Brazil' },
+            { valueField: 'china', name: 'China' },
+            { valueField: 'usa', name: 'USA' }
+        ],
+        animation: false,
+        valueAxis: {
+            label: { format: 'largeNumber' }
+        },
+        bindingOptions: {
+            rotated: 'checkBoxState'
+        }
+    }"></div>
+    <div style="text-align:center">
+        <div style="margin-top:5px" ng-model="checkBoxState" dx-check-box="{
+            text: 'Rotate the chart'
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

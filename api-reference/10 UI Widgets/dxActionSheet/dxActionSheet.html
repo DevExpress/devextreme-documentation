@@ -1,0 +1,26 @@
+﻿<!--@Knockout-->
+<div class="button" data-bind="dxButton:{ text:'Show action sheet', onClick: showActionSheet }"></div>
+<div data-bind="dxActionSheet: { 
+    dataSource: actionSheetData,
+    visible: actionSheetVisible,
+    title: 'Choose action',
+    showTitle: true
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="button" dx-button="{text:'Show action sheet', onClick: showActionSheet}"></div>
+    <div dx-action-sheet="{ 
+        dataSource: actionSheetData,
+        title: 'Choose action',
+        showTitle: true,
+        bindingOptions: {
+            visible: 'actionSheetVisible'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="showButton"></div>
+<div id="myActionSheet"></div>
+<!--/@jQuery-->

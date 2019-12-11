@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+.tile {
+    border-radius: .5em;
+    text-align: center;
+    color: white;
+    background: gray;
+}

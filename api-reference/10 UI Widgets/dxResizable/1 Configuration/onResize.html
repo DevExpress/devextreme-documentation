@@ -1,0 +1,35 @@
+﻿<!--@Knockout-->
+<div data-bind="dxResizable: {
+    direction: 'right bottom',
+    minHeight: 100,
+    minWidth: 200,
+    maxHeight: 400,
+    maxWidth: 300,
+    width: 200,
+    height: 100,
+    onResize: resized
+}">
+    <p><b>Resize this element</b></p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-resizable="{
+        direction: 'right bottom',
+        minHeight: 100,
+        minWidth: 200,
+        maxHeight: 400,
+        maxWidth: 300,
+        width: 200,
+        height: 100,
+        onResize: resized
+    }">
+        <p><b>Resize this element</b></p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myResizable">
+    <p><b>Resize this element</b></p>
+</div>
+<!--/@jQuery-->

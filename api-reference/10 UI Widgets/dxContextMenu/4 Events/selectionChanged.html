@@ -1,0 +1,33 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div data-bind="dxButton: { text: 'Subscribe to SelectionChanged event', onClick: clickHandler }"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div data-bind="dxContextMenu: {
+        items: menuItems,
+        target: '#contextMenuTarget',
+        selectionMode: 'single',
+        selectByClick: true,
+        onInitialized: onInitialized
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to SelectionChanged event', onClick: clickHandler }"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div id="myContextMenu" dx-context-menu="{
+        items: menuItems,
+        onInitialized: onInitialized,
+        selectionMode: 'single',
+        selectByClick: true,
+        target: '#contextMenuTarget'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div id="button"></div>
+    <div class="target" id="contextMenuTarget"></div>
+    <div id="myContextMenu"></div>
+</div>
+<!--/@jQuery-->

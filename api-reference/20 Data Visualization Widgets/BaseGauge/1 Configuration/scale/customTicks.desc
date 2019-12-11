@@ -1,0 +1,1 @@
+In this example, the scale's major ticks are generated on the base of the Fibonacci sequence. An array with this sequence is assigned to the **customTicks** option.

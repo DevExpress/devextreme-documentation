@@ -1,0 +1,1 @@
+﻿In this example, the **value(value)** method is used to update the main gauge value. Click the button under the gauge to increase this value by 1. When the gauge needle reaches the end of the scale, a click on this button will decrease the main gauge value.

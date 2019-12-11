@@ -1,0 +1,1 @@
+This example illustrates the capability of the **Sparkline** widget to refresh itself when its data source is updated. This data source is declared as an observable array. Each time a new entry is added to the data source using the **addPoint** function, the **Sparkline** widget is refreshed automatically.

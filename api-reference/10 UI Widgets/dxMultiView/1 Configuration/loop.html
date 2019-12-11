@@ -1,0 +1,64 @@
+﻿<!--@Knockout-->
+<div class="hint">Swipe the view right or left.</div>
+<div data-bind="dxMultiView: {
+    dataSource: multiViewItems,
+    loop: loopValue,
+    height: 160
+}">
+    <div data-options="dxTemplate : { name: 'item' } ">
+        <div style="margin:25px;">
+            <h1 data-bind="text: title"></h1>
+            <p>&nbsp;</p>
+            <div style="text-align:left;" data-bind="foreach: dataArray">
+                <p><span data-bind="text: propertyKey"></span>: <b data-bind="text: propertyValue"></b></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">loop</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: loopValue
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="hint">Swipe the view right or left.</div>
+    <div dx-multi-view="{
+        dataSource: multiViewItems,
+        height: 160,
+        bindingOptions: {
+            loop: 'loopValue'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            <div style="margin:25px;">
+                <h1>{{itemObj.title}}</h1>
+                <p>&nbsp;</p>
+                <div style="text-align:left;" ng-repeat="(key, value) in itemObj.data">
+                    <p>{{key}}: <b>{{value}}</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">loop</div>
+            <div class="dx-field-value" ng-model="loopValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="hint">Swipe the view right or left.</div>
+<div id="myMultiView"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">loop</div>
+        <div class="dx-field-value" id="loopSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,46 @@
+﻿<!--@Knockout-->
+<div style="text-align:center">
+    <div style="height:70px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px">
+        <div style="width:200px; display: inline-block;" data-bind="dxSlider: {
+            min: 430,
+            value: sliderValue,
+            max: 630
+        }"></div>
+        Width: <div style="display: inline-block;" data-bind="text: sliderValue"></div>
+    </div>
+    <div style="height:500px; max-width:800px; margin: 0 auto" data-bind="dxDataGrid: {
+        dataSource: books,
+        columns: ['author', 'title', 'year', 'genre', 'language', 'format'],
+        paging: { pageSize: 8 },
+        width: sliderValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:500px; max-width:800px; margin: 0 auto">
+    <div style="height:70px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px">
+        <div style="width:200px; display: inline-block;" ng-model="sliderValue" dx-slider="{
+            min: 430,
+            max: 630
+        }"></div>
+        Width: <div style="display: inline-block">{{sliderValue}}</div>
+    </div>
+    <div style="margin: 0 auto" dx-data-grid="{
+        dataSource: books,
+        columns: ['author', 'title', 'year', 'genre', 'language', 'format'],
+        paging: { pageSize: 8 },
+        bindingOptions: {
+            width: 'sliderValue'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center">
+    <div style="height:70px;width:320px;margin:5px auto;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;text-align:left">
+        <div style="width:200px; display: inline-block;" id="slider"></div>
+        Width: <div style="display: inline-block;" id="sliderValue">530</div>
+    </div>
+</div>
+<div id="gridContainer" style="height:500px; max-width:800px; margin: 0 auto"></div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, you can spot the difference between the sorting modes provided by the **DataGrid** widget. Choose a required mode using the select box under the grid, and then click a column header. Note that in the *multiple* sorting mode, you can also right-click a column header to invoke a context menu that enables you to choose a sort order for the column.

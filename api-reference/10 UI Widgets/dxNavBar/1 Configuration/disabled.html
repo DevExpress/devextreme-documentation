@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div data-bind="dxNavBar:{
+    dataSource: navItems,
+    disabled: navBarDisabled
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: navBarDisabled
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-nav-bar="{
+        dataSource: navItems,
+        bindingOptions: {
+            disabled: 'navBarDisabled'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="navBarDisabled" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myNavBar"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

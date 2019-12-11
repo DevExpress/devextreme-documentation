@@ -1,0 +1,41 @@
+﻿<!--@Knockout-->
+<div class="demo-page">
+    <div class="wrapper">
+        <div data-bind="dxScheduler: {
+            dataSource: schedulerData,
+            textExpr: 'summary',
+            startDateExpr: 'start',
+            endDateExpr: 'end',
+            startDayHour: 9,
+            endDayHour: 18,
+            currentView: 'week',
+            currentDate: currentDate,
+            height: 650
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div class="wrapper">
+        <div dx-scheduler="{
+            dataSource: schedulerData,
+            textExpr: 'summary',
+            startDateExpr: 'start',
+            endDateExpr: 'end',
+            startDayHour: 9,
+            endDayHour: 18,
+            currentView: 'week',
+            currentDate: currentDate,
+            height: 650
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div class="wrapper">
+        <div id="myScheduler"></div>
+    </div>
+</div>
+<!--/@jQuery-->

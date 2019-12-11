@@ -1,0 +1,1 @@
+﻿In this example, you can change the applied layout algorithm using the select box under the treemap. Moreover, this example shows how to implement a custom layout algorithm (see the **customAlgorithm** function in the **js** tab).

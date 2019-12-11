@@ -1,0 +1,1 @@
+In this example, the 'compare' rule is applied to the 'Confirm your password' editor. This rule demands that the value of this editor equals to the value specified within the 'Password' editor. To check this rule, specify different passwords in the editors.

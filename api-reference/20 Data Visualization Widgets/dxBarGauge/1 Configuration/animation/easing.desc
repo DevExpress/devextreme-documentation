@@ -1,0 +1,1 @@
+﻿In the following example, you can see the difference between the *'ease-out cubic'* and *'linear'* algorithms of performing animation. To change the animation mode, choose the corresponding value from the drop-down menu in the bottom of the example. The animation performs in the chosen mode after you change the set of the gauge's values using the radio buttons below.

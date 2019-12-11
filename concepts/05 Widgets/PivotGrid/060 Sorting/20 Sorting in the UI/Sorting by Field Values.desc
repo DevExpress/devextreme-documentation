@@ -1,0 +1,1 @@
+In this example, you can sort row and column fields using the Field Chooser. Note that the configuration object of the *"City"* field has the **allowSorting** option set to *false*. Therefore, this particular field cannot be used for sorting.

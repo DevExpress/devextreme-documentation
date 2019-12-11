@@ -1,0 +1,1 @@
+In this example, you can spot the difference between three modes of scrolling provided by the **DataGrid** widget. Choose a required mode using the select box under the grid, and then scroll grid records. Note that when the *standard* mode is chosen, the grid is supplied with a pager automatically. Data for this example is obtained from *www.odata.org*.

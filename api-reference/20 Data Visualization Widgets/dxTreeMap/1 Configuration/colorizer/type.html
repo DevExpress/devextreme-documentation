@@ -1,0 +1,43 @@
+﻿<!--@jQuery-->
+<div id="treeMapContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>Select a Colorization Type:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="treeMapContainer" data-bind="dxTreeMap: {
+    dataSource: '/Content/data/displays.json',
+    colorizer: currentColorizerOptions
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>Select a Colorization Type:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: {
+        dataSource: colorizerOptions,
+        displayExpr: 'name',
+        valueExpr: 'options',
+        value: currentColorizerOptions
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="treeMapController">
+    <div id="treeMapContainer" dx-tree-map="{
+        dataSource: '/Content/data/displays.json',
+        bindingOptions: {
+            colorizer: 'currentColorizerOptions'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>Select a Colorization Type:&nbsp;</div>
+        <div id="selectBoxContainer" dx-select-box="{
+            dataSource: colorizerOptions,
+            displayExpr: 'name',
+            valueExpr: 'options',
+            bindingOptions: {
+                value: 'currentColorizerOptions'
+            }
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

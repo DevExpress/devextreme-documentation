@@ -1,0 +1,43 @@
+<!--@Knockout-->
+<div class="numberBox" data-bind="dxNumberBox: {
+    min: 0,
+    max: 100,
+    showSpinButtons: true,
+    disabled: numberBoxDisabled
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: numberBoxDisabled
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="numberBox" dx-number-box="{
+        min: 0,
+        max: 100,
+        showSpinButtons: true,
+        bindingOptions: {
+            disabled: 'numberBoxDisabled'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="numberBoxDisabled" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="numberBox" id="myNumberBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,20 @@
+<div style="height:60px; width: 250px; margin: 0 auto; text-align: center" data-bind="dxSparkline: {           
+    dataSource: observableChartDataSource,
+    argumentField: 'time',
+    valueField: 'velocity',
+    type: 'spline'
+}"></div>
+
+<div style="margin:5px; text-align:center">
+    <div style="height: 40px" data-bind="dxButton: {
+        text: 'Start',
+        onClick: start,
+        disabled: isStarted()
+    }"></div>
+
+    <div style="height: 40px" data-bind="dxButton: {
+        text: 'Stop',
+        onClick: stop,
+        disabled: !isStarted()
+    }"></div>
+</div>

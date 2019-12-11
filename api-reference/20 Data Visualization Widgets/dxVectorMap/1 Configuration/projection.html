@@ -1,0 +1,44 @@
+﻿<!--@jQuery-->
+<div id="vectorMapContainer" style="height:400px; max-width:800px; margin:0 auto"></div>
+<div id="selectBoxContainer" style="max-width:230px; margin:0 auto; margin-top:5px"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:400px; max-width:800px; margin:0 auto" data-bind="dxVectorMap: {
+    layers: {
+        dataSource: '/Content/data/vectorMap-sources/world.txt',
+        label: {
+            enabled: true,
+            dataField: 'name'
+        },
+        hoverEnabled: false
+    },
+    projection: selectedProjection
+}"></div>
+<div style="max-width:230px; margin:0 auto; margin-top:5px" data-bind="dxSelectBox: {
+    dataSource: projections,
+    displayExpr: 'name',
+    valueExpr: 'projection',
+    value: selectedProjection
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="vectorMapController">
+    <div id="vectorMapContainer" style="height:400px; max-width:800px; margin:0 auto" dx-vector-map="{
+        layers: {
+            dataSource: '/Content/data/vectorMap-sources/world.txt',
+            label: {
+                enabled: true,
+                dataField: 'name'
+            },
+            hoverEnabled: false
+        }
+    }"></div>
+    <div style="max-width:230px; margin:0 auto; margin-top:5px" dx-select-box="{
+        dataSource: projections,
+        displayExpr: 'name',
+        valueExpr: 'projection',
+        value: projections[0].projection,
+        onValueChanged: updateProjection
+    }"></div>
+</div>
+<!--/@AngularJS-->

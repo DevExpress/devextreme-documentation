@@ -1,0 +1,1 @@
+Applications built using the DevExtreme SPA framework can be deployed to any device after being packed as a mobile application, as well as be deployed as an ordinary web application or a WinJS application.

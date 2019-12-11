@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{ text:'Show action sheet', onClick: showActionSheet }"></div>
+<div data-bind="dxActionSheet: { 
+    dataSource: actionSheetData,
+    visible: actionSheetVisible,
+    showCancelButton: showCancelButtonValue,
+    title: 'Choose action',
+    showTitle: true
+}"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">showCancelButton</div>
+    <div class="dx-field-value" data-bind="dxSwitch: { value: showCancelButtonValue }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="button" dx-button="{text:'Show action sheet', onClick: showActionSheet}"></div>
+    <div dx-action-sheet="{ 
+        dataSource: actionSheetData,
+        title: 'Choose action',
+        showTitle: true,
+        bindingOptions: {
+            visible: 'actionSheetVisible',
+            showCancelButton: 'showCancelButtonValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showCancelButton</div>
+            <div class="dx-field-value" ng-model="showCancelButtonValue" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="showButton"></div>
+<div id="myActionSheet"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">showCancelButton</div>
+    <div class="dx-field-value" id="showCancelButtonSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

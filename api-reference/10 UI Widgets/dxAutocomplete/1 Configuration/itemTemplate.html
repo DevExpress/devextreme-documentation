@@ -1,0 +1,57 @@
+﻿<!--@Knockout-->
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    displayExpr: 'country',
+    placeholder: 'Type country name',
+    itemTemplate: currentTemplate
+}">
+    <div data-options="dxTemplate: { name: 'full' }">
+        <p>Country: <b data-bind="text: country"></b></p>
+        <p style="color:grey;">Capital: <b data-bind="text: capital"></b></p>
+    </div>
+    <div data-options="dxTemplate: { name: 'brief' }">
+        <p><b data-bind="text: country"></b> (<i data-bind="text: capital"></i>)</p>
+    </div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Template</div>
+    <div class="dx-field-value" data-bind="dxSelectBox: { dataSource: templates, value: currentTemplate }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="autocomplete" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        displayExpr: 'country',
+        placeholder: 'Type country name',
+        bindingOptions: {
+            itemTemplate: 'currentTemplate'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'full' }">
+            <p>Country: <b>{{itemObj.country}}</b></p>
+            <p style="color:grey;">Capital: <b>{{itemObj.capital}}</b></p>
+        </div>
+        <div data-options="dxTemplate: { name: 'brief' }">
+            <p><b>{{itemObj.country}}</b> (<i>{{itemObj.capital}}</i>)</p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">Template</div>
+            <div class="dx-field-value" ng-model="currentTemplate" dx-select-box="{ dataSource: templates }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="autocomplete" id="myAutocomplete"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Template</div>
+    <div class="dx-field-value" id="templateSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

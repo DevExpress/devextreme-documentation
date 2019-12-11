@@ -1,0 +1,24 @@
+<!--@Knockout-->
+<div data-bind="dxButton:{ text: 'Start', onClick: start }"></div>
+<div data-bind="dxProgressBar:{
+    min: 0,
+    max: 10,
+    value: currentValue,
+    onComplete: complete
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Start', onClick: start }"></div>
+    <div id="myProgressBar" dx-progress-bar="{ 
+        min: 0,
+        max: 10,
+        value: 0,
+        onComplete: complete
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="startButton"></div>
+<div id="myProgressBar"></div>
+<!--/@jQuery-->

@@ -1,0 +1,15 @@
+body{
+  text-align: center;
+}
+.button{
+  margin: 10px;
+}
+#targetElement {
+  margin-top: 40px;
+  margin-right: 10%;
+  display: inline-block;
+  width: 70%;
+  height: 50%;
+  border-style: solid;
+  background-color: lightgreen;
+}

@@ -1,0 +1,1 @@
+﻿In this example, columns are configured using the **customizeColumns** function. To declare band columns, the **isBand** and **ownerBand** properties are used.

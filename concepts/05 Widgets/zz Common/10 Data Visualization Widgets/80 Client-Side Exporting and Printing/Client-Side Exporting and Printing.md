@@ -1,0 +1,3 @@
+Although the DevExtreme Data Visualization widgets can be displayed in any browser on any platform, there are cases when printing a chart or having it as an image or a document may be necessary for an end user. For these cases, the DevExtreme Data Visualization widgets provide the client-side export and printing features. This guide shows how to use these features in the UI and in code. Also, it explains how to set up a server-side proxy that is necessary if you plan to support these features in **Safari on Mac OS** and **IE9**.
+
+<a href="https://www.youtube.com/watch?v=SVa8yrdjfno&index=1&list=PL8h4jt35t1wjGvgflbHEH_e3b23AA30-z" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">Watch Video</a>

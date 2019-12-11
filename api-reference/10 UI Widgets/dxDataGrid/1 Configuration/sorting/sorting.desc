@@ -1,0 +1,1 @@
+In this example, you can sort grid records by multiple columns as the **sorting** | **mode** option is set to *'multiple'*. To sort records by only one column, click a column header. To sort records by multiple columns, right-click a column header and choose a sort order for the column.

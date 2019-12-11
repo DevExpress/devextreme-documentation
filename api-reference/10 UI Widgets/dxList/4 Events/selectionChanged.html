@@ -1,0 +1,36 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to SelectionChanged event', onClick: clickHandler }"></div>
+<div data-bind="dxList: {
+        dataSource: listDataSource,
+        allowItemDeleting: true,
+        selectionMode: 'multiple',
+        showSelectionControls: true,
+        height: 300,
+        onInitialized: onInitialized
+    }"></div>
+<div id="selectedItems">
+    Selected Tasks: <span></span>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to SelectionChanged event', onClick: clickHandler }"></div>
+    <div dx-list="{
+        dataSource: listDataSource,
+        selectionMode: 'multiple',
+        showSelectionControls: true,
+        height: 300,
+        onInitialized: onInitialized
+    }" dx-item-alias="itemObj"></div>
+    <div id="selectedItems">
+        Selected Tasks: <span></span>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div id="myList"></div>
+<div id="selectedItems">
+    Selected Tasks: <span></span>
+</div>
+<!--/@jQuery-->

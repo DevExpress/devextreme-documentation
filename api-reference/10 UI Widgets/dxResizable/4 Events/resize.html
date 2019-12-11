@@ -1,0 +1,38 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to Resize event', onClick: clickHandler }"></div></br>
+<div data-bind="dxResizable: {
+    direction: 'right bottom',
+    minHeight: 100,
+    minWidth: 200,
+    maxHeight: 400,
+    maxWidth: 300,
+    width: 200,
+    height: 100,
+    onInitialized: initializedHandler
+}">
+    <p><b>Resize this element</b></p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to Resize event', onClick: clickHandler }"></div></br>
+    <div dx-resizable="{
+        direction: 'right bottom',
+        minHeight: 100,
+        minWidth: 200,
+        maxHeight: 400,
+        maxWidth: 300,
+        width: 200,
+        height: 100,
+        onInitialized: initializedHandler
+    }">
+        <p><b>Resize this element</b></p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div></br>
+<div id="myResizable">
+    <p><b>Resize this element</b></p>
+</div>
+<!--/@jQuery-->

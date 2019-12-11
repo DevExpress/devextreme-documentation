@@ -1,0 +1,1 @@
+﻿Hover over a series on the chart and information about the maximum point value of this series will appear under the chart. When the series that has been hovered over is hovered out, this information disappears. This behavior is achieved using the **isHovered()** method of the hovered series.

@@ -1,0 +1,37 @@
+<!--@Knockout-->
+<div data-bind="dxMap: {
+    controls: showControls
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">controls</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: showControls
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-map="{
+        bindingOptions: {
+            controls: 'showControls'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">controls</div>
+            <div class="dx-field-value" ng-model="showControls" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myMap"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">controls</div>
+        <div class="dx-field-value" id="controlsSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

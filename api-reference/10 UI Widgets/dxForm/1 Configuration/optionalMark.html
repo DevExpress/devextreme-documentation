@@ -1,0 +1,89 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="option">
+        <div>
+            <p data-bind="dxCheckBox:{
+                text: 'Show optional mark',
+                value: showOptionalMark
+            }"></p>
+            <p data-bind="dxTextBox: {
+                value: optionalMark,
+                placeholder: 'Enter optional mark',
+                width: 200
+            }"></p>
+        </div>
+        <div>
+            <p data-bind="dxCheckBox:{
+                text: 'Show required mark',
+                value: showRequiredMark
+            }"></p>
+            <p data-bind="dxTextBox: {
+                value: requiredMark,
+                placeholder: 'Enter required mark',
+                width: 200
+            }"></p>
+        </div>
+    </div>
+    <div data-bind="dxForm: {
+        formData: employee,
+        items: itemsOptions,
+        labelLocation: 'left',
+        colCount: 2,
+        optionalMark: optionalMark,
+        requiredMark: requiredMark,
+        showOptionalMark: showOptionalMark,
+        showRequiredMark: showRequiredMark
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="option">
+        <div>
+            <div ng-model="showOptionalMark" dx-check-box="{
+                text: 'Show optional mark'
+            }"></div>
+            <div ng-model="optionalMark" dx-text-box="{
+                placeholder: 'Enter optional mark',
+                width: 200
+            }"></div>
+        </div>
+        <div>
+            <p ng-model="showRequiredMark" dx-check-box="{
+                text: 'Show required mark'
+            }"></p>
+            <p ng-model="requiredMark" dx-text-box="{
+                placeholder: 'Enter required mark',
+                width: 200
+            }"></p>
+        </div>
+    </div>
+    <div dx-form="{
+        formData: employee,
+        items: itemsOptions,
+        labelLocation: 'left',
+        colCount: 2,
+            bindingOptions: {
+                optionalMark: 'optionalMark',
+                requiredMark: 'requiredMark',
+                showOptionalMark: 'showOptionalMark',
+                showRequiredMark: 'showRequiredMark'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="option">
+        <div>
+            <p id="optionalMarkCheckBox"></p>
+            <p id="optionalMarkTextBox"></p>
+        </div>
+        <div>
+            <p id="requiredMarkCheckBox"></p>
+            <p id="requiredMarkTextBox"></p>
+        </div>
+    </div>
+    <div id="form"></div>
+</div>
+<!--/@jQuery-->

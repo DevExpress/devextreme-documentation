@@ -1,0 +1,1 @@
+﻿In this example, the **argumentField** option of the **commonSeriesSettings** configuration object is used to set the common argument field for the series of the chart displayed in the background of the **RangeSelector** widget.

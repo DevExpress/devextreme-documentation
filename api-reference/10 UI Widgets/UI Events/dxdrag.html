@@ -1,0 +1,20 @@
+<!--@Knockout-->
+<p>Drag the green element</p>
+<div id="myElement" data-bind="event: { dxdragenter: dragEnter, dxdragleave: dragLeave }">
+    <div id="innerElement" data-bind="event: { dxdrag: dragged, dxdragstart: dragStarted, dxdragend: dragStopped }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <p>Drag the green element</p>
+    <div id="myElement" dx-dragenter="dragEnter($event)" dx-dragleave="dragLeave($event)">
+        <div id="innerElement" dx-drag="dragged($event)" dx-dragstart="dragStarted($event)" dx-dragend="dragStopped($event)"></div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Drag the green element</p>
+<div id="myElement">
+    <div id="innerElement"></div>
+</div>
+<!--/@jQuery-->

@@ -1,0 +1,1 @@
+In this example, you can spot the difference between marker types. Change the type of markers using the drop-down menu below the map. Note that to provide data for markers of a *bubble* and *pie* type, the **value** and **values** fields must be specified in the attributes of each marker.

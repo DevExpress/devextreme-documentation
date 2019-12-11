@@ -1,0 +1,16 @@
+p{
+    padding: 5px 10px;
+    margin: 0;
+}
+.dx-button{
+    margin: 10px;
+}
+.dx-checkbox{
+    margin:10px;
+}
+#myScrollView{
+    margin: 10px;
+    height: 30%;
+    background-color:lightGray;
+    color: black;
+}

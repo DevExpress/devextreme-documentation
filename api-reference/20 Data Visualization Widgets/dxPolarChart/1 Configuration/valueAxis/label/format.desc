@@ -1,0 +1,1 @@
+The example below shows a chart with formatted value axis labels. The format of these labels is set to 'fixedPoint' using the **format** option.

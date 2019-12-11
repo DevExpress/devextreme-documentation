@@ -1,0 +1,38 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" data-bind="dxDataGrid: {
+        dataSource: dataSource,
+        columns: columns,
+        scrolling: { mode: 'standard' },
+        onContentReady: getDataGrid
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'Show Editors',
+        value: true,
+        onValueChanged: onValueChanged
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" dx-data-grid="{
+        dataSource: dataSource,
+        columns: columns,
+        scrolling: { mode: 'standard' },
+        onContentReady: getDataGrid
+    }"></div>
+    <div dx-check-box="{
+        text: 'Show Editors',
+        value: true,
+        bindingOptions: {
+            onValueChanged: 'onValueChanged'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:360px;"></div>
+    <div id="showEditorsCheckbox"></div>
+</div>
+<!--/@jQuery-->

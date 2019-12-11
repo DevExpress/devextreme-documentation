@@ -1,0 +1,58 @@
+<!--@Knockout-->
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    displayExpr: 'country',
+    placeholder: 'Type country name',
+    valueChangeEvent: currentEvent,
+    onValueChanged: valueChanged
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        Country: <b data-bind="text: country"></b><br />
+        <span style="color:grey;">Capital: <span data-bind="text: capital"></span></span>
+    </div>
+</div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div style="width:60%;" class="dx-field-label">valueChangeEvent</div>
+    <div style="width:40%;" class="dx-field-value" data-bind="dxSelectBox: {
+        dataSource: events,
+        value: currentEvent
+    }"></div>
+  </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="autocomplete" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        displayExpr: 'country',
+        placeholder: 'Type country name',
+        onValueChanged: valueChanged,
+        bindingOptions: {
+            valueChangeEvent: 'currentEvent'
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            Country: <b>{{itemObj.country}}</b><br />
+            <span style="color:grey;">Capital: {{itemObj.capital}}</span>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div style="width:60%;" class="dx-field-label">valueChangeEvent</div>
+            <div style="width:40%;" class="dx-field-value" ng-model="currentEvent" dx-select-box="{
+                dataSource: events
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="autocomplete" id="myAutocomplete"></div>
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div style="width:60%;" class="dx-field-label">valueChangeEvent</div>
+    <div style="width:40%;" class="dx-field-value" id="eventSelector"></div>
+  </div>
+</div>
+<!--/@jQuery-->

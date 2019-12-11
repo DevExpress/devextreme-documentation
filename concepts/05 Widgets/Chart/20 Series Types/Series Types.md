@@ -1,0 +1,1 @@
+Topics in this section describe the series types that come with the **Chart** widget. Each topic gives an overview of a series type purpose, and details ways to enable and tune it to your needs.

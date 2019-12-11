@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">visible</div>
+        <div class="dx-field-value" data-bind="dxSwitch:{ 
+            value: toastVisible
+        }"></div>
+    </div>
+</div>
+<div data-bind="dxToast: {
+    message: 'Toast message',
+    visible: toastVisible
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">visible</div>
+            <div class="dx-field-value" ng-model="toastVisible" dx-switch="{ }"></div>
+        </div>
+    </div>
+    <div dx-toast="{
+        message: 'Toast message',
+        bindingOptions: {
+            visible: 'toastVisible'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">visible</div>
+        <div class="dx-field-value" id="visibleSelector"></div>
+    </div>
+</div>
+<div id="myToast"></div>
+<!--/@jQuery-->

@@ -1,0 +1,35 @@
+﻿<!--@jQuery-->
+<div id="gridContainer"></div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="gridContainer" data-bind="dxDataGrid: {
+    dataSource: books,
+    columns: [
+        'author',
+        { dataField: 'title', width: 210 },
+        { dataField: 'year', width: 60 }, 'genre', 'format'
+    ],
+    paging: { pageSize: 6 },
+    pager: {
+        showPageSizeSelector: true,
+        allowedPageSizes: [3, 4, 6]
+    }
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div id="gridContainer" dx-data-grid="{
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            { dataField: 'year', width: 60 }, 'genre', 'format'
+        ],
+        paging: { pageSize: 6 },
+        pager: {
+            showPageSizeSelector: true,
+            allowedPageSizes: [3, 4, 6]
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->

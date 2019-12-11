@@ -1,0 +1,3 @@
+---
+dep: allowAdding.md
+---

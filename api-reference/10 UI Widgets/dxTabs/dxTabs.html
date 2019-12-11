@@ -1,0 +1,22 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTabs: {
+    dataSource: tabs,
+    selectedIndex: selectedTab
+}"></div>
+<div class="tabContent" data-bind="text: tabContent"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-tabs="{
+        dataSource: tabs,
+        bindingOptions: {
+            selectedIndex: 'selectedTab'
+        }
+    }"></div>
+    <div class="tabContent">{{tabContent()}}</div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTabs"></div>
+<div class="tabContent" id="myTabContent">'User' tab content</div>
+<!--/@jQuery-->

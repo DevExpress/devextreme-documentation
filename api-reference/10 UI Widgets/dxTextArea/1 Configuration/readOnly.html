@@ -1,0 +1,38 @@
+﻿<!--@Knockout-->
+<div data-bind="dxTextArea: {
+    value: text,
+    height: 300,
+    readOnly: textAreaReadOnly
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">readOnly</div>
+        <div class="dx-field-value" data-bind="dxSwitch: { value: textAreaReadOnly }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div ng-model="text" dx-text-area="{
+        height: 300,
+        bindingOptions: {
+            readOnly: 'textAreaReadOnly'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">readOnly</div>
+            <div class="dx-field-value" ng-model="textAreaReadOnly" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTextArea"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">readOnly</div>
+        <div class="dx-field-value" id="readOnlySelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

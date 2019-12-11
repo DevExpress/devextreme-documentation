@@ -1,0 +1,39 @@
+﻿<!--@Knockout-->
+<div data-bind="dxSelectBox:{
+    dataSource: selectBoxData,
+    displayExpr: 'name',
+    itemTemplate: 'stateItem'
+}">
+    <div data-options="dxTemplate:{ name:'stateItem' }" style="text-align: left;">
+        <div style="display:inline-block; margin: 5px;">
+            <img style="margin:5px;" data-bind="attr: { src: imagePath }" />
+        </div>
+        <div style="display:inline-block; margin: 5px;">
+            <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+            <p>Capital: <i data-bind="text: capital"></i></p>
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-select-box="{
+        dataSource: selectBoxData,
+        displayExpr: 'name',
+        itemTemplate: 'stateItem'
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'stateItem' }" style="text-align: left;">
+            <div style="display:inline-block; margin: 5px;">
+                <img style="margin:5px;" ng-attr-src="{{itemObj.imagePath}}" />
+            </div>
+            <div style="display:inline-block; margin: 5px;">
+                <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+                <p>Capital: <i>{{itemObj.capital}}</i></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="mySelectBox"></div>
+<!--/@jQuery-->

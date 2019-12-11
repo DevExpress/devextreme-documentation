@@ -1,0 +1,1 @@
+This example shows how to customize series points using the **customizePoint** option. On this chart, if the argument of a point is greater than 20, this point is colored in *'darkorange'*, otherwise &#8212 *'royalblue'*.

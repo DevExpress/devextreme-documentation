@@ -1,0 +1,36 @@
+﻿<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to EnterKey event', onClick: clickHandler }"></div>
+<div class="autocomplete" data-bind="dxAutocomplete: {
+    dataSource: autocompleteDataSource,
+    valueExpr: 'country',
+    placeholder: 'Type country name',
+    itemTemplate: 'item',
+    onInitialized: onInitialized
+}">
+    <div data-options="dxTemplate: { name: 'item' }">
+        Country: <b data-bind="text: country"></b><br />
+        <span style="color:grey;">Capital: <span data-bind="text: capital"></span></span>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to EnterKey event', onClick: clickHandler }"></div>
+    <div class="autocomplete" dx-autocomplete="{
+        dataSource: autocompleteDataSource,
+        valueExpr: 'country',
+        placeholder: 'Type country name',
+        itemTemplate: 'item',
+        onInitialized: onInitialized
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate: { name: 'item' }">
+            Country: <b>{{itemObj.country}}</b><br />
+            <span style="color:grey;">Capital: {{itemObj.capital}}</span>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div>
+<div class="autocomplete" id="myAutocomplete"></div>
+<!--/@jQuery-->

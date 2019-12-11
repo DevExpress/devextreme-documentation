@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{ text: 'Load', onClick: startLoading }"></div>
+<div data-bind="dxLoadPanel:{
+    message: 'Loading...',
+    visible: loadPanelVisible,
+    shading: false,
+    showPane: paneVisible
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showPane</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: paneVisible
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{ text: 'Load', onClick: startLoading }"></div><br />
+    <div id="myLoadPanel" dx-load-panel="{
+        message: 'Loading...',
+        shading: false,
+        bindingOptions: { 
+            visible: 'loadPanelVisible',
+            showPane: 'paneVisible'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showPane</div>
+            <div class="dx-field-value" ng-model="paneVisible" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="loadButton"></div><br />
+<div id="myLoadPanel"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showPane</div>
+        <div class="dx-field-value" id="paneSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

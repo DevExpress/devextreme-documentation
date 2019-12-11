@@ -1,0 +1,41 @@
+<!--@Knockout-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto" data-bind="dxDataGrid: {
+    dataSource: orders,
+    columns: [
+        'OrderID', 'CustomerID',
+        { dataField: 'OrderDate', dataType: 'date', format: 'shortDate' },
+        { dataField: 'RequiredDate', dataType: 'date', format: 'shortDate' },
+        'Freight', 'ShipName'
+    ],
+    editing: {
+        mode: 'row'
+    },
+    onContextMenuPreparing: onContextMenuPreparing,
+    onRowClick: onRowClick,
+    onRowUpdated: switchEditingInProcess,
+    onRowInserted: switchEditingInProcess
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto" dx-data-grid="{
+        dataSource: orders,
+        columns: [
+            'OrderID', 'CustomerID',
+            { dataField: 'OrderDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'RequiredDate', dataType: 'date', format: 'shortDate' },
+            'Freight', 'ShipName'
+        ],
+        editing: {
+            mode: 'row'
+        },
+        onContextMenuPreparing: onContextMenuPreparing,
+        onRowClick: onRowClick,
+        onRowUpdated: switchEditingInProcess,
+        onRowInserted: switchEditingInProcess
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="gridContainer" style="height:390px; max-width:630px; margin: 0 auto"></div>
+<!--/@jQuery-->

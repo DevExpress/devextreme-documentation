@@ -1,0 +1,31 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div data-bind="dxMenu: { 
+        items: menuItems,
+        rtlEnabled: rtlEnabledValue
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'rtlEnabled',
+        value: rtlEnabledValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div dx-menu="{
+        items: menuItems,
+        bindingOptions: {
+            rtlEnabled: 'rtlEnabledValue'
+        }
+    }"></div>
+    <div ng-model="rtlEnabledValue" dx-check-box="{
+        text: 'rtlEnabled'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div id="myMenu"></div>
+    <div id="rtlSelector"></div>
+</div>
+<!--/@jQuery-->

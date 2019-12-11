@@ -1,0 +1,38 @@
+﻿body {
+    text-align: center;
+}
+.toolbar{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 25px;
+    padding: 5%;
+}
+.box {
+    height: 100%;
+}
+.header{ 
+    background-color: #f39e6c; 
+    text-align: center;
+}
+.content{ 
+    background-color: #f5e5a6; 
+}
+.left-side-bar{ 
+    background-color: #94d7c7; 
+}
+.right-side-bar{ 
+    background-color: #77c7e7; 
+}
+.footer{ 
+    background-color: #7b9bcf; 
+}
+.selection{
+    margin: auto;
+    font-size: 16px;
+    color: #808080;
+    background-color: white;
+    padding: 10px;
+    border: solid 2px #c36e3c;
+}

@@ -1,0 +1,31 @@
+<!--@Knockout-->
+<div class="demo-page">
+    <div data-bind="dxMenu: { 
+        items: menuItems,
+        hideSubmenuOnMouseLeave: hideOnMouseLeave
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'hideSubmenuOnMouseLeave',
+        value: hideOnMouseLeave
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="demo-page" ng-controller="demoController">
+    <div dx-menu="{
+        items: menuItems,
+        bindingOptions: {
+            hideSubmenuOnMouseLeave: 'hideOnMouseLeave'
+        }
+    }"></div>
+    <div ng-model="hideOnMouseLeave" dx-check-box="{
+        text: 'hideSubmenuOnMouseLeave'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="demo-page">
+    <div id="myMenu"></div>
+    <div id="hideOnLeaveSelector"></div>
+</div>
+<!--/@jQuery-->

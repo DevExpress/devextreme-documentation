@@ -1,0 +1,52 @@
+﻿<!--@jQuery-->
+<div id="pivotGridContainer" style="height:290px; max-width:850px; margin:0 auto"></div>
+<div style="height:400px; width:850px; margin-top:5px; margin:0 auto">
+    <div id="fieldChooserContainer" style="width:400px; display:inline-block"></div>
+    <div style="margin-top:40px; margin-left:100px; display:inline-block; vertical-align:top">
+        Show the "City" field:&nbsp;
+        <div id="switchContainer" style="vertical-align:middle"></div>
+    </div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:290px; max-width:850px; margin:0 auto" data-bind="dxPivotGrid: {
+    dataSource: dataSource,
+    fieldChooser: { enabled: false }
+}"></div>
+<div style="height:400px; width:850px; margin-top:5px; margin:0 auto">
+    <div style="width:400px; display:inline-block" data-bind="dxPivotGridFieldChooser: {
+        dataSource: dataSource
+    }"></div>
+    <div style="margin-top:40px; margin-left:100px; display:inline-block; vertical-align:top">
+        Show the "City" field:&nbsp;
+        <div style="vertical-align:middle" data-bind="dxSwitch: {
+            onText: 'true',
+            offText: 'false',
+            value: true,
+            onValueChanged: showCityField
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="pivotGridController">
+    <div style="height:290px; max-width:850px; margin:0 auto" dx-pivot-grid="{
+        dataSource: dataSource,
+        fieldChooser: { enabled: false }
+    }"></div>
+    <div style="height:400px; width:850px; margin-top:5px; margin:0 auto">
+        <div style="width:400px; display:inline-block" dx-pivot-grid-field-chooser="{
+            dataSource: dataSource
+        }"></div>
+        <div style="margin-top:40px; margin-left:100px; display:inline-block; vertical-align:top">
+            Show the "City" field:&nbsp;
+            <div style="vertical-align:middle" dx-switch="{
+                onText: 'true',
+                offText: 'false',
+                value: true,
+                onValueChanged: showCityField
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->

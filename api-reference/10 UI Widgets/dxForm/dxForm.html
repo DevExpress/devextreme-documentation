@@ -1,0 +1,24 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div data-bind="dxForm: {
+        formData: companyData,
+        colCount: 2,
+
+    }">
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div dx-form="{
+        formData: companyData,
+        colCount: 2
+    }">
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div id="myForm"></div>
+</div>
+<!--/@jQuery-->

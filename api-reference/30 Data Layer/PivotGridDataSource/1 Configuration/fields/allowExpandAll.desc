@@ -1,0 +1,1 @@
+In this example, you can change the **allowExpandAll** option of the *"Year"* column field at runtime. Turn the switch below the pivot grid to *true*. Then, right-click any *"Year"* column field. The invoked context menu will propose to expand/collapse all column fields on the same level.

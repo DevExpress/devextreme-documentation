@@ -1,0 +1,99 @@
+﻿<!--@jQuery-->
+<div id="chartContainer"></div>
+<div class="inline" style="text-align:center">
+    <div>commonAxisSettings | stripStyle | label | verticalAlignment:&nbsp;</div>
+    <div id="selectBoxContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="chartContainer" data-bind="dxChart: {
+    dataSource: data,
+    commonSeriesSettings: {
+        argumentField: 'year'
+    },
+    series: [
+        { valueField: 'europe', name: 'Europe' },
+        { valueField: 'americas', name: 'Americas' },
+        { valueField: 'africa', name: 'Africa' }
+    ],
+    animation: false,
+    valueAxis: {
+        label: { format: 'largeNumber' },
+        strips: [{
+            startValue: 100000000, endValue: 250000000, color: 'rgba(68, 100, 213, 0.2)',
+            label: { text: 'Lowest' }
+        }, {
+            startValue: 700000000, endValue: 900000000, color: 'rgba(68, 100, 213, 0.2)'
+        }, {
+            startValue: 1800000000, endValue: 2000000000, color: 'rgba(68, 100, 213, 0.2)',
+            label: { text: 'Highest' }
+        }]
+    },
+    argumentAxis: {
+        strips: [{
+            startValue: 2016, endValue: 2050, color: 'rgba(68, 100, 213, 0.2)',
+            label: { text: 'Forecast' }
+        }]
+    },
+    commonAxisSettings: {
+        stripStyle: {
+            label: { verticalAlignment: selectBoxValue }
+        }
+    }
+}"></div>
+<div class="inline" style="text-align:center">
+    <div>commonAxisSettings | stripStyle | label | verticalAlignment:&nbsp;</div>
+    <div id="selectBoxContainer" data-bind="dxSelectBox: {
+        items: ['top', 'center', 'bottom'],
+        value: selectBoxValue
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="chartController">
+    <div id="chartContainer" dx-chart="{
+        dataSource: data,
+        commonSeriesSettings: {
+            argumentField: 'year'
+        },
+        series: [
+            { valueField: 'europe', name: 'Europe' },
+            { valueField: 'americas', name: 'Americas' },
+            { valueField: 'africa', name: 'Africa' }
+        ],
+        animation: false,
+        valueAxis: {
+            label: { format: 'largeNumber' },
+            strips: [{
+                startValue: 100000000, endValue: 250000000, color: 'rgba(68, 100, 213, 0.2)',
+                label: { text: 'Lowest' }
+            }, {
+                startValue: 700000000, endValue: 900000000, color: 'rgba(68, 100, 213, 0.2)'
+            }, {
+                startValue: 1800000000, endValue: 2000000000, color: 'rgba(68, 100, 213, 0.2)',
+                label: { text: 'Highest' }
+            }]
+        },
+        argumentAxis: {
+            strips: [{
+                startValue: 2016, endValue: 2050, color: 'rgba(68, 100, 213, 0.2)',
+                label: { text: 'Forecast' }
+            }]
+        },
+        commonAxisSettings: {
+            stripStyle: {
+                label: { verticalAlignment: 'top' }
+            }
+        },
+        bindingOptions: {
+            'commonAxisSettings.stripStyle.label.verticalAlignment': 'selectBoxValue'
+        }
+    }"></div>
+    <div class="inline" style="text-align:center">
+        <div>commonAxisSettings | stripStyle | label | verticalAlignment:&nbsp;</div>
+        <div id="selectBoxContainer" ng-model="selectBoxValue" dx-select-box="{
+            items: ['top', 'center', 'bottom']
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

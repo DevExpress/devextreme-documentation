@@ -1,0 +1,35 @@
+﻿<!--@jQuery-->
+<div id="sparklineContainer" style="height:60px; max-width:200px; margin: 0 auto; margin-top:90px; margin-bottom:70px"></div>
+<div style="text-align:center; height:30px; margin-top:10px">
+    Horizontal Alignment:
+    <div id="horizontalAlignmentSelectBoxContainer" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<div style="text-align:center; height:30px; margin-top:10px">
+    Vertical Alignment:
+    <div id="verticalAlignmentSelectBoxContainer" style="display:inline-block; vertical-align:middle"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div style="height:60px; max-width:200px; margin: 0 auto; margin-top:90px; margin-bottom:70px" data-bind="{ dxSparkline: sparklineConfiguration }"></div>
+<div style="text-align:center; height:30px; margin-top:10px">
+    Horizontal Alignment:
+    <div style="display:inline-block; vertical-align:middle" data-bind="{ dxSelectBox: horizontalAlignmentSelectBoxConfiguration }"></div>
+</div>
+<div style="text-align:center; height:30px; margin-top:10px">
+    Vertical Alignment:
+    <div style="display:inline-block; vertical-align:middle" data-bind="{ dxSelectBox: verticalAlignmentSelectBoxConfiguration }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="sparklineController" style="height:300px">
+    <div style="height:60px; max-width:200px; margin: 0 auto; margin-top:90px; margin-bottom:70px" dx-sparkline="sparklineConfiguration"></div>
+    <div style="text-align:center; height:30px; margin-top:10px">
+        Horizontal Alignment:
+        <div style="display:inline-block; vertical-align:middle" dx-select-box="horizontalAlignmentSelectBoxConfiguration"></div>
+    </div>
+    <div style="text-align:center; height:30px; margin-top:10px">
+        Vertical Alignment:
+        <div style="display:inline-block; vertical-align:middle" dx-select-box="verticalAlignmentSelectBoxConfiguration"></div>
+    </div>    
+</div>
+<!--/@AngularJS-->

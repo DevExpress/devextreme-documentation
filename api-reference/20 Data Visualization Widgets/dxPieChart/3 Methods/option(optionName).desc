@@ -1,0 +1,1 @@
+﻿In this example, the **option(optionName)** method is used to obtain the value of the **tooltip | enabled** option and display it under the chart. To change this value, use the check box below.

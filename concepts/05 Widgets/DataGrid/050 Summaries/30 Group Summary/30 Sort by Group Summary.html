@@ -1,0 +1,128 @@
+﻿<!--@jQuery-->
+<div id="gridContainer""></div>
+<div id="controlsContainer">
+	Sort by 
+	<div id="selectBoxContainer"></div>
+	<div id="switchContainer"></div>
+</div>
+<!--/@jQuery-->
+<!--@Knockout-->
+<div id="gridContainer" data-bind="dxDataGrid: {
+        dataSource: books,
+        columns: [{
+            dataField: 'author',
+            width: 150
+        }, {
+            dataField: 'title',
+        }, {
+            dataField: 'genre',
+            groupIndex: 0
+        }, {
+            dataField: 'year',
+            width: 80
+        }, {
+            dataField: 'length',
+            width: 80
+        }, {
+            dataField: 'price',
+            width: 80
+        }],
+        grouping: { autoExpandAll: false },
+        summary: {
+            groupItems: [{
+                column: 'price',
+                summaryType: 'avg',
+                displayFormat: 'Avg price: {0}'
+            }, {
+                column: 'length',
+                valueFormat: 'decimal',
+                summaryType: 'avg',
+                displayFormat: 'Avg length: {0}'
+            }],
+        },
+        sortByGroupSummaryInfo: [{
+            summaryItem: 0,
+            sortOrder: 'asc'
+        }]
+}"></div>
+<div id="controlsContainer">
+	Sort by 
+	<div id="selectBoxContainer" data-bind="dxSelectBox: {
+        dataSource: [{ 'n': 'Average price', 'v': 0 },
+                     { 'n': 'Average length', 'v': 1 }],
+        valueExpr: 'v',
+        displayExpr: 'n',
+        value: 0,
+        width: 200,
+        height: 24,
+        onValueChanged: selected
+    }"></div>
+	<div id="switchContainer" data-bind="dxSwitch: {
+        onText: 'Asc',
+        offText: 'Desc',
+        value: true,
+        onValueChanged: switched
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div id="gridContainer" dx-data-grid="{
+        dataSource: books,
+        columns: [{
+            dataField: 'author',
+            width: 150
+        }, {
+            dataField: 'title',
+        }, {
+            dataField: 'genre',
+            groupIndex: 0
+        }, {
+            dataField: 'year',
+            width: 80
+        }, {
+            dataField: 'length',
+            width: 80
+        }, {
+            dataField: 'price',
+            width: 80
+        }],
+        grouping: { autoExpandAll: false },
+        summary: {
+            groupItems: [{
+                column: 'price',
+                summaryType: 'avg',
+                displayFormat: 'Avg price: {0}'
+            }, {
+                column: 'length',
+                valueFormat: 'decimal',
+                summaryType: 'avg',
+                displayFormat: 'Avg length: {0}'
+            }],
+        },
+        sortByGroupSummaryInfo: [{
+            summaryItem: 0,
+            sortOrder: 'asc'
+        }],
+        bindingOptions: {
+            'sortByGroupSummaryInfo[0].summaryItem': 'selected',
+            'sortByGroupSummaryInfo[0].sortOrder': 'sortOrder'
+        }
+    }"></div>
+    <div id="controlsContainer">
+        Sort by 
+        <div id="selectBoxContainer" ng-model="selected" dx-select-box="{
+            dataSource: [{ 'n': 'Average price', 'v': 0 },
+                     { 'n': 'Average length', 'v': 1 }],
+            valueExpr: 'v',
+            displayExpr: 'n',
+            width: 200,
+            height: 24
+        }"></div>
+        <div id="switchContainer" ng-model="switched" dx-switch="{
+            onText: 'asc',
+            offText: 'desc'
+        }"></div>
+    </div>
+</div>
+<!--/@AngularJS-->

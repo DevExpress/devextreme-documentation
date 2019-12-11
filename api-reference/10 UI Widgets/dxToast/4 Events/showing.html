@@ -1,0 +1,37 @@
+<!--@Knockout-->
+<div data-bind="dxButton: { text: 'Subscribe to Hiding and Showing events', onClick: clickHandler }"></div></br>
+<div class="button" data-bind="dxButton: {
+    text: 'Show toast',
+    onClick: showToast
+}"></div>
+<div data-bind="dxToast:{
+    message:'Toast message',
+    type:'success',
+    displayTime: 2000,
+    onInitialized: initializedHandler,
+    visible: toastVisible
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Subscribe to Hiding and Showing events', onClick: clickHandler }"></div></br>
+    <div class="button" dx-button="{
+        text: 'Show toast',
+        onClick: showToast
+    }"></div>
+    <div dx-toast="{
+        message:'Toast message',
+        type:'success',
+        displayTime: 2000,
+        onInitialized: initializedHandler,
+        bindingOptions: {
+            visible: 'toastVisible'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="button"></div></br>
+<div id="showToastButton"></div>
+<div id="myToast"></div>
+<!--/@jQuery-->

@@ -1,0 +1,17 @@
+﻿.dx-tab{
+    padding-right: 10px;
+}
+.dx-tab-selected .icon{
+    width: 36px;
+    height: 36px;
+    border-width: 3px;
+    margin-top: 6px;
+}
+.icon {
+    margin-top: 10px;
+    border: outset 2px grey;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: 100%;
+}

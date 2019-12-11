@@ -1,0 +1,12 @@
+<div data-bind="dxDropDownMenu: {
+  buttonText: 'Show menu',
+  dataSource: dropDownMenuData,
+  itemTemplate: 'menuItem'
+}">
+  <div data-options="dxTemplate:{ name:'menuItem' }">
+    <div style="text-align:left;">
+      <p><b data-bind="text: name"></b></p>
+      <p style="font-size:smaller;" data-bind="text: hint"></p>
+    </div>
+  </div>
+</div>

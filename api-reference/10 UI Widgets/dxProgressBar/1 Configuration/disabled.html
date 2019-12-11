@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div data-bind="dxButton:{ text: 'Start', onClick: start }"></div>
+<div data-bind="dxProgressBar:{
+    min: 0,
+    max: 100,
+    value: currentValue,
+    disabled: progressBarDisabled
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: progressBarDisabled
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text: 'Start', onClick: start }"></div>
+    <div id="myProgressBar" dx-progress-bar="{ 
+        min: 0,
+        max: 100,
+        value: 0,
+        bindingOptions: {
+            disabled: 'progressBarDisabled'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="progressBarDisabled" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="startButton"></div>
+<div id="myProgressBar"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

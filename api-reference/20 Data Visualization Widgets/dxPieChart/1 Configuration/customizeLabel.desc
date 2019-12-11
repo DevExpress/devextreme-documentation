@@ -1,0 +1,1 @@
+In this example, if a pie slice has a value greater than 500 million, its label is colored in *'deepskyblue'* using the **customizeLabel** option. If not, the slice label is painted in a color from a predefined palette.

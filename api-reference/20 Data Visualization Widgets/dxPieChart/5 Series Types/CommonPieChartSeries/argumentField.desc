@@ -1,0 +1,1 @@
+﻿In this example, the *continent* field of the data source is set as the argument field for the chart series using the **argumentField** option.

@@ -1,0 +1,35 @@
+﻿<!--@Knockout-->
+<div class="wrapper">
+    <div class="treeView" data-bind="dxTreeView: {
+        dataSource: treeViewData,
+        showCheckBoxesMode: 'normal',
+        onInitialized: initializedHandler,
+        width: 'auto'
+    }">
+    </div>
+    <div data-bind="dxList:{
+        items: checkedItems
+    }">
+        <p data-bind="text: text"></p>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div class="wrapper" ng-controller="demoController">
+    <div class="treeView" dx-tree-view="{
+        dataSource: treeViewData,
+        showCheckBoxesMode: 'normal',
+        onInitialized: initializedHandler,
+        width: 'auto'
+    }"></div>
+    <div dx-list="{ bindingOptions: {items: 'checkedItems'} }" dx-item-alias="item">
+        <p>{{item.text}}</p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="wrapper">
+    <div class="treeView" id="myTreeView"></div>
+    <div id="myList"></div>
+</div>
+<!--/@jQuery-->

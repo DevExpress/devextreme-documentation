@@ -1,0 +1,1 @@
+In this example, groups appear collapsed when you group grid records, because the **autoExpandAll** option of the **grouping** object is set to *false*.

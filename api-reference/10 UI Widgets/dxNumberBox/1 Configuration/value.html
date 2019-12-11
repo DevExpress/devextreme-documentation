@@ -1,0 +1,35 @@
+<!--@Knockout-->
+<div data-bind="dxNumberBox: {
+    min: 0,
+    max: 100,
+    showSpinButtons: true,
+    step: 5,
+    value: number
+}"></div>
+<div data-bind="dxSlider:{
+    min: 0,
+    max: 100,
+    value: number
+}"></div>
+<p>The current value is <b data-bind="text: number"></b>.</p>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div ng-model="number" dx-number-box="{
+        min: 0,
+        max: 100,
+        showSpinButtons: true,
+        step: 5
+    }"></div>
+    <div ng-model="number" dx-slider="{
+        min: 0,
+        max: 100
+    }"></div>
+    <p>The current value is <b>{{number}}</b>.</p>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myNumberBox"></div>
+<div id="valueSlider"></div>
+<p>The current value is <b id="valueField">0</b>.</p>
+<!--/@jQuery-->

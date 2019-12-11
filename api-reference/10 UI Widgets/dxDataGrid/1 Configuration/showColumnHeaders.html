@@ -1,0 +1,49 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" data-bind="dxDataGrid: {
+    dataSource: employees,
+    columns: [
+        { dataField: 'TitleOfCourtesy', caption: 'Title' },
+        'FirstName',
+        'LastName',
+        { dataField: 'Title', caption: 'Position', width: 150 },
+        { dataField: 'BirthDate', dataType: 'date', format: 'shortDate' },
+        { dataField: 'HireDate', dataType: 'date', format: 'shortDate' }
+    ],
+    paging: { pageSize: 8 },
+    showColumnHeaders: checkBoxState
+}"></div>
+    <div data-bind="dxCheckBox: {
+    text: 'Show Column Headers',
+    value: checkBoxState
+}"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div style="height:360px" dx-data-grid="{
+        dataSource: employees,
+        columns: [
+            { dataField: 'TitleOfCourtesy', caption: 'Title' },
+            'FirstName',
+            'LastName',
+            { dataField: 'Title', caption: 'Position', width: 150 },
+            { dataField: 'BirthDate', dataType: 'date', format: 'shortDate' },
+            { dataField: 'HireDate', dataType: 'date', format: 'shortDate' }
+        ],
+        paging: { pageSize: 8 },
+        bindingOptions: {
+            showColumnHeaders: 'checkBoxState'
+        }
+    }"></div>
+    <div ng-model="checkBoxState" dx-check-box="{
+        text: 'Show Column Headers'
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:390px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:360px;"></div>
+    <div id="showColumnHeadersCheckbox"></div>
+</div>
+<!--/@jQuery-->

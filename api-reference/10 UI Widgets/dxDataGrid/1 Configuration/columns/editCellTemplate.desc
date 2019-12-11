@@ -1,0 +1,1 @@
+In this example, the cell editing feature is implemented using a template. Click the 'Edit' link to the right of any row and the corresponding cell will be transformed into a drop-down menu with a list of options. Open this menu, choose an option and click 'Save' to modify the grid's data source.

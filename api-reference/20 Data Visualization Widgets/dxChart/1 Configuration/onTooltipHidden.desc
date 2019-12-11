@@ -1,0 +1,1 @@
+﻿In this example, when a tooltip is made hidden, the function assigned to the **onTooltipHidden** option is called. This function displays a message with the corresponding content.

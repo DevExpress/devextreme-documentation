@@ -1,0 +1,1 @@
+In this example, a callback function is assigned to the **onCellClick** property. This function applies a CSS style to a clicked cell. To see the function in action, click a cell in the grid. You will see the text in this cell become *orange*.

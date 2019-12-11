@@ -1,0 +1,45 @@
+﻿<!--@Knockout-->
+<div class="tagBox" data-bind="dxTagBox:{
+    dataSource: tagBoxData,
+    placeholder: 'Select states',
+    displayExpr: 'name',
+    valueExpr: 'capital',
+    value: capitals
+}"></div>
+<div>
+    <p><b>Selected state capitals:</b></p>
+    <ul data-bind="foreach: capitals">
+        <li>
+            <p>"<span data-bind="text: $data"></span>"</p>
+        </li>
+    </ul>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="tagBox" dx-tag-box="{
+        dataSource: tagBoxData,
+        placeholder: 'Select states',
+        displayExpr: 'name',
+        valueExpr: 'capital',
+        bindingOptions: {
+            value: 'capitals'
+        }
+    }"></div>
+    <div>
+        <p><b>Selected state capitals:</b></p>
+        <ul ng-repeat="capital in capitals">
+            <li>
+                <p>"{{capital}}"</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="tagBox" id="myTagBox"></div>
+<div>
+    <p><b>Selected state capitals:</b></p>
+    <ul id="capitals"></ul>
+</div>
+<!--/@jQuery-->

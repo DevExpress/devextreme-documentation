@@ -1,0 +1,4 @@
+---
+default: null
+type: animationConfig
+---

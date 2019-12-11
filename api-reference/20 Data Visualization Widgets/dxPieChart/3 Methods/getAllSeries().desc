@@ -1,0 +1,1 @@
+﻿In this example, you can show tooltips using the button below. When clicking the *Show next tooltip* button, the **showTooltip()** method of the next point in the order will be called. Access to this point is provided by the chart's **getAllSeries()** and the series' **getAllPoints()** methods.

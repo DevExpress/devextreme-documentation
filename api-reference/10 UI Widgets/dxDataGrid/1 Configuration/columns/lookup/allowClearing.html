@@ -1,0 +1,58 @@
+﻿<!--@Knockout-->
+<div style="text-align:center; height:380px; max-width:630px; margin: 0 auto">
+    <div style="height:350px" data-bind="dxDataGrid: {
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            'year', 'genre',
+            { dataField: 'formatID', caption: 'Format', lookup: { dataSource: formats, valueExpr: 'id', displayExpr: 'format', allowClearing: true } }
+        ],
+        paging: { pageSize: 5 },
+        filterRow: { visible: true },
+        editing: {
+            allowUpdating: true,
+            mode: 'batch'
+        },
+        onContentReady: getDataGrid
+    }"></div>
+    <div data-bind="dxCheckBox: {
+        text: 'Allow Clearing',
+        value: true,
+        onValueChanged: onValueChanged
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="text-align:center; height:380px; max-width:630px; margin: 0 auto">
+    <div style="height:350px" dx-data-grid="{
+        dataSource: books,
+        columns: [
+            'author',
+            { dataField: 'title', width: 210 },
+            'year', 'genre',
+            { dataField: 'formatID', caption: 'Format', lookup: { dataSource: formats, valueExpr: 'id', displayExpr: 'format', allowClearing: true } }
+        ],
+        paging: { pageSize: 5 },
+        filterRow: { visible: true },
+        editing: {
+            allowUpdating: true,
+            mode: 'batch'
+        },
+        onContentReady: getDataGrid
+    }"></div>
+    <div dx-check-box="{
+        text: 'Allow Clearing',
+        value: true,
+        bindingOptions: {
+            onValueChanged: 'onValueChanged'
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="text-align:center; height:380px; max-width:630px; margin: 0 auto">
+    <div id="gridContainer" style="height:350px;"></div>
+    <div id="allowClearingCheckbox"></div>
+</div>
+<!--/@jQuery-->

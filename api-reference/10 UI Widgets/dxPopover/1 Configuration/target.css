@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+.dx-button{
+    margin: 20px;
+}
+#square{
+    margin: 30px auto 50px auto;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: solid 1px grey;
+}

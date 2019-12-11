@@ -1,0 +1,48 @@
+﻿<!--@Knockout-->
+<div class="borders">
+    <div class="max">
+        <div class="min"></div>
+    </div>
+</div>
+<div data-bind="dxResizable: {
+    direction: 'right bottom',
+    minHeight: 100,
+    minWidth: 200,
+    maxHeight: 400,
+    maxWidth: 300,
+    width: 200,
+    height: 100
+}">
+    <p><b>Resize this element</b></p>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="borders">
+        <div class="max">
+            <div class="min"></div>
+        </div>
+    </div>
+    <div dx-resizable="{
+        direction: 'right bottom',
+        minHeight: 100,
+        minWidth: 200,
+        maxHeight: 400,
+        maxWidth: 300,
+        width: 200,
+        height: 100
+    }">
+        <p><b>Resize this element</b></p>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="borders">
+    <div class="max">
+        <div class="min"></div>
+    </div>
+</div>
+<div id="myResizable">
+    <p><b>Resize this element</b></p>
+</div>
+<!--/@jQuery-->

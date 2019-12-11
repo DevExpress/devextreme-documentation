@@ -1,0 +1,29 @@
+<!--@Knockout-->
+<div class="dx-fieldset">
+    <div class="dx-field" style="text-align:center;">
+        Apply <b>"dx-state-invisible"</b> class to the button element<br />
+        <div data-bind="dxSwitch: { value: applyClass, onValueChanged:changeValue }"></div>
+    </div>
+</div>
+<div id="myButton" data-bind="dxButton: { text:'Click me' }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="dx-fieldset">
+        <div class="dx-field" style="text-align:center;">
+            Apply <b>"dx-state-invisible"</b> class to the button element<br />
+            <div ng-model="applyClass" dx-switch="{ onValueChanged:changeValue }"></div>
+        </div>
+    </div>
+    <div id="myButton" dx-button="{ text:'Click me' }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="dx-fieldset">
+    <div class="dx-field" style="text-align:center;">
+        Apply <b>"dx-state-invisible"</b> class to the button element<br />
+        <div id="classSelector"></div>
+    </div>
+</div>
+<div id="myButton"></div>
+<!--/@jQuery-->

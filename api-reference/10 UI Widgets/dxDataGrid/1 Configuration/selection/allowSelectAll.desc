@@ -1,0 +1,1 @@
+﻿In this example, you can change the value of the **selection** | **allowSelectAll** option by toggling the check box under the grid. When this option is *true*, you can select all grid records at once using the check box in the header of the selection column. When the aforementioned option is *false*, this check box can be used only to deselect all records.

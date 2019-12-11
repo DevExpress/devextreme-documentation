@@ -1,0 +1,60 @@
+<!--@Knockout-->
+<div data-bind="dxTileView: {
+    dataSource: tileViewDataSource,
+    itemMargin: 20,
+    baseItemHeight: 130,
+    baseItemWidth: 180,
+    height: '85%',
+    disabled: tileViewDisabled
+
+}">
+    <div class="tile" data-options="dxTemplate:{ name:'item' }">
+        <p style="font-size:larger;"><b data-bind="text: name"></b></p>
+        <img style="margin:5px;" data-bind="attr: { src: imagePath }" />
+        <p>Capital: <i data-bind="text: capital"></i></p>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" data-bind="dxSwitch:{ 
+            value: tileViewDisabled
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height:100%;">
+    <div dx-tile-view="{
+        dataSource: tileViewDataSource,
+        itemMargin: 20,
+        baseItemHeight: 130,
+        baseItemWidth: 180,
+        height: '85%',
+        bindingOptions: {
+            disabled: 'tileViewDisabled'
+        }
+    }" dx-item-alias="itemObj">
+        <div class="tile" data-options="dxTemplate:{ name:'item' }">
+            <p style="font-size:larger;"><b>{{itemObj.name}}</b></p>
+            <img style="margin:5px;" ng-attr-src="{{itemObj.imagePath}}" />
+            <p>Capital: <i>{{itemObj.capital}}</i></p>
+        </div>
+    </div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">disabled</div>
+            <div class="dx-field-value" ng-model="tileViewDisabled" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myTileView"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">disabled</div>
+        <div class="dx-field-value" id="disabledSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

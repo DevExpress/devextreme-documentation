@@ -1,0 +1,1 @@
+﻿In this example, the **option()** method is used to obtain the value of the **commonAxisSettings | visible** option and display it under the polar chart. To change this value, use the check box below.

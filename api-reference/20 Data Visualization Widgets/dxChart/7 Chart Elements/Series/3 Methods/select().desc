@@ -1,0 +1,1 @@
+﻿In the example below, click a series to select it. Then, click it once again to deselect it. The selection is performed using the **select()** method.

@@ -1,0 +1,46 @@
+<!--@Knockout-->
+<div data-bind="dxButton:{ text: 'Subscribe to ItemClick event', onClick: clickHandler }"></div></br>
+<div data-bind="dxPanorama: {
+    title: 'Online restaurant',
+    dataSource: panoramaData,
+    onInitialized: initializedHandler,
+    backgroundImage: {
+        url: '/Content/images/panorama_bg.png',
+        height: 407,
+        width: 500
+    }
+}">
+    <div data-options="dxTemplate : { name: 'item' } ">
+        <div data-bind="text: text"></div>
+        <div data-bind="foreach: images">
+            <img data-bind="attr: { src: src }" />
+        </div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div dx-button="{ text: 'Subscribe for ItemClick event' ,onClick: clickHandler }"></div>
+    <div dx-panorama="{
+        title: 'Online restaurant',
+        dataSource: panoramaData,
+        onInitialized: initializedHandler,
+        backgroundImage: {
+            url: '/Content/images/panorama_bg.png',
+            height: 407,
+            width: 500
+        }
+    }" dx-item-alias="itemObj">
+        <div data-options="dxTemplate : { name: 'item' } ">
+            <div>{{itemObj.text}}</div>
+            <div>
+                <img ng-repeat="image in itemObj.images" ng-attr-src="{{image.src}}" />
+            </div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myButton"></div></br>
+<div id="myPanorama"></div>
+<!--/@jQuery-->

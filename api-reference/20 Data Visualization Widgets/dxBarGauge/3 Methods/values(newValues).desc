@@ -1,0 +1,1 @@
+In this example, the **values(newValues)** method is used to update gauge values. Initially, all the values are set to 0. Click the button under the gauge to increase one of these values by 1. The value to be increased will be chosen randomly.

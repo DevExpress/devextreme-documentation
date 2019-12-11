@@ -1,0 +1,1 @@
+In this example, you can change the value of the **discreteAxisDivisionMode** option using the select box under the chart. Note how the grid lines change their position in accordance with the value of this option.

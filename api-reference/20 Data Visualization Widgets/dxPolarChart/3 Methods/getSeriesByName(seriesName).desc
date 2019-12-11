@@ -1,0 +1,1 @@
+﻿Enter the name of a series in the textbox and click the *Display maximum value* button. The **getSeriesByName(seriesName)** method will be called and the maximum value in the series with the specified name will be shown. If a series with the entered name does not exist, the corresponding message will be displayed. 

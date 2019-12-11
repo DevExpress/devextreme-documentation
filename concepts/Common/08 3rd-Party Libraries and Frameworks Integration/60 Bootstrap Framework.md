@@ -1,0 +1,1 @@
+DevExtreme UI widgets can be used in applications built using the [Bootstrap](https://getbootstrap.com) framework version 3.3.X.

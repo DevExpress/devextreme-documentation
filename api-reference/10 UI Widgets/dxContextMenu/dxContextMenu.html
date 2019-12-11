@@ -1,0 +1,34 @@
+<!--@Knockout-->
+<div style="height:300px; max-width:750px; margin: 0 auto">
+    <div id="targetElement">
+        Make a right click
+    </div>
+    <div data-bind="dxContextMenu: {
+        items: menuItems,
+        visible: contextMenuVisible,
+        onItemClick: itemClicked,
+        target: '#targetElement'
+    }"></div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div style="height:300px; max-width:750px; margin: 0 auto" ng-controller="demoController">
+    <div id="targetElement">
+        Make a right click
+    </div>
+    <div dx-context-menu="{
+        items: menuItems,
+        onItemClick: itemClicked,
+        target: '#targetElement',
+        bindingOptions: {
+            visible: 'contextMenuVisible',
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div style="height:300px; max-width:750px; margin: 0 auto">
+    <div id="targetElement">Make a right click</div>
+    <div id="myContextMenu"></div>
+</div>
+<!--/@jQuery-->

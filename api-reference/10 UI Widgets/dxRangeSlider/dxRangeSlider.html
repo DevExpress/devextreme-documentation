@@ -1,0 +1,53 @@
+﻿<!--@Knockout-->
+<div data-bind="dxRangeSlider: {
+    min:50,
+    max: 100,
+    start: rangeStart,
+    end: rangeEnd
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">From</div>
+        <div class="dx-field-value" data-bind="text: rangeStart"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">To</div>
+        <div class="dx-field-value" data-bind="text: rangeEnd"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-range-slider="{
+        min:50,
+        max: 100,
+        bindingOptions: {
+            start: 'rangeStart',
+            end: 'rangeEnd'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">From</div>
+            <div class="dx-field-value">{{rangeStart}}</div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">To</div>
+            <div class="dx-field-value">{{rangeEnd}}</div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="myRangeSlider"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">From</div>
+        <div class="dx-field-value" id="rangeStart">65</div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">To</div>
+        <div class="dx-field-value" id="rangeEnd">85</div>
+    </div>
+</div>
+<!--/@jQuery-->

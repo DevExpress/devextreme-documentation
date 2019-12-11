@@ -1,0 +1,39 @@
+<!--@Knockout-->
+<div class="numberBox" data-bind="dxNumberBox: {
+    placeholder: 'Enter number',
+    showClearButton: clearButtonVisible
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showClearButton</div>
+        <div class="dx-field-value" data-bind="dxSwitch: {
+            value: clearButtonVisible
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="numberBox" dx-number-box="{
+        placeholder: 'Enter number',
+        bindingOptions: {
+            showClearButton: 'clearButtonVisible'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">showClearButton</div>
+            <div class="dx-field-value" ng-model="clearButtonVisible" dx-switch="{ }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="numberBox" id="myNumberBox"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">showClearButton</div>
+        <div class="dx-field-value" id="showButtonSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

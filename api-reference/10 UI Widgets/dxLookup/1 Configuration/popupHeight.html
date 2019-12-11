@@ -1,0 +1,85 @@
+﻿<!--@Knockout-->
+<div class="lookup" data-bind="dxLookup: {
+    dataSource: lookupDataSource,
+    displayExpr: 'name',
+    fullScreen: false,
+    title: 'States',
+    popupHeight: heightValue,
+    popupWidth: widthValue
+}"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">popupHeight, %</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: 50,
+            max: 90,
+            step: 5,
+            showSpinButtons: true,
+            value: 70,
+            onValueChanged: heightChanged
+        }"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">popupWidth, %</div>
+        <div class="dx-field-value" data-bind="dxNumberBox: {
+            min: 50,
+            max: 90,
+            step: 5,
+            showSpinButtons: true,
+            value: 70,
+            onValueChanged: widthChanged
+        }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div class="lookup" dx-lookup="{
+        dataSource: lookupDataSource,
+        displayExpr: 'name',
+        fullScreen: false,
+        title: 'States',
+        bindingOptions: {
+            popupHeight: 'heightValue',
+            popupWidth: 'widthValue'
+        }
+    }"></div>
+    <div class="dx-fieldset">
+        <div class="dx-field">
+            <div class="dx-field-label">popupHeight, %</div>
+            <div class="dx-field-value" dx-number-box="{
+                min: 50,
+                max: 90,
+                step: 5,
+                showSpinButtons: true,
+                value: 70,
+                onValueChanged: heightChanged
+            }"></div>
+        </div>
+        <div class="dx-field">
+            <div class="dx-field-label">popupWidth, %</div>
+            <div class="dx-field-value" dx-number-box="{
+                min: 50,
+                max: 90,
+                step: 5,
+                showSpinButtons: true,
+                value: 70,
+                onValueChanged: widthChanged
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="lookup" id="myLookup"></div>
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">popupHeight, %</div>
+        <div class="dx-field-value" id="heightSelector"></div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-label">popupWidth, %</div>
+        <div class="dx-field-value" id="widthSelector"></div>
+    </div>
+</div>
+<!--/@jQuery-->

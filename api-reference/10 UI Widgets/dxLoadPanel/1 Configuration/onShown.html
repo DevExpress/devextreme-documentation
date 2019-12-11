@@ -1,0 +1,24 @@
+<!--@Knockout-->
+<div class="button" data-bind="dxButton:{ text: 'Load', onClick: startLoading }"></div>
+<div data-bind="dxLoadPanel:{
+    message: 'Loading...',
+    visible: loadPanelVisible,
+    onShown: loadPanelShown
+}"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController" style="height: 100%;">
+    <div class="button" dx-button="{ text: 'Load', onClick: startLoading }"></div><br />
+    <div id="myLoadPanel" dx-load-panel="{ 
+        message: 'Loading...',
+        onShown: loadPanelShown,
+        bindingOptions: { 
+            visible: 'loadPanelVisible' 
+        }
+    }"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div class="button" id="loadButton"></div><br />
+<div id="myLoadPanel"></div>
+<!--/@jQuery-->

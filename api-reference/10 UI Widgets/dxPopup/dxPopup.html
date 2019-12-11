@@ -1,0 +1,54 @@
+<!--@Knockout-->
+<div data-bind="dxButton:{ text:'Show popup', onClick:showPopup }"></div>
+<div data-bind="dxPopup:{
+    fullScreen: true,
+    visible:popupVisible
+}">
+    <div data-options="dxTemplate:{ name: 'title' }">
+        <h1 data-bind="text: popupTitle"></h1>
+        <div data-bind="dxCheckBox:{
+                text: 'Show &quot;Hide popup&quot; button',
+                value: buttonVisible
+            }"></div>
+    </div>
+    <div data-options="dxTemplate:{ name: 'content'}">
+        <p>The popup content.</p>
+        <div data-bind="dxButton: { text: 'Hide popup', onClick: hidePopup, visible: buttonVisible }"></div>
+    </div>
+</div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <div dx-button="{ text:'Show popup', onClick:showPopup }"></div>
+    <div dx-popup="{
+        fullScreen: true,
+        bindingOptions: {
+            visible:'popupVisible'
+        }
+    }">
+        <div data-options="dxTemplate:{ name: 'title' }">
+            <h1>{{popupTitle}}</h1>
+            <div dx-check-box="{
+                text: 'Show &quot;Hide popup&quot; button',
+                bindingOptions: { 
+                    value: 'buttonVisible'
+                }
+            }"></div>
+        </div>
+        <div data-options="dxTemplate:{ name: 'content' }">
+            <p>The popup content.</p>
+            <div dx-button="{
+                text: 'Hide popup',
+                onClick: hidePopup,
+                bindingOptions: {
+                    visible: 'buttonVisible'
+                }
+            }"></div>
+        </div>
+    </div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<div id="showButton"></div>
+<div id="myPopup"></div>
+<!--/@jQuery-->

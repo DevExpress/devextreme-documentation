@@ -1,0 +1,14 @@
+<!--@Knockout-->
+<p>Hold the yellow element</p>
+<div id="myElement" data-bind="event: { dxhold: myEventHandler }"></div>
+<!--/@Knockout-->
+<!--@AngularJS-->
+<div ng-controller="demoController">
+    <p>Hold the yellow element</p>
+    <div id="myElement" dx-hold="myEventHandler($event)"></div>
+</div>
+<!--/@AngularJS-->
+<!--@jQuery-->
+<p>Hold the yellow element</p>
+<div id="myElement"></div>
+<!--/@jQuery-->

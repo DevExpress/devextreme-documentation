@@ -1,0 +1,1 @@
+You cannot access widget elements in this handler because it is executed before they are ready. Use the [onDrawn](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onDrawn.md '{basewidgetpath}/Configuration/#onDrawn') handler instead.

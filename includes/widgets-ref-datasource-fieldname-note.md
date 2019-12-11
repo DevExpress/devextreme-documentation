@@ -1,0 +1,1 @@
+[note] Data field names should not contain the following characters: `.`, `,`, `:`, `[`, and `]`. Their presence may cause issues in the widget's operation.

@@ -1,0 +1,4 @@
+---
+hidden: 
+type: function()
+---

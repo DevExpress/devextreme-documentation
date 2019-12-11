@@ -1,0 +1,1 @@
+DevExtreme supports the [Intl](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Intl) and [Globalize](https://github.com/globalizejs/globalize) localization libraries. We recommend using Intl because it requires only one line of code. However, you can use Globalize instead, especially if your app is already using it.

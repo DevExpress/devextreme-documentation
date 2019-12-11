@@ -1,0 +1,3 @@
+Whatever tools you choose, a process of creating a mobile application consists of the same steps. They are: application views design, view navigation planning, views implementation, data binding, debugging, testing and deploying. In this article, you will be guided to the solutions to be used at each step when using the DevExtreme SPA Framework. These solutions will help you build your apps easily.
+
+<a href="https://www.youtube.com/watch?v=hC45vTs8rs4&list=PL8h4jt35t1wjGvgflbHEH_e3b23AA30-z" class="button orange small fix-width-155" target="_blank">Watch Video</a>

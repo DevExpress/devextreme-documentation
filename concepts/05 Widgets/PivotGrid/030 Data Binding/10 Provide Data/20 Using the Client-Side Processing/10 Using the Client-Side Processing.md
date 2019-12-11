@@ -1,0 +1,1 @@
+Client-side data processing is used for working with data whose amounts are close to one million records and which can be processed locally in an acceptable time frame. There are four Store types that support this approach. The specifics of using each Store type are detailed in the sections below.

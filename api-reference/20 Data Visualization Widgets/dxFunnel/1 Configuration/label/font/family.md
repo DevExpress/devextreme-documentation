@@ -1,0 +1,10 @@
+---
+default: '"Segoe UI", "Helvetica Neue", "Trebuchet MS", Verdana, sans-serif'
+type: String
+---
+---
+##### shortDescription
+Specifies labels' font family.
+
+---
+Refer to the [Font family](https://www.w3.org/TR/CSS21/fonts.html#propdef-font-family) article for details on acceptable values.

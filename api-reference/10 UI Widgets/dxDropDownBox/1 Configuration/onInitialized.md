@@ -1,0 +1,1 @@
+You cannot access widget elements in this handler because it is executed before they are ready.

@@ -1,0 +1,1 @@
+DevExtreme provides several project templates for building applications. These templates have different structure specific to the application purpose. However, all of these templates have a similar set of features characterizing the possessiveness of the templates to DevExtreme.

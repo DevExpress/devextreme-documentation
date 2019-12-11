@@ -1,0 +1,1 @@
+When you deal with a large amount of data, providing an efficient way of navigating this data is essential. In this section, you will learn how to implement scrolling and zooming in the **Chart** widget.

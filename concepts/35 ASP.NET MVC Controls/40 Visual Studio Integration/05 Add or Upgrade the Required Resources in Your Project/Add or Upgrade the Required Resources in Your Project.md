@@ -1,0 +1,1 @@
+[tags]asp.net mvc controls, visual studio integration, add resources, add libraries, convert a project, upgrade resources, update resources

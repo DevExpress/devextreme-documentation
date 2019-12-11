@@ -1,0 +1,3 @@
+DevExtreme provides two React component libraries: [DevExtreme React Wrappers](https://github.com/DevExpress/devextreme-react/blob/18.1/README.md) and [DevExtreme Reactive Components](https://github.com/DevExpress/devextreme-reactive/blob/master/README.md).
+
+DevExtreme React Wrappers allow using the existing DevExtreme widgets in React projects. The wrappers and the widgets have the same APIs, feature sets, and limitations. Unlike the wrappers, DevExtreme Reactive Components are native React components. [This blog post](https://community.devexpress.com/blogs/oliver/archive/2018/04/20/devextreme-new-react-wrappers-vs-native-react-components.aspx) compares the two libraries in more detail.

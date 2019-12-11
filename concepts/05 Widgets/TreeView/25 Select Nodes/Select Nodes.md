@@ -1,0 +1,1 @@
+[tags]treeview, tree view, selection, selectByClick, showCheckBoxesMode, selectedExpr, selectItem, unselectItem, selectAll, unselectAll, itemSelectionChanged, onItemSelectionChanged

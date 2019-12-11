@@ -1,0 +1,9 @@
+---
+default: false, true (Material)
+type: Boolean
+---
+---
+##### shortDescription
+Specifies whether the [editing column](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/') uses icons instead of links.
+
+---

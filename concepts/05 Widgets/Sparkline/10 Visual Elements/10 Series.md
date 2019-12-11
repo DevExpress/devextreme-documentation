@@ -1,0 +1,16 @@
+A series is a group of related data points. The most important characteristic of a series is its type, which determines a specific visual presentation of data. In this topic, you will learn how to set a series type and configure series settings.
+
+![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineAllTypesWithCaptions.png)
+
+To set the series type that best suits your needs, specify the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') option of the main configuration object. By default, the [line](/concepts/05%20Widgets/Sparkline/20%20Series%20Types/010%20Line.md '/Documentation/Guide/Widgets/Sparkline/Series_Types/#Line') series type is set.
+
+	<!--JavaScript-->var sparklineOptions = {
+		type: 'line',
+		// ...
+	};
+
+Since sparklines are simple in nature, sparkline series offer few configuration options. The majority of series types, except [bar](/concepts/05%20Widgets/Sparkline/20%20Series%20Types/070%20Bar.md '/Documentation/Guide/Widgets/Sparkline/Series_Types/#Bar') and [win-loss](/concepts/05%20Widgets/Sparkline/20%20Series%20Types/080%20Win-Loss.md '/Documentation/Guide/Widgets/Sparkline/Series_Types/#Win-Loss'), have the [lineColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/lineColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lineColor') and [lineWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/lineWidth.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lineWidth') options to customize series' appearance. In turn, *bar* series have the [barPositiveColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/barPositiveColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#barPositiveColor') and [barNegativeColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/barNegativeColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#barNegativeColor') options, and *win-loss* series have [winColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/winColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#winColor') and [lossColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/lossColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lossColor') options for the same purpose.
+
+Series are constructed on the base of data that can be provided using many different approaches. To review them all, refer to the [Data Binding](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/10%20Provide%20Data '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Provide_Data/') guide.
+
+To learn more about series types featured in the **Sparkline** widget, refer to the [Sparkline Series Types](/Documentation/Guide/Widgets/Sparkline/Series_Types/#Sparkline_Series_Types) guide.

@@ -1,0 +1,10 @@
+The [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/') widget can present data obtained from different sources. You can declare an array of plain objects or get data from a remote server - **PivotGrid** will operate with any source quickly and seamlessly. In this guide, you will learn about different ways of providing and binding data to the **PivotGrid** widget.
+
+Before you begin, please make sure you have successfully linked the necessary libraries and added the **PivotGrid** widget to your page. If not, refer to the topics in the [Installation](/concepts/00%20Getting%20Started/01%20Installation/10%20Local%20Scripts.md '/Documentation/Guide/Getting_Started/Installation/Local_Scripts/') section.
+
+[note] You can configure the **PivotGrid** widget using the jQuery, Knockout or AngularJS approach. Code snippets in this guide use the jQuery approach.
+
+#####See Also#####
+- [Widget Basics - jQuery](/concepts/00%20Getting%20Started/10%20Widget%20Basics%20-%20jQuery/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Create_and_Configure_a_Widget/') - information on working with widgets with jQuery approach
+- [Widget Basics - AngularJS](/concepts/00%20Getting%20Started/20%20Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget/') - information on working with widgets with AngularJS approach
+- [Widget Basics - Knockout](/concepts/00%20Getting%20Started/25%20Widget%20Basics%20-%20Knockout/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Create_and_Configure_a_Widget/') - information on working with widgets with Knockout approach

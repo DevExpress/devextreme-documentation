@@ -1,0 +1,11 @@
+---
+default: true
+type: Boolean
+---
+---
+##### shortDescription
+Specifies whether the multi-tag is shown without ordinary tags.
+
+---
+#####See Also#####
+- [onMultiTagPreparing](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/onMultiTagPreparing.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#onMultiTagPreparing')

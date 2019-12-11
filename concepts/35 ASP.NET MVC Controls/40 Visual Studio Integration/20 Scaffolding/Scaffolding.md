@@ -1,0 +1,1 @@
+DevExtreme Scaffolder for Visual Studio allows you to generate views and API controllers for DevExtreme ASP.NET MVC Controls.

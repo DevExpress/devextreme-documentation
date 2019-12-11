@@ -1,0 +1,10 @@
+---
+dep: ..\layers\opacity.md
+default: 1
+type: Number
+---
+---
+##### shortDescription
+Specifies the opacity of markers. Setting this option makes sense only if you use markers of the *bubble* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/markerSettings/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/markerSettings/#type').
+
+---

@@ -1,0 +1,4 @@
+---
+id: GridBaseColumn
+type: Object
+---

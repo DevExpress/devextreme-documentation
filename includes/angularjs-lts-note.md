@@ -1,0 +1,1 @@
+[important] AngularJS is <a href="https://docs.angularjs.org/misc/version-support-status" target="_blank">now in Long Term Support</a>. You can continue to use it in existing projects but we recommend Angular, Vue, React, or another framework for new projects.

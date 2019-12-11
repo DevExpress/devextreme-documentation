@@ -1,0 +1,1 @@
+This section describes customizations that can be applied to the **RangeSelector** background. Although these customizations are very easy to configure, they drastically change the appearance of the widget. See the following subtopics to discover how to adjust the widget's background to your own needs.

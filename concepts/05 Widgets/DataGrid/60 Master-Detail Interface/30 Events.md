@@ -1,0 +1,1 @@
+Events raised for a master row when a user expands or collapses it are identical to the events raised for expanding or collapsing a group. See [this topic](/concepts/05%20Widgets/DataGrid/45%20Grouping/30%20Events.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#Events') for details.

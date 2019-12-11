@@ -1,0 +1,4 @@
+---
+id: dxHtmlEditorToolbar
+type: Object
+---

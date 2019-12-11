@@ -1,0 +1,1 @@
+Follow the instructions from the <a href="https://docs.devexpress.com/AspNetCore/401036/devextreme-based-controls/upgrade-to-a-new-version" target="_blank">Upgrade to a New Version</a> article.

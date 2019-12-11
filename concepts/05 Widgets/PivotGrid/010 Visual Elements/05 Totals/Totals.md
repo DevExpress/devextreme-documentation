@@ -1,0 +1,3 @@
+**Total** and **Grand Total** rows and columns are used to display summary values calculated in more general conditions than the conditions defined by the pivot grid's state. Each total row/column aggregates data of several pivot grid rows/columns in accordance with the [summary type](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryType.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryType').
+
+![DevExtreme PivotGrid Headers](/images/DataGrid/PivotGridTotals.png)

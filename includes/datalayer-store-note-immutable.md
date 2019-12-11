@@ -1,0 +1,1 @@
+[note] The **${{name}}** is immutable. You cannot change its configuration at runtime. However, you can use its [methods]({basewidgetpath}/Methods/) to manipulate it.

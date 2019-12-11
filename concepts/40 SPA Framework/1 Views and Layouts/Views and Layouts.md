@@ -1,0 +1,7 @@
+As discussed in the [Application Project](/concepts/40%20SPA%20Framework/01%20Application%20Project '/Documentation/Guide/SPA_Framework/Application_Project/') article, an application built with the DevExtreme SPA framework is a single-page application. While such an application has only one web page, it can comprise several application screens defined as named **views**. A view is defined by a piece of HTML markup that forms the view template. This view template can optionally have JavaScript code and associated style sheets used to customize the look and feel.
+
+Following the MVVM pattern, the view's markup template and style sheets serve as a *View*. The JavaScript function that is associated with the view prepares the *ViewModel* and performs the additional actions necessary to set up the view. These actions include interaction with the *Model* (a JavaScript object providing data, e.g. from a web server) and post-processing of the rendered view. The following diagram demonstrates this.
+
+![Application Structure](/images/PhoneJS/Views-and-Layouts.png)
+
+As you can see, a view's markup template is combined with other HTML elements defined within a *layout*'s markup, which results in the rendering of the final view. You will learn how to define views and how to use custom or predefined layouts below.

@@ -1,0 +1,44 @@
+---
+default: undefined
+type: String
+---
+---
+##### shortDescription
+Decides on which screens the current column is rendered.
+
+---
+Before rendering the column, the widget considers the screen's width. If the width matches the specified size qualifier, the column will be rendered. There are four size qualifiers in all. The **screen** option accepts one or several of them separated by a space.
+
+<div class="simple-table">
+  <table>
+    <thead>
+    <tr>
+      <th>Size Qualifier</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>xs</td>
+      <td>Stands for "extra small". Screens with width less than 768 pixels.</td>
+    </tr>
+    <tr>
+      <td>sm</td>
+      <td>Stands for "small". Screens with width between 768 and 992 pixels.</td>
+    </tr>
+    <tr>
+      <td>md</td>
+      <td>Stands for "medium". Screens with width between 992 and 1200 pixels.</td>
+    </tr>
+    <tr>
+      <td>lg</td>
+      <td>Stands for "large". Screens with width more than 1200 pixels.</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+[note] When this option is undefined, the column is rendered on all screens.
+
+#####See Also#####
+- [screenByWidth](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/Configuration/#screenByWidth')

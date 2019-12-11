@@ -1,0 +1,1414 @@
+{
+
+  "$ignore": [
+    "GridBaseColumn",
+    "dxDataGridColumn",
+    "dxTreeListColumn",
+    "Font"
+  ],
+
+  "10 UI Widgets": {
+
+    "Markup Components": {
+      "dxItem": {
+        "$Widget": "dxItem"
+      },
+
+      "dxTemplate": {
+        "$Widget": "dxTemplate"
+      }
+    },
+
+    "ColCountResponsible": {
+      "$Widget": "ColCountResponsible"
+    },
+
+    "CollectionWidget": {
+      "$Widget": "CollectionWidget",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "CollectionWidgetItemTemplate",
+        "$Widget": "CollectionWidgetItemTemplate"
+      }
+    },
+
+    "Component": {
+      "$Widget": "Component"
+    },
+
+    "DataExpressionMixin": {
+      "$Widget": "DataExpressionMixin",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "DataExpressionMixinItemTemplate",
+        "$Widget": "DataExpressionMixinItemTemplate"
+      }
+    },
+
+    "DataHelperMixin": {
+      "$Widget": "DataHelperMixin"
+    },
+
+    "DOMComponent": {
+      "$Widget": "DOMComponent"
+    },
+
+    "dxAccordion": {
+      "$Widget": "dxAccordion",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxAccordionItemTemplate",
+        "$Widget": "dxAccordionItemTemplate"
+      }
+    },
+
+    "dxActionSheet": {
+      "$Widget": "dxActionSheet",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxActionSheetItemTemplate",
+        "$Widget": "dxActionSheetItemTemplate"
+      }
+    },
+
+    "dxAutocomplete": {
+      "$Widget": "dxAutocomplete"
+    },
+
+    "dxBox": {
+      "$Widget": "dxBox",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxBoxItemTemplate",
+        "$Widget": "dxBoxItemTemplate"
+      }
+    },
+
+    "dxButton": {
+      "$Widget": "dxButton",
+
+      "5 Default Template": {
+        "Default Template.md": "dxButtonDefaultTemplate",
+        "$Widget": "dxButtonDefaultTemplate"
+      }
+    },
+
+    "dxCalendar": {
+      "$Widget": "dxCalendar",
+
+      "5 Default Cell Template": {
+        "Default Cell Template.md": "dxCalendarCellTemplate",
+        "$Widget": "dxCalendarCellTemplate"
+      }
+    },
+
+    "dxCheckBox": {
+      "$Widget": "dxCheckBox"
+    },
+
+    "dxColorBox": {
+      "$Widget": "dxColorBox"
+    },
+
+    "dxContextMenu": {
+      "$Widget": "dxContextMenu",
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxContextMenuItemTemplate",
+        "$Widget": "dxContextMenuItemTemplate"
+      }
+    },
+
+    "dxDataGrid": {
+      "1 Configuration": {
+        "columns": {
+          "columns.md": "dxDataGrid/Options/columns",
+          "$Object": "dxDataGridColumn"
+        }
+      },
+      "6 Row": {
+        "Row.md": "dxDataGridRowObject",
+        "$Widget": "dxDataGridRowObject"
+      },
+      "$Widget": "dxDataGrid"
+    },
+
+    "dxDateBox": {
+      "$Widget": "dxDateBox"
+    },
+
+    "dxDeferRendering": {
+      "$Widget": "dxDeferRendering"
+    },
+
+    "dxDropDownBox": {
+      "$Widget": "dxDropDownBox"
+    },
+
+    "dxDropDownEditor": {
+      "$Widget": "dxDropDownEditor"
+    },
+
+    "dxDropDownList": {
+      "$Widget": "dxDropDownList"
+    },
+
+    "dxDropDownMenu": {
+      "$Widget": "dxDropDownMenu"
+    },
+
+    "dxFileUploader": {
+      "$Widget": "dxFileUploader"
+    },
+
+    "dxFilterBuilder": {
+      "$Widget": "dxFilterBuilder",
+
+      "5 Field": {
+        "Field.md": "dxFilterBuilderField",
+        "$Widget": "dxFilterBuilderField"
+      }
+    },
+
+    "dxForm": {
+      "$Widget": "dxForm",
+
+      "5 Item Types": {
+
+        "EmptyItem": {
+          "$Object": "dxFormEmptyItem/Options",
+
+          "EmptyItem.md": "dxFormEmptyItem"
+        },
+
+        "GroupItem": {
+          "$Object": "dxFormGroupItem/Options",
+
+          "GroupItem.md": "dxFormGroupItem"
+        },
+
+        "SimpleItem": {
+          "$Object": "dxFormSimpleItem/Options",
+
+          "SimpleItem.md": "dxFormSimpleItem"
+        },
+
+        "TabbedItem": {
+          "$Object": "dxFormTabbedItem/Options",
+
+          "TabbedItem.md": "dxFormTabbedItem"
+        }
+      }
+    },
+
+    "dxGallery": {
+      "$Widget": "dxGallery",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxGalleryItemTemplate",
+        "$Widget": "dxGalleryItemTemplate"
+      }
+    },
+
+    "dxList": {
+      "$Widget": "dxList",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxListItemTemplate",
+        "$Widget": "dxListItemTemplate"
+      }
+    },
+
+    "dxLoadIndicator": {
+      "$Widget": "dxLoadIndicator"
+    },
+
+    "dxLoadPanel": {
+      "$Widget": "dxLoadPanel"
+    },
+
+    "dxLookup": {
+      "$Widget": "dxLookup"
+    },
+
+    "dxMap": {
+      "$Widget": "dxMap"
+    },
+
+    "dxMenu": {
+      "$Widget": "dxMenu",
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxMenuItemTemplate",
+        "$Widget": "dxMenuItemTemplate"
+      }
+    },
+
+    "dxMenuBase": {
+      "$Widget": "dxMenuBase",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxMenuBaseItemTemplate",
+        "$Widget": "dxMenuBaseItemTemplate"
+      }
+    },
+
+    "dxMultiView": {
+      "$Widget": "dxMultiView",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxMultiViewItemTemplate",
+        "$Widget": "dxMultiViewItemTemplate"
+      }
+    },
+
+    "dxNavBar": {
+      "$Widget": "dxNavBar",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxNavBarItemTemplate",
+        "$Widget": "dxNavBarItemTemplate"
+      }
+    },
+
+    "dxNumberBox": {
+      "$Widget": "dxNumberBox"
+    },
+
+    "dxOverlay": {
+      "$Widget": "dxOverlay"
+    },
+
+    "dxPanorama": {
+      "$Widget": "dxPanorama",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxPanoramaItemTemplate",
+        "$Widget": "dxPanoramaItemTemplate"
+      }
+    },
+
+    "dxPivot": {
+      "$Widget": "dxPivot",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxPivotItemTemplate",
+        "$Widget": "dxPivotItemTemplate"
+      }
+    },
+
+    "dxPivotGrid": {
+      "$Widget": "dxPivotGrid",
+
+      "5 Summary Cell": {
+        "Summary Cell.md": "dxPivotGridSummaryCell",
+        "$Object": "dxPivotGridSummaryCell"
+      },
+
+      "6 Pivot Grid Cell": {
+        "Pivot Grid Cell.md": "dxPivotGridPivotGridCell",
+        "$Object": "dxPivotGridPivotGridCell"
+      }
+    },
+
+    "dxPivotGridFieldChooser": {
+      "$Widget": "dxPivotGridFieldChooser"
+    },
+
+    "dxPopover": {
+      "$Widget": "dxPopover"
+    },
+
+    "dxPopup": {
+      "$Widget": "dxPopup"
+    },
+
+    "dxProgressBar": {
+      "$Widget": "dxProgressBar"
+    },
+
+    "dxRadioButton": {
+      "$Widget": "dxRadioButton"
+    },
+
+    "dxRadioGroup": {
+      "$Widget": "dxRadioGroup"
+    },
+
+    "dxRangeSlider": {
+      "$Widget": "dxRangeSlider"
+    },
+
+    "dxResizable": {
+      "$Widget": "dxResizable"
+    },
+
+    "dxResponsiveBox": {
+      "$Widget": "dxResponsiveBox",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxResponsiveBoxItemTemplate",
+        "$Widget": "dxResponsiveBoxItemTemplate"
+      }
+    },
+
+    "dxScheduler": {
+      "$Widget": "dxScheduler",
+
+      "5 Default Appointment Template": {
+        "Default Appointment Template.md": "dxSchedulerAppointmentTemplate",
+        "$Widget": "dxSchedulerAppointmentTemplate"
+      },
+
+      "6 Default Tooltip Template": {
+        "Default Tooltip Template.md": "dxSchedulerAppointmentTooltipTemplate",
+        "$Widget": "dxSchedulerAppointmentTooltipTemplate"
+      }
+    },
+
+    "dxScrollable": {
+      "$Widget": "dxScrollable"
+    },
+
+    "dxScrollView": {
+      "$Widget": "dxScrollView"
+    },
+
+    "dxSelectBox": {
+      "$Widget": "dxSelectBox"
+    },
+
+    "dxSlideOut": {
+      "$Widget": "dxSlideOut",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxSlideOutItemTemplate",
+        "$Widget": "dxSlideOutItemTemplate"
+      }
+    },
+
+    "dxSlideOutView": {
+      "$Widget": "dxSlideOutView"
+    },
+
+    "dxSlider": {
+      "$Widget": "dxSlider"
+    },
+
+    "dxSliderBase": {
+      "$Widget": "dxSliderBase"
+    },
+
+    "dxSwitch": {
+      "$Widget": "dxSwitch"
+    },
+
+    "dxTabPanel": {
+      "$Widget": "dxTabPanel",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxTabPanelItemTemplate",
+        "$Widget": "dxTabPanelItemTemplate"
+      }
+    },
+
+    "dxTabs": {
+      "$Widget": "dxTabs",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxTabsItemTemplate",
+        "$Widget": "dxTabsItemTemplate"
+      }
+    },
+
+    "dxTagBox": {
+      "$Widget": "dxTagBox"
+    },
+
+    "dxTextArea": {
+      "$Widget": "dxTextArea"
+    },
+
+    "dxTextBox": {
+      "$Widget": "dxTextBox"
+    },
+
+    "dxTextEditor": {
+      "$Widget": "dxTextEditor"
+    },
+
+    "dxTileView": {
+      "$Widget": "dxTileView",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxTileViewItemTemplate",
+        "$Widget": "dxTileViewItemTemplate"
+      }
+    },
+
+    "dxToast": {
+      "$Widget": "dxToast"
+    },
+
+    "dxToolbar": {
+      "$Widget": "dxToolbar",
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxToolbarItemTemplate",
+        "$Widget": "dxToolbarItemTemplate"
+      }
+    },
+
+    "dxTooltip": {
+      "$Widget": "dxTooltip"
+    },
+
+    "dxTrackBar": {
+      "$Widget": "dxTrackBar"
+    },
+
+    "dxTreeList": {
+      "1 Configuration": {
+        "columns": {
+          "columns.md": "dxTreeList/Options/columns",
+          "$Object": "dxTreeListColumn"
+        }
+      },
+      "4 Node": {
+        "Node.md": "dxTreeListNode",
+        "$Widget": "dxTreeListNode"
+      },
+
+      "6 Row": {
+        "Row.md": "dxTreeListRowObject",
+        "$Widget": "dxTreeListRowObject"
+      },
+      "$Widget": "dxTreeList"
+    },
+
+    "dxTreeView": {
+      "$Widget": "dxTreeView",
+
+      "4 Node": {
+        "Node.md": "dxTreeViewNode",
+        "$Widget": "dxTreeViewNode"
+      },
+
+      "5 Default Item Template": {
+        "Default Item Template.md": "dxTreeViewItemTemplate",
+        "$Widget": "dxTreeViewItemTemplate"
+      }
+    },
+
+    "dxValidationGroup": {
+      "$Widget": "dxValidationGroup"
+    },
+
+    "dxValidationSummary": {
+      "$Widget": "dxValidationSummary"
+    },
+
+    "dxValidator": {
+      "$Widget": "dxValidator",
+
+      "8 Validation Rules": {
+
+        "CompareRule": {
+          "$Object": "CompareRule/Options",
+
+          "CompareRule.md": "CompareRule"
+        },
+
+        "CustomRule": {
+          "$Object": "CustomRule/Options",
+
+          "CustomRule.md": "CustomRule"
+        },
+
+        "EmailRule": {
+          "$Object": "EmailRule/Options",
+
+          "EmailRule.md": "EmailRule"
+        },
+
+        "NumericRule": {
+          "$Object": "NumericRule/Options",
+
+          "NumericRule.md": "NumericRule"
+        },
+
+        "PatternRule": {
+          "$Object": "PatternRule/Options",
+
+          "PatternRule.md": "PatternRule"
+        },
+        "RangeRule": {
+          "$Object": "RangeRule/Options",
+
+          "RangeRule.md": "RangeRule"
+        },
+
+        "RequiredRule": {
+          "$Object": "RequiredRule/Options",
+
+          "RequiredRule.md": "RequiredRule"
+        },
+
+        "StringLengthRule": {
+          "$Object": "StringLengthRule/Options",
+
+          "StringLengthRule.md": "StringLengthRule"
+        }
+      }
+    },
+
+    "Editor": {
+      "$Widget": "Editor"
+    },
+
+    "EventsMixin": {
+      "$Widget": "EventsMixin"
+    },
+
+    "GridBase": {
+      "1 Configuration": {
+        "columns": {
+          "columns.md": "GridBase/Options/columns",
+          "$Object": "GridBaseColumn"
+        }
+      },
+      "$Widget": "GridBase"
+    },
+
+    "HierarchicalCollectionWidget": {
+      "$Widget": "HierarchicalCollectionWidget"
+    },
+
+    "MapLocation": {
+      "$Widget": "MapLocation"
+    },
+
+    "SearchBoxMixin": {
+      "$Widget": "SearchBoxMixin"
+    },
+
+    "UI Events": {
+      "$Object": "UI Events"
+    },
+
+    "Widget": {
+      "$Widget": "Widget"
+    },
+
+    "Errors and Warnings": {
+      "E1001.md": "Errors and Warnings/E1001",
+      "E1002.md": "Errors and Warnings/E1002",
+      "E1003.md": "Errors and Warnings/E1003",
+      "E1004.md": "Errors and Warnings/E1004",
+      "E1005.md": "Errors and Warnings/E1005",
+      "E1006.md": "Errors and Warnings/E1006",
+      "E1007.md": "Errors and Warnings/E1007",
+      "E1010.md": "Errors and Warnings/E1010",
+      "E1011.md": "Errors and Warnings/E1011",
+      "E1012.md": "Errors and Warnings/E1012",
+      "E1016.md": "Errors and Warnings/E1016",
+      "E1018.md": "Errors and Warnings/E1018",
+      "E1019.md": "Errors and Warnings/E1019",
+      "E1020.md": "Errors and Warnings/E1020",
+      "E1021.md": "Errors and Warnings/E1021",
+      "E1022.md": "Errors and Warnings/E1022",
+      "E1023.md": "Errors and Warnings/E1023",
+      "E1025.md": "Errors and Warnings/E1025",
+      "E1026.md": "Errors and Warnings/E1026",
+      "E1030.md": "Errors and Warnings/E1030",
+      "E1031.md": "Errors and Warnings/E1031",
+      "E1032.md": "Errors and Warnings/E1032",
+      "E1033.md": "Errors and Warnings/E1033",
+      "E1034.md": "Errors and Warnings/E1034",
+      "E1035.md": "Errors and Warnings/E1035",
+      "E1036.md": "Errors and Warnings/E1036",
+      "E1037.md": "Errors and Warnings/E1037",
+      "E1038.md": "Errors and Warnings/E1038",
+      "E1039.md": "Errors and Warnings/E1039",
+      "E1040.md": "Errors and Warnings/E1040",
+      "E1041.md": "Errors and Warnings/E1041",
+      "E1042.md": "Errors and Warnings/E1042",
+      "E1043.md": "Errors and Warnings/E1043",
+      "E1044.md": "Errors and Warnings/E1044",
+      "E1045.md": "Errors and Warnings/E1045",
+      "E1046.md": "Errors and Warnings/E1046",
+      "E1047.md": "Errors and Warnings/E1047",
+      "E1048.md": "Errors and Warnings/E1048",
+
+      "W1001.md": "Errors and Warnings/W1001",
+      "W1002.md": "Errors and Warnings/W1002",
+      "W1003.md": "Errors and Warnings/W1003",
+      "W1004.md": "Errors and Warnings/W1004",
+      "W1005.md": "Errors and Warnings/W1005",
+      "W1006.md": "Errors and Warnings/W1006",
+      "W1007.md": "Errors and Warnings/W1007",
+      "W1008.md": "Errors and Warnings/W1008",
+      "W1009.md": "Errors and Warnings/W1009",
+      "W1010.md": "Errors and Warnings/W1010"
+    }
+  },
+
+
+  "20 Data Visualization Widgets": {
+
+    "BaseChart": {
+      "$Widget": "BaseChart",
+
+      "7 Chart Elements": {
+
+        "Label": {
+          "$Widget": "baseLabelObject"
+        },
+        "Point": {
+          "$Widget": "basePointObject"
+        },
+        "Series": {
+          "$Widget": "baseSeriesObject"
+        }
+      }
+    },
+
+    "BaseGauge": {
+      "$Widget": "BaseGauge",
+
+      "5 Indicator Types": {
+
+        "CommonIndicator": {
+          "$IndicatorsCatalog": "CommonIndicator"
+        }
+      }
+    },
+
+    "BaseLabel": {
+      "$Widget": "BaseLabel"
+    },
+
+    "BaseSparkline": {
+      "$Widget": "BaseSparkline"
+    },
+
+    "BaseWidget": {
+      "$Widget": "BaseWidget"
+    },
+
+    "dxBarGauge": {
+      "$Widget": "dxBarGauge"
+    },
+
+    "dxBullet": {
+      "$Widget": "dxBullet"
+    },
+
+    "dxChart": {
+      "$Widget": "dxChart",
+
+      "5 Series Types": {
+
+        "Series Types.md": "dxChartSeriesTypes",
+        "AreaSeries": {
+          "$Object": "dxChartSeriesTypes/AreaSeries"
+        },
+
+        "BarSeries": {
+          "$Object": "dxChartSeriesTypes/BarSeries"
+        },
+
+        "BubbleSeries": {
+          "$Object": "dxChartSeriesTypes/BubbleSeries"
+        },
+
+        "CandleStickSeries": {
+          "$Object": "dxChartSeriesTypes/CandleStickSeries"
+        },
+
+        "CommonSeries": {
+          "$Object": "dxChartSeriesTypes/CommonSeries"
+        },
+
+        "FullStackedAreaSeries": {
+          "$Object": "dxChartSeriesTypes/FullStackedAreaSeries"
+        },
+
+        "FullStackedBarSeries": {
+          "$Object": "dxChartSeriesTypes/FullStackedBarSeries"
+        },
+
+        "FullStackedLineSeries": {
+          "$Object": "dxChartSeriesTypes/FullStackedLineSeries"
+        },
+
+        "FullStackedSplineAreaSeries": {
+          "$Object": "dxChartSeriesTypes/FullStackedSplineAreaSeries"
+        },
+
+        "FullStackedSplineSeries": {
+          "$Object": "dxChartSeriesTypes/FullStackedSplineSeries"
+        },
+
+        "LineSeries": {
+          "$Object": "dxChartSeriesTypes/LineSeries"
+        },
+
+        "RangeAreaSeries": {
+          "$Object": "dxChartSeriesTypes/RangeAreaSeries"
+        },
+
+        "RangeBarSeries": {
+          "$Object": "dxChartSeriesTypes/RangeBarSeries"
+        },
+
+        "ScatterSeries": {
+          "$Object": "dxChartSeriesTypes/ScatterSeries"
+        },
+
+        "SplineAreaSeries": {
+          "$Object": "dxChartSeriesTypes/SplineAreaSeries"
+        },
+
+        "SplineSeries": {
+          "$Object": "dxChartSeriesTypes/SplineSeries"
+        },
+
+        "StackedAreaSeries": {
+          "$Object": "dxChartSeriesTypes/StackedAreaSeries"
+        },
+
+        "StackedBarSeries": {
+          "$Object": "dxChartSeriesTypes/StackedBarSeries"
+        },
+
+        "StackedLineSeries": {
+          "$Object": "dxChartSeriesTypes/StackedLineSeries"
+        },
+
+        "StackedSplineAreaSeries": {
+          "$Object": "dxChartSeriesTypes/StackedSplineAreaSeries"
+        },
+
+        "StackedSplineSeries": {
+          "$Object": "dxChartSeriesTypes/StackedSplineSeries"
+        },
+
+        "StepAreaSeries": {
+          "$Object": "dxChartSeriesTypes/StepAreaSeries"
+        },
+
+        "StepLineSeries": {
+          "$Object": "dxChartSeriesTypes/StepLineSeries"
+        },
+
+        "StockSeries": {
+          "$Object": "dxChartSeriesTypes/StockSeries"
+        }
+      },
+
+      "7 Chart Elements": {
+        "Point": {
+          "$Widget": "chartPointObject"
+        },
+        "Series": {
+          "$Widget": "chartSeriesObject"
+        }
+      }
+    },
+
+    "dxCircularGauge": {
+      "$Widget": "dxCircularGauge",
+
+      "5 Indicator Types": {
+
+        "RangeBar": {
+          "$IndicatorsCatalog": "circularRangeBar"
+        },
+        "RectangleNeedle": {
+          "$IndicatorsCatalog": "circularRectangleNeedle"
+        },
+        "TextCloud": {
+          "$IndicatorsCatalog": "circularTextCloud"
+        },
+        "TriangleMarker": {
+          "$IndicatorsCatalog": "circularTriangleMarker"
+        },
+        "TriangleNeedle": {
+          "$IndicatorsCatalog": "circularTriangleNeedle"
+        },
+        "TwoColorNeedle": {
+          "$IndicatorsCatalog": "circularTwoColorNeedle"
+        }
+      }
+    },
+
+    "dxExporter": {
+      "$Widget": "dxExporter"
+    },
+
+    "dxFunnel": {
+      "$Widget": "dxFunnel",
+
+      "6 Item": {
+        "$Widget": "dxFunnelItem"
+      }
+    },
+
+    "dxLinearGauge": {
+      "$Widget": "dxLinearGauge",
+
+      "5 Indicator Types": {
+
+        "Circle": {
+          "$IndicatorsCatalog": "linearCircle"
+        },
+        "RangeBar": {
+          "$IndicatorsCatalog": "linearRangeBar"
+        },
+        "Rectangle": {
+          "$IndicatorsCatalog": "linearRectangle"
+        },
+        "Rhombus": {
+          "$IndicatorsCatalog": "linearRhombus"
+        },
+        "TextCloud": {
+          "$IndicatorsCatalog": "linearTextCloud"
+        },
+        "TriangleMarker": {
+          "$IndicatorsCatalog": "linearTriangleMarker"
+        }
+
+      }
+    },
+
+    "dxPieChart": {
+      "$Widget": "dxPieChart",
+
+      "5 Series Types": {
+
+        "Series Types.md": "dxPieChartSeriesTypes",
+        "CommonPieChartSeries": {
+          "$Object": "dxPieChartSeriesTypes/CommonPieChartSeries"
+        },
+
+        "DoughnutSeries": {
+          "$Object": "dxPieChartSeriesTypes/DoughnutSeries"
+        },
+
+        "PieSeries": {
+          "$Object": "dxPieChartSeriesTypes/PieSeries"
+        }
+      },
+
+      "7 Chart Elements": {
+
+        "Point": {
+          "$Widget": "piePointObject"
+        },
+        "Series": {
+          "$Widget": "pieChartSeriesObject"
+        }
+      }
+    },
+
+    "dxPolarChart": {
+      "$Widget": "dxPolarChart",
+
+      "5 Series Types": {
+
+        "Series Types.md": "dxPolarChartSeriesTypes",
+        "AreaSeries": {
+          "$Object": "dxPolarChartSeriesTypes/areapolarseries"
+        },
+        "BarSeries": {
+          "$Object": "dxPolarChartSeriesTypes/barpolarseries"
+        },
+        "LineSeries": {
+          "$Object": "dxPolarChartSeriesTypes/linepolarseries"
+        },
+        "ScatterSeries": {
+          "$Object": "dxPolarChartSeriesTypes/scatterpolarseries"
+        },
+        "StackedBarSeries": {
+          "$Object": "dxPolarChartSeriesTypes/stackedbarpolarseries"
+        },
+        "CommonPolarChartSeries": {
+          "$Object": "dxPolarChartSeriesTypes/CommonPolarChartSeries"
+        }
+
+      },
+
+      "7 Chart Elements": {
+        "Point": {
+          "$Widget": "polarPointObject"
+        },
+        "Series": {
+          "$Widget": "polarChartSeriesObject"
+        }
+      }
+    },
+
+    "dxRangeSelector": {
+      "$Widget": "dxRangeSelector"
+    },
+
+    "dxSparkline": {
+      "$Widget": "dxSparkline"
+    },
+
+    "dxTreeMap": {
+      "$Widget": "dxTreeMap",
+
+      "6 Node": {
+        "$Widget": "dxtreemapnode"
+      }
+    },
+
+    "dxVectorMap": {
+      "$Widget": "dxVectorMap",
+
+      "7 Map Elements": {
+
+        "Area": {
+          "$Widget": "areaObjects"
+        },
+        "Marker": {
+          "$Widget": "markerObjects"
+        },
+        "Layer": {
+          "$Widget": "MapLayer"
+        },
+        "Layer Element": {
+          "$Widget": "MapLayerElement"
+        }
+      }
+    },
+
+    "ScaleBreak": {
+      "$Widget": "ScaleBreak"
+    },
+
+    "VizTimeInterval": {
+      "$Widget": "VizTimeInterval"
+    },
+
+    "Errors and Warnings": {
+      "Errors and Warnings.md": "Errors and Warnings",
+
+      "E2001.md": "Errors and Warnings/E2001",
+      "E2002.md": "Errors and Warnings/E2002",
+      "E2003.md": "Errors and Warnings/E2003",
+      "E2004.md": "Errors and Warnings/E2004",
+      "E2005.md": "Errors and Warnings/E2005",
+      "E2101.md": "Errors and Warnings/E2101",
+      "E2102.md": "Errors and Warnings/E2102",
+      "E2103.md": "Errors and Warnings/E2103",
+      "E2104.md": "Errors and Warnings/E2104",
+      "E2105.md": "Errors and Warnings/E2105",
+      "E2106.md": "Errors and Warnings/E2106",
+      "E2202.md": "Errors and Warnings/E2202",
+      "E2203.md": "Errors and Warnings/E2203",
+
+      "W2002.md": "Errors and Warnings/W2002",
+      "W2003.md": "Errors and Warnings/W2003",
+      "W2101.md": "Errors and Warnings/W2101",
+      "W2102.md": "Errors and Warnings/W2102",
+      "W2103.md": "Errors and Warnings/W2103",
+      "W2104.md": "Errors and Warnings/W2104",
+      "W2105.md": "Errors and Warnings/W2105",
+      "W2106.md": "Errors and Warnings/W2106",
+      "W2107.md": "Errors and Warnings/W2107",
+      "W2301.md": "Errors and Warnings/W2301"
+    }
+  },
+
+
+  "30 Data Layer": {
+
+    "DataSource": {
+      "$Widget": "DataSource"
+    },
+
+    "ArrayStore": {
+      "$Widget": "ArrayStore"
+    },
+
+    "CustomStore": {
+      "$Widget": "CustomStore"
+    },
+
+    "LocalStore": {
+      "$Widget": "LocalStore"
+    },
+
+    "ODataContext": {
+      "$Widget": "ODataContext"
+    },
+
+    "ODataStore": {
+      "$Widget": "ODataStore"
+    },
+
+    "Store": {
+      "$Widget": "Store"
+    },
+
+    "XmlaStore": {
+      "$Widget": "XmlaStore"
+    },
+
+    "Guid": {
+      "$Widget": "Guid"
+    },
+
+    "Query": {
+      "$Widget": "Query"
+    },
+
+    "EdmLiteral": {
+      "$Widget": "EdmLiteral"
+    },
+
+    "EndpointSelector": {
+      "$Widget": "EndpointSelector"
+    },
+
+    "PivotGridDataSource": {
+      "$Widget": "PivotGridDataSource"
+    },
+
+    "LoadOptions": {
+      "LoadOptions.md": "LoadOptions",
+
+      "1 Configuration": {
+        "$Object": "LoadOptions"
+      }
+    },
+
+    "Utils": {
+      "$Object": "Utils"
+    },
+
+    "zz Errors and Warnings": {
+      "E4000.md": "Errors and Warnings/E4000",
+      "E4001.md": "Errors and Warnings/E4001",
+      "E4002.md": "Errors and Warnings/E4002",
+      "E4003.md": "Errors and Warnings/E4003",
+      "E4004.md": "Errors and Warnings/E4004",
+      "E4005.md": "Errors and Warnings/E4005",
+      "E4006.md": "Errors and Warnings/E4006",
+      "E4007.md": "Errors and Warnings/E4007",
+      "E4008.md": "Errors and Warnings/E4008",
+      "E4009.md": "Errors and Warnings/E4009",
+      "E4010.md": "Errors and Warnings/E4010",
+      "E4011.md": "Errors and Warnings/E4011",
+      "E4012.md": "Errors and Warnings/E4012",
+      "E4013.md": "Errors and Warnings/E4013",
+      "E4014.md": "Errors and Warnings/E4014",
+      "E4015.md": "Errors and Warnings/E4015",
+      "E4016.md": "Errors and Warnings/E4016",
+      "E4017.md": "Errors and Warnings/E4017",
+      "E4018.md": "Errors and Warnings/E4018",
+      "E4019.md": "Errors and Warnings/E4019",
+      "E4020.md": "Errors and Warnings/E4020",
+      "E4021.md": "Errors and Warnings/E4021",
+      "E4022.md": "Errors and Warnings/E4022",
+      "E4023.md": "Errors and Warnings/E4023",
+
+      "W4000.md": "Errors and Warnings/W4000",
+      "W4001.md": "Errors and Warnings/W4001",
+      "W4002.md": "Errors and Warnings/W4002"
+    }
+  },
+
+
+  "40 SPA Framework": {
+
+    "HtmlApplication": {
+      "$Widget": "HtmlApplication",
+
+      "4 Events": {
+        "afterViewSetup.md": "HtmlApplication/afterViewSetup",
+        "beforeViewSetup.md": "HtmlApplication/beforeViewSetup",
+        "initialized.md": "HtmlApplication/initialized",
+        "navigating.md": "HtmlApplication/navigating",
+        "navigatingBack.md": "HtmlApplication/navigatingBack",
+        "resolveLayoutController.md": "HtmlApplication/resolveLayoutController",
+        "resolveViewCacheKey.md": "HtmlApplication/resolveViewCacheKey",
+        "viewDisposed.md": "HtmlApplication/viewDisposed",
+        "viewDisposing.md": "HtmlApplication/viewDisposing",
+        "viewHidden.md": "HtmlApplication/viewHidden",
+        "viewRendered.md": "HtmlApplication/viewRendered",
+        "viewShowing.md": "HtmlApplication/viewShowing",
+        "viewShown.md": "HtmlApplication/viewShown"
+      }
+    },
+
+    "ViewCache": {
+      "$Widget": "ViewCache",
+
+      "4 Events": {
+        "viewRemoved.md": "ViewCache/viewRemoved"
+      }
+    },
+
+    "Router": {
+      "$Widget": "Router"
+    },
+
+    "StateManager": {
+      "$Widget": "StateManager"
+    },
+
+    "Markup Components": {
+
+      "dxAction": {
+        "$Widget": "dxAction"
+      },
+
+      "dxCommand": {
+        "$Widget": "dxCommand"
+      },
+
+      "dxCommandContainer": {
+        "$Widget": "dxCommandContainer"
+      },
+
+      "dxContent": {
+        "$Widget": "dxContent"
+      },
+
+      "dxContentPlaceholder": {
+        "$Widget": "dxContentPlaceholder"
+      },
+
+      "dxLayout": {
+        "$Widget": "dxLayout"
+      },
+
+      "dxTransition": {
+        "$Widget": "dxTransition"
+      },
+
+      "dxView": {
+        "$Widget": "dxView"
+      },
+
+      "dxViewPlaceholder": {
+        "$Widget": "dxViewPlaceholder"
+      }
+    },
+
+    "zz Errors and Warnings": {
+      "E3001.md": "Errors and Warnings/E3001",
+      "E3002.md": "Errors and Warnings/E3002",
+      "E3003.md": "Errors and Warnings/E3003",
+      "E3004.md": "Errors and Warnings/E3004",
+      "E3005.md": "Errors and Warnings/E3005",
+      "E3006.md": "Errors and Warnings/E3006",
+      "E3007.md": "Errors and Warnings/E3007",
+      "E3008.md": "Errors and Warnings/E3008",
+      "E3009.md": "Errors and Warnings/E3009",
+      "E3010.md": "Errors and Warnings/E3010",
+      "E3011.md": "Errors and Warnings/E3011",
+      "E3012.md": "Errors and Warnings/E3012",
+      "E3013.md": "Errors and Warnings/E3013",
+      "E3014.md": "Errors and Warnings/E3014",
+      "E3015.md": "Errors and Warnings/E3015",
+      "E3016.md": "Errors and Warnings/E3016",
+      "E3018.md": "Errors and Warnings/E3018",
+      "E3019.md": "Errors and Warnings/E3019",
+      "E3020.md": "Errors and Warnings/E3020",
+      "E3021.md": "Errors and Warnings/E3021",
+      "E3022.md": "Errors and Warnings/E3022",
+      "E3023.md": "Errors and Warnings/E3023",
+      "E3024.md": "Errors and Warnings/E3024",
+
+      "W3001.md": "Errors and Warnings/W3001",
+      "W3002.md": "Errors and Warnings/W3002",
+      "W3003.md": "Errors and Warnings/W3003",
+      "W3004.md": "Errors and Warnings/W3004",
+      "W3005.md": "Errors and Warnings/W3005"
+    }
+  },
+
+
+  "50 Common": {
+
+    "Object Structures": {
+
+      "animationConfig": {
+        "$Widget": "animationConfig"
+      },
+
+      "Device": {
+        "$Widget": "Device"
+      },
+
+      "dxEvent": {
+        "$Widget": "dxEvent"
+      },
+
+      "format": {
+        "$Widget": "format"
+      },
+
+      "globalConfig": {
+        "$Widget": "globalConfig"
+      },
+
+      "positionConfig": {
+        "$Widget": "positionConfig"
+      },
+
+      "template": {
+        "$Widget": "template"
+      }
+    },
+
+    "Utils": {
+
+      "cancelAnimationFrame(requestID).md": "cancelAnimationFrame(requestID)",
+
+      "config().md": "config()",
+
+      "config(config).md": "config(config)",
+
+      "event.md": "event",
+
+      "handler(event_extraParameters).md": "eventsHandler",
+
+      "hideTopOverlay().md": "hideTopOverlay()",
+
+      "processHardwareBackButton().md": "processHardwareBackButton()",
+
+      "registerComponent(name_class).md": "registerComponent(name, class)",
+
+      "registerComponent(name_namespace_class).md": "registerComponent(name, namespace, class)",
+
+      "requestAnimationFrame(callback).md": "requestAnimationFrame(callback)",
+
+      "rtlEnabled.md": "rtlEnabled",
+
+      "animationPresets": {
+        "$Widget": "animationPresets"
+      },
+
+      "devices": {
+        "$Widget": "devices",
+
+        "4 Events": {
+          "orientationChanged.md": "devices/orientationChanged"
+        }
+      },
+
+      "events": {
+        "$Widget": "events"
+      },
+
+      "fx": {
+        "$Widget": "fx"
+      },
+
+      "TransitionExecutor": {
+        "$Widget": "TransitionExecutor"
+      },
+
+      "ui": {
+
+        "dialog": {
+          "$Widget": "ui/dialog"
+        },
+
+        "dxOverlay": {
+          "$Widget": "ui/dxOverlay"
+        },
+
+        "themes": {
+          "$Widget": "ui/themes"
+        },
+
+        "$Object": "ui"
+      },
+
+      "validationEngine": {
+        "$Widget": "validationEngine"
+      },
+
+      "localization": {
+        "$Object": "localization"
+      },
+
+      "utils": {
+        "$Object": "utils"
+      },
+
+      "viz": {
+
+        "core": {
+          "$Widget": "viz/core"
+        },
+
+        "map": {
+          "3 Methods": {
+
+            "projection(data)": {
+              "projection(data).md": "viz/map/projection(data)",
+              "add(name_projection).md": "viz/map/projection/add(name, projection)",
+              "get(name).md": "viz/map/projection/get(name)"
+            }
+          }
+        },
+
+        "$Widget": "viz"
+      },
+
+      "zz Errors and Warnings": {
+        "E0001.md": "Errors and Warnings/E0001",
+        "E0002.md": "Errors and Warnings/E0002",
+        "E0003.md": "Errors and Warnings/E0003",
+        "E0004.md": "Errors and Warnings/E0004",
+        "E0005.md": "Errors and Warnings/E0005",
+        "E0006.md": "Errors and Warnings/E0006",
+        "E0007.md": "Errors and Warnings/E0007",
+        "E0008.md": "Errors and Warnings/E0008",
+        "E0009.md": "Errors and Warnings/E0009",
+        "E0010.md": "Errors and Warnings/E0010",
+        "E0011.md": "Errors and Warnings/E0011",
+        "E0012.md": "Errors and Warnings/E0012",
+        "E0013.md": "Errors and Warnings/E0013",
+        "E0014.md": "Errors and Warnings/E0014",
+        "E0015.md": "Errors and Warnings/E0015",
+        "E0017.md": "Errors and Warnings/E0017",
+        "E0018.md": "Errors and Warnings/E0018",
+        "E0020.md": "Errors and Warnings/E0020",
+        "E0021.md": "Errors and Warnings/E0021",
+        "E0022.md": "Errors and Warnings/E0022",
+        "E0023.md": "Errors and Warnings/E0023",
+        "E0024.md": "Errors and Warnings/E0024",
+        "E0100.md": "Errors and Warnings/E0100",
+        "E0101.md": "Errors and Warnings/E0101",
+        "E0102.md": "Errors and Warnings/E0102",
+        "E0110.md": "Errors and Warnings/E0110",
+        "E0120.md": "Errors and Warnings/E0120",
+        "E0121.md": "Errors and Warnings/E0121",
+
+        "W0000.md": "Errors and Warnings/W0000",
+        "W0001.md": "Errors and Warnings/W0001",
+        "W0002.md": "Errors and Warnings/W0002",
+        "W0003.md": "Errors and Warnings/W0003",
+        "W0004.md": "Errors and Warnings/W0004",
+        "W0005.md": "Errors and Warnings/W0005",
+        "W0006.md": "Errors and Warnings/W0006",
+        "W0007.md": "Errors and Warnings/W0007",
+        "W0008.md": "Errors and Warnings/W0008",
+        "W0009.md": "Errors and Warnings/W0009",
+        "W0010.md": "Errors and Warnings/W0010",
+        "W0011.md": "Errors and Warnings/W0011",
+        "W0012.md": "Errors and Warnings/W0012",
+        "W0013.md": "Errors and Warnings/W0013",
+        "W0014.md": "Errors and Warnings/W0014"
+      }
+    }
+  },
+  "New Members": "*"
+}

@@ -1,0 +1,3 @@
+<span style="color:red"><b>IMPORTANT:</b></span> This topic describes obsolete tools and approaches. Instead of them, consider using techniques described earlier in this guide.
+
+Also, you can use the [Exporter](/api-reference/20%20Data%20Visualization%20Widgets/dxExporter '/Documentation/ApiReference/Data_Visualization_Widgets/dxExporter/') widget to provide an end user with the exporting and printing capabilities. To operate, this widget requires the [PhantomJS WebKit](https://phantomjs.org) running on a server. This topic shows how to deploy a server and configure the **Exporter** widget.

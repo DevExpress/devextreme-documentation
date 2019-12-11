@@ -1,0 +1,3 @@
+#####See Also#####
+- [Customize the Value and Text](/concepts/05%20Widgets/TreeList/10%20Columns/40%20Customize%20Cells/1%20Customize%20the%20Value%20and%20Text.md '/Documentation/Guide/Widgets/TreeList/Columns/Customize_Cells/#Customize_the_Value_and_Text')
+- **columns[]**.[calculateCellValue](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue')

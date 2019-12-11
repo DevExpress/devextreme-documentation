@@ -1,0 +1,1 @@
+DevExtreme provides many instruments for mobile and web development. At the same time, it is not a standalone product. It can be combined with other libraries and frameworks in certain tasks. In this article, you will learn about the third-party libraries and frameworks for which DevExtreme is adapted and tested.

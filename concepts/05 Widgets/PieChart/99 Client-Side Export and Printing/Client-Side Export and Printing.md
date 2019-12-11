@@ -1,0 +1,3 @@
+Although DevExtreme data visualization widgets can be displayed on any device, a user may need a widget printed or in the form of a document. For these cases, the widgets provide client-side export and printing. This guide shows how to configure these features for the user, and how to export and print the **PieChart** widget using the API. It also explains how to set up a server-side proxy, which is necessary if you plan to support export and printing in **IE9** and **Safari on MacOS**.
+
+<a href="https://www.youtube.com/watch?v=SVa8yrdjfno&index=1&list=PL8h4jt35t1wjGvgflbHEH_e3b23AA30-z" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">Watch Video</a>

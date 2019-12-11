@@ -1,0 +1,17 @@
+{
+  "name": "devextreme-documentation",
+  "description": "DevExtreme documentation",
+  "author": "Developer Express Inc.",
+  "version": "17.1.0",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "devextreme-internal-tools": "^1.2.3"
+  },
+  "scripts": {
+    "update-links-fail-on-change": "dx-tools link-updater --fail-on-change",
+    "update-all-links": "dx-tools link-updater --check-all",
+    "update-links": "dx-tools link-updater",
+    "validate-links": "dx-tools link-validator"
+  },
+  "pre-commit": "update-links-fail-on-change"
+}

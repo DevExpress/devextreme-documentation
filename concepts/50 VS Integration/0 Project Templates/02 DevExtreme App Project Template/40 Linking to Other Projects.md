@@ -1,0 +1,3 @@
+You can deploy a DevExtreme project by linking it to another Visual Studio project - ASP.NET, WindowsPhone, Win8, etc. - and then deploy the latter using standard Visual Studio tools. To link a DevExtreme project to another project, use the **Link to...** dialog. To invoke this dialog, use the **Link to...** item in a context menu of the DevExtreme project. This menu item appears in the context menu when there is a non-DevExtreme project in the current solution.
+
+For details on linking DevExtreme projects to other projects, refer to the [Linking DevExtreme Projects](/concepts/50%20VS%20Integration/4%20Linking%20DevExtreme%20Projects '/Documentation/Guide/VS_Integration/Linking_DevExtreme_Projects/') article.

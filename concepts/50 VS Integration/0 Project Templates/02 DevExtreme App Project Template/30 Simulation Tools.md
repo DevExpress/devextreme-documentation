@@ -1,0 +1,1 @@
+Applications built using DevExtreme project templates run in a browser with the help of the **DevExtreme Simulator**. To read more, refer to the [Simulation Tools](/concepts/50%20VS%20Integration/2%20Simulation%20Tools '/Documentation/Guide/VS_Integration/Simulation_Tools/') article.

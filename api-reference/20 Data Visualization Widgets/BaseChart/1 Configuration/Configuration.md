@@ -1,0 +1,5 @@
+---
+##### shortDescription
+The **BaseChart** options.
+
+---

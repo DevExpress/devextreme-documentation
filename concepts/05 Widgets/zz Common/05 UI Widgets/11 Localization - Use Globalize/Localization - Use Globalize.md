@@ -1,0 +1,1 @@
+DevExtreme allows you to localize date, number and currency values as well as messages using [Globalize](https://github.com/jquery/globalize).

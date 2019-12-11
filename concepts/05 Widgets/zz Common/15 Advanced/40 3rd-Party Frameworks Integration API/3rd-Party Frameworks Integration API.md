@@ -1,0 +1,1 @@
+You can use DevExtreme widgets even if you use a framework different from those supported out of the box (Angular, AngularJS, Knockout). This article describes basics of using DevExtreme widgets and explains how to configure a DevExtreme widget to support templates and two-way binding when working with a 3rd-party framework.

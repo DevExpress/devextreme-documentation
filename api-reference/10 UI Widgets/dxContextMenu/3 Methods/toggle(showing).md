@@ -1,0 +1,15 @@
+---
+##### shortDescription
+Shows or hides the widget depending on the argument.
+
+##### param(showing): Boolean
+Indicates whether to show or hide the widget.
+
+##### return: Promise
+A [jQuery.Promise](https://api.jquery.com/Types/#Promise) that is resolved after the widget is shown/hidden.
+
+---
+#####See Also#####
+#include common-link-callmethods
+- [show()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#show')
+- [hide()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/hide().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#hide')

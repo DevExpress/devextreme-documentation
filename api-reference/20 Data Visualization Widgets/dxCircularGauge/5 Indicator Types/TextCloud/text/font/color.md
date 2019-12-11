@@ -1,0 +1,4 @@
+---
+default: '#FFFFFF'
+type: String
+---

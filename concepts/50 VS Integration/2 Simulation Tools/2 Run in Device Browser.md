@@ -1,0 +1,3 @@
+Run the application in the simulator as described above. The simulator provides a **QR Code**. Scan it by the device on which you are going to test the application. The QR Code represents a link to your application provided by the **dxproxy** service. This link is valid only while the Visual Studio debugger is running. As a result, you can load the application in the device's browser.
+
+[note]Clear the **Automatically upload PhoneGap plugins** option in the Debug properties page, since this option is not required when running in a browser.

@@ -1,0 +1,1 @@
+The [ThemeBuilder UI](/concepts/60%20Themes%20and%20Styles/08%20ThemeBuilder '/Documentation/Guide/Themes_and_Styles/ThemeBuilder/') is a tool that allows you to create custom themes in the browser; its CLI counterpart allows you to do the same via commands.

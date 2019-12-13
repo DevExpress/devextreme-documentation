@@ -1,0 +1,1 @@
+[DevExtreme Data Layer](/concepts/30%20Data%20Layer/5%20Data%20Layer '/Documentation/Guide/Data_Layer/Data_Layer/') is a set of components for working with data. Refer to the [Data Layer API reference](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/') for code examples.

@@ -1,0 +1,21 @@
+﻿#chart {
+     width: 500px;
+     height: 250px;
+     margin: 0 auto;
+     margin-top: 15px
+}
+
+.editor {
+ 	display: inline-block;
+    vertical-align: middle;
+    margin-left: 7px;
+    margin-right: 10px;
+}
+
+.select-box {
+ 	width: 150px   
+}
+
+.option-block {
+ 	display: inline;
+}

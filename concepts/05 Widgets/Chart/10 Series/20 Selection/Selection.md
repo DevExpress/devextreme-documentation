@@ -1,0 +1,1 @@
+[tags]chart, series, selection, selection mode, selectionMode, selection style, selectionStyle, selection changed, seriesSelectionChanged, clear selection, clearSelection

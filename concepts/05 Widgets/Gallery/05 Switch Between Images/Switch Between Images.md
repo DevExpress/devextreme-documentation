@@ -1,0 +1,1 @@
+[tags]gallery, next item, previous item, go to, navigate, swipe, disable swiping, bullets navigation, dots navigation, indicator, navigation buttons, next and previous

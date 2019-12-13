@@ -1,0 +1,14 @@
+﻿.icon {
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.icon-name {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #86929d;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}

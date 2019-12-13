@@ -17,6 +17,9 @@ A user scrolls a single page only. Scrolling appears only if [all the page's row
 - **Virtual**       
 This mode is an alternative to paging where pages are loaded when they get into the viewport and removed once they leave it. Use this mode if a user should be able to scroll data by pages.
 
+    [note] While scrolling in **virtual** mode, gray boxes can appear when the widget renders data. This happens when the data is being loaded from a remote data source or when a local data source has a heavy structure, for example, it has templates, too many columns for your device, etc. This is normal behavior.    
+    Refer to the [Rendering Optimization](/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization) article to learn how to optimize data rendering.
+
 - **Infinite**      
 This mode is an alternative to paging where each next page is loaded once the scrollbar reaches the end of its scale. Use this mode if a user should scroll data gradually, from the first to the last page.
 

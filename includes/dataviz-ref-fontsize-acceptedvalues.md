@@ -1,0 +1,1 @@
+A numeric value specifies the font size in pixels. A string value can specify the font size in any units listed <a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-size" target="_blank">here</a>, but multi-line text only supports <a href="https://www.w3.org/TR/SVG/types.html#DataTypeLengths" target="_blank">length units</a>.

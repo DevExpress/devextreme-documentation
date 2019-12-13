@@ -1,0 +1,1 @@
+Command columns are reordered similarly to regular columns. Refer to the [Column Reordering](/concepts/05%20Widgets/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/Widgets/TreeList/Columns/Column_Reordering/') article for more information.

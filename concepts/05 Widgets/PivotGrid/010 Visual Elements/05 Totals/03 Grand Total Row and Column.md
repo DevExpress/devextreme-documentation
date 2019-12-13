@@ -1,0 +1,3 @@
+Grand Total Rows and Grand Total Columns aggregate data of the entire pivot grid. They show values summarized across all available data. 
+
+You can enable or disable the Grand Total Row with the [showColumnGrandTotals](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/showColumnGrandTotals.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#showColumnGrandTotals') option, and Grand Total Column &#8212; the [showRowGrandTotals](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/showRowGrandTotals.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#showRowGrandTotals') option.

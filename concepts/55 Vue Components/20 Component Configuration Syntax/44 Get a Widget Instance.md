@@ -1,0 +1,1 @@
+For information on this matter, refer to [Call Methods](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/42%20Call%20Methods.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Call_Methods').

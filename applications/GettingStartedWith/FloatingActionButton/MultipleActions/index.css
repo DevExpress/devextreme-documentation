@@ -1,0 +1,15 @@
+.dx-fa-button-icon, .dx-fa-button-icon-close {
+  text-align: center;
+}
+
+#app-container {
+  height: 360px;
+  width: 320px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(51, 51, 51);
+}

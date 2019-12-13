@@ -1,0 +1,4 @@
+---
+id: chartPointAggregationInfoObject
+type: Object
+---

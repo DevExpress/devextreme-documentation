@@ -1,0 +1,4 @@
+---
+id: dxFilterBuilderCustomOperation
+type: Object
+---

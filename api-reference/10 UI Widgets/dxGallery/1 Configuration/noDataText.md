@@ -1,0 +1,3 @@
+---
+id: dxGallery.Options.noDataText
+---

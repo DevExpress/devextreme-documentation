@@ -1,0 +1,1 @@
+To solve the issue, please submit a ticket to our <a href="https://www.devexpress.com/ask" target="_blank">Support Center</a>.  Include your widget configuration, fake data, and the steps needed to reproduce the issue in the ticket.

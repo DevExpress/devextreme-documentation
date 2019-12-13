@@ -1,0 +1,3 @@
+---
+id: dxRadioGroup.Options.value
+---

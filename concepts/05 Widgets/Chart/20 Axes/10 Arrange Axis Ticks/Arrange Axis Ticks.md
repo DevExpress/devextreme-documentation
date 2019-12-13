@@ -1,0 +1,1 @@
+[tags]chart, panes, overview, single-pane chart

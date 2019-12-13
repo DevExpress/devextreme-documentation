@@ -1,0 +1,1 @@
+The ThemeBuilder CLI allows you to generate themes programmatically or at build time. This tool is part of the [DevExtreme CLI](/concepts/00%20Getting%20Started/50%20DevExtreme%20CLI/50%20ThemeBuilder/00%20ThemeBuilder.md '/Documentation/Guide/Getting_Started/DevExtreme_CLI/#ThemeBuilder').

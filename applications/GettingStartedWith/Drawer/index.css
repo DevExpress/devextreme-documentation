@@ -1,0 +1,27 @@
+.dx-overlay-content {
+    background-color: lightgray;
+}
+#container {
+    height: 250px;
+    width: 350px; 
+}
+#button {
+    margin-left: -5px;
+}
+#content {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.dx-button {
+    background-color: rgba(191, 191, 191, -0.15);
+    border: none;
+}
+
+#toolbar {
+    background-color: rgba(191, 191, 191, .15);
+    padding: 5px 10px;
+}
+
+#drawer {
+    border: 1px solid rgba(191, 191, 191, 0.15);
+}

@@ -1,0 +1,1 @@
+This topic provides an overview of fields and methods that will help you configure selection and handle selection-related events in the **Chart** and **PieChart** widgets.

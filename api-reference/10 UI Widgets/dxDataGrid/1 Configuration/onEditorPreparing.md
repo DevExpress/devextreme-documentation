@@ -66,6 +66,8 @@ The editor's value.
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
 
 ---
+[note] In this function, you can change only **cancel**, **editorName**, **editorOptions**, and **updateValueTimeout**. All the rest parameters are read only.
+
 Use this function to:
 
 - Override the default editor's **onValueChanged** handler. For other default editor customizations, use [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editorOptions').

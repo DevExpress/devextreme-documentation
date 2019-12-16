@@ -3,13 +3,15 @@ id: Store.on(events)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### return: {WidgetName}
-<!-- Description goes here -->
+<!-- %return% -->
 
 ##### param(events): Object
-<!-- Description goes here -->
+<!-- %param(events)% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\Component\3 Methods\on(events).md' -->

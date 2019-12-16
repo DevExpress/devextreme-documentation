@@ -3,16 +3,19 @@ id: Component.on(eventName, eventHandler)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Subscribes to an event.
 
 ##### return: {WidgetName}
-<!-- Description goes here -->
+The object for which this method is called.
 
 ##### param(eventName): String
-<!-- Description goes here -->
+The event's name.
 
 ##### param(eventHandler): function()
-<!-- Description goes here -->
+The event's handler.
 
 ---
-<!-- Description goes here -->
+Use this method to subscribe to one of the events listed in the [Events](/api-reference/10%20UI%20Widgets/Component/4%20Events '{basewidgetpath}/Events/') section. 
+
+#####See Also#####
+#include common-link-handleevents

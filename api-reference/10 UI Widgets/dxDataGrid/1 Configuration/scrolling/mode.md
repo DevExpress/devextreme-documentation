@@ -15,10 +15,7 @@ The following scrolling modes are available in the widget:
 A user scrolls a single page only. Scrolling appears only if [all the page's rows](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') do not fit into the widget's height. In this mode, the [pager](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/') performs the main navigation and scrolling is auxiliary. If [paging](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/') is disabled, the widget loads all rows at once, which may decrease the widget's performance. In this case, we recommend choosing another scrolling mode.
 
 - **Virtual**       
-This mode is an alternative to paging where pages are loaded when they get into the viewport and removed once they leave it. Use this mode if a user should be able to scroll data by pages.
-
-    [note] While scrolling in **virtual** mode, gray boxes can appear when the widget renders data, in order to avoid freezes and provide smooth scrolling. It happens when the data is being loaded from a remote data source or when a local data source has a heavy structure, for example, it has templates, too many columns for your device, etc.     
-    Refer to the [Rendering Optimization](/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization) article to learn how to optimize data rendering.
+This mode is an alternative to paging where pages are loaded when they get into the viewport and removed once they leave it. Use this mode if a user should be able to scroll data by pages. The data can appear as gray boxes while loading to avoid freezes and provide smooth scrolling. To optimize data rendering, refer to [Rendering Optimization](/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization) article.
 
 - **Infinite**      
 This mode is an alternative to paging where each next page is loaded once the scrollbar reaches the end of its scale. Use this mode if a user should scroll data gradually, from the first to the last page.

@@ -3,16 +3,17 @@ id: Component.off(eventName, eventHandler)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Detaches a particular event handler from a single event.
 
 ##### return: {WidgetName}
-<!-- Description goes here -->
+The object for which this method is called.
 
 ##### param(eventName): String
-<!-- Description goes here -->
+The event's name.
 
 ##### param(eventHandler): function()
-<!-- Description goes here -->
+The event's handler.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+#include common-link-handleevents

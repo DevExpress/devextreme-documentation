@@ -1,7 +1,7 @@
 ---
 id: dxTextEditor.keyPress
 type: eventType
-deprecated: 
+deprecated: [important]This event is removed from the web standards and will be deprecated in modern browsers soon. Refer to the [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event) topic for details.
 ---
 ---
 ##### shortDescription

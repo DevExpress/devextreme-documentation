@@ -9,7 +9,7 @@ default: 'standard'
 Specifies the scrolling mode.
 
 ---
-The following scrolling modes are available in the widget:
+The following scrolling modes are available:
 
 - **Standard**      
 A user scrolls a single page only. Scrolling is available only if [all the page's rows](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') do not fit into the widget's height. In this mode, the [pager](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/') performs the main navigation and scrolling is auxiliary. If [paging](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/') is disabled, the widget loads all rows simultaneously which can reduce the widget's performance. In this case, we recommend that you use another scrolling mode.

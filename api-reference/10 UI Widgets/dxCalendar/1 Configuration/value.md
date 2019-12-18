@@ -25,3 +25,7 @@ You can specify the current widget value using any of the following formats.
  - "yyyy-MM-ddTHH:mm:ssx" (for example, "2017-03-27T16:54:10+03")
 
 If the widget value is changed by an end-user, the new value is saved in the same format as the initial value.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
+}

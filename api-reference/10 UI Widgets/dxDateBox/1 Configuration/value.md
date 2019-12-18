@@ -26,5 +26,9 @@ You can specify the current widget value using any of the following formats.
 
 If the widget value is changed by an end-user, the new value is saved in the same format as the initial value.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
+}
+
 #####See Also#####
 - [displayFormat](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/displayFormat.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#displayFormat')

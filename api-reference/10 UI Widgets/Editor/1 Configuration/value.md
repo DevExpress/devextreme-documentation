@@ -9,3 +9,7 @@ firedEvents: valueChanged
 Specifies the widget's value.
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/Overview/"
+}

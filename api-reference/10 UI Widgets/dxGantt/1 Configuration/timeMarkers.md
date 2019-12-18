@@ -2,6 +2,7 @@
 id: dxGantt.Options.timeMarkers
 type: Array<dxGanttTimeMarker>
 default: undefined
+inheritsType: dxGanttTimeMarker
 ---
 ---
 ##### shortDescription

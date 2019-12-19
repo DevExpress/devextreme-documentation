@@ -1,17 +1,11 @@
 ---
 id: HierarchicalCollectionWidget.Options.keyExpr
-type: String | function(item)
+type: String | function()
 default: 'id'
 ---
 ---
 ##### shortDescription
 Specifies which data field provides keys for **TreeView** items.
-
-##### param(item): Object
-The current item's data object.
-
-##### return: String
-The key value.
 
 ---
 [note]The key value should be unique within the data array.

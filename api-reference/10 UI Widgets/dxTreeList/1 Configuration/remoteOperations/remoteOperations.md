@@ -1,6 +1,8 @@
 ---
 id: dxTreeList.Options.remoteOperations
-type: Object
+acceptValues: 'auto'
+type: Object | String
+default: 'auto'
 ---
 ---
 ##### shortDescription

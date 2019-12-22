@@ -1,6 +1,8 @@
 ---
 id: GridBase.Options.loadPanel.enabled
-type: Boolean
+acceptValues: 'auto'
+type: Boolean | String
+default: 'auto'
 ---
 ---
 ##### shortDescription

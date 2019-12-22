@@ -1,6 +1,8 @@
 ---
 id: dxDataGrid.Options.remoteOperations
-type: Boolean | Object
+acceptValues: 'auto'
+type: Boolean | Object | String
+default: 'auto'
 ---
 ---
 ##### shortDescription

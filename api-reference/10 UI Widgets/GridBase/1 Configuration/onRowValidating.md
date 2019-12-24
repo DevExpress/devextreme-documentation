@@ -68,7 +68,8 @@ The following code illustrates how to validate an email address on the server an
         return $.ajax({
             // The url returns { errorText: "The Email address you entered already exists.", isValid: false }
             url: "https://www.mywebsite.com/api/checkEmail",
-            dataType: "json"
+            dataType: "json",
+            data: { email: email }
         });
     }
 

@@ -197,10 +197,10 @@ If you need to perform asynchronous operations in the **setCellValue** function,
         });
         function getTaxRates(state) {
             var promise = $.ajax({
-                // The URL returns { StateID: 1, Tax: 10 }
+                // The URL returns { State: 1, Tax: 10 }
                 url: "https://www.mywebsite.com/api/getTaxRates",
                 dataType: "json",
-                data: { StateID: state }
+                data: { State: state }
             });
             return promise;
         }
@@ -240,11 +240,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
             });
         }
         getTaxRates(state) {
-            const params = new HttpParams().set('StateID', state);
+            const params = new HttpParams().set('State', state);
             return this.httpClient.get("https://www.mywebsite.com/api/getTaxRates", { params })
                 .toPromise()
                 .then(data => {
-                    // "data" is { StateID: 1, Tax: 10 }
+                    // "data" is { State: 1, Tax: 10 }
                     return data;
                 })
                 .catch(error => { throw "Data Loading Error" });
@@ -304,11 +304,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
                 });
             },
             getTaxRates(state) {
-                let params = '?' + 'StateId=' + state;
+                let params = '?' + 'State=' + state;
                 return fetch("https://www.mywebsite.com/api/getTaxRates${params}")
                     .toPromise()
                     .then(data => {
-                        // "data" is { StateID: 1, Tax: 10 }
+                        // "data" is { State: 1, Tax: 10 }
                         return data;
                     })
                     .catch(error => { throw "Data Loading Error" });
@@ -341,11 +341,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
             });
         }
         getTaxRates(state) {
-            let params = '?' + 'StateId=' + state;
+            let params = '?' + 'State=' + state;
             return fetch("https://www.mywebsite.com/api/getTaxRates${params}")
                 .toPromise()
                 .then(data => {
-                    // "data" is { StateID: 1, Tax: 10 }
+                    // "data" is { State: 1, Tax: 10 }
                     return data;
                 })
                 .catch(error => { throw "Data Loading Error" });
@@ -384,10 +384,10 @@ If you need to perform asynchronous operations in the **setCellValue** function,
         }
         function getTaxRates(state) {
             var promise = $.ajax({
-                // The URL returns { StateID: 1, Tax: 10 }
+                // The URL returns { State: 1, Tax: 10 }
                 url: "https://www.mywebsite.com/api/getTaxRates",
                 dataType: "json",
-                data: { StateID: state }
+                data: { State: state }
             });
             return promise;
         }

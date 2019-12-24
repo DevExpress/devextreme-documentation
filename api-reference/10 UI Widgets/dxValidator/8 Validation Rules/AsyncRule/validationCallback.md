@@ -32,7 +32,7 @@ A Promise that should be resolved or rejected as shown in the example below.
 
 ---
 
-The following code shows a generic **validationCallback** implementation for a server that returns a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Body/json" target="_blank">JSON<a> response. The function sends the value that should be validated to the server. The response includes a flag that indicates validity, and optionally an error message that is used if validation fails.
+The following code shows a generic **validationCallback** implementation for a server that returns a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Body/json" target="_blank">JSON</a> response. The function sends the value that should be validated to the server. The response includes a flag that indicates validity, and optionally an error message that is used if validation fails.
 
 ---
 ##### jQuery

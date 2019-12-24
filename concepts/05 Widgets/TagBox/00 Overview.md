@@ -4,7 +4,7 @@ The **TagBox** widget is an editor that allows an end user to select multiple it
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview/"
 }
 
-The following code adds the **TagBox** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/dataSource/') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#placeholder') to be displayed when the **TagBox** is empty.
+The following code adds the **TagBox** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#placeholder') to be displayed when the **TagBox** is empty.
 
 ---
 #####jQuery

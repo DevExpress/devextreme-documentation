@@ -15,12 +15,12 @@ The following scrolling modes are available:
 A user scrolls a single page only. Scrolling is available only if [all the page's rows](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') do not fit into the widget's height. In this mode, the [pager](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/') performs the main navigation and scrolling is auxiliary. If [paging](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/') is disabled, the widget loads all rows simultaneously which can reduce the widget's performance. In this case, we recommend that you use another scrolling mode.
 
 - **Infinite**      
-Each next page is loaded once the scrollbar reaches the end of its scale. In this mode, users scroll data gradually, from the first to the last page.
+Each next page is loaded once the scrollbar reaches the end of its scale. In this mode, users scroll data gradually from the first to the last page.
 
     [note]Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#allowCollapsing') option to **false** when using infinite scrolling in conjunction with grouping.
     
 - **Virtual**       
-Rows are loaded when they get into the viewport and removed once they leave it. Rows display gray boxes while they are being loaded and rendered. [Rendering optimization](/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization) may help reduce rendering time and remove the gray boxes. In this mode, users can move to any page instantly.
+Rows are loaded when they get into the viewport and removed once they leave. If the rows take time to be loaded and rendered, they display gray boxes. [Rendering optimization](/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization) can reduce rendering time and remove gray boxes. In this mode, users can move to any page instantly.
 
 #include common-ref-enum with {
     enum: "`GridScrollingMode`",

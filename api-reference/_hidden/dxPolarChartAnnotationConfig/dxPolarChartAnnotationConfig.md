@@ -1,6 +1,7 @@
 ---
-id: ArrayFileProvider.Options.content
-type: String | function()
+id: dxPolarChartAnnotationConfig
+type: Object
+inherits: dxPolarChartCommonAnnotationConfig
 ---
 ---
 ##### shortDescription

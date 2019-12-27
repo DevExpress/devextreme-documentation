@@ -197,7 +197,6 @@ Use this function to:
                     }
                 }
             }
-
             render() {
                 return (
                     <TreeList ...
@@ -343,7 +342,6 @@ Use this function to:
                     e.editorName = 'dxTextArea';
                 }
             }
-
             render() {
                 return (
                     <TreeList ...

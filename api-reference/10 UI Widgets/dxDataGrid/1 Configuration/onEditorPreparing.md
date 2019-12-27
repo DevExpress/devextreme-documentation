@@ -198,7 +198,6 @@ Use this function to:
                     }
                 }
             }
-
             render() {
                 return (
                     <DataGrid ...
@@ -344,7 +343,6 @@ Use this function to:
                     e.editorName = 'dxTextArea';
                 }
             }
-
             render() {
                 return (
                     <DataGrid ...

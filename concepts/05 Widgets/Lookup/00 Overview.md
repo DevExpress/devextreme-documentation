@@ -113,5 +113,6 @@ If your data is an array of objects, specify:
 - [Lookup - Customize the Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/')
 - [Lookup - Handle the Value Change Event](/concepts/05%20Widgets/Lookup/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/Lookup/Handle_the_Value_Change_Event/')
 - [Lookup API Reference](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/')
+- [SelectBox vs Lookup](/concepts/05%20Widgets/Lookup/40%20SelectBox%20and%20Lookup.md '/Documentation/Guide/Widgets/Lookup/SelectBox_and_Lookup/')
 
 [tags]lookup, overview, data source, value, display expression, displayExpr, valueExpr

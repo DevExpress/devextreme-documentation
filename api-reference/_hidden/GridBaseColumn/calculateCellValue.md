@@ -365,7 +365,7 @@ To invoke the default behavior, call the **this.defaultCalculateCellValue(rowDat
     value: "column's configuration"
 }
 
-[important] Do not implement complex calculations within this method to avoid poor widget's performance. This method is called every time a row renders or when a sorting/filtering/summary setting changes. Thus, it can be called multiple times in a short period and multiple complex calculations can slow down the widget.
+[note] This function is called multiple times for every record: when the widget renders it, applies sorting or filtering, and computes summaries. We recommend that you keep calculations inside this function as simple as possible so as not to lower the widget's performance.
 
 #####See Also#####
 - **columns[]**.[customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText')

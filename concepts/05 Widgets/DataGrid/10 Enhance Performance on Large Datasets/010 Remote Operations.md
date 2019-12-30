@@ -47,4 +47,67 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20C
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxRemoteOperations
+                :filtering="true"
+                :paging="true"
+                :sorting="true"
+                :summary="true"
+                :grouping="true"
+                :groupPaging="true"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxRemoteOperations
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxRemoteOperations
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        RemoteOperations
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <RemoteOperations
+                        filtering={true}
+                        paging={true}
+                        sorting={true}
+                        summary={true}
+                        grouping={true}
+                        groupPaging={true}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---

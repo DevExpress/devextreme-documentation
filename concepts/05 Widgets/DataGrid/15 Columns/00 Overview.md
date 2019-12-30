@@ -38,6 +38,61 @@ Columns represent sets of data values that have the same type. To configure colu
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn data-field="Title" caption="Position" />
+            <DxColumn data-field="FullName" :width="300" />
+            <DxColumn data-field="CompanyName" />
+            <DxColumn data-field="City" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column dataField="Title" caption="Position" />
+                    <Column dataField="FullName" width={300} />
+                    <Column dataField="CompanyName" />
+                    <Column dataField="City" />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -62,6 +117,11 @@ The **DataGrid** generates a column per data field if you do not specify the **c
     import { DxDataGridModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        constructor() {
+            // Uncomment the line below if customizeColumns should be executed in the component's context
+            // this.customizeColumns = this.customizeColumns.bind(this);
+        }
+
         customizeColumns (columns) {
             columns[0].width = 100;
             columns[1].width = 210;
@@ -79,6 +139,66 @@ The **DataGrid** generates a column per data field if you do not specify the **c
     <dx-data-grid ...
         [customizeColumns]="customizeColumns">
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :customize-columns="customizeColumns">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            customizeColumns(columns) {
+                columns[0].width = 100;
+                columns[1].width = 210;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor() {
+            super(props);
+            // Uncomment the line below if customizeColumns should be executed in the component's context
+            // this.customizeColumns = this.customizeColumns.bind(this);
+        }
+
+        customizeColumns(columns) {
+            columns[0].width = 100;
+            columns[1].width = 210;
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    customizeColumns={this.customizeColumns}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

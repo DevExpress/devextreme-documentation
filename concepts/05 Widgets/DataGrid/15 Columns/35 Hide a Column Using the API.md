@@ -26,6 +26,78 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Email"
+                :visible.sync="isEmailVisible"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return() {
+                isEmailVisible: true
+            }
+        },
+        methods: {
+            hideEmails() {
+                this.isEmailVisible = false;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+
+            this.hideEmails = () => {
+                this.dataGrid.columnOption('Email', 'visible', false);
+            }
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef}>
+                    {/* ... */ }
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

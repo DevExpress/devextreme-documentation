@@ -42,6 +42,61 @@ When adapting to a small container or screen, the **DataGrid** can hide columns.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :column-hiding-enabled="true">
+            <DxColumn :hiding-priority="2" ... /> <!-- a valuable column -->
+            <DxColumn :hiding-priority="1" ... /> <!-- a not-so-valuable column -->
+            <DxColumn :hiding-priority="0" ... /> <!-- a first-to-hide column -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    columnHidingEnabled={true}>
+                    <Column hidingPriority={2} ... /> {/* a valuable column */}
+                    <Column hidingPriority={1} ... /> {/* a not-so-valuable column */}
+                    <Column hidingPriority={0} ... /> {/* a first-to-hide column */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -75,6 +130,81 @@ The table layout does not automatically adapt to changes made in the widget's co
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = "my-data-grid";
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return() {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            renderDataGrid() {
+                this.dataGrid.updateDimensions();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+
+            this.renderDataGrid = this.renderDataGrid.bind(this);
+        }
+
+        renderDataGrid() {
+            this.dataGrid.updateDimensions();
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef}>
+                    {/* ... */ }
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -127,6 +257,85 @@ You can expand or collapse adaptive detail rows programmatically by calling the 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = "my-data-grid";
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return() {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            expandAdaptiveDetailRow(key) {
+                if (!this.dataGrid.isAdaptiveDetailRowExpanded(key)) {
+                    this.dataGrid.expandAdaptiveDetailRow(key);
+                }
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+
+            this.expandAdaptiveDetailRow = this.expandAdaptiveDetailRow.bind(this);
+        }
+
+        expandAdaptiveDetailRow(key) {
+            if (!this.dataGrid.isAdaptiveDetailRowExpanded(key)) {
+                this.dataGrid.expandAdaptiveDetailRow(key);
+            }
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef}>
+                    {/* ... */ }
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -174,6 +383,73 @@ All adaptive detail rows contain the [DevExtreme Form widget](/api-reference/10%
     <dx-data-grid ...
         (onAdaptiveDetailRowPreparing)="onAdaptiveDetailRowPreparing($event)">
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :@adaptive-detail-row-preparing="onAdaptiveDetailRowPreparing">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            onAdaptiveDetailRowPreparing(e) {
+                for (let formItem of e.formOptions.items) {
+                    if (formItem.dataField == 'OrderID') {
+                        formItem.isRequired = true;
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            // Uncomment the line below if the function should be executed in the component's context
+            // this.onAdaptiveDetailRowPreparing = this.onAdaptiveDetailRowPreparing.bind(this);
+        }
+
+        onAdaptiveDetailRowPreparing(e) {
+            for (let formItem of e.formOptions.items) {
+                if (formItem.dataField == 'OrderID') {
+                    formItem.isRequired = true;
+                }
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ... 
+                    onAdaptiveDetailRowPreparing={this.onAdaptiveDetailRowPreparing}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

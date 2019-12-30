@@ -24,7 +24,7 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
     <!--HTML-->
     <dx-data-grid ... >
         <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
-        <dxi-column [allowFixing]="true" ... ></dxi-column>
+        <dxi-column [allowFixing]="false" ... ></dxi-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -40,6 +40,60 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumnFixing :enabled="true" />
+            <DxColumn :allow-fixing="false" ... />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxColumnFixing
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxColumnFixing
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+        ColumnFixing
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <ColumnFixing enabled={true} />
+                    <Column allowFixing={false} ... />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -78,6 +132,56 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn :fixed="true" fixed-position="left" ... />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxColumnFixing
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column fixed={true} fixedPosition="left" ... />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

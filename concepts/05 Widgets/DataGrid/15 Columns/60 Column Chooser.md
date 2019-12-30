@@ -35,6 +35,61 @@ The column chooser allows a user to change the set of columns at runtime. It is 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumnChooser
+                :enabled="true"
+                mode="dragAndDrop" <!-- or "select" -->
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumnChooser
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumnChooser
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        ColumnChooser
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <ColumnChooser
+                        enabled={true}
+                        mode="dragAndDrop" {/* or "select" */}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -84,6 +139,74 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumnChooser
+                :enabled="true"
+            />
+            <DxColumn ...
+                :allow-hiding="false" <!-- cannot be hidden -->
+            />
+            <DxColumn ...
+                :show-in-column-chooser="false" <!-- does not appear in the column chooser even when hidden -->
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumnChooser,
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumnChooser,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        ColumnChooser,
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <ColumnChooser
+                        enabled={true}
+                    />
+                    <Column ...
+                        allowHiding={false} {/* cannot be hidden */}
+                    />
+                    <Column ...
+                        showInColumnChooser={false}> {/* does not appear in the column chooser even when hidden */}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -121,6 +244,89 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = "my-data-grid";
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return() {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            showColumnChooser() {
+                this.dataGrid.showColumnChooser();
+            },
+            hideColumnChooser() {
+                this.dataGrid.hideColumnChooser();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+
+            this.showColumnChooser = this.showColumnChooser.bind(this);
+            this.hideColumnChooser = this.hideColumnChooser.bind(this);
+        }
+
+        showColumnChooser() {
+            this.dataGrid.showColumnChooser();
+        }
+
+        hideColumnChooser() {
+            this.dataGrid.hideColumnChooser();
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef}>
+                    {/* ... */ }
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

@@ -89,9 +89,9 @@ When adapting to a small container or screen, the **DataGrid** can hide columns.
             return (
                 <DataGrid ...
                     columnHidingEnabled={true}>
-                    <Column hidingPriority={2} ... /> {/* a valuable column */}
-                    <Column hidingPriority={1} ... /> {/* a not-so-valuable column */}
-                    <Column hidingPriority={0} ... /> {/* a first-to-hide column */}
+                    <Column defaultHidingPriority={2} ... /> {/* a valuable column */}
+                    <Column defaultHidingPriority={1} ... /> {/* a not-so-valuable column */}
+                    <Column defaultHidingPriority={0} ... /> {/* a first-to-hide column */}
                 </DataGrid>
             );
         }

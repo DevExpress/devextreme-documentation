@@ -58,7 +58,7 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20C
                 :sorting="true"
                 :summary="true"
                 :grouping="true"
-                :groupPaging="true"
+                :group-paging="true"
             />
         </DxDataGrid>
     </template>

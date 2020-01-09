@@ -129,14 +129,14 @@ items: [{
     ImageSrc: "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/gallery/21.jpg"
 }],
 itemTemplate: function (itemData, _, itemElement) {
-    $('<div />').css({
-        'background-image': 'url(' + itemData.ImageSrc + ')',
-        height: '100%',
-        width: '100%',
-        'background-position': 'center',
-        'background-size': 'cover',
-        display: 'block'
-    }).appendTo(itemElement);
+    var imageDiv = document.createElement("div");
+    imageDiv.style.backgroundImage = "url(" + itemData.ImageSrc + ")";
+    imageDiv.style.height = "100%";
+    imageDiv.style.width = "100%";
+    imageDiv.style.backgroundPosition = "center";
+    imageDiv.style.backgroundSize = "cover";
+    imageDiv.style.display = "block";
+    itemElement.append(imageDiv);
 },
 height: 450
 

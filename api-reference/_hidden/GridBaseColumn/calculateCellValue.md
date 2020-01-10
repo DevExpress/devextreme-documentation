@@ -269,8 +269,6 @@ The following features are disabled in an unbound column, but you can enable the
     </table>
 </div>
 
-[note]
-
 To invoke the default behavior, call the **this.defaultCalculateCellValue(rowData)** function and return its result.
 
 ---
@@ -363,11 +361,11 @@ To invoke the default behavior, call the **this.defaultCalculateCellValue(rowDat
 
 ---
 
-[/note]
-
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"
 }
+
+[note] This function is called multiple times for every record: when the record is rendered, when sorting or filtering is applied, and when summaries are computed. It is recommend that you keep calculations inside this function as simple as possible to avoid hindering widget performance.
 
 #####See Also#####
 - **columns[]**.[customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText')

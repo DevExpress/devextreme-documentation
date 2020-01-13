@@ -38,6 +38,52 @@ The axis title is configured by the [title](/api-reference/20%20Data%20Visualiza
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                title="Axis Title"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        title="Axis Title"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 is the same as this:
@@ -77,6 +123,59 @@ is the same as this:
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis> <!-- or DxValueAxis -->
+                <DxTitle
+                    text="Axis Title"
+                />
+            </DxArgumentAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxTitle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxTitle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        Title
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis> <!-- or ValueAxis -->
+                        <Title
+                            text="Axis Title"
+                        />
+                    </ArgumentAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

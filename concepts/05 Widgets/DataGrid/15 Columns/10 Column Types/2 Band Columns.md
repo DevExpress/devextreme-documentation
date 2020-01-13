@@ -41,6 +41,63 @@ To set up this layout, describe the hierarchy of columns directly in an object o
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn caption="Contacts">
+                <DxColumn data-field="Email" />
+                <DxColumn data-field="Mobile_Phone" />
+                <DxColumn data-field="Skype" />
+            </DxColumn>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column caption="Contacts">
+                        <Column dataField="Email" />
+                        <Column dataField="Mobile_Phone" />
+                        <Column dataField="Skype" />
+                    </Column>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -102,6 +159,76 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%
     <dx-data-grid ...
         [customizeColumns]="customizeColumns">
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :customize-columns="customizeColumns">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            customizeColumns(columns) {
+                columns.push({ // Pushes the "Contacts" band column into the "columns" array
+                    caption: 'Contacts',
+                    isBand: true
+                });
+        
+                const contactsFields = ['Email', 'Mobile_Phone', 'Skype'];
+                for (let i = 0; i < columns.length - 1; i++) {
+                    if (contactsFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Contacts",
+                        columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        customizeColumns(columns) {
+            columns.push({ // Pushes the "Contacts" band column into the "columns" array
+                caption: 'Contacts',
+                isBand: true
+            });
+    
+            const contactsFields = ['Email', 'Mobile_Phone', 'Skype'];
+            for (let i = 0; i < columns.length - 1; i++) {
+                if (contactsFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Contacts",
+                    columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    customizeColumns={this.customizeColumns}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -160,6 +287,79 @@ Band columns support hierarchies of any nesting level and enables you to use the
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn caption="A">
+                <DxColumn data-field="A1" />
+                <DxColumn data-field="A2" />
+                <DxColumn caption="A3">
+                    <DxColumn data-field="A31" />
+                    <DxColumn data-field="A32" />
+                    <DxColumn caption="A33">
+                        <DxColumn data-field="A331" />
+                        <DxColumn data-field="A332" />
+                        <DxColumn data-field="A333" />
+                    </DxColumn>
+                </DxColumn>
+            </DxColumn>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column caption="A">
+                        <Column dataField="A1" />
+                        <Column dataField="A2" />
+                        <Column caption="A3">
+                            <Column dataField="A31" />
+                            <Column dataField="A32" />
+                            <Column caption="A33">
+                                <Column dataField="A331" />
+                                <Column dataField="A332" />
+                                <Column dataField="A333" />
+                            </Column>
+                        </Column>
+                    </Column>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

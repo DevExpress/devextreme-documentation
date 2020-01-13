@@ -1,7 +1,6 @@
-DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component for Angular, AngularJS and Knockout apps. The following code shows how you can customize column cells using this component. Note that the template's [name](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/Configuration/#name') is assigned to the column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate') option. 
+Cell appearance is customized using a column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate'). In Angular and Vue, you can declare the template in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
-
 ##### Angular
 
     <!--HTML-->
@@ -26,45 +25,74 @@ DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20C
         // ...
     })
 
-#####[**AngularJS**](/concepts/00%20Getting%20Started/20%20Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget/')
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-data-grid="{
-            ...
-            columns: [{
-                dataField: 'Title',
-                cellTemplate: 'cellTemplate'
-            }]
-        }" dx-item-alias="cell">
-            <div data-options="dxTemplate: { name: 'cellTemplate' }">
-                <div style="color:blue">{{cell.text}}</div>
-            </div>
-        </div>
-    </div>
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Title"
+                cell-template="grid-cell"
+            />
+            <template #grid-cell="{ data }">
+                <div style="color:blue">{{ data.cell.text }}</div>
+            </template>
+        </DxDataGrid>
+    </template>
 
-[note] The `dx-item-alias` directive specifies the variable used to access cell settings.
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-#####[**Knockout**](/concepts/00%20Getting%20Started/25%20Widget%20Basics%20-%20Knockout/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Create_and_Configure_a_Widget/')
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
 
-    <!--HTML-->
-    <div data-bind="dxDataGrid: {
-        ...
-        columns: [{
-            dataField: 'Title',
-            cellTemplate: 'cellTemplate'
-        }]
-    }">
-        <div data-options="dxTemplate: { name: 'cellTemplate' }">
-            <div style="color:blue" data-bind="text: $data.text"></div>
-        </div>
-    </div>
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    const renderGridCell = (data) => {
+        return <div style={{ color: 'blue' }}>{data.cell.text}</div>;
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="Title"
+                        cellRender={renderGridCell}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for cells. To apply this markup, use the **cellTemplate** function as shown in the following code:
 
-[**jQuery**](/concepts/00%20Getting%20Started/10%20Widget%20Basics%20-%20jQuery/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Create_and_Configure_a_Widget/')
+---
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -79,6 +107,8 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
             }]
         });
     });
+
+---
 
 While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellPrepared') function can customize any cell. Unlike **cellTemplate**, this function does customizations after a cell is created, so you cannot use it to change the cell value. Check the [rowType](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType') field of the function's argument to detect the UI element that owns the cell.
 
@@ -133,6 +163,75 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
         background-color: #cce6ff;
         font-size: 12pt
     }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @cell-prepared="onCellPrepared">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            onCellPrepared(e) {
+                if (e.rowType == 'detailAdaptive') {
+                    e.cellElement.addClass('adaptiveRowStyle');
+                }
+            }
+        }
+    }
+    </script>
+    <style scoped>
+        .adaptiveRowStyle { 
+            background-color: #cce6ff;
+            font-size: 12pt
+        }
+    </style>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            // Uncomment the line below if the function should be executed in the component's context
+            // this.onCellPrepared = this.onCellPrepared.bind(this);
+        }
+
+        onCellPrepared(e) {
+            if (e.rowType == 'detailAdaptive') {
+                e.cellElement.addClass('adaptiveRowStyle');
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onCellPrepared={this.onCellPrepared}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

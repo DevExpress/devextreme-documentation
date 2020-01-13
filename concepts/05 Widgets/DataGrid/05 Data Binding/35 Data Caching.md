@@ -33,6 +33,86 @@ The **DataGrid** caches data by default. This allows the widget to decrease the 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid :ref="dataGridRefKey">
+            <!-- ... -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = "my-data-grid";
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            refreshData() {
+                this.dataGrid.refresh();
+                // ===== or =====
+                let dataGridDataSource = this.dataGrid.getDataSource();
+                dataGridDataSource.load();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dataGridRef = React.createRef();
+
+            this.refreshData = () => {
+                this.dataGrid.refresh();
+                // ===== or =====
+                let dataGridDataSource = this.dataGrid.getDataSource();
+                dataGridDataSource.load();
+            }
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef}>
+                    {/* ... */ }
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -71,6 +151,50 @@ If your data source changes frequently, disable caching by assigning **false** t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :cache-enabled="false">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    cacheEnabled={false}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

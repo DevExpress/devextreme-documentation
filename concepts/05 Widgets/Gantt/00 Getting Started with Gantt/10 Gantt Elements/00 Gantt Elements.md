@@ -1,0 +1,13 @@
+This section describes the **Gantt** widget's UI elements and lists the main members that affect their appearance and functionality.
+
+- [Task](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/Task/)
+
+A task is a scheduled event. On the Gantt chart, a task is a bar that shows the task duration.
+
+- [Dependency](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/Dependency/)
+
+Dependencies define the task sequence and display how tasks relate to each other.
+
+- [Resource](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/Resource/)
+
+Resources indicate people, equipment, or materials required to complete a project on time.

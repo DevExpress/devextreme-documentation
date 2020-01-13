@@ -185,7 +185,7 @@ Another noteworthy option is [overlappingBehavior](/api-reference/20%20Data%20Vi
         render() {
             return (
                 <Chart ... >
-                    <ArgumentAxis> <!-- or ValueAxis, or CommonAxisSettings -->
+                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
                         <Label
                             rotationAngle={45}
                             overlappingBehavior="rotate"

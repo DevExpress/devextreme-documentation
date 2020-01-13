@@ -10,8 +10,10 @@ Configures your application before its launch.
 ##### param(config): globalConfig
 Global configuration options.
 
----
-DevExpress.config({
+<!---->
+    
+    <!--JavaScript-->
+    DevExpress.config({
         rtlEnabled: true,
         forceIsoDateParsing: false,
         // ...

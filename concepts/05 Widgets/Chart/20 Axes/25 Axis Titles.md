@@ -165,7 +165,7 @@ is the same as this:
         render() {
             return (
                 <Chart ... >
-                    <ArgumentAxis> <!-- or ValueAxis -->
+                    <ArgumentAxis> {/* or ValueAxis */}
                         <Title
                             text="Axis Title"
                         />

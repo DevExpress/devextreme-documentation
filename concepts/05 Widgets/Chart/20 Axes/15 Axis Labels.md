@@ -86,7 +86,7 @@ You can configure axis labels using the [label](/api-reference/20%20Data%20Visua
         render() {
             return (
                 <Chart ... >
-                    <ArgumentAxis> <!-- or ValueAxis, or CommonAxisSettings -->
+                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
                         <Label
                             staggeringSpacing={10}
                             displayMode="stagger"

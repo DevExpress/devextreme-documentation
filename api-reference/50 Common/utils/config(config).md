@@ -10,6 +10,8 @@ Configures your application before its launch.
 ##### param(config): globalConfig
 Global configuration options.
 
+---
+
 <!---->
     
     <!--JavaScript-->

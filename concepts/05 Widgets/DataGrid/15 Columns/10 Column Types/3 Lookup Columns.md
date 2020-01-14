@@ -77,6 +77,115 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid :data-source="orders">
+            <DxColumn
+                data-field="statusId"> <!-- provides actual values -->
+                <DxLookup
+                    :data-source="lookupDataSourceConfig"
+                    value-expr="id" <!-- contains the same values as the "statusId" field provides -->
+                    display-expr="name" <!-- provides display values -->
+                />
+            </DxColumn>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxLookup
+    } from 'devextreme-vue/data-grid';
+
+    import 'devextreme/data/array_store';
+
+    const orders = [ /* ... */ ];
+
+    const lookupDataSourceConfig = {
+        store: {
+            type: 'array',
+            data: [
+                { id: 1, name: 'Not Started' },
+                { id: 2, name: 'Need Assistance' },
+                { id: 3, name: 'In Progress' },
+                // ...
+            ],
+            key: 'id'
+        },
+        pageSize: 10,
+        paginate: true   
+    }
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxLookup
+        },
+        data() {
+            return {
+                orders,
+                lookupDataSourceConfig
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+        Lookup
+    } from 'devextreme-react/data-grid';
+
+    import 'devextreme/data/array_store';
+
+    const orders = [ /* ... */ ];
+
+    const lookupDataSourceConfig = {
+        store: {
+            type: 'array',
+            data: [
+                { id: 1, name: 'Not Started' },
+                { id: 2, name: 'Need Assistance' },
+                { id: 3, name: 'In Progress' },
+                // ...
+            ],
+            key: 'id'
+        },
+        pageSize: 10,
+        paginate: true   
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid dataSource={orders}>
+                    <Column
+                        dataField="statusId"> <!-- provides actual values -->
+                        <Lookup
+                            dataSource={lookupDataSourceConfig}
+                            valueExpr="id" <!-- contains the same values as the "statusId" field provides -->
+                            displayExpr="name" <!-- provides display values -->
+                        />
+                    </Column>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 ... or simply an array of column values if the actual and display values are the same.
@@ -132,6 +241,95 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid :data-source="orders">
+            <DxColumn
+                data-field="status"> <!-- provides column values -->
+                <DxLookup
+                    :data-source="lookupData"
+                />
+            </DxColumn>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxLookup
+    } from 'devextreme-vue/data-grid';
+
+    import 'devextreme/data/array_store';
+
+    const orders = [ /* ... */ ];
+
+    const lookupData = [
+        'Not Started',
+        'Need Assistance',
+        'In Progress',
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxLookup
+        },
+        data() {
+            return {
+                orders,
+                lookupData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+        Lookup
+    } from 'devextreme-react/data-grid';
+
+    import 'devextreme/data/array_store';
+
+    const orders = [ /* ... */ ];
+
+    const lookupData = [
+        'Not Started',
+        'Need Assistance',
+        'In Progress',
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid dataSource={orders}>
+                    <Column
+                        dataField="status"> <!-- provides column values -->
+                        <Lookup
+                            dataSource={lookupData}
+                        />
+                    </Column>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

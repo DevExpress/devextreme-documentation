@@ -1,4 +1,4 @@
-After a user clicks an appointment, the **Scheduler** displays a tooltip with two buttons. To delete an appointment, a user clicks the button with a bucket icon. Note that the appointment will be deleted from the [data source](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/dataSource/').
+After a user clicks an appointment, the **Scheduler** displays a tooltip with two buttons. To delete an appointment, a user clicks the button with a bucket icon. Note that the appointment will be deleted from the [data source](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource').
 
 <div>
     <video width="640px" controls="yes">

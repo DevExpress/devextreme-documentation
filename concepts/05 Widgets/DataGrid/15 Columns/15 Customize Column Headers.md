@@ -38,6 +38,55 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn data-field="CompanyName" caption="Company" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column dataField="CompanyName" caption="Company" />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -100,6 +149,84 @@ If you need a more specific customization, define a custom template in the **col
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Title"
+                caption="Position"
+                header-cell-template="title-header"
+            />
+            <DxColumn
+                data-field="Address"
+                header-cell-template="address-header"
+            />
+            <template #title-header="{ data }">
+                <p style="font-size:16px">{{ data.column.caption }}</p>
+            </template>
+            <template #address-header">
+                <i style="color: black">Mailing Address</i>
+            </template>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    const renderTitleHeader = (data) => {
+        return <p style={{ font-size: '16px' }}>{data.column.caption}</p>;
+    }
+    const renderAddressHeader = () => {
+        return <i style={{ color: 'black' }}>Mailing Address</i>;
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="Title"
+                        caption="Position"
+                        headerCellRender={renderTitleHeader}
+                    />
+                    <Column
+                        dataField="Address"
+                        headerCellRender={renderAddressHeader}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -136,6 +263,50 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :show-column-headers="false">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    showColumnHeaders={false}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

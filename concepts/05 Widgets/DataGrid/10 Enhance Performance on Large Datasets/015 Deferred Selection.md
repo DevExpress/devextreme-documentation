@@ -55,6 +55,81 @@ Use deferred mode to increase the **DataGrid**'s performance when [selecting mul
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid :data-source="store">
+            <DxSelection
+                mode="multiple"
+                :allow-select-all="true"
+                :deferred="true"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxSelection
+    } from 'devextreme-vue/data-grid';
+
+    import ODataStore from 'devextreme/data/odata/store';
+
+    const store = new ODataStore({
+        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        key: 'Product_ID'
+    });
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSelection
+        },
+        data() {
+            return {
+                store
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Selection
+    } from 'devextreme-react/data-grid';
+
+    import ODataStore from 'devextreme/data/odata/store';
+
+    const store = new ODataStore({
+        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        key: 'Product_ID'
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid dataSource={store}>
+                    <Selection
+                        mode="multiple"
+                        allowSelectAll={true}
+                        deferred={true}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 [note]You should specify the **key** option of the [Store](/concepts/30%20Data%20Layer/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores') underlying the [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') to ensure that deferred selection works properly.
@@ -97,6 +172,34 @@ The following tasks require using different API in deferred mode:
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ...
+                :selection-filter="['Task_Status', '=', 'Completed']">
+            </DxDataGrid>
+        </template>
+
+        <script>
+        // ...
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        // ...
+        class App extends React.Component {
+            render() {
+                return (
+                    <DataGrid ...
+                        deafultSelectionFilter={['Task_Status', '=', 'Completed']}>
+                    </DataGrid>
+                );
+            }
+        }
+        export default App;
 
     ---
     
@@ -147,6 +250,103 @@ The following tasks require using different API in deferred mode:
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ...
+                :selection-filter.sync="selectionFilter">
+            </DxDataGrid>
+        </template>
+
+        <script>
+        import 'whatwg-fetch';
+        // ...
+        export default {
+            // ...
+            data() {
+                return {
+                    selectionFilter: ['Task_Status', '=', 'Completed']
+                }
+            },
+            methods: {
+                sendSelectedRows() {
+                    return new Promise((resolve, reject) => {
+                        fetch('https://mydomain.com/MyDataService', {
+                            method: 'POST',
+                            body: JSON.stringify({
+                                filter: this.selectionFilter || null
+                            })
+                        }),
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`HTTP error: ${res.status} ${res.statusText}`);
+                            }
+                            return response.json();
+                        })
+                        .then(res => { resolve(res); })
+                        .catch(error => {
+                            console.error(error);
+                            reject(error);
+                        });
+                    });
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import 'whatwg-fetch';
+        // ...
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    selectionFilter: ['Task_Status', '=', 'Completed']
+                }
+                this.handleOptionChange = this.handleOptionChange.bind(this);
+            }
+            handleOptionChange(e) {
+                if(e.fullName === 'selectionFilter') {
+                    this.setState({
+                        selectionFilter: e.value
+                    });
+                }
+            }
+            render() {
+                return (
+                    <DataGrid ...
+                        selectionFilter={this.state.selectionFilter}
+                        onOptionChanged={this.handleOptionChange}>
+                    </DataGrid>
+                );
+            }
+            sendSelectedRows() {
+                return new Promise((resolve, reject) => {
+                    fetch('https://mydomain.com/MyDataService', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            filter: this.state.selectionFilter || null
+                        })
+                    }),
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error: ${res.status} ${res.statusText}`);
+                        }
+                        return response.json();
+                    })
+                    .then(res => { resolve(res); })
+                    .catch(error => {
+                        console.error(error);
+                        reject(error);
+                    });
+                });
+            }
+        }
+        export default App;
+        
     ---
 
 - **Checking whether a row is selected**  

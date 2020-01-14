@@ -44,6 +44,61 @@ You can configure axis labels using the [label](/api-reference/20%20Data%20Visua
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis> <!-- or DxValueAxis, or DxCommonAxisSettings -->
+                <DxLabel
+                    :staggering-spacing="10"
+                    display-mode="stagger"
+                />
+            </DxArgumentAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxLabel
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
+                        <Label
+                            staggeringSpacing={10}
+                            displayMode="stagger"
+                        />
+                    </ArgumentAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Another noteworthy option is [overlappingBehavior](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/label/overlappingBehavior.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/label/#overlappingBehavior'). It allows you to decide how axis labels should behave when they overlap each other.
@@ -87,6 +142,61 @@ Another noteworthy option is [overlappingBehavior](/api-reference/20%20Data%20Vi
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis> <!-- or DxValueAxis, or DxCommonAxisSettings -->
+                <DxLabel
+                    :rotation-angle="45"
+                    overlapping-behavior="rotate"
+                />
+            </DxArgumentAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxLabel
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
+                        <Label
+                            rotationAngle={45}
+                            overlappingBehavior="rotate"
+                        />
+                    </ArgumentAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

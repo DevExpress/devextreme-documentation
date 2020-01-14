@@ -37,6 +37,49 @@ Depending on whether the legend is oriented vertically or horizontally, the **Ch
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxLegend orientation="vertical"/> <!-- or "horizontal" -->
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart, {
+            DxLegend
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxLegend
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            Legend
+        } from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <Chart ... >
+                        <Legend orientation="vertical" />
+                        {/* or "horizontal" */}
+                    </Chart>
+                );
+            }
+        }
+
+        export default App;
+
     ---
 
     [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#horizontalAlignment') option. For details on the location of the legend on a chart, refer to the [Relocate the Legend](/concepts/05%20Widgets/Chart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Chart/Legend/Relocate_the_Legend/') topic.
@@ -80,6 +123,48 @@ To distribute all legend items between several columns (in a vertically-oriented
             ],
             // ...
         })
+    
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxLegend :column-count="3"/> <!-- or :row-count="2" -->
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart, {
+            DxLegend
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxLegend
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            Legend
+        } from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <Chart ... >
+                        <Legend columnCount={3}/> {/* or rowCount={2} */}
+                    </Chart>
+                );
+            }
+        }
+
+        export default App;
 
     ---
 
@@ -122,6 +207,54 @@ Regardless the legend orientation, you can adjust the empty space between column
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxLegend
+                    :column-item-spacing="20"
+                    :row-item-spacing="30"
+                />
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart, {
+            DxLegend
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxLegend
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            Legend
+        } from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <Chart ... >
+                        <Legend
+                            columnItemSpacing={20}
+                            rowItemSpacing={30}
+                        />
+                    </Chart>
+                );
+            }
+        }
+
+        export default App;
 
     ---
 

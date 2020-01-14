@@ -33,6 +33,54 @@ With the ever-growing variety of platforms, today's web sites and applications c
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxAdaptiveLayout
+                :height="300"
+                :width="400"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxAdaptiveLayout
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxAdaptiveLayout
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        AdaptiveLayout
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <AdaptiveLayout
+                        height={300}
+                        width={400}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 <a href="https://jsfiddle.net/ChartJS/2m1pv4ag/" class="button orange small fix-width-155" target="_blank">View Demo on JSFiddle</a>
@@ -67,6 +115,58 @@ The layout does not automatically adapt to changes made in the widget's containe
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            ref="chart"
+            ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            renderChart () {
+                this.$refs.chart.instance.render();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.chartRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <Chart ref={this.chartRef} ... >
+                </Chart>
+            );
+        }
+
+        renderChart () {
+            this.chartRef.current.instance.render();
+        }
+    }
+
+    export default App;
 
 ---
 

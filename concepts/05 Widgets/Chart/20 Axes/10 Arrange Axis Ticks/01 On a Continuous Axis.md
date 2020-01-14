@@ -66,6 +66,106 @@ A continuous axis indicates numeric or date-time values. If you know the range o
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                :tick-interval="10"
+                :minor-tick-interval="2"
+            >
+                <DxTick :visible="true"/>
+                <DxMinorTick :visible="true"/>
+            </DxArgumentAxis>
+
+            <!-- or -->
+            <DxArgumentAxis>
+                <DxTickInterval :years="1"/>
+                <DxMinorTickInterval :months="6"/>
+                <DxTick :visible="true"/>
+                <DxMinorTick :visible="true"/>
+            </DxArgumentAxis>
+
+            <!-- or -->
+            <DxArgumentAxis
+                tick-interval="year"
+                minor-tick-interval="month"
+            >
+                <DxTick :visible="true"/>
+                <DxMinorTick :visible="true"/>
+            </DxArgumentAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxTick,
+        DxMinorTick,
+        DxTickInterval,
+        DxMinorTickInterval
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxTick,
+            DxMinorTick,
+            DxTickInterval,
+            DxMinorTickInterval
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        Tick,
+        MinorTick,
+        TickInterval,
+        MinorTickInterval
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        tickInterval={10}
+                        minorTickInterval={2}
+                    >
+                        <Tick visible={true} />
+                        <MinorTick visible={true} />
+                    </ArgumentAxis>
+
+                    {/* or */}
+                    <ArgumentAxis>
+                        <TickInterval years={1} />
+                        <MinorTickInterval months={6} />
+                        <Tick visible={true} />
+                        <MinorTick visible={true} />
+                    </ArgumentAxis>
+
+                    {/* or */}
+                    <ArgumentAxis
+                        tickInterval="year"
+                        minorTickInterval="month"
+                    >
+                        <Tick visible={true} />
+                        <MinorTick visible={true} />
+                    </ArgumentAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Without knowing the range of values on the axis, you can arrange major ticks by specifying the minimum distance between two side-by-side ticks in pixels. For this purpose, set the [axisDivisionFactor](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#axisDivisionFactor') option. Minor ticks in this case should be arranged using the [minorTickCount](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/minorTickCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#minorTickCount') option. It specifies how many minor ticks to place between two side-by-side major ticks.
@@ -110,5 +210,65 @@ Without knowing the range of values on the axis, you can arrange major ticks by 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                :axis-divisionfactor="20"
+                :minor-tick-count="4"
+            >
+                <DxTick :visible="true"/>
+                <DxMinorTick :visible="true"/>
+            </DxArgumentAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxTick,
+        DxMinorTick
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxTick,
+            DxMinorTick
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        Tick,
+        MinorTick
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        axisDivisionFactor={20}
+                        minorTickCount={4}
+                    >
+                        <Tick visible={true} />
+                        <MinorTick visible={true} />
+                    </ArgumentAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---

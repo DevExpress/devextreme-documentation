@@ -36,4 +36,57 @@ Values on a discrete axis are called ["categories"](/api-reference/20%20Data%20V
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                discrete-axis-division-mode="crossLabels"
+            >
+                <DxTick :visible="true"/>
+            </DxArgumentAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxTick
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxTick
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        Tick
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        discreteAxisDivisionMode="crossLabels" /* or 'betweenLabels' */
+                    >
+                        <Tick visible={true} />
+                    </ArgumentAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---

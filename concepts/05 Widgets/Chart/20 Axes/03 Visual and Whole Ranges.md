@@ -68,6 +68,81 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                :visual-range="chart_visualRange"
+            />
+        </DxChart>
+        <DxButton
+            text="Change Visual Range"
+            @click="setChartRange()"
+        />
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+    import DxButton from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxButton
+        },
+        data() {
+            return {
+                chart_visualRange: []
+            };
+        },
+        methods: {
+            setChartRange() {
+                this.chart_visualRange = [40, 60];
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { chart_visualRange: [] };
+            this.setChartRange = () => this.setState({ chart_visualRange: [40, 60] });
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                <Chart ... >
+                    <ArgumentAxis
+                        visualRange={this.state.chart_visualRange}
+                    />
+                </Chart>
+                <Button
+                    text="Change Visual Range"
+                    onClick={this.setChartRange}
+                />
+                </React.Fragment>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 An axis' visual range can behave differently when chart data is updated. See the **visualRangeUpdateMode** option for the [argument axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode') or [value axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#visualRangeUpdateMode') for more information.

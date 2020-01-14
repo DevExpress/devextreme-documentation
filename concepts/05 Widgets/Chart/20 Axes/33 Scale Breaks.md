@@ -43,6 +43,69 @@ Use an axis' [breaks](/api-reference/20%20Data%20Visualization%20Widgets/dxChart
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxValueAxis> <!-- or DxArgumentAxis -->
+                <DxBreak
+                    :start-value="100"
+                    :end-value="500"
+                />
+                <DxBreak
+                    :start-value="1000"
+                    :end-value="2000"
+                />
+            </DxValueAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxValueAxis,
+        DxBreak
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxValueAxis,
+            DxBreak
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ValueAxis,
+        Break
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ValueAxis> {/* or ArgumentAxis */}
+                        <Break
+                            startValue={100}
+                            endValue={500}
+                        />
+                        <Break
+                            startValue={1000}
+                            endValue={2000}
+                        />
+                    </ValueAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 The value axis supports auto-calculated scale breaks, which can be enabled by setting the [autoBreaksEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/autoBreaksEnabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#autoBreaksEnabled') option to **true**. You can specify the [maxAutoBreakCount](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/maxAutoBreakCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#maxAutoBreakCount') option to limit the number of a scale breaks the widget can generate.
@@ -83,6 +146,54 @@ The value axis supports auto-calculated scale breaks, which can be enabled by se
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxValueAxis
+                :auto-breaks-enabled="true"
+                :max-auto-break-count="2"
+            /> <!-- or DxArgumentAxis -->
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxValueAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxValueAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ValueAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ValueAxis
+                        autoBreaksEnabled={true}
+                        maxAutoBreakCount={2}
+                    /> {/* or ArgumentAxis */}
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

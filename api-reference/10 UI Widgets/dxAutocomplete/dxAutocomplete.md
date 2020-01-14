@@ -16,6 +16,8 @@ placeholder: "City"
 dx.web.js, dx.viz-web.js, dx.all.js
 
 ---
+[note] **Autocomplete** allows you to choose from a limited number of items from the **dataSource**. If you need extended functionality, such as grouping, paging or hiding distinct items from the drop-down list, consider using [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/') instead.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview/"
 }

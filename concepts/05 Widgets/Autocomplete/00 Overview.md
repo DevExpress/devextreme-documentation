@@ -6,7 +6,7 @@ The **Autocomplete** widget is a textbox that provides suggestions while a user 
 
 [note] **Autocomplete** allows you to choose from a limited number of items from the **dataSource**. If you need extended functionality, such as grouping, paging or hiding distinct items from the drop-down list, consider using [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/') instead.
 
-The following code adds the **Autocomplete** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#placeholder') to be displayed when the **Autocomplete** is empty.
+The following code adds the **Autocomplete** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#placeholder') to be displayed when the **Autocomplete** is empty.
 
 ---
 ##### jQuery
@@ -160,5 +160,6 @@ Usually, the data field that provides suggestions is the same data field that is
 - [Autocomplete - Customize Item Appearance](/concepts/05%20Widgets/Autocomplete/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Autocomplete/Customize_Item_Appearance')
 - [Autocomplete - Configure Search Parameters](/concepts/05%20Widgets/Autocomplete/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/Widgets/Autocomplete/Configure_Search_Parameters')
 - [Autocomplete API Reference](/api-reference/10%20UI%20Widgets/dxAutocomplete '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/')
+- [SelectBox Overview](/concepts/05%20Widgets/SelectBox/00%20Overview.md '/Documentation/Guide/Widgets/SelectBox/Overview/')
 
 [tags]autocomplete, collection container, collection widget, editor, overview, data source

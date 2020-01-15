@@ -42,8 +42,7 @@ Values on a discrete axis are called ["categories"](/api-reference/20%20Data%20V
     <template> 
         <DxChart ... >
             <DxArgumentAxis
-                discrete-axis-division-mode="crossLabels"
-            >
+                discrete-axis-division-mode="crossLabels"> <!-- or 'betweenLabels' -->
                 <DxTick :visible="true"/>
             </DxArgumentAxis>
         </DxChart>
@@ -78,8 +77,7 @@ Values on a discrete axis are called ["categories"](/api-reference/20%20Data%20V
             return (
                 <Chart ... >
                     <ArgumentAxis
-                        discreteAxisDivisionMode="crossLabels" /* or 'betweenLabels' */
-                    >
+                        discreteAxisDivisionMode="crossLabels"> {/* or 'betweenLabels' */}
                         <Tick visible={true} />
                     </ArgumentAxis>
                 </Chart>

@@ -141,7 +141,7 @@ As an alternative to **tickInterval**, you can use the [axisDivisionFactor](/api
     <template> 
         <DxChart ... >
             <DxArgumentAxis
-                :axisDivisionFactor="20"
+                :axis-division-factor="20"
                 type="logarithmic"
             >
                 <DxTick :visible="true"/>

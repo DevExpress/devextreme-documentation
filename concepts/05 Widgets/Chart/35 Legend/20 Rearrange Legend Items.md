@@ -71,8 +71,7 @@ Depending on whether the legend is oriented vertically or horizontally, the **Ch
             render() {
                 return (
                     <Chart ... >
-                        <Legend orientation="vertical" />
-                        {/* or "horizontal" */}
+                        <Legend orientation="vertical" /> {/* or "horizontal" */}
                     </Chart>
                 );
             }

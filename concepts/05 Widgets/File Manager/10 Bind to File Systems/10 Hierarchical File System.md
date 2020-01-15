@@ -1,4 +1,8 @@
-Create an [Array](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Providers/Array '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/') file provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Providers/Array/1%20Configuration/data.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data') option to bind the **FileManager** widget to a hierarchical data structure.
+The **FileManager** widget provides the [Array](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/) file provider to manage files and folders in an in-memory array of JSON objects.
+
+![FileManager - Hierarchical File System](~/images/FileManager/Hierarchical-file-system.png)
+
+Create an [Array](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/) file provider and assign the array of hierarchical JSON objects to the provider's [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data) option to bind the **FileManager** widget to a hierarchical data structure.
 
 The Array file provider automatically binds data objects to the widget if the data objects have the default 'name', 'size', 'dateModified', etc. fields in its structure. For example:
 
@@ -134,3 +138,7 @@ If the data source's field names differ from the standard field names mentioned 
     ];
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToHierarchicalStructure/"
+}

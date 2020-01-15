@@ -217,7 +217,7 @@ Without knowing the range of values on the axis, you can arrange major ticks by 
     <template> 
         <DxChart ... >
             <DxArgumentAxis
-                :axis-divisionfactor="20"
+                :axis-division-factor="20"
                 :minor-tick-count="4"
             >
                 <DxTick :visible="true"/>

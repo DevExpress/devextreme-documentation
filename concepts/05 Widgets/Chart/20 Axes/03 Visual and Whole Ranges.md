@@ -74,7 +74,7 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
     <template> 
         <DxChart ... >
             <DxArgumentAxis
-                :visual-range="chart_visualRange"
+                :visual-range.sync="chart_visualRange"
             />
         </DxChart>
         <DxButton
@@ -127,7 +127,8 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
         render() {
             return (
                 <React.Fragment>
-                <Chart ... >
+                <Chart
+                    onOptionChanged={this.handleChange}>
                     <ArgumentAxis
                         visualRange={this.state.chart_visualRange}
                     />
@@ -138,6 +139,13 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
                 />
                 </React.Fragment>
             );
+        }
+
+        handleChange(e) {
+            if(e.fullName === 'argumentAxis.visualRange') {
+                const range = e.value;
+                // ...
+            }
         }
     }
 

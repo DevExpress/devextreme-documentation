@@ -152,7 +152,6 @@ Usually, the data field that provides suggestions is the same data field that is
     })
 
 ---
-[note] **Autocomplete** is a stripped-down version of the [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/'). If you need any features that are not available in the **Autocomplete**, consider using the **SelectBox** instead.
 
 #####See Also#####
 #include common-link-configurewidget

@@ -16,7 +16,7 @@ placeholder: "City"
 dx.web.js, dx.viz-web.js, dx.all.js
 
 ---
-[note] **Autocomplete** displays the suggestions based on the text field input and is basically a stripped-down version of the [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/'). If you need any features that are not available in the **Autocomplete**, consider using the **SelectBox** instead.
+[note] **Autocomplete** is a stripped-down version of the [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/'). If you need any features that are not available in the **Autocomplete**, consider using the **SelectBox** instead.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview/"

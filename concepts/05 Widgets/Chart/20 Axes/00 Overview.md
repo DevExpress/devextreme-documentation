@@ -189,7 +189,7 @@ Usually, the **Chart** chooses the axis type automatically according to the type
                 type="discrete"
             />
             <DxValueAxis
-                valueType="numeric"
+                value-type="numeric"
             />
         </DxChart>
     </template>

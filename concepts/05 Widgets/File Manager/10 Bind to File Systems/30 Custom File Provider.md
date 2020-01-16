@@ -1,6 +1,6 @@
 Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider  to implement custom APIs to access and use file systems.
 
-![FileManager - Custom Provider](~/images/FileManager/custom-provider.png)
+![FileManager - Custom Provider](Content/images/doc/20_1/FileManager/custom-provider.png)
 
 1. Assign the [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider to the [fileProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider) option to implement a custom file provider and bind the FileManager widget to it.
 

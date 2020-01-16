@@ -1,6 +1,6 @@
 The **FileManager** widget provides the [Array](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/) file provider to manage files and folders in an in-memory array of JSON objects.
 
-![FileManager - Hierarchical File System](~/images/FileManager/Hierarchical-file-system.png)
+![FileManager - Hierarchical File System](Content/images/doc/20_1/FileManager/Hierarchical-file-system.png)
 
 Create an [Array](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/) file provider and assign the array of hierarchical JSON objects to the provider's [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data) option to bind the **FileManager** widget to a hierarchical data structure.
 

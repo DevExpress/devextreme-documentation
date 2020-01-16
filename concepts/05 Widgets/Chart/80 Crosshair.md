@@ -41,6 +41,55 @@ To enable the crosshair, set the **crosshair**.[enabled](/api-reference/20%20Dat
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxCrosshair :enabled="true">
+                <DxLabel :visible="true"/>
+            </DxCrosshair>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCrosshair,
+        DxLabel
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCrosshair,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Crosshair,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Crosshair enabled={true}>
+                        <Label visible={true}/>
+                    </Crosshair>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 For information about all options of the crosshair and its labels, visit the [crosshair](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/crosshair/') section of the API reference.

@@ -126,7 +126,7 @@ Below is a generalized **CustomStore** configuration for the **TreeList** widget
 #####Vue
 
     <template>
-        <dx-tree-list ... 
+        <DxTreeList ... 
             :data-source="dataSource"
             :remote-operations="remoteOperations" />
     </template>

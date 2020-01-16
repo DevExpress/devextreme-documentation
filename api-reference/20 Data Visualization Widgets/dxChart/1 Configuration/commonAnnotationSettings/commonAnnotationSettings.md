@@ -69,11 +69,11 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-chart ... >
-            <dx-common-annotation-settings
+        <DxChart ... >
+            <DxCommonAnnotationSettings
                 :tooltip-enabled="false"
             />
-        </dx-chart>
+        </DxChart>
     </template>
 
     <script>

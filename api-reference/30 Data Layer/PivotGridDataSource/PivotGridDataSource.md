@@ -150,7 +150,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

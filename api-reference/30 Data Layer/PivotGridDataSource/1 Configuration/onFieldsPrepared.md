@@ -62,7 +62,7 @@ All [field configurations](/api-reference/30%20Data%20Layer/PivotGridDataSource/
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

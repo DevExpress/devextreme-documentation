@@ -41,9 +41,9 @@ The following example shows how to specify the adaptive column's [width](/api-re
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column type="adaptive" :width="50" />
-        </dx-data-grid>
+        <DxDataGrid ... >
+            <DxColumn type="adaptive" :width="50" />
+        </DxDataGrid>
     </template>
 
     <script>
@@ -159,8 +159,8 @@ If a command column should have custom content, specify the column's [cellTempla
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column
+        <DxDataGrid ... >
+            <DxColumn
                 type="selection"
                 cell-template="selectionCellTemplate"
                 header-cell-template="selectionHeaderCellTemplate"
@@ -171,7 +171,7 @@ If a command column should have custom content, specify the column's [cellTempla
             <template #selectionHeaderCellTemplate="{ data }">
                 <!-- Declare custom header content here -->
             </template>
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>

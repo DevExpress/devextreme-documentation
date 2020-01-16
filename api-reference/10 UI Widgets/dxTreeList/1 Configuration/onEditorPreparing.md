@@ -143,9 +143,9 @@ Use this function to:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-tree-list ...
+            <DxTreeList ...
                 @editor-preparing="overrideOnValueChanged">
-            </dx-tree-list>
+            </DxTreeList>
         </template>
 
         <script>
@@ -298,9 +298,9 @@ Use this function to:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-tree-list ...
+            <DxTreeList ...
                 @editor-preparing="replaceEditor">
-            </dx-tree-list>
+            </DxTreeList>
         </template>
 
         <script>

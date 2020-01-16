@@ -80,14 +80,14 @@ In the following code, only odd numbers are considered valid:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-number-box :value="3">
-            <dx-validator>
-                <dx-custom-rule
+        <DxNumberBox :value="3">
+            <DxValidator>
+                <DxCustomRule
                     :validation-callback="validateNumber"
                     message="An odd number is expected"
                 />
-            </dx-validator>
-        </dx-number-box>
+            </DxValidator>
+        </DxNumberBox>
     </template>
 
     <script>

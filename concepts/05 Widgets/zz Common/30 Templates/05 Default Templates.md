@@ -93,15 +93,15 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list>
-            <dx-item text="Apples" :disabled="true" />
-            <dx-item text="Lemons" :visible="false" />
-            <dx-item>
+        <DxList>
+            <DxItem text="Apples" :disabled="true" />
+            <DxItem text="Lemons" :visible="false" />
+            <DxItem>
                 <template #default>
                     <i>Oranges</i>
                 </template>
-            </dx-item>
-        </dx-list>
+            </DxItem>
+        </DxList>
     </template>
 
     <script>

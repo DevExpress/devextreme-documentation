@@ -95,16 +95,16 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
     <!--tab: App.vue-->
     <template>
         <div>
-            <dx-drop-down-box
+            <DxDropDownBox
                 :value.sync="selectedFruit"
                 :opened.sync="isDropDownBoxOpened"
                 :data-source="dataSource">
-                <dx-list
+                <DxList
                     :data-source="dataSource"
                     selection-mode="single"
                     @selection-changed="changeDropDownBoxValue($event)">
-                </dx-list>
-            </dx-drop-down-box>
+                </DxList>
+            </DxDropDownBox>
         </div>
     </template>
 
@@ -279,21 +279,21 @@ If your data is an array of objects, specify:
     <!--tab: App.vue-->
     <template>
         <div>
-            <dx-drop-down-box
+            <DxDropDownBox
                 :value.sync="selectedCustomers"
                 :opened.sync="isDropDownBoxOpened"
                 :data-source="customerDataSource"
                 value-expr="ID"
                 display-expr="companyName">
-                <dx-data-grid
+                <DxDataGrid
                     :data-source="customerDataSource"
                     :columns="['companyName', 'city', 'phone']"
                     :height="265"
                     :selected-row-keys.sync="selectedCustomers"
                     @selection-changed="closeDropDownBox($event)">
-                    <dx-selection mode="single"/>
-                </dx-data-grid>
-            </dx-drop-down-box>
+                    <DxSelection mode="single"/>
+                </DxDataGrid>
+            </DxDropDownBox>
         </div>
     </template>
 

@@ -60,11 +60,11 @@ The following code shows how to use the **customizeItems** function to sort lege
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-{widget-name} ... >
-            <dx-legend
+        <Dx{WidgetName} ... >
+            <DxLegend
                 :customize-items="sortLegendItems"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

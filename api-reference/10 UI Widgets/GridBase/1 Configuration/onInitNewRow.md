@@ -107,13 +107,13 @@ In the following code, the **onInitNewRow** function is used to provide default 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :data-source="employees"
             @init-new-row="initNewRow($event)">
-            <dx-column data-field="ID" />
-            <dx-column data-field="hireDate" data-type="date" />
-            <dx-column data-field="position" />
-        </dx-{widget-name}>
+            <DxColumn data-field="ID" />
+            <DxColumn data-field="hireDate" data-type="date" />
+            <DxColumn data-field="position" />
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

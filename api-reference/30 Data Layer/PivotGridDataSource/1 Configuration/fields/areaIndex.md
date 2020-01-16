@@ -77,7 +77,7 @@ Specifies the field's order among the other fields in the same area. Corresponds
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

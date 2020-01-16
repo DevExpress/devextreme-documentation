@@ -59,7 +59,7 @@ For more information on the stateful mode, refer to the [useSelectMode](/api-ref
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-button
+        <DxDropDownButton
             <!-- text="Sandra Johnson" -->
             <!-- icon="user" -->
             <!-- @item-click="logAction" -->

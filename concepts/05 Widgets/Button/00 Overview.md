@@ -48,7 +48,7 @@ The following code adds a simple **Button** to your page.
 ##### Vue
 
     <template>
-        <dx-button
+        <DxButton
             text="Click me"
             @click="okClicked" />
     </template>

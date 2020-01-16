@@ -124,9 +124,9 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             @context-menu-preparing="addMenuItems">
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

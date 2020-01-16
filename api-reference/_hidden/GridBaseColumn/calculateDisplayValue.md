@@ -54,12 +54,12 @@ This option accepts the name of the [data source field](/api-reference/10%20UI%2
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name}>
-            <dx-column          
+        <Dx{WidgetName}>
+            <DxColumn          
                 data-field="countryID" <!-- provides values for editing -->
                 calculate-display-value="country"> <!-- provides display values -->  
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>
@@ -174,12 +174,12 @@ This option accepts the name of the [data source field](/api-reference/10%20UI%2
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name}>
-            <dx-column       
+        <Dx{WidgetName}>
+            <DxColumn       
                 data-field="countryID" <!-- provides values for editing -->
                 :calculate-display-value="getCountryWithCapital" <!-- combines display values -->
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

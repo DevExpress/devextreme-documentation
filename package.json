@@ -5,7 +5,7 @@
   "version": "18.2.0",
   "devDependencies": {
     "pre-commit": "^1.2.2",
-    "devextreme-internal-tools": "latest"
+    "devextreme-internal-tools": "default"
   },
   "scripts": {
     "update-links-fail-on-change": "dx-tools update-links --fail-on-change",

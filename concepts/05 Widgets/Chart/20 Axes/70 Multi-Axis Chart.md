@@ -42,6 +42,55 @@ Declare several objects in the [valueAxis](/api-reference/20%20Data%20Visualizat
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxValueAxis name="absoluteAxis"/>
+                <DxValueAxis name="percentageAxis"/>
+                <!-- ... -->
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart, {
+            DxValueAxis
+            // ...
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxValueAxis
+                // ...
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            ValueAxis
+            // ...
+        } from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <Chart ... >
+                        <ValueAxis name="absoluteAxis"/>
+                        <ValueAxis name="percentageAxis"/>
+                        {/* ... */}
+                    </Chart>
+                );
+            }
+        }
+
+        export default App;
+
     ---
 
 2. **Bind series to value axes**        
@@ -87,6 +136,61 @@ Bind each series to a value axis using the [axis](/api-reference/20%20Data%20Vis
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxSeries axis="percentageAxis"/>
+                <DxSeries axis="percentageAxis"/>
+                <DxSeries>
+                    <!-- This series will be automatically bound to the 'absoluteAxis' -->
+                </DxSeries>
+                <!-- ... -->
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart, {
+            DxSeries
+            // ...
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxSeries
+                // ...
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            Series
+            // ...
+        } from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <Chart ... >
+                        <Series axis="percentageAxis"/>
+                        <Series axis="percentageAxis"/>
+                        <Series>
+                            {/* This series will be automatically bound to the 'absoluteAxis' */}
+                        </Series>
+                        {/* ... */}
+                    </Chart>
+                );
+            }
+        }
+
+        export default App;
 
     ---
 
@@ -137,6 +241,64 @@ All value axes in the **Chart** are synchronized by default, but you can explici
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxValueAxis
+                :synchronized-value="0"
+                name="absoluteAxis"
+            />
+            <DxValueAxis
+                :synchronized-value="0"
+                :multiple-axes-spacing="10"
+                name="percentageAxis"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxValueAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxValueAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ValueAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ValueAxis
+                        name="absoluteAxis"
+                        synchronizedValue={0}
+                    />
+                    <ValueAxis
+                        name="percentageAxis"
+                        synchronizedValue={0}
+                        multipleAxesSpacing={10}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

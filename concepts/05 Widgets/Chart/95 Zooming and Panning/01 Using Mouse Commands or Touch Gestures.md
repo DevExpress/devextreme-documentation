@@ -41,6 +41,54 @@ Zooming and panning are configured in the [zoomAndPan](/api-reference/20%20Data%
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxZoomAndPan
+                argument-axis="both"
+                value-axis="both"
+            /> <!-- or "zoom" | "pan" | "none" -->
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxZoomAndPan
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxZoomAndPan
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ZoomAndPan
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ZoomAndPan
+                        argumentAxis="both"
+                        valueAxis="both"
+                    /> {/* or "zoom" | "pan" | "none" */}
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -89,6 +137,58 @@ Users can zoom the chart using the drag gesture (area selection) if you enable t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxZoomAndPan
+                :drag-to-zoom="true"
+                pan-key="ctrl"
+                argument-axis="both"
+                value-axis="both"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxZoomAndPan
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxZoomAndPan
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ZoomAndPan
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ZoomAndPan
+                        dragToZoom={true}
+                        panKey="ctrl"
+                        argumentAxis="both"
+                        valueAxis="both"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

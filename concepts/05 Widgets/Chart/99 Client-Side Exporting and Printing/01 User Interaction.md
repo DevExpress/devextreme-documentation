@@ -40,6 +40,54 @@ You can enable both exporting and printing by setting the [export](/api-referenc
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxExport
+                :enabled="true"
+                :printing-enabled="false"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxExport
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxExport
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Export
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Export
+                        enabled={true}
+                        printingEnabled={false}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you want to restrict the set of formats available for exporting, change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/#formats') array. You can also specify the default name for the exported file using the [fileName](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/#fileName') option.
@@ -81,6 +129,56 @@ If you want to restrict the set of formats available for exporting, change the *
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxExport
+                :enabled="true"
+                :formats="['PNG', 'JPEG']"
+                file-name="exported_chart"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxExport
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxExport
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Export
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Export
+                        enabled={true}
+                        formats={['PNG', 'JPEG']}
+                        fileName="exported_chart"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

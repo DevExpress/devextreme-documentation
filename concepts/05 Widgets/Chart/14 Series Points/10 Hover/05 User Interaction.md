@@ -96,14 +96,8 @@ Note that individual settings override type-specific settings which, in turn, ov
                 </DxPoint>
             </DxSeries>
             <DxCommonSeriesSettings
+                :area="areaOptions"
                 ...
-                :area="{
-                    point: {
-                        hoverStyle: {
-                            /* middle priority */
-                        }
-                    }
-                }"
             >
                 <DxPoint ... >
                     <DxHoverStyle>
@@ -121,6 +115,14 @@ Note that individual settings override type-specific settings which, in turn, ov
         DxPoint,
         DxHoverStyle
     } from 'devextreme-vue/chart';
+
+    const areaOptions = {
+        point: {
+            hoverStyle: {
+                /* middle priority */
+            }
+        }
+    };
 
     export default {
         components: {
@@ -144,6 +146,14 @@ Note that individual settings override type-specific settings which, in turn, ov
         HoverStyle
     } from 'devextreme-react/chart';
 
+    const areaOptions = {
+        point: {
+            hoverStyle: {
+                /* middle priority */
+            }
+        }
+    };
+
     class App extends React.Component {
         render() {
             return (
@@ -156,14 +166,8 @@ Note that individual settings override type-specific settings which, in turn, ov
                         </Point>
                     </Series>
                     <CommonSeriesSettings
+                        area={areaOptions}
                         ...
-                        area={{
-                            point: {
-                                hoverStyle: {
-                                    /* middle priority */
-                                }
-                            }
-                        }}
                     >
                         <Point ... >
                             <HoverStyle>

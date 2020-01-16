@@ -74,14 +74,8 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
                     <!-- Settings for all points of an individual series -->
                 </DxPoint>
             </DxSeries>
-            <DxCommonSeriesSettings
-                ...
-                :stackedline="{ // or any other series type
-                    point: {
-                        /* Settings for all points belonging to Stacked Line series */
-                    }
-                }"
-            >
+            <DxCommonSeriesSettings ...
+                :stackedline="stackedlineOptions"> <!-- or any other series type -->
                 <DxPoint ... >
                     <!-- Settings for all points of all series -->
                 </DxPoint>
@@ -95,6 +89,12 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
         DxSeries,
         DxPoint
     } from 'devextreme-vue/chart';
+
+    const stackedlineOptions = {
+        point: {
+            /* Settings for all points belonging to Stacked Line series */
+        }
+    };
 
     export default {
         components: {
@@ -116,6 +116,12 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
         Point
     } from 'devextreme-react/chart';
 
+    const stackedlineOptions = {
+        point: {
+            /* Settings for all points belonging to Stacked Line series */
+        }
+    };
+
     class App extends React.Component {
         render() {
             return (
@@ -125,14 +131,8 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
                             {/* Settings for all points of an individual series */}
                         </Point>
                     </Series>
-                    <CommonSeriesSettings
-                        ...
-                        stackedline={{ // or any other series type
-                            point: {
-                                /* Settings for all points belonging to Stacked Line series */
-                            }
-                        }}
-                    >
+                    <CommonSeriesSettings ...
+                        stackedline={stackedlineOptions}> {/* or any other series type */}
                         <Point ... >
                             {/* Settings for all points of all series */}
                         </Point>

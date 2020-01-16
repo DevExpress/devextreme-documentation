@@ -97,14 +97,8 @@ Note that individual settings override type-specific settings which, in turn, ov
                 </DxPoint>
             </DxSeries>
             <DxCommonSeriesSettings
+                :area="areaOptions"
                 ...
-                :area="{
-                    point: {
-                        selectionStyle: {
-                            /* middle priority */
-                        }
-                    }
-                }"
             >
                 <DxPoint ... >
                     <DxSelectionStyle>
@@ -122,6 +116,14 @@ Note that individual settings override type-specific settings which, in turn, ov
         DxPoint,
         DxSelectionStyle
     } from 'devextreme-vue/chart';
+
+    const areaOptions = {
+        point: {
+            selectionStyle: {
+                /* middle priority */
+            }
+        }
+    };
 
     export default {
         components: {
@@ -145,6 +147,14 @@ Note that individual settings override type-specific settings which, in turn, ov
         SelectionStyle
     } from 'devextreme-react/chart';
 
+    const areaOptions = {
+        point: {
+            selectionStyle: {
+                /* middle priority */
+            }
+        }
+    };
+
     class App extends React.Component {
         render() {
             return (
@@ -157,14 +167,8 @@ Note that individual settings override type-specific settings which, in turn, ov
                         </Point>
                     </Series>
                     <CommonSeriesSettings
+                        area={areaOptions}
                         ...
-                        area={{
-                            point: {
-                                selectionStyle: {
-                                    /* middle priority */
-                                }
-                            }
-                        }}
                     >
                         <Point ... >
                             <SelectionStyle>

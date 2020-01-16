@@ -63,7 +63,7 @@ Assign the array to the [items](/api-reference/10%20UI%20Widgets/dxButtonGroup/1
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-button-group
+        <DxButtonGroup
             :items="fontStyles"
             key-expr="style"
         />

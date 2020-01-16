@@ -51,13 +51,13 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column type="buttons">
-                <dx-button name="save" css-class="my-class" />
-                <dx-button name="edit" />
-                <dx-button name="delete" />
-            </dx-column>
-        </dx-data-grid>
+        <DxDataGrid ... >
+            <DxColumn type="buttons">
+                <DxButton name="save" css-class="my-class" />
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>

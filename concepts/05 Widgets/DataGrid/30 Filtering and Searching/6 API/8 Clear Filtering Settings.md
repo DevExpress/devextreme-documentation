@@ -33,7 +33,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Widgets/GridBase/3%20Meth
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-data-grid ... 
+        <DxDataGrid ... 
             :ref="gridRefKey"
         />       
     </template>

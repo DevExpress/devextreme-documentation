@@ -235,17 +235,17 @@ The following code configures the example above and shows how to set the describ
     <template>
         <div id="app-container">
             <p>View's content</p>
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Copy to clipboard"
                 icon="ion ion-md-copy"
                 @click="showNotification('Copied to clipboard')"
             />
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Send by email"
                 icon="ion ion-md-mail"
                 @click="showNotification('Sent by email')"
             />
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Share on Facebook"
                 icon="ion ion-logo-facebook"
                 @click="showNotification('Shared on Facebook')"

@@ -74,15 +74,15 @@ Specifies the legend title's font options.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-legend>
-                <dx-title ... >
-                    <dx-font
+        <Dx{WidgetName} ... >
+            <DxLegend>
+                <DxTitle ... >
+                    <DxFont
                         color="black"
                     />
-                </dx-title>
-            </dx-legend>
-        </dx-{widget-name}>
+                </DxTitle>
+            </DxLegend>
+        </Dx{WidgetName}>
     </template>
 
     <script>

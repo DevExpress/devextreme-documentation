@@ -69,12 +69,12 @@ To make your gauge "live", enable animation for it by setting the **enabled** op
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-animation
+        <Dx{WidgetName} ... >
+            <DxAnimation
                 easing="linear"
                 :duration="500"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

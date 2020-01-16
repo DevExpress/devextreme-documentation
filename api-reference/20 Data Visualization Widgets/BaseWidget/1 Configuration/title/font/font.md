@@ -70,13 +70,13 @@ Specifies font options for the title.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-title ... >
-                <dx-font
+        <Dx{WidgetName} ... >
+            <DxTitle ... >
+                <DxFont
                     color="black"
                 />
-            </dx-title>
-        </dx-{widget-name}>
+            </DxTitle>
+        </Dx{WidgetName}>
     </template>
 
     <script>

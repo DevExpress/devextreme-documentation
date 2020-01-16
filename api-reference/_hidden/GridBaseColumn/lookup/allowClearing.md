@@ -74,10 +74,10 @@ To specify this option based on a condition, set the [showClearButton](/api-refe
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :on-editor-preparing="onEditorPreparing">
             <!-- ... -->
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

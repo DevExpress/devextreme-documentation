@@ -69,7 +69,7 @@ You can use the following code to create a **DropDownButton**:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-button
+        <DxDropDownButton
             <!-- Configuration goes here -->
         />
     </template>

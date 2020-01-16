@@ -152,7 +152,7 @@ Use one of the following extensions to enable the server to process data accordi
 
         <!-- tab: App.vue -->
         <template> 
-            <dx-tree-map ...
+            <DxTreeMap ...
                 :data-source="store" />
         </template>
 

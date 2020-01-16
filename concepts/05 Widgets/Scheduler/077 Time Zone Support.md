@@ -76,7 +76,7 @@ Add the following code to allow users to change an appointment's time zone:
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-scheduler ...
+        <DxScheduler ...
             @appointment-form-opening="showTimeZoneFields"
         />
     </template>

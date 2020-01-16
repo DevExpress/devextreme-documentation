@@ -57,16 +57,16 @@ A widget's **format** option is compatible with the `options` parameter of the <
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column
+        <DxDataGrid ... >
+            <DxColumn
                 data-field="OrderDate"
                 :format="orderDateFormat"
             />
-            <dx-column
+            <DxColumn
                 data-field="SaleAmount"
                 :format="saleAmountFormat">
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>

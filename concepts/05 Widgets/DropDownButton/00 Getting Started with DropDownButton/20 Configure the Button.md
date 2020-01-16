@@ -23,7 +23,7 @@ Specify the button's [text](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-button
+        <DxDropDownButton
             text="Sandra Johnson"
             icon="user"
         />

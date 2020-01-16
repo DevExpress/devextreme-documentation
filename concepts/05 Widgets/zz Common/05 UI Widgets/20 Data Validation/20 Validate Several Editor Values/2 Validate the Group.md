@@ -163,19 +163,19 @@ Call a group's [validate()](/api-reference/10%20UI%20Widgets/dxValidator/3%20Met
 
     <!-- tab: App.vue -->
     <template>
-        <!-- <dx-validation-group> -->
-            <dx-text-box :value.sync="login" placeholder="Login">
-                <dx-validator>
+        <!-- <DxValidationGroup> -->
+            <DxTextBox :value.sync="login" placeholder="Login">
+                <DxValidator>
                     <!-- Login validation rules are configured here -->
-                </dx-validator>
-            </dx-text-box>
-            <dx-text-box :value.sync="password" placeholder="Password">
-                <dx-validator>
+                </DxValidator>
+            </DxTextBox>
+            <DxTextBox :value.sync="password" placeholder="Password">
+                <DxValidator>
                     <!-- Password validation rules are configured here -->
-                </dx-validator>
-            </dx-text-box>
-            <dx-button text="Sign in" @click="signIn" />
-        <!-- </dx-validation-group> -->
+                </DxValidator>
+            </DxTextBox>
+            <DxButton text="Sign in" @click="signIn" />
+        <!-- </DxValidationGroup> -->
     </template>
 
     <script>
@@ -393,22 +393,22 @@ Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-validation-group
+            <DxValidationGroup
                 :ref="groupRefKey">
-                <dx-text-box>
-                    <dx-validator>
-                        <dx-required-rule />
-                    </dx-validator>
-                </dx-text-box>
+                <DxTextBox>
+                    <DxValidator>
+                        <DxRequiredRule />
+                    </DxValidator>
+                </DxTextBox>
 
-                <dx-text-box>
-                    <dx-validator>
-                        <dx-required-rule />
-                    </dx-validator>
-                </dx-text-box>
-            </dx-validation-group>
+                <DxTextBox>
+                    <DxValidator>
+                        <DxRequiredRule />
+                    </DxValidator>
+                </DxTextBox>
+            </DxValidationGroup>
 
-            <dx-button
+            <DxButton
                 text="Sign in"
                 @click="validateGroup"
             />

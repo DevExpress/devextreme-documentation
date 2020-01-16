@@ -75,7 +75,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

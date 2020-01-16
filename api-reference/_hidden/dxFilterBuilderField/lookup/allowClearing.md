@@ -74,10 +74,10 @@ If you need to specify this option based on a condition, set the [showClearButto
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :on-editor-preparing="onEditorPreparing">
             <!-- ... -->
-        </dx-{widget-name}>
+        </Dx{WidgetName>
     </template>
 
     <script>

@@ -5,12 +5,12 @@
   "version": "20.1.0",
   "devDependencies": {
     "pre-commit": "^1.2.2",
-    "devextreme-internal-tools": "1.2-latest"
+    "devextreme-internal-tools": "latest"
   },
   "scripts": {
-    "update-links-fail-on-change": "dx-tools link-updater --fail-on-change",
-    "update-all-links": "dx-tools link-updater --check-all",
-    "update-links": "dx-tools link-updater",
+    "update-links-fail-on-change": "dx-tools update-links --fail-on-change",
+    "update-all-links": "dx-tools update-links --check-all",
+    "update-links": "dx-tools update-links",
     "generate-content-map": "dx-tools generate-content-map"
   },
   "pre-commit": "update-links-fail-on-change"

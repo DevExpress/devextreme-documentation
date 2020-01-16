@@ -1,3 +1,65 @@
+To retrieve the keys of all selected nodes, call the [getSelectedNodesKeys()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getSelectedNodesKeys().md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#getSelectedNodesKeys').
+
+---
+##### jQuery
+
+    <!--JavaScript-->$("#treeViewContainer").dxTreeView("instance").getSelectedNodesKeys();
+
+##### Angular
+
+    <!--TypeScript-->
+    import { ..., ViewChild } from "@angular/core";
+    import { DxTreeViewModule, DxTreeViewComponent } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        @ViewChild(DxTreeViewComponent, { static: false }) treeView: DxTreeViewComponent;
+        // Prior to Angular 8
+        // @ViewChild(DxTreeViewComponent) treeView: DxTreeViewComponent;
+        getSelectedNodesKeys() {
+            return this.treeView.instance.getSelectedNodesKeys();
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTreeViewModule
+        ],
+        // ...
+    })
+    
+---
+
+To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getSelectedNodes().md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#getSelectedNodes').
+
+---
+##### jQuery
+
+    <!--JavaScript-->$("#treeViewContainer").dxTreeView("instance").getSelectedNodes();
+
+##### Angular
+
+    <!--TypeScript-->
+    import { ..., ViewChild } from "@angular/core";
+    import { DxTreeViewModule, DxTreeViewComponent } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        @ViewChild(DxTreeViewComponent, { static: false }) treeView: DxTreeViewComponent;
+        // Prior to Angular 8
+        // @ViewChild(DxTreeViewComponent) treeView: DxTreeViewComponent;
+        getSelectedNodes() {
+            return this.treeView.instance.getSelectedNodes();
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTreeViewModule
+        ],
+        // ...
+    })
+    
+---
+
 To select or cancel the selection of a node programmatically, call the [selectItem(itemElement)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/selectItem(itemElement).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#selectItemitemElement') or [unselectItem(itemElement)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/unselectItem(itemElement).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#unselectItemitemElement') method passing the key of the node as a parameter.
 
 ---

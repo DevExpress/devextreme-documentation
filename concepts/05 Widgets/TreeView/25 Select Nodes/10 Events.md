@@ -3,6 +3,9 @@ The **TreeView** raises the following selection-related events:
 - [itemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/itemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#itemSelectionChanged')            
 Raised after a node's selection state changes.
 
+- [selectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectionChanged')            
+Raised after the tree view's selection state changes.
+
 - [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectAllValueChanged')          
 Raised after the "Select All" check box's state changes.
 
@@ -16,6 +19,9 @@ You can handle these events with functions. Assign the handling functions to the
             onItemSelectionChanged: function (e) {
                 // Handler of the "itemSelectionChanged" event
             },
+            onSelectionChanged: function (e) {
+                // Handler of the "selectionChanged" event
+            },            
             onSelectAllValueChanged: function (e) {
                 // Handler of the "selectAllValueChanged" event
             }
@@ -27,6 +33,7 @@ You can handle these events with functions. Assign the handling functions to the
     <!--HTML-->
     <dx-tree-view ...
         (onItemSelectionChanged)="onItemSelectionChanged($event)"
+        (onSelectionChanged)="onSelectionChanged($event)"
         (onSelectAllValueChanged)="onSelectAllValueChanged($event)>
     </dx-tree-view>
 
@@ -37,6 +44,9 @@ You can handle these events with functions. Assign the handling functions to the
         onItemSelectionChanged (e) {
             // Handler of the "itemSelectionChanged" event
         }
+        onSelectionChanged (e) {
+            // Handler of the "selectionChanged" event
+        }        
         onSelectAllValueChanged (e) {
             // Handler of the "selectAllValueChanged" event
         }

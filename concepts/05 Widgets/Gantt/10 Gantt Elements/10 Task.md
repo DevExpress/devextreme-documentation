@@ -81,36 +81,32 @@ The list below provides the main members that affect task appearance and functio
 
 - [allowSelection](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#allowSelection) - Specifies whether users can select tasks.
 
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            allowSelection: false
+        $(function() {
+            $("#gantt").dxGantt({
+                allowSelection: false
+            });
         });
-    });
 
 - [scaleType](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#scaleType) - Specifies the zoom level of tasks in the **Gantt** chart.
 
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            scaleType: 'hours'
-        });
-    });  
+        $(function() {
+            $("#gantt").dxGantt({
+                scaleType: 'hours'
+            });
+        });  
 
 - [showResources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources) - Specifies whether to display task resources.
 
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            showResources: false
-        });
-    });  
+        $(function() {
+            $("#gantt").dxGantt({
+                showResources: false
+            });
+        });  
 
 - [taskTitlePosition](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#taskTitlePosition) - Specifies a task's title position.
 
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            taskTitlePosition: 'none'
+        $(function() {
+            $("#gantt").dxGantt({
+                taskTitlePosition: 'none'
+            });
         });
-    });

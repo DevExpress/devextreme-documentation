@@ -54,7 +54,7 @@ If you need to change the text displayed by point labels, declare the [customize
             <DxSeries>
                 <DxLabel
                     :visible="true"
-                    :customizeText="customizeText"
+                    :customize-text="customizeText"
                 />
             </DxSeries>
         </DxChart>

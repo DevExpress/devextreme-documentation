@@ -53,6 +53,68 @@ To configure the strips, declare the [strips](/api-reference/20%20Data%20Visuali
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis ... >
+                <DxStrip :start-value="100" :end-value="150" color="yellow"/>
+                <DxStrip :start-value="50" :end-value="70" color="orange"/>
+            </DxArgumentAxis>
+            <DxValueAxis ... >
+                <DxStrip :start-value="40" :end-value="50" color="blue"/>
+                <DxStrip :start-value="70" color="red"/>
+            </DxValueAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxValueAxis,
+        DxStrip
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxValueAxis,
+            DxStrip
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        ValueAxis,
+        Strip
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis ... >
+                        <Strip startValue={100} endValue={150} color="yellow" />
+                        <Strip startValue={50} endValue={70} color="orange" />
+                    </ArgumentAxis>
+                    <ValueAxis ... >
+                        <Strip startValue={40} endValue={50} color="blue" />
+                        <Strip startValue={70} color="red" />
+                    </ValueAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If several strips should have a uniform style, you can specify it using one of the following objects.
@@ -137,6 +199,100 @@ Note that individual settings override axis-specific settings which, in turn, ov
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis ... >
+                <DxStrip ... >
+                    <!-- high priority -->
+                </DxStrip>
+                <DxStripStyle ... >
+                    <!-- middle priority -->
+                </DxStripStyle>
+            </DxArgumentAxis>
+            <DxValueAxis ... >
+                <DxStrip ... >
+                    <!-- high priority -->
+                </DxStrip>
+                <DxStripStyle ... >
+                    <!-- middle priority -->
+                </DxStripStyle>
+            </DxValueAxis>
+            <DxCommonAxisSettings>
+                <DxStripStyle ... >
+                    <!-- low priority -->
+                </DxStripStyle>
+            </DxCommonAxisSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonAxisSettings,
+        DxArgumentAxis,
+        DxValueAxis,
+        DxStrip,
+        DxStripStyle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonAxisSettings,
+            DxArgumentAxis,
+            DxValueAxis,
+            DxStrip,
+            DxStripStyle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonAxisSettings,
+        ArgumentAxis,
+        ValueAxis,
+        Strip,
+        StripStyle
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis ... >
+                        <Strip ... >
+                            {/* high priority */}
+                        </Strip>
+                        <StripStyle ... >
+                            {/* middle priority */}
+                        </StripStyle>
+                    </ArgumentAxis>
+                    <ValueAxis ... >
+                        <Strip ... >
+                            {/* high priority */}
+                        </Strip>
+                        <StripStyle ... >
+                            {/* middle priority */}
+                        </StripStyle>
+                    </ValueAxis>
+                    <CommonAxisSettings>
+                        <StripStyle ... >
+                            {/* low priority */}
+                        </StripStyle>
+                    </CommonAxisSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

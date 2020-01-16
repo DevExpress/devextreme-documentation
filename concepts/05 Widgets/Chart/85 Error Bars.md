@@ -52,6 +52,80 @@ Error bars can be generated either from concrete or calculated values. To genera
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            :data-source="chartDataSource"
+            ...
+        >
+            <DxSeries ... >
+                <DxValueErrorBar
+                    high-value-field="highError"
+                    low-value-field="lowError"
+                />
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxValueErrorBar
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxValueErrorBar
+        },
+        data() {
+            return {
+                chartDataSource: [
+                    { arg: 1, val: 200, highError: 5, lowError: 3 },
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        ValueErrorBar
+    } from 'devextreme-react/chart';
+
+    const chartDataSource = [
+        { arg: 1, val: 200, highError: 5, lowError: 3 },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    dataSource={chartDataSource}
+                    ...
+                >
+                    <Series ... >
+                        <ValueErrorBar
+                            highValueField="highError"
+                            lowValueField="lowError"
+                        />
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Alternatively, error bar values can be calculated according to an algorithm. In this case, choose the needed algorithm using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/#type') option and specify the value to be used in calculation using the [value](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/value.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/#value') option.
@@ -97,6 +171,61 @@ Alternatively, error bar values can be calculated according to an algorithm. In 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries ... >
+                <DxValueErrorBar
+                    :value="5"
+                    type="percent"
+                />
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxValueErrorBar
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxValueErrorBar
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        ValueErrorBar
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <ValueErrorBar
+                            value={5}
+                            type="percent"
+                        />
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If error bars should have uniform settings, you can specify them using one of the following objects.
@@ -121,11 +250,6 @@ Note that settings for individual series override type-specific settings which, 
                 }
             },
             commonSeriesSettings: {
-                line: {
-                    valueErrorBar: {
-                        // middle priority
-                    }
-                },
                 valueErrorBar: {
                     // low priority
                 }
@@ -142,11 +266,6 @@ Note that settings for individual series override type-specific settings which, 
             </dxo-value-error-bar>
         </dxi-series>
         <dxo-common-series-settings>
-            <dxo-line>
-                <dxo-value-error-bar>
-                    <!-- middle priority -->
-                </dxo-value-error-bar>
-            </dxo-line>
             <dxo-value-error-bar>
                 <!-- low priority -->
             </dxo-value-error-bar>
@@ -166,6 +285,74 @@ Note that settings for individual series override type-specific settings which, 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries ... >
+                <DxValueErrorBar ... >
+                    <!-- high priority -->
+                </DxValueErrorBar>
+            </DxSeries>
+
+            <DxCommonSeriesSettings ... >
+                <DxValueErrorBar ... >
+                    <!-- low priority -->
+                </DxValueErrorBar>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings,
+        DxValueErrorBar
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings,
+            DxValueErrorBar
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings,
+        ValueErrorBar
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <ValueErrorBar ... >
+                            {/* high priority */}
+                        </ValueErrorBar>
+                    </Series>
+
+                    <CommonSeriesSettings ... >
+                        <ValueErrorBar ... >
+                            {/* low priority */}
+                        </ValueErrorBar>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -154,7 +154,7 @@ Below is a generalized **CustomStore** configuration for the **DataGrid** widget
 #####Vue
 
     <template>
-        <dx-data-grid ... 
+        <DxDataGrid ... 
             :data-source="dataSource"
             :remote-operations="remoteOperations" />
     </template>

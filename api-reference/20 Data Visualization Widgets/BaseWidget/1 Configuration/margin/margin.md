@@ -73,14 +73,14 @@ Generates space around the widget.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-margin
+        <Dx{WidgetName} ... >
+            <DxMargin
                 :top="20"
                 :bottom="20"
                 :left="30"
                 :right="30"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

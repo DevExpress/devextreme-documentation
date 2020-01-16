@@ -164,7 +164,7 @@ If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDr
 #####Vue
 
     <template>
-        <dx-select-box ... 
+        <DxSelectBox ... 
             :data-source="dataSource" />
     </template>
     <script>

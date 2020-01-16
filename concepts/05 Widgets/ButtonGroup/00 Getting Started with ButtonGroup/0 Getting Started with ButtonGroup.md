@@ -135,7 +135,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-button-group
+        <DxButtonGroup
             :items="fontStyles"
             key-expr="style"
             selection-mode="multiple"

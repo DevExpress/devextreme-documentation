@@ -79,16 +79,16 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: App.vue -->
     <template>
-        <dx-chart ... >
-            <dx-annotation
+        <DxChart ... >
+            <DxAnnotation
                 type="text"
                 text="Annotation text"
             />
-            <dx-annotation
+            <DxAnnotation
                 type="image"
                 image="http://image/url/myimage.png"
             />
-        </dx-chart>
+        </DxChart>
     </template>
 
     <script>

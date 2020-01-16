@@ -183,15 +183,15 @@ Strings, numbers, dates, and currencies are now automatically localized and form
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column data-field="price">
+        <DxDataGrid ... >
+            <DxColumn data-field="price">
                 <!-- Specifying a currency in a format definition -->
-                <dx-format
+                <DxFormat
                     type="currency"
                     currency="RUB"
                 />
-            </dx-column>
-        </dx-data-grid>
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>

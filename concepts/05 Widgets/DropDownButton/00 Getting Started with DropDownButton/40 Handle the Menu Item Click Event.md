@@ -33,7 +33,7 @@ Assign a function to the [onItemClick](/api-reference/10%20UI%20Widgets/dxDropDo
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-button ...
+        <DxDropDownButton ...
             @item-click="logAction"
         />
     </template>

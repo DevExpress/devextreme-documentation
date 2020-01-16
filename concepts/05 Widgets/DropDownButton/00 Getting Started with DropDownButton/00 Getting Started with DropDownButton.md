@@ -112,7 +112,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-button
+        <DxDropDownButton
             text="Sandra Johnson"
             icon="user"
             :items="actions"

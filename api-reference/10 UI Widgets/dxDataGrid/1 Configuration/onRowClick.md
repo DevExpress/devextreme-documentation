@@ -134,10 +134,10 @@ In the following code, the **onRowClick** function calls the [editRow](/api-refe
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             @row-click="startEdit">
-            <dx-editing mode="form" />
-        </dx-{widget-name}>
+            <DxEditing mode="form" />
+        </Dx{WidgetName}>
     </template>
 
     <script>

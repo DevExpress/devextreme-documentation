@@ -160,19 +160,19 @@ You can validate any group by calling its [validate()](/api-reference/10%20UI%20
 
     <!-- tab: App.vue -->
     <template>
-        <!-- <dx-validation-group name="loginGroup"> -->
-            <dx-text-box :value.sync="login" placeholder="Login">
-                <dx-validator>
+        <!-- <DxValidationGroup> -->
+            <DxTextBox :value.sync="login" placeholder="Login">
+                <DxValidator>
                     <!-- Login validation rules are configured here -->
-                </dx-validator>
-            </dx-text-box>
-            <dx-text-box :value.sync="password" placeholder="Password">
-                <dx-validator>
+                </DxValidator>
+            </DxTextBox>
+            <DxTextBox :value.sync="password" placeholder="Password">
+                <DxValidator>
                     <!-- Password validation rules are configured here -->
-                </dx-validator>
-            </dx-text-box>
-            <dx-button text="Sign in" @click="signIn" />
-        <!-- </dx-validation-group> -->
+                </DxValidator>
+            </DxTextBox>
+            <DxButton text="Sign in" @click="signIn" />
+        <!-- </DxValidationGroup> -->
     </template>
 
     <script>
@@ -295,4 +295,119 @@ Alternatively, you can validate a group using the [DevExpress.validationEngine.v
 
 Pass the group name instead of the instance if you have created widgets using jQuery.  
 
-    <!--JavaScript-->DevExpress.validationEngine.validateGroup("loginGroup");
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <dx-validation-group
+                :ref="groupRefKey">
+                <dx-text-box>
+                    <dx-validator>
+                        <dx-required-rule />
+                    </dx-validator>
+                </dx-text-box>
+
+                <dx-text-box>
+                    <dx-validator>
+                        <dx-required-rule />
+                    </dx-validator>
+                </dx-text-box>
+            </dx-validation-group>
+
+            <dx-button
+                text="Sign in"
+                @click="validateGroup"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTextBox from 'devextreme-vue/text-box';
+    import DxValidator, { DxRequiredRule } from 'devextreme-vue/validator';
+    import DxValidationGroup from 'devextreme-vue/validation-group';
+    import DxButton from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxTextBox,
+            DxValidator,
+            DxRequiredRule,
+            DxValidationGroup,
+            DxButton
+        },
+        data() {
+            groupRefKey: 'targetGroup'
+        },
+        methods: {
+            validateGroup() {
+                this.validationGroup.validate();
+            }
+        },
+        computed: {
+            validationGroup: function() {
+                return this.$refs[this.groupRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TextBox } from 'devextreme-react/text-box';
+    import { Button } from 'devextreme-react/button';
+    import { ValidationGroup } from 'devextreme-react/validation-group';
+    import {
+        Validator,
+        RequiredRule
+    } from 'devextreme-react/validator';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.validateGroup = this.validateGroup.bind(this);
+            this.validationGroup = null;
+        };
+        
+        validateGroup() {
+            this.validationGroup.instance.validate();
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                    <ValidationGroup
+                        ref={ref => this.validationGroup = ref}>
+                        <TextBox>
+                            <Validator>
+                                <RequiredRule />
+                            </Validator>
+                        </TextBox>
+
+                        <TextBox>
+                            <Validator>
+                                <RequiredRule />
+                            </Validator>
+                        </TextBox>
+
+                        <Button
+                            text="Sign in"
+                            onClick={this.validateGroup}
+                        />
+                    </ValidationGroup>
+                <React.Fragment>
+            );
+        }
+    }
+    export default App;
+
+---

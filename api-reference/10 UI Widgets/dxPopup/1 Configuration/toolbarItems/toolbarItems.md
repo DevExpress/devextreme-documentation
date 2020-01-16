@@ -116,18 +116,18 @@ In the following code, two items are defined on the toolbar: one is plain text, 
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-{widget-name} ... >
+        <Dx{WidgetName} ... >
             <p>{WidgetName} content</p>
-            <dx-toolbar-item 
+            <DxToolbarItem 
                 text="Title" 
                 location="before">
-            </dx-toolbar-item>
-            <dx-toolbar-item 
+            </DxToolbarItem>
+            <DxToolbarItem 
                 widget="dxButton" 
                 :options="buttonOptions" 
                 location="after">
-            </dx-toolbar-item>
-        <dx-{widget-name}>
+            </DxToolbarItem>
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

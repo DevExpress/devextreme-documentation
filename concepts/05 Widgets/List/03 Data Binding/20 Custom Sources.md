@@ -160,7 +160,7 @@ If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35
 #####Vue
 
     <template>
-        <dx-list ... 
+        <DxList ... 
             :data-source="dataSource" />
     </template>
     <script>

@@ -80,7 +80,7 @@ You can specify most of the [Calendar options](/api-reference/10%20UI%20Widgets/
 
     <!-- tab: App.vue -->
     <template>
-        <dx-date-box
+        <DxDateBox
             type="date"
             picker-type="calendar"
             :calendar-options="{

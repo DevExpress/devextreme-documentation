@@ -94,9 +94,9 @@ Returns only leaves' data objects.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-tree-list ...
+        <DxTreeList ...
             :ref="treeListRef">
-        <dx-tree-list>
+        </DxTreeList>
     </template>
 
     <script>

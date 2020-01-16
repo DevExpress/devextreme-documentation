@@ -49,8 +49,8 @@ Options to be applied.
 
     <template>
         <div>
-            <dx-{widget-name} id="{widgetName}1" />
-            <dx-{widget-name} id="{widgetName}2" />
+            <Dx{WidgetName} id="{widgetName}1" />
+            <Dx{WidgetName} id="{widgetName}2" />
         </div>
     </template>
     <script>

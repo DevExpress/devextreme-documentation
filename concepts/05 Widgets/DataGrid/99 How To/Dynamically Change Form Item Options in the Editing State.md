@@ -99,23 +99,23 @@ This handler is used to save the key of the row that enters the editing state, a
 
         <!-- tab: App.vue -->
         <template>
-            <dx-data-grid ...
+            <DxDataGrid ...
                 @editing-start="onEditingStart">
                 <!-- ... -->
-                <dx-column data-field="State" />       
-                <dx-column data-field="AddressRequired" :visible="false" />
-                <dx-column data-field="Address" :visible="false" />
-                <dx-editing :allow-updating="true" :allow-adding="true" mode="form">
-                    <dx-form>
+                <DxColumn data-field="State" />       
+                <DxColumn data-field="AddressRequired" :visible="false" />
+                <DxColumn data-field="Address" :visible="false" />
+                <DxEditing :allow-updating="true" :allow-adding="true" mode="form">
+                    <DxForm>
                         <!-- ... -->
-                        <dx-simple-item data-field="AddressRequired" />
-                        <dx-group-item caption="Home Address">
-                            <dx-simple-item data-field="State" />
-                            <dx-simple-item data-field="Address" />
-                        </dx-group-item>
-                    </dx-form>    
-                </dx-editing>
-            </dx-data-grid>
+                        <DxSimpleItem data-field="AddressRequired" />
+                        <DxGroupItem caption="Home Address">
+                            <DxSimpleItem data-field="State" />
+                            <DxSimpleItem data-field="Address" />
+                        <DxGroupItem>
+                    </DxForm>    
+                </DxEditing>
+            </DxDataGrid>
         </template>
 
         <script>
@@ -301,14 +301,14 @@ This function allows you to change form item options dynamically. Within this fu
 
         <!-- tab: App.vue -->
         <template>
-            <dx-data-grid :ref="gridRefName" ... >
+            <DxDataGrid :ref="gridRefName" ... >
                 <!-- ... -->
-                <dx-editing ... >
-                    <dx-form :customize-item="customizeItem">
+                <DxEditing ... >
+                    <DxForm :customize-item="customizeItem">
                         <!-- ... -->
-                    </dx-form>
-                </dx-editing>    
-            </dx-data-grid>
+                    </DxForm>
+                </DxEditing>    
+            </DxDataGrid>
         </template>
 
         <script>
@@ -449,10 +449,10 @@ Specify **setCellValue** for those columns whose editors affect other form items
 
         <!-- tab: App.vue -->
         <template>
-            <dx-data-grid ... >
+            <DxDataGrid ... >
                 <!-- ... -->
-                <dx-column data-field="AddressRequired" :set-cell-value="setCellValue" />               
-            </dx-data-grid>
+                <DxColumn data-field="AddressRequired" :set-cell-value="setCellValue" />               
+            </DxDataGrid>
         </template>
 
         <script>

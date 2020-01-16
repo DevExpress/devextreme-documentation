@@ -108,12 +108,12 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Widg
 
     <!-- tab: App.vue -->
     <template>
-        <dx-text-box :value.sync="login" placeholder="Login">
-            <dx-validator>
-                <dx-required-rule />
-                <dx-pattern-rule pattern="^[a-zA-Z]+$" message="Do not use digits." />
-            </dx-validator>
-        </dx-text-box>
+        <DxTextBox :value.sync="login" placeholder="Login">
+            <DxValidator>
+                <DxRequiredRule />
+                <DxPatternRule pattern="^[a-zA-Z]+$" message="Do not use digits." />
+            </DxValidator>
+        </DxTextBox>
     </template>
 
     <script>

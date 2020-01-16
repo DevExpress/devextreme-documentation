@@ -70,9 +70,9 @@ The objects are not processed by the [DataSource](/api-reference/30%20Data%20Lay
 
     <!-- tab: App.vue -->
     <template>
-        <dx-tree-list ...
+        <DxTreeList ...
             :ref="treeListRef">
-        <dx-tree-list>
+        </DxTreeList>
     </template>
 
     <script>

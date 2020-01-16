@@ -36,7 +36,7 @@ Each widget has an API described in the widget's [API reference section](/Docume
 ##### Vue
 
     <template>
-        <dx-list
+        <DxList
             :width="600" />
     </template>
     <script>

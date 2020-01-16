@@ -39,13 +39,13 @@ If you use jQuery alone, set the widget's **...Template** option to a function t
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list ...
+        <DxList ...
             :data-source="listData"
             itemTemplate="item">
             <template #item="{ data, index }">
                 {{ index }} - {{ data.itemProperty }}
             </template>
-        </dx-list>
+        </DxList>
     </template>
 
     <script>
@@ -220,26 +220,26 @@ You can define custom templates for individual items in<a name="In_Collection_Wi
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list>
-            <dx-item>
+        <DxList>
+            <DxItem>
                 <template #default>
                     <i>Item 1</i>
                 </template>
-            </dx-item>
-            <dx-item>
+            </DxItem>
+            <DxItem>
                 <template #default>
                     <i>Item 2</i>
                 </template>
-            </dx-item>
-            <dx-item>
+            </DxItem>
+            <DxItem>
                 Item with a nested component
                 <template #default>
                     <div>
-                        <dx-button text="Click me" />
+                        <DxButton text="Click me" />
                     </div>
                 </template>
-            </dx-item>
-        </dx-list>
+            </DxItem>
+        </DxList>
     </template>
 
     <script>
@@ -404,11 +404,11 @@ Many widgets provide options that end with **...Template**, but particular widge
 
     <!-- tab: App.vue -->
     <template>
-        <dx-button @click="foo">
+        <DxButton @click="foo">
             <i style="color:green">
                 Refresh
             </i>
-        </dx-button>
+        </DxButton>
     </template>
 
     <script>

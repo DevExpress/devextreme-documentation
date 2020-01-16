@@ -73,7 +73,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
 
         <!-- tab: App.vue -->
         <template>
-            <dx-tree-list
+            <DxTreeList
                 :data-source="dataSource"
             />
         </template>
@@ -202,7 +202,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
 
         <!-- tab: App.vue -->
         <template>
-            <dx-tree-list
+            <DxTreeList
                 :data-source="dataSource"
             />
         </template>

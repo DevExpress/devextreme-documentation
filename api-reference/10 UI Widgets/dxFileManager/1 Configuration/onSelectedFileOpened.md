@@ -82,7 +82,7 @@ Model data. Available only if you use Knockout.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-file-manager ...
+        <DxFileManager ...
             :selected-file-opened="fileManager_onSelectedFileOpened"
         />
     </template>

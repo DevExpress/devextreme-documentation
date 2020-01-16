@@ -96,11 +96,11 @@ This function allows you to process user input before it is saved to the data so
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column data-field="Price" />
-            <dx-column data-field="Count" data-type="number" />
-            <dx-column data-field="TotalPrice" :set-cell-value="setCellValue" />
-        </dx-{widget-name}>
+        <Dx{WidgetName} ... >
+            <DxColumn data-field="Price" />
+            <DxColumn data-field="Count" data-type="number" />
+            <DxColumn data-field="TotalPrice" :set-cell-value="setCellValue" />
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -277,11 +277,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column data-field="State" :set-cell-value="setCellValue" />
-            <dx-column data-field="Tax" />
+        <Dx{WidgetName} ... >
+            <DxColumn data-field="State" :set-cell-value="setCellValue" />
+            <DxColumn data-field="Tax" />
             <!-- ... -->
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

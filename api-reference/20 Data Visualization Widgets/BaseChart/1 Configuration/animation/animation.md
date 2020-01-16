@@ -71,13 +71,13 @@ The widget animates its elements at the beginning of its lifetime and when the d
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-animation
+        <Dx{WidgetName} ... >
+            <DxAnimation
                 easing="linear"
                 :duration="500"
                 :max-point-count-supported="100"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

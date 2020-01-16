@@ -67,11 +67,11 @@ The following code shows the **dataPrepareSettings** declaration syntax:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-chart ... >
-            <dx-data-prepare-settings
+        <DxChart ... >
+            <DxDataPrepareSettings
                 :sorting-method="false"
             />
-        </dx-chart>
+        </DxChart>
     </template>
 
     <script>

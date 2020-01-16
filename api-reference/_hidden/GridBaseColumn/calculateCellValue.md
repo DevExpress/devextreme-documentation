@@ -128,13 +128,13 @@ In the following code, the **calculateCellValue** function is used to create an 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name}
+        <Dx{WidgetName}
             :data-source="products">
-            <dx-column
+            <DxColumn
                 caption="Sales Amount"
                 :calculate-cell-value="calculateSalesAmount">
-            </dx-column>
-        </dx-{widget-name}>
+            </DxColumn>
+        </Dx{WidgetName}>
     </template>
 
     <script>
@@ -315,11 +315,11 @@ To invoke the default behavior, call the **this.defaultCalculateCellValue(rowDat
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column ...
+        <Dx{WidgetName} ... >
+            <DxColumn ...
                 :calculate-cell-value="calculateCellValue">
-            </dx-column>
-        </dx-{widget-name}>
+            </DxColumn>
+        </Dx{WidgetName}>
     </template>
 
     <script>

@@ -87,7 +87,7 @@ Inside this function, you can access the [field's configuration](/api-reference/
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

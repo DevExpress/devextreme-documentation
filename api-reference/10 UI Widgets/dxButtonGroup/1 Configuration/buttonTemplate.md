@@ -68,12 +68,12 @@ A template name or container.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-button-group ...
+        <DxButtonGroup ...
             button-template="myTemplate">
             <template #myTemplate="{ data }">
                 <!-- your markup goes here -->
             </template>
-      </dx-button-group>
+        </DxButtonGroup>
     </template>
 
     <script>

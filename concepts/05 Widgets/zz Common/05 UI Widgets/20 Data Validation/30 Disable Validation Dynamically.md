@@ -135,28 +135,28 @@ The following example illustrates this case. A page contains two [TextBoxes](/ap
     <!-- tab: App.vue -->
     <template>
         <div id="root">
-            <dx-text-box>
-                <dx-validator>
-                    <dx-required-rule />                
-                </dx-validator>
-            </dx-text-box>
+            <DxTextBox>
+                <DxValidator>
+                    <DxRequiredRule />                
+                </DxValidator>
+            </DxTextBox>
 
-            <dx-text-box>
-                <dx-validator>
-                    <dx-custom-rule 
+            <DxTextBox>
+                <DxValidator>
+                    <DxCustomRule 
                         message="Required" 
                         :validation-callback="customCallback"
                         :reevaluate="true"
                     />
-                </dx-validator>
-            </dx-text-box>
+                </DxValidator>
+            </DxTextBox>
 
-            <dx-button
+            <DxButton
                 text="Validate group"
                 @click="validateGroup"
             />
 
-            <dx-check-box 
+            <DxCheckBox 
                 :value.sync="checkBoxValue" 
             />
         </div>

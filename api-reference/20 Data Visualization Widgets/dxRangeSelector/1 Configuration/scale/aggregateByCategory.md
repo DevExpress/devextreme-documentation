@@ -127,17 +127,17 @@ The following code shows an example of a data source that can be aggregated by c
 
     <!-- tab: App.vue -->
     <template>
-        <dx-range-selector :data-source="chartData">
-            <dx-chart>
-                <dx-series type="bar">
-                    <dx-aggregation
+        <DxRangeSelector :data-source="chartData">
+            <DxChart>
+                <DxSeries type="bar">
+                    <DxAggregation
                         :enabled="true"
                         method="sum" 
                     />
-                </dx-series>
-            <dx-chart>
-            <dx-scale :aggregate-by-category="true" />
-        </dx-range-selector>
+                </DxSeries>
+            </DxChart>
+            <DxScale :aggregate-by-category="true" />
+        </DxRangeSelector>
     </template>
 
     <script>

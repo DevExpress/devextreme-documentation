@@ -64,11 +64,11 @@ See [Popup Configuration](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configura
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-box ... >
-            <dx-drop-down-options
+        <DxDropDownBox ... >
+            <DxDropDownOptions
                 :on-option-changed="logOption"
             />
-        </dx-drop-down-box>
+        </DxDropDownBox>
     </template>
 
     <script>

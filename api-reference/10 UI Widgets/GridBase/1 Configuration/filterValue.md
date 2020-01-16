@@ -55,11 +55,11 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :filter-sync-enabled="true"
             :filter-value="filterValue"> 
-            <dx-header-filter :visible="true" />
-        </dx-{widget-name}>
+            <DxHeaderFilter :visible="true" />
+        </Dx{WidgetName}>
     </template>
 
     <script>
@@ -182,16 +182,16 @@ If a column's [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             <!-- Filter intervals are 500-600 and 700-800 -->
             :filter-value="filterValue">
-            <dx-header-filter :visible="true" />
-            <dx-column
+            <DxHeaderFilter :visible="true" />
+            <DxColumn
                 data-field="ID"
                 data-type="number">
                 <dx-column-header-filter :group-interval="100" />
-            </dx-column>
-        </dx-{widget-name}>
+            </DxColumn>
+        </Dx{WidgetName}>
     </template>
 
     <script>

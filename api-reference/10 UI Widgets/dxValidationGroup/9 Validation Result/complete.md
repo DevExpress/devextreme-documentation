@@ -130,25 +130,25 @@ In the following example, a button validates a group of editors with async rules
 
     <!-- tab: App.vue -->
     <template>
-        <dx-text-box>
-            <dx-validator
+        <DxTextBox>
+            <DxValidator
                 :validation-group="validationGroupName">
-                <dx-async-rule
+                <DxAsyncRule
                     :validation-callback="validateAsync"
                 />
-            </dx-validator>
-        </dx-text-box>
+            </DxValidator>
+        </DxTextBox>
 
-        <dx-date-box>
-            <dx-validator
+        <DxDateBox>
+            <DxValidator
                 :validation-group="validationGroupName">
-                <dx-async-rule
+                <DxAsyncRule
                     :validation-callback="validateAsync"
                 />
-            </dx-validator>
-        </dx-date-box>
+            </DxValidator>
+        </DxDateBox>
 
-        <dx-button
+        <DxButton
             :validation-group="validationGroupName"
             @click="validateGroup()"
         />

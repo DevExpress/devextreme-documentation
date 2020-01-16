@@ -64,11 +64,11 @@ See the [Popup configuration](/api-reference/10%20UI%20Widgets/dxPopup '/Documen
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-filter-builder-popup
+        <Dx{WidgetName} ... >
+            <DxFilterBuilderPopup
                 :on-option-changed="logOption"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

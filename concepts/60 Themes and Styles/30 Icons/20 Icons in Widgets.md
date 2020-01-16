@@ -36,7 +36,7 @@ Icons can be used in those widgets that have an **icon** option. For instance, t
 ##### Vue
 
     <template>
-        <dx-button
+        <DxButton
             icon="save"
             text="Save" />
     </template>
@@ -125,11 +125,11 @@ Many [default templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/05%20
 ##### Vue
 
     <template>
-        <dx-context-menu ... >
-            <dx-item text="Zoom In" icon="plus" />
-            <dx-item text="Share" icon="message" />
-            <dx-item text="Download" icon="download" />
-        </dx-context-menu>
+        <DxContextMenu ... >
+            <DxItem text="Zoom In" icon="plus" />
+            <DxItem text="Share" icon="message" />
+            <DxItem text="Download" icon="download" />
+        </DxContextMenu>
     </template>
     <script>
     import { DxContextMenu, DxItem } from 'devextreme-vue/context-menu';

@@ -227,16 +227,16 @@ In addition, you can now format values using structures accepted by <a href="htt
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column
+        <DxDataGrid ... >
+            <DxColumn
                 data-field="OrderDate"
                 :format="{ skeleton: 'yMMMd' }"
             />
-            <dx-column
+            <DxColumn
                 data-field="SaleAmount"
                 :format="{ currency: 'EUR', maximumFractionDigits: 2 }"
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>

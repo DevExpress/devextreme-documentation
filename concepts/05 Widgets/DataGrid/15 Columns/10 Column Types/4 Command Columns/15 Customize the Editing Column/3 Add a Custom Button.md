@@ -57,18 +57,18 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column type="buttons">
-                <dx-button name="edit" />
-                <dx-button name="delete" />
-                <dx-button 
+        <DxDataGrid ... >
+            <DxColumn type="buttons">
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+                <DxButton 
                     text="My Command"
                     icon="/url/to/my/icon.ico"
                     hint="My Command"
                     :on-click="myCommand"
                 />
-            </dx-column>
-        </dx-data-grid>
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -217,15 +217,15 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column type="buttons">
-                <dx-button name="edit" />
-                <dx-button name="delete" />
-                <dx-button #default>
+        <DxDataGrid ... >
+            <DxColumn type="buttons">
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+                <DxButton #default>
                     <!-- Declare custom markup here -->
-                </dx-button>
-            </dx-column>
-        </dx-data-grid>
+                </DxButton>
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>

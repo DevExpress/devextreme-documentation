@@ -70,12 +70,12 @@ The widget occupies its container's entire area by default. Use the **size** obj
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-size
+        <Dx{WidgetName} ... >
+            <DxSize
                 :height="300"
                 :width="600"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>
@@ -153,9 +153,9 @@ Alternatively, you can style the widget's container using CSS:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             id="{widgetName}">
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

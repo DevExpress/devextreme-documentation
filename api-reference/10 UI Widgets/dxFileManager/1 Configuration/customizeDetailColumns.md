@@ -82,7 +82,7 @@ The columns after customization.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-file-manager ...
+        <DxFileManager ...
             :customize-detail-columns="fileManager_customizeDetailColumns"
         />
     </template>

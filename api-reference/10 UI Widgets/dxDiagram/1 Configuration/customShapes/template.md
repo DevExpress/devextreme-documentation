@@ -16,6 +16,8 @@ Information about the shape.
 The shapes object.
 
 ---
+The template content must be presented as SVG elements.
+
 Use the [customShapeTemplate](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#customShapeTemplate) option to define a common template for all shapes in the **Diagram** widget.
 
 #include common-demobutton with {

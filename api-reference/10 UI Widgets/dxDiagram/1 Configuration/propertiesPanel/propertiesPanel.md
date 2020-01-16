@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Provides access to Properties panel settings.
+Configures the Properties panel settings.
 
 ---
 #include common-demobutton with {

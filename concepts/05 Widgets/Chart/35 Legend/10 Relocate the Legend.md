@@ -38,6 +38,56 @@ The legend can be moved inside the chart using the [position](/api-reference/20%
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxLegend
+                position="inside"
+                horizontal-alignment="center"
+                vertical-alignment="top"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxLegend
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Legend
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Legend
+                        position="inside"
+                        horizontalAlignment="center"
+                        verticalAlignment="top"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Below, you can try out these options in action.

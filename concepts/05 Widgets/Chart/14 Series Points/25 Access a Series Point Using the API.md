@@ -35,6 +35,61 @@ Gets all points of the series.
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart
+                ref="chart"
+                ... >
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                getSeriesPoints () {
+                    const series = this.$refs.chart.instance.getSeriesByName("Series 1");
+                    const seriesPoints = series.getAllPoints();
+                    // ...
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.chartRef = React.createRef();
+            }
+
+            render() {
+                return (
+                    <Chart ref={this.chartRef} ... >
+                    </Chart>
+                );
+            }
+
+            getSeriesPoints () {
+                const series = this.chartRef.current.instance.getSeriesByName("Series 1");
+                const seriesPoints = series.getAllPoints();
+                // ...
+            }
+        }
+
+        export default App;
+
     ---
 
 - [getPointsByArg(pointArg)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/getPointsByArg(pointArg).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#getPointsByArgpointArg')      
@@ -68,6 +123,61 @@ Gets those points of the series that has a specific argument. Returns more than 
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart
+                ref="chart"
+                ... >
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                getChinaPoints () {
+                    const series = this.$refs.chart.instance.getSeriesByName("Series 1");
+                    const chinaPoints = series.getPointsByArg("China");
+                    // ...
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.chartRef = React.createRef();
+            }
+
+            render() {
+                return (
+                    <Chart ref={this.chartRef} ... >
+                    </Chart>
+                );
+            }
+
+            getChinaPoints () {
+                const series = this.chartRef.current.instance.getSeriesByName("Series 1");
+                const chinaPoints = series.getPointsByArg("China");
+                // ...
+            }
+        }
+
+        export default App;
 
     ---
 
@@ -103,6 +213,61 @@ Gets a point by its index in the series. The index is zero-based.
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart
+                ref="chart"
+                ... >
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                getFirstPoint () {
+                    const series = this.$refs.chart.instance.getSeriesByName("Series 1");
+                    const firstPoint = series.getPointByPos(0);
+                    // ...
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.chartRef = React.createRef();
+            }
+
+            render() {
+                return (
+                    <Chart ref={this.chartRef} ... >
+                    </Chart>
+                );
+            }
+
+            getFirstPoint () {
+                const series = this.chartRef.current.instance.getSeriesByName("Series 1");
+                const firstPoint = series.getPointByPos(0);
+                // ...
+            }
+        }
+
+        export default App;
+
     ---
 
 - [getVisiblePoints()](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series/3%20Methods/getVisiblePoints().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#getVisiblePoints')          
@@ -136,6 +301,61 @@ Gets those points of the series that fall into the axis's [visual range](/api-re
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart
+                ref="chart"
+                ... >
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                getVisiblePoints () {
+                    const series = this.$refs.chart.instance.getSeriesByName("Series 1");
+                    const visiblePoints = series.getVisiblePoints();
+                    // ...
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.chartRef = React.createRef();
+            }
+
+            render() {
+                return (
+                    <Chart ref={this.chartRef} ... >
+                    </Chart>
+                );
+            }
+
+            getVisiblePoints () {
+                const series = this.chartRef.current.instance.getSeriesByName("Series 1");
+                const visiblePoints = series.getVisiblePoints();
+                // ...
+            }
+        }
+
+        export default App;
 
     ---
 
@@ -177,6 +397,58 @@ Apart from the API methods, you can access a series point in the event handlers.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @point-click="onPointClick($event)"
+            ...
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onPointClick (e) {
+                const point = e.target;
+                // ...
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onPointClick={this.onPointClick}
+                    ...
+                >
+                </Chart>
+            );
+        }
+
+        onPointClick (e) {
+            const point = e.target;
+            // ...
+        };
+    }
+
+    export default App;
 
 ---
 

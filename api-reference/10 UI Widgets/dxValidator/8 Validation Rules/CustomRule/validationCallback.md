@@ -86,14 +86,14 @@ The following code shows a **validationCallback** example. The function accepts 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-number-box :value="4">
-            <dx-validator>
-                <dx-custom-rule
+        <DxNumberBox :value="4">
+            <DxValidator>
+                <DxCustomRule
                     :validation-callback="validateNumber"
                     message="An even number is expected"
                 />
-            </dx-validator>
-        </dx-number-box>
+            </DxValidator>
+        </DxNumberBox>
     </template>
 
     <script>

@@ -103,18 +103,18 @@ Editors belonging to a single **Validation Group** can be validated together. Al
 
     <!-- tab: App.vue -->
     <template>
-        <dx-validation-group name="loginGroup">
-            <dx-text-box :value.sync="login" placeholder="Login">
-                <dx-validator>
+        <DxValidationGroup name="loginGroup">
+            <DxTextBox :value.sync="login" placeholder="Login">
+                <DxValidator>
                     <!-- Login validation rules are configured here -->
-                </dx-validator>
-            </dx-text-box>
-            <dx-text-box :value.sync="password" placeholder="Password">
-                <dx-validator>
+                </DxValidator>
+            </DxTextBox>
+            <DxTextBox :value.sync="password" placeholder="Password">
+                <DxValidator>
                     <!-- Password validation rules are configured here -->
-                </dx-validator>
-            </dx-text-box>
-        </dx-validation-group>
+                </DxValidator>
+            </DxTextBox>
+        </DxValidationGroup>
     </template>
 
     <script>

@@ -50,9 +50,9 @@ Use the returned button instance to call the [**Button** widget's methods](/api-
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :ref="{widgetName}Ref">
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

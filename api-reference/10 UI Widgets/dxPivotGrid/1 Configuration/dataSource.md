@@ -101,7 +101,7 @@ Use one of the following extensions to enable the server to process data accordi
 
         <!-- tab: App.vue -->
         <template> 
-            <dx-pivot-grid ...
+            <DxPivotGrid ...
                 :data-source="pivotGridDataSource" />
         </template>
 

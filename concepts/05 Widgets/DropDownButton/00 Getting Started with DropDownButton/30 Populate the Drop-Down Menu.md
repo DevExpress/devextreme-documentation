@@ -46,7 +46,7 @@ In addition, specify the data field that provides keys used to distinguish betwe
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-button ...
+        <DxDropDownButton ...
             :items="actions"
             key-expr="id"
             <!-- display-expr="text" -->

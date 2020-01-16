@@ -55,7 +55,7 @@ Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Confi
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-button-group ...
+        <DxButtonGroup ...
             selection-mode="multiple"
             :selected-item-keys.sync="selectedFontStyleNames"
             @selection-changed="logSelectionChanged"

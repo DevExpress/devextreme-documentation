@@ -41,7 +41,7 @@ The **Button** widget provides five predefined appearances controlled by the [ty
 ##### Vue
 
     <template>
-        <dx-button
+        <DxButton
             text="Click me"
             @click="foo"
             type="default" /> <!-- or "normal" | "back" | "danger" | "success" -->
@@ -135,7 +135,7 @@ Apart from plain text, the **Button** can display an icon. DevExtreme provides [
 ##### Vue
 
     <template>
-        <dx-button
+        <DxButton
             text="Delete"
             @click="foo"
             type="danger"
@@ -236,7 +236,7 @@ If you need to define the **Button** content completely, implement a template fo
 ##### Vue
 
     <template>
-        <dx-button
+        <DxButton
             text="Refresh"
             @click="foo"
             template="buttonTemplate">
@@ -246,7 +246,7 @@ If you need to define the **Button** content completely, implement a template fo
                 style="color: green">
                 {{ data.text }}
             </i>
-        </dx-button>
+        </DxButton>
     </template>
     <script>
     import DxButton from "devextreme-vue/button";

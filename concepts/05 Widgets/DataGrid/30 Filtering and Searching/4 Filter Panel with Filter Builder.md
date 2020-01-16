@@ -34,9 +34,9 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-           <dx-filter-panel :visible="true />
-        </dx-data-grid>
+        <DxDataGrid ... >
+           <DxFilterPanel :visible="true />
+        </DxDataGrid>
     </template>
 
     <script>
@@ -110,7 +110,7 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... 
+        <DxDataGrid ... 
             :filter-sync-enabled="false"
         />
     </template>
@@ -211,10 +211,10 @@ The **filterValue** is updated when a user changes the filter expression from th
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... 
+        <DxDataGrid ... 
             :filter-value.sync="filterValue">
-            <dx-filter-panel :visible="true" />
-        </dx-data-grid>
+            <DxFilterPanel :visible="true" />
+        </DxDataGrid>
     </template>
 
     <script>
@@ -389,17 +389,17 @@ The **DataGrid** provides the [filterBuilder](/api-reference/10%20UI%20Widgets/G
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-data-grid ... 
+            <DxDataGrid ... 
                 :filter-sync-enabled="true">
-                <dx-filter-panel :visible="false" />
-                <dx-filter-builder :custom-operations="customOperations" />
-                <dx-filter-builder-popup 
+                <DxFilterPanel :visible="false" />
+                <DxFilterBuilder :custom-operations="customOperations" />
+                <DxFilterBuilderPopup 
                     :width="400"
                     :visible.sync="popupVisible"
                     title="Synchronized Filter"
                 />
-            </dx-data-grid>
-            <dx-button
+            </DxDataGrid>
+            <DxButton
                 @click="showFilterBuilder"
                 text="Show Filter Builder"                
             />

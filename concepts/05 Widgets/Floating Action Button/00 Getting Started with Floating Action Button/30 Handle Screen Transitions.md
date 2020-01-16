@@ -200,15 +200,15 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <dx-tab-panel
+            <DxTabPanel
                 @selection-changed="switchSDAs">
-                <dx-item #default title="Edit tab">
+                <DxItem #default title="Edit tab">
                     <p>Edit tab's content</p>
-                </dx-item>
-                <dx-item #default title="Share tab">
+                </DxItem>
+                <DxItem #default title="Share tab">
                     <p>Share tab's content</p>
-                </dx-item>
-            </dx-tab-panel>
+                </DxItem>
+            </DxTabPanel>
             <!-- To be implemented -->
         </div>
     </template>
@@ -479,25 +479,25 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
     <template>
         <div id="app-container">
             <!-- TabPanel is configured here -->
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Edit"
                 icon="ion ion-md-create"
                 :visible="currentTab === 'Edit tab'"
                 @click="showNotification('Edit is clicked')"
             />
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Copy to clipboard"
                 icon="ion ion-md-copy"
                 :visible="currentTab === 'Share tab'"
                 @click="showNotification('Copied to clipboard')"
             />
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Send by email"
                 icon="ion ion-md-mail"
                 :visible="currentTab === 'Share tab'"
                 @click="showNotification('Sent by email')"
             />
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Share on Facebook"
                 icon="ion ion-logo-facebook"
                 :visible="currentTab === 'Share tab'"

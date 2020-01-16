@@ -52,7 +52,7 @@ Since DevExtreme icons are shipped as an icon font, they can be customized with 
 ##### Vue
 
     <template>
-        <dx-button
+        <DxButton
             id="saveButton"
             icon="save"
             text="Save" />

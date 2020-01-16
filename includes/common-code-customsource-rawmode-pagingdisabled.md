@@ -56,7 +56,7 @@
 #####Vue
 
     <template>
-        <dx-{widget-name} ... 
+        <Dx{WidgetName} ... 
             :data-source="dataSource" />
     </template>
     <script>

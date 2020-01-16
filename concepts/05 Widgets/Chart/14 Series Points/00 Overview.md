@@ -90,18 +90,21 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
         DxPoint
     } from 'devextreme-vue/chart';
 
-    const stackedlineOptions = {
-        point: {
-            /* Settings for all points belonging to Stacked Line series */
-        }
-    };
-
     export default {
         components: {
             DxChart,
             DxCommonSeriesSettings,
             DxSeries,
             DxPoint
+        },
+        data() {
+            return {
+                stackedlineOptions: {
+                    point: {
+                        /* Settings for all points belonging to Stacked Line series */
+                    }
+                }
+            };
         }
     }
     </script>

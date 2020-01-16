@@ -116,14 +116,6 @@ Note that individual settings override type-specific settings which, in turn, ov
         DxHoverStyle
     } from 'devextreme-vue/chart';
 
-    const areaOptions = {
-        point: {
-            hoverStyle: {
-                /* middle priority */
-            }
-        }
-    };
-
     export default {
         components: {
             DxChart,
@@ -131,6 +123,17 @@ Note that individual settings override type-specific settings which, in turn, ov
             DxSeries,
             DxPoint,
             DxHoverStyle
+        },
+        data() {
+            return {
+                areaOptions: {
+                    point: {
+                        hoverStyle: {
+                            /* middle priority */
+                        }
+                    }
+                }
+            };
         }
     }
     </script>

@@ -117,14 +117,6 @@ Note that individual settings override type-specific settings which, in turn, ov
         DxSelectionStyle
     } from 'devextreme-vue/chart';
 
-    const areaOptions = {
-        point: {
-            selectionStyle: {
-                /* middle priority */
-            }
-        }
-    };
-
     export default {
         components: {
             DxChart,
@@ -132,6 +124,17 @@ Note that individual settings override type-specific settings which, in turn, ov
             DxSeries,
             DxPoint,
             DxSelectionStyle
+        },
+        data() {
+            return {
+                areaOptions: {
+                    point: {
+                        selectionStyle: {
+                            /* middle priority */
+                        }
+                    }
+                }
+            };
         }
     }
     </script>

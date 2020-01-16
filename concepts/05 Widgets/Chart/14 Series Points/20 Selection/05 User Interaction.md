@@ -84,6 +84,101 @@ Note that individual settings override type-specific settings which, in turn, ov
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries>
+                <DxPoint ... >
+                    <DxSelectionStyle>
+                        <!-- high priority -->
+                    </DxSelectionStyle>
+                </DxPoint>
+            </DxSeries>
+            <DxCommonSeriesSettings
+                ...
+                :area="{
+                    point: {
+                        selectionStyle: {
+                            /* middle priority */
+                        }
+                    }
+                }"
+            >
+                <DxPoint ... >
+                    <DxSelectionStyle>
+                        <!-- low priority -->
+                    </DxSelectionStyle>
+                </DxPoint>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeries,
+        DxPoint,
+        DxSelectionStyle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeries,
+            DxPoint,
+            DxSelectionStyle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Series,
+        Point,
+        SelectionStyle
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series>
+                        <Point ... >
+                            <SelectionStyle>
+                                {/* high priority */}
+                            </SelectionStyle>
+                        </Point>
+                    </Series>
+                    <CommonSeriesSettings
+                        ...
+                        area={{
+                            point: {
+                                selectionStyle: {
+                                    /* middle priority */
+                                }
+                            }
+                        }}
+                    >
+                        <Point ... >
+                            <SelectionStyle>
+                                {/* low priority */}
+                            </SelectionStyle>
+                        </Point>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 
@@ -128,6 +223,57 @@ To choose which elements should be highlighted when a user selects a point, spec
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxCommonSeriesSettings ... >
+                <DxPoint
+                    selection-mode="allArgumentPoints"/> <!-- or 'onlyPoint' | 'allSeriesPoints' | 'none' -->
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxPoint
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxPoint
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Point
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <CommonSeriesSettings ... >
+                        <Point
+                            selectionMode="allArgumentPoints" /> {/* or 'onlyPoint' | 'allSeriesPoints' | 'none' */}
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -166,6 +312,46 @@ By default, only a single point can be in the selected state at a time. If you n
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            point-selection-mode="multiple"> <!-- or 'single' -->
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Point
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    pointSelectionMode="multiple"> {/* or 'single' */}
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

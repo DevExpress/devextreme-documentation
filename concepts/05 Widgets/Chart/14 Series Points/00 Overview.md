@@ -64,6 +64,86 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries>
+                <DxPoint ... >
+                    <!-- Settings for all points of an individual series -->
+                </DxPoint>
+            </DxSeries>
+            <DxCommonSeriesSettings
+                ...
+                :stackedline="{ // or any other series type
+                    point: {
+                        /* Settings for all points belonging to Stacked Line series */
+                    }
+                }"
+            >
+                <DxPoint ... >
+                    <!-- Settings for all points of all series -->
+                </DxPoint>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeries,
+        DxPoint
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeries,
+            DxPoint
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Series,
+        Point
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series>
+                        <Point ... >
+                            {/* Settings for all points of an individual series */}
+                        </Point>
+                    </Series>
+                    <CommonSeriesSettings
+                        ...
+                        stackedline={{ // or any other series type
+                            point: {
+                                /* Settings for all points belonging to Stacked Line series */
+                            }
+                        }}
+                    >
+                        <Point ... >
+                            {/* Settings for all points of all series */}
+                        </Point>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 A dedicated object is not provided for series whose points have a distinctive appearance ([Range Bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/') and [Bubble](/concepts/05%20Widgets/Chart/11%20Series%20Types/50%20Bubble%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Bubble_Series/'), all [bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/') and [financial](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Financial_Series/') series), and all point-related settings are declared directly in the **series**, ***%seriesType%***, or **commonSeriesSettings** object. Refer to the description of a particular series type in the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference for more details on the available settings.
@@ -117,6 +197,74 @@ Settings specified in the manner described above apply to a congregation of seri
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            :customize-point="customizePoint"
+            ...
+        >
+            <DxSeries>
+                <DxPoint color="blue"/>
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxPoint
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxPoint
+        },
+        methods: {
+            // Assigns the red color to all series points with value more than 100
+            // Other series points remain painted in blue
+            customizePoint (pointInfo: any) {
+                return pointInfo.value > 100 ? { color: 'red' } : { }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        Point
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    customizePoint={this.customizePoint}
+                    ...
+                >
+                    <Series>
+                        <Point color="blue" />
+                    </Series>
+                </Chart>
+            );
+        }
+
+        // Assigns the red color to all series points with value more than 100
+        // Other series points remain painted in blue
+        customizePoint (pointInfo: any) {
+            return pointInfo.value > 100 ? { color: 'red' } : { }
+        }
+    }
+
+    export default App;
 
 ---
 

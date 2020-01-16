@@ -101,12 +101,12 @@ To configure the strips, declare the [strips](/api-reference/20%20Data%20Visuali
             return (
                 <Chart ... >
                     <ArgumentAxis ... >
-                        <Strip startValue="100" endValue="150" color="yellow" />
-                        <Strip startValue="50" endValue="70" color="orange" />
+                        <Strip startValue={100} endValue={150} color="yellow" />
+                        <Strip startValue={50} endValue={70} color="orange" />
                     </ArgumentAxis>
                     <ValueAxis ... >
-                        <Strip startValue="40" endValue="50" color="blue" />
-                        <Strip startValue="70" color="red" />
+                        <Strip startValue={40} endValue={50} color="blue" />
+                        <Strip startValue={70} color="red" />
                     </ValueAxis>
                 </Chart>
             );

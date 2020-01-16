@@ -189,7 +189,7 @@ If a column's [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter
             <DxColumn
                 data-field="ID"
                 data-type="number">
-                <dx-column-header-filter :group-interval="100" />
+                <DxColumnHeaderFilter :group-interval="100" />
             </DxColumn>
         </Dx{WidgetName}>
     </template>

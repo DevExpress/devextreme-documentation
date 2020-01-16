@@ -343,10 +343,7 @@ By default, only a single point can be in the selected state at a time. If you n
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, {
-        CommonSeriesSettings,
-        Point
-    } from 'devextreme-react/chart';
+    import Chart from 'devextreme-react/chart';
 
     class App extends React.Component {
         render() {

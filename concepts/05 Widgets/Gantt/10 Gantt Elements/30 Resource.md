@@ -5,7 +5,7 @@ Resources and resource assignments are optional in the Gantt control.
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [showResources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources) to specify whether the **Gantt** widget hides resources or displays them as task labels
+Use the [showResources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources) option to specify whether the **Gantt** widget hides resources or displays them as task labels.
 
     $(function() {
         $("#gantt").dxGantt({
@@ -36,7 +36,7 @@ The objects from the data sources are automatically bound to the widget if the t
         'taskId': 3,
         'resourceId': 1
     }
-The following example illustrates how to bind the widget to resources and resource assignments stored in the data sources that contains data fields with conventional names:
+The following example illustrates how to bind the widget to resource and resource assignment objects stored in the data sources that contains data fields with conventional names:
 
     <!-- tab: index.js -->
     $(function() {

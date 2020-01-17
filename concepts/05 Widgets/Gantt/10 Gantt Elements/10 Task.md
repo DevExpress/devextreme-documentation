@@ -52,6 +52,7 @@ The following example illustrates how to bind the widget to tasks stored in the 
         'progress': 31
     },
     // your code
+    ];
 
 If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map task title, progress, start/end points, and so on.
 
@@ -76,6 +77,7 @@ If the data source's field names differ from the standard field names mentioned 
         'progress': 31
     },
     // your code
+    ];
 
 The list below provides the main members that affect task appearance and functionality.
 

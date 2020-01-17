@@ -4,40 +4,23 @@
 
 The Gantt supports the following dependency types:
 
-<div class="simple-table">
-    <table>
-        <tr>
-          <th style="width:20%">Dependency Type</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td>Finish to Start (FS)</td>
-          <td>The predecessor task's endpoint specifies the successor task's start point. <br/> 
-          ![](/images/Gantt/dependency-type-fs.png)
-          </td>
-        </tr>
-        <tr>
-          <td>Start to Start (SS)</td>
-          <td>The predecessor task's start point specifies the successor task's start point. <br/> 
-          ![](~/images/Gantt/dependency-type-ss.png)
-          </td>
-        </tr>
-        <tr>
-          <td>Finish to Finish (FF)</td>
-          <td>The predecessor task's end point specifies the successor task's end point. <br/> 
-          ![](~/images/Gantt/dependency-type-ff.png)
-          </td>
-        </tr>
-        <tr>
-          <td>Start to Finish (SF)</td>
-          <td>The predecessor task's start point specifies the successor task's end point. <br/> 
-          ![](~/images/Gantt/dependency-type-sf.png)
-          </td>
-        </tr>
-    </table>
-</div>
+- Finish to Start (FS) - The predecessor task's endpoint specifies the successor task's start point. 
 
-The Gantt gets data for tasks from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource)). Dependency objects from the data source are automatically bound to the widget if the these objects have the default 'id', 'type', etc. data fields in its structure. For example:
+    ![DevExtreme Gantt Chart - Finish-To-Start Dependency](/images/Gantt/dependency-type-fs.png)
+
+- Start to Start (SS) - The predecessor task's start point specifies the successor task's start point. 
+
+    ![DevExtreme Gantt Chart - Start-To-Start Dependency](/images/Gantt/dependency-type-ss.png)
+
+- Finish to Finish (FF) - The predecessor task's end point specifies the successor task's end point.
+
+    ![DevExtreme Gantt Chart - Finish-To-Finish Dependency](/images/Gantt/dependency-type-ff.png)
+
+- Start to Finish (SF) - The predecessor task's start point specifies the successor task's end point. 
+
+    ![DevExtreme Gantt Chart - Finish-To-Finish Dependency](/images/Gantt/dependency-type-sf.png)
+
+The Gantt gets data for dependencies from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource)). Dependency objects from the data source are automatically bound to the widget if the these objects have the default 'id', 'type', etc. data fields in its structure. For example:
 
     {
         'id': 0,
@@ -65,6 +48,7 @@ The following example illustrates how to bind the widget to dependencies stored 
         'type': 0
     },
     // your code
+    ];
 
 If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map dependency's id, type, and so on.
 
@@ -87,3 +71,4 @@ If the data source's field names differ from the standard field names mentioned 
         'dependencyType': 0
     },
     // your code
+    ];

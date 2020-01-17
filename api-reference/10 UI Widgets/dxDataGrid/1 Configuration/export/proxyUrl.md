@@ -15,3 +15,5 @@ Generally, exporting is performed using client-side API in browsers. However, th
 - The proxy should return the decoded file with the "Content-Disposition" header set to *attachment; filename="<fileName.xslx>"*.
 
 The sample proxy implementation for ASPx-based and PHP-based web servers is described in the [Set up a Server-Side Proxy](/concepts/05%20Widgets/DataGrid/70%20Client-Side%20Exporting/30%20Set%20Up%20a%20Server-Side%20Proxy '/Documentation/Guide/Widgets/DataGrid/Client-Side_Exporting/#Set_Up_a_Server-Side_Proxy') article.
+
+[note] This function is not used in [ClientSide exporting using ExcelJS](// TODO: add link)

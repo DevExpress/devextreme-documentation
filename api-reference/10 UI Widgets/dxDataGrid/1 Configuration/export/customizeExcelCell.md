@@ -162,5 +162,7 @@ The following table shows available fill patterns:
 </tbody>
 </table>
 
+[note] This function is not used in [ClientSide exporting using ExcelJS](// TODO: add link)
+
 #####See Also#####
 - [Customize Excel Data](/concepts/05%20Widgets/DataGrid/70%20Client-Side%20Exporting/05%20API/05%20Customize%20Excel%20Data.md '/Documentation/Guide/Widgets/DataGrid/Client-Side_Exporting/#API/Customize_Excel_Data')

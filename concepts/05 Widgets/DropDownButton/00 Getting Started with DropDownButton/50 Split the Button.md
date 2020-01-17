@@ -35,7 +35,7 @@ The button can execute a custom action instead of opening the drop-down menu. To
 
     <!-- tab: App.vue -->
     <template>
-        <dx-drop-down-button ...
+        <DxDropDownButton ...
             :split-button="true"
             @button-click="logButtonClick"
         />

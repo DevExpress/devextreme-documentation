@@ -43,12 +43,12 @@ To allow a user to add, delete and update data in the **DataGrid**, assign **tru
 #####Vue
 
     <template>
-    <dx-data-grid ... >
-        <dx-editing
-            :allow-adding="true"
-            :allow-updating="true"
-            :allow-deleting="true" />
-    </dx-data-grid>
+        <DxDataGrid ... >
+            <DxEditing
+                :allow-adding="true"
+                :allow-updating="true"
+                :allow-deleting="true" />
+        </DxDataGrid>
     </template>
     <script>
     import { DxDataGrid, DxEditing } from "devextreme-vue/data-grid";
@@ -223,7 +223,7 @@ With these settings, the **DataGrid** expects that the server can also add, upda
     }
 
     <!--HTML-->
-    <dx-data-grid ... 
+    <DxDataGrid ... 
         :data-source="dataSource" />
 
 #####React

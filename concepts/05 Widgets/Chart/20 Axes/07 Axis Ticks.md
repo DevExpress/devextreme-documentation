@@ -40,6 +40,60 @@ To configure major or minor ticks, use the [tick](/api-reference/20%20Data%20Vis
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis> <!-- or DxValueAxis, or DxCommonAxisSettings -->
+                <DxTick :visible="true"/>
+                <DxMinorTick :visible="true"/>
+            </DxArgumentAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxTick,
+        DxMinorTick
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxTick,
+            DxMinorTick
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        Tick,
+        MinorTick
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
+                        <Tick visible={true} />
+                        <MinorTick visible={true} />
+                    </ArgumentAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

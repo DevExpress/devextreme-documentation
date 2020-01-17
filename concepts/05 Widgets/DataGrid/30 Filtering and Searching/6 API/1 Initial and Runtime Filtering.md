@@ -40,7 +40,7 @@ The initial and runtime filtering API depends on the UI element and is described
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... 
+        <DxDataGrid ... 
             :ref="gridRefKey"
         />      
     </template>
@@ -165,7 +165,7 @@ You can create a filter that combines all the applied filters by calling the [ge
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-data-grid ... 
+            <DxDataGrid ... 
                :ref="gridRefKey"
             />   
         </div>    

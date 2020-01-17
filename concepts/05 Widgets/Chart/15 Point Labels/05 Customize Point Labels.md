@@ -46,6 +46,70 @@ If you need to change the text displayed by point labels, declare the [customize
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries>
+                <DxLabel
+                    :visible="true"
+                    :customize-text="customizeText"
+                />
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxLabel
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxLabel
+        },
+        methods: {
+            customizeText (pointInfo) {
+                return `${pointInfo.argument}: ${pointInfo.value}`;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series>
+                        <Label
+                            visible={true}
+                            customizeText={this.customizeText}
+                        />
+                    </Series>
+                </Chart>
+            );
+        }
+
+        customizeText (pointInfo) {
+            return `${pointInfo.argument}: ${pointInfo.value}`;
+        }
+    }
+
+    export default App;
+
 ---
 
 You can also customize an individual label. For this purpose, assign a function to the [customizeLabel](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeLabel.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#customizeLabel') option. This function must return an object with options for the label that you want to customize. Note that the **customizeLabel** option should be declared at the root level of the **Chart** configuration.
@@ -99,6 +163,76 @@ You can also customize an individual label. For this purpose, assign a function 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart :customize-label="customizeLabel">
+            <DxSeries>
+                <DxLabel
+                    :visible="true"
+                    background-color="blue"
+                />
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxLabel
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxLabel
+        },
+        methods: {
+            // Assigns the red color to all labels whose series points have value more than 100
+            // Other labels remain painted in blue
+            customizeLabel (pointInfo) {
+                return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    customizeLabel={this.customizeLabel}
+                >
+                    <Series>
+                        <Label
+                            visible={true}
+                            backgroundColor="blue"
+                        />
+                    </Series>
+                </Chart>
+            );
+        }
+
+        // Assigns the red color to all labels whose series points have value more than 100
+        // Other labels remain painted in blue
+        customizeLabel (pointInfo) {
+            return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
+        }
+    }
+
+    export default App;
 
 ---
 

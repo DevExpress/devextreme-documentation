@@ -81,15 +81,15 @@ Use this handler's **editorOptions** parameter to change editor options. The cod
 
         <!-- tab: App.vue -->
         <template>
-            <dx-data-grid ...
+            <DxDataGrid ...
                 @editor-preparing="onEditorPreparing">
-                <dx-column data-field="FirstName" />
-                <dx-column data-field="LastName" />
-                <dx-editing
+                <DxColumn data-field="FirstName" />
+                <DxColumn data-field="LastName" />
+                <DxEditing
                     :allow-updating="true"
                     :allow-adding="true">
                 />
-            </dx-data-grid>
+            </DxDataGrid>
         </template>
 
         <script>
@@ -232,10 +232,10 @@ Specify **setCellValue** for those columns whose editors should affect other edi
 
         <!-- tab: App.vue -->
         <template>
-            <dx-data-grid ... >
-                <dx-column data-field="FirstName" :set-cell-value="setCellValue" />
-                <dx-column data-field="LastName" />
-            </dx-data-grid>
+            <DxDataGrid ... >
+                <DxColumn data-field="FirstName" :set-cell-value="setCellValue" />
+                <DxColumn data-field="LastName" />
+            </DxDataGrid>
         </template>
 
         <script>

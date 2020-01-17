@@ -65,14 +65,14 @@ In the following code, the *"fixedPoint"* [format type](/api-reference/50%20Comm
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column ... >
-                <dx-format
+        <Dx{WidgetName} ... >
+            <DxColumn ... >
+                <DxFormat
                     type="fixedPoint"
                     :precision="2"
                 />
-            </dx-column>
-        </dx-{widget-name}>
+            </DxColumn>
+        </Dx{WidgetName}>
     </template>
 
     <script>

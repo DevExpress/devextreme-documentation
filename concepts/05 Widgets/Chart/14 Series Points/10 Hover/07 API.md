@@ -26,6 +26,51 @@ You can switch a point into the hover state by calling its [hover()](/api-refere
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            togglePointHoverState (point) {
+                !point.isHovered() ? point.hover() : point.clearHover();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                </Chart>
+            );
+        }
+
+        togglePointHoverState (point) {
+            !point.isHovered() ? point.hover() : point.clearHover();
+        }
+
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

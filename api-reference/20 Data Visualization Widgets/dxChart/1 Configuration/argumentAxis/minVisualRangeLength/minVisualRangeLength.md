@@ -71,11 +71,11 @@ If the visual range is set on a numeric axis, assign a number to this option. If
 
     <!-- tab: App.vue -->
     <template>
-        <dx-chart ... >
-            <dx-argument-axis ... >
-                <dx-min-visual-range-length :weeks="2" />
-            </dx-argument-axis>
-        </dx-chart>
+        <DxChart ... >
+            <DxArgumentAxis ... >
+                <DxMinVisualRangeLength :weeks="2" />
+            </DxArgumentAxis>
+        </DxChart>
     </template>
 
     <script>

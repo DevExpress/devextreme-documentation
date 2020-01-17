@@ -104,14 +104,14 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
         <!--tab: App.vue-->
         <template>
             <div>
-                <dx-drop-down-box
+                <DxDropDownBox
                     value-expr="ID"
                     display-expr="email"
                     :data-source="dropDownBoxData">
-                    <dx-data-grid 
+                    <DxDataGrid 
                         :data-source="gridDataSource">
-                    </dx-data-grid>
-                </dx-drop-down-box>
+                    </DxDataGrid>
+                </DxDropDownBox>
             </div>
         </template>
 
@@ -244,13 +244,13 @@ This step's implementation depends on the embedded widget's API and the library/
         <!--tab: App.vue-->
         <template>
             <div>
-                <dx-drop-down-box ...
+                <DxDropDownBox ...
                     :value.sync="dropDownBoxValues">
-                    <dx-data-grid ...
+                    <DxDataGrid ...
                         :selected-row-keys.sync="dropDownBoxValues">
-                        <dx-selection mode="multiple" />
-                    </dx-data-grid>
-                </dx-drop-down-box>
+                        <DxSelection mode="multiple" />
+                    </DxDataGrid>
+                </DxDropDownBox>
             </div>
         </template>
 

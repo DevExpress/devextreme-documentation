@@ -69,7 +69,7 @@ You can use the following library- or framework-specific code to create the **Bu
 
     <!-- tab: App.vue -->
     <template>
-        <dx-button-group
+        <DxButtonGroup
             <!-- Configuration goes here -->
         />
     </template>

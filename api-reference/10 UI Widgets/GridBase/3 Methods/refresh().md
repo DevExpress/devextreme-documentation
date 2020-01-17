@@ -63,10 +63,10 @@ The following code shows how to call this method:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :ref="{widgetName}RefKey">
             <!-- ... -->
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

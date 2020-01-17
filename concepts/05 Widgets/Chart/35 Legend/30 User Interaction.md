@@ -32,6 +32,52 @@ A user can interact with the legend by pausing on legend items. When a user does
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxLegend
+                hover-mode="none"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxLegend
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Legend
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Legend
+                        hoverMode="none"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Series that consist of several elements rather than just series points ([Range Area](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/'), all [line](/concepts/05%20Widgets/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Line_Series/') and [area](/concepts/05%20Widgets/Chart/11%20Series%20Types/30%20Area%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Area_Series/') series) can be highlighted _without_ the series points. For this, set the **hoverMode** option to *"excludePoints"*. For other series, this setting has the same effect as *"none"*.
@@ -67,6 +113,52 @@ Series that consist of several elements rather than just series points ([Range A
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxLegend
+                hover-mode="excludePoints"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxLegend
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Legend
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Legend
+                        hoverMode="excludePoints"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -128,6 +220,56 @@ In addition, a user can click legend items. By default, the widget does not reac
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @legend-click="legendClickHandler($event)"
+            ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            legendClickHandler(e) {
+                const series = e.target;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onLegendClick={this.legendClickHandler}
+                    ... >
+                </Chart>
+            );
+        }
+
+        legendClickHandler(e) {
+            const series = e.target;
+            // Event handling commands go here
+        }
+    }
+
+    export default App;
 
 ---
 

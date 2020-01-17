@@ -101,7 +101,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
 #####Vue
 
     <template>
-        <dx-data-grid ...
+        <DxDataGrid ...
             row-template="dataRowTemplate">
             <tbody
                 slot="dataRowTemplate"
@@ -112,7 +112,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
                     <td>{{name}}</td>
                 </tr>
             </tbody>
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
     <script>
     import { DxDataGrid } from 'devextreme-vue/data-grid';

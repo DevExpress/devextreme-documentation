@@ -36,6 +36,48 @@ To configure the appearance, location, and content of the legend, use options co
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxLegend ... />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxLegend
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Legend
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Legend ... />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

@@ -31,6 +31,42 @@ In multi-series charts, point labels often overlap. To decide how to resolve ove
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            :resolve-label-overlapping="stack"> <!-- or 'hide' | 'none' -->
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart resolveLabelOverlapping="stack"> {/* or 'hide' | 'none' */}
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Another way to deal with overlapping labels is to hide all labels of a specific series once their count exceeds a certain limit. Mostly, this feature is useful if the series accepts new points at runtime. To specify the limit on point labels, assign a number to the [maxLabelCount](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/maxLabelCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#maxLabelCount') option.
@@ -70,6 +106,54 @@ Another way to deal with overlapping labels is to hide all labels of a specific 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries
+                :max-label-count="10"
+                ...
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series
+                        maxLabelCount={10}
+                        ...
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

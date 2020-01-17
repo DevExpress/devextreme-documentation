@@ -71,11 +71,11 @@ Assign a number to this option if the visual range is set on a numeric axis. If 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-polar-chart ... >
-            <dx-value-axis ... >
-                <dx-min-visual-range-length :weeks="2" />
-            </dx-value-axis>
-        </dx-polar-chart>
+        <DxPolarChart ... >
+            <DxValueAxis ... >
+                <DxMinVisualRangeLength :weeks="2" />
+            </DxValueAxis>
+        </DxPolarChart>
     </template>
 
     <script>

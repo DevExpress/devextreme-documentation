@@ -65,13 +65,13 @@ Holds a [configuration object](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20C
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form ... >
-            <dx-tabbed-item>
-                <dx-tab-panel-options ...
+        <DxForm ... >
+            <DxTabbedItem>
+                <DxTabPanelOptions ...
                     :on-option-changed="logOption"
                 />
-            </dx-tabbed-item>
-        </dx-form>
+            </DxTabbedItem>
+        </DxForm>
     </template>
 
     <script>

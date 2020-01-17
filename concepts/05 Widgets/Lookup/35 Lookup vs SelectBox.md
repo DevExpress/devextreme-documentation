@@ -4,7 +4,7 @@ The **Lookup** and [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Do
 The **SelectBox** has only a list of items in a drop-down field whereas **Lookup** also has a search field and the Cancel button.
 
 - **Appearance on desktop and mobile devices**    
-The **SelectBox** looks the same on any platform while **Lookup** changes its appearance. The **Lookup**'s drop-down field is replaced with a popup window that occupies most of the screen. This design optimizes **Lookup** for mobile devices.
+The **SelectBox** looks the same on any platform, while **Lookup** changes its appearance. The **Lookup**'s drop-down field is replaced with a popup window that occupies most of the screen. This design optimizes **Lookup** for mobile devices.
 
     <div class="simple-table normal-font-style">
         <table class="tooltip-table">

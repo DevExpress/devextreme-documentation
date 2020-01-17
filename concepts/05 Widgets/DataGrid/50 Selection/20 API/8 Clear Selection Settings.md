@@ -26,6 +26,96 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Widgets/GridBase/3%20Meth
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :selected-row-keys.sync="selectedRowKeys">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                selectedRowKeys: []
+            }
+        },
+        methods: {
+            deselectRows(keys) {
+                let selectedRowKeys = this.selectedRowKeys;
+                keys.forEach(function(item) {
+                    const index = selectedRowKeys.indexOf(item);
+                    if (index !== -1) {
+                        selectedRowKeys.splice(index, 1);
+                    }
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                selectedRowKeys: []
+            }
+            this.deselectRows = this.deselectRows.bind(this);
+        	this.handleOptionChange = this.handleOptionChange.bind(this);
+        }
+
+        deselectRows(keys) {
+            let selectedRowKeys = [...this.state.selectedRowKeys];
+            keys.forEach(function(item) {
+                const index = selectedRowKeys.indexOf(item);
+                if (index !== -1) {
+                    selectedRowKeys.splice(index, 1);
+                }
+            });
+            this.setState({
+                selectedRowKeys: selectedRowKeys
+            });
+        }
+
+        handleOptionChange(e) {
+            if(e.fullName === 'selectedRowKeys') {
+                this.setState({
+                    selectedRowKeys: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    selectedRowKeys={this.state.selectedRowKeys}
+                    onOptionChanged={this.handleOptionChange}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -62,6 +152,82 @@ Call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Method
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :selected-row-keys.sync="selectedRowKeys">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                selectedRowKeys: []
+            }
+        },
+        methods: {
+            deselectAllRows() {
+                this.selectedRowKeys.length = 0;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                selectedRowKeys: []
+            }
+            this.deselectAllRows = this.deselectAllRows.bind(this);
+        }
+
+        deselectAllRows() {
+            this.setState({
+                selectedRowKeys: []
+            });
+        }
+
+        handleOptionChange(e) {
+            if(e.fullName === 'selectedRowKeys') {
+                this.setState({
+                    selectedRowKeys: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    selectedRowKeys={this.state.selectedRowKeys}
+                    onOptionChanged={this.handleOptionChange}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

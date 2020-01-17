@@ -118,5 +118,6 @@ If your data is an array of objects, specify:
 - [SelectBox - Handle the Value Change Event](/concepts/05%20Widgets/SelectBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/SelectBox/Handle_the_Value_Change_Event/')
 - [SelectBox - Keyboard Support](/concepts/05%20Widgets/SelectBox/25%20Keyboard%20Support.md '/Documentation/Guide/Widgets/SelectBox/Keyboard_Support/')
 - [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/')
+- [Lookup vs SelectBox](/concepts/05%20Widgets/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/Widgets/Lookup/Lookup_vs_SelectBox/')
 
 [tags]selectBox, select box, editor, collection widget, overview, data source, value, display expression

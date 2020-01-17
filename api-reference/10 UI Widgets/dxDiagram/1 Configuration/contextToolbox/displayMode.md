@@ -5,7 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies how shapes are displayed in the context toolbox.
 
 ---
-<!-- Description goes here -->

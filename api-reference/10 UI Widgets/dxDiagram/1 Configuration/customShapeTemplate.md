@@ -4,16 +4,25 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for shapes.
 
 ##### param(container): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "shape" }
 
 ##### param(data): Object
-<!-- Description goes here -->
+Information about the currently processed shape.
 
 ##### field(data.item): dxDiagramItem
-<!-- Description goes here -->
+The processed shape's object.
 
 ---
-<!-- Description goes here -->
+The template content must be presented as SVG elements.
+
+Use the [template](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#template) option to define a template of an individual shape.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"
+}
+
+#####See Also#####
+- [Custom Templates](/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates)

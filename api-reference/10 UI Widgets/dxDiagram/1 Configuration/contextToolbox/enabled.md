@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the context toolbox's availability.
 
 ---
-<!-- Description goes here -->

@@ -20,7 +20,7 @@ A **milestone** is a task with the same start and endpoint. Milestones can be us
 
 ![DevExtreme Gantt Chart - Milestone](/images/Gantt/milestone.png)
 
-The Gantt gets data for tasks from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource)). Task objects from the data source are automatically bound to the widget if the task objects have the default 'title', 'start', 'end', etc. data fields in its structure. For example:
+The **Gantt** widget gets data for tasks from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource)). Task objects from the data source are automatically bound to the widget if these objects have the default 'title', 'start', 'end', etc. data fields in its structure. For example:
 
     {
         'id': 1,

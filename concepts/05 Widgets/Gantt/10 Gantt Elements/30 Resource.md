@@ -1,9 +1,5 @@
 
-<note> Resources and resource assignments are optional in the Gantt control.
-
-<note> 
-Resources and resource assignments are optional in the Gantt control.
-Resources and resource assignments are optional in the Gantt control.
+<note>
 Resources and resource assignments are optional in the Gantt control.
 
 **Resources** specify people responsible for tasks, equipment, materials, etc.
@@ -22,13 +18,13 @@ Use the [showResources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configura
 
 ![DevExtreme Gantt Chart - Resource Assignments](/images/Gantt/resource-assignments.png)
 
-The **Gantt** widget gets data for resources and resource assignments from data sources.
+The **Gantt** widget gets data for resources and resource assignments from the following data sources:
 
 - Resources: [dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource)
 
 - Resource Assignments: [dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/#dataSource) 
 
-Objects from the data sources are automatically bound to the widget if the these objects have the default data fields in its structure. For example:
+The objects from the data sources are automatically bound to the widget if the these objects have the default data fields in its structure. For example:
 
     // Resource
     {        

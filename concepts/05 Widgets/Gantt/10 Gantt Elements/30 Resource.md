@@ -20,7 +20,7 @@ Use the [showResources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configura
 
 **Resource assignments** specify which resources are assigned to tasks. You can assign multiple resources to a task.
 
-![DevExtreme Gantt Chart - Resource Assignments(~/images/Gantt/resource-assignments.png)
+![DevExtreme Gantt Chart - Resource Assignments](~/images/Gantt/resource-assignments.png)
 
 The **Gantt** widget gets data for resources and resource assignments from data sources.
 

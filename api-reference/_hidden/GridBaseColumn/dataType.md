@@ -91,17 +91,17 @@ If a data field provides values of one data type, but the widget should cast the
 #####Vue
 
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :data-source="employees">
-        <dx-column
-            data-field="ID"
-            data-type="number"
-        />
-        <dx-column
-            data-field="hireDate"
-            data-type="date"
-        />
-        </dx-{widget-name}>
+            <DxColumn
+                data-field="ID"
+                data-type="number"
+            />
+            <DxColumn
+                data-field="hireDate"
+                data-type="date"
+            />
+        </Dx{WidgetName}>
     </template>
     <script>
     import { Dx{WidgetName}, DxColumn } from 'devextreme-vue/{widget-name}';

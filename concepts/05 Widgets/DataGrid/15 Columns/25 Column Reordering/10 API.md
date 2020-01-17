@@ -35,6 +35,58 @@ The [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/colu
     <dx-data-grid ...
         [customizeColumns]="customizeColumns">
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :customize-columns="customizeColumns">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            customizeColumns(columns) {
+                column[2].visibleIndex = 1;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        customizeColumns(columns) {
+            column[2].visibleIndex = 1;
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    customizeColumns={this.customizeColumns}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -67,6 +119,78 @@ The **visibleIndex** option can also be changed at runtime to reorder columns re
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn ... />
+            <DxColumn ...
+                :visible-index.sync="secondColVisibleIndex"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return() {
+                secondColVisibleIndex: 1
+            }
+        },
+        methods: {
+            swapColumns() {
+                this.secondColVisibleIndex = 0;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+
+            this.swapColumns = () => {
+                this.dataGrid.columnOption(1, 'visibleIndex', 0);
+            }
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef}>
+                    {/* ... */ }
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

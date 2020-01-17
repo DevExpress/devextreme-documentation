@@ -57,18 +57,18 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column type="buttons">
-                <dx-button name="edit" />
-                <dx-button name="delete" />
-                <dx-button 
+        <DxDataGrid ... >
+            <DxColumn type="buttons">
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+                <DxButton 
                     text="My Command"
                     icon="/url/to/my/icon.ico"
                     hint="My Command"
                     :on-click="myCommand"
                 />
-            </dx-column>
-        </dx-data-grid>
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -164,7 +164,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     
 ---
 
-... or render the button with custom appearance using a [template](/api-reference/_hidden/dxDataGridColumnButton/template.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/buttons/#template'):
+... or use a [template](/api-reference/_hidden/dxDataGridColumnButton/template.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/buttons/#template') to render the button with custom appearance. In this case, the **onClick** function is not executed, and you should handle the `click` event of the element placed inside the template.
 
 ---
 ##### jQuery  
@@ -191,8 +191,10 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
         <dxi-column type="buttons">
             <dxi-button name="edit"></dxi-button>
             <dxi-button name="delete"></dxi-button>
-            <dxi-button>
-                <!-- Declare custom markup here -->
+            <dxi-button template="myCommand">
+                <div *dxTemplate="let data of 'myCommand'">
+                    <!-- Declare custom markup here -->
+                </div>
             </dxi-button>
         </dxi-column>
     </dx-data-grid>
@@ -215,15 +217,15 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column type="buttons">
-                <dx-button name="edit" />
-                <dx-button name="delete" />
-                <dx-button #default>
+        <DxDataGrid ... >
+            <DxColumn type="buttons">
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+                <DxButton #default>
                     <!-- Declare custom markup here -->
-                </dx-button>
-            </dx-column>
-        </dx-data-grid>
+                </DxButton>
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -263,15 +265,19 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
+        renderMyCommand() {
+            return (
+                {/* Declare custom markup here */}
+            );
+        }
+
         render() {
             return (
                 <DataGrid ... >
                     <Column type="buttons">
                         <Button name="edit" />
                         <Button name="delete" />
-                        <Button>
-                            {/* Declare custom markup here */}
-                        </Button>
+                        <Button render={this.renderMyCommand} />
                     </Column>
                 </DataGrid>
             );

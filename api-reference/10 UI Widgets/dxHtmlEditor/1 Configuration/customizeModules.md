@@ -75,7 +75,7 @@ Quill modules and the API you can use to customize them are described in the <a 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-html-editor ...
+        <DxHtmlEditor ...
             :customize-modules="customizeQuillModules"
         />
     </template>

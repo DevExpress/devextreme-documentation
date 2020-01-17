@@ -154,7 +154,7 @@ If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropD
 #####Vue
 
     <template>
-        <dx-lookup ... 
+        <DxLookup ... 
             :data-source="dataSource" />
     </template>
     <script>

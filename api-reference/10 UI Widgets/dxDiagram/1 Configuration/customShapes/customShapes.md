@@ -112,53 +112,53 @@ Use the [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/t
 
     <!-- tab: App.vue -->
     <template>
-    <dx-diagram
-        id="diagram"
-        ref="diagram"
-    >
-        <dx-custom-shape
-        :category="'hardware'"
-        :type="'internet'"
-        :title="'Internet'"
-        :background-image-url="'images/shapes/internet.svg'"
-        :background-image-left="0.15"
-        :background-image-top="0"
-        :background-image-width="0.7"
-        :background-image-height="0.7"
-        :default-width="0.75"
-        :default-height="0.75"
-        :default-text="'Internet'"
-        :allow-edit-text="true"
-        :text-left="0"
-        :text-top="0.7"
-        :text-width="1"
-        :text-height="0.3"
+        <DxDiagram
+            id="diagram"
+            ref="diagram"
         >
-        <dx-connection-point
-            :x="0.5"
-            :y="0"
-        />
-        <dx-connection-point
-            :x="0.9"
-            :y="0.5"
-        />
-        <dx-connection-point
-            :x="0.5"
-            :y="1"
-        />
-        <dx-connection-point
-            :x="0.1"
-            :y="0.5"
-        />
-        </dx-custom-shape>
-        ...
-        <dx-toolbox :visible="true">
-        <dx-group
-            :category="'hardware'"
-            :title="'Hardware'"
-        />
-        </dx-toolbox>
-    </dx-diagram>
+            <DxCustomShape
+                :category="'hardware'"
+                :type="'internet'"
+                :title="'Internet'"
+                :background-image-url="'images/shapes/internet.svg'"
+                :background-image-left="0.15"
+                :background-image-top="0"
+                :background-image-width="0.7"
+                :background-image-height="0.7"
+                :default-width="0.75"
+                :default-height="0.75"
+                :default-text="'Internet'"
+                :allow-edit-text="true"
+                :text-left="0"
+                :text-top="0.7"
+                :text-width="1"
+                :text-height="0.3"
+            >
+                <DxConnectionPoint
+                    :x="0.5"
+                    :y="0"
+                />
+                <DxConnectionPoint
+                    :x="0.9"
+                    :y="0.5"
+                />
+                <DxConnectionPoint
+                    :x="0.5"
+                    :y="1"
+                />
+                <DxConnectionPoint
+                    :x="0.1"
+                    :y="0.5"
+                />
+            </DxCustomShape>
+            ...
+            <DxToolbox :visible="true">
+                <DxGroup
+                    :category="'hardware'"
+                    :title="'Hardware'"
+                />
+            </DxToolbox>
+        </DxDiagram>
     </template>
 
     <script>

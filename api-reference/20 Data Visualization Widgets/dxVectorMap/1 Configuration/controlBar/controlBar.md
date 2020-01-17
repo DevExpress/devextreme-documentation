@@ -52,11 +52,11 @@ The following code shows how to use the **controlBar** object to move the contro
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-vector-map ... >
-            <dx-control-bar
+        <DxVectorMap ... >
+            <DxControlBar
                 horizontal-alignment="right"
             />
-        </dx-vector-map>
+        </DxVectorMap>
     </template>
 
     <script>

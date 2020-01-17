@@ -64,7 +64,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 ##### Vue
 
     <template>
-        <dx-button
+        <DxButton
             :ref="myButtonRef" />
     </template>
     <script>

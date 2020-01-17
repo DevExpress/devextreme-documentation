@@ -38,7 +38,7 @@ This allows DevExtreme widgets to support icons from external icon libraries, pr
 ##### Vue
 
     <template>
-        <dx-button ... 
+        <DxButton ... 
             icon="fas fa-home" <!-- Font Awesome 5 -->
             icon="fa fa-home" <!-- Font Awesome 4 -->
             icon="glyphicon glyphicon-home" <!-- Glyphicons -->

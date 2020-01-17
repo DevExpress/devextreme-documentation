@@ -134,10 +134,10 @@ If you delete a recurring appointment from the data source, all its occurrences 
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-button 
+            <DxButton 
                 text="Delete" 
                 @click="deleteAppointment" />
-            <dx-scheduler :ref="schedulerRef"
+            <DxScheduler :ref="schedulerRef"
                 :data-source="dataSource"
                 :current-date="currentDate" />
         </div>

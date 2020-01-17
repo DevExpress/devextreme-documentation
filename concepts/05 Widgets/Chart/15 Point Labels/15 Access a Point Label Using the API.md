@@ -34,6 +34,63 @@ To access a point label, call the [getLabel()](/api-reference/20%20Data%20Visual
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            ref="chart"
+            ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            getPointLabel () {
+                const series = this.$refs.chart.instance.getSeriesByName("Series 1");
+                const seriesPoints = series.getAllPoints();
+                const label = seriesPoints[0].getLabel();
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.chartRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <Chart ref={this.chartRef} ... >
+                </Chart>
+            );
+        }
+
+        getPointLabel () {
+            const series = this.chartRef.current.instance.getSeriesByName("Series 1");
+            const seriesPoints = series.getAllPoints();
+            const label = seriesPoints[0].getLabel();
+            // ...
+        }
+    }
+
+    export default App;
+
 ---
 
 Once you access a label, you can, for example, hide or show it by calling the **hide()** or **show()** method.

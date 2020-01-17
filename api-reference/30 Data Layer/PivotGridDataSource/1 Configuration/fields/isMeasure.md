@@ -80,7 +80,7 @@ There are no restrictions for rearranging fields in the [areas](/api-reference/3
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

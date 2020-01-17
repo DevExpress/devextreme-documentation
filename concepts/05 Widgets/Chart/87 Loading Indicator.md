@@ -2,7 +2,7 @@ When the **Chart** visualizes local data, loading is instant. But when the **Cha
 
 ![DevExtreme HTML5 JavaScript Charts LoadingIndicator](/images/ChartJS/visual_elements/loading_indicator.png)
 
-To activate the loading indicator, assign **true** to the [loadingIndicator](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/loadingIndicator '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/loadingIndicator/').**show** option. Once data is loaded, the loading indicator will be hidden automatically.
+To activate the loading indicator, assign **true** to the [loadingIndicator](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/loadingIndicator '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/loadingIndicator/').**enabled** option. Once data is loaded, the loading indicator will be hidden automatically.
 
 ---
 ##### jQuery
@@ -11,7 +11,7 @@ To activate the loading indicator, assign **true** to the [loadingIndicator](/ap
         $("#chartContainer").dxChart({
             // ...
             loadingIndicator: {
-                show: true
+                enabled: true
             }
         });
     });
@@ -19,7 +19,7 @@ To activate the loading indicator, assign **true** to the [loadingIndicator](/ap
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-loading-indicator [show]="true"></dxo-loading-indicator>
+        <dxo-loading-indicator [enabled]="true"></dxo-loading-indicator>
     </dx-chart>
 
     <!--TypeScript-->
@@ -35,6 +35,52 @@ To activate the loading indicator, assign **true** to the [loadingIndicator](/ap
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxLoadingIndicator
+                :enabled="true"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxLoadingIndicator
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxLoadingIndicator
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        LoadingIndicator
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <LoadingIndicator
+                        enabled={true}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -71,6 +117,65 @@ If you need to show or hide the loading indicator at runtime, call the [showLoad
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            ref="chart"
+            ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            showLoadingIndicator () {
+                this.$refs.chart.instance.showLoadingIndicator();
+            },
+            hideLoadingIndicator () {
+                this.$refs.chart.instance.hideLoadingIndicator();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.chartRef = React.createRef();
+
+            this.showLoadingIndicator = function() {
+                this.chartRef.current.instance.showLoadingIndicator();
+            }
+
+            this.hideLoadingIndicator = function() {
+                this.chartRef.current.instance.hideLoadingIndicator();
+            }
+        }
+
+        render() {
+            return (
+                <Chart ref={this.chartRef} ... >
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

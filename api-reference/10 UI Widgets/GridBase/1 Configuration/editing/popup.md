@@ -72,13 +72,13 @@ The popup always contains a form whose items are used for editing. Use the [form
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-editing mode="popup">
-                <dx-popup ...
+        <Dx{WidgetName} ... >
+            <DxEditing mode="popup">
+                <DxPopup ...
                     :on-option-changed="logOption"
                 />
-            </dx-editing>
-        </dx-{widget-name}>
+            </DxEditing>
+        </Dx{WidgetName}>
     </template>
 
     <script>

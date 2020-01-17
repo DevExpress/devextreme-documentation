@@ -82,18 +82,18 @@ Declared in [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Wi
 
     <!-- tab: App.vue -->
     <template>
-        <dx-chart ... >
-            <dx-series ... >
-                <dx-label ...>
+        <DxChart ... >
+            <DxSeries ... >
+                <DxLabel ...>
                     <!-- Settings for all point labels of an individual series -->
-                </dx-label>
-            </dx-series>
-            <dx-common-series-settings ... >
-                <dx-label ... >
+                </DxLabel>
+            </DxSeries>
+            <DxCommonSeriesSettings ... >
+                <DxLabel ... >
                     <!-- Settings for all point labels in the Chart -->
-                </dx-label>
-            </dx-common-series-settings>
-        </dx-chart>
+                </DxLabel>
+            </DxCommonSeriesSettings>
+        </DxChart>
     </template>
 
     <script>

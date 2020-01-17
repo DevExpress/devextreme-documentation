@@ -102,7 +102,7 @@ A summary value calculation is conducted in three stages: *start*, in which the 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

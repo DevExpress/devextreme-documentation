@@ -83,6 +83,108 @@ Note that individual settings override type-specific settings which, in turn, ov
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries>
+                <DxPoint ... >
+                    <DxHoverStyle>
+                        <!-- high priority -->
+                    </DxHoverStyle>
+                </DxPoint>
+            </DxSeries>
+            <DxCommonSeriesSettings
+                :area="areaOptions"
+                ...
+            >
+                <DxPoint ... >
+                    <DxHoverStyle>
+                        <!-- low priority -->
+                    </DxHoverStyle>
+                </DxPoint>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeries,
+        DxPoint,
+        DxHoverStyle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeries,
+            DxPoint,
+            DxHoverStyle
+        },
+        data() {
+            return {
+                areaOptions: {
+                    point: {
+                        hoverStyle: {
+                            /* middle priority */
+                        }
+                    }
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Series,
+        Point,
+        HoverStyle
+    } from 'devextreme-react/chart';
+
+    const areaOptions = {
+        point: {
+            hoverStyle: {
+                /* middle priority */
+            }
+        }
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series>
+                        <Point ... >
+                            <HoverStyle>
+                                {/* high priority */}
+                            </HoverStyle>
+                        </Point>
+                    </Series>
+                    <CommonSeriesSettings
+                        area={areaOptions}
+                        ...
+                    >
+                        <Point ... >
+                            <HoverStyle>
+                                {/* low priority */}
+                            </HoverStyle>
+                        </Point>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 To choose which series elements should be highlighted when a user pauses on a series point, specify the [hoverMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/#hoverMode') option. Just like **hoverStyle** above, this option can be specified for all points belonging to an individual series, or for all points belonging to a series of a specific type, or for all series points in the **Chart**.
@@ -124,6 +226,57 @@ To choose which series elements should be highlighted when a user pauses on a se
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxCommonSeriesSettings ... >
+                <DxPoint
+                    hover-mode="allArgumentPoints"/> <!-- or 'onlyPoint' | 'allSeriesPoints' | 'none' -->
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxPoint
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxPoint
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Point
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <CommonSeriesSettings ... >
+                        <Point
+                            hoverMode="allArgumentPoints" /> {/* or 'onlyPoint' | 'allSeriesPoints' | 'none' */}
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

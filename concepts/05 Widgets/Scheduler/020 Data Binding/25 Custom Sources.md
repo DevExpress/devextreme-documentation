@@ -129,7 +129,7 @@ If the **Scheduler** allows a user to add, delete or update appointments, the **
 #####Vue
 
     <template>
-        <dx-scheduler ... 
+        <DxScheduler ... 
             :data-source="dataSource" />
     </template>
     <script>

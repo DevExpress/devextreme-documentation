@@ -68,8 +68,8 @@ The **DataGrid** widget has an integrated filter builder that can be invoked usi
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-data-grid :columns="columns" />
-            <dx-filter-builder :fields="columns" />          
+            <DxDataGrid :columns="columns" />
+            <DxFilterBuilder :fields="columns" />          
         </div>
     </template>
 
@@ -236,13 +236,13 @@ Then, add a button that updates a filter of the **DataGrid**'s data source accor
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-data-grid ... 
+            <DxDataGrid ... 
                :ref="gridRefKey"
             />
-            <dx-filter-builder ... 
+            <DxFilterBuilder ... 
                 :ref="fbRefKey"
             />
-            <dx-button 
+            <DxButton 
                 @click="buttonClick"
                 text="Apply Filter"   
             />               

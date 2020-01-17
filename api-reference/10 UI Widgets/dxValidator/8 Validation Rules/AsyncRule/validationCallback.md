@@ -133,13 +133,13 @@ The following code shows a generic **validationCallback** implementation for a s
 
     <!-- tab: App.vue -->
     <template>
-        <dx-text-box>
-            <dx-validator>
-                <dx-async-rule
+        <DxTextBox>
+            <DxValidator>
+                <DxAsyncRule
                     :validation-callback="validateAsync"
                 />
-            </dx-validator>
-        </dx-text-box>
+            </DxValidator>
+        </DxTextBox>
     </template>
 
     <script>

@@ -45,12 +45,12 @@ Configures the form item's editor.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form ... >
-            <dx-simple-item ...
+        <DxForm ... >
+            <DxSimpleItem ...
                 editor-type="dxDateBox"
                 :editor-options="dateBoxOptions"
             />
-        </dx-form>
+        </DxForm>
     </template>
 
     <script>

@@ -68,13 +68,13 @@ A key used to authenticate the application within the required map provider.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-map ... >
-            <dx-key
+        <DxMap ... >
+            <DxKey
                 bing="MY_BING_MAPS_KEY"
                 google="MY_GOOGLE_MAPS_KEY"
                 googleStatic="MY_GOOGLE_STATIC_MAPS_KEY"
             />
-        </dx-map>
+        </DxMap>
     </template>
 
     <script>

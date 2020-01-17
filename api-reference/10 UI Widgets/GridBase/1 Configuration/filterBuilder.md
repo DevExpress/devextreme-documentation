@@ -64,11 +64,11 @@ See the [FilterBuilder configuration](/api-reference/10%20UI%20Widgets/dxFilterB
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-filter-builder
+        <Dx{WidgetName} ... >
+            <DxFilterBuilder
                 :on-option-changed="logOption"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

@@ -37,6 +37,10 @@ The **customizePoint** function accepts an object providing information about th
                 <td style="text-align:left">index</td>
                 <td>The index of the series point in the points array.</td>
             </tr>
+            <tr>
+                <td style="text-align:left">data</td>
+                <td>An object that contains the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dx{WidgetName}/Chart_Elements/Point/Fields/#data">series point data</a>.</td>
+            </tr>
         </tbody>
     </table>
 </div>

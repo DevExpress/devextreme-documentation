@@ -11,13 +11,37 @@ By default, all the points of a pie are displayed identically. But you can speci
 
 When implementing a callback function for this option, use the argument or value of a point. They can be accessed using the following fields of the function's parameter.
 
-* **argument**    
-The argument of the point.
-* **value**        
-The value of the point.
-* **tag**    
-The tag of the point.
-* **index**        
-The index of the point in the points array.
+ <div class="simple-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align:left">argument</td>
+                <td>The argument of the series point.</td>
+            </tr>
+            <tr>
+                <td style="text-align:left">value</td>
+                <td>The value of the series point.</td>
+            </tr>
+            <tr>
+                <td style="text-align:left">tag</td>
+                <td>The <a href="{basewidgetpath}/Configuration/series/#tagField">tag</a> of the series point.</td>
+            </tr>
+            <tr>
+                <td style="text-align:left">index</td>
+                <td>The index of the series point in the points array.</td>
+            </tr>
+            <tr>
+                <td style="text-align:left">data</td>
+                <td>An object that contains the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dx{WidgetName}/Chart_Elements/Point/Fields/#data">series point data</a>.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 In addition, these values can be accessed using the **this** object.

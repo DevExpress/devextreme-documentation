@@ -1,6 +1,5 @@
-<note>
+[note]
 Resources and resource assignments are optional in the Gantt control.
-</note>
 
 **Resources** specify people responsible for tasks, equipment, materials, etc.
 

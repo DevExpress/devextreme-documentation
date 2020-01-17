@@ -117,13 +117,13 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
         }
 
         deleteRow() {
-            this.grid.instance.deleteRow(1);
+            this.treeList.deleteRow(1);
         }
 
         render() {
             return (
                 <TreeList  
-                    :ref="gridRef">
+                    ref={this.treeListRef}>
                     <Editing
                         mode="row"
                         confirmDelete={false}
@@ -214,13 +214,13 @@ Note that in the [batch mode](/concepts/05%20Widgets/TreeList/20%20Editing/10%20
         }
 
         undeleteRow() {
-            this.grid.instance.undeleteRow(1);
+            this.treeList.undeleteRow(1);
         }
 
         render() {
             return (
                 <TreeList  
-                    :ref="gridRef"
+                    ref={this.treeListRef}
                 />
             );
         }

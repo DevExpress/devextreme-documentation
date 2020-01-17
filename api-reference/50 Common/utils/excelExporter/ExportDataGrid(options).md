@@ -57,6 +57,62 @@ Refer to the following topics for more details about its members:
 // TODO describe params
 Configures the load panel, that shown when data exporting. The ‘loadPanel’ object fields are described in https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/loadPanel/
 
+Code snippets:
+---
+##### jQuery
+
+    <!--JavaScript-->
+    onExporting: e => { 
+        var workbook = new ExcelJS.Workbook(); 
+        var worksheet = workbook.addWorksheet('Main sheet'); 
+    
+        DevExpress.excelExporter.exportDataGrid({ 
+                worksheet: worksheet, 
+                component: e.component 
+        }).then(function() {
+            // save to .xlsx file
+            workbook.xlsx.writeBuffer().then(function(buffer) { 
+                saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
+            }); 
+        }); 
+        e.cancel = true; 
+    };
+
+##### Angular
+
+    <!--TypeScript-->
+    import { exportDataGrid } from 'devextreme/exporter/exceljs/excelExporter';
+    import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
+    // ...
+    export class AppComponent {
+        onExporting(e) {
+            var workbook = new ExcelJS.Workbook();    
+            var worksheet = workbook.addWorksheet('Main sheet');
+
+            exportDataGrid({
+                component: e.component,
+                worksheet: worksheet
+            }).then(function() {
+                // save to .xlsx file
+                workbook.xlsx.writeBuffer().then(function(buffer) { 
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
+                }); 
+            }); 
+            e.cancel = true; 
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxDataGridModule
+        ],
+        // ...
+    })
+---
+
+[note]You are free to customize this approach, for example by referring to any existing worksheet, or by post-processing the document after the export has taken place.
+
 ---
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelCellCustomization/"

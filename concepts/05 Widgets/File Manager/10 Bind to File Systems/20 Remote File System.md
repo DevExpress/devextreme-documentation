@@ -4,16 +4,17 @@ The **FileManager** widget provides the [Remote](/Documentation/ApiReference/UI_
 
 Assign the [Remote](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/) file provider to the [fileProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider) option to connect to a file system located on the server. The Remote file provider exposes APIs to get a file system's hierarchy and manage the items.
 
-Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#endpointUrl) option to the Url at which the widget can access the file system items.
+Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#endpointUrl) option to the Url at which the widget can get the file system items.
+
+The data object sent back from the server contains attributes that store the file system items' key, name, size, modification date and so on. If these attributes' names differ from the conventional names, use the **[fieldName]Expr** options to map item properties.
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
-        $("#file-manager").dxFileManager({
-            name: "fileManager",
+        $("#file-manager").dxFileManager({            
             fileProvider: new DevExpress.fileProviders.Remote({
                 endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
             }),
@@ -22,7 +23,7 @@ Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxFileManagerModule } from 'devextreme-angular';
@@ -55,7 +56,7 @@ Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_
         // ...
     </dx-file-manager>
 
-#####Vue
+##### Vue
 
     <template>
         <DxFileManager
@@ -87,7 +88,7 @@ Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_
     };
     </script>
 
-#####React
+##### React
 
     import React from 'react';
     import FileManager, { Permissions } from 'devextreme-react/file-manager';

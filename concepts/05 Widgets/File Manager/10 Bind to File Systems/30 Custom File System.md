@@ -26,14 +26,11 @@ Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets
     <!--JavaScript-->
     $("#file-manager").dxFileManager({
         fileProvider: new DevExpress.fileProviders.Custom({
-            getItems: getItems,
-            // your code
+            getItems: function (pathInfo) {
+                // your code
+            }         
         }),        
     });
-    
-    function getItems(pathInfo) {
-        // your code
-    }
 
 ---
 

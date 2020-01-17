@@ -7,7 +7,6 @@ The following code creates the **FileManager** widget and adds it to your page.
     <!-- tab: index.js -->
     $(function () {
         $("#file-manager").dxFileManager({
-            name: "fileManager",
             fileProvider: fileSystem,
             currentPath: "Documents",
             height: 450,

@@ -1,6 +1,6 @@
 This section describes the **Gantt** widget's UI elements and lists the main members that affect their appearance and functionality.
 
-![DevExtreme Gantt Chart Elements](Content/images/doc/20_1/Gantt/gantt-elements.png)
+![DevExtreme Gantt Chart Elements](/images/Gantt/gantt-elements.png)
 
 - [Task](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/Task/)
 

@@ -2,7 +2,7 @@
 
 ![DevExtreme Gantt Chart - Dependencies](/images/Gantt/Dependency.png)
 
-The Gantt supports the following dependency types:
+The **Gantt** widget supports the following dependency types:
 
 - Finish to Start (FS) - The predecessor task's endpoint specifies the successor task's start point. 
 

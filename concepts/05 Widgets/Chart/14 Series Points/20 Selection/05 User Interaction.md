@@ -5,13 +5,10 @@ When a user selects a series point, it changes its style to the one specified by
 - **series**.**point**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/selectionStyle/')        
 The selection style for all points of an individual series.
 
-- **commonSeriesSettings**.**%seriesType%**.**point**.**selectionStyle**                
-The selection style for all points belonging to a series of a specific type ([line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/line.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#line'), [area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/area.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#area'), etc.).
-
 - **commonSeriesSettings**.**point**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/point/selectionStyle/')         
 The selection style for all series points in the **Chart**.
 
-Note that individual settings override type-specific settings which, in turn, override common settings.
+Individual series settings override common settings.
 
 ---
 ##### jQuery
@@ -27,13 +24,6 @@ Note that individual settings override type-specific settings which, in turn, ov
                 }
             },
             commonSeriesSettings: {
-                area: {
-                    point: {
-                        selectionStyle: {
-                            // middle priority
-                        }
-                    }
-                },
                 point: {
                     selectionStyle: {
                         // low priority
@@ -60,13 +50,6 @@ Note that individual settings override type-specific settings which, in turn, ov
                     <!-- low priority -->
                 </dxo-selection-style>
             </dxo-point>
-            <dxo-area>
-                <dxo-point>
-                    <dxo-selection-style>
-                        <!-- middle priority -->
-                    </dxo-selection-style>
-                </dxo-point>
-            </dxo-area>
         </dxo-common-series-settings>
     </dx-chart>
 
@@ -96,10 +79,7 @@ Note that individual settings override type-specific settings which, in turn, ov
                     </DxSelectionStyle>
                 </DxPoint>
             </DxSeries>
-            <DxCommonSeriesSettings
-                :area="areaOptions"
-                ...
-            >
+            <DxCommonSeriesSettings ... >
                 <DxPoint ... >
                     <DxSelectionStyle>
                         <!-- low priority -->
@@ -124,17 +104,6 @@ Note that individual settings override type-specific settings which, in turn, ov
             DxSeries,
             DxPoint,
             DxSelectionStyle
-        },
-        data() {
-            return {
-                areaOptions: {
-                    point: {
-                        selectionStyle: {
-                            /* middle priority */
-                        }
-                    }
-                }
-            };
         }
     }
     </script>
@@ -150,14 +119,6 @@ Note that individual settings override type-specific settings which, in turn, ov
         SelectionStyle
     } from 'devextreme-react/chart';
 
-    const areaOptions = {
-        point: {
-            selectionStyle: {
-                /* middle priority */
-            }
-        }
-    };
-
     class App extends React.Component {
         render() {
             return (
@@ -169,10 +130,7 @@ Note that individual settings override type-specific settings which, in turn, ov
                             </SelectionStyle>
                         </Point>
                     </Series>
-                    <CommonSeriesSettings
-                        area={areaOptions}
-                        ...
-                    >
+                    <CommonSeriesSettings ... >
                         <Point ... >
                             <SelectionStyle>
                                 {/* low priority */}
@@ -189,7 +147,7 @@ Note that individual settings override type-specific settings which, in turn, ov
 ---
 
 
-To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this option can be specified for all points belonging to an individual series, or for all points belonging to a series of a specific type, or for all series points in the **Chart**.
+To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this option can be specified for all points belonging to an individual series or for all series points in the **Chart**.
 
 ---
 ##### jQuery

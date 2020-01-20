@@ -18,11 +18,6 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
                 // ...  
             }],
             commonSeriesSettings: {
-                stackedline: { // or any other series type
-                    point: {
-                        // Settings for all points belonging to Stacked Line series
-                    }
-                },
                 point: {
                     // Settings for all points of all series
                 }
@@ -39,11 +34,6 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
             </dxo-point>
         </dxi-series>
         <dxo-common-series-settings ... >
-            <dxo-stackedline> <!-- or any other series type -->
-                <dxo-point ... >
-                    <!-- Settings for all points belonging to Stacked Line series -->
-                </dxo-point>
-            </dxo-stackedline>
             <dxo-point ... >
                 <!-- Settings for all points of all series -->
             </dxo-point>
@@ -74,8 +64,7 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
                     <!-- Settings for all points of an individual series -->
                 </DxPoint>
             </DxSeries>
-            <DxCommonSeriesSettings ...
-                :stackedline="stackedlineOptions"> <!-- or any other series type -->
+            <DxCommonSeriesSettings ... >
                 <DxPoint ... >
                     <!-- Settings for all points of all series -->
                 </DxPoint>
@@ -96,15 +85,6 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
             DxCommonSeriesSettings,
             DxSeries,
             DxPoint
-        },
-        data() {
-            return {
-                stackedlineOptions: {
-                    point: {
-                        /* Settings for all points belonging to Stacked Line series */
-                    }
-                }
-            };
         }
     }
     </script>
@@ -119,12 +99,6 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
         Point
     } from 'devextreme-react/chart';
 
-    const stackedlineOptions = {
-        point: {
-            /* Settings for all points belonging to Stacked Line series */
-        }
-    };
-
     class App extends React.Component {
         render() {
             return (
@@ -134,8 +108,7 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
                             {/* Settings for all points of an individual series */}
                         </Point>
                     </Series>
-                    <CommonSeriesSettings ...
-                        stackedline={stackedlineOptions}> {/* or any other series type */}
+                    <CommonSeriesSettings ... >
                         <Point ... >
                             {/* Settings for all points of all series */}
                         </Point>
@@ -149,9 +122,9 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20Widge
 
 ---
 
-A dedicated object is not provided for series whose points have a distinctive appearance ([Range Bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/') and [Bubble](/concepts/05%20Widgets/Chart/11%20Series%20Types/50%20Bubble%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Bubble_Series/'), all [bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/') and [financial](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Financial_Series/') series), and all point-related settings are declared directly in the **series**, ***%seriesType%***, or **commonSeriesSettings** object. Refer to the description of a particular series type in the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference for more details on the available settings.
+A dedicated object is not provided for series whose points have a distinctive appearance ([Range Bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/') and [Bubble](/concepts/05%20Widgets/Chart/11%20Series%20Types/50%20Bubble%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Bubble_Series/'), all [bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/') and [financial](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Financial_Series/') series), and all point-related settings are declared directly in the **series** or **commonSeriesSettings** object. Refer to the description of a particular series type in the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference for more details on the available settings.
 
-[note] Individual settings override type-specific settings which, in turn, override common settings.
+[note] Individual settings override common settings.
 
 Settings specified in the manner described above apply to a congregation of series points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#customizePoint') option. This function must return an object with options for the point that you want to customize.
 

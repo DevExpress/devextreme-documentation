@@ -90,7 +90,7 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
         },
         methods: {
             deleteRow() {
-                this.$refs.DataGrid.instance.deleteRow(1);
+                this.$refs.dataGrid.instance.deleteRow(1);
             }
         },
         data() {}

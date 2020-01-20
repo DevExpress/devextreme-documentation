@@ -228,15 +228,7 @@ Alternatively, error bar values can be calculated according to an algorithm. In 
 
 ---
 
-If error bars should have uniform settings, you can specify them using one of the following objects.
-
-- **commonSeriesSettings**.**%seriesType%**.**valueErrorBar**      
-Settings for all error bars belonging to the series of a specific [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') ([line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/line.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#line'), [bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/bar.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#bar'), etc.).
- 
-- **commonSeriesSettings**.[valueErrorBar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/valueErrorBar/')      
-Settings for all error bars in the **Chart**.
-
-Note that settings for individual series override type-specific settings which, in turn, override common settings.
+If error bars should have uniform settings, you can specify them using one of the **commonSeriesSettings**.[valueErrorBar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/valueErrorBar/') object. Individual series settings override common settings.
 
 ---
 ##### jQuery

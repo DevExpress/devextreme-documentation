@@ -46,6 +46,53 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxEditing
+                mode="row"
+                :allow-deleting="true"
+                :confirm-delete="false"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import { DxTreeList, DxEditing } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList, 
+            DxEditing
+        },
+        data() {}
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import { TreeList, Editing } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Editing
+                        mode="row"
+                        confirmDelete={false}
+                        allowDeleting={true} 
+                    />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

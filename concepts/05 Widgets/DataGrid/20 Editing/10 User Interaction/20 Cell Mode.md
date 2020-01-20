@@ -6,7 +6,7 @@ If you [validate data](/concepts/05%20Widgets/DataGrid/20%20Editing/50%20Data%20
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget DataGrid Editing Cell Mode Validation](/images/DataGrid/editing/cell_mode_validation.png)
 
-Clicking a *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the code below to hide this dialog.
+Clicking a *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md') option to hide this dialog:
 
 ---
 ##### jQuery
@@ -17,9 +17,7 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
             // ...
             editing: {
                 mode: 'cell', 
-                texts: {
-                    confirmDeleteMessage: null
-                }
+                confirmDelete: false
             }
         });
     });
@@ -28,8 +26,10 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-editing mode="cell" [allowDeleting]="true">
-            <dxo-texts [confirmDeleteMessage]="null"></dxo-texts>
+        <dxo-editing 
+            mode="cell" 
+            [allowDeleting]="true"
+            [confirmDelete]="false">
         </dxo-editing>
     </dx-data-grid>
 
@@ -46,6 +46,53 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxEditing
+                mode="row"
+                :allow-deleting="true"
+                :confirm-delete="false"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import { DxDataGrid, DxEditing } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid, 
+            DxEditing
+        },
+        data() {}
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import { DataGrid, Editing } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Editing
+                        mode="row"
+                        confirmDelete={false}
+                        allowDeleting={true} 
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

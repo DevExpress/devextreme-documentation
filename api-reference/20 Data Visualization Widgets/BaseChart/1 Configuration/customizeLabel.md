@@ -17,7 +17,7 @@ All point labels in a chart are identical by default, but you can specify a uniq
 
 The **customizeLabel** function accepts an object providing information about the series point that the label belongs to. This object contains the following fields.
 
-<div class="simple-table">
+ <div class="simple-table">
     <table>
         <thead>
             <tr>
@@ -45,6 +45,10 @@ The **customizeLabel** function accepts an object providing information about th
             <tr>
                 <td style="text-align:left">index</td>
                 <td>The index of the series point in the points array.</td>
+            </tr>
+            <tr>
+                <td style="text-align:left">data</td>
+                <td>An object that contains the <a href="{basewidgetpath}/Chart_Elements/Point/Fields/#data">series point data</a>.</td>
             </tr>
         </tbody>
     </table>

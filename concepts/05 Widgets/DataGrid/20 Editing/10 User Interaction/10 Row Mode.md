@@ -27,7 +27,7 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
         <dxo-editing 
             mode="row" 
             [allowDeleting]="true"
-            [allowDeleting]="true">
+            [confirmDelete]="false">
         </dxo-editing>
     </dx-data-grid>
 

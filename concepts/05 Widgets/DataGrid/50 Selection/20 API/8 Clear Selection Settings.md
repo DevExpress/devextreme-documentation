@@ -158,6 +158,7 @@ Call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Method
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ...
+            ref="dataGrid"
             :selected-row-keys.sync="selectedRowKeys">
         </DxDataGrid>
     </template>
@@ -180,6 +181,9 @@ Call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Method
         methods: {
             deselectAllRows() {
                 this.selectedRowKeys.length = 0;
+            },
+            deselectVisibleRows() {
+                this.$refs['dataGrid'].instance.deselectAll();
             }
         }
     }
@@ -201,13 +205,19 @@ Call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Method
             this.state = {
                 selectedRowKeys: []
             }
+            this.dataGridRef = React.createRef();
             this.deselectAllRows = this.deselectAllRows.bind(this);
+            this.deselectVisibleRows = this.deselectVisibleRows.bind(this);
         }
 
         deselectAllRows() {
             this.setState({
                 selectedRowKeys: []
             });
+        }
+
+        deselectVisibleRows() {
+            this.dataGridRef.current.instance.deselectAll();
         }
 
         handleOptionChange(e) {
@@ -221,6 +231,7 @@ Call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Method
         render() {
             return (
                 <DataGrid ...
+                    ref="dataGridRef"
                     selectedRowKeys={this.state.selectedRowKeys}
                     onOptionChanged={this.handleOptionChange}>
                 </DataGrid>

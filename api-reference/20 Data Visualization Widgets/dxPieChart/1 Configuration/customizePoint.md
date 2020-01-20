@@ -38,7 +38,7 @@ When implementing a callback function for this option, use the argument or value
             </tr>
             <tr>
                 <td style="text-align:left">data</td>
-                <td>An object that contains the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dx{WidgetName}/Chart_Elements/Point/Fields/#data">series point data</a>.</td>
+                <td>An object that contains the <a href="{basewidgetpath}/Chart_Elements/Point/Fields/#data">series point data</a>.</td>
             </tr>
         </tbody>
     </table>

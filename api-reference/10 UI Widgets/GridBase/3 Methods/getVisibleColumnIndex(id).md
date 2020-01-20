@@ -3,13 +3,13 @@ id: GridBase.getVisibleColumnIndex(id)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the index of a visible column.
 
 ##### return: Number
-<!-- Description goes here -->
+The column's index.
 
 ##### param(id): Number | String
-<!-- Description goes here -->
+The ID of a visible column whose index should be returned.  
 
 ---
 <!-- Description goes here -->

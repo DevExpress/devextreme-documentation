@@ -64,7 +64,7 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid
-            ref="DataGrid">
+            ref="dataGrid">
             <DxEditing
                 mode="row"
                 :allow-deleting="true"
@@ -109,21 +109,21 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
         constructor(props) {
             super(props);
 
-            this.DataGridRef = React.createRef();
+            this.dataGridRef = React.createRef();
             this.deleteRow = this.deleteRow.bind(this);
         }
-        get DataGrid() {
-            return this.DataGridRef.current.instance;
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
         }
 
         deleteRow() {
-            this.DataGrid.deleteRow(1);
+            this.dataGrid.deleteRow(1);
         }
 
         render() {
             return (
                 <DataGrid  
-                    ref={this.DataGridRef}>
+                    ref={this.dataGridRef}>
                     <Editing
                         mode="row"
                         confirmDelete={false}
@@ -175,7 +175,7 @@ Note that in the [batch mode](/concepts/05%20Widgets/DataGrid/20%20Editing/10%20
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid
-            ref="DataGrid">
+            ref="dataGrid">
         </DxDataGrid>
     </template>
 
@@ -188,7 +188,7 @@ Note that in the [batch mode](/concepts/05%20Widgets/DataGrid/20%20Editing/10%20
         },
         methods: {
             undeleteRow() {
-                this.$refs.DataGrid.instance.undeleteRow(1);
+                this.$refs.dataGrid.instance.undeleteRow(1);
             }
         },
         data() {}
@@ -206,21 +206,21 @@ Note that in the [batch mode](/concepts/05%20Widgets/DataGrid/20%20Editing/10%20
         constructor(props) {
             super(props);
 
-            this.DataGridRef = React.createRef();
+            this.dataGridRef = React.createRef();
             this.undeleteRow = this.undeleteRow.bind(this);
         }
-        get DataGrid() {
-            return this.DataGridRef.current.instance;
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
         }
 
         undeleteRow() {
-            this.DataGrid.undeleteRow(1);
+            this.dataGrid.undeleteRow(1);
         }
 
         render() {
             return (
                 <DataGrid  
-                    ref={this.DataGridRef}
+                    ref={this.dataGridRef}
                 />
             );
         }

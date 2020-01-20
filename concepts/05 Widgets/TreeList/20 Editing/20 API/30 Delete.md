@@ -1,4 +1,4 @@
-Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/deleteRow(rowIndex).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#deleteRowrowIndex') method to delete a specific row from the data source. This method invokes a confirmation dialog that allows a user to cancel deletion. The [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#confirmDelete') option allows to hide this dialog, thus a row is instantly deleted from the data source:
+Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/deleteRow(rowIndex).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#deleteRowrowIndex') method to delete a specific row from the data source. This method invokes a confirmation dialog that allows a user to cancel deletion. The [confirmDelete](/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#confirmDelete] option allows to hide this dialog, thus a row is instantly deleted from the data source:
 
 ---
 ##### jQuery

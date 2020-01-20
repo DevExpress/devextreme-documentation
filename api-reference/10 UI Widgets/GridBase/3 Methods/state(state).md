@@ -13,6 +13,8 @@ After the state is set, the **{WidgetName}** reloads data to apply sorting, filt
  
 Refer to the [state()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/state().md '{basewidgetpath}/Methods/#state') method description for an example of how to work with the widget state.
 
+You can set the *'state'* parameter to *'null'* to reset the widget's state to default.
+
 #####See Also#####
 #include common-link-callmethods
 - [stateStoring](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/stateStoring '{basewidgetpath}/Configuration/stateStoring/')

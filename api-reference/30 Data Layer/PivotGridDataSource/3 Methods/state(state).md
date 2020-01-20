@@ -10,3 +10,5 @@ The state returned by the [state()](/api-reference/30%20Data%20Layer/PivotGridDa
 
 ---
 Refer to the [state()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/state().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#state') method's description for an example.
+
+You can set the *'state'* parameter to *'null'* to reset the widget's state to default.

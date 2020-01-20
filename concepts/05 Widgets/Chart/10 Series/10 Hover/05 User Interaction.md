@@ -3,13 +3,10 @@ When a user pauses on a series, the series changes its style to the one specifie
 - **series**.[hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/hoverStyle/')        
 The hover style for an individual series.
 
-- **commonSeriesSettings**.**%seriesType%**.**hoverStyle**                
-The hover style for all series of a specific type ([line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/line.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#line'), [bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/bar.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#bar'), etc.).
-
 - **commonSeriesSettings**.[hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/hoverStyle/')         
 The hover style for all series in the **Chart**.
 
-Note that individual settings override type-specific settings which, in turn, override common settings.
+Individual series settings override common settings.
 
 ---
 ##### jQuery
@@ -23,11 +20,6 @@ Note that individual settings override type-specific settings which, in turn, ov
                 }
             },
             commonSeriesSettings: {
-                bar: {
-                    hoverStyle: {
-                        // middle priority
-                    }
-                },
                 hoverStyle: {
                     // low priority
                 }
@@ -47,11 +39,6 @@ Note that individual settings override type-specific settings which, in turn, ov
             <dxo-hover-style>
                 <!-- low priority -->
             </dxo-hover-style>
-            <dxo-bar>
-                <dxo-hover-style>
-                    <!-- middle priority -->
-                </dxo-hover-style>
-            </dxo-bar>
         </dxo-common-series-settings>
     </dx-chart>
 
@@ -71,7 +58,7 @@ Note that individual settings override type-specific settings which, in turn, ov
 
 ---
 
-To choose which series elements should be highlighted when a user pauses on a series, specify the **hoverMode** option. Just like **hoverStyle**, this option can be specified for all series in the **Chart**, for all series of a specific type, or for an individual series. Note also that depending on the series type, the **hoverMode** option accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **hoverMode** option description.
+To choose which series elements should be highlighted when a user pauses on a series, specify the **hoverMode** option. Just like **hoverStyle**, this option can be specified for all series in the **Chart** or for an individual series. Depending on the series type, the **hoverMode** option accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **hoverMode** option description.
 
 ---
 ##### jQuery
@@ -79,28 +66,28 @@ To choose which series elements should be highlighted when a user pauses on a se
     <!--JavaScript-->$(function() {
         $("#chartContainer").dxChart({
             // ...
-            commonSeriesSettings: {
-                bar: {
-                    hoverMode: 'allSeriesPoints' // or 'onlyPoint' | 'allArgumentPoints' | 'none'
-                },
-                line: {
-                    hoverMode: 'includePoints' // or 'nearestPoint' | 'excludePoints' | 'none'
-                }
-            }
+            series: [{
+                // ...
+                type: "bar",
+                hoverMode: "allSeriesPoints" // or "onlyPoint" | "allArgumentPoints" | "none"
+            }, {
+                type: "line",
+                hoverMode: "includePoints" // or "nearestPoint" | "excludePoints" | "none"
+            }]
         });
     });
 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-common-series-settings ... >
-            <dxo-bar
-                hoverMode="allSeriesPoints"> <!-- or 'onlyPoint' | 'allArgumentPoints' | 'none' -->
-            </dxo-bar>
-            <dxo-line
-                hoverMode="includePoints"> <!-- or 'nearestPoint' | 'excludePoints' | 'none' -->
-            </dxo-line>
-        </dxo-common-series-settings>
+        <dxi-series
+            type="bar"
+            hoverMode="allSeriesPoints"> <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
+        </dxi-series>
+        <dxi-series
+            type="line"
+            hoverMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
+        </dxi-series>
     </dx-chart>
 
     <!--TypeScript-->

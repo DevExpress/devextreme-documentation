@@ -1,8 +1,8 @@
-Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider  to implement custom APIs to access and use file systems.
+Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider to implement custom APIs to access and use file systems.
 
 ![FileManager - Custom Provider](Content/images/doc/20_1/FileManager/custom-provider.png)
 
-1. Assign the [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider to the [fileProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider) option to implement a custom file provider and bind the FileManager widget to it.
+Assign the [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider to the [fileProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider) option to implement a custom file provider and bind the **FileManager** widget to it.
 
 ---
 
@@ -17,7 +17,7 @@ Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets
 
 ---
 
-2. Use the [getItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/Configuration/#getItems) option to get file system items. The **[fieldName]Expr** options specify the attribute names that stores a file system item's key, name, size, modification date and so on. 
+Use the [getItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/Configuration/#getItems) option to get file system items. The **[fieldName]Expr** options specify the attribute names that stores a file system item's key, name, size, modification date and so on.
 
 ---
 
@@ -34,7 +34,7 @@ Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets
 
 ---
 
-3. Implement APIs to handle file operations (add, delete, rename, and so on). For example:
+Implement APIs to handle file operations (add, delete, rename, and so on). For example:
 
 ---
 
@@ -55,6 +55,7 @@ Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets
     function deleteItem(item) {
         // your code
     }
+
 ---
 
 #include common-demobutton with {

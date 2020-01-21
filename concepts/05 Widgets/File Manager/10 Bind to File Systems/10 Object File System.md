@@ -1,10 +1,10 @@
-The **FileManager** widget provides the Object file provider to manage files and folders in an in-memory array of JSON objects.
+The **FileManager** widget provides the Array file provider to manage files and folders in an in-memory array of JSON objects.
 
 ![FileManager - Hierarchical Data Structure](Content/images/doc/20_1/FileManager/Hierarchical-file-system.png)
 
-Create an Object file provider and assign the array of hierarchical JSON objects to the provider's [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data) option to bind the **FileManager** widget to a hierarchical data structure.
+Create an Array file provider and assign the array of hierarchical JSON objects to the provider's [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data) option to bind the **FileManager** widget to a hierarchical data structure.
 
-The Object file provider automatically binds data objects to the widget if the data objects have the default 'name', 'size', 'dateModified', etc. fields in its structure. For example:
+The Array file provider automatically binds data objects to the widget if the data objects have the default 'name', 'size', 'dateModified', etc. fields in its structure. For example:
 
     var fileSystem = [
     {

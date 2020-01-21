@@ -23,7 +23,7 @@ The **Gantt** widget gets data for resources and resource assignments from the f
 
 - Resource Assignments: [dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/#dataSource) 
 
-The objects from the data sources are automatically bound to the widget if the these objects have the default data fields in its structure. For example:
+The objects from the data sources are automatically bound to the widget if these objects have the default data fields in its structure. For example:
 
     // Resource
     {        

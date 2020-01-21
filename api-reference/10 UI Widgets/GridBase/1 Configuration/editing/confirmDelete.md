@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies if the confirmation is required when a user deletes a row.
+Specifies if confirmation is required when a user deletes a row.
 
 ---
 <!-- Description goes here -->

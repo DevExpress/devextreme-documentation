@@ -9,7 +9,7 @@ Gets the index of a visible column.
 The column's index.
 
 ##### param(id): Number | String
-The ID of a visible column whose index should be returned.  
+The column's index, data field, caption, type, or unique name. Refer to [columnOption(id)]({basewidgetpath}Methods/#columnOptionid) for details. 
 
 ---
 <!-- Description goes here -->

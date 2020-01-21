@@ -79,5 +79,5 @@ In the example below, the **FileManager** widget displays hierarchical data stor
 ---
 
 #####See Also#####
-[Bind to an Object File System](/Documentation/Guide/Widgets/FileManager/Bind_to_File_Systems/Hierarchical_File_System)
+[Bind to an Object File System](/Documentation/Guide/Widgets/FileManager/Bind_to_File_Systems/#Object_File_System)
 

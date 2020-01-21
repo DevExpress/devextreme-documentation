@@ -2,7 +2,7 @@ In this mode a user edits data row by row. When a user clicks an *"Edit"* button
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Editing Row Mode Editing State](/images/treelist/editing/row_mode_editing_state.png)
 
-Clicking a *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the code below to hide this dialog.
+Clicking the *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#confirmDelete') option to hide this dialog.
 
 ---
 ##### jQuery
@@ -15,9 +15,7 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
                 // ...
                 mode: 'row',
                 allowDeleting: true,
-                texts: {
-                    confirmDeleteMessage: null
-                }
+                confirmDelete: false
             }
         });
     });
@@ -26,8 +24,10 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing mode="row" [allowDeleting]="true">
-            <dxo-texts [confirmDeleteMessage]="null"></dxo-texts>
+        <dxo-editing 
+            mode="row"
+            [confirmDelete]="false"
+            [allowDeleting]="true">
         </dxo-editing>
     </dx-tree-list>
 
@@ -44,6 +44,53 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxEditing
+                mode="row"
+                :allow-deleting="true"
+                :confirm-delete="false"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import { DxTreeList, DxEditing } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList, 
+            DxEditing
+        },
+        data() {}
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import { TreeList, Editing } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Editing
+                        mode="row"
+                        confirmDelete={false}
+                        allowDeleting={true} 
+                    />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

@@ -1,4 +1,4 @@
-Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider to implement custom APIs to access and use file systems.
+Use the **FileManager** widget's [Custom](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Custom/) file provider to implement custom APIs to access and manage file systems. This provider allows you to handle each file operation manually. Use the custom provider when it's necessary to connect the widget to an API service with custom request or response format.
 
 ![FileManager - Custom Provider](Content/images/doc/20_1/FileManager/custom-provider.png)
 
@@ -34,7 +34,7 @@ Use the [getItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Pro
 
 ---
 
-Implement APIs to handle file operations (add, delete, rename, and so on). For example:
+Implement APIs to handle file operations (add, delete, rename, and so on).
 
 ---
 

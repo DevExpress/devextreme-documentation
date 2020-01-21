@@ -21,9 +21,3 @@ Instead of the exception, you can get a truthy or falsy value that can be used i
     if (chartInstance) {
         // Your code goes here
     }
-
-#####See Also#####
-- [Get and Set Options](/concepts/00%20Getting%20Started/10%20Widget%20Basics%20-%20jQuery/05%20Get%20and%20Set%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Get_and_Set_Options/')
-- [Call Methods](/concepts/00%20Getting%20Started/10%20Widget%20Basics%20-%20jQuery/10%20Call%20Methods.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Call_Methods/')
-- [Handle Events](/concepts/00%20Getting%20Started/10%20Widget%20Basics%20-%20jQuery/15%20Handle%20Events.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Handle_Events/')
-- [3rd-Party Frameworks Integration API](/concepts/05%20Widgets/zz%20Common/15%20Advanced/40%203rd-Party%20Frameworks%20Integration%20API '/Documentation/Guide/Widgets/Common/Advanced/3rd-Party_Frameworks_Integration_API/')

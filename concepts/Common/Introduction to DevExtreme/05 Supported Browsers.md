@@ -1,5 +1,3 @@
-DevExtreme supports the following browsers.
-
 **Desktop browsers**
 
 - ![Microsoft Edge](/images/PhoneJS/edge.png) Microsoft Edge

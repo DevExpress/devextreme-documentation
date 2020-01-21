@@ -146,17 +146,17 @@ If none of the available editors suit your requirements, you can define a custom
         constructor(props) {
             super(props);
             this.state = {
-         		employee: {
+                 employee: {
                     name: "John Heart",
                     picture: "https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png",
                     notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
                 }       
-            }
+            };
         }
 
-    	setNotes = (e) => {
+        setNotes = (e) => {
             this.setState(prevState => ({
-				employee: {
+                employee: {
                     ...prevState.employee,
                     notes: e.value
                 }
@@ -335,14 +335,14 @@ You can modify automatically generated items using the [customizeItem](/api-refe
                 phone: "+1(213) 555-9392"
             },
             customizeItem: function (item) {
-                if (item.itemType == "simple") {
+                if(item.itemType == "simple") {
                     item.label = {
                         location: "top"
                     };
-                    if (item.dataField === "email" || item.dataField === "phone") {
+                    if(item.dataField === "email" || item.dataField === "phone") {
                         item.colSpan = 3;
                     }
-                    if (item.dataField === "phone") {
+                    if(item.dataField === "phone") {
                         item.helpText = "Example: +1 (111) 111-1111";
                     }
                 }
@@ -368,15 +368,15 @@ You can modify automatically generated items using the [customizeItem](/api-refe
             email: "jheart@dx-email.com",
             phone: "+1(213) 555-9392"
         }
-        form_customizeItem (item) {
-            if (item.itemType == "simple") {
+        form_customizeItem(item) {
+            if(item.itemType == "simple") {
                 item.label = {
                     location: "top"
                 };
-                if (item.dataField === "email" || item.dataField === "phone") {
+                if(item.dataField === "email" || item.dataField === "phone") {
                     item.colSpan = 3;
                 }
-                if (item.dataField === "phone") {
+                if(item.dataField === "phone") {
                     item.helpText = "Example: +1 (111) 111-1111";
                 }
             }
@@ -421,15 +421,15 @@ You can modify automatically generated items using the [customizeItem](/api-refe
             }
         },
         methods: {
-            customizeItem (item) {
-                if (item.itemType == "simple") {
+            customizeItem(item) {
+                if(item.itemType == "simple") {
                     item.label = {
                         location: "top"
                     }
-                    if (item.dataField === "email" || item.dataField === "phone") {
+                    if(item.dataField === "email" || item.dataField === "phone") {
                         item.colSpan = 3;
                     }
-                    if (item.dataField === "phone") {
+                    if(item.dataField === "phone") {
                         item.helpText = "Example: +1 (111) 111-1111";
                     }
                 }
@@ -456,15 +456,15 @@ You can modify automatically generated items using the [customizeItem](/api-refe
             phone: "+1(213) 555-9392"
         }
 
-        customizeItem (item) {
-            if (item.itemType == "simple") {
+        customizeItem(item) {
+            if(item.itemType == "simple") {
                 item.label = {
                     location: "top"
                 }
-                if (item.dataField === "email" || item.dataField === "phone") {
+                if(item.dataField === "email" || item.dataField === "phone") {
                     item.colSpan = 3;
                 }
-                if (item.dataField === "phone") {
+                if(item.dataField === "phone") {
                     item.helpText = "Example: +1 (111) 111-1111";
                 }
             }

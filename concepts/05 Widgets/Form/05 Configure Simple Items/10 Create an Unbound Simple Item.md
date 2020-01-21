@@ -121,7 +121,7 @@ In the following example, the `order` item contains the [DataGrid](/concepts/05%
                 name="order"
                 :visible="isOrderVisible">
                 <template #default>
-                	<DxDataGrid :data-source="orders" />
+                    <DxDataGrid :data-source="orders" />
                 </template>
             </DxSimpleItem>
         </DxForm>

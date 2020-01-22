@@ -4,7 +4,7 @@ The **FileManager** widget provides the [Remote](/Documentation/ApiReference/UI_
 
 Assign the [Remote](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/) file provider to the [fileProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider) option to connect the widget to a file system located on the server. The Remote file provider exposes APIs to get the file system hierarchy and to manage items.
 
-Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#endpointUrl) option to the Url at which the widget can get the file system items.
+Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#endpointUrl) option to the Url of an endpoint used to access and modify a file system.
 
 You can also use helpers for ASP.NET Core and ASP.NET MVC to access different file systems on the server side according to the protocol the **FileManager** widget uses. Refer to the [online documentation](https://docs.devexpress.com/AspNetCore/DevExtreme.AspNet.Mvc.FileManagement) and [online demos](https://demos.devexpress.com/ASPNetCore/Demo/FileManager/Overview/) to get more information about the helpers. 
 

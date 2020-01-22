@@ -1,6 +1,7 @@
 ---
 id: dxSchedulerAppointment
 type: Object
+inherits: CollectionWidgetItem
 ---
 ---
 ##### shortDescription

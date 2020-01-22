@@ -1,6 +1,6 @@
 The **FileManager** widget allows you to provide custom thumbnails for a file system's items. 
 
-![](~/images/FileManager/custom-thumbnails.png)
+![DevExtreme FileManager - Custom Thumbnails](/images/FileManager/custom-thumbnails.png)
 
 Handle the [customizeThumbnail](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#customizeThumbnail) function to specify which icons the widget should display for files and folders. This function returns an icon specified for a file system item according to its type (file and folder), extension and so on.
 

@@ -1,3 +1,7 @@
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
+}
+
 The **FileManager** widget allows you to provide custom thumbnails for a file system's items. 
 
 ![DevExtreme FileManager - Custom Thumbnails](/images/FileManager/custom-thumbnails.png)
@@ -120,7 +124,3 @@ You can specify an icon in the following formats:
     }
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
-}

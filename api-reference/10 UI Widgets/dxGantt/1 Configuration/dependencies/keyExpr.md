@@ -106,7 +106,7 @@ Specifies the data field that provides keys for dependencies.
             );
         }
     }
-    <!-- tab: App.js -->
+    <!-- tab: data.js -->
     export const dependencies = [{
         'key': 0,
         'predecessorId': 1,

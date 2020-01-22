@@ -37,7 +37,7 @@ You can also specify upload file restrictions:
                 remove: true,
                 upload: true
             },
-                allowedFileExtensions: [".js", ".json", ".css"]
+            allowedFileExtensions: [".js", ".json", ".css"]
             upload: {
                 maxFileSize: 1000000
             },
@@ -58,9 +58,7 @@ You can also specify upload file restrictions:
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager" 
         [allowedFileExtensions]="allowedFileExtensions" >
-        <dxo-upload
-            maxFileSize="1000000"
-        </dxo-upload>
+        <dxo-upload maxFileSize="1000000" />
         <dxo-permissions 
             create="true"
             copy="true"

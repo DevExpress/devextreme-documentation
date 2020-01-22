@@ -27,10 +27,10 @@ The **DataGrid** widget raises the [selectionChanged](/api-reference/10%20UI%20W
     // ...
     export class AppComponent {
         onSelectionChanged (e) { // Handler of the "selectionChanged" event
-            let currentSelectedRowKeys = e.currentSelectedRowKeys;
-            let currentDeselectedRowKeys = e.currentDeselectedRowKeys;
-            let allSelectedRowKeys = e.selectedRowKeys;
-            let allSelectedRowsData = e.selectedRowsData;
+            const currentSelectedRowKeys = e.currentSelectedRowKeys;
+            const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+            const allSelectedRowKeys = e.selectedRowKeys;
+            const allSelectedRowsData = e.selectedRowsData;
             // ...
         }
     }
@@ -41,6 +41,72 @@ The **DataGrid** widget raises the [selectionChanged](/api-reference/10%20UI%20W
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @selection-changed="onSelectionChanged">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            onSelectionChanged(e) {
+                const currentSelectedRowKeys = e.currentSelectedRowKeys;
+                const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+                const allSelectedRowKeys = e.selectedRowKeys;
+                const allSelectedRowsData = e.selectedRowsData;
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.onSelectionChanged = this.onSelectionChanged.bind(this);
+        }
+        
+        onSelectionChanged(e) {
+            const currentSelectedRowKeys = e.currentSelectedRowKeys;
+            const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+            const allSelectedRowKeys = e.selectedRowKeys;
+            const allSelectedRowsData = e.selectedRowsData;
+            // ...
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onSelectionChanged={this.onSelectionChanged}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

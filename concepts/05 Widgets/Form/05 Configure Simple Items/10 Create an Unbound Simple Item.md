@@ -103,6 +103,151 @@ In the following example, the `order` item contains the [DataGrid](/concepts/05%
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee">
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem name="showOrder">
+                <DxLabel text="Show the Order" />
+                <template #default>
+                    <DxCheckBox :value.sync="isOrderVisible" />
+                </template>
+            </DxSimpleItem>
+            <DxSimpleItem 
+                name="order"
+                :visible="isOrderVisible">
+                <template #default>
+                    <DxDataGrid :data-source="orders" />
+                </template>
+            </DxSimpleItem>
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxSimpleItem,
+        DxLabel
+    } from 'devextreme-vue/form';
+    import DxCheckBox from 'devextreme-vue/check-box';
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxForm,
+            DxSimpleItem,
+            DxLabel,
+            DxCheckBox,
+            DxDataGrid
+        },
+        data() {
+            return {
+                employee: {
+                    firstName: "John",
+                    lastName: "Smith"
+                },
+                orders: [{
+                    productName: "DesktopLCD 19",
+                    cost: 68,
+                    salePrice: 110
+                }, {
+                    productName: "DesktopLCD 21",
+                    cost: 75,
+                    salePrice: 120
+                }],
+                isOrderVisible: false
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        SimpleItem,
+        Label
+    } from 'devextreme-react/form';
+    import CheckBox from 'devextreme-react/check-box';
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isOrderVisible: false
+            };
+            this.renderCheckBox = this.renderCheckBox.bind(this);
+            this.handleCheckBoxValueChange = this.handleCheckBoxValueChange.bind(this);
+            this.renderDataGrid = this.renderDataGrid.bind(this);
+        }
+
+        employee = {
+            firstName: "John",
+            lastName: "Smith"
+        }
+        orders = [{
+            productName: "DesktopLCD 19",
+            cost: 68,
+            salePrice: 110
+        }, {
+            productName: "DesktopLCD 21",
+            cost: 75,
+            salePrice: 120
+        }]
+
+        renderCheckBox = () => {
+            return (
+                <CheckBox
+                    value={this.state.isOrderVisible}
+                    onValueChanged={this.handleCheckBoxValueChange}
+                />
+            );
+        }
+
+        handleCheckBoxValueChange = (e) => {
+            this.setState({
+                isOrderVisible: e.value
+            });
+        }
+
+        renderDataGrid = () => {
+            return <DataGrid dataSource={this.orders} />
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem
+                        name="showOrder"
+                        render={this.renderCheckBox}>
+                        <Label text="Show the Order" />
+                    </SimpleItem>
+                    <SimpleItem 
+                        name="order"
+                        visible={this.state.isOrderVisible}
+                        render={this.renderDataGrid}
+                    />
+                </Form>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

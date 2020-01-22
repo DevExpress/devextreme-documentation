@@ -53,5 +53,40 @@ Specifies the data field that provides keys for dependencies.
         <dxo-dependencies [dataSource]="dependencies" [keyExpr]="key" ></dxo-dependencies>
         // ...
     </dx-gantt>
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt>
+            <DxDependencies 
+                :data-source="dependenciesDataSource"
+                keyExpr="key"
+                />
+            // ...
+        </DxGantt>
+    </template>
+    <script>
+    import {
+        DxGantt,
+        DxDependencies,
+        // ...
+    } from 'devextreme-vue/gantt';
+
+    import {
+        dependencies,
+        // ...
+    } from './data.js';
+    // ...
+    </script>
+    <!-- tab: data.js -->
+    export const dependencies = [{
+        'key': 0,
+        'predecessorId': 1,
+        'successorId': 2,
+        'type': 0
+    },
+    // ...
+    ];
+
 ---

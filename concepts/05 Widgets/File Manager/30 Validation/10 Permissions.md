@@ -39,7 +39,7 @@ You can also specify upload file restrictions:
                 remove: true,
                 upload: true
             },
-            allowedFileExtensions: [".js", ".json", ".css"]
+            allowedFileExtensions: [".js", ".json", ".css"],
             upload: {
                 maxFileSize: 1000000
             },

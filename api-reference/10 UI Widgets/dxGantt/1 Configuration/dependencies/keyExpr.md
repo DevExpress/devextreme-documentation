@@ -89,4 +89,31 @@ Specifies the data field that provides keys for dependencies.
     // ...
     ];
 
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    import { tasks, dependencies, resources, resourceAssignments } from './data.js';
+    class App extends React.Component {
+        render() {
+            return (
+                <Gantt>
+                    <Dependencies 
+                        dataSource={dependencies} 
+                        keyExpr="key" />
+                    // ...
+                </Gantt>
+            );
+        }
+    }
+    <!-- tab: App.js -->
+    export const dependencies = [{
+        'key': 0,
+        'predecessorId': 1,
+        'successorId': 2,
+        'type': 0
+    }, 
+    // ...
+    ];
+    
 ---

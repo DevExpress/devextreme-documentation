@@ -31,4 +31,27 @@ Specifies the data field that provides keys for dependencies.
     // ...
     ];
 
+##### Angular
+
+    <!-- tab: app.service.ts -->
+    export class Dependency {
+        key: number;
+        predecessorId: number;
+        successorId: number;
+        type: number;
+    }
+    let dependencies: Dependency[] = [{
+        'key': 0,
+        'predecessorId': 1,
+        'successorId': 2,
+        'type': 0
+    },
+    // ...
+    ];
+    <!-- tab: app.component.html -->
+    <dx-gantt >
+        <dxo-dependencies [dataSource]="dependencies" [keyExpr]="key" ></dxo-dependencies>
+        // ...
+    </dx-gantt>
+    
 ---

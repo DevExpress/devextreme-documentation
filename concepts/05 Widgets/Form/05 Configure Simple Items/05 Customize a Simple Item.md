@@ -8,10 +8,11 @@ If none of the available editors suit your requirements, you can define a custom
         $("#formContainer").dxForm({
             formData: {
                 name: "John Heart",
-                picture: "https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png"
+                picture: "https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png",
+                notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
             },
-            items: [{ 
-                dataField: "name",
+            items: ["name", { 
+                dataField: "notes",
                 template: function (data, itemElement) {
                     itemElement.append("<div id='textAreaContainer'>")
                                .dxTextArea({
@@ -35,15 +36,17 @@ If none of the available editors suit your requirements, you can define a custom
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
+        <dxi-item dataField="name"></dxi-item>
         <dxi-item 
-            dataField="name"
-            [template]="'nameTemplate'"></dxi-item>
+            dataField="notes"
+            [template]="'notesTemplate'">
+        </dxi-item>
         <dxi-item 
             dataField="picture" 
             [template]="'pictureTemplate'">
         </dxi-item>
-        <div *dxTemplate="let data of 'nameTemplate'">
-            <dx-text-area [(value)]="data.component.option('formData')[data.dataField]"></dx-text-area>
+        <div *dxTemplate="let data of 'notesTemplate'">
+            <dx-text-area [(value)]="employee.notes"></dx-text-area>
         </div>
         <div *dxTemplate="let data of 'pictureTemplate'">
             <img src="{{data.editorOptions.value}}">
@@ -51,21 +54,142 @@ If none of the available editors suit your requirements, you can define a custom
     </dx-form>
 
     <!--TypeScript-->
-    import { DxFormModule } from "devextreme-angular";
+    import { DxFormModule, DxTextAreaModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         employee = {
             name: "John Heart",
-            picture: "https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png"
+            picture: "https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png",
+            notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
         }
     }
     @NgModule({
         imports: [
             // ...
-            DxFormModule
+            DxFormModule,
+            DxTextAreaModule
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee">
+            <DxSimpleItem
+                data-field="name"
+            />
+            <DxSimpleItem
+                data-field="notes"
+                template="notes"
+            />
+            <DxSimpleItem
+                data-field="picture"
+                template="picture"
+            />
+            <template #notes>
+                <DxTextArea
+                    :value.sync="employee.notes"
+                />
+            </template>
+            <template #picture="{ data }">
+                <img :src="data.editorOptions.value">
+            </template>
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxSimpleItem
+    } from 'devextreme-vue/form';
+    import DxTextArea from 'devextreme-vue/text-area';
+
+    export default {
+        components: {
+            DxForm,
+            DxSimpleItem,
+            DxTextArea
+        },
+        data() {
+            return {
+                employee: {
+                    name: "John Heart",
+                    picture: "https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png",
+                    notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        SimpleItem
+    } from 'devextreme-react/form';
+    import TextArea from 'devextreme-react/text-area';
+
+    const renderPicture = (data) => <img src={data.editorOptions.value} />
+
+    class App extends React.Component {     
+        constructor(props) {
+            super(props);
+            this.state = {
+                 employee: {
+                    name: "John Heart",
+                    picture: "https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png",
+                    notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
+                }       
+            };
+        }
+
+        setNotes = (e) => {
+            this.setState(prevState => ({
+                employee: {
+                    ...prevState.employee,
+                    notes: e.value
+                }
+            }))
+        }
+        
+        renderNotes = (data) => {
+            return (
+                <TextArea
+                    value={this.state.employee.notes}
+                    onValueChanged={this.setNotes}
+                />
+            );
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.state.employee}>
+                    <SimpleItem dataField="name" />
+                    <SimpleItem
+                        dataField="notes"
+                        render={this.renderNotes}
+                    />
+                    <SimpleItem
+                        dataField="picture"
+                        render={renderPicture}
+                    />
+                </Form>
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -117,6 +241,83 @@ A simple item can be accompanied by a line of text that gives a hint, for exampl
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee">
+            <DxSimpleItem
+                data-field="name"
+                :is-required="true"
+            />
+            <DxSimpleItem
+                data-field="phone"
+                help-text="Example: +1(111)111-1111"
+            />
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxSimpleItem
+    } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxSimpleItem
+        },
+        data() {
+            return {
+                employee: {
+                    name: "John Heart",
+                    phone: "+1(360)684-1334"
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        SimpleItem
+    } from 'devextreme-react/form';
+
+    class App extends React.Component {     
+        employee = {
+            name: "John Heart",
+            phone: "+1(360)684-1334"
+        }  
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}>
+                    <SimpleItem
+                        dataField="name"
+                        isRequired={true}
+                    />
+                    <SimpleItem
+                        dataField="phone"
+                        helpText="Example: +1(111)111-1111"
+                    />
+                </Form>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 You can modify automatically generated items using the [customizeItem](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/customizeItem.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#customizeItem') function. This function is called for each item before it is rendered. To access the item, use the function's parameter. Its structure mirrors the [Simple Item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/') structure, therefore, you can modify any option available for a simple item.
@@ -134,14 +335,14 @@ You can modify automatically generated items using the [customizeItem](/api-refe
                 phone: "+1(213) 555-9392"
             },
             customizeItem: function (item) {
-                if (item.itemType == "simple") {
+                if(item.itemType == "simple") {
                     item.label = {
                         location: "top"
                     };
-                    if (item.dataField === "email" || item.dataField === "phone") {
+                    if(item.dataField === "email" || item.dataField === "phone") {
                         item.colSpan = 3;
                     }
-                    if (item.dataField === "phone") {
+                    if(item.dataField === "phone") {
                         item.helpText = "Example: +1 (111) 111-1111";
                     }
                 }
@@ -167,15 +368,15 @@ You can modify automatically generated items using the [customizeItem](/api-refe
             email: "jheart@dx-email.com",
             phone: "+1(213) 555-9392"
         }
-        form_customizeItem (item) {
-            if (item.itemType == "simple") {
+        form_customizeItem(item) {
+            if(item.itemType == "simple") {
                 item.label = {
                     location: "top"
                 };
-                if (item.dataField === "email" || item.dataField === "phone") {
+                if(item.dataField === "email" || item.dataField === "phone") {
                     item.colSpan = 3;
                 }
-                if (item.dataField === "phone") {
+                if(item.dataField === "phone") {
                     item.helpText = "Example: +1 (111) 111-1111";
                 }
             }
@@ -188,6 +389,97 @@ You can modify automatically generated items using the [customizeItem](/api-refe
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :customize-item="customizeItem">
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm
+        },
+        data() {
+            return {
+                employee: {
+                    firstName: "John",
+                    lastName: "Heart",
+                    email: "jheart@dx-email.com",
+                    phone: "+1(213) 555-9392"
+                }
+            }
+        },
+        methods: {
+            customizeItem(item) {
+                if(item.itemType == "simple") {
+                    item.label = {
+                        location: "top"
+                    }
+                    if(item.dataField === "email" || item.dataField === "phone") {
+                        item.colSpan = 3;
+                    }
+                    if(item.dataField === "phone") {
+                        item.helpText = "Example: +1 (111) 111-1111";
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form from 'devextreme-react/form';
+
+    class App extends React.Component {     
+        employee = {
+            firstName: "John",
+            lastName: "Heart",
+            email: "jheart@dx-email.com",
+            phone: "+1(213) 555-9392"
+        }
+
+        customizeItem(item) {
+            if(item.itemType == "simple") {
+                item.label = {
+                    location: "top"
+                }
+                if(item.dataField === "email" || item.dataField === "phone") {
+                    item.colSpan = 3;
+                }
+                if(item.dataField === "phone") {
+                    item.helpText = "Example: +1 (111) 111-1111";
+                }
+            }
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}
+                    customizeItem={this.customizeItem}>
+                </Form>
+            );
+        }
+    }
+    export default App;
 
 ---
 

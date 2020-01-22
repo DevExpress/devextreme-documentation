@@ -35,6 +35,90 @@ You can specify an icon in the following formats:
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { DxFileManagerModule } from 'devextreme-angular';
+    import { Service, FileItem } from './app.service';
+    // ...
+    export class AppComponent {
+        // ...
+        customizeIcon(fileManagerItem) {
+            if (fileManagerItem.isDirectory)
+                return "images/thumbnails/folder.svg";
+            var fileExtension = fileManagerItem.getExtension();
+            switch (fileExtension) {
+                case ".txt":
+                    return "images/thumbnails/doc-txt.svg";
+                case ".rtf":
+                    return "images/thumbnails/doc-rtf.svg";
+                case ".xml":
+                    return "images/thumbnails/doc-xml.svg";
+            }
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager            
+            :customize-thumbnail="customizeIcon" 
+            // ...
+        </DxFileManager>
+    </template>
+    <script>
+    import { DxFileManager, DxPermissions, DxItemView } from 'devextreme-vue/file-manager';
+    export default {
+    // ...    
+        methods: {
+            customizeIcon: function(fileManagerItem) {
+                if (fileManagerItem.isDirectory)
+                { return 'images/thumbnails/folder.svg'; }
+                var fileExtension = fileManagerItem.getExtension();
+                switch (fileExtension) {
+                    case '.txt':
+                    return 'images/thumbnails/doc-txt.svg';
+                    case '.rtf':
+                    return 'images/thumbnails/doc-rtf.svg';
+                    case '.xml':
+                    return 'images/thumbnails/doc-xml.svg';
+                }
+            }
+    }
+    };
+    </script>
+
+
+##### React
+
+    <!-- tab: App.js -->
+    import FileManager, { Permissions, ItemView } from 'devextreme-react/file-manager';
+    // ...
+    class App extends React.Component {
+        render() {
+            return (
+            <FileManager
+                customizeThumbnail={ this.customizeIcon }
+                // ...
+            </FileManager>
+            );
+        }
+        customizeIcon(fileManagerItem) {
+            if (fileManagerItem.isDirectory)
+            { return 'images/thumbnails/folder.svg'; }
+            var fileExtension = fileManagerItem.getExtension();
+            switch (fileExtension) {
+            case '.txt':
+                return 'images/thumbnails/doc-txt.svg';
+            case '.rtf':
+                return 'images/thumbnails/doc-rtf.svg';
+            case '.xml':
+                return 'images/thumbnails/doc-xml.svg';
+            }
+        }
+    }
+
 ---
 
 #include common-demobutton with {

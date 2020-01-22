@@ -18,11 +18,13 @@ You can allow or deny users access to the following actions:
 
 You can also specify upload file restrictions:
     
-- [allowedFileExtensions](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions) option - Specifies the allowed upload file extensions. The **FileManager** widget does not upload a file and displays an error message when the file's extension is not allowed.
+- [allowedFileExtensions](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions) option - Specifies the allowed upload file extensions. The **FileManager** widget does not upload a file and displays the error message when the file's extension is not allowed.
 
     ![DevExtreme File Manager - Allowed File Extension](/images/FileManager/allowed-file-extension-error-message.png)
 
-- [maxFileSize](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#maxFileSize) option - Specifies the maximum upload file size.
+- [maxFileSize](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/upload/#maxFileSize) option - Specifies the maximum upload file size. The widget does not upload a file and displays the following error message when the file's size exceeds the maximum upload file size.
+
+    ![DevExtreme File Manager - Max File Size](/images/FileManager/max-file-size-error-message.png)
 
 ---
 ##### jQuery

@@ -2,7 +2,7 @@ The **FileManager** widget provides the [Remote](/Documentation/ApiReference/UI_
 
 ![](Content/images/doc/20_1/FileManager/remote-file-provider.png)
 
-Assign the [Remote](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/) file provider to the [fileProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider) option to connect the widget to a file system located on the server. The Remote file provider exposes APIs to get a file system's hierarchy and manage the items.
+Assign the [Remote](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/) file provider to the [fileProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider) option to connect the widget to a file system located on the server. The Remote file provider exposes APIs to get the file system hierarchy and to manage items.
 
 Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#endpointUrl) option to the Url at which the widget can get the file system items.
 

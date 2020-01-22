@@ -4,7 +4,7 @@ The **FileManager** widget provides the Array file provider to manage files and 
 
 Create an Array file provider and assign the array of hierarchical JSON objects to the provider's [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data) option to bind the **FileManager** widget to a hierarchical data structure.
 
-The provider automatically binds data objects to the widget if the data objects have default fields in its structure. For example:
+The provider automatically binds data objects to the widget if the data objects have default fields in their structure. For example:
 
     var fileSystem = [
     {
@@ -22,7 +22,7 @@ The provider automatically binds data objects to the widget if the data objects 
     // ...
     ];
 
-In the example below, the **FileManager** widget displays hierarchical data stored in an in-memory array that contains field with conventional names.
+In the example below, the **FileManager** widget displays hierarchical data stored in an in-memory array that contains fields with conventional names.
 
 ---
 

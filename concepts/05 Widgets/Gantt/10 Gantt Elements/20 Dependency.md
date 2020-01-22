@@ -20,7 +20,7 @@ The **Gantt** widget supports the following dependency types:
 
     ![DevExtreme Gantt Chart - Finish-To-Finish Dependency](/images/Gantt/dependency-type-sf.png)
 
-The **Gantt** widget gets data for dependencies from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource)). Dependency objects from the data source are automatically bound to the widget if these objects have the default 'id', 'type', etc. data fields in its structure. For example:
+The **Gantt** widget gets data for dependencies from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource)). Dependency objects from the data source are automatically bound to the widget if these objects have the default 'id', 'type', etc., data fields in their structure. For example:
 
     {
         'id': 0,
@@ -50,7 +50,7 @@ The following example illustrates how to bind the widget to dependencies stored 
     // your code
     ];
 
-If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map dependency's id, type, and so on.
+If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map dependency's id, type, etc.
 
     <!-- tab: index.js -->
     $(function() {

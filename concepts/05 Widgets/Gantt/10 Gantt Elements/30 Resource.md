@@ -36,7 +36,7 @@ The objects from the data sources are automatically bound to the widget if these
         'taskId': 3,
         'resourceId': 1
     }
-The following example illustrates how to bind the widget to resource and resource assignment objects stored in the data sources that contains data fields with conventional names:
+The following example illustrates how to bind the widget to resources and resource assignment objects stored in the data sources that contain data fields with conventional names:
 
     <!-- tab: index.js -->
     $(function() {

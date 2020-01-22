@@ -20,7 +20,7 @@ A **milestone** is a task with the same start and endpoint. Milestones can be us
 
 ![DevExtreme Gantt Chart - Milestone](/images/Gantt/milestone.png)
 
-The **Gantt** widget gets data for tasks from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource)). Task objects from the data source are automatically bound to the widget if these objects have the default 'title', 'start', 'end', etc. data fields in its structure. For example:
+The **Gantt** widget gets data for tasks from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource)). Task objects from the data source are automatically bound to the widget if these objects have the default 'title', 'start', 'end', etc., data fields in their structure. For example:
 
     {
         'id': 1,
@@ -31,7 +31,7 @@ The **Gantt** widget gets data for tasks from a data source ([dataSource](/Docum
         'progress': 31       
     }
 
-The following example illustrates how to bind the widget to tasks stored in the data source that contains data fields with conventional names:
+The following example illustrates how to bind the widget to tasks stored in the data source, which contains data fields with conventional names:
 
     <!-- tab: index.js -->
     $(function() {
@@ -54,7 +54,7 @@ The following example illustrates how to bind the widget to tasks stored in the 
     // your code
     ];
 
-If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map task title, progress, start/end points, and so on.
+If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map task title, progress, start/end points, etc.
 
     <!-- tab: index.js -->
     $(function() {

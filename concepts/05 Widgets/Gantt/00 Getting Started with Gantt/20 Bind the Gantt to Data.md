@@ -1,7 +1,7 @@
 The **Gantt** widget requires separate data sources for [tasks](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/), [resources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/), [resource assignments](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/) and [dependencies](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/). 
 
 [note]
-The **tasks** data source is required, whereas the data sources that contain [resources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/), [dependencies](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/) and [resource assignments](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/) are optional.
+The **tasks** data source is required, whereas the data sources that contain [resources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/), [dependencies](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/), and [resource assignments](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/) are optional.
 [/note]
 
 The example below illustrates how to bind the **Gantt** widget to the data sources that contain the same field names as the widget uses in its internal binding settings. 

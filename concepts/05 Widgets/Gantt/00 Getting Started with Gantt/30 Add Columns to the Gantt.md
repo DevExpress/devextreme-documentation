@@ -1,4 +1,4 @@
-Use the [columns](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#columns/) option to specify columns that the **Gantt** widget should display in the task list. The widget gets the columns from the [tasks](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/) data source.
+Use the [columns](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#columns/) option to specify columns that the **Gantt** widget should display in the task list. The widget gets columns from the [tasks](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/) data source.
 
     <!-- tab: index.js -->
     $(function() {

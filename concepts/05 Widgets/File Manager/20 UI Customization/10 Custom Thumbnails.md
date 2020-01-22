@@ -2,12 +2,14 @@ The **FileManager** widget allows you to provide custom thumbnails for a file sy
 
 ![](~/images/FileManager/custom-thumbnails.png)
 
-Handle the [customizeThumbnail](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#customizeThumbnail) function to specify which icons the widget should display for files and folders. This function returns the following information about an icon specified for a file system item according to its type (file and folder), extension and so on.
+Handle the [customizeThumbnail](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#customizeThumbnail) function to specify which icons the widget should display for files and folders. This function returns an icon specified for a file system item according to its type (file and folder), extension and so on.
 
-- The icon's URL
-- The icon's name if the icon is from the DevExtreme icon library
-- The icon's CSS class if the icon is from an external icon library (see External Icon Libraries)
-- The icon in the Base64 format
+You can specify an icon in the following formats:
+
+- The icon's URL.
+- The icon's name if the icon is from the DevExtreme icon library.
+- The icon's CSS class if the icon is from an external icon library (see External Icon Libraries).
+- The icon in the Base64 format.
 
 ---
 

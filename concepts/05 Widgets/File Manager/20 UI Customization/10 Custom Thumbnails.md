@@ -6,9 +6,9 @@ The **FileManager** widget allows you to provide custom thumbnails for a file sy
 
 ![DevExtreme FileManager - Custom Thumbnails](/images/FileManager/custom-thumbnails.png)
 
-Handle the [customizeThumbnail](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#customizeThumbnail) function to specify which icons the widget should display for files and folders. This function returns different icons based on a file system item's type (file or folder), extension, or other parameters.
+Handle the [customizeThumbnail](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/customizeThumbnail.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#customizeThumbnail') function to specify which icons the widget should display for files and folders. This function returns different icons based on a file system item's type (file or folder), extension, or other parameters.
 
-You can specify an icon in the following formats:
+You can specify an icon in the following formats: 
 
 - The icon's URL.
 - The icon's name if the icon is from the DevExtreme icon library.
@@ -82,11 +82,11 @@ You can specify an icon in the following formats:
                 var fileExtension = fileManagerItem.getExtension();
                 switch (fileExtension) {
                     case '.txt':
-                    return 'images/thumbnails/doc-txt.svg';
+                        return 'images/thumbnails/doc-txt.svg';
                     case '.rtf':
-                    return 'images/thumbnails/doc-rtf.svg';
+                        return 'images/thumbnails/doc-rtf.svg';
                     case '.xml':
-                    return 'images/thumbnails/doc-xml.svg';
+                        return 'images/thumbnails/doc-xml.svg';
                 }
             }
     }
@@ -113,12 +113,12 @@ You can specify an icon in the following formats:
             { return 'images/thumbnails/folder.svg'; }
             var fileExtension = fileManagerItem.getExtension();
             switch (fileExtension) {
-            case '.txt':
-                return 'images/thumbnails/doc-txt.svg';
-            case '.rtf':
-                return 'images/thumbnails/doc-rtf.svg';
-            case '.xml':
-                return 'images/thumbnails/doc-xml.svg';
+                case '.txt':
+                    return 'images/thumbnails/doc-txt.svg';
+                case '.rtf':
+                    return 'images/thumbnails/doc-rtf.svg';
+                case '.xml':
+                    return 'images/thumbnails/doc-xml.svg';
             }
         }
     }

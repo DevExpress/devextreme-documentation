@@ -12,7 +12,7 @@ If this option is **true**, the widget initially loads only the root nodes. Chil
 
 The virtual mode has the following restrictions:
 
-- The [dataSource](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/dataSource/') option should be set to a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance able to filter items by [parent ID](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#parentIdExpr').
+- The [dataSource](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#dataSource') option should be set to a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance able to filter items by [parent ID](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#parentIdExpr').
 
 - The [dataStructure](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#dataStructure') option should be set to *"plain"*.
 

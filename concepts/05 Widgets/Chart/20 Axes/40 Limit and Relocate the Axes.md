@@ -34,6 +34,52 @@ The visual range of arguments/values on an axis should include all arguments/val
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                :visual-range="[1950, 2000]"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        visualRange={[1950, 2000]}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Axes can be relocated to their opposite side using the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#position') option. Note that available positions for each axis depend on whether the chart is [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#rotated') or not.
@@ -77,6 +123,53 @@ Axes can be relocated to their opposite side using the [position](/api-reference
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis position="top"/>
+            <DxValueAxis position="right"/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxValueAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxValueAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        ValueAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis position="top" />
+                    <ValueAxis position="right" />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

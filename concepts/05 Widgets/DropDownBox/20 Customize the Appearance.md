@@ -242,7 +242,7 @@ You can customize the text field and the drop-down button using the [fieldTempla
     <!--tab: App.vue-->
     <template>
         <div>
-            <dx-drop-down-box
+            <DxDropDownBox
                 :value.sync="selectedFruit"
                 :opened.sync="isDropDownBoxOpened"
                 :data-source="dataSource"
@@ -255,25 +255,25 @@ You can customize the text field and the drop-down button using the [fieldTempla
                     <div class="custom-item">
                         <img :src="data.image">
                         <div class="product-name">
-                            <dx-text-box
+                            <DxTextBox
                                 :value="data.text"
                                 :readOnly="true">
-                            </dx-text-box>
+                            </DxTextBox>
                         </div>
                     </div>
                 </div>
-                <dx-drop-down-options
+                <DxDropDownOptions
                     title="Fruits"
                     :show-title="true"
                     :full-screen="true"
                     :show-close-button="true">
-                </dx-drop-down-options>
-                <dx-list
+                </DxDropDownOptions>
+                <DxList
                     :data-source="dataSource"
                     selection-mode="single"
                     @selection-changed="changeDropDownBoxValue($event)">
-                </dx-list>
-            </dx-drop-down-box>
+                </DxList>
+            </DxDropDownBox>
         </div>
     </template>
 

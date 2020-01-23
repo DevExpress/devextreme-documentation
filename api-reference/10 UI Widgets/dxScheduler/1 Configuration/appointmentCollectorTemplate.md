@@ -74,12 +74,12 @@ A template name or container.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-scheduler ...
+        <DxScheduler ...
             appointment-collector-template="myTemplate">
             <template #myTemplate="{ data }">
                 <!-- your markup goes here -->
             </template>
-      </dx-scheduler>
+        </DxScheduler>
     </template>
 
     <script>

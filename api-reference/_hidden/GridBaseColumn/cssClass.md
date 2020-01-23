@@ -97,11 +97,11 @@ In the following code, this option is assigned a `cell-highlighted` CSS class th
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :data-source="employees">
-            <dx-column data-field="ID" />
-            <dx-column data-field="position" css-class="cell-highlighted" />
-        </dx-{widget-name}>
+            <DxColumn data-field="ID" />
+            <DxColumn data-field="position" css-class="cell-highlighted" />
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

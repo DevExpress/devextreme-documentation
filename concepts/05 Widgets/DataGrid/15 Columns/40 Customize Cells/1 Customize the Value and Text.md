@@ -22,6 +22,11 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
     import { DxDataGridModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        constructor() {
+            // Uncomment the line below if the function should be executed in the component's context
+            // this.priceColumn_customizeText = this.priceColumn_customizeText.bind(this);
+        }
+
         priceColumn_customizeText (cellInfo) {
             return cellInfo.value + "$";
         }
@@ -38,6 +43,76 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
     <dx-data-grid ... >
         <dxi-column dataField="Price" [customizeText]="priceColumn_customizeText"></dxi-column>
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Price"
+                :customize-text="priceColumn_customizeText"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        methods: {
+            priceColumn_customizeText(cellInfo) {
+                return cellInfo.value + '$';
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            // Uncomment the line below if the function should be executed in the component's context
+            // this.priceColumn_customizeText = this.priceColumn_customizeText.bind(this);
+        }
+
+        priceColumn_customizeText(cellInfo) {
+            return cellInfo.value + '$';
+        }
+
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="Price"
+                        customizeText={priceColumn_customizeText}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -65,6 +140,11 @@ To use the text displayed in cells in those data processing operations, specify 
     import { DxDataGridModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        constructor() {
+            // Uncomment the line below if the function should be executed in the component's context
+            // this.fullNameColumn_calculateCellValue = this.fullNameColumn_calculateCellValue.bind(this);
+        }
+
         fullNameColumn_calculateCellValue (rowData) {
             return rowData.firstName + " " + rowData.lastName;
         }
@@ -81,6 +161,76 @@ To use the text displayed in cells in those data processing operations, specify 
     <dx-data-grid ... >
         <dxi-column caption="Full Name" [calculateCellValue]="fullNameColumn_calculateCellValue"></dxi-column>
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                caption="Full Name"
+                :calculate-cell-value="fullNameColumn_calculateCellValue"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        methods: {
+            fullNameColumn_calculateCellValue(rowData) {
+                return rowData.firstName + ' ' + rowData.lastName;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            // Uncomment the line below if the function should be executed in the component's context
+            // this.fullNameColumn_calculateCellValue = this.fullNameColumn_calculateCellValue.bind(this);
+        }
+
+        fullNameColumn_calculateCellValue(rowData) {
+            return rowData.firstName + ' ' + rowData.lastName;
+        }
+
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        caption="Full Name"
+                        calculateCellValue={fullNameColumn_calculateCellValue}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

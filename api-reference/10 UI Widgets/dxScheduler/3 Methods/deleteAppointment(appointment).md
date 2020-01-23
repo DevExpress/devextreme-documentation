@@ -6,7 +6,7 @@ id: dxScheduler.deleteAppointment(appointment)
 Deletes an appointment from the timetable and its object from the data source.
 
 ##### param(appointment): Object
-An appointment object from the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/dataSource/').
+An appointment object from the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource').
 
 ---
 If you delete a recurring appointment from the data source, all its occurrences are also deleted from the timetable:
@@ -134,10 +134,10 @@ If you delete a recurring appointment from the data source, all its occurrences 
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-button 
+            <DxButton 
                 text="Delete" 
                 @click="deleteAppointment" />
-            <dx-scheduler :ref="schedulerRef"
+            <DxScheduler :ref="schedulerRef"
                 :data-source="dataSource"
                 :current-date="currentDate" />
         </div>

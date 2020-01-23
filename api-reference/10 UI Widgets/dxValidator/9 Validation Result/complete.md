@@ -108,16 +108,16 @@ In the following example, a button validates an editor with an async rule. The *
 
     <!-- tab: App.vue -->
     <template>
-        <dx-text-box>
-            <dx-validator
+        <DxTextBox>
+            <DxValidator
                 :validation-group="validationGroupName">
-                <dx-async-rule
+                <DxAsyncRule
                     :validation-callback="validateAsync"
                 />
-            </dx-validator>
-        </dx-text-box>
+            </DxValidator>
+        </DxTextBox>
 
-        <dx-button
+        <DxButton
             :validation-group="validationGroupName"
             @click="validateEditor()"
         />

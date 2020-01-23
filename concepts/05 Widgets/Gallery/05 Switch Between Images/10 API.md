@@ -80,7 +80,7 @@ To switch the **Gallery** to the next or previous image, call the [nextItem(anim
 
 ---
 
-To navigate to a specific image, call the [goToItem(itemIndex, animation)](/api-reference/10%20UI%20Widgets/dxGallery/3%20Methods/goToItem(itemIndex_animation).md '/Documentation/ApiReference/UI_Widgets/dxGallery/Methods/#goToItemitemIndex_animation') method. The first argument should be the index of the required image in the [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/dataSource/').
+To navigate to a specific image, call the [goToItem(itemIndex, animation)](/api-reference/10%20UI%20Widgets/dxGallery/3%20Methods/goToItem(itemIndex_animation).md '/Documentation/ApiReference/UI_Widgets/dxGallery/Methods/#goToItemitemIndex_animation') method. The first argument should be the index of the required image in the [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#dataSource').
 
 ---
 #####jQuery

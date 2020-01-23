@@ -85,7 +85,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-date-box ...
+        <DxDateBox ...
             :disabled-dates="disabledDates"
         />
     </template>
@@ -212,7 +212,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-date-box ...
+        <DxDateBox ...
             :disabled-dates="disableDates"
         />
     </template>

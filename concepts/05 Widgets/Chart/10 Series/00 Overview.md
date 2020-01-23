@@ -82,15 +82,7 @@ A single **Chart** can contain several series at once. In this case, the [series
 
 ---
 
-Objects in the **series** array specify individual settings for series. You can also specify common settings for series using the following objects.
-
-- **commonSeriesSettings**.**%seriesType%** ([line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/line.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#line'), [bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/bar.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#bar'), etc.)          
-Settings for all series of a specific type.
-
-- [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/')         
-Settings for all series in the **Chart**.
-
-Note that individual settings override type-specific settings which, in turn, override common settings.
+Objects in the **series** array specify individual settings for series. You can also specify common settings for all chart series using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object. Individual series settings override common settings.
 
 ---
 ##### jQuery
@@ -102,9 +94,6 @@ Note that individual settings override type-specific settings which, in turn, ov
                 // high priority
             },
             commonSeriesSettings: {
-                bar: {
-                    // middle priority
-                },
                 // low priority
             }
         });
@@ -118,9 +107,6 @@ Note that individual settings override type-specific settings which, in turn, ov
         </dxi-series>
         <dxo-common-series-settings ... >
             <!-- low priority -->
-            <dxo-bar>
-                <!-- middle priority -->
-            </dxo-bar>
         </dxo-common-series-settings>
     </dx-chart>
 

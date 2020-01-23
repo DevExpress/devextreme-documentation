@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Provides access to toolbar settings.
+Configures the toolbar settings.
 
 ---
 #include common-demobutton with {

@@ -44,10 +44,10 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Widgets/GridBase/
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-           <dx-header-filter :visible="true />
-           <dx-column :allow-header-filtering="false" ... />
-        </dx-data-grid>
+        <DxDataGrid ... >
+           <DxHeaderFilter :visible="true />
+           <DxColumn :allow-header-filtering="false" ... />
+        </DxDataGrid>
     </template>
 
     <script>
@@ -162,13 +162,13 @@ A user can change the applied filter by including or excluding values. Use a col
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >           
-            <dx-column 
+        <DxDataGrid ... >           
+            <DxColumn 
                 :filter-type.sync="filterType"
                 :filter-values.sync="filterValues" 
                 data-field="OrderDate"
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -327,15 +327,15 @@ You can use the **headerFilter.**[allowSearch](/api-reference/10%20UI%20Widgets/
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-header-filter 
+        <DxDataGrid ... >
+            <DxHeaderFilter 
                 :allow-search="true" 
                 :visible="true" 
             />
-            <dx-column>
-                <dx-column-header-filter :allow-search="false" />
-            </dx-column>
-        </dx-data-grid>
+            <DxColumn>
+                <DxColumnHeaderFilter :allow-search="false" />
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>

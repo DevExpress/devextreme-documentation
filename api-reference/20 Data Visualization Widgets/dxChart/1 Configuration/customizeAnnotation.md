@@ -73,9 +73,9 @@ The following code shows how to use the **customizeAnnotation** function to appl
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-chart ...
+        <DxChart ...
             :customize-annotation="customizeAnnotation">
-        </dx-chart>
+        </DxChart>
     </template>
 
     <script>

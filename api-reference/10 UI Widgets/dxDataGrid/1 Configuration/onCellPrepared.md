@@ -141,7 +141,7 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name}
+        <Dx{WidgetName}
             :repaint-changes-only="true"
             @cell-prepared="onCellPrepared"
         />

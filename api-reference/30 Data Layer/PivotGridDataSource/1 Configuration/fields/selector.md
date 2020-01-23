@@ -54,7 +54,7 @@ This function is an alternative to the [groupInterval](/api-reference/30%20Data%
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>
@@ -186,7 +186,7 @@ Another example: a **selector** that places values below and over 1000 into diff
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

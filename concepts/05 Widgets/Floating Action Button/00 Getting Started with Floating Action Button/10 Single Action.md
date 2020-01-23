@@ -203,7 +203,7 @@ The following code, which configures the example above, illustrates the describe
     <template>
         <div id="app-container">
             <p>View's content</p>
-            <dx-speed-dial-action
+            <DxSpeedDialAction
                 hint="Edit"
                 icon="icon ion-md-create"
                 @click="showNotification('Edit is clicked')"

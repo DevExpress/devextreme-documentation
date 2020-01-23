@@ -5,7 +5,6 @@ type: Array<String> | Array<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Lists the shapes that are displayed in the context toolbox.
 
 ---
-<!-- Description goes here -->

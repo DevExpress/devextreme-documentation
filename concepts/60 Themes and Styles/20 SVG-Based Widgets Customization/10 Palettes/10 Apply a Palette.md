@@ -39,11 +39,11 @@ Every widget that supports palettes has a [palette](/api-reference/20%20Data%20V
 ##### Vue
 
     <template>
-        <dx-pie-chart ...
+        <DxPieChart ...
             palette="Harmony Light">
             <!-- or custom colors -->
             <!-- :palette="['#60a69f', '#78b6d9', '#6682bb', '#a37182', '#eeba69']"> -->
-        </dx-pie-chart>
+        </DxPieChart>
     </template>
 
     <script>
@@ -144,16 +144,16 @@ In the **CircularGauge** and **LinearGauge**, the palette can be specified in th
 
     <!-- tab: App.vue -->
     <template>
-        <dx-circular-gauge ...
+        <DxCircularGauge ...
             :subvalues="[25, 40, 68]">
-            <dx-subvalue-indicator
+            <DxSubvalueIndicator
                 palette="Soft Pastel" />
-            <dx-range-container palette="Harmony Light">
-                <dx-range :start-value="0" :end-value="30" />
-                <dx-range :start-value="30" :end-value="70" />
-                <dx-range :start-value="70" :end-value="100" />
-            </dx-range-container>
-        </dx-circular-gauge>
+            <DxRangeContainer palette="Harmony Light">
+                <DxRange :start-value="0" :end-value="30" />
+                <DxRange :start-value="30" :end-value="70" />
+                <DxRange :start-value="70" :end-value="100" />
+            </DxRangeContainer>
+        </DxCircularGauge>
     </template>
     <script>
     import {
@@ -338,30 +338,30 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-tree-map ... >
-                <dx-colorizer palette="Harmony Light" />
-            </dx-tree-map>
+            <DxTreeMap ... >
+                <DxColorizer palette="Harmony Light" />
+            </DxTreeMap>
 
-            <dx-vector-map ... >
-                <dx-layer
+            <DxVectorMap ... >
+                <DxLayer
                     :data-source="worldMap"
                     palette="Violet" 
                     :palette-size="7"
                     :customize="colorizeMap" />
-            </dx-vector-map>
+            </DxVectorMap>
 
-            <dx-range-selector
+            <DxRangeSelector
                 :data-source="[
                     { arg: 'A', val1: 1, val2: 3 },
                     { arg: 'B', val1: 5, val2: 5 },
                     { arg: 'C', val1: 10, val2: 7 }
                 ]">
-                <dx-chart palette="Soft Pastel">
-                    <dx-common-series-settings type="bar" argument-field="arg" />
-                    <dx-series value-field="val1" />
-                    <dx-series value-field="val2" />
-                </dx-chart>
-            </dx-range-selector>
+                <DxChart palette="Soft Pastel">
+                    <DxCommonSeriesSettings type="bar" argument-field="arg" />
+                    <DxSeries value-field="val1" />
+                    <DxSeries value-field="val2" />
+                <DxChart>
+            </DxRangeSelector>
         </div>
     </template>
     <script>

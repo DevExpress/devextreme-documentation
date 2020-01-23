@@ -4,7 +4,7 @@ The **Autocomplete** widget is a textbox that provides suggestions while a user 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview/"
 }
 
-The following code adds the **Autocomplete** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/dataSource/') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#placeholder') to be displayed when the **Autocomplete** is empty.
+The following code adds the **Autocomplete** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#placeholder') to be displayed when the **Autocomplete** is empty.
 
 ---
 ##### jQuery

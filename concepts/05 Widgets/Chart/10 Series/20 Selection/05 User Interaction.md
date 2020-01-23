@@ -3,13 +3,10 @@ When a user selects a series, the series changes its style to the one specified 
 - **series**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/selectionStyle/')        
 The selection style for an individual series.
 
-- **commonSeriesSettings**.**%seriesType%**.**selectionStyle**                
-The selection style for all series of a specific type ([line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/line.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#line'), [bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/bar.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#bar'), etc.).
-
 - **commonSeriesSettings**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/selectionStyle/')         
 The selection style for all series in the **Chart**.
 
-Note that individual settings override type-specific settings which, in turn, override common settings.
+Individual settings override common settings.
 
 ---
 ##### jQuery
@@ -23,11 +20,6 @@ Note that individual settings override type-specific settings which, in turn, ov
                 }
             },
             commonSeriesSettings: {
-                bar: {
-                    selectionStyle: {
-                        // middle priority
-                    }
-                },
                 selectionStyle: {
                     // low priority
                 }
@@ -48,11 +40,6 @@ Note that individual settings override type-specific settings which, in turn, ov
             <dxo-selection-style>
                 <!-- low priority -->
             </dxo-selection-style>
-            <dxo-bar>
-                <dxo-selection-style>
-                    <!-- middle priority -->
-                </dxo-selection-style>
-            </dxo-bar>
         </dxo-common-series-settings>
     </dx-chart>
 
@@ -72,7 +59,7 @@ Note that individual settings override type-specific settings which, in turn, ov
 
 ---
 
-To choose which series elements should be highlighted when a user selects a series, specify the **selectionMode** option. Just like **selectionStyle**, this option can be specified for all series in the **Chart**, for all series of a specific type, or for an individual series. Note also that depending on the series type, the **selectionMode** option accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **selectionMode** option description.
+To choose which series elements should be highlighted when a user selects a series, specify the **selectionMode** option. Just like **selectionStyle**, this option can be specified for all series in the **Chart** or for an individual series. Depending on the series type, the **selectionMode** option accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **selectionMode** option description.
 
 ---
 ##### jQuery
@@ -80,14 +67,14 @@ To choose which series elements should be highlighted when a user selects a seri
     <!--JavaScript-->$(function() {
         $("#chartContainer").dxChart({
             // ...
-            commonSeriesSettings: {
-                bar: {
-                    selectionMode: 'allSeriesPoints' // or 'onlyPoint' | 'allArgumentPoints' | 'none'
-                },
-                line: {
-                    selectionMode: 'includePoints' // or 'nearestPoint' | 'excludePoints' | 'none'
-                }
-            }
+            series: [{
+                // ...
+                type: "bar",
+                hoverMode: "allSeriesPoints" // or "onlyPoint" | "allArgumentPoints" | "none"
+            }, {
+                type: "line",
+                hoverMode: "includePoints" // or "nearestPoint" | "excludePoints" | "none"
+            }]
         });
     });
 
@@ -95,14 +82,14 @@ To choose which series elements should be highlighted when a user selects a seri
 
     <!--HTML-->
     <dx-chart ... >
-        <dxo-common-series-settings ... >
-            <dxo-bar
-                selectionMode="allSeriesPoints"> <!-- or 'onlyPoint' | 'allArgumentPoints' | 'none' -->
-            </dxo-bar>
-            <dxo-line
-                selectionMode="includePoints"> <!-- or 'nearestPoint' | 'excludePoints' | 'none' -->
-            </dxo-line>
-        </dxo-common-series-settings>
+        <dxi-series
+            type="bar"
+            selectionMode="allSeriesPoints"> <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
+        </dxi-series>
+        <dxi-series
+            type="line"
+            selectionMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
+        </dxi-series>
     </dx-chart>
 
     <!--TypeScript-->

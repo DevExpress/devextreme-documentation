@@ -56,7 +56,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
     
 ---
 
-... or render the button with custom appearance using a [template](/api-reference/_hidden/dxTreeListColumnButton/template.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/buttons/#template'):
+... or use a [template](/api-reference/_hidden/dxTreeListColumnButton/template.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/buttons/#template') to render the button with custom appearance. In this case, the **onClick** function is not executed, and you should handle the `click` event of the element placed inside the template.
 
 ---
 ##### jQuery  
@@ -69,7 +69,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
                 type: "buttons",
                 buttons: ["add", "edit", "delete", {
                     template: function (e) {
-                        // Render a custom control here
+                        // Specify custom markup here
                     }
                 }]
             }]
@@ -84,13 +84,12 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
             <dxi-button name="add"></dxi-button>
             <dxi-button name="edit"></dxi-button>
             <dxi-button name="delete"></dxi-button>
-            <dxi-button
-                template="myCommandTemplate">
+            <dxi-button template="myCommand">
+                <div *dxTemplate="let data of 'myCommand'">
+                    <!-- Declare custom markup here -->
+                </div>
             </dxi-button>
         </dxi-column>
-        <div *dxTemplate="let cellInfo of 'myCommandTemplate'">
-            <!-- Declare a custom control here -->
-        </div>
     </dx-tree-list>
 
     <!--TypeScript-->

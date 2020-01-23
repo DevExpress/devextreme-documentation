@@ -4,7 +4,7 @@ You can manage user access to the following actions:
 
 - [copy](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#copy) - Copy files and folders.
 
-- [create](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#create) - Create files and folders.
+- [create](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#create) - Create folders.
 
 - [download](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#download) - Download files and folders.
 
@@ -18,7 +18,7 @@ You can manage user access to the following actions:
 
 The widget also allows you to specify the following restrictions:
     
-- [allowedFileExtensions](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions) option - Specifies file extensions allowed for display and upload in the **FileManager** widget. The widget fails to upload and displays the error message if a user tries to upload a file with restricted extension.
+- [allowedFileExtensions](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions) option - Specifies file extensions allowed for display and upload in the **FileManager** widget. The widget fails to upload and displays the error message if a user tries to upload files with restricted extensions.
 
     ![DevExtreme File Manager - Allowed File Extension](/images/FileManager/allowed-file-extension-error-message.png)
 
@@ -35,8 +35,10 @@ The widget also allows you to specify the following restrictions:
             permissions: {
                 create: true,
                 copy: true,
+                download: true,
                 move: true,
                 remove: true,
+                rename: true,
                 upload: true
             },
             allowedFileExtensions: [".txt", ".doc", ".png"],
@@ -64,9 +66,11 @@ The widget also allows you to specify the following restrictions:
         <dxo-permissions 
             create="true"
             copy="true"
+            download="true"
             move="true"
             remove="true"
-            upload="true" >
+            rename="true"
+            upload="true" 
         </dxo-permissions>
 
         // ...
@@ -82,11 +86,11 @@ The widget also allows you to specify the following restrictions:
                 <DxPermissions
                     :create="true"
                     :copy="true"
+                    :download="true"
                     :move="true"
                     :remove="true"
                     :rename="true"
-                    //...
-                />
+                    :upload="true" />
             </DxFileManager>
         </div>
     </template>
@@ -104,10 +108,11 @@ The widget also allows you to specify the following restrictions:
                 <Permissions
                     create={true}
                     copy={true}
+                    download={true}
                     move={true}
                     remove={true}
                     rename={true}
-                    ...>
+                    download={true} 
                 </Permissions>
             </FileManager>
         </div>

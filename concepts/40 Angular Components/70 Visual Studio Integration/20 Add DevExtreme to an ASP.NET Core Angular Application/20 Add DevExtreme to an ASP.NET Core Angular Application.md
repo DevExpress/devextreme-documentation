@@ -19,7 +19,7 @@ This article describes how to create an ASP.NET Core Angular application and add
     Save the changes and wait until Visual Studio downloaded the dependencies.
 
 1. Reference `dx.common.css` and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below).
-If you would like to use [Diagram](/api-reference/10%20UI%20Widgets/dxDiagram '/Documentation/ApiReference/UI_Widgets/dxDiagram') or [Gantt](/api-reference/10%20UI%20Widgets/dxGantt '/Documentation/ApiReference/UI_Widgets/dxGantt'), it is necessary to add their stylesheets as well.
+If you are going to use [Diagram](/api-reference/10%20UI%20Widgets/dxDiagram '/Documentation/ApiReference/UI_Widgets/dxDiagram') or [Gantt](/api-reference/10%20UI%20Widgets/dxGantt '/Documentation/ApiReference/UI_Widgets/dxGantt'), add their stylesheets as well.
 
     **For .NET Core SDK 2.1**, change the `ClientApp/.angular-cli.json` file as follows:
 
@@ -31,8 +31,8 @@ If you would like to use [Diagram](/api-reference/10%20UI%20Widgets/dxDiagram '/
               "styles": [
                 "../node_modules/devextreme/dist/css/dx.common.css",
                 "../node_modules/devextreme/dist/css/dx.light.css",
-                "../node_modules/devexpress-diagram/dist/dx-diagram.css", //optional
-                "../node_modules/devexpress-gantt/dist/dx-gantt.css" //optional
+                "../node_modules/devexpress-diagram/dist/dx-diagram.css", // optional
+                "../node_modules/devexpress-gantt/dist/dx-gantt.css" // optional
                 ...
               ] 
             }
@@ -55,8 +55,8 @@ If you would like to use [Diagram](/api-reference/10%20UI%20Widgets/dxDiagram '/
                       ...
                       "node_modules/devextreme/dist/css/dx.common.css",
                       "node_modules/devextreme/dist/css/dx.light.css",
-                      "node_modules/devexpress-diagram/dist/dx-diagram.css", //optional
-                      "node_modules/devexpress-gantt/dist/dx-gantt.css" //optional
+                      "node_modules/devexpress-diagram/dist/dx-diagram.css", // optional
+                      "node_modules/devexpress-gantt/dist/dx-gantt.css" // optional
                     ]
                   }
                 }

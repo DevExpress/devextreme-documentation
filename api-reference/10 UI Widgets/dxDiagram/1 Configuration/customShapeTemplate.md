@@ -12,7 +12,7 @@ Specifies a custom template for shapes.
 ##### param(data): Object
 Information about the currently processed shape.
 
-##### field(data.item): dxDiagramItem
+##### field(data.item): dxDiagramShape
 The processed shape's object.
 
 ---

@@ -1,0 +1,1 @@
+[important] After you follow the instructions from this article, you should [specify data fields](/concepts/Common/25%20Data%20Binding/05%20Specify%20Data%20Fields.md '/Documentation/Guide/Common/Data_Binding/Specify_Data_Fields/').

@@ -11,4 +11,4 @@ This object is passed to the **position** configuration option of a widget that 
 
 The positionConfig object may contain the following fields: **my**, **at**, **of**, **offset** and **collision**. Look at the following sentence to see how to use these fields to position the required element against the target element.
 
-"Place **my** 'left' side **at** the 'left bottom' corner **of** the '#targetElement'." The italic quoted phrase located after each option name within the sentence represents a value of the appropriate option.
+"Place **my** *'left'* side **at** the *'left bottom'* corner **of** the *'#targetElement'*." The italic quoted phrase located after each option name within the sentence represents a value of the appropriate option.

@@ -73,8 +73,7 @@ You can specify an icon in the following formats:
     </template>
     <script>
     import { DxFileManager, DxPermissions, DxItemView } from 'devextreme-vue/file-manager';
-    export default {
-        // ...    
+    export default {  
         methods: {
             customizeIcon(fileManagerItem) {
                 if (fileManagerItem.isDirectory)
@@ -98,7 +97,6 @@ You can specify an icon in the following formats:
 
     <!-- tab: App.js -->
     import FileManager, { Permissions, ItemView } from 'devextreme-react/file-manager';
-    // ...
     class App extends React.Component {
         render() {
             return (

@@ -50,7 +50,7 @@ You can specify an icon in the following formats:
         customizeIcon(fileManagerItem) {
             if (fileManagerItem.isDirectory)
                 return "images/thumbnails/folder.svg";
-            var fileExtension = fileManagerItem.getExtension();
+            const fileExtension = fileManagerItem.getExtension();
             switch (fileExtension) {
                 case ".txt":
                     return "images/thumbnails/doc-txt.svg";
@@ -67,29 +67,29 @@ You can specify an icon in the following formats:
     <!-- tab: App.vue -->
     <template>
         <DxFileManager            
-            :customize-thumbnail="customizeIcon" 
-            // ...
+            :customize-thumbnail="customizeIcon">
+            <!-- ... -->
         </DxFileManager>
     </template>
     <script>
     import { DxFileManager, DxPermissions, DxItemView } from 'devextreme-vue/file-manager';
     export default {
-    // ...    
+        // ...    
         methods: {
-            customizeIcon: function(fileManagerItem) {
+            customizeIcon(fileManagerItem) {
                 if (fileManagerItem.isDirectory)
-                { return 'images/thumbnails/folder.svg'; }
-                var fileExtension = fileManagerItem.getExtension();
+                    return 'images/thumbnails/folder.svg';
+                const fileExtension = fileManagerItem.getExtension();
                 switch (fileExtension) {
                     case '.txt':
-                    return 'images/thumbnails/doc-txt.svg';
+                        return 'images/thumbnails/doc-txt.svg';
                     case '.rtf':
-                    return 'images/thumbnails/doc-rtf.svg';
+                        return 'images/thumbnails/doc-rtf.svg';
                     case '.xml':
-                    return 'images/thumbnails/doc-xml.svg';
+                        return 'images/thumbnails/doc-xml.svg';
                 }
             }
-    }
+        }
     };
     </script>
 
@@ -103,15 +103,15 @@ You can specify an icon in the following formats:
         render() {
             return (
             <FileManager
-                customizeThumbnail={ this.customizeIcon }
-                // ...
+                customizeThumbnail={this.customizeIcon}>
+                {/* ... */}
             </FileManager>
             );
         }
         customizeIcon(fileManagerItem) {
             if (fileManagerItem.isDirectory)
-            { return 'images/thumbnails/folder.svg'; }
-            var fileExtension = fileManagerItem.getExtension();
+                return 'images/thumbnails/folder.svg';
+            const fileExtension = fileManagerItem.getExtension();
             switch (fileExtension) {
             case '.txt':
                 return 'images/thumbnails/doc-txt.svg';

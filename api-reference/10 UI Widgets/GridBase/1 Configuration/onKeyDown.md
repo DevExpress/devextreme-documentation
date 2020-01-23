@@ -18,7 +18,7 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.event): event
-The event that caused the function to execute. It is a [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery. The underlying native event is <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event">keydown</a>.
+The event that caused the function to execute. It is a [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery. The underlying native event is <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event" target="_blank">keydown</a>.
 
 ##### field(e.handled): Boolean
 Indicates whether the widget has already handled this event.

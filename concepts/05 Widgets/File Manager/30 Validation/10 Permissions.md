@@ -1,6 +1,6 @@
 Use the [permissions](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/) option to specify whether to allow or deny a user to manage files and folders in the **FileManager**.
 
-You can allow or deny users access to the following actions:
+You can manage user access to the following actions:
 
 - [copy](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#copy) - Copy files and folders.
 
@@ -14,11 +14,11 @@ You can allow or deny users access to the following actions:
 
 - [rename](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#rename) - Rename files and folders.
 
-- [upload](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#upload) - Upload files. 
+- [upload](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/#upload) - Upload files.
 
-You can also specify upload file restrictions:
+The widget also allows you to specify the following restrictions:
     
-- [allowedFileExtensions](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions) option - Specifies the allowed upload file extensions. The **FileManager** widget does not upload a file and displays the error message when the file's extension is not allowed.
+- [allowedFileExtensions](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions) option - Specifies file extensions allowed for display and upload in the **FileManager** widget. The widget fails to upload and displays the error message if a user tries to upload a file with restricted extension.
 
     ![DevExtreme File Manager - Allowed File Extension](/images/FileManager/allowed-file-extension-error-message.png)
 
@@ -39,7 +39,7 @@ You can also specify upload file restrictions:
                 remove: true,
                 upload: true
             },
-            allowedFileExtensions: [".js", ".json", ".css"],
+            allowedFileExtensions: [".txt", ".doc", ".png"],
             upload: {
                 maxFileSize: 1000000
             },
@@ -53,7 +53,7 @@ You can also specify upload file restrictions:
     export class AppComponent {
         allowedFileExtensions: string[];
         constructor() {
-            this.allowedFileExtensions = [".js", ".json", ".css"];
+            this.allowedFileExtensions = [".txt", ".doc", ".png"];
         }
         //...
     }
@@ -77,7 +77,7 @@ You can also specify upload file restrictions:
     <!-- tab: App.vue -->
     <template>
         <div>
-            <DxFileManager allowedFileExtensions="['.js', '.json', '.css']" >   
+            <DxFileManager allowedFileExtensions="['.txt', '.doc', '.png']" >   
                 <DxUpload maxFileSize="1000000" />
                 <DxPermissions
                     :create="true"
@@ -99,7 +99,7 @@ You can also specify upload file restrictions:
     render() {
         return (
         <div>
-            <FileManager allowedFileExtensions="['.js', '.json', '.css']" >
+            <FileManager allowedFileExtensions="['.txt', '.doc', '.png']" >
                 <Upload maxFileSize="1000000" />
                 <Permissions
                     create={true}

@@ -5,13 +5,10 @@ When a user selects a series point, it changes its style to the one specified by
 - **series**.**point**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/selectionStyle/')        
 The selection style for all points of an individual series.
 
-- **commonSeriesSettings**.**%seriesType%**.**point**.**selectionStyle**                
-The selection style for all points belonging to a series of a specific type ([line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/line.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#line'), [area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings/area.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/#area'), etc.).
-
 - **commonSeriesSettings**.**point**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/point/selectionStyle/')         
 The selection style for all series points in the **Chart**.
 
-Note that individual settings override type-specific settings which, in turn, override common settings.
+Individual series settings override common settings.
 
 ---
 ##### jQuery
@@ -27,13 +24,6 @@ Note that individual settings override type-specific settings which, in turn, ov
                 }
             },
             commonSeriesSettings: {
-                area: {
-                    point: {
-                        selectionStyle: {
-                            // middle priority
-                        }
-                    }
-                },
                 point: {
                     selectionStyle: {
                         // low priority
@@ -60,13 +50,6 @@ Note that individual settings override type-specific settings which, in turn, ov
                     <!-- low priority -->
                 </dxo-selection-style>
             </dxo-point>
-            <dxo-area>
-                <dxo-point>
-                    <dxo-selection-style>
-                        <!-- middle priority -->
-                    </dxo-selection-style>
-                </dxo-point>
-            </dxo-area>
         </dxo-common-series-settings>
     </dx-chart>
 
@@ -84,10 +67,87 @@ Note that individual settings override type-specific settings which, in turn, ov
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries>
+                <DxPoint ... >
+                    <DxSelectionStyle>
+                        <!-- high priority -->
+                    </DxSelectionStyle>
+                </DxPoint>
+            </DxSeries>
+            <DxCommonSeriesSettings ... >
+                <DxPoint ... >
+                    <DxSelectionStyle>
+                        <!-- low priority -->
+                    </DxSelectionStyle>
+                </DxPoint>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeries,
+        DxPoint,
+        DxSelectionStyle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeries,
+            DxPoint,
+            DxSelectionStyle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Series,
+        Point,
+        SelectionStyle
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series>
+                        <Point ... >
+                            <SelectionStyle>
+                                {/* high priority */}
+                            </SelectionStyle>
+                        </Point>
+                    </Series>
+                    <CommonSeriesSettings ... >
+                        <Point ... >
+                            <SelectionStyle>
+                                {/* low priority */}
+                            </SelectionStyle>
+                        </Point>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 
-To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this option can be specified for all points belonging to an individual series, or for all points belonging to a series of a specific type, or for all series points in the **Chart**.
+To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this option can be specified for all points belonging to an individual series or for all series points in the **Chart**.
 
 ---
 ##### jQuery
@@ -128,6 +188,57 @@ To choose which elements should be highlighted when a user selects a point, spec
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxCommonSeriesSettings ... >
+                <DxPoint
+                    selection-mode="allArgumentPoints"/> <!-- or 'onlyPoint' | 'allSeriesPoints' | 'none' -->
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxPoint
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxPoint
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Point
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <CommonSeriesSettings ... >
+                        <Point
+                            selectionMode="allArgumentPoints" /> {/* or 'onlyPoint' | 'allSeriesPoints' | 'none' */}
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -166,6 +277,43 @@ By default, only a single point can be in the selected state at a time. If you n
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            point-selection-mode="multiple"> <!-- or 'single' -->
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    pointSelectionMode="multiple"> {/* or 'single' */}
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

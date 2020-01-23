@@ -80,13 +80,13 @@ When this option is set to **true**, the following applies:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-{widget-name} ... >
-                <dx-{widget-name}-button
+            <Dx{WidgetName} ... >
+                <Dx{WidgetName}Button
                     name="myCustomButton"
                     location="after"
                     :options="myCustomButtonConfig"
                 />
-            </dx-{widget-name}>
+            </Dx{WidgetName}>
         </template>
 
         <script>
@@ -224,13 +224,13 @@ When this option is set to **true**, the following applies:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-{widget-name} ...
+            <Dx{WidgetName} ...
                 @option-changed="changeButtonState">
-                <dx-{widget-name}-button
+                <Dx{WidgetName}Button
                     name="myCustomButton"
                     ...
                 />
-            </dx-{widget-name}>
+            </Dx{WidgetName}>
         </template>
 
         <script>

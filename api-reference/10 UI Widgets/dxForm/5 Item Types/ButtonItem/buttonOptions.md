@@ -120,13 +120,13 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form ... >
-            <dx-button-item>
-                <dx-button-options ...
+        <DxForm ... >
+            <DxButtonItem>
+                <DxButtonOptions ...
                     :on-option-changed="logOption"
                 />
-            </dx-button-item>
-        </dx-form>
+            </DxButtonItem>
+        </DxForm>
     </template>
 
     <script>

@@ -44,6 +44,59 @@ The title is configured by the [title](/api-reference/20%20Data%20Visualization%
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxTitle
+                text="I am the Title"
+            >
+                <DxSubtitle
+                    text="I am the Subtitle"
+                />
+            </DxTitle>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxTitle,
+        DxSubtitle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxTitle,
+            DxSubtitle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Title,
+        Subtitle
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Title text="I am the Title">
+                        <Subtitle text="I am the Subtitle" />
+                    </Title>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 You can set the title's text more concisely by assigning it directly to the **title** option. This is useful if you are satisfied with the default settings of the title and do not need a subtitle. 
@@ -61,7 +114,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
 ##### Angular
 
     <!--HTML--><dx-chart
-        text="I am the Title">
+        title="I am the Title">
     </dx-chart>
 
     <!--TypeScript-->
@@ -77,6 +130,47 @@ You can set the title's text more concisely by assigning it directly to the **ti
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            title="I am the Title"
+            ...
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    title="I am the Title"
+                    ...
+                >
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -73,16 +73,16 @@ You can use the following position markers in this text:
 
     <!-- tab: App.vue -->
     <template> 
-        <dx-data-grid ... >
-            <dx-summary>
-                <dx-total-item
+        <DxDataGrid ... >
+            <DxSummary>
+                <DxTotalItem
                     column="SaleAmount"
                     summary-type="sum"
                     show-in-column="TotalAmount"
                     value-format="currency" 
                     display-format="Column: {1}. Sales: {0}" /> <!-- for example, "Column: Total Amount. Sales: $1234" -->
-            </dx-summary>
-        </dx-data-grid>
+            </DxSummary>
+        </DxDataGrid>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

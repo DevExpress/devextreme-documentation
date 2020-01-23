@@ -144,9 +144,9 @@ Use this function to:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-data-grid ...
+            <DxDataGrid ...
                 @editor-preparing="overrideOnValueChanged">
-            </dx-data-grid>
+            </DxDataGrid>
         </template>
 
         <script>
@@ -198,7 +198,6 @@ Use this function to:
                     }
                 }
             }
-
             render() {
                 return (
                     <DataGrid ...
@@ -300,9 +299,9 @@ Use this function to:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-data-grid ...
+            <DxDataGrid ...
                 @editor-preparing="replaceEditor">
-            </dx-data-grid>
+            </DxDataGrid>
         </template>
 
         <script>
@@ -344,7 +343,6 @@ Use this function to:
                     e.editorName = 'dxTextArea';
                 }
             }
-
             render() {
                 return (
                     <DataGrid ...

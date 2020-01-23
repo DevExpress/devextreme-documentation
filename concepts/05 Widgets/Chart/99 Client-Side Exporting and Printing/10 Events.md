@@ -60,6 +60,65 @@ You can handle these events with functions. If the handling functions are not go
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @exporting="onExporting"
+            @exported="onExported"
+            @file-saving="onFileSaving"
+            >
+            <DxExport :enabled="true"/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxExport
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxExport
+        },
+        methods: {
+            onExporting(e) {},
+            onExported(e) {},
+            onFileSaving(e) {}
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Export
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onExporting={this.onExporting}
+                    onExported={this.onExported}
+                    onFileSaving={this.onFileSaving}
+                    >
+                    <Export enabled={true}/>
+                </Chart>
+            );
+        }
+
+        onExporting(e) {}
+        onExported(e) {}
+        onFileSaving(e) {}
+    }
+
+    export default App;
+
 ---
 
 Otherwise, or if you need several handlers for a single event, subscribe to the exporting-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

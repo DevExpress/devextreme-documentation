@@ -35,6 +35,47 @@ To rotate the **Chart**, set the [rotated](/api-reference/20%20Data%20Visualizat
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            :rotated="true"
+            ...
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    rotated={true}
+                    ...
+                >
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Besides being swapped around, chart axes can be inverted, or "mirrored".
@@ -86,6 +127,60 @@ To invert both argument and value axes, assign **true** to the [inverted](/api-r
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxCommonAxisSettings :inverted="true"/>
+            <!-- or for a specific axis -->
+            <DxArgumentAxis :inverted="true"/>
+            <DxValueAxis :inverted="true"/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonAxisSettings,
+        DxArgumentAxis,
+        DxValueAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonAxisSettings,
+            DxArgumentAxis,
+            DxValueAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonAxisSettings,
+        ArgumentAxis,
+        ValueAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <CommonAxisSettings inverted={true} />
+                    {/* or for a specific axis */}
+                    <ArgumentAxis inverted={true} />
+                    <ValueAxis inverted={true} />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -84,7 +84,7 @@ This and the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataS
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

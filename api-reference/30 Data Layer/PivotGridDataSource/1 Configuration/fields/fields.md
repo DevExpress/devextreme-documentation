@@ -81,7 +81,7 @@ This option accepts an array of objects where each object configures a single fi
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

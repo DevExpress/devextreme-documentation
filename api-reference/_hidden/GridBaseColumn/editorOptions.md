@@ -78,11 +78,11 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column ...
+        <Dx{WidgetName} ... >
+            <DxColumn ...
                 :editor-options="columnEditorOptions"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

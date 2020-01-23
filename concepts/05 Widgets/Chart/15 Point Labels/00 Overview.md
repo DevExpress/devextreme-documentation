@@ -18,11 +18,6 @@ To configure point labels, use the fields of the [label](/api-reference/20%20Dat
                 // ...  
             }],
             commonSeriesSettings: {
-                stackedline: { // or any other series type
-                    label: {
-                        // Settings for all point labels belonging to Stacked Line series
-                    }
-                },
                 label: {
                     // Settings for all point labels in the Chart
                 }
@@ -39,11 +34,6 @@ To configure point labels, use the fields of the [label](/api-reference/20%20Dat
             </dxo-label>
         </dxi-series>
         <dxo-common-series-settings ... >
-            <dxo-stackedline> <!-- or any other series type -->
-                <dxo-label ... >
-                    <!-- Settings for all point labels belonging to Stacked Line series -->
-                </dxo-label>
-            </dxo-stackedline>
             <dxo-label ... >
                 <!-- Settings for all point labels in the Chart -->
             </dxo-label>
@@ -63,6 +53,72 @@ To configure point labels, use the fields of the [label](/api-reference/20%20Dat
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries>
+                <DxLabel ... >
+                    <!-- Settings for all point labels of an individual series -->
+                </DxLabel>
+            </DxSeries>
+            <DxCommonSeriesSettings ... >
+                <DxLabel ... >
+                    <!-- Settings for all point labels in the Chart -->
+                </DxLabel>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings,
+        DxLabel
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series>
+                        <Label ... >
+                            {/* Settings for all point labels of an individual series */}
+                        </Label>
+                    </Series>
+                    <CommonSeriesSettings ... >
+                        <Label ... >
+                            {/* Settings for all point labels in the Chart */}
+                        </Label>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -108,6 +164,62 @@ Point labels are not visible by default. To make them visible, assign **true** t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries>
+                <DxLabel :visible="true">
+                    <DxConnector :visible="true"/>
+                </DxLabel>
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxLabel,
+        DxConnector
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxLabel,
+            DxConnector
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        Connector,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series>
+                        <Label visible={true}>
+                            <Connector visible={true} />
+                        </Label>
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

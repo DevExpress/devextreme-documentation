@@ -72,10 +72,7 @@ The **onPointSelectionChanged** function accepts an object that contains informa
 
 [note] Frequently, points that appear selected are not actually so, due to the *'allArgumentPoints'* or *'allSeriesPoints'* selection mode having been set. For these points, the *pointSelectionChanged* event does not occur and their *isSelected()* method returns **false**.
     
-To clear the point selection, call the **clearSelection()** method of the point or the same method of its parent series.
+To clear the point selection, call the **clearSelection()** method of the point.
 
 	<!--JavaScript-->// Access the point
 	point.clearSelection();
-
-	// or access its parent series
-    series.clearSelection();

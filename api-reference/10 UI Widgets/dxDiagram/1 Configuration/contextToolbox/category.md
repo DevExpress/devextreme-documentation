@@ -5,7 +5,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the category of shapes that are displayed in the context toolbox.
 
 ---
-<!-- Description goes here -->
+The **category** property is not in effect if the [shapes](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextToolbox/#shapes) property is specified.

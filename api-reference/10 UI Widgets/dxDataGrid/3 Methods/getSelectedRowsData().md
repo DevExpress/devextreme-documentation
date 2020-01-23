@@ -81,9 +81,9 @@ When selection is [deferred](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Con
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ...
+        <DxDataGrid ...
             :ref="dataGridRef">
-        <dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>

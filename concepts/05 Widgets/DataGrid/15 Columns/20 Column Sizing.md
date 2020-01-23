@@ -40,6 +40,59 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :column-min-width="100">
+            <DxColumn data-field="Title" :width="200" />
+            <DxColumn data-field="Address" :min-width="150" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    columnMinWidth={100}">
+                    <Column dataField="Title" width={200} />
+                    <Column dataField="Address" minWidth={150} />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -76,6 +129,50 @@ Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configur
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :column-auto-width="true">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    columnAutoWidth={true}">
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -121,6 +218,59 @@ The widget allows a user to resize columns in two different modes: by changing t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :allow-column-resizing="true"
+            column-resizing-mode="widget"> <!-- or "nextColumn" -->
+            <DxColumn data-field="Title" :allow-resizing="false" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    allowColumnResizing={true}
+                    columnResizingMode="widget"> <!-- or 'nextColumn' -->
+                    <Column dataField="Title" allowResizing={false} />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

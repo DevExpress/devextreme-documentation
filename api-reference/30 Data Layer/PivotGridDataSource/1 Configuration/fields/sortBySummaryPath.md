@@ -94,7 +94,7 @@ In the following example, geographic regions displayed in the row header are sor
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

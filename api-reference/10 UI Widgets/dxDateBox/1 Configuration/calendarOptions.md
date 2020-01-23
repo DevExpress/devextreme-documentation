@@ -73,11 +73,11 @@ You can specify most of the [Calendar options](/api-reference/10%20UI%20Widgets/
 
     <!-- tab: App.vue -->
     <template>
-        <dx-date-box ... >
-            <dx-calendar-options
+        <DxDateBox ... >
+            <DxCalendarOptions
                 :on-option-changed="logOption"
             />
-        </dx-date-box>
+        </DxDateBox>
     </template>
 
     <script>

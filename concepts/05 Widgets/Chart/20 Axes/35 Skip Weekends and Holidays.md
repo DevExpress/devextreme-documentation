@@ -40,6 +40,58 @@ If your dataset excludes non-working days, you can skip them on the axis as well
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                :workdays-only="true"
+                :work-week="[0, 1, 2, 3, 4, 5]"
+                :holidays="['2017/1/16', '2017/2/20', '2017/5/29']"
+                :single-workdays="['2017/1/1']"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        workdaysOnly={true}
+                        workWeek={[0, 1, 2, 3, 4, 5]}
+                        holidays={['2017/1/16', '2017/2/20', '2017/5/29']}
+                        singleWorkdays={['2017/1/1']}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 [note] This feature is available for the argument axis only.

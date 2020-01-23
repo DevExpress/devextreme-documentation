@@ -52,6 +52,68 @@ To configure the constant lines, declare the [constantLines](/api-reference/20%2
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis>
+                <DxConstantLine :value="100"/>
+                <DxConstantLine :value="50"/>
+            </DxArgumentAxis>
+            <DxValueAxis>
+                <DxConstantLine :value="40"/>
+                <DxConstantLine :value="70"/>
+            </DxValueAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxValueAxis,
+        DxConstantLine
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxValueAxis,
+            DxConstantLine
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        ValueAxis,
+        ConstantLine
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis>
+                        <ConstantLine value={100}/>
+                        <ConstantLine value={50}/>
+                    </ArgumentAxis>
+                    <ValueAxis>
+                        <ConstantLine value={40}/>
+                        <ConstantLine value={70}/>
+                    </ValueAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+    
 ---
 
 If several constant lines should have a uniform style, you can specify it using one of the following objects.
@@ -136,6 +198,100 @@ Note that individual settings override axis-specific settings which, in turn, ov
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis ... >
+                <DxConstantLine ... >
+                    <!-- high priority -->
+                </DxConstantLine>
+                <DxConstantLineStyle ... >
+                    <!-- middle priority -->
+                </DxConstantLineStyle>
+            </DxArgumentAxis>
+            <DxValueAxis ... >
+                <DxConstantLine ... >
+                    <!-- high priority -->
+                </DxConstantLine>
+                <DxConstantLineStyle ... >
+                    <!-- middle priority -->
+                </DxConstantLineStyle>
+            </DxValueAxis>
+            <DxCommonAxisSettings>
+                <DxConstantLineStyle ... >
+                    <!-- low priority -->
+                </DxConstantLineStyle>
+            </DxCommonAxisSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonAxisSettings,
+        DxArgumentAxis,
+        DxValueAxis,
+        DxConstantLine,
+        DxConstantLineStyle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonAxisSettings,
+            DxArgumentAxis,
+            DxValueAxis,
+            DxConstantLine,
+            DxConstantLineStyle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonAxisSettings,
+        ArgumentAxis,
+        ValueAxis,
+        ConstantLine,
+        ConstantLineStyle
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis ... >
+                        <ConstantLine ... >
+                            {/* high priority */}
+                        </ConstantLine>
+                        <ConstantLineStyle ... >
+                            {/* middle priority */}
+                        </ConstantLineStyle>
+                    </ArgumentAxis>
+                    <ValueAxis ... >
+                        <ConstantLine ... >
+                            {/* high priority */}
+                        </ConstantLine>
+                        <ConstantLineStyle ... >
+                            {/* middle priority */}
+                        </ConstantLineStyle>
+                    </ValueAxis>
+                    <CommonAxisSettings>
+                        <ConstantLineStyle ... >
+                            {/* low priority */}
+                        </ConstantLineStyle>
+                    </CommonAxisSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
     
 ---
 

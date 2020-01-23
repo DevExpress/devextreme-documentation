@@ -43,9 +43,9 @@ where `path1` is *formats/[formatName]* for formats or *modules/[moduleName]* fo
 
     <!-- tab: App.vue -->
     <template>
-        <dx-html-editor ...
+        <DxHtmlEditor ...
             :ref="htmlEditorRefName">
-        </dx-html-editor>
+        </DxHtmlEditor>
     </template>
 
     <script>

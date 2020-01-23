@@ -122,15 +122,15 @@ The following code shows an example of a data source that can be aggregated by c
 
     <!-- tab: App.vue -->
     <template>
-        <dx-chart :data-source="chartData">
-            <dx-series type="bar">
-                <dx-aggregation
+        <DxChart :data-source="chartData">
+            <DxSeries type="bar">
+                <DxAggregation
                     :enabled="true"
                     method="sum" 
                 />
-            </dx-series>
-            <dx-argument-axis :aggregate-by-category="true" />
-        </dx-chart>
+            </DxSeries>
+            <DxArgumentAxis :aggregate-by-category="true" />
+        </DxChart>
     </template>
 
     <script>

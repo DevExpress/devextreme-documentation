@@ -42,13 +42,6 @@ Binds the widget to the data source which contains tasks.
         tasks: Task[];
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
     <!-- tab: app.component.html -->
     <dx-gantt ... 
         <dxo-tasks [dataSource]="tasks"></dxo-tasks>

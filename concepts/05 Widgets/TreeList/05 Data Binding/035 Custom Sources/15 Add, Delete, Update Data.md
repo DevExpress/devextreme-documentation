@@ -46,12 +46,12 @@ To allow a user to add, delete and update data in the **TreeList**, assign **tru
 #####Vue
 
     <template>
-        <dx-tree-list ... >
-            <dx-editing
+        <DxTreeList ... >
+            <DxEditing
                 :allow-adding="true"
                 :allow-updating="true"
                 :allow-deleting="true" />
-        </dx-tree-list>
+        </DxTreeList>
     </template>
     <script>
     import { DxTreeList, DxEditing } from "devextreme-vue/tree-list";
@@ -174,7 +174,7 @@ With these settings, the **TreeList** expects that the server can also add, upda
 #####Vue
 
     <template>
-        <dx-tree-list ... 
+        <DxTreeList ... 
             :data-source="dataSource" />
     </template>
     <script>

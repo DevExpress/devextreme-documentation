@@ -6,7 +6,7 @@ id: GridBase.state(state)
 Sets the widget state.
 
 ##### param(state): Object
-The widget state to be set.
+The widget's state to be set. Pass **null** to reset the state to default.
 
 ---
 After the state is set, the **{WidgetName}** reloads data to apply sorting, filtering, and other data processing settings.

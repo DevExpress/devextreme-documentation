@@ -33,6 +33,71 @@ To export a widget using the API, call the [exportTo(fileName, format)](/api-ref
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            ref="chart"
+            ... >
+            <DxExport :enabled="true"/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, { DxExport } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxExport
+        },
+        methods: {
+            exportChart() {
+                this.$refs.chart.instance.exportTo('Exported Chart', 'PDF');
+            },
+            printChart() {
+                this.$refs.chart.instance.print();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, { Export } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.chartRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <Chart ref={this.chartRef} ... >
+                    <Export enabled={true}>
+                </Chart>
+            );
+        }
+
+        get chart() {
+            return this.chartRef.current.instance;
+        }
+
+        exportChart() {
+            this.chart.exportTo('Exported Chart', 'PDF');
+        }
+
+        printChart() {
+            this.chart.print();
+        }
+    }
+
+    export default App;
+
 ---
 
 

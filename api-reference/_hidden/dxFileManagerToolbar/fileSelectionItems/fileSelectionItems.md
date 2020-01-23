@@ -2,7 +2,7 @@
 id: dxFileManagerToolbar.fileSelectionItems
 acceptValues: 'showNavPane' | 'create' | 'upload' | 'refresh' | 'viewSwitcher' | 'download' | 'move' | 'copy' | 'rename' | 'delete' | 'clear' | 'separator'
 type: Array<dxFileManagerToolbarItem, String>
-default: [ 'download', 'separator', 'move', 'copy', 'rename', 'separator', 'delete', 'refresh', 'clear' ]
+default: [ 'download', 'separator', 'move', 'copy', 'rename', 'separator', 'delete', 'clear', { name: 'separator', location: 'after' }, 'refresh' ]
 inheritsType: dxFileManagerToolbarItem
 ---
 ---

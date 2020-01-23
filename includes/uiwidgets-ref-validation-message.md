@@ -52,13 +52,13 @@ An error message can be specified as follows:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-text-box>
-                <dx-validator>
-                    <dx-${{ruleType}}-rule
+            <DxTextBox>
+                <DxValidator>
+                    <Dx${{ruleTypeUpperCase}}Rule
                         message="My custom message"
                     />
-                </dx-validator>
-            </dx-text-box>
+                </DxValidator>
+            </DxTextBox>
         </template>
 
         <script>
@@ -162,13 +162,13 @@ An error message can be specified as follows:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-text-box>
-                <dx-validator>
-                    <dx-${{ruleType}}-rule
+            <DxTextBox>
+                <DxValidator>
+                    <Dx${{ruleTypeUpperCase}}Rule
                         message=""
                     />
-                </dx-validator>
-            </dx-text-box>
+                </DxValidator>
+            </DxTextBox>
         </template>
 
         <script>
@@ -274,12 +274,12 @@ An error message can be specified as follows:
 
         <!-- tab: App.vue -->
         <template>
-            <dx-text-box>
+            <DxTextBox>
                 <!-- The error message will be "${{errorMessage}}" -->
-                <dx-validator name="${{editorName}}">
-                    <dx-${{ruleType}}-rule />
-                </dx-validator>
-            </dx-text-box>
+                <DxValidator name="${{editorName}}">
+                    <Dx${{ruleTypeUpperCase}}Rule />
+                </DxValidator>
+            </DxTextBox>
         </template>
 
         <script>

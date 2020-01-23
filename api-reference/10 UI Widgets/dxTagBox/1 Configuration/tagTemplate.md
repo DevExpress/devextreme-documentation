@@ -72,13 +72,13 @@ This template replaces the default tag template. If you need to recreate the def
 
     <!-- tab: App.vue -->
     <template>
-        <dx-tag-box ...
+        <DxTagBox ...
             tag-template="tagTemplate">
             <div slot="tagTemplate" slot-scope="{ tagData }" class="dx-tag-content">
                 TAG CONTENT
                 <div class="dx-tag-remove-button"></div>
             </div>
-        </dx-tag-box>
+        </DxTagBox>
     </template>
 
     <script>

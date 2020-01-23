@@ -162,7 +162,7 @@ If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/Tag
 #####Vue
 
     <template>
-        <dx-tag-box ... 
+        <DxTagBox ... 
             :data-source="dataSource" />
     </template>
     <script>

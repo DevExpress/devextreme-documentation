@@ -67,10 +67,10 @@ All group validation errors can be displayed in the [ValidationSummary](/api-ref
 
     <!-- tab: App.vue -->
     <template>
-        <!-- <dx-validation-group name="loginGroup"> -->
+        <!-- <DxValidationGroup name="loginGroup"> -->
             ...
-            <dx-validation-summary />
-        <!-- </dx-validation-group> -->
+            <DxValidationSummary />
+        <!-- </DxValidationGroup> -->
     </template>
 
     <script>

@@ -45,11 +45,11 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
 
     <!-- tab: App.vue -->
     <template>
-        <dx-filter-builder ... >
-            <dx-field ...
+        <DxFilterBuilder ... >
+            <DxField ...
                 :editor-options="fieldEditorOptions"
             />
-        </dx-filter-builder>
+        </DxFilterBuilder>
     </template>
 
     <script>

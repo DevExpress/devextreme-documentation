@@ -65,7 +65,7 @@ Specifies the values by which the field is filtered.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

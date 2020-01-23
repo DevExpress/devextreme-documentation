@@ -76,17 +76,17 @@ Commonly, editors nested into an HTML form are supposed to be validated on the c
 
     <template>
         <form action="/Login" method="post">
-            <dx-text-box name="Login">
-                <dx-validator>
+            <DxTextBox name="Login">
+                <DxValidator>
+                    <DxValidationRule type="required" />
+                </DxValidator>
+            </DxTextBox>
+            <DxTextBox name="Password" mode="password">
+                <DxValidator>
                     <dx-validation-rule type="required" />
-                </dx-validator>
-            </dx-text-box>
-            <dx-text-box name="Password" mode="password">
-                <dx-validator>
-                    <dx-validation-rule type="required" />
-                </dx-validator>
-            </dx-text-box>
-            <dx-button
+                </DxValidator>
+            </DxTextBox>
+            <DxButton
                 text="Submit"
                 type="success"
                 :use-submit-behavior="true" />

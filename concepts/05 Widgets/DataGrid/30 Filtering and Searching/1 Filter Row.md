@@ -44,10 +44,10 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-filter-row :visible="true" />
-            <dx-column :allow-filtering="false" ... />
-        </dx-data-grid>
+        <DxDataGrid ... >
+            <DxFilterRow :visible="true" />
+            <DxColumn :allow-filtering="false" ... />
+        </DxDataGrid>
     </template>
 
     <script>
@@ -146,12 +146,12 @@ A user-specified filter is automatically applied with a delay by default. Altern
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ...>
-            <dx-filter-row 
+        <DxDataGrid ...>
+            <DxFilterRow 
                 :visible="true" 
                 apply-filter="onClick"
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -274,15 +274,15 @@ The set of available filter operations can be restricted using the [filterOperat
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-filter-row :visible="true />
-            <dx-column 
+        <DxDataGrid ... >
+            <DxFilterRow :visible="true />
+            <DxColumn 
                 :filter-operations="allowedOperations"
                 :selected-filter-operation.sync="selectedOperation"
                 :filter-value.sync="filterValue" 
                 data-field="Status"
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>

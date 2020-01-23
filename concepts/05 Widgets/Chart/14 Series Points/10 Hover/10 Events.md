@@ -29,7 +29,7 @@ When a user pauses on a series point, the **Chart** fires the [pointHoverChanged
     // ...
     export class AppComponent {
         onPointHoverChanged (e) {
-            let point = e.target;
+            const point = e.target;
             if (point.isHovered()) {
                 // Commands to execute when the point is hovered over
             } else {
@@ -44,6 +44,66 @@ When a user pauses on a series point, the **Chart** fires the [pointHoverChanged
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @point-hover-changed="onPointHoverChanged($event)"
+            ...
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onPointHoverChanged (e) {
+                const point = e.target;
+                if (point.isHovered()) {
+                    // Commands to execute when the point is hovered over
+                } else {
+                    // Commands to execute when the point is hovered out
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onPointHoverChanged={this.onPointHoverChanged}
+                    ...
+                >
+                </Chart>
+            );
+        }
+
+        onPointHoverChanged (e) {
+            const point = e.target;
+            if (point.isHovered()) {
+                // Commands to execute when the point is hovered over
+            } else {
+                // Commands to execute when the point is hovered out
+            }
+        }
+    }
+
+    export default App;
 
 ---
 

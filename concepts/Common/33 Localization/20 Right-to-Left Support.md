@@ -56,7 +56,7 @@ RTL layout can be specified for an individual widget using its **rtlEnabled** op
 
     <!-- tab: App.vue -->
     <template>
-        <dx-slider ...
+        <DxSlider ...
             :rtl-enabled="true"
         />
     </template>

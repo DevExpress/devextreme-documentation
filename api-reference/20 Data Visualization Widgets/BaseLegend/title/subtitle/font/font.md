@@ -80,17 +80,17 @@ Specifies the legend subtitle's font options.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-legend>
-                <dx-title ... >
-                    <dx-subtitle ... >
-                        <dx-font
+        <Dx{WidgetName} ... >
+            <DxLegend>
+                <DxTitle ... >
+                    <DxSubtitle ... >
+                        <DxFont
                             color="black"
                         />
-                    </dx-subtitle>
-                </dx-title>
-            </dx-legend>
-        </dx-{widget-name}>
+                    </DxSubtitle>
+                </DxTitle>
+            </DxLegend>
+        </Dx{WidgetName}>
     </template>
 
     <script>

@@ -52,18 +52,18 @@ The following code shows how to add a command column with custom [buttons](/api-
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-column type="buttons">
-                <dx-button name="edit" />
-                <dx-button name="delete" />
-            </dx-column>
-            <dx-column data-field="firstName" />
-            <dx-column data-field="lastName" />
-            <dx-column type="buttons">
-                <dx-button ... />
+        <DxDataGrid ... >
+            <DxColumn type="buttons">
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+            </DxColumn>
+            <DxColumn data-field="firstName" />
+            <DxColumn data-field="lastName" />
+            <DxColumn type="buttons">
+                <DxButton ... />
                 <!-- Declare and configure custom buttons here -->
-            </dx-column>
-        </dx-data-grid>
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>

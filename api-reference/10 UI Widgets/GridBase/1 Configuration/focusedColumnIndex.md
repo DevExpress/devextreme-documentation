@@ -6,7 +6,7 @@ firedEvents: focusedCellChanged
 ---
 ---
 ##### shortDescription
-The index of the column that contains the focused data cell. This option indicates the column's position in the [columns[]]({basewidgetpath}/Configuration/columns/) array.
+The index of the column that contains the focused data cell. This option indicates the column's position in the [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/') array.
 
 ---
 Note that not all the columns can be focused:   

@@ -15,7 +15,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
                 validationRules: [{ 
                     type: "stringLength", 
                     min: 3, 
-                    message: "Login should be longer than 3 symbols" 
+                    message: "Login should be at least 3 symbols long" 
                 }]
             },
             // ...
@@ -34,7 +34,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
             <dxi-validation-rule
                 type="stringLength"
                 [min]="3"
-                message="Login should be longer than 3 symbols" >
+                message="Login should be at least 3 symbols long" >
             </dxi-validation-rule>
         </dxi-column>
     </dx-data-grid>
@@ -64,7 +64,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
             <DxColumn data-field="Login">
                 <DxStringLengthRule
                     :min="3"
-                    message="Login should be longer than 3 symbols"
+                    message="Login should be at least 3 symbols long"
                 />
             </DxColumn>
         </DxDataGrid>
@@ -114,7 +114,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
                     <Column dataField="Login">
                         <StringLengthRule
                             min={3}
-                            message="Login should be longer than 3 symbols"
+                            message="Login should be at least 3 symbols long"
                         />
                     </Column>
                 </DataGrid>

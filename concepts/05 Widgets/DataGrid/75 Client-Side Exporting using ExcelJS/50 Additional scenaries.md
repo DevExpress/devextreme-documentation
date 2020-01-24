@@ -1,0 +1,1 @@
+For more scenaries see [the list of our ready-to-use HowTos in tickets](https://supportcenter.devexpress.com/internal/?configuration={%22AppliedFilters%22:[{%22filterName%22:%22Team%22,%22selectedValues%22:[%22bf258b81-a03a-4c94-85f0-44c70c66fb2a%22]},{%22filterName%22:%22EntityType%22,%22selectedValues%22:[%221%22]}],%22AppliedSearchString%22:%22ctp%20exceljs%20export%22})

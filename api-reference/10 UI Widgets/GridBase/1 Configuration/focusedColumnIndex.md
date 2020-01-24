@@ -6,12 +6,10 @@ firedEvents: focusedCellChanged
 ---
 ---
 ##### shortDescription
-The index of the column that contains the focused data cell. This option indicates the column's position in the [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/') array.
+The index of the column that contains the focused data cell. This is taken from the [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/') array.
 
 ---
-Note that not all the columns can be focused:   
-- [Command columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/') have indexes but cannot be focused.    
-- [Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') do not have indexes and cannot be focused, while banded columns have indexes and can be focused just as any other columns.
+[Command columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/') and [band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') cannot be focused, but banded columns can.
 
 The default index, *-1*, means that no column is focused.
 

@@ -2,7 +2,7 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
 }
 
-The **FileManager** widget allows you to provide custom thumbnails for a file system's items. 
+The **FileManager** widget allows you to provide custom thumbnails for a file system's items in Thumbnails mode ([mode](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/#mode')).
 
 ![DevExtreme FileManager - Custom Thumbnails](/images/FileManager/custom-thumbnails.png)
 
@@ -23,6 +23,9 @@ You can specify an icon in the following formats:
     $(function () {
         $("#file-manager").dxFileManager({
             // ...
+            itemView: {
+                mode: "thumbnails"
+            }
             customizeThumbnail: function (fileManagerItem) {
                 if (fileManagerItem.isDirectory)
                     return "images/thumbnails/folder.svg";
@@ -42,8 +45,7 @@ You can specify an icon in the following formats:
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { DxFileManagerModule } from 'devextreme-angular';
-    import { Service, FileItem } from './app.service';
+    import { DxFileManagerModule } from 'devextreme-angular';    
     // ...
     export class AppComponent {
         // ...
@@ -61,6 +63,15 @@ You can specify an icon in the following formats:
             }
         }
     }
+    <!-- tab: app.component.html -->
+    <dx-file-manager id="fileManager"
+        [fileProvider]="fileItems"
+        [customizeThumbnail]="customizeIcon" >
+        <dxo-item-view
+            mode="thumbnails">
+        </dxo-item-view>
+        <!-- ... -->    
+    </dx-file-manager>
 
 ##### Vue
 
@@ -68,11 +79,12 @@ You can specify an icon in the following formats:
     <template>
         <DxFileManager            
             :customize-thumbnail="customizeIcon">
+            <DxItemView mode="thumbnails"/>
             <!-- ... -->
         </DxFileManager>
     </template>
     <script>
-    import { DxFileManager, DxPermissions, DxItemView } from 'devextreme-vue/file-manager';
+    import { DxFileManager } from 'devextreme-vue/file-manager';
     export default {  
         methods: {
             customizeIcon(fileManagerItem) {
@@ -96,12 +108,15 @@ You can specify an icon in the following formats:
 ##### React
 
     <!-- tab: App.js -->
-    import FileManager, { Permissions, ItemView } from 'devextreme-react/file-manager';
+    import FileManager from 'devextreme-react/file-manager';
     class App extends React.Component {
         render() {
             return (
             <FileManager
                 customizeThumbnail={this.customizeIcon}>
+                <ItemView
+                    mode="thumbnails">
+                </ItemView>
                 {/* ... */}
             </FileManager>
             );

@@ -1,4 +1,4 @@
-The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex_value).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cellValuerowIndex_visibleColumnIndex_value') method updates a cell's value. This cell can be located using its row and column indexes. If the cell's data field is known, you can pass it instead of the column index. After a value is updated, save it to the data source by calling the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') method.
+The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex_value).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cellValuerowIndex_visibleColumnIndex_value') method updates a cell's value. This cell can be located using its row and column indexes. If the cell's data field is known, you can pass it instead of the column index. After a value is updated, save it to the data source by calling the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') method.
 
 ---
 ##### jQuery
@@ -45,6 +45,97 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20W
         text="Update Cell"
         (onClick)="updateCell()">
     </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxDataGrid ...
+                :ref="dataGridRefKey">
+            </DxDataGrid>
+            <DxButton
+                text="Update Cell"
+                @click="updateCell"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxButton from 'devextreme-vue/button';
+
+    const dataGridRefKey = 'myDataGrid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxButton
+        },
+        data: function() {
+            return {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            updateCell() {
+                this.dataGrid.cellValue(1, "Position", "CTO");
+                this.dataGrid.saveEditData();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+            this.updateCell = this.updateCell.bind(this);
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        updateCell() {
+            this.dataGrid.cellValue(1, "Position", "CTO");
+            this.dataGrid.saveEditData();
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                    <DataGrid ...
+                        ref={this.dataGridRef}>
+                    </DataGrid>
+                    <Button
+                        text="Update Cell"
+                        onClick={this.updateCell}
+                    />
+                </React.Fragment>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -103,6 +194,78 @@ The **DataGrid** widget allows you to process an updated cell value in the **col
         <dxi-column dataField="ID" [visible]="false"></dxi-column>
         <dxi-column dataField="Full_Name" [setCellValue]="setCellValue"></dxi-column>
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxEditing
+                :allow-updating="true"
+                :allow-adding="true"
+            />
+            <DxColumn data-field="ID" :visible="false" />
+            <DxColumn data-field="Full_Name" :set-cell-value="setCellValue" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxEditing,
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxEditing,
+            DxColumn
+        },
+        methods: {
+            setCellValue(rowData, value) {
+                rowData.ID = value + Math.random() * 100;
+                rowData.Full_Name = value;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Editing,
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        setCellValue(rowData, value) {
+            rowData.ID = value + Math.random() * 100;
+            rowData.Full_Name = value;
+        }
+
+        render() {
+            return (
+                <DataGrid ... >
+                    <Editing
+                        allowUpdating={true}
+                        allowAdding={true}
+                    />
+                    <Column dataField="ID" visible={false} />
+                    <Column dataField="Full_Name" setCellValue={this.setCellValue} />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -158,6 +321,101 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
         text="Save changes"
         (onClick)="saveEditData()">
     </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxDataGrid ...
+                :ref="dataGridRefKey">
+            </DxDataGrid>
+            <DxButton
+                text="Save changes"
+                @click="saveChanges"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxButton from 'devextreme-vue/button';
+
+    const dataGridRefKey = 'myDataGrid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxButton
+        },
+        data: function() {
+            return {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            saveChanges() {
+                if(this.dataGrid.hasEditData()) {
+                    // Implement your logic here
+                    this.dataGrid.saveEditData();
+                }
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+            this.saveChanges = this.saveChanges.bind(this);
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        saveChanges() {
+            if(this.dataGrid.hasEditData()) {
+                // Implement your logic here
+                this.dataGrid.saveEditData();
+            }
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                    <DataGrid ...
+                        ref={this.dataGridRef}>
+                    </DataGrid>
+                    <Button
+                        text="Save changes"
+                        onClick={this.saveChanges}
+                    />
+                </React.Fragment>
+            );
+        }
+    }
+    export default App;
     
 ---
 

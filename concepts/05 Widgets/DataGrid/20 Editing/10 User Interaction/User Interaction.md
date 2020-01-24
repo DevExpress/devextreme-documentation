@@ -44,6 +44,67 @@ The **DataGrid** widget allows a user to add, delete and update data. Assign **t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxEditing
+                :allow-updating="true"
+                :allow-adding="true"
+                :allow-deleting="true"
+            />
+            <DxColumn data-field="id" :allow-editing="false" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxEditing,
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxEditing,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Editing,
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Editing
+                        allowUpdating={true}
+                        allowAdding={true}
+                        allowDeleting={true}
+                    />
+                    <Column dataField="id" allowEditing={false} />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -84,6 +145,54 @@ With the **DataGrid** you can edit data in several modes. Use the **editing**.[m
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxEditing mode="row" /> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxEditing
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxEditing
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Editing
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Editing mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

@@ -42,7 +42,7 @@ Model data. Available only if you use Knockout.
         $("#{widgetName}").dx{WidgetName}({
             // ...
             onKeyDown(e) {
-                if (e.event.key === "Ctrl + Q") {
+                if (e.event.key === "Q" && e.event.ctrlKey) {
                     // your event handling logic goes here 
                 }
             }
@@ -62,7 +62,7 @@ Model data. Available only if you use Knockout.
     // ...
     export class AppComponent {
         onKeyDown(e) {
-            if ( e.event.key === "Ctrl + Q") {
+            if (e.event.key === "Q" && e.event.ctrlKey) {
                 // your event handling logic goes here 
             }
         }
@@ -94,7 +94,7 @@ Model data. Available only if you use Knockout.
         data() {},
         methods: {
             onKeyDown(e) {
-                if (e.event.key === "Ctrl + Q") {
+                if (e.event.key === "Q" && e.event.ctrlKey) {
                     // your event handling logic goes here 
                 }
             }
@@ -121,6 +121,12 @@ Model data. Available only if you use Knockout.
                     onKeyDown={this.onKeyDown}>
                 </{WidgetName}>
             );
+        }
+
+        onKeyDown(e) {
+            if (e.event.key === "Q" && e.event.ctrlKey) {
+                // your event handling logic goes here 
+            }
         }
     }
     export default App;

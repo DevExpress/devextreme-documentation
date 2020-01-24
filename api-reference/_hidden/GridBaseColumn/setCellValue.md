@@ -96,11 +96,11 @@ This function allows you to process user input before it is saved to the data so
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column data-field="Price" />
-            <dx-column data-field="Count" data-type="number" />
-            <dx-column data-field="TotalPrice" :set-cell-value="setCellValue" />
-        </dx-{widget-name}>
+        <Dx{WidgetName} ... >
+            <DxColumn data-field="Price" />
+            <DxColumn data-field="Count" data-type="number" />
+            <DxColumn data-field="TotalPrice" :set-cell-value="setCellValue" />
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -197,10 +197,10 @@ If you need to perform asynchronous operations in the **setCellValue** function,
         });
         function getTaxRates(state) {
             var promise = $.ajax({
-                // The URL returns { StateID: 1, Tax: 10 }
+                // The URL returns { State: 1, Tax: 10 }
                 url: "https://www.mywebsite.com/api/getTaxRates",
                 dataType: "json",
-                data: { StateID: state }
+                data: { State: state }
             });
             return promise;
         }
@@ -240,11 +240,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
             });
         }
         getTaxRates(state) {
-            const params = new HttpParams().set('StateID', state);
+            const params = new HttpParams().set('State', state);
             return this.httpClient.get("https://www.mywebsite.com/api/getTaxRates", { params })
                 .toPromise()
                 .then(data => {
-                    // "data" is { StateID: 1, Tax: 10 }
+                    // "data" is { State: 1, Tax: 10 }
                     return data;
                 })
                 .catch(error => { throw "Data Loading Error" });
@@ -277,11 +277,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column data-field="State" :set-cell-value="setCellValue" />
-            <dx-column data-field="Tax" />
+        <Dx{WidgetName} ... >
+            <DxColumn data-field="State" :set-cell-value="setCellValue" />
+            <DxColumn data-field="Tax" />
             <!-- ... -->
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -304,11 +304,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
                 });
             },
             getTaxRates(state) {
-                let params = '?' + 'StateId=' + state;
+                let params = '?' + 'State=' + state;
                 return fetch("https://www.mywebsite.com/api/getTaxRates${params}")
                     .toPromise()
                     .then(data => {
-                        // "data" is { StateID: 1, Tax: 10 }
+                        // "data" is { State: 1, Tax: 10 }
                         return data;
                     })
                     .catch(error => { throw "Data Loading Error" });
@@ -341,11 +341,11 @@ If you need to perform asynchronous operations in the **setCellValue** function,
             });
         }
         getTaxRates(state) {
-            let params = '?' + 'StateId=' + state;
+            let params = '?' + 'State=' + state;
             return fetch("https://www.mywebsite.com/api/getTaxRates${params}")
                 .toPromise()
                 .then(data => {
-                    // "data" is { StateID: 1, Tax: 10 }
+                    // "data" is { State: 1, Tax: 10 }
                     return data;
                 })
                 .catch(error => { throw "Data Loading Error" });
@@ -384,10 +384,10 @@ If you need to perform asynchronous operations in the **setCellValue** function,
         }
         function getTaxRates(state) {
             var promise = $.ajax({
-                // The URL returns { StateID: 1, Tax: 10 }
+                // The URL returns { State: 1, Tax: 10 }
                 url: "https://www.mywebsite.com/api/getTaxRates",
                 dataType: "json",
-                data: { StateID: state }
+                data: { State: state }
             });
             return promise;
         }

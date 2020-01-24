@@ -29,7 +29,7 @@ When a user selects a series point, the **Chart** fires the [pointSelectionChang
     // ...
     export class AppComponent {
         onPointSelectionChanged (e) {
-            let point = e.target;
+            const point = e.target;
             if (point.isSelected()) {
                 // Commands to execute when the point is selected
             } else {
@@ -44,6 +44,66 @@ When a user selects a series point, the **Chart** fires the [pointSelectionChang
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @point-selection-changed="onPointSelectionChanged($event)"
+            ...
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onPointSelectionChanged (e) {
+                const point = e.target;
+                if (point.isSelected()) {
+                    // Commands to execute when the point is selected
+                } else {
+                    // Commands to execute when the selection is cleared
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onPointSelectionChanged={this.onPointSelectionChanged}
+                    ...
+                >
+                </Chart>
+            );
+        }
+
+        onPointSelectionChanged (e) {
+            const point = e.target;
+            if (point.isSelected()) {
+                // Commands to execute when the point is selected
+            } else {
+                // Commands to execute when the selection is cleared
+            }
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -95,9 +95,9 @@ In the following code, the `bold` format is associated with the `<b>` tag instea
 
     <!-- tab: App.vue -->
     <template>
-        <dx-html-editor ...
+        <DxHtmlEditor ...
             :ref="htmlEditorRefName">
-        </dx-html-editor>
+        </DxHtmlEditor>
     </template>
 
     <script>

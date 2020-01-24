@@ -44,10 +44,10 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-           <dx-search-panel :visible="true" />
-           <dx-column :allow-search="false" />
-        </dx-data-grid>
+        <DxDataGrid ... >
+           <DxSearchPanel :visible="true" />
+           <DxColumn :allow-search="false" />
+        </DxDataGrid>
     </template>
 
     <script>
@@ -157,12 +157,12 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Widgets/GridBase/1%20Con
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-search-panel 
+        <DxDataGrid ... >
+            <DxSearchPanel 
                 :visible="true"
                 :text.sync="searchText" 
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>

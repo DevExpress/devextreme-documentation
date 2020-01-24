@@ -151,30 +151,30 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-editing
+        <Dx{WidgetName} ... >
+            <DxEditing
                 :allow-updating="true"
                 mode="form">
-                    <dx-form>
-                        <dx-item itemType="group" caption="Personal Data">
-                            <dx-item dataField="Prefix" />
-                            <dx-item dataField="Full_Name" />
-                            <dx-item dataField="Position" />
-                            <dx-item dataField="Duties" editorType="dxTextArea" />
-                        </dx-item>
-                        <dx-item itemType="group" caption="Contacts">
-                            <dx-item dataField="Email" />
-                            <dx-item dataField="Skype" />
-                        </dx-item>
-                    </dx-form>
-            </dx-editing>
-            <dx-column data-field="Full_Name" />
-            <dx-column data-field="Prefix" />
-            <dx-column data-field="Position" />
-            <dx-column data-field="Duties" />
-            <dx-column data-field="Email" />
-            <dx-column data-field="Skype" />
-        </dx-{widget-name}>
+                    <DxForm>
+                        <DxItem itemType="group" caption="Personal Data">
+                            <DxItem dataField="Prefix" />
+                            <DxItem dataField="Full_Name" />
+                            <DxItem dataField="Position" />
+                            <DxItem dataField="Duties" editorType="dxTextArea" />
+                        </DxItem>
+                        <DxItem itemType="group" caption="Contacts">
+                            <DxItem dataField="Email" />
+                            <DxItem dataField="Skype" />
+                        </DxItem>
+                    </DxForm>
+            </DxEditing>
+            <DxColumn data-field="Full_Name" />
+            <DxColumn data-field="Prefix" />
+            <DxColumn data-field="Position" />
+            <DxColumn data-field="Duties" />
+            <DxColumn data-field="Email" />
+            <DxColumn data-field="Skype" />
+        </Dx{WidgetName}>
     </template>
 
     <script>

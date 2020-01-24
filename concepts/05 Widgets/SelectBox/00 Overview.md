@@ -4,7 +4,7 @@ The **SelectBox** widget is an editor that allows an end user to select an item 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/"
 }
 
-The following code adds the **SelectBox** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/dataSource/') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#placeholder') to be displayed when the **SelectBox** is empty.
+The following code adds the **SelectBox** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#placeholder') to be displayed when the **SelectBox** is empty.
 
 ---
 #####jQuery
@@ -118,5 +118,6 @@ If your data is an array of objects, specify:
 - [SelectBox - Handle the Value Change Event](/concepts/05%20Widgets/SelectBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/SelectBox/Handle_the_Value_Change_Event/')
 - [SelectBox - Keyboard Support](/concepts/05%20Widgets/SelectBox/25%20Keyboard%20Support.md '/Documentation/Guide/Widgets/SelectBox/Keyboard_Support/')
 - [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/')
+- [Lookup vs SelectBox](/concepts/05%20Widgets/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/Widgets/Lookup/Lookup_vs_SelectBox/')
 
 [tags]selectBox, select box, editor, collection widget, overview, data source, value, display expression

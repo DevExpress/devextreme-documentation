@@ -92,12 +92,12 @@ The text the cell should display.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-column
+        <Dx{WidgetName} ... >
+            <DxColumn
                 data-field="Temperature" 
                 :customize-text="customizeText"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

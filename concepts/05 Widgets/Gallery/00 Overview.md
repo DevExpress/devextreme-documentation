@@ -4,7 +4,7 @@ The **Gallery** is a widget that displays a collection of images in a carousel. 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview/"
 }
 
-The following code adds the **Gallery** widget to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/dataSource/') and [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#height') to be specified.
+The following code adds the **Gallery** widget to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#dataSource') and [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#height') to be specified.
 
 ---
 #####jQuery

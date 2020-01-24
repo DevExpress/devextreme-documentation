@@ -44,12 +44,12 @@ Configures the DevExtreme widget used as a toolbar item.
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name}>
-            <dx-toolbar-item ...
+        <Dx{WidgetName}>
+            <DxToolbarItem ...
                 widget="dxCheckBox"
                 :options="checkBoxOptions"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

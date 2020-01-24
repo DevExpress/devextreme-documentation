@@ -50,6 +50,74 @@ To configure the argument or value axis individually, use the [argumentAxis](/ap
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis>
+                <!-- high priority -->
+            </DxArgumentAxis>
+
+            <DxValueAxis>
+                <!-- high priority -->
+            </DxValueAxis>
+
+            <DxCommonAxisSettings>
+                <!-- low priority -->
+            </DxCommonAxisSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxValueAxis,
+        DxCommonAxisSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxValueAxis,
+            DxCommonAxisSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        ValueAxis,
+        CommonAxisSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis>
+                        {/* high priority */}
+                    </ArgumentAxis>
+
+                    <ValueAxis>
+                        {/* high priority */}
+                    </ValueAxis>
+
+                    <CommonAxisSettings>
+                        {/* low priority */}
+                    </CommonAxisSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Axes can be of one of the following types.
@@ -110,6 +178,63 @@ Usually, the **Chart** chooses the axis type automatically according to the type
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis
+                argument-type="datetime"
+                type="discrete"
+            />
+            <DxValueAxis
+                value-type="numeric"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis,
+        DxValueAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxValueAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis,
+        ValueAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        argumentType="datetime"
+                        type="discrete"
+                    />
+                    <ValueAxis
+                        valueType="numeric"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
     
 ---
 

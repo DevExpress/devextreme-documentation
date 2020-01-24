@@ -51,15 +51,15 @@ The **Edit** and **Delete** buttons can be hidden by omitting them when declarin
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid ... >
-            <dx-editing
+        <DxDataGrid ... >
+            <DxEditing
                 :allow-updating="true"
                 :allow-deleting="true"
             />
-            <dx-column type="buttons">
-                <dx-button name="edit" />
-            </dx-column>
-        </dx-data-grid>
+            <DxColumn type="buttons">
+                <DxButton name="edit" />
+            </DxColumn>
+        </DxDataGrid>
     </template>
 
     <script>

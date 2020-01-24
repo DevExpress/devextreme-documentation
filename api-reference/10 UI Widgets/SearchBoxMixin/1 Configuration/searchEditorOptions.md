@@ -64,11 +64,11 @@ See the [TextBox Configuration](/api-reference/10%20UI%20Widgets/dxTextBox/1%20C
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-search-editor-options
+        <Dx{WidgetName} ... >
+            <DxSearchEditorOptions
                 :on-option-changed="logOption"
             />
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

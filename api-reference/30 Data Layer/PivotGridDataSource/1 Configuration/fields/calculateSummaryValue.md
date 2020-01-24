@@ -79,7 +79,7 @@ On the following image, pivot grid cells display indexes that show the order in 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="pivotGridDataSource"
         />
     </template>

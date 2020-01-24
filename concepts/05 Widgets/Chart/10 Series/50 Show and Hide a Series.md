@@ -21,15 +21,15 @@ The **Chart** provides an API for showing and hiding a series at runtime. The mo
 
     <!--HTML-->
     <dx-chart
-        (onLegendClick)="onLegendClick($event)">
+        (onLegendClick)="legendClickHandler($event)">
     </dx-chart>
 
     <!--TypeScript-->
     import { DxChartModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        onLegendClick (e) {
-            let series = e.target;
+        legendClickHandler (e) {
+            const series = e.target;
             if (series.isVisible()) {
                 series.hide();
             } else {
@@ -44,6 +44,64 @@ The **Chart** provides an API for showing and hiding a series at runtime. The mo
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @legend-click="legendClickHandler($event)"
+            ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            legendClickHandler(e) {
+                const series = e.target;
+                if (series.isVisible()) {
+                    series.hide();
+                } else {
+                    series.show();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onLegendClick={this.legendClickHandler}
+                    ... >
+                </Chart>
+            );
+        }
+
+        legendClickHandler(e) {
+            const series = e.target;
+            if (series.isVisible()) {
+                series.hide();
+            } else {
+                series.show();
+            }
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -84,6 +142,48 @@ A series can be hidden initially. For this, assign **false** to the [visible](/a
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries :visible="false" ... />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series visible={false} />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -37,14 +37,14 @@
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-toolbar>
-                <dx-${{nestedOptionKebabCase}}
+        <Dx{WidgetName} ... >
+            <DxToolbar>
+                <Dx${{nestedOptionImport}}
                     widget="dxCheckBox"
                     :options="checkBoxOptions"
                 />
-            </dx-toolbar>
-        </dx-{widget-name}>
+            </DxToolbar>
+        </Dx{WidgetName}>
     </template>
 
     <script>

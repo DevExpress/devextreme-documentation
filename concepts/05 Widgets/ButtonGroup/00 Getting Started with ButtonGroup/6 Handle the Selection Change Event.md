@@ -43,7 +43,7 @@ Assign a function to the [onSelectionChanged](/api-reference/10%20UI%20Widgets/d
 
     <!-- tab: App.vue -->
     <template>
-        <dx-button-group ...
+        <DxButtonGroup ...
             @selection-changed="logSelectionChanged"
         />
     </template>

@@ -2,7 +2,7 @@ An all-day appointment is a non-recurring appointment that covers the whole [tim
 
 ![Scheduler All-Day Appointment](/images/UiWidgets/Scheduler_AllDayAppointment.png)
 
-An appointment can also be marked as all-day by assigning **true** to the defining object's [allDay](/api-reference/_hidden/dxSchedulerAppointment/allDay.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/dataSource/#allDay') field. The [startDate](/api-reference/_hidden/dxSchedulerAppointment/startDate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/dataSource/#startDate') field should also be present in this object; the [endDate](/api-reference/_hidden/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/dataSource/#endDate') is optional.
+An appointment can also be marked as all-day by assigning **true** to the defining object's [allDay](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource#allDay) field. The [startDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource#startDate) field should also be present in this object; the [endDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource#endDate) is optional.
 
     <!--JavaScript-->
     var allDayAppointment = [{

@@ -11,7 +11,11 @@ Configures your application before its launch.
 Global configuration options.
 
 ---
-DevExpress.config({
+
+<!---->
+    
+    <!--JavaScript-->
+    DevExpress.config({
         rtlEnabled: true,
         forceIsoDateParsing: false,
         // ...

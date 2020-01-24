@@ -29,7 +29,7 @@ The selection capability is not provided out of the box, but it can be implement
     // ...
     export class AppComponent {
         onPointClick (e) {
-            let point = e.target;
+            const point = e.target;
             if (point.isSelected()) {
                 point.clearSelection();
             } else {
@@ -45,9 +45,69 @@ The selection capability is not provided out of the box, but it can be implement
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @point-click="onPointClick($event)"
+            ...
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onPointClick (e) {
+                const point = e.target;
+                if (point.isSelected()) {
+                    point.clearSelection();
+                } else {
+                    point.select();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onPointClick={this.onPointClick}
+                    ...
+                >
+                </Chart>
+            );
+        }
+
+        onPointClick (e) {
+            const point = e.target;
+            if (point.isSelected()) {
+                point.clearSelection();
+            } else {
+                point.select();
+            }
+        }
+    }
+
+    export default App;
+
 ---
 
-In the previous code example, selection was cleared of a specific point. If you need to clear selection of all points in a series, call the [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/clearSelection().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#clearSelection') method of that series.
+In the previous code example, selection was cleared of a specific point. If you need to clear selection of all points in a series, you can use the [deselectPoint(point)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/deselectPoint(point).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#deselectPointpoint') method of that series.
 
 ---
 ##### jQuery
@@ -56,12 +116,9 @@ In the previous code example, selection was cleared of a specific point. If you 
         $("#chartContainer").dxChart({
             // ...
             onPointClick: function (e) {
-                var series = e.target.series;
-                if (series.isSelected()) {
-                    series.clearSelection();
-                } else {
-                    series.select();
-                }
+                e.target.series.getAllPoints(function(point) {
+                    series.deselectPoint(point);
+                });
             }
         });
     });
@@ -78,13 +135,8 @@ In the previous code example, selection was cleared of a specific point. If you 
     // ...
     export class AppComponent {
         onPointClick (e) {
-            let series = e.target.series;
-            if (series.isSelected()) {
-                series.clearSelection();
-            } else {
-                series.select();
-            }
-        };
+            e.target.series.getAllPoints(point => series.deselectPoint(point));
+        }
     }
     @NgModule({
         imports: [
@@ -93,6 +145,56 @@ In the previous code example, selection was cleared of a specific point. If you 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @point-click="onPointClick($event)"
+            ...
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onPointClick (e) {
+                e.target.series.getAllPoints(point => series.deselectPoint(point));
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onPointClick={this.onPointClick}
+                    ...
+                >
+                </Chart>
+            );
+        }
+
+        onPointClick (e) {
+            e.target.series.getAllPoints(point => series.deselectPoint(point));
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -125,10 +227,63 @@ If you need to clear selection of all series in the **Chart** along with their p
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            ref="chart"
+            ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            clearSelection () {
+                this.$refs.chart.instance.clearSelection();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.chartRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <Chart ref={this.chartRef} ... >
+                </Chart>
+            );
+        }
+
+        clearSelection () {
+            this.chartRef.current.instance.clearSelection();
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####
 #include common-link-handleevents
 #include common-link-callmethods
+- [Access a Series Point Using the API](/concepts/05%20Widgets/Chart/14%20Series%20Points/25%20Access%20a%20Series%20Point%20Using%20the%20API.md '/Documentation/Guide/Widgets/Chart/Series_Points/Access_a_Series_Point_Using_the_API/')
 - [Access a Series Using the API](/concepts/05%20Widgets/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/Widgets/Chart/Series/Access_a_Series_Using_the_API/')
 - [Series Selection Using the API](/concepts/05%20Widgets/Chart/10%20Series/20%20Selection/01%20API.md '/Documentation/Guide/Widgets/Chart/Series/Selection/#API')

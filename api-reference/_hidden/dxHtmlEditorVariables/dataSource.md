@@ -99,9 +99,9 @@ Use one of the following extensions to enable the server to process data accordi
 
         <!-- tab: App.vue -->
         <template> 
-            <dx-{widget-name} ... >
-                <dx-variables :data-source="store"></dx-variables>
-            </dx-{widget-name}>
+            <Dx{WidgetName} ... >
+                <DxVariables :data-source="store"></DxVariables>
+            </Dx{WidgetName}>
         </template>
 
         <script>

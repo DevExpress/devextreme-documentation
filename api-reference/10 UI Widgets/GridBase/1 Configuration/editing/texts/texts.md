@@ -72,13 +72,13 @@ The following code shows the **editing**.**texts** declaration syntax:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ... >
-            <dx-editing ... >
-                <dx-texts
+        <Dx{WidgetName} ... >
+            <DxEditing ... >
+                <DxTexts
                     delete-row="Remove"
                 />
-            </dx-editing>
-        </dx-{widget-name}> 
+            </DxEditing>
+        </Dx{WidgetName}> 
     </template>
 
     <script>

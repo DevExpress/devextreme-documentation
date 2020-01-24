@@ -9,4 +9,3 @@ Gets the currently selected items.
 ##### readonly
 
 ---
-[note]This option is read-only.

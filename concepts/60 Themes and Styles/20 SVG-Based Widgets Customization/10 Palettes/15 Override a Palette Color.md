@@ -91,20 +91,20 @@ Set a widget element's **color** option to override a palette color for this ele
 
     <template>
         <div>
-            <dx-chart ... >
-                <dx-series color="red" ... />
-            </dx-chart>
+            <DxChart ... >
+                <DxSeries color="red" ... />
+            </DxChart>
 
-            <dx-circular-gauge ... >
-                <dx-range-container ... >
-                    <dx-range color="red" ... />
-                </dx-range-container>
-            </dx-circular-gauge>
+            <DxCircularGauge ... >
+                <DxRangeContainer ... >
+                    <DxRange color="red" ... />
+                </DxRangeContainer>
+            </DxCircularGauge>
 
-            <dx-vector-map ... >
-                <dx-layer ...
+            <DxVectorMap ... >
+                <DxLayer ...
                     :customize="colorizeMap" />
-            </dx-vector-map>
+            </DxVectorMap>
         </div>
     </template>
     <script>

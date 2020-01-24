@@ -72,6 +72,104 @@ You can send the human-readable values from the server as a part of the main dat
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                caption="Customer"
+                data-field="CustomerID"
+                calculate-display-value="CustomerName">   <!-- "CustomerName" provides human-readable values -->
+                <DxLookup
+                    :data-source="lookupDataSourceConfig"
+                    display-expr="ContactName"
+                    value-expr="CustomerID"
+                />
+            </DxColumn>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxLookup
+    } from 'devextreme-vue/data-grid';
+
+    import 'devextreme/data/array_store';
+    // ===== or =====
+    // import "devextreme/data/odata/store";
+    // import "devextreme/data/custom_store";
+
+    const lookupDataSourceConfig = {
+        store: {
+            // ...
+            key: 'CustomerID'
+        }    
+    }
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxLookup
+        },
+        data() {
+            return {
+                lookupDataSourceConfig
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+        Lookup
+    } from 'devextreme-react/data-grid';
+
+    import 'devextreme/data/array_store';
+    // ===== or =====
+    // import "devextreme/data/odata/store";
+    // import "devextreme/data/custom_store";
+
+    const lookupDataSourceConfig = {
+        store: {
+            // ...
+            key: 'CustomerID'
+        }    
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        caption="Customer"
+                        dataField="CustomerID"
+                        calculateDisplayValue="CustomerName">   <!-- "CustomerName" provides human-readable values -->
+                        <Lookup
+                            dataSource={lookupDataSourceConfig}
+                            displayExpr="ContactName"
+                            valueExpr="CustomerID"
+                        />
+                    </Column>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

@@ -46,7 +46,7 @@ In the following code the **onCellPrepared** event handler is used to customize 
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
-            onCellPrepared: function(e){          
+            onCellPrepared: function(e) {          
                 if(e.area === "row" || e.area === "column") 
                     e.cellElement.css("font-weight", "bold")
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
@@ -71,8 +71,7 @@ In the following code the **onCellPrepared** event handler is used to customize 
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        
-       onCellPrepared(e){          
+       onCellPrepared(e) {          
             if(e.area === "row" || e.area === "column") 
                 e.cellElement.style.fontWeight = "bold";
             if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
@@ -103,7 +102,7 @@ In the following code the **onCellPrepared** event handler is used to customize 
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName}
+        <Dx{WidgetName} ...
             @cell-prepared="onCellPrepared"
         />
     </template>
@@ -119,7 +118,7 @@ In the following code the **onCellPrepared** event handler is used to customize 
             Dx{WidgetName}
         },
         methods: {
-            onCellPrepared(e){          
+            onCellPrepared(e) {          
                 if(e.area === "row" || e.area === "column") 
                     e.cellElement.style.fontWeight = "bold";
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
@@ -140,18 +139,14 @@ In the following code the **onCellPrepared** event handler is used to customize 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
-                <{WidgetName}
+                <{WidgetName} ...
                     onCellPrepared={this.onCellPrepared}
                 />
             );
         }
-        onCellPrepared(e){          
+        onCellPrepared(e) {          
             if(e.area === "row" || e.area === "column") 
                 e.cellElement.style.fontWeight = "bold";
             if(e.cell.columnType === "GT" || e.cell.rowType === "GT")

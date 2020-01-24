@@ -19,6 +19,9 @@ If present, creates a [color swatch](/concepts/60%20Themes%20and%20Styles/05%20P
 * `--base`      
 Exports only base variables used to produce derived variables.
 
+* `--version`     
+Specifies the target DevExtreme version or a tag that points to it (the default value is 'latest').
+
 * `--widgets`       
 Specifies a comma-separated list of widgets whose styles should be included in the resulting CSS file. If this argument is not specified, styles of all widgets are included. Syntax example:
 

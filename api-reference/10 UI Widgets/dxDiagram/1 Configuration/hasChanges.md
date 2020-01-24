@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Indicates whether the diagram content has been changed.
+Indicates whether diagram content has been changed.
 
 ---
 The **hasChanges** option is set to **true** on any diagram change. You can use this option together with the [optionChanged](/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#optionChanged) event to implement diagram content autosave.

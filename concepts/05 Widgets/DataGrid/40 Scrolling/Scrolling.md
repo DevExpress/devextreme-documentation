@@ -59,6 +59,54 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Con
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxScrolling mode="standard" /> <!-- or "virtual" | "infinite" -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxScrolling
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxScrolling
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Scrolling
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Scrolling mode="standard" /> {/* or "virtual" | "infinite" */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -97,6 +145,58 @@ The **DataGrid** adapts its scrolling mechanism to the current platform. It util
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxScrolling
+                :use-native="true"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxScrolling
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxScrolling
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Scrolling
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Scrolling
+                        useNative={true}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -141,6 +241,62 @@ The current platform determines the native scrolling settings and you cannot adj
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxScrolling
+                :use-native="false"
+                :scroll-by-content="true"
+                :scroll-by-thumb="true"
+                show-scrollbar="onHover" /> <!-- or "onClick" | "always" | "never" -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxScrolling
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxScrolling
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Scrolling
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Scrolling
+                        useNative={false}
+                        scrollByContent={true}
+                        scrollByThumb={true}
+                        showScrollbar="onHover" /> {/* or "onClick" | "always" | "never" */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

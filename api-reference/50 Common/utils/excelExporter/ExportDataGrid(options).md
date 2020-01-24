@@ -14,9 +14,11 @@ A Promise that is resolved with an object of coordinates the last cell position 
 
 ##### param(options.component): dxDataGrid // default value: undefined
 The [*DataGrid*](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/) widget's instance.
+[note] **required**
 
 ##### param(options.worksheet): any // default value: undefined
 The **worksheet** argument exposes the Excel worksheet configuration. For more information, refer to how to create [workbook](https://github.com/exceljs/exceljs#create-a-workbook) and add [worksheet](https://github.com/exceljs/exceljs#add-a-worksheet).
+[note] **required**
 
 ##### param(options.topLeftCell): Object // default { row: 1, column: 1 }
 The object that specified a start position for export dxDataGrid. Has the following format: { row: *rowIndex*, column: *cellIndex*}.

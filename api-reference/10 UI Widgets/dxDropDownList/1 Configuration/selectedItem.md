@@ -10,4 +10,3 @@ Gets the currently selected item.
 ##### readonly
 
 ---
-[note]This option is read-only.

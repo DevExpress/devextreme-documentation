@@ -83,7 +83,7 @@ A user can interact with the widget using the following keys:
     </table>
 </div>
 
-You can override these shortcuts or create your own ones using the [onKeyDown](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onKeyDown') event handler.
+You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onKeyDown') event handler.
 
 <div style="font-size:12px">
     <sup>1</sup> - If the <a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"startEdit"</i>.<br/>

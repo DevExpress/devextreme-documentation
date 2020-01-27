@@ -46,16 +46,15 @@ Configures tasks.
 
     <!-- tab: app.component.ts -->
     import { DxGanttModule } from 'devextreme-angular';
-    import { Service, Task, Dependency, Resource, ResourceAssignment } from './app.service';
-    // ...
+    import { Task, ... } from './app.service';
     export class AppComponent {
         tasks: Task[];
         // ...
     }
     <!-- tab: app.component.html -->
-    <dx-gantt ... 
-        <dxo-tasks [dataSource]="tasks"></dxo-tasks>
-		// ...
+    <dx-gantt ... >
+        <dxo-tasks [dataSource]="tasks" />
+        <!-- ... -->
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let tasks: Task[] = [{
@@ -73,34 +72,18 @@ Configures tasks.
 
     <!-- tab: App.vue -->
     <template>
-        <DxGantt ...
+        <DxGantt ...>
             <DxTasks :data-source="tasksDataSource"/>
-			// ...
+            <!-- ... -->
         </DxGantt>
     </template>
     <script>
-        import {
-            DxGantt,
-            DxTasks,
-			// ...
-        } from 'devextreme-vue/gantt';
-
-        import {
-            tasks,
-			// ...
-        } from './data.js';
-
+        import { DxGantt, DxTasks, ... } from 'devextreme-vue/gantt';
+        import { tasks, ... } from './data.js';
         export default {
-            components: {
-                DxGantt,
-                DxTasks,
-				// ...
-            },
+            components: { DxTasks, ... },
             data() {
-                return {
-                tasks,
-				// ...
-                };
+                return { tasks, ... };
             },
             computed: {
                 tasksDataSource() { return tasks; },
@@ -124,16 +107,15 @@ Configures tasks.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing } from 'devextreme-react/gantt';
-    import { tasks, dependencies, resources, resourceAssignments } from './data.js';
-
+    import Gantt, { Tasks, ... } from 'devextreme-react/gantt';
+    import { tasks, ... } from './data.js';
     class App extends React.Component {
         render() {
             return (
-            <Gantt ...       
-                <Tasks dataSource={tasks} />
-				// ...
-            </Gantt>
+                <Gantt ... >
+                    <Tasks dataSource={tasks} />
+				    {/* ... */}
+                </Gantt>
             );
         }
     }

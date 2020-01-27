@@ -61,6 +61,92 @@ The **Form** widget uses the built-in validation engine to validate form item va
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm :form-data="employee">
+            <DxSimpleItem data-field="firstName">
+                <DxRequiredRule
+                    message="First Name is required"
+                />
+                <DxPatternRule
+                    pattern="^[a-zA-Z]+$"
+                    message="The name should not contain digits"
+                />
+            </DxSimpleItem>
+            <!-- ... -->
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxSimpleItem,
+        DxRequiredRule,
+        DxPatternRule
+    } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxSimpleItem,
+            DxRequiredRule,
+            DxPatternRule
+        },
+        data() {
+            return {
+                employee: {
+                    firstName: 'John',
+                    lastName: 'Heart'
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        SimpleItem,
+        RequiredRule,
+        PatternRule
+    } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        employee: {
+            firstName: 'John',
+            lastName: 'Heart'
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}>
+                    <SimpleItem dataField="firstName">
+                        <RequiredRule
+                            message="First Name is required"
+                        />
+                        <PatternRule
+                            pattern="^[a-zA-Z]+$"
+                            message="The name should not contain digits"
+                        />
+                    </SimpleItem>
+                    {/* ... */}
+                </Form>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 ... or when you [customize automatically generated items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/#Customize_a_Simple_Item').
@@ -127,6 +213,91 @@ The **Form** widget uses the built-in validation engine to validate form item va
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :customize-item="form_customizeItem">
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm
+        },
+        data() {
+            return {
+                employee: {
+                    firstName: 'John',
+                    lastName: 'Heart'
+                }
+            }
+        },
+        methods: {
+            form_customizeItem (item) {
+                if (item.dataField === "FirstName" || item.dataField === "LastName") {
+                    item.validationRules = [{
+                        type: "required",
+                        message: "The value is required"
+                    }, {
+                        type: "pattern",
+                        pattern: "^[a-zA-Z]+$",
+                        message: "The value should not contain digits"
+                    }]
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form from 'devextreme-react/form';
+
+    class App extends React.Component {
+        employee: {
+            firstName: 'John',
+            lastName: 'Heart'
+        }
+
+        customizeItem(item) {
+            if (item.dataField === "FirstName" || item.dataField === "LastName") {
+                item.validationRules = [{
+                    type: "required",
+                    message: "The value is required"
+                }, {
+                    type: "pattern",
+                    pattern: "^[a-zA-Z]+$",
+                    message: "The value should not contain digits"
+                }]
+            }
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}
+                    customizeItem={this.customizeItem}>
+                </Form>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 [note] The [RequiredRule](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RequiredRule/') is attached to a form item implicitly if this item's [isRequired](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired') option is set to **true**.
@@ -190,6 +361,76 @@ Usually, **Form** editors should be submitted to the server after being successf
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <form action="/Login" method="post">
+            <DxForm ...
+                validation-group="groupName">
+                <!-- ... -->
+                <DxButtonItem>
+                    <DxButtonOptions
+                        text="Submit the Form"
+                        :use-submit-behavior="true"
+                    />
+                </DxButtonItem>
+            </DxForm>
+        </form>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxButtonItem,
+        DxButtonOptions
+    } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxButtonItem,
+            DxButtonOptions
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        ButtonItem,
+        ButtonOptions
+    } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <form action="/Login" method="post">
+                    <Form ...
+                        validationGroup="groupName">
+                        {/* ... */}
+                        <ButtonItem>
+                            <ButtonOptions
+                                text="Submit the Form"
+                                useSubmitBehavior={true}
+                            />
+                        </ButtonItem>
+                    </Form>
+                </form>
+            );
+        }
+    }
+    export default App;
 
 ---
 

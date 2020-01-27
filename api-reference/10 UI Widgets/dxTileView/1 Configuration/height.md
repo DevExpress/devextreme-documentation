@@ -1,13 +1,13 @@
 ---
 id: dxTileView.Options.height
-type: Number | String
+type: Number | String | function()
 default: 500
 ---
 ---
 ##### shortDescription
 Specifies the widget's height.
 
-##### return: number|string
+##### return: Number | String
 The widget's height.
 
 ---

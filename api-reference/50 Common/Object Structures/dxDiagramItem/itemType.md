@@ -5,7 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Returns the type of the item.
 
 ---
-<!-- Description goes here -->

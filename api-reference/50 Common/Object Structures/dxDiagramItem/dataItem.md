@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Returns the data item that is bound to the diagram item.
 
 ---
-<!-- Description goes here -->

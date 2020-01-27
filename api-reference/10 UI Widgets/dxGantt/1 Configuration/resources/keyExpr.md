@@ -37,20 +37,13 @@ Specifies the data field that provides keys for resources.
     import { Service, Task, Dependency, Resource, ResourceAssignment } from './app.service';
     // ...
     export class AppComponent {
-        resources: Resource[];		
+        resources: Resource[];
         // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
+    }    
     <!-- tab: app.component.html -->
     <dx-gantt ... 
         <dxo-resources [dataSource]="resources" [keyExpr]="resourceId" ></dxo-resources>
-		// ...
+		<!-- ... -->
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let resources: Resource[] = [{
@@ -70,7 +63,7 @@ Specifies the data field that provides keys for resources.
                 :data-source="resourcesDataSource"
                 keyExpr="resourceId" 
             />
-			// ...
+			<!-- ... -->
         </DxGantt>
     </template>
     <script>
@@ -79,12 +72,10 @@ Specifies the data field that provides keys for resources.
             DxResources,
 			// ...
         } from 'devextreme-vue/gantt';
-
         import {
             resources,
 			// ...
         } from './data.js';
-
         export default {
             components: {
                 DxGantt,

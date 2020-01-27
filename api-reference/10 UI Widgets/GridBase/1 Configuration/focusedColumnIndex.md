@@ -6,10 +6,10 @@ firedEvents: focusedCellChanged
 ---
 ---
 ##### shortDescription
-The index of the column that contains the focused data cell. This is taken from the [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/') array.
+The index of the column that contains the focused data cell. This index is taken from the [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/') array.
 
 ---
-[Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') cannot be focused, but banded columns can.
+Unlike banded columns, [Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') cannot be focused.
 
 The default index, *-1*, means that no column is focused.
 

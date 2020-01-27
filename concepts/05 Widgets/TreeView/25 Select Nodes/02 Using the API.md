@@ -1,9 +1,9 @@
-To retrieve the keys of all selected nodes, call the [getSelectedNodesKeys()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getSelectedNodesKeys().md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#getSelectedNodesKeys').
+To retrieve the keys of all selected nodes, call the [getSelectedNodeKeys()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getSelectedNodeKeys().md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#getSelectedNodeKeys').
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->$("#treeViewContainer").dxTreeView("instance").getSelectedNodesKeys();
+    <!--JavaScript-->$("#treeViewContainer").dxTreeView("instance").getSelectedNodeKeys();
 
 ##### Angular
 
@@ -15,8 +15,8 @@ To retrieve the keys of all selected nodes, call the [getSelectedNodesKeys()](/a
         @ViewChild(DxTreeViewComponent, { static: false }) treeView: DxTreeViewComponent;
         // Prior to Angular 8
         // @ViewChild(DxTreeViewComponent) treeView: DxTreeViewComponent;
-        getSelectedNodesKeys() {
-            return this.treeView.instance.getSelectedNodesKeys();
+        getSelectedNodeKeys() {
+            return this.treeView.instance.getSelectedNodeKeys();
         }
     }
     @NgModule({

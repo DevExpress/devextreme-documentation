@@ -1,5 +1,5 @@
 ---
-id: dxTreeView.getSelectedNodesKeys()
+id: dxTreeView.getSelectedNodeKeys()
 ---
 ---
 ##### shortDescription

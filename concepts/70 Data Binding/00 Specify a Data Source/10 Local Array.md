@@ -1,6 +1,4 @@
-This article describes how to bind a DevExtreme widget to a local array in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401019/devextreme-based-controls/concepts/bind-controls-to-data/clr-objects" target="_blank">docs.devexpress.com</a>.
-
-#include data-binding-specify-data-fields-note
+[note] This article describes how to bind a DevExtreme widget to a local array in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401019/devextreme-based-controls/concepts/bind-controls-to-data/clr-objects" target="_blank">docs.devexpress.com</a>.
 
 To bind a widget to a local array, pass this array to the widget's [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') option. We recommend that you also use the [keyExpr](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr') option (if the widget has it) to specify the key field.
 

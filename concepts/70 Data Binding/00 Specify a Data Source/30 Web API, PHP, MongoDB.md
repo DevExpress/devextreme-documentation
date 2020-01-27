@@ -1,6 +1,4 @@
-This article describes how to bind a DevExtreme widget to a remote data service in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401020/devextreme-based-controls/concepts/bind-controls-to-data/api-controllers" target="_blank">docs.devexpress.com</a>.
-
-#include data-binding-specify-data-fields-note
+[note] This article describes how to bind a DevExtreme widget to a remote data service in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401020/devextreme-based-controls/concepts/bind-controls-to-data/api-controllers" target="_blank">docs.devexpress.com</a>.
 
 DevExtreme provides the following extensions for binding to Web API, PHP, and MongoDb services:
 

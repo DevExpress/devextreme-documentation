@@ -1,6 +1,4 @@
-This article describes how to bind a DevExtreme widget to an OLAP cube in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401023/devextreme-based-controls/concepts/bind-controls-to-data/olap-cube" target="_blank">docs.devexpress.com</a>.
-
-#include data-binding-specify-data-fields-note
+[note] This article describes how to bind a DevExtreme widget to an OLAP cube in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401023/devextreme-based-controls/concepts/bind-controls-to-data/olap-cube" target="_blank">docs.devexpress.com</a>.
 
 An OLAP cube is a multi-dimensional dataset that allows data mining and analysis. DevExtreme provides the [PivotGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview) widget to display data from an OLAP cube.
 

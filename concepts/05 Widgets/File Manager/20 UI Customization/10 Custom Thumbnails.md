@@ -2,7 +2,7 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
 }
 
-The **FileManager** widget allows you to provide custom thumbnails for a file system's items in Thumbnails mode ([mode](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/#mode')).
+The **FileManager** widget allows you to provide custom thumbnails for a file system's items in Thumbnails [mode](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/#mode').
 
 ![DevExtreme FileManager - Custom Thumbnails](/images/FileManager/custom-thumbnails.png)
 
@@ -25,7 +25,7 @@ You can specify an icon in the following formats:
             // ...
             itemView: {
                 mode: "thumbnails"
-            }
+            },
             customizeThumbnail: function (fileManagerItem) {
                 if (fileManagerItem.isDirectory)
                     return "images/thumbnails/folder.svg";
@@ -84,7 +84,7 @@ You can specify an icon in the following formats:
         </DxFileManager>
     </template>
     <script>
-    import { DxFileManager } from 'devextreme-vue/file-manager';
+    import { DxFileManager, DxItemView } from 'devextreme-vue/file-manager';
     export default {  
         methods: {
             customizeIcon(fileManagerItem) {
@@ -108,15 +108,16 @@ You can specify an icon in the following formats:
 ##### React
 
     <!-- tab: App.js -->
-    import FileManager from 'devextreme-react/file-manager';
+    import React from 'react';
+    import FileManager, { ItemView } from 'devextreme-react/file-manager';
     class App extends React.Component {
         render() {
             return (
             <FileManager
                 customizeThumbnail={this.customizeIcon}>
                 <ItemView
-                    mode="thumbnails">
-                </ItemView>
+                    mode="thumbnails"
+                />
                 {/* ... */}
             </FileManager>
             );

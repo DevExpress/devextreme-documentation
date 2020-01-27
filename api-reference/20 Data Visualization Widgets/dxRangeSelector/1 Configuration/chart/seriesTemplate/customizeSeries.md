@@ -4,7 +4,7 @@ type: function(seriesName)
 ---
 ---
 ##### shortDescription
-Specifies a callback function that returns a [series](/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/chart/?#series) object with individual series settings.
+Specifies a callback function that returns a [series](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/chart/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/chart/#series') object with individual series settings.
 
 ##### param(seriesName): any
 The name of the series to be customized.

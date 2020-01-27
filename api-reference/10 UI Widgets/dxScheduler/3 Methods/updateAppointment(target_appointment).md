@@ -14,5 +14,5 @@ The appointment with updated data.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [onAppointmentUpdating](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onUppointmentUpdating)
-- [onAppointmentUpdated](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onUppointmentUpdated)
+- [onAppointmentUpdating](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentUpdating')
+- [onAppointmentUpdated](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentUpdated.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentUpdated')

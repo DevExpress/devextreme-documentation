@@ -65,5 +65,5 @@ The following example demonstrates how to export two DataGrids into separate wor
 ---
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJS/" // TODO: add link to demo
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/"
 }

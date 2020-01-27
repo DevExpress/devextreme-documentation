@@ -26,7 +26,7 @@ The object that specified a start position for export dxDataGrid. Has the follow
 ##### param(options.selectedRowsOnly): Boolean // default false
 Allows an end user to export selected rows only. 
 
-##### param(options.autoFilterEnabled): Boolean // default undefined
+##### param(options.autoFilterEnabled): Boolean // default false
 Specifies whether to enable Excel filtering for the exported data in the resulting XLSX file.
 
 ##### param(options.keepColumnWidths): Boolean // default true

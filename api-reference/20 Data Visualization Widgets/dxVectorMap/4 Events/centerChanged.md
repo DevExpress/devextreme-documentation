@@ -23,7 +23,7 @@ The widget's instance.
 The model data. Available only if you use Knockout.
 
 ---
-Main article: [onCenterChanged](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#nCenterChanged)
+Main article: [onCenterChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/onCenterChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#onCenterChanged')
 
 #####See Also#####
 #include common-link-handleevents

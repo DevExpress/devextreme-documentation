@@ -40,23 +40,15 @@ Resource assignments define relationship between tasks and resources.
 
     <!-- tab: app.component.ts -->
     import { DxGanttModule } from 'devextreme-angular';
-    import { Service, Task, Dependency, Resource, ResourceAssignment } from './app.service';
-    // ...
+    import { ResourceAssignment, ... } from './app.service';
     export class AppComponent {
-        resourceAssignments: ResourceAssignment[];		
+        resourceAssignments: ResourceAssignment[];
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
     <!-- tab: app.component.html -->
-    <dx-gantt ... 
-        <dxo-resource-assignments [dataSource]="resourceAssignments"></dxo-resource-assignments>
-		// ...
+    <dx-gantt ... >
+        <dxo-resource-assignments [dataSource]="resourceAssignments" />
+        <!-- ... -->
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let resourceAssignments: ResourceAssignment[] = [{
@@ -71,37 +63,22 @@ Resource assignments define relationship between tasks and resources.
 
     <!-- tab: App.vue -->
     <template>
-        <DxGantt ...
-            <DxResourceAssignments :data-source="resourceAssignmentsDataSource"/>
-			// ...
+        <DxGantt ... >
+            <DxResourceAssignments :data-source="resourceAssignmentsDataSource" />
+            <!-- ... -->
         </DxGantt>
     </template>
     <script>
-        import {
-            DxGantt,
-            DxResourceAssignments,
-			// ...
-        } from 'devextreme-vue/gantt';
-
-        import {
-            resourceAssignments,
-			// ...
-        } from './data.js';
-
+        import { DxGantt, DxResourceAssignments, ... } from 'devextreme-vue/gantt';
+        import { resourceAssignments, ... } from './data.js';
         export default {
-            components: {
-                DxResourceAssignments,
-				// ...
-            },
+            components: { DxResourceAssignments, ... },
             data() {
-                return {
-                resourceAssignments,
-				// ...
-                };
+                return { resourceAssignments, ... };
             },
             computed: {
                 resourceAssignmentsDataSource() { return resourceAssignments; },
-				// ...
+                // ...
             }
         };
     </script>
@@ -118,20 +95,18 @@ Resource assignments define relationship between tasks and resources.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing } from 'devextreme-react/gantt';
-    import { tasks, dependencies, resources, resourceAssignments } from './data.js';
-
+    import Gantt, { ResourceAssignments, ... } from 'devextreme-react/gantt';
+    import { resourceAssignments, ... } from './data.js';
     class App extends React.Component {
         render() {
             return (
-            <Gantt ...       
-                <ResourceAssignments dataSource={resourceAssignments} />
-				// ...
-            </Gantt>
+                <Gantt ... >     
+                    <ResourceAssignments dataSource={resourceAssignments} />
+                    {/* ... */}
+                </Gantt>
             );
         }
     }
-    export default App;
     <!-- tab: data.js -->
     export const resourceAssignments = [{
         'id': 0,

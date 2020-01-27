@@ -36,23 +36,18 @@ Specifies the data field that provides task IDs.
 
     <!-- tab: app.component.ts -->
     import { DxGanttModule } from 'devextreme-angular';
-    import { Service, Task, Dependency, Resource, ResourceAssignment } from './app.service';
-    // ...
+    import { ResourceAssignment, ... } from './app.service';
     export class AppComponent {
-        resourceAssignments: ResourceAssignment[];		
+        resourceAssignments: ResourceAssignment[];
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
     <!-- tab: app.component.html -->
-    <dx-gantt ... 
-        <dxo-resource-assignments [dataSource]="resourceAssignments" [resourceIdExpr]="resourceKey" [taskIdExpr]="taskKey" ></dxo-resource-assignments>
-		// ...
+    <dx-gantt ... >
+        <dxo-resource-assignments 
+            [dataSource]="resourceAssignments" 
+            resourceIdExpr="resourceKey" 
+            taskIdExpr="taskKey" />
+        <!-- ... -->
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let resourceAssignments: ResourceAssignment[] = [{
@@ -70,38 +65,22 @@ Specifies the data field that provides task IDs.
         <DxGantt ...
             <DxResourceAssignments 
                 :data-source="resourceAssignmentsDataSource"
-                resourceIdExpr="resourceKey"
-                taskIdExpr="taskKey"
-                 />
-			// ...
+                resourceId-expr="resourceKey"
+                task-id-expr="taskKey" />
+            <!-- ... -->
         </DxGantt>
     </template>
     <script>
-        import {
-            DxGantt,
-            DxResourceAssignments,
-			// ...
-        } from 'devextreme-vue/gantt';
-
-        import {
-            resourceAssignments,
-			// ...
-        } from './data.js';
-
+        import { DxGantt, DxResourceAssignments, ... } from 'devextreme-vue/gantt';
+        import { resourceAssignments, ... } from './data.js';
         export default {
-            components: {
-                DxResourceAssignments,
-				// ...
-            },
+            components: { DxResourceAssignments, ... },
             data() {
-                return {
-                resourceAssignments,
-				// ...
-                };
+                return { resourceAssignments, ... };
             },
             computed: {
                 resourceAssignmentsDataSource() { return resourceAssignments; },
-				// ...
+                // ...
             }
         };
     </script>
@@ -118,16 +97,15 @@ Specifies the data field that provides task IDs.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing } from 'devextreme-react/gantt';
-    import { tasks, dependencies, resources, resourceAssignments } from './data.js';
-
+    import Gantt, { ResourceAssignments, ... } from 'devextreme-react/gantt';
+    import { resourceAssignments, ... } from './data.js';
     class App extends React.Component {
         render() {
             return (
-            <Gantt ...       
-                <ResourceAssignments dataSource={resourceAssignments} resourceIdExpr="resourceKey" taskIdExpr="taskKey" />
-				// ...
-            </Gantt>
+                <Gantt ... >  
+                    <ResourceAssignments dataSource={resourceAssignments} resourceIdExpr="resourceKey" taskIdExpr="taskKey" />
+                    // ...
+                </Gantt>
             );
         }
     }

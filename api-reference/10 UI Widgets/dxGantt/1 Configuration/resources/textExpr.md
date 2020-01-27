@@ -34,23 +34,17 @@ Specifies the data field that provides resource texts.
 
     <!-- tab: app.component.ts -->
     import { DxGanttModule } from 'devextreme-angular';
-    import { Service, Task, Dependency, Resource, ResourceAssignment } from './app.service';
-    // ...
+    import { Resource, ... } from './app.service';
     export class AppComponent {
-        resources: Resource[];		
+        resources: Resource[];
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
     <!-- tab: app.component.html -->
-    <dx-gantt ... 
-        <dxo-resources [dataSource]="resources" [textExpr]="title" ></dxo-resources>
-		// ...
+    <dx-gantt ... >
+        <dxo-resources 
+            [dataSource]="resources" 
+            textExpr="title" />
+        <!-- ... -->
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let resources: Resource[] = [{
@@ -58,48 +52,30 @@ Specifies the data field that provides resource texts.
         'title': 'Management'
     },
     // ...   
-    ]; 
-     
+    ];
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxGantt ...
+        <DxGantt ... >
             <DxResources 
                 :data-source="resourcesDataSource"
-                textExpr="title" 
-            />
-			// ...
+                text-expr="title" />
+            <!-- ... -->
         </DxGantt>
     </template>
     <script>
-        import {
-            DxGantt,
-            DxResources,
-			// ...
-        } from 'devextreme-vue/gantt';
-
-        import {
-            resources,
-			// ...
-        } from './data.js';
-
+        import { DxGantt, DxResources, ... } from 'devextreme-vue/gantt';
+        import { resources, ... } from './data.js';
         export default {
-            components: {
-                DxGantt,
-                DxResources,
-				// ...
-            },
+            components: { DxGantt, DxResources, ... },
             data() {
-                return {
-                resources,
-				// ...
-                };
+                return { resources, ... };
             },
             computed: {
                 resourcesDataSource() { return resources; },
-				// ...
+                // ...
             }
         };
     </script>
@@ -115,18 +91,17 @@ Specifies the data field that provides resource texts.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing } from 'devextreme-react/gantt';
-    import { tasks, dependencies, resources, resourceAssignments } from './data.js';
-
+    import Gantt, { Resources, ... } from 'devextreme-react/gantt';
+    import { resources, ... } from './data.js';
     class App extends React.Component {
         render() {
             return (
-            <Gantt ...       
-                <Resources 
-                    dataSource={resources}
-                    textExpr="title" />
-				// ...
-            </Gantt>
+                <Gantt ... >
+                    <Resources 
+                        dataSource={resources}
+                        textExpr="title" />
+                    {/* ... */}
+                </Gantt>
             );
         }
     }

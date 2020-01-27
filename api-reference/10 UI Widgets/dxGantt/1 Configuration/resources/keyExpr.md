@@ -34,16 +34,17 @@ Specifies the data field that provides keys for resources.
 
     <!-- tab: app.component.ts -->
     import { DxGanttModule } from 'devextreme-angular';
-    import { Service, Task, Dependency, Resource, ResourceAssignment } from './app.service';
-    // ...
+    import { Resource, ... } from './app.service';
     export class AppComponent {
         resources: Resource[];
         // ...
     }    
     <!-- tab: app.component.html -->
-    <dx-gantt ... 
-        <dxo-resources [dataSource]="resources" [keyExpr]="resourceId" ></dxo-resources>
-		<!-- ... -->
+    <dx-gantt ... >
+        <dxo-resources 
+            [dataSource]="resources" 
+            keyExpr="resourceId" />
+        <!-- ... -->
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let resources: Resource[] = [{
@@ -52,45 +53,29 @@ Specifies the data field that provides keys for resources.
     },
     // ...   
     ]; 
-     
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxGantt ...
+        <DxGantt ... >
             <DxResources 
                 :data-source="resourcesDataSource"
-                keyExpr="resourceId" 
-            />
-			<!-- ... -->
+                key-expr="resourceId" />
+            <!-- ... -->
         </DxGantt>
     </template>
     <script>
-        import {
-            DxGantt,
-            DxResources,
-			// ...
-        } from 'devextreme-vue/gantt';
-        import {
-            resources,
-			// ...
-        } from './data.js';
+        import { DxGantt, DxResources, ... } from 'devextreme-vue/gantt';
+        import { resources, ... } from './data.js';
         export default {
-            components: {
-                DxGantt,
-                DxResources,
-				// ...
-            },
+            components: { DxResources, ... },
             data() {
-                return {
-                resources,
-				// ...
-                };
+                return { resources, ... };
             },
             computed: {
                 resourcesDataSource() { return resources; },
-				// ...
+                // ...
             }
         };
     </script>
@@ -106,17 +91,16 @@ Specifies the data field that provides keys for resources.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing } from 'devextreme-react/gantt';
-    import { tasks, dependencies, resources, resourceAssignments } from './data.js';
-
+    import Gantt, { Resources, ... } from 'devextreme-react/gantt';
+    import { resources, ... } from './data.js';
     class App extends React.Component {
         render() {
             return (
-            <Gantt ...       
+            <Gantt ... >
                 <Resources 
                     dataSource={resources}
                     keyExpr="resourceId" />
-				// ...
+                {/* ... */}
             </Gantt>
             );
         }

@@ -44,23 +44,15 @@ You can add resources to a project and assign them to tasks. Resources can be pe
 
     <!-- tab: app.component.ts -->
     import { DxGanttModule } from 'devextreme-angular';
-    import { Service, Task, Dependency, Resource, ResourceAssignment } from './app.service';
-    // ...
+    import { Resource, ... } from './app.service';
     export class AppComponent {
-        resources: Resource[];		
+        resources: Resource[];
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
     <!-- tab: app.component.html -->
-    <dx-gantt ... 
-        <dxo-resources [dataSource]="resources"></dxo-resources>
-		// ...
+    <dx-gantt ... >
+        <dxo-resources [dataSource]="resources" />
+        <!-- ... --> 
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let resources: Resource[] = [{
@@ -68,45 +60,28 @@ You can add resources to a project and assign them to tasks. Resources can be pe
         'text': 'Management'
     },
     // ...   
-    ]; 
-     
+    ];
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxGantt ...
-            <DxResources :data-source="resourcesDataSource"/>
-			// ...
+        <DxGantt ... >
+            <DxResources :data-source="resourcesDataSource" />
+            <!-- ... -->
         </DxGantt>
     </template>
     <script>
-        import {
-            DxGantt,
-            DxResources,
-			// ...
-        } from 'devextreme-vue/gantt';
-
-        import {
-            resources,
-			// ...
-        } from './data.js';
-
+        import { DxGantt, DxResources, ... } from 'devextreme-vue/gantt';
+        import { resources, ... } from './data.js';
         export default {
-            components: {
-                DxGantt,
-                DxResources,
-				// ...
-            },
+            components: { DxResources, ... },
             data() {
-                return {
-                resources,
-				// ...
-                };
+                return { resources, ... };
             },
             computed: {
                 resourcesDataSource() { return resources; },
-				// ...
+                // ...
             }
         };
     </script>
@@ -116,26 +91,24 @@ You can add resources to a project and assign them to tasks. Resources can be pe
         'text': 'Management'
     },
     // ...
-    ];	
-	
+    ];
+
 ##### React
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing } from 'devextreme-react/gantt';
-    import { tasks, dependencies, resources, resourceAssignments } from './data.js';
-
+    import Gantt, { Resources, ... } from 'devextreme-react/gantt';
+    import { resources, ... } from './data.js';
     class App extends React.Component {
         render() {
             return (
-            <Gantt ...       
-                <Resources dataSource={resources} />
-				// ...
-            </Gantt>
+                <Gantt ... >   
+                    <Resources dataSource={resources} />
+                    {/* ... */}
+                </Gantt>
             );
         }
     }
-    export default App;
     <!-- tab: data.js -->
     export const resources = [{
         'id': 1,
@@ -145,3 +118,4 @@ You can add resources to a project and assign them to tasks. Resources can be pe
     ];
 
 ---
+

@@ -1,7 +1,7 @@
 ---
 id: dxHtmlEditorMention.marker
 type: String
-default: '@'
+default: '
 ---
 ---
 ##### shortDescription

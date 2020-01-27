@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies which data field provides keys for data items. Applies only if data is a [simple array](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/10%20Simple%20Array/10%20Array%20Only.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Simple_Array/Array_Only/').
+Specifies the key property (or properties) that provide(s) key values to access data items. Each key value must be unique. This option applies only if data is a [simple array](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/10%20Simple%20Array/10%20Array%20Only.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Simple_Array/Array_Only/').
 
 ---
 #####See Also#####

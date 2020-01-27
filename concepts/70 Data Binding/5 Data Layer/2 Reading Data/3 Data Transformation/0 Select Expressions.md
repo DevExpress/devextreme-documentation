@@ -34,7 +34,7 @@ To modify the **select** option, pass the new option value to the [select(expr)]
     dataSource.select("firstName", "city");
     dataSource.load();
 
-A selection expression can be a [getter](/concepts/30%20Data%20Layer/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters'), several getters, or a function.
+A selection expression can be a [getter](/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters), several getters, or a function.
 
 - **A single getter**
 
@@ -66,7 +66,7 @@ A selection expression can be a [getter](/concepts/30%20Data%20Layer/5%20Data%20
             { firstName: "Maria", lastName: "Gomez" },
         ]
 
- You can pass an array of [getters](/concepts/30%20Data%20Layer/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters') instead of using several arguments.
+ You can pass an array of [getters](/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters) instead of using several arguments.
 
         <!--JavaScript-->dataSource.select(["firstName", "lastName"]);
 

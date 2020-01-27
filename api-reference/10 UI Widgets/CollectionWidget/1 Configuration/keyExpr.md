@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the key property that provide key values to access data items. Each key value must be unique.
+Specifies the key property that provides key values to access data items. Each key value must be unique.
 
 ---
 #####See Also#####

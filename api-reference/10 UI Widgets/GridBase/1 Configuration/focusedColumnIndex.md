@@ -9,15 +9,17 @@ firedEvents: focusedCellChanged
 The index of the column that contains the focused data cell.
 
 ---
-This index can change dynamically in the following cases:  
-- When user navigates through cells.    
-- The columns are [reordered](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Reordering/')).    
-- The columns are [hidden](/api-reference/_hidden/GridBaseColumn/allowHiding.md '{basewidgetpath}/Configuration/columns/#allowHiding'). 
+This index changes when users do the following:  
 
-The following image illustrates the indexing system. 
+- Navigate through cells    
+- [Reorder](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Reordering/') the columns    
+- [Hide](/api-reference/_hidden/GridBaseColumn/allowHiding.md '{basewidgetpath}/Configuration/columns/#allowHiding') the columns 
+
+The following image illustrates the indexing system: 
+
 ![DevExtreme HTML5 JavaScript {WidgetName} Column Index](/images/{WidgetName}/visual_elements/columnIndexes.png)
 
-Unlike banded columns, [Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') cannot be focused and do not have indexes.
+[Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') cannot be focused since they do not have indexes. However, users can focus banded columns.
 
 The default index, *-1*, means that no column is focused.
 

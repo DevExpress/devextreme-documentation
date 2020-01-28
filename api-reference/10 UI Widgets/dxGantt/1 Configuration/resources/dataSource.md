@@ -9,4 +9,4 @@ Binds the widget to the data source, which contains resources.
 
 ---
 
-Refer to the [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/') option to see how to specify the **dataSource** option.
+Refer to the [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/resources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/') option to see how to specify the **dataSource** option.

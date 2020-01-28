@@ -16,24 +16,7 @@ You can add resources to a project and assign them to tasks. Resources can be pe
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource') option to specify a data source, which contains resources. The widget automatically binds the **Gantt** to the data source if it has the following structure and data field names:
-
-    var fileSystem = [
-    {
-        name: "MyFile.jpg",
-        size: 1024,
-        dateModified: "2019/05/08",
-        thumbnail: "/thumbnails/images/jpeg.ico",
-        isDirectory: true,
-        items: [
-            // ...
-            // Nested data objects with the same structure
-            // ...
-        ]
-        // ...
-    }];
-
-If the field names in your data source have different names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#keyExpr') and/or [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#textExpr') options to map data fields. 
+Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource') option to bind the widget to a data source, which contains resources. If the field names in your data source differ from the 'id' and 'text' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#keyExpr') and/or [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#textExpr') options to map data fields. 
 
 #####See Also#####
 - [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources')

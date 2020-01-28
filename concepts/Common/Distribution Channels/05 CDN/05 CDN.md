@@ -1,28 +1,31 @@
 ## Scripts
 
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-diagram.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-diagram.min.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-gantt.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-gantt.min.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.debug.js"></script>
+    <!-- Production files -->
     <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.aspnet.mvc.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.viz-web.debug.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.viz-web.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.viz.debug.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.viz.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.web.debug.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.web.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.viz-web.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.aspnet.mvc.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-diagram.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-gantt.min.js"></script>
+    
+    <!-- Development files -->
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.debug.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.viz.debug.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.web.debug.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.viz-web.debug.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-diagram.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-gantt.js"></script>
+    
 
 ## Stylesheets
 
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-diagram.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-diagram.min.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-gantt.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-gantt.min.css" rel="stylesheet">
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css" rel="stylesheet">
+
+    <!-- Theme stylesheets -->
+    <!-- Reference only one of these -->
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.carmine.compact.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.carmine.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.contrast.compact.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.contrast.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.dark.compact.css" rel="stylesheet">
@@ -58,3 +61,10 @@
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.material.teal.light.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.softblue.compact.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.softblue.css" rel="stylesheet">
+
+    <!-- Stylesheets for the Diagram and Gantt components -->
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-diagram.css" rel="stylesheet">
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-diagram.min.css" rel="stylesheet">
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-gantt.css" rel="stylesheet">
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-gantt.min.css" rel="stylesheet">
+    

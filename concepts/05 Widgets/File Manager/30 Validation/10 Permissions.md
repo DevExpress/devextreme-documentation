@@ -62,7 +62,7 @@ The widget also allows you to specify the following restrictions:
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager" 
         [allowedFileExtensions]="allowedFileExtensions" >
-        <dxo-upload [maxFileSize]="1000000" />
+        <dxo-upload [maxFileSize]="1000000"></dxo-upload>
         <dxo-permissions 
             create="true"
             copy="true"
@@ -70,7 +70,7 @@ The widget also allows you to specify the following restrictions:
             move="true"
             remove="true"
             rename="true"
-            upload="true" 
+            [upload]="true">
         </dxo-permissions>
 
         // ...
@@ -81,8 +81,8 @@ The widget also allows you to specify the following restrictions:
     <!-- tab: App.vue -->
     <template>
         <div>
-            <DxFileManager allowedFileExtensions="['.txt', '.doc', '.png']" >   
-                <DxUpload maxFileSize="1000000" />
+            <DxFileManager :allowed-file-extensions="['.txt', '.doc', '.png']">   
+                <DxUpload :max-file-size="1000000" />
                 <DxPermissions
                     :create="true"
                     :copy="true"
@@ -98,13 +98,13 @@ The widget also allows you to specify the following restrictions:
 ##### React
 
     <!-- tab: App.js -->
-    import FileManager, { Permissions } from 'devextreme-react/file-manager';
+    import FileManager, { Upload, Permissions } from 'devextreme-react/file-manager';
     // ...
     render() {
         return (
         <div>
             <FileManager allowedFileExtensions="['.txt', '.doc', '.png']" >
-                <Upload maxFileSize="1000000" />
+                <Upload maxFileSize={1000000} />
                 <Permissions
                     create={true}
                     copy={true}
@@ -112,8 +112,8 @@ The widget also allows you to specify the following restrictions:
                     move={true}
                     remove={true}
                     rename={true}
-                    download={true} 
-                </Permissions>
+                    download={true}
+                />
             </FileManager>
         </div>
         );

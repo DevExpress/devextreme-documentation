@@ -6,12 +6,10 @@ firedEvents: focusedCellChanged
 ---
 ---
 ##### shortDescription
-Specifies the index of the column focused initially or currently in the data row area.
+The index of the column that contains the focused data cell. This index is taken from the [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/') array.
 
 ---
-This index depends on the column's location and can change dynamically (for example, when columns are [reordered](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Reordering/')). The following image illustrates the indexing system. Note that [command columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/') have indexes but cannot be focused.
-
-![DevExtreme HTML5 JavaScript {WidgetName} Column Index](/images/{WidgetName}/visual_elements/columnIndexes.png)
+Unlike banded columns, [Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') cannot be focused.
 
 The default index, *-1*, means that no column is focused.
 

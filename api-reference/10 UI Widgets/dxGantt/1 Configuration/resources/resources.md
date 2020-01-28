@@ -16,8 +16,28 @@ You can add resources to a project and assign them to tasks. Resources can be pe
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
+Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource') option to specify a data source, which contains resources. The widget automatically binds the **Gantt** to the data source if it has the following structure and data field names:
+
+    var fileSystem = [
+    {
+        name: "MyFile.jpg",
+        size: 1024,
+        dateModified: "2019/05/08",
+        thumbnail: "/thumbnails/images/jpeg.ico",
+        isDirectory: true,
+        items: [
+            // ...
+            // Nested data objects with the same structure
+            // ...
+        ]
+        // ...
+    }];
+
+If the field names in your data source have different names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#keyExpr') and/or [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#textExpr') options to map data fields. 
+
 #####See Also#####
 - [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources')
+- [Bind to File Systems](concept/05%20Widgets/File%20Manager/10%20Bind%20to%20File%20Systems/Bind%20to%20File%20Systems.md 'Documentation/Guide/Widgets/File_Manager/Bind_to_File_Systems/')
 
 ---
 
@@ -27,15 +47,17 @@ You can add resources to a project and assign them to tasks. Resources can be pe
     $(function() {
         $("#gantt").dxGantt({
             resources: {
-                dataSource: resources
+                dataSource: resources,
+                keyExpr: "resourceId",
+                textExpr: "title"
             },
             //...
         });
     });
     <!-- tab: data.js -->
     var resources = [{
-        'id': 1,
-        'text': 'Management'
+        'resourceId': 1,
+        'title': 'Management'
     }, 
     // ...
     ];    
@@ -48,26 +70,33 @@ You can add resources to a project and assign them to tasks. Resources can be pe
     export class AppComponent {
         resources: Resource[];
         // ...
-    }
+    }    
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-resources [dataSource]="resources" />
-        <!-- ... --> 
+        <dxo-resources 
+            [dataSource]="resources" 
+            keyExpr="resourceId"
+            textExpr="title">
+        </dxo-resources>
+        <!-- ... -->
     </dx-gantt>
     <!-- tab: app.service.ts -->
     let resources: Resource[] = [{
-        'id': 1,
-        'text': 'Management'
+        'resourceId': 1,
+        'title': 'Management'
     },
     // ...   
-    ];
+    ]; 
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxGantt ... >
-            <DxResources :data-source="resourcesDataSource" />
+            <DxResources 
+                :data-source="resourcesDataSource"
+                key-expr="resourceId"
+                text-expr="title" />
             <!-- ... -->
         </DxGantt>
     </template>
@@ -87,12 +116,12 @@ You can add resources to a project and assign them to tasks. Resources can be pe
     </script>
     <!-- tab: data.js -->
     export const resources = [{
-        'id': 1,
-        'text': 'Management'
+        'resourceId': 1,
+        'title': 'Management'
     },
     // ...
-    ];
-
+    ];	
+	
 ##### React
 
     <!-- tab: App.js -->
@@ -102,20 +131,23 @@ You can add resources to a project and assign them to tasks. Resources can be pe
     class App extends React.Component {
         render() {
             return (
-                <Gantt ... >   
-                    <Resources dataSource={resources} />
-                    {/* ... */}
-                </Gantt>
+            <Gantt ... >
+                <Resources 
+                    dataSource={resources}
+                    keyExpr="resourceId"
+                    textExpr="title" />
+                {/* ... */}
+            </Gantt>
             );
         }
     }
+    export default App;
     <!-- tab: data.js -->
     export const resources = [{
-        'id': 1,
-        'text': 'Management'
+        'resourceId': 1,
+        'title': 'Management'
     },
     // ...
     ];
 
 ---
-

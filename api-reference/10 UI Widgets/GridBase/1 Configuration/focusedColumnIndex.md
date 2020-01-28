@@ -19,7 +19,7 @@ The following image illustrates the indexing system:
 
 ![DevExtreme HTML5 JavaScript {WidgetName} Column Index](/images/{WidgetName}/visual_elements/columnIndexes.png)
 
-[Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') cannot be focused since they do not have indexes. However, users can focus banded columns.
+[Band columns](/api-reference/_hidden/GridBaseColumn/isBand.md '{basewidgetpath}/Configuration/columns/#isBand') do not have indexes and cannot be focused. However, users can focus banded columns.
 
 The default index, *-1*, means that no column is focused.
 

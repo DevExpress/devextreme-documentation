@@ -62,7 +62,7 @@ The widget also allows you to specify the following restrictions:
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager" 
         [allowedFileExtensions]="allowedFileExtensions" >
-        <dxo-upload maxFileSize="1000000" />
+        <dxo-upload [maxFileSize]="1000000" />
         <dxo-permissions 
             create="true"
             copy="true"

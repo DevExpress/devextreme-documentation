@@ -211,7 +211,7 @@ The current platform determines the native scrolling settings and you cannot adj
                 useNative: false,
                 scrollByContent: true,
                 scrollByThumb: true,
-                showScrollbar: "onHover" // or "onClick" | "always" | "never"
+                showScrollbar: "onHover" // or "onScroll" | "always" | "never"
             }
         });
     });
@@ -224,7 +224,7 @@ The current platform determines the native scrolling settings and you cannot adj
             [useNative]="false"
             [scrollByContent]="true"
             [scrollByThumb]="true"
-            showScrollbar="onHover"> <!-- or "onClick" | "always" | "never" -->
+            showScrollbar="onHover"> <!-- or "onScroll" | "always" | "never" -->
         </dxo-scrolling>
     </dx-data-grid>
 
@@ -251,7 +251,7 @@ The current platform determines the native scrolling settings and you cannot adj
                 :use-native="false"
                 :scroll-by-content="true"
                 :scroll-by-thumb="true"
-                show-scrollbar="onHover" /> <!-- or "onClick" | "always" | "never" -->
+                show-scrollbar="onHover" /> <!-- or "onScroll" | "always" | "never" -->
         </DxDataGrid>
     </template>
 
@@ -291,7 +291,7 @@ The current platform determines the native scrolling settings and you cannot adj
                         useNative={false}
                         scrollByContent={true}
                         scrollByThumb={true}
-                        showScrollbar="onHover" /> {/* or "onClick" | "always" | "never" */}
+                        showScrollbar="onHover" /> {/* or "onScroll" | "always" | "never" */}
                 </DataGrid>
             );
         }

@@ -84,8 +84,8 @@ Paging is used to load data in portions, which improves the widget's performance
             return (
                 <DataGrid ... >
                     <Paging
-                        pageSize={15}
-                        pageIndex={1} /> {/* Shows the second page */}
+                        defaultPageSize={15}
+                        defaultPageIndex={1} /> {/* Shows the second page */}
                 </DataGrid>
             );
         }

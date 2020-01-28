@@ -86,13 +86,15 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Widgets/GridBase/1%20Co
         Pager
     } from 'devextreme-react/data-grid';
 
+    const allowedPageSizes = [10, 20, 50];
+
     class App extends React.Component {
         render() {
             return (
                 <DataGrid ... >
                     <Pager
                         showPageSizeSelector={true}
-                        allowedPageSizes={[10, 20, 50]}
+                        allowedPageSizes={allowedPageSizes}
                         showNavigationButtons={true}
                     />
                 </DataGrid>

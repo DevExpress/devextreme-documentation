@@ -207,7 +207,6 @@ The **DataGrid** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%
 
         goToLastPage() {
             const pageCount = this.dataGridRef.current.instance.pageCount();
-            console.log(pageCount);
             this.setState({
                 pageIndex: pageCount - 1
             });

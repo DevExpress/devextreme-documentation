@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.focusedCellChanging
 ---
 ---
 ##### shortDescription
-A function that is executed before the focused cell changes.
+A function that is executed before the focused cell changes. Applies only to the cells in the data or group rows.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -94,8 +94,6 @@ In the following code, the **onFocusedCellChanging** function is used to customi
     </dx-data-grid>
     
 ---
-
-[note]Applies only to the cells that belong to the rows with the *'data'* or *'group'* [rowType](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType').
 
 #####See Also#####
 - [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowKey')

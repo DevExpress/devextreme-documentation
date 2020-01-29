@@ -6,7 +6,7 @@ EventForAction: dxTreeList.focusedCellChanging
 ---
 ---
 ##### shortDescription
-A function that is executed before the focused cell changes.
+A function that is executed before the focused cell changes. Applies only to the cells in the data rows.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -94,8 +94,6 @@ In the following code, the **onFocusedCellChanging** function is used to customi
     </dx-tree-list>
     
 ---
-
-[note]Applies only to cells that belong to the rows with the *'data'* [rowType](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Row/#rowType').
 
 #####See Also#####
 - [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowKey')

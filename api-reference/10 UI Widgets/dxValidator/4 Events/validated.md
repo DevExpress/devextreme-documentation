@@ -25,7 +25,7 @@ An array of the validation rules specified for the current **dxValidator** objec
 The validated value.
 
 ---
-Main article: [onValidated](/Documentation/ApiReference/UI_Widgets/dxValidator/Configuration/#onSelectionChanged)
+Main article: [onValidated](/api-reference/10%20UI%20Widgets/dxValidator/1%20Configuration/onValidated.md '/Documentation/ApiReference/UI_Widgets/dxValidator/Configuration/#onValidated')
 
 #####See Also#####
 #include common-link-handleevents

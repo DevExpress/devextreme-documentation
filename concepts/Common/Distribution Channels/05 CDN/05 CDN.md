@@ -1,4 +1,4 @@
-DevExtreme delivers the following files via CDN:
+DevExtreme provides the following files via CDN:
 
 ## Scripts
 

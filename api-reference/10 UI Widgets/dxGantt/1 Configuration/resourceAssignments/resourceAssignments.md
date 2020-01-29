@@ -48,10 +48,15 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
 
     <!-- tab: app.component.ts -->
     import { DxGanttModule } from 'devextreme-angular';
-    import { ResourceAssignment, ... } from './app.service';
+    import { Service, ResourceAssignment, ... } from './app.service';
     export class AppComponent {
         resourceAssignments: ResourceAssignment[];
         // ...
+
+        constructor(service: Service) {
+            this.resourceAssignments = service.getResourceAssignments();
+            // ...
+        }
     }
     <!-- tab: app.component.html -->
     <dx-gantt ... >
@@ -71,12 +76,18 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     },
     // ...   
     ]; 
+    @Injectable()
+    export class Service {
+        getResourceAssignments(): ResourceAssignment[] {
+            return resourceAssignments;
+        }
+    }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxGantt ...
+        <DxGantt ... >
             <DxResourceAssignments 
                 :data-source="resourceAssignmentsDataSource"
                 key-expr="key"
@@ -89,13 +100,9 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         import { DxGantt, DxResourceAssignments, ... } from 'devextreme-vue/gantt';
         import { resourceAssignments, ... } from './data.js';
         export default {
-            components: { DxResourceAssignments, ... },
+            components: { DxGantt, DxResourceAssignments, ... },
             data() {
                 return { resourceAssignments, ... };
-            },
-            computed: {
-                resourceAssignmentsDataSource() { return resourceAssignments; },
-                // ...
             }
         };
     </script>

@@ -9,7 +9,7 @@ type: Object
 Specifies settings that affect all DevExtreme widgets.
 
 ---
-Pass this object to the [DevExpress.config(globalConfig)](/Documentation/ApiReference/Common/utils/#configglobalConfig) method to apply these setting, or call the same method without arguments to get the object with current settings.
+Pass this object to the [DevExpress.config(globalConfig)](/api-reference/50%20Common/utils/config().md '/Documentation/ApiReference/Common/Utils/#config') method to apply these setting, or call the same method without arguments to get the object with current settings.
 
     DevExpress.config({
         rtlEnabled: true,

@@ -164,13 +164,15 @@ If you want to restrict the set of formats available for exporting, change the *
         Export
     } from 'devextreme-react/chart';
 
+    const exportFormats = ['PNG', 'JPEG'];
+
     class App extends React.Component {
         render() {
             return (
                 <Chart ... >
                     <Export
                         enabled={true}
-                        formats={['PNG', 'JPEG']}
+                        formats={exportFormats}
                         fileName="exported_chart"
                     />
                 </Chart>

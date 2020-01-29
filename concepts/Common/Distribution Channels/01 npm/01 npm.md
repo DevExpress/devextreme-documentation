@@ -1,4 +1,4 @@
-npm is most often used for delivering DevExtreme to Angular, Vue, and React applications. The following packages are provided:
+npm is used to deliver DevExtreme to Angular, Vue, and React applications. The following packages are provided:
 
 - <a href="https://www.npmjs.com/package/devextreme" target="_blank">devextreme</a>
 - <a href="https://www.npmjs.com/package/devextreme-angular" target="_blank">devextreme-angular</a>

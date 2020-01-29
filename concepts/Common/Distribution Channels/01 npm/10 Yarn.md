@@ -1,4 +1,4 @@
-All DevExtreme npm packages can be installed using Yarn:
+You can use Yarn to install all DevExtreme npm packages:
 
     yarn add devextreme@20.1 --exact
 

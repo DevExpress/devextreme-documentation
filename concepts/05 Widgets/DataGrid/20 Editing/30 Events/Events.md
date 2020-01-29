@@ -44,6 +44,58 @@ The **DataGrid** widget raises events before and after a row is inserted, update
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @row-inserting="onRowInserting">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            onRowInserting(e) {
+                // Handler of the "rowInserting" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        onRowInserting(e) {
+            // Handler of the "rowInserting" event
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onRowInserting={this.onRowInserting}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -101,6 +153,60 @@ In addition, the **DataGrid** raises the [initNewRow](/api-reference/10%20UI%20W
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @init-new-row="onInitNewRow">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            onInitNewRow(e) { // Handler of the "initNewRow" event
+                // Sets an initial value for the "Hire_Date" field
+                e.data.Hire_Date = new Date();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        onInitNewRow(e) { // Handler of the "initNewRow" event
+            // Sets an initial value for the "Hire_Date" field
+            e.data.Hire_Date = new Date();
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onInitNewRow={this.onInitNewRow}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
     

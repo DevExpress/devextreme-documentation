@@ -8,7 +8,7 @@ Exports:
         // ===== or =====
         import { compileGetter } from "devextreme/utils";
 
-- *compileSetter* - The [compileSetter](/Documentation/ApiReference/Data_Layer/Utils/#compileSetter) method
+- *compileSetter* - The [compileSetter](/api-reference/30%20Data%20Layer/Utils/compileSetter(expr).md '/Documentation/ApiReference/Data_Layer/Utils/#compileSetterexpr') method
 
         require("utils").compileSetter;
         // ===== or =====

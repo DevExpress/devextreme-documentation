@@ -75,15 +75,19 @@ If your dataset excludes non-working days, you can skip them on the axis as well
         ArgumentAxis
     } from 'devextreme-react/chart';
 
+    const workWeek = [0, 1, 2, 3, 4, 5];
+    const holidays = ['2017/1/16', '2017/2/20', '2017/5/29'];
+    const singleWorkdays = ['2017/1/1'];
+
     class App extends React.Component {
         render() {
             return (
                 <Chart ... >
                     <ArgumentAxis
                         workdaysOnly={true}
-                        workWeek={[0, 1, 2, 3, 4, 5]}
-                        holidays={['2017/1/16', '2017/2/20', '2017/5/29']}
-                        singleWorkdays={['2017/1/1']}
+                        workWeek={workWeek}
+                        holidays={holidays}
+                        singleWorkdays={singleWorkdays}
                     />
                 </Chart>
             );

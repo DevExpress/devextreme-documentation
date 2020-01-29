@@ -1,6 +1,6 @@
 ---
 id: dxTreeView.Options.rootValue
-type: Object
+type: any
 default: 0
 ---
 ---

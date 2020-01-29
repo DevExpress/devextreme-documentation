@@ -1,4 +1,6 @@
-The **DataGrid** widget allows a user to add, delete and update data. Assign **true** to the corresponding field of the [editing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/') object to enable an operation. You can set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowEditing') option to **false** if its data should not be edited.
+Users can add, delete, and update grid data. To enable these operations, assign **true** to the corresponding fields of the [editing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/') object. You can set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowEditing') option to **false** if its data should not be edited.
+
+Grid data can be edited in several modes. Set the **editing**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode') option to specify the mode.
 
 ---
 ##### jQuery
@@ -10,7 +12,8 @@ The **DataGrid** widget allows a user to add, delete and update data. Assign **t
             editing: {
                 allowUpdating: true, 
                 allowAdding: true, 
-                allowDeleting: true 
+                allowDeleting: true,
+                mode: 'row' // 'batch' | 'cell' | 'form' | 'popup'
             },
             columns: [
                 { dataField: 'id', allowEditing: false },
@@ -26,7 +29,8 @@ The **DataGrid** widget allows a user to add, delete and update data. Assign **t
         <dxo-editing
             [allowUpdating]="true"
             [allowAdding]="true"
-            [allowDeleting]="true">
+            [allowDeleting]="true"
+            mode="row"> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
         </dxo-editing>
         <dxi-column dataField="id" [allowEditing]="false"></dxi-column>
     </dx-data-grid>
@@ -54,7 +58,7 @@ The **DataGrid** widget allows a user to add, delete and update data. Assign **t
                 :allow-updating="true"
                 :allow-adding="true"
                 :allow-deleting="true"
-            />
+                mode="row" /> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
             <DxColumn data-field="id" :allow-editing="false" />
         </DxDataGrid>
     </template>
@@ -98,96 +102,8 @@ The **DataGrid** widget allows a user to add, delete and update data. Assign **t
                         allowUpdating={true}
                         allowAdding={true}
                         allowDeleting={true}
-                    />
+                        mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
                     <Column dataField="id" allowEditing={false} />
-                </DataGrid>
-            );
-        }
-    }
-    export default App;
-    
----
-
-With the **DataGrid** you can edit data in several modes. Use the **editing**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode') option to specify it. 
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#dataGridContainer").dxDataGrid({
-            // ...
-            editing: {
-                mode: 'row' // 'batch' | 'cell' | 'form' | 'popup'
-            }
-        });
-    });
-
-##### Angular
-    
-    <!--HTML-->
-    <dx-data-grid ... >
-        <dxo-editing
-            mode="row"> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
-        </dxo-editing>
-    </dx-data-grid>
-
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxDataGrid ... >
-            <DxEditing mode="row" /> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
-        </DxDataGrid>
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DxDataGrid, {
-        DxEditing
-    } from 'devextreme-vue/data-grid';
-
-    export default {
-        components: {
-            DxDataGrid,
-            DxEditing
-        }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DataGrid, {
-        Editing
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Editing mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
                 </DataGrid>
             );
         }

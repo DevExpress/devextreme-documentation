@@ -7,15 +7,16 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
 
     <!-- tab: index.js -->
     $(function() {
-        var currentRowIndex;
+        var editRowKey;
         var dataGridInstance = $("#dataGridContainer").dxDataGrid({
             // ...
             onEditingStart: function(e) {
-                currentRowIndex = e.component.getRowIndexByKey(e.key);
+                editRowKey = e.key;
             }
         }).dxDataGrid("instance");
         // ...
-        var cellValue = dataGridInstance.cellValue(currentRowIndex, "EmployeeName");
+        var editRowIndex = dataGridInstance.getRowIndexByKey(editRowKey);
+        var cellValue = dataGridInstance.cellValue(editRowIndex, "EmployeeName");
     });
 
 ##### Angular
@@ -39,15 +40,19 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent
 
-        currentRowIndex: number;
+        editRowKey: number;
 
         onEditingStart(e) {
-            this.currentRowIndex = e.component.getRowIndexByKey(e.key);
+            this.editRowKey = e.key;
             // ...
         }
 
         getCellValue() {
-            return this.dataGrid.instance.cellValue(this.currentRowIndex, "EmployeeName")
+            const editRowIndex = this.dataGrid.instance.getRowIndexByKey(this.editRowKey);
+            if(editRowIndex >= 0) {
+                return this.dataGrid.instance.cellValue(editRowIndex, "EmployeeName");
+            }
+            return null;
         }
     }
 
@@ -95,16 +100,20 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
         data: function() {
             return {
                 dataGridRefKey,
-                currentRowIndex
+                editRowKey
             }
         },
         methods: {
             onEditingStart(e) {
-                this.currentRowIndex = e.component.getRowIndexByKey(e.key);
+                this.editRowKey = e.key;
                 // ...
             },
             getCellValue() {
-                this.dataGrid.cellValue(this.currentRowIndex, "EmployeeName")
+                const editRowIndex = this.dataGrid.getRowIndexByKey(this.editRowKey);
+                if(editRowIndex >= 0) {
+                    return this.dataGrid.cellValue(editRowIndex, "EmployeeName");
+                }
+                return null;
             }
         },
         computed: {
@@ -138,12 +147,16 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
         }
 
         getCellValue() {
-            this.dataGrid.cellValue(this.state.currentRowIndex, "EmployeeName")
+            const editRowIndex = this.dataGrid.getRowIndexByKey(this.state.editRowKey);
+            if(editRowIndex >= 0) {
+                return this.dataGrid.cellValue(editRowIndex, "EmployeeName");
+            }
+            return null;
         }
 
         onEditingStart(e) {
             this.setState({
-                currentRowIndex: e.component.getRowIndexByKey(e.key)
+                editRowKey: e.key
             });
             // ...
         }

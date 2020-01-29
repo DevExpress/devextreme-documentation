@@ -139,137 +139,9 @@ The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Wi
     
 ---
 
-The **DataGrid** widget allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#setCellValue') function before this value is saved to the data source. 
+To process an updated cell value before saving it to the data source, implement the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#setCellValue') function. Refer to the function's description for an example.
 
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#dataGridContainer").dxDataGrid({
-            // ...
-            editing: {
-                allowUpdating: true, 
-                allowAdding: true
-            },
-            columns: [
-                { dataField: "ID", visible: false },
-                {
-                    dataField: "Full_Name",
-                    setCellValue: function (rowData, value) {
-                        rowData.ID = value + Math.random() * 100;
-                        rowData.Full_Name = value;
-                    }
-                }
-                // ...
-            ]
-        });
-    });
-
-##### Angular
-    
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        setCellValue (rowData, value) {
-            rowData.ID = value + Math.random() * 100;
-            rowData.Full_Name = value;
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
-
-    <!--HTML-->
-    <dx-data-grid>
-        <dxo-editing
-            [allowUpdating]="true"
-            [allowAdding]="true">
-        </dxo-editing>
-        <dxi-column dataField="ID" [visible]="false"></dxi-column>
-        <dxi-column dataField="Full_Name" [setCellValue]="setCellValue"></dxi-column>
-    </dx-data-grid>
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxDataGrid ... >
-            <DxEditing
-                :allow-updating="true"
-                :allow-adding="true"
-            />
-            <DxColumn data-field="ID" :visible="false" />
-            <DxColumn data-field="Full_Name" :set-cell-value="setCellValue" />
-        </DxDataGrid>
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DxDataGrid, {
-        DxEditing,
-        DxColumn
-    } from 'devextreme-vue/data-grid';
-
-    export default {
-        components: {
-            DxDataGrid,
-            DxEditing,
-            DxColumn
-        },
-        methods: {
-            setCellValue(rowData, value) {
-                rowData.ID = value + Math.random() * 100;
-                rowData.Full_Name = value;
-            }
-        }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DataGrid, {
-        Editing,
-        Column
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        setCellValue(rowData, value) {
-            rowData.ID = value + Math.random() * 100;
-            rowData.Full_Name = value;
-        }
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Editing
-                        allowUpdating={true}
-                        allowAdding={true}
-                    />
-                    <Column dataField="ID" visible={false} />
-                    <Column dataField="Full_Name" setCellValue={this.setCellValue} />
-                </DataGrid>
-            );
-        }
-    }
-    export default App;
-    
----
-
-Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hasEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#hasEditData') to check if there are any unsaved changes. You can save or cancel them using the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') or [cancelEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cancelEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cancelEditData') method, respectively.
+You can check if there are any unsaved changes by calling the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hasEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#hasEditData') method. Use the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') or [cancelEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cancelEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cancelEditData') method to save or cancel them, respectively.
 
 ---
 ##### jQuery
@@ -282,9 +154,14 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
             text: "Save changes",
             onClick: function() {
                 var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
-                if (dataGrid.hasEditData()) {
-                    // Implement your logic here
-                    dataGrid.saveEditData();
+                if(dataGrid.hasEditData()) {
+                    dataGrid.saveEditData().then(() => {
+                        if(!dataGrid.hasEditData()) {
+                            // Saved successfully
+                        } else {
+                            // Saving failed
+                        }
+                    });
                 }
             }
         });
@@ -299,10 +176,15 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        saveEditData () {
-            if (this.dataGrid.instance.hasEditData()) {
-                // Implement your logic here
-                this.dataGrid.instance.saveEditData();
+        saveEditData() {
+            if(this.dataGrid.instance.hasEditData()) {
+                this.dataGrid.instance.saveEditData().then(() => {
+                    if(!this.dataGrid.instance.hasEditData()) {
+                        // Saved successfully
+                    } else {
+                        // Saving failed
+                    }
+                });
             }
         }
     }
@@ -359,8 +241,13 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
         methods: {
             saveChanges() {
                 if(this.dataGrid.hasEditData()) {
-                    // Implement your logic here
-                    this.dataGrid.saveEditData();
+                    this.dataGrid.saveEditData().then(() => {
+                        if(!this.dataGrid.hasEditData()) {
+                            // Saved successfully
+                        } else {
+                            // Saving failed
+                        }
+                    });
                 }
             }
         },
@@ -396,8 +283,13 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
 
         saveChanges() {
             if(this.dataGrid.hasEditData()) {
-                // Implement your logic here
-                this.dataGrid.saveEditData();
+                this.dataGrid.saveEditData().then(() => {
+                    if(!this.dataGrid.hasEditData()) {
+                        // Saved successfully
+                    } else {
+                        // Saving failed
+                    }
+                });
             }
         }
 

@@ -7,15 +7,16 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
 
     <!-- tab: index.js -->
     $(function() {
-        var currentRowIndex;
+        var editRowKey;
         var dataGridInstance = $("#dataGridContainer").dxDataGrid({
             // ...
             onEditingStart: function(e) {
-                currentRowIndex = e.component.getRowIndexByKey(e.key);
+                editRowKey = e.key;
             }
         }).dxDataGrid("instance");
         // ...
-        var cellValue = dataGridInstance.cellValue(currentRowIndex, "EmployeeName");
+        var editRowIndex = dataGridInstance.getRowIndexByKey(editRowKey);
+        var cellValue = dataGridInstance.cellValue(editRowIndex, "EmployeeName");
     });
 
 ##### Angular
@@ -39,15 +40,19 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent
 
-        currentRowIndex: number;
+        editRowKey: number;
 
         onEditingStart(e) {
-            this.currentRowIndex = e.component.getRowIndexByKey(e.key);
+            this.editRowKey = e.key;
             // ...
         }
 
         getCellValue() {
-            return this.dataGrid.instance.cellValue(this.currentRowIndex, "EmployeeName")
+            const editRowIndex = this.dataGrid.instance.getRowIndexByKey(this.editRowKey);
+            if(editRowIndex >= 0) {
+                return this.dataGrid.instance.cellValue(editRowIndex, "EmployeeName");
+            }
+            return null;
         }
     }
 
@@ -69,6 +74,103 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
         bootstrap: [AppComponent]
     })
     export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey"
+            @editing-start="onEditingStart">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = 'myDataGrid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data: function() {
+            return {
+                dataGridRefKey,
+                editRowKey
+            }
+        },
+        methods: {
+            onEditingStart(e) {
+                this.editRowKey = e.key;
+                // ...
+            },
+            getCellValue() {
+                const editRowIndex = this.dataGrid.getRowIndexByKey(this.editRowKey);
+                if(editRowIndex >= 0) {
+                    return this.dataGrid.cellValue(editRowIndex, "EmployeeName");
+                }
+                return null;
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+            this.getCellValue = this.getCellValue.bind(this);
+            this.onEditingStart = this.onEditingStart.bind(this);
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        getCellValue() {
+            const editRowIndex = this.dataGrid.getRowIndexByKey(this.state.editRowKey);
+            if(editRowIndex >= 0) {
+                return this.dataGrid.cellValue(editRowIndex, "EmployeeName");
+            }
+            return null;
+        }
+
+        onEditingStart(e) {
+            this.setState({
+                editRowKey: e.key
+            });
+            // ...
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    ref={this.dataGridRef}
+                    onEditingStart={this.onEditingStart}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -97,8 +199,7 @@ To access a cell value after the user has edited it, but before it is saved to t
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ...
-        (onEditingStart)="onEditingStart($event)">
+    <dx-data-grid ... >
         <dxi-column
             dataField="EmployeeName"
             [setCellValue]="setCellValue">
@@ -139,6 +240,71 @@ To access a cell value after the user has edited it, but before it is saved to t
         bootstrap: [AppComponent]
     })
     export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="EmployeeName"
+                :set-cell-value="setCellValue"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        methods: {
+            setCellValue(newData, value, currentRowData) {
+                // currentRowData contains the row data before the edit
+                // value contains the edited value
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        setCellValue(newData, value, currentRowData) {
+            // currentRowData contains the row data before the edit
+            // value contains the edited value
+        }
+
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="Full_Name"
+                        setCellValue={this.setCellValue}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ---
 #####See Also#####

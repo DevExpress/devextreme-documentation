@@ -27,6 +27,64 @@ Use the [addRow()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/addRo
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            ref="myDataGrid">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            addNewRow() {
+                this.$refs['myDataGrid'].instance.addRow();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+            this.addNewRow = this.addNewRow.bind(this);
+        }
+
+        addNewRow() {
+            this.dataGridRef.current.instance.addRow();
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    ref={this.dataGridRef}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -74,6 +132,65 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @init-new-row="setHireDate">
+            <DxColumn data-field="Hire_Date" data-type="date" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        methods: {
+            setHireDate(e) {
+                e.data.Hire_Date = new Date();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        setHireDate(e) {
+            e.data.Hire_Date = new Date();
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onInitNewRow={this.setHireDate}>
+                    <Column dataField="Hire_Date" dataType="date" />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

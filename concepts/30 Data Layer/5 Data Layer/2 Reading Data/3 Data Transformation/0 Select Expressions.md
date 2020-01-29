@@ -92,7 +92,7 @@ A selection expression can be a [getter](/concepts/30%20Data%20Layer/5%20Data%20
             { fullName: "Maria Gomez", address: "Denver" }
         ]
 
-[Stores](/Documentation/Guide/Data_Layer/Data_Layer/#What_Are_Stores) support the same select expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
+[Stores](/concepts/30%20Data%20Layer/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same select expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
     <!--JavaScript-->var arrayStore = new DevExpress.data.ArrayStore(data);
     arrayStore

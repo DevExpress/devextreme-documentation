@@ -20,6 +20,6 @@ By default, minor ticks arrange on the scale automatically, but you can specify 
 
 [note] When both the **minorTickInterval** and **minorTickCount** options are specified, minor ticks will be arranged according to the interval, not the count.
 
-If you do not need to display minor ticks at all, set the [showMinorTicks](/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/#showMinorTicks) option to **false**.
+If you do not need to display minor ticks at all, set the **minorTick**.[visible](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/minorTick/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/minorTick/#visible') option to **false**.
 
 In addition, you can specify whether or not to place a tick at the end of the scale in case when, according to the settings of the tick arrangement, no ticks should be placed there. To do this, use the [showCustomBoundaryTicks](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/showCustomBoundaryTicks.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/#showCustomBoundaryTicks') option.

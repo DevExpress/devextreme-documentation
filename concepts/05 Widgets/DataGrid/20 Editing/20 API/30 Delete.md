@@ -61,6 +61,87 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid
+            ref="dataGrid">
+            <DxEditing
+                mode="row"
+                :allow-deleting="true">
+                <DxEditingTexts :confirm-delete-message="null" />
+            </DxEditing>
+        </DxDataGrid>
+        <DxButton
+            text="Delete Row"
+            @click="deleteRow"
+        />
+    </template>
+
+    <script>
+    import { DxDataGrid, DxEditing, DxEditingTexts } from 'devextreme-vue/data-grid';
+
+    import DxButton from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxDataGrid, 
+            DxEditing,
+            DxEditingTexts,
+            DxButton
+        },
+        methods: {
+            deleteRow() {
+                this.$refs.dataGrid.instance.deleteRow(1);
+            }
+        },
+        data() {}
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import { DataGrid, Editing, EditingTexts } from 'devextreme-react/data-grid';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dataGridRef = React.createRef();
+            this.deleteRow = this.deleteRow.bind(this);
+        }
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        deleteRow() {
+            this.dataGrid.deleteRow(1);
+        }
+
+        render() {
+            return (
+                <DataGrid  
+                    ref={this.dataGridRef}>
+                    <Editing
+                        mode="row"
+                        allowDeleting={true}>
+                        <EditingTexts confirmDeleteMessage={null} />
+                    </Editing>
+                </DataGrid>
+                <Button
+                    text="Delete Row"
+                    onClick={this.deleteRow}
+                />
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -93,6 +174,63 @@ Note that in the [batch mode](/concepts/05%20Widgets/DataGrid/20%20Editing/10%20
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid
+            ref="dataGrid">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import { DxDataGrid } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            undeleteRow() {
+                this.$refs.dataGrid.instance.undeleteRow(1);
+            }
+        },
+        data() {}
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import { DataGrid } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dataGridRef = React.createRef();
+            this.undeleteRow = this.undeleteRow.bind(this);
+        }
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        undeleteRow() {
+            this.dataGrid.undeleteRow(1);
+        }
+
+        render() {
+            return (
+                <DataGrid  
+                    ref={this.dataGridRef}
+                />
+            );
+        }
+    }
+    export default App;   
+     
 ---
 
 #####See Also#####

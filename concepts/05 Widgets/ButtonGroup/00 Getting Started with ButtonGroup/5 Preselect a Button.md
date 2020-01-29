@@ -52,10 +52,12 @@ Populate the [selectedItemKeys](/api-reference/10%20UI%20Widgets/dxButtonGroup/1
     <!-- tab: App.js -->
     // ...
     class App extends React.Component {
+        selectedFontStyleNames = [ 'italic' ];
+
         render() {
             return (
                 <ButtonGroup ...
-                    defaultSelectedItemKeys={[ 'italic' ]}
+                    defaultSelectedItemKeys={this.selectedFontStyleNames}
                 />
             );
         }

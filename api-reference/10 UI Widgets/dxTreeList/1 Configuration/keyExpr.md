@@ -5,7 +5,7 @@ default: 'id'
 ---
 ---
 ##### shortDescription
-Specifies which data field provides keys for nodes.
+Specifies the key property (or properties) that provide(s) key values to access data items. Each key value must be unique.
 
 ---
 #####See Also#####

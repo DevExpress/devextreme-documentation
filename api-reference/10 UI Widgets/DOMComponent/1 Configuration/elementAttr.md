@@ -42,7 +42,57 @@ Specifies the <a href="http://www.w3schools.com/tags/ref_attributes.asp" target=
         // ...
     })
 
-#####ASP.NET MVC Controls
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            :element-attr="{widgetName}Attributes">
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        data() {
+            return {
+                {widgetName}Attributes: {
+                    id: 'elementId',
+                    class: 'class-name'
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        {widgetName}Attributes = {
+            id: 'elementId',
+            class: 'class-name'
+        }
+
+        render() {
+            return (
+                <{WidgetName} ...
+                    elementAttr={this.{widgetName}Attributes}>
+                </{WidgetName}>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->@(Html.DevExtreme().{WidgetName}()
         .ElementAttr("class", "class-name")

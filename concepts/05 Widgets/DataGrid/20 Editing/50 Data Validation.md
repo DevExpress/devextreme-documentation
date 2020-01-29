@@ -15,7 +15,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
                 validationRules: [{ 
                     type: "stringLength", 
                     min: 3, 
-                    message: "Login should be longer than 3 symbols" 
+                    message: "Login should be at least 3 symbols long" 
                 }]
             },
             // ...
@@ -34,7 +34,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
             <dxi-validation-rule
                 type="stringLength"
                 [min]="3"
-                message="Login should be longer than 3 symbols" >
+                message="Login should be at least 3 symbols long" >
             </dxi-validation-rule>
         </dxi-column>
     </dx-data-grid>
@@ -52,6 +52,77 @@ User input is validated against a set of [validation rules](/api-reference/10%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn data-field="Full_Name">
+                <DxRequiredRule />
+            </DxColumn>
+            <DxColumn data-field="Login">
+                <DxStringLengthRule
+                    :min="3"
+                    message="Login should be at least 3 symbols long"
+                />
+            </DxColumn>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxRequiredRule,
+        DxStringLengthRule
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxRequiredRule,
+            DxStringLengthRule
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+        RequiredRule,
+        StringLengthRule
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column dataField="Full_Name">
+                        <RequiredRule />
+                    </Column>
+                    <Column dataField="Login">
+                        <StringLengthRule
+                            min={3}
+                            message="Login should be at least 3 symbols long"
+                        />
+                    </Column>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
     
 ---
 
@@ -79,7 +150,7 @@ The [onRowValidating](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuratio
     import { DxDataGridModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        barAdministratorLogin (e) {
+        denyAdminLogin (e) {
             if (e.isValid && e.newData.Login === "Administrator") {
                 e.isValid = false;
                 e.errorText = "Your cannot log in as Administrator";
@@ -96,8 +167,66 @@ The [onRowValidating](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuratio
 
     <!--HTML-->
     <dx-data-grid ...
-        (onRowValidating)="barAdministratorLogin($event)">
+        (onRowValidating)="denyAdminLogin($event)">
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @row-validating="denyAdminLogin">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            denyAdminLogin(e) {
+                if(e.isValid && e.newData.Login === "Administrator") {
+                    e.isValid = false;
+                    e.errorText = "Your cannot log in as Administrator";
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        denyAdminLogin(e) {
+            if(e.isValid && e.newData.Login === "Administrator") {
+                e.isValid = false;
+                e.errorText = "Your cannot log in as Administrator";
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onRowValidating={this.denyAdminLogin}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

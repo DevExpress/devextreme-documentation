@@ -1,3 +1,5 @@
+DevExtreme delivers the following files via CDN:
+
 ## Scripts
 
     <!-- Production files -->

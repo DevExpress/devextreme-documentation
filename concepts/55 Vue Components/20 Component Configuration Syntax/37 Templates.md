@@ -4,7 +4,7 @@ In the following code, an [itemTemplate](/api-reference/10%20UI%20Widgets/Collec
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list
+        <DxList
             :items="groupedItems"
             :grouped="true"
             item-template="list-item"
@@ -15,7 +15,7 @@ In the following code, an [itemTemplate](/api-reference/10%20UI%20Widgets/Collec
             <template #list-group="{ data }">
                 {{ data.groupProperty }}
             </template>
-        </dx-list>
+        </DxList>
     </template>
 
     <script>

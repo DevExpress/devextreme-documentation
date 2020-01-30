@@ -2,7 +2,7 @@ Changes in the `bindingProperty` are propagated to the **TextBox**'s **value** a
 
     <!-- tab: App.vue -->
     <template>
-        <dx-text-box :value.sync="bindingProperty" />
+        <DxTextBox :value.sync="bindingProperty" />
     </template>
 
     <script>

@@ -2,24 +2,24 @@ In the following example, two textboxes are placed in a [validation group](/api-
 
     <!-- tab: App.vue -->
     <template>
-        <dx-validation-group>
-            <dx-text-box :value.sync="email">
-                <dx-validator>
-                    <dx-required-rule message="Email is required" />
-                    <dx-email-rule message="Email is invalid" />
-                </dx-validator>
-            </dx-text-box>
+        <DxValidationGroup>
+            <DxTextBox :value.sync="email">
+                <DxValidator>
+                    <DxRequiredRule message="Email is required" />
+                    <DxEmailRule message="Email is invalid" />
+                </DxValidator>
+            </DxTextBox>
 
-            <dx-text-box :value.sync="password" mode="password">
-                <dx-validator>
-                    <dx-required-rule message="Password is required" />
-                </dx-validator>
-            </dx-text-box>
+            <DxTextBox :value.sync="password" mode="password">
+                <DxValidator>
+                    <DxRequiredRule message="Password is required" />
+                </DxValidator>
+            </DxTextBox>
 
-            <dx-validation-summary />
+            <DxValidationSummary />
 
-            <dx-button @click="validate" text="Submit" />
-        </dx-validation-group>
+            <DxButton @click="validate" text="Submit" />
+        </DxValidationGroup>
     </template>
 
     <script>

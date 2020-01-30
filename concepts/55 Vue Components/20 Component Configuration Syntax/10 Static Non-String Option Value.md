@@ -1,5 +1,5 @@
     <!-- tab: HTML -->
-    <dx-button
+    <DxButton
         :disabled="false"
         :width="50"
     />

@@ -100,7 +100,10 @@ Each series point allows you to show or hide its tooltip programmatically. For t
 
         render() {
             return (
-                <Chart onPointClick={this.onPointClick} onPointHoverChanged={this.onPointHoverChanged}></Chart>
+                <Chart ...
+                    onPointClick={this.onPointClick} 
+                    onPointHoverChanged={this.onPointHoverChanged}>
+                </Chart>
             );
         }
 

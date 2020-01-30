@@ -170,7 +170,6 @@ You can also hide the tooltip regardless of the point to which it belongs. To do
         components: {
             DxChart
         },
-
         methods: {
             hideTooltip () {
                 this.$refs.chart.instance.hideTooltip();

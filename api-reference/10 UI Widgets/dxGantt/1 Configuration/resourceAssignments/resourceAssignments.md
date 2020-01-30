@@ -35,6 +35,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             //...
         });
     });
+
     <!-- tab: data.js -->
     var resourceAssignments = [{
         'key': 0,
@@ -46,18 +47,6 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
 
 ##### Angular
 
-    <!-- tab: app.component.ts -->
-    import { DxGanttModule } from 'devextreme-angular';
-    import { Service, ResourceAssignment, ... } from './app.service';
-    export class AppComponent {
-        resourceAssignments: ResourceAssignment[];
-        // ...
-
-        constructor(service: Service) {
-            this.resourceAssignments = service.getResourceAssignments();
-            // ...
-        }
-    }
     <!-- tab: app.component.html -->
     <dx-gantt ... >
         <dxo-resource-assignments 
@@ -68,6 +57,33 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         </dxo-resource-assignments>
         <!-- ... -->
     </dx-gantt>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })    
+    
+    export class AppComponent {
+        resourceAssignments: ResourceAssignment[];
+        // ...
+
+        constructor(service: Service) {
+            this.resourceAssignments = service.getResourceAssignments();
+            // ...
+        }
+    }    
+    
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxGanttModule } from 'devextreme-angular';
+    import { Service, ResourceAssignment, ... } from './app.service';
+
     <!-- tab: app.service.ts -->
     let resourceAssignments: ResourceAssignment[] = [{
         'key': 0,
@@ -97,12 +113,30 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         </DxGantt>
     </template>
     <script>
-        import { DxGantt, DxResourceAssignments, ... } from 'devextreme-vue/gantt';
-        import { resourceAssignments, ... } from './data.js';
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css'; 
+
+        import { 
+            DxGantt, 
+            DxResourceAssignments, 
+            //... 
+        } from 'devextreme-vue/gantt';
+        import { 
+            resourceAssignments, 
+            // ... 
+        } from './data.js';
+        
         export default {
-            components: { DxGantt, DxResourceAssignments, ... },
+            components: { 
+                DxGantt, 
+                DxResourceAssignments, 
+                //... 
+            },
             data() {
-                return { resourceAssignments, ... };
+                return { 
+                    resourceAssignments, 
+                    //... 
+                };
             }
         };
     </script>
@@ -119,13 +153,25 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { ResourceAssignments, ... } from 'devextreme-react/gantt';
-    import { resourceAssignments, ... } from './data.js';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Gantt, { 
+        ResourceAssignments, 
+        //... 
+    } from 'devextreme-react/gantt';
+    import { 
+        resourceAssignments, 
+        //... 
+    } from './data.js';
+    
     class App extends React.Component {
         render() {
             return (
                 <Gantt ... >  
-                    <ResourceAssignments dataSource={resourceAssignments} 
+                    <ResourceAssignments 
+                        dataSource={resourceAssignments} 
                         keyExpr="key"
                         resourceIdExpr="resourceKey" 
                         taskIdExpr="taskKey" />
@@ -135,6 +181,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         }
     }
     export default App;
+    
     <!-- tab: data.js -->
     export const resourceAssignments = [{
         'key': 0,

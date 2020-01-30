@@ -37,6 +37,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             //...
         });
     });
+
     <!-- tab: data.js -->
     var resources = [{
         'resourceId': 1,
@@ -47,17 +48,6 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
 
 ##### Angular
 
-    <!-- tab: app.component.ts -->
-    import { DxGanttModule } from 'devextreme-angular';
-    import { Service, Resource, ... } from './app.service';
-    export class AppComponent {
-        resources: Resource[];
-        // ...
-        constructor(service: Service) {
-            this.resources = service.getResources();
-            // ...
-        }        
-    }    
     <!-- tab: app.component.html -->
     <dx-gantt ... >
         <dxo-resources 
@@ -67,6 +57,42 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         </dxo-resources>
         <!-- ... -->
     </dx-gantt>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        resources: Resource[];
+        // ...
+        constructor(service: Service) {
+            this.resources = service.getResources();
+            // ...
+        }        
+    }    
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxGanttModule } from 'devextreme-angular';
+    import { Service, Resource, ... } from './app.service';
+
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxGanttModule
+        ],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
     <!-- tab: app.service.ts -->
     let resources: Resource[] = [{
         'resourceId': 1,
@@ -94,15 +120,34 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         </DxGantt>
     </template>
     <script>
-        import { DxGantt, DxResources, ... } from 'devextreme-vue/gantt';
-        import { resources, ... } from './data.js';
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css'; 
+
+        import { 
+            DxGantt, 
+            DxResources, 
+            // ... 
+        } from 'devextreme-vue/gantt';
+        import { 
+            resources, 
+            // ... 
+        } from './data.js';
+        
         export default {
-            components: { DxGantt, DxResources, ... },
+            components: { 
+                DxGantt, 
+                DxResources, 
+                // ... 
+            },
             data() {
-                return { resources, ... };
+                return { 
+                    resources, 
+                    // ... 
+                };
             }
         };
     </script>
+
     <!-- tab: data.js -->
     export const resources = [{
         'resourceId': 1,
@@ -115,22 +160,34 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Gantt, { Resources, ... } from 'devextreme-react/gantt';
-    import { resources, ... } from './data.js';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Gantt, { 
+        Resources, 
+        // ... 
+    } from 'devextreme-react/gantt';
+    import { 
+        resources, 
+        // ... 
+    } from './data.js';
+    
     class App extends React.Component {
         render() {
             return (
-            <Gantt ... >
-                <Resources 
-                    dataSource={resources}
-                    keyExpr="resourceId"
-                    textExpr="title" />
-                {/* ... */}
-            </Gantt>
+                <Gantt ... >
+                    <Resources 
+                        dataSource={resources}
+                        keyExpr="resourceId"
+                        textExpr="title" />
+                    {/* ... */}
+                </Gantt>
             );
         }
     }
     export default App;
+    
     <!-- tab: data.js -->
     export const resources = [{
         'resourceId': 1,

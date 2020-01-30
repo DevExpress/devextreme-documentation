@@ -1,12 +1,12 @@
-Use the [permissions](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/permissions '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/') option to specify whether to allow or deny a user to manage files and folders in the **FileManager** widget: copy, create, download, move, remove, rename, or upload. 
+Use the [permissions](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/permissions '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/') option to specify whether a user is allowed to copy, create, download, move, remove, rename, or upload files and folders in the **FileManager** widget. 
 
 The widget also allows you to specify the following restrictions:
     
-- [allowedFileExtensions](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions') option - Specifies file extensions allowed for display and upload in the **FileManager** widget. The widget fails to upload and displays the error message if a user tries to upload files with restricted extensions.
+- [allowedFileExtensions](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions') option - Specifies file extensions that can be displayed and uploaded in the **FileManager** widget. The widget cannot upload and displays an error message if a user attempts to upload files with restricted extensions.
 
     ![DevExtreme File Manager - Allowed File Extension](/images/FileManager/allowed-file-extension-error-message.png)
 
-- [maxFileSize](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/upload/maxFileSize.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/upload/#maxFileSize') option - Specifies the maximum upload file size. The widget does not upload a file and displays the following error message when the file's size exceeds the maximum upload file size.
+- [maxFileSize](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/upload/maxFileSize.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/upload/#maxFileSize') option - Specifies the maximum upload file size. The widget does not upload a file and displays the following error message when the file's size exceeds the allowed size:
 
     ![DevExtreme File Manager - Max File Size](/images/FileManager/max-file-size-error-message.png)
 

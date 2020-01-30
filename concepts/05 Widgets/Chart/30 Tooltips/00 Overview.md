@@ -38,6 +38,52 @@ All options configuring tooltips are collected in the [tooltip](/api-reference/2
         // ...
     })
 
+### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxTooltip
+                :enabled="true"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxTooltip
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxTooltip
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Tooltip
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Tooltip
+                        enabled={true}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Options declared in the **tooltip** object apply to all tooltips in the **Chart**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/tooltip/#customizeTooltip') option. This function must return an object with options for the tooltip that you want to customize.
@@ -54,7 +100,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **Chart*
                 // Paints the tooltips of all points whose value is more than 100 in red
                 // Other tooltips remain painted in yellow
                 customizeTooltip: function (pointInfo) {
-                    return pointInfo.value > 100 ? { color: 'red' } : { }
+                    return pointInfo.value > 100 ? { color: 'red' } : { };
                 }
             }
         });
@@ -77,7 +123,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **Chart*
         // Paints the tooltips of all points whose value is more than 100 in red
         // Other tooltips remain painted in yellow
         customizeTooltip (pointInfo: any) {
-            return pointInfo.value > 100 ? { color: 'red' } : { }
+            return pointInfo.value > 100 ? { color: 'red' } : { };
         };
     }
     @NgModule({
@@ -87,6 +133,66 @@ Options declared in the **tooltip** object apply to all tooltips in the **Chart*
         ],
         // ...
     })
+
+### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxTooltip
+                :enabled="true"
+                :customize-tooltip="customizeTooltip"
+                color="yellow"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxTooltip
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxTooltip
+        },
+
+        methods: {
+            customizeTooltip (pointInfo) {
+                return pointInfo.value > 100 ? { color: "red" } : { };
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Tooltip
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Tooltip
+                        enabled={true}
+                        color="yellow"
+                        customizeTooltip={customizeTooltip}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    function customizeTooltip(pointInfo) {
+        return pointInfo.value > 100 ? { color: "red" } : { };
+    }
+            
+    export default App;
 
 ---
 

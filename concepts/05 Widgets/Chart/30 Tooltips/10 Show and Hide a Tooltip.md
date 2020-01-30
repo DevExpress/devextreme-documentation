@@ -53,6 +53,73 @@ Each series point allows you to show or hide its tooltip programmatically. For t
         // ...
     })
 
+### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart @point-click="onPointClick" @point-hover-changed="onPointHoverChanged">
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+
+        methods: {
+            onPointClick (e) {
+                let point = e.target;
+                point.showTooltip();
+            },
+
+            onPointHoverChanged (e) {
+                let point = e.target;
+                if (!point.isHovered()) {
+                    point.hideTooltip();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.onPointClick = this.onPointClick.bind(this);
+            this.onPointHoverChanged = this.onPointHoverChanged.bind(this);
+        }
+
+        render() {
+            return (
+                <Chart onPointClick={this.onPointClick} onPointHoverChanged={this.onPointHoverChanged}></Chart>
+            );
+        }
+
+        onPointClick (e) {
+            let point = e.target;
+            point.showTooltip();
+        }
+
+        onPointHoverChanged (e) {
+            let point = e.target;
+            if (!point.isHovered()) {
+                point.hideTooltip();
+            }
+        }
+    }
+
+    export default App;
+
+
 ---
 
 You can also hide the tooltip regardless of the point to which it belongs. To do this, call the **hideTooltip()** method of the **Chart** instance.
@@ -83,6 +150,60 @@ You can also hide the tooltip regardless of the point to which it belongs. To do
         ],
         // ...
     })
+
+    
+### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ref="chart">
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+
+        methods: {
+            hideTooltip () {
+                this.$refs.chart.instance.hideTooltip();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.chartRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <Chart ref={this.chartRef}></Chart>
+            );
+        }
+
+        get chart() {
+            return this.chartRef.current.instance;
+        }
+
+        hideTooltip () {
+            this.chart.hideTooltip();
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -72,7 +72,7 @@ Each series point allows you to show or hide its tooltip programmatically. For t
         },
         methods: {
             onPointClick (e) {
-                let point = e.target;
+                const point = e.target;
                 point.showTooltip();
             },
             onPointHoverChanged (e) {

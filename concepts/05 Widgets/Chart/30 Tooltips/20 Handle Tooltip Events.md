@@ -65,7 +65,6 @@ When a tooltip becomes shown or hidden, the **Chart** fires the [tooltipShown](/
                 let point = e.target;
                 // Handler of the "tooltipShown" event
             },
-
             onTooltipHidden (e) {
                 const point = e.target;
                 // Handler of the "tooltipHidden" event
@@ -81,27 +80,20 @@ When a tooltip becomes shown or hidden, the **Chart** fires the [tooltipShown](/
     import Chart from 'devextreme-react/chart';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.onTooltipShown = this.onTooltipShown.bind(this);
-            this.onTooltipHidden = this.onTooltipHidden.bind(this);
-        }
-
         render() {
             return (
-                <Chart onTooltipShown={this.onTooltipShown} onTooltipHidden={this.onTooltipHidden}></Chart>
+                <Chart onTooltipShown={onTooltipShown} onTooltipHidden={onTooltipHidden}></Chart>
             );
         }
+    }
 
-        onTooltipShown (e) {
-            const point = e.target;
-            // Handler of the "tooltipShown" event
-        },
-
-        onTooltipHidden (e) {
-            const point = e.target;
-            // Handler of the "tooltipHidden" event
-        }
+    function onTooltipShown (e) {
+        const point = e.target;
+        // Handler of the "tooltipShown" event
+    }
+    function onTooltipHidden (e) {
+        const point = e.target;
+        // Handler of the "tooltipHidden" event
     }
 
     export default App;

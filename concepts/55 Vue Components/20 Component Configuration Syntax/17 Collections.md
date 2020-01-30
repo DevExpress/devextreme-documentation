@@ -2,16 +2,16 @@ Use nested configuration components. The following example shows how to configur
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid>
-            <dx-column
+        <DxDataGrid>
+            <DxColumn
                 data-field="firstName"
                 caption="Name"
             />
-            <dx-column
+            <DxColumn
                 data-field="lastName"
                 caption="Surname"
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -27,15 +27,19 @@ Use nested configuration components. The following example shows how to configur
     }
     </script>
 
+<<<<<<< HEAD
 DevExtreme collection widgets also support the `DxItem` component. It allows you to declare collection items in the widget markup. A `dx-item` element can contain custom markup and have attributes that control parts of item appearance, such as `badge` in the following code. The attributes are described in the [Default Item Template](/api-reference/10%20UI%20Widgets/dxList/5%20Default%20Item%20Template '/Documentation/ApiReference/UI_Widgets/dxList/Default_Item_Template/') section of each collection widget. Ensure to specify that an item's content is in the default [slot](https://vuejs.org/v2/guide/components-slots.html).
+=======
+DevExtreme collection widgets also support the `DxItem` component. It allows you to declare collection items in the widget markup. A `DxItem` element can contain custom markup and have attributes that control parts of item appearance, such as `badge` in the following code. The attributes are described in the [items](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/') section of each collection widget. Ensure to specify that an item's content is in the default [slot](https://vuejs.org/v2/guide/components-slots.html).
+>>>>>>> ef961276... Rewrite components names in pascal case in the Vue root topic (#212)
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list>
-            <dx-item #default>Orange</dx-item>
-            <dx-item #default badge="New">White</dx-item>
-            <dx-item #default>Black</dx-item>
-        </dx-list>
+        <DxList>
+            <DxItem #default>Orange</DxItem>
+            <DxItem #default badge="New">White</DxItem>
+            <DxItem #default>Black</DxItem>
+        </DxList>
     </template>
 
     <script>
@@ -51,20 +55,20 @@ DevExtreme collection widgets also support the `DxItem` component. It allows you
     }
     </script>
 
-`dx-item` also supports structural directives provided by Vue, such as `v-for`:
+`DxItem` also supports structural directives provided by Vue, such as `v-for`:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list>
-            <dx-item #default><h1>Available items</h1></dx-item>
-            <dx-item
+        <DxList>
+            <DxItem #default><h1>Available items</h1></DxItem>
+            <DxItem
                 v-for="item in listItems"
                 :key="item.text"
                 :badge="item.badge"
                 #default>
                 {{ item.text }}
-            </dx-item>
-        </dx-list>
+            </DxItem>
+        </DxList>
     </template>
 
     <script>

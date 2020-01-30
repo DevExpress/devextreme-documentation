@@ -57,7 +57,9 @@ Each series point allows you to show or hide its tooltip programmatically. For t
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart @point-click="onPointClick" @point-hover-changed="onPointHoverChanged">
+        <DxChart ...
+            @point-click="onPointClick" 
+            @point-hover-changed="onPointHoverChanged">
         </DxChart>
     </template>
 

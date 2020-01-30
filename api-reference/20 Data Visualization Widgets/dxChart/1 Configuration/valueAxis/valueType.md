@@ -9,9 +9,7 @@ default: undefined
 Casts values to a specified data type.
 
 ---
-If your data source stores, for example, numbers as strings, specify the proper data type using the **valueType** option.
-
-[note]If dates in your data source are stored as strings, make sure that they have a <a href="http://www.w3schools.com/js/js_date_formats.asp" target="_blank">valid format</a>.
+If dates in your data source are stored as strings, make sure that they have a <a href="http://www.w3schools.com/js/js_date_formats.asp" target="_blank">valid format</a>.
 
 #include common-ref-enum with {
     enum: "`ChartDataType`",

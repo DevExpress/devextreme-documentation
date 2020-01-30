@@ -92,36 +92,29 @@ Each series point allows you to show or hide its tooltip programmatically. For t
     import Chart from 'devextreme-react/chart';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.onPointClick = this.onPointClick.bind(this);
-            this.onPointHoverChanged = this.onPointHoverChanged.bind(this);
-        }
-
         render() {
             return (
                 <Chart ...
-                    onPointClick={this.onPointClick} 
-                    onPointHoverChanged={this.onPointHoverChanged}>
+                    onPointClick={onPointClick} 
+                    onPointHoverChanged={onPointHoverChanged}>
                 </Chart>
             );
         }
+    }
 
-        onPointClick (e) {
-            const point = e.target;
-            point.showTooltip();
-        }
-
-        onPointHoverChanged (e) {
-            const point = e.target;
-            if (!point.isHovered()) {
-                point.hideTooltip();
-            }
+    function onPointHoverChanged (e) {
+        const point = e.target;
+        if (!point.isHovered()) {
+            point.hideTooltip();
         }
     }
 
-    export default App;
+    function onPointClick (e) {
+        const point = e.target;
+        point.showTooltip();
+    }
 
+    export default App;
 
 ---
 
@@ -190,17 +183,14 @@ You can also hide the tooltip regardless of the point to which it belongs. To do
             this.chartRef = React.createRef();
             this.hideTooltip = this.hideTooltip.bind(this);
         }
-
         render() {
             return (
                 <Chart ref={this.chartRef}></Chart>
             );
         }
-
         get chart() {
             return this.chartRef.current.instance;
         }
-
         hideTooltip () {
             this.chart.hideTooltip();
         }

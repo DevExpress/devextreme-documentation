@@ -18,9 +18,7 @@ The visual range becomes equal to the data range or the [whole range](/api-refer
 The visual range does not change.
 
 - *"auto"*      
-When the visual range is specified, the applied mode changes depending on the argument axis' [visualRangeUpdateMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode') at the moment when data is updated:
-    - if *"reset"*, then *"reset"*;
-    - if *"keep"*, then *"keep"*.
+When the visual range is specified, the applied mode is the same as the argument axis' [visualRangeUpdateMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode').
 
 - *"shift"*     
 The same as the *"auto"* mode.

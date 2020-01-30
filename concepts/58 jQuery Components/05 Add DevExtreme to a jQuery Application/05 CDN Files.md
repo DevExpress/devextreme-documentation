@@ -1,4 +1,4 @@
-Link DevExtreme scripts and stylesheets within the `<head>` tag on your index page. The order of the scripts and stylesheets is important. All CDN links are listed in the [CDN](/concepts/Common/Distribution%20Channels/05%20CDN '/Documentation/Guide/Common/Distribution_Channels/CDN/') article. Optionally, you can verify the files by adding [SRI hashes](/Documentation/Guide/Getting_Started/Installation/CDN_Services/#Subresource_Integrity_Hashes) to the links.
+Link DevExtreme scripts and stylesheets within the `<head>` tag on your index page. The order of the scripts and stylesheets is important. All CDN links are listed in the [CDN](/concepts/Common/Distribution%20Channels/05%20CDN '/Documentation/Guide/Common/Distribution_Channels/CDN/') article. Optionally, you can verify the files by adding [SRI hashes](/concepts/Common/Distribution%20Channels/05%20CDN/10%20Subresource%20Integrity%20Hashes.md '/Documentation/Guide/Common/Distribution_Channels/CDN/#Subresource_Integrity_Hashes') to the links.
 
     <!--HTML-->
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>

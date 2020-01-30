@@ -1,4 +1,4 @@
-You can install and configure DevExtreme and its dependencies with a single npx command that is part of the [DevExtreme CLI](/concepts/00%20Getting%20Started/50%20DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Getting_Started/DevExtreme_CLI/'):
+You can install and configure DevExtreme and its dependencies with a single npx command that is part of the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 
     npx -p devextreme-cli devextreme add devextreme-angular
 

@@ -29,9 +29,9 @@ All DevExtreme component suites, including Angular, share architecture and core 
 
 - [Themes and styles](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')
 
-- [Localization](/concepts/Common/33%20Localization '/Documentation/Guide/Common/Localization/')
+- [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/')
 
-- [Modularity](/concepts/Common/30%20Modularity/01%20Link%20Modules '/Documentation/Guide/Common/Modularity/Link_Modules/')
+- [Modularity](/concepts/Common/Modularity/01%20Link%20Modules '/Documentation/Guide/Common/Modularity/Link_Modules/')
 
 - [Customization using templates](/concepts/05%20Widgets/zz%20Common/30%20Templates '/Documentation/Guide/Widgets/Common/Templates/')
 

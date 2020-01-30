@@ -47,7 +47,7 @@ When a tooltip becomes shown or hidden, the **Chart** fires the [tooltipShown](/
 
 ---
 
-If you are going to change the event handlers at runtime or if you need to attach several handlers to a single event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#oneventName_eventHandler') method.  This approach is more typical of jQuery.
+If you are going to change the event handlers at runtime or if you need to attach several handlers to a single event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#oneventName_eventHandler') method.  This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var tooltipShownHandler1 = function (e) {

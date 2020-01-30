@@ -50,9 +50,15 @@ The widget also allows you to specify the following restrictions:
         </dxo-permissions>
         <!-- ... -->
     </dx-file-manager>
+
     <!-- tab: app.component.ts -->
     import { DxFileManagerModule } from 'devextreme-angular';
-    // ...
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         allowedFileExtensions: string[];
         
@@ -61,6 +67,24 @@ The widget also allows you to specify the following restrictions:
         }
         //...
     }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        //...
+    })
+    export class AppModule { }    
 
 ##### Vue
 
@@ -79,13 +103,16 @@ The widget also allows you to specify the following restrictions:
         </DxFileManager>
     </template>
     <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';    
+        
         import { DxFileManager, DxPermissions } from 'devextreme-vue/file-manager';
+
         export default {
             components: {
                 DxFileManager,
                 DxPermissions
             },
-
             data() {
                 return {
                     allowedFileExtensions,
@@ -108,10 +135,6 @@ The widget also allows you to specify the following restrictions:
     } from 'devextreme-react/file-manager';
     
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <FileManager allowedFileExtensions="['.txt', '.doc', '.png']" >
@@ -125,6 +148,163 @@ The widget also allows you to specify the following restrictions:
                         rename={true}
                         download={true} />
                 </FileManager>
+            );
+        }
+    }
+    export default App;
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name}>
+    </dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        constructor() {
+            
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            Dx{WidgetName}Module
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}>
+            
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        "!!!!USED COMPONENTS"
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            "!!!!USED COMPONENTS"
+        },
+        data() {
+            return {
+                
+            }
+        },
+        methods: {
+            
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        "!!!!USED COMPONENTS"
+    } from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <{WidgetName}>
+                    
+                </{WidgetName}>
             );
         }
     }

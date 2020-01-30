@@ -75,7 +75,6 @@ Each series point allows you to show or hide its tooltip programmatically. For t
                 let point = e.target;
                 point.showTooltip();
             },
-
             onPointHoverChanged (e) {
                 let point = e.target;
                 if (!point.isHovered()) {

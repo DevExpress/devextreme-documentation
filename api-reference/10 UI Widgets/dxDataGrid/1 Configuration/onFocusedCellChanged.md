@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.focusedCellChanged
 ---
 ---
 ##### shortDescription
-A function that is executed after the focused cell changes.
+A function that is executed after the focused cell changes. Applies only to cells in data or group rows.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -36,6 +36,7 @@ The row's properties.
 The index of the cell's row.
 
 ---
+
 #####See Also#####
 - [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowKey')
 - [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedColumnIndex')

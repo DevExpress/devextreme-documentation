@@ -6,7 +6,7 @@ EventForAction: dxTreeList.focusedCellChanging
 ---
 ---
 ##### shortDescription
-A function that is executed before the focused cell changes.
+A function that is executed before the focused cell changes. Applies only to cells in data rows.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

@@ -49,7 +49,9 @@ When a tooltip becomes shown or hidden, the **Chart** fires the [tooltipShown](/
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart @tooltip-shown="onTooltipShown" @tooltip-hidden="onTooltipHidden">
+        <DxChart ...
+            @tooltip-shown="onTooltipShown" 
+            @tooltip-hidden="onTooltipHidden">
         </DxChart>
     </template>
 

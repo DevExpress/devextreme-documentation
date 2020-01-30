@@ -38,7 +38,7 @@ All options configuring tooltips are collected in the [tooltip](/api-reference/2
         // ...
     })
 
-### Vue
+##### Vue
 
     <!-- tab: App.vue -->
     <template> 
@@ -134,7 +134,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **Chart*
         // ...
     })
 
-### Vue
+##### Vue
 
     <!-- tab: App.vue -->
     <template> 

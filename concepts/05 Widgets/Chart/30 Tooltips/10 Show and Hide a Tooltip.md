@@ -53,7 +53,7 @@ Each series point allows you to show or hide its tooltip programmatically. For t
         // ...
     })
 
-### Vue
+##### Vue
 
     <!-- tab: App.vue -->
     <template> 
@@ -152,7 +152,7 @@ You can also hide the tooltip regardless of the point to which it belongs. To do
     })
 
     
-### Vue
+##### Vue
 
     <!-- tab: App.vue -->
     <template> 

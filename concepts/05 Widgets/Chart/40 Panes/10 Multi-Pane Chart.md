@@ -325,7 +325,10 @@ If all panes in a multi-pane chart should have uniform settings, you can specify
     <template> 
         <DxChart ... >
             <DxCommonPaneSettings background-color="yellow">
-                <DxBorder :visible="true" :width="2"/>
+                <DxBorder 
+                    :visible="true" 
+                    :width="2"
+                />
             </DxCommonPaneSettings>
         </DxChart>
     </template>
@@ -359,7 +362,10 @@ If all panes in a multi-pane chart should have uniform settings, you can specify
             return (
                 <Chart ... >
                     <CommonPaneSettings backgroundColor="yellow">
-                        <Border visible={true} width={2}/>
+                        <Border 
+                            visible={true} 
+                            width={2}
+                        />
                     </CommonPaneSettings>
                 </Chart>
             );

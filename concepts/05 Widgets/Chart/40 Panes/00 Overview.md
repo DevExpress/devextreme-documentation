@@ -51,7 +51,10 @@ Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20W
     <template> 
         <DxChart ... >
             <DxPane background-color="yellow">
-                <DxBorder :visible="true" :width="2"/>
+                <DxBorder 
+                    :visible="true" 
+                    :width="2" 
+                />
             </DxPane>
         </DxChart>
     </template>
@@ -85,7 +88,10 @@ Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20W
             return (
                 <Chart ... >
                     <Pane backgroundColor="yellow">
-                        <Border visible={true} width={2}/>
+                        <Border 
+                            visible={true} 
+                            width={2} 
+                        />
                     </Pane>
                 </Chart>
             );

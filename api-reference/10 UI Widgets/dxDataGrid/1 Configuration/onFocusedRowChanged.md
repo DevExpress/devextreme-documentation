@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.focusedRowChanged
 ---
 ---
 ##### shortDescription
-A function that is executed after the focused row changes. Applies only when [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowEnabled') is **true**.
+A function that is executed after the focused row changes. Applies only to data or group rows. [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowEnabled') should be **true**.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

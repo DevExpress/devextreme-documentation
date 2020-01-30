@@ -188,6 +188,7 @@ You can also hide the tooltip regardless of the point to which it belongs. To do
         constructor(props) {
             super(props);
             this.chartRef = React.createRef();
+            this.hideTooltip = this.hideTooltip.bind(this);
         }
 
         render() {

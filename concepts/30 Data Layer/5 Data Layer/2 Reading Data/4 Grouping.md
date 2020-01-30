@@ -15,7 +15,7 @@ In some cases, you may need to group data by certain criteria. An item of a grou
         }
     ];
 
-The DevExtreme data layer ([DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and [Stores](/Documentation/Guide/Data_Layer/Data_Layer/#What_Are_Stores#What_Are_Stores)) supports grouping. The group expression syntax is identical to the [sort expression syntax](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/1%20Sorting.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Sorting').
+The DevExtreme data layer ([DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and [Stores](/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores#What_Are_Stores)) supports grouping. The group expression syntax is identical to the [sort expression syntax](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/1%20Sorting.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Sorting').
 
 Consider grouping on the following examples. Begin with the creation of a sample DataSource.
 
@@ -135,7 +135,7 @@ The loaded array looks like the following.
         }
     ]
 
-[Stores](/Documentation/Guide/Data_Layer/Data_Layer/#What_Are_Stores) support the same group expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
+[Stores](/concepts/30%20Data%20Layer/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same group expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
     <!--JavaScript-->var arrayStore = new DevExpress.data.ArrayStore(data);
     arrayStore

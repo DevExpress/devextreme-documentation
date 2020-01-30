@@ -50,6 +50,80 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Widgets/GridBase/1%20Config
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxEditing
+                :allow-updating="true"
+                mode="popup">
+                <DxForm
+                    label-location="top"
+                />
+                <DxPopup
+                    :show-title="true"
+                    title="Row in the editing state"
+                />
+            </DxEditing>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxEditing,
+        DxForm,
+        DxPopup
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxEditing,
+            DxForm,
+            DxPopup
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Editing,
+        Form,
+        Popup
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Editing
+                        allowUpdating={true}
+                        mode="popup">
+                        <Form
+                            labelLocation="top"
+                        />
+                        <Popup
+                            showTitle={true}
+                            title="Row in the editing state"
+                        />
+                    </Editing>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

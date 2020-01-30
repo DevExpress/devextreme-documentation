@@ -47,6 +47,82 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Config
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :data-source="dataGridDataSource"
+            :selected-row-keys="[1, 5, 18]">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+    import DataSource from 'devextreme/data/data_source';
+    import 'devextreme/data/array_store';
+    // or
+    // import 'devextreme/data/odata/store';
+    // import 'devextreme/data/custom_store';
+
+    const dataGridDataSource = new DataSource({
+        store: {
+            // ...
+            key: 'id'
+        }
+    });
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                dataGridDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+    import DataSource from 'devextreme/data/data_source';
+    import 'devextreme/data/array_store';
+    // or
+    // import 'devextreme/data/odata/store';
+    // import 'devextreme/data/custom_store';
+
+    const dataGridDataSource = new DataSource({
+        store: {
+            // ...
+            key: 'id'
+        }
+    });
+
+    class App extends React.Component {
+        selectedRowKeys = [1, 5, 18];
+
+        render() {
+            return (
+                <DataGrid ...
+                    dataSource={dataGridDataSource}
+                    defaultSelectedRowKeys={this.selectedRowKeys}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -105,6 +181,87 @@ The **DataGrid** provides two methods that select rows at runtime: [selectRows(k
     <dx-data-grid ...
         (onContentReady)="onContentReadyHandler($event)">
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :selected-row-keys.sync="selectedRowKeys"
+            @content-ready="selectFirstRow">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                selectedRowKeys: []
+            }
+        },
+        methods: {
+            selectFirstRow(e) {
+                const rowKey = e.component.getKeyByRowIndex(0);
+                this.selectedRowKeys.push(rowKey);
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                selectedRowKeys: []
+            }
+            this.selectFirstRow = this.selectFirstRow.bind(this);
+        	this.handleOptionChange = this.handleOptionChange.bind(this);
+        }
+
+        selectFirstRow(e) {
+            const rowKey = e.component.getKeyByRowIndex(0);
+            this.setState(prevState => ({
+                selectedRowKeys: [...prevState.selectedRowKeys, rowKey]
+            }));
+        }
+
+        handleOptionChange(e) {
+            if(e.fullName === 'selectedRowKeys') {
+                this.setState({
+                    selectedRowKeys: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    selectedRowKeys={this.state.selectedRowKeys}
+                    onContentReady={this.selectFirstRow}
+                    onOptionChanged={this.handleOptionChange}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -137,6 +294,79 @@ To select all rows at once, call the [selectAll()](/api-reference/10%20UI%20Widg
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = 'my-data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            selectAllRows() {
+                this.dataGrid.selectAll();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+    
+            this.selectAllRows = () => {
+                this.dataGrid.selectAll();
+            }
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    ref={this.dataGridRef}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -177,6 +407,85 @@ Call the [getSelectedRowKeys()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = 'my-data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            getSelectedRowKeys() {
+                return this.dataGrid.getSelectedRowKeys();
+            },
+            getSelectedRowsData() {
+                return this.dataGrid.getSelectedRowsData();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+    
+            this.getSelectedRowKeys = () => {
+                return this.dataGrid.getSelectedRowKeys();
+            }
+            this.getSelectedRowsData = () => {
+                return this.dataGrid.getSelectedRowsData();
+            }
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    ref={this.dataGridRef}>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
     
 ---
 

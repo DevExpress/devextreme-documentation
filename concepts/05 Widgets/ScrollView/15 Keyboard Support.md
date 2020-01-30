@@ -29,52 +29,6 @@ An end user can use the following keys to interact with the widget.
   </table>
 </div>
 
-You can implement a custom handler for a key using the [registerKeyHandler(key, handler)](/Documentation/ApiReference/UI_Widgets/dxScrollView/Methods/#registerKeyHandlerkey_handler) method.
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    function registerKeyHandlers () {
-        let scrollView =  $("#scrollViewContainer").dxScrollView("instance");
-        scrollView.registerKeyHandler("backspace", function (e) {
-            // The argument "e" contains information on the event
-        });
-        scrollView.registerKeyHandler("space", function (e) {
-            // ...
-        });
-    }
-    
-
-##### Angular
-
-    <!--TypeScript-->
-    import { ..., ViewChild, AfterViewInit } from "@angular/core";
-    import { DxScrollViewModule, DxScrollViewComponent } from "devextreme-angular";
-    // ...
-    export class AppComponent implements AfterViewInit {
-        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent
-        // Prior to Angular 8
-        // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent
-        ngAfterViewInit () {
-            this.scrollView.instance.registerKeyHandler("backspace", function (e) {
-                // The argument "e" contains information on the event
-            });
-            this.scrollView.instance.registerKeyHandler("space", function (e) {
-                // ...
-            });
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxScrollViewModule
-        ],
-        // ...
-    })
-
----
-
 #####See Also#####
 #include common-link-callmethods
 - [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview)

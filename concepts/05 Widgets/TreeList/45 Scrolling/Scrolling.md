@@ -93,7 +93,7 @@ The current platform determines the native scrolling settings and you cannot adj
                 useNative: false,
                 scrollByContent: true,
                 scrollByThumb: true,
-                showScrollbar: "onHover" // or "onClick" | "always" | "never"
+                showScrollbar: "onHover" // or "onScroll" | "always" | "never"
             }
         });
     });
@@ -106,7 +106,7 @@ The current platform determines the native scrolling settings and you cannot adj
             [useNative]="false"
             [scrollByContent]="true"
             [scrollByThumb]="true"
-            showScrollbar="onHover"> <!-- or "onClick" | "always" | "never" -->
+            showScrollbar="onHover"> <!-- or "onScroll" | "always" | "never" -->
         </dxo-scrolling>
     </dx-tree-list>
 

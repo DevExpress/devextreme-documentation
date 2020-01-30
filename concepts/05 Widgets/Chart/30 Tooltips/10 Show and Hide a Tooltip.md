@@ -70,7 +70,6 @@ Each series point allows you to show or hide its tooltip programmatically. For t
         components: {
             DxChart
         },
-
         methods: {
             onPointClick (e) {
                 let point = e.target;

@@ -22,7 +22,7 @@ When the visual range is specified, the applied mode changes depending on the ar
     - if *"reset"*, then *"reset"*;
     - if *"keep"*, then *"keep"*.
 
-- *"Shift"*     
+- *"shift"*     
 The same as the *"auto"* mode.
 
 #####See Also#####

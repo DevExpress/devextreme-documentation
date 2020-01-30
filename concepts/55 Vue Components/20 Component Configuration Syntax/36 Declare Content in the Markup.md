@@ -15,9 +15,9 @@ The following is an example with **ScrollView**:
 
     <!-- tab: App.vue -->
     <template>
-        <dx-scroll-view>
+        <DxScrollView>
             <div>Some scrollable content</div>
-        </dx-scroll-view>
+        </DxScrollView>
     </template>
 
     <script>

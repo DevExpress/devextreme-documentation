@@ -2,12 +2,12 @@ Use nested configuration components. In the following example, we configure the 
  
     <!-- tab: App.vue -->
     <template>
-        <dx-chart>
-            <dx-tooltip
+        <DxChart>
+            <DxTooltip
                 :enabled="true"
                 format="thousands"
             />
-        </dx-chart>
+        </DxChart>
     </template>
 
     <script>
@@ -27,11 +27,11 @@ Certain object type options are not implemented as nested configuration componen
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid>
-            <dx-column
+        <DxDataGrid>
+            <DxColumn
                 :editor-options="columnEditorOptions"
             />
-        </dx-data-grid>
+        </DxDataGrid>
     </template>
 
     <script>

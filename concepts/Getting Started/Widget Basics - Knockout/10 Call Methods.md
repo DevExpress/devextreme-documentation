@@ -1,4 +1,4 @@
-To call a widget method, you can apply techniques described in the [Call Methods](/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Call_Methods) topic for jQuery.
+To call a widget method, you can apply techniques described in the [Call Methods](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/10%20Call%20Methods.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Call_Methods') topic for jQuery.
 
 As an alternative, you can save the widget instance in a view model property once the widget is initialized...
 

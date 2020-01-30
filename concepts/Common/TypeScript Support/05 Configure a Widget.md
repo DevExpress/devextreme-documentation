@@ -24,7 +24,7 @@ The part that preceeds the type is its namespace. DevExtreme widgets are declare
 - `DevExpress.viz.map` - [dxVectorMap](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/')
 - `DevExpress.ui` - [all other widgets](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/')
 
-After you have declared a configuration object, pass it to the [jQuery plugin](/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Create_and_Configure_a_Widget) ...
+After you have declared a configuration object, pass it to the [jQuery plugin](/Documentation/20_1/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component) ...
 
     $("#chartContainer").dxChart(options);  
 

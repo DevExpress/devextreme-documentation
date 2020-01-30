@@ -18,7 +18,7 @@ The widget instance's name.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.items): Array<dxDiagramItem>
-An array of selected items ([DiagramShapes](/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/) or [DiagramConnectors](/Documentation/ApiReference/Common/Object_Structures/dxDiagramConnector/)).
+An array of selected items ([DiagramShapes](/api-reference/50%20Common/Object%20Structures/dxDiagramShape '/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/') or [DiagramConnectors](/api-reference/50%20Common/Object%20Structures/dxDiagramConnector '/Documentation/ApiReference/Common/Object_Structures/dxDiagramConnector/')).
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

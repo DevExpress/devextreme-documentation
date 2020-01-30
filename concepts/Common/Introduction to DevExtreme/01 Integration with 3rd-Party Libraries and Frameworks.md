@@ -1,6 +1,6 @@
 DevExtreme supports integration with client-side technologies and server-side frameworks:
 
-- [jQuery](/Documentation/Guide/Getting_Started/Widget_Basics_-_jQuery/Create_and_Configure_a_Widget/) versions 2.1 - 2.2 and 3.x
+- [jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component') versions 2.1 - 2.2 and 3.x
 - [Angular](/concepts/40%20Angular%20Components/00%20DevExtreme%20Angular%20Components.md '/Documentation/Guide/Angular_Components/DevExtreme_Angular_Components/') versions 6 and later
 - [Vue](/concepts/55%20Vue%20Components/00%20DevExtreme%20Vue%20Components.md '/Documentation/Guide/Vue_Components/DevExtreme_Vue_Components/') - versions 2.5.16 and later
 - React
@@ -15,4 +15,4 @@ You can integrate DevExtreme with other frameworks or use DevExtreme widgets wit
 
 DevExtreme also supplies TypeScript definitions if you want to use TypeScript syntax. 
 
-- [TypeScript Support](/Documentation/Guide/Getting_Started/TypeScript_Support/Reference_TypeScript_Definitions/) versions 2.4.2+
+- [TypeScript Support](/concepts/Common/TypeScript%20Support/01%20Reference%20TypeScript%20Definitions.md '/Documentation/Guide/Common/TypeScript_Support/Reference_TypeScript_Definitions/') versions 2.4.2+

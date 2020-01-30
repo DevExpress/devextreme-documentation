@@ -62,7 +62,7 @@ You can handle these events with functions. Assign the handling functions to the
 
 ---
 
-Otherwise (or if you need several handlers for a single event), subscribe to the export-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+Otherwise (or if you need several handlers for a single event), subscribe to the export-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var exportedHandler1 = function (e) {

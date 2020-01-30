@@ -52,7 +52,7 @@ The widget also allows you to specify the following restrictions:
     </dx-file-manager>
 
     <!-- tab: app.component.ts -->
-    import { DxFileManagerModule } from 'devextreme-angular';
+    import { Component } from '@angular/core';
 
     @Component({
         selector: 'app-root',
@@ -90,7 +90,7 @@ The widget also allows you to specify the following restrictions:
 
     <!-- tab: App.vue -->
     <template>
-        <DxFileManager :allowed-file-extensions="['.txt', '.doc', '.png']">   
+        <DxFileManager :allowed-file-extensions="allowedFileExtensions">   
             <DxUpload :max-file-size="1000000" />
             <DxPermissions
                 :create="true"
@@ -106,17 +106,21 @@ The widget also allows you to specify the following restrictions:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';    
         
-        import { DxFileManager, DxPermissions } from 'devextreme-vue/file-manager';
+        import {
+            DxFileManager,
+            DxPermissions,
+            DxUpload
+        } from 'devextreme-vue/file-manager';
 
         export default {
             components: {
                 DxFileManager,
-                DxPermissions
+                DxPermissions,
+                DxUpload
             },
             data() {
                 return {
-                    allowedFileExtensions,
-                    {/* ... */}
+                    allowedFileExtensions: ['.txt', '.doc', '.png']
                 };
             }            
         };
@@ -133,11 +137,12 @@ The widget also allows you to specify the following restrictions:
     import FileManager, { 
         Upload, Permissions 
     } from 'devextreme-react/file-manager';
+    const allowedFileExtensions = ['.txt', '.doc', '.png'];
     
     class App extends React.Component {
         render() {
             return (
-                <FileManager allowedFileExtensions="['.txt', '.doc', '.png']" >
+                <FileManager allowedFileExtensions={allowedFileExtensions}>
                     <Upload maxFileSize={1000000} />
                     <Permissions
                         create={true}

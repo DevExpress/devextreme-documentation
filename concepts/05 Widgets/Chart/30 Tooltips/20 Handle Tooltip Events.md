@@ -64,7 +64,7 @@ When a tooltip becomes shown or hidden, the **Chart** fires the [tooltipShown](/
         },
         methods: {
             onTooltipShown (e) {
-                let point = e.target;
+                const point = e.target;
                 // Handler of the "tooltipShown" event
             },
             onTooltipHidden (e) {

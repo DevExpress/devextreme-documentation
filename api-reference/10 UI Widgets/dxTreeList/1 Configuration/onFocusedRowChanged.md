@@ -6,7 +6,7 @@ EventForAction: dxTreeList.focusedRowChanged
 ---
 ---
 ##### shortDescription
-A function that executed when the focused row changes. Applies only to the data rows. [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowEnabled') should be **true**.
+A function that executed when the focused row changes. Applies only to data rows. [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowEnabled') should be **true**.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

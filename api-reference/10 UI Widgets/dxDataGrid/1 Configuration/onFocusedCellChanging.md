@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.focusedCellChanging
 ---
 ---
 ##### shortDescription
-A function that is executed before the focused cell changes. Applies only to the cells in the data or group rows.
+A function that is executed before the focused cell changes. Applies only to cells in data or group rows.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

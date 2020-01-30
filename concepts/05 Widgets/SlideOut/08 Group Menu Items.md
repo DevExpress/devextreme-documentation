@@ -1,4 +1,4 @@
-If you need to group menu items, group them in the data source as shown in the following code. The [key](/Documentation/ApiReference/UI_Widgets/dxSlideOut/Default_Item_Template/#key) property gives names to groups; the [items](/Documentation/ApiReference/UI_Widgets/dxSlideOut/Default_Item_Template/#items) property specifies menu items included in the group.
+If you need to group menu items, group them in the data source as shown in the following code. The [key](/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/items/#key) property gives names to groups; the [items](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/items.md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/items/') property specifies menu items included in the group.
 
     <!--JavaScript-->var groupedMenuItems = [{
         key: "Main",

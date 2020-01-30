@@ -4,7 +4,7 @@ The **ContextMenu** widget is not supposed to be opened programmatically, but ra
 - [ContextMenu - Overview](/concepts/05%20Widgets/ContextMenu/00%20Overview.md '/Documentation/Guide/Widgets/ContextMenu/Overview/')
 - [Button - Overview](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/')
 
-To open or close the **ContextMenu** from code, call the [show()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/hide().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#hide') method. You can do the same thing using the [toggle(showing)](/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#toggle) method. Pass **true** or **false** to this method to open or close the context menu, respectively.
+To open or close the **ContextMenu** from code, call the [show()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/hide().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#hide') method. You can do the same thing using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#toggleshowing') method. Pass **true** or **false** to this method to open or close the context menu, respectively.
 
     <!--JavaScript-->var contextMenuItems = [
         { text: "Zoom In", icon: "plus" },

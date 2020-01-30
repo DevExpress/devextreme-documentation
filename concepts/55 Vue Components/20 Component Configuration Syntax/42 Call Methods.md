@@ -3,8 +3,8 @@ To call widget methods, you need the widget instance. Define the target componen
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-text-box :ref="textBoxRefKey" />
-            <dx-button text="Focus TextBox" @click="focusTextBox" />
+            <DxTextBox :ref="textBoxRefKey" />
+            <DxButton text="Focus TextBox" @click="focusTextBox" />
         </div>
     </template>
 
@@ -42,10 +42,10 @@ Alternatively, you can save the widget instance in a component property once the
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-data-grid ...
+            <DxDataGrid ...
                 @initialized="saveGridInstance">
-            </dx-data-grid>
-            <dx-button text="Refresh data" @click="refresh"/>
+            </DxDataGrid>
+            <DxButton text="Refresh data" @click="refresh"/>
         </div>
     </template>
 

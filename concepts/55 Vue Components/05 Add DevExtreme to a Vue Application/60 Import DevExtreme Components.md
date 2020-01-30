@@ -2,7 +2,7 @@ Import the DevExtreme components you are going to use from specific modules. In 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-button
+        <DxButton
             text="Click me"
             @click="sayHelloWorld"
         />
@@ -27,12 +27,12 @@ Nested DevExtreme components should also be imported (`DxArgumentAxis`, `DxSerie
 
     <!-- tab: App.vue -->
     <template>
-        <dx-chart
+        <DxChart
             :data-source="data">
-            <dx-argument-axis :tick-interval="10" />
-            <dx-series type="bar" />
-            <dx-legend :visible="false" />
-        </dx-chart>
+            <DxArgumentAxis :tick-interval="10" />
+            <DxSeries type="bar" />
+            <DxLegend :visible="false" />
+        </DxChart>
     </template>
 
     <script>

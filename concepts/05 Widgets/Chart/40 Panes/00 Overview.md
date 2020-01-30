@@ -45,6 +45,55 @@ Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20W
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxPane background-color="yellow">
+                <DxBorder :visible="true" :width="2"/>
+            </DxPane>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxPane,
+        DxBorder
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxPane,
+            DxBorder
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Pane,
+        Border
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Pane backgroundColor="yellow">
+                        <Border visible={true} width={2}/>
+                    </Pane>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 For a multi-pane chart, the **panes** option accepts an array. For further details, refer to the [Multi-Pane Chart](/concepts/05%20Widgets/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/Widgets/Chart/Panes/Multi-Pane_Chart/') topic.

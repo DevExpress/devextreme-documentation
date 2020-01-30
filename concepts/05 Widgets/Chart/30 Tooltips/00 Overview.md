@@ -157,7 +157,6 @@ Options declared in the **tooltip** object apply to all tooltips in the **Chart*
             DxChart,
             DxTooltip
         },
-
         methods: {
             customizeTooltip (pointInfo) {
                 return pointInfo.value > 100 ? { color: "red" } : { };

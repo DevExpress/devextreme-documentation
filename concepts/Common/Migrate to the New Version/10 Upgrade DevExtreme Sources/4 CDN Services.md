@@ -1,0 +1,1 @@
+Replace the version in CDN links. Relevant links are listed in the [CDN Services](/Documentation/Guide/Getting_Started/Installation/CDN_Services/) article.

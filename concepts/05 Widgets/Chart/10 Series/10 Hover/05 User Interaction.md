@@ -56,6 +56,73 @@ Individual series settings override common settings.
         // ...
     })
 
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries ... >
+                <DxHoverStyle>
+                    <!-- high priority -->
+                </DxHoverStyle>
+            </DxSeries>
+            <DxCommonSeriesSettings ... >
+                <DxHoverStyle>
+                    <!-- low priority -->
+                </DxHoverStyle>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings,
+        DxHoverStyle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings,
+            DxHoverStyle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings,
+        HoverStyle
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <HoverStyle>
+                            <!-- high priority -->
+                        </HoverStyle>
+                    </Series>
+                    <CommonSeriesSettings ... >
+                        <HoverStyle>
+                            <!-- low priority -->
+                        </HoverStyle>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 To choose which series elements should be highlighted when a user pauses on a series, specify the **hoverMode** option. Just like **hoverStyle**, this option can be specified for all series in the **Chart** or for an individual series. Depending on the series type, the **hoverMode** option accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **hoverMode** option description.
@@ -103,6 +170,63 @@ To choose which series elements should be highlighted when a user pauses on a se
         ],
         // ...
     })
+
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries
+                type="bar"
+                hover-mode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->                
+            ></DxSeries>
+            <DxSeries
+                type="line"
+                hover-mode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series
+                        type="bar"
+                        hoverMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
+                    ></Series>
+                    <Series
+                        type="line"
+                        hoverMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

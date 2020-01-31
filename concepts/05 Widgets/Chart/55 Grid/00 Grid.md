@@ -73,6 +73,85 @@ Note that axis-specific settings override common settings.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis>
+                <DxGrid>
+                    <!-- high priority -->
+                </DxGrid>
+            </DxArgumentAxis>
+            <DxValueAxis>
+                <DxGrid>
+                    <!-- high priority -->
+                </DxGrid>
+            </DxValueAxis>
+            <DxCommonAxisSettings>
+                <DxGrid>
+                    <!-- low priority -->
+                </DxGrid>
+            </DxCommonAxisSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxGrid,
+        DxArgumentAxis,
+        DxValueAxis,
+        DxCommonAxisSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxGrid,
+            DxArgumentAxis,
+            DxValueAxis,
+            DxCommonAxisSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Grid,
+        ArgumentAxis,
+        ValueAxis,
+        CommonAxisSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis>
+                        <Grid>
+                            <!-- high priority -->
+                        </Grid>
+                    </ArgumentAxis>
+                    <ValueAxis>
+                        <Grid>
+                            <!-- high priority -->
+                        </Grid>
+                    </ValueAxis>
+                    <CommonAxisSettings>
+                        <Grid>
+                            <!-- low priority -->
+                        </Grid>
+                    </CommonAxisSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 [tags]chart, grid, minor grid, grid lines

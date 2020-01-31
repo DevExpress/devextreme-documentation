@@ -88,13 +88,14 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             BrowserModule,
             DxGanttModule
         ],
+        providers: [Service],
         declarations: [AppComponent],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
 
     <!-- tab: app.service.ts -->
-    let resources: Resource[] = [{
+    const resources: Resource[] = [{
         'resourceId': 1,
         'title': 'Management'
     },
@@ -113,7 +114,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     <template>
         <DxGantt ... >
             <DxResources 
-                :data-source="resourcesDataSource"
+                :data-source="resources"
                 key-expr="resourceId"
                 text-expr="title" />
             <!-- ... -->

@@ -85,7 +85,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     import { Service, ResourceAssignment, ... } from './app.service';
 
     <!-- tab: app.service.ts -->
-    let resourceAssignments: ResourceAssignment[] = [{
+    const resourceAssignments: ResourceAssignment[] = [{
         'key': 0,
         'taskKey': 3,
         'resourceKey': 1
@@ -105,7 +105,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     <template>
         <DxGantt ... >
             <DxResourceAssignments 
-                :data-source="resourceAssignmentsDataSource"
+                :data-source="resourceAssignments"
                 key-expr="key"
                 resource-id-expr="resourceKey"
                 task-id-expr="taskKey" />
@@ -175,7 +175,6 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
                         keyExpr="key"
                         resourceIdExpr="resourceKey" 
                         taskIdExpr="taskKey" />
-                    // ...
                 </Gantt>
             );
         }

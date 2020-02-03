@@ -225,7 +225,8 @@ Note that in [batch mode](/concepts/05%20Widgets/DataGrid/20%20Editing/10%20User
             );
         }
     }
-    export default App;    
+    export default App;   
+     
 ---
 
 #####See Also#####

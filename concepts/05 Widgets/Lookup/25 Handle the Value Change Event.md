@@ -96,7 +96,7 @@ To process a new **Lookup** value, you need to handle the value change event. If
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/EventHandling/"
 }
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxLookup/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxLookup/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var valueChangedHandler1 = function (e) {

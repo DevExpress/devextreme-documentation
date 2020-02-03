@@ -1,0 +1,1 @@
+All operations with widget options are carried out using the **option()** method. You can use it to do the following.

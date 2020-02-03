@@ -5,7 +5,7 @@ export: cancel
 ---
 ---
 ##### shortDescription
-Cancels an animation frame request scheduled with the [requestAnimationFrame](/Documentation/ApiReference/Common/Utils/#requestAnimationFramecallback) method.
+Cancels an animation frame request scheduled with the [requestAnimationFrame](/api-reference/50%20Common/utils/utils/requestAnimationFrame(callback).md '/Documentation/ApiReference/Common/Utils/utils/#requestAnimationFramecallback') method.
 
 ##### param(requestID): Number
 The identifier returned by **requestAnimationFrame** method.

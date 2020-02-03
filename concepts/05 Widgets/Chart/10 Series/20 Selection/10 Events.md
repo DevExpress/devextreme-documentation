@@ -29,13 +29,13 @@ When a user selects a series, the **Chart** fires the [seriesSelectionChanged](/
     // ...
     export class AppComponent {
         onSeriesSelectionChanged (e) {
-            let series = e.target;
+            const series = e.target;
             if (series.isSelected()) {
                 // Commands to execute when the series is selected
             } else {
                 // Commands to execute when the selection is cleared
             }
-        };
+        }
     }
     @NgModule({
         imports: [
@@ -45,9 +45,67 @@ When a user selects a series, the **Chart** fires the [seriesSelectionChanged](/
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @series-selection-changed="onSeriesSelectionChanged"
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onSeriesSelectionChanged (e) {
+                const series = e.target;
+                if (series.isSelected()) {
+                    // Commands to execute when the series is selected
+                } else {
+                    // Commands to execute when the selection is cleared
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onSeriesSelectionChanged={onSeriesSelectionChanged}
+                >
+                </Chart>
+            );
+        }
+    }
+
+    function onSeriesSelectionChanged (e) {
+        const series = e.target;
+        if (series.isSelected()) {
+            // Commands to execute when the series is selected
+        } else {
+            // Commands to execute when the selection is cleared
+        }
+    }
+
+    export default App;
+
 ---
 
-If you are going to change the event handler at runtime or if you need to attach several handlers to the **seriesSelectionChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change the event handler at runtime or if you need to attach several handlers to the **seriesSelectionChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var seriesSelectionChangedHandler1 = function (e) {

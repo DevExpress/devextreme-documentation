@@ -1,6 +1,6 @@
 If you are starting a project from scratch, use the <a href="https://github.com/DevExpress/devextreme-angular-template#devextreme-angular-template" target="_blank">DevExtreme Angular Template</a>. It is a simple application with a navigation menu and several sample views in a responsive layout.
 
-You can generate the application with the [DevExtreme CLI](/concepts/00%20Getting%20Started/50%20DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Getting_Started/DevExtreme_CLI/'):
+You can generate the application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 
     npx -p devextreme-cli devextreme new angular-app app-name
     cd app-name
@@ -55,4 +55,4 @@ The following resources provide more information about DevExtreme Angular compon
 
 - [Component Configuration Syntax](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/')
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light)
-- [API Reference](/Documentation/ApiReference/)
+- [API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/')

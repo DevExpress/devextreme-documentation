@@ -19,4 +19,4 @@ The default currency. Accepts a 3-letter <a href="https://www.currency-iso.org/e
     });
 
 #####See Also#####
-- [Localization](/concepts/Common/33%20Localization '/Documentation/Guide/Common/Localization/')
+- [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/')

@@ -1,6 +1,6 @@
 If you are starting a project from scratch, use the <a href="https://github.com/DevExpress/devextreme-react-template#devextreme-react-template" target="_blank">DevExtreme React Template</a>. It is a simple application with a navigation menu and several sample views in a responsive layout.
 
-You can generate the application with the [DevExtreme CLI](/concepts/00%20Getting%20Started/50%20DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Getting_Started/DevExtreme_CLI/'):
+You can generate the application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 
     npx -p devextreme-cli devextreme new react-app app-name
     cd app-name
@@ -21,4 +21,4 @@ The following resources provide more information about DevExtreme React componen
 
 - [Component Configuration Syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/')
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/React/Light)
-- [API Reference](/Documentation/ApiReference/)
+- [API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/')

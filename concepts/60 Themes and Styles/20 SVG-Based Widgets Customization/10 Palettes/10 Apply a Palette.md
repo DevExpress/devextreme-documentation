@@ -61,13 +61,15 @@ Every widget that supports palettes has a [palette](/api-reference/20%20Data%20V
     import React from 'react';
     import { PieChart } from 'devextreme-react/pie-chart';
 
+    const customPalette = ['#60a69f', '#78b6d9', '#6682bb', '#a37182', '#eeba69'];
+
     class App extends React.Component {
         render() {
             return (
                 <PieChart ...
                     palette="Harmony Light">
-                    // ===== or custom colors =====
-                    // palette={['#60a69f', '#78b6d9', '#6682bb', '#a37182', '#eeba69']}>
+                    {/* ===== or custom colors ===== */}
+                    {/* palette={customPalette}> */}
                 </PieChart>
             );
         }
@@ -418,8 +420,12 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
         CommonSeriesSettings
     } from 'devextreme-react/range-selector';
 
-
     const worldMap = mapsData.world;
+    const rangeSelectorData = [
+        { arg: 'A', val1: 1, val2: 3 },
+        { arg: 'B', val1: 5, val2: 5 },
+        { arg: 'C', val1: 10, val2: 7 }
+    ];
 
     class App extends React.Component {
         render() {
@@ -438,11 +444,7 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
                     </VectorMap>
 
                     <RangeSelector
-                        dataSource={[
-                            { arg: 'A', val1: 1, val2: 3 },
-                            { arg: 'B', val1: 5, val2: 5 },
-                            { arg: 'C', val1: 10, val2: 7 }
-                        ]}>
+                        dataSource={rangeSelectorData}>
                         <Chart palette="Soft Pastel">
                             <CommonSeriesSettings type="bar" argumentField="arg" />
                             <Series valueField="val1" />

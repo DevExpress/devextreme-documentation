@@ -18,9 +18,8 @@ Gets all series of the **Chart**.
             @ViewChild(DxChartComponent, { static: false }) chart: DxChartComponent;
             // Prior to Angular 8
             // @ViewChild(DxChartComponent) chart: DxChartComponent;
-            seriesCollection: any = [];
             getAllSeries() {
-                this.seriesCollection = this.chart.instance.getAllSeries();
+                return this.chart.instance.getAllSeries();
             }
         }
         @NgModule({
@@ -30,6 +29,56 @@ Gets all series of the **Chart**.
             ],
             // ...
         })
+
+    
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ref="chart">
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                getAllSeries () {
+                    return this.$refs.chart.instance.getAllSeries();
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.chartRef = React.createRef();
+            }
+            render() {
+                return (
+                    <Chart ref={this.chartRef}></Chart>
+                );
+            }
+            get chart() {
+                return this.chartRef.current.instance;
+            }
+            getAllSeries () {
+                return this.chart.getAllSeries();
+            }
+        }
+
+        export default App;
 
     ---
 
@@ -51,9 +100,8 @@ Gets a series by its [name](/api-reference/20%20Data%20Visualization%20Widgets/d
             @ViewChild(DxChartComponent, { static: false }) chart: DxChartComponent;
             // Prior to Angular 8
             // @ViewChild(DxChartComponent) chart: DxChartComponent;
-            series: any = {};
-            getSeries() {
-                this.series = this.chart.instance.getSeriesByName("Series 1");
+            getSeriesByName(seriesName) {
+                return this.chart.instance.getSeriesByName(seriesName);
             }
         }
         @NgModule({
@@ -63,6 +111,56 @@ Gets a series by its [name](/api-reference/20%20Data%20Visualization%20Widgets/d
             ],
             // ...
         })
+
+        
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ref="chart">
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                getSeriesByName (seriesName) {
+                    return this.$refs.chart.instance.getSeriesByName(seriesName);
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.chartRef = React.createRef();
+            }
+            render() {
+                return (
+                    <Chart ref={this.chartRef}></Chart>
+                );
+            }
+            get chart() {
+                return this.chartRef.current.instance;
+            }
+            getSeriesByName (seriesName) {
+                return this.chart.getSeriesByName(seriesName);
+            }
+        }
+
+        export default App;
 
     ---
 
@@ -84,9 +182,8 @@ Gets a series by its index in the [series](/api-reference/20%20Data%20Visualizat
             @ViewChild(DxChartComponent, { static: false }) chart: DxChartComponent;
             // Prior to Angular 8
             // @ViewChild(DxChartComponent) chart: DxChartComponent;
-            series: any = {};
-            getSeries() {
-                this.series = this.chart.instance.getSeriesByPos(0);
+            getSeriesByPos(seriesIndex) {
+                return this.chart.instance.getSeriesByPos(seriesIndex);
             }
         }
         @NgModule({
@@ -96,6 +193,55 @@ Gets a series by its index in the [series](/api-reference/20%20Data%20Visualizat
             ],
             // ...
         })
+
+        ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ref="chart">
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                getSeriesByPos(seriesIndex) {
+                    return this.$refs.chart.instance.getSeriesByPos(seriesIndex);
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.chartRef = React.createRef();
+            }
+            render() {
+                return (
+                    <Chart ref={this.chartRef}></Chart>
+                );
+            }
+            get chart() {
+                return this.chartRef.current.instance;
+            }
+            getSeriesByPos(seriesIndex) {
+                return this.chart.getSeriesByPos(seriesIndex);
+            }
+        }
+
+        export default App;
 
     ---
 
@@ -137,6 +283,52 @@ Apart from the API methods, you can access a series in the event handlers. For e
         ],
         // ...
     })
+    
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart @series-click="onSeriesClick">
+            </DxChart>
+        </template>
+
+        <script>
+        import DxChart from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart
+            },
+            methods: {
+                onSeriesClick (e) {
+                    const series = e.target;
+                    // ...
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart from 'devextreme-react/chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <Chart onSeriesClick={onSeriesClick}>
+                    </Chart>
+                );
+            }
+        }
+
+        function onSeriesClick (e) {
+            const series = e.target;
+            // ...
+        }
+
+        export default App;
 
 ---
 

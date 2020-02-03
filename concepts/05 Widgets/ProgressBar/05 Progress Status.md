@@ -19,7 +19,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
          });
     });
 
-[note]If you are going to use Globalize format patterns, [reference the Globalize scripts](/Documentation/Guide/Getting_Started/Installation/Local_Scripts/#GlobalizeLocalScripts) on your page.
+[note]If you are going to use Globalize format patterns, [reference the Globalize scripts](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') on your page.
 
 #####See Also#####
 - [ProgressBar - Handle the Value Change Event](/concepts/05%20Widgets/ProgressBar/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/ProgressBar/Handle_the_Value_Change_Event')

@@ -8,7 +8,7 @@ type: String
 Specifies which editor widget is used to display and edit the form item value.
 
 ---
-[important]If you use [DevExtreme modules](/concepts/Common/30%20Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when specifying this option. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"* because the **Form** widget imports them automatically when creating form items. 
+[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when specifying this option. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"* because the **Form** widget imports them automatically when creating form items. 
 
 [note] At this time, the [*"dxHtmlEditor"*](/api-reference/10%20UI%20Widgets/dxHtmlEditor '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/') widget is available as a community technology preview (CTP) version. We do not recommend that you use it in production environments because of possible implementation issues and a high chance of breaking changes in subsequent versions.
 

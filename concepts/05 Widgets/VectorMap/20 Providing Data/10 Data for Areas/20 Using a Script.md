@@ -9,7 +9,7 @@ DevExtreme is shipped with a number of predefined data sources for the **VectorM
 
 [note] Built-in maps were not created by DevExpress. They were taken from a <a href="http://www.naturalearthdata.com/" target="_blank">free map data provider</a> and converted to the **VectorMap** format with the **parse()** method. Refer to the [Using a Binary Source](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/40%20Using%20a%20Binary%20Source/10%20Using%20a%20Binary%20Source.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Binary_Source') section to learn how to display a custom map with the **VectorMap** widget.
 
-To use one of these sources on your map, reference the corresponding file in the head of your HTML document. Note that this file should be referenced after the ChartJS library file (see topics in the [Installation](/concepts/00%20Getting%20Started/01%20Installation/10%20Local%20Scripts.md '/Documentation/Guide/Getting_Started/Installation/Local_Scripts/') section).
+To use one of these sources on your map, reference the corresponding file in the head of your HTML document. Note that this file should be referenced after the ChartJS library file (see topics in the [Installation](/concepts/Common/Distribution%20Channels/15%20ZIP%20Archive.md '/Documentation/Guide/Common/Distribution_Channels/ZIP_Archive/') section).
 
 	<!--HTML--><!DOCTYPE html>
 	  <html>
@@ -30,7 +30,7 @@ Alternatively, the same data sources can be accessed and referenced using the De
 	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/vectormap-data/europe.js"></script>
 	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/vectormap-data/usa.js"></script>
 
-After that, set the [data](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#data) option for a layer to the array defined in the referenced file.
+After that, set the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataSource') option for a layer to the array defined in the referenced file.
 
 	<!--JavaScript-->var vectorMapCfg = {
         // ...

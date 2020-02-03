@@ -26,6 +26,33 @@ You can switch a series into the hover state by calling its [hover()](/api-refer
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+
+    <script>
+    export default {
+        methods: {
+            toggleSeriesHoverState (series) {
+                !series.isHovered() ? series.hover() : series.clearHover();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    class App extends React.Component {
+        toggleSeriesHoverState (series) {
+            !series.isHovered() ? series.hover() : series.clearHover();
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

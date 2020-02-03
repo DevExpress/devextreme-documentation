@@ -180,7 +180,7 @@ To choose which series elements should be highlighted when a user pauses on a se
             <DxSeries
                 type="bar"
                 hover-mode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->                
-            ></DxSeries>
+            />
             <DxSeries
                 type="line"
                 hover-mode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
@@ -216,7 +216,7 @@ To choose which series elements should be highlighted when a user pauses on a se
                     <Series
                         type="bar"
                         hoverMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-                    ></Series>
+                    />
                     <Series
                         type="line"
                         hoverMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->

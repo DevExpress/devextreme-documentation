@@ -280,7 +280,7 @@ By default, only a single series can be in the selected state at a time. If you 
     </template>
 
     <script>
-    import DxChart, from 'devextreme-vue/chart';
+    import DxChart from 'devextreme-vue/chart';
 
     export default {
         components: {
@@ -293,7 +293,7 @@ By default, only a single series can be in the selected state at a time. If you 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, from 'devextreme-react/chart';
+    import Chart from 'devextreme-react/chart';
 
     class App extends React.Component {
         render() {

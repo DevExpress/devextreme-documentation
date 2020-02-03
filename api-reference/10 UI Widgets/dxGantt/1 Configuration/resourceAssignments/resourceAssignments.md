@@ -17,7 +17,7 @@ Resource assignments define relationship between tasks and resources.
 Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resourceAssignments/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/#dataSource') option to bind the widget to a data source, which contains resource assignments. If the field names in your data source differ from the 'id', 'resourceId' and 'taskId' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resourceAssignments/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/#keyExpr'), [resourceIdExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resourceAssignments/resourceIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/#resourceIdExpr') and/or [taskIdExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resourceAssignments/taskIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/#taskIdExpr') options to map data fields.
 
 #####See Also#####
-- [Bind to File Systems](concept/05%20Widgets/File%20Manager/10%20Bind%20to%20File%20Systems/Bind%20to%20File%20Systems.md 'Documentation/Guide/Widgets/File_Manager/Bind_to_File_Systems/')
+- [Gantt Elements - Resources](concept/05%20Widgets/Gantt/10%20Gantt%20Elements/30%20Resource.md 'Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Resource')
 
 ---
 
@@ -84,7 +84,25 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     import { DxGanttModule } from 'devextreme-angular';
     import { Service, ResourceAssignment, ... } from './app.service';
 
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxGanttModule
+        ],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
     <!-- tab: app.service.ts -->
+    import { Injectable } from '@angular/core';
+    
+    export class ResourceAssignment {
+        id: number;
+        taskId: number;
+        resourceId: number;
+    }
+
     const resourceAssignments: ResourceAssignment[] = [{
         'key': 0,
         'taskKey': 3,

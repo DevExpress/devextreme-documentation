@@ -20,7 +20,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
 
 #####See Also#####
 - [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources')
-- [Bind to File Systems](concept/05%20Widgets/File%20Manager/10%20Bind%20to%20File%20Systems/Bind%20to%20File%20Systems.md 'Documentation/Guide/Widgets/File_Manager/Bind_to_File_Systems/')
+- [Gantt Elements - Resources](concept/05%20Widgets/Gantt/10%20Gantt%20Elements/30%20Resource.md 'Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Resource')
 
 ---
 
@@ -95,6 +95,13 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     export class AppModule { }
 
     <!-- tab: app.service.ts -->
+    import { Injectable } from '@angular/core';
+    
+    export class Resource {
+        id: number;
+        text: string;
+    }
+    
     const resources: Resource[] = [{
         'resourceId': 1,
         'title': 'Management'

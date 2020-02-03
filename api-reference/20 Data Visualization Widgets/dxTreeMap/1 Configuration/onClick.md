@@ -72,6 +72,53 @@ This function is often used to implement item selection as shown in the followin
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeMap ...
+            @click="selectItem">
+        </DxTreeMap>
+    </template>
+
+    <script>
+    import DxTreeMap from 'devextreme-vue/tree-map';
+
+    export default {
+        components: {
+            DxTreeMap
+        },
+        methods: {
+            selectItem (e) {
+                e.node.select(!e.node.isSelected())
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import TreeMap from 'devextreme-react/tree-map';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeMap ...
+                    onClick={selectItem}>
+                </TreeMap>
+            );
+        }
+
+        selectItem (e) {
+            e.node.select(!e.node.isSelected())
+        }
+    }
+
+    export default App;
+
 ---
 
 To identify whether the clicked node is a single tile or a group of tiles, use the node's [isLeaf()](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/6%20Node/3%20Methods/isLeaf().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Node/Methods/#isLeaf') method.

@@ -12,7 +12,7 @@ A function that is executed when a [legend item](/concepts/05%20Widgets/Chart/35
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): Chart
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -57,7 +57,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     import { DxChartModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        chart_onLegendClick (e) {
+        onLegendClick (e) {
             e.event.cancel = true;
         }
     }
@@ -70,8 +70,55 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     })
 
     <!--HTML--><dx-chart ...
-        (onLegendClick)="chart_onLegendClick($event)">
+        (onLegendClick)="onLegendClick($event)">
     </dx-chart>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxChart ...
+            @legend-click="onLegendClick">
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onLegendClick (e) {
+                e.event.cancel = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    onLegendClick={onLegendClick}>
+                </Chart>
+            );
+        }
+
+        onLegendClick (e) {
+            e.event.cancel = true;
+        }
+    }
+
+    export default App;
 
 ---
 

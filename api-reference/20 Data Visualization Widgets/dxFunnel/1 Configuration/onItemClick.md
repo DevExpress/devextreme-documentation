@@ -72,6 +72,53 @@ This function is often used to implement item selection as shown in the followin
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFunnel ...
+            @item-click="selectItem">
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            selectItem (e) {
+                e.item.select(!e.item.isSelected())
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ...
+                    onItemClick={selectItem}>
+                </Funnel>
+            );
+        }
+
+        selectItem (e) {
+            e.item.select(!e.item.isSelected())
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

@@ -73,6 +73,53 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarCh
         (onLegendClick)="polarChart_onLegendClick($event)">
     </dx-polar-chart>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPolarChart ...
+            @legend-click="onLegendClick">
+        </DxPolarChart>
+    </template>
+
+    <script>
+    import DxPolarChart from 'devextreme-vue/polar-chart';
+
+    export default {
+        components: {
+            DxPolarChart
+        },
+        methods: {
+            onLegendClick (e) {
+                e.event.cancel = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import PolarChart from 'devextreme-react/polar-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PolarChart ...
+                    onLegendClick={onLegendClick}>
+                </PolarChart>
+            );
+        }
+
+        onLegendClick (e) {
+            e.event.cancel = true;
+        }
+    }
+
+    export default App;
+
 ---
 
 [/note]

@@ -57,6 +57,55 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxChart ... >
+            <DxArgumentAxis 
+                :categories="['Africa', 'Antarctica', 'Asia', 'Australia',
+                'Europe', 'North America', 'South America']" 
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        categories={['Africa', 'Antarctica', 'Asia', 'Australia',
+                        'Europe', 'North America', 'South America']}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;     
+
 ---
 
 [note]Arguments missing from the **categories** array will be added to its end automatically.

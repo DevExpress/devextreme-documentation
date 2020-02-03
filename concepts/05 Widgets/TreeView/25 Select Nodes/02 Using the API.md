@@ -135,3 +135,7 @@ To select or cancel the selection of all nodes programmatically, call the [selec
 [note]This API allows to get or set selected items for the loaded nodes only. So, in case of the [virtual mode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/virtualMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#virtualMode') or the [createChildren option](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/createChildren.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#createChildren'), the not yet loaded nodes will be not affected. If it is necessary to select not loaded nodes, refer to the [TreeList](/concepts/05%20Widgets/TreeList/50%20Selection/20%20API/API.md '/Documentation/Guide/Widgets/TreeList/Selection/#API') widget.
 
 Also, if the [searchEnabled](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#searchEnabled') option is enabled, then this method allows to select only nodes, that satisfy the searched text. Hidden nodes, that doesn't satisfy the search text will be ignored.
+
+--
+#####See Also#####
+- [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick')

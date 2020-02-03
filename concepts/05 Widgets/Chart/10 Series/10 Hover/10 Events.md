@@ -29,13 +29,13 @@ When a user pauses on a series, the **Chart** fires the [seriesHoverChanged](/ap
     // ...
     export class AppComponent {
         onSeriesHoverChanged (e) {
-            let series = e.target;
+            const series = e.target;
             if (series.isHovered()) {
                 // Commands to execute when the series is hovered over
             } else {
                 // Commands to execute when the series is hovered out
             }
-        };
+        }
     }
 	@NgModule({
         imports: [
@@ -44,6 +44,64 @@ When a user pauses on a series, the **Chart** fires the [seriesHoverChanged](/ap
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @series-hover-changed="onSeriesHoverChanged"
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onSeriesHoverChanged (e) {
+                const series = e.target;
+                if (series.isHovered()) {
+                    // Commands to execute when the series is hovered over
+                } else {
+                    // Commands to execute when the series is hovered out
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onSeriesHoverChanged={onSeriesHoverChanged}
+                >
+                </Chart>
+            );
+        }
+    }
+
+    function onSeriesHoverChanged (e) {
+        const series = e.target;
+        if (series.isHovered()) {
+            // Commands to execute when the series is hovered over
+        } else {
+            // Commands to execute when the series is hovered out
+        }
+    }
+
+    export default App;
 
 ---
 

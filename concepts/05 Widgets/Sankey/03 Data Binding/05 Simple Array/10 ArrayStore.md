@@ -70,7 +70,7 @@ You can place a JavaScript array in an [ArrayStore](/api-reference/30%20Data%20L
 
 ---
 
-The **DataSource** can also be used for data processing. In the following example, it is used to [map](/Documentation/Guide/Data_Layer/Data_Layer/#Data_Layer_Data_Layer_Reading_Data_Data_Transformation_Item_Mapping) an array of arrays provided originally to a **Sankey**-supported array of objects:
+The **DataSource** can also be used for data processing. In the following example, it is used to [map](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/1%20Item%20Mapping.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping') an array of arrays provided originally to a **Sankey**-supported array of objects:
 
 ---
 ##### jQuery

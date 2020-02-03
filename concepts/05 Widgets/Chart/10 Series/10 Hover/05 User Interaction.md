@@ -183,8 +183,8 @@ To choose which series elements should be highlighted when a user pauses on a se
             />
             <DxSeries
                 type="line"
-                hover-mode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
-            </DxSeries>
+                hover-mode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
+            />
         </DxChart>
     </template>
 
@@ -219,8 +219,8 @@ To choose which series elements should be highlighted when a user pauses on a se
                     />
                     <Series
                         type="line"
-                        hoverMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
-                    </Series>
+                        hoverMode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
+                    />
                 </Chart>
             );
         }

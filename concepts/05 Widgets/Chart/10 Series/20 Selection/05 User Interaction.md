@@ -181,11 +181,11 @@ To choose which series elements should be highlighted when a user selects a seri
             <DxSeries
                 type="bar"
                 selection-mode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->                
-            ></DxSeries>
+            />
             <DxSeries
                 type="line"
-                selection-mode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
-            </DxSeries>
+                selection-mode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
+            />
         </DxChart>
     </template>
 
@@ -217,11 +217,11 @@ To choose which series elements should be highlighted when a user selects a seri
                     <Series
                         type="bar"
                         selectionMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-                    ></Series>
+                    />
                     <Series
                         type="line"
-                        selectionMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
-                    </Series>
+                        selectionMode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
+                    />
                 </Chart>
             );
         }

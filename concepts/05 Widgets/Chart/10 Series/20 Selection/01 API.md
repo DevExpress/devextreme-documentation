@@ -29,13 +29,13 @@ The selection capability is not provided out of the box, but it can be implement
     // ...
     export class AppComponent {
         onSeriesClick (e) {
-            let series = e.target;
+            const series = e.target;
             if (series.isSelected()) {
                 series.clearSelection();
             } else {
                 series.select();
             }
-        };
+        }
     }
     @NgModule({
         imports: [
@@ -44,6 +44,64 @@ The selection capability is not provided out of the box, but it can be implement
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @series-click="onSeriesClick"
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onSeriesClick (e) {
+               const series = e.target;
+               if (series.isSelected()) {
+                   series.clearSelection();
+               } else {
+                   series.select();
+               }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onSeriesClick={onSeriesClick}
+                >
+                </Chart>
+            );
+        }
+    }
+
+    function onSeriesClick (e) {
+        const series = e.target;
+        if (series.isSelected()) {
+            series.clearSelection();
+        } else {
+            series.select();
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -78,13 +136,13 @@ There are series that consist of points only, for example, [bar](/concepts/05%20
     // ...
     export class AppComponent {
         onPointClick (e) {
-            let series = e.target.series;
+            const series = e.target.series;
             if (series.isSelected()) {
                 series.clearSelection();
             } else {
                 series.select();
             }
-        };
+        }
     }
     @NgModule({
         imports: [
@@ -93,6 +151,64 @@ There are series that consist of points only, for example, [bar](/concepts/05%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            @point-click="onPointClick"
+        >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onPointClick (e) {
+                const series = e.target.series;
+                if (series.isSelected()) {
+                    series.clearSelection();
+                } else {
+                    series.select();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    onPointClick={onPointClick}
+                >
+                </Chart>
+            );
+        }
+    }
+
+    function onPointClick (e) {
+        const series = e.target.series;
+        if (series.isSelected()) {
+            series.clearSelection();
+        } else {
+            series.select();
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -124,6 +240,55 @@ In the previous code examples, selection was cleared of a specific series. If yo
         ],
         // ...
     })
+
+##### Vue
+
+       <!-- tab: App.vue -->
+       <template> 
+           <DxChart ref="chart">
+           </DxChart>
+       </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            clearSelection () {
+                return this.$refs.chart.instance.clearSelection();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.chartRef = React.createRef();
+        }
+        render() {
+            return (
+                <Chart ref={this.chartRef}></Chart>
+            );
+        }
+        get chart() {
+            return this.chartRef.current.instance;
+        }
+        clearSelection () {
+            return this.chart.clearSelection();
+        }
+    }
+
+    export default App;
 
 ---
 

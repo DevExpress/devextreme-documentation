@@ -34,7 +34,7 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
                     'Asia', 
                     'Australia',
                     'Europe'
-                ];
+                ]
             }
         });
     });

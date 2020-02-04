@@ -129,7 +129,7 @@ One or several aggregated data objects. Should have the same structure as the or
             return (
                 <Chart ... >
                     <Series ... >
-                        <DxAggregation>
+                        <Aggregation
                             calculate={this.customAggregateFunc}
                         />
                     </Series>

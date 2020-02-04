@@ -76,4 +76,74 @@ One or several aggregated data objects. Should have the same structure as the or
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxChart ... >
+            <DxSeries ... >
+                <DxAggregation
+                    :calculate="customAggregateFunc"
+                />
+            </DxSeries ... >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxAggregation
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxAggregation
+        },
+        methods: {
+            customAggregateFunc (aggregationInfo, series) {
+                let dataObjects = aggregationInfo.data;
+                let result = { }; // or [ ]
+                // ...
+                // Aggregate the data objects here
+                // ...
+                return result;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <DxAggregation>
+                            calculate={customAggregateFunc}
+                        />
+                    </Series ... >
+                </Chart>
+            );
+        }
+
+        customAggregateFunc (aggregationInfo, series) {
+            let dataObjects = aggregationInfo.data;
+            let result = { }; {/* or [ ] */}
+
+            {/* Aggregate the data objects here */}
+            
+            return result;
+        }
+    }
+
+    export default App;
+
 ---

@@ -12,7 +12,7 @@ A function that is executed when a [legend item](/concepts/05%20Widgets/Chart/35
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): Chart
+##### field(e.component): {WidgetName}
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -57,7 +57,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     import { DxChartModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        onLegendClick (e) {
+        cancelSeriesClick (e) {
             e.event.cancel = true;
         }
     }
@@ -70,7 +70,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     })
 
     <!--HTML--><dx-chart ...
-        (onLegendClick)="onLegendClick($event)">
+        (onLegendClick)="cancelSeriesClick($event)">
     </dx-chart>
 
 ##### Vue
@@ -78,7 +78,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     <!-- tab: App.vue -->
     <template>
         <DxChart ...
-            @legend-click="onLegendClick">
+            @legend-click="cancelSeriesClick">
         </DxChart>
     </template>
 
@@ -90,7 +90,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
             DxChart
         },
         methods: {
-            onLegendClick (e) {
+            cancelSeriesClick (e) {
                 e.event.cancel = true;
             }
         }
@@ -108,12 +108,12 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
         render() {
             return (
                 <Chart ...
-                    onLegendClick={onLegendClick}>
+                    onLegendClick={cancelSeriesClick}>
                 </Chart>
             );
         }
 
-        onLegendClick (e) {
+        cancelSeriesClick (e) {
             e.event.cancel = true;
         }
     }

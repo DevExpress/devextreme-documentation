@@ -69,11 +69,17 @@ A string value aligns all node columns uniformly. An array of strings allows you
 
     import Sankey from 'devextreme-react/sankey';
 
+    const alignmentValues = [
+        'top', 
+        'bottom', 
+        'bottom'
+    ];
+
     class App extends React.Component {
         render() {
             return (
                 <Sankey ... 
-                    alignment={['top', 'bottom', 'bottom']}>
+                    alignment={alignmentValues}>
                 </Sankey>
             );
         }

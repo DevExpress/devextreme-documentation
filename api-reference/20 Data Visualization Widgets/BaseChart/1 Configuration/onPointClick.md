@@ -57,7 +57,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
-        onPointClick (e) {
+        cancelSeriesClick (e) {
             e.event.cancel = true;
         }
     }
@@ -70,7 +70,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     })
 
     <!--HTML--><dx-{widget-name} ...
-        (onPointClick)="onPointClick($event)">
+        (onPointClick)="cancelSeriesClick($event)">
     </dx-{widget-name}>
 
 ##### Vue
@@ -78,7 +78,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} ...
-            @point-click="onPointClick">
+            @point-click="cancelSeriesClick">
         </Dx{WidgetName}>
     </template>
 
@@ -90,7 +90,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
             Dx{WidgetName}
         },
         methods: {
-            onPointClick (e) {
+            cancelSeriesClick (e) {
                 e.event.cancel = true;
             }
         }
@@ -108,12 +108,12 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
         render() {
             return (
                 <{WidgetName} ...
-                    onPointClick={onPointClick}>
+                    onPointClick={cancelSeriesClick}>
                 </{WidgetName}>
             );
         }
 
-        onPointClick (e) {
+        cancelSeriesClick (e) {
             e.event.cancel = true;
         }
     }

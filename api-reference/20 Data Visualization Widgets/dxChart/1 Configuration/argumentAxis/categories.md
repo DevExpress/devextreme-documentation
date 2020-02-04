@@ -28,8 +28,13 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         $("#chartContainer").dxChart({
             // ...
             argumentAxis: {
-                categories: ['Africa', 'Antarctica', 'Asia', 'Australia',
-                    'Europe', 'North America', 'South America']
+                categories: 
+                    'Africa', 
+                    'Antarctica', 
+                    'Asia', 
+                    'Australia',
+                    'Europe'
+                ];
             }
         });
     });
@@ -38,8 +43,7 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
 
     <!--HTML--><dx-chart ... >
         <dxo-argument-axis
-            [categories]="['Africa', 'Antarctica', 'Asia', 'Australia',
-                'Europe', 'North America', 'South America']">
+            [categories]="countries">
         </dxo-argument-axis>
     </dx-chart>
 
@@ -48,6 +52,13 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
     // ...
     export class AppComponent {
         // ...
+        const countries = [
+            'Africa', 
+            'Antarctica', 
+            'Asia', 
+            'Australia',
+            'Europe'
+        ];
     }
     @NgModule({
         imports: [
@@ -63,8 +74,7 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
     <template>
         <DxChart ... >
             <DxArgumentAxis 
-                :categories="['Africa', 'Antarctica', 'Asia', 'Australia',
-                'Europe', 'North America', 'South America']" 
+                :categories="countries" 
             />
         </DxChart>
     </template>
@@ -72,12 +82,23 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
     <script>
     import DxChart, {
         DxArgumentAxis
-    } from 'devextreme-vue/chart';
+    } from 'devextreme-vue/chart'; 
 
     export default {
         components: {
             DxChart,
             DxArgumentAxis
+        },
+        data() {
+            return {
+                countries = [
+                    'Africa', 
+                    'Antarctica', 
+                    'Asia', 
+                    'Australia',
+                    'Europe'
+                ];
+            };
         }
     }
     </script>
@@ -90,14 +111,21 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
     import Chart, {
         ArgumentAxis
     } from 'devextreme-react/chart';
+    
+    const countries = [
+        'Africa', 
+        'Antarctica', 
+        'Asia', 
+        'Australia',
+        'Europe'
+    ];
 
     class App extends React.Component {
         render() {
             return (
                 <Chart ... >
                     <ArgumentAxis
-                        categories={['Africa', 'Antarctica', 'Asia', 'Australia',
-                        'Europe', 'North America', 'South America']}
+                        categories={countries}
                     />
                 </Chart>
             );

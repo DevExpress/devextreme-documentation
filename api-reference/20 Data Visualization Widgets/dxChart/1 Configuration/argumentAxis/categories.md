@@ -91,13 +91,13 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         },
         data() {
             return {
-                countries = [
+                continents: [
                     'Africa', 
                     'Antarctica', 
                     'Asia', 
                     'Australia',
                     'Europe'
-                ];
+                ]
             };
         }
     }

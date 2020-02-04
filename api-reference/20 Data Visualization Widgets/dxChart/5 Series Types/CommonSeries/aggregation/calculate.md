@@ -85,7 +85,7 @@ One or several aggregated data objects. Should have the same structure as the or
                 <DxAggregation
                     :calculate="customAggregateFunc"
                 />
-            </DxSeries ... >
+            </DxSeries>
         </DxChart>
     </template>
 
@@ -103,7 +103,7 @@ One or several aggregated data objects. Should have the same structure as the or
         },
         methods: {
             customAggregateFunc (aggregationInfo, series) {
-                let dataObjects = aggregationInfo.data;
+                const dataObjects = aggregationInfo.data;
                 let result = { }; // or [ ]
                 // ...
                 // Aggregate the data objects here
@@ -126,10 +126,10 @@ One or several aggregated data objects. Should have the same structure as the or
             return (
                 <Chart ... >
                     <Series ... >
-                        <DxAggregation>
+                        <Aggregation
                             calculate={customAggregateFunc}
                         />
-                    </Series ... >
+                    </Series>
                 </Chart>
             );
         }

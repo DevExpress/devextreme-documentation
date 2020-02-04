@@ -94,7 +94,7 @@ If the scale displays numbers, assign a number to this option. For example, an *
             return (
                 <RangeSelector ... >
                     <Scale
-                        aggregationInterval={"day"}>    {/* Interval of one day */}
+                        aggregationInterval="day">    {/* Interval of one day */}
                         <AggregationInterval 
                             days={5} />                 {/* Interval of five days */}
                     </Scale>

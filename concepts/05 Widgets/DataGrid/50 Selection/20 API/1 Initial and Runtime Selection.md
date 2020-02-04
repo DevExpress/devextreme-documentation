@@ -111,11 +111,13 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Config
     });
 
     class App extends React.Component {
+        selectedRowKeys = [1, 5, 18];
+
         render() {
             return (
                 <DataGrid ...
                     dataSource={dataGridDataSource}
-                    defaultSelectedRowKeys={[1, 5, 18]}>
+                    defaultSelectedRowKeys={this.selectedRowKeys}>
                 </DataGrid>
             );
         }

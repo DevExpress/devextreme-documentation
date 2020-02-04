@@ -1,4 +1,4 @@
-[note] Before you start the tutorial, ensure DevExtreme is installed in your application as described in the [Installation](/concepts/00%20Getting%20Started/01%20Installation '/Documentation/Guide/Getting_Started/Installation/') section.
+#include tutorials-intro-installationnote
 
 The **DropDownButton** combines the functionality of a button and a drop-down menu. You can replace the menu with a custom drop-down control. 
 

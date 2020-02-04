@@ -2,7 +2,7 @@ Add diagram resources (scripts and styles) onto the page.
 
 - **npm**
 
-    The `devexpress-diagram` is a dependency of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/00%20Getting%20Started/01%20Installation/01%20npm%20Package '/Documentation/Guide/Getting_Started/Installation/npm_Package/') to include the Diagram in your project. Then, add the `dx-diagram.min.css` and `dx-diagram.min.js` files to your page.
+    The `devexpress-diagram` is a dependency of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the Diagram in your project. Then, add the `dx-diagram.min.css` and `dx-diagram.min.js` files to your page.
 
         <!--HTML-->
         <link rel="stylesheet" href="node_modules/devexpress-diagram/dx-diagram.min.css">

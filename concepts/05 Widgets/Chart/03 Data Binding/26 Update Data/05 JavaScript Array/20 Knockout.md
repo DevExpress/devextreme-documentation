@@ -16,4 +16,4 @@ Declare the array <a href="http://knockoutjs.com/documentation/observableArrays.
     ko.applyBindings(viewModel);
 
 #####See Also#####
-- [Change Options - Knockout](/concepts/00%20Getting%20Started/25%20Widget%20Basics%20-%20Knockout/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Change_Options/')
+- [Change Options - Knockout](/concepts/Getting%20Started/Widget%20Basics%20-%20Knockout/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Change_Options/')

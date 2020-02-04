@@ -85,6 +85,8 @@ A user can interact with the widget using the following keys:
     </table>
 </div>
 
+You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onKeyDown') event handler.
+
 <div style="font-size:12px;margin-bottom:10px;">
     <sup>1</sup> - If the <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"startEdit"</i>.<br/>
     <sup>2</sup> - If the <b>edititng</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode">mode</a> is <i>"cell"</i> or <i>"batch"</i> and the <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"moveFocus"</i>.<br/>

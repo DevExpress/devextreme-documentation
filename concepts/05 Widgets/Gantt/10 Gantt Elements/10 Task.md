@@ -20,7 +20,7 @@ A **milestone** is a task with the same start and endpoint. Milestones can be us
 
 ![DevExtreme Gantt Chart - Milestone](/images/Gantt/milestone.png)
 
-The **Gantt** widget gets data for tasks from a data source ([dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource)). Task objects from the data source are automatically bound to the widget if these objects have the default 'title', 'start', 'end', etc., data fields in their structure. For example:
+The **Gantt** widget gets data for tasks from a data source ([dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource')). Task objects from the data source are automatically bound to the widget if these objects have the default 'title', 'start', 'end', etc., data fields in their structure. For example:
 
     {
         'id': 1,
@@ -81,7 +81,7 @@ If the data source's field names differ from the standard field names mentioned 
 
 The list below provides the main members that affect task appearance and functionality.
 
-- [allowSelection](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#allowSelection) - Specifies whether users can select tasks.
+- [allowSelection](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/allowSelection.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#allowSelection') - Specifies whether users can select tasks.
 
         $(function() {
             $("#gantt").dxGantt({
@@ -89,7 +89,7 @@ The list below provides the main members that affect task appearance and functio
             });
         });
 
-- [scaleType](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#scaleType) - Specifies the zoom level of tasks in the **Gantt** chart.
+- [scaleType](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/scaleType.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#scaleType') - Specifies the zoom level of tasks in the **Gantt** chart.
 
         $(function() {
             $("#gantt").dxGantt({
@@ -97,7 +97,7 @@ The list below provides the main members that affect task appearance and functio
             });
         });  
 
-- [showResources](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources) - Specifies whether to display task resources.
+- [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources') - Specifies whether to display task resources.
 
         $(function() {
             $("#gantt").dxGantt({
@@ -105,7 +105,7 @@ The list below provides the main members that affect task appearance and functio
             });
         });  
 
-- [taskTitlePosition](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#taskTitlePosition) - Specifies a task's title position.
+- [taskTitlePosition](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/taskTitlePosition.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#taskTitlePosition') - Specifies a task's title position.
 
         $(function() {
             $("#gantt").dxGantt({

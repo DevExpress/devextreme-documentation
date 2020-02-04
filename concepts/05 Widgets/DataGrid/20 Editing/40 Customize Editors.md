@@ -15,7 +15,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
             }, // ...
             ],
             onEditorPreparing: function(e) {
-                if (e.dataField == "Note") {
+                if (e.dataField == "Note" && e.parentType === "dataRow") {
                     e.editorName = "dxTextArea"; // Changes the editor's type
                     e.editorOptions.onValueChanged = function (args) {
                         // Implement your logic here
@@ -43,7 +43,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     // ...
     export class AppComponent {
         onEditorPreparing (e) {
-            if (e.dataField == "Note") {
+            if (e.dataField == "Note" && e.parentType === "dataRow") {
                 e.editorName = "dxTextArea"; // Changes the editor's type
                 e.editorOptions.onValueChanged = function (args) {
                     // Implement your logic here
@@ -62,6 +62,93 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @editor-preparing="onEditorPreparing">
+            <DxColumn
+                data-field="Note"
+                :editor-options="textAreaOptions"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+    import 'devextreme-vue/text-area';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return {
+                textAreaOptions: { height: 200 }
+            }
+        },
+        methods: {
+            onEditorPreparing(e) {
+                if(e.dataField == "Note" && e.parentType === "dataRow") {
+                    e.editorName = "dxTextArea"; // Changes the editor's type
+                    e.editorOptions.onValueChanged = function (args) {
+                        // Implement your logic here
+
+                        e.setValue(args.value); // Updates the cell value
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+    import 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        textAreaOptions = { height: 200 };
+        onEditorPreparing(e) {
+            if(e.dataField == "Note" && e.parentType === "dataRow") {
+                e.editorName = "dxTextArea"; // Changes the editor's type
+                e.editorOptions.onValueChanged = function (args) {
+                    // Implement your logic here
+
+                    e.setValue(args.value); // Updates the cell value
+                }
+            }
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onEditorPreparing={this.onEditorPreparing}>
+                    <Column
+                        dataField="Note"
+                        editorOptions={this.textAreaOptions}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -77,7 +164,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
 
     <script type="text/javascript">
         function dataGrid_editorPreparing(e) {
-            if (e.dataField == "Note") {
+            if (e.dataField == "Note" && e.parentType === "dataRow") {
                 e.editorName = "dxTextArea"; // Changes the editor's type
                 e.editorOptions.onValueChanged = function (args) {
                     // Implement your logic here
@@ -157,6 +244,105 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColum
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="isChecked"
+                edit-cell-template="switch"
+            />
+            <template #switch="{ data }">
+                <DxSwitch
+                    :width="50"
+                    switched-on-text="YES"
+                    switched-off-text="NO"
+                    :value="data.value"
+                    @value-changed="setEditedValue($event, data)"
+                />
+            </template>
+            <DxEditing
+                mode="batch"
+                :allow-updating="true"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxEditing
+    } from 'devextreme-vue/data-grid';
+
+    import DxSwitch from 'devextreme-vue/switch';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxEditing,
+            DxSwitch
+        },
+        methods: {
+            setEditedValue(valueChangedEventArg, cellInfo) {
+                cellInfo.setValue(valueChangedEventArg.value);
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+        Editing
+    } from 'devextreme-react/data-grid';
+
+    import Switch from 'devextreme-react/switch';
+
+    class App extends React.Component {
+        renderSwitch(cellInfo) {
+            const setEditedValue = valueChangedEventArg => {
+                cellInfo.setValue(valueChangedEventArg.value);
+            }
+            return (
+                <Switch
+                    width={50}
+                    switchedOnText="YES"
+                    switchedOffText="NO"
+                    defaultValue={cellInfo.value}
+                    onValueChanged={setEditedValue}
+                />
+            )
+        }
+
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="isChecked"
+                        editCellRender={this.renderSwitch}
+                    />
+                    <Editing
+                        mode="batch"
+                        allowUpdating={true}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -223,6 +409,62 @@ Editors are displayed in cells in the normal state too if you set the **columns*
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Hidden"
+                data-type="boolean"
+                :show-editor-always="true"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="Hidden"
+                        dataType="boolean"
+                        showEditorAlways={true}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ##### ASP.NET MVC Controls
 

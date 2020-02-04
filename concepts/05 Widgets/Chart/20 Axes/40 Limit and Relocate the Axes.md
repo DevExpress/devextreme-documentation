@@ -67,11 +67,13 @@ The visual range of arguments/values on an axis should include all arguments/val
     } from 'devextreme-react/chart';
 
     class App extends React.Component {
+        visualRange = [1950, 2000];
+
         render() {
             return (
                 <Chart ... >
                     <ArgumentAxis
-                        visualRange={[1950, 2000]}
+                        defaultVisualRange={this.visualRange}
                     />
                 </Chart>
             );

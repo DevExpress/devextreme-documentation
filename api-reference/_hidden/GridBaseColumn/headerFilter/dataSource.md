@@ -28,17 +28,23 @@ A simple JavaScript array containing a collection of plain objects.
         <!--JavaScript-->
         $(function () {
             $("#{widgetName}Container").dx{WidgetName}({
-                headerFilter: {
-                    dataSource: [{
-                        text: "Zero",    // A string to be displayed in the UI
-                        value: 0         // A single value  
-                    },{
-                        text: "Less than $3000",
-                        value: ["SaleAmount", "<", 3000]    // A filterExpression array
-                    }, 
+                // ...
+                columns: [{
                     // ...
-                    ]
-                }
+                    headerFilter: {
+                        dataSource: [{
+                            text: "Zero",    // A string to be displayed in the UI
+                            value: 0         // A single value  
+                        },{
+                            text: "Less than $3000",
+                            value: ["SaleAmount", "<", 3000]    // A filterExpression array
+                        }, 
+                        // ...
+                        ]
+                    }
+                },
+                // ...
+                ]
             })
         });
 
@@ -167,21 +173,27 @@ A function in which you can modify the current data source configuration.
         <!--JavaScript-->
         $(function () {
             $("#{widgetName}Container").dx{WidgetName}({
-                headerFilter: {
-                    dataSource: function (data) {
-                        data.dataSource.postProcess = function (results) {
-                            results.push({
-                                text: "Weekends",
-                                value: [
-                                    [getOrderDay, "=", 0],
-                                        "or",
-                                    [getOrderDay, "=", 6]
-                                ]
-                            });
-                            return results;
-                        };
+                // ...
+                columns: [{
+                    // ...
+                    headerFilter: {
+                        dataSource: function (data) {
+                            data.dataSource.postProcess = function (results) {
+                                results.push({
+                                    text: "Weekends",
+                                    value: [
+                                        [getOrderDay, "=", 0],
+                                            "or",
+                                        [getOrderDay, "=", 6]
+                                    ]
+                                });
+                                return results;
+                            };
+                        }
                     }
-                }
+                },
+                // ...
+                ]
             })
         });
 

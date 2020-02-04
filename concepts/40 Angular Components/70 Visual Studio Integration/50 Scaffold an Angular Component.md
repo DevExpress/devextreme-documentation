@@ -6,7 +6,7 @@ Scaffolding has the following requirements:
 - .NET Core SDK 2.1
 - ASP.NET Core application with Angular
 - Entity Framework Core Data Model
-- DevExtreme installed using the Windows installer (see [Download and Install](/concepts/Common/05%20Introduction%20to%20DevExtreme/50%20Download%20and%20Install.md '/Documentation/Guide/Common/Introduction_to_DevExtreme/#Download_and_Install'))
+- DevExtreme installed using the [Windows installer](/concepts/Common/Distribution%20Channels/20%20Installer%20for%20Windows.md '/Documentation/Guide/Common/Distribution_Channels/Installer_for_Windows/')
 
 Follow the instructions below to scaffold a component:
 

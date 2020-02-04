@@ -10,4 +10,4 @@ Information on the current device.
 
 ---
 The device information provided by this function may differ from the actual device on which the application is running if an emulated device is specified for the application 
-(see [DevExpress.devices.current(deviceName)](/Documentation/ApiReference/Common/Utils/#devicescurrentdeviceName)). The actual information about the device is available via the [DevExpress.devices.real()](/Documentation/ApiReference/Common/Utils/#devicesreal) function.
+(see [DevExpress.devices.current(deviceName)](/api-reference/50%20Common/utils/devices/3%20Methods/current(deviceName).md '/Documentation/ApiReference/Common/Utils/devices/Methods/#currentdeviceName')). The actual information about the device is available via the [DevExpress.devices.real()](/api-reference/50%20Common/utils/devices/3%20Methods/real().md '/Documentation/ApiReference/Common/Utils/devices/Methods/#real') function.

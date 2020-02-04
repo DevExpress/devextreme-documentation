@@ -191,10 +191,12 @@ The following tasks require using different API in deferred mode:
         <!-- tab: App.js -->
         // ...
         class App extends React.Component {
+            selectionFilter = ['Task_Status', '=', 'Completed'];
+
             render() {
                 return (
                     <DataGrid ...
-                        deafultSelectionFilter={['Task_Status', '=', 'Completed']}>
+                        defaultSelectionFilter={this.selectionFilter}>
                     </DataGrid>
                 );
             }

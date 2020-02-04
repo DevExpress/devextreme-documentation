@@ -91,6 +91,7 @@ Clicking the *"Delete"* button invokes the confirmation dialog that allows a use
         }
     }
     export default App;    
+    
 ---
 
 #include common-demobutton with {

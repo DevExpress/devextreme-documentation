@@ -60,7 +60,7 @@ The **Sankey** widget raises individual events for nodes and links when their ho
 
 ---
 
-If you are going to change the event handlers at runtime or if you need several handlers for a single event, subscribe to the hover-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change the event handlers at runtime or if you need several handlers for a single event, subscribe to the hover-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var nodeHoverChangedHandler1 = function(e) {

@@ -38,7 +38,7 @@ An object of the following structure:
 The value displayed in the group cell. Differs from the **value** field only when the column to which the cell belongs uses [lookup](/api-reference/_hidden/dxDataGridColumn/lookup '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/lookup/').
 
 ##### field(cellInfo.groupContinuedMessage): String
-Contains the **grouping**.[groupContinuedMessage](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/texts/#groupContinuedMessage if the current group is continued from the previous page. Otherwise, this field is **undefined**.
+Contains the **grouping**.[groupContinuedMessage](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/texts/#groupContinuedMessage) if the current group is continued from the previous page. Otherwise, this field is **undefined**.
 
 ##### field(cellInfo.groupContinuesMessage): String
 Contains the **grouping**.[groupContinuesMessage](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/texts/groupContinuesMessage.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/texts/#groupContinuesMessage') if the current group continues on the next page. Otherwise, this field is **undefined**.

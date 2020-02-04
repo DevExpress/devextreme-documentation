@@ -5,11 +5,11 @@ The following code shows an example of using TypeScript with DevExtreme componen
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-list :items="items" ref="list">
+            <DxList :items="items" ref="list">
                 <template #item="{data}">
                     <Item :text="data.text" />
                 </template>
-            </dx-list>
+            </DxList>
         </div>
     </template>
 

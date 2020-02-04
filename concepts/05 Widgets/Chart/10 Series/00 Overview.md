@@ -37,6 +37,48 @@ The most important characteristic of a series is its type. The **Chart** provide
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries type="bar"/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series type="bar"/>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 A single **Chart** can contain several series at once. In this case, the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') option accepts an array of series objects. To enable a user to identify a series among others on the [chart legend](/concepts/05%20Widgets/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Legend/Overview/'), specify its [name](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#name').
@@ -79,6 +121,62 @@ A single **Chart** can contain several series at once. In this case, the [series
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries
+                ...
+                type="bar"
+                name="Men" />
+            <DxSeries
+                ...
+                type="area"
+                name="Women" />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series
+                        ...
+                        type="bar"
+                        name="Men" />
+                    <Series
+                        ...
+                        type="area"
+                        name="Women" />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -123,6 +221,62 @@ Objects in the **series** array specify individual settings for series. You can 
         ],
         // ...
     })
+
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries ... >
+                <!-- high priority -->
+            </DxSeries>
+            <DxCommonSeriesSettings ... >
+                <!-- low priority -->
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <!-- high priority -->
+                    </Series>
+                    <CommonSeriesSettings ... >
+                        <!-- low priority -->
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

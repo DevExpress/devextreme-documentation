@@ -5,11 +5,9 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies which data field provides keys for widget items.
+Specifies the key property that provides key values to access data items. Each key value must be unique.
 
 ---
-[note]The key value should be unique within the data array.
-
 #####See Also#####
 - [Specify data using **dataSource** option](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource')
 - [Specify data using **items** option](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/items '{basewidgetpath}/Configuration/items/')

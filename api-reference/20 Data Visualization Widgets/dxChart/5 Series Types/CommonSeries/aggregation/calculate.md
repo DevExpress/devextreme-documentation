@@ -119,15 +119,18 @@ One or several aggregated data objects. Should have the same structure as the or
     <!-- tab: App.js -->
     import React from 'react';
 
-    import Chart from 'devextreme-react/chart';
+    import Chart, {
+        Series,
+        Aggregation
+    } from 'devextreme-react/chart';
 
     class App extends React.Component {
         render() {
             return (
                 <Chart ... >
                     <Series ... >
-                        <Aggregation
-                            calculate={customAggregateFunc}
+                        <DxAggregation>
+                            calculate={this.customAggregateFunc}
                         />
                     </Series>
                 </Chart>

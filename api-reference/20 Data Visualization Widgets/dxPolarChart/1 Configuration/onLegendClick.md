@@ -108,7 +108,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarCh
         render() {
             return (
                 <PolarChart ...
-                    onLegendClick={cancelSeriesClick}>
+                    onLegendClick={this.cancelSeriesClick}>
                 </PolarChart>
             );
         }

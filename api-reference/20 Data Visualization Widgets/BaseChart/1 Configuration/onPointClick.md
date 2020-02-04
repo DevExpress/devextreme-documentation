@@ -108,7 +108,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
         render() {
             return (
                 <{WidgetName} ...
-                    onPointClick={cancelSeriesClick}>
+                    onPointClick={this.cancelSeriesClick}>
                 </{WidgetName}>
             );
         }

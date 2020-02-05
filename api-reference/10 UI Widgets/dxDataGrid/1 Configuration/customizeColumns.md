@@ -49,6 +49,78 @@ Use this function to make minor adjustments to automatically generated columns. 
     <dx-data-grid ...
         [customizeColumns]="customizeColumns">
     </dx-data-grid>
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <dx-{widget-name} ...
+            :customize-columns="customizeColumns"> 
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        // ... 
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        methods: {
+            customizeColumns(columns) {
+                columns[0].width = 100;
+                columns[1].width = 210;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        // ...
+    } from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        customizeColumns = (columns) => {
+            columns[0].width = 100;
+            columns[1].width = 210;
+        }
+
+        render() {
+            return (
+                <{WidgetName} ...
+                    customizeColumns={this.customizeColumns}
+                />
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: Razor C# -->
+    @(Html.DevExtreme().DataGrid()
+        // ...
+        .CustomizeColumns("customizeColumns")
+    )
+    <script>
+        function customizeColumns(columns) {
+            columns[0].width = 100;
+            columns[1].width = 210;
+        }
+    </script>
+
 ---
 [note] Data operations (sorting, filtering, summary) are unavailable for the columns created via **customizeColumns**. To create a fully functioning column, add it to the [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/') array.

@@ -17,7 +17,7 @@ Use this function to make minor adjustments to automatically generated columns. 
 
     <!--JavaScript-->
     $(function(){
-        $("#dataGrid").dxDataGrid({
+        $("#{widgetName}").dx{WidgetName}({
             // ...
             customizeColumns: function (columns) {
                 columns[0].width = 100;
@@ -29,7 +29,7 @@ Use this function to make minor adjustments to automatically generated columns. 
 ##### Angular
 
     <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
+    import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
         customizeColumns (columns) {
@@ -40,15 +40,15 @@ Use this function to make minor adjustments to automatically generated columns. 
     @NgModule({
         imports: [
             // ...
-            DxDataGridModule
+            Dx{WidgetName}Module
         ],
         // ...
     })
 
     <!--HTML-->
-    <dx-data-grid ...
+    <dx-{widget-name} ...
         [customizeColumns]="customizeColumns">
-    </dx-data-grid>
+    </dx-{widget-name}>
 
 ##### Vue
 
@@ -111,7 +111,7 @@ Use this function to make minor adjustments to automatically generated columns. 
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().DataGrid()
+    @(Html.DevExtreme().{WidgetName}()
         // ...
         .CustomizeColumns("customizeColumns")
     )

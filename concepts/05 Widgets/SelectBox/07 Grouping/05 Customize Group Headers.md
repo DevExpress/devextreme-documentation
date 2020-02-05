@@ -54,6 +54,149 @@ By default, group headers display text of the **key** field in a bold font. You 
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxDataSource"
+            :grouped="true"
+            display-expr="name"
+            value-expr="count"
+        >
+            <template #group="item">
+                <Group :item-data="item.data"/>
+            </template>
+        </DxSelectBox>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+    import DataSource from "devextreme/data/data_source";
+    import Group from './Group.vue';
+
+    export default {
+        components: {
+            DxSelectBox,
+            Group
+        },
+        data() {
+            const fruitsVegetables = [{
+                key: "Fruits",
+                items: [
+                    { name: "Apples", count: 10 },
+                    { name: "Oranges", count: 12 },
+                    { name: "Lemons", count: 15 }
+                ]
+            }, {
+                key: "Vegetables",
+                items: [
+                    { name: "Potatoes", count: 5 },
+                    { name: "Tomatoes", count: 9 },
+                    { name: "Turnips", count: 8 }
+                ]
+            }];
+            const selectBoxDataSource = new DataSource({
+                store: fruitsVegetables,
+                map: function(groupedItem) {
+                    let overallCount = 0;
+                    groupedItem.items.forEach(function(item) {
+                        overallCount += item.count;
+                    })
+                    return Object.assign(groupedItem, { overallCount: overallCount });
+                }
+            });
+
+            return {
+                selectBoxDataSource
+            }
+        }
+    }
+    </script>
+
+    <!-- tab: Group.vue -->
+    <template>
+    <p>
+        {{ itemData.key + ' | Count: ' + itemData.overallCount }}
+    </p>
+    </template>
+    <script>
+    export default {
+    props: {
+        itemData: {
+        type: Object,
+        default: () => {}
+        }
+    }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+    import DataSource from "devextreme/data/data_source";
+    import Group from './Group.js';
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+    const selectBoxDataSource = new DataSource({
+        store: fruitsVegetables,
+        map: function(groupedItem) {
+            let overallCount = 0;
+            groupedItem.items.forEach(function(item) {
+                overallCount += item.count;
+            })
+            return Object.assign(groupedItem, { overallCount: overallCount });
+        }
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxDataSource}
+                    grouped="true"
+                    displayExpr="name"
+                    valueExpr="count"
+                    groupRender={Group}
+                />
+            );
+        }
+    }
+    export default App;
+
+    <!-- tab: Group.js -->
+    import React from 'react';
+
+    export default function Group(data) {
+        return (
+            <p >
+                {data.key + ' | Count: ' + data.overallCount}
+            </p>
+        );
+    }
+
 #####AngularJS
 
     <!--HTML-->

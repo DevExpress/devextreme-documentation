@@ -45,6 +45,64 @@ When a tooltip becomes shown or hidden, the **Chart** fires the [tooltipShown](/
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            @tooltip-shown="onTooltipShown" 
+            @tooltip-hidden="onTooltipHidden">
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onTooltipShown (e) {
+                const point = e.target;
+                // Handler of the "tooltipShown" event
+            },
+            onTooltipHidden (e) {
+                const point = e.target;
+                // Handler of the "tooltipHidden" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... 
+                    onTooltipShown={onTooltipShown} 
+                    onTooltipHidden={onTooltipHidden}>
+                </Chart>
+            );
+        }
+    }
+
+    function onTooltipShown (e) {
+        const point = e.target;
+        // Handler of the "tooltipShown" event
+    }
+    function onTooltipHidden (e) {
+        const point = e.target;
+        // Handler of the "tooltipHidden" event
+    }
+
+    export default App;
+
 ---
 
 If you are going to change the event handlers at runtime or if you need to attach several handlers to a single event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#oneventName_eventHandler') method.  This approach is more typical of jQuery.

@@ -28,8 +28,15 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         $("#chartContainer").dxChart({
             // ...
             argumentAxis: {
-                categories: ['Africa', 'Antarctica', 'Asia', 'Australia',
-                    'Europe', 'North America', 'South America']
+                categories: [
+                    'Africa', 
+                    'Antarctica', 
+                    'Asia', 
+                    'Australia',
+                    'Europe',
+                    'North America',
+                    'South America'
+                ]
             }
         });
     });
@@ -38,8 +45,7 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
 
     <!--HTML--><dx-chart ... >
         <dxo-argument-axis
-            [categories]="['Africa', 'Antarctica', 'Asia', 'Australia',
-                'Europe', 'North America', 'South America']">
+            [categories]="continents">
         </dxo-argument-axis>
     </dx-chart>
 
@@ -48,6 +54,15 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
     // ...
     export class AppComponent {
         // ...
+        continents = [
+            'Africa', 
+            'Antarctica', 
+            'Asia', 
+            'Australia',
+            'Europe',
+            'North America',
+            'South America'
+        ];
     }
     @NgModule({
         imports: [
@@ -56,6 +71,76 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxChart ... >
+            <DxArgumentAxis 
+                :categories="continents" 
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart'; 
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis
+        },
+        data() {
+            return {
+                continents: [
+                    'Africa', 
+                    'Antarctica', 
+                    'Asia', 
+                    'Australia',
+                    'Europe',
+                    'North America',
+                    'South America'
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+    
+    const continents = [
+        'Africa', 
+        'Antarctica', 
+        'Asia', 
+        'Australia',
+        'Europe',
+        'North America',
+        'South America'
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis
+                        categories={continents}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;     
 
 ---
 

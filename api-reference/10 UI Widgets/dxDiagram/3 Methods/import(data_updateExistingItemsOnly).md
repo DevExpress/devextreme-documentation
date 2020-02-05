@@ -16,6 +16,8 @@ The [export](/api-reference/10%20UI%20Widgets/dxDiagram/3%20Methods/export().md 
 
 Use the **import** method to load this data on demand.
 
+[note] The Diagram stores an opened diagram's data in its own text format. Do not modify the data the [export](/api-reference/10%20UI%20Widgets/dxDiagram/3%20Methods/export().md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Methods/#export') method returns because a modified document can be loaded incorrectly.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
 }

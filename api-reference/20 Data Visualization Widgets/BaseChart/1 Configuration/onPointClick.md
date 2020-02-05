@@ -57,7 +57,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
-        {widgetName}_onPointClick (e) {
+        cancelSeriesClick (e) {
             e.event.cancel = true;
         }
     }
@@ -70,8 +70,55 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     })
 
     <!--HTML--><dx-{widget-name} ...
-        (onPointClick)="{widgetName}_onPointClick($event)">
+        (onPointClick)="cancelSeriesClick($event)">
     </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            @point-click="cancelSeriesClick">
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        methods: {
+            cancelSeriesClick (e) {
+                e.event.cancel = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <{WidgetName} ...
+                    onPointClick={this.cancelSeriesClick}>
+                </{WidgetName}>
+            );
+        }
+
+        cancelSeriesClick (e) {
+            e.event.cancel = true;
+        }
+    }
+
+    export default App;
 
 ---
 

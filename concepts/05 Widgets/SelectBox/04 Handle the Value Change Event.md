@@ -47,6 +47,71 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+            display-expr="country"
+            value-expr="id"
+            value-change-event="keyup"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const selectBoxData = [
+                { id: 1, country: "Afghanistan" },
+                { id: 2, country: "Albania" },
+                // ...
+            ];
+            return {
+                selectBoxData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const selectBoxData = [
+        { id: 1, country: "Afghanistan" },
+        { id: 2, country: "Albania" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData} 
+                    displayExpr="Name"
+                    valueExpr="ID"
+                    valueChangeEvent="keyup"
+                />
+            );
+        }
+    }
+    export default App;
+
+
 ---
 
 To process a new **SelectBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged') option when you configure the widget.
@@ -89,6 +154,64 @@ To process a new **SelectBox** value, you need to handle the value change event.
          ],
          // ...
      })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            @value-changed="valueChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        methods: {
+            valueChanged(e) {
+                let previousValue = e.previousValue;
+                let newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.valueChanged = this.valueChanged.bind(this);
+        }
+        valueChanged(e) {
+            let previousValue = e.previousValue;
+            let newValue = e.value;
+            // Event handling commands go here
+        }
+        render() {
+            return (
+                <SelectBox ...
+                    onValueChanged={this.valueChanged}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

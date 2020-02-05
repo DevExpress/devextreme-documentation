@@ -102,8 +102,8 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
             return (
                 <SelectBox ...
                     dataSource={selectBoxData} 
-                    displayExpr="Name"
-                    valueExpr="ID"
+                    displayExpr="country"
+                    valueExpr="id"
                     valueChangeEvent="keyup"
                 />
             );

@@ -224,8 +224,8 @@ If your data is an array of objects, specify:
             return (
                 <SelectBox ...
                     dataSource={selectBoxData} 
-                    displayExpr="Name"
-                    valueExpr="ID"
+                    displayExpr="country"
+                    valueExpr="id"
                 />
             );
         }

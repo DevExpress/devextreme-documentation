@@ -28,12 +28,12 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         $("#gantt").dxGantt({
             tasks: {
                 dataSource: tasks,
-                keyExpr: taskId, 
-                parentIdExpr: parentTaskId,
-                titleExpr: taskTitle,
-                progressExpr: taskProgress,
-                startExpr: startDate,
-                endExpr: endDate
+                keyExpr: "taskId", 
+                parentIdExpr: "parentTaskId",
+                titleExpr: "taskTitle",
+                progressExpr: "taskProgress",
+                startExpr: "startDate",
+                endExpr: "endDate"
             },
             //...
         });

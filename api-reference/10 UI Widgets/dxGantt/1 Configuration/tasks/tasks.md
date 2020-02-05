@@ -17,7 +17,7 @@ Configures tasks.
 Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource') option to bind the widget to a data source, which contains tasks. If the field names in your data source differ from default names ('id', 'parentId', 'title', 'start', 'end', 'progress'), use appropriate options ([keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#keyExpr'), [parentIdExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#parentIdExpr'), etc.) to map data fields.
 
 #####See Also#####
-- [Gantt Elements - Tasks](concept/05%20Widgets/Gantt/10%20Gantt%20Elements/10%20Task.md 'Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Task')
+- [Gantt Elements - Tasks](concept/05%20Widgets/Gantt/10%20Gantt%20Elements/10%20Task.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Task')
 
 ---
 

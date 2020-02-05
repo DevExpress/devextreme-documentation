@@ -75,6 +75,101 @@ A user can select existing values and add new values to the **SelectBox**. To en
         (onCustomItemCreating)="onCustomItemCreating($event)">
     </dx-select-box>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+            :accept-custom-value="true"
+            display-expr="firstName"
+            value-expr="id"
+            @customItemCreating="customItemCreating($event)"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const selectBoxData = new DataSource({
+        store: [
+            { id: 1, firstName: "Andrew" },
+            { id: 2, firstName: "Nancy" },
+            { id: 3, firstName: "Steven" }
+        ]
+    }); 
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            return {
+                selectBoxData
+            }
+        }
+        methods: {
+            customItemCreating(e) {
+                // Generates a new 'id'
+                var nextId = Math.max.apply(Math, selectBoxData.items().map(function(c) { return c.id; })) + 1;
+                // Creates a new entry
+                e.customItem = { id: nextId, firstName: e.text };
+                // Adds the entry to the data source
+                selectBoxData.store().insert(e.customItem);
+                // Reloads the data source
+                selectBoxData.reload();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const selectBoxData = new DataSource({
+        store: [
+            { id: 1, firstName: "Andrew" },
+            { id: 2, firstName: "Nancy" },
+            { id: 3, firstName: "Steven" }
+        ]
+    });
+
+    class App extends React.Component {
+        customItemCreating(e) {
+            // Generates a new 'id'
+            var nextId = Math.max.apply(Math, selectBoxData.items().map(function(c) { return c.id; })) + 1;
+            // Creates a new entry
+            e.customItem = { id: nextId, firstName: e.text };
+            // Adds the entry to the data source
+            selectBoxData.store().insert(e.customItem);
+            // Reloads the data source
+            selectBoxData.reload();
+        }
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData}
+                    valueExpr="id"
+                    displayExpr="firstName"
+                    acceptCustomValue={true}
+                    onCustomItemCreating={this.customItemCreating}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #include common-demobutton with {

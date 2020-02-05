@@ -57,7 +57,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     import { DxChartModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        chart_onLegendClick (e) {
+        cancelSeriesClick (e) {
             e.event.cancel = true;
         }
     }
@@ -70,8 +70,55 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1
     })
 
     <!--HTML--><dx-chart ...
-        (onLegendClick)="chart_onLegendClick($event)">
+        (onLegendClick)="cancelSeriesClick($event)">
     </dx-chart>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxChart ...
+            @legend-click="cancelSeriesClick">
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            cancelSeriesClick (e) {
+                e.event.cancel = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    onLegendClick={this.cancelSeriesClick}>
+                </Chart>
+            );
+        }
+
+        cancelSeriesClick (e) {
+            e.event.cancel = true;
+        }
+    }
+
+    export default App;
 
 ---
 

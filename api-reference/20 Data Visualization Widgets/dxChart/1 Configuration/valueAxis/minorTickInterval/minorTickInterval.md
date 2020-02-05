@@ -44,6 +44,56 @@ If the axis displays numbers, set the **minorTickInterval** to a number. This nu
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxChart ... >
+            <DxValueAxis>
+                <DxMinorTickInterval :days="5" />
+            </DxValueAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxValueAxis,
+        DxMinorTickInterval
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxValueAxis,
+            DxMinorTickInterval
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Chart, {
+        ValueAxis,
+        MinorTickInterval
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ValueAxis>
+                        <MinorTickInterval days={5} />
+                    </ValueAxis>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;     
+
 ---
 
 When using the widget as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, you can specify this option with the `VizTimeInterval` enum which accepts the same predefined values, but they start with an upper-case letter, for example, *'day'* becomes `Day`.

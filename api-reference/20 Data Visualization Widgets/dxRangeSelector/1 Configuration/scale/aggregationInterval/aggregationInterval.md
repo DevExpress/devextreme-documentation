@@ -60,7 +60,7 @@ If the scale displays numbers, assign a number to this option. For example, an *
                 aggregation-interval="day">     <!-- Interval of one day -->
                 <DxAggregationInterval 
                     :days="5" />                <!-- Interval of five days -->
-            </DxScale>>
+            </DxScale>
         </DxRangeSelector>
     </template>
 

@@ -70,7 +70,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarCh
     })
 
     <!--HTML--><dx-polar-chart ...
-        (onLegendClick)="cancelSeriesClick ($event)">
+        (onLegendClick)="cancelSeriesClick($event)">
     </dx-polar-chart>
 
 ##### Vue

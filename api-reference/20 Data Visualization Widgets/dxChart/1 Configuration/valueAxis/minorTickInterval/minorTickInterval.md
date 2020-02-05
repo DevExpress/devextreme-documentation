@@ -51,7 +51,7 @@ If the axis displays numbers, set the **minorTickInterval** to a number. This nu
         <DxChart ... >
             <DxValueAxis>
                 <DxMinorTickInterval :days="5" />
-            </DxValueAxis>>
+            </DxValueAxis>
         </DxChart>
     </template>
 

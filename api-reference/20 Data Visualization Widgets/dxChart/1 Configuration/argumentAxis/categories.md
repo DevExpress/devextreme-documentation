@@ -35,7 +35,7 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
                     'Australia',
                     'Europe',
                     'North America',
-                    'South America',
+                    'South America'
                 ]
             }
         });
@@ -61,7 +61,7 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
             'Australia',
             'Europe',
             'North America',
-            'South America',
+            'South America'
         ];
     }
     @NgModule({
@@ -102,8 +102,8 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
                     'Australia',
                     'Europe',
                     'North America',
-                    'South America',
-                ];
+                    'South America'
+                ]
             };
         }
     }
@@ -125,7 +125,7 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         'Australia',
         'Europe',
         'North America',
-        'South America',
+        'South America'
     ];
 
     class App extends React.Component {

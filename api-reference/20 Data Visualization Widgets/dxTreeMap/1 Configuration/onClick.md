@@ -107,7 +107,7 @@ This function is often used to implement item selection as shown in the followin
         render() {
             return (
                 <TreeMap ...
-                    onClick={selectItem}>
+                    onClick={this.selectItem}>
                 </TreeMap>
             );
         }

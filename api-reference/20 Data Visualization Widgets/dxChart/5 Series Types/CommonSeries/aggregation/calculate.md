@@ -139,9 +139,9 @@ One or several aggregated data objects. Should have the same structure as the or
 
         customAggregateFunc (aggregationInfo, series) {
             let dataObjects = aggregationInfo.data;
-            let result = { }; {/* or [ ] */}
+            let result = { }; // or [ ]
 
-            {/* Aggregate the data objects here */}
+            // Aggregate the data objects here
             
             return result;
         }

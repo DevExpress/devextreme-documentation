@@ -107,7 +107,7 @@ This function is often used to implement item selection as shown in the followin
         render() {
             return (
                 <Funnel ...
-                    onItemClick={selectItem}>
+                    onItemClick={this.selectItem}>
                 </Funnel>
             );
         }

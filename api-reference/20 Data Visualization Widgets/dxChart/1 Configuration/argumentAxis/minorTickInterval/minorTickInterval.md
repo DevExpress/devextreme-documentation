@@ -53,7 +53,7 @@ If the axis displays numbers, assign a number to this option. If the axis displa
         <DxChart ... >
             <DxArgumentAxis>
                 <DxMinorTickInterval :days="5" />
-            </DxArgumentAxis>>
+            </DxArgumentAxis>
         </DxChart>
     </template>
 

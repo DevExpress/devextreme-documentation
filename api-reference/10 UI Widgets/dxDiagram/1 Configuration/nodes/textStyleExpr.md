@@ -11,13 +11,8 @@ Specifies the name of a data source field or an expression that provides a node'
 The current node's data object.
 
 ---
-The style settings must be specified as CSS rules presented in JSON format.
+The style settings must be specified as CSS rules presented in JSON format, for instance `{ "font-weight": "bold", "text-decoration": "underline" }`.
 
-        <!--data structure-->
-        {
-            "selector_1":{
-            "property_1":"value_1",
-            ...
-            }
-        ...
-        }
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
+}

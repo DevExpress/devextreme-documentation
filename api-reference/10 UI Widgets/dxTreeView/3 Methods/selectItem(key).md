@@ -9,7 +9,7 @@ Selects an item with a specific key.
 The item's key.
 
 ##### return: Boolean
-If the element for the specified key doesn't exist or has not yet loaded, then the method returns false. In other cases, it returns true.
+Returns false if [Node](/api-reference/10%20UI%20Widgets/dxTreeList/4%20Node '/Documentation/ApiReference/UI_Widgets/dxTreeList/Node/') was not found for the specified key.
 
 ---
 [In this topic we need the same note about virtual/createchildren/searchenabled]

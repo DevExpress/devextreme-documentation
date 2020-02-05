@@ -9,7 +9,7 @@ Selects an item found using its data object.
 The item's data object.
 
 ##### return: Boolean
-If the specified element doesn't exist or has not yet loaded, then the method returns false. In other cases, it returns true.
+Returns false if [TreeNode](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxTreeView/Node/) was not found for the specified 'itemData' object.
 
 ---
 [In this topic we need the same note about virtual/createchildren/searchenabled].

@@ -9,10 +9,7 @@ Selects an item found using its DOM node.
 The item's DOM node.
 
 ##### return: Boolean
-If the specified element doesn't exist or has not yet loaded, then the method returns false. In other cases, it returns true.
-
----
-[In this topic we need the same note about virtual/createchildren/searchenabled].
+Returns false if [Node](/api-reference/10%20UI%20Widgets/dxTreeList/4%20Node '/Documentation/ApiReference/UI_Widgets/dxTreeList/Node/') was not found for the specified 'itemElement' object.
 
 ---
 #####See Also#####

@@ -9,10 +9,8 @@ Cancels the selection of an item found using its DOM node.
 The item's DOM node.
 
 ##### return: Boolean
-If the specified element doesn't exist or has not yet loaded, then the method returns false. In other cases, it returns true.
+Returns false if [Node](/api-reference/10%20UI%20Widgets/dxTreeList/4%20Node '/Documentation/ApiReference/UI_Widgets/dxTreeList/Node/') was not found for the specified 'itemElement' object.
 
 ---
-[In this topic we need the same note about virtual/createchildren/searchenabled]
-
 #####See Also#####
 - [Select Nodes Using the API](/concepts/05%20Widgets/TreeView/25%20Select%20Nodes/02%20Using%20the%20API.md '/Documentation/Guide/Widgets/TreeView/Select_Nodes/#Using_the_API')

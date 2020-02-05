@@ -52,6 +52,68 @@ The following code adds the **SelectBox** to your page. The simplest configurati
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="products"
+            placeholder="Select a product..."
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const products = [
+                "HD Video Player",
+                "SuperHD Video Player",
+                "SuperPlasma 50",
+                // ...
+            ]; 
+            return {
+                products
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const products = [
+        "HD Video Player",
+        "SuperHD Video Player",
+        "SuperPlasma 50",
+        // ...
+    ]; 
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={products}
+                    placeholder="Select a product..."
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 If your data is an array of objects, specify: 
@@ -107,6 +169,68 @@ If your data is an array of objects, specify:
          ],
          // ...
      })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+            display-expr="country"
+            value-expr="id"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const selectBoxData = [
+                { id: 1, country: "Afghanistan" },
+                { id: 2, country: "Albania" },
+                // ...
+            ];
+            return {
+                selectBoxData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const selectBoxData = [
+        { id: 1, country: "Afghanistan" },
+        { id: 2, country: "Albania" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData} 
+                    displayExpr="Name"
+                    valueExpr="ID"
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

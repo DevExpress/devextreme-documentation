@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the container in which to place the widget.
+Specifies the container in which to render the widget.
 
 ---
 The default container is defined during the widget's initialization. It is the viewport, or the body element if the viewport is not found, or the parent element if the previous two are absent.

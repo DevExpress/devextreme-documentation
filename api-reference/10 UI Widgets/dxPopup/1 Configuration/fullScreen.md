@@ -5,6 +5,8 @@ default: false
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not to display the widget in full-screen mode.
+Specifies whether to display the **Popup** in full-screen mode.
 
 ---
+
+[note] When **fullScreen** is **true**, the widget always occupies the entire screen, disregarding the [container](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/container.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#container') value.

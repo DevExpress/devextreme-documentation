@@ -124,10 +124,6 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     import SelectBox from 'devextreme-react/select-box';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.registerKeyHandlers = this.registerKeyHandlers.bind(this);
-        }
         registerKeyHandlers(e) {
             const selectBoxInstance = e.component;
             selectBoxInstance.registerKeyHandler("backspace", function (e) {

@@ -49,7 +49,7 @@ A user can select existing values and add new values to the **SelectBox**. To en
         });
         onCustomItemCreating (e) {
             // Generates a new 'id'
-            let nextId = Math.max.apply(Math, this.selectBoxData.items().map(function(c) { return c.id; })) + 1;
+            const nextId = Math.max.apply(Math, this.selectBoxData.items().map(c => c.id)) + 1;
             // Creates a new entry
             e.customItem = { id: nextId, firstName: e.text };
             // Adds the entry to the data source
@@ -84,7 +84,7 @@ A user can select existing values and add new values to the **SelectBox**. To en
             :accept-custom-value="true"
             display-expr="firstName"
             value-expr="id"
-            @customItemCreating="customItemCreating($event)"
+            @custom-item-creating="customItemCreating"
         />
     </template>
 
@@ -100,7 +100,8 @@ A user can select existing values and add new values to the **SelectBox**. To en
             { id: 1, firstName: "Andrew" },
             { id: 2, firstName: "Nancy" },
             { id: 3, firstName: "Steven" }
-        ]
+        ],
+        key: "id"
     }); 
 
     export default {
@@ -115,7 +116,7 @@ A user can select existing values and add new values to the **SelectBox**. To en
         methods: {
             customItemCreating(e) {
                 // Generates a new 'id'
-                var nextId = Math.max.apply(Math, selectBoxData.items().map(function(c) { return c.id; })) + 1;
+                const nextId = Math.max.apply(Math, selectBoxData.items().map(c => c.id)) + 1;
                 // Creates a new entry
                 e.customItem = { id: nextId, firstName: e.text };
                 // Adds the entry to the data source
@@ -142,13 +143,14 @@ A user can select existing values and add new values to the **SelectBox**. To en
             { id: 1, firstName: "Andrew" },
             { id: 2, firstName: "Nancy" },
             { id: 3, firstName: "Steven" }
-        ]
+        ],
+        key: "id"
     });
 
     class App extends React.Component {
         customItemCreating(e) {
             // Generates a new 'id'
-            var nextId = Math.max.apply(Math, selectBoxData.items().map(function(c) { return c.id; })) + 1;
+            const nextId = Math.max.apply(Math, selectBoxData.items().map(c => c.id)) + 1;
             // Creates a new entry
             e.customItem = { id: nextId, firstName: e.text };
             // Adds the entry to the data source

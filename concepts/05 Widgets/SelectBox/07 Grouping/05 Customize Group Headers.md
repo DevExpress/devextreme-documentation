@@ -64,8 +64,10 @@ By default, group headers display text of the **key** field in a bold font. You 
             display-expr="name"
             value-expr="count"
         >
-            <template #group="item">
-                <Group :item-data="item.data"/>
+            <template #group="{ data }">
+                <p>
+                    {{ data.key + ' | Count: ' + data.overallCount }}
+                </p>
             </template>
         </DxSelectBox>
     </template>
@@ -76,12 +78,10 @@ By default, group headers display text of the **key** field in a bold font. You 
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
     import DataSource from "devextreme/data/data_source";
-    import Group from './Group.vue';
 
     export default {
         components: {
-            DxSelectBox,
-            Group
+            DxSelectBox
         },
         data() {
             const fruitsVegetables = [{
@@ -117,23 +117,6 @@ By default, group headers display text of the **key** field in a bold font. You 
     }
     </script>
 
-    <!-- tab: Group.vue -->
-    <template>
-    <p>
-        {{ itemData.key + ' | Count: ' + itemData.overallCount }}
-    </p>
-    </template>
-    <script>
-    export default {
-    props: {
-        itemData: {
-        type: Object,
-        default: () => {}
-        }
-    }
-    };
-    </script>
-
 ##### React
 
     <!-- tab: App.js -->
@@ -143,7 +126,6 @@ By default, group headers display text of the **key** field in a bold font. You 
 
     import SelectBox from 'devextreme-react/select-box';
     import DataSource from "devextreme/data/data_source";
-    import Group from './Group.js';
 
     const fruitsVegetables = [{
         key: "Fruits",
@@ -171,6 +153,14 @@ By default, group headers display text of the **key** field in a bold font. You 
         }
     });
 
+    const renderGroup = (data) => {
+        return (
+            <p >
+                {data.key + ' | Count: ' + data.overallCount}
+            </p>
+        );
+    }
+
     class App extends React.Component {
         render() {
             return (
@@ -179,23 +169,12 @@ By default, group headers display text of the **key** field in a bold font. You 
                     grouped="true"
                     displayExpr="name"
                     valueExpr="count"
-                    groupRender={Group}
+                    groupRender={renderGroup}
                 />
             );
         }
     }
     export default App;
-
-    <!-- tab: Group.js -->
-    import React from 'react';
-
-    export default function Group(data) {
-        return (
-            <p >
-                {data.key + ' | Count: ' + data.overallCount}
-            </p>
-        );
-    }
 
 #####AngularJS
 

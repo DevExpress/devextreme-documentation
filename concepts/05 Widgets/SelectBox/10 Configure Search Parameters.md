@@ -57,8 +57,8 @@ The **SelectBox** widget allows an end user to search through its items. This fe
     <template> 
         <DxSelectBox ...
             :data-source="selectBoxData"
-            :searchEnabled="true"
-            :searchExpr="['country', 'capital']"
+            :search-enabled="true"
+            :search-expr="['country', 'capital']"
             display-expr="country"
             value-expr="id"
         />
@@ -81,7 +81,7 @@ The **SelectBox** widget allows an end user to search through its items. This fe
                 // ...
             ];
             return {
-                selectBoxData,
+                selectBoxData
             }
         }
     }
@@ -182,8 +182,8 @@ When a user types a string in the input field, the **SelectBox** suggests all it
     <template> 
         <DxSelectBox ...
             :data-source="selectBoxData"
-            :searchEnabled="true"
-            searchExpr="country"
+            :search-enabled="true"
+            search-expr="country"
             display-expr="country"
             value-expr="id"
             search-mode="startswith"
@@ -207,7 +207,7 @@ When a user types a string in the input field, the **SelectBox** suggests all it
                 // ...
             ];
             return {
-                selectBoxData,
+                selectBoxData
             }
         }
     }
@@ -305,9 +305,9 @@ There is a delay between the moment a user finishes typing and the moment the se
     <template> 
         <DxSelectBox ...
             :data-source="selectBoxData"
-            :searchEnabled="true"
+            :search-enabled="true"
             :search-timeout="1000"
-            searchExpr="country"
+            search-expr="country"
             display-expr="country"
             value-expr="id"
         />
@@ -330,7 +330,7 @@ There is a delay between the moment a user finishes typing and the moment the se
                 // ...
             ];
             return {
-                selectBoxData,
+                selectBoxData
             }
         }
     }
@@ -426,9 +426,9 @@ The **SelectBox** widget starts searching after a user has typed at least one ch
     <template> 
         <DxSelectBox ...
             :data-source="selectBoxData"
-            :searchEnabled="true"
+            :search-enabled="true"
             :min-search-length="3"
-            searchExpr="country"
+            search-expr="country"
             display-expr="country"
             value-expr="id"
         />
@@ -450,7 +450,7 @@ The **SelectBox** widget starts searching after a user has typed at least one ch
                 // ...
             ];
             return {
-                selectBoxData,
+                selectBoxData
             }
         }
     }

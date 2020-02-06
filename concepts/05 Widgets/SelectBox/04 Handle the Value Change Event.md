@@ -142,8 +142,8 @@ To process a new **SelectBox** value, you need to handle the value change event.
     // ...
     export class AppComponent {
         onValueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -176,8 +176,8 @@ To process a new **SelectBox** value, you need to handle the value change event.
         },
         methods: {
             valueChanged(e) {
-                let previousValue = e.previousValue;
-                let newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         }
@@ -199,8 +199,8 @@ To process a new **SelectBox** value, you need to handle the value change event.
             this.valueChanged = this.valueChanged.bind(this);
         }
         valueChanged(e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
         render() {

@@ -160,8 +160,13 @@ If you need a more flexible solution, define a custom template for widget items.
             value-expr="id"
             item-template="item"
         >
-            <template #item="item">
-                <Item :item-data="item.data"/>
+            <template #item="{ data }">
+                <div>
+                    <img :src="data.imgSrc">
+                    <div style="display:inline-block">
+                    {{ data.name }}
+                    </div>
+                </div>
             </template>
         </DxSelectBox>
     </template>
@@ -171,12 +176,10 @@ If you need a more flexible solution, define a custom template for widget items.
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
-    import Item from './Item.vue';
 
     export default {
         components: {
-            DxSelectBox,
-            Item
+            DxSelectBox
         },
         data() {
             const selectBoxData = [{
@@ -197,26 +200,6 @@ If you need a more flexible solution, define a custom template for widget items.
     }
     </script>
 
-    <!-- tab: Item.vue -->
-    <template>
-    <div class="custom-item">
-        <img :src="itemData.imgSrc">
-        <div style="display:inline-block">
-        {{ itemData.name }}
-        </div>
-    </div>
-    </template>
-    <script>
-    export default {
-    props: {
-        itemData: {
-        type: Object,
-        default: () => {}
-        }
-    }
-    };
-    </script>
-
 ##### React
 
     <!-- tab: App.js -->
@@ -225,7 +208,15 @@ If you need a more flexible solution, define a custom template for widget items.
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
-    import Item from './Item.js';
+
+    const renderItem = (data) => {
+        return (
+            <div>
+                <img src={data.imgSrc} />
+                <div style="display:inline-block">{data.name}</div>
+            </div>
+        );
+    }
 
     const selectBoxData = [{
         id: 1,
@@ -246,24 +237,12 @@ If you need a more flexible solution, define a custom template for widget items.
                     dataSource={selectBoxData} 
                     displayExpr="name"
                     valueExpr="id"
-                    itemRender={Item}
+                    itemRender={renderItem}
                 />
             );
         }
     }
     export default App;
-
-    <!-- tab: Item.js -->
-    import React from 'react';
-
-    export default function Item(data) {
-        return (
-            <div className="custom-item">
-            <img src={data.imgSrc} />
-            <div className="product-name">{data.name}</div>
-            </div>
-        );
-    }
 
 #####AngularJS
 
@@ -446,8 +425,17 @@ Using similar techniques, you can customize the input field of the **SelectBox**
             value-expr="id"
             field-template="field"
         >
-            <template #field="field">
-              <Field :field-data="field.data"/>
+
+            <template #field='{ data }'>
+                <div>
+                    <img
+                        :src="data.imgSrc"
+                    >
+                    <DxTextBox
+                        :value="data.name"
+                        style="display:inline-block"
+                    />
+                </div>
             </template>
         </DxSelectBox>
     </template>
@@ -456,13 +444,12 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxSelectBox } from 'devextreme-vue/select-box';
-    import Field from './Field.vue';
+    import { DxSelectBox, DxTextBox } from 'devextreme-vue';
 
     export default {
         components: {
             DxSelectBox,
-            Field
+            DxTextBox
         },
         data() {
             const selectBoxData = [{
@@ -483,34 +470,6 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     }
     </script>
 
-    <!-- tab: Field.vue -->
-    <template>
-        <div class="custom-item">
-            <img
-                :src="fieldData.imgSrc"
-            >
-            <DxTextBox
-                :value="fieldData.name"
-                style="display:inline-block"
-            />
-        </div>
-    </template>
-    <script>
-    import { DxTextBox } from 'devextreme-vue';
-
-    export default {
-    components: {
-        DxTextBox
-    },
-    props: {
-        fieldData: {
-            type: Object,
-            default: () => {}
-        }
-    }
-    };
-    </script>
-
 ##### React
 
     <!-- tab: App.js -->
@@ -518,8 +477,17 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import SelectBox from 'devextreme-react/select-box';
-    import Field from './Field.js';
+    import { SelectBox, TextBox } from 'devextreme-react';
+
+    const renderField = (data) => {
+        return (
+            <div>
+                <img src={data.imgSrc} />
+                    <TextBox style={{display: 'inline-block'}}
+                        defaultValue={data.name} />
+            </div>
+        );
+    }
 
     const selectBoxData = [{
         id: 1,
@@ -541,26 +509,12 @@ Using similar techniques, you can customize the input field of the **SelectBox**
                     value={1}
                     displayExpr="name"
                     valueExpr="id"
-                    fieldRender={Field}
+                    fieldRender={renderField}
                 />
             );
         }
     }
     export default App;
-
-    <!-- tab: Field.js -->
-    import React from 'react';
-    import { TextBox } from 'devextreme-react';
-
-    export default function Field(data) {
-    return (
-        <div>
-        <img src={data.imgSrc} />
-            <TextBox style={{display: 'inline-block'}}
-                defaultValue={data.name} />
-        </div>
-    );
-    }
 
 #####AngularJS
 

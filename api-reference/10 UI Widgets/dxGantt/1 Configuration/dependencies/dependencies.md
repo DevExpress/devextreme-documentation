@@ -106,6 +106,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             DxGanttModule
         ],        
         declarations: [AppComponent],
+        providers: [Service],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
@@ -233,4 +234,3 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     ];
 
 ---
-

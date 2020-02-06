@@ -51,6 +51,60 @@ If the scale displays numbers, assign a number to this option. For example, an *
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxRangeSelector ... >
+            <DxScale
+                aggregation-interval="day">     <!-- Interval of one day -->
+                <DxAggregationInterval 
+                    :days="5" />                <!-- Interval of five days -->
+            </DxScale>
+        </DxRangeSelector>
+    </template>
+
+    <script>
+    import DxRangeSelector, {
+        DxScale,
+        DxAggregationInterval
+    } from 'devextreme-vue/range-selector';
+
+    export default {
+        components: {
+            DxRangeSelector,
+            DxScale,
+            DxAggregationInterval
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import RangeSelector, {
+        Scale,
+        AggregationInterval
+    } from 'devextreme-react/range-selector';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <RangeSelector ... >
+                    <Scale
+                        aggregationInterval="day">    {/* Interval of one day */}
+                        <AggregationInterval 
+                            days={5} />                 {/* Interval of five days */}
+                    </Scale>
+                </RangeSelector>
+            );
+        }
+    }
+
+    export default App;     
+
 ---
 
 On a [logarithmic scale](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/#type'), intervals are based on powers. For example, if the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/logarithmBase.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/#logarithmBase') is 10 and the **aggregationInterval** is 1, the following intervals are produced: 10<sup>0</sup> to 10<sup>1</sup>, 10<sup>1</sup> to 10<sup>2</sup>, 10<sup>2</sup> to 10<sup>3</sup>, etc. If the **aggregationInterval** becomes 2, intervals become longer: 10<sup>0</sup> to 10<sup>2</sup>, 10<sup>2</sup> to 10<sup>4</sup>, 10<sup>4</sup> to 10<sup>6</sup>, etc.

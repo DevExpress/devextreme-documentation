@@ -29,8 +29,6 @@
 
 See examples of using RequireJS with <a href="https://github.com/DevExpress/devextreme-examples/tree/20_1/requirejs-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/20_1/requirejs-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/20_1/requirejs-knockout" target="_blank">Knockout</a> on GitHub. The **index.html** file contains the main code. 
 
-[note] Check the libraries' and frameworks' [supported versions](/concepts/Common/Introduction%20to%20DevExtreme/01%20Integration%20with%203rd-Party%20Libraries%20and%20Frameworks.md '/Documentation/Guide/Common/Introduction_to_DevExtreme/#Integration_with_3rd-Party_Libraries_and_Frameworks').
-
 The following list shows additional modules each library/framework requires: 
 
 - **jQuery**: DevExtreme [jQuery integration](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/060%20integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery') module;

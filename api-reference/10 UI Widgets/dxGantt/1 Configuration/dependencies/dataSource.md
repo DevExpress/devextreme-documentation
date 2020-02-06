@@ -8,17 +8,5 @@ default: null
 Binds the widget to the data source which contains dependencies.
 
 ---
----
-##### jQuery
 
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            dependencies: {
-                dataSource: dependencies
-            },
-            //...
-        });
-    });
-
----
+Refer to the [dependencies]('/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/') option to see how to specify the **dataSource** option.

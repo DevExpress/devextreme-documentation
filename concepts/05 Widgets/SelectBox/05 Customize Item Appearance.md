@@ -164,7 +164,7 @@ If you need a more flexible solution, define a custom template for widget items.
                 <div>
                     <img :src="data.imgSrc">
                     <div style="display:inline-block">
-                    {{ data.name }}
+                        {{ data.name }}
                     </div>
                 </div>
             </template>
@@ -425,12 +425,9 @@ Using similar techniques, you can customize the input field of the **SelectBox**
             value-expr="id"
             field-template="field"
         >
-
             <template #field='{ data }'>
                 <div>
-                    <img
-                        :src="data.imgSrc"
-                    >
+                    <img :src="data.imgSrc">
                     <DxTextBox
                         :value="data.name"
                         style="display:inline-block"
@@ -444,7 +441,8 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxSelectBox, DxTextBox } from 'devextreme-vue';
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+    import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
         components: {
@@ -477,7 +475,8 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { SelectBox, TextBox } from 'devextreme-react';
+    import { SelectBox } from 'devextreme-react/select-box';
+    import { TextBox } from 'devextreme-react/text-box';
 
     const renderField = (data) => {
         return (

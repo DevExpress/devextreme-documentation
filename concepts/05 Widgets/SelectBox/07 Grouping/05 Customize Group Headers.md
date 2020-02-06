@@ -63,6 +63,7 @@ By default, group headers display text of the **key** field in a bold font. You 
             :grouped="true"
             display-expr="name"
             value-expr="count"
+            group-template="group"
         >
             <template #group="{ data }">
                 <p>
@@ -155,7 +156,7 @@ By default, group headers display text of the **key** field in a bold font. You 
 
     const renderGroup = (data) => {
         return (
-            <p >
+            <p>
                 {data.key + ' | Count: ' + data.overallCount}
             </p>
         );

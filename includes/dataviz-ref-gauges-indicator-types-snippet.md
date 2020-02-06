@@ -15,11 +15,11 @@
 ##### Angular
 
     <!--HTML-->
-    <dx-{widget-name}> [value]="40">
+    <dx-{widget-name} [value]="40">
         <dxo-value-indicator <!-- or dxo-subvalue-indicator -->
             type="${{indicatorTypeCamelCase}}"          
-            <!-- The rest of the indicator options go here -->>
-        </dxo-value-indicator>
+            <!-- The rest of the indicator options go here -->
+        ></dxo-value-indicator>
     <dx-{widget-name}>
 
     <!--TypeScript-->
@@ -42,7 +42,7 @@
     <template>
         <Dx{WidgetName} :value="40">
             <DxValueIndicator <!-- or DxSubvalueIndicator -->
-                type="${{indicatorTypeCamelCase}}",
+                type="${{indicatorTypeCamelCase}}"
                 <!-- The rest of the indicator options go here -->
             /> 
         </Dx{WidgetName}>
@@ -75,7 +75,7 @@
             return (
                 <{WidgetName} value={40}>
                     <ValueIndicator {/* or SubvalueIndicator */}                        
-                        type="${{indicatorTypeCamelCase}}",
+                        type="${{indicatorTypeCamelCase}}"
                         {/* The rest of the indicator options go here */}
                     />
                 </{WidgetName}>

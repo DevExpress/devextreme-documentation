@@ -1,17 +1,14 @@
 ---
-id: FileSystemProviderBase.renameItem()
+id: FileSystemProviderBase.getItemsContent()
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: Promise<any>
+##### return: Promise<Object>
 <!-- Description goes here -->
 
-##### param(item): FileSystemItem
-<!-- Description goes here -->
-
-##### param(newName): String
+##### param(items): Array<FileSystemItem>
 <!-- Description goes here -->
 
 ---

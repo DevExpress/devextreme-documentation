@@ -1,5 +1,5 @@
 ---
-id: FileSystemProviderBase.renameItem()
+id: FileSystemProviderBase.createDirectory()
 ---
 ---
 ##### shortDescription
@@ -8,10 +8,10 @@ id: FileSystemProviderBase.renameItem()
 ##### return: Promise<any>
 <!-- Description goes here -->
 
-##### param(item): FileSystemItem
+##### param(parentDirectory): FileSystemItem
 <!-- Description goes here -->
 
-##### param(newName): String
+##### param(name): String
 <!-- Description goes here -->
 
 ---

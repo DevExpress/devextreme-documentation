@@ -1,17 +1,18 @@
 ---
-id: FileSystemProviderBase.renameItem()
+id: ExportDataGridProps.customizeCell
+type: function(options)
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: Promise<any>
+##### param(options): Object
 <!-- Description goes here -->
 
-##### param(item): FileSystemItem
+##### field(options.excelCell): Object
 <!-- Description goes here -->
 
-##### param(newName): String
+##### field(options.gridCell): ExcelDataGridCell
 <!-- Description goes here -->
 
 ---

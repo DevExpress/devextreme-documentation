@@ -1,9 +1,9 @@
 ---
 id: RemoteFileSystemProvider
-module: ui/file_manager/file_provider/remote
+module: file_management/remote_provider
 export: default
 type: Object
-inherits: FileProvider
+inherits: FileSystemProviderBase
 ---
 ---
 ##### shortDescription

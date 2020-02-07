@@ -1,10 +1,7 @@
 ---
-id: FileProvider.uploadFileChunk()
+id: FileSystemProviderBase.uploadFileChunk()
 ---
 ---
-##### shortDescription
-<!-- Description goes here -->
-
 ##### return: Promise<any>
 <!-- Description goes here -->
 
@@ -14,8 +11,7 @@ id: FileProvider.uploadFileChunk()
 ##### param(uploadInfo): Object
 <!-- Description goes here -->
 
-##### param(destinationDirectory): Object
+##### param(destinationDirectory): FileSystemItem
 <!-- Description goes here -->
 
 ---
-<!-- Description goes here -->

@@ -1,18 +1,14 @@
 ---
-id: FileProvider.moveItems()
+id: FileSystemProviderBase.moveItems()
 ---
 ---
-##### shortDescription
-<!-- Description goes here -->
-
 ##### return: Array<Promise<any>>
 <!-- Description goes here -->
 
-##### param(items): Array<Object>
+##### param(items): Array<FileSystemItem>
 <!-- Description goes here -->
 
-##### param(destinationDirectory): Object
+##### param(destinationDirectory): FileSystemItem
 <!-- Description goes here -->
 
 ---
-<!-- Description goes here -->

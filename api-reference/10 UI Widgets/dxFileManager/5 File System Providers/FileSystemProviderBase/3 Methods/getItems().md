@@ -1,10 +1,7 @@
 ---
-id: FileProvider.getItems()
+id: FileSystemProviderBase.getItems()
 ---
 ---
-##### shortDescription
-<!-- Description goes here -->
-
 ##### return: Promise<Array<Object>>
 <!-- Description goes here -->
 
@@ -12,4 +9,3 @@ id: FileProvider.getItems()
 <!-- Description goes here -->
 
 ---
-<!-- Description goes here -->

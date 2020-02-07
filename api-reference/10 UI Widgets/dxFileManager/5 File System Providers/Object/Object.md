@@ -1,9 +1,9 @@
 ---
 id: ObjectFileSystemProvider
-module: ui/file_manager/file_provider/array
+module: file_management/object_provider
 export: default
 type: Object
-inherits: FileProvider
+inherits: FileSystemProviderBase
 ---
 ---
 ##### shortDescription

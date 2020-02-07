@@ -1,9 +1,9 @@
 ---
 id: CustomFileSystemProvider
-module: ui/file_manager/file_provider/custom
+module: file_management/custom_provider
 export: default
 type: Object
-inherits: FileProvider
+inherits: FileSystemProviderBase
 ---
 ---
 ##### shortDescription

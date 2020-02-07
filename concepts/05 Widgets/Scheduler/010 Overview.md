@@ -81,40 +81,40 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
 	
 ##### Vue
 
-	<DxScheduler
-		:data-source='dataSource'
-		:current-date='currentDate'
-	/>
+    <DxScheduler
+        :data-source='dataSource'
+        :current-date='currentDate'
+    />
 
-	<script>
-		import DxScheduler from 'devextreme-vue/scheduler';
+    <script>
+        import DxScheduler from 'devextreme-vue/scheduler';
 
-		export default {
-		  components: {
-			DxScheduler
-		  },
-		  data() {
-			return {
-			  currentDate: new Date(2017, 4, 25),
-			  dataSource: [{
-					text: 'Website Re-Design Plan',
-					startDate: new Date(2016, 4, 25, 1, 30),
-					endDate: new Date(2016, 4, 25, 3, 30)
-				}, {
-					text: 'Book Flights to San Fran for Sales Trip',
-					startDate: new Date(2016, 4, 25, 9, 0),
-					endDate: new Date(2016, 4, 25, 10, 0)
-				}, 
-				// ...
-				]
-			};
-		  }
-		};
-	</script>
+        export default {
+          components: {
+            DxScheduler
+          },
+          data() {
+            return {
+              currentDate: new Date(2017, 4, 25),
+              dataSource: [{
+                    text: 'Website Re-Design Plan',
+                    startDate: new Date(2016, 4, 25, 1, 30),
+                    endDate: new Date(2016, 4, 25, 3, 30)
+                }, {
+                    text: 'Book Flights to San Fran for Sales Trip',
+                    startDate: new Date(2016, 4, 25, 9, 0),
+                    endDate: new Date(2016, 4, 25, 10, 0)
+                }, 
+                // ...
+                ]
+            };
+          }
+        };
+    </script>
 
 ##### React
 
-	<Scheduler
+    <Scheduler
         dataSource={[{
             text: 'Website Re-Design Plan',
             startDate: new Date(2016, 4, 25, 1, 30),
@@ -127,7 +127,7 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
         // ...
         ]}
         defaultCurrentDate={new Date(2016, 4, 25)}
-	/>
+    />
 
 ---
 
@@ -217,41 +217,41 @@ If your appointments have a different structure, specify:
 
 ##### Vue
 
-	<DxScheduler
-		:data-source='dataSource'
-		text-expr='subject'
+    <DxScheduler
+        :data-source='dataSource'
+        text-expr='subject'
         start-date-expr='from'
         end-date-expr='to'
-	/>
+    />
 
-	<script>
-		import DxScheduler from 'devextreme-vue/scheduler';
+    <script>
+        import DxScheduler from 'devextreme-vue/scheduler';
 
-		export default {
-		  components: {
-			DxScheduler
-		  },
-		  data() {
-			return {
-			  dataSource: [{
-					text: 'Website Re-Design Plan',
-					startDate: new Date(2016, 4, 25, 1, 30),
-					endDate: new Date(2016, 4, 25, 3, 30)
-				}, {
-					text: 'Book Flights to San Fran for Sales Trip',
-					startDate: new Date(2016, 4, 25, 9, 0),
-					endDate: new Date(2016, 4, 25, 10, 0)
-				}, 
-				// ...
-				]
-			};
-		  }
-		};
-	</script>
+        export default {
+          components: {
+            DxScheduler
+          },
+          data() {
+            return {
+              dataSource: [{
+                    text: 'Website Re-Design Plan',
+                    startDate: new Date(2016, 4, 25, 1, 30),
+                    endDate: new Date(2016, 4, 25, 3, 30)
+                }, {
+                    text: 'Book Flights to San Fran for Sales Trip',
+                    startDate: new Date(2016, 4, 25, 9, 0),
+                    endDate: new Date(2016, 4, 25, 10, 0)
+                }, 
+                // ...
+                ]
+            };
+          }
+        };
+    </script>
 
 ##### React
 
-	<Scheduler
+    <Scheduler
         dataSource={[{
             text: 'Website Re-Design Plan',
             startDate: new Date(2016, 4, 25, 1, 30),
@@ -263,10 +263,10 @@ If your appointments have a different structure, specify:
         }, 
         // ...
         ]}
-		textExpr='subject',
+        textExpr='subject',
         startDateExpr='from',
         endDateExpr='to'
-	/>
+    />
 
 ---
 

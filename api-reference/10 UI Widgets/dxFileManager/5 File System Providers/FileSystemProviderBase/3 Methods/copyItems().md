@@ -1,5 +1,5 @@
 ---
-id: FileProvider.copyItems()
+id: FileSystemProviderBase.copyItems()
 ---
 ---
 ##### shortDescription

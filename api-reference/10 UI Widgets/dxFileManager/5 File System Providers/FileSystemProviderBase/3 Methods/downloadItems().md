@@ -1,5 +1,5 @@
 ---
-id: FileProvider.downloadItems()
+id: FileSystemProviderBase.downloadItems()
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.copyItem
+id: CustomFileSystemProvider.Options.copyItem
 type: function()
 ---
 ---

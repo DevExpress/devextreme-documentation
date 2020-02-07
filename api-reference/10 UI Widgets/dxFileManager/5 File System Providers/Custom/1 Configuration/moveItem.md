@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.moveItem
+id: CustomFileSystemProvider.Options.moveItem
 type: function()
 ---
 ---

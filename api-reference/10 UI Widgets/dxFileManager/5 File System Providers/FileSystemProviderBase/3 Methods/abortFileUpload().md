@@ -1,5 +1,5 @@
 ---
-id: FileProvider.abortFileUpload()
+id: FileSystemProviderBase.abortFileUpload()
 ---
 ---
 ##### shortDescription

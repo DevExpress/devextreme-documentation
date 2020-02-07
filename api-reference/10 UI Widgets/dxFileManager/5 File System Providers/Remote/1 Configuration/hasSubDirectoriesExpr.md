@@ -1,5 +1,5 @@
 ---
-id: RemoteFileProvider.Options.hasSubDirectoriesExpr
+id: RemoteFileSystemProvider.Options.hasSubDirectoriesExpr
 type: String | function()
 ---
 ---

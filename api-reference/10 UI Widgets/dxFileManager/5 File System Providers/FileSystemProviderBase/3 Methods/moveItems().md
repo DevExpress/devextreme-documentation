@@ -1,5 +1,5 @@
 ---
-id: FileProvider.moveItems()
+id: FileSystemProviderBase.moveItems()
 ---
 ---
 ##### shortDescription

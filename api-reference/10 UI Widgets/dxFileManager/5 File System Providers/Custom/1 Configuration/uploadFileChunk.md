@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.uploadFileChunk
+id: CustomFileSystemProvider.Options.uploadFileChunk
 type: function()
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.abortFileUpload
+id: CustomFileSystemProvider.Options.abortFileUpload
 type: function()
 ---
 ---

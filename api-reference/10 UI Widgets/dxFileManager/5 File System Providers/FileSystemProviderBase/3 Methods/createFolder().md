@@ -1,5 +1,5 @@
 ---
-id: FileProvider.createFolder()
+id: FileSystemProviderBase.createFolder()
 ---
 ---
 ##### shortDescription

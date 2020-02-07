@@ -1,5 +1,5 @@
 ---
-id: ArrayFileProvider.Options.data
+id: ObjectFileSystemProvider.Options.data
 type: Array<any>
 ---
 ---

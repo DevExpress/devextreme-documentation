@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.hasSubDirectoriesExpr
+id: CustomFileSystemProvider.Options.hasSubDirectoriesExpr
 type: String | function()
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.createDirectory
+id: CustomFileSystemProvider.Options.createDirectory
 type: function()
 ---
 ---

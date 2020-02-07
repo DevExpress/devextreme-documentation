@@ -1,5 +1,5 @@
 ---
-id: ArrayFileProvider.Options.itemsExpr
+id: ObjectFileSystemProvider.Options.itemsExpr
 type: String | function()
 ---
 ---

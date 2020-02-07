@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.uploadChunkSize
+id: CustomFileSystemProvider.Options.uploadChunkSize
 type: Number
 ---
 ---

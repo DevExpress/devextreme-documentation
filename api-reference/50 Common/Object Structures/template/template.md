@@ -80,7 +80,7 @@ Specifies the name of the template to use if the template is defined within a wi
     ---
 
 - **DOM Node or jQuery**        
-Specifies the page element containing the template. Useful for referring to external templates when [using a 3rd-party template engine](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines').
+Specifies the page element containing the template. Use it only for referring to external templates when [using a 3rd-party template engine](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines').
 
         <!--JavaScript-->
         DevExpress.setTemplateEngine("underscore");

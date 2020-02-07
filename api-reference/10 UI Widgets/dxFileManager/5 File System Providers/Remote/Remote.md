@@ -1,5 +1,5 @@
 ---
-id: RemoteFileProvider
+id: RemoteFileSystemProvider
 module: ui/file_manager/file_provider/remote
 export: default
 type: Object

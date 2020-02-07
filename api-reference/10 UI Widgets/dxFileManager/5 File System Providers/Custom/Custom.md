@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider
+id: CustomFileSystemProvider
 module: ui/file_manager/file_provider/custom
 export: default
 type: Object

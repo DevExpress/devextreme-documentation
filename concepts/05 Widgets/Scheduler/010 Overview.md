@@ -78,56 +78,79 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
         ],
         // ...
     })
-	
+
 ##### Vue
 
-	<DxScheduler
-		:data-source='dataSource'
-		:current-date='currentDate'
-	/>
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler>
+            :data-source="dataSource"
+            :current-date="currentDate"
+        </DxScheduler>
+    </template>
 
-	<script>
-		import DxScheduler from 'devextreme-vue/scheduler';
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-		export default {
-		  components: {
-			DxScheduler
-		  },
-		  data() {
-			return {
-			  currentDate: new Date(2017, 4, 25),
-			  dataSource: [{
-					text: 'Website Re-Design Plan',
-					startDate: new Date(2016, 4, 25, 1, 30),
-					endDate: new Date(2016, 4, 25, 3, 30)
-				}, {
-					text: 'Book Flights to San Fran for Sales Trip',
-					startDate: new Date(2016, 4, 25, 9, 0),
-					endDate: new Date(2016, 4, 25, 10, 0)
-				}, 
-				// ...
-				]
-			};
-		  }
-		};
-	</script>
+    import DxScheduler, {
+        DxScheduler
+    } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 25),
+                dataSource: [{
+                    text: "Website Re-Design Plan",
+                    startDate: new Date(2016, 4, 25, 9, 30),
+                    endDate: new Date(2016, 4, 25, 11, 30)
+                }, {
+                    text: "Book Flights to San Fran for Sales Trip",
+                    startDate: new Date(2016, 4, 25, 12, 0),
+                    endDate: new Date(2016, 4, 25, 13, 0)
+                }, 
+                // ...
+                ]
+            }
+        }
+    }
+    </script>
 
 ##### React
 
-	<Scheduler
-        dataSource={[{
-            text: 'Website Re-Design Plan',
-            startDate: new Date(2016, 4, 25, 1, 30),
-            endDate: new Date(2016, 4, 25, 3, 30)
-        }, {
-            text: 'Book Flights to San Fran for Sales Trip',
-            startDate: new Date(2016, 4, 25, 9, 0),
-            endDate: new Date(2016, 4, 25, 10, 0)
-        }, 
-        // ...
-        ]}
-        defaultCurrentDate={new Date(2016, 4, 25)}
-	/>
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {Scheduler} from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler>
+                    dataSource={[{
+                        text: "Website Re-Design Plan",
+                        startDate: new Date(2016, 4, 25, 9, 30),
+                        endDate: new Date(2016, 4, 25, 11, 30)
+                    }, {
+                        text: "Book Flights to San Fran for Sales Trip",
+                        startDate: new Date(2016, 4, 25, 12, 0),
+                        endDate: new Date(2016, 4, 25, 13, 0)
+                    }, 
+                    // ...
+                    ]}
+                    defaultCurrentDate={new Date(2016, 4, 25)}
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -217,56 +240,80 @@ If your appointments have a different structure, specify:
 
 ##### Vue
 
-	<DxScheduler
-		:data-source='dataSource'
-		text-expr='subject'
-        start-date-expr='from'
-        end-date-expr='to'
-	/>
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler>
+            :data-source="dataSource"
+            text-expr: "subject",
+            start-date-expr: "from",
+            end-date-expr: "to"
+        </DxScheduler>
+    </template>
 
-	<script>
-		import DxScheduler from 'devextreme-vue/scheduler';
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-		export default {
-		  components: {
-			DxScheduler
-		  },
-		  data() {
-			return {
-			  dataSource: [{
-					text: 'Website Re-Design Plan',
-					startDate: new Date(2016, 4, 25, 1, 30),
-					endDate: new Date(2016, 4, 25, 3, 30)
-				}, {
-					text: 'Book Flights to San Fran for Sales Trip',
-					startDate: new Date(2016, 4, 25, 9, 0),
-					endDate: new Date(2016, 4, 25, 10, 0)
-				}, 
-				// ...
-				]
-			};
-		  }
-		};
-	</script>
+    import DxScheduler, {
+        DxScheduler
+    } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 25),
+                dataSource: [{
+                    text: "Website Re-Design Plan",
+                    startDate: new Date(2016, 4, 25, 9, 30),
+                    endDate: new Date(2016, 4, 25, 11, 30)
+                }, {
+                    text: "Book Flights to San Fran for Sales Trip",
+                    startDate: new Date(2016, 4, 25, 12, 0),
+                    endDate: new Date(2016, 4, 25, 13, 0)
+                }, 
+                // ...
+                ]
+            }
+        }
+    }
+    </script>
 
 ##### React
 
-	<Scheduler
-        dataSource={[{
-            text: 'Website Re-Design Plan',
-            startDate: new Date(2016, 4, 25, 1, 30),
-            endDate: new Date(2016, 4, 25, 3, 30)
-        }, {
-            text: 'Book Flights to San Fran for Sales Trip',
-            startDate: new Date(2016, 4, 25, 9, 0),
-            endDate: new Date(2016, 4, 25, 10, 0)
-        }, 
-        // ...
-        ]}
-		textExpr='subject',
-        startDateExpr='from',
-        endDateExpr='to'
-	/>
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {Scheduler} from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler>
+                    dataSource={[{
+                        text: "Website Re-Design Plan",
+                        startDate: new Date(2016, 4, 25, 9, 30),
+                        endDate: new Date(2016, 4, 25, 11, 30)
+                    }, {
+                        text: "Book Flights to San Fran for Sales Trip",
+                        startDate: new Date(2016, 4, 25, 12, 0),
+                        endDate: new Date(2016, 4, 25, 13, 0)
+                    }, 
+                    // ...
+                    ]}
+                    textExpr="subject"
+                    startDateExpr="from"
+                    endDateExpr="to"
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
 
 ---
 

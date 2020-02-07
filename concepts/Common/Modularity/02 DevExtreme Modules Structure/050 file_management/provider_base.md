@@ -1,1 +1,1 @@
-Exposes the base file sytem provider.
+Exposes the base file system provider.

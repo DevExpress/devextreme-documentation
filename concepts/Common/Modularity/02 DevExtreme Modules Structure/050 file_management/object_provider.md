@@ -1,4 +1,4 @@
-Exposes the Object file sytem provider.
+Exposes the Object file system provider.
 
 Exports:
 

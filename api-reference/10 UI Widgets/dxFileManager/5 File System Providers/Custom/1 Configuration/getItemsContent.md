@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.getItemsContent
+id: CustomFileSystemProvider.Options.getItemsContent
 type: function()
 ---
 ---

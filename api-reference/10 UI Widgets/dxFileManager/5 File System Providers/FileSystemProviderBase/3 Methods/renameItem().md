@@ -1,5 +1,5 @@
 ---
-id: FileProvider.renameItem()
+id: FileSystemProviderBase.renameItem()
 ---
 ---
 ##### shortDescription

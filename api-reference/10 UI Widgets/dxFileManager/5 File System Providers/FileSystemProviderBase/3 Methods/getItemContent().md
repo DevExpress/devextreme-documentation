@@ -1,5 +1,5 @@
 ---
-id: FileProvider.getItemContent()
+id: FileSystemProviderBase.getItemContent()
 ---
 ---
 ##### shortDescription

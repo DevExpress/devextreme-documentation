@@ -1,5 +1,5 @@
 ---
-id: FileProvider.Options.sizeExpr
+id: FileSystemProviderBase.Options.sizeExpr
 type: String | function()
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: FileProvider.uploadFileChunk()
+id: FileSystemProviderBase.uploadFileChunk()
 ---
 ---
 ##### shortDescription

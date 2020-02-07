@@ -1,5 +1,5 @@
 ---
-id: RemoteFileProvider.Options.endpointUrl
+id: RemoteFileSystemProvider.Options.endpointUrl
 type: String
 ---
 ---

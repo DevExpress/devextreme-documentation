@@ -1,5 +1,5 @@
 ---
-id: FileProvider.Options.nameExpr
+id: FileSystemProviderBase.Options.nameExpr
 type: String | function()
 ---
 ---

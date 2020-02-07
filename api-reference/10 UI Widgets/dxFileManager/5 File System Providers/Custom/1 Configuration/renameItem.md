@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.renameItem
+id: CustomFileSystemProvider.Options.renameItem
 type: function()
 ---
 ---

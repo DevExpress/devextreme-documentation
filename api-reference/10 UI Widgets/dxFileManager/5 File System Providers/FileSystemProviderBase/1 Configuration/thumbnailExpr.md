@@ -1,5 +1,5 @@
 ---
-id: FileProvider.Options.thumbnailExpr
+id: FileSystemProviderBase.Options.thumbnailExpr
 type: String | function()
 ---
 ---

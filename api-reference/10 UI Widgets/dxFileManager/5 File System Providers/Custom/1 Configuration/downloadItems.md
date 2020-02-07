@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.downloadItems
+id: CustomFileSystemProvider.Options.downloadItems
 type: function()
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: FileProvider.deleteItems()
+id: FileSystemProviderBase.deleteItems()
 ---
 ---
 ##### shortDescription

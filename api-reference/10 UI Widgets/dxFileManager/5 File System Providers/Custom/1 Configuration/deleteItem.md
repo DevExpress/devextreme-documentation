@@ -1,5 +1,5 @@
 ---
-id: CustomFileProvider.Options.deleteItem
+id: CustomFileSystemProvider.Options.deleteItem
 type: function()
 ---
 ---

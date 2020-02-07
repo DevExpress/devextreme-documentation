@@ -1,5 +1,5 @@
 ---
-id: FileProvider.Options.dateModifiedExpr
+id: FileSystemProviderBase.Options.dateModifiedExpr
 type: String | function()
 ---
 ---

@@ -14,7 +14,7 @@ id: FileSystemProviderBase.uploadFileChunk()
 ##### param(uploadInfo): Object
 <!-- Description goes here -->
 
-##### param(destinationDirectory): Object
+##### param(destinationDirectory): FileSystemItem
 <!-- Description goes here -->
 
 ---

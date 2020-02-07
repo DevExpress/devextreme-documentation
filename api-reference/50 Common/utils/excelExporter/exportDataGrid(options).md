@@ -1,17 +1,15 @@
 ---
-id: FileSystemProviderBase.renameItem()
+id: excelExporter.exportDataGrid(options)
+module: exceljs/excelExporter/exportDataGrid
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: Promise<any>
+##### return: Promise<CellsRange>
 <!-- Description goes here -->
 
-##### param(item): FileSystemItem
-<!-- Description goes here -->
-
-##### param(newName): String
+##### param(options): ExportDataGridProps
 <!-- Description goes here -->
 
 ---

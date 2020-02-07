@@ -78,7 +78,7 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
         ],
         // ...
     })
-	
+
 ##### Vue
 
     <DxScheduler

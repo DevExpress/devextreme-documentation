@@ -1,4 +1,4 @@
-Exposes the Custom file sytem provider.
+Exposes the Custom file system provider.
 
 Exports:
 

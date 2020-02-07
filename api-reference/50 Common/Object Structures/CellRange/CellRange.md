@@ -1,7 +1,6 @@
 ---
-id: ExportDataGridProps.topLeftCell
-type: CellAddress
-default: { row: 1, column: 1 }
+id: CellRange
+type: Object
 ---
 ---
 ##### shortDescription

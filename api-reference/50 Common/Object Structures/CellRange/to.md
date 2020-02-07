@@ -1,6 +1,7 @@
 ---
-id: CellsRange.to
+id: CellRange.to
 type: CellAddress
+inheritsType: CellAddress
 ---
 ---
 ##### shortDescription

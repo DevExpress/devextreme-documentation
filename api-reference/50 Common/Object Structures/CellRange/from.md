@@ -1,6 +1,7 @@
 ---
-id: ExportDataGridProps.loadPanel
-type: ExportLoadPanel
+id: CellRange.from
+type: CellAddress
+inheritsType: CellAddress
 ---
 ---
 ##### shortDescription

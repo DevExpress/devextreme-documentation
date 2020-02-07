@@ -3,7 +3,7 @@ id: ObjectFileSystemProvider
 module: ui/file_manager/file_provider/array
 export: default
 type: Object
-inherits: FileProvider
+inherits: FileSystemProviderBase
 ---
 ---
 ##### shortDescription

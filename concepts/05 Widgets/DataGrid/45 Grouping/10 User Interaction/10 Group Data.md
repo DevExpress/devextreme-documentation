@@ -51,11 +51,10 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ...
-        > 
-            <DxGrouping :contextMenuEnabled="true"/>
+        <DxDataGrid ... > 
+            <DxGrouping :context-menu-enabled="true"/>
             <DxGroupPanel :visible="true"/> <!-- or "auto" -->
-        </Dx{WidgetName}>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -63,14 +62,14 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
     import 'devextreme/dist/css/dx.light.css';
 
     import {
-        Dx{WidgetName},
+        DxDataGrid,
         DxGrouping,
         DxGroupPanel
-    } from 'devextreme-vue/{widget-name}';
+    } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
-            Dx{WidgetName},
+            DxDataGrid,
             DxGrouping,
             DxGroupPanel
         }
@@ -85,19 +84,18 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName}, {
+    import DataGrid, {
         Grouping,
         GroupPanel
-    } from 'devextreme-react/{widget-name}';
+    } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} ...
-                >
+                <DataGrid ... >
                     <Grouping contextMenuEnabled={true} />
-                    <GroupPanel visible={true} /> <!-- or "auto" -->
-                </{WidgetName}>
+                    <GroupPanel visible={true} /> {/* or "auto" */}
+                </DataGrid>
             );
         }
     }
@@ -106,7 +104,7 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().{WidgetName}()
+    @(Html.DevExtreme().DataGrid()
         // ...
         .Grouping(grouping => grouping.ContextMenuEnabled(true))
         .GroupPanel(groupPanel => groupPanel.Visible(true)) //or "auto"
@@ -158,13 +156,12 @@ You can prevent a user from dragging columns to the group panel, in which case i
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ...
-        > 
+        <DxDataGrid ... > 
             <DxGroupPanel
                 :visible="true"
-                :allowColumnDragging="false"
+                :allow-column-dragging="false"
             />
-        </Dx{WidgetName}>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -172,13 +169,13 @@ You can prevent a user from dragging columns to the group panel, in which case i
     import 'devextreme/dist/css/dx.light.css';
 
     import {
-        Dx{WidgetName},
+        DxDataGrid,
         DxGroupPanel
-    } from 'devextreme-vue/{widget-name}';
+    } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
-            Dx{WidgetName},
+            DxDataGrid,
             DxGroupPanel
         }
     }
@@ -192,20 +189,19 @@ You can prevent a user from dragging columns to the group panel, in which case i
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName}, {
+    import DataGrid, {
         GroupPanel
-    } from 'devextreme-react/{widget-name}';
+    } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} ...
-                >
+                <DataGrid ... >
                     <GroupPanel
                         visible={true}
                         allowColumnDragging={false}
                     />
-                </{WidgetName}>
+                </DataGrid>
             );
         }
     }
@@ -214,9 +210,12 @@ You can prevent a user from dragging columns to the group panel, in which case i
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().{WidgetName}()
+    @(Html.DevExtreme().DataGrid()
         // ...
-        .GroupPanel(groupPanel => groupPanel.Visible(true).AllowColumnDragging(false))
+        .GroupPanel(groupPanel => groupPanel
+            .Visible(true)
+            .AllowColumnDragging(false)
+        )
     )
 
 ---
@@ -267,13 +266,12 @@ If a specific column should never take part in grouping, set its [allowGrouping]
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ...
-        > 
+        <DxDataGrid ... > 
             <DxColumn
                 data-field="id"
-                :allowGrouping="false"
+                :allow-grouping="false"
             />
-        </Dx{WidgetName}>
+        </DxDataGrid>
     </template>
 
     <script>
@@ -281,13 +279,13 @@ If a specific column should never take part in grouping, set its [allowGrouping]
     import 'devextreme/dist/css/dx.light.css';
 
     import {
-        Dx{WidgetName},
+        DxDataGrid,
         DxColumn
-    } from 'devextreme-vue/{widget-name}';
+    } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
-            Dx{WidgetName},
+            DxDataGrid,
             DxColumn
         }
     }
@@ -301,19 +299,18 @@ If a specific column should never take part in grouping, set its [allowGrouping]
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName}, {
+    import DataGrid, {
         Column
-    } from 'devextreme-react/{widget-name}';
+    } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} ...
-                >
+                <DataGrid ... >
                     <Column
                         dataField="id"
                         allowGrouping={false} />
-                </{WidgetName}>
+                </DataGrid>
             );
         }
     }
@@ -322,12 +319,12 @@ If a specific column should never take part in grouping, set its [allowGrouping]
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().{WidgetName}()
+    @(Html.DevExtreme().DataGrid()
         // ...
         .Columns(columns => {
             columns.AddFor(m => m.id)
                 .AllowGrouping(false);
-    })
+        })
     )
 
 ---

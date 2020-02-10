@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Distance from the center of the widget.
 
 ---
 <!-- Description goes here -->

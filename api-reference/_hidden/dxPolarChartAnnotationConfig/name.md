@@ -4,8 +4,8 @@ type: String
 default: undefined
 ---
 ---
-##### shortDescription
-<!-- Description goes here -->
+##### shortDescription      
+Specifies the annotation's name.    
 
 ---
 <!-- Description goes here -->

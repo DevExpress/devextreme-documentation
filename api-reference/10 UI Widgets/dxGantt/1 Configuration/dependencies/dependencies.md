@@ -27,10 +27,10 @@ The **Gantt** widget supports the following dependency types:
 
 - Start to Finish (SF) - The predecessor task's start point specifies the successor task's end point.
 
-Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource) option to bind the widget to a data source, which contains information about dependency types. If the field names in your data source differ from the 'id', 'type', 'predecessorId' and 'successorId' default names, use the [keyExpr](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#keyExpr), [typeExpr](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#typeExpr) options to map data fields. 
+Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource') option to bind the widget to a data source, which contains information about dependency types. If the field names in your data source differ from the 'id', 'type', 'predecessorId' and 'successorId' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#keyExpr'), [typeExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/typeExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#typeExpr') options to map data fields.
 
 #####See Also#####
-- [Gantt Elements - Dependency](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Dependency)
+- [Gantt Elements - Dependency](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/20%20Dependency.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Dependency')
 
 ---
 

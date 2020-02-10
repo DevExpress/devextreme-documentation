@@ -1,4 +1,4 @@
-Exposes the Remote file sytem provider.
+Exposes the Remote file system provider.
 
 Exports:
 

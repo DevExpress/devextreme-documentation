@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.dataType
-acceptValues: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
+acceptValues: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime' | 'guid'
 type: String
 default: undefined
 ---

@@ -51,6 +51,72 @@ The **SelectBox** widget allows an end user to search through its items. This fe
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+            :search-enabled="true"
+            :search-expr="['country', 'capital']"
+            display-expr="country"
+            value-expr="id"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const selectBoxData = [
+                { id: 1, country: "Afghanistan", capital: "Kabul" },
+                { id: 2, country: "Albania", capital: "Tirana" },
+                // ...
+            ];
+            return {
+                selectBoxData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const selectBoxData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        { id: 2, country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData} 
+                    searchEnabled={true}
+                    searchExpr={['country', 'capital']}
+                    displayExpr="country"
+                    valueExpr="id"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -63,6 +129,12 @@ When a user types a string in the input field, the **SelectBox** suggests all it
 #####jQuery
 
     <!--JavaScript-->
+    var selectBoxData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        { id: 2, country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
     $(function() {
         $("#selectBoxContainer").dxSelectBox({
             dataSource: selectBoxData,
@@ -104,6 +176,74 @@ When a user types a string in the input field, the **SelectBox** suggests all it
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+            :search-enabled="true"
+            search-expr="country"
+            display-expr="country"
+            value-expr="id"
+            search-mode="startswith"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const selectBoxData = [
+                { id: 1, country: "Afghanistan", capital: "Kabul" },
+                { id: 2, country: "Albania", capital: "Tirana" },
+                // ...
+            ];
+            return {
+                selectBoxData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const selectBoxData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        { id: 2, country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData} 
+                    searchEnabled={true}
+                    searchExpr="country"
+                    displayExpr="country"
+                    valueExpr="id"
+                    searchMode="startswith"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 There is a delay between the moment a user finishes typing and the moment the search is executed. To increase or descrease it, use the [searchTimeout](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#searchTimeout') option. The delay is measured in milliseconds.
@@ -112,6 +252,12 @@ There is a delay between the moment a user finishes typing and the moment the se
 #####jQuery
 
     <!--JavaScript-->
+    var selectBoxData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        { id: 2, country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
     $(function() {
         $("#selectBoxContainer").dxSelectBox({
             dataSource: selectBoxData,
@@ -153,6 +299,74 @@ There is a delay between the moment a user finishes typing and the moment the se
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+            :search-enabled="true"
+            :search-timeout="1000"
+            search-expr="country"
+            display-expr="country"
+            value-expr="id"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const selectBoxData = [
+                { id: 1, country: "Afghanistan", capital: "Kabul" },
+                { id: 2, country: "Albania", capital: "Tirana" },
+                // ...
+            ];
+            return {
+                selectBoxData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const selectBoxData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        { id: 2, country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData} 
+                    searchEnabled={true}
+                    searchTimeout={1000}
+                    searchExpr="country"
+                    displayExpr="country"
+                    valueExpr="id"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 The **SelectBox** widget starts searching after a user has typed at least one character by default. Use the **minSearchLength** option to increase the number of characters that triggers the search. 
@@ -161,6 +375,11 @@ The **SelectBox** widget starts searching after a user has typed at least one ch
 #####jQuery
 
     <!--JavaScript-->
+    var selectBoxData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        // ...
+    ];
+
     $(function() {
         $("#selectBoxContainer").dxSelectBox({
             dataSource: selectBoxData,
@@ -200,6 +419,72 @@ The **SelectBox** widget starts searching after a user has typed at least one ch
          ],
          // ...
      })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+            :search-enabled="true"
+            :min-search-length="3"
+            search-expr="country"
+            display-expr="country"
+            value-expr="id"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const selectBoxData = [
+                { id: 1, country: "Afghanistan", capital: "Kabul" },
+                // ...
+            ];
+            return {
+                selectBoxData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const selectBoxData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData} 
+                    searchEnabled={true}
+                    minSearchLength={3}
+                    searchExpr="country"
+                    displayExpr="country"
+                    valueExpr="id"
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

@@ -81,6 +81,68 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            @initialized="registerKeyHandlers"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        methods: {
+            registerKeyHandlers: function(e) {
+                const selectBoxInstance = e.component;
+                selectBoxInstance.registerKeyHandler("backspace", function (e) {
+                    // The argument "e" contains information on the event
+                });
+                selectBoxInstance.registerKeyHandler("space", function (e) {
+                    // ...
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    class App extends React.Component {
+        registerKeyHandlers(e) {
+            const selectBoxInstance = e.component;
+            selectBoxInstance.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            selectBoxInstance.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+        render() {
+            return (
+                <SelectBox ...
+                    onInitialized={this.registerKeyHandlers}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

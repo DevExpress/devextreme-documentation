@@ -8,7 +8,7 @@ id: FileSystemProviderBase.getItems()
 ##### return: Promise<Array<Object>>
 <!-- Description goes here -->
 
-##### param(pathInfo): Object
+##### param(parentDirectory): FileSystemItem
 <!-- Description goes here -->
 
 ---

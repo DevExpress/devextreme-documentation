@@ -66,6 +66,90 @@ Items in the **SelectBox** can be grouped if they are grouped in the data source
         valueExpr="count">
     </dx-select-box>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="fruitsVegetables"
+            :grouped="true"
+            display-expr="name"
+            value-expr="count"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const fruitsVegetables = [{
+                key: "Fruits",
+                items: [
+                    { name: "Apples", count: 10 },
+                    { name: "Oranges", count: 12 },
+                    { name: "Lemons", count: 15 }
+                ]
+            }, {
+                key: "Vegetables",
+                items: [
+                    { name: "Potatoes", count: 5 },
+                    { name: "Tomatoes", count: 9 },
+                    { name: "Turnips", count: 8 }
+                ]
+            }];
+            return {
+                fruitsVegetables
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={fruitsVegetables}
+                    grouped="true"
+                    displayExpr="name"
+                    valueExpr="count"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 [note]Only one-level grouping is supported.
@@ -157,6 +241,112 @@ If objects in your data source miss the **key** and **items** fields, use the [m
         valueExpr="count">
     </dx-select-box>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxDataSource"
+            :grouped="true"
+            display-expr="name"
+            value-expr="count"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const fruitsVegetables = [{
+                type: "Fruits",
+                collection: [
+                    { name: "Apples", count: 10 },
+                    { name: "Oranges", count: 12 },
+                    { name: "Lemons", count: 15 }
+                ]
+            }, {
+                type: "Vegetables",
+                collection: [
+                    { name: "Potatoes", count: 5 },
+                    { name: "Tomatoes", count: 9 },
+                    { name: "Turnips", count: 8 }
+                ]
+            }];
+            const selectBoxDataSource = new DataSource({
+                store: fruitsVegetables,
+                map: function(item) {
+                    return {
+                        key: item.type,
+                        items: item.collection
+                    }
+                }
+            });
+
+            return {
+                selectBoxDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const fruitsVegetables = [{
+        type: "Fruits",
+        collection: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        type: "Vegetables",
+        collection: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    const selectBoxDataSource = new DataSource({
+        store: fruitsVegetables,
+        map: function(item) {
+            return {
+                key: item.type,
+                items: item.collection
+            }
+        }
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxDataSource}
+                    grouped="true"
+                    displayExpr="name"
+                    valueExpr="count"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 If your data is not grouped, you can group it using the [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') option of the **DataSource**. See the [Data Layer - Grouping](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Grouping') topic for details.
@@ -221,6 +411,87 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
         displayExpr="name"
         valueExpr="count">
     </dx-select-box>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxDataSource"
+            :grouped="type"
+            display-expr="name"
+            value-expr="count"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const fruitsVegetables = [
+                { type: "Fruits", name: "Apples", count: 10 },
+                { type: "Fruits", name: "Oranges", count: 12 },
+                { type: "Fruits", name: "Lemons", count: 15 },
+                { type: "Vegetables", name: "Potatoes", count: 5 },
+                { type: "Vegetables", name: "Tomatoes", count: 9 },
+                { type: "Vegetables", name: "Turnips", count: 8 }
+            ];
+            const selectBoxDataSource = new DataSource({
+                store: fruitsVegetables,
+                group: "type"
+            });
+
+            return {
+                selectBoxDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const fruitsVegetables = [
+        { type: "Fruits", name: "Apples", count: 10 },
+        { type: "Fruits", name: "Oranges", count: 12 },
+        { type: "Fruits", name: "Lemons", count: 15 },
+        { type: "Vegetables", name: "Potatoes", count: 5 },
+        { type: "Vegetables", name: "Tomatoes", count: 9 },
+        { type: "Vegetables", name: "Turnips", count: 8 }
+    ];
+    const selectBoxDataSource = new DataSource({
+        store: fruitsVegetables,
+        group: "type"
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxDataSource}
+                    grouped="type"
+                    displayExpr="name"
+                    valueExpr="count"
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

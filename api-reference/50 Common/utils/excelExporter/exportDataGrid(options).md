@@ -1,12 +1,12 @@
 ---
 id: excelExporter.exportDataGrid(options)
-module: exceljs/excelExporter/exportDataGrid
+module: excel_exporter
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: Promise<CellsRange>
+##### return: Promise<CellRange>
 <!-- Description goes here -->
 
 ##### param(options): ExportDataGridProps

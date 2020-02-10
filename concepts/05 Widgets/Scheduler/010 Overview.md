@@ -83,19 +83,16 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
 
     <!-- tab: App.vue -->
     <template>
-        <DxScheduler>
+        <DxScheduler
             :data-source="dataSource"
-            :current-date="currentDate"
-        </DxScheduler>
+            :current-date="currentDate" />
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxScheduler, {
-        DxScheduler
-    } from 'devextreme-vue/scheduler';
+    import DxScheduler from 'devextreme-vue/scheduler';
 
     export default {
         components: {
@@ -128,12 +125,12 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {Scheduler} from 'devextreme-react/scheduler';
+    import Scheduler from 'devextreme-react/scheduler';
 
     class App extends React.Component {
         render() {
             return (
-                <Scheduler>
+                <Scheduler
                     dataSource={[{
                         text: "Website Re-Design Plan",
                         startDate: new Date(2016, 4, 25, 9, 30),
@@ -145,8 +142,7 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
                     }, 
                     // ...
                     ]}
-                    defaultCurrentDate={new Date(2016, 4, 25)}
-                </Scheduler>
+                    defaultCurrentDate={new Date(2016, 4, 25)} />
             );
         }
     }
@@ -242,21 +238,18 @@ If your appointments have a different structure, specify:
 
     <!-- tab: App.vue -->
     <template>
-        <DxScheduler>
+        <DxScheduler
             :data-source="dataSource"
-            text-expr: "subject",
-            start-date-expr: "from",
-            end-date-expr: "to"
-        </DxScheduler>
+            text-expr="subject",
+            start-date-expr="from",
+            end-date-expr="to" />
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxScheduler, {
-        DxScheduler
-    } from 'devextreme-vue/scheduler';
+    import DxScheduler from 'devextreme-vue/scheduler';
 
     export default {
         components: {
@@ -289,12 +282,12 @@ If your appointments have a different structure, specify:
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {Scheduler} from 'devextreme-react/scheduler';
+    import Scheduler from 'devextreme-react/scheduler';
 
     class App extends React.Component {
         render() {
             return (
-                <Scheduler>
+                <Scheduler
                     dataSource={[{
                         text: "Website Re-Design Plan",
                         startDate: new Date(2016, 4, 25, 9, 30),
@@ -308,8 +301,7 @@ If your appointments have a different structure, specify:
                     ]}
                     textExpr="subject"
                     startDateExpr="from"
-                    endDateExpr="to"
-                </Scheduler>
+                    endDateExpr="to" />
             );
         }
     }

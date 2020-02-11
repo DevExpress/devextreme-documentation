@@ -127,21 +127,23 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
 
     import Scheduler from 'devextreme-react/scheduler';
 
+    const data = [{
+        text: "Website Re-Design Plan",
+        startDate: new Date(2016, 4, 25, 9, 30),
+        endDate: new Date(2016, 4, 25, 11, 30)
+    }, {
+        text: "Book Flights to San Fran for Sales Trip",
+        startDate: new Date(2016, 4, 25, 12, 0),
+        endDate: new Date(2016, 4, 25, 13, 0)
+    }, 
+    // ...
+    ];
+
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={[{
-                        text: "Website Re-Design Plan",
-                        startDate: new Date(2016, 4, 25, 9, 30),
-                        endDate: new Date(2016, 4, 25, 11, 30)
-                    }, {
-                        text: "Book Flights to San Fran for Sales Trip",
-                        startDate: new Date(2016, 4, 25, 12, 0),
-                        endDate: new Date(2016, 4, 25, 13, 0)
-                    }, 
-                    // ...
-                    ]}
+                    dataSource={data}
                     defaultCurrentDate={new Date(2016, 4, 25)} />
             );
         }
@@ -240,8 +242,8 @@ If your appointments have a different structure, specify:
     <template>
         <DxScheduler
             :data-source="dataSource"
-            text-expr="subject",
-            start-date-expr="from",
+            text-expr="subject"
+            start-date-expr="from"
             end-date-expr="to" />
     </template>
 
@@ -250,6 +252,8 @@ If your appointments have a different structure, specify:
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+
+    const data = 
 
     export default {
         components: {
@@ -284,21 +288,23 @@ If your appointments have a different structure, specify:
 
     import Scheduler from 'devextreme-react/scheduler';
 
+    const data = [{
+        text: "Website Re-Design Plan",
+        startDate: new Date(2016, 4, 25, 9, 30),
+        endDate: new Date(2016, 4, 25, 11, 30)
+    }, {
+        text: "Book Flights to San Fran for Sales Trip",
+        startDate: new Date(2016, 4, 25, 12, 0),
+        endDate: new Date(2016, 4, 25, 13, 0)
+    }, 
+    // ...
+    ];
+
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={[{
-                        text: "Website Re-Design Plan",
-                        startDate: new Date(2016, 4, 25, 9, 30),
-                        endDate: new Date(2016, 4, 25, 11, 30)
-                    }, {
-                        text: "Book Flights to San Fran for Sales Trip",
-                        startDate: new Date(2016, 4, 25, 12, 0),
-                        endDate: new Date(2016, 4, 25, 13, 0)
-                    }, 
-                    // ...
-                    ]}
+                    dataSource={data}
                     textExpr="subject"
                     startDateExpr="from"
                     endDateExpr="to" />

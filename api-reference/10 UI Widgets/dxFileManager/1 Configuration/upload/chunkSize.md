@@ -1,8 +1,7 @@
 ---
-id: FileSystemItem
-module: file_management/file_system_item
-export: default
-type: Object
+id: dxFileManager.Options.upload.chunkSize
+type: Number
+default: 200000
 ---
 ---
 ##### shortDescription

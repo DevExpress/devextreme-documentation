@@ -1,13 +1,13 @@
 ---
 id: dxFileManager.Options.customizeThumbnail
-type: function(fileItem)
+type: function(fileSystemItem)
 ---
 ---
 ##### shortDescription
 Allows you to provide custom icons to be used as thumbnails.
 
-##### param(fileItem): Object
-File or folder parameters.
+##### param(fileSystemItem): FileSystemItem
+<!-- Description goes here -->
 
 ##### return: String
 An icon to use as a thumbnail.

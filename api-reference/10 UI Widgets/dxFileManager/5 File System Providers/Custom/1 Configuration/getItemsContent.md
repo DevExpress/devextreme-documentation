@@ -1,10 +1,16 @@
 ---
 id: CustomFileSystemProvider.Options.getItemsContent
-type: function()
+type: function(items)
 ---
 ---
 ##### shortDescription
 A function that get items content.
+
+##### param(items): Array<FileSystemItem>
+<!-- Description goes here -->
+
+##### return: Promise<Object> | Object
+<!-- Description goes here -->
 
 ---
 

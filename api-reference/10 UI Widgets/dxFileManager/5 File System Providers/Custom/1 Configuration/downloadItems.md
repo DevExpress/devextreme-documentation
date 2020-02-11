@@ -1,10 +1,13 @@
 ---
 id: CustomFileSystemProvider.Options.downloadItems
-type: function()
+type: function(items)
 ---
 ---
 ##### shortDescription
 A function that downloads a file or folder.
+
+##### param(items): Array<FileSystemItem>
+<!-- Description goes here -->
 
 ---
 

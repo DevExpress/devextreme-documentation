@@ -98,7 +98,6 @@ As you can see, all items in a hierarchical data source have the **id** and **te
     </template>
     <script>
         import { DxTreeView, DxList } from 'devextreme-vue';
-        import { products } from './data.js';
 
         const hierarchicalData = [{
                 key: '1',
@@ -236,7 +235,6 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
     </template>
     <script>
         import { DxTreeView, DxList } from 'devextreme-vue';
-        import { products } from './data.js';
 
         const hierarchicalData = [{
                 name: 'Fruits',

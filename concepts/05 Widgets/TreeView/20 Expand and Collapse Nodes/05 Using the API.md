@@ -110,7 +110,7 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
     ---
 
 - **Individual nodes**  
-Call the [expandItem(itemElement)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/expandItem(itemElement).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#expandItemitemElement') or [collapseItem(itemElement)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/collapseItem(itemElement).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#collapseItemitemElement') method and pass a node key as an argument:
+Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/expandItem(key).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#expandItemkey') or [collapseItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/collapseItem(key).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#collapseItemkey') method and pass a node key as an argument:
 
     ---
     ##### jQuery

@@ -32,11 +32,9 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
 ##### Vue
 
     <template>
-        <div>
-            <dx-tree-view
-                :ref="treeViewRef"
-                :items="data" />
-        </div>  
+        <dx-tree-view
+            :ref="treeViewRef"
+            :items="data" />
     </template>
     <script>
         import { DxTreeView } from 'devextreme-vue';
@@ -78,11 +76,9 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
 
         render() {
             return (
-                <div>
-                    <TreeView
-                        items={data}
-                        ref={this.treeViewRef} />
-                </div>
+                <TreeView
+                    items={data}
+                    ref={this.treeViewRef} />
             );
         }
 

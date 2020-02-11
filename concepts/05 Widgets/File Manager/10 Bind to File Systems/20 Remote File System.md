@@ -36,6 +36,7 @@ The data object, which is sent back from the server, contains attributes that st
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
     @Component({
         selector: 'app-root',
@@ -60,7 +61,6 @@ The data object, which is sent back from the server, contains attributes that st
     import { NgModule} from '@angular/core';
     import { AppComponent } from './app.component';
     import { DxFileManagerModule } from 'devextreme-angular';
-    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
     
     @NgModule({
         imports: [

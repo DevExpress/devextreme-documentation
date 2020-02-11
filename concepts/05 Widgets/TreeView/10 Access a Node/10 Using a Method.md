@@ -1,6 +1,7 @@
 Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getNodes().md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#getNodes') method to get **TreeView** nodes at any point in the application flow.
 
 ---
+
 ##### jQuery
 
     <!--JavaScript-->var allNodes = $("#treeViewContainer").dxTreeView("getNodes");
@@ -27,7 +28,75 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <template>
+        <div>
+            <dx-tree-view
+                :ref="treeViewRef"
+                :items="data" />
+        </div>  
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+        const treeViewRef = 'treeView';
+
+        export default {
+            components: {
+                DxTreeView
+            },
+            data() {
+                return {
+                    data,
+                    treeViewRef
+                };
+            },
+            computed: {
+                treeView: function() {
+                    return this.$refs[treeViewRef].instance;
+                }
+            },   
+            methods: {
+                getNodes(){
+                    return this.treeView.getNodes();
+                }
+            }
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.treeViewRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <div>
+                    <TreeView
+                        items={data}
+                        ref={this.treeViewRef} />
+                </div>
+            );
+        }
+
+        getNodes(e){
+            this.treeView.getNodes();
+        }
+
+        get treeView() {
+            return this.treeViewRef.current.instance;
+        }    
+    }
+
+    export default App;
+
 ---
 
 All node objects contain a similar set of fields, which are described in the [Node](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Node '/Documentation/ApiReference/UI_Widgets/dxTreeView/Node/') documentation section.

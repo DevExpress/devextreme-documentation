@@ -15,7 +15,7 @@ A function or the name of a data source field that provides information on wheth
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 hasSubDirectoriesExpr: "hasDirectories"
                 //...
             }) 

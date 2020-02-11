@@ -7,10 +7,10 @@ inherits: FileSystemProviderBase
 ---
 ---
 ##### shortDescription
-The **Remote** file provider works with a file system located on the server.
+The **Remote** file system provider works with a file system located on the server.
 
 ---
-Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#endpointUrl) option to specify the endpoint used to access and modify the file system.
+Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl) option to specify the endpoint used to access and modify the file system.
 
 The server should return data objects of the following structure:
 
@@ -23,9 +23,9 @@ The server should return data objects of the following structure:
         hasSubDirectories: true
     }
 
-Fields in this structure have conventional names that you can change via **[fieldName]Expr** options: [nameExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#nameExpr), [sizeExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#sizeExpr), [dateModifiedExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#dateModifiedExpr), and so on.
+Fields in this structure have conventional names that you can change via **[fieldName]Expr** options: [nameExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#nameExpr), [sizeExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#sizeExpr), [dateModifiedExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#dateModifiedExpr), and so on.
 
-The following code shows how to bind the **FileManager** to the **Remote** file provider:
+The following code shows how to bind the **FileManager** to the **Remote** file system provider:
 
 ---
 ##### jQuery
@@ -33,7 +33,7 @@ The following code shows how to bind the **FileManager** to the **Remote** file 
     <!-- tab: index.js -->
     $(function() {
         $("#fileManagerContainer").dxFileManager({
-            fileProvider: new DevExpress.FileProviders.Remote({
+            fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
                 endpointUrl: "https://mydomain.com/api/files",
                 thumbnailExpr: "icon",
                 // ...

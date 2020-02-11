@@ -16,7 +16,7 @@ The **FileManager** can upload large files in parts. The widget divides a file i
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 uploadChunkSize: 1000 
             }) 
         });

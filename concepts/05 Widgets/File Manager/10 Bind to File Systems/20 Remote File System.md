@@ -1,10 +1,10 @@
-The **FileManager** widget provides the [Remote](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Providers/Remote '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/') file provider to access files and folders located on the server. 
+The **FileManager** widget provides the [Remote](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/) file system provider to access files and folders located on the server. 
 
 ![](Content/images/doc/20_1/FileManager/remote-file-provider.png)
 
-Assign the [Remote](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Providers/Remote '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/') file provider to the [fileProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileProvider') option to connect the widget to a file system located on the server. The Remote file provider exposes APIs to get the file system hierarchy and to manage items.
+Assign the [Remote](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/) file system provider to the [fileSystemProvider](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider) option to connect the widget to a file system located on the server. The Remote file system provider exposes APIs to get the file system hierarchy and to manage items.
 
-Set the [endpointUrl](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Providers/Remote/1%20Configuration/endpointUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Remote/Configuration/#endpointUrl') option to the Url of an endpoint used to access and modify a file system.
+Set the [endpointUrl](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl) option to the Url of an endpoint used to access and modify a file system.
 
 You can also use helpers for ASP.NET Core and ASP.NET MVC to access different file systems on the server side according to the protocol the **FileManager** widget uses. Refer to the [online documentation](https://docs.devexpress.com/AspNetCore/DevExtreme.AspNet.Mvc.FileManagement) and [online demos](https://demos.devexpress.com/ASPNetCore/Demo/FileManager/Overview) to get more information about the helpers. 
 
@@ -14,10 +14,10 @@ The data object, which is sent back from the server, contains attributes that st
 
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function () {
         $("#file-manager").dxFileManager({            
-            fileProvider: new DevExpress.fileProviders.Remote({
+            fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
                 endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
             }),
             allowedFileExtensions: [".js", ".json", ".css"]
@@ -27,55 +27,78 @@ The data object, which is sent back from the server, contains attributes that st
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { DxFileManagerModule } from 'devextreme-angular';
-    import RemoteFileProvider from 'devextreme/ui/file_manager/file_provider/remote';
-    // ...
+    <!-- tab: app.component.html -->
+    <dx-file-manager id="fileManager"
+        [fileSystemProvider]="remoteProvider"
+        [allowedFileExtensions]="allowedFileExtensions">
+        <!-- ... -->
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: 'app/app.component.html',
+        styleUrls: ['app/app.component.css']
+    })  
+
     export class AppComponent {
         allowedFileExtensions: string[];
-        remoteProvider: RemoteFileProvider;
+        remoteProvider: RemoteFileSystemProvider;
 
         constructor() {
-            this.allowedFileExtensions = [".js", ".json", ".css"];
-            this.remoteProvider = new RemoteFileProvider({
+            this.allowedFileExtensions = [".txt", ".doc", ".png"];
+            this.remoteProvider = new RemoteFileSystemProvider({
                 endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
             });
         }
     }
-
+    
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule} from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
+    
     @NgModule({
         imports: [
-            // ...
+            BrowserModule,
             DxFileManagerModule
         ],
-        // ...
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
     })
-
-    <!--HTML-->
-    <dx-file-manager id="fileManager"
-        [fileProvider]="remoteProvider"
-        [allowedFileExtensions]="allowedFileExtensions">
-        // ...
-    </dx-file-manager>
+    export class AppModule { }
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxFileManager
-            :file-provider="remoteFileProvider"
+            :file-system-provider="remoteFileProvider"
             :allowed-file-extensions="allowedFileExtensions" >
-            // ...
+            <!-- ... -->
         </DxFileManager>
     </template>
 
     <script>
-    import { DxFileManager, DxPermissions } from 'devextreme-vue/file-manager';
-    import RemoteFileProvider from 'devextreme/ui/file_manager/file_provider/remote';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css'; 
+    
+    import { 
+        DxFileManager, 
+        DxPermissions 
+    } from 'devextreme-vue/file-manager';
+
+    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
     const remoteFileProvider = new RemoteFileProvider({
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
-    const allowedFileExtensions = ['.js', '.json', '.css'];
+    const allowedFileExtensions = ['.txt', '.doc', '.png'];
+
     export default {
         components: {
             DxFileManager,
@@ -92,19 +115,27 @@ The data object, which is sent back from the server, contains attributes that st
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import FileManager, { Permissions } from 'devextreme-react/file-manager';
-    import RemoteFileProvider from 'devextreme/ui/file_manager/file_provider/remote';
+    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
     const remoteFileProvider = new RemoteFileProvider({
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
-    const allowedFileExtensions = ['.js', '.json', '.css'];
+    const allowedFileExtensions = ['.txt', '.doc', '.png'];
+    
     class App extends React.Component {
         render() {
             return (
-                <FileManager fileProvider={remoteFileProvider} allowedFileExtensions={allowedFileExtensions}>
-                    // ...
+                <FileManager 
+                    fileProvider={remoteFileProvider} 
+                    allowedFileExtensions={allowedFileExtensions} >
+                    {/* ... */}
                 </FileManager>
             );
         }

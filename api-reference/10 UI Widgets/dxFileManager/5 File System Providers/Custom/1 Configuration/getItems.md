@@ -15,7 +15,7 @@ A function that gets file system items.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 getItems: function(pathInfo) { 
                     // Your code goes here
                 }

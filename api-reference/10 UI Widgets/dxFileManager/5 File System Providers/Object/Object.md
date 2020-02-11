@@ -7,12 +7,12 @@ inherits: FileSystemProviderBase
 ---
 ---
 ##### shortDescription
-The **Array** file provider works with a virtual file system represented by an in-memory array of JSON objects.
+The **Object** file system provider works with a virtual file system represented by an in-memory array of JSON objects.
 
 ---
-Assign the array to the [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data) option. Data object fields should have conventional names listed in the **data** description. Otherwise, specify **[fieldName]Expr** options: [nameExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#nameExpr), [sizeExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#sizeExpr), [dateModifiedExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#dateModifiedExpr), and so on.
+Assign the array to the [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#data) option. Data object fields should have conventional names listed in the **data** description. Otherwise, specify **[fieldName]Expr** options: [nameExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#nameExpr), [sizeExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#sizeExpr), [dateModifiedExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#dateModifiedExpr), and so on.
 
-The following code shows how to bind the **FileManager** to the **Array** file provider:
+The following code shows how to bind the **FileManager** to the **Object** file system provider:
 
 ---
 ##### jQuery
@@ -20,7 +20,7 @@ The following code shows how to bind the **FileManager** to the **Array** file p
     <!-- tab: index.js -->
     $(function() {
         $("#fileManagerContainer").dxFileManager({
-            fileProvider: new DevExpress.FileProviders.Array({
+            fileSystemProvider: new DevExpress.fileManagement.ObjectFileSystemProvider({            
                 data: [ 
                     // ...
                     // Data objects that represent files and directories
@@ -30,7 +30,7 @@ The following code shows how to bind the **FileManager** to the **Array** file p
                 // ...
             })
             // A shortcut that can be used if object fields have conventional names
-            fileProvider: [ 
+            fileSystemProvider: [ 
                 // ...
                 // Data objects that represent files and directories
                 // ...

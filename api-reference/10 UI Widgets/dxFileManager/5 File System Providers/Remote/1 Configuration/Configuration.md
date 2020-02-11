@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes options that configure the **Remote** file provider.
+This section describes options that configure the **Remote** file system provider.
 
 ---

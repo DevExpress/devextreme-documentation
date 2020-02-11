@@ -15,7 +15,7 @@ A function that renames files and folders.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 renameItem: function(item, name) { 
                     // Your code goes here
                 }

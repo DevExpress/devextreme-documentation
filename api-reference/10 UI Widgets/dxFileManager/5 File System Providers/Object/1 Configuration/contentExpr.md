@@ -4,7 +4,6 @@ type: String | function()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies which data field provides information about files content.
 
 ---
-<!-- Description goes here -->

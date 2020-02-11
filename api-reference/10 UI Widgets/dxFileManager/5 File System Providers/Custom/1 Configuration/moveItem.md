@@ -15,7 +15,7 @@ A function that moves files and folders.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 moveItem: function(item, destinationDir) { 
                     // Your code goes here
                 }

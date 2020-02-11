@@ -15,7 +15,7 @@ A function that downloads a file or folder.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 downloadItems: function(Array<FileManagerItem>) { 
                     // Your code goes here
                 }

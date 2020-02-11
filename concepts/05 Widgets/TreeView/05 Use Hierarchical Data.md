@@ -87,6 +87,82 @@ As you can see, all items in a hierarchical data source have the **id** and **te
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTreeView
+            keyExpr="key"
+            displayExpr="name"
+            itemsExpr="children"        
+            :items="hierarchicalData" />
+    </template>
+    <script>
+        import { DxTreeView, DxList } from 'devextreme-vue';
+        import { products } from './data.js';
+
+        const hierarchicalData = [{
+                key: '1',
+                name: 'Fruits',
+                children: [
+                    { key: '1_1', name: 'Apples' },
+                    { key: '1_2', name: 'Oranges' }
+                ]
+            }, {
+                key: '2',
+                name: 'Vegetables',
+                children: [
+                    { key: '2_1', name: 'Cucumbers' },
+                    { key: '2_2', name: 'Tomatoes' }
+                ]
+            }];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    hierarchicalData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
+            key: '1',
+            name: 'Fruits',
+            children: [
+                { key: '1_1', name: 'Apples' },
+                { key: '1_2', name: 'Oranges' }
+            ]
+        }, {
+            key: '2',
+            name: 'Vegetables',
+            children: [
+                { key: '2_1', name: 'Cucumbers' },
+                { key: '2_2', name: 'Tomatoes' }
+            ]
+        }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    keyExpr="key"
+                    displayExpr="name"
+                    itemsExpr="children"                   
+                    items={hierarchicalData} />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Frequently, the **id** of an item is also its **text**. In this case, set both the **keyExpr** and **displayExpr** options to a single value.
@@ -149,6 +225,76 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxTreeView
+            keyExpr="name"
+            displayExpr="name"
+            :items="hierarchicalData" />
+    </template>
+    <script>
+        import { DxTreeView, DxList } from 'devextreme-vue';
+        import { products } from './data.js';
+
+        const hierarchicalData = [{
+                name: 'Fruits',
+                items: [
+                    { name: 'Apples' },
+                    { name: 'Oranges' }
+                ]
+            }, {
+                name: 'Vegetables',
+                items: [
+                    { name: 'Cucumbers' },
+                    { name: 'Tomatoes' }
+                ]
+            }];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    hierarchicalData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
+            name: 'Fruits',
+            items: [
+                { name: 'Apples' },
+                { name: 'Oranges' }
+            ]
+        }, {
+            name: 'Vegetables',
+            items: [
+                { name: 'Cucumbers' },
+                { name: 'Tomatoes' }
+            ]
+        }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    keyExpr="name"
+                    displayExpr="name"
+                    items={hierarchicalData} />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

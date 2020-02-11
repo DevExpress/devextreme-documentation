@@ -76,4 +76,4 @@ The following example illustrates how to configure an [Object](/Documentation/Ap
 ---
 
 
-Refer to [File System Providers](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/') for information on supported file system providers.
+Refer to [File System Providers](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/) for information on supported file system providers.

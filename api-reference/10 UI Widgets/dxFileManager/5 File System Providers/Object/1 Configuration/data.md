@@ -22,4 +22,4 @@ The data objects should have fields with the following names:
         ]
     }
 
-These are conventional names that you can change via **[fieldName]Expr** options: [nameExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#nameExpr), [sizeExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#sizeExpr'), [dateModifiedExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#dateModifiedExpr), and so on.
+These are conventional names that you can change via **[fieldName]Expr** options: [nameExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#nameExpr), [sizeExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#sizeExpr), [dateModifiedExpr](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#dateModifiedExpr), and so on.

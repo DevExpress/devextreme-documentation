@@ -2,7 +2,7 @@ The **FileManager** widget provides the Object file system provider to manage fi
 
 ![FileManager - Hierarchical Data Structure](/images/FileManager/Hierarchical-file-system.png)
 
-Create an Object file system provider and assign the array of hierarchical JSON objects to the provider's [data](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#data) option to bind the **FileManager** widget to a hierarchical data structure.
+Create an Object file system provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object/1%20Configuration/data.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#data') option to bind the **FileManager** widget to a hierarchical data structure.
 
 The provider automatically binds data objects to the widget if the data objects have default fields in their structure. For example:
 

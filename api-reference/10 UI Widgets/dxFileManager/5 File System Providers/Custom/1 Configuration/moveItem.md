@@ -1,10 +1,19 @@
 ---
 id: CustomFileSystemProvider.Options.moveItem
-type: function()
+type: function(item, destinationDirectory)
 ---
 ---
 ##### shortDescription
 A function that moves files and folders.
+
+##### param(item): FileSystemItem
+<!-- Description goes here -->
+
+##### param(destinationDirectory): FileSystemItem
+<!-- Description goes here -->
+
+##### return: Promise<any> | any
+<!-- Description goes here -->
 
 ---
 

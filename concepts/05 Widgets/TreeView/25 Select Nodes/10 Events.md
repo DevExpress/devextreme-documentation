@@ -59,6 +59,78 @@ You can handle these events with functions. Assign the handling functions to the
         // ...
     })
     
+##### Vue
+
+    <template>
+        <DxTreeView
+            :dataSource='data'
+            showCheckBoxesMode="normal"
+            @item-selection-changed="onItemSelectionChanged"
+            @selection-changed="onSelectionChanged"
+            @select-all-value-changed="onSelectAllValueChanged" />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const data = [ ... ];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    data
+                };
+            },
+            methods: {
+                onItemSelectionChanged(e){
+                    // Handler of the "itemSelectionChanged" event
+                }
+                onSelectionChanged(e){
+                    // Handler of the "selectionChanged" event
+                }
+                onSelectAllValueChanged(e) {
+                    // Handler of the "selectAllValueChanged" event                    
+                }
+            }
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const data = [ ... ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataSource={data} 
+                    showCheckBoxesMode="normal"
+                    onItemSelectionChanged={this.onItemSelectionChanged}
+                    onSelectionChanged={this.onSelectionChanged} 
+                    onSelectAllValueChanged={this.onSelectAllValueChanged}/>
+            );
+        }
+
+        onItemSelectionChanged(e){
+            // Handler of the "itemSelectionChanged" event
+        }
+
+        onSelectionChanged(e){
+            // Handler of the "selectionChanged" event
+        }
+
+        onSelectAllValueChanged(e){
+            // Handler of the "selectAllValueChanged" event
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change the event handler at runtime, or if you need to attach several handlers to the event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

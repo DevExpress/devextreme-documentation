@@ -76,7 +76,7 @@ The following code adds a simple **TreeView** to your page:
         :items="hierarchicalData" />
     </template>
     <script>
-        import { DxTreeView, DxList } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue';
 
         const hierarchicalData = [{
                 id: '1',

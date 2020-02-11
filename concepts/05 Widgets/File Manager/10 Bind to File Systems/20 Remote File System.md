@@ -94,7 +94,7 @@ The data object, which is sent back from the server, contains attributes that st
 
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
-    const remoteFileProvider = new RemoteFileProvider({
+    const remoteFileProvider = new RemoteFileSystemProvider({
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
     const allowedFileExtensions = ['.txt', '.doc', '.png'];
@@ -124,7 +124,7 @@ The data object, which is sent back from the server, contains attributes that st
     import FileManager, { Permissions } from 'devextreme-react/file-manager';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
-    const remoteFileProvider = new RemoteFileProvider({
+    const remoteFileProvider = new RemoteFileSystemProvider({
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
     const allowedFileExtensions = ['.txt', '.doc', '.png'];
@@ -133,7 +133,7 @@ The data object, which is sent back from the server, contains attributes that st
         render() {
             return (
                 <FileManager 
-                    fileProvider={remoteFileProvider} 
+                    fileSystemProvider={remoteFileProvider} 
                     allowedFileExtensions={allowedFileExtensions} >
                     {/* ... */}
                 </FileManager>

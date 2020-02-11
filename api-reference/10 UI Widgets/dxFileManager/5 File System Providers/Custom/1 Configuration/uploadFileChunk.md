@@ -15,7 +15,7 @@ A function that uploads a file in chunks.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 uploadFileChunk: function(fileData, chunksInfo, destinationDir) { 
                     // Your code goes here
                 }

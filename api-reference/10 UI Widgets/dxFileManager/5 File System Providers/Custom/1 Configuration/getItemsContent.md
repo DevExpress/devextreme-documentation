@@ -15,7 +15,7 @@ A function that get items content.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 getItemsContent: function(pathInfo) { 
                     // Your code goes here
                 }

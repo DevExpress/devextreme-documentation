@@ -15,7 +15,7 @@ A function that deletes a file or folder.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 deleteItem: function(item) { 
                     // Your code goes here
                 }

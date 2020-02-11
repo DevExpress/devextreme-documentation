@@ -15,7 +15,7 @@ A function that creates a folder.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 createDirectory: function(parentDir, name) { 
                     // Your code goes here
                 }

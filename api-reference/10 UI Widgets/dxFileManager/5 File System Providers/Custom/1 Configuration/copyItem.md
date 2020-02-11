@@ -15,7 +15,7 @@ A function that copies files or folders.
     <!--JavaScript-->
     $(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 copyItem: function(item, destinationDir) { 
                     // Your code goes here
                 }

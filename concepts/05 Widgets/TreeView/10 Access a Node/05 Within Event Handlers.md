@@ -46,7 +46,7 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
             @item-click="onItemClick" />
     </template>
     <script>
-        import { DxTreeView, DxList } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue';
 
         const data = [ ... ];
 

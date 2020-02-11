@@ -55,7 +55,7 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
             :dataSource='plainData' />
     </template>
     <script>
-        import { DxTreeView, DxList } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue';
 
         const plainData = [
             { id: '1', text: 'Fruits' },
@@ -172,7 +172,7 @@ As you can see, all items in a plain data source have the **id** and **text** fi
             parentIdExpr='parent' />
     </template>
     <script>
-        import { DxTreeView, DxList } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue';
 
         const plainData = [
             { key: '1', name: 'Fruits' },
@@ -289,7 +289,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
             displayExpr='name' />
     </template>
     <script>
-        import { DxTreeView, DxList } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue';
 
         const plainData = [
             { name: 'Fruits' },

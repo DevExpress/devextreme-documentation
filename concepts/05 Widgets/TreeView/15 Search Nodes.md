@@ -59,6 +59,74 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
          // ...
      })
 
+##### Vue
+
+    <template>
+        <DxTreeView
+            dataStructure='plain'
+            :dataSource='treeViewData' 
+            keyExpr='key'
+            displayExpr='name'
+            parentIdExpr='parent'
+            :searchEnabled=true
+			:searchExpr='searchExpr'  />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const treeViewData = [
+            { key: '1', name: 'Fruits' },
+            { key: '1_1', name: 'Apples', count: 20, parent: '1' },
+            { key: '1_2', name: 'Oranges', count: 3, parent: '1' },
+            { key: '2', name: 'Vegetables' },
+            { key: '2_1', name: 'Cucumbers', count: 15, parent: '2' },
+            { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
+        ];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    searchExpr: ['count', 'name']
+                    treeViewData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const treeViewData = [
+        { key: '1', name: 'Fruits' },
+        { key: '1_1', name: 'Apples', count: 20, parent: '1' },
+        { key: '1_2', name: 'Oranges', count: 3, parent: '1' },
+        { key: '2', name: 'Vegetables' },
+        { key: '2_1', name: 'Cucumbers', count: 15, parent: '2' },
+        { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataStructure='plain'
+                    dataSource={treeViewData}
+                    keyExpr='key'
+                    displayExpr='name'
+                    parentIdExpr='parent'
+                    searchEnabled={true}
+                    searchExpr={['count', 'name']} />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -116,6 +184,76 @@ When a user types a string in the input field, the **TreeView** suggests all nod
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <DxTreeView
+            dataStructure='plain'
+            :dataSource='treeViewData' 
+            keyExpr='key'
+            displayExpr='name'
+            parentIdExpr='parent'
+            searchMode="startswith"
+            :searchEnabled=true
+			:searchExpr='searchExpr'  />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const treeViewData = [
+            { key: '1', name: 'Fruits' },
+            { key: '1_1', name: 'Apples', count: 20, parent: '1' },
+            { key: '1_2', name: 'Oranges', count: 3, parent: '1' },
+            { key: '2', name: 'Vegetables' },
+            { key: '2_1', name: 'Cucumbers', count: 15, parent: '2' },
+            { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
+        ];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    searchExpr: ['count', 'name']
+                    treeViewData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const treeViewData = [
+        { key: '1', name: 'Fruits' },
+        { key: '1_1', name: 'Apples', count: 20, parent: '1' },
+        { key: '1_2', name: 'Oranges', count: 3, parent: '1' },
+        { key: '2', name: 'Vegetables' },
+        { key: '2_1', name: 'Cucumbers', count: 15, parent: '2' },
+        { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataStructure='plain'
+                    dataSource={treeViewData}
+                    keyExpr='key'
+                    displayExpr='name'
+                    parentIdExpr='parent'
+                    searchMode="startswith"
+                    searchEnabled={true}
+                    searchExpr={['count', 'name']} />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -176,6 +314,83 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <DxTreeView
+            dataStructure='plain'
+            :dataSource='treeViewData' 
+            keyExpr='key'
+            displayExpr='name'
+            parentIdExpr='parent'
+            :searchEnabled=true>
+            <DxSearchEditorOptions
+                placeholder="Type search value here..."
+                width=300
+            />
+        </DxTreeView>    
+    </template>
+    <script>
+        import DxTreeView, {
+            DxSearchEditorOptions
+        } from 'devextreme-vue/tree-view';
+
+        const treeViewData = [
+            { key: '1', name: 'Fruits' },
+            { key: '1_1', name: 'Apples', count: 20, parent: '1' },
+            { key: '1_2', name: 'Oranges', count: 3, parent: '1' },
+            { key: '2', name: 'Vegetables' },
+            { key: '2_1', name: 'Cucumbers', count: 15, parent: '2' },
+            { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
+        ];
+
+        export default {
+            components: {
+                DxTreeView, DxSearchEditorOptions
+            },
+            data() {
+                return {
+                    treeViewData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import {TreeView, SearchEditorOptions} from 'devextreme-react/tree-view';
+
+    const treeViewData = [
+        { key: '1', name: 'Fruits' },
+        { key: '1_1', name: 'Apples', count: 20, parent: '1' },
+        { key: '1_2', name: 'Oranges', count: 3, parent: '1' },
+        { key: '2', name: 'Vegetables' },
+        { key: '2_1', name: 'Cucumbers', count: 15, parent: '2' },
+        { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataStructure='plain'
+                    dataSource={treeViewData}
+                    keyExpr='key'
+                    displayExpr='name'
+                    parentIdExpr='parent'
+                    searchEnabled={true} >
+                    <SearchEditorOptions
+                        placeholder="Type search value here..."
+                        width={300}
+                    />                    
+                </TreeView>    
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

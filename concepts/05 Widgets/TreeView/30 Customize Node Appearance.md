@@ -141,7 +141,7 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
 
 ---
 
-If you need a more flexible solution, define a custom template. DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize nodes.
+If you need a more flexible solution, define a [custom templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates'). The following code gives a simple example of how you can use it to customize nodes.
 
 ---
 ##### Angular

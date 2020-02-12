@@ -1,6 +1,114 @@
 For minor customization of nodes, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/') in node data objects. For example, the following code adds an icon to each node.
 
+---
+
+##### jQuery
+
     <!--JavaScript-->var hierarchicalData = [{
+        id: '1',
+        text: 'Fruits',
+        icon: '/pics/fruits.ico',
+        items: [
+            { id: '1_1', text: 'Apples', icon: '/pics/fruits/apple.ico' },
+            { id: '1_2', text: 'Oranges', icon: '/pics/fruits/orange.ico' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        icon: '/pics/vegetables.ico',
+        items: [
+            { id: '2_1', text: 'Cucumbers', icon: '/pics/vegetables/cucumber.ico' },
+            { id: '2_2', text: 'Tomatoes', icon: '/pics/vegetables/tomato.ico' }
+        ]
+    }]
+
+    $(function() {
+        $("#treeViewContainer").dxTreeView({
+            dataSource: hierarchicalData
+        });
+    });
+
+##### Angular
+
+    <!--HTML--><dx-tree-view
+        [dataSource]="hierarchicalData" >
+    </dx-tree-view>
+
+    <!--TypeScript-->
+    import { DxTreeViewModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        hierarchicalData = [{
+            id: '1',
+            text: 'Fruits',
+            icon: '/pics/fruits.ico',
+            items: [
+                { id: '1_1', text: 'Apples', icon: '/pics/fruits/apple.ico' },
+                { id: '1_2', text: 'Oranges', icon: '/pics/fruits/orange.ico' }
+            ]
+        }, {
+            id: '2',
+            text: 'Vegetables',
+            icon: '/pics/vegetables.ico',
+            items: [
+                { id: '2_1', text: 'Cucumbers', icon: '/pics/vegetables/cucumber.ico' },
+                { id: '2_2', text: 'Tomatoes', icon: '/pics/vegetables/tomato.ico' }
+            ]
+        }];
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTreeViewModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxTreeView
+            :items='hierarchicalData' />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const hierarchicalData = [{
+            id: '1',
+            text: 'Fruits',
+            icon: '/pics/fruits.ico',
+            items: [
+                { id: '1_1', text: 'Apples', icon: '/pics/fruits/apple.ico' },
+                { id: '1_2', text: 'Oranges', icon: '/pics/fruits/orange.ico' }
+            ]
+        }, {
+            id: '2',
+            text: 'Vegetables',
+            icon: '/pics/vegetables.ico',
+            items: [
+                { id: '2_1', text: 'Cucumbers', icon: '/pics/vegetables/cucumber.ico' },
+                { id: '2_2', text: 'Tomatoes', icon: '/pics/vegetables/tomato.ico' }
+            ]
+        }];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    hierarchicalData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
         id: '1',
         text: 'Fruits',
         icon: '/pics/fruits.ico',
@@ -18,13 +126,20 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
         ]
     }];
 
-    $(function() {
-        $("#treeViewContainer").dxTreeView({
-            dataSource: hierarchicalData
-        });
-    });
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    items={hierarchicalData} />
+            );
+        }
+    }
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize nodes.
+    export default App;
+
+---
+
+If you need a more flexible solution, define a custom template. DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize nodes.
 
 ---
 ##### Angular
@@ -130,6 +245,84 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
     ko.applyBindings(viewModel);
 
+##### Vue
+
+    <template>
+        <DxTreeView
+            :items='hierarchicalData'>
+            <template #item="item">
+                <i>{{ item.data.text }}</i>
+            </template>           
+        </DxTreeView>    
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const hierarchicalData = [{
+            id: '1',
+            text: 'Fruits',
+            items: [
+                { id: '1_1', text: 'Apples' },
+                { id: '1_2', text: 'Oranges' }
+            ]
+        }, {
+            id: '2',
+            text: 'Vegetables',
+            items: [
+                { id: '2_1', text: 'Cucumbers' },
+                { id: '2_2', text: 'Tomatoes' }
+            ]
+        }];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    hierarchicalData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
+        id: '1',
+        text: 'Fruits',
+        items: [
+            { id: '1_1', text: 'Apples' },
+            { id: '1_2', text: 'Oranges' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        items: [
+            { id: '2_1', text: 'Cucumbers' },
+            { id: '2_2', text: 'Tomatoes' }
+        ]
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    itemRender={renderTreeViewItem}
+                    items={hierarchicalData} />
+            );
+        }
+
+        function renderTreeViewItem(item) {
+            return (<i>{item.text}</i>);
+        }
+    }
+
+    export default App;
+
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup. To apply the markup to the **TreeView** nodes, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#itemTemplate') callback function.
@@ -145,21 +338,132 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
 You can also customize an individual node. For this purpose, declare a template for this node as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/#template') option.
 
-    <!--HTML-->
-    <script id="individualTemplate" type="text/html">
-        <!-- ... -->
-    </script>
+---
+
+##### jQuery
+
+
 
     <!--JavaScript-->var treeViewData = [{
         id: '1',
         text: 'Fruits',
         items: [
-            { id: '1_1', text: 'Apples', template: $("#individualItemTemplate") },
+            { id: '1_1', text: 'Apples', template: function(item){return '<i>' + item.text + '</i>'} },
             { id: '1_2', text: 'Oranges' }
         ]
     },
     // ...
     ];
+
+##### Angular
+
+    <!--HTML--><dx-tree-view
+        [dataSource]="hierarchicalData" >
+    </dx-tree-view>
+
+    <!--TypeScript-->
+    import { DxTreeViewModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        hierarchicalData = [{
+            id: '1',
+            text: 'Fruits', template: (item) => {return '<i>' + item.text + '</i>'},
+            items: [
+                { id: '1_1' },
+                { id: '1_2' }
+            ]
+        }, {
+            id: '2',
+            text: 'Vegetables',
+            icon: '/pics/vegetables.ico',
+            items: [
+                { id: '2_1', text: 'Cucumbers' },
+                { id: '2_2', text: 'Tomatoes' }
+            ]
+        }];
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTreeViewModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxTreeView
+            :items='hierarchicalData' />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const hierarchicalData = [{
+            id: '1',
+            text: 'Fruits', template: (item) => {return `<i>${item.text}</i>`},
+            items: [
+                { id: '1_1', text: 'Apples' },
+                { id: '1_2', text: 'Oranges' }
+            ]
+        }, {
+            id: '2',
+            text: 'Vegetables',
+            items: [
+                { id: '2_1', text: 'Cucumbers' },
+                { id: '2_2', text: 'Tomatoes' }
+            ]
+        }];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    hierarchicalData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
+        id: '1',
+        text: 'Fruits', template: (item) => renderTreeViewItem(item),
+        items: [
+            { id: '1_1', text: 'Apples' },
+            { id: '1_2', text: 'Oranges' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        items: [
+            { id: '2_1', text: 'Cucumbers' },
+            { id: '2_2', text: 'Tomatoes' }
+        ]
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    items={hierarchicalData} />
+            );
+        }
+
+        function renderTreeViewItem(item) {
+            return `<i>${item.text}</i>`;
+        }
+    }
+
+    export default App;
+
+---
 
 In addition, you can use a 3rd-party template engine to customize widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 

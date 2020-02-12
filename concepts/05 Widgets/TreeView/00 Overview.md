@@ -69,6 +69,80 @@ The following code adds a simple **TreeView** to your page:
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTreeView
+        :items="hierarchicalData" />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const hierarchicalData = [{
+                id: '1',
+                text: 'Fruits',
+                expanded: true,
+                items: [
+                    { id: '1_1', text: 'Apples' },
+                    { id: '1_2', text: 'Oranges' }
+                ]
+            }, {
+                id: '2',
+                text: 'Vegetables',
+                expanded: true,
+                items: [
+                    { id: '2_1', text: 'Cucumbers' },
+                    { id: '2_2', text: 'Tomatoes' }
+                ]
+            }];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    hierarchicalData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
+            id: '1',
+            text: 'Fruits',
+            expanded: true,
+            items: [
+                { id: '1_1', text: 'Apples' },
+                { id: '1_2', text: 'Oranges' }
+            ]
+        }, {
+            id: '2',
+            text: 'Vegetables',
+            expanded: true,
+            items: [
+                { id: '2_1', text: 'Cucumbers' },
+                { id: '2_2', text: 'Tomatoes' }
+            ]
+        }];
+
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    items={hierarchicalData} />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Note that the data source in the code above has a hierarchical structure, however, it also supports data sources with a plain structure. See the [Use Hierarchical Data](/concepts/05%20Widgets/TreeView/05%20Use%20Hierarchical%20Data.md '/Documentation/Guide/Widgets/TreeView/Use_Hierarchical_Data') and [Use Plain Data](/concepts/05%20Widgets/TreeView/07%20Use%20Plain%20Data.md '/Documentation/Guide/Widgets/TreeView/Use_Plain_Data') articles to learn how you can customize hierarchical and plain data sources.

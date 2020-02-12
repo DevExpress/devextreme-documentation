@@ -38,6 +38,60 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTreeView
+            :dataSource='data'
+            @item-click='onItemClick' />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const data = [ ... ];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    data
+                };
+            },
+            methods: {
+                onItemClick(e){
+                    const node = e.node;
+                    // ...
+                }
+            }
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const data = [ ... ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    onItemClick={this.onItemClick}
+                    dataSource={data} />
+            );
+        }
+
+        onItemClick(e){
+            const node = e.node;
+            // ...            
+        }
+    }
+
+    export default App;
+
 ---
 
 Not every event handler provides access to the node, only those whose name starts with **onItem...**. They are described in the [TreeView Configuration](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/').

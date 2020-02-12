@@ -67,4 +67,81 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTreeView
+            keyExpr="name"
+            displayExpr="name"
+            showCheckBoxesMode="normal"
+            selectedExpr="isSelected"
+            :items="hierarchicalData" />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const hierarchicalData = [{
+                name: 'Fruits',
+                isSelected: true,
+                items: [
+                    { name: 'Apples' },
+                    { name: 'Oranges' }
+                ]
+            }, {
+                name: 'Vegetables',
+                isSelected: true,
+                items: [
+                    { name: 'Cucumbers' },
+                    { name: 'Tomatoes' }
+                ]
+            }];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    hierarchicalData
+                };
+            },
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
+            name: 'Fruits',
+            isSelected: true,
+            items: [
+                { name: 'Apples' },
+                { name: 'Oranges' }
+            ]
+        }, {
+            name: 'Vegetables',
+            isSelected: true,
+            items: [
+                { name: 'Cucumbers' },
+                { name: 'Tomatoes' }
+            ]
+        }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    keyExpr="name"
+                    displayExpr="name"
+                    showCheckBoxesMode="normal"
+                    selectedExpr='isSelected'
+                    items={hierarchicalData} />
+            );
+        }
+    }
+
+    export default App;
+
 ---

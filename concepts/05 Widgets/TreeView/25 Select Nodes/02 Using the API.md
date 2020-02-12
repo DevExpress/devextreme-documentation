@@ -123,7 +123,7 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
         ],
         // ...
     })
-    
+
 ##### Vue
 
     <template>
@@ -137,26 +137,26 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
         const treeViewRef = 'treeView';
 
         export default {
-        components: {
-            DxTreeView
-        },
-        data() {
-            return {
-                data,
-                treeViewRef
-            };
-        },
-        computed: {
-            treeView: function() {
-                return this.$refs[treeViewRef].instance;
+            components: {
+                DxTreeView
+            },
+            data() {
+                return {
+                    data,
+                    treeViewRef
+                };
+            },
+            computed: {
+                treeView: function() {
+                    return this.$refs[treeViewRef].instance;
+                }
+            },   
+            methods: {
+                getSelectedNodes(){
+                    return this.treeView.getSelectedNodes();
+                }
             }
-        },   
-        methods: {
-            getSelectedNodes(){
-                return this.treeView.getSelectedNodes();
-            }
-        }
-    };
+        };
     </script>
 
 ##### React
@@ -237,29 +237,29 @@ To select or cancel the selection of a node programmatically, call the [selectIt
         const treeViewRef = 'treeView';
 
         export default {
-        components: {
-            DxTreeView
-        },
-        data() {
-            return {
-                data,
-                treeViewRef
-            };
-        },
-        computed: {
-            treeView: function() {
-                return this.$refs[treeViewRef].instance;
-            }
-        },   
-        methods: {
-            selectNode(key){
-                this.treeView.selectItem(key);
+            components: {
+                DxTreeView
             },
-            unselectNode(key){
-                this.treeView.unselectItem(key);
-            } 
-        }
-    };
+            data() {
+                return {
+                    data,
+                    treeViewRef
+                };
+            },
+            computed: {
+                treeView: function() {
+                    return this.$refs[treeViewRef].instance;
+                }
+            },   
+            methods: {
+                selectNode(key){
+                    this.treeView.selectItem(key);
+                },
+                unselectNode(key){
+                    this.treeView.unselectItem(key);
+                } 
+            }
+        };
     </script>
 
 ##### React

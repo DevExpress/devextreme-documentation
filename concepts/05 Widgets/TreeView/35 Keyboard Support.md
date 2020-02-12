@@ -101,6 +101,69 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTreeView
+            :dataSource='data'
+            @initialized='onInitialized' />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const data = [...];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    data
+                };
+            },
+            methods: {
+                onInitialized(e){
+                    e.component.registerKeyHandler("backspace", function (keyEvent) {
+                        // The argument "keyEvent" contains information on the event
+                    });                    
+
+                    e.component.registerKeyHandler("space", function (keyEvent) {
+                        // ...
+                    });
+                }
+            }
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const data = [...];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataSource={data}
+                    onInitialized={this.onInitialized} />
+            );
+        }
+
+        onInitialized(e){
+            e.component.registerKeyHandler("backspace", function (keyEvent) {
+                // The argument "keyEvent" contains information on the event
+            });                    
+            e.component.registerKeyHandler("space", function (keyEvent) {
+                // ...
+            });
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

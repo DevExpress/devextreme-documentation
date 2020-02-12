@@ -365,22 +365,10 @@ You can also customize an individual node. For this purpose, declare a template 
     import { DxTreeViewModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        hierarchicalData = [{
-            id: '1',
-            text: 'Fruits', template: (item) => {return '<i>' + item.text + '</i>'},
-            items: [
-                { id: '1_1' },
-                { id: '1_2' }
-            ]
-        }, {
-            id: '2',
-            text: 'Vegetables',
-            icon: '/pics/vegetables.ico',
-            items: [
-                { id: '2_1', text: 'Cucumbers' },
-                { id: '2_2', text: 'Tomatoes' }
-            ]
-        }];
+        hierarchicalData = [
+            { id: '1_1', text: 'Apples', template: function(item){return '<i>' + item.text + '</i>'} },
+            { id: '1_2', text: 'Oranges' }
+        ];
     }
     @NgModule({
         imports: [
@@ -399,21 +387,10 @@ You can also customize an individual node. For this purpose, declare a template 
     <script>
         import { DxTreeView } from 'devextreme-vue';
 
-        const hierarchicalData = [{
-            id: '1',
-            text: 'Fruits', template: (item) => {return `<i>${item.text}</i>`},
-            items: [
-                { id: '1_1', text: 'Apples' },
-                { id: '1_2', text: 'Oranges' }
-            ]
-        }, {
-            id: '2',
-            text: 'Vegetables',
-            items: [
-                { id: '2_1', text: 'Cucumbers' },
-                { id: '2_2', text: 'Tomatoes' }
-            ]
-        }];
+        const hierarchicalData = [
+            { id: '1_1', text: 'Apples', template: function(item){return `<i>${item.text}</i>`} },
+            { id: '1_2', text: 'Oranges' }
+        ];
 
         export default {
             components: {
@@ -432,21 +409,10 @@ You can also customize an individual node. For this purpose, declare a template 
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
-    const hierarchicalData = [{
-        id: '1',
-        text: 'Fruits', template: (item) => renderTreeViewItem(item),
-        items: [
-            { id: '1_1', text: 'Apples' },
-            { id: '1_2', text: 'Oranges' }
-        ]
-    }, {
-        id: '2',
-        text: 'Vegetables',
-        items: [
-            { id: '2_1', text: 'Cucumbers' },
-            { id: '2_2', text: 'Tomatoes' }
-        ]
-    }];
+    const hierarchicalData = [
+        { id: '1_1', text: 'Apples', template: (item) => renderTreeViewItem(item) },
+        { id: '1_2', text: 'Oranges' }
+    ];
 
     class App extends React.Component {
         render() {

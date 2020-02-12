@@ -7,33 +7,33 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
 
     ##### jQuery
 
-            <!--JavaScript-->$("#treeViewContainer").dxTreeView("expandAll");
-            // $("#treeViewContainer").dxTreeView("collapseAll");
+        <!--JavaScript-->$("#treeViewContainer").dxTreeView("expandAll");
+        // $("#treeViewContainer").dxTreeView("collapseAll");
 
     ##### Angular
 
-            <!--TypeScript-->
-            import { ..., ViewChild } from "@angular/core";
-            import { DxTreeViewModule, DxTreeViewComponent } from "devextreme-angular";
-            // ...
-            export class AppComponent {
-                @ViewChild(DxTreeViewComponent, { static: false }) treeView: DxTreeViewComponent;
-                // Prior to Angular 8
-                // @ViewChild(DxTreeViewComponent) treeView: DxTreeViewComponent;
-                expandAllNodes () {
-                    this.treeView.instance.expandAll();
-                }
-                collapseAllNodes () {
-                    this.treeView.instance.collapseAll();
-                }
+        <!--TypeScript-->
+        import { ..., ViewChild } from "@angular/core";
+        import { DxTreeViewModule, DxTreeViewComponent } from "devextreme-angular";
+        // ...
+        export class AppComponent {
+            @ViewChild(DxTreeViewComponent, { static: false }) treeView: DxTreeViewComponent;
+            // Prior to Angular 8
+            // @ViewChild(DxTreeViewComponent) treeView: DxTreeViewComponent;
+            expandAllNodes () {
+                this.treeView.instance.expandAll();
             }
-            @NgModule({
-                imports: [
-                    // ...
-                    DxTreeViewModule
-                ],
+            collapseAllNodes () {
+                this.treeView.instance.collapseAll();
+            }
+        }
+        @NgModule({
+            imports: [
                 // ...
-            })
+                DxTreeViewModule
+            ],
+            // ...
+        })
         
     ##### Vue
 

@@ -1,8 +1,7 @@
 ---
-id: FileSystemItem
-module: file_management/file_system_item
-export: default
-type: Object
+id: dxDiagram.Options.viewToolbar.visible
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

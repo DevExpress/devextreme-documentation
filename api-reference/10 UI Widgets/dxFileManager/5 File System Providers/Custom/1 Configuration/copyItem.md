@@ -1,10 +1,19 @@
 ---
 id: CustomFileSystemProvider.Options.copyItem
-type: function()
+type: function(item, destinationDirectory)
 ---
 ---
 ##### shortDescription
 A function that copies files or folders.
+
+##### param(item): FileSystemItem
+<!-- Description goes here -->
+
+##### param(destinationDirectory): FileSystemItem
+<!-- Description goes here -->
+
+##### return: Promise<any> | any
+<!-- Description goes here -->
 
 ---
 

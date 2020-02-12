@@ -14,6 +14,9 @@ Information about the event that caused the function's execution.
 ##### field(e.component): {WidgetName}
 The widget's instance.
 
+##### field(e.directory): FileSystemItem
+<!-- Description goes here -->
+
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 

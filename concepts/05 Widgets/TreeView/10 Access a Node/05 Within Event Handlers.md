@@ -40,13 +40,14 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :dataSource='data'
             @item-click='onItemClick' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const data = [ ... ];
 
@@ -70,6 +71,7 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

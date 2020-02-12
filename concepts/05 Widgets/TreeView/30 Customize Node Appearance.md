@@ -66,12 +66,13 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :items='hierarchicalData' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const hierarchicalData = [{
             id: '1',
@@ -105,6 +106,7 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -247,6 +249,7 @@ If you need a more flexible solution, define a custom template. DevExtreme provi
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :items='hierarchicalData'>
@@ -256,7 +259,7 @@ If you need a more flexible solution, define a custom template. DevExtreme provi
         </DxTreeView>    
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const hierarchicalData = [{
             id: '1',
@@ -288,6 +291,7 @@ If you need a more flexible solution, define a custom template. DevExtreme provi
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -342,8 +346,6 @@ You can also customize an individual node. For this purpose, declare a template 
 
 ##### jQuery
 
-
-
     <!--JavaScript-->var treeViewData = [{
         id: '1',
         text: 'Fruits',
@@ -380,12 +382,13 @@ You can also customize an individual node. For this purpose, declare a template 
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :items='hierarchicalData' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const hierarchicalData = [
             { id: '1_1', text: 'Apples', template: function(item){return `<i>${item.text}</i>`} },
@@ -406,6 +409,7 @@ You can also customize an individual node. For this purpose, declare a template 
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

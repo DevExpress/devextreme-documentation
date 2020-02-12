@@ -61,6 +61,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             dataStructure='plain'
@@ -72,7 +73,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
 			:searchExpr='searchExpr'  />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const treeViewData = [
             { key: '1', name: 'Fruits' },
@@ -98,6 +99,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -187,6 +189,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             dataStructure='plain'
@@ -196,10 +199,10 @@ When a user types a string in the input field, the **TreeView** suggests all nod
             parentIdExpr='parent'
             searchMode='startswith'
             :searchEnabled=true
-			:searchExpr='searchExpr'  />
+            :searchExpr='searchExpr'  />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const treeViewData = [
             { key: '1', name: 'Fruits' },
@@ -225,6 +228,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

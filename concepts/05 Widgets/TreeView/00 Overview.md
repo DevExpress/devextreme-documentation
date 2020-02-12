@@ -71,12 +71,13 @@ The following code adds a simple **TreeView** to your page:
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
         :items="hierarchicalData" />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const hierarchicalData = [{
                 id: '1',
@@ -110,7 +111,7 @@ The following code adds a simple **TreeView** to your page:
 
 ##### React
 
-    import React from 'react';
+    <!-- tab: App.js -->import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [{

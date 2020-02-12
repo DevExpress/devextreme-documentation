@@ -103,13 +103,14 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :dataSource='data'
             @initialized='onInitialized' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const data = [...];
 
@@ -138,6 +139,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

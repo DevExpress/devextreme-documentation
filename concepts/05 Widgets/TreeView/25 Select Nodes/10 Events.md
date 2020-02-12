@@ -61,6 +61,7 @@ You can handle these events with functions. Assign the handling functions to the
     
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :dataSource='data'
@@ -70,7 +71,7 @@ You can handle these events with functions. Assign the handling functions to the
             @select-all-value-changed="onSelectAllValueChanged" />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const data = [ ... ];
 
@@ -99,6 +100,7 @@ You can handle these events with functions. Assign the handling functions to the
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

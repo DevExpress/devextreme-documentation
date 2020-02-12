@@ -89,15 +89,16 @@ As you can see, all items in a hierarchical data source have the **id** and **te
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             keyExpr='key'
             displayExpr='name'
             itemsExpr='children'        
-            :items='hierarchicalData' />
+            :dataSource='hierarchicalData' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const hierarchicalData = [{
                 key: '1',
@@ -129,6 +130,7 @@ As you can see, all items in a hierarchical data source have the **id** and **te
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -155,7 +157,7 @@ As you can see, all items in a hierarchical data source have the **id** and **te
                     keyExpr='key'
                     displayExpr='name'
                     itemsExpr='children'                   
-                    items={hierarchicalData} />
+                    dataSource={hierarchicalData} />
             );
         }
     }
@@ -227,14 +229,15 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             keyExpr='name'
             displayExpr='name'
-            :items='hierarchicalData' />
+            :dataSource='hierarchicalData' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const hierarchicalData = [{
                 name: 'Fruits',
@@ -264,6 +267,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -287,7 +291,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
                 <TreeView
                     keyExpr='name'
                     displayExpr='name'
-                    items={hierarchicalData} />
+                    dataSource={hierarchicalData} />
             );
         }
     }

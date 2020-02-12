@@ -49,13 +49,14 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             dataStructure='plain'
             :dataSource='plainData' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const plainData = [
             { id: '1', text: 'Fruits' },
@@ -80,6 +81,7 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -163,6 +165,7 @@ As you can see, all items in a plain data source have the **id** and **text** fi
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             dataStructure='plain'
@@ -172,7 +175,7 @@ As you can see, all items in a plain data source have the **id** and **text** fi
             parentIdExpr='parent' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const plainData = [
             { key: '1', name: 'Fruits' },
@@ -197,6 +200,7 @@ As you can see, all items in a plain data source have the **id** and **text** fi
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -281,6 +285,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             dataStructure='plain'
@@ -289,7 +294,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
             displayExpr='name' />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const plainData = [
             { name: 'Fruits' },
@@ -314,6 +319,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

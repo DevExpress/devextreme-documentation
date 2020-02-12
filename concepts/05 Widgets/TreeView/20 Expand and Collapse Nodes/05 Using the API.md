@@ -34,16 +34,17 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
             ],
             // ...
         })
-        
+
     ##### Vue
 
+        <!-- tab: App.vue -->
         <template>
             <dx-tree-view
                 :ref='treeViewRef'
                 :items='data' />
         </template>
         <script>
-            import { DxTreeView } from 'devextreme-vue';
+            import { DxTreeView } from 'devextreme-vue/tree-view';
 
             const treeViewRef = 'treeView';
 
@@ -75,6 +76,7 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
 
     ##### React
 
+        <!-- tab: App.js -->
         import React from 'react';
         import TreeView from 'devextreme-react/tree-view';
 
@@ -145,13 +147,14 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
         
     ##### Vue
 
+        <!-- tab: App.vue -->
         <template>
             <dx-tree-view
                 :ref='treeViewRef'
                 :items="data" />
         </template>
         <script>
-            import { DxTreeView } from 'devextreme-vue';
+            import { DxTreeView } from 'devextreme-vue/tree-view';
 
             const treeViewRef = 'treeView';
 
@@ -183,6 +186,7 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
 
     ##### React
 
+        <!-- tab: App.js -->
         import React from 'react';
         import TreeView from 'devextreme-react/tree-view';
 

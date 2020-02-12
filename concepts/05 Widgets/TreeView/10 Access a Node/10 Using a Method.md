@@ -31,13 +31,14 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <dx-tree-view
             :ref='treeViewRef'
             :items="data" />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
         const treeViewRef = 'treeView';
 
         export default {
@@ -65,6 +66,7 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

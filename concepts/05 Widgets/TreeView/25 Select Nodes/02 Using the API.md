@@ -30,16 +30,17 @@ To select or cancel the selection of a node programmatically, call the [selectIt
         ],
         // ...
     })
-    
+
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <dx-tree-view
             :ref="treeViewRef"
             :items="data" />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const treeViewRef = 'treeView';
 
@@ -71,6 +72,7 @@ To select or cancel the selection of a node programmatically, call the [selectIt
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -137,16 +139,17 @@ To select or cancel the selection of all nodes programmatically, call the [selec
         ],
         // ...
     })
-    
+
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <dx-tree-view
             :ref="treeViewRef"
             :items="data" />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const treeViewRef = 'treeView';
 
@@ -178,6 +181,7 @@ To select or cancel the selection of all nodes programmatically, call the [selec
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

@@ -32,13 +32,14 @@ If only a single node should be in the selected state at a time, set the [select
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :dataSource='data'
             :selectByClick=true />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const data = [ ... ];
 
@@ -56,6 +57,7 @@ If only a single node should be in the selected state at a time, set the [select
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -109,13 +111,14 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             :dataSource='data'
             showCheckBoxesMode='normal' /> <!-- or 'selectAll' -->
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const data = [...];
 
@@ -133,6 +136,7 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 

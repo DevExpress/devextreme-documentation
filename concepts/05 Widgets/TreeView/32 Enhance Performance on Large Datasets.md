@@ -59,6 +59,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             dataStructure='plain'
@@ -67,7 +68,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
             :rootValue=-1 />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const plainData = [
             { id: 1,  text: 'Fruits',     parentId: -1 },
@@ -92,6 +93,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
@@ -180,13 +182,14 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
     
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxTreeView
             dataStructure='plain'
             :create-children="createChildren" />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+        import { DxTreeView } from 'devextreme-vue/tree-view';
         import 'whatwg-fetch';
 
         export default {
@@ -207,6 +210,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
     import 'whatwg-fetch';

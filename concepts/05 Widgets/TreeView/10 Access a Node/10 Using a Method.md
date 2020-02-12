@@ -33,7 +33,7 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
 
     <template>
         <dx-tree-view
-            :ref="treeViewRef"
+            :ref='treeViewRef'
             :items="data" />
     </template>
     <script>

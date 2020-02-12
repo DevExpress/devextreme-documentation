@@ -194,7 +194,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
             keyExpr='key'
             displayExpr='name'
             parentIdExpr='parent'
-            searchMode="startswith"
+            searchMode='startswith'
             :searchEnabled=true
 			:searchExpr='searchExpr'  />
     </template>
@@ -246,7 +246,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
                     keyExpr='key'
                     displayExpr='name'
                     parentIdExpr='parent'
-                    searchMode="startswith"
+                    searchMode='startswith'
                     searchEnabled={true}
                     searchExpr={['count', 'name']} />
             );
@@ -326,7 +326,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
             parentIdExpr='parent'
             :searchEnabled=true>
             <DxSearchEditorOptions
-                placeholder="Type search value here..."
+                placeholder='Type search value here...'
                 width=300
             />
         </DxTreeView>    
@@ -382,7 +382,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
                     parentIdExpr='parent'
                     searchEnabled={true} >
                     <SearchEditorOptions
-                        placeholder="Type search value here..."
+                        placeholder='Type search value here...'
                         width={300}
                     />                    
                 </TreeView>    

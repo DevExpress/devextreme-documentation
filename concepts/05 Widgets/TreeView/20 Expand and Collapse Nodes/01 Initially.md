@@ -69,10 +69,10 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
 
     <template>
         <DxTreeView
-            keyExpr="key"
-            displayExpr="name"
+            keyExpr='key'
+            displayExpr='name'
             expandedExpr='isExpanded'
-            :items="hierarchicalData" />
+            :items='hierarchicalData' />
     </template>
     <script>
         import { DxTreeView } from 'devextreme-vue';
@@ -134,8 +134,8 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
         render() {
             return (
                 <TreeView
-                    keyExpr="key"
-                    displayExpr="name"
+                    keyExpr='key'
+                    displayExpr='name'
                     expandedExpr='isExpanded'
                     items={hierarchicalData} />
             );

@@ -91,10 +91,10 @@ As you can see, all items in a hierarchical data source have the **id** and **te
 
     <template>
         <DxTreeView
-            keyExpr="key"
-            displayExpr="name"
-            itemsExpr="children"        
-            :items="hierarchicalData" />
+            keyExpr='key'
+            displayExpr='name'
+            itemsExpr='children'        
+            :items='hierarchicalData' />
     </template>
     <script>
         import { DxTreeView } from 'devextreme-vue';
@@ -152,9 +152,9 @@ As you can see, all items in a hierarchical data source have the **id** and **te
         render() {
             return (
                 <TreeView
-                    keyExpr="key"
-                    displayExpr="name"
-                    itemsExpr="children"                   
+                    keyExpr='key'
+                    displayExpr='name'
+                    itemsExpr='children'                   
                     items={hierarchicalData} />
             );
         }
@@ -229,9 +229,9 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
     <template>
         <DxTreeView
-            keyExpr="name"
-            displayExpr="name"
-            :items="hierarchicalData" />
+            keyExpr='name'
+            displayExpr='name'
+            :items='hierarchicalData' />
     </template>
     <script>
         import { DxTreeView } from 'devextreme-vue';
@@ -285,8 +285,8 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
         render() {
             return (
                 <TreeView
-                    keyExpr="name"
-                    displayExpr="name"
+                    keyExpr='name'
+                    displayExpr='name'
                     items={hierarchicalData} />
             );
         }

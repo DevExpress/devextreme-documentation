@@ -74,7 +74,7 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
             keyExpr="name"
             displayExpr="name"
             showCheckBoxesMode="normal"
-            selectedExpr='isSelected'
+            selectedExpr="isSelected"
             :items="hierarchicalData" />
     </template>
     <script>

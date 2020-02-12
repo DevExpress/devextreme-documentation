@@ -253,8 +253,6 @@ If your appointments have a different structure, specify:
 
     import DxScheduler from 'devextreme-vue/scheduler';
 
-    const data = 
-
     export default {
         components: {
             DxScheduler
@@ -262,15 +260,15 @@ If your appointments have a different structure, specify:
         data() {
             return {
                 currentDate: new Date(2016, 4, 25),
-                dataSource: [{
-                    text: "Website Re-Design Plan",
-                    startDate: new Date(2016, 4, 25, 9, 30),
-                    endDate: new Date(2016, 4, 25, 11, 30)
-                }, {
-                    text: "Book Flights to San Fran for Sales Trip",
-                    startDate: new Date(2016, 4, 25, 12, 0),
-                    endDate: new Date(2016, 4, 25, 13, 0)
-                }, 
+                dataSource: [{ 
+                        subject: 'Meet with a customer', 
+                        from: new Date(2016, 4, 10, 11, 0), 
+                        to: new Date(2016, 4, 10, 13, 0) 
+                    }, { 
+                        subject: 'Discuss results', 
+                        from: new Date(2016, 5, 11, 12, 0), 
+                        to: new Date(2016, 4, 11, 13, 0) 
+                    }, 
                 // ...
                 ]
             }
@@ -288,15 +286,15 @@ If your appointments have a different structure, specify:
 
     import Scheduler from 'devextreme-react/scheduler';
 
-    const data = [{
-        text: "Website Re-Design Plan",
-        startDate: new Date(2016, 4, 25, 9, 30),
-        endDate: new Date(2016, 4, 25, 11, 30)
-    }, {
-        text: "Book Flights to San Fran for Sales Trip",
-        startDate: new Date(2016, 4, 25, 12, 0),
-        endDate: new Date(2016, 4, 25, 13, 0)
-    }, 
+    const data = [{ 
+            subject: 'Meet with a customer', 
+            from: new Date(2016, 4, 10, 11, 0), 
+            to: new Date(2016, 4, 10, 13, 0) 
+        }, { 
+            subject: 'Discuss results', 
+            from: new Date(2016, 5, 11, 12, 0), 
+            to: new Date(2016, 4, 11, 13, 0) 
+        }, 
     // ...
     ];
 

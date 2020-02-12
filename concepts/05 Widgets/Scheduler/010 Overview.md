@@ -261,14 +261,14 @@ If your appointments have a different structure, specify:
             return {
                 currentDate: new Date(2016, 4, 25),
                 dataSource: [{ 
-                        subject: 'Meet with a customer', 
-                        from: new Date(2016, 4, 10, 11, 0), 
-                        to: new Date(2016, 4, 10, 13, 0) 
-                    }, { 
-                        subject: 'Discuss results', 
-                        from: new Date(2016, 5, 11, 12, 0), 
-                        to: new Date(2016, 4, 11, 13, 0) 
-                    }, 
+                    subject: 'Meet with a customer', 
+                    from: new Date(2016, 4, 10, 11, 0), 
+                    to: new Date(2016, 4, 10, 13, 0) 
+                }, { 
+                    subject: 'Discuss results', 
+                    from: new Date(2016, 5, 11, 12, 0), 
+                    to: new Date(2016, 4, 11, 13, 0) 
+                }, 
                 // ...
                 ]
             }
@@ -287,14 +287,14 @@ If your appointments have a different structure, specify:
     import Scheduler from 'devextreme-react/scheduler';
 
     const data = [{ 
-            subject: 'Meet with a customer', 
-            from: new Date(2016, 4, 10, 11, 0), 
-            to: new Date(2016, 4, 10, 13, 0) 
-        }, { 
-            subject: 'Discuss results', 
-            from: new Date(2016, 5, 11, 12, 0), 
-            to: new Date(2016, 4, 11, 13, 0) 
-        }, 
+        subject: 'Meet with a customer', 
+        from: new Date(2016, 4, 10, 11, 0), 
+        to: new Date(2016, 4, 10, 13, 0) 
+    }, { 
+        subject: 'Discuss results', 
+        from: new Date(2016, 5, 11, 12, 0), 
+        to: new Date(2016, 4, 11, 13, 0) 
+    }, 
     // ...
     ];
 

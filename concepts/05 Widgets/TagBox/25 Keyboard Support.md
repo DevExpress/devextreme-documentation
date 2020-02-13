@@ -29,7 +29,7 @@ An end user can use the following keys to interact with the widget.
       <td>Page Up / Page Down</td>
       <td>Moves focus to the first/last currently rendered item.</td>
     </tr>
-    <tr>`
+    <tr>
       <td>Enter or Space</td>
       <td>Selects the current item.</td>
     </tr>

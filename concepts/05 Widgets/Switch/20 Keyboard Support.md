@@ -30,9 +30,9 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     function registerKeyHandlers () {
-        let switch =  $("#switchContainer").dxSwitch("instance");
+        const switch =  $("#switchContainer").dxSwitch("instance");
         switch.registerKeyHandler("backspace", function (e) {
             // The argument "e" contains information on the event
         });
@@ -40,18 +40,26 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             // ...
         });
     }
-    
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { ..., ViewChild, AfterViewInit } from "@angular/core";
-    import { DxSwitchModule, DxSwitchComponent } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.html -->
+    <dx-{widget-name}>
+    </dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Component, ViewChild, AfterViewInit } from '@angular/core';
+    import { Dx{WidgetName}Component } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent implements AfterViewInit {
-        @ViewChild(DxSwitchComponent, { static: false }) switch: DxSwitchComponent
+        @ViewChild(Dx{WidgetName}Component, { static: false }) switch: Dx{WidgetName}Component
         // Prior to Angular 8
-        // @ViewChild(DxSwitchComponent) switch: DxSwitchComponent
+        // @ViewChild(Dx{WidgetName}Component) switch: Dx{WidgetName}Component
         ngAfterViewInit () {
             this.switch.instance.registerKeyHandler("backspace", function (e) {
                 // The argument "e" contains information on the event
@@ -61,13 +69,84 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             });
         }
     }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
+
     @NgModule({
-        imports: [
-            // ...
-            DxSwitchModule
+        declarations: [
+            AppComponent
         ],
-        // ...
+        imports: [
+            BrowserModule,
+            Dx{WidgetName}Module
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
     })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} @initialized="registerKeyHandlers" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        methods: {
+            registerKeyHandlers({ component }) {
+                component.registerKeyHandler("backspace", function (e) {
+                    // The argument "e" contains information on the event
+                });
+                component.registerKeyHandler("space", function (e) {
+                    // ...
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <{WidgetName} onInitialized={registerKeyHandlers} />
+            );
+        }
+
+        registerKeyHandlers({ component }) {
+            component.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            component.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+    export default App;
 
 ---
 

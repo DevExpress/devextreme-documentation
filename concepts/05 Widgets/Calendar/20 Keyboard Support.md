@@ -81,7 +81,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     </template>
 
     <script>
-    import { DxCalendar } from 'devextreme-vue/calendar';
+    import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
         components: {

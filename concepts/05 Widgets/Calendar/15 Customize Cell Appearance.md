@@ -43,7 +43,7 @@ For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](
     </template>
 
     <script>
-    import { DxCalendar } from 'devextreme-vue/calendar';
+    import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
         components: {

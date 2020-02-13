@@ -49,7 +49,7 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
     </template>
 
     <script>
-    import { DxCalendar } from 'devextreme-vue/calendar';
+    import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
         components: {
@@ -146,7 +146,7 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
     </template>
 
     <script>
-    import { DxCalendar } from 'devextreme-vue/calendar';
+    import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
         components: {

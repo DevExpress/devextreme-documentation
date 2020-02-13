@@ -39,7 +39,7 @@ To specify which calendar view (month, year, decade or century) should be displa
     </template>
 
     <script>
-    import { DxCalendar } from 'devextreme-vue/calendar';
+    import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
         components: {
@@ -112,7 +112,7 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
     </template>
 
     <script>
-    import { DxCalendar } from 'devextreme-vue/calendar';
+    import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
         components: {

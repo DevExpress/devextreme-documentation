@@ -45,7 +45,7 @@ To process a new calendar value, you need to handle the value change event. If t
     </template>
 
     <script>
-    import { DxCalendar } from 'devextreme-vue/calendar';
+    import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
         components: {

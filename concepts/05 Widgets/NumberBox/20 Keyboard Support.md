@@ -74,7 +74,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     </template>
 
     <script>
-    import { DxNumberBox } from 'devextreme-vue/number-box';
+    import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
         components: {

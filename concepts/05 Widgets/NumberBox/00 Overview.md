@@ -53,7 +53,7 @@ The following code adds the **NumberBox** to your page. The simplest configurati
     </template>
 
     <script>
-    import { DxNumberBox } from 'devextreme-vue/number-box';
+    import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
         components: {
@@ -131,7 +131,7 @@ In most cases, it is useful to specify the range of possible values. For this pu
     </template>
 
     <script>
-    import { DxNumberBox } from 'devextreme-vue/number-box';
+    import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
         components: {

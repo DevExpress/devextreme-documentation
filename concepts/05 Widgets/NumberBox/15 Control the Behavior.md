@@ -44,7 +44,7 @@ If you need to add spin buttons to the **NumberBox**, set the [showSpinButtons](
     </template>
 
     <script>
-    import { DxNumberBox } from 'devextreme-vue/number-box';
+    import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
         components: {
@@ -122,7 +122,7 @@ To specify the step by which the value is changed, use the [step](/api-reference
     </template>
 
     <script>
-    import { DxNumberBox } from 'devextreme-vue/number-box';
+    import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
         components: {

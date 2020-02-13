@@ -44,7 +44,7 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
     </template>
 
     <script>
-    import { DxNumberBox } from 'devextreme-vue/number-box';
+    import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
         components: {
@@ -120,7 +120,7 @@ To process a new **NumberBox** value, you need to handle the value change event.
     </template>
 
     <script>
-    import { DxNumberBox } from 'devextreme-vue/number-box';
+    import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
         components: {

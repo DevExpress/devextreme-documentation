@@ -14,7 +14,7 @@ The following code creates the **FileManager** widget and adds it to your page.
                 create: true,
                 copy: true,
                 move: true,
-                remove: true,
+                delete: true,
                 rename: true
             }
         });
@@ -70,10 +70,10 @@ The following code creates the **FileManager** widget and adds it to your page.
         [fileSystemProvider]="fileItems">
         <dxo-permissions 
             [create]="true"
-            copy="true"
-            move="true"
-            remove="true"
-            rename="true" >
+            [copy]="true"
+            [move]="true"
+            [delete]="true"
+            [rename]="true" >
         </dxo-permissions>
     </dx-file-manager>  
 
@@ -140,7 +140,7 @@ The following code creates the **FileManager** widget and adds it to your page.
                 :create="true"
                 :copy="true"
                 :move="true"
-                :remove="true"
+                :delete="true"
                 :rename="true" />
         </DxFileManager>
     </template>
@@ -213,7 +213,7 @@ The following code creates the **FileManager** widget and adds it to your page.
                         copy={true}
                         download={true}
                         move={true}
-                        remove={true}
+                        delete={true}
                         rename={true}
                         download={true} />
                 </FileManager>

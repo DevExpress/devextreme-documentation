@@ -106,12 +106,13 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :dataSource='data'
-            @initialized='onInitialized' />
+            :ref='treeViewRef'        
+            :dataSource='data' />
     </template>
     <script>
         import { DxTreeView } from 'devextreme-vue/tree-view';
-
+        const treeViewRef = 'treeView';
+        
         const data = [...];
 
         export default {
@@ -120,19 +121,23 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             },
             data() {
                 return {
-                    data
+                    data,
+                    treeViewRef
                 };
             },
-            methods: {
-                onInitialized(e){
-                    e.component.registerKeyHandler("backspace", function (keyEvent) {
-                        // The argument "keyEvent" contains information on the event
-                    });                    
-
-                    e.component.registerKeyHandler("space", function (keyEvent) {
-                        // ...
-                    });
+            computed: {
+                treeView: function() {
+                    return this.$refs[treeViewRef].instance;
                 }
+            },   
+            mounted: function() {
+                this.treeView.registerKeyHandler("backspace", function (e) {
+                    // The argument "e" contains information on the event
+                });                    
+
+                this.treeView.registerKeyHandler("space", function (e) {
+                    // ...
+                });
             }
         };
     </script>
@@ -145,20 +150,30 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     const data = [...];
 
+
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.treeViewRef = React.createRef();
+        }
+
+        get treeView() {
+            return this.treeViewRef.current.instance;
+        }        
         render() {
             return (
                 <TreeView
+                    ref={this.treeViewRef}
                     dataSource={data}
                     onInitialized={this.onInitialized} />
             );
         }
 
-        onInitialized(e){
-            e.component.registerKeyHandler("backspace", function (keyEvent) {
-                // The argument "keyEvent" contains information on the event
+        componentDidMount() {
+            this.treeView.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
             });                    
-            e.component.registerKeyHandler("space", function (keyEvent) {
+            this.treeView.registerKeyHandler("space", function (e) {
                 // ...
             });
         }

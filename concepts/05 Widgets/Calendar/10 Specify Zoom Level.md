@@ -133,8 +133,7 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
             return (
                 <Calendar
                     minZoomLevel="decade"
-                    maxZoomLevel="month"
-                />
+                    maxZoomLevel="month" />
             );
         }
     }

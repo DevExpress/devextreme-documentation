@@ -82,8 +82,7 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
                 <Calendar
                     defaultValue={date}
                     minDate={minDate}
-                    maxDate={maxDate}
-                />
+                    maxDate={maxDate} />
             );
         }
     }
@@ -182,8 +181,7 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
             return (
                 <Calendar
                     defaultValue={date}
-                    disabledDates={isDateDisabled}
-                />
+                    disabledDates={isDateDisabled} />
             );
         }
 

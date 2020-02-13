@@ -79,6 +79,77 @@ The following code adds the **Scheduler** widget to your page. The simplest conf
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="dataSource"
+            :current-date="currentDate" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 25),
+                dataSource: [{
+                    text: "Website Re-Design Plan",
+                    startDate: new Date(2016, 4, 25, 9, 30),
+                    endDate: new Date(2016, 4, 25, 11, 30)
+                }, {
+                    text: "Book Flights to San Fran for Sales Trip",
+                    startDate: new Date(2016, 4, 25, 12, 0),
+                    endDate: new Date(2016, 4, 25, 13, 0)
+                }, 
+                // ...
+                ]
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const data = [{
+        text: "Website Re-Design Plan",
+        startDate: new Date(2016, 4, 25, 9, 30),
+        endDate: new Date(2016, 4, 25, 11, 30)
+    }, {
+        text: "Book Flights to San Fran for Sales Trip",
+        startDate: new Date(2016, 4, 25, 12, 0),
+        endDate: new Date(2016, 4, 25, 13, 0)
+    }, 
+    // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={data}
+                    defaultCurrentDate={new Date(2016, 4, 25)} />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 Each data source object represents an appointment to be scheduled and has a special structure. This structure should be similar to that described in the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource') option. The fields listed below should be present in every appointment.
@@ -164,6 +235,81 @@ If your appointments have a different structure, specify:
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="dataSource"
+            text-expr="subject"
+            start-date-expr="from"
+            end-date-expr="to" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 25),
+                dataSource: [{ 
+                    subject: 'Meet with a customer', 
+                    from: new Date(2016, 4, 10, 11, 0), 
+                    to: new Date(2016, 4, 10, 13, 0) 
+                }, { 
+                    subject: 'Discuss results', 
+                    from: new Date(2016, 5, 11, 12, 0), 
+                    to: new Date(2016, 4, 11, 13, 0) 
+                }, 
+                // ...
+                ]
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const data = [{ 
+        subject: 'Meet with a customer', 
+        from: new Date(2016, 4, 10, 11, 0), 
+        to: new Date(2016, 4, 10, 13, 0) 
+    }, { 
+        subject: 'Discuss results', 
+        from: new Date(2016, 5, 11, 12, 0), 
+        to: new Date(2016, 4, 11, 13, 0) 
+    }, 
+    // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={data}
+                    textExpr="subject"
+                    startDateExpr="from"
+                    endDateExpr="to" />
+            );
+        }
+    }
+    export default App;
 
 ---
 

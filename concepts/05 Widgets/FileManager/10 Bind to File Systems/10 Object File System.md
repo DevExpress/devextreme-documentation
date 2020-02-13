@@ -1,8 +1,8 @@
-The **FileManager** widget provides the Array file provider to manage files and folders in an in-memory array of JSON objects.
+The **FileManager** widget provides the Object file system provider to manage files and folders in an in-memory array of JSON objects.
 
 ![FileManager - Hierarchical Data Structure](/images/FileManager/Hierarchical-file-system.png)
 
-Create an Array file provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Providers/Array/1%20Configuration/data.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_Providers/Array/Configuration/#data') option to bind the **FileManager** widget to a hierarchical data structure.
+Create an Object file system provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object/1%20Configuration/data.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#data') option to bind the **FileManager** widget to a hierarchical data structure.
 
 The provider automatically binds data objects to the widget if the data objects have default fields in their structure. For example:
 
@@ -31,7 +31,7 @@ In the example below, the **FileManager** widget displays hierarchical data stor
     <!-- tab: index.js -->
     $(function() {
         $("#file-manager").dxFileManager({            
-            fileProvider: fileSystem,
+            fileSystemProvider: fileSystem,
             // ...
         });
     });
@@ -89,7 +89,7 @@ If the data source's field names differ from the standard field names mentioned 
     <!-- tab: index.js -->
     $(function() {
         $("#file-manager").dxFileManager({            
-            fileProvider: fileSystem,
+            fileSystemProvider: fileSystem,
             isDirectoryExpr: "isFolder",
             sizeExpr: "itemSize",
             // ...

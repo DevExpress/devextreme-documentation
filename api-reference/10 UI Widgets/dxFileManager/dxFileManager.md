@@ -15,7 +15,7 @@ The **FileManager** is a widget that allows users to upload, select, and manage 
 }
 
 ##### widgettree
-fileProvider: [{
+fileSystemProvider: [{
     name: "Documents",
     isDirectory: true,
     items: [{

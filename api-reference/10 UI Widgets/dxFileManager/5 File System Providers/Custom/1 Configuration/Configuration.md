@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes options that configure a custom file provider.
+This section describes options that configure a custom file system provider.
 
 ---

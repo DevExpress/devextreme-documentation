@@ -1,10 +1,16 @@
 ---
 id: CustomFileSystemProvider.Options.getItems
-type: function()
+type: function(parentDirectory)
 ---
 ---
 ##### shortDescription
 A function that gets file system items.
+
+##### param(parentDirectory): FileSystemItem
+<!-- Description goes here -->
+
+##### return: Promise<Array<Object>> | Array<Object>
+<!-- Description goes here -->
 
 ---
 
@@ -15,7 +21,7 @@ A function that gets file system items.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 getItems: function(pathInfo) { 
                     // Your code goes here
                 }

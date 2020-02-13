@@ -65,7 +65,7 @@ You can specify an icon in the following formats:
     }
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager"
-        [fileProvider]="fileItems"
+        [fileSystemProvider]="fileItems"
         [customizeThumbnail]="customizeIcon" >
         <dxo-item-view
             mode="thumbnails">

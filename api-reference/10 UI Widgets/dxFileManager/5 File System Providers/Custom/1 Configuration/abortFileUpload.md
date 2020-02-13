@@ -1,10 +1,19 @@
 ---
 id: CustomFileSystemProvider.Options.abortFileUpload
-type: function()
+type: function(file, uploadInfo?)
 ---
 ---
 ##### shortDescription
 A function that cancels the file upload.
+
+##### param(file): File
+<!-- Description goes here -->
+
+##### param(uploadInfo?): UploadInfo
+<!-- Description goes here -->
+
+##### return: Promise<any> | any
+<!-- Description goes here -->
 
 ---
 
@@ -16,7 +25,7 @@ A function that cancels the file upload.
     <!--JavaScript-->
     $(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({             
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({             
                 abortFileUpload: function(fileData, chunksInfo, destinationDir) { 
                     // Your code goes here
                 },

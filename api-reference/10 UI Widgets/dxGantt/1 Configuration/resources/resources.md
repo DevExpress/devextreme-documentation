@@ -16,11 +16,11 @@ You can add resources to a project and assign them to tasks. Resources can be pe
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource') option to bind the widget to a data source, which contains resources. If the field names in your data source differ from the 'id' and 'text' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#keyExpr') and/or [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#textExpr') options to map data fields. 
+Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource') option to bind the widget to a data source, which contains resources. If the field names in your data source differ from the 'id' and 'text' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#keyExpr') and/or [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#textExpr') options to map data fields.
 
 #####See Also#####
 - [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources')
-- [Gantt Elements - Resources](concept/05%20Widgets/Gantt/10%20Gantt%20Elements/30%20Resource.md 'Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Resource')
+- [Gantt Elements - Resources](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/30%20Resource.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Resource')
 
 ---
 

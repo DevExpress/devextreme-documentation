@@ -65,8 +65,7 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
             return (
                 <NumberBox
                     defaultValue={20}
-                    valueChangeEvent="keyup"
-                />
+                    valueChangeEvent="keyup" />
             );
         }
     }

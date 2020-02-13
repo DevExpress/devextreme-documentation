@@ -65,8 +65,7 @@ If you need to add spin buttons to the **NumberBox**, set the [showSpinButtons](
             return (
                 <NumberBox
                     defaultValue={20}
-                    showSpinButtons={true}
-                />
+                    showSpinButtons={true} />
             );
         }
     }
@@ -145,8 +144,7 @@ To specify the step by which the value is changed, use the [step](/api-reference
                 <NumberBox
                     defaultValue={20}
                     showSpinButtons={true}
-                    step={10}
-                />
+                    step={10} />
             );
         }
     }

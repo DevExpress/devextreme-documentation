@@ -74,8 +74,7 @@ The following code adds the **NumberBox** to your page. The simplest configurati
             return (
                 <NumberBox
                     defaultValue={20}
-                    placeholder="Enter your age"
-                />
+                    placeholder="Enter your age" />
             );
         }
     }
@@ -154,8 +153,7 @@ In most cases, it is useful to specify the range of possible values. For this pu
                 <NumberBox
                     defaultValue={20}
                     min={16}
-                    max={100}
-                />
+                    max={100} />
             );
         }
     }

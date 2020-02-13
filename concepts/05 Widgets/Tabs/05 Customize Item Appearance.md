@@ -96,70 +96,16 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
 
 ---
 
-If you need a more flexible solution, define a [custom templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates'). The following code gives a simple example of how you can use it to customize tabs.
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tabs. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#itemTemplate') callback function.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
-##### AngularJS
-
-    <!--HTML-->
-    <div ng-app="DemoApp" ng-controller="DemoController">
-        <div dx-tabs="{
-            items: tabItems,
-            itemTemplate: 'tab'
-        }" dx-item-alias="itemObj">
-            <div data-options="dxTemplate: { name: 'tab' } ">
-                <p style="color:#6600cc;">{{ itemObj.text }}</p>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.tabItems = [
-                { text: 'User' },
-                { text: 'Comment' },
-                { text: 'Find' },
-                // . . .
-            ];
-        });
-
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-##### Knockout
-
-    <!--HTML-->
-    <div data-bind="dxTabs: {
-        items: tabItems,
-        itemTemplate: 'tab'
-    }">
-        <div data-options="dxTemplate: { name: 'tab' } ">
-            <p data-bind="text: text" style="color:#6600cc;"></p>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        tabItems: [
-            { text: 'User' },
-            { text: 'Comment' },
-            { text: 'Find' },
-            // . . .
-        ]
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Angular
 
     <!--HTML-->
     <dx-tabs
-            [items]="tabs"
-            itemTemplate='tabItem'>
-        <div *dxTemplate="let itemData of 'tabItem';">
+        [items]="tabs"
+        itemTemplate="tabItem">
+        <div *dxTemplate="let itemData of 'tabItem'">
             <p style="color:#6600cc;">{{itemData.text}}</p>
         </div>
     </dx-tabs>
@@ -188,13 +134,16 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
     <template>
         <DxTabs
             :items="tabs"
-            itemTemplate="item" >
+            item-template="item">
             <template #item="{ data }">
                 <p style="color: #6600cc;">{{data.text}}</p>
             </template>
         </DxTabs>
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
 
     export default {
@@ -217,8 +166,17 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import { Tabs } from 'devextreme-react/tabs';
 
+    const tabs = [
+        { text: "User", icon: 'user' },
+        { text: "Comment", badge: "New" },
+        { text: "Find" }
+    ];
+    
     const renderTabItem = (itemData) => {
         return (
             <p style={{color: '#6600cc'}}>{itemData.text}</p>
@@ -226,18 +184,10 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
     }
 
     class App extends React.Component {
-        constructor() {
-            this.tabs = [
-                { text: "User", icon: 'user' },
-                { text: "Comment", badge: "New" },
-                { text: "Find" }
-            ];
-        }
-
         render() {
             return (
                 <Tabs
-                    items={this.tabs}
+                    items={tabs}
                     itemRender={renderTabItem}
                 />
             );
@@ -245,11 +195,13 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
     }
 
     export default App;
+    
+---
 
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tabs. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
+
+---
 ##### jQuery
-
-    <!--HTML-->
-    <div id="tabsContainer"></div>
 
     <!--JavaScript-->
     $(function() {
@@ -267,35 +219,9 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
 ---
 
-You can also customize an individual tab in collection widgets. 
-If you use jQuery alone, declare a template for this tab as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#template') option. When using any library or framework except jQuery, declare the items using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component as shown in the following code. Do not set the widget's dataSource option.
+You can also customize individual tabs. In Angular, Vue, and React, declare them using the [dxItem]() component. When using jQuery, you can declare the tabs as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#template') option or assign a customization function straight to this option.
 
 ---
-
-##### jQuery
-
-    <!--HTML-->
-    <div id="tabsContainer"></div>
-    <script id="individualTabTemplate" type="text/html">
-        <span>Comment</span>
-    </script>
-
-    <!--JavaScript-->
-    $(function() {
-        $("#tabsContainer").dxTabs({
-            items: [
-                { 
-                    template: function() {
-                        return $("<span>").text("User")
-                    }
-                },
-                { 
-                    template: $("#individualTabTemplate")
-                }
-            ]
-        });
-    });
-
 ##### Angular
 
     <!--HTML-->
@@ -357,10 +283,6 @@ If you use jQuery alone, declare a template for this tab as a script and pass it
     import { Tabs, Item } from 'devextreme-react/tabs';
 
     class App extends React.Component {
-        constructor() {
-            // ...
-        }
-
         render() {
             return (
                 <Tabs>
@@ -376,6 +298,27 @@ If you use jQuery alone, declare a template for this tab as a script and pass it
     }
 
     export default App;
+   
+##### jQuery
+
+    <!--HTML-->
+    <div id="tabsContainer"></div>
+    <script id="individualTabTemplate" type="text/html">
+        <span>Comment</span>
+    </script>
+
+    <!--JavaScript-->
+    $(function() {
+        $("#tabsContainer").dxTabs({
+            items: [{ 
+                template: function() {
+                    return $("<span>").text("User");
+                }
+            }, { 
+                template: $("#individualTabTemplate");
+            }]
+        });
+    });
 
 ---
 

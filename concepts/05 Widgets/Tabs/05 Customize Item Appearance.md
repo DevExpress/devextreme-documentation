@@ -287,7 +287,7 @@ If you use jQuery alone, declare a template for this tab as a script and pass it
                 { 
                     template: function() {
                         return $("<span>").text("User")
-                    } 
+                    }
                 },
                 { 
                     template: $("#individualTabTemplate")

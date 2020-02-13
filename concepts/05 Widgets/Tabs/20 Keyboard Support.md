@@ -10,11 +10,11 @@ An end user can use the following keys to interact with the widget.
     </thead>
     <tbody>
     <tr>
-      <td>&larr; / &uarr; / PageUp</td>
+      <td>&larr; &uarr; or PageUp</td>
       <td>Moves focus to the previous tab.</td>
     </tr>
     <tr>
-      <td>&rarr; / &darr; / PageDown</td>
+      <td>&rarr; &darr; or PageDown</td>
       <td> Moves focus to the next tab.</td>
     </tr>
     <tr>

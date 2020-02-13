@@ -18,7 +18,7 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
             items: [
                 { text: "User", icon: 'user' },
                 { text: "Comment", badge: "New" },
-                { text: "Find" }
+                { text: "Find", disabled: true }
             ]
         });
     });
@@ -37,7 +37,7 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
         tabs = [
             { text: "User", icon: 'user' },
             { text: "Comment", badge: "New" },
-            { text: "Find" }
+            { text: "Find", disabled: true }
         ];
     }
     @NgModule({
@@ -67,7 +67,7 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
                 tabs: [
                     { text: "User", icon: 'user' },
                     { text: "Comment", badge: "New" },
-                    { text: "Find" }
+                    { text: "Find", disabled: true }
                 ]
             };
         }
@@ -85,7 +85,7 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
             this.tabs = [
                 { text: "User", icon: 'user' },
                 { text: "Comment", badge: "New" },
-                { text: "Find" }
+                { text: "Find", disabled: true }
             ];
         }
 

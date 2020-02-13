@@ -101,7 +101,7 @@ If you need a more flexible solution, define a [custom templates](/concepts/05%2
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tabs. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#itemTemplate') callback function.
 
 ---
-##### **AngularJS**
+##### AngularJS
 
     <!--HTML-->
     <div ng-app="DemoApp" ng-controller="DemoController">
@@ -129,7 +129,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
 [note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
 
-##### **Knockout**
+##### Knockout
 
     <!--HTML-->
     <div data-bind="dxTabs: {

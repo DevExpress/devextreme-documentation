@@ -1,15 +1,13 @@
 The **TreeView** raises the following selection-related events: 
 
 - [itemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/itemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#itemSelectionChanged')
-Raised after the specific node's selection state changes.
+Raised after a node's selection state changes.
 
 - [selectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectionChanged')
 Raised after the tree view's selection state changes.
 
 - [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectAllValueChanged')
 Raised after the "Select All" check box's state changes.
-
-[note]The 'itemSelectionChanged' event doesn't rise, if ther user select the ['selectAll'](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#showCheckBoxesMode') checkbox.
 
 You can handle these events with functions. Assign the handling functions to the [onItemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/onItemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#onItemSelectionChanged') and [onSelectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/onSelectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#onSelectAllValueChanged') options when you configure the widget if they are going to remain unchanged at runtime.
 
@@ -87,10 +85,10 @@ You can handle these events with functions. Assign the handling functions to the
                 };
             },
             methods: {
-                onItemSelectionChanged(e){
+                onItemSelectionChanged(e) {
                     // Handler of the "itemSelectionChanged" event
                 }
-                onSelectionChanged(e){
+                onSelectionChanged(e) {
                     // Handler of the "selectionChanged" event
                 }
                 onSelectAllValueChanged(e) {
@@ -102,7 +100,6 @@ You can handle these events with functions. Assign the handling functions to the
 
 ##### React
 
-    <!-- tab: App.vue -->
     <!-- tab: App.js -->
     import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
@@ -121,15 +118,15 @@ You can handle these events with functions. Assign the handling functions to the
             );
         }
 
-        onItemSelectionChanged(e){
+        onItemSelectionChanged(e) {
             // Handler of the "itemSelectionChanged" event
         }
 
-        onSelectionChanged(e){
+        onSelectionChanged(e) {
             // Handler of the "selectionChanged" event
         }
 
-        onSelectAllValueChanged(e){
+        onSelectAllValueChanged(e) {
             // Handler of the "selectAllValueChanged" event
         }
     }

@@ -73,6 +73,58 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxCalendar @initialized="registerKeyHandlers" />
+    </template>
+
+    <script>
+    import { DxCalendar } from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        },
+        methods: {
+            registerKeyHandlers: function({ component }) {
+                component.registerKeyHandler("backspace", function (e) {
+                    // The argument "e" contains information on the event
+                });
+                component.registerKeyHandler("space", function (e) {
+                    // ...
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar onInitialized="registerKeyHandlers" />
+            );
+        }
+
+        registerKeyHandlers({ component }) {
+            component.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            component.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

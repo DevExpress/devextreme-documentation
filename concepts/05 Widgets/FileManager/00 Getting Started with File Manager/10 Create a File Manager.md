@@ -69,7 +69,7 @@ The following code creates the **FileManager** widget and adds it to your page.
     <dx-file-manager id="fileManager"
         [fileSystemProvider]="fileItems">
         <dxo-permissions 
-            create="true"
+            [create]="true"
             copy="true"
             move="true"
             remove="true"
@@ -87,7 +87,7 @@ The following code creates the **FileManager** widget and adds it to your page.
     })
 
     export class AppComponent {
-        fileItems:[{
+        fileItems = [{
             name: "Documents",
             isDirectory: true,
             items: [{

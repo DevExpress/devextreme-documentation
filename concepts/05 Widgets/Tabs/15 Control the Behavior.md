@@ -116,12 +116,8 @@ If you need a tab to be preselected or to select it programmatically, pass its i
                 { text: "Comment" },
                 // ...
             ],
-            // Preselects the tab with index 1
             selectedIndex: 1
         });
-
-        // Selects the tab with index 0
-        $("#tabsContainer").dxTabs("option", "selectedIndex", 0);
     });
 
 ##### Angular
@@ -227,8 +223,6 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
             selectionMode: 'multiple',
             selectedItems: [ tabs[0], tabs[1] ]
         });
-
-        $("#tabsContainer").dxTabs("option", "selectedIndex", 0);
     });
 
 ##### Angular

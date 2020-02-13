@@ -6,7 +6,7 @@ id: dxTreeView.unselectAll()
 Cancels the selection of all items.
 
 ---
-[In this topic we need the same note about virtual/createchildren/searchenabled]
+[!!!In this topic we need the same note about virtual/createchildren/searchenabled!!!](/Documentation/20_1/ApiReference/UI_Widgets/dxTreeView/Methods/#selectAll).
 
 ---
 #####See Also#####

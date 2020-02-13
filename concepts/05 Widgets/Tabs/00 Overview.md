@@ -6,6 +6,9 @@ The **Tabs** is a tab strip used to switch between pages or views. This widget i
 
 The following code adds the **Tabs** widget to your page. One of the tabs has an icon, another has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#badge').
 
+---
+##### jQuery
+
     <!--HTML-->
     <div id="tabsContainer"></div>
 
@@ -19,6 +22,85 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
             ]
         });
     });
+
+##### Angular
+
+    <!--HTML-->
+    <dx-tabs
+        [items]="tabs">
+    </dx-tabs>
+
+    <!--TypeScript-->
+    import { DxTabsModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        tabs = [
+            { text: "User", icon: 'user' },
+            { text: "Comment", badge: "New" },
+            { text: "Find" }
+        ];
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTabsModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxTabs
+            :items="tabs" />
+    </template>
+    <script>
+    import DxTabs from "devextreme-vue/tabs";
+
+    export default {
+        components: {
+            DxTabs
+        },
+        data() {
+            return {
+                tabs: [
+                    { text: "User", icon: 'user' },
+                    { text: "Comment", badge: "New" },
+                    { text: "Find" }
+                ]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import { Tabs } from 'devextreme-react/tabs';
+
+    class App extends React.Component {
+        constructor() {
+            this.tabs = [
+                { text: "User", icon: 'user' },
+                { text: "Comment", badge: "New" },
+                { text: "Find" }
+            ];
+        }
+
+        render() {
+            return (
+                <Tabs
+                    items={this.tabs}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 Note that field names in these data source items are [conventional](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/'). This provides a default appearance for tabs, which can be customized later.
 

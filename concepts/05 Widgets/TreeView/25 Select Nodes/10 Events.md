@@ -1,10 +1,15 @@
 The **TreeView** raises the following selection-related events: 
 
-- [itemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/itemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#itemSelectionChanged')            
-Raised after a node's selection state changes.
+- [itemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/itemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#itemSelectionChanged')
+Raised after the specific node's selection state changes.
 
-- [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectAllValueChanged')          
+- [selectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectionChanged')
+Raised after the tree view's selection state changes.
+
+- [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectAllValueChanged')
 Raised after the "Select All" check box's state changes.
+
+[note]The 'itemSelectionChanged' event doesn't rise, if ther user select the ['selectAll'](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#showCheckBoxesMode') checkbox.
 
 You can handle these events with functions. Assign the handling functions to the [onItemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/onItemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#onItemSelectionChanged') and [onSelectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/onSelectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#onSelectAllValueChanged') options when you configure the widget if they are going to remain unchanged at runtime.
 
@@ -16,6 +21,9 @@ You can handle these events with functions. Assign the handling functions to the
             onItemSelectionChanged: function (e) {
                 // Handler of the "itemSelectionChanged" event
             },
+            onSelectionChanged: function (e) {
+                // Handler of the "selectionChanged" event
+            },            
             onSelectAllValueChanged: function (e) {
                 // Handler of the "selectAllValueChanged" event
             }
@@ -27,6 +35,7 @@ You can handle these events with functions. Assign the handling functions to the
     <!--HTML-->
     <dx-tree-view ...
         (onItemSelectionChanged)="onItemSelectionChanged($event)"
+        (onSelectionChanged)="onSelectionChanged($event)"
         (onSelectAllValueChanged)="onSelectAllValueChanged($event)>
     </dx-tree-view>
 
@@ -37,6 +46,9 @@ You can handle these events with functions. Assign the handling functions to the
         onItemSelectionChanged (e) {
             // Handler of the "itemSelectionChanged" event
         }
+        onSelectionChanged (e) {
+            // Handler of the "selectionChanged" event
+        }        
         onSelectAllValueChanged (e) {
             // Handler of the "selectAllValueChanged" event
         }
@@ -49,6 +61,81 @@ You can handle these events with functions. Assign the handling functions to the
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            :dataSource='data'
+            showCheckBoxesMode="normal"
+            @item-selection-changed="onItemSelectionChanged"
+            @selection-changed="onSelectionChanged"
+            @select-all-value-changed="onSelectAllValueChanged" />
+    </template>
+    <script>
+        import { DxTreeView } from 'devextreme-vue';
+
+        const data = [ ... ];
+
+        export default {
+            components: {
+                DxTreeView,
+            },
+            data() {
+                return {
+                    data
+                };
+            },
+            methods: {
+                onItemSelectionChanged(e){
+                    // Handler of the "itemSelectionChanged" event
+                }
+                onSelectionChanged(e){
+                    // Handler of the "selectionChanged" event
+                }
+                onSelectAllValueChanged(e) {
+                    // Handler of the "selectAllValueChanged" event
+                }
+            }
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.vue -->
+    <!-- tab: App.js -->
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+
+    const data = [ ... ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataSource={data} 
+                    showCheckBoxesMode="normal"
+                    onItemSelectionChanged={this.onItemSelectionChanged}
+                    onSelectionChanged={this.onSelectionChanged} 
+                    onSelectAllValueChanged={this.onSelectAllValueChanged}/>
+            );
+        }
+
+        onItemSelectionChanged(e){
+            // Handler of the "itemSelectionChanged" event
+        }
+
+        onSelectionChanged(e){
+            // Handler of the "selectionChanged" event
+        }
+
+        onSelectAllValueChanged(e){
+            // Handler of the "selectAllValueChanged" event
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change the event handler at runtime, or if you need to attach several handlers to the event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

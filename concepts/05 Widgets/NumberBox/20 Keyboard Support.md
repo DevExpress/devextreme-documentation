@@ -65,6 +65,59 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxNumberBox @initialized="registerKeyHandlers"
+        />
+    </template>
+
+    <script>
+    import { DxNumberBox } from 'devextreme-vue/number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        },
+        methods: {
+            registerKeyHandlers({ component }) {
+                component.registerKeyHandler("backspace", function (e) {
+                    // The argument "e" contains information on the event
+                });
+                component.registerKeyHandler("space", function (e) {
+                    // ...
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <NumberBox onInitialized="registerKeyHandlers" />
+            );
+        }
+
+        registerKeyHandlers({ component }) {
+            component.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            component.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

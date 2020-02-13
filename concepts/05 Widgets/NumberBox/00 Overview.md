@@ -42,6 +42,45 @@ The following code adds the **NumberBox** to your page. The simplest configurati
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxNumberBox
+            :value="20"
+            placeholder="Enter your age"
+        />
+    </template>
+
+    <script>
+    import { DxNumberBox } from 'devextreme-vue/number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <NumberBox
+                    defaultValue={20}
+                    placeholder="Enter your age"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 In most cases, it is useful to specify the range of possible values. For this purpose, set the [min](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/min.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/max.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#max') options.
@@ -80,6 +119,47 @@ In most cases, it is useful to specify the range of possible values. For this pu
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxNumberBox
+            :value="20"
+            :min="16"
+            :max:"100"
+        />
+    </template>
+
+    <script>
+    import { DxNumberBox } from 'devextreme-vue/number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <NumberBox
+                    defaultValue={20}
+                    min={16}
+                    max={100}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

@@ -7,7 +7,7 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
     $(function() {
         $("#numberBoxContainer").dxNumberBox({
             value: 20,
-            valueChangeEvent: 'keyup'
+            valueChangeEvent: "keyup"
         });
     });
 
@@ -32,6 +32,45 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxNumberBox
+            :value="20"
+            valueChangeEvent="keyup"
+        />
+    </template>
+
+    <script>
+    import { DxNumberBox } from 'devextreme-vue/number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <NumberBox
+                    defaultValue={20}
+                    valueChangeEvent="keyup"
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -62,9 +101,7 @@ To process a new **NumberBox** value, you need to handle the value change event.
     import { DxNumberBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        numberBox_valueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+        numberBox_valueChanged ({ previousValue, value: newValue }) {
             // Event handling commands go here
         }
     }
@@ -75,6 +112,48 @@ To process a new **NumberBox** value, you need to handle the value change event.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxNumberBox @valueChanged="numberBoxValueChanged" />
+    </template>
+
+    <script>
+    import { DxNumberBox } from 'devextreme-vue/number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        },
+        methods: {
+            numberBoxValueChanged({ previousValue, value: newValue }) {
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <NumberBox onValueChanged="numberBoxValueChanged" />
+            );
+        }
+
+        numberBoxValueChanged({ previousValue, value: newValue }) {
+            // Event handling commands go here
+        }
+    }
+    export default App;
 
 ---
 

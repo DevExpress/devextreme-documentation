@@ -39,7 +39,7 @@ If you need to add spin buttons to the **NumberBox**, set the [showSpinButtons](
     <template> 
         <DxNumberBox
             :value="20"
-            :showSpinButtons="true"
+            :show-spin-buttons="true"
         />
     </template>
 
@@ -116,7 +116,7 @@ To specify the step by which the value is changed, use the [step](/api-reference
     <template> 
         <DxNumberBox
             :value="20"
-            :showSpinButtons="true"
+            :show-spin-buttons="true"
             :step="10"
         />
     </template>

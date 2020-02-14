@@ -39,7 +39,7 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
     <template> 
         <DxNumberBox
             :value="20"
-            valueChangeEvent="keyup"
+            value-change-event="keyup"
         />
     </template>
 
@@ -116,7 +116,7 @@ To process a new **NumberBox** value, you need to handle the value change event.
 
     <!-- tab: App.vue -->
     <template> 
-        <DxNumberBox @valueChanged="numberBoxValueChanged" />
+        <DxNumberBox @value-changed="numberBoxValueChanged" />
     </template>
 
     <script>

@@ -126,7 +126,7 @@ In most cases, it is useful to specify the range of possible values. For this pu
         <DxNumberBox
             :value="20"
             :min="16"
-            :max:"100"
+            :max="100"
         />
     </template>
 

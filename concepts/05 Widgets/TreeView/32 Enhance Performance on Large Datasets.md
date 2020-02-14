@@ -9,6 +9,8 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
 ---
 ##### jQuery
 
+    <!--HTML--><div id="treeViewContainer"></div>
+
     <!--JavaScript-->var plainData = [
         { id: 1,  text: 'Fruits',     parentId: -1 },
         { id: 11, text: 'Apples',     parentId: 1, hasItems: false },
@@ -138,6 +140,8 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
 
 ---
 ##### jQuery
+
+    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$(function() {
         $("#treeViewContainer").dxTreeView({

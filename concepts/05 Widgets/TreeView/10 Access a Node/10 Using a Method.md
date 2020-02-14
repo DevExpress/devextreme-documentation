@@ -3,6 +3,8 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
 ---
 ##### jQuery
 
+    <!--HTML--><div id="treeViewContainer"></div>
+
     <!--JavaScript-->var allNodes = $("#treeViewContainer").dxTreeView("getNodes");
 
 ##### Angular

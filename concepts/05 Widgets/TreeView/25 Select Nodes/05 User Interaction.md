@@ -3,6 +3,8 @@ If only a single node should be in the selected state at a time, set the [select
 ---
 ##### jQuery
 
+    <!--HTML--><div id="treeViewContainer"></div>
+
     <!--JavaScript-->$(function() {
         $("#treeViewContainer").dxTreeView({
             // ...
@@ -89,6 +91,8 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
 
 ---
 ##### jQuery
+
+    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$(function() {
         $("#treeViewContainer").dxTreeView({

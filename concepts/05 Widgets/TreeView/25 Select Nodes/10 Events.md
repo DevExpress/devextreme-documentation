@@ -14,6 +14,8 @@ You can handle these events with functions. Assign the handling functions to the
 ---
 ##### jQuery
 
+    <!--HTML--><div id="treeViewContainer"></div>
+
     <!--JavaScript-->$(function() {
         $("#treeViewContainer").dxTreeView({
             onItemSelectionChanged: function (e) {

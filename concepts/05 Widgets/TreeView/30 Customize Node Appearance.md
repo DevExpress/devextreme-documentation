@@ -4,6 +4,8 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
 
 ##### jQuery
 
+    <!--HTML--><div id="treeViewContainer"></div>
+
     <!--JavaScript-->var hierarchicalData = [{
         id: '1',
         text: 'Fruits',
@@ -360,6 +362,8 @@ You can also customize an individual node. For this purpose, declare a template 
 ---
 
 ##### jQuery
+
+    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->var treeViewData = [{
         id: '1',

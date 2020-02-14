@@ -7,6 +7,8 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
 
     ##### jQuery
 
+        <!--HTML--><div id="treeViewContainer"></div>
+
         <!--JavaScript-->$("#treeViewContainer").dxTreeView("expandAll");
         // $("#treeViewContainer").dxTreeView("collapseAll");
 
@@ -127,6 +129,8 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
 
     ---
     ##### jQuery
+
+        <!--HTML--><div id="treeViewContainer"></div>
 
         <!--JavaScript-->$("#treeViewContainer").dxTreeView("expandItem", nodeKey);
         // $("#treeViewContainer").dxTreeView("collapseItem", nodeKey);

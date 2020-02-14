@@ -75,6 +75,7 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
         constructor() {
             super();
             this.treeViewRef = React.createRef();
+            this.getNodes = this.getNodes.bind(this);
         }
 
         render() {

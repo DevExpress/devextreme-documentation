@@ -114,6 +114,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
     ];
 
     class App extends React.Component {
+        const searchExpr = ["count", "name"];
         render() {
             return (
                 <TreeView
@@ -123,7 +124,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
                     displayExpr="name"
                     parentIdExpr="parent"
                     searchEnabled={true}
-                    searchExpr={["count", "name"]} />
+                    searchExpr={this.searchExpr} />
             );
         }
     }

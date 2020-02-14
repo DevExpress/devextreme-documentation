@@ -3,13 +3,10 @@ An end user can select **Tabs** items in two different modes: *'single'* (by def
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="tabsContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
-            dataSource: [
+            items: [
                 { text: "User" },
                 { text: "Comment" },
                 // ...
@@ -22,7 +19,7 @@ An end user can select **Tabs** items in two different modes: *'single'* (by def
 
     <!--HTML-->
     <dx-tabs
-        [dataSource]="tabs"
+        [items]="tabs"
         selectionMode="multiple">
     </dx-tabs>
 
@@ -53,6 +50,9 @@ An end user can select **Tabs** items in two different modes: *'single'* (by def
             selection-mode="multiple" /> 
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
 
     export default {
@@ -75,21 +75,22 @@ An end user can select **Tabs** items in two different modes: *'single'* (by def
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { Tabs } from 'devextreme-react/tabs';
 
-    class App extends React.Component {
-        constructor() {
-            this.tabs = [
-                { text: "User" },
-                { text: "Comment" },
-                // ...
-            ];
-        }
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
 
+    class App extends React.Component {
         render() {
             return (
                 <Tabs
-                    items={this.tabs}
+                    items={tabs}
                     selectionMode="multiple"
                 />
             );
@@ -105,13 +106,10 @@ If you need a tab to be preselected or to select it programmatically, pass its i
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="tabsContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
-            dataSource: [
+            items: [
                 { text: "User" },
                 { text: "Comment" },
                 // ...
@@ -124,7 +122,7 @@ If you need a tab to be preselected or to select it programmatically, pass its i
 
     <!--HTML-->
     <dx-tabs
-        [dataSource]="tabs"
+        [items]="tabs"
         [selectedIndex]="1">
     </dx-tabs>
 
@@ -155,6 +153,9 @@ If you need a tab to be preselected or to select it programmatically, pass its i
             :selected-index="1" /> 
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
 
     export default {
@@ -177,21 +178,23 @@ If you need a tab to be preselected or to select it programmatically, pass its i
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { Tabs } from 'devextreme-react/tabs';
 
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
+
     class App extends React.Component {
-        constructor() {
-            this.tabs = [
-                { text: "User" },
-                { text: "Comment" },
-                // ...
-            ];
-        }
 
         render() {
             return (
                 <Tabs
-                    items={this.tabs}
+                    items={tabs}
                     selectedIndex={1}
                 />
             );
@@ -207,9 +210,6 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="tabsContainer"></div>
-
     <!--JavaScript-->
     var tabs = [
         { text: "User" },
@@ -219,7 +219,7 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
 
     $(function() {
         $("#tabsContainer").dxTabs({
-            dataSource: tabs,
+            items: tabs,
             selectionMode: 'multiple',
             selectedItems: [ tabs[0], tabs[1] ]
         });
@@ -229,9 +229,9 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
 
     <!--HTML-->
     <dx-tabs
-        [dataSource]="tabs"
+        [items]="tabs"
         selectionMode="multiple"
-        [selectedItems]="[tabs[0], tabs[1]]">
+        [selectedItems]="selectedItems">
     </dx-tabs>
 
     <!--TypeScript-->
@@ -243,6 +243,10 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
             { text: "Comment" },
             // ...
         ];
+
+        constructor() {
+            this.selectedItems = [this.tabs[0], this.tabs[1]];
+        }
     }
     @NgModule({
         imports: [
@@ -258,11 +262,20 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
     <template>
         <DxTabs
             :items="tabs"
-            :selection-mode="multiple"
-            :selected-items="[tabs[0], tabs[1]]" /> 
+            selection-mode="multiple"
+            :selected-items.sync="selectedItems" /> 
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
+
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
 
     export default {
         components: {
@@ -270,11 +283,8 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
         },
         data() {
             return {
-                tabs: [
-                    { text: "User" },
-                    { text: "Comment" },
-                    // ...
-                ]
+                tabs: tabs,
+                selectedItems: [tabs[0], tabs[1]]
             };
         }
     };
@@ -284,26 +294,39 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { Tabs } from 'devextreme-react/tabs';
+
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
 
     class App extends React.Component {
         constructor() {
-            this.tabs = [
-                { text: "User" },
-                { text: "Comment" },
-                // ...
-            ];
             this.state = {
-                selectedItems: [this.tabs[0], this.tabs[1]]
+                selectedItems: [tabs[0], tabs[1]];
+            }
+        }
+
+        handleOptionChange = (e) => {
+            if(e.fullName === 'selectedItems') {
+                this.setState({
+                    selectedItems: e.value
+                });
             }
         }
 
         render() {
             return (
                 <Tabs
-                    items={this.tabs}
+                    items={tabs}
                     selectionMode="multiple",
                     selectedItems={this.state.selectedItems}
+                    onOptionChanged={this.handleOptionChange}
                 />
             );
         }
@@ -318,13 +341,10 @@ When the total length of all tabs exceeds the **Tabs** container, the widget sho
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="tabsContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
-            dataSource: [
+            items: [
                 { text: "User" },
                 { text: "Comment" },
                 // ...
@@ -337,7 +357,7 @@ When the total length of all tabs exceeds the **Tabs** container, the widget sho
 
     <!--HTML-->
     <dx-tabs
-        [dataSource]="tabs"
+        [items]="tabs"
         [showNavButtons]="true">
     </dx-tabs>
 
@@ -368,6 +388,9 @@ When the total length of all tabs exceeds the **Tabs** container, the widget sho
             :show-nav-buttons="true" /> 
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
 
     export default {
@@ -390,21 +413,22 @@ When the total length of all tabs exceeds the **Tabs** container, the widget sho
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { Tabs } from 'devextreme-react/tabs';
 
-    class App extends React.Component {
-        constructor() {
-            this.tabs = [
-                { text: "User" },
-                { text: "Comment" },
-                // ...
-            ];
-        }
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
 
+    class App extends React.Component {
         render() {
             return (
                 <Tabs
-                    items={this.tabs}
+                    items={tabs}
                     showNavButtons={true}
                 />
             );

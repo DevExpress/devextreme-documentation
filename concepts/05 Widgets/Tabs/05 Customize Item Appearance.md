@@ -3,16 +3,13 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="tabsContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
             items: [
                 { text: "User", icon: 'user' },
                 { text: "Comment", badge: "New" },
-                { text: "Find" }
+                { text: "Find", disabled: true }
             ]
         });
     });
@@ -31,7 +28,7 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
         tabs = [
             { text: "User", icon: 'user' },
             { text: "Comment", badge: "New" },
-            { text: "Find" }
+            { text: "Find", disabled: true }
         ];
     }
     @NgModule({
@@ -61,7 +58,7 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
                 tabs: [
                     { text: "User", icon: 'user' },
                     { text: "Comment", badge: "New" },
-                    { text: "Find" }
+                    { text: "Find", disabled: true }
                 ]
             };
         }
@@ -74,19 +71,17 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
     import React from 'react';
     import { Tabs } from 'devextreme-react/tabs';
 
-    class App extends React.Component {
-        constructor() {
-            this.tabs = [
-                { text: "User", icon: 'user' },
-                { text: "Comment", badge: "New" },
-                { text: "Find" }
-            ];
-        }
+    const tabs = [
+        { text: "User", icon: 'user' },
+        { text: "Comment", badge: "New" },
+        { text: "Find", disabled: true }
+    ];
 
+    class App extends React.Component {
         render() {
             return (
                 <Tabs
-                    items={this.tabs}
+                    items={tabs}
                 />
             );
         }
@@ -115,8 +110,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     // ...
     export class AppComponent {
         tabs = [
-            { text: "User", icon: 'user' },
-            { text: "Comment", badge: "New" },
+            { text: "User" },
+            { text: "Comment" },
             { text: "Find" }
         ];
     }
@@ -153,8 +148,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         data() {
             return {
                 tabs: [
-                    { text: "User", icon: 'user' },
-                    { text: "Comment", badge: "New" },
+                    { text: "User" },
+                    { text: "Comment" },
                     { text: "Find" }
                 ]
             };
@@ -172,8 +167,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     import { Tabs } from 'devextreme-react/tabs';
 
     const tabs = [
-        { text: "User", icon: 'user' },
-        { text: "Comment", badge: "New" },
+        { text: "User" },
+        { text: "Comment" },
         { text: "Find" }
     ];
     
@@ -207,8 +202,8 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
     $(function() {
         $("#tabsContainer").dxTabs({
             items: [
-                { text: "User", icon: 'user' },
-                { text: "Comment", badge: "New" },
+                { text: "User" },
+                { text: "Comment" },
                 { text: "Find" }
             ],
             itemTemplate: function (itemData, itemIndex, itemElement) {

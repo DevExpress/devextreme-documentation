@@ -9,16 +9,13 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="tabsContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
             items: [
                 { text: "User", icon: 'user' },
                 { text: "Comment", badge: "New" },
-                { text: "Find", disabled: true }
+                { text: "Find" }
             ]
         });
     });
@@ -37,7 +34,7 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
         tabs = [
             { text: "User", icon: 'user' },
             { text: "Comment", badge: "New" },
-            { text: "Find", disabled: true }
+            { text: "Find" }
         ];
     }
     @NgModule({
@@ -67,7 +64,7 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
                 tabs: [
                     { text: "User", icon: 'user' },
                     { text: "Comment", badge: "New" },
-                    { text: "Find", disabled: true }
+                    { text: "Find" }
                 ]
             };
         }
@@ -80,19 +77,17 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
     import React from 'react';
     import { Tabs } from 'devextreme-react/tabs';
 
-    class App extends React.Component {
-        constructor() {
-            this.tabs = [
-                { text: "User", icon: 'user' },
-                { text: "Comment", badge: "New" },
-                { text: "Find", disabled: true }
-            ];
-        }
+    const tabs = [
+        { text: "User", icon: 'user' },
+        { text: "Comment", badge: "New" },
+        { text: "Find" }
+    ];
 
+    class App extends React.Component {
         render() {
             return (
                 <Tabs
-                    items={this.tabs}
+                    items={tabs}
                 />
             );
         }

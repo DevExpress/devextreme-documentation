@@ -141,10 +141,10 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         }
 
         componentDidMount() {
-            this.Tabs.registerKeyHandler('backspace', function(e) {
+            this.tabs.registerKeyHandler('backspace', function(e) {
                 // The argument "e" contains information on the event
             });
-            this.Tabs.registerKeyHandler('space', function(e) {
+            this.tabs.registerKeyHandler('space', function(e) {
                 // ...
             });
         }

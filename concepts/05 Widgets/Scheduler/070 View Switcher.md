@@ -37,6 +37,33 @@ To specify what views are available within the switcher, use the [views](/api-re
         // ...
     })
 
+##### Vue
+
+    <DxScheduler
+        :views='views'
+    />
+
+    <script>
+        import DxScheduler from 'devextreme-vue/scheduler';
+
+        export default {
+          components: {
+            DxScheduler
+          },
+          data() {
+            return {
+              views: ['day', 'week', 'agenda']
+            };
+          }
+        };
+    </script>
+
+##### React
+
+    <Scheduler
+        dataSource={['day', 'week', 'agenda']}
+    />
+
 ---
 
 On mobile devices, the view switcher is displayed as a drop-down menu. 
@@ -77,6 +104,28 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
         ],
         // ...
     })
+
+##### Vue
+
+    <DxScheduler
+        :use-drop-down-view-switcher='true'
+    />
+
+    <script>
+        import DxScheduler from 'devextreme-vue/scheduler';
+
+        export default {
+          components: {
+            DxScheduler
+          }
+        };
+    </script>
+
+##### React
+
+    <Scheduler
+        useDropDownViewSwitcher={true}
+    />
 
 ---
 

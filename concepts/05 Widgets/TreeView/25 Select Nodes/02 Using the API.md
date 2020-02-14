@@ -38,9 +38,13 @@ To retrieve the keys of all selected nodes, call the [getSelectedNodeKeys()](/ap
             :items="data" />
     </template>
     <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
         import { DxTreeView } from 'devextreme-vue';
 
         const treeViewRef = 'treeView';
+        const data = [...];
 
         export default {
         components: {
@@ -69,6 +73,10 @@ To retrieve the keys of all selected nodes, call the [getSelectedNodeKeys()](/ap
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import TreeView from 'devextreme-react/tree-view';
 
     class App extends React.Component {
@@ -77,11 +85,13 @@ To retrieve the keys of all selected nodes, call the [getSelectedNodeKeys()](/ap
             this.treeViewRef = React.createRef();
             this.getSelectedNodeKeys = this.getSelectedNodeKeys.bind(this);
         }
+        
+        const data = [...];
 
         render() {
             return (
                 <TreeView
-                    items={data}
+                    items={this.data}
                     ref={this.treeViewRef} />
             );
         }
@@ -140,9 +150,13 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
             :items="data" />
     </template>
     <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+    
         import { DxTreeView } from 'devextreme-vue';
 
         const treeViewRef = 'treeView';
+        const data = [...];     
 
         export default {
             components: {
@@ -171,6 +185,10 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';    
+            
     import TreeView from 'devextreme-react/tree-view';
 
     class App extends React.Component {
@@ -180,10 +198,12 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
             this.getSelectedNodes = this.getSelectedNodes.bind(this);
         }
 
+        const data = [...];     
+
         render() {
             return (
                 <TreeView
-                    items={data}
+                    items={this.data}
                     ref={this.treeViewRef} />
             );
         }

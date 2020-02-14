@@ -40,8 +40,8 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
         <!-- tab: App.vue -->
         <template>
             <DxTreeView
-                :ref='treeViewRef'
-                :items='data' 
+                :ref="treeViewRef"
+                :items="data" 
             />
         </template>
         <script>
@@ -158,7 +158,7 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
         <!-- tab: App.vue -->
         <template>
             <DxTreeView
-                :ref='treeViewRef'
+                :ref="treeViewRef"
                 :items="data" 
             />
         </template>

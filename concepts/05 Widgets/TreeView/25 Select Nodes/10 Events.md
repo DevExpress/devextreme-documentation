@@ -64,8 +64,8 @@ You can handle these events with functions. Assign the handling functions to the
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :dataSource='data'
-            showCheckBoxesMode="normal"
+            :data-source="data"
+            show-check-boxes-mode="normal"
             @item-selection-changed="onItemSelectionChanged"
             @selection-changed="onSelectionChanged"
             @select-all-value-changed="onSelectAllValueChanged" 

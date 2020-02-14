@@ -72,10 +72,10 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            keyExpr="name"
-            displayExpr="name"
-            showCheckBoxesMode="normal"
-            selectedExpr="isSelected"
+            key-expr="name"
+            display-expr="name"
+            show-check-boxes-mode="normal"
+            selected-expr="isSelected"
             :items="hierarchicalData" 
         />
     </template>

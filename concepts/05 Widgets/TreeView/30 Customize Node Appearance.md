@@ -69,7 +69,7 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :items='hierarchicalData' 
+            :items="hierarchicalData" 
         />
     </template>
     <script>
@@ -260,7 +260,7 @@ If you need a more flexible solution, define a [custom templates](/concepts/05%2
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :items='hierarchicalData'>
+            :items="hierarchicalData">
             <template #item="item">
                 <i>{{ item.data.text }}</i>
             </template>           
@@ -400,7 +400,7 @@ You can also customize an individual node. For this purpose, declare a template 
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :items='hierarchicalData' 
+            :items="hierarchicalData" 
         />
     </template>
     <script>

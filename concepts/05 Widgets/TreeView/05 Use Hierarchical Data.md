@@ -92,10 +92,10 @@ As you can see, all items in a hierarchical data source have the **id** and **te
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            keyExpr='key'
-            displayExpr='name'
-            itemsExpr='children'        
-            :dataSource='hierarchicalData' 
+            key-expr="key"
+            display-expr="name"
+            items-expr="children"        
+            :data-source="hierarchicalData" 
         />
     </template>
     <script>
@@ -240,9 +240,9 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            keyExpr='name'
-            displayExpr='name'
-            :dataSource='hierarchicalData' 
+            key-expr="name"
+            display-expr="name"
+            :data-source="hierarchicalData" 
         />
     </template>
     <script>

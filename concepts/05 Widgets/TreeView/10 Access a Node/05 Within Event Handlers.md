@@ -43,8 +43,8 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :dataSource='data'
-            @item-click='onItemClick' 
+            :data-source="data"
+            @item-click="onItemClick" 
         />
     </template>
     <script>

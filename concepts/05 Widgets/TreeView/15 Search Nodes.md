@@ -64,13 +64,13 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
-            :dataSource='treeViewData' 
-            keyExpr='key'
-            displayExpr='name'
-            parentIdExpr='parent'
-            :searchEnabled=true
-            :searchExpr='searchExpr'  
+            data-structure="plain"
+            :data-source="treeViewData" 
+            key-expr="key"
+            display-expr="name"
+            parent-id-expr="parent"
+            :search-enabled=true
+            :search-expr="searchExpr"  
         />
     </template>
     <script>
@@ -201,14 +201,14 @@ When a user types a string in the input field, the **TreeView** suggests all nod
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
-            :dataSource='treeViewData' 
-            keyExpr='key'
-            displayExpr='name'
-            parentIdExpr='parent'
-            searchMode='startswith'
-            :searchEnabled=true
-            :searchExpr='searchExpr'  
+            data-structure="plain"
+            :data-source="treeViewData" 
+            key-expr="key"
+            display-expr="name"
+            parent-id-expr="parent"
+            search-mode="startswith"
+            :search-enabled=true
+            :search-expr="searchExpr"  
         />
     </template>
     <script>
@@ -341,14 +341,14 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
-            :dataSource='treeViewData' 
-            keyExpr='key'
-            displayExpr='name'
-            parentIdExpr='parent'
-            :searchEnabled=true>
+            data-structure="plain"
+            :data-source="treeViewData" 
+            key-expr="key"
+            display-expr="name"
+            parent-id-expr="parent"
+            :search-enabled=true>
             <DxSearchEditorOptions
-                placeholder='Type search value here...'
+                placeholder="Type search value here..."
                 width=300
             />
         </DxTreeView>    

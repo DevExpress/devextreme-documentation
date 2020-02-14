@@ -70,10 +70,10 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            keyExpr='key'
-            displayExpr='name'
-            expandedExpr='isExpanded'
-            :items='hierarchicalData' 
+            key-expr="key"
+            display-expr="name"
+            expanded-expr="isExpanded"
+            :items="hierarchicalData" 
         />
     </template>
     <script>

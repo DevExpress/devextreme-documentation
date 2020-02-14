@@ -106,8 +106,8 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :ref='treeViewRef'        
-            :dataSource='data' 
+            :ref="treeViewRef"        
+            :data-source="data" 
         />
     </template>
     <script>

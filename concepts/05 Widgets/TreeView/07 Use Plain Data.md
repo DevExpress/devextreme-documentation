@@ -52,8 +52,8 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
-            :dataSource='plainData' 
+            data-structure="plain"
+            :data-source="plainData"
         />
     </template>
     <script>
@@ -176,11 +176,11 @@ As you can see, all items in a plain data source have the **id** and **text** fi
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
-            :dataSource='plainData'
-            keyExpr='key'
-            displayExpr='name'
-            parentIdExpr='parent' 
+            data-structure="plain"
+            :data-source="plainData"
+            key-expr="key"
+            display-expr="name"
+            parent-id-expr="parent"
         />
     </template>
     <script>
@@ -303,10 +303,10 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
-            :dataSource='plainData'
-            keyExpr='name'
-            displayExpr='name' 
+            data-structure="plain"
+            :data-source="plainData"
+            key-expr="name"
+            display-expr="name"
         />
     </template>
     <script>

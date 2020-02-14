@@ -62,10 +62,10 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
-            :dataSource='plainData'
-            :virtualModeEnabled='true',
-            :rootValue=-1 
+            data-structure="plain"
+            :data-source="plainData"
+            :virtual-mode-enabled="true"
+            :root-value=-1 
         />
     </template>
     <script>
@@ -193,7 +193,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            dataStructure='plain'
+            data-structure="plain"
             :create-children="createChildren" 
         />
     </template>

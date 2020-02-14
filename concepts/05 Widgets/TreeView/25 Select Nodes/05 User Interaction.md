@@ -35,8 +35,8 @@ If only a single node should be in the selected state at a time, set the [select
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :dataSource='data'
-            :selectByClick=true 
+            :data-source="data"
+            :select-by-click=true 
         />
     </template>
     <script>
@@ -122,8 +122,8 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :dataSource='data'
-            showCheckBoxesMode='normal' /> <!-- or 'selectAll' -->
+            :data-source="data"
+            show-check-boxes-mode="normal" /> <!-- or "selectAll" -->
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

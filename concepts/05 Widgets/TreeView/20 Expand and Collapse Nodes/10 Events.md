@@ -46,9 +46,9 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :dataSource='data'
-            @item-expanded='onItemExpanded'
-            @item-collapsed='onItemCollapsed' 
+            :data-source="data"
+            @item-expanded="onItemExpanded"
+            @item-collapsed="onItemCollapsed" 
         />
     </template>
     <script>

@@ -110,7 +110,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     class App extends React.Component {
         render() {
             return (
-                <Calendar onInitialized="registerKeyHandlers" />
+                <Calendar onInitialized={this.registerKeyHandlers} />
             );
         }
 

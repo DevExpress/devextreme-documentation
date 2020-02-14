@@ -181,7 +181,7 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
             return (
                 <Calendar
                     defaultValue={date}
-                    disabledDates={isDateDisabled} />
+                    disabledDates={this.isDateDisabled} />
             );
         }
 

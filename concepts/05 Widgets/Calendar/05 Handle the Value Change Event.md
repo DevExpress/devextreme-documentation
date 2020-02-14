@@ -69,7 +69,7 @@ To process a new calendar value, you need to handle the value change event. If t
     class App extends React.Component {
         render() {
             return (
-                <Calendar onValueChanged="calendarValueChanged" />
+                <Calendar onValueChanged={this.calendarValueChanged} />
             );
         }
 

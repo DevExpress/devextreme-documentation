@@ -80,6 +80,9 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const hierarchicalData = [{
@@ -114,6 +117,10 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [{

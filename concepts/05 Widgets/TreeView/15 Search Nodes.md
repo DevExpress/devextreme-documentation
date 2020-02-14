@@ -74,6 +74,9 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const treeViewData = [
@@ -102,6 +105,10 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const treeViewData = [
@@ -205,6 +212,9 @@ When a user types a string in the input field, the **TreeView** suggests all nod
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const treeViewData = [
@@ -233,6 +243,10 @@ When a user types a string in the input field, the **TreeView** suggests all nod
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const treeViewData = [
@@ -340,6 +354,9 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
         </DxTreeView>    
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTreeView, {
         DxSearchEditorOptions
     } from 'devextreme-vue/tree-view';
@@ -369,6 +386,10 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import {TreeView, SearchEditorOptions} from 'devextreme-react/tree-view';
 
     const treeViewData = [

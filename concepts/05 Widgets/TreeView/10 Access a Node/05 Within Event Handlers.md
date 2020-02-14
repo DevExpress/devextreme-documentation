@@ -48,6 +48,9 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+        
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const data = [ ... ];
@@ -74,6 +77,10 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+        
     import TreeView from 'devextreme-react/tree-view';
 
     const data = [ ... ];

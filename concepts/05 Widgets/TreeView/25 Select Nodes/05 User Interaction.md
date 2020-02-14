@@ -40,6 +40,9 @@ If only a single node should be in the selected state at a time, set the [select
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const data = [ ... ];
@@ -60,6 +63,10 @@ If only a single node should be in the selected state at a time, set the [select
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const data = [ ... ];
@@ -119,6 +126,9 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
             showCheckBoxesMode='normal' /> <!-- or 'selectAll' -->
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const data = [...];
@@ -139,6 +149,10 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import TreeView from 'devextreme-react/tree-view';
 
     const data = [...];

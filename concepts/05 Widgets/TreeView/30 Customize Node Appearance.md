@@ -73,6 +73,9 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const hierarchicalData = [{
@@ -109,6 +112,10 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [{
@@ -260,6 +267,9 @@ If you need a more flexible solution, define a [custom templates](/concepts/05%2
         </DxTreeView>    
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const hierarchicalData = [{
@@ -294,6 +304,10 @@ If you need a more flexible solution, define a [custom templates](/concepts/05%2
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [{
@@ -390,6 +404,9 @@ You can also customize an individual node. For this purpose, declare a template 
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const hierarchicalData = [
@@ -413,6 +430,10 @@ You can also customize an individual node. For this purpose, declare a template 
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [

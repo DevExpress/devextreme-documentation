@@ -41,6 +41,9 @@ To select or cancel the selection of a node programmatically, call the [selectIt
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const treeViewRef = 'treeView';
@@ -75,6 +78,10 @@ To select or cancel the selection of a node programmatically, call the [selectIt
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     class App extends React.Component {
@@ -153,6 +160,9 @@ To select or cancel the selection of all nodes programmatically, call the [selec
         />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
     const treeViewRef = 'treeView';
@@ -187,6 +197,10 @@ To select or cancel the selection of all nodes programmatically, call the [selec
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     class App extends React.Component {

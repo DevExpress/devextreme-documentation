@@ -3,6 +3,8 @@ To retrieve the keys of all selected nodes, call the [getSelectedNodeKeys()](/ap
 ---
 ##### jQuery
 
+    <!--HTML--><div id="treeViewContainer"></div>
+
     <!--JavaScript-->$("#treeViewContainer").dxTreeView("instance").getSelectedNodeKeys();
 
 ##### Angular
@@ -73,6 +75,7 @@ To retrieve the keys of all selected nodes, call the [getSelectedNodeKeys()](/ap
         constructor() {
             super();
             this.treeViewRef = React.createRef();
+            this.getSelectedNodeKeys = this.getSelectedNodeKeys.bind(this);
         }
 
         render() {
@@ -101,6 +104,8 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
 
 ---
 ##### jQuery
+
+    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$("#treeViewContainer").dxTreeView("instance").getSelectedNodes();
 
@@ -172,6 +177,7 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
         constructor() {
             super();
             this.treeViewRef = React.createRef();
+            this.getSelectedNodes = this.getSelectedNodes.bind(this);
         }
 
         render() {
@@ -199,6 +205,8 @@ To select or cancel the selection of a node programmatically, call the [selectIt
 
 ---
 ##### jQuery
+
+    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$("#treeViewContainer").dxTreeView("selectItem", nodeKey);
     // $("#treeViewContainer").dxTreeView("unselectItem", nodeKey);
@@ -234,6 +242,8 @@ To select or cancel the selection of all nodes programmatically, call the [selec
 
 ---
 ##### jQuery
+
+    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$("#treeViewContainer").dxTreeView("selectAll");
     // $("#treeViewContainer").dxTreeView("unselectAll");

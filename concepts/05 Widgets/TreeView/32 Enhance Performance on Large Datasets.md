@@ -143,7 +143,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
         $("#treeViewContainer").dxTreeView({
             createChildren: function (parentNode) {
                 var d = $.Deferred();
-                $.get("http://url/to/the/service", {
+                $.get("https://mydomain.com/MyDataService", {
                         parentId: parentNode ? JSON.stringify(parentNode.key) : "0"
                     })
                     .done(function (result) {
@@ -173,7 +173,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
         createChildren = (parentNode) => {
             let params: HttpParams = new HttpParams()
                 .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0");
-            return httpClient.get("http://url/to/the/service", {
+            return httpClient.get("https://mydomain.com/MyDataService", {
                     params: params
                 })
                 .toPromise();
@@ -212,7 +212,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
             createChildren: function(parent) {
             let parentId = parent ? parent.itemData.id : '';
 
-            return fetch(`http://url/to/the/service?parentId=${parentId}`)
+            return fetch(`https://mydomain.com/MyDataService?parentId=${parentId}`)
                 .then(response => response.json())
                 .catch(() => { throw 'Data Loading Error'; });
             }
@@ -243,7 +243,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
         createChildren(parent) {
             let parentId = parent ? parent.itemData.id : '';
 
-            return fetch(`http://url/to/the/service?parentId=${parentId}`)
+            return fetch(`https://mydomain.com/MyDataService?parentId=${parentId}`)
                 .then(response => response.json())
                 .catch(() => { throw 'Data Loading Error'; });
         }        

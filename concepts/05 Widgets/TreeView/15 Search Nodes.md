@@ -94,7 +94,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
         },
         data() {
             return {
-                searchExpr: ['count', 'name']
+                searchExpr: ['count', 'name'],
                 treeViewData
             };
         },
@@ -232,7 +232,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
         },
         data() {
             return {
-                searchExpr: ['count', 'name']
+                searchExpr: ['count', 'name'],
                 treeViewData
             };
         },

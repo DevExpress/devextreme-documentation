@@ -1,7 +1,6 @@
 Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getNodes().md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#getNodes') method to get **TreeView** nodes at any point in the application flow.
 
 ---
-
 ##### jQuery
 
     <!--JavaScript-->var allNodes = $("#treeViewContainer").dxTreeView("getNodes");

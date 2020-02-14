@@ -144,7 +144,7 @@ To process a new **NumberBox** value, you need to handle the value change event.
     class App extends React.Component {
         render() {
             return (
-                <NumberBox onValueChanged="numberBoxValueChanged" />
+                <NumberBox onValueChanged={this.numberBoxValueChanged} />
             );
         }
 

@@ -103,7 +103,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     class App extends React.Component {
         render() {
             return (
-                <NumberBox onInitialized="registerKeyHandlers" />
+                <NumberBox onInitialized={this.registerKeyHandlers} />
             );
         }
 

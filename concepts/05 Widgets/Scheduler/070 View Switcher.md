@@ -61,7 +61,7 @@ To specify what views are available within the switcher, use the [views](/api-re
 ##### React
 
     <Scheduler
-        dataSource={['day', 'week', 'agenda']}
+        views={['day', 'week', 'agenda']}
     />
 
 ---

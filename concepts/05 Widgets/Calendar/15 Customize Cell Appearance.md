@@ -32,7 +32,7 @@ For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](
     <template> 
         <DxCalendar
             :value="date"
-            cellTemplate="cell"
+            cell-template="cell"
         >
             <template #cell="{ data: cell, index }">
                 <span :style="{ fontStyle: index === 0 || index === 6 ? 'italic' : 'normal' }">

@@ -35,7 +35,7 @@ To specify which calendar view (month, year, decade or century) should be displa
 
     <!-- tab: App.vue -->
     <template> 
-        <DxCalendar zoomLevel="year" />
+        <DxCalendar zoom-level="year" />
     </template>
 
     <script>
@@ -106,8 +106,8 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
     <!-- tab: App.vue -->
     <template> 
         <DxCalendar
-            minZoomLevel="decade"
-            maxZoomLevel="month"
+            min-zoom-level="decade"
+            max-zoom-level="month"
         />
     </template>
 

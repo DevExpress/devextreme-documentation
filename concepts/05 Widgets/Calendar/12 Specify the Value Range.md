@@ -43,8 +43,8 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
     <template> 
         <DxCalendar
             :value="date"
-            :minDate="minDate"
-            :maxDate="maxDate"
+            :min-date="minDate"
+            :max-date="maxDate"
         />
     </template>
 
@@ -140,8 +140,8 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
     <template> 
         <DxCalendar
             :value="date"
-            :minDate="minDate"
-            :maxDate="maxDate"
+            :min-date="minDate"
+            :max-date="maxDate"
         />
     </template>
 

@@ -121,7 +121,7 @@ To specify which day should be considered the beginning of the week, pass its in
 
     <!-- tab: App.vue -->
     <template> 
-        <DxCalendar :firstDayOfWeek="1" />
+        <DxCalendar :first-day-of-week="1" />
     </template>
 
     <script>

@@ -65,30 +65,31 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
             dataStructure='plain'
             :dataSource='plainData'
             :virtualModeEnabled='true',
-            :rootValue=-1 />
+            :rootValue=-1 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const plainData = [
-            { id: 1,  text: 'Fruits',     parentId: -1 },
-            { id: 11, text: 'Apples',     parentId: 1, hasItems: false },
-            { id: 12, text: 'Oranges',    parentId: 1, hasItems: false },
-            { id: 2,  text: 'Vegetables', parentId: -1 },
-            { id: 21, text: 'Cucumbers',  parentId: 2, hasItems: false },
-            { id: 22, text: 'Tomatoes',   parentId: 2, hasItems: false }
-        ];
+    const plainData = [
+        { id: 1,  text: 'Fruits',     parentId: -1 },
+        { id: 11, text: 'Apples',     parentId: 1, hasItems: false },
+        { id: 12, text: 'Oranges',    parentId: 1, hasItems: false },
+        { id: 2,  text: 'Vegetables', parentId: -1 },
+        { id: 21, text: 'Cucumbers',  parentId: 2, hasItems: false },
+        { id: 22, text: 'Tomatoes',   parentId: 2, hasItems: false }
+    ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    plainData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                plainData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -110,7 +111,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
         render() {
             return (
                 <TreeView
-                    dataStructure='plain'
+                    dataStructure="plain"
                     dataSource={plainData} 
                     virtualModeEnabled={true}
                     rootValue={-1} />
@@ -186,26 +187,27 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
     <template>
         <DxTreeView
             dataStructure='plain'
-            :create-children="createChildren" />
+            :create-children="createChildren" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
-        import 'whatwg-fetch';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+    import 'whatwg-fetch';
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            methods: {
-                createChildren: function(parent) {
-                let parentId = parent ? parent.itemData.id : '';
+    export default {
+        components: {
+            DxTreeView
+        },
+        methods: {
+            createChildren: function(parent) {
+            let parentId = parent ? parent.itemData.id : '';
 
-                return fetch(`http://url/to/the/service?parentId=${parentId}`)
-                    .then(response => response.json())
-                    .catch(() => { throw 'Data Loading Error'; });
-                }
+            return fetch(`http://url/to/the/service?parentId=${parentId}`)
+                .then(response => response.json())
+                .catch(() => { throw 'Data Loading Error'; });
             }
-        };
+        }
+    };
     </script>
 
 ##### React
@@ -219,7 +221,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
         render() {
             return (
                 <TreeView
-                    dataStructure='plain'
+                    dataStructure="plain"
                     createChildren={this.createChildren} />
             );
         }

@@ -37,37 +37,38 @@ To select or cancel the selection of a node programmatically, call the [selectIt
     <template>
         <dx-tree-view
             :ref="treeViewRef"
-            :items="data" />
+            :items="data" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const treeViewRef = 'treeView';
+    const treeViewRef = 'treeView';
 
-        export default {
-            components: {
-                DxTreeView
-            },
-            data() {
-                return {
-                    data,
-                    treeViewRef
-                };
-            },
-            computed: {
-                treeView: function() {
-                    return this.$refs[treeViewRef].instance;
-                }
-            },   
-            methods: {
-                selectNode(key){
-                    this.treeView.selectItem(key);
-                },
-                unselectNode(key){
-                    this.treeView.unselectItem(key);
-                } 
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data,
+                treeViewRef
+            };
+        },
+        computed: {
+            treeView: function() {
+                return this.$refs[treeViewRef].instance;
             }
-        };
+        },   
+        methods: {
+            selectNode(key){
+                this.treeView.selectItem(key);
+            },
+            unselectNode(key){
+                this.treeView.unselectItem(key);
+            } 
+        }
+    };
     </script>
 
 ##### React
@@ -146,14 +147,15 @@ To select or cancel the selection of all nodes programmatically, call the [selec
     <template>
         <dx-tree-view
             :ref="treeViewRef"
-            :items="data" />
+            :items="data" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const treeViewRef = 'treeView';
+    const treeViewRef = 'treeView';
 
-        export default {
+    export default {
         components: {
             DxTreeView
         },

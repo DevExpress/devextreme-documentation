@@ -69,39 +69,40 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :items='hierarchicalData' />
+            :items='hierarchicalData' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const hierarchicalData = [{
-            id: '1',
-            text: 'Fruits',
-            icon: '/pics/fruits.ico',
-            items: [
-                { id: '1_1', text: 'Apples', icon: '/pics/fruits/apple.ico' },
-                { id: '1_2', text: 'Oranges', icon: '/pics/fruits/orange.ico' }
-            ]
-        }, {
-            id: '2',
-            text: 'Vegetables',
-            icon: '/pics/vegetables.ico',
-            items: [
-                { id: '2_1', text: 'Cucumbers', icon: '/pics/vegetables/cucumber.ico' },
-                { id: '2_2', text: 'Tomatoes', icon: '/pics/vegetables/tomato.ico' }
-            ]
-        }];
+    const hierarchicalData = [{
+        id: '1',
+        text: 'Fruits',
+        icon: '/pics/fruits.ico',
+        items: [
+            { id: '1_1', text: 'Apples', icon: '/pics/fruits/apple.ico' },
+            { id: '1_2', text: 'Oranges', icon: '/pics/fruits/orange.ico' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        icon: '/pics/vegetables.ico',
+        items: [
+            { id: '2_1', text: 'Cucumbers', icon: '/pics/vegetables/cucumber.ico' },
+            { id: '2_2', text: 'Tomatoes', icon: '/pics/vegetables/tomato.ico' }
+        ]
+    }];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    hierarchicalData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                hierarchicalData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -259,34 +260,34 @@ If you need a more flexible solution, define a [custom templates](/concepts/05%2
         </DxTreeView>    
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const hierarchicalData = [{
-            id: '1',
-            text: 'Fruits',
-            items: [
-                { id: '1_1', text: 'Apples' },
-                { id: '1_2', text: 'Oranges' }
-            ]
-        }, {
-            id: '2',
-            text: 'Vegetables',
-            items: [
-                { id: '2_1', text: 'Cucumbers' },
-                { id: '2_2', text: 'Tomatoes' }
-            ]
-        }];
+    const hierarchicalData = [{
+        id: '1',
+        text: 'Fruits',
+        items: [
+            { id: '1_1', text: 'Apples' },
+            { id: '1_2', text: 'Oranges' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        items: [
+            { id: '2_1', text: 'Cucumbers' },
+            { id: '2_2', text: 'Tomatoes' }
+        ]
+    }];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    hierarchicalData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                hierarchicalData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -385,26 +386,27 @@ You can also customize an individual node. For this purpose, declare a template 
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :items='hierarchicalData' />
+            :items='hierarchicalData' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const hierarchicalData = [
-            { id: '1_1', text: 'Apples', template: function(item){return `<i>${item.text}</i>`} },
-            { id: '1_2', text: 'Oranges' }
-        ];
+    const hierarchicalData = [
+        { id: '1_1', text: 'Apples', template: function(item){return `<i>${item.text}</i>`} },
+        { id: '1_2', text: 'Oranges' }
+    ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    hierarchicalData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                hierarchicalData
+            };
+        },
+    };
     </script>
 
 ##### React

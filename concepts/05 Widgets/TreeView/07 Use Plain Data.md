@@ -53,30 +53,31 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
     <template>
         <DxTreeView
             dataStructure='plain'
-            :dataSource='plainData' />
+            :dataSource='plainData' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const plainData = [
-            { id: '1', text: 'Fruits' },
-            { id: '1_1', text: 'Apples', parentId: '1' },
-            { id: '1_2', text: 'Oranges', parentId: '1' },
-            { id: '2', text: 'Vegetables' },
-            { id: '2_1', text: 'Cucumbers', parentId: '2' },
-            { id: '2_2', text: 'Tomatoes', parentId: '2' }
-        ];
+    const plainData = [
+        { id: '1', text: 'Fruits' },
+        { id: '1_1', text: 'Apples', parentId: '1' },
+        { id: '1_2', text: 'Oranges', parentId: '1' },
+        { id: '2', text: 'Vegetables' },
+        { id: '2_1', text: 'Cucumbers', parentId: '2' },
+        { id: '2_2', text: 'Tomatoes', parentId: '2' }
+    ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    plainData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                plainData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -98,7 +99,7 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
         render() {
             return (
                 <TreeView
-                    dataStructure='plain'
+                    dataStructure="plain"
                     dataSource={plainData} />
             );
         }
@@ -172,30 +173,31 @@ As you can see, all items in a plain data source have the **id** and **text** fi
             :dataSource='plainData'
             keyExpr='key'
             displayExpr='name'
-            parentIdExpr='parent' />
+            parentIdExpr='parent' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const plainData = [
-            { key: '1', name: 'Fruits' },
-            { key: '1_1', name: 'Apples', parent: '1' },
-            { key: '1_2', name: 'Oranges', parent: '1' },
-            { key: '2', name: 'Vegetables' },
-            { key: '2_1', name: 'Cucumbers', parent: '2' },
-            { key: '2_2', name: 'Tomatoes', parent: '2' }
-        ];
+    const plainData = [
+        { key: '1', name: 'Fruits' },
+        { key: '1_1', name: 'Apples', parent: '1' },
+        { key: '1_2', name: 'Oranges', parent: '1' },
+        { key: '2', name: 'Vegetables' },
+        { key: '2_1', name: 'Cucumbers', parent: '2' },
+        { key: '2_2', name: 'Tomatoes', parent: '2' }
+    ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    plainData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                plainData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -217,11 +219,11 @@ As you can see, all items in a plain data source have the **id** and **text** fi
         render() {
             return (
                 <TreeView
-                    dataStructure='plain'
+                    dataStructure="plain"
                     dataSource={plainData} 
-                    keyExpr='key'
-                    displayExpr='name'
-                    parentIdExpr='parent' />
+                    keyExpr="key"
+                    displayExpr="name"
+                    parentIdExpr="parent" />
             );
         }
     }
@@ -291,30 +293,31 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
             dataStructure='plain'
             :dataSource='plainData'
             keyExpr='name'
-            displayExpr='name' />
+            displayExpr='name' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const plainData = [
-            { name: 'Fruits' },
-            { name: 'Apples', parentId: 'Fruits' },
-            { name: 'Oranges', parentId: 'Fruits' },
-            { name: 'Vegetables' },
-            { name: 'Cucumbers', parentId: 'Vegetables' },
-            { name: 'Tomatoes', parentId: 'Vegetables' }
-        ];
+    const plainData = [
+        { name: 'Fruits' },
+        { name: 'Apples', parentId: 'Fruits' },
+        { name: 'Oranges', parentId: 'Fruits' },
+        { name: 'Vegetables' },
+        { name: 'Cucumbers', parentId: 'Vegetables' },
+        { name: 'Tomatoes', parentId: 'Vegetables' }
+    ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    plainData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                plainData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -336,10 +339,10 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
         render() {
             return (
                 <TreeView
-                    dataStructure='plain'
+                    dataStructure="plain"
                     dataSource={plainData} 
-                    keyExpr='name'
-                    displayExpr='name' />
+                    keyExpr="name"
+                    displayExpr="name" />
             );
         }
     }

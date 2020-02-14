@@ -74,63 +74,65 @@ The following code adds a simple **TreeView** to your page:
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-        :items="hierarchicalData" />
+            :items="hierarchicalData" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const hierarchicalData = [{
-                id: '1',
-                text: 'Fruits',
-                expanded: true,
-                items: [
-                    { id: '1_1', text: 'Apples' },
-                    { id: '1_2', text: 'Oranges' }
-                ]
-            }, {
-                id: '2',
-                text: 'Vegetables',
-                expanded: true,
-                items: [
-                    { id: '2_1', text: 'Cucumbers' },
-                    { id: '2_2', text: 'Tomatoes' }
-                ]
-            }];
+    const hierarchicalData = [{
+        id: '1',
+        text: 'Fruits',
+        expanded: true,
+        items: [
+            { id: '1_1', text: 'Apples' },
+            { id: '1_2', text: 'Oranges' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        expanded: true,
+        items: [
+            { id: '2_1', text: 'Cucumbers' },
+            { id: '2_2', text: 'Tomatoes' }
+        ]
+    }];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    hierarchicalData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                hierarchicalData
+            };
+        },
+    };
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->import React from 'react';
+    <!-- tab: App.js -->
+    import React from 'react';
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [{
-            id: '1',
-            text: 'Fruits',
-            expanded: true,
-            items: [
-                { id: '1_1', text: 'Apples' },
-                { id: '1_2', text: 'Oranges' }
-            ]
-        }, {
-            id: '2',
-            text: 'Vegetables',
-            expanded: true,
-            items: [
-                { id: '2_1', text: 'Cucumbers' },
-                { id: '2_2', text: 'Tomatoes' }
-            ]
-        }];
+        id: '1',
+        text: 'Fruits',
+        expanded: true,
+        items: [
+            { id: '1_1', text: 'Apples' },
+            { id: '1_2', text: 'Oranges' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        expanded: true,
+        items: [
+            { id: '2_1', text: 'Cucumbers' },
+            { id: '2_2', text: 'Tomatoes' }
+        ]
+    }];
 
 
     class App extends React.Component {

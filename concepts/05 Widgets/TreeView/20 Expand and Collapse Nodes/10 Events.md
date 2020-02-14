@@ -48,31 +48,32 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
         <DxTreeView
             :dataSource='data'
             @item-expanded='onItemExpanded'
-            @item-collapsed='onItemCollapsed' />
+            @item-collapsed='onItemCollapsed' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const data = [ ... ];
+    const data = [ ... ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    data
-                };
-            },
-            methods: {
-                onItemExpanded(e){
-                    // Handler of the 'itemExpanded' event
-                }
-                onItemCollapsed(e){
-                    // Handler of the 'itemCollapsed' event
-                }
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data
+            };
+        },
+        methods: {
+            onItemExpanded(e){
+                // Handler of the 'itemExpanded' event
             }
-        };
+            onItemCollapsed(e){
+                // Handler of the 'itemCollapsed' event
+            }
+        }
+    };
     </script>
 
 ##### React

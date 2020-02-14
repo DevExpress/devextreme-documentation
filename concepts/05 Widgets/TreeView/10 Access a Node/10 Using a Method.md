@@ -35,33 +35,34 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
     <template>
         <dx-tree-view
             :ref='treeViewRef'
-            :items="data" />
+            :items="data" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
-        const treeViewRef = 'treeView';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+    const treeViewRef = 'treeView';
 
-        export default {
-            components: {
-                DxTreeView
-            },
-            data() {
-                return {
-                    data,
-                    treeViewRef
-                };
-            },
-            computed: {
-                treeView: function() {
-                    return this.$refs[treeViewRef].instance;
-                }
-            },   
-            methods: {
-                getNodes(){
-                    return this.treeView.getNodes();
-                }
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data,
+                treeViewRef
+            };
+        },
+        computed: {
+            treeView: function() {
+                return this.$refs[treeViewRef].instance;
             }
-        };
+        },   
+        methods: {
+            getNodes(){
+                return this.treeView.getNodes();
+            }
+        }
+    };
     </script>
 
 ##### React

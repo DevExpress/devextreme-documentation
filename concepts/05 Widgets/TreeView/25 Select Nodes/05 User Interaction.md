@@ -36,23 +36,24 @@ If only a single node should be in the selected state at a time, set the [select
     <template>
         <DxTreeView
             :dataSource='data'
-            :selectByClick=true />
+            :selectByClick=true 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const data = [ ... ];
+    const data = [ ... ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    data
-                };
-            }
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data
+            };
+        }
+    };
     </script>
 
 ##### React
@@ -118,20 +119,20 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
             showCheckBoxesMode='normal' /> <!-- or 'selectAll' -->
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const data = [...];
+    const data = [...];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    data
-                };
-            }
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data
+            };
+        }
+    };
     </script>
 
 ##### React

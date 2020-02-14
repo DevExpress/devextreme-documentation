@@ -68,34 +68,35 @@ You can handle these events with functions. Assign the handling functions to the
             showCheckBoxesMode="normal"
             @item-selection-changed="onItemSelectionChanged"
             @selection-changed="onSelectionChanged"
-            @select-all-value-changed="onSelectAllValueChanged" />
+            @select-all-value-changed="onSelectAllValueChanged" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const data = [ ... ];
+    const data = [ ... ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    data
-                };
-            },
-            methods: {
-                onItemSelectionChanged(e){
-                    // Handler of the "itemSelectionChanged" event
-                }
-                onSelectionChanged(e){
-                    // Handler of the "selectionChanged" event
-                }
-                onSelectAllValueChanged(e) {
-                    // Handler of the "selectAllValueChanged" event                    
-                }
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data
+            };
+        },
+        methods: {
+            onItemSelectionChanged(e){
+                // Handler of the "itemSelectionChanged" event
             }
-        };
+            onSelectionChanged(e){
+                // Handler of the "selectionChanged" event
+            }
+            onSelectAllValueChanged(e) {
+                // Handler of the "selectAllValueChanged" event                    
+            }
+        }
+    };
     </script>
 
 ##### React

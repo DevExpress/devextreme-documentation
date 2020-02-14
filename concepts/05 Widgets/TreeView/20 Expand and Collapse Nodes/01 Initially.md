@@ -73,39 +73,40 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
             keyExpr='key'
             displayExpr='name'
             expandedExpr='isExpanded'
-            :items='hierarchicalData' />
+            :items='hierarchicalData' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const hierarchicalData = [{
-                key: '1',
-                name: 'Fruits',
-                isExpanded: true,
-                items: [
-                    { key: '1_1', name: 'Apples' },
-                    { key: '1_2', name: 'Oranges' }
-                ]
-            }, {
-                key: '2',
-                name: 'Vegetables',
-                isExpanded: true,
-                items: [
-                    { key: '2_1', name: 'Cucumbers' },
-                    { key: '2_2', name: 'Tomatoes' }
-                ]
-            }];
+    const hierarchicalData = [{
+        key: '1',
+        name: 'Fruits',
+        isExpanded: true,
+        items: [
+            { key: '1_1', name: 'Apples' },
+            { key: '1_2', name: 'Oranges' }
+        ]
+    }, {
+        key: '2',
+        name: 'Vegetables',
+        isExpanded: true,
+        items: [
+            { key: '2_1', name: 'Cucumbers' },
+            { key: '2_2', name: 'Tomatoes' }
+        ]
+    }];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    hierarchicalData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                hierarchicalData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -115,30 +116,30 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [{
-            key: '1',
-            name: 'Fruits',
-            isExpanded: true,
-            items: [
-                { key: '1_1', name: 'Apples' },
-                { key: '1_2', name: 'Oranges' }
-            ]
-        }, {
-            key: '2',
-            name: 'Vegetables',
-            isExpanded: true,
-            items: [
-                { key: '2_1', name: 'Cucumbers' },
-                { key: '2_2', name: 'Tomatoes' }
-            ]
-        }];
+        key: '1',
+        name: 'Fruits',
+        isExpanded: true,
+        items: [
+            { key: '1_1', name: 'Apples' },
+            { key: '1_2', name: 'Oranges' }
+        ]
+    }, {
+        key: '2',
+        name: 'Vegetables',
+        isExpanded: true,
+        items: [
+            { key: '2_1', name: 'Cucumbers' },
+            { key: '2_2', name: 'Tomatoes' }
+        ]
+    }];
 
     class App extends React.Component {
         render() {
             return (
                 <TreeView
-                    keyExpr='key'
-                    displayExpr='name'
-                    expandedExpr='isExpanded'
+                    keyExpr="key"
+                    displayExpr="name"
+                    expandedExpr="isExpanded"
                     items={hierarchicalData} />
             );
         }

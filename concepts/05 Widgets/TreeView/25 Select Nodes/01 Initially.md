@@ -76,37 +76,38 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
             displayExpr="name"
             showCheckBoxesMode="normal"
             selectedExpr="isSelected"
-            :items="hierarchicalData" />
+            :items="hierarchicalData" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const hierarchicalData = [{
-                name: 'Fruits',
-                isSelected: true,
-                items: [
-                    { name: 'Apples' },
-                    { name: 'Oranges' }
-                ]
-            }, {
-                name: 'Vegetables',
-                isSelected: true,
-                items: [
-                    { name: 'Cucumbers' },
-                    { name: 'Tomatoes' }
-                ]
-            }];
+    const hierarchicalData = [{
+        name: 'Fruits',
+        isSelected: true,
+        items: [
+            { name: 'Apples' },
+            { name: 'Oranges' }
+        ]
+    }, {
+        name: 'Vegetables',
+        isSelected: true,
+        items: [
+            { name: 'Cucumbers' },
+            { name: 'Tomatoes' }
+        ]
+    }];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    hierarchicalData
-                };
-            },
-        };
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                hierarchicalData
+            };
+        },
+    };
     </script>
 
 ##### React
@@ -116,20 +117,20 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
     import TreeView from 'devextreme-react/tree-view';
 
     const hierarchicalData = [{
-            name: 'Fruits',
-            isSelected: true,
-            items: [
-                { name: 'Apples' },
-                { name: 'Oranges' }
-            ]
-        }, {
-            name: 'Vegetables',
-            isSelected: true,
-            items: [
-                { name: 'Cucumbers' },
-                { name: 'Tomatoes' }
-            ]
-        }];
+        name: 'Fruits',
+        isSelected: true,
+        items: [
+            { name: 'Apples' },
+            { name: 'Oranges' }
+        ]
+    }, {
+        name: 'Vegetables',
+        isSelected: true,
+        items: [
+            { name: 'Cucumbers' },
+            { name: 'Tomatoes' }
+        ]
+    }];
 
     class App extends React.Component {
         render() {
@@ -138,7 +139,7 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
                     keyExpr="name"
                     displayExpr="name"
                     showCheckBoxesMode="normal"
-                    selectedExpr='isSelected'
+                    selectedExpr="isSelected"
                     items={hierarchicalData} />
             );
         }

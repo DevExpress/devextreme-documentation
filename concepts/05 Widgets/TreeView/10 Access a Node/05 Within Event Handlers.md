@@ -44,29 +44,30 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
     <template>
         <DxTreeView
             :dataSource='data'
-            @item-click='onItemClick' />
+            @item-click='onItemClick' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const data = [ ... ];
+    const data = [ ... ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    data
-                };
-            },
-            methods: {
-                onItemClick(e){
-                    const node = e.node;
-                    // ...
-                }
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data
+            };
+        },
+        methods: {
+            onItemClick(e){
+                const node = e.node;
+                // ...
             }
-        };
+        }
+    };
     </script>
 
 ##### React

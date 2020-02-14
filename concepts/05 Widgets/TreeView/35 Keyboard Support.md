@@ -107,39 +107,40 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     <template>
         <DxTreeView
             :ref='treeViewRef'        
-            :dataSource='data' />
+            :dataSource='data' 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue/tree-view';
-        const treeViewRef = 'treeView';
-        
-        const data = [...];
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+    const treeViewRef = 'treeView';
+    
+    const data = [...];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    data,
-                    treeViewRef
-                };
-            },
-            computed: {
-                treeView: function() {
-                    return this.$refs[treeViewRef].instance;
-                }
-            },   
-            mounted: function() {
-                this.treeView.registerKeyHandler("backspace", function (e) {
-                    // The argument "e" contains information on the event
-                });                    
-
-                this.treeView.registerKeyHandler("space", function (e) {
-                    // ...
-                });
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data,
+                treeViewRef
+            };
+        },
+        computed: {
+            treeView: function() {
+                return this.$refs[treeViewRef].instance;
             }
-        };
+        },   
+        mounted: function() {
+            this.treeView.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });                    
+
+            this.treeView.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    };
     </script>
 
 ##### React

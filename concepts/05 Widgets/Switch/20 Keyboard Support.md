@@ -133,7 +133,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} onInitialized={registerKeyHandlers} />
+                <{WidgetName} onInitialized={this.registerKeyHandlers} />
             );
         }
 

@@ -92,7 +92,7 @@ To process a new **Switch** value, you need to handle the value change event. If
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} onValueChanged={switchValueChanged} />
+                <{WidgetName} onValueChanged={this.switchValueChanged} />
             );
         }
 

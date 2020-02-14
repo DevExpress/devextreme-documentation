@@ -81,6 +81,8 @@ To select or cancel the selection of a node programmatically, call the [selectIt
         constructor() {
             super();
             this.treeViewRef = React.createRef();
+            this.selectNode = this.selectNode.bind(this);
+            this.unselectNode = this.unselectNode.bind(this);            
         }
 
         render() {
@@ -191,6 +193,8 @@ To select or cancel the selection of all nodes programmatically, call the [selec
         constructor() {
             super();
             this.treeViewRef = React.createRef();
+            this.selectAllNodes = this.selectAllNodes.bind(this);
+            this.unselectAllNodes = this.unselectAllNodes.bind(this);                
         }
 
         render() {

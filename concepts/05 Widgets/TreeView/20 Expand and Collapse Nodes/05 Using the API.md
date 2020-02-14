@@ -196,6 +196,8 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
             constructor() {
                 super();
                 this.treeViewRef = React.createRef();
+                this.expandNode = this.expandNode.bind(this);
+                this.collapseNode = this.collapseNode.bind(this);
             }
 
             render() {

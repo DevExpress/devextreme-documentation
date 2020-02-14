@@ -51,6 +51,7 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
         import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const treeViewRef = 'treeView';
+        const data = [ ... ];
 
         export default {
             components: {
@@ -87,6 +88,8 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
         import 'devextreme/dist/css/dx.light.css';
 
         import TreeView from 'devextreme-react/tree-view';
+
+        const data = [ ... ];
 
         class App extends React.Component {
             constructor() {
@@ -169,6 +172,7 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
         import { DxTreeView } from 'devextreme-vue/tree-view';
 
         const treeViewRef = 'treeView';
+        const data = [ ... ];
 
         export default {
             components: {
@@ -205,7 +209,8 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
         import 'devextreme/dist/css/dx.light.css';
 
         import TreeView from 'devextreme-react/tree-view';
-
+        const data = [ ... ];
+        
         class App extends React.Component {
             constructor() {
                 super();

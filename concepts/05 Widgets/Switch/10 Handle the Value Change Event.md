@@ -58,7 +58,7 @@ To process a new **Switch** value, you need to handle the value change event. If
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} @valueChanged="switchValueChanged" />
+        <Dx{WidgetName} @value-сhanged="switchValueChanged" />
     </template>
 
     <script>

@@ -62,7 +62,7 @@ Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/ge
             }
         },   
         methods: {
-            getNodes(){
+            getNodes() {
                 return this.treeView.getNodes();
             }
         }

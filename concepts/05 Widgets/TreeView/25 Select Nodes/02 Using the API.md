@@ -188,7 +188,7 @@ To select or cancel the selection of all nodes programmatically, call the [selec
             }
         },   
         methods: {
-            unselectAllNodes(){
+            selectAllNodes() {
                 this.treeView.selectAll();
             },
             unselectAllNodes() {

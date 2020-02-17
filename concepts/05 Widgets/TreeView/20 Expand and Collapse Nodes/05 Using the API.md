@@ -110,7 +110,7 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
                 this.treeView.expandAll();
             }
             
-            collapseAllNodes(e){
+            collapseAllNodes() {
                 this.treeView.collapseAll();
             }  
 

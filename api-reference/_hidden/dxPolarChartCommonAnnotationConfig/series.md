@@ -1,4 +1,4 @@
-Use this option when the annotation is positioned relative to an [argument]({basewidgetpath}/Configuration/annotations/#argument').
+Use this option when the annotation is positioned relative to an [argument](/api-reference/_hidden/dxChartCommonAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument').
 
 For example, the following **PolarChart** fragment displays two series and an annotation. The annotation is positioned relative to the argument `B` but not anchored to any of the two series points that correspond to this argument. To anchor the annotation to a series point, specify the annotation's **series** option:
 
@@ -20,15 +20,13 @@ For example, the following **PolarChart** fragment displays two series and an an
 
 <div style="display:flex; flex-direction:row">
     <figure>
-        <img src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-unanchored-2.png" alt="Polar chart annotation anchored to an argument">
-        <figcaption>Annotation positioned relative to the argument <i>B</i></figcaption>
+        <img src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-unanchored-with-caption.png" alt="Polar chart annotation anchored to an argument">
     </figure> 
     <figure>
-        <img src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-anchored-2.png" alt="Polar chart annotation anchored to a series point">
-        <figcaption>Annotation anchored to a series point</figcaption>
+        <img src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-anchored-with-caption.png" alt="Polar chart annotation anchored to a series point">
     </figure>
 </div>
 
 #####See Also#####
-- [x]({basewidgetpath}/Configuration/annotations/#x) | [y]({basewidgetpath}/Configuration/annotations/#y)
-- [value]({basewidgetpath}/Configuration/annotations/#value)
+- [x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') | [y](/api-reference/_hidden/dxChartCommonAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')
+- [value](/api-reference/_hidden/dxChartCommonAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value')

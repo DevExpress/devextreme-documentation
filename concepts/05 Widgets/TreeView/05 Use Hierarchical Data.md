@@ -24,7 +24,6 @@ As you can see, all items in a hierarchical data source have the **id** and **te
 
 ---
 ##### jQuery
-
     <!--JavaScript-->var hierarchicalData = [{
         key: '1',
         name: 'Fruits',

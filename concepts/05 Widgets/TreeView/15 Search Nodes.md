@@ -353,7 +353,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
             :search-enabled="true">
             <DxSearchEditorOptions
                 placeholder="Type search value here..."
-                width=300
+                :width="300"
             />
         </DxTreeView>    
     </template>

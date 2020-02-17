@@ -10,12 +10,24 @@ An end user can use the following keys to interact with the widget.
     </thead>
     <tbody>
     <tr>
-      <td>&larr;</td>
+      <td>&larr; &uarr; or PageUp</td>
       <td>Moves focus to the previous tab.</td>
-   </tr>
+    </tr>
     <tr>
-      <td>&rarr;</td>
+      <td>&rarr; &darr; or PageDown</td>
       <td> Moves focus to the next tab.</td>
+    </tr>
+    <tr>
+        <td>Home</td>
+        <td>Moves focus to the first tab.</td>
+    </tr>
+    <tr>
+        <td>End</td>
+        <td>Moves focus to the last tab.</td>
+    </tr>
+    <tr>
+        <td>Enter or Space</td>
+        <td>Selects the tab. Available only if <a href="/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#selectionMode">selectionMode</a> is set to <i>'multiple'</i>.</td>
     </tr>
     <tr>
       <td>Shift + Mouse Wheel</td>
@@ -33,10 +45,10 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     <!--JavaScript-->
     function registerKeyHandlers () {
         let tabs =  $("#tabsContainer").dxTabs("instance");
-        tabs.registerKeyHandler("backspace", function (e) {
+        tabs.registerKeyHandler("backspace", function(e) {
             // The argument "e" contains information on the event
         });
-        tabs.registerKeyHandler("space", function (e) {
+        tabs.registerKeyHandler("space", function(e) {
             // ...
         });
     }
@@ -53,10 +65,10 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // Prior to Angular 8
         // @ViewChild(DxTabsComponent) tabs: DxTabsComponent
         ngAfterViewInit () {
-            this.tabs.instance.registerKeyHandler("backspace", function (e) {
+            this.tabs.instance.registerKeyHandler("backspace", function(e) {
                 // The argument "e" contains information on the event
             });
-            this.tabs.instance.registerKeyHandler("space", function (e) {
+            this.tabs.instance.registerKeyHandler("space", function(e) {
                 // ...
             });
         }
@@ -68,6 +80,83 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxTabs
+            :ref="myTabsRef" />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTabs from "devextreme-vue/tabs";
+
+    const myTabsRef = "my-tabs";
+
+    export default {
+        components: {
+            DxTabs
+        },
+        data() {
+            return {
+                myTabsRef
+            }
+        },
+        computed: {
+            tabs: function() {
+                return this.$refs[myTabsRef].instance;
+            }
+        },
+        mounted: function() {
+            this.tabs.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.tabs.registerKeyHandler("space", function(e) {
+                // ...
+            });
+        }
+    }
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { Tabs } from 'devextreme-react/tabs';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.tabsRef = React.createRef();
+        }
+
+        get tabs() {
+            return this.tabsRef.current.instance;
+        }
+
+        render() {
+            return (
+                <Tabs ref={this.tabsRef} />
+            );
+        }
+
+        componentDidMount() {
+            this.tabs.registerKeyHandler('backspace', function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.tabs.registerKeyHandler('space', function(e) {
+                // ...
+            });
+        }
+    }
+
+    export default App;
 
 ---
 

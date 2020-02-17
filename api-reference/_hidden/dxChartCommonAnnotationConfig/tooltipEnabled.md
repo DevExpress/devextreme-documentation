@@ -10,7 +10,7 @@ Specifies whether the annotation tooltip is enabled.
 ---
 A tooltip is a miniature rectangle that appears when a user long-presses an annotation or hovers the mouse pointer over it.
 
-![DevExtreme Chart: Annotation Tooltip](/images/ChartJS/visual_elements/annotation_tooltip.png)
+![DevExtreme Chart: Annotation Tooltip](/images/ChartJS/annotations/bar-chart-annotation-tooltip.png)
 
 The tooltip displays the contents of the [description](/api-reference/_hidden/dxChartCommonAnnotationConfig/description.md '{basewidgetpath}/Configuration/annotations/#description') field or the text or markup returned from the [customizeTooltip](/api-reference/_hidden/dxChartCommonAnnotationConfig/customizeTooltip.md '{basewidgetpath}/Configuration/annotations/#customizeTooltip') function. If the **description** is empty, and **customizeTooltip** returns nothing, the tooltip does not appear.
 

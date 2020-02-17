@@ -46,7 +46,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="dataSource"
+            :data-source="dataSource"
         />
     </template>
 
@@ -55,6 +55,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+    import ODataStore from 'devextreme/data/odata/store';
 
     export default {
         components: {
@@ -62,7 +63,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         },
         data() {
             return {
-                dataSource: new DevExpress.data.ODataStore({
+                dataSource: new ODataStore({
                     url: "http://url/to/odata/service"
                     onLoaded: function () {
                         // Event handling commands go here
@@ -82,12 +83,13 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    import ODataStore from 'devextreme/data/odata/store';
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={new DevExpress.data.ODataStore({
+                    dataSource={ODataStore({
                         url: "http://url/to/odata/service"
                         onLoaded: function () {
                             // Event handling commands go here
@@ -154,7 +156,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="dataSource"
+            :data-source="dataSource"
         />
     </template>
 
@@ -163,6 +165,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+    import DataSource from 'devextreme/data/data_source';
 
     export default {
         components: {
@@ -170,7 +173,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
         },
         data() {
             return {
-                dataSource: new DevExpress.data.DataSource({
+                dataSource: new DataSource({
                     store: {
                         type: "odata",
                         url: "http://url/to/odata/service"
@@ -192,12 +195,13 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    import DataSource from 'devextreme/data/data_source';
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={new DevExpress.data.DataSource({
+                    dataSource={new DataSource({
                         store: {
                             type: "odata",
                             url: "http://url/to/odata/service"

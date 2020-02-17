@@ -35,7 +35,7 @@ To bind the **Scheduler** to data in the JSON format, assign the data's URL to t
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="dataSource"
+            :data-source="dataSource"
         />
     </template>
 
@@ -118,7 +118,7 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="dataSource"
+            :data-source="dataSource"
         />
     </template>
 

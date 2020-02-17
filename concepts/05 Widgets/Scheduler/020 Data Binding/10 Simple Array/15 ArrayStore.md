@@ -47,7 +47,7 @@ If you want to extend the functionality of a JavaScript array, place it into the
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="dataSource"
+            :data-source="dataSource"
         />
     </template>
 
@@ -56,6 +56,7 @@ If you want to extend the functionality of a JavaScript array, place it into the
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+    import ArrayStore from 'devextreme/data/array_store';
 
     const appointments = [ /* ... */ ];
 
@@ -65,7 +66,7 @@ If you want to extend the functionality of a JavaScript array, place it into the
         },
         data() {
             return {
-                dataSource: new DevExpress.data.ArrayStore({
+                dataSource: new ArrayStore({
                     data: appointments,
                     onLoaded: function () {
                         // Event handling commands go here
@@ -85,6 +86,7 @@ If you want to extend the functionality of a JavaScript array, place it into the
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    import ArrayStore from 'devextreme/data/array_store';
 
     const appointments = [ /* ... */ ];
 
@@ -92,7 +94,7 @@ If you want to extend the functionality of a JavaScript array, place it into the
         render() {
             return (
                 <Scheduler
-                    dataSource={new DevExpress.data.ArrayStore({
+                    dataSource={new ArrayStore({
                         data: appointments,
                         onLoaded: function () {
                             // Event handling commands go here
@@ -182,7 +184,7 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="dataSource"
+            :data-source="dataSource"
         />
     </template>
 

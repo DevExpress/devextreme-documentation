@@ -56,8 +56,8 @@ To bind the **Scheduler** to an array, pass this array to the [dataSource](/api-
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="appointments"
-          :current-date="currentDate"
+            :data-source="appointments"
+            :current-date="currentDate"
         />
     </template>
 
@@ -186,8 +186,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-          :data-source="dataSource"
-          :current-date="currentDate"
+            :data-source="dataSource"
+            :current-date="currentDate"
         />
     </template>
 
@@ -196,6 +196,7 @@ If objects in the array need to be processed (for example, filtered), you can cr
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+    import Query from 'devextreme/data/query';
 
     const appointments = [{ 
         text: 'Meet with a customer', 
@@ -212,7 +213,7 @@ If objects in the array need to be processed (for example, filtered), you can cr
         data() {
             return {
                 currentDate: new Date(2016, 4, 10),
-                dataSource: query(appointments).filter("text", "contains", "meet").toArray();
+                dataSource: Query(appointments).filter("text", "contains", "meet").toArray();
             }
         }
     }
@@ -227,6 +228,7 @@ If objects in the array need to be processed (for example, filtered), you can cr
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    import Query from 'devextreme/data/query';
 
     const appointments = [{ 
         text: 'Meet with a customer', 
@@ -240,7 +242,7 @@ If objects in the array need to be processed (for example, filtered), you can cr
         render() {
             return (
                 <Scheduler
-                    dataSource={query(appointments).filter("text", "contains", "meet").toArray()}
+                    dataSource={Query(appointments).filter("text", "contains", "meet").toArray()}
                     defaultCurrentDate={new Date(2016, 4, 10)} />
             );
         }

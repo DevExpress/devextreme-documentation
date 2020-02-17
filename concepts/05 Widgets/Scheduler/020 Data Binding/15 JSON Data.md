@@ -30,6 +30,54 @@ To bind the **Scheduler** to data in the JSON format, assign the data's URL to t
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+          :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: "http://url/to/json/data"
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource="http://url/to/json/data"
+                />
+            });
+        }
+    }
+    export default App;
+
 ---
 
 Note that you can also use a JSONP callback parameter supported by <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>.
@@ -64,6 +112,54 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+          :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: "http://url/to/json/data/jsonpdata?callback=?"
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource="http://url/to/json/data/jsonpdata?callback=?"
+                />
+            });
+        }
+    }
+    export default App;
 
 ---
 

@@ -42,11 +42,74 @@ If you want to extend the functionality of a JavaScript array, place it into the
         [dataSource]="appointmentStore">
     </dx-scheduler>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+          :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    const appointments = [ /* ... */ ];
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: new DevExpress.data.ArrayStore({
+                    data: appointments,
+                    onLoaded: function () {
+                        // Event handling commands go here
+                    }
+                })
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const appointments = [ /* ... */ ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={new DevExpress.data.ArrayStore({
+                        data: appointments,
+                        onLoaded: function () {
+                            // Event handling commands go here
+                        }
+                    })}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 Data kept in the **ArrayStore** can be processed in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). Its purpose is similar to that of the [Query](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept'), but the **DataSource** provides wider capabilities. For example, the **DataSource** can map objects from the array that underlies the **ArrayStore** as shown in the following code.
 
 ---
+
 ##### jQuery
 
     <!--JavaScript-->
@@ -114,7 +177,91 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
         [dataSource]="appointmentDataSource">
     </dx-scheduler>
 
+##### Vue
 
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+          :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    const appointments = [{ 
+        desc: 'Meet with a customer', 
+        employee: "Mary Watson",
+        from: new Date(2016, 4, 10, 11, 0), 
+        to: new Date(2016, 4, 10, 13, 0) 
+    }, 
+    // ...
+    ];
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: new DevExpress.data.DataSource({
+                    store: appointments,
+                    map: function (item) {
+                        return {
+                            text: item.employee + " : " + item.desc,
+                            startDate: item.from,
+                            endDate: item.to
+                        }   
+                    },
+                    paginate: false
+                })
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const appointments = [{ 
+        desc: 'Meet with a customer', 
+        employee: "Mary Watson",
+        from: new Date(2016, 4, 10, 11, 0), 
+        to: new Date(2016, 4, 10, 13, 0) 
+    }, 
+    // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={new DevExpress.data.DataSource({
+                        store: appointments,
+                        map: function (item) {
+                            return {
+                                text: item.employee + " : " + item.desc,
+                                startDate: item.from,
+                                endDate: item.to
+                            }   
+                        },
+                        paginate: false
+                    })}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

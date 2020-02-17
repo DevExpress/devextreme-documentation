@@ -41,6 +41,64 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         [dataSource]="appointmentStore">
     </dx-scheduler>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+          :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: new DevExpress.data.ODataStore({
+                    url: "http://url/to/odata/service"
+                    onLoaded: function () {
+                        // Event handling commands go here
+                    }
+                })
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={new DevExpress.data.ODataStore({
+                        url: "http://url/to/odata/service"
+                        onLoaded: function () {
+                            // Event handling commands go here
+                        }
+                    })}
+                />
+            });
+        }
+    }
+    export default App;
+
 ---
 
 Data kept in the **ODataStore** can be processed in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can filter data as shown in the following code. Note that the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') option is set **false** to prevent data from being partitioned because the **Scheduler** does not support paging.
@@ -90,6 +148,68 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     <dx-scheduler
         [dataSource]="appointmentDataSource">
     </dx-scheduler>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+          :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: new DevExpress.data.DataSource({
+                    store: {
+                        type: "odata",
+                        url: "http://url/to/odata/service"
+                    },
+                    filter: ["Not_Assigned", "=", true],
+                    paginate: false
+                })
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={new DevExpress.data.DataSource({
+                        store: {
+                            type: "odata",
+                            url: "http://url/to/odata/service"
+                        },
+                        filter: ["Not_Assigned", "=", true],
+                        paginate: false
+                    })}
+                />
+            });
+        }
+    }
+    export default App;
 
 ---
 

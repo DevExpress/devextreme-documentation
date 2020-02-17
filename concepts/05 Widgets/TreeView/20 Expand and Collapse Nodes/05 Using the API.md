@@ -233,7 +233,7 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
                 this.treeView.expandItem(key);
             }
             
-            collapseNode(key){
+            collapseNode(key) {
                 this.treeView.collapseItem(key);
             }  
 

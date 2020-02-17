@@ -134,7 +134,7 @@ You can handle these events with functions. Assign the handling functions to the
             // Handler of the "selectionChanged" event
         }
 
-        onSelectAllValueChanged(e){
+        onSelectAllValueChanged(e) {
             // Handler of the "selectAllValueChanged" event
         }
     }

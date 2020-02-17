@@ -36,7 +36,7 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxNumberBox
             :value="20"
             value-change-event="keyup"
@@ -44,6 +44,9 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
@@ -57,6 +60,9 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
     import NumberBox from 'devextreme-react/number-box';
 
@@ -115,11 +121,14 @@ To process a new **NumberBox** value, you need to handle the value change event.
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxNumberBox @value-changed="numberBoxValueChanged" />
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxNumberBox from 'devextreme-vue/number-box';
 
     export default {
@@ -138,6 +147,9 @@ To process a new **NumberBox** value, you need to handle the value change event.
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
     import NumberBox from 'devextreme-react/number-box';
 

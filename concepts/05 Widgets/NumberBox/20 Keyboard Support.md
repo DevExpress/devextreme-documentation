@@ -36,7 +36,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             // ...
         });
     }
-    
+
 
 ##### Angular
 
@@ -68,28 +68,41 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
-        <DxNumberBox @initialized="registerKeyHandlers"
-        />
+    <template>
+        <DxNumberBox :ref="myNumberBoxRef" />
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxNumberBox from 'devextreme-vue/number-box';
+
+    const myNumberBoxRef = 'my-number-box';
 
     export default {
         components: {
             DxNumberBox
         },
-        methods: {
-            registerKeyHandlers({ component }) {
-                component.registerKeyHandler("backspace", function (e) {
-                    // The argument "e" contains information on the event
-                });
-                component.registerKeyHandler("space", function (e) {
-                    // ...
-                });
+        data() {
+            return {
+                myNumberBoxRef
             }
+        },
+        computed: {
+            calendar: function() {
+                return this.$refs[myNumberBoxRef].instance;
+            }
+        },
+        mounted: function() {
+            this.calendar.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.calendar.registerKeyHandler("space", function(e) {
+                // ...
+            });
         }
+
     }
     </script>
 
@@ -98,20 +111,32 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     <!-- tab: App.js -->
     import React from 'react';
 
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import NumberBox from 'devextreme-react/number-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.numberBoxRef = React.createRef();
+        }
+
         render() {
             return (
-                <NumberBox onInitialized={this.registerKeyHandlers} />
+                <NumberBox ref={this.numberBoxRef} />
             );
         }
 
-        registerKeyHandlers({ component }) {
-            component.registerKeyHandler("backspace", function (e) {
+        get numberBox() {
+            return this.numberBoxRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.numberBox.registerKeyHandler("backspace", function (e) {
                 // The argument "e" contains information on the event
             });
-            component.registerKeyHandler("space", function (e) {
+            this.numberBox.registerKeyHandler("space", function (e) {
                 // ...
             });
         }

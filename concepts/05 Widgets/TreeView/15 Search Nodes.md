@@ -121,8 +121,8 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
         { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
     ];
 
+    const searchExpr = ["count", "name"];
     class App extends React.Component {
-        const searchExpr = ["count", "name"];
         render() {
             return (
                 <TreeView
@@ -132,7 +132,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
                     displayExpr="name"
                     parentIdExpr="parent"
                     searchEnabled={true}
-                    searchExpr={this.searchExpr} />
+                    searchExpr={searchExpr} />
             );
         }
     }
@@ -260,6 +260,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
         { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
     ];
 
+    const searchExpr = ["count", "name"];
     class App extends React.Component {
         render() {
             return (
@@ -271,7 +272,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
                     parentIdExpr="parent"
                     searchMode="startswith"
                     searchEnabled={true}
-                    searchExpr={["count", "name"]} />
+                    searchExpr={searchExpr} />
             );
         }
     }

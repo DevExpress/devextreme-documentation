@@ -43,11 +43,14 @@ The following code adds a simple **Calendar** to your page.
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxCalendar :value="date" />
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
@@ -66,6 +69,9 @@ The following code adds a simple **Calendar** to your page.
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';
 
@@ -94,7 +100,7 @@ To specify which day should be considered the beginning of the week, pass its in
         $("#calendarContainer").dxCalendar({
             firstDayOfWeek: 1
         });
-    });   
+    });
 
 ##### Angular
 
@@ -120,11 +126,14 @@ To specify which day should be considered the beginning of the week, pass its in
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxCalendar :first-day-of-week="1" />
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
@@ -138,6 +147,9 @@ To specify which day should be considered the beginning of the week, pass its in
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';
 

@@ -44,7 +44,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             // ...
         });
     }
-    
+
 
 ##### Angular
 
@@ -76,11 +76,14 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxCalendar @initialized="registerKeyHandlers" />
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
@@ -104,6 +107,9 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';
 

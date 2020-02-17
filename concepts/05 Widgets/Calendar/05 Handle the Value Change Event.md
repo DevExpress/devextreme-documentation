@@ -40,11 +40,14 @@ To process a new calendar value, you need to handle the value change event. If t
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxCalendar @value-changed="calendarValueChanged" />
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
@@ -63,6 +66,9 @@ To process a new calendar value, you need to handle the value change event. If t
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';
 

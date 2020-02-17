@@ -40,7 +40,7 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxCalendar
             :value="date"
             :min-date="minDate"
@@ -49,6 +49,9 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
@@ -70,6 +73,9 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
     <!-- tab: App.js -->
     import React from 'react';
 
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import Calendar from 'devextreme-react/calendar';
 
     const date = new Date();
@@ -90,7 +96,7 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
 
 ---
 
-If you need to disable specific dates, use the [disabledDates](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/disabledDates.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#disabledDates') option. You can specify either an array of predefined dates or a function that determines whether a date is available. For example, the following code disables weekends: 
+If you need to disable specific dates, use the [disabledDates](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/disabledDates.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#disabledDates') option. You can specify either an array of predefined dates or a function that determines whether a date is available. For example, the following code disables weekends:
 
 ---
 ##### jQuery
@@ -137,7 +143,7 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template> 
+    <template>
         <DxCalendar
             :value="date"
             :min-date="minDate"
@@ -146,6 +152,9 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxCalendar from 'devextreme-vue/calendar';
 
     export default {
@@ -171,6 +180,9 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
 
     <!-- tab: App.js -->
     import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';
 

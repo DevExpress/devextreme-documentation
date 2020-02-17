@@ -164,7 +164,6 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         constructor(props) {
             super(props);
             this.treeViewRef = React.createRef();
-            this.componentDidMount = this.componentDidMount.bind(this);
         }
 
         get treeView() {

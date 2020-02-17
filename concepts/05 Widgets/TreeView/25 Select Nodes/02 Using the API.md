@@ -35,18 +35,19 @@ To retrieve the keys of all selected nodes, call the [getSelectedNodeKeys()](/ap
     <template>
         <dx-tree-view
             :ref="treeViewRef"
-            :items="data" />
+            :items="data"
+        />
     </template>
     <script>
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-        import { DxTreeView } from 'devextreme-vue';
+    import { DxTreeView } from 'devextreme-vue';
 
-        const treeViewRef = 'treeView';
-        const data = [...];
+    const treeViewRef = 'treeView';
+    const data = [...];
 
-        export default {
+    export default {
         components: {
             DxTreeView
         },
@@ -147,38 +148,39 @@ To retrieve all selected nodes, call the [getSelectedNodes()](/api-reference/10%
     <template>
         <dx-tree-view
             :ref="treeViewRef"
-            :items="data" />
+            :items="data"
+        />
     </template>
     <script>
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-    
-        import { DxTreeView } from 'devextreme-vue';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-        const treeViewRef = 'treeView';
-        const data = [...];     
+    import { DxTreeView } from 'devextreme-vue';
 
-        export default {
-            components: {
-                DxTreeView
-            },
-            data() {
-                return {
-                    data,
-                    treeViewRef
-                };
-            },
-            computed: {
-                treeView: function() {
-                    return this.$refs[treeViewRef].instance;
-                }
-            },   
-            methods: {
-                getSelectedNodes(){
-                    return this.treeView.getSelectedNodes();
-                }
+    const treeViewRef = 'treeView';
+    const data = [...];     
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data,
+                treeViewRef
+            };
+        },
+        computed: {
+            treeView: function() {
+                return this.$refs[treeViewRef].instance;
             }
-        };
+        },   
+        methods: {
+            getSelectedNodes(){
+                return this.treeView.getSelectedNodes();
+            }
+        }
+    };
     </script>
 
 ##### React

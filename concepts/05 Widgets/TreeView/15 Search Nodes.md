@@ -415,7 +415,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
                     keyExpr="key"
                     displayExpr="name"
                     parentIdExpr="parent"
-                    searchEnabled={true} >
+                    searchEnabled={true}>
                     <SearchEditorOptions
                         placeholder="Type search value here..."
                         width={300}

@@ -45,4 +45,57 @@ To prevent an end user from adding an appointment, set the **editing**.[allowAdd
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            // ...
+            :editing="editing"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                // ...
+                editing: {
+                    allowAdding: false
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    // ...
+                    editing={{ allowAdding: false }}
+                />
+            });
+        }
+    }
+    export default App;
+
 ---

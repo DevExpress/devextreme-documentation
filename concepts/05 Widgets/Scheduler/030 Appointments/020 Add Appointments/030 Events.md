@@ -43,6 +43,71 @@ To execute certain commands before or after an appointment was added, handle the
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            // ...
+            :on-appointment-adding="onAppointmentAdding"
+            :on-appointment-added="onAppointmentAdded"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                // ...
+                onAppointmentAdding: (e) => {
+                    // Handler of the "appointmentAdding" event
+                },
+                onAppointmentAdded: (e) => {
+                    // Handler of the "appointmentAdded" event
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const onAppointmentAdding = (e) => {
+        // Handler of the "appointmentAdding" event
+    }
+    const onAppointmentAdded = (e) => {
+        // Handler of the "appointmentAdded" event
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    // ...
+                    onAppointmentAdding: {onAppointmentAdding},
+                    onAppointmentAdded: {onAppointmentAdded}
+                />
+            });
+        }
+    }
+    export default App;
     
 ---
 

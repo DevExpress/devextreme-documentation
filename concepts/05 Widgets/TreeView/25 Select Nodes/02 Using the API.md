@@ -66,7 +66,7 @@ To select or cancel the selection of a node programmatically, call the [selectIt
             }
         },   
         methods: {
-            selectNode(key){
+            selectNode(key) {
                 this.treeView.selectItem(key);
             },
             unselectNode(key){

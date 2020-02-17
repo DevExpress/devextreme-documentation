@@ -271,7 +271,9 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         }
 
         function renderTreeViewItem(item) {
-            return (<i>{item.text}</i>);
+            return (
+                <i>{item.text}</i>
+            );
         }
     }
 

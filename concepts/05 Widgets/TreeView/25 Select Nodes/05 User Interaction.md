@@ -37,7 +37,7 @@ If only a single node should be in the selected state at a time, set the [select
     <template>
         <DxTreeView
             :data-source="data"
-            :select-by-click=true 
+            :select-by-click="true"
         />
     </template>
     <script>

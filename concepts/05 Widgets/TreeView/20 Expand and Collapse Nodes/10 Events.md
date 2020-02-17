@@ -41,6 +41,77 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            :data-source="data"
+            @item-expanded="onItemExpanded"
+            @item-collapsed="onItemCollapsed" 
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+
+    const data = [ ... ];
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data
+            };
+        },
+        methods: {
+            onItemExpanded(e) {
+                // Handler of the 'itemExpanded' event
+            }
+            onItemCollapsed(e) {
+                // Handler of the 'itemCollapsed' event
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import TreeView from 'devextreme-react/tree-view';
+
+    const data = [ ... ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    onItemExpanded={this.onItemExpanded}
+                    onItemCollapsed={this.onItemCollapsed}
+                    dataSource={data} />
+            );
+        }
+
+        onItemExpanded(e) {
+            // Handler of the 'itemExpanded' event
+        }
+
+        onItemCollapsed(e) {
+            // Handler of the 'itemCollapsed' event
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

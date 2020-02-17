@@ -24,7 +24,7 @@ The following example illustrates how to use this method:
     $(function() {
         var fileManager = $("#file-manager").dxFileManager({
             name: "fileManager",
-            fileProvider: fileSystem,
+            fileSystemProvider: fileSystem,
             contextMenu: {
                 items: [
                     // ...

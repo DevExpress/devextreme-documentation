@@ -1,18 +1,18 @@
 ---
 id: CustomFileSystemProvider
-module: ui/file_manager/file_provider/custom
+module: file_management/custom_provider
 export: default
 type: Object
 inherits: FileSystemProviderBase
 ---
 ---
 ##### shortDescription
-A custom provider allows you to implement custom APIs to access and use file systems.
+A custom file system provider allows you to implement custom APIs to access and use file systems.
 
 ---
 Use the custom provider's methods to handle file operations (add, delete, rename, and so on).
 
-The following code shows how to create a custom provider and bind the **FileManager** widget to it:
+The following code shows how to create a custom file system provider and bind the **FileManager** widget to it:
 
 ---
 ##### jQuery
@@ -20,7 +20,7 @@ The following code shows how to create a custom provider and bind the **FileMana
     <!-- tab: index.js -->
     $(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 getItems: function(pathInfo) { 
                     // Your code goes here
                 }, 

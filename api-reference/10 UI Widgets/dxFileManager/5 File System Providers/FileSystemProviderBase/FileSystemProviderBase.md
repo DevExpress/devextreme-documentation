@@ -1,6 +1,6 @@
 ---
 id: FileSystemProviderBase
-module: ui/file_manager/file_provider/file_provider
+module: file_management/provider_base
 export: default
 type: Object
 hidden: 

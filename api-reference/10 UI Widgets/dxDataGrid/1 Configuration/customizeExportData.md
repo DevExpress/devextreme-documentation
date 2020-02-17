@@ -65,6 +65,73 @@ In the following code, the **customizeExportData** function replaces empty value
         [customizeExportData]="customizeExportData">
     </dx-data-grid>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :customize-export-data="customizeExportData"
+        >
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            customizeExportData(columns, rows) {
+                rows.forEach(function (row) {
+                    var rowValues = row.values;
+                    for (var i = 0; i < rowValues.length; i++) {
+                        if (rowValues[i] == "")
+                            rowValues[i] = "Is Blank";
+                    }
+                })
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    customizeExportData={customizeExportData}
+                >
+                </{DataGrid}>
+            );
+        }
+    }
+
+    function customizeExportData(columns, rows) {
+        rows.forEach(function (row) {
+            var rowValues = row.values;
+            for (var i = 0; i < rowValues.length; i++) {
+                if (rowValues[i] == "")
+                    rowValues[i] = "Is Blank";
+            }
+        })
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

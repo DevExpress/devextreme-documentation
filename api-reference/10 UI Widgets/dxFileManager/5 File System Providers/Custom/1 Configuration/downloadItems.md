@@ -1,10 +1,13 @@
 ---
 id: CustomFileSystemProvider.Options.downloadItems
-type: function()
+type: function(items)
 ---
 ---
 ##### shortDescription
 A function that downloads a file or folder.
+
+##### param(items): Array<FileSystemItem>
+<!-- Description goes here -->
 
 ---
 
@@ -15,7 +18,7 @@ A function that downloads a file or folder.
     <!--JavaScript-->
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileProvider: new DevExpress.fileProviders.Custom({ 
+            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 downloadItems: function(Array<FileManagerItem>) { 
                     // Your code goes here
                 }

@@ -1,12 +1,12 @@
 The **TreeView** raises the following selection-related events: 
 
-- [itemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/itemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#itemSelectionChanged')
+- [itemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/itemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#itemSelectionChanged')            
 Raised after a node's selection state changes.
 
-- [selectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectionChanged')
+- [selectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectionChanged')            
 Raised after the tree view's selection state changes.
 
-- [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectAllValueChanged')
+- [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Events/#selectAllValueChanged')          
 Raised after the "Select All" check box's state changes.
 
 You can handle these events with functions. Assign the handling functions to the [onItemSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/onItemSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#onItemSelectionChanged') and [onSelectAllValueChanged](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/onSelectAllValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#onSelectAllValueChanged') options when you configure the widget if they are going to remain unchanged at runtime.
@@ -64,44 +64,51 @@ You can handle these events with functions. Assign the handling functions to the
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            :dataSource='data'
-            showCheckBoxesMode="normal"
+            :data-source="data"
+            show-check-boxes-mode="normal"
             @item-selection-changed="onItemSelectionChanged"
             @selection-changed="onSelectionChanged"
-            @select-all-value-changed="onSelectAllValueChanged" />
+            @select-all-value-changed="onSelectAllValueChanged" 
+        />
     </template>
     <script>
-        import { DxTreeView } from 'devextreme-vue';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
-        const data = [ ... ];
+    const data = [ ... ];
 
-        export default {
-            components: {
-                DxTreeView,
-            },
-            data() {
-                return {
-                    data
-                };
-            },
-            methods: {
-                onItemSelectionChanged(e) {
-                    // Handler of the "itemSelectionChanged" event
-                }
-                onSelectionChanged(e) {
-                    // Handler of the "selectionChanged" event
-                }
-                onSelectAllValueChanged(e) {
-                    // Handler of the "selectAllValueChanged" event
-                }
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data
+            };
+        },
+        methods: {
+            onItemSelectionChanged(e) {
+                // Handler of the "itemSelectionChanged" event
             }
-        };
+            onSelectionChanged(e) {
+                // Handler of the "selectionChanged" event
+            }
+            onSelectAllValueChanged(e) {
+                // Handler of the "selectAllValueChanged" event                    
+            }
+        }
+    };
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import TreeView from 'devextreme-react/tree-view';
 
     const data = [ ... ];

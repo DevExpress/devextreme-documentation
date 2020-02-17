@@ -70,7 +70,7 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
             };
         },
         methods: {
-            onItemExpanded(e){
+            onItemExpanded(e) {
                 // Handler of the 'itemExpanded' event
             }
             onItemCollapsed(e){

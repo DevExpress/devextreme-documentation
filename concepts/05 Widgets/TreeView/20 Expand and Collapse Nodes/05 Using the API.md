@@ -96,6 +96,8 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
             constructor() {
                 super();
                 this.treeViewRef = React.createRef();
+                this.expandAllNodes = this.expandAllNodes.bind(this);
+                this.collapseAllNodes = this.collapseAllNodes.bind(this);                
             }
 
             render() {

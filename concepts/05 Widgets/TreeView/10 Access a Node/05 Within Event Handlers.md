@@ -67,7 +67,7 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
             };
         },
         methods: {
-            onItemClick(e){
+            onItemClick(e) {
                 const node = e.node;
                 // ...
             }

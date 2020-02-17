@@ -211,7 +211,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
             display-expr="name"
             parent-id-expr="parent"
             search-mode="startswith"
-            :search-enabled=true
+            :search-enabled="true"
             :search-expr="searchExpr"  
         />
     </template>

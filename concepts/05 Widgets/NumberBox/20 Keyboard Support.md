@@ -90,15 +90,15 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             }
         },
         computed: {
-            calendar: function() {
+            numberBox: function() {
                 return this.$refs[myNumberBoxRef].instance;
             }
         },
         mounted: function() {
-            this.calendar.registerKeyHandler("backspace", function(e) {
+            this.numberBox.registerKeyHandler("backspace", function(e) {
                 // The argument "e" contains information on the event
             });
-            this.calendar.registerKeyHandler("space", function(e) {
+            this.numberBox.registerKeyHandler("space", function(e) {
                 // ...
             });
         }

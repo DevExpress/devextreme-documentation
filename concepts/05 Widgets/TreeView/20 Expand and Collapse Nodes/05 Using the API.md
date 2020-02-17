@@ -229,7 +229,7 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Metho
                 );
             }
 
-            expandNode(key){
+            expandNode(key) {
                 this.treeView.expandItem(key);
             }
             

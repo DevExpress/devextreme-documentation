@@ -141,7 +141,6 @@ The following code adds a simple **TreeView** to your page:
         ]
     }];
 
-
     class App extends React.Component {
         render() {
             return (

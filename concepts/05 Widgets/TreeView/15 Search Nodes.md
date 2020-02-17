@@ -3,7 +3,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
 ---
 #####jQuery
 
-    <!--JavaScript-->    
+    <!--JavaScript-->
     var treeViewData = [
         { key: '1', name: 'Fruits' },
         { key: '1_1', name: 'Apples', count: 20, parent: '1' },
@@ -149,7 +149,6 @@ When a user types a string in the input field, the **TreeView** suggests all nod
 ---
 #####jQuery
 
-
     <!--JavaScript-->
     $(function() {
         $("#treeViewContainer").dxTreeView({
@@ -284,7 +283,6 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 
 ---
 #####jQuery
-
 
     <!--JavaScript-->
     $(function() {

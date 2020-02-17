@@ -279,7 +279,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tabs. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for nodes. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
 
     <!--JavaScript-->$(function() {
         $("#treeViewContainer").dxTreeView({
@@ -290,7 +290,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
         });
     });
 
-You can also customize individual tabs. In Angular, Vue, and React, declare them using the [dxItem](/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/) component. When using jQuery, you can declare the tabs as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/#template') option or assign a customization function straight to this option.
+You can also customize individual nodes. In Angular, Vue, and React, declare them using the [dxItem](/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/) component. When using jQuery, you can declare the nodes as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/#template') option or assign a customization function straight to this option.
 
 ---
 ##### Angular

@@ -18,9 +18,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: yes | cp -rf temp/DevExtreme.WebSite.ContentMapCreator.dll node_modules/devextreme-internal-tools/bin/DevExtreme.WebSite.ContentMapCreator.dll
-    - run: yes | cp -rf temp/DevExtreme.Infrastructure.dll node_modules/devextreme-internal-tools/bin/DevExtreme.Infrastructure.dll
-    - run: yes | cp -rf temp/DevExtreme.Topics.dll node_modules/devextreme-internal-tools/bin/DevExtreme.Topics.dll
+    - run: npm install devextreme-internal-tools-1.2.50.tgz
     - run: npm run generate-content-map
       env:
         CI: true

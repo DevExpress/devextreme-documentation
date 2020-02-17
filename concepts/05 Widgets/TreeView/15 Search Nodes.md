@@ -376,7 +376,8 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 
     export default {
         components: {
-            DxTreeView DxSearchEditorOptions
+            DxTreeView,
+            DxSearchEditorOptions
         },
         data() {
             return {

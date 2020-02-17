@@ -62,7 +62,6 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 ---
 ##### jQuery
 
-
     <!--JavaScript-->
     function registerKeyHandlers () {
         let treeView =  $("#treeViewContainer").dxTreeView("instance");

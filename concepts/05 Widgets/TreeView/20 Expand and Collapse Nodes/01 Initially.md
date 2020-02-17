@@ -3,7 +3,6 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
 ---
 ##### jQuery
 
-
     <!--JavaScript-->var hierarchicalData = [{
         name: 'Fruits',
         isExpanded: true,

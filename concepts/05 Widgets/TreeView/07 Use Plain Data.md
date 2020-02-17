@@ -3,7 +3,6 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
 ---
 ##### jQuery
 
-
     <!--JavaScript-->var plainData = [
         { id: '1', text: 'Fruits' },
         { id: '1_1', text: 'Apples', parentId: '1' },
@@ -121,7 +120,6 @@ As you can see, all items in a plain data source have the **id** and **text** fi
 
 ---
 ##### jQuery
-
 
     <!--JavaScript-->var plainData = [
         { key: '1', name: 'Fruits' },
@@ -251,7 +249,6 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
 ---
 ##### jQuery
-
 
     <!--JavaScript-->var plainData = [
         { name: 'Fruits' },

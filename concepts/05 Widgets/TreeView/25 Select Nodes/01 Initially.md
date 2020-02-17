@@ -3,8 +3,6 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
 ---
 ##### jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
-
     <!--JavaScript-->var hierarchicalData = [{
         name: 'Fruits',
         isSelected: true,

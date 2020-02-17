@@ -7,7 +7,6 @@ You can use the [expandAll()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Me
 
     ##### jQuery
 
-    
         <!--JavaScript-->$("#treeViewContainer").dxTreeView("expandAll");
         // $("#treeViewContainer").dxTreeView("collapseAll");
 

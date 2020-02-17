@@ -1,0 +1,14 @@
+{
+  "name": "devextreme-internal-tools",
+  "description": "DevExtreme internal tools",
+  "author": "Developer Express Inc.",
+  "version": "1.2.50",
+  "license": "MIT",
+  "bin": {
+    "dx-tools": "./index.js"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.3",
+    "typescript": "^2.9.2"
+  }
+}

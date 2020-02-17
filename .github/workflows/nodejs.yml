@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm install devextreme-internal-tools-1.2.50.tgz
+    - run: npm install temp
     - run: npm run generate-content-map
       env:
         CI: true

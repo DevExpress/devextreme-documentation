@@ -71,7 +71,7 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
             key-expr="key"
             display-expr="name"
             parent-id-expr="parent"
-            :search-enabled=true
+            :search-enabled="true"
             :search-expr="searchExpr"  
         />
     </template>

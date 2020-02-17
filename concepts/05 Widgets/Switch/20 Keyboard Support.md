@@ -44,12 +44,12 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name}>
-    </dx-{widget-name}>
+    <dx-switch>
+    </dx-switch>
 
     <!-- tab: app.component.ts -->
     import { Component, ViewChild, AfterViewInit } from '@angular/core';
-    import { Dx{WidgetName}Component } from 'devextreme-angular';
+    import { DxSwitchComponent } from 'devextreme-angular';
 
     @Component({
         selector: 'app-root',
@@ -57,9 +57,9 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         styleUrls: ['./app.component.css']
     })
     export class AppComponent implements AfterViewInit {
-        @ViewChild(Dx{WidgetName}Component, { static: false }) switch: Dx{WidgetName}Component
+        @ViewChild(DxSwitchComponent, { static: false }) switch: DxSwitchComponent
         // Prior to Angular 8
-        // @ViewChild(Dx{WidgetName}Component) switch: Dx{WidgetName}Component
+        // @ViewChild(DxSwitchComponent) switch: DxSwitchComponent
         ngAfterViewInit () {
             this.switch.instance.registerKeyHandler("backspace", function (e) {
                 // The argument "e" contains information on the event
@@ -75,7 +75,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxSwitchModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -83,7 +83,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxSwitchModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -94,28 +94,38 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} @initialized="registerKeyHandlers" />
+        <DxSwitch :ref="mySwitchRef" />
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+    import DxSwitch from 'devextreme-vue/switch';
+
+    const mySwitchRef = 'my-switch';
 
     export default {
         components: {
-            Dx{WidgetName}
+            DxSwitch
         },
-        methods: {
-            registerKeyHandlers({ component }) {
-                component.registerKeyHandler("backspace", function (e) {
-                    // The argument "e" contains information on the event
-                });
-                component.registerKeyHandler("space", function (e) {
-                    // ...
-                });
+        data() {
+            return {
+                mySwitchRef
             }
+        },
+        computed: {
+            switch: function() {
+                return this.$refs[mySwitchRef].instance;
+            }
+        },
+        mounted: function() {
+            this.switch.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.switch.registerKeyHandler("space", function(e) {
+                // ...
+            });
         }
     }
     </script>
@@ -128,20 +138,29 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import Switch from 'devextreme-react/switch';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.switchRef = React.createRef();
+        }
+
         render() {
             return (
-                <{WidgetName} onInitialized={this.registerKeyHandlers} />
+                <Switch ref={this.switchRef} />
             );
         }
 
-        registerKeyHandlers({ component }) {
-            component.registerKeyHandler("backspace", function (e) {
+        get switch() {
+            return this.switchRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.switch.registerKeyHandler("backspace", function (e) {
                 // The argument "e" contains information on the event
             });
-            component.registerKeyHandler("space", function (e) {
+            this.switch.registerKeyHandler("space", function (e) {
                 // ...
             });
         }

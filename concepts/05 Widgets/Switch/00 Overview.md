@@ -11,7 +11,7 @@ The following code adds the **Switch** to your page.
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#switchContainer").dxSwitch({
             value: true
         });
     });
@@ -19,8 +19,8 @@ The following code adds the **Switch** to your page.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} [value]="true">
-    </dx-{widget-name}>
+    <dx-switch [value]="true">
+    </dx-switch>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -37,7 +37,7 @@ The following code adds the **Switch** to your page.
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxSwitchModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -45,7 +45,7 @@ The following code adds the **Switch** to your page.
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxSwitchModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -56,18 +56,18 @@ The following code adds the **Switch** to your page.
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} :value="true" />
+        <DxSwitch :value="true" />
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+    import DxSwitch from 'devextreme-vue/switch';
 
     export default {
         components: {
-            Dx{WidgetName}
+            DxSwitch
         }
     }
     </script>
@@ -80,12 +80,12 @@ The following code adds the **Switch** to your page.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import Switch from 'devextreme-react/switch';
 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} defaultValue={true} />
+                <Switch defaultValue={true} />
             );
         }
     }

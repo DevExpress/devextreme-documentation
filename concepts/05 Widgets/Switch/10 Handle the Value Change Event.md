@@ -5,7 +5,7 @@ To process a new **Switch** value, you need to handle the value change event. If
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#switchContainer").dxSwitch({
              onValueChanged: function (e) {
                 var previousValue = e.previousValue;
                 var newValue = e.value;
@@ -17,8 +17,8 @@ To process a new **Switch** value, you need to handle the value change event. If
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} (onValueChanged)="switchValueChanged($event)">
-    </dx-{widget-name}>
+    <dx-switch (onValueChanged)="switchValueChanged($event)">
+    </dx-switch>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -39,7 +39,7 @@ To process a new **Switch** value, you need to handle the value change event. If
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxSwitchModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -47,7 +47,7 @@ To process a new **Switch** value, you need to handle the value change event. If
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxSwitchModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -58,18 +58,18 @@ To process a new **Switch** value, you need to handle the value change event. If
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} @value-сhanged="switchValueChanged" />
+        <DxSwitch @value-сhanged="switchValueChanged" />
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+    import DxSwitch from 'devextreme-vue/switch';
 
     export default {
         components: {
-            Dx{WidgetName}
+            DxSwitch
         },
         methods: {
             switchValueChanged({ previousValue, value: newValue }) {
@@ -87,12 +87,12 @@ To process a new **Switch** value, you need to handle the value change event. If
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import Switch from 'devextreme-react/switch';
 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} onValueChanged={this.switchValueChanged} />
+                <Switch onValueChanged={this.switchValueChanged} />
             );
         }
 

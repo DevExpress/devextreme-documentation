@@ -164,7 +164,7 @@ To select several nodes simultaneously, set the [showCheckBoxesMode](/api-refere
             return (
                 <TreeView
                     dataSource={data} 
-                    showCheckBoxesMode="normal" /> // or 'selectAll'
+                    showCheckBoxesMode="normal" /> {/* or 'selectAll' */}
             );
         }
     }

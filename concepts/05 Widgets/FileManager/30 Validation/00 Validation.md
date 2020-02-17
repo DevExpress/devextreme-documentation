@@ -1,0 +1,1 @@
+[tags]fileManager, file manager, validation, permissions, upload files, manage files

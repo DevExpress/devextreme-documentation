@@ -101,6 +101,94 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            :ref="treeViewRef"        
+            :data-source="data" 
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+    const treeViewRef = 'treeView';
+    
+    const data = [...];
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                data,
+                treeViewRef
+            };
+        },
+        computed: {
+            treeView: function() {
+                return this.$refs[treeViewRef].instance;
+            }
+        },   
+        mounted: function() {
+            this.treeView.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });                    
+
+            this.treeView.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeView from 'devextreme-react/tree-view';
+
+    const data = [...];
+
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.treeViewRef = React.createRef();
+        }
+
+        get treeView() {
+            return this.treeViewRef.current.instance;
+        }        
+        render() {
+            return (
+                <TreeView
+                    ref={this.treeViewRef}
+                    dataSource={data}
+                    onInitialized={this.onInitialized} />
+            );
+        }
+
+        componentDidMount() {
+            this.treeView.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });                    
+            this.treeView.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

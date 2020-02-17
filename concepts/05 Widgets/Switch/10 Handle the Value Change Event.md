@@ -6,7 +6,7 @@ To process a new **Switch** value, you need to handle the value change event. If
     <!-- tab: index.js -->
     $(function() {
         $("#switchContainer").dxSwitch({
-             onValueChanged: function (e) {
+            onValueChanged: function (e) {
                 var previousValue = e.previousValue;
                 var newValue = e.value;
                 // Event handling commands go here

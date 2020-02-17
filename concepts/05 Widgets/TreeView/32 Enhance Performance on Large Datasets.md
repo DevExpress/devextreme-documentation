@@ -67,7 +67,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
             data-structure="plain"
             :data-source="plainData"
             :virtual-mode-enabled="true"
-            :root-value=-1 
+            :root-value="-1"
         />
     </template>
     <script>

@@ -73,7 +73,7 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
             onItemExpanded(e) {
                 // Handler of the 'itemExpanded' event
             }
-            onItemCollapsed(e){
+            onItemCollapsed(e) {
                 // Handler of the 'itemCollapsed' event
             }
         }

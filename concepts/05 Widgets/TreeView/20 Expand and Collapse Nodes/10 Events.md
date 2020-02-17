@@ -3,7 +3,6 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
 ---
 ##### jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$(function() {
         $("#treeViewContainer").dxTreeView({

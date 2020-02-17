@@ -3,7 +3,6 @@ To select or cancel the selection of a node programmatically, call the [selectIt
 ---
 ##### jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$("#treeViewContainer").dxTreeView("selectItem", nodeKey);
     // $("#treeViewContainer").dxTreeView("unselectItem", nodeKey);
@@ -126,7 +125,6 @@ To select or cancel the selection of all nodes programmatically, call the [selec
 ---
 ##### jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$("#treeViewContainer").dxTreeView("selectAll");
     // $("#treeViewContainer").dxTreeView("unselectAll");

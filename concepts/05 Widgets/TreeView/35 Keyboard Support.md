@@ -62,7 +62,6 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 ---
 ##### jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->
     function registerKeyHandlers () {

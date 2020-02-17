@@ -3,7 +3,6 @@ Usually, you need to access a **TreeView** node when an action was made on it, f
 ---
 ##### jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->$(function() {
         $("#treeViewContainer").dxTreeView({

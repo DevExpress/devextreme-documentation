@@ -3,7 +3,6 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
 ---
 #####jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->    
     var treeViewData = [
@@ -151,7 +150,6 @@ When a user types a string in the input field, the **TreeView** suggests all nod
 ---
 #####jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->
     $(function() {
@@ -287,7 +285,6 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 ---
 #####jQuery
 
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->
     $(function() {

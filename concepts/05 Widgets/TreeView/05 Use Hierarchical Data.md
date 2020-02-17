@@ -24,7 +24,6 @@ As you can see, all items in a hierarchical data source have the **id** and **te
 
 ---
 ##### jQuery
-    <!--HTML--><div id="treeViewContainer"></div>
 
     <!--JavaScript-->var hierarchicalData = [{
         key: '1',
@@ -179,7 +178,6 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
 ---
 ##### jQuery
-    <!--HTML--><div id="treeViewContainer"></div>
     
     <!--JavaScript-->var hierarchicalData = [{
         name: 'Fruits',

@@ -59,7 +59,7 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
             return {
                 date: new Date(),
                 minDate: new Date(2000, 1, 1),
-                maxDate: Date = new Date(2020, 12, 31)
+                maxDate: new Date(2020, 12, 31)
             }
         }
     }

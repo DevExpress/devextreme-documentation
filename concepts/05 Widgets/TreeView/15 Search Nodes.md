@@ -395,7 +395,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {TreeView, SearchEditorOptions} from 'devextreme-react/tree-view';
+    import { TreeView, SearchEditorOptions } from 'devextreme-react/tree-view';
 
     const treeViewData = [
         { key: '1', name: 'Fruits' },

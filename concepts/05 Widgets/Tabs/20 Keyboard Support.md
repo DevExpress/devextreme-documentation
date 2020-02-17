@@ -88,6 +88,9 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             :ref="myTabsRef" />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
 
     const myTabsRef = "my-tabs";
@@ -121,6 +124,9 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
     import { Tabs } from 'devextreme-react/tabs';
 
     class App extends React.Component {

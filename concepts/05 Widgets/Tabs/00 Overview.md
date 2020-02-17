@@ -53,6 +53,9 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
             :items="tabs" />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
 
     export default {
@@ -75,6 +78,9 @@ The following code adds the **Tabs** widget to your page. One of the tabs has an
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { Tabs } from 'devextreme-react/tabs';
 
     const tabs = [

@@ -190,12 +190,26 @@ If you need a tab to be preselected or to select it programmatically, pass its i
     ];
 
     class App extends React.Component {
+        constructor() {
+            this.state = {
+                selectedIndex: 1
+            }
+        }
+
+        handleOptionChange = (e) => {
+            if(e.fullName === 'selectedIndex') {
+                this.setState({
+                    selectedIndex: e.value
+                });
+            }
+        }
 
         render() {
             return (
                 <Tabs
                     items={tabs}
-                    selectedIndex={1}
+                    selectedIndex={this.state.selectedIndex}
+                    onOptionChanged={this.handleOptionChange}
                 />
             );
         }
@@ -324,7 +338,7 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
             return (
                 <Tabs
                     items={tabs}
-                    selectionMode="multiple",
+                    selectionMode="multiple"
                     selectedItems={this.state.selectedItems}
                     onOptionChanged={this.handleOptionChange}
                 />

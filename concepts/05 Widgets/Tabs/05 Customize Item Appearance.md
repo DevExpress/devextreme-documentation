@@ -47,6 +47,9 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
             :items="tabs" />
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs from "devextreme-vue/tabs";
 
     export default {
@@ -69,6 +72,9 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { Tabs } from 'devextreme-react/tabs';
 
     const tabs = [
@@ -261,6 +267,9 @@ You can also customize individual tabs. In Angular, Vue, and React, declare them
         </DxTabs>
     </template>
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxTabs, { DxItem } from "devextreme-vue/tabs";
 
     export default {
@@ -275,6 +284,9 @@ You can also customize individual tabs. In Angular, Vue, and React, declare them
 
     <!--tab: App.js-->
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { Tabs, Item } from 'devextreme-react/tabs';
 
     class App extends React.Component {

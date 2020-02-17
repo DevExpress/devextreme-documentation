@@ -93,7 +93,7 @@ You can handle these events with functions. Assign the handling functions to the
             onItemSelectionChanged(e) {
                 // Handler of the "itemSelectionChanged" event
             }
-            onSelectionChanged(e){
+            onSelectionChanged(e) {
                 // Handler of the "selectionChanged" event
             }
             onSelectAllValueChanged(e) {

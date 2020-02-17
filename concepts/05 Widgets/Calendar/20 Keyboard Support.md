@@ -77,7 +77,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     <!-- tab: App.vue -->
     <template>
-        <DxCalendar @initialized="registerKeyHandlers" />
+        <DxCalendar :ref="myCalendarRef" />
     </template>
 
     <script>
@@ -86,19 +86,29 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     import DxCalendar from 'devextreme-vue/calendar';
 
+    const myCalendarRef = 'my-calendar';
+
     export default {
         components: {
             DxCalendar
         },
-        methods: {
-            registerKeyHandlers: function({ component }) {
-                component.registerKeyHandler("backspace", function (e) {
-                    // The argument "e" contains information on the event
-                });
-                component.registerKeyHandler("space", function (e) {
-                    // ...
-                });
+        data() {
+            return {
+                myCalendarRef
             }
+        },
+        computed: {
+            calendar: function() {
+                return this.$refs[myCalendarRef].instance;
+            }
+        },
+        mounted: function() {
+            this.calendar.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.calendar.registerKeyHandler("space", function(e) {
+                // ...
+            });
         }
     }
     </script>
@@ -114,17 +124,26 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     import Calendar from 'devextreme-react/calendar';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.calendarRef = React.createRef();
+        }
+
         render() {
             return (
-                <Calendar onInitialized={this.registerKeyHandlers} />
+                <Calendar ref={this.calendarRef} />
             );
         }
 
-        registerKeyHandlers({ component }) {
-            component.registerKeyHandler("backspace", function (e) {
+        get calendar() {
+            return this.calendarRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.calendar.registerKeyHandler("backspace", function (e) {
                 // The argument "e" contains information on the event
             });
-            component.registerKeyHandler("space", function (e) {
+            this.calendar.registerKeyHandler("space", function (e) {
                 // ...
             });
         }

@@ -245,7 +245,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
         }
 
         createChildren(parent) {
-            let parentId = parent ? parent.itemData.id : '';
+            const parentId = parent ? parent.itemData.id : '';
 
             return fetch(`https://mydomain.com/MyDataService?parentId=${parentId}`)
                 .then(response => response.json())

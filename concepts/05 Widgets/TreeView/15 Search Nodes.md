@@ -3,7 +3,6 @@ Searching is disabled in the **TreeView** widget by default. Assign **true** to 
 ---
 #####jQuery
 
-
     <!--JavaScript-->    
     var treeViewData = [
         { key: '1', name: 'Fruits' },

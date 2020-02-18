@@ -17,7 +17,9 @@ To process a new **Switch** value, you need to handle the value change event. If
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-switch (onValueChanged)="switchValueChanged($event)">
+    <dx-switch
+        [(value)]="switchValue"
+        (onValueChanged)="switchValueChanged($event)">
     </dx-switch>
 
     <!-- tab: app.component.ts -->
@@ -29,7 +31,11 @@ To process a new **Switch** value, you need to handle the value change event. If
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        switchValueChanged({ previousValue, value: newValue }) {
+        switchValue: boolean = true;
+
+        switchValueChanged(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -58,7 +64,10 @@ To process a new **Switch** value, you need to handle the value change event. If
 
     <!-- tab: App.vue -->
     <template>
-        <DxSwitch @value-сhanged="switchValueChanged" />
+        <DxSwitch
+            v-model="switchValue"
+            @value-сhanged="switchValueChanged"
+        />
     </template>
 
     <script>
@@ -71,8 +80,13 @@ To process a new **Switch** value, you need to handle the value change event. If
         components: {
             DxSwitch
         },
+        data() {
+            switchValue: true
+        },
         methods: {
-            switchValueChanged({ previousValue, value: newValue }) {
+            switchValueChanged(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         }
@@ -90,14 +104,29 @@ To process a new **Switch** value, you need to handle the value change event. If
     import Switch from 'devextreme-react/switch';
 
     class App extends React.Component {
+        constructor() {
+            super();
+
+            this.state = {
+                switchValue: true
+            };
+
+            this.switchValueChanged = this.switchValueChanged.bind(this);
+        }
+
         render() {
             return (
-                <Switch onValueChanged={this.switchValueChanged} />
+                <Switch
+                    value={this.switchValue}
+                    onValueChanged={this.switchValueChanged} />
             );
         }
 
-        switchValueChanged({ previousValue, value: newValue }) {
+        switchValueChanged(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
+            this.setState({ switchValue: newValue });
         }
     }
     export default App;

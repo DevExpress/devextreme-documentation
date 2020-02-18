@@ -18,7 +18,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName").dx{WidgetName}({
+        $("#{widgetName}").dx{WidgetName}({
             annotations: [{
                 type: "text",
                 text: "Annotation text"
@@ -136,7 +136,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
 ---
 
-Annotations can be unattached or anchored to a PolarChart element. The following list shows how to position them. PolarChart coordinates ([argument](/api-reference/_hidden/dxChartCommonAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument'), [value](/api-reference/_hidden/dxChartCommonAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value'), [axis](/api-reference/_hidden/dxChartCommonAnnotationConfig/axis.md '{basewidgetpath}/Configuration/annotations/#axis'), [series](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/series.md '{basewidgetpath}/Configuration/annotations/#series')), [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle') and [radius](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/radius.md '{basewidgetpath}/Configuration/annotations/#radius') specify the element that the annotation's arrow points to; pixel coordinates ([x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') and [y](/api-reference/_hidden/dxChartCommonAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')) specify the position of the annotation's center.
+Annotations can be unattached or anchored to a PolarChart element. The following list shows how to position them. PolarChart coordinates ([argument](/api-reference/_hidden/dxChartCommonAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument'), [value](/api-reference/_hidden/dxChartCommonAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value'), [series](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/series.md '{basewidgetpath}/Configuration/annotations/#series')), [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle') and [radius](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/radius.md '{basewidgetpath}/Configuration/annotations/#radius') specify the element that the annotation's arrow points to; pixel coordinates ([x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') and [y](/api-reference/_hidden/dxChartCommonAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')) specify the position of the annotation's center.
 
 - **Unanchored annotation**
 

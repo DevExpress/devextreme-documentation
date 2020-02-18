@@ -19,7 +19,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: index.js -->
     $(function() {
-        $("#chartContainer}").dxChart({
+        $("#chartContainer").dxChart({
             annotations: [{
                 type: "text",
                 text: "Annotation text"

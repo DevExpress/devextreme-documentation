@@ -30,9 +30,11 @@ Model data. Available only if Knockout is used.
 You can use this function with the [onExported](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExported.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExported') function to adjust columns before export. In the following code, these functions are used to export a hidden `ID` column:
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#dataGridContainer").dxDataGrid({
             // ...
             columns: [{
@@ -50,7 +52,6 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
             }
         });
     });
-
 
 ##### Angular
 
@@ -75,12 +76,85 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
         // ...
     })
 
-    <!--HTML--><dx-data-grid ...
+    <!--HTML-->
+    <dx-data-grid ...
         (onExporting)="onExporting($event)"
         (onExported)="onExported($event)">
         <!-- ... -->
         <dxi-column dataField="ID" [visible]="false"></dxi-column>
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @exporting="onExporting"
+            @exported="onExported"
+        >
+            <DxColumn
+            data-field="ID"
+            :visible="false"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        methods: {
+            onExporting(e) {
+                e.component.beginUpdate();
+                e.component.columnOption('ID', 'visible', true);
+            },
+            onExported(e) {
+                e.component.columnOption('ID', 'visible', false);
+                e.component.endUpdate();
+            }
+        }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... 
+                    onExporting="onExporting"
+                    onExported="onExported">
+                    <DxColumn dataField="ID" visible={false} />    
+                </DataGrid>
+            );
+        }
+    }
+
+    onExporting(e) {
+        e.component.beginUpdate();
+        e.component.columnOption('ID', 'visible', true);
+    }
+
+    onExported(e) {
+        e.component.columnOption('ID', 'visible', false);
+        e.component.endUpdate();
+    }
+
+    export default App;
 
 ---
 

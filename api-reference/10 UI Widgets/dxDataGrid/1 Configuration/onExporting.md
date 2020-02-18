@@ -138,7 +138,7 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
                 <DataGrid ... 
                     onExporting={this.onExporting}
                     onExported={this.onExported}>
-                    <DxColumn dataField="ID" visible={false} />    
+                    <Column dataField="ID" visible={false} />    
                 </DataGrid>
             );
         }

@@ -67,6 +67,13 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     import DxScheduler from 'devextreme-vue/scheduler';
     import * as AspNetData from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
+    const dataSource = AspNetData.createStore({
+        key: "ID",
+        loadUrl: serviceUrl,
+        insertUrl: serviceUrl,
+        updateUrl: serviceUrl,
+        deleteUrl: serviceUrl
+    });
 
     export default {
         components: {
@@ -74,13 +81,7 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
         },
         data() {
             return {
-                dataSource: AspNetData.createStore({
-                    key: "ID",
-                    loadUrl: serviceUrl,
-                    insertUrl: serviceUrl,
-                    updateUrl: serviceUrl,
-                    deleteUrl: serviceUrl
-                }),
+                dataSource,
                 // ...
             }
         }
@@ -98,18 +99,19 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     import Scheduler from 'devextreme-react/scheduler';
     import * as AspNetData from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
+    const dataSource = AspNetData.createStore({
+        key: "ID",
+        loadUrl: serviceUrl,
+        insertUrl: serviceUrl,
+        updateUrl: serviceUrl,
+        deleteUrl: serviceUrl
+    });
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={AspNetData.createStore({
-                        key: "ID",
-                        loadUrl: serviceUrl,
-                        insertUrl: serviceUrl,
-                        updateUrl: serviceUrl,
-                        deleteUrl: serviceUrl
-                    })},
+                    dataSource={dataSource},
                     // ...
                 />
             });

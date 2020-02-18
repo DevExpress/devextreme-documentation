@@ -57,18 +57,20 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     import DxScheduler from 'devextreme-vue/scheduler';
     import ODataStore from 'devextreme/data/odata/store';
 
+    const dataSource = new ODataStore({
+        url: "http://url/to/odata/service"
+        onLoaded: function () {
+            // Event handling commands go here
+        }
+    });
+
     export default {
         components: {
             DxScheduler
         },
         data() {
             return {
-                dataSource: new ODataStore({
-                    url: "http://url/to/odata/service"
-                    onLoaded: function () {
-                        // Event handling commands go here
-                    }
-                })
+                dataSource
             }
         }
     }
@@ -85,16 +87,18 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     import Scheduler from 'devextreme-react/scheduler';
     import ODataStore from 'devextreme/data/odata/store';
 
+    const dataSource = new ODataStore({
+        url: "http://url/to/odata/service"
+        onLoaded: function () {
+            // Event handling commands go here
+        }
+    });
+
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={ODataStore({
-                        url: "http://url/to/odata/service"
-                        onLoaded: function () {
-                            // Event handling commands go here
-                        }
-                    })}
+                    dataSource={dataSource}
                 />
             });
         }
@@ -167,20 +171,22 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     import DxScheduler from 'devextreme-vue/scheduler';
     import DataSource from 'devextreme/data/data_source';
 
+    const data = new DataSource({
+        store: {
+            type: "odata",
+            url: "http://url/to/odata/service"
+        },
+        filter: ["Not_Assigned", "=", true],
+        paginate: false
+    });
+
     export default {
         components: {
             DxScheduler
         },
         data() {
             return {
-                dataSource: new DataSource({
-                    store: {
-                        type: "odata",
-                        url: "http://url/to/odata/service"
-                    },
-                    filter: ["Not_Assigned", "=", true],
-                    paginate: false
-                })
+                dataSource: data
             }
         }
     }
@@ -197,18 +203,20 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     import Scheduler from 'devextreme-react/scheduler';
     import DataSource from 'devextreme/data/data_source';
 
+    const data = new DataSource({
+        store: {
+            type: "odata",
+            url: "http://url/to/odata/service"
+        },
+        filter: ["Not_Assigned", "=", true],
+        paginate: false
+    });
+
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={new DataSource({
-                        store: {
-                            type: "odata",
-                            url: "http://url/to/odata/service"
-                        },
-                        filter: ["Not_Assigned", "=", true],
-                        paginate: false
-                    })}
+                    dataSource={data}
                 />
             });
         }

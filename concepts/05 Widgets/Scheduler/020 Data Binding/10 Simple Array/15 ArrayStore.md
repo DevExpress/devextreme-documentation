@@ -57,8 +57,14 @@ If you want to extend the functionality of a JavaScript array, place it into the
 
     import DxScheduler from 'devextreme-vue/scheduler';
     import ArrayStore from 'devextreme/data/array_store';
-
+    
     const appointments = [ /* ... */ ];
+    const dataSource = new ArrayStore({
+        data: appointments,
+        onLoaded: function () {
+            // Event handling commands go here
+        }
+    });
 
     export default {
         components: {
@@ -66,12 +72,7 @@ If you want to extend the functionality of a JavaScript array, place it into the
         },
         data() {
             return {
-                dataSource: new ArrayStore({
-                    data: appointments,
-                    onLoaded: function () {
-                        // Event handling commands go here
-                    }
-                })
+                dataSource 
             }
         }
     }
@@ -89,17 +90,18 @@ If you want to extend the functionality of a JavaScript array, place it into the
     import ArrayStore from 'devextreme/data/array_store';
 
     const appointments = [ /* ... */ ];
+    const dataSource = new ArrayStore({
+        data: appointments,
+        onLoaded: function () {
+            // Event handling commands go here
+        }
+    });
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={new ArrayStore({
-                        data: appointments,
-                        onLoaded: function () {
-                            // Event handling commands go here
-                        }
-                    })}
+                    dataSource={dataSource}
                 />
             );
         }
@@ -202,6 +204,17 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     }, 
     // ...
     ];
+    const dataSource = new DevExpress.data.DataSource({
+        store: appointments,
+        map: function (item) {
+            return {
+                text: item.employee + " : " + item.desc,
+                startDate: item.from,
+                endDate: item.to
+            }   
+        },
+        paginate: false
+    });
 
     export default {
         components: {
@@ -209,17 +222,7 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
         },
         data() {
             return {
-                dataSource: new DevExpress.data.DataSource({
-                    store: appointments,
-                    map: function (item) {
-                        return {
-                            text: item.employee + " : " + item.desc,
-                            startDate: item.from,
-                            endDate: item.to
-                        }   
-                    },
-                    paginate: false
-                })
+                dataSource
             }
         }
     }
@@ -243,22 +246,23 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     }, 
     // ...
     ];
+    const dataSource = new DevExpress.data.DataSource({
+        store: appointments,
+        map: function (item) {
+            return {
+                text: item.employee + " : " + item.desc,
+                startDate: item.from,
+                endDate: item.to
+            }   
+        },
+        paginate: false
+    });
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={new DevExpress.data.DataSource({
-                        store: appointments,
-                        map: function (item) {
-                            return {
-                                text: item.employee + " : " + item.desc,
-                                startDate: item.from,
-                                endDate: item.to
-                            }   
-                        },
-                        paginate: false
-                    })}
+                    dataSource={dataSource}
                 />
             );
         }

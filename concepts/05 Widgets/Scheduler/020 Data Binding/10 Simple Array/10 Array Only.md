@@ -75,15 +75,15 @@ To bind the **Scheduler** to an array, pass this array to the [dataSource](/api-
             return {
                 currentDate: new Date(2016, 4, 25),
                 appointments: [{ 
-                  text: 'Meet with a customer', 
-                  startDate: new Date(2016, 4, 25, 1, 30),
-                  endDate: new Date(2016, 4, 25, 3, 30)
-              }, { 
-                  text: 'Discuss results', 
-                  startDate: new Date(2016, 4, 25, 9, 0),
-                  endDate: new Date(2016, 4, 25, 10, 0)
-              }, // ...
-              ];
+                    text: 'Meet with a customer', 
+                    startDate: new Date(2016, 4, 25, 1, 30),
+                    endDate: new Date(2016, 4, 25, 3, 30)
+                }, { 
+                    text: 'Discuss results', 
+                    startDate: new Date(2016, 4, 25, 9, 0),
+                    endDate: new Date(2016, 4, 25, 10, 0)
+                }, // ...
+                ];
             }
         }
     }
@@ -205,6 +205,7 @@ If objects in the array need to be processed (for example, filtered), you can cr
     }, 
     // ...
     ];
+    const dataSource = Query(appointments).filter("text", "contains", "meet").toArray();
 
     export default {
         components: {
@@ -213,7 +214,7 @@ If objects in the array need to be processed (for example, filtered), you can cr
         data() {
             return {
                 currentDate: new Date(2016, 4, 10),
-                dataSource: Query(appointments).filter("text", "contains", "meet").toArray();
+                dataSource
             }
         }
     }
@@ -237,12 +238,13 @@ If objects in the array need to be processed (for example, filtered), you can cr
     }, 
     // ...
     ];
+    const dataSource = Query(appointments).filter("text", "contains", "meet").toArray();
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={Query(appointments).filter("text", "contains", "meet").toArray()}
+                    dataSource={dataSource}
                     defaultCurrentDate={new Date(2016, 4, 10)} />
             );
         }

@@ -67,6 +67,13 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
     import DxScheduler from 'devextreme-vue/scheduler';
     import * as AspNetData from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
+    const dataSource = AspNetData.createStore({
+        key: "ID",
+        loadUrl: serviceUrl + "/GetAction",
+        insertUrl: serviceUrl + "/InsertAction",
+        updateUrl: serviceUrl + "/UpdateAction",
+        deleteUrl: serviceUrl + "/DeleteAction"
+    });
 
     export default {
         components: {
@@ -74,13 +81,7 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
         },
         data() {
             return {
-                dataSource: AspNetData.createStore({
-                    key: "ID",
-                    loadUrl: serviceUrl + "/GetAction",
-                    insertUrl: serviceUrl + "/InsertAction",
-                    updateUrl: serviceUrl + "/UpdateAction",
-                    deleteUrl: serviceUrl + "/DeleteAction"
-                }),
+                dataSource,
                 // ...
             }
         }
@@ -98,18 +99,19 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
     import Scheduler from 'devextreme-react/scheduler';
     import * as AspNetData from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
+    const dataSource = AspNetData.createStore({
+        key: "ID",
+        loadUrl: serviceUrl + "/GetAction",
+        insertUrl: serviceUrl + "/InsertAction",
+        updateUrl: serviceUrl + "/UpdateAction",
+        deleteUrl: serviceUrl + "/DeleteAction"
+    });
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={AspNetData.createStore({
-                        key: "ID",
-                        loadUrl: serviceUrl + "/GetAction",
-                        insertUrl: serviceUrl + "/InsertAction",
-                        updateUrl: serviceUrl + "/UpdateAction",
-                        deleteUrl: serviceUrl + "/DeleteAction"
-                    })},
+                    dataSource={dataSource},
                     // ...
                 />
             });

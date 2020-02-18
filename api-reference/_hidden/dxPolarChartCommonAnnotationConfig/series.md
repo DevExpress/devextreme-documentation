@@ -15,17 +15,11 @@ For example, the following **PolarChart** fragment displays two series and an an
         type: "text",
         text: "Text annotation",
         argument: "B",
-        //series: "Series 1"
+        // series: "Series 1"
     }]    
 
-<div style="display:flex; flex-direction:row">
-    <figure>
-        <img src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-unanchored-with-caption.png" alt="Polar chart annotation anchored to an argument">
-    </figure> 
-    <figure>
-        <img src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-anchored-with-caption.png" alt="Polar chart annotation anchored to a series point">
-    </figure>
-</div>
+
+<img style="margin-right:50px" src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-unanchored-with-caption.png" alt="Polar chart annotation anchored to an argument"> <img  src="/Content/images/doc/20_1/ChartJS/annotations/polar-chart-annotation-anchored-with-caption.png" alt="Polar chart annotation anchored to a series point">
 
 #####See Also#####
 - [x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') | [y](/api-reference/_hidden/dxChartCommonAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')

@@ -6,7 +6,7 @@ Follow the steps below to implement custom file system provider in the widget.
 
 1. Assign the [Custom](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/') file system provider to the [fileSystemProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileSystemProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider') option to implement a custom file system provider and bind the **FileManager** widget to it.
 
-2. Use the [getItems](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom/1%20Configuration/getItems.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/Configuration/#getItems') option to get file system items. The **[fieldName]Expr** options specify the attribute names that store file system item keys, names, sizes, modification dates, and etc.
+2. Use the [getItems](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom/1%20Configuration/getItems.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/Configuration/#getItems') function to get file system items. The **[fieldName]Expr** options specify the attribute names that store file system item keys, names, sizes, modification dates, and etc.
 
 3. Implement APIs to handle file operations (add, delete, rename, and etc).
 
@@ -66,17 +66,17 @@ Follow the steps below to implement custom file system provider in the widget.
                 deleteItem                
             });
         }
-        function getItems(pathInfo) {
-            // ...
-        }
-        function createDirectory(parentDirectory, name) {
-            // ...
-        } 
-        function deleteItem(item) {
-            // ...
-        }                 
     }
-    
+    function getItems(pathInfo) {
+        // ...
+    }
+    function createDirectory(parentDirectory, name) {
+        // ...
+    } 
+    function deleteItem(item) {
+        // ...
+    }
+
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule} from '@angular/core';

@@ -99,6 +99,7 @@ To process a new **NumberBox** value, you need to handle the value change event.
 
     <!--HTML-->
     <dx-number-box ...
+        [(value)]="numberBox_value"
         (onValueChanged)="numberBox_valueChanged($event)">
     </dx-number-box>
 
@@ -106,6 +107,8 @@ To process a new **NumberBox** value, you need to handle the value change event.
     import { DxNumberBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        numberBox_value: number = 10;
+
         numberBox_valueChanged (e) {
             const previousValue = e.previousValue;
             const newValue = e.value;

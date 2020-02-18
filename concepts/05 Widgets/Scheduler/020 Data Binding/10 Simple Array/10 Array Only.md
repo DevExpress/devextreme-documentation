@@ -115,7 +115,8 @@ To bind the **Scheduler** to an array, pass this array to the [dataSource](/api-
             return (
                 <Scheduler
                     dataSource={appointments}
-                    defaultCurrentDate={new Date(2016, 4, 25)} />
+                    defaultCurrentDate={new Date(2016, 4, 25)} 
+                />
             );
         }
     }
@@ -245,7 +246,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
             return (
                 <Scheduler
                     dataSource={dataSource}
-                    defaultCurrentDate={new Date(2016, 4, 10)} />
+                    defaultCurrentDate={new Date(2016, 4, 10)} 
+                />
             );
         }
     }

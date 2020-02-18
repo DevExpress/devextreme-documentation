@@ -136,22 +136,22 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
         render() {
             return (
                 <DataGrid ... 
-                    onExporting="onExporting"
-                    onExported="onExported">
+                    onExporting={this.onExporting}
+                    onExported={this.onExported}>
                     <DxColumn dataField="ID" visible={false} />    
                 </DataGrid>
             );
         }
-    }
 
-    onExporting(e) {
-        e.component.beginUpdate();
-        e.component.columnOption('ID', 'visible', true);
-    }
+        onExporting(e) {
+            e.component.beginUpdate();
+            e.component.columnOption('ID', 'visible', true);
+        }
 
-    onExported(e) {
-        e.component.columnOption('ID', 'visible', false);
-        e.component.endUpdate();
+        onExported(e) {
+            e.component.columnOption('ID', 'visible', false);
+            e.component.endUpdate();
+        }
     }
 
     export default App;

@@ -44,7 +44,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             // ...
         });
     }
-    
+
 
 ##### Angular
 
@@ -72,6 +72,83 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar :ref="myCalendarRef" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    const myCalendarRef = 'my-calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        },
+        data() {
+            return {
+                myCalendarRef
+            }
+        },
+        computed: {
+            calendar: function() {
+                return this.$refs[myCalendarRef].instance;
+            }
+        },
+        mounted: function() {
+            this.calendar.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.calendar.registerKeyHandler("space", function(e) {
+                // ...
+            });
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.calendarRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <Calendar ref={this.calendarRef} />
+            );
+        }
+
+        get calendar() {
+            return this.calendarRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.calendar.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            this.calendar.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+    export default App;
 
 ---
 

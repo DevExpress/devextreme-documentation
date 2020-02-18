@@ -41,7 +41,10 @@ To process a new calendar value, you need to handle the value change event. If t
 
     <!-- tab: App.vue -->
     <template>
-        <DxCalendar @value-changed="calendarValueChanged" />
+        <DxCalendar
+            v-model="calendarValue"
+            @value-changed="calendarValueChanged"
+        />
     </template>
 
     <script>
@@ -53,6 +56,9 @@ To process a new calendar value, you need to handle the value change event. If t
     export default {
         components: {
             DxCalendar
+        },
+        data() {
+            calendarValue: new Date()
         },
         methods: {
             calendarValueChanged: function({ previousValue, value: newValue }) {
@@ -73,14 +79,27 @@ To process a new calendar value, you need to handle the value change event. If t
     import Calendar from 'devextreme-react/calendar';
 
     class App extends React.Component {
+        constructor() {
+            this.super();
+
+            this.state = {
+                calendarValue: new Date()
+            };
+
+            this.calendarValueChanged = this.calendarValueChanged.bind(this);
+        }
+
         render() {
             return (
-                <Calendar onValueChanged={this.calendarValueChanged} />
+                <Calendar
+                    value={this.state.calendarValue}
+                    onValueChanged={this.calendarValueChanged} />
             );
         }
 
-        calendarValueChanged({ previousValue, value: newValue }) {
+        calendarValueChanged({ previousValue, value }) {
             // Event handling commands go here
+            this.setState({ value });
         }
     }
     export default App;

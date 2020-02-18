@@ -31,6 +31,45 @@ To specify which calendar view (month, year, decade or century) should be displa
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar zoom-level="year" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar zoomLevel="year" />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/maxZoomLevel.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#maxZoomLevel') and [minZoomLevel](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/minZoomLevel.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#minZoomLevel') options. For example, the following code enables the month, year and decade calendar views leaving the century view behind.
@@ -67,6 +106,50 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar
+            min-zoom-level="decade"
+            max-zoom-level="month"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar
+                    minZoomLevel="decade"
+                    maxZoomLevel="month" />
+            );
+        }
+    }
+    export default App;
 
 ---
 

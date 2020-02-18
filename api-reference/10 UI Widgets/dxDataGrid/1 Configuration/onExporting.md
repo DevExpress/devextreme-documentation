@@ -103,7 +103,7 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDataGrid } from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
     export default {
         components: {

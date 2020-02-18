@@ -71,6 +71,11 @@ If appointments in your data source omit the **allDay** field but have another f
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+    const allDayAppointments = [{
+        text: "Fix bugs",
+        startDate: new Date(2016, 4, 10),
+        long: true
+    }];
 
     export default {
         components: {
@@ -78,11 +83,7 @@ If appointments in your data source omit the **allDay** field but have another f
         },
         data() {
             return {
-                allDayAppointments: [{
-                    text: "Fix bugs",
-                    startDate: new Date(2016, 4, 10),
-                    long: true
-                }]
+                allDayAppointments
             }
         }
     }
@@ -97,17 +98,18 @@ If appointments in your data source omit the **allDay** field but have another f
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    const dataSource = [{
+        text: "Fix bugs",
+        startDate: new Date(2016, 4, 10),
+        long: true
+    }];
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={[{
-                        text: "Fix bugs",
-                        startDate: new Date(2016, 4, 10),
-                        long: true
-                    }]},
-                    allDayExpr: "long"
+                    dataSource={dataSource}
+                    allDayExpr="long"
                 />
             });
         }

@@ -68,6 +68,8 @@ To execute certain commands before or after an appointment was added, handle the
         data() {
             return {
                 // ...
+            },
+            methods: {
                 onAppointmentAdding: (e) => {
                     // Handler of the "appointmentAdding" event
                 },
@@ -101,7 +103,7 @@ To execute certain commands before or after an appointment was added, handle the
             return (
                 <Scheduler
                     // ...
-                    onAppointmentAdding: {onAppointmentAdding},
+                    onAppointmentAdding: {onAppointmentAdding}
                     onAppointmentAdded: {onAppointmentAdded}
                 />
             });

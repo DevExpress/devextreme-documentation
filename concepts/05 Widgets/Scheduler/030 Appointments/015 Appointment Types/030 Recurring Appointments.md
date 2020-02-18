@@ -88,6 +88,11 @@ If your appointments contain other data fields instead of **recurrenceRule** and
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+    const recurringAppointments = [{ 
+        // ...
+        rule: "FREQ=DAILY",
+        exception: "20160526T090000, 20160528T090000"
+    }];
 
     export default {
         components: {
@@ -95,11 +100,7 @@ If your appointments contain other data fields instead of **recurrenceRule** and
         },
         data() {
             return {
-                recurringAppointments: [{ 
-                    // ...
-                    rule: "FREQ=DAILY",
-                    exception: "20160526T090000, 20160528T090000"
-                }]
+                recurringAppointments
             }
         }
     }
@@ -114,17 +115,18 @@ If your appointments contain other data fields instead of **recurrenceRule** and
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    const recurringAppointments = [{ 
+        // ...
+        rule: "FREQ=DAILY",
+        exception: "20160526T090000, 20160528T090000"
+    }];
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    dataSource={[{ 
-                        // ...
-                        rule: "FREQ=DAILY",
-                        exception: "20160526T090000, 20160528T090000"
-                    }]},
-                    recurrenceRuleExpr="rule",
+                    dataSource={recurringAppointments}
+                    recurrenceRuleExpr="rule"
                     recurrenceExceptionExpr="exception"
                 />
             });

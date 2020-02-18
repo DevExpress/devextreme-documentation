@@ -409,7 +409,7 @@ If the data source's field names differ from the standard field names mentioned 
     import { fileItems } from './data.js';
 
     const objectFileProvider = new ObjectFileSystemProvider({
-        data:fileItems,
+        data: fileItems,
         isDirectoryExpr: "isFolder",
         sizeExpr: "itemSize"
     });

@@ -106,7 +106,9 @@ To process a new **NumberBox** value, you need to handle the value change event.
     import { DxNumberBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        numberBox_valueChanged ({ previousValue, value: newValue }) {
+        numberBox_valueChanged (e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -122,7 +124,10 @@ To process a new **NumberBox** value, you need to handle the value change event.
 
     <!-- tab: App.vue -->
     <template>
-        <DxNumberBox @value-changed="numberBoxValueChanged" />
+        <DxNumberBox
+            v-bind="numberBoxValue"
+            @value-changed="numberBoxValueChanged"
+        />
     </template>
 
     <script>
@@ -135,8 +140,13 @@ To process a new **NumberBox** value, you need to handle the value change event.
         components: {
             DxNumberBox
         },
+        data() {
+            numberBoxValue: 10
+        },
         methods: {
-            numberBoxValueChanged({ previousValue, value: newValue }) {
+            numberBoxValueChanged(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         }
@@ -154,14 +164,29 @@ To process a new **NumberBox** value, you need to handle the value change event.
     import NumberBox from 'devextreme-react/number-box';
 
     class App extends React.Component {
+        constructor() {
+            super();
+
+            this.state = {
+                numberBoxValue: 10
+            };
+
+            this.numberBoxValueChanged.bind(this);
+        }
+
         render() {
             return (
-                <NumberBox onValueChanged={this.numberBoxValueChanged} />
+                <NumberBox
+                    value={this.numberBoxValue}
+                    onValueChanged={this.numberBoxValueChanged} />
             );
         }
 
-        numberBoxValueChanged({ previousValue, value: newValue }) {
+        numberBoxValueChanged(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
+            this.setState({ numberBoxValue: newValue });
         }
     }
     export default App;

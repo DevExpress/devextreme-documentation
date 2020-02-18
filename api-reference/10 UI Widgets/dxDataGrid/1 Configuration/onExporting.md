@@ -93,7 +93,7 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
             @exported="onExported"
         >
             <DxColumn
-            data-field="ID"
+                data-field="ID"
             :visible="false"
             />
         </DxDataGrid>

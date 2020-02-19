@@ -1,6 +1,7 @@
 ---
-id: dxDropDownList.Options.contentRender
-hidden: 
+id: dxFileManager.Options.currentPathKeys
+type: Array<String>
+default: []
 ---
 ---
 ##### shortDescription

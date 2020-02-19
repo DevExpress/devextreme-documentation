@@ -18,6 +18,7 @@ To process a new calendar value, you need to handle the value change event. If t
 
     <!--HTML-->
     <dx-calendar ...
+        [(value)]="calendar_value"
         (onValueChanged)="calendar_valueChanged($event)">
     </dx-calendar>
 
@@ -25,9 +26,11 @@ To process a new calendar value, you need to handle the value change event. If t
     import { DxCalendarModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        calendar_value: Date = new Date();
+
         calendar_valueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -38,6 +41,77 @@ To process a new calendar value, you need to handle the value change event. If t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar
+            v-model="calendarValue"
+            @value-changed="calendarValueChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        },
+        data() {
+            calendarValue: new Date()
+        },
+        methods: {
+            calendarValueChanged: function(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    class App extends React.Component {
+        constructor() {
+            super();
+
+            this.state = {
+                calendarValue: new Date()
+            };
+
+            this.calendarValueChanged = this.calendarValueChanged.bind(this);
+        }
+
+        render() {
+            return (
+                <Calendar
+                    value={this.state.calendarValue}
+                    onValueChanged={this.calendarValueChanged} />
+            );
+        }
+
+        calendarValueChanged(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+            // Event handling commands go here
+            this.setState({ value: newValue });
+        }
+    }
+    export default App;
 
 ---
 

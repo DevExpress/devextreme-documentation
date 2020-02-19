@@ -1,6 +1,6 @@
 ---
-id: dxDropDownList.Options.contentRender
-hidden: 
+id: dxDiagram.Options.propertiesPanel.groups.title
+type: String
 ---
 ---
 ##### shortDescription

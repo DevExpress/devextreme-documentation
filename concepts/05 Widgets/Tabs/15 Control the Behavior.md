@@ -1,63 +1,457 @@
 An end user can select **Tabs** items in two different modes: *'single'* (by default) or *'multiple'*. You can use the [selectionMode](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#selectionMode') option to change the mode. 
 
+---
+##### jQuery
+
     <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
-            items: tabItems,
+            items: [
+                { text: "User" },
+                { text: "Comment" },
+                // ...
+            ],
             selectionMode: "multiple"
         });
     });
 
-If you need a tab to be preselected or to select it programmatically, pass its index in the data source array to the [selectedIndex](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#selectedIndex') option.
+##### Angular
 
-    <!--JavaScript-->
-    var tabs = [
-        { text: "User", icon: "user" },
-        { text: "Find", icon: "find" },
-        { text: "Favorites", icon: "favorites" }
+    <!--HTML-->
+    <dx-tabs
+        [items]="tabs"
+        selectionMode="multiple">
+    </dx-tabs>
+
+    <!--TypeScript-->
+    import { DxTabsModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        tabs = [
+            { text: "User" },
+            { text: "Comment" },
+            // ...
+        ];
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTabsModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxTabs
+            :items="tabs"
+            selection-mode="multiple" /> 
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTabs from "devextreme-vue/tabs";
+
+    export default {
+        components: {
+            DxTabs
+        },
+        data() {
+            return {
+                tabs: [
+                    { text: "User" },
+                    { text: "Comment" },
+                    // ...
+                ]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tabs } from 'devextreme-react/tabs';
+
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
     ];
 
+    class App extends React.Component {
+        render() {
+            return (
+                <Tabs
+                    items={tabs}
+                    selectionMode="multiple"
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
+
+If you need a tab to be preselected or to select it programmatically, pass its index in the data source array to the [selectedIndex](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#selectedIndex') option.
+
+---
+##### jQuery
+
+    <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
-            items: tabs,
-            // Preselects the tab with index 1
+            items: [
+                { text: "User" },
+                { text: "Comment" },
+                // ...
+            ],
             selectedIndex: 1
         });
     });
 
-<!---->
+##### Angular
 
-    <!--JavaScript-->// Selects the tab with index 0
-    $("#tabsContainer").dxTabs("option", "selectedIndex", 0);
+    <!--HTML-->
+    <dx-tabs
+        [items]="tabs"
+        [selectedIndex]="1">
+    </dx-tabs>
+
+    <!--TypeScript-->
+    import { DxTabsModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        tabs = [
+            { text: "User" },
+            { text: "Comment" },
+            // ...
+        ];
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTabsModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxTabs
+            :items="tabs"
+            :selected-index="1" /> 
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTabs from "devextreme-vue/tabs";
+
+    export default {
+        components: {
+            DxTabs
+        },
+        data() {
+            return {
+                tabs: [
+                    { text: "User" },
+                    { text: "Comment" },
+                    // ...
+                ]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tabs } from 'devextreme-react/tabs';
+
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        constructor() {
+            this.state = {
+                selectedIndex: 1
+            }
+        }
+
+        handleOptionChange = (e) => {
+            if(e.fullName === 'selectedIndex') {
+                this.setState({
+                    selectedIndex: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <Tabs
+                    items={tabs}
+                    selectedIndex={this.state.selectedIndex}
+                    onOptionChanged={this.handleOptionChange}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#selectedItem') (for *"single"* **selectionMode**) or [selectedItems](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#selectedItems') (for *"multiple"* **selectionMode**) options.
 
+---
+##### jQuery
+
     <!--JavaScript-->
     var tabs = [
-        { text: "User", icon: "user" },
-        { text: "Find", icon: "find" },
-        { text: "Favorites", icon: "favorites" }
+        { text: "User" },
+        { text: "Comment" },
+        // ...
     ];
 
     $(function() {
         $("#tabsContainer").dxTabs({
             items: tabs,
-            selectedItem: tabs[1],
-            // === or ===
             selectionMode: 'multiple',
-            selectedItems: [ tabs[1], tabs[2] ]
+            selectedItems: [ tabs[0], tabs[1] ]
         });
     });
 
+##### Angular
+
+    <!--HTML-->
+    <dx-tabs
+        [items]="tabs"
+        selectionMode="multiple"
+        [selectedItems]="selectedItems">
+    </dx-tabs>
+
+    <!--TypeScript-->
+    import { DxTabsModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        tabs = [
+            { text: "User" },
+            { text: "Comment" },
+            // ...
+        ];
+
+        constructor() {
+            this.selectedItems = [this.tabs[0], this.tabs[1]];
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTabsModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxTabs
+            :items="tabs"
+            selection-mode="multiple"
+            :selected-items.sync="selectedItems" /> 
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTabs from "devextreme-vue/tabs";
+
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxTabs
+        },
+        data() {
+            return {
+                tabs: tabs,
+                selectedItems: [tabs[0], tabs[1]]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tabs } from 'devextreme-react/tabs';
+
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        constructor() {
+            this.state = {
+                selectedItems: [tabs[0], tabs[1]];
+            }
+        }
+
+        handleOptionChange = (e) => {
+            if(e.fullName === 'selectedItems') {
+                this.setState({
+                    selectedItems: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <Tabs
+                    items={tabs}
+                    selectionMode="multiple"
+                    selectedItems={this.state.selectedItems}
+                    onOptionChanged={this.handleOptionChange}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
+
 When the total length of all tabs exceeds the **Tabs** container, the widget shows navigation buttons that help an end user scroll the tab strip. This behavior is default only for desktops. To enable it on all types of devices, assign **true** to the [showNavButtons](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/showNavButtons.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#showNavButtons') option. Otherwise, assign **false**.
+
+---
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
         $("#tabsContainer").dxTabs({
-            items: tabs,
+            items: [
+                { text: "User" },
+                { text: "Comment" },
+                // ...
+            ],
             showNavButtons: true
         });
     });
+
+##### Angular
+
+    <!--HTML-->
+    <dx-tabs
+        [items]="tabs"
+        [showNavButtons]="true">
+    </dx-tabs>
+
+    <!--TypeScript-->
+    import { DxTabsModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        tabs = [
+            { text: "User" },
+            { text: "Comment" },
+            // ...
+        ];
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTabsModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxTabs
+            :items="tabs"
+            :show-nav-buttons="true" /> 
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTabs from "devextreme-vue/tabs";
+
+    export default {
+        components: {
+            DxTabs
+        },
+        data() {
+            return {
+                tabs: [
+                    { text: "User" },
+                    { text: "Comment" },
+                    // ...
+                ]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tabs } from 'devextreme-react/tabs';
+
+    const tabs = [
+        { text: "User" },
+        { text: "Comment" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Tabs
+                    items={tabs}
+                    showNavButtons={true}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 - [Tabs - Customize Item Appearance](/concepts/05%20Widgets/Tabs/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Tabs/Customize_Item_Appearance')

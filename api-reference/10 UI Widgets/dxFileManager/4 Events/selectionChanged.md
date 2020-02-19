@@ -1,6 +1,6 @@
 ---
-id: dxDropDownList.Options.contentRender
-hidden: 
+id: dxFileManager.selectionChanged
+type: eventType
 ---
 ---
 ##### shortDescription

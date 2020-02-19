@@ -1,6 +1,7 @@
 ---
-id: dxDropDownList.Options.contentRender
-hidden: 
+id: dxDiagram.Options.mainToolbar
+type: Object
+default: {}
 ---
 ---
 ##### shortDescription

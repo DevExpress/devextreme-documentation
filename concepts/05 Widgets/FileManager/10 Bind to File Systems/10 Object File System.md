@@ -41,39 +41,24 @@ In the example below, the **FileManager** widget displays hierarchical data stor
     {
         name: "Documents",
         isDirectory: true,
-        items: [
-            {
-                name: "Projects",
-                isDirectory: true,
-                items: [
-                    {
-                        name: "About.rtf",
-                        isDirectory: false,
-                        size: 1024
-                    }, {
-                        name: "Passwords.rtf",
-                        isDirectory: false,
-                        size: 2048
-                    }
-                ]
-            },
-            {
-                name: "About.xml",
+        items: [{
+            name: "Projects",
+            isDirectory: true,
+            items: [{
+                name: "About.rtf",
                 isDirectory: false,
                 size: 1024
             }, {
-                name: "Managers.rtf",
+                name: "Passwords.rtf",
                 isDirectory: false,
                 size: 2048
-            }, {
-                name: "ToDo.txt",
-                isDirectory: false,
-                size: 3072
-            }
-        ],
-    },
-    //...
-    ];
+            }]
+        }, {
+            name: "About.xml",
+            isDirectory: false,
+            size: 1024
+        }]
+    }];
 
 ##### Angular
 
@@ -175,12 +160,11 @@ In the example below, the **FileManager** widget displays hierarchical data stor
                 'name': 'About.rtf',
                 'isDirectory': false,
                 'size': 1024
-                }, {
+            }, {
                 'name': 'Passwords.rtf',
                 'isDirectory': false,
                 'size': 2048
-                }
-            ]
+            }]
         }, {
             'name': 'About.xml',
             'isDirectory': false,
@@ -220,12 +204,11 @@ In the example below, the **FileManager** widget displays hierarchical data stor
                 'name': 'About.rtf',
                 'isDirectory': false,
                 'size': 1024
-                }, {
+            }, {
                 'name': 'Passwords.rtf',
                 'isDirectory': false,
                 'size': 2048
-                }
-            ]
+            }]
         }, {
             'name': 'About.xml',
             'isDirectory': false,
@@ -242,25 +225,29 @@ In the example below, the **FileManager** widget displays hierarchical data stor
     <script src="~/Scripts/data/data.js"></script>
 
     <!-- data.js -->
-    var fileSystem = [
-        {
-            name: "Documents",
+    var fileSystem = [{
+        name: "Documents",
+        isDirectory: true,
+        items: [
+            {
+            name: "Projects",
             isDirectory: true,
             items: [
                 {
-                name: "Projects",
-                isDirectory: true,
-                items: [
-                    {
-                    //...
-                    }
-                ]
-                },
-                //...
-            ],
-        },
-        // ...
-    ];
+                name: "About.rtf",
+                isDirectory: false,
+                size: 1024
+            }, {
+                name: "Passwords.rtf",
+                isDirectory: false,
+                size: 2048
+            }]
+        }, {
+            name: "About.xml",
+            isDirectory: false,
+            size: 1024
+        }]
+    }];
 
 ---
 
@@ -282,38 +269,27 @@ If the data source's field names differ from the standard field names mentioned 
     });
 
     <!-- tab: data.js -->
-    var fileSystem = [
-        {
-            name: "Documents",
+    var fileSystem = [{
+        name: "Documents",
+        isFolder: true,
+        items: [{
+            name: "Projects",
             isFolder: true,
             items: [{
-                name: "Projects",
-                isFolder: true,
-                items: [{
-                    name: "About.rtf",
-                    isFolder: false,
-                    itemSize: 1024
-                }, {
-                    name: "Passwords.rtf",
-                    isFolder: false,
-                    itemSize: 2048
-                }]
-            }, {
-                name: "About.xml",
+                name: "About.rtf",
                 isFolder: false,
                 itemSize: 1024
             }, {
-                name: "Managers.rtf",
+                name: "Passwords.rtf",
                 isFolder: false,
                 itemSize: 2048
-            }, {
-                name: "ToDo.txt",
-                isFolder: false,
-                itemSize: 3072
-            }],
-        },
-        //...
-    ];
+            }]
+        }, {
+            name: "About.xml",
+            isFolder: false,
+            itemSize: 1024
+        }]
+    }];
 
 ##### Angular
 
@@ -428,12 +404,11 @@ If the data source's field names differ from the standard field names mentioned 
                 'name': 'About.rtf',
                 'isFolder': false,
                 'itemSize': 1024
-                }, {
+            }, {
                 'name': 'Passwords.rtf',
                 'isFolder': false,
                 'itemSize': 2048
-                }
-            ]
+            }]
         }, {
             'name': 'About.xml',
             'isFolder': false,
@@ -480,12 +455,11 @@ If the data source's field names differ from the standard field names mentioned 
                 'name': 'About.rtf',
                 'isFolder': false,
                 'itemSize': 1024
-                }, {
+            }, {
                 'name': 'Passwords.rtf',
                 'isFolder': false,
                 'itemSize': 2048
-                }
-            ]
+            }]
         }, {
             'name': 'About.xml',
             'isFolder': false,
@@ -515,9 +489,7 @@ If the data source's field names differ from the standard field names mentioned 
                     isFolder: false,
                     itemSize: 2048
                 }]
-            }, 
-            //...
-            ]
+            }]
         }];
         var objectFileProvider = {
             isDirectoryExpr: "isFolder",

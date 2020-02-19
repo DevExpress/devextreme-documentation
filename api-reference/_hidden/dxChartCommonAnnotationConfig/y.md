@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Along with [x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x'), positions the annotation's center at a specific pixel coordinate. (0, 0) is the upper left corner of the chart.
+Used with [x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') to position the annotation's center at a specific pixel coordinate. (0, 0) is the upper left corner of the chart.
 
 ---
 #####See Also#####

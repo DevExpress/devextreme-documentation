@@ -5,6 +5,9 @@ id: dxTreeView.selectItem(itemData)
 ##### shortDescription
 Selects an item found using its data object.
 
+##### return: Boolean
+<!-- Description goes here -->
+
 ##### param(itemData): Object
 The item's data object.
 

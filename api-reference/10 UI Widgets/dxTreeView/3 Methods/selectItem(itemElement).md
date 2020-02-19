@@ -5,6 +5,9 @@ id: dxTreeView.selectItem(itemElement)
 ##### shortDescription
 Selects an item found using its DOM node.
 
+##### return: Boolean
+<!-- Description goes here -->
+
 ##### param(itemElement): Node
 The item's DOM node.
 

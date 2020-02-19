@@ -1,10 +1,19 @@
 ---
 id: CustomFileSystemProvider.Options.createDirectory
-type: function()
+type: function(parentDirectory, name)
 ---
 ---
 ##### shortDescription
 A function that creates a folder.
+
+##### param(parentDirectory): FileSystemItem
+<!-- Description goes here -->
+
+##### param(name): String
+<!-- Description goes here -->
+
+##### return: Promise<any> | any
+<!-- Description goes here -->
 
 ---
 

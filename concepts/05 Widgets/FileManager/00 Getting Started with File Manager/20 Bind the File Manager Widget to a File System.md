@@ -54,18 +54,8 @@ In the example below, the **FileManager** widget displays hierarchical data stor
             name: "About.xml",
             isDirectory: false,
             size: 1024
-        }, {
-            name: "Managers.rtf",
-            isDirectory: false,
-            size: 2048
-        }, {
-            name: "ToDo.txt",
-            isDirectory: false,
-            size: 3072
-        } ],
-    },
-        //...
-    ];
+        }]
+    }];
 
 ##### Angular
 
@@ -167,12 +157,11 @@ In the example below, the **FileManager** widget displays hierarchical data stor
                 'name': 'About.rtf',
                 'isDirectory': false,
                 'size': 1024
-                }, {
+            }, {
                 'name': 'Passwords.rtf',
                 'isDirectory': false,
                 'size': 2048
-                }
-            ]
+            }]
         }, {
             'name': 'About.xml',
             'isDirectory': false,
@@ -212,12 +201,11 @@ In the example below, the **FileManager** widget displays hierarchical data stor
                 'name': 'About.rtf',
                 'isDirectory': false,
                 'size': 1024
-                }, {
+            }, {
                 'name': 'Passwords.rtf',
                 'isDirectory': false,
                 'size': 2048
-                }
-            ]
+            }]
         }, {
             'name': 'About.xml',
             'isDirectory': false,
@@ -244,15 +232,20 @@ In the example below, the **FileManager** widget displays hierarchical data stor
                 isDirectory: true,
                 items: [
                     {
-                    //...
-                    }
-                ]
-                },
-                //...
-            ],
-        },
-        // ...
-    ];
+                    name: "About.rtf",
+                    isDirectory: false,
+                    size: 1024
+                }, {
+                    name: "Passwords.rtf",
+                    isDirectory: false,
+                    size: 2048
+                }]
+            }, {
+                name: "About.xml",
+                isDirectory: false,
+                size: 1024
+            }]
+        }];
 
 ---
 

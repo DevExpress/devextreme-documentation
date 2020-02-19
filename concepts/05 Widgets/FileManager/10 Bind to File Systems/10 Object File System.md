@@ -323,7 +323,8 @@ If the data source's field names differ from the standard field names mentioned 
     </dx-file-manager>  
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';    
+    import { Component } from '@angular/core';
+    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';   
 
     @Component({
         selector: 'app-root',
@@ -419,24 +420,24 @@ If the data source's field names differ from the standard field names mentioned 
     <!-- tab: data.js -->
     export const fileItems = [{
         'name': 'Documents',
-        'isDirectory': true,
+        'isFolder': true,
         'items': [{
             'name': 'Projects',
-            'isDirectory': true,
+            'isFolder': true,
             'items': [{
                 'name': 'About.rtf',
-                'isDirectory': false,
-                'size': 1024
+                'isFolder': false,
+                'itemSize': 1024
                 }, {
                 'name': 'Passwords.rtf',
-                'isDirectory': false,
-                'size': 2048
+                'isFolder': false,
+                'itemSize': 2048
                 }
             ]
         }, {
             'name': 'About.xml',
-            'isDirectory': false,
-            'size': 1024
+            'isFolder': false,
+            'itemSize': 1024
         }]
     }];
 
@@ -471,24 +472,24 @@ If the data source's field names differ from the standard field names mentioned 
     <!-- tab: data.js -->
     export const fileItems = [{
         'name': 'Documents',
-        'isDirectory': true,
+        'isFolder': true,
         'items': [{
             'name': 'Projects',
-            'isDirectory': true,
+            'isFolder': true,
             'items': [{
                 'name': 'About.rtf',
-                'isDirectory': false,
-                'size': 1024
+                'isFolder': false,
+                'itemSize': 1024
                 }, {
                 'name': 'Passwords.rtf',
-                'isDirectory': false,
-                'size': 2048
+                'isFolder': false,
+                'itemSize': 2048
                 }
             ]
         }, {
             'name': 'About.xml',
-            'isDirectory': false,
-            'size': 1024
+            'isFolder': false,
+            'itemSize': 1024
         }]
     }];
 

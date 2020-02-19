@@ -195,6 +195,7 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+    import DataSource from "devextreme/data/data_source";
 
     const appointments = [{ 
         desc: 'Meet with a customer', 
@@ -204,7 +205,7 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     }, 
     // ...
     ];
-    const dataSource = new DevExpress.data.DataSource({
+    const dataSource = new DataSource({
         store: appointments,
         map: function (item) {
             return {
@@ -237,6 +238,7 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    import DataSource from "devextreme/data/data_source";
 
     const appointments = [{ 
         desc: 'Meet with a customer', 
@@ -246,7 +248,7 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     }, 
     // ...
     ];
-    const dataSource = new DevExpress.data.DataSource({
+    const dataSource = new DataSource({
         store: appointments,
         map: function (item) {
             return {

@@ -82,7 +82,6 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
         data() {
             return {
                 dataSource,
-                // ...
             }
         }
     }
@@ -111,8 +110,7 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
         render() {
             return (
                 <Scheduler
-                    dataSource={dataSource},
-                    // ...
+                    dataSource={dataSource}
                 />
             });
         }

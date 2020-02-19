@@ -82,7 +82,6 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
         data() {
             return {
                 dataSource,
-                // ...
             }
         }
     }
@@ -111,8 +110,7 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
         render() {
             return (
                 <Scheduler
-                    dataSource={dataSource},
-                    // ...
+                    dataSource={dataSource}
                 />
             });
         }

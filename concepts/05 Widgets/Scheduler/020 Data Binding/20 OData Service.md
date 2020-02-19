@@ -167,11 +167,12 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
+    import "devextreme/data/odata/store";
 
     import DxScheduler from 'devextreme-vue/scheduler';
     import DataSource from 'devextreme/data/data_source';
 
-    const data = new DataSource({
+    const dataSource = new DataSource({
         store: {
             type: "odata",
             url: "http://url/to/odata/service"
@@ -186,7 +187,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
         },
         data() {
             return {
-                dataSource: data
+                dataSource
             }
         }
     }
@@ -199,11 +200,12 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
+    import "devextreme/data/odata/store";
 
     import Scheduler from 'devextreme-react/scheduler';
     import DataSource from 'devextreme/data/data_source';
 
-    const data = new DataSource({
+    const dataSource = new DataSource({
         store: {
             type: "odata",
             url: "http://url/to/odata/service"
@@ -216,7 +218,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
         render() {
             return (
                 <Scheduler
-                    dataSource={data}
+                    dataSource={dataSource}
                 />
             });
         }

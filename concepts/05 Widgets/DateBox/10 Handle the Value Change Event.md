@@ -35,6 +35,61 @@ If instead of picking a value, an end user types it into the **DateBox**, this v
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            :value="date"
+            type="date"
+            value-change-event="keyup"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        },
+        data() {
+            return {
+                date: new Date()
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        constructor() {
+            this.date = new Date();
+        }
+
+        render() {
+            return (
+                <DateBox
+                    defaultValue={this.date}
+                    type="date"
+                    valueChangeEvent="keyup"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To process a new **DateBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#onValueChanged') option when you configure the widget.

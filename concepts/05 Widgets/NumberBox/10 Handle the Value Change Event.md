@@ -7,7 +7,7 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
     $(function() {
         $("#numberBoxContainer").dxNumberBox({
             value: 20,
-            valueChangeEvent: 'keyup'
+            valueChangeEvent: "keyup"
         });
     });
 
@@ -33,6 +33,50 @@ By default, the value of the **NumberBox** is changed when the <a href="https://
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxNumberBox
+            :value="20"
+            value-change-event="keyup"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxNumberBox from 'devextreme-vue/number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <NumberBox
+                    defaultValue={20}
+                    valueChangeEvent="keyup" />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To process a new **NumberBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#onValueChanged') option when you configure the widget.
@@ -55,6 +99,7 @@ To process a new **NumberBox** value, you need to handle the value change event.
 
     <!--HTML-->
     <dx-number-box ...
+        [(value)]="numberBox_value"
         (onValueChanged)="numberBox_valueChanged($event)">
     </dx-number-box>
 
@@ -62,9 +107,11 @@ To process a new **NumberBox** value, you need to handle the value change event.
     import { DxNumberBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        numberBox_value: number = 10;
+
         numberBox_valueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -75,6 +122,77 @@ To process a new **NumberBox** value, you need to handle the value change event.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxNumberBox
+            v-bind="numberBoxValue"
+            @value-changed="numberBoxValueChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxNumberBox from 'devextreme-vue/number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        },
+        data() {
+            numberBoxValue: 10
+        },
+        methods: {
+            numberBoxValueChanged(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        constructor() {
+            super();
+
+            this.state = {
+                numberBoxValue: 10
+            };
+
+            this.numberBoxValueChanged.bind(this);
+        }
+
+        render() {
+            return (
+                <NumberBox
+                    value={this.numberBoxValue}
+                    onValueChanged={this.numberBoxValueChanged} />
+            );
+        }
+
+        numberBoxValueChanged(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+            // Event handling commands go here
+            this.setState({ numberBoxValue: newValue });
+        }
+    }
+    export default App;
 
 ---
 

@@ -25,11 +25,8 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     <!--JavaScript-->
     function registerKeyHandlers () {
         let checkBox =  $("#checkBoxContainer").dxCheckBox("instance");
-        checkBox.registerKeyHandler("backspace", function (e) {
-            // The argument "e" contains information on the event
-        });
         checkBox.registerKeyHandler("space", function (e) {
-            // ...
+            // The argument "e" contains information on the event
         });
     }
     
@@ -45,11 +42,8 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // Prior to Angular 8
         // @ViewChild(DxCheckBoxComponent) checkBox: DxCheckBoxComponent
         ngAfterViewInit () {
-            this.checkBox.instance.registerKeyHandler("backspace", function (e) {
-                // The argument "e" contains information on the event
-            });
             this.checkBox.instance.registerKeyHandler("space", function (e) {
-                // ...
+                // The argument "e" contains information on the event
             });
         }
     }
@@ -60,6 +54,77 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCheckBox :ref="myCheckBoxRef" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCheckBox from 'devextreme-vue/check-box';
+
+    const myCheckBoxRef = 'my-check-box';
+
+    export default {
+        components: {
+            DxCheckBox
+        },
+        data() {
+            return {
+                myCheckBoxRef
+            };
+        },
+        computed: {
+            checkBox: function() {
+                return this.$refs[myCheckBoxRef].instance;
+            }
+        },
+        mounted: function() {
+            this.checkBox.registerKeyHandler("space", function(e) {
+                // The argument "e" contains information on the event
+            });
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import CheckBox from 'devextreme-react/check-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.checkBoxRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <CheckBox ref={this.checkBoxRef} />
+            );
+        }
+
+        get checkBox() {
+            return this.checkBoxRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.checkBox.registerKeyHandler("space", function (e) {
+                // The argument "e" contains information on the event
+            });
+        }
+    }
+    export default App;
 
 ---
 

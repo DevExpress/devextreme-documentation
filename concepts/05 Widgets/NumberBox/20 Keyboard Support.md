@@ -36,7 +36,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
             // ...
         });
     }
-    
+
 
 ##### Angular
 
@@ -64,6 +64,84 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxNumberBox :ref="myNumberBoxRef" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxNumberBox from 'devextreme-vue/number-box';
+
+    const myNumberBoxRef = 'my-number-box';
+
+    export default {
+        components: {
+            DxNumberBox
+        },
+        data() {
+            return {
+                myNumberBoxRef
+            }
+        },
+        computed: {
+            numberBox: function() {
+                return this.$refs[myNumberBoxRef].instance;
+            }
+        },
+        mounted: function() {
+            this.numberBox.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.numberBox.registerKeyHandler("space", function(e) {
+                // ...
+            });
+        }
+
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import NumberBox from 'devextreme-react/number-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.numberBoxRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <NumberBox ref={this.numberBoxRef} />
+            );
+        }
+
+        get numberBox() {
+            return this.numberBoxRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.numberBox.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            this.numberBox.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+    export default App;
 
 ---
 

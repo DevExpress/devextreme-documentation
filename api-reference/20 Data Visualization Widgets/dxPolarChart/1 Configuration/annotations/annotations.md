@@ -18,7 +18,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}").dx{WidgetName}({
+        $("#polarChart").dxPolarChart({
             annotations: [{
                 type: "text",
                 text: "Annotation text"
@@ -32,7 +32,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} ... >
+    <dx-polar-chart ... >
         <dxi-annotation
             type="text"
             text="Annotation text">
@@ -41,7 +41,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
             type="image"
             image="http://image/url/myimage.png">
         </dxi-annotation>
-    </dx-{widget-name}>
+    </dx-polar-chart>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -59,7 +59,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxPolarChartModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -67,7 +67,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxPolarChartModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -78,7 +78,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ... >
+        <DxPolarChart ... >
             <DxAnnotation
                 type="text"
                 text="Annotation text"
@@ -87,17 +87,17 @@ To configure annotations, assign an array of objects to the **annotations[]** op
                 type="image"
                 image="http://image/url/myimage.png"
             />
-        </Dx{WidgetName}>
+        </DxPolarChart>
     </template>
 
     <script>
-    import Dx{WidgetName}, {
+    import DxPolarChart, {
         DxAnnotation
-    } from 'devextreme-vue/{widget-name}';
+    } from 'devextreme-vue/polar-chart';
 
     export default {
         components: {
-            Dx{WidgetName},
+            DxPolarChart,
             DxAnnotation
         },
         data() {
@@ -111,14 +111,14 @@ To configure annotations, assign an array of objects to the **annotations[]** op
     <!-- tab: App.js -->
     import React from 'react';
 
-    import {WidgetName}, {
+    import PolarChart, {
         Annotation
-    } from 'devextreme-react/{widget-name}';
+    } from 'devextreme-react/polar-chart';
 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} ... >
+                <PolarChart ... >
                     <Annotation
                         type="text"
                         text="Annotation text"
@@ -127,7 +127,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
                         type="image"
                         image="http://image/url/myimage.png"
                     />
-                </{WidgetName}>
+                </PolarChart>
             );
         }
     }
@@ -136,13 +136,20 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
 ---
 
-Annotations can be unattached or anchored to a PolarChart element. The following list shows how to position them. PolarChart coordinates ([argument](/api-reference/_hidden/dxChartCommonAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument'), [value](/api-reference/_hidden/dxChartCommonAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value'), [series](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/series.md '{basewidgetpath}/Configuration/annotations/#series')), [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle') and [radius](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/radius.md '{basewidgetpath}/Configuration/annotations/#radius') specify the element that the annotation's arrow points to; pixel coordinates ([x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') and [y](/api-reference/_hidden/dxChartCommonAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')) specify the position of the annotation's center.
+Annotations can be unattached or anchored to a **PolarChart** element. The following list shows how to position them. **PolarChart** coordinates ([argument](/api-reference/_hidden/dxChartCommonAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument'), [value](/api-reference/_hidden/dxChartCommonAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value'), [series](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/series.md '{basewidgetpath}/Configuration/annotations/#series')), [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle') and [radius](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/radius.md '{basewidgetpath}/Configuration/annotations/#radius') specify the element that the annotation's arrow points to; pixel coordinates ([x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') and [y](/api-reference/_hidden/dxChartCommonAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')) specify the position of the annotation's center.
 
 - **Unanchored annotation**
 
         annotations: [{
             x: 100,
             y: 200
+        }]
+
+- **Unanchored annotation's position defined by angle and radius**
+
+        annotations: [{
+            angle: 45,
+            radius: 100
         }]
 
 - **Annotation anchored to a polar chart coordinate**
@@ -176,14 +183,8 @@ Annotations can be unattached or anchored to a PolarChart element. The following
             y: 200
         }]
 
-- **Annotation's position defined by angle and radius**
 
-        annotations: [{
-            angle: 45,
-            radius: 100
-        }]
-
-When a user long-presses an annotation or hovers the mouse pointer over it, the **{WidgetName}** displays a [tooltip](/api-reference/_hidden/dxChartCommonAnnotationConfig/tooltipEnabled.md '{basewidgetpath}/Configuration/annotations/#tooltipEnabled').
+When a user long-presses an annotation or hovers the mouse pointer over it, the **PolarChart** displays a [tooltip](/api-reference/_hidden/dxChartCommonAnnotationConfig/tooltipEnabled.md '{basewidgetpath}/Configuration/annotations/#tooltipEnabled').
 
 Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
 

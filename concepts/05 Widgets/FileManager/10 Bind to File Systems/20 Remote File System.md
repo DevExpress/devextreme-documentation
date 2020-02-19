@@ -20,7 +20,6 @@ The data object, which is sent back from the server, contains attributes that st
             fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
                 endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
             }),
-            allowedFileExtensions: [".js", ".json", ".css"]
             // ...
         });
     });
@@ -29,8 +28,7 @@ The data object, which is sent back from the server, contains attributes that st
 
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager"
-        [fileSystemProvider]="remoteFileProvider"
-        [allowedFileExtensions]="allowedFileExtensions">
+        [fileSystemProvider]="remoteFileProvider">
         <!-- ... -->
     </dx-file-manager>
 
@@ -45,11 +43,9 @@ The data object, which is sent back from the server, contains attributes that st
     })  
 
     export class AppComponent {
-        allowedFileExtensions: string[];
         remoteFileProvider: RemoteFileSystemProvider;
 
         constructor() {
-            this.allowedFileExtensions = [".txt", ".doc", ".png"];
             this.remoteFileProvider = new RemoteFileSystemProvider({
                 endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
             });
@@ -77,8 +73,7 @@ The data object, which is sent back from the server, contains attributes that st
     <!-- tab: App.vue -->
     <template>
         <DxFileManager
-            :file-system-provider="remoteFileProvider"
-            :allowed-file-extensions="allowedFileExtensions" >
+            :file-system-provider="remoteFileProvider">
             <!-- ... -->
         </DxFileManager>
     </template>
@@ -87,27 +82,21 @@ The data object, which is sent back from the server, contains attributes that st
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css'; 
     
-    import { 
-        DxFileManager, 
-        DxPermissions 
-    } from 'devextreme-vue/file-manager';
+    import { DxFileManager } from 'devextreme-vue/file-manager';
 
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
     const remoteFileProvider = new RemoteFileSystemProvider({
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
-    const allowedFileExtensions = ['.txt', '.doc', '.png'];
 
     export default {
         components: {
-            DxFileManager,
-            DxPermissions
+            DxFileManager
         },
         data() {
             return {
-                remoteFileProvider,
-                allowedFileExtensions
+                remoteFileProvider
             };
         }
     };
@@ -121,20 +110,18 @@ The data object, which is sent back from the server, contains attributes that st
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import FileManager, { Permissions } from 'devextreme-react/file-manager';
+    import FileManager from 'devextreme-react/file-manager';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
     const remoteFileProvider = new RemoteFileSystemProvider({
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
-    const allowedFileExtensions = ['.txt', '.doc', '.png'];
     
     class App extends React.Component {
         render() {
             return (
                 <FileManager 
-                    fileSystemProvider={remoteFileProvider} 
-                    allowedFileExtensions={allowedFileExtensions} >
+                    fileSystemProvider={remoteFileProvider}>
                     {/* ... */}
                 </FileManager>
             );
@@ -148,11 +135,8 @@ The data object, which is sent back from the server, contains attributes that st
     @(Html.DevExtreme().FileManager()
         .FileSystemProvider(provider => provider.Remote()
             .Url(Url.HttpRouteUrl("FileManagementScriptsApi", null)))
-        .Permissions(permissions => {
-            permissions.Download(true);
             // ...
         })
-        .AllowedFileExtensions(new[] { ".txt", ".doc", ".png" }))        
 
 ---
 

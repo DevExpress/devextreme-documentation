@@ -33,6 +33,50 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox
+            value="rgba(255, 144, 0, 0.3)"
+            :edit-alpha-channel="true"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxColorBox from 'devextreme-vue/color-box';
+
+    export default {
+        components: {
+            DxColorBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ColorBox from 'devextreme-react/color-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ColorBox
+                    value="rgba(255, 144, 0, 0.3)"
+                    editAlphaChannel={true}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

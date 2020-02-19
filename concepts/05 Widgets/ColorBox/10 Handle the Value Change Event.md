@@ -33,6 +33,50 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox
+            value="#FF0000"
+            apply-value-mode="instantly"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxColorBox from 'devextreme-vue/color-box';
+
+    export default {
+        components: {
+            DxColorBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ColorBox from 'devextreme-react/color-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ColorBox
+                    value="#FF0000"
+                    applyValueMode="instantly"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To process a new **ColorBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxColorBox/Configuration/#onValueChanged') option when you configure the widget.
@@ -44,8 +88,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     $(function() {
         $("#colorBoxContainer").dxColorBox({
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                let previousValue = e.previousValue;
+                let newValue = e.value;
                 // Event handling commands go here
             }
         });
@@ -75,6 +119,63 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox
+            :onValueChanged="colorBox_valueChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxColorBox from 'devextreme-vue/color-box';
+
+    export default {
+        components: {
+            DxColorBox
+        },
+        data() {
+            return {
+                colorBox_valueChanged: function (e) {
+                    let previousValue = e.previousValue;
+                    let newValue = e.value;
+                    // Event handling commands go here
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ColorBox from 'devextreme-react/color-box';
+
+    class App extends React.Component {
+        colorBox_valueChanged(e) {
+            let previousValue = e.previousValue;
+            let newValue = e.value;
+            // Event handling commands go here
+        }
+
+        render() {
+            return (
+                <ColorBox
+                    onValueChanged={this.colorBox_valueChanged}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

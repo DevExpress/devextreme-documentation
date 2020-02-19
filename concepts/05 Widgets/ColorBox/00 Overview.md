@@ -40,6 +40,48 @@ The following code adds a simple **ColorBox** to your page.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox
+            value="#FF0000"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxColorBox from 'devextreme-vue/color-box';
+
+    export default {
+        components: {
+            DxColorBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ColorBox from 'devextreme-react/color-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ColorBox
+                    value="#FF0000"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 The **ColorBox** accepts colors in hexadecimal (_"#FF0000"_), RGB (_"rgb(255, 0, 0)"_) and RGBA (_"rgba(255, 0, 0, 1)"_) formats, as well as <a href="http://www.w3schools.com/cssref/css_colors.asp" target="_blank">color names</a>. When an end user selects a color from the drop-down editor, the textual representation of the selected color is hexadecimal.

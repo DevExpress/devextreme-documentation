@@ -2,7 +2,7 @@
 id: dxDiagram.Options.nodes.autoLayout
 acceptValues: 'auto' | 'off' | 'tree' | 'layered'
 type: String | Object
-default: 'layered'
+default: 'auto'
 ---
 ---
 ##### shortDescription

@@ -7,13 +7,13 @@ type: function(parentDirectory, name)
 A function that creates a folder.
 
 ##### param(parentDirectory): FileSystemItem
-<!-- Description goes here -->
+The directory where a new subdirectory should be created.
 
 ##### param(name): String
-<!-- Description goes here -->
+The name of the new directory.
 
 ##### return: Promise<any> | any
-<!-- Description goes here -->
+A Promise that is resolved after a new directory is created. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
 
 ---
 
@@ -22,7 +22,7 @@ A function that creates a folder.
 ##### jQuery
 
     <!--JavaScript-->
-	$(function () {
+    $(function () {
         $("#file-manager").dxFileManager({ 
             fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 createDirectory: function(parentDir, name) { 

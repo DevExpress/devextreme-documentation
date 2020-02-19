@@ -12,7 +12,7 @@ id: FileSystemProviderBase.copyItems()
 <!-- Description goes here -->
 
 ##### param(destinationDirectory): FileSystemItem
-<!-- Description goes here -->
+The directory where file system items are copied to.
 
 ---
 <!-- Description goes here -->

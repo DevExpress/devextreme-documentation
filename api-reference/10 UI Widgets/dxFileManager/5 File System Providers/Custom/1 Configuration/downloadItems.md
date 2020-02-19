@@ -7,7 +7,7 @@ type: function(items)
 A function that downloads a file or folder.
 
 ##### param(items): Array<FileSystemItem>
-<!-- Description goes here -->
+The file system items.
 
 ---
 

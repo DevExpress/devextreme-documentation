@@ -39,30 +39,55 @@ To specify what views are available within the switcher, use the [views](/api-re
 
 ##### Vue
 
-    <DxScheduler
-        :views='views'
-    />
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :views='views'
+		/>
+    </template>
 
     <script>
-        import DxScheduler from 'devextreme-vue/scheduler';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-        export default {
-          components: {
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
             DxScheduler
-          },
-          data() {
+        },
+        data() {
             return {
-              views: ['day', 'week', 'agenda']
-            };
-          }
-        };
+				views: ['day', 'week', 'agenda']
+            }
+        },
+        methods: {
+        }
+    }
     </script>
 
 ##### React
 
-    <Scheduler
-        views={['day', 'week', 'agenda']}
-    />
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <Scheduler views={['day', 'week', 'agenda']} />
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -107,25 +132,53 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
 
 ##### Vue
 
-    <DxScheduler
-        :use-drop-down-view-switcher='true'
-    />
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :use-drop-down-view-switcher='true' />
+    </template>
 
     <script>
-        import DxScheduler from 'devextreme-vue/scheduler';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-        export default {
-          components: {
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
             DxScheduler
-          }
-        };
+        },
+        data() {
+            return {
+            }
+        },
+        methods: {
+        }
+    }
     </script>
 
 ##### React
 
-    <Scheduler
-        useDropDownViewSwitcher={true}
-    />
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <Scheduler useDropDownViewSwitcher={true} />
+            );
+        }
+    }
+    export default App;
 
 ---
 

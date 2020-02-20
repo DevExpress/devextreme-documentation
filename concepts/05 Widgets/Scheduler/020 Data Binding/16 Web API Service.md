@@ -65,9 +65,9 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
-    import * as AspNetData from 'devextreme-aspnet-data-nojquery';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
-    const dataSource = AspNetData.createStore({
+    const dataSource = createStore({
         key: "ID",
         loadUrl: serviceUrl + "/GetAction",
         insertUrl: serviceUrl + "/InsertAction",
@@ -81,7 +81,7 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
         },
         data() {
             return {
-                dataSource,
+                dataSource
             }
         }
     }
@@ -96,9 +96,9 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
-    import * as AspNetData from 'devextreme-aspnet-data-nojquery';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
-    const dataSource = AspNetData.createStore({
+    const dataSource = createStore({
         key: "ID",
         loadUrl: serviceUrl + "/GetAction",
         insertUrl: serviceUrl + "/InsertAction",
@@ -112,7 +112,7 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
                 <Scheduler
                     dataSource={dataSource}
                 />
-            });
+            );
         }
     }
     export default App;

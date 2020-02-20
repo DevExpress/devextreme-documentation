@@ -65,9 +65,9 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
-    import * as AspNetData from 'devextreme-aspnet-data-nojquery';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
-    const dataSource = AspNetData.createStore({
+    const dataSource = createStore({
         key: "ID",
         loadUrl: serviceUrl,
         insertUrl: serviceUrl,
@@ -81,7 +81,7 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
         },
         data() {
             return {
-                dataSource,
+                dataSource
             }
         }
     }
@@ -96,9 +96,9 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
-    import * as AspNetData from 'devextreme-aspnet-data-nojquery';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service";
-    const dataSource = AspNetData.createStore({
+    const dataSource = createStore({
         key: "ID",
         loadUrl: serviceUrl,
         insertUrl: serviceUrl,
@@ -112,7 +112,7 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
                 <Scheduler
                     dataSource={dataSource}
                 />
-            });
+            );
         }
     }
     export default App;

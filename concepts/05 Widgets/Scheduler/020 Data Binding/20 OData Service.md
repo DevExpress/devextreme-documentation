@@ -58,7 +58,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     import ODataStore from 'devextreme/data/odata/store';
 
     const dataSource = new ODataStore({
-        url: "http://url/to/odata/service"
+        url: "http://url/to/odata/service",
         onLoaded: function () {
             // Event handling commands go here
         }
@@ -88,7 +88,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     import ODataStore from 'devextreme/data/odata/store';
 
     const dataSource = new ODataStore({
-        url: "http://url/to/odata/service"
+        url: "http://url/to/odata/service",
         onLoaded: function () {
             // Event handling commands go here
         }
@@ -100,7 +100,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
                 <Scheduler
                     dataSource={dataSource}
                 />
-            });
+            );
         }
     }
     export default App;
@@ -220,7 +220,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
                 <Scheduler
                     dataSource={dataSource}
                 />
-            });
+            );
         }
     }
     export default App;

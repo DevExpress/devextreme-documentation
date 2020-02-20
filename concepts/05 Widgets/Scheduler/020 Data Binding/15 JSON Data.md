@@ -73,7 +73,7 @@ To bind the **Scheduler** to data in the JSON format, assign the data's URL to t
                 <Scheduler
                     dataSource="http://url/to/json/data"
                 />
-            });
+            );
         }
     }
     export default App;
@@ -156,7 +156,7 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
                 <Scheduler
                     dataSource="http://url/to/json/data/jsonpdata?callback=?"
                 />
-            });
+            );
         }
     }
     export default App;

@@ -65,9 +65,9 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
-    import * as AspNetData from 'devextreme-aspnet-data-nojquery';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service.php";
-    const dataSource = AspNetData.createStore({
+    const dataSource = createStore({
         key: "ID",
         loadUrl: serviceUrl,
         insertUrl: serviceUrl,
@@ -81,8 +81,7 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
         },
         data() {
             return {
-                dataSource,
-                // ...
+                dataSource
             }
         }
     }
@@ -97,9 +96,9 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
-    import * as AspNetData from 'devextreme-aspnet-data-nojquery';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
     const serviceUrl = "http://url/to/my/service.php";
-    const dataSource = AspNetData.createStore({
+    const dataSource = createStore({
         key: "ID",
         loadUrl: serviceUrl,
         insertUrl: serviceUrl,
@@ -111,10 +110,9 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
         render() {
             return (
                 <Scheduler
-                    dataSource={dataSource},
-                    // ...
+                    dataSource={dataSource}
                 />
-            });
+            );
         }
     }
     export default App;

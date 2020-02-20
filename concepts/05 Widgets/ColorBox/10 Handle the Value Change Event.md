@@ -99,14 +99,14 @@ To process a new **ColorBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-color-box ...
-        (onValueChanged)="colorBox_valueChanged($event)">
+        (onValueChanged)="handleValueChanged($event)">
     </dx-color-box>
 
     <!--TypeScript-->
     import { DxColorBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        colorBox_valueChanged (e) {
+        handleValueChanged (e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -125,7 +125,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            :onValueChanged="colorBox_valueChanged"
+            @value-changed="handleValueChanged"
         />
     </template>
 
@@ -141,7 +141,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         },
         data() {
             return {
-                colorBox_valueChanged: function (e) {
+                handleValueChanged: function (e) {
                     let previousValue = e.previousValue;
                     let newValue = e.value;
                     // Event handling commands go here
@@ -161,7 +161,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     import ColorBox from 'devextreme-react/color-box';
 
     class App extends React.Component {
-        colorBox_valueChanged(e) {
+        handleValueChanged(e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -170,7 +170,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         render() {
             return (
                 <ColorBox
-                    onValueChanged={this.colorBox_valueChanged}
+                    onValueChanged={this.handleValueChanged}
                 />
             );
         }

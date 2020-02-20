@@ -129,7 +129,7 @@ If your appointments contain other data fields instead of **recurrenceRule** and
                     recurrenceRuleExpr="rule"
                     recurrenceExceptionExpr="exception"
                 />
-            });
+            );
         }
     }
     export default App;

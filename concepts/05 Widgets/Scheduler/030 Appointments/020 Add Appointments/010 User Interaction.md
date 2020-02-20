@@ -49,11 +49,9 @@ To prevent an end user from adding an appointment, set the **editing**.[allowAdd
 
     <!-- tab: App.vue -->
     <template>
-        <DxScheduler
-            // ...
-        >
+        <DxScheduler ... >
             <DxEditing :allow-adding="true" />
-        <DxScheduler/>
+        </DxScheduler>
     </template>
 
     <script>
@@ -88,12 +86,10 @@ To prevent an end user from adding an appointment, set the **editing**.[allowAdd
     class App extends React.Component {
         render() {
             return (
-                <Scheduler
-                    // ...
-                >
+                <Scheduler ... >
                     <Editing allowAdding={true} />
-                <Scheduler/>
-            });
+                </Scheduler>
+            );
         }
     }
     export default App;

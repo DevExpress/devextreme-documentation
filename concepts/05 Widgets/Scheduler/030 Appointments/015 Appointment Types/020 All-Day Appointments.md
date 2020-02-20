@@ -111,7 +111,7 @@ If appointments in your data source omit the **allDay** field but have another f
                     dataSource={dataSource}
                     allDayExpr="long"
                 />
-            });
+            );
         }
     }
     export default App;

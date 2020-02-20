@@ -48,10 +48,9 @@ To execute certain commands before or after an appointment was added, handle the
 
     <!-- tab: App.vue -->
     <template>
-        <DxScheduler
-            // ...
-            :on-appointment-adding="onAppointmentAdding"
-            :on-appointment-added="onAppointmentAdded"
+        <DxScheduler ...
+            @appointment-adding="onAppointmentAdding"
+            @appointment-added="onAppointmentAdded"
         />
     </template>
 
@@ -101,12 +100,11 @@ To execute certain commands before or after an appointment was added, handle the
     class App extends React.Component {
         render() {
             return (
-                <Scheduler
-                    // ...
-                    onAppointmentAdding: {onAppointmentAdding}
-                    onAppointmentAdded: {onAppointmentAdded}
+                <Scheduler ...
+                    onAppointmentAdding={onAppointmentAdding}
+                    onAppointmentAdded={onAppointmentAdded}
                 />
-            });
+            );
         }
     }
     export default App;

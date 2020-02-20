@@ -18,14 +18,14 @@ To process a new **CheckBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-check-box
-        (onValueChanged)="checkBox_valueChanged($event)">
+        (onValueChanged)="handleValueChanged($event)">
     </dx-check-box>
 
     <!--TypeScript-->
     import { DxCheckBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        checkBox_valueChanged (e) {
+        handleValueChanged (e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -44,7 +44,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxCheckBox
-            :on-value-changed="onValueChanged"
+            @value-changed="handleValueChanged"
         />
     </template>
 
@@ -60,7 +60,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         },
         data() {
             return {
-                onValueChanged: function (e) {
+                handleValueChanged: function (e) {
                     let previousValue = e.previousValue;
                     let newValue = e.value;
                     // Event handling commands go here
@@ -80,7 +80,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     import CheckBox from 'devextreme-react/check-box';
 
     class App extends React.Component {
-        checkBox_valueChanged(e) {
+        handleValueChanged(e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -89,7 +89,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         render() {
             return (
                 <CheckBox
-                    onValueChanged={this.checkBox_valueChanged}
+                    onValueChanged={this.handleValueChanged}
                 />
             );
         }

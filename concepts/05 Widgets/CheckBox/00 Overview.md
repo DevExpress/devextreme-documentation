@@ -25,14 +25,14 @@ The following code adds the **CheckBox** to your page.
     <!--HTML-->
     <dx-check-box
         text="Check me"
-        [(value)]="checkBoxValue">
+        [(value)]="value">
     </dx-check-box>
 
     <!--TypeScript-->
     import { DxCheckBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        checkBoxValue: boolean;
+        value: boolean;
     }
     @NgModule({
         imports: [
@@ -48,7 +48,7 @@ The following code adds the **CheckBox** to your page.
     <template>
         <DxCheckBox
             text="Check me"
-            :value="undefined"
+            :value.sync="value"
         />
     </template>
 
@@ -61,6 +61,11 @@ The following code adds the **CheckBox** to your page.
     export default {
         components: {
             DxCheckBox
+        },
+        data() {
+            return {
+                value: undefined
+            };
         }
     }
     </script>
@@ -75,11 +80,23 @@ The following code adds the **CheckBox** to your page.
     import CheckBox from 'devextreme-react/check-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.value = undefined;
+            this.handleValueChanged = this.handleValueChanged.bind(this);
+        }
+
+        handleValueChanged(e) {
+            this.value = e.value;
+        }
+
         render() {
             return (
                 <CheckBox
                     text="Check me"
-                    value={undefined}
+                    value={this.value}
+                    onValueChanged={this.handleValueChanged}
                 />
             );
         }

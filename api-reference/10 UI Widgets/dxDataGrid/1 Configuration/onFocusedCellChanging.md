@@ -145,7 +145,7 @@ In the following code, the **onFocusedCellChanging** function is used to customi
 
         onFocusedCellChanging(e) { 
             if (e.newColumnIndex == e.prevColumnIndex) {
-                e.newColumnIndex = (e.newColumnIndex == 0 ? e.columns.length - 1 : 0)
+                e.newColumnIndex = (e.newColumnIndex == 0 ? e.columns.length - 1 : 0);
             }
         }
     }

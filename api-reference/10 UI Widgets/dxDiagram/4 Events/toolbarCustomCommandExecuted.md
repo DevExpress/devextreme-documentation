@@ -1,6 +1,6 @@
 ---
-id: dxDiagram.Options.propertiesPanel.groups.groups
-type: Array<Object>
+id: dxDiagram.toolbarCustomCommandExecuted
+type: eventType
 ---
 ---
 ##### shortDescription

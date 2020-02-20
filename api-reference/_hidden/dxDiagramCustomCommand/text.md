@@ -1,5 +1,5 @@
 ---
-id: dxDiagram.Options.propertiesPanel.groups.groups.title
+id: dxDiagramCustomCommand.text
 type: String
 ---
 ---

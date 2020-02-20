@@ -15,7 +15,7 @@ id: FileSystemProviderBase.abortFileUpload()
 <!-- Description goes here -->
 
 ##### param(destinationDirectory): FileSystemItem
-The directory where a file system item is upload to.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

@@ -32,9 +32,6 @@ The **FileManager** can divide a large file in parts and upload them in separate
         <!-- ... -->
     </dx-file-manager>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';

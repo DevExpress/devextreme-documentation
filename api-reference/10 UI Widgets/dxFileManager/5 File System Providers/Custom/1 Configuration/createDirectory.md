@@ -4,10 +4,10 @@ type: function(parentDirectory, name)
 ---
 ---
 ##### shortDescription
-A function that creates a folder.
+A function that creates a directory.
 
 ##### param(parentDirectory): FileSystemItem
-The directory where a new subdirectory should be created.
+The parent directory where a new directory should be created.
 
 ##### param(name): String
 The name of the new directory.

@@ -18,14 +18,14 @@ To process a new **CheckBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-check-box
-        (onValueChanged)="handleValueChanged($event)">
+        (onValueChanged)="handleValueChange($event)">
     </dx-check-box>
 
     <!--TypeScript-->
     import { DxCheckBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        handleValueChanged (e) {
+        handleValueChange (e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -44,7 +44,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxCheckBox
-            @value-changed="handleValueChanged"
+            @value-changed="handleValueChange"
         />
     </template>
 
@@ -60,7 +60,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         },
         data() {
             return {
-                handleValueChanged: function (e) {
+                handleValueChange: function (e) {
                     let previousValue = e.previousValue;
                     let newValue = e.value;
                     // Event handling commands go here
@@ -80,7 +80,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     import CheckBox from 'devextreme-react/check-box';
 
     class App extends React.Component {
-        handleValueChanged(e) {
+        handleValueChange(e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -89,7 +89,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         render() {
             return (
                 <CheckBox
-                    onValueChanged={this.handleValueChanged}
+                    onValueChanged={this.handleValueChange}
                 />
             );
         }

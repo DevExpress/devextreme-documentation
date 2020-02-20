@@ -38,7 +38,7 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            value="#FF0000"
+            :value.sync="color"
             apply-value-mode="instantly"
         />
     </template>
@@ -52,6 +52,11 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
     export default {
         components: {
             DxColorBox
+        },
+        data() {
+            return {
+                color: "#FF0000"
+            };
         }
     }
     </script>
@@ -66,11 +71,27 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
     import ColorBox from 'devextreme-react/color-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                color: "#FF0000"
+            };
+            this.handleValueChange = this.handleValueChange.bind(this); 
+        }
+
+        handleValueChange(e) {
+            this.setState({
+                color: e.value
+            });
+        }
+
         render() {
             return (
                 <ColorBox
-                    value="#FF0000"
+                    value={this.state.color}
                     applyValueMode="instantly"
+                    onValueChanged={this.handleValueChange}
                 />
             );
         }
@@ -99,14 +120,14 @@ To process a new **ColorBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-color-box ...
-        (onValueChanged)="handleValueChanged($event)">
+        (onValueChanged)="handleValueChange($event)">
     </dx-color-box>
 
     <!--TypeScript-->
     import { DxColorBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        handleValueChanged (e) {
+        handleValueChange (e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -125,7 +146,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            @value-changed="handleValueChanged"
+            @value-changed="handleValueChange"
         />
     </template>
 
@@ -141,7 +162,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         },
         data() {
             return {
-                handleValueChanged: function (e) {
+                handleValueChange: function (e) {
                     let previousValue = e.previousValue;
                     let newValue = e.value;
                     // Event handling commands go here
@@ -161,7 +182,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     import ColorBox from 'devextreme-react/color-box';
 
     class App extends React.Component {
-        handleValueChanged(e) {
+        handleValueChange(e) {
             let previousValue = e.previousValue;
             let newValue = e.value;
             // Event handling commands go here
@@ -170,7 +191,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         render() {
             return (
                 <ColorBox
-                    onValueChanged={this.handleValueChanged}
+                    onValueChanged={this.handleValueChange}
                 />
             );
         }

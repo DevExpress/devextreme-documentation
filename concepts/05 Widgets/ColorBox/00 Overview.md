@@ -45,7 +45,7 @@ The following code adds a simple **ColorBox** to your page.
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            value="#FF0000"
+            :value.sync="color"
         />
     </template>
 
@@ -58,6 +58,11 @@ The following code adds a simple **ColorBox** to your page.
     export default {
         components: {
             DxColorBox
+        },
+        data() {
+            return {
+                color: "#FF0000"
+            };
         }
     }
     </script>
@@ -72,10 +77,26 @@ The following code adds a simple **ColorBox** to your page.
     import ColorBox from 'devextreme-react/color-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                color: "#FF0000"
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            this.setState({
+                color: e.value
+            });
+        }
+
         render() {
             return (
                 <ColorBox
-                    value="#FF0000"
+                    value={this.state.color}
+                    onValueChanged={this.handleValueChange}
                 />
             );
         }

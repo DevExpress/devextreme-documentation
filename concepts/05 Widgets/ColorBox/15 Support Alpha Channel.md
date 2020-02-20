@@ -38,7 +38,7 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            :value.sync="value"
+            :value.sync="color"
             :edit-alpha-channel="true"
         />
     </template>
@@ -55,7 +55,7 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
         },
         data() {
             return {
-                value: "rgba(255, 144, 0, 0.3)"
+                color: "rgba(255, 144, 0, 0.3)"
             };
         }
     }
@@ -77,11 +77,10 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
             this.state = {
                 value: "rgba(255, 144, 0, 0.3)"
             }
-            this.handleValueChanged = this.handleValueChanged.bind(this);
+            this.handleValueChange = this.handleValueChange.bind(this);
         }
 
-        handleValueChanged(e) {
-            console.log(e.value);
+        handleValueChange(e) {
             this.setState({
                 value: e.value
             });
@@ -92,7 +91,7 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
                 <ColorBox
                     value={this.state.value}
                     editAlphaChannel={true}
-                    onValueChanged={this.handleValueChanged}
+                    onValueChanged={this.handleValueChange}
                 />
             );
         }

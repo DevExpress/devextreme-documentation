@@ -96,7 +96,9 @@ For the **List** picker, you can specify the step of available time values in mi
     import DateBox from 'devextreme-react/date-box';
 
     class App extends React.Component {
-        constructor() {
+        constructor(props) {
+            super(props);
+
             this.date = new Date();
         }
 

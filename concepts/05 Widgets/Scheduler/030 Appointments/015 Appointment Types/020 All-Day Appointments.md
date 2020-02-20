@@ -56,6 +56,66 @@ If appointments in your data source omit the **allDay** field but have another f
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="allDayAppointments"
+            all-day-expr="long"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+    const allDayAppointments = [{
+        text: "Fix bugs",
+        startDate: new Date(2016, 4, 10),
+        long: true
+    }];
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                allDayAppointments
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+    const dataSource = [{
+        text: "Fix bugs",
+        startDate: new Date(2016, 4, 10),
+        long: true
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={dataSource}
+                    allDayExpr="long"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 [note]The **Scheduler** ignores the **startDate**'s and **endDate**'s time component for all-day appointments.

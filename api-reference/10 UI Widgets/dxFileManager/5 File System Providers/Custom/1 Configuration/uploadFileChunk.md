@@ -7,7 +7,7 @@ type: function(file, uploadInfo)
 A function that uploads a file in chunks.
 
 ##### param(file): File
-The file that is uploaded.
+The file that is being uploaded.
 
 ##### param(uploadInfo): UploadInfo
 Information about the file upload session.

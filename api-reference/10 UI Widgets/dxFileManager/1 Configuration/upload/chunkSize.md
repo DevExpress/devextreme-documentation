@@ -9,7 +9,7 @@ Specifies a chunk size in bytes.
 
 ---
 
-The FileManager can upload large files in parts. The widget divides a file into parts and sends them in separate requests. 
+The **FileManager** can divide a large file in parts and upload them in separate requests. 
 
 ---
 
@@ -96,7 +96,7 @@ The FileManager can upload large files in parts. The widget divides a file into 
     class App extends React.Component {
         render() {
             return (
-                <FileManager >
+                <FileManager>
                     <Upload chunkSize={500000} />
                 </FileManager>
             );

@@ -83,19 +83,23 @@ The following code adds the **CheckBox** to your page.
         constructor(props) {
             super(props);
 
-            this.value = undefined;
+            this.state = {
+                value: undefined
+            };
             this.handleValueChanged = this.handleValueChanged.bind(this);
         }
 
         handleValueChanged(e) {
-            this.value = e.value;
+            this.setState({
+                value: e.value
+            });
         }
 
         render() {
             return (
                 <CheckBox
                     text="Check me"
-                    value={this.value}
+                    value={this.state.value}
                     onValueChanged={this.handleValueChanged}
                 />
             );

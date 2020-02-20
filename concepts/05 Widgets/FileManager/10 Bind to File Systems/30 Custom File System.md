@@ -2,13 +2,7 @@ Use the **FileManager** widget's [Custom](/api-reference/10%20UI%20Widgets/dxFil
 
 ![FileManager - Custom Provider](/images/FileManager/custom-provider.png)
 
-Follow the steps below to implement custom file system provider in the widget.
-
-1. Assign the [Custom](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/') file system provider to the [fileSystemProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileSystemProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider') option to implement a custom file system provider and bind the **FileManager** widget to it.
-
-2. Use the [getItems](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom/1%20Configuration/getItems.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/Configuration/#getItems') function to get file system items. The **[fieldName]Expr** options specify the attribute names that store file system item keys, names, sizes, modification dates, and etc.
-
-3. Implement APIs to handle file operations (add, delete, rename, and etc).
+Assign the [Custom](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/') file system provider to the [fileSystemProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileSystemProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider') option to implement a custom file system provider and bind the **FileManager** widget to it. The [getItems](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom/1%20Configuration/getItems.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/Configuration/#getItems') function allows you to get file system items. Use the **[fieldName]Expr** options specify the attribute names that store file system item keys, names, sizes, modification dates, and etc. You can also use the 'copyItem', 'deleteItem', and other functions to handle file operations.
 
 ---
 

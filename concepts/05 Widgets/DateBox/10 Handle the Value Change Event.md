@@ -74,7 +74,9 @@ If instead of picking a value, an end user types it into the **DateBox**, this v
     import DateBox from 'devextreme-react/date-box';
 
     class App extends React.Component {
-        constructor() {
+        constructor(props) {
+            super(props);
+
             this.date = new Date();
         }
 

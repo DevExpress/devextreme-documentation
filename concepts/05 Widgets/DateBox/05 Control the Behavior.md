@@ -76,7 +76,9 @@ The **DateBox** widget allows an end user to pick or type a value. To specify wh
     import DateBox from 'devextreme-react/date-box';
 
     class App extends React.Component {
-        constructor() {
+        constructor(props) {
+            constructor(props);
+
             this.date = new Date();
         }
 
@@ -86,7 +88,7 @@ The **DateBox** widget allows an end user to pick or type a value. To specify wh
                     defaultValue={this.date}
                     type="date"
                     pickerType="calendar"
-                    applyValueMode="useButtons" // or "instantly"
+                    applyValueMode="useButtons" {/* or "instantly" */}
                 />
             );
         }

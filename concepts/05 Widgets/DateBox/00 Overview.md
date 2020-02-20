@@ -80,7 +80,9 @@ The following code adds a simple **DateBox** to your page.
     import DateBox from 'devextreme-react/date-box';
 
     class App extends React.Component {
-        constructor() {
+        constructor(props) {
+            super(props);
+
             this.date = new Date();
         }
 

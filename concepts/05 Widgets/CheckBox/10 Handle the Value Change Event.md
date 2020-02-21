@@ -18,13 +18,16 @@ To process a new **CheckBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-check-box
-        [(onValueChanged)]="handleValueChange($event)">
+        [(value)]="checkBox_value"
+        (onValueChanged)="handleValueChange($event)">
     </dx-check-box>
 
     <!--TypeScript-->
     import { DxCheckBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        checkBox_value = undefined;
+
         handleValueChange (e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
@@ -44,7 +47,8 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxCheckBox
-            @value-changed.sync="handleValueChange"
+            :value.sync="checkBox_value"
+            @value-changed="handleValueChange"
         />
     </template>
 
@@ -60,13 +64,16 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         },
         data() {
             return {
-                handleValueChange: function (e) {
-                    const previousValue = e.previousValue;
-                    const newValue = e.value;
-                    // Event handling commands go here
-                }
+                checkBox_value: undefined
             };
         },
+        methods: {
+            handleValueChange(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
+        }
     }
     </script>
 
@@ -83,18 +90,28 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         constructor(props) {
             super(props);
 
+            this.state = {
+                checkBox_value: undefined
+            };
+
             this.handleValueChange = this.handleValueChange.bind(this);
         }
 
         handleValueChange(e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
+
+            this.setState({
+                checkBox_value: newValue
+            });
+
             // Event handling commands go here
         }
 
         render() {
             return (
                 <CheckBox
+                    value={this.state.checkBox_value}
                     onValueChanged={this.handleValueChange}
                 />
             );

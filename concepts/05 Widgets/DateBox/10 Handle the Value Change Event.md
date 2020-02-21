@@ -195,18 +195,17 @@ To process a new **DateBox** value, you need to handle the value change event. I
         handleValueChange(e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
+            // Event handling commands go here
 
             this.setState({
                 date: newValue
             });
-
-            // Event handling commands go here
         }
 
         render() {
             return (
                 <DateBox
-                    value={this.state.date},
+                    value={this.state.date}
                     onValueChanged={this.handleValueChange}
                 />
             );

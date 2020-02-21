@@ -120,6 +120,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-color-box ...
+        [(value)]="color"
         (onValueChanged)="handleValueChange($event)">
     </dx-color-box>
 
@@ -127,6 +128,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     import { DxColorBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        color: string = "#FF0000";
+
         handleValueChange (e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
@@ -146,6 +149,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
+            :value.sync="color"
             @value-changed="handleValueChange"
         />
     </template>
@@ -162,12 +166,15 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         },
         data() {
             return {
-                handleValueChange: function (e) {
-                    const previousValue = e.previousValue;
-                    const newValue = e.value;
-                    // Event handling commands go here
-                }
+                color: "#FF0000"
             };
+        },
+        methods: {
+            handleValueChange: function (e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
         }
     }
     </script>
@@ -182,15 +189,30 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     import ColorBox from 'devextreme-react/color-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                color: "#FF0000"
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
         handleValueChange(e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
+
+            this.setState({
+                color: newValue
+            });
+
             // Event handling commands go here
         }
 
         render() {
             return (
                 <ColorBox
+                    value={this.state.color}
                     onValueChanged={this.handleValueChange}
                 />
             );

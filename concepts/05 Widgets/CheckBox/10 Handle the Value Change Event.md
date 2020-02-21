@@ -7,8 +7,8 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     $(function() {
         $("#checkBoxContainer").dxCheckBox({
             onValueChanged: function (e) {
-                let previousValue = e.previousValue;
-                let newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
@@ -18,7 +18,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-check-box
-        (onValueChanged)="handleValueChange($event)">
+        [(onValueChanged)]="handleValueChange($event)">
     </dx-check-box>
 
     <!--TypeScript-->
@@ -26,8 +26,8 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     // ...
     export class AppComponent {
         handleValueChange (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -44,7 +44,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxCheckBox
-            @value-changed="handleValueChange"
+            @value-changed.sync="handleValueChange"
         />
     </template>
 
@@ -61,8 +61,8 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         data() {
             return {
                 handleValueChange: function (e) {
-                    let previousValue = e.previousValue;
-                    let newValue = e.value;
+                    const previousValue = e.previousValue;
+                    const newValue = e.value;
                     // Event handling commands go here
                 }
             };
@@ -80,9 +80,15 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     import CheckBox from 'devextreme-react/check-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
         handleValueChange(e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
 

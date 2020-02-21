@@ -115,13 +115,15 @@ To process a new **DateBox** value, you need to handle the value change event. I
 
     <!--HTML-->
     <dx-date-box ...
-        [(onValueChanged)]="handleValueChange($event)">
+        [(value)]="date"
+        (onValueChanged)="handleValueChange($event)">
     </dx-date-box>
 
     <!--TypeScript-->
     import { DxDateBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        date: Date = new Date(),
         handleValueChange (e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
@@ -141,7 +143,8 @@ To process a new **DateBox** value, you need to handle the value change event. I
     <!-- tab: App.vue -->
     <template>
         <DxDateBox
-            @value-changed.sync="handleValueChange"
+            :value.sync="date"
+            @value-changed="handleValueChange"
         />
     </template>
 
@@ -157,12 +160,15 @@ To process a new **DateBox** value, you need to handle the value change event. I
         },
         data() {
             return {
-                handleValueChange: function (e) {
-                    const previousValue = e.previousValue;
-                    const newValue = e.value;
-                    // Event handling commands go here
-                }
+                date: new Date(),
             };
+        },
+        methods: {
+            handleValueChange(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
         }
     }
     </script>
@@ -180,18 +186,27 @@ To process a new **DateBox** value, you need to handle the value change event. I
         constructor(props) {
             super(props);
 
+            this.state = {
+                date: new Date()
+            };
             this.handleValueChange = this.handleValueChange.bind(this);
         }
 
         handleValueChange(e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
+
+            this.setState({
+                date: newValue
+            });
+
             // Event handling commands go here
         }
 
         render() {
             return (
                 <DateBox
+                    value={this.state.date},
                     onValueChanged={this.handleValueChange}
                 />
             );

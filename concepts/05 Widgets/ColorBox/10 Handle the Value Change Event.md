@@ -4,12 +4,12 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
 ##### jQuery
 
     <!--JavaScript-->
-        $(function() {
-            $("#colorBoxContainer").dxColorBox({
-                value: "#FF0000",
-                applyValueMode: 'instantly'
-            });
+    $(function() {
+        $("#colorBoxContainer").dxColorBox({
+            value: "#FF0000",
+            applyValueMode: 'instantly'
         });
+    });
 
 ##### Angular
 
@@ -198,7 +198,7 @@ To process a new **ColorBox** value, you need to handle the value change event. 
             this.handleValueChange = this.handleValueChange.bind(this);
         }
 
-        handleValueChange(e) {
+        handleValueChange(e) {  
             const previousValue = e.previousValue;
             const newValue = e.value;
             // Event handling commands go here

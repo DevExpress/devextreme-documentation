@@ -71,8 +71,8 @@ By default, exactly one panel can be in the expanded state at one moment. To cha
         render() {
             return (
                 <Accordion
-                    collapsible={true}
-                    multiple={true}>
+                    collapsible={true} {/* All panels may be collapsed */}
+                    multiple={true}>   {/* Multiple panels may be expanded */}
                 </Accordion>
             );
         }

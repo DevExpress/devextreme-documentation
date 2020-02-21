@@ -201,12 +201,11 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         handleValueChange(e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
+            // Event handling commands go here
 
             this.setState({
                 color: newValue
             });
-
-            // Event handling commands go here
         }
 
         render() {

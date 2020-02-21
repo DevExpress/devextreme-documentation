@@ -75,7 +75,7 @@ In addition to value formatting, the **displayFormat** can be used as a mask to 
             return (
                 <DateBox
                     useMaskBehavior={true}
-                    displayFormat="EEEE, d 'of' MMM" // "Tuesday, 16 of Oct"
+                    displayFormat="EEEE, d 'of' MMM" {/* "Tuesday, 16 of Oct" */}
                 />
             );
         }

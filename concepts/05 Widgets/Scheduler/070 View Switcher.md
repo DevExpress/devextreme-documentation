@@ -42,8 +42,8 @@ To specify what views are available within the switcher, use the [views](/api-re
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-            :views='views'
-		/>
+            :views="views"
+        />
     </template>
 
     <script>
@@ -58,10 +58,8 @@ To specify what views are available within the switcher, use the [views](/api-re
         },
         data() {
             return {
-				views: ['day', 'week', 'agenda']
+                views: ['day', 'week', 'agenda']
             }
-        },
-        methods: {
         }
     }
     </script>
@@ -75,15 +73,13 @@ To specify what views are available within the switcher, use the [views](/api-re
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    
+    const views = ["day", "week", "agenda"];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
-                <Scheduler views={['day', 'week', 'agenda']} />
+                <Scheduler views={views} />
             );
         }
     }
@@ -151,8 +147,6 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
         data() {
             return {
             }
-        },
-        methods: {
         }
     }
     </script>
@@ -168,10 +162,6 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
     import Scheduler from 'devextreme-react/scheduler';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Scheduler useDropDownViewSwitcher={true} />

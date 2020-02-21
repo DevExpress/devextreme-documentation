@@ -86,7 +86,7 @@ The following code adds a simple **Accordion** to your page. Note that each data
 
 ##### Vue
 
-    <!--tab: App.vue-->
+    <!-- tab: App.vue -->
     <template>
         <DxAccordion
             :data-source="accordionData"
@@ -126,7 +126,7 @@ The following code adds a simple **Accordion** to your page. Note that each data
                     state: "CA",
                     city: "San Francisco",
                     street: "Stanford Ave"
-                }];
+                }]
             };
         },
         methods: {
@@ -174,9 +174,17 @@ The following code adds a simple **Accordion** to your page. Note that each data
 
         renderItem(itemData) {
             return (
-                (<div>
-                    { Object.keys(itemData).map(key =><p key={key}>{key}: {itemData[key]}</p> ) }
-                </div>)
+                <div>
+                    { 
+                        Object.keys(itemData).map(key => {
+                            return (
+                                <p key={key}>
+                                    {key}: {itemData[key]}
+                                </p> 
+                            )}
+                        )
+                    }
+                </div>
             );
         }
     }

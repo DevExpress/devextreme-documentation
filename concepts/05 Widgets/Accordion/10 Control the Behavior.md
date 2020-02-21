@@ -38,12 +38,11 @@ By default, exactly one panel can be in the expanded state at one moment. To cha
 
 ##### Vue
 
-    <!--tab: App.vue-->
+    <!-- tab: App.vue -->
     <template>
         <DxAccordion
             :collapsible="true" <!-- All panels may be collapsed -->
-            :multiple="true"       <!-- Multiple panels may be expanded -->
-        >
+            :multiple="true">   <!-- Multiple panels may be expanded -->
         </DxAccordion>
     </template>
     <script>

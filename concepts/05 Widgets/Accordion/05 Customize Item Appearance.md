@@ -59,7 +59,7 @@ For a minor customization of **Accordion** panels, you can define [specific fiel
 
 ##### Vue
 
-    <!--tab: App.vue-->
+    <!-- tab: App.vue -->
     <template>
         <DxAccordion
             :data-source="accordionData">
@@ -87,7 +87,7 @@ For a minor customization of **Accordion** panels, you can define [specific fiel
                 }, {
                     title: "Position",
                     text: "Network Administrator"
-                }];
+                }]
             };
         }
     };
@@ -140,11 +140,11 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         itemTitleTemplate="title"
         itemTemplate="item">
         <div *dxTemplate="let employee of 'title'">
-            <span>{{employee.firstName}} </span>
+            <span>{{employee.firstName}}&nbsp;</span>
             <span>{{employee.lastName}}</span>
         </div>
         <div *dxTemplate="let employee of 'item'">
-            <span>{{employee.birthDate}} </span>
+            <span>{{employee.birthDate}}&nbsp;</span>
             <span>{{employee.position}}</span>
         </div>
     </dx-accordion>
@@ -173,7 +173,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ##### Vue
 
-    <!--tab: App.vue-->
+    <!-- tab: App.vue -->
     <template>
         <DxAccordion
             :data-source="accordionData"
@@ -181,13 +181,13 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
             item-template="item">
             <template #title="{ data }">
                 <div>
-                    <span>{{ data.firstName }} </span>
+                    <span>{{ data.firstName }}&nbsp;</span>
                     <span>{{ data.lastName }}</span>
                 </div>
             </template>
             <template #item="{ data }">
                 <div>
-                    <span>{{ data.birthDate }} </span>
+                    <span>{{ data.birthDate }}&nbsp;</span>
                     <span>{{ data.position }}</span>
                 </div>
             </template>
@@ -252,7 +252,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         renderTitle(data) {
             return (
                 <div>
-                    <span>{data.firstName} </span>
+                    <span>{data.firstName}&nbsp;</span>
                     <span>{data.lastName}</span>
                 </div>
             );
@@ -261,7 +261,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         renderItem(data) {
             return (
                 <div>
-                    <span>{data.birthDate} </span>
+                    <span>{data.birthDate}&nbsp;</span>
                     <span>{data.position}</span>
                 </div>
             );
@@ -293,11 +293,11 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
         $("#accordionContainer").dxAccordion({
             dataSource: accordionData,
             itemTemplate: function (itemData, itemIndex, itemElement) {
-                itemElement.append("<p>" + itemData.birthDate + "</p>");
+                itemElement.append("<p>" + itemData.birthDate + "&nbsp;</p>");
                 itemElement.append("<p>" + itemData.position + "</p>");
             },
             itemTitleTemplate: function (itemData, itemIndex, itemElement) {
-                itemElement.append("<span>" + itemData.firstName + "</span> ");
+                itemElement.append("<span>" + itemData.firstName + "&nbsp;</span> ");
                 itemElement.append("<span>" + itemData.lastName + "</span>");
             }
         });
@@ -312,7 +312,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview/"
 }
 
-You can also customize individual item. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component. When using jQuery, you can declare the item as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxAccordion/Configuration/items/#template') option or assign a customization function straight to this option.
+You can also customize individual items. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component. When using jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxAccordion/Configuration/items/#template') option or assign a customization function straight to this option.
 
 ---
 
@@ -344,17 +344,17 @@ You can also customize individual item. In Angular, Vue, and React, declare them
 
 ##### Vue
 
-    <!--tab: App.vue-->
+    <!-- tab: App.vue -->
     <template>
         <DxAccordion>
             <DxItem title="John Smith">
                 <template #default>
-                    <div><span>Network Administrator</span></div>
+                    <div>Network Administrator</div>
                 </template>
             </DxItem>
             <DxItem title="Samantha Jones">
                 <template #default>
-                    <div><span>Technical Writer</span></div>
+                    <div>Technical Writer</div>
                 </template>
             </DxItem>
         </DxAccordion>

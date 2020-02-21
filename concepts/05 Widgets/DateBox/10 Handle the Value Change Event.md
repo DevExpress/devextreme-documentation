@@ -160,7 +160,7 @@ To process a new **DateBox** value, you need to handle the value change event. I
         },
         data() {
             return {
-                date: new Date(),
+                date: new Date()
             };
         },
         methods: {

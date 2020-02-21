@@ -131,7 +131,7 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-            :use-drop-down-view-switcher='true' />
+            :use-drop-down-view-switcher="true" />
     </template>
 
     <script>
@@ -143,10 +143,6 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
     export default {
         components: {
             DxScheduler
-        },
-        data() {
-            return {
-            }
         }
     }
     </script>

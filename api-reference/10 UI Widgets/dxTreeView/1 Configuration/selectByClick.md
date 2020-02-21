@@ -5,8 +5,12 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not an item becomes selected if a user clicks it.
+Specifies whether an item becomes selected if a user clicks it.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/ItemSelectionAndCustomization/"
+}
+
 #####See Also#####
-- [Select Nodes - User Interaction](/concepts/05%20Widgets/TreeView/25%20Select%20Nodes/05%20User%20Interaction.md '/Documentation/Guide/Widgets/TreeView/Select_Nodes/#User_Interaction')
+- [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#showCheckBoxesMode')

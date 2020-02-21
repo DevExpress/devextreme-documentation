@@ -3,14 +3,15 @@ id: dxTreeView.unselectItem(itemElement)
 ---
 ---
 ##### shortDescription
-Cancels the selection of an item found using its DOM node.
+Cancels the selection of a **TreeView** node found using its DOM node.
 
 ##### return: Boolean
-<!-- Description goes here -->
+**false** if no node was found.
 
 ##### param(itemElement): Node
-The item's DOM node.
+A DOM node.
 
 ---
-#####See Also#####
-- [Select Nodes Using the API](/concepts/05%20Widgets/TreeView/25%20Select%20Nodes/02%20Using%20the%20API.md '/Documentation/Guide/Widgets/TreeView/Select_Nodes/#Using_the_API')
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\dxTreeView\3 Methods\unselectAll().md' -->

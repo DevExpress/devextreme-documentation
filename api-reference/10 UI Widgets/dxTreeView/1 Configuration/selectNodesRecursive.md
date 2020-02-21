@@ -5,7 +5,9 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not to select nodes recursively.
+Specifies whether all child nodes should be selected when their parent node is. Applies only if the [selectionMode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectionMode') is *"multiple"*.
 
 ---
-If this option is enabled, the widget selects (unselects) all child nodes if a user selects (unselects) the parent node.
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/ItemSelectionAndCustomization/"
+}

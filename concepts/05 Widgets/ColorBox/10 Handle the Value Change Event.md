@@ -4,12 +4,12 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
 ##### jQuery
 
     <!--JavaScript-->
-    $(function() {
-        $("#colorBoxContainer").dxColorBox({
-            value: "#FF0000",
-            applyValueMode: 'instantly'
+        $(function() {
+            $("#colorBoxContainer").dxColorBox({
+                value: "#FF0000",
+                applyValueMode: 'instantly'
+            });
         });
-    });
 
 ##### Angular
 
@@ -109,8 +109,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     $(function() {
         $("#colorBoxContainer").dxColorBox({
             onValueChanged: function (e) {
-                let previousValue = e.previousValue;
-                let newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
@@ -128,8 +128,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     // ...
     export class AppComponent {
         handleValueChange (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -163,8 +163,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         data() {
             return {
                 handleValueChange: function (e) {
-                    let previousValue = e.previousValue;
-                    let newValue = e.value;
+                    const previousValue = e.previousValue;
+                    const newValue = e.value;
                     // Event handling commands go here
                 }
             };
@@ -183,8 +183,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
 
     class App extends React.Component {
         handleValueChange(e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
 

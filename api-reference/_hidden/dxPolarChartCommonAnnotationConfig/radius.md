@@ -4,9 +4,11 @@ type: Number
 default: undefined
 ---
 ---
-##### shortDescription      
+##### shortDescription
 Places an annotation at the specified distance from the center of the widget.
----     
+
+---
+     
 
 #####See Also      
 - [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle')

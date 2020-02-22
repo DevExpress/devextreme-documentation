@@ -7,7 +7,8 @@ inherits: dxPolarChart.Options.commonAnnotationSettings
 ##### shortDescription
 Specifies the annotation collection.
 
----     
+---
+     
 Annotations are images and text blocks that provide additional information about the visualized data.
 
 ![DevExtreme PolarChart: Annotations](/images/ChartJS/annotations/polar-chart-text-image-annotation.png)       

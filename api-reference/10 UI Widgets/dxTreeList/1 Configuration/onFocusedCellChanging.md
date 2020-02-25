@@ -51,50 +51,9 @@ The index of the previously focused cell's row.
 The visible rows' properties.
 
 ---
-In the following code, the **onFocusedCellChanging** function is used to customize keyboard navigation within a row. The cell navigation is looped in a single row because focus moves to the row's first cell after reaching the last cell and vice versa:
 
----
-##### jQuery
+<!-- %fullDescription% -->
 
-    <!--JavaScript-->
-    $(function() {
-        $("#treeListContainer").dxTreeList({
-            // ...
-            onFocusedCellChanging: function (e) {
-                if (e.newColumnIndex == e.prevColumnIndex) {
-                    e.newColumnIndex = (e.newColumnIndex == 0 ? e.columns.length - 1 : 0)
-                }
-            }
-        });
-    });
-
-##### Angular
-
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        onFocusedCellChanging (e) { 
-            if (e.newColumnIndex == e.prevColumnIndex) {
-                e.newColumnIndex = (e.newColumnIndex == 0 ? e.columns.length - 1 : 0)
-            }
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
-
-    <!--HTML-->
-    <dx-tree-list ...
-        (onFocusedCellChanging)="onFocusedCellChanging($event)">
-    </dx-tree-list>
+<!-- import * from 'api-reference\10 UI Widgets\dxDataGrid\1 Configuration\onFocusedCellChanging.md' -->
     
 ---
-
-#####See Also#####
-- [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowKey')
-- [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedColumnIndex')

@@ -81,6 +81,83 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxAccordion
+            :ref="myAccordionRef" />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxAccordion from "devextreme-vue/accordion";
+
+    const myAccordionRef = "my-accordion";
+
+    export default {
+        components: {
+            DxAccordion
+        },
+        data() {
+            return {
+                myAccordionRef
+            }
+        },
+        computed: {
+            accordion: function() {
+                return this.$refs[myAccordionRef].instance;
+            }
+        },
+        mounted: function() {
+            this.accordion.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.accordion.registerKeyHandler("space", function(e) {
+                // ...
+            });
+        }
+    }
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { Accordion } from 'devextreme-react/accordion';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.accordionRef = React.createRef();
+        }
+
+        get accordion() {
+            return this.accordionRef.current.instance;
+        }
+
+        render() {
+            return (
+                <Accordion ref={this.accordionRef} />
+            );
+        }
+
+        componentDidMount() {
+            this.accordion.registerKeyHandler('backspace', function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.accordion.registerKeyHandler('space', function(e) {
+                // ...
+            });
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

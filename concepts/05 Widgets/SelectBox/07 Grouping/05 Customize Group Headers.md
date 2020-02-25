@@ -54,6 +54,129 @@ By default, group headers display text of the **key** field in a bold font. You 
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxDataSource"
+            :grouped="true"
+            display-expr="name"
+            value-expr="count"
+            group-template="group"
+        >
+            <template #group="{ data }">
+                <p>
+                    {{ data.key + ' | Count: ' + data.overallCount }}
+                </p>
+            </template>
+        </DxSelectBox>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const fruitsVegetables = [{
+                key: "Fruits",
+                items: [
+                    { name: "Apples", count: 10 },
+                    { name: "Oranges", count: 12 },
+                    { name: "Lemons", count: 15 }
+                ]
+            }, {
+                key: "Vegetables",
+                items: [
+                    { name: "Potatoes", count: 5 },
+                    { name: "Tomatoes", count: 9 },
+                    { name: "Turnips", count: 8 }
+                ]
+            }];
+            const selectBoxDataSource = new DataSource({
+                store: fruitsVegetables,
+                map: function(groupedItem) {
+                    let overallCount = 0;
+                    groupedItem.items.forEach(function(item) {
+                        overallCount += item.count;
+                    })
+                    return Object.assign(groupedItem, { overallCount: overallCount });
+                }
+            });
+
+            return {
+                selectBoxDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+    const selectBoxDataSource = new DataSource({
+        store: fruitsVegetables,
+        map: function(groupedItem) {
+            let overallCount = 0;
+            groupedItem.items.forEach(function(item) {
+                overallCount += item.count;
+            })
+            return Object.assign(groupedItem, { overallCount: overallCount });
+        }
+    });
+
+    const renderGroup = (data) => {
+        return (
+            <p>
+                {data.key + ' | Count: ' + data.overallCount}
+            </p>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxDataSource}
+                    grouped="true"
+                    displayExpr="name"
+                    valueExpr="count"
+                    groupRender={renderGroup}
+                />
+            );
+        }
+    }
+    export default App;
+
 #####AngularJS
 
     <!--HTML-->

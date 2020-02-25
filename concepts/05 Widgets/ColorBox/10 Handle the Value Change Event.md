@@ -33,6 +33,71 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox
+            :value.sync="color"
+            apply-value-mode="instantly"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxColorBox from 'devextreme-vue/color-box';
+
+    export default {
+        components: {
+            DxColorBox
+        },
+        data() {
+            return {
+                color: "#FF0000"
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ColorBox from 'devextreme-react/color-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                color: "#FF0000"
+            };
+            this.handleValueChange = this.handleValueChange.bind(this); 
+        }
+
+        handleValueChange(e) {
+            this.setState({
+                color: e.value
+            });
+        }
+
+        render() {
+            return (
+                <ColorBox
+                    value={this.state.color}
+                    applyValueMode="instantly"
+                    onValueChanged={this.handleValueChange}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To process a new **ColorBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxColorBox/Configuration/#onValueChanged') option when you configure the widget.
@@ -44,8 +109,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     $(function() {
         $("#colorBoxContainer").dxColorBox({
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
@@ -55,16 +120,19 @@ To process a new **ColorBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-color-box ...
-        (onValueChanged)="colorBox_valueChanged($event)">
+        [(value)]="color"
+        (onValueChanged)="handleValueChange($event)">
     </dx-color-box>
 
     <!--TypeScript-->
     import { DxColorBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        colorBox_valueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+        color: string = "#FF0000";
+
+        handleValueChange (e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -75,6 +143,81 @@ To process a new **ColorBox** value, you need to handle the value change event. 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox
+            :value.sync="color"
+            @value-changed="handleValueChange"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxColorBox from 'devextreme-vue/color-box';
+
+    export default {
+        components: {
+            DxColorBox
+        },
+        data() {
+            return {
+                color: "#FF0000"
+            };
+        },
+        methods: {
+            handleValueChange: function (e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ColorBox from 'devextreme-react/color-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                color: "#FF0000"
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {  
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+            // Event handling commands go here
+
+            this.setState({
+                color: newValue
+            });
+        }
+
+        render() {
+            return (
+                <ColorBox
+                    value={this.state.color}
+                    onValueChanged={this.handleValueChange}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

@@ -57,7 +57,7 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarCh
     import { DxPolarChartModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        polarChart_onLegendClick (e) {
+        cancelSeriesClick (e) {
             e.event.cancel = true;
         }
     }
@@ -70,8 +70,55 @@ The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarCh
     })
 
     <!--HTML--><dx-polar-chart ...
-        (onLegendClick)="polarChart_onLegendClick($event)">
+        (onLegendClick)="cancelSeriesClick($event)">
     </dx-polar-chart>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPolarChart ...
+            @legend-click="cancelSeriesClick">
+        </DxPolarChart>
+    </template>
+
+    <script>
+    import DxPolarChart from 'devextreme-vue/polar-chart';
+
+    export default {
+        components: {
+            DxPolarChart
+        },
+        methods: {
+            cancelSeriesClick (e) {
+                e.event.cancel = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import PolarChart from 'devextreme-react/polar-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PolarChart ...
+                    onLegendClick={this.cancelSeriesClick}>
+                </PolarChart>
+            );
+        }
+
+        cancelSeriesClick (e) {
+            e.event.cancel = true;
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets/Errors and Warnings.*" Destination="" />
+  <MenuRule SourcePattern="ApiReference:^10 UI Widgets/Errors and Warnings.*" Destination="" />
+  <MenuRule SourcePattern="ApiReference:^40 SPA Framework/zz Errors and Warnings.*" Destination="" />
+  <MenuRule SourcePattern="ApiReference:^30 Data Layer/zz Errors and Warnings.*" Destination="" />
+  <MenuRule SourcePattern="ApiReference:^50 Common/utils/zz Errors and Warnings.*" Destination="" />
+
+  <MenuRule SourcePattern="ApiReference:^10 UI Widgets$" Destination="aa01 API Reference/10 UI Widgets" />
+  <MenuRule SourcePattern="ApiReference:^10 UI Widgets/(.*?)" Destination="aa01 API Reference/10 UI Widgets/$1" />
+  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets/(([a-z]{2})?(\d{2,3})?\s)?(.*)" Destination="aa01 API Reference/10 UI Widgets/$4" />
+  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets" Destination="" />
+  <MenuRule SourcePattern="ApiReference:^50 Common/utils(.*?)" Destination="aa01 API Reference/Utilities$1" />
+  <MenuRule SourcePattern="ApiReference:^50 Common/Object Structures(.*?)" Destination="aa01 API Reference/Types$1" />
+  <MenuRule SourcePattern="ApiReference:^50 Common(.*?)" Destination="aa01 API Reference$1" />
+  <MenuRule SourcePattern="ApiReference:^(.*?)" Destination="aa01 API Reference/$1" />
+
+  <MenuRule SourcePattern="Howto:^00 Getting Started/40 (TypeScript Support.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^00 Getting Started/(DevExtreme CLI.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^Getting Started/Widget Basics - AngularJS(.*?)" Destination="" />
+  <MenuRule SourcePattern="Howto:^Getting Started/Widget Basics - Knockout(.*?)" Destination="" />
+  <MenuRule SourcePattern="Howto:^00 Getting Started/(.*?)" Destination="bb00 Getting Started/ab$1" />
+  <MenuRule SourcePattern="Howto:^Getting Started" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^Common/(05 Introduction to DevExtreme.*?)" Destination="bb00 Getting Started/aa$1" />
+  <MenuRule SourcePattern="Howto:^Common/(Introduction to DevExtreme.*?)" Destination="ba $1" />
+  <MenuRule SourcePattern="Howto:^Common/(10 Supported Browsers.*?)" Destination="bb00 Getting Started/zc$1" />
+  <MenuRule SourcePattern="Howto:^Common/(20 Migrate to the New Version.*?)" Destination="bb00 Getting Started/zc$1" />
+  <MenuRule SourcePattern="Howto:^Common/(Migrate to the New Version.*?)" Destination="bz $1" />
+  <MenuRule SourcePattern="Howto:^Common/07 DevExtreme Packages.*" Destination="" />
+  
+  <MenuRule SourcePattern="Howto:^05 Widgets$" Destination="bb65 Widgets" />
+  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/10 Data Visualization Widgets/70 Appearance Customization(.*?)" Destination="bb80 Common Features/Chart Appearance Customization$1" />
+  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/15 Advanced/40 (3rd-Party Frameworks.*?)" Destination="bb80 Common Features/zz $1" />
+ 
+  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^30 Data Layer/(.*?)" Destination="bb66 Data Binding/$1" />
+  <MenuRule SourcePattern="Howto:^30 Data Layer" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^05 Widgets/(.*?)" Destination="bb65 Widgets/$1" />
+  <MenuRule SourcePattern="Howto:^05 Widgets" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^99 SPA Framework(.*?)" Destination="" />
+  <MenuRule SourcePattern="Howto:^99 VS Integration(.*?)" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^34 ASP.NET MVC Controls(.*?)" Destination="" />
+  
+  <MenuRule SourcePattern="Howto:^40 Angular Components/(.*?)" Destination="bb10 Angular/ab$1" />
+  <MenuRule SourcePattern="Howto:^40 Angular Components" Destination="" />
+  
+  <MenuRule SourcePattern="Howto:^50 React Components/(.*?)" Destination="bb12 React/ab$1" />
+  <MenuRule SourcePattern="Howto:^50 React Components" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^55 Vue Components/(.*?)" Destination="bb14 Vue/ab$1" />
+  <MenuRule SourcePattern="Howto:^55 Vue Components" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^58 jQuery Components/(.*?)" Destination="bb50 jQuery/ab$1" />
+  <MenuRule SourcePattern="Howto:^58 jQuery Components" Destination="" />
+  
+  <MenuRule SourcePattern="Howto:^60 (Themes and Styles.*)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^60 (Themes.*)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^70 (Demos Inside.*)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^Common/(.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^Common" Destination="" />
+
+  <MenuRule SourcePattern="Howto:^(.*?)" Destination="bb$1" />
+</MenuRules>

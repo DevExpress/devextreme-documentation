@@ -56,6 +56,65 @@ For the **List** picker, you can specify the step of available time values in mi
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            :value="date"
+            type="time"
+            picker-type="list"
+            :interval="20"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        },
+        data() {
+            return {
+                date: new Date()
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.date = new Date();
+        }
+
+        render() {
+            return (
+                <DateBox
+                    defaultValue={this.date}
+                    type="time"
+                    pickerType="list"
+                    interval={20}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

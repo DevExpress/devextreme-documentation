@@ -5,6 +5,9 @@ id: dxTreeList.addRow()
 ##### shortDescription
 Adds an empty data row to the highest hierarchical level and switches it to the editing state.
 
+##### return: Promise<void>
+<!-- Description goes here -->
+
 ---
 Use this method if you want to add an empty row. If you need to add a row with data, do the following:    
 

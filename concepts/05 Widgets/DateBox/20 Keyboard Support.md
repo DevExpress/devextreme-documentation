@@ -94,6 +94,83 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox :ref="myDateBoxRef" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    const myDateBoxRef = 'my-date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        },
+        data() {
+            return {
+                myDateBoxRef
+            };
+        },
+        computed: {
+            dateBox: function() {
+                return this.$refs[myDateBoxRef].instance;
+            }
+        },
+        mounted: function() {
+            this.dateBox.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.dateBox.registerKeyHandler("space", function(e) {
+                // ...
+            });
+        }
+    }
+    </script>
+    
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dateBoxRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <DateBox ref={this.dateBoxRef} />
+            );
+        }
+
+        get dateBox() {
+            return this.dateBoxRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.dateBox.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            this.dateBox.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

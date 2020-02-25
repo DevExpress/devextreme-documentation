@@ -17,8 +17,8 @@ The widget's instance.
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.fileItem): Object
-File parameters.
+##### field(e.file): FileSystemItem
+The opened file.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

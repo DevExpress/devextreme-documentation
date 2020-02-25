@@ -7,6 +7,7 @@ The **Tabs** is a tab strip used to switch between pages or views. This widget i
 The following code adds the **Tabs** widget to your page. One of the tabs has an icon, another has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#badge').
 
 ---
+
 ##### jQuery
 
     <!--JavaScript-->

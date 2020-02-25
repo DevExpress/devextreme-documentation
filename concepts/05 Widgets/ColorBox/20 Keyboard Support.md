@@ -81,6 +81,83 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox :ref="myColorBoxRef" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxColorBox from 'devextreme-vue/color-box';
+
+    const myColorBoxRef = 'my-color-box';
+
+    export default {
+        components: {
+            DxColorBox
+        },
+        data() {
+            return {
+                myColorBoxRef
+            };
+        },
+        computed: {
+            colorBox: function() {
+                return this.$refs[myColorBoxRef].instance;
+            }
+        },
+        mounted: function() {
+            this.colorBox.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.colorBox.registerKeyHandler("space", function(e) {
+                // ...
+            });
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ColorBox from 'devextreme-react/color-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.colorBoxRef = React.createRef();
+        }
+
+        render() {
+            return (
+                <ColorBox ref={this.colorBoxRef} />
+            );
+        }
+
+        get colorBox() {
+            return this.colorBoxRef.current.instance;
+        }
+
+        componentDidMount() {
+            this.colorBox.registerKeyHandler("backspace", function (e) {
+                // The argument "e" contains information on the event
+            });
+            this.colorBox.registerKeyHandler("space", function (e) {
+                // ...
+            });
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

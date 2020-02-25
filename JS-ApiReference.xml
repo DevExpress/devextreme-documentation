@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE articles [<!ELEMENT articles ANY><!ELEMENT article ANY><!ATTLIST article id ID #REQUIRED>]>
 <articles folder="c:\content" type="ApiReference" version="18.2" docsdir="api-reference">
-  <article name="UI Widgets" sort="10 UI Widgets" id="UI Widgets">
+  <article name="UI Widgets" sort="10 UI Widgets" id="UI Widgets" root="true" file="c:\content\10 UI Widgets\10 UI Widgets.md">
     <article name="dxAccordion" sort="dxAccordion" id="UI Widgets/dxAccordion" root="true" file="c:\content\10 UI Widgets\EventsMixin\EventsMixin.md;c:\content\10 UI Widgets\Component\Component.md;c:\content\10 UI Widgets\DOMComponent\DOMComponent.md;c:\content\10 UI Widgets\Widget\Widget.md;c:\content\10 UI Widgets\DataHelperMixin\DataHelperMixin.md;c:\content\10 UI Widgets\CollectionWidget\CollectionWidget.md;c:\content\10 UI Widgets\dxAccordion\dxAccordion.md">
       <article name="Configuration" sort="1 Configuration" id="UI Widgets/dxAccordion/Configuration" root="true" file="c:\content\10 UI Widgets\Component\1 Configuration\Configuration.md;c:\content\10 UI Widgets\DOMComponent\1 Configuration\Configuration.md;c:\content\10 UI Widgets\Widget\1 Configuration\Configuration.md;c:\content\10 UI Widgets\CollectionWidget\1 Configuration\Configuration.md;c:\content\10 UI Widgets\dxAccordion\1 Configuration\Configuration.md">
         <article name="accessKey" sort="accessKey" id="UI Widgets/dxAccordion/Configuration/accessKey" file="c:\content\10 UI Widgets\Widget\1 Configuration\accessKey.md" />

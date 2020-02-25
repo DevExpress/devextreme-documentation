@@ -58,7 +58,7 @@
     </article>
     <article name="DevExtreme CLI" sort="50 DevExtreme CLI" root="true" id="Getting Started/DevExtreme CLI" file="c:\content\00 Getting Started\50 DevExtreme CLI.md" tags="getting started,devextreme-cli,cli,devextreme-angular-template" />
   </article>
-  <article name="Widgets" sort="05 Widgets" id="Widgets">
+  <article name="Widgets" sort="05 Widgets" id="Widgets" file="c:\content\05 Widgets\05 Widgets.md" root="true">
     <article name="Accordion" sort="Accordion" id="Widgets/Accordion">
       <article name="Overview" sort="00 Overview" root="true" id="Widgets/Accordion/Overview" file="c:\content\05 Widgets\Accordion\00 Overview.md" tags="accordion,collection container,collection widget,overview" />
       <article name="Customize Item Appearance" sort="05 Customize Item Appearance" root="true" id="Widgets/Accordion/Customize Item Appearance" file="c:\content\05 Widgets\Accordion\05 Customize Item Appearance.md" tags="accordion,item appearance,customize,templates" />

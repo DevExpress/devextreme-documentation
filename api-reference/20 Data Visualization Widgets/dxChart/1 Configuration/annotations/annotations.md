@@ -92,9 +92,6 @@ To configure annotations, assign an array of objects to the **annotations[]** op
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
     import DxChart, {
         DxAnnotation
     } from 'devextreme-vue/chart';
@@ -114,9 +111,6 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: App.js -->
     import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
 
     import Chart, {
         Annotation

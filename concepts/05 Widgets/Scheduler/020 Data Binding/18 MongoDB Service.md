@@ -51,6 +51,72 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
         [dataSource]="store">
     </dx-scheduler>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
+    const serviceUrl = "http://url/to/my/service";
+    const dataSource = createStore({
+        key: "ID",
+        loadUrl: serviceUrl,
+        insertUrl: serviceUrl,
+        updateUrl: serviceUrl,
+        deleteUrl: serviceUrl
+    });
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+    import { createStore } from 'devextreme-aspnet-data-nojquery';
+    const serviceUrl = "http://url/to/my/service";
+    const dataSource = createStore({
+        key: "ID",
+        loadUrl: serviceUrl,
+        insertUrl: serviceUrl,
+        updateUrl: serviceUrl,
+        deleteUrl: serviceUrl
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={dataSource}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 See <a href="https://community.devexpress.com/blogs/oliver/archive/2017/03/24/devextreme-real-world-patterns.aspx" target="_blank">this series of blog posts</a> for more information on using DevExtreme widgets in applications with MongoDB.

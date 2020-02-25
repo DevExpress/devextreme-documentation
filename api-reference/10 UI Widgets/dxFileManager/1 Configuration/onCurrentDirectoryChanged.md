@@ -15,7 +15,7 @@ Information about the event that caused the function's execution.
 The widget's instance.
 
 ##### field(e.directory): FileSystemItem
-<!-- Description goes here -->
+The current directory.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

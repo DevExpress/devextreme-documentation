@@ -67,4 +67,91 @@ If a node is supposed to be selected initially, set its [selected](/api-referenc
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            key-expr="name"
+            display-expr="name"
+            show-check-boxes-mode="normal"
+            selected-expr="isSelected"
+            :items="hierarchicalData" 
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+
+    const hierarchicalData = [{
+        name: 'Fruits',
+        isSelected: true,
+        items: [
+            { name: 'Apples' },
+            { name: 'Oranges' }
+        ]
+    }, {
+        name: 'Vegetables',
+        isSelected: true,
+        items: [
+            { name: 'Cucumbers' },
+            { name: 'Tomatoes' }
+        ]
+    }];
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                hierarchicalData
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeView from 'devextreme-react/tree-view';
+
+    const hierarchicalData = [{
+        name: 'Fruits',
+        isSelected: true,
+        items: [
+            { name: 'Apples' },
+            { name: 'Oranges' }
+        ]
+    }, {
+        name: 'Vegetables',
+        isSelected: true,
+        items: [
+            { name: 'Cucumbers' },
+            { name: 'Tomatoes' }
+        ]
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    keyExpr="name"
+                    displayExpr="name"
+                    showCheckBoxesMode="normal"
+                    selectedExpr="isSelected"
+                    items={hierarchicalData} />
+            );
+        }
+    }
+
+    export default App;
+
 ---

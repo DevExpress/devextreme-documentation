@@ -1,13 +1,11 @@
 ---
-id: dxGanttTimeMarker.dateTime
-type: Date | Number | String | function()
-default: undefined
+id: dxTreeView.getSelectedNodeKeys()
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: Date | Number | String
+##### return: Array<any>
 <!-- Description goes here -->
 
 ---

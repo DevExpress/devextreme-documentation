@@ -5,6 +5,9 @@ id: dxTreeView.selectItem(key)
 ##### shortDescription
 Selects an item with a specific key.
 
+##### return: Boolean
+<!-- Description goes here -->
+
 ##### param(key): any
 The item's key.
 

@@ -53,7 +53,7 @@
       <article name="Access a Widget" sort="10 Access a Widget" root="true" id="Getting Started/TypeScript Support/Access a Widget" file="c:\content\00 Getting Started\40 TypeScript Support\10 Access a Widget.md" tags="typescript support,access a widget,change options,call methods,handle events" />
     </article>
   </article>
-  <article name="Widgets" sort="05 Widgets" id="Widgets">
+  <article name="Widgets" sort="05 Widgets" id="Widgets" file="c:\content\05 Widgets\05 Widgets.md" root="true">
     <article name="Accordion" sort="Accordion" id="Widgets/Accordion">
       <article name="Overview" sort="00 Overview" root="true" id="Widgets/Accordion/Overview" file="c:\content\05 Widgets\Accordion\00 Overview.md" tags="accordion,collection container,collection widget,overview" />
       <article name="Customize Item Appearance" sort="05 Customize Item Appearance" root="true" id="Widgets/Accordion/Customize Item Appearance" file="c:\content\05 Widgets\Accordion\05 Customize Item Appearance.md" tags="accordion,item appearance,customize,templates" />

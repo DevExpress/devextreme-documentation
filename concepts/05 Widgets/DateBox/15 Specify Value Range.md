@@ -37,6 +37,54 @@ To specify the date or time range, use the [min](/api-reference/10%20UI%20Widget
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            value="2015/12/31"
+            type="date"
+            min="2015/1/1"
+            max="2015/12/31"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DateBox
+                    value="2015/12/31"
+                    type="date"
+                    min="2015/1/1"
+                    max="2015/12/31"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 If an entered value falls out of the range, the widget displays an error message. To change the message text, specify the [dateOutOfRangeMessage](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/dateOutOfRangeMessage.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#dateOutOfRangeMessage') option. 

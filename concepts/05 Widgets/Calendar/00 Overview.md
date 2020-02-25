@@ -40,6 +40,52 @@ The following code adds a simple **Calendar** to your page.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar :value="date" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        },
+        data() {
+            return {
+                date: new Date()
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    const date = new Date();
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar defaultValue={date} />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 The **Calendar** accepts values of the following formats: <a href="http://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">dates</a>, numeric values specifying the number of milliseconds since January 1, 1970, 00:00:00, and strings that match the following patterns: `'yyyy-MM-dd'`, `'yyyy-MM-ddTHH:mm:ss'`, `'yyyy-MM-ddTHH:mm:ssZ'`, or `'yyyy-MM-ddTHH:mm:ssx'`. Note that in code, the format stays the same until a value of a different format is assigned to the **value** option. For example, numbers remain numbers until you pass a string to the **value** option.
@@ -54,7 +100,7 @@ To specify which day should be considered the beginning of the week, pass its in
         $("#calendarContainer").dxCalendar({
             firstDayOfWeek: 1
         });
-    });   
+    });
 
 ##### Angular
 
@@ -76,6 +122,45 @@ To specify which day should be considered the beginning of the week, pass its in
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar :first-day-of-week="1" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar firstDayOfWeek={1} />
+            );
+        }
+    }
+    export default App;
 
 ---
 

@@ -1,7 +1,7 @@
 For a minor customization of tiles, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/items/') in item data objects. For example, the following code generates three tiles: the first is disabled, the second is not customized, the third is hidden.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#tileViewContainer").dxTileView({
@@ -13,7 +13,7 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxTileViewModule } from "devextreme-angular";
@@ -37,6 +37,58 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
     <dx-tile-view 
         [dataSource]="tileViewData">
     </dx-tile-view>
+
+##### Vue
+
+    <template>
+      <DxTileView :data-source="dataSource"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTileView } from 'devextreme-vue/tile-view';
+
+    export default {
+      components: {
+        DxTileView
+      },
+      data() {
+        return {
+          dataSource: [
+            { text: 'Alabama', disabled: true },
+            { text: 'Alaska' },
+            { text: 'Arizona', visible: false }
+          ]
+        };
+      }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TileView } from 'devextreme-react/tile-view';
+
+    const dataSource = [
+        { text: 'Alabama', disabled: true },
+        { text: 'Alaska' },
+        { text: 'Arizona', visible: false }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TileView dataSource={dataSource}/>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -85,7 +137,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         background: gray;
     }
 
-#####AngularJS
+##### AngularJS
 
     <!--HTML-->
     <div ng-controller="DemoController">
@@ -138,7 +190,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         </div>
     </div>
 
-    <!--JavaScript-->var viewModel = {
+    <!--JavaScript-->const viewModel = {
         tileViewData: [
             { name: "Alabama", capital: "Montgomery" },
             { name: "Alaska", capital: "Juneau" },
@@ -160,7 +212,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#itemTemplate') callback function.
 
-    <!--JavaScript-->var tileViewData = [
+    <!--JavaScript-->const tileViewData = [
         { name: "Alabama", capital: "Montgomery" },
         { name: "Alaska", capital: "Juneau" },
         { name: "Arizona", capital: "Phoenix" },
@@ -194,7 +246,7 @@ You can also customize an individual tile. For this purpose, declare a template 
         <!-- ... -->
     </script>
 
-    <!--JavaScript-->var tileViewData = [
+    <!--JavaScript-->const tileViewData = [
         { name: "Alabama", capital: "Montgomery" },
         { name: "Alaska", capital: "Juneau", template: $("#individualTileTemplate") },
         // ...

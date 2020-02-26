@@ -40,7 +40,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     <!--JavaScript-->
     function registerKeyHandlers () {
-        let tileView =  $("#tileViewContainer").dxTileView("instance");
+        const tileView =  $("#tileViewContainer").dxTileView("instance");
         tileView.registerKeyHandler("backspace", function (e) {
             // The argument "e" contains information on the event
         });
@@ -76,6 +76,78 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTileView :ref="myTileViewRef" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTileView from 'devextreme-vue/tile-view';
+
+    const myTileViewRef = 'my-tile-view';
+
+    export default {
+        components: {
+            DxTileView
+        },
+        data() {
+            return {
+                myTileViewRef
+            };
+        },
+        computed: {
+            tileView: function() {
+                return this.$refs[myTileViewRef].instance;
+            }
+        },
+        mounted: function() {
+            this.tileView.registerKeyHandler("backspace", function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.tileView.registerKeyHandler("space", function(e) {
+                // ...
+            });
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TileView } from 'devextreme-react/tile-view';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.tileViewRef = React.createRef();
+        }
+        get tileView() {
+            return this.tileViewRef.current.instance;
+        }
+        render() {
+            return (
+                <TileView ref={this.tileViewRef} />
+            );
+        }
+        componentDidMount() {
+            this.tileView.registerKeyHandler('backspace', function(e) {
+                // The argument "e" contains information on the event
+            });
+            this.tileView.registerKeyHandler('space', function(e) {
+                // ...
+            });
+        }
+    }
+    export default App;
 
 ---
 

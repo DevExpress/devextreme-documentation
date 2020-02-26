@@ -6,16 +6,16 @@ width = baseItemWidth * widthRatio</span>
 For example, the following code makes the *"Massachusetts"* tile twice bigger than the other tiles.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var tileViewData = [
-        { text: "Maine", capital: "Augusta" },
-        { text: "Maryland", capital: "Annapolis" },
-        { text: "Massachusetts", capital: "Boston", height: 2, widthRatio: 2 }
-        // ...
-    ];
+    <!--JavaScript-->$(function() {
+        const tileViewData = [
+            { text: "Maine", capital: "Augusta" },
+            { text: "Maryland", capital: "Annapolis" },
+            { text: "Massachusetts", capital: "Boston", height: 2, widthRatio: 2 }
+            // ...
+        ];
 
-    $(function() {
         $("#tileViewContainer").dxTileView({
             dataSource: tileViewData,
             baseItemHeight: 130,
@@ -50,6 +50,68 @@ For example, the following code makes the *"Massachusetts"* tile twice bigger th
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+      <DxTileView
+        :data-source="tileViewData"
+        :base-item-height="130"
+        :base-item-width="180"
+      />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTileView } from 'devextreme-vue/tile-view';
+
+    export default {
+      components: {
+        DxTileView
+      },
+      data() {
+        return {
+          tileViewData: [
+            { text: 'Maine', capital: 'Augusta' },
+            { text: 'Maryland', capital: 'Annapolis' },
+            { text: 'Massachusetts', capital: 'Boston', height: 2, widthRatio: 2 }
+            // ...
+          ]
+        };
+      }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TileView } from 'devextreme-react/tile-view';
+
+    const tileViewData = [
+        { text: 'Maine', capital: 'Augusta' },
+        { text: 'Maryland', capital: 'Annapolis' },
+        { text: 'Massachusetts', capital: 'Boston', height: 2, widthRatio: 2 }
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TileView
+                    dataSource={tileViewData}
+                    baseItemHeight={130}
+                    baseItemWidth={180}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

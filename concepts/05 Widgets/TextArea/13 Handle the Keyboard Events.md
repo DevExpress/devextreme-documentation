@@ -64,12 +64,12 @@ The **TextArea** raises four keyboard events: [keyDown](/api-reference/10%20UI%2
 ##### Vue
 
     <template>
-      <DxTextArea
-        @key-down="onKeyDown"
-        @key-press="onKeyPress"
-        @key-up="onKeyUp"
-        @enter-key="onEnterKey"
-      />
+        <DxTextArea
+            @key-down="onKeyDown"
+            @key-press="onKeyPress"
+            @key-up="onKeyUp"
+            @enter-key="onEnterKey"
+        />
     </template>
 
     <script>
@@ -78,26 +78,26 @@ The **TextArea** raises four keyboard events: [keyDown](/api-reference/10%20UI%2
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      },
-      methods: {
-        onKeyDown(e) {
-          const keyCode = e.event.key;
-          // Event handling commands go here
+        components: {
+            DxTextArea
         },
-        onKeyPress(e) {
-          const keyCode = e.event.key;
-          // Event handling commands go here
-        },
-        onKeyUp(e) {
-          const keyCode = e.event.key;
-          // Event handling commands go here
-        },
-        onEnterKey(e) {
-          // Event handling commands go here
+        methods: {
+            onKeyDown(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onKeyPress(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onKeyUp(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onEnterKey(e) {
+                // Event handling commands go here
+            }
         }
-      }
     }
     </script>
 

@@ -33,7 +33,7 @@ When a user types a text into the **TextArea**, the widget writes this text into
 ##### Vue
 
     <template>
-      <DxTextArea value-change-event="keyup"/>
+        <DxTextArea value-change-event="keyup"/>
     </template>
 
     <script>
@@ -43,9 +43,9 @@ When a user types a text into the **TextArea**, the widget writes this text into
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      }
+        components: {
+            DxTextArea
+        }
     }
     </script>
 
@@ -112,7 +112,7 @@ To process a new **TextArea** value, you need to handle the value change event. 
 ##### Vue
 
     <template>
-      <DxTextArea @value-changed="onValueChanged"/>
+        <DxTextArea @value-changed="onValueChanged"/>
     </template>
 
     <script>
@@ -122,16 +122,16 @@ To process a new **TextArea** value, you need to handle the value change event. 
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      },
-      methods: {
-        onValueChanged(e) {
-          const previousValue = e.previousValue;
-          const newValue = e.value;
-          // Event handling commands go here
+        components: {
+            DxTextArea
+        },
+        methods: {
+            onValueChanged(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
         }
-      }
     }
     </script>
 

@@ -35,10 +35,10 @@ If the size of the widget should be fixed, specify it using the [height](/api-re
 ##### Vue
 
     <template>
-      <DxTextArea
-        :height="200"
-        :width="300"
-      />
+        <DxTextArea
+            :height="200"
+            :width="300"
+        />
     </template>
 
     <script>
@@ -48,9 +48,9 @@ If the size of the widget should be fixed, specify it using the [height](/api-re
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      }
+        components: {
+            DxTextArea
+        }
     }
     </script>
 
@@ -116,11 +116,11 @@ Alternatively, the widget's height can adapt to the widget's contents. In this c
 ##### Vue
 
     <template>
-      <DxTextArea
-        :auto-resize-enabled="true"
-        :min-height="100"
-        :max-height="200"
-      />
+        <DxTextArea
+            :auto-resize-enabled="true"
+            :min-height="100"
+            :max-height="200"
+        />
     </template>
 
     <script>
@@ -130,9 +130,9 @@ Alternatively, the widget's height can adapt to the widget's contents. In this c
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      }
+        components: {
+            DxTextArea
+        }
     }
     </script>
 

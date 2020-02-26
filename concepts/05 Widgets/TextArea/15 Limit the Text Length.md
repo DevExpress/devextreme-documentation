@@ -33,7 +33,7 @@ To limit the text length, assign an integer number to the **maxLength** option. 
 ##### Vue
 
     <template>
-      <DxTextArea :max-length="200"/>
+        <DxTextArea :max-length="200"/>
     </template>
 
     <script>
@@ -43,9 +43,9 @@ To limit the text length, assign an integer number to the **maxLength** option. 
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      }
+        components: {
+            DxTextArea
+        }
     }
     </script>
 

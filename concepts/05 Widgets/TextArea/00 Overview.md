@@ -41,7 +41,7 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
 ##### Vue
 
     <template>
-      <DxTextArea placeholder="Type a text here..."/>
+        <DxTextArea placeholder="Type a text here..."/>
     </template>
 
     <script>
@@ -51,9 +51,9 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      }
+        components: {
+            DxTextArea
+        }
     }
     </script>
 
@@ -112,7 +112,7 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
 ##### Vue
 
     <template>
-      <DxTextArea :spellcheck="false"/>
+        <DxTextArea :spellcheck="false"/>
     </template>
 
     <script>
@@ -122,9 +122,9 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      }
+        components: {
+            DxTextArea
+        }
     }
     </script>
 
@@ -185,10 +185,10 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
 ##### Vue
 
     <template>
-      <DxTextArea
-        :read-only="true"
-        value="The text that should not be edited"
-      />
+        <DxTextArea
+            :read-only="true"
+            value="The text that should not be edited"
+        />
     </template>
 
     <script>
@@ -198,9 +198,9 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
-      components: {
-        DxTextArea
-      }
+        components: {
+            DxTextArea
+        }
     }
     </script>
 

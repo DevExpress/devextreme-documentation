@@ -1,6 +1,6 @@
 Use the [backgroundImageUrl](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/#backgroundImageUrl '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#backgroundImageUrl') option to specify a background image for a shape.
 
-[note] Shape images should be supplied as SVG files. 
+[note] Shape images should be in SVG format. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithIcons/"

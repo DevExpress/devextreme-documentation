@@ -7,7 +7,7 @@ The **TextBox** is a widget that enables a user to enter and edit a single line 
 The following code adds a simple **TextBox** with a [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#placeholder') to your page.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="textBoxContainer" style="width:300px"></div>
 
@@ -17,7 +17,7 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -38,9 +38,31 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
         // ...
     })
 
+##### Vue
+
+    <template>
+      <DxTextBox placeholder="Type a text here..."/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+      components: {
+        DxTextBox
+      }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {
@@ -60,7 +82,7 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
 If an end user should _not_ be able to edit the value in the **TextBox**, assign **true** to the **readOnly** option. In this case, make sure to set the **value** option too.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
@@ -69,7 +91,7 @@ If an end user should _not_ be able to edit the value in the **TextBox**, assign
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -91,9 +113,34 @@ If an end user should _not_ be able to edit the value in the **TextBox**, assign
         // ...
     })
 
+##### Vue
+
+    <template>
+      <DxTextBox
+        :read-only="true"
+        value="The value that should not be edited"
+      />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+      components: {
+        DxTextBox
+      }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {

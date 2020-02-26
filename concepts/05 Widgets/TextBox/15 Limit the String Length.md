@@ -33,7 +33,7 @@ To limit the string length, assign an integer number to the **maxLength** option
 ##### Vue
 
     <template>
-      <DxTextBox :max-length="10"/>
+        <DxTextBox :max-length="10"/>
     </template>
 
     <script>
@@ -43,9 +43,9 @@ To limit the string length, assign an integer number to the **maxLength** option
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      }
+        components: {
+            DxTextBox
+        }
     }
     </script>
 

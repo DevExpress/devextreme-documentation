@@ -33,7 +33,7 @@ Depending on the value the **TextBox** should hold, specify the widget [mode](/a
 ##### Vue
 
     <template>
-      <DxTextBox mode="password"/>
+        <DxTextBox mode="password"/>
     </template>
 
     <script>
@@ -43,9 +43,9 @@ Depending on the value the **TextBox** should hold, specify the widget [mode](/a
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      }
+        components: {
+            DxTextBox
+        }
     }
     </script>
 

@@ -41,7 +41,7 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
 ##### Vue
 
     <template>
-      <DxTextBox placeholder="Type a text here..."/>
+        <DxTextBox placeholder="Type a text here..."/>
     </template>
 
     <script>
@@ -51,9 +51,9 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      }
+        components: {
+            DxTextBox
+        }
     }
     </script>
 
@@ -116,10 +116,10 @@ If an end user should _not_ be able to edit the value in the **TextBox**, assign
 ##### Vue
 
     <template>
-      <DxTextBox
-        :read-only="true"
-        value="The value that should not be edited"
-      />
+        <DxTextBox
+            :read-only="true"
+            value="The value that should not be edited"
+        />
     </template>
 
     <script>
@@ -129,9 +129,9 @@ If an end user should _not_ be able to edit the value in the **TextBox**, assign
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      }
+        components: {
+            DxTextBox
+        }
     }
     </script>
 

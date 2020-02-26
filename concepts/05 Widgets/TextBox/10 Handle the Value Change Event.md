@@ -33,7 +33,7 @@ When a user types a value into the **TextBox**, this value applies when the <a h
 ##### Vue
 
     <template>
-      <DxTextBox value-change-event="keyup"/>
+        <DxTextBox value-change-event="keyup"/>
     </template>
 
     <script>
@@ -43,9 +43,9 @@ When a user types a value into the **TextBox**, this value applies when the <a h
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      }
+        components: {
+            DxTextBox
+        }
     }
     </script>
 
@@ -114,7 +114,7 @@ To process a new **TextBox** value, you need to handle the value change event. I
 ##### Vue
 
     <template>
-      <DxTextBox @value-changed="onValueChanged"/>
+        <DxTextBox @value-changed="onValueChanged"/>
     </template>
 
     <script>
@@ -124,16 +124,16 @@ To process a new **TextBox** value, you need to handle the value change event. I
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      },
-      methods: {
-        onValueChanged(e) {
-          const previousValue = e.previousValue;
-          const newValue = e.value;
-          // Event handling commands go here
+        components: {
+            DxTextBox
+        },
+        methods: {
+            onValueChanged(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
         }
-      }
     }
     </script>
 

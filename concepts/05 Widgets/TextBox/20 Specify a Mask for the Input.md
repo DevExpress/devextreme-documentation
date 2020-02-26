@@ -110,10 +110,10 @@ You can also define custom masking elements using the [maskRules](/api-reference
 ##### Vue
 
     <template>
-      <DxTextBox
-        :mask-rules="maskRules"
-        mask="SFFFFHN"
-      />
+        <DxTextBox
+            :mask-rules="maskRules"
+            mask="SFFFFHN"
+        />
     </template>
 
     <script>
@@ -123,28 +123,28 @@ You can also define custom masking elements using the [maskRules](/api-reference
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      },
-      data() {
-        return {
-          maskRules: {
-            // a single character
-            S: '$',
+        components: {
+            DxTextBox
+        },
+        data() {
+            return {
+                maskRules: {
+                    // a single character
+                    S: '$',
 
-            // a regular expression
-            H: /[0-9A-F]/,
+                    // a regular expression
+                    H: /[0-9A-F]/,
 
-            // an array of characters
-            N: ['$', '%', '&', '@'],
+                    // an array of characters
+                    N: ['$', '%', '&', '@'],
 
-            // a function
-            F: function(char) {
-              return char == char.toUpperCase();
-            }
-          }
-        };
-      }
+                    // a function
+                    F: function(char) {
+                        return char == char.toUpperCase();
+                    }
+                }
+            };
+        }
     }
     </script>
 
@@ -229,10 +229,10 @@ By default, the widget uses underscores to designate blanks in the masked value.
 ##### Vue
 
     <template>
-      <DxTextBox
-        mask="+1 (200) 000-0000"
-        mask-char="‒"
-      />
+        <DxTextBox
+            mask="+1 (200) 000-0000"
+            mask-char="‒"
+        />
     </template>
 
     <script>
@@ -242,9 +242,9 @@ By default, the widget uses underscores to designate blanks in the masked value.
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      }
+        components: {
+            DxTextBox
+        }
     }
     </script>
 
@@ -308,10 +308,10 @@ If the input value does not match the mask, the **TextBox** displays an error me
 ##### Vue
 
     <template>
-      <DxTextBox
-        mask="+1 (200) 000-0000"
-        mask-invalid-message="The input value does not match the mask"
-      />
+        <DxTextBox
+            mask="+1 (200) 000-0000"
+            mask-invalid-message="The input value does not match the mask"
+        />
     </template>
 
     <script>
@@ -321,9 +321,9 @@ If the input value does not match the mask, the **TextBox** displays an error me
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      }
+        components: {
+            DxTextBox
+        }
     }
     </script>
 

@@ -64,12 +64,12 @@ The **TextBox** raises four keyboard events: [keyDown](/api-reference/10%20UI%20
 ##### Vue
 
     <template>
-      <DxTextBox
-        @key-down="onKeyDown"
-        @key-press="onKeyPress"
-        @key-up="onKeyUp"
-        @enter-key="onEnterKey"
-      />
+        <DxTextBox
+            @key-down="onKeyDown"
+            @key-press="onKeyPress"
+            @key-up="onKeyUp"
+            @enter-key="onEnterKey"
+        />
     </template>
 
     <script>
@@ -79,26 +79,26 @@ The **TextBox** raises four keyboard events: [keyDown](/api-reference/10%20UI%20
     import { DxTextBox } from 'devextreme-vue/text-box';
 
     export default {
-      components: {
-        DxTextBox
-      },
-      methods: {
-        onKeyDown(e) {
-          const keyCode = e.event.key;
-          // Event handling commands go here
+        components: {
+            DxTextBox
         },
-        onKeyPress(e) {
-          const keyCode = e.event.key;
-          // Event handling commands go here
-        },
-        onKeyUp(e) {
-          const keyCode = e.event.key;
-          // Event handling commands go here
-        },
-        onEnterKey(e) {
-          // Event handling commands go here
+        methods: {
+            onKeyDown(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onKeyPress(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onKeyUp(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onEnterKey(e) {
+                // Event handling commands go here
+            }
         }
-      }
     }
     </script>
 

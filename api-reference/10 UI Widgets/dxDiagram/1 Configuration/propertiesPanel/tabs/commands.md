@@ -5,7 +5,7 @@ type: Array<dxDiagramCustomCommand> | Array<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Lists commands in a tab.
 
 ---
-<!-- Description goes here -->
+You can populate a tab with commands or with groups of commands. When the [groups](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/tabs/groups/) option is specified, the **commands** option is not in effect.

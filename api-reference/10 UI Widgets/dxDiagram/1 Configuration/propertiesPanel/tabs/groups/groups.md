@@ -4,7 +4,8 @@ type: Array<Object>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
+Contains an array of command groups in the tab.
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
+}

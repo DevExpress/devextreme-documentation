@@ -4,7 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a title of the group.
 
 ---
-<!-- Description goes here -->

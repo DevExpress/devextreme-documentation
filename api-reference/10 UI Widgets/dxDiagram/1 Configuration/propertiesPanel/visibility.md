@@ -6,7 +6,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the panel's visibility.
 
 ---
-<!-- Description goes here -->

@@ -51,7 +51,7 @@ The following code adds a primitive **TileView** to your page.
 ##### Vue
 
     <template>
-      <DxTileView :data-source="dataSource"/>
+        <DxTileView :data-source="dataSource"/>
     </template>
 
     <script>
@@ -61,19 +61,19 @@ The following code adds a primitive **TileView** to your page.
     import { DxTileView } from 'devextreme-vue/tile-view';
 
     export default {
-      components: {
-        DxTileView
-      },
-      data() {
-        return {
-          dataSource: [
-            { text: 'Alabama' },
-            { text: 'Alaska' },
-            { text: 'Arizona' },
-            // ...
-          ]
-        };
-      }
+        components: {
+            DxTileView
+        },
+        data() {
+            return {
+                dataSource: [
+                    { text: 'Alabama' },
+                    { text: 'Alaska' },
+                    { text: 'Arizona' },
+                    // ...
+                ]
+            };
+        }
     }
     </script>
 
@@ -142,7 +142,7 @@ By default, the widget is oriented horizontally, but you can orient it verticall
 ##### Vue
 
     <template>
-      <DxTileView direction="vertical"/>
+        <DxTileView direction="vertical"/>
     </template>
 
     <script>
@@ -152,9 +152,9 @@ By default, the widget is oriented horizontally, but you can orient it verticall
     import { DxTileView } from 'devextreme-vue/tile-view';
 
     export default {
-      components: {
-        DxTileView
-      }
+        components: {
+            DxTileView
+        }
     }
     </script>
 

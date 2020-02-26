@@ -41,7 +41,7 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
 ##### Vue
 
     <template>
-      <DxTileView :data-source="dataSource"/>
+        <DxTileView :data-source="dataSource"/>
     </template>
 
     <script>
@@ -51,18 +51,18 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
     import { DxTileView } from 'devextreme-vue/tile-view';
 
     export default {
-      components: {
-        DxTileView
-      },
-      data() {
-        return {
-          dataSource: [
-            { text: 'Alabama', disabled: true },
-            { text: 'Alaska' },
-            { text: 'Arizona', visible: false }
-          ]
-        };
-      }
+        components: {
+            DxTileView
+        },
+        data() {
+            return {
+                dataSource: [
+                    { text: 'Alabama', disabled: true },
+                    { text: 'Alaska' },
+                    { text: 'Arizona', visible: false }
+                ]
+            };
+        }
     }
     </script>
 

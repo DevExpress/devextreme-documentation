@@ -54,11 +54,11 @@ For example, the following code makes the *"Massachusetts"* tile twice bigger th
 ##### Vue
 
     <template>
-      <DxTileView
-        :data-source="tileViewData"
-        :base-item-height="130"
-        :base-item-width="180"
-      />
+        <DxTileView
+            :data-source="tileViewData"
+            :base-item-height="130"
+            :base-item-width="180"
+        />
     </template>
 
     <script>
@@ -68,19 +68,19 @@ For example, the following code makes the *"Massachusetts"* tile twice bigger th
     import { DxTileView } from 'devextreme-vue/tile-view';
 
     export default {
-      components: {
-        DxTileView
-      },
-      data() {
-        return {
-          tileViewData: [
-            { text: 'Maine', capital: 'Augusta' },
-            { text: 'Maryland', capital: 'Annapolis' },
-            { text: 'Massachusetts', capital: 'Boston', height: 2, widthRatio: 2 }
-            // ...
-          ]
-        };
-      }
+        components: {
+            DxTileView
+        },
+        data() {
+            return {
+                tileViewData: [
+                    { text: 'Maine', capital: 'Augusta' },
+                    { text: 'Maryland', capital: 'Annapolis' },
+                    { text: 'Massachusetts', capital: 'Boston', height: 2, widthRatio: 2 }
+                    // ...
+                ]
+            };
+        }
     }
     </script>
 

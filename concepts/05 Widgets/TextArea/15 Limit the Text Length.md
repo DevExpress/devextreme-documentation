@@ -1,7 +1,7 @@
 To limit the text length, assign an integer number to the **maxLength** option. By default, the text length is unlimited.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textAreaContainer").dxTextArea({
@@ -9,7 +9,7 @@ To limit the text length, assign an integer number to the **maxLength** option. 
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-area
@@ -29,6 +29,43 @@ To limit the text length, assign an integer number to the **maxLength** option. 
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+      <DxTextArea :max-length="200"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextArea } from 'devextreme-vue/text-area';
+
+    export default {
+      components: {
+        DxTextArea
+      }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TextArea } from 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TextArea maxLength={200}/>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

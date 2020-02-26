@@ -7,7 +7,7 @@ The **TextArea** is a widget that enables a user to enter and edit a multi-line 
 The following code adds a simple **TextArea** with a [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Configuration/#placeholder') to your page.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="textAreaContainer"></div>
 
@@ -17,7 +17,7 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-area
@@ -38,12 +38,49 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
          // ...
      })
 
+##### Vue
+
+    <template>
+      <DxTextArea placeholder="Type a text here..."/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextArea } from 'devextreme-vue/text-area';
+
+    export default {
+      components: {
+        DxTextArea
+      }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TextArea } from 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TextArea placeholder="Type a text here..."/>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 By default, the **TextArea** checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textAreaContainer").dxTextArea({
@@ -51,7 +88,7 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-area
@@ -72,12 +109,49 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
          // ...
      })
 
+##### Vue
+
+    <template>
+      <DxTextArea :spellcheck="false"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextArea } from 'devextreme-vue/text-area';
+
+    export default {
+      components: {
+        DxTextArea
+      }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TextArea } from 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TextArea spellcheck={false}/>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If an end user should _not_ be able to edit the text in the **TextArea**, assign **true** to the **readOnly** option. In this case, make sure to set the **value** option too.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textAreaContainer").dxTextArea({
@@ -86,7 +160,7 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-area
@@ -107,6 +181,49 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+      <DxTextArea
+        :read-only="true"
+        value="The text that should not be edited"
+      />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextArea } from 'devextreme-vue/text-area';
+
+    export default {
+      components: {
+        DxTextArea
+      }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TextArea } from 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TextArea
+                    readOnly={true}
+                    value="The text that should not be edited"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

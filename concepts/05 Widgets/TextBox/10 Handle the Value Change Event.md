@@ -90,16 +90,19 @@ To process a new **TextBox** value, you need to handle the value change event. I
 
     <!--HTML-->
     <dx-text-box
-        (onValueChanged)="onValueChanged($event)">
+        [(value)]="textBoxValue"
+        (onValueChanged)="handleValueChange($event)">
     </dx-text-box>
 
     <!--TypeScript-->
     import { DxTextBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        onValueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+        textBoxValue = "The TextBox value";
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -114,7 +117,10 @@ To process a new **TextBox** value, you need to handle the value change event. I
 ##### Vue
 
     <template>
-        <DxTextBox @value-changed="onValueChanged"/>
+        <DxTextBox
+            :value.sync="textBoxValue"
+            @value-changed="handleValueChange"
+        />
     </template>
 
     <script>
@@ -127,8 +133,13 @@ To process a new **TextBox** value, you need to handle the value change event. I
         components: {
             DxTextBox
         },
+        data() {
+            return {
+                textBoxValue: "The TextBox value"
+            };
+        },
         methods: {
-            onValueChanged(e) {
+            handleValueChange(e) {
                 const previousValue = e.previousValue;
                 const newValue = e.value;
                 // Event handling commands go here
@@ -146,18 +157,32 @@ To process a new **TextBox** value, you need to handle the value change event. I
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                textBoxValue: "The TextBox value"
+            };
+
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+
+            this.setState({
+                textBoxValue: newValue
+            });
+        }
+
         render() {
             return (
                 <TextBox
-                    onValueChanged={this.onValueChanged}
+                    value={this.state.textBoxValue}
+                    onValueChanged={this.handleValueChange}
                 />
             );
-        }
-
-        onValueChanged(e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
-            // Event handling commands go here
         }
     }
 

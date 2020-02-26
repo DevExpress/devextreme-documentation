@@ -37,51 +37,7 @@ An end user can use the following keys to interact with the widget.
   </table>
 </div>
 
-You can implement a custom handler for a key using the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Widgets/dxMenu/Methods/#registerKeyHandlerkey_handler') method.
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    function registerKeyHandlers () {
-        let menu =  $("#menuContainer").dxMenu("instance");
-        menu.registerKeyHandler("backspace", function (e) {
-            // The argument "e" contains information on the event
-        });
-        menu.registerKeyHandler("space", function (e) {
-            // ...
-        });
-    }
-    
-
-##### Angular
-
-    <!--TypeScript-->
-    import { ..., ViewChild, AfterViewInit } from "@angular/core";
-    import { DxMenuModule, DxMenuComponent } from "devextreme-angular";
-    // ...
-    export class AppComponent implements AfterViewInit {
-        @ViewChild(DxMenuComponent, { static: false }) menu: DxMenuComponent
-        // Prior to Angular 8
-        // @ViewChild(DxMenuComponent) menu: DxMenuComponent
-        ngAfterViewInit () {
-            this.menu.instance.registerKeyHandler("backspace", function (e) {
-                // The argument "e" contains information on the event
-            });
-            this.menu.instance.registerKeyHandler("space", function (e) {
-                // ...
-            });
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxMenuModule
-        ],
-        // ...
-    })
-
----
+#include common-code-register-key-handler
 
 #####See Also#####
 #include common-link-callmethods

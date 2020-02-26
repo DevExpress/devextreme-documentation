@@ -5,19 +5,18 @@ EventForAction: dxDiagram.customCommandExecuted
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a custom command item has been clicked and allows you to perform custom actions.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget instance's name.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.name): String
-<!-- Description goes here -->
+The name of the clicked item.
 
 ---
-<!-- Description goes here -->

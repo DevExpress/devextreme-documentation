@@ -4,13 +4,13 @@ module: excel_exporter
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Exports grid data to Excel.
 
 ##### return: Promise<CellRange>
-<!-- Description goes here -->
+A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a> that is resolved with an object that contains the coordinates of the first and last cells. 
 
 ##### param(options): ExportDataGridProps
-<!-- Description goes here -->
+Exported **DataGrid** settings.
 
 ---
 <!-- Description goes here -->

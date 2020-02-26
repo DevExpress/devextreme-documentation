@@ -88,14 +88,17 @@ To process a new **TextArea** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-text-area
-        (onValueChanged)="onValueChanged($event)">
+        [(value)]="textAreaValue"
+        (onValueChanged)="handleValueChange($event)">
     </dx-text-area>
 
     <!--TypeScript-->
     import { DxTextAreaModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        onValueChanged (e) {
+        textAreaValue = "The TextArea value";
+
+        handleValueChange(e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
             // Event handling commands go here
@@ -112,7 +115,10 @@ To process a new **TextArea** value, you need to handle the value change event. 
 ##### Vue
 
     <template>
-        <DxTextArea @value-changed="onValueChanged"/>
+        <DxTextArea
+            :value.sync="textAreaValue"
+            @value-changed="handleValueChange"
+        />
     </template>
 
     <script>
@@ -125,8 +131,13 @@ To process a new **TextArea** value, you need to handle the value change event. 
         components: {
             DxTextArea
         },
+        data() {
+            return {
+                textAreaValue: "The TextArea value"
+            };
+        },
         methods: {
-            onValueChanged(e) {
+            handleValueChange(e) {
                 const previousValue = e.previousValue;
                 const newValue = e.value;
                 // Event handling commands go here
@@ -144,16 +155,32 @@ To process a new **TextArea** value, you need to handle the value change event. 
     import { TextArea } from 'devextreme-react/text-area';
 
     class App extends React.Component {
-        render() {
-            return (
-                <TextArea onValueChanged={this.onValueChanged}/>
-            );
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                textAreaValue: "The TextArea value"
+            };
+
+            this.handleValueChange = this.handleValueChange.bind(this);
         }
 
-        onValueChanged(e) {
+        handleValueChange(e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
-            // Event handling commands go here
+
+            this.setState({
+                textAreaValue: newValue
+            });
+        }
+
+        render() {
+            return (
+                <TextArea
+                    value={this.state.textAreaValue}
+                    onValueChanged={this.handleValueChange}
+                />
+            );
         }
     }
 

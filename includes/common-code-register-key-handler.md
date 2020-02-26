@@ -6,7 +6,7 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
 
     <!--JavaScript-->
     function registerKeyHandlers () {
-        let {widgetName} = $("#{widgetName}Container").dx{WidgetName}("instance");
+        const {widgetName} = $("#{widgetName}Container").dx{WidgetName}("instance");
         {widgetName}.registerKeyHandler("backspace", function(e) {
             // The argument "e" contains information on the event
         });

@@ -5,7 +5,11 @@ default: {}
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the history toolbar settings.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
+}
+
+![Diagram toolbox](/images/diagram/history-toolbar.png)

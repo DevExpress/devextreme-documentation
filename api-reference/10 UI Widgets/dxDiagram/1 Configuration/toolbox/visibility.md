@@ -6,7 +6,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the toolbar's visibility.
 
 ---
-<!-- Description goes here -->

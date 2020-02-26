@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the history toolbar's visibility.
 
 ---
-<!-- Description goes here -->

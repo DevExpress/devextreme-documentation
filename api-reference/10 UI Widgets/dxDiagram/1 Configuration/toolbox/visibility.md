@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.toolbox.visibility
-acceptValues: 'visible' | 'collapsed' | 'disabled'
+acceptValues: 'auto' | 'visible' | 'collapsed' | 'disabled'
 type: String
 default: true
 ---

@@ -7,8 +7,8 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     $(function() {
         $("#checkBoxContainer").dxCheckBox({
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
@@ -18,16 +18,19 @@ To process a new **CheckBox** value, you need to handle the value change event. 
 
     <!--HTML-->
     <dx-check-box
-        (onValueChanged)="checkBox_valueChanged($event)">
+        [(value)]="checkBox_value"
+        (onValueChanged)="handleValueChange($event)">
     </dx-check-box>
 
     <!--TypeScript-->
     import { DxCheckBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        checkBox_valueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+        checkBox_value = undefined;
+
+        handleValueChange (e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -38,6 +41,82 @@ To process a new **CheckBox** value, you need to handle the value change event. 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCheckBox
+            :value.sync="checkBox_value"
+            @value-changed="handleValueChange"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCheckBox from 'devextreme-vue/check-box';
+
+    export default {
+        components: {
+            DxCheckBox
+        },
+        data() {
+            return {
+                checkBox_value: undefined
+            };
+        },
+        methods: {
+            handleValueChange(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import CheckBox from 'devextreme-react/check-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                checkBox_value: undefined
+            };
+
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+            // Event handling commands go here
+
+            this.setState({
+                checkBox_value: newValue
+            });
+        }
+
+        render() {
+            return (
+                <CheckBox
+                    value={this.state.checkBox_value}
+                    onValueChanged={this.handleValueChange}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

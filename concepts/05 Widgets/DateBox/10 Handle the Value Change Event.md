@@ -35,6 +35,63 @@ If instead of picking a value, an end user types it into the **DateBox**, this v
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            :value="date"
+            type="date"
+            value-change-event="keyup"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        },
+        data() {
+            return {
+                date: new Date()
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.date = new Date();
+        }
+
+        render() {
+            return (
+                <DateBox
+                    defaultValue={this.date}
+                    type="date"
+                    valueChangeEvent="keyup"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To process a new **DateBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#onValueChanged') option when you configure the widget.
@@ -47,8 +104,8 @@ To process a new **DateBox** value, you need to handle the value change event. I
         $("#dateBoxContainer").dxDateBox({
             // ...
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
@@ -58,16 +115,18 @@ To process a new **DateBox** value, you need to handle the value change event. I
 
     <!--HTML-->
     <dx-date-box ...
-        (onValueChanged)="dateBox_valueChanged($event)">
+        [(value)]="date"
+        (onValueChanged)="handleValueChange($event)">
     </dx-date-box>
 
     <!--TypeScript-->
     import { DxDateBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        dateBox_valueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+        date: Date = new Date(),
+        handleValueChange (e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -78,6 +137,81 @@ To process a new **DateBox** value, you need to handle the value change event. I
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            :value.sync="date"
+            @value-changed="handleValueChange"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        },
+        data() {
+            return {
+                date: new Date()
+            };
+        },
+        methods: {
+            handleValueChange(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                date: new Date()
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+            // Event handling commands go here
+
+            this.setState({
+                date: newValue
+            });
+        }
+
+        render() {
+            return (
+                <DateBox
+                    value={this.state.date}
+                    onValueChanged={this.handleValueChange}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

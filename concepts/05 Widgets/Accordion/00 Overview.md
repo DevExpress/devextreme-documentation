@@ -7,6 +7,7 @@ The **Accordion** widget contains several panels displayed one under another. Th
 The following code adds a simple **Accordion** to your page. Note that each data source object contains the **title** field, whose value goes to the title of the panel. 
 
 ---
+
 ##### jQuery
 
     <!--JavaScript-->

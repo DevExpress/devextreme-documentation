@@ -9,9 +9,6 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="toolbarContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#toolbarContainer").dxToolbar({
@@ -34,6 +31,9 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
             }]
         });
     });
+
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
 
 ##### Angular
 
@@ -75,6 +75,87 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem
+                widget="dxButton"
+                location="before"
+                :options="{
+                    type: 'back',
+                    text: 'Back'
+                }">
+            </DxItem>
+            <DxItem
+                text="Add"
+                locate-in-menu="always">
+            </DxItem>
+            <DxItem
+                text="Change"
+                locate-in-menu="always">
+            </DxItem>
+            <DxItem
+                text="Products"
+                location="center">
+            </DxItem>
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item
+                        widget="dxButton"
+                        location="before"
+                        options={{
+                            type: 'back',
+                            text: 'Back'
+                        }}>
+                    </Item>
+                    <Item
+                        text="Add"
+                        locateInMenu="always">
+                    </Item>
+                    <Item
+                        text="Change"
+                        locateInMenu="always">
+                    </Item>
+                    <Item
+                        text="Products"
+                        location="center">
+                    </Item>
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

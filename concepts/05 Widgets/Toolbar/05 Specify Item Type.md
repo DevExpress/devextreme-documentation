@@ -19,6 +19,9 @@ A **Toolbar** item may be plain text or a widget. Text items should have the [te
         });
     });
 
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
+
 ##### Angular
 
     <!--HTML-->
@@ -41,6 +44,53 @@ A **Toolbar** item may be plain text or a widget. Text items should have the [te
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem text="Delete" location="before"></DxItem>
+            <DxItem text="Products" location="center"></DxItem>
+            <DxItem text="Add" location="after"></DxItem>
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item text="Delete" location="before"></Item>
+                    <Item text="Products" location="center"></Item>
+                    <Item text="Add" location="after"></Item>
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -72,11 +122,12 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
                     }
                 },
                 location: 'after'
-            },
-            // ...  
-            ]
+            }]
         });
     });
+
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
 
 ##### Angular
 
@@ -122,6 +173,104 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem
+                widget="dxButton"
+                :options="buttonOptions"
+                location="before">
+            </DxItem>
+            <DxItem
+                widget="dxSelectBox"
+                :options="selectBoxOptions"
+                location="after">
+            </DxItem>
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+    import DxSelectBox from 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem,
+            DxSelectBox
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    type: 'back',
+                    text: 'Back',
+                    onClick: function () {
+                        // ...
+                    }
+                },
+                selectBoxOptions: {
+                    width: 140,
+                    items: ['All', 'Family', 'Favorites'],
+                    onItemClick: function (e) {
+                        // ...
+                    }
+                }
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+    import { SelectBox } from 'devextreme-react/select-box';
+
+    const buttonOptions = {
+        type: 'back',
+        text: 'Back',
+        onClick: function () {
+            // ...
+        } 
+    };
+
+    const selectBoxOptions = {
+        width: 140,
+        items: ['All', 'Family', 'Favorites'],
+        onItemClick: function (e) {
+            // ...
+        }
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item
+                        widget="dxButton"
+                        options={buttonOptions}
+                        location="before">
+                    </Item>
+                    <Item
+                        widget="dxSelectBox"
+                        options={selectBoxOptions}
+                        location="after">
+                    </Item>
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

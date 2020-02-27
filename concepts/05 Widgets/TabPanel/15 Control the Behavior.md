@@ -25,7 +25,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 
     <!--HTML-->
     <dx-tab-panel
-        [items]='tabPanelItems'
+        [items]="tabPanelItems"
         [swipeEnabled]="false">
     </dx-tab-panel>
 
@@ -141,7 +141,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
     <!--HTML-->
     <dx-tab-panel
-        [items]='tabPanelItems'
+        [items]="tabPanelItems"
         [selectedIndex]="1">
     </dx-tab-panel>
 
@@ -271,7 +271,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 
     <!--HTML-->
     <dx-tab-panel
-        [items]='tabPanelItems'
+        [items]="tabPanelItems"
         [loop]="false">
     </dx-tab-panel>
 
@@ -387,7 +387,7 @@ To specify whether or not to animate switching between views, use the [animation
 
     <!--HTML-->
     <dx-tab-panel
-        [items]='tabPanelItems'
+        [items]="tabPanelItems"
         [animationEnabled]="true">
     </dx-tab-panel>
 

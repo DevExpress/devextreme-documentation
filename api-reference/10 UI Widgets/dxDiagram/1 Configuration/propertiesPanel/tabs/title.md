@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies a title of the tab.
+Specifies the tab's title.
 
 ---
-The title and a tab header are not displayed when there is only one tab in the Properties panel.
+Titles and tab headers are not displayed when there is only one tab in the Properties panel.

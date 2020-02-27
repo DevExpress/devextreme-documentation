@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Configures the history toolbar settings.
+Configures the history toolbar's settings.
 
 ---
 #include common-demobutton with {

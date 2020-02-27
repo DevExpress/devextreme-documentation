@@ -5,7 +5,7 @@ EventForAction: dxDiagram.customCommandExecuted
 ---
 ---
 ##### shortDescription
-A function that is executed after a custom command item has been clicked and allows you to perform custom actions.
+A function that is executed after a custom command item was clicked and allows you to perform custom actions.
 
 ##### param(e): Object
 Information about the event.

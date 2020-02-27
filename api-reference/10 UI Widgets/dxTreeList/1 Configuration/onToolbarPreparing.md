@@ -20,11 +20,11 @@ The following code shows how you can customize the toolbar using this function.
             onToolbarPreparing: function (e) {
                 var toolbarItems = e.toolbarOptions.items;
                 // Modifies an existing item
-                toolbarItems.forEach(function(item) {
-                    if (item.name === "saveButton") {
+                $.each(toolbarItems, function(_, item) {
+                    if(item.name === "saveButton") {
                         // Change the item options here
                     }
-                });
+                }); 
 
                 // Adds a new item
                 toolbarItems.push({
@@ -39,7 +39,7 @@ The following code shows how you can customize the toolbar using this function.
 ##### Angular
 
     <!--TypeScript-->
-    import { DxTreeListModule, DxButtonModule } from "devextreme-angular";
+    import { DxTreeListModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         onToolbarPreparing (e) { 
@@ -62,8 +62,7 @@ The following code shows how you can customize the toolbar using this function.
     @NgModule({
         imports: [
             // ...
-            DxTreeListModule,
-            DxButtonModule
+            DxTreeListModule
         ],
         // ...
     })
@@ -72,5 +71,93 @@ The following code shows how you can customize the toolbar using this function.
     <dx-tree-list ...
         (onToolbarPreparing)="onToolbarPreparing($event)">
     </dx-tree-list>
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            @toolbar-preparing="onToolbarPreparing"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            onToolbarPreparing(e) {
+                var toolbarItems = e.toolbarOptions.items;
+                // Modifies an existing item
+                $.each(toolbarItems, function(_, item) {
+                    if (item.name === 'saveButton') {
+                        // Change the item options here
+                    }
+                });
+
+                // Adds a new item
+                toolbarItems.push({
+                    widget: 'dxButton',
+                    options: {
+                        icon: 'user',
+                        onClick: function() {
+                            ...
+                        }
+                    },
+                    location: 'after'
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ...
+                    onToolbarPreparing={this.onToolbarPreparing}
+                />
+            );
+        }
+
+        onToolbarPreparing(e) {
+            var toolbarItems = e.toolbarOptions.items;
+            // Modifies an existing item
+            $.each(toolbarItems, function(_, item) {
+                if (item.name === 'saveButton') {
+                    // Change the item options here
+                }
+            });
+
+            // Adds a new item
+            toolbarItems.push({
+                widget: 'dxButton',
+                options: {
+                    icon: 'user',
+                    onClick: function() {
+                        ...
+                    }
+                },
+                location: 'after'
+            });
+        }
+    }
+    export default App;
+
 ---

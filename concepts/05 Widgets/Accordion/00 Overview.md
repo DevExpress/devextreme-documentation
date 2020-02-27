@@ -94,7 +94,7 @@ The following code adds a simple **Accordion** to your page. Note that each data
             item-template="item">
             <template #item="{ data }">
                 <div>
-                    <p v-for="item in getItemKeys(data)">
+                    <p v-for="key in getItemKeys(data)">
                         {{key}}: {{data[key]}}
                     </p>
                 </div>

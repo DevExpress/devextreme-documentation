@@ -357,7 +357,7 @@ You can also customize individual items. In Angular, Vue, and React, declare the
     </dx-tab-panel>
 
     <!--TypeScript-->
-    import { DxTabPanelModule } from "devextreme-angular";
+    import { DxTabPanelModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -391,7 +391,7 @@ You can also customize individual items. In Angular, Vue, and React, declare the
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxTabPanel, { DxItem } from "devextreme-vue/tab-panel";
+    import DxTabPanel, { DxItem } from 'devextreme-vue/tab-panel';
 
     export default {
         components: {

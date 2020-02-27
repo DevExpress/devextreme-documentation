@@ -281,7 +281,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
                             Object.keys(content.data).map(key => {
                                 return (
                                     <p key={key}>
-                                        {key}: {content.data[key]}
+                                        {key}: <b>{content.data[key]}</b>
                                     </p> 
                                 )}
                             )

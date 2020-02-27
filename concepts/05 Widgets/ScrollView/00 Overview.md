@@ -6,13 +6,12 @@ The **ScrollView** is a widget that enables a user to scroll its content.
 
 The following code adds a simple **ScrollView** to your page. The [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Widgets/dxScrollView/Configuration/#width') and [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxScrollView/Configuration/#height') options specify the widget size. By default, the **ScrollView** allows a user to scroll its content vertically. To change this behavior, use the [direction](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxScrollView/Configuration/#direction') option. Note that horizontal scrolling appears only if the content is wider than the **ScrollView**. Otherwise, the content adapts to the width of the **ScrollView**.
 
-    <!--HTML-->
-    <div id="scrollViewContainer">
-        <!-- Here goes long content -->
-    </div>
+---
+
+##### jQuery
 
     <!--JavaScript-->
-    $(function() {
+    $(function () {
         $("#scrollViewContainer").dxScrollView({
             height: 500,
             width: 500,
@@ -20,24 +19,250 @@ The following code adds a simple **ScrollView** to your page. The [width](/api-r
         });
     });
 
+    <!--HTML-->
+    <div id="scrollViewContainer">
+        <!-- Here goes long content -->
+    </div>
+
+##### Angular
+
+    <!--HTML-->
+    <dx-scroll-view
+        [height]="500"
+        [width]="500"
+        direction="both">  <!-- or 'horizontal' | 'vertical' -->
+        <!-- Here goes long content -->
+    </dx-scroll-view>
+
+    <!--TypeScript-->
+    import { DxScrollViewModule } from 'devextreme-angular';
+    // ...
+    export class AppComponent {
+        // ...
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxScrollViewModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScrollView
+            :height="500"
+            :width="500"
+            direction="both">  <!-- or 'horizontal' | 'vertical' -->
+            <!-- Here goes long content -->
+        </DxScrollView>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScrollView } from 'devextreme-vue/scroll-view';
+
+    export default {
+        components: {
+            DxScrollView
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ScrollView } from 'devextreme-react/scroll-view';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ScrollView
+                    height={200}
+                    width={100}
+                    direction="vertical">  {/* or 'horizontal' | 'vertical' */}
+                    {/* Here goes long content */}
+                </ScrollView>
+            );
+        }
+    }
+
+    export default App;
+
+---
+
 The **ScrollView** employs native scrolling on most platforms, except desktops. To employ it on all platforms without exception, assign **true** to the [useNative](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/useNative.md '/Documentation/ApiReference/UI_Widgets/dxScrollView/Configuration/#useNative') option. Note that if you assign **false** to this option, the **ScrollView** will simulate scrolling on all platforms.
 
+---
+
+##### jQuery
+
     <!--JavaScript-->
-    $(function() {
+    $(function () {
         $("#scrollViewContainer").dxScrollView({
             useNative: true
         });
     });
 
+    <!--HTML-->
+    <div id="scrollViewContainer"></div>
+
+##### Angular
+
+    <!--HTML-->
+    <dx-scroll-view
+        [useNative]="true">
+    </dx-scroll-view>
+
+    <!--TypeScript-->
+    import { DxScrollViewModule } from 'devextreme-angular';
+    // ...
+    export class AppComponent {
+        // ...
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxScrollViewModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScrollView
+            :use-native="true">
+        </DxScrollView>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScrollView } from 'devextreme-vue/scroll-view';
+
+    export default {
+        components: {
+            DxScrollView
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ScrollView } from 'devextreme-react/scroll-view';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ScrollView
+                    useNative={true}>
+                </ScrollView>
+            );
+        }
+    }
+
+    export default App;
+
+---
+
 If simulated scrolling is used, you can specify when to show the scrollbar. For this purpose, use the [showScrollbar](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/showScrollbar.md '/Documentation/ApiReference/UI_Widgets/dxScrollView/Configuration/#showScrollbar') option.
 
+---
+
+##### jQuery
+
     <!--JavaScript-->
-    $(function() {
+    $(function () {
         $("#scrollViewContainer").dxScrollView({
             useNative: false,
             showScrollbar: 'always' // or 'onScroll' | 'onHover' | 'never'
         });
     });
+
+    <!--HTML-->
+    <div id="scrollViewContainer"></div>
+
+##### Angular
+
+    <!--HTML-->
+    <dx-scroll-view
+        [useNative]="false"
+        [showScrollbar]="always">  <!-- or 'onScroll' | 'onHover' | 'never' -->
+    </dx-scroll-view>
+
+    <!--TypeScript-->
+    import { DxScrollViewModule } from 'devextreme-angular';
+    // ...
+    export class AppComponent {
+        // ...
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxScrollViewModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScrollView
+            :use-native="false"
+            :show-scrollbar="always">  <!-- or 'onScroll' | 'onHover' | 'never' -->
+        </DxScrollView>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScrollView } from 'devextreme-vue/scroll-view';
+
+    export default {
+        components: {
+            DxScrollView
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ScrollView } from 'devextreme-react/scroll-view';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ScrollView
+                    useNative={false}
+                    showScrollbar="always"> {/* or 'onScroll' | 'onHover' | 'never' */}
+                </ScrollView>
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 #include common-link-configurewidget

@@ -4,7 +4,13 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The coordinates of the exported **DataGrid** in the Excel file.
 
----
-<!-- Description goes here -->
+---     
+
+This object has the following structure: 
+
+    {
+        from: {row: 1, column:1}, 
+        to: {row: 4 column: 4}
+    }

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The address of a **DataGrid** cell in the exported Excel spreadsheet.
 
 ---
 <!-- Description goes here -->

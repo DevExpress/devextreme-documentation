@@ -5,7 +5,6 @@ type: Array<dxDiagramCustomCommand> | Array<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Lists commands in a group.
 
 ---
-<!-- Description goes here -->

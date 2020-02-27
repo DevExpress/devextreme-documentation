@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the view toolbar's visibility.
 
 ---
-<!-- Description goes here -->

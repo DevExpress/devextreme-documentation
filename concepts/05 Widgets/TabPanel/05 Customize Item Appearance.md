@@ -225,7 +225,7 @@ If you need a more flexible solution, define [itemTemplate](/api-reference/10%20
                 }, {
                     title: 'Contacts',
                     data: { phone: '(555)555-5555', email: 'John.Smith@example.com' }
-                }];
+                }]
             };
         },
         methods: {

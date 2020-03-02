@@ -8,3 +8,7 @@ default: false
 Specifies whether the outer borders of the widget are visible.
 
 ---
+
+#####See Also#####
+- [showColumnLines](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/showColumnLines.md '{basewidgetpath}/Configuration/#showColumnLines')
+- [showRowLines](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/showRowLines.md '{basewidgetpath}/Configuration/#showRowLines')

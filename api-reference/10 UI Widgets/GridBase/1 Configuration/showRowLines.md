@@ -8,3 +8,6 @@ default: false, true (iOS, Material)
 Specifies whether horizontal lines that separate one row from another are visible.
 
 ---
+
+#####See Also#####
+- [showBorders](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/showBorders.md '{basewidgetpath}/Configuration/#showBorders')

@@ -68,6 +68,76 @@ Normally, when records are grouped by a column, the groups are sorted according 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid>
+            <DxSummary>
+                <DxGroupItem 
+                    column="Age"
+                    summaryType="avg"
+                    name="Average Age Group Summary"
+                />
+                <DxGroupItem
+                    column="Income"
+                    summaryType="max"
+                />
+                <DxGroupItem
+                    column="Tasks"
+                    summaryType="min"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxSummary, DxGroupItem } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSummary,
+            DxGroupItem
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Summary, GroupItem } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid>
+                    <Summary>
+                        <GroupItem 
+                            column="Age"
+                            summaryType="avg"
+                            name="Average Age Group Summary" />
+                        <GroupItem 
+                            column="Income"
+                            summaryType="max" />
+                        <GroupItem 
+                            column="Tasks" 
+                            summaryType="min" />
+                    </Summary>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To use these summary items for sorting groups, assign an array of objects to the **sortByGroupSummaryInfo** option. In each object of this array, specify the [summaryItem](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/summaryItem.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#summaryItem') field. This field determines the summary item to be used for summary-based sorting. In the following code, three objects form the **sortByGroupSummaryInfo** array. In each object, the **summaryItem** option determines different summary items using different values.

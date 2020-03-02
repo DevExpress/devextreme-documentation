@@ -18,7 +18,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel ...
+    <dx-tab-panel
         [swipeEnabled]="false">
     </dx-tab-panel>
 
@@ -40,7 +40,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel ...
+        <DxTabPanel
             :swipe-enabled="false"
         />
     </template>
@@ -69,7 +69,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
     class App extends React.Component {
         render() {
             return (
-                <TabPanel ...
+                <TabPanel
                     swipeEnabled={false}
                 />
             );
@@ -100,7 +100,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel ...
+    <dx-tab-panel
         [(selectedIndex)]="selectedIndex">
     </dx-tab-panel>
 
@@ -126,8 +126,9 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
     <!--tab: App.vue-->
     <template>
-        <DxTabPanel ...
-            :selected-index.sync="selectedIndex" />
+        <DxTabPanel
+            :selected-index.sync="selectedIndex"
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -174,7 +175,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
         render() {
             return (
-                <TabPanel ...
+                <TabPanel
                     selectedIndex={this.state.selectedIndex}
                     onOptionChanged={this.handleOptionChange}
                 />
@@ -206,7 +207,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel ...
+    <dx-tab-panel
         [loop]="false">
     </dx-tab-panel>
 
@@ -228,7 +229,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel ...
+        <DxTabPanel
             :loop="false"
         />
     </template>
@@ -257,7 +258,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
     class App extends React.Component {
         render() {
             return (
-                <TabPanel ...
+                <TabPanel
                     loop={false}
                 />
             );
@@ -288,7 +289,7 @@ To specify whether or not to animate switching between views, use the [animation
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel ...
+    <dx-tab-panel
         [animationEnabled]="true">
     </dx-tab-panel>
 
@@ -310,7 +311,7 @@ To specify whether or not to animate switching between views, use the [animation
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel ...
+        <DxTabPanel
             :animation-enabled="true"
         />
     </template>
@@ -339,7 +340,7 @@ To specify whether or not to animate switching between views, use the [animation
     class App extends React.Component {
         render() {
             return (
-                <TabPanel ...
+                <TabPanel
                     animationEnabled={true}
                 />
             );

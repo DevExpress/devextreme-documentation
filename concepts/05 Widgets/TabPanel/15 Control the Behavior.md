@@ -105,7 +105,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
                 <TabPanel
                     items={tabPanelItems}
                     swipeEnabled={false}
-                </TabPanel>
+                />
             );
         }
     }

@@ -123,18 +123,24 @@ If you need a tab to be preselected or to select it programmatically, pass its i
     <!--HTML-->
     <dx-tabs
         [items]="tabs"
-        [selectedIndex]="1">
+        [(selectedIndex)]="selectedIndex">
     </dx-tabs>
 
     <!--TypeScript-->
     import { DxTabsModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        selectedIndex: number;
+
         tabs = [
             { text: "User" },
             { text: "Comment" },
             // ...
         ];
+
+        constructor() {
+            this.selectedIndex = 1;
+        }
     }
     @NgModule({
         imports: [
@@ -150,7 +156,7 @@ If you need a tab to be preselected or to select it programmatically, pass its i
     <template>
         <DxTabs
             :items="tabs"
-            :selected-index="1" /> 
+            :selected-index.sync="selectedIndex" /> 
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -164,6 +170,7 @@ If you need a tab to be preselected or to select it programmatically, pass its i
         },
         data() {
             return {
+                selectedIndex: 1,
                 tabs: [
                     { text: "User" },
                     { text: "Comment" },
@@ -245,7 +252,7 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
     <dx-tabs
         [items]="tabs"
         selectionMode="multiple"
-        [selectedItems]="selectedItems">
+        [(selectedItems)]="selectedItems">
     </dx-tabs>
 
     <!--TypeScript-->
@@ -320,7 +327,8 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
     ];
 
     class App extends React.Component {
-        constructor() {
+        constructor(props) {
+            super(props);
             this.state = {
                 selectedItems: [tabs[0], tabs[1]];
             }

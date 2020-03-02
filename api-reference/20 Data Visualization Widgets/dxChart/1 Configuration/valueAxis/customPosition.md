@@ -1,6 +1,7 @@
 ---
-id: dxDiagram.Options.propertiesPanel.groups.title
-type: String
+id: dxChart.Options.valueAxis.customPosition
+type: Number | Date | String
+default: undefined
 ---
 ---
 ##### shortDescription

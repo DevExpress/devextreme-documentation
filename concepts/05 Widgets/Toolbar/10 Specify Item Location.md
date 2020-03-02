@@ -162,7 +162,6 @@ When there is not enough width for all toolbar items, or if certain toolbar item
             <DxItem text="Add" locate-in-menu="auto"></DxItem>
             <DxItem text="Change" locate-in-menu="always"></DxItem>
             <DxItem text="Remove" locate-in-menu="always"></DxItem>
-
         </DxToolbar>
     </template>
     <script>

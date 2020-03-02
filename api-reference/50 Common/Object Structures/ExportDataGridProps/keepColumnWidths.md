@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether Excel columns should have the same widths as their source **DataGrid** columns. 
 
 ---
 <!-- Description goes here -->

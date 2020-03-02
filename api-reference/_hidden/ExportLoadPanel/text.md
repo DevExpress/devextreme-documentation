@@ -5,7 +5,7 @@ default: 'Exporting...'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text displayed on the load panel.
 
 ---
 <!-- Description goes here -->

@@ -140,8 +140,8 @@ The **ScrollView** employs native scrolling on most platforms, except desktops. 
     <!-- tab: App.vue -->
     <template>
         <DxScrollView
-            :use-native="true">
-        </DxScrollView>
+            :use-native="true"
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -169,8 +169,8 @@ The **ScrollView** employs native scrolling on most platforms, except desktops. 
         render() {
             return (
                 <ScrollView
-                    useNative={true}>
-                </ScrollView>
+                    useNative={true}
+                />
             );
         }
     }
@@ -224,8 +224,8 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
     <template>
         <DxScrollView
             :use-native="false"
-            :show-scrollbar="always">  <!-- or 'onScroll' | 'onHover' | 'never' -->
-        </DxScrollView>
+            :show-scrollbar="always"  <!-- or 'onScroll' | 'onHover' | 'never' -->
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -254,8 +254,8 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
             return (
                 <ScrollView
                     useNative={false}
-                    showScrollbar="always"> {/* or 'onScroll' | 'onHover' | 'never' */}
-                </ScrollView>
+                    showScrollbar="always" {/* or 'onScroll' | 'onHover' | 'never' */}
+                />
             );
         }
     }

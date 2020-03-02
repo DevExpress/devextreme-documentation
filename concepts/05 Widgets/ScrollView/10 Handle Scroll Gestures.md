@@ -52,8 +52,8 @@ The **ScrollView** raises the [pullDown](/api-reference/10%20UI%20Widgets/dxScro
         <DxScrollView
             :height="500"
             :bounce-enabled="true"
-            @pull-down="updateContent">
-        </DxScrollView>
+            @pull-down="updateContent"
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -89,8 +89,8 @@ The **ScrollView** raises the [pullDown](/api-reference/10%20UI%20Widgets/dxScro
                 <ScrollView
                     height={500}
                     bounceEnabled={true}
-                    onPullDown={this.updateContent}>
-                </ScrollView>
+                    onPullDown={this.updateContent}
+                />
             );
         }
 
@@ -157,8 +157,8 @@ If an end user scrolls the content down to the bottom, the **ScrollView** raises
     <template>
         <DxScrollView
             :height="500"
-            @reach-bottom="updateContent">
-        </DxScrollView>
+            @reach-bottom="updateContent"
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -301,8 +301,8 @@ If you want to process each scroll gesture performed by a user, handle the [scro
             return (
                 <ScrollView
                     height={500}
-                    onScroll={this.scroll}>
-                </ScrollView>
+                    onScroll={this.scroll}
+                />
             );
         }
 

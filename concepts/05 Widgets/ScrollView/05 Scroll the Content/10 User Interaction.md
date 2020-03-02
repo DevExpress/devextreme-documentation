@@ -43,8 +43,8 @@ An end user can scroll the **ScrollView** content with the swipe gesture or with
     <template>
         <DxScrollView
             :scroll-by-content="true"  <!-- enables the swipe gesture on all platforms -->
-            :scroll-by-thumb="true">   <!-- makes the scrollbar active on all platforms -->
-        </DxScrollView>
+            :scroll-by-thumb="true"   <!-- makes the scrollbar active on all platforms -->
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -73,8 +73,8 @@ An end user can scroll the **ScrollView** content with the swipe gesture or with
             return (
                 <ScrollView
                     scrollByContent={true}  {/* enables the swipe gesture on all platforms */}
-                    scrollByThumb={true}>   {/* makes the scrollbar active on all platforms */}
-                </ScrollView>
+                    scrollByThumb={true}   {/* makes the scrollbar active on all platforms */}
+                />
             );
         }
     }

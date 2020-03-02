@@ -351,7 +351,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
                 <TabPanel
                     items={tabPanelItems}
                     loop={false}
-                </TabPanel>
+                />
             );
         }
     }

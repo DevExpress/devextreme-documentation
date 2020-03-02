@@ -47,11 +47,11 @@ The following code shows how you can customize the toolbar using this function.
             onToolbarPreparing: function (e) {
                 var toolbarItems = e.toolbarOptions.items;
                 // Modifies an existing item
-                $.each(toolbarItems, function(_, item) {
-                    if(item.name === "saveButton") {
+                toolbarItems.forEach(function(item) {
+                    if (item.name === "saveButton") {
                         // Change the item options here
                     }
-                }); 
+                });
 
                 // Adds a new item
                 toolbarItems.push({

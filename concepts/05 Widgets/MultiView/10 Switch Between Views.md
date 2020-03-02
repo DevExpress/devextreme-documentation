@@ -127,13 +127,19 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
     <!--HTML-->
     <dx-multi-view
         [dataSource]="multiViewItems"
-        [selectedIndex]="1">
+        [(selectedIndex)]="selectedIndex">
     </dx-multi-view>
 
     <!--TypeScript-->
     import { DxMultiViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
+        selectedIndex: number;
+
+        constructor() {
+            this.selectedIndex = 1;
+        }
+
         multiViewItems = [
             { text: 'Personal Data' },
             { text: 'Contacts' }
@@ -153,7 +159,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
     <template>
         <DxMultiView
             :data-source="multiViewItems"
-            :selected-index="1" />
+            :selected-index.sync="selectedIndex" />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -167,6 +173,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
         },
         data() {
             return {
+                selectedIndex: 1,
                 multiViewItems: [
                     { text: 'Personal Data' },
                     { text: 'Contacts' }
@@ -191,7 +198,8 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
     ];
 
     class App extends React.Component {
-        constructor() {
+        constructor(props) {
+            super(props);
             this.state = {
                 selectedIndex: 1
             }

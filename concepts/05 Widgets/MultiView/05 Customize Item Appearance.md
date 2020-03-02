@@ -80,7 +80,7 @@ To customize views in the **MultiView**, define an [itemTemplate](/api-reference
                 }, {
                     title: 'Contacts',
                     data: { phone: '(555)555-5555', email: 'John.Smith@example.com' }
-                }];
+                }]
             };
         },
         methods: {

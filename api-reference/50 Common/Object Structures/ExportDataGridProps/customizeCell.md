@@ -10,7 +10,7 @@ Customizes an Excel cell after creation.
 An object passed to this callback function.
 
 ##### field(options.excelCell): Object
-An ExcelJS object that describes an Excel cell. Use its properties to customize the cell. For information on them, refer to the ExcelJS documentation:
+An ExcelJS object that describes an Excel cell. Use its properties to customize the cell. For information on these properties, refer to following ExcelJS documentation:
 
 - <a href="https://github.com/exceljs/exceljs#value-types" target="_blank">value</a>
 - <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a>

@@ -5,12 +5,9 @@ By default, an end user can switch between views by swiping. Assign **false** to
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $('#multiViewContainer').dxMultiView({
-            dataSource: [
-                { text: 'Personal Data' },
-                { text: 'Contacts' }
-            ],
+            // ...
             swipeEnabled: false
         });
     });
@@ -22,7 +19,6 @@ By default, an end user can switch between views by swiping. Assign **false** to
 
     <!--HTML-->
     <dx-multi-view
-        [dataSource]="multiViewItems"
         [swipeEnabled]="false">
     </dx-multi-view>
 
@@ -30,10 +26,7 @@ By default, an end user can switch between views by swiping. Assign **false** to
     import { DxMultiViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        multiViewItems = [
-            { text: 'Personal Data' },
-            { text: 'Contacts' }
-        ];
+        // ...
     }
     @NgModule({
         imports: [
@@ -48,7 +41,6 @@ By default, an end user can switch between views by swiping. Assign **false** to
     <!-- tab: App.vue -->
     <template>
         <DxMultiView
-            :data-source="multiViewItems"
             :swipe-enabled="false"
         />
     </template>
@@ -61,14 +53,6 @@ By default, an end user can switch between views by swiping. Assign **false** to
     export default {
         components: {
             DxMultiView
-        },
-        data() {
-            return {
-                multiViewItems: [
-                    { text: 'Personal Data' },
-                    { text: 'Contacts' }
-                ]
-            };
         }
     };
     </script>
@@ -82,16 +66,10 @@ By default, an end user can switch between views by swiping. Assign **false** to
 
     import { MultiView } from 'devextreme-react/multi-view';
 
-    const multiViewItems = [
-        { text: 'Personal Data' },
-        { text: 'Contacts' }
-    ];
-
     class App extends React.Component {
         render() {
             return (
                 <MultiView
-                    dataSource={multiViewItems}
                     swipeEnabled={false}
                 />
             );
@@ -109,7 +87,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $('#multiViewContainer').dxMultiView({
             dataSource: [
                 { text: 'Personal Data' },
@@ -236,12 +214,9 @@ By default, the **MultiView** widget animates switching between views. You can d
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $('#multiViewContainer').dxMultiView({
-            dataSource: [
-                { text: 'Personal Data' },
-                { text: 'Contacts' }
-            ],
+            // ...
             animationEnabled: false
         });
     });
@@ -253,7 +228,6 @@ By default, the **MultiView** widget animates switching between views. You can d
 
     <!--HTML-->
     <dx-multi-view
-        [dataSource]="multiViewItems"
         [animationEnabled]="false">
     </dx-multi-view>
 
@@ -261,10 +235,7 @@ By default, the **MultiView** widget animates switching between views. You can d
     import { DxMultiViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        multiViewItems = [
-            { text: 'Personal Data' },
-            { text: 'Contacts' }
-        ];
+        // ...
     }
     @NgModule({
         imports: [
@@ -279,7 +250,6 @@ By default, the **MultiView** widget animates switching between views. You can d
     <!-- tab: App.vue -->
     <template>
         <DxMultiView
-            :data-source="multiViewItems"
             :animation-enabled="false"
         />
     </template>
@@ -292,14 +262,6 @@ By default, the **MultiView** widget animates switching between views. You can d
     export default {
         components: {
             DxMultiView
-        },
-        data() {
-            return {
-                multiViewItems: [
-                    { text: 'Personal Data' },
-                    { text: 'Contacts' }
-                ]
-            };
         }
     };
     </script>
@@ -313,16 +275,10 @@ By default, the **MultiView** widget animates switching between views. You can d
 
     import { MultiView } from 'devextreme-react/multi-view';
 
-    const multiViewItems = [
-        { text: 'Personal Data' },
-        { text: 'Contacts' }
-    ];
-
     class App extends React.Component {
         render() {
             return (
                 <MultiView
-                    dataSource={multiViewItems}
                     animationEnabled={false}
                 />
             );

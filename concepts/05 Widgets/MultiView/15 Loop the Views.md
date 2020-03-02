@@ -5,7 +5,7 @@ The **MultiView** widget can display views in a loop. The loop mode enables an e
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $('#multiViewContainer').dxMultiView({
             dataSource: [
                 { text: 'Personal Data' },

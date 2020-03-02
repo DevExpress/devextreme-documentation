@@ -12,7 +12,7 @@ To customize views in the **MultiView**, define an [itemTemplate](/api-reference
             <div style="margin: 25px;">
                 <h1>{{content.title}}</h1>
                 <div style="text-align: left;">
-					<p *ngFor="let key of getItemKeys(content.data)">
+                    <p *ngFor="let key of getItemKeys(content.data)">
                         {{key}}: <b>{{content.data[key]}}</b>
                     </p>
                 </div>
@@ -164,7 +164,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
     $(function() {
         $("#multiViewContainer").dxMultiView({
             dataSource: multiViewItems,
-            itemTemplate: function (itemData, itemIndex, itemElement) {
+            itemTemplate: function(itemData, itemIndex, itemElement) {
                 var container = $("<div style='margin:25px;'>");
                 container.append("<h1>" + itemData.title + "</h1>");
 

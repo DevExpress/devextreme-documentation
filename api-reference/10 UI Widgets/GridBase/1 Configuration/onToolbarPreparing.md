@@ -66,7 +66,7 @@ The following code shows how you can customize the toolbar using this function.
 ##### Angular
 
     <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
+    import { DxDataGridModule, DxButtonModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         onToolbarPreparing (e) { 
@@ -89,7 +89,8 @@ The following code shows how you can customize the toolbar using this function.
     @NgModule({
         imports: [
             // ...
-            DxDataGridModule
+            DxDataGridModule,
+            DxButtonModule
         ],
         // ...
     })
@@ -120,10 +121,10 @@ The following code shows how you can customize the toolbar using this function.
         },
         methods: {
             onToolbarPreparing(e) {
-                var toolbarItems = e.toolbarOptions.items;
+                let toolbarItems = e.toolbarOptions.items;
                 // Modifies an existing item
-                $.each(toolbarItems, function(_, item) {
-                    if (item.name === 'saveButton') {
+                toolbarItems.forEach(function(item) {
+                    if (item.name === "saveButton") {
                         // Change the item options here
                     }
                 });
@@ -134,7 +135,7 @@ The following code shows how you can customize the toolbar using this function.
                     options: {
                         icon: 'user',
                         onClick: function() {
-                            ...
+                            // ...
                         }
                     },
                     location: 'after'
@@ -164,10 +165,10 @@ The following code shows how you can customize the toolbar using this function.
         }
 
         onToolbarPreparing(e) {
-            var toolbarItems = e.toolbarOptions.items;
+            let toolbarItems = e.toolbarOptions.items;
             // Modifies an existing item
-            $.each(toolbarItems, function(_, item) {
-                if (item.name === 'saveButton') {
+            toolbarItems.forEach(function(item) {
+                if (item.name === "saveButton") {
                     // Change the item options here
                 }
             });
@@ -178,7 +179,7 @@ The following code shows how you can customize the toolbar using this function.
                 options: {
                     icon: 'user',
                     onClick: function() {
-                        ...
+                        // ...
                     }
                 },
                 location: 'after'

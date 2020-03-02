@@ -56,7 +56,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
         <DxTabPanel
             :items="tabPanelItems"
             :swipe-enabled="false"
-        </DxTabPanel>
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

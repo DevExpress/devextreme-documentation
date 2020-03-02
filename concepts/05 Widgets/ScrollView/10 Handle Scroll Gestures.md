@@ -32,7 +32,7 @@ The **ScrollView** raises the [pullDown](/api-reference/10%20UI%20Widgets/dxScro
     import { DxScrollViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        updateContent = (e) => {
+        updateContent(e) {
             // Commands that refresh the content go here
             e.component.release();
         }
@@ -138,7 +138,7 @@ If an end user scrolls the content down to the bottom, the **ScrollView** raises
     import { DxScrollViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        updateContent = (e) => {
+        updateContent(e) {
             // Commands that refresh the content go here
             e.component.release();
         }
@@ -242,7 +242,7 @@ If you want to process each scroll gesture performed by a user, handle the [scro
     import { DxScrollViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        scroll = (e) => {
+        scroll(e) {
             if(e.reachedBottom) {
                 // Here go the commands to be executed when the bottom is reached
             }

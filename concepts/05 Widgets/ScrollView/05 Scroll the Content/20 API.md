@@ -5,21 +5,21 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         var scrollView = $("#scrollViewContainer").dxScrollView({
             height: 200
         }).dxScrollView("instance");
 
         $("#scrollUpButton").dxButton({
             text: "Scroll Up",
-            onClick: function () {
+            onClick: function() {
                 scrollView.scrollBy(-100);
             }
         });
 
         $("#scrollDownButton").dxButton({
             text: "Scroll Down",
-            onClick: function () {
+            onClick: function() {
                 scrollView.scrollBy(100);
             }
         });
@@ -35,11 +35,11 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
     <!--HTML-->
     <dx-button 
         text="Scroll Up"
-        (onClick)="scrollUpClick($event)">
+        (onClick)="scrollUp()">
     </dx-button>
     <dx-button
         text="Scroll Down"
-        (onClick)="scrollDownClick($event)">
+        (onClick)="scrollDown()">
     </dx-button>
     <dx-scroll-view
         [height]="200">
@@ -55,11 +55,11 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
         // Prior to Angular 8
         // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
-        scrollUpClick = e => {
+        scrollUp() {
             this.scrollView.instance.scrollBy(-100);
         }
 
-        scrollDownClick = e => { 
+        scrollDown() { 
             this.scrollView.instance.scrollBy(100); 
         }
     }
@@ -79,11 +79,11 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
         <div>
             <DxButton
                 text="Scroll Up"
-                @click="scrollUpClick($event)">
+                @click="scrollUp">
             </DxButton>
             <DxButton
                 text="Scroll Down"
-                @click="scrollDownClick($event)">
+                @click="scrollDown">
             </DxButton>
             <DxScrollView
                 :ref="myScrollViewRef"
@@ -112,10 +112,10 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
             }
         },
         methods: {
-            scrollUpClick(e) {
+            scrollUp() {
                 this.scrollView.scrollBy(-100);
             }
-            scrollDownClick(e) {
+            scrollDown() {
                 this.scrollView.scrollBy(100);
             }
         },
@@ -152,11 +152,11 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
             return (
                 <Button
                     text="Scroll Up"
-                    onClick={this.scrollUpClick}>
+                    onClick={this.scrollUp}>
                 </Button>
                  <Button
                     text="Scroll Down"
-                    onClick={this.scrollDownClick}>
+                    onClick={this.scrollDown}>
                 </Button>
                 <ScrollView
                     ref={this.scrollViewRef}
@@ -166,11 +166,11 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
             );
         }
 
-        scrollUpClick = (e) => {
+        scrollUp = () => {
             this.scrollView.scrollBy(-100);
         }
 
-        scrollDownClick = (e) => {
+        scrollDown = () => {
             this.scrollView.scrollBy(100);
         }
     }
@@ -186,7 +186,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         var scrollView = $("#scrollViewContainer").dxScrollView({
             height: 200,
             width: 100,
@@ -195,7 +195,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
 
         $("#scrollButton").dxButton({
             text: "Scroll",
-            onClick: function () {
+            onClick: function() {
                 scrollView.scrollBy({ left: 100, top: 100 });
             }
         });
@@ -210,7 +210,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
     <!--HTML-->
     <dx-button 
         text="Scroll"
-        (onClick)="scrollClick($event)">
+        (onClick)="scroll()">
     </dx-button>
     <dx-scroll-view
         [height]="200"
@@ -228,7 +228,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
         // Prior to Angular 8
         // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
-        scrollClick = e => {
+        scroll() {
             this.scrollView.instance.scrollBy({ left: 100, top: 100 });
         }
     }
@@ -248,7 +248,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
         <div>
             <DxButton
                 text="Scroll"
-                @click="scrollClick($event)">
+                @click="scroll">
             </DxButton>
             <DxScrollView
                 :ref="myScrollViewRef"
@@ -279,7 +279,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
             }
         },
         methods: {
-            scrollClick(e) {
+            scroll() {
                 this.scrollView.scrollBy({ left: 100, top: 100 });
             }
         },
@@ -316,7 +316,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
             return (
                 <Button
                     text="Scroll"
-                    onClick={this.scrollClick}>
+                    onClick={this.scroll}>
                 </Button>
                 <ScrollView
                     ref={this.scrollViewRef}
@@ -328,7 +328,7 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
             );
         }
 
-        scrollClick = (e) => {
+        scroll = () => {
             this.scrollView.scrollBy({ left: 100, top: 100 });
         }
     }
@@ -344,7 +344,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         var scrollView = $("#scrollViewContainer").dxScrollView({
             height: 200,
             width: 100,
@@ -353,7 +353,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
 
         $("#scrollButton").dxButton({
             text: "Scroll",
-            onClick: function () {
+            onClick: function() {
                 scrollView.scrollTo(300);
             }
         });
@@ -368,7 +368,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
     <!--HTML-->
     <dx-button 
         text="Scroll"
-        (onClick)="scrollClick($event)">
+        (onClick)="scroll()">
     </dx-button>
     <dx-scroll-view
         [height]="200"
@@ -386,7 +386,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
         // Prior to Angular 8
         // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
-        scrollClick = e => {
+        scroll() {
             this.scrollView.instance.scrollTo(300);
         }
     }
@@ -406,7 +406,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
         <div>
             <DxButton
                 text="Scroll"
-                @click="scrollClick($event)">
+                @click="scroll">
             </DxButton>
             <DxScrollView
                 :ref="myScrollViewRef"
@@ -437,7 +437,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
             }
         },
         methods: {
-            scrollClick(e) {
+            scroll() {
                 this.scrollView.scrollTo(300);
             }
         },
@@ -474,7 +474,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
             return (
                 <Button
                     text="Scroll"
-                    onClick={this.scrollClick}>
+                    onClick={this.scroll}>
                 </Button>
                 <ScrollView
                     ref={this.scrollViewRef}
@@ -486,7 +486,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
             );
         }
 
-        scrollClick = (e) => {
+        scroll = () => {
             this.scrollView.scrollTo(300);
         }
     }
@@ -509,7 +509,7 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
     </div>
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         var scrollView = $("#scrollViewContainer").dxScrollView({
             height: 200,
             width: 100,
@@ -518,7 +518,7 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
 
         $("#scrollButton").dxButton({
             text: "Scroll",
-            onClick: function () {
+            onClick: function() {
                 // Scrolls the content to the element with the "end" id
                 scrollView.scrollToElement($("#end"));
             }
@@ -530,7 +530,7 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
     <!--HTML-->
     <dx-button 
         text="Scroll"
-        (onClick)="scrollClick($event)">
+        (onClick)="scroll()">
     </dx-button>
     <dx-scroll-view
         [height]="200"
@@ -549,8 +549,8 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
         // Prior to Angular 8
         // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
-        scrollClick = e => {
-            <!-- Scrolls the content to the element with the "end" id -->
+        scroll() {
+            // Scrolls the content to the element with the "end" id
             this.scrollView.instance.scrollToElement(document.querySelector('#end'));
         }
     }
@@ -570,7 +570,7 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
         <div>
             <DxButton
                 text="Scroll"
-                @click="scrollClick($event)">
+                @click="scroll">
             </DxButton>
             <DxScrollView
                 :ref="myScrollViewRef"
@@ -602,8 +602,8 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
             }
         },
         methods: {
-            scrollClick(e) {
-                <!-- Scrolls the content to the element with the "end" id -->
+            scroll() {
+                // Scrolls the content to the element with the "end" id
                 this.scrollView.scrollToElement(document.querySelector('#end'));
             }
         },
@@ -653,8 +653,8 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
             );
         }
 
-        scrollClick = (e) => {
-            {/* Scrolls the content to the element with the "end" id */}
+        scrollClick = () => {
+            // Scrolls the content to the element with the "end" id
             this.scrollView.scrollToElement(document.querySelector('#end'));
         }
     }

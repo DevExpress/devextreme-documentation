@@ -11,7 +11,7 @@ The following code adds a simple **ScrollView** to your page. The [width](/api-r
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $("#scrollViewContainer").dxScrollView({
             height: 500,
             width: 500,
@@ -105,7 +105,7 @@ The **ScrollView** employs native scrolling on most platforms, except desktops. 
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $("#scrollViewContainer").dxScrollView({
             useNative: true
         });
@@ -186,7 +186,7 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $("#scrollViewContainer").dxScrollView({
             useNative: false,
             showScrollbar: 'always' // or 'onScroll' | 'onHover' | 'never'
@@ -223,8 +223,8 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
     <!-- tab: App.vue -->
     <template>
         <DxScrollView
-            :use-native="false"
-            :show-scrollbar="always"  <!-- or 'onScroll' | 'onHover' | 'never' -->
+            :use-native="false"F
+            show-scrollbar="always"  <!-- or 'onScroll' | 'onHover' | 'never' -->
         />
     </template>
     <script>

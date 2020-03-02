@@ -5,7 +5,7 @@ An end user can scroll the **ScrollView** content with the swipe gesture or with
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $("#scrollViewContainer").dxScrollView({
             scrollByContent: true, // enables the swipe gesture on all platforms
             scrollByThumb: true // makes the scrollbar active on all platforms

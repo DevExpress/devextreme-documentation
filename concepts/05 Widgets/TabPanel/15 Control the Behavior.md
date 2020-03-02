@@ -105,7 +105,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
                 <TabPanel
                     items={tabPanelItems}
                     swipeEnabled={false}
-                </TabPanel>
+                />
             );
         }
     }
@@ -351,7 +351,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
                 <TabPanel
                     items={tabPanelItems}
                     loop={false}
-                </TabPanel>
+                />
             );
         }
     }
@@ -467,7 +467,7 @@ To specify whether or not to animate switching between views, use the [animation
                 <TabPanel
                     items={tabPanelItems}
                     animationEnabled={true}
-                </TabPanel>
+                />
             );
         }
     }

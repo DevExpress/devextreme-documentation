@@ -133,7 +133,7 @@ An item in the **TabPanel** widget includes a tab and a view. For a minor custom
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTitleTemplate') callback functions for views and tabs, respectively. In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component
+If you need a more flexible solution, define [itemTemplate](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTitleTemplate') for views and tabs, respectively. In Angular and Vue, you can declare them in the markup. In React, you can use rendering functions (shown in the code below) or components.
 
 ---
 
@@ -225,7 +225,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
                 }, {
                     title: 'Contacts',
                     data: { phone: '(555)555-5555', email: 'John.Smith@example.com' }
-                }];
+                }]
             };
         },
         methods: {
@@ -300,7 +300,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/"
 }
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tabpanel item. To apply this markup, use the **itemTemplate** and **itemTitleTemplate** callback functions as shown in the following code:
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for **TabPanel** items. To apply this markup, use the **itemTemplate** and **itemTitleTemplate** callback functions as shown in the following code:
 
 ---
 

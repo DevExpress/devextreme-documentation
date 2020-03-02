@@ -300,7 +300,7 @@ If you need a more flexible solution, define [itemTemplate](/api-reference/10%20
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/"
 }
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tabpanel item. To apply this markup, use the **itemTemplate** and **itemTitleTemplate** callback functions as shown in the following code:
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for **TabPanel** items. To apply this markup, use the **itemTemplate** and **itemTitleTemplate** callback functions as shown in the following code:
 
 ---
 

@@ -50,7 +50,7 @@ By default, an end user can switch between views by swiping. Assign **false** to
         <DxMultiView
             :data-source="multiViewItems"
             :swipe-enabled="false"
-        </DxMultiView>
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -93,7 +93,7 @@ By default, an end user can switch between views by swiping. Assign **false** to
                 <MultiView
                     dataSource={multiViewItems}
                     swipeEnabled={false}
-                </MultiView>
+                />
             );
         }
     }
@@ -159,7 +159,8 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
     <template>
         <DxMultiView
             :data-source="multiViewItems"
-            :selected-index.sync="selectedIndex" />
+            :selected-index.sync="selectedIndex" 
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -280,7 +281,7 @@ By default, the **MultiView** widget animates switching between views. You can d
         <DxMultiView
             :data-source="multiViewItems"
             :animation-enabled="false"
-        </DxMultiView>
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -323,7 +324,7 @@ By default, the **MultiView** widget animates switching between views. You can d
                 <MultiView
                     dataSource={multiViewItems}
                     animationEnabled={false}
-                </MultiView>
+                />
             );
         }
     }

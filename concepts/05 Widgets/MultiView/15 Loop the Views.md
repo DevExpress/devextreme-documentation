@@ -50,7 +50,7 @@ The **MultiView** widget can display views in a loop. The loop mode enables an e
         <DxMultiView
             :data-source="multiViewItems"
             :loop="true"
-        </DxMultiView>
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -93,7 +93,7 @@ The **MultiView** widget can display views in a loop. The loop mode enables an e
                 <MultiView
                     dataSource={multiViewItems}
                     loop={true}
-                </MultiView>
+                />
             );
         }
     }

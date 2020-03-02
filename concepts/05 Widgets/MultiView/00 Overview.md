@@ -56,7 +56,8 @@ In the most simple case, the **MultiView** widget requires only the [dataSource]
     <!--tab: App.vue-->
     <template>
         <DxMultiView
-            :data-source="multiViewItems" />
+            :data-source="multiViewItems"
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

@@ -1,27 +1,32 @@
 For a minor customization of **Menu** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/items/') in item data objects. For example, the following code generates two root items with two drop-down menu items each. The root items are supplied with [icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->var menuItems = [{
-        text: "Upload", icon: "upload",
+    <!--JavaScript-->
+    var menuItems = [{
+        text: 'Upload', icon: 'upload',
         items: [
-            { text: "From your computer" },
-            { text: "From a cloud service" }
+            { text: 'From your computer' },
+            { text: 'From a cloud service' }
         ]
     }, {
-        text: "Share", icon: "message",
+        text: 'Share', icon: 'message',
         items: [
-            { text: "Log in with Facebook" },
-            { text: "Log in with Twitter" }
+            { text: 'Log in with Facebook' },
+            { text: 'Log in with Twitter' }
         ]
     }];
 
-    $(function () {
+    $(function() {
         $("#menuContainer").dxMenu({
             items: menuItems
         });
     });
+
+    <!--HTML-->
+    <div id="menuContainer"></div>
 
 ##### Angular
 
@@ -31,20 +36,20 @@ For a minor customization of **Menu** items, you can define [specific fields](/a
     </dx-menu>
 
     <!--TypeScript-->
-    import { DxMenuModule } from "devextreme-angular";
+    import { DxMenuModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         menuItems = [{
-            text: "Upload", icon: "upload",
+            text: 'Upload', icon: 'upload',
             items: [
-                { text: "From your computer" },
-                { text: "From a cloud service" }
+                { text: 'From your computer' },
+                { text: 'From a cloud service' }
             ]
         }, {
-            text: "Share", icon: "message",
+            text: 'Share', icon: 'message',
             items: [
-                { text: "Log in with Facebook" },
-                { text: "Log in with Twitter" }
+                { text: 'Log in with Facebook' },
+                { text: 'Log in with Twitter' }
             ]
         }];
     }
@@ -56,11 +61,85 @@ For a minor customization of **Menu** items, you can define [specific fields](/a
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxMenu
+            :items="menuItems"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxMenu from 'devextreme-vue/menu';
+
+    export default {
+        components: {
+            DxMenu
+        },
+        data() {
+            return {
+                menuItems: [{
+                    text: 'Upload', icon: 'upload',
+                    items: [
+                        { text: 'From your computer' },
+                        { text: 'From a cloud service' }
+                    ]
+                }, {
+                    text: 'Share', icon: 'message',
+                    items: [
+                        { text: 'Log in with Facebook' },
+                        { text: 'Log in with Twitter' }
+                    ]
+                }]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Menu } from 'devextreme-react/menu';
+
+    const menuItems = [{
+        text: 'Upload', icon: 'upload',
+        items: [
+            { text: 'From your computer' },
+            { text: 'From a cloud service' }
+        ]
+    }, {
+        text: 'Share', icon: 'message',
+        items: [
+            { text: 'Log in with Facebook' },
+            { text: 'Log in with Twitter' }
+        ]
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Menu
+                    items={menuItems}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize menu items.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
+
 ##### Angular
 
     <!--HTML-->
@@ -73,20 +152,20 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     </dx-menu>
 
     <!--TypeScript-->
-    import { DxMenuModule } from "devextreme-angular";
+    import { DxMenuModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         menuItems = [{
-            text: "Upload",
+            text: 'Upload',
             items: [
-                { text: "From your computer" },
-                { text: "From a cloud service" }
+                { text: 'From your computer' },
+                { text: 'From a cloud service' }
             ]
         }, {
-            text: "Share",
+            text: 'Share',
             items: [
-                { text: "Log in with Facebook" },
-                { text: "Log in with Twitter" }
+                { text: 'Log in with Facebook' },
+                { text: 'Log in with Twitter' }
             ]
         }];
     }
@@ -98,104 +177,155 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         // ...
     })
 
-#####**AngularJS**
+##### Vue
 
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.menuItems = [{
-                text: "Upload",
-                items: [
-                    { text: "From your computer" },
-                    { text: "From a cloud service" }
-                ]
-            }, {
-                text: "Share",
-                items: [
-                    { text: "Log in with Facebook" },
-                    { text: "Log in with Twitter" }
-                ]
-            }];
-        });
+    <!-- tab: App.vue -->
+    <template>
+        <DxMenu
+            :items="menuItems"
+            item-template="item">
+            <template #item="{ data }">
+                <i>{{data.text}}</i>
+            </template>
+        </DxMenu>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-menu="{ items: menuItems, itemTemplate: 'items' }" dx-item-alias="item">
-            <div data-options="dxTemplate: { name: 'items' }">
-                <i>{{ item.text }}</i>
-            </div>
-        </div>
-    </div>
+    import DxMenu from 'devextreme-vue/menu';
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--JavaScript-->var viewModel = {
-        menuItems: [{
-            text: "Upload",
-            items: [
-                { text: "From your computer" },
-                { text: "From a cloud service" }
-            ]
-        }, {
-            text: "Share",
-            items: [
-                { text: "Log in with Facebook" },
-                { text: "Log in with Twitter" }
-            ]
-        }]
+    export default {
+        components: {
+            DxMenu
+        },
+        data() {
+            return {
+                menuItems: [{
+                    text: 'Upload',
+                    items: [
+                        { text: 'From your computer' },
+                        { text: 'From a cloud service' }
+                    ]
+                }, {
+                    text: 'Share',
+                    items: [
+                        { text: 'Log in with Facebook' },
+                        { text: 'Log in with Twitter' }
+                    ]
+                }]
+            };
+        }
     };
+    </script>
 
-    ko.applyBindings(viewModel);
+##### React
 
-    <!--HTML--><div data-bind="dxMenu: { items: menuItems, itemTemplate: 'items' }">
-        <div data-options="dxTemplate: { name: 'items' }">
-            <i data-bind="text: text"></i>
-        </div>
-    </div>
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
----
+    import { Menu } from 'devextreme-react/menu';
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/#itemTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->var menuItems = [{
-        text: "Upload",
+    const menuItems = [{
+        text: 'Upload',
         items: [
-            { text: "From your computer" },
-            { text: "From a cloud service" }
+            { text: 'From your computer' },
+            { text: 'From a cloud service' }
         ]
     }, {
-        text: "Share",
+        text: 'Share',
         items: [
-            { text: "Log in with Facebook" },
-            { text: "Log in with Twitter" }
+            { text: 'Log in with Facebook' },
+            { text: 'Log in with Twitter' }
         ]
     }];
 
-    $(function () {
+    const renderMenuItem = (itemData) => {
+        return (
+            <i>{itemData.text}</i>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Menu
+                    items={menuItems}
+                    itemRender={renderMenuItem}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
+
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    var menuItems = [{
+        text: 'Upload',
+        items: [
+            { text: 'From your computer' },
+            { text: 'From a cloud service' }
+        ]
+    }, {
+        text: 'Share',
+        items: [
+            { text: 'Log in with Facebook' },
+            { text: 'Log in with Twitter' }
+        ]
+    }];
+
+    $(function() {
         $("#menuContainer").dxMenu({
             items: menuItems,
-            itemTemplate: function (itemData, itemIndex, itemElement) {
+            itemTemplate: function(itemData, itemIndex, itemElement) {
                 itemElement.append("<i>" + itemData.text + "</i>");
             }
         });
     });
 
+---
+
 You can also customize an individual menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/items/#template') field of the item's data object.
 
-    <!--HTML--><script id="individualTemplate" type="text/html">
-        <!-- ... -->
+---
+
+##### jQuery
+
+    <!--HTML-->
+    <script id="individualTemplate" type="text/html">
+        <i>Upload</i>
     </script>
 
-    <!--JavaScript-->var menuItems = [{
+    <!--JavaScript-->
+    var menuItems = [{
         text: "Upload", icon: "upload",
         template: $("#individualTemplate"),
         items: [
-            { text: "From your computer" },
-            { text: "From a cloud service" }
+            { 
+                template: function() {
+                    return $("<i>").text("From your computer");
+                }
+            }
         ]
-    },
-        // ...
-    ];
+    }];
+
+    $(function() {
+        $("#menuContainer").dxMenu({
+            items: menuItems
+        });
+    });
+
+---
 
 In addition, you can use a 3rd-party template engine to customize widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 

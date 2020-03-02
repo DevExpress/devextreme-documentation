@@ -7,13 +7,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
     <!--JavaScript-->
     $(function () {
         $('#tabPanelContainer').dxTabPanel({
-            items: [{
-                title: 'Info',
-                text: 'This is Info Tab'
-            }, {
-                title: 'Contacts',
-                text: 'This is Contacts Tab'
-            }],
+            // ...
             swipeEnabled: false
         });
     });
@@ -24,8 +18,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel
-        [items]="tabPanelItems"
+    <dx-tab-panel ...
         [swipeEnabled]="false">
     </dx-tab-panel>
 
@@ -33,13 +26,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
     import { DxTabPanelModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        tabPanelItems = [{
-            title: 'Info',
-            text: 'This is Info Tab'
-        }, {
-            title: 'Contacts',
-            text: 'This is Contacts Tab'
-        }];
+        // ...
     }
     @NgModule({
         imports: [
@@ -53,8 +40,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel
-            :items="tabPanelItems"
+        <DxTabPanel ...
             :swipe-enabled="false"
         />
     </template>
@@ -67,17 +53,6 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
     export default {
         components: {
             DxTabPanel
-        },
-        data() {
-            return {
-                tabPanelItems: [{
-                    title: 'Info',
-                    text: 'This is Info Tab'
-                }, {
-                    title: 'Contacts',
-                    text: 'This is Contacts Tab'
-                }]
-            };
         }
     };
     </script>
@@ -91,19 +66,10 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 
     import { TabPanel } from 'devextreme-react/tab-panel';
 
-    const tabPanelItems = [{
-        title: 'Info',
-        text: 'This is Info Tab'
-    }, {
-        title: 'Contacts',
-        text: 'This is Contacts Tab'
-    }];
-
     class App extends React.Component {
         render() {
             return (
-                <TabPanel
-                    items={tabPanelItems}
+                <TabPanel ...
                     swipeEnabled={false}
                 />
             );
@@ -123,13 +89,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
     <!--JavaScript-->
     $(function() {
         $('#tabPanelContainer').dxTabPanel({
-            items: [{
-                title: 'Info',
-                text: 'This is Info Tab'
-            }, {
-                title: 'Contacts',
-                text: 'This is Contacts Tab'
-            }],
+            // ...
             selectedIndex: 1
         });
     });
@@ -140,22 +100,19 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel
-        [items]="tabPanelItems"
-        [selectedIndex]="1">
+    <dx-tab-panel ...
+        [(selectedIndex)]="selectedIndex">
     </dx-tab-panel>
 
     <!--TypeScript-->
     import { DxTabPanelModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        tabPanelItems = [{
-            title: 'Info',
-            text: 'This is Info Tab'
-        }, {
-            title: 'Contacts',
-            text: 'This is Contacts Tab'
-        }];
+        selectedIndex: number;
+
+        constructor() {
+            this.selectedIndex = 1;
+        }
     }
     @NgModule({
         imports: [
@@ -169,9 +126,8 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
     <!--tab: App.vue-->
     <template>
-        <DxTabPanel
-            :items="tabPanelItems"
-            :selected-index="1" />
+        <DxTabPanel ...
+            :selected-index.sync="selectedIndex" />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -185,14 +141,8 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
         },
         data() {
             return {
-                tabPanelItems: [{
-                    title: 'Info',
-                    text: 'This is Info Tab'
-                }, {
-                    title: 'Contacts',
-                    text: 'This is Contacts Tab'
-                }]
-            };
+                selectedIndex: 1
+            }
         }
     };
     </script>
@@ -206,16 +156,9 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
     import { TabPanel } from 'devextreme-react/tab-panel';
 
-    const tabPanelItems = [{
-        title: 'Info',
-        text: 'This is Info Tab'
-    }, {
-        title: 'Contacts',
-        text: 'This is Contacts Tab'
-    }];
-
     class App extends React.Component {
-        constructor() {
+        constructor(props) {
+            super(props);
             this.state = {
                 selectedIndex: 1
             }
@@ -231,8 +174,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
         render() {
             return (
-                <TabPanel
-                    items={tabPanelItems}
+                <TabPanel ...
                     selectedIndex={this.state.selectedIndex}
                     onOptionChanged={this.handleOptionChange}
                 />
@@ -253,13 +195,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
     <!--JavaScript-->
     $(function () {
         $('#tabPanelContainer').dxTabPanel({
-            items: [{
-                title: 'Info',
-                text: 'This is Info Tab'
-            }, {
-                title: 'Contacts',
-                text: 'This is Contacts Tab'
-            }],
+            // ...
             loop: false
         });
     });
@@ -270,8 +206,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel
-        [items]="tabPanelItems"
+    <dx-tab-panel ...
         [loop]="false">
     </dx-tab-panel>
 
@@ -279,13 +214,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
     import { DxTabPanelModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        tabPanelItems = [{
-            title: 'Info',
-            text: 'This is Info Tab'
-        }, {
-            title: 'Contacts',
-            text: 'This is Contacts Tab'
-        }];
+        // ...
     }
     @NgModule({
         imports: [
@@ -299,8 +228,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel
-            :items="tabPanelItems"
+        <DxTabPanel ...
             :loop="false"
         />
     </template>
@@ -313,17 +241,6 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
     export default {
         components: {
             DxTabPanel
-        },
-        data() {
-            return {
-                tabPanelItems: [{
-                    title: 'Info',
-                    text: 'This is Info Tab'
-                }, {
-                    title: 'Contacts',
-                    text: 'This is Contacts Tab'
-                }]
-            };
         }
     };
     </script>
@@ -337,19 +254,10 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 
     import { TabPanel } from 'devextreme-react/tab-panel';
 
-    const tabPanelItems = [{
-        title: 'Info',
-        text: 'This is Info Tab'
-    }, {
-        title: 'Contacts',
-        text: 'This is Contacts Tab'
-    }];
-
     class App extends React.Component {
         render() {
             return (
-                <TabPanel
-                    items={tabPanelItems}
+                <TabPanel ...
                     loop={false}
                 />
             );
@@ -369,13 +277,7 @@ To specify whether or not to animate switching between views, use the [animation
     <!--JavaScript-->
     $(function () {
         $('#tabPanelContainer').dxTabPanel({
-            items: [{
-                title: 'Info',
-                text: 'This is Info Tab'
-            }, {
-                title: 'Contacts',
-                text: 'This is Contacts Tab'
-            }],
+            // ...
             animationEnabled: true
         });
     });
@@ -386,8 +288,7 @@ To specify whether or not to animate switching between views, use the [animation
 ##### Angular
 
     <!--HTML-->
-    <dx-tab-panel
-        [items]="tabPanelItems"
+    <dx-tab-panel ...
         [animationEnabled]="true">
     </dx-tab-panel>
 
@@ -395,13 +296,7 @@ To specify whether or not to animate switching between views, use the [animation
     import { DxTabPanelModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        tabPanelItems = [{
-            title: 'Info',
-            text: 'This is Info Tab'
-        }, {
-            title: 'Contacts',
-            text: 'This is Contacts Tab'
-        }];
+        // ...
     }
     @NgModule({
         imports: [
@@ -415,8 +310,7 @@ To specify whether or not to animate switching between views, use the [animation
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel
-            :items="tabPanelItems"
+        <DxTabPanel ...
             :animation-enabled="true"
         />
     </template>
@@ -429,17 +323,6 @@ To specify whether or not to animate switching between views, use the [animation
     export default {
         components: {
             DxTabPanel
-        },
-        data() {
-            return {
-                tabPanelItems: [{
-                    title: 'Info',
-                    text: 'This is Info Tab'
-                }, {
-                    title: 'Contacts',
-                    text: 'This is Contacts Tab'
-                }]
-            };
         }
     };
     </script>
@@ -453,19 +336,10 @@ To specify whether or not to animate switching between views, use the [animation
 
     import { TabPanel } from 'devextreme-react/tab-panel';
 
-    const tabPanelItems = [{
-        title: 'Info',
-        text: 'This is Info Tab'
-    }, {
-        title: 'Contacts',
-        text: 'This is Contacts Tab'
-    }];
-
     class App extends React.Component {
         render() {
             return (
-                <TabPanel
-                    items={tabPanelItems}
+                <TabPanel ...
                     animationEnabled={true}
                 />
             );

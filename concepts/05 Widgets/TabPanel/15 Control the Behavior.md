@@ -467,7 +467,7 @@ To specify whether or not to animate switching between views, use the [animation
                 <TabPanel
                     items={tabPanelItems}
                     animationEnabled={true}
-                </TabPanel>
+                />
             );
         }
     }

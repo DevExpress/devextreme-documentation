@@ -5,7 +5,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $('#tabPanelContainer').dxTabPanel({
             // ...
             swipeEnabled: false
@@ -193,7 +193,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $('#tabPanelContainer').dxTabPanel({
             // ...
             loop: false
@@ -275,7 +275,7 @@ To specify whether or not to animate switching between views, use the [animation
 ##### jQuery
 
     <!--JavaScript-->
-    $(function () {
+    $(function() {
         $('#tabPanelContainer').dxTabPanel({
             // ...
             animationEnabled: true

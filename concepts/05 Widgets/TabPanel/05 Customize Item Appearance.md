@@ -318,10 +318,10 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
     $(function() {
         $("#tabPanelContainer").dxTabPanel({
             items: dataItems,
-            itemTitleTemplate: function (itemData, itemIndex, itemElement) {
+            itemTitleTemplate: function(itemData, itemIndex, itemElement) {
                 itemElement.append("<p>" + itemData.title + "</p>");
             },
-            itemTemplate: function (itemData, itemIndex, itemElement) {
+            itemTemplate: function(itemData, itemIndex, itemElement) {
                 var container = $("<div style='margin:25px;'>");
                 container.append("<h1>" + itemData.title + "</h1>");
 

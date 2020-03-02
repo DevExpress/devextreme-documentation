@@ -16,7 +16,7 @@ By default, an end user can switch between views by swiping. Assign **false** to
     });
 
     <!--HTML-->
-    <div id='multiViewContainer'></div>
+    <div id="multiViewContainer"></div>
 
 ##### Angular
 
@@ -120,7 +120,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
     });
 
     <!--HTML-->
-    <div id='multiViewContainer'></div>
+    <div id="multiViewContainer"></div>
 
 ##### Angular
 
@@ -246,7 +246,7 @@ By default, the **MultiView** widget animates switching between views. You can d
     });
 
     <!--HTML-->
-    <div id='multiViewContainer'></div>
+    <div id="multiViewContainer"></div>
 
 ##### Angular
 

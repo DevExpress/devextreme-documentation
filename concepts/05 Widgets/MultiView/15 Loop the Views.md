@@ -16,7 +16,7 @@ The **MultiView** widget can display views in a loop. The loop mode enables an e
     });
 
     <!--HTML-->
-    <div id='multiViewContainer'></div>
+    <div id="multiViewContainer"></div>
 
 ##### Angular
 

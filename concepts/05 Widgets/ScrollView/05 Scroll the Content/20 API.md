@@ -47,10 +47,13 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
     </dx-scroll-view>
 
     <!--TypeScript-->
+    import { ..., ViewChild } from '@angular/core';
     import { DxScrollViewModule, DxScrollViewComponent, DxButtonModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent
+        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent;
+        // Prior to Angular 8
+        // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
         scrollUpClick = e => {
             this.scrollView.instance.scrollBy(-100);
@@ -217,10 +220,13 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
     </dx-scroll-view>
 
     <!--TypeScript-->
+    import { ..., ViewChild } from '@angular/core';
     import { DxScrollViewModule, DxScrollViewComponent, DxButtonModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent
+        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent;
+        // Prior to Angular 8
+        // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
         scrollClick = e => {
             this.scrollView.instance.scrollBy({ left: 100, top: 100 });
@@ -372,10 +378,13 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
     </dx-scroll-view>
 
     <!--TypeScript-->
+    import { ..., ViewChild } from '@angular/core';
     import { DxScrollViewModule, DxScrollViewComponent, DxButtonModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent
+        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent;
+        // Prior to Angular 8
+        // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
         scrollClick = e => {
             this.scrollView.instance.scrollTo(300);
@@ -532,10 +541,13 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
     </dx-scroll-view>
 
     <!--TypeScript-->
+    import { ..., ViewChild } from '@angular/core';
     import { DxScrollViewModule, DxScrollViewComponent, DxButtonModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent
+        @ViewChild(DxScrollViewComponent, { static: false }) scrollView: DxScrollViewComponent;
+        // Prior to Angular 8
+        // @ViewChild(DxScrollViewComponent) scrollView: DxScrollViewComponent;
 
         scrollClick = e => {
             <!-- Scrolls the content to the element with the "end" id -->

@@ -27,7 +27,7 @@ The following code adds a simple **TabPanel** to your page.
     });
 
     <!--HTML-->
-    <div id='tabPanelContainer'></div>
+    <div id="tabPanelContainer"></div>
 
 ##### Angular
 

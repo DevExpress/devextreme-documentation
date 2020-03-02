@@ -19,7 +19,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
     });
 
     <!--HTML-->
-    <div id='tabPanelContainer'></div>
+    <div id="tabPanelContainer"></div>
 
 ##### Angular
 
@@ -56,7 +56,7 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
         <DxTabPanel
             :items="tabPanelItems"
             :swipe-enabled="false"
-        </DxTabPanel>
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -135,7 +135,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
     });
 
     <!--HTML-->
-    <div id='tabPanelContainer'></div>
+    <div id="tabPanelContainer"></div>
 
 ##### Angular
 
@@ -265,7 +265,7 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
     });
 
     <!--HTML-->
-    <div id='tabPanelContainer'></div>
+    <div id="tabPanelContainer"></div>
 
 ##### Angular
 
@@ -301,8 +301,8 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
     <template>
         <DxTabPanel
             :items="tabPanelItems"
-            :loop="false" />
-        </DxTabPanel>
+            :loop="false"
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -381,7 +381,7 @@ To specify whether or not to animate switching between views, use the [animation
     });
 
     <!--HTML-->
-    <div id='tabPanelContainer'></div>
+    <div id="tabPanelContainer"></div>
 
 ##### Angular
 
@@ -417,8 +417,8 @@ To specify whether or not to animate switching between views, use the [animation
     <template>
         <DxTabPanel
             :items="tabPanelItems"
-            :animation-enabled="true" />
-        </DxTabPanel>
+            :animation-enabled="true"
+        />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

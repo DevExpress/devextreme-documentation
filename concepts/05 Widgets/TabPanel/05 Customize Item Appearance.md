@@ -24,7 +24,7 @@ An item in the **TabPanel** widget includes a tab and a view. For a minor custom
     });
 
     <!--HTML-->
-    <div id='tabPanelContainer'></div>
+    <div id="tabPanelContainer"></div>
 
 ##### Angular
 
@@ -151,7 +151,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
             <div style="margin: 25px;">
                 <h1>{{content.title}}</h1>
                 <div style="text-align: left;">
-					<p *ngFor="let key of getItemKeys(content.data)">
+                    <p *ngFor="let key of getItemKeys(content.data)">
                         {{key}}: <b>{{content.data[key]}}</b>
                     </p>
                 </div>

@@ -107,7 +107,7 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
                 options: {
                     type: 'back',
                     text: 'Back',
-                    onClick: function () {
+                    onClick: function() {
                         // ...
                     }
                 },
@@ -117,7 +117,7 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
                 options: {
                     width: 140,
                     items: ['All', 'Family', 'Favorites'],
-                    onItemClick: function (e) {
+                    onItemClick: function(e) {
                         // ...
                     }
                 },
@@ -152,14 +152,14 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
         buttonOptions = {
             type: 'back',
             text: 'Back',
-            onClick: function () {
+            onClick: function() {
                 // ...
             }
         };
         selectBoxOptions = {
             width: 140,
             items: ['All', 'Family', 'Favorites'],
-            onItemClick: function (e) {
+            onItemClick: function(e) {
                 // ...
             }
         };
@@ -209,14 +209,14 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
                 buttonOptions: {
                     type: 'back',
                     text: 'Back',
-                    onClick: function () {
+                    onClick: function() {
                         // ...
                     }
                 },
                 selectBoxOptions: {
                     width: 140,
                     items: ['All', 'Family', 'Favorites'],
-                    onItemClick: function (e) {
+                    onItemClick: function(e) {
                         // ...
                     }
                 }
@@ -238,7 +238,7 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
     const buttonOptions = {
         type: 'back',
         text: 'Back',
-        onClick: function () {
+        onClick: function() {
             // ...
         } 
     };
@@ -246,7 +246,7 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
     const selectBoxOptions = {
         width: 140,
         items: ['All', 'Family', 'Favorites'],
-        onItemClick: function (e) {
+        onItemClick: function(e) {
             // ...
         }
     }

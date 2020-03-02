@@ -313,10 +313,10 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
     $(function() {
         $("#toolbarContainer").dxToolbar({
             items: toolbarItems,
-            itemTemplate: function (itemData, itemIndex, itemElement) {
+            itemTemplate: function(itemData, itemIndex, itemElement) {
                 itemElement.append("<b style='color: green;'>" + itemData.text + "</b>");
             },
-            menuItemTemplate: function (itemData, itemIndex, itemElement) {
+            menuItemTemplate: function(itemData, itemIndex, itemElement) {
                 itemElement.append("<b style='font-style: italic;'>" + itemData.text + "</b>");
             }
         });

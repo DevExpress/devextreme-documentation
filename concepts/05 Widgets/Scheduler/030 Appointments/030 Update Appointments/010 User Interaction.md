@@ -49,7 +49,8 @@ If a user updates a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
 ##### Vue
 
     <template>
-        <DxScheduler recurrence-edit-mode="occurrence"/>
+        <DxScheduler
+            recurrence-edit-mode="occurrence" /> <!-- or 'series' | 'dialog' -->
     </template>
 
     <script>
@@ -76,7 +77,8 @@ If a user updates a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
     class App extends React.Component {
         render() {
             return (
-                <Scheduler recurrenceEditMode="occurrence"/>
+                <Scheduler
+                    recurrenceEditMode="occurrence" /> {/* or 'series' | 'dialog' */}
             );
         }
     }
@@ -119,4 +121,46 @@ To prevent a user from updating an appointment, set the **editing**.[allowUpdati
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxScheduler
+            <DxEditing
+                :allow-updating="false" />
+        /DxScheduler> 
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler, DxEditing } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler, Editing } from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler ... >
+                    <Editing
+                        allowUpdating={false} />
+                </Scheduler>
+            );
+        }
+    }
+
+    export default App;
 ---

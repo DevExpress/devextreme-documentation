@@ -640,7 +640,7 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
             return (
                 <Button
                     text="Scroll"
-                    onClick={this.scrollClick}>
+                    onClick={this.scroll}>
                 </Button>
                 <ScrollView
                     ref={this.scrollViewRef}

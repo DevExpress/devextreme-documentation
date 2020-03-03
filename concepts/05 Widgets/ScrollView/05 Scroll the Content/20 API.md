@@ -653,7 +653,7 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
             );
         }
 
-        scrollClick = () => {
+        scroll = () => {
             // Scrolls the content to the element with the "end" id
             this.scrollView.scrollToElement(document.querySelector('#end'));
         }

@@ -33,7 +33,7 @@ The following code adds a simple **TabPanel** to your page.
 
     <!--HTML-->
     <dx-tab-panel
-        [items]='tabPanelItems'>
+        [items]="tabPanelItems">
     </dx-tab-panel>
 
     <!--TypeScript-->

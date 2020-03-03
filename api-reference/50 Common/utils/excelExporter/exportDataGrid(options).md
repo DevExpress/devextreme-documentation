@@ -16,7 +16,7 @@ Export settings.
 To export **DataGrid** using <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> API, reference or import this library as well as <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> library.
 
 The export is implemented in the [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting') function that is executed before data is exported. Set the **cancel** parameter to **true** to prevent execution of the built-in export. 
-As a result, **DataGrid** is exported as is to a single worksheet. 
+As a result, the **DataGrid** is exported as is to a single worksheet. 
 
 ---
 ##### jQuery

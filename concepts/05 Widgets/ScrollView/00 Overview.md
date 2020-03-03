@@ -223,7 +223,7 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
     <!-- tab: App.vue -->
     <template>
         <DxScrollView
-            :use-native="false"F
+            :use-native="false"
             show-scrollbar="always"  <!-- or 'onScroll' | 'onHover' | 'never' -->
         />
     </template>

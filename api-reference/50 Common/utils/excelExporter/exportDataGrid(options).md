@@ -13,28 +13,37 @@ A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glo
 Export settings.
 
 ---     
+To export **DataGrid** using <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> API, reference or import this library as well as <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> library.
 
-Note that **exportDataGrid(options)** utilizes <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> API to implement export. 
+The export is implemented in the [onExporting](/Documentation/20_1/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) function that is executed before data is exported. Set the **cancel** parameter to **true** to prevent execution of the built-in export. 
+As a result, **DataGrid** is exported as is to a single worksheet. 
 
 ---
 ##### jQuery
+
     <!--JavaScript-->
-    onExporting: function(e) { 
-        var workbook = new ExcelJS.Workbook(); 
-        var worksheet = workbook.addWorksheet('Main sheet'); 
-    
-        DevExpress.excelExporter.exportDataGrid({ 
-                worksheet: worksheet, 
-                component: e.component 
-        }).then(function() {
-            workbook.xlsx.writeBuffer().then(function(buffer) { 
-                saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
+    $('#gridContainer').dxDataGrid({
+        export: {
+            enabled: true
+        },
+        onExporting: function(e) { 
+            var workbook = new ExcelJS.Workbook(); 
+            var worksheet = workbook.addWorksheet('Main sheet'); 
+        
+            DevExpress.excelExporter.exportDataGrid({ 
+                    worksheet: worksheet, 
+                    component: e.component 
+            }).then(function() {
+                workbook.xlsx.writeBuffer().then(function(buffer) { 
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
+                }); 
             }); 
-        }); 
-        e.cancel = true; 
-    };
+            e.cancel = true; 
+        }
+    });
 
 ##### Angular   
+
     <!--TypeScript-->
     import { DxDataGridModule } from 'devextreme-angular';
     import { exportDataGrid } from 'devextreme/exporter/exceljs/excelExporter';
@@ -69,6 +78,8 @@ Note that **exportDataGrid(options)** utilizes <a href="https://github.com/excel
     <!--HTML-->
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
+        <dxo-export [enabled]="true">
+        </dxo-export>
     </dx-data-grid>
 
 ##### Vue
@@ -77,11 +88,14 @@ Note that **exportDataGrid(options)** utilizes <a href="https://github.com/excel
     <template>
         <DxDataGrid ...
             @exporting="onExporting">
+            <DxExport
+                :enabled="true"
+            />
         </DxDataGrid>
     </template>
 
     <script>
-    import { DxDataGrid } from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     import ExcelJS from 'exceljs';
     import saveAs from 'file-saver';
@@ -115,7 +129,7 @@ Note that **exportDataGrid(options)** utilizes <a href="https://github.com/excel
 
     <!-- tab: App.js -->
     import React from 'react';
-    import DataGrid from 'devextreme-react/data-grid';
+    import DataGrid, { Export } from 'devextreme-react/data-grid';
     import ExcelJS from 'exceljs';
     import saveAs from 'file-saver';
 
@@ -129,6 +143,7 @@ Note that **exportDataGrid(options)** utilizes <a href="https://github.com/excel
             return (
                 <DataGrid ...
                     onExporting={this.onExporting}>
+                    <Export enabled={true} />
                 </DataGrid>
             );
         }

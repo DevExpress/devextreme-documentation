@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The index of a cell in a row.
 
 ---
 <!-- Description goes here -->

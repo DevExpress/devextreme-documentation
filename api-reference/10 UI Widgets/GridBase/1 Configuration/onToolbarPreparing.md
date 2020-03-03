@@ -113,11 +113,12 @@ The following code shows how you can customize the toolbar using this function.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDataGrid } from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxButton } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
-            DxDataGrid
+            DxDataGrid,
+            DxButton
         },
         methods: {
             onToolbarPreparing(e) {
@@ -153,7 +154,7 @@ The following code shows how you can customize the toolbar using this function.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DataGrid from 'devextreme-react/data-grid';
+    import { DataGrid, Button } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
         render() {

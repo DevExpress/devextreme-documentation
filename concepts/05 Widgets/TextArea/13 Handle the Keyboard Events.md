@@ -80,51 +80,7 @@ If you are going to change the handling functions at runtime, or if you need to 
         .on("keyDown", keyDownHandler1)
         .on("keyDown", keyDownHandler2);
 
-You can also implement handlers for other keys using the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Methods/#registerKeyHandlerkey_handler') method.
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    function registerKeyHandlers () {
-        let textArea =  $("#textAreaContainer").dxTextArea("instance");
-        textArea.registerKeyHandler("backspace", function (e) {
-            // The argument "e" contains information on the event
-        });
-        textArea.registerKeyHandler("space", function (e) {
-            // ...
-        });
-    }
-    
-
-##### Angular
-
-    <!--TypeScript-->
-    import { ..., ViewChild, AfterViewInit } from "@angular/core";
-    import { DxTextAreaModule, DxTextAreaComponent } from "devextreme-angular";
-    // ...
-    export class AppComponent implements AfterViewInit {
-        @ViewChild(DxTextAreaComponent, { static: false }) textArea: DxTextAreaComponent
-        // Prior to Angular 8
-        // @ViewChild(DxTextAreaComponent) textArea: DxTextAreaComponent
-        ngAfterViewInit () {
-            this.textArea.instance.registerKeyHandler("backspace", function (e) {
-                // The argument "e" contains information on the event
-            });
-            this.textArea.instance.registerKeyHandler("space", function (e) {
-                // ...
-            });
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxTextAreaModule
-        ],
-        // ...
-    })
-
----
+#include common-code-register-key-handler
 
 #####See Also#####
 #include common-link-handleevents

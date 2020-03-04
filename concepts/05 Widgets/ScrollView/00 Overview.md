@@ -85,8 +85,8 @@ The following code adds a simple **ScrollView** to your page. The [width](/api-r
         render() {
             return (
                 <ScrollView
-                    height={200}
-                    width={100}
+                    height={500}
+                    width={500}
                     direction="vertical">  {/* or 'horizontal' | 'vertical' */}
                     {/* Here goes long content */}
                 </ScrollView>

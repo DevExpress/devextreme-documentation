@@ -101,7 +101,7 @@ If you are going to change event handlers at runtime, or if you need to attach s
         // First handler of the "itemClick" event
     };
 
-    var itemClickHandler1 = function(e) {
+    var itemClickHandler2 = function(e) {
         // Second handler of the "itemClick" event
     };
 

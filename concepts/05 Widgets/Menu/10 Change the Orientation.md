@@ -126,7 +126,7 @@ When the widget is positioned at the bottom or at the left side, you may want to
     <!-- tab: App.vue -->
     <template>
         <DxMenu ...
-            submenuDirection="rightToTop"
+            submenu-direction="rightToTop"
             orientation="horizontal" <!-- or "vertical" -->
         />
     </template>

@@ -293,6 +293,9 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
         });
     });
 
+    <!--HTML-->
+    <div id="menuContainer"></div>
+
 ---
 
 You can also customize an individual menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/items/#template') field of the item's data object.
@@ -302,6 +305,7 @@ You can also customize an individual menu item. For this purpose, declare a temp
 ##### jQuery
 
     <!--HTML-->
+    <div id="menuContainer"></div>
     <script id="individualTemplate" type="text/html">
         <i>Upload</i>
     </script>

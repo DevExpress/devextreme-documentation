@@ -184,7 +184,58 @@ To use these summary items for sorting groups, assign an array of objects to the
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid>
+            <DxSortByGroupSummaryInfo :summary-item="1"/> <!-- determines the maximum income item using its index in the "groupItems" array -->
+            <DxSortByGroupSummaryInfo summary-item="min"/> <!-- determines the minimum tasks item using its aggregate function -->
+            <DxSortByGroupSummaryInfo summary-item="Average Age Group Summary"/> <!-- determines the average age item using its name -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxSortByGroupSummaryInfo
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSortByGroupSummaryInfo
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, SortByGroupSummaryInfo } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid>
+                    <SortByGroupSummaryInfo summaryItem={1}/> {/* determines the maximum income item using its index in the "groupItems" array */}
+                    <SortByGroupSummaryInfo summaryItem="min"/> {/* determines the minimum tasks item using its aggregate function */}
+                    <SortByGroupSummaryInfo summaryItem="Average Age Group Summary"/> {/* determines the average age item using its name */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 After that, set the [groupColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/groupColumn.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#groupColumn') option for objects in the **sortByGroupSummaryInfo** array. This option identifies the column that must be used in grouping in order that a particular summary-based sorting setting be applied. If you have omitted this option from an object, the sorting setting specified by this object will be applied regardless of the column used in grouping.
@@ -233,6 +284,69 @@ After that, set the [groupColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid>
+            <DxSortByGroupSummaryInfo
+                :summary-item="1"
+                group-column="Tasks"
+            /> <!-- applies sorting only when records are grouped by the "Tasks" column -->
+            <DxSortByGroupSummaryInfo
+                summary-item="min"
+                group-column="Last Name"
+            /> <!-- applies sorting only when records are grouped by a "Last Name" column -->
+            <DxSortByGroupSummaryInfo summary-item="Average Age Group Summary"/> <!-- applies sorting regardless the grouping column -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxSortByGroupSummaryInfo
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSortByGroupSummaryInfo
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, SortByGroupSummaryInfo } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid>
+                    <SortByGroupSummaryInfo
+                        summaryItem={1}
+                        groupColumn="Tasks"
+                    /> {/* applies sorting only when records are grouped by the "Tasks" column */}
+                    <SortByGroupSummaryInfo
+                        summaryItem="min"
+                        groupColumn="Last Name"
+                    /> {/* applies sorting only when records are grouped by a "Last Name" column */}
+                    <SortByGroupSummaryInfo summaryItem="Average Age Group Summary"/> {/* applies sorting regardless the grouping column */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ---
 

@@ -1,4 +1,4 @@
-Exposes methods of the [DevExpress.excelExporter](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') object.
+Exposes methods of the [DevExpress.excelExporter](/api-reference/50%20Common/utils/excelExporter '/Documentation/ApiReference/Common/Utils/excelExporter/') object.
 
 Exports:
 

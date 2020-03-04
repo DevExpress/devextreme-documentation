@@ -83,21 +83,21 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
             <DxItem
                 widget="dxButton"
                 location="before"
-                :options="buttonOptions">
+                :options="buttonOptions"
             />
             <DxItem
                 text="Change"
                 locate-in-menu="always"
-                :visible="false">
+                :visible="false"
             />
             <DxItem
                 text="Remove"
                 locate-in-menu="always"
-                :disabled="true">
+                :disabled="true"
             />
             <DxItem
                 text="Products"
-                location="center">
+                location="center"
             />
         </DxToolbar>
     </template>

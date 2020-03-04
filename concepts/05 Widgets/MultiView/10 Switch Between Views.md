@@ -189,9 +189,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 
         handleOptionChange = (e) => {
             if(e.fullName === 'selectedIndex') {
-                this.setState({
-                    selectedIndex: e.value
-                });
+                this.changeSelectedIndex(e.value);
             }
         }
 

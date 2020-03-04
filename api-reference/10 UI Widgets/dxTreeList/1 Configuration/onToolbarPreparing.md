@@ -86,7 +86,7 @@ The following code shows how you can customize the toolbar using this function.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDataGrid } from 'devextreme-vue/tree-list';
+    import { DxTreeList } from 'devextreme-vue/tree-list';
 
     export default {
         components: {

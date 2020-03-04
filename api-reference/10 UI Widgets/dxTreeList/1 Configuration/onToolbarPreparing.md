@@ -87,7 +87,6 @@ The following code shows how you can customize the toolbar using this function.
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid } from 'devextreme-vue/tree-list';
-    import 'devextreme-vue/button';
 
     export default {
         components: {
@@ -128,7 +127,6 @@ The following code shows how you can customize the toolbar using this function.
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
-    import 'devextreme-react/button';
 
     class App extends React.Component {
         render() {

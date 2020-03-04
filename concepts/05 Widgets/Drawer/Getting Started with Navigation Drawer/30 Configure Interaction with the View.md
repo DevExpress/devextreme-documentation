@@ -44,6 +44,17 @@ When the **Drawer** opens, it can overlap, shrink, or partially displace the vie
     }
     export default DxComponent;
 
+##### Vue
+
+    <!-- tab: DxComponent.js -->
+    <template>
+    <div>
+        <DxDrawer ...
+            opened-state-mode="overlap" >
+        </DxDrawer>
+    </div>
+    </template>
+
 ---
 
 Run the code, open the **Drawer** and you should see that it overlaps the view's text.

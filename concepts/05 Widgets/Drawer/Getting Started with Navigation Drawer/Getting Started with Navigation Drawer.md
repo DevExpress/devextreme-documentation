@@ -591,4 +591,187 @@ Refer to the subtopics for details on every configuration step. You can also see
     }
     export default Trash;
 
+##### Vue
+
+    <!-- tab: index.js -->
+    import Vue from "vue";
+    import VueRouter from "vue-router";
+    import App from "./App.vue";
+    import InboxComponent from "./inbox.vue";
+    import SentMailComponent from "./sent-mail.vue";
+    import TrashComponent from "./trash.vue";
+    import SpamComponent from "./spam.vue";
+
+    Vue.use(VueRouter);
+
+    const routes = [
+        { path: "", redirect: "/inbox" },
+        { path: "/inbox", component: InboxComponent },
+        { path: "/sent-mail", component: SentMailComponent },
+        { path: "/trash", component: TrashComponent },
+        { path: "/spam", component: SpamComponent }
+    ];
+
+    const router = new VueRouter({
+        mode: "history",
+        routes
+    });
+
+    new Vue({
+        el: "#app",
+        components: { App },
+        template: "<App/>",
+        router
+    });
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxToolbar id="toolbar">
+                <DxItem :options="buttonOptions" location="before" widget="dxButton"/>
+            </DxToolbar>
+            <DxDrawer
+                opened-state-mode="overlap"
+                reveal-mode="expand"
+                :opened.sync="isDrawerOpened"
+                minSize="37"
+                height="250"
+                template="listMenu" >
+
+                <template #listMenu>
+                    <NavigationList/>
+                </template>
+                <div id="view">
+                    <router-view></router-view>
+                </div>
+            </DxDrawer>
+        </div>
+    </template>
+
+    <script>
+    import { DxDrawer } from "devextreme-vue";
+    import DxToolbar, { DxItem } from "devextreme-vue/toolbar";
+    import NavigationList from "./NavigationList.vue";
+    import { text } from "./data.js";
+
+    export default {
+        components: {
+            DxDrawer,
+            DxToolbar,
+            DxItem,
+            NavigationList
+        },
+        data() {
+            return {
+                text,
+                buttonOptions: {
+                    icon: "menu",
+                    onClick: () => {
+                        this.isDrawerOpened = !this.isDrawerOpened;
+                    }
+                },
+                isDrawerOpened: false
+            };
+        }
+    };
+    </script>
+
+    <style>
+    .dx-drawer-panel-content,
+    .dx-overlay-content {
+        background-color: lightgray;
+    }
+    #toolbar {
+        background-color: rgba(191, 191, 191, 0.15);
+        padding: 5px 10px;
+    }
+    .dx-toolbar-button .dx-button {
+        background-color: rgba(191, 191, 191, -0.15);
+        border: none;
+    }
+    .dx-toolbar-button > .dx-toolbar-item-content {
+        margin-left: -7px;
+    }
+    .dx-list-item-icon {
+        margin-right: 10px;
+    }
+    #view {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    </style>
+
+    <!-- tab: NavigationList.vue -->
+    <template>
+        <div style="width: 200px">
+            <DxList
+                width="200"
+                selection-mode="single"
+                :data-source="navigation"
+                @selection-changed="loadView($event)"
+            />
+        </div>
+    </template>
+    <script>
+    import { DxList } from "devextreme-vue/list";
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            const navigation = [
+                { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
+                { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
+                { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
+                { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
+            ];
+            return {
+                navigation
+            };
+        },
+        methods: {
+            loadView(e) {
+                this.$router.push(e.addedItems[0].filePath);
+            }
+        }
+    };
+    </script>
+
+    <!-- tab: Inbox.vue -->
+    <template>
+    <div>Inbox</div>
+    </template>
+
+    <script>
+    export default {};
+    </script>
+
+    <!-- tab: SentMail.vue -->
+    <template>
+    <div>Sent mail</div>
+    </template>
+
+    <script>
+    export default {};
+    </script>
+
+    <!-- tab: Spam.vue -->
+    <template>
+    <div>Spam</div>
+    </template>
+
+    <script>
+    export default {}
+    </script>
+
+    <!-- tab: Trash.vue -->
+    <template>
+    <div>Trash</div>
+    </template>
+
+    <script>
+    export default {}
+    </script>
+
 ---

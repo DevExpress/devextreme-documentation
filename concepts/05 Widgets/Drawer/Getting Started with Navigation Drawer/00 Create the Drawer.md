@@ -173,6 +173,30 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
     }
     export default App;
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+    <div>
+        <DxDrawer :opened.sync="openState" template="template">
+            <template #template>
+                <div style="width: 150px">Drawer content</div>
+            </template>
+            <div id="view">View content</div>
+        </DxDrawer>
+    </div>
+    </template>
+
+    <style>
+    .dx-drawer-panel-content, .dx-overlay-content {
+        background-color: lightgray;
+    }
+    #view {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    </style>
+
 ---
 
 If you run the code, you should see a partially visible **Drawer** and a view that displays *View content*.

@@ -207,4 +207,59 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
         margin-left: -7px;
     }
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+    <div>
+        <DxToolbar id="toolbar">
+            <DxItem :options="buttonOptions" location="before" widget="dxButton"/>
+        </DxToolbar>
+        <DxDrawer :opened.sync="isDrawerOpened" template="template">
+            <template #template>
+                <div style="width: 150px">Drawer content</div>
+            </template>
+            <div id="view">View content</div>
+        </DxDrawer>
+    </div>
+    </template>
+
+    <script>
+    import { DxDrawer } from "devextreme-vue";
+    import DxToolbar, { DxItem } from "devextreme-vue/toolbar";
+
+    export default {
+    components: {
+        DxDrawer,
+        DxToolbar,
+        DxItem
+    },
+    data() {
+        return {
+            buttonOptions: {
+                icon: "menu",
+                onClick: () => {
+                    this.isDrawerOpened = !this.isDrawerOpened;
+                }
+            },
+            isDrawerOpened: true
+        };
+    }
+    };
+    </script>
+
+    <style>
+    #toolbar {
+        background-color: rgba(191, 191, 191, 0.15);
+        padding: 5px 10px;
+    }
+    .dx-toolbar-button .dx-button {
+        background-color: rgba(191, 191, 191, -0.15);
+        border: none;
+    }
+    .dx-toolbar-button > .dx-toolbar-item-content {
+        margin-left: -7px;
+    }
+    </style>
+
 ---

@@ -44,6 +44,17 @@ When you open the **Drawer**, it can slide in or expand from the closed position
     }
     export default DxComponent;
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxDrawer ...
+                reveal-mode="expand" >
+            </DxDrawer>
+        </div>
+    </template>
+
 ---
 
 Run the code and open the **Drawer**. You should see that the widget gets wider, but its content stays in place, creating an impression that the **Drawer** expands. 

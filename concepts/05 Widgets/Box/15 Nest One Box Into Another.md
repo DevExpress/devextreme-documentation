@@ -88,6 +88,7 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
     <!--tab: App.vue-->
     <template>
         <DxBox
+            id="parentBox"
             direction="col"
             height="100%"
             :width="300">
@@ -98,7 +99,7 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
             </DxItem>
             <DxItem :baseSize="50" :ratio="1">
                 <template #default>
-                    <DxBox
+                    <DxBox id="nestedBox"
                         direction="row"
                         height="100%">
                         <DxItem :baseSize="50" :ratio="1">
@@ -153,7 +154,7 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
     class App extends React.Component {
         render() {
             return (
-                <Box
+                <Box id="parentBox"
                     direction="col"
                     height="100%"
                     width={300}>
@@ -161,7 +162,7 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
                         <div className="box-item yellow"> Item 1 </div>
                     </Item>
                     <Item baseSize={50} ratio={1}>
-                        <Box
+                        <Box id="nestedBox"
                             direction="row"
                             height="100%">
                             <Item ratio={1}>

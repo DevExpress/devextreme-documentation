@@ -50,9 +50,9 @@ A **Toolbar** item may be plain text or a widget. Text items should have the [te
     <!--tab: App.vue-->
     <template>
         <DxToolbar>
-            <DxItem text="Delete" location="before"></DxItem>
-            <DxItem text="Products" location="center"></DxItem>
-            <DxItem text="Add" location="after"></DxItem>
+            <DxItem text="Delete" location="before"/>
+            <DxItem text="Products" location="center"/>
+            <DxItem text="Add" location="after"/>
         </DxToolbar>
     </template>
     <script>
@@ -82,9 +82,9 @@ A **Toolbar** item may be plain text or a widget. Text items should have the [te
         render() {
             return (
                 <Toolbar>
-                    <Item text="Delete" location="before"></Item>
-                    <Item text="Products" location="center"></Item>
-                    <Item text="Add" location="after"></Item>
+                    <Item text="Delete" location="before"/>
+                    <Item text="Products" location="center"/>
+                    <Item text="Add" location="after"/>
                 </Toolbar>
             );
         }
@@ -182,13 +182,13 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
             <DxItem
                 widget="dxButton"
                 :options="buttonOptions"
-                location="before">
-            </DxItem>
+                location="before"
+            />
             <DxItem
                 widget="dxSelectBox"
                 :options="selectBoxOptions"
-                location="after">
-            </DxItem>
+                location="after"
+            />
         </DxToolbar>
     </template>
     <script>
@@ -196,13 +196,12 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
-    import DxSelectBox from 'devextreme-vue/select-box';
+    import 'devextreme-vue/select-box';
 
     export default {
         components: {
             DxToolbar,
-            DxItem,
-            DxSelectBox
+            DxItem
         },
         data() {
             return {
@@ -258,13 +257,13 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
                     <Item
                         widget="dxButton"
                         options={buttonOptions}
-                        location="before">
-                    </Item>
+                        location="before"
+                    />
                     <Item
                         widget="dxSelectBox"
                         options={selectBoxOptions}
-                        location="after">
-                    </Item>
+                        location="after"
+                    />
                 </Toolbar>
             );
         }

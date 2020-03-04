@@ -62,12 +62,12 @@ Toolbar items with identical **location** preserve the order they have in the da
     <!--tab: App.vue-->
     <template>
         <DxToolbar>
-            <DxItem text="Delete" location="after"></DxItem>
-            <DxItem text="About" location="after"></DxItem>
-            <DxItem text="Products" location="center"></DxItem>
-            <DxItem text="Suppliers" location="center"></DxItem>
-            <DxItem text="Add" location="before"></DxItem>
-            <DxItem text="Edit" location="before"></DxItem>
+            <DxItem text="Delete" location="after"/>
+            <DxItem text="About" location="after"/>
+            <DxItem text="Products" location="center"/>
+            <DxItem text="Suppliers" location="center"/>
+            <DxItem text="Add" location="before"/>
+            <DxItem text="Edit" location="before"/>
         </DxToolbar>
     </template>
     <script>
@@ -97,12 +97,12 @@ Toolbar items with identical **location** preserve the order they have in the da
         render() {
             return (
                 <Toolbar>
-                    <Item text="Delete" location="after"></Item>
-                    <Item text="About" location="after"></Item>
-                    <Item text="Products" location="center"></Item>
-                    <Item text="Suppliers" location="center"></Item>
-                    <Item text="Add" location="before"></Item>
-                    <Item text="Edit" location="before"></Item>
+                    <Item text="Delete" location="after"/>
+                    <Item text="About" location="after"/>
+                    <Item text="Products" location="center"/>
+                    <Item text="Suppliers" location="center"/>
+                    <Item text="Add" location="before"/>
+                    <Item text="Edit" location="before"/>
                 </Toolbar>
             );
         }
@@ -159,9 +159,9 @@ When there is not enough width for all toolbar items, or if certain toolbar item
     <!--tab: App.vue-->
     <template>
         <DxToolbar>
-            <DxItem text="Add" locate-in-menu="auto"></DxItem>
-            <DxItem text="Change" locate-in-menu="always"></DxItem>
-            <DxItem text="Remove" locate-in-menu="always"></DxItem>
+            <DxItem text="Add" locate-in-menu="auto"/>
+            <DxItem text="Change" locate-in-menu="always"/>
+            <DxItem text="Remove" locate-in-menu="always"/>
         </DxToolbar>
     </template>
     <script>
@@ -191,9 +191,9 @@ When there is not enough width for all toolbar items, or if certain toolbar item
         render() {
             return (
                 <Toolbar>
-                    <Item text="Add" locateInMenu="auto"></Item>
-                    <Item text="Change" locateInMenu="always"></Item>
-                    <Item text="Remove" locateInMenu="always"></Item>
+                    <Item text="Add" locateInMenu="auto"/>
+                    <Item text="Change" locateInMenu="always"/>
+                    <Item text="Remove" locateInMenu="always"/>
                 </Toolbar>
             );
         }

@@ -42,10 +42,7 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
         <dxi-item
             widget="dxButton"
             location="before"
-            [options]="{
-                type: 'back',
-                text: 'Back'
-            }">
+            [options]="buttonOptions">
         </dxi-item>
         <dxi-item
             text="Add"
@@ -65,7 +62,10 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
     import { DxToolbarModule, DxButtonModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        // ...
+        buttonOptions = {
+            type: 'back',
+            text: 'Back',
+        };
     }
     @NgModule({
         imports: [
@@ -84,23 +84,20 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
             <DxItem
                 widget="dxButton"
                 location="before"
-                :options="{
-                    type: 'back',
-                    text: 'Back'
-                }">
-            </DxItem>
+                :options="buttonOptions"
+            />
             <DxItem
                 text="Add"
-                locate-in-menu="always">
-            </DxItem>
+                locate-in-menu="always"
+            />
             <DxItem
                 text="Change"
-                locate-in-menu="always">
-            </DxItem>
+                locate-in-menu="always"
+            />
             <DxItem
                 text="Products"
-                location="center">
-            </DxItem>
+                location="center"
+            />
         </DxToolbar>
     </template>
     <script>
@@ -113,6 +110,14 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
         components: {
             DxToolbar,
             DxItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    type: 'back',
+                    text: 'Back',
+                }
+            }
         }
     };
     </script>
@@ -126,6 +131,11 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';
 
+    const buttonOptions = {
+        type: 'back',
+        text: 'Back',
+    };
+
     class App extends React.Component {
         render() {
             return (
@@ -133,23 +143,20 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
                     <Item
                         widget="dxButton"
                         location="before"
-                        options={{
-                            type: 'back',
-                            text: 'Back'
-                        }}>
-                    </Item>
+                        options={buttonOptions}
+                    />
                     <Item
                         text="Add"
-                        locateInMenu="always">
-                    </Item>
+                        locateInMenu="always"
+                    />
                     <Item
                         text="Change"
-                        locateInMenu="always">
-                    </Item>
+                        locateInMenu="always"
+                    />
                     <Item
                         text="Products"
-                        location="center">
-                    </Item>
+                        location="center"
+                    />
                 </Toolbar>
             );
         }

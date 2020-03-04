@@ -39,10 +39,7 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
         <dxi-item
             widget="dxButton"
             location="before"
-            [options]="{
-                type: 'back',
-                text: 'Back'
-            }">
+            [options]="buttonOptions">
         </dxi-item>
         <dxi-item
             text="Change"
@@ -64,7 +61,10 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
     import { DxToolbarModule, DxButtonModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        // ...
+        buttonOptions = {
+            type: 'back',
+            text: 'Back',
+        };
     }
     @NgModule({
         imports: [
@@ -83,25 +83,22 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
             <DxItem
                 widget="dxButton"
                 location="before"
-                :options="{
-                    type: 'back',
-                    text: 'Back'
-                }">
-            </DxItem>
+                :options="buttonOptions">
+            />
             <DxItem
                 text="Change"
                 locate-in-menu="always"
                 :visible="false">
-            </DxItem>
+            />
             <DxItem
                 text="Remove"
                 locate-in-menu="always"
                 :disabled="true">
-            </DxItem>
+            />
             <DxItem
                 text="Products"
                 location="center">
-            </DxItem>
+            />
         </DxToolbar>
     </template>
     <script>
@@ -114,6 +111,14 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
         components: {
             DxToolbar,
             DxItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    type: 'back',
+                    text: 'Back',
+                }
+            }
         }
     };
     </script>
@@ -127,6 +132,11 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';
 
+    const buttonOptions = {
+        type: 'back',
+        text: 'Back',
+    };
+
     class App extends React.Component {
         render() {
             return (
@@ -134,25 +144,22 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
                     <Item
                         widget="dxButton"
                         location="before"
-                        options={{
-                            type: 'back',
-                            text: 'Back'
-                        }}>
-                    </Item>
+                        options={buttonOptions}
+                    />
                     <Item
                         text="Change"
                         locateInMenu="always"
-                        visible={false}>
-                    </Item>
+                        visible={false}
+                    />
                     <Item
                         text="Remove"
                         locateInMenu="always"
-                        disabled={true}>
-                    </Item>
+                        disabled={true}
+                    />
                     <Item
                         text="Products"
-                        location="center">
-                    </Item>
+                        location="center"
+                    />
                 </Toolbar>
             );
         }

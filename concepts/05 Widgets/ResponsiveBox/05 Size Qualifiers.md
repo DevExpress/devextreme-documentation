@@ -32,12 +32,14 @@ When choosing the layout for a specific screen, the widget considers the screen'
 If a size qualifier should be identified with other screen width values, use the [screenByWidth](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/Configuration/#screenByWidth') option to specify the relation.
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#responsiveBoxContainer").dxResponsiveBox({
             // ...
-            screenByWidth: function (width) {
+            screenByWidth: function(width) {
                 if (width < 640)
                     return 'xs';
                 if (width < 1280)
@@ -52,20 +54,16 @@ If a size qualifier should be identified with other screen width values, use the
 ##### Angular
 
     <!--HTML-->
-    <html style="height:100%">
-        <body style="height:100%">
-            <dx-responsive-box ...
-                [screenByWidth]="getSizeQualifier">
-                <!-- ... -->
-            </dx-responsive-box>
-        </body>
-    </html>
+    <dx-responsive-box ...
+        [screenByWidth]="getSizeQualifier">
+        <!-- ... -->
+    </dx-responsive-box>
 
     <!--TypeScript-->
-    import { DxResponsiveBoxModule } from "devextreme-angular";
+    import { DxResponsiveBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        getSizeQualifier (width) {
+        getSizeQualifier(width) {
             if (width < 640)
                 return 'xs';
             if (width < 1280)
@@ -82,6 +80,71 @@ If a size qualifier should be identified with other screen width values, use the
         ],
         // ...
     })
+
+##### Vue
+
+    <!--HTML-->
+    <template>
+        <DxResponsiveBox ...
+            :screen-by-width="getSizeQualifier">
+            <!-- ... -->
+        </DxResponsiveBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxResponsiveBox } from 'devextreme-vue/responsive-box';
+
+    export default {
+        components: {
+            DxResponsiveBox
+        },
+        data() {
+            return {
+                getSizeQualifier(width) {
+                    if (width < 640)
+                        return 'xs';
+                    if (width < 1280)
+                        return 'sm';
+                    if (width < 1920)
+                        return 'md';
+                    return 'lg';
+                }
+        }
+    };
+    </script>
+    
+##### React
+
+    <!--HTML-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import ResponsiveBox from 'devextreme-react/responsive-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ResponsiveBox ...
+                    screenByWidth={this.getSizeQualifier}
+                />
+            );
+        }
+
+        getSizeQualifier = (width) => {
+            if (width < 640)
+                return 'xs';
+            if (width < 1280)
+                return 'sm';
+            if (width < 1920)
+                return 'md';
+            return 'lg';
+        }
+    }
+
+    export default App;
 
 ---
 

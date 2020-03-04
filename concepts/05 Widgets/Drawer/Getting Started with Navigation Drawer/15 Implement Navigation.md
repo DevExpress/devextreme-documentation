@@ -450,41 +450,6 @@ In this tutorial, we use the **List**:
         </div>
     </template>
 
-    <script>
-    import { DxDrawer } from "devextreme-vue";
-    import DxToolbar, { DxItem } from "devextreme-vue/toolbar";
-    import NavigationList from "./NavigationList.vue";
-    import { text } from "./data.js";
-
-    export default {
-        components: {
-            DxDrawer,
-            DxToolbar,
-            DxItem,
-            NavigationList
-        },
-        data() {
-            return {
-                text,
-                buttonOptions: {
-                    icon: "menu",
-                    onClick: () => {
-                        this.isDrawerOpened = !this.isDrawerOpened;
-                    }
-                },
-                isDrawerOpened: false
-            };
-        }
-    };
-    </script>
-
-    <style>
-    /* ... */
-    .dx-list-item-icon {
-        margin-right: 10px;
-    }
-    </style>
-
     <!-- tab: NavigationList.vue -->
     <template>
         <div style="width: 200px">

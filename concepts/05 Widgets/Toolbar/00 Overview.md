@@ -64,7 +64,7 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
     export class AppComponent {
         buttonOptions = {
             type: 'back',
-            text: 'Back',
+            text: 'Back'
         };
     }
     @NgModule({
@@ -115,7 +115,7 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
             return {
                 buttonOptions: {
                     type: 'back',
-                    text: 'Back',
+                    text: 'Back'
                 }
             }
         }
@@ -133,7 +133,7 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
 
     const buttonOptions = {
         type: 'back',
-        text: 'Back',
+        text: 'Back'
     };
 
     class App extends React.Component {

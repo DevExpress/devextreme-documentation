@@ -63,7 +63,7 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
     export class AppComponent {
         buttonOptions = {
             type: 'back',
-            text: 'Back',
+            text: 'Back'
         };
     }
     @NgModule({
@@ -116,7 +116,7 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
             return {
                 buttonOptions: {
                     type: 'back',
-                    text: 'Back',
+                    text: 'Back'
                 }
             }
         }
@@ -134,7 +134,7 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
 
     const buttonOptions = {
         type: 'back',
-        text: 'Back',
+        text: 'Back'
     };
 
     class App extends React.Component {
@@ -253,7 +253,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
                 }, {
                     text: 'Products',
                     location: 'center'
-                }];
+                }]
             };
         }
     };

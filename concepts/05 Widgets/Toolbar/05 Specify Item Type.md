@@ -240,7 +240,7 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
         onClick: function() {
             // ...
         } 
-    };
+    }
 
     const selectBoxOptions = {
         width: 140,

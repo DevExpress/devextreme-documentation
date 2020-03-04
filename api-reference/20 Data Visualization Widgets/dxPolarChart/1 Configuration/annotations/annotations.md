@@ -157,7 +157,7 @@ To define the position of an unanchored annotation, set the pixel coordinates ([
             value: 15
         }]
 
-- **Annotation anchored to a series point**
+- **Annotation anchored to a series or series point**
 
         annotations: [{
             argument: new Date(2019, 1, 16),

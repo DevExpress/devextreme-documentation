@@ -1,9 +1,11 @@
 A nested **Box** is configured similarly to an ordinary **Box**. To nest one **Box** into another, add one more item to the parent **Box** and put the markup of the nested **Box** into this item.
 
 ---
+
 ##### jQuery
 
-    <!--HTML--><div id="boxContainer">
+    <!--HTML-->
+    <div id="boxContainer">
         <div class="box-item yellow" data-options="dxItem: { ratio: 1, baseSize: 50 }"> Item 1 </div>
         <div data-options="dxItem: { ratio: 1, baseSize: 50 }">
             <div id="nestedBoxContainer">
@@ -13,7 +15,8 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
         </div>
     </div>
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#boxContainer").dxBox({
             direction: "col",
             height: "100%",
@@ -26,7 +29,8 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
         });
     });
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 16px;
         font-size: 16px;
@@ -55,7 +59,7 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
     </dx-box>
 
     <!--TypeScript-->
-    import { DxBoxModule } from "devextreme-angular";
+    import { DxBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -68,10 +72,119 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
         // ...
     })
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 16px;
         font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxBox
+            direction="col"
+            height="100%"
+            :width="300">
+            <DxItem :baseSize="50" :ratio="1">
+                <template #default>
+                    <div class="box-item yellow"> Item 1 </div>
+                </template>
+            </DxItem>
+            <DxItem :baseSize="50" :ratio="1">
+                <template #default>
+                    <DxBox
+                        direction="row"
+                        height="100%">
+                        <DxItem :baseSize="50" :ratio="1">
+                            <template #default>
+                                <div class="box-item green"> Item 2 </div>
+                            </template>
+                        </DxItem>
+                        <DxItem :baseSize="50" :ratio="1">
+                            <template #default>
+                                <div class="box-item orange"> Item 3 </div>
+                            </template>
+                        </DxItem>
+                    </DxBox>
+                </template>
+            </DxItem>
+        </DxBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxBox, DxItem } from 'devextreme-vue/box';
+
+    export default {
+        components: {
+            DxBox,
+            DxItem
+        }
+    };
+    </script>
+    <style>
+    .box-item {
+        text-align: center;
+        padding-top: 16px;
+        font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+    </style>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Box, { Item } from 'devextreme-react/box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Box
+                    direction="col"
+                    height="100%"
+                    width={300}>
+                    <Item baseSize={50} ratio={1}>
+                        <div className="box-item yellow"> Item 1 </div>
+                    </Item>
+                    <Item baseSize={50} ratio={1}>
+                        <Box
+                            direction="row"
+                            height="100%">
+                            <Item ratio={1}>
+                                <div className="box-item green"> Item 2 </div>
+                            </Item>
+                            <Item ratio={1}>
+                                <div className="box-item orange"> Item 3 </div>
+                            </Item> 
+                        </Box>
+                    </Item>
+                </Box>
+            );
+        }
+    }
+
+    export default App;
+
+    <!--CSS-->
+    .box-item {
+        text-align: center;
+        padding-top: 16px;
+        font-size: 16px;
+        height: 100%;
     }
 
     .orange { background: #f39e6c }

@@ -88,13 +88,15 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 
     <!--JavaScript-->
     $(function() {
-        $('#multiViewContainer').dxMultiView({
+        var $multiView = $('#multiViewContainer').dxMultiView({
             dataSource: [
                 { text: 'Personal Data' },
                 { text: 'Contacts' }
             ],
             selectedIndex: 1
-        });
+        }).dxMultiView("instance");
+
+        $multiView.option("selectedIndex", 0);
     });
 
     <!--HTML-->

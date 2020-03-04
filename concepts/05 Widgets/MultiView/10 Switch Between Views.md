@@ -88,15 +88,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 
     <!--JavaScript-->
     $(function() {
-        var $multiView = $('#multiViewContainer').dxMultiView({
-            dataSource: [
-                { text: 'Personal Data' },
-                { text: 'Contacts' }
-            ],
-            selectedIndex: 1
-        }).dxMultiView("instance");
-
-        $multiView.option("selectedIndex", 0);
+        $("#multiViewContainer").dxMultiView("option", "selectedIndex", 1);
     });
 
     <!--HTML-->
@@ -118,6 +110,10 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 
         constructor() {
             this.selectedIndex = 1;
+        }
+
+        changeSelectedIndex(itemIndex) {
+            this.selectedIndex = itemIndex;
         }
 
         multiViewItems = [
@@ -160,6 +156,11 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
                     { text: 'Contacts' }
                 ]
             };
+        },
+        methods: {
+            changeSelectedIndex(itemIndex) {
+                this.selectedIndex = itemIndex;
+            }
         }
     };
     </script>
@@ -192,6 +193,12 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
                     selectedIndex: e.value
                 });
             }
+        }
+
+        changeSelectedIndex = (itemIndex) => {
+            this.setState({
+                selectedIndex: itemIndex
+            });
         }
 
         render() {

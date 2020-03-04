@@ -178,7 +178,7 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
     <!-- tab: App.vue -->
     <template>
     <div>
-        <DxDrawer :opened.sync="openState" template="template">
+        <DxDrawer :opened.sync="isDrawerOpened" template="template">
             <template #template>
                 <div style="width: 150px">Drawer content</div>
             </template>

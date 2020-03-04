@@ -46,7 +46,7 @@ When the **Drawer** opens, it can overlap, shrink, or partially displace the vie
 
 ##### Vue
 
-    <!-- tab: DxComponent.js -->
+    <!-- tab: App.vue -->
     <template>
     <div>
         <DxDrawer ...

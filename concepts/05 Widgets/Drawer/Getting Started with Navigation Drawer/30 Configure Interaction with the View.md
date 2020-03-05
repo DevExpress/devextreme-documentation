@@ -48,11 +48,11 @@ When the **Drawer** opens, it can overlap, shrink, or partially displace the vie
 
     <!-- tab: App.vue -->
     <template>
-    <div>
-        <DxDrawer ...
-            opened-state-mode="overlap" >
-        </DxDrawer>
-    </div>
+        <div>
+            <DxDrawer ...
+                opened-state-mode="overlap"
+            />
+        </div>
     </template>
 
 ---

@@ -50,8 +50,8 @@ When you open the **Drawer**, it can slide in or expand from the closed position
     <template>
         <div>
             <DxDrawer ...
-                reveal-mode="expand" >
-            </DxDrawer>
+                reveal-mode="expand"
+            />
         </div>
     </template>
 

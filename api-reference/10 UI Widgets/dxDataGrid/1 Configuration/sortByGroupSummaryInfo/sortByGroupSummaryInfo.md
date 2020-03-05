@@ -85,7 +85,7 @@ Normally, when records are grouped by a column, the groups are sorted according 
                 />
                 <DxGroupItem
                     column="Tasks"
-                    summaryType="min"
+                    summary-type="min"
                 />
             </DxSummary>
         </DxDataGrid>

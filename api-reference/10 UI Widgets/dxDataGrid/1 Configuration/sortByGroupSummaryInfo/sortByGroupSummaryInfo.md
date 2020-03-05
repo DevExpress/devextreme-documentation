@@ -81,7 +81,7 @@ Normally, when records are grouped by a column, the groups are sorted according 
                 />
                 <DxGroupItem
                     column="Income"
-                    summaryType="max"
+                    summary-type="max"
                 />
                 <DxGroupItem
                     column="Tasks"

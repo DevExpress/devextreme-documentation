@@ -189,6 +189,3 @@ Objects in the **annotations[]** array configure individual annotations. To spec
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Annotation/"
 }
-
-#####See Also#####
-- [customizeAnnotation]({basewidgetpath}/Configuration/#customizeAnnotation)

@@ -303,7 +303,9 @@ After that, set the [groupColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%
                 summary-item="min"
                 group-column="Last Name"
             /> <!-- applies sorting only when records are grouped by a "Last Name" column -->
-            <DxSortByGroupSummaryInfo summary-item="Average Age Group Summary"/> <!-- applies sorting regardless the grouping column -->
+            <DxSortByGroupSummaryInfo
+                summary-item="Average Age Group Summary"
+            /> <!-- applies sorting regardless the grouping column -->
         </DxDataGrid>
     </template>
 

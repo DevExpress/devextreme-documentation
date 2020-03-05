@@ -489,7 +489,7 @@ In this tutorial, we use the **List**:
 
     <!-- tab: Inbox.vue -->
     <template>
-    <div>Inbox</div>
+        <div>Inbox</div>
     </template>
 
     <script>
@@ -498,7 +498,7 @@ In this tutorial, we use the **List**:
 
     <!-- tab: SentMail.vue -->
     <template>
-    <div>Sent mail</div>
+        <div>Sent mail</div>
     </template>
 
     <script>
@@ -507,7 +507,7 @@ In this tutorial, we use the **List**:
 
     <!-- tab: Spam.vue -->
     <template>
-    <div>Spam</div>
+        <div>Spam</div>
     </template>
 
     <script>
@@ -516,7 +516,7 @@ In this tutorial, we use the **List**:
 
     <!-- tab: Trash.vue -->
     <template>
-    <div>Trash</div>
+        <div>Trash</div>
     </template>
 
     <script>

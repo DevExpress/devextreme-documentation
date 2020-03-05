@@ -740,7 +740,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: Inbox.vue -->
     <template>
-    <div>Inbox</div>
+        <div>Inbox</div>
     </template>
 
     <script>
@@ -749,7 +749,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: SentMail.vue -->
     <template>
-    <div>Sent mail</div>
+        <div>Sent mail</div>
     </template>
 
     <script>
@@ -758,7 +758,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: Spam.vue -->
     <template>
-    <div>Spam</div>
+        <div>Spam</div>
     </template>
 
     <script>
@@ -767,7 +767,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: Trash.vue -->
     <template>
-    <div>Trash</div>
+        <div>Trash</div>
     </template>
 
     <script>

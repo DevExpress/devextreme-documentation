@@ -211,17 +211,17 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
 
     <!-- tab: App.vue -->
     <template>
-    <div>
-        <DxToolbar id="toolbar">
-            <DxItem :options="buttonOptions" location="before" widget="dxButton"/>
-        </DxToolbar>
-        <DxDrawer :opened.sync="isDrawerOpened" template="template">
-            <template #template>
-                <div style="width: 150px">Drawer content</div>
-            </template>
-            <div id="view">View content</div>
-        </DxDrawer>
-    </div>
+        <div>
+            <DxToolbar id="toolbar">
+                <DxItem :options="buttonOptions" location="before" widget="dxButton"/>
+            </DxToolbar>
+            <DxDrawer :opened.sync="isDrawerOpened" template="template">
+                <template #template>
+                    <div style="width: 150px">Drawer content</div>
+                </template>
+                <div id="view">View content</div>
+            </DxDrawer>
+        </div>
     </template>
 
     <script>

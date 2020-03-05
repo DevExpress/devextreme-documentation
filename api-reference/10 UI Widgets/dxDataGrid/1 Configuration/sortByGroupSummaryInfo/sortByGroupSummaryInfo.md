@@ -76,7 +76,7 @@ Normally, when records are grouped by a column, the groups are sorted according 
             <DxSummary>
                 <DxGroupItem 
                     column="Age"
-                    summaryType="avg"
+                    summary-type="avg"
                     name="Average Age Group Summary"
                 />
                 <DxGroupItem

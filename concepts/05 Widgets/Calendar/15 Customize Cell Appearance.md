@@ -26,46 +26,69 @@ For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](
         // ...
     })
 
-#####**AngularJS**
+##### Vue
 
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-calendar="{
-            cellTemplate: 'cell',
-            bindingOptions: {
-                value: 'currentDate'
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar
+            :value="date"
+            cell-template="cell"
+        >
+            <template #cell="{ data: cell, index }">
+                <span :style="{ fontStyle: index === 0 || index === 6 ? 'italic' : 'normal' }">
+                    {{ cell.text }}
+                </span>
+            </template>
+        </DxCalendar>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        },
+        data() {
+            return {
+                date: new Date()
             }
-        }" dx-item-alias="cellData">
-            <span data-options="dxTemplate: { name: 'cell' }"
-                  style="font-style: {{$index == 0 || $index == 6 ? 'italic' : 'normal'}}">
-                  {{cellData.text}}
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    const date = new Date();
+    function CustomCell(cellInfo, index) {
+        return (
+            <span style={{ fontStyle: index === 0 || index === 6 ? 'italic' : 'normal' }}>
+                { cellInfo.text }
             </span>
-        </div>
-    </div>
+        );
+    }
 
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.currentDate = new Date();
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the cell object.
-
-#####**Knockout**
-
-    <!--HTML--><div data-bind="dxCalendar: {
-        value: currentDate,
-        cellTemplate: 'cell'
-    }">
-        <span data-options="dxTemplate: { name: 'cell' }" data-bind="{
-            style: { 'font-style': $index == 0 || $index == 6 ? 'italic' : 'normal' },
-            text: text
-        }"></span>
-    </div>
-
-    <!--JavaScript-->var viewModel = {
-        currentDate: ko.observable(new Date())
-    };
-
-    ko.applyBindings(viewModel);
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar
+                    defaultValue={date}
+                    cellRender={CustomCell} />
+            );
+        }
+    }
+    export default App;
 
 ---
 

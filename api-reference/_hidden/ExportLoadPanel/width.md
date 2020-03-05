@@ -5,7 +5,7 @@ default: 200
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the width of the load panel in pixels.
 
 ---
 <!-- Description goes here -->

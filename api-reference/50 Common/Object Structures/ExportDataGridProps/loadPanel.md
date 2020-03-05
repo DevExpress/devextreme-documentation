@@ -5,7 +5,7 @@ inheritsType: ExportLoadPanel
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the load panel.
 
 ---
 <!-- Description goes here -->

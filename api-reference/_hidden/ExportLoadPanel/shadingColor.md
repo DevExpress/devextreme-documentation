@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the shading color. Applies only if [shading](/api-reference/_hidden/ExportLoadPanel/shadingColor.md '{currentpath}/#shadingColor') is **true**.
 
 ---
-<!-- Description goes here -->
+#include common-colorlist

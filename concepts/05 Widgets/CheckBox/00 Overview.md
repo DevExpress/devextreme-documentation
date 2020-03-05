@@ -42,6 +42,71 @@ The following code adds the **CheckBox** to your page.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCheckBox
+            text="Check me"
+            :value.sync="checkBoxValue"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCheckBox from 'devextreme-vue/check-box';
+
+    export default {
+        components: {
+            DxCheckBox
+        },
+        data() {
+            return {
+                checkBoxValue: undefined
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import CheckBox from 'devextreme-react/check-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                checkBoxValue: undefined
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            this.setState({
+                checkBoxValue: e.value
+            });
+        }
+
+        render() {
+            return (
+                <CheckBox
+                    text="Check me"
+                    value={this.state.checkBoxValue}
+                    onValueChanged={this.handleValueChange}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 The **CheckBox** widget can have the following states: checked (the **value** option is _true_), unchecked (**value** is _false_), undetermined (**value** is _undefined_).

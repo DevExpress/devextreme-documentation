@@ -7,60 +7,85 @@ The following code creates the **FileManager** widget and adds it to your page.
     <!-- tab: index.js -->
     $(function () {
         $("#file-manager").dxFileManager({
-            fileSystemProvider: fileSystem,
-            currentPath: "Documents",
-            height: 450,
-            permissions: {
-                create: true,
-                copy: true,
-                move: true,
-                remove: true,
-                rename: true
-            }
+            //...
         });
     });
     <!-- tab: index.html -->
     <div id="file-manager"></div>
-    <!-- tab: data.js -->
-    var fileSystem = [
-        {
-            name: "Documents",
-            isDirectory: true,
-            items: [
-                {
-                    name: "Projects",
-                    isDirectory: true,
-                    items: [
-                        {
-                            name: "About.rtf",
-                            isDirectory: false,
-                            size: 1024
-                        },
-                        {
-                            name: "Passwords.rtf",
-                            isDirectory: false,
-                            size: 2048
-                        }
-                    ]
-                },
-                {
-                    name: "About.xml",
-                    isDirectory: false,
-                    size: 1024
-                },
-                {
-                    name: "Managers.rtf",
-                    isDirectory: false,
-                    size: 2048
-                },
-                {
-                    name: "ToDo.txt",
-                    isDirectory: false,
-                    size: 3072
-                }
-            ],
-        },
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager id="fileManager">
+        <!-- ... -->
+    </dx-file-manager>  
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        //...
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager>
+            <!-- ... -->
+        </DxFileManager>
+    </template>
+
+    <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';     
+
+        import { DxFileManager } from 'devextreme-vue/file-manager';
+
+        export default {
+            components: {
+                DxFileManager
+            },
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FileManager from 'devextreme-react/file-manager';
+    
+    class App extends React.Component {
+        render() {
+            return (
+                <FileManager>
+                    {/* ... */}
+                </FileManager>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
         // ...
-    ];      
+    )
 
 ---

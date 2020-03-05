@@ -3,11 +3,15 @@ id: dxTreeView.selectItem(key)
 ---
 ---
 ##### shortDescription
-Selects an item with a specific key.
+Selects a node with a specific key.
+
+##### return: Boolean
+**false** if no node matches the specified key.
 
 ##### param(key): any
-The item's key.
+A key.
 
 ---
-#####See Also#####
-- [Select Nodes Using the API](/concepts/05%20Widgets/TreeView/25%20Select%20Nodes/02%20Using%20the%20API.md '/Documentation/Guide/Widgets/TreeView/Select_Nodes/#Using_the_API')
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\dxTreeView\3 Methods\selectAll().md' -->

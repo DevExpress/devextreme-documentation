@@ -1,12 +1,11 @@
 ---
 id: dxDiagram.Options.propertiesPanel.visibility
-acceptValues: 'visible' | 'collapsed' | 'disabled'
+acceptValues: 'auto' | 'visible' | 'collapsed' | 'disabled'
 type: String
 default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the panel's visibility.
 
 ---
-<!-- Description goes here -->

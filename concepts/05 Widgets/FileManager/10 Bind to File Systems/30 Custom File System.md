@@ -2,7 +2,7 @@ Use the **FileManager** widget's [Custom](/api-reference/10%20UI%20Widgets/dxFil
 
 ![FileManager - Custom Provider](/images/FileManager/custom-provider.png)
 
-Assign the [Custom](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/') file system provider to the [fileSystemProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileSystemProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider') option to implement a custom file system provider and bind the **FileManager** widget to it.
+Assign the [Custom](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/') file system provider to the [fileSystemProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileSystemProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider') option to implement a custom file system provider and bind the **FileManager** widget to it. The [getItems](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom/1%20Configuration/getItems.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/Configuration/#getItems') function allows you to get file system items. Use the **[fieldName]Expr** options specify the attribute names that store file system item keys, names, sizes, modification dates, and etc. You can also use the 'copyItem', 'deleteItem', and other functions to handle file operations. 
 
 ---
 
@@ -10,51 +10,191 @@ Assign the [Custom](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Sy
 
     <!--JavaScript-->
     $("#file-manager").dxFileManager({
+        // Assigns the Custom file system provider to the widget
         fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({
-            // your code
-        }),        
-    });
-
----
-
-Use the [getItems](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Custom/1%20Configuration/getItems.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/Configuration/#getItems') option to get file system items. The **[fieldName]Expr** options specify the attribute names that store file system item keys, names, sizes, modification dates, and etc.
-
----
-
-##### jQuery
-
-    <!--JavaScript-->
-    $("#file-manager").dxFileManager({
-        fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({
-            getItems: function (pathInfo) {
-                // your code
-            }         
-        }),        
-    });
-
----
-
-Implement APIs to handle file operations (add, delete, rename, and etc).
-
----
-
-##### jQuery
-
-    <!--JavaScript-->
-    $("#file-manager").dxFileManager({
-        fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({
-            // ...
+            // Function to get file system items
+            getItems: getItems,
+            // Functions to handle file operations
             createDirectory: createDirectory,
-            deleteItem: deleteItem,
-            // your code
+            deleteItem: deleteItem
+            // ...
         }),        
     });
+    function getItems (pathInfo) {
+        // your code
+    }
     function createDirectory(parentDirectory, name) {
         // your code
     }
     function deleteItem(item) {
         // your code
     }
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager id="fileManager" 
+        [fileSystemProvider]="customFileProvider">
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: 'app/app.component.html',
+        styleUrls: ['app/app.component.css']
+    })
+
+    export class AppComponent {
+        customFileProvider: CustomFileSystemProvider;
+
+        constructor() {
+            // Creates a custom file system provider 
+            this.customFileProvider = new CustomFileSystemProvider({
+                // Function to get file system items
+                getItems,
+                // Functions to handle file operations
+                createDirectory,
+                deleteItem                
+            });
+        }
+    }
+    function getItems(pathInfo) {
+        // ...
+    }
+    function createDirectory(parentDirectory, name) {
+        // ...
+    } 
+    function deleteItem(item) {
+        // ...
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule} from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager :file-provider="customFileProvider"></DxFileManager>
+    </template>
+
+    <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';     
+        
+        import { DxFileManager } from 'devextreme-vue/file-manager';
+        import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';        
+
+        // Creates a custom file system provider 
+        const customFileProvider = new CustomFileSystemProvider({
+            // Function to get file system items
+            getItems,
+            // Functions to handle file operations
+            createDirectory,
+            deleteItem            
+        });
+    
+        export default {
+            components: {
+                DxFileManager,
+                CustomFileSystemProvider
+            },
+
+            data() {
+                return { customFileProvider };
+            }
+        };
+        function getItems(pathInfo) {
+            // ...
+        }
+        function createDirectory(parentDirectory, name) {
+            // ...
+        }
+        function deleteItem(item) {
+            // ...
+        }                
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FileManager from 'devextreme-react/file-manager';
+    import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
+
+    // Creates a custom file system provider 
+    const customFileProvider = new CustomFileSystemProvider({
+        // Function to get file system items
+        getItems,
+        // Functions to handle file operations
+        createDirectory,
+        deleteItem
+    });
+
+    class App extends React.Component {
+        render() {
+            return(
+                <FileManager 
+                    fileSystemProvider={customFileProvider} >
+                </FileManager>
+            );
+        }
+    }   
+    function getItems(pathInfo) {
+        // ...
+    }
+    function createDirectory(parentDirectory, name) {
+        // ...
+    }
+    function deleteItem(item) {
+        // ...
+    }         
+    export default App; 
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        <!-- Assigns a custom file system provider to the widget -->
+        .FileSystemProvider(provider => provider.Custom()
+            <!-- Function to get file system items -->
+            .GetItems("getItems")
+            <!-- Functions to handle file operations -->
+            .CreateDirectory("createDirectory")
+            .DeleteItem("deleteItem")
+        )
+    )
+    <script>
+      function getItems(pathInfo) {
+        // ...
+      }
+      function createDirectory(parentDirectory, name) {
+        // your code                
+      }
+      function deleteItem(item) {
+        // your code
+      }
+    </script>    
 
 ---
 

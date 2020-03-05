@@ -73,7 +73,7 @@ When using Angular, Vue or React, use a different approach. Bind the [visible](/
         <div>
             <DxButton
                 text="Open the context menu"
-                :on-click="openContextMenu"
+                @click="openContextMenu"
             />
             <DxContextMenu
                 :items="contextMenuItems"
@@ -195,7 +195,7 @@ When invoking the context menu from code, you may want to specify its [position]
     <!--HTML-->
     <dx-context-menu ...
         target="#someElement"
-        [position]="{ my: 'top right', at: 'top left' }">
+        [position]="contextMenuPosition">
     </dx-context-menu>
 
     <!--TypeScript-->
@@ -203,7 +203,10 @@ When invoking the context menu from code, you may want to specify its [position]
     import { DxContextMenuModule, DxButtonModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        // ...
+        contextMenuPosition = {
+            my: 'top right', 
+            at: 'top left' 
+        };
     }
     @NgModule({
          imports: [
@@ -220,10 +223,7 @@ When invoking the context menu from code, you may want to specify its [position]
     <template>
         <DxContextMenu ...
             target="#someElement"
-            :position="{ 
-                my: 'top right', 
-                at: 'top left' 
-            }"
+            :position="contextMenuPosition"
         />
     </template>
     <script>
@@ -235,6 +235,14 @@ When invoking the context menu from code, you may want to specify its [position]
     export default {
         components: {
             DxContextMenu
+        },
+        data() {
+            return {
+                contextMenuPosition: {
+                    my: 'top right', 
+                    at: 'top left' 
+                }
+            }
         }
     };
     </script>
@@ -248,15 +256,17 @@ When invoking the context menu from code, you may want to specify its [position]
 
     import { ContextMenu } from 'devextreme-react/context-menu';
 
+    const contextMenuPostion = { 
+        my: 'top right', 
+        at: 'top left' 
+    };
+
     class App extends React.Component {
         render() {
             return (
                 <ContextMenu ...
                     target="#someElement"
-                    position={{ 
-                        my: 'top right', 
-                        at: 'top left' 
-                    }}
+                    position={contextMenuPosition}
                 />
             );
         }

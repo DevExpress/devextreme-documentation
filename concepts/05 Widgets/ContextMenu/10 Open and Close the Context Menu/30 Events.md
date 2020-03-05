@@ -64,10 +64,10 @@ To execute certain commands before or after the **ContextMenu** was opened/close
     <!-- tab: App.vue -->
     <template>
         <DxContextMenu ...
-            :on-showing="handleShowingEvent"
-            :on-shown="handleShownEvent"
-            :on-hiding="handleHidingEvent"
-            :on-hidden="handleHiddenEvent">
+            @showing="handleShowingEvent"
+            @shown="handleShownEvent"
+            @hiding="handleHidingEvent"
+            @hidden="handleHiddenEvent"
         />
     </template>
     <script>
@@ -133,6 +133,7 @@ To execute certain commands before or after the **ContextMenu** was opened/close
     }
 
     export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

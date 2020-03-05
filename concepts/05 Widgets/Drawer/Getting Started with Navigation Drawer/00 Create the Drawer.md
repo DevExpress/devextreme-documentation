@@ -177,14 +177,12 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
 
     <!-- tab: App.vue -->
     <template>
-        <div>
-            <DxDrawer opened="true" :minSize="37" :height="250" template="template" reveal-mode="expand">
-                <template #template>
-                    <div style="width: 150px">Drawer content</div>
-                </template>
-                <div id="view">View content</div>
-            </DxDrawer>
-        </div>
+        <DxDrawer opened="true" :minSize="37" :height="250" template="template" reveal-mode="expand">
+            <template #template>
+                <div style="width: 150px">Drawer content</div>
+            </template>
+            <div id="view">View content</div>
+        </DxDrawer>
     </template>
 
     <style>

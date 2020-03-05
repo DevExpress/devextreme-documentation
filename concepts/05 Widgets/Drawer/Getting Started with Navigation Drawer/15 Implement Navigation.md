@@ -452,14 +452,12 @@ In this tutorial, we use the **List**:
 
     <!-- tab: NavigationList.vue -->
     <template>
-        <div style="width: 200px">
-            <DxList
-                width="200"
-                selection-mode="single"
-                :data-source="navigation"
-                @selection-changed="loadView($event)"
-            />
-        </div>
+        <DxList
+            width="200"
+            selection-mode="single"
+            :data-source="navigation"
+            @selection-changed="loadView($event)"
+        />
     </template>
     <script>
     import { DxList } from "devextreme-vue/list";

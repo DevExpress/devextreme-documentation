@@ -192,7 +192,8 @@ To use these summary items for sorting groups, assign an array of objects to the
         <DxDataGrid>
             <DxSortByGroupSummaryInfo
                 :summary-item="1"/> <!-- determines the maximum income item using its index in the "groupItems" array -->
-            <DxSortByGroupSummaryInfo summary-item="min"/> <!-- determines the minimum tasks item using its aggregate function -->
+            <DxSortByGroupSummaryInfo
+                summary-item="min"/> <!-- determines the minimum tasks item using its aggregate function -->
             <DxSortByGroupSummaryInfo summary-item="Average Age Group Summary"/> <!-- determines the average age item using its name -->
         </DxDataGrid>
     </template>

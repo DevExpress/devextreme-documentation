@@ -3,10 +3,10 @@ id: dxVectorMap.convertToXY(longitude, latitude)
 ---
 ---
 ##### shortDescription
-Converts coordinates from the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataSource') coordinate system to the pixel coordinate system.
+Converts coordinates from the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataSource') coordinate system to pixels.
 
 ##### return: Array<Number>
-Two coordinates of the client area whose position is defined by the pixel coordinates.
+The point's coordinates in the client area coordinate system.
 
 ##### param(longitude): Number
 A point's longitude.

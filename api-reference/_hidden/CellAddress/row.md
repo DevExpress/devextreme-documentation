@@ -7,4 +7,4 @@ type: Number
 The index of a row that contains the cell. 
 
 ---
-Unlike most indexes, this index begins with 1 to match the Excel indexing system.
+This index begins with 1 to match the Excel indexing system.

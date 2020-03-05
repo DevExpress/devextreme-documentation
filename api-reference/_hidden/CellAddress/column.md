@@ -7,4 +7,4 @@ type: Number
 The index of a column that contains the cell. 
 
 ---
-Unlike most indexes, this index begins with 1 which corresponds to column A in Excel.
+This index begins with 1 which corresponds to column A in Excel.

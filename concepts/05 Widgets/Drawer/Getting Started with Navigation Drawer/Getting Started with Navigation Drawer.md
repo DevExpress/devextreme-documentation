@@ -634,8 +634,8 @@ Refer to the subtopics for details on every configuration step. You can also see
                 opened-state-mode="overlap"
                 reveal-mode="expand"
                 :opened.sync="isDrawerOpened"
-                minSize="37"
-                height="250"
+                :minSize="37"
+                :height="250"
                 template="listMenu" >
 
                 <template #listMenu>

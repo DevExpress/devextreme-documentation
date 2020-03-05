@@ -305,7 +305,6 @@ You can also customize an individual menu item. For this purpose, declare a temp
 ##### jQuery
 
     <!--HTML-->
-    <div id="menuContainer"></div>
     <script id="individualTemplate" type="text/html">
         <i>Upload</i>
     </script>

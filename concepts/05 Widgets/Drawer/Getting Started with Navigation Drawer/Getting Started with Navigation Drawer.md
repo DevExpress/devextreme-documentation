@@ -703,14 +703,12 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: NavigationList.vue -->
     <template>
-        <div style="width: 200px">
-            <DxList
-                width="200"
-                selection-mode="single"
-                :data-source="navigation"
-                @selection-changed="loadView($event)"
-            />
-        </div>
+        <DxList
+            :width="200"
+            selection-mode="single"
+            :data-source="navigation"
+            @selection-changed="loadView($event)"
+        />
     </template>
     <script>
     import { DxList } from "devextreme-vue/list";

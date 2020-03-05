@@ -453,7 +453,7 @@ In this tutorial, we use the **List**:
     <!-- tab: NavigationList.vue -->
     <template>
         <DxList
-            width="200"
+            :width="200"
             selection-mode="single"
             :data-source="navigation"
             @selection-changed="loadView($event)"

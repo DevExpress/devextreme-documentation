@@ -7,22 +7,26 @@ The **Box** widget allows you to arrange various elements within it. This widget
 The following code adds a simple **Box** containing three items to your page. These items are plain texts placed in differently-colored rectangles arranged in a row. Equal **ratio** option values ensure they have equal widths.
 
 ---
+
 ##### jQuery
 
-    <!--HTML--><div id="boxContainer">
+    <!--HTML-->
+    <div id="boxContainer">
         <div class="box-item orange" data-options="dxItem: { ratio: 1 }"> Item 1 </div>
         <div class="box-item yellow" data-options="dxItem: { ratio: 1 }"> Item 2 </div>
         <div class="box-item green"  data-options="dxItem: { ratio: 1 }"> Item 3 </div>
     </div>
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#boxContainer").dxBox({
             direction: "row",
             height: 100
         });
     });
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 34px;
         font-size: 16px;
@@ -44,7 +48,7 @@ The following code adds a simple **Box** containing three items to your page. Th
     </dx-box>
 
     <!--TypeScript-->
-    import { DxBoxModule } from "devextreme-angular";
+    import { DxBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -57,10 +61,103 @@ The following code adds a simple **Box** containing three items to your page. Th
         // ...
     })
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 34px;
         font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxBox
+            direction="row"
+            :height="100">
+            <DxItem :ratio="1">
+                <template #default>
+                    <div class="box-item orange"> Item 1 </div>
+                </template>
+            </DxItem>
+            <DxItem :ratio="1">
+                <template #default>
+                    <div class="box-item yellow"> Item 2 </div>
+                </template>
+            </DxItem>
+            <DxItem :ratio="1">
+                <template #default>
+                    <div class="box-item green"> Item 3 </div>
+                </template>
+            </DxItem>
+        </DxBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxBox, DxItem } from 'devextreme-vue/box';
+
+    export default {
+        components: {
+            DxBox,
+            DxItem
+        }
+    };
+    </script>
+    <style>
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+    </style>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Box, { Item } from 'devextreme-react/box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Box
+                    direction="row"
+                    height={100}>
+                    <Item ratio={1}>
+                        <div className="box-item orange"> Item 1 </div>
+                    </Item>
+                    <Item ratio={1}>
+                        <div className="box-item yellow"> Item 2 </div>
+                    </Item>
+                    <Item ratio={1}>
+                        <div className="box-item green"> Item 3 </div>
+                    </Item>
+                </Box>
+            );
+        }
+    }
+
+    export default App;
+
+    <!--CSS-->
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+        height: 100%;
     }
 
     .orange { background: #f39e6c }

@@ -6,7 +6,8 @@ type: Object
 ##### shortDescription
 The coordinates of the exported **DataGrid** in the Excel file.
 
----     
+---
+     
 
 This object has the following structure: 
 

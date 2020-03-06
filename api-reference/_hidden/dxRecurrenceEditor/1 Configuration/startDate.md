@@ -1,6 +1,6 @@
 ---
 id: dxRecurrenceEditor.Options.startDate
 type: Date
-default: undefiend
+default: undefined
 hidden: 
 ---

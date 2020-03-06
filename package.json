@@ -4,8 +4,8 @@
   "author": "Developer Express Inc.",
   "version": "20.1.0",
   "devDependencies": {
-    "pre-commit": "^1.2.2",
-    "devextreme-internal-tools": "default"
+    "devextreme-internal-tools": "^1.2.62",
+    "pre-commit": "^1.2.2"
   },
   "scripts": {
     "update-links-fail-on-change": "dx-tools update-links --fail-on-change",

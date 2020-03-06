@@ -1,55 +1,39 @@
-To customize views in the **MultiView**, define a custom template for them. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for **MultiView** views.
+To customize views in the **MultiView**, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component.
 
 ---
+
 ##### Angular
 
     <!--HTML-->
     <dx-multi-view
         [dataSource]="multiViewItems"
-        itemTemplate="items">
-        <div *dxTemplate="let item of 'items'">
-            <div style="margin:25px;">
-                <h1>{{item.title}}</h1>
-                <div style="text-align:left;" *ngFor="let dataItem of item.dataArray">
-                    <p>{{dataItem.propertyKey}}: <b>{{dataItem.propertyValue}}</b></p>
+        itemTemplate="item">
+        <div *dxTemplate="let content of 'item'">
+            <div style="margin: 25px;">
+                <h1>{{content.title}}</h1>
+                <div style="text-align: left;">
+                    <p *ngFor="let key of getItemKeys(content.data)">
+                        {{key}}: <b>{{content.data[key]}}</b>
+                    </p>
                 </div>
             </div>
         </div>
     </dx-multi-view>
 
     <!--TypeScript-->
-    import { DxMultiViewModule } from "devextreme-angular";
-    import DataSource from "devextreme/data/data_source";
+    import { DxMultiViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        multiViewItems = new DataSource({
-            store: [{
-                title: "Personal Data",
-                data: {
-                    firstName: "John",
-                    lastName: "Smith",
-                    birthYear: 1986
-                }
-            }, {
-                title: "Contacts",
-                data: {
-                    phone: "(555)555-5555",
-                    email: "John.Smith@example.com"
-                }
-            },
-            // ...
-            ],
-            // Brings each item of the array to a specific structure
-            map: (itemData) => {
-                itemData.dataArray = Object.keys(itemData.data).map((key) => {
-                    return {
-                        propertyKey: key,
-                        propertyValue: itemData.data[key]
-                    }
-                });
-                return itemData;
-            }
-        });
+        multiViewItems = [{
+            title: 'Personal Data',
+            data: { firstName: 'John', lastName: 'Smith', birthYear: 1986 }
+        }, {
+            title: 'Contacts',
+            data: { phone: '(555)555-5555', email: 'John.Smith@example.com' }
+        }];
+        getItemKeys (item) {
+            return Object.keys(item);
+        }
     }
     @NgModule({
         imports: [
@@ -59,149 +43,241 @@ To customize views in the **MultiView**, define a custom template for them. For 
         // ...
     })
 
-#####**AngularJS**
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController" style="height: 100%;">
-        <div dx-multi-view="{
-            dataSource: multiViewItems,
-            itemTemplate: 'item'
-        }" dx-item-alias="itemObj">
-            <div data-options="dxTemplate: { name: 'item' }">
-                <div style="margin:25px;">
-                    <h1>{{ itemObj.title }}</h1>
-                    <div style="text-align:left;" ng-repeat="(key, value) in itemObj.data">
-                        <p>{{ key }}: <b>{{ value }}</b></p>
+    <!-- tab: App.vue -->
+    <template>
+        <DxMultiView
+            :data-source="multiViewItems"
+            item-template="item">
+            <template #item="{ data }">
+                <div :style="{ margin: '25px' }">
+                    <h1>{{data.title}}</h1>
+                    <div :style="{ textAlign: 'left' }">
+                        <p v-for="key in getItemKeys(data.data)">
+                            {{key}}: <b>{{data.data[key]}}</b>
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </template>
+        </DxMultiView>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.multiViewItems = [{
-                title: "Personal Data",
-                data: {
-                    firstName: "John",
-                    lastName: "Smith",
-                    birthYear: 1986
-                }
-            }, {
-                title: "Contacts",
-                data: {
-                    phone: "(555)555-5555",
-                    email: "John.Smith@example.com"
-                }
-            },
-            // ... 
-            ];
-        });
+    import DxMultiView from 'devextreme-vue/multi-view';
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--HTML-->
-    <div data-bind="dxMultiView: { dataSource: multiViewItems, itemTemplate: 'item' }">
-        <div data-options="dxTemplate: { name: 'item' } ">
-            <div style="margin:25px;">
-                <h1 data-bind="text: title"></h1>
-                <div style="text-align:left;" data-bind="foreach: dataArray">
-                    <p><span data-bind="text: propertyKey">
-                    </span>: <b data-bind="text: propertyValue"></b></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        multiViewItems: new DevExpress.data.DataSource({
-            store: [{
-                title: "Personal Data",
-                data: {
-                    firstName: "John",
-                    lastName: "Smith",
-                    birthYear: 1986
-                }
-            }, {
-                title: "Contacts",
-                data: {
-                    phone: "(555)555-5555",
-                    email: "John.Smith@example.com"
-                }
-            },
-            // ...
-            ],
-            // Brings each item of the array to a specific structure
-            map: function (itemData) {
-                itemData.text = itemData.title;
-                itemData.dataArray = $.map(itemData.data, function (value, key) {
-                    return {
-                        propertyKey: key,
-                        propertyValue: value
-                    }
-                });
-                return itemData;
+    export default {
+        components: {
+            DxMultiView
+        },
+        data() {
+            return {
+                multiViewItems: [{
+                    title: 'Personal Data',
+                    data: { firstName: 'John', lastName: 'Smith', birthYear: 1986 }
+                }, {
+                    title: 'Contacts',
+                    data: { phone: '(555)555-5555', email: 'John.Smith@example.com' }
+                }]
+            };
+        },
+        methods: {
+            getItemKeys: function(item) {
+                return Object.keys(item);
             }
-        })
+        }
     };
+    </script>
 
-    ko.applyBindings(viewModel);
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { MultiView } from 'devextreme-react/multi-view';
+
+    const multiViewItems = [{
+        title: 'Personal Data',
+        data: { firstName: 'John', lastName: 'Smith', birthYear: 1986 }
+    }, {
+        title: 'Contacts',
+        data: { phone: '(555)555-5555', email: 'John.Smith@example.com' }
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <MultiView
+                    dataSource={multiViewItems}
+                    itemRender={this.renderItem}
+                />
+            );
+        }
+
+        renderItem(content) {
+            return (
+                <div style={{ margin: 25 }}>
+                    <h1>{content.title}</h1>
+                    <div style={{ textAlign: 'left' }}>
+                        { 
+                            Object.keys(content.data).map(key => {
+                                return (
+                                    <p key={key}>
+                                        {key}: <b>{content.data[key]}</b>
+                                    </p> 
+                                )}
+                            )
+                        }
+                    </div>
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#itemTemplate') callback function as shown in the following code.
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
+}
+
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for **MultiView** views. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
+
+---
+
+##### jQuery
 
     <!--JavaScript-->
     var multiViewItems = [{
         title: "Personal Data",
-        data: {
-            firstName: "John",
-            lastName: "Smith",
-            birthYear: 1986
-        }
+        data: { firstName: "John", lastName: "Smith", birthYear: 1986 }
     }, {
         title: "Contacts",
-        data: {
-            phone: "(555)555-5555",
-            email: "John.Smith@example.com"
-        }
-    },
-    // ... 
-    ];
+        data: { phone: "(555)555-5555", email: "John.Smith@example.com" }
+    }];
 
     $(function() {
         $("#multiViewContainer").dxMultiView({
             dataSource: multiViewItems,
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                var mainContainer = $("<div style='margin:25px;'>");
-                mainContainer.append("<h1>" + itemData.title + "</h1>");
+            itemTemplate: function(itemData, itemIndex, itemElement) {
+                var container = $("<div style='margin:25px;'>");
+                container.append("<h1>" + itemData.title + "</h1>");
 
                 var info = $("<div style='text-align:left;'>");
                 for (var field in itemData.data) {
                     info.append("<p>" + field + ": <b>" + itemData.data[field] + "</b></p>");
                 }
-                mainContainer.append(info);
-                itemElement.append(mainContainer);
+                container.append(info);
+                itemElement.append(container);
             }
         });
     });
 
-You can also customize an individual view. For this purpose, declare a template for this view as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/items/#template') field. 
+    <!--HTML-->
+    <div id="multiViewContainer"></div>
+
+---
+
+You can also customize individual views. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component. When using jQuery, you can declare the views as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/items/#template') option or assign a customization function straight to this option.
+
+---
+
+##### Angular
 
     <!--HTML-->
-    <script id="individualTemplate" type="text/html">
-        <!-- ... -->
+    <dx-multi-view>
+        <dxi-item text="Personal Data"></dxi-item>
+        <dxi-item text="Contacts"></dxi-item>
+    </dx-multi-view>
+
+    <!--TypeScript-->
+    import { DxMultiViewModule } from 'devextreme-angular';
+    // ...
+    export class AppComponent {
+        // ...
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxMultiViewModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxMultiView>
+            <DxItem text="Personal Data" />
+            <DxItem text="Contacts" />
+        </DxMultiView>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxMultiView, { DxItem } from 'devextreme-vue/multi-view';
+
+    export default {
+        components: {
+            DxMultiView,
+            DxItem
+        }
+    };
     </script>
 
-    <!--JavaScript-->var multiViewItems = [
-        { text: "Personal Data" },
-        { text: "Contacts", template: $('#individualTemplate') },
-        { text: "Address" }
-    ];
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { MultiView, Item } from 'devextreme-react/multi-view';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <MultiView>
+                    <Item text="Personal Data"/>
+                    <Item text="Contacts"/>
+                </MultiView>
+            );
+        }
+    }
+
+    export default App;
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#multiViewContainer").dxMultiView({
+            dataSource: [{
+                text: "Personal Data",
+                template: function() {
+                    return $("<p>").text("This is Personal Data View");
+                }
+            }, {
+                text: "Contacts",
+                template: $("#individualTemplate")
+            }]
+        });
+    });
+
+    <!--HTML-->
+    <div id="multiViewContainer"></div>
+    <script id="individualTemplate" type="text/html">
+        <p>This is Contacts View</p>
+    </script>
+
+---
 
 In addition, you can use a 3rd-party template engine to customize widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 

@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The index of a row that contains the cell.
 
 ---
-<!-- Description goes here -->
+This index begins with 1 to match the Excel indexing system.

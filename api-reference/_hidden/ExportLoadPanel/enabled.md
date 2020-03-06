@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the load panel is enabled.
 
 ---
 <!-- Description goes here -->

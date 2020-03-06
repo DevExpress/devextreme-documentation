@@ -3,8 +3,16 @@ id: dxTreeView.selectAll()
 ---
 ---
 ##### shortDescription
-Selects all items.
+Selects all nodes.
 
 ---
+This method has the following specificities:
+
+- Only loaded nodes can be selected. Take this specificity into account if nodes are loaded on demand (for example, if you use the [virtual mode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/virtualModeEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#virtualModeEnabled') or [createChildren](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/createChildren.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#createChildren') function).
+
+- If [searching](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#searchEnabled') is applied, only the nodes that satisfy the search condition can be selected.
+
 #####See Also#####
-- [Select Nodes Using the API](/concepts/05%20Widgets/TreeView/25%20Select%20Nodes/02%20Using%20the%20API.md '/Documentation/Guide/Widgets/TreeView/Select_Nodes/#Using_the_API')
+- [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick')
+- [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#showCheckBoxesMode')
+#include common-link-callmethods

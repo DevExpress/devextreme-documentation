@@ -67,14 +67,14 @@ To execute certain commands before or after an appointment was added, handle the
         data() {
             return {
                 // ...
+            }
+        },
+        methods: {
+            onAppointmentAdding: (e) => {
+                // Handler of the "appointmentAdding" event
             },
-            methods: {
-                onAppointmentAdding: (e) => {
-                    // Handler of the "appointmentAdding" event
-                },
-                onAppointmentAdded: (e) => {
-                    // Handler of the "appointmentAdded" event
-                }
+            onAppointmentAdded: (e) => {
+                // Handler of the "appointmentAdded" event
             }
         }
     }

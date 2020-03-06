@@ -1,20 +1,20 @@
 The **TextBox** raises four keyboard events: [keyDown](/api-reference/10%20UI%20Widgets/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Events/#keyDown'), [keyPress](/api-reference/10%20UI%20Widgets/dxTextEditor/4%20Events/keyPress.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Events/#keyPress'), [keyUp](/api-reference/10%20UI%20Widgets/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Events/#keyUp') and [enterKey](/api-reference/10%20UI%20Widgets/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Events/#enterKey'). Within the functions that handle them, you can access the original keyboard events. If you are _not_ going to change the functions during the lifetime of the widget, assign them to the respective widget options.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
             onKeyDown: function (e) {
-                var keyCode = e.event.key;
+                const keyCode = e.event.key;
                 // Event handling commands go here
             },
             onKeyPress: function (e) {
-                var keyCode = e.event.key;
+                const keyCode = e.event.key;
                 // Event handling commands go here
             },
             onKeyUp: function (e) {
-                var keyCode = e.event.key;
+                const keyCode = e.event.key;
                 // Event handling commands go here
             },
             onEnterKey: function (e) {
@@ -23,7 +23,7 @@ The **TextBox** raises four keyboard events: [keyDown](/api-reference/10%20UI%20
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -61,9 +61,53 @@ The **TextBox** raises four keyboard events: [keyDown](/api-reference/10%20UI%20
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTextBox
+            @key-down="onKeyDown"
+            @key-press="onKeyPress"
+            @key-up="onKeyUp"
+            @enter-key="onEnterKey"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxTextBox
+        },
+        methods: {
+            onKeyDown(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onKeyPress(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onKeyUp(e) {
+                const keyCode = e.event.key;
+                // Event handling commands go here
+            },
+            onEnterKey(e) {
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {
@@ -102,13 +146,13 @@ The **TextBox** raises four keyboard events: [keyDown](/api-reference/10%20UI%20
 If you are going to change the handling functions at runtime, or if you need to attach several functions to a single event, use the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var keyDownHandler1 = function (e) {
-        var keyCode = e.event.key;
+    const keyDownHandler1 = function (e) {
+        const keyCode = e.event.key;
         // First handler of the "keyDown" event
     };
 
-    var keyDownHandler2 = function (e) {
-        var keyCode = e.event.key;
+    const keyDownHandler2 = function (e) {
+        const keyCode = e.event.key;
         // Second handler of the "keyDown" event
     };
 

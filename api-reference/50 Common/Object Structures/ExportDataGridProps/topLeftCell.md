@@ -9,8 +9,8 @@ inheritsType: CellAddress
 A cell used as a start position for export.
 
 ---
-The cell is specified using coordinates in the Excel document. For example, the default value:
+The cell is specified using coordinates in the Excel document. For example, the default value specifies cell A1:
 
     { row: 1, column: 1 }
 
-... specifies cell A1. 
+You can also specify the **topLeftCell** address as a string in Excel format, for example, *"A1"*. In this example, *"A"* stands for the column and *"1"* for the row index.

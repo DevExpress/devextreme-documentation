@@ -3,10 +3,10 @@ To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widg
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function () {
+    <!--JavaScript-->$(function() {
         $("#menuContainer").dxMenu({
             // ...
-            onItemClick: function (e) {
+            onItemClick: function(e) {
                 var itemData = e.itemData;
                 var itemElement = e.itemElement;
                 var itemIndex = e.itemIndex;
@@ -26,10 +26,8 @@ To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widg
     import { DxMenuModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        itemClick (e) {
-            let itemData = e.itemData;
-            let itemElement = e.itemElement;
-            let itemIndex = e.itemIndex;
+        itemClick(e) {
+            const { itemData, itemElement, itemIndex } = e;
             // ...
         }
     }
@@ -41,16 +39,69 @@ To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widg
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxMenu ...
+            @item-click="itemClick"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxMenu from 'devextreme-vue/menu';
+
+    export default {
+        components: {
+            DxMenu
+        },
+        methods: {
+            itemClick(e) {
+                const { itemData, itemElement, itemIndex } = e;
+                // ...
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Menu } from 'devextreme-react/menu';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Menu ...
+                    onItemClick={this.itemClick}
+                />
+            );
+        }
+
+        itemClick = (e) => {
+            const { itemData, itemElement, itemIndex } = e;
+            // ...
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the **itemClick** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxMenu/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var itemClickHandler1 = function (e) {
+    var itemClickHandler1 = function(e) {
         // First handler of the "itemClick" event
     };
 
-    var itemClickHandler1 = function (e) {
+    var itemClickHandler2 = function(e) {
         // Second handler of the "itemClick" event
     };
 

@@ -7,41 +7,44 @@ The **ContextMenu** widget displays a single- or multi-level context menu. An en
 The following code adds the **ContextMenu** widget to your page and binds it to an image using the [target](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#target') option. Note that the data source of the widget declares several nesting levels. Items in the resulting context menu mirror this structure.
 
 ---
-#####jQuery
 
-    <!--HTML--><img id="someImage" src="http://here/goes/my.jpg">
-    <div id="contextMenuContainer"></div>
+##### jQuery
 
-    <!--JavaScript-->var contextMenuItems = [
-        { text: "Zoom In" },
-        { text: "Zoom Out" },
+    <!--JavaScript-->
+    var contextMenuItems = [
+        { text: 'Zoom In' },
+        { text: 'Zoom Out' },
         {
-            text: "Share",
+            text: 'Share',
             items: [{
-                text: "Send to a friend",
+                text: 'Send to a friend',
                 items: [
-                    { text: "Log in with Facebook" },
-                    { text: "Log in with Twitter" }
+                    { text: 'Log in with Facebook' },
+                    { text: 'Log in with Twitter' }
                 ]
             }, {
-                text: "Send to a group",
+                text: 'Send to a group',
                 items: [
-                    { text: "Log in with Facebook" },
-                    { text: "Log in with Twitter" }
+                    { text: 'Log in with Facebook' },
+                    { text: 'Log in with Twitter' }
                 ]
             }]
         },
-        { text: "Comment" }
+        { text: 'Comment' }
     ];
 
-    $(function () {
+    $(function() {
         $("#contextMenuContainer").dxContextMenu({
             items: contextMenuItems,
             target: "#someImage"
         });
     });
 
-#####Angular
+    <!--HTML-->
+    <img id="someImage" src="http://here/goes/my.jpg">
+    <div id="contextMenuContainer"></div>
+
+##### Angular
 
     <!--HTML-->
     <img id="someImage" src="http://here/goes/my.jpg">
@@ -51,29 +54,29 @@ The following code adds the **ContextMenu** widget to your page and binds it to 
     </dx-context-menu>
 
     <!--TypeScript-->
-    import { DxContextMenuModule } from "devextreme-angular";
+    import { DxContextMenuModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         contextMenuItems = [
-            { text: "Zoom In" },
-            { text: "Zoom Out" },
+            { text: 'Zoom In' },
+            { text: 'Zoom Out' },
             {
-                text: "Share",
+                text: 'Share',
                 items: [{
-                    text: "Send to a friend",
+                    text: 'Send to a friend',
                     items: [
-                        { text: "Log in with Facebook" },
-                        { text: "Log in with Twitter" }
+                        { text: 'Log in with Facebook' },
+                        { text: 'Log in with Twitter' }
                     ]
                 }, {
-                    text: "Send to a group",
+                    text: 'Send to a group',
                     items: [
-                        { text: "Log in with Facebook" },
-                        { text: "Log in with Twitter" }
+                        { text: 'Log in with Facebook' },
+                        { text: 'Log in with Twitter' }
                     ]
                 }]
             },
-            { text: "Comment" }
+            { text: 'Comment' }
         ];
     }
     @NgModule({
@@ -83,6 +86,106 @@ The following code adds the **ContextMenu** widget to your page and binds it to 
          ],
          // ...
      })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <img
+                id="someImage"
+                src="http://here/goes/my.jpg"
+            >
+            <DxContextMenu
+                :items="contextMenuItems"
+                target="#someImage"
+            />
+        </div>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxContextMenu from 'devextreme-vue/context-menu';
+
+    export default {
+        components: {
+            DxContextMenu
+        },
+        data() {
+            return {
+                contextMenuItems: [
+                    { text: 'Zoom In' },
+                    { text: 'Zoom Out' },
+                    {
+                        text: 'Share',
+                        items: [{
+                            text: 'Send to a friend',
+                            items: [
+                                { text: 'Log in with Facebook' },
+                                { text: 'Log in with Twitter' }
+                            ]
+                        }, {
+                            text: 'Send to a group',
+                            items: [
+                                { text: 'Log in with Facebook' },
+                                { text: 'Log in with Twitter' }
+                            ]
+                        }]
+                    },
+                    { text: 'Comment' }
+                ]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ContextMenu } from 'devextreme-react/context-menu';
+
+    const contextMenuItems = [
+        { text: 'Zoom In' },
+        { text: 'Zoom Out' },
+        {
+            text: 'Share',
+            items: [{
+                text: 'Send to a friend',
+                items: [
+                    { text: 'Log in with Facebook' },
+                    { text: 'Log in with Twitter' }
+                ]
+            }, {
+                text: 'Send to a group',
+                items: [
+                    { text: 'Log in with Facebook' },
+                    { text: 'Log in with Twitter' }
+                ]
+            }]
+        },
+        { text: 'Comment' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <img id="someImage" src="http://here/goes/my.jpg" />
+                    <ContextMenu
+                        items={contextMenuItems}
+                        target="#someImage"
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

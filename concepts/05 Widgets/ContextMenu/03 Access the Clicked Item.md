@@ -1,12 +1,14 @@
 To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/4%20Events/itemClick.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Events/#itemClick') event. If the event handling function is not going to be changed during the lifetime of the widget, assign it to the [onItemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#onItemClick') option when you configure the widget.
 
 ---
-#####jQuery
 
-    <!--JavaScript-->$(function () {
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
         $("#contextMenuContainer").dxContextMenu({
             // ...
-            onItemClick: function (e) {
+            onItemClick: function(e) {
                 var itemData = e.itemData;
                 var itemElement = e.itemElement;
                 var itemIndex = e.itemIndex;
@@ -15,22 +17,20 @@ To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widg
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-context-menu ...
-        (onItemClick)="handleItemClickEvent($event)">
+        (onItemClick)="itemClick($event)">
     </dx-context-menu>
 
     <!--TypeScript-->
-    import { DxContextMenuModule } from "devextreme-angular";
+    import { DxContextMenuModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
-        handleItemClickEvent (e) {
-            let itemData = e.itemData;
-            let itemElement = e.itemElement;
-            let itemIndex = e.itemIndex;
+        itemClick(e) {
+            const { itemData, itemElement, itemIndex } = e;
             // ...
         }
     }
@@ -42,16 +42,69 @@ To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widg
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxContextMenu ...
+            @item-click="itemClick"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxContextMenu from 'devextreme-vue/context-menu';
+
+    export default {
+        components: {
+            DxContextMenu
+        },
+        methods: {
+            itemClick(e) {
+                const { itemData, itemElement, itemIndex } = e;
+                // ...
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ContextMenu } from 'devextreme-react/context-menu';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ContextMenu ...
+                    onItemClick={this.itemClick}
+                />
+            );
+        }
+
+        itemClick = (e) => {
+            const { itemData, itemElement, itemIndex } = e;
+            // ...
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the **itemClick** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var itemClickHandler1 = function (e) {
+    var itemClickHandler1 = function(e) {
         // First handler of the "itemClick" event
     };
 
-    var itemClickHandler1 = function (e) {
+    var itemClickHandler1 = function(e) {
         // Second handler of the "itemClick" event
     };
 

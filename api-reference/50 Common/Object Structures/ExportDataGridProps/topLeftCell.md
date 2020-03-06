@@ -6,7 +6,11 @@ inheritsType: CellAddress
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A cell used as a start position for export.
 
 ---
-<!-- Description goes here -->
+The cell is specified using coordinates in the Excel document. For example, the default value:
+
+    { row: 1, column: 1 }
+
+... specifies cell A1. 

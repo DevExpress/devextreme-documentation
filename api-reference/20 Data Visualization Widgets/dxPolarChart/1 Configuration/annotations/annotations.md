@@ -7,7 +7,8 @@ inherits: dxPolarChart.Options.commonAnnotationSettings
 ##### shortDescription
 Specifies the annotation collection.
 
----     
+---
+     
 Annotations are images and text blocks that provide additional information about the visualized data.
 
 ![DevExtreme PolarChart: Annotations](/images/ChartJS/annotations/polar-chart-text-image-annotation.png)       
@@ -156,7 +157,7 @@ To define the position of an unanchored annotation, set the pixel coordinates ([
             value: 15
         }]
 
-- **Annotation anchored to a series point**
+- **Annotation anchored to a series or series point**
 
         annotations: [{
             argument: new Date(2019, 1, 16),
@@ -188,6 +189,3 @@ Objects in the **annotations[]** array configure individual annotations. To spec
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Annotation/"
 }
-
-#####See Also#####
-- [customizeAnnotation]({basewidgetpath}/Configuration/#customizeAnnotation)

@@ -1,15 +1,13 @@
 ---
-id: dxDiagram.Options.toolbar
-type: Object
-default: {}
+id: dxDiagram.Options.propertiesPanel.tabs
+type: Array<Object>
+default: undefined
 ---
 ---
 ##### shortDescription
-Configures the toolbar settings.
+Contains an array of tabs in the Properties panel.
 
 ---
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
 }
-
-![Diagram toolbox](/images/diagram/toolbar.png)

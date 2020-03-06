@@ -1,7 +1,8 @@
 For a minor customization of **Toolbar** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/') in item data objects. For example, the following code gererates four toolbar items: the first is a widget, the second is hidden, the third is disabled, the fourth is relocated.
 
 ---
-#####jQuery
+
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -28,6 +29,9 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
         });
     });
 
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
+
 ##### Angular
 
     <!--HTML-->
@@ -35,10 +39,7 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
         <dxi-item
             widget="dxButton"
             location="before"
-            [options]="{
-                type: 'back',
-                text: 'Back'
-            }">
+            [options]="buttonOptions">
         </dxi-item>
         <dxi-item
             text="Change"
@@ -57,10 +58,13 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
     </dx-toolbar>
 
     <!--TypeScript-->
-    import { DxToolbarModule, DxButtonModule } from "devextreme-angular";
+    import { DxToolbarModule, DxButtonModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        // ...
+        buttonOptions = {
+            type: 'back',
+            text: 'Back'
+        };
     }
     @NgModule({
         imports: [
@@ -71,31 +75,123 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
         // ...
     })
 
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem
+                widget="dxButton"
+                location="before"
+                :options="buttonOptions"
+            />
+            <DxItem
+                text="Change"
+                locate-in-menu="always"
+                :visible="false"
+            />
+            <DxItem
+                text="Remove"
+                locate-in-menu="always"
+                :disabled="true"
+            />
+            <DxItem
+                text="Products"
+                location="center"
+            />
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    type: 'back',
+                    text: 'Back'
+                }
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+
+    const buttonOptions = {
+        type: 'back',
+        text: 'Back'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item
+                        widget="dxButton"
+                        location="before"
+                        options={buttonOptions}
+                    />
+                    <Item
+                        text="Change"
+                        locateInMenu="always"
+                        visible={false}
+                    />
+                    <Item
+                        text="Remove"
+                        locateInMenu="always"
+                        disabled={true}
+                    />
+                    <Item
+                        text="Products"
+                        location="center"
+                    />
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize items on the toolbar and commands on the overflow menu.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#menuItemTemplate') to customize toolbar items and commands in the overflow menu, respectively. In Angular and Vue, you can declare the templates in the markup. In React, you can use rendering functions (shown in the code below) or components.
 
 ---
 ##### Angular
 
     <!--HTML-->
     <dx-toolbar 
-        [items]="items"
+        [items]="toolbarItems"
         itemTemplate="itemTemplate"
         menuItemTemplate="menuItemTemplate">
         <div *dxTemplate="let item of 'itemTemplate'">
-            <b style="color:green;">{{item.text}}</b>
+            <b style="color: green;">{{item.text}}</b>
         </div>
         <div *dxTemplate="let menuItem of 'menuItemTemplate'">
-            <b style="font-style:italic;">{{menuItem.text}}</b>
+            <b style="font-style: italic;">{{menuItem.text}}</b>
         </div>
     </dx-toolbar>
 
     <!--TypeScript-->
-    import { DxToolbarModule } from "devextreme-angular";
+    import { DxToolbarModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        items = [{
+        toolbarItems = [{
             text: 'Back',
             location: 'before'
         }, {
@@ -117,106 +213,132 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         // ...
     })
 
+##### Vue
 
-##### AngularJS
+    <!-- tab: App.vue -->
+    <template>
+        <DxToolbar
+            :items="toolbarItems"
+            item-template="itemTemplate"
+            menu-item-template="menuItemTemplate">
+            <template #itemTemplate="{ data }">
+                <b style="color: green;">{{data.text}}</b>
+            </template>
+            <template #menuItemTemplate="{ data }">
+                <b style="font-style: italic;">{{data.text}}</b>
+            </template>
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-toolbar="{
-            items: toolbarItems,
-            itemTemplate: 'itemTemplate',
-            menuItemTemplate: 'menuItemTemplate'
-        }" dx-item-alias="itemObj">
-            <div data-options="dxTemplate: { name: 'itemTemplate' }">
-                <b style="color:green;">{{itemObj.text}}</b>
-            </div>
-            <div data-options="dxTemplate: { name: 'menuItemTemplate' }">
-                <b style="font-style:italic;">{{itemObj.text}}</b>
-            </div>
-        </div>
-    </div>
+    import DxToolbar from 'devextreme-vue/toolbar';
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.toolbarItems = [{
-                text: 'Back',
-                location: 'before'
-            }, {
-                text: 'Change',
-                locateInMenu: 'always'
-            }, {
-                text: 'Remove',
-                locateInMenu: 'always'
-            }, {
-                text: 'Products',
-                location: 'center'
-            }];
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-##### Knockout
-
-    <!--HTML-->
-    <div data-bind="dxToolbar: {
-        items: toolbarItems,
-        itemTemplate: 'itemTemplate',
-        menuItemTemplate: 'menuItemTemplate'
-    }">
-        <div data-options="dxTemplate: { name: 'itemTemplate' } ">
-            <b style="color:green;" data-bind="text: text"></b>
-        </div>
-        <div data-options="dxTemplate: { name: 'menuItemTemplate' }">
-            <b style="font-style:italic;" data-bind="text: text"></b>
-        </div>
-    </div>
-
-    <!--JavaScript-->var viewModel = {
-        toolbarItems: [{
-            text: 'Back',
-            location: 'before'
-        }, {
-            text: 'Change',
-            locateInMenu: 'always'
-        }, {
-            text: 'Remove',
-            locateInMenu: 'always'
-        }, {
-            text: 'Products',
-            location: 'center'
-        }]
+    export default {
+        components: {
+            DxToolbar
+        },
+        data() {
+            return {
+                toolbarItems: [{
+                    text: 'Back',
+                    location: 'before'
+                }, {
+                    text: 'Change',
+                    locateInMenu: 'always'
+                }, {
+                    text: 'Remove',
+                    locateInMenu: 'always'
+                }, {
+                    text: 'Products',
+                    location: 'center'
+                }]
+            };
+        }
     };
+    </script>
 
-    ko.applyBindings(viewModel);
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar } from 'devextreme-react/toolbar';
+
+    const toolbarItems = [{
+        text: 'Back',
+        location: 'before'
+    }, {
+        text: 'Change',
+        locateInMenu: 'always'
+    }, {
+        text: 'Remove',
+        locateInMenu: 'always'
+    }, {
+        text: 'Products',
+        location: 'center'
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar
+                    items={toolbarItems}
+                    itemRender={this.renderItem}
+                    menuItemRender={this.renderMenuItem}
+                />
+            );
+        }
+
+        renderItem(data) {
+            return (
+                <b style={{ color: 'green' }}>{data.text}</b>
+            );
+        }
+
+        renderMenuItem(data) {
+            return (
+                <b style={{ fontStyle: 'italic' }}>{data.text}</b>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup. To apply the markup to items on the toolbar and commands on the overflow menu, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#menuItemTemplate') callback functions, respectively.
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup. To apply this markup to toolbar items and commands in the overflow menu, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#menuItemTemplate') callback functions, respectively.
+
+---
+
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
         $("#toolbarContainer").dxToolbar({
             items: toolbarItems,
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                itemElement.append("<b style='color:green;'>" + itemData.text + "</b>");
+            itemTemplate: function(itemData, itemIndex, itemElement) {
+                itemElement.append("<b style='color: green;'>" + itemData.text + "</b>");
             },
-            menuItemTemplate: function (itemData, itemIndex, itemElement) {
-                itemElement.append("<b style='font-style:italic;'>" + itemData.text + "</b>");
+            menuItemTemplate: function(itemData, itemIndex, itemElement) {
+                itemElement.append("<b style='font-style: italic;'>" + itemData.text + "</b>");
             }
         });
     });
 
-You can also customize an individual toolbar item or menu command. For this purpose, declare a template for this item or command as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#template') or [menu item template](/api-reference/_hidden/dxToolbarItem/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#menuItemTemplate') option, respectively.
-
     <!--HTML-->
-    <script id="individualItemTemplate" type="text/html">
-        <!-- ... -->
-    </script>
+    <div id="tabPanelContainer"></div>
 
-    <script id="individualMenuItemTemplate" type="text/html">
-        <!-- ... -->
-    </script>
+---
+
+You can also customize an individual toolbar item or menu command. For this purpose, declare a template for this item or command as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#template') or [menuItemTemplate](/api-reference/_hidden/dxToolbarItem/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#menuItemTemplate') option, respectively.
+
+---
+
+##### jQuery
 
     <!--JavaScript-->
     var toolbarItems = [{
@@ -230,6 +352,17 @@ You can also customize an individual toolbar item or menu command. For this purp
     },
     // ...
     ];
+
+    <!--HTML-->
+    <script id="individualItemTemplate" type="text/html">
+        <!-- ... -->
+    </script>
+
+    <script id="individualMenuItemTemplate" type="text/html">
+        <!-- ... -->
+    </script>
+
+---
 
 In addition, you can use a 3rd-party template engine to customize widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 

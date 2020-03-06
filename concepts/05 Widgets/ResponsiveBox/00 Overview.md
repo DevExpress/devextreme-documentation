@@ -61,6 +61,7 @@ The following code creates a simple **ResponsiveBox**. The widget defines an ord
     });
 
     <!--CSS-->
+    html, body { height: 100%; }
     #responsiveBoxContainer p {
         font-size: 16px;
         padding-top: 10px;
@@ -127,6 +128,7 @@ The following code creates a simple **ResponsiveBox**. The widget defines an ord
     })
 
     <!--CSS-->
+    html, body { height: 100%; }
     #responsiveBox p {
         font-size: 16px;
         padding-top: 10px;
@@ -216,6 +218,7 @@ The following code creates a simple **ResponsiveBox**. The widget defines an ord
     };
     </script>
     <style>
+    html, body { height: 100%; }
     #responsiveBox p {
         font-size: 16px;
         padding-top: 10px;
@@ -293,6 +296,7 @@ The following code creates a simple **ResponsiveBox**. The widget defines an ord
     export default App;
 
     <!--CSS-->
+    html, body { height: 100%; }
     #responsiveBox div {
         font-size: 16px;
         padding-top: 10px;

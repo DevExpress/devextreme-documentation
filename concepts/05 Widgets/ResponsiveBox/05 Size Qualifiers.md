@@ -51,6 +51,9 @@ If a size qualifier should be identified with other screen width values, use the
         });
     });
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Angular
 
     <!--HTML-->
@@ -80,6 +83,9 @@ If a size qualifier should be identified with other screen width values, use the
         ],
         // ...
     })
+
+    <!--CSS-->
+    html, body { height: 100%; }
 
 ##### Vue
 
@@ -114,6 +120,9 @@ If a size qualifier should be identified with other screen width values, use the
         }
     };
     </script>
+    <style>
+    html, body { height: 100%; }
+    </style>
     
 ##### React
 
@@ -145,6 +154,9 @@ If a size qualifier should be identified with other screen width values, use the
     }
 
     export default App;
+
+    <!--CSS-->
+    html, body { height: 100%; }
 
 ---
 

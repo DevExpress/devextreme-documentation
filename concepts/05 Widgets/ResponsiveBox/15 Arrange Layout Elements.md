@@ -20,6 +20,9 @@ All layout elements are arranged against a [layout grid](/concepts/05%20Widgets/
         });
     });
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Angular
 
     <!--HTML-->
@@ -46,6 +49,9 @@ All layout elements are arranged against a [layout grid](/concepts/05%20Widgets/
         // ...
     })
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Vue
 
     <!--HTML-->
@@ -57,7 +63,6 @@ All layout elements are arranged against a [layout grid](/concepts/05%20Widgets/
             <DxCol :ratio="0.5" screen="md lg"/>    <!-- Left-side bar -->
             <DxCol :ratio="2"/>                     <!-- Content -->
             <DxCol :ratio="0.5" screen="md lg"/>    <!-- Right-side bar -->
-            <!-- ... -->
         </DxResponsiveBox>
     </template>
     <script>
@@ -74,6 +79,9 @@ All layout elements are arranged against a [layout grid](/concepts/05%20Widgets/
         }
     };
     </script>
+    <style>
+    html, body { height: 100%; }
+    </style>
 
 ##### React
 
@@ -94,13 +102,15 @@ All layout elements are arranged against a [layout grid](/concepts/05%20Widgets/
                     <Col ratio={0.5} screen="md lg"/>   {/* Left-side bar */}
                     <Col ratio={2}/>                    {/* Content */}
                     <Col ratio={0.5} screen="md lg"/>   {/* Right-side bar */}
-                    {/* ... */}
                 </ResponsiveBox>
             );
         }
     }
 
     export default App;
+
+    <!--CSS-->
+    html, body { height: 100%; }
 
 ---
 
@@ -143,6 +153,7 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
     </div>
 
     <!--CSS-->
+    html, body { height: 100%; }
     #responsiveBoxContainer p {
         font-size: 16px;
         padding-top: 10px;
@@ -205,6 +216,7 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
     })
 
     <!--CSS-->
+    html, body { height: 100%; }
     #responsiveBox p {
         font-size: 16px;
         padding-top: 10px;
@@ -290,6 +302,7 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
     };
     </script>
     <style>
+    html, body { height: 100%; }
     #responsiveBox p {
         font-size: 16px;
         padding-top: 10px;
@@ -362,6 +375,7 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
     export default App;
 
     <!--CSS-->
+    html, body { height: 100%; }
     #responsiveBox div {
         font-size: 16px;
         padding-top: 10px;
@@ -397,6 +411,9 @@ If on some screens, all elements should be arranged in a single column, assign t
         });
     });
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Angular
 
     <!--HTML-->
@@ -420,12 +437,15 @@ If on some screens, all elements should be arranged in a single column, assign t
         // ...
     })
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Vue
 
     <!--HTML-->
     <template>
         <DxResponsiveBox ...
-            singleColumnScreen="xs sm">   <!-- Single-column layout on small and extra small screens -->
+            single-column-screen="xs sm">   <!-- Single-column layout on small and extra small screens -->
             <DxRow ... />   <!-- Ignored -->
             <DxCol ... />   <!-- Ignored -->
             <!-- ... -->
@@ -445,6 +465,9 @@ If on some screens, all elements should be arranged in a single column, assign t
         }
     };
     </script>
+    <style>
+    html, body { height: 100%; }
+    </style>
 
 ##### React
 
@@ -469,6 +492,9 @@ If on some screens, all elements should be arranged in a single column, assign t
     }
 
     export default App;
+
+    <!--CSS-->
+    html, body { height: 100%; }
 
 ---
 

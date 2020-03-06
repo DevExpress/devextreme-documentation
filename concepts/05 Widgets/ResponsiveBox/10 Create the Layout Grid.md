@@ -20,6 +20,9 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
     <!--HTML-->
     <div id="responsiveBoxContainer"></div>
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Angular
 
     <!--HTML-->
@@ -47,6 +50,9 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
         // ...
     })
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Vue
 
     <!--HTML-->
@@ -58,7 +64,7 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
             <!-- Creates three columns of equal width -->
             <DxCol/>
             <DxCol/>
-            <!-- ... -->
+            <DxCol/>
         </DxResponsiveBox>
     </template>
     <script>
@@ -75,6 +81,9 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
         }
     };
     </script>
+    <style>
+    html, body { height: 100%; }
+    </style>
 
 ##### React
 
@@ -95,13 +104,16 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
                     {/* Creates three columns of equal width */}
                     <Col/>
                     <Col/>
-                    {/* ... */}
+                    <Col/>
                 </ResponsiveBox>
             );
         }
     }
 
     export default App;
+
+    <!--CSS-->
+    html, body { height: 100%; }
 
 ---
 
@@ -153,6 +165,9 @@ The collections of rows and columns may differ depending on the screen's [size q
     <!--HTML-->
     <div id="responsiveBoxContainer"></div>
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Angular
 
     <!--HTML-->
@@ -164,7 +179,6 @@ The collections of rows and columns may differ depending on the screen's [size q
         <!-- The following columns appear on medium and large screens only -->
         <dxi-col [ratio]="2" screen="md lg"></dxi-col>
         <dxi-col [ratio]="0.5" screen="md lg"></dxi-col>
-        <!-- ... -->
     </dx-responsive-box>
 
     <!--TypeScript-->
@@ -181,6 +195,9 @@ The collections of rows and columns may differ depending on the screen's [size q
         // ...
     })
 
+    <!--CSS-->
+    html, body { height: 100%; }
+
 ##### Vue
 
     <!--HTML-->
@@ -193,7 +210,6 @@ The collections of rows and columns may differ depending on the screen's [size q
             <!-- The following columns appear on medium and large screens only -->
             <DxCol :ratio="2" screen="md lg"/>
             <DxCol :ratio="0.5" screen="md lg"/>
-            <!-- ... -->
         </DxResponsiveBox>
     </template>
     <script>
@@ -210,6 +226,9 @@ The collections of rows and columns may differ depending on the screen's [size q
         }
     };
     </script>
+    <style>
+    html, body { height: 100%; }
+    </style>
 
 ##### React
 
@@ -231,13 +250,15 @@ The collections of rows and columns may differ depending on the screen's [size q
                     {/* The following columns appear on medium and large screens only */}
                     <Col ratio={2} screen="md lg"/>
                     <Col ratio={0.5} screen="md lg"/>
-                    {/* ... */}
                 </ResponsiveBox>
             );
         }
     }
 
     export default App;
+
+    <!--CSS-->
+    html, body { height: 100%; }
 
 ---
 

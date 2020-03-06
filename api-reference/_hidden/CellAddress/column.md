@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The index of a column that contains the cell. 
 
 ---
-<!-- Description goes here -->
+This index begins with 1 which corresponds to column A in Excel.

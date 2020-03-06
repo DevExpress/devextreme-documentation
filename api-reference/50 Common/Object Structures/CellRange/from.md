@@ -5,7 +5,7 @@ inheritsType: CellAddress
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Coordinates of the top left cell.
 
 ---
 <!-- Description goes here -->

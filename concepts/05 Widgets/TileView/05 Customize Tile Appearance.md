@@ -148,8 +148,8 @@ If you need a more flexible solution, define a [dxTemplate](/api-reference/10%20
             item-template="tile">
             <template #tile="{ data }">
                 <div>
-                	<p style="font-size:larger"><b>{{data.name}}</b></p>
-                	<p>Capital: <i>{{data.capital}}</i></p>
+                    <p style="font-size:larger"><b>{{data.name}}</b></p>
+                    <p>Capital: <i>{{data.capital}}</i></p>
                 </div>
             </template>
         </DxTileView>

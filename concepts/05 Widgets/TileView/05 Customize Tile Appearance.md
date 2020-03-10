@@ -92,7 +92,7 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
 
 ---
 
-If you need a more flexible solution, define a [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -216,7 +216,7 @@ If you need a more flexible solution, define a [dxTemplate](/api-reference/10%20
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#itemTemplate') callback function as shown in the following code:
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tiles. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#itemTemplate') callback function as shown in the following code:
 
 ---
 ##### jQuery
@@ -250,7 +250,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
 ---
 
-You can also customize an individual tile. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component. When using jQuery, you can declare the tile as script and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#template') option or assign a customization function straight to this option.
+You can also customize individual tiles. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component. When using jQuery, you can declare the tiles as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#template') option or assign a customization function straight to this option.
 
 ---
 ##### jQuery

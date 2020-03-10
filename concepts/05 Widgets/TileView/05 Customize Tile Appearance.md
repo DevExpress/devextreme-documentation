@@ -313,6 +313,7 @@ You can also customize an individual tile. In Angular, Vue, and React, declare t
             </DxItem>
         </DxTileView>
     </template>
+
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';

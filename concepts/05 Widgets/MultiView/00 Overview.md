@@ -7,10 +7,8 @@ The **MultiView** is a widget that contains several views. An end user navigates
 In the most simple case, the **MultiView** widget requires only the [dataSource](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#dataSource') option to be configured. Note that in such a case, data source items should have a structure described in the **dataSource** section. The following code adds the **MultiView** to your page.
 
 ---
-##### jQuery
 
-    <!--HTML-->
-    <div id="multiViewContainer">
+##### jQuery
 
     <!--JavaScript-->
     var multiViewItems = [
@@ -25,20 +23,25 @@ In the most simple case, the **MultiView** widget requires only the [dataSource]
         });
     });
 
+    <!--HTML-->
+    <div id="multiViewContainer">
+
 ##### Angular
 
     <!--HTML-->
-    <dx-multi-view>
-        <dxi-item text="Personal Data"></dxi-item>
-        <dxi-item text="Contacts"></dxi-item>
-        <dxi-item text="Address"></dxi-item>
+    <x-multi-view
+        [dataSource]="multiViewItems">
     </dx-multi-view>
 
     <!--TypeScript-->
-    import { DxMultiViewModule } from "devextreme-angular";
+    import { DxMultiViewModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
-        // ...
+        multiViewItems = [
+            { text: 'Personal Data' },
+            { text: 'Contacts' },
+            { text: 'Address' }
+        ];
     }
     @NgModule({
         imports: [
@@ -47,6 +50,63 @@ In the most simple case, the **MultiView** widget requires only the [dataSource]
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxMultiView
+            :data-source="multiViewItems"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxMultiView from 'devextreme-vue/multi-view';
+
+    export default {
+        components: {
+            DxMultiView
+        },
+        data() {
+            return {
+                multiViewItems: [
+                    { text: 'Personal Data' },
+                    { text: 'Contacts' },
+                    { text: 'Address' }
+                ]
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { MultiView } from 'devextreme-react/multi-view';
+
+    const multiViewItems = [
+        { text: 'Personal Data' },
+        { text: 'Contacts' },
+        { text: 'Address' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <MultiView
+                    dataSource={multiViewItems}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

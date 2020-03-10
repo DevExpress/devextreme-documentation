@@ -7,7 +7,6 @@ inheritsType: dxDiagramCustomCommand
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Lists commands in the toolbar.
 
 ---
-<!-- Description goes here -->

@@ -1,7 +1,7 @@
 When a user types a value into the **TextBox**, this value applies when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be applied on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#valueChangeEvent') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
@@ -9,7 +9,7 @@ When a user types a value into the **TextBox**, this value applies when the <a h
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -30,9 +30,31 @@ When a user types a value into the **TextBox**, this value applies when the <a h
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTextBox value-change-event="keyup"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxTextBox
+        }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {
@@ -52,32 +74,35 @@ When a user types a value into the **TextBox**, this value applies when the <a h
 To process a new **TextBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#onValueChanged') option when you configure the widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
-        (onValueChanged)="onValueChanged($event)">
+        [(value)]="textBoxValue"
+        (onValueChanged)="handleValueChange($event)">
     </dx-text-box>
 
     <!--TypeScript-->
     import { DxTextBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        onValueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+        textBoxValue = "The TextBox value";
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -89,24 +114,75 @@ To process a new **TextBox** value, you need to handle the value change event. I
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTextBox
+            :value.sync="textBoxValue"
+            @value-changed="handleValueChange"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxTextBox
+        },
+        data() {
+            return {
+                textBoxValue: "The TextBox value"
+            };
+        },
+        methods: {
+            handleValueChange(e) {
+                const previousValue = e.previousValue;
+                const newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                textBoxValue: "The TextBox value"
+            };
+
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+
+            this.setState({
+                textBoxValue: newValue
+            });
+        }
+
         render() {
             return (
                 <TextBox
-                    onValueChanged={this.onValueChanged}
+                    value={this.state.textBoxValue}
+                    onValueChanged={this.handleValueChange}
                 />
             );
-        }
-
-        onValueChanged(e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
-            // Event handling commands go here
         }
     }
 
@@ -116,15 +192,15 @@ To process a new **TextBox** value, you need to handle the value change event. I
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
-    <!--JavaScript-->var valueChangedHandler1 = function (e) {
-        var previousValue = e.previousValue;
-        var newValue = e.value;
+    <!--JavaScript-->const valueChangedHandler1 = function (e) {
+        const previousValue = e.previousValue;
+        const newValue = e.value;
         // First handler of the "valueChanged" event
     };
 
-    var valueChangedHandler2 = function (e) {
-        var previousValue = e.previousValue;
-        var newValue = e.value;
+    const valueChangedHandler2 = function (e) {
+        const previousValue = e.previousValue;
+        const newValue = e.value;
         // Second handler of the "valueChanged" event
     };
 

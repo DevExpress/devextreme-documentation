@@ -1,7 +1,7 @@
 To limit the string length, assign an integer number to the **maxLength** option. By default, the string length is unlimited.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
@@ -9,7 +9,7 @@ To limit the string length, assign an integer number to the **maxLength** option
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -30,9 +30,31 @@ To limit the string length, assign an integer number to the **maxLength** option
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTextBox :max-length="10"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxTextBox
+        }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {

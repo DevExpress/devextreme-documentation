@@ -28,6 +28,9 @@ Toolbar items with identical **location** preserve the order they have in the da
         });
     });
 
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
+
 ##### Angular
 
     <!--HTML-->
@@ -54,6 +57,59 @@ Toolbar items with identical **location** preserve the order they have in the da
         // ...
     })
 
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem text="Delete" location="after"/>
+            <DxItem text="About" location="after"/>
+            <DxItem text="Products" location="center"/>
+            <DxItem text="Suppliers" location="center"/>
+            <DxItem text="Add" location="before"/>
+            <DxItem text="Edit" location="before"/>
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item text="Delete" location="after"/>
+                    <Item text="About" location="after"/>
+                    <Item text="Products" location="center"/>
+                    <Item text="Suppliers" location="center"/>
+                    <Item text="Add" location="before"/>
+                    <Item text="Edit" location="before"/>
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 When there is not enough width for all toolbar items, or if certain toolbar items are secondary, they can be rendered as commands on the overflow menu. This menu can be a [Popover](/concepts/05%20Widgets/Popover '/Documentation/Guide/Widgets/Popover/'), an [Action Sheet](/concepts/05%20Widgets/ActionSheet '/Documentation/Guide/Widgets/ActionSheet/') or a Drop-Down Menu, depending on which device the application is running on. To render a toolbar item as a command on the overflow menu, assign *"always"* or *"auto"* to the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#locateInMenu') option.
@@ -71,6 +127,9 @@ When there is not enough width for all toolbar items, or if certain toolbar item
             ]
         });
     });
+
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
 
 ##### Angular
 
@@ -94,6 +153,53 @@ When there is not enough width for all toolbar items, or if certain toolbar item
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem text="Add" locate-in-menu="auto"/>
+            <DxItem text="Change" locate-in-menu="always"/>
+            <DxItem text="Remove" locate-in-menu="always"/>
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item text="Add" locateInMenu="auto"/>
+                    <Item text="Change" locateInMenu="always"/>
+                    <Item text="Remove" locateInMenu="always"/>
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

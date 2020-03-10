@@ -1,11 +1,11 @@
 ---
-id: ExportLoadPanel.shading
+id: dxScheduler.Options.editing.allowEditingTimeZones
 type: Boolean
 default: false
 ---
 ---
 ##### shortDescription
-Specifies whether to shade the widget when the load panel is shown.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

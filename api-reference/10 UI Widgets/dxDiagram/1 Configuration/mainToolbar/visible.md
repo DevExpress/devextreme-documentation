@@ -1,7 +1,7 @@
 ---
 id: dxDiagram.Options.mainToolbar.visible
 type: Boolean
-default: true
+default: false
 ---
 ---
 ##### shortDescription

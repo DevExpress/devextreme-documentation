@@ -92,7 +92,7 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
 
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize tiles.
+If you need a more flexible solution, define a [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -137,80 +137,89 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         background: gray;
     }
 
-##### AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-tile-view="{
-            dataSource: tileViewData,
-            itemMargin: 15,
-            baseItemHeight: 80,
-            baseItemWidth: 140,
-            itemTemplate: 'tile'
-        }" dx-item-alias="itemObj">
-            <div class="tile" data-options="dxTemplate: { name: 'tile' }">
-                <p style="font-size:larger"><b>{{ itemObj.name }}</b></p>
-                <p>Capital: <i>{{ itemObj.capital }}</i></p>
-            </div>
-        </div>
-    </div>
+    <template>
+        <DxTileView
+            :data-source="tileViewData"
+            :item-margin="15"
+            :base-item-height="80"
+            :base-item-width="140"
+            item-template="tile">
+            <template #tile="{ data }">
+                <div>
+                	<p style="font-size:larger"><b>{{data.name}}</b></p>
+                	<p>Capital: <i>{{data.capital}}</i></p>
+                </div>
+            </template>
+        </DxTileView>
+    </template>
 
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.tileViewData =  [
-                { name: "Alabama", capital: "Montgomery" },
-                { name: "Alaska", capital: "Juneau" },
-                { name: "Arizona", capital: "Phoenix" },
-                // ...
-            ];
-        });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--CSS-->.tile {
-        border-radius: .5em;
-        text-align: center;
-        color: white;
-        background: gray;
-    }
+    import DxTileView from "devextreme-vue/tile-view";
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####Knockout
-
-    <!--HTML-->
-    <div data-bind="dxTileView: {
-        dataSource: tileViewData,
-        itemMargin: 15,
-        baseItemHeight: 80,
-        baseItemWidth: 140,
-        itemTemplate: 'tile'
-    }">
-        <div class="tile" data-options="dxTemplate: { name: 'tile' }">
-            <p style="font-size:larger"><b data-bind="text: name"></b></p>
-            <p>Capital: <i data-bind="text: capital"></i></p>
-        </div>
-    </div>
-
-    <!--JavaScript-->const viewModel = {
-        tileViewData: [
-            { name: "Alabama", capital: "Montgomery" },
-            { name: "Alaska", capital: "Juneau" },
-            { name: "Arizona", capital: "Phoenix" },
-            // ...
-        ]
+    export default {
+        components: {
+            DxTileView
+        },
+        data() {
+            return {
+                tileViewData: [
+                    { name: "Alabama", capital: "Montgomery" },
+                    { name: "Alaska", capital: "Juneau" },
+                    { name: "Arizona", capital: "Phoenix" },
+                    // ...
+                ]
+            };
+        }
     };
+    </script>
 
-    ko.applyBindings(viewModel);
+##### React
 
-    <!--CSS-->.tile {
-        border-radius: .5em;
-        text-align: center;
-        color: white;
-        background: gray;
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { TileView } from 'devextreme-react/tile-view';
+
+    const tileViewData = [
+        { name: "Alabama", capital: "Montgomery" },
+        { name: "Alaska", capital: "Juneau" },
+        { name: "Arizona", capital: "Phoenix" },
+        // ...
+    ];
+    
+    const renderTileItem = (itemData) => {
+        return (
+            <div>
+                <p style={{fontSize: "larger"}}>{itemData.name}</p>
+                <p><i>{itemData.capital}</i></p>
+            </div>
+        );
     }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TileView
+                    items={tileViewData}
+                    itemRender={renderTileItem}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#itemTemplate') callback function.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#itemTemplate') callback function as shown in the following code:
+
+---
+##### jQuery
 
     <!--JavaScript-->const tileViewData = [
         { name: "Alabama", capital: "Montgomery" },
@@ -239,18 +248,111 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         background: gray;
     }
 
-You can also customize an individual tile. For this purpose, declare a template for this tile as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/items/#template') field of the item's data object.
+---
+
+You can also customize an individual tile. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component. When using jQuery, you can declare the tile as script and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#template') option or assign a customization function straight to this option.
+
+---
+##### jQuery
 
     <!--HTML-->
+    <div id="tileViewContainer"></div>
     <script id="individualTileTemplate" type="text/html">
-        <!-- ... -->
+        <span>Comment</span>
     </script>
 
-    <!--JavaScript-->const tileViewData = [
-        { name: "Alabama", capital: "Montgomery" },
-        { name: "Alaska", capital: "Juneau", template: $("#individualTileTemplate") },
+    <!--JavaScript-->$(function() {
+        $("#tileViewContainer").dxTileView({
+            dataSource: [{
+                name: "Alaska", 
+                capital: "Juneau",
+                template: $("#individualTileTemplate")
+            }]
+        });
+    });
+
+##### Angular
+
+    <!--HTML-->
+    <dx-tile-view>
+        <dxi-item>
+            <span>User</span>
+        </dxi-item>
+        <dxi-item>
+            <span>Comment</span>
+        </dxi-item>
+    </dx-tile-view>
+
+    <!--TypeScript-->
+    import { DxTileViewModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
         // ...
-    ];
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxTileViewModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxTileView>
+            <DxItem>
+                <template #default>
+                    <span>User</span>
+                </template>
+            </DxItem>
+            <DxItem>
+                <template #default>
+                    <span>Comment</span>
+                </template>
+            </DxItem>
+        </DxTileView>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTileView, { DxItem } from "devextreme-vue/tile-view";
+
+    export default {
+        components: {
+            DxTileView,
+            DxItem
+        }
+    };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TileView, Item } from 'devextreme-react/tile-view';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TileView>
+                    <Item>
+                        <span>User</span>
+                    </Item>
+                    <Item>
+                        <span>Comment</span>
+                    </Item>
+                </TileView>
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 In addition, you can use a 3rd-party template engine to customize widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 

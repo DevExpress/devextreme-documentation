@@ -32,9 +32,12 @@ A template name or container.
 
 ---
 
-The [Form - Custom Items](https://github.com/DevExpress-Examples/Form-Custom-items) GitHub project demonstrates how to configure a template item with TextBox and enable its validation.
-
-The [Form - Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/) demo demonstrates how to define an unbound item with an image.
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+}
+#include common-githubbutton with {
+    url: "https://github.com/DevExpress-Examples/Form-Custom-items"
+}
 
 #####See Also#####
 - [Customize a Simple Item](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/#Customize_a_Simple_Item')

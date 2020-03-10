@@ -268,13 +268,11 @@ You can customize the text field and the drop-down button using the [fieldTempla
                     :full-screen="true"
                     :show-close-button="true"
                 />
-                <template #content>
-                    <DxList
-                        :data-source="dataSource"
-                        selection-mode="single"
-                        @selection-changed="changeDropDownBoxValue($event)">
-                    </DxList>
-                </template>
+                <DxList
+                    :data-source="dataSource"
+                    selection-mode="single"
+                    @selection-changed="changeDropDownBoxValue($event)">
+                </DxList>
             </DxDropDownBox>
         </div>
     </template>

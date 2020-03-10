@@ -108,11 +108,9 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
                     value-expr="ID"
                     display-expr="email"
                     :data-source="dropDownBoxData">
-                    <template #content>
-                        <DxDataGrid 
-                            :data-source="gridDataSource">
-                        </DxDataGrid>
-                    </template>
+                    <DxDataGrid 
+                        :data-source="gridDataSource">
+                    </DxDataGrid>
                 </DxDropDownBox>
             </div>
         </template>
@@ -248,12 +246,10 @@ This step's implementation depends on the embedded widget's API and the library/
             <div>
                 <DxDropDownBox ...
                     :value.sync="dropDownBoxValues">
-                    <template #content>
-                        <DxDataGrid ...
-                            :selected-row-keys.sync="dropDownBoxValues">
-                            <DxSelection mode="multiple" />
-                        </DxDataGrid>
-                    </template>
+                    <DxDataGrid ...
+                        :selected-row-keys.sync="dropDownBoxValues">
+                        <DxSelection mode="multiple" />
+                    </DxDataGrid>
                 </DxDropDownBox>
             </div>
         </template>

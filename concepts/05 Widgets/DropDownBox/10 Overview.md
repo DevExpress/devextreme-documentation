@@ -99,13 +99,11 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
                 :value.sync="selectedFruit"
                 :opened.sync="isDropDownBoxOpened"
                 :data-source="dataSource">
-                <template #content>
-                    <DxList
-                        :data-source="dataSource"
-                        selection-mode="single"
-                        @selection-changed="changeDropDownBoxValue($event)">
-                    </DxList>
-                </template>
+                <DxList
+                    :data-source="dataSource"
+                    selection-mode="single"
+                    @selection-changed="changeDropDownBoxValue($event)">
+                </DxList>
             </DxDropDownBox>
         </div>
     </template>
@@ -287,16 +285,14 @@ If your data is an array of objects, specify:
                 :data-source="customerDataSource"
                 value-expr="ID"
                 display-expr="companyName">
-                <template #content>
-                    <DxDataGrid
-                        :data-source="customerDataSource"
-                        :columns="['companyName', 'city', 'phone']"
-                        :height="265"
-                        :selected-row-keys.sync="selectedCustomers"
-                        @selection-changed="closeDropDownBox($event)">
-                        <DxSelection mode="single"/>
-                    </DxDataGrid>
-                </template>
+                <DxDataGrid
+                    :data-source="customerDataSource"
+                    :columns="['companyName', 'city', 'phone']"
+                    :height="265"
+                    :selected-row-keys.sync="selectedCustomers"
+                    @selection-changed="closeDropDownBox($event)">
+                    <DxSelection mode="single"/>
+                </DxDataGrid>
             </DxDropDownBox>
         </div>
     </template>

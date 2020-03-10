@@ -35,7 +35,58 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid>
+            <!-- data-field provides values for the column, calculate-sort-value provides values to be used in sorting -->
+            <DxColumn
+                data-field="Position"
+                calculate-sort-value="isOnVacation"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid>
+                    {/* dataField provides values for the column, calculateSortValue provides values to be used in sorting */}
+                    <Column
+                        dataField="Position"
+                        calculateSortValue="isOnVacation" />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 ...or a function that returns such a value.
@@ -92,5 +143,92 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
             [calculateSortValue]="customSortingFunction">
         </dxi-column>
     </dx-data-grid>
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid :ref="dataGridRefKey">
+            <DxColumn
+                :calculate-sort-value="calculateSortValue"
+                data-field="Position"
+                sort-order="asc"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = "my-data-grid";
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return {
+                dataGridRefKey
+            };
+        },
+        methods: {
+            calculateSortValue(rowData) {
+                if (rowData.Position == 'CEO')
+                    return this.dataGrid.columnOption('Position', 'sortOrder') == 'asc' ? 'aaa' : 'zzz'; // CEOs are always displayed at the top  
+                else
+                    return rowData.Position; // Others are sorted as usual
+            }
+        },
+        computed: {
+            dataGrid() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef} ...>
+                    <Column
+                        calculateSortValue={this.calculateSortValue}
+                        dataField="Position"
+                        sortOrder="asc" />
+                </DataGrid>
+            );
+        }
+
+        calculateSortValue(rowData) {
+            if (rowData.Position == 'CEO')
+                return this.dataGrid.columnOption('Position', 'sortOrder') == 'asc' ? 'aaa' : 'zzz'; // CEOs are always displayed at the top  
+            else
+                return rowData.Position; // Others are sorted as usual
+        }
+    }
+    export default App;
+
 ---

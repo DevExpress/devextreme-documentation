@@ -1,11 +1,10 @@
 ---
 id: dxDiagram.Options.mainToolbar.visible
 type: Boolean
-default: true
+default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the toolbar's visibility.
 
 ---
-<!-- Description goes here -->

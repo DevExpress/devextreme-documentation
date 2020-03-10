@@ -1,7 +1,7 @@
 If the size of the widget should be fixed, specify it using the [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Configuration/#width') options.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textAreaContainer").dxTextArea({
@@ -10,7 +10,7 @@ If the size of the widget should be fixed, specify it using the [height](/api-re
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-area
@@ -32,12 +32,55 @@ If the size of the widget should be fixed, specify it using the [height](/api-re
          // ...
      })
 
+##### Vue
+
+    <template>
+        <DxTextArea
+            :height="200"
+            :width="300"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextArea } from 'devextreme-vue/text-area';
+
+    export default {
+        components: {
+            DxTextArea
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TextArea } from 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TextArea
+                    height={200}
+                    width={300}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Alternatively, the widget's height can adapt to the widget's contents. In this case, instead of specifying the **height** option, you need to set the **autoResizeEnabled** option to **true**. To specify the minimum and maximum height that the adapted **TextArea** can occupy, set the **minHeight** and **maxHeight** options.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textAreaContainer").dxTextArea({
@@ -47,7 +90,7 @@ Alternatively, the widget's height can adapt to the widget's contents. In this c
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-area
@@ -69,6 +112,51 @@ Alternatively, the widget's height can adapt to the widget's contents. In this c
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <DxTextArea
+            :auto-resize-enabled="true"
+            :min-height="100"
+            :max-height="200"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextArea } from 'devextreme-vue/text-area';
+
+    export default {
+        components: {
+            DxTextArea
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TextArea } from 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TextArea
+                    autoResizeEnabled={true}
+                    minHeight={100}
+                    maxHeight={200}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

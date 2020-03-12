@@ -6,7 +6,6 @@ default: 'disabled'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies how the Diagram widget automatically zooms the work area.
 
 ---
-<!-- Description goes here -->

@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after a custom command item was clicked and allows you to implement the custom command's logic.
 
 ---
-<!-- Description goes here -->
+Main article: [onCustomCommand](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/onCustomCommand.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#onCustomCommand')

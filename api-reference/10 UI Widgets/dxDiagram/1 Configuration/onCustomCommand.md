@@ -1,7 +1,7 @@
 ---
-id: dxDiagram.Options.onToolbarCustomCommandExecuted
+id: dxDiagram.Options.onCustomCommand
 type: function(e)
-EventForAction: dxDiagram.toolbarCustomCommandExecuted
+EventForAction: dxDiagram.customCommand
 ---
 ---
 ##### shortDescription

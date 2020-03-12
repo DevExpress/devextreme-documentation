@@ -5,7 +5,7 @@ type: Array<dxDiagramCustomCommand> | Array<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Lists commands in a tab.
 
 ---
-<!-- Description goes here -->
+Use the [groups](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/tabs/groups/) option to group commands in the tab. Note, if the [groups](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/tabs/groups/) option is specified, the **commands** option is not in effect.

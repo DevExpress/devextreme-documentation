@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to show the loading indicator.
 
 ---
 <!-- Description goes here -->

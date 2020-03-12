@@ -1,6 +1,7 @@
 ---
-id: dxDiagram.toolbarCustomCommandExecuted
-type: eventType
+id: dxGanttStripLine.title
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

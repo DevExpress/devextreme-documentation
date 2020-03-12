@@ -1,6 +1,6 @@
 ---
-id: dxDiagram.Options.propertiesPanel.groups.title
-type: String
+id: dxGanttStripLine
+type: Object
 ---
 ---
 ##### shortDescription

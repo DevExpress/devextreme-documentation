@@ -48,30 +48,30 @@ A mask defines a pattern for the **TextBox** value. You can specify the mask usi
 You can also define custom masking elements using the [maskRules](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/maskRules.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#maskRules') object. Each field of this object defines a single masking element.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
             mask: "SFFFFHN",
             maskRules: {
                 // a single character
-                'S': '$',
+                S: '$',
 
                 // a regular expression
-                'H': /[0-9A-F]/,
+                H: /[0-9A-F]/,
 
                 // an array of characters
-                'N': ['$', '%', '&', '@'],
+                N: ['$', '%', '&', '@'],
 
                 // a function
-                'F': function (char) {
+                F: function (char) {
                     return char == char.toUpperCase();
                 }
             }
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -85,16 +85,16 @@ You can also define custom masking elements using the [maskRules](/api-reference
     export class AppComponent {
         maskRules = {
             // a single character
-            'S': '$',
+            S: '$',
 
             // a regular expression
-            'H': /[0-9A-F]/,
+            H: /[0-9A-F]/,
 
             // an array of characters
-            'N': ['$', '%', '&', '@'],
+            N: ['$', '%', '&', '@'],
 
             // a function
-            'F': function (char) {
+            F: function (char) {
                 return char == char.toUpperCase();
             }
         };
@@ -107,23 +107,67 @@ You can also define custom masking elements using the [maskRules](/api-reference
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTextBox
+            :mask-rules="maskRules"
+            mask="SFFFFHN"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxTextBox
+        },
+        data() {
+            return {
+                maskRules: {
+                    // a single character
+                    S: '$',
+
+                    // a regular expression
+                    H: /[0-9A-F]/,
+
+                    // an array of characters
+                    N: ['$', '%', '&', '@'],
+
+                    // a function
+                    F: function(char) {
+                        return char == char.toUpperCase();
+                    }
+                }
+            };
+        }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     const maskRules = {
         // a single character
-        'S': '$',
+        S: '$',
 
         // a regular expression
-        'H': /[0-9A-F]/,
+        H: /[0-9A-F]/,
 
         // an array of characters
-        'N': ['$', '%', '&', '@'],
+        N: ['$', '%', '&', '@'],
 
         // a function
-        'F': (char) => {
+        F: (char) => {
             return char == char.toUpperCase();
         }
     }
@@ -145,13 +189,13 @@ You can also define custom masking elements using the [maskRules](/api-reference
 
 The masked value goes to the read-only [text](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/text.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#text') option, while its unmasked equivalent goes to the [value](/api-reference/10%20UI%20Widgets/dxTextBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#value') option. If you use jQuery, you can get the value of either of these options using the [option(optionName)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName).md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Methods/#optionoptionName') method.
 
-    <!--JavaScript-->var maskedValue = $("#textBoxContainer").dxTextBox("option", "text");
-    var unmaskedValue = $("#textBoxContainer").dxTextBox("option", "value");
+    <!--JavaScript-->const maskedValue = $("#textBoxContainer").dxTextBox("option", "text");
+    const unmaskedValue = $("#textBoxContainer").dxTextBox("option", "value");
     
 By default, the widget uses underscores to designate blanks in the masked value. You can specify another symbol using the [maskChar](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/maskChar.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#maskChar') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
@@ -160,7 +204,7 @@ By default, the widget uses underscores to designate blanks in the masked value.
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -182,9 +226,34 @@ By default, the widget uses underscores to designate blanks in the masked value.
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTextBox
+            mask="+1 (200) 000-0000"
+            mask-char="‒"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxTextBox
+        }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {
@@ -205,7 +274,7 @@ By default, the widget uses underscores to designate blanks in the masked value.
 If the input value does not match the mask, the **TextBox** displays an error message specified by the [maskInvalidMessage](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/maskInvalidMessage.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#maskInvalidMessage') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
@@ -214,7 +283,7 @@ If the input value does not match the mask, the **TextBox** displays an error me
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-text-box
@@ -236,9 +305,34 @@ If the input value does not match the mask, the **TextBox** displays an error me
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTextBox
+            mask="+1 (200) 000-0000"
+            mask-invalid-message="The input value does not match the mask"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTextBox } from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxTextBox
+        }
+    }
+    </script>
+
 ##### React
 
     import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import { TextBox } from 'devextreme-react/text-box';
 
     class App extends React.Component {

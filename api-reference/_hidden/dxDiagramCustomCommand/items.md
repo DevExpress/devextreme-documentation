@@ -1,10 +1,5 @@
 ---
 id: dxDiagramCustomCommand.items
 type: Array<dxDiagramCustomCommand>
+inheritsType: dxDiagramCustomCommand
 ---
----
-##### shortDescription
-<!-- Description goes here -->
-
----
-<!-- Description goes here -->

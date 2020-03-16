@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.paddingTopBottom
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

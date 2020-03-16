@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.border.color
+type: String
+default: '#dddddd'
 ---
 ---
 ##### shortDescription

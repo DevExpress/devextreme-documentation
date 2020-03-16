@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
+id: BaseChartAnnotationConfig.font
 type: Object
-inherits: BaseChartAnnotationConfig
+inherits: Font
 ---
 ---
 ##### shortDescription

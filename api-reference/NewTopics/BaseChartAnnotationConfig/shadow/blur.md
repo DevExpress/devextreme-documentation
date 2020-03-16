@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.shadow.blur
+type: Number
+default: 4
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.arrowWidth
+type: Number
+default: 14
 ---
 ---
 ##### shortDescription

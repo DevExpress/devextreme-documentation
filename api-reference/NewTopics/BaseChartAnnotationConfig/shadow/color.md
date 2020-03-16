@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.shadow.color
+type: String
+default: '#000000'
 ---
 ---
 ##### shortDescription

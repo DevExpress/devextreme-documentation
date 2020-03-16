@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.allowDragging
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

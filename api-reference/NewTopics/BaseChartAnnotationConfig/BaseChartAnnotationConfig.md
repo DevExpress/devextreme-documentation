@@ -1,7 +1,6 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
+id: BaseChartAnnotationConfig
 type: Object
-inherits: BaseChartAnnotationConfig
 ---
 ---
 ##### shortDescription

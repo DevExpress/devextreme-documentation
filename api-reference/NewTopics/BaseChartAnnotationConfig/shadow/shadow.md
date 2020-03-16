@@ -1,7 +1,6 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
+id: BaseChartAnnotationConfig.shadow
 type: Object
-inherits: BaseChartAnnotationConfig
 ---
 ---
 ##### shortDescription

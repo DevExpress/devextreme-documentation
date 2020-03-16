@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.shadow.offsetY
+type: Number
+default: 1
 ---
 ---
 ##### shortDescription

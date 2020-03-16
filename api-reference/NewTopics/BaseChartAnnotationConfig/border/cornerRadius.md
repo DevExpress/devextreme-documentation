@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.border.cornerRadius
+type: Number
+default: 0, 4 (Material)
 ---
 ---
 ##### shortDescription

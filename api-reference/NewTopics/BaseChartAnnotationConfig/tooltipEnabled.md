@@ -1,7 +1,7 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.tooltipEnabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

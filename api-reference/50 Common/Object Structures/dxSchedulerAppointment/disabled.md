@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether an appointment should be disabled.
+Specifies whether the appointment responds to user interaction.
 
 ---

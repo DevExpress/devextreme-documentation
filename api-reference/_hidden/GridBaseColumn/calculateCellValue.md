@@ -280,7 +280,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
             columns: [{
                 calculateCellValue: function(rowData) {
                     // ...
-                    return this.defaultCalculateCellValue.apply(this, rowData);
+                    return this.defaultCalculateCellValue(rowData);
                 }
             }]
         });
@@ -300,7 +300,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
         calculateCellValue(rowData) {
             // ...
             const column = this as any;
-            return column.defaultCalculateCellValue.apply(column, rowData);
+            return column.defaultCalculateCellValue(rowData);
         }
     }
 
@@ -330,7 +330,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
             calculateCellValue(rowData) {
                 // ...
                 const column = this as any;
-                return column.defaultCalculateCellValue.apply(column, rowData);
+                return column.defaultCalculateCellValue(rowData);
             }
         }
     }
@@ -344,7 +344,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
         calculateCellValue(rowData) {
             // ...
             const column = this as any;
-            return column.defaultCalculateCellValue.apply(column, rowData);
+            return column.defaultCalculateCellValue(rowData);
         }
 
         render() {

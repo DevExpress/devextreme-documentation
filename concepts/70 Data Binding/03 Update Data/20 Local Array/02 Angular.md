@@ -1,4 +1,4 @@
-Ensure that the **dataSource** option is bound to the array using one- or two-way binding. Then, change the array using <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a>, and the widget will be updated automatically.
+Ensure that one- or two-way binding is used to bind the **dataSource** option to the array. Then, use <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a> to change the array. This updates the widget automatically.
 
 
     <!-- tab: app.component.html -->

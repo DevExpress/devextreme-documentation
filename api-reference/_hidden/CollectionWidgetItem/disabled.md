@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether a widget item should be disabled.
+Specifies whether the widget item responds to user interaction.
 
 ---

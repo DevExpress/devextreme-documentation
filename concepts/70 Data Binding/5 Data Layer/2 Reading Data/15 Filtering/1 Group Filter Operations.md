@@ -35,7 +35,7 @@ is equal to
         [ "value", "<", 7 ]
     ]);
 
-The operator priority depends on the implementation of the underlying [Store](/Documentation/Guide/Data_Layer/Data_Layer/#What_Are_Stores), or you can define the operator priority enclosing the required expression into square brackets. 
+The operator priority depends on the implementation of the underlying [Store](/concepts/30%20Data%20Layer/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores'), or you can define the operator priority enclosing the required expression into square brackets. 
 
     <!--JavaScript-->dataSource.filter([
         ["name", "notcontains", "Second"],

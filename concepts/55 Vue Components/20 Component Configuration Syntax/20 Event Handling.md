@@ -1,6 +1,6 @@
     <!-- tab: App.vue -->
     <template>
-        <dx-button
+        <DxButton
             text="OK"
             @click="okClicked"
         />

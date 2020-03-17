@@ -44,6 +44,66 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
         [dataSource]="selectBoxData">
     </dx-select-box>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSelectBox ...
+            :data-source="selectBoxData"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxSelectBox } from 'devextreme-vue/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxSelectBox
+        },
+        data() {
+            const selectBoxData = new DataSource({
+                store: /* A store is configured here */,
+                paginate: true,
+                pageSize: 10
+            }); 
+            return {
+                selectBoxData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import SelectBox from 'devextreme-react/select-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const selectBoxData = new DataSource({
+        store: /* A store is configured here */,
+        paginate: true,
+        pageSize: 10
+    });  
+
+    class App extends React.Component {
+        render() {
+            return (
+                <SelectBox ...
+                    dataSource={selectBoxData}
+                />
+            );
+        }
+    }
+    export default App;
+
 #####ASP.NET MVC Controls
 
     <!--Razor C#-->

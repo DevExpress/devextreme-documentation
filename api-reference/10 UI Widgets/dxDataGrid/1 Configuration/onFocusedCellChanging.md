@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.focusedCellChanging
 ---
 ---
 ##### shortDescription
-A function that is executed before the focused cell changes.
+A function that is executed before the focused cell changes. Applies only to cells in data or group rows.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -58,7 +58,7 @@ In the following code, the **onFocusedCellChanging** function is used to customi
 
     <!--JavaScript-->
     $(function() {
-        $("#dataGridContainer").dxDataGrid({
+        $("#{widgetName}Container").dx{WidgetName}({
             // ...
             onFocusedCellChanging: function (e) {
                 if (e.newColumnIndex == e.prevColumnIndex) {
@@ -71,7 +71,7 @@ In the following code, the **onFocusedCellChanging** function is used to customi
 ##### Angular
 
     <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
+    import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
         onFocusedCellChanging (e) { 
@@ -83,18 +83,76 @@ In the following code, the **onFocusedCellChanging** function is used to customi
     @NgModule({
         imports: [
             // ...
-            DxDataGridModule
+            Dx{WidgetName}Module
         ],
         // ...
     })
 
     <!--HTML-->
-    <dx-data-grid ...
+    <dx-{widget-name} ...
         (onFocusedCellChanging)="onFocusedCellChanging($event)">
-    </dx-data-grid>
-    
+    </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            @focused-cell-changing="onFocusedCellChanging"
+        > 
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        methods: {
+            onFocusedCellChanging(e) {
+                if (e.newColumnIndex == e.prevColumnIndex) {
+                    e.newColumnIndex = (e.newColumnIndex == 0 ? e.columns.length - 1 : 0);
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <{WidgetName} ...
+                    onFocusedCellChanging={this.onFocusedCellChanging}
+                >
+                </{WidgetName}>
+            );
+        }
+
+        onFocusedCellChanging(e) { 
+            if (e.newColumnIndex == e.prevColumnIndex) {
+                e.newColumnIndex = (e.newColumnIndex == 0 ? e.columns.length - 1 : 0);
+            }
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####
-- [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedRowKey')
-- [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#focusedColumnIndex')
+- [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/#focusedRowKey')
+- [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/#focusedColumnIndex')

@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not the menu item is disabled.
+Specifies whether the menu item responds to user interaction.
 
 ---

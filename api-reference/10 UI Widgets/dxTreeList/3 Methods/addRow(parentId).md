@@ -5,6 +5,9 @@ id: dxTreeList.addRow(parentId)
 ##### shortDescription
 Adds an empty data row to a specified parent row.
 
+##### return: Promise<void>
+<!-- Description goes here -->
+
 ##### param(parentId): any
 The parent row's ID.
 

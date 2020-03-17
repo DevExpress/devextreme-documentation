@@ -2,7 +2,7 @@ DevExtreme editors support the [`v-model`](https://vuejs.org/v2/guide/forms.html
 
     <!-- tab: App.vue -->
     <template>
-        <dx-text-box v-model="bindingProperty" />
+        <DxTextBox v-model="bindingProperty" />
     </template>
 
     <script>

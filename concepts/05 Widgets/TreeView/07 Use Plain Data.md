@@ -47,6 +47,73 @@ If you use plain data in the **TreeView**, set the [dataStructure](/api-referenc
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            data-structure="plain"
+            :data-source="plainData"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+
+    const plainData = [
+        { id: '1', text: 'Fruits' },
+        { id: '1_1', text: 'Apples', parentId: '1' },
+        { id: '1_2', text: 'Oranges', parentId: '1' },
+        { id: '2', text: 'Vegetables' },
+        { id: '2_1', text: 'Cucumbers', parentId: '2' },
+        { id: '2_2', text: 'Tomatoes', parentId: '2' }
+    ];
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                plainData
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeView from 'devextreme-react/tree-view';
+
+    const plainData = [
+        { id: '1', text: 'Fruits' },
+        { id: '1_1', text: 'Apples', parentId: '1' },
+        { id: '1_2', text: 'Oranges', parentId: '1' },
+        { id: '2', text: 'Vegetables' },
+        { id: '2_1', text: 'Cucumbers', parentId: '2' },
+        { id: '2_2', text: 'Tomatoes', parentId: '2' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataStructure="plain"
+                    dataSource={plainData} />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 As you can see, all items in a plain data source have the **id** and **text** fields, and items that have a parent, have the **parentId** field. Those are [conventional field names](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/'). To use other names, change the [keyExpr](/api-reference/10%20UI%20Widgets/HierarchicalCollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#keyExpr'), [displayExpr](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#displayExpr') and [parentIdExpr](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#parentIdExpr') options, respectively.
@@ -104,6 +171,78 @@ As you can see, all items in a plain data source have the **id** and **text** fi
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            data-structure="plain"
+            :data-source="plainData"
+            key-expr="key"
+            display-expr="name"
+            parent-id-expr="parent"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+
+    const plainData = [
+        { key: '1', name: 'Fruits' },
+        { key: '1_1', name: 'Apples', parent: '1' },
+        { key: '1_2', name: 'Oranges', parent: '1' },
+        { key: '2', name: 'Vegetables' },
+        { key: '2_1', name: 'Cucumbers', parent: '2' },
+        { key: '2_2', name: 'Tomatoes', parent: '2' }
+    ];
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                plainData
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeView from 'devextreme-react/tree-view';
+
+    const plainData = [
+        { key: '1', name: 'Fruits' },
+        { key: '1_1', name: 'Apples', parent: '1' },
+        { key: '1_2', name: 'Oranges', parent: '1' },
+        { key: '2', name: 'Vegetables' },
+        { key: '2_1', name: 'Cucumbers', parent: '2' },
+        { key: '2_2', name: 'Tomatoes', parent: '2' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataStructure="plain"
+                    dataSource={plainData} 
+                    keyExpr="key"
+                    displayExpr="name"
+                    parentIdExpr="parent" />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Frequently, the **id** of an item is also its **text**. In this case, set both the **keyExpr** and **displayExpr** options to a single value.
@@ -158,6 +297,77 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            data-structure="plain"
+            :data-source="plainData"
+            key-expr="name"
+            display-expr="name"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeView } from 'devextreme-vue/tree-view';
+
+    const plainData = [
+        { name: 'Fruits' },
+        { name: 'Apples', parentId: 'Fruits' },
+        { name: 'Oranges', parentId: 'Fruits' },
+        { name: 'Vegetables' },
+        { name: 'Cucumbers', parentId: 'Vegetables' },
+        { name: 'Tomatoes', parentId: 'Vegetables' }
+    ];
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        data() {
+            return {
+                plainData
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeView from 'devextreme-react/tree-view';
+
+    const plainData = [
+        { name: 'Fruits' },
+        { name: 'Apples', parentId: 'Fruits' },
+        { name: 'Oranges', parentId: 'Fruits' },
+        { name: 'Vegetables' },
+        { name: 'Cucumbers', parentId: 'Vegetables' },
+        { name: 'Tomatoes', parentId: 'Vegetables' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeView
+                    dataStructure="plain"
+                    dataSource={plainData} 
+                    keyExpr="name"
+                    displayExpr="name" />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -14,7 +14,7 @@ Information about the event.
 The object that represents the first broken rule on the list of specified validation rules.
 
 ##### field(validatedInfo.brokenRules): Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>
-An array of [validationRules](/DocumentationApiReference/UI_Widgets/dxValidator/Validation_Rules/) that failed to pass the check.
+An array of [validationRules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/') that failed to pass the check.
 
 ##### field(validatedInfo.isValid): Boolean
 Indicates whether the value satisfies all rules.

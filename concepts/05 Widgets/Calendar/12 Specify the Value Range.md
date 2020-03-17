@@ -37,9 +37,66 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar
+            :value="date"
+            :min-date="minDate"
+            :max-date="maxDate"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        },
+        data() {
+            return {
+                date: new Date(),
+                minDate: new Date(2000, 1, 1),
+                maxDate: new Date(2020, 12, 31)
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    const date = new Date();
+    const minDate = new Date(2000, 1, 1);
+    const maxDate = new Date(2020, 12, 31);
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar
+                    defaultValue={date}
+                    minDate={minDate}
+                    maxDate={maxDate} />
+            );
+        }
+    }
+    export default App;
+
 ---
 
-If you need to disable specific dates, use the [disabledDates](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/disabledDates.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#disabledDates') option. You can specify either an array of predefined dates or a function that determines whether a date is available. For example, the following code disables weekends: 
+If you need to disable specific dates, use the [disabledDates](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/disabledDates.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#disabledDates') option. You can specify either an array of predefined dates or a function that determines whether a date is available. For example, the following code disables weekends:
 
 ---
 ##### jQuery
@@ -61,7 +118,7 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
     <!--HTML-->
     <dx-calendar
         [(value)]="date"
-        [disabledDates]="disabledDates">
+        [disabledDates]="isDateDisabled">
     </dx-calendar>
 
     <!--TypeScript-->
@@ -69,10 +126,10 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
     // ...
     export class AppComponent {
         date: Date = new Date();
-        disabledDates (data) {
-            let day = data.date.getDay();
-            let isWeekend = (day === 0 || day === 6);
-            return data.view === "month" && isWeekend;
+        isDateDisabled({ date, view }) {
+            const day = date.getDay();
+            const isWeekend = (day === 0 || day === 6);
+            return view === "month" && isWeekend;
         };
     }
     @NgModule({
@@ -82,6 +139,71 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxCalendar
+            :value="date"
+            :min-date="minDate"
+            :max-date="maxDate"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxCalendar from 'devextreme-vue/calendar';
+
+    export default {
+        components: {
+            DxCalendar
+        },
+        data() {
+            return {
+                date: new Date()
+            }
+        },
+        methods: {
+            isDateDisabled({ date, view }) {
+                const day = date.getDay();
+                const isWeekend = (day === 0 || day === 6);
+                return view === "month" && isWeekend;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Calendar from 'devextreme-react/calendar';
+
+    const date = new Date();
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Calendar
+                    defaultValue={date}
+                    disabledDates={this.isDateDisabled} />
+            );
+        }
+
+        isDateDisabled({ date, view }) {
+            const day = date.getDay();
+            const isWeekend = (day === 0 || day === 6);
+            return view === "month" && isWeekend;
+        }
+    }
+    export default App;
 
 ---
 

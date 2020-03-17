@@ -4,7 +4,6 @@ type: Array<dxFileManagerContextMenuItem>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures settings for context menu items' subitems.
 
 ---
-<!-- Description goes here -->

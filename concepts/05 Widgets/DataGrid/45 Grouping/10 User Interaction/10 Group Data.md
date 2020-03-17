@@ -47,6 +47,69 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... > 
+            <DxGrouping :context-menu-enabled="true"/>
+            <DxGroupPanel :visible="true"/> <!-- or "auto" -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxGrouping,
+        DxGroupPanel
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxGrouping,
+            DxGroupPanel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Grouping,
+        GroupPanel
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Grouping contextMenuEnabled={true} />
+                    <GroupPanel visible={true} /> {/* or "auto" */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: Razor C# -->
+    @(Html.DevExtreme().DataGrid()
+        // ...
+        .Grouping(grouping => grouping.ContextMenuEnabled(true))
+        .GroupPanel(groupPanel => groupPanel.Visible(true)) //or "auto"
+    )
+
 ---
 
 You can prevent a user from dragging columns to the group panel, in which case it becomes an informative component only: a user can see the columns that participate in grouping, but cannot change them. Set the **groupPanel**.[allowColumnDragging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/allowColumnDragging.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#allowColumnDragging') option to **false** to activate this behavior. You might want to group data [initially](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/10%20Initial%20and%20Runtime%20Grouping.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Initial_and_Runtime_Grouping') in this case.
@@ -88,6 +151,72 @@ You can prevent a user from dragging columns to the group panel, in which case i
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... > 
+            <DxGroupPanel
+                :visible="true"
+                :allow-column-dragging="false"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxGroupPanel
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxGroupPanel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        GroupPanel
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <GroupPanel
+                        visible={true}
+                        allowColumnDragging={false}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: Razor C# -->
+    @(Html.DevExtreme().DataGrid()
+        // ...
+        .GroupPanel(groupPanel => groupPanel
+            .Visible(true)
+            .AllowColumnDragging(false)
+        )
+    )
 
 ---
 
@@ -132,6 +261,71 @@ If a specific column should never take part in grouping, set its [allowGrouping]
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... > 
+            <DxColumn
+                data-field="id"
+                :allow-grouping="false"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="id"
+                        allowGrouping={false} />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: Razor C# -->
+    @(Html.DevExtreme().DataGrid()
+        // ...
+        .Columns(columns => {
+            columns.AddFor(m => m.id)
+                .AllowGrouping(false);
+        })
+    )
 
 ---
 

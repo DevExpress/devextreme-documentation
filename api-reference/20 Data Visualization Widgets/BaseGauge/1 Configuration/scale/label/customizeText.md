@@ -14,7 +14,7 @@ Information on the scale value.
 The raw value.
 
 ##### field(scaleValue.valueText): String
-The [formatted]({basewidgetpath}/Configuration/label/#format) value converted to a string.
+The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/label/format.md '{basewidgetpath}/Configuration/scale/label/#format') value converted to a string.
 
 ##### return: String
 The text for the label to display.

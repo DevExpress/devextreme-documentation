@@ -45,6 +45,54 @@ Clicking a *"Delete"* button invokes the confirmation dialog that allows a user 
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxEditing
+                mode="row"
+                :allow-deleting="true">
+                <DxEditingTexts :confirm-delete-message="null" />
+            </DxEditing>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import { DxDataGrid, DxEditing, DxEditingTexts } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid, 
+            DxEditing,
+            DxEditingTexts
+        },
+        data() {}
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import { DataGrid, Editing, EditingTexts } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Editing
+                        mode="row"
+                        allowDeleting={true}>
+                        <EditingTexts confirmDeleteMessage={null} />
+                    </Editing>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;    
+    
 ---
 
 #include common-demobutton with {

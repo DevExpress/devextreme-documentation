@@ -1,8 +1,8 @@
     <!-- tab: App.vue -->
     <template>
-        <dx-vector-map>
-            <dx-layer :customize="customizeLayers" />
-        </dx-vector-map>
+        <DxVectorMap>
+            <DxLayer :customize="customizeLayers" />
+        </DxVectorMap>
     </template>
 
     <script>

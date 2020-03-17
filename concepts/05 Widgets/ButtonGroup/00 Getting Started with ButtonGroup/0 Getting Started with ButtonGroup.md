@@ -212,13 +212,15 @@ Refer to the subtopics for details on every configuration step. You can also see
     }];
 
     class App extends React.Component {
+        selectedFontStyleNames = [ 'italic' ];
+
         render() {
             return (
                 <ButtonGroup
                     items={fontStyles}
                     keyExpr="style"
                     selectionMode="multiple"
-                    defaultSelectedItemKeys={[ 'italic' ]}
+                    defaultSelectedItemKeys={this.selectedFontStyleNames}
                     onSelectionChanged={this.logSelectionChanged}
                 />
             );

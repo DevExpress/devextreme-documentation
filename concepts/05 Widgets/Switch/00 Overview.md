@@ -6,16 +6,92 @@ The **Switch** is a widget that can be in two states: "On" (when [value](/api-re
 
 The following code adds the **Switch** to your page.
 
-    <!--HTML-->
-    <div id="switchContainer"></div>
-     
- 
-    <!--JavaScript-->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
     $(function() {
         $("#switchContainer").dxSwitch({
             value: true
         });
     });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-switch [value]="true">
+    </dx-switch>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent { }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxSwitchModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxSwitchModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxSwitch :value="true" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxSwitch from 'devextreme-vue/switch';
+
+    export default {
+        components: {
+            DxSwitch
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Switch from 'devextreme-react/switch';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Switch defaultValue={true} />
+            );
+        }
+    }
+    export default App;
+
+---
 
 #####See Also#####
 #include common-link-configurewidget

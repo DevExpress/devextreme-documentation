@@ -57,6 +57,73 @@ Individual settings override common settings.
         // ...
     })
 
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries ... >
+                <DxSelectionStyle>
+                    <!-- high priority -->
+                </DxSelectionStyle>
+            </DxSeries>
+            <DxCommonSeriesSettings ... >
+                <DxSelectionStyle>
+                    <!-- low priority -->
+                </DxSelectionStyle>
+            </DxCommonSeriesSettings>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings,
+        DxSelectionStyle
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings,
+            DxSelectionStyle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings,
+        SelectionStyle
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <SelectionStyle>
+                            <!-- high priority -->
+                        </SelectionStyle>
+                    </Series>
+                    <CommonSeriesSettings ... >
+                        <SelectionStyle>
+                            <!-- low priority -->
+                        </SelectionStyle>
+                    </CommonSeriesSettings>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 To choose which series elements should be highlighted when a user selects a series, specify the **selectionMode** option. Just like **selectionStyle**, this option can be specified for all series in the **Chart** or for an individual series. Depending on the series type, the **selectionMode** option accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **selectionMode** option description.
@@ -106,6 +173,62 @@ To choose which series elements should be highlighted when a user selects a seri
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries
+                type="bar"
+                selection-mode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->                
+            />
+            <DxSeries
+                type="line"
+                selection-mode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series
+                        type="bar"
+                        selectionMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
+                    />
+                    <Series
+                        type="line"
+                        selectionMode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -144,6 +267,47 @@ By default, only a single series can be in the selected state at a time. If you 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart 
+            ...
+            series-selection-mode="multiple"> <!-- or 'single' -->
+         >
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart 
+                    ...
+                    seriesSelectionMode="multiple"> <!-- or 'single' -->
+                >
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

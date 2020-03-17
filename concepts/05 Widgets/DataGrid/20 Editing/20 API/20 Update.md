@@ -1,4 +1,4 @@
-The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex_value).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cellValuerowIndex_visibleColumnIndex_value') method updates a cell's value. This cell can be located using its row and column indexes. If the cell's data field is known, you can pass it instead of the column index. After a value is updated, save it to the data source by calling the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') method.
+The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex_value).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cellValuerowIndex_visibleColumnIndex_value') method updates a cell's value. This cell can be located using its row and column indexes. If the cell's data field is known, you can pass it instead of the column index. After a value is updated, save it to the data source by calling the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') method.
 
 ---
 ##### jQuery
@@ -45,68 +45,103 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20W
         text="Update Cell"
         (onClick)="updateCell()">
     </dx-button>
-    
----
 
-The **DataGrid** widget allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#setCellValue') function before this value is saved to the data source. 
+##### Vue
 
----
-##### jQuery
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxDataGrid ...
+                :ref="dataGridRefKey">
+            </DxDataGrid>
+            <DxButton
+                text="Update Cell"
+                @click="updateCell"
+            />
+        </div>
+    </template>
 
-    <!--JavaScript-->
-    $(function() {
-        $("#dataGridContainer").dxDataGrid({
-            // ...
-            editing: {
-                allowUpdating: true, 
-                allowAdding: true
-            },
-            columns: [
-                { dataField: "ID", visible: false },
-                {
-                    dataField: "Full_Name",
-                    setCellValue: function (rowData, value) {
-                        rowData.ID = value + Math.random() * 100;
-                        rowData.Full_Name = value;
-                    }
-                }
-                // ...
-            ]
-        });
-    });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-##### Angular
-    
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        setCellValue (rowData, value) {
-            rowData.ID = value + Math.random() * 100;
-            rowData.Full_Name = value;
+    import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxButton from 'devextreme-vue/button';
+
+    const dataGridRefKey = 'myDataGrid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxButton
+        },
+        data: function() {
+            return {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            updateCell() {
+                this.dataGrid.cellValue(1, "Position", "CTO");
+                this.dataGrid.saveEditData();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
+    </script>
 
-    <!--HTML-->
-    <dx-data-grid>
-        <dxo-editing
-            [allowUpdating]="true"
-            [allowAdding]="true">
-        </dxo-editing>
-        <dxi-column dataField="ID" [visible]="false"></dxi-column>
-        <dxi-column dataField="Full_Name" [setCellValue]="setCellValue"></dxi-column>
-    </dx-data-grid>
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+            this.updateCell = this.updateCell.bind(this);
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        updateCell() {
+            this.dataGrid.cellValue(1, "Position", "CTO");
+            this.dataGrid.saveEditData();
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                    <DataGrid ...
+                        ref={this.dataGridRef}>
+                    </DataGrid>
+                    <Button
+                        text="Update Cell"
+                        onClick={this.updateCell}
+                    />
+                </React.Fragment>
+            );
+        }
+    }
+    export default App;
     
 ---
 
-Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hasEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#hasEditData') to check if there are any unsaved changes. You can save or cancel them using the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') or [cancelEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cancelEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cancelEditData') method, respectively.
+To process an updated cell value before saving it to the data source, implement the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#setCellValue') function. Refer to the function's description for an example.
+
+You can check if there are any unsaved changes by calling the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hasEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#hasEditData') method. Use the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#saveEditData') or [cancelEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cancelEditData().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cancelEditData') method to save or cancel them, respectively.
 
 ---
 ##### jQuery
@@ -119,9 +154,14 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
             text: "Save changes",
             onClick: function() {
                 var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
-                if (dataGrid.hasEditData()) {
-                    // Implement your logic here
-                    dataGrid.saveEditData();
+                if(dataGrid.hasEditData()) {
+                    dataGrid.saveEditData().then(() => {
+                        if(!dataGrid.hasEditData()) {
+                            // Saved successfully
+                        } else {
+                            // Saving failed
+                        }
+                    });
                 }
             }
         });
@@ -136,10 +176,15 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        saveEditData () {
-            if (this.dataGrid.instance.hasEditData()) {
-                // Implement your logic here
-                this.dataGrid.instance.saveEditData();
+        saveEditData() {
+            if(this.dataGrid.instance.hasEditData()) {
+                this.dataGrid.instance.saveEditData().then(() => {
+                    if(!this.dataGrid.instance.hasEditData()) {
+                        // Saved successfully
+                    } else {
+                        // Saving failed
+                    }
+                });
             }
         }
     }
@@ -158,6 +203,111 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
         text="Save changes"
         (onClick)="saveEditData()">
     </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxDataGrid ...
+                :ref="dataGridRefKey">
+            </DxDataGrid>
+            <DxButton
+                text="Save changes"
+                @click="saveChanges"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxButton from 'devextreme-vue/button';
+
+    const dataGridRefKey = 'myDataGrid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxButton
+        },
+        data: function() {
+            return {
+                dataGridRefKey
+            }
+        },
+        methods: {
+            saveChanges() {
+                if(this.dataGrid.hasEditData()) {
+                    this.dataGrid.saveEditData().then(() => {
+                        if(!this.dataGrid.hasEditData()) {
+                            // Saved successfully
+                        } else {
+                            // Saving failed
+                        }
+                    });
+                }
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+            this.saveChanges = this.saveChanges.bind(this);
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        saveChanges() {
+            if(this.dataGrid.hasEditData()) {
+                this.dataGrid.saveEditData().then(() => {
+                    if(!this.dataGrid.hasEditData()) {
+                        // Saved successfully
+                    } else {
+                        // Saving failed
+                    }
+                });
+            }
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                    <DataGrid ...
+                        ref={this.dataGridRef}>
+                    </DataGrid>
+                    <Button
+                        text="Save changes"
+                        onClick={this.saveChanges}
+                    />
+                </React.Fragment>
+            );
+        }
+    }
+    export default App;
     
 ---
 

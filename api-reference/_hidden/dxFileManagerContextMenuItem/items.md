@@ -21,7 +21,7 @@ The **FileManager** widget allows you to add default and create custom context m
                 items: [
                     "create", // default item
                     {
-                        text: "Create new file", // custom item with sub items
+                        text: "Create new file", // custom item with subitems
                         items: [
                             {
                                 text: "Plain text document",

@@ -87,7 +87,7 @@ In this case, the 'result' array includes the following items.
         }
     ]
 
-Multi-level grouping is also supported. Pass several [getters](/concepts/30%20Data%20Layer/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters') or an array of getters to the [group(groupExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group(groupExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#groupgroupExpr') method to load an array containing subgroups.
+Multi-level grouping is also supported. Pass several [getters](/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters) or an array of getters to the [group(groupExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group(groupExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#groupgroupExpr') method to load an array containing subgroups.
 
     <!--JavaScript-->dataSource.group("birthYear", "gender");
     dataSource.load().done(function(result) {

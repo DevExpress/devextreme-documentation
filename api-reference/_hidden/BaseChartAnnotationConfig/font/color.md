@@ -1,7 +1,6 @@
 ---
-id: dxPolarChartCommonAnnotationConfig
-type: Object
-inherits: BaseChartAnnotationConfig
+id: BaseChartAnnotationConfig.font.color
+default: '#333333'
 ---
 ---
 ##### shortDescription

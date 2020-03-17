@@ -79,7 +79,7 @@ In the following code, the **calculateFilterExpression** function implements an 
                 return filterExpression;
             }
             // Invokes the default filtering behavior
-            return column.defaultCalculateFilterExpression(arguments);
+            return column.defaultCalculateFilterExpression.apply(column, arguments);
         }
     }
     @NgModule({

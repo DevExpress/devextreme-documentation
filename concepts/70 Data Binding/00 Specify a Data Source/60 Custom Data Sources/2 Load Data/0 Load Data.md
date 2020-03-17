@@ -1,0 +1,1 @@
+The **CustomStore** configuration depends on whether data should be processed on the client or on the server.

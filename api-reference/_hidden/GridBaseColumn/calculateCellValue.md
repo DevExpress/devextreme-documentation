@@ -269,7 +269,7 @@ The following features are disabled in an unbound column, but you can enable the
     </table>
 </div>
 
-To invoke the default behavior, call the **this.defaultCalculateCellValue(rowData)** function and return its result.
+To invoke the default behavior, call the **defaultCalculateCellValue** function and return its result.
 
 ---
 ##### jQuery
@@ -299,7 +299,7 @@ To invoke the default behavior, call the **this.defaultCalculateCellValue(rowDat
     export class AppComponent {
         calculateCellValue(rowData) {
             // ...
-            let column = this as any;
+            const column = this as any;
             return column.defaultCalculateCellValue(rowData);
         }
     }
@@ -329,7 +329,7 @@ To invoke the default behavior, call the **this.defaultCalculateCellValue(rowDat
         methods: {
             calculateCellValue(rowData) {
                 // ...
-                let column = this as any;
+                const column = this as any;
                 return column.defaultCalculateCellValue(rowData);
             }
         }
@@ -343,7 +343,7 @@ To invoke the default behavior, call the **this.defaultCalculateCellValue(rowDat
     class App extends React.Component {
         calculateCellValue(rowData) {
             // ...
-            let column = this as any;
+            const column = this as any;
             return column.defaultCalculateCellValue(rowData);
         }
 

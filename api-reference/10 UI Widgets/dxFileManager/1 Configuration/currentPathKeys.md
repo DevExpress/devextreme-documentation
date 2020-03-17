@@ -5,7 +5,6 @@ default: []
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an array of path keys to the current location.
 
 ---
-<!-- Description goes here -->

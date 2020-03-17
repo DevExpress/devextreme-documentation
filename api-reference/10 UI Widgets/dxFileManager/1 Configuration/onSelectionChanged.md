@@ -6,31 +6,44 @@ EventForAction: dxFileManager.selectionChanged
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a file system item is selected or selection is canceled.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.currentDeselectedItemKeys): Array<String>
-<!-- Description goes here -->
+The keys of the file system items whose selection has been cleared.
 
 ##### field(e.currentSelectedItemKeys): Array<String>
-<!-- Description goes here -->
+The keys of the file system items that have been selected.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.selectedItemKeys): Array<String>
-<!-- Description goes here -->
+The keys of all selected file system items.
 
 ##### field(e.selectedItems): Array<FileSystemItem>
-<!-- Description goes here -->
+The currently selected file system items.
 
 ---
-<!-- Description goes here -->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            // ...
+            onSelectionChanged: function(e) {
+                // Your code goes here
+            }
+        });
+    });
+
+---

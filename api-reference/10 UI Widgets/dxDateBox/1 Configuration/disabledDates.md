@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies dates to be disabled. Applies only if [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#pickerType') is *"calendar"*.
+Specifies dates that users cannot select. Applies only if [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#pickerType') is *"calendar"*.
 
 ##### param(data): Object
 Information about the checked date.

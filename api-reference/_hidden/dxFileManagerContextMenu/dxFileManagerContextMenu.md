@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the context menu.
 
 ---
-<!-- Description goes here -->

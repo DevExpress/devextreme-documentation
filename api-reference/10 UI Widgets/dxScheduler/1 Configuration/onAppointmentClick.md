@@ -42,7 +42,7 @@ Model data. Available only if Knockout is used.
 The clicked appointment.
 
 ---
-In case of [recurring appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/) or appointments with [multiple resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/), you may need the data object of the clicked, not the initial, appointment. For this purpose, use the **targetedAppointmentData** field of the function's parameter. Otherwise, use the **appointmentData** field.
+In case of [recurring appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments) or appointments with [multiple resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources), you may need the data object of the clicked, not the initial, appointment. For this purpose, use the **targetedAppointmentData** field of the function's parameter. Otherwise, use the **appointmentData** field.
 
 For example, the data source contains the following data object:
 

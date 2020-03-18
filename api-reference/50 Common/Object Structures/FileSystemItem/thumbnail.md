@@ -4,7 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An icon (URL) to be used as a file system item's thumbnail.
 
 ---
-<!-- Description goes here -->

@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A file system item's size. 
 
 ---
-<!-- Description goes here -->

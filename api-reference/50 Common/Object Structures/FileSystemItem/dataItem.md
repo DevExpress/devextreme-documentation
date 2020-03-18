@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A file system data object.
 
 ---
-<!-- Description goes here -->

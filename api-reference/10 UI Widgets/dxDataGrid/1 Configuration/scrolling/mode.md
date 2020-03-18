@@ -22,7 +22,7 @@ Each next page is loaded once the scrollbar reaches the end of its scale. In thi
 - **Virtual**       
 Rows are loaded when they get into the viewport and removed once they leave. If the rows take time to be loaded and rendered, they display gray boxes. [Rendering optimization](/concepts/05%20Widgets/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/030%20Rendering%20Optimization.md '/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization') can reduce rendering time and remove gray boxes. In this mode, users can move to any page instantly.
 
-Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') option to specify the number of rows in a page.
+Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') option to specify the number of rows on a page.
 
 #include common-ref-enum with {
     enum: "`GridScrollingMode`",

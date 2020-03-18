@@ -4,6 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-A file system item's name.
+The file system item's name.
 
 ---

@@ -4,6 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-A file system item's path.
+The file system item's path.
 
 ---

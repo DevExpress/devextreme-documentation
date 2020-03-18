@@ -4,6 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-A file system data object.
+The file system data object that stores information about the file system item (name, size, modification date, etc.).
 
 ---

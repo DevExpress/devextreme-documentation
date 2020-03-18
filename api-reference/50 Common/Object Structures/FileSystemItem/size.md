@@ -4,6 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-A file system item's size. 
+The file system item's size (in bytes). 
 
 ---

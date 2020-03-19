@@ -107,7 +107,7 @@ To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/a
 
 ---
 
-This configuration enables the widget to request data objects. To customize the request or process response data, use a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). Implement its [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function and enable the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') (except in the **DataGrid**, **TreeList**, **PivotGrid**, and **Scheduler** widgets).
+This configuration enables the widget to request data objects. To customize the request or process response data, use a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). Implement its [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function and enable the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') (except in the **DataGrid**, **TreeList**, **PivotGrid**, and **Scheduler** widgets, in which this mode is already enabled).
 
 The following code shows a **CustomStore** configuration in which the **load** function sends custom parameters with the request:
 

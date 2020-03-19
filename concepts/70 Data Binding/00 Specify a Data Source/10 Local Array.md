@@ -176,7 +176,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
 
 ---
 
-If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/Documentation/ApiReference/Data_Layer/ArrayStore/#key) option instead of the widget's **keyExpr** to specify the key field. Data objects from the **ArrayStore** can be shaped (filtered, sorted, grouped, etc.) in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
+If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/Documentation/ApiReference/Data_Layer/ArrayStore/#key) option instead of the widget's **keyExpr** to specify the key field. You can further wrap the **ArrayStore** in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') if you need to filter, sort, group, and otherwise shape the data.
 
 The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview) widget to this **DataSource**:
 
@@ -326,4 +326,4 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
 
 ---
 
-[note] If you pass a JavaScript array to the **dataSource** option, the widget automatically places it in an **ArrayStore** that is wrapped in a **DataSource**. You can then call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#getDataSource') method to get this **DataSource**.
+[note] If you pass a JavaScript array to a widget's **dataSource** option, the widget automatically places it in an **ArrayStore** that is wrapped in a **DataSource**. You can then call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#getDataSource') method to get this **DataSource**.

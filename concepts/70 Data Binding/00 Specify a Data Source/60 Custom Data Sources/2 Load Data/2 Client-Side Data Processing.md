@@ -1,4 +1,4 @@
-To process data on the client, load all data from the server in the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. You should also switch the **CustomStore** to the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') in all widgets except **DataGrid**, **TreeList**, **PivotGrid**, and **Scheduler**:
+To process data on the client, load all data from the server in the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. You should also switch the **CustomStore** to the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') in all widgets except **DataGrid**, **TreeList**, **PivotGrid**, and **Scheduler**, in which this mode is already enabled:
 
 ---
 ##### jQuery
@@ -161,4 +161,4 @@ To process data on the client, load all data from the server in the [load](/api-
 
 ---
 
-[note] For performance reasons, processing large datasets on the client is not recommended.
+[note] For performance reasons, we do not recommend that large datasets are processed on the client.

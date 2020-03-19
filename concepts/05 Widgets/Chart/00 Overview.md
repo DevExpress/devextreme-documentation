@@ -7,7 +7,7 @@ The **Chart** can visualize data from any source. Refer to the following topics 
 - [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 - [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
 - [OData Service](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/')
-- [Custom Sources](/concepts/05%20Widgets/Chart/03%20Data%20Binding/20%20Custom%20Sources.md '/Documentation/Guide/Widgets/Chart/Data_Binding/Custom_Sources/')
+- [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 
 The next step is to configure the most essential chart elements - series and axes.
 

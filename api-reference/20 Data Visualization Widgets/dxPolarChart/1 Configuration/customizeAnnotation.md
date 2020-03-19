@@ -79,7 +79,7 @@ The following code shows how to use the **customizeAnnotation** function to appl
     </template>
 
     <script>
-    import DxPolarChart from 'devextreme-vue/chart';
+    import DxPolarChart from 'devextreme-vue/polar-chart';
 
     export default {
         components: {
@@ -103,7 +103,7 @@ The following code shows how to use the **customizeAnnotation** function to appl
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    import PolarChart from 'devextreme-react/polar-chart';
 
     class App extends React.Component {
         render() {

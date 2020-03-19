@@ -9,7 +9,7 @@ Collapses an item found using its DOM node.
 The item's DOM node.
 
 ##### return: Boolean
-**false** if no node was found.
+**false** if no node was found or node is disabled or collapsing operation is in progress.
 
 ---
 #####See Also#####

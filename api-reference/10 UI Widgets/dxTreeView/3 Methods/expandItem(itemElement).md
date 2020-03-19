@@ -6,7 +6,7 @@ id: dxTreeView.expandItem(itemElement)
 Expands an item found using its DOM node.
 
 ##### return: Boolean
-**false** if no node was found.
+**false** if no node was found or node is disabled or expanding operation is in progress.
 
 ##### param(itemElement): Node
 The item's DOM node.

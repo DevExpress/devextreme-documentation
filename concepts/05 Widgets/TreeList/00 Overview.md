@@ -4,7 +4,7 @@ The **TreeList** is a widget that represents data from a local or remote source 
 
 The **TreeList** can visualize [plain](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Plain_Data/') or [hierarchical](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Hierarchical_Data/') data taken from any source. Refer to the following topics for details on binding the **TreeList** to your data source:
 
-- [Simple Array](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/020%20Simple%20Array/10%20Array%20Only.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Simple_Array/Array_Only/')
+- [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 - [JSON Data](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/025%20JSON%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/JSON_Data/')
 - [OData Service](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/030%20OData%20Service.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/OData_Service/')
 - [Custom Sources](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/035%20Custom%20Sources '/Documentation/Guide/Widgets/TreeList/Data_Binding/Custom_Sources/')

@@ -4,7 +4,7 @@ The **PieChart** is an interactive widget that visualizes data as a circle divid
 
 The **PieChart** can visualize data from any source. Refer to the following topics for details on how to bind the **PieChart** to your data source.
 
-- [Simple Array](/concepts/05%20Widgets/PieChart/03%20Data%20Binding/05%20Simple%20Array/05%20Array%20Only.md '/Documentation/Guide/Widgets/PieChart/Data_Binding/Simple_Array/Array_Only/')
+- [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 - [JSON Data](/concepts/05%20Widgets/PieChart/03%20Data%20Binding/10%20JSON%20Data.md '/Documentation/Guide/Widgets/PieChart/Data_Binding/JSON_Data/')
 - [OData Service](/concepts/05%20Widgets/PieChart/03%20Data%20Binding/15%20OData%20Service.md '/Documentation/Guide/Widgets/PieChart/Data_Binding/OData_Service/')
 - [Custom Sources](/concepts/05%20Widgets/PieChart/03%20Data%20Binding/20%20Custom%20Sources.md '/Documentation/Guide/Widgets/PieChart/Data_Binding/Custom_Sources/')

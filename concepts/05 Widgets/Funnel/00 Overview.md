@@ -7,7 +7,7 @@ The **Funnel** is a widget that visualizes a value at different stages in the fo
 The **Funnel** can visualize data from any source. Refer to the following topics for details on how to bind the **Funnel** to your data source:
 
 - [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
-- [JSON Data](/concepts/05%20Widgets/Funnel/03%20Data%20Binding/10%20JSON%20Data.md '/Documentation/Guide/Widgets/Funnel/Data_Binding/JSON_Data/')
+- [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
 - [OData Service](/concepts/05%20Widgets/Funnel/03%20Data%20Binding/15%20OData%20Service.md '/Documentation/Guide/Widgets/Funnel/Data_Binding/OData_Service/')
 - [Custom Sources](/concepts/05%20Widgets/Funnel/03%20Data%20Binding/20%20Custom%20Sources.md '/Documentation/Guide/Widgets/Funnel/Data_Binding/Custom_Sources/')
 

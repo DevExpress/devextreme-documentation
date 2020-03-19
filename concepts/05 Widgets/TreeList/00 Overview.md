@@ -6,7 +6,7 @@ The **TreeList** can visualize [plain](/concepts/05%20Widgets/TreeList/05%20Data
 
 - [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 - [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
-- [OData Service](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/030%20OData%20Service.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/OData_Service/')
+- [OData Service](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/')
 - [Custom Sources](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/035%20Custom%20Sources '/Documentation/Guide/Widgets/TreeList/Data_Binding/Custom_Sources/')
 
 The next step is to define and configure the collection of columns.

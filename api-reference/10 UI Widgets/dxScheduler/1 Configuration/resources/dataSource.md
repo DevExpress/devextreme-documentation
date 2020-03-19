@@ -21,7 +21,7 @@ Assign the array to the **dataSource** option.
 Set the **dataSource** option to the URL of a JSON file or service that returns JSON data.
 
 - **OData**         
-Implement an [ODataStore](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding/20%20OData%20Service.md '/Documentation/Guide/Widgets/Scheduler/Data_Binding/OData_Service/').
+Implement an [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/').
 
 - **Web API, PHP, MongoDB**     
 Use one of the following extensions to enable the server to process data according to the protocol DevExtreme widgets use:

@@ -69,7 +69,7 @@ The following table lists the possible **remoteOperations** configurations and t
     <sup>3</sup> - If <b>grouping</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#autoExpandAll">autoExpandAll</a> is set to <b>false</b>
 </div>
 
-[note] Paging, filtering, and sorting are performed on the server side for the [ODataStore](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/20%20OData%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/OData_Service/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
+[note] Paging, filtering, and sorting are performed on the server side for the [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
 
 The following restrictions apply to widget functionality when operations are remote:
 

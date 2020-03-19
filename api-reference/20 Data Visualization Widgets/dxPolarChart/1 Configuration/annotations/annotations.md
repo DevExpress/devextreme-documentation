@@ -191,4 +191,4 @@ Objects in the **annotations[]** array configure individual annotations. To spec
 }
 
 #####See Also#####
-- [customizeAnnotation]({basewidgetpath}/Configuration/#customizeAnnotation)
+- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#customizeAnnotation)

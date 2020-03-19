@@ -69,7 +69,7 @@ The following table lists the possible **remoteOperations** configurations and t
     <sup>3</sup> - If <b>grouping</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#autoExpandAll">autoExpandAll</a> is set to <b>false</b>
 </div>
 
-[note] Paging, filtering, and sorting are performed on the server side for the [ODataStore](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/20%20OData%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/OData_Service/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
+[note] Paging, filtering, and sorting are performed on the server side for the [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
 
 The following restrictions apply to widget functionality when operations are remote:
 
@@ -91,5 +91,5 @@ The following restrictions apply to widget functionality when operations are rem
 }
 
 #####See Also#####
-- **Data Binding**: [Web API Service](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/16%20Web%20API%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Web_API_Service/') | [PHP Service](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/17%20PHP%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/PHP_Service/') | [MongoDB Service](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/18%20MongoDB%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/MongoDB_Service/') | [Custom Sources](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/25%20Custom%20Sources '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Custom_Sources/')
+- **Data Binding**: [Web API, PHP, MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/') | [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 

@@ -6,7 +6,7 @@ id: dxDataGrid.addRow()
 Adds an empty data row and switches it to the editing state.
 
 ##### return: Promise<void>
-A Promise that is resolved after a new empty row is added. 
+A Promise that is resolved after a new empty row is added.
 
 ---
 Use this method if you want to add an empty row. If you need to add a row with data, do the following:    

@@ -11,22 +11,26 @@ The unoccupied area can be distributed among the items according to **ratio**s. 
 ![DevExtreme Box: Distribution of unoccuppied area](/images/UiWidgets/Box/Box_baseSizeWithRatio.png)
 
 ---
+
 ##### jQuery
 
-    <!--HTML--><div id="boxContainer">
+    <!--HTML-->
+    <div id="boxContainer">
         <div class="box-item orange" data-options="dxItem: { baseSize: 200, ratio: 6 }"> Item 1 </div>
         <div class="box-item yellow" data-options="dxItem: { baseSize: 100, ratio: 2 }"> Item 2 </div>
         <div class="box-item green"  data-options="dxItem: { baseSize: 150, ratio: 1 }"> Item 3 </div>
     </div>
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#boxContainer").dxBox({
             height: 100,
             width: 600
         });
     });
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 34px;
         font-size: 16px;
@@ -46,7 +50,7 @@ The unoccupied area can be distributed among the items according to **ratio**s. 
     </dx-box>
 
     <!--TypeScript-->
-    import { DxBoxModule } from "devextreme-angular";
+    import { DxBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -59,10 +63,103 @@ The unoccupied area can be distributed among the items according to **ratio**s. 
         // ...
     })
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 34px;
         font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxBox
+            :height="100"
+            :width="600">
+            <DxItem :baseSize="200" :ratio="6">
+                <template #default>
+                    <div class="box-item orange"> Item 1 </div>
+                </template>
+            </DxItem>
+            <DxItem :baseSize="100" :ratio="2">
+                <template #default>
+                    <div class="box-item yellow"> Item 2 </div>
+                </template>
+            </DxItem>
+            <DxItem :baseSize="150" :ratio="1">
+                <template #default>
+                    <div class="box-item green"> Item 3 </div>
+                </template>
+            </DxItem>
+        </DxBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxBox, DxItem } from 'devextreme-vue/box';
+
+    export default {
+        components: {
+            DxBox,
+            DxItem
+        }
+    };
+    </script>
+    <style>
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+    </style>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Box, { Item } from 'devextreme-react/box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Box
+                    height={100}
+                    width={600}>
+                    <Item baseSize={200} ratio={6}>
+                        <div className="box-item orange"> Item 1 </div>
+                    </Item>
+                    <Item baseSize={100} ratio={2}>
+                        <div className="box-item yellow"> Item 2 </div>
+                    </Item>
+                    <Item baseSize={150} ratio={1}>
+                        <div className="box-item green"> Item 3 </div>
+                    </Item>
+                </Box>
+            );
+        }
+    }
+
+    export default App;
+
+    <!--CSS-->
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+        height: 100%;
     }
 
     .orange { background: #f39e6c }
@@ -80,22 +177,26 @@ If **ratio** applies when there is an available space, **shrink** applies when s
 ![DevExtreme Box: Items shrink evenly to fit into the container](/images/UiWidgets/Box/box-shrink-evenly.png)
 
 ---
+
 ##### jQuery
 
-    <!--HTML--><div id="boxContainer">
+    <!--HTML-->
+    <div id="boxContainer">
         <div class="box-item orange" data-options="dxItem: { baseSize: 200, shrink: 1 }"> Item 1 </div>
         <div class="box-item yellow" data-options="dxItem: { baseSize: 200, shrink: 1 }"> Item 2 </div>
         <div class="box-item green"  data-options="dxItem: { baseSize: 200, shrink: 1 }"> Item 3 </div>
     </div>
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#boxContainer").dxBox({
             height: 100,
             width: 300
         });
     });
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 34px;
         font-size: 16px;
@@ -115,7 +216,7 @@ If **ratio** applies when there is an available space, **shrink** applies when s
     </dx-box>
 
     <!--TypeScript-->
-    import { DxBoxModule } from "devextreme-angular";
+    import { DxBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -138,6 +239,98 @@ If **ratio** applies when there is an available space, **shrink** applies when s
     .yellow { background: #f5e5a6 }
     .green { background: #94d7c7 }
 
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxBox
+            :height="100"
+            :width="300">
+            <DxItem :baseSize="200" :shrink="1">
+                <template #default>
+                    <div class="box-item orange"> Item 1 </div>
+                </template>
+            </DxItem>
+            <DxItem :baseSize="200" :shrink="1">
+                <template #default>
+                    <div class="box-item yellow"> Item 2 </div>
+                </template>
+            </DxItem>
+            <DxItem :baseSize="200" :shrink="1">
+                <template #default>
+                    <div class="box-item green"> Item 3 </div>
+                </template>
+            </DxItem>
+        </DxBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxBox, DxItem } from 'devextreme-vue/box';
+
+    export default {
+        components: {
+            DxBox,
+            DxItem
+        }
+    };
+    </script>
+    <style>
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+    </style>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Box, { Item } from 'devextreme-react/box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Box
+                    height={100}
+                    width={300}>
+                    <Item baseSize={200} shrink={1}>
+                        <div className="box-item orange"> Item 1 </div>
+                    </Item>
+                    <Item baseSize={200} shrink={1}>
+                        <div className="box-item yellow"> Item 2 </div>
+                    </Item>
+                    <Item baseSize={200} shrink={1}>
+                        <div className="box-item green"> Item 3 </div>
+                    </Item>
+                </Box>
+            );
+        }
+    }
+
+    export default App;
+
+    <!--CSS-->
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+        height: 100%;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+
 ---
 
 The result is different if *Item 2*'s **shrink** value is more than the other items':
@@ -147,20 +340,23 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
 ---
 ##### jQuery
 
-    <!--HTML--><div id="boxContainer">
+    <!--HTML-->
+    <div id="boxContainer">
         <div class="box-item orange" data-options="dxItem: { baseSize: 200, shrink: 1 }"> Item 1 </div>
         <div class="box-item yellow" data-options="dxItem: { baseSize: 200, shrink: 2 }"> Item 2 </div>
         <div class="box-item green"  data-options="dxItem: { baseSize: 200, shrink: 1 }"> Item 3 </div>
     </div>
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#boxContainer").dxBox({
             height: 100,
             width: 300
         });
     });
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 34px;
         font-size: 16px;
@@ -180,7 +376,7 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
     </dx-box>
 
     <!--TypeScript-->
-    import { DxBoxModule } from "devextreme-angular";
+    import { DxBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -193,10 +389,103 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
         // ...
     })
 
-    <!--CSS-->.box-item {
+    <!--CSS-->
+    .box-item {
         text-align: center;
         padding-top: 34px;
         font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxBox
+            :height="100"
+            :width="300">
+            <DxItem :baseSize="200" :shrink="1">
+                <template #default>
+                    <div class="box-item orange"> Item 1 </div>
+                </template>
+            </DxItem>
+            <DxItem :baseSize="200" :shrink="2">
+                <template #default>
+                    <div class="box-item yellow"> Item 2 </div>
+                </template>
+            </DxItem>
+            <DxItem :baseSize="200" :shrink="1">
+                <template #default>
+                    <div class="box-item green"> Item 3 </div>
+                </template>
+            </DxItem>
+        </DxBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxBox, DxItem } from 'devextreme-vue/box';
+
+    export default {
+        components: {
+            DxBox,
+            DxItem
+        }
+    };
+    </script>
+    <style>
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+    }
+
+    .orange { background: #f39e6c }
+    .yellow { background: #f5e5a6 }
+    .green { background: #94d7c7 }
+    </style>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Box, { Item } from 'devextreme-react/box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Box
+                    height={100}
+                    width={300}>
+                    <Item baseSize={200} shrink={1}>
+                        <div className="box-item orange"> Item 1 </div>
+                    </Item>
+                    <Item baseSize={200} shrink={2}>
+                        <div className="box-item yellow"> Item 2 </div>
+                    </Item>
+                    <Item baseSize={200} shrink={1}>
+                        <div className="box-item green"> Item 3 </div>
+                    </Item>
+                </Box>
+            );
+        }
+    }
+
+    export default App;
+
+    <!--CSS-->
+    .box-item {
+        text-align: center;
+        padding-top: 34px;
+        font-size: 16px;
+        height: 100%;
     }
 
     .orange { background: #f39e6c }

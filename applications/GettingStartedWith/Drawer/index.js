@@ -14,6 +14,7 @@ $(function() {
                 width: 200,
                 onItemClick: function(e) {
                     $("#content" ).html(e.itemData.text);
+                    drawer.hide();
                 }
             });
             return $list;

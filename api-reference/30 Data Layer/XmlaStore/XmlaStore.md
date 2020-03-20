@@ -113,7 +113,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
 
 ##### Vue
 
-    <!-- tab: App.vue -->   
+    <!-- tab: App.vue -->
     <script>
     import XmlaStore from 'devextreme/ui/pivot_grid/xmla_store';
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
@@ -124,6 +124,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
         cube: 'Adventure Works'
     });
 
+    // ===== or inside the PivotGridDataSource =====
     const pivotGridDataSource = new PivotGridDataSource({
         store: {
             type: 'xmla',
@@ -157,6 +158,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
         cube: 'Adventure Works'
     });
 
+    // ===== or inside the PivotGridDataSource =====
     const pivotGridDataSource = new PivotGridDataSource({
         store: {
             type: 'xmla',

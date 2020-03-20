@@ -22,9 +22,10 @@ You can implement a custom handler for a key using the [registerKeyHandler(key, 
     import { Dx{WidgetName}Module, Dx{WidgetName}Component } from 'devextreme-angular';
     // ...
     export class AppComponent implements AfterViewInit {
-        @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}: Dx{WidgetName}Component
+        @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}: Dx{WidgetName}Component;
         // Prior to Angular 8
-        // @ViewChild(Dx{WidgetName}Component) {widgetName}: Dx{WidgetName}Component
+        // @ViewChild(Dx{WidgetName}Component) {widgetName}: Dx{WidgetName}Component;
+
         ngAfterViewInit () {
             this.{widgetName}.instance.registerKeyHandler('backspace', function(e) {
                 // The argument "e" contains information on the event

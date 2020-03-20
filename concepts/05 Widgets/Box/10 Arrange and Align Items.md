@@ -1,9 +1,11 @@
 Items can be arranged in a row or in a column depending on the value of the [direction](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/#direction') option.
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#boxContainer").dxBox({
             direction: "row", // or "col"
             height: 200,
@@ -22,7 +24,7 @@ Items can be arranged in a row or in a column depending on the value of the [dir
     </dx-box>
 
     <!--TypeScript-->
-    import { DxBoxModule } from "devextreme-angular";
+    import { DxBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -34,6 +36,54 @@ Items can be arranged in a row or in a column depending on the value of the [dir
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxBox
+            :height="200"
+            :width="200"
+            direction="row"> <!-- or "col" -->
+            <!-- ... -->
+        </DxBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxBox } from 'devextreme-vue/box';
+
+    export default {
+        components: {
+            DxBox
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Box from 'devextreme-react/box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Box
+                    height={200}
+                    width={200}
+                    direction="row"> {/* or "col" */}
+                    {/* ... */}
+                </Box>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -55,9 +105,11 @@ Items can be arranged in a row or in a column depending on the value of the [dir
 If the **Box** items do not occupy the entire **Box**, you can align them along and crosswise the specified **direction**. For this purpose, use the [align](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/align.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/#align') and [crossAlign](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/crossAlign.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/#crossAlign') options, respectively.
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#boxContainer").dxBox({
             direction: "col",
             height: 200,
@@ -78,7 +130,7 @@ If the **Box** items do not occupy the entire **Box**, you can align them along 
     </dx-box>
 
     <!--TypeScript-->
-    import { DxBoxModule } from "devextreme-angular";
+    import { DxBoxModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         // ...
@@ -90,6 +142,56 @@ If the **Box** items do not occupy the entire **Box**, you can align them along 
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxBox
+            :height="200"
+            :width="200"
+            align="center"
+            cross-align="stretch">
+            <!-- ... -->
+        </DxBox>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxBox } from 'devextreme-vue/box';
+
+    export default {
+        components: {
+            DxBox
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Box from 'devextreme-react/box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Box
+                    height={200}
+                    width={200}
+                    align="center"
+                    crossAlign="stretch">
+                    {/* ... */}
+                </Box>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

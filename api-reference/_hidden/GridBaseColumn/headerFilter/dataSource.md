@@ -240,7 +240,7 @@ A function in which you can modify the current data source configuration.
 
 [note]Every unique value in a column should also be present in the data source for its header filter.
 
-If you use a data source that does not contain the required fields (**text** and **value**), you can use the DataSource object's [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') option to cast the initial data array to the required structure. If the initial array includes key fields, all these fields, as well as the **text** and **value** fields should be present in the resulting array.
+If your data source omits the **text** and **value** fields, you can cast it to the required structure using the **DataSource** object's [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') function. If the initial data source contains key fields, the resulting data source should also contain them along with **text** and **value**.
 
 ---
 ##### jQuery

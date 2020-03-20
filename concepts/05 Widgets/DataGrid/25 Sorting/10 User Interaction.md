@@ -33,7 +33,51 @@ With the **DataGrid** widget, a user can sort by single and multiple columns. Us
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid>
+            <DxSorting mode="single"/> <!-- or "multiple" | "none" -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxSorting } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSorting
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Sorting } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid>
+                    <Sorting mode="single"/> {/* or "multiple" | "none" */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 In single mode, the user can click a column header to sort by the column. Subsequent clicks on the same header reverse the sort order. When the user sorts by a column, the sorting settings of other columns are canceled. 
@@ -82,7 +126,50 @@ To disable sorting in the whole widget, set the **sorting**.**mode** option to *
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid>
+            <DxColumn :allow-sorting="false"/>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid>
+                    <Column allowSorting={false}/>
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 ---
 
 #include common-demobutton with {

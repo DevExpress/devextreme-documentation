@@ -47,11 +47,11 @@ The following code shows how you can customize the toolbar using this function.
             onToolbarPreparing: function (e) {
                 var toolbarItems = e.toolbarOptions.items;
                 // Modifies an existing item
-                $.each(toolbarItems, function(_, item) {
-                    if(item.name === "saveButton") {
+                toolbarItems.forEach(function(item) {
+                    if (item.name === "saveButton") {
                         // Change the item options here
                     }
-                }); 
+                });
 
                 // Adds a new item
                 toolbarItems.push({
@@ -99,7 +99,95 @@ The following code shows how you can customize the toolbar using this function.
     <dx-data-grid ...
         (onToolbarPreparing)="onToolbarPreparing($event)">
     </dx-data-grid>
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @toolbar-preparing="onToolbarPreparing"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        methods: {
+            onToolbarPreparing(e) {
+                let toolbarItems = e.toolbarOptions.items;
+                // Modifies an existing item
+                toolbarItems.forEach(function(item) {
+                    if (item.name === "saveButton") {
+                        // Change the item options here
+                    }
+                });
+
+                // Adds a new item
+                toolbarItems.push({
+                    widget: 'dxButton',
+                    options: {
+                        icon: 'user',
+                        onClick: function() {
+                            // ...
+                        }
+                    },
+                    location: 'after'
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ...
+                    onToolbarPreparing={this.onToolbarPreparing}
+                />
+            );
+        }
+
+        onToolbarPreparing(e) {
+            let toolbarItems = e.toolbarOptions.items;
+            // Modifies an existing item
+            toolbarItems.forEach(function(item) {
+                if (item.name === "saveButton") {
+                    // Change the item options here
+                }
+            });
+
+            // Adds a new item
+            toolbarItems.push({
+                widget: 'dxButton',
+                options: {
+                    icon: 'user',
+                    onClick: function() {
+                        // ...
+                    }
+                },
+                location: 'after'
+            });
+        }
+    }
+    export default App;
+
 ---
 
 #include common-demobutton with {

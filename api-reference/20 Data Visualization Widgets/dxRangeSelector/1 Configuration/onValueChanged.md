@@ -19,7 +19,7 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.event): event
-#include common-ref-eventparam
+#include common-ref-eventparam This field is **undefined** if the value is changed programmatically.
 
 ##### field(e.model): Object
 The model data. Available only if you use Knockout.

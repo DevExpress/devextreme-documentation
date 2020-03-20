@@ -266,8 +266,8 @@ You can customize the text field and the drop-down button using the [fieldTempla
                     title="Fruits"
                     :show-title="true"
                     :full-screen="true"
-                    :show-close-button="true">
-                </DxDropDownOptions>
+                    :show-close-button="true"
+                />
                 <DxList
                     :data-source="dataSource"
                     selection-mode="single"

@@ -164,7 +164,7 @@ Use one of the following extensions to enable the server to process data accordi
 - **Any other data source**     
 Implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). ${{custom_store_view_demo}}
 
-Regardless of the data source on the input, the **{WidgetName}** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and otherwise shape data. To get its instance, call the [getDataSource()]({basewidgetpath}/Methods/#getDataSource) method.
+Regardless of the data source on the input, the **{WidgetName}** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()]({basewidgetpath}/Methods/#getDataSource) method.
 
 ${{additional_data_binding_actions}}
 

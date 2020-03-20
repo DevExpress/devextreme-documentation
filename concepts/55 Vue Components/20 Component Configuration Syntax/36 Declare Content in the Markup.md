@@ -29,3 +29,27 @@ The following is an example with **ScrollView**:
         }
     }
     </script>
+
+[important]
+
+These widgets do not support dynamically or conditionally rendered content in their root element. For example, the following code **does not work**:
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDrawer ... >
+            <router-view></router-view>
+        </DxDrawer>
+    </template>
+
+Wrap the content in a static element:
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDrawer ... >
+            <div>
+                <router-view></router-view>
+            </div>
+        </DxDrawer>
+    </template>
+
+[/important]

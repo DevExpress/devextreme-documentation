@@ -9,8 +9,17 @@ inheritsType: CellAddress
 A cell used as a start position for export.
 
 ---
-The cell is specified using coordinates in the Excel document. For example, the default value:
+The cell is specified using coordinates in the Excel document. For example, the following code specifies cell B2:
 
-    { row: 1, column: 1 }
+    DevExpress.excelExporter.exportDataGrid({
+        // ...  
+        topLeftCell: { row: 2, column: 2 } 
+    });
 
-... specifies cell A1. 
+You can also specify the **topLeftCell** using the Excel notation:
+
+    DevExpress.excelExporter.exportDataGrid({
+        // ...  
+        topLeftCell: "B2" 
+    });
+

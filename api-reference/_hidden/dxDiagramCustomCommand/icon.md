@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the custom command's icon.
 
 ---
-<!-- Description goes here -->
+#include uiwidgets-ref-icon

@@ -75,7 +75,7 @@ In the following code, the **calculateFilterExpression** function implements an 
                 return filterExpression;
             }
             // Invokes the default filtering behavior
-            return field.defaultCalculateFilterExpression(arguments);
+            return field.defaultCalculateFilterExpression.apply(field, arguments);
         }
     }
     @NgModule({

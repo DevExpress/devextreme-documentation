@@ -3,16 +3,15 @@ id: FileSystemProviderBase.renameItem()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Renames a file or folder.
 
 ##### return: Promise<any>
-<!-- Description goes here -->
+A Promise that is resolved after the file or folder is renamed. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
 
 ##### param(item): FileSystemItem
-<!-- Description goes here -->
+The current file or folder.
 
 ##### param(newName): String
-<!-- Description goes here -->
+The new name for the file or folder.
 
 ---
-<!-- Description goes here -->

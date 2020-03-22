@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 Specifies a custom template for the annotation.
 
-##### param(annotation): dxChartAnnotationConfig | any
+##### param(annotation): BaseChartAnnotationConfig | any
 The annotation's [configuration object](/api-reference/_hidden/dxChartCommonAnnotationConfig '{basewidgetpath}/Configuration/annotations/').
 
 ##### param(element): SVGGElement

@@ -8,7 +8,7 @@ default: false
 Allows dropping a row inside another row.
 
 ---
-This option only allows users to drag rows in UI. You should also implement the drag-and-drop in code. To enable row reordering inside a component, configure the dragging logic in the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler. If you need to perform cross-component drag-and-drop, implement the dragging logic in the [onAdd]({basewidgetpath}/Configuration/rowDragging/#onAdd) handler.
+This option enables row dropping only in the UI. You should also handle drag-and-drop in code. If users drag and drop rows inside a single component, use the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler. If users drag and drop rows between components, use the [onAdd]({basewidgetpath}/Configuration/rowDragging/#onAdd) handler.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/LocalReordering"

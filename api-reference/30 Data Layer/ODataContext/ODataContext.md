@@ -212,4 +212,4 @@ This object creates several [ODataStore](/api-reference/30%20Data%20Layer/ODataS
 #include datalayer-store-note-immutable with { name: "ODataContext" }
 
 #####See Also#####
-- [DataSource Examples - OData](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/2%20OData '/Documentation/Guide/Data_Layer/Data_Source_Examples/#OData')
+- [DataSource Examples - OData](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData')

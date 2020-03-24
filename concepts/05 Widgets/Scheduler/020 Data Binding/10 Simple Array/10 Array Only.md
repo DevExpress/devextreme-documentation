@@ -128,7 +128,7 @@ To bind the **Scheduler** to an array, pass this array to the [dataSource](/api-
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SimpleArray/"
 }
 
-If objects in the array need to be processed (for example, filtered), you can create a [Query](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept'). In the following code, a Query selects objects with `text` containing *'meet'*.
+If objects in the array need to be processed (for example, filtered), you can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'). In the following code, a Query selects objects with `text` containing *'meet'*.
 
 ---
 
@@ -256,7 +256,7 @@ If objects in the array need to be processed (for example, filtered), you can cr
 ---
 
 #####See Also#####
-- [Data Layer - Query Concept](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept')
+- [Data Layer - Query Concept](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept')
 - [Data Binding - ArrayStore](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding/10%20Simple%20Array/15%20ArrayStore.md '/Documentation/Guide/Widgets/Scheduler/Data_Binding/Simple_Array/ArrayStore/')
 - [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Widgets/dxScheduler/')
 

@@ -98,4 +98,4 @@ Call the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load()
 ---
 
 #####See Also#####
-- [Filtering](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Filtering')
+- [Filtering](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering')

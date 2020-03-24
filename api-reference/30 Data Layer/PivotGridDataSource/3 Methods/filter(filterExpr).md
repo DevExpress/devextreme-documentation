@@ -95,4 +95,4 @@ Call the [reload()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Met
 ---
 
 #####See Also#####
-- [Filtering](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Filtering')
+- [Filtering](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering')

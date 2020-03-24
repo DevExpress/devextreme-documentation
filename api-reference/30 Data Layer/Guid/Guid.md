@@ -13,4 +13,4 @@ dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
 
 ---
 #####See Also#####
-- [DataSource Examples - GUIDs](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/2%20OData/3%20GUIDs.md '/Documentation/Guide/Data_Layer/Data_Source_Examples/#OData/GUIDs')
+- [DataSource Examples - GUIDs](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData/3%20GUIDs.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData/GUIDs')

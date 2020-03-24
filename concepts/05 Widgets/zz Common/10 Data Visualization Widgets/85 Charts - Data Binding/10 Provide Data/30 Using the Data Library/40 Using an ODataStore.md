@@ -10,7 +10,7 @@
 
 [note]We recommend turning pagination off when using a DataSource. This action will prevent your data from partitioning.
 
-In some cases, this configuration is not enough for a ODataStore to support proper operation. This may occur due to the same-origin policy restrictions. For more information, read the [Note on Same-Origin Policy](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/9%20Note%20On%20Same-Origin%20Policy.md '/Documentation/Guide/Data_Layer/Data_Source_Examples/#Note_On_Same-Origin_Policy') topic.
+In some cases, this configuration is not enough for a ODataStore to support proper operation. This may occur due to the same-origin policy restrictions. For more information, read the [Note on Same-Origin Policy](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/9%20Note%20On%20Same-Origin%20Policy.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Note_On_Same-Origin_Policy') topic.
 
 In addition, you can specify the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key') option to get a read-write access to data. An ODataStore has many more options available for configuring. For a complete list, refer to the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') reference section.
 

@@ -48,7 +48,7 @@ To bind the **TreeList** to an array, pass this array to the [dataSource](/api-r
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/"
 }
 
-If objects in the array need to be processed (sorted or filtered), you can create a [Query](/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept). For example, in the following code, a Query sorts objects in the `employees` array in the descending order by the `fullName` field.
+If objects in the array need to be processed (sorted or filtered), you can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'). For example, in the following code, a Query sorts objects in the `employees` array in the descending order by the `fullName` field.
 
 ---
 ##### jQuery
@@ -97,7 +97,7 @@ If objects in the array need to be processed (sorted or filtered), you can creat
 ---
 
 #####See Also#####
-- [Data Layer - Query Concept](/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept)
+- [Data Layer - Query Concept](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept')
 - [TreeList | Data Binding - ArrayStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 
 [tags]treeList, data binding, provide data, array, process data, query

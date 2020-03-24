@@ -15,7 +15,7 @@ In some cases, you may need to group data by certain criteria. An item of a grou
         }
     ];
 
-The DevExtreme data layer ([DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and [Stores](/concepts/30%20Data%20Layer/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores')) supports grouping. The group expression syntax is identical to the [sort expression syntax](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/1%20Sorting.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Sorting').
+The DevExtreme data layer ([DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and [Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores')) supports grouping. The group expression syntax is identical to the [sort expression syntax](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/1%20Sorting.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Sorting').
 
 Consider grouping on the following examples. Begin with the creation of a sample DataSource.
 
@@ -87,7 +87,7 @@ In this case, the 'result' array includes the following items.
         }
     ]
 
-Multi-level grouping is also supported. Pass several [getters](/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters) or an array of getters to the [group(groupExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group(groupExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#groupgroupExpr') method to load an array containing subgroups.
+Multi-level grouping is also supported. Pass several [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters') or an array of getters to the [group(groupExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group(groupExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#groupgroupExpr') method to load an array containing subgroups.
 
     <!--JavaScript-->dataSource.group("birthYear", "gender");
     dataSource.load().done(function(result) {
@@ -135,7 +135,7 @@ The loaded array looks like the following.
         }
     ]
 
-[Stores](/concepts/30%20Data%20Layer/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same group expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
+[Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same group expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
     <!--JavaScript-->var arrayStore = new DevExpress.data.ArrayStore(data);
     arrayStore

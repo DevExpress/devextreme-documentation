@@ -128,4 +128,4 @@ Call this method within the [insert()](/api-reference/30%20Data%20Layer/Store/3%
 ---
 
 #####See Also#####
-- [Associations](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/2%20OData/4%20Associations.md '/Documentation/Guide/Data_Layer/Data_Source_Examples/#OData/Associations')
+- [Associations](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData/4%20Associations.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData/Associations')

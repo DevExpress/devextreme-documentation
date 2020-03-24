@@ -34,7 +34,7 @@ To modify the **select** option, pass the new option value to the [select(expr)]
     dataSource.select("firstName", "city");
     dataSource.load();
 
-A selection expression can be a [getter](/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters), several getters, or a function.
+A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters'), several getters, or a function.
 
 - **A single getter**
 
@@ -66,7 +66,7 @@ A selection expression can be a [getter](/Documentation/Guide/Data_Layer/Data_La
             { firstName: "Maria", lastName: "Gomez" },
         ]
 
- You can pass an array of [getters](/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters) instead of using several arguments.
+ You can pass an array of [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters') instead of using several arguments.
 
         <!--JavaScript-->dataSource.select(["firstName", "lastName"]);
 
@@ -92,7 +92,7 @@ A selection expression can be a [getter](/Documentation/Guide/Data_Layer/Data_La
             { fullName: "Maria Gomez", address: "Denver" }
         ]
 
-[Stores](/concepts/30%20Data%20Layer/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Layer/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same select expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
+[Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same select expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
     <!--JavaScript-->var arrayStore = new DevExpress.data.ArrayStore(data);
     arrayStore

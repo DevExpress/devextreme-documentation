@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The file system data object that stores information about the file system item (name, size, modification date, etc.).
 
 ---
-<!-- Description goes here -->

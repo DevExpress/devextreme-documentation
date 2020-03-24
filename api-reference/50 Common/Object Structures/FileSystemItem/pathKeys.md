@@ -4,7 +4,6 @@ type: Array<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The file system item's path specified in keys. 
 
 ---
-<!-- Description goes here -->

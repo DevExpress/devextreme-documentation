@@ -1,7 +1,7 @@
 The DevExtreme ThemeBuilder can easily be launched in two different ways.
 
 - **Online**  
-	Run the Theme Builder in a browser (online) from the following link: [http://js.devexpress.com/ThemeBuilder/](https://js.devexpress.com/ThemeBuilder).
+	Run the Theme Builder in a browser (online) from the following link: [https://devexpress.github.io/ThemeBuilder/](https://devexpress.github.io/ThemeBuilder/).
 
 - **Locally**  
 	Typically, the Theme Builder is located in the following path after installation: **C:\Program Files (x86)\DevExpress 16.2\DevExtreme\Tools\ThemeBuilder**

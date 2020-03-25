@@ -83,11 +83,11 @@ The following code shows a generic **validationCallback** implementation for a s
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        constructor(httpClient: HttpClient) {}
+        constructor(HttpClient: HttpClient) {}
 
         validateAsync(params) {
             return new Promise((resolve, reject) => {
-                this.httpClient.post("https://mydomain.com/MyDataService", { data: params.value })
+                this.HttpClient.post("https://mydomain.com/MyDataService", { data: params.value })
                     .toPromise()
                     .then(res => {
                         // res.message contains validation error message

@@ -42,42 +42,35 @@ Model data. Available only if Knockout is used.
 The clicked appointment.
 
 ---
-In case of recurring appointments or appointments with multiple resources, you may want to obtain information about the currently selected appointment, not the initial appointment. For this purpose, use the **targetedAppointmentData** field of the function parameter. Otherwise, use the **appointmentData** field.
+In case of [recurring appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments) or appointments with [multiple resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources), you may need the data object of the clicked, not the initial, appointment. For this purpose, use the **targetedAppointmentData** field of the function's parameter. Otherwise, use the **appointmentData** field.
 
-For example, there is a recurring appointment that starts on July 18 at 8:00 AM, repeats every day and belongs to two owners:
+For example, the data source contains the following data object:
 
     <!--JavaScript-->
-    var appointments = [
-        ...
-        {
-            startDate: new Date(2016, 6, 18, 8),
-            endDate: new Date(2016, 6, 18, 9),
-            ownerId: [1, 2],
-            recurrenceRule: "FREQ=DAILY"
-        }
-    ];
+    var appointments = [{
+        startDate: new Date(2016, 6, 18, 8),
+        endDate: new Date(2016, 6, 18, 9),
+        ownerId: [1, 2],
+        recurrenceRule: "FREQ=DAILY"
+    }];
 
-If you click an appointment from the recurring series, for example the second appointment belonging to the second owner, the following information is presented in the **appointmentData** and **targetedAppointmentData** fields.
+This object describes a series of appointments that belong to two owners and repeat every day. If a user clicks an appointment from this series (for example, the second appointment that belongs to the second owner), **appointmentData** and **targetedAppointmentData** will then contain the following data objects:
 
     <!--JavaScript-->
     onAppointmentClick: function(e) {
-        /* The initial appointment data
-            {
-                startDate: new Date(2016, 6, 18, 8), 
-                endDate: new Date(2016, 6, 18, 9),
-                ownerId: [1, 2],
-                recurrenceRule: "FREQ=DAILY"
-            }
-        */
-        var appointmentData = e.appointmentData;
-    
-        /* The clicked appointment data
-            {
-                startDate: new Date(2016, 6, 19, 8), 
-                endDate: new Date(2016, 6, 19, 9),
-                ownerId: 2,
-                recurrenceRule: "FREQ=DAILY"
-            }
-        */
-        var targetedAppointmentData = e.targetedAppointmentData;
+        console.log(e.appointmentData);
+        /* {
+            startDate: new Date(2016, 6, 18, 8), 
+            endDate: new Date(2016, 6, 18, 9),
+            ownerId: [1, 2],
+            recurrenceRule: "FREQ=DAILY"
+        } */
+
+        console.log(e.targetedAppointmentData);
+        /* {
+            startDate: new Date(2016, 6, 19, 8), 
+            endDate: new Date(2016, 6, 19, 9),
+            ownerId: 2,
+            recurrenceRule: "FREQ=DAILY"
+        } */
     }

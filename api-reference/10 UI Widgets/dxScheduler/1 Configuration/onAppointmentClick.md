@@ -54,7 +54,7 @@ For example, the data source contains the following data object:
         recurrenceRule: "FREQ=DAILY"
     }];
 
-This object describes a series of appointments that belong to two owners and repeat every day. If a user clicks an appointment from this series, for example, the second appointment that belongs to the second owner, **appointmentData** and **targetedAppointmentData** contain the following data objects:
+This object describes a series of appointments that belong to two owners and repeat every day. If a user clicks an appointment from this series (for example, the second appointment that belongs to the second owner), **appointmentData** and **targetedAppointmentData** will then contain the following data objects:
 
     <!--JavaScript-->
     onAppointmentClick: function(e) {

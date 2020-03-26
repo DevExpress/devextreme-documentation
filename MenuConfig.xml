@@ -31,6 +31,7 @@
   <MenuRule SourcePattern="Howto:^Common/07 DevExtreme Packages.*" Destination="" />
   
   <MenuRule SourcePattern="Howto:^05 Widgets$" Destination="bb65 Widgets" />
+  <MenuRule SourcePattern="Howto:^05 Widgets/(SlideOut|SlideOutView|NavBar).*?" Destination="" />
   <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
   <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" />
   <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />

@@ -164,18 +164,11 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 The following predefined **format**.[types](/Documentation/ApiReference/Common/Object_Structures/format/#type) are automatically converted to XLSX format string when exporting to Excel:
 
-- Numeric Formats (except for *"largeNumber"* that is exported as a blank cell)
+- Numeric Formats ((except for *"largeNumber"* that is exported as the <a href="https://support.office.com/en-us/article/available-number-formats-in-excel-0afe8f52-97db-41f1-b972-4b46e9f1e8d2" arget="_blank">General</a> format)
 - Currency Formats
 - Date-Time Formats (The *"quarter"* and *"quarterAndYear"* types will be exported as *"shortDate"*. The *"minute"* and *"millisecond"* types will be exported as *"longTime"*)
 
-Other [formats](/Documentation/ApiReference/Common/Object_Structures/format/) - *"function"* and [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String) are not converted  to XLSX format string. To export these formats, use the *"fixedPoint"* predefined format to get the same formatting in the XLSX file:
-
-    format: {  
-        type: 'fixedPoint',  
-        precision: 2  
-    } 
-
-You can also use the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback to export a formatted string instead of a raw cell value.
+Other [formats](/Documentation/ApiReference/Common/Object_Structures/format/) - *"function"* and [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String) are not converted  to XLSX format string. To export these formats, use the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback to export a formatted string instead of a raw cell value.
 
 #####See Also#####
 - **fields[]**.[customizeText](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/customizeText.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText')

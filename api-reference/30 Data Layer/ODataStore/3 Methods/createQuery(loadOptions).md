@@ -80,4 +80,4 @@ An object containing the [expand](/api-reference/30%20Data%20Layer/CustomStore/L
 ---
 
 #####See Also#####
-- [Query Concept](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept')
+- [Query Concept](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept')

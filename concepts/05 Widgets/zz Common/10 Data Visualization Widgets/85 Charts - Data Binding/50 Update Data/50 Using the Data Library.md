@@ -18,4 +18,4 @@ After a store has been updated, call the [load()](/api-reference/30%20Data%20Lay
 
 	<!--JavaScript-->dataSource.load();
 
-For details on data modification in the Data Library, refer to the [Data Modification](/concepts/30%20Data%20Layer/5%20Data%20Layer/3%20Data%20Modification '/Documentation/Guide/Data_Layer/Data_Layer/#Data_Modification') topic.
+For details on data modification in the Data Library, refer to the [Data Modification](/concepts/70%20Data%20Binding/5%20Data%20Layer/3%20Data%20Modification '/Documentation/Guide/Data_Binding/Data_Layer/#Data_Modification') topic.

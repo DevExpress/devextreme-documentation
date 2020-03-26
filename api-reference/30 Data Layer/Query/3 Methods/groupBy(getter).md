@@ -3,7 +3,7 @@ id: Query.groupBy(getter)
 ---
 ---
 ##### shortDescription
-Groups data items by the specified [getter](/concepts/30%20Data%20Layer/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Layer/Data_Layer/#Getters_And_Setters').
+Groups data items by the specified [getter](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters').
 
 ##### return: Query
 The **Query** with transformed data.
@@ -161,4 +161,4 @@ A getter; in most cases, the name of the data field to group by.
 ---
 
 #####See Also#####
-- [Grouping](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Grouping')
+- [Grouping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Grouping')

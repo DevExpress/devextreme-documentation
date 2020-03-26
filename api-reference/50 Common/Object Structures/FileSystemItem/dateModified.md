@@ -4,7 +4,6 @@ type: Date
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A timestamp that indicates when the file system item was last modified.
 
 ---
-<!-- Description goes here -->

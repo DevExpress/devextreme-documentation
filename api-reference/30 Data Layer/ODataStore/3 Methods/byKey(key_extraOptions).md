@@ -15,7 +15,7 @@ An entity's key value.
 Additional options.
 
 ##### field(extraOptions.expand): String | Array<String>
-The names of the navigation properties to be loaded simultaneously with the entity (see [OData - Associations](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/2%20OData/4%20Associations.md '/Documentation/Guide/Data_Layer/Data_Source_Examples/#OData/Associations')).
+The names of the navigation properties to be loaded simultaneously with the entity (see [OData - Associations](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData/4%20Associations.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData/Associations')).
 
 ##### field(extraOptions.select): String | Array<String>
 One or more fields to select from the entity.

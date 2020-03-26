@@ -500,8 +500,6 @@ If the data source's field names differ from the standard field names mentioned 
     
 ---
 
-[note] [Register the JSZip library](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/08%20Register%203rd-Party%20Dependencies%20in%20Angular%20CLI%206+/01%20JSZip%20Registration.md 'Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies_in_Angular_CLI_6+/JSZip_Registration') to download several files at once.
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToHierarchicalStructure/"
 }

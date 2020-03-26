@@ -1,11 +1,11 @@
 ---
-id: dxDropDownBox.Options.dropDownOptions
+id: dxDropDownEditor.Options.dropDownOptions
 type: dxPopup_Options
 default: {}
 ---
 ---
 ##### shortDescription
-Configures the drop-down field which holds the [content](/api-reference/10%20UI%20Widgets/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#contentTemplate').
+Configures the drop-down field which holds the [content](/api-reference/10%20UI%20Widgets/dx{WidgetName}/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/#contentTemplate').
 
 ---
 See [Popup Configuration](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/') for options that you can specify in this object.
@@ -20,11 +20,11 @@ See [Popup Configuration](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configura
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-drop-down-box ... >
+    <dx-{widget-name} ... >
         <dxo-drop-down-options
             [onOptionChanged]="logOption">
         </dxo-drop-down-options>
-    </dx-drop-down-box>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -45,7 +45,7 @@ See [Popup Configuration](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configura
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxDropDownBoxModule } from 'devextreme-angular';
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -53,7 +53,7 @@ See [Popup Configuration](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configura
         ],
         imports: [
             BrowserModule,
-            DxDropDownBoxModule
+            Dx{WidgetName}Module
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -64,24 +64,24 @@ See [Popup Configuration](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configura
 
     <!-- tab: App.vue -->
     <template>
-        <DxDropDownBox ... >
+        <Dx{WidgetName} ... >
             <DxDropDownOptions
-                :on-option-changed="logOption"
+                @option-changed="logOption"
             />
-        </DxDropDownBox>
+        </Dx{WidgetName}>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxDropDownBox, {
+    import Dx{WidgetName}, {
         DxDropDownOptions
-    } from 'devextreme-vue/drop-down-box';
+    } from 'devextreme-vue/{widget-name}';
 
     export default {
         components: {
-            DxDropDownBox,
+            Dx{WidgetName},
             DxDropDownOptions
         },
         methods: {

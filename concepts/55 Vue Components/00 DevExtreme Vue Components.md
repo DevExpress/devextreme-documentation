@@ -15,7 +15,7 @@ The DevExtreme Vue Component Suite provides the following platform-specific feat
 
 All DevExtreme component suites, including Vue, share architecture and core features. The following core features are common to all suites:
 
-- [Data layer](/concepts/30%20Data%20Layer/5%20Data%20Layer '/Documentation/Guide/Data_Layer/Data_Layer/')
+- [Data layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 
 - [Client-side data validation](/concepts/05%20Widgets/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/Widgets/Common/UI_Widgets/Data_Validation/')
 

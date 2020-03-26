@@ -57,7 +57,7 @@ After that, you need to bind one or several **Chart** series to data. Depending 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource/"
 }
 
-If objects in an array need to be processed (sorted, filtered, etc.), you can create a [Query](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept'). For example, in the following code, a Query sorts objects in the `fruits` array by the `count` field in descending order.
+If objects in an array need to be processed (sorted, filtered, etc.), you can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'). For example, in the following code, a Query sorts objects in the `fruits` array by the `count` field in descending order.
 
 ---
 ##### jQuery
@@ -113,7 +113,7 @@ If objects in an array need to be processed (sorted, filtered, etc.), you can cr
 ---
 
 #####See Also#####
-- [Update Data in the Chart](/concepts/05%20Widgets/Chart/03%20Data%20Binding/26%20Update%20Data '/Documentation/Guide/Widgets/Chart/Data_Binding/Update_Data/')
+- [Update Data in the Chart](/concepts/70%20Data%20Binding/03%20Update%20Data '/Documentation/Guide/Data_Binding/Update_Data/')
 - [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/Widgets/Chart/Data_Aggregation/')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/')
 

@@ -6,13 +6,10 @@ id: dxTreeView.collapseItem(itemElement)
 Collapses an item found using its DOM node.
 
 ##### return: Promise<void>
-<!-- Description goes here -->
+<!-- %return% -->
 
 ##### param(itemElement): Node
 The item's DOM node.
-
-##### return: Promise<void>
-<!-- %return% -->
 
 ---
 #####See Also#####

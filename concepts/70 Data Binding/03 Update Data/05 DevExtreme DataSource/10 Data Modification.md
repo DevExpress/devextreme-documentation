@@ -14,18 +14,22 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
         var store = dataSource.store();
 
         store.insert({ id: 1, name: "John Doe" })
-            .done(function (dataObj, key) { /* ... */ })
+            .done(function (dataObj, key) {
+                dataSource.load();
+            })
             .fail(function (error) { /* ... */ });
 
         store.update(1, { name: "John Smith" })
-            .done(function (dataObj, key) { /* ... */ })
+            .done(function (dataObj, key) {
+                dataSource.load();
+            })
             .fail(function (error) { /* ... */ });
 
         store.remove(1)
-            .done(function (key) { /* ... */ })
+            .done(function (key) {
+                dataSource.load();
+            })
             .fail(function (error) { /* ... */ });
-
-        dataSource.load();
     });
 
 ##### Angular
@@ -49,23 +53,27 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             const store = this.dataSource.store();
             store.insert({ id: 1, name: "John Doe" })
                 .then(
-                    (dataObj) => { /* ... */ },
+                    (dataObj) => {
+                        this.dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
 
             store.update(1, { name: "John Smith" })
                 .then(
-                    (dataObj) => { /* ... */ },
+                    (dataObj) => {
+                        this.dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
 
             store.remove(1)
                 .then(
-                    (key) => { /* ... */ },
+                    (key) => {
+                        this.dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
-
-            this.dataSource.load();
         }
     }
 
@@ -87,23 +95,27 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             const store = dataSource.store();
             store.insert({ id: 1, name: "John Doe" })
                 .then(
-                    (dataObj) => { /* ... */ },
+                    (dataObj) => {
+                        dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
 
             store.update(1, { name: "John Smith" })
                 .then(
-                    (dataObj) => { /* ... */ },
+                    (dataObj) => {
+                        dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
 
             store.remove(1)
                 .then(
-                    (key) => { /* ... */ },
+                    (key) => {
+                        dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
-
-            dataSource.load();
         }
     }
     </script>
@@ -125,23 +137,27 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             const store = dataSource.store();
             store.insert({ id: 1, name: "John Doe" })
                 .then(
-                    (dataObj) => { /* ... */ },
+                    (dataObj) => {
+                        dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
 
             store.update(1, { name: "John Smith" })
                 .then(
-                    (dataObj) => { /* ... */ },
+                    (dataObj) => {
+                        dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
 
             store.remove(1)
                 .then(
-                    (key) => { /* ... */ },
+                    (key) => {
+                        dataSource.load();
+                    },
                     (error) => { /* ... */ }
                 );
-
-            dataSource.load();
         }
 
         // ...

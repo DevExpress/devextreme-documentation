@@ -57,7 +57,7 @@ After that, you need to bind one or several **Chart** series to data. Depending 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource/"
 }
 
-If objects in an array need to be processed (sorted, filtered, etc.), you can create a [Query](/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept). For example, in the following code, a Query sorts objects in the `fruits` array by the `count` field in descending order.
+If objects in an array need to be processed (sorted, filtered, etc.), you can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'). For example, in the following code, a Query sorts objects in the `fruits` array by the `count` field in descending order.
 
 ---
 ##### jQuery

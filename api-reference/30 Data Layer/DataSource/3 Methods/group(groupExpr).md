@@ -87,4 +87,4 @@ Call the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load()
 ---
 
 #####See Also#####
-- [Grouping](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Grouping')
+- [Grouping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Grouping')

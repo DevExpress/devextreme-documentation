@@ -120,7 +120,7 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
 
 ---
 
-If the entire dataset is on the client (stored in a [local array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') or loaded using the **CustomStore** in [raw mode](/Documentation/Guide/Data_Layer/Data_Source_Examples/#Custom_Sources/Load_Data_in_Raw_Mode)), data items are *only rendered* page by page.
+If the entire dataset is on the client (stored in a [local array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') or loaded using the **CustomStore** in [raw mode](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources/1%20Load%20Data%20in%20Raw%20Mode.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources/Load_Data_in_Raw_Mode')), data items are *only rendered* page by page.
 
 If the dataset is on the server, and the server supports paging, the data items are *also loaded* by pages.
 

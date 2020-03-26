@@ -21,4 +21,4 @@ This option accepts one of the following values:
 
 Each store has options that are detailed in the links above. Declare these options in the **store** object.
 
-You can implement custom data access logic as described in the [Custom Sources](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/3%20Custom%20Sources '/Documentation/Guide/Data_Layer/Data_Source_Examples/#Custom_Sources') topic if these stores are not suitable.
+You can implement custom data access logic as described in the [Custom Sources](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources') topic if these stores are not suitable.

@@ -4,7 +4,6 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the file system item is a directory.
 
 ---
-<!-- Description goes here -->

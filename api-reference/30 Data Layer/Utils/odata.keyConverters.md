@@ -69,4 +69,4 @@ The following code shows how to register a custom type converter:
 ---
 
 #####See Also#####
-- [DataSource Examples - OData Key Types](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/2%20OData/1%20Key%20Types.md '/Documentation/Guide/Data_Layer/Data_Source_Examples/#OData/Key_Types')
+- [DataSource Examples - OData Key Types](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData/1%20Key%20Types.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData/Key_Types')

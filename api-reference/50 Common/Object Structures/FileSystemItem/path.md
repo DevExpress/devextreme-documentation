@@ -4,7 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The file system item's path.
 
 ---
-<!-- Description goes here -->

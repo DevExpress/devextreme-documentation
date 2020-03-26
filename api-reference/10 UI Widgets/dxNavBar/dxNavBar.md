@@ -3,7 +3,6 @@ id: dxNavBar
 module: ui/nav_bar
 export: default
 inherits: dxTabs
-dep: dxTabs
 ---
 ---
 ##### shortDescription

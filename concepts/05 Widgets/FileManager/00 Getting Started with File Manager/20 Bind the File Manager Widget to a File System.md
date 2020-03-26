@@ -249,7 +249,5 @@ In the example below, the **FileManager** widget displays hierarchical data stor
 
 ---
 
-[note] [Register the JSZip library](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/08%20Register%203rd-Party%20Dependencies%20in%20Angular%20CLI%206+/01%20JSZip%20Registration.md 'Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies_in_Angular_CLI_6+/JSZip_Registration') to download several files at once.
-
 #####See Also#####
 [Bind to an Object File System](/concepts/05%20Widgets/FileManager/10%20Bind%20to%20File%20Systems/10%20Object%20File%20System.md '/Documentation/Guide/Widgets/FileManager/Bind_to_File_Systems/#Object_File_System')

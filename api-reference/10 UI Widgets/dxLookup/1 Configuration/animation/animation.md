@@ -2,6 +2,7 @@
 id: dxLookup.Options.animation
 type: Object
 default: undefined
+dep: dxLookup.Options.dropDownOptions
 ---
 ---
 ##### shortDescription

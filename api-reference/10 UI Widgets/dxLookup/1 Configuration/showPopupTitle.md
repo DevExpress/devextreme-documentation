@@ -2,6 +2,7 @@
 id: dxLookup.Options.showPopupTitle
 type: Boolean
 default: true, false (Material)
+dep: dxLookup.Options.dropDownOptions
 ---
 ---
 ##### shortDescription

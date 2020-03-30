@@ -4,10 +4,10 @@ The **Chart** is an interactive widget that visualizes data from a local or remo
 
 The **Chart** can visualize data from any source. Refer to the following topics for details on how to bind the **Chart** to your data source.
 
-- [Simple Array](/concepts/05%20Widgets/Chart/03%20Data%20Binding/05%20Simple%20Array/05%20Array%20Only.md '/Documentation/Guide/Widgets/Chart/Data_Binding/Simple_Array/Array_Only/')
-- [JSON Data](/concepts/05%20Widgets/Chart/03%20Data%20Binding/10%20JSON%20Data.md '/Documentation/Guide/Widgets/Chart/Data_Binding/JSON_Data/')
-- [OData Service](/concepts/05%20Widgets/Chart/03%20Data%20Binding/15%20OData%20Service.md '/Documentation/Guide/Widgets/Chart/Data_Binding/OData_Service/')
-- [Custom Sources](/concepts/05%20Widgets/Chart/03%20Data%20Binding/20%20Custom%20Sources.md '/Documentation/Guide/Widgets/Chart/Data_Binding/Custom_Sources/')
+- [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
+- [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
+- [OData Service](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/')
+- [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 
 The next step is to configure the most essential chart elements - series and axes.
 

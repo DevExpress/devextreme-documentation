@@ -39,7 +39,7 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
     <tr>
       <td>%</td>
       <td>
-            The percent sign. Divides the input value by 100. </br>    
+            The percent sign. Multiplies the input value by 100. </br>    
             If it is enclosed in single quotes ('%'), it only adds this sign to the input value.
       </td>
     </tr>

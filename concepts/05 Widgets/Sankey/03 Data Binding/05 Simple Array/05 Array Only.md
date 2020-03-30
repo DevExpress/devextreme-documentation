@@ -54,7 +54,7 @@ To bind the **Sankey** to an array, pass this array to the [dataSource](/api-ref
 
 ---
 
-You can create a [Query](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept') if objects in the array should be processed (sorted, filtered, and so on). For example, in the following code, a Query filters the `sankeyData` array to exclude objects whose `weight` is less than 3:
+You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept') if objects in the array should be processed (sorted, filtered, and so on). For example, in the following code, a Query filters the `sankeyData` array to exclude objects whose `weight` is less than 3:
 
 ---
 ##### jQuery
@@ -114,4 +114,4 @@ You can create a [Query](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%
 }
 
 #####See Also#####
-- [Update Data in the Sankey](/concepts/05%20Widgets/Sankey/03%20Data%20Binding/26%20Update%20Data '/Documentation/Guide/Widgets/Sankey/Data_Binding/Update_Data/')
+- [Update Data in the Sankey](/concepts/70%20Data%20Binding/03%20Update%20Data '/Documentation/Guide/Data_Binding/Update_Data/')

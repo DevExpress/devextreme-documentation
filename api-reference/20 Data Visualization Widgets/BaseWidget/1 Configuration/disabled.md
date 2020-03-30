@@ -6,6 +6,6 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Specifies whether the widget responds to the user interaction.
+Specifies whether the widget responds to user interaction.
 
 ---

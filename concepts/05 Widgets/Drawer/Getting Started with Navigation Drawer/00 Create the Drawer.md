@@ -3,7 +3,7 @@ Wrap the view in the **Drawer** and specify a [template](/api-reference/10%20UI%
 In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#minSize') option to make the **Drawer** partially visible in the closed state. 
 
 ---
-#####jQuery
+##### jQuery
 
     <!--tab: index.html-->
     <html>
@@ -12,6 +12,7 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
             <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.light.css">
+            <link rel="stylesheet" href="index.css">
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
@@ -33,8 +34,8 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
         });
     });
 
-    <!--tab: style.css-->
-    .dx-drawer-panel-content, .dx-overlay-content {
+    <!--tab: index.css-->
+    .dx-overlay-content {
         background-color: lightgray;
     }
     #view {
@@ -42,7 +43,7 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
         margin-top: 10px;
     }
 
-#####Angular
+##### Angular
 
     <!-- tab: app.component.html -->
     <dx-drawer
@@ -89,7 +90,7 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
     export class AppModule { }
 
     <!-- tab: app.component.css -->
-    ::ng-deep .dx-drawer-panel-content, ::ng-deep .dx-overlay-content {
+    ::ng-deep .dx-overlay-content {
         background-color: lightgray;
     }
     ::ng-deep #view {
@@ -97,28 +98,46 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
         margin-top: 10px;
     }
 
-##### ASP.NET MVC Controls
+##### Vue
 
-    <!-- tab: _Layout.cshtml -->
-    @(Html.DevExtreme().Drawer()
-        .ID("layout-drawer")
-        .Height(250)
-        .MinSize(37)
-        .Template(@<text><div style="width: 150px">Drawer content</div></text>)
-        .Content(@<text><div id=".drawer-view-content">View content</div></text>)
-    )
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxDrawer
+                :minSize="37"
+                :height="250"
+                template="list">
+                <template #list>
+                    <div style="width: 150px">Drawer content</div>
+                </template>
+                <div id="view">
+                    <div>View content</div>
+                </div>
+            </DxDrawer>
+        </div>
+    </template>
 
-    <!-- tab: Site.css -->
-    .dx-drawer-panel-content, .dx-overlay-content {
+    <script>
+    import DxDrawer from 'devextreme-vue/drawer';
+
+    export default {
+        components: {
+            DxDrawer
+        }
+    };
+    </script>
+
+    <style>
+    .dx-overlay-content {
         background-color: lightgray;
     }
-
-    .drawer-view-content {
+    #view {
         margin-left: 10px;
         margin-top: 10px;
     }
+    </style>
 
-#####React 
+##### React 
 
     <!-- tab: DxComponent.js -->
     import React from "react";
@@ -149,7 +168,7 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
     export default DxComponent;
 
     <!-- tab: DxComponent.css -->
-    .dx-drawer-panel-content, .dx-overlay-content {
+    .dx-overlay-content {
         background-color: lightgray;
     }
     #view {
@@ -172,6 +191,27 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
         }
     }
     export default App;
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: _Layout.cshtml -->
+    @(Html.DevExtreme().Drawer()
+        .ID("layout-drawer")
+        .Height(250)
+        .MinSize(37)
+        .Template(@<text><div style="width: 150px">Drawer content</div></text>)
+        .Content(@<text><div id=".drawer-view-content">View content</div></text>)
+    )
+
+    <!-- tab: Site.css -->
+    .dx-overlay-content {
+        background-color: lightgray;
+    }
+
+    .drawer-view-content {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
 
 ---
 

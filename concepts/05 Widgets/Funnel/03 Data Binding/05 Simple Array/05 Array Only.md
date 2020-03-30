@@ -50,7 +50,7 @@ To bind the **Funnel** to an array, pass this array to the [dataSource](/api-ref
 
 ---
 
-If objects in the array need to be processed (sorted, filtered, etc.), you can create a [Query](/concepts/30%20Data%20Layer/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Layer/Data_Layer/#Query_Concept'). For example, in the following code, a Query applies a filter to the `fruits` array that excludes objects with `count` less than 10.
+If objects in the array need to be processed (sorted, filtered, etc.), you can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'). For example, in the following code, a Query applies a filter to the `fruits` array that excludes objects with `count` less than 10.
 
 ---
 ##### jQuery
@@ -106,4 +106,4 @@ If objects in the array need to be processed (sorted, filtered, etc.), you can c
 ---
 
 #####See Also#####
-- [Update Data in the Funnel](/concepts/05%20Widgets/Funnel/03%20Data%20Binding/26%20Update%20Data '/Documentation/Guide/Widgets/Funnel/Data_Binding/Update_Data/')
+- [Update Data in the Funnel](/concepts/70%20Data%20Binding/03%20Update%20Data '/Documentation/Guide/Data_Binding/Update_Data/')

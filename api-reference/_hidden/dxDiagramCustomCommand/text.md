@@ -4,7 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the custom command's text and tooltip text.
 
 ---
-<!-- Description goes here -->

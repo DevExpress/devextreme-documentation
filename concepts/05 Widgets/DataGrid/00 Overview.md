@@ -4,10 +4,10 @@ The **DataGrid** is a widget that represents data from a local or remote source 
 
 It can visualize local and remote data. Refer to the following topics for details on binding the widget to your data source:
 
-- [Simple Array](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/10%20Simple%20Array/10%20Array%20Only.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Simple_Array/Array_Only/')
-- [JSON Data](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/15%20JSON%20Data.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/JSON_Data/')
-- [OData Service](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/20%20OData%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/OData_Service/')
-- [Custom Sources](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/25%20Custom%20Sources '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Custom_Sources/')
+- [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
+- [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
+- [OData Service](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/')
+- [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 
 The **DataGrid** automatically creates columns for all data source fields by default. See the following topics for details on additional column configuration:
 

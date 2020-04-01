@@ -4,7 +4,8 @@ $("<link>", {
  }).appendTo("head");
 
 $(function() {
-    DevExpress.ui.themes.current("material.blue.light");
+    const isDarkTheme = document.cookie.includes("theme=dark");
+    DevExpress.ui.themes.current(isDarkTheme ? "material.blue.dark" : "material.blue.light")
 
     DevExpress.config({
         floatingActionButtonConfig: {

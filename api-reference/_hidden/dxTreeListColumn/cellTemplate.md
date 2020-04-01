@@ -28,7 +28,7 @@ The data of the row to which the cell belongs.
 The cell's display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#calculateDisplayValue').
 
 ##### field(cellInfo.oldValue): any
-The cell's previous raw value.
+<!-- %field(cellInfo.oldValue)% -->
 
 ##### field(cellInfo.row): dxTreeListRowObject
 The cell's row.
@@ -67,3 +67,5 @@ A function called when this variable changes.
 - [Customize Cells Appearance](/concepts/05%20Widgets/TreeList/10%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/TreeList/Columns/Customize_Cells/#Customize_the_Appearance')
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')
 - [onCellPrepared](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onCellPrepared.md '{basewidgetpath}/Configuration/#onCellPrepared')
+
+<!-- import * from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->

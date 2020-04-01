@@ -29,7 +29,7 @@ The data of the row to which the cell belongs.
 The cell's display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/dxDataGridColumn/lookup '{basewidgetpath}/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '{basewidgetpath}/Configuration/columns/#calculateDisplayValue').
 
 ##### field(cellInfo.oldValue): any
-The cell's previous raw value.
+The cell's previous raw value. Defined only if [repaintChangesOnly](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is **true**.
 
 ##### field(cellInfo.row): dxDataGridRowObject
 The cell's row.

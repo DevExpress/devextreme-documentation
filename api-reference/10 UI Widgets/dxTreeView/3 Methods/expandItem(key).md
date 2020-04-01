@@ -6,13 +6,10 @@ id: dxTreeView.expandItem(key)
 Expands an item with a specific key.
 
 ##### return: Promise<void>
-<!-- Description goes here -->
+<!-- %return% -->
 
 ##### param(key): any
 The item's key.
-
-##### return: Promise<void>
-<!-- %return% -->
 
 ---
 

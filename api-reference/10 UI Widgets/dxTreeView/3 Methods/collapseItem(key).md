@@ -6,13 +6,10 @@ id: dxTreeView.collapseItem(key)
 Collapses an item with a specific key.
 
 ##### return: Promise<void>
-<!-- Description goes here -->
+<!-- %return% -->
 
 ##### param(key): any
 The item's key.
-
-##### return: Promise<void>
-<!-- %return% -->
 
 ---
 

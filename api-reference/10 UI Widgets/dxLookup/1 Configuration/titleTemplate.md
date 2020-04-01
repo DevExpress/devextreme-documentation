@@ -2,6 +2,7 @@
 id: dxLookup.Options.titleTemplate
 type: template
 default: 'title'
+dep: dxLookup.Options.dropDownOptions
 ---
 ---
 ##### shortDescription

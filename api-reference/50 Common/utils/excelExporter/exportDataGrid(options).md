@@ -197,9 +197,14 @@ You can call this method at any point in your application. In the example below,
 
 ---     
 
-[note]The following restrictions apply when usres export **DataGrid**:
-- [detail rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) are not exported
-- [group rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) are always exported expanded and the [isExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded) option is ignored.
+[note]
+
+The following restrictions apply when users export **DataGrid**:
+
+- [Detail rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) are not exported
+- [Group rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) are always exported expanded and the [isExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded) option is ignored.
+
+[/note]
 
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"

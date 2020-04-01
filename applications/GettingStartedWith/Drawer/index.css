@@ -1,14 +1,21 @@
 .dx-overlay-content {
     background-color: lightgray;
 }
+.dx-list-item-content,
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item .dx-icon,
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-hover .dx-icon {
+    color: black;
+}
 #container {
     height: 250px;
-    width: 350px; 
+    width: 350px;
+    color: black;
 }
 #button {
     margin-left: -5px;
 }
 #content {
+    color: black;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -24,4 +31,5 @@
 
 #drawer {
     border: 1px solid rgba(191, 191, 191, 0.15);
+    background-color: white;
 }

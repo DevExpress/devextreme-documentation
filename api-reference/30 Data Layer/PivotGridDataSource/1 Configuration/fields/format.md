@@ -162,13 +162,20 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 ---
 
-The following predefined **format**.[types](/Documentation/ApiReference/Common/Object_Structures/format/#type) are automatically converted to XLSX format string when exporting to Excel:
+Not all formats can be converted to the corresponding Excel format. Review the following list to see the restrictions of different formats:
 
-- Numeric Formats (except for *"largeNumber"* that is exported as the <a href="https://support.office.com/en-us/article/available-number-formats-in-excel-0afe8f52-97db-41f1-b972-4b46e9f1e8d2" target="_blank">General</a> format)
-- Currency Formats
-- Date-Time Formats (The *"quarter"* and *"quarterAndYear"* types will be exported as *"shortDate"*. The *"minute"* and *"millisecond"* types will be exported as *"longTime"*)
+- **Numeric**   
+Converted automatically, except for *"largeNumber"* that is exported as the <a href="https://support.office.com/en-us/article/available-number-formats-in-excel-0afe8f52-97db-41f1-b972-4b46e9f1e8d2" target="_blank">General</a> format
+- **Currency**  
+Converted automatically
+- **Date-Time**  
+Converted automatically, except for  the *"quarter"* and *"quarterAndYear"* types that are exported as *"shortDate"* and the *"minute"* and *"millisecond"* formats that are exported as *"longTime"*
+- **Function**  
+Cannot be converted
+- [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
+Cannot be converted
 
-Other [formats](/Documentation/ApiReference/Common/Object_Structures/format/) - *"function"* and [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String) are not converted to the Excel format. To export these formats, use the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback to export a formatted string instead of a raw cell value.
+To export unsupported formats, use the valueText parameter of the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback to export a formatted string.
 
 #####See Also#####
 - **fields[]**.[customizeText](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/customizeText.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText')

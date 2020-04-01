@@ -5,11 +5,11 @@ id: dxTreeView.scrollToItem(itemElement)
 ##### shortDescription
 Scrolls the content to an item found using its DOM node.
 
-##### param(itemElement): Node
-The item's DOM node.
-
 ##### return: Promise<void>
 <!-- %return% -->
+
+##### param(itemElement): Node
+The item's DOM node.
 
 ---
 

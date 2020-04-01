@@ -100,4 +100,4 @@ Specifies the navigation properties to be loaded with the OData entity. Availabl
 ---
 
 #####See Also#####
-- [OData - Associations](/concepts/30%20Data%20Layer/51%20Data%20Source%20Examples/2%20OData/4%20Associations.md '/Documentation/Guide/Data_Layer/Data_Source_Examples/#OData/Associations')
+- [OData - Associations](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData/4%20Associations.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData/Associations')

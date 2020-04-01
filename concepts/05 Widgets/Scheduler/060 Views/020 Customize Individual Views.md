@@ -52,7 +52,8 @@ The following code defines three views: the first is not customized, the second 
         [dataSource]="schedulerData"
         [currentDate]="currentDate"
         [views]="views"
-        [resources]="resources">
+        [resources]="resources"
+        timeCellTemplate="timeCellTemplate">
         <div *dxTemplate="let appointment of 'timeCellTemplate'">
             <i style="color: green">{{appointment.text}}</i>
         </div>
@@ -96,97 +97,6 @@ The following code defines three views: the first is not customized, the second 
         ],
         // ...
     })
-
-#####**AngularJS**
-
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-scheduler="{
-            dataSource: data,
-            currentDate: currentDate,
-            views: [
-                "month", 
-                { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' }, 
-                { type: "workWeek", groups: ["ownerId"] }
-            ],
-            resources: [{ fieldExpr: 'ownerId', dataSource: resources }]
-        }" dx-item-alias='item'>
-            <div data-options="dxTemplate: { name: 'timeCellTemplate' }">
-                <i style="color: green">{{item.text}}</i>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.data = [{
-                text: "Google AdWords Strategy",
-                ownerId: [2],
-                startDate: new Date(2016, 1, 1, 9, 0),
-                endDate: new Date(2016, 1, 1, 10, 30)
-            }, {
-                text: "New Brochures",
-                ownerId: [1],
-                startDate: new Date(2016, 1, 1, 11, 30),
-                endDate: new Date(2016, 1, 1, 14, 15)
-            }, 
-            // ...
-            ];
-            $scope.resources = [{
-                fieldExpr: "ownerId",
-                dataSource: [
-                    { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-                    { text: "John Heart", id: 2, color: "#56ca85" }
-                ]
-            }];
-            $scope.currentDate = new Date(2016, 1, 1);
-        });
-
-#####**Knockout**
-
-    <!--HTML-->
-    <div data-bind="dxScheduler: {
-        dataSource: data,
-        currentDate: currentDate,
-        views: [
-            "month", 
-            { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' }, 
-            { type: "workWeek", groups: ["ownerId"] }
-        ],
-        resources: [{ fieldExpr: 'ownerId', dataSource: resources }]
-    }">
-        <div data-options="dxTemplate: { name: 'timeCellTemplate' }">
-            <i style="color: green" data-bind="text: text"></i>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel= {
-        data: [{
-            text: "Google AdWords Strategy",
-            ownerId: [2],
-            startDate: new Date(2016, 4, 24, 9, 0),
-            endDate: new Date(2016, 4, 24, 10, 30)
-        }, {
-            text: "New Brochures",
-            ownerId: [1],
-            startDate: new Date(2016, 4, 24, 11, 30),
-            endDate: new Date(2016, 4, 24, 14, 15)
-        }, 
-        // ...
-        ],
-        resources: [{
-            fieldExpr: "ownerId",
-            dataSource: [
-                { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-                { text: "John Heart", id: 2, color: "#56ca85" }
-            ]
-        }],
-        currentDate: new Date(2016, 4, 24)
-    };
-    
-    ko.applyBindings(viewModel);
 
 ---
 

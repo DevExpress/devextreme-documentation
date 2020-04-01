@@ -50,7 +50,7 @@ For plain data, the key value depends on the [keyExpr](/api-reference/10%20UI%20
 Model data. Available only if you use Knockout.
 
 ##### field(e.oldValue): any
-The cell's previous raw value.
+<!-- %field(cellInfo.oldValue)% -->
 
 ##### field(e.row): dxTreeListRowObject
 The row [properties](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row '/Documentation/ApiReference/UI_Widgets/dxTreeList/Row/'). Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
@@ -161,3 +161,5 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 
 #####See Also#####
 - [Customize Cells](/concepts/05%20Widgets/TreeList/10%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/TreeList/Columns/Customize_Cells/#Customize_the_Appearance')
+
+<!-- import * from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->

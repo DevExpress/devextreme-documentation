@@ -5,6 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the shape type.
+Specifies the shape type. The built-in shape types are demonstrated in the [Shape Types](/Documentation/Guide/Widgets/Diagram/Shape_Types/) section.
 
 ---

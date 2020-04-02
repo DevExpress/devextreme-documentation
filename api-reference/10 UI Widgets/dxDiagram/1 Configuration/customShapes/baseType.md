@@ -5,7 +5,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the base shape type for the custom shape.
+Specifies the base shape type for the custom shape. The built-in shape types are demonstrated in the [Shape Types](/Documentation/Guide/Widgets/Diagram/Shape_Types/) section.
 
 ---
 When the **baseType** option is specified, the [backgroundImageUrl](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/backgroundImageUrl.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#backgroundImageUrl') option is not in effect.

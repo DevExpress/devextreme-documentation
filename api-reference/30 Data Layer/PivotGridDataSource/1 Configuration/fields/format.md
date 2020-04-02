@@ -162,7 +162,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 ---
 
-Not all formats can be converted to the corresponding Excel format. Review the following list to see the restrictions of different formats:
+Not all formats can be converted to the corresponding Excel format. Review the following list to see the restrictions:
 
 - **Numeric**   
 Converted automatically, except for *"largeNumber"* that is exported as the <a href="https://support.office.com/en-us/article/available-number-formats-in-excel-0afe8f52-97db-41f1-b972-4b46e9f1e8d2" target="_blank">General</a> format

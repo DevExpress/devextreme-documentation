@@ -3,13 +3,14 @@ id: dxTreeView.scrollToItem(itemElement)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Scrolls the content to an item found using its DOM node.
 
 ##### return: Promise<void>
-<!-- Description goes here -->
+<!-- %return% -->
 
 ##### param(itemElement): Node
-<!-- Description goes here -->
+The item's DOM node.
 
 ---
-<!-- Description goes here -->
+
+<!-- import * from 'api-reference\10 UI Widgets\dxTreeView\3 Methods\scrollToItem(itemData).md' -->

@@ -49,7 +49,7 @@ If a field providing keys is not specified in the [data source](/api-reference/1
 Model data. Available only if you use Knockout.
 
 ##### field(e.oldValue): any
-The cell's previous raw value.
+<!-- %field(cellInfo.oldValue)% -->
 
 ##### field(e.row): dxDataGridRowObject
 The row [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/').
@@ -234,3 +234,5 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 
 #####See Also#####
 - [Customize Cells](/concepts/05%20Widgets/DataGrid/15%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/DataGrid/Columns/Customize_Cells/#Customize_the_Appearance')
+
+<!-- import * from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->

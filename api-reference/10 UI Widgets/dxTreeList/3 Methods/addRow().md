@@ -21,9 +21,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
             var treeList = $("#treeListContainer").dxTreeList({
                 // ...
             }).dxTreeList("instance");
-
             var dataSource = treeList.getDataSource();
-
             dataSource.store().insert(data).then(function() {
                 dataSource.reload();
             })

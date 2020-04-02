@@ -14,7 +14,7 @@ The **Diagram** widget allows you to customize its UI elements with the followin
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
 }
 
----
+
 
       <!--JavaScript-->
       $(function() {
@@ -44,11 +44,9 @@ The **Diagram** widget allows you to customize its UI elements with the followin
                   toolbox: {
                         visibility: 'visible',
                         groups: ["general", { category: "flowchart", title: "Flowchart", expanded: true }]
-                  }
+                  },
                   viewToolbar: {
                         visible: true
                   },
             }).dxDiagram("instance");
       });
-
----

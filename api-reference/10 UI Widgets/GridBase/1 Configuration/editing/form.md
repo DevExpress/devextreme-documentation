@@ -258,7 +258,9 @@ Do not specify the following options in the **form** object:
 
 Also, the [colCount](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount') option defaults to 2, but it can be redefined.
 
-[note] In Angular and Vue, the nested component that configures the **form** option does not support event bindings and two-way property bindings.
+#include widgets-config-object-option-note {
+    optionName: "form"
+}
 
 If you need to customize an individual form item, use the [formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') object.
 

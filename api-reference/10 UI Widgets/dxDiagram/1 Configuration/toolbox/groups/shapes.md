@@ -5,6 +5,6 @@ type: Array<String> | Array<String>
 ---
 ---
 ##### shortDescription
-Lists the shapes in the group.
-
+Lists the shapes in the group. See the shape types' appearances in the [Shape Types](/Documentation/Guide/Widgets/Diagram/Shape_Types/) section.
 ---
+

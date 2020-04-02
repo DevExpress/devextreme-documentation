@@ -1,4 +1,4 @@
-The **Diagram** widget provides the following built-in shape types.
+The following built-in shape types are available in the **Diagram** widget:
 
 <table style="color: #86929d; font-size: 14px; text-align: center; width: 600px">
 <tr style="color: black; font-weight: bold; text-align: left">

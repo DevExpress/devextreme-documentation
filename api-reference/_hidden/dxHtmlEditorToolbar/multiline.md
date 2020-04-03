@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether items are arranged into multiple lines when their combined width exceeds the toolbar width.
+Specifies whether or not items are arranged into multiple lines when their combined width exceeds the toolbar width.
 
 ---
 #include common-demobutton with {

@@ -1,4 +1,4 @@
-The **Diagram** widget allows you to customize its UI elements with the following options.
+The **Diagram** widget allows you to customize its UI tools with the following options.
 
 - [contextMenu](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextMenu/')
 - [contextToolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextToolbox '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextToolbox/')
@@ -13,7 +13,6 @@ The **Diagram** widget allows you to customize its UI elements with the followin
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
 }
-
 
 
       <!--JavaScript-->

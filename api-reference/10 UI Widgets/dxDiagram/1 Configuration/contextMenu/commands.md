@@ -10,3 +10,23 @@ inheritsType: dxDiagramCustomCommand
 Lists commands in the context menu.
 
 ---
+The context menu can contain default and custom commands. Handle the [CustomCommand](/api-reference/10%20UI%20Widgets/dxDiagram/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#customCommand') event to respond to a custom command click.
+
+---
+#####jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        var diagram = $("#diagram").dxDiagram({
+            contextMenu: {
+                commands: ["cut","copy", "paste", {name: "sayHello", text: "Say Hello", icon: "blockquote"}]
+            }, 
+            onCustomCommand: function(e) {
+                if (e.name == "sayHello")
+                alert("Hello!)
+            },
+        }).dxDiagram("instance");
+    });
+
+
+---      

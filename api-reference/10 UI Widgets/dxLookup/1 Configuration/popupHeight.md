@@ -13,5 +13,3 @@ The popup element's height.
 
 ---
 In the Material theme, the default value is calculated so that the **Lookup** contains four items.
-
-#include uiwidgets-ref-height

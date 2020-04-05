@@ -10,3 +10,23 @@ inheritsType: dxDiagramCustomCommand
 Lists commands in the toolbar.
 
 ---
+The main toolbar can contain default and custom commands. Handle the [CustomCommand](/api-reference/10%20UI%20Widgets/dxDiagram/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#customCommand') event to respond to a custom command click.
+
+    <!--JavaScript-->
+    $(function() {
+        var diagram = $("#diagram").dxDiagram({
+            mainToolbar: {
+                visible: true,
+                commands: ["fontName", "fontSize", "bold", "italic", "underline", {name: "sayHello", text: "Say Hello", icon: "blockquote"}]
+            }, 
+            onCustomCommand: function(e) {
+                if (e.name == "sayHello")
+                alert("Hello!")
+            },
+        }).dxDiagram("instance");
+    });
+
+#include common-ref-enum with {
+    enum: "`DiagramCommand`",
+    values: "`Separator`, `ExportSvg`, `ExportPng`, `ExportJpg`, `Undo`, `Redo`, `Cut`, `Copy`, `Paste`, `SelectAll`, `Delete`, `FontName`, `FontSize`, `Bold`, `Italic`, `Underline`, `FontColor`, `LineColor`, `FillColor`, `TextAlignLeft`, `TextAlignCenter`, `TextAlignRight`, `Lock`, `Unlock`, `SendToBack`, `BringToFront`, `InsertShapeImage`, `EditShapeImage`, `DeleteShapeImage`, `ConnectorLineType`, `ConnectorLineStart`, `ConnectorLineEnd`, `LayoutTreeTopToBottom`, `LayoutTreeBottomToTop`, `LayoutTreeLeftToRight`, `LayoutTreeRightToLeft`, `LayoutLayeredTopToBottom`, `LayoutLayeredBottomToTop`, `LayoutLayeredLeftToRight`, `LayoutLayeredRightToLeft`, `FullScreen`, `ZoomLevel`, `ShowGrid`, `SnapToGrid`, `GridSize`, `Units`, `PageSize`, `PageOrientation`, `PageColor`"
+}

@@ -9,3 +9,7 @@ default: 'auto'
 Specifies the panel's visibility.
 
 ---
+#include common-ref-enum with {
+    enum: "`DiagramPanelVisibility`",
+    values: "`Auto`, `Visible`, `Collapsed`, `Disabled`"
+}

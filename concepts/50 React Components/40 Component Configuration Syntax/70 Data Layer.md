@@ -35,4 +35,38 @@
         }
     }
 
+If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a> and need to define the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component inside a function, wrap its definition in the <a href="https://reactjs.org/docs/hooks-reference.html#usememo" target="_blank">useMemo</a> hook to preserve the object's reference between state changes. 
+
+    <!-- tab: App.js -->
+    import React, { useMemo, useEffect } from 'react';
+    import DataSource from 'devextreme/data/data_source';
+    import List from 'devextreme-react/list';
+
+    const items = [
+        { text: '123' },
+        { text: '234' },
+        { text: '567' }
+    ];
+
+    export default function Example() {
+        const dataSource = useMemo(() => {
+            return new DataSource({
+                store: {
+                    type: "array",
+                    data: items
+                },
+                sort: { getter: "text", desc: true }
+            });
+        }, []);
+        useEffect(() => {
+            // A DataSource instance created outside a widget should be disposed of manually
+            return () => { dataSource.dispose(); }
+        }, []);
+        return (
+            <List dataSource={dataSource} />
+        ); 
+    }
+
+The <a href="https://reactjs.org/docs/hooks-effect.html">useEffect</a> hook is used to dispose a DataSource instance after a component is removed from the DOM tree.
+
 [note] When a data layer component's properties are modified, the bound UI component is not re-rendered.

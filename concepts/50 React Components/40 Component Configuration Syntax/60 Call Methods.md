@@ -60,3 +60,25 @@ Alternatively, you can save the widget instance in a component property once the
             );
         }
     }
+
+[note] This approach is not compatible with <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>.
+
+If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>, implement the <a href="https://reactjs.org/docs/hooks-reference.html#useref" target="_blank">useRef</a> hook and attach it to the target component via the `ref` attribute:
+
+    <!-- tab: App.js -->
+    import Button from 'devextreme-react/button';
+    import TextBox from 'devextreme-react/text-box';
+    import React, { useRef } from 'react';
+
+    export default function App() {      
+        const textBox = useRef(null);
+        const focusTextBox = () => {
+            textBox.current.instance.focus();
+        };
+        return (
+            <div>
+                <TextBox ref={textBoxRef} />
+                <Button text="Focus TextBox" onClick={focusTextBox} />
+            </div>
+        );       
+    }

@@ -13,5 +13,3 @@ The popup element's width.
 
 ---
 In the Material theme, the default value equals the **Lookup** width plus paddings and borders.
-
-#include uiwidgets-ref-width

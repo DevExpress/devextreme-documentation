@@ -4,7 +4,6 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a directory has subdirectories.
 
 ---
-<!-- Description goes here -->

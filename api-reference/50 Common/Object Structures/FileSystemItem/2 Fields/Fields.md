@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Fields that provide information about a file system item.
 
 ---

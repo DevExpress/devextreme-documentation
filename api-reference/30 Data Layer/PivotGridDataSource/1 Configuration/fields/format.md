@@ -162,10 +162,10 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 ---
 
-Several restrictions apply to exporting formats. Not all of them have the matching Excel formats:
+When being [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/), the specified format is converted to an Excel format as follows:
 
 - **Numeric**   
-Exported as the *"Number"* format, except for *"largeNumber"* that is exported as the <a href="https://support.office.com/en-us/article/available-number-formats-in-excel-0afe8f52-97db-41f1-b972-4b46e9f1e8d2" target="_blank">General</a> format
+Converted to the *"Number"* format, except for *"largeNumber"*, which is exported without formatting.
 - **Currency**  
 Exported as the *"Currency"* format
 - **Date-Time**  
@@ -175,7 +175,7 @@ Cannot be converted, the cell value is exported without formatting
 - [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
 Cannot be converted, the cell value is exported without formatting 
 
-To export unsupported formats, use the *"valueText"* parameter of the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback to export a formatted string as follows:
+To convert unsupported formats, return the formatted string from the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback as follows:
 
 ---
 ##### jQuery
@@ -186,7 +186,7 @@ To export unsupported formats, use the *"valueText"* parameter of the [customize
             // ...
             fields: [{
                 // ...
-                customizeText: function(e){
+                customizeText: (e) => {
                     return e.valueText;
                 },
                 dataType: "number",
@@ -217,6 +217,7 @@ To export unsupported formats, use the *"valueText"* parameter of the [customize
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 
     @Component({
         selector: 'app-root',
@@ -226,10 +227,10 @@ To export unsupported formats, use the *"valueText"* parameter of the [customize
     export class AppComponent {
         pivotGridDataSource: PivotGridDataSource;
         constructor() {
-            this.pivotGridDataSource = new PivotGridDataSource {
+            this.pivotGridDataSource = new PivotGridDataSource({
                 fields: [{
                     // ...
-                    customizeText: function(e){
+                    customizeText: (e) => {
                         return e.valueText;
                     },
                     dataType: "number",
@@ -239,7 +240,7 @@ To export unsupported formats, use the *"valueText"* parameter of the [customize
                 }, {
                     // ...
                 }] 
-            }
+            });
         }
 
     <!-- tab: app.module.ts -->
@@ -247,8 +248,7 @@ To export unsupported formats, use the *"valueText"* parameter of the [customize
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import DxPivotGridModule from 'devextreme-angular';
-    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+    import { DxPivotGridModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -288,7 +288,7 @@ To export unsupported formats, use the *"valueText"* parameter of the [customize
         // ...
         fields: [{
             // ...
-            customizeText: function(e){
+            customizeText: (e) => {
                 return e.valueText;
             },
             dataType: "number",
@@ -326,10 +326,10 @@ To export unsupported formats, use the *"valueText"* parameter of the [customize
     } from 'devextreme-react/pivot-grid';
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 
-    const dataSource = new PivotGridDataSource({
+    const pivotGridDataSource = new PivotGridDataSource({
         fields: [{
             // ...
-            customizeText: function(e){
+            customizeText: (e) => {
                 return e.valueText;
             },
             dataType: "number",

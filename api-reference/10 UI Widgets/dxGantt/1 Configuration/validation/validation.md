@@ -4,7 +4,22 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures validation options.
 
 ---
-<!-- Description goes here -->
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            validation: {
+                autoUpdateParentTasks: true,
+                enableDependencyValidation: true
+            },
+            // ...
+        });
+    });
+
+---

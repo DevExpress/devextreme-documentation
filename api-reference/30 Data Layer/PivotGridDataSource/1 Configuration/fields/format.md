@@ -167,13 +167,13 @@ When being [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxPivotGri
 - **Numeric**   
 Converted to the *"Number"* format, except for *"largeNumber"*, which is exported without formatting.
 - **Currency**  
-Exported as the *"Currency"* format
+Converted the *"Currency"* format.
 - **Date-Time**  
-Exported as the *"Date"* or *"Time"* formats depending on the cell value, except for  the *"quarter"* and *"quarterAndYear"* types that are exported as *"shortDate"* and the *"minute"* and *"millisecond"* formats that are exported as *"longTime"*
+Converted to the *"Date"* or *"Time"* formats depending on the cell value, except for the *"quarter"* and *"quarterAndYear"* types that are exported as *"short date"* and the *"minute"* and *"millisecond"* formats that are exported as *"long time"*.
 - **Function**  
-Cannot be converted, the cell value is exported without formatting 
+Cannot be converted, the cell value is exported without formatting.
 - [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
-Cannot be converted, the cell value is exported without formatting 
+Cannot be converted, the cell value is exported without formatting. 
 
 To convert unsupported formats, return the formatted string from the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback as follows:
 
@@ -242,6 +242,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
                 }] 
             });
         }
+    }
 
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
@@ -281,7 +282,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
 
     import DxPivotGrid, {
         DxExport
-    } from 'devextreme-vue/{widget-name}';
+    } from 'devextreme-vue/pivot-grid';
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 
     const pivotGridDataSource = new PivotGridDataSource({

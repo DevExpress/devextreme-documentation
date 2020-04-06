@@ -38,6 +38,23 @@ The Diagram widget is a jQuery DevExtreme widget, and thus requires common DevEx
         <script src="~/Scripts/jquery-3.4.1.min.js"></script>
         @* DevExtreme common scripts *@
         <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
+
+You should also add the [canvg](https://github.com/canvg/canvg) library to your page to allow export to image formats in Internet Explorer.
+
+- **npm**
+
+    Install canvg (`npm i canvg --save`) and add it to your web page.
+
+            <!--HTML-->
+            <script type="text/javascript" src="node_modules/canvg/lib/umd.js"></script>
+
+- **CDN**
+
+    Add the canvg script file to your page.
+
+            <!--HTML-->
+            <script type="text/javascript" src="https://unpkg.com/canvg@3.0.4/lib/umd.js"></script>
+
         
 [/note]
 

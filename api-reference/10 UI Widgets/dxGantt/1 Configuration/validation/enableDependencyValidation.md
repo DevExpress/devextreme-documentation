@@ -48,8 +48,8 @@ The **Gantt** allows you to validate relationships between tasks when they are e
                <br/>
                The control displays a popup window and suggests the following actions: <br/>
                <ul>    
-                  <li>Decline the change.</li>
-                  <li>Remove the dependency.</li>
+                  <li>Cancel the operation.</li>
+                  <li>Delete the dependency.</li>
                </ul>
             </td>
          </tr>
@@ -66,9 +66,9 @@ The **Gantt** allows you to validate relationships between tasks when they are e
             </td>
             <td>The control displays a popup window and suggests the following actions: <br/>
                <ul>    
-                  <li>Decline the change.</li>
-                  <li>Remove the dependency.</li>
-                  <li>Apply the change. It creates a gap between tasks. Note that you can move tasks forward and backward within this gap while it meets the dependency rules.
+                  <li>Cancel the operation.</li>
+                  <li>Delete the dependency.</li>
+                  <li>Move the task and keep the dependency. It creates a gap between tasks. Note that you can move tasks forward and backward within this gap while it meets the dependency rules.
                   </li>
                </ul>
             </td>

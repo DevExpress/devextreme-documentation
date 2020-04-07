@@ -11,3 +11,21 @@ Specifies the name of a data source field or an expression that provides the sha
 The current node's data object.
 
 ---
+The built-in shape types are shown in the [Shape Types](/concepts/05%20Widgets/Diagram/40%20Shape%20Types.md '/Documentation/Guide/Widgets/Diagram/Shape_Types/') section.
+
+    <!--JavaScript-->
+    $(function() {
+        $("#diagram").dxDiagram({
+            nodes: {
+                typeExpr: itemTypeExpr,
+                ...
+            },
+        });
+
+        function itemTypeExpr(obj, value) {
+            if(value)
+                obj.type = (value === "rectangle") ? undefined : "group";
+            else
+                return obj.type === "group" ? "ellipse" : "rectangle";
+        }
+    });

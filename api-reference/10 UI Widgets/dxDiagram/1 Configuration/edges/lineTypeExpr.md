@@ -11,3 +11,6 @@ Specifies the name of a data source field or an expression that provides an edge
 The current edge's data object.
 
 ---
+The specified field or expression should return `orthogonal` or `straight`.
+
+![Diagram - Line Types](/images/diagram/line-type.png)

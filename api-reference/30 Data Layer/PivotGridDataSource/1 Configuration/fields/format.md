@@ -178,14 +178,112 @@ Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"min
 Cannot be converted automatically. Assign this function to the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) option instead of the **format** option.  
 
 - [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
-Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback as follows:
+Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback as follows:    
 
----
-##### jQuery
+    ---
+    ##### jQuery
 
-    <!-- tab: index.js -->
-    $(function() {
-        var pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
+        <!-- tab: index.js -->
+        $(function() {
+            var pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
+                // ...
+                fields: [{
+                    // ...
+                    customizeText: (e) => {
+                        return e.valueText;
+                    },
+                    dataType: "number",
+                    format: "0.##"
+                }, {
+                    // ...
+                }]
+            });
+            $("#pivotGrid").dxPivotGrid({
+                // ...
+                export: {
+                    enabled: true
+                },
+                dataSource: pivotGridDataSource
+            });
+        });
+
+    ##### Angular
+
+        <!-- tab: app.component.html -->
+        <dx-pivot-grid ... 
+            [dataSource]="pivotGridDataSource">
+            <dxo-export [enabled]="true"></dxo-export>
+        </dx-pivot-grid>
+
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';
+        import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+        export class AppComponent {
+            pivotGridDataSource: PivotGridDataSource;
+            constructor() {
+                this.pivotGridDataSource = new PivotGridDataSource({
+                    fields: [{
+                        // ...
+                        customizeText: (e) => {
+                            return e.valueText;
+                        },
+                        dataType: "number",
+                        format: "0.##"
+                    }, {
+                        // ...
+                    }] 
+                });
+            }
+        }
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxPivotGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxPivotGridModule
+            ],
+            providers: [],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxPivotGrid ...
+                :data-source="PivotGridDataSource">
+                <DxExport
+                    :enabled="true"
+                />
+            </DxPivotGrid>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxPivotGrid, {
+            DxExport
+        } from 'devextreme-vue/pivot-grid';
+        import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+        const pivotGridDataSource = new PivotGridDataSource({
             // ...
             fields: [{
                 // ...
@@ -199,157 +297,58 @@ Cannot be converted, the cell value is exported without formatting. To export th
             }]
         });
 
-        $("#pivotGrid").dxPivotGrid({
-            // ...
-            export: {
-                enabled: true
+        export default {
+            components: {
+                DxPivotGrid,
+                DxExport
             },
-            dataSource: pivotGridDataSource
-        });
-    });
-
-##### Angular
-
-    <!-- tab: app.component.html -->
-    <dx-pivot-grid ... 
-        [dataSource]="pivotGridDataSource">
-        <dxo-export [enabled]="true"></dxo-export>
-    </dx-pivot-grid>
-
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        pivotGridDataSource: PivotGridDataSource;
-        constructor() {
-            this.pivotGridDataSource = new PivotGridDataSource({
-                fields: [{
-                    // ...
-                    customizeText: (e) => {
-                        return e.valueText;
-                    },
-                    dataType: "number",
-                    format: "0.##"
-                }, {
-                    // ...
-                }] 
-            });
-        }
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxPivotGridModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxPivotGridModule
-        ],
-        providers: [],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxPivotGrid ...
-            :data-source="PivotGridDataSource">
-            <DxExport
-                :enabled="true"
-            />
-        </DxPivotGrid>
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DxPivotGrid, {
-        DxExport
-    } from 'devextreme-vue/pivot-grid';
-    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
-
-    const pivotGridDataSource = new PivotGridDataSource({
-        // ...
-        fields: [{
-            // ...
-            customizeText: (e) => {
-                return e.valueText;
-            },
-            dataType: "number",
-            format: "0.##"
-        }, {
-            // ...
-        }]
-    });
-
-    export default {
-        components: {
-            DxPivotGrid,
-            DxExport
-        },
-        data() {
-            return {
-                pivotGridDataSource
+            data() {
+                return {
+                    pivotGridDataSource
+                }
             }
         }
-    }
-    </script>
+        </script>
 
-##### React
+    ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+        <!-- tab: App.js -->
+        import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
 
-    import PivotGrid, {
-        Export
-    } from 'devextreme-react/pivot-grid';
-    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+        import PivotGrid, {
+            Export
+        } from 'devextreme-react/pivot-grid';
+        import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 
-    const pivotGridDataSource = new PivotGridDataSource({
-        fields: [{
-            // ...
-            customizeText: (e) => {
-                return e.valueText;
-            },
-            dataType: "number",
-            format: "0.##"
-        }, {
-            // ...
-        }] 
-    });
+        const pivotGridDataSource = new PivotGridDataSource({
+            fields: [{
+                // ...
+                customizeText: (e) => {
+                    return e.valueText;
+                },
+                dataType: "number",
+                format: "0.##"
+            }, {
+                // ...
+            }] 
+        });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid ...
-                    dataSource={pivotGridDataSource}>
-                    <Export enabled={true} />
-                </PivotGrid>
-            );
-        }   
-    }
-    export default App;
-
----
+        class App extends React.Component {
+            render() {
+                return (
+                    <PivotGrid ...
+                        dataSource={pivotGridDataSource}>
+                        <Export enabled={true} />
+                    </PivotGrid>
+                );
+            }   
+        }
+        export default App;
+        
+    ---
 
 #####See Also#####
 - **fields[]**.[customizeText](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/customizeText.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText')

@@ -165,13 +165,18 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 When being [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/), the specified format is converted to an Excel format as follows:
 
 - **Numeric**   
-Converted to the *"Number"* format, except for *"largeNumber"*, which is exported without formatting.
+Converted to the Number format, except for *"largeNumber"*, which is exported without formatting.
+
 - **Currency**  
-Converted the *"Currency"* format.
+Converted to the Currency format.
+
 - **Date-Time**  
-Converted to the *"Date"* or *"Time"* formats depending on the cell value, except for the *"quarter"* and *"quarterAndYear"* types that are exported as *"short date"* and the *"minute"* and *"millisecond"* formats that are exported as *"long time"*.
+Converted to the Date or Time format, depending on the cell value.        
+Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"minute"* and *"millisecond"* are exported as Long Time.
+
 - **Function**  
-Cannot be converted, the cell value is exported without formatting. Return the function from the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback to apply formatting to the **DataGrid** and the exported Excel document.  
+Cannot be converted automatically. Assign this function to the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) option instead of the **format** option.  
+
 - [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
 Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback as follows:
 

@@ -11,3 +11,8 @@ Specifies the name of a data source field or an expression that provides a paren
 The current node's data object.
 
 ---
+Specify this option if your source data has a [linear structure](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array).
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesArrayPlainStructure/"
+}

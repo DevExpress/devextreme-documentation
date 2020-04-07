@@ -11,3 +11,6 @@ Specifies the name of a data source field or an expression whose values indicate
 The current edge's data object.
 
 ---
+A locked item can not be moved, changed, or delete. Users can use the [context menu](/Documentation/Guide/Widgets/Diagram/Diagram_Tools/) to lock and unlock an item.
+
+The specified field or expression must return `true` or `false` value.

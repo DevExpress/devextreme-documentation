@@ -11,3 +11,31 @@ Specifies the name of a data source field or an expression that provides an edge
 The current edge's data object.
 
 ---
+The specified field or expression must return `none`, `arrow`, `filledTriangle`, or `outlinedTriangle` value.
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#diagram").dxDiagram({
+            nodes: {
+                dataSource: new DevExpress.data.ArrayStore({
+                    key: "this",
+                    data: orgItems
+                }),
+                textExpr: "name",
+            },
+            edges: {
+                dataSource: new DevExpress.data.ArrayStore({
+                    key: "this",
+                    data: orgLinks
+                }),
+                fromLineEndExpr: linkFromLineEndExpr,
+                toLineEndExpr: linkToLineEndExpr
+            },
+        });
+        function linkFromLineEndExpr(obj) {
+            return "none";
+        }
+        function linkToLineEndExpr(obj) {
+            return "none";
+        }
+    });

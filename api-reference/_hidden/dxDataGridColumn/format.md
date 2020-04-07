@@ -4,13 +4,17 @@ When being [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxDataGrid
 
 - **Numeric**   
 Converted to the Number format, except for *"largeNumber"*, which is exported without formatting.
+
 - **Currency**  
 Converted to the Currency format.
+
 - **Date-Time**  
-Converted to the Date or Time formats depending on the cell value
-Exceptions: the *"quarter"* and *"quarterAndYear"* types are exported as Short date and the *"minute"* and *"millisecond"* formats that are exported as Long time.
+Converted to the Date or Time format, depending on the cell value.
+Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short date; *"minute"* and *"millisecond"* formats that are exported as Long time.
+
 - **Function**  
 Cannot be converted automatically. Assign this function to the [customizeText](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText) option instead of the **format** option.   
+
 - [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
 Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText) callback as follows:
 

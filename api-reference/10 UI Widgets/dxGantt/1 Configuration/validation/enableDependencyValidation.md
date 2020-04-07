@@ -22,7 +22,7 @@ The **Gantt** allows you to validate relationships between tasks when they are e
       <tbody>
          <tr>
             <td>Move a predecessor task (Task 1) to the left or right.</td>
-            <td><b>Finish to Start (FS):</b><br/>
+            <td style="text-align:center"><b>Finish to Start (FS):</b><br/>
                <img src="/Content/images/doc/20_1/Gantt/fs-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
                <b>Start to Start (SS):</b><br/>
                <img src="/Content/images/doc/20_1/Gantt/ss-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
@@ -33,9 +33,10 @@ The **Gantt** allows you to validate relationships between tasks when they are e
             </td>
             <td>The widget moves a successor task (Task 2) forward or backward to the same time interval.</td>
          </tr>
+         <tr></tr>
          <tr>
             <td>Move a successor task (Task 2) to the left.</td>
-            <td><b>Finish to Start (FS):</b><br/>
+            <td style="text-align:center"><b>Finish to Start (FS):</b><br/>
                <img src="/Content/images/doc/20_1/Gantt/fs-task2-left-shift.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
                <b>Start to Start (SS):</b><br/>
                <img src="/Content/images/doc/20_1/Gantt/ss-task2-left-shift.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
@@ -55,7 +56,7 @@ The **Gantt** allows you to validate relationships between tasks when they are e
          </tr>
          <tr>
             <td>Move a successor task (Task 2) to the right.</td>
-            <td><b>Finish to Start (FS):</b><br/>
+            <td style="text-align:center"><b>Finish to Start (FS):</b><br/>
                <img src="/Content/images/doc/20_1/Gantt/fs-task2-right-shift.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
                <b>Start to Start (SS):</b><br/>
                <img src="/Content/images/doc/20_1/Gantt/ss-task2-right-shift.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>

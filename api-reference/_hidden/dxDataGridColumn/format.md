@@ -10,7 +10,7 @@ Converted to the Currency format.
 
 - **Date-Time**  
 Converted to the Date or Time format, depending on the cell value.
-Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short date; *"minute"* and *"millisecond"* formats that are exported as Long time.
+Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"minute"* and *"millisecond"* are exported as Long Time.
 
 - **Function**  
 Cannot be converted automatically. Assign this function to the [customizeText](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText) option instead of the **format** option.   

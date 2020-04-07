@@ -10,12 +10,12 @@ Enables [task dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configu
 ---
 The **Gantt** allows you to validate relationships between tasks when they are edited.
 
-<div class="simple-table">
+<div class="simple-table normal-font-style">
    <table>
       <thead>
          <tr>
             <th>User Action</th>
-            <th>Dependency Type</th>
+            <th style="width:230px">Dependency Type</th>
             <th>Gantt's Reaction</th>
          </tr>
       </thead>

@@ -3,7 +3,8 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#dataGridContainer").dxDataGrid({
             // ...
             columns: [
@@ -18,16 +19,25 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column dataField="City"    [sortIndex]="1" sortOrder="asc"></dxi-column>
-        <dxi-column dataField="Country" [sortIndex]="0" sortOrder="asc"></dxi-column>
+        <dxi-column
+            dataField="City"
+            [sortIndex]="1"
+            sortOrder="asc">
+        </dxi-column>
+        <dxi-column
+            dataField="Country"
+            [sortIndex]="0"
+            sortOrder="asc">
+        </dxi-column>
     </dx-data-grid>
 
     <!--TypeScript-->
     import { DxDataGridModule } from "devextreme-angular";
-    // ...
+
     export class AppComponent {
         // ...
     }
+
     @NgModule({
         imports: [
             // ...
@@ -103,32 +113,39 @@ Change the **sortOrder** and **sortIndex** options using the [columnOption](/api
 ---
 ##### jQuery
 
-    <!--JavaScript-->var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
+    <!--JavaScript-->
+    var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
     dataGrid.columnOption("Country", {
         sortOrder: "desc",
         sortIndex: 2
     });
 
 ##### Angular
+    <!--HTML-->
+    <dx-data-grid ... >
+        <dxi-column
+            dataField="Country"
+            [(sortIndex)]="sortIndex"
+            [(sortOrder)]="sortOrder">
+        </dxi-column>
+    </dx-data-grid>
 
     <!--TypeScript-->
-    import { ..., ViewChild } from "@angular/core";
-    import { DxDataGridModule, DxDataGridComponent } from "devextreme-angular";
-    // ...
+    import { DxDataGridModule } from "devextreme-angular";
+    
     export class AppComponent {
-        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        sortByCountries () {
-            this.dataGrid.instance.columnOption("Country", {
-                sortOrder: "desc",
-                sortIndex: 2
-            });
+        sortIndex: number = 0;
+        sortOrder: string = "asc";
+
+        sortByCountries(index: number, order: string) {
+            this.sortIndex = index;
+            this.sortOrder = order;
         }
     }
+
     @NgModule({
         imports: [
-            // ...
+            //...
             DxDataGridModule
         ],
         // ...
@@ -138,7 +155,12 @@ Change the **sortOrder** and **sortIndex** options using the [columnOption](/api
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid :ref="dataGridRefKey">
+        <DxDataGrid ...>
+            <DxColumn
+                data-field="Country"
+                :sort-index.sync="sortIndex"
+                :sort-order.sync="sortOrder"
+            />
         </DxDataGrid>
     </template>
 
@@ -146,30 +168,23 @@ Change the **sortOrder** and **sortIndex** options using the [columnOption](/api
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDataGrid } from 'devextreme-vue/data-grid';
-
-    const dataGridRefKey = "my-data-grid";
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
-            DxDataGrid
+            DxDataGrid,
+            DxColumn
         },
         data() {
             return {
-                dataGridRefKey
-            };
-        },
-        methods: {
-            sortByCountries() {
-                this.dataGrid.columnOption('Country', {
-                    sortOrder: 'desc',
-                    sortIndex: 2
-                });
+                sortIndex: 0,
+                sortOrder: "asc"
             }
         },
-        computed: {
-            dataGrid() {
-                return this.$refs[dataGridRefKey].instance;
+        methods: {
+            sortByCountries(index, order) {
+                this.sortIndex = index;
+                this.sortOrder = order;
             }
         }
     }
@@ -183,29 +198,33 @@ Change the **sortOrder** and **sortIndex** options using the [columnOption](/api
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DataGrid } from 'devextreme-react/data-grid';
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
         constructor(props) {
             super(props);
-            this.dataGridRef = React.createRef();
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance;
+            this.state = {
+                sortIndex: 0,
+                sortOrder: "asc"
+            };
+            this.sortByCountries = this.sortByCountries.bind(this);
         }
 
         render() {
             return (
-                <DataGrid ref={this.dataGridRef} ...>
+                <DataGrid ...>
+                    <Column
+                        dataField="Country"
+                        sortIndex={this.state.sortIndex}
+                        sortOrder={this.state.sortOrder} />
                 </DataGrid>
             );
         }
 
-        sortByCountries() {
-            this.dataGrid.columnOption('Country', {
-                sortOrder: 'desc',
-                sortIndex: 2
+        sortByCountries(index, order) {
+            this.setState({
+                sortIndex: index,
+                sortOrder: order
             });
         }
     }

@@ -3,27 +3,41 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
 ---
 ##### jQuery
 
-    <!--JavaScript-->var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
+    <!--JavaScript-->
+    var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
     dataGrid.columnOption("Name", "sortIndex", undefined);
     dataGrid.clearSorting();
 
 ##### Angular
 
+    <!--HTML-->
+    <dx-data-grid ... >
+        <dxi-column
+            dataField="Name"
+            [(sortIndex)]="sortIndex">
+        </dxi-column>
+    </dx-data-grid>
+
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";
     import { DxDataGridModule, DxDataGridComponent } from "devextreme-angular";
-    // ...
+
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        clearSortingByNames () {
-            this.dataGrid.instance.columnOption("Name", "sortIndex", undefined);
+
+        sortIndex: number = 0;
+
+        clearColumnSorting() {
+            this.sortIndex = undefined;
         }
-        clearAllSorting () {
+
+        clearAllSorting() {
             this.dataGrid.instance.clearSorting();
         }
     }
+    
     @NgModule({
         imports: [
             // ...
@@ -37,6 +51,10 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid :ref="dataGridRefKey">
+            <DxColumn
+                data-field="Name"
+                :sort-index.sync="sortIndex"
+            />
         </DxDataGrid>
     </template>
 
@@ -44,7 +62,7 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDataGrid } from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
     const dataGridRefKey = "my-data-grid";
 
@@ -54,12 +72,13 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         },
         data() {
             return {
-                dataGridRefKey
+                dataGridRefKey,
+                sortIndex: 0
             };
         },
         methods: {
-            clearSortingByNames() {
-                this.dataGrid.columnOption("Name", "sortIndex", undefined);
+            clearColumnSorting() {
+                this.sortIndex = undefined;
             },
             clearAllSorting() {
                 this.dataGrid.clearSorting();
@@ -81,12 +100,17 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DataGrid } from 'devextreme-react/data-grid';
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
         constructor(props) {
             super(props);
+            this.state = {
+                sortIndex: 0
+            };
             this.dataGridRef = React.createRef();
+            this.clearColumnSorting = this.clearColumnSorting.bind(this);
+            this.clearAllSorting = this.clearAllSorting.bind(this);
         }
 
         get dataGrid() {
@@ -96,12 +120,17 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         render() {
             return (
                 <DataGrid ref={this.dataGridRef} ...>
+                    <Column
+                        dataField="Name"
+                        sortIndex={this.state.sortIndex} />
                 </DataGrid>
             );
         }
 
-        clearSortingByNames() {
-            this.dataGrid.columnOption("Name", "sortIndex", undefined);
+        clearColumnSorting() {
+            this.setState({
+                sortIndex: undefined
+            });
         }
         
         clearAllSorting() {

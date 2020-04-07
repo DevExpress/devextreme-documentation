@@ -24,10 +24,11 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
 
     <!--TypeScript-->
     import { DxDataGridModule } from "devextreme-angular";
-    // ...
+
     export class AppComponent {
         // ...
     }
+
     @NgModule({
         imports: [
             // ...
@@ -41,7 +42,8 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid>
-            <!-- data-field provides values for the column, calculate-sort-value provides values to be used in sorting -->
+            <!-- data-field provides values for the column -->
+            <!-- calculate-sort-value provides values to be used in sorting -->
             <DxColumn
                 data-field="Position"
                 calculate-sort-value="isOnVacation"
@@ -77,7 +79,8 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
         render() {
             return (
                 <DataGrid>
-                    {/* dataField provides values for the column, calculateSortValue provides values to be used in sorting */}
+                    {/* dataField provides values for the column */}
+                    {/* calculateSortValue provides values to be used in sorting */}
                     <Column
                         dataField="Position"
                         calculateSortValue="isOnVacation" />
@@ -94,7 +97,8 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         var dataGrid = $("#dataGridContainer").dxDataGrid({
             columns: [{
                 dataField: "Position",
@@ -111,22 +115,27 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
 
 ##### Angular
 
+    <!--HTML-->
+    <dx-data-grid ... >
+        <dxi-column
+            dataField="Position"
+            sortOrder="asc"
+            [calculateSortValue]="calculateSortValue">
+        </dxi-column>
+    </dx-data-grid>
+
     <!--TypeScript-->
-    import { ..., ViewChild } from "@angular/core";
-    import { DxDataGridModule, DxDataGridComponent } from "devextreme-angular";
-    // ...
+    import { DxDataGridModule } from "devextreme-angular";
+
     export class AppComponent {
-        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        customSortingFunction (rowData) {
-            let column = this as any;
+        calculateSortValue(rowData) {
             if (rowData.Position == "CEO")
-                return column.sortOrder == 'asc' ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                return this.sortOrder == 'asc' ? "aaa" : "zzz"; // CEOs are always displayed at the top
             else
                 return rowData.Position; // Others are sorted as usual
         }
     }
+
     @NgModule({
         imports: [
             // ...
@@ -135,24 +144,15 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
         // ...
     })
 
-    <!--HTML-->
-    <dx-data-grid ... >
-        <dxi-column
-            dataField="Position"
-            sortOrder="asc"
-            [calculateSortValue]="customSortingFunction">
-        </dxi-column>
-    </dx-data-grid>
-
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid :ref="dataGridRefKey">
+        <DxDataGrid ...>
             <DxColumn
-                :calculate-sort-value="calculateSortValue"
                 data-field="Position"
                 sort-order="asc"
+                :calculate-sort-value="calculateSortValue"
             />
         </DxDataGrid>
     </template>
@@ -163,8 +163,6 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
-    const dataGridRefKey = "my-data-grid";
-
     export default {
         components: {
             DxDataGrid,
@@ -172,21 +170,13 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
         },
         data() {
             return {
-                dataGridRefKey
+                calculateSortValue(rowData) {
+                    if (rowData.Position == "CEO")
+                        return this.sortOrder == 'asc' ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                    else
+                        return rowData.Position; // Others are sorted as usual
+                }
             };
-        },
-        methods: {
-            calculateSortValue(rowData) {
-                if (rowData.Position == 'CEO')
-                    return this.dataGrid.columnOption('Position', 'sortOrder') == 'asc' ? 'aaa' : 'zzz'; // CEOs are always displayed at the top  
-                else
-                    return rowData.Position; // Others are sorted as usual
-            }
-        },
-        computed: {
-            dataGrid() {
-                return this.$refs[dataGridRefKey].instance;
-            }
         }
     }
     </script>
@@ -202,29 +192,20 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance;
-        }
-
         render() {
             return (
-                <DataGrid ref={this.dataGridRef} ...>
+                <DataGrid ...>
                     <Column
-                        calculateSortValue={this.calculateSortValue}
                         dataField="Position"
-                        sortOrder="asc" />
+                        defaultSortOrder="asc"
+                        calculateSortValue={this.calculateSortValue} />
                 </DataGrid>
             );
         }
 
         calculateSortValue(rowData) {
-            if (rowData.Position == 'CEO')
-                return this.dataGrid.columnOption('Position', 'sortOrder') == 'asc' ? 'aaa' : 'zzz'; // CEOs are always displayed at the top  
+            if (rowData.Position == "CEO")
+                return this.sortOrder == 'asc' ? "aaa" : "zzz"; // CEOs are always displayed at the top    
             else
                 return rowData.Position; // Others are sorted as usual
         }

@@ -162,7 +162,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 ---
 
-When being [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/), the specified format is converted to an Excel format as follows:
+When a format is [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/), it is converted to an Excel format as follows:
 
 - **Numeric**   
 Converted to Number format, except for *"largeNumber"*, which is exported without formatting.

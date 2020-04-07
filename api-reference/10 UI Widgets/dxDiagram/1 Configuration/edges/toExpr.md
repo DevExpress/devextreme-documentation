@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides an edge
 The current edge's data object.
 
 ---
-Specify this option if your source data is contained in two ([node and edge](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Node_and_Edge_Arrays)) data sources.
+Specify this option if you use ([node and edge](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Node_and_Edge_Arrays)) data sources.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"

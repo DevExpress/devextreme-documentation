@@ -13,7 +13,7 @@ The current node's data object.
 ---
 The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` type.
 
-As an alternative, use the [childrenExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr) option to provide a container's content.
+You can also use the [childrenExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr) option to provide a container's content.
 
 
     <!-- tab: index.js -->

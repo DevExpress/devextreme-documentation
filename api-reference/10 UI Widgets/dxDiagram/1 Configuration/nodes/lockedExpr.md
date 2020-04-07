@@ -13,6 +13,8 @@ The current node's data object.
 ---
 A locked item can not be moved, changed, or delete. Users can use the [context menu](/Documentation/Guide/Widgets/Diagram/Diagram_Tools/) to lock and unlock an item.
 
+The specified field or expression should return `true` or `false`.
+
     <!--JavaScript-->
     $(function() {
         $("#diagram").dxDiagram({

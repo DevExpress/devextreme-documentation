@@ -33,7 +33,6 @@ The **Gantt** allows you to validate relationships between tasks when they are e
             </td>
             <td>The widget moves a successor task (Task 2) forward or backward to the same time interval.</td>
          </tr>
-         <tr></tr>
          <tr>
             <td>Move a successor task (Task 2) to the left.</td>
             <td style="text-align:center"><b>Finish to Start (FS):</b><br/>

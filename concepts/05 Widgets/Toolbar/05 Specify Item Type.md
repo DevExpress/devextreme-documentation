@@ -19,6 +19,9 @@ A **Toolbar** item may be plain text or a widget. Text items should have the [te
         });
     });
 
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
+
 ##### Angular
 
     <!--HTML-->
@@ -42,6 +45,53 @@ A **Toolbar** item may be plain text or a widget. Text items should have the [te
         // ...
     })
 
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem text="Delete" location="before"/>
+            <DxItem text="Products" location="center"/>
+            <DxItem text="Add" location="after"/>
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item text="Delete" location="before"/>
+                    <Item text="Products" location="center"/>
+                    <Item text="Add" location="after"/>
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Items that contain a widget should have the [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#widget') field specified. In addition, you need to declare the [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#options') object that will configure the widget. For a full list of fields this object has, refer to the API reference of the widget.
@@ -57,7 +107,7 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
                 options: {
                     type: 'back',
                     text: 'Back',
-                    onClick: function () {
+                    onClick: function() {
                         // ...
                     }
                 },
@@ -67,16 +117,17 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
                 options: {
                     width: 140,
                     items: ['All', 'Family', 'Favorites'],
-                    onItemClick: function (e) {
+                    onItemClick: function(e) {
                         // ...
                     }
                 },
                 location: 'after'
-            },
-            // ...  
-            ]
+            }]
         });
     });
+
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
 
 ##### Angular
 
@@ -101,14 +152,14 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
         buttonOptions = {
             type: 'back',
             text: 'Back',
-            onClick: function () {
+            onClick: function() {
                 // ...
             }
         };
         selectBoxOptions = {
             width: 140,
             items: ['All', 'Family', 'Favorites'],
-            onItemClick: function (e) {
+            onItemClick: function(e) {
                 // ...
             }
         };
@@ -122,6 +173,103 @@ Items that contain a widget should have the [widget](/api-reference/_hidden/dxTo
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem
+                widget="dxButton"
+                :options="buttonOptions"
+                location="before"
+            />
+            <DxItem
+                widget="dxSelectBox"
+                :options="selectBoxOptions"
+                location="after"
+            />
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+    import 'devextreme-vue/select-box';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    type: 'back',
+                    text: 'Back',
+                    onClick: function() {
+                        // ...
+                    }
+                },
+                selectBoxOptions: {
+                    width: 140,
+                    items: ['All', 'Family', 'Favorites'],
+                    onItemClick: function(e) {
+                        // ...
+                    }
+                }
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+    import { SelectBox } from 'devextreme-react/select-box';
+
+    const buttonOptions = {
+        type: 'back',
+        text: 'Back',
+        onClick: function() {
+            // ...
+        } 
+    }
+
+    const selectBoxOptions = {
+        width: 140,
+        items: ['All', 'Family', 'Favorites'],
+        onItemClick: function(e) {
+            // ...
+        }
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item
+                        widget="dxButton"
+                        options={buttonOptions}
+                        location="before"
+                    />
+                    <Item
+                        widget="dxSelectBox"
+                        options={selectBoxOptions}
+                        location="after"
+                    />
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

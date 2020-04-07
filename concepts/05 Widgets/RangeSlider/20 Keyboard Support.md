@@ -29,51 +29,7 @@ An end user can use the following keys to interact with the widget.
   </table>
 </div>
 
-You can implement a custom handler for a key using the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/Methods/#registerKeyHandlerkey_handler') method.
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    function registerKeyHandlers () {
-        let rangeSlider =  $("#rangeSliderContainer").dxRangeSlider("instance");
-        rangeSlider.registerKeyHandler("backspace", function (e) {
-            // The argument "e" contains information on the event
-        });
-        rangeSlider.registerKeyHandler("space", function (e) {
-            // ...
-        });
-    }
-    
-
-##### Angular
-
-    <!--TypeScript-->
-    import { ..., ViewChild, AfterViewInit } from "@angular/core";
-    import { DxRangeSliderModule, DxRangeSliderComponent } from "devextreme-angular";
-    // ...
-    export class AppComponent implements AfterViewInit {
-        @ViewChild(DxRangeSliderComponent, { static: false }) rangeSlider: DxRangeSliderComponent
-        // Prior to Angular 8
-        // @ViewChild(DxRangeSliderComponent) rangeSlider: DxRangeSliderComponent
-        ngAfterViewInit () {
-            this.rangeSlider.instance.registerKeyHandler("backspace", function (e) {
-                // The argument "e" contains information on the event
-            });
-            this.rangeSlider.instance.registerKeyHandler("space", function (e) {
-                // ...
-            });
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxRangeSliderModule
-        ],
-        // ...
-    })
-
----
+#include common-code-register-key-handler
 
 #####See Also#####
 #include common-link-callmethods

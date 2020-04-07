@@ -11,7 +11,7 @@ Assign the array to the **dataSource** option${{array_key_note}}. ${{array_view_
 Set the **dataSource** option to the URL of a JSON file or service that returns JSON data. ${{json_view_demo}}
 
 - **OData**         
-Implement an [ODataStore](/api-reference/30%20Data%20Layer/ODataStore/ODataStore.md '/Documentation/ApiReference/Data_Layer/ODataStore/').${{odata_key_note}} ${{odata_view_demo}}
+Implement an [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').${{odata_key_note}} ${{odata_view_demo}}
 
 - **Web API, PHP, MongoDB**     
 Use one of the following extensions to enable the server to process data according to the protocol DevExtreme widgets use:
@@ -162,9 +162,9 @@ Use one of the following extensions to enable the server to process data accordi
     ${{create_store_view_demo}}
 
 - **Any other data source**     
-Implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore/CustomStore.md '/Documentation/ApiReference/Data_Layer/CustomStore/'). ${{custom_store_view_demo}}
+Implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). ${{custom_store_view_demo}}
 
-Regardless of the data source on the input, the **{WidgetName}** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource/DataSource.md '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and otherwise shape data. To get its instance, call the [getDataSource()]({basewidgetpath}/Methods/#getDataSource) method.
+Regardless of the data source on the input, the **{WidgetName}** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()]({basewidgetpath}/Methods/#getDataSource) method.
 
 ${{additional_data_binding_actions}}
 

@@ -5,6 +5,9 @@ id: dxTreeList.addRow()
 ##### shortDescription
 Adds an empty data row to the highest hierarchical level and switches it to the editing state.
 
+##### return: Promise<void>
+A Promise that is resolved after a new empty row is added.
+
 ---
 Use this method if you want to add an empty row. If you need to add a row with data, do the following:    
 
@@ -18,9 +21,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
             var treeList = $("#treeListContainer").dxTreeList({
                 // ...
             }).dxTreeList("instance");
-
             var dataSource = treeList.getDataSource();
-
             dataSource.store().insert(data).then(function() {
                 dataSource.reload();
             })

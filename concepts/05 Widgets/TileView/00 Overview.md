@@ -7,7 +7,7 @@ The **TileView** widget contains a collection of tiles. Tiles can store much mor
 The following code adds a primitive **TileView** to your page.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="tileViewContainer"></div>
 
@@ -48,6 +48,60 @@ The following code adds a primitive **TileView** to your page.
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTileView :data-source="dataSource"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTileView } from 'devextreme-vue/tile-view';
+
+    export default {
+        components: {
+            DxTileView
+        },
+        data() {
+            return {
+                dataSource: [
+                    { text: 'Alabama' },
+                    { text: 'Alaska' },
+                    { text: 'Arizona' },
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TileView } from 'devextreme-react/tile-view';
+
+    const dataSource = [
+        { text: 'Alabama' },
+        { text: 'Alaska' },
+        { text: 'Arizona' },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TileView dataSource={dataSource}/>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Note that field names in these data source items are [conventional](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/items/'). This provides a default tile appearance, which can be customized later. 
@@ -55,7 +109,7 @@ Note that field names in these data source items are [conventional](/api-referen
 By default, the widget is oriented horizontally, but you can orient it vertically using the [direction](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction') option. 
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#tileViewContainer").dxTileView({
@@ -84,6 +138,43 @@ By default, the widget is oriented horizontally, but you can orient it verticall
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxTileView direction="vertical"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTileView } from 'devextreme-vue/tile-view';
+
+    export default {
+        components: {
+            DxTileView
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TileView } from 'devextreme-react/tile-view';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TileView direction="vertical"/>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

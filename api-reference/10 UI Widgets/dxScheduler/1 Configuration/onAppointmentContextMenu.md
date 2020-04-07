@@ -36,10 +36,11 @@ The jQuery event that caused the handler's execution. Deprecated in favor of the
 Model data. Available only if you use Knockout.
 
 ##### field(e.targetedAppointmentData): Object
-The appointment on which the context menu is invoked.       
-For details on the difference between this and the **appointmentData** fields, see the [onAppointmentClick](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentClick.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentClick') option description.
+<!-- %field(model.targetedAppointmentData)% -->
 
 ---
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenuIntegration/"
 }
+
+<!-- import * from 'api-reference\10 UI Widgets\dxScheduler\1 Configuration\appointmentTemplate.md' -->

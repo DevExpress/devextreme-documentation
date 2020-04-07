@@ -37,6 +37,64 @@ The **DateBox** widget allows an end user to pick or type a value. To specify wh
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            :value="date"
+            type="date"
+            picker-type="calendar",
+            apply-value-mode="useButtons"/> <!-- or "instantly" -->
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        },
+        data() {
+            return {
+                date: new Date()
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            constructor(props);
+
+            this.date = new Date();
+        }
+
+        render() {
+            return (
+                <DateBox
+                    defaultValue={this.date}
+                    type="date"
+                    pickerType="calendar"
+                    applyValueMode="useButtons" {/* or "instantly" */}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

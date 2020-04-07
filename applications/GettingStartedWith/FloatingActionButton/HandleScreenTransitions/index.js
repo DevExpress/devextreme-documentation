@@ -3,8 +3,9 @@ $("<link>", {
     href: "https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css"
  }).appendTo("head");
 
-$(function() {    
-    DevExpress.ui.themes.current("material.blue.light");
+$(function() {
+    const isDarkTheme = document.cookie.includes("theme=dark");
+    DevExpress.ui.themes.current(isDarkTheme ? "material.blue.dark" : "material.blue.light")
 
     DevExpress.config({
         floatingActionButtonConfig: {

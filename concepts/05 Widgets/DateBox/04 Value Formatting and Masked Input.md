@@ -39,6 +39,49 @@ In addition to value formatting, the **displayFormat** can be used as a mask to 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            :use-mask-behavior="true"
+            display-format="EEEE, d 'of' MMM"/> <!-- "Tuesday, 16 of Oct" -->
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DateBox
+                    useMaskBehavior={true}
+                    displayFormat="EEEE, d 'of' MMM" {/* "Tuesday, 16 of Oct" */}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 The following changes apply when masked input is enabled:

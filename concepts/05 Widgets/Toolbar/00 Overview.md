@@ -9,9 +9,6 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="toolbarContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#toolbarContainer").dxToolbar({
@@ -35,6 +32,9 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
         });
     });
 
+    <!--HTML-->
+    <div id="toolbarContainer"></div>
+
 ##### Angular
 
     <!--HTML-->
@@ -42,10 +42,7 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
         <dxi-item
             widget="dxButton"
             location="before"
-            [options]="{
-                type: 'back',
-                text: 'Back'
-            }">
+            [options]="buttonOptions">
         </dxi-item>
         <dxi-item
             text="Add"
@@ -65,7 +62,10 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
     import { DxToolbarModule, DxButtonModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        // ...
+        buttonOptions = {
+            type: 'back',
+            text: 'Back'
+        };
     }
     @NgModule({
         imports: [
@@ -75,6 +75,94 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
         ],
         // ...
     })
+
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <DxToolbar>
+            <DxItem
+                widget="dxButton"
+                location="before"
+                :options="buttonOptions"
+            />
+            <DxItem
+                text="Add"
+                locate-in-menu="always"
+            />
+            <DxItem
+                text="Change"
+                locate-in-menu="always"
+            />
+            <DxItem
+                text="Products"
+                location="center"
+            />
+        </DxToolbar>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    type: 'back',
+                    text: 'Back'
+                }
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toolbar, Item } from 'devextreme-react/toolbar';
+
+    const buttonOptions = {
+        type: 'back',
+        text: 'Back'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Toolbar>
+                    <Item
+                        widget="dxButton"
+                        location="before"
+                        options={buttonOptions}
+                    />
+                    <Item
+                        text="Add"
+                        locateInMenu="always"
+                    />
+                    <Item
+                        text="Change"
+                        locateInMenu="always"
+                    />
+                    <Item
+                        text="Products"
+                        location="center"
+                    />
+                </Toolbar>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -11,7 +11,7 @@ Enables parent-child task relationships validation.
 
 ![DevExtreme Gantt - Parent and Child Tasks Validation](~/images/Gantt/parent-tasks-validation.png)
 
-The Gantt control supports the following rules for parent-child relationships validation:
+The **Gantt** supports the following rules for parent-child relationships validation:
 
 - A parent task's duration equals a summary duration of its child tasks.
 - A parent task and its first child starts at the same time.

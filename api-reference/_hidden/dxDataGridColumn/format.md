@@ -13,7 +13,7 @@ Cannot be converted, the cell value is exported without formatting.
 - [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
 Cannot be converted, the cell value is exported without formatting. 
 
-To convert unsupported formats, use the [customizeExcelCell](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#customizeExcelCell) function as follows:
+To convert unsupported formats, return the formatted string from the [customizeText](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText) callback as follows:
 
 ---
 ##### jQuery
@@ -22,12 +22,17 @@ To convert unsupported formats, use the [customizeExcelCell](/Documentation/ApiR
     $(function() {
         $("#gridContainer").dxDataGrid({
             // ...
-            export: {
-                enabled: true,
-                customizeExcelCell: (options) => {
-                    // ...
-                    options.value = options.value + "$";
+            columns:[{
+                // ...
+                format: (value) => {
+                    return value + " USD";
+                },   
+                customizeText: (options) => {
+                    return options.valueText;
                 }
+            }],
+            export: {
+                enabled: true
             }
         });
     });
@@ -36,9 +41,11 @@ To convert unsupported formats, use the [customizeExcelCell](/Documentation/ApiR
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxo-export 
-            [enabled]="true"
-            [customizeExcelCell]="customizeExcelCell">
+        <dxi-column ...
+            [format]="formatValue" 
+            [customizeText]="customizeText">
+        </dxi-column>
+        <dxo-export [enabled]="true">
         </dxo-export>
     </dx-data-grid>
 
@@ -51,9 +58,12 @@ To convert unsupported formats, use the [customizeExcelCell](/Documentation/ApiR
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        customizeExcelCell(options) {
-            // ...
-            options.value = options.value + "$";
+        formatValue(value) {
+            return value + " USD";
+        }
+
+        customizeText(options) {
+            return options.valueText;
         }
     }
 
@@ -82,9 +92,12 @@ To convert unsupported formats, use the [customizeExcelCell](/Documentation/ApiR
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ... >
+            <DxColumn ...
+                :format="formatValue"
+                :customize-text="customizeText"
+            />
             <DxExport
                 :enabled="true"
-                :customize-excel-cell="customizeExcelCell"
             />
         </DxDataGrid>
     </template>
@@ -94,18 +107,23 @@ To convert unsupported formats, use the [customizeExcelCell](/Documentation/ApiR
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
-        DxExport
+        DxExport,
+        DxColumn
     } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
             DxDataGrid,
-            DxExport
+            DxExport,
+            DxColumn
         },
         methods: {
-            customizeExcelCell(options) {
-                // ...
-                options.value = options.value + "$";
+            formatValue(value) {
+                return value + " USD";
+            },   
+
+            customizeText(options) {
+                return options.valueText;
             }
         }
     }
@@ -120,24 +138,31 @@ To convert unsupported formats, use the [customizeExcelCell](/Documentation/ApiR
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
-        Export
+        Export,
+        Column
     } from 'devextreme-react/data-grid';
 
     class App extends React.Component {
         render() {
             return (
                 <DataGrid ... >
+                    <Column ...
+                        format={this.formatValue}
+                        customizeText={this.customizeText} 
+                    />
                     <Export 
                         enabled={true}
-                        customizeExcelCell={this.customizeExcelCell} 
                     />
                 </DataGrid>
             );
+        }
+
+        formatValue(value) {
+            return value + " USD";
         }   
 
-        customizeExcelCell(options) {
-            // ...
-            options.value = options.value + "$";
+        customizeText(options) {
+            return options.valueText;
         }
     }
     export default App;

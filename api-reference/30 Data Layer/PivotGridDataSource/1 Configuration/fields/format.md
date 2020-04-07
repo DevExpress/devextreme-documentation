@@ -191,7 +191,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
                 },
                 dataType: "number",
                 format: (value) => {
-                    return value + "$";
+                    return value + " USD";
                 }
             }, {
                 // ...
@@ -235,7 +235,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
                     },
                     dataType: "number",
                     format: (value) => {
-                        return value + "$";
+                        return value + " USD";
                     }
                 }, {
                     // ...
@@ -294,7 +294,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
             },
             dataType: "number",
             format: (value) => {
-                return value + "$";
+                return value + " USD";
             }
         }, {
             // ...
@@ -335,7 +335,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
             },
             dataType: "number",
             format: (value) => {
-                return value + "$";
+                return value + " USD";
             }
         }, {
             // ...

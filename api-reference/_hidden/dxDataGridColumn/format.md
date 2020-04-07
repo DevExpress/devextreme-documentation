@@ -9,11 +9,9 @@ Converted the *"Currency"* format.
 - **Date-Time**  
 Converted to the *"Date"* or *"Time"* formats depending on the cell value, except for the *"quarter"* and *"quarterAndYear"* types that are exported as *"short date"* and the *"minute"* and *"millisecond"* formats that are exported as *"long time"*.
 - **Function**  
-Cannot be converted, the cell value is exported without formatting.
+Cannot be converted, the cell value is exported without formatting. Return the function from the [customizeText](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText) callback to apply formatting to the **DataGrid** and the exported Excel document.  
 - [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
-Cannot be converted, the cell value is exported without formatting. 
-
-To convert unsupported formats, return the formatted string from the [customizeText](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText) callback as follows:
+Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText) callback as follows:
 
 ---
 ##### jQuery
@@ -24,9 +22,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
             // ...
             columns:[{
                 // ...
-                format: (value) => {
-                    return value + " USD";
-                },   
+                format: "0.##",   
                 customizeText: (options) => {
                     return options.valueText;
                 }
@@ -42,7 +38,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <dxi-column ...
-            [format]="formatValue" 
+            format="0.##" 
             [customizeText]="customizeText">
         </dxi-column>
         <dxo-export [enabled]="true">
@@ -58,10 +54,6 @@ To convert unsupported formats, return the formatted string from the [customizeT
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        formatValue(value) {
-            return value + " USD";
-        }
-
         customizeText(options) {
             return options.valueText;
         }
@@ -93,7 +85,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
     <template>
         <DxDataGrid ... >
             <DxColumn ...
-                :format="formatValue"
+                format="0.##"
                 :customize-text="customizeText"
             />
             <DxExport
@@ -118,10 +110,6 @@ To convert unsupported formats, return the formatted string from the [customizeT
             DxColumn
         },
         methods: {
-            formatValue(value) {
-                return value + " USD";
-            },   
-
             customizeText(options) {
                 return options.valueText;
             }
@@ -147,7 +135,7 @@ To convert unsupported formats, return the formatted string from the [customizeT
             return (
                 <DataGrid ... >
                     <Column ...
-                        format={this.formatValue}
+                        format="0.##"
                         customizeText={this.customizeText} 
                     />
                     <Export 
@@ -156,10 +144,6 @@ To convert unsupported formats, return the formatted string from the [customizeT
                 </DataGrid>
             );
         }
-
-        formatValue(value) {
-            return value + " USD";
-        }   
 
         customizeText(options) {
             return options.valueText;

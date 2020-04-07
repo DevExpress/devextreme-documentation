@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides an inde
 The current edge's data object.
 
 ---
-The built-in shape's connection points are numbered clockwise starting with the leftmost point on the top border.
+The built-in shape's connection points are numbered clockwise from the leftmost point on the top border.
 
 ![Diagram - Shape Points](/images/diagram/point-index-expr.png)
 

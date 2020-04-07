@@ -67,6 +67,6 @@ If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">R
         ); 
     }
 
-In the code above, the <a href="https://reactjs.org/docs/hooks-effect.html">useEffect</a> hook is used to dispose of the DataSource instance after a component is removed from the DOM tree.
+In the code above, the <a href="https://reactjs.org/docs/hooks-effect.html">useEffect</a> hook is used to dispose of the DataSource instance after the UI component is removed from the DOM tree.
 
 [note] When a data layer component's properties are modified, the bound UI component is not re-rendered.

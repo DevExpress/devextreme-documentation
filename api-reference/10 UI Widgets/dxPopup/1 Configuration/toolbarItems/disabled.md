@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether a toolbar item should be disabled.
+Specifies whether the toolbar item responds to user interaction.
 
 ---

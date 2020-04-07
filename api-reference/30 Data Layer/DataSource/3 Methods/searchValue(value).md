@@ -96,4 +96,4 @@ Call the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load()
 ---
 
 #####See Also#####
-- [Data Layer - Search API](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/2%20Search%20Api.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Search_Api')
+- [Data Layer - Search API](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/2%20Search%20Api.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Search_Api')

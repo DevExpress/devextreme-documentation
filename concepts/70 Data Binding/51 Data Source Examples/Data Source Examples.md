@@ -1,0 +1,1 @@
+In this article, we consider some of the most common examples demonstrating how to connect to various sources of data using a DevExtreme data layer. Regardless of the data source type, approaches to data reading and editing are the same. They are described in the [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') article.

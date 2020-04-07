@@ -10,7 +10,7 @@ Binds the widget to data.
 ---
 If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
-The **PivotGrid** is bound to data via the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/'), a component that allows you to sort, filter, group, and otherwise shape data. The **PivotGridDataSource**'s underlying data access logic is isolated in the store. You use different store types for different data sources.
+The **PivotGrid** is bound to data via the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/'), a component that allows you to sort, filter, group, and perform other data shaping operations. The **PivotGridDataSource**'s underlying data access logic is isolated in the store. You use different store types for different data sources.
  
 To bind the **PivotGrid** to data, assign a **PivotGridDataSource** to the widget's **dataSource** option. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') option depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
 

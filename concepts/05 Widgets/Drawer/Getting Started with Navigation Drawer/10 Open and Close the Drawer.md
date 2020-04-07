@@ -1,13 +1,13 @@
-Depending on the library or framework you use, call the [toggle()](/api-reference/10%20UI%20Widgets/dxDrawer/3%20Methods/toggle().md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#toggle') method or bind a variable to the [opened](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/opened.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#opened') option.
+Depending on the library or framework you use, call the [toggle()](/api-reference/10%20UI%20Widgets/dxDrawer/3%20Methods/toggle().md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#toggle') method or bind the [opened](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/opened.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#opened') option to a component property.
 
 In the following code, a toolbar button outside the **Drawer** opens and closes it:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--tab: index.js-->
     $(function() {
-        var drawer = $("#drawer").dxDrawer({ 
+        const drawer = $("#drawer").dxDrawer({ 
             // ... 
         }).dxDrawer("instance");
         $("#toolbar").dxToolbar({
@@ -44,7 +44,7 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
         margin-left: -7px;
     }
 
-#####Angular
+##### Angular
 
     <!-- tab: app.component.html -->
     <dx-toolbar id="toolbar">
@@ -55,7 +55,7 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
         </dxi-item>
     </dx-toolbar>
     <dx-drawer ...
-        [(opened)]="isOpened">
+        [(opened)]="isDrawerOpen">
         <div>View content</div>
     </dx-drawer>
 
@@ -69,14 +69,14 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
     })
 
     export class AppComponent {
-        isOpened: Boolean = false;
+        isDrawerOpen: Boolean = false;
         buttonOptions: any;
 
         constructor() {
             this.buttonOptions = {
                 icon: "menu",
                 onClick: () => {
-                    this.isOpened = !this.isOpened;
+                    this.isDrawerOpen = !this.isDrawerOpen;
                 }
             };
         }
@@ -114,47 +114,65 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
         margin-left: -7px;
     }
 
-##### ASP.NET MVC Controls
+##### Vue
 
-    <!-- tab: _Layout.cshtml -->
-    @(Html.DevExtreme().Toolbar()
-        .ID("layout-toolbar")
-        .Items(items =>{
-            items.Add().Widget(w => w.Button()
-                .Icon("menu")
-                .OnClick("button_clickHandler")
-            ).Location(ToolbarItemLocation.Before);
-        })
-    )
-    @(Html.DevExtreme().Drawer()
-        .ID("layout-drawer")
-        // ...
-    )
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxToolbar id="toolbar">
+                <DxItem
+                    widget="dxButton"
+                    :options="buttonOptions"
+                    location="before"
+                />
+            </DxToolbar>
+            <DxDrawer ...
+                :opened.sync="isDrawerOpen">
+                <!-- ... -->
+            </DxDrawer>
+        </div>
+    </template>
 
-    <script type="text/javascript">
-        function button_clickHandler() {
-            var drawer = $("#layout-drawer").dxDrawer("instance");
-            drawer.toggle();
+    <script>
+    // ...
+    import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
+
+    export default {
+        components: {
+            // ...
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    icon: "menu",
+                    onClick: () => {
+                        this.isDrawerOpen = !this.isDrawerOpen;
+                    }
+                },
+                isDrawerOpen: false
+            };
         }
+    };
     </script>
 
-    <!-- tab: Site.css -->
+    <style>
     /* ... */
-    #layout-toolbar {
-        background-color: rgba(191, 191, 191, .15);
+    #toolbar {
+        background-color: rgba(191, 191, 191, 0.15);
         padding: 5px 10px;
     }
-
-    #layout-toolbar .dx-toolbar-button .dx-button {
+    .dx-toolbar-button .dx-button {
         background-color: rgba(191, 191, 191, -0.15);
         border: none;
     }
-
-    #layout-toolbar .dx-toolbar-button > .dx-toolbar-item-content {
+    .dx-toolbar-button > .dx-toolbar-item-content {
         margin-left: -7px;
     }
+    </style>
 
-#####React
+##### React
 
     <!-- tab: DxComponent.js -->
     // ...
@@ -165,12 +183,12 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
         constructor(props) {
             super(props);
             this.state = {
-                isOpened: false
+                isDrawerOpen: false
             };
             this.buttonOptions = {
                 icon: "menu",
                 onClick: () => {
-                    this.setState({ isOpened: !this.state.isOpened })
+                    this.setState({ isDrawerOpen: !this.state.isDrawerOpen })
                 }
             };
         }
@@ -184,7 +202,7 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
                             location="before" />
                     </Toolbar>
                     <Drawer ...
-                        opened={this.state.isOpened} >
+                        opened={this.state.isDrawerOpen} >
                         <div>View content</div>
                     </Drawer>
                 </React.Fragment>
@@ -204,6 +222,46 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
         border: none;
     }
     .dx-toolbar-button > .dx-toolbar-item-content {
+        margin-left: -7px;
+    }
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: _Layout.cshtml -->
+    @(Html.DevExtreme().Toolbar()
+        .ID("layout-toolbar")
+        .Items(items =>{
+            items.Add().Widget(w => w.Button()
+                .Icon("menu")
+                .OnClick("button_clickHandler")
+            ).Location(ToolbarItemLocation.Before);
+        })
+    )
+    @(Html.DevExtreme().Drawer()
+        .ID("layout-drawer")
+        // ...
+    )
+
+    <script type="text/javascript">
+        function button_clickHandler() {
+            const drawer = $("#layout-drawer").dxDrawer("instance");
+            drawer.toggle();
+        }
+    </script>
+
+    <!-- tab: Site.css -->
+    /* ... */
+    #layout-toolbar {
+        background-color: rgba(191, 191, 191, .15);
+        padding: 5px 10px;
+    }
+
+    #layout-toolbar .dx-toolbar-button .dx-button {
+        background-color: rgba(191, 191, 191, -0.15);
+        border: none;
+    }
+
+    #layout-toolbar .dx-toolbar-button > .dx-toolbar-item-content {
         margin-left: -7px;
     }
 

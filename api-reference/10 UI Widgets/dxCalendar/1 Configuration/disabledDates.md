@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies dates to be disabled.
+Specifies dates that users cannot select.
 
 ##### param(data): Object
 Information about the checked date.

@@ -84,7 +84,7 @@ A simple JavaScript array containing a collection of plain objects.
     ---
 
 - [**DataSource Configuration Object**](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/')         
-A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') configuration object. Learn more about the **DataSource** and the DevExtreme Data Layer concept from the [Data Layer](/concepts/30%20Data%20Layer/5%20Data%20Layer '/Documentation/Guide/Data_Layer/Data_Layer/') topic.
+A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') configuration object. Learn more about the **DataSource** and the DevExtreme Data Layer concept from the [Data Layer](/concepts/30%20Data%20Layer/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') topic.
 
     ---
     ##### jQuery
@@ -240,7 +240,7 @@ A function in which you can modify the current data source configuration.
 
 [note]Every unique value in a column should also be present in the data source for its header filter.
 
-If you use a data source that does not contain the required fields (**text** and **value**), you can use the DataSource object's [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') option to cast the initial data array to the required structure. If the initial array includes key fields, all these fields, as well as the **text** and **value** fields should be present in the resulting array.
+If your data source omits the **text** and **value** fields, you can cast it to the required structure using the **DataSource** object's [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') function. If the initial data source contains key fields, the resulting data source should also contain them along with **text** and **value**.
 
 ---
 ##### jQuery

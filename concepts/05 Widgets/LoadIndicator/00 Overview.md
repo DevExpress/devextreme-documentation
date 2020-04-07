@@ -44,6 +44,74 @@ The following code adds a simple **LoadIndicator** to your page. You can change 
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxLoadIndicator
+            :visible.sync="isLoadIndicatorVisible"
+            :height="40"
+            :width="40"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
+
+    export default {
+        components: {
+            DxLoadIndicator
+        },
+        data() {
+            return {
+                isLoadIndicatorVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadIndicator } from 'devextreme-react/load-indicator';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isLoadIndicatorVisible: true
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+
+            this.setState({
+                isLoadIndicatorVisible: newValue
+            });
+        }
+
+        render() {
+            return (
+                <LoadIndicator
+                    value={this.state.isLoadIndicatorVisible}
+                    onValueChanged={this.handleValueChange}
+                    height={40}
+                    width={40}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you need to use a custom image in the **LoadIndicator**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadIndicator/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Widgets/dxLoadIndicator/Configuration/#indicatorSrc') option.
@@ -81,6 +149,74 @@ If you need to use a custom image in the **LoadIndicator**, assign its URL to th
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxLoadIndicator
+            :visible.sync="isLoadIndicatorVisible"
+            :indicatorSrc="indicatorUrl"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
+
+    export default {
+        components: {
+            DxLoadIndicator
+        },
+        data() {
+            return {
+                isLoadIndicatorVisible: true,
+                indicatorUrl: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadIndicator } from 'devextreme-react/load-indicator';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isLoadIndicatorVisible: true
+                indicatorUrl: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+        }
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+
+            this.setState({
+                isLoadIndicatorVisible: newValue
+            });
+        }
+
+        render() {
+            return (
+                <LoadIndicator
+                    visible={this.state.isLoadIndicatorVisible}
+                    onValueChanged={this.handleValueChange}
+                    indicatorSrc={this.state.indicatorUrl}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

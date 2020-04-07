@@ -25,6 +25,99 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
         });
     });
 
+##### Vue
+
+    <template>
+        <div>
+            <DxLoadIndicator
+                :visible.sync="isLoadIndicatorVisible"
+            />
+            <DxButton
+                text="Toggle the LoadIndicator"
+                @click="toggleLoadIndicator"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxLoadIndicator,
+            DxButton
+        },
+        data() {
+            return {
+                isLoadIndicatorVisible: false
+            };
+        },
+        methods: {
+            toggleLoadIndicator(e) {
+                this.isLoadIndicatorVisible = !this.isLoadIndicatorVisible;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadIndicator } from 'devextreme-react/load-indicator';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isLoadIndicatorVisible: false
+            };
+            this.handleValueChange = this.handleValueChange.bind(this);
+            this.handleButtonClick = this.handleButtonClick.bind(this);
+        }
+
+        handleValueChange(e) {
+            const previousValue = e.previousValue;
+            const newValue = e.value;
+    
+            this.setState({
+                isLoadIndicatorVisible: newValue
+            });
+        }
+
+        handleButtonClick() {
+            const value = this.state.isLoadIndicatorVisible;
+
+            this.setState({
+                isLoadIndicatorVisible: !value
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <LoadIndicator
+                        visible={this.state.isLoadIndicatorVisible}
+                        onValueChanged={this.handleValueChange}
+                    />
+                    <Button
+                        text="Toggle the LoadIndicator"
+                        onClick={this.handleButtonClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -67,7 +160,7 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
 
 ---
 
-With Angular, AngularJS, or Knockout, bind the [visible](/api-reference/10%20UI%20Widgets/Widget/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadIndicator/Configuration/#visible') property of the **LoadIndicator** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, change this property/variable, and the **LoadIndicator** will appear or disappear.
+With Angular or AngularJS, bind the [visible](/api-reference/10%20UI%20Widgets/Widget/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadIndicator/Configuration/#visible') property of the **LoadIndicator** widget to a component property (in Angular) a scope property (in AngularJS). After that, change this property/variable, and the **LoadIndicator** will appear or disappear.
 
 ---
 ##### Angular
@@ -118,25 +211,6 @@ With Angular, AngularJS, or Knockout, bind the [visible](/api-reference/10%20UI%
                 $scope.isLoadIndicatorVisible = !currentValue;
             }
         });
-
-##### Knockout
-
-    <!--HTML--><div data-bind="dxLoadIndicator: {
-        visible: isLoadIndicatorVisible
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Toggle the LoadIndicator',
-        onClick: function (e) {
-            var currentValue = e.model.isLoadIndicatorVisible();
-            e.model.isLoadIndicatorVisible(!currentValue);
-        }
-    }"></div>
-
-    <!--JavaScript-->var viewModel = {
-        isLoadIndicatorVisible: ko.observable(false)
-    };
-
-    ko.applyBindings(viewModel);
 
 ---
 

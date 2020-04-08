@@ -105,17 +105,7 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
             this.state = {
                 isLoadIndicatorVisible: false
             };
-            this.handleValueChange = this.handleValueChange.bind(this);
             this.handleButtonClick = this.handleButtonClick.bind(this);
-        }
-
-        handleValueChange(e) {
-            const previousValue = e.previousValue;
-            const newValue = e.value;
-    
-            this.setState({
-                isLoadIndicatorVisible: newValue
-            });
         }
 
         handleButtonClick() {
@@ -131,7 +121,6 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
                 <div>
                     <LoadIndicator
                         visible={this.state.isLoadIndicatorVisible}
-                        onValueChanged={this.handleValueChange}
                     />
                     <Button
                         text="Toggle the LoadIndicator"

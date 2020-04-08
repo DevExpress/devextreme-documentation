@@ -86,23 +86,12 @@ The following code adds a simple **LoadIndicator** to your page. You can change 
             this.state = {
                 isLoadIndicatorVisible: true
             };
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
-            const previousValue = e.previousValue;
-            const newValue = e.value;
-
-            this.setState({
-                isLoadIndicatorVisible: newValue
-            });
         }
 
         render() {
             return (
                 <LoadIndicator
-                    value={this.state.isLoadIndicatorVisible}
-                    onValueChanged={this.handleValueChange}
+                    visible={this.state.isLoadIndicatorVisible}
                     height={40}
                     width={40}
                 />
@@ -193,23 +182,12 @@ If you need to use a custom image in the **LoadIndicator**, assign its URL to th
                 isLoadIndicatorVisible: true
                 indicatorUrl: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
             };
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
-            const previousValue = e.previousValue;
-            const newValue = e.value;
-
-            this.setState({
-                isLoadIndicatorVisible: newValue
-            });
         }
 
         render() {
             return (
                 <LoadIndicator
                     visible={this.state.isLoadIndicatorVisible}
-                    onValueChanged={this.handleValueChange}
                     indicatorSrc={this.state.indicatorUrl}
                 />
             );

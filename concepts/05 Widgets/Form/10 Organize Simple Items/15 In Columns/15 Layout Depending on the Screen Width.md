@@ -59,6 +59,100 @@ The **Form** widget enables you to specify different layouts for different scree
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <dx-form
+            :form-data="employee"
+            :col-count-by-screen="colCountByScreen"
+            :screen-by-width="screenByWidth" />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO',
+        hireDate: new Date(2012, 4, 13)
+    }
+
+    export default {
+        components: {
+            DxForm
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+        computed: {
+            colCountByScreen() {
+                return {
+                    xs: 1,
+                    sm: 2,
+                    md: 3
+                    lg: 4
+                };
+            }
+        },
+        methods: {
+            screenByWidth(width) {
+                if (width < 768)  return 'xs';
+                if (width < 992)  return 'sm';
+                if (width < 1200) return 'md';
+                return 'lg';
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO',
+        hireDate: new Date(2012, 4, 13)
+    };
+    const colCountByScreen = {
+        xs: 1,
+        sm: 2,
+        md: 3
+        lg: 4
+    };
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}
+                    colCountByScreen={colCountByScreen}
+                    screenByWidth={screenByWidth} />
+            );
+        }
+    }
+
+    function screenByWidth(width) {
+        if (width < 768)  return 'xs';
+        if (width < 992)  return 'sm';
+        if (width < 1200) return 'md';
+        return 'lg';
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

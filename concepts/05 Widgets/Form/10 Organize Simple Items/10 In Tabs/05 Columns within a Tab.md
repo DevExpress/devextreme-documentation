@@ -79,4 +79,104 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <dx-form
+            :form-data="employee"
+            :col-count="2">
+            <dx-item data-field="name"></dx-item>
+            <dx-item item-type="tabbed" :col-span="2">
+                <dx-tab
+                    title="Info"
+                    :col-span="2"
+                    :col-count="3">
+                        <dx-item data-field="position"></dx-item>
+                        <dx-item data-field="hireDate"></dx-item>
+                        <dx-item data-field="city"></dx-item>
+                </dx-tab>
+                <dx-tab
+                    title="Contacts"
+                    :col-count="2">
+                        <dx-item data-field="phone"></dx-item>
+                        <dx-item data-field="email"></dx-item>
+                </dx-tab>
+            </dx-item>
+        </dx-form>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxItem, DxTab } from 'devextreme-vue/form';
+
+    const employee = {
+        name: 'John Heart',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxItem, DxTab
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, Item, Tab } from 'devextreme-react/form';
+
+    const employee = {
+        name: 'John Heart',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}
+                    colCount={2}>
+                    <Item dataField="name"></Item>
+                    <Item itemType="tabbed" colSpan={2}>
+                        <Tab
+                            title="Info"
+                            colSpan={2}
+                            colCount={3}>
+                                <Item dataField="position"></Item>
+                                <Item dataField="hireDate"></Item>
+                                <Item dataField="city"></Item>
+                        </Tab>
+                        <Tab
+                            title="Contacts"
+                            colCount={2}>
+                                <Item dataField="phone"></Item>
+                                <Item dataField="email"></Item>
+                        </Tab>
+                    </Item>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
+
 ---

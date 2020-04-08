@@ -41,6 +41,78 @@ The **Form** widget can have a fixed number of columns in the layout...
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :col-count="3">
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="position" />
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxSimpleItem
+    } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxSimpleItem
+        },
+        data() {
+            return {
+                employee: {
+                    firstName: 'John',
+                    lastName: 'Heart',
+                    position: 'CEO'
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        SimpleItem
+    } from 'devextreme-react/form';
+
+
+    class App extends React.Component {
+        employee = {
+            firstName: 'John',
+            lastName: 'Heart',
+            position: 'CEO'
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}
+                    colCount={3}>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="position" />
+                </Form>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 ... or it can vary the number of columns depending on the width of the container. To enable the latter mode, assign *"auto"* to the [colCount](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount') option and specify the minimum column width using the [minColWidth](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/minColWidth.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#minColWidth') option. In this case, the maximum number of columns the layout can fit equals to `floor(container_width / minColWidth)`. Note that [groups](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Groups/') and [tabs](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Tabs/') can also have their own multi-column layouts inside.

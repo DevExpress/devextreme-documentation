@@ -91,6 +91,129 @@ The **Form** widget allows you to specify custom templates for an individual tab
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <dx-form
+            :form-data="employee">
+                <template #tab="{ data }">
+                    <p style="color:red">{{ data.title }}</p>
+                </template>
+                <template #tabContent="{ data }">
+                    <p>
+                        <i>By filling out this form, you agree
+                        to the terms of the <a href='#'>Data Protection Policy</a></i>
+                    </p>
+                </template>
+                <dx-item data-field="name"></dx-item>
+                <dx-item item-type="tabbed" :col-span="2">
+                    <dx-tab
+                        title="Data Protection Policy"
+                        tab-template="tab"
+                        template="tabContent" />
+                    <dx-tab title="Info">
+                        <dx-item data-field="position"></dx-item>
+                        <dx-item data-field="hireDate"></dx-item>
+                        <dx-item data-field="city"></dx-item>
+                    </dx-tab>
+                    <dx-tab title="Contacts">
+                        <dx-item data-field="phone"></dx-item>
+                        <dx-item data-field="email"></dx-item>
+                    </dx-tab>
+                </dx-item>
+        </dx-form>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxItem, DxTab } from 'devextreme-vue/form';
+
+    const employee = {
+        name: 'John Heart',
+        birthDate: new Date(1964, 3, 15),
+        position: 'CEO',
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxItem, DxTab
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, Item, Tab } from 'devextreme-react/form';
+
+    const employee = {
+        name: 'John Heart',
+        birthDate: new Date(1964, 3, 15),
+        position: 'CEO',
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}>
+                        <Item dataField="name"></Item>
+                        <Item itemType="tabbed" colSpan={2}>
+                            <Tab
+                                title="Data Protection Policy"
+                                tabRender={tabRender}
+                                render={tabContentRender} />
+                            <Tab title="Info">
+                                <Item dataField="position"></Item>
+                                <Item dataField="hireDate"></Item>
+                                <Item dataField="city"></Item>
+                            </Tab>
+                            <Tab title="Contacts">
+                                <Item dataField="phone"></Item>
+                                <Item dataField="email"></Item>
+                            </Tab>
+                        </Item>
+                </Form>
+            );
+        }
+    }
+
+    function tabRender(data) {
+        return (
+            <p style={{color:'red'}}>{ data.title }</p>
+        );
+    }
+
+
+    function tabContentRender(data) {
+        return (
+            <p>
+                <i>By filling out this form, you agree
+                to the terms of the <a href='#'>Data Protection Policy</a></i>
+            </p>
+        );
+    }    
+
+    export default App;
+
 ---
 
 #####See Also#####

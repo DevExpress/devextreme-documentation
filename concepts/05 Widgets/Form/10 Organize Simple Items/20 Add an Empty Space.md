@@ -52,6 +52,81 @@ If you need to add an empty space between neighboring items, use an [empty item]
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :col-count="2">
+            <dx-item item-type="empty"></dx-item>
+            <dx-item data-field="firstName"></dx-item>
+            <dx-item item-type="empty" :col-span="2"></dx-item>
+            <dx-item data-field="lastName"></dx-item>
+            <dx-item data-field="position"></dx-item>
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxItem
+    } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxItem,
+        },
+        data() {
+            return {
+                employee: {
+                    firstName: 'John',
+                    lastName: 'Heart',
+                    position: 'CEO'
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        Item
+    } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        employee = {
+            firstName: 'John',
+            lastName: 'Heart',
+            position: 'CEO'
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}
+                    colCount={2}>
+                    <Item itemType="empty"></Item>
+                    <Item dataField="firstName"></Item>
+                    <Item itemType="empty" colSpan={2}></Item>
+                    <Item dataField="lastName"></Item>
+                    <Item dataField="position"></Item>
+                </Form>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

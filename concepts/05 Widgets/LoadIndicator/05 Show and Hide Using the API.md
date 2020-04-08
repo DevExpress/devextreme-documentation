@@ -160,7 +160,7 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
 
 ---
 
-With Angular or AngularJS, bind the [visible](/api-reference/10%20UI%20Widgets/Widget/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadIndicator/Configuration/#visible') property of the **LoadIndicator** widget to a component property (in Angular) a scope property (in AngularJS). After that, change this property/variable, and the **LoadIndicator** will appear or disappear.
+With Angular or AngularJS, bind the [visible](/api-reference/10%20UI%20Widgets/Widget/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadIndicator/Configuration/#visible') property of the **LoadIndicator** widget to a component property (in Angular) or a scope property (in AngularJS). After that, change this property/variable, and the **LoadIndicator** will appear or disappear.
 
 ---
 ##### Angular

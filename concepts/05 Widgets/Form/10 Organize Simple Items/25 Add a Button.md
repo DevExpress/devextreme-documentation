@@ -68,6 +68,106 @@ You can add a button that performs a custom action using a [button item](/api-re
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :col-count="2">
+            <dx-item data-field="name"></dx-item>
+            <dx-item item-type="empty"></dx-item>
+            <dx-item data-field="email"></dx-item>
+            <dx-item 
+                item-type="button" 
+                alignment="left">
+                <dx-button-options 
+                    text="Send an Email"
+                    :on-click="buttonClick" />
+            </dx-item>
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        DxItem, DxButtonOptions
+    } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxItem, 
+            DxButtonOptions
+        },
+        data() {
+            return {
+                employee: {
+                    name: 'John Heart',
+                    email: 'jheart@dx-email.com'
+                }
+            }
+        },
+        methods: {
+            buttonClick(e) {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        Item, ButtonOptions
+    } from 'devextreme-react/form';
+
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.buttonClick = this.buttonClick.bind(this);
+        }
+
+        employee = {
+            name: 'John Heart',
+            email: 'jheart@dx-email.com'
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}
+                    colCount={2}>
+                    <Item dataField="name"></Item>
+                    <Item itemType="empty"></Item>
+                    <Item dataField="email"></Item>
+                    <Item 
+                        itemType="button" 
+                        alignment="left">
+                        <ButtonOptions
+                            text="Send an Email"
+                            onClick={this.buttonClick} />
+                    </Item>
+                </Form>
+            );
+        }
+
+        buttonClick(e) {
+            // ...
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

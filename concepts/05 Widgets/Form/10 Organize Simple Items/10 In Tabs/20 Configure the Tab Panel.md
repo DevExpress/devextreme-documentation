@@ -69,7 +69,7 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
                 <dx-item data-field="firstName"></dx-item>
                 <dx-item data-field="lastName"></dx-item>
                 <dx-item item-type="tabbed">
-                    <DxTabPanelOptions
+                    <dx-tab-panel-options
                         height="250"
                         :on-title-click="tabPanelTitleClick"
                     />

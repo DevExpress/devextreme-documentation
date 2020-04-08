@@ -40,6 +40,78 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <dx-form
+            @field-data-changed="formFieldDataChanged">
+            <dx-item data-field="firstName" editor-type="dxTextBox"></dx-item>
+            <dx-item data-field="lastName"  editor-type="dxTextBox"></dx-item>
+            <dx-item data-field="birthDate" editor-type="dxDateBox"></dx-item>            
+        </dx-form>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxItem } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm, DxItem
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+        methods: {
+            formFieldDataChanged(e) {
+                let updatedField = e.dataField;
+                let newValue = e.value;
+                // Event handling commands go here
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, Item } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.formFieldDataChanged = this.formFieldDataChanged.bind(this);
+        }
+
+        render() {
+            return (
+                <Form
+                    onFieldDataChanged={this.formFieldDataChanged}>
+                    <Item dataField="firstName" editorType="dxTextBox"></Item>
+                    <Item dataField="lastName"  editorType="dxTextBox"></Item>
+                    <Item dataField="birthDate" editorType="dxDateBox"></Item>
+                </Form>
+            );
+        }
+
+        formFieldDataChanged(e) {
+            let updatedField = e.dataField;
+            let newValue = e.value;
+            // Event handling commands go here
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the **fieldDataChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

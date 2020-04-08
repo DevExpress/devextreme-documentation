@@ -23,8 +23,12 @@ To change the options of an editor, get its instance first using the [getEditor(
 
 [note]The **getEditor(dataField)** method is available for visible form items only.
 
-With Angular, bind the option to change in the [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component or element property.
-    
+With Angular, Vue or React, bind the option to change in the [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component or element property.
+
+---
+
+##### Angular
+
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
@@ -57,6 +61,107 @@ With Angular, bind the option to change in the [editorOptions](/api-reference/10
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <dx-form
+                :form-data="employee">
+                <dx-item data-field="firstName" :editor-options="{disabled: isFirstNameDisabled}"></dx-item>
+                <dx-item data-field="lastName">
+                </dx-item>
+                <dx-item data-field="phone"></dx-item>
+                <dx-item data-field="email"></dx-item>
+            </dx-form>
+            <dx-check-box
+                text="Disable the First Name Editor"
+                :value.sync="isFirstNameDisabled" />
+        </div>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxCheckBox } from 'devextreme-vue';
+    import { DxItem } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxItem, DxCheckBox
+        },
+        data() {
+            return {
+                employee,
+                isFirstNameDisabled: true
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, CheckBox } from 'devextreme-react';
+    import { Item } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.state = {
+                isFirstNameDisabled: true
+            };
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);            
+        };
+
+        render() {
+            return (
+                <div>
+                    <Form
+                        formData={employee}>
+                        <Item dataField="firstName" editorOptions={{disabled: this.state.isFirstNameDisabled}}></Item>
+                        <Item dataField="lastName"></Item>
+                        <Item dataField="phone"></Item>
+                        <Item dataField="email"></Item>
+                    </Form>                        
+                    <CheckBox
+                        text="Show the Phone Number"
+                        value={this.state.isFirstNameDisabled}
+                        onValueChanged={this.onCheckBoxValueChanged } />
+                </div>
+            );
+        }
+
+        onCheckBoxValueChanged(e) {
+            this.setState(() => {
+                return { isFirstNameDisabled: e.value };
+            });            
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 #include common-link-callmethods

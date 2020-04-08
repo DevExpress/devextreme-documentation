@@ -51,6 +51,78 @@ Not only you can bind the **Form** to an existing data object, but you can also 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <dx-form
+            @field-data-changed="formFieldDataChanged">
+            <dx-item data-field="firstName" editor-type="dxTextBox"></dx-item>
+            <dx-item data-field="lastName"  editor-type="dxTextBox"></dx-item>
+            <dx-item data-field="birthDate" editor-type="dxDateBox"></dx-item>            
+        </dx-form>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxItem } from 'devextreme-vue/form';
+
+    const employee = { };
+
+    export default {
+        components: {
+            DxForm, DxItem
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+        methods: {
+            formFieldDataChanged(e) {
+                this.employee = e.component.option("formData");
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, Item } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.formFieldDataChanged = this.formFieldDataChanged.bind(this);
+        }
+        
+        employee = { };
+
+        render() {
+            return (
+                <Form
+                    onFieldDataChanged={this.formFieldDataChanged}>
+                    <Item dataField="firstName" editorType="dxTextBox"></Item>
+                    <Item dataField="lastName"  editorType="dxTextBox"></Item>
+                    <Item dataField="birthDate" editorType="dxDateBox"></Item>
+                </Form>
+            );
+        }
+
+        formFieldDataChanged(e) {
+            this.employee = e.component.option("formData");
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

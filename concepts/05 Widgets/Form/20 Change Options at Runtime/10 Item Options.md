@@ -42,8 +42,12 @@ Being called with the *field* parameter only, this method returns the current co
         });
     });
 
-With Angular, bind the option to change to a component or element property.
-    
+With Angular, Vue or React, bind the option to change to a component or element property.
+
+---
+
+##### Angular
+
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
@@ -78,6 +82,110 @@ With Angular, bind the option to change to a component or element property.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <dx-form
+                :form-data="employee">
+                <dx-item data-field="firstName"></dx-item>
+                <dx-item data-field="lastName"></dx-item>
+                <dx-item item-type="group" caption="Contacts">
+                    <dx-item data-field="phone" :visible="isPhoneVisible"></dx-item>
+                    <dx-item data-field="email"></dx-item>
+                </dx-item>                
+            </dx-form>
+            <dx-check-box
+                text="Show the Phone Number"
+                :value.sync="isPhoneVisible" />
+        </div>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxCheckBox } from 'devextreme-vue';
+    import { DxItem } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxItem, DxCheckBox
+        },
+        data() {
+            return {
+                employee,
+                isPhoneVisible: true
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, CheckBox } from 'devextreme-react';
+    import { Item } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.state = {
+                isPhoneVisible: true
+            };
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);            
+        };
+
+        render() {
+            return (
+                <div>
+                    <Form
+                        formData={employee}>
+                        <Item dataField="firstName"></Item>
+                        <Item dataField="lastName"></Item>
+                        <Item item-type="group" caption="Contacts">
+                            <Item dataField="phone" visible={this.state.isPhoneVisible}></Item>
+                            <Item dataField="email"></Item>
+                        </Item>
+                    </Form>                        
+                    <CheckBox
+                        text="Show the Phone Number"
+                        value={this.state.isPhoneVisible}
+                        onValueChanged={this.onCheckBoxValueChanged } />
+                </div>
+            );
+        }
+
+        onCheckBoxValueChanged(e) {
+            this.setState(() => {
+                return { isPhoneVisible: e.value };
+            });            
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 #include common-link-callmethods

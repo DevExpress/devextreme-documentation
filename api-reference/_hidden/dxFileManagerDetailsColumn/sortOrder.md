@@ -6,7 +6,8 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the sort order of column values.
 
 ---
-<!-- Description goes here -->
+
+Use the **sortOrder** and the [sortIndex](/api-reference/_hidden/dxFileManagerDetailsColumn/sortIndex.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/details/columns/#sortIndex') options to sort file system items by multiple columns.

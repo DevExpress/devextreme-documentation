@@ -36,4 +36,4 @@ The current edge's data object.
         //...
     ];
 
-[note] If an egde is connected to a node, an extreme point's coordinates are calculated by the widget. For this reason the corresponding points specified in a data source are ignored.
+[note] If an edge is connected to nodes, the widget calculates coordinates of connection points and points specified in a data source are ignored.

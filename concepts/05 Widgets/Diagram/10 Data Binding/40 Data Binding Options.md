@@ -1,4 +1,4 @@
-The **Diagram** widget allows you to bind [node's](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes) and [edge's](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges) settings to a database. Binding options have postfix _'Expr'_ and can contain a name of a data source field or an expression that returns the corresponding node's or edge's data.
+The **Diagram** widget allows you to bind [node](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes) and [edge](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges) settings to a database. Binding options have postfix _'Expr'_ and can contain a data source field name or an expression that returns the corresponding node or edge data.
 
     <!--JavaScript-->
     $(function() {
@@ -26,7 +26,7 @@ The **Diagram** widget allows you to bind [node's](/Documentation/ApiReference/U
         
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
 
-When you bind **Diagram** to a data source you must specify options that allow the widget to create a diagram structure. A set of required options depends on the source data structure.
+When you bind **Diagram** to a data source, specify widget options to allow diagram structure creation. Required options depend on the source data structure.
 
 - [Node and Edge Arrays](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Node_and_Edge_Arrays). Required options: [nodes.keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr'), [edges.keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#keyExpr'), [edges.fromExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/fromExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromExpr'), [edges.toExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/toExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr')
 
@@ -34,14 +34,14 @@ When you bind **Diagram** to a data source you must specify options that allow t
 
 - [Hierarchical Array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array). Required node options: [keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr'), [itemsExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/itemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#itemsExpr')
 
-The tables below lists all node's and edge's binding options.
+See tables below for a list of all node and edge binding options.
 <div class="simple-table">
   <table>
     <thead>
     <tr>
       <th>Node Option</th>
       <th>Value the option should return</th>
-      <th>Example of a return value</th>
+      <th>Sample return value</th>
     </tr>
     </thead>
     <tbody>
@@ -52,7 +52,7 @@ The tables below lists all node's and edge's binding options.
     </tr>
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a></td>
-      <td>A key of a node's parent container node. The parent container node must be of the <i>verticalContainer</i> or <i>horizontalContainer</i> type. Excludes <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr">childrenExpr</a>.</td>
+      <td>A parent container node key. The parent container node must be of the <i>verticalContainer</i> or <i>horizontalContainer</i> type. Excludes <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr">childrenExpr</a>.</td>
       <td>containerKey: "102",</td>
     </tr>   
     <tr>
@@ -87,16 +87,16 @@ The tables below lists all node's and edge's binding options.
     </tr>
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#parentKeyExpr">parentKeyExpr</a></td>
-      <td>A parent node key for a node.</td>
+      <td>A parent node key.</td>
       <td>key: "101",</td>
     </tr> 
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#styleExpr">styleExpr</a></td>
-      <td>A node style.</td>
+      <td>A node's style.</td>
       <td>style: { "stroke": "red" },</td>
     </tr>
     <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#textExpr">textExpr</a></td>
-      <td>A node text.</td>
+      <td>A node's text.</td>
       <td>text: "ASP.NET",</td>
     </tr> 
     <tr>
@@ -111,7 +111,7 @@ The tables below lists all node's and edge's binding options.
     </tr> 
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#typeExpr">typeExpr</a></td>
-      <td>The shape type for a node. The built-in shape types are shown in the <a href="/Documentation/Guide/Widgets/Diagram/Shape_Types/">Shape Types</a> section.</td>
+      <td>A node's shape type. Built-in shape types are shown in the <a href="/Documentation/Guide/Widgets/Diagram/Shape_Types/">Shape Types</a> section.</td>
       <td>type: "horizontalContainer",</td>
     </tr>
     <tr>
@@ -121,7 +121,7 @@ The tables below lists all node's and edge's binding options.
     </tr> 
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#zIndexExpr">zIndexExpr</a></td>
-      <td>A node stack order.</td>
+      <td>A node's z-index.</td>
       <td>zIndex: 1,</td>
     </tr>
     </tbody>
@@ -134,7 +134,7 @@ The tables below lists all node's and edge's binding options.
     <tr>
       <th>Edge Option</th>
       <th>Value the option should return</th>
-      <th>Example of a return value</th>
+      <th>Sample return value</th>
     </tr>
     </thead>
     <tbody>
@@ -150,12 +150,12 @@ The tables below lists all node's and edge's binding options.
     </tr>   
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromPointIndexExpr">fromPointIndexExpr</a></td>
-      <td>An index of a shape connection point where an edge starts.</td>
+      <td>A shape's connection point index where an edge begins.</td>
       <td>fromPointIndex: 1,</td>
     </tr> 
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#keyExpr">keyExpr</a></td>
-      <td>An edge key.</td>
+      <td>An edge's key.</td>
       <td>key: "1",</td>
     </tr> 
     <tr>
@@ -175,12 +175,12 @@ The tables below lists all node's and edge's binding options.
     </tr> 
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#styleExpr">styleExpr</a></td>
-      <td>An edge style.</td>
+      <td>An edge's style.</td>
       <td>style: {"stroke-dasharray":"4"},</td>
     </tr>
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#textExpr">textExpr</a></td>
-      <td>An edge text.</td>
+      <td>An edge's text.</td>
       <td>text: "yes",</td>
     </tr>    
     <tr>
@@ -199,13 +199,13 @@ The tables below lists all node's and edge's binding options.
       <td>toLineEnd: "filledTriangle",</td>
     </tr>
     <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toPointIndexExpr">toPointIndexExpr</a></td>
-      <td>An index of a shape connection point where an edge ends.</td>
+      <td>A shape's connection point index where an edge ends.</td>
       <td>toPointIndex: 11,</td>
     </tr> 
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#zIndexExpr">zIndexExpr</a></td>
-      <td>An edge stack order.</td>
-      <td>zIndex: 1,</td>
+      <td>A edge's z-index.</td>
+      <td>zIndex: 0,</td>
     </tr>
     </tbody>
   </table>

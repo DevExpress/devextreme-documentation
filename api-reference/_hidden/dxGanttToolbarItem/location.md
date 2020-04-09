@@ -4,7 +4,6 @@ default: 'before'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the toolbar item's location.
 
 ---
-<!-- Description goes here -->

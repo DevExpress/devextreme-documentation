@@ -5,7 +5,6 @@ default: 'color'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the data field that provides tasks' color.
 
 ---
-<!-- Description goes here -->

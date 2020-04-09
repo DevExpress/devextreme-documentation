@@ -4,7 +4,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Switches the widget to a right-to-left representation.
 
 ---
-<!-- Description goes here -->

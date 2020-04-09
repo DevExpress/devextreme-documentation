@@ -4,7 +4,6 @@ inherits: dxToolbarItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the toolbar item.
 
 ---
-<!-- Description goes here -->

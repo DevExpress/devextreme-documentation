@@ -95,11 +95,11 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-form
+            <DxForm
                 :form-data="employee" />
-            <dx-button
+            <DxButton
                 text="Update the Phone Number"
-                @click="updatePhoneClick" />              
+                @click="updatePhoneClick" />
         </div>
     </template>
     <script>

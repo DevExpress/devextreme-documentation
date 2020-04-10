@@ -64,31 +64,31 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee">
-                <dx-item data-field="firstName"></dx-item>
-                <dx-item data-field="lastName"></dx-item>
-                <dx-item item-type="tabbed">
-                    <dx-tab-panel-options
+                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="lastName" />
+                <DxTabbedItem>
+                    <DxTabPanelOptions
                         height="250"
                         :on-title-click="tabPanelTitleClick"
                     />
-                    <dx-tab title="Info">
-                        <dx-item data-field="hireDate"></dx-item>
-                        <dx-item data-field="city"></dx-item>
-                    </dx-tab>
-                    <dx-tab title="Contacts">
-                        <dx-item data-field="phone"></dx-item>
-                        <dx-item data-field="email"></dx-item>
-                    </dx-tab>                         
-                </dx-item>
-        </dx-form>
+                    <DxTab title="Info">
+                        <DxSimpleItem data-field="hireDate" />
+                        <DxSimpleItem data-field="city" />
+                    </DxTab>
+                    <DxTab title="Contacts">
+                        <DxSimpleItem data-field="phone" />
+                        <DxSimpleItem data-field="email" />
+                    </DxTab>                         
+                </DxTabbedItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem, DxTab, DxTabPanelOptions } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxTabbedItem, DxTab, DxTabPanelOptions } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -101,7 +101,7 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
 
     export default {
         components: {
-            DxForm, DxItem, DxTab, DxTabPanelOptions
+            DxForm, DxSimpleItem, DxTabbedItem, DxTab, DxTabPanelOptions
         },
         data() {
             return {

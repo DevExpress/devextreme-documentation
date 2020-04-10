@@ -69,27 +69,27 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee">
-            <dx-item data-field="name"></dx-item>
-            <dx-item itemType="tabbed">
-                <dx-tab title="Info">
-                    <dx-item data-field="position"></dx-item>
-                    <dx-item data-field="hireDate"></dx-item>
-                    <dx-item data-field="city"></dx-item>
-                </dx-tab>
-                <dx-tab title="Contacts">
-                    <dx-item data-field="phone"></dx-item>
-                    <dx-item data-field="email"></dx-item>
-                </dx-tab>
-            </dx-item>
-        </dx-form>
+            <DxSimpleItem data-field="name" />
+            <DxTabbedItem>
+                <DxTab title="Info">
+                    <DxSimpleItem data-field="position" />
+                    <DxSimpleItem data-field="hireDate" />
+                    <DxSimpleItem data-field="city" />
+                </DxTab>
+                <DxTab title="Contacts">
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem, DxTab } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
 
     const employee = {
         name: 'John Heart',
@@ -101,7 +101,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
 
     export default {
         components: {
-            DxForm, DxItem, DxTab
+            DxForm, DxSimpleItem, DxTabbedItem, DxTab
         },
         data() {
             return {
@@ -119,7 +119,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item, Tab } from 'devextreme-react/form';
+    import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -134,16 +134,16 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
             return (
                 <Form
                     formData={employee}>
-                    <Item dataField="name"></Item>
-                    <Item itemType="tabbed">
+                    <SimpleItem dataField="name" />
+                    <TabbedItem>
                         <Tab title="Info">
-                            <Item dataField="position"></Item>
-                            <Item dataField="hireDate"></Item>
-                            <Item dataField="city"></Item>
+                            <SimpleItem dataField="position" />
+                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="city" />
                         </Tab>
                         <Tab title="Contacts">
-                            <Item dataField="phone"></Item>
-                            <Item dataField="email"></Item>
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
                         </Tab>
                     </Item>
                 </Form>

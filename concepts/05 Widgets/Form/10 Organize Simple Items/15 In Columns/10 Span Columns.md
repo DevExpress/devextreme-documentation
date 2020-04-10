@@ -72,16 +72,15 @@ If an item should span more than one column, assign the required number to the [
         <DxForm
             :form-data="employee"
             :col-count="2">
-            <dx-item data-field="firstName"></dx-item>
-            <dx-item data-field="lastName"></dx-item>
-            <dx-item data-field="notes" :col-span="2"></dx-item>
-            <dx-item item-type="tabbed" :col-span="2">
-                <dx-tab
-                    title="Contacts">
-                        <dx-item data-field="phone"></dx-item>
-                        <dx-item data-field="email"></dx-item>                    
-                </dx-tab>
-            </dx-item>
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="notes" :col-span="2" />
+            <DxTabbedItem :col-span="2">
+                <DxTab title="Contacts">
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
         </DxForm>
     </template>
 
@@ -89,15 +88,11 @@ If an item should span more than one column, assign the required number to the [
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxForm, {
-        DxItem, DxTab
-    } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
 
     export default {
         components: {
-            DxForm,
-            DxItem, 
-            DxTab
+            DxForm, DxSimpleItem, DxTabbedItem, DxTab
         },
         data() {
             return {
@@ -121,9 +116,7 @@ If an item should span more than one column, assign the required number to the [
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Form, {
-        Item, Tab
-    } from 'devextreme-react/form';
+    import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 
 
     class App extends React.Component {
@@ -140,16 +133,15 @@ If an item should span more than one column, assign the required number to the [
                 <Form
                     formData={this.employee}
                     colCount={2}>
-                    <Item dataField="firstName"></Item>
-                    <Item dataField="lastName"></Item>
-                    <Item dataField="notes" colSpan={2}></Item>
-                    <Item itemType="tabbed" colSpan={2}>
-                        <Tab
-                            title="Contacts">
-                                <Item dataField="phone"></Item>
-                                <Item dataField="email"></Item>                    
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="notes" colSpan={2} />
+                    <TabbedItem colSpan={2}>
+                        <Tab title="Contacts">
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
                         </Tab>
-                    </Item>
+                    </TabbedItem>
                 </Form>
             );
         }

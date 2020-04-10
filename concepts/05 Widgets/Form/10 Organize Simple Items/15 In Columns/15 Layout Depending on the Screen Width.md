@@ -63,7 +63,7 @@ The **Form** widget enables you to specify different layouts for different scree
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee"
             :col-count-by-screen="colCountByScreen"
             :screen-by-width="screenByWidth" />
@@ -72,7 +72,7 @@ The **Form** widget enables you to specify different layouts for different scree
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm } from 'devextreme-vue/form';
+    import DxForm from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',

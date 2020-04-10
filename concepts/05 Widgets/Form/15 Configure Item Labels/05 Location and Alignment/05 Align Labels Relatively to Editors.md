@@ -60,24 +60,24 @@ The **Form** widget displays labels on the left side of their editors and aligns
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee"
             label-location="top"> <!-- or "left" | "right" -->
-            <dx-item data-field="firstName"></dx-item>
-            <dx-item data-field="lastName"></dx-item>
-            <dx-item data-field="phone">
-                <dx-label
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="phone">
+                <DxLabel
                     location="left"
                     alignment="right"> <!-- or "left" | "center" -->
-                </dx-label>
-            </dx-item>  
-        </dx-form>
+                </DxLabel>
+            </DxSimpleItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem, DxLabel } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -87,7 +87,7 @@ The **Form** widget displays labels on the left side of their editors and aligns
 
     export default {
         components: {
-            DxForm, DxItem, DxLabel
+            DxForm, DxSimpleItem, DxLabel
         },
         data() {
             return {
@@ -105,7 +105,7 @@ The **Form** widget displays labels on the left side of their editors and aligns
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item, Label } from 'devextreme-react/form';
+    import { Form, SimpleItem, Label } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -119,14 +119,14 @@ The **Form** widget displays labels on the left side of their editors and aligns
                 <Form
                     formData={employee}
                     labelLocation="top"> { /* or "left" | "right" */ }
-                    <Item dataField="firstName"></Item>
-                    <Item dataField="lastName"></Item>
-                    <Item dataField="phone">
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="phone">
                         <Label
                             location="left"
                             alignment="right"> { /* or "left" | "right" */ }
                         </Label>
-                    </Item>             
+                    </SimpleItem>
                 </Form>
             );
         }

@@ -61,10 +61,10 @@ With Angular, Vue or React, bind the option to change to a component or element 
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-form
+            <DxForm
                 :form-data="employee"
                 :disabled="isFormDisabled" />
-            <dx-check-box
+            <DxCheckBox
                 text="Disable the Form"
                 :value.sync="isFormDisabled" />
         </div>
@@ -118,7 +118,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
             this.state = {
                 isFormDisabled: false
             };
-            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);            
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
         };
 
         render() {
@@ -138,7 +138,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
         onCheckBoxValueChanged(e) {
             this.setState(() => {
                 return { isFormDisabled: e.value };
-            });            
+            });
         }
     }
 

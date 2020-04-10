@@ -67,15 +67,14 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-form
+            <DxForm
                 :form-data="employee">
-                <dx-item data-field="firstName" :editor-options="{disabled: isFirstNameDisabled}"></dx-item>
-                <dx-item data-field="lastName">
-                </dx-item>
-                <dx-item data-field="phone"></dx-item>
-                <dx-item data-field="email"></dx-item>
-            </dx-form>
-            <dx-check-box
+                <DxSimpleItem data-field="firstName" :editor-options="{disabled: isFirstNameDisabled}" />
+                <DxSimpleItem data-field="lastName" />
+                <DxSimpleItem data-field="phone" />
+                <DxSimpleItem data-field="email" />
+            </DxForm>
+            <DxCheckBox
                 text="Disable the First Name Editor"
                 :value.sync="isFirstNameDisabled" />
         </div>
@@ -85,7 +84,7 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxCheckBox } from 'devextreme-vue';
-    import { DxItem } from 'devextreme-vue/form';
+    import { DxSimpleItem } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -96,7 +95,7 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
 
     export default {
         components: {
-            DxForm, DxItem, DxCheckBox
+            DxForm, DxSimpleItem, DxCheckBox
         },
         data() {
             return {
@@ -116,7 +115,7 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, CheckBox } from 'devextreme-react';
-    import { Item } from 'devextreme-react/form';
+    import { SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -131,7 +130,7 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
             this.state = {
                 isFirstNameDisabled: true
             };
-            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);            
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
         };
 
         render() {
@@ -139,11 +138,11 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
                 <div>
                     <Form
                         formData={employee}>
-                        <Item dataField="firstName" editorOptions={{disabled: this.state.isFirstNameDisabled}}></Item>
-                        <Item dataField="lastName"></Item>
-                        <Item dataField="phone"></Item>
-                        <Item dataField="email"></Item>
-                    </Form>                        
+                        <SimpleItem dataField="firstName" editorOptions={{disabled: this.state.isFirstNameDisabled}} />
+                        <SimpleItem dataField="lastName" />
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </Form>
                     <CheckBox
                         text="Show the Phone Number"
                         value={this.state.isFirstNameDisabled}
@@ -155,7 +154,7 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
         onCheckBoxValueChanged(e) {
             this.setState(() => {
                 return { isFirstNameDisabled: e.value };
-            });            
+            });
         }
     }
 

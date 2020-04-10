@@ -83,33 +83,33 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee"
             :col-count="2">
-            <dx-item data-field="name"></dx-item>
-            <dx-item item-type="tabbed" :col-span="2">
-                <dx-tab
+            <DxSimpleItem data-field="name" />
+            <DxTabbedItem :col-span="2">
+                <DxTab
                     title="Info"
                     :col-span="2"
                     :col-count="3">
-                        <dx-item data-field="position"></dx-item>
-                        <dx-item data-field="hireDate"></dx-item>
-                        <dx-item data-field="city"></dx-item>
-                </dx-tab>
-                <dx-tab
+                        <DxSimpleItem data-field="position" />
+                        <DxSimpleItem data-field="hireDate" />
+                        <DxSimpleItem data-field="city" />
+                </DxTab>
+                <DxTab
                     title="Contacts"
                     :col-count="2">
-                        <dx-item data-field="phone"></dx-item>
-                        <dx-item data-field="email"></dx-item>
-                </dx-tab>
-            </dx-item>
-        </dx-form>
+                        <DxSimpleItem data-field="phone" />
+                        <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem, DxTab } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
 
     const employee = {
         name: 'John Heart',
@@ -121,7 +121,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
 
     export default {
         components: {
-            DxForm, DxItem, DxTab
+            DxForm, DxSimpleItem, DxTabbedItem, DxTab
         },
         data() {
             return {
@@ -139,7 +139,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item, Tab } from 'devextreme-react/form';
+    import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -155,23 +155,23 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
                 <Form
                     formData={employee}
                     colCount={2}>
-                    <Item dataField="name"></Item>
-                    <Item itemType="tabbed" colSpan={2}>
+                    <SimpleItem dataField="name" />
+                    <TabbedItem colSpan={2}>
                         <Tab
                             title="Info"
                             colSpan={2}
                             colCount={3}>
-                                <Item dataField="position"></Item>
-                                <Item dataField="hireDate"></Item>
-                                <Item dataField="city"></Item>
+                                <SimpleItem dataField="position" />
+                                <SimpleItem dataField="hireDate" />
+                                <SimpleItem dataField="city" />
                         </Tab>
                         <Tab
                             title="Contacts"
                             colCount={2}>
-                                <Item dataField="phone"></Item>
-                                <Item dataField="email"></Item>
+                                <SimpleItem dataField="phone" />
+                                <SimpleItem dataField="email" />
                         </Tab>
-                    </Item>
+                    </TabbedItem>
                 </Form>
             );
         }

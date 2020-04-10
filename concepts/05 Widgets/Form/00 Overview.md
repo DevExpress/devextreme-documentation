@@ -71,7 +71,7 @@ The following code adds the **Form** widget to your page. The simplest configura
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm } from 'devextreme-vue/form';
+    import DxForm from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',

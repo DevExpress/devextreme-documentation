@@ -64,16 +64,16 @@ To specify the mark or text for required and optional items, use the [requiredMa
             required-mark="!"
             optional-mark="opt"
             :show-optional-mark="true">
-            <dx-item data-field="firstName" :is-required="true"></dx-item>
-            <dx-item data-field="lastName"  :is-required="true"></dx-item>
-            <dx-item data-field="position"></dx-item>
+            <DxSimpleItem data-field="firstName" :is-required="true" />
+            <DxSimpleItem data-field="lastName"  :is-required="true" />
+            <DxSimpleItem data-field="position" />
         </dx-form>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -83,7 +83,7 @@ To specify the mark or text for required and optional items, use the [requiredMa
 
     export default {
         components: {
-            DxForm, DxItem
+            DxForm, DxSimpleItem
         },
         data() {
             return {
@@ -101,7 +101,7 @@ To specify the mark or text for required and optional items, use the [requiredMa
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item } from 'devextreme-react/form';
+    import { Form, SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -117,9 +117,9 @@ To specify the mark or text for required and optional items, use the [requiredMa
                         requiredMark="!"
                         optionalMark="opt"
                         showOptionalMark={true}>
-                        <Item dataField="firstName" isRequired={true}></Item>
-                        <Item dataField="lastName"  isRequired={true}></Item>
-                        <Item dataField="position"></Item>
+                        <SimpleItem dataField="firstName" isRequired={true} />
+                        <SimpleItem dataField="lastName"  isRequired={true} />
+                        <SimpleItem dataField="position" />
                 </Form>
             );
         }
@@ -184,21 +184,21 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data='employee'
             :show-colon-after-label="false">
-            <dx-item data-field="firstName"></dx-item>
-            <dx-item data-field="lastName"></dx-item>
-            <dx-item data-field="position">
-                <dx-label :show-colon="true"></dx-label>
-            </dx-item>
-        </dx-form>
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="position">
+                <DxLabel :show-colon="true" />
+            </DxSimpleItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem, DxLabel } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -208,7 +208,7 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
 
     export default {
         components: {
-            DxForm, DxItem, DxLabel
+            DxForm, DxSimpleItem, DxLabel
         },
         data() {
             return {
@@ -226,7 +226,7 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item, Label } from 'devextreme-react/form';
+    import { Form, SimpleItem, Label } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -240,11 +240,11 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
                 <Form
                     formData={employee}
                     showColonAfterLabel={false}>
-                    <Item dataField="firstName"></Item>
-                    <Item dataField="lastName"></Item>
-                    <Item dataField="position">
-                        <Label showColon={true}></Label>
-                    </Item>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="position">
+                        <Label showColon={true} />
+                    </SimpleItem>
                 </Form>
             );
         }

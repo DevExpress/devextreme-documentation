@@ -68,27 +68,25 @@ The **Form** widget allows you to place custom content, for example, an image, u
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form :form-data="employee">
+        <DxForm :form-data="employee">
             <template #pictureTemplate="{ data }">
                 <img :src="data.formData.picture"/>
             </template>
-            <dx-item
-                item-type="group"
+            <DxGroupItem
                 caption="Picture"
-                template="pictureTemplate"/>            
-            <dx-item
-                item-type="group"
+                template="pictureTemplate" />
+            <DxGroupItem
                 caption="Personal Data">
-                    <dx-item data-field="firstName"></dx-item>
-                    <dx-item data-field="lastName"></dx-item>
-            </dx-item>
-        </dx-form>
+                    <DxSimpleItem data-field="firstName" />
+                    <DxSimpleItem data-field="lastName" />
+            </DxGroupItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxGroupItem, DxSimpleItem } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -98,7 +96,7 @@ The **Form** widget allows you to place custom content, for example, an image, u
 
     export default {
         components: {
-            DxForm, DxItem
+            DxForm, DxGroupItem, DxSimpleItem
         },
         data() {
             return {
@@ -116,7 +114,7 @@ The **Form** widget allows you to place custom content, for example, an image, u
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item } from 'devextreme-react/form';
+    import { Form, GroupItem, SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -129,16 +127,14 @@ The **Form** widget allows you to place custom content, for example, an image, u
             return (
                 <Form
                     formData={employee}>
-                    <Item
-                        itemType="group"
+                    <GroupItem
                         caption="Picture"
                         render={pictureRender} />
-                    <Item
-                        itemType="group"
+                    <GroupItem
                         caption="Personal Data">
-                            <Item dataField="firstName"></Item>
-                            <Item dataField="lastName"></Item>
-                    </Item>
+                            <SimpleItem dataField="firstName" />
+                            <SimpleItem dataField="lastName" />
+                    </GroupItem>
                 </Form>
             );
         }

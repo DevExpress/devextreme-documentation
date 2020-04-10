@@ -59,11 +59,11 @@ If you need to add an empty space between neighboring items, use an [empty item]
         <DxForm
             :form-data="employee"
             :col-count="2">
-            <dx-item item-type="empty"></dx-item>
-            <dx-item data-field="firstName"></dx-item>
-            <dx-item item-type="empty" :col-span="2"></dx-item>
-            <dx-item data-field="lastName"></dx-item>
-            <dx-item data-field="position"></dx-item>
+            <DxEmptyItem />
+            <DxSimpleItem data-field="firstName" />
+            <DxEmptyItem :col-span="2" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="position" />
         </DxForm>
     </template>
 
@@ -71,14 +71,11 @@ If you need to add an empty space between neighboring items, use an [empty item]
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxForm, {
-        DxItem
-    } from 'devextreme-vue/form';
+    import { DxForm, DxEmptyItem, DxSimpleItem } from 'devextreme-vue/form';
 
     export default {
         components: {
-            DxForm,
-            DxItem,
+            DxForm, DxSimpleItem, DxEmptyItem
         },
         data() {
             return {
@@ -100,9 +97,7 @@ If you need to add an empty space between neighboring items, use an [empty item]
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Form, {
-        Item
-    } from 'devextreme-react/form';
+    import { Form, EmptyItem, SimpleItem } from 'devextreme-react/form';
 
     class App extends React.Component {
         employee = {
@@ -116,11 +111,11 @@ If you need to add an empty space between neighboring items, use an [empty item]
                 <Form
                     formData={this.employee}
                     colCount={2}>
-                    <Item itemType="empty"></Item>
-                    <Item dataField="firstName"></Item>
-                    <Item itemType="empty" colSpan={2}></Item>
-                    <Item dataField="lastName"></Item>
-                    <Item dataField="position"></Item>
+                    <EmptyItem />
+                    <SimpleItem dataField="firstName" />
+                    <EmptyItem colSpan={2} />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="position" />
                 </Form>
             );
         }

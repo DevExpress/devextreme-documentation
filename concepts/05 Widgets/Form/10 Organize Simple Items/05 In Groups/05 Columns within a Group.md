@@ -78,31 +78,29 @@ Items within a group can be organized in several columns. To specify the number 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee"
             :col-count="2"> <!-- Splits the Form layout in two columns -->
-            <dx-item
-                item-type="group"
+            <DxGroupItem
                 caption="Personal Data"
                 col-span="2"
                 col-count="3"> <!-- Organizes items inside this group in three columns -->
-                    <dx-item data-field="firstName"></dx-item>
-                    <dx-item data-field="lastName"></dx-item>
-                    <dx-item data-field="position"></dx-item>
-            </dx-item>
-            <dx-item
-                item-type="group"
+                    <DxSimpleItem data-field="firstName" />
+                    <DxSimpleItem data-field="lastName" />
+                    <DxSimpleItem data-field="position" />
+            </DxGroupItem>
+            <DxGroupItem
                 caption="Contacts">
-                    <dx-item data-field="phone"></dx-item>
-                    <dx-item data-field="email"></dx-item>
-            </dx-item>
-        </dx-form>
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+            </DxGroupItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxGroupItem, DxSimpleItem } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -114,7 +112,7 @@ Items within a group can be organized in several columns. To specify the number 
 
     export default {
         components: {
-            DxForm, DxItem
+            DxForm, DxGroupItem, DxSimpleItem
         },
         data() {
             return {
@@ -132,7 +130,7 @@ Items within a group can be organized in several columns. To specify the number 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item } from 'devextreme-react/form';
+    import { Form, GroupItem, SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -149,21 +147,19 @@ Items within a group can be organized in several columns. To specify the number 
                     formData={employee}
                     colCount={2} {/* Splits the Form layout in two columns */ }
                 >
-                    <Item
-                        itemType="group"
+                    <GroupItem
                         caption="Personal Data"
                         colSpan={2} {/* Makes this group span both general columns */ }
                         colCount={3}> {/* Organizes items inside this group in three columns */ }
-                            <Item dataField="firstName"></Item>
-                            <Item dataField="lastName"></Item>
-                            <Item dataField="position"></Item>
-                    </Item>
-                    <Item
-                        itemType="group"
+                            <SimpleItem dataField="firstName" />
+                            <SimpleItem dataField="lastName" />
+                            <SimpleItem dataField="position" />
+                    </GroupItem>
+                    <GroupItem
                         caption="Contacts">
-                            <Item dataField="phone"></Item>
-                            <Item dataField="email"></Item>
-                    </Item>
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
+                    </GroupItem>
                 </Form>
             );
         }

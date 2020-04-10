@@ -44,22 +44,22 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             @field-data-changed="formFieldDataChanged">
-            <dx-item data-field="firstName" editor-type="dxTextBox"></dx-item>
-            <dx-item data-field="lastName"  editor-type="dxTextBox"></dx-item>
-            <dx-item data-field="birthDate" editor-type="dxDateBox"></dx-item>            
-        </dx-form>
+            <DxSimpleItem data-field="firstName" editor-type="dxTextBox" />
+            <DxSimpleItem data-field="lastName"  editor-type="dxTextBox" />
+            <DxSimpleItem data-field="birthDate" editor-type="dxDateBox" />
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
 
     export default {
         components: {
-            DxForm, DxItem
+            DxForm, DxSimpleItem
         },
         data() {
             return {
@@ -84,7 +84,7 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item } from 'devextreme-react/form';
+    import { Form, SimpleItem } from 'devextreme-react/form';
 
     class App extends React.Component {
         constructor() {
@@ -96,9 +96,9 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
             return (
                 <Form
                     onFieldDataChanged={this.formFieldDataChanged}>
-                    <Item dataField="firstName" editorType="dxTextBox"></Item>
-                    <Item dataField="lastName"  editorType="dxTextBox"></Item>
-                    <Item dataField="birthDate" editorType="dxDateBox"></Item>
+                    <SimpleItem dataField="firstName" editorType="dxTextBox" />
+                    <SimpleItem dataField="lastName"  editorType="dxTextBox" />
+                    <SimpleItem dataField="birthDate" editorType="dxDateBox" />
                 </Form>
             );
         }

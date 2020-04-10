@@ -75,16 +75,14 @@ You can add a button that performs a custom action using a [button item](/api-re
         <DxForm
             :form-data="employee"
             :col-count="2">
-            <dx-item data-field="name"></dx-item>
-            <dx-item item-type="empty"></dx-item>
-            <dx-item data-field="email"></dx-item>
-            <dx-item 
-                item-type="button" 
-                alignment="left">
-                <dx-button-options 
+            <DxSimpleItem data-field="name" />
+            <DxEmptyItem />
+            <DxSimpleItem data-field="email" />
+            <DxButtonItem alignment="left">
+                <DxButtonOptions
                     text="Send an Email"
                     :on-click="buttonClick" />
-            </dx-item>
+            </DxButtonItem>
         </DxForm>
     </template>
 
@@ -92,15 +90,11 @@ You can add a button that performs a custom action using a [button item](/api-re
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxForm, {
-        DxItem, DxButtonOptions
-    } from 'devextreme-vue/form';
+    import { DxForm, DxEmptyItem, DxSimpleItem, DxButtonItem, DxButtonOptions } from 'devextreme-vue/form';
 
     export default {
         components: {
-            DxForm,
-            DxItem, 
-            DxButtonOptions
+            DxForm, DxEmptyItem, DxSimpleItem, DxButtonItem, DxButtonOptions
         },
         data() {
             return {
@@ -126,9 +120,7 @@ You can add a button that performs a custom action using a [button item](/api-re
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Form, {
-        Item, ButtonOptions
-    } from 'devextreme-react/form';
+    import { Form, EmptyItem, SimpleItem, ButtonItem, ButtonOptions } from 'devextreme-react/form';
 
 
     class App extends React.Component {
@@ -147,16 +139,14 @@ You can add a button that performs a custom action using a [button item](/api-re
                 <Form
                     formData={this.employee}
                     colCount={2}>
-                    <Item dataField="name"></Item>
-                    <Item itemType="empty"></Item>
-                    <Item dataField="email"></Item>
-                    <Item 
-                        itemType="button" 
-                        alignment="left">
+                    <SimpleItem dataField="name" />
+                    <EmptyItem />
+                    <SimpleItem dataField="email" />
+                    <ButtonItem alignment="left">
                         <ButtonOptions
                             text="Send an Email"
                             onClick={this.buttonClick} />
-                    </Item>
+                    </ButtonItem>
                 </Form>
             );
         }

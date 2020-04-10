@@ -88,16 +88,16 @@ With Angular, Vue or React, bind the option to change to a component or element 
     <!-- tab: App.vue -->
     <template>
         <div>
-            <dx-form
+            <DxForm
                 :form-data="employee">
-                <dx-item data-field="firstName"></dx-item>
-                <dx-item data-field="lastName"></dx-item>
-                <dx-item item-type="group" caption="Contacts">
-                    <dx-item data-field="phone" :visible="isPhoneVisible"></dx-item>
-                    <dx-item data-field="email"></dx-item>
-                </dx-item>                
-            </dx-form>
-            <dx-check-box
+                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="lastName" />
+                <DxGroupItem caption="Contacts">
+                    <DxSimpleItem data-field="phone" :visible="isPhoneVisible" />
+                    <DxSimpleItem data-field="email" />
+                </DxGroupItem>
+            </DxForm>
+            <DxCheckBox
                 text="Show the Phone Number"
                 :value.sync="isPhoneVisible" />
         </div>
@@ -107,7 +107,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxCheckBox } from 'devextreme-vue';
-    import { DxItem } from 'devextreme-vue/form';
+    import { DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -118,7 +118,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
 
     export default {
         components: {
-            DxForm, DxItem, DxCheckBox
+            DxForm, DxSimpleItem, DxGroupItem, DxCheckBox
         },
         data() {
             return {
@@ -138,7 +138,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, CheckBox } from 'devextreme-react';
-    import { Item } from 'devextreme-react/form';
+    import { SimpleItem, GroupItem } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -153,7 +153,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
             this.state = {
                 isPhoneVisible: true
             };
-            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);            
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
         };
 
         render() {
@@ -161,13 +161,13 @@ With Angular, Vue or React, bind the option to change to a component or element 
                 <div>
                     <Form
                         formData={employee}>
-                        <Item dataField="firstName"></Item>
-                        <Item dataField="lastName"></Item>
-                        <Item item-type="group" caption="Contacts">
-                            <Item dataField="phone" visible={this.state.isPhoneVisible}></Item>
-                            <Item dataField="email"></Item>
-                        </Item>
-                    </Form>                        
+                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="lastName" />
+                        <GroupItem caption="Contacts">
+                            <SimpleItem dataField="phone" visible={this.state.isPhoneVisible} />
+                            <SimpleItem dataField="email" />
+                        </GroupItem>
+                    </Form>
                     <CheckBox
                         text="Show the Phone Number"
                         value={this.state.isPhoneVisible}

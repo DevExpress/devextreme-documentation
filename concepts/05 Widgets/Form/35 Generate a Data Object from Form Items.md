@@ -55,24 +55,24 @@ Not only you can bind the **Form** to an existing data object, but you can also 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             @field-data-changed="formFieldDataChanged">
-            <dx-item data-field="firstName" editor-type="dxTextBox"></dx-item>
-            <dx-item data-field="lastName"  editor-type="dxTextBox"></dx-item>
-            <dx-item data-field="birthDate" editor-type="dxDateBox"></dx-item>            
-        </dx-form>
+            <DxSimpleItem data-field="firstName" editor-type="dxTextBox" />
+            <DxSimpleItem data-field="lastName"  editor-type="dxTextBox" />
+            <DxSimpleItem data-field="birthDate" editor-type="dxDateBox" />
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
 
     const employee = { };
 
     export default {
         components: {
-            DxForm, DxItem
+            DxForm, DxSimpleItem
         },
         data() {
             return {
@@ -95,7 +95,7 @@ Not only you can bind the **Form** to an existing data object, but you can also 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item } from 'devextreme-react/form';
+    import { Form, SimpleItem } from 'devextreme-react/form';
 
     class App extends React.Component {
         constructor() {
@@ -109,9 +109,9 @@ Not only you can bind the **Form** to an existing data object, but you can also 
             return (
                 <Form
                     onFieldDataChanged={this.formFieldDataChanged}>
-                    <Item dataField="firstName" editorType="dxTextBox"></Item>
-                    <Item dataField="lastName"  editorType="dxTextBox"></Item>
-                    <Item dataField="birthDate" editorType="dxDateBox"></Item>
+                    <SimpleItem dataField="firstName" editorType="dxTextBox" />
+                    <SimpleItem dataField="lastName"  editorType="dxTextBox" />
+                    <SimpleItem dataField="birthDate" editorType="dxDateBox" />
                 </Form>
             );
         }

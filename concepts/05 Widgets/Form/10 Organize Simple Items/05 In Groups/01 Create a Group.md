@@ -69,28 +69,26 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee">
-            <dx-item
-                item-type="group"
+            <DxGroupItem
                 caption="Personal Data">
                 <DxSimpleItem data-field="firstName" />
-                    <dx-item data-field="lastName"></dx-item>
-                    <dx-item data-field="position"></dx-item>
-            </dx-item>
-            <dx-item
-                item-type="group"
+                <DxSimpleItem data-field="lastName" />
+                <DxSimpleItem data-field="position" />
+            </DxGroupItem>
+            <DxGroupItem
                 caption="Contacts">
-                    <dx-item data-field="phone"></dx-item>
-                    <dx-item data-field="email"></dx-item>
-            </dx-item>
-        </dx-form>
+                <DxSimpleItem data-field="phone" />
+                <DxSimpleItem data-field="email" />
+            </DxGroupItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxGroupItem, DxSimpleItem } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -102,7 +100,7 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
 
     export default {
         components: {
-            DxForm, DxItem
+            DxForm, DxGroupItem, DxSimpleItem
         },
         data() {
             return {
@@ -120,7 +118,7 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item } from 'devextreme-react/form';
+    import { Form, GroupItem, SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -135,19 +133,17 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
             return (
                 <Form
                     formData={employee}>
-                    <Item
-                        itemType="group"
+                    <GroupItem
                         caption="Personal Data">
-                            <Item dataField="firstName"></Item>
-                            <Item dataField="lastName"></Item>
-                            <Item dataField="position"></Item>
-                    </Item>
-                    <Item
-                        itemType="group"
+                            <SimpleItem dataField="firstName" />
+                            <SimpleItem dataField="lastName" />
+                            <SimpleItem dataField="position" />
+                    </GroupItem>
+                    <GroupItem
                         caption="Contacts">
-                            <Item dataField="phone"></Item>
-                            <Item dataField="email"></Item>
-                    </Item>
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
+                    </GroupItem>
                 </Form>
             );
         }

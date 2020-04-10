@@ -1,4 +1,4 @@
-tBy default, the widget aligns all editors of all simple items in straight columns. To disable alignment, assign **false** to:
+By default, the widget aligns all editors of all simple items in straight columns. To disable alignment, assign **false** to:
 
 - [alignItemLabels](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/alignItemLabels.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#alignItemLabels') - for all _root_ simple items;
 - [alignItemLabelsInAllGroups](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/alignItemLabelsInAllGroups.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#alignItemLabelsInAllGroups') - for all simple items nested _in all groups_;
@@ -81,31 +81,27 @@ tBy default, the widget aligns all editors of all simple items in straight colum
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee"
             :align-item-labels="false"
             :align-item-labels-in-all-groups="false">
-            <dx-item data-field="firstName"></dx-item>
-            <dx-item data-field="lastName"></dx-item>
-            <dx-item 
-                item-type="group"
-                caption="Contacts">
-                    <dx-item data-field="phone"></dx-item>
-                    <dx-item data-field="firstName"></dx-item>
-            </dx-item>
-            <dx-item 
-                item-type="group"
-                caption="Misc Data">
-                    <dx-item data-field="position"></dx-item>
-                    <dx-item data-field="city"></dx-item>                
-            </dx-item>            
-        </dx-form>
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxGroupItem caption="Contacts">
+                <DxSimpleItem data-field="phone" />
+                <DxSimpleItem data-field="firstName" />
+            </DxGroupItem>
+            <DxGroupItem caption="Misc Data">
+                <DxSimpleItem data-field="position" />
+                <DxSimpleItem data-field="city" />                
+            </DxGroupItem>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
 
     const employee = {
         firstName: 'John',
@@ -119,7 +115,7 @@ tBy default, the widget aligns all editors of all simple items in straight colum
 
     export default {
         components: {
-            DxForm, DxItem
+            DxForm, DxSimpleItem, DxGroupItem
         },
         data() {
             return {
@@ -137,7 +133,7 @@ tBy default, the widget aligns all editors of all simple items in straight colum
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item } from 'devextreme-react/form';
+    import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
 
     const employee = {
         firstName: 'John',
@@ -156,20 +152,16 @@ tBy default, the widget aligns all editors of all simple items in straight colum
                     formData={employee}
                     alignItemLabels={false}
                     alignItemLabelsInAllGroups={false}>
-                    <Item dataField="firstName"></Item>
-                    <Item dataField="lastName"></Item>
-                    <Item 
-                        itemType="group"
-                        caption="Contacts">
-                            <Item dataField="phone"></Item>
-                            <Item dataField="firstName"></Item>
-                    </Item>
-                    <Item 
-                        itemType="group"
-                        caption="Misc Data">
-                            <Item dataField="position"></Item>
-                            <Item dataField="city"></Item>                
-                    </Item>                      
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <GroupItem caption="Contacts">
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="firstName" />
+                    </GroupItem>
+                    <GroupItem caption="Misc Data">
+                        <SimpleItem dataField="position" />
+                        <SimpleItem dataField="city" />
+                    </GroupItem>
                 </Form>
             );
         }

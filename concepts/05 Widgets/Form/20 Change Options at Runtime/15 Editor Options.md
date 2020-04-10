@@ -67,8 +67,7 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
     <!-- tab: App.vue -->
     <template>
         <div>
-            <DxForm
-                :form-data="employee">
+            <DxForm :form-data="employee">
                 <DxSimpleItem data-field="firstName" :editor-options="{disabled: isFirstNameDisabled}" />
                 <DxSimpleItem data-field="lastName" />
                 <DxSimpleItem data-field="phone" />
@@ -136,8 +135,7 @@ With Angular, Vue or React, bind the option to change in the [editorOptions](/ap
         render() {
             return (
                 <div>
-                    <Form
-                        formData={employee}>
+                    <Form formData={employee}>
                         <SimpleItem dataField="firstName" editorOptions={{disabled: this.state.isFirstNameDisabled}} />
                         <SimpleItem dataField="lastName" />
                         <SimpleItem dataField="phone" />

@@ -64,8 +64,7 @@ The following code adds the **Form** widget to your page. The simplest configura
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm
-            :form-data="employee" />
+        <DxForm :form-data="employee" />
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -122,8 +121,7 @@ The following code adds the **Form** widget to your page. The simplest configura
     class App extends React.Component {
         render() {
             return (
-                <Form
-                    formData={employee} />
+                <Form formData={employee} />
             );
         }
     }

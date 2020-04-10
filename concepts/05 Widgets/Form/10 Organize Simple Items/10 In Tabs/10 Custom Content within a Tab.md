@@ -95,33 +95,32 @@ The **Form** widget allows you to specify custom templates for an individual tab
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm
-            :form-data="employee">
-                <template #tab="{ data }">
-                    <p style="color:red">{{ data.title }}</p>
-                </template>
-                <template #tabContent="{ data }">
-                    <p>
-                        <i>By filling out this form, you agree
-                        to the terms of the <a href='#'>Data Protection Policy</a></i>
-                    </p>
-                </template>
-                <DxSimpleItem data-field="name" />
-                <DxTabbedItem :col-span="2">
-                    <DxTab
-                        title="Data Protection Policy"
-                        tab-template="tab"
-                        template="tabContent" />
-                    <DxTab title="Info">
-                        <DxSimpleItem data-field="position" />
-                        <DxSimpleItem data-field="hireDate" />
-                        <DxSimpleItem data-field="city" />
-                    </DxTab>
-                    <DxTab title="Contacts">
-                        <DxSimpleItem data-field="phone" />
-                        <DxSimpleItem data-field="email" />
-                    </DxTab>
-                </DxTabbedItem>
+        <DxForm :form-data="employee">
+            <template #tab="{ data }">
+                <p style="color:red">{{ data.title }}</p>
+            </template>
+            <template #tabContent="{ data }">
+                <p>
+                    <i>By filling out this form, you agree
+                    to the terms of the <a href='#'>Data Protection Policy</a></i>
+                </p>
+            </template>
+            <DxSimpleItem data-field="name" />
+            <DxTabbedItem :col-span="2">
+                <DxTab
+                    title="Data Protection Policy"
+                    tab-template="tab"
+                    template="tabContent" />
+                <DxTab title="Info">
+                    <DxSimpleItem data-field="position" />
+                    <DxSimpleItem data-field="hireDate" />
+                    <DxSimpleItem data-field="city" />
+                </DxTab>
+                <DxTab title="Contacts">
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
         </DxForm>
     </template>
     <script>
@@ -173,24 +172,23 @@ The **Form** widget allows you to specify custom templates for an individual tab
     class App extends React.Component {
         render() {
             return (
-                <Form
-                    formData={employee}>
-                        <SimpleItem dataField="name" />
-                        <TabbedItem colSpan={2}>
-                            <Tab
-                                title="Data Protection Policy"
-                                tabRender={tabRender}
-                                render={tabContentRender} />
-                            <Tab title="Info">
-                                <SimpleItem dataField="position" />
-                                <SimpleItem dataField="hireDate" />
-                                <SimpleItem dataField="city" />
-                            </Tab>
-                            <Tab title="Contacts">
-                                <SimpleItem dataField="phone" />
-                                <SimpleItem dataField="email" />
-                            </Tab>
-                        </Item>
+                <Form formData={employee}>
+                    <SimpleItem dataField="name" />
+                    <TabbedItem colSpan={2}>
+                        <Tab
+                            title="Data Protection Policy"
+                            tabRender={tabRender}
+                            render={tabContentRender} />
+                        <Tab title="Info">
+                            <SimpleItem dataField="position" />
+                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="city" />
+                        </Tab>
+                        <Tab title="Contacts">
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
+                        </Tab>
+                    </Item>
                 </Form>
             );
         }

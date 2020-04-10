@@ -55,8 +55,7 @@ Not only you can bind the **Form** to an existing data object, but you can also 
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm
-            @field-data-changed="formFieldDataChanged">
+        <DxForm @field-data-changed="formFieldDataChanged">
             <DxSimpleItem data-field="firstName" editor-type="dxTextBox" />
             <DxSimpleItem data-field="lastName"  editor-type="dxTextBox" />
             <DxSimpleItem data-field="birthDate" editor-type="dxDateBox" />
@@ -107,8 +106,7 @@ Not only you can bind the **Form** to an existing data object, but you can also 
 
         render() {
             return (
-                <Form
-                    onFieldDataChanged={this.formFieldDataChanged}>
+                <Form onFieldDataChanged={this.formFieldDataChanged}>
                     <SimpleItem dataField="firstName" editorType="dxTextBox" />
                     <SimpleItem dataField="lastName"  editorType="dxTextBox" />
                     <SimpleItem dataField="birthDate" editorType="dxDateBox" />

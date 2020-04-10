@@ -80,11 +80,11 @@ Items within a group can be organized in several columns. To specify the number 
     <template>
         <DxForm
             :form-data="employee"
-            :col-count="2"> <!-- Splits the Form layout in two columns -->
+            :col-count="2">
             <DxGroupItem
                 caption="Personal Data"
                 col-span="2"
-                col-count="3"> <!-- Organizes items inside this group in three columns -->
+                col-count="3">
                     <DxSimpleItem data-field="firstName" />
                     <DxSimpleItem data-field="lastName" />
                     <DxSimpleItem data-field="position" />
@@ -145,18 +145,16 @@ Items within a group can be organized in several columns. To specify the number 
             return (
                 <Form
                     formData={employee}
-                    colCount={2} {/* Splits the Form layout in two columns */ }
-                >
+                    colCount={2}>
                     <GroupItem
                         caption="Personal Data"
-                        colSpan={2} {/* Makes this group span both general columns */ }
-                        colCount={3}> {/* Organizes items inside this group in three columns */ }
+                        colSpan={2}
+                        colCount={3}>
                             <SimpleItem dataField="firstName" />
                             <SimpleItem dataField="lastName" />
                             <SimpleItem dataField="position" />
                     </GroupItem>
-                    <GroupItem
-                        caption="Contacts">
+                    <GroupItem caption="Contacts">
                             <SimpleItem dataField="phone" />
                             <SimpleItem dataField="email" />
                     </GroupItem>

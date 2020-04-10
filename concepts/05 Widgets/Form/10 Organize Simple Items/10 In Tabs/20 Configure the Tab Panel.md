@@ -64,24 +64,22 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm
-            :form-data="employee">
-                <DxSimpleItem data-field="firstName" />
-                <DxSimpleItem data-field="lastName" />
-                <DxTabbedItem>
-                    <DxTabPanelOptions
-                        height="250"
-                        :on-title-click="tabPanelTitleClick"
-                    />
-                    <DxTab title="Info">
-                        <DxSimpleItem data-field="hireDate" />
-                        <DxSimpleItem data-field="city" />
-                    </DxTab>
-                    <DxTab title="Contacts">
-                        <DxSimpleItem data-field="phone" />
-                        <DxSimpleItem data-field="email" />
-                    </DxTab>                         
-                </DxTabbedItem>
+        <DxForm :form-data="employee">
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxTabbedItem>
+                <DxTabPanelOptions
+                    height="250"
+                    :on-title-click="tabPanelTitleClick" />
+                <DxTab title="Info">
+                    <DxSimpleItem data-field="hireDate" />
+                    <DxSimpleItem data-field="city" />
+                </DxTab>
+                <DxTab title="Contacts">
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
         </DxForm>
     </template>
     <script>
@@ -124,7 +122,7 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Item, Tab, TabPanelOptions } from 'devextreme-react/form';
+    import { Form, SimpleItem, TabbedItem, Tab, TabPanelOptions } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -142,24 +140,22 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
 
         render() {
             return (
-                <Form
-                    formData={employee}>
-                        <Item dataField="firstName"></Item>
-                        <Item dataField="lastName"></Item>
-                        <Item itemType="tabbed">
-                            <TabPanelOptions
-                                height="250"
-                                onTitleClick={this.tabPanelTitleClick}
-                            />
-                            <Tab title="Info">
-                                <Item dataField="hireDate"></Item>
-                                <Item dataField="city"></Item>
-                            </Tab>
-                            <Tab title="Contacts">
-                                <Item dataField="phone"></Item>
-                                <Item dataField="email"></Item>
-                            </Tab>                         
-                        </Item>
+                <Form formData={employee}>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <TabbedItem>
+                        <TabPanelOptions
+                            height="250"
+                            onTitleClick={this.tabPanelTitleClick} />
+                        <Tab title="Info">
+                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="city" />
+                        </Tab>
+                        <Tab title="Contacts">
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
+                        </Tab>
+                    </TabbedItem>
                 </Form>
             );
         }

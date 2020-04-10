@@ -69,8 +69,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm
-            :form-data="employee">
+        <DxForm :form-data="employee">
             <DxSimpleItem data-field="name" />
             <DxTabbedItem>
                 <DxTab title="Info">
@@ -132,8 +131,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
     class App extends React.Component {
         render() {
             return (
-                <Form
-                    formData={employee}>
+                <Form formData={employee}>
                     <SimpleItem dataField="name" />
                     <TabbedItem>
                         <Tab title="Info">

@@ -125,13 +125,11 @@ The **Form** widget allows you to place custom content, for example, an image, u
     class App extends React.Component {
         render() {
             return (
-                <Form
-                    formData={employee}>
+                <Form formData={employee}>
                     <GroupItem
                         caption="Picture"
                         render={pictureRender} />
-                    <GroupItem
-                        caption="Personal Data">
+                    <GroupItem caption="Personal Data">
                             <SimpleItem dataField="firstName" />
                             <SimpleItem dataField="lastName" />
                     </GroupItem>

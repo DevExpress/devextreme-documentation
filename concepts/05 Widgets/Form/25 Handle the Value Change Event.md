@@ -44,8 +44,7 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm
-            @field-data-changed="formFieldDataChanged">
+        <DxForm @field-data-changed="formFieldDataChanged">
             <DxSimpleItem data-field="firstName" editor-type="dxTextBox" />
             <DxSimpleItem data-field="lastName"  editor-type="dxTextBox" />
             <DxSimpleItem data-field="birthDate" editor-type="dxDateBox" />
@@ -94,8 +93,7 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
 
         render() {
             return (
-                <Form
-                    onFieldDataChanged={this.formFieldDataChanged}>
+                <Form onFieldDataChanged={this.formFieldDataChanged}>
                     <SimpleItem dataField="firstName" editorType="dxTextBox" />
                     <SimpleItem dataField="lastName"  editorType="dxTextBox" />
                     <SimpleItem dataField="birthDate" editorType="dxDateBox" />

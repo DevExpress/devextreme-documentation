@@ -69,8 +69,7 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm
-            :form-data="employee">
+        <DxForm :form-data="employee">
             <DxGroupItem
                 caption="Personal Data">
                 <DxSimpleItem data-field="firstName" />
@@ -131,8 +130,7 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
     class App extends React.Component {
         render() {
             return (
-                <Form
-                    formData={employee}>
+                <Form formData={employee}>
                     <GroupItem
                         caption="Personal Data">
                             <SimpleItem dataField="firstName" />

@@ -95,8 +95,7 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
     <!-- tab: App.vue -->
     <template>
         <div>
-            <DxForm
-                :form-data="employee" />
+            <DxForm :form-data="employee" />
             <DxButton
                 text="Update the Phone Number"
                 @click="updatePhoneClick" />
@@ -159,8 +158,7 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
         render() {
                 return (
                     <div>
-                        <Form
-                            formData={this.state.employee} />
+                        <Form formData={this.state.employee} />
                         <Button
                             text="Update the Phone Number"
                             onClick={this.updatePhoneClick} />

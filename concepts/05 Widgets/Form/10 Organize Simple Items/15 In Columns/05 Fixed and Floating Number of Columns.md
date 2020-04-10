@@ -58,9 +58,7 @@ The **Form** widget can have a fixed number of columns in the layout...
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxForm, {
-        DxSimpleItem
-    } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
 
     export default {
         components: {
@@ -87,10 +85,7 @@ The **Form** widget can have a fixed number of columns in the layout...
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Form, {
-        SimpleItem
-    } from 'devextreme-react/form';
-
+    import { Form, SimpleItem } from 'devextreme-react/form';
 
     class App extends React.Component {
         employee = {
@@ -191,5 +186,109 @@ The **Form** widget can have a fixed number of columns in the layout...
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm 
+            :form-data="employee"
+            col-count="auto"
+            :min-col-width="500">
+            <DxSimpleItem dataField="firstName" />
+            <DxSimpleItem dataField="lastName" />
+            <DxTabbedItem>
+                <DxTab
+                    title="Info"
+                    :col-count="3">
+                        <DxSimpleItem dataField="position" />
+                        <DxSimpleItem dataField="hireDate" />
+                        <DxSimpleItem dataField="city" />
+                </DxTab>
+                <DxTab
+                    title="Contacts"
+                    :col-count="2">
+                        <DxSimpleItem dataField="phone" />
+                        <DxSimpleItem dataField="email" />
+                </DxTab>
+            </DxTabbedItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxTabbedItem, DxSimpleItem, DxTab } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxTabbedItem, DxSimpleItem, DxTab
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, TabbedItem, Tab }  from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form 
+                    formData={employee}
+                    colCount={"auto"}
+                    minColWidth={500}>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <TabbedItem>
+                        <Tab
+                            title="Info"
+                            colCount="3">
+                                <SimpleItem dataField="position" />
+                                <SimpleItem dataField="hireDate" />
+                                <SimpleItem dataField="city" />
+                        </Tab>
+                        <Tab
+                            title="Contacts"
+                            colCount="2">
+                                <SimpleItem dataField="phone" />
+                                <SimpleItem dataField="email" />
+                        </Tab>
+                    </TabbedItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
 
 ---

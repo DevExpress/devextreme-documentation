@@ -88,8 +88,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
     <!-- tab: App.vue -->
     <template>
         <div>
-            <DxForm
-                :form-data="employee">
+            <DxForm :form-data="employee">
                 <DxSimpleItem data-field="firstName" />
                 <DxSimpleItem data-field="lastName" />
                 <DxGroupItem caption="Contacts">
@@ -159,8 +158,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
         render() {
             return (
                 <div>
-                    <Form
-                        formData={employee}>
+                    <Form formData={employee}>
                         <SimpleItem dataField="firstName" />
                         <SimpleItem dataField="lastName" />
                         <GroupItem caption="Contacts">

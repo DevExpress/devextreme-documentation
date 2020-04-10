@@ -188,7 +188,7 @@ The **Form** widget allows you to specify custom templates for an individual tab
                             <SimpleItem dataField="phone" />
                             <SimpleItem dataField="email" />
                         </Tab>
-                    </Item>
+                    </TabbedItem>
                 </Form>
             );
         }

@@ -143,7 +143,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
                             <SimpleItem dataField="phone" />
                             <SimpleItem dataField="email" />
                         </Tab>
-                    </Item>
+                    </TabbedItem>
                 </Form>
             );
         }

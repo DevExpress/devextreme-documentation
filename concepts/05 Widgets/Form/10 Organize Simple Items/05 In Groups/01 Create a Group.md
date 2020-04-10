@@ -70,14 +70,12 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
     <!-- tab: App.vue -->
     <template>
         <DxForm :form-data="employee">
-            <DxGroupItem
-                caption="Personal Data">
+            <DxGroupItem caption="Personal Data">
                 <DxSimpleItem data-field="firstName" />
                 <DxSimpleItem data-field="lastName" />
                 <DxSimpleItem data-field="position" />
             </DxGroupItem>
-            <DxGroupItem
-                caption="Contacts">
+            <DxGroupItem caption="Contacts">
                 <DxSimpleItem data-field="phone" />
                 <DxSimpleItem data-field="email" />
             </DxGroupItem>
@@ -131,16 +129,14 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
         render() {
             return (
                 <Form formData={employee}>
-                    <GroupItem
-                        caption="Personal Data">
-                            <SimpleItem dataField="firstName" />
-                            <SimpleItem dataField="lastName" />
-                            <SimpleItem dataField="position" />
+                    <GroupItem caption="Personal Data">
+                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="lastName" />
+                        <SimpleItem dataField="position" />
                     </GroupItem>
-                    <GroupItem
-                        caption="Contacts">
-                            <SimpleItem dataField="phone" />
-                            <SimpleItem dataField="email" />
+                    <GroupItem caption="Contacts">
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
                     </GroupItem>
                 </Form>
             );

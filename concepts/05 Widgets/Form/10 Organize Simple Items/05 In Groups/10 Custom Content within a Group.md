@@ -75,10 +75,9 @@ The **Form** widget allows you to place custom content, for example, an image, u
             <DxGroupItem
                 caption="Picture"
                 template="pictureTemplate" />
-            <DxGroupItem
-                caption="Personal Data">
-                    <DxSimpleItem data-field="firstName" />
-                    <DxSimpleItem data-field="lastName" />
+            <DxGroupItem caption="Personal Data">
+                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="lastName" />
             </DxGroupItem>
         </DxForm>
     </template>
@@ -130,8 +129,8 @@ The **Form** widget allows you to place custom content, for example, an image, u
                         caption="Picture"
                         render={pictureRender} />
                     <GroupItem caption="Personal Data">
-                            <SimpleItem dataField="firstName" />
-                            <SimpleItem dataField="lastName" />
+                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="lastName" />
                     </GroupItem>
                 </Form>
             );

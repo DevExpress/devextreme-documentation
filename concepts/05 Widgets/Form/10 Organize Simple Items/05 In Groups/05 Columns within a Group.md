@@ -85,14 +85,13 @@ Items within a group can be organized in several columns. To specify the number 
                 caption="Personal Data"
                 col-span="2"
                 col-count="3">
-                    <DxSimpleItem data-field="firstName" />
-                    <DxSimpleItem data-field="lastName" />
-                    <DxSimpleItem data-field="position" />
+                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="lastName" />
+                <DxSimpleItem data-field="position" />
             </DxGroupItem>
-            <DxGroupItem
-                caption="Contacts">
-                    <DxSimpleItem data-field="phone" />
-                    <DxSimpleItem data-field="email" />
+            <DxGroupItem caption="Contacts">
+                <DxSimpleItem data-field="phone" />
+                <DxSimpleItem data-field="email" />
             </DxGroupItem>
         </DxForm>
     </template>
@@ -150,13 +149,13 @@ Items within a group can be organized in several columns. To specify the number 
                         caption="Personal Data"
                         colSpan={2}
                         colCount={3}>
-                            <SimpleItem dataField="firstName" />
-                            <SimpleItem dataField="lastName" />
-                            <SimpleItem dataField="position" />
+                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="lastName" />
+                        <SimpleItem dataField="position" />
                     </GroupItem>
                     <GroupItem caption="Contacts">
-                            <SimpleItem dataField="phone" />
-                            <SimpleItem dataField="email" />
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
                     </GroupItem>
                 </Form>
             );

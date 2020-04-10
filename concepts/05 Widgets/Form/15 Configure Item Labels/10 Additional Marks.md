@@ -1,6 +1,6 @@
 [Simple items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/') may require a value or may allow a user to skip it. Both types of items can be marked with a symbol or text. Required items are those whose [isRequired](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired') option is **true**, others are considered optional.
 
-To specify the mark or text for required and optional items, use the [requiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/requiredMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#requiredMark') and [optionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/optionalMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#optionalMark') options. Note that the 'optional' mark will not be displayed until you set the [showOptionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showOptionalMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showOptionalMark') option to **true**. You can also hide the 'required' mark using the [showRequiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showRequiredMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showRequiredMark') option.
+To specify the mark or text for required and optional items, use the [requiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/requiredMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#requiredMark') and [optionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/optionalMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#optionalMark') options. Note that the "optional" mark will not be displayed until you set the [showOptionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showOptionalMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showOptionalMark') option to **true**. You can also hide the "required" mark using the [showRequiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showRequiredMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showRequiredMark') option.
 
 ---
 ##### jQuery
@@ -59,7 +59,7 @@ To specify the mark or text for required and optional items, use the [requiredMa
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data='employee'
             required-mark="!"
             optional-mark="opt"
@@ -67,7 +67,7 @@ To specify the mark or text for required and optional items, use the [requiredMa
             <DxSimpleItem data-field="firstName" :is-required="true" />
             <DxSimpleItem data-field="lastName"  :is-required="true" />
             <DxSimpleItem data-field="position" />
-        </dx-form>
+        </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -114,12 +114,12 @@ To specify the mark or text for required and optional items, use the [requiredMa
             return (
                 <Form
                     formData={employee}
-                        requiredMark="!"
-                        optionalMark="opt"
-                        showOptionalMark={true}>
-                        <SimpleItem dataField="firstName" isRequired={true} />
-                        <SimpleItem dataField="lastName"  isRequired={true} />
-                        <SimpleItem dataField="position" />
+                    requiredMark="!"
+                    optionalMark="opt"
+                    showOptionalMark={true}>
+                    <SimpleItem dataField="firstName" isRequired={true} />
+                    <SimpleItem dataField="lastName"  isRequired={true} />
+                    <SimpleItem dataField="position" />
                 </Form>
             );
         }

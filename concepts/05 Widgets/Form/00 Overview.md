@@ -64,7 +64,7 @@ The following code adds the **Form** widget to your page. The simplest configura
 
     <!-- tab: App.vue -->
     <template>
-        <dx-form
+        <DxForm
             :form-data="employee" />
     </template>
     <script>

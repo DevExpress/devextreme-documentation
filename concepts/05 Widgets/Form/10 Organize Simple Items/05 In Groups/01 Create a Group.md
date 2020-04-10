@@ -74,7 +74,7 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
             <dx-item
                 item-type="group"
                 caption="Personal Data">
-                    <dx-item data-field="firstName"></dx-item>
+                <DxSimpleItem data-field="firstName" />
                     <dx-item data-field="lastName"></dx-item>
                     <dx-item data-field="position"></dx-item>
             </dx-item>

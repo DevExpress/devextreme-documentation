@@ -14,7 +14,7 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
     <dx-data-grid ... >
         <dxi-column
             dataField="Name"
-            [(sortIndex)]="sortIndex">
+            [(sortIndex)]="nameSortIndex">
         </dxi-column>
     </dx-data-grid>
 
@@ -27,10 +27,10 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
 
-        sortIndex: number = 0;
+        nameSortIndex: number = 0;
 
-        clearColumnSorting() {
-            this.sortIndex = undefined;
+        clearNameColumnSorting() {
+            this.nameSortIndex = undefined;
         }
 
         clearAllSorting() {
@@ -53,7 +53,7 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         <DxDataGrid :ref="dataGridRefKey">
             <DxColumn
                 data-field="Name"
-                :sort-index.sync="sortIndex"
+                :sort-index.sync="nameSortIndex"
             />
         </DxDataGrid>
     </template>
@@ -73,12 +73,12 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         data() {
             return {
                 dataGridRefKey,
-                sortIndex: 0
+                nameSortIndex: 0
             };
         },
         methods: {
-            clearColumnSorting() {
-                this.sortIndex = undefined;
+            clearNameColumnSorting() {
+                this.nameSortIndex = undefined;
             },
             clearAllSorting() {
                 this.dataGrid.clearSorting();
@@ -105,12 +105,7 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
     class App extends React.Component {
         constructor(props) {
             super(props);
-            this.state = {
-                sortIndex: 0
-            };
             this.dataGridRef = React.createRef();
-            this.clearColumnSorting = this.clearColumnSorting.bind(this);
-            this.clearAllSorting = this.clearAllSorting.bind(this);
         }
 
         get dataGrid() {
@@ -122,18 +117,16 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
                 <DataGrid ref={this.dataGridRef} ...>
                     <Column
                         dataField="Name"
-                        sortIndex={this.state.sortIndex} />
+                        defaultSortIndex={0} />
                 </DataGrid>
             );
         }
 
-        clearColumnSorting() {
-            this.setState({
-                sortIndex: undefined
-            });
+        clearNameColumnSorting = () => {
+            this.dataGrid.columnOption("Name", "sortIndex", undefined);
         }
         
-        clearAllSorting() {
+        clearAllSorting = () => {
             this.dataGrid.clearSorting();
         }
     }

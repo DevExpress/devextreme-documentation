@@ -45,9 +45,7 @@ The vertical cell alignment.
 Specifies whether the cell text should be line-wrapped.
 
 ---
-#include common-demobutton with { 
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelCellCustomization/"
-}
+#include datagrid-export-excel-js
 
 The following table shows available fill patterns:
 

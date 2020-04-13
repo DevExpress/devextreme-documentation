@@ -8,3 +8,4 @@ default: 'DataGrid'
 Specifies a default name for the file to which grid data is exported.
 
 ---
+#include datagrid-export-excel-js

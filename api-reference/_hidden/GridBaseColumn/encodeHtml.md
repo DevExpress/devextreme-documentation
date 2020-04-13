@@ -9,3 +9,5 @@ Specifies whether HTML tags are displayed as plain text or applied to the values
 
 ---
 When **true**, HTML tags are displayed as plain text; when **false**, they are applied to the values of the column.
+
+[note]When exporting, this option's value is ignored and formatting is always exported.

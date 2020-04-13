@@ -8,3 +8,4 @@ default: false
 Specifies whether to enable Excel filtering for the exported data in the resulting XLSX file.
 
 ---
+#include datagrid-export-excel-js

@@ -108,7 +108,7 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
         },
         methods: {
             tabPanelTitleClick(e) {
-                /// ...
+                // ...
             }
         }
     };

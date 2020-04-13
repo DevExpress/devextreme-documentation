@@ -161,9 +161,9 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
                             title="Info"
                             colSpan={2}
                             colCount={3}>
-                                <SimpleItem dataField="position" />
-                                <SimpleItem dataField="hireDate" />
-                                <SimpleItem dataField="city" />
+                            <SimpleItem dataField="position" />
+                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="city" />
                         </Tab>
                         <Tab
                             title="Contacts"

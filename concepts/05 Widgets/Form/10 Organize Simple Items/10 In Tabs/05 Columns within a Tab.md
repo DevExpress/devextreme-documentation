@@ -99,8 +99,8 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
                 <DxTab
                     title="Contacts"
                     :col-count="2">
-                        <DxSimpleItem data-field="phone" />
-                        <DxSimpleItem data-field="email" />
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
                 </DxTab>
             </DxTabbedItem>
         </DxForm>

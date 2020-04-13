@@ -18,7 +18,16 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.errorCode): Number
-The error code.
+The error code. The following error codes are supported:
+
+    NoAccess = 0,
+    FileExists = 1,
+    FileNotFound = 2,
+    DirectoryExists = 3,
+    DirectoryNotFound = 4,
+    WrongFileExtension = 5,
+    MaxFileSizeExceeded = 6,
+    Other = 32767
 
 ##### field(e.errorText): String
 The error message.
@@ -30,17 +39,6 @@ The processed file or directory.
 Model data. Available only if you use Knockout.
 
 ---
-
-The following error codes are supported:
-
-    NoAccess = 0,
-    FileExists = 1,
-    FileNotFound = 2,
-    DirectoryExists = 3,
-    DirectoryNotFound = 4,
-    WrongFileExtension = 5,
-    MaxFileSizeExceeded = 6,
-    Other = 32767
 
 ---
 

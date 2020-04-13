@@ -6,7 +6,6 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-
 The **FileManager** is a widget that allows users to upload, select, and manage files and directories in different file storages.
 
 ##### widgettree

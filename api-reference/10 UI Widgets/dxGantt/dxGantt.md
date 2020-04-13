@@ -6,7 +6,6 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-
 The **Gantt** is a widget that displays the task flow and dependencies between tasks.
 
 ##### widgettree

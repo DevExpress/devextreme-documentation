@@ -4,12 +4,9 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the timezone of the appointment start date. Applies only if [timeZone](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/timeZone.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone') is *not* specified.
+Specifies the time zone for the appointment's [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate). Applies only if the [timeZone](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/timeZone.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone') option is unspecified.
 
 ---
-By default, the appointment start date is displayed in the current timezone. To define the timezone, specify the **startDateTimeZone** option. 
+<!-- %fullDescription% -->
 
-The list of supported timezones is available in the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">list of IANA time zones</a>. 
-
-#####See Also#####
-- [Time Zone Support](/concepts/05%20Widgets/Scheduler/077%20Time%20Zone%20Support.md '/Documentation/Guide/Widgets/Scheduler/Time_Zone_Support/')
+<!-- import * from 'api-reference\50 Common\Object Structures\dxSchedulerAppointment\endDateTimeZone.md' -->

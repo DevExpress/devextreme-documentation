@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a toolbar item is clicked. 
 
 ---
-<!-- Description goes here -->
+Main article: [onToolbarItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#onToolbarItemClick)

@@ -6,31 +6,46 @@ EventForAction: dxFileManager.contextMenuItemClick
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a context menu item is clicked.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.itemData): Object
-<!-- Description goes here -->
+The clicked item's data.
 
 ##### field(e.itemElement): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+The clicked item's index.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            // ...
+            onContextMenuItemClick: function(e) {
+                // Your code goes here
+            }
+        });
+    });
+
+---

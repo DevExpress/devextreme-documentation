@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised when a context menu item is clicked. 
+Raised when an error occurs during file processing.
 
 ---
-Main article: [onErrorOccurred](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#onErrorOccurred)
+Main article: [onErrorOccurred](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/onErrorOccurred.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#onErrorOccurred')

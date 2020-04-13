@@ -201,9 +201,9 @@ The **Form** widget can have a fixed number of columns in the layout...
                 <DxTab
                     title="Info"
                     :col-count="3">
-                        <DxSimpleItem dataField="position" />
-                        <DxSimpleItem dataField="hireDate" />
-                        <DxSimpleItem dataField="city" />
+                    <DxSimpleItem dataField="position" />
+                    <DxSimpleItem dataField="hireDate" />
+                    <DxSimpleItem dataField="city" />
                 </DxTab>
                 <DxTab
                     title="Contacts"

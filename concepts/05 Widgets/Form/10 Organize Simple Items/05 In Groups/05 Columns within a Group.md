@@ -84,7 +84,7 @@ Items within a group can be organized in several columns. To specify the number 
             <DxGroupItem
                 caption="Personal Data"
                 :col-span="2"
-                col-count="3">
+                :col-count="3">
                 <DxSimpleItem data-field="firstName" />
                 <DxSimpleItem data-field="lastName" />
                 <DxSimpleItem data-field="position" />

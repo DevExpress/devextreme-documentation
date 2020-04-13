@@ -265,7 +265,7 @@ The **Form** widget can have a fixed number of columns in the layout...
             return (
                 <Form 
                     formData={employee}
-                    colCount={"auto"}
+                    colCount="auto"
                     minColWidth={500}>
                     <SimpleItem dataField="firstName" />
                     <SimpleItem dataField="lastName" />

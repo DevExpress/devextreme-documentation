@@ -68,14 +68,15 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
     <template>
         <div>
             <DxForm :form-data="employee">
-                <DxSimpleItem data-field="firstName" :editor-options="{disabled: isFirstNameDisabled}" />
+                <DxSimpleItem data-field="firstName" :editor-options="editorOptions" />
                 <DxSimpleItem data-field="lastName" />
                 <DxSimpleItem data-field="phone" />
                 <DxSimpleItem data-field="email" />
             </DxForm>
             <DxCheckBox
                 text="Disable the First Name Editor"
-                :value.sync="isFirstNameDisabled" />
+                :value.sync="isFirstNameDisabled"
+                @value-changed="checkBoxValueChanged" />
         </div>
     </template>
     <script>
@@ -97,11 +98,20 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
             DxForm, DxSimpleItem, DxCheckBox
         },
         data() {
+            const isFirstNameDisabled = true;
             return {
                 employee,
-                isFirstNameDisabled: true
+                editorOptions : {
+                    disabled: isFirstNameDisabled
+                }
+                isFirstNameDisabled
             };
         },
+        methods: {
+            checkBoxValueChanged(e) {
+                this.editorOptions = { disabled: e.value };
+            }
+        }
     };
     </script>
 
@@ -126,8 +136,12 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
     class App extends React.Component {
         constructor() {
             super();
+            const isFirstNameDisabled = true;
             this.state = {
-                isFirstNameDisabled: true
+                isFirstNameDisabled,
+                editorOptions: {
+                    disabled: isFirstNameDisabled
+                }
             };
             this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
         };
@@ -150,8 +164,11 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
         }
 
         onCheckBoxValueChanged(e) {
-            this.setState(() => {
-                return { isFirstNameDisabled: e.value };
+            this.setState({
+                isFirstNameDisabled: e.value,
+                editorOptions: {
+                    disabled: e.value 
+                }
             });
         }
     }

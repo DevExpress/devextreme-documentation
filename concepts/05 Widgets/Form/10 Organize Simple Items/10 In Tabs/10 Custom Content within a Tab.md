@@ -51,7 +51,7 @@ The **Form** widget allows you to specify custom templates for an individual tab
             </dxi-tab>
             <dxi-tab title="Info">
                 <dxi-item dataField="position"></dxi-item>
-                <dxi-item dataField="hireDate"></dxi-item>
+                <dxi-item dataField="birthDate"></dxi-item>
                 <dxi-item dataField="city"></dxi-item>
             </dxi-tab>
             <dxi-tab title="Contacts">
@@ -113,7 +113,7 @@ The **Form** widget allows you to specify custom templates for an individual tab
                     template="tabContent" />
                 <DxTab title="Info">
                     <DxSimpleItem data-field="position" />
-                    <DxSimpleItem data-field="hireDate" />
+                    <DxSimpleItem data-field="birthDate" />
                     <DxSimpleItem data-field="city" />
                 </DxTab>
                 <DxTab title="Contacts">
@@ -181,7 +181,7 @@ The **Form** widget allows you to specify custom templates for an individual tab
                             render={tabContentRender} />
                         <Tab title="Info">
                             <SimpleItem dataField="position" />
-                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="birthDate" />
                             <SimpleItem dataField="city" />
                         </Tab>
                         <Tab title="Contacts">

@@ -8,6 +8,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
         $("#formContainer").dxForm({
             formData: {
                 name: "John Heart",
+                position: "CEO",
                 hireDate: new Date(2012, 4, 13),
                 city: "Los Angeles",
                 phone: "+1(213) 555-9392",
@@ -51,6 +52,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
     export class AppComponent {
         employee = {
             name: "John Heart",
+            position: "CEO",
             hireDate: new Date(2012, 4, 13),
             city: "Los Angeles",
             phone: "+1(213) 555-9392",
@@ -92,6 +94,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
 
     const employee = {
         name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         city: 'Los Angeles',
         phone: '+1(213) 555-9392',
@@ -122,6 +125,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
 
     const employee = {
         name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         city: 'Los Angeles',
         phone: '+1(213) 555-9392',

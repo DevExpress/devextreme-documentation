@@ -136,8 +136,8 @@ With Angular, Vue, or React, bind the option that should be changed to a compone
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, CheckBox } from 'devextreme-react';
-    import { SimpleItem, GroupItem } from 'devextreme-react/form';
+    import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
+    import { CheckBox } from 'devextreme-react/check-box';
 
     const employee = {
         firstName: 'John',

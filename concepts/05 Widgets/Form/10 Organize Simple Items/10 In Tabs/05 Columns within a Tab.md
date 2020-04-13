@@ -92,9 +92,9 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
                     title="Info"
                     :col-span="2"
                     :col-count="3">
-                        <DxSimpleItem data-field="position" />
-                        <DxSimpleItem data-field="hireDate" />
-                        <DxSimpleItem data-field="city" />
+                    <DxSimpleItem data-field="position" />
+                    <DxSimpleItem data-field="hireDate" />
+                    <DxSimpleItem data-field="city" />
                 </DxTab>
                 <DxTab
                     title="Contacts"

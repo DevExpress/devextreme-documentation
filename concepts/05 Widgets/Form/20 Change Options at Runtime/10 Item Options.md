@@ -42,7 +42,7 @@ Being called with the *field* parameter only, this method returns the current co
         });
     });
 
-With Angular, Vue or React, bind the option to change to a component or element property.
+With Angular, Vue, or React, bind the option that should be changed to a component property.
 
 ---
 

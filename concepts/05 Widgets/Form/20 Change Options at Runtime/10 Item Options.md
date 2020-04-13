@@ -169,7 +169,7 @@ With Angular, Vue, or React, bind the option that should be changed to a compone
                     <CheckBox
                         text="Show the Phone Number"
                         value={this.state.isPhoneVisible}
-                        onValueChanged={this.onCheckBoxValueChanged } />
+                        onValueChanged={this.onCheckBoxValueChanged} />
                 </div>
             );
         }

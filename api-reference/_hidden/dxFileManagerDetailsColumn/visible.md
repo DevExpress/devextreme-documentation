@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the column visibility.
 
 ---
-<!-- Description goes here -->

@@ -156,7 +156,7 @@ By default, the widget aligns all editors of all simple items in straight column
                     <SimpleItem dataField="lastName" />
                     <GroupItem caption="Contacts">
                         <SimpleItem dataField="phone" />
-                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="email" />
                     </GroupItem>
                     <GroupItem caption="Misc Data">
                         <SimpleItem dataField="position" />

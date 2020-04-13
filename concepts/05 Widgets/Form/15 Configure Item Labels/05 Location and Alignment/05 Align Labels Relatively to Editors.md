@@ -68,8 +68,7 @@ The **Form** widget displays labels on the left side of their editors and aligns
             <DxSimpleItem data-field="phone">
                 <DxLabel
                     location="left"
-                    alignment="right"> <!-- or "left" | "center" -->
-                </DxLabel>
+                    alignment="right" /> <!-- or "left" | "center" -->
             </DxSimpleItem>
         </DxForm>
     </template>

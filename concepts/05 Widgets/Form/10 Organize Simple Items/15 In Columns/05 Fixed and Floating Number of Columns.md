@@ -280,8 +280,8 @@ The **Form** widget can have a fixed number of columns in the layout...
                         <Tab
                             title="Contacts"
                             colCount={2}>
-                                <SimpleItem dataField="phone" />
-                                <SimpleItem dataField="email" />
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
                         </Tab>
                     </TabbedItem>
                 </Form>

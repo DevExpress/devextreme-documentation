@@ -130,7 +130,7 @@ With Angular, Vue or React, bind the option to change to a component or element 
                     <CheckBox
                         text="Disable the Form"
                         value={this.state.isFormDisabled}
-                        onValueChanged={this.onCheckBoxValueChanged } />
+                        onValueChanged={this.onCheckBoxValueChanged} />
                 </div>
             );
         }

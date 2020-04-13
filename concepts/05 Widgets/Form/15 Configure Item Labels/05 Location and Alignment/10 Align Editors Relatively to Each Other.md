@@ -89,7 +89,7 @@ By default, the widget aligns all editors of all simple items in straight column
             <DxSimpleItem data-field="lastName" />
             <DxGroupItem caption="Contacts">
                 <DxSimpleItem data-field="phone" />
-                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="email" />
             </DxGroupItem>
             <DxGroupItem caption="Misc Data">
                 <DxSimpleItem data-field="position" />

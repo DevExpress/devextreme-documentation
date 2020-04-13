@@ -136,8 +136,8 @@ With Angular, Vue or React, bind the option to change to a component or element 
         }
 
         onCheckBoxValueChanged(e) {
-            this.setState(() => {
-                return { isFormDisabled: e.value };
+            this.setState({
+                isFormDisabled: e.value
             });
         }
     }

@@ -185,7 +185,7 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
     <!-- tab: App.vue -->
     <template>
         <DxForm
-            :form-data='employee'
+            :form-data="employee"
             :show-colon-after-label="false">
             <DxSimpleItem data-field="firstName" />
             <DxSimpleItem data-field="lastName" />

@@ -139,7 +139,8 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, Button } from 'devextreme-react';
+    import { Form } from 'devextreme-react/form';
+    import { Button } from 'devextreme-react/button';
 
     const employee = {
         firstName: 'John',

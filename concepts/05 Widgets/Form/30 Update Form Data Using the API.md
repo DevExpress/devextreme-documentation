@@ -60,9 +60,10 @@ The **Form** widget provides methods that update specific **formData** fields an
         });
     });
 
-##### Angular
-
 With Angular, Vue or React, two-way binding to a component property is sufficient to update [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData') at runtime. Swapping the whole **formData** object rerenders the widget from scratch; updating specific **formData** fields rerenders only the corresponding editors.
+
+---
+##### Angular
 
     <!--HTML-->
     <dx-form [(formData)]="employee"></dx-form>

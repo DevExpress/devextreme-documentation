@@ -45,30 +45,28 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
     <!-- tab: App.vue -->
     <template>
         <DxForm @field-data-changed="formFieldDataChanged">
-            <DxSimpleItem data-field="firstName" editor-type="dxTextBox" />
-            <DxSimpleItem data-field="lastName"  editor-type="dxTextBox" />
-            <DxSimpleItem data-field="birthDate" editor-type="dxDateBox" />
+            <!-- ... -->
         </DxForm>
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
+    import { DxForm } from 'devextreme-vue/form';
 
     export default {
         components: {
-            DxForm, DxSimpleItem
+            DxForm
         },
         data() {
             return {
-                employee
+                // ...
             };
         },
         methods: {
             formFieldDataChanged(e) {
-                let updatedField = e.dataField;
-                let newValue = e.value;
+                const updatedField = e.dataField;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         }
@@ -83,7 +81,7 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Form, SimpleItem } from 'devextreme-react/form';
+    import { Form } from 'devextreme-react/form';
 
     class App extends React.Component {
         constructor() {
@@ -94,16 +92,14 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
         render() {
             return (
                 <Form onFieldDataChanged={this.formFieldDataChanged}>
-                    <SimpleItem dataField="firstName" editorType="dxTextBox" />
-                    <SimpleItem dataField="lastName"  editorType="dxTextBox" />
-                    <SimpleItem dataField="birthDate" editorType="dxDateBox" />
+                    {/* ... */}
                 </Form>
             );
         }
 
         formFieldDataChanged(e) {
-            let updatedField = e.dataField;
-            let newValue = e.value;
+            const updatedField = e.dataField;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }

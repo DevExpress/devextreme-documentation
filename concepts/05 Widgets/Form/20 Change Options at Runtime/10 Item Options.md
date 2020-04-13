@@ -175,8 +175,8 @@ With Angular, Vue, or React, bind the option that should be changed to a compone
         }
 
         onCheckBoxValueChanged(e) {
-            this.setState(() => {
-                return { isPhoneVisible: e.value };
+            this.setState({
+                isPhoneVisible: e.value
             });            
         }
     }

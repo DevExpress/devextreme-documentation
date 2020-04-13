@@ -158,14 +158,14 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
         }
 
         render() {
-                return (
-                    <div>
-                        <Form formData={this.state.employee} />
-                        <Button
-                            text="Update the Phone Number"
-                            onClick={this.updatePhoneClick} />
-                    </div>
-                );
+            return (
+                <div>
+                    <Form formData={this.state.employee} />
+                    <Button
+                        text="Update the Phone Number"
+                        onClick={this.updatePhoneClick} />
+                </div>
+            );
         }
 
         updatePhoneClick(e) {

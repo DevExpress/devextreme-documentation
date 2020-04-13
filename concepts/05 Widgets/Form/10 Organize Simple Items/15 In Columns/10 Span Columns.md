@@ -118,7 +118,6 @@ If an item should span more than one column, assign the required number to the [
 
     import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 
-
     class App extends React.Component {
         employee = {
             firstName: 'John',

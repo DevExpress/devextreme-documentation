@@ -101,7 +101,7 @@ The **Form** widget allows you to place custom content, for example, an image, u
             return {
                 employee
             };
-        },
+        }
     };
     </script>
 

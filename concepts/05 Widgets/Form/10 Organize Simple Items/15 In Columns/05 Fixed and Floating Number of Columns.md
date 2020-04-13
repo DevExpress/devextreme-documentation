@@ -273,9 +273,9 @@ The **Form** widget can have a fixed number of columns in the layout...
                         <Tab
                             title="Info"
                             colCount="3">
-                                <SimpleItem dataField="position" />
-                                <SimpleItem dataField="hireDate" />
-                                <SimpleItem dataField="city" />
+                            <SimpleItem dataField="position" />
+                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="city" />
                         </Tab>
                         <Tab
                             title="Contacts"

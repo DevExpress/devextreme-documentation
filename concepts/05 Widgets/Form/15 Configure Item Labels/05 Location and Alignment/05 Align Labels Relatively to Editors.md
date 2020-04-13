@@ -123,8 +123,7 @@ The **Form** widget displays labels on the left side of their editors and aligns
                     <SimpleItem dataField="phone">
                         <Label
                             location="left"
-                            alignment="right"> { /* or "left" | "right" */ }
-                        </Label>
+                            alignment="right" /> { /* or "left" | "right" */ }
                     </SimpleItem>
                 </Form>
             );

@@ -208,8 +208,8 @@ The **Form** widget can have a fixed number of columns in the layout...
                 <DxTab
                     title="Contacts"
                     :col-count="2">
-                        <DxSimpleItem dataField="phone" />
-                        <DxSimpleItem dataField="email" />
+                    <DxSimpleItem dataField="phone" />
+                    <DxSimpleItem dataField="email" />
                 </DxTab>
             </DxTabbedItem>
         </DxForm>

@@ -168,8 +168,8 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
                         <Tab
                             title="Contacts"
                             colCount={2}>
-                                <SimpleItem dataField="phone" />
-                                <SimpleItem dataField="email" />
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
                         </Tab>
                     </TabbedItem>
                 </Form>

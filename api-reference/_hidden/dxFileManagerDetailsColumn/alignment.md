@@ -6,7 +6,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the column alignment.
 
 ---
-<!-- Description goes here -->

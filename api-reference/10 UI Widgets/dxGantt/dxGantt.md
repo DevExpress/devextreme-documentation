@@ -6,13 +6,8 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-[tags] ctp
 
 The **Gantt** is a widget that displays the task flow and dependencies between tasks.
-
-#include common-ctp-note with {
-    component: "Gantt"
-}
 
 ##### widgettree
 tasks: {

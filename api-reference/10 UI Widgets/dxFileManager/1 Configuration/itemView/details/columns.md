@@ -6,7 +6,36 @@ inheritsType: dxFileManagerDetailsColumn
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the columns.
 
 ---
-<!-- Description goes here -->
+
+This option accepts an array of objects, where each object configures a single column. If a column does not need to be customized, this array may include the name of the field that provides data for this column.
+
+![DevExtreme File Manager - Columns](~/images/FileManager/details-columns.png)
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function () {
+        $("#file-manager").dxFileManager({
+            itemView: {
+                details: {
+                    columns: [
+                        "thumbnail", "name",
+                        {
+                            dataField: "category",
+                            caption: "Category",
+                            width: 95
+                        },
+                        "dateModified", "size"
+                    ]
+                }
+            },
+            // ...
+        });
+    });
+
+---

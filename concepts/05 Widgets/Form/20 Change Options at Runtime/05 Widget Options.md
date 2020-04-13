@@ -20,7 +20,7 @@ To change the [Form configuration](/api-reference/10%20UI%20Widgets/dxForm/1%20C
         });
     });
 
-With Angular, Vue or React, bind the option to change to a component or element property.
+With Angular, Vue, or React, bind the option that should be changed to a component property.
 
 ---
 

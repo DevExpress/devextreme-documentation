@@ -3,27 +3,41 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
 ---
 ##### jQuery
 
-    <!--JavaScript-->var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
+    <!--JavaScript-->
+    var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
     dataGrid.columnOption("Name", "sortIndex", undefined);
     dataGrid.clearSorting();
 
 ##### Angular
 
+    <!--HTML-->
+    <dx-data-grid ... >
+        <dxi-column
+            dataField="Name"
+            [(sortIndex)]="nameSortIndex">
+        </dxi-column>
+    </dx-data-grid>
+
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";
     import { DxDataGridModule, DxDataGridComponent } from "devextreme-angular";
-    // ...
+
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        clearSortingByNames () {
-            this.dataGrid.instance.columnOption("Name", "sortIndex", undefined);
+
+        nameSortIndex: number = 0;
+
+        clearNameColumnSorting() {
+            this.nameSortIndex = undefined;
         }
-        clearAllSorting () {
+
+        clearAllSorting() {
             this.dataGrid.instance.clearSorting();
         }
     }
+    
     @NgModule({
         imports: [
             // ...
@@ -31,7 +45,93 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid :ref="dataGridRefKey">
+            <DxColumn
+                data-field="Name"
+                :sort-index.sync="nameSortIndex"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = "my-data-grid";
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        data() {
+            return {
+                dataGridRefKey,
+                nameSortIndex: 0
+            };
+        },
+        methods: {
+            clearNameColumnSorting() {
+                this.nameSortIndex = undefined;
+            },
+            clearAllSorting() {
+                this.dataGrid.clearSorting();
+            }
+        },
+        computed: {
+            dataGrid() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.dataGridRef = React.createRef();
+        }
+
+        get dataGrid() {
+            return this.dataGridRef.current.instance;
+        }
+
+        render() {
+            return (
+                <DataGrid ref={this.dataGridRef} ...>
+                    <Column
+                        dataField="Name"
+                        defaultSortIndex={0} />
+                </DataGrid>
+            );
+        }
+
+        clearNameColumnSorting = () => {
+            this.dataGrid.columnOption("Name", "sortIndex", undefined);
+        }
+        
+        clearAllSorting = () => {
+            this.dataGrid.clearSorting();
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

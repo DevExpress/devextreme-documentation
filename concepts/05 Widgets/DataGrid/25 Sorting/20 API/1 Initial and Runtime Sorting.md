@@ -221,9 +221,7 @@ Change the **sortOrder** and **sortIndex** options using the [columnOption](/api
 
         onOptionChanged = (e) => {
             if (e.fullName === "columns[0].sortOrder") {
-                this.setState({
-                    countrySortOrder: e.value
-                });
+                this.sortByCountries(e.value);
             }
         }
     }

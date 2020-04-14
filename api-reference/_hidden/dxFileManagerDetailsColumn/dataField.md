@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies which data field provides data for the column. 
+Specifies which data field provides data for the column.
 
 ---

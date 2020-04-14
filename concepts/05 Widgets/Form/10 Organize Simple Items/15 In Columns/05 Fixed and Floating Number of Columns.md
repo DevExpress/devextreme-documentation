@@ -121,6 +121,7 @@ The **Form** widget can have a fixed number of columns in the layout...
             formData: {
                 firstName: "John",
                 lastName: "Heart",
+                position: "CEO",
                 hireDate: new Date(2012, 4, 13),
                 city: "Los Angeles",
                 phone: "+1(213) 555-9392",
@@ -173,6 +174,7 @@ The **Form** widget can have a fixed number of columns in the layout...
         employee = {
             firstName: "John",
             lastName: "Heart",
+            position: "CEO",
             hireDate: new Date(2012, 4, 13),
             city: "Los Angeles",
             phone: "+1(213) 555-9392",
@@ -223,6 +225,7 @@ The **Form** widget can have a fixed number of columns in the layout...
     const employee = {
         firstName: 'John',
         lastName: 'Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         city: 'Los Angeles',
         phone: '+1(213) 555-9392',
@@ -254,6 +257,7 @@ The **Form** widget can have a fixed number of columns in the layout...
     const employee = {
         firstName: 'John',
         lastName: 'Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         city: 'Los Angeles',
         phone: '+1(213) 555-9392',

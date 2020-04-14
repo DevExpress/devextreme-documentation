@@ -125,7 +125,8 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
     import { Form, SimpleItem, TabbedItem, Tab, TabPanelOptions } from 'devextreme-react/form';
 
     const employee = {
-        name: 'John Heart',
+        firstName: 'John',
+        lastName: 'Heart',
         hireDate: new Date(2012, 4, 13),
         city: 'Los Angeles',
         phone: '+1(213) 555-9392',

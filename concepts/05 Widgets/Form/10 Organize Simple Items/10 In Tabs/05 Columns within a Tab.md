@@ -8,6 +8,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
         $("#formContainer").dxForm({
             formData: {
                 name: "John Heart",
+                position: "CEO",
                 hireDate: new Date(2012, 4, 13),
                 city: "Los Angeles",
                 phone: "+1(213) 555-9392",
@@ -65,6 +66,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
     export class AppComponent {
         employee = {
             name: "John Heart",
+            position: "CEO",
             hireDate: new Date(2012, 4, 13),
             city: "Los Angeles",
             phone: "+1(213) 555-9392",
@@ -113,6 +115,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
 
     const employee = {
         name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         city: 'Los Angeles',
         phone: '+1(213) 555-9392',
@@ -143,6 +146,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
 
     const employee = {
         name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         city: 'Los Angeles',
         phone: '+1(213) 555-9392',

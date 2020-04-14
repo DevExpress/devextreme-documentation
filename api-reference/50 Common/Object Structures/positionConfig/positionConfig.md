@@ -99,4 +99,4 @@ You can use the [offset](/Documentation/ApiReference/Common/Object_Structures/po
 
 Possible positions are limited by the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">Window</a>. To limit them by another element, specify the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) option. If the actual boundaries should be narrower or wider than the boundary element, set the [boundaryOffset](/Documentation/ApiReference/Common/Object_Structures/positionConfig/boundaryOffset/).
 
-Whenever the specified position violates the boundaries, a collision occurs. Use the [collision](/Documentation/ApiReference/Common/Object_Structures/positionConfig/collision/) option to specify how such collisions should be resolved.
+Whenever the specified position exceeds the boundaries, a collision occurs. Use the [collision](/Documentation/ApiReference/Common/Object_Structures/positionConfig/collision/) option to specify how such collisions should be resolved.

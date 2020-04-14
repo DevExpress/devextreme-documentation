@@ -8,7 +8,7 @@ type: String | Object
 Specifies how to resolve collisions between the overlay and the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) elements.
 
 ---
-Collisions occur whenever the specified position causes the overlay element to violate the boundaries.
+Collisions occur whenever the specified position causes the overlay element to exceed the boundaries.
 
 You can use the following collision resolution algorithms:
 

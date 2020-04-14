@@ -5,26 +5,113 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-The position of the widget to align against the target element.
+Specifies a side or corner of the overlay element that should be aligned with the [target element](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of).
 
 ---
-The **my** option can take on an object containing the **x** and **y** fields, which specify horizontal and vertical position specifier respectively, or a string value consisting of horizontal and vertical position specifiers separated by a space (e.g., "left top"). The default value for each position specifier is "center". If you assign the "left" value to this option, it will be converted to the "left center" value.
 
-    <!--JavaScript-->
-    position: { my: 'left' };
+To set this option, use an object with the **x** and **y** fields or one of the string shortcuts listed in the accepted values.
 
-When using a widget as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, specify this option using the `HorizontalAlignment` and `VerticalAlignment` enums in the following manner.
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#popupContainer").dxPopup({
+            // ...
+            position: {
+                // ...
+                my: "left top"
+                // ===== or =====
+                my: { x: "left", y: "top" }
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-popup ... >
+        <dxo-position ...
+            my="left top">
+            <!-- or -->
+            <dxo-my x="left" y="top"></dxo-my>
+        </dxo-position>
+    </dx-popup>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPopup ... >
+            <DxPosition
+                my="left top">
+                <!-- or -->
+                <DxMy x="left" y="top" />
+            </DxPosition>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxPopup, {
+        DxPosition,
+        DxMy
+    } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup,
+            DxPosition,
+            DxMy
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Popup, {
+        Position,
+        My
+    } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popup ... >
+                    <Position
+                        my="left top">
+                        {/* or */}
+                        <My x="left" y="top" />
+                    </Position>
+                </Popup>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().Popup()
         .Position(p => p
-            .My(HorizontalAlignment.Right, VerticalAlignment.Bottom)
+            .My(HorizontalAlignment.Left, VerticalAlignment.Top)
         )
     )
 
     <!--Razor VB-->
-    @(Html.DevExtreme().WidgetName() _
+    @(Html.DevExtreme().Popup() _
         .Position(Sub(p)
-            p.My(HorizontalAlignment.Right, VerticalAlignment.Bottom)
+            p.My(HorizontalAlignment.Left, VerticalAlignment.Top)
         End Sub)
     )
+
+---
+    

@@ -4,25 +4,113 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies the horizontal and vertical offset from the window's boundaries.
+Specifies the offset of the boundaries from the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
 
 ---
-This option is used to resolve collisions. If the specified [offset](/api-reference/50%20Common/Object%20Structures/positionConfig/offset '/Documentation/ApiReference/Common/Object_Structures/positionConfig/offset/') from the specified [target](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of') leads to a collision with the window's boundary, the **boundaryOffset** value is used to position the element near the place of collision.
+The offset is specified in pixels. To set this option, use an object with the **x** and **y** fields or a string value that indicates the horizontal and vertical offsets separated by a whitespace character. Positive offsets narrow the boundaries, negative offsets widen the boundaries.
 
-This option accepts an object containing the **x** and **y** fields which specify horizontal and vertical offset respectively, or a string in the following format: "5 -10", where the first number is a horizontal offset and the second number is a vertical offset in pixels.
+In the following code, the left and right boundaries are narrowed (**x** is 50), but the top and bottom boundaries are widened (**y** is -50).
 
-When you configure a widget as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, this option accepts two values of the `double` type.
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#popupContainer").dxPopup({
+            // ...
+            position: {
+                // ...
+                boundaryOffset: "50 -50"
+                // ===== or =====
+                boundaryOffset: { x: 50, y: -50 }
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-popup ... >
+        <dxo-position ...
+            boundaryOffset="50 -50">
+            <!-- or -->
+            <dxo-boundary-offset [x]="50" [y]="-50"></dxo-boundary-offset>
+        </dxo-position>
+    </dx-popup>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPopup ... >
+            <DxPosition
+                boundary-offset="50 -50">
+                <!-- or -->
+                <DxBoundaryOffset :x="50" :y="-50" />
+            </DxPosition>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxPopup, {
+        DxPosition,
+        DxBoundaryOffset
+    } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup,
+            DxPosition,
+            DxBoundaryOffset
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Popup, {
+        Position,
+        BoundaryOffset
+    } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popup ... >
+                    <Position
+                        boundaryOffset="50 -50">
+                        {/* or */}
+                        <BoundaryOffset x={50} y={-50} />
+                    </Position>
+                </Popup>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().Popup()
         .Position(p => p
-            .BoundaryOffset(5, -10)
+            .BoundaryOffset(50, -50)
         )
     )
 
     <!--Razor VB-->
-    @(Html.DevExtreme().WidgetName() _
+    @(Html.DevExtreme().Popup() _
         .Position(Sub(p)
-            p.BoundaryOffset(5, -10)
+            p.BoundaryOffset(50, -50)
         End Sub)
     )
+
+---

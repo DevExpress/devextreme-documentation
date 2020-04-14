@@ -6,6 +6,6 @@ default: 'none'
 ---
 ---
 ##### shortDescription
-Specifies the vertical collision handler.
+Specifies how to resolve collisions that occur in the vertical direction.
 
 ---

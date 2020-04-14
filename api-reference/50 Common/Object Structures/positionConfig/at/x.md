@@ -5,6 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-Holds the horizontal position specifier.
+Specifies a position in the horizontal direction.
 
 ---

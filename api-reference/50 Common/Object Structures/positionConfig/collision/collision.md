@@ -5,48 +5,127 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies how to move the widget if it overflows the screen.
+Specifies how to resolve collisions between the overlay and the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) elements.
 
 ---
-A string passed to this option should contain a collision handler name, or a pair of names separated by space. If the string consists of a single collision handler name, it is applied to both horizontal and vertical axes. If you pass a pair of names separated by space, the first collision handler will be applied to the horizontal axis, the second to the vertical axis.
+Collisions occur whenever the specified position causes the overlay element to violate the boundaries.
 
-    <!--JavaScript-->
-    // a string containing horizontal and vertical
-    // collision handlers separated by space
-    collision: "flip fit";
+You can use the following collision resolution algorithms:
 
-You can also specify different collision handlers for horizontal and vertical axes in one of the following ways.
+- *"flip"*      
+Move the overlay element to the opposite side of the [target](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of) if there is more available space there.
 
-    <!--JavaScript-->
-    // an object containing 'x' and 'y' fields
-    collision: {
-        x: "flip", // horizontal collision handler
-        y: "none" // vertical collision handler
+- *"fit"*       
+Move the overlay element to the inside of the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
+
+- *"flipfit"*       
+Apply first *"flip"*, then *"fit"*
+
+- *"none"*      
+Ignore the collision.
+
+To set the **collision** option, use an object with the **x** and **y** fields. **x** specifies how to resolve collisions that occur in the horizontal direction, and **y** specifies the same in the vertical direction. Alternatively, you can use one of the string shortcuts listed in the accepted values.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#popupContainer").dxPopup({
+            // ...
+            position: {
+                // ...
+                collision: "flip none"
+                // ===== or =====
+                collision: { x: "flip", y: "none" }
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-popup ... >
+        <dxo-position ...
+            collision="flip none">
+            <!-- or -->
+            <dxo-collision x="flip" y="none"></dxo-collision>
+        </dxo-position>
+    </dx-popup>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPopup ... >
+            <DxPosition
+                collision="flip none">
+                <!-- or -->
+                <DxCollision x="flip" y="none" />
+            </DxPosition>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxPopup, {
+        DxPosition,
+        DxCollision
+    } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup,
+            DxPosition,
+            DxCollision
+        }
     }
+    </script>
 
-The available collision handler names are:
+##### React
 
-- **none**  
- Collisions do not affect widget position.
-- **flip**  
- Moves the widget to the opposite side of the target element if it allows more of the widget to be visible.
-- **fit**  
- Shifts the widget from outside of the screen to fully display the widget.
-- **flipfit**  
- Applies the **fit** collision handler after **flip**.
+    <!-- tab: App.js -->
+    import React from 'react';
 
-When using a widget as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, specify this option using the `PositionResolveCollision` enum in the following manner. This enum accepts the following values: `Fit`, `Flip`, `FlipFit` and `None`.
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Popup, {
+        Position,
+        Collision
+    } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popup ... >
+                    <Position
+                        collision="flip none">
+                        {/* or */}
+                        <Collision x="flip" y="none" />
+                    </Position>
+                </Popup>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().Popup()
         .Position(p => p
-            .Collision(PositionResolveCollision.Fit, PositionResolveCollision.Flip)
+            .Collision(PositionResolveCollision.Flip, PositionResolveCollision.None)
         )
     )
 
     <!--Razor VB-->
-    @(Html.DevExtreme().WidgetName() _
+    @(Html.DevExtreme().Popup() _
         .Position(Sub(p)
-            p.Collision(PositionResolveCollision.Fit, PositionResolveCollision.Flip)
+            p.Collision(PositionResolveCollision.Flip, PositionResolveCollision.None)
         End Sub)
     )
+
+---

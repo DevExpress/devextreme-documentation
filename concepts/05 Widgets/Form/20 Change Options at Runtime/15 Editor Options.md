@@ -23,8 +23,12 @@ To change the options of an editor, get its instance first using the [getEditor(
 
 [note]The **getEditor(dataField)** method is available for visible form items only.
 
-With Angular, bind the option to change in the [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component or element property.
-    
+With Angular, Vue, or React, bind the option that should be changed in the [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component property.
+
+---
+
+##### Angular
+
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
@@ -57,6 +61,116 @@ With Angular, bind the option to change in the [editorOptions](/api-reference/10
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxForm :form-data="employee">
+                <DxSimpleItem data-field="firstName" :editor-options="editorOptions" />
+                <DxSimpleItem data-field="lastName" />
+                <DxSimpleItem data-field="phone" />
+                <DxSimpleItem data-field="email" />
+            </DxForm>
+            <DxCheckBox
+                text="Disable the First Name Editor"
+                :value="editorOptions.disabled"
+                @value-changed="checkBoxValueChanged" />
+        </div>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
+    import { DxCheckBox } from 'devextreme-vue/check-box';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxCheckBox
+        },
+        data() {
+            return {
+                employee,
+                editorOptions: {
+                    disabled: false
+                }
+            };
+        },
+        methods: {
+            checkBoxValueChanged(e) {
+                this.editorOptions = { disabled: e.value };
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem } from 'devextreme-react/form';
+    import { CheckBox } from 'devextreme-react/check-box';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.state = {
+                editorOptions: {
+                    disabled: false
+                }
+            };
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
+        };
+
+        render() {
+            return (
+                <div>
+                    <Form formData={employee}>
+                        <SimpleItem dataField="firstName" editorOptions={this.state.editorOptions} />
+                        <SimpleItem dataField="lastName" />
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </Form>
+                    <CheckBox
+                        text="Show the Phone Number"
+                        value={this.state.editorOptions.disabled}
+                        onValueChanged={this.onCheckBoxValueChanged} />
+                </div>
+            );
+        }
+
+        onCheckBoxValueChanged(e) {
+            this.setState({
+                editorOptions: {
+                    disabled: e.value 
+                }
+            });
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 #include common-link-callmethods

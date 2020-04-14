@@ -60,6 +60,74 @@ The following code adds the **Form** widget to your page. The simplest configura
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm :form-data="employee" />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO',
+        officeNo: 901,
+        birthDate: new Date(1964, 3, 15),
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm
+        },
+        data() {
+            return {
+                employee
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO',
+        officeNo: 901,
+        birthDate: new Date(1964, 3, 15),
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form formData={employee} />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 The configuration above creates one label-editor pair per each field of the data object. Such a pair is called ["simple item"](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/'). Simple items can be organized in [groups](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Groups/'), [tabs](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Tabs/') and [columns](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/15%20In%20Columns '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Columns/').

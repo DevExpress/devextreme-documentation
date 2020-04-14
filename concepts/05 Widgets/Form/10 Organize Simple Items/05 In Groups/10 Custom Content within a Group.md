@@ -64,6 +64,87 @@ The **Form** widget allows you to place custom content, for example, an image, u
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm :form-data="employee">
+            <template #pictureTemplate="{ data }">
+                <img :src="data.formData.picture"/>
+            </template>
+            <DxGroupItem
+                caption="Picture"
+                template="pictureTemplate" />
+            <DxGroupItem caption="Personal Data">
+                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="lastName" />
+            </DxGroupItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxGroupItem, DxSimpleItem } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        picture: 'http://here/goes/the/picture.jpg'
+    };
+
+    export default {
+        components: {
+            DxForm, DxGroupItem, DxSimpleItem
+        },
+        data() {
+            return {
+                employee
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, GroupItem, SimpleItem } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        picture: 'http://here/goes/the/picture.jpg'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form formData={employee}>
+                    <GroupItem
+                        caption="Picture"
+                        render={pictureRender} />
+                    <GroupItem caption="Personal Data">
+                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="lastName" />
+                    </GroupItem>
+                </Form>
+            );
+        }
+    }
+
+    function pictureRender(data) {
+        return (
+            <img src={data.formData.picture}/>
+        );
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

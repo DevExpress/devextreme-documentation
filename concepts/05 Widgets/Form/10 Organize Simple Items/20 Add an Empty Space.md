@@ -52,6 +52,76 @@ If you need to add an empty space between neighboring items, use an [empty item]
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :col-count="2">
+            <DxEmptyItem />
+            <DxSimpleItem data-field="firstName" />
+            <DxEmptyItem :col-span="2" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="position" />
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxEmptyItem, DxSimpleItem } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxEmptyItem
+        },
+        data() {
+            return {
+                employee: {
+                    firstName: 'John',
+                    lastName: 'Heart',
+                    position: 'CEO'
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, EmptyItem, SimpleItem } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        employee = {
+            firstName: 'John',
+            lastName: 'Heart',
+            position: 'CEO'
+        }
+
+        render() {
+            return (
+                <Form
+                    formData={this.employee}
+                    colCount={2}>
+                    <EmptyItem />
+                    <SimpleItem dataField="firstName" />
+                    <EmptyItem colSpan={2} />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="position" />
+                </Form>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####

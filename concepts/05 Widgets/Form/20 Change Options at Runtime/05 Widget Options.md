@@ -20,7 +20,11 @@ To change the [Form configuration](/api-reference/10%20UI%20Widgets/dxForm/1%20C
         });
     });
 
-With Angular, bind the option to change to a component or element property.
+With Angular, Vue, or React, bind the option that should be changed to a component property.
+
+---
+
+##### Angular
 
     <!--HTML-->
     <dx-form
@@ -51,6 +55,98 @@ With Angular, bind the option to change to a component or element property.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxForm
+                :form-data="employee"
+                :disabled="isFormDisabled" />
+            <DxCheckBox
+                text="Disable the Form"
+                :value.sync="isFormDisabled" />
+        </div>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm } from 'devextreme-vue/form';
+    import { DxCheckBox } from 'devextreme-vue/check-box';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxCheckBox
+        },
+        data() {
+            return {
+                employee,
+                isFormDisabled: false
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form } from 'devextreme-react/form';
+    import { CheckBox } from 'devextreme-react/check-box';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.state = {
+                isFormDisabled: false
+            };
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
+        };
+
+        render() {
+            return (
+                <div>
+                    <Form
+                        formData={employee}
+                        disabled={this.state.isFormDisabled} />
+                    <CheckBox
+                        text="Disable the Form"
+                        value={this.state.isFormDisabled}
+                        onValueChanged={this.onCheckBoxValueChanged} />
+                </div>
+            );
+        }
+
+        onCheckBoxValueChanged(e) {
+            this.setState({
+                isFormDisabled: e.value
+            });
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 - [Get and Set Options - jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/05%20Get%20and%20Set%20Options/00%20Get%20and%20Set%20Options.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_and_Set_Options')

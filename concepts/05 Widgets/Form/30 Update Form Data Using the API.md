@@ -99,7 +99,7 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
             <DxForm :form-data="employee" />
             <DxButton
                 text="Update the Phone Number"
-                @click="updatePhoneClick" />
+                @click="updatePhone" />
         </div>
     </template>
     <script>
@@ -125,7 +125,7 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
             };
         },
         methods: {
-            updatePhoneClick(e) {
+            updatePhone(e) {
                 this.employee.phone = '+1(333) 888-7698';
             }
         }
@@ -155,7 +155,7 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
             this.state = {
                 employee
             }
-            this.updatePhoneClick = this.updatePhoneClick.bind(this);
+            this.updatePhone = this.updatePhone.bind(this);
         }
 
         render() {
@@ -164,12 +164,12 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
                     <Form formData={this.state.employee} />
                     <Button
                         text="Update the Phone Number"
-                        onClick={this.updatePhoneClick} />
+                        onClick={this.updatePhone} />
                 </div>
             );
         }
 
-        updatePhoneClick(e) {
+        updatePhone(e) {
             this.setState(() => {
                 return { employee: {...employee, phone: '+1(333) 888-7698' } };
             });

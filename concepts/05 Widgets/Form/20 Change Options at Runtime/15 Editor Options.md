@@ -75,7 +75,7 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
             </DxForm>
             <DxCheckBox
                 text="Disable the First Name Editor"
-                :value.sync="isFirstNameDisabled"
+                :value="editorOptions.disabled"
                 @value-changed="checkBoxValueChanged" />
         </div>
     </template>
@@ -98,13 +98,11 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
             DxForm, DxSimpleItem, DxCheckBox
         },
         data() {
-            const isFirstNameDisabled = true;
             return {
                 employee,
-                editorOptions : {
-                    disabled: isFirstNameDisabled
+                editorOptions: {
+                    disabled: false
                 }
-                isFirstNameDisabled
             };
         },
         methods: {
@@ -136,11 +134,9 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
     class App extends React.Component {
         constructor() {
             super();
-            const isFirstNameDisabled = true;
             this.state = {
-                isFirstNameDisabled,
                 editorOptions: {
-                    disabled: isFirstNameDisabled
+                    disabled: false
                 }
             };
             this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
@@ -150,22 +146,21 @@ With Angular, Vue, or React, bind the option that should be changed in the [edit
             return (
                 <div>
                     <Form formData={employee}>
-                        <SimpleItem dataField="firstName" editorOptions={{disabled: this.state.isFirstNameDisabled}} />
+                        <SimpleItem dataField="firstName" editorOptions={this.state.editorOptions} />
                         <SimpleItem dataField="lastName" />
                         <SimpleItem dataField="phone" />
                         <SimpleItem dataField="email" />
                     </Form>
                     <CheckBox
                         text="Show the Phone Number"
-                        value={this.state.isFirstNameDisabled}
-                        onValueChanged={this.onCheckBoxValueChanged } />
+                        value={this.state.editorOptions.disabled}
+                        onValueChanged={this.onCheckBoxValueChanged} />
                 </div>
             );
         }
 
         onCheckBoxValueChanged(e) {
             this.setState({
-                isFirstNameDisabled: e.value,
                 editorOptions: {
                     disabled: e.value 
                 }

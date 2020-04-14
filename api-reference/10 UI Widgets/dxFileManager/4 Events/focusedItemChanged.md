@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when the focused item is changed. 
 
 ---
-<!-- Description goes here -->
+Main article: [onFocusedItemChanged](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/onFocusedItemChanged.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#onFocusedItemChanged')

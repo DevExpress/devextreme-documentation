@@ -6,25 +6,40 @@ EventForAction: dxFileManager.focusedItemChanged
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the focused item is changed.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.item): FileSystemItem
-<!-- Description goes here -->
+The currently focused file or directory.
 
 ##### field(e.itemElement): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+The model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            // ...
+            onFocusedItemChanged: function(e) {
+                // Your code goes here
+            }
+        });
+    });
+
+---

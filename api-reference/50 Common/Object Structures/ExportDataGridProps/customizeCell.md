@@ -139,11 +139,11 @@ A snippet where Excel cells are customized
 ---
 
 #include common-demobutton-named with {
-    name: "Export multiple grids",
+    name: "Export Multiple Grids",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToExcel/"
 }
 
 #include common-demobutton-named with {
-    name: "Export images",
+    name: "Export Images",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToExcel/"
 }

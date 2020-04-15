@@ -1,3 +1,7 @@
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"
+}
+
 Bind the **Diagram**'s [nodes](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/') and [edges](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/') collections to the appropriate plain lists of nodes and edges.
 
 You should specify the following required properties.
@@ -6,50 +10,57 @@ You should specify the following required properties.
 - [edges.keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#keyExpr')
 - [edges.fromExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/fromExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromExpr')
 - [edges.toExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/toExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr')
- 
+
         <!-- tab: index.js -->
         $(function() {
             $("#diagram").dxDiagram({
                 nodes: {
-                    dataSource: orgItems
+                    dataSource: new DevExpress.data.ArrayStore({
+                        key: "this",
+                        data: orgItems
+                    }),
+                    keyExpr: "id",
+                    textExpr: "text",
                 },
                 edges: {
-                    dataSource: orgLinks
+                    dataSource: new DevExpress.data.ArrayStore({
+                        key: "this",
+                        data: orgLinks
+                    }),
+                    keyExpr: "id",
+                    fromExpr: "from",
+                    toExpr: "to"
                 },
-                layout: "layered"
             });
         });
-        
+            
         <!-- tab: data.js -->
         var orgItems = [
             {  
-                "id":"106",
+                "id":"101",
                 "text":"Development",
-                "type":2
             },
             {  
-                "id":"108",
-                "text":"WPF\nTeam",
-                "type":2
-            },
-            {  
-                "id":"109",
+                "id":"102",
                 "text":"Javascript\nTeam",
-                "type":2
             },
-            // ...
+            {  
+                "id":"103",
+                "text":"ASP.NET\nTeam",
+            }
         ];
 
         var orgLinks = [  
             {  
-                "id":"124",
-                "from":"106",
-                "to":"108",
+                "id":"121",
+                "from":"101",
+                "to":"102",
             },
             {  
-                "id":"125",
-                "from":"106",
-                "to":"109",
-            },
-            // ...
+                "id":"122",
+                "from":"101",
+                "to":"103",
+            }
         ];
+
+![Diagram - Node and Edge Arrays](/images/diagram/db-node-and-edge-arrays.png)   

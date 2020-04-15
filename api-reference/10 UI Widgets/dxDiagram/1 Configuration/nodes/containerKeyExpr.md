@@ -11,9 +11,9 @@ Specifies the name of a data source field or an expression that provides a key o
 The current node's data object.
 
 ---
-The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` type.
+The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` [type](/concepts/05%20Widgets/Diagram/40%20Shape%20Types.md '/Documentation/Guide/Widgets/Diagram/Shape_Types/').
 
-You can also use the [childrenExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr) option to provide a container's content.
+You can also use the [containerChildrenExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerChildrenExpr) option to provide a container's content.
 
 
     <!-- tab: index.js -->

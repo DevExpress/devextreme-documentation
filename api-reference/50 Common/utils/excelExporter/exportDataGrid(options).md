@@ -214,3 +214,6 @@ The following restrictions apply when users export **DataGrid**:
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
 }
+
+#####See Also#####
+- [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/)

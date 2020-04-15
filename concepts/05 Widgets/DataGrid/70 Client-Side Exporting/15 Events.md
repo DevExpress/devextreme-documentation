@@ -30,6 +30,7 @@ Since v20.1, the **DataGrid** raises only the [exporting](/api-reference/10%20UI
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
     
     @Component({
         selector: 'app-root',
@@ -86,6 +87,7 @@ Since v20.1, the **DataGrid** raises only the [exporting](/api-reference/10%20UI
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
 
     export default {
         components: {
@@ -113,6 +115,7 @@ Since v20.1, the **DataGrid** raises only the [exporting](/api-reference/10%20UI
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
     import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
     class App extends React.Component {

@@ -30,29 +30,54 @@ A snippet where Excel cells are customized
 ---
 ##### jQuery
 
-    <!-- tab: index.js -->
-    $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
-        });
+    <!--JavaScript-->
+    $('#gridContainer').dxDataGrid({
+        export: {
+            enabled: true
+        },
+        onExporting(e) {
+            // ...
+            customizeCell: function(options) {
+                const { gridCell, excelCell } = options;
+                // ...
+                if(gridCell.rowType === 'data') {
+                    excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                    excelCell.alignment = { horizontal: 'left' };
+                }
+            }
+        }
     });
 
-##### Angular
+##### Angular   
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name}>
-    </dx-{widget-name}>
+    <dx-data-grid ...
+        (onExporting)="onExporting($event)">
+        <dxo-export [enabled]="true"></dxo-export>
+    </dx-data-grid>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-
+    import { exportDataGrid } from 'devextreme/excel_exporter';
+    import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
+    
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        constructor() {
-            
+        onExporting(e) {
+            // ...
+            customizeCell: function(options) {
+                const { gridCell, excelCell } = options;
+                // ...
+                if(gridCell.rowType === 'data') {
+                    excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                    excelCell.alignment = { horizontal: 'left' };
+                }
+            }
         }
     }
 
@@ -61,7 +86,7 @@ A snippet where Excel cells are customized
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxDataGridModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -69,42 +94,52 @@ A snippet where Excel cells are customized
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxDataGridModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
 
+
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName}>
-            
-        </Dx{WidgetName}>
+        <DxDataGrid ...
+            @exporting="onExporting">
+            <DxExport
+                :enabled="true"
+            />
+        </DxDataGrid>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Dx{WidgetName}, {
-        "!!!!USED COMPONENTS"
-    } from 'devextreme-vue/{widget-name}';
+    import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
+    import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
 
     export default {
         components: {
-            Dx{WidgetName},
-            "!!!!USED COMPONENTS"
-        },
-        data() {
-            return {
-                
-            }
+            DxDataGrid,
+            DxExport
         },
         methods: {
-            
+            onExporting(e) {
+                // ...
+                customizeCell: function(options) {
+                    const { gridCell, excelCell } = options;
+                    // ...
+                    if(gridCell.rowType === 'data') {
+                        excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                        excelCell.alignment = { horizontal: 'left' };
+                    }
+                }
+            }
         }
     }
     </script>
@@ -113,30 +148,39 @@ A snippet where Excel cells are customized
 
     <!-- tab: App.js -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName}, {
-        "!!!!USED COMPONENTS"
-    } from 'devextreme-react/{widget-name}';
+    import DataGrid, { Export } from 'devextreme-react/data-grid';
+    import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
-                <{WidgetName}>
-                    
-                </{WidgetName}>
+                <DataGrid ...
+                    onExporting={this.onExporting}>
+                    <Export enabled={true} />
+                </DataGrid>
             );
+        }
+
+        onExporting(e) {
+            // ...
+            customizeCell: function(options) {
+                const { gridCell, excelCell } = options;
+                // ...
+                if(gridCell.rowType === 'data') {
+                    excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                    excelCell.alignment = { horizontal: 'left' };
+                }
+            }
         }
     }
     export default App;
 
----
+--- 
 
 #include common-demobutton-named with {
     name: "Cell Customization",

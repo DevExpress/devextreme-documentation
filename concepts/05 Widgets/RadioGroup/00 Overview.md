@@ -6,6 +6,9 @@ The **RadioGroup** is a widget that contains a set of radio buttons and allows a
 
 The following code adds a simple **RadioGroup** to your page. Here, the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#value') option specifies the initially selected radio button.
 
+---
+##### jQuery
+
     <!--HTML-->
     <div id="radioGroupContainer"></div>
 
@@ -17,10 +20,87 @@ The following code adds a simple **RadioGroup** to your page. Here, the [value](
         });
     });
 
+##### Angular
+
+    <!--HTML-->
+    <dx-radio-group
+        [data-source]="dataSource"
+        value="Low">
+    </dx-radio-group>
+
+    <!--TypeScript-->
+    import { DxRadioGroupModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        dataSource = ["Low", "Normal", "Urgent", "High"]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxRadioGroupModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxRadioGroup
+            :data-source="dataSource"
+            value="Low"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxRadioGroup } from 'devextreme-vue/radio-group';
+
+    export default {
+        components: {
+            DxRadioGroup
+        },
+        data() {
+            return {
+                dataSource: ['Low', 'Normal', 'Urgent', 'High']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { RadioGroup } from 'devextreme-react/radio-group';
+
+    const dataSource = ['Low', 'Normal', 'Urgent', 'High'];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <RadioGroup
+                    dataSource={dataSource}
+                    defaultValue="Low"
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
+
 If your data is an array of objects, bind it to the **RadioGroup** using the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#displayExpr') and [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#valueExpr') options. **displayExpr** specifies which data source field provides texts for buttons; **valueExpr** specifies which data source field provides values to be written to the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#value') option when a button is selected. Leave **valueExpr** unspecified if you need the entire data object to be written to the **value** option.
 
+---
+##### jQuery
+
     <!--JavaScript-->
-    var dataItems = [
+    const dataItems = [
         { text: "Low", color: "grey" },
         { text: "Normal", color: "green" },
         { text: "Urgent", color: "yellow" },
@@ -36,7 +116,102 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
         });
     });
 
+##### Angular
+
+    <!--HTML-->
+    <dx-radio-group
+        [data-source]="dataItems"
+        [value]="dataItems[1]"
+        display-expr="text">
+    </dx-radio-group>
+
+    <!--TypeScript-->
+    import { DxRadioGroupModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        dataItems = [
+            { text: "Low", color: "grey" },
+            { text: "Normal", color: "green" },
+            { text: "Urgent", color: "yellow" },
+            { text: "High", color: "red" }
+        ]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxRadioGroupModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxRadioGroup
+            :data-source="dataItems"
+            :value="dataItems[1]"
+            display-expr="text"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxRadioGroup } from 'devextreme-vue/radio-group';
+
+    export default {
+        components: {
+            DxRadioGroup
+        },
+        data() {
+            return {
+                dataItems: [
+                    { text: 'Low', color: 'grey' },
+                    { text: 'Normal', color: 'green' },
+                    { text: 'Urgent', color: 'yellow' },
+                    { text: 'High', color: 'red' }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { RadioGroup } from 'devextreme-react/radio-group';
+
+    const dataItems = [
+        { text: 'Low', color: 'grey' },
+        { text: 'Normal', color: 'green' },
+        { text: 'Urgent', color: 'yellow' },
+        { text: 'High', color: 'red' }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <RadioGroup
+                    dataSource={dataItems}
+                    defaultValue={dataItems[1]}
+                    displayExpr="text"
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
+
 The **RadioGroup** widget supports horizontal (default for tablets) and vertical (default for other devices) layouts. To change the layout for all types of devices, specify the [layout](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/layout.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#layout') option.
+
+---
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -45,6 +220,80 @@ The **RadioGroup** widget supports horizontal (default for tablets) and vertical
             layout: "horizontal" // or "vertical"
         });
     });
+
+##### Angular
+
+    <!--HTML-->
+    <dx-radio-group
+        [data-source]="dataSource"
+        layout="horizontal">
+    </dx-radio-group>
+
+    <!--TypeScript-->
+    import { DxRadioGroupModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        dataSource = ["Low", "Normal", "Urgent", "High"]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxRadioGroupModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxRadioGroup
+            :data-source="dataSource"
+            layout="horizontal"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxRadioGroup } from 'devextreme-vue/radio-group';
+
+    export default {
+        components: {
+            DxRadioGroup
+        },
+        data() {
+            return {
+                dataSource: ['Low', 'Normal', 'Urgent', 'High']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { RadioGroup } from 'devextreme-react/radio-group';
+
+    const dataSource = ['Low', 'Normal', 'Urgent', 'High'];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <RadioGroup
+                    dataSource={dataSource}
+                    layout="horizontal"
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 #include common-link-configurewidget

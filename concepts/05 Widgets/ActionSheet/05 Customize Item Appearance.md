@@ -11,7 +11,7 @@ For a minor customization of **ActionSheet** buttons, you can define [specific f
         });
     });
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **ActionSheet** buttons.
+If you need a more flexible solution, define a custom template. For Angular apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **ActionSheet** buttons.
 
 ---
 ##### Angular
@@ -47,82 +47,6 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         ],
         // ...
     })
-
-    <!--CSS-->
-    .action-sheet-button {
-        margin: 5px;
-        padding: 10px;
-        border: 1px dotted #080;
-        background-color: white;
-    }
-
-#####**AngularJS**
-
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-action-sheet="{ 
-            dataSource: actionSheetData,
-            itemTemplate: 'link',
-            bindingOptions: {
-                visible: 'isActionSheetVisible'
-            }
-        }" dx-item-alias="item">
-            <div data-options="dxTemplate: { name: 'link' }">
-                <div class="action-sheet-button">
-                    <a href="#">{{item.text}}</a>
-                </div>
-            </div>
-    </div>
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.actionSheetData = [
-                { text: "Reply" },
-                { text: "Reply All" },
-                { text: "Forward" },
-                { text: "Delete" }
-            ];
-            $scope.isActionSheetVisible = true;
-        });
-
-    <!--CSS-->
-    .action-sheet-button {
-        margin: 5px;
-        padding: 10px;
-        border: 1px dotted #080;
-        background-color: white;
-    }
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--HTML-->
-    <div data-bind="dxActionSheet: { 
-        dataSource: actionSheetData,
-        visible: isActionSheetVisible,
-        itemTemplate: 'link' 
-    }">
-        <div data-options="dxTemplate: { name: 'link' }">
-            <div class="action-sheet-button">
-                <a href="#" data-bind="text: text"></a>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        actionSheetData: [
-            { text: "Reply" },
-            { text: "Reply All" },
-            { text: "Forward" },
-            { text: "Delete" }
-        ],
-        isActionSheetVisible: ko.observable(false)
-    };
-
-    ko.applyBindings(viewModel);
 
     <!--CSS-->
     .action-sheet-button {

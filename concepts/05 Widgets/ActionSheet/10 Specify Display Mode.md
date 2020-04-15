@@ -35,6 +35,51 @@ By default, the **ActionSheet** comes up from the bottom of the page. If you set
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxActionSheet
+            :data-source="actionSheetData"
+            :use-popover="true"
+            target="#actionSheetTarget"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxActionSheet } from 'devextreme-vue/action-sheet';
+
+    export default {
+        components: {
+            DxActionSheet
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ActionSheet } from 'devextreme-react/action-sheet';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ActionSheet
+                    dataSource={actionSheetData}
+                    usePopover={true}
+                    target="#actionSheetTarget"
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

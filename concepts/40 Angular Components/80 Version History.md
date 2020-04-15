@@ -9,7 +9,7 @@
     <tbody>
         <tr>
             <td>v20.1.x</td>
-            <td>v6.0.x - v9.0.x</td>
+            <td>v7.0.x - v9.0.x</td>
         </tr>
         <tr>
             <td>v19.2.x</td>

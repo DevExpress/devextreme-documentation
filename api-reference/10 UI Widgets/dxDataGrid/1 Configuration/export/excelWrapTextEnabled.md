@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.export.excelWrapTextEnabled
 type: Boolean
 default: undefined
+deprecated: 
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.onFileSaving
 type: function(e)
 default: null
+deprecated: 
 EventForAction: dxDataGrid.fileSaving
 ---
 ---

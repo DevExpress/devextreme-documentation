@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.customizeExportData
 type: function(columns, rows)
+deprecated: 
 ---
 ---
 ##### shortDescription

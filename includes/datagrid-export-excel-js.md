@@ -1,1 +1,0 @@
-[important]Since v20.1, we recommend using export based on the ExcelJS library, and this option is not required. Refer to the **DataGrid**.[export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) topic for details.

@@ -1,7 +1,7 @@
 ---
 id: dxDataGrid.Options.export.customizeExcelCell
 type: function(options)
-deprecated: 
+deprecated: [important]Since v20.1, we recommend using export based on the ExcelJS library. See the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) topic.
 ---
 ---
 ##### shortDescription
@@ -46,7 +46,6 @@ The vertical cell alignment.
 Specifies whether the cell text should be line-wrapped.
 
 ---
-#include datagrid-export-excel-js
 
 The following table shows available fill patterns:
 

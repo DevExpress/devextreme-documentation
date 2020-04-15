@@ -1,7 +1,7 @@
 ---
 id: dxDataGrid.Options.customizeExportData
 type: function(columns, rows)
-deprecated: 
+deprecated: [important]Since v20.1, we recommend using export based on the ExcelJS library. See the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) topic.
 ---
 ---
 ##### shortDescription
@@ -14,7 +14,6 @@ All column [configurations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Conf
 The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/') objects. This array contains only exported rows.
 
 ---
-#include export-datagrid-excel-js
 
 This function is called between the [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting') and [onExported](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExported.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExported') functions. This function customizes data; the other functions can be used to customize grid columns.
  

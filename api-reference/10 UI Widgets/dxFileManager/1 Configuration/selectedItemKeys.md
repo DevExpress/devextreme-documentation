@@ -5,7 +5,7 @@ default: []
 ---
 ---
 ##### shortDescription
-Contains an array of initially or currently selected files and directories' keys. 
+Contains an array of initially or currently selected files and directories' keys.
 
 ---
 

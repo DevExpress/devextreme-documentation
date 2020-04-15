@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the name of the cascading style sheet (CSS) class associated with the strip line.
 
 ---
-<!-- Description goes here -->

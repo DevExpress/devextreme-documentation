@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the order in which the column is sorted.
 
 ---
-<!-- Description goes here -->
+The widget adds a column to the collection of sorted columns once this column is sorted. Use the **sortIndex** option to change the order of sorted columns. 

@@ -65,6 +65,86 @@ In the context of the **Form** widget, a group is called ["group item"](/api-ref
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm :form-data="employee">
+            <DxGroupItem caption="Personal Data">
+                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="lastName" />
+                <DxSimpleItem data-field="position" />
+            </DxGroupItem>
+            <DxGroupItem caption="Contacts">
+                <DxSimpleItem data-field="phone" />
+                <DxSimpleItem data-field="email" />
+            </DxGroupItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxGroupItem, DxSimpleItem } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxGroupItem, DxSimpleItem
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, GroupItem, SimpleItem } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form formData={employee}>
+                    <GroupItem caption="Personal Data">
+                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="lastName" />
+                        <SimpleItem dataField="position" />
+                    </GroupItem>
+                    <GroupItem caption="Contacts">
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </GroupItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the strip line's title.
 
 ---
-<!-- Description goes here -->

@@ -51,6 +51,76 @@ Not only you can bind the **Form** to an existing data object, but you can also 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm @field-data-changed="formFieldDataChanged">
+            <DxSimpleItem data-field="firstName" editor-type="dxTextBox" />
+            <DxSimpleItem data-field="lastName"  editor-type="dxTextBox" />
+            <DxSimpleItem data-field="birthDate" editor-type="dxDateBox" />
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
+
+    const employee = { };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+        methods: {
+            formFieldDataChanged(e) {
+                this.employee = e.component.option("formData");
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.formFieldDataChanged = this.formFieldDataChanged.bind(this);
+        }
+        
+        employee = { };
+
+        render() {
+            return (
+                <Form onFieldDataChanged={this.formFieldDataChanged}>
+                    <SimpleItem dataField="firstName" editorType="dxTextBox" />
+                    <SimpleItem dataField="lastName"  editorType="dxTextBox" />
+                    <SimpleItem dataField="birthDate" editorType="dxDateBox" />
+                </Form>
+            );
+        }
+
+        formFieldDataChanged(e) {
+            this.employee = e.component.option("formData");
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

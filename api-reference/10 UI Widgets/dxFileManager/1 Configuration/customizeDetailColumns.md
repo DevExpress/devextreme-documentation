@@ -6,10 +6,10 @@ type: function(columns)
 ##### shortDescription
 Customizes columns in [details view](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToHierarchicalStructure). Applies only if **itemView**.[mode](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/#mode') is *"details"*.
 
-##### param(columns): Array<dxDataGridColumn>
+##### param(columns): Array<dxFileManagerDetailsColumn>
 The columns before customization.
 
-##### return: Array<dxDataGridColumn>
+##### return: Array<dxFileManagerDetailsColumn>
 The columns after customization.
 
 ---

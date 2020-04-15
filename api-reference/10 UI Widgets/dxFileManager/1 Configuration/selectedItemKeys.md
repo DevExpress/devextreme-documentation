@@ -5,7 +5,20 @@ default: []
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains an array of initially or currently selected files and directories' keys.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            // ...
+            selectedItemKeys: ["item1_key", "item2_key", "item3_key"]
+        });
+    });
+
+---

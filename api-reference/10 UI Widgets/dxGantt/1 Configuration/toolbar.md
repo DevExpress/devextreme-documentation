@@ -6,7 +6,12 @@ inheritsType: dxGanttToolbar
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures toolbar settings.
 
 ---
-<!-- Description goes here -->
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Toolbar/"
+}
+
+![DevExtreme Gantt - Toolbar](~/images/Gantt/toolbar.png)

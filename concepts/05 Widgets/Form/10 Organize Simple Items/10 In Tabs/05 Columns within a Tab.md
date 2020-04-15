@@ -8,6 +8,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
         $("#formContainer").dxForm({
             formData: {
                 name: "John Heart",
+                position: "CEO",
                 hireDate: new Date(2012, 4, 13),
                 city: "Los Angeles",
                 phone: "+1(213) 555-9392",
@@ -65,6 +66,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
     export class AppComponent {
         employee = {
             name: "John Heart",
+            position: "CEO",
             hireDate: new Date(2012, 4, 13),
             city: "Los Angeles",
             phone: "+1(213) 555-9392",
@@ -78,5 +80,107 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :col-count="2">
+            <DxSimpleItem data-field="name" />
+            <DxTabbedItem :col-span="2">
+                <DxTab
+                    title="Info"
+                    :col-span="2"
+                    :col-count="3">
+                    <DxSimpleItem data-field="position" />
+                    <DxSimpleItem data-field="hireDate" />
+                    <DxSimpleItem data-field="city" />
+                </DxTab>
+                <DxTab
+                    title="Contacts"
+                    :col-count="2">
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
+
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxTabbedItem, DxTab
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
+
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}
+                    colCount={2}>
+                    <SimpleItem dataField="name" />
+                    <TabbedItem colSpan={2}>
+                        <Tab
+                            title="Info"
+                            colSpan={2}
+                            colCount={3}>
+                            <SimpleItem dataField="position" />
+                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="city" />
+                        </Tab>
+                        <Tab
+                            title="Contacts"
+                            colCount={2}>
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
+                        </Tab>
+                    </TabbedItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
 
 ---

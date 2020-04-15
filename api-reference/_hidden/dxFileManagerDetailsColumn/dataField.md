@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies which data field provides data for the column.
 
 ---
-<!-- Description goes here -->

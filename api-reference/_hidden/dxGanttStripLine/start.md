@@ -5,10 +5,9 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the start point of the strip line.
 
 ##### return: Date | Number | String
-<!-- Description goes here -->
+The start point.
 
 ---
-<!-- Description goes here -->

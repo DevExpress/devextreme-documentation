@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the column width.
 
 ---
-<!-- Description goes here -->

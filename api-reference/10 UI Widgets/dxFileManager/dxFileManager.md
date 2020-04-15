@@ -6,13 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-[tags] ctp
-
 The **FileManager** is a widget that allows users to upload, select, and manage files and directories in different file storages.
-
-#include common-ctp-note with {
-    component: "FileManager"
-}
 
 ##### widgettree
 fileSystemProvider: [{

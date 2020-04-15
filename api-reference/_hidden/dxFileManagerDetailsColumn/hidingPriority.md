@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the order in which columns are hidden when the widget adapts to the screen or container size.
 
 ---
-<!-- Description goes here -->
+The **hidingPriority** is a unique positive integer that ascends from right to left beginning with 0. Columns with low **hidingPriority** are hidden first.

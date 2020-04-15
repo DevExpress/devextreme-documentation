@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.export.fileName
 type: String
 default: 'DataGrid'
+deprecated: 
 ---
 ---
 ##### shortDescription

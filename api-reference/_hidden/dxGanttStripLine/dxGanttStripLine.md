@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures a strip line.
 
 ---
-<!-- Description goes here -->

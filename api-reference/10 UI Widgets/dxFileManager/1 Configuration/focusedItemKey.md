@@ -5,7 +5,20 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a key of the initially or currently focused item.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            // ...
+            focusedItemKey: "item1_key"
+        });
+    });
+
+---

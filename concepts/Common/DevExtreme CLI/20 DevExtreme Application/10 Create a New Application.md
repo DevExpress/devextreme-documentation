@@ -26,3 +26,15 @@ Create a new <a href="https://devexpress.github.io/devextreme-react-template" ta
     npx -p devextreme-cli devextreme new react-app app-name [--layout][--empty]
 
 ---
+
+Arguments:
+
+* `--layout`        
+Specifies the DevExtreme layout to add. Available values:
+    * `side-nav-outer-toolbar` (default)
+    * `side-nav-inner-toolbar`
+
+    Both layouts are illustrated <a href="https://github.com/DevExpress/devextreme-angular-template#getting-started" target="_blank">in this article</a>.
+
+* `--empty`     
+Specifies whether to skip sample views generation (default: `false`).

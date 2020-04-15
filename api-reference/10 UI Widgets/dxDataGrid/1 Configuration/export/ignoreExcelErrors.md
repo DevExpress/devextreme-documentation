@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.export.ignoreExcelErrors
 type: Boolean
 default: true
+deprecated: 
 ---
 ---
 ##### shortDescription

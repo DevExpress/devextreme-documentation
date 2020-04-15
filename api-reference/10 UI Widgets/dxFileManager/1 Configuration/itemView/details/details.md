@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the "Details" file system representation mode.
 
 ---
-<!-- Description goes here -->

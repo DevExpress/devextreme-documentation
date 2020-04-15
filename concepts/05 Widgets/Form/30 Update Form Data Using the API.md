@@ -60,7 +60,10 @@ The **Form** widget provides methods that update specific **formData** fields an
         });
     });
 
-With Angular, two-way binding to a component property is sufficient to update [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData') at runtime. Swapping the whole **formData** object rerenders the widget from scratch; updating specific **formData** fields rerenders only the corresponding editors.
+With Angular, Vue or React, two-way binding to a component property is sufficient to update [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData') at runtime. Swapping the whole **formData** object rerenders the widget from scratch; updating specific **formData** fields rerenders only the corresponding editors.
+
+---
+##### Angular
 
     <!--HTML-->
     <dx-form [(formData)]="employee"></dx-form>
@@ -87,6 +90,95 @@ With Angular, two-way binding to a component property is sufficient to update [f
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxForm :form-data="employee" />
+            <DxButton
+                text="Update the Phone Number"
+                @click="updatePhone" />
+        </div>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm } from 'devextreme-vue/form';
+    import { DxButton } from 'devextreme-vue/button';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392'
+    };
+
+    export default {
+        components: {
+            DxForm, DxButton
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+        methods: {
+            updatePhone(e) {
+                this.employee.phone = '+1(333) 888-7698';
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form } from 'devextreme-react/form';
+    import { Button } from 'devextreme-react/button';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392'
+    };
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.state = {
+                employee
+            }
+            this.updatePhone = this.updatePhone.bind(this);
+        }
+
+        render() {
+            return (
+                <div>
+                    <Form formData={this.state.employee} />
+                    <Button
+                        text="Update the Phone Number"
+                        onClick={this.updatePhone} />
+                </div>
+            );
+        }
+
+        updatePhone(e) {
+            this.setState(() => {
+                return { employee: {...employee, phone: '+1(333) 888-7698' } };
+            });
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 - [Form - Handle the Value Change Event](/concepts/05%20Widgets/Form/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/Form/Handle_the_Value_Change_Event/')

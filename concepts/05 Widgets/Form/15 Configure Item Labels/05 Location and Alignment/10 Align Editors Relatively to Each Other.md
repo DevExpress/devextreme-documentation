@@ -77,6 +77,98 @@ By default, the widget aligns all editors of all simple items in straight column
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :align-item-labels="false"
+            :align-item-labels-in-all-groups="false">
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxGroupItem caption="Contacts">
+                <DxSimpleItem data-field="phone" />
+                <DxSimpleItem data-field="email" />
+            </DxGroupItem>
+            <DxGroupItem caption="Misc Data">
+                <DxSimpleItem data-field="position" />
+                <DxSimpleItem data-field="city" />                
+            </DxGroupItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        position: 'CEO',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxGroupItem
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        position: 'CEO',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}
+                    alignItemLabels={false}
+                    alignItemLabelsInAllGroups={false}>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <GroupItem caption="Contacts">
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </GroupItem>
+                    <GroupItem caption="Misc Data">
+                        <SimpleItem dataField="position" />
+                        <SimpleItem dataField="city" />
+                    </GroupItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

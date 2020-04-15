@@ -55,6 +55,78 @@ To specify the mark or text for required and optional items, use the [requiredMa
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data='employee'
+            required-mark="!"
+            optional-mark="opt"
+            :show-optional-mark="true">
+            <DxSimpleItem data-field="firstName" :is-required="true" />
+            <DxSimpleItem data-field="lastName"  :is-required="true" />
+            <DxSimpleItem data-field="position" />
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}
+                    requiredMark="!"
+                    optionalMark="opt"
+                    showOptionalMark={true}>
+                    <SimpleItem dataField="firstName" isRequired={true} />
+                    <SimpleItem dataField="lastName"  isRequired={true} />
+                    <SimpleItem dataField="position" />
+                </Form>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Each label ends with a colon. To hide it, assign **false** to the [showColonAfterLabel](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showColonAfterLabel.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showColonAfterLabel') option. Note that you can show/hide a colon for an individual item using the **label**.[showColon](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/label/showColon.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#showColon') option.
@@ -107,6 +179,78 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            :show-colon-after-label="false">
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="position">
+                <DxLabel :show-colon="true" />
+            </DxSimpleItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxLabel
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, Label } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        position: 'CEO'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}
+                    showColonAfterLabel={false}>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="position">
+                        <Label showColon={true} />
+                    </SimpleItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

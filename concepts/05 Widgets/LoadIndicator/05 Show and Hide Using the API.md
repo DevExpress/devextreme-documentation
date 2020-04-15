@@ -25,6 +25,114 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
         });
     });
 
+##### Angular
+
+    <!--HTML-->
+    <dx-load-indicator
+        [(visible)]="isLoadIndicatorVisible">
+    </dx-load-indicator>
+    <dx-button
+        text="Toggle the LoadIndicator"
+        (onClick)="isLoadIndicatorVisible = !isLoadIndicatorVisible">
+    </dx-button>
+
+    <!--TypeScript-->
+    import { DxLoadIndicatorModule, DxButtonModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        isLoadIndicatorVisible: boolean = true;
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxLoadIndicatorModule,
+            DxButtonModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <div>
+            <DxLoadIndicator
+                :visible.sync="isLoadIndicatorVisible"
+            />
+            <DxButton
+                text="Toggle the LoadIndicator"
+                @click="toggleLoadIndicator"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxLoadIndicator,
+            DxButton
+        },
+        data() {
+            return {
+                isLoadIndicatorVisible: false
+            };
+        },
+        methods: {
+            toggleLoadIndicator(e) {
+                this.isLoadIndicatorVisible = !this.isLoadIndicatorVisible;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadIndicator } from 'devextreme-react/load-indicator';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isLoadIndicatorVisible: false
+            };
+            this.handleButtonClick = this.handleButtonClick.bind(this);
+        }
+
+        handleButtonClick() {
+            const value = this.state.isLoadIndicatorVisible;
+
+            this.setState({
+                isLoadIndicatorVisible: !value
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <LoadIndicator
+                        visible={this.state.isLoadIndicatorVisible}
+                    />
+                    <Button
+                        text="Toggle the LoadIndicator"
+                        onClick={this.handleButtonClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -64,79 +172,6 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
             loadIndicator.option("visible", !isLoadIndicatorVisible);
         }
     </script>
-
----
-
-With Angular, AngularJS, or Knockout, bind the [visible](/api-reference/10%20UI%20Widgets/Widget/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadIndicator/Configuration/#visible') property of the **LoadIndicator** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, change this property/variable, and the **LoadIndicator** will appear or disappear.
-
----
-##### Angular
-
-    <!--HTML-->
-    <dx-load-indicator
-        [(visible)]="isLoadIndicatorVisible">
-    </dx-load-indicator>
-    <dx-button
-        text="Toggle the LoadIndicator"
-        (onClick)="isLoadIndicatorVisible = !isLoadIndicatorVisible">
-    </dx-button>
-
-    <!--TypeScript-->
-    import { DxLoadIndicatorModule, DxButtonModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        isLoadIndicatorVisible: boolean = true;
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxLoadIndicatorModule,
-            DxButtonModule
-        ],
-        // ...
-    })
-
-##### AngularJS
-
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-load-indicator="{
-            bindingOptions: {
-                visible: 'isLoadIndicatorVisible'
-            }
-        }"></div>
-        <div dx-button="{
-            text: 'Toggle the LoadIndicator',
-            onClick: toggleLoadIndicator
-        }"></div>
-    </div>
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.isLoadIndicatorVisible = false;
-            $scope.toggleLoadIndicator = function () {
-                var currentValue = $scope.isLoadIndicatorVisible;
-                $scope.isLoadIndicatorVisible = !currentValue;
-            }
-        });
-
-##### Knockout
-
-    <!--HTML--><div data-bind="dxLoadIndicator: {
-        visible: isLoadIndicatorVisible
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Toggle the LoadIndicator',
-        onClick: function (e) {
-            var currentValue = e.model.isLoadIndicatorVisible();
-            e.model.isLoadIndicatorVisible(!currentValue);
-        }
-    }"></div>
-
-    <!--JavaScript-->var viewModel = {
-        isLoadIndicatorVisible: ko.observable(false)
-    };
-
-    ko.applyBindings(viewModel);
 
 ---
 

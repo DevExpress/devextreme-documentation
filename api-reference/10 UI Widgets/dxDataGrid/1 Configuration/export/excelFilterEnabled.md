@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.export.excelFilterEnabled
 type: Boolean
 default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

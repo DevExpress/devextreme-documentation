@@ -5,7 +5,13 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a value axis on which the argument axis should be postitioned.
 
 ---
-<!-- Description goes here -->
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisCustomPosition/"
+}
+
+##### See also #####
+- [customPosition](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#customPosition)

@@ -9,7 +9,6 @@ This command does the following:
 
 - Adds the <a href="https://www.npmjs.com/package/devextreme" target="_blank">`devextreme`</a> and <a href="https://www.npmjs.com/package/devextreme-angular" target="_blank">`devextreme-angular`</a> npm packages to the `dependencies` in `package.json` and installs their latest versions.
 - References the `dx.common.css` and `dx.light.css` [DevExtreme stylesheets](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') in `angular.json`.
-- Registers the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a> in `tsconfig.json`.
 
 These steps are explained in the [Add DevExtreme to an Angular CLI Application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') article.
 

@@ -60,22 +60,8 @@ This article describes how to create an ASP.NET Core Angular application and add
           }
         }
 
-1. **Only .NET Core SDK 2.2 and later**: Register the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a> in the `ClientApp/tsconfig.json` file. The **DataGrid** widget component, which we are going to utilize at a later step, uses this library for [client-side export to Excel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToExcel/Angular/Light).
+1. **Only .NET Core SDK 2.2 and later**: DevExtreme requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a>. Since JSZip v3.3.0, the library does not need registration. If you use an earlier version, register JSZip in the `tsconfig.json` file as shown in the [JSZip Registration](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies_in_Angular_CLI_6+/JSZip_Registration) article.
 
-        <!-- tab: tsconfig.json -->
-        {
-          ...
-          "compilerOptions": {
-            ...
-            "paths": {
-              "jszip": [
-                "node_modules/jszip/dist/jszip.min.js"
-              ]
-            }
-          }
-        }
-
-        
 1. Open the `ClientApp/src/app/app.module.ts` file and import modules that contain individual DevExtreme widgets or a module containing all the DevExtreme widgets and related utilities:
 
         <!-- tab: app.module.ts -->

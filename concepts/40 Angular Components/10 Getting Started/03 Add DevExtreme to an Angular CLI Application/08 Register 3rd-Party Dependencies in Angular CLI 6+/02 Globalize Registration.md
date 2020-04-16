@@ -21,9 +21,6 @@ Then, register the Globalize and CLDR scripts in the `tsconfig.json` file...
           ],
           "cldr/*": [
             "node_modules/cldrjs/dist/cldr/*"
-          ],
-          "jszip": [
-            "node_modules/jszip/dist/jszip.min.js"
           ]
         }
       }

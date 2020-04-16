@@ -1,11 +1,11 @@
 ---
-id: FileSystemProviderBase.downloadItems()
+id: FileSystemItem.getFileExtension()
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
-##### param(items): Array<FileSystemItem>
+##### return: String
 <!-- Description goes here -->
 
 ---

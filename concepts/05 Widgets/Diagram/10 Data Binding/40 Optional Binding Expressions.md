@@ -1,40 +1,9 @@
-The **Diagram** widget allows you to bind [node](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes) and [edge](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges) settings to a database. Binding options have postfix _'Expr'_ and can contain a data source field name or an expression that returns the corresponding node or edge data.
+The **Diagram** allows you to bind a number of shape and connector visual properties, like type, size, and style. 
 
-    <!--JavaScript-->
-    $(function() {
-        $("#diagram").dxDiagram({
-            nodes: {
-                dataSource: new DevExpress.data.ArrayStore({
-                    key: "this",
-                    data: orgItems
-                }),
-                keyExpr: "ID",
-                textExpr: "Title",
-                parentKeyExpr: "Head_ID",
-                typeExpr: itemTypeExpr,
-                styleExpr: itemStyleExpr,
-            },
-        });
-        function itemTypeExpr(obj, value) {
-          return obj.type === "group" ? "ellipse" : "rectangle";
-        }
-        function itemStyleExpr(obj) {
-            return { "stroke": "red" };
-        }
-    });
-   
-        
+[note] If a binding option is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** widget and is lost after a page reload.
+       
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
 
-When you bind **Diagram** to a data source, specify widget options to allow diagram structure creation. Required options depend on the source data structure.
-
-- [Node and Edge Arrays](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Node_and_Edge_Arrays). Required options: [nodes.keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr'), [edges.keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#keyExpr'), [edges.fromExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/fromExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromExpr'), [edges.toExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges/toExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr')
-
-- [Linear Array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array). Required node options: [keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr'), [parentKeyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/parentKeyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#parentKeyExpr')
-
-- [Hierarchical Array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array). Required node options: [keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr'), [itemsExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/itemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#itemsExpr')
-
-See tables below for a list of all node and edge binding options.
 <div class="simple-table">
   <table>
     <thead>
@@ -113,6 +82,8 @@ See tables below for a list of all node and edge binding options.
   </table>
 </div>
 
+[note] If you bind a **Diagram** to a [linear](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array) or [hierarchical array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array), edge binding options are not in effect because connectors are not bound to specific edges. For this reason the storage of connector styles in a data source is not supported.
+
 <div class="simple-table">
   <table>
     <thead>
@@ -181,6 +152,10 @@ See tables below for a list of all node and edge binding options.
   </table>
 </div>
 
+You can set a binding option to a name of a data source field that provides item values, or to an expression that returns a constant value or calculates a value in runtime based on conditions.
+
+![Diagram - Data Bound Diagram](/images/diagram/data-bound-diagram.png)
+
     <!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
@@ -192,13 +167,13 @@ See tables below for a list of all node and edge binding options.
                 autoLayout: {
                     type: "off"
                 },
-                containerChildrenExpr: "children",
+                childrenExpr: "children",
                 heightExpr: "height",
                 imageUrlExpr: "imageUrl",
                 keyExpr: "key",
                 leftExpr: "left",
                 lockedExpr: "locked",
-                styleExpr: "style",
+                styleExpr: function(obj) {if (obj.type.includes("Container")) return {"stroke": "red"}},
                 textExpr: "text",
                 textStyleExpr: "textStyle",
                 topExpr: "top",
@@ -212,17 +187,17 @@ See tables below for a list of all node and edge binding options.
                     data: orgLinks
                 }),
                 fromExpr: "from",
-                fromLineEndExpr: "fromLineEnd",
+                fromLineEndExpr: function() {return "none"},
                 fromPointIndexExpr: "fromPointIndex",
                 keyExpr: "key",
-                lineTypeExpr: "lineType",
+                lineTypeExpr: function() {return "straight"},
                 lockedExpr: "locked",
                 pointsExpr: "points",
-                styleExpr: "style",
+                styleExpr: function() {return ({"stroke-dasharray":"4"})},
                 textExpr: "text",
                 textStyleExpr: "textStyle",
                 toExpr: "to",
-                toLineEndExpr: "toLineEnd",
+                toLineEndExpr: function() {return "arrow"},
                 toPointIndexExpr: "toPointIndex",
             },
         });
@@ -235,7 +210,6 @@ See tables below for a list of all node and edge binding options.
             key: "101",
             left: 0.5,
             locked: true,
-            style: { "stroke": "red" },
             text: "Product Manager",
             textStyle: { "font-weight": "bold", "text-decoration": "underline" },
             top: 0.875,
@@ -248,7 +222,6 @@ See tables below for a list of all node and edge binding options.
             key: "102",
             left: 2.5,
             locked: false,
-            style: { "stroke": "red" },
             text: "Team",
             textStyle: { "font-weight": "bold", "text-decoration": "underline" },
             top: 0.5,
@@ -275,26 +248,20 @@ See tables below for a list of all node and edge binding options.
                 type: "rectangle",
                 width: 1.5,
             },
-      
+    
         ]
         },
     ];
     var orgLinks = [  
       {  
             from: "101",
-            fromLineEnd: "none",
             fromPointIndex: 1,
             key: "1",
-            lineType: "straight",
             locked: false,
             points: [{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}],
-            style: {"stroke-dasharray":"4"},
             text: "Task",
             textStyle: { "font-weight": "bold"},
             to: "102",
-            toLineEnd: "arrow",
             toPointIndex: 11,
       },
     ];
-
-![Diagram - Data Bound Diagram](/images/diagram/data-bound-diagram.png)

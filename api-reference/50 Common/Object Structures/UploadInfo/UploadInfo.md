@@ -7,7 +7,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that provides information about the file upload session.
 
 ---
-<!-- Description goes here -->

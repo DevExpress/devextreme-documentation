@@ -16,7 +16,7 @@ Configures validation options.
         $("#gantt").dxGantt({
             validation: {
                 autoUpdateParentTasks: true,
-                enableDependencyValidation: true
+                validateDependencies: true
             },
             // ...
         });

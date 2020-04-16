@@ -3,10 +3,9 @@ id: FileSystemItem.getFileExtension()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets a file's extension.
 
 ##### return: String
-<!-- Description goes here -->
+The file's extension.
 
 ---
-<!-- Description goes here -->

@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The number of uploaded chunks and chunks that are to be uploaded. 
 
 ---
-<!-- Description goes here -->

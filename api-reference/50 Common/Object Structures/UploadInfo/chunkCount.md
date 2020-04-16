@@ -4,6 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-The total number of already uploaded chunks and chunks that are to be uploaded. 
+The number of uploaded chunks and chunks that are to be uploaded. 
 
 ---

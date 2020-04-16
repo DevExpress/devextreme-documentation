@@ -4,6 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-The count of bytes that is already uploaded to the server.
+The number of bytes that is uploaded to the server.
 
 ---

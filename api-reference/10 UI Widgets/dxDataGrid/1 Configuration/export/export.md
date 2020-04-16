@@ -7,7 +7,7 @@ type: Object
 Configures client-side exporting.
 
 ---
-A user can click the **Export** button to save an Excel file with the exported data. Ensure that the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method is specified and the [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) handler is configured to prevent the built-in export. Data types, sorting, filtering, and grouping settings are maintained.
+A user can click the **Export** button to save an Excel file with the exported data. Data types, sorting, filtering, and grouping settings are maintained.
 
 ![DevExtreme HTML5 JavaScript DataGrid Export Button](/images/DataGrid/exported_data.png)
 
@@ -459,4 +459,3 @@ You can also use the **ExcelJS** API to enable users to export images and multip
 
 #####See Also#####
 - **columns[]**.[format](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format)
-

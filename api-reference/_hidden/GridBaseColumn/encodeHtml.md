@@ -10,4 +10,4 @@ Specifies whether HTML tags are displayed as plain text or applied to the values
 ---
 When **true**, HTML tags are displayed as plain text; when **false**, they are applied to the values of the column.
 
-HTML tags are always exported to Excel as plain text.
+When the **DataGrid** is exported to Excel, HTML tags are always exported as plain text.

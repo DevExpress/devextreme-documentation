@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.exported
 type: eventType
+deprecated: 
 ---
 ---
 ##### shortDescription

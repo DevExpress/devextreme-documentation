@@ -1,6 +1,6 @@
 ---
 id: dxLookup.Options.dropDownOptions
-type: dxPopup_Options | dxPopover_Options
+type: dxPopover_Options
 ---
 ---
 ##### shortDescription

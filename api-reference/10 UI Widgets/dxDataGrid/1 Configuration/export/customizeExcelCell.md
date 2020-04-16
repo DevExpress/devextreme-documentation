@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.export.customizeExcelCell
 type: function(options)
+deprecated: 
 ---
 ---
 ##### shortDescription

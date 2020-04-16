@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.onExported
 type: function(e)
 default: null
+deprecated: 
 EventForAction: dxDataGrid.exported
 ---
 ---

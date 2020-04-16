@@ -1,5 +1,6 @@
 ---
 id: dxDataGrid.exportToExcel(selectionOnly)
+deprecated: 
 ---
 ---
 ##### shortDescription

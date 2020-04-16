@@ -258,7 +258,7 @@ Do not specify the following options in the **form** object:
 
 Also, the [colCount](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount') option defaults to 2, but it can be redefined.
 
-#include widgets-config-object-option-note {
+#include widgets-config-object-option-note with {
     optionName: "form"
 }
 

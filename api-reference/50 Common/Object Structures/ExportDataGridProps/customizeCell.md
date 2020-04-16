@@ -31,7 +31,7 @@ A snippet where Excel cells are customized
 ##### jQuery
 
     <!--JavaScript-->
-    $('#gridContainer').dxDataGrid({
+    $("#dataGridContainer").dxDataGrid({
         export: {
             enabled: true
         },

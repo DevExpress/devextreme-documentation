@@ -24,6 +24,7 @@ You can also use the [containerKeyExpr](/Documentation/ApiReference/UI_Widgets/d
                     key: "this",
                     data: orgItems
                 }),
+                keyExpr: "id",
                 parentKeyExpr: "parent_id",
                 containerKeyExpr: "team",
             },

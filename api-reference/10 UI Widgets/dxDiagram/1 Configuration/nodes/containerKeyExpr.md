@@ -24,6 +24,7 @@ You can also use the [containerChildrenExpr](/Documentation/ApiReference/UI_Widg
                     key: "this",
                     data: orgItems
                 }),
+                keyExpr: "id",
                 parentKeyExpr: "parent_id",
                 containerKeyExpr: "team",
             },

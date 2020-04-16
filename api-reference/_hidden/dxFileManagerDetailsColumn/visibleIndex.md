@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the position of the column regarding other columns in the resulting widget. 
 
 ---
-<!-- Description goes here -->
+Visible indexes are normalized after the widget's creation: the leftmost column is assigned an index of 0; the rightmost column's index becomes equal to the number of visible columns minus 1; other columns get the indexes in between.

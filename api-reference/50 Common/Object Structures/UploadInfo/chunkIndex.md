@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The index of the uploading chunk.
 
 ---
-<!-- Description goes here -->

@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Casts column values to a specific data type.
 
 ---
-<!-- Description goes here -->
+If a data field provides values of one data type, but the widget should cast them to another, specify the proper type in this option. 

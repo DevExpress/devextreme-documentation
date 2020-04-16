@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Any custom information that is saved during the file uploading.
 
 ---
-<!-- Description goes here -->

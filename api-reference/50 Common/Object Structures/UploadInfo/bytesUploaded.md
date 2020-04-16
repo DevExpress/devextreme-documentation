@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The count of bytes that is already uploaded to the server.
 
 ---
-<!-- Description goes here -->

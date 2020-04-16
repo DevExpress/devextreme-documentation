@@ -15,3 +15,6 @@ The value of this option should be specified in the same format as the values on
 }
 
 [note]This option overrides the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#position') option.
+
+##### See also #####
+- **valueAxis**.[customPosition](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#customPosition)

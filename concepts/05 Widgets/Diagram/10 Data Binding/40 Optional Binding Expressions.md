@@ -95,6 +95,11 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </thead>
     <tbody>
     <tr>
+      <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromExpr">fromExpr</a></td>
+      <td>An edge's start node key.</td>
+      <td>from: "101",</td>
+    </tr>    
+    <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromLineEndExpr">fromLineEndExpr</a></td>
       <td>An edge's line start tip.</br>Should return <i>"arrow"</i>, <i>"filledTriangle"</i>, <i>"outlinedTriangle"</i>, or <i>"none"</i>.</td>
       <td>"none"</td>
@@ -134,6 +139,11 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
       <td>An edge's text style.</td>
       <td>{ "font-weight": "bold"}</td>
     </tr>
+    <tr>
+      <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr">toExpr</a></td>
+      <td>An edge's end node key.</td>
+      <td>to: "102",</td>
+    </tr>    
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toLineEndExpr">toLineEndExpr</a></td>
       <td>An edge's line end tip.</br>Should return <i>"arrow"</i>, <i>"filledTriangle"</i>, <i>"outlinedTriangle"</i>, or <i>"none"</i>.</td>

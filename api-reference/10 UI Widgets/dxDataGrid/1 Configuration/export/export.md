@@ -26,7 +26,7 @@ The following instructions show how to enable and configure client-side export:
     - [Data mapping](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping) is ignored. Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead.
 
 
-2. **Enable Client-Side Export**   
+2. **Enable the export UI**   
     Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled') option to **true**. You can disable exporting for a specific column by setting its [allowExporting](/api-reference/_hidden/dxDataGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowExporting') option to **false**:
 
     ---
@@ -169,7 +169,7 @@ The following instructions show how to enable and configure client-side export:
 
     ---
 
-3. **Specify the Export Options**   
+3. **Export the DataGrid**   
     Call the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method in the [onExporting](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) handler to execute export after the Export button is pressed. The deprecated export is deactivated by setting the `e.cancel` parameter to **true**. To save the document to Excel, use the **saveAs** function from the **FileSaver** API.
 
     ---

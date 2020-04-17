@@ -25,7 +25,7 @@ A **DataGrid** cell.
 
 ---
 
-The following snippet illustrates how to customize the <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> options of the [data cells](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType):
+The following code illustrates how to customize <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells whose [rowType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) equals *"data"*:
 
 ---
 ##### jQuery
@@ -55,7 +55,7 @@ The following snippet illustrates how to customize the <a href="https://github.c
                     }
                 }).then(function() {
                     workbook.xlsx.writeBuffer().then(function(buffer) {
-                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                        saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                     });
                 });
                 e.cancel = true;
@@ -111,7 +111,7 @@ The following snippet illustrates how to customize the <a href="https://github.c
                 }
             }).then(function() {
                 workbook.xlsx.writeBuffer().then(function(buffer) {
-                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });
             e.cancel = true;
@@ -184,7 +184,7 @@ The following snippet illustrates how to customize the <a href="https://github.c
                     }
                 }).then(function() {
                     workbook.xlsx.writeBuffer().then(function(buffer) {
-                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                        saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                     });
                 });
                 e.cancel = true;
@@ -233,7 +233,7 @@ The following snippet illustrates how to customize the <a href="https://github.c
                 }
             }).then(function() {
                 workbook.xlsx.writeBuffer().then(function(buffer) {
-                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });
             e.cancel = true;

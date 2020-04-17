@@ -15,11 +15,17 @@ The widget creates a diagram layout based on the algorithm specified by the [aut
 
 You can create a diagram layout based on shape coordinates maintained in a data source. Set the [leftExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#topExpr') options to names of data source fields that provide shape coordinates. 
 
-You can provide additional points for connectors via the [pointsExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#pointsExpr) option.
+If you bind a **Diagram** to an array of edges, you can specify a shape's connection point where an edge begins ([fromPointIndexExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromPointIndexExpr)) and ends ([toPointIndexExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toPointIndexExpr)) and provide additional points for connectors via the [pointsExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#pointsExpr) option.
 
 Shape and edge point coordinates are specified in [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#units').
 
-[note] When the [autoLayout.type](Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/autoLayout/#type) option is set to **layered** or **tree**, predefined shape coordinates ([leftExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#topExpr')) and edge points ([pointsExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#pointsExpr)) are ignored.
+[note]
+
+When the [autoLayout.type](Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/autoLayout/#type) option is set to **layered** or **tree**, predefined shape coordinates ([leftExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#topExpr')) and edge points ([pointsExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#pointsExpr)) are ignored.
+
+The **auto** layout type (default) is the equivalent of the **off** value when both shape coordinates ([leftExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#topExpr')) are specified; otherwise, the **auto** value is equivalent of **layered**.
+
+[/note]
 
     <!-- tab: index.js -->
     $(function() {
@@ -45,6 +51,8 @@ Shape and edge point coordinates are specified in [units](/api-reference/10%20UI
                 keyExpr: "key",
                 fromExpr: "from",
                 toExpr: "to",
+                fromPointIndexExpr: "fromPoint",
+                toPointIndexExpr: "toPoint",
                 pointsExpr: "points",
             },
             units: "in",
@@ -71,6 +79,8 @@ Shape and edge point coordinates are specified in [units](/api-reference/10%20UI
             key: "1",
             from: "101",
             to: "102",
+            fromPoint: 1,
+            toPoint: 3,
             points: [{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}],
       },
     ];

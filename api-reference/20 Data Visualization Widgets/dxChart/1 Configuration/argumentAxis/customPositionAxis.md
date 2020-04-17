@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a value axis on which the argument axis should be postitioned.
+Specifies a value axis on which the argument axis should be positioned. Applies only to a [multi-axis chart](/Documentation/Guide/Widgets/Chart/Axes/Multi-Axis_Chart/).
 
 ---
 

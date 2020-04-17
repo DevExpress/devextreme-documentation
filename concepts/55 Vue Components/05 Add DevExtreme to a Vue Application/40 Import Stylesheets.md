@@ -5,6 +5,18 @@ Open the main component file (`main.js`) and import `dx.common.css` and a [prede
     import 'devextreme/dist/css/dx.light.css';
     // ...
 
+Then, go to the `public` folder, open the `index.html` file, and add the `dx-viewport` class to the `body`. This ensures that theme colors and typography settings are applied to all elements on the page, not only to DevExtreme widgets.
+
+    <!-- tab: index.html -->
+    <html lang="en">
+        <head>
+            <!-- ... -->
+        </head>
+        <body class="dx-viewport">
+            <div id="app"></div>
+        </body>
+    </html>
+
 [note] [SVG-based widgets](/concepts/60%20Themes%20and%20Styles/00%20HTML-%20and%20SVG-Based%20Widgets.md '/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_Widgets/') do not require theme stylesheets. If you do import the stylesheets, the widgets apply an appearance that matches them.
 
 [tags] theme

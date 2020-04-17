@@ -13,21 +13,96 @@ A user can click the **Export** button to save an Excel file with the exported d
 
 The following instructions show how to enable and configure client-side export:
 
-1. **Prerequisites and Restrictions**  
+1. **Reference the required libraries**  
     Reference or import <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. If your app does not use modules, reference also the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a>.
 
-    The following restrictions apply when users export **DataGrid**:    
-    - Only XLSX files are supported.
-    - Excel limits the number of grouping levels to 7, while in the **DataGrid** it is unlimited.
-    - Only visible columns are exported. See the [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) option description for a workaround.
-    - [Detail rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) are not exported.
-    - [Group rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) are always exported in an expanded state and the [isExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded) option is ignored.
-    - Modifications made in the [cell](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) and [row](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#rowTemplate) templates are omitted. 
-    - [Data mapping](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping) is ignored. Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead.
+    ---
+    ##### jQuery
+        <!--HTML-->
+        <head>
+            <!-- ... -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+            <!-- reference the DevExtreme sources here -->
+        </head>
 
+    ##### Angular   
+
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';
+        import ExcelJS from 'exceljs';
+        import saveAs from 'file-saver';
+        
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+        export class AppComponent {
+            // ...
+        }
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
+        import ExcelJS from 'exceljs';
+        import saveAs from 'file-saver';
+
+        export default {
+            components: {
+                DxDataGrid,
+                DxExport
+            },
+            // ...
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DataGrid, { Export } from 'devextreme-react/data-grid';
+        import ExcelJS from 'exceljs';
+        import saveAs from 'file-saver';
+
+        class App extends React.Component {
+            // ...
+        export default App;
+
+    ---     
 
 2. **Enable the export UI**   
-    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled') option to **true**. You can disable exporting for a specific column by setting its [allowExporting](/api-reference/_hidden/dxDataGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowExporting') option to **false**:
+    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled') option to **true**. This option enables export for all columns. Set a column's [allowExporting](/api-reference/_hidden/dxDataGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowExporting') option to **false** to prevent it from being exported:
 
     ---
 
@@ -170,7 +245,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the DataGrid**   
-    Call the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method in the [onExporting](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) handler to execute export after the Export button is pressed. The deprecated export is deactivated by setting the `e.cancel` parameter to **true**. To save the document to Excel, use the **saveAs** function from the **FileSaver** API.
+    Implement [onExporting](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) handler and call the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method within it. Use **ExcelJS** API in the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) function to customize the exported document. To save the document to Excel, use the **saveAs** function from the **FileSaver** API. Set the `e.cancel` parameter to **true** to disable the deprecated export execution.
 
     ---
     ##### jQuery
@@ -185,7 +260,12 @@ The following instructions show how to enable and configure client-side export:
                 var worksheet = workbook.addWorksheet('Main sheet'); 
                 DevExpress.excelExporter.exportDataGrid({ 
                     worksheet: worksheet, 
-                    component: e.component 
+                    component: e.component,
+                    customizeCell: function(options) {
+                        var excelCell = options;
+                        excelCell.font = { name: 'Arial', size: 12 };
+                        excelCell.alignment = { horizontal: 'left' };
+                    } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer().then(function(buffer) { 
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
@@ -230,7 +310,12 @@ The following instructions show how to enable and configure client-side export:
                 const worksheet = workbook.addWorksheet('Main sheet');
                 exportDataGrid({
                     component: e.component,
-                    worksheet: worksheet
+                    worksheet: worksheet,
+                    customizeCell: function(options) {
+                        const excelCell = options;
+                        excelCell.font = { name: 'Arial', size: 12 };
+                        excelCell.alignment = { horizontal: 'left' };
+                    } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer()
                         .then(function(buffer) {
@@ -293,7 +378,12 @@ The following instructions show how to enable and configure client-side export:
                     const worksheet = workbook.addWorksheet('Main sheet');
                     exportDataGrid({
                         component: e.component,
-                        worksheet: worksheet
+                        worksheet: worksheet,
+                        customizeCell: function(options) {
+                            const excelCell = options;
+                            excelCell.font = { name: 'Arial', size: 12 };
+                            excelCell.alignment = { horizontal: 'left' };
+                        } 
                     }).then(function() {
                         workbook.xlsx.writeBuffer()
                             .then(function(buffer) {
@@ -313,9 +403,9 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import DataGrid, { Export } from 'devextreme-react/data-grid';
         import ExcelJS from 'exceljs';
         import saveAs from 'file-saver';
+        import DataGrid, { Export } from 'devextreme-react/data-grid';
         import { exportDataGrid } from 'devextreme/excel_exporter';
 
         class App extends React.Component {
@@ -332,7 +422,12 @@ The following instructions show how to enable and configure client-side export:
                 const worksheet = workbook.addWorksheet('Main sheet');
                 exportDataGrid({
                     component: e.component,
-                    worksheet: worksheet
+                    worksheet: worksheet,
+                    customizeCell: function(options) {
+                        const excelCell = options;
+                        excelCell.font = { name: 'Arial', size: 12 };
+                        excelCell.alignment = { horizontal: 'left' };
+                    } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer()
                         .then(function(buffer) {
@@ -346,16 +441,25 @@ The following instructions show how to enable and configure client-side export:
 
     --- 
 
-4. **Further Configure Export and Customize Data**      
-    The **ExcelJS** library allows users to customize exported data in numerous ways. Refer to the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) section for details and examples. 
+The following restrictions apply when users export **DataGrid**:   
 
-    You can also use the **ExcelJS** API to enable users to export images and multiple grids to a single document:
+- Only XLSX files are supported.
+- Excel limits the number of grouping levels to 7, while in the **DataGrid** it is unlimited.
+- Only visible columns are exported. See the [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) option description for a workaround.
+- [Detail rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) are not exported.
+- [Group rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) are always exported in an expanded state and the [isExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded) option is ignored.
+- Modifications made in the [cell](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) and [row](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#rowTemplate) templates are omitted. 
+- [Data mapping](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping) is ignored. Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead.
 
-    #include common-demobutton-named with {
-        name: "Export Images",
-        url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportImages/"
-    }
-    #include common-demobutton-named with {
-        name: "Export Multiple Grids",
-        url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/"
-    }
+#include common-demobutton-named with {
+    name: "Overview",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
+}
+#include common-demobutton-named with {
+    name: "Export Images",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportImages/"
+}
+#include common-demobutton-named with {
+    name: "Export Multiple Grids",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/"
+}

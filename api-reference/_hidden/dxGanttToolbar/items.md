@@ -1,6 +1,6 @@
 ---
 id: dxGanttToolbar.items
-acceptValues: 'separator' | 'undo' | 'redo' | 'zoomIn' | 'zoomOut'
+acceptValues: 'separator' | 'undo' | 'redo' | 'expandAll' | 'collapseAll' | 'addTask' | 'deleteTask' | 'zoomIn' | 'zoomOut'
 type: Array<dxGanttToolbarItem, String>
 inheritsType: dxGanttToolbarItem
 ---

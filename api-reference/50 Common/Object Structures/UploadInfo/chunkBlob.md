@@ -4,6 +4,6 @@ type: Blob
 ---
 ---
 ##### shortDescription
-The binary content of the uploading chunk. 
+The binary content of the uploading chunk.
 
 ---

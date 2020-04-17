@@ -24,7 +24,7 @@ The following code adds a simple **RadioGroup** to your page. Here, the [value](
 
     <!--HTML-->
     <dx-radio-group
-        [data-source]="dataSource"
+        [dataSource]="dataSource"
         value="Low">
     </dx-radio-group>
 
@@ -120,9 +120,9 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
 
     <!--HTML-->
     <dx-radio-group
-        [data-source]="dataItems"
+        [dataSource]="dataItems"
         [value]="dataItems[1]"
-        display-expr="text">
+        displayExpr="text">
     </dx-radio-group>
 
     <!--TypeScript-->
@@ -225,7 +225,7 @@ The **RadioGroup** widget supports horizontal (default for tablets) and vertical
 
     <!--HTML-->
     <dx-radio-group
-        [data-source]="dataSource"
+        [dataSource]="dataSource"
         layout="horizontal">
     </dx-radio-group>
 

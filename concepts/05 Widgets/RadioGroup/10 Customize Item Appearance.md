@@ -18,7 +18,7 @@ For a minor customization of **RadioGroup** items, you can define [specific fiel
 
     <!--HTML-->
     <dx-radio-group
-        [data-source]="dataSource">
+        [dataSource]="dataSource">
     </dx-radio-group>
 
     <!--TypeScript-->

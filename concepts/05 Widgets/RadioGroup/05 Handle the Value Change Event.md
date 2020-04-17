@@ -18,7 +18,7 @@ To process a new **RadioGroup** value, you need to handle the value change event
 
     <!--HTML-->
     <dx-radio-group
-        [data-source]="dataSource"
+        [dataSource]="dataSource"
         [(value)]="dataSource[1]"
         (onValueChanged)="handleValueChange($event)">
     </dx-radio-group>

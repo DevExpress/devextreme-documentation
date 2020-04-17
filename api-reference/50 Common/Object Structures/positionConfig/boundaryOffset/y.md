@@ -5,6 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies an offset in the vertical direction.
+Specifies a vertical offset.
 
 ---

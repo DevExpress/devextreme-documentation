@@ -9,7 +9,7 @@ Specifies the offset of the boundaries from the [boundary](/Documentation/ApiRef
 ---
 The offset is specified in pixels. To set this option, use an object with the **x** and **y** fields or a string value that indicates the horizontal and vertical offsets separated by a whitespace character. Positive offsets narrow the boundaries, negative offsets widen the boundaries.
 
-In the following code, the left and right boundaries are narrowed (**x** is 50), but the top and bottom boundaries are widened (**y** is -50).
+In the following code, left and right boundaries are narrowed (**x** is 50), but top and bottom boundaries are widened (**y** is -50).
 
 ---
 ##### jQuery

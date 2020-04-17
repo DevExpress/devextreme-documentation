@@ -5,7 +5,7 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies a side or corner of the overlay element that should be aligned with the [target element](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of).
+Specifies the overlay element's side or corner to align with a [target element](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of).
 
 ---
 

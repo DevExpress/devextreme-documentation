@@ -19,7 +19,7 @@ Move the overlay element to the opposite side of the [target](/Documentation/Api
 Move the overlay element to the inside of the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
 
 - *"flipfit"*       
-Apply first *"flip"*, then *"fit"*
+First apply *"flip"*, then *"fit"*.
 
 - *"none"*      
 Ignore the collision.

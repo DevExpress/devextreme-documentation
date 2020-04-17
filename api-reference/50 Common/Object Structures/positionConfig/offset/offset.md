@@ -4,12 +4,12 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies the offset of the overlay element from the specified position.
+Specifies the overlay element's offset from a specified position.
 
 ---
 The offset is specified in pixels. To set this option, use an object with the **x** and **y** fields or a string value that indicates the horizontal and vertical offsets separated by a whitespace character. Positive offsets shift the element right or down, negative offsets shift it left or up. 
 
-In the following code, the overlay element is shifted 50 pixels right and 25 pixels up.
+In the following code, the overlay element is shifted 50 pixels to the right and 25 pixels up.
 
 ---
 ##### jQuery

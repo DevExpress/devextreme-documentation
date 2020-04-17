@@ -2,7 +2,7 @@
 id: dxDataGrid.Options.onExported
 type: function(e)
 default: null
-deprecated: [important]Since v20.1, we recommend using export based on the ExcelJS library. See the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) topic.
+deprecated: Since v20.1, we recommend using export based on the ExcelJS library. See the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) topic.
 EventForAction: dxDataGrid.exported
 ---
 ---

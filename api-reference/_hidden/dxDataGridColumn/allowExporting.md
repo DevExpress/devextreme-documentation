@@ -8,3 +8,5 @@ default: true
 Specifies whether data from this column should be exported. Applies only if the column is [visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#visible').
 
 ---
+##### See also #####
+- [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/)

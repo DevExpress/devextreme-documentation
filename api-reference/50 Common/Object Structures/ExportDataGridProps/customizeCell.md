@@ -25,28 +25,53 @@ A **DataGrid** cell.
 
 ---
 
-A snippet where Excel cells are customized 
+The following snippet illustrates how to customize the <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> options of the [data cells](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType):
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
-    $("#dataGridContainer").dxDataGrid({
-        export: {
-            enabled: true
-        },
-        onExporting(e) {
+    $(function() {
+        $("#dataGridContainer").dxDataGrid({
             // ...
-            customizeCell: function(options) {
-                const { gridCell, excelCell } = options;
-                // ...
-                if(gridCell.rowType === 'data') {
-                    excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
-                    excelCell.alignment = { horizontal: 'left' };
-                }
+            export: {
+                enabled: true
+            },
+            onExporting(e) {
+                var workbook = new ExcelJS.Workbook();
+                var worksheet = workbook.addWorksheet('Companies');
+
+                DevExpress.excelExporter.exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet,
+                    topLeftCell: { row: 2, column: 2 },
+                    customizeCell: function(options) {
+                        var { gridCell, excelCell } = options;
+
+                        if(gridCell.rowType === 'data') {
+                            excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                            excelCell.alignment = { horizontal: 'left' };
+                        }
+                    }
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                    });
+                });
+                e.cancel = true;
             }
-        }
+        });
     });
+
+    <!--HTML-->
+    <head>
+        <!-- ... -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+        <!-- reference the DevExtreme sources here -->
+    </head>
 
 ##### Angular   
 
@@ -69,15 +94,27 @@ A snippet where Excel cells are customized
     })
     export class AppComponent {
         onExporting(e) {
-            // ...
-            customizeCell: function(options) {
-                const { gridCell, excelCell } = options;
-                // ...
-                if(gridCell.rowType === 'data') {
-                    excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
-                    excelCell.alignment = { horizontal: 'left' };
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Companies');
+
+            exportDataGrid({
+                component: e.component,
+                worksheet: worksheet,
+                topLeftCell: { row: 2, column: 2 },
+                customizeCell: function(options) {
+                    const { gridCell, excelCell } = options;
+                    
+                    if(gridCell.rowType === 'data') {
+                        excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                        excelCell.alignment = { horizontal: 'left' };
+                    }
                 }
-            }
+            }).then(function() {
+                workbook.xlsx.writeBuffer().then(function(buffer) {
+                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                });
+            });
+            e.cancel = true;
         }
     }
 
@@ -130,15 +167,27 @@ A snippet where Excel cells are customized
         },
         methods: {
             onExporting(e) {
-                // ...
-                customizeCell: function(options) {
-                    const { gridCell, excelCell } = options;
-                    // ...
-                    if(gridCell.rowType === 'data') {
-                        excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
-                        excelCell.alignment = { horizontal: 'left' };
+                const workbook = new ExcelJS.Workbook();
+                const worksheet = workbook.addWorksheet('Companies');
+
+                exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet,
+                    topLeftCell: { row: 2, column: 2 },
+                    customizeCell: function(options) {
+                        const { gridCell, excelCell } = options;
+                        
+                        if(gridCell.rowType === 'data') {
+                            excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                            excelCell.alignment = { horizontal: 'left' };
+                        }
                     }
-                }
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                    });
+                });
+                e.cancel = true;
             }
         }
     }
@@ -167,15 +216,27 @@ A snippet where Excel cells are customized
         }
 
         onExporting(e) {
-            // ...
-            customizeCell: function(options) {
-                const { gridCell, excelCell } = options;
-                // ...
-                if(gridCell.rowType === 'data') {
-                    excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
-                    excelCell.alignment = { horizontal: 'left' };
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Companies');
+
+            exportDataGrid({
+                component: e.component,
+                worksheet: worksheet,
+                topLeftCell: { row: 2, column: 2 },
+                customizeCell: function(options) {
+                    const { gridCell, excelCell } = options;
+                    
+                    if(gridCell.rowType === 'data') {
+                        excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                        excelCell.alignment = { horizontal: 'left' };
+                    }
                 }
-            }
+            }).then(function() {
+                workbook.xlsx.writeBuffer().then(function(buffer) {
+                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
+                });
+            });
+            e.cancel = true;
         }
     }
     export default App;

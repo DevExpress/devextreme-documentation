@@ -15,7 +15,7 @@ You can find all the required files in the <a target="_blank" onclick="trackGAEv
 
 The stylesheets in the code above apply the Generic Light theme. See [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') for information about the other available themes.
 
-Specific functionality requires additional libraries. For instance, client-side exporting in **PivotGrid** widget requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> library. Similarly, the [HtmlEditor](/concepts/05%20Widgets/HtmlEditor/00%20Overview.md '/Documentation/Guide/Widgets/HtmlEditor/Overview/') widget requires <a href="https://quilljs.com/" target="_blank">Quill</a>. Refer to the dedicated topics for details.
+Specific functionality requires additional libraries. For instance, client-side exporting in **PivotGrid** widget requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> library; the [same feature](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) in the **DataGrid** widget needs the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a>, <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a>, and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. Similarly, the [HtmlEditor](/concepts/05%20Widgets/HtmlEditor/00%20Overview.md '/Documentation/Guide/Widgets/HtmlEditor/Overview/') widget requires <a href="https://quilljs.com/" target="_blank">Quill</a>. Refer to the dedicated topics for details.
 
 #####See Also#####
 #include common-link-configurewidget

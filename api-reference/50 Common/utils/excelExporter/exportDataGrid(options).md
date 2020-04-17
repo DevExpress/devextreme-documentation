@@ -14,7 +14,7 @@ Export settings.
 
 ---
      
-This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> to save files.
+This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> to save files. If your app does not use modules, you also need the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a>.
 
 You can call this method at any point in your application. In the example below, this method is called in the [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting') function that is executed before data is exported. The **cancel** parameter is enabled to prevent the built-in export. As a result, the **DataGrid** is exported to a single worksheet. 
 
@@ -197,19 +197,6 @@ You can call this method at any point in your application. In the example below,
 
 ---     
 
-[note]
-
-The following restrictions apply when users export **DataGrid**:
-
-- Only XLSX files are supported.
-- Excel limits the number of grouping levels to 7, while in the **DataGrid** it is unlimited.
-- Only visible columns are exported. See the [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) option description for a workaround.
-- [Detail rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) are not exported.
-- [Group rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) are always exported in an expanded state and the [isExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded) option is ignored.
-- Modifications made in the [cell](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) and [row](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#rowTemplate) templates are omitted. 
-- [Data mapping](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping) is ignored. Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead.
-
-[/note]
 
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"

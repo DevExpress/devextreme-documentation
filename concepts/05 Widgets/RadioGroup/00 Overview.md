@@ -121,7 +121,7 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
     <!--HTML-->
     <dx-radio-group
         [dataSource]="dataItems"
-        [value]="dataItems[1]"
+        [value]="radioGroupValue"
         displayExpr="text">
     </dx-radio-group>
 
@@ -134,7 +134,8 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
             { text: "Normal", color: "green" },
             { text: "Urgent", color: "yellow" },
             { text: "High", color: "red" }
-        ]
+        ];
+        radioGroupValue = dataItems[1];
     }
     @NgModule({
         imports: [
@@ -149,7 +150,7 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
     <template>
         <DxRadioGroup
             :data-source="dataItems"
-            :value="dataItems[1]"
+            :value="radioGroupValue"
             display-expr="text"
         />
     </template>
@@ -160,18 +161,21 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
 
+    const items = [
+        { text: 'Low', color: 'grey' },
+        { text: 'Normal', color: 'green' },
+        { text: 'Urgent', color: 'yellow' },
+        { text: 'High', color: 'red' }
+    ];
+
     export default {
         components: {
             DxRadioGroup
         },
         data() {
             return {
-                dataItems: [
-                    { text: 'Low', color: 'grey' },
-                    { text: 'Normal', color: 'green' },
-                    { text: 'Urgent', color: 'yellow' },
-                    { text: 'High', color: 'red' }
-                ]
+                dataItems: items,
+                radioGroupValue: items[1]
             };
         }
     }
@@ -193,11 +197,19 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
     ];
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                value: dataItems[1]
+            };
+        }
+
         render() {
             return (
                 <RadioGroup
                     dataSource={dataItems}
-                    defaultValue={dataItems[1]}
+                    value={this.state.value}
                     displayExpr="text"
                 />
             );

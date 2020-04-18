@@ -19,7 +19,7 @@ To process a new **RadioGroup** value, you need to handle the value change event
     <!--HTML-->
     <dx-radio-group
         [dataSource]="dataSource"
-        [(value)]="dataSource[1]"
+        [(value)]="radioGroupValue"
         (onValueChanged)="handleValueChange($event)">
     </dx-radio-group>
 
@@ -27,13 +27,15 @@ To process a new **RadioGroup** value, you need to handle the value change event
     import { DxRadioGroupModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        dataSource = ["Low", "Normal", "Urgent", "High"]
+        dataSource = ["Low", "Normal", "Urgent", "High"];
+
+        radioGroupValue = dataSource[1];
         
         handleValueChange (e) {
             const previousValue = e.previousValue;
             const newValue = e.value;
             // Event handling commands go here
-        }
+        };
     }
     @NgModule({
         imports: [
@@ -48,7 +50,7 @@ To process a new **RadioGroup** value, you need to handle the value change event
     <template>
         <DxRadioGroup 
             :data-source="dataSource"
-            :value.sync="dataSource[1]"
+            :value.sync="radioGroupValue"
             @value-changed="handleValueChange"
         />
     </template>
@@ -59,13 +61,16 @@ To process a new **RadioGroup** value, you need to handle the value change event
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
 
+    const items = ["Low", "Normal", "Urgent", "High"];
+
     export default {
         components: {
             DxRadioGroup
         },
         data() {
             return {
-                dataSource: ["Low", "Normal", "Urgent", "High"]
+                dataSource: items,
+                radioGroupValue: items[1]
             };
         },
         methods: {

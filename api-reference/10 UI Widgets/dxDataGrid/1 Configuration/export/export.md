@@ -14,7 +14,7 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Reference the required libraries**  
-    Reference or import <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. If your app does not use modules, reference also the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a>.
+    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. Export also requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> library. In a modular environment, this library is listed in package dependencies and is already added. If your app does not use modules, reference JSZip manually.
 
     ---
     ##### jQuery
@@ -67,6 +67,9 @@ The following instructions show how to enable and configure client-side export:
     ##### Vue
 
         <!-- tab: App.vue -->
+        <template>
+            <!-- ... -->
+        </template>
         <script>
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
@@ -97,6 +100,7 @@ The following instructions show how to enable and configure client-side export:
 
         class App extends React.Component {
             // ...
+        }
         export default App;
 
     ---     
@@ -245,7 +249,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the DataGrid**   
-    Implement [onExporting](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) handler and call the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method within it. Use **ExcelJS** API in the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) function to customize the exported document. To save the document to Excel, use the **saveAs** function from the **FileSaver** API. Set the `e.cancel` parameter to **true** to disable the deprecated export execution.
+    Implement the [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) handler and call the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method in it. In the code below, this method exports the **DataGrid** as is, but you can use [ExportDataGridProps](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell). To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
 
     ---
     ##### jQuery

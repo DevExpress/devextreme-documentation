@@ -68,7 +68,7 @@ By default, the **ActionSheet** comes up from the bottom of the page. If you set
     class App extends React.Component {
         render() {
             return (
-                <ActionSheet
+                <ActionSheet ...
                     dataSource={actionSheetData}
                     usePopover={true}
                     target="#actionSheetTarget"

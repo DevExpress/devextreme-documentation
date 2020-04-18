@@ -69,7 +69,6 @@ By default, the **ActionSheet** comes up from the bottom of the page. If you set
         render() {
             return (
                 <ActionSheet ...
-                    dataSource={actionSheetData}
                     usePopover={true}
                     target="#actionSheetTarget"
                 />

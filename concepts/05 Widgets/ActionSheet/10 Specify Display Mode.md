@@ -39,7 +39,6 @@ By default, the **ActionSheet** comes up from the bottom of the page. If you set
 
     <template>
         <DxActionSheet ...
-            :data-source="actionSheetData"
             :use-popover="true"
             target="#actionSheetTarget"
         />

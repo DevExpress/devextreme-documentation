@@ -1,6 +1,6 @@
 The **Diagram** allows you to bind a number of shape and connector visual properties, like type, size, and style. 
 
-[note] If a binding option is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** widget and is lost after a page reload.
+[note] If a binding option is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** widget and is lost after a page is reloaded.
        
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
 
@@ -82,7 +82,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
   </table>
 </div>
 
-[note] If you bind a **Diagram** to a [linear](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array) or [hierarchical array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array), edge binding options are not in effect because connectors are not bound to specific edges. For this reason the storage of connector styles in a data source is not supported.
+[note] If you bind a **Diagram** to a [linear](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array) or [hierarchical array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array), edge binding options are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
 
 <div class="simple-table">
   <table>

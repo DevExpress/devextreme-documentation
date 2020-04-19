@@ -8,7 +8,7 @@ Specify the following **required options**: [nodes.keyExpr](/api-reference/10%20
 
 Do **not specify** the [nodes.parentKeyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/parentKeyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#parentKeyExpr') and [edges](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/') options because they are a part of another binding mode.
 
-During the binding process, the widget creates a shape for every bound node and connectors between a node and its children. Note that edges are not maintained as entities in a data source, thus a detached connector disappears after rebinding.
+During the binding process, the widget creates a shape for every bound node and all connectors that are between a node and its children. Note that the edges are not maintained as entities in a data source, thus the detached connector disappears after it is rebound.
 
         <!-- tab: index.js -->
         $(function() {

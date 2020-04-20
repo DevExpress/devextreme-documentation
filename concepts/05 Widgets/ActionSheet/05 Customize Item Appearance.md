@@ -1,5 +1,8 @@
 For a minor customization of **ActionSheet** buttons, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/items/') in button data objects. For example, the following code generates three buttons, the first is not customized, the second is disabled, the [type](/api-reference/_hidden/dxActionSheetItem/type.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/items/#type') of the third button is *danger*.
 
+---
+##### JQuery
+
     <!--JavaScript-->
     $(function() {
         $("#actionSheetContainer").dxActionSheet({
@@ -10,6 +13,94 @@ For a minor customization of **ActionSheet** buttons, you can define [specific f
             ]
         });
     });
+
+##### Angular
+
+    <!--HTML-->
+    <dx-action-sheet
+        [dataSource]="actionSheetData"
+    </dx-action-sheet>
+
+    <!--TypeScript-->
+    import { DxActionSheetModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        actionSheetData = [
+            { text: "Reply" },
+            { text: "Reply All", disabled: true },
+            { text: "Delete", type: 'danger' }
+        ]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxActionSheetModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxActionSheet
+            :data-source="actionSheetData"
+        </DxActionSheet>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxActionSheet from 'devextreme-vue/action-sheet';
+
+    export default {
+        components: {
+            DxActionSheet
+        },
+        data() {
+            return {
+                actionSheetData: [
+                    { text: "Reply" },
+                    { text: "Reply All", disabled: true },
+                    { text: "Delete", type: 'danger' }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ActionSheet } from 'devextreme-react/action-sheet';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.actionSheetData = [
+                { text: "Reply" },
+                { text: "Reply All", disabled: true },
+                { text: "Delete", type: 'danger' }
+            ];
+        }
+
+        render() {
+            return (
+                <ActionSheet
+                    dataSource={this.actionSheetData}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 

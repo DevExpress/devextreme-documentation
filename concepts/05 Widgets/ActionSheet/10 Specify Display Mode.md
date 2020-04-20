@@ -38,8 +38,7 @@ By default, the **ActionSheet** comes up from the bottom of the page. If you set
 ##### Vue
 
     <template>
-        <DxActionSheet
-            :data-source="actionSheetData"
+        <DxActionSheet ...
             :use-popover="true"
             target="#actionSheetTarget"
         />
@@ -69,8 +68,7 @@ By default, the **ActionSheet** comes up from the bottom of the page. If you set
     class App extends React.Component {
         render() {
             return (
-                <ActionSheet
-                    dataSource={actionSheetData}
+                <ActionSheet ...
                     usePopover={true}
                     target="#actionSheetTarget"
                 />

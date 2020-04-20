@@ -5,11 +5,9 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies how to resolve collisions between the overlay and the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) elements.
+Specifies how to resolve collisions - when the overlay element exceeds the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
 
 ---
-Collisions occur whenever the specified position causes the overlay element to exceed the boundaries.
-
 You can use the following collision resolution algorithms:
 
 - *"flip"*      

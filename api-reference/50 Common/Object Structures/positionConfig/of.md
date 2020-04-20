@@ -4,7 +4,7 @@ type: String | Node | jQuery | Window
 ---
 ---
 ##### shortDescription
-The target element against which the overlay element should be positioned.
+The target element relative to which the overlay element should be positioned.
 
 ---
 This option accepts the following value types:

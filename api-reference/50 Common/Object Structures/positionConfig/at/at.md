@@ -9,7 +9,7 @@ Specifies the [target element](/Documentation/ApiReference/Common/Object_Structu
 
 ---
 
-To set this option, use an object with the **x** and **y** fields or one of the string shortcuts listed in the accepted values.
+To set this option, use an object with the **x** and **y** fields. These fields specify the target element's horizontal and vertical sides, respectively. Alternatively, you can use a string shortcut from the accepted values list.
 
 ---
 ##### jQuery

@@ -5,26 +5,113 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-The target element position that the widget is positioned against.
+Specifies the [target element](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of)'s side or corner where the overlay element should be positioned.
 
 ---
-The **at** option can take on an object containing the **x** and **y** fields, which specify horizontal and vertical position specifier respectively, or a string value consisting of horizontal and vertical position specifiers separated by a space (e.g., "left top"). The default value for each position specifier is "center". If you assign the "left" value to this option, it will be converted to the "left center" value.
 
-    <!--JavaScript-->
-    position: { at: 'left bottom' };
+To set this option, use an object with the **x** and **y** fields. These fields specify the target element's horizontal and vertical sides, respectively. Alternatively, you can use a string shortcut from the accepted values list.
 
-When using a widget as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, specify this option using the `HorizontalAlignment` and `VerticalAlignment` enums in the following manner.
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#popupContainer").dxPopup({
+            // ...
+            position: {
+                // ...
+                at: "left top"
+                // ===== or =====
+                at: { x: "left", y: "top" }
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-popup ... >
+        <dxo-position ...
+            at="left top">
+            <!-- or -->
+            <dxo-at x="left" y="top"></dxo-at>
+        </dxo-position>
+    </dx-popup>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPopup ... >
+            <DxPosition
+                at="left top">
+                <!-- or -->
+                <DxAt x="left" y="top" />
+            </DxPosition>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxPopup, {
+        DxPosition,
+        DxAt
+    } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup,
+            DxPosition,
+            DxAt
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Popup, {
+        Position,
+        At
+    } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popup ... >
+                    <Position
+                        at="left top">
+                        {/* or */}
+                        <At x="left" y="top" />
+                    </Position>
+                </Popup>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().Popup()
         .Position(p => p
-            .At(HorizontalAlignment.Right, VerticalAlignment.Bottom)
+            .At(HorizontalAlignment.Left, VerticalAlignment.Top)
         )
     )
 
     <!--Razor VB-->
-    @(Html.DevExtreme().WidgetName() _
+    @(Html.DevExtreme().Popup() _
         .Position(Sub(p)
-            p.At(HorizontalAlignment.Right, VerticalAlignment.Bottom)
+            p.At(HorizontalAlignment.Left, VerticalAlignment.Top)
         End Sub)
     )
+
+---
+    

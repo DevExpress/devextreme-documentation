@@ -11,7 +11,7 @@ For a minor customization of **ActionSheet** buttons, you can define [specific f
         });
     });
 
-If you need a more flexible solution, define a custom template. For Angular apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **ActionSheet** buttons.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -55,6 +55,86 @@ If you need a more flexible solution, define a custom template. For Angular apps
         border: 1px dotted #080;
         background-color: white;
     }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxActionSheet
+            :visible.sync="isActionSheetVisible"
+            :data-source="actionSheetData"
+            item-template="link">
+            <template #link="{ data }">
+                <div class="action-sheet-button">
+                    <a href="#">{{data.text}}</a>
+                </div>
+            </template>
+        </DxActionSheet>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxActionSheet from 'devextreme-vue/action-sheet';
+
+    export default {
+        components: {
+            DxActionSheet
+        },
+        data() {
+            return {
+                isActionSheetVisible: true,
+                actionSheetData: [
+                    { text: "Reply" },
+                    { text: "Reply All" },
+                    { text: "Forward" },
+                    { text: "Delete" }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ActionSheet } from 'devextreme-react/action-sheet';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { isActionSheetVisible: true };
+            this.actionSheetData = [
+                { text: "Reply" },
+                { text: "Reply All" },
+                { text: "Forward" },
+                { text: "Delete" }
+            ];
+            this.renderActionSheetItem = (itemData) => {
+                return (
+                    <div class="action-sheet-button">
+                        <a href="#">{itemData.text}</a>
+                    </div>
+                );
+            };
+        }
+
+        render() {
+            return (
+                <ActionSheet
+                    visible={this.state.isActionSheetVisible}
+                    dataSource={this.actionSheetData}
+                    itemRender={this.renderActionSheetItem}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

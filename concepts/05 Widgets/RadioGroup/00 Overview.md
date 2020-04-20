@@ -84,7 +84,7 @@ The following code adds a simple **RadioGroup** to your page. Here, the [value](
             return (
                 <RadioGroup
                     dataSource={dataSource}
-                    defaultValue="Low"
+                    value="Low"
                 />
             );
         }

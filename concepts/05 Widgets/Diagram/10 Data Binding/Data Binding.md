@@ -2,7 +2,7 @@ The **Diagram** can load external tree-like and graph structures. The supported 
 
 
 - [Node and Edge Arrays](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Node_and_Edge_Arrays): the information about nodes is maintained separately from the information about edges.
-- [Linear Array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array): nodes are maintained in a linear data structure and are connected by _Key_ - _Parent Key_ relation.
+- [Linear Array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array): nodes are maintained in a linear data structure and are connected by _Key_ - _Parent Key_ reference.
 - [Hierarchical Array](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array): nodes are maintained in hierarchical data structure.
 
 When you bind a **Diagram** widget to a data source, you should specify options that allow the widget to create the diagram structure. The supported data structures differ in required options.

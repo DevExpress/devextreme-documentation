@@ -93,6 +93,99 @@ For a minor customization of **RadioGroup** items, you can define [specific fiel
 
 ---
 
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+
+---
+##### Angular
+
+    <!--HTML-->
+    <dx-radio-group 
+        [dataSource]="dataSource"
+        itemTemplate="radio">
+        <div class="radio" *dxTemplate="let data of 'radio'">
+            <p style="font-size:larger"><b>{{data}}</b></p>
+        </div>
+    </dx-radio-group>
+
+    <!--TypeScript-->
+    import { DxRadioGroupModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        dataSource = ["Low", "Normal", "Urgent", "High"]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxRadioGroupModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxRadioGroup
+            :data-source="dataSource"
+            item-template="radio">
+            <template #radio="{ data }">
+                <div>
+                    <p style="font-size:larger"><b>{{data}}</b></p>
+                </div>
+            </template>
+        </DxRadioGroup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxRadioGroup } from 'devextreme-vue/radio-group';
+
+    export default {
+        components: {
+            DxRadioGroup
+        },
+        data() {
+            return {
+                dataSource: ['Low', 'Normal', 'Urgent', 'High']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { RadioGroup } from 'devextreme-react/radio-group';
+
+    const dataSource = ['Low', 'Normal', 'Urgent', 'High'];
+
+    const renderRadioGroupItem = (itemData) => {
+        return (
+            <div>
+                <p style={{fontSize: "larger"}}><b>{itemData}</b></p>
+            </div>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <RadioGroup
+                    dataSource={dataSource}
+                    itemRender={renderRadioGroupItem}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
+
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->

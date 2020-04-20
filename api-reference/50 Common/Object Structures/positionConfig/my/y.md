@@ -5,6 +5,8 @@ type: String
 ---
 ---
 ##### shortDescription
-Holds the vertical position specifier.
+<!-- %shortDescription% -->
 
 ---
+
+<!-- import * from 'api-reference\50 Common\Object Structures\positionConfig\at\y.md' -->

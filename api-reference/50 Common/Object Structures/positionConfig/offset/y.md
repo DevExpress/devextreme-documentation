@@ -5,6 +5,8 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the vertical offset.
+<!-- %shortDescription% -->
 
 ---
+
+<!-- import * from 'api-reference\50 Common\Object Structures\positionConfig\boundaryOffset\y.md' -->

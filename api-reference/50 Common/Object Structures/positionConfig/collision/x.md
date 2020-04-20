@@ -6,6 +6,6 @@ default: 'none'
 ---
 ---
 ##### shortDescription
-Specifies the horizontal collision handler.
+Specifies how to resolve horizontal collisions.
 
 ---

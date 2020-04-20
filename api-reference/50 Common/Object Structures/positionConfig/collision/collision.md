@@ -13,7 +13,7 @@ Collisions occur whenever the specified position causes the overlay element to e
 You can use the following collision resolution algorithms:
 
 - *"flip"*      
-Move the overlay element to the opposite side of the [target](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of) if there is more available space there.
+Move the overlay element to the opposite side of the [target](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of) if that side has more space.
 
 - *"fit"*       
 Move the overlay element to the inside of the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
@@ -24,7 +24,7 @@ First apply *"flip"*, then *"fit"*.
 - *"none"*      
 Ignore the collision.
 
-To set the **collision** option, use an object with the **x** and **y** fields. **x** specifies how to resolve collisions that occur in the horizontal direction, and **y** specifies the same in the vertical direction. Alternatively, you can use one of the string shortcuts listed in the accepted values.
+To set the **collision** option, use an object with the **x** and **y** fields. These fields specify how to resolve horizontal and vertical collisions, respectively. Alternatively, you can use a string shortcut from the accepted values list.
 
 ---
 ##### jQuery

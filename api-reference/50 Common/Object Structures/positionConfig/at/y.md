@@ -5,6 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies a position in the vertical direction.
+Specifies a position in the vertical direction (for top, bottom, or center alignment).
 
 ---

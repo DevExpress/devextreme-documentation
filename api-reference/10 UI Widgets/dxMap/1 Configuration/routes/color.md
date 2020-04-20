@@ -8,3 +8,4 @@ default: '#0000FF'
 Specifies the color of the line displaying the route.
 
 ---
+#include common-colorlist

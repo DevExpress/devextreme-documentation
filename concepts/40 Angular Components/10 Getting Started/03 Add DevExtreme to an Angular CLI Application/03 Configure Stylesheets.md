@@ -24,7 +24,7 @@ Open the `angular.json` file and reference `dx.common.css` and a [predefined the
       ...
     }
 
-Then, go to the `src` folder, open the `index.html` file, and add the `dx-viewport` class to the `body`. This ensures that theme colors and typography settings are applied to all elements on the page, not only to DevExtreme widgets.
+Then, go to the `src` folder, open the `index.html` file, and add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all elements on the page, not only to DevExtreme widgets.
 
     <!-- tab: index.html -->
     <html lang="en">

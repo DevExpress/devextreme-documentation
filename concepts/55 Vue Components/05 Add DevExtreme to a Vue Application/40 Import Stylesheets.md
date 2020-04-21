@@ -5,7 +5,7 @@ Open the main component file (`main.js`) and import `dx.common.css` and a [prede
     import 'devextreme/dist/css/dx.light.css';
     // ...
 
-Then, go to the `public` folder, open the `index.html` file, and add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all elements on the page, not only to DevExtreme widgets.
+Then, go to the `public` folder, open the `index.html` file, and add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all page elements (and not only to DevExtreme widgets).
 
     <!-- tab: index.html -->
     <html lang="en">

@@ -11,3 +11,4 @@ Specifies the background color for the indicator of the *rangeBar* type.
 circularRangeBar,linearRangeBar
 
 ---
+#include common-colorlist

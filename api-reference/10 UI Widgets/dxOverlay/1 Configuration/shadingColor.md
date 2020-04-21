@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the shading color.
+Specifies the shading color. Applies only if [shading]({basewidgetpath}/Configuration/#shading) is enabled.
 
 ---
-This option makes sense only if the **shading** option is set to **true**.
+#include common-colorlist

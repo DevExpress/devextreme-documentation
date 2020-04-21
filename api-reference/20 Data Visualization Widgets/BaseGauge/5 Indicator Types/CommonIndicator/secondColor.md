@@ -13,4 +13,6 @@ circularTwoColorNeedle
 ---
 When you use a *twoColorNeedle* indicator, define the colors for it using the **color** and **secondColor** options. The **color** option sets the color for the base of the needle. The **secondColor** option sets the color for the tip of the needle.
 
+#include common-colorlist
+
 In addition, you can specify the ratio between the main and the second color using the **secondFraction** option.

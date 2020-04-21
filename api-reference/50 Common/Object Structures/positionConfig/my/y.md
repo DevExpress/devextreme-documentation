@@ -5,8 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- %shortDescription% -->
+Specifies a position in the vertical direction (for top, bottom, or center alignment).
 
 ---
-
-<!-- import * from 'api-reference\50 Common\Object Structures\positionConfig\at\y.md' -->

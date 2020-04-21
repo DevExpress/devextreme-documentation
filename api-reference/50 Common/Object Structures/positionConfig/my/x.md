@@ -5,8 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- %shortDescription% -->
+Specifies a position in the horizontal direction (for left, right, or center alignment).
 
 ---
-
-<!-- import * from 'api-reference\50 Common\Object Structures\positionConfig\at\x.md' -->

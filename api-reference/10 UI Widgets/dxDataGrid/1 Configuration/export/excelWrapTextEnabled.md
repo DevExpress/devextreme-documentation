@@ -6,7 +6,7 @@ deprecated: Since v20.1, we recommend using [ExcelJS-based export](/Documentatio
 ---
 ---
 ##### shortDescription
-Specifies whether to enable word wrapping for the exported data in the resulting XLSX file.
+Specifies whether to enable word wrapping for exported data in the resulting XLSX file.
 
 ---
 

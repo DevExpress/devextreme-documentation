@@ -47,7 +47,7 @@ Specifies whether the cell text should be line-wrapped.
 
 ---
 
-The following table shows available fill patterns:
+The following table shows the available fill patterns:
 
 <table id="grid">
   <tbody>

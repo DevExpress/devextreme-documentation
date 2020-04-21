@@ -14,7 +14,7 @@ Export settings.
 
 ---
      
-This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> to save files.
+This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer to export data, <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> to save files, and <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> for internal operations.
 
 You can call this method at any point in your application. In the example below, this method is called in the [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting') function that is executed before data is exported. The **cancel** parameter is enabled to prevent the built-in export. As a result, the **DataGrid** is exported to a single worksheet. 
 
@@ -197,15 +197,10 @@ You can call this method at any point in your application. In the example below,
 
 ---     
 
-[note]
-
-The following restrictions apply when users export **DataGrid**:
-
-- [Detail rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) are not exported.
-- [Group rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) are always exported in an expanded state and the [isExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded) option is ignored.
-
-[/note]
 
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
 }
+
+#####See Also#####
+- [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/)

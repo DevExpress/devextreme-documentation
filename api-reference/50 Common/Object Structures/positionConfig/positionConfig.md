@@ -9,7 +9,7 @@ Configures the position of an overlay element.
 ---
 Assign this object to the **position** option of an overlay widget ([Popup](/Documentation/ApiReference/UI_Widgets/dxPopup/), [Popover](/Documentation/ApiReference/UI_Widgets/dxPopover/), [Tooltip](/Documentation/ApiReference/UI_Widgets/dxTooltip/), etc.).
 
-To position an element, specify the [my](/Documentation/ApiReference/Common/Object_Structures/positionConfig/my/), [at](/Documentation/ApiReference/Common/Object_Structures/positionConfig/at/), and [of](/Documentation/ApiReference/Common/Object_Structures/positionConfig/of/) options. In the following code, the **Popup** widget's left side is aligned with the target's right side. This configuration reads as follows: "place **my** *left* side **at** the *right* side of the *#target* element."
+To position an element, specify the [my](/Documentation/ApiReference/Common/Object_Structures/positionConfig/my/), [at](/Documentation/ApiReference/Common/Object_Structures/positionConfig/at/), and [of](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of) options. In the following code, the **Popup** widget's left side is aligned with the target's right side. This configuration reads as follows: "place **my** *left* side **at** the *right* side of the *#target* element."
 
 ---
 ##### jQuery

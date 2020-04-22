@@ -13,7 +13,7 @@ Server-side data processing improves the widget's performance on large datasets.
 
 The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used widget functionality. 
 
-<div class="simple-table">
+<div class="simple-table normal-font-style">
 <table style="text-align:center">
  <tr>
     <th>Setting</th>
@@ -21,17 +21,17 @@ The following table lists the possible **remoteOperations** configurations and t
     <th>Additional server-side operations</th>
  </tr>
   <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { filtering: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { filtering: true }</code></td>
     <td>filtering</td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { sorting: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { sorting: true }</code></td>
     <td>sorting</td>
     <td>filtering<sup>*</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { grouping: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { grouping: true }</code></td>
     <td>grouping, filtering</td>
     <td>sorting<sup>*</sup></td>
  </tr>

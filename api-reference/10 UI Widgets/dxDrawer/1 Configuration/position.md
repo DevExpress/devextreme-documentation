@@ -12,7 +12,7 @@ Specifies the drawer's position in relation to the view.
 Use *"before"* and *"after"* if the **Drawer** should be positioned differently in right-to-left and regular representations. The following table shows the dependency between the [rtlEnabled](/api-reference/50%20Common/Object%20Structures/globalConfig/rtlEnabled.md '/Documentation/ApiReference/Common/Object_Structures/globalConfig/#rtlEnabled') value and *"before"* and *"after"* positions:
 
 <div class="simple-table">
-<table  style="text-align:center">
+<table style="text-align:center">
  <tr>
     <th></th>
     <th>"before"</th>

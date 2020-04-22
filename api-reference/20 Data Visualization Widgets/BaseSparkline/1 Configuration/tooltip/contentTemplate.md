@@ -21,7 +21,7 @@ Information on the points that belong to the series that is pressed or hovered o
 You can access the following **pointsInfo** fields:
 
 <div class="simple-table normal-font-style">
-    <table class="sparkline" style="width:100%">
+    <table class="sparkline">
         <tr>
             <th>Field name</th>
             <th>Description</th>
@@ -64,7 +64,7 @@ You can access the following **pointsInfo** fields:
 The following fields are available for a sparkline of the *"winloss"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '{basewidgetpath}/Configuration/#type') only.
 
 <div class="simple-table normal-font-style">
-    <table class="sparkline" style="width:100%">
+    <table class="sparkline">
         <tr>
             <th>Field name</th>
             <th>Description</th>
@@ -80,6 +80,9 @@ The following fields are available for a sparkline of the *"winloss"* [type](/ap
     </table>
 </div>
 <style>
+    .sparkline {
+        width: 100%;
+    }
     .sparkline tr td:first-child {
         width: 25%;
     }

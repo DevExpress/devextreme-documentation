@@ -7,7 +7,7 @@ The **SelectBox** has only a list of items in a drop-down field whereas **Lookup
 The **SelectBox** looks the same on any platform, while **Lookup** changes its appearance. The **Lookup**'s drop-down field is replaced with a popup window that occupies most of the screen. This design optimizes **Lookup** for mobile devices.
 
     <div class="simple-table normal-font-style">
-        <table class="tooltip-table">
+        <table>
             <tr style="text-align:center">
               <th>SelectBox on any device</th>
               <th>Lookup on desktop</th>

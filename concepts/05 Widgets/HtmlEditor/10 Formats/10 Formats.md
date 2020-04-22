@@ -1,11 +1,6 @@
 The following tables list available formats and their values grouped into three categories: inline (or text), block, and embedded formats.
 
-<table>
- <tr style="font-size: 14px;">
-  <td><b>Inline (or text) formats</b></td>
-  <td style="padding-left: 20px;"><b>Block formats</b></td></tr>
- <tr>
-  <td>
+**Inline (or text) formats**
 
 <div class="simple-table">
 <table style="text-align:center">
@@ -56,8 +51,7 @@ The following tables list available formats and their values grouped into three 
 </table>
 </div>
 
-</td>
-<td style="padding-left: 20px; vertical-align: top">
+**Block formats**
 
 <div class="simple-table">
 <table style="text-align:center">
@@ -91,10 +85,6 @@ The following tables list available formats and their values grouped into three 
  </tr>
 </table>
 </div>
-
-  </td>
- </tr>
-</table>
 
 **Embedded formats**
 

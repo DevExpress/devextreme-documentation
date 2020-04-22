@@ -13,7 +13,7 @@
         }
     }
 
-To handle events in a nested component, use a different syntax:
+In nested components, the `()` syntax cannot be used. Use the `[]` syntax instead:
 
     <!-- tab: app.component.html -->
     <dx-data-grid>

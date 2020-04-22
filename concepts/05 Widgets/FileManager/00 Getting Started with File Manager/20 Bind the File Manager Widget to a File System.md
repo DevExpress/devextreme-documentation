@@ -7,7 +7,7 @@ To bind the **FileManager** widget to a hierarchical data structure, create an [
 
     var fileSystem = [
     {
-        name: "MyFile.jpg",
+        name: "MyFolder.jpg",
         size: 1024,
         dateModified: "2019/05/08",
         thumbnail: "/thumbnails/images/jpeg.ico",

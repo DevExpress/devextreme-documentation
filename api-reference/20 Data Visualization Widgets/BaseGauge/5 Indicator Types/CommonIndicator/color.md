@@ -7,3 +7,4 @@ type: String
 Specifies a color of the indicator.
 
 ---
+#include common-colorlist

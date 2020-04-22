@@ -5,6 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the horizontal offset.
+Specifies a horizontal offset.
 
 ---

@@ -14,7 +14,7 @@ Configures tasks.
 
 ![DevExtreme Gantt Chart - Tasks](/images/Gantt/task.png)
 
-Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource') option to bind the widget to a data source, which contains tasks. If the field names in your data source differ from default names ('id', 'parentId', 'title', 'start', 'end', 'progress'), use appropriate options ([keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#keyExpr'), [parentIdExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#parentIdExpr'), etc.) to map data fields.
+Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#dataSource') option to bind the widget to a data source, which contains tasks. If the field names in your data source differ from default names ('id', 'parentId', 'title', 'start', 'end', 'progress', 'color'), use appropriate options ([keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#keyExpr'), [parentIdExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/#parentIdExpr'), etc.) to map data fields.
 
 #####See Also#####
 - [Gantt Elements - Tasks](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/10%20Task.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Task')
@@ -33,7 +33,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
                 titleExpr: "taskTitle",
                 progressExpr: "taskProgress",
                 startExpr: "startDate",
-                endExpr: "endDate"
+                endExpr: "endDate",
+                colorExpr: "taskColor"
             },
             //...
         });
@@ -47,6 +48,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         'startDate': new Date('2019-02-21T05:00:00.000Z'),
         'endDate': new Date('2019-07-04T12:00:00.000Z'),
         'taskProgress': 31
+        'taskColor': 'red'
     },
     // ...
     ];
@@ -62,7 +64,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             titleExpr="taskTitle"
             progressExpr="taskProgress"
             startExpr="startDate"
-            endExpr="endDate" >
+            endExpr="endDate"
+            colorExpr="taskColor" >
         </dxo-tasks>
         <!-- ... -->
     </dx-gantt>
@@ -113,6 +116,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         startDate: Date;
         endDate: Date;
         taskProgress: number;
+        taskColor: string;
     }
 
     const tasks: Task[] = [{
@@ -121,7 +125,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         'taskTitle': 'Software Development',
         'startDate': new Date('2019-02-21T05:00:00.000Z'),
         'endDate': new Date('2019-07-04T12:00:00.000Z'),
-        'taskProgress': 31
+        'taskProgress': 31,
+        'taskColor': 'red'
     },
     // ...   
     ]; 
@@ -144,7 +149,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
                 title-expr="taskTitle"
                 progress-expr="taskProgress"
                 start-expr="startDate"
-                end-expr="endDate" />
+                end-expr="endDate"
+                color-expr="taskColor" />
             <!-- ... -->
         </DxGantt>
     </template>
@@ -185,7 +191,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         'taskTitle': 'Software Development',
         'startDate': new Date('2019-02-21T05:00:00.000Z'),
         'endDate': new Date('2019-07-04T12:00:00.000Z'),
-        'taskProgress': 31
+        'taskProgress': 31,
+        'taskColor': 'red'
     },
     // ...
     ];	
@@ -218,7 +225,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
                         titleExpr="taskTitle"
                         progressExpr="taskProgress"
                         startExpr="startDate"
-                        endExpr="endDate" />
+                        endExpr="endDate"
+                        colorExpr="taskColor" />
                     {/* ... */}
                 </Gantt>
             );
@@ -233,7 +241,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         'taskTitle': 'Software Development',
         'startDate': new Date('2019-02-21T05:00:00.000Z'),
         'endDate': new Date('2019-07-04T12:00:00.000Z'),
-        'taskProgress': 31
+        'taskProgress': 31,
+        'taskColor': 'red'
     },
     // ...
     ];

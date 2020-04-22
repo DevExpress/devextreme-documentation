@@ -112,13 +112,14 @@ If your data sources' field names differ from the standard field names mentioned
             endExpr: "endDate",
             progressExpr: "taskProgress",
             titleExpr: "taskTitle",
+            colorExpr: "taskColor"
         },
         dependencies: {
             dataSource: dependencies,
             keyExpr: "depId",
             predecessorIdExpr: "preId",
             successorIdExpr: "sucId",
-            typeExpr: "depType",
+            typeExpr: "depType"
         },
             ...
         });
@@ -131,7 +132,8 @@ If your data sources' field names differ from the standard field names mentioned
         'taskTitle': 'Software Development',
         'startDate': new Date('2019-02-21T05:00:00.000Z'),
         'endDate': new Date('2019-07-04T12:00:00.000Z'),
-        'taskProgress': 31
+        'taskProgress': 31,
+        'taskColor': 'red'
     },        
         // ...
     ];

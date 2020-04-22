@@ -13,7 +13,7 @@ Server-side data processing improves the widget's performance on large datasets.
 
 The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used widget functionality.
 
-<div class="simple-table">
+<div class="simple-table normal-font-style">
 <table style="text-align:center">
  <tr>
     <th>Setting</th>
@@ -21,42 +21,42 @@ The following table lists the possible **remoteOperations** configurations and t
     <th>Additional server-side operations</th>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: true</code></td>
+    <td style="text-align:left"><code>remoteOperations: true</code></td>
     <td>all operations <b>except group paging</b></td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { groupPaging: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { groupPaging: true }</code></td>
     <td>all operations <b>including group paging</b></td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { paging: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { paging: true }</code></td>
     <td>paging</td>
     <td>filtering<sup>1</sup>, sorting<sup>1</sup>, summary calculation<sup>1</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the widget)</td>
+    <td style="text-align:left"><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the widget)</td>
     <td>paging, filtering, sorting</td>
     <td>grouping<sup>3</sup>, summary calculation<sup>1</sup></td>
  </tr>
   <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { filtering: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { filtering: true }</code></td>
     <td>filtering</td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { sorting: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { sorting: true }</code></td>
     <td>sorting</td>
     <td>filtering<sup>1</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { grouping: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { grouping: true }</code></td>
     <td>grouping, filtering</td>
     <td>sorting<sup>1</sup>, summary calculation<sup>1</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { summary: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { summary: true }</code></td>
     <td>summary calculation</td>
     <td>filtering<sup>1</sup>, sorting<sup>2</sup>, grouping<sup>2</sup></td>
  </tr>

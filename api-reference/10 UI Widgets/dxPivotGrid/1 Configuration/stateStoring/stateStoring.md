@@ -11,7 +11,7 @@ State storing enables the widget to save applied settings and restore them the n
 
 The state is saved with a specified [storage key](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/storageKey.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#storageKey'). 
 
-<table style="color: #333333; font-size: 0.9em">
+<table style="font-size: 0.9em">
 <tr>
     <td colspan="2">State storing saves the following options:</td>
 </tr>

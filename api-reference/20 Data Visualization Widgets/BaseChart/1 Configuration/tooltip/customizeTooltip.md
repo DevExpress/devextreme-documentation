@@ -20,7 +20,7 @@ The tooltip's text or markup and appearance settings.
 The **pointInfo** object has different fields for the different [series types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/'). The following fields are available for all the series types:
 
 <div class="simple-table normal-font-style">
-    <table class="tooltip-table" style="width:100%">
+    <table class="tooltip-table">
         <tr>
           <th>Field name</th>
           <th>Description</th>
@@ -68,10 +68,10 @@ The **pointInfo** object has different fields for the different [series types](/
     </table>
 </div>
 
-The followng **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedAreaSeries/'):
+The folllowing **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedAreaSeries/'):
 
 <div class="simple-table normal-font-style">
-    <table class="tooltip-table" style="width:100%">
+    <table class="tooltip-table">
         <tr>
             <th>Field name</th>
             <th>Description</th>
@@ -93,10 +93,10 @@ The followng **pointInfo** fields are available for the stacked-like series such
     </table>
 </div>
 
-The followng **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/'):
+The folllowing **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/'):
 
 <div class="simple-table normal-font-style">
-    <table class="tooltip-table" style="width:100%">
+    <table class="tooltip-table">
         <tr>
             <th>Field name</th>
             <th>Description</th>
@@ -133,10 +133,10 @@ The followng **pointInfo** fields are available for the range-like series, such 
     </table>
 </div>
 
-The followng **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/StockSeries/'):
+The folllowing **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/StockSeries/'):
 
 <div class="simple-table normal-font-style">
-    <table class="tooltip-table" style="width:100%">
+    <table class="tooltip-table">
         <tr>
             <th>Field name</th>
             <th>Description</th>
@@ -204,11 +204,6 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
         </tr>
     </table>
 </div>
-<style>
-    .tooltip-table tr td:first-child {
-        width: 25%;
-    }
-</style>
 
 #include dataviz-ref-functioncontext
 

@@ -4,7 +4,7 @@
 ---
 State storing enables the widget to save applied settings and restore them the next time the widget is loaded. Assign **true** to the **stateStoring**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/stateStoring/enabled.md '{basewidgetpath}/Configuration/stateStoring/#enabled') option to enable this functionality.
 
-<table style="color: #333333; font-size: 0.9em">
+<table style="font-size: 0.9em">
 <tr>
     <td colspan="3">State storing saves the following options:</td>
 </tr>

@@ -1,5 +1,8 @@
 For a minor customization of **RadioGroup** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/items/') in item data objects. For example, the following code generates three radio buttons: the first is disabled, the second is not customized, the third is hidden.
 
+---
+##### jQuery
+
     <!--JavaScript-->
     $(function() {
         $("#radioGroupContainer").dxRadioGroup({
@@ -11,60 +14,175 @@ For a minor customization of **RadioGroup** items, you can define [specific fiel
         });
     });
 
-If you need a more flexible solution, define a custom template. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize radio buttons.
+##### Angular
+
+    <!--HTML-->
+    <dx-radio-group
+        [dataSource]="dataSource">
+    </dx-radio-group>
+
+    <!--TypeScript-->
+    import { DxRadioGroupModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        dataSource = [
+            { text: "Low", disabled: true },
+            { text: "High" },
+            { text: "Urgent", visible: false }
+        ]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxRadioGroupModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <template>
+        <DxRadioGroup :data-source="dataSource"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxRadioGroup } from 'devextreme-vue/radio-group';
+
+    export default {
+        components: {
+            DxRadioGroup
+        },
+        data() {
+            return {
+                dataSource: [
+                    { text: 'Low', disabled: true },
+                    { text: 'High' },
+                    { text: 'Urgent', visible: false }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { RadioGroup } from 'devextreme-react/radio-group';
+
+    const dataSource = [
+        { text: 'Low', disabled: true },
+        { text: 'High' },
+        { text: 'Urgent', visible: false }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <RadioGroup dataSource={dataSource}/>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
-#####**AngularJS**
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+
+---
+##### Angular
 
     <!--HTML-->
-    <div ng-controller="DemoController">
-       <div dx-radio-group="{
-           dataSource: dataItems, 
-           itemTemplate: 'customItemTemplate'
-        }" dx-item-alias="item">
-            <div data-options="dxTemplate: { name: 'customItemTemplate' }">
-                <div ng-style="{ color: item.color }">{{ item.text }}</div>
-            </div>    
+    <dx-radio-group 
+        [dataSource]="dataSource"
+        itemTemplate="radio">
+        <div class="radio" *dxTemplate="let data of 'radio'">
+            <p style="font-size:larger"><b>{{data}}</b></p>
         </div>
-    </div>
+    </dx-radio-group>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.dataItems = [
-                { text: "Low", color: "grey" },
-                { text: "Normal", color: "green" },
-                { text: "Urgent", color: "yellow" },
-                { text: "High", color: "red" }
-            ];
-        });
+    <!--TypeScript-->
+    import { DxRadioGroupModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        dataSource = ["Low", "Normal", "Urgent", "High"]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxRadioGroupModule
+        ],
+        // ...
+    })
 
-[note]The `dx-item-alias` directive specifies the variable that is used to access the item object.
+##### Vue
 
-#####**Knockout**
+    <template>
+        <DxRadioGroup
+            :data-source="dataSource"
+            item-template="radio">
+            <template #radio="{ data }">
+                <div>
+                    <p style="font-size:larger"><b>{{data}}</b></p>
+                </div>
+            </template>
+        </DxRadioGroup>
+    </template>
 
-    <!--HTML-->
-    <div data-bind="dxRadioGroup: {
-        dataSource: dataItems,
-        itemTemplate: 'customItemTemplate'
-    }">
-        <div data-options="dxTemplate: { name: 'customItemTemplate' }">
-            <div data-bind="text: text, style: { color: color }"></div>
-        </div>
-    </div>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--JavaScript-->
-    var viewModel = {
-        dataItems: [
-            { text: "Low", color: "grey" },
-            { text: "Normal", color: "green" },
-            { text: "Urgent", color: "yellow" },
-            { text: "High", color: "red" }
-        ]
-    };
+    import { DxRadioGroup } from 'devextreme-vue/radio-group';
 
-    ko.applyBindings(viewModel);
+    export default {
+        components: {
+            DxRadioGroup
+        },
+        data() {
+            return {
+                dataSource: ['Low', 'Normal', 'Urgent', 'High']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { RadioGroup } from 'devextreme-react/radio-group';
+
+    const dataSource = ['Low', 'Normal', 'Urgent', 'High'];
+
+    const renderRadioGroupItem = (itemData) => {
+        return (
+            <div>
+                <p style={{fontSize: "larger"}}><b>{itemData}</b></p>
+            </div>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <RadioGroup
+                    dataSource={dataSource}
+                    itemRender={renderRadioGroupItem}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

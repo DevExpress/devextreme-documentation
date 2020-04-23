@@ -26,12 +26,7 @@
     import { Component } from '@angular/core';
     // Dictionaries for German and Russian languages
     import deMessages from "devextreme/localization/messages/de.json";
-    import ruMessages from "devextreme/localization/messages/ru.json";
-
-    // In projects created with Angular CLI earlier than 6
-    // import deMessages from "devextreme/localization/messages/de.json!json";
-    // import ruMessages from "devextreme/localization/messages/ru.json!json";
-    
+    import ruMessages from "devextreme/localization/messages/ru.json";  
     import { locale, loadMessages } from "devextreme/localization";
 
     @Component({

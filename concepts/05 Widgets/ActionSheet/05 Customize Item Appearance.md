@@ -1,5 +1,8 @@
 For a minor customization of **ActionSheet** buttons, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/items/') in button data objects. For example, the following code generates three buttons, the first is not customized, the second is disabled, the [type](/api-reference/_hidden/dxActionSheetItem/type.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/items/#type') of the third button is *danger*.
 
+---
+##### JQuery
+
     <!--JavaScript-->
     $(function() {
         $("#actionSheetContainer").dxActionSheet({
@@ -11,7 +14,95 @@ For a minor customization of **ActionSheet** buttons, you can define [specific f
         });
     });
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **ActionSheet** buttons.
+##### Angular
+
+    <!--HTML-->
+    <dx-action-sheet
+        [dataSource]="actionSheetData"
+    </dx-action-sheet>
+
+    <!--TypeScript-->
+    import { DxActionSheetModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        actionSheetData = [
+            { text: "Reply" },
+            { text: "Reply All", disabled: true },
+            { text: "Delete", type: 'danger' }
+        ]
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxActionSheetModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxActionSheet
+            :data-source="actionSheetData"
+        </DxActionSheet>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxActionSheet from 'devextreme-vue/action-sheet';
+
+    export default {
+        components: {
+            DxActionSheet
+        },
+        data() {
+            return {
+                actionSheetData: [
+                    { text: "Reply" },
+                    { text: "Reply All", disabled: true },
+                    { text: "Delete", type: 'danger' }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ActionSheet } from 'devextreme-react/action-sheet';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.actionSheetData = [
+                { text: "Reply" },
+                { text: "Reply All", disabled: true },
+                { text: "Delete", type: 'danger' }
+            ];
+        }
+
+        render() {
+            return (
+                <ActionSheet
+                    dataSource={this.actionSheetData}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+---
+
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -56,81 +147,85 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         background-color: white;
     }
 
-#####**AngularJS**
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-action-sheet="{ 
-            dataSource: actionSheetData,
-            itemTemplate: 'link',
-            bindingOptions: {
-                visible: 'isActionSheetVisible'
-            }
-        }" dx-item-alias="item">
-            <div data-options="dxTemplate: { name: 'link' }">
+    <!-- tab: App.vue -->
+    <template>
+        <DxActionSheet
+            :visible.sync="isActionSheetVisible"
+            :data-source="actionSheetData"
+            item-template="link">
+            <template #link="{ data }">
                 <div class="action-sheet-button">
-                    <a href="#">{{item.text}}</a>
+                    <a href="#">{{data.text}}</a>
                 </div>
-            </div>
-    </div>
+            </template>
+        </DxActionSheet>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.actionSheetData = [
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxActionSheet from 'devextreme-vue/action-sheet';
+
+    export default {
+        components: {
+            DxActionSheet
+        },
+        data() {
+            return {
+                isActionSheetVisible: true,
+                actionSheetData: [
+                    { text: "Reply" },
+                    { text: "Reply All" },
+                    { text: "Forward" },
+                    { text: "Delete" }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ActionSheet } from 'devextreme-react/action-sheet';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { isActionSheetVisible: true };
+            this.actionSheetData = [
                 { text: "Reply" },
                 { text: "Reply All" },
                 { text: "Forward" },
                 { text: "Delete" }
             ];
-            $scope.isActionSheetVisible = true;
-        });
+            this.renderActionSheetItem = (itemData) => {
+                return (
+                    <div class="action-sheet-button">
+                        <a href="#">{itemData.text}</a>
+                    </div>
+                );
+            };
+        }
 
-    <!--CSS-->
-    .action-sheet-button {
-        margin: 5px;
-        padding: 10px;
-        border: 1px dotted #080;
-        background-color: white;
+        render() {
+            return (
+                <ActionSheet
+                    visible={this.state.isActionSheetVisible}
+                    dataSource={this.actionSheetData}
+                    itemRender={this.renderActionSheetItem}
+                />
+            );
+        }
     }
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--HTML-->
-    <div data-bind="dxActionSheet: { 
-        dataSource: actionSheetData,
-        visible: isActionSheetVisible,
-        itemTemplate: 'link' 
-    }">
-        <div data-options="dxTemplate: { name: 'link' }">
-            <div class="action-sheet-button">
-                <a href="#" data-bind="text: text"></a>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        actionSheetData: [
-            { text: "Reply" },
-            { text: "Reply All" },
-            { text: "Forward" },
-            { text: "Delete" }
-        ],
-        isActionSheetVisible: ko.observable(false)
-    };
-
-    ko.applyBindings(viewModel);
-
-    <!--CSS-->
-    .action-sheet-button {
-        margin: 5px;
-        padding: 10px;
-        border: 1px dotted #080;
-        background-color: white;
-    }
+    export default App;
 
 ---
 

@@ -76,6 +76,108 @@ The following code adds a simple **ActionSheet** to your page. The widget is sho
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxActionSheet
+                :visible.sync="isActionSheetVisible"
+                :data-source="actionSheetData"
+            />
+            <DxButton
+                text="Show the ActionSheet"
+                @click="showActionSheet"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxActionSheet from 'devextreme-vue/action-sheet';
+    import DxButton from 'devextreme-vue/button';
+    import notify from "devextreme/ui/notify";
+
+    export default {
+        components: {
+            DxActionSheet,
+            DxButton
+        },
+        data() {
+            return {
+                isActionSheetVisible: false,
+                actionSheetData: [
+                    { text: "Reply", onClick: () => { this.processClick("Reply") } },
+                    { text: "Reply All", onClick: () => { this.processClick("Reply All") } },
+                    { text: "Forward", onClick: () => { this.processClick("Forward") } },
+                    { text: "Delete", onClick: () => { this.processClick("Delete") } }
+                ]
+            };
+        },
+        methods: {
+            showActionSheet(e) {
+                this.isActionSheetVisible = true;
+            },
+            processClick(name) {
+                notify(name + " clicked", "success", 3000);
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ActionSheet } from 'devextreme-react/action-sheet';
+    import { Button } from 'devextreme-react/button';
+    import notify from "devextreme/ui/notify";
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { isActionSheetVisible: false };
+            this.showActionSheet = this.showActionSheet.bind(this);
+            this.processClick = this.processClick.bind(this);
+            this.actionSheetData = [
+                { text: "Reply", onClick: () => { this.processClick("Reply") } },
+                { text: "Reply All", onClick: () => { this.processClick("Reply All") } },
+                { text: "Forward", onClick: () => { this.processClick("Forward") } },
+                { text: "Delete", onClick: () => { this.processClick("Delete") } }
+            ];
+        }
+
+        processClick(name) {
+            notify(name + " clicked", "success", 3000);
+            this.setState({ isActionSheetVisible: false });
+        }
+        
+        showActionSheet() {
+            this.setState({ isActionSheetVisible: true });
+        }
+
+        render() {
+            return (
+                <div>
+                    <ActionSheet
+                        visible={this.state.isActionSheetVisible}
+                        dataSource={this.actionSheetData}
+                    />
+                    <Button
+                        text="Show the ActionSheet"
+                        onClick={this.showActionSheet}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Note that every data source object has a **text** field that is rendered on the buttons of the **ActionSheet**. Also, there is the **onClick** field that represents a click handler for a certain **ActionSheet** button.

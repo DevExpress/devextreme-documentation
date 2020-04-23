@@ -36,22 +36,6 @@ Then, go to the `src` folder, open the `index.html` file, and add the `dx-viewpo
         </body>
     </html>
 
-**For Angular CLI before 6**, modify the `angular-cli.json` file instead:
-
-    <!-- tab: angular-cli.json -->
-    {
-      "apps": [{
-        "styles": [
-          ...
-          "../node_modules/devextreme/dist/css/dx.common.css",
-          "../node_modules/devextreme/dist/css/dx.light.css",
-          "styles.css"
-        ],
-        ...
-      }],
-      ...
-    }
-
 [note] [SVG-based widgets](/concepts/60%20Themes%20and%20Styles/00%20HTML-%20and%20SVG-Based%20Widgets.md '/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_Widgets/') do not require theme stylesheets. If you choose to reference the stylesheets, the widgets apply an appearance that matches them.
 
 [tags] theme

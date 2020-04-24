@@ -5,7 +5,7 @@ deprecated: Since v20.1, we recommend [ExcelJS-based export](/Documentation/ApiR
 ---
 ---
 ##### shortDescription
-Customizes data before export. 
+Customizes data before export.
 
 ##### param(columns): Array<dxDataGridColumn>
 All column [configurations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/').

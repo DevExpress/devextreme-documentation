@@ -4,13 +4,11 @@
   "author": "Developer Express Inc.",
   "version": "17.2.0",
   "devDependencies": {
-    "pre-commit": "^1.2.2",
     "devextreme-internal-tools": "default"
   },
   "scripts": {
     "update-links-fail-on-change": "dx-tools update-links --fail-on-change",
     "update-all-links": "dx-tools update-links --check-all",
     "update-links": "dx-tools update-links"
-  },
-  "pre-commit": "update-links-fail-on-change"
+  }
 }

@@ -6,10 +6,10 @@ default: 'arrow'
 ---
 ---
 ##### shortDescription
-Specifies an edge's default line end tip.
+Specifies the default tip of a connector's end point.
 
 ---
-The **connectorLineEnd** option specifies a default line end tip that is applied to a connector if there is not another value provided via the [toLineEndExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toLineEndExpr) option.
+The **connectorLineEnd** option specifies a tip that is displayed at a connector's end point if the [toLineEndExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toLineEndExpr) option does not provide another value.
 
 #include common-ref-enum with {
     enum: "`DiagramConnectorLineEnd`",

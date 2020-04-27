@@ -6,7 +6,12 @@ default: 'none'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an edge's default line start tip.
 
 ---
-<!-- Description goes here -->
+The **connectorLineStart** option specifies a default line start tip that is applied to a connector if there is not another value provided via the [fromLineEndExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromLineEndExpr) option.
+
+#include common-ref-enum with {
+    enum: "`DiagramConnectorLineEnd`",
+    values: "`None`, `Arrow`, `OutlinedTriangle`, `FilledTriangle`"
+}

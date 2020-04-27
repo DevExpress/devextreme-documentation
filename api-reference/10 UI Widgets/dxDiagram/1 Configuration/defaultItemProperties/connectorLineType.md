@@ -6,7 +6,12 @@ default: 'orthogonal'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the default type of a connector.
 
 ---
-<!-- Description goes here -->
+The **connectorLineType** option specifies a type of a connector if the [lineTypeExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#lineTypeExpr) option does not provide another value.
+
+#include common-ref-enum with {
+    enum: "`DiagramConnectorLineType`",
+    values: "`Straight`, `Orthogonal`"
+}

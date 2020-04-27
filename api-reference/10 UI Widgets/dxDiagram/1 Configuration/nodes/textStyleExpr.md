@@ -11,7 +11,25 @@ Specifies the name of a data source field or an expression that provides a node'
 The current node's data object.
 
 ---
-The style settings must be specified as CSS rules presented in JSON format, for instance `{ "font-weight": "bold", "text-decoration": "underline" }`.
+A data source field specified by this option must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 
+
+If you provide a function for the **textStyleExpr** option, the function can return style settings as CSS rules in JSON format.
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#diagram").dxDiagram({
+            nodes: {
+                textStyleExpr: itemTextStyleExpr,
+            //...
+        });
+
+        function itemTextStyleExpr(obj) {
+            let style = { "font-weight": "bold" };
+            if(obj.level === "senior")
+                style["text-decoration"] = "underline";
+            return style;
+        }
+    });
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"

@@ -12,4 +12,4 @@ The **textStyle** option specifies a default text style that is applied to a sha
 The style settings can be specified in the following ways:
 
 - as inline style declaration, for instance `"font-weight: bold; text-decoration: underline"`,
-- as CSS rules presented in JSON format, , for instance `{ "font-weight": "bold", "text-decoration": "underline" }`.
+- as CSS rules in JSON format, for instance `{ "font-weight": "bold", "text-decoration": "underline" }`.

@@ -8,7 +8,7 @@ default: {}
 Configures default item properties.
 
 ---
-Default property values are applied to newly created (via the UI or during data binding) items if no other values are provided.
+Default property values are applied to newly created items if no other values are provided.
 
     <!-- tab: index.js -->
     $(function() {

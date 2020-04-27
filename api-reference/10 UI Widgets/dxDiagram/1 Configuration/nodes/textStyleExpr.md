@@ -13,7 +13,7 @@ The current node's data object.
 ---
 A data source field specified by this option must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 
 
-If you provide a function for the **textStyleExpr** option, the function can return style settings as CSS rules presented in JSON format as well.
+If you provide a function for the **textStyleExpr** option, the function can return style settings as CSS rules in JSON format.
 
     <!-- tab: index.js -->
     $(function() {

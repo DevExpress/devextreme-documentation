@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not [summaries](/concepts/05%20Widgets/DataGrid/65%20Summaries/10%20Total%20Summary '/Documentation/Guide/Widgets/DataGrid/Summaries/Total_Summary/') calculation must be performed on the server.
+Specifies whether or not [summaries](/concepts/05%20Widgets/DataGrid/65%20Summaries/10%20Total%20Summary '/Documentation/Guide/Widgets/DataGrid/Summaries/Total_Summary/') summaries are calculated on the server-side.
 
 ---
-[note] When summary calculation is remote, the widget does not support [custom summary calculation](/concepts/05%20Widgets/DataGrid/65%20Summaries/07%20Custom%20Aggregate%20Function '/Documentation/Guide/Widgets/DataGrid/Summaries/Custom_Aggregate_Function/').
+[note]When summary calculation is remote, [custom client-side summaries](/Documentation/Guide/Widgets/DataGrid/Summaries/Custom_Aggregate_Function/#Client-Side_Data_Aggregation) are not supported.

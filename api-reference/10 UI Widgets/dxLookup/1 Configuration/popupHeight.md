@@ -2,6 +2,7 @@
 id: dxLookup.Options.popupHeight
 type: Number | String | function()
 default: function() { return $(window).height() * 0.8 }, 'auto' (desktop, iPad)
+dep: dxLookup.Options.dropDownOptions
 ---
 ---
 ##### shortDescription
@@ -12,5 +13,3 @@ The popup element's height.
 
 ---
 In the Material theme, the default value is calculated so that the **Lookup** contains four items.
-
-#include uiwidgets-ref-height

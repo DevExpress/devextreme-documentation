@@ -92,9 +92,6 @@ To configure annotations, assign an array of objects to the **annotations[]** op
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
     import DxChart, {
         DxAnnotation
     } from 'devextreme-vue/chart';
@@ -114,9 +111,6 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: App.js -->
     import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
 
     import Chart, {
         Annotation
@@ -161,7 +155,7 @@ Annotations can be unattached or anchored to a chart element. The following list
             axis: "Value axis 2" // in a chart with multiple value axes
         }]
 
-- **Annotation anchored to a series point**
+- **Annotation anchored to a series or series point**
 
         annotations: [{
             argument: new Date(2019, 1, 16),

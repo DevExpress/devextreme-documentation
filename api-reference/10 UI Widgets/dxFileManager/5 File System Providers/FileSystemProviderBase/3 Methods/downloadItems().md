@@ -3,13 +3,9 @@ id: FileSystemProviderBase.downloadItems()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
-##### return: any
-<!-- Description goes here -->
+Downloads files.
 
 ##### param(items): Array<FileSystemItem>
-<!-- Description goes here -->
+An array of files.
 
 ---
-<!-- Description goes here -->

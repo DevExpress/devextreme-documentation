@@ -16,12 +16,43 @@ The event that caused widget closing. It is a [dxEvent](/api-reference/50%20Comm
 ---
 The function passed to this option enables you to specify a custom condition for widget closing. For instance, you can prevent closing until a user clicks a certain element.
 
+---
+##### jQuery
+
     <!--JavaScript-->
-    var widgetOptions = {
+    $(function () {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            closeOnOutsideClick: function(e) {
+                return e.target === $("#someElement").get()[0];
+            }
+        });
+    });
+
+##### Angular
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    // ...
+    export class AppComponent {
         // ...
-        closeOnOutsideClick: function(e) {
-            return e.target === $("#someElement").get()[0];
+        closeOnOutsideClick(e) {
+            return e.target === document.getElementById("someElement");
         }
     }
+    @NgModule({
+         imports: [
+             // ...
+             Dx{WidgetName}Module
+         ],
+         // ...
+     })
+
+    <!--HTML-->
+    <dx-{widget-name} ...
+        [closeOnOutsideClick]="closeOnOutsideClick">
+    </dx-{widget-name}>
+
+---
 
 The **closeOnOutsideClick** function is called when a user clicks the widget or outside it.

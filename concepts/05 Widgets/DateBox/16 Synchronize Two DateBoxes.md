@@ -84,6 +84,89 @@
     };
     ko.applyBindings(viewModel);
 
+##### Vue
+
+    <template>
+        <div>
+            <DxDateBox
+                :value.sync="startValue"
+                :max.sync="endValue"
+            />
+            <DxDateBox
+                :value.sync="endValue"
+                :min.sync="startValue"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxDateBox
+        },
+        data() {
+            return {
+                startValue: new Date(),
+                endValue: new Date()
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            this.super(props);
+
+            this.state = {
+                startValue: new Date(),
+                endValue: new Date()
+            };
+
+            this.minChangeHandler = this.minChangeHandler.bind(this);
+            this.maxChangeHandler = this.maxChangeHandler.bind(this);
+        }
+
+        minChangeHandler = function(e) {
+            this.setState({ startValue: e.value });
+        }
+
+        maxChangeHandler = function(e) { 
+            this.setState({ endValue: e.value });
+        }
+
+        render() {
+            return (
+                <div>
+                    <DateBox
+                        value={this.state.startValue}
+                        max={this.state.endValue}
+                        onValueChanged={this.minChangeHandler}
+                    />
+                    <DateBox
+                        value={this.state.endValue}
+                        min={this.state.startValue}
+                        onValueChanged={this.maxChangeHandler}
+                    />
+                </div>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 Do not forget to call the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate" target="_blank">getDate()</a> method on the **DateBox** values when calculating the interval duration.

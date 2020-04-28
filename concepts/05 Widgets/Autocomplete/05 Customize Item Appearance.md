@@ -43,9 +43,69 @@ For a minor customization of **Autocomplete** items, you can define [specific fi
         placeholder="Type first name...">
     </dx-autocomplete>
 
+##### Vue
+
+    <template>
+        <DxAutocomplete
+            :data-source="dataSource"
+            value-expr="text"
+            placeholder="Type first name..."
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxAutocomplete } from 'devextreme-vue/autocomplete';
+
+    export default {
+        components: {
+            DxAutocomplete
+        },
+        data() {
+            return {
+                dataSource: [
+                    { text: 'James' },
+                    { text: 'John', disabled: true },
+                    { text: 'Joseph', visible: false }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Autocomplete } from 'devextreme-react/autocomplete';
+
+    const dataSource = [
+        { text: 'James' },
+        { text: 'John', disabled: true },
+        { text: 'Joseph', visible: false }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Autocomplete
+                    dataSource={dataSource}
+                    valueExpr="text"
+                    placeholder="Type first name..."
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
-If you need a more flexible solution, define a custom template for items of the widget. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **Autocomplete** items.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -79,69 +139,90 @@ If you need a more flexible solution, define a custom template for items of the 
         ],
         // ...
     })
+    
+##### Vue
 
-#####**AngularJS**
+    <template>
+        <DxAutocomplete
+            :data-source="autocompleteData"
+            value-expr="country"
+            placeholder="Type country name..."
+            item-template="full">
+            <template #full="{ data }">
+                <div>
+                    <p>Country: <b>{{data.country}}</b></p>
+                    <p style="color:grey;">Capital: <b>{{data.capital}}</b></p>
+                </div>
+            </template>
+        </DxAutocomplete>
+    </template>
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-autocomplete="{
-            dataSource: autocompleteData,
-            valueExpr: 'country',
-            placeholder: 'Type country name...',
-            itemTemplate: 'full'
-        }" dx-item-alias="itemObj">
-            <div data-options="dxTemplate: { name: 'full' }">
-                <p>Country: <b>{{itemObj.country}}</b></p>
-                <p style="color:grey;">Capital: <b>{{itemObj.capital}}</b></p>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxAutocomplete } from 'devextreme-vue/autocomplete';
+
+    export default {
+        components: {
+            DxAutocomplete
+        },
+        data() {
+            return {
+                autocompleteData: [
+                    { country: "Afghanistan", capital: "Kabul" },
+                    { country: "Albania", capital: "Tirana" },
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Autocomplete } from 'devextreme-react/autocomplete';
+
+    const autocompleteData = [
+        { country: "Afghanistan", capital: "Kabul" },
+        { country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
+    const renderAutocompleteItem = (itemData) => {
+        return (
+            <div>
+                <p>Country: <b>{itemData.country}</b></p>
+                <p style={{color: "grey"}}>Capital: <b>{itemData.capital}</b></p>
             </div>
-        </div>
-    </div>
-
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.autocompleteData = [
-                { country: "Afghanistan", capital: "Kabul" },
-                { country: "Albania", capital: "Tirana" },
-                // ...
-            ];
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--HTML-->
-    <div data-bind="dxAutocomplete: {
-        dataSource: autocompleteData,
-        valueExpr: 'country',
-        placeholder: 'Type country name...',
-        itemTemplate: 'full'
-    }">
-        <div data-options="dxTemplate: { name: 'full' }">
-            <p>Country: <b data-bind="text: country"></b></p>
-            <p style="color:grey;">Capital: <b data-bind="text: capital"></b></p>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        autocompleteData: [
-            { country: "Afghanistan", capital: "Kabul" },
-            { country: "Albania", capital: "Tirana" },
-            // ...
-        ]
+        );
     };
 
-    ko.applyBindings(viewModel);
-    
+    class App extends React.Component {
+        render() {
+            return (
+                <Autocomplete
+                    dataSource={autocompleteData}
+                    valueExpr="country"
+                    placeholder="Type country name..."
+                    itemRender={renderAutocompleteItem}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
-    var autocompleteData = [
+    const autocompleteData = [
         { country: "Afghanistan", capital: "Kabul" },
         { country: "Albania", capital: "Tirana" },
         // ...
@@ -167,7 +248,7 @@ You can also customize an individual **Autocomplete** item. For this purpose, de
     </script>
 
     <!--JavaScript-->
-    var autocompleteData = [
+    const autocompleteData = [
         { text: "James"},
         { text: "Joseph", template: $("#individualTemplate") },
         // ...

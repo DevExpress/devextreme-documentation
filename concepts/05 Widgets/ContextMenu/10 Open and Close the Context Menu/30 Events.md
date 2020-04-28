@@ -1,27 +1,28 @@
 To execute certain commands before or after the **ContextMenu** was opened/closed, handle the [showing](/api-reference/10%20UI%20Widgets/dxContextMenu/4%20Events/showing.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Events/#showing'), [shown](/api-reference/10%20UI%20Widgets/dxContextMenu/4%20Events/shown.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Events/#shown'), [hiding](/api-reference/10%20UI%20Widgets/dxContextMenu/4%20Events/hiding.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Events/#hiding') or [hidden](/api-reference/10%20UI%20Widgets/dxContextMenu/4%20Events/hidden.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the widget, assign it to the corresponding **on*EventName*** option when you configure the widget.
 
 ---
-#####jQuery
 
-    <!--JavaScript-->$(function () {
+##### jQuery
+
+    <!--JavaScript-->$(function() {
         $("#contextMenuContainer").dxContextMenu({
             // ...
-            onShowing: function (e) {
-                // Handler of the "showing" event
+            onShowing: function(e) {
+                // Handler of the 'showing' event
             },
-            onShown: function (e) {
-                // Handler of the "shown" event
+            onShown: function(e) {
+                // Handler of the 'shown' event
             },
-            onHiding: function (e) {
-                // Handler of the "hiding" event
+            onHiding: function(e) {
+                // Handler of the 'hiding' event
             },
-            onHidden: function (e) {
-                // Handler of the "hidden" event
+            onHidden: function(e) {
+                // Handler of the 'hidden' event
             }
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-context-menu ...
@@ -36,17 +37,17 @@ To execute certain commands before or after the **ContextMenu** was opened/close
     // ...
     export class AppComponent {
         // ...
-        handleShowingEvent (e) {
-            // Handler of the "showing" event
+        handleShowingEvent(e) {
+            // Handler of the 'showing' event
         }
-        handleShownEvent (e) {
-            // Handler of the "shown" event
+        handleShownEvent(e) {
+            // Handler of the 'shown' event
         }
-        handleHidingEvent (e) {
-            // Handler of the "hiding" event
+        handleHidingEvent(e) {
+            // Handler of the 'hiding' event
         }
-        handleHiddenEvent (e) {
-            // Handler of the "hidden" event
+        handleHiddenEvent(e) {
+            // Handler of the 'hidden' event
         }
     }
     @NgModule({
@@ -57,16 +58,92 @@ To execute certain commands before or after the **ContextMenu** was opened/close
          // ...
      })
 
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxContextMenu ...
+            @showing="handleShowingEvent"
+            @shown="handleShownEvent"
+            @hiding="handleHidingEvent"
+            @hidden="handleHiddenEvent"
+        />
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxContextMenu from 'devextreme-vue/context-menu';
+
+    export default {
+        components: {
+            DxContextMenu
+        },
+        methods: {
+            handleShowingEvent(e) {
+                // Handler of the 'showing' event
+            }
+            handleShownEvent(e) {
+                // Handler of the 'shown' event
+            }
+            handleHidingEvent(e) {
+                // Handler of the 'hiding' event
+            }
+            handleHiddenEvent(e) {
+                // Handler of the 'hidden' event
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { ContextMenu } from 'devextreme-react/context-menu';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ContextMenu
+                    onShowing={this.handleShowingEvent}
+                    onShown={this.handleShownEvent}
+                    onHiding={this.handleHidingEvent}
+                    onHidden={this.handleHiddenEvent}
+                />
+            );
+        }
+
+        handleShowingEvent(e) {
+            // Handler of the 'showing' event
+        }
+        handleShownEvent(e) {
+            // Handler of the 'shown' event
+        }
+        handleHidingEvent(e) {
+            // Handler of the 'hiding' event
+        }
+        handleHiddenEvent(e) {
+            // Handler of the 'hidden' event
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var hiddenEventHandler1 = function (e) {
+    var hiddenEventHandler1 = function(e) {
         // First handler of the "hidden" event
     };
 
-    var hiddenEventHandler2 = function (e) {
+    var hiddenEventHandler2 = function(e) {
         // Second handler of the "hidden" event
     };
 

@@ -5,17 +5,17 @@ These widgets provide the **onSelectionChanged** function in which we can implem
 In this tutorial, we use the **List**:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--tab: index.js-->
     $(function() {
         // Loads the initial page
         $("#view" ).load( "./inbox.html" );
 
-        var drawer = $("#drawer").dxDrawer({
+        const drawer = $("#drawer").dxDrawer({
             // ...
             template: function(e) {
-                var $list = $("<div/>").dxList({
+                const $list = $("<div/>").dxList({
                     items: [
                         { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
                         { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
@@ -26,6 +26,7 @@ In this tutorial, we use the **List**:
                     selectionMode: "single",
                     onSelectionChanged: function(e) {
                         $("#view").load( e.addedItems[0].filePath + ".html" );
+                        drawer.hide();
                     }
                 });
                 return $list;
@@ -57,7 +58,7 @@ In this tutorial, we use the **List**:
     <!--tab: spam.html-->
     <div>Spam</div>
 
-#####Angular
+##### Angular
 
     <!-- tab: app.component.html -->
     <dx-drawer ... >
@@ -85,7 +86,7 @@ In this tutorial, we use the **List**:
 
     export class AppComponent {
         navigation: any;
-        isOpened: Boolean = false;
+        isDrawerOpen: Boolean = false;
 
         constructor(private router: Router) {
             this.navigation = [
@@ -96,7 +97,8 @@ In this tutorial, we use the **List**:
             ];
         }
         loadView(e) {
-            this.router.navigate([e.addedItems[0].filePath])
+            this.router.navigate([e.addedItems[0].filePath]);
+            this.isDrawerOpen = false;
         }
     }
 
@@ -190,110 +192,181 @@ In this tutorial, we use the **List**:
     })
     export class TrashComponent { constructor() { } }
 
-##### ASP.NET MVC Controls
+##### Vue
 
-    <!-- tab: _Layout.cshtml -->
-    @(Html.DevExtreme().Toolbar()
-        // ...
-    )
-    @(Html.DevExtreme().Drawer()
-        .ID("layout-drawer")   
-        .Template(@<text>
-            @(Html.DevExtreme().List()
-                .Width(200)
-                .OnInitialized("list_onInitialized")
-                .Items(items => {
-                    items.Add().Text("Inbox").Icon("message").Option("path", @Url.Action("Index"));
-                    items.Add().Text("Sent Mail").Icon("check").Option("path", @Url.Action("Sent"));
-                    items.Add().Text("Deleted").Icon("trash").Option("path", @Url.Action("Deleted"));
-                    items.Add().Text("Spam").Icon("mention").Option("path", @Url.Action("Spam"));
-                })
-                .KeyExpr("path")
-                .SelectionMode(ListSelectionMode.Single)
-                .OnSelectionChanged("list_onSelectionChanged")
-            )
-        </text>)
-        .Content(@<text>@RenderBody()</text>)
-    )
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <!-- ... -->
+            <DxDrawer ...
+                template="list">
+                <template #list>
+                    <NavigationList
+                        @navigated="isDrawerOpen = false"
+                    />
+                </template>
+                <div id="view">
+                    <router-view></router-view>
+                </div>
+            </DxDrawer>
+        </div>
+    </template>
 
-    <script type="text/javascript">
-        function button_clickHandler() {
+    <script>
+    // ...
+    import NavigationList from './components/NavigationList.vue';
+
+    export default {
+        components: {
             // ...
-            sessionStorage.setItem("drawerOpened", JSON.stringify(drawer.option("opened")));
-        }
-
-        function list_onSelectionChanged(e) {
-            document.location.pathname = e.addedItems[0].path;
-        }
-
-        function list_onInitialized(e) {
-            var t = "@Url.Action()";
-            e.component.option("selectedItemKeys", [ "@Url.Action()" ])
-        }
+            NavigationList
+        },
+        // ...
+    };
     </script>
 
-    <!-- tab: HomeController.cs -->
-    using System.Web.Mvc;
+    <style>
+    /* ... */
+    .dx-list-item-icon {
+        margin-right: 10px;
+    }
+    </style>
 
-    namespace DevExtremeApp.Controllers {
-        public class HomeController : Controller {
-            public ActionResult Index() {
-                return View();
-            }
+    <!-- tab: NavigationList.vue -->
+    <template>
+        <DxList
+            :width="200"
+            selection-mode="single"
+            :items="navigation"
+            @selection-changed="loadView($event)"
+        />
+    </template>
+    <script>
+    import { DxList } from "devextreme-vue/list";
 
-            public ActionResult Deleted() {
-                return View();
-            }
-
-            public ActionResult Sent() {
-                return View();
-            }
-
-            public ActionResult Spam() {
-                return View();
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            const navigation = [
+                { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
+                { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
+                { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
+                { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
+            ];
+            return {
+                navigation
+            };
+        },
+        methods: {
+            loadView(e) {
+                this.$router.push(e.addedItems[0].filePath);
+                this.$emit('navigated');
             }
         }
     }
+    </script>
 
-    <!-- tab: Site.css -->
-    /* ... */
-    #layout-toolbar .dx-list-item-icon {
-        margin-right: 10px;
-    }
+    <!-- tab: main.js -->
+    import Vue from 'vue';
+    import VueRouter from 'vue-router';
 
-    <!-- tab: Index.cshtml -->
-    <div class="drawer-view-content">Inbox</div>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!-- tab: Deleted.cshtml -->
-    <div class="drawer-view-content">Deleted</div>
+    import App from './App.vue';
+    import InboxComponent from "./components/Inbox.vue";
+    import SentMailComponent from "./components/SentMail.vue";
+    import TrashComponent from "./components/Trash.vue";
+    import SpamComponent from "./components/Spam.vue";
 
-    <!-- tab: Sent.cshtml -->
-    <div class="drawer-view-content">Sent</div>
+    Vue.config.productionTip = false;
 
-    <!-- tab: Spam.cshtml -->
-    <div class="drawer-view-content">Spam</div>
+    Vue.use(VueRouter);
 
-#####React
+    const routes = [
+        { path: "", redirect: "/inbox" },
+        { path: "/inbox", component: InboxComponent },
+        { path: "/sent-mail", component: SentMailComponent },
+        { path: "/trash", component: TrashComponent },
+        { path: "/spam", component: SpamComponent }
+    ];
+
+    const router = new VueRouter({
+        mode: "history",
+        routes
+    });
+
+    new Vue({
+        render: h => h(App),
+        router
+    }).$mount('#app')
+
+    <!-- tab: Inbox.vue -->
+    <template>
+        <div>Inbox</div>
+    </template>
+
+    <script>
+    export default {}
+    </script>
+
+    <!-- tab: SentMail.vue -->
+    <template>
+        <div>Sent mail</div>
+    </template>
+
+    <script>
+    export default {}
+    </script>
+
+    <!-- tab: Spam.vue -->
+    <template>
+        <div>Spam</div>
+    </template>
+
+    <script>
+    export default {}
+    </script>
+
+    <!-- tab: Trash.vue -->
+    <template>
+        <div>Trash</div>
+    </template>
+
+    <script>
+    export default {}
+    </script>
+
+##### React
 
     <!-- tab: DxComponent.js -->
     // ...
-    import NavigationList from "./NavigationList.js";
+    import NavigationList from "./NavigationList";
 
     import { Router, Route } from "react-router-dom";
 
-    import Inbox from "./views/Inbox.js";
-    import Trash from "./views/Trash.js";
-    import SentMail from "./views/SentMail.js";
-    import Spam from "./views/Spam.js";
+    import Inbox from "./views/Inbox";
+    import Trash from "./views/Trash";
+    import SentMail from "./views/SentMail";
+    import Spam from "./views/Spam";
 
     import history from "./history";
 
     class DxComponent extends React.Component {
+        renderList = () => {
+            const stateHandler = (newState) => this.setState(newState);
+            return (
+                <NavigationList stateHandler={stateHandler} />
+            );
+        }
+
         render() {
             return (
                 <React.Fragment>
                     <Drawer ...
-                        component={NavigationList} >
+                        render={this.renderList}>
                         <div id="view">
                             <Router history={history}>
                                 <div>
@@ -314,7 +387,7 @@ In this tutorial, we use the **List**:
 
     <!-- tab: NavigationList.js -->
     import React from "react";
-    import List from "devextreme-react/list.js";
+    import List from "devextreme-react/list";
     import history from "./history";
 
     const navigation = [
@@ -327,6 +400,7 @@ In this tutorial, we use the **List**:
     class NavigationList extends React.PureComponent {
         loadView(e) {
             history.push(e.addedItems[0].filePath);
+            this.props.stateHandler({ isDrawerOpen: false });
         }
         render() {
             return (
@@ -400,6 +474,90 @@ In this tutorial, we use the **List**:
         }
     }
     export default Trash;
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: _Layout.cshtml -->
+    @(Html.DevExtreme().Toolbar()
+        // ...
+    )
+    @(Html.DevExtreme().Drawer()
+        .ID("layout-drawer")   
+        .Template(@<text>
+            @(Html.DevExtreme().List()
+                .Width(200)
+                .OnInitialized("list_onInitialized")
+                .Items(items => {
+                    items.Add().Text("Inbox").Icon("message").Option("path", @Url.Action("Index"));
+                    items.Add().Text("Sent Mail").Icon("check").Option("path", @Url.Action("Sent"));
+                    items.Add().Text("Deleted").Icon("trash").Option("path", @Url.Action("Deleted"));
+                    items.Add().Text("Spam").Icon("mention").Option("path", @Url.Action("Spam"));
+                })
+                .KeyExpr("path")
+                .SelectionMode(ListSelectionMode.Single)
+                .OnSelectionChanged("list_onSelectionChanged")
+            )
+        </text>)
+        .Content(@<text>@RenderBody()</text>)
+    )
+
+    <script type="text/javascript">
+        function button_clickHandler() {
+            // ...
+            sessionStorage.setItem("isDrawerOpen", JSON.stringify(drawer.option("opened")));
+        }
+
+        function list_onSelectionChanged(e) {
+            document.location.pathname = e.addedItems[0].path;
+            $("#layout-drawer").dxDrawer("hide");
+        }
+
+        function list_onInitialized(e) {
+            const t = "@Url.Action()";
+            e.component.option("selectedItemKeys", [ "@Url.Action()" ])
+        }
+    </script>
+
+    <!-- tab: HomeController.cs -->
+    using System.Web.Mvc;
+
+    namespace DevExtremeApp.Controllers {
+        public class HomeController : Controller {
+            public ActionResult Index() {
+                return View();
+            }
+
+            public ActionResult Deleted() {
+                return View();
+            }
+
+            public ActionResult Sent() {
+                return View();
+            }
+
+            public ActionResult Spam() {
+                return View();
+            }
+        }
+    }
+
+    <!-- tab: Site.css -->
+    /* ... */
+    #layout-toolbar .dx-list-item-icon {
+        margin-right: 10px;
+    }
+
+    <!-- tab: Index.cshtml -->
+    <div class="drawer-view-content">Inbox</div>
+
+    <!-- tab: Deleted.cshtml -->
+    <div class="drawer-view-content">Deleted</div>
+
+    <!-- tab: Sent.cshtml -->
+    <div class="drawer-view-content">Sent</div>
+
+    <!-- tab: Spam.cshtml -->
+    <div class="drawer-view-content">Spam</div>
 
 ---
 

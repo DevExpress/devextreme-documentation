@@ -12,10 +12,10 @@ A Promise that is resolved after the total item count is obtained. It is a <a hr
 Filtering and grouping options.
 
 ##### field(obj.filter): Object
-A filtering expression; described in the [Filtering](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Filtering') section.
+A filtering expression; described in the [Filtering](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering') section.
 
 ##### field(obj.group): Object
-A grouping expression; described in the [Grouping](/concepts/30%20Data%20Layer/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Layer/Data_Layer/#Reading_Data/Grouping') section.
+A grouping expression; described in the [Grouping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Grouping') section.
 
 ---
 ---

@@ -56,6 +56,82 @@ The **Form** widget displays labels on the left side of their editors and aligns
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm
+            :form-data="employee"
+            label-location="top"> <!-- or "left" | "right" -->
+            <DxSimpleItem data-field="firstName" />
+            <DxSimpleItem data-field="lastName" />
+            <DxSimpleItem data-field="phone">
+                <DxLabel
+                    location="left"
+                    alignment="right" /> <!-- or "left" | "center" -->
+            </DxSimpleItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(360)684-1334'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxLabel
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, Label } from 'devextreme-react/form';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(360)684-1334'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form
+                    formData={employee}
+                    labelLocation="top"> { /* or "left" | "right" */ }
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="phone">
+                        <Label
+                            location="left"
+                            alignment="right" /> { /* or "left" | "right" */ }
+                    </SimpleItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 A label placed on the left or right side of the editor is centered vertically in most cases. The labels of the editors that occupy much screen space like the [Calendar](/concepts/05%20Widgets/Calendar/00%20Overview.md '/Documentation/Guide/Widgets/Calendar/Overview/'), [TextArea](/concepts/05%20Widgets/TextArea/00%20Overview.md '/Documentation/Guide/Widgets/TextArea/Overview/'), and [RadioGroup](/concepts/05%20Widgets/RadioGroup/00%20Overview.md '/Documentation/Guide/Widgets/RadioGroup/Overview/') are aligned at the top, but you can center them using the following code:

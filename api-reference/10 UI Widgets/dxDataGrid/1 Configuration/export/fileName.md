@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.export.fileName
 type: String
 default: 'DataGrid'
+deprecated: Since v20.1, we recommend [ExcelJS-based export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) which does not use this option.
 ---
 ---
 ##### shortDescription

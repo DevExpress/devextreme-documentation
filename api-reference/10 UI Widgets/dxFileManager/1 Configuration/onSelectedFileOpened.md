@@ -18,7 +18,7 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.file): FileSystemItem
-<!-- Description goes here -->
+The opened file.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

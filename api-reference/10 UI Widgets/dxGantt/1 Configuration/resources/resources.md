@@ -16,7 +16,7 @@ You can add resources to a project and assign them to tasks. Resources can be pe
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource') option to bind the widget to a data source, which contains resources. If the field names in your data source differ from the 'id' and 'text' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#keyExpr') and/or [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#textExpr') options to map data fields.
+Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource') option to bind the widget to a data source, which contains resources. If the field names in your data source differ from the 'id', 'text' and 'color' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#keyExpr'), [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#textExpr') and/or [colorExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/colorExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#colorExpr') options to map data fields.
 
 #####See Also#####
 - [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources')
@@ -32,7 +32,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             resources: {
                 dataSource: resources,
                 keyExpr: "resourceId",
-                textExpr: "title"
+                textExpr: "title",
+                colorExpr: "resourceColor"
             },
             //...
         });
@@ -41,7 +42,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     <!-- tab: data.js -->
     var resources = [{
         'resourceId': 1,
-        'title': 'Management'
+        'title': 'Management',
+        'resourceColor': 'red'
     }, 
     // ...
     ];    
@@ -53,7 +55,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         <dxo-resources 
             [dataSource]="resources" 
             keyExpr="resourceId"
-            textExpr="title">
+            textExpr="title"
+            colorExpr="resourceColor" >
         </dxo-resources>
         <!-- ... -->
     </dx-gantt>
@@ -98,13 +101,16 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     import { Injectable } from '@angular/core';
     
     export class Resource {
-        id: number;
-        text: string;
+        resourceId: number;
+        title: string;
+        resourceColor: string;
+
     }
     
     const resources: Resource[] = [{
         'resourceId': 1,
-        'title': 'Management'
+        'title': 'Management',
+        'resourceColor': 'red'
     },
     // ...   
     ]; 
@@ -123,7 +129,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             <DxResources 
                 :data-source="resources"
                 key-expr="resourceId"
-                text-expr="title" />
+                text-expr="title"
+                color-expr="resourceColor" />
             <!-- ... -->
         </DxGantt>
     </template>
@@ -159,7 +166,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     <!-- tab: data.js -->
     export const resources = [{
         'resourceId': 1,
-        'title': 'Management'
+        'title': 'Management',
+        'resourceColor': 'red'
     },
     // ...
     ];	
@@ -188,7 +196,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
                     <Resources 
                         dataSource={resources}
                         keyExpr="resourceId"
-                        textExpr="title" />
+                        textExpr="title" 
+                        colorExpr="resourceColor" />
                     {/* ... */}
                 </Gantt>
             );
@@ -199,7 +208,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     <!-- tab: data.js -->
     export const resources = [{
         'resourceId': 1,
-        'title': 'Management'
+        'title': 'Management',
+        'resourceColor': 'red'
     },
     // ...
     ];

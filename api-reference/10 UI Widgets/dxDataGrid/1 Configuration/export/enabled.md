@@ -5,10 +5,11 @@ default: false
 ---
 ---
 ##### shortDescription
-Enables the [client-side exporting](/concepts/05%20Widgets/DataGrid/70%20Client-Side%20Exporting '/Documentation/Guide/Widgets/DataGrid/Client-Side_Exporting/').
+Adds the Export button to the **DataGrid**'s toolbar.
 
 ---
-[note]Client-side exporting requires the JSZip library. Learn where you can get it from topics in the [Installation](/concepts/Common/Distribution%20Channels/15%20ZIP%20Archive.md '/Documentation/Guide/Common/Distribution_Channels/ZIP_Archive/') section.
+Refer to the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) topic for information on how to configure export. 
 
-#####See Also#####
-- **columns[]**.[allowExporting](/api-reference/_hidden/dxDataGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowExporting')
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
+}

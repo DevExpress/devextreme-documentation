@@ -37,51 +37,7 @@ An end user can use the following keys to interact with the widget.
   </table>
 </div>
 
-You can implement a custom handler for a key using the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Widgets/dxAccordion/Methods/#registerKeyHandlerkey_handler') method.
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    function registerKeyHandlers () {
-        let accordion =  $("#accordionContainer").dxAccordion("instance");
-        accordion.registerKeyHandler("backspace", function (e) {
-            // The argument "e" contains information on the event
-        });
-        accordion.registerKeyHandler("space", function (e) {
-            // ...
-        });
-    }
-    
-
-##### Angular
-
-    <!--TypeScript-->
-    import { ..., ViewChild, AfterViewInit } from "@angular/core";
-    import { DxAccordionModule, DxAccordionComponent } from "devextreme-angular";
-    // ...
-    export class AppComponent implements AfterViewInit {
-        @ViewChild(DxAccordionComponent, { static: false }) accordion: DxAccordionComponent
-        // Prior to Angular 8
-        // @ViewChild(DxAccordionComponent) accordion: DxAccordionComponent
-        ngAfterViewInit () {
-            this.accordion.instance.registerKeyHandler("backspace", function (e) {
-                // The argument "e" contains information on the event
-            });
-            this.accordion.instance.registerKeyHandler("space", function (e) {
-                // ...
-            });
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxAccordionModule
-        ],
-        // ...
-    })
-
----
+#include common-code-register-key-handler
 
 #####See Also#####
 #include common-link-callmethods

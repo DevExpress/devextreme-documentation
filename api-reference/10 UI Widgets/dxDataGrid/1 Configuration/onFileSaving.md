@@ -2,6 +2,7 @@
 id: dxDataGrid.Options.onFileSaving
 type: function(e)
 default: null
+deprecated: Since v20.1, we recommend [ExcelJS-based export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) which does not use this option.
 EventForAction: dxDataGrid.fileSaving
 ---
 ---
@@ -31,6 +32,5 @@ The format of this file. Equals *"EXCEL"* for an Excel file.
 
 ---
 #####See Also#####
-- [Client-Side Exporting - Events](/concepts/05%20Widgets/DataGrid/70%20Client-Side%20Exporting/10%20Events.md '/Documentation/Guide/Widgets/DataGrid/Client-Side_Exporting/#Events')
 - [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting')
 - [onExported](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExported.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExported')

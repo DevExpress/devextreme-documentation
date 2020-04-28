@@ -31,8 +31,12 @@ The item's [name](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/Simpl
 A template name or container.
 
 ---
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+}
+#include common-githubbutton with {
+    url: "https://github.com/DevExpress-Examples/Form-Custom-items"
 }
 
 #####See Also#####

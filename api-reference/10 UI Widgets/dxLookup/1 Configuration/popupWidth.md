@@ -2,6 +2,7 @@
 id: dxLookup.Options.popupWidth
 type: Number | String | function()
 default: function() {return $(window).width() * 0.8 }, function() { return Math.min($(window).width(), $(window).height()) * 0.4; } (iPad)
+dep: dxLookup.Options.dropDownOptions
 ---
 ---
 ##### shortDescription
@@ -12,5 +13,3 @@ The popup element's width.
 
 ---
 In the Material theme, the default value equals the **Lookup** width plus paddings and borders.
-
-#include uiwidgets-ref-width

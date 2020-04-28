@@ -1,4 +1,4 @@
-<div class="simple-table">
+<div class="simple-table normal-font-style">
 <table id="versions">
     <thead>
         <tr>
@@ -9,7 +9,7 @@
     <tbody>
         <tr>
             <td>v20.1.x</td>
-            <td>v6.0.x - v9.0.x</td>
+            <td>v7.0.x - v9.0.x</td>
         </tr>
         <tr>
             <td>v19.2.x</td>
@@ -17,7 +17,7 @@
         </tr>
         <tr>
             <td>v19.1.x</td>
-            <td>v5.0.x - v9.0.x</td>
+            <td>v5.0.x - v9.0.x <br/> (without Ivy support)</td>
         </tr>
         <tr>
             <td>v18.1.x <br/> v18.2.x</td>
@@ -32,7 +32,7 @@
 </div>
 
 <style>
-    #versions td:first-child {
-        font-style: normal;
+    #versions tbody {
+        text-align: center;
     }
 </style>

@@ -1,6 +1,14 @@
-Use the [dataSource](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#dataSource') option to bind the widget to a hierarchical object. 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesArrayHierarchicalStructure/"
+}
 
-Set the [itemsExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/itemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#itemsExpr') option to the name of the field that provides data for nested items because the data has a hierarchical structure. The [keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr') option should be specified as well.
+Use the [nodes.dataSource](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#dataSource') option to bind the widget to a hierarchical object. 
+
+Specify the following **required options**: [nodes.keyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr'), [nodes.itemsExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/itemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#itemsExpr').
+
+**Do not specify** the [nodes.parentKeyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/parentKeyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#parentKeyExpr') and [edges](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/edges '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/') options because they are a part of another binding mode.
+
+During the binding process, the widget creates a shape for every bound node and all connectors that are between a node and its children. Note that the edges are not maintained as entities in a data source, thus the detached connector disappears after it is rebound.
 
         <!-- tab: index.js -->
         $(function() {
@@ -8,58 +16,47 @@ Set the [itemsExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration
                 nodes: {
                     dataSource: new DevExpress.data.ArrayStore({
                         key: "this",
-                        data: employees,
+                        data: employees
                     }),
+                    keyExpr: "ID",
                     textExpr: "Title",
-                    itemsExpr: "items"
+                    itemsExpr: "Items",
                 },
-                layout: "tree"
             });
         });
 
         <!-- tab: data.js -->
         var employees = [{
-            "Full_Name": "John Heart",
-            "Prefix": "Mr.",
-            "Title": "CEO",
-            "City": "Los Angeles",
-            "State": "California",
-            "Email": "jheart@dx-email.com",
-            "Skype": "jheart_DX_skype",
-            "Mobile_Phone": "(213) 555-9392",
-            "Birth_Date": "1964-03-16",
-            "Hire_Date": "1995-01-15",
-            "items": [{
-                "Full_Name": "Samantha Bright",
-                "Prefix": "Dr.",
-                "Title": "COO",
-                "City": "Los Angeles",
-                "State": "California",
-                "Email": "samanthab@dx-email.com",
-                "Skype": "samanthab_DX_skype",
-                "Mobile_Phone": "(213) 555-2858",
-                "Birth_Date": "1966-05-02",
-                "Hire_Date": "2004-05-24",
+            "ID": 3,
+            "Full_Name": "Arthur Miller",
+            "Title": "CTO",
+            "Items": [{
+                "ID": 6,
+                "Full_Name": "Brett Wade",
+                "Title": "IT Manager",
+                "Items": [{
+                    "ID": 21,
+                    "Full_Name": "Taylor Riley",
+                    "Title": "Network Admin",
+                }, {
+                    "ID": 23,
+                    "Full_Name": "Wally Hobbs",
+                    "Title": "Programmer",
+                }, {
+                    "ID": 24,
+                    "Full_Name": "Brad Jameson",
+                    "Title": "Programmer",
+                }]
             }, {
-                "Full_Name": "Arthur Miller",
-                "Prefix": "Mr.",
-                "Title": "CTO",
-                "City": "Denver",
-                "State": "Colorado",
-                "Email": "arthurm@dx-email.com",
-            "Skype": "arthurm_DX_skype",
-                "Mobile_Phone": "(310) 555-8583",
-            "Birth_Date": "1972-07-11",
-                "Hire_Date": "2007-12-18",
-                "items": [{
-                    "Full_Name": "Brett Wade",
-                    "Prefix": "Mr.",
-                    "Title": "IT Manager",
-                    "City": "Reno",
-                    "State": "Nevada",
-                    "Email": "brettw@dx-email.com",
-                    "Skype": "brettw_DX_skype",
-                    "Mobile_Phone": "(626) 555-0358",
-                    "Birth_Date": "1968-12-01",
-                    "Hire_Date": "2009-03-06",
-        // ...
+                "ID": 9,
+                "Full_Name": "Barb Banks",
+                "Title": "Support Manager",
+                "Items": [{
+                    "ID": 18,
+                    "Full_Name": "James Anderson",
+                    "Title": "Support Assistant",
+                }]
+            }]
+        }];
+
+![Diagram - Node and Edge Arrays](/images/diagram/db-linear-array.png)

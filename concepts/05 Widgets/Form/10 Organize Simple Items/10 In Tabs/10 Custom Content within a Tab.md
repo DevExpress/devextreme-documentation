@@ -51,7 +51,7 @@ The **Form** widget allows you to specify custom templates for an individual tab
             </dxi-tab>
             <dxi-tab title="Info">
                 <dxi-item dataField="position"></dxi-item>
-                <dxi-item dataField="hireDate"></dxi-item>
+                <dxi-item dataField="birthDate"></dxi-item>
                 <dxi-item dataField="city"></dxi-item>
             </dxi-tab>
             <dxi-tab title="Contacts">
@@ -90,6 +90,126 @@ The **Form** widget allows you to specify custom templates for an individual tab
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm :form-data="employee">
+            <template #tab="{ data }">
+                <p style="color:red">{{ data.title }}</p>
+            </template>
+            <template #tabContent="{ data }">
+                <p>
+                    <i>By filling out this form, you agree
+                    to the terms of the <a href='#'>Data Protection Policy</a></i>
+                </p>
+            </template>
+            <DxSimpleItem data-field="name" />
+            <DxTabbedItem :col-span="2">
+                <DxTab
+                    title="Data Protection Policy"
+                    tab-template="tab"
+                    template="tabContent" />
+                <DxTab title="Info">
+                    <DxSimpleItem data-field="position" />
+                    <DxSimpleItem data-field="birthDate" />
+                    <DxSimpleItem data-field="city" />
+                </DxTab>
+                <DxTab title="Contacts">
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
+
+    const employee = {
+        name: 'John Heart',
+        birthDate: new Date(1964, 3, 15),
+        position: 'CEO',
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxTabbedItem, DxTab
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
+
+    const employee = {
+        name: 'John Heart',
+        birthDate: new Date(1964, 3, 15),
+        position: 'CEO',
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form formData={employee}>
+                    <SimpleItem dataField="name" />
+                    <TabbedItem colSpan={2}>
+                        <Tab
+                            title="Data Protection Policy"
+                            tabRender={tabRender}
+                            render={tabContentRender} />
+                        <Tab title="Info">
+                            <SimpleItem dataField="position" />
+                            <SimpleItem dataField="birthDate" />
+                            <SimpleItem dataField="city" />
+                        </Tab>
+                        <Tab title="Contacts">
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
+                        </Tab>
+                    </TabbedItem>
+                </Form>
+            );
+        }
+    }
+
+    function tabRender(data) {
+        return (
+            <p style={{color:'red'}}>{ data.title }</p>
+        );
+    }
+
+    function tabContentRender(data) {
+        return (
+            <p>
+                <i>By filling out this form, you agree
+                to the terms of the <a href='#'>Data Protection Policy</a></i>
+            </p>
+        );
+    }    
+
+    export default App;
 
 ---
 

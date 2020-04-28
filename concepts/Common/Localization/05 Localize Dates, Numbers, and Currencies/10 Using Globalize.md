@@ -1,4 +1,4 @@
-[important] React projects created with [Create React App](https://facebook.github.io/create-react-app) <a href="https://github.com/facebook/create-react-app/issues/4508" target="_blank">do not support Globalize</a>. [Use Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') instead.
+[important] React projects created with the [Create React App](https://facebook.github.io/create-react-app) <a href="https://github.com/facebook/create-react-app/issues/4508" target="_blank">do not support Globalize</a>. <a href="https://github.com/DevExpress/devextreme-react-template#devextreme-react-template" target="_blank">DevExtreme React Template</a> is one of such projects. [Use Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') in these projects instead.
 
 Activating Globalize in your project requires the following files:
 
@@ -55,7 +55,7 @@ All the components are available via CDN and npm.
 
         npm install --save-dev devextreme-cldr-data globalize
 
-    Register Globalize in your project as described in the [Angular](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/08%20Register%203rd-Party%20Dependencies%20in%20Angular%20CLI%206+/02%20Globalize%20Registration.md '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies_in_Angular_CLI_6+/Globalize_Registration'), [Vue](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/63%20Register%203rd-Party%20Dependencies/2%20Globalize%20Registration.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Register_3rd-Party_Dependencies/Globalize_Registration'), or [React](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/65%20Additional%20Configuration%20for%20Webpack.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Additional_Configuration_for_Webpack') articles.
+    Register Globalize in your project as described in the [Angular](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies/Globalize_Registration), [Vue](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/63%20Register%203rd-Party%20Dependencies/2%20Globalize%20Registration.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Register_3rd-Party_Dependencies/Globalize_Registration'), or [React](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/65%20Additional%20Configuration%20for%20Webpack.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Additional_Configuration_for_Webpack') articles.
     
     Then, include Globalize, CLDR, and language-specific CLDR data using the `import` or `require` statement&mdash;the statement depends on the syntax for working with modules. The code below shows ECMAScript 6 and CommonJS syntaxes. These examples include German and Russian dictionaries.
 
@@ -76,14 +76,7 @@ All the components are available via CDN and npm.
         import supplemental from "devextreme-cldr-data/supplemental.json";
         import deCldrData from "devextreme-cldr-data/de.json";
         import ruCldrData from "devextreme-cldr-data/ru.json";
-
-        // In projects created with Angular CLI earlier than 6
-        // import deMessages from "devextreme/localization/messages/de.json!json";
-        // import ruMessages from "devextreme/localization/messages/ru.json!json";
-        // import supplemental from "devextreme-cldr-data/supplemental.json!json";
-        // import deCldrData from "devextreme-cldr-data/de.json!json";
-        // import ruCldrData from "devextreme-cldr-data/ru.json!json";
-
+        
         import Globalize from "globalize";
 
         // ===== Angular ======

@@ -13,7 +13,7 @@ Server-side data processing improves the widget's performance on large datasets.
 
 The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used widget functionality.
 
-<div class="simple-table">
+<div class="simple-table normal-font-style">
 <table style="text-align:center">
  <tr>
     <th>Setting</th>
@@ -21,42 +21,42 @@ The following table lists the possible **remoteOperations** configurations and t
     <th>Additional server-side operations</th>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: true</code></td>
+    <td style="text-align:left"><code>remoteOperations: true</code></td>
     <td>all operations <b>except group paging</b></td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { groupPaging: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { groupPaging: true }</code></td>
     <td>all operations <b>including group paging</b></td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { paging: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { paging: true }</code></td>
     <td>paging</td>
     <td>filtering<sup>1</sup>, sorting<sup>1</sup>, summary calculation<sup>1</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the widget)</td>
+    <td style="text-align:left"><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the widget)</td>
     <td>paging, filtering, sorting</td>
     <td>grouping<sup>3</sup>, summary calculation<sup>1</sup></td>
  </tr>
   <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { filtering: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { filtering: true }</code></td>
     <td>filtering</td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { sorting: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { sorting: true }</code></td>
     <td>sorting</td>
     <td>filtering<sup>1</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { grouping: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { grouping: true }</code></td>
     <td>grouping, filtering</td>
     <td>sorting<sup>1</sup>, summary calculation<sup>1</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left; font-style:normal"><code>remoteOperations: { summary: true }</code></td>
+    <td style="text-align:left"><code>remoteOperations: { summary: true }</code></td>
     <td>summary calculation</td>
     <td>filtering<sup>1</sup>, sorting<sup>2</sup>, grouping<sup>2</sup></td>
  </tr>
@@ -69,7 +69,7 @@ The following table lists the possible **remoteOperations** configurations and t
     <sup>3</sup> - If <b>grouping</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#autoExpandAll">autoExpandAll</a> is set to <b>false</b>
 </div>
 
-[note] Paging, filtering, and sorting are performed on the server side for the [ODataStore](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/20%20OData%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/OData_Service/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
+[note] Paging, filtering, and sorting are performed on the server side for the [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
 
 The following restrictions apply to widget functionality when operations are remote:
 
@@ -91,5 +91,5 @@ The following restrictions apply to widget functionality when operations are rem
 }
 
 #####See Also#####
-- **Data Binding**: [Web API Service](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/16%20Web%20API%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Web_API_Service/') | [PHP Service](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/17%20PHP%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/PHP_Service/') | [MongoDB Service](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/18%20MongoDB%20Service.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/MongoDB_Service/') | [Custom Sources](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/25%20Custom%20Sources '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Custom_Sources/')
+- **Data Binding**: [Web API, PHP, MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/') | [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 

@@ -1,32 +1,41 @@
 When the **Drawer** opens, it can overlap, shrink, or partially displace the view, depending on the [openedStateMode](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/openedStateMode.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#openedStateMode') option:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--tab: index.js-->
     $(function() {
-        var drawer = $("#drawer").dxDrawer({
+        const drawer = $("#drawer").dxDrawer({
             // ...
             openedStateMode: "overlap"
         }).dxDrawer("instance");
     })
 
-#####Angular
+##### Angular
 
     <!-- tab: app.component.html -->
     <dx-drawer ...
         openedStateMode="overlap">
     </dx-drawer>
 
-##### ASP.NET MVC Controls
+##### Vue
 
-    <!-- tab: _Layout.cshtml -->
-    @(Html.DevExtreme().Drawer()
-        .ID("layout-drawer")   
-        .OpenedStateMode(DrawerOpenedStateMode.Overlap)
-    )
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <!-- ... -->
+            <DxDrawer ...
+                opened-state-mode="overlap">
+                <!-- ... -->
+            </DxDrawer>
+        </div>
+    </template>
 
-#####React
+    <script>
+    // ...
+    </script>
+
+##### React
 
     <!-- tab: DxComponent.js -->
     // ...
@@ -43,6 +52,14 @@ When the **Drawer** opens, it can overlap, shrink, or partially displace the vie
         }
     }
     export default DxComponent;
+
+##### ASP.NET MVC Controls
+
+    <!-- tab: _Layout.cshtml -->
+    @(Html.DevExtreme().Drawer()
+        .ID("layout-drawer")   
+        .OpenedStateMode(DrawerOpenedStateMode.Overlap)
+    )
 
 ---
 

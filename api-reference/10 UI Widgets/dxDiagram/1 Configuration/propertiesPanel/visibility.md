@@ -1,12 +1,15 @@
 ---
 id: dxDiagram.Options.propertiesPanel.visibility
-acceptValues: 'visible' | 'collapsed' | 'disabled'
+acceptValues: 'auto' | 'visible' | 'collapsed' | 'disabled'
 type: String
-default: true
+default: 'auto'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the panel's visibility.
 
 ---
-<!-- Description goes here -->
+#include common-ref-enum with {
+    enum: "`DiagramPanelVisibility`",
+    values: "`Auto`, `Visible`, `Collapsed`, `Disabled`"
+}

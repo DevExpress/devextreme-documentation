@@ -11,6 +11,52 @@ Specifies the name of a data source field or an expression that provides a key o
 The current node's data object.
 
 ---
-The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` type.
+The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` [type](/concepts/05%20Widgets/Diagram/40%20Shape%20Types.md '/Documentation/Guide/Widgets/Diagram/Shape_Types/').
 
-To use the **containerKeyExpr** option set the [childrenExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr) option to 'null'.
+You can also use the [containerChildrenExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerChildrenExpr) option to provide a container's content.
+
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#diagram").dxDiagram({
+            nodes: {
+                dataSource: new DevExpress.data.ArrayStore({
+                    key: "this",
+                    data: orgItems
+                }),
+                keyExpr: "id",
+                parentKeyExpr: "parent_id",
+                containerKeyExpr: "team",
+            },
+
+        });
+    });
+    
+    <!-- tab: data.js -->
+    var orgItems = [
+        {  
+            "id":"106",
+            "text":"Development",
+            "type":"ellipse"
+        },
+        {  
+            "id":"110",
+            "text":"ASP.NET Team",
+            "type": "horizontalContainer",
+            "parent_id": "106",
+        },
+        {  
+            "id":"112",
+            "text":"Ana\nTrujillo",
+            "type":"rectangle",
+            "team": "110"
+        },
+        {  
+            "id":"113",
+            "text":"Antonio\nMoreno",
+            "type":"rectangle",
+            "team": "110"
+        },
+    ];
+
+![Diagram - Container](/images/diagram/children-container-expr.png)

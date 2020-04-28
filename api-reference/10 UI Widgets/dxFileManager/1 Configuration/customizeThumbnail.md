@@ -7,7 +7,7 @@ type: function(fileSystemItem)
 Allows you to provide custom icons to be used as thumbnails.
 
 ##### param(fileSystemItem): FileSystemItem
-<!-- Description goes here -->
+The file or folder whose thumbnail is being customized.
 
 ##### return: String
 An icon to use as a thumbnail.

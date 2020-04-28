@@ -8,3 +8,7 @@ type: String
 Specifies how shapes are displayed in the toolbox.
 
 ---
+#include common-ref-enum with {
+    enum: "`DiagramToolboxDisplayMode`",
+    values: "`Icons`, `Texts`"
+}

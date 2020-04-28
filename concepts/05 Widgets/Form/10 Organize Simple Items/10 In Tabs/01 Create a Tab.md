@@ -8,6 +8,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
         $("#formContainer").dxForm({
             formData: {
                 name: "John Heart",
+                position: "CEO",
                 hireDate: new Date(2012, 4, 13),
                 city: "Los Angeles",
                 phone: "+1(213) 555-9392",
@@ -51,6 +52,7 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
     export class AppComponent {
         employee = {
             name: "John Heart",
+            position: "CEO",
             hireDate: new Date(2012, 4, 13),
             city: "Los Angeles",
             phone: "+1(213) 555-9392",
@@ -64,6 +66,94 @@ The **Form** widget allows you to organize items in tabs. In the context of the 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm :form-data="employee">
+            <DxSimpleItem data-field="name" />
+            <DxTabbedItem>
+                <DxTab title="Info">
+                    <DxSimpleItem data-field="position" />
+                    <DxSimpleItem data-field="hireDate" />
+                    <DxSimpleItem data-field="city" />
+                </DxTab>
+                <DxTab title="Contacts">
+                    <DxSimpleItem data-field="phone" />
+                    <DxSimpleItem data-field="email" />
+                </DxTab>
+            </DxTabbedItem>
+        </DxForm>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
+
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxTabbedItem, DxTab
+        },
+        data() {
+            return {
+                employee
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
+
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
+        hireDate: new Date(2012, 4, 13),
+        city: 'Los Angeles',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form formData={employee}>
+                    <SimpleItem dataField="name" />
+                    <TabbedItem>
+                        <Tab title="Info">
+                            <SimpleItem dataField="position" />
+                            <SimpleItem dataField="hireDate" />
+                            <SimpleItem dataField="city" />
+                        </Tab>
+                        <Tab title="Contacts">
+                            <SimpleItem dataField="phone" />
+                            <SimpleItem dataField="email" />
+                        </Tab>
+                    </TabbedItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

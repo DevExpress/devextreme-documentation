@@ -1,16 +1,11 @@
 Use the [permissions](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/permissions '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/permissions/') option to specify whether to allow or deny a user to manage files and folders in the **FileManager** widget: copy, create, download, move, remove, rename, or upload. 
 
-The widget also allows you to specify the following restrictions:
-    
-- [allowedFileExtensions](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions') option - Specifies file extensions allowed for display and upload in the **FileManager** widget. The widget fails to upload and displays the error message if a user tries to upload files with restricted extensions.
+The widget also has the [allowedFileExtensions](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#allowedFileExtensions') option that allows you to specify file extensions allowed for display and upload in the **FileManager** widget. The widget fails to upload and displays the error message if a user tries to upload files with restricted extensions.
 
-    ![DevExtreme File Manager - Allowed File Extension](/images/FileManager/allowed-file-extension-error-message.png)
-
-- [maxFileSize](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/upload/maxFileSize.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/upload/#maxFileSize') option - Specifies the maximum upload file size. The widget does not upload a file and displays the following error message when the file's size exceeds the maximum upload file size.
-
-    ![DevExtreme File Manager - Max File Size](/images/FileManager/max-file-size-error-message.png)
+![DevExtreme File Manager - Allowed File Extension](/images/FileManager/allowed-file-extension-error-message.png)
 
 ---
+
 ##### jQuery
 
     <!-- tab: index.js -->
@@ -25,10 +20,7 @@ The widget also allows you to specify the following restrictions:
                 rename: true,
                 upload: true
             },
-            allowedFileExtensions: [".txt", ".doc", ".png"],
-            upload: {
-                maxFileSize: 1000000
-            },
+            allowedFileExtensions: [".txt", ".doc", ".png"]
             // ...
         });
     });    
@@ -38,7 +30,6 @@ The widget also allows you to specify the following restrictions:
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager" 
         [allowedFileExtensions]="allowedFileExtensions" >
-        <dxo-upload [maxFileSize]="1000000"></dxo-upload>
         <dxo-permissions 
             [create]="true"
             [copy]="true"
@@ -91,7 +82,6 @@ The widget also allows you to specify the following restrictions:
     <!-- tab: App.vue -->
     <template>
         <DxFileManager :allowed-file-extensions="allowedFileExtensions">   
-            <DxUpload :max-file-size="1000000" />
             <DxPermissions
                 :create="true"
                 :copy="true"
@@ -108,15 +98,13 @@ The widget also allows you to specify the following restrictions:
         
         import {
             DxFileManager,
-            DxPermissions,
-            DxUpload
+            DxPermissions
         } from 'devextreme-vue/file-manager';
 
         export default {
             components: {
                 DxFileManager,
-                DxPermissions,
-                DxUpload
+                DxPermissions
             },
             data() {
                 return {
@@ -135,7 +123,7 @@ The widget also allows you to specify the following restrictions:
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager, { 
-        Upload, Permissions 
+        Permissions 
     } from 'devextreme-react/file-manager';
     const allowedFileExtensions = ['.txt', '.doc', '.png'];
     
@@ -143,7 +131,6 @@ The widget also allows you to specify the following restrictions:
         render() {
             return (
                 <FileManager allowedFileExtensions={allowedFileExtensions}>
-                    <Upload maxFileSize={1000000} />
                     <Permissions
                         create={true}
                         copy={true}

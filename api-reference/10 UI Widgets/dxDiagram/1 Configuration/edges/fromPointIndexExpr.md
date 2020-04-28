@@ -11,3 +11,8 @@ Specifies the name of a data source field or an expression that provides an inde
 The current edge's data object.
 
 ---
+The built-in shape's connection points are numbered clockwise from the leftmost point on the top border.
+
+![Diagram - Shape Points](/images/diagram/point-index-expr.png)
+
+A custom shape's connection points are numbered according to their position in the [connectionPoints](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/connectionPoints/) collection.

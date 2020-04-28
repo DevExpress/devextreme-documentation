@@ -4,26 +4,113 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies horizontal and vertical offset in pixels.
+Specifies the overlay element's offset from a specified position.
 
 ---
-This options accepts an object containing the **x** and **y** fields which specify the horizontal and vertical offset respectively, or a string consisting of horizontal and vertical offset values separated separated by a space (e.g., "5 -10").
+The offset is specified in pixels. To set this option, use an object with the **x** and **y** fields. These fields specify horizontal and vertical offsets, respectively. Alternatively, you can use a string value that indicates the offsets separated by a whitespace character. A positive offset shifts the element to the right or down; a negative offset shifts it to the left or up.
 
-    <!--JavaScript-->
-    position: { offset: '5 -10' };
+In the following code, the overlay element is shifted 50 pixels to the right and 25 pixels up.
 
-When you configure a widget as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, this option accepts two values of the `double` type.
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#popupContainer").dxPopup({
+            // ...
+            position: {
+                // ...
+                offset: "50 -25"
+                // ===== or =====
+                offset: { x: 50, y: -25 }
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-popup ... >
+        <dxo-position ...
+            offset="50 -25">
+            <!-- or -->
+            <dxo-offset [x]="50" [y]="-25"></dxo-at>
+        </dxo-position>
+    </dx-popup>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPopup ... >
+            <DxPosition
+                offset="50 -25">
+                <!-- or -->
+                <DxOffset :x="50" :y="-25" />
+            </DxPosition>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxPopup, {
+        DxPosition,
+        DxOffset
+    } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup,
+            DxPosition,
+            DxOffset
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Popup, {
+        Position,
+        Offset
+    } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popup ... >
+                    <Position
+                        offset="50 -25">
+                        {/* or */}
+                        <Offset x={50} y={-25} />
+                    </Position>
+                </Popup>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().Popup()
         .Position(p => p
-            .Offset(5, -10)
+            .Offset(50, -25)
         )
     )
 
     <!--Razor VB-->
-    @(Html.DevExtreme().WidgetName() _
+    @(Html.DevExtreme().Popup() _
         .Position(Sub(p)
-            p.Offset(5, -10)
+            p.Offset(50, -25)
         End Sub)
     )
+
+---

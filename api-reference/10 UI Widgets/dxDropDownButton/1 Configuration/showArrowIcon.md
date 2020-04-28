@@ -10,7 +10,7 @@ Specifies whether the arrow icon should be displayed.
 ---
 The following table demonstrates how the **showArrowIcon** option affects the **DropDownButton**'s appearance:
 
-<div class="simple-table">
+<div class="simple-table normal-font-style">
     <table id="arrow-icon">
         <tr>
           <th>showArrowIcon value</th>
@@ -30,9 +30,6 @@ The following table demonstrates how the **showArrowIcon** option affects the **
 <style>
     #arrow-icon {
         text-align: center;
-    }
-    #arrow-icon code {
-        font-style: normal;
     }
     #arrow-icon td, th {
         background-color: white;

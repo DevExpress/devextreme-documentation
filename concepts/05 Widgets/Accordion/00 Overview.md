@@ -7,9 +7,11 @@ The **Accordion** widget contains several panels displayed one under another. Th
 The following code adds a simple **Accordion** to your page. Note that each data source object contains the **title** field, whose value goes to the title of the panel. 
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->var accordionData = [{
+    <!--JavaScript-->
+    var accordionData = [{
         title: "Personal Data",
         firstName: "John",
         lastName: "Smith",
@@ -36,7 +38,8 @@ The following code adds a simple **Accordion** to your page. Note that each data
         });
     });
 
-    <!--HTML--><div id="accordionContainer"></div>
+    <!--HTML-->
+    <div id="accordionContainer"></div>
 
 ##### Angular
 
@@ -81,6 +84,113 @@ The following code adds a simple **Accordion** to your page. Note that each data
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxAccordion
+            :data-source="accordionData"
+            item-template="item">
+            <template #item="{ data }">
+                <div>
+                    <p v-for="key in getItemKeys(data)">
+                        {{key}}: {{data[key]}}
+                    </p>
+                </div>
+            </template>
+        </DxAccordion>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxAccordion from "devextreme-vue/accordion";
+
+    export default {
+        components: {
+            DxAccordion
+        },
+        data() {
+            return {
+                accordionData: [{
+                    title: "Personal Data",
+                    firstName: "John",
+                    lastName: "Smith",
+                    birthYear: 1986
+                }, {
+                    title: "Contacts",
+                    phone: "(555)555-5555",
+                    email: "John.Smith@example.com"
+                }, {
+                    title: "Address",
+                    state: "CA",
+                    city: "San Francisco",
+                    street: "Stanford Ave"
+                }]
+            };
+        },
+        methods: {
+            getItemKeys: function(item) {
+                return Object.keys(item);
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Accordion } from 'devextreme-react/accordion';
+
+    const accordionData = [{
+        title: "Personal Data",
+        firstName: "John",
+        lastName: "Smith",
+        birthYear: 1986
+    }, {
+        title: "Contacts",
+        phone: "(555)555-5555",
+        email: "John.Smith@example.com"
+    }, {
+        title: "Address",
+        state: "CA",
+        city: "San Francisco",
+        street: "Stanford Ave"
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Accordion
+                    dataSource={accordionData}
+                    itemRender={this.renderItem}
+                />
+            );
+        }
+
+        renderItem(itemData) {
+            return (
+                <div>
+                    { 
+                        Object.keys(itemData).map(key => {
+                            return (
+                                <p key={key}>
+                                    {key}: {itemData[key]}
+                                </p> 
+                            )}
+                        )
+                    }
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -42,8 +42,12 @@ Being called with the *field* parameter only, this method returns the current co
         });
     });
 
-With Angular, bind the option to change to a component or element property.
-    
+With Angular, Vue, or React, bind the option that should be changed to a component property.
+
+---
+
+##### Angular
+
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
@@ -78,6 +82,108 @@ With Angular, bind the option to change to a component or element property.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxForm :form-data="employee">
+                <DxSimpleItem data-field="firstName" />
+                <DxSimpleItem data-field="lastName" />
+                <DxGroupItem caption="Contacts">
+                    <DxSimpleItem data-field="phone" :visible="isPhoneVisible" />
+                    <DxSimpleItem data-field="email" />
+                </DxGroupItem>
+            </DxForm>
+            <DxCheckBox
+                text="Show the Phone Number"
+                :value.sync="isPhoneVisible" />
+        </div>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
+    import { DxCheckBox } from 'devextreme-vue/check-box';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    export default {
+        components: {
+            DxForm, DxSimpleItem, DxGroupItem, DxCheckBox
+        },
+        data() {
+            return {
+                employee,
+                isPhoneVisible: true
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
+    import { CheckBox } from 'devextreme-react/check-box';
+
+    const employee = {
+        firstName: 'John',
+        lastName: 'Heart',
+        phone: '+1(213) 555-9392',
+        email: 'jheart@dx-email.com'
+    };
+
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.state = {
+                isPhoneVisible: true
+            };
+            this.onCheckBoxValueChanged = this.onCheckBoxValueChanged.bind(this);
+        };
+
+        render() {
+            return (
+                <div>
+                    <Form formData={employee}>
+                        <SimpleItem dataField="firstName" />
+                        <SimpleItem dataField="lastName" />
+                        <GroupItem caption="Contacts">
+                            <SimpleItem dataField="phone" visible={this.state.isPhoneVisible} />
+                            <SimpleItem dataField="email" />
+                        </GroupItem>
+                    </Form>
+                    <CheckBox
+                        text="Show the Phone Number"
+                        value={this.state.isPhoneVisible}
+                        onValueChanged={this.onCheckBoxValueChanged} />
+                </div>
+            );
+        }
+
+        onCheckBoxValueChanged(e) {
+            this.setState({
+                isPhoneVisible: e.value
+            });            
+        }
+    }
+
+    export default App;
+
+---
 
 #####See Also#####
 #include common-link-callmethods

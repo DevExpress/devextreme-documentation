@@ -138,7 +138,7 @@ If you need to specify request headers or process response data, use the [Custom
 
 ---
 
-The **CustomStore** requires requires thorough configuration if data is processed on the server. See the [Custom Sources](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/035%20Custom%20Sources '/Documentation/Guide/Widgets/TreeList/Data_Binding/Custom_Sources/') topic for more details.
+The **CustomStore** requires requires thorough configuration if data is processed on the server. See the [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/') topic for more details.
 
 #####See Also#####
 - [TreeList - Access the DataSource](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/040%20Access%20the%20DataSource.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Access_the_DataSource/')

@@ -81,15 +81,17 @@ For a minor customization of **Scheduler** appointments, you can define [specifi
         data() {
             return {
                 currentDate: new Date(2016, 4, 25),
-                appointments: [{ 
-                    text: 'Meet with a customer', 
-                    startDate: new Date(2016, 4, 25, 1, 30),
-                    endDate: new Date(2016, 4, 25, 3, 30)
-                }, { 
-                    text: 'Discuss results', 
-                    startDate: new Date(2016, 4, 25, 9, 0),
-                    endDate: new Date(2016, 4, 25, 10, 0)
-                }, // ...
+                appointments: [{
+                    text: "Website Re-Design Plan",
+                    startDate: new Date(2016, 4, 25, 9, 30),
+                    endDate: new Date(2016, 4, 25, 11, 30)
+                }, {
+                    text: "Book Flights to San Fran for Sales Trip",
+                    startDate: new Date(2016, 4, 25, 12, 0),
+                    endDate: new Date(2016, 4, 25, 13, 0),
+                    hidden: true
+                }, 
+                // ...
                 ];
             }
         }
@@ -106,15 +108,17 @@ For a minor customization of **Scheduler** appointments, you can define [specifi
 
     import Scheduler from 'devextreme-react/scheduler';
 
-    const appointments = [{ 
-        text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 25, 1, 30),
-        endDate: new Date(2016, 4, 25, 3, 30)
-    }, { 
-        text: 'Discuss results', 
-        startDate: new Date(2016, 4, 25, 9, 0),
-        endDate: new Date(2016, 4, 25, 10, 0)
-    }, // ...
+    const appointments = [{
+        text: "Website Re-Design Plan",
+        startDate: new Date(2016, 4, 25, 9, 30),
+        endDate: new Date(2016, 4, 25, 11, 30)
+    }, {
+        text: "Book Flights to San Fran for Sales Trip",
+        startDate: new Date(2016, 4, 25, 12, 0),
+        endDate: new Date(2016, 4, 25, 13, 0),
+        hidden: true
+    }, 
+    // ...
     ];
 
     class App extends React.Component {
@@ -271,15 +275,18 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         data() {
             return {
                 currentDate: new Date(2016, 4, 25),
-                appointments: [{ 
-                    text: 'Meet with a customer', 
-                    startDate: new Date(2016, 4, 25, 1, 30),
-                    endDate: new Date(2016, 4, 25, 3, 30)
-                }, { 
-                    text: 'Discuss results', 
-                    startDate: new Date(2016, 4, 25, 9, 0),
-                    endDate: new Date(2016, 4, 25, 10, 0)
-                }, // ...
+                appointments: [{
+                    movie: "His Girl Friday",
+                    price: 5,
+                    startDate: new Date(2016, 4, 24, 9, 10),
+                    endDate: new Date(2016, 4, 24, 11, 20)
+                }, {
+                    movie: "Royal Wedding",
+                    price: 10,
+                    startDate: new Date(2016, 4, 24, 10, 5),
+                    endDate: new Date(2016, 4, 24, 11, 30)
+                }, 
+                // ...
                 ];
             }
         }
@@ -296,15 +303,18 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
     import Scheduler from 'devextreme-react/scheduler';
 
-    const appointments = [{ 
-        text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 25, 1, 30),
-        endDate: new Date(2016, 4, 25, 3, 30)
-    }, { 
-        text: 'Discuss results', 
-        startDate: new Date(2016, 4, 25, 9, 0),
-        endDate: new Date(2016, 4, 25, 10, 0)
-    }, // ...
+    const appointments = [{
+        movie: "His Girl Friday",
+        price: 5,
+        startDate: new Date(2016, 4, 24, 9, 10),
+        endDate: new Date(2016, 4, 24, 11, 20)
+    }, {
+        movie: "Royal Wedding",
+        price: 10,
+        startDate: new Date(2016, 4, 24, 10, 5),
+        endDate: new Date(2016, 4, 24, 11, 30)
+    }, 
+    // ...
     ];
 
     const renderAppointment = (model) => {

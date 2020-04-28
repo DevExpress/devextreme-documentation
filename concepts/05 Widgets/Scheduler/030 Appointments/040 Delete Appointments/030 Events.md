@@ -68,13 +68,13 @@ To execute certain commands before or after an appointment was deleted, handle t
             return {
                 // ...
             },
-            methods: {
-                onAppointmentDeleting: (e) => {
-                    // Handler of the "appointmentDeleting" event
-                },
-                onAppointmentDeleted: (e) => {
-                    // Handler of the "appointmentDeleted" event
-                }
+        },
+        methods: {
+            onAppointmentDeleting: (e) => {
+                // Handler of the "appointmentDeleting" event
+            },
+            onAppointmentDeleted: (e) => {
+                // Handler of the "appointmentDeleted" event
             }
         }
     }

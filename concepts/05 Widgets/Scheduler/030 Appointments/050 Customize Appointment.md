@@ -319,10 +319,10 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
     const renderAppointment = (model) => {
         return (
-            <React.fragment>
+            <React.Fragment>
                 <i>{{model.appointmentData.movie}}</i>
                 <p>Price: ${{model.appointmentData.price}}</p>
-            </React.fragment>
+            </React.Fragment>
         );
     }
 

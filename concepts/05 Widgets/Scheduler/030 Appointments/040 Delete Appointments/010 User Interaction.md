@@ -46,7 +46,7 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
     <template>
         <div>
             <DxScheduler
-                :recurrence-edit-mode="recurrenceEditMode" /> <!-- or 'series' | 'dialog' -->
+                recurrence-edit-mode="occurrence" /> <!-- or 'series' | 'dialog' -->
             />
         </div>
     </template>
@@ -60,11 +60,6 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
     export default {
         components: {
             DxScheduler
-        },
-        data() {
-            return {
-                recurrenceEditMode: 'occurrence' // or 'series' | 'dialog'
-            }
         }
     }
     </script>
@@ -82,7 +77,7 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
     class App extends React.Component {
         render() {
             return (
-                <Scheduler recurrenceEditMode="occurrence" />
+                <Scheduler recurrenceEditMode="occurrence" /> {/* or 'series' | 'dialog' */}
             );
         }
     }

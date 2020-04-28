@@ -40,6 +40,54 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxScheduler
+                :recurrence-edit-mode="recurrenceEditMode"
+            />
+        </div>
+    </template>
+    
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                recurrenceEditMode: 'occurrence' // or 'series' | 'dialog'
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler recurrenceEditMode="occurrence" />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 To prevent a user from deleting an appointment, set the **editing**.[allowDeleting](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowDeleting.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDeleting') option to **false**.
@@ -76,5 +124,54 @@ To prevent a user from deleting an appointment, set the **editing**.[allowDeleti
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ... >
+            <DxEditing :allow-deleting="true" />
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler, { DxEditing } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler,
+            DxEditing
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler, { Editing } from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler ... >
+                    <Editing allowDeleting={true} />
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
 
 ---

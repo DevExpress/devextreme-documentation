@@ -6,7 +6,7 @@ To specify what views are available within the switcher, use the [views](/api-re
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -16,7 +16,7 @@ To specify what views are available within the switcher, use the [views](/api-re
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-scheduler ...

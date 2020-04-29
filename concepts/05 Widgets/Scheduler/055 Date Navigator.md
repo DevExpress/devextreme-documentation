@@ -56,6 +56,61 @@ You can specify the range of available dates in the [min](/api-reference/10%20UI
     })
     export class AppModule { }
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :min="min"
+            :max="max"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                min: new Date(2018, 2, 3),
+                max: new Date(2018, 4, 3)
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+    
+    const min = new Date(2018, 2, 3);
+
+    const max = new Date(2018, 4, 3);
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    min={min}
+                    max={max}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 Use the [customizeDateNavigatorText](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/customizeDateNavigatorText.md 'Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#customizeDateNavigatorText') function to customize the navigator's text. Refer to the function's description for an example.

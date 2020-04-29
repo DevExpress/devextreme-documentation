@@ -6,15 +6,6 @@ You can generate the application with the [DevExtreme CLI](/concepts/Common/DevE
     cd app-name
     npm run start
 
-[note]
-
-npx is available with npm v5.2 and later. If you have an earlier version, <a href="https://docs.npmjs.com/try-the-latest-stable-version-of-npm" target="_blank">upgrade npm</a> or install the DevExtreme CLI globally and run the command from the installed package:
-
-    npm i -g devextreme-cli
-    devextreme new angular-app app-name
-
-[/note]
-
 The application already contains the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light) and [Form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/Angular/Light) components. The following instructions show how to employ any other DevExtreme component using the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/Angular/Light) component as an example:
 
 1. Import the DevExtreme component's module in the `NgModule` where you are going to use it. Open the `src/app/app-routing.module.ts` file and add the following code:

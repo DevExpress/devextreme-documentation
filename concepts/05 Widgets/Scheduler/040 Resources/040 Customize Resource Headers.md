@@ -150,7 +150,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
 
     export default {
         components: {
-            DxScheduler
+            DxScheduler,
+            DxResource
         },
         data() {
             return {
@@ -202,9 +203,9 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     
     const groups = ['roomId'];
 
-    const renderResourceCellRender = (model) => {
+    const renderResourceCell = (model) => {
         return (
-            <i style="color: blue">{model.data.text}</i>
+            <i style={{color: "blue"}}>{model.data.text}</i>
         );
     }
 
@@ -215,12 +216,12 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
                     dataSource={appointments}
                     defaultCurrentDate={new Date(2016, 4, 24)}
                     groups={groups}
-                    resourceCellRender={renderResourceCellRender}
+                    resourceCellRender={renderResourceCell}
                 >
-                <Resource
-                  fieldExpr="roomId"
-                  dataSource={resources}
-                />
+                    <Resource
+                      fieldExpr="roomId"
+                      dataSource={resources}
+                    />
               </Scheduler>
             );
         }

@@ -99,6 +99,93 @@ When a user clicks an appointment, the **Scheduler** shows a tooltip that can be
 
     ko.applyBindings(viewModel);
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="appointments"
+            :current-date="currentDate"
+            appointment-tooltip-template="appointmentTooltipTemplate"
+        >
+            <template #appointmentTooltipTemplate="{ data }">
+                <div style="height: 100px">
+                    <i>{{data.appointmentData.text}} ({{data.appointmentData.year}})</i>
+                    <p><img :src="data.appointmentData.img" style="height: 80px"></p>
+                </div>
+            </template>
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 25),
+                appointments: [{
+                    text: "His Girl Friday",
+                    year: 1940,
+                    img: "images/movies/HisGirlFriday.jpg",
+                    startDate: new Date(2016, 4, 24, 9, 10),
+                    endDate: new Date(2016, 4, 24, 11, 20)
+                }, 
+                // ...
+                ];
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const appointments = [{
+        text: "His Girl Friday",
+        year: 1940,
+        img: "images/movies/HisGirlFriday.jpg",
+        startDate: new Date(2016, 4, 24, 9, 10),
+        endDate: new Date(2016, 4, 24, 11, 20)
+    }, 
+    // ...
+    ];
+
+    const renderAppointmentTooltip = (model) => {
+        return (
+            <div style={{height: '100px'}}>
+                <i>{model.appointmentData.text} ({model.appointmentData.year})</i>
+                <p><img src={model.appointmentData.img} style={{height: '80px'}}></p>
+            </div>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={appointments}
+                    defaultCurrentDate={new Date(2016, 4, 25)}
+                    appointmentTooltipRender={renderAppointmentTooltip}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 If you use only jQuery, combine HTML markup for tooltips manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTooltipTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#appointmentTooltipTemplate') callback function as shown in the following code.

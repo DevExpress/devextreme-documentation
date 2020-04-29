@@ -47,7 +47,6 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
         <div>
             <DxScheduler
                 recurrence-edit-mode="occurrence" /> <!-- or 'series' | 'dialog' -->
-            />
         </div>
     </template>
     

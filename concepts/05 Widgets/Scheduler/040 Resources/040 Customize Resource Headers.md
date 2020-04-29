@@ -122,6 +122,111 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
 
     ko.applyBindings(viewModel);
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="appointments"
+            :current-date="currentDate"
+            :groups="groups"
+            resource-cell-template="resourceCellTemplate"
+        >
+            <DxResource
+              :data-source="resources"
+              field-expr="roomId"
+            />
+            
+            <template #resourceCellTemplate="{ data }">
+                <i style="color: blue">{{data.text}}</i>
+            </template>
+        </DxScheduler>
+    </template>
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler, DxResource } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 24),
+                appointments: [{
+                    text: "Meeting",
+                    startDate: new Date(2016, 4, 24, 9, 10),
+                    endDate: new Date(2016, 4, 24, 11, 20),
+                    roomId: 1
+                }, 
+                // ...
+                ],
+                resources: [
+                    { id: 1, text: "Room101", color: "green" },
+                    { id: 2, text: "Room102", color: "red" },
+                    // ...
+                ],
+                groups: ["roomId"]
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler, { Resource } from 'devextreme-react/scheduler';
+
+    const appointments = [{
+        text: 'His Girl Friday',
+        year: 1940,
+        img: 'images/movies/HisGirlFriday.jpg',
+        startDate: new Date(2016, 4, 24, 9, 10),
+        endDate: new Date(2016, 4, 24, 11, 20)
+    }, 
+    // ...
+    ];
+    
+    const resources = [
+        { id: 1, text: 'Room101', color: 'green' },
+        { id: 2, text: 'Room102', color: 'red' },
+        // ...
+    ];
+    
+    const groups = ['roomId'];
+
+    const renderResourceCellRender = (model) => {
+        return (
+            <i style="color: blue">{model.data.text}</i>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={appointments}
+                    defaultCurrentDate={new Date(2016, 4, 24)}
+                    groups={groups}
+                    resourceCellRender={renderResourceCellRender}
+                >
+                <Resource
+                  fieldExpr="roomId"
+                  dataSource={resources}
+                />
+              </Scheduler>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, use the [resourceCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.

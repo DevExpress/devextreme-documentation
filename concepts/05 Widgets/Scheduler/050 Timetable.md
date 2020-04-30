@@ -370,10 +370,10 @@ For a more detailed customization, define custom templates for cells, time scale
             return <div style={{ width: '100%', height: 40, backgroundColor: 'rgba(86, 202, 133, 0.1)' }}></div>;
         }
         renderDateCell(data, index, element) {
-          return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
+            return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
         }
         renderTimeCell(data, index, element) {
-          return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
+            return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
         }
     }
 

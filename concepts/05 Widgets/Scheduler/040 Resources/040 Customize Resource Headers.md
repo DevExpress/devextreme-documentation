@@ -5,7 +5,7 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
 #####Angular
 
     <!--HTML-->
-    <dx-scheduler 
+    <dx-scheduler
         [dataSource]="schedulerData"
         [currentDate]="currentDate"
         [groups]="['roomId']"
@@ -23,12 +23,12 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        schedulerData = [{ 
+        schedulerData = [{
             text: "Meeting",
             startDate: new Date(2016, 4, 24, 9, 10),
             endDate: new Date(2016, 4, 24, 11, 20),
             roomId: 1
-        }, 
+        },
         // ...
         ];
         rooms = [
@@ -45,6 +45,105 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="schedulerData"
+            :current-date="currentDate"
+            :groups="['roomId']"
+            resource-cell-template="ResourceTemplateSlot"
+        >
+            <DxResource
+                field-expr="roomId"
+                :data-source="rooms" />
+
+            <template #ResourceTemplateSlot="appointment">
+                <i style="color: blue">{{appointment.text}}</i>
+            </template>
+
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler, { DxResource } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler,
+            DxResource
+        },
+        data() {
+            return {
+                schedulerData: [{
+                    text: "Meeting",
+                    startDate: new Date(2016, 4, 24, 9, 10),
+                    endDate: new Date(2016, 4, 24, 11, 20),
+                    roomId: 1
+                },
+                // ...
+                ],
+                rooms: [
+                    { id: 1, text: 'Room101', color: 'green' },
+                    { id: 2, text: 'Room102', color: 'red' },
+                    // ...
+                ],
+                currentDate: new Date(2016, 4, 24)
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler, { Resource } from 'devextreme-react/scheduler';
+
+    const schedulerData: [{
+        text: 'Meeting',
+        startDate: new Date(2016, 4, 24, 9, 10),
+        endDate: new Date(2016, 4, 24, 11, 20),
+        roomId: 1
+    },
+    // ...
+    ];
+    const rooms: [
+        { id: 1, text: 'Room101', color: 'green' },
+        { id: 2, text: 'Room102', color: 'red' },
+        // ...
+    ];
+    const currentDate: new Date(2016, 4, 24);
+    const renderResourceCell = function(appointment) {
+        return <i style='color: blue'>{{appointment.text}}</i>;
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={schedulerData}
+                    currentDate={currentDate}
+                    groups={['roomId']}
+                    resourceCellRender='renderResourceCell'
+                >
+                    <Resource
+                        fieldExpr='roomId'
+                        dataSource={rooms} />
+                <Scheduler/>
+            );
+        }
+    }
+    export default App;
 
 #####**AngularJS**
 
@@ -70,18 +169,18 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
                 startDate: new Date(2016, 4, 24, 9, 10),
                 endDate: new Date(2016, 4, 24, 11, 20),
                 roomId: 1
-            }, 
+            },
             // ...
             ];
-            $scope.roomResource = { 
-                fieldExpr: 'roomId', 
+            $scope.roomResource = {
+                fieldExpr: 'roomId',
                 dataSource: [
                     { id: 1, text: 'Room101', color: 'green' },
                     { id: 2, text: 'Room102', color: 'red' },
                     // ...
-                ] 
+                ]
             };
-            $scope.currentDate = new Date(2016, 4, 24); 
+            $scope.currentDate = new Date(2016, 4, 24);
         });
 
 [note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
@@ -99,23 +198,23 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
             <i style="color: blue" data-bind="text: text"></i>
         </div>
     </div>
-    
+
     <!--JavaScript-->var viewModel= {
         schedulerData: [{
             text: "Meeting",
             startDate: new Date(2016, 4, 24, 9, 10),
             endDate: new Date(2016, 4, 24, 11, 20),
             roomId: 1
-        }, 
+        },
         // ...
         ],
-        roomResource: { 
-            fieldExpr: 'roomId', 
+        roomResource: {
+            fieldExpr: 'roomId',
             dataSource: [
                 { id: 1, text: 'Room101', color: 'green' },
                 { id: 2, text: 'Room102', color: 'red' },
                 // ...
-            ] 
+            ]
         },
         currentDate: new Date(2016, 4, 24)
     };
@@ -131,16 +230,16 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         startDate: new Date(2016, 4, 24, 9, 10),
         endDate: new Date(2016, 4, 24, 11, 20),
         roomId: 1
-    }, 
+    },
     // ...
     ];
-    var roomResource = { 
-        fieldExpr: 'roomId', 
+    var roomResource = {
+        fieldExpr: 'roomId',
         dataSource: [
             { id: 1, text: 'Room101', color: 'green' },
             { id: 2, text: 'Room102', color: 'red' },
             // ...
-        ] 
+        ]
     };
 
     $(function () {

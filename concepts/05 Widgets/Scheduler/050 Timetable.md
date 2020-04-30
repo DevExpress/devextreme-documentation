@@ -90,15 +90,15 @@ The **Scheduler** widget allows you to customize its timetable. You can specify 
         data() {
             return {
                 dataSource: [{
-                        text: 'Website Re-Design Plan',
-                        startDate: new Date(2016, 4, 25, 9, 30),
-                        endDate: new Date(2016, 4, 25, 11, 30)
-                    }, {
-                        text: 'Book Flights to San Fran for Sales Trip',
-                        startDate: new Date(2016, 4, 25, 12, 0),
-                        endDate: new Date(2016, 4, 25, 13, 0)
-                    },
-                    // ...
+                    text: 'Website Re-Design Plan',
+                    startDate: new Date(2016, 4, 25, 9, 30),
+                    endDate: new Date(2016, 4, 25, 11, 30)
+                }, {
+                    text: 'Book Flights to San Fran for Sales Trip',
+                    startDate: new Date(2016, 4, 25, 12, 0),
+                    endDate: new Date(2016, 4, 25, 13, 0)
+                },
+                // ...
                 ],
                 currentDate: new Date(2016, 4, 25)
             };
@@ -116,15 +116,15 @@ The **Scheduler** widget allows you to customize its timetable. You can specify 
     import { Scheduler } from 'devextreme-react/scheduler';
 
     const dataSource = [{
-            text: 'Website Re-Design Plan',
-            startDate: new Date(2016, 4, 25, 9, 30),
-            endDate: new Date(2016, 4, 25, 11, 30)
-        }, {
-            text: 'Book Flights to San Fran for Sales Trip',
-            startDate: new Date(2016, 4, 25, 12, 0),
-            endDate: new Date(2016, 4, 25, 13, 0)
-        },
-        // ...
+        text: 'Website Re-Design Plan',
+        startDate: new Date(2016, 4, 25, 9, 30),
+        endDate: new Date(2016, 4, 25, 11, 30)
+    }, {
+        text: 'Book Flights to San Fran for Sales Trip',
+        startDate: new Date(2016, 4, 25, 12, 0),
+        endDate: new Date(2016, 4, 25, 13, 0)
+    },
+    // ...
     ];
 
     const currentDate = new Date(2016, 4, 25);
@@ -305,7 +305,7 @@ For a more detailed customization, define custom templates for cells, time scale
             time-cell-template="timeCellTemplate"
             current-view="week"
         >
-            <template #dataCellTemplate="data">
+            <template #dataCellTemplate>
                 <div v-bind:style="styles"></div>
             </template>
             <template #dateCellTemplate="{ data }">
@@ -358,29 +358,22 @@ For a more detailed customization, define custom templates for cells, time scale
                     dataSource={schedulerData}
                     defaultCurrentDate={currentDate}
                     showAllDayPanel={false}
-                    dataCellTemplate={this.dataCellTemplate}
-                    dateCellTemplate={this.dateCellTemplate}
-                    timeCellTemplate={this.timeCellTemplate}
+                    dataCellRender={this.renderDataCell}
+                    dateCellRender={this.renderDateCell}
+                    timeCellRender={this.renderTimeCell}
                     defaultCurrentView="week"
                 />
             );
         }
 
-        dataCellTemplate(data, index, element) {
-            return $('<div />')
-                .css('width', '100%')
-                .css('height', '40px')
-                .css('background-color', 'rgba(86, 202, 133, 0.1)');
+        renderDataCell(data, index, element) {
+            return <div style={{ width: '100%', height: 40, backgroundColor: 'rgba(86, 202, 133, 0.1)' }}></div>;
         }
-        dateCellTemplate(data, index, element) {
-            element.text(data.text)
-                .css('color', 'green')
-                .css('font-weight', 'bold');
+        renderDateCell(data, index, element) {
+          return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
         }
-        timeCellTemplate(data, index, element) {
-            element.text(data.text)
-                .css('color', 'green')
-                .css('font-style', 'italic');
+        renderTimeCell(data, index, element) {
+          return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
         }
     }
 

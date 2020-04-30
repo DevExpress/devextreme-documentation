@@ -16,7 +16,7 @@ The following code defines three views: the first is not customized, the second 
         ownerId: [1],
         startDate: new Date(2016, 1, 1, 11, 30),
         endDate: new Date(2016, 1, 1, 14, 15)
-    }, 
+    },
     // ...
     ];
 
@@ -73,13 +73,13 @@ The following code defines three views: the first is not customized, the second 
             ownerId: [1],
             startDate: new Date(2016, 1, 1, 11, 30),
             endDate: new Date(2016, 1, 1, 14, 15)
-        }, 
+        },
         // ...
         ];
         currentDate = new Date(2016, 1, 1);
         views = [
-            "month", 
-            { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' }, 
+            "month",
+            { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' },
             { type: "workWeek", groups: ["ownerId"] }
         ];
         resources = [{
@@ -97,6 +97,114 @@ The following code defines three views: the first is not customized, the second 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="schedulerData"
+            :current-date="currentDate"
+            :views="views"
+            :resources="resources"
+            time-cell-template="TimeCellTemplateSlot">
+
+            <template #TimeCellTemplateSlot="appointment">
+                <i style="color: green">{{appointment.text}}</i>
+            </template>
+        />
+    </template>
+
+    <script>
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                schedulerData: [{
+                    text: "Google AdWords Strategy",
+                    ownerId: [2],
+                    startDate: new Date(2016, 1, 1, 9, 0),
+                    endDate: new Date(2016, 1, 1, 10, 30)
+                }, {
+                    text: "New Brochures",
+                    ownerId: [1],
+                    startDate: new Date(2016, 1, 1, 11, 30),
+                    endDate: new Date(2016, 1, 1, 14, 15)
+                },
+                // ...
+                ],
+                currentDate: new Date(2016, 1, 1),
+                views: [
+                    "month",
+                    { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' },
+                    { type: "workWeek", groups: ["ownerId"] }
+                ],
+                resources: [{
+                    fieldExpr: "ownerId",
+                    dataSource: [
+                        { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
+                        { text: "John Heart", id: 2, color: "#56ca85" }
+                    ]
+                }]
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const schedulerData: [{
+            text: 'Google AdWords Strategy',
+            ownerId: [2],
+            startDate: new Date(2016, 1, 1, 9, 0),
+            endDate: new Date(2016, 1, 1, 10, 30)
+        }, {
+            text: 'New Brochures',
+            ownerId: [1],
+            startDate: new Date(2016, 1, 1, 11, 30),
+            endDate: new Date(2016, 1, 1, 14, 15)
+        },
+        // ...
+    ];
+    const currentDate: new Date(2016, 1, 1);
+    const views: [
+        'month',
+        { type: 'day', cellDuration: 60, timeCellTemplate: 'timeCellTemplate' },
+        { type: 'workWeek', groups: ['ownerId'] }
+    ];
+    const resources: [{
+        fieldExpr: 'ownerId',
+        dataSource: [
+            { text: 'Samantha Bright', id: 1, color: '#cb6bb2' },
+            { text: 'John Heart', id: 2, color: '#56ca85' }
+        ]
+    }];
+    const renderTimeCell = function(appointment) {
+        return <i style='color: green'>{{appointment.text}}</i>;
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={schedulerData}
+                    currentDate={currentDate}
+                    views={views}
+                    resources={resources}
+                    timeCellRender='renderTimeCell' />
+            );
+        }
+    }
+    export default App;
 
 ---
 

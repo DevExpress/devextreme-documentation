@@ -81,7 +81,7 @@ To group appointments by resources, assign an array to the [groups](/api-referen
             <DxResource
                 fieldExpr="teacherId"
                 :data-source="teacherResources"/>
-        <DxScheduler/>
+        </DxScheduler>
     </template>
 
     <script>

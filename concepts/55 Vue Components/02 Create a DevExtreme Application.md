@@ -6,15 +6,6 @@ You can generate the application with the [DevExtreme CLI](/concepts/Common/DevE
     cd app-name
     npm run serve
 
-[note]
-
-npx is available with npm v5.2 and later. If you have an earlier version, <a href="https://docs.npmjs.com/try-the-latest-stable-version-of-npm" target="_blank">upgrade npm</a> or install the DevExtreme CLI globally and run the command from the installed package:
-
-    npm i -g devextreme-cli
-    devextreme new vue-app app-name
-
-[/note]
-
 The application already contains the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Vue/Light) and [Form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/Vue/Light) components. You can find their configurations in the `src/views/display-data.vue` and `src/views/profile.vue` files correspondingly.
 
 The following resources provide more information about DevExtreme Vue components:

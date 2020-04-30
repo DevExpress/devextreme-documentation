@@ -8,7 +8,7 @@ A user switches between views with the [View Switcher](/concepts/05%20Widgets/Sc
 
     <!--JavaScript-->
     $(function(){
-        $("#schedulerContainer").dxScheduler({ 
+        $("#schedulerContainer").dxScheduler({
             // ...
             views: ['day', 'week', 'agenda'],
             currentView: 'week'
@@ -36,6 +36,46 @@ A user switches between views with the [View Switcher](/concepts/05%20Widgets/Sc
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :views="['day', 'week', 'agenda']"
+            currentView="week"
+        />
+    </template>
+
+    <script>
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            // ...
+            DxScheduler
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    views={['day', 'week', 'agenda']}
+                    currentView='week'
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

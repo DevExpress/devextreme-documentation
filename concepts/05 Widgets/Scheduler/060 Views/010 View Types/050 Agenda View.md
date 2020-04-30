@@ -14,7 +14,7 @@ By default, the **agenda** view displays appointments for seven dates at a time 
 
     <!--JavaScript-->
     $(function() {
-        $("#schedulerContainer").dxScheduler({ 
+        $("#schedulerContainer").dxScheduler({
             // ...
             views: [{
                 type: "agenda",
@@ -33,7 +33,7 @@ By default, the **agenda** view displays appointments for seven dates at a time 
     <!--TypeScript-->
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
-    export class AppComponent  { 
+    export class AppComponent  {
         // ...
         agendaView = [{
             type: "agenda",
@@ -48,9 +48,61 @@ By default, the **agenda** view displays appointments for seven dates at a time 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :views="agendaView"
+        />
+    </template>
+
+    <script>
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            // ...
+            DxScheduler
+        },
+        data() {
+            return {
+                agendaView: [{
+                    type: "agenda",
+                    agendaDuration: 5
+                }]
+            }
+        }
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const agendaView = [{
+        type: 'agenda',
+        agendaDuration: 5
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    views={agendaView}
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
-If you [group appointmetns by resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/'), the resource headers are located at the left side of the date scale. 
+If you [group appointmetns by resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/'), the resource headers are located at the left side of the date scale.
 
 ![Resource Headers](/images/UiWidgets/Scheduler_Agenda_Resouce_Headers.png)
 

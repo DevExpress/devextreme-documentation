@@ -1,10 +1,10 @@
-The **Scheduler** widget allows you to assign appointments to a set of predefined resources. Consider the following example: in an educational center lectures are held in two rooms. In scheduling terms, a lecture is an appointment, a room is a resource instance, and all rooms are considered the resource kind. 
+The **Scheduler** widget allows you to assign appointments to a set of predefined resources. Consider the following example: in an educational center lectures are held in two rooms. In scheduling terms, a lecture is an appointment, a room is a resource instance, and all rooms are considered the resource kind.
 
 To define resource kinds, assign an array of objects specifying them to the [resources](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/') option. Each object must have at least the following fields.
 
-- [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource')  
+- [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource')
     All available resource instances (for example, room101, room102). For information on different techniques that you can use to provide data for resources, see the [Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/Widgets/Scheduler/Data_Binding/') topic.
-- [fieldExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/fieldExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr')  
+- [fieldExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/fieldExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr')
     The data field that binds an appointment to a resource instance.
 
 <!---->
@@ -16,7 +16,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
     <!--JavaScript-->
     var rooms = [
         // Resource instances
-        { 
+        {
             id: 1,              // Resource identifier
             text: "Room101",    // Resource name
             color: "red"        // Color for indicating appointments that use this resource
@@ -34,8 +34,8 @@ To define resource kinds, assign an array of objects specifying them to the [res
     $(function() {
         $("#schedulerContainer").dxScheduler({
             // ...
-            resources: [ 
-                // Definition of the first resource kind 
+            resources: [
+                // Definition of the first resource kind
                 {
                     dataSource: new DevExpress.data.DataSource({
                         store: {
@@ -45,9 +45,9 @@ To define resource kinds, assign an array of objects specifying them to the [res
                         paginate: false
                     }),
                     fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
-                    label: "Room"               // Label displayed for this resource kind in the appointment details form 
+                    label: "Room"               // Label displayed for this resource kind in the appointment details form
                 },
-                // Definition of the second resource kind 
+                // Definition of the second resource kind
                 {
                     dataSource: new DevExpress.data.DataSource({
                         store: {
@@ -57,9 +57,9 @@ To define resource kinds, assign an array of objects specifying them to the [res
                         paginate: false
                     }),
                     fieldExpr: "teacherId",
-                    valueExpr: "guid",          // Resource instance's field used instead of "id" 
-                    colorExpr: "clr",           // Resource instance's field used instead of "color" 
-                    displayExpr: "name",        // Resource instance's field used instead of "text" 
+                    valueExpr: "guid",          // Resource instance's field used instead of "id"
+                    colorExpr: "clr",           // Resource instance's field used instead of "color"
+                    displayExpr: "name",        // Resource instance's field used instead of "text"
                     label: "Teacher"
                 }
             ]
@@ -77,7 +77,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
         // ...
         rooms = [
             // Resource instances
-            { 
+            {
                 id: 1,              // Resource identifier
                 text: "Room101",    // Resource name
                 color: "red"        // Color for indicating appointments that use this resource
@@ -91,8 +91,8 @@ To define resource kinds, assign an array of objects specifying them to the [res
             { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
             // ...
         ];
-        resources = [ 
-            // Definition of the first resource kind 
+        resources = [
+            // Definition of the first resource kind
             {
                 dataSource: new DataSource({
                     store: {
@@ -102,9 +102,9 @@ To define resource kinds, assign an array of objects specifying them to the [res
                     paginate: false
                 }),
                 fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
-                label: "Room"               // Label displayed for this resource kind in the appointment details form 
+                label: "Room"               // Label displayed for this resource kind in the appointment details form
             },
-            // Definition of the second resource kind 
+            // Definition of the second resource kind
             {
                 dataSource: new DataSource({
                     store: {
@@ -114,9 +114,9 @@ To define resource kinds, assign an array of objects specifying them to the [res
                     paginate: false
                 }),
                 fieldExpr: "teacherId",
-                valueExpr: "guid",          // Resource instance's field used instead of "id" 
-                colorExpr: "clr",           // Resource instance's field used instead of "color" 
-                displayExpr: "name",        // Resource instance's field used instead of "text" 
+                valueExpr: "guid",          // Resource instance's field used instead of "id"
+                colorExpr: "clr",           // Resource instance's field used instead of "color"
+                displayExpr: "name",        // Resource instance's field used instead of "text"
                 label: "Teacher"
             }
         ];
@@ -133,6 +133,140 @@ To define resource kinds, assign an array of objects specifying them to the [res
     <dx-scheduler ...
         [resources]="resources">
     </dx-scheduler>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler :resources="resources" />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                rooms: [
+                    // Resource instances
+                    {
+                        id: 1,              // Resource identifier
+                        text: "Room101",    // Resource name
+                        color: "red"        // Color for indicating appointments that use this resource
+                    },
+                    { id: 2, text: "Room102", color: "green" },
+                    // ...
+                ],
+                teachers: [
+                    // Resource instances
+                    { guid: "6F96", name: "John Heart", clr: "yellow" },
+                    { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
+                    // ...
+                ],
+                resources: [
+                    // Definition of the first resource kind
+                    {
+                        dataSource: new DataSource({
+                            store: {
+                                type: "array",
+                                data: this.rooms
+                            },
+                            paginate: false
+                        }),
+                        fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
+                        label: "Room"               // Label displayed for this resource kind in the appointment details form
+                    },
+                    // Definition of the second resource kind
+                    {
+                        dataSource: new DataSource({
+                            store: {
+                                type: "array",
+                                data: this.teachers
+                            },
+                            paginate: false
+                        }),
+                        fieldExpr: "teacherId",
+                        valueExpr: "guid",          // Resource instance's field used instead of "id"
+                        colorExpr: "clr",           // Resource instance's field used instead of "color"
+                        displayExpr: "name",        // Resource instance's field used instead of "text"
+                        label: "Teacher"
+                    }
+                ]
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const rooms = [
+        // Resource instances
+        {
+            id: 1,              // Resource identifier
+            text: "Room101",    // Resource name
+            color: "red"        // Color for indicating appointments that use this resource
+        },
+        { id: 2, text: "Room102", color: "green" },
+        // ...
+    ];
+    const teachers = [
+        // Resource instances
+        { guid: "6F96", name: "John Heart", clr: "yellow" },
+        { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
+        // ...
+    ];
+    const resources = [
+        // Definition of the first resource kind
+        {
+            dataSource: new DataSource({
+                store: {
+                    type: "array",
+                    data: this.rooms
+                },
+                paginate: false
+            }),
+            fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
+            label: "Room"               // Label displayed for this resource kind in the appointment details form
+        },
+        // Definition of the second resource kind
+        {
+            dataSource: new DataSource({
+                store: {
+                    type: "array",
+                    data: this.teachers
+                },
+                paginate: false
+            }),
+            fieldExpr: "teacherId",
+            valueExpr: "guid",          // Resource instance's field used instead of "id"
+            colorExpr: "clr",           // Resource instance's field used instead of "color"
+            displayExpr: "name",        // Resource instance's field used instead of "text"
+            label: "Teacher"
+        }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler resources={resources} />
+            );
+        }
+    }
+    export default App;
 
 ---
 

@@ -21,19 +21,19 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
 
     <!--HTML-->
     <dx-slider
-        [label]="label"
+        <dxo-label
+            [visible]="true"
+            [format]="format"
+            position="bottom"
+        ></dxo-label>
     </dx-slider>
 
     <!--TypeScript-->
     import { DxSliderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        label = {
-            visible: true,
-            position: "bottom", // or "top"
-            format: function(value) {
-                return value + " units";
-            }
+        format = function(value) {
+            return value + " units";
         };
     }
     @NgModule({
@@ -134,20 +134,20 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
 
     <!--HTML-->
     <dx-slider
-        [tooltip]="tooltip"
+        <dxo-tooltip
+            [enabled]="true"
+            [format]="format"
+            showMode="always"
+            position="bottom"
+        ></dxo-tooltip>
     </dx-slider>
 
     <!--TypeScript-->
     import { DxSliderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        tooltip = {
-            enabled: true,
-            position: "bottom", // or "top"
-            showMode: "always", // or "onHover"
-            format: function(value) {
-                return value + " units";
-            }
+        format = function(value) {
+            return value + " units";
         };
     }
     @NgModule({

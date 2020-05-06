@@ -90,4 +90,4 @@ If you need to use a custom image in the **LoadIndicator**, assign its URL to th
 - [LoadIndicator API Reference](/api-reference/10%20UI%20Widgets/dxLoadIndicator '/Documentation/ApiReference/UI_Widgets/dxLoadIndicator/')
 - [LoadPanel - Overview](/concepts/05%20Widgets/LoadPanel/00%20Overview.md '/Documentation/Guide/Widgets/LoadPanel/Overview/')
 
-[tags]loadIndicator, load indicator, loading indicator, overview, overlay
+[tags]dxloadindicator, loadIndicator, load indicator, loading indicator, overview, overlay

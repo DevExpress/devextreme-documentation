@@ -53,4 +53,4 @@ The **RadioGroup** widget supports horizontal (default for tablets) and vertical
 - [RadioGroup - Keyboard Support](/concepts/05%20Widgets/RadioGroup/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/RadioGroup/Keyboard_Support')
 - [RadioGroup API Reference](/api-reference/10%20UI%20Widgets/dxRadioGroup '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/')
 
-[tags]radio group, radioGroup, layout, editor, overview
+[tags]dxradiogroup, radio group, radioGroup, layout, editor, overview

@@ -58,4 +58,4 @@ Note that all data source items follow the [Default Item Template](/api-referenc
 - [NavBar - Items Selection](/concepts/05%20Widgets/NavBar/10%20Items%20Selection.md '/Documentation/Guide/Widgets/NavBar/Items_Selection')
 - [NavBar API Reference](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Widgets/dxNavBar/')
 
-[tags]nav bar, navBar, navigation bar, collection container, collection widget, navigation, overview
+[tags]dxnavbar, nav bar, navBar, navigation bar, collection container, collection widget, navigation, overview

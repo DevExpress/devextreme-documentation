@@ -31,3 +31,5 @@ Finally, add some interactivity:
 #####See Also#####
 - [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
 - [Funnel API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/')
+
+[tags]dxfunnel

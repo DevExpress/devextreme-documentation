@@ -92,4 +92,4 @@ If the entered value falls out of the range, the widget sets the value to the lo
 - [NumberBox - Keyboard Support](/concepts/05%20Widgets/NumberBox/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/NumberBox/Keyboard_Support')
 - [NumberBox API Reference](/api-reference/10%20UI%20Widgets/dxNumberBox '/Documentation/ApiReference/UI_Widgets/dxNumberBox/')
 
-[tags]number box, numberBox, editor, overview
+[tags]dxnumberbox, number box, numberBox, editor, overview

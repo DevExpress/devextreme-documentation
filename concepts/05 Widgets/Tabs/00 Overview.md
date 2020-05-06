@@ -29,4 +29,4 @@ Note that all data source items in the code above follow the [Default Item Templ
 - [Tabs - Keyboard Support](/concepts/05%20Widgets/Tabs/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Tabs/Keyboard_Support')
 - [Tabs API Reference](/api-reference/10%20UI%20Widgets/dxTabs '/Documentation/ApiReference/UI_Widgets/dxTabs/')
 
-[tags]tabs, collection container, collection widget, navigation, overview
+[tags]dxtabs, tabs, collection container, collection widget, navigation, overview

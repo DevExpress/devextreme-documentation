@@ -70,4 +70,4 @@ There are several ways to specify the content of the **Popup**. Learn more in th
 - [Popup - Resize and Relocate](/concepts/05%20Widgets/Popup/15%20Resize%20and%20Relocate.md '/Documentation/Guide/Widgets/Popup/Resize_and_Relocate/')
 - [Popup API Reference](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Widgets/dxPopup/')
 
-[tags]popup, overview, overlay
+[tags]dxpopup, popup, overview, overlay

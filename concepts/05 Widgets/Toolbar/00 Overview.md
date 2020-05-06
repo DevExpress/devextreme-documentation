@@ -87,4 +87,4 @@ Note that all data source objects in the code above follow the [Default Item Tem
 - [Toolbar - Customize Item Appearance](/concepts/05%20Widgets/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Toolbar/Customize_Item_Appearance')
 - [Toolbar API Reference](/api-reference/10%20UI%20Widgets/dxToolbar '/Documentation/ApiReference/UI_Widgets/dxToolbar/')
 
-[tags]toolbar, collection container, collection widget, overview
+[tags]dxtolbar, toolbar, collection container, collection widget, overview

@@ -29,3 +29,5 @@ Finally, add some interactivity.
 #####See Also#####
 - [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie)
 - [PieChart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/')
+
+[tags]dxpiechart

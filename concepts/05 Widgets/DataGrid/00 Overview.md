@@ -32,3 +32,5 @@ The widget has the rich UI that provides the following end-user capabilities:
 
 #####See Also#####
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SimpleArray)
+
+[tags]dxdatagrid

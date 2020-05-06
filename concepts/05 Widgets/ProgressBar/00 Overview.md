@@ -38,4 +38,4 @@ When the **ProgressBar** reaches the [maximum](/api-reference/10%20UI%20Widgets/
 - [ProgressBar - Handle the Value Change Event](/concepts/05%20Widgets/ProgressBar/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/ProgressBar/Handle_the_Value_Change_Event')
 - [ProgressBar API Reference](/api-reference/10%20UI%20Widgets/dxProgressBar '/Documentation/ApiReference/UI_Widgets/dxProgressBar/')
 
-[tags]progress bar, progressBar, editor, overview, range, min, max, complete
+[tags]dxprogressbar, progress bar, progressBar, editor, overview, range, min, max, complete

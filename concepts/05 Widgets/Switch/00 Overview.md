@@ -23,4 +23,4 @@ The following code adds the **Switch** to your page.
 - [Switch - Keyboard Support](/concepts/05%20Widgets/Switch/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Switch/Keyboard_Support')
 - [Switch API Reference](/api-reference/10%20UI%20Widgets/dxSwitch '/Documentation/ApiReference/UI_Widgets/dxSwitch/')
 
-[tags]switch, editor, overview
+[tags]dxswitch, switch, editor, overview

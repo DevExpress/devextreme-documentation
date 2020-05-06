@@ -117,4 +117,4 @@ The appearance of the **Button** is predefined by its [type](/api-reference/10%2
 - [Button - Validate and Submit an HTML form](/concepts/05%20Widgets/Button/10%20Validate%20and%20Submit%20an%20HTML%20Form.md '/Documentation/Guide/Widgets/Button/Validate_and_Submit_an_HTML_Form/')
 - [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/')
 
-[tags]button, overview, click
+[tags]dxbutton, button, overview, click

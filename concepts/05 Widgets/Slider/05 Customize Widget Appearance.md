@@ -243,14 +243,14 @@ To specify whether or not the part of the scale from the beginning to the slider
 
     <!--HTML-->
     <dx-slider
-        [showRange]="showRange"
+        [showRange]="false"
     </dx-slider>
 
     <!--TypeScript-->
     import { DxSliderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        showRange = false;
+        // ...
     }
     @NgModule({
         imports: [
@@ -264,7 +264,7 @@ To specify whether or not the part of the scale from the beginning to the slider
 
     <template>
         <DxSlider
-            :showRange="showRange"
+            :showRange="false"
         />
     </template>
 
@@ -277,11 +277,6 @@ To specify whether or not the part of the scale from the beginning to the slider
     export default {
         components: {
             DxSlider
-        },
-        data() {
-            return {
-                showRange: false
-            };
         }
     }
     </script>
@@ -297,16 +292,12 @@ To specify whether or not the part of the scale from the beginning to the slider
     class App extends React.Component {
         constructor(props) {
             super(props);
-
-            this.state = {
-                showRange: false
-            };
         }
 
         render() {
             return (
                 <Slider
-                    showRange={this.state.showRange}
+                    showRange={false}
                 />
             );
         }

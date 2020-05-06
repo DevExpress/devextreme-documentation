@@ -128,9 +128,6 @@ In addition, you can specify the step of **Slider** values using the [step](/api
 ---
 ##### jQuery
 
-    <!--HTML-->
-    <div id="sliderContainer"></div>
-
     <!--JavaScript-->
     $(function() {
         $("#sliderContainer").dxSlider({

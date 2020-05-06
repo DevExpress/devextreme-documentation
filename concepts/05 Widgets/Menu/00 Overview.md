@@ -213,4 +213,4 @@ The following code adds the **Menu** widget to your page. Note that the data sou
 - [Menu - Change the Orientation](/concepts/05%20Widgets/Menu/10%20Change%20the%20Orientation.md '/Documentation/Guide/Widgets/Menu/Change_the_Orientation')
 - [Menu API Reference](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Widgets/dxMenu/')
 
-[tags]menu, navigation, collection container, collection widget, overview
+[tags]dxmenu, menu, navigation, collection container, collection widget, overview

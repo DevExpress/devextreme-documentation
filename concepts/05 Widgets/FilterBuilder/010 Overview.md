@@ -84,4 +84,4 @@ The **FilterBuilder** displays the filter expression as a tree structure, where 
 - [Predefine Filter Values](/concepts/05%20Widgets/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/Widgets/FilterBuilder/Predefine_Filter_Values/')
 - [API Reference](/api-reference/10%20UI%20Widgets/dxFilterBuilder '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/')
 
-[tags]filter builder, filterBuilder, filter expression, condition, overview
+[tags]dxfilterbuilder, filter builder, filterBuilder, filter expression, condition, overview

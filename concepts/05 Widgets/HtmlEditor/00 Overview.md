@@ -106,3 +106,5 @@ The **HtmlEditor** has the following limitations:
 
 - Users cannot edit the layout. The **HtmlEditor** is designed to format textual content only.
 - Users cannot save full HTML markup. The **HtmlEditor** supports only a subset (built-in or custom) of formats. Everything else is discarded.
+
+[tags]dxhtmleditor

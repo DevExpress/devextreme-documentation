@@ -3,3 +3,5 @@ The **Diagram** widget provides a visual interface to help you design new and mo
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
 }
+
+[tags]dxdiagram

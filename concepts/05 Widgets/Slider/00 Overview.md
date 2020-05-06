@@ -35,4 +35,4 @@ In addition, you can specify the step of **Slider** values using the [step](/api
 - [Slider API Reference](/api-reference/10%20UI%20Widgets/dxSlider '/Documentation/ApiReference/UI_Widgets/dxSlider/')
 - [RangeSlider - Overview](/concepts/05%20Widgets/RangeSlider/00%20Overview.md '/Documentation/Guide/Widgets/RangeSlider/Overview/')
 
-[tags]slider, editor, overview, min, max, step
+[tags]dxslider, slider, editor, overview, min, max, step

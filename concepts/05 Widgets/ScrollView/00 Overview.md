@@ -270,4 +270,4 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 - [ScrollView - Scroll the Content](/concepts/05%20Widgets/ScrollView/05%20Scroll%20the%20Content '/Documentation/Guide/Widgets/ScrollView/Scroll_the_Content/')
 - [ScrollView API Reference](/api-reference/10%20UI%20Widgets/dxScrollView '/Documentation/ApiReference/UI_Widgets/dxScrollView/')
 
-[tags]scrollView, scroll view, overview, scrolling direction, native scrolling, simulated scrolling, scrollbar
+[tags]dxscrollview, scrollView, scroll view, overview, scrolling direction, native scrolling, simulated scrolling, scrollbar

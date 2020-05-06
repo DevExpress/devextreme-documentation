@@ -188,4 +188,4 @@ By default, the widget is oriented horizontally, but you can orient it verticall
 - [TileView - Customize Tile Appearance](/concepts/05%20Widgets/TileView/05%20Customize%20Tile%20Appearance.md '/Documentation/Guide/Widgets/TileView/Customize_Tile_Appearance')
 - [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Widgets/dxTileView/')
 
-[tags]tile view, tileView, collection container, collection widget, navigation, overview
+[tags]dxtileview, tile view, tileView, collection container, collection widget, navigation, overview

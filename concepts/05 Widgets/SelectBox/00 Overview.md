@@ -244,4 +244,4 @@ If your data is an array of objects, specify:
 - [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/')
 - [Lookup vs SelectBox](/concepts/05%20Widgets/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/Widgets/Lookup/Lookup_vs_SelectBox/')
 
-[tags]selectBox, select box, editor, collection widget, overview, data source, value, display expression
+[tags]dxselectbox, selectBox, select box, editor, collection widget, overview, data source, value, display expression

@@ -9,3 +9,5 @@ The **Gantt** widget displays the task flow and dependencies between tasks.
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
+
+[tags]dxgantt

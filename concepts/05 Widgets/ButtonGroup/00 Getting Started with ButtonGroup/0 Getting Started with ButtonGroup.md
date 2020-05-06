@@ -270,3 +270,5 @@ Refer to the subtopics for details on every configuration step. You can also see
     </script>
 
 ---
+
+[tags]dxbuttongroup

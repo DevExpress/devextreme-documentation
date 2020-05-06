@@ -115,4 +115,4 @@ If your data is an array of objects, specify:
 - [Lookup API Reference](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/')
 - [Lookup vs SelectBox](/concepts/05%20Widgets/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/Widgets/Lookup/Lookup_vs_SelectBox/')
 
-[tags]lookup, overview, data source, value, display expression, displayExpr, valueExpr
+[tags]dxlookup, lookup, overview, data source, value, display expression, displayExpr, valueExpr

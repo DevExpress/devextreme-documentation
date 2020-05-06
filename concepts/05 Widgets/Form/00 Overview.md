@@ -76,4 +76,4 @@ The configuration above creates one label-editor pair per each field of the data
 - [Form - Validate and Submit the Form](/concepts/05%20Widgets/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/Widgets/Form/Validate_and_Submit_the_Form/')
 - [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/')
 
-[tags]form, overview, form data
+[tags]dxform, form, overview, form data

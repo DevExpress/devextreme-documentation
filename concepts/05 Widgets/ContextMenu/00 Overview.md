@@ -196,4 +196,4 @@ The following code adds the **ContextMenu** widget to your page and binds it to 
 - [ContextMenu - Open and Close](/concepts/05%20Widgets/ContextMenu/10%20Open%20and%20Close%20the%20Context%20Menu '/Documentation/Guide/Widgets/ContextMenu/Open_and_Close_the_Context_Menu/')
 - [ContextMenu API Reference](/api-reference/10%20UI%20Widgets/dxContextMenu '/Documentation/ApiReference/UI_Widgets/dxContextMenu/')
 
-[tags]context menu, contextMenu, navigation, collection container, collection widget, overview
+[tags]dxcontextmenu, context menu, contextMenu, navigation, collection container, collection widget, overview

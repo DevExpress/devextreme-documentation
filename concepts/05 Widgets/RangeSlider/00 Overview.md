@@ -37,4 +37,4 @@ In addition, you can specify the step of **RangeSlider** values using the [step]
 - [RangeSlider API Reference](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/')
 - [Slider - Overview](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/Widgets/Slider/Overview/')
 
-[tags]rangeSlider, range slider, editor, overview, range, min, max, start, end, step
+[tags]dxrangeslider, rangeSlider, range slider, editor, overview, range, min, max, start, end, step

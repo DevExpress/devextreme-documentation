@@ -61,4 +61,4 @@ The following code adds to your page a simple **LoadPanel** and a [Button](/conc
 - [LoadPanel - Resize and Relocate](/concepts/05%20Widgets/LoadPanel/15%20Resize%20and%20Relocate.md '/Documentation/Guide/Widgets/LoadPanel/Resize_and_Relocate/')
 - [LoadPanel API Reference](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/')
 
-[tags]loadPanel, load panel, overview, overlay
+[tags]dxloadpanel, loadPanel, load panel, overview, overlay

@@ -49,4 +49,4 @@ The **List** supports a great variety of features. To learn more about a particu
 #include common-link-configurewidget
 - [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/')
 
-[tags]list, overview
+[tags]dxlist, list, overview

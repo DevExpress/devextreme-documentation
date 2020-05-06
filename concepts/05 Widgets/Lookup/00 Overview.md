@@ -114,4 +114,4 @@ If your data is an array of objects, specify:
 - [Lookup - Handle the Value Change Event](/concepts/05%20Widgets/Lookup/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/Lookup/Handle_the_Value_Change_Event/')
 - [Lookup API Reference](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/')
 
-[tags]lookup, overview, data source, value, display expression, displayExpr, valueExpr
+[tags]dxlookup, lookup, overview, data source, value, display expression, displayExpr, valueExpr

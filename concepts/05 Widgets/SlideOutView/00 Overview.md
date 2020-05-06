@@ -47,4 +47,4 @@ The following code adds the **SlideOutView** widget to your page. The view conta
 - [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/Widgets/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
 - [SlideOutView API Reference](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/')
 
-[tags]slideOutView, slide-out menu, navigation, overview
+[tags]dxslideoutview, slideOutView, slide-out menu, navigation, overview

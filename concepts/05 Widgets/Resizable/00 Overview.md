@@ -75,4 +75,4 @@ In addition to the **resizeEnd** event, the **Resizable** widget fires the [resi
 #include common-link-configurewidget
 - [Resizable API Reference](/api-reference/10%20UI%20Widgets/dxResizable '/Documentation/ApiReference/UI_Widgets/dxResizable/')
 
-[tags]resizable, overview, resize a widget, resize
+[tags]dxresizable, resizable, overview, resize a widget, resize

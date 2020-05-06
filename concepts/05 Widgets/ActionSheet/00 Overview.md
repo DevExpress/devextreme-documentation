@@ -86,4 +86,4 @@ Note that every data source object has a **text** field that is rendered on the 
 - [ActionSheet - Specify Display Mode](/concepts/05%20Widgets/ActionSheet/10%20Specify%20Display%20Mode.md '/Documentation/Guide/Widgets/ActionSheet/Specify_Display_Mode')
 - [ActionSheet API Reference](/api-reference/10%20UI%20Widgets/dxActionSheet '/Documentation/ApiReference/UI_Widgets/dxActionSheet/')
 
-[tags]action sheet, actionSheet, collection container, collection widget, navigation, overview
+[tags] dxactionsheet, action sheet, actionSheet, collection container, collection widget, navigation, overview

@@ -121,4 +121,4 @@ If an end user should _not_ be able to edit the value in the **TextBox**, assign
 - [TextBox API Reference](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/')
 - [TextArea](/concepts/05%20Widgets/TextArea/00%20Overview.md '/Documentation/Guide/Widgets/TextArea/Overview/')
 
-[tags]textBox, text box, editor, overview
+[tags]dxtextbox, textBox, text box, editor, overview

@@ -55,4 +55,4 @@ The code below adds the **Map** widget to your page. The **Map** is [centered](/
 - [Map - Configure Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes '/Documentation/Guide/Widgets/Map/Configure_Routes/')
 - [Map API Reference](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Widgets/dxMap/')
 
-[tags]map, center, central position, zoom level, controls
+[tags]dxmap, map, center, central position, zoom level, controls

@@ -52,4 +52,4 @@ The **CheckBox** widget can have the following states: checked (the **value** op
 - [CheckBox - Keyboard Support](/concepts/05%20Widgets/CheckBox/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/CheckBox/Keyboard_Support')
 - [CheckBox API Reference](/api-reference/10%20UI%20Widgets/dxCheckBox '/Documentation/ApiReference/UI_Widgets/dxCheckBox/')
 
-[tags]check box, checkBox, editor, overview
+[tags]dxcheckbox, check box, checkBox, editor, overview

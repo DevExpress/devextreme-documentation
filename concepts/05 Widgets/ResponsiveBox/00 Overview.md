@@ -161,4 +161,4 @@ All **ResponsiveBox** elements are arranged against a layout grid defined by the
 - [ResponsiveBox - Arrange Layout Elements](/concepts/05%20Widgets/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/Widgets/ResponsiveBox/Arrange_Layout_Elements/')
 - [ResponsiveBox API Reference](/api-reference/10%20UI%20Widgets/dxResponsiveBox '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/')
 
-[tags]responsive box, responsiveBox, layout widget, overview, dxItem, full screen widget
+[tags]dxresponsivebox, responsive box, responsiveBox, layout widget, overview, dxItem, full screen widget

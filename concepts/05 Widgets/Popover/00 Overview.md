@@ -73,4 +73,4 @@ There are several ways to specify the content of the **Popover**. Learn more in 
 - [Popover - Resize and Relocate](/concepts/05%20Widgets/Popover/15%20Resize%20and%20Relocate.md '/Documentation/Guide/Widgets/Popover/Resize_and_Relocate/')
 - [Popover API Reference](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Widgets/dxPopover/')
 
-[tags]popover, overview, overlay 
+[tags]dxpopover, popover, overview, overlay 

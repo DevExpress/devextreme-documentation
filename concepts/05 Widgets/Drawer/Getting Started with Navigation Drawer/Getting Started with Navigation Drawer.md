@@ -592,3 +592,5 @@ Refer to the subtopics for details on every configuration step. You can also see
     export default Trash;
 
 ---
+
+[tags]dxdrawer

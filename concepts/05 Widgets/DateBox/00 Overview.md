@@ -58,4 +58,4 @@ Depending on the platform, the **DateBox** provides different controls for picki
 - [DateBox - Keyboard Support](/concepts/05%20Widgets/DateBox/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/DateBox/Keyboard_Support')
 - [DateBox API Reference](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Widgets/dxDateBox/')
 
-[tags]date box, dateBox, editor, scheduling, overview, date and time type
+[tags]dxdatebox, date box, dateBox, editor, scheduling, overview, date and time type

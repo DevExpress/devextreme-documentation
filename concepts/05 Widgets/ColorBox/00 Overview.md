@@ -51,4 +51,4 @@ The **ColorBox** accepts colors in hexadecimal (_"#FF0000"_), RGB (_"rgb(255, 0,
 - [ColorBox - Keyboard Support](/concepts/05%20Widgets/ColorBox/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/ColorBox/Keyboard_Support')
 - [ColorBox API Reference](/api-reference/10%20UI%20Widgets/dxColorBox '/Documentation/ApiReference/UI_Widgets/dxColorBox/')
 
-[tags]color box, colorBox, editor, overview
+[tags]dxcolorbox, color box, colorBox, editor, overview

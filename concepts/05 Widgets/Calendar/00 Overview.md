@@ -173,4 +173,4 @@ To specify which day should be considered the beginning of the week, pass its in
 - [Calendar API Reference](/api-reference/10%20UI%20Widgets/dxCalendar '/Documentation/ApiReference/UI_Widgets/dxCalendar/')
 - [DateBox - Overview](/concepts/05%20Widgets/DateBox/00%20Overview.md '/Documentation/Guide/Widgets/DateBox/Overview/')
 
-[tags]calendar, editor, scheduling, overview, value format, date format, date range
+[tags]dxcalendar, calendar, editor, scheduling, overview, value format, date format, date range

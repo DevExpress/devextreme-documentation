@@ -798,3 +798,5 @@ Refer to the subtopics for details on every configuration step. You can also see
     <div class="drawer-view-content">Spam</div>
 
 ---
+
+[tags]dxdrawer

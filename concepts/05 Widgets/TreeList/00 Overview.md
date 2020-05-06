@@ -27,3 +27,5 @@ Finally, configure the most useful end-user capabilities.
 
 #####See Also#####
 - [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview)
+
+[tags]dxtreelist

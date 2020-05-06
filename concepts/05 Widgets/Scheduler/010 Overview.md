@@ -318,4 +318,4 @@ If your appointments have a different structure, specify:
 - [Scheduler - Views](/concepts/05%20Widgets/Scheduler/060%20Views '/Documentation/Guide/Widgets/Scheduler/Views/')
 - [Scheduler - Keyboard Support](/concepts/05%20Widgets/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Scheduler/Keyboard_Support/')
 
-[tags]scheduler, overview, textExpr, startDateExpr, endDateExpr
+[tags]dxscheduler, scheduler, overview, textExpr, startDateExpr, endDateExpr

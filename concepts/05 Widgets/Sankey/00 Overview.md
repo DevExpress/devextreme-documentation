@@ -40,3 +40,5 @@ Next, get familiar with the widget's elements using the following element map. H
 
 #####See Also#####
 - [Sankey API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/')
+
+[tags] dxsankey

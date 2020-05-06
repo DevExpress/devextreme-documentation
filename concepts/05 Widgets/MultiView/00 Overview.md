@@ -119,4 +119,4 @@ More often, structure of the data source item differs from the default. For corr
 - [MultiView - Loop the Views](/concepts/05%20Widgets/MultiView/15%20Loop%20the%20Views.md '/Documentation/Guide/Widgets/MultiView/Loop_the_Views')
 - [MultiView API Reference](/api-reference/10%20UI%20Widgets/dxMultiView '/Documentation/ApiReference/UI_Widgets/dxMultiView/')
 
-[tags]multi view, multiView, collection container, collection widget, navigation, overview
+[tags]dxmultiview, multi view, multiView, collection container, collection widget, navigation, overview

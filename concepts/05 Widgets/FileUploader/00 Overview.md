@@ -155,4 +155,4 @@ The **FileUploader** can operate in two different modes, each demanding a differ
 - [File Validation](/concepts/05%20Widgets/FileUploader/40%20File%20Validation.md '/Documentation/Guide/Widgets/FileUploader/File_Validation/')
 - [FileUploader API Reference](/api-reference/10%20UI%20Widgets/dxFileUploader '/Documentation/ApiReference/UI_Widgets/dxFileUploader/')
 
-[tags]file uploader, fileUploader, overview, accepted file types, multiple files, access files in code
+[tags]dxfileuploader, file uploader, fileUploader, overview, accepted file types, multiple files, access files in code

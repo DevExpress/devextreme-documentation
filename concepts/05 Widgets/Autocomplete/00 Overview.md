@@ -339,4 +339,4 @@ Usually, the data field that provides suggestions is the same data field that is
 - [Autocomplete - Configure Search Parameters](/concepts/05%20Widgets/Autocomplete/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/Widgets/Autocomplete/Configure_Search_Parameters')
 - [Autocomplete API Reference](/api-reference/10%20UI%20Widgets/dxAutocomplete '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/')
 
-[tags]autocomplete, collection container, collection widget, editor, overview, data source
+[tags]dxautocomplete, autocomplete, collection container, collection widget, editor, overview, data source

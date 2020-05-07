@@ -51,12 +51,24 @@ The following code defines three views: the first is not customized, the second 
     <dx-scheduler
         [dataSource]="schedulerData"
         [currentDate]="currentDate"
-        [views]="views"
-        [resources]="resources"
-        timeCellTemplate="timeCellTemplate">
+        currentView="day">
+
+        <dxi-resource fieldExpr="ownerId" [dataSource]="employees">
+        </dxi-resource>
+
+        <dxi-view type="month">
+        </dxi-view>
+
+        <dxi-view type="day" [cellDuration]="60" timeCellTemplate="timeCellTemplate">
+        </dxi-view>
+
+        <dxi-view type="workWeek" [groups]="['ownerId']">
+        </dxi-view>
+
         <div *dxTemplate="let appointment of 'timeCellTemplate'">
             <i style="color: green">{{appointment.text}}</i>
         </div>
+
     </dx-scheduler>
 
     <!--TypeScript-->
@@ -77,18 +89,10 @@ The following code defines three views: the first is not customized, the second 
         // ...
         ];
         currentDate = new Date(2016, 1, 1);
-        views = [
-            "month",
-            { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' },
-            { type: "workWeek", groups: ["ownerId"] }
+        employees [
+            { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
+            { text: "John Heart", id: 2, color: "#56ca85" }
         ];
-        resources = [{
-            fieldExpr: "ownerId",
-            dataSource: [
-                { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-                { text: "John Heart", id: 2, color: "#56ca85" }
-            ]
-        }];
     }
     @NgModule({
         imports: [
@@ -104,10 +108,19 @@ The following code defines three views: the first is not customized, the second 
     <template>
         <DxScheduler
             :data-source="schedulerData"
-            :current-date="currentDate"
-            :views="views"
-            :resources="resources"
-            time-cell-template="TimeCellTemplateSlot">
+            :current-date="currentDate">
+
+            <DxResource field-expr="ownerId" :data-source="employees">
+            </DxResource>
+
+            <DxView type="month">
+            </DxView>
+
+            <DxView type="day" :cell-duration="60" time-cell-template="timeCellTemplateSlot">
+            </DxView>
+
+            <DxView type="workWeek" :groups="['ownerId']">
+            </DxView>
 
             <template #TimeCellTemplateSlot="appointment">
                 <i style="color: green">{{appointment.text}}</i>
@@ -119,11 +132,13 @@ The following code defines three views: the first is not customized, the second 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxScheduler from 'devextreme-vue/scheduler';
+    import { DxScheduler, DxResource, DxView } from 'devextreme-vue/scheduler';
 
     export default {
         components: {
-            DxScheduler
+            DxScheduler,
+            DxResource,
+            DxView
         },
         data() {
             return {
@@ -141,18 +156,10 @@ The following code defines three views: the first is not customized, the second 
                 // ...
                 ],
                 currentDate: new Date(2016, 1, 1),
-                views: [
-                    "month",
-                    { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' },
-                    { type: "workWeek", groups: ["ownerId"] }
-                ],
-                resources: [{
-                    fieldExpr: "ownerId",
-                    dataSource: [
-                        { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-                        { text: "John Heart", id: 2, color: "#56ca85" }
-                    ]
-                }]
+                employees: [
+                    { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
+                    { text: "John Heart", id: 2, color: "#56ca85" }
+                ]
             }
         }
     }
@@ -166,7 +173,7 @@ The following code defines three views: the first is not customized, the second 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Scheduler from 'devextreme-react/scheduler';
+    import { Scheduler, Resource, View } from 'devextreme-react/scheduler';
 
     const schedulerData = [{
         text: 'Google AdWords Strategy',
@@ -182,18 +189,10 @@ The following code defines three views: the first is not customized, the second 
     // ...
     ];
     const currentDate = new Date(2016, 1, 1);
-    const views = [
-        'month',
-        { type: 'day', cellDuration: 60, timeCellTemplate: 'timeCellTemplate' },
-        { type: 'workWeek', groups: ['ownerId'] }
+    const employees = [
+        { text: 'Samantha Bright', id: 1, color: '#cb6bb2' },
+        { text: 'John Heart', id: 2, color: '#56ca85' }
     ];
-    const resources = [{
-        fieldExpr: 'ownerId',
-        dataSource: [
-            { text: 'Samantha Bright', id: 1, color: '#cb6bb2' },
-            { text: 'John Heart', id: 2, color: '#56ca85' }
-        ]
-    }];
     const renderTimeCell = function(appointment) {
         return <i style='color: green'>{appointment.text}</i>;
     }
@@ -203,10 +202,21 @@ The following code defines three views: the first is not customized, the second 
             return (
                 <Scheduler
                     dataSource={schedulerData}
-                    currentDate={currentDate}
-                    views={views}
-                    resources={resources}
-                    timeCellRender='renderTimeCell' />
+                    currentDate={currentDate}>
+
+                    <Resource fieldExpr='ownerId' dataSource={employees}>
+                    </Resource>
+
+                    <View type='month'>
+                    </View>
+
+                    <View type='day' cellDuration={60} timeCellTemplate='renderTimeCell'>
+                    </View>
+
+                    <View type='workWeek' :groups='["ownerId"]'>
+                    </View>
+
+                </Scheduler>
             );
         }
     }

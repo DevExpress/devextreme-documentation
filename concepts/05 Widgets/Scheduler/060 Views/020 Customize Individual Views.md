@@ -162,26 +162,26 @@ The following code defines three views: the first is not customized, the second 
 
     import Scheduler from 'devextreme-react/scheduler';
 
-    const schedulerData: [{
-            text: 'Google AdWords Strategy',
-            ownerId: [2],
-            startDate: new Date(2016, 1, 1, 9, 0),
-            endDate: new Date(2016, 1, 1, 10, 30)
-        }, {
-            text: 'New Brochures',
-            ownerId: [1],
-            startDate: new Date(2016, 1, 1, 11, 30),
-            endDate: new Date(2016, 1, 1, 14, 15)
-        },
-        // ...
+    const schedulerData = [{
+        text: 'Google AdWords Strategy',
+        ownerId: [2],
+        startDate: new Date(2016, 1, 1, 9, 0),
+        endDate: new Date(2016, 1, 1, 10, 30)
+    }, {
+        text: 'New Brochures',
+        ownerId: [1],
+        startDate: new Date(2016, 1, 1, 11, 30),
+        endDate: new Date(2016, 1, 1, 14, 15)
+    },
+    // ...
     ];
-    const currentDate: new Date(2016, 1, 1);
-    const views: [
+    const currentDate = new Date(2016, 1, 1);
+    const views = [
         'month',
         { type: 'day', cellDuration: 60, timeCellTemplate: 'timeCellTemplate' },
         { type: 'workWeek', groups: ['ownerId'] }
     ];
-    const resources: [{
+    const resources = [{
         fieldExpr: 'ownerId',
         dataSource: [
             { text: 'Samantha Bright', id: 1, color: '#cb6bb2' },
@@ -189,7 +189,7 @@ The following code defines three views: the first is not customized, the second 
         ]
     }];
     const renderTimeCell = function(appointment) {
-        return <i style='color: green'>{{appointment.text}}</i>;
+        return <i style='color: green'>{appointment.text}</i>;
     }
 
     class App extends React.Component {

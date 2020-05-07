@@ -75,51 +75,35 @@ To define resource kinds, assign an array of objects specifying them to the [res
     // ...
     export class AppComponent  {
         // ...
-        rooms = [
-            // Resource instances
-            {
-                id: 1,              // Resource identifier
-                text: "Room101",    // Resource name
-                color: "red"        // Color for indicating appointments that use this resource
-            },
-            { id: 2, text: "Room102", color: "green" },
-            // ...
-        ];
-        teachers = [
-            // Resource instances
-            { guid: "6F96", name: "John Heart", clr: "yellow" },
-            { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
-            // ...
-        ];
-        resources = [
-            // Definition of the first resource kind
-            {
-                dataSource: new DataSource({
-                    store: {
-                        type: "array",
-                        data: this.rooms
+        rooms = new DataSource({
+            store: {
+                type: "array",
+                data: [
+                    // Resource instances
+                    {
+                        id: 1,              // Resource identifier
+                        text: "Room101",    // Resource name
+                        color: "red"        // Color for indicating appointments that use this resource
                     },
-                    paginate: false
-                }),
-                fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
-                label: "Room"               // Label displayed for this resource kind in the appointment details form
+                    { id: 2, text: "Room102", color: "green" },
+                    // ...
+                ]
             },
-            // Definition of the second resource kind
-            {
-                dataSource: new DataSource({
-                    store: {
-                        type: "array",
-                        data: this.teachers
-                    },
-                    paginate: false
-                }),
-                fieldExpr: "teacherId",
-                valueExpr: "guid",          // Resource instance's field used instead of "id"
-                colorExpr: "clr",           // Resource instance's field used instead of "color"
-                displayExpr: "name",        // Resource instance's field used instead of "text"
-                label: "Teacher"
-            }
-        ];
+            paginate: false
+        });
+
+        teachers = new DataSource({
+            store: {
+                type: "array",
+                data: [
+                    // Resource instances
+                    { guid: "6F96", name: "John Heart", clr: "yellow" },
+                    { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
+                    // ...
+                ]
+            },
+            paginate: false
+        });
     }
     @NgModule({
         imports: [
@@ -130,74 +114,95 @@ To define resource kinds, assign an array of objects specifying them to the [res
     })
 
     <!--HTML-->
-    <dx-scheduler ...
-        [resources]="resources">
+    <dx-scheduler ... >
+
+        <!-- Definition of the first resource kind -->
+        <dxi-resource
+            fieldExpr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->
+            label="Room"            <!-- Label displayed for this resource kind in the appointment details form -->
+            [dataSource]="rooms">
+        </dxi-resource>
+
+        <!-- Definition of the second resource kind -->
+        <dxi-resource
+            fieldExpr="teacherId"
+            valueExpr="guid"            // Resource instance's field used instead of "id"
+            colorExpr="clr"             // Resource instance's field used instead of "color"
+            displayExpr="name"          // Resource instance's field used instead of "text"
+            label="Teacher"
+            [dataSource]="teachers">
+        </dxi-resource>
+
     </dx-scheduler>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxScheduler :resources="resources" />
+        <DxScheduler :resources="resources">
+
+            <!-- Definition of the first resource kind -->
+            <DxResource
+                field-expr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->
+                label="Room"            <!-- Label displayed for this resource kind in the appointment details form -->
+                :data-source="rooms">
+            </DxResource>
+
+            <!-- Definition of the second resource kind -->
+            <DxResource
+                field-expr="teacherId"
+                value-expr="guid"            // Resource instance's field used instead of "id"
+                color-expr="clr"             // Resource instance's field used instead of "color"
+                display-expr="name"          // Resource instance's field used instead of "text"
+                label="Teacher"
+                :data-source="teachers">
+            </DxResource>
+
+        </DxScheduler>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxScheduler from 'devextreme-vue/scheduler';
+    import { DxScheduler, DxResource } from 'devextreme-vue/scheduler';
 
     export default {
         components: {
-            DxScheduler
+            DxScheduler,
+            DxResource
         },
         data() {
             return {
-                rooms: [
-                    // Resource instances
-                    {
-                        id: 1,              // Resource identifier
-                        text: "Room101",    // Resource name
-                        color: "red"        // Color for indicating appointments that use this resource
-                    },
-                    { id: 2, text: "Room102", color: "green" },
-                    // ...
-                ],
-                teachers: [
-                    // Resource instances
-                    { guid: "6F96", name: "John Heart", clr: "yellow" },
-                    { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
-                    // ...
-                ],
-                resources: [
-                    // Definition of the first resource kind
-                    {
-                        dataSource: new DataSource({
-                            store: {
-                                type: "array",
-                                data: this.rooms
+                // ...
+                rooms: new DataSource({
+                    store: {
+                        type: "array",
+                        data: [
+                            // Resource instances
+                            {
+                                id: 1,              // Resource identifier
+                                text: "Room101",    // Resource name
+                                color: "red"        // Color for indicating appointments that use this resource
                             },
-                            paginate: false
-                        }),
-                        fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
-                        label: "Room"               // Label displayed for this resource kind in the appointment details form
+                            { id: 2, text: "Room102", color: "green" },
+                            // ...
+                        ]
                     },
-                    // Definition of the second resource kind
-                    {
-                        dataSource: new DataSource({
-                            store: {
-                                type: "array",
-                                data: this.teachers
-                            },
-                            paginate: false
-                        }),
-                        fieldExpr: "teacherId",
-                        valueExpr: "guid",          // Resource instance's field used instead of "id"
-                        colorExpr: "clr",           // Resource instance's field used instead of "color"
-                        displayExpr: "name",        // Resource instance's field used instead of "text"
-                        label: "Teacher"
-                    }
-                ]
+                    paginate: false
+                }),
+                teachers: new DataSource({
+                    store: {
+                        type: "array",
+                        data: [
+                            // Resource instances
+                            { guid: "6F96", name: "John Heart", clr: "yellow" },
+                            { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
+                            // ...
+                        ]
+                    },
+                    paginate: false
+                })
             }
         }
     }
@@ -211,58 +216,59 @@ To define resource kinds, assign an array of objects specifying them to the [res
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Scheduler from 'devextreme-react/scheduler';
+    import { Scheduler, Resource } from 'devextreme-react/scheduler';
 
-    const rooms = [
-        // Resource instances
-        {
-            id: 1,              // Resource identifier
-            text: "Room101",    // Resource name
-            color: "red"        // Color for indicating appointments that use this resource
-        },
-        { id: 2, text: "Room102", color: "green" },
-        // ...
-    ];
-    const teachers = [
-        // Resource instances
-        { guid: "6F96", name: "John Heart", clr: "yellow" },
-        { guid: "3F32", name: "Sandra Johnson", clr: "blue" },
-        // ...
-    ];
-    const resources = [
-        // Definition of the first resource kind
-        {
-            dataSource: new DataSource({
-                store: {
-                    type: "array",
-                    data: this.rooms
+    const rooms = new DataSource({
+        store: {
+            type: 'array',
+            data: [
+                // Resource instances
+                {
+                    id: 1,              // Resource identifier
+                    text: 'Room101',    // Resource name
+                    color: 'red'        // Color for indicating appointments that use this resource
                 },
-                paginate: false
-            }),
-            fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
-            label: "Room"               // Label displayed for this resource kind in the appointment details form
+                { id: 2, text: 'Room102', color: 'green' },
+                // ...
+            ]
         },
-        // Definition of the second resource kind
-        {
-            dataSource: new DataSource({
-                store: {
-                    type: "array",
-                    data: this.teachers
-                },
-                paginate: false
-            }),
-            fieldExpr: "teacherId",
-            valueExpr: "guid",          // Resource instance's field used instead of "id"
-            colorExpr: "clr",           // Resource instance's field used instead of "color"
-            displayExpr: "name",        // Resource instance's field used instead of "text"
-            label: "Teacher"
-        }
-    ];
+        paginate: false
+    });
+
+    const teachers = new DataSource({
+        store: {
+            type: 'array',
+            data: [
+                // Resource instances
+                { guid: '6F96', name: 'John Heart', clr: 'yellow' },
+                { guid: '3F32', name: 'Sandra Johnson', clr: 'blue' },
+                // ...
+            ]
+        },
+        paginate: false
+    });
 
     class App extends React.Component {
         render() {
             return (
-                <Scheduler resources={resources} />
+                <Scheduler>
+                    <!-- Definition of the first resource kind -->
+                    <Resource
+                        fieldExpr='roomId'      <!-- 'roomId' is the data field in an appointment object that binds it to the resource -->
+                        label='Room'            <!-- Label displayed for this resource kind in the appointment details form -->
+                        dataSource={rooms}>
+                    </Resource>
+
+                    <!-- Definition of the second resource kind -->
+                    <Resource
+                        fieldExpr='teacherId'
+                        valueExpr='guid'            // Resource instance's field used instead of 'id'
+                        colorExpr='clr'             // Resource instance's field used instead of 'color'
+                        displayExpr='name'          // Resource instance's field used instead of 'text'
+                        label='Teacher'
+                        dataSource={teachers}>
+                    </Resource>
+                </Scheduler>
             );
         }
     }

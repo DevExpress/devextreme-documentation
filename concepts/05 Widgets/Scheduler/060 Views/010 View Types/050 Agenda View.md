@@ -26,8 +26,13 @@ By default, the **agenda** view displays appointments for seven dates at a time 
 #####Angular
 
     <!--HTML-->
-    <dx-scheduler ...
-        [views]="agendaView">
+    <dx-scheduler current-view="agenda">
+
+        <dxi-view
+            type="agenda"
+            [agendaDuration]="5">
+        </dxi-view>
+
     </dx-scheduler>
 
     <!--TypeScript-->
@@ -35,10 +40,6 @@ By default, the **agenda** view displays appointments for seven dates at a time 
     // ...
     export class AppComponent  {
         // ...
-        agendaView = [{
-            type: "agenda",
-            agendaDuration: 5
-        }];
     }
     @NgModule({
         imports: [
@@ -52,27 +53,22 @@ By default, the **agenda** view displays appointments for seven dates at a time 
 
     <!-- tab: App.vue -->
     <template>
-        <DxScheduler
-            :views="agendaView"
-        />
+        <DxScheduler current-view="agenda">
+            <DxView
+                type="agenda"
+                :agenda-duration="5" />
+        </DxScheduler>
     </template>
 
     <script>
-    import DxScheduler from 'devextreme-vue/scheduler';
+    import { DxScheduler, DxView } from 'devextreme-vue/scheduler';
 
     export default {
         components: {
             // ...
-            DxScheduler
+            DxScheduler,
+            DxView
         },
-        data() {
-            return {
-                agendaView: [{
-                    type: "agenda",
-                    agendaDuration: 5
-                }]
-            }
-        }
         // ...
     }
     </script>
@@ -82,19 +78,16 @@ By default, the **agenda** view displays appointments for seven dates at a time 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import Scheduler from 'devextreme-react/scheduler';
-
-    const agendaView = [{
-        type: 'agenda',
-        agendaDuration: 5
-    }];
+    import { Scheduler, View } from 'devextreme-react/scheduler';
 
     class App extends React.Component {
         render() {
             return (
-                <Scheduler
-                    views={agendaView}
-                />
+                <Scheduler currentView='agenda'>
+                    <View
+                        type='agenda'
+                        agendaDuration={5} />
+                </Scheduler>
             );
         }
     }

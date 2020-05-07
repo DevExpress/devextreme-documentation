@@ -65,8 +65,8 @@ The following code defines three views: the first is not customized, the second 
         <dxi-view type="workWeek" [groups]="['ownerId']">
         </dxi-view>
 
-        <div *dxTemplate="let appointment of 'timeCellTemplate'">
-            <i style="color: green">{{appointment.text}}</i>
+        <div *dxTemplate="let data of 'timeCellTemplate'">
+            <i style="color: green">{{data.text}}</i>
         </div>
 
     </dx-scheduler>
@@ -116,14 +116,14 @@ The following code defines three views: the first is not customized, the second 
             <DxView type="month">
             </DxView>
 
-            <DxView type="day" :cell-duration="60" time-cell-template="timeCellTemplateSlot">
+            <DxView type="day" :cell-duration="60" time-cell-template="time-cell">
             </DxView>
 
             <DxView type="workWeek" :groups="['ownerId']">
             </DxView>
 
-            <template #TimeCellTemplateSlot="appointment">
-                <i style="color: green">{{appointment.text}}</i>
+            <template #time-cell="{ data }">
+                <i style="color: green">{{data.text}}</i>
             </template>
         />
     </template>
@@ -193,9 +193,7 @@ The following code defines three views: the first is not customized, the second 
         { text: 'Samantha Bright', id: 1, color: '#cb6bb2' },
         { text: 'John Heart', id: 2, color: '#56ca85' }
     ];
-    const renderTimeCell = function(appointment) {
-        return <i style='color: green'>{appointment.text}</i>;
-    }
+    const renderTimeCell = (data) => <i style='color: green'>{data.text}</i>;
 
     class App extends React.Component {
         render() {
@@ -210,7 +208,7 @@ The following code defines three views: the first is not customized, the second 
                     <View type='month'>
                     </View>
 
-                    <View type='day' cellDuration={60} timeCellTemplate='renderTimeCell'>
+                    <View type='day' cellDuration={60} timeCellTemplate={renderTimeCell}>
                     </View>
 
                     <View type='workWeek' :groups='["ownerId"]'>

@@ -202,7 +202,7 @@ The following code defines three views: the first is not customized, the second 
             return (
                 <Scheduler
                     dataSource={schedulerData}
-                    currentDate={currentDate}>
+                    defaultCurrentDate={currentDate}>
 
                     <Resource fieldExpr='ownerId' dataSource={employees}>
                     </Resource>

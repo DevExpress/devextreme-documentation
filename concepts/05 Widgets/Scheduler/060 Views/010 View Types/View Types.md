@@ -43,7 +43,7 @@ A user switches between views with the [View Switcher](/concepts/05%20Widgets/Sc
     <template>
         <DxScheduler
             :views="['day', 'week', 'agenda']"
-            currentView="week"
+            current-view="week"
         />
     </template>
 

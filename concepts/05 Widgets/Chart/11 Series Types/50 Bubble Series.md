@@ -57,6 +57,71 @@ Note that **Bubble** series require an additional data field that provides size 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            :min-bubble-size="14"
+            :max-bubble-size="0.3"
+            ...
+        >
+            <DxSeries
+                type="bubble"
+                size-field="size"
+            />
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings :bubble=" ... "/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart
+                    minBubbleSize={14}
+                    maxBubbleSize={0.3}
+                    ...
+                >
+                    <Series
+                        type="bubble"
+                        sizeField="size"
+                    />
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings bubble={ ... } />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Refer to the [BubbleSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/BubbleSeries/') section of the API Reference for a full list of options available to a **Bubble** series.

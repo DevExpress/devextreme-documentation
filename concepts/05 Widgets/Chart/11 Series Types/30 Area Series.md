@@ -68,6 +68,73 @@ To specify one or another series type, assign its name to the **series[]**.[type
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries type="area"/>
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings
+                :area=" ... "
+                :splinearea=" ... "
+                :steparea=" ... "
+                :stackedarea=" ... "
+                :stackedsplinearea=" ... "
+                :fullstackedarea=" ... "
+                :fullstackedsplinearea=" ... "
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series type="area" />
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings
+                        area={ ... }
+                        splinearea={ ... }
+                        steparea={ ... }
+                        stackedarea={ ... }
+                        stackedsplinearea={ ... }
+                        fullstackedarea={ ... }
+                        fullstackedsplinearea={ ... }
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Refer to the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API Reference for a full list of options available to a specific series type.

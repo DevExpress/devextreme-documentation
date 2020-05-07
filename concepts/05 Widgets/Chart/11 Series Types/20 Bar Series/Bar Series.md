@@ -56,6 +56,65 @@ To specify one or another series type, assign its name to the **series[]**.[type
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries type="bar"/>
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings
+                :bar=" ... "
+                :stackedbar=" ... "
+                :fullstackedbar=" ... "
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series type="bar" />
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings
+                        bar={ ... }
+                        stackedbar={ ... }
+                        fullstackedbar={ ... }
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Refer to the [BarSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/BarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/BarSeries/'), [StackedBarSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StackedBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/StackedBarSeries/'), or [FullStackedBarSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/') section of the API Reference for a full list of options available to a specific series type. Most these options are self-explanatory, yet several of them are worth special mention.

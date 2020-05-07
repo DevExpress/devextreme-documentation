@@ -60,6 +60,71 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries
+                type="rangearea"
+                range-value1-field="low"
+                range-value2-field="high"
+            />
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings
+                :rangearea=" ... "
+                :rangebar=" ... "
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series
+                        type="rangearea"
+                        rangeValue1Field="low"
+                        rangeValue2Field="high"
+                    />
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings
+                        rangearea={ ... }
+                        rangebar={ ... }
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 See the [RangeAreaSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeAreaSeries/') and [RangeBarSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/') API Reference sections for a full list of options available to a range series.

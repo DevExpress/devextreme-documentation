@@ -132,14 +132,14 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
             return (
                 <Scheduler
                     dataSource={schedulerData}
-                    currentDate={currentDate}
+                    defaultCurrentDate={currentDate}
                     groups={['roomId']}
-                    resourceCellRender='renderResourceCell'
+                    resourceCellRender={renderResourceCell}
                 >
                     <Resource
                         fieldExpr='roomId'
                         dataSource={rooms} />
-                <Scheduler/>
+                </Scheduler>
             );
         }
     }

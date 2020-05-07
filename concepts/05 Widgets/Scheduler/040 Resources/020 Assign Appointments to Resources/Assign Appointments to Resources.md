@@ -145,8 +145,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
             <DxResource
                 field-expr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->
                 label="Room"            <!-- Label displayed for this resource kind in the appointment details form -->
-                :data-source="rooms">
-            </DxResource>
+                :data-source="rooms" />
 
             <!-- Definition of the second resource kind -->
             <DxResource
@@ -155,8 +154,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
                 color-expr="clr"             // Resource instance's field used instead of "color"
                 display-expr="name"          // Resource instance's field used instead of "text"
                 label="Teacher"
-                :data-source="teachers">
-            </DxResource>
+                :data-source="teachers" />
 
         </DxScheduler>
     </template>
@@ -256,8 +254,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
                     <Resource
                         fieldExpr='roomId'      <!-- 'roomId' is the data field in an appointment object that binds it to the resource -->
                         label='Room'            <!-- Label displayed for this resource kind in the appointment details form -->
-                        dataSource={rooms}>
-                    </Resource>
+                        dataSource={rooms} />
 
                     <!-- Definition of the second resource kind -->
                     <Resource
@@ -266,8 +263,8 @@ To define resource kinds, assign an array of objects specifying them to the [res
                         colorExpr='clr'             // Resource instance's field used instead of 'color'
                         displayExpr='name'          // Resource instance's field used instead of 'text'
                         label='Teacher'
-                        dataSource={teachers}>
-                    </Resource>
+                        dataSource={teachers} />
+
                 </Scheduler>
             );
         }

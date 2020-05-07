@@ -14,4 +14,4 @@ Configures toolbar settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Toolbar/"
 }
 
-![DevExtreme Gantt - Toolbar](~/images/Gantt/toolbar.png)
+![DevExtreme Gantt - Toolbar](/images/Gantt/toolbar.png)

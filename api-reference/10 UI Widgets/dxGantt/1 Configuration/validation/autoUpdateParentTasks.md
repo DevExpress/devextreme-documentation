@@ -16,4 +16,4 @@ The **Gantt** uses the following rules to determine whether to update a parent t
 - A parent task and its last child ends at the same time.
 - A parent task's progress is a summary progress of its child tasks.
 
-![DevExtreme Gantt - Parent and Child Tasks Validation](~/images/Gantt/parent-tasks-validation.png)
+![DevExtreme Gantt - Parent and Child Tasks Validation](/images/Gantt/parent-tasks-validation.png) 

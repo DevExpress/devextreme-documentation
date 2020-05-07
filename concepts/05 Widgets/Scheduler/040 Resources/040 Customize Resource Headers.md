@@ -137,7 +137,7 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
                     resourceCellRender={renderResourceCell}
                 >
                     <Resource
-                        fieldExpr='roomId'
+                        fieldExpr="roomId"
                         dataSource={rooms} />
                 </Scheduler>
             );

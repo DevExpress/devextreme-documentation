@@ -14,8 +14,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
             fieldExpr="roomId"
             [dataSource]="rooms" >
         </dxi-resource>
-        <div *dxTemplate="let appointment of 'headerTemplate'">
-            <i style="color: blue">{{appointment.text}}</i>
+        <div *dxTemplate="let data of 'headerTemplate'">
+            <i style="color: blue">{{data.text}}</i>
         </div>
     </dx-scheduler>
 
@@ -60,8 +60,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
                 field-expr="roomId"
                 :data-source="rooms" />
 
-            <template #resource-cell="appointment">
-                <i style="color: blue">{{appointment.text}}</i>
+            <template #resource-cell="data">
+                <i style="color: blue">{{data.text}}</i>
             </template>
 
         </DxScheduler>
@@ -123,8 +123,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         // ...
     ];
     const currentDate: new Date(2016, 4, 24);
-    const renderResourceCell = function(appointment) {
-        return <i style='color: blue'>{{appointment.text}}</i>;
+    const renderResourceCell = function(data) {
+        return <i style='color: blue'>{{data.text}}</i>;
     };
 
     class App extends React.Component {

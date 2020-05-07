@@ -47,31 +47,30 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
 ##### Vue
 
     <template>
-        <DxSlider
-            :label="label"
-        />
+        <DxSlider>
+            <DxLabel
+            	:visible="true"
+                position="bottom"
+                :format="format"
+        	/>
+        </DxSlider>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxSlider } from 'devextreme-vue/slider';
+    import { DxSlider, DxLabel } from 'devextreme-vue/slider';
 
     export default {
         components: {
-            DxSlider
+            DxSlider,
+            DxLabel
         },
-        data() {
-            return {
-                label: {
-                    visible: true,
-                    position: "bottom", // or "top"
-                    format: function(value) {
-                        return value + " units";
-                    }
-                }
-            };
+        methods: {
+            format(value) {
+                return value + " units";
+            }
         }
     }
     </script>
@@ -82,15 +81,11 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Slider } from 'devextreme-react/slider';
+    import { Slider, Label } from 'devextreme-react/slider';
 
-    const label = {
-        visible: true,
-        position: "bottom", // or "top"
-        format: function(value) {
-            return value + " units";
-        }
-    };
+    const format = function(value) {
+        return value + " units";
+    }
 
     class App extends React.Component {
         constructor(props) {
@@ -99,9 +94,13 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
 
         render() {
             return (
-                <Slider
-                    label={label}
-                />
+                <Slider>
+                    <Label
+                    	visible={true}
+                        posible="bottom" // or 'top'
+                        format={format}
+                    />
+                </Slider>
             );
         }
     }
@@ -161,32 +160,31 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
 ##### Vue
 
     <template>
-        <DxSlider
-            :tooltip="tooltip"
-        />
+        <DxSlider>
+            <DxTooltip
+                :enabled="true"
+                position="bottom"
+                showMode="always"
+                :format="format"
+			/>
+        </DxSlider>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxSlider } from 'devextreme-vue/slider';
+    import { DxSlider, DxTooltip } from 'devextreme-vue/slider';
 
     export default {
         components: {
-            DxSlider
+            DxSlider,
+            DxTooltip
         },
-        data() {
-            return {
-                tooltip: {
-                    enabled: true,
-                    position: "bottom", // or "top"
-                    showMode: "always", // or "onHover"
-                    format: function(value) {
-                        return value + " units";
-                    }
-                }
-            };
+        methods: {
+            format(value) {
+                return value + " units";
+            }
         }
     }
     </script>
@@ -197,16 +195,11 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Slider } from 'devextreme-react/slider';
+    import { Slider, Tooltip } from 'devextreme-react/slider';
 
-    const tooltip = {
-        enabled: true,
-        position: "bottom", // or "top"
-        showMode: "always", // or "onHover"
-        format: function(value) {
-            return value + " units";
-        }
-    };
+	const format = function(value) {
+        return value + " units";
+    }
 
     class App extends React.Component {
         constructor(props) {
@@ -215,9 +208,14 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
 
         render() {
             return (
-                <Slider
-                    tooltip={tooltip}
-                />
+                <Slider>
+                    <Tooltip
+                        enabled={true}
+                        position="bottom" // or "top"
+                        showMode="always" // or "onHover"
+                        format={format}
+                    />
+                </Slider>
             );
         }
     }

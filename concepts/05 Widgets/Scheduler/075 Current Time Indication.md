@@ -6,7 +6,7 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -16,7 +16,7 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-scheduler ...
@@ -37,13 +37,52 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler :show-current-time-indicator="true"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler } from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler showCurrentTimeIndicator={true}/>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Additionally, you can apply shading to cover the timetable up to the current time by assigning **true** to the [shadeUntilCurrentTime](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/shadeUntilCurrentTime.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#shadeUntilCurrentTime') option.
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -54,7 +93,7 @@ Additionally, you can apply shading to cover the timetable up to the current tim
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-scheduler ...
@@ -75,6 +114,51 @@ Additionally, you can apply shading to cover the timetable up to the current tim
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :show-current-time-indicator="true"
+            :shade-until-current-time="true"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler } from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    showCurrentTimeIndicator={true}
+                    shadeUntilCurrentTime={true}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

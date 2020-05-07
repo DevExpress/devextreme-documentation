@@ -63,6 +63,89 @@ The **Scheduler** widget allows you to customize its timetable. You can specify 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="dataSource"
+            :current-date="currentDate"
+            :start-day-hour="8"
+            :end-day-hour="19"
+            :cell-duration="60"
+            :first-day-of-week="1"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: [{
+                    text: 'Website Re-Design Plan',
+                    startDate: new Date(2016, 4, 25, 9, 30),
+                    endDate: new Date(2016, 4, 25, 11, 30)
+                }, {
+                    text: 'Book Flights to San Fran for Sales Trip',
+                    startDate: new Date(2016, 4, 25, 12, 0),
+                    endDate: new Date(2016, 4, 25, 13, 0)
+                },
+                // ...
+                ],
+                currentDate: new Date(2016, 4, 25)
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler } from 'devextreme-react/scheduler';
+
+    const dataSource = [{
+        text: 'Website Re-Design Plan',
+        startDate: new Date(2016, 4, 25, 9, 30),
+        endDate: new Date(2016, 4, 25, 11, 30)
+    }, {
+        text: 'Book Flights to San Fran for Sales Trip',
+        startDate: new Date(2016, 4, 25, 12, 0),
+        endDate: new Date(2016, 4, 25, 13, 0)
+    },
+    // ...
+    ];
+
+    const currentDate = new Date(2016, 4, 25);
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={dataSource}
+                    defaultCurrentDate={currentDate}
+                    startDayHour={8}
+                    endDayHour={19}
+                    cellDuration={60}
+                    firstDayOfWeek={1}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 You can also adjust cells' size in the table and around it using the DevExtreme CSS classes. For example, the `.dx-scheduler-cell-sizes-horizontal` and `.dx-scheduler-cell-sizes-vertical` classes specify the cells' width and height, respectively. These classes apply if the [crossScrollingEnabled](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/crossScrollingEnabled.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#crossScrollingEnabled') option is set to **true**.
@@ -208,6 +291,93 @@ For a more detailed customization, define custom templates for cells, time scale
     };
 
     ko.applyBindings(viewModel);
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="schedulerData"
+            :current-date="currentDate"
+            :show-all-day-panel="false"
+            data-cell-template="dataCellTemplate"
+            date-cell-template="dateCellTemplate"
+            time-cell-template="timeCellTemplate"
+            current-view="week"
+        >
+            <template #dataCellTemplate>
+                <div v-bind:style="styles"></div>
+            </template>
+            <template #dateCellTemplate="{ data }">
+                <b v-bind:style="{ color: 'green' }">{{data.text}}</b>     
+            </template>
+            <template #timeCellTemplate="{ data }">
+                <b v-bind:style="{ color: 'green' }">{{data.text}}</b>     
+            </template>
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 24),
+                styles: {
+                    'background-color': 'rgba(86, 202, 133, 0.1)',
+                    width: '100%',
+                    height: '40px'
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler } from 'devextreme-react/scheduler';
+
+    const currentDate = new Date(2016, 4, 24);
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={schedulerData}
+                    defaultCurrentDate={currentDate}
+                    showAllDayPanel={false}
+                    dataCellRender={this.renderDataCell}
+                    dateCellRender={this.renderDateCell}
+                    timeCellRender={this.renderTimeCell}
+                    defaultCurrentView="week"
+                />
+            );
+        }
+
+        renderDataCell(data, index, element) {
+            return <div style={{ width: '100%', height: 40, backgroundColor: 'rgba(86, 202, 133, 0.1)' }}></div>;
+        }
+        renderDateCell(data, index, element) {
+            return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
+        }
+        renderTimeCell(data, index, element) {
+            return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
+        }
+    }
+
+    export default App;
 
 ---
 

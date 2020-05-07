@@ -49,10 +49,10 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
     <template>
         <DxSlider>
             <DxLabel
-            	:visible="true"
+                :visible="true"
                 position="bottom"
                 :format="format"
-        	/>
+            />
         </DxSlider>
     </template>
 
@@ -96,7 +96,7 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
             return (
                 <Slider>
                     <Label
-                    	visible={true}
+                        visible={true}
                         posible="bottom" // or 'top'
                         format={format}
                     />
@@ -166,7 +166,7 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
                 position="bottom"
                 showMode="always"
                 :format="format"
-			/>
+            />
         </DxSlider>
     </template>
 
@@ -197,7 +197,7 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
 
     import { Slider, Tooltip } from 'devextreme-react/slider';
 
-	const format = function(value) {
+    const format = function(value) {
         return value + " units";
     }
 

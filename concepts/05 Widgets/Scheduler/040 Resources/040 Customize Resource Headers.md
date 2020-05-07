@@ -107,9 +107,9 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Scheduler, { Resource } from 'devextreme-react/scheduler';
+    import { Scheduler, Resource } from 'devextreme-react/scheduler';
 
-    const schedulerData: [{
+    const schedulerData = [{
         text: 'Meeting',
         startDate: new Date(2016, 4, 24, 9, 10),
         endDate: new Date(2016, 4, 24, 11, 20),
@@ -117,12 +117,12 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     },
     // ...
     ];
-    const rooms: [
+    const rooms = [
         { id: 1, text: 'Room101', color: 'green' },
         { id: 2, text: 'Room102', color: 'red' },
         // ...
     ];
-    const currentDate: new Date(2016, 4, 24);
+    const currentDate = new Date(2016, 4, 24);
     const renderResourceCell = function(data) {
         return <i style='color: blue'>{{data.text}}</i>;
     };

@@ -77,7 +77,7 @@ A user switches between views with the [View Switcher](/concepts/05%20Widgets/Sc
             return (
                 <Scheduler
                     views={['day', 'week', 'agenda']}
-                    currentView='week'
+                    currentView="week"
                 />
             );
         }

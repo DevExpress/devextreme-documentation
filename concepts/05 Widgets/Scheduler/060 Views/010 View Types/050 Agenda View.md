@@ -90,7 +90,7 @@ By default, the **agenda** view displays appointments for seven dates at a time 
             return (
                 <Scheduler currentView="agenda">
                     <View
-                        type='agenda'
+                        type="agenda"
                         agendaDuration={5} />
                 </Scheduler>
             );

@@ -82,4 +82,68 @@ If the **Chart** is [bound to the RangeSelector](/concepts/05%20Widgets/Chart/95
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis :visual-range="chart_visualRange"/>
+        </DxChart>
+        <DxRangeSelector ...
+            :value.sync="chart_visualRange"
+        >
+        </DxRangeSelector>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+    import DxRangeSelector from 'devextreme-vue/range-selector';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxRangeSelector
+        },
+        data() {
+            return {
+                chart_visualRange: [0, 10]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+    import RangeSelector from 'devextreme-react/range-selector';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { chart_visualRange: [0, 10] };
+            this.updateChartVisualRange = () => this.setState({ chart_visualRange: e.value });
+        }
+
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis visualRange={this.state.chart_visualRange} />
+                </Chart>
+                <RangeSelector ...
+                    onValueChanged={this.updateChartVisualRange}
+                >
+                </RangeSelector>
+            );
+        }
+    }
+
+    export default App;
+
 ---

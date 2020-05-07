@@ -45,4 +45,65 @@ For example, you can disallow users to zoom in further if the visual range's len
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            @zoom-end="chart_zoomEnd"
+        >
+            <DxZoomAndPan
+                argument-axis="both"
+                value-axis="both"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxZoomAndPan
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxZoomAndPan
+        },
+        methods: {
+            chart_zoomEnd(e) {
+                e.cancel = (e.range.endValue - e.range.startValue) < 1;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ZoomAndPan
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    onZoomEnd={chart_zoomEnd}
+                >
+                    <ZoomAndPan
+                        argumentAxis="both"
+                        valueAxis="both"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    functon chart_zoomEnd(e) {
+        e.cancel = (e.range.endValue - e.range.startValue) < 1;
+    }
+
+    export default App;
+
 ---

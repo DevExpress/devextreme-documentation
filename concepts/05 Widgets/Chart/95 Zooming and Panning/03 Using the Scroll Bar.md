@@ -46,6 +46,65 @@ You can configure the scrollbar using the [scrollBar](/api-reference/20%20Data%2
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxZoomAndPan
+                argument-axis="both"
+                value-axis="both"
+            />
+            <DxScrollBar
+                :visible="true"
+                ...
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxZoomAndPan,
+        DxScrollBar
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxZoomAndPan,
+            DxScrollBar
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ZoomAndPan,
+        ScrollBar
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ZoomAndPan
+                        argumentAxis="both"
+                        valueAxis="both"
+                    />
+                    <ScrollBar
+                        visible={true}
+                        ...
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

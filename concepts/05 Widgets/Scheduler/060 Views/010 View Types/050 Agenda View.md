@@ -26,13 +26,12 @@ By default, the **agenda** view displays appointments for seven dates at a time 
 #####Angular
 
     <!--HTML-->
-    <dx-scheduler current-view="agenda">
-
+    <dx-scheduler ...
+        currentView="agenda">
         <dxi-view
             type="agenda"
             [agendaDuration]="5">
         </dxi-view>
-
     </dx-scheduler>
 
     <!--TypeScript-->

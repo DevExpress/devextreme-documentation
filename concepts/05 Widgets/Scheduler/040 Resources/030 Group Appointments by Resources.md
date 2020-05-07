@@ -99,12 +99,12 @@ To group appointments by resources, assign an array to the [groups](/api-referen
             return {
                 groups: ['roomId', 'teacherId'],
                 appointments: [{
-                        roomId: 1,
-                        teacherId: 2,
-                        text: "Meeting",
-                        // ...
-                    },
+                    roomId: 1,
+                    teacherId: 2,
+                    text: "Meeting",
                     // ...
+                },
+                // ...
                 ]
             }
         }

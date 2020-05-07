@@ -25,8 +25,8 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
 
     <!--HTML-->
     <dx-slider
-        [min]="minValue"
-        [max]="maxValue"
+        [min]="0"
+        [max]="100"
         [(value)]="value">
     </dx-slider>
 
@@ -34,8 +34,6 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
     import { DxSliderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        minValue = 0;
-        maxValue = 100;
         value = 25;
     }
     @NgModule({
@@ -50,8 +48,8 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
 
     <template>
         <DxSlider
-            :min="minValue"
-            :max="maxValue"
+            :min="0"
+            :max="100"
             :value.sync="value"
         />
     </template>
@@ -68,8 +66,6 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
         },
         data() {
             return {
-                minValue: 0,
-                maxValue: 100,
                 value: 25
             };
         }
@@ -89,8 +85,6 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
             super(props);
 
             this.state = {
-                minValue: 0,
-                maxValue: 100,
                 value: 25
             };
 
@@ -110,8 +104,8 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
         render() {
             return (
                 <Slider
-                    min={this.state.minValue}
-                    max={this.state.maxValue}
+                    min={0}
+                    max={100}
                     value={this.state.value}
                     onValueChanged={this.handleValueChange}
                 />
@@ -142,9 +136,9 @@ In addition, you can specify the step of **Slider** values using the [step](/api
 
     <!--HTML-->
     <dx-slider
-        [min]="minValue"
-        [max]="maxValue"
-        [step]="step"
+        [min]="0"
+        [max]="100"
+        [step]="10"
         [(value)]="value">
     </dx-slider>
 
@@ -152,10 +146,7 @@ In addition, you can specify the step of **Slider** values using the [step](/api
     import { DxSliderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        minValue = 0;
-        maxValue = 100;
         value = 25;
-        step = 10;
     }
     @NgModule({
         imports: [
@@ -169,9 +160,9 @@ In addition, you can specify the step of **Slider** values using the [step](/api
 
     <template>
         <DxSlider
-            :min="minValue"
-            :max="maxValue"
-            :step="step"
+            :min="0"
+            :max="100"
+            :step="10"
             :value.sync="value"
         />
     </template>
@@ -188,9 +179,6 @@ In addition, you can specify the step of **Slider** values using the [step](/api
         },
         data() {
             return {
-                minValue: 0,
-                maxValue: 100,
-                step: 10,
                 value: 25
             };
         }
@@ -210,9 +198,6 @@ In addition, you can specify the step of **Slider** values using the [step](/api
             super(props);
 
             this.state = {
-                minValue: 0,
-                maxValue: 100,
-                step: 10,
                 value: 25
             };
 
@@ -232,9 +217,9 @@ In addition, you can specify the step of **Slider** values using the [step](/api
         render() {
             return (
                 <Slider
-                    min={this.state.minValue}
-                    max={this.state.maxValue}
-                    step={this.state.step}
+                    min={0}
+                    max={100}
+                    step={10}
                     value={this.state.value}
                     onValueChanged={this.handleValueChange}
                 />

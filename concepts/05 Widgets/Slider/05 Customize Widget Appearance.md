@@ -24,8 +24,8 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
         <dxo-label
             [visible]="true"
             [format]="format"
-            position="bottom"
-        ></dxo-label>
+            position="bottom"> <!-- or "top" -->
+        </dxo-label>
     </dx-slider>
 
     <!--TypeScript-->
@@ -138,8 +138,8 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
             [enabled]="true"
             [format]="format"
             showMode="always"
-            position="bottom"
-        ></dxo-tooltip>
+            position="bottom"> <!-- or "top" -->
+        </dxo-tooltip>
     </dx-slider>
 
     <!--TypeScript-->

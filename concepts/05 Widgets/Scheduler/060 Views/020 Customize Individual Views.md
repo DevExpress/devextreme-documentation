@@ -65,7 +65,6 @@ The following code defines three views: the first is not customized, the second 
         <div *dxTemplate="let data of 'timeCellTemplate'">
             <i style="color: green">{{data.text}}</i>
         </div>
-
     </dx-scheduler>
 
     <!--TypeScript-->

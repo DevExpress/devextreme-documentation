@@ -56,16 +56,12 @@ The following code defines three views: the first is not customized, the second 
             fieldExpr="ownerId"
             [dataSource]="employees">
         </dxi-resource>
-
-        <dxi-view type="month">
+        <dxi-view type="month"></dxi-view>
+        <dxi-view type="day"
+            [cellDuration]="60"
+            timeCellTemplate="timeCellTemplate">
         </dxi-view>
-
-        <dxi-view type="day" [cellDuration]="60" timeCellTemplate="timeCellTemplate">
-        </dxi-view>
-
-        <dxi-view type="workWeek" [groups]="['ownerId']">
-        </dxi-view>
-
+        <dxi-view type="workWeek" [groups]="['ownerId']"></dxi-view>
         <div *dxTemplate="let data of 'timeCellTemplate'">
             <i style="color: green">{{data.text}}</i>
         </div>

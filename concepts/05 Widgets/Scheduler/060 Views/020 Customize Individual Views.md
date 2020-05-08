@@ -52,8 +52,9 @@ The following code defines three views: the first is not customized, the second 
         [dataSource]="schedulerData"
         [currentDate]="currentDate"
         currentView="day">
-
-        <dxi-resource fieldExpr="ownerId" [dataSource]="employees">
+        <dxi-resource
+            fieldExpr="ownerId"
+            [dataSource]="employees">
         </dxi-resource>
 
         <dxi-view type="month">

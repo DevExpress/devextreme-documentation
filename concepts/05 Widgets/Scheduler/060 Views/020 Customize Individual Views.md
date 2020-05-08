@@ -194,19 +194,16 @@ The following code defines three views: the first is not customized, the second 
                 <Scheduler
                     dataSource={schedulerData}
                     defaultCurrentDate={currentDate}>
-
-                    <Resource fieldExpr='ownerId' dataSource={employees}>
-                    </Resource>
-
-                    <View type='month'>
-                    </View>
-
-                    <View type='day' cellDuration={60} timeCellTemplate={renderTimeCell}>
-                    </View>
-
-                    <View type='workWeek' :groups='["ownerId"]'>
-                    </View>
-
+                    <Resource
+                        fieldExpr="ownerId"
+                        dataSource={employees}
+                    />
+                    <View type="month" />
+                    <View type="day"
+                        cellDuration={60}
+                        timeCellTemplate={renderTimeCell}
+                    />
+                    <View type="workWeek" groups={['ownerId']} />
                 </Scheduler>
             );
         }

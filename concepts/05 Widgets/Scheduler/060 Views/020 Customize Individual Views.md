@@ -109,16 +109,12 @@ The following code defines three views: the first is not customized, the second 
                 field-expr="ownerId"
                 :data-source="employees"
             />
-
-            <DxView type="month">
-            </DxView>
-
-            <DxView type="day" :cell-duration="60" time-cell-template="time-cell">
-            </DxView>
-
-            <DxView type="workWeek" :groups="['ownerId']">
-            </DxView>
-
+            <DxView type="month" />
+            <DxView type="day"
+                :cell-duration="60"
+                time-cell-template="time-cell"
+            />
+            <DxView type="workWeek" :groups="['ownerId']" />
             <template #time-cell="{ data }">
                 <i style="color: green">{{data.text}}</i>
             </template>

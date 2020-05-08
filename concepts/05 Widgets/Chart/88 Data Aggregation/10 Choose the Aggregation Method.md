@@ -65,6 +65,78 @@ The following code shows how to specify aggregation methods for each series indi
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxCommonSeriesSettings ... >
+                <DxAggregation :enabled="true"/>
+            </DxCommonSeriesSettings>
+            <DxSeries ...
+                type="line"
+            >
+                <DxAggregation method="min"/>
+            </DxSeries>
+            <DxSeries ...
+                type="bar"
+            >
+                <DxAggregation method="max"/>
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeries,
+        DxAggregation
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeries,
+            DxAggregation
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Series,
+        Aggregation
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <CommonSeriesSettings ... >
+                        <Aggregation enabled={true} />
+                    </CommonSeriesSettings>
+                    <Series ...
+                        type="line"
+                    >
+                        <Aggregation method="min" />
+                    </Series>
+                    <Series ...
+                        type="bar"
+                    >
+                        <Aggregation method="max" />
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

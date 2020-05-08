@@ -220,14 +220,14 @@ To define resource kinds, assign an array of objects specifying them to the [res
         store: {
             type: 'array',
             data: [
-                // Resource instances
+                {/* Resource instances */}
                 {
-                    id: 1,              // Resource identifier
-                    text: 'Room101',    // Resource name
-                    color: 'red'        // Color for indicating appointments that use this resource
+                    id: 1,              {/* Resource identifier */}
+                    text: 'Room101',    {/* Resource name */}
+                    color: 'red'        {/* Color for indicating appointments that use this resource */}
                 },
                 { id: 2, text: 'Room102', color: 'green' },
-                // ...
+                {/* ... /*}
             ]
         },
         paginate: false
@@ -250,18 +250,18 @@ To define resource kinds, assign an array of objects specifying them to the [res
         render() {
             return (
                 <Scheduler>
-                    <!-- Definition of the first resource kind -->
+                    {/* Definition of the first resource kind */}
                     <Resource
-                        fieldExpr='roomId'      <!-- 'roomId' is the data field in an appointment object that binds it to the resource -->
-                        label='Room'            <!-- Label displayed for this resource kind in the appointment details form -->
+                        fieldExpr='roomId'      {/* 'roomId' is the data field in an appointment object that binds it to the resource */}
+                        label='Room'            {/* Label displayed for this resource kind in the appointment details form */}
                         dataSource={rooms} />
 
-                    <!-- Definition of the second resource kind -->
+                    {/* Definition of the second resource kind /*}
                     <Resource
                         fieldExpr='teacherId'
-                        valueExpr='guid'            // Resource instance's field used instead of 'id'
-                        colorExpr='clr'             // Resource instance's field used instead of 'color'
-                        displayExpr='name'          // Resource instance's field used instead of 'text'
+                        valueExpr='guid'            {/* Resource instance's field used instead of 'id' */}
+                        colorExpr='clr'             {/* Resource instance's field used instead of 'color' */}
+                        displayExpr='name'          {/* Resource instance's field used instead of 'text' */}
                         label='Teacher'
                         dataSource={teachers} />
                 </Scheduler>

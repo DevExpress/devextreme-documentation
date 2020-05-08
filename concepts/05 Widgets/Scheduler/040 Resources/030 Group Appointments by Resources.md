@@ -37,11 +37,11 @@ To group appointments by resources, assign an array to the [groups](/api-referen
         [groups]="['roomId', 'teacherId']"> <!-- Groups appointments by rooms and by teachers -->
         <dxi-resource
             fieldExpr="roomId"
-            [dataSource]="roomResources">
+            [dataSource]="rooms">
         </dxi-resource>
         <dxi-resource
             fieldExpr="teacherId"
-            [dataSource]="teacherResources">
+            [dataSource]="teachers">
         </dxi-resource>
     </dx-scheduler>
 
@@ -58,6 +58,23 @@ To group appointments by resources, assign an array to the [groups](/api-referen
         },
         // ...
         ];
+        rooms = [
+            // Resource instances
+            {
+                id: 1,              // Resource identifier
+                text: "Room101",    // Resource name
+                color: "red"        // Color for indicating appointments that use this resource
+            },
+            { id: 2, text: "Room102", color: "green" },
+            // ...
+        ];
+        teachers = [
+            // Resource instances
+            { id: 1, text: "John Heart", color: "yellow" },
+            { id: 2, text: "Sandra Johnson", color: "blue" },
+            // ...
+        ];
+        // ...
     }
     @NgModule({
         imports: [
@@ -77,10 +94,10 @@ To group appointments by resources, assign an array to the [groups](/api-referen
         >
             <DxResource
                 field-expr="roomId"
-                :data-source="roomResources"/>
+                :data-source="rooms"/>
             <DxResource
                 field-expr="teacherId"
-                :data-source="teacherResources"/>
+                :data-source="teachers"/>
         </DxScheduler>
     </template>
 
@@ -103,9 +120,24 @@ To group appointments by resources, assign an array to the [groups](/api-referen
                     teacherId: 2,
                     text: "Meeting",
                     // ...
-                },
-                // ...
+                }],
+                rooms: [
+                    // Resource instances
+                    {
+                        id: 1,              // Resource identifier
+                        text: "Room101",    // Resource name
+                        color: "red"        // Color for indicating appointments that use this resource
+                    },
+                    { id: 2, text: "Room102", color: "green" },
+                    // ...
+                ],
+                teachers: [
+                    // Resource instances
+                    { id: 1, text: "John Heart", color: "yellow" },
+                    { id: 2, text: "Sandra Johnson", color: "blue" },
+                    // ...
                 ]
+                // ...
             }
         }
     }
@@ -130,20 +162,37 @@ To group appointments by resources, assign an array to the [groups](/api-referen
     },
     // ...
     ];
+    const rooms = [
+        // Resource instances
+        {
+            id: 1,              // Resource identifier
+            text: "Room101",    // Resource name
+            color: "red"        // Color for indicating appointments that use this resource
+        },
+        { id: 2, text: "Room102", color: "green" },
+        // ...
+    ];
+    const teachers = [
+        // Resource instances
+        { id: 1, text: "John Heart", color: "yellow" },
+        { id: 2, text: "Sandra Johnson", color: "blue" },
+        // ...
+    ];
 
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
                     dataSource={appointments}
-                    groups={groups}>
+                    groups={groups} {/* Groups appointments by rooms and by teachers */}
+                >
 
                     <Resource
                         fieldExpr="roomId"
-                        dataSource={roomResources} />
+                        dataSource={rooms} />
                     <Resource
                         fieldExpr="teacherId"
-                        dataSource={teacherResources} />
+                        dataSource={teachers} />
 
                 </Scheduler>
             );

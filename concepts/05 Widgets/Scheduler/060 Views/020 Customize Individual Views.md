@@ -105,9 +105,10 @@ The following code defines three views: the first is not customized, the second 
         <DxScheduler
             :data-source="schedulerData"
             :current-date="currentDate">
-
-            <DxResource field-expr="ownerId" :data-source="employees">
-            </DxResource>
+            <DxResource
+                field-expr="ownerId"
+                :data-source="employees"
+            />
 
             <DxView type="month">
             </DxView>

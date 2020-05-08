@@ -60,7 +60,7 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
             <DxSeries type="scatter"/>
             <DxSeries ... />
             ...
-            <DxCommonSeriesSettings :scatter=" ... "/>
+            <DxCommonSeriesSettings :scatter="scatterSettings"/>
         </DxChart>
     </template>
 
@@ -75,6 +75,11 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
             DxChart,
             DxSeries,
             DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                scatterSettings: { ... }
+            };
         }
     }
     </script>
@@ -88,6 +93,8 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
+    const scatterSettings = { ... };
+
     class App extends React.Component {
         render() {
             return (
@@ -95,7 +102,7 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
                     <Series type="scatter" />
                     <Series ... />
                     ...
-                    <CommonSeriesSettings scatter={ ... } />
+                    <CommonSeriesSettings scatter={scatterSettings} />
                 </Chart>
             );
         }

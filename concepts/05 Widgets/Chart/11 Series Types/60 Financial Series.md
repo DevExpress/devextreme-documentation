@@ -80,8 +80,8 @@ Note that the financial series require four value fields: [openValueField](/api-
             <DxSeries ... />
             ...
             <DxCommonSeriesSettings
-                :candlestick=" ... "
-                :stock=" ... "
+                :candlestick="candleStickSettings"
+                :stock="stockSettings"
             />
         </DxChart>
     </template>
@@ -97,6 +97,12 @@ Note that the financial series require four value fields: [openValueField](/api-
             DxChart,
             DxSeries,
             DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                candleStickSettings: { ... },
+                stockSettings: { ... }
+            };
         }
     }
     </script>
@@ -109,6 +115,9 @@ Note that the financial series require four value fields: [openValueField](/api-
         Series,
         CommonSeriesSettings
     } from 'devextreme-react/chart';
+
+    const candleStickSettings = { ... };
+    const stockSettings = { ... };
 
     class App extends React.Component {
         render() {
@@ -124,8 +133,8 @@ Note that the financial series require four value fields: [openValueField](/api-
                     <Series ... />
                     ...
                     <CommonSeriesSettings
-                        candlestick={ ... }
-                        stock={ ... }
+                        candlestick={candleStickSettings}
+                        stock={stockSettings}
                     />
                 </Chart>
             );
@@ -175,6 +184,61 @@ Financial series gauge price reduction by comparing the values of two neighborin
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries ... >
+                <DxReduction
+                    level="high"
+                    color="blue"
+                />
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxReduction
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxReduction
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        Reduction
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <Reduction
+                            level="high"
+                            color="blue"
+                        />
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

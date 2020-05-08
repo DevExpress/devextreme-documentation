@@ -77,13 +77,13 @@ To specify one or another series type, assign its name to the **series[]**.[type
             <DxSeries ... />
             ...
             <DxCommonSeriesSettings
-                :area=" ... "
-                :splinearea=" ... "
-                :steparea=" ... "
-                :stackedarea=" ... "
-                :stackedsplinearea=" ... "
-                :fullstackedarea=" ... "
-                :fullstackedsplinearea=" ... "
+                :area="areaSettings"
+                :splinearea="splineAreaSettings"
+                :steparea="stepAreaSettings"
+                :stackedarea="stackedAreaSettings"
+                :stackedsplinearea="stackedSplineAreaSettings"
+                :fullstackedarea="fullStackedAreaSettings"
+                :fullstackedsplinearea="fullStackedSplineAreaSettings"
             />
         </DxChart>
     </template>
@@ -99,6 +99,17 @@ To specify one or another series type, assign its name to the **series[]**.[type
             DxChart,
             DxSeries,
             DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                areaSettings: { ... },
+                splineAreaSettings: { ... },
+                stepAreaSettings: { ... },
+                stackedAreaSettings: { ... },
+                stackedSplineAreaSettings: { ... },
+                fullStackedAreaSettings: { ... },
+                fullStackedSplineAreaSettings: { ... }
+            };
         }
     }
     </script>
@@ -112,6 +123,14 @@ To specify one or another series type, assign its name to the **series[]**.[type
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
+    const areaSettings = { ... };
+    const splineAreaSettings = { ... };
+    const stepAreaSettings = { ... };
+    const stackedAreaSettings = { ... };
+    const stackedSplineAreaSettings = { ... };
+    const fullStackedAreaSettings = { ... };
+    const fullStackedSplineAreaSettings = { ... };
+
     class App extends React.Component {
         render() {
             return (
@@ -120,13 +139,13 @@ To specify one or another series type, assign its name to the **series[]**.[type
                     <Series ... />
                     ...
                     <CommonSeriesSettings
-                        area={ ... }
-                        splinearea={ ... }
-                        steparea={ ... }
-                        stackedarea={ ... }
-                        stackedsplinearea={ ... }
-                        fullstackedarea={ ... }
-                        fullstackedsplinearea={ ... }
+                        area={areaSettings}
+                        splinearea={splineAreaSettings}
+                        steparea={stepAreaSettings}
+                        stackedarea={stackedAreaSettings}
+                        stackedsplinearea={stackedSplineAreaSettings}
+                        fullstackedarea={fullStackedAreaSettings}
+                        fullstackedsplinearea={fullStackedSplineAreaSettings}
                     />
                 </Chart>
             );

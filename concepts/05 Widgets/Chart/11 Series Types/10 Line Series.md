@@ -77,13 +77,13 @@ To specify one or another series type, assign its name to the **series[]**.[type
             <DxSeries ... />
             ...
             <DxCommonSeriesSettings
-                :line=" ... "
-                :spline=" ... "
-                :stepline=" ... "
-                :stackedline=" ... "
-                :stackedspline=" ... "
-                :fullstackedline=" ... "
-                :fullstackedspline=" ... "
+                :line="lineSettings"
+                :spline="splineSettings"
+                :stepline="stepLineSettings"
+                :stackedline="stackedLineSettings"
+                :stackedspline="stackedSplineSettings"
+                :fullstackedline="fullStackedLineSettings"
+                :fullstackedspline="fullStackedSplineSettings"
             />
         </DxChart>
     </template>
@@ -99,6 +99,17 @@ To specify one or another series type, assign its name to the **series[]**.[type
             DxChart,
             DxSeries,
             DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                lineSettings: { ... },
+                splineSettings: { ... },
+                stepLineSettings: { ... },
+                stackedLineSettings: { ... },
+                stackedSplineSettings: { ... },
+                fullStackedLineSettings: { ... },
+                fullStackedSplineSettings: { ... }
+            };
         }
     }
     </script>
@@ -112,6 +123,14 @@ To specify one or another series type, assign its name to the **series[]**.[type
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
+    const lineSettings = { ... };
+    const splineSettings = { ... };
+    const stepLineSettings = { ... };
+    const stackedLineSettings = { ... };
+    const stackedSplineSettings = { ... };
+    const fullStackedLineSettings = { ... };
+    const fullStackedSplineSettings = { ... };
+
     class App extends React.Component {
         render() {
             return (
@@ -120,13 +139,13 @@ To specify one or another series type, assign its name to the **series[]**.[type
                     <Series ... />
                     ...
                     <CommonSeriesSettings
-                        line={ ... }
-                        spline={ ... }
-                        stepline={ ... }
-                        stackedline={ ... }
-                        stackedspline={ ... }
-                        fullstackedline={ ... }
-                        fullstackedspline={ ... }
+                        line={lineSettings}
+                        spline={splineSettings}
+                        stepline={stepLineSettings}
+                        stackedline={stackedLineSettings}
+                        stackedspline={stackedSplineSettings}
+                        fullstackedline={fullStackedLineSettings}
+                        fullstackedspline={fullStackedSplineSettings}
                     />
                 </Chart>
             );

@@ -61,18 +61,16 @@ Note that **Bubble** series require an additional data field that provides size 
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart
+        <DxChart ...
             :min-bubble-size="14"
-            :max-bubble-size="0.3"
-            ...
-        >
+            :max-bubble-size="0.3">
             <DxSeries
                 type="bubble"
                 size-field="size"
             />
             <DxSeries ... />
             ...
-            <DxCommonSeriesSettings :bubble=" ... "/>
+            <DxCommonSeriesSettings :bubble="bubbleSettings"/>
         </DxChart>
     </template>
 
@@ -87,6 +85,11 @@ Note that **Bubble** series require an additional data field that provides size 
             DxChart,
             DxSeries,
             DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                bubbleSettings: { ... }
+            };
         }
     }
     </script>
@@ -100,21 +103,21 @@ Note that **Bubble** series require an additional data field that provides size 
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
+    const bubbleSettings = { ... };
+
     class App extends React.Component {
         render() {
             return (
-                <Chart
+                <Chart ...
                     minBubbleSize={14}
-                    maxBubbleSize={0.3}
-                    ...
-                >
+                    maxBubbleSize={0.3}>
                     <Series
                         type="bubble"
                         sizeField="size"
                     />
                     <Series ... />
                     ...
-                    <CommonSeriesSettings bubble={ ... } />
+                    <CommonSeriesSettings bubble={bubbleSettings} />
                 </Chart>
             );
         }

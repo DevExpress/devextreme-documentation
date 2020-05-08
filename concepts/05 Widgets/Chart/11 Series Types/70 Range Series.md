@@ -73,8 +73,8 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
             <DxSeries ... />
             ...
             <DxCommonSeriesSettings
-                :rangearea=" ... "
-                :rangebar=" ... "
+                :rangearea="rangeAreaSettings"
+                :rangebar="rangeBarSettings"
             />
         </DxChart>
     </template>
@@ -90,6 +90,12 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
             DxChart,
             DxSeries,
             DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                rangeAreaSettings: { ... },
+                rangeBarSettings: { ... }
+            };
         }
     }
     </script>
@@ -103,6 +109,9 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
+    const rangeAreaSettings = { ... };
+    const rangeBarSettings = { ... };
+
     class App extends React.Component {
         render() {
             return (
@@ -115,8 +124,8 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
                     <Series ... />
                     ...
                     <CommonSeriesSettings
-                        rangearea={ ... }
-                        rangebar={ ... }
+                        rangearea={rangeAreaSettings}
+                        rangebar={rangeBarSettings}
                     />
                 </Chart>
             );

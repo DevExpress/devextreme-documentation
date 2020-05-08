@@ -86,10 +86,10 @@ Regulating the empty space on a bar's sides controls the relative bar width. Use
         render() {
             return (
                 <Chart ... >
-                    <Series barPadding={0.1} /> <!-- for an individual series -->
+                    <Series barPadding={0.1} /> {/* for an individual series */}
                     <Series ... />
                     ...
-                    <CommonSeriesSettings barPadding={0.1}/> <!-- for all series in the chart -->
+                    <CommonSeriesSettings barPadding={0.1}/> {/* for all series in the chart */}
                 </Chart>
             );
         }
@@ -140,8 +140,7 @@ The parent group's width can be specified using the [barGroupPadding](/api-refer
     <!-- tab: App.vue -->
     <template> 
         <DxChart ...
-            :bar-group-padding="0.2"
-        >
+            :bar-group-padding="0.2">
         </DxChart>
     </template>
 
@@ -165,8 +164,7 @@ The parent group's width can be specified using the [barGroupPadding](/api-refer
         render() {
             return (
                 <Chart ...
-                    barGroupPadding={0.2}
-                >
+                    barGroupPadding={0.2}>
                 </Chart>
             );
         }

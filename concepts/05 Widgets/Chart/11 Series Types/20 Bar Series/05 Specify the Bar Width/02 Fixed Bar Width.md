@@ -87,10 +87,10 @@ The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Se
         render() {
             return (
                 <Chart ... >
-                    <Series barWidth={50} /> <!-- for an individual series -->
+                    <Series barWidth={50} /> {/* for an individual series */}
                     <Series ... />
                     ...
-                    <CommonSeriesSettings barWidth={50}/> <!-- for all series in the chart -->
+                    <CommonSeriesSettings barWidth={50}/> {/* for all series in the chart */}
                 </Chart>
             );
         }
@@ -141,8 +141,7 @@ Bar groups' width can be changed using the [barGroupWidth](/api-reference/20%20D
     <!-- tab: App.vue -->
     <template> 
         <DxChart ...
-            :bar-group-width="250"
-        >
+            :bar-group-width="250">
         </DxChart>
     </template>
 
@@ -166,8 +165,7 @@ Bar groups' width can be changed using the [barGroupWidth](/api-reference/20%20D
         render() {
             return (
                 <Chart ...
-                    barGroupWidth={250}
-                >
+                    barGroupWidth={250}>
                 </Chart>
             );
         }

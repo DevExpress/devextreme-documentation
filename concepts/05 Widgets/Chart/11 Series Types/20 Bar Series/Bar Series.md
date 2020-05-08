@@ -65,9 +65,9 @@ To specify one or another series type, assign its name to the **series[]**.[type
             <DxSeries ... />
             ...
             <DxCommonSeriesSettings
-                :bar=" ... "
-                :stackedbar=" ... "
-                :fullstackedbar=" ... "
+                :bar="barSettings"
+                :stackedbar="stackedBarSettings"
+                :fullstackedbar="fullStackedBarSettings"
             />
         </DxChart>
     </template>
@@ -83,6 +83,13 @@ To specify one or another series type, assign its name to the **series[]**.[type
             DxChart,
             DxSeries,
             DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                barSettings: { ... },
+                stackedBarSettings: { ... },
+                fullStackedBarSettings: { ... }
+            };
         }
     }
     </script>
@@ -96,6 +103,10 @@ To specify one or another series type, assign its name to the **series[]**.[type
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
+    const barSettings = { ... };
+    const stackedBarSettings = { ... };
+    const fullStackedBarSettings = { ... };
+
     class App extends React.Component {
         render() {
             return (
@@ -104,9 +115,9 @@ To specify one or another series type, assign its name to the **series[]**.[type
                     <Series ... />
                     ...
                     <CommonSeriesSettings
-                        bar={ ... }
-                        stackedbar={ ... }
-                        fullstackedbar={ ... }
+                        bar={barSettings}
+                        stackedbar={stackedBarSettings}
+                        fullstackedbar={fullStackedBarSettings}
                     />
                 </Chart>
             );

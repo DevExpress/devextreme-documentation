@@ -264,7 +264,6 @@ To define resource kinds, assign an array of objects specifying them to the [res
                         displayExpr='name'          // Resource instance's field used instead of 'text'
                         label='Teacher'
                         dataSource={teachers} />
-
                 </Scheduler>
             );
         }

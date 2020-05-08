@@ -122,7 +122,7 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         // ...
     ];
     const currentDate = new Date(2016, 4, 24);
-    const renderResourceCell = (data) => <i style='color: blue'>{{data.text}}</i>;
+    const renderResourceCell = (data) => <i style='color: blue'>{data.text}</i>;
 
     class App extends React.Component {
         render() {

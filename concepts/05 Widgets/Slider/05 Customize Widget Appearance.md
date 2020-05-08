@@ -9,10 +9,10 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
             // . . .
             label: {
                 visible: true,
-                position: "bottom", // or "top"
                 format: function(value) {
                     return value + " units";
-                }
+                },
+                position: "bottom" // or "top"
             }
         });
     });
@@ -50,9 +50,9 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
         <DxSlider>
             <DxLabel
                 :visible="true"
-                position="bottom"
                 :format="format"
-            />
+                position="bottom"> <!-- or "top" -->
+            </DxLabel>
         </DxSlider>
     </template>
 
@@ -97,9 +97,9 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
                 <Slider>
                     <Label
                         visible={true}
-                        posible="bottom" // or 'top'
                         format={format}
-                    />
+                        posible="bottom"> {/* or "top" */}
+                    </Label>
                 </Slider>
             );
         }
@@ -120,11 +120,11 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
             // . . .
             tooltip: {
                 enabled: true,
-                position: "bottom", // or "top"
-                showMode: "always", // or "onHover"
+                position: "bottom",
                 format: function(value) {
                     return value + " units";
-                }
+                },
+                showMode: "always" // or "onHover"
             }
         });
     });
@@ -136,8 +136,8 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
         <dxo-tooltip
             [enabled]="true"
             [format]="format"
-            showMode="always"
-            position="bottom"> <!-- or "top" -->
+            position="bottom"
+            showMode="always"> <!-- or "onHover" -->
         </dxo-tooltip>
     </dx-slider>
 
@@ -164,9 +164,9 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
             <DxTooltip
                 :enabled="true"
                 position="bottom"
-                showMode="always"
                 :format="format"
-            />
+                showMode="always"> <!-- or "onHover" -->
+            </DxTooltip>
         </DxSlider>
     </template>
 
@@ -211,10 +211,10 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
                 <Slider>
                     <Tooltip
                         enabled={true}
-                        position="bottom" // or "top"
-                        showMode="always" // or "onHover"
+                        position="bottom"
                         format={format}
-                    />
+                        showMode="always"> {/* or "onHover" */}
+                    </Tooltip>
                 </Slider>
             );
         }

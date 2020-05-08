@@ -63,7 +63,6 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
             <template #resource-cell="data">
                 <i style="color: blue">{{data.text}}</i>
             </template>
-
         </DxScheduler>
     </template>
 

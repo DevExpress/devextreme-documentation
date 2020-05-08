@@ -126,9 +126,9 @@ To define resource kinds, assign an array of objects specifying them to the [res
         <!-- Definition of the second resource kind -->
         <dxi-resource
             fieldExpr="teacherId"
-            valueExpr="guid"            // Resource instance's field used instead of "id"
-            colorExpr="clr"             // Resource instance's field used instead of "color"
-            displayExpr="name"          // Resource instance's field used instead of "text"
+            valueExpr="guid"            <!-- Resource instance's field used instead of "id" -->
+            colorExpr="clr"             <!-- Resource instance's field used instead of "color" -->
+            displayExpr="name"       <!-- Resource instance's field used instead of "text" -->
             label="Teacher"
             [dataSource]="teachers">
         </dxi-resource>

@@ -118,7 +118,7 @@ The following code defines three views: the first is not customized, the second 
             <template #time-cell="{ data }">
                 <i style="color: green">{{data.text}}</i>
             </template>
-        />
+        </DxScheduler>
     </template>
 
     <script>

@@ -137,13 +137,15 @@ To group appointments by resources, assign an array to the [groups](/api-referen
                 <Scheduler
                     dataSource={appointments}
                     groups={groups}>
-                <Resource
-                    fieldExpr="roomId"
-                    dataSource={roomResources} />
-                <DxResource
-                    fieldExpr="teacherId"
-                    dataSource={teacherResources} />
-                <Scheduler/>
+
+                    <Resource
+                        fieldExpr="roomId"
+                        dataSource={roomResources} />
+                    <Resource
+                        fieldExpr="teacherId"
+                        dataSource={teacherResources} />
+
+                </Scheduler>
             );
         }
     }
@@ -176,10 +178,6 @@ You can change resource headers' orientation in an individual view using the **v
     // ...
     export class AppComponent {
         // ...
-        views = ["month", {
-            type: "day",
-            groupOrientation: "vertical"
-        }];
     }
     @NgModule({
         imports: [
@@ -190,9 +188,77 @@ You can change resource headers' orientation in an individual view using the **v
     })
 
     <!--HTML-->
-    <dx-scheduler ...
-        [views]="views">
+    <dx-scheduler ... >
+
+        <dxi-view type="month">
+        </dxi-view>
+
+        <dxi-view
+            type="day"
+            groupOrientaion="vertical">
+        </dxi-view>
+
     </dx-scheduler>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ... >
+            <DxView type="month" />
+
+            <DxView
+                type="day"
+                groupOrientaion="vertical" />
+
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler, { DxView } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler,
+            DxView
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler, { View } from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler ... >
+
+                    <View type="month" />
+
+                    <View
+                        type="day"
+                        groupOrientaion="vertical" />
+
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
 
 ---
 

@@ -76,7 +76,7 @@ You can enable data aggregation for individual series, all series of a specific 
     <template> 
         <DxChart ... >
             <DxCommonSeriesSettings ...
-                :fullstackedbar="{ aggregation: { enabled: true } }" <!-- Enables data aggregation for all Full-Stacked Bar series -->
+                :fullstackedbar="fullStackedBarSettings" <!-- Enables data aggregation for all Full-Stacked Bar series -->
             >
                 <DxAggregation :enabled="true"/> <!-- Enables data aggregation for all series in the Chart -->
             </DxCommonSeriesSettings>
@@ -99,6 +99,11 @@ You can enable data aggregation for individual series, all series of a specific 
             DxCommonSeriesSettings,
             DxSeries,
             DxAggregation
+        },
+        data() {
+            return {
+                fullStackedBarSettings: { aggregation: { enabled: true } }
+            };
         }
     }
     </script>
@@ -113,17 +118,19 @@ You can enable data aggregation for individual series, all series of a specific 
         Aggregation
     } from 'devextreme-react/chart';
 
+    const fullStackedBarSettings = { aggregation: { enabled: true } };
+
     class App extends React.Component {
         render() {
             return (
                 <Chart ... >
                     <CommonSeriesSettings ...
-                        fullstackedbar={ { aggregation: { enabled: true } } } <!-- Enables data aggregation for all Full-Stacked Bar series -->
+                        fullstackedbar={fullStackedBarSettings} {/* Enables data aggregation for all Full-Stacked Bar series */}
                     >
-                        <Aggregation enabled={true} /> <!-- Enables data aggregation for all series in the Chart -->
+                        <Aggregation enabled={true} /> {/* Enables data aggregation for all series in the Chart */}
                     </CommonSeriesSettings>
                     <Series>
-                        <Aggregation enabled={true} /> <!-- Enables data aggregation for an individual series -->
+                        <Aggregation enabled={true} /> {/* Enables data aggregation for an individual series */}
                     </Series>
                 </Chart>
             );

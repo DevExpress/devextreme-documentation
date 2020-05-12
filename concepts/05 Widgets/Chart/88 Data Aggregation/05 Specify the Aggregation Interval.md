@@ -89,10 +89,10 @@ Use the **argumentAxis**.[aggregationInterval](/api-reference/20%20Data%20Visual
                 return (
                     <Chart ... >
                         <ArgumentAxis
-                            aggregationInterval={100} <!-- A new interval every 100 units -->
-                            aggregationInterval="day"  <!-- A new interval every day -->
+                            aggregationInterval={100} {/* A new interval every 100 units */}
+                            aggregationInterval="day"  {/* A new interval every day */}
                         >
-                            <AggregationInterval days={5} /> <!-- A new interval every five days -->
+                            <AggregationInterval days={5} /> {/* A new interval every five days */}
                         </ArgumentAxis>
                     </Chart>
                 );
@@ -175,7 +175,7 @@ Use the **argumentAxis**.[aggregationGroupWidth](/api-reference/20%20Data%20Visu
             render() {
                 return (
                     <Chart ... >
-                        <ArgumentAxis aggregationGroupWidth={100} /> <!-- A new interval every 100 pixels -->
+                        <ArgumentAxis aggregationGroupWidth={100} /> {/* A new interval every 100 pixels */}
                     </Chart>
                 );
             }

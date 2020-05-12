@@ -83,8 +83,7 @@ In the following code, a custom aggregation function implements the <a href="htt
     <!-- tab: App.vue -->
     <template> 
         <DxChart ...
-            :data-source="data"
-        >
+            :data-source="data">
             <DxSeries
                 argument-field="argument"
                 value-field="value"
@@ -151,8 +150,7 @@ In the following code, a custom aggregation function implements the <a href="htt
         render() {
             return (
                 <Chart ...
-                    dataSource={data}
-                >
+                    dataSource={data}>
                     <Series
                         argumentField="argument"
                         valueField="value"

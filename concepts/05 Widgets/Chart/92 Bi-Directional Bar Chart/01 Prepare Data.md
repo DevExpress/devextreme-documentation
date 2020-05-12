@@ -90,8 +90,8 @@ To prepare data for the bi-directional bar chart, convert one of the two sets of
         data() {
             return {
                 population: [
-                    { age: "0-4", male: 3.1, female: 2.9 },
-                    { age: "5-9", male: 3.1, female: 3.0 },
+                    { age: '0-4', male: 3.1, female: 2.9 },
+                    { age: '5-9', male: 3.1, female: 3.0 },
                     // ...
                 ],
                 dataSource: new DataSource({
@@ -120,8 +120,8 @@ To prepare data for the bi-directional bar chart, convert one of the two sets of
     import ArrayStore from 'devextreme/data/array_store';
 
     const population = [
-        { age: "0-4", male: 3.1, female: 2.9 },
-        { age: "5-9", male: 3.1, female: 3.0 },
+        { age: '0-4', male: 3.1, female: 2.9 },
+        { age: '5-9', male: 3.1, female: 3.0 },
         // ...
     ];
 

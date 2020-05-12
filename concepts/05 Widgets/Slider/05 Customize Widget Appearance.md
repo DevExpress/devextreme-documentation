@@ -51,8 +51,7 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
             <DxLabel
                 :visible="true"
                 :format="format"
-                position="bottom"> <!-- or "top" -->
-            </DxLabel>
+                position="bottom" /> <!-- or "top" -->
         </DxSlider>
     </template>
 

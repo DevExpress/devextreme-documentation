@@ -95,7 +95,6 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
                         visible={true}
                         format={format}
                         position="bottom" /> {/* or "top" */}
-                    </Label>
                 </Slider>
             );
         }

@@ -13,7 +13,7 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
 
 * **CDN or local file**        
 
-    Link the required dictionaries using the `<script>` tag.
+    Link the required dictionaries using the `<script>` tag. Place the links *after* a link to the DevExtreme library:
 
     ---
     ##### CDN

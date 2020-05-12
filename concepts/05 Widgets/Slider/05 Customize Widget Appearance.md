@@ -202,8 +202,7 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
                         enabled={true}
                         position="bottom"
                         format={format}
-                        showMode="always"> {/* or "onHover" */}
-                    </Tooltip>
+                        showMode="always" /> {/* or "onHover" */}
                 </Slider>
             );
         }

@@ -83,17 +83,18 @@ To prepare data for the bi-directional bar chart, convert one of the two sets of
     import DataSource from 'devextreme/data/data_source';
     import ArrayStore from 'devextreme/data/array_store';
 
+    const population = [
+        { age: '0-4', male: 3.1, female: 2.9 },
+        { age: '5-9', male: 3.1, female: 3.0 },
+        // ...
+    ];
+
     export default {
         components: {
             DxChart
         },
         data() {
             return {
-                population: [
-                    { age: '0-4', male: 3.1, female: 2.9 },
-                    { age: '5-9', male: 3.1, female: 3.0 },
-                    // ...
-                ],
                 dataSource: new DataSource({
                     store: new ArrayStore({
                         data: population
@@ -128,24 +129,26 @@ To prepare data for the bi-directional bar chart, convert one of the two sets of
     class App extends React.Component {
         constructor(props) {
             super(props);
-            this.dataSource = new DataSource({
-                store: new ArrayStore({
-                    data: population
-                }),
-                map: (dataItem) => {
-                    return {
-                        age: dataItem.age,
-                        male: dataItem.male,
-                        female: -dataItem.female // Changing the values' sign
+            this.state = {
+                dataSource: new DataSource({
+                    store: new ArrayStore({
+                        data: population
+                    }),
+                    map: (dataItem) => {
+                        return {
+                            age: dataItem.age,
+                            male: dataItem.male,
+                            female: -dataItem.female // Changing the values' sign
+                        }
                     }
-                }
-            });
+                })
+            };
         }
 
         render() {
             return (
                 <Chart ...
-                    dataSource={this.dataSource}>
+                    dataSource={this.state.dataSource}>
                 </Chart>
             );
         }

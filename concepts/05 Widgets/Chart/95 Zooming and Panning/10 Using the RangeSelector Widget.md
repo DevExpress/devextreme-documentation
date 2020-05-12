@@ -153,9 +153,9 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
                     dataSource={data}
                     onValueChanged={this.updateChartVisualRange}
                 >
-                    <!-- Displays the Chart in the background of the RangeSelector -->
+                    {/* Displays the Chart in the background of the RangeSelector */}
                     <RsChart series={seriesConfiguration} />
-                    <!-- Makes zooming and panning smoother -->
+                    {/* Makes zooming and panning smoother */}
                     <Behavior callValueChanged="onMoving" />
                 </RangeSelector>
             );
@@ -216,8 +216,7 @@ When your data source is updated in real time, the behavior of both the **Chart*
         <DxChart ... >
         </DxChart>
         <DxRangeSelector ...
-            selected-range-update-mode="keep"
-        >
+            selected-range-update-mode="keep"> <!-- the ranges remain unchanged -->
         </DxRangeSelector>
     </template>
 
@@ -246,8 +245,7 @@ When your data source is updated in real time, the behavior of both the **Chart*
                 <Chart ... >
                 </Chart>
                 <RangeSelector ...
-                    selectedRangeUpdateMode="keep"
-                >
+                    selectedRangeUpdateMode="keep"> {/* the ranges remain unchanged */}
                 </RangeSelector>
             );
         }
@@ -308,8 +306,7 @@ If you need to fix the zoom window and allow users to only move it along the sca
         <DxChart ... >
         </DxChart>
         <DxRangeSelector ...
-            v-model="range"
-        >
+            v-model="range">
             <DxScale
                 :min-range="10"
                 :max-range="10"
@@ -352,8 +349,7 @@ If you need to fix the zoom window and allow users to only move it along the sca
                 <Chart ... >
                 </Chart>
                 <RangeSelector ...
-                    defaultValue={[0, 10]}
-                >
+                    defaultValue={[0, 10]}>
                     <Scale
                         minRange={10}
                         maxRange={10}

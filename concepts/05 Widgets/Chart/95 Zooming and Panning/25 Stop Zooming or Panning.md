@@ -50,8 +50,7 @@ For example, you can disallow users to zoom in further if the visual range's len
     <!-- tab: App.vue -->
     <template> 
         <DxChart ...
-            @zoom-end="chart_zoomEnd"
-        >
+            @zoom-end="chart_zoomEnd">
             <DxZoomAndPan
                 argument-axis="both"
                 value-axis="both"
@@ -89,8 +88,7 @@ For example, you can disallow users to zoom in further if the visual range's len
         render() {
             return (
                 <Chart ...
-                    onZoomEnd={chart_zoomEnd}
-                >
+                    onZoomEnd={chart_zoomEnd}>
                     <ZoomAndPan
                         argumentAxis="both"
                         valueAxis="both"

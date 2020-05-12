@@ -55,9 +55,8 @@ You can configure the scrollbar using the [scrollBar](/api-reference/20%20Data%2
                 argument-axis="both"
                 value-axis="both"
             />
-            <DxScrollBar
+            <DxScrollBar ...
                 :visible="true"
-                ...
             />
         </DxChart>
     </template>
@@ -94,9 +93,8 @@ You can configure the scrollbar using the [scrollBar](/api-reference/20%20Data%2
                         argumentAxis="both"
                         valueAxis="both"
                     />
-                    <ScrollBar
+                    <ScrollBar ...
                         visible={true}
-                        ...
                     />
                 </Chart>
             );

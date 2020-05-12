@@ -34,6 +34,55 @@ To zoom a standalone **Chart** initially, specify the axis' [visualRange](/api-r
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxArgumentAxis :visual-range="chart_visualRange"/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis
+        },
+        data() {
+            return {
+                chart_visualRange: [0, 10]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+
+    const chart_visualRange = [0, 10];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ArgumentAxis visualRange={chart_visualRange} />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####
@@ -90,8 +139,7 @@ If the **Chart** is [bound to the RangeSelector](/concepts/05%20Widgets/Chart/95
             <DxArgumentAxis :visual-range="chart_visualRange"/>
         </DxChart>
         <DxRangeSelector ...
-            :value.sync="chart_visualRange"
-        >
+            :value.sync="chart_visualRange">
         </DxRangeSelector>
     </template>
 
@@ -137,8 +185,7 @@ If the **Chart** is [bound to the RangeSelector](/concepts/05%20Widgets/Chart/95
                     <ArgumentAxis visualRange={this.state.chart_visualRange} />
                 </Chart>
                 <RangeSelector ...
-                    onValueChanged={this.updateChartVisualRange}
-                >
+                    onValueChanged={this.updateChartVisualRange}>
                 </RangeSelector>
             );
         }

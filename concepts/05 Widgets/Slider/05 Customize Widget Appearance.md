@@ -276,10 +276,6 @@ To specify whether or not the part of the scale from the beginning to the slider
     import { Slider } from 'devextreme-react/slider';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Slider

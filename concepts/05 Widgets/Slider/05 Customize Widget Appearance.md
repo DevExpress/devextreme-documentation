@@ -88,10 +88,6 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
     }
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Slider>

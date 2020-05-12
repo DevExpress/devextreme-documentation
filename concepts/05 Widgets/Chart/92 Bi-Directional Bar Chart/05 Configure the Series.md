@@ -32,6 +32,72 @@ You need two **Stacked Bar** series for the bi-directional bar chart. The follow
         <dxi-series valueField="female" name="Female"></dxi-series>
     </dx-chart>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxCommonSeriesSettings
+                type="stackedbar"
+                argument-field="age"
+            />
+            <DxSeries 
+                value-field="male"
+                name="Male"
+            />
+            <DxSeries
+                value-field="female"
+                name="Female"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Series
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <CommonSeriesSettings
+                        type="stackedbar"
+                        argumentField="age"
+                    />
+                    <Series 
+                        valueField="male"
+                        name="Male"
+                    />
+                    <Series
+                        valueField="female"
+                        name="Female"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 ---
 
 #####See Also#####

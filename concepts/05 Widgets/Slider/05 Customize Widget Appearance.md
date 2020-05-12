@@ -195,10 +195,6 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
     }
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Slider>

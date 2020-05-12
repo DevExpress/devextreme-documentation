@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Specifies the attributes to be passed on to the underlying file input element.
+Specifies the attributes to be passed on to the underlying `<input>` element of the `file` type.
 
 ---
 ---

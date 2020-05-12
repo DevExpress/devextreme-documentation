@@ -52,6 +52,64 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries type="scatter"/>
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings :scatter="scatterSettings"/>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                scatterSettings: { ... }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    const scatterSettings = { ... };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series type="scatter" />
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings scatter={scatterSettings} />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Refer to the [ScatterSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ScatterSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/ScatterSeries/') section of the API Reference for a full list of options available to a **Scatter** series.

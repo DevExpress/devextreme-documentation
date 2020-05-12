@@ -47,6 +47,57 @@ The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Se
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries :bar-width="50"/> <!-- for an individual series -->
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings :bar-width="50"/> <!-- for all series in the chart -->
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series barWidth={50} /> {/* for an individual series */}
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings barWidth={50}/> {/* for all series in the chart */}
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 A bar's maximum width is limited. In single-series charts, it cannot be greater than the interval between two [major ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Ticks/'). In multi-series charts, it depends on the number of [bars in the parent group](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/#Specify_the_Bar_Width') and this group's actual width. 
@@ -84,5 +135,42 @@ Bar groups' width can be changed using the [barGroupWidth](/api-reference/20%20D
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :bar-group-width="250">
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    barGroupWidth={250}>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---

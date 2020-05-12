@@ -68,6 +68,92 @@ To specify one or another series type, assign its name to the **series[]**.[type
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries type="spline"/>
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings
+                :line="lineSettings"
+                :spline="splineSettings"
+                :stepline="stepLineSettings"
+                :stackedline="stackedLineSettings"
+                :stackedspline="stackedSplineSettings"
+                :fullstackedline="fullStackedLineSettings"
+                :fullstackedspline="fullStackedSplineSettings"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                lineSettings: { ... },
+                splineSettings: { ... },
+                stepLineSettings: { ... },
+                stackedLineSettings: { ... },
+                stackedSplineSettings: { ... },
+                fullStackedLineSettings: { ... },
+                fullStackedSplineSettings: { ... }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    const lineSettings = { ... };
+    const splineSettings = { ... };
+    const stepLineSettings = { ... };
+    const stackedLineSettings = { ... };
+    const stackedSplineSettings = { ... };
+    const fullStackedLineSettings = { ... };
+    const fullStackedSplineSettings = { ... };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series type="spline" />
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings
+                        line={lineSettings}
+                        spline={splineSettings}
+                        stepline={stepLineSettings}
+                        stackedline={stackedLineSettings}
+                        stackedspline={stackedSplineSettings}
+                        fullstackedline={fullStackedLineSettings}
+                        fullstackedspline={fullStackedSplineSettings}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Refer to the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API Reference for a full list of options available to a specific series type.

@@ -65,6 +65,84 @@ Note that the financial series require four value fields: [openValueField](/api-
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries
+                type="candlestick"
+                open-value-field="o"
+                close-value-field="c"
+                high-value-field="h"
+                low-value-field="l"
+            />
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings
+                :candlestick="candleStickSettings"
+                :stock="stockSettings"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        },
+        data() {
+            return {
+                candleStickSettings: { ... },
+                stockSettings: { ... }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/chart';
+
+    const candleStickSettings = { ... };
+    const stockSettings = { ... };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series
+                        type="candlestick"
+                        openValueField="o"
+                        closeValueField="c"
+                        highValueField="h"
+                        lowValueField="l"
+                    />
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings
+                        candlestick={candleStickSettings}
+                        stock={stockSettings}
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Financial series gauge price reduction by comparing the values of two neighboring points. Use the **reduction**.[level](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction/level.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/reduction/#level') option to specify whether it should be the open, close, high, or low values. The **reduction**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/reduction/#color') colors points whose value decreases.
@@ -106,6 +184,61 @@ Financial series gauge price reduction by comparing the values of two neighborin
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxSeries ... >
+                <DxReduction
+                    level="high"
+                    color="blue"
+                />
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxReduction
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxReduction
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        Reduction
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Series ... >
+                        <Reduction
+                            level="high"
+                            color="blue"
+                        />
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -239,7 +239,6 @@ You can change resource headers' orientation in an individual view using the **v
             type="day"
             groupOrientaion="vertical">
         </dxi-view>
-
     </dx-scheduler>
 
 ##### Vue

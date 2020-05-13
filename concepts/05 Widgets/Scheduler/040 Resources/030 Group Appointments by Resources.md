@@ -152,7 +152,7 @@ To group appointments by resources, assign an array to the [groups](/api-referen
 
     import Scheduler, { Resource } from 'devextreme-react/scheduler';
 
-    const groups = ['roomId', 'teacherId'];
+    const groups = ['roomId', 'teacherId']; // Groups appointments by rooms and by teachers
     const appointments = [{
         roomId: 1,
         teacherId: 2,

@@ -78,5 +78,102 @@ In the following code, a custom aggregation function implements the <a href="htt
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="data">
+            <DxSeries
+                argument-field="argument"
+                value-field="value">
+                <DxAggregation
+                    :enabled="true"
+                    :calculate="calcMedianFilter"
+                    method="custom"
+                />
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries,
+        DxAggregation
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxAggregation
+        },
+
+        data() {
+            return {
+                data: [
+                    { argument: 1, value: 10 },
+                    // ...
+                ]
+            };
+        },
+
+        methods: {
+            calcMedianFilter(aggregationInfo) {
+                if(aggregationInfo.data.length) {
+                    return {
+                        argument: aggregationInfo.intervalStart,
+                        value: aggregationInfo.data[Math.floor(aggregationInfo.data.length / 2)].value
+                    };
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series,
+        Aggregation
+    } from 'devextreme-react/chart';
+
+    const data = [
+        { argument: 1, value: 10 },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    dataSource={data}>
+                    <Series
+                        argumentField="argument"
+                        valueField="value">
+                        <Aggregation
+                            enabled={true}
+                            calculate={calcMedianFilter}
+                            method="custom"
+                        />
+                    </Series>
+                </Chart>
+            );
+        }
+    }
+
+    function calcMedianFilter(aggregationInfo) {
+        if(aggregationInfo.data.length) {
+            return {
+                argument: aggregationInfo.intervalStart,
+                value: aggregationInfo.data[Math.floor(aggregationInfo.data.length / 2)].value
+            };
+        }
+    }
+
+    export default App;
+
 ---
 

@@ -190,7 +190,6 @@ To group appointments by resources, assign an array to the [groups](/api-referen
                     <Resource
                         fieldExpr="teacherId"
                         dataSource={teachers} />
-
                 </Scheduler>
             );
         }

@@ -129,26 +129,25 @@ To prepare data for the bi-directional bar chart, convert one of the two sets of
     class App extends React.Component {
         constructor(props) {
             super(props);
-            this.state = {
-                dataSource: new DataSource({
-                    store: new ArrayStore({
-                        data: population
-                    }),
-                    map: (dataItem) => {
-                        return {
-                            age: dataItem.age,
-                            male: dataItem.male,
-                            female: -dataItem.female // Changing the values' sign
-                        }
+
+            this.dataSource = new DataSource({
+                store: new ArrayStore({
+                    data: population
+                }),
+                map: (dataItem) => {
+                    return {
+                        age: dataItem.age,
+                        male: dataItem.male,
+                        female: -dataItem.female // Changing the values' sign
                     }
-                })
-            };
+                }
+            });
         }
 
         render() {
             return (
                 <Chart ...
-                    dataSource={this.state.dataSource}>
+                    dataSource={this.dataSource}>
                 </Chart>
             );
         }

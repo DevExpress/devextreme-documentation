@@ -95,7 +95,7 @@ UI elements like [tooltips](/concepts/05%20Widgets/Chart/30%20Tooltips/00%20Over
                 };
             },
             customizeLabel(axisValue) {
-                return Math.abs(axisValue.value) + '%';
+                return `${Math.abs(axisValue.value)}%`;
             }
         }
     }
@@ -134,7 +134,7 @@ UI elements like [tooltips](/concepts/05%20Widgets/Chart/30%20Tooltips/00%20Over
     }
 
     function customizeLabel(axisValue) {
-        return Math.abs(axisValue.value) + '%';
+        return `${Math.abs(axisValue.value)}%`;
     }
 
 ---

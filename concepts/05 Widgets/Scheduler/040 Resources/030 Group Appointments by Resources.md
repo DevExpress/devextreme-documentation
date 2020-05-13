@@ -113,7 +113,7 @@ To group appointments by resources, assign an array to the [groups](/api-referen
         },
         data() {
             return {
-                groups: ['roomId', 'teacherId'],
+                groups: ['roomId', 'teacherId'], // Groups appointments by rooms and by teachers
                 appointments: [{
                     roomId: 1,
                     teacherId: 2,

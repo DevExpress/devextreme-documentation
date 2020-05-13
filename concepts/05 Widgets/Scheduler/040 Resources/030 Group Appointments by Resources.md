@@ -234,10 +234,7 @@ You can change resource headers' orientation in an individual view using the **v
 
     <!--HTML-->
     <dx-scheduler ... >
-
-        <dxi-view type="month">
-        </dxi-view>
-
+        <dxi-view type="month"></dxi-view>
         <dxi-view
             type="day"
             groupOrientaion="vertical">

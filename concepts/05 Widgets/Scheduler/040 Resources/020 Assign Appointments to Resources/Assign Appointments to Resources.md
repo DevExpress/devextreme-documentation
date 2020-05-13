@@ -150,9 +150,9 @@ To define resource kinds, assign an array of objects specifying them to the [res
             <!-- Definition of the second resource kind -->
             <DxResource
                 field-expr="teacherId"
-                value-expr="guid"            // Resource instance's field used instead of "id"
-                color-expr="clr"             // Resource instance's field used instead of "color"
-                display-expr="name"          // Resource instance's field used instead of "text"
+                value-expr="guid"            <!-- Resource instance's field used instead of "id" -->
+                color-expr="clr"             <!-- Resource instance's field used instead of "color" -->
+                display-expr="name"          <!-- Resource instance's field used instead of "text" -->
                 label="Teacher"
                 :data-source="teachers" />
 

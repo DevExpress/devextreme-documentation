@@ -52,6 +52,7 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
     import { DxChartModule, DxRangeSelectorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        chart_visualRange = [ ... ];
         // Common data source for both widgets
         data = [ ... ];
         // Common series configuration for both widgets
@@ -65,6 +66,99 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart
+            :data-source="data"
+            :series="seriesConfiguration">
+            <DxArgumentAxis :visual-range="chart_visualRange"/>
+        </DxChart>
+        <DxRangeSelector
+            :data-source="data"
+            :value.sync="chart_visualRange">
+            <!-- Displays the Chart in the background of the RangeSelector -->
+            <DxRsChart :series="seriesConfiguration"/>
+            <!-- Makes zooming and panning smoother -->
+            <DxBehavior call-value-changed="onMoving"/>
+        </DxRangeSelector>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxArgumentAxis
+    } from 'devextreme-vue/chart';
+    import DxRangeSelector, {
+        DxChart as DxRsChart,
+        DxBehavior
+    } from 'devextreme-vue/range-selector';
+
+    export default {
+        components: {
+            DxChart,
+            DxArgumentAxis,
+            DxRangeSelector,
+            DxRsChart,
+            DxBehavior
+        },
+        data() {
+            return {
+                chart_visualRange: [ ... ],
+                // Common data source for both widgets
+                data: [ ... ],
+                // Common series configuration for both widgets
+                seriesConfiguration: [ ... ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ArgumentAxis
+    } from 'devextreme-react/chart';
+    import RangeSelector, {
+        Chart as RsChart,
+        Behavior
+    } from 'devextreme-react/range-selector';
+
+    // Common data source for both widgets
+    const data = [ ... ];
+    // Common series configuration for both widgets
+    const seriesConfiguration = [ ... ];
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { chart_visualRange: [ ... ] };
+            this.updateChartVisualRange = () => this.setState({ chart_visualRange: e.value });
+        }
+
+        render() {
+            return (
+                <Chart
+                    dataSource={data}
+                    series={seriesConfiguration}>
+                    <ArgumentAxis visualRange={this.state.chart_visualRange} />
+                </Chart>
+                <RangeSelector
+                    dataSource={data}
+                    onValueChanged={this.updateChartVisualRange}>
+                    {/* Displays the Chart in the background of the RangeSelector */}
+                    <RsChart series={seriesConfiguration} />
+                    {/* Makes zooming and panning smoother */}
+                    <Behavior callValueChanged="onMoving" />
+                </RangeSelector>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -111,6 +205,50 @@ When your data source is updated in real time, the behavior of both the **Chart*
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+        </DxChart>
+        <DxRangeSelector ...
+            selected-range-update-mode="keep"> <!-- the ranges remain unchanged -->
+        </DxRangeSelector>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+    import DxRangeSelector from 'devextreme-vue/range-selector';
+
+    export default {
+        components: {
+            DxChart,
+            DxRangeSelector
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+    import RangeSelector from 'devextreme-react/range-selector';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                </Chart>
+                <RangeSelector ...
+                    selectedRangeUpdateMode="keep"> {/* the ranges remain unchanged */}
+                </RangeSelector>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 
@@ -156,6 +294,68 @@ If you need to fix the zoom window and allow users to only move it along the sca
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+        </DxChart>
+        <DxRangeSelector ...
+            v-model="range">
+            <DxScale
+                :min-range="10"
+                :max-range="10"
+            />
+        </DxRangeSelector>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+    import DxRangeSelector, {
+        DxScale
+    } from 'devextreme-vue/range-selector';
+
+    export default {
+        components: {
+            DxChart,
+            DxRangeSelector,
+            DxScale
+        },
+        data() {
+            return {
+                range: [0, 10]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+    import RangeSelector, {
+        Scale
+    } from 'devextreme-react/range-selector';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                </Chart>
+                <RangeSelector ...
+                    defaultValue={[0, 10]}>
+                    <Scale
+                        minRange={10}
+                        maxRange={10}
+                    />
+                </RangeSelector>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

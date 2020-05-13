@@ -233,6 +233,56 @@ If you need to disable the mouse wheel or touch support, set the [allowMouseWhee
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxZoomAndPan
+                :allow-touch-gestures="false"
+                argument-axis="both"
+                value-axis="both"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxZoomAndPan
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxZoomAndPan
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        ZoomAndPan
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <ZoomAndPan
+                        allowTouchGestures={false}
+                        argumentAxis="both"
+                        valueAxis="both"
+                    />
+                </Chart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Users cannot zoom or scroll the chart out of the whole range. Refer to the [Visual and Whole Ranges](/concepts/05%20Widgets/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/Widgets/Chart/Axes/Visual_and_Whole_Ranges/') article for more information.

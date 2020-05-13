@@ -138,7 +138,6 @@ To define resource kinds, assign an array of objects specifying them to the [res
     <!-- tab: App.vue -->
     <template>
         <DxScheduler :resources="resources">
-
             <!-- Definition of the first resource kind -->
             <DxResource
                 field-expr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->

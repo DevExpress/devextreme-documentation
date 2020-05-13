@@ -86,8 +86,7 @@ In the following code, a custom aggregation function implements the <a href="htt
             :data-source="data">
             <DxSeries
                 argument-field="argument"
-                value-field="value"
-            >
+                value-field="value">
                 <DxAggregation
                     :enabled="true"
                     :calculate="calcMedianFilter"
@@ -153,8 +152,7 @@ In the following code, a custom aggregation function implements the <a href="htt
                     dataSource={data}>
                     <Series
                         argumentField="argument"
-                        valueField="value"
-                    >
+                        valueField="value">
                         <Aggregation
                             enabled={true}
                             calculate={calcMedianFilter}

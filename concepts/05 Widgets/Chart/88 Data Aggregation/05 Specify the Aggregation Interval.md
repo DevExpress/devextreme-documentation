@@ -53,8 +53,7 @@ Use the **argumentAxis**.[aggregationInterval](/api-reference/20%20Data%20Visual
             <DxChart ... >
                 <DxArgumentAxis
                     :aggregation-interval="100" <!-- A new interval every 100 units -->
-                    aggregation-interval="day"  <!-- A new interval every day -->
-                >
+                    aggregation-interval="day">  <!-- A new interval every day -->
                     <DxAggregationInterval :days="5"/> <!-- A new interval every five days -->
                 </DxArgumentAxis>
             </DxChart>
@@ -90,8 +89,7 @@ Use the **argumentAxis**.[aggregationInterval](/api-reference/20%20Data%20Visual
                     <Chart ... >
                         <ArgumentAxis
                             aggregationInterval={100} {/* A new interval every 100 units */}
-                            aggregationInterval="day"  {/* A new interval every day */}
-                        >
+                            aggregationInterval="day">  {/* A new interval every day */}
                             <AggregationInterval days={5} /> {/* A new interval every five days */}
                         </ArgumentAxis>
                     </Chart>

@@ -74,13 +74,11 @@ The following code shows how to specify aggregation methods for each series indi
                 <DxAggregation :enabled="true"/>
             </DxCommonSeriesSettings>
             <DxSeries ...
-                type="line"
-            >
+                type="line">
                 <DxAggregation method="min"/>
             </DxSeries>
             <DxSeries ...
-                type="bar"
-            >
+                type="bar">
                 <DxAggregation method="max"/>
             </DxSeries>
         </DxChart>
@@ -121,13 +119,11 @@ The following code shows how to specify aggregation methods for each series indi
                         <Aggregation enabled={true} />
                     </CommonSeriesSettings>
                     <Series ...
-                        type="line"
-                    >
+                        type="line">
                         <Aggregation method="min" />
                     </Series>
                     <Series ...
-                        type="bar"
-                    >
+                        type="bar">
                         <Aggregation method="max" />
                     </Series>
                 </Chart>

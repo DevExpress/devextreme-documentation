@@ -76,8 +76,7 @@ You can enable data aggregation for individual series, all series of a specific 
     <template> 
         <DxChart ... >
             <DxCommonSeriesSettings ...
-                :fullstackedbar="fullStackedBarSettings" <!-- Enables data aggregation for all Full-Stacked Bar series -->
-            >
+                :fullstackedbar="fullStackedBarSettings"> <!-- Enables data aggregation for all Full-Stacked Bar series -->
                 <DxAggregation :enabled="true"/> <!-- Enables data aggregation for all series in the Chart -->
             </DxCommonSeriesSettings>
             <DxSeries>
@@ -125,8 +124,7 @@ You can enable data aggregation for individual series, all series of a specific 
             return (
                 <Chart ... >
                     <CommonSeriesSettings ...
-                        fullstackedbar={fullStackedBarSettings} {/* Enables data aggregation for all Full-Stacked Bar series */}
-                    >
+                        fullstackedbar={fullStackedBarSettings}> {/* Enables data aggregation for all Full-Stacked Bar series */}
                         <Aggregation enabled={true} /> {/* Enables data aggregation for all series in the Chart */}
                     </CommonSeriesSettings>
                     <Series>

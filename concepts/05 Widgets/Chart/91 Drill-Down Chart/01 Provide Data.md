@@ -102,7 +102,7 @@ The main idea is to filter the data source by the `parentID` for different drill
     <!-- tab: App.vue -->
     <template> 
         <DxChart ...
-            :data-source="dxDataSource">
+            :data-source="dataSource">
             <DxSeries
                 argument-field="arg"
                 value-field="val"
@@ -127,7 +127,7 @@ The main idea is to filter the data source by the `parentID` for different drill
         },
         data() {
             return {
-                dxDataSource: this.filterData('')
+                dataSource: this.filterData('')
             };
         },
         methods: {
@@ -153,13 +153,13 @@ The main idea is to filter the data source by the `parentID` for different drill
     class App extends React.Component {
         constructor(props) {
             super(props);
-            this.state = { dxDataSource: this.filterData('') };
+            this.state = { dataSource: this.filterData('') };
         }
 
         render() {
             return (
                 <Chart ...
-                    dataSource={this.state.dxDataSource}>
+                    dataSource={this.state.dataSource}>
                     <Series
                         argumentField="arg"
                         valueField="val"

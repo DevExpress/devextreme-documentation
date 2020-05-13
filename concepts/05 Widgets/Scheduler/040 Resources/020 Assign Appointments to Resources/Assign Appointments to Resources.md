@@ -115,7 +115,6 @@ To define resource kinds, assign an array of objects specifying them to the [res
 
     <!--HTML-->
     <dx-scheduler ... >
-
         <!-- Definition of the first resource kind -->
         <dxi-resource
             fieldExpr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->

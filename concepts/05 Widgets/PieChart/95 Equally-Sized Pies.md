@@ -41,6 +41,51 @@ The **PieChart** widget comprises of a pie and other elements which can affect t
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            id="pieChartContainer1"
+            size-group="pies">
+        </DxPieChart>
+        <DxPieChart ...
+            id="pieChartContainer2"
+            size-group="pies">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                 <PieChart ...
+                    id="pieChartContainer1"
+                    sizeGroup="pies">
+                </PieChart>
+                <PieChart ...
+                    id="pieChartContainer2"
+                    sizeGroup="pies">
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 The widgets should have identical layouts, that is, the same container size, [title](/concepts/05%20Widgets/PieChart/58%20Title%20and%20Subtitle.md '/Documentation/Guide/Widgets/PieChart/Title_and_Subtitle/') and [legend](/concepts/05%20Widgets/PieChart/35%20Legend/00%20Overview.md '/Documentation/Guide/Widgets/PieChart/Legend/Overview/') position, etc. Note also that a single page can contain many size groups, but a widget can be a member of only one of them.

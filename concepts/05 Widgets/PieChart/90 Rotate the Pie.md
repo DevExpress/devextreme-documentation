@@ -32,6 +32,43 @@ The **PieChart** provides two options that control the layout algorithm, allowin
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            :start-angle="45"
+            segments-direction="anticlockwise"> <!-- or "clockwise" -->
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    startAngle={45}
+                    segmentsDirection="anticlockwise"> {/* or "clockwise" */}
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 You can try both these options on the **PieChart** below.

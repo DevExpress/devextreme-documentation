@@ -73,14 +73,12 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
     <template> 
         <DxChart
             :data-source="data"
-            :series="seriesConfiguration"
-        >
+            :series="seriesConfiguration">
             <DxArgumentAxis :visual-range="chart_visualRange"/>
         </DxChart>
         <DxRangeSelector
             :data-source="data"
-            :value.sync="chart_visualRange"
-        >
+            :value.sync="chart_visualRange">
             <!-- Displays the Chart in the background of the RangeSelector -->
             <DxRsChart :series="seriesConfiguration"/>
             <!-- Makes zooming and panning smoother -->
@@ -145,14 +143,12 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
             return (
                 <Chart
                     dataSource={data}
-                    series={seriesConfiguration}
-                >
+                    series={seriesConfiguration}>
                     <ArgumentAxis visualRange={this.state.chart_visualRange} />
                 </Chart>
                 <RangeSelector
                     dataSource={data}
-                    onValueChanged={this.updateChartVisualRange}
-                >
+                    onValueChanged={this.updateChartVisualRange}>
                     {/* Displays the Chart in the background of the RangeSelector */}
                     <RsChart series={seriesConfiguration} />
                     {/* Makes zooming and panning smoother */}

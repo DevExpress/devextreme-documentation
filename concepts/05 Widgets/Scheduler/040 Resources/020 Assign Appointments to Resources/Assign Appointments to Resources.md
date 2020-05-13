@@ -159,6 +159,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
+    import DataSource from 'devextreme/data/data_source';
     import { DxScheduler, DxResource } from 'devextreme-vue/scheduler';
 
     export default {
@@ -210,6 +211,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
+    import DataSource from 'devextreme/data/data_source';
     import { Scheduler, Resource } from 'devextreme-react/scheduler';
 
     const rooms = new DataSource({

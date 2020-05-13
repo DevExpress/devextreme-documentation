@@ -152,7 +152,6 @@ To define resource kinds, assign an array of objects specifying them to the [res
                 display-expr="name"          <!-- Resource instance's field used instead of "text" -->
                 label="Teacher"
                 :data-source="teachers" />
-
         </DxScheduler>
     </template>
 

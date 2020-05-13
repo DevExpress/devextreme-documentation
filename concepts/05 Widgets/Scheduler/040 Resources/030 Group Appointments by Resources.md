@@ -183,9 +183,7 @@ To group appointments by resources, assign an array to the [groups](/api-referen
             return (
                 <Scheduler
                     dataSource={appointments}
-                    groups={groups} {/* Groups appointments by rooms and by teachers */}
-                >
-
+                    groups={groups}>
                     <Resource
                         fieldExpr="roomId"
                         dataSource={rooms} />

@@ -286,13 +286,10 @@ You can change resource headers' orientation in an individual view using the **v
         render() {
             return (
                 <Scheduler ... >
-
                     <View type="month" />
-
                     <View
                         type="day"
                         groupOrientaion="vertical" />
-
                 </Scheduler>
             );
         }

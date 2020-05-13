@@ -1,16 +1,16 @@
-To group appointments by resources, assign an array to the [groups](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/groups.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups') option. Each element of this array is **fieldExpr** of a resource kind. Note that the resource headers' order depends on the resources' order in the [resources](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/') array. 
+To group appointments by resources, assign an array to the [groups](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/groups.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups') option. Each element of this array is **fieldExpr** of a resource kind. Note that the resource headers' order depends on the resources' order in the [resources](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/') array.
 
 ---
 
 ##### jQuery
 
     <!--JavaScript-->
-    var appointments = [{ 
-        roomId: 1,   
-        teacherId: 2,    
+    var appointments = [{
+        roomId: 1,
+        teacherId: 2,
         text: "Meeting",
         // ...
-    }, 
+    },
     // ...
     ];
 
@@ -32,32 +32,49 @@ To group appointments by resources, assign an array to the [groups](/api-referen
 ##### Angular
 
     <!--HTML-->
-    <dx-scheduler 
+    <dx-scheduler
         [dataSource]="appointments"
         [groups]="['roomId', 'teacherId']"> <!-- Groups appointments by rooms and by teachers -->
         <dxi-resource
             fieldExpr="roomId"
-            [dataSource]="roomResources">
+            [dataSource]="rooms">
         </dxi-resource>
         <dxi-resource
             fieldExpr="teacherId"
-            [dataSource]="teacherResources">
+            [dataSource]="teachers">
         </dxi-resource>
     </dx-scheduler>
 
     <!--TypeScript-->
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
-    export class AppComponent  { 
+    export class AppComponent  {
         // ...
-        appointments = [{ 
-            roomId: 1,   
-            teacherId: 2,    
+        appointments = [{
+            roomId: 1,
+            teacherId: 2,
             text: "Meeting",
             // ...
-        }, 
+        },
         // ...
         ];
+        rooms = [
+            // Resource instances
+            {
+                id: 1,              // Resource identifier
+                text: "Room101",    // Resource name
+                color: "red"        // Color for indicating appointments that use this resource
+            },
+            { id: 2, text: "Room102", color: "green" },
+            // ...
+        ];
+        teachers = [
+            // Resource instances
+            { id: 1, text: "John Heart", color: "yellow" },
+            { id: 2, text: "Sandra Johnson", color: "blue" },
+            // ...
+        ];
+        // ...
     }
     @NgModule({
         imports: [
@@ -66,6 +83,118 @@ To group appointments by resources, assign an array to the [groups](/api-referen
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="appointments"
+            :groups="groups">
+            <DxResource
+                field-expr="roomId"
+                :data-source="rooms"/>
+            <DxResource
+                field-expr="teacherId"
+                :data-source="teachers"/>
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler, { DxResource } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler,
+            DxResource
+        },
+        data() {
+            return {
+                groups: ['roomId', 'teacherId'], // Groups appointments by rooms and by teachers
+                appointments: [{
+                    roomId: 1,
+                    teacherId: 2,
+                    text: "Meeting",
+                    // ...
+                }],
+                rooms: [
+                    // Resource instances
+                    {
+                        id: 1,              // Resource identifier
+                        text: "Room101",    // Resource name
+                        color: "red"        // Color for indicating appointments that use this resource
+                    },
+                    { id: 2, text: "Room102", color: "green" },
+                    // ...
+                ],
+                teachers: [
+                    // Resource instances
+                    { id: 1, text: "John Heart", color: "yellow" },
+                    { id: 2, text: "Sandra Johnson", color: "blue" },
+                    // ...
+                ]
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler, { Resource } from 'devextreme-react/scheduler';
+
+    const groups = ['roomId', 'teacherId']; // Groups appointments by rooms and by teachers
+    const appointments = [{
+        roomId: 1,
+        teacherId: 2,
+        text: "Meeting",
+        // ...
+    },
+    // ...
+    ];
+    const rooms = [
+        // Resource instances
+        {
+            id: 1,              // Resource identifier
+            text: "Room101",    // Resource name
+            color: "red"        // Color for indicating appointments that use this resource
+        },
+        { id: 2, text: "Room102", color: "green" },
+        // ...
+    ];
+    const teachers = [
+        // Resource instances
+        { id: 1, text: "John Heart", color: "yellow" },
+        { id: 2, text: "Sandra Johnson", color: "blue" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={appointments}
+                    groups={groups}>
+                    <Resource
+                        fieldExpr="roomId"
+                        dataSource={rooms} />
+                    <Resource
+                        fieldExpr="teacherId"
+                        dataSource={teachers} />
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
 
 ---
 
@@ -94,10 +223,6 @@ You can change resource headers' orientation in an individual view using the **v
     // ...
     export class AppComponent {
         // ...
-        views = ["month", {
-            type: "day",
-            groupOrientation: "vertical"
-        }];
     }
     @NgModule({
         imports: [
@@ -108,9 +233,68 @@ You can change resource headers' orientation in an individual view using the **v
     })
 
     <!--HTML-->
-    <dx-scheduler ... 
-        [views]="views">
+    <dx-scheduler ... >
+        <dxi-view type="month"></dxi-view>
+        <dxi-view
+            type="day"
+            groupOrientaion="vertical">
+        </dxi-view>
     </dx-scheduler>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ... >
+            <DxView type="month" />
+            <DxView
+                type="day"
+                group-orientaion="vertical" />
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler, { DxView } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler,
+            DxView
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler, { View } from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler ... >
+                    <View type="month" />
+                    <View
+                        type="day"
+                        groupOrientaion="vertical" />
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
 
 ---
 

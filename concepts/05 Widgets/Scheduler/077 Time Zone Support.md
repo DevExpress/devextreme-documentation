@@ -14,7 +14,7 @@ The calculated offset is then added to the date-time value.
 
 For example, if the **timeZone** is *"Europe/Berlin"* (UTC offset +1), and the client is in Tokyo (UTC offset +9), the calculated offset is 1 - 9 = -8. The time of all appointments is shifted back 8 hours: the appointment that started at `2019-01-01T12:00:00` starts at `2019-01-01T04:00:00`. The same applies when the time-zone offset is specified in the date-time value (`2019-01-01T12:00:00+09:00`), except that this offset is used instead of the client offset.
 
-To allow users to change appointment time zones, enable the **editing**.[allowEditingTimeZones](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowEditingTimeZones.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowEditingTimeZones') option.
+To allow users to change appointment time zones, enable the **editing**.[allowTimeZoneEditing](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowTimeZoneEditing.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing') option.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport"

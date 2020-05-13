@@ -16,7 +16,7 @@ The following code defines three views: the first is not customized, the second 
         ownerId: [1],
         startDate: new Date(2016, 1, 1, 11, 30),
         endDate: new Date(2016, 1, 1, 14, 15)
-    }, 
+    },
     // ...
     ];
 
@@ -51,11 +51,19 @@ The following code defines three views: the first is not customized, the second 
     <dx-scheduler
         [dataSource]="schedulerData"
         [currentDate]="currentDate"
-        [views]="views"
-        [resources]="resources"
-        timeCellTemplate="timeCellTemplate">
-        <div *dxTemplate="let appointment of 'timeCellTemplate'">
-            <i style="color: green">{{appointment.text}}</i>
+        currentView="day">
+        <dxi-resource
+            fieldExpr="ownerId"
+            [dataSource]="employees">
+        </dxi-resource>
+        <dxi-view type="month"></dxi-view>
+        <dxi-view type="day"
+            [cellDuration]="60"
+            timeCellTemplate="timeCellTemplate">
+        </dxi-view>
+        <dxi-view type="workWeek" [groups]="['ownerId']"></dxi-view>
+        <div *dxTemplate="let data of 'timeCellTemplate'">
+            <i style="color: green">{{data.text}}</i>
         </div>
     </dx-scheduler>
 
@@ -73,22 +81,14 @@ The following code defines three views: the first is not customized, the second 
             ownerId: [1],
             startDate: new Date(2016, 1, 1, 11, 30),
             endDate: new Date(2016, 1, 1, 14, 15)
-        }, 
+        },
         // ...
         ];
         currentDate = new Date(2016, 1, 1);
-        views = [
-            "month", 
-            { type: "day", cellDuration: 60, timeCellTemplate: 'timeCellTemplate' }, 
-            { type: "workWeek", groups: ["ownerId"] }
+        employees [
+            { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
+            { text: "John Heart", id: 2, color: "#56ca85" }
         ];
-        resources = [{
-            fieldExpr: "ownerId",
-            dataSource: [
-                { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-                { text: "John Heart", id: 2, color: "#56ca85" }
-            ]
-        }];
     }
     @NgModule({
         imports: [
@@ -97,6 +97,118 @@ The following code defines three views: the first is not customized, the second 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="schedulerData"
+            :current-date="currentDate">
+            <DxResource
+                field-expr="ownerId"
+                :data-source="employees"
+            />
+            <DxView type="month" />
+            <DxView type="day"
+                :cell-duration="60"
+                time-cell-template="time-cell"
+            />
+            <DxView type="workWeek" :groups="['ownerId']" />
+            <template #time-cell="{ data }">
+                <i style="color: green">{{data.text}}</i>
+            </template>
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler, DxResource, DxView } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler,
+            DxResource,
+            DxView
+        },
+        data() {
+            return {
+                schedulerData: [{
+                    text: "Google AdWords Strategy",
+                    ownerId: [2],
+                    startDate: new Date(2016, 1, 1, 9, 0),
+                    endDate: new Date(2016, 1, 1, 10, 30)
+                }, {
+                    text: "New Brochures",
+                    ownerId: [1],
+                    startDate: new Date(2016, 1, 1, 11, 30),
+                    endDate: new Date(2016, 1, 1, 14, 15)
+                },
+                // ...
+                ],
+                currentDate: new Date(2016, 1, 1),
+                employees: [
+                    { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
+                    { text: "John Heart", id: 2, color: "#56ca85" }
+                ]
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler, Resource, View } from 'devextreme-react/scheduler';
+
+    const schedulerData = [{
+        text: 'Google AdWords Strategy',
+        ownerId: [2],
+        startDate: new Date(2016, 1, 1, 9, 0),
+        endDate: new Date(2016, 1, 1, 10, 30)
+    }, {
+        text: 'New Brochures',
+        ownerId: [1],
+        startDate: new Date(2016, 1, 1, 11, 30),
+        endDate: new Date(2016, 1, 1, 14, 15)
+    },
+    // ...
+    ];
+    const currentDate = new Date(2016, 1, 1);
+    const employees = [
+        { text: 'Samantha Bright', id: 1, color: '#cb6bb2' },
+        { text: 'John Heart', id: 2, color: '#56ca85' }
+    ];
+    const renderTimeCell = (data) => <i style='color: green'>{data.text}</i>;
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={schedulerData}
+                    defaultCurrentDate={currentDate}>
+                    <Resource
+                        fieldExpr="ownerId"
+                        dataSource={employees}
+                    />
+                    <View type="month" />
+                    <View type="day"
+                        cellDuration={60}
+                        timeCellTemplate={renderTimeCell}
+                    />
+                    <View type="workWeek" groups={['ownerId']} />
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
 
 ---
 

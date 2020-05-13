@@ -14,7 +14,7 @@ By default, the **agenda** view displays appointments for seven dates at a time 
 
     <!--JavaScript-->
     $(function() {
-        $("#schedulerContainer").dxScheduler({ 
+        $("#schedulerContainer").dxScheduler({
             // ...
             views: [{
                 type: "agenda",
@@ -27,18 +27,18 @@ By default, the **agenda** view displays appointments for seven dates at a time 
 
     <!--HTML-->
     <dx-scheduler ...
-        [views]="agendaView">
+        currentView="agenda">
+        <dxi-view
+            type="agenda"
+            [agendaDuration]="5">
+        </dxi-view>
     </dx-scheduler>
 
     <!--TypeScript-->
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
-    export class AppComponent  { 
+    export class AppComponent  {
         // ...
-        agendaView = [{
-            type: "agenda",
-            agendaDuration: 5
-        }];
     }
     @NgModule({
         imports: [
@@ -48,9 +48,59 @@ By default, the **agenda** view displays appointments for seven dates at a time 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler current-view="agenda">
+            <DxView
+                type="agenda"
+                :agenda-duration="5" />
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler, DxView } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            // ...
+            DxScheduler,
+            DxView
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler, View } from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler currentView="agenda">
+                    <View
+                        type="agenda"
+                        agendaDuration={5} />
+                </Scheduler>
+            );
+        }
+    }
+    export default App;
+
 ---
 
-If you [group appointmetns by resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/'), the resource headers are located at the left side of the date scale. 
+If you [group appointmetns by resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/'), the resource headers are located at the left side of the date scale.
 
 ![Resource Headers](/images/UiWidgets/Scheduler_Agenda_Resouce_Headers.png)
 

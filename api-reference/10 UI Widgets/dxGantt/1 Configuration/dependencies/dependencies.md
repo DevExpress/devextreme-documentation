@@ -27,6 +27,41 @@ The **Gantt** widget supports the following dependency types:
 
 - Start to Finish (SF) - The predecessor task's start point specifies the successor task's end point.
 
+In a database, you can use any of the following formats (digit or string) to store dependency types: 
+
+<div class="simple-table">
+<table>
+  <thead>
+    <tr>
+      <th style="width:20%">Dependency Type</th>
+      <th>Supported Values</th>
+    </tr>
+  </thead>
+  <tbody>       
+    <tr>
+      <td>Finish to Start (FS)</td>
+      <td>0, "0", "FS", "fs"
+      </td>
+    </tr>
+    <tr>
+      <td>Start to Start (SS)</td>
+      <td>1, "1", "SS", "ss"
+      </td>
+    </tr>
+    <tr>
+      <td>Finish to Finish (FF)</td>
+      <td>2, "2", "FF", "ff"
+      </td>
+    </tr>
+    <tr>
+      <td>Start to Finish (SF)</td>
+      <td>3, "3", "SF", "sf"
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource') option to bind the widget to a data source, which contains information about dependency types. If the field names in your data source differ from the 'id', 'type', 'predecessorId' and 'successorId' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#keyExpr'), [typeExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/typeExpr.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#typeExpr') options to map data fields. 
 
 #####See Also#####

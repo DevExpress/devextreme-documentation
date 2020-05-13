@@ -295,21 +295,20 @@ The main idea is to filter the data source by the `parentID` for different drill
     class App extends React.Component {
         constructor(props) {
             super(props);
-             this.state = {
-                dxDataSource: new DataSource({
-                    store: {
-                        type: 'array',
-                        data: population
-                    },
-                    filter: ['parentID', '=', '']
-                })
-            };
+
+            this.dxDataSource = new DataSource({
+                store: {
+                    type: 'array',
+                    data: population
+                },
+                filter: ['parentID', '=', '']
+            });
         }
 
         render() {
             return (
                 <Chart ...
-                    dataSource={this.state.dxDataSource}>
+                    dataSource={this.dxDataSource}>
                     <Series
                         argumentField="arg"
                         valueField="val"

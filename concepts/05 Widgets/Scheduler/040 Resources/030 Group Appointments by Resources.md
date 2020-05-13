@@ -247,11 +247,9 @@ You can change resource headers' orientation in an individual view using the **v
     <template>
         <DxScheduler ... >
             <DxView type="month" />
-
             <DxView
                 type="day"
-                groupOrientaion="vertical" />
-
+                group-orientaion="vertical" />
         </DxScheduler>
     </template>
 

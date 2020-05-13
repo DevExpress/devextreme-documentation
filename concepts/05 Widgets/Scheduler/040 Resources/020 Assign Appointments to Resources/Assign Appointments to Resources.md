@@ -131,7 +131,6 @@ To define resource kinds, assign an array of objects specifying them to the [res
             label="Teacher"
             [dataSource]="teachers">
         </dxi-resource>
-
     </dx-scheduler>
 
 ##### Vue

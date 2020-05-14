@@ -16,6 +16,41 @@ Bars in the **Stacked Bar** series are vertical by default. Change them to horiz
         [rotated]="true">
     </dx-chart>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :rotated="true">
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ...
+                    rotated={true}>
+                </Chart>
+            );
+        }
+    }
+
 ---
 
 #####See Also#####

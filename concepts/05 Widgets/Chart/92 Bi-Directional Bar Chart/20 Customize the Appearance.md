@@ -59,6 +59,84 @@ UI elements like [tooltips](/concepts/05%20Widgets/Chart/30%20Tooltips/00%20Over
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... >
+            <DxTooltip
+                :enabled="true"
+                :customize-tooltip="customizeTooltip"
+            />
+            <DxValueAxis>
+                <DxLabel :customize-text="customizeLabel"/>
+            </DxValueAxis>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxTooltip,
+        DxValueAxis,
+        DxLabel
+    } from 'devextreme-vue/chart';
+
+    export default {
+        components: {
+            DxChart,
+            DxTooltip,
+            DxValueAxis,
+            DxLabel
+        },
+        methods: {
+            customizeTooltip(pointInfo) {
+                return {
+                    text: Math.abs(pointInfo.originalValue)
+                };
+            },
+            customizeLabel(axisValue) {
+                return `${Math.abs(axisValue.value)}%`;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Tooltip,
+        ValueAxis,
+        Label
+    } from 'devextreme-react/chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart ... >
+                    <Tooltip
+                        enabled={true}
+                        customizeTooltip={customizeTooltip}
+                    />
+                    <ValueAxis>
+                        <Label customizeText={customizeLabel} />
+                    </ValueAxis>
+                </Chart>
+            );
+        }
+    }
+
+    function customizeTooltip(pointInfo) {
+        return {
+            text: Math.abs(pointInfo.originalValue)
+        };
+    }
+
+    function customizeLabel(axisValue) {
+        return `${Math.abs(axisValue.value)}%`;
+    }
+
 ---
 
 You can also adjust the bar's width. See [Specify the Bar Width](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/#Specify_the_Bar_Width') for details.

@@ -54,6 +54,70 @@ To configure point labels, use the [label](/api-reference/20%20Data%20Visualizat
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxSeries>
+                <DxLabel ... >
+                    <!-- Settings for all point labels of an individual series -->
+                </DxLabel>
+            </DxSeries>
+            <DxCommonSeriesSettings ... >
+                <DxLabel ... >
+                    <!-- Settings for all point labels in the PieChart -->
+                </DxLabel>
+            </DxCommonSeriesSettings>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries,
+        DxCommonSeriesSettings,
+        DxLabel
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries,
+            DxCommonSeriesSettings,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series,
+        CommonSeriesSettings,
+        Label
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Series>
+                        <Label ... >
+                            {/* Settings for all point labels of an individual series */}
+                        </Label>
+                    </Series>
+                    <CommonSeriesSettings ... >
+                        <Label ... >
+                            {/* Settings for all point labels in the PieChart */}
+                        </Label>
+                    </CommonSeriesSettings>
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 Point labels are not visible by default. To make them visible, assign **true** to the **label**.**visible** option. With this configuration, point labels are displayed detached from their respective series points. You can make the connection between labels and points more evident by making label connectors visible. For this purpose, assign **true** to the **label**.[connector](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label/connector '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/label/connector/').**visible** option.
@@ -98,6 +162,60 @@ Point labels are not visible by default. To make them visible, assign **true** t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxSeries>
+                <DxLabel :visible="true">
+                    <DxConnector :visible="true"/>
+                </DxLabel>
+            </DxSeries>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries,
+        DxLabel,
+        DxConnector
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries,
+            DxLabel,
+            DxConnector
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series,
+        Label,
+        Connector
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Series>
+                        <Label visible={true}>
+                            <Connector visible={true} />
+                        </Label>
+                    </Series>
+                </PieChart>
+            );
+        }
+    }
 
 ---
 

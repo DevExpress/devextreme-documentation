@@ -39,6 +39,53 @@ Labels are located beside their series points by default. Change the **series**.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxSeries>
+                <DxLabel position="columns"/> <!-- or "inside" | "outside" -->
+            </DxSeries>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries,
+        DxLabel
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series,
+        Label
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Series>
+                        <Label position="columns" /> {/* or "inside" | "outside" */}
+                    </Series>
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 #include common-demobutton with {

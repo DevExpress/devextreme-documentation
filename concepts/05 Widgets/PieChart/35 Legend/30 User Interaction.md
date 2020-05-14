@@ -32,6 +32,46 @@ A user can interact with the legend by pausing on legend items. When a user does
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxLegend hover-mode="none"/>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxLegend
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Legend
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Legend hoverMode="none" />
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 Pausing on a legend item causes the [pointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Events/#pointHoverChanged') event to raise. Refer to the [Series Hover Events](/concepts/05%20Widgets/PieChart/10%20Series/10%20Hover/10%20Events.md '/Documentation/Guide/Widgets/PieChart/Series/Hover/#Events') topic for details on handling this event.
@@ -88,6 +128,52 @@ In addition, a user can click legend items. The widget does not react to this by
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @legend-click="onLegendClick">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            onLegendClick(e) {
+                let points = e.points;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onLegendClick={onLegendClick}>
+                </PieChart>
+            );
+        }
+    }
+
+    function onLegendClick(e) {
+        let points = e.points;
+        // Event handling commands go here
+    }
 
 ---
 

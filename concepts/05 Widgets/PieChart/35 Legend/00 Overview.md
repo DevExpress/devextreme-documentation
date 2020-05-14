@@ -36,6 +36,46 @@ To configure the appearance, location, and content of the legend, use options co
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxLegend ... />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxLegend
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Legend
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Legend ... />
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 #####See Also#####

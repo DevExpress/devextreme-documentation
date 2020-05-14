@@ -97,6 +97,83 @@ The main idea is to filter the data source by the `parentID` for different drill
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="dataSource">
+            <DxSeries
+                argument-field="arg"
+                value-field="val"
+                type="bar"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    const population = [
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        },
+        data() {
+            return {
+                dataSource: this.filterData('')
+            };
+        },
+        methods: {
+            filterData(name) {
+                return population.filter(item => item.parentID === name);
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    const population = [
+        // ...
+    ];
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { dataSource: this.filterData('') };
+        }
+
+        render() {
+            return (
+                <Chart ...
+                    dataSource={this.state.dataSource}>
+                    <Series
+                        argumentField="arg"
+                        valueField="val"
+                        type="bar"
+                    />
+                </Chart>
+            );
+        }
+
+        filterData(name) {
+            return population.filter(item => item.parentID === name);
+        }
+    }
+
 ---
 
 ... or employ the DevExtreme [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object that provides an [API for filtering](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter'):
@@ -158,5 +235,88 @@ The main idea is to filter the data source by the `parentID` for different drill
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="dxDataSource">
+            <DxSeries
+                argument-field="arg"
+                value-field="val"
+                type="bar"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+    import DataSource from 'devextreme/data/data_source';
+
+    const population = [
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        },
+        data() {
+            return {
+                dxDataSource: new DataSource({
+                    store: {
+                        type: 'array',
+                        data: population
+                    },
+                    filter: ['parentID', '=', '']
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+    import DataSource from 'devextreme/data/data_source';
+
+    const population = [
+        // ...
+    ];
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dxDataSource = new DataSource({
+                store: {
+                    type: 'array',
+                    data: population
+                },
+                filter: ['parentID', '=', '']
+            });
+        }
+
+        render() {
+            return (
+                <Chart ...
+                    dataSource={this.dxDataSource}>
+                    <Series
+                        argumentField="arg"
+                        valueField="val"
+                        type="bar"
+                    />
+                </Chart>
+            );
+        }
+    }
 
 ---

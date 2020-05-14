@@ -59,7 +59,103 @@ The **Chart** provides the [customizePoint](/api-reference/20%20Data%20Visualiza
         onButtonClick() {
             if (!this.isFirstLevel) {
                 // ...
-                this.currentTitle = "The Most Populated Countries by Continents"
+                this.currentTitle = "The Most Populated Countries by Continents";
+            }
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :title="currentTitle"
+            @point-click="onPointClick">
+        </DxChart>
+        <DxButton ...
+            @click="onButtonClick"
+        />
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+    import DxButton from 'devextreme-vue/button';
+    import service from './data.js';
+
+    export default {
+        components: {
+            DxChart,
+            DxButton
+        },
+        data() {
+            return {
+                isFirstLevel: true,
+                currentTitle: 'The Most Populated Countries by Continents'
+            };
+        },
+        methods: {
+            onPointClick({ target }) {
+                 if (this.isFirstLevel) {
+                    // ...
+                    this.currentTitle = `The Most Populated Countries in ${target.originalArgument}`;
+                }
+            },
+            onButtonClick() {
+                if (!this.isFirstLevel) {
+                    // ...
+                    this.currentTitle = 'The Most Populated Countries by Continents';
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isFirstLevel: true,
+                currentTitle: 'The Most Populated Countries by Continents'
+            };
+
+            this.onPointClick = this.onPointClick.bind(this);
+            this.onButtonClick = this.onButtonClick.bind(this);
+        }
+
+        render() {
+            return (
+                <Chart ...
+                    title={this.state.currentTitle}
+                    onPointClick={this.onPointClick}>
+                </Chart>
+                <Button ...
+                    onClick={this.onButtonClick}
+                />
+            );
+        }
+
+        onPointClick({ target }) {
+            if(this.state.isFirstLevel) {
+                this.setState({
+                    // ...
+                    currentTitle: `The Most Populated Countries in ${target.originalArgument}`
+                });
+            }
+        }
+
+        onButtonClick() {
+            if(!this.state.isFirstLevel) {
+                this.setState({
+                    // ...
+                    currentTitle: 'The Most Populated Countries by Continents'
+                });
             }
         }
     }

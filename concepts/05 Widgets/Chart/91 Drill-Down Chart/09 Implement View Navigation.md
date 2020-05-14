@@ -111,6 +111,144 @@ To navigate from the first to the second view, filter data by a different `paren
         left: 0px;
     }
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="dataSource"
+            @point-click="onPointClick">
+            <DxSeries
+                argument-field="arg"
+                value-field="val"
+                type="bar"
+            />
+        </DxChart>
+        <DxButton
+            :visible="!isFirstLevel"
+            class="button-container"
+            text="Back"
+            icon="chevronleft"
+            @click="onButtonClick"
+        />
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+    import DxButton from 'devextreme-vue/button';
+    import service from './data.js';
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxButton
+        },
+        data() {
+            return {
+                isFirstLevel: true,
+                dataSource: service.filterData('')
+            };
+        },
+        methods: {
+            onPointClick({ target }) {
+                if (this.isFirstLevel) {
+                    this.isFirstLevel = false;
+                    this.dataSource = service.filterData(target.originalArgument);
+                }
+            },
+            onButtonClick() {
+                if (!this.isFirstLevel) {
+                    this.isFirstLevel = true;
+                    this.dataSource = service.filterData("");
+                }
+            }
+        }
+    }
+    </script>
+
+    <style>
+    .button-container {
+        text-align: center;
+        height: 40px;
+        position: absolute;
+        top: 7px;
+        left: 0px;
+    }
+    </style>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+    import Button from 'devextreme-react/button';
+    import service from './data.js';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                isFirstLevel: true,
+                dataSorce: service.filterData('')
+            };
+
+            this.onPointClick = this.onPointClick.bind(this);
+            this.onButtonClick = this.onButtonClick.bind(this);
+        }
+
+        render() {
+            return (
+                <Chart ...
+                    dataSource={this.state.dataSource}
+                    onPointClick={this.onPointClick}>
+                    <Series
+                        argumentField="arg"
+                        valueField="val"
+                        type="bar"
+                    />
+                </Chart>
+                <Button className="button-container"
+                    text="Back"
+                    icon="chevronleft"
+                    visible={!this.state.isFirstLevel}
+                    onClick={this.onButtonClick}
+                />
+            );
+        }
+
+        onPointClick({ target }) {
+            if(this.state.isFirstLevel) {
+                this.setState({
+                    isFirstLevel: false,
+                    dataSource: service.filterData(target.originalArgument)
+                });
+            }
+        }
+
+        onButtonClick() {
+            if(!this.state.isFirstLevel) {
+                this.setState({
+                    isFirstLevel: true,
+                    dataSource: service.filterData('')
+                });
+            }
+        }
+    }
+
+    <!--CSS-->
+    .button-container {
+        text-align: center;
+        height: 40px;
+        position: absolute;
+        top: 7px;
+        left: 0px;
+    }
+
 ---
 
 The following code shows how to implement navigation when using the DevExtreme **DataSource**:
@@ -225,6 +363,162 @@ The following code shows how to implement navigation when using the DevExtreme *
         ],
         // ...
     })
+
+    <!--CSS-->
+    .button-container {
+        text-align: center;
+        height: 40px;
+        position: absolute;
+        top: 7px;
+        left: 0px;
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="dxDataSource"
+            @point-click="onPointClick">
+            <DxSeries
+                argument-field="arg"
+                value-field="val"
+                type="bar"
+            />
+        </DxChart>
+        <DxButton
+            :visible="!isFirstLevel"
+            class="button-container"
+            text="Back"
+            icon="chevronleft"
+            @click="onButtonClick"
+        />
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+    import DxButton from 'devextreme-vue/button';
+    import DataSource from "devextreme/data/data_source";
+
+    const population = [
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxButton
+        },
+        data() {
+            return {
+                isFirstLevel: true,
+                dxDataSource: new DataSource({
+                    store: {
+                        type: 'array',
+                        data: population
+                    },
+                    filter: ['parentID', '=', '']
+                })
+            };
+        },
+        methods: {
+           onPointClick({ target }) {
+                if(this.isFirstLevel) {
+                    this.isFirstLevel = false;
+                    this.dxDataSource.filter(['parentID', '=', target.originalArgument]);
+                    this.dxDataSource.load();
+                }
+            },
+            onButtonClick() {
+                if(!this.isFirstLevel) {
+                    this.isFirstLevel = true;
+                    this.dxDataSource.filter(['parentID', '=', '']);
+                    this.dxDataSource.load();
+                }
+            }
+        }
+    }
+    </script>
+
+    <style>
+    .button-container {
+        text-align: center;
+        height: 40px;
+        position: absolute;
+        top: 7px;
+        left: 0px;
+    }
+    </style>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+    import Button from 'devextreme-react/button';
+    import DataSource from "devextreme/data/data_source";
+
+    const population = [
+        // ...
+    ];
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { isFirstLevel: true };
+            this.dxDataSource = new DataSource({
+                store: {
+                    type: 'array',
+                    data: population
+                },
+                filter: ['parentID', '=', '']
+            });
+
+            this.onPointClick = this.onPointClick.bind(this);
+            this.onButtonClick = this.onButtonClick.bind(this);
+        }
+
+        render() {
+            return (
+                <Chart ...
+                    dataSource={this.dxDataSource}
+                    onPointClick={this.onPointClick}>
+                    <Series
+                        argumentField="arg"
+                        valueField="val"
+                        type="bar"
+                    />
+                </Chart>
+                <Button className="button-container"
+                    text="Back"
+                    icon="chevronleft"
+                    visible={!this.state.isFirstLevel}
+                    onClick={this.onButtonClick}
+                />
+            );
+        }
+
+        onPointClick({ target }) {
+            if(this.state.isFirstLevel) {
+                this.setState({ isFirstLevel: false });
+                this.dxDataSource.filter(['parentID', '=', target.originalArgument]);
+                this.dxDataSource.load();
+            }
+        }
+
+        onButtonClick() {
+            if(!this.state.isFirstLevel) {
+                this.setState({ isFirstLevel: true });
+                this.dxDataSource.filter(['parentID', '=', '']);
+                this.dxDataSource.load();
+            }
+        }
+    }
 
     <!--CSS-->
     .button-container {

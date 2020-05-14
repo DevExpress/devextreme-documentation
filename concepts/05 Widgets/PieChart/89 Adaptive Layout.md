@@ -33,6 +33,52 @@ With the ever-growing variety of platforms, today's web sites and applications c
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...>
+            <DxAdaptiveLayout
+                :height="300"
+                :width="400"
+            />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxAdaptiveLayout
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxAdaptiveLayout
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        AdaptiveLayout
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...>
+                    <AdaptiveLayout
+                        height={300}
+                        width={400}
+                    />
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 <a href="https://jsfiddle.net/ChartJS/2arphpsx/" class="button orange small fix-width-155" target="_blank">View Demo on JSFiddle</a>
@@ -67,6 +113,60 @@ The layout does not automatically adapt to changes made in the widget's containe
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            ref="pieChart">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            renderPieChart() {
+                this.$refs.pieChart.instance.render();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.pieChartRef = React.createRef();
+
+            this.renderPieChart = () => {
+                this.pieChart.render();
+            };
+        }
+
+        render() {
+            return (
+                <PieChart ...
+                    ref={this.pieChartRef}>
+                </PieChart>
+            );
+        }
+
+        get pieChart() {
+            return this.pieChartRef.current.instance;
+        }
+    }
 
 ---
 

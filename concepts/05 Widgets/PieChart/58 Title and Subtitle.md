@@ -44,6 +44,53 @@ The title is configured by the [title](/api-reference/20%20Data%20Visualization%
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...>
+            <DxTitle text="I am the Title">
+                <DxSubtitle text="I am the Subtitle"/>
+            </DxTitle>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxTitle,
+        DxSubtitle
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxTitle,
+            DxSubtitle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Title,
+        Subtitle
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...>
+                    <Title text="I am the Title">
+                        <Subtitle text="I am the Subtitle" />
+                    </Title>
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 #include common-demobutton with {
@@ -65,7 +112,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
 ##### Angular
 
     <!--HTML--><dx-pie-chart ...
-        text="I am the Title">
+        title="I am the Title">
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -81,6 +128,41 @@ You can set the title's text more concisely by assigning it directly to the **ti
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            title="I am the Title">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    title="I am the Title">
+                </PieChart>
+            );
+        }
+    }
 
 ---
 

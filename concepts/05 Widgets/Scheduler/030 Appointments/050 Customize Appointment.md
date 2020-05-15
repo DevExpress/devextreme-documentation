@@ -58,6 +58,81 @@ For a minor customization of **Scheduler** appointments, you can define [specifi
         [currentDate]="currentDate">
     </dx-scheduler>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="appointments"
+            :current-date="currentDate"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 25),
+                appointments: [{
+                    text: "Website Re-Design Plan",
+                    startDate: new Date(2016, 4, 25, 9, 30),
+                    endDate: new Date(2016, 4, 25, 11, 30)
+                }, {
+                    text: "Book Flights to San Fran for Sales Trip",
+                    startDate: new Date(2016, 4, 25, 12, 0),
+                    endDate: new Date(2016, 4, 25, 13, 0),
+                    hidden: true
+                }, 
+                // ...
+                ];
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const appointments = [{
+        text: "Website Re-Design Plan",
+        startDate: new Date(2016, 4, 25, 9, 30),
+        endDate: new Date(2016, 4, 25, 11, 30)
+    }, {
+        text: "Book Flights to San Fran for Sales Trip",
+        startDate: new Date(2016, 4, 25, 12, 0),
+        endDate: new Date(2016, 4, 25, 13, 0),
+        hidden: true
+    }, 
+    // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={appointments}
+                    defaultCurrentDate={new Date(2016, 4, 25)} 
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define templates for appointments.
@@ -170,6 +245,99 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     };
 
     ko.applyBindings(viewModel);
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :data-source="appointments"
+            :current-date="currentDate"
+            appointment-template="appointment"
+        >
+            <template #appointment="{ data }">
+                <i>{{data.appointmentData.movie}}</i>
+                <p>Price: ${{data.appointmentData.price}}</p>
+            </template>
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentDate: new Date(2016, 4, 25),
+                appointments: [{
+                    movie: "His Girl Friday",
+                    price: 5,
+                    startDate: new Date(2016, 4, 24, 9, 10),
+                    endDate: new Date(2016, 4, 24, 11, 20)
+                }, {
+                    movie: "Royal Wedding",
+                    price: 10,
+                    startDate: new Date(2016, 4, 24, 10, 5),
+                    endDate: new Date(2016, 4, 24, 11, 30)
+                }, 
+                // ...
+                ];
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const appointments = [{
+        movie: "His Girl Friday",
+        price: 5,
+        startDate: new Date(2016, 4, 24, 9, 10),
+        endDate: new Date(2016, 4, 24, 11, 20)
+    }, {
+        movie: "Royal Wedding",
+        price: 10,
+        startDate: new Date(2016, 4, 24, 10, 5),
+        endDate: new Date(2016, 4, 24, 11, 30)
+    }, 
+    // ...
+    ];
+
+    const renderAppointment = (model) => {
+        return (
+            <React.Fragment>
+                <i>{{model.appointmentData.movie}}</i>
+                <p>Price: ${{model.appointmentData.price}}</p>
+            </React.Fragment>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Scheduler
+                    dataSource={appointments}
+                    defaultCurrentDate={new Date(2016, 4, 25)} 
+                    appointmentRender={renderAppointment}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

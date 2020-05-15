@@ -118,7 +118,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **PieCha
         // Other tooltips remain yellow
         customizeTooltip (pointInfo: any) {
             return pointInfo.value > 100 ? { color: 'red' } : { };
-        }
+        };
     }
     @NgModule({
         imports: [

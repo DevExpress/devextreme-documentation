@@ -1,7 +1,7 @@
 You can use <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity" target="_blank">Subresource Integrity</a> (SRI) hashes to verify DevExtreme files when fetching them from CDN. Each link below contains `sha384` and `sha512` hashes:
 
 ---
-##### 20.2.3
+##### 20.1.3
 
     <script src="https://cdn3.devexpress.com/jslib/20.2.3/js/dx-diagram.js" integrity="sha384-EhW3VnQoFHRqqL/3B9J9D/AA8hAdvR1OcxK6W2YCss1jmNqqqFAsftfSOtMoO1op sha512-5kGMzZj0pEOXtoUsgb01cem+RvVP0mFByxeiqYO/2LRU2Xxjrm7d9rnxSR4dkhIz/wB0f2jGEpfSxEN3hV261A==" crossorigin="anonymous"></script>
     <script src="https://cdn3.devexpress.com/jslib/20.2.3/js/dx-diagram.min.js" integrity="sha384-PCQat9AYY1ILW15//XKXzJkDkzDO7KQYu8PqHP4c4FSKzw7c299HL2HUHG9mi9hf sha512-lyMGqYpLB38DiuegZTR9R7+JZsn2QT6FMqJLFA7uB8U/6y3/Sy39brnfz6CaeJOAUEkYihXPeGZRrWAEJRCDFg==" crossorigin="anonymous"></script>
@@ -59,7 +59,7 @@ You can use <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subre
     <link href="https://cdn3.devexpress.com/jslib/20.2.3/css/dx.softblue.compact.css" rel="stylesheet" integrity="sha384-H0P8nS/wop/BOme5RMPG1O8wr7x3Butp4czUeoRgPgz6JkT1OZ5vIXpVc2OftEc0 sha512-jCKbRUom4vMNT4aF5vFZJH6WCA10X0WXIbhLzuLSpKk1fY+yfsX9q/5FxeAdzvlj6mWG23cRcGZjI2GFobHjUA==" crossorigin="anonymous">
     <link href="https://cdn3.devexpress.com/jslib/20.2.3/css/dx.softblue.css" rel="stylesheet" integrity="sha384-TR6pa/cPDwrGJoU8hwNmCk3P5plEwRBBREDCW90my5pAFy1OzAfrvbJ20AEZk6E9 sha512-rNRphgMbgc3+PJRII8hqjHbXEV4p2pz/7oYddsWFoUh5ORRhqg67F6zXwq/viAsY42gKMFnNfzABR90EP3EsYw==" crossorigin="anonymous">
 
-##### 20.2.2beta
+##### 20.1.2beta
 
     <script src="https://cdn3.devexpress.com/jslib/20.2.2beta/js/dx-diagram.js" integrity="sha384-YIfSZNBRCHHrDEIp0xhnDoP+5moUdjg/x7WiNmaBiaVxzmM49zUfQeeK2t3bDAgf sha512-8oetr0uD6ZlObNf/8BOkl0uH7AE28U27EIHQv3/ZLTsrd+1cokhM3lHZIOnWnByPAiRh7A2GCTKX4LrZLrfGjQ==" crossorigin="anonymous"></script>
     <script src="https://cdn3.devexpress.com/jslib/20.2.2beta/js/dx-diagram.min.js" integrity="sha384-v5EhLJdyl42ULbyBhieYgo1lBixk/Q37/O5HwoSU9X+WqTduYUD+jU0G7hmVnb0v sha512-tId4/jmxmWviBT8PzjNi6xgf5htgt3TzZDzvkAZAJAoM9kmQFa2XySsTOFeeXLaOC8b0RhWiTkQE+l9c28Gopg==" crossorigin="anonymous"></script>

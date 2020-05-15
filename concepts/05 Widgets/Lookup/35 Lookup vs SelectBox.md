@@ -20,3 +20,12 @@ The **SelectBox** looks the same on any platform, while **Lookup** changes its a
             </tr>
         </table>
     </div>
+
+#include common-demobutton-named with {
+    name: "SelectBox",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/"
+} 
+#include common-demobutton-named with {
+    name: "Lookup",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/"
+}

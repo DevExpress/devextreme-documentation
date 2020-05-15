@@ -7,10 +7,10 @@
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [{
-                imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
+                imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
                 disabled: true
             }, {
-                imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
+                imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
                 imageAlt: "Peter"
             }],
             height: 300
@@ -30,10 +30,10 @@
     // ...
     export class AppComponent {
         galleryDataSource = [{
-            imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
+            imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
             disabled: true
         }, {
-            imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
+            imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
             imageAlt: "Peter"
         }];
     }
@@ -69,9 +69,9 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     // ...
     export class AppComponent {
         galleryDataSource = [
-            { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png", name: "Maria" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png", name: "John" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png", name: "Xavier" }
+            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
+            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
+            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
         ];
     }
     @NgModule({
@@ -100,9 +100,9 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     <!--JavaScript-->angular.module('DemoApp', ['dx'])
         .controller('DemoController', function DemoController($scope) {
             $scope.galleryData = [
-                { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png", name: "Maria" },
-                { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png", name: "John" },
-                { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png", name: "Xavier" }
+                { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
+                { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
+                { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
             ];
         });
 
@@ -124,9 +124,9 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
     <!--JavaScript-->var viewModel = {
         galleryData: [
-            { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png", name: "Maria" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png", name: "John" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png", name: "Xavier" }
+            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
+            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
+            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
         ]
     };
 
@@ -157,7 +157,7 @@ You can also customize an individual **Gallery** item. For this purpose, declare
 
     <!--JavaScript-->
     var galleryData = [{
-        imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
+        imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
         imageAlt: "Maria",
         template: $("#individualTemplate"),
     },

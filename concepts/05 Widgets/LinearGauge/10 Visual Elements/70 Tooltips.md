@@ -1,6 +1,6 @@
 A tooltip is a small pop-up rectangle that displays information on a hovered value or subvalue indicator. By default, the tooltip shows the value indicated by the hovered element. However, it is possible to display other information in the tooltip. You can customize the text of the tooltip and its appearance in the way you require.
 
-<img src="/Content/images/doc/20_1/ChartJS/LinearGaugeTooltip.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeTooltip" style="display:block; margin:0 auto" />
+<img src="/Content/images/doc/20_2/ChartJS/LinearGaugeTooltip.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeTooltip" style="display:block; margin:0 auto" />
 
 Tooltips are not enabled by default. To enable them, set the **enabled** option of the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Configuration/tooltip/') object to **true**.
 

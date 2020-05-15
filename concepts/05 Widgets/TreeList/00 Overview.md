@@ -1,6 +1,6 @@
 The **TreeList** is a widget that represents data from a local or remote source in the form of a multi-column tree view.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/UiWidgets/Guides/TreeListOverview/treeListExample.html, /Content/Applications/20_1/UiWidgets/Guides/TreeListOverview/treeListExample.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/UiWidgets/Guides/TreeListOverview/treeListExample.html, /Content/Applications/20_2/UiWidgets/Guides/TreeListOverview/treeListExample.js"></div>
 
 The **TreeList** can visualize [plain](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Plain_Data/') or [hierarchical](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Hierarchical_Data/') data taken from any source. Refer to the following topics for details on binding the **TreeList** to your data source:
 

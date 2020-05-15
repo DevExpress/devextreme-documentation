@@ -13,12 +13,12 @@ Add diagram resources (scripts and styles) onto the page.
     Add the `dx-diagram.min.css` and `dx-diagram.min.js` files to your page.
 
         <!--HTML-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx-diagram.min.css">
-        <script src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx-diagram.min.js"></script>
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.min.css">
+        <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-diagram.min.js"></script>
 
 - **Local Scripts**
 
-    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles(x86)%\DevExpress 20.1\DevExtreme\Sources). Copy the **dx-diagram.min.js** and **dx-diagram.min.css** files into your application folder. Then, link the required files.
+    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles(x86)%\DevExpress 20.2\DevExtreme\Sources). Copy the **dx-diagram.min.js** and **dx-diagram.min.css** files into your application folder. Then, link the required files.
 
         <!--HTML-->
         <script type="text/javascript" src="js/dx-diagram.min.js"></script>
@@ -32,12 +32,12 @@ The Diagram widget is a jQuery DevExtreme widget, and thus requires common DevEx
 
         <!--HTML-->
         @* DevExtreme themes *@
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.light.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
         @* jQuery *@
         <script src="~/Scripts/jquery-3.4.1.min.js"></script>
         @* DevExtreme common scripts *@
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
 
 You should also add the [canvg](https://github.com/canvg/canvg) library to your page to allow export to image formats in Internet Explorer.
 

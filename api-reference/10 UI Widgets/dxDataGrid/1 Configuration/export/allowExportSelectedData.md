@@ -8,7 +8,7 @@ default: false
 Allows users to export selected rows only.
 
 ---
-When this option is set to **true**, a click on <img src="/Content/images/doc/20_1/DataGrid/icons/toolbar_export.png" alt="DevExtreme DataGrid HTML5 Toolbar Exporting" style="vertical-align:middle"/> invokes a menu that contains the "Export selected rows" command.
+When this option is set to **true**, a click on <img src="/Content/images/doc/20_2/DataGrid/icons/toolbar_export.png" alt="DevExtreme DataGrid HTML5 Toolbar Exporting" style="vertical-align:middle"/> invokes a menu that contains the "Export selected rows" command.
 
 ![DevExtreme DataGrid Exporting Selected Rows](/images/DataGrid/Export_SelectedRows.png)
 

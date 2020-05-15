@@ -21,7 +21,7 @@ An embedded format's [value](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Do
     <!--JavaScript-->
     // Adds an image at the beginning of the content
     $("#htmlEditorContainer").dxHtmlEditor("instance").insertEmbed(0, "extendedImage", {
-        src: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
+        src: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
         alt: "Photo",
         width: "100px"
     });
@@ -38,7 +38,7 @@ An embedded format's [value](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Do
         // @ViewChild(DxHtmlEditorComponent) htmlEditor: DxHtmlEditorComponent;
         insertImageAtTheBeginning() {
             this.htmlEditor.instance.insertEmbed(0, "extendedImage", {
-                src: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
+                src: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
                 alt: "Photo",
                 width: "100px"
             });

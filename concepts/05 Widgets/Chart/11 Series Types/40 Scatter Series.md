@@ -1,6 +1,6 @@
 The **Scatter** series type visualizes data as a collection of scattered points.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/scatter.html, /Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/scatter.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/scatter.html, /Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/scatter.js"></div>
 
 To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') option. You can configure:
 

@@ -8,7 +8,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>v19.2.x <br/> v19.1.x <br/> v18.2.x</td>
+            <td>v20.1.x <br/> v19.2.x <br/> v19.1.x <br/> v18.2.x</td>
             <td>v2.6.3+</td>
         </tr>
         <tr>

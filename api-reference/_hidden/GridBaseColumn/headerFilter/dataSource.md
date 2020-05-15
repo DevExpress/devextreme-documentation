@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the header filter data source.
+Specifies the header filter's data source.
 
 ##### param(options): Object
 Data source options.
@@ -17,11 +17,11 @@ The widget's instance.
 A [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) instance.
 
 ---
-The **{WidgetName}** generates a header filter data source automatically based on column values. Use the **dataSource** option to change the generated data source or specify a custom data source.
+The **{WidgetName}** generates a header filter's data source automatically based on column values. Use the **dataSource** option to change the generated data source or specify a custom data source.
 
 ### Specify a Custom Data Source
 
-To define a data source from scratch, set the **dataSource** option to an array of objects. Each object configures one header filter item and should have the following fields:
+To define a data source, set the **dataSource** option to an array of objects. Each object configures one header filter item and should have the following fields:
 
  - `text`         
 A text string that represents the item in the header filter.
@@ -596,7 +596,7 @@ In the following code, the **postProcess** function adds a custom item to the ge
 
 ### Customize Item Appearance
 
-You can use [templates](/Documentation/ApiReference/Common/Object_Structures/template/) to customize the appearance of individual items. In the following code, a template applies the bold font to the `Today` item:
+You can use [templates](/Documentation/ApiReference/Common/Object_Structures/template/) to customize the appearance of individual items. In the following code, a template makes the `Today` item bold:
 
 ---
 ##### jQuery

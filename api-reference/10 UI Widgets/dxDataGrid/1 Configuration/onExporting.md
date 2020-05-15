@@ -49,21 +49,22 @@ You can use this function to adjust column options before export. In the followi
             onExporting: function(e) { 
                 e.component.beginUpdate();
                 e.component.columnOption('ID', 'visible', true);
-
                 var workbook = new ExcelJS.Workbook(); 
-                var worksheet = workbook.addWorksheet('Main sheet'); 
-                DevExpress.excelExporter.exportDataGrid({ 
-                    worksheet: worksheet, 
-                    component: e.component
+                var worksheet = workbook.addWorksheet('Main sheet');
+
+                DevExpress.excelExporter.exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet
                 }).then(function() {
-                    workbook.xlsx.writeBuffer().then(function(buffer) { 
-                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
-                    }); 
-                }).then(() => {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                    });
+                }).then(function() {
                     e.component.columnOption('ID', 'visible', false);
                     e.component.endUpdate();
-                }); 
-                e.cancel = true; 
+                });
+            
+                e.cancel = true;
             }
         });
     });
@@ -74,7 +75,7 @@ You can use this function to adjust column options before export. In the followi
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
         <dxo-export [enabled]="true"></dxo-export>
-        <dxi-column dataField="ID" [visible]="false"></dxi-column>
+        <dxi-column dataField='ID' [visible]="false"></dxi-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -91,26 +92,23 @@ You can use this function to adjust column options before export. In the followi
     export class AppComponent {
         onExporting(e) {
             e.component.beginUpdate();
-            e.component.columnOption("ID", "visible", true);
+            e.component.columnOption('ID', 'visible', true);
             const workbook = new ExcelJS.Workbook();
-            const worksheet = workbook.addWorksheet("Employees");
-
+            const worksheet = workbook.addWorksheet('Employees');
+        
             exportDataGrid({
                 component: e.component,
                 worksheet: worksheet
-                }).then(function() {
-                workbook.xlsx
-                    .writeBuffer()
-                    .then(function(buffer) {
-                    saveAs(
-                        new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx");
-                    })
-                    .then(() => {
-                        e.component.columnOption("ID", "visible", false);
-                        e.component.endUpdate();
-                    });
-                e.cancel = true;
+            }).then(function() {
+                workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                });
+            }).then(function() {
+                e.component.columnOption('ID', 'visible', false);
+                e.component.endUpdate();
             });
+        
+            e.cancel = true;
         }
     }
 
@@ -141,7 +139,7 @@ You can use this function to adjust column options before export. In the followi
         <DxDataGrid ...
             @exporting="onExporting">
             <DxExport :enabled="true" />
-            <DxColumn data-field="ID" :visible="false" />
+            <DxColumn data-field='ID' :visible="false" />
         </DxDataGrid>
     </template>
 
@@ -163,26 +161,23 @@ You can use this function to adjust column options before export. In the followi
         methods: {
             onExporting(e) {
                 e.component.beginUpdate();
-                e.component.columnOption("ID", "visible", true);
+                e.component.columnOption('ID', 'visible', true);
                 const workbook = new ExcelJS.Workbook();
-                const worksheet = workbook.addWorksheet("Employees");
-
+                const worksheet = workbook.addWorksheet('Employees');
+            
                 exportDataGrid({
                     component: e.component,
                     worksheet: worksheet
-                    }).then(function() {
-                    workbook.xlsx
-                        .writeBuffer()
-                        .then(function(buffer) {
-                        saveAs(
-                            new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx");
-                        })
-                        .then(() => {
-                            e.component.columnOption("ID", "visible", false);
-                            e.component.endUpdate();
-                        });
-                    e.cancel = true;
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                    });
+                }).then(function() {
+                    e.component.columnOption('ID', 'visible', false);
+                    e.component.endUpdate();
                 });
+            
+                e.cancel = true;
             }
         }
     }
@@ -206,37 +201,35 @@ You can use this function to adjust column options before export. In the followi
                 <DataGrid ...
                     onExporting={this.onExporting}>
                     <Export enabled={true} />
-                    <Column dataField="ID" visible={false} />
+                    <Column dataField='ID' visible={false} />
                 </DataGrid>
             );
         }
         onExporting(e) {
             e.component.beginUpdate();
-            e.component.columnOption("ID", "visible", true);
+            e.component.columnOption('ID', 'visible', true);
             const workbook = new ExcelJS.Workbook();
-            const worksheet = workbook.addWorksheet("Employees");
-
+            const worksheet = workbook.addWorksheet('Employees');
+        
             exportDataGrid({
                 component: e.component,
                 worksheet: worksheet
-                }).then(function() {
-                workbook.xlsx
-                    .writeBuffer()
-                    .then(function(buffer) {
-                    saveAs(
-                        new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx");
-                    })
-                    .then(() => {
-                        e.component.columnOption("ID", "visible", false);
-                        e.component.endUpdate();
-                    });
-                e.cancel = true;
+            }).then(function() {
+                workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                });
+            }).then(function() {
+                e.component.columnOption('ID', 'visible', false);
+                e.component.endUpdate();
             });
+        
+            e.cancel = true;
         }
     }
     export default App;
 
---- 
+---
+
 #####See Also#####
 - [export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/')
 - [customizeExportData](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeExportData.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#customizeExportData')

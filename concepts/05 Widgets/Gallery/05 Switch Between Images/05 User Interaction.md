@@ -7,8 +7,8 @@ To switch between images on touch-enabled devices, the user can perform the swip
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png"
             ],
             height: 300,
             swipeEnabled: false,
@@ -31,8 +31,8 @@ To switch between images on touch-enabled devices, the user can perform the swip
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png"
         ];
     }
     @NgModule({
@@ -54,9 +54,9 @@ With the buttons and swipe gesture, the user switches images in a particular ord
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
             ],
             height: 300,
             loop: true
@@ -77,9 +77,9 @@ With the buttons and swipe gesture, the user switches images in a particular ord
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
         ];
     }
     @NgModule({
@@ -101,8 +101,8 @@ Below the current image, the **Gallery** shows navigation bullets that allow the
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png"
             ],
             height: 300,
             indicatorEnabled: false
@@ -123,8 +123,8 @@ Below the current image, the **Gallery** shows navigation bullets that allow the
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png"
         ];
     }
     @NgModule({

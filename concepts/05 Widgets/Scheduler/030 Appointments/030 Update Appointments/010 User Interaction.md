@@ -6,7 +6,7 @@ An end user can update an appointment in one of the following ways.
 
 <div>
     <video width="640px" controls="yes">
-        <source src="/Content/images/doc/20_1/UiWidgets/edit_appointment.mp4" type="video/mp4">
+        <source src="/Content/images/doc/20_2/UiWidgets/edit_appointment.mp4" type="video/mp4">
     </video>
 </div>
 

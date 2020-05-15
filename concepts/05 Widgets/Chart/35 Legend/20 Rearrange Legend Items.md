@@ -259,7 +259,7 @@ Regardless the legend orientation, you can adjust the empty space between column
 
 Below, you can try out all the mentioned options in action.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/Legend/rearrangeLegendItems.html, /Content/Applications/20_1/DataVisualization/Guides/Legend/rearrangeLegendItems.js, /Content/Applications/20_1/DataVisualization/Guides/Legend/rearrangeLegendItems.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/Legend/rearrangeLegendItems.html, /Content/Applications/20_2/DataVisualization/Guides/Legend/rearrangeLegendItems.js, /Content/Applications/20_2/DataVisualization/Guides/Legend/rearrangeLegendItems.css"></div>
 
 #####See Also#####
 - [Relocate the Legend](/concepts/05%20Widgets/Chart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Chart/Legend/Relocate_the_Legend/')

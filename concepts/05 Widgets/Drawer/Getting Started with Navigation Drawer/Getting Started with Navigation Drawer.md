@@ -10,7 +10,7 @@ DevExtreme supplies application templates for <a href="https://devexpress.github
 
 If the templates are unsuitable or you use jQuery, follow the instructions in this tutorial. We create a **Drawer** that allows a user to switch between pages. The **Drawer** is opened and closed via a button on a toolbar.
 
-<div class="simulator-desktop-container drawer-simulator" data-view="/Content/Applications/20_1/GettingStartedWith/Drawer/index.html, /Content/Applications/20_1/GettingStartedWith/Drawer/index.js, /Content/Applications/20_1/GettingStartedWith/Drawer/index.css"></div>
+<div class="simulator-desktop-container drawer-simulator" data-view="/Content/Applications/20_2/GettingStartedWith/Drawer/index.html, /Content/Applications/20_2/GettingStartedWith/Drawer/index.js, /Content/Applications/20_2/GettingStartedWith/Drawer/index.css"></div>
 
 Refer to the subtopics for details on every configuration step. You can also see the full code below:
 
@@ -65,10 +65,10 @@ Refer to the subtopics for details on every configuration step. You can also see
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.light.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
             <link rel="stylesheet" href="index.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body>

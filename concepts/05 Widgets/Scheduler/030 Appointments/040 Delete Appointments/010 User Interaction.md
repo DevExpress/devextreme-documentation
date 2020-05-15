@@ -2,7 +2,7 @@ After a user clicks an appointment, the **Scheduler** displays a tooltip with tw
 
 <div>
     <video width="640px" controls="yes">
-        <source src="/Content/images/doc/20_1/UiWidgets/delete_appointment.mp4" type="video/mp4">
+        <source src="/Content/images/doc/20_2/UiWidgets/delete_appointment.mp4" type="video/mp4">
     </video>
 </div>
 

@@ -22,19 +22,19 @@ When a user points to a series, it may react in one of the following ways depend
         <tbody>
             <tr>
                 <td><i>"onlyPoint"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/fullstackedbar/onlyPoint.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/onlyPoint.png" /></td>
             </tr>
             <tr>
                 <td><i>"allSeriesPoints"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/fullstackedbar/allSeriesPoints.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/allSeriesPoints.png" /></td>
             </tr>
             <tr>
                 <td><i>"allArgumentPoints"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/fullstackedbar/allArgumentPoints.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/allArgumentPoints.png" /></td>
             </tr>
             <tr>
                 <td><i>"none"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/fullstackedbar/none.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/none.png" /></td>
             </tr>
         </tbody>
     </table>

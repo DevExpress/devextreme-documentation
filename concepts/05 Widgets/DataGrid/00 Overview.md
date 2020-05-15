@@ -1,6 +1,6 @@
 The **DataGrid** is a widget that represents data from a local or remote source in the form of a grid.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/UiWidgets/Guides/DataGridOverview/dataGridExample.html, /Content/Applications/20_1/UiWidgets/Guides/DataGridOverview/dataGridExample.js, /Content/Applications/20_1/UiWidgets/Guides/DataGridOverview/dataGridExample.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/UiWidgets/Guides/DataGridOverview/dataGridExample.html, /Content/Applications/20_2/UiWidgets/Guides/DataGridOverview/dataGridExample.js, /Content/Applications/20_2/UiWidgets/Guides/DataGridOverview/dataGridExample.css"></div>
 
 It can visualize local and remote data. Refer to the following topics for details on binding the widget to your data source:
 

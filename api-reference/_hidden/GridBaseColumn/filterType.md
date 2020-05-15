@@ -25,11 +25,11 @@ This option changes when the user clicks the **Select All** checkbox in the [hea
             <th>filterType / filterValues</th>
         </tr>
         <tr>
-            <td><img src="Content/images/doc/20_1/DataGrid/dg-selectall-unchecked.png"></td>
+            <td><img src="Content/images/doc/20_2/DataGrid/dg-selectall-unchecked.png"></td>
             <td><code>filterType: "include"</code><br><code>filterValues: null</code></td>
         </tr>
         <tr>
-            <td><img src="Content/images/doc/20_1/DataGrid/dg-selectall-checked.png"></td>
+            <td><img src="Content/images/doc/20_2/DataGrid/dg-selectall-checked.png"></td>
             <td><code>filterType: "exclude"</code><br><code>filterValues: null</code></td>
         </tr>
     </table>

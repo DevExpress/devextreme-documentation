@@ -7,9 +7,9 @@ By default, the change of the image is animated. You can specify how long the an
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
             ],
             height: 300,
             loop: true,
@@ -32,9 +32,9 @@ By default, the change of the image is animated. You can specify how long the an
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
         ];
     }
     @NgModule({

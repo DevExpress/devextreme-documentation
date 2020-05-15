@@ -2,7 +2,7 @@ The following image is an element map. Click the element you want to customize t
 
 <div style="text-align:center">
 
-<p style="display:inline-block"><img src="/Content/images/doc/20_1/DataGrid/Customize_the_Appearance.png" usemap="#image-map" alt="DevExtreme HTML5 JavaScript DataGrid Appearance"></p>
+<p style="display:inline-block"><img src="/Content/images/doc/20_2/DataGrid/Customize_the_Appearance.png" usemap="#image-map" alt="DevExtreme HTML5 JavaScript DataGrid Appearance"></p>
 
 <map name="image-map">
     <area alt="Toolbar" title="Toolbar" href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onToolbarPreparing" coords="565,50,4,3" shape="rect">

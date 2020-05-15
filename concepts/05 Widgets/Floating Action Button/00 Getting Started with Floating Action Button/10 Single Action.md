@@ -1,6 +1,6 @@
 A single-action FAB represents the primary action of a screen. According to the [guidelines](https://material.io/design/components/buttons-floating-action-button.html#usage), this action should be constructive, such as, create, share, explore, or edit, as in the following example:
 
-<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/20_1/GettingStartedWith/FloatingActionButton/SingleAction/index.html, /Content/Applications/20_1/GettingStartedWith/FloatingActionButton/SingleAction/index.js, /Content/Applications/20_1/GettingStartedWith/FloatingActionButton/SingleAction/index.css"></div>
+<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/20_2/GettingStartedWith/FloatingActionButton/SingleAction/index.html, /Content/Applications/20_2/GettingStartedWith/FloatingActionButton/SingleAction/index.js, /Content/Applications/20_2/GettingStartedWith/FloatingActionButton/SingleAction/index.css"></div>
 
 To create a single-action FAB, add one [SpeedDialAction](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/') to your page and specify its [onClick](/api-reference/10%20UI%20Widgets/dxSpeedDialAction/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/Configuration/#onClick') and [icon](/api-reference/10%20UI%20Widgets/dxSpeedDialAction/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/Configuration/#icon') options. Setting other options is not required, but we also specify a [hint](/api-reference/10%20UI%20Widgets/Widget/1%20Configuration/hint.md '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/Configuration/#hint').
 
@@ -54,9 +54,9 @@ The following code, which configures the example above, illustrates the describe
             <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
 
             <!-- DevExtreme resources -->
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.material.blue.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.material.blue.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
 
             <!-- Custom icons by Ionicons -->
             <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">

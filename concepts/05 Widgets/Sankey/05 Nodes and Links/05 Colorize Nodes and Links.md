@@ -123,7 +123,7 @@ To colorize nodes or links uniformly, specify the color using the **node**.[colo
 
 Below is a demo in which you can choose different predefined palettes, palette extension modes, and link colorization modes:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/SankeyColorization/colorizeNodes.html, /Content/Applications/20_1/DataVisualization/Guides/SankeyColorization/colorizeNodes.js, /Content/Applications/20_1/DataVisualization/Guides/SankeyColorization/colorizeNodes.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/SankeyColorization/colorizeNodes.html, /Content/Applications/20_2/DataVisualization/Guides/SankeyColorization/colorizeNodes.js, /Content/Applications/20_2/DataVisualization/Guides/SankeyColorization/colorizeNodes.css"></div>
 
 #####See Also#####
 - [Colorize Node Labels](/concepts/05%20Widgets/Sankey/15%20Node%20Labels/03%20Colorize%20Labels.md '/Documentation/Guide/Widgets/Sankey/Node_Labels/Colorize_Labels/')

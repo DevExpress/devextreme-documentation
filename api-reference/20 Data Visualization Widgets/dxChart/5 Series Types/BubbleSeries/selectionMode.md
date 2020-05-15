@@ -24,19 +24,19 @@ When a user selects a bubble, its series may react in one of the following ways 
         <tbody>
             <tr>
                 <td><i>"onlyPoint"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/bubble/onlyPoint.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/bubble/onlyPoint.png" /></td>
             </tr>
             <tr>
                 <td><i>"allSeriesPoints"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/bubble/allSeriesPoints.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/bubble/allSeriesPoints.png" /></td>
             </tr>
             <tr>
                 <td><i>"allArgumentPoints"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/bubble/allArgumentPoints.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/bubble/allArgumentPoints.png" /></td>
             </tr>
             <tr>
                 <td><i>"none"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/bubble/none.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/bubble/none.png" /></td>
             </tr>
         </tbody>
     </table>

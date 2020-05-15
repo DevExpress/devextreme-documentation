@@ -1,6 +1,6 @@
 Major scale ticks can be accompanied by scale labels. These labels display scale values. Scale labels are designed to make data represented by the **CircularGauge** more comprehensible.
 
-<img src="/Content/images/doc/20_1/ChartJS/CircularGaugeScaleLabels.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeScaleLabels" style="display:block; margin:0 auto" />
+<img src="/Content/images/doc/20_2/ChartJS/CircularGaugeScaleLabels.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeScaleLabels" style="display:block; margin:0 auto" />
 
 To configure scale labels, use the options within the **scale**.[label](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/scale/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/scale/label/') object.
 

@@ -4,7 +4,7 @@ The **DropDownButton** combines the functionality of a button and a drop-down me
 
 This tutorial describes how to configure a **DropDownButton** that logs user clicks in the browser console (you can open the console to see the messages):
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/GettingStartedWith/DropDownButton/index.html, /Content/Applications/20_1/GettingStartedWith/DropDownButton/index.js, /Content/Applications/20_1/GettingStartedWith/DropDownButton/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/DropDownButton/index.html, /Content/Applications/20_2/GettingStartedWith/DropDownButton/index.js, /Content/Applications/20_2/GettingStartedWith/DropDownButton/index.css"></div>
 
 Refer to the subtopics for details on every configuration step. You can also see the full code below:
 
@@ -40,9 +40,9 @@ Refer to the subtopics for details on every configuration step. You can also see
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body>

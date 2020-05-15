@@ -7,10 +7,10 @@ By default, the **Gallery** widget displays one image at a time. To fit more ima
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person4.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
             ],
             height: 300,
             width: 600,
@@ -33,10 +33,10 @@ By default, the **Gallery** widget displays one image at a time. To fit more ima
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
         ];
     }
     @NgModule({
@@ -58,10 +58,10 @@ When distributing images along the total width, the **Gallery** may add margins 
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
             ],
             height: 200,
             width: 320,
@@ -86,10 +86,10 @@ When distributing images along the total width, the **Gallery** may add margins 
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
         ];
     }
     @NgModule({
@@ -113,10 +113,10 @@ The **Gallery** widget allows you to display not only the current image, but als
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
             ],
             height: 200,
             width: 320,
@@ -141,10 +141,10 @@ The **Gallery** widget allows you to display not only the current image, but als
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
         ];
     }
     @NgModule({

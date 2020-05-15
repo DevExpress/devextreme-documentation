@@ -10,6 +10,7 @@
     "update-links-fail-on-change": "dx-tools update-links --fail-on-change",
     "update-all-links": "dx-tools update-links --check-all",
     "update-links": "dx-tools update-links",
-    "generate-content-map": "dx-tools generate-content-map"
+    "generate-content-map": "dx-tools generate-content-map",
+    "update-topics": "dx-tools update-topics"
   }
 }

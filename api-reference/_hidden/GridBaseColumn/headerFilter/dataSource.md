@@ -201,7 +201,7 @@ The following code shows how to specify a custom data source:
 
 ### Map Data Source Fields
 
-Header filter data objects should have the `text` and `value` fields, but when the data objects are fetched from a server, you have no control over their fields. In this case, map the original data source to the `text` + `value` structure. A mapped data source should also include key fields from the original data source.
+Header filter data objects should have the `text` and `value` fields. However, data objects fetched from a server may not have these fields. In this case, map the original data source to the `text` + `value` structure. A mapped data source should also include key fields from the original data source.
 
 [note] We recommend that you keep the [allowSearch]({basewidgetpath}/Configuration/columns/headerFilter/#allowSearch) option set to **false** because searching produces incorrect results when data source fields are mapped.
 

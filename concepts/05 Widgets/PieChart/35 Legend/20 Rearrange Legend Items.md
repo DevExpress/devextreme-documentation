@@ -37,6 +37,46 @@ Depending on whether the legend is oriented vertically or horizontally, the **Pi
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxPieChart ... >
+                <DxLegend orientation="vertical"/> <!-- or "horizontal" -->
+            </DxPieChart>
+        </template>
+
+        <script>
+        import DxPieChart, {
+            DxLegend
+        } from 'devextreme-vue/pie-chart';
+
+        export default {
+            components: {
+                DxPieChart,
+                DxLegend
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import PieChart, {
+            Legend
+        } from 'devextreme-react/pie-chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <PieChart ... >
+                        <Legend orientation="vertical" /> {/* or "horizontal" */}
+                    </PieChart>
+                );
+            }
+        }
+
     ---
 
     [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#horizontalAlignment') option. For details on the legend's location, refer to the [Relocate the Legend](/concepts/05%20Widgets/PieChart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/PieChart/Legend/Relocate_the_Legend/') topic.
@@ -81,6 +121,52 @@ To distribute all legend items between several columns (in a vertically-oriented
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxPieChart ... >
+                <DxLegend ...
+                    :column-count="3"
+                    <!-- :row-count="2" -->
+                />
+            </DxPieChart>
+        </template>
+
+        <script>
+        import DxPieChart, {
+            DxLegend
+        } from 'devextreme-vue/pie-chart';
+
+        export default {
+            components: {
+                DxPieChart,
+                DxLegend
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import PieChart, {
+            Legend
+        } from 'devextreme-react/pie-chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <PieChart ... >
+                        <Legend
+                            columnCount={3}
+                            {/* rowCount={2} */}
+                        />
+                    </PieChart>
+                );
+            }
+        }
+
     ---
 
 - **Adjust the empty space between columns and rows**         
@@ -122,6 +208,52 @@ Regardless the legend orientation, you can adjust the empty space between column
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxPieChart ... >
+                <DxLegend ...
+                    :column-item-spacing="20"
+                    :row-item-spacing="30"
+                />
+            </DxPieChart>
+        </template>
+
+        <script>
+        import DxPieChart, {
+            DxLegend
+        } from 'devextreme-vue/pie-chart';
+
+        export default {
+            components: {
+                DxPieChart,
+                DxLegend
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import PieChart, {
+            Legend
+        } from 'devextreme-react/pie-chart';
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <PieChart ... >
+                        <Legend
+                            columnItemSpacing={20}
+                            rowItemSpacing={30}
+                        />
+                    </PieChart>
+                );
+            }
+        }
 
     ---
 

@@ -21,8 +21,8 @@ To access a point label, call the [getLabel()](/api-reference/20%20Data%20Visual
         // @ViewChild(DxPieChartComponent) pieChart: DxPieChartComponent;
         label: any = {};
         getPointLabel () {
-            let series = this.pieChart.instance.getAllSeries()[0];
-            let seriesPoints = series.getAllPoints();
+            const series = this.pieChart.instance.getAllSeries()[0];
+            const seriesPoints = series.getAllPoints();
             this.label = seriesPoints[0].getLabel();
         }
     }
@@ -33,6 +33,72 @@ To access a point label, call the [getLabel()](/api-reference/20%20Data%20Visual
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            ref="pieChart">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        data() {
+            return {
+                label: {}
+            };
+        },
+        methods: {
+            getPointLabel() {
+                const series = this.$refs.pieChart.instance.getAllSeries()[0];
+                const seriesPoints = series.getAllPoints();
+                this.label = seriesPoints[0].getLabel();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.pieChartRef = React.createRef();
+            this.label = {};
+
+            this.getPointLabel = this.getPointLabel.bind(this);
+        }
+
+        render() {
+            return (
+                <PieChart ...
+                    ref={this.pieChartRef}>
+                </PieChart>
+            );
+        }
+
+        get pieChart() {
+            return this.pieChartRef.current.instance;
+        }
+
+        getPointLabel() {
+            const series = this.pieChart.getAllSeries()[0];
+            const seriesPoints = series.getAllPoints();
+            this.label = seriesPoints[0].getLabel();
+        }
+    }
 
 ---
 

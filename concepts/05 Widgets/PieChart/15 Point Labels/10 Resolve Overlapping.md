@@ -31,6 +31,41 @@ In multi-series charts, point labels often overlap. To decide how to resolve ove
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            resolve-label-overlapping="shift"> <!-- or 'hide' | 'none' -->
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    resolveLabelOverlapping="shift"> {/* or 'hide' | 'none' */}
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 Another way to deal with overlapping labels is to hide all labels of a specific series once their count exceeds a certain limit. Mostly, this feature is useful if the series accepts new points at runtime. To specify the limit on point labels, assign a number to the [maxLabelCount](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/maxLabelCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#maxLabelCount') option.
@@ -70,6 +105,50 @@ Another way to deal with overlapping labels is to hide all labels of a specific 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxSeries ...
+                :max-label-count="10"
+            />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Series ...
+                        maxLabelCount={10}
+                    />
+                </PieChart>
+            );
+        }
+    }
 
 ---
 

@@ -45,6 +45,62 @@ When a tooltip becomes shown or hidden, the **PieChart** fires the [tooltipShown
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @tooltip-shown="onTooltipShown"
+            @tooltip-hidden="onTooltipHidden">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            onTooltipShown(e) {
+                let point = e.target;
+                // Handler of the "tooltipShown" event
+            },
+            onTooltipHidden(e) {
+                let point = e.target;
+                // Handler of the "tooltipHidden" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onTooltipShown={onTooltipShown}
+                    onTooltipHidden={onTooltipHidden}>
+                </PieChart>
+            );
+        }
+    }
+
+    function onTooltipShown(e) {
+        let point = e.target;
+        // Handler of the "tooltipShown" event
+    }
+    function onTooltipHidden(e) {
+        let point = e.target;
+        // Handler of the "tooltipHidden" event
+    }
+
 ---
 
 If you are going to change the event handlers at runtime or if you need to attach several handlers to a single event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

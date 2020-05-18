@@ -34,12 +34,12 @@ Each series point allows you to show or hide its tooltip programmatically by cal
     export class AppComponent {
         // Shows the tooltip only when a user clicks a series point
         onPointClick (e) {
-            let point = e.target;
+            const point = e.target;
             point.showTooltip();
         },
         // Hides the tooltip once the user moves the pointer away from the series point
         onPointHoverChanged (e) {
-            let point = e.target;
+            const point = e.target;
             if (!point.isHovered()) {
                 point.hideTooltip();
             }
@@ -52,6 +52,70 @@ Each series point allows you to show or hide its tooltip programmatically by cal
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @point-click="onPointClick"
+            @point-hover-changed="onPointHoverChanged">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            // Shows the tooltip only when a user clicks a series point
+            onPointClick(e) {
+                const point = e.target;
+                point.showTooltip();
+            },
+            // Hides the tooltip once the user moves the pointer away from the series point
+            onPointHoverChanged(e) {
+                const point = e.target;
+                if (!point.isHovered()) {
+                    point.hideTooltip();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onPointClick={onPointClick}
+                    onPointHoverChanged={onPointHoverChanged}>
+                </PieChart>
+            );
+        }
+    }
+
+    // Shows the tooltip only when a user clicks a series point
+    function onPointClick(e) {
+        const point = e.target;
+        point.showTooltip();
+    }
+    // Hides the tooltip once the user moves the pointer away from the series point
+    function onPointHoverChanged(e) {
+        const point = e.target;
+        if (!point.isHovered()) {
+            point.hideTooltip();
+        }
+    }
 
 ---
 
@@ -83,6 +147,60 @@ You can also hide the tooltip regardless of the point to which it belongs by cal
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            ref="pieChart">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            hideTooltip () {
+                this.$refs.pieChart.instance.hideTooltip();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.pieChartRef = React.createRef();
+
+            this.hideTooltip = () => {
+                this.pieChart.hideTooltip();
+            };
+        }
+
+        render() {
+            return (
+                <PieChart ...
+                    ref={this.pieChartRef}>
+                </PieChart>
+            );
+        }
+
+        get pieChart() {
+            return this.pieChartRef.current.instance;
+        }
+    }
 
 ---
 

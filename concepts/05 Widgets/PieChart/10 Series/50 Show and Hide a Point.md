@@ -31,7 +31,7 @@ The **PieChart** provides an API for showing and hiding a series point at runtim
     // ...
     export class AppComponent {
         onLegendClick (e) {
-            let points = e.points;
+            const points = e.points;
             // for a single-series PieChart
             points[0].isVisible() ? points[0].hide() : points[0].show();
 
@@ -49,5 +49,61 @@ The **PieChart** provides an API for showing and hiding a series point at runtim
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @legend-click="onLegendClick">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            onLegendClick(e) {
+                const points = e.points;
+                // for a single-series PieChart
+                points[0].isVisible() ? points[0].hide() : points[0].show();
+
+                /* for a multi-series PieChart
+                points.forEach(point => point.isVisible() ? point.hide() : point.show());
+                */
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onLegendClick={onLegendClick}>
+                </PieChart>
+            );
+        }
+    }
+
+    function onLegendClick(e) {
+        const points = e.points;
+        // for a single-series PieChart
+        points[0].isVisible() ? points[0].hide() : points[0].show();
+
+        /* for a multi-series PieChart
+        points.forEach(point => point.isVisible() ? point.hide() : point.show());
+        */
+    }
 
 ---

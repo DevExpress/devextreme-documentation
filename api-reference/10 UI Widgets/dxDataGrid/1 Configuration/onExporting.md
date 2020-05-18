@@ -75,7 +75,7 @@ You can use this function to adjust column options before export. In the followi
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
         <dxo-export [enabled]="true"></dxo-export>
-        <dxi-column dataField='ID' [visible]="false"></dxi-column>
+        <dxi-column dataField="ID" [visible]="false"></dxi-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -139,7 +139,7 @@ You can use this function to adjust column options before export. In the followi
         <DxDataGrid ...
             @exporting="onExporting">
             <DxExport :enabled="true" />
-            <DxColumn data-field='ID' :visible="false" />
+            <DxColumn data-field="ID" :visible="false" />
         </DxDataGrid>
     </template>
 
@@ -201,7 +201,7 @@ You can use this function to adjust column options before export. In the followi
                 <DataGrid ...
                     onExporting={this.onExporting}>
                     <Export enabled={true} />
-                    <Column dataField='ID' visible={false} />
+                    <Column dataField="ID" visible={false} />
                 </DataGrid>
             );
         }

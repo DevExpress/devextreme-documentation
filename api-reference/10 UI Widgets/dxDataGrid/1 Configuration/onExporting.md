@@ -27,7 +27,7 @@ The name of the file where grid data is about to be exported.
 Model data. Available only if Knockout is used.
 
 ---
-You can use this function with the [onExported](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExported.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExported') function to adjust columns before export. In the following code, these functions are used to export a hidden `ID` column:
+You can use this function to adjust column options before export. In the following code, the **column**.[visible](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#visible) option's value is changed to export the hidden `ID` column.  
 
 ---
 
@@ -35,67 +35,111 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
 
     <!--JavaScript-->
     $(function() {
-        $("#dataGridContainer").dxDataGrid({
+        $('#gridContainer').dxDataGrid({
             // ...
-            columns: [{
-                dataField: "ID",
-                visible: false
-            }, // ...
-            ]
-            onExporting: function (e) {
-                e.component.beginUpdate();
-                e.component.columnOption("ID", "visible", true);
+            export: {
+                enabled: true
             },
-            onExported: function (e) {
-                e.component.columnOption("ID", "visible", false);
-                e.component.endUpdate();
+            columns: [{
+                dataField: 'ID',
+                visible: false
+            }, {
+                // ...
+            }],
+            onExporting: function(e) { 
+                e.component.beginUpdate();
+                e.component.columnOption('ID', 'visible', true);
+                var workbook = new ExcelJS.Workbook(); 
+                var worksheet = workbook.addWorksheet('Main sheet');
+
+                DevExpress.excelExporter.exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                    });
+                }).then(function() {
+                    e.component.columnOption('ID', 'visible', false);
+                    e.component.endUpdate();
+                });
+            
+                e.cancel = true;
             }
         });
     });
 
-##### Angular
+##### Angular   
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        onExporting (e) {
-            e.component.beginUpdate();
-            e.component.columnOption("ID", "visible", true);
-        };
-        onExported (e) {
-            e.component.columnOption("ID", "visible", false);
-            e.component.endUpdate();
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
-
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-data-grid ...
-        (onExporting)="onExporting($event)"
-        (onExported)="onExported($event)">
-        <!-- ... -->
+        (onExporting)="onExporting($event)">
+        <dxo-export [enabled]="true"></dxo-export>
         <dxi-column dataField="ID" [visible]="false"></dxi-column>
     </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
+    import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
+    
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        onExporting(e) {
+            e.component.beginUpdate();
+            e.component.columnOption('ID', 'visible', true);
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Employees');
+        
+            exportDataGrid({
+                component: e.component,
+                worksheet: worksheet
+            }).then(function() {
+                workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                });
+            }).then(function() {
+                e.component.columnOption('ID', 'visible', false);
+                e.component.endUpdate();
+            });
+        
+            e.cancel = true;
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxDataGridModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ...
-            @exporting="onExporting"
-            @exported="onExported"
-        >
-            <DxColumn
-                data-field="ID"
-                :visible="false"
-            />
+            @exporting="onExporting">
+            <DxExport :enabled="true" />
+            <DxColumn data-field="ID" :visible="false" />
         </DxDataGrid>
     </template>
 
@@ -103,57 +147,85 @@ You can use this function with the [onExported](/api-reference/10%20UI%20Widgets
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxExport, DxColumn } from 'devextreme-vue/data-grid';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
+    import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
 
     export default {
         components: {
             DxDataGrid,
+            DxExport,
             DxColumn
         },
         methods: {
             onExporting(e) {
                 e.component.beginUpdate();
                 e.component.columnOption('ID', 'visible', true);
-            },
-            onExported(e) {
-                e.component.columnOption('ID', 'visible', false);
-                e.component.endUpdate();
+                const workbook = new ExcelJS.Workbook();
+                const worksheet = workbook.addWorksheet('Employees');
+            
+                exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                    });
+                }).then(function() {
+                    e.component.columnOption('ID', 'visible', false);
+                    e.component.endUpdate();
+                });
+            
+                e.cancel = true;
             }
         }
+    }
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    import ExcelJS from 'exceljs';
+    import saveAs from 'file-saver';
+    import DataGrid, { Export, Column } from 'devextreme-react/data-grid';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
 
     class App extends React.Component {
         render() {
             return (
-                <DataGrid ... 
-                    onExporting={this.onExporting}
-                    onExported={this.onExported}>
-                    <Column dataField="ID" visible={false} />    
+                <DataGrid ...
+                    onExporting={this.onExporting}>
+                    <Export enabled={true} />
+                    <Column dataField="ID" visible={false} />
                 </DataGrid>
             );
         }
-
         onExporting(e) {
             e.component.beginUpdate();
             e.component.columnOption('ID', 'visible', true);
-        }
-
-        onExported(e) {
-            e.component.columnOption('ID', 'visible', false);
-            e.component.endUpdate();
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Employees');
+        
+            exportDataGrid({
+                component: e.component,
+                worksheet: worksheet
+            }).then(function() {
+                workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                });
+            }).then(function() {
+                e.component.columnOption('ID', 'visible', false);
+                e.component.endUpdate();
+            });
+        
+            e.cancel = true;
         }
     }
-
     export default App;
 
 ---

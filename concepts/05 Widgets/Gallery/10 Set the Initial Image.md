@@ -7,9 +7,9 @@ By default, the image that the **Gallery** widget displays initially is the firs
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
             ],
             height: 300,
             selectedIndex: 2
@@ -30,9 +30,9 @@ By default, the image that the **Gallery** widget displays initially is the firs
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
         ];
     }
     @NgModule({
@@ -53,13 +53,13 @@ As an alternative, you can specify the initial image using its data source objec
     <!--JavaScript-->
     var galleryData = [{
         imageAlt: "Maria",
-        imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png"
+        imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png"
     }, {
         imageAlt: "John",
-        imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png"
+        imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png"
     }, {
         imageAlt: "Xavier",
-        imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+        imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
     }];
 
     $(function () {
@@ -85,13 +85,13 @@ As an alternative, you can specify the initial image using its data source objec
     export class AppComponent {
         galleryDataSource = [{
             imageAlt: "Maria",
-            imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png"
+            imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png"
         }, {
             imageAlt: "John",
-            imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png"
+            imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png"
         }, {
             imageAlt: "Xavier",
-            imageSrc: "https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png"
+            imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png"
         }];
         selectedItem = this.galleryDataSource[1];
     }

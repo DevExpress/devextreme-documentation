@@ -1,6 +1,6 @@
 The **Bubble** series type visualizes data as individual points of different sizes called "bubbles". Because **Bubble** series have the additional size characteristic, they can convey more information than, for example, [Line](/concepts/05%20Widgets/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Line_Series/') or [Scatter](/concepts/05%20Widgets/Chart/11%20Series%20Types/40%20Scatter%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Scatter_Series/') series.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bubble.html, /Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bubble.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/bubble.html, /Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/bubble.js"></div>
 
 Assign *"bubble"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') option to specify the **Bubble** series type. You can configure:
 

@@ -99,9 +99,9 @@ The following images illustrate how different **barPadding** and **barGroupPaddi
         </thead>
         <tbody>
             <tr>
-                <td><img src="/Content/images/doc/20_1/ChartJS/polarbarwidth/1.png" /></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/polarbarwidth/2.png" /></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/polarbarwidth/3.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/1.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/2.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/3.png" /></td>
             </tr>
         </tbody>
     </table>

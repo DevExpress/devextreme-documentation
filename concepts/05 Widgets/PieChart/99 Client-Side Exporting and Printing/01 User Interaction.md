@@ -128,6 +128,7 @@ If you want to restrict the set of formats available for exporting, change the *
         // ...
     })
 
+<<<<<<< HEAD
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -185,4 +186,6 @@ If you want to restrict the set of formats available for exporting, change the *
         }
     }
 
+=======
+>>>>>>> 21381bddf62039913f44c5b374d0d59956c7a1a5
 ---

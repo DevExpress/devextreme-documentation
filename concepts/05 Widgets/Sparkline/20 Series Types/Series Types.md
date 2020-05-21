@@ -2,7 +2,7 @@ The different sections of this guide describe the [series](/concepts/05%20Widget
 
 **Hover** over any one of the sparklines below to discover its series type. **Click** a sparkline to navigate to the topic describing the corresponding series type in detail.
 
-<p><img style="margin:0px auto;display:block" src="/Content/images/doc/20_1/ChartJS/SparklineAllTypes.png" alt="DevExtreme dxSparkline SeriesTypes" usemap="#sparklineSeriesTypes" /></p>
+<p><img style="margin:0px auto;display:block" src="/Content/images/doc/20_2/ChartJS/SparklineAllTypes.png" alt="DevExtreme dxSparkline SeriesTypes" usemap="#sparklineSeriesTypes" /></p>
 
 <map name="sparklineSeriesTypes">
     <area shape="rect" title="Line" coords="1,1,251,80" href="/Documentation/Guide/Widgets/Sparkline/Series_Types/#Line" />

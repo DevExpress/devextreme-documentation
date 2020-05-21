@@ -6,7 +6,7 @@ To add an appointment, a user follows the steps listed below.
 
 <div>
     <video width="640px" controls="yes">
-        <source src="/Content/images/doc/20_1/UiWidgets/add_appointment.mp4" type="video/mp4">
+        <source src="/Content/images/doc/20_2/UiWidgets/add_appointment.mp4" type="video/mp4">
     </video>
 </div>
 

@@ -65,39 +65,39 @@ The following table shows the available fill patterns:
     <tbody>
         <tr>
             <td><i>"darkDown"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/darkDown.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/darkDown.png" /></td>
         </tr>
         <tr>
             <td><i>"darkGray"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/darkGray.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/darkGray.png" /></td>
         </tr>
         <tr>
             <td><i>"darkGrid"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/darkGrid.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/darkGrid.png" /></td>
         </tr>
         <tr>
             <td><i>"darkHorizontal"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/darkHorizontal.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/darkHorizontal.png" /></td>
         </tr>
         <tr>
             <td><i>"darkTrellis"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/darkTrellis.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/darkTrellis.png" /></td>
         </tr>
         <tr>
             <td><i>"darkUp"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/darkUp.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/darkUp.png" /></td>
         </tr>
         <tr>
             <td><i>"darkVertical"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/darkVertical.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/darkVertical.png" /></td>
         </tr>
         <tr>
             <td><i>"gray0625"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/gray0625.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/gray0625.png" /></td>
         </tr>
         <tr>
             <td><i>"gray125"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/gray125.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/gray125.png" /></td>
         </tr>
     </tbody>
 </table>
@@ -117,39 +117,39 @@ The following table shows the available fill patterns:
     <tbody>
         <tr>
             <td><i>"lightDown"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/lightDown.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/lightDown.png" /></td>
         </tr>
         <tr>
             <td><i>"lightGray"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/lightGray.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/lightGray.png" /></td>
         </tr>
         <tr>
             <td><i>"lightGrid"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/lightGrid.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/lightGrid.png" /></td>
         </tr>
         <tr>
             <td><i>"lightHorizontal"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/lightHorizontal.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/lightHorizontal.png" /></td>
         </tr>
         <tr>
             <td><i>"lightTrellis"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/lightTrellis.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/lightTrellis.png" /></td>
         </tr>
         <tr>
             <td><i>"lightUp"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/lightUp.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/lightUp.png" /></td>
         </tr>
         <tr>
             <td><i>"lightVertical"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/lightVertical.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/lightVertical.png" /></td>
         </tr>
         <tr>
             <td><i>"mediumGray"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/mediumGray.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/mediumGray.png" /></td>
         </tr>
         <tr>
             <td><i>"solid"</i></td>
-            <td><img src="/Content/images/doc/20_1/ExcelExport/FillPatterns/solid.png" /></td>
+            <td><img src="/Content/images/doc/20_2/ExcelExport/FillPatterns/solid.png" /></td>
         </tr>
     </tbody>
 </table>

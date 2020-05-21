@@ -25,27 +25,27 @@ The following symbols are available.
         <tbody>
             <tr>
                 <td><i>"circle"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/point-symbols/circle.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/point-symbols/circle.png" /></td>
             </tr>
             <tr>
                 <td><i>"square"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/point-symbols/square.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/point-symbols/square.png" /></td>
             </tr>
             <tr>
                 <td><i>"polygon"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/point-symbols/polygon.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/point-symbols/polygon.png" /></td>
             </tr>
             <tr>
                 <td><i>"triangleDown"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/point-symbols/triangleDown.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/point-symbols/triangleDown.png" /></td>
             </tr>
             <tr>
                 <td><i>"triangleUp"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/point-symbols/triangleUp.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/point-symbols/triangleUp.png" /></td>
             </tr>
             <tr>
                 <td><i>"cross"</i></td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/point-symbols/cross.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/point-symbols/cross.png" /></td>
             </tr>
         </tbody>
     </table>

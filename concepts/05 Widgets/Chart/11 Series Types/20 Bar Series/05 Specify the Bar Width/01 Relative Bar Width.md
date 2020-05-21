@@ -187,15 +187,15 @@ The following images illustrate how different **barPadding** and **barGroupPaddi
         <tbody>
             <tr>
                 <td>barGroupPadding: 0 <br/> barPadding: 0</td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/barwidth/1.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/barwidth/1.png" /></td>
             </tr>
             <tr>
                 <td>barGroupPadding: 0.2 <br/> barPadding: 0</td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/barwidth/2.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/barwidth/2.png" /></td>
             </tr>
             <tr>
                 <td>barGroupPadding: 0.2 <br/> barPadding: 0.1</td>
-                <td><img src="/Content/images/doc/20_1/ChartJS/barwidth/3.png" /></td>
+                <td><img src="/Content/images/doc/20_2/ChartJS/barwidth/3.png" /></td>
             </tr>
         </tbody>
     </table>

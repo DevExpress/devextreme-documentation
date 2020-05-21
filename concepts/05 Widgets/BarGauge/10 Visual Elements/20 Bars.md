@@ -1,6 +1,6 @@
 Gauge bars display [values](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/values.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/#values') on a bar gauge. Each bar is located on a separate circular track and indicates one value.
 
-<img src="/Content/images/doc/20_1/ChartJS/GaugeBars.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge GaugeBars" style="display:block; margin:0 auto" />
+<img src="/Content/images/doc/20_2/ChartJS/GaugeBars.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge GaugeBars" style="display:block; margin:0 auto" />
 
 There are several options for customizing the bar's appearance and arrangement. A brief overview of them is explained below.
 

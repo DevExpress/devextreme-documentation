@@ -2,6 +2,7 @@
 id: dxScheduler.Options.editing.allowEditingTimeZones
 type: Boolean
 default: false
+dep: dxScheduler.Options.editing.allowTimeZoneEditing
 ---
 ---
 ##### shortDescription

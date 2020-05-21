@@ -78,4 +78,4 @@ The DataSource in the example above groups the items by the time period. The res
         }
     ]
 
-[note] The function passed to the **postProcessed** option is performed within the DataSource and is not passed to the underlying Store.
+[note] The function passed to the **postProcess** option is performed within the DataSource and is not passed to the underlying Store.

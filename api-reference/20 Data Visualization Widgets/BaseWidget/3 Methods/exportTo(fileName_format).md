@@ -12,7 +12,8 @@ The name of the file to which the widget is about to be exported.
 The file's format. One of 'PNG', 'PDF', 'JPEG', 'SVG' and 'GIF'.  
 PNG is used if the browser does not support exporting to the specified format.
 
----     
+---
+     
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportAndPrintingAPI/"
 }

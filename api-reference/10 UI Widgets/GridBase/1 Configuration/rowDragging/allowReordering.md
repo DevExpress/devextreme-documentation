@@ -8,7 +8,7 @@ default: false
 Allows row reordering using drag and drop gestures.
 
 ---
-This option only enables dragging. You should also implement the reordering logic in the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler to enable row reordering inside a component. If you need to perform cross-component drag-and-drop, implement the dragging logic in the [onAdd]({basewidgetpath}/Configuration/rowDragging/#onAdd) handler.
+This option only enables dragging. You should also implement the reordering logic in the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler to enable row reordering inside a component. If you need to perform cross-component drag and drop, implement the dragging logic in the [onAdd]({basewidgetpath}/Configuration/rowDragging/#onAdd) handler.
 
 #include common-demobutton-named with {
     name: "Row Reordering",

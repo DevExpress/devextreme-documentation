@@ -1,3 +1,0 @@
-[important]The functionality described in this guide is no longer required since all the modern browsers implement APIs for saving files.
-
-If your application will be used in browsers that do not implement an API for saving files (for instance, **Safari on Mac OS** before version 10) and you need the exporting feature to work correctly, you can implement a server-side proxy, which will stream the file back to an end user in response to a POST request. The proxy implementation is different for each platform.

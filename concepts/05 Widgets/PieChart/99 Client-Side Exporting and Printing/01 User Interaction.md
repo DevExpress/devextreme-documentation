@@ -40,6 +40,52 @@ You can enable both exporting and printing by setting the [export](/api-referenc
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxExport
+                :enabled="true"
+                :printing-enabled="false"
+            />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxExport
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxExport
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Export
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Export
+                        enabled={true}
+                        printingEnabled={false}
+                    />
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 If you want to restrict the set of formats available for exporting, change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/export/#formats') array. You can also specify the default name for the exported file using the [fileName](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/export/#fileName') option.
@@ -81,5 +127,62 @@ If you want to restrict the set of formats available for exporting, change the *
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxExport
+                :enabled="true"
+                :formats="formats"
+                file-name="exported_chart"
+            />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxExport
+    } from 'devextreme-vue/pie-chart';
+
+    const formats = ['PNG', 'JPEG'];
+
+    export default {
+        components: {
+            DxPieChart,
+            DxExport
+        },
+        data() {
+            return {
+                formats
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Export
+    } from 'devextreme-react/pie-chart';
+
+    const formats = ['PNG', 'JPEG'];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Export
+                        enabled={true}
+                        formats={formats}
+                        fileName="exported_chart"
+                    />
+                </PieChart>
+            );
+        }
+    }
 
 ---

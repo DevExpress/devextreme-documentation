@@ -9,40 +9,40 @@ default: 'line'
 Determines the type of a sparkline.
 
 ---
-A sparkline type determines the visual representation of data. Different options of the **Sparkline** widget are available for different types. 
+A sparkline type determines the visual representation of data. The following list shows options that are available for the **Sparkline** of a certain type.
 
-The following options are available for all the **Sparkline** types:     
+- **All types**:     
 
-- [argumentField](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#argumentField)
-- [dataSource](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#dataSource)
-- [firstLastColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#firstLastColor)
-- [minColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#minColor)
-- [maxColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#maxColor)
-- [showFirstLast](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#showFirstLast)
-- [showMinMax](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#showMinMax)
-- [size](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/size/)
-- [theme](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#theme)
-- [tooltip](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/tooltip/)
-- [valueField](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#valueField)
+    - [argumentField](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#argumentField)
+    - [dataSource](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#dataSource)
+    - [firstLastColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#firstLastColor)
+    - [minColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#minColor)
+    - [maxColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#maxColor)
+    - [showFirstLast](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#showFirstLast)
+    - [showMinMax](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#showMinMax)
+    - [size](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/size/)
+    - [theme](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#theme)
+    - [tooltip](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/tooltip/)
+    - [valueField](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#valueField)
 
-The following options are available for the **line**, **spline**, **stepline**, **area**, **splinearea**, and **steparea** types:      
+- The **line**, **spline**, **stepline**, **area**, **splinearea**, and **steparea** types:      
 
-- [lineColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lineColor)
-- [lineWidth](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lineWidth)
-- [pointColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointColor)
-- [pointSize](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointSize)
-- [pointSymbol](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointSymbol)
+    - [lineColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lineColor)
+    - [lineWidth](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lineWidth)
+    - [pointColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointColor)
+    - [pointSize](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointSize)
+    - [pointSymbol](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointSymbol)
 
-The following options are available for the **bar** type:
+- The **bar** type:
 
-- [barNegativeColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#barNegativeColor)
-- [barPositiveColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#barPositiveColor)
+    - [barNegativeColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#barNegativeColor)
+    - [barPositiveColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#barPositiveColor)
 
-The following options are available for the **winloss** type:
+- The **winloss** type:
 
-- [lossColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lossColor)
-- [winColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#winColor)
-- [winlossThreshold](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#winlossThreshold)
+    - [lossColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#lossColor)
+    - [winColor](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#winColor)
+    - [winlossThreshold](/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#winlossThreshold)
 
 #include common-ref-enum with {
     enum: "`SparklineType`",

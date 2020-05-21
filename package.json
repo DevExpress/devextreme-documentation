@@ -4,7 +4,7 @@
   "author": "Developer Express Inc.",
   "version": "20.2.0",
   "devDependencies": {
-    "devextreme-internal-tools": "^1.2.88"
+    "devextreme-internal-tools": "stable"
   },
   "scripts": {
     "update-links-fail-on-change": "dx-tools update-links --fail-on-change",

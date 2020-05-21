@@ -23,5 +23,14 @@ Stylesheets in the code above apply the Generic Light theme. The `dx-viewport` c
 
 Specific functionality requires additional libraries. For instance, client-side exporting in **PivotGrid** widget requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> library; the [same feature](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) in the **DataGrid** widget also needs the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. Similarly, the [HtmlEditor](/concepts/05%20Widgets/HtmlEditor/00%20Overview.md '/Documentation/Guide/Widgets/HtmlEditor/Overview/') widget requires <a href="https://quilljs.com/" target="_blank">Quill</a>.
 
+[note]
+
+The **Diagram** and **Gantt** widgets require additional resources (scripts and styles) for the page. For more information, review the following topics:
+
+- [Getting Started with Diagram](/Documentation/Guide/Widgets/Diagram/Getting_Started_with_Diagram/)
+- [Getting Started with Gantt](/Documentation/Guide/Widgets/Gantt/Getting_Started_with_Gantt/)
+
+[/note]
+
 #####See Also#####
 #include common-link-configurewidget

@@ -5,6 +5,15 @@ Open the main component file (`main.js`) and import `dx.common.css` and a [prede
     import 'devextreme/dist/css/dx.light.css';
     // ...
 
+[note]
+
+The **Diagram** and **Gantt** widgets require additional resources (scripts and styles) for the page. For more information, review the following topics:
+
+- [Getting Started with Diagram](/Documentation/Guide/Widgets/Diagram/Getting_Started_with_Diagram/)
+- [Getting Started with Gantt](/Documentation/Guide/Widgets/Gantt/Getting_Started_with_Gantt/)
+
+[/note]
+
 Then, go to the `public` folder, open the `index.html` file, and add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all page elements (and not only to DevExtreme widgets).
 
     <!-- tab: index.html -->

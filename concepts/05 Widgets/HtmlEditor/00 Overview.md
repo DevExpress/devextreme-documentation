@@ -99,7 +99,7 @@ The **HtmlEditor** supports the following features:
 - [Built-in formats' and modules' extension](/concepts/05%20Widgets/HtmlEditor/10%20Formats/33%20Customize%20Built-In%20Formats%20and%20Modules '/Documentation/Guide/Widgets/HtmlEditor/Formats/#Customize_Built-In_Formats_and_Modules')
 - [Custom formats and modules](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/get(componentPath).md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#getcomponentPath')
 - [Mail-merge placeholders](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/variables '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/variables/') (for example, %username%)
-- Drag-and-drop images
+- Drag and drop images
 - Copy-paste rich content (unsupported formats are removed)
 
 The **HtmlEditor** has the following limitations:

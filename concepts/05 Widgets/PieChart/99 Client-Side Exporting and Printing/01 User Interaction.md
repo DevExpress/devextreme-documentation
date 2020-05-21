@@ -146,6 +146,8 @@ If you want to restrict the set of formats available for exporting, change the *
         DxExport
     } from 'devextreme-vue/pie-chart';
 
+    const formats = ['PNG', 'JPEG'];
+
     export default {
         components: {
             DxPieChart,
@@ -153,7 +155,7 @@ If you want to restrict the set of formats available for exporting, change the *
         },
         data() {
             return {
-                formats: ['PNG', 'JPEG']
+                formats
             };
         }
     }
@@ -167,19 +169,15 @@ If you want to restrict the set of formats available for exporting, change the *
         Export
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-    
-            this.formats = ['PNG', 'JPEG'];
-        }
+    const formats = ['PNG', 'JPEG'];
 
+    class App extends React.Component {
         render() {
             return (
                 <PieChart ... >
                     <Export
                         enabled={true}
-                        formats={this.formats}
+                        formats={formats}
                         fileName="exported_chart"
                     />
                 </PieChart>

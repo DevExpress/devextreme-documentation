@@ -9,7 +9,7 @@ default: 'line'
 Determines the type of a sparkline.
 
 ---
-A sparkline type determines the visual representation of data. The following list shows options that are available for the **Sparkline** of a certain type.
+The sparkline type determines how data is visualized. The following list shows options that are available for different types of  **Sparklines**:
 
 - **All types**:     
 

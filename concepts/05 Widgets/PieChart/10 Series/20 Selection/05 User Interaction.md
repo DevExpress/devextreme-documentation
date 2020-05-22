@@ -235,7 +235,7 @@ Only a single point can be in the selected state at a time by default. If you ne
         render() {
             return (
                 <PieChart ...
-                    pointSelectionMode="multiple"> {/* or 'single' */}
+                    pointSelectionMode="multiple"> {/* or "single" */}
                 </PieChart>
             );
         }

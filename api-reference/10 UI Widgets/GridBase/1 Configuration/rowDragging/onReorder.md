@@ -30,6 +30,9 @@ The data object of the row being dragged.
 ##### field(e.itemElement): dxElement
 #include draganddrop-ref-itemelementparam
 
+##### field(e.promise): Promise<void>
+<!-- Description goes here -->
+
 ##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the row's target widget.
 

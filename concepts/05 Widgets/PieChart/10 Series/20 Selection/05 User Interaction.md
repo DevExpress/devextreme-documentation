@@ -211,7 +211,7 @@ Only a single point can be in the selected state at a time by default. If you ne
     <!-- tab: App.vue -->
     <template> 
         <DxPieChart ...
-            point-selection-mode="multiple"> <!-- or 'single' -->
+            point-selection-mode="multiple"> <!-- or "single" -->
         </DxPieChart>
     </template>
 

@@ -28,6 +28,66 @@ Before accessing a series point, gain access to its series by calling the [getAl
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            ref="pieChart">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        data() {
+            return {
+                series: []
+            };
+        },
+        methods: {
+            getSeries() {
+                this.series = this.$refs.pieChart.instance.getAllSeries()[0];
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.pieChartRef = React.createRef();
+            this.series = [];
+
+            this.getSeries = () => {
+                this.series = this.pieChart.getAllSeries()[0];
+            };
+        }
+
+        render() {
+            return (
+                <PieChart ...
+                    ref={this.pieChartRef}>
+                </PieChart>
+            );
+        }
+
+        get pieChart() {
+            return this.pieChartRef.current.instance;
+        }
+    }
+
 ---
 
 Use the following methods to access series points. All of them return one or several objects whose fields and methods are described in the API reference's [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/') section.
@@ -53,7 +113,7 @@ Gets all the series points.
         // @ViewChild(DxPieChartComponent) pieChart: DxPieChartComponent;
             seriesPoints: any = [];
             getSeriesPoints() {
-                let series = this.pieChart.instance.getAllSeries()[0];
+                const series = this.pieChart.instance.getAllSeries()[0];
                 this.seriesPoints = series.getAllPoints();
             }
         }
@@ -64,6 +124,70 @@ Gets all the series points.
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxPieChart ...
+                ref="pieChart">
+            </DxPieChart>
+        </template>
+
+        <script>
+        import DxPieChart from 'devextreme-vue/pie-chart';
+
+        export default {
+            components: {
+                DxPieChart
+            },
+            data() {
+                return {
+                    seriesPoints: []
+                };
+            },
+            methods: {
+                getSeriesPoints() {
+                    const series = this.$refs.pieChart.instance.getAllSeries()[0];
+                    this.seriesPoints = series.getAllPoints();
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import PieChart from 'devextreme-react/pie-chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.pieChartRef = React.createRef();
+                this.seriesPoints = [];
+
+                this.getSeriesPoints = this.getSeriesPoints.bind(this);
+            }
+
+            render() {
+                return (
+                    <PieChart ...
+                        ref={this.pieChartRef}>
+                    </PieChart>
+                );
+            }
+
+            get pieChart() {
+                return this.pieChartRef.current.instance;
+            }
+
+            getSeriesPoints() {
+                const series = this.pieChart.getAllSeries()[0];
+                this.seriesPoints = series.getAllPoints();
+            }
+        }
 
     ---
 
@@ -85,9 +209,9 @@ Gets those series points that have a specific argument.
             @ViewChild(DxPieChartComponent, { static: false }) pieChart: DxPieChartComponent;
         // Prior to Angular 8
         // @ViewChild(DxPieChartComponent) pieChart: DxPieChartComponent;
-            chinaPoints: any = {};
+            chinaPoints: any = [];
             getChinaPoints() {
-                let series = this.pieChart.instance.getAllSeries()[0];
+                const series = this.pieChart.instance.getAllSeries()[0];
                 this.chinaPoints = series.getPointsByArg("China");
             }
         }
@@ -98,6 +222,70 @@ Gets those series points that have a specific argument.
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxPieChart ...
+                ref="pieChart">
+            </DxPieChart>
+        </template>
+
+        <script>
+        import DxPieChart from 'devextreme-vue/pie-chart';
+
+        export default {
+            components: {
+                DxPieChart
+            },
+            data() {
+                return {
+                    chinaPoints: []
+                };
+            },
+            methods: {
+                getChinaPoints() {
+                    const series = this.$refs.pieChart.instance.getAllSeries()[0];
+                    this.chinaPoints = series.getPointsByArg("China");
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import PieChart from 'devextreme-react/pie-chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.pieChartRef = React.createRef();
+                this.chinaPoints = [];
+
+                this.getChinaPoints = this.getChinaPoints.bind(this);
+            }
+
+            render() {
+                return (
+                    <PieChart ...
+                        ref={this.pieChartRef}>
+                    </PieChart>
+                );
+            }
+
+            get pieChart() {
+                return this.pieChartRef.current.instance;
+            }
+
+            getChinaPoints() {
+                const series = this.pieChart.getAllSeries()[0];
+                this.chinaPoints = series.getPointsByArg("China");
+            }
+        }
 
     ---
 
@@ -121,7 +309,7 @@ Gets a point using its index. The index is zero-based.
         // @ViewChild(DxPieChartComponent) pieChart: DxPieChartComponent;
             firstPoint: any = {};
             getFirstPoint() {
-                let series = this.pieChart.instance.getAllSeries()[0];
+                const series = this.pieChart.instance.getAllSeries()[0];
                 this.firstPoint = series.getPointByPos(0);
             }
         }
@@ -132,6 +320,70 @@ Gets a point using its index. The index is zero-based.
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxPieChart ...
+                ref="pieChart">
+            </DxPieChart>
+        </template>
+
+        <script>
+        import DxPieChart from 'devextreme-vue/pie-chart';
+
+        export default {
+            components: {
+                DxPieChart
+            },
+            data() {
+                return {
+                    firstPoint: {}
+                };
+            },
+            methods: {
+                getFirstPoint() {
+                    const series = this.$refs.pieChart.instance.getAllSeries()[0];
+                    this.firstPoint = series.getPointByPos(0);
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import PieChart from 'devextreme-react/pie-chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.pieChartRef = React.createRef();
+                this.firstPoint = {};
+
+                this.getFirstPoint = this.getFirstPoint.bind(this);
+            }
+
+            render() {
+                return (
+                    <PieChart ...
+                        ref={this.pieChartRef}>
+                    </PieChart>
+                );
+            }
+
+            get pieChart() {
+                return this.pieChartRef.current.instance;
+            }
+
+            getFirstPoint() {
+                const series = this.pieChart.getAllSeries()[0];
+                this.firstPoint = series.getPointByPos(0);
+            }
+        }
 
     ---
 
@@ -155,7 +407,7 @@ Gets only [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChar
         // @ViewChild(DxPieChartComponent) pieChart: DxPieChartComponent;
             visiblePoints: any = [];
             getVisiblePoints() {
-                let series = this.pieChart.instance.getAllSeries()[0];
+                const series = this.pieChart.instance.getAllSeries()[0];
                 this.visiblePoints = series.getVisiblePoints();
             }
         }
@@ -166,6 +418,70 @@ Gets only [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChar
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template> 
+            <DxPieChart ...
+                ref="pieChart">
+            </DxPieChart>
+        </template>
+
+        <script>
+        import DxPieChart from 'devextreme-vue/pie-chart';
+
+        export default {
+            components: {
+                DxPieChart
+            },
+            data() {
+                return {
+                    visiblePoints: []
+                };
+            },
+            methods: {
+                getVisiblePoints() {
+                    const series = this.$refs.pieChart.instance.getAllSeries()[0];
+                    this.visiblePoints = series.getVisiblePoints();
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import PieChart from 'devextreme-react/pie-chart';
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.pieChartRef = React.createRef();
+                this.visiblePoints = [];
+
+                this.getVisiblePoints = this.getVisiblePoints.bind(this);
+            }
+
+            render() {
+                return (
+                    <PieChart ...
+                        ref={this.pieChartRef}>
+                    </PieChart>
+                );
+            }
+
+            get pieChart() {
+                return this.pieChartRef.current.instance;
+            }
+
+            getVisiblePoints() {
+                const series = this.pieChart.getAllSeries()[0];
+                this.visiblePoints = series.getVisiblePoints();
+            }
+        }
 
     ---
 
@@ -207,6 +523,52 @@ Apart from the API methods, you can access a series point in the event handlers.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @point-click="onPointClick">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            onPointClick(e) {
+                let point = e.target;
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onPointClick={onPointClick}>
+                </PieChart>
+            );
+        }
+    }
+
+    function onPointClick(e) {
+        let point = e.target;
+        // ...
+    }
 
 ---
 

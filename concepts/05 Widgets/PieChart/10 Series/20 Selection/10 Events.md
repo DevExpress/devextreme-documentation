@@ -45,6 +45,60 @@ When a user selects a series point, the **PieChart** fires the [pointSelectionCh
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @point-selection-changed="onPointSelectionChanged">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+           onPointSelectionChanged(e) {
+                let point = e.target;
+                if(point.isSelected()) {
+                    // Commands to execute when the point is selected
+                } else {
+                    // Commands to execute when the selection is cleared
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onPointSelectionChanged={onPointSelectionChanged}>
+                </PieChart>
+            );
+        }
+    }
+
+    function onPointSelectionChanged(e) {
+        let point = e.target;
+        if(point.isSelected()) {
+            // Commands to execute when the point is selected
+        } else {
+            // Commands to execute when the selection is cleared
+        }
+    }
+
 ---
 
 Subscribe to the **pointSelectionChanged** event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Methods/#oneventName_eventHandler') method if you are going to change the event handler at runtime or if you need to attach several handlers to the event. This approach is more typical of jQuery.

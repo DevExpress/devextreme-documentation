@@ -29,7 +29,7 @@ The selection capability is not provided out of the box, but it can be implement
     // ...
     export class AppComponent {
         onPointClick (e) {
-            let point = e.target;
+            const point = e.target;
             if (point.isSelected()) {
                 point.clearSelection();
             } else {
@@ -44,6 +44,60 @@ The selection capability is not provided out of the box, but it can be implement
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @point-click="onPointClick">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            onPointClick(e) {
+                const point = e.target;
+                if(point.isSelected()) {
+                    point.clearSelection();
+                } else {
+                    point.select();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onPointClick={onPointClick}>
+                </PieChart>
+            );
+        }
+    }
+
+    function onPointClick(e) {
+        const point = e.target;
+        if(point.isSelected()) {
+            point.clearSelection();
+        } else {
+            point.select();
+        }
+    }
 
 ---
 
@@ -78,7 +132,7 @@ In the previous code example, a specific point's selection was cleared. Call a s
     // ...
     export class AppComponent {
         onPointClick (e) {
-            let series = e.target.series;
+            const series = e.target.series;
             if (series.isSelected()) {
                 series.clearSelection();
             } else {
@@ -93,6 +147,60 @@ In the previous code example, a specific point's selection was cleared. Call a s
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @point-click="onPointClick">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            onPointClick(e) {
+                const series = e.target.series;
+                if(series.isSelected()) {
+                    series.clearSelection();
+                } else {
+                    series.select();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    onPointClick={onPointClick}>
+                </PieChart>
+            );
+        }
+    }
+
+    function onPointClick(e) {
+        const series = e.target.series;
+        if(series.isSelected()) {
+            series.clearSelection();
+        } else {
+            series.select();
+        }
+    }
 
 ---
 
@@ -124,6 +232,60 @@ In a multi-series **PieChart**, you can clear the entire selection at once by ca
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            ref="pieChart">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            clearSelection() {
+                this.$refs.pieChart.instance.clearSelection();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.pieChartRef = React.createRef();
+
+            this.clearSelection = () => {
+                this.pieChart.clearSelection();
+            };
+        }
+
+        render() {
+            return (
+                <PieChart ...
+                    ref={this.pieChartRef}>
+                </PieChart>
+            );
+        }
+
+        get pieChart() {
+            return this.pieChartRef.current.instance;
+        }
+    }
 
 ---
 

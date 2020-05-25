@@ -4,7 +4,9 @@ type: function(data)
 ---
 ---
 ##### shortDescription
-Specifies a post processing function.
+Specifies a post processing function. 
+
+Important note: When using together with pagination, **postProcess** handles the data available in current page of pagination. In order to handle all the data from origin/source, may be a better choice use the [**CustomStore.load**](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function.
 
 ##### param(data): Array<any>
 The data loaded in the **DataSource**.

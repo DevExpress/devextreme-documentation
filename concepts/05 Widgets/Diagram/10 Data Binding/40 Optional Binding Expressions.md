@@ -8,7 +8,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
   <table>
     <thead>
     <tr>
-      <th>Node Option</th>
+      <th>Node option</th>
       <th>Value the option should return</th>
       <th>Sample return value</th>
     </tr>
@@ -88,7 +88,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
   <table>
     <thead>
     <tr>
-      <th>Edge Option</th>
+      <th>Edge option</th>
       <th>Value the option should return</th>
       <th>Sample return value</th>
     </tr>
@@ -97,7 +97,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromExpr">fromExpr</a></td>
       <td>An edge's start node key.</td>
-      <td>from: "101",</td>
+      <td>"101",</td>
     </tr>    
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromLineEndExpr">fromLineEndExpr</a></td>
@@ -142,7 +142,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr">toExpr</a></td>
       <td>An edge's end node key.</td>
-      <td>to: "102",</td>
+      <td>"102",</td>
     </tr>    
     <tr>
       <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toLineEndExpr">toLineEndExpr</a></td>

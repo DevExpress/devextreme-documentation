@@ -25,4 +25,10 @@ The [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.m
 
 ---
 
-[note] If you call the [import](/api-reference/10%20UI%20Widgets/dxDiagram/3%20Methods/import(data_updateExistingItemsOnly).md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Methods/#importdata_updateExistingItemsOnly') method, the **import** method applies the imported page settings and the **pageColor** option is ignored.
+[note]
+
+- If you call the [import](/api-reference/10%20UI%20Widgets/dxDiagram/3%20Methods/import(data_updateExistingItemsOnly).md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Methods/#importdata_updateExistingItemsOnly') method, it applies the imported page settings and the **pageSize** option is ignored.
+
+- Page settings are stored in a diagram model. The **pageSize** property is not in effect if the model is read-only (the [readOnly](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#readOnly)  property is set to **true**).
+
+[/note]

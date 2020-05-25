@@ -59,4 +59,4 @@ Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Confi
 - [SlideOut - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOut/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/Widgets/SlideOut/Open_and_Close_the_Menu_Using_the_API')
 - [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Widgets/dxSlideOut/')
 
-[tags]slide-out menu, slideOut, navigation, collection container, collection widget, overview
+[tags]dxslideout, slide-out menu, slideOut, navigation, collection container, collection widget, overview

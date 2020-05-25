@@ -170,6 +170,7 @@ To disable sorting in the whole widget, set the **sorting**.**mode** option to *
         }
     }
     export default App;
+    
 ---
 
 #include common-demobutton with {

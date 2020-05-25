@@ -73,4 +73,4 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
 - [Tooltip - Resize and Relocate](/concepts/05%20Widgets/Tooltip/15%20Resize%20and%20Relocate.md '/Documentation//Guide/Widgets/Tooltip/Resize_and_Relocate/')
 - [Tooltip API Reference](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Widgets/dxTooltip/')
 
-[tags]tooltip, overview, overlay
+[tags]dxtooltip, tooltip, overview, overlay

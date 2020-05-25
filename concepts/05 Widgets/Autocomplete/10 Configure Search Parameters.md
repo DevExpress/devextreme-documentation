@@ -45,6 +45,66 @@ The **Autocomplete** can provide suggestions in two different modes: *'contains'
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxAutocomplete
+            :data-source="autocompleteData"
+            value-expr="country"
+            search-mode="startswith"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxAutocomplete } from 'devextreme-vue/autocomplete';
+
+    export default {
+        components: {
+            DxAutocomplete
+        },
+        data() {
+            return {
+                autocompleteData: [
+                    { country: 'Afghanistan', capital: 'Kabul' },
+                    { country: 'Albania', capital: 'Tirana' },
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Autocomplete } from 'devextreme-react/autocomplete';
+
+    const autocompleteData = [
+        { country: 'Afghanistan', capital: 'Kabul' },
+        { country: 'Albania', capital: 'Tirana' },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Autocomplete
+                    dataSource={autocompleteData}
+                    valueExpr="country"
+                    searchMode="startswith"
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 By default, the **Autocomplete** widget starts providing suggestions once an end user types the first character. To increase the number of characters that triggers suggestions, use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#minSearchLength') option. 
@@ -80,6 +140,43 @@ By default, the **Autocomplete** widget starts providing suggestions once an end
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxAutocomplete :min-search-length="3"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxAutocomplete } from 'devextreme-vue/autocomplete';
+
+    export default {
+        components: {
+            DxAutocomplete
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Autocomplete } from 'devextreme-react/autocomplete';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Autocomplete minSearchLength={3}/>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 You can also specify the time interval the widget should wait before providing suggestions. Assign this time interval measured in milliseconds to the [searchTimeout](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#searchTimeout') option.
@@ -114,6 +211,43 @@ You can also specify the time interval the widget should wait before providing s
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxAutocomplete :search-timeout="500"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxAutocomplete } from 'devextreme-vue/autocomplete';
+
+    export default {
+        components: {
+            DxAutocomplete
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Autocomplete } from 'devextreme-react/autocomplete';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Autocomplete searchTimeout={500}/>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

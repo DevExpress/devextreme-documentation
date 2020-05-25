@@ -120,4 +120,4 @@ If your data is an array of objects, specify:
 - [TagBox - Keyboard Support](/concepts/05%20Widgets/TagBox/25%20Keyboard%20Support.md '/Documentation/Guide/Widgets/TagBox/Keyboard_Support/')
 - [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Widgets/dxTagBox/')
 
-[tags]tagBox, tag box, editor, overview, data source, value, display expression
+[tags]dxtagbox, tagBox, tag box, editor, overview, data source, value, display expression

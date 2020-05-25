@@ -64,4 +64,4 @@ The following code adds the **Gallery** widget to your page. The simplest config
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Widgets/dxGallery/')
 
-[tags]gallery, overview
+[tags]dxgallery, gallery, overview

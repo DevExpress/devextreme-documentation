@@ -41,6 +41,9 @@ The dragged item's data.
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
+##### field(e.promise): Promise<void>
+<!-- Description goes here -->
+
 ##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the item's target widget.
 

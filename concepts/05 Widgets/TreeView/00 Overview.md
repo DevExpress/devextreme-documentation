@@ -167,4 +167,4 @@ Note that the data source in the code above has a hierarchical structure, howeve
 - [TreeView - Keyboard Support](/concepts/05%20Widgets/TreeView/35%20Keyboard%20Support.md '/Documentation/Guide/Widgets/TreeView/Keyboard_Support')
 - [TreeView API Reference](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/')
 
-[tags]treeview, tree view, collection container, collection widget, overview
+[tags]dxtreeview, treeview, tree view, collection container, collection widget, overview

@@ -20,3 +20,5 @@ With jQuery, reference the Ionicons stylesheet in the `<head>` of your page:
     <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">
 
 [/note]
+
+[tags]dxspeeddialaction

@@ -5,12 +5,14 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the timezone of the widget.
+Specifies the widget's time zone.
 
 ---
-By default, the scheduler displays appointments in the current timezone. To define the timezone, specify the **timeZone** option. 
+This option accepts values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA time zone database</a>.
 
-The list of supported timezones is available in the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">list of IANA time zones</a>. 
+If this option is unspecified, appointments are displayed in the client's time zone.
+
+Alternatively, you can specify the [startDateTimeZone](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDateTimeZone) and the [endDateTimeZone](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDateTimeZone) for individual appointments. Note that the **timeZone** option takes precedence over these options.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"

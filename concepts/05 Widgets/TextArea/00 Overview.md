@@ -236,4 +236,4 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
 - [TextArea API Reference](/api-reference/10%20UI%20Widgets/dxTextArea '/Documentation/ApiReference/UI_Widgets/dxTextArea/')
 - [TextBox](/concepts/05%20Widgets/TextBox/00%20Overview.md '/Documentation/Guide/Widgets/TextBox/Overview/')
 
-[tags]textArea, text area, editor, overview, spellcheck, read-only
+[tags]dxtextarea, textArea, text area, editor, overview, spellcheck, read-only

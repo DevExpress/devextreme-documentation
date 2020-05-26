@@ -44,7 +44,7 @@ The example below demonstrates how to create an application with a single button
       <title>DevExtreme with a custom bundle example</title>
       <meta charset="utf-8">
         <!--External Scripts-->
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
         <!--Themes-->
@@ -93,7 +93,7 @@ The example below demonstrates how to create an application with a single button
     <head>
       <title>DevExtreme with a custom bundle and AngularJS example</title>
       <meta charset="utf-8">
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
@@ -147,7 +147,7 @@ The example below demonstrates how to create an application with a single button
     <head>
       <title>DevExtreme with a custom bundle and Knockout example</title>
       <meta charset="utf-8">
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>

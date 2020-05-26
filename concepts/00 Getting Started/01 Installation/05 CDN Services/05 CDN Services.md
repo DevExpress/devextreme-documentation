@@ -1,7 +1,7 @@
 DevExtreme files are available through a Content Delivery Network (CDN). Link the files within the `<head>` tag on your index page in the order given below. Optionally, you can verify the files by adding [SRI hashes](/concepts/00%20Getting%20Started/01%20Installation/05%20CDN%20Services/10%20Subresource%20Integrity%20Hashes.md '/Documentation/Guide/Getting_Started/Installation/CDN_Services/#Subresource_Integrity_Hashes') to the links.
 
     <!--HTML-->
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <!-- Reference either Knockout or AngularJS, if you do -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>

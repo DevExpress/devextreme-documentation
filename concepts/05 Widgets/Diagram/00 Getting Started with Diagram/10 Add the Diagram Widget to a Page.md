@@ -35,7 +35,7 @@ The Diagram widget is a jQuery DevExtreme widget, and thus requires common DevEx
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.light.css">
         @* jQuery *@
-        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+        <script src="~/Scripts/jquery-3.5.1.min.js"></script>
         @* DevExtreme common scripts *@
         <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/dx.all.js"></script>
 

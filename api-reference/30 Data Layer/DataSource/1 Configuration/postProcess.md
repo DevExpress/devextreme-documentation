@@ -6,8 +6,6 @@ type: function(data)
 ##### shortDescription
 Specifies a post processing function. 
 
-Important note: When using together with pagination, **postProcess** handles the data available in current page of pagination. In order to handle all the data from origin/source, may be a better choice to use the [**CustomStore.load**](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function.
-
 ##### param(data): Array<any>
 The data loaded in the **DataSource**.
 
@@ -15,6 +13,8 @@ The data loaded in the **DataSource**.
 The data after processing.
 
 ---
+When the [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) option is enabled, the **postProcess** function handles only the data available for the selected page. If you need to access all data, process the data before it is passed to the store.
+
 ---
 ##### jQuery
 

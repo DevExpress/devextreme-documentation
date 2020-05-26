@@ -7,7 +7,7 @@ type: function(data)
 Specifies a post processing function. 
 
 ##### param(data): Array<any>
-The data loaded in the **DataSource**.
+Data loaded in the **DataSource**.
 
 ##### return: Array<any>
 Data after processing.

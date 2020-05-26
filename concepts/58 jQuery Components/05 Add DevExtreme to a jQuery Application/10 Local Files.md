@@ -3,7 +3,7 @@ You can find all required files in the <a target="_blank" onclick="trackGAEvent(
     <!--HTML-->
     <head>
         <!-- ... -->
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 
         <!-- DevExtreme themes -->
         <link rel="stylesheet" href="css/dx.common.css">

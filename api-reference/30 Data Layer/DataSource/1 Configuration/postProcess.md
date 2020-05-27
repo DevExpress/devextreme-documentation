@@ -4,15 +4,17 @@ type: function(data)
 ---
 ---
 ##### shortDescription
-Specifies a post processing function.
+Specifies a post processing function. 
 
 ##### param(data): Array<any>
-The data loaded in the **DataSource**.
+Data loaded in the **DataSource**.
 
 ##### return: Array<any>
-The data after processing.
+Data after processing.
 
 ---
+When the [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) option is enabled, the **postProcess** function handles only data available for the selected page. If you need to access all data, process data before it is passed to the store.
+
 ---
 ##### jQuery
 

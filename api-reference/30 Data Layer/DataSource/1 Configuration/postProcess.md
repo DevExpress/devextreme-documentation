@@ -4,7 +4,7 @@ type: function(data)
 ---
 ---
 ##### shortDescription
-Specifies a post processing function. 
+Specifies a post processing function.
 
 ##### param(data): Array<any>
 Data loaded in the **DataSource**.

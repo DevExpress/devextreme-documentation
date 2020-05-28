@@ -7,7 +7,7 @@ type: Array<Number, String, Date>
 Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#type').
 
 ---
-By default, arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they had in the data source.
+By default, arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they have in the data source.
 
 Arguments of the `string` type on discrete axes keep the order of objects in the data source. For example, objects in the following data source are sorted by decreasing **area** value. Set *"continent"* as the [argumentField](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#argumentField) value to keep the order of these objects after they are passed from the data source:
 

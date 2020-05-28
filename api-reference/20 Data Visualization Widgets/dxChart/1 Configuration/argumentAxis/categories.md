@@ -7,20 +7,20 @@ type: Array<Number, String, Date>
 Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#type').
 
 ---
-By default, arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they have in the data source.
+Arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they have in the data source.
 
-Arguments of the `string` type on discrete axes keep the order of objects in the data source. For example, objects in the following data source are sorted by decreasing **area** value. Set *"continent"* as the [argumentField](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#argumentField) value to keep the order of these objects after they are passed from the data source:
+ABy default, arguments of the `string` type on discrete axes keep the order of objects in the data source. Objects in the following data source are sorted by decreasing **area** value. To sort the arguments, for example, alphabetically, you need to assign an array of properly sorted arguments to the **categories** option: 
 
 ---
 ##### jQuery
 
     <!--JavaScript-->$(function() {
-        $("#chartContainer").dxChart({
+        $('#chartContainer').dxChart({
             // ...
             dataSource: continentsByArea,
             argumentAxis: {
                 categories: continentNames,
-                argumentField: continent
+                argumentField: 'continent'
             }
         });
 
@@ -51,7 +51,7 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
         [dataSource]="continentsByArea">
         <dxo-argument-axis
             [categories]="continentNames"
-            [argumentField]="continent>
+            [argumentField]="continent">
         </dxo-argument-axis>
     </dx-chart>
 
@@ -95,7 +95,7 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
         <DxChart ... 
             :data-source="continentsByArea">
             <DxArgumentAxis 
-                :categories=""
+                :categories="continentNames"
                 argument-field="continent" 
             />
         </DxChart>
@@ -183,19 +183,5 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
     export default App;     
 
 ---
-
-To sort the arguments of the `string` type, for example, alphabetically, you need to assign an array of properly sorted arguments to the **categories** option.
-
-    <!--JavaScript-->
-    const continentNames = [
-        'Africa', 
-        'Antarctica', 
-        'Asia', 
-        'Australia',
-        'Europe',
-        'North America',
-        'South America'
-    ];
-
 
 [note]Arguments missing from the **categories** array will be added to its end automatically when the data type is `string`. When the type is `date` or `number`, the newly added arguments are sorted along with the initially loaded arguments.

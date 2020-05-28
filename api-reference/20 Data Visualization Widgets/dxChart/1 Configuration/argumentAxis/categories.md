@@ -17,25 +17,40 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
     <!--JavaScript-->$(function() {
         $("#chartContainer").dxChart({
             // ...
+            dataSource: continentsByArea,
             argumentAxis: {
-                categories: [
-                    { continent: 'Asia', area: 43820000 },
-                    { continent: 'Africa', area: 30370000 },
-                    { continent: 'North America', area: 24490000 },
-                    { continent: 'South America', area: 17840000 },
-                    { continent: 'Antarctica', area: 13720000 },
-                    { continent: 'Europe', area: 10180000 },
-                    { continent: 'Australia', area: 9008500 }
-                ];
+                categories: continentNames,
+                argumentField: continent
             }
         });
+
+        const continentsByArea = [
+            { continent: 'Asia', area: 43820000 },
+            { continent: 'Africa', area: 30370000 },
+            { continent: 'North America', area: 24490000 },
+            { continent: 'South America', area: 17840000 },
+            { continent: 'Antarctica', area: 13720000 },
+            { continent: 'Europe', area: 10180000 },
+            { continent: 'Australia', area: 9008500 }
+        ];
+
+        const continentNames = [
+            'Asia', 
+            'Africa', 
+            'North America', 
+            'South America',
+            'Antarctica',
+            'Europe',
+            'Australia'
+        ];
     });
 
 ##### Angular
 
-    <!--HTML--><dx-chart ... >
+    <!--HTML--><dx-chart ...
+        [dataSource]="continentsByArea">
         <dxo-argument-axis
-            [categories]="continentsByArea"
+            [categories]="continentNames"
             [argumentField]="continent>
         </dxo-argument-axis>
     </dx-chart>
@@ -54,6 +69,16 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
             { continent: 'Europe', area: 10180000 },
             { continent: 'Australia', area: 9008500 }
         ];
+
+        continentNames = [
+            'Asia', 
+            'Africa', 
+            'North America', 
+            'South America',
+            'Antarctica',
+            'Europe',
+            'Australia'
+        ];
     }
     @NgModule({
         imports: [
@@ -67,9 +92,10 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
 
     <!-- tab: App.vue -->
     <template>
-        <DxChart ... >
+        <DxChart ... 
+            :data-source="continentsByArea">
             <DxArgumentAxis 
-                :categories="continentsByArea"
+                :categories=""
                 argument-field="continent" 
             />
         </DxChart>
@@ -96,6 +122,16 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
                     { continent: 'Europe', area: 10180000 },
                     { continent: 'Australia', area: 9008500 }
                 ];
+                
+                continentNames = [
+                    'Asia', 
+                    'Africa', 
+                    'North America', 
+                    'South America',
+                    'Antarctica',
+                    'Europe',
+                    'Australia'
+                ];
             };
         }
     }
@@ -120,12 +156,23 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
         { continent: 'Australia', area: 9008500 }
     ];
 
+    const continentNames = [
+        'Asia', 
+        'Africa', 
+        'North America', 
+        'South America',
+        'Antarctica',
+        'Europe',
+        'Australia'
+    ];
+
     class App extends React.Component {
         render() {
             return (
-                <Chart ... >
+                <Chart ... 
+                    dataSource={continentsByArea}>
                     <ArgumentAxis
-                        categories={continentsByArea}
+                        categories={continentNames}
                         argumentField="continent"
                     />
                 </Chart>
@@ -140,14 +187,14 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
 To sort the arguments of the `string` type, for example, alphabetically, you need to assign an array of properly sorted arguments to the **categories** option.
 
     <!--JavaScript-->
-    var continentsByArea = [
-        { continent: 'Africa', area: 30370000 },
-        { continent: 'Antarctica', area: 13720000 },
-        { continent: 'Asia', area: 43820000 },
-        { continent: 'Australia', area: 9008500 },
-        { continent: 'Europe', area: 10180000 },
-        { continent: 'North America', area: 24490000 },
-        { continent: 'South America', area: 17840000 },
+    const continentNames = [
+        'Africa', 
+        'Antarctica', 
+        'Asia', 
+        'Australia',
+        'Europe',
+        'North America',
+        'South America'
     ];
 
 

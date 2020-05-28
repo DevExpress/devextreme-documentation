@@ -35,13 +35,13 @@ ABy default, arguments of the `string` type on discrete axes keep the order of o
         ];
 
         const continentNames = [
-            'Asia', 
             'Africa', 
-            'North America', 
-            'South America',
-            'Antarctica',
+            'Antarctica', 
+            'Asia', 
+            'Australia',
             'Europe',
-            'Australia'
+            'North America',
+            'South America'
         ];
     });
 
@@ -71,13 +71,13 @@ ABy default, arguments of the `string` type on discrete axes keep the order of o
         ];
 
         continentNames = [
-            'Asia', 
             'Africa', 
-            'North America', 
-            'South America',
-            'Antarctica',
+            'Antarctica', 
+            'Asia', 
+            'Australia',
             'Europe',
-            'Australia'
+            'North America',
+            'South America'
         ];
     }
     @NgModule({
@@ -124,13 +124,13 @@ ABy default, arguments of the `string` type on discrete axes keep the order of o
                 ];
                 
                 continentNames = [
-                    'Asia', 
                     'Africa', 
-                    'North America', 
-                    'South America',
-                    'Antarctica',
+                    'Antarctica', 
+                    'Asia', 
+                    'Australia',
                     'Europe',
-                    'Australia'
+                    'North America',
+                    'South America'
                 ];
             };
         }
@@ -157,13 +157,13 @@ ABy default, arguments of the `string` type on discrete axes keep the order of o
     ];
 
     const continentNames = [
-        'Asia', 
         'Africa', 
-        'North America', 
-        'South America',
-        'Antarctica',
+        'Antarctica', 
+        'Asia', 
+        'Australia',
         'Europe',
-        'Australia'
+        'North America',
+        'South America'
     ];
 
     class App extends React.Component {

@@ -7,19 +7,9 @@ type: Array<Number, String, Date>
 Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#type').
 
 ---
-By default, arguments on a discrete axis keep the order of objects in the data source. For example, objects in the following data source are sorted by decreasing **area** value. The resulting arguments will be sorted the same way.
+By default, arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they had in the data source.
 
-    <!--JavaScript-->var continentsByArea = [
-        { continent: 'Asia', area: 43820000 },
-        { continent: 'Africa', area: 30370000 },
-        { continent: 'North America', area: 24490000 },
-        { continent: 'South America', area: 17840000 },
-        { continent: 'Antarctica', area: 13720000 },
-        { continent: 'Europe', area: 10180000 },
-        { continent: 'Australia', area: 9008500 }
-    ];
-
-To sort the arguments, for example, alphabetically, you need to assign an array of properly sorted arguments to the **categories** option.
+Arguments of the `string` type on discrete axes keep the order of objects in the data source. For example, objects in the following data source are sorted by decreasing **area** value. Set *"continent"* as the [argumentField](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#argumentField) value to keep the order of these objects after they are passed from the data source:
 
 ---
 ##### jQuery
@@ -29,14 +19,14 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
             // ...
             argumentAxis: {
                 categories: [
-                    'Africa', 
-                    'Antarctica', 
-                    'Asia', 
-                    'Australia',
-                    'Europe',
-                    'North America',
-                    'South America'
-                ]
+                    { continent: 'Asia', area: 43820000 },
+                    { continent: 'Africa', area: 30370000 },
+                    { continent: 'North America', area: 24490000 },
+                    { continent: 'South America', area: 17840000 },
+                    { continent: 'Antarctica', area: 13720000 },
+                    { continent: 'Europe', area: 10180000 },
+                    { continent: 'Australia', area: 9008500 }
+                ];
             }
         });
     });
@@ -45,7 +35,8 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
 
     <!--HTML--><dx-chart ... >
         <dxo-argument-axis
-            [categories]="continents">
+            [categories]="continentsByArea"
+            [argumentField]="continent>
         </dxo-argument-axis>
     </dx-chart>
 
@@ -54,14 +45,14 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
     // ...
     export class AppComponent {
         // ...
-        continents = [
-            'Africa', 
-            'Antarctica', 
-            'Asia', 
-            'Australia',
-            'Europe',
-            'North America',
-            'South America'
+        continentsByArea = [
+            { continent: 'Asia', area: 43820000 },
+            { continent: 'Africa', area: 30370000 },
+            { continent: 'North America', area: 24490000 },
+            { continent: 'South America', area: 17840000 },
+            { continent: 'Antarctica', area: 13720000 },
+            { continent: 'Europe', area: 10180000 },
+            { continent: 'Australia', area: 9008500 }
         ];
     }
     @NgModule({
@@ -78,7 +69,8 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
     <template>
         <DxChart ... >
             <DxArgumentAxis 
-                :categories="continents" 
+                :categories="continentsByArea"
+                argument-field="continent" 
             />
         </DxChart>
     </template>
@@ -95,15 +87,15 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         },
         data() {
             return {
-                continents: [
-                    'Africa', 
-                    'Antarctica', 
-                    'Asia', 
-                    'Australia',
-                    'Europe',
-                    'North America',
-                    'South America'
-                ]
+                continentsByArea: [
+                    { continent: 'Asia', area: 43820000 },
+                    { continent: 'Africa', area: 30370000 },
+                    { continent: 'North America', area: 24490000 },
+                    { continent: 'South America', area: 17840000 },
+                    { continent: 'Antarctica', area: 13720000 },
+                    { continent: 'Europe', area: 10180000 },
+                    { continent: 'Australia', area: 9008500 }
+                ];
             };
         }
     }
@@ -118,14 +110,14 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
         ArgumentAxis
     } from 'devextreme-react/chart';
     
-    const continents = [
-        'Africa', 
-        'Antarctica', 
-        'Asia', 
-        'Australia',
-        'Europe',
-        'North America',
-        'South America'
+    const continentsByArea = [
+        { continent: 'Asia', area: 43820000 },
+        { continent: 'Africa', area: 30370000 },
+        { continent: 'North America', area: 24490000 },
+        { continent: 'South America', area: 17840000 },
+        { continent: 'Antarctica', area: 13720000 },
+        { continent: 'Europe', area: 10180000 },
+        { continent: 'Australia', area: 9008500 }
     ];
 
     class App extends React.Component {
@@ -133,7 +125,8 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
             return (
                 <Chart ... >
                     <ArgumentAxis
-                        categories={continents}
+                        categories={continentsByArea}
+                        argumentField="continent"
                     />
                 </Chart>
             );
@@ -144,4 +137,18 @@ To sort the arguments, for example, alphabetically, you need to assign an array 
 
 ---
 
-[note]Arguments missing from the **categories** array will be added to its end automatically.
+To sort the arguments of the `string` type, for example, alphabetically, you need to assign an array of properly sorted arguments to the **categories** option.
+
+    <!--JavaScript-->
+    var continentsByArea = [
+        { continent: 'Africa', area: 30370000 },
+        { continent: 'Antarctica', area: 13720000 },
+        { continent: 'Asia', area: 43820000 },
+        { continent: 'Australia', area: 9008500 },
+        { continent: 'Europe', area: 10180000 },
+        { continent: 'North America', area: 24490000 },
+        { continent: 'South America', area: 17840000 },
+    ];
+
+
+[note]Arguments missing from the **categories** array will be added to its end automatically when the data type is `string`. When the type is `date` or `number`, the newly added arguments are sorted along with the initially loaded arguments.

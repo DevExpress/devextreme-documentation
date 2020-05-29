@@ -4,7 +4,7 @@ type: Array<Number, String, Date>
 ---
 ---
 ##### shortDescription
-Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#type').
+Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dx{WidgetName}/Configuration/argumentAxis/#type').
 
 ---
 Arguments of the `string` type on discrete axes keep the order of objects in the data source. Assign an array of properly sorted arguments to the **categories** option to sort the arguments as you need, for example, alphabetically: 
@@ -12,8 +12,9 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
-        $('#chartContainer').dxChart({
+    <!--JavaScript-->
+    $(function() {
+        $('#{widgetName}Container').dx{WidgetName}({
             // ...
             dataSource: dataSource,
             argumentAxis: {
@@ -45,13 +46,14 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
 
 ##### Angular
 
-    <!--HTML--><dx-chart ...
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ...
         [dataSource]="dataSource">
         <dxo-argument-axis
             [categories]="continentNames"
             argumentField="continent">
         </dxo-argument-axis>
-    </dx-chart>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -61,7 +63,6 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        // ...
         dataSource = [
             { continent: 'Asia', area: 43820000 },
             { continent: 'Africa', area: 30370000 },
@@ -88,7 +89,7 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxChartModule } from 'devextreme-angular';
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -96,7 +97,7 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
         ],
         imports: [
             BrowserModule,
-            DxChartModule
+            Dx{WidgetName}Module
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -107,23 +108,23 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
 
     <!-- tab: App.vue -->
     <template>
-        <DxChart ... 
+        <Dx{WidgetName} ... 
             :data-source="dataSource">
             <DxArgumentAxis 
                 :categories="continentNames"
                 argument-field="continent" 
             />
-        </DxChart>
+        </Dx{WidgetName}>
     </template>
 
     <script>
-    import DxChart, {
+    import Dx{WidgetName}, {
         DxArgumentAxis
-    } from 'devextreme-vue/chart'; 
+    } from 'devextreme-vue/{widget-name}'; 
 
     export default {
         components: {
-            DxChart,
+            Dx{WidgetName},
             DxArgumentAxis
         },
         data() {
@@ -157,9 +158,9 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
     <!-- tab: App.js -->
     import React from 'react';
 
-    import Chart, {
+    import {WidgetName}, {
         ArgumentAxis
-    } from 'devextreme-react/chart';
+    } from 'devextreme-react/{widget-name}';
     
     const dataSource = [
         { continent: 'Asia', area: 43820000 },
@@ -184,13 +185,13 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
     class App extends React.Component {
         render() {
             return (
-                <Chart ... 
+                <{WidgetName} ... 
                     dataSource={dataSource}>
                     <ArgumentAxis
                         categories={continentNames}
                         argumentField="continent"
                     />
-                </Chart>
+                </{WidgetName}>
             );
         }
     }
@@ -199,6 +200,6 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
 
 ---
 
-Arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they have in the data source. Do not specify the **categories** option for these argument types.
+Arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they have in the data source.
 
 When you add arguments of the `string` type to the **categories** array at runtime, these arguments will be added to its end automatically. When the argument type is `number` or `date`, the newly added arguments are sorted along with the initially loaded arguments.

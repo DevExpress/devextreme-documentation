@@ -3,6 +3,11 @@
   "description": "DevExtreme documentation",
   "author": "Developer Express Inc.",
   "version": "19.2.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevExpress/devextreme-documentation.git"
+  },
   "devDependencies": {
     "devextreme-internal-tools": "stable"
   },

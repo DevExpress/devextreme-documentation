@@ -13,7 +13,6 @@ Data loaded in the **DataSource**.
 Data after processing.
 
 ---
-When the [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) option is enabled, the **postProcess** function handles only data available for the selected page. If you need to access all data, process data before it is passed to the store.
 
 ---
 ##### jQuery
@@ -98,6 +97,8 @@ When the [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configurat
     </script>
 
 ---
+
+[note]When the [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) option is enabled, the **postProcess** function handles only data available for the selected page. If you need to access all data, process data before it is passed to the store.
 
 #####See Also#####
 - [Post Processing](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/2%20Post%20Processing.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Post_Processing')

@@ -7,7 +7,7 @@ type: Array<Number, String, Date>
 Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#type').
 
 ---
-Arguments of the `string` type on discrete axes keep the order of objects in the data source. Assign an array of properly sorted arguments to the **categories** option to sort the arguments, for example, alphabetically: 
+Arguments of the `string` type on discrete axes keep the order of objects in the data source. Assign an array of properly sorted arguments to the **categories** option to sort the arguments as you need, for example, alphabetically: 
 
 ---
 ##### jQuery
@@ -49,7 +49,7 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
         [dataSource]="dataSource">
         <dxo-argument-axis
             [categories]="continentNames"
-            [argumentField]="continent">
+            argumentField="continent">
         </dxo-argument-axis>
     </dx-chart>
 
@@ -136,9 +136,9 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
                     { continent: 'Antarctica', area: 13720000 },
                     { continent: 'Europe', area: 10180000 },
                     { continent: 'Australia', area: 9008500 }
-                ];
+                ],
                 
-                continentNames = [
+                continentNames: [
                     'Africa', 
                     'Antarctica', 
                     'Asia', 
@@ -146,7 +146,7 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
                     'Europe',
                     'North America',
                     'South America'
-                ];
+                ]
             };
         }
     }

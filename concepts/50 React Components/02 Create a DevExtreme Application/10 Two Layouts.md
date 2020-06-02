@@ -10,9 +10,9 @@ To generate a new application with an inner toolbar, set the `--layout` flag to 
 
     npx devextreme-cli new react-app app-name --layout=side-nav-inner-toolbar
 
-To switch to another layout after the application is created, open the `src\App.js` file and replace the `SideNavOuterToolbar` import with `SideNavInnerToolbar`:
+To switch to another layout after the application is created, open the `src\Content.js` file and replace the `SideNavOuterToolbar` import with `SideNavInnerToolbar`:
 
-    <!-- tab: App.js -->
+    <!-- tab: Content.js -->
     import {
       SideNavInnerToolbar as SideNavBarLayout,
       SingleCard

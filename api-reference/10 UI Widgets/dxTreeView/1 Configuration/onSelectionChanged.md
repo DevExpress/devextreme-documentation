@@ -2,6 +2,7 @@
 id: dxTreeView.Options.onSelectionChanged
 type: function(e)
 default: null
+override: 
 EventForAction: dxTreeView.selectionChanged
 ---
 ---

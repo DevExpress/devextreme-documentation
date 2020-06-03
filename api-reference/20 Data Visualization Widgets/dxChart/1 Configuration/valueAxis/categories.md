@@ -6,8 +6,10 @@ type: Array<Number, String, Date>
 ##### shortDescription
 Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#type').
 
----
-Values of the `string` type on discrete axes keep the order of objects in the data source. Assign an array of properly sorted values to the **categories** option to sort the values as you need, for example, alphabetically: 
+--- 
+
+Values of the `string` type on discrete axes keep the order of objects in the data source. Values of the `number` and `date` types are sorted in ascending order regardless of the order they have in the data source.
+Specify the **categories** array to set the required order of values. In the following example, the values are sorted alphabetically: 
 
 ---
 ##### jQuery
@@ -199,7 +201,3 @@ Values of the `string` type on discrete axes keep the order of objects in the da
     export default App;     
 
 ---
-
-Values of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they have in the data source.
-
-When you add values of the `string` type to the **categories** array at runtime, these values will be added to its end automatically. When the value type is `number` or `date`, the newly added values are sorted along with the initially loaded values.

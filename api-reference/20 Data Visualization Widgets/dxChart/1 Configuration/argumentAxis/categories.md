@@ -7,7 +7,8 @@ type: Array<Number, String, Date>
 Specifies the order of categories on an axis of the *"discrete"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dx{WidgetName}/Configuration/argumentAxis/#type').
 
 ---
-Arguments of the `string` type on discrete axes keep the order of objects in the data source. Assign an array of properly sorted arguments to the **categories** option to sort the arguments as you need, for example, alphabetically: 
+Arguments of the `string` type on discrete axes keep the order of objects in the data source. Arguments of the `number` and `date` types are sorted in ascending order regardless of the order they have in the data source.
+Specify the **categories** array to set the required order of arguments. In the following example, arguments are sorted alphabetically: 
 
 ---
 ##### jQuery
@@ -199,7 +200,3 @@ Arguments of the `string` type on discrete axes keep the order of objects in the
     export default App;     
 
 ---
-
-Arguments of the `number` and `date` types on discrete axes are sorted in ascending order regardless of the order they have in the data source.
-
-When you add arguments of the `string` type to the **categories** array at runtime, these arguments will be added to its end automatically. When the argument type is `number` or `date`, the newly added arguments are sorted along with the initially loaded arguments.

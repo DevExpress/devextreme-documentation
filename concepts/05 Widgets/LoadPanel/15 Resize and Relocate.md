@@ -47,6 +47,102 @@ Specify the **height** and **width** options to change the **LoadPanel**'s size:
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <DxLoadPanel
+                :close-on-outside-click="true"
+                :visible.sync="isLoadPanelVisible"
+                :height="300"
+                :width="500"
+            />
+            <DxButton
+                text="Show the Load Panel"
+                @click="handleClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadPanel } from 'devextreme-vue/load-panel';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxLoadPanel,
+            DxButton
+        },
+        data() {
+            return {
+                isLoadPanelVisible: false
+            }
+        },
+        methods: {
+            handleClick() {
+                this.isLoadPanelVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadPanel } from 'devextreme-react/load-panel';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isLoadPanelVisible: false
+            };
+
+            this.handleClick = this.handleClick.bind(this);
+            this.handleHide = this.handleHide.bind(this);
+        }
+
+        handleClick() {
+            this.setState({
+                isLoadPanelVisible: true
+            });
+        }
+
+        handleHide() {
+            this.setState({
+                isLoadPanelVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <LoadPanel
+                        closeOnOutsideClick={true}
+                        visible={this.state.isLoadPanelVisible}
+                        onHidden={this.handleHide}
+                        height={300}
+                        width={500}
+                    />
+                    <Button
+                        text="Show the Load Panel"
+                        onClick={this.handleClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 The [container](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/container.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#container') option specifies the **LoadPanel**'s container. The container is shaded when the **LoadPanel** is visible; the **LoadPanel** inherits styles from the container and is scrolled with. To position the widget relative to a specific element, use the [position](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#position') option:
@@ -101,6 +197,108 @@ The [container](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/c
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <div>
+            <DxLoadPanel
+                :close-on-outside-click="true"
+                :visible.sync="isLoadPanelVisible"
+                container="#container">
+                <DxPosition
+                    my="left"
+                    at="left"
+                    of="#targetElement"/>
+            </DxLoadPanel>
+            <DxButton
+                text="Show the Load Panel"
+                @click="handleClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadPanel, DxPosition } from 'devextreme-vue/load-panel';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxLoadPanel,
+            DxButton
+        },
+        data() {
+            return {
+                isLoadPanelVisible: false
+            }
+        },
+        methods: {
+            handleClick() {
+                this.isLoadPanelVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadPanel, Position } from 'devextreme-react/load-panel';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isLoadPanelVisible: false
+            };
+
+            this.handleClick = this.handleClick.bind(this);
+            this.handleHide = this.handleHide.bind(this);
+        }
+
+        handleClick() {
+            this.setState({
+                isLoadPanelVisible: true
+            });
+        }
+
+        handleHide() {
+            this.setState({
+                isLoadPanelVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <LoadPanel
+                        closeOnOutsideClick={true}
+                        visible={this.state.isLoadPanelVisible}
+                        inHidden={this.handleHide}
+                        container="#container">
+                        <Position
+                            my="left"
+                            at="left"
+                            of="#targetElement"/>
+                    </LoadPanel>
+                    <Button
+                        text="Show the Load Panel"
+                        onClick={this.handleClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

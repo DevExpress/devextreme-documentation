@@ -52,6 +52,98 @@ The following code adds to your page a simple **LoadPanel** and a [Button](/conc
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <DxLoadPanel
+                :close-on-outside-click="true"
+                :visible.sync="isLoadPanelVisible"
+            />
+            <DxButton
+                text="Show the Load Panel"
+                @click="handleClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadPanel } from 'devextreme-vue/load-panel';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxLoadPanel,
+            DxButton
+        },
+        data() {
+            return {
+                isLoadPanelVisible: false
+            }
+        },
+        methods: {
+            handleClick() {
+                this.isLoadPanelVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadPanel } from 'devextreme-react/load-panel';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isLoadPanelVisible: false
+            };
+
+            this.handleClick = this.handleClick.bind(this);
+            this.handleHide = this.handleHide.bind(this);
+        }
+
+        handleClick() {
+            this.setState({
+                isLoadPanelVisible: true
+            });
+        }
+
+        handleHide() {
+            this.setState({
+                isLoadPanelVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <LoadPanel
+                        closeOnOutsideClick={true}
+                        visible={this.state.isLoadPanelVisible}
+                        onHidden={this.state.handleHide}
+                    />
+                    <Button
+                        text="Show the Load Panel"
+                        onClick={this.handleClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

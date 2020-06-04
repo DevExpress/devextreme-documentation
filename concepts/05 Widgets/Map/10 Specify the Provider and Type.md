@@ -35,6 +35,60 @@ By default, the **Map** widget uses **Google Maps** as a map provider. It can us
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :center="centerCoordinates"
+            provider="google"/> <!-- or "bing" | "googleStatic" -->
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <Map
+                    zoom={10}
+                    center={centerCoordinates}
+                    provider="google"/> {/* or "bing" | "googleStatic" */}
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 When using maps, you should include an API key that authenticates your application. Specify this key using the [key](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/key '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/key/') option. Note that this option can also accept an object with keys for every available provider. For more information on API keys, refer to the documentation of the specific map provider.
@@ -85,6 +139,74 @@ When using maps, you should include an API key that authenticates your applicati
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :center="centerCoordinates"
+            provider="bing"
+            :key="authentificationKeys"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 },
+                authentificationKeys: {
+                    bing: this.BING_API_KEY,
+                    google: this.GOOGLE_API_KEY,
+                    googleStatic: this.GOOGLE_STATIC_API_KEY
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+    const authentificationKeys = {
+        bing: this.BING_API_KEY,
+        google: this.GOOGLE_API_KEY,
+        googleStatic: this.GOOGLE_STATIC_API_KEY
+    };
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <Map
+                    zoom={10}
+                    center={centerCoordinates}
+                    provider="bing"
+                    key={authentificationKeys}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 The **Map** widget supports the following map types: *"hybrid"*, *"satellite"* and *"roadmap"*, which is used by default. To change the map type, use the [type](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/#type') option. Note that **Bing Maps** call map types differ​ently​​, therefore Aerial and Road **Bing Maps** became *"hybrid"* and *"roadmap"*, respectively, in the **Map** widget.
@@ -126,6 +248,64 @@ The **Map** widget supports the following map types: *"hybrid"*, *"satellite"* a
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :center="centerCoordinates"
+            provider="bing"
+            type="hybrid"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <Map
+                    zoom={10}
+                    center={centerCoordinates}
+                    provider="bing"
+                    type="hybrid"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

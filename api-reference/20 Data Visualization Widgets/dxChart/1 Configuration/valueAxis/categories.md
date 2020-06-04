@@ -8,8 +8,7 @@ Specifies the order of categories on an axis of the *"discrete"* [type](/api-ref
 
 --- 
 
-Values of the `string` type on discrete axes keep the order of objects in the data source. Values of the `number` and `date` types are sorted in ascending order regardless of the order they have in the data source.
-Specify the **categories** array to set the required order of values. In the following example, the values are sorted alphabetically: 
+Values of the `string` type on discrete axes keep the order of objects in the data source. Values of the `number` and `date` types are sorted in ascending order regardless of the order they have in the data source. Specify the **categories** array to set the required order of values. In the following example, the values are sorted alphabetically: 
 
 ---
 ##### jQuery

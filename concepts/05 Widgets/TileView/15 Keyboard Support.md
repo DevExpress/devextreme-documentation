@@ -1,37 +1,31 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Shift + Mouse Wheel</td>
-      <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction">direction</a> option is <i>"horizontal"</i>.</td>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
     <tr>
-      <td>&larr;&rarr;&uarr;&darr;</td>
-      <td>Moves focus to the neighboring tile.</td>
-   </tr>
-    <tr>
-      <td>Home</td>
-      <td>Moves focus to the very first tile.</td>
+        <td>Shift + Mouse Wheel</td>
+        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction">direction</a> option is <i>"horizontal"</i>.</td>
     </tr>
     <tr>
-      <td>End</td>
-      <td>Moves focus to the very last tile.</td>
+        <td>&larr;&rarr;&uarr;&darr;</td>
+        <td>Moves focus to the neighboring tile.</td>
     </tr>
     <tr>
-      <td>Enter or Space</td>
-      <td>Selects the focused tile.</td>
+        <td>Home</td>
+        <td>Moves focus to the very first tile.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>End</td>
+        <td>Moves focus to the very last tile.</td>
+    </tr>
+    <tr>
+        <td>Enter or Space</td>
+        <td>Selects the focused tile.</td>
+    </tr>
+</table>
 
 #include common-code-register-key-handler
 

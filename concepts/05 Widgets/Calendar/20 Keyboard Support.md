@@ -1,33 +1,27 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>&larr; &rarr; &uarr; &darr;</td>
-      <td>Moves focus to the day nearby.</td>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
     <tr>
-      <td>Page Up or Ctrl + &larr;</td>
-      <td>Displays the previous month.</td>
+        <td>&larr; &rarr; &uarr; &darr;</td>
+        <td>Moves focus to the day nearby.</td>
     </tr>
     <tr>
-      <td>Page Down or Ctrl + &rarr;</td>
-      <td>Displays the next month.</td>
+        <td>Page Up or Ctrl + &larr;</td>
+        <td>Displays the previous month.</td>
     </tr>
     <tr>
-      <td>Enter</td>
-      <td>Selects the focused day.</td>
+        <td>Page Down or Ctrl + &rarr;</td>
+        <td>Displays the next month.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>Enter</td>
+        <td>Selects the focused day.</td>
+    </tr>
+</table>
 
 #include common-code-register-key-handler
 

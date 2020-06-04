@@ -16,54 +16,48 @@ The text for the label to display.
 ---
 This option accepts a function whose parameter exposes the following fields.
 
-<div class="simple-table">
-    <table>
-        <thead>
-            <tr>
-                <th>Field</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="text-align:left">originalValue</td>
-                <td>The raw value of the point.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">value</td>
-                <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">valueText</td>
-                <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/label/#format">format</a> and converted to string.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">originalArgument</td>
-                <td>The raw argument of the point.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">argument</td>
-                <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">argumentText</td>
-                <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/label/#argumentFormat">format</a> and converted to string.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">index</td>
-                <td><i>0</i> - if the point is minimum; <i>1</i> - if the point is maximum.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">point</td>
-                <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/">Point</a> object.</td>
-            </tr>
-            <tr>
-                <td style="text-align:left">seriesName</td>
-                <td>The name of the series to which the point belongs.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<table class="dx-table">
+    <tr>
+        <th>Field</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>originalValue</td>
+        <td>The raw value of the point.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+    </tr>
+    <tr>
+        <td>valueText</td>
+        <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/label/#format">format</a> and converted to string.</td>
+    </tr>
+    <tr>
+        <td>originalArgument</td>
+        <td>The raw argument of the point.</td>
+    </tr>
+    <tr>
+        <td>argument</td>
+        <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
+    </tr>
+    <tr>
+        <td>argumentText</td>
+        <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/label/#argumentFormat">format</a> and converted to string.</td>
+    </tr>
+    <tr>
+        <td>index</td>
+        <td><i>0</i> - if the point is minimum; <i>1</i> - if the point is maximum.</td>
+    </tr>
+    <tr>
+        <td>point</td>
+        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/">Point</a> object.</td>
+    </tr>
+    <tr>
+        <td>seriesName</td>
+        <td>The name of the series to which the point belongs.</td>
+    </tr>
+</table>
 
 #include dataviz-ref-functioncontext
 

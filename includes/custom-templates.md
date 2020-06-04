@@ -11,7 +11,7 @@ A zero-based index of the item in the collection. Available only in collection w
 - `element`     
 A jQuery element that represents the widget element being customized. Available only if you use jQuery.
 
-The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate]() for the [List]() widget:
+The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Widgets/dxList/) widget:
 
 ---
 ##### jQuery

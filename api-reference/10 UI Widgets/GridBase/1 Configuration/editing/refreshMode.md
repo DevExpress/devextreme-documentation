@@ -11,13 +11,12 @@ Specifies operations that are performed after saving changes.
 ---
 The following table shows the operations that are performed after saving changes in different modes:
 
-<div class="simple-table">
-<table style="text-align:center">
+<table class="dx-table">
  <tr>
     <th>Mode</th>
     <th>Data <a href="/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload">reloading</a> </th>
-    <th>Data processing operations<sup>*</sup></th>
-    <th>Widget repaint<sup>**</sup></th>
+    <th>Data processing operations<sup>1</sup></th>
+    <th>Widget repaint<sup>2</sup></th>
  </tr>
   <tr>
     <td>full</td>
@@ -27,7 +26,7 @@ The following table shows the operations that are performed after saving changes
  </tr>
  <tr>
     <td>reshape</td>
-    <td>- <sup>***</sup></td>
+    <td>- <sup>3</sup></td>
     <td>+<br>(on the client)</td>
     <td>+</td>
  </tr>
@@ -38,14 +37,14 @@ The following table shows the operations that are performed after saving changes
     <td>+</td>
  </tr>
 </table>
-</div>
 
-<div style="font-size:12px;margin-bottom:10px;margin-left:25px">
-    <sup>*</sup> - Data processing operations include paging, filtering, sorting, grouping, and summary calculation (in the <b>DataGrid</b>). <br/>
-    <sup>**</sup> - Set <a href="{basewidgetpath}/Configuration/#repaintChangesOnly">repaintChangesOnly</a> to <b>true</b> to repaint only elements whose data changed. <br/>
-    <sup>***</sup> - Set <a href="{basewidgetpath}/Configuration/remoteOperations/">remoteOperations</a> to <b>false</b> and <a href="{basewidgetpath}/Configuration/#cacheEnabled">cacheEnabled</a> to <b>true</b> to avoid data reloading.
+<div class="footnotes">
+    <ol>
+        <li>Data processing operations include paging, filtering, sorting, grouping, and summary calculation (in the <b>DataGrid</b>).</li>
+        <li>Set <a href="{basewidgetpath}/Configuration/#repaintChangesOnly">repaintChangesOnly</a> to <b>true</b> to repaint only elements whose data changed.</li>
+        <li>Set <a href="{basewidgetpath}/Configuration/remoteOperations/">remoteOperations</a> to <b>false</b> and <a href="{basewidgetpath}/Configuration/#cacheEnabled">cacheEnabled</a> to <b>true</b> to avoid data reloading.</li>
+    </ol>
 </div>
-
 
 [note]
 

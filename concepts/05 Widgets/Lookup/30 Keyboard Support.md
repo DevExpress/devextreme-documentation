@@ -1,37 +1,31 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Alt + &darr;</td>
-      <td>Opens the drop-down menu.</td>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
     <tr>
-      <td>Enter or Backspace</td>
-      <td>If the drop-down menu is closed, opens it; otherwise selects the current item.</td>
+        <td>Alt + &darr;</td>
+        <td>Opens the drop-down menu.</td>
     </tr>
     <tr>
-      <td>Esc</td>
-      <td>Closes the drop-down menu.</td>
+        <td>Enter or Backspace</td>
+        <td>If the drop-down menu is closed, opens it; otherwise selects the current item.</td>
     </tr>
     <tr>
-      <td>&uarr; / &darr;</td>
-      <td>If the drop-down menu is opened, moves focus to the previous/next item.</td>
+        <td>Esc</td>
+        <td>Closes the drop-down menu.</td>
     </tr>
     <tr>
-      <td>Tab / Shift + Tab</td>
-      <td>If the drop-down menu is opened, moves focus to the list / search field.</td>
+        <td>&uarr; / &darr;</td>
+        <td>If the drop-down menu is opened, moves focus to the previous/next item.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>Tab / Shift + Tab</td>
+        <td>If the drop-down menu is opened, moves focus to the list / search field.</td>
+    </tr>
+</table>
 
 #include common-code-register-key-handler
 

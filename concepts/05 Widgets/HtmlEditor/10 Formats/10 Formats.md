@@ -2,8 +2,7 @@ The following tables list available formats and their values grouped into three 
 
 **Inline (or text) formats**
 
-<div class="simple-table">
-<table style="text-align:center">
+<table class="dx-table full-width">
  <tr>
     <th>Format Name</th>
     <th>Accepted Values</th>
@@ -49,12 +48,10 @@ The following tables list available formats and their values grouped into three 
     <td>true, false</td>
  </tr>
 </table>
-</div>
 
 **Block formats**
 
-<div class="simple-table">
-<table style="text-align:center">
+<table class="dx-table full-width">
  <tr>
     <th>Format Name</th>
     <th>Accepted Values</th>
@@ -84,12 +81,10 @@ The following tables list available formats and their values grouped into three 
     <td>true, false</td>
  </tr>
 </table>
-</div>
 
 **Embedded formats**
 
-<div class="simple-table">
-<table style="text-align:center">
+<table class="dx-table full-width">
  <tr>
     <th>Format Name</th>
     <th>Value Types</th>
@@ -103,6 +98,5 @@ The following tables list available formats and their values grouped into three 
     <td>Object {{ value: String, escapeChar: String | Array&lt;String&gt; }}</td>
  </tr>
 </table>
-</div>
 
 The formats are applied by toolbar items. Most formats have items attached to them out-of-the-box. Refer to [Predefined Items](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/Widgets/HtmlEditor/Toolbar/Predefined_Items/') for a full list of toolbar items and the formats they apply.

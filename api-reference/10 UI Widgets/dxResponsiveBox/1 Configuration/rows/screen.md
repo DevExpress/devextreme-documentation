@@ -10,34 +10,28 @@ Decides on which screens the current row is rendered.
 ---
 Before rendering the row, the widget considers the screen's width. If the width matches the specified size qualifier, the row will be rendered. There are four size qualifiers in all. The **screen** option accepts one or several of them separated by a space.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Size Qualifier</th>
-      <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>xs</td>
-      <td>Stands for "extra small". Screens with width less than 768 pixels.</td>
+        <th>Size Qualifier</th>
+        <th>Description</th>
     </tr>
     <tr>
-      <td>sm</td>
-      <td>Stands for "small". Screens with width between 768 and 992 pixels.</td>
+        <td>xs</td>
+        <td>Stands for "extra small". Screens with width less than 768 pixels.</td>
     </tr>
     <tr>
-      <td>md</td>
-      <td>Stands for "medium". Screens with width between 992 and 1200 pixels.</td>
+        <td>sm</td>
+        <td>Stands for "small". Screens with width between 768 and 992 pixels.</td>
     </tr>
     <tr>
-      <td>lg</td>
-      <td>Stands for "large". Screens with width more than 1200 pixels.</td>
+        <td>md</td>
+        <td>Stands for "medium". Screens with width between 992 and 1200 pixels.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>lg</td>
+        <td>Stands for "large". Screens with width more than 1200 pixels.</td>
+    </tr>
+</table>
 
 [note] When this option is undefined, the row is rendered on all screens.
 

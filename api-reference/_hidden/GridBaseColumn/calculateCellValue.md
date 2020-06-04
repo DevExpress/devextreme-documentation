@@ -240,34 +240,32 @@ In the following code, the **calculateCellValue** function is used to create an 
 
 The following features are disabled in an unbound column, but you can enable them as described in this table:
 
-<div class="simple-table">
-    <table>
-        <tr>
-          <th style="width:30%">Feature</th>
-          <th>Action that enables it</th>
-        </tr>
-        <tr>
-          <td>Editing</td>
-          <td>Implement the <a href="{basewidgetpath}/Configuration/columns/#setCellValue">setCellValue</a> function.</td>
-        </tr>
-        <tr>
-          <td>Sorting</td>
-          <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSorting">allowSorting</a> option to <b>true</b>.</td>
-        </tr>
-        <tr>
-          <td>Filtering</td>
-          <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowFiltering">allowFiltering</a> option to <b>true</b>.</td>
-        </tr>
-        <tr>
-          <td>Searching</td>
-          <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSearch">allowSearch</a> option to <b>true</b>.</td>
-        </tr>
-        <tr>
-          <td>Grouping (<b>DataGrid</b> only)</td>
-          <td>Set the <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowGrouping">allowGrouping</a> option to <b>true</b>.</td>
-        </tr>
-    </table>
-</div>
+<table class="dx-table">
+    <tr>
+        <th>Feature</th>
+        <th>Action that enables it</th>
+    </tr>
+    <tr>
+        <td>Editing</td>
+        <td>Implement the <a href="{basewidgetpath}/Configuration/columns/#setCellValue">setCellValue</a> function.</td>
+    </tr>
+    <tr>
+        <td>Sorting</td>
+        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSorting">allowSorting</a> option to <b>true</b>.</td>
+    </tr>
+    <tr>
+        <td>Filtering</td>
+        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowFiltering">allowFiltering</a> option to <b>true</b>.</td>
+    </tr>
+    <tr>
+        <td>Searching</td>
+        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSearch">allowSearch</a> option to <b>true</b>.</td>
+    </tr>
+    <tr>
+        <td>Grouping (<b>DataGrid</b> only)</td>
+        <td>Set the <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowGrouping">allowGrouping</a> option to <b>true</b>.</td>
+    </tr>
+</table>
 
 To invoke the default behavior, call the **defaultCalculateCellValue** function and return its result.
 

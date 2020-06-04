@@ -1,29 +1,23 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>&larr; / &rarr; </td>
-      <td>Decreases/increases the value of the focused handle by a <a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#step">step</a>.</td>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
     <tr>
-      <td>Page Up / Page Down</td>
-      <td>Decreases/increases the value of the focused handle by a <a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#keyStep">keyStep</a>.</td>
+        <td>&larr; / &rarr; </td>
+        <td>Decreases/increases the value of the focused handle by a <a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#step">step</a>.</td>
     </tr>
     <tr>
-      <td>Home / End</td>
-      <td>Sets the focused handle to the <a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#min">minimum</a>/<a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#max">maximum</a> value or to the value of the other handle.</td>
+        <td>Page Up / Page Down</td>
+        <td>Decreases/increases the value of the focused handle by a <a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#keyStep">keyStep</a>.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>Home / End</td>
+        <td>Sets the focused handle to the <a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#min">minimum</a>/<a href="/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#max">maximum</a> value or to the value of the other handle.</td>
+    </tr>
+</table>
 
 #include common-code-register-key-handler
 

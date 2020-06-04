@@ -1,9 +1,9 @@
 Templates are passed as options that end with **...Template** (in jQuery, Angular, and Vue) or **...Render**/**...Component** (in React).
 
-Each template provides access to the following parameters:
+Each template has access to the following parameters:
 
 - `data`     
-A data source object or an object with fields useful for this particular template. For information on the contents of `data`, refer the template's API reference article and the **Template Data** section in it.
+A data source object or an object with fields specific for a particular template. For information on the contents of `data`, refer the template's API reference article and the **Template Data** section in it.
 
 - `index`       
 A zero-based index of the item in the collection. Available only in collection widget templates.
@@ -189,8 +189,8 @@ Collection widgets also support templates for individual items. Do not specify t
             <b>Item 2</b>
         </dxi-item>
         <dxi-item>
-            Item with a nested component
             <div *dxTemplate>
+                Item with a nested component
                 <dx-button text="Click me"></dx-button>
             </div>
         </dxi-item>
@@ -233,9 +233,9 @@ Collection widgets also support templates for individual items. Do not specify t
                 </template>
             </DxItem>
             <DxItem>
-                Item with a nested component
-                <template #default>
+                <template #default>               
                     <div>
+                        Item with a nested component
                         <DxButton text="Click me" />
                     </div>
                 </template>

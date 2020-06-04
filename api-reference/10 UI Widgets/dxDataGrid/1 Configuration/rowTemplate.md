@@ -53,6 +53,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
                 <td>{{item.data.id}}</td>
                 <td>{{item.data.name}}</td>
             </tr>
+        </tbody>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -110,6 +111,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
                     <td>{{id}}</td>
                     <td>{{name}}</td>
                 </tr>
+            </tbody>
         </DxDataGrid>
     </template>
     <script>
@@ -136,6 +138,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
                         <td>{id}</td>
                         <td>{name}</td>
                     </tr>
+                </tbody>
             );
         }
     }
@@ -162,6 +165,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
                     <td><%= data.id %></td>
                     <td><%= data.name %></td>
                 </tr>
+            </tbody>
         </text>)
     )
 

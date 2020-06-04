@@ -8,7 +8,7 @@ Edit the `src\app-navigation.js` file to configure navigation menu items. Each i
 
 - **items** - child items
 
-<!---->
+[note] A menu item should either navigate to a page OR include subitems. For that reason, do not specify both **path** and **items** for the same menu item.
 
     <!-- tab: JavaScript -->
     {

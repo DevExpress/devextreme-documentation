@@ -11,35 +11,28 @@ Specifies series elements to be highlighted when a user points to a series.
 ---
 When a user points to a series, it may react in one of the following ways depending on the value of the **hoverMode** option.
 
-<div class="simple-table">
-    <table>
-        <thead>
-            <tr>
-                <th>hoverMode</th>
-                <th>Result</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><i>"nearestPoint"</i></td>
-                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/nearestPoint.png" /></td>
-            </tr>
-            <tr>
-                <td><i>"includePoints"</i></td>
-                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/includePoints.png" /></td>
-            </tr>
-            <tr>
-                <td><i>"excludePoints"</i></td>
-                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/excludePoints.png" /></td>
-            </tr>
-            <tr>
-                <td><i>"none"</i></td>
-                <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/none.png" /></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div style="height:5px"></div>
+<table class="dx-table">
+    <tr>
+        <th>hoverMode</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td><i>"nearestPoint"</i></td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/nearestPoint.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"includePoints"</i></td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/includePoints.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"excludePoints"</i></td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/excludePoints.png" /></td>
+    </tr>
+    <tr>
+        <td><i>"none"</i></td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/rangearea/none.png" /></td>
+    </tr>
+</table>
 
 [note]Points in range area series are hidden by default. To make them visible, assign **true** to the **point**.**visible** option.
 

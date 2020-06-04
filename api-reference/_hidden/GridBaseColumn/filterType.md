@@ -18,22 +18,20 @@ All values in the header filter are selected initially. A user can deselect valu
 
 This option changes when the user clicks the **Select All** checkbox in the [header filter](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/headerFilter '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/headerFilter/'):
 
-<div class="simple-table">
-    <table>
-        <tr>
-            <th>Select All</th>
-            <th>filterType / filterValues</th>
-        </tr>
-        <tr>
-            <td><img src="Content/images/doc/20_2/DataGrid/dg-selectall-unchecked.png"></td>
-            <td><code>filterType: "include"</code><br><code>filterValues: null</code></td>
-        </tr>
-        <tr>
-            <td><img src="Content/images/doc/20_2/DataGrid/dg-selectall-checked.png"></td>
-            <td><code>filterType: "exclude"</code><br><code>filterValues: null</code></td>
-        </tr>
-    </table>
-</div>
+<table class="dx-table">
+    <tr>
+        <th>Select All</th>
+        <th>filterType / filterValues</th>
+    </tr>
+    <tr>
+        <td><img src="Content/images/doc/20_2/DataGrid/dg-selectall-unchecked.png"></td>
+        <td><code>filterType: "include"</code><br><code>filterValues: null</code></td>
+    </tr>
+    <tr>
+        <td><img src="Content/images/doc/20_2/DataGrid/dg-selectall-checked.png"></td>
+        <td><code>filterType: "exclude"</code><br><code>filterValues: null</code></td>
+    </tr>
+</table>
 
 #include common-ref-enum with {
     enum: "`FilterType`",

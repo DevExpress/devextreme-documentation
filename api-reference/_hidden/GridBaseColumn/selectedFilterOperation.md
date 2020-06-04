@@ -12,14 +12,10 @@ Specifies the column's filter operation displayed in the [filter row](/concepts/
 ---
 The following table lists default filter operations by [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'):
 
-<div class="simple-table">
-<table>
-  <thead>
+<table class="dx-table">
   <tr>
     <th>dataType</th><th>Default filter operation</th>
   </tr>
-  </thead>
-  <tbody>
   <tr>
     <td>"string"</td><td>"contains"</td>
   </tr>
@@ -29,9 +25,7 @@ The following table lists default filter operations by [data type](/api-referenc
   <tr>
     <td>"date"</td><td>"="</td>
   </tr>
-  </tbody>
 </table>
-</div>
 
 #include common-ref-enum with {
     enum: "`FilterOperations`",

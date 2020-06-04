@@ -1,41 +1,35 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>&larr; &rarr; &uarr; &darr;</td>
-      <td>Moves the color pointer.</td>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
     <tr>
-      <td>Ctrl + &uarr;</td>
-      <td>Moves the RGB slider up.</td>
+        <td>&larr; &rarr; &uarr; &darr;</td>
+        <td>Moves the color pointer.</td>
     </tr>
     <tr>
-      <td>Ctrl + &darr;</td>
-      <td>Moves the RGB slider down.</td>
+        <td>Ctrl + &uarr;</td>
+        <td>Moves the RGB slider up.</td>
     </tr>
     <tr>
-      <td>Ctrl + &larr;</td>
-      <td>Moves the transparency slider left.</td>
+        <td>Ctrl + &darr;</td>
+        <td>Moves the RGB slider down.</td>
     </tr>
     <tr>
-      <td>Ctrl + &rarr;</td>
-      <td>Moves the transparency slider right.</td>
+        <td>Ctrl + &larr;</td>
+        <td>Moves the transparency slider left.</td>
     </tr>
     <tr>
-      <td>Enter</td>
-      <td>Selects the color.</td>
+        <td>Ctrl + &rarr;</td>
+        <td>Moves the transparency slider right.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>Enter</td>
+        <td>Selects the color.</td>
+    </tr>
+</table>
 
 #include common-code-register-key-handler
 

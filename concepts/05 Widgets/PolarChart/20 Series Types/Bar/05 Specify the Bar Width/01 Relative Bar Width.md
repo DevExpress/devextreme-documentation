@@ -88,21 +88,15 @@ The parent group's width can be specified using the [barGroupPadding](/api-refer
 
 The following images illustrate how different **barPadding** and **barGroupPadding** values change a chart's appearance. In this example, all series have the same **barPadding**.
 
-<div class="simple-table">
-    <table>
-        <thead>
-            <tr>
-                <th>barGroupPadding: 0 <br/> barPadding: 0</th>
-                <th>barGroupPadding: 0.2 <br/> barPadding: 0</th>
-                <th>barGroupPadding: 0.2 <br/> barPadding: 0.1</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/1.png" /></td>
-                <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/2.png" /></td>
-                <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/3.png" /></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<table class="dx-table">
+    <tr>
+        <th>barGroupPadding: 0 <br/> barPadding: 0</th>
+        <th>barGroupPadding: 0.2 <br/> barPadding: 0</th>
+        <th>barGroupPadding: 0.2 <br/> barPadding: 0.1</th>
+    </tr>
+    <tr>
+        <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/1.png" /></td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/2.png" /></td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/polarbarwidth/3.png" /></td>
+    </tr>
+</table>

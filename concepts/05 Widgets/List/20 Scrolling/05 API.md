@@ -1,41 +1,35 @@
 The following table gives an overview of scrolling-related methods exposed by the **List**.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Method</th>
-      <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>scrollHeight()</td>
-      <td>Returns the height of the scrollable content in pixels.</td>
+        <th>Method</th>
+        <th>Description</th>
     </tr>
     <tr>
-      <td>scrollToItem(itemIndex)</td>
-      <td>Scrolls the <b>List</b> to the item with a specific index.</td>
+        <td>scrollHeight()</td>
+        <td>Returns the height of the scrollable content in pixels.</td>
     </tr>
     <tr>
-      <td>scrollToItem(itemElement)</td>
-      <td>Scrolls the <b>List</b> to a specific <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp">DOM node</a>.</td>
+        <td>scrollToItem(itemIndex)</td>
+        <td>Scrolls the <b>List</b> to the item with a specific index.</td>
     </tr>
     <tr>
-      <td>scrollTo(location)</td>
-      <td>Scrolls the <b>List</b> to a location specified in pixels.</td>
+        <td>scrollToItem(itemElement)</td>
+        <td>Scrolls the <b>List</b> to a specific <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp">DOM node</a>.</td>
     </tr>
     <tr>
-      <td>scrollBy(distance)</td>
-      <td>Scrolls the <b>List</b> from the current location by a distance specified in pixels.</td>
+        <td>scrollTo(location)</td>
+        <td>Scrolls the <b>List</b> to a location specified in pixels.</td>
     </tr>
     <tr>
-      <td>scrollTop()</td>
-      <td>Returns a pixel-measured value that shows how far the <b>List</b> is scrolled from the top.</td>
+        <td>scrollBy(distance)</td>
+        <td>Scrolls the <b>List</b> from the current location by a distance specified in pixels.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>scrollTop()</td>
+        <td>Returns a pixel-measured value that shows how far the <b>List</b> is scrolled from the top.</td>
+    </tr>
+</table>
 
 The following examples shows how to call these methods.
 

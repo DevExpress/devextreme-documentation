@@ -7,41 +7,35 @@ The **Diagram** can load external tree-like and graph structures. The supported 
 
 When you bind a **Diagram** widget to a data source, you should specify options that allow the widget to create the diagram structure. The supported data structures differ in required options.
 
-<div class="simple-table" style="text-align: center;">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Required Options</th>
-      <th>Node and Edge Arrays</th>
-      <th>Linear Array</th>
-      <th>Hierarchical Array</th>
+        <th>Required Options</th>
+        <th>Node and Edge Arrays</th>
+        <th>Linear Array</th>
+        <th>Hierarchical Array</th>
     </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr">nodes.keyExpr</a></td>
-      <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+    <tr style="text-align:center;">
+        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr">nodes.keyExpr</a></td>
+        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
     </tr>
-    <tr>
-      <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#keyExpr">edges.keyExpr</a></td>
-      <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+    <tr style="text-align:center;">
+        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#keyExpr">edges.keyExpr</a></td>
+        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
     </tr>
-    <tr>
-      <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#parentKeyExpr">nodes.parentKeyExpr</a></td>
-      <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+    <tr style="text-align:center;">
+        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#parentKeyExpr">nodes.parentKeyExpr</a></td>
+        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
     </tr>
-    <tr>
-      <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#itemsExpr">nodes.itemsExpr</a></td>
-      <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-      <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+    <tr style="text-align:center;">
+        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#itemsExpr">nodes.itemsExpr</a></td>
+        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
     </tr>
-    </tbody>
-  </table>
-</div>
+</table>

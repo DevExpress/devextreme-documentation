@@ -1,45 +1,39 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Alt + &darr;</td>
-      <td>Opens the drop-down list.</td>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
     <tr>
-      <td>Alt + &uarr;</td>
-      <td>Closes the drop-down list.</td>
+        <td>Alt + &darr;</td>
+        <td>Opens the drop-down list.</td>
     </tr>
     <tr>
-      <td>Esc</td>
-      <td>Closes the drop-down list and removes focus from the widget.</td>
+        <td>Alt + &uarr;</td>
+        <td>Closes the drop-down list.</td>
     </tr>
     <tr>
-      <td>&uarr; / &darr;</td>
-      <td>Moves focus to the previous/next item. Active only when the drop-down list is open.</td>
+        <td>Esc</td>
+        <td>Closes the drop-down list and removes focus from the widget.</td>
     </tr>
     <tr>
-      <td>Page Up / Page Down</td>
-      <td>Moves focus to the first/last currently rendered item.</td>
+        <td>&uarr; / &darr;</td>
+        <td>Moves focus to the previous/next item. Active only when the drop-down list is open.</td>
     </tr>
     <tr>
-      <td>Enter or Space</td>
-      <td>Selects the current item.</td>
+        <td>Page Up / Page Down</td>
+        <td>Moves focus to the first/last currently rendered item.</td>
     </tr>
     <tr>
-      <td>Backspace</td>
-      <td>Unselects the last selected item.</td>
+        <td>Enter or Space</td>
+        <td>Selects the current item.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>Backspace</td>
+        <td>Unselects the last selected item.</td>
+    </tr>
+</table>
 
 #include common-code-register-key-handler
 

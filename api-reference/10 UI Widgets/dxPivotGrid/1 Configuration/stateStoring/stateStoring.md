@@ -11,27 +11,30 @@ State storing enables the widget to save applied settings and restore them the n
 
 The state is saved with a specified [storage key](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/storageKey.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#storageKey'). 
 
-<table style="font-size: 0.9em">
-<tr>
-    <td colspan="2">State storing saves the following options:</td>
-</tr>
-<tr>
-    <td style="width: 200px; vertical-align: top; padding: 10px">
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area">area</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#areaIndex">areaIndex</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterType">filterType</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterValues">filterValues</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBy">sortBy</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortOrder">sortOrder</a></li>
-    </td>
-    <td style="width: 200px; vertical-align: top; padding: 10px">
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryField">sortBySummaryField</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryPath">sortBySummaryPath</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#expanded">expanded</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryType">summaryType</a></li>
-        <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryDisplayMode">summaryDisplayMode</a></li>
-    </td>
-</tr>
+State storing saves the following options:
+
+<table class="multicolumn-list">
+    <tr>
+        <td>
+            <ul>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area">area</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#areaIndex">areaIndex</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterType">filterType</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterValues">filterValues</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBy">sortBy</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortOrder">sortOrder</a></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryField">sortBySummaryField</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryPath">sortBySummaryPath</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#expanded">expanded</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryType">summaryType</a></li>
+                <li><a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryDisplayMode">summaryDisplayMode</a></li>
+            </ul>
+        </td>
+    </tr>
 </table>  
 
 To specify the time in milliseconds between automatic state saves, set the [savingTimeout](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/savingTimeout.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#savingTimeout') option. To specify the lifetime of the saved state, set the storage [type](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/type.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#type').

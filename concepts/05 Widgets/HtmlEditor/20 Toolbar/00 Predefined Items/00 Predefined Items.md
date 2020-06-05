@@ -11,8 +11,7 @@ Predefined toolbar items include:
 
 The following table lists toolbar items and the formats they apply (if applicable):
 
-<div class="simple-table">
-<table style="text-align:center">
+<table class="dx-table">
     <tr>
         <th>Toolbar Item</th>
         <th><a href="/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName">formatName</a></th>
@@ -149,7 +148,6 @@ The following table lists toolbar items and the formats they apply (if applicabl
         <td>-</td>
     </tr>
 </table>
-</div>
  
 To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/Widgets/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/') array:
  

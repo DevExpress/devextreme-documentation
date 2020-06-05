@@ -2,15 +2,11 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
 
 **Numeric Formats**
 
-<div class="simple-table">
-    <table>
-    <thead>
+<table class="dx-table">
     <tr>
       <th>Format character</th>
       <th>Description</th>
     </tr>
-    </thead>
-    <tbody>
     <tr>
       <td>0</td>
       <td>A digit. Displays '0' if it is not specified in the UI.</td>
@@ -54,21 +50,15 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
             You can use the special characters above as well (in single quotation marks).
       </td>
     </tr>
-    </tbody>
-    </table>
-</div>
+</table>
 
  **Date-Time Formats** 
 
-<div class="simple-table">
-    <table>
-    <thead>
+<table class="dx-table">
     <tr>
       <th>Format character</th>
       <th>Description</th>
     </tr>
-    </thead>
-    <tbody>
     <tr>
       <td>y</td>
       <td>A calendar year. </td>
@@ -128,9 +118,7 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
       <td>'' (two single quotes)</td>
       <td>Literal text. Text enclosed in two single quotes is shown as-is.</td>
     </tr>
-    </tbody>
-    </table>
-</div> 
+</table>
 
 [note] [Reference the Globalize library](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') in your application to use other <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">datetime</a> format characters.
 

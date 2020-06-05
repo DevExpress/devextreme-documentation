@@ -1,21 +1,15 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
-    </thead>
-    <tbody>
     <tr>
-      <td>Space</td>
-      <td>Changes the widget value.</td>
-   </tr>
-    </tbody>
-  </table>
-</div>
+        <td>Space</td>
+        <td>Changes the widget value.</td>
+    </tr>
+</table>
 
 #include common-code-register-key-handler
 

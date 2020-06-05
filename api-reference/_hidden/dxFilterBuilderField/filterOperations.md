@@ -11,15 +11,11 @@ Specifies a set of available filter operations.
 ---
 The following table lists default operations by [data type](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#dataType'):
 
-<div class="simple-table">
-<table>
-  <thead>
+<table class="dx-table">
   <tr>
     <th>dataType</th>
     <th>filterOperations</th>
   </tr>
-  </thead>
-  <tbody>
   <tr>
     <td>"string"</td>
     <td>[ "contains", "notcontains", "startswith", "endswith", "=", "<>", "isblank", "isnotblank" ]</td>
@@ -40,9 +36,7 @@ The following table lists default operations by [data type](/api-reference/_hidd
     <td>"object"</td>
     <td>[ "isblank", "isnotblank" ]</td>
   </tr>
-  </tbody>
 </table>
-</div>
 
 The *"isblank"* operation returns null values and empty strings; *"isnotblank"* returns other values.
 

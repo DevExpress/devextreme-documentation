@@ -11,15 +11,11 @@ Aligns the content of the column.
 ---
 The default alignment of the content depends on the [type of data](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). 
 
-<div class="simple-table">
-<table>
-  <thead>
+<table class="dx-table">
   <tr>
     <th>dataType</th>
     <th>alignment</th>
   </tr>
-  </thead>
-  <tbody>
   <tr>
     <td><i>'number'</i></td>
     <td><i>'right'</i></td>
@@ -40,9 +36,7 @@ The default alignment of the content depends on the [type of data](/api-referenc
     <td><i>'datetime'</i></td>
     <td><i>'left'</i></td>
   </tr>
-  </tbody>
 </table>
-</div>
 
 #include common-ref-enum with {
     enum: "`HorizontalAlignment`",

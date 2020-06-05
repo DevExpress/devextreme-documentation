@@ -1,33 +1,27 @@
 When choosing the layout for a specific screen, the widget considers the screen's size qualifier. There are four size qualifiers in all.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Size Qualifier</th>
-      <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>xs</td>
-      <td>Stands for "extra small". Screens with width less than 768 pixels.</td>
+        <th>Size Qualifier</th>
+        <th>Description</th>
     </tr>
     <tr>
-      <td>sm</td>
-      <td>Stands for "small". Screens with width between 768 and 992 pixels.</td>
+        <td>xs</td>
+        <td>Stands for "extra small". Screens with width less than 768 pixels.</td>
     </tr>
     <tr>
-      <td>md</td>
-      <td>Stands for "medium". Screens with width between 992 and 1200 pixels.</td>
+        <td>sm</td>
+        <td>Stands for "small". Screens with width between 768 and 992 pixels.</td>
     </tr>
     <tr>
-      <td>lg</td>
-      <td>Stands for "large". Screens with width more than 1200 pixels.</td>
+        <td>md</td>
+        <td>Stands for "medium". Screens with width between 992 and 1200 pixels.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>lg</td>
+        <td>Stands for "large". Screens with width more than 1200 pixels.</td>
+    </tr>
+</table>
 
 If a size qualifier should be identified with other screen width values, use the [screenByWidth](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/Configuration/#screenByWidth') option to specify the relation.
 

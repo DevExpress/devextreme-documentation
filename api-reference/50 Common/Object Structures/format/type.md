@@ -12,9 +12,9 @@ You can choose one of the predefined formats, depending on the values you need t
 
 **Numeric Formats**
 
-<table>
+<table class="multicolumn-list">
     <tr>
-        <td style="width: 350px;">
+        <td>
             <ul>
                 <li><em>"fixedPoint"</em> - 100.11 &rarr; 100</li>
                 <li><em>"percent"</em> - 0.1 &rarr; 10%</li>
@@ -34,25 +34,29 @@ You can choose one of the predefined formats, depending on the values you need t
     </tr>
 </table>
 
-<div style="font-size:12px; margin-bottom: 15px">
-    &#42; - uses <i>"thousands", "millions", "billions", "trillions"*</i> format depending on the actual value
+<div class="footnotes">
+    <ul>
+        <li>uses <i>"thousands", "millions", "billions", "trillions"*</i> format depending on the actual value</li>
+    </ul>
 </div>
 
 **Currency Formats**  
 
 - *"currency"* - *"$3.95"**
 
-<div style="font-size:12px;  margin-bottom: 15px">
-    &#42; - to define any other currency, use <a href="/Documentation/ApiReference/Common/Object_Structures/format/#currency">currency</a> 
+<div class="footnotes">
+    <ul>
+        <li>to define any other currency, use <a href="/Documentation/ApiReference/Common/Object_Structures/format/#currency">currency</a> </li>
+    </ul> 
 </div>
 
 [note]Specify the [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') to show fractional numbers.
 
 **Date-Time Formats**  
 
-<table>
+<table class="multicolumn-list">
     <tr>
-        <td style="width: 350px;">
+        <td>
             <ul>
                 <li><em>"longDate"</em> - <em>"Thursday, January 01, 1970"</em></li>
                 <li><em>"longTime"</em> - <em>"12:00:00 AM"</em></li>

@@ -1,4 +1,4 @@
-<table class="simple-table">
+<table class="dx-table">
     <tr>
         <th style="width: 30%;">Criteria</th>
         <th style="width: 15%;">Level of Support &amp; Supporting Features</th>

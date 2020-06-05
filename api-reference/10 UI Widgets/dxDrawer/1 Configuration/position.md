@@ -11,25 +11,23 @@ Specifies the drawer's position in relation to the view.
 ---
 Use *"before"* and *"after"* if the **Drawer** should be positioned differently in right-to-left and regular representations. The following table shows the dependency between the [rtlEnabled](/api-reference/50%20Common/Object%20Structures/globalConfig/rtlEnabled.md '/Documentation/ApiReference/Common/Object_Structures/globalConfig/#rtlEnabled') value and *"before"* and *"after"* positions:
 
-<div class="simple-table">
-<table style="text-align:center">
+<table class="dx-table">
  <tr>
     <th></th>
     <th>"before"</th>
     <th>"after"</th>
  </tr>
  <tr>
-    <td style="text-align:left">rtlEnabled: false</td>
+    <td>rtlEnabled: false</td>
     <td>left side of the view</td>
     <td>right side of the view</td>
  </tr>
  <tr>
-    <td style="text-align:left">rtlEnabled: true</td>
+    <td>rtlEnabled: true</td>
     <td>right side of the view</td>
     <td>left side of the view</td>
  </tr>
 </table>
-</div>
 
 
 #include common-demobutton-named with {

@@ -13,33 +13,33 @@ Server-side data processing improves the widget's performance on large datasets.
 
 The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used widget functionality. 
 
-<div class="simple-table normal-font-style">
-<table style="text-align:center">
+<table class="dx-table">
  <tr>
     <th>Setting</th>
     <th>Required server-side operations</th>
     <th>Additional server-side operations</th>
  </tr>
   <tr>
-    <td style="text-align:left"><code>remoteOperations: { filtering: true }</code></td>
+    <td><code>remoteOperations: { filtering: true }</code></td>
     <td>filtering</td>
     <td>-</td>
  </tr>
  <tr>
-    <td style="text-align:left"><code>remoteOperations: { sorting: true }</code></td>
+    <td><code>remoteOperations: { sorting: true }</code></td>
     <td>sorting</td>
     <td>filtering<sup>*</sup></td>
  </tr>
  <tr>
-    <td style="text-align:left"><code>remoteOperations: { grouping: true }</code></td>
+    <td><code>remoteOperations: { grouping: true }</code></td>
     <td>grouping, filtering</td>
     <td>sorting<sup>*</sup></td>
  </tr>
 </table>
-</div>
 
-<div style="font-size:12px;margin-bottom:10px;margin-left:25px">
-    <sup>*</sup> - If this functionality is used in the widget.<br />
+<div class="footnotes">
+    <ul>
+        <li>If this functionality is used in the widget.</li>
+    </ul>
 </div>
 
 [note] Filtering and sorting are performed on the server side for the [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.

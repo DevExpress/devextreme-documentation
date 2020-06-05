@@ -11,15 +11,11 @@ Specifies a set of available filter operations. Applies only if [filterRow](/api
 ---
 The following table lists available filters by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). The same filters are assigned to columns of a specific data type by default.
 
-<div class="simple-table">
-<table>
-  <thead>
+<table class="dx-table">
   <tr>
     <th>dataType</th>
     <th>filterOperations</th>
   </tr>
-  </thead>
-  <tbody>
   <tr>
     <td>"string"</td>
     <td>[ "contains", "notcontains", "startswith", "endswith", "=", "<>" ]</td>
@@ -32,9 +28,7 @@ The following table lists available filters by [data types](/api-reference/_hidd
     <td>"date"</td>
     <td>[ "=", "<>", "<", ">", "<=", ">=", "between" ]</td>
   </tr>
-  </tbody>
 </table>
-</div>
 
 The **filterOperations** option can also accept an empty array. In this case, the selected filter operation is *"="* for all data types, and a user cannot change it.
 

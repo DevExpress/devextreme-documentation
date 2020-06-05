@@ -11,29 +11,23 @@ You can enable zooming and panning for the argument and value axes independently
 
 Users can use the mouse and touch gestures to zoom and pan. The following table illustrates user interaction:
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Device</th>
-      <th>Zooming Gestures</th>
-      <th>Panning Gestures</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Touch-enabled</td>
-      <td>Spread and pinch</td>
-      <td>Vertical or horizontal drag</td>
+        <th>Device</th>
+        <th>Zooming Gestures</th>
+        <th>Panning Gestures</th>
     </tr>
     <tr>
-      <td>Mouse-equipped</td>
-      <td>Mouse Wheel</td>
-      <td>Vertical or horizontal drag</td>
+        <td>Touch-enabled</td>
+        <td>Spread and pinch</td>
+        <td>Vertical or horizontal drag</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+    <tr>
+        <td>Mouse-equipped</td>
+        <td>Mouse Wheel</td>
+        <td>Vertical or horizontal drag</td>
+    </tr>
+</table>
 
 You can use the [allowTouchGestures](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/allowTouchGestures.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/zoomAndPan/#allowTouchGestures') or [allowMouseWheel](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/allowMouseWheel.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/zoomAndPan/#allowMouseWheel') option to disable touch or mouse support.
 

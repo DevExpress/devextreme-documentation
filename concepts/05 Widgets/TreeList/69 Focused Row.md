@@ -4,28 +4,26 @@ To allow users to focus rows, set the [focusedRowEnabled](/api-reference/10%20UI
 
 Users can control the focused row using the following mouse and keyboard commands:
 
-<div class="simple-table">
-    <table>
-        <tr>
-          <th style="width:25%;">Command</th><th>Action</th>
-        </tr>
-        <tr>
-          <td>Mouse Click</td><td>Focuses a row.</td>
-        </tr>
-        <tr>
-          <td>&uarr; / &darr;</td>
-          <td>Focuses the next/previous row.</td>
-        </tr>
-        <tr>
-          <td>&larr; / &rarr;</td>
-          <td>Focuses the cell to the left/right.</td>
-        </tr>
-        <tr>
-          <td>Esc</td>
-          <td>Removes highlighting from the focused cell.</td>
-        </tr>
-    </table>
-</div>
+<table class="dx-table">
+    <tr>
+        <th>Command</th><th>Action</th>
+    </tr>
+    <tr>
+        <td>Mouse Click</td><td>Focuses a row.</td>
+    </tr>
+    <tr>
+        <td>&uarr; / &darr;</td>
+        <td>Focuses the next/previous row.</td>
+    </tr>
+    <tr>
+        <td>&larr; / &rarr;</td>
+        <td>Focuses the cell to the left/right.</td>
+    </tr>
+    <tr>
+        <td>Esc</td>
+        <td>Removes highlighting from the focused cell.</td>
+    </tr>
+</table>
 
 You can specify the initially focused row using the [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowKey') or [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowIndex') option. The grid is scrolled down to it. If you also set the [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedColumnIndex') option, a specific cell in this row is focused.
 

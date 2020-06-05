@@ -1,21 +1,17 @@
 An end user can use the following keys to interact with the widget.
 
-<div class="simple-table">
-  <table>
-    <thead>
+<table class="dx-table">
     <tr>
-      <th>Key</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>&larr; &uarr; or PageUp</td>
-      <td>Moves focus to the previous tab.</td>
+        <th>Key</th>
+        <th>Action</th>
     </tr>
     <tr>
-      <td>&rarr; &darr; or PageDown</td>
-      <td> Moves focus to the next tab.</td>
+        <td>&larr; &uarr; or PageUp</td>
+        <td>Moves focus to the previous tab.</td>
+    </tr>
+    <tr>
+        <td>&rarr; &darr; or PageDown</td>
+        <td> Moves focus to the next tab.</td>
     </tr>
     <tr>
         <td>Home</td>
@@ -30,12 +26,10 @@ An end user can use the following keys to interact with the widget.
         <td>Selects the tab. Available only if <a href="/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#selectionMode">selectionMode</a> is set to <i>'multiple'</i>.</td>
     </tr>
     <tr>
-      <td>Shift + Mouse Wheel</td>
-      <td>Scrolls the tabs left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#scrollingEnabled">scrollingEnabled</a> option is <b>true</b>.</td>
+        <td>Shift + Mouse Wheel</td>
+        <td>Scrolls the tabs left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#scrollingEnabled">scrollingEnabled</a> option is <b>true</b>.</td>
     </tr>
-    </tbody>
-  </table>
-</div>
+</table>
 
 #include common-code-register-key-handler
 

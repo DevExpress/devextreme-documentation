@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.export.customizeExcelCell
 type: function(options)
-deprecated: Since v20.1, we recommend [ExcelJS-based export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/) which does not use this option.
 ---
 ---
 ##### shortDescription
@@ -47,7 +46,7 @@ Specifies whether the cell text should be line-wrapped.
 
 ---
 
-The following table shows the available fill patterns:
+The following table shows available fill patterns:
 
 <table id="grid">
   <tr>

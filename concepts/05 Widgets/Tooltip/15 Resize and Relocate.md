@@ -52,6 +52,65 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTooltip
+            target="#image"
+            show-event="dxhoverstart"
+            hide-event="dxhoverend"
+            :height="70"
+            :width="200">
+            <template>
+                <p>Tooltip content</p>
+            </template>
+        </DxTooltip>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTooltip } from 'devextreme-vue/tooltip';
+
+    export default {
+        components: {
+            DxTooltip
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tooltip } from 'devextreme-react/tooltip';
+
+    const renderContent = () => {
+        return (
+            <p>Tooltip content</p>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Tooltip
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    height={70}
+                    width={200}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -119,6 +178,62 @@ If you need to position the **Tooltip** against a certain side of the [target el
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxTooltip
+            target="#image"
+            show-event="dxhoverstart"
+            hide-event="dxhoverend"
+            position="top"> <!-- or "bottom" | "left" | "right" -->
+            <template>
+                <p>Tooltip content</p>
+            </template>
+        </DxTooltip>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTooltip } from 'devextreme-vue/tooltip';
+
+    export default {
+        components: {
+            DxTooltip
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tooltip } from 'devextreme-react/tooltip';
+
+    const renderContent = () => {
+        return (
+            <p>Tooltip content</p>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Tooltip
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    position="top"/> {/* or "bottom" | "left" | "right" */}
+            );
+        }
+    }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

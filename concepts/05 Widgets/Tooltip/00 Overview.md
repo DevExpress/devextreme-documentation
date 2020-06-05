@@ -51,6 +51,61 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTooltip
+            target="#image"
+            show-event="dxhoverstart"
+            hide-event="dxhoverend">
+            <template>
+                <p>Tooltip content</p>
+            </template>
+        </DxTooltip>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTooltip } from 'devextreme-vue/tooltip';
+
+    export default {
+        components: {
+            DxTooltip
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tooltip } from 'devextreme-react/tooltip';
+
+    const renderContent = () => {
+        return (
+            <p>Tooltip content</p>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Tooltip
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

@@ -108,7 +108,7 @@ The **show()** method called without arguments shows the **Tooltip** for the [ta
 
 ---
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#visible') property of the **Tooltip** widget to a component property (in Angular), a scope property (in AngularJS) or an observable variable (in Knockout). After that, change them, and the **Tooltip** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#visible') property of the **Tooltip** widget to a component property. After that, change them, and the **Tooltip** will appear or disappear.
 
 ---
 ##### Angular
@@ -145,63 +145,117 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the [visib
         // ...
     })
 
-#####**AngularJS**
+##### Vue
 
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-tooltip="{
-            target: '#image',
-            bindingOptions: {
-                visible: 'isTooltipVisible'
-            }
-        }">
-            <p>Tooltip content</p>
+    <template>
+        <div>
+            <DxTooltip
+                target="#image"
+                :visible.sync="isTooltipVisible">
+                <template>
+                    <p>Tooltip content</p>
+                </template>
+            </DxTooltip>
+            <DxButton
+                text="Show the Tooltip"
+                @click="showTooltip"
+            />
+            <DxButton
+                text="Hide the Tooltip"
+                @click="hideTooltip"
+            />
         </div>
-        <div dx-button="{
-            text: 'Show the Tooltip',
-            onClick: showTooltip
-        }"></div>
-        <div dx-button="{
-            text: 'Hide the Tooltip',
-            onClick: hideTooltip
-        }"></div>
-    </div>
+    </template>
 
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.isTooltipVisible = false;
-            $scope.showTooltip = function () {
-                $scope.isTooltipVisible = true;
-            };
-            $scope.hideTooltip = function () {
-                $scope.isTooltipVisible = false;
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTooltip } from 'devextreme-vue/tooltip';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxTooltip,
+            DxButton
+        },
+        data() {
+            return {
+                isTooltipVisible: false
             }
-        });
-
-#####**Knockout**
-
-    <!--HTML--><div data-bind="dxTooltip: {
-        target: '#image',
-        visible: isTooltipVisible
-    }">
-        <p>Tooltip content</p>
-    </div>
-    <div data-bind="dxButton: {
-        text: 'Show the Tooltip',
-        onClick: function (e) {
-            e.model.isTooltipVisible(true);
+        },
+        methods: {
+            showTooltip() {
+                this.isTooltipVisible = true;
+            },
+            hideTooltip() {
+                this.isTooltipVisible = false;
+            }
         }
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Hide the Tooltip',
-        onClick: function (e) {
-            e.model.isTooltipVisible(false);
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tooltip } from 'devextreme-react/tooltip';
+    import { Button } from 'devextreme-react/button';
+
+    const renderContent = () => {
+        return (
+            <p>Tooltip content</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isTooltipVisible: false
+            };
+
+            this.showTooltip = this.showTooltip.bind(this);
+            this.hideTooltip = this.hideTooltip.bind(this);
         }
-    }"></div>
 
-    <!--JavaScript-->var viewModel = {
-        isTooltipVisible: ko.observable(false)
-    };
+        showTooltip() {
+            this.setState({
+                isTooltipVisible: true
+            });
+        }
 
-    ko.applyBindings(viewModel);
+        hideTooltip() {
+            this.setState({
+                isTooltipVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Tooltip
+                        target="#image"
+                        visible={this.state.isTooltipVisible}
+                        contentRender={renderContent}
+                        onHiding={this.hideTooltip}
+                    />
+                    <Button
+                        text="Show the Tooltip"
+                        onClick={this.showTooltip}
+                    />
+                    <Button
+                        text="Hide the Tooltip"
+                        onClick={this.hideTooltip}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---

@@ -1,7 +1,7 @@
 The **Toast** widget provides four predefined appearances controlled by the [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#type') option. The **type** can be *"info"*, *"warning"*, *"error"* or *"success"*, depending on the mood of the message that the **Toast** displays. You can specify this message using the [message](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#message') option.
 
 ---
-#####jQuery
+##### jQuery
 
     $(function() {
         $("#toastContainer").dxToast({
@@ -10,7 +10,7 @@ The **Toast** widget provides four predefined appearances controlled by the [typ
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-toast
@@ -32,18 +32,63 @@ The **Toast** widget provides four predefined appearances controlled by the [typ
          // ...
      })
 
+##### Vue
+
+    <template>
+        <DxToast
+            message="Completed successfully!"
+            type="success"/> <!-- or "info" | "warning" -->
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast } from 'devextreme-vue/toast';
+
+    export default {
+        components: {
+            DxToast
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast } from 'devextreme-react/toast';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <Toast
+                    message="Completed successfully!"
+                    type="success"/> {/* or "info" | "warning" */}
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you need to define the **Toast** content completely, specify a template for it. You can simply put this template inside the **Toast** container...
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="toastContainer">
         <p style="background-color:green">Toast content</p>
     </div>
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-toast>
@@ -66,6 +111,59 @@ If you need to define the **Toast** content completely, specify a template for i
          // ...
      })
 
+##### Vue
+
+    <template>
+        <DxToast>
+            <template>
+                <p style="background-color:green">Toast content</p>
+            </template>
+        </DxToast>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast } from 'devextreme-vue/toast';
+
+    export default {
+        components: {
+            DxToast
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast } from 'devextreme-react/toast';
+
+    const renderContent = () => {
+        return (
+            <p style={{backgroundColor: 'green'}}>Toast content</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <Toast
+                    contentRender={renderContent}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 ... or you can combine the HTML markup for the template in the [contentTemplate](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#contentTemplate') function. Note that this function will be called only once - when the **Toast** appears for the first time. This approach is more typical of jQuery.
@@ -85,7 +183,7 @@ If you need to define the **Toast** content completely, specify a template for i
 If you need to render different templates depending on a specific condition, define them inside the **Toast** container using the DevExtreme [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. To switch the templates on-the-fly, change the value of the [contentTemplate](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#contentTemplate') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="toastContainer">
         <div data-options="dxTemplate: { name: 'green' }">
@@ -98,7 +196,7 @@ If you need to render different templates depending on a specific condition, def
     <div id="buttonContainer"></div>
 
     <!--JavaScript-->$(function() {
-        var toast = $("#toastContainer").dxToast({
+        const toast = $("#toastContainer").dxToast({
             type: "custom",
             contentTemplate: 'green'
         }).dxToast("instance");
@@ -116,7 +214,7 @@ If you need to render different templates depending on a specific condition, def
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-toast
@@ -154,6 +252,122 @@ If you need to render different templates depending on a specific condition, def
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <div>
+            <DxToast
+                type="custom"
+                :visible.sync="isVisible"
+                :contentTemplate="contentTemplate">
+                <template #green>
+                    <p style="background-color:green">Green template</p>
+                </template>
+                <template #blue>
+                    <p style="background-color:blue">Blue template</p>
+                </template>
+            </DxToast>
+            <DxButton
+                text="Change the Toast Template"
+                @click="onClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast } from 'devextreme-vue/toast';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxToast,
+            DxButton
+        },
+        data() {
+            return {
+                isVisible: false,
+                contentTemplate: "green"
+            };
+        },
+        methods: {
+            onClick() {
+                this.contentTemplate = this.contentTemplate === "green" ? "blue" : "green";
+                this.isVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast } from 'devextreme-react/toast';
+    import { Button } from 'devextreme-react/button';
+
+    const greenTemplate = () => {
+        return (
+            <p style={{backgroundColor: 'green'}}>Green template</p>
+        );
+    }
+
+    const blueTemplate = () => {
+        return (
+            <p style={{backgroundColor: 'blue'}}>Blue template</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isVisible: false,
+                renderContent: greenTemplate
+            };
+
+            this.onClick = this.onClick.bind(this);
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onClick() {
+            this.setState({
+                isVisible: true,
+                renderContent: this.state.renderContent === greenTemplate ? blueTemplate : greenTemplate
+            });
+        }
+        
+        onHiding() {
+            this.setState({
+                isVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Toast
+                        type="custom"
+                        visible={this.state.isVisible}
+                        contentRender={this.state.renderContent}
+                        onHiding={this.onHiding}
+                    />
+                    <Button
+                        text="Change the Toast Template"
+                        onClick={this.onClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

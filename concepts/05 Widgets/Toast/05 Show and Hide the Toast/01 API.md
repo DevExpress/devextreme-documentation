@@ -18,10 +18,10 @@ To show or hide the **Toast** programmatically, call the [show()](/api-reference
         });
     });
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#visible') property of the **Toast** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, change this property or variable, and the **Toast** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#visible') property of the **Toast** widget to a component property. After that, change this property or variable, and the **Toast** will appear or disappear.
 
 ---
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-toast
@@ -49,48 +49,98 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the [visib
          // ...
      })
 
-#####AngularJS
+##### Vue
 
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-toast="{
-            message: 'Connection problem',
-            type: 'error',
-            bindingOptions: {
-                visible: 'isToastVisible'
+    <template>
+        <div>
+            <DxToast
+                :visible.sync="isVisible"
+                message="Connection problem"
+                type="error"
+            />
+            <DxButton
+                text="Show the Toast"
+                @click="onClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast } from 'devextreme-vue/toast';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxToast,
+            DxButton
+        },
+        data() {
+            return {
+                isVisible: false
+            };
+        },
+        methods: {
+            onClick() {
+                this.isVisible = true;
             }
-        }"></div>
-        <div dx-button="{
-            text: 'Show the Toast',
-            onClick: showToast
-        }"></div>
-    </div>
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.isToastVisible = false;
-            $scope.showToast = function () {
-                $scope.isToastVisible = true;
-            }
-        });
-
-#####Knockout
-
-    <!--HTML--><div data-bind="dxToast: {
-        message: 'Connection problem',
-        type: 'error',
-        visible: isToastVisible
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Show the Toast',
-        onClick: function (e) {
-            e.model.isToastVisible(true);
         }
-    }"></div>
+    }
+    </script>
 
-    <!--JavaScript-->var viewModel = {
-        isToastVisible: ko.observable(false)
-    };
+##### React
 
-    ko.applyBindings(viewModel);
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast } from 'devextreme-react/toast';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isVisible: false
+            };
+
+            this.onClick = this.onClick.bind(this);
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onClick() {
+            this.setState({
+                isVisible: true
+            });
+        }
+        
+        onHiding() {
+            this.setState({
+                isVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Toast
+                        visible={this.state.isVisible}
+                        message="Connection problem"
+                        type="error"
+                        onHiding={this.onHiding}
+                    />
+                    <Button
+                        text="Show the Toast"
+                        onClick={this.onClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---

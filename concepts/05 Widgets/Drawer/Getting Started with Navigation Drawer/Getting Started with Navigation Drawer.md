@@ -6,7 +6,7 @@ DevExtreme supplies application templates for <a href="https://devexpress.github
 
 - <a href="https://github.com/DevExpress/devextreme-angular-template/blob/master/README.md" target="_blank">DevExtreme Angular Template</a>
 - <a href="https://github.com/DevExpress/devextreme-vue-template/blob/master/README.md" target="_blank">DevExtreme Vue Template</a>
-- <a href="https://github.com/DevExpress/devextreme-react-template/blob/master/README.md" target="_blank">DevExtreme React Template</a>
+- [DevExtreme React Template](/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/)
 
 If the templates are unsuitable or you use jQuery, follow the instructions in this tutorial. We create a **Drawer** that allows a user to switch between pages. The **Drawer** is opened and closed via a button on a toolbar.
 

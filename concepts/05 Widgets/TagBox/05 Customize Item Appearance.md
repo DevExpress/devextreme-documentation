@@ -1,7 +1,7 @@
 For a minor customization of **TagBox** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -17,8 +17,7 @@ For a minor customization of **TagBox** items, you can define [specific fields](
         });
     });
 
-
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxTagBoxModule } from "devextreme-angular";
@@ -46,12 +45,74 @@ For a minor customization of **TagBox** items, you can define [specific fields](
         placeholder="Select products...">
     </dx-tag-box>
 
+##### Vue
+
+    <template>
+        <DxTagBox
+            :data-source="dataSource"
+            value-expr="text"
+            display-expr="text"
+            placeholder="Select products..."
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                dataSource: [
+                    { text: 'HD Video Player' },
+                    { text: 'SuperHD Video Player', disabled: true },
+                    { text: 'SuperPlasma 50', visible: false }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    const dataSource = [
+        { text: 'HD Video Player' },
+        { text: 'SuperHD Video Player', disabled: true },
+        { text: 'SuperPlasma 50', visible: false }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={dataSource}
+                    valueExpr="text"
+                    displayExpr="text"
+                    placeholder="Select products..."
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
-If you need a more flexible solution, define a custom template for widget items. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **TagBox** items.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-tag-box
@@ -89,79 +150,99 @@ If you need a more flexible solution, define a custom template for widget items.
          // ...
      })
 
-#####AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-tag-box="{
-            dataSource: tagBoxData,
-            valueExpr: 'id',
-            displayExpr: 'name',
-            itemTemplate: 'item'
-        }" dx-item-alias="product">
-            <div data-options="dxTemplate: { name: 'item' }">
-                <img ng-src="{{ product.imgSrc }}" />
-                <div style="display:inline-block">{{ product.name }}</div>
-            </div>
+    <template>
+        <div>
+            <DxTagBox
+                :data-source="dataSource"
+                display-expr="name"
+                value-expr="id"
+                item-template="item">
+                <template #item="{ data }">
+                    <div>
+                        <img :src="data.imgSrc" />
+                        <div style="display:inline-block">{{data.name}}</div>
+                    </div>
+                </template>
+            </DxTagBox>
         </div>
-    </div>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.tagBoxData = [{
-                id: 1,
-                name: "HD Video Player",
-                imgSrc: "images/products/1-small.png"
-            }, {
-                id: 2,
-                name: "UltraHD Player",
-                imgSrc: "images/products/2-small.png"
-            },
-            // ...
-            ];
-        });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
+    import { DxTagBox } from 'devextreme-vue/tag-box';
 
-#####**Knockout**
-
-    <!--HTML-->
-    <div data-bind="dxTagBox: {
-        dataSource: tagBoxData,
-        valueExpr: 'id',
-        displayExpr: 'name',
-        itemTemplate: 'item'
-    }">
-        <div data-options="dxTemplate: { name: 'item' }">
-            <img data-bind="attr: { src: imgSrc }" />
-            <div style="display:inline-block" data-bind="text: name"></div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        tagBoxData: [{
-            id: 1,
-            name: "HD Video Player",
-            imgSrc: "images/products/1-small.png"
-        }, {
-            id: 2,
-            name: "UltraHD Player",
-            imgSrc: "images/products/2-small.png"
+    export default {
+        components: {
+            DxTagBox
         },
-        // ...
-        ]
+        data() {
+            return {
+                dataSource: [{
+                    id: 1,
+                    name: "HD Video Player",
+                    imgSrc: "images/products/1-small.png"
+                }, {
+                    id: 2,
+                    name: "UltraHD Player",
+                    imgSrc: "images/products/2-small.png"
+                }]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    const dataSource = [{
+        id: 1,
+        name: "HD Video Player",
+        imgSrc: "images/products/1-small.png"
+    }, {
+        id: 2,
+        name: "UltraHD Player",
+        imgSrc: "images/products/2-small.png"
+    }];
+
+    const renderItem = (itemData) => {
+        return (
+            <div>
+                <img src={itemData.imgSrc} />
+                <div style={{display: "inline-block"}}>{itemData.name}</div>
+            </div>      
+        );
     };
 
-    ko.applyBindings(viewModel);
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={dataSource}
+                    displayExpr="name"
+                    valueExpr="id"
+                    itemRender={renderItem}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
-    var tagBoxData = [{
+    const tagBoxData = [{
         id: 1,
         name: "HD Video Player",
         imgSrc: "images/products/1-small.png"
@@ -196,7 +277,7 @@ You can also customize an individual item in the drop-down list. For this purpos
     </script>
 
     <!--JavaScript-->
-    var tagBoxData = [
+    const tagBoxData = [
         { text: "SuperHD Player"},
         { text: "HD Video Player", template: $("#individualTemplate") },
         // ...
@@ -205,7 +286,7 @@ You can also customize an individual item in the drop-down list. For this purpos
 Using similar techniques, you can also customize tags of the selected items. The template for them should be assigned to the [tagTemplate](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/tagTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#tagTemplate') option. 
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -219,7 +300,7 @@ Using similar techniques, you can also customize tags of the selected items. The
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-tag-box
@@ -249,35 +330,76 @@ Using similar techniques, you can also customize tags of the selected items. The
          // ...
      })
 
-#####AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-tag-box="{
-            dataSource: tagBoxData,
-            valueExpr: 'id',
-            displayExpr: 'name',
-            tagTemplate: 'tagTemplate'
-        }" dx-item-alias="product">
-            <div data-options="dxTemplate: { name: 'tagTemplate' }">
-                <p><b>{{ product.name }}</b> ({{ product.id }})</p>
-            </div>
+    <template>
+        <div>
+            <DxTagBox
+                :data-source="dataSource"
+                value-expr="id"
+                display-expr="name"
+                tag-template="tag">
+                <template #tag="{ data }">
+                    <p><b>{{data.name}}</b> ({{data.id}})</p>
+                </template>
+            </DxTagBox>
         </div>
-    </div>
+    </template>
 
-#####Knockout
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--HTML-->
-    <div data-bind="dxTagBox: {
-        dataSource: tagBoxData,
-        valueExpr: 'id',
-        displayExpr: 'name',
-        tagTemplate: 'tagTemplate'
-    }">
-        <div data-options="dxTemplate: { name: 'tagTemplate' }">
-            <p><b data-bind="text: name"></b> (<span data-bind="text: id"></span>)</p>
-        </div>
-    </div>
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                dataSource: [
+                    { id: 1, name: "HD Video Player", imgSrc: "images/products/1-small.png" },
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    const dataSource = [
+        { id: 1, name: "HD Video Player", imgSrc: "images/products/1-small.png" },
+        // ...
+    ];
+
+    const renderTag = (tagData) => {
+        return (
+            <p><b>{tagData.name}</b> ({tagData.id})</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={dataSource}
+                    valueExpr="id"
+                    displayExpr="name"
+                    tagRender={renderTag}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

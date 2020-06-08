@@ -47,6 +47,65 @@ When the **Popover** is shown, the area beneath it can be shaded. To enable this
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopover 
+            target="#image"
+            show-event="dxhoverstart"
+            hide-event="dxhoverend"
+            :shading="true"
+            shadingColor="rgba(0, 0, 0, 0.2)">
+            <template>
+                <p>Popover content</p>
+            </template>
+        </DxPopover>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    shading={true}
+                    shadingColor="rgba(0, 0, 0, 0.2)"
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

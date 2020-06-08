@@ -81,6 +81,112 @@ If you need to render different templates depending on a specific condition, def
         width: 200px
     }
 
+##### Vue
+
+    <template>
+        <div>
+            <DxPopover
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :contentTemplate="currentTemplate">
+                <template #template1>
+                    <p>First template</p>
+                </template>
+                <template #template2>
+                    <p>Second template</p>
+                </template>
+            </DxTooltip>
+            <DxButton
+                text="Change the Template"
+                @click="changeTemplate"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxPopover,
+            DxButton
+        },
+        data() {
+            return {
+                currentTemplate: "template1"
+            };
+        },
+        methods: {
+            changeTemplate () {
+                this.currentTemplate = (this.currentTemplate === 'template1' ? 'template2' : 'template1')
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { Popover } from 'devextreme-react/popover';
+    import { Button } from 'devextreme-react/button';
+
+    const firstTemplate = () => {
+        return (
+            <p>First template</p>
+        );
+    }
+
+    const secondTemplate = () => {
+        return (
+            <p>Second template</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                renderContent: firstTemplate
+            };
+            
+            this.changeTemplate = this.changeTemplate.bind(this);
+        }
+
+        changeTemplate() {
+            this.setState({
+                renderContent: this.state.renderContent === firstTemplate ? secondTemplate : firstTemplate
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={this.state.renderContent}
+                    />
+                    <Button
+                        text="Change the Template"
+                        onClick={this.changeTemplate}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

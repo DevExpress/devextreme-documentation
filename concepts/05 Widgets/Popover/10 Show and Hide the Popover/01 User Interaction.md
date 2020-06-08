@@ -43,6 +43,61 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopover 
+            target="#image"
+            show-event="dxhoverstart"
+            hide-event="dxhoverend">
+            <template>
+                <p>Popover content</p>
+            </template>
+        </DxPopover>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -108,6 +163,63 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxPopover 
+            target="#image"
+            show-event="dxhoverstart"
+            hide-event="dxhoverend"
+            :close-on-outside-click="false">
+            <template>
+                <p>Popover content</p>
+            </template>
+        </DxPopover>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    closeOnOutsideClick={false}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

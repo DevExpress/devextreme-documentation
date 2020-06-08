@@ -105,7 +105,7 @@ The **show()** method called without arguments shows the **Popover** for the [ta
 
 ---
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#visible') property of the **Popover** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, change them, and the **Popover** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#visible') property of the **Popover** widget to a component property. After that, change them, and the **Popover** will appear or disappear.
 
 ---
 ##### Angular
@@ -142,65 +142,117 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the [visib
         // ...
     })
 
-#####**AngularJS**
-
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-popover="{
-            target: '#image',
-            bindingOptions: {
-                visible: 'isPopoverVisible'
-            }
-        }">
-            <p>Popover Content</p>
+##### Vue
+    <template>
+        <div>
+            <DxPopover
+                target="#image"
+                :visible.sync="isPopoverVisible">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+            <DxButton
+                text="Show the Popover"
+                @click="showPopover"
+            />
+            <DxButton
+                text="Hide the Popover"
+                @click="hidePopover"
+            />
         </div>
-        <div dx-button="{
-            text: 'Show the Popover',
-            onClick: showPopover
-        }"></div>
-        <div dx-button="{
-            text: 'Hide the Popover',
-            onClick: hidePopover
-        }"></div>
-    </div>
+    </template>
 
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.isPopoverVisible = false;
-            $scope.showPopover = function () {
-                $scope.isPopoverVisible = true;
-            };
-            $scope.hidePopover = function () {
-                $scope.isPopoverVisible = false;
-            };
-        });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-#####**Knockout**
+    import { DxPopover } from 'devextreme-vue/popover';
+    import { DxButton } from 'devextreme-vue/button';
 
-    <!--HTML-->
-    <div data-bind="dxPopover: {
-        target: '#image',
-        visible: isPopoverVisible
-    }">
-        <p>Popover Content</p>
-    </div>
-    <div data-bind="dxButton: {
-        text: 'Show the Popover',
-        onClick: function (e) {
-            e.model.isPopoverVisible(true);
+    export default {
+        components: {
+            DxPopover,
+            DxButton
+        },
+        data() {
+            return {
+                isPopoverVisible: false
+            }
+        },
+        methods: {
+            showPopover() {
+                this.isPopoverVisible = true;
+            },
+            hidePopover() {
+                this.isPopoverVisible = false;
+            }
         }
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Hide the Popover',
-        onClick: function (e) {
-            e.model.isPopoverVisible(false);
+    }
+
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+    import { Button } from 'devextreme-react/button';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopoverVisible: false
+            };
+
+            this.showPopover = this.showPopover.bind(this);
+            this.hidePopover = this.hidePopover.bind(this);
         }
-    }"></div>
 
-    <!--JavaScript-->var viewModel = {
-        isPopoverVisible: ko.observable(false)
-    };
+        showPopover() {
+            this.setState({
+                isPopoverVisible: true
+            });
+        }
 
-    ko.applyBindings(viewModel);
+        hidePopover() {
+            this.setState({
+                isPopoverVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Popover
+                        target="#image"
+                        visible={this.state.isPopoverVisible}
+                        contentRender={renderContent}
+                        onHiding={this.hidePopover}
+                    />
+                    <Button
+                        text="Show the Popover"
+                        onClick={this.showPopover}
+                    />
+                    <Button
+                        text="Hide the Popover"
+                        onClick={this.hidePopover}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---

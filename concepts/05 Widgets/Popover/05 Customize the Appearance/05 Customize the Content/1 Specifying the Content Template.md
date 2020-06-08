@@ -53,6 +53,68 @@ The template implementation depends on the used framework or library. Examples o
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopover 
+            target="#image"
+            show-event="dxhoverstart">
+            <template>
+                <p>Static content</p>
+                <dx-switch>
+                    <!-- The "Switch" widget is configured here -->
+                </dx-switch>
+            </template>
+        </DxPopover>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+    import { DxSwitch } from 'devextreme-vue/switch';
+
+    export default {
+        components: {
+            DxPopover,
+            DxSwitch
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+    import { Switch } from 'devextreme-react/switch';
+
+    const renderContent = () => {
+        return (
+            <p>Static content</p>
+            <Switch>
+                {/* The "Switch" widget is configured here */}
+            </Switch>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    contentRender={renderContent}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

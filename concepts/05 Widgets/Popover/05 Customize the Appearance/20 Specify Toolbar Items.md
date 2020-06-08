@@ -37,7 +37,8 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
-        hideEvent="dxhoverend">
+        hideEvent="dxhoverend"
+        [width]="200">
         <div *dxTemplate="let data of 'content'">
             <p>Popover content</p>
         </div>
@@ -72,6 +73,101 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
         // ...
     })
     
+##### Vue
+
+    <template>
+        <DxPopover
+            :width="200"
+            target="#image"
+            show-event="dxhoverstart"
+            hide-event="dxhoverend">
+            <template>
+                <p>Popover content</p>
+            </template>
+            <DxToolbarItem
+                text="Title"
+                location="before"
+            />
+            <DxToolbarItem
+                :options="buttonOptions"
+                widget="dxButton"
+                location="after"
+            />
+        </DxPopover>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxPopover,
+        DxToolbarItem
+    } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover,
+            DxToolbarItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    text: 'Refresh',
+                    onClick: function() {
+                        // ...
+                    }
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover, ToolbarItem } from 'devextreme-react/popover';
+
+    const buttonOptions = {
+        text: 'Refresh',
+        onClick: function() {
+            // ...
+        }
+    };
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Popover
+                    width={200}
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}>
+                    <ToolbarItem
+                        text="Title"
+                        location="before"
+                    />
+                    <ToolbarItem
+                        options={buttonOptions}
+                        widget="dxButton"
+                        location="after"
+                    />
+                </Popover>
+            );
+        }
+    }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

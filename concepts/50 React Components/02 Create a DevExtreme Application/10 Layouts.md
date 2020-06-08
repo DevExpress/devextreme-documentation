@@ -1,4 +1,4 @@
-The application includes two layouts that differ in the toolbar location:
+The application includes two layouts. The only difference between them is where the toolbar is located.
 
 - **Outer Toolbar** (default)       
 ![DevExtreme React Template - Outer toolbar](/images/dx-application-templates/react-app-template-outer-toolbar.png)

@@ -7,7 +7,7 @@ The DevExtreme React Template uses a main theme for the view content and an addi
         // ...
     }
 
-You can find all theme names in the [Predefined Themes](/Documentation/Guide/Themes/Predefined_Themes/) help topic.
+You can find all theme names in the [Predefined Themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) help topic.
 
 Run the following command to rebuild themes:
 

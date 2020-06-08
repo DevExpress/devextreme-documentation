@@ -45,6 +45,85 @@ To change the size of the **Popup**, specify the [height](/api-reference/10%20UI
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            :height="300"
+            :width="500"
+            title="Popup Title">
+            <template>
+                <p>Popup content</p>
+            </template>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    const renderContent = () => {
+        return (
+            <p>Popup content</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    height={300}
+                    width={500}
+                    title="Popup Title"
+                    contentRender={renderContent}
+                    onHiding={this.onHiding}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 To allow an end user to resize the **Popup**, assign **true** to the [resizeEnabled](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/resizeEnabled.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#resizeEnabled') option.
@@ -83,6 +162,72 @@ To allow an end user to resize the **Popup**, assign **true** to the [resizeEnab
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            :resize-enabled="true"
+            title="Popup Title"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    resizeEnabled={true}
+                    title="Popup Title"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -130,6 +275,81 @@ If you need to position the **Popup** against a specific element on your page, s
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            title="Popup Title">
+            <DxPosition
+                my="left"
+                at="left"
+                of="#targetElement">
+            />
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup, DxPosition } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup,
+            DxPosition
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup, Position } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    title="Popup Title">
+                    <Position
+                        my="left"
+                        at="left"
+                        of="#targetElement"
+                    />
+                </Popup>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 This configuration of the **position** option reads as follows: "place **my** _left_ side **at** the _left_ side **of** the *"#targetElement"*.
@@ -169,6 +389,72 @@ By default, an end user is allowed to change the **Popup** position only on desk
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            :drag-enabled="true"
+            title="Popup Title"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    dragEnabled={true}
+                    title="Popup Title"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -32,6 +32,70 @@ By default, the **Popup** allocates a part of its area to the title, regardless 
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            :show-title="false"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    showTitle={false}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you need to define the title completely, specify a template for it as shown in the following code:
@@ -81,6 +145,90 @@ If you need to define the title completely, specify a template for it as shown i
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            titleTemplate="title">
+            <template>
+                <p>Popup content</p>
+            </template>
+            <template #title>
+                <p>Title template</p>
+            </template>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    const renderContent = () => {
+        return (
+            <p>Popup content</p>
+        );
+    }
+
+    const renderTitle = () => {
+        return (
+            <p>Title template</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    contentRender={renderContent}
+                    titleRender={renderTitle}
+                    onHiding={this.onHiding}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

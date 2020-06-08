@@ -71,6 +71,122 @@ If you need to render different templates depending on a specific condition, def
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <DxPopup
+                title="Popup Title"
+                :visible.sync="isPopupVisible"
+                :contentTemplate="currentTemplate">
+                <template #template1>
+                    <p>First template</p>
+                </template>
+                <template #template2>
+                    <p>Second template</p>
+                </template>
+            </DxPopup>
+            <DxButton
+                text="Change the Template"
+                @click="changeTemplate"
+            />
+        </div>
+    </template>
+
+    <script>
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxPopup,
+            DxButton
+        },
+        data() {
+            return {
+                isPopupVisible: true,
+                currentTemplate: "template1"
+            };
+        },
+        methods: {
+            changeTemplate () {
+                this.currentTemplate = (this.currentTemplate === 'template1' ? 'template2' : 'template1')
+            }
+        }
+    }
+
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { Popup } from 'devextreme-react/popup';
+    import { Button } from 'devextreme-react/button';
+
+    const firstTemplate = () => {
+        return (
+            <p>First template</p>
+        );
+    }
+
+    const secondTemplate = () => {
+        return (
+            <p>Second template</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true,
+                renderContent: firstTemplate
+            };
+            
+            this.changeTemplate = this.changeTemplate.bind(this);
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        changeTemplate() {
+            this.setState({
+                renderContent: this.state.renderContent === firstTemplate ? secondTemplate : firstTemplate
+            });
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Popup
+                        title="Popup Title"
+                        visible={this.state.isPopupVisible}
+                        onHiding={this.onHiding}
+                        contentRender={this.state.renderContent}
+                    />
+                    <Button
+                        text="Change the Template"
+                        onClick={this.changeTemplate}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

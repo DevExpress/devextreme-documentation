@@ -193,7 +193,7 @@ You can customize the text field and the drop-down button using the [fieldTempla
                 <DxList
                     :data-source="dataSource"
                     selection-mode="single"
-                    @selection-changed="changeDropDownBoxValue($event)">
+                    @selection-changed="changeDropDownBoxValue">
                 </DxList>
             </DxDropDownBox>
         </div>
@@ -357,7 +357,8 @@ You can customize the text field and the drop-down button using the [fieldTempla
     export default App;
 
 
-    <!--CSS-->.custom-item {
+    <!--CSS-->
+    .custom-item {
         position: relative;
         min-height: 30px;
     }

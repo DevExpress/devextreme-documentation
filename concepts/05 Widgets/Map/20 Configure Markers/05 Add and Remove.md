@@ -41,6 +41,64 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="5"
+            :markers="mapMarkers"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                mapMarkers: [
+                    { location: "40.749825, -73.090443" },
+                    { location: "42.743244, -71.594375" },
+                    { location: "37.058435, -74.903842" }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const mapMarkers = [
+        { location: "40.749825, -73.090443" },
+        { location: "42.743244, -71.594375" },
+        { location: "37.058435, -74.903842" }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    defaultZoom={5}
+                    markers={mapMarkers}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -50,7 +108,7 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
 To add or remove a marker at runtime, call the [addMarker(markerOptions)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/addMarker(markerOptions).md '/Documentation/ApiReference/UI_Widgets/dxMap/Methods/#addMarkermarkerOptions') or [removeMarker(marker)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/removeMarker(marker).md '/Documentation/ApiReference/UI_Widgets/dxMap/Methods/#removeMarkermarker') method.
 
     <!--JavaScript-->
-    var markersCollection = [
+    const markersCollection = [
         { location: "40.749825, -73.090443" },
         { location: "42.743244, -71.594375", tooltip: { isShown: true } }
     ];
@@ -77,7 +135,7 @@ In the following code, a marker is added each time a user clicks someplace on th
 
     <!--JavaScript-->
     $(function() {
-        var map = $("#mapContainer").dxMap({
+        const map = $("#mapContainer").dxMap({
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
             onClick: function (e) {
@@ -91,8 +149,8 @@ In the following code, a marker is added each time a user clicks someplace on th
         $("#removeMarker").dxButton({
             text: "Remove the Last Marker",
             onClick: function () {
-                var markers = map.option("markers");
-                var markerCount = markers.length;
+                const markers = map.option("markers");
+                const markerCount = markers.length;
                 if (markerCount < 1)
                     return;
                 // Removes the last marker
@@ -101,7 +159,7 @@ In the following code, a marker is added each time a user clicks someplace on th
         });
     });
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the **markers** option of the **Map** widget to a component property (in Angular), a scope property (in AngularJS) or an observable array (in Knockout). 
+With Angular, Vue, or React, use a different technique. Bind the **markers** option of the **Map** widget to a component property. 
 
 ---
 ##### Angular
@@ -141,66 +199,103 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the **mark
         // ...
     })
 
-#####**AngularJS**
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-map="{
-            zoom: 10,
-            onClick: addMarker,
-            bindingOptions: {
-                markers: 'mapMarkers'
-            }
-        }"></div>
-        <div dx-button="{
-            text: 'Remove the Last Marker',
-            onClick: removeMarker
-        }"></div>
-    </div>
+    <template>
+        <div>
+            <DxMap
+                :zoom="10"
+                :markers="mapMarkers"
+                @click="addMarker"
+            />
+            <DxButton
+                text="Remove the Last Marker"
+                @click="removeMarker"
+            />
+        </div>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.mapMarkers = [
-                { location: "40.749825, -73.090443" },
-                { location: "42.743244, -71.594375" }
-            ];
-            $scope.addMarker = function (e) {
-                $scope.mapMarkers.push({ location: e.location });
-            }
-            $scope.removeMarker = function () {
-                $scope.mapMarkers.pop();
-            };
-        });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-#####**Knockout**
+    import { DxMap } from 'devextreme-vue/map';
+    import { DxButton } from 'devextreme-vue/button';
 
-    <!--HTML-->
-    <div data-bind="dxMap: { 
-        zoom: 10,
-        onClick: addMarker,
-        markers: mapMarkers 
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Remove the Last Marker',
-        onClick: removeMarker
-    }"></div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        mapMarkers: ko.observableArray([
-            { location: "40.749825, -73.090443" },
-            { location: "42.743244, -71.594375" }
-        ]),
-        addMarker: function (e) {
-            viewModel.mapMarkers.push({ location: e.location });
+    export default {
+        components: {
+            DxMap,
+            DxButton
         },
-        removeMarker: function () {
-            viewModel.mapMarkers.pop();
+        data() {
+            return {
+                mapMarkers: [
+                    { location: "40.749825, -73.090443" },
+                    { location: "42.743244, -71.594375" }
+                ]
+            };
+        },
+        methods: {
+            addMarker(e) {
+                this.mapMarkers.push({ location: e.location });
+            },
+            removeMarker() {
+                this.mapMarkers.pop();
+            }
         }
-    };
+    }
+    </script>
 
-    ko.applyBindings(viewModel);
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                mapMarkers: [
+                    { location: "40.749825, -73.090443" },
+                    { location: "42.743244, -71.594375" }
+                ]
+            };
+
+            this.addMarker = this.addMarker.bind(this);
+            this.removeMarker = this.removeMarker.bind(this);
+        }
+
+        addMarker() {
+            this.state.mapMarkers.push({ location: e.location });
+        }
+
+        removeMarker() {
+            this.state.mapMarkers.pop();
+        }
+
+        render() {
+            return (
+                <div>
+                    <Map
+                        defaultZoom={10}
+                        markers={this.state.mapMarkers}
+                        onClick={this.addMarker}
+                    />
+                    <Button
+                        text="Remove the Last Marker"
+                        onClick={this.removeMarker}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

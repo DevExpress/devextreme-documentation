@@ -47,6 +47,70 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="5"
+            :routes="mapRoutes"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                mapRoutes: [{
+                    locations: [
+                        { lat: 40.782500, lng: -73.966111 },
+                        "40.755833, -73.986389",
+                        [ 40.753889, -73.981389 ],
+                        "Brooklyn Bridge,New York,NY"
+                    ]
+                }]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const mapRoutes = [{
+        locations: [
+            { lat: 40.782500, lng: -73.966111 },
+            "40.755833, -73.986389",
+            [ 40.753889, -73.981389 ],
+            "Brooklyn Bridge,New York,NY"
+        ]
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    defaultZoom={5}
+                    routes={mapRoutes}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -56,7 +120,7 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
 To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/addRoute(routeOptions).md '/Documentation/ApiReference/UI_Widgets/dxMap/Methods/#addRouterouteOptions') or [removeRoute(route)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/removeRoute(route).md '/Documentation/ApiReference/UI_Widgets/dxMap/Methods/#removeRouteroute') method.
 
     <!--JavaScript-->
-    var routesCollection = [{
+    const routesCollection = [{
         locations: [ 
             "40.753889, -73.981389",
             "Brooklyn Bridge,New York,NY"
@@ -87,7 +151,7 @@ To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-refe
     // Removes the routes with indexes 0 and 2 in the "routes" array
     map.removeRoute([0, 2]);
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the **routes** option of the **Map** widget to a component property (in Angular), a scope property (in AngularJS), or an observable array (in Knockout). 
+With Angular, Vue, or React, use a different technique. Bind the **routes** option of the **Map** widget to a component property. 
 
 ---
 ##### Angular
@@ -95,7 +159,7 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the **rout
     <!--HTML-->
     <dx-map
         [zoom]="10"
-        [markers]="mapRoutes">
+        [routes]="mapRoutes">
     </dx-map>
     <dx-button
         text="Add the Route"
@@ -137,88 +201,127 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the **rout
         // ...
     })
 
-#####**AngularJS**
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-map="{
-            zoom: 10,
-            bindingOptions: {
-                routes: 'mapRoutes'
-            }
-        }"></div>
-        <div dx-button="{
-            text: 'Add the Route',
-            onClick: addRoute
-        }"></div>
-        <div dx-button="{
-            text: 'Remove the Route',
-            onClick: removeRoute
-        }"></div>
-    </div>
+    <template>
+        <div>
+            <DxMap
+                :zoom="10"
+                :routes="mapRoutes"
+            />
+            <DxButton
+                text="Add the Route"
+                @click="addRoute"
+            />
+            <DxButton
+                text="Remove the Route"
+                @click="removeRoute"
+            />
+        </div>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.mapRoutes = [{
-                locations: [
-                    "40.782500, -73.966111",
-                    "40.755833, -73.986389"
-                ]
-            }];
-            $scope.addRoute = function () {
-                $scope.mapRoutes.push({
-                    locations: [ 
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxMap,
+            DxButton
+        },
+        data() {
+            return {
+                mapRoutes: [{
+                    locations: [
+                        { lat: 40.782500, lng: -73.966111 },
+                        "40.755833, -73.986389",
+                        [ 40.753889, -73.981389 ],
+                        "Brooklyn Bridge,New York,NY"
+                    ]
+                }]
+            };
+        },
+        methods: {
+            addRoute() {
+                this.mapRoutes.push({
+                    locations: [
                         "40.753889, -73.981389",
                         "Brooklyn Bridge,New York,NY"
                     ]
                 });
+            },
+            removeRoute() {
+                this.mapRoutes.pop();
             }
-            $scope.removeRoute = function () {
-                $scope.mapRoutes.pop();
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                mapRoutes: [{
+                    locations: [
+                        { lat: 40.782500, lng: -73.966111 },
+                        "40.755833, -73.986389",
+                        [ 40.753889, -73.981389 ],
+                        "Brooklyn Bridge,New York,NY"
+                    ]
+                }]
             };
-        });
 
-#####**Knockout**
+            this.addRoute = this.addRoute.bind(this);
+            this.removeRoute = this.removeRoute.bind(this);
+        }
 
-    <!--HTML-->
-    <div data-bind="dxMap: { 
-        zoom: 10,
-        routes: mapRoutes 
-    }"></div>
-
-    <div data-bind="dxButton: {
-        text: 'Add the Route',
-        onClick: addRoute
-    }"></div>
-
-    <div data-bind="dxButton: {
-        text: 'Remove the Route',
-        onClick: removeRoute
-    }"></div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        mapRoutes: ko.observableArray([{
-            locations: [
-                "40.782500, -73.966111",
-                "40.755833, -73.986389"
-            ]
-        }]),
-        addRoute: function () {
-            viewModel.mapRoutes.push({
-                locations: [ 
+        addRoute() {
+            this.state.mapRoutes.push({
+                locations: [
                     "40.753889, -73.981389",
                     "Brooklyn Bridge,New York,NY"
                 ]
             });
-        },
-        removeRoute: function () {
-            viewModel.mapRoutes.pop();
         }
-    };
 
-    ko.applyBindings(viewModel);
+        removeRoute() {
+            this.state.mapRoutes.pop();
+        }
+
+        render() {
+            return (
+                <div>
+                    <Map
+                        defaultZoom={10}
+                        routes={this.state.mapRoutes}
+                    />
+                    <Button
+                        text="Add the Route"
+                        onClick={this.addRoute}
+                    />
+                    <Button
+                        text="Remove the Route"
+                        onClick={this.removeRoute}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

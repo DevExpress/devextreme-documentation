@@ -62,10 +62,6 @@ The **Toast** widget provides four predefined appearances controlled by the [typ
     import { Toast } from 'devextreme-react/toast';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Toast
@@ -149,10 +145,6 @@ If you need to define the **Toast** content completely, specify a template for i
     }
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Toast

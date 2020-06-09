@@ -57,10 +57,6 @@ The **Toast** widget does not need to be created on the page before it can be sh
     import notify from "devextreme/ui/notify";
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         showToast() {
             notify("Connection problem", "error", 3000);
         }
@@ -144,10 +140,6 @@ If you need to specify other **Toast** options, call the same method, but this t
     import notify from "devextreme/ui/notify";
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         showToast() {
             notify({
                 message: "Connection problem",

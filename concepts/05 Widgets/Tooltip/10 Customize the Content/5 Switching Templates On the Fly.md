@@ -131,7 +131,7 @@ If you need to render different templates depending on a specific condition, def
     }
     </script>
 
-    <!--CSS-->#buttonContainer {
+    #buttonContainer {
         display: block;
         width: 200px
     }
@@ -196,7 +196,7 @@ If you need to render different templates depending on a specific condition, def
 
     export default App;
 
-    <!--CSS-->#buttonContainer {
+    #buttonContainer {
         display: block;
         width: 200px
     }

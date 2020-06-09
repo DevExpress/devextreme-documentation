@@ -67,7 +67,7 @@ The **Map** widget allows you to provide a single icon for all markers. For this
         data() {
             return {
                 markerIconUrl: "https://js.devexpress.com/Demos/RealtorApp/images/map-marker.png",
-                mapMarkers = [
+                mapMarkers: [
                     { location: "40.749825, -73.090443" },
                     { location: "42.743244, -71.594375", iconSrc: "http://www.iconsdb.com/icons/preview/gray/map-marker-2-xxl.png" },
                     { location: "37.058435, -74.903842" }

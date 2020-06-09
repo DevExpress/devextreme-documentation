@@ -94,6 +94,11 @@ If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/Tag
 
 ##### Angular
 
+    <!--HTML-->
+    <dx-tag-box ...
+        [dataSource]="tagBoxData">
+    </dx-tag-box>
+
     <!--TypeScript-->
     import { ..., Inject } from "@angular/core";
     import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
@@ -153,11 +158,6 @@ If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/Tag
          ],
          // ...
      })
-
-    <!--HTML-->
-    <dx-tag-box
-        [dataSource]="tagBoxData">
-    </dx-tag-box>
 
 ##### Vue
 

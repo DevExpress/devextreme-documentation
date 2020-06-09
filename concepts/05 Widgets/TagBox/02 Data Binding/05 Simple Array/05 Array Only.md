@@ -309,7 +309,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
 
         render() {
             return (
-                <TagBox
+                <TagBox ...
                     dataSource={this.getSortedProducts()}
                     valueExpr="price"
                     displayExpr="name"

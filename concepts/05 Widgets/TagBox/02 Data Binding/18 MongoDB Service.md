@@ -50,7 +50,9 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
 ##### Vue
 
     <template>
-        <DxTagBox :data-source="dataSource"/>
+        <DxTagBox ...
+            :data-source="dataSource"
+        />
     </template>
 
     <script>
@@ -98,7 +100,9 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     class App extends React.Component {
         render() {
             return (
-                <TagBox dataSource={dataSource}/>
+                <TagBox ...
+                    dataSource={dataSource}
+                />
             );
         }
     }

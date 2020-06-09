@@ -42,7 +42,9 @@ To process new **TagBox** values, you need to handle the value change event. If 
 ##### Vue
 
     <template>
-        <DxTagBox @value-changed="onValueChanged"/>
+        <DxTagBox ...
+            @value-changed="onValueChanged"
+        />
     </template>
 
     <script>
@@ -88,7 +90,9 @@ To process new **TagBox** values, you need to handle the value change event. If 
 
         render() {
             return (
-                <TagBox onValueChanged={this.onValueChanged}/>
+                <TagBox ...
+                    onValueChanged={this.onValueChanged}
+                />
             );
         }
     }

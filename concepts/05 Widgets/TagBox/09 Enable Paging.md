@@ -47,7 +47,9 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
 ##### Vue
 
     <template>
-        <DxTagBox :data-source="dataSource"/>
+        <DxTagBox ...
+            :data-source="dataSource"
+        />
     </template>
 
     <script>
@@ -91,7 +93,9 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
     class App extends React.Component {
         render() {
             return (
-                <TagBox dataSource={dataSource}/>
+                <TagBox ...
+                    dataSource={dataSource}
+                />
             );
         }
     }

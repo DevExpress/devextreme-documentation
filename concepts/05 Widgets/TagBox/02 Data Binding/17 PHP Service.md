@@ -50,7 +50,9 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
 ##### Vue
 
     <template>
-        <DxTagBox :data-source="dataSource"/>
+        <DxTagBox ...
+            :data-source="dataSource"
+        />
     </template>
 
     <script>
@@ -98,7 +100,9 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
     class App extends React.Component {
         render() {
             return (
-                <TagBox dataSource={dataSource}/>
+                <TagBox ...
+                    dataSource={dataSource}
+                />
             );
         }
     }

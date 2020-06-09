@@ -153,8 +153,7 @@ The **Popup** has two toolbars: top and bottom. Items on these toolbars can be p
                 <Popup
                     visible={this.state.isPopupVisible}
                     title="Popup Title"
-                    onHiding={this.onHiding}
-                >
+                    onHiding={this.onHiding}>
                     <ToolbarItem
                         text="Title"
                         location="before"

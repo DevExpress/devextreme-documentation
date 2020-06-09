@@ -103,10 +103,6 @@ To execute certain commands before or after the **Tooltip** was shown/hidden, ha
     import { Tooltip } from 'devextreme-react/tooltip';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         onShowing(e) {
             // Handler of the 'showing' event
         }

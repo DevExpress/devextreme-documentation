@@ -19,7 +19,7 @@ Create a new <a href="https://devexpress.github.io/devextreme-vue-template" targ
 
 ##### React
 
-Create a new <a href="https://devexpress.github.io/devextreme-react-template" target="_blank">DevExtreme React application</a> that uses the [DevExtreme layout template](/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/):
+Create a new <a href="https://devexpress.github.io/devextreme-react-template" target="_blank">DevExtreme React application</a> that uses the <a href="https://github.com/DevExpress/devextreme-react-template#devextreme-react-template" target="_blank">DevExtreme layout template</a>:
 
     devextreme new react-app app-name [--layout][--empty]
     // ===== or without installing the DevExtreme CLI =====

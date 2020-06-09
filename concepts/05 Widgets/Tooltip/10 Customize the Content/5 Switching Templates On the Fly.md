@@ -131,13 +131,16 @@ If you need to render different templates depending on a specific condition, def
     }
     </script>
 
-    #buttonContainer {
-        display: block;
-        width: 200px
-    }
+    <style>
+        #buttonContainer {
+            display: block;
+            width: 200px
+        }
+    </style>
 
 ##### React
 
+    <!--tab: App.js-->
     import React from 'react';
 
     import 'devextreme/dist/css/dx.common.css';
@@ -196,7 +199,7 @@ If you need to render different templates depending on a specific condition, def
 
     export default App;
 
-    #buttonContainer {
+    <!--CSS-->#buttonContainer {
         display: block;
         width: 200px
     }

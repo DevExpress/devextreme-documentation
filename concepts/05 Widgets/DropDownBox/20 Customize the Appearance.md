@@ -242,7 +242,6 @@ You can customize the text field and the drop-down button using the [fieldTempla
     }
     </script>
 
-    <!--CSS-->
     .custom-item {
         position: relative;
         min-height: 30px;
@@ -356,7 +355,6 @@ You can customize the text field and the drop-down button using the [fieldTempla
 
     export default App;
 
-    <!--CSS-->
     .custom-item {
         position: relative;
         min-height: 30px;

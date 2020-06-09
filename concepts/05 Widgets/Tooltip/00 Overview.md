@@ -54,14 +54,17 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
 ##### Vue
 
     <template>
-        <DxTooltip
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend">
-            <template>
-                <p>Tooltip content</p>
-            </template>
-        </DxTooltip>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxTooltip
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend">
+                <template>
+                    <p>Tooltip content</p>
+                </template>
+            </DxTooltip>
+        </div>
     </template>
 
     <script>
@@ -94,12 +97,15 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
     class App extends React.Component {
         render() {
             return (
-                <Tooltip
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Tooltip
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                    />
+                </div>
             );
         }
     }

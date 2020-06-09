@@ -49,14 +49,17 @@ To specify when the **Tooltip** should be shown and hidden, set the [showEvent](
 ##### Vue
 
     <template>
-        <DxTooltip
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend">
-            <template>
-                <p>Tooltip content</p>
-            </template>
-        </DxTooltip>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxTooltip
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend">
+                <template>
+                    <p>Tooltip content</p>
+                </template>
+            </DxTooltip>
+        </div>
     </template>
 
     <script>
@@ -89,12 +92,15 @@ To specify when the **Tooltip** should be shown and hidden, set the [showEvent](
     class App extends React.Component {
         render() {
             return (
-                <Tooltip
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Tooltip
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                    />
+                </div>
             );
         }
     }
@@ -169,15 +175,18 @@ The **Tooltip** can also be hidden when a user clicks outside it. To control thi
 ##### Vue
 
     <template>
-        <DxTooltip
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            :close-on-outside-click="false">
-            <template>
-                <p>Tooltip content</p>
-            </template>
-        </DxTooltip>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxTooltip
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :close-on-outside-click="false">
+                <template>
+                    <p>Tooltip content</p>
+                </template>
+            </DxTooltip>
+        </div>
     </template>
 
     <script>
@@ -210,13 +219,16 @@ The **Tooltip** can also be hidden when a user clicks outside it. To control thi
     class App extends React.Component {
         render() {
             return (
-                <Tooltip
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                    closeOnOutsideClick={false}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Tooltip
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        closeOnOutsideClick={false}
+                    />
+                </div>
             );
         }
     }

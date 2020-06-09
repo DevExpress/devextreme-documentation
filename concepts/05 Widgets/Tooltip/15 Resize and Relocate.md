@@ -55,16 +55,19 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
 ##### Vue
 
     <template>
-        <DxTooltip
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            :height="70"
-            :width="200">
-            <template>
-                <p>Tooltip content</p>
-            </template>
-        </DxTooltip>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxTooltip
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :height="70"
+                :width="200">
+                <template>
+                    <p>Tooltip content</p>
+                </template>
+            </DxTooltip>
+        </div>
     </template>
 
     <script>
@@ -97,14 +100,17 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
     class App extends React.Component {
         render() {
             return (
-                <Tooltip
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                    height={70}
-                    width={200}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Tooltip
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        height={70}
+                        width={200}
+                    />
+                </div>
             );
         }
     }
@@ -182,15 +188,18 @@ If you need to position the **Tooltip** against a certain side of the [target el
 ##### Vue
 
     <template>
-        <DxTooltip
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            position="top"> <!-- or "bottom" | "left" | "right" -->
-            <template>
-                <p>Tooltip content</p>
-            </template>
-        </DxTooltip>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxTooltip
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                position="top"> <!-- or "bottom" | "left" | "right" -->
+                <template>
+                    <p>Tooltip content</p>
+                </template>
+            </DxTooltip>
+        </div>
     </template>
 
     <script>
@@ -223,12 +232,15 @@ If you need to position the **Tooltip** against a certain side of the [target el
     class App extends React.Component {
         render() {
             return (
-                <Tooltip
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                    position="top"/> {/* or "bottom" | "left" | "right" */}
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Tooltip
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        position="top"/> {/* or "bottom" | "left" | "right" */}
+                </div>
             );
         }
     }

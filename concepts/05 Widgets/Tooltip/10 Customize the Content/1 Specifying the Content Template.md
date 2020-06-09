@@ -56,16 +56,19 @@ The template implementation depends on the used framework or library. Examples o
 ##### Vue
 
     <template>
-        <DxTooltip
-            target="#image"
-            show-event="dxhoverstart">
-            <template>
-                <p>Static content</p>
-                <dx-switch>
-                    <!-- The "Switch" widget is configured here -->
-                </dx-switch>
-            </template>
-        </DxTooltip>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxTooltip
+                target="#image"
+                show-event="dxhoverstart">
+                <template>
+                    <p>Static content</p>
+                    <dx-switch>
+                        <!-- The "Switch" widget is configured here -->
+                    </dx-switch>
+                </template>
+            </DxTooltip>
+        </div>
     </template>
 
     <script>
@@ -104,11 +107,14 @@ The template implementation depends on the used framework or library. Examples o
     class App extends React.Component {
         render() {
             return (
-                <Tooltip
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    contentRender={renderContent}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Tooltip
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        contentRender={renderContent}
+                    />
+                </div>
             );
         }
     }

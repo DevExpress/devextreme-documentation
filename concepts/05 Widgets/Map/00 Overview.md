@@ -92,7 +92,7 @@ The code below adds the **Map** widget to your page. The **Map** is [centered](/
                 <Map
                     zoom={10}
                     controls={true}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                 />
             );
         }

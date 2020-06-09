@@ -85,7 +85,7 @@ The default size of the **Map** widget is 300x300 pixels. To change it, use to t
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     width="100%"
                     height={500}
                 />
@@ -202,7 +202,7 @@ If you prefer specifying the widget size using CSS, set the **width** and **heig
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     width={null}
                     height={null}
                 />

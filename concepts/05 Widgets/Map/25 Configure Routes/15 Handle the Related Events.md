@@ -130,7 +130,7 @@ To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     onRouteAdded={this.routeAdded}
                     onRouteRemoved={this.routeRemoved}
                 />

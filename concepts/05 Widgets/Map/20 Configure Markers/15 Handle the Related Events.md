@@ -130,7 +130,7 @@ To handle them, assign functions to the [onMarkerAdded](/api-reference/10%20UI%2
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     onMarkerAdded={this.markerAdded}
                     onMarkerRemoved={this.markerRemoved}
                 />

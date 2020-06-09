@@ -245,7 +245,7 @@ Apart from the icon, you can specify a [tooltip](/api-reference/10%20UI%20Widget
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     markers={mapMarkers}
                 />
             );

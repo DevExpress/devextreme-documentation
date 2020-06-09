@@ -140,7 +140,7 @@ The [route configuration](/api-reference/10%20UI%20Widgets/dxMap/1%20Configurati
             return (
                 <Map
                     zoom={15}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     routes={mapRoutes}
                 />
             );

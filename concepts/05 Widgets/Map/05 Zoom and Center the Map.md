@@ -89,7 +89,7 @@ To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20C
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                 />
             );
         }
@@ -201,7 +201,7 @@ Note that the widget can automatically change the **center** and **zoom** option
             return (
                 <Map
                     zoom={7}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     markers={mapMarkers}
                     autoAdjust={false}
                 />

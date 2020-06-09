@@ -81,7 +81,7 @@ By default, the **Map** widget uses **Google Maps** as a map provider. It can us
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     provider="google"/> {/* or "bing" | "googleStatic" */}
             );
         }
@@ -197,7 +197,7 @@ When using maps, you should include an API key that authenticates your applicati
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     provider="bing"
                     key={authentificationKeys}
                 />
@@ -297,7 +297,7 @@ The **Map** widget supports the following map types: *"hybrid"*, *"satellite"* a
             return (
                 <Map
                     zoom={10}
-                    center={centerCoordinates}
+                    defaultCenter={centerCoordinates}
                     provider="bing"
                     type="hybrid"
                 />

@@ -11,15 +11,11 @@ Specifies the alignment of a summary item.
 ---
 The default alignment of a summary item depends on the [type of data](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType') that is held by the column that displays this item. The following table illustrates the dependency between the default alignment and the column data type.
 
-<div class="simple-table">
-<table>
-  <thead>
+<table class="dx-table">
   <tr>
     <th>dataType</th>
     <th>alignment</th>
   </tr>
-  </thead>
-  <tbody>
   <tr>
     <td><i>'number'</i></td>
     <td><i>'right'</i></td>
@@ -44,9 +40,7 @@ The default alignment of a summary item depends on the [type of data](/api-refer
     <td><i>'guid'</i></td>
     <td><i>'left'</i></td>
   </tr>
-  </tbody>
 </table>
-</div>
 
 #include common-ref-enum with {
     enum: "`HorizontalAlignment`",

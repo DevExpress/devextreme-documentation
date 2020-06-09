@@ -1,7 +1,7 @@
 To change the size of the **Toast**, specify the [height](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/width.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#width') options.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="toastContainer"></div>
     <div id="buttonContainer"></div>
@@ -22,7 +22,7 @@ To change the size of the **Toast**, specify the [height](/api-reference/10%20UI
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-toast
@@ -52,12 +52,110 @@ To change the size of the **Toast**, specify the [height](/api-reference/10%20UI
          // ...
      })
 
+##### Vue
+
+    <template>
+        <div>
+            <DxToast
+                :visible.sync="isVisible"
+                message="Connection problem"
+                type="error"
+                :height="55"
+                :width="300"
+            />
+            <DxButton
+                text="Show the Toast"
+                @click="onClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast } from 'devextreme-vue/toast';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxToast,
+            DxButton
+        },
+        data() {
+            return {
+                isVisible: false
+            };
+        },
+        methods: {
+            onClick() {
+                this.isVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast } from 'devextreme-react/toast';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isVisible: false
+            };
+
+            this.onClick = this.onClick.bind(this);
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onClick() {
+            this.setState({
+                isVisible: true
+            });
+        }
+        
+        onHiding() {
+            this.setState({
+                isVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Toast
+                        visible={this.state.isVisible}
+                        message="Connection problem"
+                        type="error"
+                        height={55}
+                        width={300}
+                        onHiding={this.onHiding}
+                    />
+                    <Button
+                        text="Show the Toast"
+                        onClick={this.onClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you need to position the **Toast** against a specific element on your page, set the [position](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#position') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#toastContainer").dxToast({
@@ -79,7 +177,7 @@ If you need to position the **Toast** against a specific element on your page, s
     });
 
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-toast
@@ -111,6 +209,111 @@ If you need to position the **Toast** against a specific element on your page, s
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <div>
+            <DxToast
+                :visible.sync="isVisible"
+                message="Connection problem"
+                type="error">
+                <DxPosition
+                    my="left"
+                    at="left"
+                    of="#targetElement"
+                />
+            </DxToast>
+            <DxButton
+                text="Show the Toast"
+                @click="onClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast, DxPosition } from 'devextreme-vue/toast';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxToast,
+            DxButton,
+            DxPosition
+        },
+        data() {
+            return {
+                isVisible: false
+            };
+        },
+        methods: {
+            onClick() {
+                this.isVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast, Position } from 'devextreme-react/toast';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isVisible: false
+            };
+
+            this.onClick = this.onClick.bind(this);
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onClick() {
+            this.setState({
+                isVisible: true
+            });
+        }
+        
+        onHiding() {
+            this.setState({
+                isVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Toast
+                        visible={this.state.isVisible}
+                        message="Connection problem"
+                        type="error"
+                        onHiding={this.onHiding}>
+                        <Position
+                            my="left"
+                            at="left"
+                            of="#targetElement"
+                        />
+                    </Toast>
+                    <Button
+                        text="Show the Toast"
+                        onClick={this.onClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -1,7 +1,7 @@
 By default, the change of the image is animated. You can specify how long the animation is using the [animationDuration](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/animationDuration.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#animationDuration') option. The lower its value, the faster the animation. In case you need to disable animation completely, set the [animationEnabled](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/animationEnabled.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#animationEnabled') option to **false**.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
@@ -17,7 +17,7 @@ By default, the change of the image is animated. You can specify how long the an
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-gallery
@@ -44,6 +44,68 @@ By default, the change of the image is animated. You can specify how long the an
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxGallery
+            :data-source="dataSource"
+            :height="300"
+            :loop="true"
+            :animation-duration="100"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxGallery } from 'devextreme-vue/gallery';
+
+    export default {
+        components: {
+            DxGallery
+        },
+        data() {
+            return {
+                dataSource: [
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Gallery } from 'devextreme-react/gallery';
+
+    const dataSource = [
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Gallery
+                    dataSource={dataSource}
+                    height={300}
+                    loop={true}
+                    animationDuration={100}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

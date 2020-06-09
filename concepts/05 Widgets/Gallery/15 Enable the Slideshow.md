@@ -1,7 +1,7 @@
 The **Gallery** widget supports the display of images in a slideshow. To specify the time span that the widget must wait before moving on to the next image, assign a positive number to the [slideshowDelay](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/slideshowDelay.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#slideshowDelay') option. This number specifies the time span in milliseconds. If it is zero, slideshow is disabled.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
@@ -16,7 +16,7 @@ The **Gallery** widget supports the display of images in a slideshow. To specify
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-gallery
@@ -42,6 +42,66 @@ The **Gallery** widget supports the display of images in a slideshow. To specify
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxGallery
+            :data-source="dataSource"
+            :height="300"
+            :slideshow-delay="1500"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxGallery } from 'devextreme-vue/gallery';
+
+    export default {
+        components: {
+            DxGallery
+        },
+        data() {
+            return {
+                dataSource: [
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Gallery } from 'devextreme-react/gallery';
+
+    const dataSource = [
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Gallery
+                    dataSource={dataSource}
+                    height={300}
+                    slideshowDelay={1500}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

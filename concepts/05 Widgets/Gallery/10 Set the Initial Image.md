@@ -1,7 +1,7 @@
 By default, the image that the **Gallery** widget displays initially is the first item of the data source. To specify another item to be initially displayed, assign its index in the [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#dataSource') to the [selectedIndex](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#selectedIndex') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
@@ -16,7 +16,7 @@ By default, the image that the **Gallery** widget displays initially is the firs
         });
     });
 
-#####Angular 
+##### Angular 
 
     <!--HTML-->
     <dx-gallery
@@ -43,15 +43,75 @@ By default, the image that the **Gallery** widget displays initially is the firs
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxGallery
+            :data-source="dataSource"
+            :height="300"
+            :selected-index="2"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxGallery } from 'devextreme-vue/gallery';
+
+    export default {
+        components: {
+            DxGallery
+        },
+        data() {
+            return {
+                dataSource: [
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Gallery } from 'devextreme-react/gallery';
+
+    const dataSource = [
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Gallery
+                    dataSource={dataSource}
+                    height={300}
+                    defaultSelectedIndex={2}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 As an alternative, you can specify the initial image using its data source object. In this case, assign the object to the [selectedItem](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#selectedItem') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var galleryData = [{
+    const galleryData = [{
         imageAlt: "Maria",
         imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png"
     }, {
@@ -70,7 +130,7 @@ As an alternative, you can specify the initial image using its data source objec
         });
     });
 
-#####Angular 
+##### Angular 
 
     <!--HTML-->
     <dx-gallery
@@ -102,6 +162,79 @@ As an alternative, you can specify the initial image using its data source objec
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxGallery
+            :data-source="galleryData"
+            :height="300"
+            :selected-item="selectedItem"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxGallery } from 'devextreme-vue/gallery';
+
+    export default {
+        components: {
+            DxGallery
+        },
+        data() {
+            return {
+                galleryData: [{
+                    imageAlt: 'Maria',
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png'
+                }, {
+                    imageAlt: 'John',
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png'
+                }, {
+                    imageAlt: 'Xavier',
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+                }],
+                selectedItem: galleryData[1]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Gallery } from 'devextreme-react/gallery';
+
+    const galleryData = [{
+        imageAlt: 'Maria',
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png'
+    }, {
+        imageAlt: 'John',
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png'
+    }, {
+        imageAlt: 'Xavier',
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
+    }];
+
+    const selectedItem = galleryData[1];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Gallery
+                    dataSource={galleryData}
+                    height={300}
+                    defaultSelectedItem={selectedItem}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

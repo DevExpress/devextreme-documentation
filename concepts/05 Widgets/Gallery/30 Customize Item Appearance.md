@@ -1,7 +1,7 @@
 **Gallery** items are not sctrictly images. They can contain text or other elements of your choice. For a minor customization of **Gallery** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/items/') in item data objects. For example, the following code generates two items: one is disabled and the other has a specified <a href="http://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt attribute</a>.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
@@ -17,7 +17,7 @@
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-gallery
@@ -45,13 +45,75 @@
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxGallery
+            :data-source="dataSource"
+            :height="300"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxGallery } from 'devextreme-vue/gallery';
+
+    export default {
+        components: {
+            DxGallery
+        },
+        data() {
+            return {
+                dataSource: [{
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    disabled: true
+                }, {
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    imageAlt: 'Peter'
+                }]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Gallery } from 'devextreme-react/gallery';
+
+    const dataSource = [{
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        disabled: true
+    }, {
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        imageAlt: 'Peter'
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Gallery
+                    dataSource={dataSource}
+                    height={300}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize gallery items.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-gallery
@@ -82,55 +144,80 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         // ...
     })
 
-#####AngularJS
+##### Vue
 
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-gallery="{
-            dataSource: galleryData,
-            height: 300,
-            itemTemplate: 'item'
-        }" dx-item-alias="item">
-            <div data-options="dxTemplate: { name: 'item' }">
-                <p><b>Name</b>: <span>{{item.name}}</span></p>
-                <img ng-attr-src="{{item.path}}" ng-attr-alt="{{item.name}}" />
+    <template>
+        <DxGallery
+            :data-source="dataSource"
+            :height="300"
+            item-template="item">
+            <template #item="{ data }">
+                <div>
+                    <p><b>Name</b>: <span>{{data.name}}</span></p>
+                    <img :src="data.path" :alt="data.name" />
+                </div>
+            </template>
+        </DxGallery>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxGallery } from 'devextreme-vue/gallery';
+
+    export default {
+        components: {
+            DxGallery
+        },
+        data() {
+            return {
+                dataSource: [
+                    { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
+                    { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
+                    { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Gallery } from 'devextreme-react/gallery';
+
+    const dataSource = [
+        { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
+        { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
+        { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
+    ];
+
+    const renderGalleryItem = (itemData) => {
+        return (
+            <div>
+                <p><b>Name</b>: <span>{itemData.name}</span></p>
+                <img src={itemData.path} alt={itemData.name} />
             </div>
-        </div>
-    </div>
+        );
+    }
 
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.galleryData = [
-                { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
-                { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
-                { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
-            ];
-        });
+    class App extends React.Component {
+        render() {
+            return (
+                <Gallery
+                    dataSource={dataSource}
+                    height={300}
+                    itemRender={renderGalleryItem}
+                />
+            );
+        }
+    }
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####Knockout
-
-    <!--HTML-->
-    <div data-bind="dxGallery: {
-        dataSource: galleryData,
-        height: 300,
-        itemTemplate: 'item'
-    }">
-        <div data-options="dxTemplate: { name: 'item' }">
-            <p><b>Name</b>: <span data-bind="text: name"></span></p>
-            <img data-bind="attr: { src: path, alt: name }" />
-        </div>
-    </div>
-
-    <!--JavaScript-->var viewModel = {
-        galleryData: [
-            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
-        ]
-    };
-
-    ko.applyBindings(viewModel);
+    export default App;
 
 ---
 
@@ -156,7 +243,7 @@ You can also customize an individual **Gallery** item. For this purpose, declare
     </script>
 
     <!--JavaScript-->
-    var galleryData = [{
+    const galleryData = [{
         imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
         imageAlt: "Maria",
         template: $("#individualTemplate"),

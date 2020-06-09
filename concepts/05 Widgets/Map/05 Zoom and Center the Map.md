@@ -84,7 +84,7 @@ To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20C
         render() {
             return (
                 <Map
-                    zoom={10}
+                    defaultZoom={10}
                     defaultCenter={centerCoordinates}
                 />
             );

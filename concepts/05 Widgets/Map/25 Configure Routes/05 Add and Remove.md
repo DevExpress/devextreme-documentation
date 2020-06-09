@@ -102,7 +102,7 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
         render() {
             return (
                 <Map
-                    zoom={5}
+                    defaultZoom={5}
                     routes={mapRoutes}
                 />
             );
@@ -305,7 +305,7 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** opti
             return (
                 <div>
                     <Map
-                        zoom={10}
+                        defaultZoom={10}
                         routes={this.state.mapRoutes}
                     />
                     <Button

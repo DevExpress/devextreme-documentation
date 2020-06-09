@@ -90,7 +90,7 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
         render() {
             return (
                 <Map
-                    zoom={5}
+                    defaultZoom={5}
                     markers={mapMarkers}
                 />
             );
@@ -282,7 +282,7 @@ With Angular, Vue, or React, use a different technique. Bind the **markers** opt
             return (
                 <div>
                     <Map
-                        zoom={10}
+                        defaultZoom={10}
                         markers={this.state.mapMarkers}
                         onClick={this.addMarker}
                     />

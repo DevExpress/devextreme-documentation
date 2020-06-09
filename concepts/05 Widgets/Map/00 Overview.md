@@ -86,7 +86,7 @@ The code below adds the **Map** widget to your page. The **Map** is [centered](/
         render() {
             return (
                 <Map
-                    zoom={10}
+                    defaultZoom={10}
                     controls={true}
                     defaultCenter={centerCoordinates}
                 />

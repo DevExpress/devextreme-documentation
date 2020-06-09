@@ -96,7 +96,7 @@ The **Map** widget allows you to provide a single icon for all markers. For this
         render() {
             return (
                 <Map
-                    zoom={10}
+                    defaultZoom={10}
                     markerIconSrc={markerIconUrl}
                     markers={mapMarkers}
                 />
@@ -236,7 +236,7 @@ Apart from the icon, you can specify a [tooltip](/api-reference/10%20UI%20Widget
         render() {
             return (
                 <Map
-                    zoom={10}
+                    defaultZoom={10}
                     defaultCenter={centerCoordinates}
                     markers={mapMarkers}
                 />

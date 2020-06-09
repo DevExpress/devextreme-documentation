@@ -135,7 +135,7 @@ The [route configuration](/api-reference/10%20UI%20Widgets/dxMap/1%20Configurati
         render() {
             return (
                 <Map
-                    zoom={15}
+                    defaultZoom={15}
                     defaultCenter={centerCoordinates}
                     routes={mapRoutes}
                 />

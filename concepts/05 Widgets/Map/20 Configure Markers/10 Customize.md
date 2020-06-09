@@ -93,10 +93,6 @@ The **Map** widget allows you to provide a single icon for all markers. For this
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map
@@ -237,10 +233,6 @@ Apart from the icon, you can specify a [tooltip](/api-reference/10%20UI%20Widget
     }];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

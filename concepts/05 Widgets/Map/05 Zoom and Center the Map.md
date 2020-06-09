@@ -81,10 +81,6 @@ To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20C
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map
@@ -193,10 +189,6 @@ Note that the widget can automatically change the **center** and **zoom** option
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

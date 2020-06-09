@@ -99,10 +99,6 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
     }];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

@@ -83,10 +83,6 @@ The code below adds the **Map** widget to your page. The **Map** is [centered](/
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

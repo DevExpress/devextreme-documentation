@@ -132,10 +132,6 @@ The [route configuration](/api-reference/10%20UI%20Widgets/dxMap/1%20Configurati
     }];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

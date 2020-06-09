@@ -77,10 +77,6 @@ The default size of the **Map** widget is 300x300 pixels. To change it, use to t
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map
@@ -194,10 +190,6 @@ If you prefer specifying the widget size using CSS, set the **width** and **heig
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

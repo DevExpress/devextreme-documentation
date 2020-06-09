@@ -87,10 +87,6 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

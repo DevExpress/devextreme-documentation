@@ -73,10 +73,6 @@ By default, the **Map** widget uses **Google Maps** as a map provider. It can us
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map
@@ -189,10 +185,6 @@ When using maps, you should include an API key that authenticates your applicati
     };
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map
@@ -289,10 +281,6 @@ The **Map** widget supports the following map types: *"hybrid"*, *"satellite"* a
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Map

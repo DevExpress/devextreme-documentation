@@ -99,9 +99,9 @@ When using maps, you should include an API key that authenticates your applicati
             zoom: 10,
             provider: "bing",
             key: {
-                bing: BING_API_KEY,
-                google: GOOGLE_API_KEY,
-                googleStatic: GOOGLE_STATIC_API_KEY
+                bing: "YOUR_BING_MAPS_API_KEY",
+                google: "YOUR_GOOGLE_MAPS_API_KEY",
+                googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
             }
         });
     });
@@ -122,9 +122,9 @@ When using maps, you should include an API key that authenticates your applicati
     export class AppComponent {
         // ...
         authentificationKeys = {
-            bing: this.BING_API_KEY,
-            google: this.GOOGLE_API_KEY,
-            googleStatic: this.GOOGLE_STATIC_API_KEY
+            bing: "YOUR_BING_MAPS_API_KEY",
+            google: "YOUR_GOOGLE_MAPS_API_KEY",
+            googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
         }
     }
     @NgModule({
@@ -160,9 +160,9 @@ When using maps, you should include an API key that authenticates your applicati
             return {
                 centerCoordinates: { lat: 40.749825, lng: -73.987963 },
                 authentificationKeys: {
-                    bing: BING_API_KEY,
-                    google: GOOGLE_API_KEY,
-                    googleStatic: GOOGLE_STATIC_API_KEY
+                    bing: "YOUR_BING_MAPS_API_KEY",
+                    google: "YOUR_GOOGLE_MAPS_API_KEY",
+                    googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
                 }
             };
         }
@@ -179,9 +179,9 @@ When using maps, you should include an API key that authenticates your applicati
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
     const authentificationKeys = {
-        bing: BING_API_KEY,
-        google: GOOGLE_API_KEY,
-        googleStatic: GOOGLE_STATIC_API_KEY
+        bing: "YOUR_BING_MAPS_API_KEY",
+        google: "YOUR_GOOGLE_MAPS_API_KEY",
+        googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
     };
 
     class App extends React.Component {

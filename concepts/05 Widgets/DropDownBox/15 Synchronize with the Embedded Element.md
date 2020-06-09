@@ -88,7 +88,7 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
                     value-expr="ID"
                     display-expr="email"
                     :data-source="dropDownBoxData">
-                    <DxDataGrid 
+                    <DxDataGrid ...
                         :data-source="gridDataSource">
                     </DxDataGrid>
                 </DxDropDownBox>
@@ -144,7 +144,7 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
 
             render() {
                 return (
-                    <DropDownBox ...
+                    <DropDownBox
                         dataSource={dropDownBoxData}
                         valueExpr="ID"
                         displayExpr="email">

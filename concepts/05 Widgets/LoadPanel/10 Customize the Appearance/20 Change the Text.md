@@ -126,7 +126,7 @@ To change the text displayed by the **LoadPanel**, use the [message](/api-refere
                         closeOnOutsideClick={true}
                         message="Please, wait..."
                         visible={this.state.isLoadPanelVisible}
-                        onHidden={this.state.handleHide}
+                        onHidden={this.handleHide}
                     />
                     <Button
                         text="Show the Load Panel"

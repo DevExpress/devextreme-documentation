@@ -131,7 +131,7 @@ The following code adds to your page a simple **LoadPanel** and a [Button](/conc
                     <LoadPanel
                         closeOnOutsideClick={true}
                         visible={this.state.isLoadPanelVisible}
-                        onHidden={this.state.handleHide}
+                        onHidden={this.handleHide}
                     />
                     <Button
                         text="Show the Load Panel"

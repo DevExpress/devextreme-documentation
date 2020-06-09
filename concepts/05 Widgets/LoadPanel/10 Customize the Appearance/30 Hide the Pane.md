@@ -130,7 +130,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
                         closeOnOutsideClick={true}
                         showPane={false}
                         visible={this.state.isLoadPanelVisible}
-                        onHidden={this.state.handleHide}
+                        onHidden={this.handleHide}
                     />
                     <Button
                         text="Show the Load Panel"

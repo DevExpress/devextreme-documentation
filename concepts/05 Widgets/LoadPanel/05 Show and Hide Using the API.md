@@ -171,7 +171,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
                     <LoadPanel
                         closeOnOutsideClick={true}
                         visible={this.state.isLoadPanelVisible}
-                        onHidden={this.state.handleHide}
+                        onHidden={this.handleHide}
                     />
                     <Button
                         text="Show the Load Panel"

@@ -37,6 +37,60 @@ The default size of the **Map** widget is 300x300 pixels. To change it, use to t
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :center="centerCoordinates"
+            width="100%"
+            :height="500"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    defaultZoom={10}
+                    defaultCenter={centerCoordinates}
+                    width="100%"
+                    height={500}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you prefer specifying the widget size using CSS, set the **width** and **height** options to **null**. 
@@ -83,6 +137,72 @@ If you prefer specifying the widget size using CSS, set the **width** and **heig
         ],
         // ...
     })
+
+    <!--CSS-->
+    #mapContainer {
+        width: 100%;
+        height: 500px;
+    }
+
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :center="centerCoordinates"
+            :width="null"
+            :height="null"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
+            };
+        }
+    }
+    </script>
+
+    <!--CSS-->
+    #mapContainer {
+        width: 100%;
+        height: 500px;
+    }
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    defaultZoom={10}
+                    defaultCenter={centerCoordinates}
+                    width={null}
+                    height={null}
+                />
+            );
+        }
+    }
+
+    export default App;
 
     <!--CSS-->
     #mapContainer {

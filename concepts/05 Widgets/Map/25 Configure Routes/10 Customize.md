@@ -63,6 +63,88 @@ The [route configuration](/api-reference/10%20UI%20Widgets/dxMap/1%20Configurati
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="15"
+            :center="centerCoordinates"
+            :routes="mapRoutes"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 },
+                mapRoutes: [{
+                    locations: [
+                        [40.782500, -73.966111],
+                        [40.755833, -73.986389]
+                    ],
+                    color: "red",
+                    opacity: 1
+                }, {
+                    locations: [
+                        [40.753889, -73.981389],
+                        "Brooklyn Bridge,New York,NY"
+                    ],
+                    mode: "walking", // or "driving"
+                    weight: 2
+                }]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+    const mapRoutes = [{
+        locations: [
+            [40.782500, -73.966111],
+            [40.755833, -73.986389]
+        ],
+        color: "red",
+        opacity: 1
+    }, {
+        locations: [
+            [40.753889, -73.981389],
+            "Brooklyn Bridge,New York,NY"
+        ],
+        mode: "walking", // or "driving"
+        weight: 2
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    defaultZoom={15}
+                    defaultCenter={centerCoordinates}
+                    routes={mapRoutes}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

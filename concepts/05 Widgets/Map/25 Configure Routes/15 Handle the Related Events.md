@@ -10,13 +10,13 @@ To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
             onRouteAdded: function (e) {
-                var addedRoute = e.options;
+                const addedRoute = e.options;
                 // The original route used by the current map provider 
-                var originalRoute = e.originalRoute;
+                const originalRoute = e.originalRoute;
                 // Event handling commands go here
             },
             onRouteRemoved: function (e) {
-                var removedRoute = e.options;
+                const removedRoute = e.options;
                 // Event handling commands go here
             }
         });
@@ -37,13 +37,13 @@ To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20
     // ...
     export class AppComponent {
         routeAdded (e) {
-            let addedRoute = e.options;
+            const addedRoute = e.options;
             // The original route used by the current map provider 
-            let originalRoute = e.originalRoute;
+            const originalRoute = e.originalRoute;
             // Event handling commands go here
         };
         routeRemoved (e) {
-            let removedRoute = e.options;
+            const removedRoute = e.options;
             // Event handling commands go here
         }
     }
@@ -55,18 +55,103 @@ To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :center="centerCoordinates"
+            @route-added="routeAdded"
+            @route-removed="routeRemoved"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
+            };
+        },
+        methods: {
+            routeAdded(e) {
+                const addedRoute = e.options;
+                // The original route used by the current map provider 
+                const originalRoute = e.originalRoute;
+                // Event handling commands go here
+            },
+            routeRemoved(e) {
+                const removedRoute = e.options;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.routeRemoved = this.routeAdded.bind(this);
+            this.routeRemoved = this.routeRemoved.bind(this);
+        }
+
+        routeAdded(e) {
+            const addedRoute = e.options;
+            // The original route used by the current map provider 
+            const originalRoute = e.originalRoute;
+            // Event handling commands go here
+        }
+
+        routeRemoved(e) {
+            const removedRoute = e.options;
+            // Event handling commands go here
+        }
+
+        render() {
+            return (
+                <Map
+                    defaultZoom={10}
+                    defaultCenter={centerCoordinates}
+                    onRouteAdded={this.routeAdded}
+                    onRouteRemoved={this.routeRemoved}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the **markerAdded** and **markerRemoved** events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxMap/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var routeRemovedHandler1 = function (e) {
-        var removedRoute = e.options;
+    const routeRemovedHandler1 = function (e) {
+        const removedRoute = e.options;
         // First handler of the "routeRemoved" event
     };
 
-    var routeRemovedHandler2 = function (e) {
-        var removedRoute = e.options;
+    const routeRemovedHandler2 = function (e) {
+        const removedRoute = e.options;
         // Second handler of the "routeRemoved" event
     };
 

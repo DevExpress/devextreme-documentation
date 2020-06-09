@@ -102,10 +102,6 @@ The **TagBox** widget allows an end user to search through its items. This featu
     const searchExpr = ['capital', 'country'];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <TagBox

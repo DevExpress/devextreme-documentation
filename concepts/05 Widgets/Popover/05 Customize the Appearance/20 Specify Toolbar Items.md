@@ -26,14 +26,14 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
 
 ##### Angular
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -77,7 +77,7 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover
                 :width="200"
                 target="#image"
@@ -151,7 +151,7 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         width={200}
                         target="#image"
@@ -196,7 +196,7 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
                 .Location(ToolbarItemLocation.After);
          }
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
     <script type="text/javascript">
         function refresh() {

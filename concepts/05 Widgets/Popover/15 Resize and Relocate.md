@@ -13,7 +13,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -21,7 +21,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -51,7 +51,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover 
                 target="#image"
                 show-event="dxhoverstart"
@@ -96,7 +96,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         target="#image"
                         showEvent="dxhoverstart"
@@ -125,7 +125,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
         .Height(300)
         .Width(500)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 
@@ -147,7 +147,7 @@ If you need to position the **Popover** against a certain side of the [target el
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -176,7 +176,7 @@ If you need to position the **Popover** against a certain side of the [target el
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover 
                 target="#image"
                 show-event="dxhoverstart"
@@ -220,7 +220,7 @@ If you need to position the **Popover** against a certain side of the [target el
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         target="#image"
                         showEvent="dxhoverstart"
@@ -246,7 +246,7 @@ If you need to position the **Popover** against a certain side of the [target el
         </text>)
         .Position(Position.Top) // or Position.Bottom | Position.Left | Position.Right
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 

@@ -9,7 +9,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
 ---
 ##### jQuery
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -25,7 +25,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
 
 ##### Angular
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -53,7 +53,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover 
                 target="#image"
                 show-event="dxhoverstart"
@@ -96,7 +96,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         target="#image"
                         showEvent="dxhoverstart"
@@ -121,7 +121,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
             <p>Popover content</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 

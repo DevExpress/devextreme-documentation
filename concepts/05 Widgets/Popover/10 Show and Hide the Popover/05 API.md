@@ -29,7 +29,7 @@ To show or hide the **Popover** programmatically, call the [show()](/api-referen
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -46,7 +46,7 @@ To show or hide the **Popover** programmatically, call the [show()](/api-referen
             <p>Popover content</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
     @(Html.DevExtreme().Button()
         .ID("showButton")
@@ -111,7 +111,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         [visible]="isPopoverVisible">
@@ -145,7 +145,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### Vue
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover
                 target="#image"
                 :visible.sync="isPopoverVisible">
@@ -235,7 +235,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         target="#image"
                         visible={this.state.isPopoverVisible}

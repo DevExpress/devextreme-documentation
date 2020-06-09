@@ -11,7 +11,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -19,7 +19,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -47,7 +47,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover 
                 target="#image"
                 show-event="dxhoverstart"
@@ -90,7 +90,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         target="#image"
                         showEvent="dxhoverstart"
@@ -115,7 +115,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
             <p>Popover content</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 
@@ -137,7 +137,7 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -145,7 +145,7 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -174,7 +174,7 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover 
                 target="#image"
                 show-event="dxhoverstart"
@@ -218,7 +218,7 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         target="#image"
                         showEvent="dxhoverstart"
@@ -245,6 +245,6 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
         </text>)
         .CloseOnOutsideClick(false)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---

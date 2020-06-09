@@ -15,7 +15,7 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
     });
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <!-- ... -->
     </div>
@@ -24,7 +24,7 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -53,7 +53,7 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover
                 show-event="dxhoverstart"
                 hide-event="dxhoverend"
@@ -91,7 +91,7 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         showTitle={true}
                         showCloseButton={true}
@@ -121,7 +121,7 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
         .ShowTitle(true)
         .ShowCloseButton(true)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 
@@ -130,7 +130,7 @@ If you need to define the title completely, specify a template for it as shown i
 ---
 ##### jQuery
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
         <div data-options="dxTemplate: { name: 'titleTemplate' }">
@@ -151,7 +151,7 @@ If you need to define the title completely, specify a template for it as shown i
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -184,7 +184,7 @@ If you need to define the title completely, specify a template for it as shown i
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxPopover
                 show-event="dxhoverstart"
                 hide-event="dxhoverend"
@@ -229,7 +229,7 @@ If you need to define the title completely, specify a template for it as shown i
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Popover
                         showTitle={true}
                         target="#image"
@@ -259,7 +259,7 @@ If you need to define the title completely, specify a template for it as shown i
             <p>Title template</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 

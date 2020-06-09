@@ -25,7 +25,7 @@ To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20C
 
     <!--HTML-->
     <dx-map
-        [center]="{ lat: 40.749825, lng: -73.987963 }"
+        [center]="centerCoordinates"
         [zoom]="10">
     </dx-map>
 
@@ -33,7 +33,7 @@ To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20C
     import { DxMapModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        // ...
+        centerCoordinates = { lat: 40.749825, lng: -73.987963 };
     }
     @NgModule({
         imports: [
@@ -42,6 +42,56 @@ To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20C
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :center="centerCoordinates"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    defaultZoom={10}
+                    defaultCenter={centerCoordinates}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -67,15 +117,17 @@ Note that the widget can automatically change the **center** and **zoom** option
 
     <!--HTML-->
     <dx-map
-        [center]="{ lat: 40.749825, lng: -73.987963 }"
+        [center]="centerCoordinates"
         [zoom]="7"
-        [autoAdjust]="false">
+        [autoAdjust]="false"
+        [markers]="mapMarkers">
     </dx-map>
 
     <!--TypeScript-->
     import { DxMapModule } from "devextreme-angular";
     // ...
     export class AppComponent {
+        centerCoordinates = { lat: 40.749825, lng: -73.987963 };
         mapMarkers = [
             { location: "42.743244, -71.594375" },
             { location: "37.058435, -74.903842" }
@@ -88,6 +140,68 @@ Note that the widget can automatically change the **center** and **zoom** option
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="7"
+            :center="centerCoordinates"
+            :autoAdjust="false"
+            :markers="mapMarkers"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 },
+                mapMarkers: [
+                    { location: "42.743244, -71.594375" },
+                    { location: "37.058435, -74.903842" }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+    const mapMarkers = [
+        { location: "42.743244, -71.594375" },
+        { location: "37.058435, -74.903842" }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    zoom={7}
+                    defaultCenter={centerCoordinates}
+                    markers={mapMarkers}
+                    autoAdjust={false}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -162,7 +162,6 @@ You can customize the text field and the drop-down button using the [fieldTempla
 
 ##### Vue
 
-    <!--tab: App.vue-->
     <template>
         <div>
             <DxDropDownBox
@@ -242,25 +241,27 @@ You can customize the text field and the drop-down button using the [fieldTempla
     }
     </script>
 
-    .custom-item {
-        position: relative;
-        min-height: 30px;
-    }
-    .custom-item > img {
-        left: 1px;
-        margin-top: 3px;
-        max-height: 30px;
-        width: auto;
-        position: absolute;
-    }
-    .product-name  {
-        display: inline-block;
-        padding-left: 45px;
-        text-indent: 0;
-        line-height: 30px;
-        font-size: 15px;
-        width: 100%;
-    }
+    <style>
+        .custom-item {
+            position: relative;
+            min-height: 30px;
+        }
+        .custom-item > img {
+            left: 1px;
+            margin-top: 3px;
+            max-height: 30px;
+            width: auto;
+            position: absolute;
+        }
+        .product-name  {
+            display: inline-block;
+            padding-left: 45px;
+            text-indent: 0;
+            line-height: 30px;
+            font-size: 15px;
+            width: 100%;
+        }
+    </style>
 
 ##### React
 
@@ -355,7 +356,8 @@ You can customize the text field and the drop-down button using the [fieldTempla
 
     export default App;
 
-    .custom-item {
+
+    <!--CSS-->.custom-item {
         position: relative;
         min-height: 30px;
     }

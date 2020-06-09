@@ -123,7 +123,7 @@ If you need to render different templates depending on a specific condition, def
         },
         methods: {
             changeTemplate () {
-                this.currentTemplate = (this.currentTemplate === 'template1' ? 'template2' : 'template1')
+                this.currentTemplate = (this.currentTemplate === 'template1' ? 'template2' : 'template1');
             }
         }
     }

@@ -7,11 +7,11 @@ The **Toast** is a widget that provides pop-up notifications.
 The **Toast** widget does not need to be created on the page before it can be shown. You can simply call the [notify(message, type, displayTime)](/api-reference/50%20Common/utils/ui/notify(message_type_displayTime).md '/Documentation/ApiReference/Common/utils/ui/#notifymessage_type_displayTime') method with values for the [message](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#message'), [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#type') and [displayTime](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/displayTime.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#displayTime') options passed as the arguments.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->DevExpress.ui.notify("Connection problem", "error", 3000)
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import notify from "devextreme/ui/notify";
@@ -28,12 +28,54 @@ The **Toast** widget does not need to be created on the page before it can be sh
          // ...
      })
 
+##### Vue
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import notify from "devextreme/ui/notify";
+
+    export default {
+        components: {
+            // ...
+        },
+        methods: {
+            showToast() {
+                notify("Connection problem", "error", 3000);
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import notify from "devextreme/ui/notify";
+
+    class App extends React.Component {
+        showToast() {
+            notify("Connection problem", "error", 3000);
+        }
+
+        render() {
+            return (
+                {/* ... */} 
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you need to specify other **Toast** options, call the same method, but this time [pass an object as the argument](/api-reference/50%20Common/utils/ui/notify(options_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime'). In this object, you can set [any Toast option](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/').
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->DevExpress.ui.notify({
         message: "Connection problem",
@@ -42,7 +84,7 @@ If you need to specify other **Toast** options, call the same method, but this t
         height: 100
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import notify from "devextreme/ui/notify";
@@ -64,12 +106,64 @@ If you need to specify other **Toast** options, call the same method, but this t
          // ...
      })
 
+##### Vue
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import notify from "devextreme/ui/notify";
+
+    export default {
+        components: {
+            // ...
+        },
+        methods: {
+            showToast() {
+                notify({
+                    message: "Connection problem",
+                    type: "error",
+                    displayTime: 3000,
+                    height: 100
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import notify from "devextreme/ui/notify";
+
+    class App extends React.Component {
+        showToast() {
+            notify({
+                message: "Connection problem",
+                type: "error",
+                displayTime: 3000,
+                height: 100
+            });
+        }
+
+        render() {
+            return (
+                {/* ... */} 
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to reuse the **Toast**, then create it on the page using the following code. Note that in this code, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/') widget invokes the **Toast**.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="toastContainer"></div>
     <div id="buttonContainer"></div>
@@ -88,7 +182,7 @@ If you are going to reuse the **Toast**, then create it on the page using the fo
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-toast
@@ -115,6 +209,100 @@ If you are going to reuse the **Toast**, then create it on the page using the fo
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <div>
+            <DxToast
+                :visible.sync="isVisible"
+                message="Connection problem"
+                type="error"
+            />
+            <DxButton
+                text="Show the Toast"
+                @click="onClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast } from 'devextreme-vue/toast';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxToast,
+            DxButton
+        },
+        data() {
+            return {
+                isVisible: false
+            };
+        },
+        methods: {
+            onClick() {
+                this.isVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast } from 'devextreme-react/toast';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isVisible: false
+            };
+
+            this.onClick = this.onClick.bind(this);
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onClick() {
+            this.setState({
+                isVisible: true
+            });
+        }
+        
+        onHiding() {
+            this.setState({
+                isVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Toast
+                        visible={this.state.isVisible}
+                        message="Connection problem"
+                        type="error"
+                        onHiding={this.onHiding}
+                    />
+                    <Button
+                        text="Show the Toast"
+                        onClick={this.onClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

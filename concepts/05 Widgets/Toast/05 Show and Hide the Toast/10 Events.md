@@ -1,73 +1,51 @@
-To execute certain commands before or after the **Toast** was shown/hidden, handle the [showing](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/showing.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#showing'), [shown](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/shown.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#shown'), [hiding](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hiding.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#hiding') or [hidden](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hidden.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the widget, assign it to the corresponding **on*EventName*** option. For example, in the following code, a handler of the **hidden** event is assigned to the [onHidden](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/onHidden.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#onHidden') option. This handler counts down from three replacing the message in the **Toast** at the same time.
+To execute certain commands before or after the **Toast** was shown/hidden, handle the [showing](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/showing.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#showing'), [shown](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/shown.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#shown'), [hiding](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hiding.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#hiding') or [hidden](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hidden.md '/Documentation/ApiReference/UI_Widgets/dxToast/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the widget, assign it to the corresponding **on*EventName*** option:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
-        var counter = 3;
-
         $("#toastContainer").dxToast({
-            message: counter,
-            displayTime: 500,
+            // ...
+            onShowing: function (e) {
+                // Handler of the "showing" event
+            },
+            onShown: function (e) {
+                // Handler of the "shown" event
+            },
+            onHiding: function (e) {
+                // Handler of the "hiding" event
+            },
             onHidden: function (e) {
-                counter--;
-                if (counter != 0) {
-                    e.component.option("message", counter);
-                } else {
-                    e.component.option({
-                        message: "Go!",
-                        onHidden: undefined,
-                        displayTime: 3000,
-                        type: "success"
-                    });
-                }
-                e.component.show();
+                // Handler of the "hidden" event
             }
-        });
-
-        $("#buttonContainer").dxButton({
-            text: "Start the Countdown", 
-            onClick: function () {
-                $("#toastContainer").dxToast("show");
-            } 
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
-    <dx-toast
-        [(visible)]="isVisible"
-        [displayTime]="displayTime"
-        [message]="message"
-        (onHidden)="onHidden($event)"
-        [type]="type">
+    <dx-toast ...
+        (onShowing)="onShowing($event)"
+        (onShown)="onShown($event)"
+        (onHiding)="onHiding($event)"
+        (onHidden)="onHidden($event)">
     </dx-toast>
-    <dx-button
-        text="Start the Countdown"
-        (onClick)="isVisible = true">
-    </dx-button>
 
     <!--TypeScript-->
     import { DxToastModule, DxButtonModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        isVisible: boolean = false;
-        counter: number = 3;
-        displayTime: number = 500;
-        type = "info";
-        message: string = this.counter.toString();
+        onShowing (e) {
+            // Handler of the "showing" event
+        },
+        onShown (e) {
+            // Handler of the "shown" event
+        },
+        onHiding (e) {
+            // Handler of the "hiding" event
+        },
         onHidden (e) {
-            this.counter--;
-            if (counter != 0) {
-                this.message = this.counter.toString();
-            } else {
-                this.message = "Go!";
-                this.onHidden = undefined;
-                this.displayTime = 3000;
-                this.type = "success";
-            }
-            this.isVisible = true;
+            // Handler of the "hidden" event
         }
     }
     @NgModule({
@@ -79,16 +57,96 @@ To execute certain commands before or after the **Toast** was shown/hidden, hand
          // ...
      })
 
+##### Vue
+
+    <template>
+        <DxToast ...
+            @showing="onShowing"
+            @shown="onShown"
+            @hiding="onHiding"
+            @hidden="onHidden"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxToast } from 'devextreme-vue/toast';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxToast,
+            DxButton
+        },
+        methods: {
+            onShowing(e) {
+                // Handler of the 'showing' event
+            },
+            onShown(e) {
+                // Handler of the 'shown' event
+            },
+            onHiding(e) {
+                // Handler of the 'hiding' event
+            },
+            onHidden(e) {
+                // Handler of the 'hidden' event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Toast } from 'devextreme-react/toast';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        onShowing(e) {
+            // Handler of the 'showing' event
+        }
+
+        onShown(e) {
+            // Handler of the 'shown' event
+        }
+
+        onHiding(e) {
+            // Handler of the 'hiding' event
+        }
+
+        onHidden(e) {
+            // Handler of the 'hidden' event
+        }
+
+        render() {
+            return (
+                <Toast ...
+                    onShowing={this.onShowing}
+                    onShown={this.onShown}
+                    onHiding={this.onHiding}
+                    onHidden={this.onHidden}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxToast/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var hiddenEventHandler1 = function (e) {
+    const hiddenEventHandler1 = function (e) {
         // First handler of the "hidden" event
     };
 
-    var hiddenEventHandler2 = function (e) {
+    const hiddenEventHandler2 = function (e) {
         // Second handler of the "hidden" event
     };
 

@@ -95,7 +95,7 @@ By default, the image that the **Gallery** widget displays initially is the firs
                 <Gallery
                     dataSource={dataSource}
                     height={300}
-                    selectedIndex={2}
+                    defaultSelectedIndex={2}
                 />
             );
         }
@@ -228,7 +228,7 @@ As an alternative, you can specify the initial image using its data source objec
                 <Gallery
                     dataSource={galleryData}
                     height={300}
-                    selectedItem={selectedItem}
+                    defaultSelectedItem={selectedItem}
                 />
             );
         }

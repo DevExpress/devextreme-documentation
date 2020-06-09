@@ -223,10 +223,6 @@ As an alternative, you can specify the initial image using its data source objec
     const selectedItem = galleryData[1];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery

@@ -97,10 +97,6 @@ By default, the **Gallery** widget displays one image at a time. To fit more ima
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery
@@ -219,10 +215,6 @@ When distributing images along the total width, the **Gallery** may add margins 
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery
@@ -344,10 +336,6 @@ The **Gallery** widget allows you to display not only the current image, but als
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery

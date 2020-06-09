@@ -90,10 +90,6 @@ The **Gallery** widget supports the display of images in a slideshow. To specify
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery

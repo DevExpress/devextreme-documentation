@@ -99,10 +99,6 @@ The following code adds the **Gallery** widget to your page. The simplest config
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery

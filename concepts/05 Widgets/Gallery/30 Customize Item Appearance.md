@@ -95,10 +95,6 @@
     }];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery
@@ -210,10 +206,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     }
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery

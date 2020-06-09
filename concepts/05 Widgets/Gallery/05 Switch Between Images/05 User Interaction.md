@@ -89,10 +89,6 @@ To switch between images on touch-enabled devices, the user can perform the swip
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery
@@ -201,10 +197,6 @@ With the buttons and swipe gesture, the user switches images in a particular ord
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery
@@ -308,10 +300,6 @@ Below the current image, the **Gallery** shows navigation bullets that allow the
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery

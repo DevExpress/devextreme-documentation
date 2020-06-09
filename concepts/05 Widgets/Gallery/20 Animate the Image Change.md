@@ -93,10 +93,6 @@ By default, the change of the image is animated. You can specify how long the an
     ];
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         render() {
             return (
                 <Gallery

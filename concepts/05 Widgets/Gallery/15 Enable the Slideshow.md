@@ -66,9 +66,9 @@ The **Gallery** widget supports the display of images in a slideshow. To specify
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
                 ]
             };
         }
@@ -84,9 +84,9 @@ The **Gallery** widget supports the display of images in a slideshow. To specify
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {

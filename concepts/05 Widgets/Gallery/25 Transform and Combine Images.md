@@ -71,10 +71,10 @@ By default, the **Gallery** widget displays one image at a time. To fit more ima
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person4.png'
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png'
                 ]
             };
         }
@@ -90,10 +90,10 @@ By default, the **Gallery** widget displays one image at a time. To fit more ima
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person4.png'
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png'
     ];
 
     class App extends React.Component {
@@ -189,10 +189,10 @@ When distributing images along the total width, the **Gallery** may add margins 
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
                 ]
             };
         }
@@ -208,10 +208,10 @@ When distributing images along the total width, the **Gallery** may add margins 
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {
@@ -310,10 +310,10 @@ The **Gallery** widget allows you to display not only the current image, but als
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
                 ]
             };
         }
@@ -329,10 +329,10 @@ The **Gallery** widget allows you to display not only the current image, but als
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {

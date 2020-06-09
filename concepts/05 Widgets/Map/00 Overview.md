@@ -44,6 +44,58 @@ The code below adds the **Map** widget to your page. The **Map** is [centered](/
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxMap
+            :zoom="10"
+            :controls="true"
+            :center="centerCoordinates"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxMap } from 'devextreme-vue/map';
+
+    export default {
+        components: {
+            DxMap
+        },
+        data() {
+            return {
+                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Map } from 'devextreme-react/map';
+
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Map
+                    defaultZoom={10}
+                    controls={true}
+                    defaultCenter={centerCoordinates}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

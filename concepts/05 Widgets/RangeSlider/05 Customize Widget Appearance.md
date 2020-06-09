@@ -20,7 +20,7 @@ The **RangeSlider** can display labels for the [min](/api-reference/10%20UI%20Wi
 ##### Angular
 
     <!--HTML-->
-    <dx-range-slider
+    <dx-range-slider ... >
         <dxo-label
             [visible]="true"
             [format]="format"
@@ -47,7 +47,7 @@ The **RangeSlider** can display labels for the [min](/api-reference/10%20UI%20Wi
 ##### Vue
 
     <template>
-        <DxRangeSlider>
+        <DxRangeSlider ... >
             <DxLabel
                 :visible="true"
                 :format="format"
@@ -89,7 +89,7 @@ The **RangeSlider** can display labels for the [min](/api-reference/10%20UI%20Wi
     class App extends React.Component {
         render() {
             return (
-                <RangeSlider>
+                <RangeSlider ... >
                     <Label
                         visible={true}
                         format={format}
@@ -126,7 +126,7 @@ The **RangeSlider** can also display a tooltip for the slider handles. To config
 ##### Angular
 
     <!--HTML-->
-    <dx-range-slider
+    <dx-range-slider ... >
         <dxo-tooltip
             [enabled]="true"
             [format]="format"
@@ -154,7 +154,7 @@ The **RangeSlider** can also display a tooltip for the slider handles. To config
 ##### Vue
 
     <template>
-        <DxRangeSlider>
+        <DxRangeSlider ... >
             <DxTooltip
                 :enabled="true"
                 position="bottom"
@@ -197,7 +197,7 @@ The **RangeSlider** can also display a tooltip for the slider handles. To config
     class App extends React.Component {
         render() {
             return (
-                <RangeSlider>
+                <RangeSlider ... >
                     <Tooltip
                         enabled={true}
                         position="bottom"
@@ -229,7 +229,7 @@ To specify whether or not the selected range should be highlighted, use the **sh
 
     <!--HTML-->
     <dx-range-slider
-        [showRange]="false"
+        [showRange]="false">
     </dx-range-slider>
 
     <!--TypeScript-->

@@ -76,24 +76,27 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
 ##### Vue
 
     <template>
-        <DxPopover
-            :width="200"
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend">
-            <template>
-                <p>Popover content</p>
-            </template>
-            <DxToolbarItem
-                text="Title"
-                location="before"
-            />
-            <DxToolbarItem
-                :options="buttonOptions"
-                widget="dxButton"
-                location="after"
-            />
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover
+                :width="200"
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend">
+                <template>
+                    <p>Popover content</p>
+                </template>
+                <DxToolbarItem
+                    text="Title"
+                    location="before"
+                />
+                <DxToolbarItem
+                    :options="buttonOptions"
+                    widget="dxButton"
+                    location="after"
+                />
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -147,22 +150,25 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    width={200}
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}>
-                    <ToolbarItem
-                        text="Title"
-                        location="before"
-                    />
-                    <ToolbarItem
-                        options={buttonOptions}
-                        widget="dxButton"
-                        location="after"
-                    />
-                </Popover>
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        width={200}
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}>
+                        <ToolbarItem
+                            text="Title"
+                            location="before"
+                        />
+                        <ToolbarItem
+                            options={buttonOptions}
+                            widget="dxButton"
+                            location="after"
+                        />
+                    </Popover>
+                </div>
             );
         }
     }

@@ -59,7 +59,7 @@ To execute certain commands before or after the **Popover** was shown/hidden, ha
 ##### Vue
 
     <template>
-        <DxPopover
+        <DxPopover ...
             @showing="onShowing"
             @shown="onShown"
             @hiding="onHiding"
@@ -125,7 +125,7 @@ To execute certain commands before or after the **Popover** was shown/hidden, ha
 
         render() {
             return (
-                <Popover
+                <Popover ...
                     onShowing={this.onShowing}
                     onShown={this.onShown}
                     onHiding={this.onHiding}

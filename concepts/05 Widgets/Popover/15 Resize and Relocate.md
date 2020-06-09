@@ -50,16 +50,19 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
 ##### Vue
 
     <template>
-        <DxPopover 
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            :height="300"
-            :width="500">
-            <template>
-                <p>Popover content</p>
-            </template>
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :height="300"
+                :width="500">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -92,14 +95,17 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    height={300}
-                    width={500}
-                    contentRender={renderContent}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        height={300}
+                        width={500}
+                        contentRender={renderContent}
+                    />
+                </div>
             );
         }
     }
@@ -169,15 +175,18 @@ If you need to position the **Popover** against a certain side of the [target el
 ##### Vue
 
     <template>
-        <DxPopover 
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            position="top"> <!-- or "bottom" | "left" | "right" -->
-            <template>
-                <p>Popover content</p>
-            </template>
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                position="top"> <!-- or "bottom" | "left" | "right" -->
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -210,12 +219,15 @@ If you need to position the **Popover** against a certain side of the [target el
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                    position="top"/> {/* or "bottom" | "left" | "right" */}
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        position="top"/> {/* or "bottom" | "left" | "right" */}
+                </div>
             );
         }
     }

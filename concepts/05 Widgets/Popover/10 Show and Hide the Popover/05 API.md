@@ -145,6 +145,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### Vue
     <template>
         <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
             <DxPopover
                 target="#image"
                 :visible.sync="isPopoverVisible">
@@ -234,6 +235,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
         render() {
             return (
                 <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
                     <Popover
                         target="#image"
                         visible={this.state.isPopoverVisible}

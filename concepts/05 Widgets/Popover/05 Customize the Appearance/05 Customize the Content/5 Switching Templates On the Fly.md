@@ -85,6 +85,7 @@ If you need to render different templates depending on a specific condition, def
 
     <template>
         <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
             <DxPopover
                 target="#image"
                 show-event="dxhoverstart"
@@ -98,6 +99,7 @@ If you need to render different templates depending on a specific condition, def
                 </template>
             </DxTooltip>
             <DxButton
+                id="buttonContainer"
                 text="Change the Template"
                 @click="changeTemplate"
             />
@@ -128,6 +130,11 @@ If you need to render different templates depending on a specific condition, def
         }
     }
     </script>
+
+    <!--CSS-->#buttonContainer {
+        display: block;
+        width: 200px
+    }
 
 ##### React
 
@@ -170,6 +177,7 @@ If you need to render different templates depending on a specific condition, def
         render() {
             return (
                 <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
                     <Popover
                         target="#image"
                         showEvent="dxhoverstart"
@@ -177,6 +185,7 @@ If you need to render different templates depending on a specific condition, def
                         contentRender={this.state.renderContent}
                     />
                     <Button
+                        id="buttonContainer"
                         text="Change the Template"
                         onClick={this.changeTemplate}
                     />
@@ -186,6 +195,11 @@ If you need to render different templates depending on a specific condition, def
     }
 
     export default App;
+
+    <!--CSS-->#buttonContainer {
+        display: block;
+        width: 200px
+    }
 
 ##### ASP.NET MVC Controls
 

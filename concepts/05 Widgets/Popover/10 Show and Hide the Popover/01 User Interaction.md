@@ -46,14 +46,17 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
 ##### Vue
 
     <template>
-        <DxPopover 
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend">
-            <template>
-                <p>Popover content</p>
-            </template>
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -86,12 +89,15 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                    />
+                </div>
             );
         }
     }
@@ -167,15 +173,18 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
 ##### Vue
 
     <template>
-        <DxPopover 
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            :close-on-outside-click="false">
-            <template>
-                <p>Popover content</p>
-            </template>
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :close-on-outside-click="false">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -208,13 +217,16 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                    closeOnOutsideClick={false}
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        closeOnOutsideClick={false}
+                    />
+                </div>
             );
         }
     }

@@ -50,16 +50,19 @@ When the **Popover** is shown, the area beneath it can be shaded. To enable this
 ##### Vue
 
     <template>
-        <DxPopover 
-            target="#image"
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            :shading="true"
-            shadingColor="rgba(0, 0, 0, 0.2)">
-            <template>
-                <p>Popover content</p>
-            </template>
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :shading="true"
+                shadingColor="rgba(0, 0, 0, 0.2)">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -92,14 +95,17 @@ When the **Popover** is shown, the area beneath it can be shaded. To enable this
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    target="#image"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                    contentRender={renderContent}
-                    shading={true}
-                    shadingColor="rgba(0, 0, 0, 0.2)"
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        shading={true}
+                        shadingColor="rgba(0, 0, 0, 0.2)"
+                    />
+                </div>
             );
         }
     }

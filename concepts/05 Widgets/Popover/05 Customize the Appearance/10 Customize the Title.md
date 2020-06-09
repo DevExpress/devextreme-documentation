@@ -52,15 +52,18 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
 ##### Vue
 
     <template>
-        <DxPopover
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            :show-title="true"
-            :show-close-button="true"
-            target="#image"
-            title="Popover Title">
-            <!-- ... -->
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :show-title="true"
+                :show-close-button="true"
+                target="#image"
+                title="Popover Title">
+                <!-- ... -->
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -87,14 +90,17 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    showTitle={true}
-                    showCloseButton={true}
-                    target="#image"
-                    title="Popover Title"
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        showTitle={true}
+                        showCloseButton={true}
+                        target="#image"
+                        title="Popover Title"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                    />
+                </div>
             );
         }
     }
@@ -177,16 +183,19 @@ If you need to define the title completely, specify a template for it as shown i
 ##### Vue
 
     <template>
-        <DxPopover
-            show-event="dxhoverstart"
-            hide-event="dxhoverend"
-            :show-title="true"
-            target="#image"
-            titleTemplate="titleTemplate">
-            <template #titleTemplate>
-                <p>Title template</p>
-            </template>
-        </DxPopover>
+        <div>
+            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <DxPopover
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :show-title="true"
+                target="#image"
+                titleTemplate="titleTemplate">
+                <template #titleTemplate>
+                    <p>Title template</p>
+                </template>
+            </DxPopover>
+        </div>
     </template>
 
     <script>
@@ -219,13 +228,16 @@ If you need to define the title completely, specify a template for it as shown i
     class App extends React.Component {
         render() {
             return (
-                <Popover
-                    showTitle={true}
-                    target="#image"
-                    titleRender={renderTitle}
-                    showEvent="dxhoverstart"
-                    hideEvent="dxhoverend"
-                />
+                <div>
+                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <Popover
+                        showTitle={true}
+                        target="#image"
+                        titleRender={renderTitle}
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                    />
+                </div>
             );
         }
     }

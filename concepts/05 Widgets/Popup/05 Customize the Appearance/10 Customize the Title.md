@@ -89,6 +89,7 @@ By default, the **Popup** allocates a part of its area to the title, regardless 
                 <Popup
                     visible={this.state.isPopupVisible}
                     showTitle={false}
+                    onHiding={this.onHiding}
                 />
             );
         }

@@ -67,8 +67,8 @@ To switch between images on touch-enabled devices, the user can perform the swip
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png'
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png'
                 ]
             };
         }
@@ -84,8 +84,8 @@ To switch between images on touch-enabled devices, the user can perform the swip
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png'
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png'
     ];
 
     class App extends React.Component {
@@ -173,9 +173,9 @@ With the buttons and swipe gesture, the user switches images in a particular ord
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person3.png'
                 ]
             };
         }
@@ -191,9 +191,9 @@ With the buttons and swipe gesture, the user switches images in a particular ord
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {
@@ -278,8 +278,8 @@ Below the current image, the **Gallery** shows navigation bullets that allow the
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png'
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png'
                 ]
             };
         }
@@ -295,8 +295,8 @@ Below the current image, the **Gallery** shows navigation bullets that allow the
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png'
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png'
     ];
 
     class App extends React.Component {

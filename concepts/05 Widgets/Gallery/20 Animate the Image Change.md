@@ -69,9 +69,9 @@ By default, the change of the image is animated. You can specify how long the an
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person3.png'
                 ]
             };
         }
@@ -87,9 +87,9 @@ By default, the change of the image is animated. You can specify how long the an
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_1/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/19_2/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {

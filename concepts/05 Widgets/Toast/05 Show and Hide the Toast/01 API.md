@@ -18,7 +18,7 @@ To show or hide the **Toast** programmatically, call the [show()](/api-reference
         });
     });
 
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#visible') property of the **Toast** widget to a component property. After that, change this property or variable, and the **Toast** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#visible') property of the **Toast** widget to a component property. After that, change this property, and the **Toast** will appear or disappear.
 
 ---
 ##### Angular

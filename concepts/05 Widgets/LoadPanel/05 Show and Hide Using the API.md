@@ -3,7 +3,7 @@
 To show or hide the **LoadPanel** programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the **LoadPanel**, respectively.
 
 ---
-#####**jQuery**
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -20,7 +20,7 @@ To show or hide the **LoadPanel** programmatically, call the [show()](/api-refer
         });
     });
 
-#####ASP.NET MVC Controls
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().LoadPanel()
@@ -62,7 +62,7 @@ To show or hide the **LoadPanel** programmatically, call the [show()](/api-refer
 
 ---
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#visible') property of the **LoadPanel** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, change this property/variable, and the **LoadPanel** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#visible') property of the **LoadPanel** widget to a component property. After that, change this property, and the **LoadPanel** will appear or disappear.
 
 ---
 ##### Angular
@@ -92,47 +92,97 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the [visib
         // ...
     })
 
-##### AngularJS
+##### Vue
 
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-load-panel="{
-            closeOnOutsideClick: true,
-            bindingOptions: {
-                visible: 'isLoadPanelVisible'
+    <template>
+        <div>
+            <DxLoadPanel
+                :close-on-outside-click="true"
+                :visible.sync="isLoadPanelVisible"
+            />
+            <DxButton
+                text="Show the Load Panel"
+                @click="handleClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadPanel } from 'devextreme-vue/load-panel';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxLoadPanel,
+            DxButton
+        },
+        data() {
+            return {
+                isLoadPanelVisible: false
             }
-        }"></div>
-        <div dx-button="{
-            text: 'Show the Load Panel',
-            onClick: showLoadPanel
-        }"></div>
-    </div>
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.isLoadPanelVisible = false;
-            $scope.showLoadPanel = function () {
-                $scope.isLoadPanelVisible = true;
+        },
+        methods: {
+            handleClick() {
+                this.isLoadPanelVisible = true;
             }
-        });
-
-##### Knockout
-
-    <!--HTML--><div data-bind="dxLoadPanel: {
-        closeOnOutsideClick: true,
-        visible: isLoadPanelVisible
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Show the Load Panel',
-        onClick: function (e) {
-            e.model.isLoadPanelVisible(true);
         }
-    }"></div>
+    }
+    </script>
 
-    <!--JavaScript-->var viewModel = {
-        isLoadPanelVisible: ko.observable(false)
-    };
+##### React
 
-    ko.applyBindings(viewModel);
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadPanel } from 'devextreme-react/load-panel';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isLoadPanelVisible: false
+            };
+
+            this.handleClick = this.handleClick.bind(this);
+            this.handleHide = this.handleHide.bind(this);
+        }
+
+        handleClick() {
+            this.setState({
+                isLoadPanelVisible: true
+            });
+        }
+
+        handleHide() {
+            this.setState({
+                isLoadPanelVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <LoadPanel
+                        closeOnOutsideClick={true}
+                        visible={this.state.isLoadPanelVisible}
+                        onHidden={this.handleHide}
+                    />
+                    <Button
+                        text="Show the Load Panel"
+                        onClick={this.handleClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -190,16 +240,116 @@ To execute certain commands before or after the **LoadPanel** is shown/hidden, h
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <DxLoadPanel
+                :close-on-outside-click="true"
+                :visible.sync="isLoadPanelVisible"
+                @shown="hideLoadPanel"
+            />
+            <DxButton
+                text="Show the Load Panel"
+                @click="handleClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLoadPanel } from 'devextreme-vue/load-panel';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxLoadPanel,
+            DxButton
+        },
+        data() {
+            return {
+                isLoadPanelVisible: false
+            }
+        },
+        methods: {
+            handleClick() {
+                this.isLoadPanelVisible = true;
+            },
+            hideLoadPanel(e) {
+                setTimeout(() => { 
+                    e.component.hide();          
+                }, 3000);
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { LoadPanel } from 'devextreme-react/load-panel';
+    import { Button } from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isLoadPanelVisible: false
+            };
+
+            this.handleClick = this.handleClick.bind(this);
+            this.hideLoadPanel = this.hideLoadPanel.bind(this);
+        }
+
+        handleClick() {
+            this.setState({
+                isLoadPanelVisible: true
+            });
+        }
+
+        hideLoadPanel(e) {
+            setTimeout(() => { 
+                this.setState({
+                    isLoadPanelVisible: false
+                });          
+            }, 3000);
+        }
+
+        render() {
+            return (
+                <div>
+                    <LoadPanel
+                        closeOnOutsideClick={true}
+                        visible={this.state.isLoadPanelVisible}
+                        onShown={this.hideLoadPanel}
+                    />
+                    <Button
+                        text="Show the Load Panel"
+                        onClick={this.handleClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var shownEventHandler1 = function (e) {
+    const shownEventHandler1 = function (e) {
         // First handler of the "shown" event
     };
 
-    var shownEventHandler2 = function (e) {
+    const shownEventHandler2 = function (e) {
         // Second handler of the "shown" event
     };
 

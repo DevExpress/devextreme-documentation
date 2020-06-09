@@ -9,7 +9,7 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
 ---
 ##### jQuery
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="tooltipContainer"></div>
 
     <!--JavaScript-->$(function() {
@@ -27,7 +27,7 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
 
 ##### Angular
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <dx-tooltip
         target="#image"
         showEvent="dxhoverstart"
@@ -55,7 +55,7 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxTooltip
                 target="#image"
                 show-event="dxhoverstart"
@@ -98,7 +98,7 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Tooltip
                         target="#image"
                         showEvent="dxhoverstart"
@@ -123,7 +123,7 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
             <p>Tooltip content</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 

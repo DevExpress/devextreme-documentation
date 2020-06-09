@@ -34,7 +34,7 @@ To show or hide the **Tooltip** programmatically, call the [show()](/api-referen
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="tooltipContainer"></div>
     <div id="showButton"></div>
     <div id="hideButton"></div>
@@ -49,7 +49,7 @@ To show or hide the **Tooltip** programmatically, call the [show()](/api-referen
             <p>Tooltip content</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
     @(Html.DevExtreme().Button()
         .ID("showButton")
@@ -114,7 +114,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-tooltip
         target="#image"
         [visible]="isTooltipVisible">
@@ -149,7 +149,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxTooltip
                 target="#image"
                 :visible.sync="isTooltipVisible">
@@ -238,7 +238,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Tooltip
                         target="#image"
                         visible={this.state.isTooltipVisible}

@@ -19,14 +19,14 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
     });
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <div id="tooltipContainer"></div>
 
 
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-tooltip
         target="#image"
         showEvent="dxhoverstart"
@@ -56,7 +56,7 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxTooltip
                 target="#image"
                 show-event="dxhoverstart"
@@ -101,7 +101,7 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Tooltip
                         target="#image"
                         showEvent="dxhoverstart"
@@ -130,7 +130,7 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
         .Height(70)
         .Width(200)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 
@@ -154,13 +154,13 @@ If you need to position the **Tooltip** against a certain side of the [target el
     });
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <div id="tooltipContainer"></div>
 
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-tooltip
         target="#image"
         showEvent="dxhoverstart"
@@ -189,7 +189,7 @@ If you need to position the **Tooltip** against a certain side of the [target el
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxTooltip
                 target="#image"
                 show-event="dxhoverstart"
@@ -233,7 +233,7 @@ If you need to position the **Tooltip** against a certain side of the [target el
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Tooltip
                         target="#image"
                         showEvent="dxhoverstart"
@@ -259,7 +259,7 @@ If you need to position the **Tooltip** against a certain side of the [target el
         </text>)
         .Position(Position.Top) // or Position.Bottom | Position.Left | Position.Right
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 

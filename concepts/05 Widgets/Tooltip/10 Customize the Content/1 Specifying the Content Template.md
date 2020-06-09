@@ -19,13 +19,13 @@ The template implementation depends on the used framework or library. Examples o
     });
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <div id="tooltipContainer"></div>
 
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-tooltip
         target="#image"
         showEvent="dxhoverstart"
@@ -57,7 +57,7 @@ The template implementation depends on the used framework or library. Examples o
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxTooltip
                 target="#image"
                 show-event="dxhoverstart">
@@ -108,7 +108,7 @@ The template implementation depends on the used framework or library. Examples o
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Tooltip
                         target="#image"
                         showEvent="dxhoverstart"
@@ -134,6 +134,6 @@ The template implementation depends on the used framework or library. Examples o
             )
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---

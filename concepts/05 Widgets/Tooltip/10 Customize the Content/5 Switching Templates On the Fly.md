@@ -4,7 +4,7 @@ If you need to render different templates depending on a specific condition, def
 ##### jQuery
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <div id="buttonContainer"></div>
     <div id="tooltipContainer">
         <div data-options="dxTemplate: { name: 'template1' }">
@@ -39,7 +39,7 @@ If you need to render different templates depending on a specific condition, def
 
 ##### Angular
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <dx-button
         id="buttonContainer"
         text="Change the Template"
@@ -85,7 +85,7 @@ If you need to render different templates depending on a specific condition, def
 
     <template>
         <div>
-            <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+            <img id="image" src="https://url/to/an/image" />
             <DxTooltip
                 target="#image"
                 show-event="dxhoverstart"
@@ -180,7 +180,7 @@ If you need to render different templates depending on a specific condition, def
         render() {
             return (
                 <div>
-                    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+                    <img id="image" src="https://url/to/an/image" />
                     <Tooltip
                         target="#image"
                         showEvent="dxhoverstart"
@@ -222,7 +222,7 @@ If you need to render different templates depending on a specific condition, def
         <p>Second template</p>
     }
 
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
     @(Html.DevExtreme().Button()
         .ID("changeTemplateButton")

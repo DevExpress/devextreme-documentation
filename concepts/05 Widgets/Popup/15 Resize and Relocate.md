@@ -337,7 +337,8 @@ If you need to position the **Popup** against a specific element on your page, s
             return (
                 <Popup
                     visible={this.state.isPopupVisible}
-                    title="Popup Title">
+                    title="Popup Title"
+                    onHiding={this.onHiding}>
                     <Position
                         my="left"
                         at="left"

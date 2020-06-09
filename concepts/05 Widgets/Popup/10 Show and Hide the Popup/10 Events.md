@@ -59,7 +59,7 @@ To execute certain commands before or after the **Popup** was shown/hidden, hand
 ##### Vue
 
     <template>
-        <DxPopup
+        <DxPopup ...
             @showing="onShowing"
             @shown="onShown"
             @hiding="onHiding"
@@ -103,10 +103,6 @@ To execute certain commands before or after the **Popup** was shown/hidden, hand
     import { Popup } from 'devextreme-react/popup';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         onShowing(e) {
             // Handler of the 'showing' event
         }
@@ -125,7 +121,7 @@ To execute certain commands before or after the **Popup** was shown/hidden, hand
 
         render() {
             return (
-                <Popup
+                <Popup ...
                     onShowing={this.onShowing}
                     onShown={this.onShown}
                     onHiding={this.onHiding}

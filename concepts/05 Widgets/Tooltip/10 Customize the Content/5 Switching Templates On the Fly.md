@@ -99,6 +99,7 @@ If you need to render different templates depending on a specific condition, def
                 </template>
             </DxTooltip>
             <DxButton
+                id="buttonContainer"
                 text="Change the Template"
                 @click="changeTemplate"
             />
@@ -184,6 +185,7 @@ If you need to render different templates depending on a specific condition, def
                         contentRender={this.state.renderContent}
                     />
                     <Button
+                        id="buttonContainer"
                         text="Change the Template"
                         onClick={this.changeTemplate}
                     />

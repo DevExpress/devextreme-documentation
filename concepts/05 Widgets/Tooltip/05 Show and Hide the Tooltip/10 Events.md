@@ -59,7 +59,7 @@ To execute certain commands before or after the **Tooltip** was shown/hidden, ha
 ##### Vue
 
     <template>
-        <DxTooltip
+        <DxTooltip ...
             @showing="onShowing"
             @shown="onShown"
             @hiding="onHiding"
@@ -125,7 +125,7 @@ To execute certain commands before or after the **Tooltip** was shown/hidden, ha
 
         render() {
             return (
-                <Tooltip
+                <Tooltip ...
                     onShowing={this.onShowing}
                     onShown={this.onShown}
                     onHiding={this.onHiding}

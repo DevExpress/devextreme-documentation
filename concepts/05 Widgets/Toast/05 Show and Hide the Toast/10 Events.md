@@ -4,70 +4,48 @@ To execute certain commands before or after the **Toast** was shown/hidden, hand
 ##### jQuery
 
     <!--JavaScript-->$(function() {
-        const counter = 3;
-
         $("#toastContainer").dxToast({
-            message: counter,
-            displayTime: 500,
+            // ...
+            onShowing: function (e) {
+                // Handler of the "showing" event
+            },
+            onShown: function (e) {
+                // Handler of the "shown" event
+            },
+            onHiding: function (e) {
+                // Handler of the "hiding" event
+            },
             onHidden: function (e) {
-                counter--;
-                if (counter != 0) {
-                    e.component.option("message", counter);
-                } else {
-                    e.component.option({
-                        message: "Go!",
-                        onHidden: undefined,
-                        displayTime: 3000,
-                        type: "success"
-                    });
-                }
-                e.component.show();
+                // Handler of the "hidden" event
             }
-        });
-
-        $("#buttonContainer").dxButton({
-            text: "Start the Countdown", 
-            onClick: function () {
-                $("#toastContainer").dxToast("show");
-            } 
         });
     });
 
 ##### Angular
 
     <!--HTML-->
-    <dx-toast
-        [(visible)]="isVisible"
-        [displayTime]="displayTime"
-        [message]="message"
-        (onHidden)="onHidden($event)"
-        [type]="type">
+    <dx-toast ...
+        (onShowing)="onShowing($event)"
+        (onShown)="onShown($event)"
+        (onHiding)="onHiding($event)"
+        (onHidden)="onHidden($event)">
     </dx-toast>
-    <dx-button
-        text="Start the Countdown"
-        (onClick)="isVisible = true">
-    </dx-button>
 
     <!--TypeScript-->
     import { DxToastModule, DxButtonModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        isVisible: boolean = false;
-        counter: number = 3;
-        displayTime: number = 500;
-        type = "info";
-        message: string = this.counter.toString();
+        onShowing (e) {
+            // Handler of the "showing" event
+        },
+        onShown (e) {
+            // Handler of the "shown" event
+        },
+        onHiding (e) {
+            // Handler of the "hiding" event
+        },
         onHidden (e) {
-            this.counter--;
-            if (this.counter !== 0) {
-                this.message = this.counter.toString();
-            } else {
-                this.message = "Go!";
-                this.onHidden = undefined;
-                this.displayTime = 3000;
-                this.type = "success";
-            }
-            this.isVisible = true;
+            // Handler of the "hidden" event
         }
     }
     @NgModule({
@@ -82,19 +60,12 @@ To execute certain commands before or after the **Toast** was shown/hidden, hand
 ##### Vue
 
     <template>
-        <div>
-            <DxToast
-                :visible.sync="isVisible"
-                :message="message"
-                :display-time="displayTime"
-                @hidden="onHidden"
-                :type="type"
-            />
-            <DxButton
-                text="Start the Countdown"
-                @click="onClick"
-            />
-        </div>
+        <DxToast ...
+            @showing="onShowing"
+            @shown="onShown"
+            @hiding="onHiding"
+            @hidden="onHidden"
+        />
     </template>
 
     <script>
@@ -109,30 +80,18 @@ To execute certain commands before or after the **Toast** was shown/hidden, hand
             DxToast,
             DxButton
         },
-        data() {
-            return {
-                isVisible: false,
-                displayTime: 500,
-                type: "info",
-                counter: 3,
-                message: this.counter && this.counter.toString() || "3"
-            };
-        },
         methods: {
-            onClick() {
-                this.isVisible = true;
+            onShowing(e) {
+                // Handler of the 'showing' event
+            },
+            onShown(e) {
+                // Handler of the 'shown' event
+            },
+            onHiding(e) {
+                // Handler of the 'hiding' event
             },
             onHidden(e) {
-                this.counter--;
-                if (this.counter !== 0) {
-                    this.message = this.counter.toString();
-                } else {
-                    this.message = "Go!";
-                    this.onHidden = () => {};
-                    this.displayTime = 3000;
-                    this.type = "success";
-                }
-                this.isVisible = true;
+                // Handler of the 'hidden' event
             }
         }
     }
@@ -148,70 +107,30 @@ To execute certain commands before or after the **Toast** was shown/hidden, hand
     import { Button } from 'devextreme-react/button';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.state = {
-                isVisible: false,
-                counter: 3,
-                displayTime: 500,
-                type: 'info',
-                message: this.counter && this.counter.toString() || "3"
-            };
-
-            this.onClick = this.onClick.bind(this);
-            this.onHiding = this.onHiding.bind(this);
+        onShowing(e) {
+            // Handler of the 'showing' event
         }
 
-        onClick() {
-            this.setState({
-                isVisible: true
-            });
+        onShown(e) {
+            // Handler of the 'shown' event
         }
-        
+
         onHiding(e) {
-            let counter = this.state.counter - 1;
-            let message = this.state.message;
-            let displayTime = this.state.displayTime;
-            let type = this.state.type;
+            // Handler of the 'hiding' event
+        }
 
-            if (counter !== 0) {
-                message = counter.toString();
-            } else {
-                message = "Go!";
-                displayTime = 3000;
-                type = "success";
-                this.onHiding = (() => {
-                    this.setState({
-                        isVisible: false
-                    });
-                }).bind(this);
-            }
-
-            this.setState({
-                counter,
-                message,
-                displayTime,
-                type,
-                isVisible: true
-            });
+        onHidden(e) {
+            // Handler of the 'hidden' event
         }
 
         render() {
             return (
-                <div>
-                    <Toast
-                        visible={this.state.isVisible}
-                        message={this.state.message}
-                        displayTime={this.state.displayTime}
-                        onHiding={this.onHiding}
-                        type={this.state.type}
-                    />
-                    <Button
-                        text="Start the Countdown"
-                        onClick={this.onClick}
-                    />
-                </div>
+                <Toast ...
+                    onShowing={this.onShowing}
+                    onShown={this.onShown}
+                    onHiding={this.onHiding}
+                    onHidden={this.onHidden}
+                />
             );
         }
     }

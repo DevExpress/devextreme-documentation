@@ -160,9 +160,9 @@ When using maps, you should include an API key that authenticates your applicati
             return {
                 centerCoordinates: { lat: 40.749825, lng: -73.987963 },
                 authentificationKeys: {
-                    bing: this.BING_API_KEY,
-                    google: this.GOOGLE_API_KEY,
-                    googleStatic: this.GOOGLE_STATIC_API_KEY
+                    bing: BING_API_KEY,
+                    google: GOOGLE_API_KEY,
+                    googleStatic: GOOGLE_STATIC_API_KEY
                 }
             };
         }
@@ -179,9 +179,9 @@ When using maps, you should include an API key that authenticates your applicati
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
     const authentificationKeys = {
-        bing: this.BING_API_KEY,
-        google: this.GOOGLE_API_KEY,
-        googleStatic: this.GOOGLE_STATIC_API_KEY
+        bing: BING_API_KEY,
+        google: GOOGLE_API_KEY,
+        googleStatic: GOOGLE_STATIC_API_KEY
     };
 
     class App extends React.Component {

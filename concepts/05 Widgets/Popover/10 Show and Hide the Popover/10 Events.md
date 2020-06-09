@@ -103,10 +103,6 @@ To execute certain commands before or after the **Popover** was shown/hidden, ha
     import { Popover } from 'devextreme-react/popover';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         onShowing(e) {
             // Handler of the 'showing' event
         }

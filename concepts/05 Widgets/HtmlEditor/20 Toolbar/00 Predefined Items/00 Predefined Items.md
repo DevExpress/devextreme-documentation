@@ -233,7 +233,7 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
         render() {
             return (
                 <HtmlEditor>
-                    <Toolbar
+                    <Toolbar>
                         <Item formatName="bold"/>
                         <Item formatName="italic"/>
                         <Item formatName="alignRight"/>

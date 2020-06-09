@@ -29,6 +29,11 @@ In the following code, the `strike` format is extended so that the stricken out 
 
 ##### Angular
 
+    <!--HTML-->
+    <dx-html-editor
+        (onInitialized)="onInitialized($event)">
+    </dx-html-editor>
+
     <!--TypeScript-->
     import { DxHtmlEditorModule } from "devextreme-angular";
     // ...
@@ -56,11 +61,6 @@ In the following code, the `strike` format is extended so that the stricken out 
         ],
         // ...
     })
-
-    <!--HTML-->
-    <dx-html-editor
-        (onInitialized)="onInitialized($event)">
-    </dx-html-editor>
 
 ##### Vue
 
@@ -109,10 +109,6 @@ In the following code, the `strike` format is extended so that the stricken out 
     import { HtmlEditor } from 'devextreme-react/html-editor';
 
     class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
         onInitialized(e) {
             const htmlEditor = e.component;
             const Strike = htmlEditor.get('formats/strike');

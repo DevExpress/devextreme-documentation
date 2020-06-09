@@ -205,7 +205,8 @@ If your data is an array of objects, specify:
     <!--JavaScript-->
     $(function () {
         const customers = [
-            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" }
+            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+            { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
             // ...
         ];
         const selectedValue = customers[0].ID;
@@ -262,6 +263,7 @@ If your data is an array of objects, specify:
     export class AppComponent  {
         customers = [
             { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+            { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
             // ...
         ];
         customerDataSource = new ArrayStore({
@@ -325,6 +327,7 @@ If your data is an array of objects, specify:
         data() {
             const customers = [
                 { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+                { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
                 // ...
             ];
             return {
@@ -358,6 +361,7 @@ If your data is an array of objects, specify:
     
     const customers = [
         { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+        { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
         // ...
     ];
 
@@ -443,7 +447,8 @@ If your data is an array of objects, specify:
 
     <script>
         const customers = [
-            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" }, 
+            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+            { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" }, 
             // ...
         ];
         const selectedValue = customers[0].ID;

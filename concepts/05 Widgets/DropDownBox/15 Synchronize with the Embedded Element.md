@@ -335,15 +335,15 @@ This step's implementation depends on the embedded widget's API and the library/
 
             render() {
                 return (
-                    <DxDropDownBox ...
+                    <DropDownBox ...
                         ref={this.dropDownBoxRef}
                         value="this.state.dropDownBoxValues">
-                        <DxDataGrid ...
+                        <DataGrid ...
                             selectedRowKeys={this.state.dropDownBoxValues}
                             onSelectionChanged={this.changeDropDownBoxValue}>
-                            <DxSelection mode="multiple" />
-                        </DxDataGrid>
-                    </DxDropDownBox>
+                            <Selection mode="multiple" />
+                        </DataGrid>
+                    </DropDownBox>
                 );
             }
         }

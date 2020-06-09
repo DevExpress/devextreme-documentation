@@ -3,7 +3,7 @@ On desktops and iOS devices, the drop-down menu is the [Popover](/concepts/05%20
 To customize the **Popup** or **Popover**, use the [dropDownOptions](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#dropDownOptions') object. For example, the following code removes shading from beneath the **Popup** and disables full-screen mode:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -22,7 +22,7 @@ To customize the **Popup** or **Popover**, use the [dropDownOptions](/api-refere
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup
@@ -48,12 +48,81 @@ To customize the **Popup** or **Popover**, use the [dropDownOptions](/api-refere
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="dataSource"
+            :use-popover="false">
+            <DxDropDownOptions
+                :shading="false"
+                :full-screen="false"
+            />
+        </DxLookup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup, DxDropDownOptions } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup,
+            DxDropDownOptions
+        },
+        data() {
+            return {
+                dataSource: [
+                    'HD Video Player',
+                    'SuperHD Video Player',
+                    'SuperPlasma 50',
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup, DropDownOptions } from 'devextreme-react/lookup';
+
+    const dataSource = [
+        'HD Video Player',
+        'SuperHD Video Player',
+        'SuperPlasma 50',
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={dataSource}
+                    usePopover={false}>
+                    <DropDownOptions
+                        shading={false}
+                        fullScreen={false}
+                    />
+                </Lookup>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 To change the size of the drop-down menu and position it against a specific element on your page, specify the [height](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#height), [width](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#width) and [position](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#position) options in the **dropDownOptions** object. The following configuration of the **position** option reads as follows: "place **my** *left* side **at** the *left* side **of** the *"#targetElement"*.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -76,7 +145,7 @@ To change the size of the drop-down menu and position it against a specific elem
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <img id="targetElement" src="http://here/goes/my.jpg">
@@ -106,12 +175,96 @@ To change the size of the drop-down menu and position it against a specific elem
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <img id="targetElement" src="http://here/goes/my.jpg" />
+            <DxLookup
+                :data-source="dataSource">
+                <DxDropDownOptions
+                    :width="300"
+                    :height="300">
+                    <DxPosition
+                        my="left"
+                        at="left"
+                        of="#targetElement"
+                    />
+                </DxDropDownOptions>
+            </DxLookup>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup, DxDropDownOptions, DxPosition } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup,
+            DxDropDownOptions,
+            DxPosition
+        },
+        data() {
+            return {
+                dataSource: [
+                    'HD Video Player',
+                    'SuperHD Video Player',
+                    'SuperPlasma 50',
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup, DropDownOptions, Position } from 'devextreme-react/lookup';
+
+    const dataSource = [
+        'HD Video Player',
+        'SuperHD Video Player',
+        'SuperPlasma 50',
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <img id="targetElement" src="http://here/goes/my.jpg" />
+                    <Lookup
+                        dataSource={dataSource}>
+                        <DropDownOptions
+                            width={300}
+                            height={300}>
+                            <Position
+                                my="left"
+                                at="left"
+                                of="#targetElement"
+                            />
+                        </DropDownOptions>
+                    </Lookup>
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 The drop-down menu can have a title. Use the **dropDownOptions**.[title](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#title) option to specify its text, or the **dropDownOptions**.[titleTemplate](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#titleTemplate) option to redesign it completely. For details on implementing templates, see the [Customize Item Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/Customize_Item_Appearance/') topic.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -134,7 +287,7 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/Docume
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup [dataSource]="lookupDataSource">
@@ -160,6 +313,83 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/Docume
         ],
         // ...
     })
+
+
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="dataSource">
+            <DxDropDownOptions
+                title="Products">
+                <!-- title-template="titleTemplate">
+                <template #titleTemplate>
+                    <div :style="{color: 'blue'}">Products</div>
+                </template> -->
+            </DxDropDownOptions>
+        </DxLookup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup, DxDropDownOptions } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup,
+            DxDropDownOptions
+        },
+        data() {
+            return {
+                dataSource: [
+                    'HD Video Player',
+                    'SuperHD Video Player',
+                    'SuperPlasma 50',
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup, DropDownOptions } from 'devextreme-react/lookup';
+
+    const dataSource = [
+        'HD Video Player',
+        'SuperHD Video Player',
+        'SuperPlasma 50',
+        // ...
+    ];
+
+    const renderTitle = () => {
+        return (
+            <div style={{color: 'blue'}}>Products</div>
+        );
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={dataSource}>
+                    <DropDownOptions
+                        title="Products"
+                        {/* titleRender={renderTitle} */}
+                    />
+                </Lookup>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -1,7 +1,7 @@
 For a minor customization of **Lookup** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -16,7 +16,14 @@ For a minor customization of **Lookup** items, you can define [specific fields](
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="lookupDataSource"
+        valueExpr="text"
+        displayExpr="text">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -36,19 +43,72 @@ For a minor customization of **Lookup** items, you can define [specific fields](
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupDataSource"
-        valueExpr="text"
-        displayExpr="text">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="dataSource"
+            value-expr="text"
+            display-expr="text"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                dataSource: [
+                    { text: 'HD Video Player' },
+                    { text: 'SuperHD Video Player', disabled: true },
+                    { text: 'SuperPlasma 50', visible: false }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const dataSource = [
+        { text: 'HD Video Player' },
+        { text: 'SuperHD Video Player', disabled: true },
+        { text: 'SuperPlasma 50', visible: false }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={dataSource}
+                    valueExpr="text"
+                    displayExpr="text"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
-If you need a more flexible solution, define a custom template for widget items. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **Lookup** items.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:.
 
 ---
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup
@@ -89,84 +149,105 @@ If you need a more flexible solution, define a custom template for widget items.
         // ...
     })
 
-#####AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-lookup="{
-            dataSource: lookupData,
-            valueExpr: 'id',
-            itemTemplate: 'item'
-        }" dx-item-alias="product">
-            <div data-options="dxTemplate: { name: 'item' }">
-                <img ng-src="{{product.imgSrc}}"/>
-                <div 
-                    style="display:inline-block; 
-                    font-style:{{$index % 2 == 0 ? 'italic' : 'normal'}}">
-                    {{product.name}}
+    <template>
+        <DxLookup
+            :data-source="dataSource"
+            value-expr="id"
+            item-template="item">
+            <template #item="{ data, index }">
+                <div>
+                    <img :src="data.imgSrc"/>
+                    <div 
+                        :style="{'display': 'inline-block', 'font-style': index % 2 === 0 ? 'italic' : 'normal'}">
+                        {{data.name}}
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </template>
+        </DxLookup>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.lookupData = [{
-                id: 1,
-                name: "HD Video Player",
-                imgSrc: "images/products/1-small.png"
-            }, {
-                id: 2,
-                name: "UltraHD Player",
-                imgSrc: "images/products/2-small.png"
-            },
-            // ...
-            ];
-        });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
+    import { DxLookup } from 'devextreme-vue/lookup';
 
-#####Knockout
-
-    <!--HTML-->
-    <div data-bind="dxLookup: {
-        dataSource: lookupData,
-        valueExpr: 'id',
-        itemTemplate: 'item'
-    }">
-        <div data-options="dxTemplate: { name: 'item' }">
-            <img data-bind="attr: { src: imgSrc }"/>
-            <div style="display:inline-block" data-bind="{
-                style: { 'font-style': $index % 2 == 0 ? 'italic' : 'normal' },
-                text: name
-            }"></div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        lookupData: [{
-            id: 1,
-            name: "HD Video Player",
-            imgSrc: "images/products/1-small.png"
-        }, {
-            id: 2,
-            name: "UltraHD Player",
-            imgSrc: "images/products/2-small.png"
+    export default {
+        components: {
+            DxLookup
         },
-        // ...
-        ]
+        data() {
+            return {
+                dataSource: [{
+                    id: 1,
+                    name: "HD Video Player",
+                    imgSrc: "images/products/1-small.png"
+                }, {
+                    id: 2,
+                    name: "UltraHD Player",
+                    imgSrc: "images/products/2-small.png"
+                },
+                // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const dataSource = [{
+        id: 1,
+        name: "HD Video Player",
+        imgSrc: "images/products/1-small.png"
+    }, {
+        id: 2,
+        name: "UltraHD Player",
+        imgSrc: "images/products/2-small.png"
+    },
+    // ...
+    ];
+
+    const renderItem = (data, index) => {
+        return (
+            <div>
+                <img src={data.imgSrc}/>
+                <div 
+                    style={{display: 'inline-block', fontStyle: index % 2 === 0 ? 'italic' : 'normal'}}>
+                    {data.name}
+                </div>
+            </div>      
+        );
     };
 
-    ko.applyBindings(viewModel);
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={dataSource}
+                    valueExpr="id"
+                    itemRender={renderItem}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
-    var lookupData = [{
+    const lookupData = [{
         id: 1,
         name: "HD Video Player",
         imgSrc: "images/products/1-small.png"
@@ -202,7 +283,7 @@ You can also customize an individual **Lookup** item. For this purpose, declare 
     </script>
 
     <!--JavaScript-->
-    var lookupData = [
+    const lookupData = [
         { text: "SuperHD Player"},
         { text: "HD Video Player", template: $("#individualTemplate") },
         // ...
@@ -211,7 +292,7 @@ You can also customize an individual **Lookup** item. For this purpose, declare 
 Using similar techniques, you can customize the input field of the **Lookup**. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#fieldTemplate') option. 
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -227,7 +308,7 @@ Using similar techniques, you can customize the input field of the **Lookup**. T
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup
@@ -264,35 +345,88 @@ Using similar techniques, you can customize the input field of the **Lookup**. T
         // ...
     })
 
-#####AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-lookup="{
-            dataSource: lookupData,
-            valueExpr: 'id',
-            displayExpr: 'name',
-            fieldTemplate: 'inputField'
-        }" dx-item-alias="product">
-            <div data-options="dxTemplate: { name: 'inputField' }">
-                <img ng-src="{{ product.imgSrc }}" />
-            </div>
-        </div>
-    </div>
+    <template>
+        <DxLookup
+            :data-source="dataSource"
+            value-expr="id"
+            display-expr="name"
+            field-template="fieldInput">
+            <template #fieldInput="{ data }">
+                <img :src="data && data.imgSrc"/>
+            </template>
+        </DxLookup>
+    </template>
 
-#####Knockout
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--HTML-->
-    <div data-bind="dxLookup: {
-        dataSource: lookupData,
-        valueExpr: 'id',
-        displayExpr: 'name',
-        fieldTemplate: 'inputField'
-    }">
-        <div data-options="dxTemplate: { name: 'inputField' }">
-            <img data-bind="attr: { src: imgSrc }" />
-        </div>
-    </div>
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                dataSource: [{
+                    id: 1,
+                    name: "HD Video Player",
+                    imgSrc: "images/products/1-small.png"
+                }, {
+                    id: 2,
+                    name: "UltraHD Player",
+                    imgSrc: "images/products/2-small.png"
+                },
+                // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const dataSource = [{
+        id: 1,
+        name: "HD Video Player",
+        imgSrc: "images/products/1-small.png"
+    }, {
+        id: 2,
+        name: "UltraHD Player",
+        imgSrc: "images/products/2-small.png"
+    },
+    // ...
+    ];
+
+    const renderField = (data) => {
+        return (
+            <img src={data && data.imgSrc}/>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={dataSource}
+                    valueExpr="id"
+                    displayExpr="name"
+                    fieldRender={renderField}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

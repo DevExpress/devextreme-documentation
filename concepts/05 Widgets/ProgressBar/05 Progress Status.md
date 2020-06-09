@@ -11,7 +11,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
              max: 100,
              showStatus: true,
              statusFormat: function(value) {
-                 return value + "USD";
+                 return value + " USD";
              }
          });
     });
@@ -32,7 +32,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
     // ...
     export class AppComponent {
         statusFormat(value) {
-            return value + "USD";
+            return value + " USD";
         }
     }
     @NgModule({
@@ -67,7 +67,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
         },
         methods: {
             statusFormat(value) {
-                return value + "USD";
+                return value + " USD";
             }
         }
     }
@@ -87,7 +87,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
         }
 
         statusFormat(value) {
-            return value + "USD";
+            return value + " USD";
         }
 
         render() {

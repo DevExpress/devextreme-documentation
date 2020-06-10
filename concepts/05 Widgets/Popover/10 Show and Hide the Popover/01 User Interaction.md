@@ -11,7 +11,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -19,7 +19,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -43,6 +43,67 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <img id="image" src="https://url/to/an/image" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <img id="image" src="https://url/to/an/image" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -54,7 +115,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
             <p>Popover content</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 
@@ -76,7 +137,7 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -84,7 +145,7 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -109,6 +170,69 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <img id="image" src="https://url/to/an/image" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :close-on-outside-click="false">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <img id="image" src="https://url/to/an/image" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        closeOnOutsideClick={false}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -121,6 +245,6 @@ The **Popover** can also be hidden when a user clicks outside it. To control thi
         </text>)
         .CloseOnOutsideClick(false)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---

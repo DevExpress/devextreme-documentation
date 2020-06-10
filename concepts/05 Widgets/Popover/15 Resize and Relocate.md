@@ -13,7 +13,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
         });
     });
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -21,7 +21,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -47,6 +47,71 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <img id="image" src="https://url/to/an/image" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :height="300"
+                :width="500">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <img id="image" src="https://url/to/an/image" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        height={300}
+                        width={500}
+                        contentRender={renderContent}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -60,7 +125,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
         .Height(300)
         .Width(500)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 
@@ -82,7 +147,7 @@ If you need to position the **Popover** against a certain side of the [target el
 ##### Angular
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -107,6 +172,68 @@ If you need to position the **Popover** against a certain side of the [target el
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <img id="image" src="https://url/to/an/image" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                position="top"> <!-- or "bottom" | "left" | "right" -->
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <img id="image" src="https://url/to/an/image" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                        position="top"/> {/* or "bottom" | "left" | "right" */}
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -119,7 +246,7 @@ If you need to position the **Popover** against a certain side of the [target el
         </text>)
         .Position(Position.Top) // or Position.Bottom | Position.Left | Position.Right
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 

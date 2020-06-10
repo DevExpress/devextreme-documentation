@@ -33,7 +33,7 @@ The template implementation depends on the used framework or library. Examples o
             <p>Static content</p>
             <dx-button
                 text="Click me"
-                (onClick)="button_click($event)">
+                (onClick)="buttonClick($event)">
             </dx-button>
         </div>
     </dx-popup>
@@ -43,7 +43,7 @@ The template implementation depends on the used framework or library. Examples o
     // ...
     export class AppComponent {
         isPopupVisible: boolean = true;
-        button_click (e) {
+        buttonClick (e) {
             // ...
         }
     }
@@ -55,6 +55,100 @@ The template implementation depends on the used framework or library. Examples o
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            title="Popup Title">
+            <template>
+                <p>Static content</p>
+                <DxButton
+                    text="Click me"
+                    @click="buttonClick"
+                />
+            </template>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxButton
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        },
+        methods: {
+            buttonClick() {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+    import { Button } from 'devextreme-react/button';
+
+    const renderContent = () => {
+        return (
+            <p>Static content</p>
+            <Button
+                text="Click me"
+                onClick={buttonClick}
+            />
+        );
+    }
+
+    const buttonClick = () => {
+        // ...
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    title="Popup Title"
+                    contentRender={renderContent}
+                    onHiding={this.onHiding}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

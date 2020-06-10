@@ -41,6 +41,85 @@ When the **Popup** is shown, the area beneath it can be shaded. To enable this b
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            title="Popup Title"
+            :shading="true"
+            shading-color="rgba(0, 0, 0, 0.2)">
+            <template>
+                <p>Popup content</p>
+            </template>
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    const renderContent = () => {
+        return (
+            <p>Popup content</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    title="Popup Title"
+                    shading={true}
+                    shadingColor="rgba(0, 0, 0, 0.2)"
+                    contentRender={renderContent}
+                    onHiding={this.onHiding}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Note that the default shading color is transparent.

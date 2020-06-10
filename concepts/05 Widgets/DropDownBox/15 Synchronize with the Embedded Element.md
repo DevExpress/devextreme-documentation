@@ -131,17 +131,13 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
         import { DataGrid, Selection } from "devextreme-react/data-grid";
         import ArrayStore from "devextreme/data/array_store";
         
+        const dropDownBoxData = {/* ... */};
+        const gridDataSource = new ArrayStore({
+            data: widgetData,
+            key: "ID"
+        });
+
         class App extends React.Component {
-            constructor(props) {
-                super(props);
-
-                dropDownBoxData = dropDownBoxData;
-                gridDataSource = new ArrayStore({
-                    data: widgetData,
-                    key: "ID"
-                });
-            }
-
             render() {
                 return (
                     <DropDownBox

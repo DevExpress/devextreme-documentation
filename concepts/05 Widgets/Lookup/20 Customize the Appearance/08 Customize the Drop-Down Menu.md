@@ -321,12 +321,11 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/Docume
         <DxLookup
             :data-source="dataSource">
             <DxDropDownOptions
-                title="Products">
-                <!-- title-template="titleTemplate">
+                title="Products" />
+                <!-- title-template="titleTemplate" />
                 <template #titleTemplate>
                     <div :style="{color: 'blue'}">Products</div>
                 </template> -->
-            </DxDropDownOptions>
         </DxLookup>
     </template>
 

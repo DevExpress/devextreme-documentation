@@ -16,7 +16,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
 4. Optionally, specify the initial content in the widget's **value** option. The content's language should correspond to the **valueType**. HTML content can also be declared directly inside the widget's container, in which case the language (HTML) and the **valueType** can differ.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -46,7 +46,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
         </div>
     </body>
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-html-editor
@@ -72,6 +72,61 @@ Follow the steps below to add the **HtmlEditor** to a page.
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxHtmlEditor 
+            value-type="html"> <!-- or "markdown" -->
+            <p>
+                DevExtreme HtmlEditor is a WYSIWYG text editor that allows its users to format
+                textual and visual content and store it as HTML or Markdown.
+            </p>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxHtmlEditor } from 'devextreme-vue/html-editor';
+    // Required if valueType is "markdown"
+    // import "devextreme/ui/html_editor/converters/markdown";
+    // ...
+
+    export default {
+        components: {
+            DxHtmlEditor
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { HtmlEditor } from 'devextreme-react/html-editor';
+    // Required if valueType is "markdown"
+    // import "devextreme/ui/html_editor/converters/markdown";
+    // ...
+
+    class App extends React.Component {
+        render() {
+            return (
+                <HtmlEditor 
+                    valueType="html"> {/* or "markdown" */}
+                    <p>
+                        DevExtreme HtmlEditor is a WYSIWYG text editor that allows its users to format
+                        textual and visual content and store it as HTML or Markdown.
+                    </p>
+                </HtmlEditor>
+            );
+        }
+    }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

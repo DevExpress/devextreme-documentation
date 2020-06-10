@@ -3,20 +3,20 @@ You can extend the **HtmlEditor**'s <a href="https://github.com/DevExpress/DevEx
 In the following code, the `strike` format is extended so that the stricken out text is non-editable when the format is applied. The extended format is then [registered](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/register(components).md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#registercomponents').
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
         $("#htmlEditorContainer").dxHtmlEditor({
             // ...
             onInitialized: function(e) {
-                var htmlEditor = e.component;
-                var Strike = htmlEditor.get("formats/strike");
+                const htmlEditor = e.component;
+                const Strike = htmlEditor.get("formats/strike");
                 class NonEditableStrike extends Strike {
                     // Overrides the method that creates a DOM node for the formatted text
                     static create(value) {
                         // Creates a DOM node using the parent's implementation
-                        let node = super.create(value);
+                        const node = super.create(value);
                         node.setAttribute('contenteditable', false);
                         return node;
                     }
@@ -25,23 +25,27 @@ In the following code, the `strike` format is extended so that the stricken out 
                 htmlEditor.register({ "formats/strike": NonEditableStrike });
             }
         });
-
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-html-editor
+        (onInitialized)="onInitialized($event)">
+    </dx-html-editor>
 
     <!--TypeScript-->
     import { DxHtmlEditorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         onInitialized (e) {
-            let htmlEditor = e.component;
-            let Strike = htmlEditor.get("formats/strike");
+            const htmlEditor = e.component;
+            const Strike = htmlEditor.get("formats/strike");
             class NonEditableStrike extends Strike {
                 // Overrides the method that creates a DOM node for the formatted text
                 static create(value) {
                     // Creates a DOM node using the parent's implementation
-                    let node = super.create(value);
+                    const node = super.create(value);
                     node.setAttribute('contenteditable', false);
                     return node;
                 }
@@ -58,9 +62,79 @@ In the following code, the `strike` format is extended so that the stricken out 
         // ...
     })
 
-    <!--HTML-->
-    <dx-html-editor
-        (onInitialized)="onInitialized($event)">
-    </dx-html-editor>
+##### Vue
+
+    <template>
+        <DxHtmlEditor @initialized="onInitialized"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxHtmlEditor } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor
+        },
+        methods: {
+            onInitialized(e) {
+                const htmlEditor = e.component;
+                const Strike = htmlEditor.get('formats/strike');
+                class NonEditableStrike extends Strike {
+                    // Overrides the method that creates a DOM node for the formatted text
+                    static create(value) {
+                        // Creates a DOM node using the parent's implementation
+                        const node = super.create(value);
+                        node.setAttribute('contenteditable', false);
+                        return node;
+                    }
+                }
+                // Replaces the built-in `strike` format
+                htmlEditor.register({
+                    'formats/strike': NonEditableStrike
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { HtmlEditor } from 'devextreme-react/html-editor';
+
+    class App extends React.Component {
+        onInitialized(e) {
+            const htmlEditor = e.component;
+            const Strike = htmlEditor.get('formats/strike');
+            class NonEditableStrike extends Strike {
+                // Overrides the method that creates a DOM node for the formatted text
+                static create(value) {
+                    // Creates a DOM node using the parent's implementation
+                    const node = super.create(value);
+                    node.setAttribute('contenteditable', false);
+                    return node;
+                }
+            }
+            // Replaces the built-in `strike` format
+            htmlEditor.register({
+                'formats/strike': NonEditableStrike
+            });
+        }
+
+        render() {
+            return (
+                <HtmlEditor onInitialized={this.onInitialized}/>
+            );
+        }
+
+    }
+
+    export default App;
 
 ---

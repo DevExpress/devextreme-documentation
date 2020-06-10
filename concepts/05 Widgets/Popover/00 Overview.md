@@ -9,7 +9,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
 ---
 ##### jQuery
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <div id="popoverContainer">
         <p>Popover content</p>
     </div>
@@ -25,7 +25,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
 
 ##### Angular
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <dx-popover
         target="#image"
         showEvent="dxhoverstart"
@@ -49,6 +49,67 @@ The following code creates a simple **Popover** on your page and attaches it to 
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <img id="image" src="https://url/to/an/image" />
+            <DxPopover 
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend">
+                <template>
+                    <p>Popover content</p>
+                </template>
+            </DxPopover>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopover } from 'devextreme-vue/popover';
+
+    export default {
+        components: {
+            DxPopover
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popover } from 'devextreme-react/popover';
+
+    const renderContent = () => {
+        return (
+            <p>Popover content</p>
+        );
+    };
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <img id="image" src="https://url/to/an/image" />
+                    <Popover
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={renderContent}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -60,7 +121,7 @@ The following code creates a simple **Popover** on your page and attaches it to 
             <p>Popover content</p>
         </text>)
     )
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
 ---
 

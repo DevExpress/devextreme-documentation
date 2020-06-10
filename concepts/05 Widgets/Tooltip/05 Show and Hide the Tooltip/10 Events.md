@@ -56,6 +56,83 @@ To execute certain commands before or after the **Tooltip** was shown/hidden, ha
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxTooltip ...
+            @showing="onShowing"
+            @shown="onShown"
+            @hiding="onHiding"
+            @hidden="onHidden"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTooltip } from 'devextreme-vue/tooltip';
+
+    export default {
+        components: {
+            DxTooltip
+        },
+        methods: {
+            onShowing(e) {
+                // Handler of the 'showing' event
+            },
+            onShown(e) {
+                // Handler of the 'shown' event
+            },
+            onHiding(e) {
+                // Handler of the 'hiding' event
+            },
+            onHidden(e) {
+                // Handler of the 'hidden' event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Tooltip } from 'devextreme-react/tooltip';
+
+    class App extends React.Component {
+        onShowing(e) {
+            // Handler of the 'showing' event
+        }
+
+        onShown(e) {
+            // Handler of the 'shown' event
+        }
+
+        onHiding(e) {
+            // Handler of the 'hiding' event
+        }
+
+        onHidden(e) {
+            // Handler of the 'hidden' event
+        }
+
+        render() {
+            return (
+                <Tooltip ...
+                    onShowing={this.onShowing}
+                    onShown={this.onShown}
+                    onHiding={this.onHiding}
+                    onHidden={this.onHidden}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -87,11 +164,11 @@ To execute certain commands before or after the **Tooltip** was shown/hidden, ha
 If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var hiddenEventHandler1 = function (e) {
+    const hiddenEventHandler1 = function (e) {
         // First handler of the "hidden" event
     };
 
-    var hiddenEventHandler2 = function (e) {
+    const hiddenEventHandler2 = function (e) {
         // Second handler of the "hidden" event
     };
 

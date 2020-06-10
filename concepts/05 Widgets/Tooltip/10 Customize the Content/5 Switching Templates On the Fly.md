@@ -4,7 +4,7 @@ If you need to render different templates depending on a specific condition, def
 ##### jQuery
 
     <!--HTML-->
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
     <div id="buttonContainer"></div>
     <div id="tooltipContainer">
         <div data-options="dxTemplate: { name: 'template1' }">
@@ -16,7 +16,7 @@ If you need to render different templates depending on a specific condition, def
     </div>
 
     <!--JavaScript-->$(function() {
-        var tooltip = $("#tooltipContainer").dxTooltip({
+        const tooltip = $("#tooltipContainer").dxTooltip({
             target: "#image",
             showEvent: 'dxhoverstart',
             hideEvent: 'dxhoverend',
@@ -26,7 +26,7 @@ If you need to render different templates depending on a specific condition, def
         $("#buttonContainer").dxButton({
             text: "Change the Template", 
             onClick: function (e) {
-                var currentTemplate = tooltip.option("contentTemplate");
+                const currentTemplate = tooltip.option("contentTemplate");
                 tooltip.option("contentTemplate", currentTemplate == "template1" ? "template2" : "template1");
             } 
         });
@@ -39,7 +39,7 @@ If you need to render different templates depending on a specific condition, def
 
 ##### Angular
 
-    <!--HTML--><img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <!--HTML--><img id="image" src="https://url/to/an/image" />
     <dx-button
         id="buttonContainer"
         text="Change the Template"
@@ -81,6 +81,129 @@ If you need to render different templates depending on a specific condition, def
         width: 200px
     }
 
+##### Vue
+
+    <template>
+        <div>
+            <img id="image" src="https://url/to/an/image" />
+            <DxTooltip
+                target="#image"
+                show-event="dxhoverstart"
+                hide-event="dxhoverend"
+                :contentTemplate="currentTemplate">
+                <template #template1>
+                    <p>First template</p>
+                </template>
+                <template #template2>
+                    <p>Second template</p>
+                </template>
+            </DxTooltip>
+            <DxButton
+                id="buttonContainer"
+                text="Change the Template"
+                @click="changeTemplate"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTooltip } from 'devextreme-vue/tooltip';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxTooltip,
+            DxButton
+        },
+        data() {
+            return {
+                currentTemplate: "template1"
+            };
+        },
+        methods: {
+            changeTemplate () {
+                this.currentTemplate = (this.currentTemplate === 'template1' ? 'template2' : 'template1');
+            }
+        }
+    }
+    </script>
+
+    <style>
+        #buttonContainer {
+            display: block;
+            width: 200px
+        }
+    </style>
+
+##### React
+
+    <!--tab: App.js-->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { Tooltip } from 'devextreme-react/tooltip';
+    import { Button } from 'devextreme-react/button';
+
+    const firstTemplate = () => {
+        return (
+            <p>First template</p>
+        );
+    }
+    const secondTemplate = () => {
+        return (
+            <p>Second template</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                renderContent: firstTemplate
+            };
+            
+            this.changeTemplate = this.changeTemplate.bind(this);
+        }
+
+        changeTemplate() {
+            this.setState({
+                renderContent: this.state.renderContent === firstTemplate ? secondTemplate : firstTemplate
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <img id="image" src="https://url/to/an/image" />
+                    <Tooltip
+                        target="#image"
+                        showEvent="dxhoverstart"
+                        hideEvent="dxhoverend"
+                        contentRender={this.state.renderContent}
+                    />
+                    <Button
+                        id="buttonContainer"
+                        text="Change the Template"
+                        onClick={this.changeTemplate}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
+    <!--CSS-->#buttonContainer {
+        display: block;
+        width: 200px
+    }
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -99,7 +222,7 @@ If you need to render different templates depending on a specific condition, def
         <p>Second template</p>
     }
 
-    <img id="image" src="https://www.devexpress.com/DXR.axd?r=9999_17-FD0Id" />
+    <img id="image" src="https://url/to/an/image" />
 
     @(Html.DevExtreme().Button()
         .ID("changeTemplateButton")

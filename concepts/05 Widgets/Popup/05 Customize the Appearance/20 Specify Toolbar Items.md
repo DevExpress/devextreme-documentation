@@ -67,6 +67,109 @@ The **Popup** has two toolbars: top and bottom. Items on these toolbars can be p
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible="isPopupVisible"
+            title="Popup Title">
+            <template>
+                <p>Popup content</p>
+            </template>
+            <DxToolbarItem
+                text="Title"
+                location="before"
+            />
+            <DxToolbarItem
+                :options="buttonOptions"
+                widget="dxButton"
+                location="after"
+            />
+        </DxPopup>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxPopup,
+        DxToolbarItem
+    } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup,
+            DxToolbarItem
+        },
+        data() {
+            return {
+                isPopupVisible: true,
+                buttonOptions: {
+                    text: 'Refresh',
+                    onClick: function() {
+                        // ...
+                    }
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup, ToolbarItem } from 'devextreme-react/popup';
+
+    const buttonOptions = {
+        text: 'Refresh',
+        onClick: function() {
+            // ...
+        }
+    };
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    title="Popup Title"
+                    onHiding={this.onHiding}>
+                    <ToolbarItem
+                        text="Title"
+                        location="before"
+                    />
+                    <ToolbarItem
+                        options={buttonOptions}
+                        widget="dxButton"
+                        location="after"
+                    />
+                </Popup>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

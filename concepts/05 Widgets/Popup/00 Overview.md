@@ -59,6 +59,108 @@ The following code adds a simple **Popup** to your page, along with a [Button](/
         // ...
     })
 
+##### Vue
+
+    <template>
+        <div>
+            <DxPopup
+                title="Popup Title"
+                :visible.sync="isPopupVisible">
+                <template>
+                    <p>Popup content</p>
+                </template>
+            </DxPopup>
+            <DxButton
+                text="Show the Popup"
+                @click="onClick"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+    import { DxButton } from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxPopup,
+            DxButton
+        },
+        data() {
+            return {
+                isPopupVisible: false
+            };
+        },
+        methods: {
+            onClick() {
+                this.isPopupVisible = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+    import { Button } from 'devextreme-react/button';
+
+    const renderContent = () => {
+        return (
+            <p>Popup content</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: false
+            };
+
+            this.onClick = this.onClick.bind(this);
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onClick() {
+            this.setState({
+                isPopupVisible: true
+            });
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Popup
+                        title="Popup Title"
+                        visible={this.state.isPopupVisible}
+                        contentRender={renderContent}
+                        onHiding={this.onHiding}
+                    />
+                    <Button
+                        text="Show the Popup"
+                        onClick={this.onClick}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 There are several ways to specify the content of the **Popup**. Learn more in the [Customize the Content](/concepts/05%20Widgets/Popup/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/Widgets/Popup/Customize_the_Appearance/Customize_the_Content/') article. The **Popup** can also be displayed with a toolbar. For detailed information, see the [Specify Toolbar Items](/concepts/05%20Widgets/Popup/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/Widgets/Popup/Customize_the_Appearance/Specify_Toolbar_Items/') topic. 

@@ -45,7 +45,7 @@ The data item to be added.
 
     const store = new {WidgetName}({
         // ...
-        onInserting: function (values, key) {
+        onInserting: function (values) {
             // Your code goes here
         }
     });
@@ -68,7 +68,7 @@ The data item to be added.
 
     const store = new {WidgetName}({
         // ...
-        onInserting: function (values, key) {
+        onInserting: function (values) {
             // Your code goes here
         }
     });

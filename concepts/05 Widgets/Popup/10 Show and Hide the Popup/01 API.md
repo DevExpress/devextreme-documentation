@@ -99,7 +99,7 @@ To show or hide the **Popup** programmatically, call the [show()](/api-reference
 
 ---
 
-With Angular, AngularJS or Knockout, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#visible') property of the **Popup** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, change them, and the **Popup** will appear or disappear.
+With Angular, Vue or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#visible') property of the **Popup** widget to a component property. After that, change this component property, and the **Popup** will appear or disappear.
 
 ---
 ##### Angular
@@ -135,65 +135,118 @@ With Angular, AngularJS or Knockout, use a different technique. Bind the [visibl
         // ...
     })
 
-##### AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-popup="{
-            title: 'Popup Title',
-            bindingOptions: {
-                visible: 'isPopupVisible'
-            }
-        }">
-            <p>Popup Content</p>
+    <template>
+        <div>
+            <DxPopup
+                title="Popup Title"
+                :visible.sync="isPopupVisible">
+                <template>
+                    <p>Popup content</p>
+                </template>
+            </DxPopup>
+            <DxButton
+                text="Show the Popup"
+                @click="showPopup"
+            />
+            <DxButton
+                text="Hide the Popup"
+                @click="hidePopup"
+            />
         </div>
-        <div dx-button="{
-            text: 'Show the Popup',
-            onClick: showPopup
-        }"></div>
-        <div dx-button="{
-            text: 'Hide the Popup',
-            onClick: hidePopup
-        }"></div>
-    </div>
+    </template>
 
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.isPopupVisible = false;
-            $scope.showPopup = function () {
-                $scope.isPopupVisible = true;
-            };
-            $scope.hidePopup = function () {
-                $scope.isPopupVisible = false;
-            };
-        });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-##### Knockout
+    import { DxPopup } from 'devextreme-vue/popup';
+    import { DxButton } from 'devextreme-vue/button';
 
-    <!--HTML-->
-    <div data-bind="dxPopup: {
-        title: 'Popup Title',
-        visible: isPopupVisible
-    }">
-        <p>Popup Content</p>
-    </div>
-    <div data-bind="dxButton: {
-        text: 'Show the Popup',
-        onClick: function (e) {
-            e.model.isPopupVisible(true);
+    export default {
+        components: {
+            DxPopup,
+            DxButton
+        },
+        data() {
+            return {
+                isPopupVisible: false
+            }
+        },
+        methods: {
+            showPopup() {
+                this.isPopupVisible = true;
+            },
+            hidePopup() {
+                this.isPopupVisible = false;
+            }
         }
-    }"></div>
-    <div data-bind="dxButton: {
-        text: 'Hide the Popup',
-        onClick: function (e) {
-            e.model.isPopupVisible(false);
-        }
-    }"></div>
+    }
 
-    <!--JavaScript-->var viewModel = {
-        isPopupVisible: ko.observable(false)
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+    import { Button } from 'devextreme-react/button';
+
+    const renderContent = () => {
+        return (
+            <p>Popup content</p>
+        );
     };
+    
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
 
-    ko.applyBindings(viewModel);
+            this.state = {
+                isPopupVisible: false
+            };
+
+            this.showPopup = this.showPopup.bind(this);
+            this.hidePopup = this.hidePopup.bind(this);
+        }
+
+        showPopup() {
+            this.setState({
+                isPopupVisible: true
+            });
+        }
+
+        hidePopup() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <Popup
+                        title="Popup Title"
+                        visible={this.state.isPopupVisible}
+                        contentRender={renderContent}
+                        onHiding={this.hidePopup}
+                    />
+                    <Button
+                        text="Show the Popup"
+                        onClick={this.showPopup}
+                    />
+                    <Button
+                        text="Hide the Popup"
+                        onClick={this.hidePopup}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---

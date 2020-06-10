@@ -152,7 +152,7 @@ The following table lists toolbar items and the formats they apply (if applicabl
 To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/Widgets/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/') array:
  
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -163,11 +163,16 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
         })
     })
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar [items]="[ 'bold', 'italic', 'alignRight', 'alignLeft' ]"></dxo-toolbar>
+        <dxo-toolbar>
+            <dxi-item formatName="bold"/>
+            <dxi-item formatName="italic"/>
+            <dxi-item formatName="alignRight"/>
+            <dxi-item formatName="alignLeft"/>
+        </dxo-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->
@@ -183,6 +188,63 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxHtmlEditor>
+            <DxToolbar>
+                <DxItem format-name="bold"/>
+                <DxItem format-name="italic"/>
+                <DxItem format-name="alignRight"/>
+                <DxItem format-name="alignLeft"/>
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxHtmlEditor,
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <HtmlEditor>
+                    <Toolbar>
+                        <Item formatName="bold"/>
+                        <Item formatName="italic"/>
+                        <Item formatName="alignRight"/>
+                        <Item formatName="alignLeft"/>
+                    </Toolbar>
+                </HtmlEditor>
+            );
+        }
+    }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -204,7 +266,7 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
 To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName') and [formatValues](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatValues.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatValues'):
  
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -221,19 +283,28 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
         })
     })
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-html-editor>
+        <dxo-toolbar>
+            <dxi-item
+                [formatValues]="headerFormatValues"
+                formatName="header"
+            />
+            <dxi-item
+                [formatValues]="alignFormatValues"
+                formatName="align"
+            />
+        </dxo-toolbar>
+    </dx-html-editor>
 
     <!--TypeScript-->
     import { DxHtmlEditorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        items = [{
-            formatName: "header",
-            formatValues: [1, 2, 3, false]
-        }, {
-            formatName: "align",
-            formatValues: ["left", "right", "center"]
-        }]
+        headerFormatValues =  [1, 2, 3, false];
+        alignFormatValues = ["left", "right", "center"];
     }
     @NgModule({
         imports: [
@@ -243,10 +314,79 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
         // ...
     })
 
-    <!--HTML-->
-    <dx-html-editor>
-        <dxo-toolbar [items]="items"></dxo-toolbar>
-    </dx-html-editor>
+##### Vue
+
+    <template>
+        <DxHtmlEditor>
+            <DxToolbar>
+                <DxItem
+                    :format-values="headerFormatValues"
+                    format-name="header"
+                />
+                <DxItem
+                    :format-values="alignFormatValues"
+                    format-name="align"
+                />
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxHtmlEditor,
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                headerFormatValues: [1, 2, 3, false],
+                alignFormatValues: ['left', 'right', 'center']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
+
+    const headerFormatValues = [1, 2, 3, false];
+    const alignFormatValues = ['left', 'right', 'center'];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <HtmlEditor>
+                    <Toolbar>
+                        <Item
+                            formatValues={headerFormatValues}
+                            formatName="header"
+                        />
+                        <Item
+                            formatValues={alignFormatValues}
+                            formatName="align"
+                        />
+                    </Toolbar>
+                </HtmlEditor>
+            );
+        }
+    }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

@@ -48,6 +48,91 @@ This option accepts the *"before"*, *"center"*, and *"after"* values that specif
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxHtmlEditor>
+            <DxToolbar>
+                <DxItem
+                    format-name="undo"
+                    location="after"
+                />
+                <DxItem
+                    format-name="redo"
+                    location="after"
+                />
+                <DxItem format-name="alignLeft"/>
+                <DxItem format-name="alignRight"/>
+                <DxItem
+                    format-name="color"
+                    location="center"
+                />
+                <DxItem
+                    format-name="background"
+                    location="center"
+                />
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxHtmlEditor,
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <HtmlEditor>
+                    <Toolbar>
+                        <Item
+                            formatName="undo"
+                            location="after"
+                        />
+                        <Item
+                            formatName="redo"
+                            location="after"
+                        />
+                        <Item formatName="alignLeft"/>
+                        <Item formatName="alignRight"/>
+                        <Item
+                            formatName="color"
+                            location="center"
+                        />
+                        <Item
+                            formatName="background"
+                            location="center"
+                        />
+                    </Toolbar>
+                </HtmlEditor>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If the toolbar cannot fit all the items, some of them are collected in the overflow menu. Use the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#locateInMenu') option to change this behavior:
@@ -92,5 +177,70 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxHtmlEditor>
+            <DxToolbar>
+                <DxItem
+                    format-name="undo"
+                    locate-in-menu="always"
+                />
+                <DxItem
+                    format-name="color"
+                    locate-in-menu="never"
+                />
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxHtmlEditor,
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <HtmlEditor>
+                    <Toolbar>
+                        <Item
+                            formatName="undo"
+                            locateInMenu="always"
+                        />
+                        <Item
+                            formatName="color"
+                            locateInMenu="never"
+                        />
+                    </Toolbar>
+                </HtmlEditor>
+            );
+        }
+    }
+
+    export default App;
 
 ---

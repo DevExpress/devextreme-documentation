@@ -35,4 +35,70 @@ The **Popup** can also be hidden when a user clicks outside it. To control this 
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxPopup
+            :visible.sync="isPopupVisible"
+            :close-on-outside-click="true"
+            title="Popup Title"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        data() {
+            return {
+                isPopupVisible: true
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isPopupVisible: true
+            };
+
+            this.onHiding = this.onHiding.bind(this);
+        }
+
+        onHiding() {
+            this.setState({
+                isPopupVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <Popup
+                    visible={this.state.isPopupVisible}
+                    closeOnOutsideClick={true}
+                    title="Popup Title"
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---

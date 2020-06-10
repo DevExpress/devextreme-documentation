@@ -3,7 +3,7 @@ The toolbar occupies the top part of the **HtmlEditor** and is rendered inside t
 In the following code, the toolbar is placed in a separate `<div>` under the **HtmlEditor**:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -19,11 +19,13 @@ In the following code, the toolbar is placed in a separate `<div>` under the **H
     <div id="htmlEditorContainer"></div>
     <div id="htmlEditorFooter"></div>
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar container="#htmlEditorFooter"></dxo-toolbar>
+        <dxo-toolbar ...
+            container="#htmlEditorFooter">
+        </dxo-toolbar>
     </dx-html-editor>
     <div id="htmlEditorFooter"></div>
 
@@ -40,5 +42,58 @@ In the following code, the toolbar is placed in a separate `<div>` under the **H
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <div>
+            <DxHtmlEditor>
+                <DxToolbar ...
+                    container="#htmlEditorFooter"/>
+            </DxHtmlEditor>
+            <div id="htmlEditorFooter"></div>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxHtmlEditor,
+        DxToolbar
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { HtmlEditor, Toolbar } from 'devextreme-react/html-editor';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <HtmlEditor>
+                        <Toolbar ...
+                            container="#htmlEditorFooter"/>
+                    </HtmlEditor>
+                    <div id="htmlEditorFooter"></div>
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---

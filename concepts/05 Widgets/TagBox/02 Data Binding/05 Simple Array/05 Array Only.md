@@ -201,6 +201,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
 ##### jQuery
 
     <!--JavaScript-->const products = [
+        { name: "SuperHD Video Player", price: 500 },
         { name: "HD Video Player", price: 100 },
         // ...
     ];
@@ -230,6 +231,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
     // ...
     export class AppComponent {
         products = [
+            { name: "SuperHD Video Player", price: 500 },
             { name: "HD Video Player", price: 100 },
             // ...
         ];
@@ -271,6 +273,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
         data() {
             return {
                 products: [
+                    { name: "SuperHD Video Player", price: 500 },
                     { name: 'HD Video Player', price: 100 },
                     // ...
                 ]
@@ -296,6 +299,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
     import query from "devextreme/data/query";
 
     const products = [
+        { name: "SuperHD Video Player", price: 500 },
         { name: 'HD Video Player', price: 100 },
         // ...
     ];

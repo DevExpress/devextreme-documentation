@@ -1,11 +1,11 @@
 Regardless of the data source you use, the **Lookup** always wraps it in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). Call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Widgets/dxLookup/Methods/#getDataSource') method to get the instance of the **DataSource**.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var lookupDataSource = $("#lookupContainer").dxLookup("getDataSource");
+    <!--JavaScript-->const lookupDataSource = $("#lookupContainer").dxLookup("getDataSource");
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxLookupModule, DxLookupComponent } from "devextreme-angular";
@@ -23,6 +23,64 @@ Regardless of the data source you use, the **Lookup** always wraps it in a [Data
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <DxLookup ...
+            ref="lookup"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        methods: {
+            getDataSource() {
+                this.ds = this.$refs.lookup.instance.getDataSource();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.lookupRef = React.createRef();
+
+            this.getDataSource = this.getDataSource.bind(this);
+        }
+
+        getDataSource() {
+            this.ds = this.lookupRef.current.instance.getDataSource();
+        } 
+
+        render() {
+            return (
+                <Lookup ...
+                    ref={this.lookupRef}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

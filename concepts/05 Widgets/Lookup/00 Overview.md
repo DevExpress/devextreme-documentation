@@ -7,7 +7,7 @@ The **Lookup** is a widget that allows an end user to search for an item in a co
 The following code adds the **Lookup** widget to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#dataSource') to be specified. In addition, you can define the [placeholder](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#placeholder') to be displayed when the **Lookup** input field is empty.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML-->
     <div id="lookupContainer"></div>
@@ -25,7 +25,7 @@ The following code adds the **Lookup** widget to your page. The simplest configu
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup
@@ -47,6 +47,66 @@ The following code adds the **Lookup** widget to your page. The simplest configu
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="dataSource"
+            placeholder="Select a product..."
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                dataSource: [
+                    'HD Video Player',
+                    'SuperHD Video Player',
+                    'SuperPlasma 50',
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const dataSource = [
+        'HD Video Player',
+        'SuperHD Video Player',
+        'SuperPlasma 50',
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={dataSource}
+                    placeholder="Select a product..."
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If your data is an array of objects, specify: 
@@ -59,10 +119,10 @@ If your data is an array of objects, specify:
 <!---->
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var lookupData = [
+    const lookupData = [
         { id: 1, country: "Afghanistan" },
         { id: 2, country: "Albania" },
         // ...
@@ -76,7 +136,7 @@ If your data is an array of objects, specify:
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup
@@ -102,6 +162,66 @@ If your data is an array of objects, specify:
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="lookupData"
+            value-expr="id"
+            display-expr="country"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                lookupData: [
+                    { id: 1, country: 'Afghanistan' },
+                    { id: 2, country: 'Albania' },
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const lookupData = [
+        { id: 1, country: 'Afghanistan' },
+        { id: 2, country: 'Albania' },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={lookupData}
+                    valueExpr="id"
+                    displayExpr="country"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

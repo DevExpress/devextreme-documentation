@@ -247,6 +247,7 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
                 <TagBox
                     dataSource={this.productsDataSource}
                     displayExpr="name"
+                    valueExpr='price'
                 />
             );
         }

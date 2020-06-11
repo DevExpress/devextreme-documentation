@@ -1,7 +1,7 @@
-By default, group headers display text of the **key** field in a bold font. You can define a custom template for the group headers if you need to. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for group headers.
+To customize group headers, specify a [groupTemplate](/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#groupTemplate). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component. If the template is unspecified, group headers display the **key** data field in bold font.
 
 ---
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-tag-box
@@ -54,99 +54,133 @@ By default, group headers display text of the **key** field in a bold font. You 
          // ...
      })
 
-##### AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-tag-box="{
-            dataSource: tagBoxDataSource,
-            grouped: true,
-            groupTemplate: 'group',
-            displayExpr: 'name',
-            valueExpr: 'count'
-        }" dx-item-alias="itemObj">
-            <div data-options="dxTemplate: { name: 'group' }">
-                <p>{{ itemObj.key }} | Count: {{ itemObj.overallCount }}</p>
-            </div>
-        </div>
-    </div>
+    <template>
+        <DxTagBox
+            :data-source="tagBoxDataSource"
+            :grouped="true"
+            group-template="group"
+            display-expr="name"
+            value-expr="count">
+            <template #group="{data}">
+                <p>{{data.key}} | Count: {{data.overallCount}}</p>
+            </template>
+        </DxTagBox>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            var fruitsVegetables = [{
-                key: "Fruits",
-                items: [
-                    { name: "Apples", count: 10 },
-                    { name: "Oranges", count: 12 },
-                    { name: "Lemons", count: 15 }
-                ]
-            }, {
-                key: "Vegetables",
-                items: [
-                    { name: "Potatoes", count: 5 },
-                    { name: "Tomatoes", count: 9 },
-                    { name: "Turnips", count: 8 }
-                ]
-            }];
-            $scope.tagBoxDataSource = new DevExpress.data.DataSource({
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                tagBoxDataSource: new DataSource({
+                    store: fruitsVegetables,
+                    map: function(groupedItem) {
+                        let overallCount = 0;
+                        groupedItem.items.forEach(function(item) {
+                            overallCount += item.count;
+                        })
+                        return Object.assign(groupedItem, { overallCount: overallCount });
+                    }
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+    
+    const renderGroup = (data) => {
+        return (
+            <p>{data.key} | Count: {data.overallCount}</p>
+        );
+    };
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.tagBoxDataSource = new DataSource({
                 store: fruitsVegetables,
                 map: function(groupedItem) {
-                    var overallCount = 0;
+                    let overallCount = 0;
                     groupedItem.items.forEach(function(item) {
                         overallCount += item.count;
                     })
-                    return $.extend(groupedItem, { overallCount: overallCount })
+                    return Object.assign(groupedItem, { overallCount: overallCount });
                 }
             });
-        });
+        }
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
+        render() {
+            return (
+                <TagBox
+                    dataSource={this.tagBoxDataSource}
+                    grouped={true}
+                    displayExpr="name"
+                    valueExpr="count"
+                    groupRender={renderGroup}
+                />
+            );
+        }
+    }
 
-##### Knockout
-
-    <!--HTML-->
-    <div data-bind="dxTagBox: {
-        dataSource: tagBoxDataSource,
-        grouped: true,
-        groupTemplate: 'group',
-        displayExpr: 'name',
-        valueExpr: 'count'
-    }">
-        <div data-options="dxTemplate: { name: 'group' }">
-            <p data-bind="text: key + ' | Count: ' + overallCount"></p>
-        </div>
-    </div>
-
-    <!--JavaScript-->var fruitsVegetables = [{
-        // ...
-        // omitted for brevity
-        // see the AngularJS code
-    }];
-
-    var viewModel = {
-        tagBoxDataSource: new DevExpress.data.DataSource({
-            store: fruitsVegetables,
-            map: function(groupedItem) {
-                var overallCount = 0;
-                groupedItem.items.forEach(function(item) {
-                    overallCount += item.count;
-                })
-                return $.extend(groupedItem, { overallCount: overallCount })
-            }
-        })
-    };
-
-    ko.applyBindings(viewModel);
+    export default App;
 
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the [groupTemplate](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#groupTemplate') callback function as shown in the following code.
 
-    <!--JavaScript-->var fruitsVegetables = [{
+    <!--JavaScript-->const fruitsVegetables = [{
         // ...
-        // omitted for brevity
-        // see the AngularJS code
     }];
 
     $(function() {
@@ -154,7 +188,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
             dataSource: new DevExpress.data.DataSource({
                 store: fruitsVegetables,
                 map: function(groupedItem) {
-                    var overallCount = 0;
+                    let overallCount = 0;
                     groupedItem.items.forEach(function(item) {
                         overallCount += item.count;
                     });

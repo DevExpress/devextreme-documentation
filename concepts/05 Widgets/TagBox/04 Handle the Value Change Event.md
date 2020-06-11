@@ -1,20 +1,20 @@
 To process new **TagBox** values, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#onValueChanged') option when you configure the widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
         $("#tagBoxContainer").dxTagBox({
             onValueChanged: function (e) {
-                var previousValues = e.previousValue;
-                var newValues = e.value;
+                const previousValues = e.previousValue;
+                const newValues = e.value;
                 // Event handling commands go here
             }
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-tag-box ...
@@ -26,8 +26,8 @@ To process new **TagBox** values, you need to handle the value change event. If 
     // ...
     export class AppComponent {
         onValueChanged (e) {
-            let previousValue = e.previousValue;
-            let newValue = e.value;
+            const previousValue = e.previousValue;
+            const newValue = e.value;
             // Event handling commands go here
         }
     }
@@ -39,6 +39,66 @@ To process new **TagBox** values, you need to handle the value change event. If 
          // ...
      })
 
+##### Vue
+
+    <template>
+        <DxTagBox ...
+            @value-changed="onValueChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        methods: {
+            onValueChanged(e) {
+                const previousValues = e.previousValue;
+                const newValues = e.value;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.onValueChanged = this.onValueChanged.bind(this);
+        }
+
+        onValueChanged(e) {
+            const previousValues = e.previousValue;
+            const newValues = e.value;
+            // Event handling commands go here
+        }
+
+        render() {
+            return (
+                <TagBox ...
+                    onValueChanged={this.onValueChanged}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 [note]The `previousValue` and `newValue` fields are _arrays_ that contain values taken from the [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#valueExpr') data field.
@@ -46,15 +106,15 @@ To process new **TagBox** values, you need to handle the value change event. If 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var valueChangedHandler1 = function (e) {
-        var previousValues = e.previousValue;
-        var newValues = e.value;
+    const valueChangedHandler1 = function (e) {
+        const previousValues = e.previousValue;
+        const newValues = e.value;
         // First handler of the "valueChanged" event
     };
 
-    var valueChangedHandler2 = function (e) {
-        var previousValues = e.previousValue;
-        var newValues = e.value;
+    const valueChangedHandler2 = function (e) {
+        const previousValues = e.previousValue;
+        const newValues = e.value;
         // Second handler of the "valueChanged" event
     };
 

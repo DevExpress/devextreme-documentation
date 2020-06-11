@@ -7,7 +7,7 @@ The **TagBox** widget is an editor that allows an end user to select multiple it
 The following code adds the **TagBox** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#placeholder') to be displayed when the **TagBox** is empty.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML-->
     <div id="tagBoxContainer"></div>
@@ -25,7 +25,7 @@ The following code adds the **TagBox** to your page. The simplest configuration 
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-tag-box
@@ -52,6 +52,66 @@ The following code adds the **TagBox** to your page. The simplest configuration 
          // ...
      })
 
+##### Vue
+
+    <template>
+        <DxTagBox
+            :data-source="dataSource"
+            placeholder="Select products..."
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                dataSource: [
+                    'HD Video Player',
+                    'SuperHD Video Player',
+                    'SuperPlasma 50',
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    const dataSource = [
+        'HD Video Player',
+        'SuperHD Video Player',
+        'SuperPlasma 50',
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={dataSource}
+                    placeholder="Select products..."
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If your data is an array of objects, specify: 
@@ -64,10 +124,10 @@ If your data is an array of objects, specify:
 <!---->
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var tagBoxData = [
+    const tagBoxData = [
         { id: 1, country: "Afghanistan" },
         { id: 2, country: "Albania" },
         // ...
@@ -81,7 +141,7 @@ If your data is an array of objects, specify:
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-tag-box
@@ -107,6 +167,66 @@ If your data is an array of objects, specify:
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <DxTagBox
+            :data-source="tagBoxData"
+            value-expr="id"
+            display-expr="country"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                tagBoxData: [
+                    { id: 1, country: 'Afghanistan' },
+                    { id: 2, country: 'Albania' },
+                    // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    const tagBoxData = [
+        { id: 1, country: 'Afghanistan' },
+        { id: 2, country: 'Albania' },
+        // ...
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={tagBoxData}
+                    valueExpr="id"
+                    displayExpr="country"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

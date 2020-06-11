@@ -1,9 +1,9 @@
 Bind the **TagBox** to an array by passing it to the [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#dataSource') option. The array may contain primitive values...
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = ["HD Video Player", "SuperHD Video Player", "SuperPlasma 50", "SuperLED 50"];
+    <!--JavaScript-->const products = ["HD Video Player", "SuperHD Video Player", "SuperPlasma 50", "SuperLED 50"];
 
     $(function() {
         $("#tagBoxContainer").dxTagBox({
@@ -11,7 +11,12 @@ Bind the **TagBox** to an array by passing it to the [dataSource](/api-reference
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-tag-box
+        [dataSource]="products">
+    </dx-tag-box>
 
     <!--TypeScript-->
     import { DxTagBoxModule } from "devextreme-angular";
@@ -32,19 +37,58 @@ Bind the **TagBox** to an array by passing it to the [dataSource](/api-reference
          // ...
      })
 
-    <!--HTML-->
-    <dx-tag-box
-        [dataSource]="products">
-    </dx-tag-box>
+##### Vue
+
+    <template>
+        <DxTagBox :data-source="products"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                products: ['HD Video Player', 'SuperHD Video Player', 'SuperPlasma 50', 'SuperLED 50']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    const products = ['HD Video Player', 'SuperHD Video Player', 'SuperPlasma 50', 'SuperLED 50'];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox dataSource={products}/>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 ... or objects.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = [
+    <!--JavaScript-->const products = [
         { name: "HD Video Player", price: 100 },
         { name: "SuperHD Video Player", price: 420 },
         { name: "SuperPlasma 50", price: 1500 },
@@ -59,7 +103,14 @@ Bind the **TagBox** to an array by passing it to the [dataSource](/api-reference
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-tag-box
+        [dataSource]="products"
+        valueExpr="price"
+        displayExpr="name">
+    </dx-tag-box>
 
     <!--TypeScript-->
     import { DxTagBoxModule } from "devextreme-angular";
@@ -80,21 +131,77 @@ Bind the **TagBox** to an array by passing it to the [dataSource](/api-reference
          // ...
      })
 
-    <!--HTML-->
-    <dx-tag-box
-        [dataSource]="products"
-        valueExpr="price"
-        displayExpr="name">
-    </dx-tag-box>
+##### Vue
+
+    <template>
+        <DxTagBox
+            :data-source="products"
+            value-expr="price"
+            display-expr="name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                products: [
+                    { name: 'HD Video Player', price: 100 },
+                    { name: 'SuperHD Video Player', price: 420 },
+                    { name: 'SuperPlasma 50', price: 1500 },
+                    { name: 'SuperLED 50', price: 200 }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    const products = [
+        { name: 'HD Video Player', price: 100 },
+        { name: 'SuperHD Video Player', price: 420 },
+        { name: 'SuperPlasma 50', price: 1500 },
+        { name: 'SuperLED 50', price: 200 }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={products}
+                    valueExpr="price"
+                    displayExpr="name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept') if objects in an array need to be processed (sorted, filtered, grouped, etc.). For example, in the following code, a Query sorts objects in the `products` array by the `price` field in descending order:
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = [
+    <!--JavaScript-->const products = [
+        { name: "SuperHD Video Player", price: 500 },
         { name: "HD Video Player", price: 100 },
         // ...
     ];
@@ -109,7 +216,14 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-tag-box ...
+        valueExpr="price"
+        displayExpr="name"
+        dataSource="getSortedProducts()">
+    </dx-tag-box>
 
     <!--TypeScript-->
     import query from "devextreme/data/query";
@@ -117,6 +231,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
     // ...
     export class AppComponent {
         products = [
+            { name: "SuperHD Video Player", price: 500 },
             { name: "HD Video Player", price: 100 },
             // ...
         ];
@@ -134,12 +249,80 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
          // ...
      })
 
-    <!--HTML-->
-    <dx-tag-box ...
-        valueExpr="price"
-        displayExpr="name"
-        dataSource="getSortedProducts()">
-    </dx-tag-box>
+##### Vue
+
+    <template>
+        <DxTagBox ...
+            :data-source="getSortedProducts()"
+            value-expr="price"
+            display-expr="name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+    import query from "devextreme/data/query";
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                products: [
+                    { name: "SuperHD Video Player", price: 500 },
+                    { name: 'HD Video Player', price: 100 },
+                    // ...
+                ]
+            };
+        },
+        methods: {
+            getSortedProducts() {
+                return query(this.products)
+                    .sortBy("price", true)
+                    .toArray();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+    import query from "devextreme/data/query";
+
+    const products = [
+        { name: "SuperHD Video Player", price: 500 },
+        { name: 'HD Video Player', price: 100 },
+        // ...
+    ];
+
+    class App extends React.Component {
+        getSortedProducts() {
+            return query(products)
+                .sortBy("price", true)
+                .toArray();
+        }
+
+        render() {
+            return (
+                <TagBox ...
+                    dataSource={this.getSortedProducts()}
+                    valueExpr="price"
+                    displayExpr="name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

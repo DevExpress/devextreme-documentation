@@ -1,7 +1,7 @@
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the **TagBox** to data an OData service provides.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#tagBoxContainer").dxTagBox({
@@ -14,7 +14,13 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML--><dx-tag-box
+        [dataSource]="productsStore"
+        valueExpr="Product_Cost"
+        displayExpr="Product_Name">
+    </dx-tag-box>
 
     <!--TypeScript-->
     import ODataStore from "devextreme/data/odata/store";
@@ -34,18 +40,72 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
          // ...
      })
 
-    <!--HTML--><dx-tag-box
-        [dataSource]="productsStore"
-        valueExpr="Product_Cost"
-        displayExpr="Product_Name">
-    </dx-tag-box>
+##### Vue
+
+    <template>
+        <DxTagBox
+            :data-source="dataSource"
+            value-expr="Product_Cost"
+            display-expr="Product_Name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+    import ODataStore from "devextreme/data/odata/store";
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                dataSource: new ODataStore({
+                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    key: "Product_ID"
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+    import ODataStore from "devextreme/data/odata/store";
+
+    const dataSource = new ODataStore({
+        url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+        key: "Product_ID"
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={dataSource}
+                    valueExpr="Product_Cost"
+                    displayExpr="Product_Name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 Data kept in the **ODataStore** can be processed in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can filter data.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#tagBoxContainer").dxTagBox({
@@ -62,7 +122,14 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-tag-box
+        [dataSource]="productsStore"
+        valueExpr="Product_Cost"
+        displayExpr="Product_Name">
+    </dx-tag-box>
 
     <!--TypeScript-->
     import "devextreme/data/odata/store";
@@ -87,12 +154,73 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
          // ...
      })
 
-    <!--HTML-->
-    <dx-tag-box
-        [dataSource]="productsStore"
-        valueExpr="Product_Cost"
-        displayExpr="Product_Name">
-    </dx-tag-box>
+##### Vue
+
+    <template>
+        <DxTagBox
+            :data-source="dataSource"
+            value-expr="Product_Cost"
+            display-expr="Product_Name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                dataSource: new DataSource({
+                    store: {
+                        type: "odata",
+                        url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                        key: "Product_ID"
+                    },
+                    filter: ["Product_Available", "=", true]
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const dataSource = new DataSource({
+        store: {
+            type: "odata",
+            url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+            key: "Product_ID"
+        },
+        filter: ["Product_Available", "=", true]
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox
+                    dataSource={dataSource}
+                    valueExpr="Product_Cost"
+                    displayExpr="Product_Name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

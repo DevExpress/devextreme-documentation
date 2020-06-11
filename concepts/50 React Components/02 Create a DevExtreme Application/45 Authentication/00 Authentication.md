@@ -1,5 +1,5 @@
-A DevExtreme React application includes authentication UI and API. Based on the user's authentication status, the application can be divided into two parts: public pages and protected pages.
+A DevExtreme React application includes authentication UI and API. Client-side routing is configured so that unauthenticated users can navigate to authentication pages only. These pages allow the users to sign in, create a new account, or reset the password.
 
-Unauthenticated users can access only public pages. These pages provide authentication functionality (sign in, create a new account, reset password). They are rendered by the `NonAuthenticatedContent.js` component.
+Authentication pages are rendered by the `NonAuthenticatedContent.js` component. The rest of the application is rendered by the `Content.js` component.
 
-Protected pages include the rest of the application and can be viewed by authenticated users only. These pages are rendered by the `Content.js` component.
+[important] Do not rely on client-side routing to protect your application from unauthorized access. Always verify user credentials on the back end.

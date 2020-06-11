@@ -5,12 +5,12 @@ The **DropDownBox**'s and embedded widget's data sources can be the same or diff
 
         <!--JavaScript-->
         // Different data sources, both have the ID field
-        var widgetData = [
+        const widgetData = [
             { ID: 1, fullName: "John Heart", position: "CEO"},
             { ID: 2, fullName: "Samantha Bright", position: "COO", headID: 1 },
             // ...
         ];
-        var dropDownBoxData = [
+        const dropDownBoxData = [
             { ID: 1, email: "jheart@dx-email.com" },
             { ID: 2, email: "samanthab@dx-email.com" },
             // ...
@@ -20,7 +20,7 @@ The **DropDownBox**'s and embedded widget's data sources can be the same or diff
 Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#valueExpr') option and to the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') option of the embedded widget's store. The following example shows an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'):
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         $(function() {
@@ -30,7 +30,7 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
                 valueExpr: "ID",
                 displayExpr: "email",
                 contentTemplate: function (e) {
-                    var $dataGrid = $("<div>").dxDataGrid({
+                    const $dataGrid = $("<div>").dxDataGrid({
                         dataSource: new DevExpress.data.ArrayStore({ 
                             key: "ID",
                             data: widgetData
@@ -42,7 +42,7 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
             });
         });
 
-    #####Angular
+    ##### Angular
 
         <!--HTML-->
         <dx-drop-down-box
@@ -79,27 +79,7 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
             // ...
         })
 
-    #####ASP.NET MVC Controls
-
-        <!--Razor C#-->
-        @(Html.DevExtreme().DropDownBox()
-            .ID("dropDownBox")
-            .DataSource(new JS("dropDownBoxData"))
-            .ValueExpr("ID")
-            .DisplayExpr("email")
-            .ContentTemplate(new TemplateName("dataGrid"))
-        )
-        @using (Html.DevExtreme().NamedTemplate("dataGrid")) {
-            @(Html.DevExtreme().DataGrid()
-                .ID("dataGrid")
-                .DataSource(ds => ds.Array()
-                    .Key("ID")
-                    .Data(new JS("widgetData"))
-                )
-            )
-        }
-
-    #####Vue
+    ##### Vue
 
         <!--tab: App.vue-->
         <template>
@@ -108,7 +88,7 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
                     value-expr="ID"
                     display-expr="email"
                     :data-source="dropDownBoxData">
-                    <DxDataGrid 
+                    <DxDataGrid ...
                         :data-source="gridDataSource">
                     </DxDataGrid>
                 </DxDropDownBox>
@@ -116,6 +96,9 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
         </template>
 
         <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
         import DxDropDownBox from "devextreme-vue/drop-down-box";
         import DxDataGrid, DxSelection from "devextreme-vue/data-grid";
         import ArrayStore from "devextreme/data/array_store";
@@ -138,6 +121,59 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
         }
         </script>
 
+    ##### React
+
+        import React from 'react';
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import { DropDownBox } from 'devextreme-react/drop-down-box';
+        import { DataGrid, Selection } from "devextreme-react/data-grid";
+        import ArrayStore from "devextreme/data/array_store";
+        
+        const dropDownBoxData = {/* ... */};
+        const gridDataSource = new ArrayStore({
+            data: widgetData,
+            key: "ID"
+        });
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <DropDownBox
+                        dataSource={dropDownBoxData}
+                        valueExpr="ID"
+                        displayExpr="email">
+                        <DataGrid ...
+                            dataSource={gridDataSource}
+                        />
+                    </DropDownBox>
+                );
+            }
+        }
+
+        export default App;
+
+    ##### ASP.NET MVC Controls
+
+        <!--Razor C#-->
+        @(Html.DevExtreme().DropDownBox()
+            .ID("dropDownBox")
+            .DataSource(new JS("dropDownBoxData"))
+            .ValueExpr("ID")
+            .DisplayExpr("email")
+            .ContentTemplate(new TemplateName("dataGrid"))
+        )
+        @using (Html.DevExtreme().NamedTemplate("dataGrid")) {
+            @(Html.DevExtreme().DataGrid()
+                .ID("dataGrid")
+                .DataSource(ds => ds.Array()
+                    .Key("ID")
+                    .Data(new JS("widgetData"))
+                )
+            )
+        }
+
     ---
 
 1. **Synchronize the DropDownBox's value and the embedded widget's selection**        
@@ -150,17 +186,17 @@ This step's implementation depends on the embedded widget's API and the library/
         Implement the embedded widget's **onSelectionChanged** handler to update the **DropDownBox**'s value when the selection changes.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         $(function() {
             // ...
-            var dataGridInstance;
+            const dataGridInstance;
             $("#dropDownBox").dxDropDownBox({ 
                 // ...
                 value: [1],
                 contentTemplate: function (e) {
-                    var value = e.component.option("value"),
+                    const value = e.component.option("value"),
                         $dataGrid = $("<div>").dxDataGrid({
                             // ...
                             selection: { mode: "multiple" },
@@ -178,7 +214,7 @@ This step's implementation depends on the embedded widget's API and the library/
             });
         });
 
-    #####Angular
+    ##### Angular
 
         <!--HTML-->
         <dx-drop-down-box ...
@@ -212,34 +248,7 @@ This step's implementation depends on the embedded widget's API and the library/
             // ...
         })
 
-    #####ASP.NET MVC Controls
-
-        <!--Razor C#-->
-        @(Html.DevExtreme().DropDownBox()
-            // ...
-            .Value(1)
-            .ContentTemplate(new TemplateName("dataGrid"))
-            .OnValueChanged("dropDownBox_valueChanged")
-        )
-        @using (Html.DevExtreme().NamedTemplate("dataGrid")) {
-            @(Html.DevExtreme().DataGrid()
-                // ...
-                .Selection(s => s.Mode(SelectionMode.Single))
-                .SelectedRowKeys(new JS("component.option('value')"))
-                .OnSelectionChanged("innerDataGrid_selectionChanged")
-            )
-        }
-
-        <script>
-            function innerDataGrid_selectionChanged(info) {
-                $("#dropDownBox").dxDropDownBox("option", "value", info.selectedRowKeys)
-            }
-            function dropDownBox_valueChanged(e) {
-                $("#dataGrid").dxDataGrid("selectRows", e.value, false);
-            }
-        </script>
-
-    #####Vue
+    ##### Vue
 
         <!--tab: App.vue-->
         <template>
@@ -255,6 +264,9 @@ This step's implementation depends on the embedded widget's API and the library/
         </template>
 
         <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
         import DxDropDownBox from "devextreme-vue/drop-down-box";
         import { DxDataGrid, DxSelection } from "devextreme-vue/data-grid";
         import ArrayStore from "devextreme/data/array_store";
@@ -283,6 +295,82 @@ This step's implementation depends on the embedded widget's API and the library/
                 }
             }
         }
+        </script>
+
+    ##### React
+
+        import React from 'react';
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import { DropDownBox } from 'devextreme-react/drop-down-box';
+        import { DataGrid, Selection } from "devextreme-react/data-grid";
+        import ArrayStore from "devextreme/data/array_store";
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.state = {
+                    dropDownBoxValues: [1]
+                };
+
+                this.dropDownBoxRef = React.createRef();
+            
+                this.changeDropDownBoxValue = this.changeDropDownBoxValue.bind(this);
+            }
+
+            changeDropDownBoxValue(e) {
+                const keys = e.selectedRowKeys;
+                this.setState({
+                    dropDownBoxValues: keys
+                });
+
+                this.dropDownBoxRef.current.instance.close();
+            }
+
+            render() {
+                return (
+                    <DropDownBox ...
+                        ref={this.dropDownBoxRef}
+                        value="this.state.dropDownBoxValues">
+                        <DataGrid ...
+                            selectedRowKeys={this.state.dropDownBoxValues}
+                            onSelectionChanged={this.changeDropDownBoxValue}>
+                            <Selection mode="multiple" />
+                        </DataGrid>
+                    </DropDownBox>
+                );
+            }
+        }
+
+        export default App;
+
+    ##### ASP.NET MVC Controls
+
+        <!--Razor C#-->
+        @(Html.DevExtreme().DropDownBox()
+            // ...
+            .Value(1)
+            .ContentTemplate(new TemplateName("dataGrid"))
+            .OnValueChanged("dropDownBox_valueChanged")
+        )
+        @using (Html.DevExtreme().NamedTemplate("dataGrid")) {
+            @(Html.DevExtreme().DataGrid()
+                // ...
+                .Selection(s => s.Mode(SelectionMode.Single))
+                .SelectedRowKeys(new JS("component.option('value')"))
+                .OnSelectionChanged("innerDataGrid_selectionChanged")
+            )
+        }
+
+        <script>
+            function innerDataGrid_selectionChanged(info) {
+                $("#dropDownBox").dxDropDownBox("option", "value", info.selectedRowKeys)
+            }
+            function dropDownBox_valueChanged(e) {
+                $("#dataGrid").dxDataGrid("selectRows", e.value, false);
+            }
         </script>
 
     ---

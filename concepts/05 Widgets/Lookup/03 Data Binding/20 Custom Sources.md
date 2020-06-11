@@ -43,14 +43,14 @@ If the **group** setting is absent, the object structure is different:
 If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#value') beforehand, the **CustomStore** should implement the [byKey](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/byKey.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey') operation as well. Below is a generalized **CustomStore** configuration for the **Lookup** widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#lookupContainer").dxLookup({
             dataSource: new DevExpress.data.DataSource({
                 key: "ID",
                 load: function(loadOptions) {
-                    var d = $.Deferred(),
+                    const d = $.Deferred(),
                         params = {};
                     [
                         "skip",     
@@ -73,7 +73,7 @@ If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropD
                     return d.promise();
                 },
                 byKey: function(key) {
-                    var d = new $.Deferred();
+                    const d = new $.Deferred();
                     $.get('https://mydomain.com/MyDataService?id=' + key)
                         .done(function(result) {
                             d.resolve(result);
@@ -87,7 +87,12 @@ If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropD
         return value !== undefined && value !== null && value !== "";
     }
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup ...
+        [dataSource]="lookupData">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { ..., Inject } from "@angular/core";
@@ -146,12 +151,7 @@ If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropD
          // ...
      })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupData">
-    </dx-lookup>
-
-#####Vue
+##### Vue
 
     <template>
         <DxLookup ... 
@@ -216,7 +216,7 @@ If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropD
     }
     </script>
 
-#####React
+##### React
 
     import React from "react";
     import Lookup from "devextreme-react/lookup";

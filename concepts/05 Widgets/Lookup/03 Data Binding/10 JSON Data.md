@@ -1,7 +1,7 @@
 Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#dataSource') option. 
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#lookupContainer").dxLookup({
@@ -11,7 +11,7 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup
@@ -34,12 +34,57 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
         // ...
     })
 
+##### Vue
+
+    <template>
+        <DxLookup
+            data-source="https://jsonplaceholder.typicode.com/users"
+            value-expr="username"
+            display-expr="name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource="https://jsonplaceholder.typicode.com/users"
+                    valueExpr="username"
+                    displayExpr="name"
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Note that you can also use a JSONP callback parameter supported by <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#lookupContainer").dxLookup({
@@ -48,7 +93,7 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup ...
@@ -68,6 +113,47 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
         ],
         // ...
     })
+
+##### Vue
+
+    <template>
+        <DxLookup ...
+            data-source="http://www.example.com/dataservices/jsonpdata?callback=?"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup ...
+                    dataSource="http://www.example.com/dataservices/jsonpdata?callback=?"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

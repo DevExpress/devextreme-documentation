@@ -1,7 +1,7 @@
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the **Lookup** to data provided by an OData service.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#lookupContainer").dxLookup({
@@ -14,7 +14,14 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="lookupDataSource"
+        valueExpr="Product_Cost"
+        displayExpr="Product_Name">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -34,19 +41,76 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupDataSource"
-        valueExpr="Product_Cost"
-        displayExpr="Product_Name">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="products"
+            value-expr="Product_Cost"
+            display-expr="Product_Name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+    import ODataStore from "devextreme/data/odata/store";
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                products: new ODataStore({
+                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    key: "Product_ID"
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+    import ODataStore from "devextreme/data/odata/store";
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.products = new ODataStore({
+                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                key: "Product_ID"
+            });
+        }
+
+        render() {
+            return (
+                <Lookup
+                    dataSource={this.products}
+                    valueExpr="Product_Cost"
+                    displayExpr="Product_Name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 Data kept in the **ODataStore** can be processed in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can filter data.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#lookupContainer").dxLookup({
@@ -63,7 +127,14 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="lookupDataSource"
+        valueExpr="Product_Cost"
+        displayExpr="Product_Name">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -88,12 +159,77 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupDataSource"
-        valueExpr="Product_Cost"
-        displayExpr="Product_Name">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="products"
+            value-expr="Product_Cost"
+            display-expr="Product_Name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                products: new DataSource({
+                    store: {
+                        type: "odata",
+                        url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                        key: "Product_ID"
+                    },
+                    filter: ["Product_Available", "=", true]
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+    import DataSource from "devextreme/data/data_source";
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.products = new DataSource({
+                store: {
+                    type: "odata",
+                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    key: "Product_ID"
+                },
+                filter: ["Product_Available", "=", true]
+            });
+        }
+
+        render() {
+            return (
+                <Lookup
+                    dataSource={this.products}
+                    valueExpr="Product_Cost"
+                    displayExpr="Product_Name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -90,6 +90,8 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.store = createStore({
                 key: "ID",
                 loadUrl: serviceUrl

@@ -84,6 +84,8 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.products = new ODataStore({
                 url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
                 key: "Product_ID"
@@ -204,6 +206,8 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.products = new DataSource({
                 store: {
                     type: "odata",

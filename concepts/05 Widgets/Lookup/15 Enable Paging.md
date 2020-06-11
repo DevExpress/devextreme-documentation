@@ -86,6 +86,8 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.dataSource = new DataSource({
                 store: /* A store is configured here */ ,
                 paginate: true,

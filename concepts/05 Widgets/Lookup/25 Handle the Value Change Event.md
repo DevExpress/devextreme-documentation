@@ -190,6 +190,8 @@ To process a new **Lookup** value, you need to handle the value change event. If
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.onValueChanged = this.onValueChanged.bind(this);
         }
 

@@ -292,6 +292,8 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.products = [
                 { name: 'HD Video Player', price: 100 },
                 // ...

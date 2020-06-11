@@ -95,6 +95,8 @@ Extend a JavaScript array's functionality by placing it into an [ArrayStore](/ap
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.dataSource = new ArrayStore({
                 data: products,
                 onLoaded: function () {
@@ -217,6 +219,8 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.dataSource = new DataSource({
                 store: products,
                 sort: { getter: "name", desc: true }

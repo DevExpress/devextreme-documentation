@@ -242,6 +242,8 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.dataSource = new DataSource({
                 store: lookupData,
                 group: 'gender'
@@ -357,6 +359,8 @@ To customize group headers, specify a [groupTemplate](/Documentation/ApiReferenc
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.dataSource = [{
                 key: "Mr. John Heart",
                 items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]

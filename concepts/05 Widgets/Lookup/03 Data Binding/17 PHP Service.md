@@ -90,6 +90,8 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
 
     class App extends React.Component {
         constructor(props) {
+            super(props);
+
             this.store = createStore({
                 key: "ID",
                 loadUrl: serviceUrl

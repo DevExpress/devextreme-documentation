@@ -1,11 +1,11 @@
 Regardless of the data source you use, the **TagBox** always wraps it in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). Call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Methods/#getDataSource') method to get the instance of the **DataSource**.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->var tagBoxDataSource = $("#tagBoxContainer").dxTagBox("getDataSource");
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ViewChild, ... } from "@angular/core";
@@ -27,6 +27,64 @@ Regardless of the data source you use, the **TagBox** always wraps it in a [Data
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <DxTagBox
+            ref="tagBox"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        methods: {
+            getDataSource() {
+                this.ds = this.$refs.tagBox.instance.getDataSource();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.tagBoxRef = React.createRef();
+
+            this.getDataSource = this.getDataSource.bind(this);
+        }
+
+        getDataSource() {
+            this.ds = this.tagBoxRef.current.instance.getDataSource();
+        } 
+
+        render() {
+            return (
+                <TagBox
+                    ref={this.tagBoxRef}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

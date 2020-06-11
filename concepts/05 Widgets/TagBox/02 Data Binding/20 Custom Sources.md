@@ -45,7 +45,7 @@ If the **group** setting is absent, the object structure is different:
 If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/TagBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/Widgets/TagBox/Create_a_User-Defined_Item/'), you should also implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert') method. Below is a generalized **CustomStore** configuration for the **TagBox** widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#tagBoxContainer").dxTagBox({
@@ -92,7 +92,12 @@ If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/Tag
     }
 
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-tag-box ...
+        [dataSource]="tagBoxData">
+    </dx-tag-box>
 
     <!--TypeScript-->
     import { ..., Inject } from "@angular/core";
@@ -154,12 +159,7 @@ If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/Tag
          // ...
      })
 
-    <!--HTML-->
-    <dx-tag-box
-        [dataSource]="tagBoxData">
-    </dx-tag-box>
-
-#####Vue
+##### Vue
 
     <template>
         <DxTagBox ... 
@@ -233,7 +233,7 @@ If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/Tag
     }
     </script>
 
-#####React
+##### React
 
     import React from "react";
     import TagBox from "devextreme-react/tag-box";

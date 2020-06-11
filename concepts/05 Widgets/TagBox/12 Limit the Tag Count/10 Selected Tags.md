@@ -1,11 +1,11 @@
 The following code shows the [onValueChanged](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#onValueChanged') event handler's implementation that limits the number of tags a user can select in the **TagBox**:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
-        var products = [
+        const products = [
             "HD Video Player",
             "SuperHD Video Player",
             "SuperPlasma 50",
@@ -18,14 +18,14 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Widgets/d
             dataSource: products,
             onValueChanged: function(e) {
                 if (e.value.length > maxItems) {
-                    var newValue = e.value.slice(0, maxItems); 
+                    const newValue = e.value.slice(0, maxItems); 
                     e.component.option("value", newValue);
                     tooltip.show();
                 }
             }
         });
 
-        var tooltip = $("#tooltipContainer").dxTooltip({
+        const tooltip = $("#tooltipContainer").dxTooltip({
             target: "#tagBoxContainer",
             position:"bottom", 
             hideEvent: {
@@ -39,7 +39,7 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Widgets/d
     <div id="tagBoxContainer"></div>
     <div id="tooltipContainer">Limit reached</div>
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-tag-box id="tagBoxContainer"
@@ -85,6 +85,142 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Widgets/d
          ],
          // ...
      })
+
+##### Vue
+
+    <template>
+        <div>
+            <DxTagBox
+                id="tagBoxContainer"
+                :data-source="products"
+                @value-changed="onValueChanged"
+            />
+            <DxTooltip 
+                target="#tagBoxContainer"
+                :hide-event="hideEvent"
+                position="bottom"
+                :visible="isTooltipVisible">
+                <template>
+                    <p>Limit reached</p>
+                </template>
+            </DxTooltip>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+    import { DxTooltip } from 'devextreme-vue/tooltip';
+
+    export default {
+        components: {
+            DxTagBox,
+            DxTooltip
+        },
+        data() {
+            return {
+                hideEvent: { name: 'mouseout', delay: 2000 },
+                products: [
+                    "HD Video Player",
+                    "SuperHD Video Player",
+                    "SuperPlasma 50",
+                    "SuperLED 50",
+                    // ...
+                ],
+                isTooltipVisible: false,
+                maxItems: 2
+            };
+        },
+        methods: {
+            onValueChanged(e) {
+                if (e.value.length > this.maxItems) {
+                    const newValue = e.value.slice(0, this.maxItems);
+                    e.component.option('value', newValue);
+                    this.isTooltipVisible = true;
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+    import { Tooltip } from 'devextreme-react/tooltip';
+
+    const products = [
+        "HD Video Player",
+        "SuperHD Video Player",
+        "SuperPlasma 50",
+        "SuperLED 50",
+        // ...
+    ];
+
+    const renderContent = () => {
+        return (
+            <p>Limit reached</p>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                isTooltipVisible: false
+            }
+
+            this.maxItems = 2;
+            this.hideEvent = { delay: 2000, name: "mouseout" };
+
+            this.onValueChanged = this.onValueChanged.bind(this);
+            this.onTooltipHiding = this.onTooltipHiding.bind(this);
+        }
+
+        onValueChanged(e) {
+            if (e.value.length > this.maxItems) {
+                const newValue = e.value.slice(0, this.maxItems);
+                e.component.option('value', newValue);
+                this.setState({
+                    isTooltipVisible: true
+                });
+            }
+        }
+
+        onTooltipHiding(e) {
+            this.setState({
+                isTooltipVisible: false
+            });
+        }
+
+        render() {
+            return (
+                <div>
+                    <TagBox
+                        id="tagBoxContainer"
+                        dataSource={products}
+                        onValueChanged={this.onValueChanged}
+                    />
+                    <Tooltip
+                        target="#tagBoxContainer"
+                        hideEvent={this.hideEvent}
+                        contentRender={renderContent}
+                        position="bottom"
+                        visible={this.state.isTooltipVisible}
+                        onHiding={this.onTooltipHiding}
+                    />
+                </div>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

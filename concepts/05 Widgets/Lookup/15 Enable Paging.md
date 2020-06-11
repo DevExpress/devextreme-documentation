@@ -1,7 +1,7 @@
 Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'): [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') enables paging; [pageSize](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pageSize.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize') specifies how many data items a page should contain.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -15,7 +15,12 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup ...
+        [dataSource]="lookupData">
+    </dx-lookup>
 
     <!--TypeScript-->
     import DataSource from "devextreme/data/data_source";
@@ -39,12 +44,69 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup ...
-        [dataSource]="lookupData">
-    </dx-lookup>
+##### Vue
 
-#####ASP.NET MVC Controls
+    <template>
+        <DxLookup ...
+            :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                dataSource: new DataSource({
+                    store: /* A store is configured here */ ,
+                    paginate: true,
+                    pageSize: 10
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+    import DataSource from "devextreme/data/data_source";
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dataSource = new DataSource({
+                store: /* A store is configured here */ ,
+                paginate: true,
+                pageSize: 10
+            });
+        }
+
+        render() {
+            return (
+                <Lookup ...
+                    dataSource={dataSource}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Lookup()
@@ -63,7 +125,7 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
 **Lookup** renders the next page once a user scrolls the item list to the bottom. If you set the [pageLoadMode](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#pageLoadMode') to *"nextButton"*, **Lookup** renders the next page when a user clicks the **Next** button. You can change this button's text using the [nextButtonText](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/nextButtonText.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#nextButtonText') option:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -74,13 +136,56 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup ...
         pageLoadMode="nextButton"
         nextButtonText="More">
     </dx-lookup>
+
+##### Vue
+
+    <template>
+        <DxLookup ...
+            page-load-mode="nextButton"
+            next-button-text="More"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup ...
+                    pageLoadMode="nextButton"
+                    nextButtonText="More"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

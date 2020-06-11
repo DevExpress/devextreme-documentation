@@ -30,9 +30,6 @@ dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
         // Other ArrayStore options go here
     });
 
-    // ===== or a simplified version =====
-    var store = new DevExpress.data.ArrayStore(states);
-
     // ===== or inside the DataSource =====
     var dataSource = new DevExpress.data.DataSource({
         store: {
@@ -66,9 +63,6 @@ dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
                 // Other ArrayStore options go here
             });
 
-            // ===== or a simplified version =====
-            this.store = new ArrayStore(this.states);
-
             // ===== or inside the DataSource =====
             this.dataSource = new DataSource({
                 store: new ArrayStore({
@@ -98,9 +92,6 @@ dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
                 // Other ArrayStore options go here
             });
 
-            // ===== or a simplified version =====
-            $scope.store = new DevExpress.data.ArrayStore(states);
-
             // ===== or inside the DataSource =====
             $scope.dataSource = new DevExpress.data.DataSource({
                 store: {
@@ -129,9 +120,6 @@ dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
             data: states,
             // Other ArrayStore options go here
         })
-
-        // ===== or a simplified version =====
-        store: new DevExpress.data.ArrayStore(states)
 
         // ===== or inside the DataSource =====
         dataSource: new DevExpress.data.DataSource({
@@ -166,9 +154,6 @@ dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
         data: states,
         // Other ArrayStore options go here
     });
-
-    // ===== or a simplified version =====
-    const store = new ArrayStore(states);
 
     // ===== or inside the DataSource =====
     const dataSource = new DataSource({
@@ -211,9 +196,6 @@ dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
         data: states,
         // Other ArrayStore options go here
     });
-
-    // ===== or a simplified version =====
-    const store = new ArrayStore(states);
 
     // ===== or inside the DataSource =====
     const dataSource = new DataSource({

@@ -1,7 +1,7 @@
 Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'): [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') enables paging; [pageSize](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pageSize.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize') specifies how many data items a page should contain.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -15,7 +15,12 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-tag-box ...
+        [dataSource]="tagBoxData">
+    </dx-tag-box>
 
     <!--TypeScript-->
     import { DxTagBoxModule } from "devextreme-angular";
@@ -39,12 +44,65 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
          // ...
      })
 
-    <!--HTML-->
-    <dx-tag-box ...
-        [dataSource]="tagBoxData">
-    </dx-tag-box>
+##### Vue
 
-#####ASP.NET MVC Controls
+    <template>
+        <DxTagBox ...
+            :data-source="dataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTagBox } from 'devextreme-vue/tag-box';
+    import DataSource from "devextreme/data/data_source";
+
+    export default {
+        components: {
+            DxTagBox
+        },
+        data() {
+            return {
+                dataSource: new DataSource({
+                    store: /* A store is configured here */ ,
+                    paginate: true,
+                    pageSize: 10
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TagBox } from 'devextreme-react/tag-box';
+    import DataSource from "devextreme/data/data_source";
+
+    const dataSource = new DataSource({
+        store: /* A store is configured here */ ,
+        paginate: true,
+        pageSize: 10
+    });
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TagBox ...
+                    dataSource={dataSource}
+                />
+            );
+        }
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().TagBox()

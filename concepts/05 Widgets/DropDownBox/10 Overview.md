@@ -8,16 +8,16 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
 
 ---
 
-#####**jQuery**
+##### **jQuery**
 
     <!--JavaScript-->
     $(function () {
-        var fruits = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
+        const fruits = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
         $("#dropDownBoxContainer").dxDropDownBox({
             value: fruits[0],
             dataSource: fruits,
             contentTemplate: function(e) {
-                var $list = $("<div>").dxList({
+                const $list = $("<div>").dxList({
                     dataSource: e.component.option("dataSource"),
                     selectionMode: "single",
                     onSelectionChanged: function(arg) {
@@ -30,7 +30,7 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
         });
     });
 
-#####**Angular**
+##### **Angular**
 
     <!--HTML-->
     <dx-drop-down-box
@@ -65,32 +65,7 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
         // ...
     })
 
-#####ASP.NET MVC Controls
-
-    <!--Razor C#-->
-    @(Html.DevExtreme().DropDownBox()
-        .ID("dropDownBox")
-        .DataSource(new[] { "Apples", "Oranges", "Lemons", "Pears", "Pineapples" })
-        .Value("Apples")
-        .ContentTemplate(new TemplateName("list"))
-    )
-    @using (Html.DevExtreme().NamedTemplate("list")) {
-        @(Html.DevExtreme().List()
-            .DataSource(new JS("component.option('dataSource')"))
-            .SelectionMode(ListSelectionMode.Single)
-            .OnSelectionChanged("innerList_selectionChanged")
-        )
-    }
-
-    <script>
-        function innerList_selectionChanged (e) {
-            var dropDownBox = $("#dropDownBox").dxDropDownBox("instance");
-            dropDownBox.option("value", e.addedItems[0]);
-            dropDownBox.close();
-        }
-    </script>
-
-#####Vue
+##### Vue
 
     <!--tab: App.vue-->
     <template>
@@ -109,6 +84,9 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
     import DxDropDownBox from "devextreme-vue/drop-down-box";
     import DxList from "devextreme-vue/list";
 
@@ -134,6 +112,81 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
     }
     </script>
 
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DropDownBox } from 'devextreme-react/drop-down-box';
+    import { List } from 'devextreme-react/list';
+
+    const fruits = ['Apples', 'Oranges', 'Lemons', 'Pears', 'Pineapples'];
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                selectedFruit: fruits[0]
+            };
+
+            this.dataSource = fruits;
+            this.dropDownBoxRef = React.createRef();
+
+            this.changeDropDownBoxValue = this.changeDropDownBoxValue.bind(this);
+        }
+
+        changeDropDownBoxValue(e) {
+            this.setState({
+                selectedFruit: e.addedItems[0]
+            });
+            this.dropDownBoxRef.current.instance.close();
+        }
+
+        render() {
+            return (
+                <DropDownBox
+                    ref={this.dropDownBoxRef}
+                    value={this.state.selectedFruit}
+                    dataSource={this.dataSource}>
+                    <List
+                        dataSource={this.dataSource}
+                        selectionMode="single"
+                        onSelectionChanged={this.changeDropDownBoxValue}
+                    />
+                </DropDownBox>
+            );
+        }
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().DropDownBox()
+        .ID("dropDownBox")
+        .DataSource(new[] { "Apples", "Oranges", "Lemons", "Pears", "Pineapples" })
+        .Value("Apples")
+        .ContentTemplate(new TemplateName("list"))
+    )
+    @using (Html.DevExtreme().NamedTemplate("list")) {
+        @(Html.DevExtreme().List()
+            .DataSource(new JS("component.option('dataSource')"))
+            .SelectionMode(ListSelectionMode.Single)
+            .OnSelectionChanged("innerList_selectionChanged")
+        )
+    }
+
+    <script>
+        function innerList_selectionChanged (e) {
+            const dropDownBox = $("#dropDownBox").dxDropDownBox("instance");
+            dropDownBox.option("value", e.addedItems[0]);
+            dropDownBox.close();
+        }
+    </script>
+
 ---
 
 If your data is an array of objects, specify: 
@@ -147,15 +200,16 @@ If your data is an array of objects, specify:
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
-        var customers = [
-            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" }
+        const customers = [
+            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+            { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
             // ...
         ];
-        var selectedValue = customers[0].ID;
+        const selectedValue = customers[0].ID;
         $("#dropDownBoxContainer").dxDropDownBox({
             value: selectedValue,
             valueExpr: "ID",
@@ -165,14 +219,14 @@ If your data is an array of objects, specify:
                 key: "ID"
             }),
             contentTemplate: function(e){
-                var $dataGrid = $("<div>").dxDataGrid({
+                const $dataGrid = $("<div>").dxDataGrid({
                     dataSource: e.component.option("dataSource"),
                     columns: ["companyName", "city", "phone"],
                     height: 265,
                     selection: { mode: "single" },
                     selectedRowKeys: [selectedValue],
                     onSelectionChanged: function(selectedItems){
-                        var keys = selectedItems.selectedRowKeys,
+                        const keys = selectedItems.selectedRowKeys,
                             hasSelection = keys.length;
                         e.component.option("value", hasSelection ? keys[0] : null); 
                         e.component.close();
@@ -183,11 +237,11 @@ If your data is an array of objects, specify:
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-drop-down-box
-        [(value)]="selectedCustomers"
+        [(value)]="selectedValue"
         [(opened)]="isDropDownBoxOpened"
         valueExpr="ID"
         displayExpr="companyName"
@@ -198,7 +252,7 @@ If your data is an array of objects, specify:
             [columns]="['companyName', 'city', 'phone']"
             [height]="265"
             [(selectedRowKeys)]="selectedCustomers"
-            (onSelectionChanged)="closeDropDownBox($event)">
+            (onSelectionChanged)="changeDropDownBoxValue($event)">
         </dx-data-grid>
     </dx-drop-down-box>
 
@@ -209,6 +263,7 @@ If your data is an array of objects, specify:
     export class AppComponent  {
         customers = [
             { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+            { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
             // ...
         ];
         customerDataSource = new ArrayStore({
@@ -216,8 +271,10 @@ If your data is an array of objects, specify:
             key: "ID"
         });
         selectedCustomers = [this.customers[0].ID];
+        selectedValue = this.selectedCustomers[0];
         isDropDownBoxOpened = false;
-        closeDropDownBox (args) {
+        changeDropDownBoxValue(args) {
+            this.selectedValue = this.selectedCustomers[0];
             this.isDropDownBoxOpened = false;
         }
     }
@@ -230,7 +287,136 @@ If your data is an array of objects, specify:
         // ...
     })
 
-#####ASP.NET MVC Controls
+##### Vue
+
+    <!--tab: App.vue-->
+    <template>
+        <div>
+            <DxDropDownBox
+                :value.sync="selectedValue"
+                :opened.sync="isDropDownBoxOpened"
+                :data-source="customerDataSource"
+                value-expr="ID"
+                display-expr="companyName">
+                <DxDataGrid
+                    :data-source="customerDataSource"
+                    :columns="['companyName', 'city', 'phone']"
+                    :height="265"
+                    :selected-row-keys.sync="selectedCustomers"
+                    @selection-changed="changeDropDownBoxValue">
+                    <DxSelection mode="single"/>
+                </DxDataGrid>
+            </DxDropDownBox>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDropDownBox from "devextreme-vue/drop-down-box";
+    import { DxDataGrid, DxSelection } from "devextreme-vue/data-grid";
+    import ArrayStore from "devextreme/data/array_store";
+
+    export default {
+        components: {
+            DxDropDownBox,
+            DxDataGrid,
+            DxSelection
+        },
+        data() {
+            const customers = [
+                { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+                { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
+                // ...
+            ];
+            return {
+                customerDataSource: new ArrayStore({
+                    data: customers,
+                    key: "ID"
+                }),
+                isDropDownBoxOpened: false,
+                selectedCustomers: [customers[0].ID],
+                selectedValue: customers[0].ID
+            }
+        },
+        methods: {
+            changeDropDownBoxValue(e) {
+                this.selectedValue = this.selectedCustomers[0];
+                this.isDropDownBoxOpened = false;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DropDownBox } from 'devextreme-react/drop-down-box';
+    import { DataGrid, Selection } from "devextreme-react/data-grid";
+    import ArrayStore from "devextreme/data/array_store";
+    
+    const customers = [
+        { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+        { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" },
+        // ...
+    ];
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                selectedCustomers: [customers[0].ID],
+                selectedValue: customers[0].ID
+            };
+
+            this.customerDataSource = new ArrayStore({
+                data: customers,
+                key: "ID"
+            });
+            this.dropDownBoxRef = React.createRef();
+
+            this.changeDropDownBoxValue = this.changeDropDownBoxValue.bind(this);
+        }
+
+        changeDropDownBoxValue(selectedItems) {
+            const keys = selectedItems.selectedRowKeys;
+            this.setState({
+                selectedCustomers: keys,
+                selectedValue: keys[0]
+            });
+
+            this.dropDownBoxRef.current.instance.close();
+        }
+
+        render() {
+            return (
+                <DropDownBox
+                    ref={this.dropDownBoxRef}
+                    value={this.state.selectedValue}
+                    dataSource={this.customerDataSource}
+                    valueExpr="ID"
+                    displayExpr="companyName">
+                    <DataGrid
+                        dataSource={this.customerDataSource}
+                        columns={['companyName', 'city', 'phone']}
+                        height={265}
+                        selectedRowKeys={this.state.selectedCustomers}
+                        onSelectionChanged={this.changeDropDownBoxValue}>
+                        <Selection mode="single"/>
+                    </DataGrid>
+                </DropDownBox>
+            );
+        }
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().DropDownBox()
@@ -260,74 +446,19 @@ If your data is an array of objects, specify:
     }
 
     <script>
-        var customers = [
-            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" }, 
+        const customers = [
+            { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
+            { ID: 2, companyName: "ElectrixMax", city: "Naperville", phone: "(630)438-7800" }, 
             // ...
         ];
-        var selectedValue = customers[0].ID;
+        const selectedValue = customers[0].ID;
         function innerDataGrid_selectionChanged(selectedItems) {
-            var keys = selectedItems.selectedRowKeys,
+            const keys = selectedItems.selectedRowKeys,
                 hasSelection = keys.length,
                 dropDownBox = $("#dropDownBox").dxDropDownBox("instance");
             dropDownBox.option("value", hasSelection ? keys[0] : null);
             dropDownBox.close();
         }
-    </script>
-
-#####Vue
-
-    <!--tab: App.vue-->
-    <template>
-        <div>
-            <DxDropDownBox
-                :value.sync="selectedCustomers"
-                :opened.sync="isDropDownBoxOpened"
-                :data-source="customerDataSource"
-                value-expr="ID"
-                display-expr="companyName">
-                <DxDataGrid
-                    :data-source="customerDataSource"
-                    :columns="['companyName', 'city', 'phone']"
-                    :height="265"
-                    :selected-row-keys.sync="selectedCustomers"
-                    @selection-changed="closeDropDownBox($event)">
-                    <DxSelection mode="single"/>
-                </DxDataGrid>
-            </DxDropDownBox>
-        </div>
-    </template>
-
-    <script>
-    import DxDropDownBox from "devextreme-vue/drop-down-box";
-    import { DxDataGrid, DxSelection } from "devextreme-vue/data-grid";
-    import ArrayStore from "devextreme/data/array_store";
-
-    export default {
-        components: {
-            DxDropDownBox,
-            DxDataGrid,
-            DxSelection
-        },
-        data() {
-            const customers = [
-                { ID: 1, companyName: "Premier Buy", city: "Dallas", phone: "(233)2123-11" },
-                // ...
-            ];
-            return {
-                customerDataSource: new ArrayStore({
-                    data: customers,
-                    key: "ID"
-                }),
-                isDropDownBoxOpened: false,
-                selectedCustomers: [customers[0].ID]
-            }
-        },
-        methods: {
-            closeDropDownBox(e) {
-                this.isDropDownBoxOpened = false;
-            }
-        }
-    }
     </script>
 
 ---

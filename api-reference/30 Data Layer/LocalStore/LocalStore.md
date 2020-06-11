@@ -166,9 +166,6 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
         // Other LocalStore options go here
     });
 
-    // ===== or a simplified version =====
-    const store = new LocalStore(states);
-
     // ===== or inside the DataSource =====
     const dataSource = new DataSource({
         store: new LocalStore({
@@ -212,9 +209,6 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
         name: 'myLocalData',
         // Other LocalStore options go here
     });
-
-    // ===== or a simplified version =====
-    const store = new LocalStore(states);
 
     // ===== or inside the DataSource =====
     const dataSource = new DataSource({

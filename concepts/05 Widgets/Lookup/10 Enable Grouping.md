@@ -1,10 +1,10 @@
 The **Lookup** can organize items in groups. If you use a simple array as a data source, its objects must have the **key** and **items** fields.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var lookupData = [{
+    const lookupData = [{
         key: "Mr. John Heart",
         items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]
     }, {
@@ -20,7 +20,13 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="lookupDataSource"
+        [grouped]="true">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -43,11 +49,69 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupDataSource"
-        [grouped]="true">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="lookupData"
+            :grouped="true"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                lookupData: [{
+                    key: 'Mr. John Heart',
+                    items: ['Google AdWords Strategy', 'New Brochures', 'Update NDA Agreement']
+                }, {
+                    key: 'Mrs. Olivia Peyton',
+                    items: ['Update Personnel Files', 'Non-Compete Agreements', 'Give Final Approval for Refunds']
+                }, // ... 
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const lookupData = [{
+        key: 'Mr. John Heart',
+        items: ['Google AdWords Strategy', 'New Brochures', 'Update NDA Agreement']
+    }, {
+        key: 'Mrs. Olivia Peyton',
+        items: ['Update Personnel Files', 'Non-Compete Agreements', 'Give Final Approval for Refunds']
+    }, // ... 
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={lookupData}
+                    grouped={true}
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -56,10 +120,10 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
 If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), specify its [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') option. In both cases, you need to make the **Lookup** know that its data source is grouped by assigning **true** to the [grouped](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#grouped') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var lookupData = [
+    const lookupData = [
         { name: "Amelia", birthYear: 1991, gender: "female" },
         { name: "Benjamin", birthYear: 1983, gender: "male" },
         { name: "Andrew", birthYear: 1991, gender: "male" },
@@ -80,7 +144,15 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="lookupDataSource"
+        [grouped]="true"
+        displayExpr="name"
+        valueExpr="name">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -108,21 +180,97 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupDataSource"
-        [grouped]="true"
-        displayExpr="name"
-        valueExpr="name">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="dataSource"
+            :grouped="true"
+            display-expr="name"
+            value-expr="name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+    import DataSource from "devextreme/data/data_source";
+
+    const lookupData = [
+        { name: 'Amelia', birthYear: 1991, gender: 'female' },
+        { name: 'Benjamin', birthYear: 1983, gender: 'male' },
+        { name: 'Andrew', birthYear: 1991, gender: 'male' },
+        { name: 'Daniela', birthYear: 1983, gender: 'female' },
+        { name: 'Lee', birthYear: 1983, gender: 'male' },
+        { name: 'Betty', birthYear: 1983, gender: 'female' }
+    ];
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                dataSource: new DataSource({
+                    store: lookupData,
+                    group: 'gender'
+                })
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+    import DataSource from "devextreme/data/data_source";
+
+    const lookupData = [
+        { name: 'Amelia', birthYear: 1991, gender: 'female' },
+        { name: 'Benjamin', birthYear: 1983, gender: 'male' },
+        { name: 'Andrew', birthYear: 1991, gender: 'male' },
+        { name: 'Daniela', birthYear: 1983, gender: 'female' },
+        { name: 'Lee', birthYear: 1983, gender: 'male' },
+        { name: 'Betty', birthYear: 1983, gender: 'female' }
+    ];
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dataSource = new DataSource({
+                store: lookupData,
+                group: 'gender'
+            });
+        }
+
+        render() {
+            return (
+                <Lookup
+                    dataSource={this.dataSource}
+                    grouped={true}
+                    displayExpr="name"
+                    valueExpr="name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
-You can define a custom template for the group headers. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **Lookup** group headers.
+To customize group headers, specify a [groupTemplate](/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#groupTemplate). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-lookup
@@ -156,25 +304,64 @@ You can define a custom template for the group headers. For Angular, AngularJS a
         // ...
     })
 
-#####AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-lookup="{
-            dataSource: lookupData,
-            groupTemplate: 'group',
-            grouped: true
-        }" dx-item-alias="product">
-            <div data-options="dxTemplate: { name: 'group' }">
-                <div>[{{$index + 1}}] Assigned: {{product.key}}</div>
-            </div>
-        </div>
-    </div>
+    <template>
+        <DxLookup
+            :data-source="dataSource"
+            :grouped="true"
+            group-template="group">
+            <template #group="{ data, index }">
+                <div>[{{index + 1}}] Assigned: {{data.key}}</div>
+            </template>
+        </DxLookup>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.lookupData = [{
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                dataSource: [{
+                    key: "Mr. John Heart",
+                    items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]
+                }, {
+                    key: "Mrs. Olivia Peyton",
+                    items: ["Update Personnel Files", "Non-Compete Agreements", "Give Final Approval for Refunds"]
+                }, // ... 
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+    import DataSource from "devextreme/data/data_source";
+
+    const renderGroup = (data, index) => {
+        return (
+            <div>[{index + 1}] Assigned: {data.key}</div>
+        );
+    }
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.dataSource = [{
                 key: "Mr. John Heart",
                 items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]
             }, {
@@ -182,43 +369,27 @@ You can define a custom template for the group headers. For Angular, AngularJS a
                 items: ["Update Personnel Files", "Non-Compete Agreements", "Give Final Approval for Refunds"]
             }, // ... 
             ];
-        });
+        }
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
+        render() {
+            return (
+                <Lookup
+                    dataSource={this.dataSource}
+                    grouped={true}
+                    groupRender={renderGroup}
+                />
+            );
+        }
+    }
 
-#####Knockout
-
-    <!--HTML-->
-    <div data-bind="dxLookup: {
-        dataSource: lookupData,
-        grouped: true,
-        groupTemplate: 'group'
-    }">
-        <div data-options="dxTemplate: { name: 'group' }">
-            <div>[<span data-bind="text: $index + 1"></span>] Assigned: <span data-bind="text: key"></span></div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        lookupData: [{
-            key: "Mr. John Heart",
-            items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]
-        }, {
-            key: "Mrs. Olivia Peyton",
-            items: ["Update Personnel Files", "Non-Compete Agreements", "Give Final Approval for Refunds"]
-        }, // ... 
-        ]
-    };
-
-    ko.applyBindings(viewModel);
+    export default App;
 
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
-    var lookupData = [{
+    const lookupData = [{
         key: "Mr. John Heart",
         items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]
     }, {

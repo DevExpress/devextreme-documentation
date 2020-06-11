@@ -1,9 +1,9 @@
 Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#dataSource') option. The array may contain primitive values...
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = ["HD Video Player", "SuperHD Video Player", "SuperPlasma 50", "SuperLED 50"];
+    <!--JavaScript-->const products = ["HD Video Player", "SuperHD Video Player", "SuperPlasma 50", "SuperLED 50"];
 
     $(function() {
         $("#lookupContainer").dxLookup({
@@ -11,7 +11,12 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="lookupDataSource">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -27,19 +32,58 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupDataSource">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup :data-source="products"/>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                products: ['HD Video Player', 'SuperHD Video Player', 'SuperPlasma 50', 'SuperLED 50']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const products = ['HD Video Player', 'SuperHD Video Player', 'SuperPlasma 50', 'SuperLED 50'];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup dataSource={products}/>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 ... or objects.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = [
+    <!--JavaScript-->const products = [
         { name: "HD Video Player", price: 100 },
         { name: "SuperHD Video Player", price: 420 },
         { name: "SuperPlasma 50", price: 1500 },
@@ -54,7 +98,14 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
         });
     });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="lookupDataSource"
+        valueExpr="price"
+        displayExpr="name">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -75,36 +126,98 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="lookupDataSource"
-        valueExpr="price"
-        displayExpr="name">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="products"
+            value-expr="price"
+            display-expr="name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                products: [
+                    { name: 'HD Video Player', price: 100 },
+                    { name: 'SuperHD Video Player', price: 420 },
+                    { name: 'SuperPlasma 50', price: 1500 },
+                    { name: 'SuperLED 50', price: 200 }
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+
+    const products = [
+        { name: 'HD Video Player', price: 100 },
+        { name: 'SuperHD Video Player', price: 420 },
+        { name: 'SuperPlasma 50', price: 1500 },
+        { name: 'SuperLED 50', price: 200 }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Lookup
+                    dataSource={products}
+                    valueExpr="price"
+                    displayExpr="name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 
 You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept') if objects in an array need to be processed (sorted, filtered, grouped, etc.). For example, in the following code, a Query sorts objects in the `products` array by the `price` field in descending order:
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = [
-        { name: "HD Video Player", price: 100 },
-        // ...
-    ];
+        <!--JavaScript-->const products = [
+            { name: "HD Video Player", price: 100 },
+            // ...
+        ];
 
-    $(function() {
-        $("#lookupContainer").dxLookup({
-            dataSource: DevExpress.data.query(products)
-                            .sortBy("price", true)
-                            .toArray(),
-            valueExpr: 'price',
-            displayExpr: 'name'
+        $(function() {
+            $("#lookupContainer").dxLookup({
+                dataSource: DevExpress.data.query(products)
+                                .sortBy("price", true)
+                                .toArray(),
+                valueExpr: 'price',
+                displayExpr: 'name'
+            });
         });
-    });
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-lookup
+        [dataSource]="getSortedProducts()"
+        valueExpr="price"
+        displayExpr="name">
+    </dx-lookup>
 
     <!--TypeScript-->
     import { DxLookupModule } from "devextreme-angular";
@@ -129,12 +242,84 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
         // ...
     })
 
-    <!--HTML-->
-    <dx-lookup
-        [dataSource]="getSortedProducts()"
-        valueExpr="price"
-        displayExpr="name">
-    </dx-lookup>
+##### Vue
+
+    <template>
+        <DxLookup
+            :data-source="getSortedProducts()"
+            value-expr="price"
+            display-expr="name"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxLookup } from 'devextreme-vue/lookup';
+    import query from "devextreme/data/query";
+
+    export default {
+        components: {
+            DxLookup
+        },
+        data() {
+            return {
+                products: [
+                    { name: 'HD Video Player', price: 100 },
+                    // ...
+                ]
+            };
+        },
+        methods: {
+            getSortedProducts () {
+                return query(this.products)
+                    .sortBy("price", true)
+                    .toArray();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Lookup } from 'devextreme-react/lookup';
+    import query from "devextreme/data/query";
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.products = [
+                { name: 'HD Video Player', price: 100 },
+                // ...
+            ];
+
+            this.getSortedProducts = this.getSortedProducts.bind(this);
+        }
+
+        getSortedProducts() {
+            return query(this.products)
+                .sortBy("price", true)
+                .toArray();
+        }
+
+        render() {
+            return (
+                <Lookup
+                    dataSource={this.getSortedProducts()}
+                    valueExpr="price"
+                    displayExpr="name"
+                />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

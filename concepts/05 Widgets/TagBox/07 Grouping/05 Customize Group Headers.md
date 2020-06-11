@@ -1,4 +1,4 @@
-By default, group headers display text of the **key** field in a bold font. You can define a custom template for the group headers if you need to. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for group headers.
+To customize group headers, specify a [groupTemplate](/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#groupTemplate). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component. If the template is unspecified, group headers display the **key** data field in bold font.
 
 ---
 ##### Angular

@@ -71,12 +71,12 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
         data() {
             return {
                 lookupData: [{
-                        key: 'Mr. John Heart',
-                        items: ['Google AdWords Strategy', 'New Brochures', 'Update NDA Agreement']
-                    }, {
-                        key: 'Mrs. Olivia Peyton',
-                        items: ['Update Personnel Files', 'Non-Compete Agreements', 'Give Final Approval for Refunds']
-                    }, // ... 
+                    key: 'Mr. John Heart',
+                    items: ['Google AdWords Strategy', 'New Brochures', 'Update NDA Agreement']
+                }, {
+                    key: 'Mrs. Olivia Peyton',
+                    items: ['Update Personnel Files', 'Non-Compete Agreements', 'Give Final Approval for Refunds']
+                }, // ... 
                 ]
             };
         }
@@ -92,12 +92,12 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
     import { Lookup } from 'devextreme-react/lookup';
 
     const lookupData = [{
-            key: 'Mr. John Heart',
-            items: ['Google AdWords Strategy', 'New Brochures', 'Update NDA Agreement']
-        }, {
-            key: 'Mrs. Olivia Peyton',
-            items: ['Update Personnel Files', 'Non-Compete Agreements', 'Give Final Approval for Refunds']
-        }, // ... 
+        key: 'Mr. John Heart',
+        items: ['Google AdWords Strategy', 'New Brochures', 'Update NDA Agreement']
+    }, {
+        key: 'Mrs. Olivia Peyton',
+        items: ['Update Personnel Files', 'Non-Compete Agreements', 'Give Final Approval for Refunds']
+    }, // ... 
     ];
 
     class App extends React.Component {

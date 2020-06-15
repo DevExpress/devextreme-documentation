@@ -146,6 +146,7 @@ If you prefer specifying the widget size using CSS, set the **width** and **heig
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxMap
             :zoom="10"
@@ -173,14 +174,16 @@ If you prefer specifying the widget size using CSS, set the **width** and **heig
     }
     </script>
 
-    <!--CSS-->
+    <style>
     #mapContainer {
         width: 100%;
         height: 500px;
     }
+    </style>
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -204,7 +207,7 @@ If you prefer specifying the widget size using CSS, set the **width** and **heig
 
     export default App;
 
-    <!--CSS-->
+    <!-- tab: styles.css -->
     #mapContainer {
         width: 100%;
         height: 500px;

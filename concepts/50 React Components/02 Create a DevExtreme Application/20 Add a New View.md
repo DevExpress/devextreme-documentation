@@ -2,4 +2,4 @@ Run the following command to add a new view. `--icon` specifies an icon from the
 
     npx devextreme add view view-name [--icon=IconName]
 
-You can find the added view under the `src\pages` folder. This command also creates a navigation menu item for the added view in the `src\app-navigation.js` file.
+You can find the added view under the `src/pages` folder. This command also creates a navigation menu item for the added view in the `src\app-navigation.js` file.

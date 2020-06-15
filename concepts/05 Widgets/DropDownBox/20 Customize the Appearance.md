@@ -162,6 +162,7 @@ You can customize the text field and the drop-down button using the [fieldTempla
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <div>
             <DxDropDownBox
@@ -265,6 +266,7 @@ You can customize the text field and the drop-down button using the [fieldTempla
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -357,7 +359,7 @@ You can customize the text field and the drop-down button using the [fieldTempla
     export default App;
 
 
-    <!--CSS-->
+    <!-- tab: styles.css -->
     .custom-item {
         position: relative;
         min-height: 30px;

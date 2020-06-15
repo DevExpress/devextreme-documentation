@@ -187,8 +187,18 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     }
     </script>
 
+    <style>
+    .action-sheet-button {
+        margin: 5px;
+        padding: 10px;
+        border: 1px dotted #080;
+        background-color: white;
+    }
+    </style>
+
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -226,6 +236,14 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     }
 
     export default App;
+
+    <!-- tab: styles.css -->
+    .action-sheet-button {
+        margin: 5px;
+        padding: 10px;
+        border: 1px dotted #080;
+        background-color: white;
+    }
 
 ---
 

@@ -83,6 +83,7 @@ If you need to render different templates depending on a specific condition, def
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <div>
             <img id="image" src="https://url/to/an/image" />
@@ -131,13 +132,16 @@ If you need to render different templates depending on a specific condition, def
     }
     </script>
 
-    <!--CSS-->#buttonContainer {
+    <style>
+    #buttonContainer {
         display: block;
         width: 200px
     }
+    </style>
 
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -196,7 +200,8 @@ If you need to render different templates depending on a specific condition, def
 
     export default App;
 
-    <!--CSS-->#buttonContainer {
+    <!-- tab: styles.css -->
+    #buttonContainer {
         display: block;
         width: 200px
     }

@@ -10,7 +10,7 @@ Create a new <a href="https://devexpress.github.io/devextreme-angular-template" 
 
 ##### Vue
 
-Create a new <a href="https://devexpress.github.io/devextreme-vue-template" target="_blank">DevExtreme Vue application</a> that uses the <a href="https://github.com/DevExpress/devextreme-vue-template#devextreme-vue-template" target="_blank">DevExtreme layout template</a>:
+Create a new <a href="https://devexpress.github.io/devextreme-vue-template" target="_blank">DevExtreme Vue application</a> that uses the [DevExtreme layout template](/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/):
 
     devextreme new vue-app app-name [--layout][--empty]
     // ===== or without installing the DevExtreme CLI =====

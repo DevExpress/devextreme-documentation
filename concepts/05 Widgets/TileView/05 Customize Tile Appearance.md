@@ -139,6 +139,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ##### Vue
 
+    <!--tab: App.vue-->
     <template>
         <DxTileView
             :data-source="tileViewData"
@@ -178,8 +179,18 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     };
     </script>
 
+    <style>
+    .tile {
+        border-radius: .5em;
+        text-align: center;
+        color: white;
+        background: gray;
+    }
+    </style>
+
 ##### React
 
+    <!--tab: App.js-->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -213,6 +224,14 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         }
     }
     export default App;
+
+    <!--tab: styles.css-->
+    .tile {
+        border-radius: .5em;
+        text-align: center;
+        color: white;
+        background: gray;
+    }
 
 ---
 

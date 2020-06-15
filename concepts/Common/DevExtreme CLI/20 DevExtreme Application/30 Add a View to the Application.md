@@ -1,4 +1,4 @@
-The following command adds a view to an application that uses the DevExtreme layout template for <a href="https://github.com/DevExpress/devextreme-angular-template#devextreme-angular-template" target="_blank">Angular</a>, <a href="https://github.com/DevExpress/devextreme-vue-template#devextreme-vue-template" target="_blank">Vue</a>, or [React](/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/):
+The following command adds a view to an application that uses the DevExtreme layout template for <a href="https://github.com/DevExpress/devextreme-angular-template#devextreme-angular-template" target="_blank">Angular</a>, [Vue](/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/), or [React](/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/):
 
     devextreme add view view-name [--icon]
     // ===== or =====

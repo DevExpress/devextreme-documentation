@@ -83,6 +83,7 @@ If you need to render different templates depending on a specific condition, def
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <div>
             <img id="image" src="https://url/to/an/image" />
@@ -199,7 +200,8 @@ If you need to render different templates depending on a specific condition, def
 
     export default App;
 
-    <!--CSS-->#buttonContainer {
+    <!-- tab: styles.css -->
+    #buttonContainer {
         display: block;
         width: 200px
     }

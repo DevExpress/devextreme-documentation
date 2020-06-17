@@ -16,3 +16,5 @@
         <td>v2.1 - v2.2 and v3.x</td>
     </tr>
 </table>
+
+[note] Although earlier versions are supported, we recommend that you use jQuery v3.5.1 to guard against <a href="https://snyk.io/vuln/npm:jquery" target="_blank">vulnerabilities</a> found in those earlier versions.

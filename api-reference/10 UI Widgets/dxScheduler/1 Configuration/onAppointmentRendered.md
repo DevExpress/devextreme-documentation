@@ -26,7 +26,7 @@ The widget's instance.
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 
-##### field(e.targetedAppointmentData): Object
+##### field(e.targetedAppointmentData): Object | undefined
 <!-- %field(model.targetedAppointmentData)% -->
 
 ---

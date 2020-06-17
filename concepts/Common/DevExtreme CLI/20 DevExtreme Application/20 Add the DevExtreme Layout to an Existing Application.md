@@ -1,4 +1,4 @@
-Add the <a href="https://github.com/DevExpress/devextreme-angular-template#devextreme-angular-template" target="_blank">DevExtreme layout template</a> to an existing Angular application:
+Add the [DevExtreme layout template](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/) to an existing Angular application:
 
     devextreme add angular-template [--layout][--empty][--resolve-conflicts]
     // ===== or =====
@@ -11,7 +11,7 @@ Specifies the DevExtreme layout to add. Available values:
     * `side-nav-outer-toolbar` (default)
     * `side-nav-inner-toolbar`
 
-    Both layouts are illustrated <a href="https://github.com/DevExpress/devextreme-angular-template#getting-started" target="_blank">in this article</a>.
+    Both layouts are illustrated in the [Layouts](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/#Layouts) article.
 
 * `--empty`     
 Specifies whether to skip sample views generation (default: `false`).

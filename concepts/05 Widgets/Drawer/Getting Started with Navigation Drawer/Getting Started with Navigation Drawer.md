@@ -4,7 +4,7 @@ The **Drawer** is a dismissible or permanently visible panel used for navigation
 
 DevExtreme supplies application templates for <a href="https://devexpress.github.io/devextreme-angular-template/#/home" target="_blank">Angular</a>, <a href="https://devexpress.github.io/devextreme-vue-template/#/home" target="_blank">Vue</a>, and <a href="https://devexpress.github.io/devextreme-react-template/#/home" target="_blank">React</a>. They implement a responsive layout that uses the **Drawer**. You can use these templates instead of following the tutorial. Refer to the documentation on GitHub for more information:
 
-- <a href="https://github.com/DevExpress/devextreme-angular-template/blob/master/README.md" target="_blank">DevExtreme Angular Template</a>
+- [DevExtreme Angular Template](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/)
 - [DevExtreme Vue Template](/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/)
 - [DevExtreme React Template](/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/)
 

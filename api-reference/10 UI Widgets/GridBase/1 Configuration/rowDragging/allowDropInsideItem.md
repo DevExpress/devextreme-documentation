@@ -8,9 +8,9 @@ default: false
 Allows users to drop a row inside another row.
 
 ---
-This option allows users to drop rows only in the UI. You should also handle drag and drop in code. Implement the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler to allow users to drop rows inside a single component. 
+This option allows users to drop rows only in the UI. You should also handle drag and drop in code. If users drop rows inside a single component, implement the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler. 
 
-Refer to the [group]({basewidgetpath}/Configuration/rowDragging/#group) topic to see how to configure cross-component drag and drop.
+To configure drag and drop between components, follow the instructions from the [group]({basewidgetpath}/Configuration/rowDragging/#group) topic.
 
 #####See Also#####
 - [allowReordering]({basewidgetpath}/Configuration/#allowReordering) 

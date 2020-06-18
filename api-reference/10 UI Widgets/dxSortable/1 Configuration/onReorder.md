@@ -42,7 +42,7 @@ The dragged item's data.
 Model data. Available only if you use Knockout.
 
 ##### field(e.promise): Promise<void>
-Once this Promise is resolved, row dragging is finished.
+Row dragging is finished once this Promise is resolved.
 
 ##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the item's target widget.

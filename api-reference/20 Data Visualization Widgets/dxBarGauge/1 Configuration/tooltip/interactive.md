@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+#include dataviz-ref-tooltip-interactive
 
 ---
 <!-- Description goes here -->

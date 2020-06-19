@@ -17,4 +17,4 @@
     </tr>
 </table>
 
-[note] Although earlier versions are supported, we recommend that you use jQuery v3.5.1 to guard against <a href="https://snyk.io/vuln/npm:jquery" target="_blank">vulnerabilities</a> found in those earlier versions.
+[note] Although earlier versions are supported, we recommend that you use jQuery v3.5.1 to protect against <a href="https://snyk.io/vuln/npm:jquery" target="_blank">vulnerabilities</a> found in earlier versions.

@@ -1,6 +1,6 @@
 ---
 id: dxDataGridColumn.type
-acceptValues: 'adaptive' | 'buttons' | 'detailExpand' | 'groupExpand' | 'selection'
+acceptValues: 'adaptive' | 'buttons' | 'detailExpand' | 'groupExpand' | 'selection' | 'drag'
 type: String
 ---
 ---

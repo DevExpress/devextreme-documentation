@@ -1,6 +1,6 @@
 ---
 id: dxTreeListColumn.type
-acceptValues: 'adaptive' | 'buttons'
+acceptValues: 'adaptive' | 'buttons' | 'drag'
 type: String
 ---
 ---

@@ -33,6 +33,49 @@ With the ever-growing variety of platforms, today's web sites and applications c
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxAdaptiveLayout 
+                :height="300"
+                :width="400"
+            />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxAdaptiveLayout
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxAdaptiveLayout
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { AdaptiveLayout } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <AdaptiveLayout height={300} width={400} />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 <a href="https://jsfiddle.net/ChartJS/j1v235o8/" class="button orange small fix-width-155" target="_blank">View Demo on JSFiddle</a>

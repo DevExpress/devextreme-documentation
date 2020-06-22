@@ -60,6 +60,69 @@ You can handle these events with functions. If the handling functions are not go
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel
+            @exporting="onExporting"
+            @exported="onExported"
+            @fileSaving="onFileSaving"
+        >
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            onExporting (e) {
+                // Handler of the "exporting" event
+            };
+            onExported (e) {
+                // Handler of the "exported" event
+            };
+            onFileSaving (e) {
+                // Handler of the "fileSaving" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel
+                    onExporting="onExporting"
+                    onExported="onExported"
+                    onFileSaving="onFileSaving"
+                >
+                </Funnel>
+            );
+        }
+        onExporting (e) {
+            // Handler of the "exporting" event
+        };
+        onExported (e) {
+            // Handler of the "exported" event
+        };
+        onFileSaving (e) {
+            // Handler of the "fileSaving" event
+        }
+    }
+
+    export default App;
+
 ---
 
 Otherwise, or if you need several handlers for a single event, subscribe to the exporting-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

@@ -33,6 +33,62 @@ To export the **Funnel** using the API, call the [exportTo(fileName, format)](/a
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ref=funnel >
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            exportFunnel () {
+                return this.$refs.funnel.instance.exportTo('Exported Funnel', 'PDF');
+            },
+            printFunnel () {
+                return this.$refs.funnel.instance.print();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.funnelRef = React.createRef();
+        }
+        render() {
+            return (
+                <Funnel ref={this.funnelRef} >
+                </Funnel>
+            );
+        }
+        get funnel() {
+            return this.funnelRef.current.instance;
+        }
+        exportFunnel () {
+            return this.funnel.exportTo('Exported Funnel', 'PDF');
+        }
+        printFunnel () {
+            return this.funnel.print();
+        }
+    }
+
+    export default App;
+
 ---
 
 You can also export several widgets at once using their SVG markup. Gather the markup from all required widgets by calling the [DevExpress.viz.getMarkup(widgetInstances)](/api-reference/50%20Common/utils/viz/getMarkup(widgetInstances).md '/Documentation/ApiReference/Common/utils/viz/#getMarkupwidgetInstances') method, and then pass the markup to the [DevExpress.viz.exportFromMarkup(markup, options)](/api-reference/50%20Common/utils/viz/exportFromMarkup(markup_options).md '/Documentation/ApiReference/Common/utils/viz/#exportFromMarkupmarkup_options') method.

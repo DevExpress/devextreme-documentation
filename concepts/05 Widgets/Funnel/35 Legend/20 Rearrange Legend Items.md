@@ -4,40 +4,82 @@ Although the legend's layout is virtually universal, in some cases, you may need
 Depending on whether the legend is oriented vertically or horizontally, the **Funnel** arranges legend items in columns or in rows. To change the legend orientation, use the [orientation](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/orientation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#orientation') option.
 
     ---
-    ##### jQuery
+##### jQuery
 
-        <!--JavaScript-->$(function() {
-            $("#funnelContainer").dxFunnel({
-                // ...
-                legend: {
-                    orientation: "vertical" // or "horizontal"
-                }
-            });
+    <!--JavaScript-->$(function() {
+        $("#funnelContainer").dxFunnel({
+            // ...
+            legend: {
+                orientation: "vertical" // or "horizontal"
+            }
         });
+    });
 
-    ##### Angular
+##### Angular
 
-        <!--HTML--><dx-funnel ...>
-            <dxo-legend
-                orientation="vertical"> <!-- or "horizontal" -->
-            </dxo-legend>
-        </dx-funnel>
+    <!--HTML--><dx-funnel ...>
+        <dxo-legend
+            orientation="vertical"> <!-- or "horizontal" -->
+        </dxo-legend>
+    </dx-funnel>
 
-        <!--TypeScript-->
-        import { DxFunnelModule } from "devextreme-angular";
+    <!--TypeScript-->
+    import { DxFunnelModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
         // ...
-        export class AppComponent {
+    }
+    @NgModule({
+        imports: [
             // ...
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxFunnelModule
-            ],
-            // ...
-        })
+            DxFunnelModule
+        ],
+        // ...
+    })
 
-    ---
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLegend
+                orientation: "vertical"
+            />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, { DxLegend } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Legend } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Legend
+                        orientation: "vertical"
+                    />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
+---
 
     [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#horizontalAlignment') option. For details on the legend's location, refer to the [Relocate the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Funnel/Legend/Relocate_the_Legend/') topic.
 

@@ -53,6 +53,51 @@ In addition, a user can click legend items. The widget does not react to this by
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel @legend-click="onLegendClick" >
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            onLegendClick (e) {
+                var item = e.item;
+                // Event handling commands go here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel onLegendClick={onLegendClick} >
+                </Funnel>
+            );
+        }
+        onLegendClick(e) {
+            var item = e.item;
+            // Event handling commands go here
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

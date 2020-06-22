@@ -44,6 +44,49 @@ The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Co
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxTitle text="I am the Title">
+                <DxSubTitle text="I am the Subtitle" />
+            </DxTitle>
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxTitle, DxSubtitle } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxTitle,
+            DxSubtitle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Title, Subtitle } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Title text="I am the Title">
+                        <SubTitle text="I am the Subtitle" />
+                    </Title>
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 You can set the title's text more concisely if you assign it directly to the **title** option. This is useful if you do not want to change the title's default settings and do not need a subtitle. 
@@ -77,6 +120,41 @@ You can set the title's text more concisely if you assign it directly to the **t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey title="I am the Title" >
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey title="I am the Title" >
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
 
 ---
 

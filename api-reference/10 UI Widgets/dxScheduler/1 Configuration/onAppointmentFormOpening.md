@@ -29,6 +29,9 @@ The form's instance; created only once - when the function is executed for the f
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
+##### field(e.popup): dxPopup
+<!-- Description goes here -->
+
 ---
 The appointment details form contains the [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') widget whose instance is passed to this function in the **form** field. Use the [widget's API](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/') to customize the appointment details form.
 

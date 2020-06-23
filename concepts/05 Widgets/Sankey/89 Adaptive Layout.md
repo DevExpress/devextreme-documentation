@@ -38,7 +38,7 @@ The **Sankey** widget has an adaptive layout that enables the widget to hide opt
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey>
+        <DxSankey ... >
             <DxAdaptiveLayout
                 :height="300"
                 :width="400"
@@ -66,7 +66,7 @@ The **Sankey** widget has an adaptive layout that enables the widget to hide opt
     class App extends React.Component {
         render() {
             return (
-                <Sankey>
+                <Sankey ... >
                     <AdaptiveLayout
                         height={300}
                         width={400}
@@ -111,6 +111,56 @@ The layout does not automatically adapt if the widget's container is resized at 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ref="sankey">
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey
+        },
+        methods: {
+            renderSankey() {
+                this.$refs.sankey.instance.render();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.sankeyRef = React.createRef();
+        }
+        render() {
+            return (
+                <Sankey ref={this.sankeyRef}>
+                </Sankey>
+            )
+        }
+        get sankey() {
+            return this.sankeyRef.current.instance;
+        }
+        renderSankey() {
+            this.sankey.render();
+        }
+    }
+
+    export default App;
 
 ---
 

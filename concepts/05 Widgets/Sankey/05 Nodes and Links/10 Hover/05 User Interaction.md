@@ -152,4 +152,39 @@ Set [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey :hoverEnabled="false" >
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey hoverEnabled={false} >
+                </Sankey>
+            );
+        }
+    }
+
+    export default App;
+
 ---

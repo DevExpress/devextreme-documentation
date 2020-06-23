@@ -147,8 +147,8 @@ You can also export several widgets simultaneously using their SVG markup. Call 
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey id="sankeyContainer1" ></DxSankey>
-        <DxSankey id="sankeyContainer2" ></DxSankey>
+        <DxSankey ref="sankey1" ></DxSankey>
+        <DxSankey ref="sankey2" ></DxSankey>
     </template>
 
     <script>
@@ -161,6 +161,8 @@ You can also export several widgets simultaneously using their SVG markup. Call 
         },
         methods: {
             exportSeveralSankeys () {
+                const sankey1 = this.$refs.sankey1.instance;
+                const sankey2 = this.$refs.sankey2.instance;
                 const sankeyMarkup = exportMethods.getMarkup([sankey1, sankey2]);
                 exportMethods.exportFromMarkup(sankeyMarkup, {
                     height: 768,
@@ -181,14 +183,25 @@ You can also export several widgets simultaneously using their SVG markup. Call 
     import exportMethods from "devextreme/viz/export";
 
     class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.sankey1Ref = React.createRef();
+            this.sankey2Ref = React.createRef();
+        }
         render() {
             return (
-                <Sankey id="sankeyContainer1" ></Sankey>
-                <Sankey id="sankeyContainer2" ></Sankey>
+                <Sankey ref={this.sankey1Ref} ></Sankey>
+                <Sankey ref={this.sankey2Ref} ></Sankey>
             )
         }
+        get sankey1() {
+            return this.sankey1Ref.current.instance;
+        }
+        get sankey2() {
+            return this.sankey2Ref.current.instance;
+        }
         exportSeveralSankeys () {
-            const sankeyMarkup = exportMethods.getMarkup([sankey1, sankey2]);
+            const sankeyMarkup = exportMethods.getMarkup([this.sankey1, this.sankey2]);
             exportMethods.exportFromMarkup(sankeyMarkup, {
                 height: 768,
                 width: 1024,

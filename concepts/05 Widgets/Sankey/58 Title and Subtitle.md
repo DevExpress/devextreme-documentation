@@ -50,7 +50,7 @@ The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Co
     <template> 
         <DxSankey ... >
             <DxTitle text="I am the Title">
-                <DxSubTitle text="I am the Subtitle" />
+                <DxSubtitle text="I am the Subtitle" />
             </DxTitle>
         </DxSankey>
     </template>
@@ -78,7 +78,7 @@ The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Co
             return (
                 <Sankey ... >
                     <Title text="I am the Title">
-                        <SubTitle text="I am the Subtitle" />
+                        <Subtitle text="I am the Subtitle" />
                     </Title>
                 </Sankey>
             )

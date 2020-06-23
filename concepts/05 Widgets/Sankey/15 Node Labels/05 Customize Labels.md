@@ -61,7 +61,7 @@ In the following example, the **customizeText** function is used to add incoming
     <!-- tab: App.vue -->
     <template> 
         <DxSankey ... >
-            <DxLabel customize-text="customizeText" />
+            <DxLabel :customize-text="customizeText" />
         </DxSankey>
     </template>
 

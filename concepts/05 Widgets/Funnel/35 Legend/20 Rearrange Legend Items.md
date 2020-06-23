@@ -43,7 +43,7 @@ Depending on whether the legend is oriented vertically or horizontally, the **Fu
     <template> 
         <DxFunnel ... >
             <DxLegend
-                orientation: "vertical"
+                orientation: "vertical" /* or "horizontal" */
             />
         </DxFunnel>
     </template>
@@ -70,7 +70,7 @@ Depending on whether the legend is oriented vertically or horizontally, the **Fu
             return (
                 <Funnel ... >
                     <Legend
-                        orientation: "vertical"
+                        orientation: "vertical" /* or "horizontal" */
                     />
                 </Funnel>
             );
@@ -86,86 +86,174 @@ Depending on whether the legend is oriented vertically or horizontally, the **Fu
 - **Set the number of columns or rows**     
 To distribute all legend items between several columns (in a vertically-oriented legend) or rows (in a horizontally-oriented legend), set the [columnCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#columnCount') or [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#rowCount') option respectively.
 
-    ---
-    ##### jQuery
+---
+##### jQuery
 
-        <!--JavaScript-->$(function() {
-            $("#funnelContainer").dxFunnel({
+    <!--JavaScript-->$(function() {
+        $("#funnelContainer").dxFunnel({
+            // ...
+            legend: {
                 // ...
-                legend: {
-                    // ...
-                    columnCount: 3
-                    // rowCount: 2
-                }
-            });
+                columnCount: 3
+                // rowCount: 2
+            }
         });
+    });
 
-    ##### Angular
+##### Angular
 
-        <!--HTML--><dx-funnel ...>
-            <dxo-legend ...
-                [columnCount]="3">
-                <!-- [rowCount]="2"> -->
-            </dxo-legend>
-        </dx-funnel>
+    <!--HTML--><dx-funnel ...>
+        <dxo-legend ...
+            [columnCount]="3">
+            <!-- [rowCount]="2"> -->
+        </dxo-legend>
+    </dx-funnel>
 
-        <!--TypeScript-->
-        import { DxFunnelModule } from "devextreme-angular";
+    <!--TypeScript-->
+    import { DxFunnelModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
         // ...
-        export class AppComponent {
+    }
+    @NgModule({
+        imports: [
             // ...
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxFunnelModule
-            ],
-            // ...
-        })
+            DxFunnelModule
+        ],
+        // ...
+    })
 
-    ---
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLegend
+                :column-count="3" 
+                /* :row-count="2" */
+            />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, { DxLegend } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Legend } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Legend
+                        columnCount={3} 
+                        /* rowCount={2} */
+                    />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 - **Adjust the empty space between columns and rows**         
 Regardless of the legend orientation, you can adjust the empty space between columns and rows using the [columnItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#columnItemSpacing') and [rowItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#rowItemSpacing') options respectively.
 
-    ---
-    ##### jQuery
+---
+##### jQuery
 
-        <!--JavaScript-->$(function() {
-            $("#funnelContainer").dxFunnel({
+    <!--JavaScript-->$(function() {
+        $("#funnelContainer").dxFunnel({
+            // ...
+            legend: {
                 // ...
-                legend: {
-                    // ...
-                    columnItemSpacing: 20,
-                    rowItemSpacing: 30
-                }
-            });
+                columnItemSpacing: 20,
+                rowItemSpacing: 30
+            }
         });
+    });
 
-    ##### Angular
+##### Angular
 
-        <!--HTML--><dx-funnel ...>
-            <dxo-legend ...
-                [columnItemSpacing]="20"
-                [rowItemSpacing]="30">
-            </dxo-legend>
-        </dx-funnel>
+    <!--HTML--><dx-funnel ...>
+        <dxo-legend ...
+            [columnItemSpacing]="20"
+            [rowItemSpacing]="30">
+        </dxo-legend>
+    </dx-funnel>
 
-        <!--TypeScript-->
-        import { DxFunnelModule } from "devextreme-angular";
+    <!--TypeScript-->
+    import { DxFunnelModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
         // ...
-        export class AppComponent {
+    }
+    @NgModule({
+        imports: [
             // ...
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxFunnelModule
-            ],
-            // ...
-        })
+            DxFunnelModule
+        ],
+        // ...
+    })
 
-    ---
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLegend ...
+                :column-item-spacing="20"
+                :row-item-spacing="30"
+            />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, { DxLegend } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Legend } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Legend
+                        columnItemSpacing={20}
+                        rowItemSpacing={30}
+                    />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
+---
 
 Below, you can try out all the mentioned options in action.
 

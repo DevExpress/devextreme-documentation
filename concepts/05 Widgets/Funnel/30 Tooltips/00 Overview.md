@@ -136,7 +136,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **Funnel
             <DxTooltip
                 :enabled="true"
                 color="yellow"
-                :customizeTooltip="customizeTooltip"
+                :customize-tooltip="customizeTooltip"
             />
         </DxFunnel>
     </template>

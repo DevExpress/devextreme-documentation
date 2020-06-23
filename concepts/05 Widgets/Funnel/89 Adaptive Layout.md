@@ -111,6 +111,56 @@ The layout does not automatically adapt to changes made in the widget's containe
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ref="funnel" >
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel  from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            renderFunnel () {
+                this.$refs.funnel.instance.render();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.funnelRef = React.createRef();
+        }
+        render() {
+            return (
+                <Funnel ref={this.funnelRef} >
+                </Funnel>
+            );
+        }
+        get funnel() {
+            return this.funnelRef.current.instance;
+        }
+        renderFunnel () {
+            this.funnel.render();
+        }
+    }
+
+    export default App;
+
 ---
 
 [/note]

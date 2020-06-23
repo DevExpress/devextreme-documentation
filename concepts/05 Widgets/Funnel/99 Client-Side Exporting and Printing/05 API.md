@@ -37,7 +37,7 @@ To export the **Funnel** using the API, call the [exportTo(fileName, format)](/a
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel ref=funnel >
+        <DxFunnel ref="funnel" >
         </DxFunnel>
     </template>
 
@@ -142,5 +142,75 @@ You can also export several widgets at once using their SVG markup. Gather the m
     <!--HTML-->
     <dx-funnel id="funnelContainer1" ... ></dx-funnel>
     <dx-funnel id="funnelContainer2" ... ></dx-funnel>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ref="funnel1" ></DxFunnel>
+        <DxFunnel ref="funnel2" ></DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+    import exportMethods from "devextreme/viz/export";
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            exportSeveralFunnels () {
+                const funnel1 = this.$refs.funnel1.instance;
+                const funnel2 = this.$refs.funnel2.instance;
+                const funnelMarkup = exportMethods.getMarkup([funnel1, funnel2]);
+                exportMethods.exportFromMarkup(funnelMarkup, {
+                    height: 768,
+                    width: 1024,
+                    fileName: "Exported Funnels",
+                    format: "PDF"
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+    import exportMethods from "devextreme/viz/export";
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.funnel1Ref = React.createRef();
+            this.funnel2Ref = React.createRef();
+        }
+        render() {
+            return (
+                <Funnel ref={this.funnel1Ref} ></Funnel>
+                <Funnel ref={this.funnel2Ref} ></Funnel>
+            );
+        }
+        get funnel1() {
+            return this.funnel1Ref.current.instance;
+        }
+        get funnel2() {
+            return this.funnel2Ref.current.instance;
+        }
+        exportSeveralFunnels () {
+            const funnelMarkup = exportMethods.getMarkup([this.funnel1, this.funnel2]);
+            exportMethods.exportFromMarkup(funnelMarkup, {
+                height: 768,
+                width: 1024,
+                fileName: "Exported Funnels",
+                format: "PDF"
+            });
+        }
+    }
+
+    export default App;
 
 ---

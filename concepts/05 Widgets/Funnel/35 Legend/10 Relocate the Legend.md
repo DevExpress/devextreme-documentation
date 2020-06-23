@@ -42,8 +42,8 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
     <template> 
         <DxFunnel ... >
             <DxLegend
-                horizontalAlignment="center"
-                verticalAlignment="top"
+                horizontal-alignment="center" /* or "left" | "right" */
+                vertical-alignment="top" /* or "bottom" */
             />
         </DxFunnel>
     </template>
@@ -70,8 +70,8 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
             return (
                 <Funnel ... >
                     <Legend
-                        horizontalAlignment="center"
-                        verticalAlignment="top"
+                        horizontalAlignment="center" /* or "left" | "right" */
+                        verticalAlignment="top" /* or "bottom" */
                     />
                 </Funnel>
             );

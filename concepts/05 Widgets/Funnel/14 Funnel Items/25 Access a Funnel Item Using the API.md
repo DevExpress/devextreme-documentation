@@ -33,7 +33,7 @@ Call the [getAllItems()](/api-reference/20%20Data%20Visualization%20Widgets/dxFu
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel ref=funnel">
+        <DxFunnel ref="funnel">
         </DxFunnel>
     </template>
 

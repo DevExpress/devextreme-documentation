@@ -181,15 +181,15 @@ To configure other aspects of the funnel items' appearance, use the [item](/api-
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    import Funnel, { Item, Border } from 'devextreme-react/funnel';
 
     class App extends React.Component {
         render() {
             return (
                 <Funnel ... >
-                    <DxItem>
-                        <DxBorder visible={true} />
-                    </DxItem>
+                    <Item>
+                        <Border visible={true} />
+                    </Item>
                 </Funnel>
             );
         }

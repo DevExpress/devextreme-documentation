@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-#include dataviz-ref-tooltip-interactive
+Allows users to interact with the content of the tooltip.
 
 ---
 <!-- Description goes here -->

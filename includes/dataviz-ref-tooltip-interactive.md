@@ -1,1 +1,0 @@
-Allows users to interact with the content of the tooltip.

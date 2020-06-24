@@ -8,9 +8,8 @@ default: false
 Allows a user to drop an item inside another item.
 
 ---
-This option allows users to drop rows only in the UI. You should also handle drag and drop in code. If users drop rows inside a single component, implement the [onReorder](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#onReorder) handler. 
-
-To configure drag and drop between components, follow the instructions from the [group](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#group) topic.
+This option also requires that you handle the change of hierarchy in code. If an item is dragged within a single component, use the [onReorder](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#onReorder) handler. If the item is dragged from one component to another, use the [onAdd](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#onAdd) and [onRemove](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#onRemove) handlers.
 
 #####See Also#####
-- [allowReordering](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#allowReordering)
+- [allowReordering](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#allowReordering) 
+- [group](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#group)

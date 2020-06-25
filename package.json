@@ -12,10 +12,10 @@
     "devextreme-internal-tools": "stable"
   },
   "scripts": {
-    "update-links-fail-on-change": "dx-tools update-links --fail-on-change",
-    "update-all-links": "dx-tools update-links --check-all",
-    "update-links": "dx-tools update-links",
-    "generate-content-map": "dx-tools generate-content-map",
-    "update-topics": "dx-tools update-topics"
+    "update-links-fail-on-change": "dx-tools update-links --docs-root ./ --content-map-path ./ --fail-on-change true",
+    "update-all-links": "dx-tools update-links --docs-root ./ --content-map-path ./ --check-all true",
+    "update-links": "dx-tools update-links --docs-root ./ --content-map-path ./",
+    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 20.1",
+    "update-topics": "dx-tools update-topics --docs-root ./"
   }
 }

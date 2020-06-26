@@ -8,4 +8,4 @@ default: undefined
 Allows you to group several widgets, so that users can drag and drop items between them.
 
 ---
-Set this option to identical values for the widgets you want to collect in a single group.
+Set this option to identical values for the widgets you want to collect into a single group.

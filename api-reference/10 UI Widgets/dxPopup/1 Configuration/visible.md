@@ -1,1 +1,1 @@
-You can show and hide the widget by changing the value of an observable variable passed to this option.
+<!-- Description goes here -->

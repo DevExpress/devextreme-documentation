@@ -8,7 +8,7 @@ type: String
 Specifies an auto-layout algorithm that is used to automatically arrange shapes.
 
 ---
-- **auto**. The equivalent of the **off** value when both shape coordinates ([leftExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#topExpr')) are specified; otherwise, the auto value is equivalent of **layered**.
+- **auto**. The equivalent of the **off** value when both shape coordinates ([leftExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#topExpr')) are specified; otherwise, the **auto** value is equivalent of **layered**.
 
 - **off**. The auto-layout is not applied.
 

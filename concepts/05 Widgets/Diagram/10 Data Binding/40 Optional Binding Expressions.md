@@ -27,7 +27,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr> 
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#imageUrlExpr">imageUrlExpr</a></td>
-        <td>A node image's URL. This option is in effect for nodes of the <i>cardWithImageOnLeft</i>, <i>cardWithImageOnTop</i>, or <i>cardWithImageOnRight</i> type.</td>
+        <td>A node's image URL or Base64 encoded image. This option is in effect for nodes of the <i>cardWithImageOnLeft</i>, <i>cardWithImageOnTop</i>, or <i>cardWithImageOnRight</i> type.</td>
         <td>"images/employees/30.png"</td>
     </tr> 
     <tr>

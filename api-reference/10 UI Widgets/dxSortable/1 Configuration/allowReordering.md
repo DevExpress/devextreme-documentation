@@ -8,7 +8,7 @@ default: true
 Allows a user to reorder sortable items.
 
 ---
-This option allows users to reorder items only in the UI. You should also handle drag and drop in code. If users reorder items inside a single component, implement the [onReorder](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#onReorder) handler. 
+This option limits row reordering to the UI and does not affect the data source. You should also handle the effects of the drag and drop to the data source in code. If users reorder rows inside a single component, implement the  [onReorder](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#onReorder) handler. 
 
 To configure drag and drop between components, follow the instructions from the [group](/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#group) topic.
 

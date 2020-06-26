@@ -8,7 +8,7 @@ default: false
 Allows row reordering using drag and drop gestures.
 
 ---
-This option allows users to reorder rows only in the UI. You should also handle drag and drop in code. If users reorder rows inside a single component, implement the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler. 
+This option limits row reordering to the UI and does not affect the data source. You should also handle the effects of the drag and drop to the data source in code. If users reorder rows inside a single component, implement the [onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) handler. 
 
 For information on drag and drop between components, refer to the [group]({basewidgetpath}/Configuration/rowDragging/#group) topic.
 

@@ -31,7 +31,7 @@ The data object of the row being dragged.
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.promise): Promise<void>
-<!-- Description goes here -->
+Assign a Promise to this field to perform an asynchronous operation.
 
 ##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the row's target widget.

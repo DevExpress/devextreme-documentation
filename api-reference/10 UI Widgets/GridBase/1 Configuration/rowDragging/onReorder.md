@@ -10,7 +10,7 @@ A function that is called when the draggable rows are reordered.
 Information about the event that caused the function's execution.
 
 ##### field(e.dropInsideItem): Boolean
-Indicates if the dragged row is dropped inside another row. Available only for the **TreeList** widget.
+Indicates if the dragged row is dropped inside another row.
 
 ##### field(e.event): event
 #include common-ref-eventparam
@@ -31,7 +31,7 @@ The data object of the row being dragged.
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.promise): Promise<void>
-<!-- Description goes here -->
+Assign a Promise to this field to perform an asynchronous operation.
 
 ##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the row's target widget.

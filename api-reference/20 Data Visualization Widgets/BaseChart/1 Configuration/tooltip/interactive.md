@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows users to interact with the tooltip content.
 
 ---
 <!-- Description goes here -->

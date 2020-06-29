@@ -54,4 +54,6 @@ Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/d
 The position in which the item is placed. If the item is dragged away from the widget, the value is **-1**.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
+} 

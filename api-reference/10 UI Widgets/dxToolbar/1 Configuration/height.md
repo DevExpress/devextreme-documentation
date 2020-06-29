@@ -6,10 +6,10 @@ deprecated:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the widget's height in pixels.
 
 ##### return: Number | String
-<!-- Description goes here -->
+The widget's height.
 
 ---
-<!-- Description goes here -->
+#include uiwidgets-ref-height

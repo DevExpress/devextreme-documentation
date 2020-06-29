@@ -156,8 +156,7 @@ Set [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey :hoverEnabled="false" >
-        </DxSankey>
+        <DxSankey :hoverEnabled="false" />
     </template>
 
     <script>
@@ -179,8 +178,7 @@ Set [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1
     class App extends React.Component {
         render() {
             return (
-                <Sankey hoverEnabled={false} >
-                </Sankey>
+                <Sankey hoverEnabled={false} />
             );
         }
     }

@@ -116,8 +116,7 @@ The layout does not automatically adapt if the widget's container is resized at 
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey ref="sankey">
-        </DxSankey>
+        <DxSankey ref="sankey" />
     </template>
 
     <script>
@@ -148,8 +147,7 @@ The layout does not automatically adapt if the widget's container is resized at 
         }
         render() {
             return (
-                <Sankey ref={this.sankeyRef}>
-                </Sankey>
+                <Sankey ref={this.sankeyRef} />
             )
         }
         get sankey() {

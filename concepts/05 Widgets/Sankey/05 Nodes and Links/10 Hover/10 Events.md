@@ -65,8 +65,7 @@ The **Sankey** widget raises individual events for nodes and links when their ho
         <DxSankey
             @nodeHoverChanged="onNodeHoverChanged"
             @linkHoverChanged="onLinkHoverChanged"
-        >
-        </DxSankey>
+        />
     </template>
 
     <script>
@@ -107,8 +106,7 @@ The **Sankey** widget raises individual events for nodes and links when their ho
                 <Sankey
                     onNodeHoverChanged={onNodeHoverChanged}
                     onLinkHoverChanged={onLinkHoverChanged}
-                >
-                </Sankey>
+                />
             );
             onNodeHoverChanged (e) {
                 if(e.target.isHovered()) {

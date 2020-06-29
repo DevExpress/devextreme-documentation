@@ -39,8 +39,7 @@ Call the [getAllNodes()](/api-reference/20%20Data%20Visualization%20Widgets/dxSa
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey ref="sankey" >
-        </DxSankey>
+        <DxSankey ref="sankey" />
     </template>
 
     <script>
@@ -74,8 +73,7 @@ Call the [getAllNodes()](/api-reference/20%20Data%20Visualization%20Widgets/dxSa
         }
         render() {
             return (
-                <Sankey ref={this.sankeyRef} >
-                </Sankey>
+                <Sankey ref={this.sankeyRef} />
             )
         }
         get sankey() {
@@ -136,9 +134,7 @@ You can also access a node or link in the event handlers. For example, the [onNo
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey ... >
-            @nodeClick="onNodeClick"
-        </DxSankey>
+        <DxSankey @nodeClick="onNodeClick" />
     </template>
 
     <script>
@@ -166,8 +162,7 @@ You can also access a node or link in the event handlers. For example, the [onNo
     class App extends React.Component {
         render() {
             return (
-                <Sankey onNodeClick={onNodeClick} >
-                </Sankey>
+                <Sankey onNodeClick={onNodeClick} />
             )
         }
         onNodeClick(e) {

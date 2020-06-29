@@ -125,8 +125,7 @@ You can set the title's text more concisely if you assign it directly to the **t
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey title="I am the Title" >
-        </DxSankey>
+        <DxSankey title="I am the Title" />
     </template>
 
     <script>
@@ -148,8 +147,7 @@ You can set the title's text more concisely if you assign it directly to the **t
     class App extends React.Component {
         render() {
             return (
-                <Sankey title="I am the Title" >
-                </Sankey>
+                <Sankey title="I am the Title" />
             )
         }
     }

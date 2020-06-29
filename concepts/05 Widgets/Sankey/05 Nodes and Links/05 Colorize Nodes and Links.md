@@ -45,11 +45,9 @@ When the palette does not have enough colors to paint each node differently, it 
     <template> 
         <DxSankey
             palette-extension-mode="alternate"
-            palette="Bright"
-            /* or a custom palette */
-            /* :palette="['#70c92f', '#f8ca00', '#bd1550']" */
-        >
-        </DxSankey>
+            palette="Bright" />
+            <!-- or a custom palette --!>
+            <!-- :palette="['#70c92f', '#f8ca00', '#bd1550']" --!>
     </template>
 
     <script>
@@ -73,11 +71,9 @@ When the palette does not have enough colors to paint each node differently, it 
             return (
                 <Sankey
                     paletteExtensionMode="alternate"
-                    palette="Bright"
-                    /* or a custom palette */
-                    /* palette={['#70c92f', '#f8ca00', '#bd1550']} */
-                >
-                </Sankey>
+                    palette="Bright" />
+                    {/* or a custom palette */}
+                    {/* palette={['#70c92f', '#f8ca00', '#bd1550']} */}
             )
         }
     }
@@ -128,7 +124,7 @@ Links also support several [colorization modes](/api-reference/20%20Data%20Visua
     <!-- tab: App.vue -->
     <template> 
         <DxSankey ... >
-            <DxLink color-mode="source" /* or "target" | "gradient" */ />
+            <DxLink color-mode="source" /> <!-- or "target" | "gradient" --!>
         </DxSankey>
     </template>
 
@@ -153,7 +149,7 @@ Links also support several [colorization modes](/api-reference/20%20Data%20Visua
         render() {
             return (
                 <Sankey ... >
-                    <Link colorMode="source" /* or "target" | "gradient" */ />
+                    <Link colorMode="source" {/* or "target" | "gradient" */} />
                 </Sankey>
             )
         }

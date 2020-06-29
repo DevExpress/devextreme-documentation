@@ -43,7 +43,7 @@ Options that configure node labels are collected in the [label](/api-reference/2
     <!-- tab: App.vue -->
     <template> 
         <DxSankey ... >
-            <DxLabel /* Settings for all node labels */ />
+            <DxLabel <!-- Settings for all node labels --!> />
         </DxSankey>
     </template>
 
@@ -68,7 +68,7 @@ Options that configure node labels are collected in the [label](/api-reference/2
         render() {
             return (
                 <Sankey ... >
-                    <Label /* Settings for all node labels */ />
+                    <Label {/* Settings for all node labels */} />
                 </Sankey>
             )
         }

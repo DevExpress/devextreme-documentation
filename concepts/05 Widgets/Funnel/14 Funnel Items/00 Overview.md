@@ -58,8 +58,7 @@ Funnel items get their colors from the [palette](/api-reference/20%20Data%20Visu
             argument-field="fruit"
             value-field="count"
             color-field="color"
-        >
-        </DxFunnel>
+        />
     </template>
 
     <script>
@@ -101,8 +100,7 @@ Funnel items get their colors from the [palette](/api-reference/20%20Data%20Visu
                     argumentField="fruit"
                     valueField="count"
                     colorField="color"
-                >
-                </Funnel>
+                />
             );
         }
     }

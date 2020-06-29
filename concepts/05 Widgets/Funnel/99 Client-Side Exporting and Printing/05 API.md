@@ -37,8 +37,7 @@ To export the **Funnel** using the API, call the [exportTo(fileName, format)](/a
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel ref="funnel" >
-        </DxFunnel>
+        <DxFunnel ref="funnel" />
     </template>
 
     <script>
@@ -72,8 +71,7 @@ To export the **Funnel** using the API, call the [exportTo(fileName, format)](/a
         }
         render() {
             return (
-                <Funnel ref={this.funnelRef} >
-                </Funnel>
+                <Funnel ref={this.funnelRef} />
             );
         }
         get funnel() {
@@ -147,8 +145,8 @@ You can also export several widgets at once using their SVG markup. Gather the m
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel ref="funnel1" ></DxFunnel>
-        <DxFunnel ref="funnel2" ></DxFunnel>
+        <DxFunnel ref="funnel1" />
+        <DxFunnel ref="funnel2" />
     </template>
 
     <script>
@@ -190,8 +188,8 @@ You can also export several widgets at once using their SVG markup. Gather the m
         }
         render() {
             return (
-                <Funnel ref={this.funnel1Ref} ></Funnel>
-                <Funnel ref={this.funnel2Ref} ></Funnel>
+                <Funnel ref={this.funnel1Ref} />
+                <Funnel ref={this.funnel2Ref} />
             );
         }
         get funnel1() {

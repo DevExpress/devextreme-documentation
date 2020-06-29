@@ -49,8 +49,7 @@ When a funnel item's selection state is being changed, the **Funnel** raises the
     <template> 
         <DxFunnel
             @selection-changed="onSelectionChanged"
-        >
-        </DxFunnel>
+        />
     </template>
 
     <script>
@@ -83,8 +82,7 @@ When a funnel item's selection state is being changed, the **Funnel** raises the
             return (
                 <Funnel
                     onSelectionChanged={onSelectionChanged}
-                >
-                </Funnel>
+                />
             );
         }
     }

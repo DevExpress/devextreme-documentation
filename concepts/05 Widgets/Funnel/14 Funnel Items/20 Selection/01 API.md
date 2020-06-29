@@ -41,8 +41,7 @@ The selection capability is not provided out of the box, but it can be implement
     <template> 
         <DxFunnel
             @item-click="onItemClick"
-        >
-        </DxFunnel>
+        />
     </template>
 
     <script>
@@ -71,8 +70,7 @@ The selection capability is not provided out of the box, but it can be implement
             return (
                 <Funnel
                     onItemClick={onItemClick}
-                >
-                </Funnel>
+                />
             );
         }
     }

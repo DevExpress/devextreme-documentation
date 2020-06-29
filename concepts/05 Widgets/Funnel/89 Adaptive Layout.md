@@ -115,8 +115,7 @@ The layout does not automatically adapt to changes made in the widget's containe
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel ref="funnel" >
-        </DxFunnel>
+        <DxFunnel ref="funnel" />
     </template>
 
     <script>
@@ -147,8 +146,7 @@ The layout does not automatically adapt to changes made in the widget's containe
         }
         render() {
             return (
-                <Funnel ref={this.funnelRef} >
-                </Funnel>
+                <Funnel ref={this.funnelRef} />
             );
         }
         get funnel() {

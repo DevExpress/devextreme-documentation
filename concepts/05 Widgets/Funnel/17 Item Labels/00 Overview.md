@@ -43,7 +43,7 @@ Options that configure item labels are collected in the [label](/api-reference/2
     <!-- tab: App.vue -->
     <template> 
         <DxFunnel ... >
-            <DxLabel /* Settings for all item labels */ />
+            <DxLabel <!-- Settings for all item labels --!> />
         </DxFunnel>
     </template>
 
@@ -70,7 +70,7 @@ Options that configure item labels are collected in the [label](/api-reference/2
         render() {
             return (
                 <Funnel ... >
-                    <Label /* Settings for all item labels */ />
+                    <Label {/* Settings for all item labels */} />
                 </Funnel>
             );
         }

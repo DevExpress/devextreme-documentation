@@ -49,8 +49,7 @@ When a funnel item's hover state is being changed, the **Funnel** raises the [ho
     <template> 
         <DxFunnel
             @hover-changed="onHoverChanged"
-        >
-        </DxFunnel>
+        />
     </template>
 
     <script>
@@ -83,8 +82,7 @@ When a funnel item's hover state is being changed, the **Funnel** raises the [ho
             return (
                 <Funnel
                     onHoverChanged={onHoverChanged}
-                >
-                </Funnel>
+                />
             );
         }
     }

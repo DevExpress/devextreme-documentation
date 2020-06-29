@@ -132,8 +132,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel title="I am the Title" >
-        </DxFunnel>
+        <DxFunnel title="I am the Title" />
     </template>
 
     <script>
@@ -155,8 +154,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
     class App extends React.Component {
         render() {
             return (
-                <Funnel title="I am the Title" >
-                </Funnel>
+                <Funnel title="I am the Title" />
             );
         }
     }

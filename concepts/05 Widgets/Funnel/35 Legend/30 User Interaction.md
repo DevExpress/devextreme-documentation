@@ -57,8 +57,7 @@ In addition, a user can click legend items. The widget does not react to this by
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel @legend-click="onLegendClick" >
-        </DxFunnel>
+        <DxFunnel @legend-click="onLegendClick" />
     </template>
 
     <script>
@@ -86,8 +85,7 @@ In addition, a user can click legend items. The widget does not react to this by
     class App extends React.Component {
         render() {
             return (
-                <Funnel onLegendClick={onLegendClick} >
-                </Funnel>
+                <Funnel onLegendClick={onLegendClick} />
             );
         }
         onLegendClick(e) {

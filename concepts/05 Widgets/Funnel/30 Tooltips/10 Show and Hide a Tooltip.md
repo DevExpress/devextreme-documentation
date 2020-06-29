@@ -56,8 +56,7 @@ Each funnel item allows you to show its tooltip programmatically by calling the 
         <DxFunnel
             @item-click="onItemClick"
             @hover-changed="onHoverChanged"
-        >
-        </DxFunnel>
+        />
     </template>
 
     <script>
@@ -94,8 +93,7 @@ Each funnel item allows you to show its tooltip programmatically by calling the 
                 <Funnel
                     onItemClick={onItemClick}
                     onHoverChanged={onHoverChanged}
-                >
-                </Funnel>
+                />
             );
         }
         // Shows the tooltip only when a user clicks a funnel item

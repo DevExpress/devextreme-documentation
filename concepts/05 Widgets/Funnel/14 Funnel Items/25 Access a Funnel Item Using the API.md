@@ -33,8 +33,7 @@ Call the [getAllItems()](/api-reference/20%20Data%20Visualization%20Widgets/dxFu
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel ref="funnel">
-        </DxFunnel>
+        <DxFunnel ref="funnel" />
     </template>
 
     <script>
@@ -65,7 +64,7 @@ Call the [getAllItems()](/api-reference/20%20Data%20Visualization%20Widgets/dxFu
         }
         render() {
             return (
-                <Funnel ref={this.funnelRef}></Funnel>
+                <Funnel ref={this.funnelRef} />
             );
         }
         get funnel() {
@@ -123,8 +122,7 @@ You can also access a funnel item in the event handlers. For example, the [onIte
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel @item-click="onItemClick">
-        </DxFunnel>
+        <DxFunnel @item-click="onItemClick" />
     </template>
 
     <script>
@@ -152,8 +150,7 @@ You can also access a funnel item in the event handlers. For example, the [onIte
     class App extends React.Component {
         render() {
             return (
-                <Funnel onItemClick={onItemClick}>
-                </Funnel>
+                <Funnel onItemClick={onItemClick} />
             );
         }
         onItemClick () {

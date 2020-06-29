@@ -134,8 +134,7 @@ If you need to disable this feature, set the [hoverEnabled](/api-reference/20%20
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel :hover-enabled="false" >
-        </DxFunnel>
+        <DxFunnel :hover-enabled="false" />
     </template>
 
     <script>
@@ -157,8 +156,7 @@ If you need to disable this feature, set the [hoverEnabled](/api-reference/20%20
     class App extends React.Component {
         render() {
             return (
-                <Funnel hoverEnabled={false} >
-                </Funnel>
+                <Funnel hoverEnabled={false} />
             );
         }
     }

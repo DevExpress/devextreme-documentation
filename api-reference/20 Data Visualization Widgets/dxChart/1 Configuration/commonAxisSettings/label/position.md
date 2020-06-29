@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.position
-acceptValues: 'bottom' | 'left' | 'right' | 'top'
+acceptValues: 'inside' | 'outside' | 'bottom' | 'left' | 'right' | 'top'
 type: String
 default: 'outside'
 ---

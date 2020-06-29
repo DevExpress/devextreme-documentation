@@ -1,13 +1,13 @@
 [note] This article describes how to bind a DevExtreme widget to a local array in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401019/devextreme-based-controls/concepts/bind-controls-to-data/clr-objects" target="_blank">docs.devexpress.com</a>.
 
-To bind a widget to a local array, pass this array to the widget's [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') option. We recommend that you also use the [keyExpr](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr') option (if the widget has it) to specify the key field.
+To bind a widget to a local array, pass this array to the widget's [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') option. We recommend that you also set the [keyExpr](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr') option OR the [valueExpr](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#valueExpr) and [displayExpr](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#displayExpr) options, depending on your widget:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        var employees = [
+        const employees = [
             { ID: 1, FirstName: "Sandra", LastName: "Johnson" },
             { ID: 2, FirstName: "James", LastName: "Scott" },
             { ID: 3, FirstName: "Nancy", LastName: "Smith" }
@@ -16,6 +16,12 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
         $("#dataGridContainer").dxDataGrid({
             dataSource: employees,
             keyExpr: "ID"
+        });
+
+        $("#selectBoxContainer").dxSelectBox({
+            dataSource: employees,
+            valueExpr: "ID",
+            displayExpr: (item) => item && item.FirstName + ' ' + item.LastName
         });
     });
 
@@ -26,6 +32,11 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
         [dataSource]="employees"
         keyExpr="ID">
     </dx-data-grid>
+    <dx-select-box
+        [dataSource]="employees"
+        valueExpr="ID"
+        [displayExpr]="getDisplayExpr">
+    </dx-select-box>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -41,6 +52,9 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
         constructor(service: Service) {
             this.employees = service.getEmployees();
         }
+        getDisplayExpr(item) {
+            return item && item.FirstName + ' ' + item.LastName
+        }
     }
 
     <!-- tab: app.service.ts -->
@@ -52,7 +66,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
         LastName: String
     }
 
-    let employees: Employee[] = [
+    const employees: Employee[] = [
         { ID: 1, FirstName: 'Sandra', LastName: 'Johnson' },
         { ID: 2, FirstName: 'James', LastName: 'Scott' },
         { ID: 3, FirstName: 'Nancy', LastName: 'Smith' }
@@ -70,7 +84,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxDataGridModule } from 'devextreme-angular';
+    import { DxDataGridModule, DxSelectBoxModule } from 'devextreme-angular';
     import { Service } from './app.service';
 
     @NgModule({
@@ -79,7 +93,8 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
         ],
         imports: [
             BrowserModule,
-            DxDataGridModule
+            DxDataGridModule,
+            DxSelectBoxModule
         ],
         providers: [
             Service
@@ -92,10 +107,17 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid
-            :data-source="employees"
-            key-expr="ID"
-        />
+        <div>
+            <DxDataGrid
+                :data-source="employees"
+                key-expr="ID"
+            />
+            <DxSelectBox
+                :data-source="employees"
+                value-expr="ID"
+                :display-expr="getDisplayExpr"
+            />
+        </div>
     </template>
 
     <script>
@@ -103,17 +125,24 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxSelectBox from 'devextreme-vue/select-box';
 
     import service from './data.js';
 
     export default {
         components: {
-            DxDataGrid
+            DxDataGrid,
+            DxSelectBox
         },
         data() {
             const employees = service.getEmployees();
             return {
                 employees
+            }
+        },
+        methods: {
+            getDisplayExpr(item) {
+                return item && item.FirstName + ' ' + item.LastName
             }
         }
     }
@@ -141,6 +170,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
+    import SelectBox from 'devextreme-react/select-box';
 
     import service from './data.js';
 
@@ -150,12 +180,23 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
             this.employees = service.getEmployees();
         }
 
+        getDisplayExpr(item) {
+            return item && item.FirstName + ' ' + item.LastName
+        }
+
         render() {
             return (
-                <DataGrid
-                    dataSource={this.employees}
-                    keyExpr="ID"
-                />
+                <React.Fragment>
+                    <DataGrid
+                        dataSource={this.employees}
+                        keyExpr="ID"
+                    />
+                    <SelectBox
+                        dataSource={this.employees}
+                        valueExpr="ID"
+                        displayExpr={this.getDisplayExpr}
+                    />
+                </React.Fragment>
             );
         }
     }
@@ -176,9 +217,9 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
 
 ---
 
-If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/Documentation/ApiReference/Data_Layer/ArrayStore/#key) option instead of the widget's **keyExpr** to specify the key field. You can further wrap the **ArrayStore** in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') if you need to filter, sort, group, and otherwise shape the data.
+If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/Documentation/ApiReference/Data_Layer/ArrayStore/#key) option instead of the widget's **keyExpr** or **valueExpr**. You can further wrap the **ArrayStore** in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') if you need to filter, sort, group, and otherwise shape the data.
 
-The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview) widget to this **DataSource**:
+The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/) and [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/) widgets to this **DataSource**:
 
 ---
 ##### jQuery
@@ -186,7 +227,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     <!-- tab: index.js -->
     $(function() {
         // ...
-        var employeesStore = new DevExpress.data.ArrayStore({
+        const employeesStore = new DevExpress.data.ArrayStore({
             data: employees,
             key: "ID",
             onLoaded: function() {
@@ -194,13 +235,18 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
             }
         });
 
-        var employeesDataSource = new DevExpress.data.DataSource({
+        const employeesDataSource = new DevExpress.data.DataSource({
             store: employeesStore,
             sort: "LastName"
         });
 
         $("#dataGridContainer").dxDataGrid({
             dataSource: employeesDataSource
+        });
+
+        $("#selectBoxContainer").dxSelectBox({
+            dataSource: employeesDataSource,
+            displayExpr: (item) => item && item.FirstName + ' ' + item.LastName
         });
     });
 
@@ -210,6 +256,10 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     <dx-data-grid
         [dataSource]="employeesDataSource">
     </dx-data-grid>
+    <dx-select-box
+        [dataSource]="employeesDataSource"
+        [displayExpr]="getDisplayExpr">
+    </dx-select-box>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -224,6 +274,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
+        employeesDataSource: DataSource;
         constructor(service: Service) {
             const employeesStore = new ArrayStore({
                 data: service.getEmployees(),
@@ -238,17 +289,24 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
                 sort: 'LastName'
             });
         }
-        employeesStore: ArrayStore;
-        employeesDataSource: DataSource;
+        getDisplayExpr(item) {
+            return item && item.FirstName + ' ' + item.LastName
+        }
     }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid
-            :data-source="employeesDataSource"
-        />
+        <div>
+            <DxDataGrid
+                :data-source="employeesDataSource"
+            />
+            <DxSelectBox
+                :data-source="employeesDataSource"
+                :display-expr="getDisplayExpr"
+            />
+        </div>
     </template>
 
     <script>
@@ -256,6 +314,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxSelectBox from 'devextreme-vue/select-box';
     import ArrayStore from 'devextreme/data/array_store';
     import DataSource from 'devextreme/data/data_source';
 
@@ -282,6 +341,11 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
             return {
                 employeesDataSource
             }
+        },
+        methods: {
+            getDisplayExpr(item) {
+                return item && item.FirstName + ' ' + item.LastName
+            }
         }
     }
     </script>
@@ -295,6 +359,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
+    import SelectBox from 'devextreme-react/select-box';
     import ArrayStore from 'devextreme/data/array_store';
     import DataSource from 'devextreme/data/data_source';
 
@@ -314,11 +379,21 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     });
 
     class App extends React.Component {
+        getDisplayExpr(item) {
+            return item && item.FirstName + ' ' + item.LastName
+        }
+        
         render() {
             return (
-                <DataGrid
-                    dataSource={employeesDataSource}
-                />
+                <React.Fragment>
+                    <DataGrid
+                        dataSource={employeesDataSource}
+                    />
+                    <SelectBox
+                        dataSource={this.employees}
+                        displayExpr={this.getDisplayExpr}
+                    />
+                </React.Fragment>
             );
         }
     }

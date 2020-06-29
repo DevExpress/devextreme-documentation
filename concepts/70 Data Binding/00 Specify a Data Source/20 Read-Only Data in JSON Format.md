@@ -1,6 +1,6 @@
 [note] This article describes how to bind a DevExtreme widget to JSON data in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401021/devextreme-based-controls/concepts/bind-controls-to-data/read-only-data-in-json-format" target="_blank">docs.devexpress.com</a>.
 
-To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') option. We recommend that you also use the [keyExpr](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr') option (if the widget has it) to specify the key field.
+To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') option.
 
 ---
 ##### jQuery
@@ -8,8 +8,7 @@ To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/a
     <!-- tab: index.js -->
     $(function() {
         $("#dataGridContainer").dxDataGrid({
-            dataSource: "https://jsonplaceholder.typicode.com/posts",
-            keyExpr: "id"
+            dataSource: "https://jsonplaceholder.typicode.com/posts"
         });
     });
 
@@ -17,8 +16,7 @@ To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/a
 
     <!-- tab: app.component.html -->
     <dx-data-grid
-        [dataSource]="jsonUrl"
-        keyExpr="id">
+        [dataSource]="jsonUrl">
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -57,9 +55,8 @@ To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/a
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid
+        <DxDataGrid
             :data-source="jsonUrl"
-            key-expr="id"
         />
     </template>
 
@@ -98,7 +95,6 @@ To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/a
             return (
                 <DataGrid
                     dataSource={jsonUrl}
-                    keyExpr="id"
                 />
             );
         }
@@ -207,7 +203,7 @@ The following code shows a **CustomStore** configuration in which the **load** f
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list
+        <DxList
             :data-source="jsonDataSource"
         />
     </template>

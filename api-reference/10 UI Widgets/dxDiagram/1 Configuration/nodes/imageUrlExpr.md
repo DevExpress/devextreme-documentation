@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides a node image's URL.
+Specifies the name of a data source field or expression that provides an image URL or Base64 encoded image for a node.
 
 ##### param(data): Object
 The current node's data object.

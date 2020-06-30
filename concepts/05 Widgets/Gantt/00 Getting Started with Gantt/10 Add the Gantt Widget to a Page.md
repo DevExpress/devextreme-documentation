@@ -1,4 +1,4 @@
-Add **Gantt** resources (scripts and styles) onto the page.
+Add **Gantt** resources (scripts and styles) onto the page. 
 
 - **npm**
 

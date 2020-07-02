@@ -134,7 +134,7 @@ You can also access a node or link in the event handlers. For example, the [onNo
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey @nodeClick="onNodeClick" />
+        <DxSankey @node-click="onNodeClick" />
     </template>
 
     <script>
@@ -162,7 +162,7 @@ You can also access a node or link in the event handlers. For example, the [onNo
     class App extends React.Component {
         render() {
             return (
-                <Sankey onNodeClick={onNodeClick} />
+                <Sankey onNodeClick={this.onNodeClick} />
             )
         }
         onNodeClick(e) {

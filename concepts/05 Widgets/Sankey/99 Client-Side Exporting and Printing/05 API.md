@@ -37,8 +37,7 @@ To export the widget using the API, call the [exportTo(fileName, format)](/api-r
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey ref="sankey" >
-        </DxSankey>
+        <DxSankey ref="sankey" />
     </template>
 
     <script>
@@ -72,8 +71,7 @@ To export the widget using the API, call the [exportTo(fileName, format)](/api-r
         }
         render() {
             return (
-                <Sankey ref={this.sankeyRef} >
-                </Sankey>
+                <Sankey ref={this.sankeyRef} />
             )
         }
         get sankey() {
@@ -147,8 +145,8 @@ You can also export several widgets simultaneously using their SVG markup. Call 
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey ref="sankey1" ></DxSankey>
-        <DxSankey ref="sankey2" ></DxSankey>
+        <DxSankey ref="sankey1" />
+        <DxSankey ref="sankey2" />
     </template>
 
     <script>
@@ -190,8 +188,8 @@ You can also export several widgets simultaneously using their SVG markup. Call 
         }
         render() {
             return (
-                <Sankey ref={this.sankey1Ref} ></Sankey>
-                <Sankey ref={this.sankey2Ref} ></Sankey>
+                <Sankey ref={this.sankey1Ref} />
+                <Sankey ref={this.sankey2Ref} />
             )
         }
         get sankey1() {

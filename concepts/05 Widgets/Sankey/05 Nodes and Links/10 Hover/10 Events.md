@@ -63,8 +63,8 @@ The **Sankey** widget raises individual events for nodes and links when their ho
     <!-- tab: App.vue -->
     <template> 
         <DxSankey
-            @nodeHoverChanged="onNodeHoverChanged"
-            @linkHoverChanged="onLinkHoverChanged"
+            @node-hover-changed="onNodeHoverChanged"
+            @link-hover-changed="onLinkHoverChanged"
         />
     </template>
 

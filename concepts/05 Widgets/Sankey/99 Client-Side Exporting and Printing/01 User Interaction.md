@@ -137,7 +137,7 @@ Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widge
         <DxSankey ... >
             <DxExport
                 :enabled="true"
-                :formats="["PNG", "JPEG"]"
+                :formats="exportFormats"
                 file-name="exported_sankey"
             />
         </DxSankey>
@@ -145,11 +145,16 @@ Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widge
 
     <script>
     import DxSankey, { DxExport } from 'devextreme-vue/sankey';
-
+    
     export default {
         components: {
             DxSankey,
             DxExport
+        },
+        data() {
+            return {
+                exportFormats: ['PNG', 'JPEG']
+            }
         }
     }
     </script>
@@ -160,13 +165,15 @@ Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widge
     import React from 'react';
     import Sankey, { Export } from 'devextreme-react/sankey';
 
+    const exportFormats = ['PNG', 'JPEG'];
+
     class App extends React.Component {
         render() {
             return (
                 <Sankey ... >
                     <Export
                         enabled={true}
-                        formats={["PNG", "JPEG"]}
+                        formats={exportFormats}
                         fileName="exported_sankey"
                     />
                 </Sankey>

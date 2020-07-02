@@ -101,20 +101,20 @@ Tooltips can be invoked programmatically by calling a [Node](/api-reference/20%2
                 <Sankey ... >
                     <Tooltip
                         enabled={false}
-                        onLinkClick={onLinkClick}
-                        onLinkHoverChanged={onLinkHoverChanged}
+                        onLinkClick={this.onLinkClick}
+                        onLinkHoverChanged={this.onLinkHoverChanged}
                     />
                 </Sankey>
             )
-            // Shows the tooltip only when a sankey link is clicked
-            onLinkClick(e) {
-                e.target.showTooltip();
-            },
-            // Hides the tooltip when the sankey link is no longer hovered over or pressed
-            onLinkHoverChanged(e) {
-                if (!e.target.isHovered()) {
-                    e.component.hideTooltip();
-                }
+        }
+        // Shows the tooltip only when a sankey link is clicked
+        onLinkClick(e) {
+            e.target.showTooltip();
+        },
+        // Hides the tooltip when the sankey link is no longer hovered over or pressed
+        onLinkHoverChanged(e) {
+            if (!e.target.isHovered()) {
+                e.component.hideTooltip();
             }
         }
     }

@@ -67,8 +67,8 @@ You can handle these events with functions. If the handling functions are not go
         <DxSankey
             @exporting="onExporting"
             @exported="onExported"
-            @fileSaving="onFileSaving"
-        ></DxSankey>
+            @file-saving="onFileSaving"
+        />
     </template>
 
     <script>
@@ -102,10 +102,10 @@ You can handle these events with functions. If the handling functions are not go
         render() {
             return (
                 <Sankey
-                    onExporting={onExporting}
-                    onExported={onExported}
-                    onFileSaving={onFileSaving}
-                ></Sankey>
+                    onExporting={this.onExporting}
+                    onExported={this.onExported}
+                    onFileSaving={this.onFileSaving}
+                />
             )
         }
         onExporting(e) {

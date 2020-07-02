@@ -100,7 +100,7 @@ In the following example, the **customizeText** function is used to add incoming
         render() {
             return (
                 <Sankey ... >
-                    <Label customizeText={customizeText} />
+                    <Label customizeText={this.customizeText} />
                 </Sankey>
             )
         }

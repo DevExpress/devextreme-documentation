@@ -90,15 +90,16 @@ Options that configure tooltips are collected in the [tooltip](/api-reference/20
                 <Sankey ... >
                     <Tooltip
                         color="yellow"
-                        customizeNodeTooltip={customizeNodeTooltip}
+                        customizeNodeTooltip={this.customizeNodeTooltip}
                     />
                 </Sankey>
             )
-            // Tooltips of all nodes with outgoing weight less than 1 turn red
-            // Other tooltips remain yellow
-            customizeNodeTooltip(nodeInfo) {
-                return nodeInfo.weightOut < 1 ? { color: "red" } : { }
-            }
+        }
+        
+        // Tooltips of all nodes with outgoing weight less than 1 turn red
+        // Other tooltips remain yellow
+        customizeNodeTooltip(nodeInfo) {
+            return nodeInfo.weightOut < 1 ? { color: "red" } : { }
         }
     }
 

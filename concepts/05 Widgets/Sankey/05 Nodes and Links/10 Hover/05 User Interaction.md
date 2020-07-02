@@ -156,7 +156,7 @@ Set [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSankey :hoverEnabled="false" />
+        <DxSankey :hover-enabled="false" />
     </template>
 
     <script>

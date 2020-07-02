@@ -91,8 +91,8 @@ Each funnel item allows you to show its tooltip programmatically by calling the 
         render() {
             return (
                 <Funnel
-                    onItemClick={onItemClick}
-                    onHoverChanged={onHoverChanged}
+                    onItemClick={this.onItemClick}
+                    onHoverChanged={this.onHoverChanged}
                 />
             );
         }

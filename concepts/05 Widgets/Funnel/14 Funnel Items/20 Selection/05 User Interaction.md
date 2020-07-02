@@ -85,7 +85,7 @@ When a user selects funnel items, they change their style to the one specified b
                 <Funnel ... >
                     <Item ... >
                         <SelectionStyle>
-                            <DxHatching direction="left" />
+                            <Hatching direction="left" />
                         </SelectionStyle>
                     </Item>
                 </Funnel>

@@ -172,7 +172,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **Funnel
                     <Tooltip
                         enabled={true}
                         color="yellow"
-                        customizeTooltip={customizeTooltip}
+                        customizeTooltip={this.customizeTooltip}
                     />
                 </Funnel>
             );

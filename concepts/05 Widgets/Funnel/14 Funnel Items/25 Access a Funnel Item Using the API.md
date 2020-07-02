@@ -150,7 +150,7 @@ You can also access a funnel item in the event handlers. For example, the [onIte
     class App extends React.Component {
         render() {
             return (
-                <Funnel onItemClick={onItemClick} />
+                <Funnel onItemClick={this.onItemClick} />
             );
         }
         onItemClick () {

@@ -85,7 +85,7 @@ In addition, a user can click legend items. The widget does not react to this by
     class App extends React.Component {
         render() {
             return (
-                <Funnel onLegendClick={onLegendClick} />
+                <Funnel onLegendClick={this.onLegendClick} />
             );
         }
         onLegendClick(e) {

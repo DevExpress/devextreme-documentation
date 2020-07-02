@@ -67,9 +67,8 @@ You can handle these events with functions. If the handling functions are not go
         <DxFunnel
             @exporting="onExporting"
             @exported="onExported"
-            @fileSaving="onFileSaving"
-        >
-        </DxFunnel>
+            @file-saving="onFileSaving"
+        />
     </template>
 
     <script>
@@ -103,11 +102,10 @@ You can handle these events with functions. If the handling functions are not go
         render() {
             return (
                 <Funnel
-                    onExporting="onExporting"
-                    onExported="onExported"
-                    onFileSaving="onFileSaving"
-                >
-                </Funnel>
+                    onExporting={this.onExporting}
+                    onExported={this.onExported}
+                    onFileSaving={this.onFileSaving}
+                />
             );
         }
         onExporting (e) {

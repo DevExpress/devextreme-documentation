@@ -77,7 +77,7 @@ If you need to change the text displayed by funnel items, declare the [customize
         render() {
             return (
                 <Funnel ... >
-                    <Label customizeText={customizeText} />
+                    <Label customizeText={this.customizeText} />
                 </Funnel>
             );
         }

@@ -116,8 +116,7 @@ In the previous code example, selection was cleared of a specific item. If you n
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel ref="funnel">
-        </DxFunnel>
+        <DxFunnel ref="funnel" />
     </template>
 
     <script>
@@ -148,7 +147,7 @@ In the previous code example, selection was cleared of a specific item. If you n
         }
         render() {
             return (
-                <Funnel ref={this.funnelRef}></Funnel>
+                <Funnel ref={this.funnelRef} />
             );
         }
         get funnel() {

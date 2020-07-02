@@ -47,7 +47,7 @@ You can enable both exporting and printing by setting the [export](/api-referenc
         <DxFunnel ... >
             <DxExport
                 :enabled="true"
-                :printingEnabled="false"
+                :printing-enabled="false"
             />
         </DxFunnel>
     </template>
@@ -133,7 +133,7 @@ If you want to restrict the set of formats available for exporting, change the *
         <DxFunnel ... >
             <DxExport
                 :enabled="true"
-                :formats="['PNG', 'JPEG']"
+                :formats="exportFormats"
                 file-name="exported_funnel"
             />
         </DxFunnel>
@@ -146,6 +146,11 @@ If you want to restrict the set of formats available for exporting, change the *
         components: {
             DxFunnel,
             DxExport
+        },
+        data() {
+            return {
+                exportFormats: ['PNG', 'JPEG']
+            }
         }
     }
     </script>
@@ -156,13 +161,15 @@ If you want to restrict the set of formats available for exporting, change the *
     import React from 'react';
     import Funnel, { Export } from 'devextreme-react/funnel';
 
+    const exportFormats = ['PNG', 'JPEG'];
+
     class App extends React.Component {
         render() {
             return (
                 <Funnel ... >
                     <Export 
                         enabled={true}
-                        formats={['PNG', 'JPEG']}
+                        formats={exportFormats}
                         fileName="exported_funnel"
                     />
                 </Funnel>

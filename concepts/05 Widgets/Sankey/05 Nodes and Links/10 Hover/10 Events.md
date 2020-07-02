@@ -104,23 +104,23 @@ The **Sankey** widget raises individual events for nodes and links when their ho
         render() {
             return (
                 <Sankey
-                    onNodeHoverChanged={onNodeHoverChanged}
-                    onLinkHoverChanged={onLinkHoverChanged}
+                    onNodeHoverChanged={this.onNodeHoverChanged}
+                    onLinkHoverChanged={this.onLinkHoverChanged}
                 />
             );
-            onNodeHoverChanged (e) {
-                if(e.target.isHovered()) {
-                    // Commands to execute when the pointer enters a node
-                } else {
-                    // Commands to execute when the pointer leaves a node
-                }
-            },
-            onLinkHoverChanged (e) {
-                if(e.target.isHovered()) {
-                    // Commands to execute when the pointer enters a link
-                } else {
-                    // Commands to execute when the pointer leaves a link
-                }
+        }
+        onNodeHoverChanged (e) {
+            if(e.target.isHovered()) {
+                // Commands to execute when the pointer enters a node
+            } else {
+                // Commands to execute when the pointer leaves a node
+            }
+        },
+        onLinkHoverChanged (e) {
+            if(e.target.isHovered()) {
+                // Commands to execute when the pointer enters a link
+            } else {
+                // Commands to execute when the pointer leaves a link
             }
         }
     }

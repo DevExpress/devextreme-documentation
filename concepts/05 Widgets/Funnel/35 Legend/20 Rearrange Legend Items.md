@@ -43,7 +43,7 @@ Depending on whether the legend is oriented vertically or horizontally, the **Fu
     <template> 
         <DxFunnel ... >
             <DxLegend
-                orientation: "vertical" <!-- or "horizontal" --!>
+                orientation: "vertical" <!-- or "horizontal" -->
             />
         </DxFunnel>
     </template>
@@ -130,7 +130,7 @@ To distribute all legend items between several columns (in a vertically-oriented
         <DxFunnel ... >
             <DxLegend
                 :column-count="3" 
-                <!-- :row-count="2" --!>
+                <!-- :row-count="2" -->
             />
         </DxFunnel>
     </template>

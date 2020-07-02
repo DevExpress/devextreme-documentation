@@ -61,7 +61,7 @@ If you need to change the text displayed by funnel items, declare the [customize
         },
         methods: {
             customizeText(itemInfo) {
-                return itemInfo.item.argument + ': ' + itemInfo.value;
+                return `${itemInfo.item.argument}: ${itemInfo.value}`;
             }
         }
     }
@@ -82,7 +82,7 @@ If you need to change the text displayed by funnel items, declare the [customize
             );
         }
         customizeText(itemInfo) {
-            return itemInfo.item.argument + ': ' + itemInfo.value;
+            return `${itemInfo.item.argument}: ${itemInfo.value}`;
         }
     }
 

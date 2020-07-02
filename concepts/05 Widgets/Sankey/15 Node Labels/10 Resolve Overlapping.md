@@ -40,7 +40,7 @@ Node labels can overlap when the **Sankey** contains many nodes. You can specify
     <!-- tab: App.vue -->
     <template> 
         <DxSankey ... >
-            <DxLabel overlapping-behavior="ellipsis" <!-- or "hide" | "none" --!> />
+            <DxLabel overlapping-behavior="ellipsis" <!-- or "hide" | "none" --> />
         </DxSankey>
     </template>
 

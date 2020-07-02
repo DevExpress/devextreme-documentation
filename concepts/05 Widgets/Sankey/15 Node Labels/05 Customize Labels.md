@@ -16,7 +16,7 @@ In the following example, the **customizeText** function is used to add incoming
             // ...
             label: {
                 customizeText: function(node) {
-                    return node.title + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", " +
+                    return node.title + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", "
                         + "out: " + node.linksOut.reduce(weightsReducer, 0) + ")";
                 }
             }
@@ -36,7 +36,7 @@ In the following example, the **customizeText** function is used to add incoming
             return accumulator + currentValue.weight;
         }
         sankey_label_customizeText(node) {
-            return node.title + " (in: " + node.linksIn.reduce(this.weightsReducer, 0) + ", " +
+            return node.title + " (in: " + node.linksIn.reduce(this.weightsReducer, 0) + ", "
                 + "out: " + node.linksOut.reduce(this.weightsReducer, 0) + ")";
         }
     }
@@ -79,8 +79,7 @@ In the following example, the **customizeText** function is used to add incoming
         },
         methods: {
             customizeText(node) {
-                return node.title + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", " +
-                    + "out: " + node.linksOut.reduce(weightsReducer, 0) + ")";
+                return `${node.title} (in: ${node.linksIn.reduce(weightsReducer, 0)}, out: ${node.linksOut.reduce(weightsReducer, 0)})`;
             }
         }
     }
@@ -105,8 +104,7 @@ In the following example, the **customizeText** function is used to add incoming
             )
         }
         customizeText(node) {
-            return node.title + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", " +
-                    + "out: " + node.linksOut.reduce(weightsReducer, 0) + ")";
+            return `${node.title} (in: ${node.linksIn.reduce(weightsReducer, 0)}, out: ${node.linksOut.reduce(weightsReducer, 0)})`;
         }
     }
 

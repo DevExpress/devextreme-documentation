@@ -47,6 +47,56 @@ To configure the elements' appearance, use the [node](/api-reference/20%20Data%2
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxNode :opacity="0.5" />
+            <DxLink>
+                <DxBorder :visible="true" />
+            </DxLink>
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { 
+        DxNode, 
+        DxLink, 
+        DxBorder 
+    } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxNode, 
+            DxLink, 
+            DxBorder
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Node, Link, Border } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Node opacity={0.5} />
+                    <Link>
+                        <Border visible={true} />
+                    </Link>
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

@@ -39,6 +39,62 @@ When a user presses or hovers over funnel items, they change their style to the 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxItem ... >
+                <DxHoverStyle>
+                    <DxHatching direction="left" />
+                </DxHoverStyle>
+            </DxItem>
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxItem,
+        DxHoverStyle,
+        DxHatching
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxItem,
+            DxHoverStyle,
+            DxHatching
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, {
+        Item,
+        HoverStyle,
+        Hatching
+    } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Item ... >
+                        <HoverStyle>
+                            <Hatching direction="left" />
+                        </HoverStyle>
+                    </Item>
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 If you need to disable this feature, set the [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/hoverEnabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#hoverEnabled') option to **false**.
@@ -73,5 +129,38 @@ If you need to disable this feature, set the [hoverEnabled](/api-reference/20%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel :hover-enabled="false" />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel hoverEnabled={false} />
+            );
+        }
+    }
+
+    export default App;
 
 ---

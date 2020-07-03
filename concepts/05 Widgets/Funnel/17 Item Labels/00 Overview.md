@@ -38,6 +38,46 @@ Options that configure item labels are collected in the [label](/api-reference/2
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLabel <!-- Settings for all item labels --> />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxLabel
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Label } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Label {/* Settings for all item labels */} />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

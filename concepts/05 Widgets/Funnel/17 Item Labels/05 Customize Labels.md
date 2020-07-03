@@ -40,6 +40,54 @@ If you need to change the text displayed by funnel items, declare the [customize
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLabel :customize-text="customizeText" />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxLabel
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLabel
+        },
+        methods: {
+            customizeText(itemInfo) {
+                return `${itemInfo.item.argument}: ${itemInfo.value}`;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Label } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Label customizeText={this.customizeText} />
+                </Funnel>
+            );
+        }
+        customizeText(itemInfo) {
+            return `${itemInfo.item.argument}: ${itemInfo.value}`;
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

@@ -43,6 +43,60 @@ When a funnel item's selection state is being changed, the **Funnel** raises the
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel
+            @selection-changed="onSelectionChanged"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            onSelectionChanged (e) {
+                if (e.item.isSelected()) {
+                    // Commands to execute when the item is selected
+                } else {
+                    // Commands to execute when the selection is cleared
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel
+                    onSelectionChanged={onSelectionChanged}
+                />
+            );
+        }
+    }
+
+    function onSelectionChanged (e) {
+        if (e.item.isSelected()) {
+            // Commands to execute when the item is selected
+        } else {
+            // Commands to execute when the selection is cleared
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change the event handler at runtime, or if you need to attach several handlers to the **selectionChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

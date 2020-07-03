@@ -26,6 +26,32 @@ You can change a funnel item's hover state by passing **true** or **false** to t
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <script>
+    export default {
+        methods: {
+            toggleItemHoverState (item) {
+                item.hover(!item.isHovered());
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    class App extends React.Component {
+        toggleItemHoverState (item) {
+            item.hover(!item.isHovered());
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

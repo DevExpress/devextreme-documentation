@@ -36,6 +36,50 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLegend
+                horizontal-alignment="center" <!-- or "left" | "right" -->
+                vertical-alignment="top" <!-- or "bottom" -->
+            />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, { DxLegend } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Legend } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Legend
+                        horizontalAlignment="center" {/* or "left" | "right" */}
+                        verticalAlignment="top" {/* or "bottom" */}
+                    />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Below, you can try out these options in action.

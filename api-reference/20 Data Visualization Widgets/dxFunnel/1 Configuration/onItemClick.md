@@ -76,9 +76,7 @@ This function is often used to implement item selection as shown in the followin
 
     <!-- tab: App.vue -->
     <template>
-        <DxFunnel ...
-            @item-click="selectItem">
-        </DxFunnel>
+        <DxFunnel @item-click="selectItem" />
     </template>
 
     <script>
@@ -106,9 +104,7 @@ This function is often used to implement item selection as shown in the followin
     class App extends React.Component {
         render() {
             return (
-                <Funnel ...
-                    onItemClick={this.selectItem}>
-                </Funnel>
+                <Funnel onItemClick={this.selectItem} />
             );
         }
 

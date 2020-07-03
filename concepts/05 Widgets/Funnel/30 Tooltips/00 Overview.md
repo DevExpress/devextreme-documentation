@@ -38,6 +38,46 @@ All options configuring tooltips are collected in the [tooltip](/api-reference/2
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxTooltip :enabled="true" />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxTooltip
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxTooltip
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Tooltip } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Tooltip enabled={true} />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 Options declared in the **tooltip** object apply to all tooltips in the **Funnel**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/tooltip/#customizeTooltip') option. This function must return an object with options for the tooltip you want to customize.
@@ -87,6 +127,62 @@ Options declared in the **tooltip** object apply to all tooltips in the **Funnel
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxTooltip
+                :enabled="true"
+                color="yellow"
+                :customize-tooltip="customizeTooltip"
+            />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxTooltip
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxTooltip
+        },
+        methods: {
+            customizeTooltip (itemInfo) {
+                return itemInfo.value > 100 ? { color: 'red' } : { }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Tooltip } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Tooltip
+                        enabled={true}
+                        color="yellow"
+                        customizeTooltip={this.customizeTooltip}
+                    />
+                </Funnel>
+            );
+        }
+        customizeTooltip (itemInfo) {
+            return itemInfo.value > 100 ? { color: 'red' } : { }
+        }
+    }
+
+    export default App;
 
 ---
 

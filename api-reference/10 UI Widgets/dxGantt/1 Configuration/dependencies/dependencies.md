@@ -165,6 +165,31 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         }
     }    
 
+    <!-- tab: angular.json -->
+    {
+      "projects": {
+        "ProjectName": {
+          "architect": {
+            "build": {
+              "options": {
+                "styles": [
+                  "node_modules/devextreme/dist/css/dx.common.css",
+                  "node_modules/devextreme/dist/css/dx.light.css",
+                  "node_modules/devexpress-gantt/dist/dx-gantt.css",
+                  "src/styles.css"
+                ],
+                ...
+              },
+              ...
+            },
+            ...
+          }
+        },
+        ...
+      },
+      ...
+    }
+
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -181,7 +206,8 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     </template>
     <script>
         import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css'; 
+        import 'devextreme/dist/css/dx.light.css';
+        import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
             DxGantt, 
@@ -225,6 +251,7 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
+    import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 
         Dependencies, 

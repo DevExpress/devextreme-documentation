@@ -37,6 +37,44 @@ Nodes in a column are separated by a space. You can use the **node**.[padding](/
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxNode :padding="1" />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxNode } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxNode
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Node } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Node padding={1} />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 Each column can be aligned vertically. You can find an example in the [alignment](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/alignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#alignment') option's description.

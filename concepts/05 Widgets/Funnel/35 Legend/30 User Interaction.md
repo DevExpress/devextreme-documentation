@@ -57,7 +57,9 @@ In addition, a user can click legend items. The widget does not react to this by
 
     <!-- tab: App.vue -->
     <template> 
-        <DxFunnel @legend-click="onLegendClick" />
+        <DxFunnel ...
+            @legend-click="onLegendClick" 
+         />
     </template>
 
     <script>

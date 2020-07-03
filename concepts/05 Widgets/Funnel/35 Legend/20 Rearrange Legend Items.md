@@ -70,7 +70,7 @@ Depending on whether the legend is oriented vertically or horizontally, the **Fu
             return (
                 <Funnel ... >
                     <Legend
-                        orientation: "vertical" {/* or "horizontal" */}
+                        orientation="vertical" {/* or "horizontal" */}
                     />
                 </Funnel>
             );

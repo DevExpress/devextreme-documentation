@@ -151,7 +151,7 @@ You can also export several widgets simultaneously using their SVG markup. Call 
 
     <script>
     import DxSankey from 'devextreme-vue/sankey';
-    import exportMethods from "devextreme/viz/export";
+    import exportMethods from 'devextreme/viz/export';
 
     export default {
         components: {

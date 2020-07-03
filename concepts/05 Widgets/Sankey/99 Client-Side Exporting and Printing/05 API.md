@@ -178,7 +178,7 @@ You can also export several widgets simultaneously using their SVG markup. Call 
     <!-- tab: App.js -->
     import React from 'react';
     import Sankey from 'devextreme-react/sankey';
-    import exportMethods from "devextreme/viz/export";
+    import exportMethods from 'devextreme/viz/export';
 
     class App extends React.Component {
         constructor(props) {

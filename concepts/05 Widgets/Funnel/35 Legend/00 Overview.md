@@ -36,6 +36,44 @@ Options that configure the legend's appearance, location, and content are collec
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLegend :visible="true" />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, { DxLegend } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLegend
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Legend } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Legend visible={true} />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

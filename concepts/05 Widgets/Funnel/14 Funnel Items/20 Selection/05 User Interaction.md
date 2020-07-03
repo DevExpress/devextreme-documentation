@@ -39,4 +39,60 @@ When a user selects funnel items, they change their style to the one specified b
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxItem ... >
+                <DxSelectionStyle>
+                    <DxHatching direction="left" />
+                </DxSelectionStyle>
+            </DxItem>
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxItem,
+        DxSelectionStyle,
+        DxHatching
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxItem,
+            DxSelectionStyle,
+            DxHatching
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, {
+        Item,
+        SelectionStyle,
+        Hatching
+    } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Item ... >
+                        <SelectionStyle>
+                            <Hatching direction="left" />
+                        </SelectionStyle>
+                    </Item>
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---

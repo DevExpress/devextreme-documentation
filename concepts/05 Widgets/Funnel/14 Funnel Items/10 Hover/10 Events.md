@@ -43,6 +43,60 @@ When a funnel item's hover state is being changed, the **Funnel** raises the [ho
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel
+            @hover-changed="onHoverChanged"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            onHoverChanged (e) {
+                if (e.item.isHovered()) {
+                    // Commands to execute when the pointer enters the item
+                } else {
+                    // Commands to execute when the pointer leaves the item
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel
+                    onHoverChanged={onHoverChanged}
+                />
+            );
+        }
+    }
+
+    function onHoverChanged (e) {
+        if (e.item.isHovered()) {
+            // Commands to execute when the pointer enters the item
+        } else {
+            // Commands to execute when the pointer leaves the item
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change the event handler at runtime or if you need to attach several handlers to the **hoverChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

@@ -38,6 +38,44 @@ Options that configure node labels are collected in the [label](/api-reference/2
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxLabel <!-- Settings for all node labels --> />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxLabel } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Label } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Label {/* Settings for all node labels */} />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

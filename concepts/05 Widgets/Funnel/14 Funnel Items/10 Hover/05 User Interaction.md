@@ -85,7 +85,7 @@ When a user presses or hovers over funnel items, they change their style to the 
                 <Funnel ... >
                     <Item ... >
                         <HoverStyle>
-                            <Hatching direction='left' />
+                            <Hatching direction="left" />
                         </HoverStyle>
                     </Item>
                 </Funnel>

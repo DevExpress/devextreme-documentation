@@ -46,7 +46,7 @@ When a user presses or hovers over funnel items, they change their style to the 
         <DxFunnel ... >
             <DxItem ... >
                 <DxHoverStyle>
-                    <DxHatching direction='left' />
+                    <DxHatching direction="left" />
                 </DxHoverStyle>
             </DxItem>
         </DxFunnel>

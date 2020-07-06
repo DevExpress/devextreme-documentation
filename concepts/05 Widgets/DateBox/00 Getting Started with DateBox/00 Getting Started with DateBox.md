@@ -7,13 +7,33 @@ This tutorial shows how to configure basic **DateBox** features. The created wid
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/GettingStartedWith/DateBox/index.html, /Content/Applications/20_1/GettingStartedWith/DateBox/index.js, /Content/Applications/20_1/GettingStartedWith/DateBox/index.css"></div>
 
 
-Refer to the subtopics for details on every configuration step. You can also see the full code below or download it from [this GitHub repository](https://github.com/DevExpress-Examples/getting-started-with-datebox):
+Refer to the subtopics for details on every configuration step. You can also see the full code below or download it from <a href="https://github.com/DevExpress-Examples/getting-started-with-datebox" target="_blank">this GitHub repository</a>:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
+        const now = new Date();
+        const holidays = [
+            new Date(0, 0, 1),
+            new Date(0, 0, 20),
+            new Date(0, 1, 17),
+            new Date(0, 4, 10),
+            new Date(0, 4, 25),
+            new Date(0, 5, 21),
+            new Date(0, 6, 4),
+            new Date(0, 8, 7),
+            new Date(0, 9, 5),
+            new Date(0, 9, 12),
+            new Date(0, 10, 11),
+            new Date(0, 10, 26),
+            new Date(0, 10, 27),
+            new Date(0, 11, 24),
+            new Date(0, 11, 25),
+            new Date(0, 11, 31)
+        ];
+
         $("#dateBoxContainer").dxDateBox({
             type: "datetime",
             max: now,
@@ -64,12 +84,12 @@ Refer to the subtopics for details on every configuration step. You can also see
         [max]="now"
         [value]="now"
         (onValueChanged)="onValueChanged($event)"
-        [disabledDates]="getDisabledDates"
-    >
+        [disabledDates]="getDisabledDates">
     </dx-date-box>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { Service } from './app.service';
 
     @Component({
         selector: 'app-root',
@@ -82,12 +102,12 @@ Refer to the subtopics for details on every configuration step. You can also see
         now: Date = new Date();
         minDate: Date = new Date(1900, 0, 1);
 
-        constructor(service: AppService){
+        constructor(service: Service) {
             this.holidays = service.getHolidays();
             this.getDisabledDates = this.getDisabledDates.bind(this);
         }
 
-        onValueChanged(e){
+        onValueChanged(e) {
             console.log(e.previousValue);
             console.log(e.value);
         }
@@ -105,6 +125,36 @@ Refer to the subtopics for details on every configuration step. You can also see
                 }          
             }
             return false;
+        }
+    }
+
+    <!-- tab: app.service.ts -->
+    import { Injectable } from '@angular/core';
+
+    const holidays = [
+        new Date(0, 0, 1),
+        new Date(0, 0, 20),
+        new Date(0, 1, 17),
+        new Date(0, 4, 10),
+        new Date(0, 4, 25),
+        new Date(0, 5, 21),
+        new Date(0, 6, 4),
+        new Date(0, 8, 7),
+        new Date(0, 9, 5),
+        new Date(0, 9, 12),
+        new Date(0, 10, 11),
+        new Date(0, 10, 26),
+        new Date(0, 10, 27),
+        new Date(0, 11, 24),
+        new Date(0, 11, 25),
+        new Date(0, 11, 31)
+    ];
+
+    @Injectable()
+    export class AppService {
+
+        getHolidays(): Date[] {
+            return holidays;
         }
     }
 
@@ -148,6 +198,25 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     import { DxDateBox } from 'devextreme-vue/date-box';
 
+    const holidays = [
+        new Date(0, 0, 1),
+        new Date(0, 0, 20),
+        new Date(0, 1, 17),
+        new Date(0, 4, 10),
+        new Date(0, 4, 25),
+        new Date(0, 5, 21),
+        new Date(0, 6, 4),
+        new Date(0, 8, 7),
+        new Date(0, 9, 5),
+        new Date(0, 9, 12),
+        new Date(0, 10, 11),
+        new Date(0, 10, 26),
+        new Date(0, 10, 27),
+        new Date(0, 11, 24),
+        new Date(0, 11, 25),
+        new Date(0, 11, 31)
+    ]
+
     export default {
         components: {
             DxDateBox
@@ -189,6 +258,25 @@ Refer to the subtopics for details on every configuration step. You can also see
     import 'devextreme/dist/css/dx.light.css';
 
     import { DateBox } from 'devextreme-react/date-box';
+
+    const holidays = [
+        new Date(0, 0, 1),
+        new Date(0, 0, 20),
+        new Date(0, 1, 17),
+        new Date(0, 4, 10),
+        new Date(0, 4, 25),
+        new Date(0, 5, 21),
+        new Date(0, 6, 4),
+        new Date(0, 8, 7),
+        new Date(0, 9, 5),
+        new Date(0, 9, 12),
+        new Date(0, 10, 11),
+        new Date(0, 10, 26),
+        new Date(0, 10, 27),
+        new Date(0, 11, 24),
+        new Date(0, 11, 25),
+        new Date(0, 11, 31)
+    ]
 
     class App extends React.Component {
         now = new Date();

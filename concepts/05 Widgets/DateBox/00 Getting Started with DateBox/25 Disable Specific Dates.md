@@ -5,6 +5,26 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
 
     <!-- tab: index.js -->
     $(function() {
+        // ...
+        const holidays = [
+            new Date(0, 0, 1),
+            new Date(0, 0, 20),
+            new Date(0, 1, 17),
+            new Date(0, 4, 10),
+            new Date(0, 4, 25),
+            new Date(0, 5, 21),
+            new Date(0, 6, 4),
+            new Date(0, 8, 7),
+            new Date(0, 9, 5),
+            new Date(0, 9, 12),
+            new Date(0, 10, 11),
+            new Date(0, 10, 26),
+            new Date(0, 10, 27),
+            new Date(0, 11, 24),
+            new Date(0, 11, 25),
+            new Date(0, 11, 31)
+        ];
+
         $("#dateBoxContainer").dxDateBox({
             // ...
             disabledDates: function(args) {
@@ -24,21 +44,6 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
         }
     });
 
-    <!-- tab: index.html -->
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.4/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.4/css/dx.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.1.4/js/dx.all.js"></script>
-            <script type="text/javascript" src="index.js"></script>
-        </head>
-        <body class="dx-viewport">
-            <div id="dateBox"></div>
-        </body>
-    </html>
-
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -48,6 +53,7 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { Service } from './app.service';
 
     @Component({
         selector: 'app-root',
@@ -58,14 +64,9 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
         // ...
         holidays: Date[];
 
-        constructor(service: AppService){
+        constructor(service: Service) {
             this.holidays = service.getHolidays();
             this.getDisabledDates = this.getDisabledDates.bind(this);
-        }
-
-        onValueChanged(e){
-            console.log(e.previousValue);
-            console.log(e.value);
         }
 
         getDisabledDates(args): boolean {
@@ -84,6 +85,36 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
         }
     }
 
+    <!-- tab: app.service.ts -->
+    import { Injectable } from '@angular/core';
+
+    const holidays = [
+        new Date(0, 0, 1),
+        new Date(0, 0, 20),
+        new Date(0, 1, 17),
+        new Date(0, 4, 10),
+        new Date(0, 4, 25),
+        new Date(0, 5, 21),
+        new Date(0, 6, 4),
+        new Date(0, 8, 7),
+        new Date(0, 9, 5),
+        new Date(0, 9, 12),
+        new Date(0, 10, 11),
+        new Date(0, 10, 26),
+        new Date(0, 10, 27),
+        new Date(0, 11, 24),
+        new Date(0, 11, 25),
+        new Date(0, 11, 31)
+    ];
+
+    @Injectable()
+    export class AppService {
+
+        getHolidays(): Date[] {
+            return holidays;
+        }
+    }
+
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -98,6 +129,25 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDateBox } from 'devextreme-vue/date-box';
+    
+    const holidays = [
+        new Date(0, 0, 1),
+        new Date(0, 0, 20),
+        new Date(0, 1, 17),
+        new Date(0, 4, 10),
+        new Date(0, 4, 25),
+        new Date(0, 5, 21),
+        new Date(0, 6, 4),
+        new Date(0, 8, 7),
+        new Date(0, 9, 5),
+        new Date(0, 9, 12),
+        new Date(0, 10, 11),
+        new Date(0, 10, 26),
+        new Date(0, 10, 27),
+        new Date(0, 11, 24),
+        new Date(0, 11, 25),
+        new Date(0, 11, 31)
+    ]
 
     export default {
         // ...
@@ -110,7 +160,7 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
             isHoliday(date) {
                 for (let holiday of holidays) {
                     if (date.getDate() === holiday.getDate() && date.getMonth() === holiday.getMonth()) {
-                    return true;
+                        return true;
                     }          
                 }
                 return false;
@@ -128,6 +178,25 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
     import 'devextreme/dist/css/dx.light.css';
 
     import { DateBox } from 'devextreme-react/date-box';
+
+    const holidays = [
+        new Date(0, 0, 1),
+        new Date(0, 0, 20),
+        new Date(0, 1, 17),
+        new Date(0, 4, 10),
+        new Date(0, 4, 25),
+        new Date(0, 5, 21),
+        new Date(0, 6, 4),
+        new Date(0, 8, 7),
+        new Date(0, 9, 5),
+        new Date(0, 9, 12),
+        new Date(0, 10, 11),
+        new Date(0, 10, 26),
+        new Date(0, 10, 27),
+        new Date(0, 11, 24),
+        new Date(0, 11, 25),
+        new Date(0, 11, 31)
+    ];
 
     class App extends React.Component {
         // ...

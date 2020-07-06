@@ -31,7 +31,7 @@ To handle value change, implement the [onValueChanged](/Documentation/ApiReferen
     })
     export class AppComponent {
         // ...
-        onValueChanged(e){
+        onValueChanged(e) {
             console.log(e.previousValue);
             console.log(e.value);
         }

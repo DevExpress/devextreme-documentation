@@ -16,7 +16,7 @@ In the following example, the **customizeText** function is used to add incoming
             // ...
             label: {
                 customizeText: function(node) {
-                    return node.title + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", " +
+                    return node.title + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", "
                         + "out: " + node.linksOut.reduce(weightsReducer, 0) + ")";
                 }
             }
@@ -36,7 +36,7 @@ In the following example, the **customizeText** function is used to add incoming
             return accumulator + currentValue.weight;
         }
         sankey_label_customizeText(node) {
-            return node.title + " (in: " + node.linksIn.reduce(this.weightsReducer, 0) + ", " +
+            return node.title + " (in: " + node.linksIn.reduce(this.weightsReducer, 0) + ", "
                 + "out: " + node.linksOut.reduce(this.weightsReducer, 0) + ")";
         }
     }
@@ -55,6 +55,60 @@ In the following example, the **customizeText** function is used to add incoming
             </dxo-label>
         </dxi-series>
     </dx-sankey>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxLabel :customize-text="customizeText" />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxLabel } from 'devextreme-vue/sankey';
+
+    const weightsReducer = (accumulator, currentValue) => {
+        return accumulator + currentValue.weight;
+    }
+
+    export default {
+        components: {
+            DxSankey,
+            DxLabel
+        },
+        methods: {
+            customizeText(node) {
+                return `${node.title} (in: ${node.linksIn.reduce(weightsReducer, 0)}, out: ${node.linksOut.reduce(weightsReducer, 0)})`;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Label } from 'devextreme-react/sankey';
+
+    const weightsReducer = (accumulator, currentValue) => {
+        return accumulator + currentValue.weight;
+    }
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Label customizeText={this.customizeText} />
+                </Sankey>
+            )
+        }
+        customizeText(node) {
+            return `${node.title} (in: ${node.linksIn.reduce(weightsReducer, 0)}, out: ${node.linksOut.reduce(weightsReducer, 0)})`;
+        }
+    }
+
+    export default App;
 
 ---
 

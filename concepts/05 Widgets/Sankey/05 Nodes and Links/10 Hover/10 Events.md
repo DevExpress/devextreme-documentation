@@ -58,6 +58,75 @@ The **Sankey** widget raises individual events for nodes and links when their ho
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey
+            @node-hover-changed="onNodeHoverChanged"
+            @link-hover-changed="onLinkHoverChanged"
+        />
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey
+        },
+        methods: {
+            onNodeHoverChanged (e) {
+                if(e.target.isHovered()) {
+                    // Commands to execute when the pointer enters a node
+                } else {
+                    // Commands to execute when the pointer leaves a node
+                }
+            },
+            onLinkHoverChanged (e) {
+                if(e.target.isHovered()) {
+                    // Commands to execute when the pointer enters a link
+                } else {
+                    // Commands to execute when the pointer leaves a link
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey
+                    onNodeHoverChanged={this.onNodeHoverChanged}
+                    onLinkHoverChanged={this.onLinkHoverChanged}
+                />
+            );
+        }
+        onNodeHoverChanged (e) {
+            if(e.target.isHovered()) {
+                // Commands to execute when the pointer enters a node
+            } else {
+                // Commands to execute when the pointer leaves a node
+            }
+        },
+        onLinkHoverChanged (e) {
+            if(e.target.isHovered()) {
+                // Commands to execute when the pointer enters a link
+            } else {
+                // Commands to execute when the pointer leaves a link
+            }
+        }
+    }
+
+    export default App;
+
 ---
 
 If you are going to change the event handlers at runtime or if you need several handlers for a single event, subscribe to the hover-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/EventsMixin/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

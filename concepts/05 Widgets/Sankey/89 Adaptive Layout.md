@@ -34,6 +34,50 @@ The **Sankey** widget has an adaptive layout that enables the widget to hide opt
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxAdaptiveLayout
+                :height="300"
+                :width="400"
+            />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxAdaptiveLayout } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxAdaptiveLayout
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { AdaptiveLayout } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <AdaptiveLayout
+                        height={300}
+                        width={400}
+                    />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 [note]
@@ -67,6 +111,54 @@ The layout does not automatically adapt if the widget's container is resized at 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ref="sankey" />
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey
+        },
+        methods: {
+            renderSankey() {
+                this.$refs.sankey.instance.render();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.sankeyRef = React.createRef();
+        }
+        render() {
+            return (
+                <Sankey ref={this.sankeyRef} />
+            )
+        }
+        get sankey() {
+            return this.sankeyRef.current.instance;
+        }
+        renderSankey() {
+            this.sankey.render();
+        }
+    }
+
+    export default App;
 
 ---
 

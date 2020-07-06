@@ -26,6 +26,33 @@ To change a node or link's hover state, pass **true** or **false** to their [hov
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    
+    <script>
+    export default {
+        methods: {
+            toggleItemHoverState (item) {
+                item.hover(!item.isHovered());
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    class App extends React.Component {
+        toggleItemHoverState (item) {
+            item.hover(!item.isHovered());
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

@@ -36,6 +36,44 @@ All node labels are colored according to the **label**.**font**.[color](/api-ref
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxLabel :use-node-colors="true" />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxLabel } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Label } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Label useNodeColors={true} />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

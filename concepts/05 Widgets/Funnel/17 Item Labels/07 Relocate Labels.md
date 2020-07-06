@@ -35,6 +35,46 @@ Labels are arranged in a column by default. Change the **label**.[position](/api
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxLabel position="columns" />
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxLabel
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Label } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Label position="columns" />
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

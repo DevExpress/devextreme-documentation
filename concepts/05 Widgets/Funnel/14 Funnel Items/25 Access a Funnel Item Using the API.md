@@ -29,6 +29,54 @@ Call the [getAllItems()](/api-reference/20%20Data%20Visualization%20Widgets/dxFu
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ref="funnel" />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            getAllItems () {
+                return this.$refs.funnel.instance.getAllItems();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.funnelRef = React.createRef();
+        }
+        render() {
+            return (
+                <Funnel ref={this.funnelRef} />
+            );
+        }
+        get funnel() {
+            return this.funnelRef.current.instance;
+        }
+        getAllItems () {
+            return this.funnel.getAllItems();
+        }
+    }
+
+    export default App;
+
 ---
 
 You can also access a funnel item in the event handlers. For example, the [onItemClick](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/onItemClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#onItemClick') event handler gets the clicked item in the argument.
@@ -69,6 +117,49 @@ You can also access a funnel item in the event handlers. For example, the [onIte
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel @item-click="onItemClick" />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            onItemClick () {
+                let item = e.item;
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel onItemClick={this.onItemClick} />
+            );
+        }
+        onItemClick () {
+            let item = e.item;
+            // ...
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -32,6 +32,45 @@ You can use the **Funnel** widget to create a pyramid chart. Change the [algorit
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel
+            algorithm="dynamicHeight"
+            :inverted="true"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel
+                    algorithm="dynamicHeight"
+                    inverted={true}
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 

@@ -48,6 +48,63 @@ Options that configure tooltips are collected in the [tooltip](/api-reference/20
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxTooltip
+                color="yellow"
+                :customize-node-tooltip="customizeNodeTooltip"
+            />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxTooltip } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxTooltip
+        },
+        methods: {
+            // Tooltips of all nodes with outgoing weight less than 1 turn red
+            // Other tooltips remain yellow
+            customizeNodeTooltip(nodeInfo) {
+                return nodeInfo.weightOut < 1 ? { color: "red" } : { }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Tooltip } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Tooltip
+                        color="yellow"
+                        customizeNodeTooltip={this.customizeNodeTooltip}
+                    />
+                </Sankey>
+            )
+        }
+        
+        // Tooltips of all nodes with outgoing weight less than 1 turn red
+        // Other tooltips remain yellow
+        customizeNodeTooltip(nodeInfo) {
+            return nodeInfo.weightOut < 1 ? { color: "red" } : { }
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

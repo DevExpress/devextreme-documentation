@@ -39,6 +39,47 @@ When the palette does not have enough colors to paint each node differently, it 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey
+            palette-extension-mode="alternate"
+            palette="Bright" />
+            <!-- or a custom palette -->
+            <!-- :palette="['#70c92f', '#f8ca00', '#bd1550']" -->
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey
+                    paletteExtensionMode="alternate"
+                    palette="Bright" />
+                    {/* or a custom palette */}
+                    {/* palette={['#70c92f', '#f8ca00', '#bd1550']} */}
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 Links also support several [colorization modes](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/colorMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/link/#colorMode'). They can inherit the color from the source or target node or use a gradient between those two colors:
@@ -77,6 +118,44 @@ Links also support several [colorization modes](/api-reference/20%20Data%20Visua
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxLink color-mode="source" /> <!-- or "target" | "gradient" -->
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxLink } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxLink
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Link } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Link colorMode="source" {/* or "target" | "gradient" */} />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
 
 ---
 
@@ -118,6 +197,47 @@ To colorize nodes or links uniformly, specify the color using the **node**.[colo
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxNode color="blue" />
+            <DxLink color="green" />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxLink, DxNode } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxLink,
+            DxNode
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Link, Node } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Node color="blue" />
+                    <Link color="green" />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
 
 ---
 

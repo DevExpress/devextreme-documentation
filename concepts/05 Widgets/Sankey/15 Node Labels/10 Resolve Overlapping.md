@@ -35,6 +35,44 @@ Node labels can overlap when the **Sankey** contains many nodes. You can specify
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxLabel overlapping-behavior="ellipsis" <!-- or "hide" | "none" --> />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxLabel } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxLabel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Label } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Label overlappingBehavior="ellipsis" {/* or "hide" | "none" */} />
+                </Sankey>
+            )
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

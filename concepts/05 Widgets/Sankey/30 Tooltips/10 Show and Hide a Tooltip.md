@@ -23,8 +23,8 @@ Tooltips can be invoked programmatically by calling a [Node](/api-reference/20%2
 ##### Angular
 
     <!--HTML--><dx-sankey ...
-        (onItemClick)="sankey_onLinkClick($event)"
-        (onHoverChanged)="sankey_onLinkHoverChanged($event)">
+        (onLinkClick)="sankey_onLinkClick($event)"
+        (onLinkHoverChanged)="sankey_onLinkHoverChanged($event)">
         <dxo-tooltip
             [enabled]="false">
         </dxo-tooltip>
@@ -52,5 +52,73 @@ Tooltips can be invoked programmatically by calling a [Node](/api-reference/20%2
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxSankey ... >
+            <DxTooltip
+                :enabled="false"
+                @link-click="onLinkClick"
+                @link-hover-changed="onLinkHoverChanged"
+            />
+        </DxSankey>
+    </template>
+
+    <script>
+    import DxSankey, { DxTooltip } from 'devextreme-vue/sankey';
+
+    export default {
+        components: {
+            DxSankey,
+            DxTooltip
+        },
+        methods: {
+            // Shows the tooltip only when a sankey link is clicked
+            onLinkClick(e) {
+                e.target.showTooltip();
+            },
+            // Hides the tooltip when the sankey link is no longer hovered over or pressed
+            onLinkHoverChanged(e) {
+                if (!e.target.isHovered()) {
+                    e.component.hideTooltip();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Sankey, { Tooltip } from 'devextreme-react/sankey';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Sankey ... >
+                    <Tooltip
+                        enabled={false}
+                        onLinkClick={this.onLinkClick}
+                        onLinkHoverChanged={this.onLinkHoverChanged}
+                    />
+                </Sankey>
+            )
+        }
+        // Shows the tooltip only when a sankey link is clicked
+        onLinkClick(e) {
+            e.target.showTooltip();
+        },
+        // Hides the tooltip when the sankey link is no longer hovered over or pressed
+        onLinkHoverChanged(e) {
+            if (!e.target.isHovered()) {
+                e.component.hideTooltip();
+            }
+        }
+    }
+
+    export default App;
 
 ---

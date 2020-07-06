@@ -53,7 +53,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
             this.employees = service.getEmployees();
         }
         getDisplayExpr(item) {
-            return item && item.FirstName + ' ' + item.LastName
+            return item && item.FirstName + ' ' + item.LastName;
         }
     }
 
@@ -142,7 +142,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
         },
         methods: {
             getDisplayExpr(item) {
-                return item && item.FirstName + ' ' + item.LastName
+                return item && item.FirstName + ' ' + item.LastName;
             }
         }
     }
@@ -181,7 +181,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
         }
 
         getDisplayExpr(item) {
-            return item && item.FirstName + ' ' + item.LastName
+            return item && item.FirstName + ' ' + item.LastName;
         }
 
         render() {
@@ -290,7 +290,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
             });
         }
         getDisplayExpr(item) {
-            return item && item.FirstName + ' ' + item.LastName
+            return item && item.FirstName + ' ' + item.LastName;
         }
     }
 
@@ -344,7 +344,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
         },
         methods: {
             getDisplayExpr(item) {
-                return item && item.FirstName + ' ' + item.LastName
+                return item && item.FirstName + ' ' + item.LastName;
             }
         }
     }
@@ -380,7 +380,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
 
     class App extends React.Component {
         getDisplayExpr(item) {
-            return item && item.FirstName + ' ' + item.LastName
+            return item && item.FirstName + ' ' + item.LastName;
         }
         
         render() {

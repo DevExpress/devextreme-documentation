@@ -49,6 +49,67 @@ Each funnel item allows you to show its tooltip programmatically by calling the 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel
+            @item-click="onItemClick"
+            @hover-changed="onHoverChanged"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        methods: {
+            // Shows the tooltip only when a user clicks a funnel item
+            onItemClick (e) {
+                e.item.showTooltip();
+            },
+            // Hides the tooltip once the user moves the pointer away from the funnel item
+            onHoverChanged (e) {
+                if (!e.item.isHovered()) {
+                    e.component.hideTooltip();
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel
+                    onItemClick={this.onItemClick}
+                    onHoverChanged={this.onHoverChanged}
+                />
+            );
+        }
+        // Shows the tooltip only when a user clicks a funnel item
+        onItemClick (e) {
+            e.item.showTooltip();
+        },
+        // Hides the tooltip once the user moves the pointer away from the funnel item
+        onHoverChanged (e) {
+            if (!e.item.isHovered()) {
+                e.component.hideTooltip();
+            }
+        }
+    }
+
+    export default App;
+
 ---
 
 #####See Also#####

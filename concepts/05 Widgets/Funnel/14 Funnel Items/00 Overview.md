@@ -49,6 +49,64 @@ Funnel items get their colors from the [palette](/api-reference/20%20Data%20Visu
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel
+            :data-source="fruits"
+            argument-field="fruit"
+            value-field="count"
+            color-field="color"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        data() {
+            return {
+                fruits: [
+                    { fruit: "Apples", count: 10, color: "green" },
+                    { fruit: "Oranges", count: 12, color: "orange" },
+                    { fruit: "Lemons", count: 15, color: "yellow" }
+                ];   
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    const fruits = [
+        { fruit: "Apples", count: 10, color: "green" },
+        { fruit: "Oranges", count: 12, color: "orange" },
+        { fruit: "Lemons", count: 15, color: "yellow" }
+    ];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel
+                    dataSource={fruits}
+                    argumentField="fruit"
+                    valueField="count"
+                    colorField="color"
+                />
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 To configure other aspects of the funnel items' appearance, use the [item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/item '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/item/') object.
@@ -90,6 +148,52 @@ To configure other aspects of the funnel items' appearance, use the [item](/api-
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxItem>
+                <DxBorder :visible="true" />
+            </DxItem>
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxItem,
+        DxBorder
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxItem,
+            DxBorder
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Item, Border } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Item>
+                        <Border visible={true} />
+                    </Item>
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

@@ -44,6 +44,52 @@ The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Co
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel ... >
+            <DxTitle text="I am the Title">
+                <DxSubtitle text="I am the Subtitle" />
+            </DxTitle>
+        </DxFunnel>
+    </template>
+
+    <script>
+    import DxFunnel, {
+        DxTitle,
+        DxSubtitle
+    } from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel,
+            DxTitle,
+            DxSubtitle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel, { Title, Subtitle } from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel ... >
+                    <Title text="I am the Title">
+                        <Subtitle text="I am the Subtitle" />
+                    </Title>
+                </Funnel>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {
@@ -81,6 +127,39 @@ You can set the title's text more concisely by assigning it directly to the **ti
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxFunnel title="I am the Title" />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Funnel from 'devextreme-react/funnel';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Funnel title="I am the Title" />
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

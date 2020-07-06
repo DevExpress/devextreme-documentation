@@ -8,8 +8,3 @@ A shortcut listed in the accepted values. Positions the widget relative to the w
 
 - **Function**      
 A function that returns one of the above. Use it to position the widget based on a condition.
-
-#include common-ref-enum with {
-    enum: "`PositionAlignment`",
-    values: "`Bottom`, `Center`, `Left`, `LeftBottom`, `LeftTop`, `RightBottom`, `RightTop`, and `Top`"
-}

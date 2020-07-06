@@ -1,5 +1,6 @@
 package-lock.json
 node_modules/
+artifacts/
 link-transformer-resolved-links.md
 link-transformer-broken-links.md
 link-transformer-updated-links.md

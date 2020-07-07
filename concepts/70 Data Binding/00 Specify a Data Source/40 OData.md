@@ -76,7 +76,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid
+        <DxDataGrid
             :data-source="productsStore"
         />
     </template>
@@ -221,7 +221,7 @@ The following example declares an **ODataStore**, wraps it in a **DataSource**, 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid
+        <DxDataGrid
             :data-source="productsDataSource"
         />
     </template>

@@ -172,10 +172,10 @@ The following example shows a **CustomStore** that sends data processing setting
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid
+        <DxDataGrid
             :data-source="customDataSource">
-            <dx-remote-operations :group-paging="true" />
-        </dx-data-grid>
+            <DxRemoteOperations :group-paging="true" />
+        </DxDataGrid>
     </template>
 
     <script>

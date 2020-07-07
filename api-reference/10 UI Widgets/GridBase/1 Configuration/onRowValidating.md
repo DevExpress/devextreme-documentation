@@ -137,9 +137,9 @@ The following code illustrates how to validate an email address on the server an
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             @row-validating="onRowValidating">
-        </dx-{widget-name}>
+        </Dx{WidgetName}>
     </template>
 
     <script>

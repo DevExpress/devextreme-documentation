@@ -89,10 +89,10 @@ To access the server from the client, configure the [CustomStore](/api-reference
 
     <!-- tab: App.vue -->
     <template>
-        <dx-data-grid
+        <DxDataGrid
             :data-source="remoteDataSource">
-            <dx-remote-operations :group-paging="true" />
-        </dx-data-grid>
+            <DxRemoteOperations :group-paging="true" />
+        </DxDataGrid>
     </template>
 
     <script>

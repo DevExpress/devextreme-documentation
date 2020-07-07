@@ -77,7 +77,7 @@ To process data on the client, load all data from the server in the [load](/api-
 
     <!-- tab: App.vue -->
     <template>
-        <dx-list
+        <DxList
             :data-source="customDataSource"
         />
     </template>

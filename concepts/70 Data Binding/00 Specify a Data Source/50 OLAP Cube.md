@@ -83,7 +83,7 @@ Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables yo
 
     <!-- tab: App.vue -->
     <template>
-        <dx-pivot-grid
+        <DxPivotGrid
             :data-source="adventureWorksDataSource"
         />
     </template>

@@ -54,7 +54,7 @@ Use this function to make minor adjustments to automatically generated columns. 
 
     <!-- tab: App.vue -->
     <template>
-        <dx-{widget-name} ...
+        <Dx{WidgetName} ...
             :customize-columns="customizeColumns"> 
         />
     </template>

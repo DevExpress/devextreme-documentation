@@ -5,8 +5,9 @@ To define the range to choose dates from, specify the [min](/Documentation/ApiRe
 
     <!-- tab: index.js -->
     $(function() {
+        const now = new Date();
+
         $("#dateBoxContainer").dxDateBox({
-            value: now,
             max: now,
             min: new Date(1900, 0, 1),
          });
@@ -17,8 +18,7 @@ To define the range to choose dates from, specify the [min](/Documentation/ApiRe
     <!-- tab: app.component.html -->
     <dx-date-box ... 
         [min]="minDate"
-        [max]="now"
-    >
+        [max]="now">
     </dx-date-box>
 
     <!-- tab: app.component.ts -->
@@ -76,13 +76,6 @@ To define the range to choose dates from, specify the [min](/Documentation/ApiRe
     class App extends React.Component {
         minDate = new Date(1900, 0, 1);
         now = new Date();
-
-        constructor(props) {
-            super(props);
-            this.state = {
-                dateBoxValue: this.now
-            };
-        }
 
         render() {
             return (

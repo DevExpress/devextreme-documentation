@@ -7,9 +7,9 @@ To handle value change, implement the [onValueChanged](/Documentation/ApiReferen
     $(function() {
         $("#dateBoxContainer").dxDateBox({
             // ...
-            onValueChanged: function(data) {
-                console.log(data.value);
-                console.log(data.previousValue);
+            onValueChanged: function(e) {
+                console.log(e.value);
+                console.log(e.previousValue);
             },
         });
     });

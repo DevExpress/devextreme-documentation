@@ -39,14 +39,14 @@ Refer to the subtopics for details on every configuration step. You can also see
             max: now,
             min: new Date(1900, 0, 1),
             value: now,
-            onValueChanged: function(data) {
-                console.log(data.value);
-                console.log(data.previousValue);
+            onValueChanged: function(e) {
+                console.log(e.value);
+                console.log(e.previousValue);
             },
             disabledDates: function(args) {
                 const dayOfWeek = args.date.getDay();
-                const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6); 
-                return isWeekend || isHoliday(args.date);
+                const isWeekend = dayOfWeek === 0 || dayOfWeek === 6; 
+                return args.view === "month" && (isWeekend || isHoliday(args.date)); 
             }
         });
 
@@ -240,7 +240,7 @@ Refer to the subtopics for details on every configuration step. You can also see
             isHoliday(date) {
                 for (let holiday of holidays) {
                     if (date.getDate() === holiday.getDate() && date.getMonth() === holiday.getMonth()) {
-                    return true;
+                        return true;
                     }          
                 }
                 return false;

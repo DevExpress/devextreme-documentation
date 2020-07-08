@@ -53,7 +53,7 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { Service } from './app.service';
+    import { AppService } from './app.service';
 
     @Component({
         selector: 'app-root',
@@ -64,15 +64,15 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
         // ...
         holidays: Date[];
 
-        constructor(service: Service) {
+        constructor(service: AppService) {
             this.holidays = service.getHolidays();
             this.getDisabledDates = this.getDisabledDates.bind(this);
         }
 
         getDisabledDates(args): boolean {
             const dayOfWeek = args.date.getDay();
-            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
-            return isWeekend || this.isHoliday(args.date);
+            const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+            return args.view === "month" && (isWeekend || this.isHoliday(args.date));
         }
 
         isHoliday(date): boolean {
@@ -154,8 +154,8 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
         methods: {
             getDisabledDates(args) {
                 const dayOfWeek = args.date.getDay();
-                const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
-                return isWeekend || this.isHoliday(args.date);
+                const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+                return args.view === "month" && (isWeekend || this.isHoliday(args.date));
             },
             isHoliday(date) {
                 for (let holiday of holidays) {
@@ -208,8 +208,8 @@ To prevent users from setting specific dates, use the [disabledDates](/Documenta
 
         getDisabledDates(args) {
             const dayOfWeek = args.date.getDay();
-            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
-            return isWeekend || this.isHoliday(args.date);
+            const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+            return args.view === "month" && (isWeekend || this.isHoliday(args.date));
         }
 
         isHoliday(date) {

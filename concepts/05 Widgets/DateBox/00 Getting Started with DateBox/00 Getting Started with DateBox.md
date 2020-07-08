@@ -89,7 +89,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { Service } from './app.service';
+    import { AppService  } from './app.service';
 
     @Component({
         selector: 'app-root',
@@ -102,7 +102,7 @@ Refer to the subtopics for details on every configuration step. You can also see
         now: Date = new Date();
         minDate: Date = new Date(1900, 0, 1);
 
-        constructor(service: Service) {
+        constructor(service: AppService) {
             this.holidays = service.getHolidays();
             this.getDisabledDates = this.getDisabledDates.bind(this);
         }
@@ -114,8 +114,8 @@ Refer to the subtopics for details on every configuration step. You can also see
 
         getDisabledDates(args): boolean {
             const dayOfWeek = args.date.getDay();
-            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
-            return isWeekend || this.isHoliday(args.date);
+            const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+            return args.view === "month" && (isWeekend || this.isHoliday(args.date));
         }
 
         isHoliday(date): boolean {
@@ -234,8 +234,8 @@ Refer to the subtopics for details on every configuration step. You can also see
             },
             getDisabledDates(args) {
                 const dayOfWeek = args.date.getDay();
-                const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
-                return isWeekend || this.isHoliday(args.date);
+                const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+                return args.view === "month" && (isWeekend || this.isHoliday(args.date));
             },
             isHoliday(date) {
                 for (let holiday of holidays) {
@@ -293,8 +293,8 @@ Refer to the subtopics for details on every configuration step. You can also see
 
         getDisabledDates(args) {
             const dayOfWeek = args.date.getDay();
-            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
-            return isWeekend || this.isHoliday(args.date);
+            const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+            return args.view === "month" && (isWeekend || this.isHoliday(args.date));
         }
 
         isHoliday(date) {

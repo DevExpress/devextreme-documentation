@@ -1,5 +1,5 @@
 ---
 id: dxElement
-type: Node | jQuery
+type: HTMLElement | jQuery
 hidden: 
 ---

@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a custom template for shapes.
 
-##### param(container): dxElement
+##### param(container): dxSVGElement
 #include common-ref-elementparam with { element: "shape" }
 
 ##### param(data): Object

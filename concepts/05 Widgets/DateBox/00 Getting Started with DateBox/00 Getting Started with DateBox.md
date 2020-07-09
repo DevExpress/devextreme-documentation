@@ -1,13 +1,13 @@
 #include tutorials-intro-installationnote
 
-**DateBox** is a widget that allows users to set a certain date, time, or their combination.
+**DateBox** is a widget that allows users to set a certain date, time, or date/time combination.
 
-This tutorial shows how to configure basic **DateBox** features. The created widget allows setting the date and time from the allowed date range, logs the set value to console, and prevents users from specifying the US bank holidays and weekend days.
+This tutorial shows how to configure basic **DateBox** features. The newly created widget allows users to set the date and time from a specific date range, logs this value to the console, and prevents users from specifying weekends and US bank holidays.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/GettingStartedWith/DateBox/index.html, /Content/Applications/20_1/GettingStartedWith/DateBox/index.js, /Content/Applications/20_1/GettingStartedWith/DateBox/index.css"></div>
 
 
-Refer to the subtopics for details on every configuration step. You can also see the full code below or download it from <a href="https://github.com/DevExpress-Examples/getting-started-with-datebox" target="_blank">this GitHub repository</a>:
+Refer to the subtopics for details on each configuration step. You can also see the full code below or download it from the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-datebox" target="_blank">getting-started-with-datebox</a>:
 
 ---
 ##### jQuery

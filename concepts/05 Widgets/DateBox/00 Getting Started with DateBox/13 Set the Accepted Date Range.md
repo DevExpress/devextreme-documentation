@@ -1,4 +1,4 @@
-To define the range to choose dates from, specify the [min](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#max) options:
+To define the range from which users can select dates, specify the [min](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#max) options:
 
 ---
 ##### jQuery
@@ -90,4 +90,4 @@ To define the range to choose dates from, specify the [min](/Documentation/ApiRe
 
 ---
 
-Run the code and make sure the only available dates are between 1 Jan 1900 and today. Next, we will set the widget's initial value.
+Run the code and ensure that the only available dates are between 1 Jan 1900 and today. Next, we will set the widget's initial value.

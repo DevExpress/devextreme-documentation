@@ -110,4 +110,4 @@ Use the following code to create a basic **DateBox**:
 
 ---
 
-If you run this code, you should see the **DateBox** that allows users to set date only. We will let users set time in the next step.
+If you run this code, you will that see the **DateBox** that allows users to set the date only. Users will be allowed to set the time in the next step.

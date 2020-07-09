@@ -1,4 +1,4 @@
-To allow users to specify the date and time, set the [type](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#type) to *"datetime"*. This will implicitly set [applyValueMode](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#applyValueMode) to *"useButtons"*, i.e. a user has to press OK to submit their choice. 
+To allow users to specify the date and time, set the [type](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#type) to *"datetime"*. This will implicitly set [applyValueMode](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#applyValueMode) to *"useButtons"* (i.e., a user must press OK to submit their choices). 
 
 ---
 ##### jQuery

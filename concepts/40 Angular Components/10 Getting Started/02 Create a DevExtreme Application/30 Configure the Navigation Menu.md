@@ -2,7 +2,7 @@ Edit the `src\app\app-navigation.ts` file to configure navigation menu items. Ea
 
 - **text** - the item's text
 
-- **icon** - the item's icon
+- **icon** - the item's [icon](/Documentation/Guide/Themes_and_Styles/Icons/)
 
 - **path** - a navigation path associated with the item
 

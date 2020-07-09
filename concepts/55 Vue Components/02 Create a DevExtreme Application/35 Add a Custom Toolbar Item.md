@@ -1,0 +1,57 @@
+The application template uses the DevExtreme [Toolbar](/Documentation/ApiReference/UI_Widgets/dxToolbar/) component. The **Toolbar** is part of the `HeaderToolbar` component whose configuration you can find in the `src\components\header-toolbar.vue` file. To add a custom toolbar item, open this file and add a `DxItem` element to the inside of `DxToolbar`. Refer to the [items](/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/) help section for information on `DxItem` attributes.
+
+The following code adds a search button to the toolbar:
+
+    <!-- tab: header-toolbar.vue -->
+    <template>
+        <header class="header-component">
+            <DxToolbar class="header-toolbar">
+                <!-- ... -->
+                <DxItem
+                    location="after">
+                    <template #default>
+                        <DxButton
+                            icon="search"
+                            @click="searchFunc"
+                        />
+                    </template>
+                </DxItem>
+                <!-- ... --->
+            </DxToolbar>
+        </header>
+    </template>
+    <script>
+    // ...
+    export default {
+        props: {
+            // ...
+            searchFunc: Function
+        },
+        // ...
+    };
+    </script>
+
+    <!-- tab: side-nav-outer-toolbar.vue -->
+    <template>
+        <div class="side-nav-outer-toolbar">
+            <header-toolbar ...
+                :search-func="search"
+            />
+            <!-- ... -->
+        </div>
+    </template>
+    <script>
+    // ...
+    export default {
+        // ...
+        methods: {
+            // ...
+            search() {
+                console.log("search");
+            }
+        },
+        // ...
+    };
+    </script>
+
+In the code above, the button click handler is declared in the `SideNavOuterToolbar` component. This component applies when the outer toolbar [layout](/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/#Layouts) is used. If the application uses the inner toolbar layout, add the same code to the `SideNavInnerToolbar` component.

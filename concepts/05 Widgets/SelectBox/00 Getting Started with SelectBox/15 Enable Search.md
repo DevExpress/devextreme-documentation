@@ -10,7 +10,7 @@ To allow users to search through **SelectBox** values, set [searchEnabled](/Docu
 
             $("#selectBox").dxSelectBox({
                 // ...
-                searchEnabled: "true"
+                searchEnabled: true
             });
         });
     });
@@ -19,7 +19,7 @@ To allow users to search through **SelectBox** values, set [searchEnabled](/Docu
 
     <!-- tab: app.component.html -->
     <dx-select-box ...
-        searchEnabled="true"
+        [searchEnabled]="true"
     >
     </dx-select-box>
 
@@ -39,12 +39,6 @@ To allow users to search through **SelectBox** values, set [searchEnabled](/Docu
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import { SelectBox } from 'devextreme-react/select-box';
-    import DataSource from 'devextreme/data/data_source';
-
     // ...
 
     class App extends React.Component {

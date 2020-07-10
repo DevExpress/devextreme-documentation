@@ -1,4 +1,4 @@
-Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged) function to handle the **SelectBox**'s value change. In this tutorial, the **onValueChanged** function logs the chosen value's *ID* and *Name*.
+Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged) function to handle the **SelectBox**'s value change. In this tutorial, the **onValueChanged** function logs the chosen item's `ID` and `Name`.
 
 ---
 ##### jQuery
@@ -25,8 +25,7 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBo
     </dx-select-box>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    import {Service} from './app.service';
+    // ...
 
     @Component({
         selector: 'app-root',
@@ -36,7 +35,7 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBo
     export class AppComponent {
         // ...
 
-        onValueChanged(e){
+        onValueChanged(e) {
             const item = this.data.filter(i => i.ID === e.value)[0];
             console.log(item.ID + ": " + item.Name);
         }
@@ -52,16 +51,12 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import { DxSelectBox } from 'devextreme-vue/select-box';
-
     // ...
 
     export default {
         // ...
         methods: {
-            onValueChanged(e){
+            onValueChanged(e) {
                 const item = data.filter(i => i.ID === e.value)[0];
                 console.log(item.ID + ": " + item.Name);
             }
@@ -73,15 +68,10 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBo
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import { SelectBox } from 'devextreme-react/select-box';
-
     // ...
 
     class App extends React.Component {
-        onValueChanged(e){
+        onValueChanged(e) {
             const item = data.filter(i => i.ID === e.value)[0];
             console.log(item.ID + ": " + item.Name);
         }
@@ -98,4 +88,4 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBo
 
 ---
 
-Next, we will group the **SelectBox** items.
+Next, we will group the drop-down items.

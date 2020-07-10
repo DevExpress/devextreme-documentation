@@ -1,4 +1,4 @@
-To bind the **SelectBox** to data, set the [dataSource]() and the fields that provide the widget's value ([valueExpr]()) and displayed value ([displayExpr]()). In this tutorial, the **SelectBox** is bound to a local array.
+To bind the **SelectBox** to data, set the [dataSource](/Documentation/ApiReference/UI_Widgets/dxAccordion/Configuration/#dataSource) and the fields that provide the widget's value ([valueExpr](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#valueExpr)) and displayed value ([displayExpr](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#displayExpr)). In this tutorial, the **SelectBox** is bound to a local array.
 
 ---
 ##### jQuery
@@ -111,7 +111,7 @@ To bind the **SelectBox** to data, set the [dataSource]() and the fields that pr
 
     @Injectable()
     export class AppService {
-        getItems(): Item[]{
+        getItems(): Item[] {
             return items;
         }
     }
@@ -128,9 +128,7 @@ To bind the **SelectBox** to data, set the [dataSource]() and the fields that pr
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import { DxSelectBox } from 'devextreme-vue';
+    // ...
     import { data } from './data';
 
     export default {
@@ -171,10 +169,7 @@ To bind the **SelectBox** to data, set the [dataSource]() and the fields that pr
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import { SelectBox } from 'devextreme-react/select-box';
+    // ...
     import { data } from './data';
 
     class App extends React.Component {
@@ -217,4 +212,4 @@ To bind the **SelectBox** to data, set the [dataSource]() and the fields that pr
 
 ---
 
-When you run this code and open the **SelectBox**, you should see that the drop-down list is populated. Next, we will enable search.
+If you run this code and open the **SelectBox**, you will see the the populated drop-down list. Next, we will enable search.

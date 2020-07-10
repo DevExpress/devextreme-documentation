@@ -1,8 +1,6 @@
-The **SelectBox** can display data grouped by category. To make this possible, use the [DataSource]() component. Its API allows you to [sort](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort), [filter](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter), [select](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select), and [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) data. At its core, the **DataSource** has a [store](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/) - an object that keeps data and provides an API to access and modify it. To configure the store, use the **DataSource**'s [store]() object. Specify its [type]() as *"array"*, pass the initial data array to the [data]() field, and set the [key] field. 
+The **SelectBox** can display data grouped by category. To implement this, we will use the data from the previous steps with the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) component. Its API allows you to sort, filter, select, and group data. At its core, the **DataSource** has a [store](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/) - an object that keeps data and provides an API to access and modify it. To configure the store, use the **DataSource**'s [store](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/) object. Specify its [type](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/#type) as *"array"*, pass the initial data array to the [data](/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#data) field, and set the [key](/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key) field. 
 
 To group data, specify the data field to group by in the **DataSource**'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) option and set the **SelectBox**'s [grouped](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#grouped) option to **true**.
-
-
 
 ---
 ##### jQuery
@@ -32,7 +30,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
                 Category: 'Fruits',
             }]
 
-            var dataSource = new DevExpress.data.DataSource({
+            const dataSource = new DevExpress.data.DataSource({
                 store: data,
                 type: 'array',
                 key: "ID",
@@ -40,9 +38,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
             });
 
             $("#selectBox").dxSelectBox({
-                dataSource: dataSource,
-                displayExpr: "Name",
-                searchEnabled: "true",
+                // ...
                 onValueChanged: function(e) {
                     if (e.previousValue !== null) {
                         console.log(e.previousValue.Name);
@@ -58,17 +54,13 @@ To group data, specify the data field to group by in the **DataSource**'s [group
 
     <!-- tab: app.component.html -->
     <dx-select-box
-        [dataSource]="dataSource"
-        displayExpr="Name"
-        searchEnabled="true"
-        (onValueChanged)="onValueChanged($event)"
-        grouped="true">
+        // ...
+        [grouped]="true">
     </dx-select-box>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    // ...
     import DataSource from 'devextreme/data/data_source';
-    import { AppService, Item } from './app.service';
 
     @Component({
         selector: 'app-root',
@@ -91,7 +83,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
             });
         }
 
-        onValueChanged(e){
+        onValueChanged(e) {
             if (e.previousValue !== null) {
                 console.log(e.previousValue.Name);
             }
@@ -104,20 +96,15 @@ To group data, specify the data field to group by in the **DataSource**'s [group
     <!-- tab: App.vue -->
     <template>
         <DxSelectBox
-            :data-source="dataSource"
-            display-expr="Name"
-            :search-enabled="true"
+            // ...
             @value-changed="onValueChange"
             :grouped="true"
         />
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import { DxSelectBox } from 'devextreme-vue';
+    // ...
     import DataSource from 'devextreme/data/data_source';
-    import { data } from './data';
 
     export default {
         components: {
@@ -136,7 +123,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
             }
         },
         methods: {
-            onValueChange(e){
+            onValueChange(e) {
                 if (e.previousValue) { 
                     console.log(e.previousValue.Name); 
                 }
@@ -149,12 +136,8 @@ To group data, specify the data field to group by in the **DataSource**'s [group
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import { SelectBox } from 'devextreme-react/select-box';
+    // ...
     import DataSource from 'devextreme/data/data_source';
-    import { data } from './data';
 
     const dataSource = new DataSource({
         store: {
@@ -176,9 +159,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
         render() {
             return (
                 <SelectBox
-                    dataSource={dataSource}
-                    displayExpr="Name"
-                    searchEnabled={true}
+                    // ...
                     onValueChanged={this.onValueChanged}
                     grouped={true}
                 />
@@ -192,7 +173,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
     
 ---
 
-If your data is already grouped, ensure each group has the **key** and **items** fields as shown in [this article](/Documentation/Guide/Widgets/SelectBox/Grouping/In_the_Data_Source/). If the fields are named differently, implement the **DataSource**'s [map]() function to create **key** + **items** field mappings.
+If the data is already grouped, each group must have the **key** and **items** or custom fields. In the latter case the **DataSource**'s [map](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map) function must be implemented to create **key** + **items** field mappings.
 
 Run the code and ensure the widget's data is grouped.
 

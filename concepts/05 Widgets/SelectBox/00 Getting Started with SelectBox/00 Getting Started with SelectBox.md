@@ -36,7 +36,7 @@ Refer to the subtopics for details on every configuration step. You can also see
                 Category: 'Fruits',
             }]
 
-            var dataSource = new DevExpress.data.DataSource({
+            const dataSource = new DevExpress.data.DataSource({
                 store: data,
                 type: 'array',
                 key: "ID",
@@ -47,7 +47,7 @@ Refer to the subtopics for details on every configuration step. You can also see
                 dataSource: dataSource,
                 valueExpr: "ID",
                 displayExpr: "Name",
-                searchEnabled: "true",
+                searchEnabled: true,
                 onValueChanged: function(e) {
                     const item = data.filter(i => i.ID === e.value)[0];
                     console.log(item.ID + ": " + item.Name);
@@ -80,9 +80,9 @@ Refer to the subtopics for details on every configuration step. You can also see
         [dataSource]="dataSource"
         valueExpr="ID"
         displayExpr="Name"
-        searchEnabled="true"
+        [searchEnabled]="true"
         (onValueChanged)="onValueChanged($event)"
-        grouped="true">
+        [grouped]="true">
     </dx-select-box>
 
     <!-- tab: app.component.ts -->
@@ -111,7 +111,7 @@ Refer to the subtopics for details on every configuration step. You can also see
             });
         }
 
-        onValueChanged(e){
+        onValueChanged(e) {
             const item = this.data.filter(i => i.ID === e.value)[0];
             console.log(item.ID + ": " + item.Name);
         }
@@ -150,7 +150,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     @Injectable()
     export class AppService {
-        getItems(): Item[]{
+        getItems(): Item[] {
             return items;
         }
     }
@@ -193,7 +193,7 @@ Refer to the subtopics for details on every configuration step. You can also see
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
-    import { DxSelectBox } from 'devextreme-vue';
+    import { DxSelectBox } from 'devextreme-vue/select-box';
     import DataSource from 'devextreme/data/data_source';
     import { data } from './data';
 
@@ -214,7 +214,7 @@ Refer to the subtopics for details on every configuration step. You can also see
             }
         },
         methods: {
-            onValueChange(e){
+            onValueChange(e) {
                 const item = data.filter(i => i.ID === e.value)[0];
                 console.log(item.ID + ": " + item.Name);
             }

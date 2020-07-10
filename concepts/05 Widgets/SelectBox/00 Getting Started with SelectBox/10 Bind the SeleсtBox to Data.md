@@ -5,52 +5,34 @@ To bind the **SelectBox** to data, set the [dataSource](/Documentation/ApiRefere
 
     <!-- tab: index.js -->
     $(function() {
-        $("#selectBox").dxSelectBox({
-            const data = [{
-                ID: 1,
-                Name: 'Banana',
-                Category: 'Fruits'
-            }, {
-                ID: 2,
-                Name: 'Cucumber',
-                Category: 'Vegetables'
-            }, {
-                ID: 3,
-                Name: 'Apple',
-                Category: 'Fruits'
-            }, {
-                ID: 4,
-                Name: 'Tomato',
-                Category: 'Vegetables'
-            }, {
-                ID: 5,
-                Name: 'Apricot',
-                Category: 'Fruits'
-            }]
+        const data = [{
+            ID: 1,
+            Name: 'Banana',
+            Category: 'Fruits'
+        }, {
+            ID: 2,
+            Name: 'Cucumber',
+            Category: 'Vegetables'
+        }, {
+            ID: 3,
+            Name: 'Apple',
+            Category: 'Fruits'
+        }, {
+            ID: 4,
+            Name: 'Tomato',
+            Category: 'Vegetables'
+        }, {
+            ID: 5,
+            Name: 'Apricot',
+            Category: 'Fruits'
+        }]
 
-            $("#selectBox").dxSelectBox({
-                dataSource: data,
-                valueExpr: "ID",
-                displayExpr: "Name"
-            });
+        $("#selectBox").dxSelectBox({
+            dataSource: data,
+            valueExpr: "ID",
+            displayExpr: "Name"
         });
     });
-
-    <!-- tab: index.html -->
-    <html>
-        <head>
-            <!-- ... -->
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.4/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.4/css/dx.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.1.4/js/dx.all.js"></script>
-            <script type="text/javascript" src="index.js"></script>
-        </head>
-        <body>
-            <div id="selectBox"></div>
-        </body>
-    </html>
-
 
 ##### Angular
 
@@ -65,11 +47,7 @@ To bind the **SelectBox** to data, set the [dataSource](/Documentation/ApiRefere
     import { Component } from '@angular/core';
     import { AppService, Item } from './app.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         data: Item[];
 

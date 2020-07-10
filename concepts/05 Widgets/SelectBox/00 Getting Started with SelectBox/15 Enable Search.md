@@ -5,22 +5,19 @@ To allow users to search through **SelectBox** values, set [searchEnabled](/Docu
 
     <!-- tab: index.js -->
     $(function() {
-        $("#selectBox").dxSelectBox({
             // ...
 
             $("#selectBox").dxSelectBox({
                 // ...
                 searchEnabled: true
             });
-        });
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
     <dx-select-box ...
-        [searchEnabled]="true"
-    >
+        [searchEnabled]="true">
     </dx-select-box>
 
 ##### Vue

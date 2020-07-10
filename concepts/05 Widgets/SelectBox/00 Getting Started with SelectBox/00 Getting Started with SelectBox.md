@@ -13,47 +13,45 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: index.js -->
     $(function() {
+        const data = [{
+            ID: 1,
+            Name: 'Banana',
+            Category: 'Fruits',
+        }, {
+            ID: 2,
+            Name: 'Cucumber',
+            Category: 'Vegetables',
+        }, {
+            ID: 3,
+            Name: 'Apple',
+            Category: 'Fruits',
+        }, {
+            ID: 4,
+            Name: 'Tomato',
+            Category: 'Vegetables',
+        }, {
+            ID: 5,
+            Name: 'Apricot',
+            Category: 'Fruits',
+        }]
+
+        const dataSource = new DevExpress.data.DataSource({
+            store: data,
+            type: 'array',
+            key: "ID",
+            group: "Category"
+        });
+
         $("#selectBox").dxSelectBox({
-            const data = [{
-                ID: 1,
-                Name: 'Banana',
-                Category: 'Fruits',
-            }, {
-                ID: 2,
-                Name: 'Cucumber',
-                Category: 'Vegetables',
-            }, {
-                ID: 3,
-                Name: 'Apple',
-                Category: 'Fruits',
-            }, {
-                ID: 4,
-                Name: 'Tomato',
-                Category: 'Vegetables',
-            }, {
-                ID: 5,
-                Name: 'Apricot',
-                Category: 'Fruits',
-            }]
-
-            const dataSource = new DevExpress.data.DataSource({
-                store: data,
-                type: 'array',
-                key: "ID",
-                group: "Category"
-            });
-
-            $("#selectBox").dxSelectBox({
-                dataSource: dataSource,
-                valueExpr: "ID",
-                displayExpr: "Name",
-                searchEnabled: true,
-                onValueChanged: function(e) {
-                    const item = data.filter(i => i.ID === e.value)[0];
-                    console.log(item.ID + ": " + item.Name);
-                },
-                grouped: true
-            });
+            dataSource: dataSource,
+            valueExpr: "ID",
+            displayExpr: "Name",
+            searchEnabled: true,
+            onValueChanged: function(e) {
+                const item = data.filter(i => i.ID === e.value)[0];
+                console.log(item.ID + ": " + item.Name);
+            },
+            grouped: true
         });
     });
 
@@ -160,7 +158,6 @@ Refer to the subtopics for details on every configuration step. You can also see
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
-
     import { DxSelectBoxModule } from 'devextreme-angular';
 
     @NgModule({
@@ -262,7 +259,7 @@ Refer to the subtopics for details on every configuration step. You can also see
             key: 'ID'
         },
         group: "Category"
-    })
+    });
 
     class App extends React.Component {
         onValueChanged(e) {
@@ -280,7 +277,6 @@ Refer to the subtopics for details on every configuration step. You can also see
                     onValueChanged={this.onValueChanged}
                     grouped={true}
                 />
-
             );        
         }
 

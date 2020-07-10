@@ -128,7 +128,6 @@ To group data, specify the data field to group by in the **DataSource**'s [group
                 <SelectBox ...
                     grouped={true}
                 />
-
             );        
         }
 

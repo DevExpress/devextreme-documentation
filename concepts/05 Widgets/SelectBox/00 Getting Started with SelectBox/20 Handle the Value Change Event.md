@@ -1,4 +1,4 @@
-Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged) function to handle the **SelectBox**'s value change. In this tutorial, the **onValueChanged** function logs the chosen value's `ID` and `Name`.
+Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged) function to perform an action when a user selects an item. In the code below, this function logs the selected item's `ID` and `Name`.
 
 ---
 ##### jQuery
@@ -22,8 +22,6 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Widgets/dxSelectBo
     </dx-select-box>
 
     <!-- tab: app.component.ts -->
-    // ...
-
     // ...
     export class AppComponent {
         // ...

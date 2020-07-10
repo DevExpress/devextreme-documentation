@@ -8,7 +8,7 @@ default: ''
 Formats a value before it is displayed.
 
 ---
-This option also controls the user input in cells that use the [DateBox](/concepts/05%20Widgets/DateBox/00%20Overview.md '/Documentation/Guide/Widgets/DateBox/Overview/') widget for editing. For cells that use other widgets, you can specify the [editorOptions](/api-reference/_hidden/dxFilterBuilderField/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#editorOptions').**format** option.
+This option also controls the user input in cells that use the [DateBox](/Documentation/ApiReference/UI_Widgets/dxDateBox/) widget for editing. For cells that use other widgets, you can specify the [editorOptions](/api-reference/_hidden/dxFilterBuilderField/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#editorOptions').**format** option.
 
 ---
 #####jQuery

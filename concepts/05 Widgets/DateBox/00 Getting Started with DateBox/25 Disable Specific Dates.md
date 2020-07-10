@@ -1,4 +1,4 @@
-To prevent users from setting specific dates, use the [disabledDates](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#disabledDates) option. It can be set to a function or an array of Date values. In this tutorial, we implement a function that disables weekends and US bank holidays.
+To prevent users from setting specific dates, use the [disabledDates](/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#disabledDates) option. It can be set to a function or an array of Date values. In this tutorial, we implement a function that disables weekend days (Saturday and Sunday) and US bank holidays.
 
 ---
 ##### jQuery

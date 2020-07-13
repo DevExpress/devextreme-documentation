@@ -30,43 +30,67 @@ The form's instance; created only once - when the function is executed for the f
 Model data. Available only if you use Knockout.
 
 ##### field(e.popup): dxPopup
-<!-- Description goes here -->
+The instance of the popup that contains the form.
 
 ---
-The appointment details form contains the [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') widget whose instance is passed to this function in the **form** field. Use the [widget's API](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/') to customize the appointment details form.
+The appointment details form contains the [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') widget whose instance is passed to this function in the **form** field. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/) to customize the appointment details form. 
 
-The following code shows how to use the **onAppointmentFormOpening** function to customize an existing form item (`startDate`) and add a new form item (`location`). Note that in the latter case, the array of [form items](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field.
+The form items are organized into two groups:
+
+<table class="dx-table">
+    <tr>
+        <th>Group name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>mainGroup</td>
+        <td>Contains form fields that define appointment's main parameters (subject, start and end dates, etc.).</td>
+    </tr>
+    <tr>
+        <td>recurrenceGroup</td>
+        <td>Contains form fields that define appointment's recurrence parameters.</td>
+    </tr> 
+</table>
+
+You can add a custom item to any group or create an ungrouped item and display it under the groups, as shown in the following image:
+
+![DevExtreme Scheduler onAppointmentFormOpening](/images/UiWidgets/Scheduler_onAppointmentFormOpening.png)
+
+The code below adds a new form item (`author`) to the `mainGroup` and creates an ungrouped item (`checkList`). The `mainGroup` consists of two columns. To make a  custom item span them both, set its [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) to 2. Apply the same setting to an ungrouped item if it should span the `mainGroupd` and `recurrenceGroup`. Note that the array of [form items](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field. 
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->
-    $(function(){
+    <!-- tab: index.js -->
+    $(function() {
         $("#schedulerContainer").dxScheduler({
             dataSource: [{
-                text: "His Girl Friday",
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20),
-                location: "Minnesota"
-            }, // ...
-            ],
-            currentDate: new Date(2016, 4, 24),
-            onAppointmentFormOpening: function (e) {
-                var form = e.form,
-                    formItems = form.option("items");
-                form.itemOption("startDate", {
-                    helpText: "Select a date between May 11 and 27",
-                    editorOptions: {
-                        min: new Date(2016, 4, 11),
-                        max: new Date(2016, 4, 27),
-                        type: 'datetime'
-                    }
-                });
-                if (!formItems.find(function(i) { return i.dataField === "location" })) {
-                    formItems.push({
-                        label: { text: "Location" },
+                text: "Start the project",
+                startDate: new Date(2020, 4, 24, 9, 10),
+                endDate: new Date(2020, 4, 24, 11, 20),
+            }],
+            currentDate: new Date(2020, 4, 24),
+
+            onAppointmentFormOpening: function(e) {
+                let form = e.form;
+                let mainGroupItems = form.itemOption('mainGroup').items; 
+                if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+                    mainGroupItems.push({
+                        colSpan: 2,
+                        label: { text: "Author" },
                         editorType: "dxTextBox",
-                        dataField: "location"
+                        dataField: "author"
+                    });
+                    form.itemOption('mainGroup', 'items', mainGroupItems);
+                }
+        
+                let formItems = form.option("items"); 
+                if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+                    formItems.push({
+                        colSpan: 2, 
+                        label: { text: "Check List" },
+                        editorType: "dxTextBox",
+                        dataField: "checkList"
                     });
                     form.option("items", formItems);
                 }
@@ -74,36 +98,46 @@ The following code shows how to use the **onAppointmentFormOpening** function to
         });
     });
 
-#####Angular
+##### Angular
 
-    <!--TypeScript-->
+    <!-- tab: app.component.html -->
+    <dx-scheduler
+        [dataSource]="schedulerData"
+        [currentDate]="currentDate"
+        (onAppointmentFormOpening)="onAppointmentFormOpening($event)">
+    </dx-scheduler>
+
+    <!-- tab: app.component.ts -->
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         schedulerData = [{
-            text: "His Girl Friday",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20),
-            location: "Minnesota"
-        }, // ...
-        ];
-        currentDate = new Date(2016, 4, 24);
-        onAppointmentFormOpening (e) {
-            let form = e.form
-                formItems = form.option("items");
-            form.itemOption("startDate", {
-                helpText: "Select a date between May 11 and 27",
-                editorOptions: {
-                    min: new Date(2016, 4, 11),
-                    max: new Date(2016, 4, 27),
-                    type: 'datetime'
-                }
-            });
-            if (!formItems.find(i => i.dataField === "location")) {
-                formItems.push({
-                    label: { text: "Location" },
+            text: "Start the project",
+            startDate: new Date(2020, 4, 24, 9, 10),
+            endDate: new Date(2020, 4, 24, 11, 20),
+        }];
+        currentDate = new Date(2020, 4, 24);
+        
+        onAppointmentFormOpening(e) {
+            let form = e.form;
+            let mainGroupItems = form.itemOption('mainGroup').items; 
+            if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+                mainGroupItems.push({
+                    colSpan: 2,
+                    label: { text: "Author" },
                     editorType: "dxTextBox",
-                    dataField: "location"
+                    dataField: "author"
+                });
+                form.itemOption('mainGroup', 'items', mainGroupItems);
+            }
+    
+            let formItems = form.option("items"); 
+            if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+                formItems.push({
+                    colSpan: 2, 
+                    label: { text: "Check List" },
+                    editorType: "dxTextBox",
+                    dataField: "checkList"
                 });
                 form.option("items", formItems);
             }
@@ -117,12 +151,116 @@ The following code shows how to use the **onAppointmentFormOpening** function to
         // ...
     })
 
-    <!--HTML-->
-    <dx-scheduler 
-        [dataSource]="schedulerData"
-        [currentDate]="currentDate"
-        (onAppointmentFormOpening)="onAppointmentFormOpening($event)">
-    </dx-scheduler>
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler
+            :dataSource="schedulerData"
+            :currentDate="currentDate"
+            :on-appointment-form-opening="onAppointmentFormOpening">
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxScheduler from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler,
+        },
+        data() {
+            return {
+                schedulerData: [{
+                    text: "Start the project",
+                    startDate: new Date(2020, 4, 24, 9, 10),
+                    endDate: new Date(2020, 4, 24, 11, 20),
+                }],
+                currentDate: new Date(2020, 4, 24)
+            }
+        },
+        methods: {
+            onAppointmentFormOpening(e) {
+                let form = e.form;
+                let mainGroupItems = form.itemOption('mainGroup').items; 
+                if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+                    mainGroupItems.push({
+                        colSpan: 2,
+                        label: { text: "Author" },
+                        editorType: "dxTextBox",
+                        dataField: "author"
+                    });
+                    form.itemOption('mainGroup', 'items', mainGroupItems);
+                }
+        
+                let formItems = form.option("items"); 
+                if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+                    formItems.push({
+                        colSpan: 2, 
+                        label: { text: "Check List" },
+                        editorType: "dxTextBox",
+                        dataField: "checkList"
+                    });
+                    form.option("items", formItems);
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    class App extends React.Component {
+        currentDate = new Date(2020, 4, 24);
+        
+        onAppointmentFormOpening(e) {
+            let form = e.form;
+            let mainGroupItems = form.itemOption('mainGroup').items;
+            if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+                mainGroupItems.push({
+                    colSpan: 2,
+                    label: { text: "Author" },
+                    editorType: "dxTextBox",
+                    dataField: "author"
+                });
+                form.itemOption('mainGroup', 'items', mainGroupItems);
+            }
+    
+            let formItems = form.option("items"); 
+            if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+                formItems.push({
+                    colSpan: 2, 
+                    label: { text: "Check List" },
+                    editorType: "dxTextBox",
+                    dataField: "checkList"
+                });
+                form.option("items", formItems);
+            }
+        }
+
+        render() {
+            return (
+                <Scheduler 
+                    // dataSource={this.dataSource}
+                    dataSource={dataSource}
+                    currentDate={this.currentDate}
+                    onAppointmentFormOpening={this.onAppointmentFormOpening}
+                />
+            );
+        }
+    }
+    export default App;
 
 ---
 

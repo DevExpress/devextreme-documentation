@@ -115,12 +115,12 @@ Do not specify the **onValueChanged** option in this object. If you need to add 
             // ...
             onEditorPreparing: function(e) {
                 if (e.dataField == "requiredDataField") {
-                    var standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function(e) { // Overriding the standard handler
+                    const defaultHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function(args) { // Overriding the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calling the standard handler to save the edited value
+                        defaultHandler(args); // Calling the default handler to save the edited value
                     }
                 }
             }
@@ -135,12 +135,12 @@ Do not specify the **onValueChanged** option in this object. If you need to add 
     export class AppComponent {
         onEditorPreparing (e) {
             if (e.dataField == "requiredDataField") {
-                let standardHandler = e.editorOptions.onValueChanged;
-                e.editorOptions.onValueChanged = function (e) { // Overriding the standard handler
+                const defaultHandler = e.editorOptions.onValueChanged;
+                e.editorOptions.onValueChanged = function (args) { // Overriding the default handler
                     // ...
                     // Custom commands go here
                     // ...
-                    standardHandler(e); // Calling the standard handler to save the edited value
+                    defaultHandler(args); // Calling the default handler to save the edited value
                 }
             }
         }

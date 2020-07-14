@@ -79,12 +79,12 @@ Use this function to:
                 // ...
                 onEditorPreparing: function(e) {
                     if (e.dataField === "requiredDataField" && e.parentType === "dataRow") {
-                        var standardHandler = e.editorOptions.onValueChanged;
-                        e.editorOptions.onValueChanged = function(e) { // Overrides the standard handler
+                        const defaultHandler = e.editorOptions.onValueChanged;
+                        e.editorOptions.onValueChanged = function(args) { // Overrides the default handler
                             // ...
                             // Custom commands go here
                             // ...
-                            standardHandler(e); // Calls the standard handler to save the edited value
+                            defaultHandler(args); // Calls the default handler to save the edited value
                         }
                     }
                 }
@@ -109,12 +109,12 @@ Use this function to:
         export class AppComponent {
             overrideOnValueChanged(e) {
                 if (e.dataField === 'requiredDataField' && e.parentType === 'dataRow') {
-                    let standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function (e) { // Overrides the standard handler
+                    const defaultHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function (args) { // Overrides the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calls the standard handler to save the edited value
+                        defaultHandler(args); // Calls the default handler to save the edited value
                     }
                 }
             }
@@ -163,12 +163,12 @@ Use this function to:
             methods: {
                 overrideOnValueChanged(e) {
                     if (e.dataField === 'requiredDataField' && e.parentType === 'dataRow') {
-                        let standardHandler = e.editorOptions.onValueChanged;
-                        e.editorOptions.onValueChanged = function (e) { // Overrides the standard handler
+                        const defaultHandler = e.editorOptions.onValueChanged;
+                        e.editorOptions.onValueChanged = function (args) { // Overrides the default handler
                             // ...
                             // Custom commands go here
                             // ...
-                            standardHandler(e); // Calls the standard handler to save the edited value
+                            defaultHandler(args); // Calls the default handler to save the edited value
                         }
                     }
                 }
@@ -189,12 +189,12 @@ Use this function to:
         class App extends React.Component {
             overrideOnValueChanged(e) {
                 if (e.dataField === 'requiredDataField' && e.parentType === 'dataRow') {
-                    let standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function (e) { // Overrides the standard handler
+                    const defaultHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function (args) { // Overrides the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calls the standard handler to save the edited value
+                        defaultHandler(args); // Calls the default handler to save the edited value
                     }
                 }
             }
@@ -219,12 +219,12 @@ Use this function to:
         <script type="text/javascript">
             function overrideOnValueChanged(e) {
                 if (e.dataField === "requiredDataField" && e.parentType === "dataRow") {
-                    var standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function(e) { // Overrides the standard handler
+                    const defaultHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function(args) { // Overrides the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calls the standard handler to save the edited value
+                        defaultHandler(args); // Calls the default handler to save the edited value
                     }
                 }
             }

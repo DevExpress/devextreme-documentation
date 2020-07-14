@@ -16,11 +16,12 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
             ],
             onEditorPreparing: function(e) {
                 if (e.dataField == "Note" && e.parentType === "dataRow") {
+                    const defaultHandler = e.editorOptions.onValueChanged;
                     e.editorName = "dxTextArea"; // Changes the editor's type
                     e.editorOptions.onValueChanged = function (args) {
                         // Implement your logic here
 
-                        e.setValue(args.value); // Updates the cell value
+                        defaultHandler(args.value); // Updates the cell value
                     }
                 }
             }
@@ -44,11 +45,12 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     export class AppComponent {
         onEditorPreparing (e) {
             if (e.dataField == "Note" && e.parentType === "dataRow") {
+                const defaultHandler = e.editorOptions.onValueChanged;
                 e.editorName = "dxTextArea"; // Changes the editor's type
                 e.editorOptions.onValueChanged = function (args) {
                     // Implement your logic here
 
-                    e.setValue(args.value); // Updates the cell value
+                    defaultHandler(args.value); // Updates the cell value
                 }
             }
         }
@@ -97,11 +99,12 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
         methods: {
             onEditorPreparing(e) {
                 if(e.dataField == "Note" && e.parentType === "dataRow") {
+                    const defaultHandler = e.editorOptions.onValueChanged;
                     e.editorName = "dxTextArea"; // Changes the editor's type
                     e.editorOptions.onValueChanged = function (args) {
                         // Implement your logic here
 
-                        e.setValue(args.value); // Updates the cell value
+                        defaultHandler(args.value); // Updates the cell value
                     }
                 }
             }
@@ -126,11 +129,12 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
         textAreaOptions = { height: 200 };
         onEditorPreparing(e) {
             if(e.dataField == "Note" && e.parentType === "dataRow") {
+                const defaultHandler = e.editorOptions.onValueChanged;
                 e.editorName = "dxTextArea"; // Changes the editor's type
                 e.editorOptions.onValueChanged = function (args) {
                     // Implement your logic here
 
-                    e.setValue(args.value); // Updates the cell value
+                    defaultHandler(args.value); // Updates the cell value
                 }
             }
         }
@@ -165,11 +169,12 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     <script type="text/javascript">
         function dataGrid_editorPreparing(e) {
             if (e.dataField == "Note" && e.parentType === "dataRow") {
+                const defaultHandler = e.editorOptions.onValueChanged;
                 e.editorName = "dxTextArea"; // Changes the editor's type
                 e.editorOptions.onValueChanged = function (args) {
                     // Implement your logic here
 
-                    e.setValue(args.value); // Updates the cell value
+                    defaultHandler(args.value); // Updates the cell value
                 }
             }
         }

@@ -87,14 +87,6 @@ In the following code, a default editor is replaced with the DevExtreme [TextAre
         });
     });
 
-    
-                e.editorName = "dxTextArea"; // Changes the editor's type
-                e.editorOptions.onValueChanged = function (args) {
-                    // Implement your logic here
-
-                    defaultHandler(args.value); // Updates the cell value
-                }
-
 ##### Angular
 
     <!--TypeScript-->

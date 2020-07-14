@@ -225,7 +225,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
                     color: 'red'        {/* Color for indicating appointments that use this resource */}
                 },
                 { id: 2, text: 'Room102', color: 'green' },
-                {/* ... /*}
+                {/* ... */}
             ]
         },
         paginate: false
@@ -254,7 +254,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
                         label='Room'            {/* Label displayed for this resource kind in the appointment details form */}
                         dataSource={rooms} />
 
-                    {/* Definition of the second resource kind /*}
+                    {/* Definition of the second resource kind */}
                     <Resource
                         fieldExpr='teacherId'
                         valueExpr='guid'            {/* Resource instance's field used instead of 'id' */}

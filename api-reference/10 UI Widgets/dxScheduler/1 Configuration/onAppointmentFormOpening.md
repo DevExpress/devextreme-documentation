@@ -44,11 +44,11 @@ The form items are organized into two groups:
     </tr>
     <tr>
         <td>mainGroup</td>
-        <td>Contains form fields that define appointment's main parameters (subject, start and end dates, etc.).</td>
+        <td>Contains form fields that define appointment main parameters (subject, start and end dates, etc.).</td>
     </tr>
     <tr>
         <td>recurrenceGroup</td>
-        <td>Contains form fields that define appointment's recurrence parameters.</td>
+        <td>Contains form fields that define appointment recurrence parameters.</td>
     </tr> 
 </table>
 
@@ -56,7 +56,7 @@ You can add a custom item to any group or create an ungrouped item and display i
 
 ![DevExtreme Scheduler onAppointmentFormOpening](/images/UiWidgets/Scheduler_onAppointmentFormOpening.png)
 
-The code below adds a new form item (`author`) to the `mainGroup` and creates an ungrouped item (`checkList`). The `mainGroup` consists of two columns. To make a  custom item span them both, set its [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) to 2. Apply the same setting to an ungrouped item if it should span the `mainGroupd` and `recurrenceGroup`. Note that the array of [form items](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field. 
+The code below adds a new form item (`phone`) to the `mainGroup` and creates an ungrouped item (`location`). Note that the array of [form items](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field. 
 
 ---
 ##### jQuery
@@ -72,25 +72,25 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
             currentDate: new Date(2020, 4, 24),
 
             onAppointmentFormOpening: function(e) {
-                let form = e.form;
+                const form = e.form;
                 let mainGroupItems = form.itemOption('mainGroup').items; 
-                if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+                if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
                     mainGroupItems.push({
-                        colSpan: 2,
-                        label: { text: "Author" },
+                        colSpan: 2, 
+                        label: { text: "Phone Number" },
                         editorType: "dxTextBox",
-                        dataField: "author"
+                        dataField: "phone"
                     });
                     form.itemOption('mainGroup', 'items', mainGroupItems);
                 }
         
                 let formItems = form.option("items"); 
-                if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+                if (!formItems.find(function(i) { return i.dataField === "location" })) {
                     formItems.push({
-                        colSpan: 2, 
-                        label: { text: "Check List" },
+                        colSpan: 2,
+                        label: { text: "Location" },
                         editorType: "dxTextBox",
-                        dataField: "checkList"
+                        dataField: "location"
                     });
                     form.option("items", formItems);
                 }
@@ -119,14 +119,14 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
         currentDate = new Date(2020, 4, 24);
         
         onAppointmentFormOpening(e) {
-            let form = e.form;
+            const form = e.form;
             let mainGroupItems = form.itemOption('mainGroup').items; 
             if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
                 mainGroupItems.push({
-                    colSpan: 2,
-                    label: { text: "Author" },
+                    colSpan: 2, 
+                    label: { text: "Phone Number" },
                     editorType: "dxTextBox",
-                    dataField: "author"
+                    dataField: "phone"
                 });
                 form.itemOption('mainGroup', 'items', mainGroupItems);
             }
@@ -134,10 +134,10 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
             let formItems = form.option("items"); 
             if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
                 formItems.push({
-                    colSpan: 2, 
-                    label: { text: "Check List" },
+                    colSpan: 2,
+                    label: { text: "Location" },
                     editorType: "dxTextBox",
-                    dataField: "checkList"
+                    dataField: "location"
                 });
                 form.option("items", formItems);
             }
@@ -184,14 +184,14 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
         },
         methods: {
             onAppointmentFormOpening(e) {
-                let form = e.form;
+                const form = e.form;
                 let mainGroupItems = form.itemOption('mainGroup').items; 
                 if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
                     mainGroupItems.push({
-                        colSpan: 2,
-                        label: { text: "Author" },
+                        colSpan: 2, 
+                        label: { text: "Phone Number" },
                         editorType: "dxTextBox",
-                        dataField: "author"
+                        dataField: "phone"
                     });
                     form.itemOption('mainGroup', 'items', mainGroupItems);
                 }
@@ -199,10 +199,10 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
                 let formItems = form.option("items"); 
                 if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
                     formItems.push({
-                        colSpan: 2, 
-                        label: { text: "Check List" },
+                        colSpan: 2,
+                        label: { text: "Location" },
                         editorType: "dxTextBox",
-                        dataField: "checkList"
+                        dataField: "location"
                     });
                     form.option("items", formItems);
                 }
@@ -225,14 +225,14 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
         currentDate = new Date(2020, 4, 24);
         
         onAppointmentFormOpening(e) {
-            let form = e.form;
+            const form = e.form;
             let mainGroupItems = form.itemOption('mainGroup').items;
             if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
                 mainGroupItems.push({
-                    colSpan: 2,
-                    label: { text: "Author" },
+                    colSpan: 2, 
+                    label: { text: "Phone Number" },
                     editorType: "dxTextBox",
-                    dataField: "author"
+                    dataField: "phone"
                 });
                 form.itemOption('mainGroup', 'items', mainGroupItems);
             }
@@ -240,10 +240,10 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
             let formItems = form.option("items"); 
             if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
                 formItems.push({
-                    colSpan: 2, 
-                    label: { text: "Check List" },
+                    colSpan: 2,
+                    label: { text: "Location" },
                     editorType: "dxTextBox",
-                    dataField: "checkList"
+                    dataField: "location"
                 });
                 form.option("items", formItems);
             }
@@ -264,9 +264,7 @@ The code below adds a new form item (`author`) to the `mainGroup` and creates an
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"
-}
+The `mainGroup` consists of two columns. To make a custom item span them both, set its [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) to 2 as done in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`. 
 
 
 #####See Also#####

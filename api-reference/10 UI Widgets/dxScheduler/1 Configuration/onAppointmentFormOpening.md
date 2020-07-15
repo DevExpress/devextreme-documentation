@@ -65,7 +65,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
     $(function() {
         $("#schedulerContainer").dxScheduler({
             dataSource: [{
-                text: "Start the project",
+                text: "Attend the conference",
                 startDate: new Date(2020, 4, 24, 9, 10),
                 endDate: new Date(2020, 4, 24, 11, 20),
             }],
@@ -112,7 +112,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
     // ...
     export class AppComponent {
         schedulerData = [{
-            text: "Start the project",
+            text: "Attend the conference",
             startDate: new Date(2020, 4, 24, 9, 10),
             endDate: new Date(2020, 4, 24, 11, 20),
         }];
@@ -175,7 +175,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
         data() {
             return {
                 schedulerData: [{
-                    text: "Start the project",
+                    text: "Attend the conference",
                     startDate: new Date(2020, 4, 24, 9, 10),
                     endDate: new Date(2020, 4, 24, 11, 20),
                 }],
@@ -218,8 +218,13 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
-
     import Scheduler from 'devextreme-react/scheduler';
+
+    const dataSource = [{
+        text: "Attend the conference",
+        startDate: new Date(2020, 4, 24, 9, 10),
+        endDate: new Date(2020, 4, 24, 11, 20),
+    }];
 
     class App extends React.Component {
         currentDate = new Date(2020, 4, 24);

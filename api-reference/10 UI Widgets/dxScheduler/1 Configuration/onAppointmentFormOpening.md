@@ -44,7 +44,7 @@ The form items are organized into two groups:
     </tr>
     <tr>
         <td>mainGroup</td>
-        <td>Contains form fields that define appointment main parameters (subject, start and end dates, etc.).</td>
+        <td>Contains form fields that define main appointment parameters (subject, start and end dates, etc.).</td>
     </tr>
     <tr>
         <td>recurrenceGroup</td>

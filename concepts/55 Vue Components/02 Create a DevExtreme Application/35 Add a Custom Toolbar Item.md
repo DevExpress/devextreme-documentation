@@ -1,4 +1,4 @@
-The application template uses the DevExtreme [Toolbar](/Documentation/ApiReference/UI_Widgets/dxToolbar/) component. The **Toolbar** is part of the `HeaderToolbar` component whose configuration you can find in the `src\components\header-toolbar.vue` file. To add a custom toolbar item, open this file and add a `DxItem` element to the inside of `DxToolbar`. Refer to the [items](/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/) help section for information on `DxItem` attributes.
+The application template uses the DevExtreme [Toolbar](/Documentation/ApiReference/UI_Widgets/dxToolbar/) component. The **Toolbar** is part of the `HeaderToolbar` component whose configuration is in the `src\components\header-toolbar.vue` file. To add a custom toolbar item, open this file and add a `DxItem` element inside `DxToolbar`. Refer to the [items](/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/) help section for information on `DxItem` attributes.
 
 The following code adds a search button to the toolbar:
 

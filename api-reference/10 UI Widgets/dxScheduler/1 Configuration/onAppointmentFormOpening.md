@@ -56,7 +56,7 @@ You can add a custom item to any group or create an ungrouped item and display i
 
 ![DevExtreme Scheduler onAppointmentFormOpening](/images/UiWidgets/Scheduler_onAppointmentFormOpening.png)
 
-The code below adds a new form item (`phone`) to the `mainGroup` and creates an ungrouped item (`location`). Note that the array of [form items](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field. 
+The code below adds a new form item (`phone`) to the `mainGroup` and creates an ungrouped item (`location`). Note that the array of [form items](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field. 
 
 ---
 ##### jQuery
@@ -121,7 +121,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
         onAppointmentFormOpening(e) {
             const form = e.form;
             let mainGroupItems = form.itemOption('mainGroup').items; 
-            if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+            if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
                 mainGroupItems.push({
                     colSpan: 2, 
                     label: { text: "Phone Number" },
@@ -132,7 +132,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
             }
     
             let formItems = form.option("items"); 
-            if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+            if (!formItems.find(function(i) { return i.dataField === "location" })) {
                 formItems.push({
                     colSpan: 2,
                     label: { text: "Location" },
@@ -156,10 +156,10 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-            :dataSource="schedulerData"
-            :currentDate="currentDate"
-            :on-appointment-form-opening="onAppointmentFormOpening">
-        </DxScheduler>
+            :data-source="schedulerData"
+            :current-date="currentDate"
+            @appointment-form-opening="onAppointmentFormOpening"
+        />
     </template>
 
     <script>
@@ -170,7 +170,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
 
     export default {
         components: {
-            DxScheduler,
+            DxScheduler
         },
         data() {
             return {
@@ -186,7 +186,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
             onAppointmentFormOpening(e) {
                 const form = e.form;
                 let mainGroupItems = form.itemOption('mainGroup').items; 
-                if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+                if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
                     mainGroupItems.push({
                         colSpan: 2, 
                         label: { text: "Phone Number" },
@@ -197,7 +197,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
                 }
         
                 let formItems = form.option("items"); 
-                if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+                if (!formItems.find(function(i) { return i.dataField === "location" })) {
                     formItems.push({
                         colSpan: 2,
                         label: { text: "Location" },
@@ -227,7 +227,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
         onAppointmentFormOpening(e) {
             const form = e.form;
             let mainGroupItems = form.itemOption('mainGroup').items;
-            if (!mainGroupItems.find(function(i) { return i.dataField === "author" })) {
+            if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
                 mainGroupItems.push({
                     colSpan: 2, 
                     label: { text: "Phone Number" },
@@ -238,7 +238,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
             }
     
             let formItems = form.option("items"); 
-            if (!formItems.find(function(i) { return i.dataField === "checkList" })) {
+            if (!formItems.find(function(i) { return i.dataField === "location" })) {
                 formItems.push({
                     colSpan: 2,
                     label: { text: "Location" },
@@ -252,9 +252,8 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
         render() {
             return (
                 <Scheduler 
-                    // dataSource={this.dataSource}
                     dataSource={dataSource}
-                    currentDate={this.currentDate}
+                    defaultCurrentDate={this.currentDate}
                     onAppointmentFormOpening={this.onAppointmentFormOpening}
                 />
             );

@@ -102,5 +102,5 @@ You can pass the exception messages to the client using a custom action filter:
     End Sub
 
 #####See Also#####
-- <a href="https://msdn.microsoft.com/en-us/library/dd381609" target="_blank">Creating Custom Action Filters</a>)
+- <a href="https://msdn.microsoft.com/en-us/library/dd381609" target="_blank">Creating Custom Action Filters</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data#Common_security_concerns" target="_blank">Common Security Concerns</a>

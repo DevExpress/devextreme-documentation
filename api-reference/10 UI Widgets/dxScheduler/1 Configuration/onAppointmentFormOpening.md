@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The [Form](/Documentation/Guide/Widgets/Form/Overview/) widget inplements the appointment details form. An instance of the widget is passed to this function in the **form** field. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/) to customize the appointment details form. 
+The [Form](/Documentation/Guide/Widgets/Form/Overview/) widget implements the appointment details form. An instance of the widget is passed to this function in the **form** field. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/) to customize the appointment details form. 
 
 The form items are organized into two groups:
 

@@ -5,7 +5,7 @@ default: false, true (Material)
 ---
 ---
 ##### shortDescription
-Specifies whether to center the drop-down menu on the selected item. Applies only in [Material Design themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/).
+Specifies whether to vertically align the drop-down menu so that the selected item is in its center. Applies only in [Material Design themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/).
 
 ---
 The drop-down menu can be displayed under the input field (**itemCenteringEnabled** is **false**) or over it and centered on the selected item (**itemCenteringEnabled** is **true**). The following live example illustrates the difference:

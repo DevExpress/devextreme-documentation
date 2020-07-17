@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The appointment details form contains the [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') widget whose instance is passed to this function in the **form** field. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/) to customize the appointment details form. 
+The [Form](/Documentation/Guide/Widgets/Form/Overview/) widget inplements the appointment details form. An instance of the widget is passed to this function in the **form** field. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/) to customize the appointment details form. 
 
 The form items are organized into two groups:
 
@@ -72,6 +72,11 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
             currentDate: new Date(2020, 4, 24),
 
             onAppointmentFormOpening: function(e) {
+                e.popup.option('showTitle', true);
+                e.popup.option('title', e.appointmentData.text ? 
+                    e.appointmentData.text : 
+                    'Create a new appointment');
+
                 const form = e.form;
                 let mainGroupItems = form.itemOption('mainGroup').items; 
                 if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
@@ -119,6 +124,11 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
         currentDate = new Date(2020, 4, 24);
         
         onAppointmentFormOpening(e) {
+            e.popup.option('showTitle', true);
+            e.popup.option('title', e.appointmentData.text ? 
+                e.appointmentData.text : 
+                'Create a new appointment');
+
             const form = e.form;
             let mainGroupItems = form.itemOption('mainGroup').items; 
             if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
@@ -184,6 +194,11 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
         },
         methods: {
             onAppointmentFormOpening(e) {
+                e.popup.option('showTitle', true);
+                e.popup.option('title', e.appointmentData.text ? 
+                    e.appointmentData.text : 
+                    'Create a new appointment');
+
                 const form = e.form;
                 let mainGroupItems = form.itemOption('mainGroup').items; 
                 if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
@@ -230,6 +245,11 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
         currentDate = new Date(2020, 4, 24);
         
         onAppointmentFormOpening(e) {
+            e.popup.option('showTitle', true);
+            e.popup.option('title', e.appointmentData.text ? 
+                e.appointmentData.text : 
+                'Create a new appointment');
+            
             const form = e.form;
             let mainGroupItems = form.itemOption('mainGroup').items;
             if (!mainGroupItems.find(function(i) { return i.dataField === "phone" })) {
@@ -269,7 +289,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
 ---
 
 The `mainGroup` consists of two columns. To make a custom item span them both, set its [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) to 2 as done in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`. 
-
+The [Popup](/Documentation/Guide/Widgets/Popup/Overview/) instance is passed along with the **Form** instance in the **onAppointmentFormOpening** event. The corresponding field is **popup**. The code above activates showing of popup title and sets it to the corresponding subject or 'Create a new appointment' if it is a new appointment. Use the [Popup API](/Documentation/ApiReference/UI_Widgets/dxPopup/) to customize the popup.
 
 #####See Also#####
 - [Form - Change Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/05%20Widget%20Options.md '/Documentation/Guide/Widgets/Form/Change_Options_at_Runtime/Widget_Options/')

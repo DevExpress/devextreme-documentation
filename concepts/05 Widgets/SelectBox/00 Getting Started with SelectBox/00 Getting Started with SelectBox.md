@@ -4,7 +4,7 @@
 
 In this tutorial, we will create the **SelectBox** and configure its basic features. The created widget has a populated drop-down list, allows users to search through it, and logs the previous and current selected items to the console.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_1/GettingStartedWith/SelectBox/index.html, /Content/Applications/20_1/GettingStartedWith/SelectBox/index.js, /Content/Applications/20_1/GettingStartedWith/SelectBox/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/SelectBox/index.html, /Content/Applications/20_2/GettingStartedWith/SelectBox/index.js, /Content/Applications/20_2/GettingStartedWith/SelectBox/index.css"></div>
 
 Refer to the subtopics for details on every configuration step. You can also see the full code below or download it from <a href="https://github.com/DevExpress-Examples/getting-started-with-selectbox" target="_blank">this GitHub repository</a>.
 

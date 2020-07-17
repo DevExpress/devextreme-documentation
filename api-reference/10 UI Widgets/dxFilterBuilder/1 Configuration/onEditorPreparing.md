@@ -64,7 +64,7 @@ The editor's width.
 ---
 The widget offers a user different editors for entering a value depending on the field's [dataType](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#dataType'): [Calendar](/concepts/05%20Widgets/Calendar/00%20Overview.md '/Documentation/Guide/Widgets/Calendar/Overview/'), [TextBox](/concepts/05%20Widgets/TextBox/00%20Overview.md '/Documentation/Guide/Widgets/TextBox/Overview/'), [SelectBox](/concepts/05%20Widgets/SelectBox/00%20Overview.md '/Documentation/Guide/Widgets/SelectBox/Overview/'), and so on. Use this function to customize those default editors or substitute them for other editors. 
 
-In the following code, a default editor is replaced with the DevExtreme [TextArea](/concepts/05%20Widgets/TextArea/00%20Overview.md '/Documentation/Guide/Widgets/TextArea/Overview/') widget. Note that the widget's **onValueChanged** function is overridden, and its declaration ends with a call of the default value change handler. This call updates the value.
+In the following code, a default editor is replaced with the DevExtreme [TextArea](/concepts/05%20Widgets/TextArea/00%20Overview.md '/Documentation/Guide/Widgets/TextArea/Overview/') widget. Note that the widget's **onValueChanged** function is overridden, and its declaration ends with the **setValue(newValue, newText)** method's call. This method updates the value.
 
 ---
 ##### jQuery
@@ -75,12 +75,11 @@ In the following code, a default editor is replaced with the DevExtreme [TextAre
             // ...
             onEditorPreparing: function (e) {
                 if (e.dataField == "description") {
-                    const defaultHandler = e.editorOptions.onValueChanged;
                     e.editorName = "dxTextArea"; 
                     e.editorOptions.showClearButton = true;
                     e.editorOptions.onValueChanged = function(event) {
-                        var value = event.value;
-                        defaultHandler(value.toLowerCase()); 
+                        const value = event.value;
+                        e.setValue(value.toLowerCase()); 
                     }
                 }
             }
@@ -95,12 +94,11 @@ In the following code, a default editor is replaced with the DevExtreme [TextAre
     export class AppComponent {
         onEditorPreparing (e) { 
             if (e.dataField == "description") {
-                const defaultHandler = e.editorOptions.onValueChanged;
                 e.editorName = "dxTextArea"; 
                 e.editorOptions.showClearButton = true;
                 e.editorOptions.onValueChanged = (event) => {
-                    let value = event.value;
-                    defaultHandler(value.toLowerCase()); 
+                    const value = event.value;
+                    e.setValue(value.toLowerCase()); 
                 }
             }
         }
@@ -135,7 +133,7 @@ The following code shows how to replace a default editor with a non-DevExtreme e
                     $('<input type="checkbox">')
                         .prop("checked", e.value)
                         .on("change", function(event) {
-                            e.editorOptions.onValueChanged(event.target.checked);
+                            e.setValue(event.target.checked);
                         })
                         .appendTo(e.editorElement);
                 }
@@ -156,7 +154,7 @@ The following code shows how to replace a default editor with a non-DevExtreme e
                 checkbox.setAttribute("type", "checkbox");
                 checkbox.setAttribute("checked", e.value);
                 checkbox.addEventListener("change", (event) => {
-                    e.editorOptions.onValueChanged(event.target.checked);
+                    e.setValue(event.target.checked);
                 });
                 e.editorElement.appendChild(checkbox);
             }

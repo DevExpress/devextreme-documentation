@@ -12,4 +12,3 @@ Specifies the popup element's width. Applies only if [fullScreen](/api-reference
 The popup element's width.
 
 ---
-In the Material theme, the default value equals the **Lookup** width plus paddings and borders.

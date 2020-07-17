@@ -5,7 +5,9 @@ default: false, true (desktop, iOS), false (Material)
 ---
 ---
 ##### shortDescription
-Specifies whether or not to show lookup contents in a [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Widgets/dxPopover/') widget.
+Specifies whether to show lookup contents in the [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Widgets/dxPopover/') widget.
 
 ---
 Lookup contents can be displayed in a **Popover** only if [dropDownOptions](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#dropDownOptions').**fullScreen** is disabled. Otherwise, lookup contents are displayed within the [Popup](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Widgets/dxPopup/') widget.
+
+[Material Design themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) always use the **Popup** widget, ignoring the **usePopover** option.

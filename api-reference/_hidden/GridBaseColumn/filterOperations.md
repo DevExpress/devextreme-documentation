@@ -6,10 +6,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Applies only if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') and at least one of the [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').**visible** and [filterPanel]().**visible** options are **true**.
+Applies only if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') and at least one of the [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').**visible** and [filterPanel](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/filterPanel/).**visible** options are **true**.
 
 ---
-The following table lists available filters by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType') that can be used both in the filter row and nested [filterBuilder]() component. The same filters are assigned to columns of a specific data type by default.
+The following table lists available filters by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType') that can be used both in the filter row and nested [filterBuilder](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#filterBuilder) component. The same filters are assigned to columns of a specific data type by default.
 
 <table class="dx-table">
   <tr>

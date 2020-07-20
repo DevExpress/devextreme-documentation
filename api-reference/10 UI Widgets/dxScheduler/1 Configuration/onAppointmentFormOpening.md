@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The [Form](/Documentation/Guide/Widgets/Form/Overview/) widget implements the appointment details form. An instance of the widget is passed to this function in the **form** field. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/) to customize the appointment details form. 
+The appointment details form is displayed inside a popup. These elements are implemented by the [Form]() and [Popup]() widgets. Their instances are passed to **onAppointmentFormOpening** in the **form** and **popup** fields. Use the [Form API]() and [Popup API]() to customize the corresponding widget.
 
 The form items are organized into two groups:
 
@@ -56,7 +56,7 @@ You can add a custom item to any group or create an ungrouped item and display i
 
 ![DevExtreme Scheduler onAppointmentFormOpening](/images/UiWidgets/Scheduler_onAppointmentFormOpening.png)
 
-The code below adds a new form item (`phone`) to the `mainGroup` and creates an ungrouped item (`location`). Note that the array of [form items](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field. 
+The code below adds a new form item (`phone`) to the `mainGroup` and creates an ungrouped item (`location`). Note that the array of [form items](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) should be checked to ensure that it does not already contain an item with the same data field. The following code also adds a title to the popup:
 
 ---
 ##### jQuery
@@ -289,7 +289,6 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
 ---
 
 The `mainGroup` consists of two columns. To make a custom item span them both, set its [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) to 2 as done in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`. 
-The [Popup](/Documentation/Guide/Widgets/Popup/Overview/) instance is passed along with the **Form** instance in the **onAppointmentFormOpening** event. The corresponding field is **popup**. The code above activates showing of popup title and sets it to the corresponding subject or 'Create a new appointment' if it is a new appointment. Use the [Popup API](/Documentation/ApiReference/UI_Widgets/dxPopup/) to customize the popup.
 
 #####See Also#####
 - [Form - Change Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/05%20Widget%20Options.md '/Documentation/Guide/Widgets/Form/Change_Options_at_Runtime/Widget_Options/')

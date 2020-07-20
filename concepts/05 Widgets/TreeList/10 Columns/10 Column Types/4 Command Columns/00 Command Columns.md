@@ -9,4 +9,7 @@ Contains buttons that perform custom actions. See [Create a Column with Custom B
 - **Editing column**        
 A type of buttons column. Contains editing controls. See [Customize the Editing Column](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/15%20Customize%20the%20Editing%20Column/0%20Customize%20the%20Editing%20Column.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Command_Columns/#Customize_the_Editing_Column').
 
+- **Drag Column**       
+Contains drag icons. Appears when a column's [type](/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#type) is *"drag"* and **rowDragging**.[allowReordering](/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/rowDragging/#allowReordering) and [showDragIcons](/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/rowDragging/#showDragIcons) are **true**.
+
 ![DevExtreme HTML5 JavaScript TreeList CommandColumns EditingColumn AdaptiveColumn](/images/treelist/visual_elements/column-types_command.png)

@@ -36,12 +36,6 @@ Differs from the **value** field only when the cell belongs to the [lookup](/api
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the function's execution. Deprecated in favor of the **event** field.
-
 ##### field(e.key): any
 The row's key. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.       
 For plain data, the key value depends on the [keyExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#keyExpr') option. For hierarchical data, the key is generated automatically or set in the underlying **Store** of the [data source](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#dataSource').

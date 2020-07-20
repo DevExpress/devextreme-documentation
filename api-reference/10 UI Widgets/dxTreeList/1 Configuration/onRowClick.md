@@ -38,12 +38,6 @@ Indicates that the row is added, but not yet saved. Available if **rowType** is 
 ##### field(e.isSelected): Boolean
 Indicates whether the row is selected. Available if **rowType** is *"data"* or *"detail"*.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the function's execution. Deprecated in favor of the **event** field.
-
 ##### field(e.key): any
 The row's key. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.       
 For plain data, the key value depends on the [keyExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#keyExpr') option. For hierarchical data, the key is generated automatically or set in the underlying **Store** of the [data source](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#dataSource').

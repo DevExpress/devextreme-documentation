@@ -41,12 +41,6 @@ Indicates that the row is added, but not yet saved. Available if **rowType** is 
 ##### field(e.isSelected): Boolean
 Indicates whether the row is [selected](/concepts/05%20Widgets/DataGrid/50%20Selection '/Documentation/Guide/Widgets/DataGrid/Selection/').
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the function's execution. Deprecated in favor of the **event** field.
-
 ##### field(e.key): any
 The row's key.
 

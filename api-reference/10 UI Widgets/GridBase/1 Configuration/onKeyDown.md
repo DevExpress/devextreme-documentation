@@ -23,12 +23,6 @@ The event that caused the function to execute. It is a [dxEvent](/api-reference/
 ##### field(e.handled): Boolean
 Indicates whether the widget has already handled this event.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the function's execution. Deprecated in favor of the **event** field.
-
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 

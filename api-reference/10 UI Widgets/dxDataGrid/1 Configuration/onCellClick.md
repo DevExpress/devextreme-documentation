@@ -35,12 +35,6 @@ The cell's displayed value. Differs from the **value** field only when the colum
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution. Deprecated in favor of the **event** field.
-
 ##### field(e.key): any
 The row's key. If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 

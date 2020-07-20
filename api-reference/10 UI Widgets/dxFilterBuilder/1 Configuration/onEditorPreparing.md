@@ -78,7 +78,7 @@ In the following code, a default editor is replaced with the DevExtreme [TextAre
                     e.editorName = "dxTextArea"; 
                     e.editorOptions.showClearButton = true;
                     e.editorOptions.onValueChanged = function(event) {
-                        var value = event.value;
+                        const value = event.value;
                         e.setValue(value.toLowerCase()); 
                     }
                 }
@@ -97,7 +97,7 @@ In the following code, a default editor is replaced with the DevExtreme [TextAre
                 e.editorName = "dxTextArea"; 
                 e.editorOptions.showClearButton = true;
                 e.editorOptions.onValueChanged = (event) => {
-                    let value = event.value;
+                    const value = event.value;
                     e.setValue(value.toLowerCase()); 
                 }
             }

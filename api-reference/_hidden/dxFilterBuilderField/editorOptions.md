@@ -104,7 +104,7 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
 
 [note]
 
-Do not specify the **onValueChanged** option in this object. If you need to add custom logic to the standard value change handler, override the handler in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#onEditorPreparing') function in the following manner.
+Do not specify the **onValueChanged** option in this object. If you need to add custom logic to the default value change handler, override the handler in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#onEditorPreparing') function as follows:
 
 ---
 ##### jQuery
@@ -115,12 +115,15 @@ Do not specify the **onValueChanged** option in this object. If you need to add 
             // ...
             onEditorPreparing: function(e) {
                 if (e.dataField == "requiredDataField") {
-                    var standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function(e) { // Overriding the standard handler
+                    const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function(args) { // Override the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calling the standard handler to save the edited value
+                        // If you want to modify the editor value, call the setValue function:
+                        // e.setValue(newValue);
+                        // Otherwise, call the default handler:
+                        defaultValueChangeHandler(args);
                     }
                 }
             }
@@ -135,12 +138,15 @@ Do not specify the **onValueChanged** option in this object. If you need to add 
     export class AppComponent {
         onEditorPreparing (e) {
             if (e.dataField == "requiredDataField") {
-                let standardHandler = e.editorOptions.onValueChanged;
-                e.editorOptions.onValueChanged = function (e) { // Overriding the standard handler
+                const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                e.editorOptions.onValueChanged = function (args) { // Override the default handler
                     // ...
                     // Custom commands go here
                     // ...
-                    standardHandler(e); // Calling the standard handler to save the edited value
+                    // If you want to modify the editor value, call the setValue function:
+                    // e.setValue(newValue);
+                    // Otherwise, call the default handler:
+                    defaultValueChangeHandler(args);
                 }
             }
         }

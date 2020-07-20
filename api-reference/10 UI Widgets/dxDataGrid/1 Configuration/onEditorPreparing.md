@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.editorPreparing
 ---
 ---
 ##### shortDescription
-A function used to customize or replace [default editors](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editorOptions'). Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editCellTemplate').
+A function used to customize or replace [default editors](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/columns/#editorOptions'). Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/columns/#editCellTemplate').
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -68,23 +68,26 @@ The editor's width; equals **null** for all editors except for those whose **par
 ---
 Use this function to:
 
-- Override the default editor's **onValueChanged** handler. For other default editor customizations, use [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editorOptions').
+- Override the default editor's **onValueChanged** handler. For other default editor customizations, use [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/columns/#editorOptions').
 
     ---
     ##### jQuery
 
         <!-- tab: index.js -->
         $(function() {
-            $("#dataGridContainer").dxDataGrid({
+            $("#{widgetName}Container").dx{WidgetName}({
                 // ...
                 onEditorPreparing: function(e) {
                     if (e.dataField === "requiredDataField" && e.parentType === "dataRow") {
-                        var standardHandler = e.editorOptions.onValueChanged;
-                        e.editorOptions.onValueChanged = function(e) { // Overrides the standard handler
+                        const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                        e.editorOptions.onValueChanged = function(args) { // Override the default handler
                             // ...
                             // Custom commands go here
                             // ...
-                            standardHandler(e); // Calls the standard handler to save the edited value
+                            // If you want to modify the editor value, call the setValue function:
+                            // e.setValue(newValue);
+                            // Otherwise, call the default handler:
+                            defaultValueChangeHandler(args);
                         }
                     }
                 }
@@ -94,9 +97,9 @@ Use this function to:
     ##### Angular
 
         <!-- tab: app.component.html -->
-        <dx-data-grid ...
+        <dx-{widget-name} ...
             (onEditorPreparing)="overrideOnValueChanged($event)">
-        </dx-data-grid>
+        </dx-{widget-name}>
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
@@ -109,12 +112,15 @@ Use this function to:
         export class AppComponent {
             overrideOnValueChanged(e) {
                 if (e.dataField === 'requiredDataField' && e.parentType === 'dataRow') {
-                    let standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function (e) { // Overrides the standard handler
+                    const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function (args) { // Override the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calls the standard handler to save the edited value
+                        // If you want to modify the editor value, call the setValue function:
+                        // e.setValue(newValue);
+                        // Otherwise, call the default handler:
+                        defaultValueChangeHandler(args);
                     }
                 }
             }
@@ -125,7 +131,7 @@ Use this function to:
         import { NgModule } from '@angular/core';
         import { AppComponent } from './app.component';
 
-        import { DxDataGridModule } from 'devextreme-angular';
+        import { Dx{WidgetName}Module } from 'devextreme-angular';
 
         @NgModule({
             declarations: [
@@ -133,7 +139,7 @@ Use this function to:
             ],
             imports: [
                 BrowserModule,
-                DxDataGridModule
+                Dx{WidgetName}Module
             ],
             providers: [],
             bootstrap: [AppComponent]
@@ -144,31 +150,34 @@ Use this function to:
 
         <!-- tab: App.vue -->
         <template>
-            <DxDataGrid ...
+            <Dx{WidgetName} ...
                 @editor-preparing="overrideOnValueChanged">
-            </DxDataGrid>
+            </Dx{WidgetName}>
         </template>
 
         <script>
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import DxDataGrid from 'devextreme-vue/data-grid';
+        import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
         export default {
             components: {
-                DxDataGrid
+                Dx{WidgetName}
             },
             // ...
             methods: {
                 overrideOnValueChanged(e) {
                     if (e.dataField === 'requiredDataField' && e.parentType === 'dataRow') {
-                        let standardHandler = e.editorOptions.onValueChanged;
-                        e.editorOptions.onValueChanged = function (e) { // Overrides the standard handler
+                        const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                        e.editorOptions.onValueChanged = function (args) { // Override the default handler
                             // ...
                             // Custom commands go here
                             // ...
-                            standardHandler(e); // Calls the standard handler to save the edited value
+                            // If you want to modify the editor value, call the setValue function:
+                            // e.setValue(newValue);
+                            // Otherwise, call the default handler:
+                            defaultValueChangeHandler(args);
                         }
                     }
                 }
@@ -184,25 +193,28 @@ Use this function to:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import DataGrid from 'devextreme-react/data-grid';
+        import {WidgetName} from 'devextreme-react/{widget-name}';
 
         class App extends React.Component {
             overrideOnValueChanged(e) {
                 if (e.dataField === 'requiredDataField' && e.parentType === 'dataRow') {
-                    let standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function (e) { // Overrides the standard handler
+                    const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function (args) { // Override the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calls the standard handler to save the edited value
+                        // If you want to modify the editor value, call the setValue function:
+                        // e.setValue(newValue);
+                        // Otherwise, call the default handler:
+                        defaultValueChangeHandler(args);
                     }
                 }
             }
             render() {
                 return (
-                    <DataGrid ...
+                    <{WidgetName} ...
                         onEditorPreparing={this.overrideOnValueChanged}>
-                    </DataGrid>
+                    </{WidgetName}>
                 );
             }
         }
@@ -211,7 +223,7 @@ Use this function to:
     ##### ASP.NET MVC Controls
 
         <!-- tab: Razor C# -->
-        @(Html.DevExtreme().DataGrid()
+        @(Html.DevExtreme().{WidgetName}()
             // ...
             .OnEditorPreparing("overrideOnValueChanged")
         )
@@ -219,12 +231,15 @@ Use this function to:
         <script type="text/javascript">
             function overrideOnValueChanged(e) {
                 if (e.dataField === "requiredDataField" && e.parentType === "dataRow") {
-                    var standardHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function(e) { // Overrides the standard handler
+                    const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function(args) { // Override the default handler
                         // ...
                         // Custom commands go here
                         // ...
-                        standardHandler(e); // Calls the standard handler to save the edited value
+                        // If you want to modify the editor value, call the setValue function:
+                        // e.setValue(newValue);
+                        // Otherwise, call the default handler:
+                        defaultValueChangeHandler(args);
                     }
                 }
             }
@@ -232,7 +247,7 @@ Use this function to:
 
     ---
 
-- Replace the default editor. The old editor's configuration applies to the replacement editor. To define the configuration from scratch, use an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editCellTemplate').
+- Replace the default editor. The old editor's configuration applies to the replacement editor. To define the configuration from scratch, use an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/columns/#editCellTemplate').
     
     In the following code, the DevExtreme [TextArea](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview) widget is the replacement editor:
 
@@ -241,7 +256,7 @@ Use this function to:
 
         <!-- tab: index.js -->
         $(function() {
-            $("#dataGridContainer").dxDataGrid({
+            $("#{widgetName}Container").dx{WidgetName}({
                 // ...
                 onEditorPreparing: function(e) {
                     if (e.dataField === "description" && e.parentType === "dataRow") {
@@ -254,9 +269,9 @@ Use this function to:
     ##### Angular
 
         <!-- tab: app.component.html -->
-        <dx-data-grid ...
+        <dx-{widget-name} ...
             (onEditorPreparing)="replaceEditor($event)">
-        </dx-data-grid>
+        </dx-{widget-name}>
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
@@ -280,7 +295,7 @@ Use this function to:
         import { NgModule } from '@angular/core';
         import { AppComponent } from './app.component';
 
-        import { DxDataGridModule } from 'devextreme-angular';
+        import { Dx{WidgetName}Module } from 'devextreme-angular';
 
         @NgModule({
             declarations: [
@@ -288,7 +303,7 @@ Use this function to:
             ],
             imports: [
                 BrowserModule,
-                DxDataGridModule
+                Dx{WidgetName}Module
             ],
             providers: [],
             bootstrap: [AppComponent]
@@ -299,21 +314,21 @@ Use this function to:
 
         <!-- tab: App.vue -->
         <template>
-            <DxDataGrid ...
+            <Dx{WidgetName} ...
                 @editor-preparing="replaceEditor">
-            </DxDataGrid>
+            </Dx{WidgetName}>
         </template>
 
         <script>
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import DxDataGrid from 'devextreme-vue/data-grid';
+        import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
         import 'devextreme/ui/text_area';
 
         export default {
             components: {
-                DxDataGrid
+                Dx{WidgetName}
             },
             // ...
             methods: {
@@ -334,7 +349,7 @@ Use this function to:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import DataGrid from 'devextreme-react/data-grid';
+        import {WidgetName} from 'devextreme-react/{widget-name}';
         import 'devextreme/ui/text_area';
 
         class App extends React.Component {
@@ -345,9 +360,9 @@ Use this function to:
             }
             render() {
                 return (
-                    <DataGrid ...
+                    <{WidgetName} ...
                         onEditorPreparing={this.replaceEditor}>
-                    </DataGrid>
+                    </{WidgetName}>
                 );
             }
         }
@@ -356,7 +371,7 @@ Use this function to:
     ##### ASP.NET MVC Controls
 
         <!-- tab: Razor C# -->
-        @(Html.DevExtreme().DataGrid()
+        @(Html.DevExtreme().{WidgetName}()
             // ...
             .OnEditorPreparing("replaceEditor")
         )
@@ -371,7 +386,7 @@ Use this function to:
 
     ---
 
-- Customize editors used in the [search panel](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/searchPanel/'), [filter row](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/filterRow/'), and [selection column](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/').        
+- Customize editors used in the [search panel](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/searchPanel/'), [filter row](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/filterRow/'), and [selection column](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/').        
 Use the **parentType** function parameter to check if the editor being customized belongs to one of these UI elements.
 
 - [Dynamically change editor options in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/Widgets/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
@@ -383,4 +398,4 @@ Use the **parentType** function parameter to check if the editor being customize
 }
 
 #####See Also#####
-- **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways')
+- **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '{basewidgetpath}/columns/#showEditorAlways')

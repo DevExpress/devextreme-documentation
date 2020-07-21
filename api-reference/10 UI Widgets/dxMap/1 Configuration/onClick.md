@@ -20,12 +20,6 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution (if a static google provider is used). Deprecated in favor of the **event** field.
-
 ##### field(e.location): Object
 The clicked point's location on the map (if the "google" or "bing" provider is used).
 

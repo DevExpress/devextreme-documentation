@@ -26,12 +26,6 @@ The container of the item being held. It is an <a href="https://developer.mozill
 ##### field(e.itemIndex): Number | Object
 The index of the item being held. In a grouped list, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the function's execution. Deprecated in favor of the **event** field.
-
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 

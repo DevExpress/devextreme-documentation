@@ -29,12 +29,6 @@ The [configuration](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Con
 ##### field(e.items): Array<Object>
 Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/items/') option description.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution. Deprecated in favor of the **event** field.
-
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 

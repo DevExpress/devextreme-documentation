@@ -24,12 +24,6 @@ The widget's instance.
 ##### field(e.item): dxFunnelItem
 The [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/') object.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution. Deprecated in favor of the **event** field.
-
 ##### field(e.model): Object
 The model data. Available only if you use Knockout.
 

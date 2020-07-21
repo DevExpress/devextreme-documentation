@@ -23,12 +23,6 @@ The widget's instance.
 ##### field(e.height): Number
 The widget's current height.
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution. Deprecated in favor of the **event** field.
-
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 

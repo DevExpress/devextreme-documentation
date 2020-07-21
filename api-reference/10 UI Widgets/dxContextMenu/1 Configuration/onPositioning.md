@@ -20,12 +20,6 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.jQueryEvent).deprecated
-Use 'event' instead.
-
-##### field(e.jQueryEvent): jQuery.Event
-The jQuery event that caused the handler execution. Deprecated in favor of the **event** field.
-
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 

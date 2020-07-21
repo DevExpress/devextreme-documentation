@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The appointment details form is displayed inside a popup. These elements are implemented by the [Form]() and [Popup]() widgets. Their instances are passed to **onAppointmentFormOpening** in the **form** and **popup** fields. Use the [Form API]() and [Popup API]() to customize the corresponding widget.
+The appointment details form is displayed inside a popup. These elements are implemented by the [Form](https://js.devexpress.com/Documentation/Guide/Widgets/Form/Overview/) and [Popup](https://js.devexpress.com/Documentation/Guide/Widgets/Popup/Overview/) widgets. Their instances are passed to **onAppointmentFormOpening** in the **form** and **popup** fields. Use the [Form API](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/) and [Popup API](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/) to customize the corresponding widget.
 
 The form items are organized into two groups:
 

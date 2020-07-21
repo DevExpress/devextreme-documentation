@@ -20,6 +20,8 @@ This option accepts the following values.
 - "occurrence"  
  Enables an end-user to edit only the current appointment.
 
+Changes made to single and series appointments are handled differently.
+
 If a user edits the current appointment, two actions are performed on the data objects:
 
 - The series' data object is updated.         

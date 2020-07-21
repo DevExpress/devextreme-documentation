@@ -15,7 +15,7 @@ Information about the event that caused the function's execution.
 This column's [configuration](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/').
 
 ##### field(e.columnIndex): Number
-The index of the column on which the context menu is invoked. For details on indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
+The index of the column on which the context menu is invoked. For details on indexes, see the following help topic: [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/').
 
 ##### field(e.component): {WidgetName}
 The widget's instance.
@@ -24,7 +24,7 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.items): Array<Object>
-Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/items/') option description.
+Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/items/') option description. Each item also contains the [onItemClick](/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#onItemClick) event handler, which allows you to access the clicked or tapped item's data.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 The row [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/').
 
 ##### field(e.rowIndex): Number
-The index of the row on which the context menu is invoked. Refer to [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') for more information.
+The index of the row on which the context menu is invoked. Refer to the following help topic for more information: [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/').
 
 ##### field(e.target): String
 The name of the element on which the context menu is invoked: *"headerPanel"*, *"header"*, *"content"*, or *"footer"*. This field is read-only.

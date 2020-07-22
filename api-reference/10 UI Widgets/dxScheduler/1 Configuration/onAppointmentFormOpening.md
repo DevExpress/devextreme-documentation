@@ -33,9 +33,9 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The appointment details form is displayed inside a popup. These elements are implemented by the [Form](/Documentation/Guide/Widgets/Form/Overview/) and [Popup](/Documentation/Guide/Widgets/Popup/Overview/) widgets. Their instances are passed to **onAppointmentFormOpening** in the **form** and **popup** fields. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/) and [Popup API](/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/) to customize the corresponding widget.
+The appointment details form is displayed inside a popup. These elements are implemented by the [Form](/Documentation/Guide/Widgets/Form/Overview/) and [Popup](/Documentation/Guide/Widgets/Popup/Overview/) widgets. Their instances are passed to the **onAppointmentFormOpening** function in the **form** and **popup** fields. Use the [Form API](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/) and [Popup API](/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/) to customize the corresponding widget.
 
-The form items are organized into two groups:
+Form items are organized into two groups:
 
 <table class="dx-table">
     <tr>
@@ -288,7 +288,7 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
 
 ---
 
-The `mainGroup` consists of two columns. To make a custom item span them both, set its [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) to 2 as done in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`. 
+The `mainGroup` consists of two columns. To make a custom item span both columns, set its [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) to 2 - as shown in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`. 
 
 #####See Also#####
 - [Form - Change Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/05%20Widget%20Options.md '/Documentation/Guide/Widgets/Form/Change_Options_at_Runtime/Widget_Options/')

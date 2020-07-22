@@ -8,7 +8,7 @@ Checks whether an item found using its DOM node is selected.
 ##### return: Boolean
 **true** if the item is selected; otherwise **false**.
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 The item's DOM node.
 
 ---

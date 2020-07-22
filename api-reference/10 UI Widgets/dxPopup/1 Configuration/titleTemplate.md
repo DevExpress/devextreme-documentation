@@ -10,7 +10,7 @@ Specifies a custom template for the widget title. Does not apply if the [title](
 ##### param(titleElement): dxElement
 #include common-ref-elementparam with { element: "title" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

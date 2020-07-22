@@ -19,7 +19,7 @@ The item's data.
 ##### param(containerElement): dxElement
 A container in which the template should be rendered.
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 #include common-template-return-value
 
 ---

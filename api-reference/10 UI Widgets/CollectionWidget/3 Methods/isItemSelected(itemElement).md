@@ -7,6 +7,6 @@ hidden:
 
 ##### return: Boolean
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 
 ---

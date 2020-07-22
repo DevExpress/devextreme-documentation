@@ -13,7 +13,7 @@ An object from the [items](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Co
 ##### param(buttonContent): dxElement
 The button content's container.
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

@@ -13,7 +13,7 @@ The annotation's [configuration object](/api-reference/_hidden/dxChartCommonAnno
 ##### param(element): dxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 #include common-template-return-value
 
 ---

@@ -36,7 +36,7 @@ The index of the cell's row. Begins with 0 on each page. Group rows are included
 ##### field(cellInfo.rowType): String
 The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType').
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

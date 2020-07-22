@@ -21,7 +21,7 @@ The editor's value.
 ##### param(container): dxElement
 #include common-ref-elementparam with { element: "editor" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

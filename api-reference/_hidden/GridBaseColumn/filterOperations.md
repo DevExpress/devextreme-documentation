@@ -30,7 +30,7 @@ The following table lists available filters by [data types](/api-reference/_hidd
   </tr>
 </table>
 
-The following table contains filter operations specific for the nested filter builder:
+The following table contains filter operations that users can apply only in the nested filter builder:
 <table class="dx-table">
   <tr>
     <th>dataType</th>

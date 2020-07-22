@@ -13,7 +13,7 @@ The annotation's [configuration object](/api-reference/20%20Data%20Visualization
 ##### param(element): dxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 #include common-template-return-value
 
 ---

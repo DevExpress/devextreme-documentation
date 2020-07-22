@@ -1,6 +1,6 @@
 ---
 id: DraggableBase.Options.container
-type: String | Node | jQuery
+type: String | Element | jQuery
 default: undefined
 ---
 ---

@@ -5,6 +5,6 @@ hidden:
 ---
 ##### shortDescription
 
-##### return: Array<Node>
+##### return: Array<Element>
 
 ---

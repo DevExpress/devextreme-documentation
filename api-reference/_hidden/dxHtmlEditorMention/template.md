@@ -22,7 +22,7 @@ The displayed value provided by the [displayExpr](/api-reference/_hidden/dxHtmlE
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "mention" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 The name or container of a template.
 
 ---

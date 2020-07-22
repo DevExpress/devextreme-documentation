@@ -7,7 +7,7 @@ hidden:
 ---
 ##### shortDescription
 
-##### param(element): Node | Array<Node>
+##### param(element): Element | Array<Element>
 
 ##### param(event): String | event
 

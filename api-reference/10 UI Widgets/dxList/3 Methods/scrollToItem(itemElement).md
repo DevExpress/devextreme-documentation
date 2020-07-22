@@ -5,7 +5,7 @@ id: dxList.scrollToItem(itemElement)
 ##### shortDescription
 Scrolls the content to an item found using its DOM node.
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 The item's DOM node.
 
 ---

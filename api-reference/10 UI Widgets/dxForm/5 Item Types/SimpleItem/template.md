@@ -27,7 +27,7 @@ The item's [name](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/Simpl
 ##### param(itemElement): dxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

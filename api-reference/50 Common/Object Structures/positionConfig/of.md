@@ -1,6 +1,6 @@
 ---
 id: positionConfig.of
-type: String | Node | jQuery | Window
+type: String | Element | jQuery | Window
 ---
 ---
 ##### shortDescription

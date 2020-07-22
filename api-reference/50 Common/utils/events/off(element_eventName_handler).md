@@ -7,7 +7,7 @@ export: off
 ##### shortDescription
 Detaches an event handler from the specified elements.
 
-##### param(element): Node | Array<Node>
+##### param(element): Element | Array<Element>
 HTML elements from which to detach a handler.
 
 ##### param(eventName): String

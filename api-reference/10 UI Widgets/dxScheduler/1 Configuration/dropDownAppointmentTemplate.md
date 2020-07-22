@@ -17,7 +17,7 @@ The appointment's index.
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "appointment" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

@@ -5,6 +5,6 @@ hidden:
 ---
 ##### shortDescription
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 
 ---

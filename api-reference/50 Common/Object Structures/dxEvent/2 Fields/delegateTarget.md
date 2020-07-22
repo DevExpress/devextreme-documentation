@@ -1,6 +1,6 @@
 ---
 id: dxEvent.delegateTarget
-type: Node
+type: Element
 ---
 ---
 ##### shortDescription

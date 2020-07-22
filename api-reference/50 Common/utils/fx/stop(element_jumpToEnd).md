@@ -5,7 +5,7 @@ id: fx.stop(element, jumpToEnd)
 ##### shortDescription
 Stops an element's animation.
 
-##### param(element): Node
+##### param(element): Element
 The element.
 
 ##### param(jumpToEnd): Boolean

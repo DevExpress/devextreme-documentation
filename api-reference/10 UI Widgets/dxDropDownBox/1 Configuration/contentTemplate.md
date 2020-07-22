@@ -19,7 +19,7 @@ The currently selected value.
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "widget content" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

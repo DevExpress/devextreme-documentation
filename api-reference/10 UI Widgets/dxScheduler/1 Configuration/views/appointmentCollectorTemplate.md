@@ -19,7 +19,7 @@ Indicates whether the overflow indicator is [compact](/concepts/05%20Widgets/Sch
 ##### param(collectorElement): dxElement
 #include common-ref-elementparam with { element: "overflow indicator" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

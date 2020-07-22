@@ -5,7 +5,7 @@ id: GridBase.focus(element)
 ##### shortDescription
 Sets focus on a specific cell.
 
-##### param(element): Node | jQuery
+##### param(element): Element | jQuery
 The cell's container.
 
 ---

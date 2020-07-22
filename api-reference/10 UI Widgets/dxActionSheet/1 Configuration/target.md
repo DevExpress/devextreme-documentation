@@ -1,6 +1,6 @@
 ---
 id: dxActionSheet.Options.target
-type: String | Node | jQuery
+type: String | Element | jQuery
 ---
 ---
 ##### shortDescription

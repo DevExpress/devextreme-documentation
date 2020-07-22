@@ -1,6 +1,6 @@
 ---
 id: dxEvent.target
-type: Node
+type: Element
 ---
 ---
 ##### shortDescription

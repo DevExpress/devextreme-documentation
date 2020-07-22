@@ -13,7 +13,7 @@ The current tag's data.
 ##### param(itemElement): dxElement
 #include common-ref-elementparam with { element: "tag" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

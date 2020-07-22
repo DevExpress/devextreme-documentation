@@ -8,7 +8,7 @@ Shows a tooltip for a target element.
 ##### param(appointmentData): Object
 The initial appointment.
 
-##### param(target): String | Node | jQuery
+##### param(target): String | Element | jQuery
 The target element.
 
 ##### param(currentAppointmentData): Object | undefined

@@ -8,7 +8,7 @@ Cancels the selection of a **TreeView** node found using its DOM node.
 ##### return: Boolean
 **false** if no node was found.
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 A DOM node.
 
 ---

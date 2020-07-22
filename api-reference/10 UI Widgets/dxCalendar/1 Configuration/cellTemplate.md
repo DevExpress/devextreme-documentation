@@ -25,7 +25,7 @@ The current cell's index.
 ##### param(itemElement): dxElement
 #include common-ref-elementparam with { element: "cell" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

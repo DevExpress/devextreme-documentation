@@ -13,7 +13,7 @@ The selected item's data.
 ##### param(fieldElement): dxElement
 #include common-ref-elementparam with { element: "field" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

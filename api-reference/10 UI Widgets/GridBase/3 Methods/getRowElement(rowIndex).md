@@ -5,7 +5,7 @@ id: GridBase.getRowElement(rowIndex)
 ##### shortDescription
 Gets the container of a row with a specific index.
 
-##### return: Array<Node> | jQuery | undefined
+##### return: Array<Element> | jQuery | undefined
 The row's container.
 
 ##### param(rowIndex): Number

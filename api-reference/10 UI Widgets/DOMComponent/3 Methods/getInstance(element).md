@@ -8,7 +8,7 @@ Gets the instance of a widget found using its DOM node.
 ##### return: DOMComponent
 The widget's instance.
 
-##### param(element): Node | jQuery
+##### param(element): Element | jQuery
 The widget's container.
 
 ---

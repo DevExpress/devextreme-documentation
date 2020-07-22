@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.tooltip.container
-type: String | Node | jQuery
+type: String | Element | jQuery
 default: undefined
 ---
 ---

@@ -13,7 +13,7 @@ Information on the area or marker being pressed or hovered over. To distinguish 
 ##### param(element): dxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 #include common-template-return-value
 
 ---

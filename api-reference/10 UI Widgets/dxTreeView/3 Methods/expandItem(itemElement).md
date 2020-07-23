@@ -8,7 +8,7 @@ Expands an item found using its DOM node.
 ##### return: Promise<void>
 <!-- %return% -->
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 The item's DOM node.
 
 ---

@@ -7,7 +7,7 @@ export: trigger
 ##### shortDescription
 Triggers an event for the specified elements. Allows you to pass custom parameters to event handlers.
 
-##### param(element): Node | Array<Node>
+##### param(element): Element | Array<Element>
 HTML elements for which to trigger an event.
 
 ##### param(event): String | event

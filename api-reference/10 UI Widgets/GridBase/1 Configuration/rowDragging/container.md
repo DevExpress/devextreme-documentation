@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.rowDragging.container
-type: String | Node | jQuery
+type: String | Element | jQuery
 default: undefined
 ---
 ---

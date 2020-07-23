@@ -7,6 +7,6 @@ hidden:
 
 ##### return: Promise<void>
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 
 ---

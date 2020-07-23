@@ -16,7 +16,7 @@ The current group's index.
 ##### param(groupElement): dxElement
 #include common-ref-elementparam with { element: "group" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

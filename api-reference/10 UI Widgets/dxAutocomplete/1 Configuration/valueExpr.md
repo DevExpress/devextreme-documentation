@@ -1,0 +1,3 @@
+Always set this option if the [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') contains objects. Alternatively, you can specify the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') in the store. 
+
+#include uiwidgets-ref-valueExpr-functionnote

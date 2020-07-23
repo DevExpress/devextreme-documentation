@@ -6,10 +6,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies available filter operations. Applies if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') is **true** and the [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/'), [filterPanel]({basewidgetpath}/Configuration/filterPanel/), or both are visible.
+Specifies the available filter operations. Applies if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') is **true** and the [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/') and/or [filterPanel]({basewidgetpath}/Configuration/filterPanel/) are visible.
 
 ---
-The following table lists available filter operations by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). Users can apply these filter operations both in the filter row and nested [filterBuilder]({basewidgetpath}/Configuration/#filterBuilder) component. The same operations are assigned to columns of a specific data type by default.
+The following table lists the available filter operations by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). Users can apply these filter operations in the filter row and nested [filterBuilder]({basewidgetpath}/Configuration/#filterBuilder) component. The same operations are assigned to columns of a specific data type.
 
 <table class="dx-table">
   <tr>

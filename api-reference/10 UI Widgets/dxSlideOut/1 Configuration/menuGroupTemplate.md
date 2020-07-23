@@ -16,7 +16,7 @@ The current group's index.
 ##### param(groupElement): Object
 The current group's container.
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

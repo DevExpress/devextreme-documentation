@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a template that should be used to render this item only.
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

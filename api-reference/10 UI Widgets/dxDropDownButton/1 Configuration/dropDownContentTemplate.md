@@ -13,7 +13,7 @@ The array passed to the [items](/api-reference/10%20UI%20Widgets/dxDropDownButto
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "drop-down field" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

@@ -5,6 +5,6 @@ hidden:
 ---
 ##### shortDescription
 
-##### return: Node
+##### return: Element
 
 ---

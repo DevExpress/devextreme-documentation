@@ -10,7 +10,7 @@ Specifies a custom template for the widget content. Rendered only once - when th
 ##### param(container): dxElement
 #include common-ref-elementparam with { element: "widget content" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

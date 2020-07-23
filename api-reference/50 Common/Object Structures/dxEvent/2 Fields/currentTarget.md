@@ -1,6 +1,6 @@
 ---
 id: dxEvent.currentTarget
-type: Node
+type: Element
 ---
 ---
 ##### shortDescription

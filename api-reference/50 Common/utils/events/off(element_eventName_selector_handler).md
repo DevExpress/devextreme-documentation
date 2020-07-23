@@ -7,7 +7,7 @@ export: off
 ##### shortDescription
 Detaches the specified event handler attached using the [on(element, eventName, selector, data, handler)](/api-reference/50%20Common/utils/events/on(element_eventName_selector_data_handler).md '/Documentation/ApiReference/Common/utils/events/#onelement_eventName_selector_data_handler') or [on(element, eventName, selector, handler)](/api-reference/50%20Common/utils/events/on(element_eventName_selector_handler).md '/Documentation/ApiReference/Common/utils/events/#onelement_eventName_selector_handler') method.
 
-##### param(element): Node | Array<Node>
+##### param(element): Element | Array<Element>
 HTML elements from which to detach a handler.
 
 ##### param(eventName): String

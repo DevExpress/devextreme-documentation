@@ -10,7 +10,7 @@ Raised when a user moves the pointer into the element, provided that the drag ge
 ##### param(event): event
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
-##### field(event.draggingElement): Node
+##### field(event.draggingElement): Element
 The element being dragged.
 
 ---

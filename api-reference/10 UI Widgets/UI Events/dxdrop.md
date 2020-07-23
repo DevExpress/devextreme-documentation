@@ -10,7 +10,7 @@ Raised when dragged data has been dropped on the element.
 ##### param(event): event
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
-##### field(event.draggingElement): Node
+##### field(event.draggingElement): Element
 The element being dragged.
 
 ---

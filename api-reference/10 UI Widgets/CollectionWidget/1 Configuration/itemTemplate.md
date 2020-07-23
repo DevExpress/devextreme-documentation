@@ -16,7 +16,7 @@ The index of the item to be rendered.
 ##### param(itemElement): dxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

@@ -7,7 +7,7 @@ export: one
 ##### shortDescription
 Attaches an event handler that is executed only once to the specified elements. Allows you to pass custom data to the handler.
 
-##### param(element): Node | Array<Node>
+##### param(element): Element | Array<Element>
 HTML elements to which to attach a handler.
 
 ##### param(eventName): String

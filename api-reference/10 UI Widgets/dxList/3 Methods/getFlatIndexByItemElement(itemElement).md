@@ -7,6 +7,6 @@ hidden:
 
 ##### return: Object
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 
 ---

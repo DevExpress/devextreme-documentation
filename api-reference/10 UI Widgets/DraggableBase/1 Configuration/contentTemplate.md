@@ -8,7 +8,7 @@ hidden:
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 <!-- Description goes here -->
 
 ---

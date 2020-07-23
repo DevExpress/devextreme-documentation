@@ -5,7 +5,7 @@ hidden:
 ---
 ##### shortDescription
 
-##### param(element): Node | jQuery
+##### param(element): Element | jQuery
 
 ##### param(options): DOMComponent_Options | undefined
 

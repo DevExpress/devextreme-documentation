@@ -13,7 +13,7 @@ Information on the points that belong to the series that is pressed or hovered o
 ##### param(element): dxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 #include common-template-return-value
 
 ---

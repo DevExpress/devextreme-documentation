@@ -30,21 +30,7 @@ The following table lists available filter operations by [data types](/api-refer
   </tr>
 </table>
 
-The following table contains filter operations that users can apply only in the nested filter builder:
-<table class="dx-table">
-  <tr>
-    <th>dataType</th>
-    <th>filterOperations</th>
-  </tr>
-  <tr>
-    <td>"string"</td>
-    <td>[ "custom operation's <a href="/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/customOperations/#name" target="_blank">name</a>" ]</td>
-  </tr>
-  <tr>
-    <td>"all data types"</td>
-    <td>[ "anyof", "noneof", "isblank", "isnotblank" ]</td>
-  </tr>
-</table>
+The nested filter builder also allows users to select from an extended set of operations that includes *"anyof"*, *"noneof"*, *"isblank"*, *"isnotblank"*, and [names](/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/customOperations/#name) of custom operations (if there are any).
 
 The **filterOperations** option can also accept an empty array. In this case, the selected filter operation is *"="* for all data types, and a user cannot change it.
 

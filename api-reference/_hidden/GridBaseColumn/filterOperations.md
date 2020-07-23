@@ -6,10 +6,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a set of available filter operations. Applies only if [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').**visible** and [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') are **true**.
+Specifies the available filter operations. Applies if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') is **true** and the [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/') and/or [filterPanel]({basewidgetpath}/Configuration/filterPanel/) are visible.
 
 ---
-The following table lists available filters by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). The same filters are assigned to columns of a specific data type by default.
+The following table lists the available filter operations by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). Users can apply these filter operations in the filter row and nested [filterBuilder]({basewidgetpath}/Configuration/#filterBuilder) component. The same operations are assigned to columns of a specific data type.
 
 <table class="dx-table">
   <tr>
@@ -29,6 +29,8 @@ The following table lists available filters by [data types](/api-reference/_hidd
     <td>[ "=", "<>", "<", ">", "<=", ">=", "between" ]</td>
   </tr>
 </table>
+
+The nested filter builder also allows users to select from an extended set of operations that include *"anyof"*, *"noneof"*, *"isblank"*, *"isnotblank"*, and [names](/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/customOperations/#name) of custom operations (if there are any).
 
 The **filterOperations** option can also accept an empty array. In this case, the selected filter operation is *"="* for all data types, and a user cannot change it.
 

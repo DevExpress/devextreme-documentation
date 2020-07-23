@@ -5,7 +5,7 @@ hidden:
 ---
 ##### shortDescription
 
-##### return: Node
+##### return: Element
 
 ##### param(flatIndex): Number
 

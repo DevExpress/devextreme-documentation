@@ -18,7 +18,7 @@ The [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formDat
 ##### param(itemElement): dxElement
 #include common-ref-elementparam with { element: "current group item" }
 
-##### return: String | Node | jQuery
+##### return: String | Element | jQuery
 A template name or container.
 
 ---

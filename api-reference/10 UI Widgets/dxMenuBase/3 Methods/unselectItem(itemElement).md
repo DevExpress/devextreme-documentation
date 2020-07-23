@@ -5,7 +5,7 @@ id: dxMenuBase.unselectItem(itemElement)
 ##### shortDescription
 Cancels the selection of an item found using its DOM node.
 
-##### param(itemElement): Node
+##### param(itemElement): Element
 The item's DOM node.
 
 ---

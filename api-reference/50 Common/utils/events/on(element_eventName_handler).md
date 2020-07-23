@@ -7,7 +7,7 @@ export: on
 ##### shortDescription
 Attaches an event handler to the specified elements.
 
-##### param(element): Node | Array<Node>
+##### param(element): Element | Array<Element>
 HTML elements to which to attach a handler.
 
 ##### param(eventName): String

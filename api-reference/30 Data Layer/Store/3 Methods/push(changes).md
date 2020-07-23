@@ -21,7 +21,11 @@ Changes that should be applied to the store's data.
 The key of the data item being updated or removed.
 
 - `index`: Number       
-The index at which a new data item should be inserted. If you specify this index, **reshapeOnPush** is unnecessary (see the note below). Index 0 inserts the data item at the beginning of the dataset. Defaults to -1, which means that the item is added to the end of the [current data page](/Documentation/ApiReference/Data_Layer/DataSource/Methods/#pageIndex).
+The position at which to display a new data item in a UI widget bound to the store. To display the new data item first, set the `index` to 0. To add it to the end of the current page, set the `index` to -1.
+
+    The `index` field is optional. If you do not specify it, the new data item is added to the end of the dataset. However, if data is grouped or split into pages, this item will not appear in the UI widget until data is reshaped. In this case, specify the `index` for the pushed item to appear immediately.
+
+    The `index` field is ignored if **reshapeOnPush** is enabled (see the note below).
 
 [note] The **DataSource** does not automatically sort, group, filter, or otherwise shape pushed data. For this reason, the **DataSource** and the UI widget bound to it may become out of sync. To prevent this, enable the [reshapeOnPush](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/reshapeOnPush.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#reshapeOnPush') option. We also recommend specifying the [pushAggregationTimeout](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pushAggregationTimeout.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pushAggregationTimeout') to reduce the number of updates and recalculations.
 

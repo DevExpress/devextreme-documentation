@@ -12,10 +12,13 @@ Contains arrow buttons that expand/collapse [groups](/concepts/05%20Widgets/Data
 - **Detail expand column**     
 Contains arrow buttons that expand/collapse [detail sections](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/').
 
-- **Buttons column (custom command column)**    
-Contains buttons that perform custom actions. See [Create a Column with Custom Buttons](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/30%20Create%20a%20Column%20with%20Custom%20Buttons.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/#Create_a_Column_with_Custom_Buttons').
+- **Button column (custom command column)**    
+Contains buttons that execute custom actions. See [Create a Column with Custom Buttons](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/30%20Create%20a%20Column%20with%20Custom%20Buttons.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/#Create_a_Column_with_Custom_Buttons').
 
-- **Editing column**        
-A type of buttons column. Contains editing controls. See [Customize the Editing Column](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/15%20Customize%20the%20Editing%20Column/0%20Customize%20the%20Editing%20Column.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/#Customize_the_Editing_Column').
+- **Edit column**        
+A Button column pre-populated with edit commands. See [Customize the Edit Column](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/15%20Customize%20the%20Editing%20Column/0%20Customize%20the%20Editing%20Column.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/#Customize_the_Edit_Column').
+
+- **Drag Column**       
+Contains drag icons. Appears when a column's [type](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#type) is *"drag"*, and the [allowReordering](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/rowDragging/#allowReordering) and [showDragIcons](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/rowDragging/#showDragIcons) options of the [rowDragging](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/rowDragging/) object are **true**.
 
 ![DevExtreme HTML5 JavaScript DataGrid CommandColumns EditingColumn AdaptiveColumn](/images/DataGrid/Command_Columns.png)

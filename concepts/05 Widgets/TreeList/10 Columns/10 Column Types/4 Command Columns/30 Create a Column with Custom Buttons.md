@@ -1,4 +1,4 @@
-The following code shows how to add a command column with custom [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/buttons/'). Note that the editing column should be declared explicitly because a custom command column replaces it.
+The following code shows how to add a command column with custom [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/buttons/'). Note that the edit column should be declared explicitly because a custom command column replaces it.
 
 ---
 ##### jQuery

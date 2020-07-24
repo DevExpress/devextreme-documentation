@@ -2,6 +2,7 @@
 id: dxPivotGrid.Options.onFileSaving
 type: function(e)
 default: null
+deprecated: 
 EventForAction: dxPivotGrid.fileSaving
 ---
 ---

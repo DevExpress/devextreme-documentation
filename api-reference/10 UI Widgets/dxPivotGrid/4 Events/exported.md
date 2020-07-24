@@ -1,6 +1,7 @@
 ---
 id: dxPivotGrid.exported
 type: eventType
+deprecated: 
 ---
 ---
 ##### shortDescription

@@ -17,7 +17,7 @@ This option accepts the following values:
 - *"occurrence"*  
  Enables a user to edit only individual appointment instances.
 
-- *"dialog"*
+- *"dialog"*   
  Displays a dialog that suggests to a user to choose between editing the entire series or only the individual instance.
 
 The Scheduler handles changes made to an instance and a series differently.

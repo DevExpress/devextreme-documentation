@@ -1,6 +1,7 @@
 ---
 id: ExportDataGridProps
 type: Object
+inherits: ExportBaseProps
 ---
 ---
 ##### shortDescription

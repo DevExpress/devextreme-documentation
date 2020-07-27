@@ -12,7 +12,7 @@ Specifies when to display the selection column and row selection checkboxes. App
 The possible values are:
 
 - *"onClick"*
-The selection column is always shown. Checkboxes appear once a user clicks anywhere in it, or if two or more rows are selected [programmatically](/Documentation/Guide/Widgets/DataGrid/Selection/#API/Initial_and_Runtime_Selection) or using [keyboard shortcuts](/Documentation/Guide/Widgets/DataGrid/Keyboard_Support/). Checkboxes disappear once row selection is canceled.
+The selection column is always shown. Checkboxes appear once a user clicks in the column or if two or more rows are selected [programmatically](/Documentation/Guide/Widgets/DataGrid/Selection/#API/Initial_and_Runtime_Selection) or using [keyboard shortcuts](/Documentation/Guide/Widgets/DataGrid/Keyboard_Support/). Checkboxes disappear once row selection is canceled.
 
 - *"onLongTap"*
 The selection column with all the checkboxes appears and disappears on long tap (click and hold).

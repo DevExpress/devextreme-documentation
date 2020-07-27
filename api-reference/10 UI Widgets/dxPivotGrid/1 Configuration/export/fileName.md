@@ -2,6 +2,7 @@
 id: dxPivotGrid.Options.export.fileName
 type: String
 default: 'PivotGrid'
+deprecated: 
 ---
 ---
 ##### shortDescription

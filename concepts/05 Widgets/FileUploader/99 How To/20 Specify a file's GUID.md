@@ -1,4 +1,4 @@
-Use the [valueChanged](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Events/#valueChanged) event to generate a unique identifier for a file before uploading and pass it as a parameter to an upload URL. 
+Use the [valueChanged](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Events/#valueChanged) event to generate a unique identifier for a file before it is uploaded and pass it as a parameter to the upload URL. 
 
 **See Also:** [DataGrid - How to use FileUploader as a cell editor](https://github.com/DevExpress-Examples/DataGrid-How-to-use-FileUploader-as-a-cell-editor).
 

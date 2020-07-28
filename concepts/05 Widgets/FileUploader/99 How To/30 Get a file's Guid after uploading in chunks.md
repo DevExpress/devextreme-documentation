@@ -1,6 +1,6 @@
 Follow the steps below to get a file's GUID in 'chunk' [upload mode](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode):
 
-1. Get the FileGuid value from the chunkMetadata parameter on the server side.
+1. Get the FileGuid value from the chunkMetadata parameter on the server.
 2. Pass it to the response header.
 3. Get the response header in the [uploaded](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Events/#uploaded) or [progress](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Events/#progress) event handlers. 
 

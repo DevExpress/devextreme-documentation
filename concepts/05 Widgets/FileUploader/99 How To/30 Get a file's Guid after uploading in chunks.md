@@ -1,7 +1,7 @@
 Follow the steps below to get a file's GUID in 'chunk' [upload mode](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode):
 
-1. Get the FileGuid value from chunkMetadata parameter on the server side.
-2. Pass it to the response headers.
+1. Get the FileGuid value from the chunkMetadata parameter on the server side.
+2. Pass it to the response header.
 3. Get the response header in the [uploaded](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Events/#uploaded) or [progress](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Events/#progress) event handlers. 
 
 ---
@@ -14,7 +14,6 @@ Follow the steps below to get a file's GUID in 'chunk' [upload mode](/Documentat
         try {
             if(!string.IsNullOrEmpty(chunkMetadata)) {
                 var metaDataObject = JsonConvert.DeserializeObject<ChunkMetadata>(chunkMetadata);
-                //process uploaded file
                 Response.Headers.Add("File-Guid", metaDataObject.FileGuid);
             }
         } catch {

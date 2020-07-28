@@ -59,7 +59,7 @@ Changes the cell value and, optionally, the displayed value after the editor's v
 Gets and sets the delay between the moment a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
 ##### field(e.value): any
-The editor's value. This field is read-only. To change editor's value, use the **e**.**setValue(newValue, newText)** field.
+The editor's value. This field is read-only. To change editor's value, use the **setValue(newValue, newText)** parameter.
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.

@@ -12,8 +12,8 @@ EventForAction: dxTreeList.editorPreparing
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel creating the editor.        
-Set it to **true** and implement a custom editor.
+Allows you to cancel the editor creation.        
+Set this field's value to **true** and implement a custom editor.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

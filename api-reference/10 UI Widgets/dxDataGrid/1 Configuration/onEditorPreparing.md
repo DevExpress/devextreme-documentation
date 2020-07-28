@@ -12,8 +12,8 @@ A function used to customize a cell's [editor](/api-reference/_hidden/GridBaseCo
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel creating the editor.        
-Set it to **true** and implement a custom editor.
+Allows you to cancel the editor creation.        
+Set this field's value to **true** and implement a custom editor.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.
@@ -255,7 +255,7 @@ Use the **parentType** function parameter to check if the editor being customize
 
 - Implement other customization cases.
 
-To set default cell values for newly created rows, use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) handler.
+Use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) handler to set default cell values for newly created rows.
 
 [note] [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) and [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions) options specified in the **editing**.[form](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#form) object take precedence over the **editorName** and **editorOptions** parameters of **onEditorPreparing**.
 

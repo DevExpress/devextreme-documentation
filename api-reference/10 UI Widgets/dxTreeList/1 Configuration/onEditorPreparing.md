@@ -53,13 +53,13 @@ The [properties](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row '/Documenta
 Indicates whether the editor uses right-to-left representation.
 
 ##### field(e.setValue(newValue, newText)): any
-A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.
+Changes the cell value and, optionally, the displayed value after the editor's value is changed.
 
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between the moment a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
 ##### field(e.value): any
-The editor's value.
+The editor's value. This field is read-only. To change editor's value, use the **e**.**setValue(newValue, newText)** field.
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.

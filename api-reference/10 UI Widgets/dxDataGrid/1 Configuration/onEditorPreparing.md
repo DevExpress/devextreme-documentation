@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.editorPreparing
 ---
 ---
 ##### shortDescription
-A function used to customize or replace [default editors](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/columns/#editorOptions'). Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/columns/#editCellTemplate').
+A function used to customize a cell's [editor](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/columns/#editorOptions'). Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/columns/#editCellTemplate').
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -54,13 +54,13 @@ The [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documenta
 Indicates whether the editor uses right-to-left representation.
 
 ##### field(e.setValue(newValue, newText)): any
-A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.
+Changes the cell value and, optionally, the displayed value after the editor's value is changed.
 
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
 ##### field(e.value): any
-The editor's value.
+The editor's value. This field is read-only. To change editor's value, use the **e**.**setValue(newValue, newText)** field.
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
@@ -247,144 +247,6 @@ Use this function to:
 
     ---
 
-- Replace the default editor. The old editor's configuration applies to the replacement editor. To define the configuration from scratch, use an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/columns/#editCellTemplate').
-    
-    In the following code, the DevExtreme [TextArea](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview) widget is the replacement editor:
-
-    ---
-    ##### jQuery
-
-        <!-- tab: index.js -->
-        $(function() {
-            $("#{widgetName}Container").dx{WidgetName}({
-                // ...
-                onEditorPreparing: function(e) {
-                    if (e.dataField === "description" && e.parentType === "dataRow") {
-                        e.editorName = "dxTextArea";
-                    }
-                }
-            });
-        });
-
-    ##### Angular
-
-        <!-- tab: app.component.html -->
-        <dx-{widget-name} ...
-            (onEditorPreparing)="replaceEditor($event)">
-        </dx-{widget-name}>
-
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';
-        import 'devextreme/ui/text_area';
-
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
-        export class AppComponent {
-            replaceEditor(e) { 
-                if (e.dataField === 'description' && e.parentType === 'dataRow') {
-                    e.editorName = 'dxTextArea';
-                }
-            }
-        }
-
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { Dx{WidgetName}Module } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                Dx{WidgetName}Module
-            ],
-            providers: [],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
-
-    ##### Vue
-
-        <!-- tab: App.vue -->
-        <template>
-            <Dx{WidgetName} ...
-                @editor-preparing="replaceEditor">
-            </Dx{WidgetName}>
-        </template>
-
-        <script>
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
-        import 'devextreme/ui/text_area';
-
-        export default {
-            components: {
-                Dx{WidgetName}
-            },
-            // ...
-            methods: {
-                replaceEditor(e) { 
-                    if (e.dataField === 'description' && e.parentType === 'dataRow') {
-                        e.editorName = 'dxTextArea';
-                    }
-                }
-            }
-        }
-        </script>
-
-    ##### React
-
-        <!-- tab: App.js -->
-        import React from 'react';
-
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import {WidgetName} from 'devextreme-react/{widget-name}';
-        import 'devextreme/ui/text_area';
-
-        class App extends React.Component {
-            replaceEditor(e) { 
-                if (e.dataField === 'description' && e.parentType === 'dataRow') {
-                    e.editorName = 'dxTextArea';
-                }
-            }
-            render() {
-                return (
-                    <{WidgetName} ...
-                        onEditorPreparing={this.replaceEditor}>
-                    </{WidgetName}>
-                );
-            }
-        }
-        export default App;
-
-    ##### ASP.NET MVC Controls
-
-        <!-- tab: Razor C# -->
-        @(Html.DevExtreme().{WidgetName}()
-            // ...
-            .OnEditorPreparing("replaceEditor")
-        )
-
-        <script type="text/javascript">
-            function replaceEditor(e) {
-                if (e.dataField === "description" && e.parentType === "dataRow") {
-                    e.editorName = "dxTextArea";
-                }
-            }
-        </script>
-
-    ---
 
 - Customize editors used in the [search panel](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/searchPanel/'), [filter row](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/filterRow/'), and [selection column](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/').        
 Use the **parentType** function parameter to check if the editor being customized belongs to one of these UI elements.
@@ -392,6 +254,10 @@ Use the **parentType** function parameter to check if the editor being customize
 - [Dynamically change editor options in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/Widgets/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
 
 - Implement other customization cases.
+
+To set default cell values for newly created rows, use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) handler.
+
+[note] [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) and [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions) options specified in the **editing**.[form](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#form) object take precedence over the **editorName** and **editorOptions** parameters of **onEditorPreparing**.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/"

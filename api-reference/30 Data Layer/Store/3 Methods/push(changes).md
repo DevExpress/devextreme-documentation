@@ -9,21 +9,41 @@ Pushes data changes to the store and notifies the [DataSource](/api-reference/30
 Data changes to be pushed.
 
 ---
-There are three possible data change types:
+Each data change is an object that can have the following fields:
+
+- `type`: String        
+Data change type: *"insert"*, *"update"*, or *"remove"*.
+
+- `data`: Object     
+Changes that should be applied to the store's data.
+
+- `key`: any        
+The key of the data item being updated or removed.
+
+- `index`: Number       
+The position at which to display a new data item in a UI widget bound to the store. To display the new data item first, set the `index` to 0. To add it to the end of the current page, set the `index` to -1.
+
+    The `index` field is optional. If you do not specify it, the new data item is added to the end of the dataset. However, if data is grouped or split into pages, this item does not appear in the UI widget until data is reshaped. In this case, specify the `index` to show the pushed item immediately.
+
+    The `index` field is ignored if **reshapeOnPush** is enabled (see the note below).
+
+[note] The **DataSource** does not automatically sort, group, filter, or otherwise shape pushed data. For this reason, the **DataSource** and the UI widget bound to it can be out of sync. To prevent this, enable the [reshapeOnPush](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/reshapeOnPush.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#reshapeOnPush') option. We also recommend specifying the [pushAggregationTimeout](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pushAggregationTimeout.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pushAggregationTimeout') to reduce the number of updates and recalculations.
+
+The following code shows how to use the **push(changes)** method for each change type:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     var store = new DevExpress.data.{WidgetName}({
         // {WidgetName} is configured here
     });
  
-    store.push([{ type: "insert", data: data }]);
-    store.push([{ type: "update", data: data, key: key }]);
+    store.push([{ type: "insert", data: dataObj, index: index }]);
+    store.push([{ type: "update", data: dataObj, key: key }]);
     store.push([{ type: "remove", key: key }]);
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import {WidgetName} from "devextreme/data/{widget_name}";
@@ -34,8 +54,8 @@ There are three possible data change types:
             this.store = new {WidgetName}({
                 // {WidgetName} is configured here
             });
-            this.store.push([{ type: "insert", data: data }]);
-            this.store.push([{ type: "update", data: data, key: key }]);
+            this.store.push([{ type: "insert", data: dataObj, index: index }]);
+            this.store.push([{ type: "update", data: dataObj, key: key }]);
             this.store.push([{ type: "remove", key: key }]);
         };
     }
@@ -57,8 +77,8 @@ There are three possible data change types:
             }
         },
         mounted() {
-            store.push([{ type: "insert", data: data }]);
-            store.push([{ type: "update", data: data, key: key }]);
+            store.push([{ type: "insert", data: dataObj, index: index }]);
+            store.push([{ type: "update", data: dataObj, key: key }]);
             store.push([{ type: "remove", key: key }]);
         }
     }
@@ -78,8 +98,8 @@ There are three possible data change types:
         constructor(props) {
             super(props);
 
-            store.push([{ type: "insert", data: data }]);
-            store.push([{ type: "update", data: data, key: key }]);
+            store.push([{ type: "insert", data: dataObj, index: index }]);
+            store.push([{ type: "update", data: dataObj, key: key }]);
             store.push([{ type: "remove", key: key }]);
         }
         // ...
@@ -88,11 +108,7 @@ There are three possible data change types:
 
 ---
 
-The **DataSource** does not automatically sort, group, filter, or otherwise shape pushed data. If it should, enable the [reshapeOnPush](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/reshapeOnPush.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#reshapeOnPush') option. We also recommend specifying the [pushAggregationTimeout](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pushAggregationTimeout.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pushAggregationTimeout') to reduce the number of updates and recalculations.
-
-When data is grouped or paginated, the widget bound to the **DataSource** ignores inserted data items until data is reshaped. Disable [grouping](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') and [paging](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') or enable **reshapeOnPush** for the inserted data items to appear immediately after they are pushed. The **DataGrid** and **TreeList** widgets have individual [grouping](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex') and [paging](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#enabled') options. Use them instead of the corresponding **DataSource** options.
-
-[important] This method does not modify the remote data source. It is used to push changes from the remote data source to the store without reloading all data.
+[important] This method does not modify the remote data source. It is used to push changes from the remote data source to the local store without reloading all data.
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RealTimeUpdates/",

@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the search box is visible.
 
 ---
-<!-- Description goes here -->

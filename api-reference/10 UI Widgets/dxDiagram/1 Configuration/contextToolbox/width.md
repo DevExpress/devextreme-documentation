@@ -5,7 +5,6 @@ default: 152
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the context toolbox's width in pixels.
 
 ---
-<!-- Description goes here -->

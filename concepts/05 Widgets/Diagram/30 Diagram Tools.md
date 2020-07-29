@@ -25,6 +25,8 @@ The **Diagram** widget allows you to customize its UI tools with the following o
                   contextToolbox: {
                         enabled: true,
                         category: "flowchart"
+                        shapeIconsPerRow: 5,
+                        width: 200
                   },
                   historyToolbar: {
                         visible: false
@@ -43,6 +45,9 @@ The **Diagram** widget allows you to customize its UI tools with the following o
                   toolbox: {
                         visibility: 'visible',
                         groups: ["general", { category: "flowchart", title: "Flowchart", expanded: true }]
+                        showSearch: false,
+                        shapeIconsPerRow: 4,
+                        width: 220
                   },
                   viewToolbar: {
                         visible: true

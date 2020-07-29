@@ -29,10 +29,10 @@ Indicates whether the editor is disabled.
 
 ##### field(e.editorName): String
 Allows you to change the editor. Accepts names of DevExtreme widgets only, for example, *"dxTextBox"*.      
-Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used.
+Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) option specified in the **editing**.[form]() object has precedence over this parameter. 
 
 ##### field(e.editorOptions): Object
-Gets and sets the editor configuration.
+Gets and sets the editor configuration. [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions) specified in the **editing**.[form]() object have precedence over this parameter.  
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
@@ -54,7 +54,7 @@ The [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documenta
 Indicates whether the editor uses right-to-left representation.
 
 ##### field(e.setValue(newValue, newText)): any
-Changes the cell value and, optionally, the displayed value after the editor's value is changed.
+A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.
 
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
@@ -255,13 +255,11 @@ Use the **parentType** function parameter to check if the editor being customize
 
 - Implement other customization cases.
 
-Use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) handler to set default cell values for newly created rows.
-
-[note] [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) and [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions) options specified in the **editing**.[form](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#form) object take precedence over the **editorName** and **editorOptions** parameters of **onEditorPreparing**.
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/"
 }
+
+[note]**onEditorPreparing** in not an appropriate function to set a default value for an editor. Use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) function for this purpose.
 
 #####See Also#####
 - **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '{basewidgetpath}/columns/#showEditorAlways')

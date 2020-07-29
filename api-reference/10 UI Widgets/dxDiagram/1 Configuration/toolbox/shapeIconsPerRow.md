@@ -5,7 +5,6 @@ default: 3
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the number of shape icons in a row.
 
 ---
-<!-- Description goes here -->

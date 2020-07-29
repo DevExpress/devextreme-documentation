@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the editor creation.        
-Set this field's value to **true** and implement a custom editor.
+You can set this field's value to **true** and implement a custom editor.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.
@@ -60,7 +60,7 @@ Changes the cell value and, optionally, the displayed value after the editor's v
 Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
 ##### field(e.value): any
-The editor's value. This field is read-only. To change editor's value, use the **setValue(newValue, newText)** parameter.
+The editor's value. This field is read-only. To change the editor's value, use the **setValue(newValue, newText)** function parameter.
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.

@@ -1,6 +1,7 @@
 ---
 id: dxPivotGrid.fileSaving
 type: eventType
+deprecated: 
 ---
 ---
 ##### shortDescription

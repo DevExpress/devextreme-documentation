@@ -122,7 +122,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#textExpr">textExpr</a></td>
         <td>An edge's text.</td>
-        <td>"yes"</td>
+        <td>"text" or { 0.3: "text1", 0.8: "text2" }</td>
     </tr>    
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr">textStyleExpr</a></td>

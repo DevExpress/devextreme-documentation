@@ -1,10 +1,11 @@
 ---
-id: ExportLoadPanel
+id: ExportPivotGridProps
 type: Object
+inherits: ExportBaseProps
 ---
 ---
 ##### shortDescription
-Configures the load panel.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

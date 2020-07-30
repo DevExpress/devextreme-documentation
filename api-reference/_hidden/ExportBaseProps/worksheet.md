@@ -1,10 +1,11 @@
 ---
-id: ExportLoadPanel
+id: ExportBaseProps.worksheet
 type: Object
+default: undefined
 ---
 ---
 ##### shortDescription
-Configures the load panel.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

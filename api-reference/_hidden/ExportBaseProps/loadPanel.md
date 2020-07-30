@@ -1,5 +1,5 @@
 ---
-id: ExportDataGridProps.loadPanel
+id: ExportBaseProps.loadPanel
 type: ExportLoadPanel
 inheritsType: ExportLoadPanel
 ---

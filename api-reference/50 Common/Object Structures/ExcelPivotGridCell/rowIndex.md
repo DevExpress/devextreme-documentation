@@ -1,11 +1,10 @@
 ---
-id: CellAddress
-type: Object
+id: ExcelPivotGridCell.rowIndex
+type: Number
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
 ---
-
 <!-- Description goes here -->

@@ -12,7 +12,7 @@ A function used to customize a cell's [editor](/api-reference/_hidden/GridBaseCo
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel the editor creation.        
+Allows you to cancel the editor's creation.        
 You can set this field's value to **true** and implement a custom editor.
 
 ##### field(e.component): {WidgetName}

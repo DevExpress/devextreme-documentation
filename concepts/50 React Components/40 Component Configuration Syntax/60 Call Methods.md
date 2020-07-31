@@ -75,7 +75,7 @@ If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">R
         };
         return (
             <div>
-                <TextBox ref={textBoxRef} />
+                <TextBox ref={textBox} />
                 <Button text="Focus TextBox" onClick={focusTextBox} />
             </div>
         );       

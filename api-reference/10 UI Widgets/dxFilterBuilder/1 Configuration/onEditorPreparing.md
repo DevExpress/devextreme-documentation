@@ -56,7 +56,7 @@ A method you should call to change the field's value after the editor's value ch
 Gets and sets the delay between when a user stops typing the field value and when it is applied.
 
 ##### field(e.value): any
-The editor's value.
+<!-- %field(e.value)% -->
 
 ##### field(e.width): Number
 The editor's width.
@@ -118,61 +118,7 @@ In the following code, a default editor is replaced with the DevExtreme [TextAre
     
 ---
 
-The following code shows how to replace a default editor with a non-DevExtreme editor (an HTML checkbox in this case):
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#filterBuilder").dxFilterBuilder({
-            // ...
-            onEditorPreparing: function(e) {
-                if(e.dataField === "completed") {
-                    e.cancel = true; // Cancels creating the default editor
-                    $('<input type="checkbox">')
-                        .prop("checked", e.value)
-                        .on("change", function(event) {
-                            e.setValue(event.target.checked);
-                        })
-                        .appendTo(e.editorElement);
-                }
-            }
-        });
-    });
-
-##### Angular
-
-    <!--TypeScript-->
-    import { DxFilterBuilderModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        onEditorPreparing (e) { 
-            if(e.dataField === "completed") {
-                e.cancel = true; // Cancels creating the default editor
-                let checkbox = document.createElement("INPUT");
-                checkbox.setAttribute("type", "checkbox");
-                checkbox.setAttribute("checked", e.value);
-                checkbox.addEventListener("change", (event) => {
-                    e.setValue(event.target.checked);
-                });
-                e.editorElement.appendChild(checkbox);
-            }
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxFilterBuilderModule
-        ],
-        // ...
-    })
-
-    <!--HTML-->
-    <dx-filter-builder ...
-        (onEditorPreparing)="onEditorPreparing($event)">
-    </dx-filter-builder>
-    
----
 
 [note]This function is not executed for fields that use the [editorTemplate](/api-reference/_hidden/dxFilterBuilderField/editorTemplate.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#editorTemplate').
+
+<!-- import * from 'api-reference\10 UI Widgets\dxDataGrid\1 Configuration\onEditorPreparing.md' -->

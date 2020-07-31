@@ -12,8 +12,7 @@ A function used to customize or replace [default editors](/api-reference/_hidden
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel creating the editor.        
-Set it to **true** and implement a custom editor.
+<!-- %field(e.cancel)% -->
 
 ##### field(e.component): {WidgetName}
 The widget's instance.
@@ -28,11 +27,10 @@ Indicates whether the editor is disabled.
 #include common-ref-elementparam with { element: "editor" }
 
 ##### field(e.editorName): String
-Allows you to change the editor. Accepts names of DevExtreme widgets only, for example, *"dxTextBox"*.       
-Import a new editor's module when [DevExtreme modules](/concepts/Common/30%20Modularity '/Documentation/Guide/Common/Modularity/') are used.
+<!-- %field(e.editorName)% -->
 
 ##### field(e.editorOptions): Object
-Gets and sets the editor configuration.
+<!-- %field(e.editorOptions)% -->
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
@@ -53,13 +51,13 @@ The [properties](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row '/Documenta
 Indicates whether the editor uses right-to-left representation.
 
 ##### field(e.setValue(newValue, newText)): any
-A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.
+<!-- %field(e.setValue(newValue, newText))% -->
 
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between the moment a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
 ##### field(e.value): any
-The editor's value.
+<!-- %field(e.value)% -->
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.

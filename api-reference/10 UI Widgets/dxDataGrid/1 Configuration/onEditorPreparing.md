@@ -259,7 +259,7 @@ Use the **parentType** function parameter to check if the editor being customize
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/"
 }
 
-[note]**onEditorPreparing** in not an appropriate function to set a default value for an editor. Use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) function for this purpose.
+[note]We do not recommend that you use the onEditorPreparing function to specify an editor's default value. Use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) function instead.
 
 #####See Also#####
 - **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '{basewidgetpath}/columns/#showEditorAlways')

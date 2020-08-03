@@ -86,7 +86,7 @@ The code below configures the [DateBox](/Documentation/ApiReference/UI_Widgets/d
             FullName: "",
             BirthDate: null
         };
-        maxDate: Date = new Date();
+        maxDate: Date = new Date().setYear(new Date().getYear() - 21);;
     }
 
     <!-- tab: app.module.ts -->
@@ -167,7 +167,7 @@ The code below configures the [DateBox](/Documentation/ApiReference/UI_Widgets/d
                     FullName: "",
                     BirthDate: null
                 },
-                maxDate: new Date()
+                maxDate: new Date().setYear(new Date().getYear() - 21);
             }
         }
     }

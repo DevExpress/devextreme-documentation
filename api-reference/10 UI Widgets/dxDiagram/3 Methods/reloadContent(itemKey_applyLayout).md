@@ -3,13 +3,20 @@ id: dxDiagram.reloadContent(itemKey, applyLayout)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Reloads diagram data from a data source.
 
 ##### param(itemKey?): any
-<!-- Description goes here -->
+Specifies a data key of an item to reload.
+* If the parameter is specified the widget reloads the corresponding item and every added and deleted items.
+* If the parameter is not specified the widget reloads the entire diagram.
 
 ##### param(applyLayout?): Boolean
-<!-- Description goes here -->
-
+Specifies whether the widget applies the [auto layout](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/autoLayout/) after content is reloaded.
 ---
-<!-- Description goes here -->
+The changes applied by this method are reflected in a diagram history and can be undone and redone by the UI.
+
+Use a data source's **reload** method to update the entire diagram, clear the history, and set the [hasChanges](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#hasChanges) option to `false`.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/jQuery/Light/"
+}

@@ -29,10 +29,10 @@ Indicates whether the editor is disabled.
 
 ##### field(e.editorName): String
 Allows you to change the editor. Accepts names of DevExtreme widgets only, for example, *"dxTextBox"*.      
-Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) option specified in the **editing**.[form]({basewidgetpath}/Configuration/editing/#form) object has precedence over this parameter. 
+Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) option specified in the **editing**.[form]({basewidgetpath}/Configuration/editing/#form) object has precedence over this parameter.
 
 ##### field(e.editorOptions): Object
-Gets and sets the editor's configuration. [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions) specified in the **editing**.[form]({basewidgetpath}/Configuration/editing/#form) object have precedence over this parameter.  
+Gets and sets the editor's configuration. [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions) specified in the **editing**.[form]({basewidgetpath}/Configuration/editing/#form) object have precedence over this parameter.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

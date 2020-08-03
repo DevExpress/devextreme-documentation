@@ -176,7 +176,7 @@ The code below configures the [DateBox](/Documentation/ApiReference/UI_Widgets/d
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useState } from 'react';
 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -191,59 +191,39 @@ The code below configures the [DateBox](/Documentation/ApiReference/UI_Widgets/d
         RangeRule
     } from 'devextreme-react/validator';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                customer: {
-                    Email: "",
-                    FullName: "",
-                    BirthDate: null
-                }
-            };
-            this.maxDate = new Date();
-            this.renderDateBox = this.renderDateBox.bind(this);
-            this.updateBirthDate = this.updateBirthDate.bind(this);
-        }
+    export default function App() {
+        const [customer, setCustomer] = useState({
+            Email: "",
+            FullName: "",
+            BirthDate: null
+        });
 
-        renderDateBox() {
-            return (
-                <DateBox
-                    value={this.state.customer.BirthDate}
-                    onValueChanged={this.updateBirthDate}>
-                    <Validator validationGroup="customerData">
-                        <RequiredRule message="Date of birth is required" />
-                        <RangeRule max={this.maxDate} message="You must be at least 21 years old" />
-                    </Validator>
-                </DateBox>
-            )
-        }
+        const maxDate = new Date().setYear(new Date().getYear() - 21);
 
-        updateBirthDate(e) {
-            this.setState(prevState => ({
-                customer: {
-                    ...prevState.customer,
-                    BirthDate: e.value 
-                }
-            }));
-        }
+        const updateBirthDate = e => {
+            setCustomer(prevState => {
+                return { ...prevState, BirthDate: e.value };
+            });
+        };
 
-        render() {
-            return (
-                <Form
-                    formData={this.state.customer}
-                    validationGroup="customerData">
-                    {/* ... */}
-                    <SimpleItem
-                        render={this.renderDateBox}>
-                        <Label text="Date of birth" />
-                    </SimpleItem>
-                </Form>
-            );
-        }
+        return (
+            <Form formData={customer} validationGroup="customerData">
+                {/* ... */}
+                <SimpleItem>
+                    <Label text="Date of birth" />
+                    <DateBox value={customer.BirthDate} onValueChanged={updateBirthDate}>
+                        <Validator validationGroup="customerData">
+                            <RequiredRule message="Date of birth is required" />
+                            <RangeRule
+                                max={maxDate}
+                                message="You must be at least 21 years old"
+                            />
+                        </Validator>
+                    </DateBox>
+                </SimpleItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -4,7 +4,9 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the aspect ratio of the shape in the toolbox.
 
 ---
-<!-- Description goes here -->
+The size of a shape in the toolbox is determined automatically based on the toolbox [width](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/toolbox/#width) and the [number of shapes per row](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/toolbox/#shapeIconsPerRow).
+
+Use the **toolboxWidthToHeightRatio** option to change the aspect ratio of the shape.

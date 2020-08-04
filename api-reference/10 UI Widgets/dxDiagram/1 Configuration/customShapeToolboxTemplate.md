@@ -4,16 +4,25 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for shapes in the toolbox.
 
 ##### param(container): dxSVGElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "shape" }
 
 ##### param(data): Object
-<!-- Description goes here -->
+Information about the currently processed shape.
 
 ##### field(data.item): dxDiagramShape
-<!-- Description goes here -->
+Information about the currently processed shape.
 
 ---
-<!-- Description goes here -->
+The template content must be presented as SVG elements.
+
+Use the [toolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/toolboxTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#toolboxTemplate') option to define a template for each shape in the toolbox.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"
+}
+
+#####See Also#####
+- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')

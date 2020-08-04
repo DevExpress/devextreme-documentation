@@ -103,6 +103,7 @@ Use the following options to create a shape template:
 
     <!-- tab: App.js -->
     import Diagram, { CustomShape, ContextToolbox, PropertiesPanel, Group, Tab, Toolbox, Nodes, AutoLayout } from 'devextreme-react/diagram';
+    import CustomShapeTemplate from './CustomShapeTemplate.js';
 
     class App extends React.Component {
     constructor(props) {
@@ -216,73 +217,54 @@ Use the following options to create a template for a shape in the toolbox:
       </template>
       ...
 
-    <!-- tab: CustomShapeTemplate.vue -->
+    <!-- tab: CustomShapeToolboxTemplate.vue -->
     <template>
     <svg class="template">
         <text
         class="template-name"
         x="50%"
-        y="20%"
+        y="40%"
         >
-        {{ employeeName }}
+        New
         </text>
         <text
         class="template-title"
         x="50%"
-        y="45%"
+        y="70%"
         >
-        {{ employeeTitle }}
-        </text>
-        <text
-        class="template-button"
-        x="40%"
-        y="85%"
-        @click="editEmployeeFunc"
-        >
-        Edit
-        </text>
-        <text
-        class="template-button"
-        x="62%"
-        y="85%"
-        @click="deleteEmployeeFunc"
-        >
-        Delete
+        Employee
         </text>
     </svg>
     </template>
-    ...
+        ...
 
 ##### React
 
     <!-- tab: App.js -->
     import Diagram, { CustomShape, ContextToolbox, PropertiesPanel, Group, Tab, Toolbox, Nodes, AutoLayout } from 'devextreme-react/diagram';
+    import CustomShapeToolboxTemplate from './CustomShapeToolboxTemplate.js';
 
     class App extends React.Component {
     constructor(props) {
         this.diagramRef = React.createRef();
-        this.customShapeTemplate = this.customShapeTemplate.bind(this);
+        this.customShapeToolboxTemplate = this.customShapeToolboxTemplate.bind(this);
         ...
     }
 
     render() {
         return (
         <div id="container">
-            <Diagram id="diagram" ref={this.diagramRef} customShapeRender={this.customShapeTemplate}>
+            <Diagram id="diagram" ref={this.diagramRef} customShapeToolboxRender={this.customShapeToolboxTemplate}>
             ...
 
-    <!-- tab: CustomShapeTemplate.js -->
-    export default function CustomShapeTemplate(employee, editEmployee, deleteEmployee) {
-        var employeeName = employee ? employee.Full_Name : 'Employee\'s Name';
-        var employeeTitle = employee ? employee.Title : 'Employee\'s Title';
-        return (
-            <svg className="template">
-            <text className="template-name" x="50%" y="20%">{employeeName}</text>
-            <text className="template-title" x="50%" y="45%">{employeeTitle}</text>
-            <text className="template-button" x="40%" y="85%" onClick={editEmployee}>Edit</text>
-            <text className="template-button" x="62%" y="85%" onClick={deleteEmployee}>Delete</text>
-            </svg>
-        );
+    <!-- tab: CustomShapeToolboxTemplate.js -->
+    export default function CustomShapeToolboxTemplate() {
+    return (
+        <svg className="template">
+        <text className="template-name" x="50%" y="40%">New</text>
+        <text className="template-title" x="50%" y="70%">Employee</text>
+        </svg>
+    );
     }
 
 
@@ -291,14 +273,12 @@ Use the following options to create a template for a shape in the toolbox:
     <!-- tab: CustomShapesWithTemplatesWithEditing.cshtml -->
     @(Html.DevExtreme().Diagram()
         .ID("diagram")
-        .CustomShapeTemplate(@<text>
+        .CustomShapeToolboxTemplate(@<text>
             <svg class="template">
-                <text class="template-name" x="50%" y="20%"><%- dataItem ? dataItem.FullName : "Employee's Name" %></text>
-                <text class="template-title" x="50%" y="45%"><%- dataItem ? dataItem.Title : "Employee's Title" %></text>
-                <text class="template-button" x="40%" y="85%" onclick="editEmployee(<%- dataItem && JSON.stringify(dataItem) %>)">Edit</text>
-                <text class="template-button" x="62%" y="85%" onclick="deleteEmployee(<%- dataItem && JSON.stringify(dataItem) %>)">Delete</text>
+                <text class="template-name" x="50%" y="40%">New</text>
+                <text class="template-title" x="50%" y="70%">Employee</text>
             </svg>
-            </text>)
+        </text>)
         ...
 
 ##### ASP.NET MVC Controls
@@ -306,14 +286,12 @@ Use the following options to create a template for a shape in the toolbox:
     <!-- tab: CustomShapesWithTemplatesWithEditing.cshtml -->
     @(Html.DevExtreme().Diagram()
         .ID("diagram")
-        .CustomShapeTemplate(@<text>
+        .CustomShapeToolboxTemplate(@<text>
             <svg class="template">
-                <text class="template-name" x="50%" y="20%"><%- dataItem ? dataItem.FullName : "Employee's Name" %></text>
-                <text class="template-title" x="50%" y="45%"><%- dataItem ? dataItem.Title : "Employee's Title" %></text>
-                <text class="template-button" x="40%" y="85%" onclick="editEmployee(<%- dataItem && JSON.stringify(dataItem) %>)">Edit</text>
-                <text class="template-button" x="62%" y="85%" onclick="deleteEmployee(<%- dataItem && JSON.stringify(dataItem) %>)">Delete</text>
+                <text class="template-name" x="50%" y="40%">New</text>
+                <text class="template-title" x="50%" y="70%">Employee</text>
             </svg>
-            </text>)
+        </text>)
             ...
 
 ---

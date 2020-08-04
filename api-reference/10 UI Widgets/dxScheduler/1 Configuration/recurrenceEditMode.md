@@ -18,11 +18,9 @@ This option accepts the following values:
  Enables a user to edit only individual appointment instances.
 
 - *"dialog"*   
- Displays a dialog that suggests to a user to choose between editing the entire series or only the individual instance.
+ Displays a dialog that suggests a user to choose between editing the entire series or only the individual instance.
 
-The **Scheduler** handles changes made to an instance and a series differently.
-
-If a user edits a recurring appointment instance, two actions are performed on the data objects:
+The **Scheduler** handles changes made to an instance and a series differently. If a user edits a recurring appointment instance, two actions are performed on the data objects:
 
 - The series' data object is updated.
 The **Scheduler** updates the field specified by [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceExceptionExpr'), thus adding the edited instance to exceptions. The [onAppointmentUpdating](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentUpdating') and [onAppointmentUpdated](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentUpdated.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentUpdated') event handlers are executed.

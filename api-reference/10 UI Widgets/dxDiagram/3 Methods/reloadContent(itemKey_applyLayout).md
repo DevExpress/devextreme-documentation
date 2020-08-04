@@ -12,6 +12,7 @@ Specifies the data key of the item to reload.
 
 ##### param(applyLayout?): Boolean
 Specifies whether the widget applies the [auto layout](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/autoLayout/) after content is reloaded.
+
 ---
 Changes applied by this method are reflected in the diagram history. You can use the UI to undo and redo these changes.
 

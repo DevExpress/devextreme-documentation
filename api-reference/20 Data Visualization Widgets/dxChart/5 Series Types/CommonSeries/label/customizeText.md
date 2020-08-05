@@ -16,77 +16,77 @@ The text for the label to display.
 ---
 This option accepts a function whose parameter exposes the following fields.
 
-    <table class="dx-table full-width">
-            <tr>
-                <th>Field</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>originalValue</td>
-                <td>The raw value of the point.</td>
-            </tr>
-            <tr>
-                <td>value</td>
-                <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
-            </tr>
-            <tr>
-                <td>valueText</td>
-                <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
-            </tr>
-            <tr>
-                <td>originalArgument</td>
-                <td>The raw argument of the point.</td>
-            </tr>
-            <tr>
-                <td>argument</td>
-                <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
-            </tr>
-            <tr>
-                <td>argumentText</td>
-                <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#argumentFormat">format</a> and converted to string.</td>
-            </tr>
-            <tr>
-                <td>size</td>
-                <td>The size value of the point. For <i>bubble</i> series only.</td>
-            </tr>
-            <tr>
-                <td>index</td>
-                <td><i>0</i> - if the point is minimum; <i>1</i> - if the point is maximum. For <i>range area</i> and <i>range bar</i> series only.</td>
-            </tr>
-            <tr>
-                <td>point</td>
-                <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/">Point</a> object.</td>
-            </tr>
-            <tr>
-                <td>seriesName</td>
-                <td>The name of the series to which the point belongs.</td>
-            </tr>
-    </table>
+<table class="dx-table full-width">
+    <tr>
+        <th>Field</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>originalValue</td>
+        <td>The raw value of the point.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+    </tr>
+    <tr>
+        <td>valueText</td>
+        <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+    </tr>
+    <tr>
+        <td>originalArgument</td>
+        <td>The raw argument of the point.</td>
+    </tr>
+    <tr>
+        <td>argument</td>
+        <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
+    </tr>
+    <tr>
+        <td>argumentText</td>
+        <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#argumentFormat">format</a> and converted to string.</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>The size value of the point. For <i>bubble</i> series only.</td>
+    </tr>
+    <tr>
+        <td>index</td>
+        <td><i>0</i> - if the point is minimum; <i>1</i> - if the point is maximum. For <i>range area</i> and <i>range bar</i> series only.</td>
+    </tr>
+    <tr>
+        <td>point</td>
+        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/">Point</a> object.</td>
+    </tr>
+    <tr>
+        <td>seriesName</td>
+        <td>The name of the series to which the point belongs.</td>
+    </tr>
+</table>
 
 The following fields are inherent to stacked-like series only.
 
-    <table class="dx-table full-width">
-            <tr>
-                <th>Field</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>percent</td>
-                <td>The percentage value of the point.</td>
-            </tr>
-            <tr>
-                <td>percentText</td>
-                <td>The <i>percent</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
-            </tr>
-            <tr>
-                <td>total</td>
-                <td>The sum of all values in the stack.</td>
-            </tr>
-            <tr>
-                <td>totalText</td>
-                <td>The <i>total</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
-            </tr>
-    </table>
+<table class="dx-table full-width">
+    <tr>
+        <th>Field</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>percent</td>
+        <td>The percentage value of the point.</td>
+    </tr>
+    <tr>
+        <td>percentText</td>
+        <td>The <i>percent</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+    </tr>
+    <tr>
+        <td>total</td>
+        <td>The sum of all values in the stack.</td>
+    </tr>
+    <tr>
+        <td>totalText</td>
+        <td>The <i>total</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+    </tr>
+</table>
 
 The following fields are inherent to financial series ([candlestick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/CandleStickSeries/') and [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/StockSeries/')) only.
 

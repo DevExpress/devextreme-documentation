@@ -164,7 +164,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 Date formats require additional configuration. The **PivotGridDataSource** groups date field values by date component: Year-Quarter-Month. For this, the values are converted from dates to numbers, but numbers cannot be formatted using date formats. To apply a date format in this case, you need to override this grouping.
 
-The following code declares a custom group for the `ShippingDate` data field. This configuration overrides this field's default grouping. Field values are grouped first by year, then by month. Months are formatted using the `MMM` format (`Jan`, `Feb`, `Mar`, etc.). This format is applied to the Date values returned from the [selector](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#selector) function.
+The following code declares a custom group for the `ShippingDate` data field. This configuration overrides this field's default grouping. Field values are grouped first by year, then by month. Months are formatted with the `MMM` format (`Jan`, `Feb`, `Mar`, etc.). This format is applied to the Date values returned from the [selector](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#selector) function.
 
 ---
 ##### jQuery

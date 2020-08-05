@@ -201,9 +201,10 @@ The code below configures the [DateBox](/Documentation/ApiReference/UI_Widgets/d
         const maxDate = new Date().setYear(new Date().getYear() - 21);
 
         const updateBirthDate = e => {
-            setCustomer(prevState => {
-                return { ...prevState, BirthDate: e.value };
-            });
+            setCustomer(prevState => ({
+                ...prevState,
+                BirthDate: e.value;
+            }));
         };
 
         return (

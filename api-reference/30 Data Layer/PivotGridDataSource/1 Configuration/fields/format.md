@@ -162,6 +162,207 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 ---
 
+Date formats require additional configuration. The **PivotGridDataSource** groups date field values by date component: Year-Quarter-Month. For this, the values are converted from dates to numbers, but you cannot use date formats to format numbers. To apply a date format in this case, override this grouping.
+
+The following code declares a custom group for the `ShippingDate` data field. This configuration overrides this field's default grouping. Field values are grouped by year and then by month. Months are formatted as `MMM` (`Jan`, `Feb`, `Mar`, etc.). This format is applied to the Date values the [selector](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#selector) function returns.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        const pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
+            // ...
+            fields: [{
+                dataField: "ShippingDate",
+                dataType: "date",
+                area: "column",
+                groupName: "dateGroup"
+            }, {
+                groupName: "dateGroup",
+                groupIndex: 0,
+                groupInterval: "year"
+            }, {
+                groupName: "dateGroup",
+                groupIndex: 1,
+                format: "MMM",
+                selector: function(data) {
+                    const year = new Date(data.date).getFullYear();
+                    const month = new Date(data.date).getMonth();
+                    return new Date(year, month);
+                } 
+            },
+            // ...
+            ]
+        });
+
+        $("#pivotGridContainer").dxPivotGrid({
+            dataSource: pivotGridDataSource
+        });
+    });
+
+##### Angular
+
+        <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        pivotGridDataSource: PivotGridDataSource;
+        constructor() {
+            this.pivotGridDataSource = new PivotGridDataSource({
+                // ...
+                fields: [{
+                    dataField: "ShippingDate",
+                    dataType: "date",
+                    area: "column",
+                    groupName: "dateGroup"
+                }, {
+                    groupName: "dateGroup",
+                    groupIndex: 0,
+                    groupInterval: "year"
+                }, {
+                    groupName: "dateGroup",
+                    groupIndex: 1,
+                    format: "MMM",
+                    selector: function(data) {
+                        const year = new Date(data.date).getFullYear();
+                        const month = new Date(data.date).getMonth();
+                        return new Date(year, month);
+                    } 
+                },
+                // ...
+                ]
+            });
+        }
+    }
+
+    <!-- tab: app.component.html -->
+    <dx-pivot-grid
+        [dataSource]="pivotGridDataSource">
+    </dx-pivot-grid>
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxPivotGridModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxPivotGridModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPivotGrid
+            :data-source="pivotGridDataSource"
+        />
+    </template>
+    
+    <script>
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+    import DxPivotGrid from 'devextreme-vue/pivot-grid';
+
+    const pivotGridDataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "ShippingDate",
+            dataType: "date",
+            area: "column",
+            groupName: "dateGroup"
+        }, {
+            groupName: "dateGroup",
+            groupIndex: 0,
+            groupInterval: "year"
+        }, {
+            groupName: "dateGroup",
+            groupIndex: 1,
+            format: "MMM",
+            selector: function(data) {
+                const year = new Date(data.date).getFullYear();
+                const month = new Date(data.date).getMonth();
+                return new Date(year, month);
+            } 
+        },
+        // ...
+        ]
+    });
+
+    export default {
+        components: {
+            DxPivotGrid
+        },
+        data() {
+            return {
+                pivotGridDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import PivotGrid from 'devextreme-react/pivot-grid';
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const pivotGridDataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "ShippingDate",
+            dataType: "date",
+            area: "column",
+            groupName: "dateGroup"
+        }, {
+            groupName: "dateGroup",
+            groupIndex: 0,
+            groupInterval: "year"
+        }, {
+            groupName: "dateGroup",
+            groupIndex: 1,
+            format: "MMM",
+            selector: function(data) {
+                const year = new Date(data.date).getFullYear();
+                const month = new Date(data.date).getMonth();
+                return new Date(year, month);
+            } 
+        },
+        // ...
+        ]
+    });
+
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
+    }
+
+---
+
 When a format is [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/), it is converted to an Excel format as follows:
 
 - **Numeric**   

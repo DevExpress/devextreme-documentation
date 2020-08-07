@@ -21,7 +21,7 @@ The widget's instance.
 #include common-ref-eventparam
 
 ##### field(e.fileSystemItem): FileSystemItem
-<!-- Description goes here -->
+The file system item for which you invoke the context menu.
 
 ##### field(e.itemData): Object
 The clicked item's data.
@@ -36,7 +36,7 @@ The clicked item's index.
 Model data. Available only if you use Knockout.
 
 ##### field(e.viewArea): 'navPane' | 'itemView'
-<!-- Description goes here -->
+Specifies whether the context menu is invoked in the navigation panel or in the items area.
 
 ---
 

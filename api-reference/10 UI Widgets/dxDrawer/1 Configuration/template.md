@@ -13,9 +13,9 @@ The container for the content. It is an <a href="https://developer.mozilla.org/e
 ---
 ![DevExtreme HTML5 JavaScript Drawer](/images/UIWidgets/drawer.png)
 
-This option specifies the content of the drawer. To specify the content of the view, nest it inside the **Drawer**'s markup element, as shown in the code below.
+This option specifies the drawer's content. To specify the view's content, nest it inside the **Drawer**'s markup element as shown in the code below.
 
-[important] Always specify a fixed width for the drawer's content. This width is used to calculate the width of the drawer.
+[important] Always specify a fixed width for the drawer's content. This width is used to calculate the drawer's width.
 
 ---
 ##### jQuery

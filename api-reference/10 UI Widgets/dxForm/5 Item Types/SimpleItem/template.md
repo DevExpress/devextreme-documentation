@@ -32,13 +32,13 @@ A template name or container.
 
 ---
 
-In Angular, Vue, and React, this template can be used to configure a custom editor more natively than using [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) and [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions). When you configure a custom editor in the template, consider the following specificities:
+In Angular, Vue, and React, this template can be used instead of [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) and [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions)  to configure a custom editor. It gives you the advantage of using nested configuration components. When you configure a custom editor in the template, consider the following specificities:
 
 - Use two-way binding to bind the custom editor to a [formData](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData) field.
 
 - If you use validation, define validation rules in the editor, not in the form item.
 
-- Set the same [validationGroup](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#validationGroup) as used by the **Form** to ensure that the custom editor is validated simultaneously with other form editors.
+- Use the same [validationGroup](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#validationGroup) as the **Form** to ensure the custom editor is validated simultaneously with other form editors.
 
 The code below configures the [DateBox](/Documentation/ApiReference/UI_Widgets/dxDateBox/) widget in the template. The widget is bound to the `BirthDate` field of  **formData** and has a validation group and two validation rules:
 

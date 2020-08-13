@@ -11,22 +11,22 @@ $(function() {
     const isDarkTheme = document.cookie.includes("theme=dark");
     DevExpress.ui.themes.current(isDarkTheme ? "material.blue.dark" : "material.blue.light")
 
-    let itemCenteringEnabled = true;
+    let dropDownCentered = true;
 
-    const lookup = $("#itemCenteringEnabled-lookup").dxLookup({
+    const lookup = $("#dropDownCentered-lookup").dxLookup({
         dataSource: employees,
-        itemCenteringEnabled: itemCenteringEnabled,
+        dropDownCentered: dropDownCentered,
         value: employees[7],
         dropDownOptions: {
             height: 140
         }
     }).dxLookup("instance");
 
-    $("#itemCenteringEnabled-checkBox").dxCheckBox({
-        value: itemCenteringEnabled,
-        text: "itemCenteringEnabled",
+    $("#dropDownCentered-checkBox").dxCheckBox({
+        value: dropDownCentered,
+        text: "dropDownCentered",
         onValueChanged: function(e) {
-            lookup.option("itemCenteringEnabled", e.value);
+            lookup.option("dropDownCentered", e.value);
         }
     });
 });

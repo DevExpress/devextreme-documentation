@@ -5,7 +5,9 @@ default: false, true (Material)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to vertically align the drop-down menu so that the selected item is in its center. Applies only in [Material Design themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/).
 
 ---
-<!-- Description goes here -->
+The drop-down menu can be displayed under the input field (**dropDownCentered** is **false**) or over it and centered on the selected item (**dropDownCentered** is **true**). The following live example illustrates the difference:
+
+<div class="simulator-desktop-container" style="height:220px" data-view="/Content/Applications/19_2/UIWidgets/Lookup/dropDownCentered.html, /Content/Applications/19_2/UIWidgets/Lookup/dropDownCentered.js, /Content/Applications/19_2/UIWidgets/Lookup/dropDownCentered.css"></div>

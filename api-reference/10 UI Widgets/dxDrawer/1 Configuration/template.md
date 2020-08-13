@@ -1,7 +1,7 @@
 ---
 id: dxDrawer.Options.template
 type: template
-default: null
+default: 'panel'
 ---
 ---
 ##### shortDescription

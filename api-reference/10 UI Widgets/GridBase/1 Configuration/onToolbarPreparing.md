@@ -35,8 +35,6 @@ This function allows you to customize the toolbar. Depending on the configuratio
 - [*"groupPanel"*](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/') 
 - [*"searchPanel"*](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/')
 
-All these items are [Buttons](/Documentation/ApiReference/UI_Widgets/dxButton/) and you can adjust their settings in the **options** object. The exception is the *"exportButton"* item. It does not have the *"options"* parameter because it is based on the [template](/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#template) funсtion. If you need to adjust export button options, implement a custom button instead.
-
 [important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when you add items other than buttons. 
 
 The following code shows how you can use this function to customize the toolbar:
@@ -51,7 +49,7 @@ The following code shows how you can use this function to customize the toolbar:
             onToolbarPreparing: function (e) {
                 let toolbarItems = e.toolbarOptions.items;
                 
-                // Modify an existing item
+                // Modifies an existing item
                 toolbarItems.forEach(function(item) {                    
                     if (item.name === "saveButton") {
                         item.options: {

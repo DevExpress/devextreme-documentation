@@ -8,8 +8,6 @@ This function allows you to customize the toolbar. Depending on the configuratio
 - <img src="/Content/images/doc/20_1/DataGrid/icons/toolbar_applyFilter.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Toolbar ApplyFilterButton" style="margin:1px; vertical-align:middle"/> - *"applyFilterButton"*     
 - [*"searchPanel"*](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/')
 
-All these items are [Buttons](/Documentation/ApiReference/UI_Widgets/dxButton/) and you can adjust their settings in the **options** object. The exception is the *"exportButton"* item. It does not have the *"options"* parameter because it is based on the [template](/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#template) funсtion. If you need to adjust export button options, implement a custom button instead.
-
 [important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when you add items other than buttons. 
 
 The following code shows how you can use this function to customize the toolbar:

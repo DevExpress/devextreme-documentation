@@ -35,7 +35,11 @@ This function allows you to customize the toolbar. Depending on the configuratio
 - [*"groupPanel"*](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/') 
 - [*"searchPanel"*](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/')
 
-The following code shows how you can customize the toolbar using this function.
+All these items are [Buttons](/Documentation/ApiReference/UI_Widgets/dxButton/) and you can adjust their settings in the **options** object. The exception is the *"exportButton"* item. It does not have the *"options"* parameter because it is based on the [template](/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#template) funсtion. If you need to adjust export button options, implement a custom button instead.
+
+[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when you add items other than buttons. 
+
+The following code shows how you can use this function to customize the toolbar:
 
 ---
 ##### jQuery
@@ -45,15 +49,21 @@ The following code shows how you can customize the toolbar using this function.
         $("#dataGridContainer").dxDataGrid({
             // ...
             onToolbarPreparing: function (e) {
-                var toolbarItems = e.toolbarOptions.items;
-                // Modifies an existing item
-                toolbarItems.forEach(function(item) {
+                let toolbarItems = e.toolbarOptions.items;
+                
+                // Modify an existing item
+                toolbarItems.forEach(function(item) {                    
                     if (item.name === "saveButton") {
-                        // Change the item options here
+                        item.options: {
+                            icon: "custom-save-icon",
+                            onClick: function(e) {
+                                //Specify your save options here
+                            }
+                        }
                     }
                 });
 
-                // Adds a new item
+                // Add a new item
                 toolbarItems.push({
                     widget: "dxButton", 
                     options: { icon: "user", onClick: function() { ... } },
@@ -70,11 +80,16 @@ The following code shows how you can customize the toolbar using this function.
     // ...
     export class AppComponent {
         onToolbarPreparing (e) { 
-            var toolbarItems = e.toolbarOptions.items;
+            let toolbarItems = e.toolbarOptions.items;
             // Modifies an existing item
             toolbarItems.forEach(function(item) {
                 if (item.name === "saveButton") {
-                    // Change the item options here
+                    item.options: {
+                        icon: "custom-save-icon",
+                        onClick: function(e) {
+                            //Specify your save options here
+                        }
+                    }
                 }
             });
             
@@ -125,7 +140,12 @@ The following code shows how you can customize the toolbar using this function.
                 // Modifies an existing item
                 toolbarItems.forEach(function(item) {
                     if (item.name === "saveButton") {
-                        // Change the item options here
+                        item.options: {
+                            icon: "custom-save-icon",
+                            onClick: function(e) {
+                                //Specify your save options here
+                            }
+                        }
                     }
                 });
 
@@ -169,7 +189,12 @@ The following code shows how you can customize the toolbar using this function.
             // Modifies an existing item
             toolbarItems.forEach(function(item) {
                 if (item.name === "saveButton") {
-                    // Change the item options here
+                    item.options: {
+                        icon: "custom-save-icon",
+                        onClick: function(e) {
+                            //Specify your save options here
+                        }
+                    }
                 }
             });
 
@@ -190,6 +215,8 @@ The following code shows how you can customize the toolbar using this function.
 
 ---
 
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/ToolbarCustomization/"
 } 
+

@@ -35,8 +35,6 @@ This function allows you to customize the toolbar. Depending on the configuratio
 - [*"groupPanel"*](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/') 
 - [*"searchPanel"*](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/')
 
-[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when you add items other than buttons. 
-
 The following code shows how you can use this function to customize the toolbar:
 
 ---
@@ -85,7 +83,7 @@ The following code shows how you can use this function to customize the toolbar:
                     item.options: {
                         icon: "custom-save-icon",
                         onClick: function(e) {
-                            //Specify your save options here
+                            // Implement custom save logic here
                         }
                     }
                 }
@@ -141,7 +139,7 @@ The following code shows how you can use this function to customize the toolbar:
                         item.options: {
                             icon: "custom-save-icon",
                             onClick: function(e) {
-                                //Specify your save options here
+                                // Implement custom save logic here
                             }
                         }
                     }
@@ -190,7 +188,7 @@ The following code shows how you can use this function to customize the toolbar:
                     item.options: {
                         icon: "custom-save-icon",
                         onClick: function(e) {
-                            //Specify your save options here
+                            // Implement custom save logic here
                         }
                     }
                 }
@@ -213,6 +211,7 @@ The following code shows how you can use this function to customize the toolbar:
 
 ---
 
+[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when you add items other than [Button](/Documentation/ApiReference/UI_Widgets/dxButton/) or [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/). 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/ToolbarCustomization/"

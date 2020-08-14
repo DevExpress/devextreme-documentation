@@ -2,7 +2,7 @@ If you are starting a project from scratch, use the DevExtreme React Template. I
 
 ![DevExtreme React Template](/images/dx-application-templates/react-app-template.png)
 
-<a href="https://www.youtube.com/watch?v=FLDuyQDWv_4" class="button orange small fix-width-155" style="margin-right: 5px;" target="_blank">Watch Video</a>
+<iframe width="100%" height="476" src="https://www.youtube.com/watch?v=FLDuyQDWv_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="border: 0;"></iframe>
 
 You can generate the application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 

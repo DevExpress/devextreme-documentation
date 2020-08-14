@@ -1,6 +1,6 @@
 If you are starting a project from scratch, use the DevExtreme Angular Template. It is a simple application with a navigation menu and several sample views in a responsive layout.
 
-![DevExtreme Angular Template](/images/dx-application-templates/angular-app-template.png)
+<iframe width="100%" height="476" src="https://www.youtube.com/embed/FLDuyQDWv_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="border: 0;"></iframe>
 
 You can generate the application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 

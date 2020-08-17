@@ -1,6 +1,7 @@
 ---
-id: BaseChartAnnotationConfig
-type: Object
+id: GridBase.Options.editing.editColumnName
+type: String
+default: null
 ---
 ---
 ##### shortDescription

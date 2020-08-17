@@ -1,7 +1,6 @@
 ---
 id: BaseChartAnnotationConfig
 type: Object
-inherits: BaseWidgetAnnotationConfig
 ---
 ---
 ##### shortDescription

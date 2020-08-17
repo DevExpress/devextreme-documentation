@@ -48,7 +48,7 @@ To add a predefined item to the context menu, add its **name** to the **items** 
 
 **Custom Items**
 
-To add a custom context menu item, you can specify its **text** and other optional options (for example, a file extension for a newly created file). 
+To add a custom context menu item, you can specify its **text** and optional settings (for example, a file extension for a newly created file). 
 
 ---
 

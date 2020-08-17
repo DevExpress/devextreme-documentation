@@ -6,7 +6,9 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the annotation displays [text]({basewidgetpath}/Configuration/annotations/#text) or an [image]({basewidgetpath}/Configuration/annotations/image/). This is a required setting.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Annotation/"
+}

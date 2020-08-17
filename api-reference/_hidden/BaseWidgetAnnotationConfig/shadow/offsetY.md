@@ -5,7 +5,7 @@ default: 1
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Moves the shadows vertically.
 
 ---
-<!-- Description goes here -->
+The number assigned to this option specifies the shift in pixels. A negative number shifts the shadows up and a positive number shifts them down.

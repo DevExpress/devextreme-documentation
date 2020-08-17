@@ -5,7 +5,7 @@ default: 0.15
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the opacity of the shadows.
 
 ---
-<!-- Description goes here -->
+This option accepts a value from 0 to 1: 0 makes the shadows transparent; 1 makes them opaque.

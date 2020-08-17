@@ -5,7 +5,7 @@ default: 4
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the blur distance of the shadows. A larger value increases the blur distance.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,7 @@ default: 14
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the length of the annotation's arrow in pixels.
 
 ---
 <!-- Description goes here -->

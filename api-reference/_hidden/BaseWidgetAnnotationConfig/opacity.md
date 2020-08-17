@@ -5,7 +5,7 @@ default: 0.9
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the annotation's opacity.
 
 ---
-<!-- Description goes here -->
+This option accepts a value from 0 to 1: 0 makes the annotation transparent; 1 makes it opaque.

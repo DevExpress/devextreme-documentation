@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A container for custom data.
 
 ---
 <!-- Description goes here -->

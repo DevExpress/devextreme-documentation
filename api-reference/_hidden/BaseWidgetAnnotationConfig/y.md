@@ -5,7 +5,8 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Used with [x]({basewidgetpath}/Configuration/annotations/#x) to position the annotation's center at a specific pixel coordinate. (0, 0) is the upper left corner of the chart.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [argument]({basewidgetpath}/Configuration/annotations/#argument) | [value]({basewidgetpath}/Configuration/annotations/#value)

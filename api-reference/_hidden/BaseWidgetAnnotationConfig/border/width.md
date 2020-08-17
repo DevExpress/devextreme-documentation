@@ -5,7 +5,7 @@ default: 1
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the width of the annotation's border in pixels.
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,7 @@ default: 'solid'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the dash style of the annotation's border.
 
 ---
-<!-- Description goes here -->
+#include dataviz-ref-dashstyle

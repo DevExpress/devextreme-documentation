@@ -5,7 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Moves the annotation horizontally.
 
 ---
-<!-- Description goes here -->
+The number assigned to this option specifies the shift in pixels. A negative number shifts the annotation to the left and a positive number shifts it to the right.
+
+#####See Also#####
+- [allowDragging]({basewidgetpath}/Configuration/annotations/#allowDragging)

@@ -5,16 +5,18 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for the annotation.
 
 ##### param(annotation): BaseWidgetAnnotationConfig | any
-<!-- Description goes here -->
+The annotation's [configuration object]({basewidgetpath}/Configuration/annotations/).
 
 ##### param(element): SVGGElement
-<!-- Description goes here -->
+A container for the template content.
 
 ##### return: String | SVGElement | jQuery
-<!-- Description goes here -->
+#include common-template-return-value
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomAnnotations/"
+}

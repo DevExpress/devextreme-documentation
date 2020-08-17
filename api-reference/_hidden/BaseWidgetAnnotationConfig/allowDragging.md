@@ -5,7 +5,8 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether users can drag and drop the annotation.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [offsetX]({basewidgetpath}/Configuration/annotations/#offsetX) | [offsetY]({basewidgetpath}/Configuration/annotations/#offsetY)

@@ -5,7 +5,7 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the annotation's font options. Applies to [text annotations]({basewidgetpath}/Configuration/annotations/#text) only.
 
 ---
 <!-- Description goes here -->

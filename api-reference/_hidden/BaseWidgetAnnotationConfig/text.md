@@ -5,7 +5,8 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the annotation's text. Applies only if the [type]({basewidgetpath}/Configuration/annotations/#type) is *"text"*.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [description]({basewidgetpath}/Configuration/annotations/#description)

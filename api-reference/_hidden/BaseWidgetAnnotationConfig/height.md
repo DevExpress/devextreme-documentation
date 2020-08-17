@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the annotation's height in pixels.
 
 ---
 <!-- Description goes here -->

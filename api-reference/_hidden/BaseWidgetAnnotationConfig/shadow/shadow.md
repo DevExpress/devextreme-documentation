@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the annotation's shadows.
 
 ---
 <!-- Description goes here -->

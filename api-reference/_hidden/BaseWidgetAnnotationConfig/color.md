@@ -5,7 +5,7 @@ default: '#ffffff'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the color that fills the annotation.
 
 ---
-<!-- Description goes here -->
+#include common-colorlist

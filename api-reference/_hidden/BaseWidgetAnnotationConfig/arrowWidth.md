@@ -5,7 +5,7 @@ default: 14
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the width of the annotation's arrow at its junction with the annotation rectangle.
 
 ---
-<!-- Description goes here -->
+![DevExtreme Chart: Annotation Arrow](/images/ChartJS/visual_elements/annotation_arrow.png)

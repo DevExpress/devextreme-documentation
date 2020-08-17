@@ -5,7 +5,7 @@ default: 30
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the image's height in pixels.
 
 ---
 <!-- Description goes here -->

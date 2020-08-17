@@ -1,6 +1,7 @@
 ---
 id: dxVectorMap.Options.commonAnnotationSettings
 type: dxVectorMapCommonAnnotationConfig
+inheritsType: dxVectorMapCommonAnnotationConfig
 ---
 ---
 ##### shortDescription

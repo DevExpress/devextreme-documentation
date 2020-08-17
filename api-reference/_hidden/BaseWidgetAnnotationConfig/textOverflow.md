@@ -6,7 +6,10 @@ default: 'ellipsis'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies what to do with the annotation's [text]({basewidgetpath}/Configuration/annotations/#text) when it overflows the allocated space after applying [wordWrap]({basewidgetpath}/Configuration/annotations/#wordWrap): hide, truncate it and display an ellipsis, or do nothing.
 
 ---
-<!-- Description goes here -->
+#include common-ref-enum with {
+    enum: "`VizTextOverflow`",
+    values: "`Ellipsis`, `Hide`, and `None`"
+}

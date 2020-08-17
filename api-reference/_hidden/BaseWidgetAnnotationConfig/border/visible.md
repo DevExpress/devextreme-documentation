@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the visibility of the annotation's border.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Moves the annotation vertically.
 
 ---
-<!-- Description goes here -->
+The number assigned to this option specifies the shift in pixels. A negative number shifts the annotation up and a positive number shifts it down.
+
+#####See Also#####
+- [allowDragging]({basewidgetpath}/Configuration/annotations/#allowDragging)

@@ -5,7 +5,7 @@ default: '#dddddd'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Colors the annotation's border.
 
 ---
-<!-- Description goes here -->
+#include common-colorlist

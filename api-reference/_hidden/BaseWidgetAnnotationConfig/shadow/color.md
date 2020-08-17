@@ -5,7 +5,7 @@ default: '#000000'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Colors the annotation's shadows.
 
 ---
-<!-- Description goes here -->
+#include common-colorlist

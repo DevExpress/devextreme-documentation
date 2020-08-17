@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the appearance of the annotation's border.
 
 ---
 <!-- Description goes here -->

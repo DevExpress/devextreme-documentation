@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the annotation's description in the [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled).
 
 ---
 <!-- Description goes here -->

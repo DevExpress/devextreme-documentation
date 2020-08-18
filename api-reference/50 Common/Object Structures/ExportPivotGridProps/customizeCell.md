@@ -204,7 +204,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
             </PivotGrid>
         );
 
-        const onExporting = e => {
+        function onExporting(e) {
             const workbook = new ExcelJS.Workbook();
             const worksheet = workbook.addWorksheet('Companies');
 

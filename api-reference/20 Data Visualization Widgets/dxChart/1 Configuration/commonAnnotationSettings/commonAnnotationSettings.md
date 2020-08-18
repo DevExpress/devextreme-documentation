@@ -78,9 +78,6 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
     import DxChart, {
         DxCommonAnnotationSettings
     } from 'devextreme-vue/chart';
@@ -100,10 +97,6 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
     <!-- tab: App.js -->
     import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
     import Chart, {
         CommonAnnotationSettings
     } from 'devextreme-react/chart';

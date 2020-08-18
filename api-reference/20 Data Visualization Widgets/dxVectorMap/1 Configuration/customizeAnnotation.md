@@ -6,13 +6,16 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
+
 
 ##### param(annotation): dxVectorMapAnnotationConfig | any
-<!-- Description goes here -->
+<!-- %param(annotation)% -->
 
 ##### return: dxVectorMapAnnotationConfig
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\20 Data Visualization Widgets\dxChart\1 Configuration\customizeAnnotation.md' -->

@@ -1,14 +1,14 @@
 ---
-id: dxPolarChart.Options.commonAnnotationSettings
-type: dxPolarChartCommonAnnotationConfig
-inheritsType: dxPolarChartCommonAnnotationConfig
+id: dxVectorMap.Options.commonAnnotationSettings
+type: dxVectorMapCommonAnnotationConfig
+inheritsType: dxVectorMapCommonAnnotationConfig
 ---
 ---
 ##### shortDescription
-Specifies settings common for all annotations in the **PolarChart**.
+Specifies settings common for all annotations in the **VectorMap**.
 
 ---
-Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
+Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
 
 The following code shows the **commonAnnotationSettings** declaration syntax:
 
@@ -17,7 +17,7 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
     <!-- tab: index.js -->
     $(function() {
-        $("#polarChart").dxPolarChart({
+        $("#vectorMap").dxVectorMap({
             // ...
             commonAnnotationSettings: {
                 tooltipEnabled: false
@@ -28,11 +28,11 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-polar-chart ... >
+    <dx-vector-map ... >
         <dx-common-annotation-settings
             [tooltipEnabled]="false">
         </dx-common-annotation-settings>
-    </dx-polar-chart>
+    </dx-vector-map>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -51,7 +51,7 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxPolarChartModule } from 'devextreme-angular';
+    import { DxVectorMapModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -59,7 +59,7 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
         ],
         imports: [
             BrowserModule,
-            DxPolarChartModule
+            DxVectorMapModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -70,21 +70,21 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
     <!-- tab: App.vue -->
     <template>
-        <DxPolarChart ... >
+        <DxVectorMap ... >
             <DxCommonAnnotationSettings
                 :tooltip-enabled="false"
             />
-        </DxPolarChart>
+        </DxVectorMap>
     </template>
 
     <script>
-    import DxPolarChart, {
+    import DxVectorMap, {
         DxCommonAnnotationSettings
-    } from 'devextreme-vue/polar-chart';
+    } from 'devextreme-vue/vector-map';
 
     export default {
         components: {
-            DxPolarChart,
+            DxVectorMap,
             DxCommonAnnotationSettings
         },
         data() {
@@ -98,18 +98,18 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import PolarChart, {
+    import VectorMap, {
         CommonAnnotationSettings
-    } from 'devextreme-react/polar-chart';
+    } from 'devextreme-react/vector-map';
 
     class App extends React.Component {
         render() {
             return (
-                <PolarChart ... >
+                <VectorMap ... >
                     <CommonAnnotationSettings
                         tooltipEnabled={false}
                     />
-                </PolarChart>
+                </VectorMap>
             );
         }
     }
@@ -117,9 +117,5 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartAnnotations/"
-}
-
 #####See Also#####
-- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#customizeAnnotation)
+- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#customizeAnnotation)

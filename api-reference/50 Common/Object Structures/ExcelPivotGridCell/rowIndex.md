@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-The position of a cell's row.
+A zero-based index that indicates the position of the cell's row.
 
 ---
 <!-- Description goes here -->

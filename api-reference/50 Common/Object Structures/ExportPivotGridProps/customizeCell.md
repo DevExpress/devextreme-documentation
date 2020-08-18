@@ -16,7 +16,7 @@ type: function(options)
 A **PivotGrid** cell.
 
 ---
-The following code illustrates how to customize <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells whose [rowType](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Pivot_Grid_Cell/#rowType) is *"D"*:
+In the following code, the **customizeCell** function customizes <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells that display regular summaries (whose [rowType](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Pivot_Grid_Cell/#rowType) is *"D"*):
 
 ---
 ##### jQuery
@@ -29,15 +29,15 @@ The following code illustrates how to customize <a href="https://github.com/exce
                 enabled: true
             },
             onExporting(e) {
-                var workbook = new ExcelJS.Workbook();
-                var worksheet = workbook.addWorksheet('Companies');
+                const workbook = new ExcelJS.Workbook();
+                const worksheet = workbook.addWorksheet('Companies');
 
                 DevExpress.excelExporter.exportPivotGrid({
                     component: e.component,
                     worksheet: worksheet,
                     topLeftCell: { row: 2, column: 2 },
                     customizeCell: function(options) {
-                        var { gridCell, excelCell } = options;
+                        const { gridCell, excelCell } = options;
 
                         if(gridCell.rowType === 'D') {
                             excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };

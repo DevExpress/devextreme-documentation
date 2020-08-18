@@ -7,3 +7,9 @@ Exports:
         require("excel_exporter").exportDataGrid;
         // ===== or =====
         import { exportDataGrid } from "devextreme/excel_exporter";
+
+- *exportPivotGrid* - The [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method
+
+        require("excel_exporter").exportPivotGrid;
+        // ===== or =====
+        import { exportPivotGrid } from "devextreme/excel_exporter";

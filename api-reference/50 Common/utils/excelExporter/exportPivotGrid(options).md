@@ -174,7 +174,7 @@ You can call this method at any point in your application. In the example below,
             </PivotGrid>
         );
 
-        onExporting(e) {
+        const onExporting = e => {
             const workbook = new ExcelJS.Workbook();
             const worksheet = workbook.addWorksheet('Main sheet');
 

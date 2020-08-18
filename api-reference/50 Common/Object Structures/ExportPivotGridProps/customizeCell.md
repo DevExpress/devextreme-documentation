@@ -196,15 +196,13 @@ In the following code, the **customizeCell** function customizes <a href="https:
     import saveAs from 'file-saver';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid ...
-                    onExporting={this.onExporting}>
-                    <Export enabled={true} />
-                </PivotGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid ...
+                onExporting={onExporting}>
+                <Export enabled={true} />
+            </PivotGrid>
+        );
 
         onExporting(e) {
             const workbook = new ExcelJS.Workbook();
@@ -230,7 +228,6 @@ In the following code, the **customizeCell** function customizes <a href="https:
             e.cancel = true;
         }
     }
-    export default App;
 
 --- 
 

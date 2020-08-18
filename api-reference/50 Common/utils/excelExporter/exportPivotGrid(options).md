@@ -166,15 +166,13 @@ You can call this method at any point in your application. In the example below,
     import saveAs from 'file-saver';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid ...
-                    onExporting={this.onExporting}>
-                    <Export enabled={true} />
-                </PivotGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid ...
+                onExporting={onExporting}>
+                <Export enabled={true} />
+            </PivotGrid>
+        );
 
         onExporting(e) {
             const workbook = new ExcelJS.Workbook();
@@ -192,7 +190,6 @@ You can call this method at any point in your application. In the example below,
             e.cancel = true;
         }
     }
-    export default App;
 
 ---     
 

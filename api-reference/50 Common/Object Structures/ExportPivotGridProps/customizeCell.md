@@ -204,29 +204,30 @@ In the following code, the **customizeCell** function customizes <a href="https:
             </PivotGrid>
         );
 
-        function onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
-            const worksheet = workbook.addWorksheet('Companies');
+    }
 
-            exportPivotGrid({
-                component: e.component,
-                worksheet: worksheet,
-                topLeftCell: { row: 2, column: 2 },
-                customizeCell: function(options) {
-                    const { gridCell, excelCell } = options;
-                    
-                    if(gridCell.rowType === 'D') {
-                        excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
-                        excelCell.alignment = { horizontal: 'left' };
-                    }
+    function onExporting(e) {
+        const workbook = new ExcelJS.Workbook();
+        const worksheet = workbook.addWorksheet('Companies');
+
+        exportPivotGrid({
+            component: e.component,
+            worksheet: worksheet,
+            topLeftCell: { row: 2, column: 2 },
+            customizeCell: function(options) {
+                const { gridCell, excelCell } = options;
+                
+                if(gridCell.rowType === 'D') {
+                    excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
+                    excelCell.alignment = { horizontal: 'left' };
                 }
-            }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) {
-                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
-                });
+            }
+        }).then(function() {
+            workbook.xlsx.writeBuffer().then(function(buffer) {
+                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
             });
-            e.cancel = true;
-        }
+        });
+        e.cancel = true;
     }
 
 --- 

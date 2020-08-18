@@ -2,7 +2,7 @@
 id: dxPivotGrid.Options.export.ignoreExcelErrors
 type: Boolean
 default: true
-deprecated: 
+deprecated: Since v20.2, we recommend [ExcelJS-based export](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/) which does not use this option.
 ---
 ---
 ##### shortDescription

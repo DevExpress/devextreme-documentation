@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A **PivotGrid** instance. This setting is required.
 
 ---
 <!-- Description goes here -->

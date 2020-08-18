@@ -5,7 +5,7 @@ inherits: dxPivotGridPivotGridCell
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A [PivotGrid](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/) cell to be exported to Excel.
 
 ---
 <!-- Description goes here -->

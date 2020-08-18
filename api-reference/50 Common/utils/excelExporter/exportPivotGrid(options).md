@@ -26,8 +26,8 @@ You can call this method at any point in your application. In the example below,
             enabled: true
         },
         onExporting: function(e) { 
-            var workbook = new ExcelJS.Workbook(); 
-            var worksheet = workbook.addWorksheet('Main sheet'); 
+            const workbook = new ExcelJS.Workbook(); 
+            const worksheet = workbook.addWorksheet('Main sheet'); 
         
             DevExpress.excelExporter.exportPivotGrid({ 
                 worksheet: worksheet, 
@@ -174,7 +174,7 @@ You can call this method at any point in your application. In the example below,
             </PivotGrid>
         );
 
-        funtion onExporting(e) {
+        function onExporting(e) {
             const workbook = new ExcelJS.Workbook();
             const worksheet = workbook.addWorksheet('Main sheet');
 

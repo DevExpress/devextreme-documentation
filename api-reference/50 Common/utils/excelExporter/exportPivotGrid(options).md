@@ -173,22 +173,22 @@ You can call this method at any point in your application. In the example below,
                 <Export enabled={true} />
             </PivotGrid>
         );
+    }
 
-        function onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
-            const worksheet = workbook.addWorksheet('Main sheet');
+    function onExporting(e) {
+        const workbook = new ExcelJS.Workbook();
+        const worksheet = workbook.addWorksheet('Main sheet');
 
-            exportPivotGrid({
-                component: e.component,
-                worksheet: worksheet
-            }).then(function() {
-                workbook.xlsx.writeBuffer()
-                    .then(function(buffer) {
-                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
-                    });
-            });
-            e.cancel = true;
-        }
+        exportPivotGrid({
+            component: e.component,
+            worksheet: worksheet
+        }).then(function() {
+            workbook.xlsx.writeBuffer()
+                .then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
+                });
+        });
+        e.cancel = true;
     }
 
 ---     

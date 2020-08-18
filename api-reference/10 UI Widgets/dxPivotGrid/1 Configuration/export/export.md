@@ -437,3 +437,7 @@ The following instructions show how to enable and configure client-side export:
 
     --- 
 
+The following restrictions apply when users export **DataGrid**:   
+
+- Only XLSX files are supported.
+- Only visible rows and columns are exported.

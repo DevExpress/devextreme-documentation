@@ -211,7 +211,8 @@ The following code shows how you can use this function to customize the toolbar:
 
 ---
 
-[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when you add items other than [Button](/Documentation/ApiReference/UI_Widgets/dxButton/) or [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/). 
+
+[note]If you use [modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') and set a DevExtreme widget as a toolbar item, import this widget's module. You can omit import of the [Button](/Documentation/ApiReference/UI_Widgets/dxButton/) or [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/) widgets because **DataGrid** imports them automatically. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/ToolbarCustomization/"

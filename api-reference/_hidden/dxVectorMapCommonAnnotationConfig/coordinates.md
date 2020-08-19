@@ -5,7 +5,8 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Positions the annotation's center at specified geographic coordinates: [longitude, latitude].
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [x](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#x) | [y](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#y)

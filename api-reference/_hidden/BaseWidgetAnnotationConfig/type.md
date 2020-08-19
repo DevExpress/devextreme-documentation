@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether the annotation displays [text]({basewidgetpath}/Configuration/annotations/#text) or an [image]({basewidgetpath}/Configuration/annotations/image/). This is a required setting.
+Specifies whether the annotation displays [text]({basewidgetpath}/Configuration/annotations/#text), an [image]({basewidgetpath}/Configuration/annotations/image/), or a [template]({basewidgetpath}/Configuration/commonAnnotationSettings/#template). This is a required setting.
 
 ---
 #include common-demobutton with {

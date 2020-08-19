@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the annotation.
+Specifies a custom template for the annotation. Applies only if the [type]({basewidgetpath}/Configuration/annotations/#type) is *"custom"*.
 
 ##### param(annotation): BaseWidgetAnnotationConfig | any
 The annotation's [configuration object]({basewidgetpath}/Configuration/annotations/).

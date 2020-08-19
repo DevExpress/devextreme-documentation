@@ -6,7 +6,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Customizes an individual [annotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/annotations '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/').
+Customizes an individual [annotation]({basewidgetpath}/Configuration/annotations/).
 
 ##### param(annotation): dxChartAnnotationConfig | any
 The annotation before customizations.
@@ -22,7 +22,7 @@ The following code shows how to use the **customizeAnnotation** function to appl
 
     <!--JavaScript-->
     $(function() {
-        $("#chartContainer").dxChart({
+        $("#{widgetName}Container").dx{WidgetName}({
             // ...
             customizeAnnotation: function(annotationItem) {
                 if(annotationItem.text) {
@@ -39,9 +39,9 @@ The following code shows how to use the **customizeAnnotation** function to appl
 ##### Angular  
 
     <!-- tab: app.component.html -->
-    <dx-chart ...
+    <dx-{widget-name} ...
         [customizeAnnotation]="customizeAnnotation">
-    </dx-chart>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     // ...
@@ -58,12 +58,12 @@ The following code shows how to use the **customizeAnnotation** function to appl
     }
 
     <!-- tab: app.module.ts -->
-    import { DxChartModule } from 'devextreme-angular';
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
     // ...
     @NgModule({
         imports: [
             // ...
-            DxChartModule
+            Dx{WidgetName}Module
         ],
         // ...
     })
@@ -73,17 +73,17 @@ The following code shows how to use the **customizeAnnotation** function to appl
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart ...
+        <Dx{WidgetName} ...
             :customize-annotation="customizeAnnotation">
-        </DxChart>
+        </Dx{WidgetName}>
     </template>
 
     <script>
-    import DxChart from 'devextreme-vue/chart';
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
     export default {
         components: {
-            DxChart
+            Dx{WidgetName}
         },
         methods: {
             customizeAnnotation(annotationItem) {
@@ -103,18 +103,10 @@ The following code shows how to use the **customizeAnnotation** function to appl
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    import {WidgetName} from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    customizeAnnotation={this.customizeAnnotation}>
-                </Chart>
-            );
-        }
-
-        customizeAnnotation(annotationItem) {
+    export default function App() {
+        const customizeAnnotation = (annotationItem) => {
             if(annotationItem.text) {
                 annotationItem.color = "red";
             }
@@ -123,14 +115,18 @@ The following code shows how to use the **customizeAnnotation** function to appl
             }
             return annotationItem;
         }
+
+        return (
+            <{WidgetName} ...
+                customizeAnnotation={customizeAnnotation}>
+            </{WidgetName}>
+        );
     }
-
-    export default App;
-
+    
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Chart()
+    @(Html.DevExtreme().{WidgetName}()
         @* ... *@
         .CustomizeAnnotation("customizeAnnotation")
     )
@@ -150,5 +146,5 @@ The following code shows how to use the **customizeAnnotation** function to appl
 ---
 
 #####See Also#####
-- [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/)
-- [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAnnotationSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAnnotationSettings/')
+- [annotations[]]({basewidgetpath}/Configuration/annotations/)
+- [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/)

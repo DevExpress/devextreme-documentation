@@ -233,4 +233,4 @@ In the following code, the **customizeCell** function customizes <a href="https:
 --- 
 
 
-<!-- import * from 'api-reference\50 Common\Object Structures\ExportPivotGridProps\customizeCell.md' -->
+<!-- import * from 'api-reference\50 Common\Object Structures\ExportDataGridProps\customizeCell.md' -->

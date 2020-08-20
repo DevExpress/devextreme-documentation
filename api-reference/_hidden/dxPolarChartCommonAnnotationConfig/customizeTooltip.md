@@ -8,7 +8,7 @@ notUsedInTheme:
 ##### shortDescription
 <!-- %shortDescription% -->
 
-##### param(annotation): dxPolarChartCommonAnnotationConfig | any
+##### param(annotation): dxPolarChartAnnotationConfig | any
 <!-- %param(annotation)% -->
 
 ##### return: Object

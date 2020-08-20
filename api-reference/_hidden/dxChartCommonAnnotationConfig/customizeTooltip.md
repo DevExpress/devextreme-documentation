@@ -8,7 +8,7 @@ notUsedInTheme:
 ##### shortDescription
 Customizes the text and appearance of the annotation's tooltip.
 
-##### param(annotation): dxChartCommonAnnotationConfig | any
+##### param(annotation): dxChartAnnotationConfig | any
 The annotation's [configuration object]({basewidgetpath}/Configuration/annotations/).
 
 ##### return: Object

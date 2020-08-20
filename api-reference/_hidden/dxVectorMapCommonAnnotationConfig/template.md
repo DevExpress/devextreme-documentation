@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 <!-- %shortDescription% -->
 
-##### param(annotation): dxVectorMapCommonAnnotationConfig | any
+##### param(annotation): dxVectorMapAnnotationConfig | any
 <!-- %param(annotation)% -->
 
 ##### param(element): SVGGElement

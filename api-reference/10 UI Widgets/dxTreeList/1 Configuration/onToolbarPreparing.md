@@ -8,7 +8,7 @@ This function allows you to customize the toolbar. Depending on the configuratio
 - <img src="/Content/images/doc/20_1/DataGrid/icons/toolbar_applyFilter.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Toolbar ApplyFilterButton" style="margin:1px; vertical-align:middle"/> - *"applyFilterButton"*     
 - [*"searchPanel"*](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/')
 
-The following code shows how you can use this function to customize the toolbar:
+The following code shows how to use this function to customize the toolbar:
 
 ---
 ##### jQuery

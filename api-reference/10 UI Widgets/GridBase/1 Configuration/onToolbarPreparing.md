@@ -35,7 +35,7 @@ This function allows you to customize the toolbar. Depending on the configuratio
 - [*"groupPanel"*](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/') 
 - [*"searchPanel"*](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/')
 
-The following code shows how you can use this function to customize the toolbar:
+The following code shows how to use this function to customize the toolbar:
 
 ---
 ##### jQuery
@@ -212,7 +212,7 @@ The following code shows how you can use this function to customize the toolbar:
 ---
 
 
-[note]If you use [modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') and set a DevExtreme widget as a toolbar item, import this widget's module. You can omit import of the [Button](/Documentation/ApiReference/UI_Widgets/dxButton/) or [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/) widgets because **DataGrid** imports them automatically. 
+[note]If you use [modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') and set a DevExtreme widget as a toolbar item, import this widget's module. You do not have to import the [Button](/Documentation/ApiReference/UI_Widgets/dxButton/) or [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/) widgets because **DataGrid** imports them automatically. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/ToolbarCustomization/"

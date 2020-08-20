@@ -324,11 +324,13 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
     // ...
     export default {
         // ...
-        methods: {
-            calculateCellValue(rowData) {
-                // ...
-                const column = this as any;
-                return column.defaultCalculateCellValue(rowData);
+        data() {
+            return {
+                calculateCellValue: function(rowData) {
+                    // ...
+                    const column = this as any;
+                    return column.defaultCalculateCellValue(rowData);
+                }
             }
         }
     }

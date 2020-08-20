@@ -5,16 +5,18 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### param(annotation): dxVectorMapCommonAnnotationConfig | any
-<!-- Description goes here -->
+<<!-- %param(annotation)% -->
 
 ##### param(element): dxElement
-<!-- Description goes here -->
+<!-- %param(element)% -->
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
 <!-- Description goes here -->
+
+<!-- import * from 'api-reference\_hidden\dxChartCommonAnnotationConfig\tooltipTemplate.md' -->

@@ -6,13 +6,15 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### param(annotation): dxVectorMapCommonAnnotationConfig | any
-<!-- Description goes here -->
+<!-- %param(annotation)% -->
 
 ##### return: Object
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\_hidden\dxChartCommonAnnotationConfig\customizeTooltip.md' -->

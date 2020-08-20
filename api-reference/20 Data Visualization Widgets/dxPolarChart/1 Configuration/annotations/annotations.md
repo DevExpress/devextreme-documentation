@@ -12,7 +12,7 @@ Specifies the annotation collection.
 Annotations are images and text blocks that provide additional information about the visualized data.
 
 ![DevExtreme PolarChart: Annotations](/images/ChartJS/annotations/polar-chart-text-image-annotation.png)       
-To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/dxChartCommonAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"* or *"image"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/dxChartCommonAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') or [image](/api-reference/_hidden/dxChartCommonAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/') option:
+To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/dxChartCommonAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/dxChartCommonAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text'), [image](/api-reference/_hidden/dxChartCommonAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'), or [template](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/annotations/#template) option:
     
 ---
 ##### jQuery
@@ -26,6 +26,16 @@ To configure annotations, assign an array of objects to the **annotations[]** op
             }, {
                 type: "image",
                 image: "http://image/url/myimage.png"
+            }, {
+                type: "custom",
+                template: function(annotation) {
+                    const data = annotation.data;
+                    const $svg = $("<svg>");
+                    // ...
+                    // Customize the annotation's markup here
+                    // ...
+                    return $svg;
+                }
             }]
         });
     });
@@ -42,6 +52,13 @@ To configure annotations, assign an array of objects to the **annotations[]** op
             type="image"
             image="http://image/url/myimage.png">
         </dxi-annotation>
+        <dxi-annotation
+            type="custom"
+            template="custom-annotation">
+        </dxi-annotation>
+        <svg *dxTemplate="let annotation of 'custom-annotation'">
+            <!-- Declare custom SVG markup here -->
+        </svg>
     </dx-polar-chart>
 
     <!-- tab: app.component.ts -->
@@ -88,6 +105,15 @@ To configure annotations, assign an array of objects to the **annotations[]** op
                 type="image"
                 image="http://image/url/myimage.png"
             />
+            <DxAnnotation
+                type="custom"
+                template="custom-annotation"
+            />
+            <template #custom-annotation="{ data }">
+                <svg>
+                    <!-- Declare custom SVG markup here -->
+                </svg>
+            </template>
         </DxPolarChart>
     </template>
 
@@ -116,24 +142,33 @@ To configure annotations, assign an array of objects to the **annotations[]** op
         Annotation
     } from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PolarChart ... >
-                    <Annotation
-                        type="text"
-                        text="Annotation text"
-                    />
-                    <Annotation
-                        type="image"
-                        image="http://image/url/myimage.png"
-                    />
-                </PolarChart>
-            );
-        }
+    function CustomAnnotation(annotation) {
+        const data = annotation.data;
+        return (
+            <svg>
+                {/* Declare custom SVG markup here */}
+            </svg>
+        );
     }
 
-    export default App;
+    export default function App() {
+        return (
+            <PolarChart ... >
+                <Annotation
+                    type="text"
+                    text="Annotation text"
+                />
+                <Annotation
+                    type="image"
+                    image="http://image/url/myimage.png"
+                />
+                <Annotation
+                    type="custom"
+                    render={CustomAnnotation}
+                />
+            </PolarChart>
+        );
+    }
 
 ---
 

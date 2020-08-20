@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 Specifies a custom template for an annotation's tooltip.
 
-##### param(annotation): dxChartCommonAnnotationConfig | any
+##### param(annotation): dxChartAnnotationConfig | any
 The annotation's [configuration object]({basewidgetpath}/Configuration/annotations/).
 
 ##### param(element): dxElement

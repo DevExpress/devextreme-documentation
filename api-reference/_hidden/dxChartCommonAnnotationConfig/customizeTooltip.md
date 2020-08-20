@@ -6,13 +6,18 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Customizes the text and appearance of the annotation's tooltip.
 
 ##### param(annotation): dxChartCommonAnnotationConfig | any
-<!-- Description goes here -->
+The annotation's [configuration object]({basewidgetpath}/Configuration/annotations/).
 
 ##### return: Object
-<!-- Description goes here -->
+The tooltip's text or markup and appearance settings.
 
 ---
-<!-- Description goes here -->
+#include dataviz-customize-tooltip-return
+
+#include dataviz-ref-functioncontext
+
+#####See Also#####
+- [tooltipEnabled]({basewidgetpath}/Configuration/annotations/#tooltipEnabled)

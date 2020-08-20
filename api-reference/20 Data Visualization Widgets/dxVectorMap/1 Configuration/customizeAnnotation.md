@@ -8,7 +8,6 @@ notUsedInTheme:
 ##### shortDescription
 <!-- %shortDescription% -->
 
-
 ##### param(annotation): dxVectorMapAnnotationConfig | any
 <!-- %param(annotation)% -->
 

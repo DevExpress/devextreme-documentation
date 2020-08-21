@@ -38,8 +38,8 @@ The following code illustrates how to customize <a href="https://github.com/exce
                 enabled: true
             },
             onExporting(e) {
-                var workbook = new ExcelJS.Workbook();
-                var worksheet = workbook.addWorksheet('Companies');
+                const workbook = new ExcelJS.Workbook();
+                const worksheet = workbook.addWorksheet('Companies');
 
                 DevExpress.excelExporter.exportDataGrid({
                     component: e.component,

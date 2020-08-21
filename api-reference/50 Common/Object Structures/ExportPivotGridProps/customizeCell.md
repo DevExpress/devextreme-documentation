@@ -37,9 +37,9 @@ In the following code, the **customizeCell** function customizes <a href="https:
                     worksheet: worksheet,
                     topLeftCell: { row: 2, column: 2 },
                     customizeCell: function(options) {
-                        const { gridCell, excelCell } = options;
+                        const { pivotCell, excelCell } = options;
 
-                        if(gridCell.rowType === 'D') {
+                        if(pivotCell.rowType === 'D') {
                             excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
                             excelCell.alignment = { horizontal: 'left' };
                         }
@@ -93,9 +93,9 @@ In the following code, the **customizeCell** function customizes <a href="https:
                 worksheet: worksheet,
                 topLeftCell: { row: 2, column: 2 },
                 customizeCell: function(options) {
-                    const { gridCell, excelCell } = options;
+                    const { pivotCell, excelCell } = options;
                     
-                    if(gridCell.rowType === 'D') {
+                    if(pivotCell.rowType === 'D') {
                         excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
                         excelCell.alignment = { horizontal: 'left' };
                     }
@@ -166,9 +166,9 @@ In the following code, the **customizeCell** function customizes <a href="https:
                     worksheet: worksheet,
                     topLeftCell: { row: 2, column: 2 },
                     customizeCell: function(options) {
-                        const { gridCell, excelCell } = options;
+                        const { pivotCell, excelCell } = options;
                         
-                        if(gridCell.rowType === 'D') {
+                        if(pivotCell.rowType === 'D') {
                             excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
                             excelCell.alignment = { horizontal: 'left' };
                         }
@@ -215,9 +215,9 @@ In the following code, the **customizeCell** function customizes <a href="https:
             worksheet: worksheet,
             topLeftCell: { row: 2, column: 2 },
             customizeCell: function(options) {
-                const { gridCell, excelCell } = options;
+                const { pivotCell, excelCell } = options;
                 
-                if(gridCell.rowType === 'D') {
+                if(pivotCell.rowType === 'D') {
                     excelCell.font = { color: { argb: 'FF0000FF' }, underline: true };
                     excelCell.alignment = { horizontal: 'left' };
                 }

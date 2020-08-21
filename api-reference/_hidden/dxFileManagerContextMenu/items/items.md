@@ -26,7 +26,9 @@ Predefined context menu items include:
 - **'rename'** - Renames files and directories.
 - **'delete'** - Deletes files and directories.
 
-To add a predefined item to the context menu, add its **name** to the **items** array:
+To add a predefined item to the context menu, add its **name** and optional settings ('visible', 'beginGroup', 'text', 'icon', 'disabled') to the **items** array. 
+
+To override predefined items behavior, specify required conditions in the **onContextMenuItemClick** event handler. 
 
 ---
 
@@ -36,11 +38,27 @@ To add a predefined item to the context menu, add its **name** to the **items** 
     $(function () {
         $("#file-manager").dxFileManager({
             contextMenu: {
-                items: ["rename", "delete", "refresh"]
+                items: [
+                    // Specify a predefined item's name only
+                    "rename", 
+                    // Specify a predefined item's name and optional settings
+                    {
+                        name: "create",
+                        text: "Create Directory",
+                        beginGroup: true
+                    }
+                    //...
+                ]
             }
+            onContextMenuItemClick: onItemClick
             // ...
         });
     });
+    function onItemClick(args) {
+        if(args.itemData === 'move' && fileManager.getSelectedItems().filter(item => item.name === 'Can\'t move').length){
+            // your code
+        }
+    }  
 
 ---
 

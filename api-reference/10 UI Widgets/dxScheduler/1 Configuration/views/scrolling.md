@@ -1,6 +1,7 @@
 ---
 id: dxScheduler.Options.views.scrolling
 type: dxSchedulerScrolling
+inheritsType: dxSchedulerScrolling
 ---
 ---
 ##### shortDescription

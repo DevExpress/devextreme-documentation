@@ -4,7 +4,7 @@ module: excel_exporter
 ---
 ---
 ##### shortDescription
-Exports **PivotGrid** data to Excel.
+Exports pivot grid data to Excel.
 
 ##### return: Promise<CellRange>
 <!-- %return% -->
@@ -13,7 +13,7 @@ Exports **PivotGrid** data to Excel.
 <!-- %param(options)% -->
 
 ---
-This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer to export data, <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> to save files, and <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> for internal operations.
+This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> to save files.
 
 You can call this method at any point in your application. In the example below, this method is called in the [onExporting](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onExporting) function that is executed before data is exported. The **cancel** parameter is enabled to prevent the built-in export. As a result, the **PivotGrid** is exported to a single worksheet. 
 

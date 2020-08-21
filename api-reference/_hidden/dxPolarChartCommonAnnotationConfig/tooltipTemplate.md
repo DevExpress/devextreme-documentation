@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 <!-- %shortDescription% -->
 
-##### param(annotation): dxPolarChartCommonAnnotationConfig | any
+##### param(annotation): dxPolarChartAnnotationConfig | any
 <!-- %param(annotation)% -->
 
 ##### param(element): dxElement

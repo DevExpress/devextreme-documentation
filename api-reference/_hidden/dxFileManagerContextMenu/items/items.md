@@ -11,7 +11,7 @@ Configures context menu items' settings.
  
 ---
 
-The **FileManager** widget allows you to add default and create custom context menu items.
+The **FileManager** widget allows you to add default and custom context menu items.
 
 **Predefined Items**
 

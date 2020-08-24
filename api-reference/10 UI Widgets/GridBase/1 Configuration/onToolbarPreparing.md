@@ -59,7 +59,7 @@ The following code shows how to use this function to customize the toolbar:
                     }
                 });
 
-                // Add a new item
+                // Adds a new item
                 toolbarItems.push({
                     widget: "dxButton", 
                     options: { icon: "user", onClick: function() { ... } },

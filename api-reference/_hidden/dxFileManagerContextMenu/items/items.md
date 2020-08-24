@@ -26,9 +26,7 @@ Predefined context menu items include:
 - **'rename'** - Renames files and directories.
 - **'delete'** - Deletes files and directories.
 
-To add a predefined item to the context menu, add its **name** and optional settings ('visible', 'beginGroup', 'text', 'icon', 'disabled') to the **items** array. 
-
-To override predefined items behavior, specify required conditions in the **onContextMenuItemClick** event handler. 
+To add a predefined item to the context menu, add its [name](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/contextMenu/items/#name) and optional settings ('visible', 'beginGroup', 'text', 'icon', 'disabled') to the [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/contextMenu/items/) array.
 
 ---
 
@@ -49,16 +47,9 @@ To override predefined items behavior, specify required conditions in the **onCo
                     }
                     //...
                 ]
-            }
-            onContextMenuItemClick: onItemClick
-            // ...
+            }            
         });
-    });
-    function onItemClick(args) {
-        if(args.itemData === 'move' && fileManager.getSelectedItems().filter(item => item.name === 'Can\'t move').length){
-            // your code
-        }
-    }  
+    });  
 
 ---
 
@@ -66,7 +57,7 @@ To override predefined items behavior, specify required conditions in the **onCo
 
 **Custom Items**
 
-To add a custom context menu item, you can specify its **text** and optional settings (for example, a file extension for a newly created file). 
+To add a custom context menu item, you can specify its [text](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/contextMenu/items/#text) and optional settings (for example, a file extension for a newly created file). Use the [contextMenuItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#contextMenuItemClick) event to handle clicks on custom context menu items.
 
 ---
 
@@ -94,36 +85,19 @@ To add a custom context menu item, you can specify its **text** and optional set
                                 extension: ".xls"
                             }
                         ]
-                    },
-                    {
-                        text: "Category",
-                        icon: "tags",
-                        items: [
-                            {
-                                text: "Work",
-                                category: "Work"
-                            },
-                            {
-                                text: "Important",
-                                category: "Important"
-                            },
-                            {
-                                text: "Home",
-                                category: "Home"
-                            },
-                            {
-                                text: "None",
-                                category: ""
-                            }
-                        ],
-                        beginGroup: true
-                    },
+                    }
                     // ...
                 ]
             }
+            onContextMenuItemClick: onItemClick
             // ...
         });
     });
+    function onItemClick(args) {
+        if(args.itemData.extension) {
+            // your code
+        }
+    }
 
 ---
 

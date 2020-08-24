@@ -47,13 +47,19 @@ The following code shows how to use this function to customize the toolbar:
             onToolbarPreparing: function (e) {
                 let toolbarItems = e.toolbarOptions.items;
                 
-                // Modifies an existing item
                 toolbarItems.forEach(function(item) {                    
                     if (item.name === "saveButton") {
-                        item.options: {
+                        
+                        // Modify an existing item's option
+                        item.options.onClick = function(e) {
+                            // Implement custom save logic here
+                        }
+
+                        // Or assign a new options object
+                        item.options = {
                             icon: "custom-save-icon",
                             onClick: function(e) {
-                                // Implement custom save logic here
+                                // ...
                             }
                         }
                     }
@@ -77,19 +83,26 @@ The following code shows how to use this function to customize the toolbar:
     export class AppComponent {
         onToolbarPreparing (e) { 
             let toolbarItems = e.toolbarOptions.items;
-            // Modifies an existing item
-            toolbarItems.forEach(function(item) {
+            
+            toolbarItems.forEach(function(item) {                    
                 if (item.name === "saveButton") {
-                    item.options: {
+                    
+                    // Modify an existing item's option
+                    item.options.onClick = function(e) {
+                        // Implement custom save logic here
+                    }
+
+                    // Or assign a new options object
+                    item.options = {
                         icon: "custom-save-icon",
                         onClick: function(e) {
-                            // Implement custom save logic here
+                            // ...
                         }
                     }
                 }
             });
-            
-            // Adds a new item
+        
+            // Add a new item
             toolbarItems.push({
                 widget: "dxButton", 
                 options: { icon: "user", onClick: function () { ... } },
@@ -133,19 +146,26 @@ The following code shows how to use this function to customize the toolbar:
         methods: {
             onToolbarPreparing(e) {
                 let toolbarItems = e.toolbarOptions.items;
-                // Modifies an existing item
-                toolbarItems.forEach(function(item) {
+                
+                toolbarItems.forEach(function(item) {                    
                     if (item.name === "saveButton") {
-                        item.options: {
+                        
+                        // Modify an existing item's option
+                        item.options.onClick = function(e) {
+                            // Implement custom save logic here
+                        }
+
+                        // Or assign a new options object
+                        item.options = {
                             icon: "custom-save-icon",
                             onClick: function(e) {
-                                // Implement custom save logic here
+                                // ...
                             }
                         }
                     }
                 });
 
-                // Adds a new item
+                // Add a new item
                 toolbarItems.push({
                     widget: 'dxButton',
                     options: {
@@ -182,19 +202,26 @@ The following code shows how to use this function to customize the toolbar:
 
         onToolbarPreparing(e) {
             let toolbarItems = e.toolbarOptions.items;
-            // Modifies an existing item
-            toolbarItems.forEach(function(item) {
+            
+            toolbarItems.forEach(function(item) {                    
                 if (item.name === "saveButton") {
-                    item.options: {
+                    
+                    // Modify an existing item's option
+                    item.options.onClick = function(e) {
+                        // Implement custom save logic here
+                    }
+
+                    // Or assign a new options object
+                    item.options = {
                         icon: "custom-save-icon",
                         onClick: function(e) {
-                            // Implement custom save logic here
+                            // ...
                         }
                     }
                 }
             });
 
-            // Adds a new item
+            // Add a new item
             toolbarItems.push({
                 widget: 'dxButton',
                 options: {

@@ -50,7 +50,7 @@ The following code shows how to use this function to customize the toolbar:
                 // Modifies an existing item
                 toolbarItems.forEach(function(item) {                    
                     if (item.name === "saveButton") {
-                        item.options: {
+                        item.options = {
                             icon: "custom-save-icon",
                             onClick: function(e) {
                                 // Implement custom save logic here
@@ -59,7 +59,7 @@ The following code shows how to use this function to customize the toolbar:
                     }
                 });
 
-                // Add a new item
+                // Adds a new item
                 toolbarItems.push({
                     widget: "dxButton", 
                     options: { icon: "user", onClick: function() { ... } },
@@ -80,7 +80,7 @@ The following code shows how to use this function to customize the toolbar:
             // Modifies an existing item
             toolbarItems.forEach(function(item) {
                 if (item.name === "saveButton") {
-                    item.options: {
+                    item.options = {
                         icon: "custom-save-icon",
                         onClick: function(e) {
                             // Implement custom save logic here
@@ -136,7 +136,7 @@ The following code shows how to use this function to customize the toolbar:
                 // Modifies an existing item
                 toolbarItems.forEach(function(item) {
                     if (item.name === "saveButton") {
-                        item.options: {
+                        item.options = {
                             icon: "custom-save-icon",
                             onClick: function(e) {
                                 // Implement custom save logic here
@@ -185,7 +185,7 @@ The following code shows how to use this function to customize the toolbar:
             // Modifies an existing item
             toolbarItems.forEach(function(item) {
                 if (item.name === "saveButton") {
-                    item.options: {
+                    item.options = {
                         icon: "custom-save-icon",
                         onClick: function(e) {
                             // Implement custom save logic here

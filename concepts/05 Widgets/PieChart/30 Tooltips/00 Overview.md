@@ -38,6 +38,46 @@ All options configuring tooltips are collected in the [tooltip](/api-reference/2
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxTooltip :enabled="true"/>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxTooltip
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxTooltip
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Tooltip
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Tooltip enabled={true} />
+                </PieChart>
+            );
+        }
+    }
+
 ---
 
 Options declared in the **tooltip** object apply to all tooltips in the **PieChart**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/#customizeTooltip') option. This function must return an object with options for the tooltip that you want to customize.
@@ -54,7 +94,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **PieCha
                 // Tooltips of all points with the value more than 100 turn red
                 // Other tooltips remain yellow
                 customizeTooltip: function (pointInfo) {
-                    return pointInfo.value > 100 ? { color: 'red' } : { }
+                    return pointInfo.value > 100 ? { color: 'red' } : { };
                 }
             }
         });
@@ -77,7 +117,7 @@ Options declared in the **tooltip** object apply to all tooltips in the **PieCha
         // Tooltips of all points with the value more than 100 turn red
         // Other tooltips remain yellow
         customizeTooltip (pointInfo: any) {
-            return pointInfo.value > 100 ? { color: 'red' } : { }
+            return pointInfo.value > 100 ? { color: 'red' } : { };
         };
     }
     @NgModule({
@@ -87,6 +127,70 @@ Options declared in the **tooltip** object apply to all tooltips in the **PieCha
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            :customize-label="customizeLabel">
+            <DxSeries>
+                <DxTooltip
+                    :enabled="true"
+                    :customize-tooltip="customizeTooltip"
+                    color="yellow"
+                />
+            </DxSeries>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxTooltip
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxTooltip
+        },
+        methods: {
+            // Tooltips of all points with the value more than 100 turn red
+            // Other tooltips remain yellow
+            customizeTooltip(pointInfo) {
+                return pointInfo.value > 100 ? { color: 'red' } : { };
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Tooltip
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    <DxTooltip
+                        enabled={true}
+                        customizeTooltip={customizeTooltip}
+                        color="yellow"
+                    />
+                </PieChart>
+            );
+        }
+    }
+
+    // Tooltips of all points with the value more than 100 turn red
+    // Other tooltips remain yellow
+    function customizeTooltip(pointInfo) {
+        return pointInfo.value > 100 ? { color: 'red' } : { };
+    }
 
 ---
 

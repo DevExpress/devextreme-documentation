@@ -46,6 +46,68 @@ If you need to change the text displayed by point labels, declare the [customize
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxSeries>
+                <DxLabel
+                    :visible="true"
+                    :customize-text="customizeText"
+                />
+            </DxSeries>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries,
+        DxLabel
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries,
+            DxLabel
+        },
+        methods: {
+            customizeText({ argument, value }) {
+                return `${argument}: ${value}`;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series,
+        Label
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ... >
+                    <Series>
+                        <Label
+                            visible={true}
+                            customizeText={customizeText}
+                        />
+                    </Series>
+                </PieChart>
+            );
+        }
+    }
+
+    function customizeText({ argument, value }) {
+        return `${argument}: ${value}`;
+    }
+
 ---
 
 #include common-demobutton with {
@@ -69,7 +131,7 @@ You can also customize an individual label. For this purpose, assign a function 
             // All point labels with the value more than 100 turn red
             // Other point labels remain blue
             customizeLabel: function (pointInfo) {
-                return pointInfo.value > 100 ? { backgroundColor: 'red' } : { }
+                return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
             }
         });
     });
@@ -93,7 +155,7 @@ You can also customize an individual label. For this purpose, assign a function 
         // All point labels with the value more than 100 turn red
         // Other point labels remain blue
         customizeLabel (pointInfo: any) {
-            return pointInfo.value > 100 ? { backgroundColor: 'red' } : { }
+            return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
         }
     }
     @NgModule({
@@ -103,6 +165,74 @@ You can also customize an individual label. For this purpose, assign a function 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            :customize-label="customizeLabel">
+            <DxSeries>
+                <DxLabel
+                    :visible="true"
+                    background-color="blue"
+                />
+            </DxSeries>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries,
+        DxLabel
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries,
+            DxLabel
+        },
+        methods: {
+            // All point labels with the value more than 100 turn red
+            // Other point labels remain blue
+            customizeLabel(pointInfo) {
+                return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series,
+        Label
+    } from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PieChart ...
+                    customizeLabel={customizeLabel}>
+                    <Series>
+                        <Label
+                            visible={true}
+                            backgroundColor="blue"
+                        />
+                    </Series>
+                </PieChart>
+            );
+        }
+    }
+
+    // All point labels with the value more than 100 turn red
+    // Other point labels remain blue
+    function customizeLabel(pointInfo) {
+        return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
+    }
 
 ---
 

@@ -33,6 +33,69 @@ To export the **PieChart** using the API, call the [exportTo(fileName, format)](
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            ref="pieChart">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            exportChart() {
+                this.$refs.pieChart.instance.exportTo('Exported Chart', 'PDF');
+            },
+            printChart() {
+                this.$refs.pieChart.instance.print();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.pieChartRef = React.createRef();
+
+            this.exportChart = this.exportChart.bind(this);
+            this.printChart = this.printChart.bind(this);
+        }
+
+        render() {
+            return (
+                <PieChart ...
+                    ref={this.pieChartRef}>
+                </PieChart>
+            );
+        }
+
+        get pieChart() {
+            return this.pieChartRef.current.instance;
+        }
+
+        exportChart() {
+            this.pieChart.exportTo('Exported Chart', 'PDF');
+        }
+        printChart() {
+            this.pieChart.print();
+        }
+    }
+
 ---
 
 You can also export several widgets at once using their SVG markup. Gather the markup from all required widgets by calling the [DevExpress.viz.getMarkup(widgetInstances)](/api-reference/50%20Common/utils/viz/getMarkup(widgetInstances).md '/Documentation/ApiReference/Common/utils/viz/#getMarkupwidgetInstances') method, and then pass the markup to the [DevExpress.viz.exportFromMarkup(markup, options)](/api-reference/50%20Common/utils/viz/exportFromMarkup(markup_options).md '/Documentation/ApiReference/Common/utils/viz/#exportFromMarkupmarkup_options') method.
@@ -66,7 +129,7 @@ You can also export several widgets at once using their SVG markup. Gather the m
         // @ViewChild('pieChartContainer1') pieChart1: DxPieChartComponent;
         // @ViewChild('pieChartContainer2') pieChart2: DxPieChartComponent;
         exportSeveralCharts () {
-            let chartMarkup = exportMethods.getMarkup([this.pieChart1.instance, this.pieChart2.instance]);
+            const chartMarkup = exportMethods.getMarkup([this.pieChart1.instance, this.pieChart2.instance]);
             exportMethods.exportFromMarkup(chartMarkup, {
                 height: 768,
                 width: 1024,
@@ -86,5 +149,86 @@ You can also export several widgets at once using their SVG markup. Gather the m
     <!--HTML-->
     <dx-pie-chart id="pieChartContainer1" ... ></dx-pie-chart>
     <dx-pie-chart id="pieChartContainer2" ... ></dx-pie-chart>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            ref="pieChart1">
+        </DxPieChart>
+        <DxPieChart ...
+            ref="pieChart2">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+    import exportMethods from "devextreme/viz/export";
+
+    export default {
+        components: {
+            DxPieChart
+        },
+        methods: {
+            exportSeveralCharts() {
+                const pieChart1 = this.$refs.pieChart1.instance;
+                const pieChart2 = this.$refs.pieChart2.instance;
+                const chartMarkup = exportMethods.getMarkup([pieChart1, pieChart2]);
+                exportMethods.exportFromMarkup(chartMarkup, {
+                    height: 768,
+                    width: 1024,
+                    fileName: 'Exported Charts',
+                    format: 'PDF';
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.pieChart1Ref = React.createRef();
+            this.pieChart2Ref = React.createRef();
+
+            this.exportSeveralCharts = this.exportSeveralCharts.bind(this);
+        }
+
+        render() {
+            return (
+                <PieChart ...
+                    ref={this.pieChart1Ref}>
+                </PieChart>
+                <PieChart ...
+                    ref={this.pieChart2Ref}>
+                </PieChart>
+            );
+        }
+
+        get pieChart1() {
+            return this.pieChart1Ref.current.instance;
+        }
+        get pieChart2() {
+            return this.pieChart2Ref.current.instance;
+        }
+
+        exportSeveralCharts() {
+            const chartMarkup = exportMethods.getMarkup([this.pieChart1, this.pieChart2]);
+            exportMethods.exportFromMarkup(chartMarkup, {
+                height: 768,
+                width: 1024,
+                fileName: 'Exported Charts',
+                format: 'PDF';
+            });
+        }
+    }
 
 ---

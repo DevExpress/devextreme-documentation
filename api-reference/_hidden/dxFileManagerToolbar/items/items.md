@@ -27,7 +27,7 @@ Predefined toolbar items include:
 - **'rename'** - Renames files and directories.
 - **'delete'** - Deletes files and directories.
 - **'switchView'** - Switches between the 'Details' and 'Thumbnails' file system representation modes.
-- **'clearSelection'** - Clears selection from files and directories.
+- **'clearSelection'** - Clears selection from files and directories in the Item View area.
 
 To add a predefined item to the toolbar, specify its [name](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#name) and optional settings ('visible', 'location', 'locateInMenu', 'text', 'icon', 'disabled') to the [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) (for all items) or [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) (for selected items) collections.
 

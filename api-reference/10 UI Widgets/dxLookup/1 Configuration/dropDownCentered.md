@@ -1,0 +1,13 @@
+---
+id: dxLookup.Options.dropDownCentered
+type: Boolean
+default: false, true (Material)
+---
+---
+##### shortDescription
+Specifies whether to vertically align the drop-down menu so that the selected item is in its center. Applies only in [Material Design themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/).
+
+---
+The drop-down menu can be displayed under the input field (**dropDownCentered** is **false**) or over it and centered on the selected item (**dropDownCentered** is **true**). The following live example illustrates the difference:
+
+<div class="simulator-desktop-container" style="height:220px" data-view="/Content/Applications/20_1/UIWidgets/Lookup/dropDownCentered.html, /Content/Applications/20_1/UIWidgets/Lookup/dropDownCentered.js, /Content/Applications/20_1/UIWidgets/Lookup/dropDownCentered.css"></div>

@@ -1,6 +1,6 @@
 **Desktop browsers**
 
-- ![Microsoft Edge](/images/PhoneJS/edge.png) Microsoft Edge
+- ![Microsoft Edge](/images/PhoneJS/edge.png) Microsoft Edge - two latest versions
 - ![Internet Explorer](/images/PhoneJS/ie.png) Internet Explorer 11
 - ![Safari](/images/PhoneJS/safari.png) Safari - two latest versions (Safari for Windows is not supported)
 - ![Firefox](/images/PhoneJS/firefox.png) Firefox - two latest versions

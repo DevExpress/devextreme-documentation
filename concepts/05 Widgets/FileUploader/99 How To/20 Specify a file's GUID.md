@@ -7,7 +7,6 @@ Use the [valueChanged](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Eve
 
     <!-- tab: index.js -->
     $(function () {
-    $(function () {
         $("#{file-uploader}Container").dxFileUploader({
             multiple: false,
             accept: "*",

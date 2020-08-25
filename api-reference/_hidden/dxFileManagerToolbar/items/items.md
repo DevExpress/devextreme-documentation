@@ -46,7 +46,7 @@ To add a predefined item to the toolbar, specify its [name](/Documentation/ApiRe
                     {
                         name: "create",
                         text: "Create a directory",
-                        icon: "new"
+                        icon: "newfolder"
                     },
                     // Specify a predefined item's name only                    
                     "switchView", "separator"
@@ -64,7 +64,9 @@ To add a predefined item to the toolbar, specify its [name](/Documentation/ApiRe
 
 **Custom Items**
 
-To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#text) and optional settings (for example, a file extension for the toolbar item that creates a new file) to the [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) (for all items) or [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) (for selected items) collections. Use the [toolbarItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick) event to handle clicks on custom toolbar items.
+To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#text) and optional settings (for example, a file extension for the toolbar item that creates a new file) to the [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) (for all items) or [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) (for selected items) collections. The **widget** option allows you to specify a widget for a custom toolbar item (dxButton is used by default). 
+
+Use the [toolbarItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick) event to handle clicks on custom toolbar items.
 
 ---
 
@@ -104,9 +106,11 @@ To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_
                 fileSelectionItems: [
                     // Specify a custom item as a default dxButton widget
                     {
-                        text: "Move to Temp"
-                        icon: "move",
-                        temp: true
+                        options:{
+                            text: "Move to Temp",
+                            icon: "movetofolder",
+                            temp: true  
+                        }
                     }
                     //...
                 ]

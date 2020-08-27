@@ -1,4 +1,4 @@
-If you are starting a project from scratch, use the DevExtreme Angular Template. It is a simple application with a navigation menu and several sample views in a responsive layout.
+If you are starting a project from scratch, use the DevExtreme Angular Template. It is a simple application with a navigation menu and several sample views in a responsive layout (see <a href="https://devexpress.github.io/devextreme-angular-template/#/home">live preview</a>).
 
 ![DevExtreme Angular Template](/images/dx-application-templates/angular-app-template.png)
 

@@ -1,4 +1,4 @@
-If you are starting a project from scratch, use the DevExtreme React Template. It is a simple application with a navigation menu and several sample views in a responsive layout.
+If you are starting a project from scratch, use the DevExtreme React Template. It is a simple application with a navigation menu and several sample views in a responsive layout  (see <a href="https://devexpress.github.io/devextreme-react-template/#/home">live preview</a>).
 
 ![DevExtreme React Template](/images/dx-application-templates/react-app-template.png)
 

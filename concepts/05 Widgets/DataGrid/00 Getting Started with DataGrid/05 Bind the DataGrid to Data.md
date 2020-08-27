@@ -1,4 +1,4 @@
-The **DataGrid** component can work with different data source types. To use a local array, assign it to the [dataSource]() option and specify the key field in the [keyExpr]() option, as we do in this tutorial. If you want to use another data source type, refer to one of the following articles:
+The **DataGrid** component can work with different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource) option and specify the key field in the [keyExpr]() option, as we do in this tutorial. If you want to use another data source type, refer to one of the following articles:
 
 - [Read-Only Data in JSON Format]()
 - [Web API, PHP, MongoDB]()

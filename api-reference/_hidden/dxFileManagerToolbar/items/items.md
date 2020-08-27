@@ -74,7 +74,7 @@ To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_
 
 - [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) - Displays toolbar items when one or more file system items are selected.
 
-The [widget](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#widget) option allows you to specify a widget for a custom toolbar item ([dxButton](/Documentation/ApiReference/UI_Widgets/dxButton/) is used by default). Use the [toolbarItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick) event to handle clicks on custom toolbar items.
+The [widget](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#widget) option allows you to specify a widget for a custom toolbar item ([dxButton](/Documentation/ApiReference/UI_Widgets/dxButton/) is the default widget). Use the [toolbarItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick) event to handle clicks on custom toolbar items.
 
 ---
 

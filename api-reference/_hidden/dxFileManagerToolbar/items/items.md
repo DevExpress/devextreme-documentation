@@ -29,7 +29,11 @@ Predefined toolbar items include:
 - **'switchView'** - Switches between the 'Details' and 'Thumbnails' file system representation modes.
 - **'clearSelection'** - Clears selection from files and directories in the Item View area.
 
-To add a predefined item to the toolbar, specify its [name](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#name) and optional settings ('visible', 'location', 'locateInMenu', 'text', 'icon', 'disabled') to the [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) (for all items) or [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) (for selected items) collections.
+To add a predefined item to the toolbar, specify its [name](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#name) and optional settings ('visible', 'location', 'locateInMenu', 'text', 'icon', 'disabled') and add the item to one of the following collections:
+
+- [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) - Displays toolbar items when no file system item is selected.
+
+- [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) - Displays toolbar items when one or more file system items are selected.
 
 [note] Note that optional settings for predefined toolbar items should be specified at the same level as the item's **name** option.
 
@@ -64,9 +68,9 @@ To add a predefined item to the toolbar, specify its [name](/Documentation/ApiRe
 
 **Custom Items**
 
-To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#text) and optional settings (for example, a file extension for the toolbar item that creates a new file) to one of the following collections:
+To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#text) and optional settings (for example, a file extension for the toolbar item that creates a new file) and add the item to one of the following collections:
 
-- [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) - Displays toolbar items when no one file system item is selected.
+- [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) - Displays toolbar items when no file system item is selected.
 
 - [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) - Displays toolbar items when one or more file system items are selected.
 

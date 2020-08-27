@@ -20,7 +20,7 @@ Predefined toolbar items include:
 - **'showNavPane'** - Shows or hides the navigation panel.  
 - **'create'** - Creates a new directory.
 - **'upload'** - Uploads a file.
-- **'refresh'** - Refreshes the file manager content.
+- **'refresh'** - Refreshes the file manager content and shows the progress panel.
 - **'download'** - Downloads a file.
 - **'move'** - Moves files and directories.
 - **'copy'** - Copies files and directories.
@@ -64,9 +64,13 @@ To add a predefined item to the toolbar, specify its [name](/Documentation/ApiRe
 
 **Custom Items**
 
-To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#text) and optional settings (for example, a file extension for the toolbar item that creates a new file) to the [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) (for all items) or [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) (for selected items) collections. The **widget** option allows you to specify a widget for a custom toolbar item (dxButton is used by default). 
+To add a custom toolbar item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#text) and optional settings (for example, a file extension for the toolbar item that creates a new file) to one of the following collections:
 
-Use the [toolbarItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick) event to handle clicks on custom toolbar items.
+- [items](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/) - Displays toolbar items when no one file system item is selected.
+
+- [fileSelectionItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/) - Displays toolbar items when one or more file system items are selected.
+
+The [widget](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#widget) option allows you to specify a widget for a custom toolbar item ([dxButton](/Documentation/ApiReference/UI_Widgets/dxButton/) is used by default). Use the [toolbarItemClick](/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick) event to handle clicks on custom toolbar items.
 
 ---
 

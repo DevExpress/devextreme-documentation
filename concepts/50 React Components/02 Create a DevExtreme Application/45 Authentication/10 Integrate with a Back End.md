@@ -1,6 +1,6 @@
-Stub authentication functions for back-end requests are located in the `api` folder. Update these functions to make actual requests to your back end.
+Stub authentication functions for back-end requests are located in the `src\api\auth.js` file. Update these functions to make actual requests to your back end.
 
-Each authentication function returns an object with the following fields:
+Each function returns an object with the following fields:
 
 <table class="dx-table">
     <tr>

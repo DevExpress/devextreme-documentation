@@ -1,6 +1,6 @@
 Grid records can be grouped by values of one or multiple columns. To group records, users should drag and drop column headers onto the [groupPanel](). Enable the **groupPanel**.[visible]() option to display this UI element.
 
-You can also group records programmatically. Specify the [groupIndex] for the columns by which records should be grouped. In this tutorial, the groupIndex is specified for the `Country` column:
+You can also group records programmatically. Specify the [groupIndex]() for the columns by which records should be grouped. In this tutorial, the groupIndex is specified for the `Country` column:
 
 ---
 ##### jQuery

@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-<!-- Description goes here -->
+This section describes methods that manage the **FileUploader** widget.
 
 ---

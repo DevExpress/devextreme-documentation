@@ -1,10 +1,10 @@
-The **DataGrid** component can work with different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource) option and specify the key field in the [keyExpr]() option, as we do in this tutorial. If you want to use another data source type, refer to one of the following articles:
+The **DataGrid** component can work with different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource) option and specify the key field in the [keyExpr](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr) option, as we do in this tutorial. If you want to use another data source type, refer to one of the following articles:
 
-- [Read-Only Data in JSON Format]()
-- [Web API, PHP, MongoDB]()
-- [OData]()
-- [OLAP Cube]()
-- [Custom Data Sources]()
+- [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
+- [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
+- [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
+- [OLAP Cube](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OLAP_Cube/)
+- [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
 
 ---
 ##### jQuery

@@ -1,6 +1,7 @@
 ---
 id: dxPieChart.Options.commonAnnotationSettings
 type: dxPieChartCommonAnnotationConfig
+inheritsType: dxPieChartCommonAnnotationConfig
 ---
 ---
 ##### shortDescription

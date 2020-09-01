@@ -5,7 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether the column bands other columns. Must be used with the ownerBand option inside the customizeColumns function to create Multi-Level Headers (Bands).
+Specifies whether the column bands other columns.
+
+---
+**isBand** must be used with the [ownerBand](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#ownerBand) option inside the [customizeColumns](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#customizeColumns) function to create multi-level headers (bands).
 
 As an alternative, you can use the nested columns option.
 

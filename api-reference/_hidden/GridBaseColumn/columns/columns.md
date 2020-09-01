@@ -7,7 +7,7 @@ type: array
 Columns banded by the current column.
 
 ---
-You can create a hierarchy of banded columns. For this, specify the band and banded columns in the caption and columns options respectively. Repeat these actions to achieve the desired level of hierarchy. For example, the following code declares the *"Address"* band column and nests three columns within it.
+Unlike normal columns, band columns do not hold data. Instead, they collect two or more columns under one column header. To set up this layout, declare the band column using a hierarchical structure. For this, assign the nested columns to the **columns** field of the band column. For example, the following code declares the *"Address"* band column and nests three columns within it.
 
 ---
 ##### jQuery

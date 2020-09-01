@@ -8,8 +8,6 @@ default: undefined
 Specifies whether the column bands other columns.
 
 ---
-**isBand** must be used with the [ownerBand]({basewidgetpath}/Configuration/columns/#ownerBand) option inside the [customizeColumns]({basewidgetpath}/Configuration/#customizeColumns) function to create multi-level headers (bands).
-
 Unlike normal columns, band columns do not hold data. Instead, they collect two or more columns under one column header. To create such a layout, do one of the following:
 
 * [Nest column configurations inside each other]({basewidgetpath}/Configuration/columns/columns/).

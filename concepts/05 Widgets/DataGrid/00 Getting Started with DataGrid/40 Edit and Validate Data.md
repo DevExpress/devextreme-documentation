@@ -71,6 +71,63 @@ DevExtreme includes a validation engine that validates edited values before they
         </dxo-editing>
     </dx-data-grid>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ... >
+                <!-- ... -->
+                <DxColumn data-field="FullName">
+                    <DxRequiredRule />
+                </DxColumn>
+                <DxColumn data-field="Position">
+                    <DxRequiredRule />
+                </DxColumn>
+                <DxColumn ...
+                    data-field="BirthDate">
+                    <DxRequiredRule />
+                </DxColumn>
+                <DxColumn ...
+                    data-field="HireDate">
+                    <DxRequiredRule />
+                </DxColumn>
+                <!-- ... -->
+                <DxColumn ...
+                    data-field="Country">
+                    <DxRequiredRule />
+                </DxColumn>
+                <DxEditing
+                    mode="popup"
+                    :allow-updating="true"
+                    :allow-adding="true"
+                    :allow-deleting="true"
+                />
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        DxColumn,
+        // ...
+        DxRequiredRule,
+        DxEditing
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            // ...
+            DxRequiredRule,
+            DxEditing
+        },
+        // ...
+    }
+    </script>
+
 ---
 
 Run the code and click the Edit button in any row. You will see a popup window that contains an edit form. Remove a value from the Full Name text box on this form. You should see the following validation error: *"First Name is required"*.

@@ -89,5 +89,56 @@ adasdas
         // ...
     }
 
+##### Vue
 
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ...
+                @exporting="exportGrid">
+                <!-- ... -->
+                <DxExport :enabled="true" />
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        // ...
+        DxExport
+    } from 'devextreme-vue/data-grid';
+    import { Workbook } from 'exceljs';
+    import saveAs from 'file-saver';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
+
+    export default {
+        components: {
+            DxDataGrid,
+            // ...
+            DxExport
+        },
+        // ...
+        methods: {
+            exportGrid(e) {
+                const workbook = new Workbook(); 
+                const worksheet = workbook.addWorksheet("Main sheet"); 
+                exportDataGrid({ 
+                    worksheet: worksheet, 
+                    component: e.component
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) { 
+                        saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
+                    }); 
+                }); 
+                e.cancel = true; 
+            }
+        }
+    }
+    </script>
+
+    <style>
+    /* ... */
+    </style>
+    
 ---

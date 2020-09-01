@@ -34,6 +34,42 @@ You can also group records programmatically. Specify the [groupIndex](/Documenta
         <dxo-group-panel [visible]="true"></dxo-group-panel>
     </dx-data-grid>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ... >
+                <!-- ... -->
+                <DxColumn
+                    data-field="Country"
+                    ...
+                    :group-index="0">
+                </DxColumn>
+                <DxGroupPanel :visible="true" />
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        DxColumn,
+        // ...
+        DxGroupPanel
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            // ...
+            DxGroupPanel
+        },
+        // ...
+    }
+    </script>
+
 ---
 
 If you run the code, you should see that records are grouped by the `Country` column. This column's header is on the group panel. Drag and drop column headers to and from the group panel to change the grouping.

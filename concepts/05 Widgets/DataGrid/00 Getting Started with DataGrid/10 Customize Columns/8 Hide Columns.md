@@ -26,6 +26,36 @@ The **DataGrid** displays all columns from the **columns** array. To hide a colu
         <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
     </dx-data-grid>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ... >
+                <!-- ... -->
+                <DxColumn data-field="PostalCode" :visible="false" />
+                <DxColumnChooser :enabled="true" />
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        DxColumn,
+        DxColumnChooser
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxColumnChooser
+        },
+        // ...
+    }
+    </script>
+
 ---
 
 The next step describes how to sort data in code and in the UI.

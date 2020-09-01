@@ -50,5 +50,47 @@ To reorder grid columns, change their order in the **columns** array. Users also
         <dxi-column dataField="HomePhone"></dxi-column>
         <dxi-column dataField="PostalCode"></dxi-column>
     </dx-data-grid>
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ...
+                :allow-column-reordering="true">
+                <DxColumn data-field="FullName"></DxColumn>
+                <DxColumn data-field="Position"></DxColumn>
+                <DxColumn
+                    data-field="BirthDate"
+                    data-type="date">
+                </DxColumn>
+                <DxColumn
+                    data-field="HireDate"
+                    data-type="date">
+                </DxColumn>
+                <DxColumn data-field="City" />
+                <DxColumn data-field="Country"></DxColumn>
+                <DxColumn data-field="Address" />
+                <DxColumn data-field="HomePhone" />
+                <DxColumn data-field="PostalCode" />
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    // ...
+    import {
+        DxDataGrid,
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
 ---

@@ -46,4 +46,43 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
         <!-- ... -->
     </dx-data-grid>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ...
+                :allow-column-reordering="true"
+                :column-auto-width="true">
+                <!-- ... -->
+                <DxColumn
+                    data-field="BirthDate"
+                    data-type="date"
+                    :width="150">
+                </DxColumn>
+                <DxColumn
+                    data-field="HireDate"
+                    data-type="date"
+                    :width="150">
+                </DxColumn>
+                <!-- ... -->
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
 ---

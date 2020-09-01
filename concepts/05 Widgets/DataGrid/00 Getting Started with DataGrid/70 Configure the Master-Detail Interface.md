@@ -68,6 +68,59 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
 
     /* ... */
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ... >
+                <!-- ... -->
+                <DxMasterDetail
+                    :enabled="true"
+                    template="employee-info"
+                />
+                <template #employee-info="{ data: employee }">
+                    <div>
+                        <img class="employee-photo" :src="employee.data.Photo">
+                        <p class="employee-notes">{{ employee.data.Notes }}</p>
+                    </div>
+                </template>
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        // ...
+        DxMasterDetail
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            // ...
+            DxMasterDetail
+        },
+        // ...
+    }
+    </script>
+
+    <style>
+    .employee-photo {
+        height: 140px;
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+        
+    .employee-notes {
+        text-align: justify;
+        white-space: normal;
+    }
+
+    /* ... */
+    </style>
+
 ---
 
 Run the code and click the Expand button in any row. You should see a detail section that contains an employee's photo and information.

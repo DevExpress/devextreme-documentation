@@ -28,8 +28,43 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Widgets/d
             dataField="Country"
             sortOrder="asc">
         </dxi-column>
-        <!-- <dxo-sorting [mode]="multiple"></dxo-sorting> -->
+        <!-- <dxo-sorting [mode]="single"></dxo-sorting> -->
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ... >
+                <!-- ... -->
+                <DxColumn
+                    data-field="Country"
+                    sort-order="asc">
+                </DxColumn>
+                <!-- <DxSorting mode="single" /> -->
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        DxColumn,
+        // ...
+        // DxSorting
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            // ...
+            // DxSorting
+        },
+        // ...
+    }
+    </script>
 
 ---
 

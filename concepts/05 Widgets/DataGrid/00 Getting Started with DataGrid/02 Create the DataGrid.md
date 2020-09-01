@@ -67,5 +67,29 @@ You can use the following library- or framework-specific code to create the **Da
         bootstrap: [AppComponent]
     })
     export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid>
+                <!-- Configuration goes here -->
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        }
+    }
+    </script>
     
 ---

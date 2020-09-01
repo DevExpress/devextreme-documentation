@@ -78,6 +78,60 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
         text-align: center;
     }
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ...
+                @selection-changed="selectEmployee">
+                <!-- ... -->
+                <DxSelection mode="multiple" />
+            </DxDataGrid>
+            <p id="selected-employee" v-if="selectedEmployee">
+                Selected employee: {{ selectedEmployee.FullName }}
+            </p>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        // ...
+        DxSelection
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            // ...
+            DxSelection
+        },
+        data() {
+            return {
+                // ...
+                selectedEmployee: undefined,
+            }
+        },
+        methods: {
+            selectEmployee(e) {
+                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
+                    if(employee) {
+                        this.selectedEmployee = employee;
+                    }
+                });
+            }
+        }
+    }
+    </script>
+
+    <style>
+    #selected-employee {
+        text-align: center;
+    }
+    </style>
+
+
 ---
 
 In the next step, we will add a summary to count grid records.

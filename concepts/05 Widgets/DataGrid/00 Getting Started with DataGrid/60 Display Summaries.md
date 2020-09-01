@@ -46,6 +46,46 @@ The code below configures a total summary that counts all grid records. The [sho
         </dxo-summary>
     </dx-data-grid>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ...>
+                <!-- ... -->
+                <DxColumn data-field="HomePhone" />
+                <!-- ... -->
+                <DxSummary>
+                    <DxTotalItem
+                        summary-type="count"
+                        show-in-column="HomePhone"
+                    />
+                </DxSummary>
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        DxColumn,
+        // ...
+        DxSummary,
+        DxTotalItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            // ...
+            DxSummary,
+            DxTotalItem
+        },
+        // ...
+    }
+    </script>
+
 ---
 
 In the following step, we will add an expandable section that displays information about an employee to each grid row.

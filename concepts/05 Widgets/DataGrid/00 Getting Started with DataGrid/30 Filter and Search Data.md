@@ -28,6 +28,38 @@ In this tutorial, we display the **filterRow** and **searchPanel**:
         <dxo-search-panel [visible]="true"></dxo-search-panel>
     </dx-data-grid>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app">
+            <DxDataGrid ... >
+                <!-- ... -->
+                <DxFilterRow :visible="true" />
+                <DxSearchPanel :visible="true" />
+            </DxDataGrid>
+        </div>
+    </template>
+
+    <script>
+    import {
+        DxDataGrid,
+        // ...
+        DxFilterRow,
+        DxSearchPanel
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            // ...
+            DxFilterRow,
+            DxSearchPanel
+        },
+        // ...
+    }
+    </script>
+
 ---
 
 Run the code and enter a value into a filter row cell or the search panel. Grid data will be filtered according to this value. In the next step, we will configure grouping.

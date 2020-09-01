@@ -31,6 +31,21 @@ The code below configures a total summary that counts all grid records. The [sho
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <!-- ... -->
+        <dxi-column dataField="HomePhone"></dxi-column>
+        <!-- ... -->
+        <dxo-summary>
+            <dxi-total-item
+                summaryType="count"
+                showInColumn="HomePhone">
+            </dxi-total-item>
+        </dxo-summary>
+    </dx-data-grid>
+
 ---
 
 In the following step, we will add an expandable section that displays information about an employee to each grid row.

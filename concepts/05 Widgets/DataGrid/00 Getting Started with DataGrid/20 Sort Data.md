@@ -19,6 +19,18 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Widgets/d
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <!-- ... -->
+        <dxi-column
+            dataField="Country"
+            sortOrder="asc">
+        </dxi-column>
+        <!-- <dxo-sorting [mode]="multiple"></dxo-sorting> -->
+    </dx-data-grid>
+
 ---
 
 Run the code and ensure that grid records are sorted by the `Country` column. Click a column header to sort the records by another column. Next, we will configure filtering and searching.

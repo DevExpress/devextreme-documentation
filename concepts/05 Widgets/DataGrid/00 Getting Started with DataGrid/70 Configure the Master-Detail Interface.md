@@ -39,6 +39,35 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
 
     /* ... */
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <!-- ... -->
+        <dxo-master-detail
+            [enabled]="true"
+            [template]="'employee-info'">
+        </dxo-master-detail>
+        <div *dxTemplate="let employee of 'employee-info'">
+            <img class="employee-photo" [src]="employee.data.Photo">
+            <p class="employee-notes">{{ employee.data.Notes }}</p>
+        </div>
+    </dx-data-grid>
+
+    <!-- tab: app.component.css -->
+    .employee-photo {
+        height: 140px;
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+    
+    .employee-notes {
+        text-align: justify;
+        white-space: normal;
+    }
+
+    /* ... */
+
 ---
 
 Run the code and click the Expand button in any row. You should see a detail section that contains an employee's photo and information.

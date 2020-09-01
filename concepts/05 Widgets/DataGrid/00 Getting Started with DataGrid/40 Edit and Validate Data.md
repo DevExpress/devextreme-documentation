@@ -40,6 +40,37 @@ DevExtreme includes a validation engine that validates edited values before they
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <!-- ... -->
+        <dxi-column dataField="FullName">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column dataField="Position">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column ...
+            dataField="BirthDate">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column ...
+            dataField="HireDate">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column ...
+            dataField="Country">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxo-editing
+            mode="popup"
+            [allowUpdating]="true"
+            [allowDeleting]="true"
+            [allowAdding]="true">
+        </dxo-editing>
+    </dx-data-grid>
+
 ---
 
 Run the code and click the Edit button in any row. You will see a popup window that contains an edit form. Remove a value from the Full Name text box on this form. You should see the following validation error: *"First Name is required"*.

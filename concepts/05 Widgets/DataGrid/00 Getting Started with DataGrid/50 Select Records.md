@@ -29,6 +29,55 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
         </body>
     </html>
 
+    <!-- tab: index.css -->
+    #selected-employee {
+        text-align: center;
+    }
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ...
+        (onSelectionChanged)="selectEmployee($event)">
+        <!-- ... -->
+        <dxo-selection mode="multiple"></dxo-selection>
+    </dx-data-grid>
+    <p id="selected-employee" *ngIf="selectedEmployee">
+        Selected employee: {{ selectedEmployee.FullName }}
+    </p>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { Employee, EmployeesService } from './employees.service';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        // ...
+        selectedEmployee: Employee;
+
+        constructor(service: EmployeesService) {
+            // ...
+            this.selectEmployee = this.selectEmployee.bind(this);
+        }
+        
+        selectEmployee(e) {
+            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
+                if(employee) {
+                    this.selectedEmployee = employee;
+                }
+            });
+        }
+    }
+
+    <!-- tab: app.component.css -->
+    #selected-employee {
+        text-align: center;
+    }
+
 ---
 
 In the next step, we will add a summary to count grid records.

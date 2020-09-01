@@ -17,6 +17,15 @@ The **DataGrid** displays all columns from the **columns** array. To hide a colu
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <!-- ... -->
+        <dxi-column dataField="PostalCode" [visible]="false"></dxi-column>
+        <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+    </dx-data-grid>
+
 ---
 
 The next step describes how to sort data in code and in the UI.

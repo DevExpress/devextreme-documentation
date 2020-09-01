@@ -21,6 +21,19 @@ You can also group records programmatically. Specify the [groupIndex](/Documenta
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <!-- ... -->
+        <dxi-column
+            dataField="Country"
+            ...
+            [groupIndex]="0">
+        </dxi-column>
+        <dxo-group-panel [visible]="true"></dxo-group-panel>
+    </dx-data-grid>
+
 ---
 
 If you run the code, you should see that records are grouped by the `Country` column. This column's header is on the group panel. Drag and drop column headers to and from the group panel to change the grouping.

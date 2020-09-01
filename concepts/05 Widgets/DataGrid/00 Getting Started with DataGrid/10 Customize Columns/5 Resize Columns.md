@@ -26,4 +26,24 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ...
+        [allowColumnResizing]="true"
+        [columnAutoWidth]="true">
+        <!-- ... -->
+        <dxi-column
+            dataField="BirthDate"
+            dataType="date"
+            [width]="150">
+        </dxi-column>
+        <dxi-column
+            dataField="HireDate"
+            dataType="date"
+            [width]="150">
+        </dxi-column>
+        <!-- ... -->
+    </dx-data-grid>
+
 ---

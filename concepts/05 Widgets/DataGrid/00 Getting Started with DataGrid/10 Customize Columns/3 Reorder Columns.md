@@ -17,9 +17,7 @@ To reorder grid columns, change their order in the **columns** array. Users also
             }, {
                 dataField: "HireDate", 
                 dataType: "date",
-            }, {
-                dataField: "City"
-            }, {
+            },"City", {
                 dataField: "Country"
             },
             "Address",
@@ -31,4 +29,26 @@ To reorder grid columns, change their order in the **columns** array. Users also
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ...
+        [allowColumnReordering]="true">
+        <dxi-column dataField="FullName"></dxi-column>
+        <dxi-column dataField="Position"></dxi-column>
+        <dxi-column
+            dataField="BirthDate"
+            dataType="date">
+        </dxi-column>
+        <dxi-column
+            dataField="HireDate"
+            dataType="date">
+        </dxi-column>
+        <dxi-column dataField="City"></dxi-column>
+        <dxi-column dataField="Country"></dxi-column>
+        <dxi-column dataField="Address"></dxi-column>
+        <dxi-column dataField="HomePhone"></dxi-column>
+        <dxi-column dataField="PostalCode"></dxi-column>
+    </dx-data-grid>
+    
 ---

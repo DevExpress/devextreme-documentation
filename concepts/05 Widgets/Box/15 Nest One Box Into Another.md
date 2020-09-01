@@ -49,12 +49,14 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
         [width]="300">
         <dxi-item class="box-item yellow" [ratio]="1" [baseSize]="50"> Item 1 </dxi-item>
         <dxi-item [ratio]="1" [baseSize]="50">
-            <dx-box id="nestedBox"
-                direction="row"
-                height="100%">
-                <dxi-item class="box-item green"  [ratio]="1"> Item 2 </dxi-item>
-                <dxi-item class="box-item orange" [ratio]="1"> Item 3 </dxi-item>
-            </dx-box>
+            <div *dxTemplate>
+                <dx-box id="nestedBox"
+                    direction="row"
+                    height="100%">
+                    <dxi-item class="box-item green"  [ratio]="1"> Item 2 </dxi-item>
+                    <dxi-item class="box-item orange" [ratio]="1"> Item 3 </dxi-item>
+                </dx-box>
+            </div>
         </dxi-item>
     </dx-box>
 

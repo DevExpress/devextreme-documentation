@@ -12,7 +12,7 @@ Unlike normal columns, band columns do not hold data. Instead, they collect two 
 
 * [Nest column configurations inside each other]({basewidgetpath}/Configuration/columns/columns/).
 
-* Specify the **isBand** and **[ownerBand]({basewidgetpath}/Configuration/columns/#ownerBand)** options inside the **[customizeColumns]({basewidgetpath}/Configuration/#customizeColumns)** function.
+* Specify the **isBand** and [ownerBand]({basewidgetpath}/Configuration/columns/#ownerBand) options inside the [customizeColumns]({basewidgetpath}/Configuration/#customizeColumns) function.
 
 The following code uses the **isBand** and **ownerBand** options to band the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* header:
 

@@ -8,9 +8,15 @@ default: undefined
 Specifies whether the column bands other columns.
 
 ---
-**isBand** must be used with the [ownerBand](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#ownerBand) option inside the [customizeColumns](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#customizeColumns) function to create multi-level headers (bands).
+**isBand** must be used with the [ownerBand]({basewidgetpath}/Configuration/columns/#ownerBand) option inside the [customizeColumns]({basewidgetpath}/Configuration/#customizeColumns) function to create multi-level headers (bands).
 
-As an alternative, you can use the nested columns option.
+Unlike normal columns, band columns do not hold data. Instead, they collect two or more columns under one column header. To create such a layout, do one of the following:
+
+* [Nest column configurations inside each other]({basewidgetpath}/Configuration/columns/columns/).
+
+* Specify the **isBand** and **ownerBand** options inside the **customizeColumns** function.
+
+The following code uses the **isBand** and **ownerBand** options to band the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* header:
 
 ---
 ##### jQuery

@@ -66,6 +66,38 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Widgets/d
     }
     </script>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DataGrid,
+        Column,
+        // ...
+        // Sorting
+    } from 'devextreme-react/data-grid';
+
+    function App() {
+        return (
+            <div className="App">
+                <DataGrid ... >
+                    {/* ... */}
+                    <Column
+                        dataField="Country"
+                        sortOrder="asc">
+                    </Column>
+                    {/* <Sorting mode="single" /> */}
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
+
 ---
 
 Run the code and ensure that grid records are sorted by the `Country` column. Click a column header to sort the records by another column. Next, we will configure filtering and searching.

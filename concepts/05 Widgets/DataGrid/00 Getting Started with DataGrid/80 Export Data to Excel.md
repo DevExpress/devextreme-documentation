@@ -1,5 +1,4 @@
-adasdas
-
+asas
 
 ---
 ##### jQuery
@@ -140,5 +139,54 @@ adasdas
     <style>
     /* ... */
     </style>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useState } from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    import './App.css';
+
+    import {
+        DataGrid,
+        Column,
+        // ...
+        Export
+    } from 'devextreme-react/data-grid';
+
+    import { Workbook } from 'exceljs';
+    import saveAs from 'file-saver';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
+    // ...
+
+    function exportGrid(e) {
+        const workbook = new Workbook(); 
+        const worksheet = workbook.addWorksheet("Main sheet"); 
+        exportDataGrid({ 
+            worksheet: worksheet, 
+            component: e.component
+        }).then(function() {
+            workbook.xlsx.writeBuffer().then(function(buffer) { 
+                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
+            }); 
+        });
+        e.cancel = true; 
+    }
+
+    function App() {
+        // ...
+        return (
+            <div className="App">
+                <DataGrid ...
+                    onExporting={exportGrid}>
+                    {/* ... */}
+                    <Export enabled={true} />
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
     
 ---

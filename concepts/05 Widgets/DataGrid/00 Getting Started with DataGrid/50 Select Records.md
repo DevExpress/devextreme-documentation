@@ -131,6 +131,58 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
     }
     </style>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useState } from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    import './App.css';
+
+    import {
+        DataGrid,
+        Column,
+        // ...
+        Selection
+    } from 'devextreme-react/data-grid';
+
+    function SelectedEmployee(props) {
+        if(props.employee) {
+            return (
+                <p id="selected-employee">
+                    Selected employee: {props.employee.FullName}
+                </p>
+            );
+        }
+        return null;
+    }
+
+    function App() {
+        const [selectedEmployee, setSelectedEmployee] = useState();
+        const selectEmployee = (e) => {
+            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
+                setSelectedEmployee(employee);
+            });
+        }
+
+        return (
+            <div className="App">
+                <DataGrid ...
+                    onSelectionChanged={selectEmployee}>
+                    {/* ... */}
+                    <Selection mode="single" />
+                </DataGrid>
+                <SelectedEmployee employee={selectedEmployee} />
+            </div>
+        );
+    }
+
+    export default App;
+
+    <!-- tab: App.css -->
+    #selected-employee {
+        text-align: center;
+    }
 
 ---
 

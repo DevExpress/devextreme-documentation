@@ -70,6 +70,38 @@ You can also group records programmatically. Specify the [groupIndex](/Documenta
     }
     </script>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DataGrid,
+        Column,
+        // ...
+        GroupPanel
+    } from 'devextreme-react/data-grid';
+
+    function App() {
+        return (
+            <div className="App">
+                <DataGrid ... >
+                    {/* ... */}
+                    <Column
+                        dataField="Country"
+                        ...
+                        groupIndex={0}>
+                    </Column>
+                    <GroupPanel visible={true} />
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
 ---
 
 If you run the code, you should see that records are grouped by the `Country` column. This column's header is on the group panel. Drag and drop column headers to and from the group panel to change the grouping.

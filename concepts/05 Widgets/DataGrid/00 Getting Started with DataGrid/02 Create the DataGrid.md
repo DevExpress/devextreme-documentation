@@ -91,5 +91,28 @@ You can use the following library- or framework-specific code to create the **Da
         }
     }
     </script>
-    
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DataGrid
+    } from 'devextreme-react/data-grid';
+
+    function App() {
+        return (
+            <div className="App">
+                <DataGrid>
+                    {/* Configuration goes here */}
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
 ---

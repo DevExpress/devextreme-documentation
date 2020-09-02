@@ -56,6 +56,33 @@ The **DataGrid** displays all columns from the **columns** array. To hide a colu
     }
     </script>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DataGrid,
+        Column,
+        ColumnChooser
+    } from 'devextreme-react/data-grid';
+
+    function App() {
+        return (
+            <div className="App">
+                <DataGrid ... >
+                    {/* ... */}
+                    <Column dataField="PostalCode" visible={false} />
+                    <ColumnChooser enabled={true} />
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
 ---
 
 The next step describes how to sort data in code and in the UI.

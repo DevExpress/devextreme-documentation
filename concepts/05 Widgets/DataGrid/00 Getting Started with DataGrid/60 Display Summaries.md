@@ -51,7 +51,7 @@ The code below configures a total summary that counts all grid records. The [sho
     <!-- tab: App.vue -->
     <template>
         <div id="app">
-            <DxDataGrid ...>
+            <DxDataGrid ... >
                 <!-- ... -->
                 <DxColumn data-field="HomePhone" />
                 <!-- ... -->
@@ -85,6 +85,45 @@ The code below configures a total summary that counts all grid records. The [sho
         // ...
     }
     </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useState } from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    import './App.css';
+
+    import {
+        DataGrid,
+        Column,
+        // ...
+        Summary,
+        TotalItem
+    } from 'devextreme-react/data-grid';
+
+    // ...
+    function App() {
+        // ...
+        return (
+            <div className="App">
+                <DataGrid ... >
+                    {/* ... */}
+                    <Column dataField="HomePhone" />
+                    {/* ... */}
+                    <Summary>
+                        <TotalItem
+                            summaryType="count"
+                            showInColumn="HomePhone"
+                        />
+                    </Summary>
+                </DataGrid>
+                <SelectedEmployee employee={selectedEmployee} />
+            </div>
+        );
+    }
+
+    export default App;
 
 ---
 

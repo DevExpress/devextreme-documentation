@@ -121,6 +121,67 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
     /* ... */
     </style>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useState } from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    import './App.css';
+
+    import {
+        DataGrid,
+        Column,
+        // ...
+        MasterDetail
+    } from 'devextreme-react/data-grid';
+    // ...
+
+    function DetailSection(props) {
+        const employee = props.data.data;
+        return (
+            <div>
+                <img
+                    className="employee-photo"
+                    alt={employee.FullName}
+                    src={employee.Photo}
+                />
+                <p className="employee-notes">{employee.Notes}</p>
+            </div>
+        );
+    }
+
+    function App() {
+        // ...
+        return (
+            <div className="App">
+                <DataGrid ... >
+                    {/* ... */}
+                    <MasterDetail
+                        enabled={true}
+                        component={DetailSection}
+                    />
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
+    <!-- tab: App.css -->
+    /* ... */
+    .employee-photo {
+        height: 140px;
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+
+    .employee-notes {
+        text-align: justify;
+        white-space: normal;
+    }
+
+
 ---
 
 Run the code and click the Expand button in any row. You should see a detail section that contains an employee's photo and information.

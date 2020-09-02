@@ -85,4 +85,41 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
     }
     </script>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DataGrid,
+        Column
+    } from 'devextreme-react/data-grid';
+
+    function App() {
+        return (
+            <div className="App">
+                <DataGrid ...
+                    columnAutoWidth={true}
+                    allowColumnReordering={true}>
+                    {/* ... */}
+                    <Column
+                        dataField="BirthDate"
+                        dataType="date"
+                        width={150}>
+                    </Column>
+                    <Column
+                        dataField="HireDate"
+                        dataType="date"
+                        width={150}>
+                    </Column>
+                    {/* ... */}
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
 ---

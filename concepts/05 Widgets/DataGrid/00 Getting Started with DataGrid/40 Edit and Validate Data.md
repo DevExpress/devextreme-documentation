@@ -128,6 +128,58 @@ DevExtreme includes a validation engine that validates edited values before they
     }
     </script>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DataGrid,
+        Column,
+        // ...
+        RequiredRule,
+        Editing
+    } from 'devextreme-react/data-grid';
+
+    function App() {
+        return (
+            <div className="App">
+                <DataGrid ... >
+                    {/* ... */}
+                    <Column dataField="FullName">
+                        <RequiredRule />
+                    </Column>
+                    <Column dataField="Position">
+                        <RequiredRule />
+                    </Column>
+                    <Column ...
+                        dataField="BirthDate">
+                        <RequiredRule />
+                    </Column>
+                    <Column ...
+                        dataField="HireDate">
+                        <RequiredRule />
+                    </Column>
+                    {/* ... */}
+                    <Column ...
+                        dataField="Country">
+                        <RequiredRule />
+                    </Column>
+                    <Editing
+                        mode="popup"
+                        allowUpdating={true}
+                        allowDeleting={true}
+                        allowAdding={true}
+                    />
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
 ---
 
 Run the code and click the Edit button in any row. You will see a popup window that contains an edit form. Remove a value from the Full Name text box on this form. You should see the following validation error: *"First Name is required"*.

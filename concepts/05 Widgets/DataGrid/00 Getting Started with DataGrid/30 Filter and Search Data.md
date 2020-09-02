@@ -60,6 +60,34 @@ In this tutorial, we display the **filterRow** and **searchPanel**:
     }
     </script>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DataGrid,
+        // ...
+        FilterRow,
+        SearchPanel
+    } from 'devextreme-react/data-grid';
+
+    function App() {
+        return (
+            <div className="App">
+                <DataGrid ... >
+                    {/* ... */}
+                    <FilterRow visible={true} />
+                    <SearchPanel visible={true} />
+                </DataGrid>
+            </div>
+        );
+    }
+
+    export default App;
+
 ---
 
 Run the code and enter a value into a filter row cell or the search panel. Grid data will be filtered according to this value. In the next step, we will configure grouping.

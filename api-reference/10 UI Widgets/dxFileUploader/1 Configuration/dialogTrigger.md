@@ -5,7 +5,38 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the HTML element a click on which invokes file upload dialog.
 
 ---
-<!-- Description goes here -->
+
+You can use any of the following ways to specify the **dialogTrigger** option:
+
+- String
+
+    ---
+    ##### jQuery
+
+        <!-- tab: JavaScript -->
+        dialogTrigger: '.catPicture'
+
+    ---
+
+- jQuery object
+	 
+    ---
+    ##### jQuery
+
+        <!-- tab: JavaScript -->
+        dialogTrigger: $('.catPicture')
+
+    ---
+
+- DOM element
+
+    ---
+    ##### jQuery
+
+        <!-- tab: JavaScript -->
+        dialogTrigger: $('.catPicture')[0]
+
+    ---

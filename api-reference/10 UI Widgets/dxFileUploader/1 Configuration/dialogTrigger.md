@@ -9,7 +9,7 @@ Specifies the HTML element which invokes the file upload dialog.
 
 ---
 
-You can use any of the following ways to specify the **dialogTrigger** option:
+You can use a string, jQuery object or DOM element to specify the **dialogTrigger** option:
 
 - String
 

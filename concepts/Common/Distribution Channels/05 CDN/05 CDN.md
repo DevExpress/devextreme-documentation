@@ -22,10 +22,10 @@ DevExtreme provides the following files via CDN:
 
 ## Stylesheets
 
-    <!-- Diagram and Gantt production files -->
+    <!-- Diagram and Gantt production stylesheets -->
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.min.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-gantt.min.css" rel="stylesheet">
-    <!-- Diagram and Gantt development files -->
+    <!-- Diagram and Gantt development stylesheets -->
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-gantt.css" rel="stylesheet">
 

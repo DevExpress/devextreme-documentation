@@ -28,11 +28,11 @@ Use the the `dx-diagram.css` and `dx-diagram.js` files to add an unminified vers
 
 [note]
 
-The Diagram widget is a jQuery DevExtreme widget, and thus requires common DevExtreme resources (listed below) to be included into your page after the Diagram resources.
+The Diagram widget is a jQuery DevExtreme widget. Common DevExtreme resources (listed below) should be included in your page after the Diagram resources.
 
         <!--HTML-->
         @* Diagram styles*@
-        <link rel="stylesheet" href="css/dx-diagram.css" />
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.min.css">
         @* DevExtreme themes *@
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
@@ -40,7 +40,7 @@ The Diagram widget is a jQuery DevExtreme widget, and thus requires common DevEx
         @* jQuery *@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         @* Diagram scripts *@
-        <script src="js/dx-diagram.min.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-diagram.min.js"></script>
         @* DevExtreme common scripts *@
         <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
 

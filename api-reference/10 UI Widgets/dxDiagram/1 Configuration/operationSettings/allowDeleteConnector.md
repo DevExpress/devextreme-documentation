@@ -1,8 +1,7 @@
 ---
-id: GridBase.Options.editing.editColumnName
-type: String
-default: null
-firedEvents: optionChanged
+id: dxDiagram.Options.operationSettings.allowDeleteConnector
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

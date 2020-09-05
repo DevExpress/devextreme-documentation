@@ -1,8 +1,6 @@
 ---
-id: GridBase.Options.editing.editColumnName
-type: String
-default: null
-firedEvents: optionChanged
+id: dxDiagramRequestOperationChangeConnectionArgs.connectionPointIndex
+type: Number
 ---
 ---
 ##### shortDescription

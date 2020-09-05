@@ -1,8 +1,7 @@
 ---
-id: GridBase.Options.editing.editColumnName
+id: dxFileManagerToolbarItem.icon
 type: String
-default: null
-firedEvents: optionChanged
+default: ''
 ---
 ---
 ##### shortDescription

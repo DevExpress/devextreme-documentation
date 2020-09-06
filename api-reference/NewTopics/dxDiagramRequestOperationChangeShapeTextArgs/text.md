@@ -1,8 +1,6 @@
 ---
-id: GridBase.Options.editing.editColumnName
+id: dxDiagramRequestOperationChangeShapeTextArgs.text
 type: String
-default: null
-firedEvents: optionChanged
 ---
 ---
 ##### shortDescription

@@ -6,7 +6,7 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-Specifies whether tiles are placed horizontally or vertically.
+Specifies whether the widget is oriented horizontally or vertically.
 
 ---
 #include common-ref-enum with {

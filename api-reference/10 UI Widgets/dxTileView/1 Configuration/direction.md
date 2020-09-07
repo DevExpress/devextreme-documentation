@@ -6,7 +6,7 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-Specifies whether the TileView widget is oriented horizontally or vertically. The tiles are laid out perpendicular to the orientation.
+Specifies whether the widget is oriented horizontally or vertically.
 
 ---
 #include common-ref-enum with {

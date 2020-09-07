@@ -8,6 +8,10 @@ inherits: dxPopover
 ##### shortDescription
 The **Tooltip** widget displays a tooltip for a specified element on the page.
 
+##### widgettree
+target: "#widget",
+visible: true
+
 ##### lib
 dx.web.js, dx.viz-web.js, dx.all.js
 

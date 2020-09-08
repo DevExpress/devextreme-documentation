@@ -1,8 +1,7 @@
 ---
-id: GridBase.Options.editing.editColumnName
+id: dxDiagramRequestOperationChangeConnectionArgs.connectorPosition
+acceptValues: 'start' | 'end'
 type: String
-default: null
-firedEvents: optionChanged
 ---
 ---
 ##### shortDescription

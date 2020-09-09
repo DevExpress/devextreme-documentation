@@ -1,7 +1,7 @@
 ---
-id: GridBase.Options.editing.editColumnName
-type: String
-default: null
+id: GridBase.Options.editing.changes
+type: Array<any>
+default: []
 firedEvents: optionChanged
 ---
 ---

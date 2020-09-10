@@ -1,7 +1,6 @@
 ---
-id: dxDiagram.Options.nodes.autoSizeEnabled
-type: Boolean
-default: false
+id: dxDiagramRequestOperationResizeShapeArgs.shape
+type: dxDiagramShape
 ---
 ---
 ##### shortDescription

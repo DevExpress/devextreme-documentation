@@ -14,7 +14,7 @@ EventForAction: dxDiagram.requestOperation
 ##### field(e.allowed): Boolean
 <!-- Description goes here -->
 
-##### field(e.args): dxDiagramRequestOperationAddShapeArgs | dxDiagramRequestOperationAddShapeFromToolboxArgs | dxDiagramRequestOperationDeleteShapeArgs | dxDiagramRequestOperationDeleteConnectorArgs | dxDiagramRequestOperationChangeConnectionArgs | dxDiagramRequestOperationChangeConnectorPointsArgs | dxDiagramRequestOperationBeforeChangeShapeTextArgs | dxDiagramRequestOperationChangeShapeTextArgs | dxDiagramRequestOperationBeforeChangeConnectorTextArgs | dxDiagramRequestOperationChangeConnectorTextArgs
+##### field(e.args): dxDiagramRequestOperationAddShapeArgs | dxDiagramRequestOperationAddShapeFromToolboxArgs | dxDiagramRequestOperationDeleteShapeArgs | dxDiagramRequestOperationDeleteConnectorArgs | dxDiagramRequestOperationChangeConnectionArgs | dxDiagramRequestOperationChangeConnectorPointsArgs | dxDiagramRequestOperationBeforeChangeShapeTextArgs | dxDiagramRequestOperationChangeShapeTextArgs | dxDiagramRequestOperationBeforeChangeConnectorTextArgs | dxDiagramRequestOperationChangeConnectorTextArgs | dxDiagramRequestOperationResizeShapeArgs
 <!-- Description goes here -->
 
 ##### field(e.component): {WidgetName}
@@ -26,7 +26,10 @@ EventForAction: dxDiagram.requestOperation
 ##### field(e.model): Object
 <!-- Description goes here -->
 
-##### field(e.operation): 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints' | 'beforeChangeShapeText' | 'changeShapeText' | 'beforeChangeConnectorText' | 'changeConnectorText'
+##### field(e.operation): 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints' | 'beforeChangeShapeText' | 'changeShapeText' | 'beforeChangeConnectorText' | 'changeConnectorText' | 'resizeShape'
+<!-- Description goes here -->
+
+##### field(e.updateUI): Boolean
 <!-- Description goes here -->
 
 ---

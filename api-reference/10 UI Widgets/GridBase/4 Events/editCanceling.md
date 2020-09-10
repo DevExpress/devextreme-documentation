@@ -1,8 +1,6 @@
 ---
-id: GridBase.Options.editing.editColumnName
-type: String
-default: null
-firedEvents: optionChanged
+id: GridBase.editCanceling
+type: eventType
 ---
 ---
 ##### shortDescription

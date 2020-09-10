@@ -1,8 +1,7 @@
 ---
-id: GridBase.Options.editing.editColumnName
+id: GridBase.Options.pager.displayMode
+acceptValues: 'adaptive' | 'compact' | 'full'
 type: String
-default: null
-firedEvents: optionChanged
 ---
 ---
 ##### shortDescription

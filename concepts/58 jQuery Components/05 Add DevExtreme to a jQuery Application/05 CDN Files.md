@@ -13,7 +13,6 @@ Link DevExtreme scripts and stylesheets within the `<head>` tag on your index pa
         <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
         <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.web.js"></script> -->
         <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz.js"></script> -->
-        <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz-web.js"></script> -->
     </head>
     <body class="dx-viewport">
         <!-- ... -->

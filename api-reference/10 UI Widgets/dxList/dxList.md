@@ -14,7 +14,7 @@ dataSource: ["Prepare 2013 Financial","Prepare 3013 Marketing Plan","Update Pers
     "Update Sales Strategy Documents","Create 2012 Sales Report","Direct vs Online Sales Comparison Report"]
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

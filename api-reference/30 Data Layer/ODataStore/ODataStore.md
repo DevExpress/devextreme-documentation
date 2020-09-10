@@ -10,7 +10,7 @@ inherits: Store
 The **ODataStore** is a store that provides an interface for loading and editing data from an individual OData entity collection and handling related events.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 ---

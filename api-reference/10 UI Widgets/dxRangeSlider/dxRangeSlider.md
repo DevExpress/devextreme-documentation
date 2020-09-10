@@ -11,7 +11,7 @@ The **RangeSlider** is a widget that allows an end user to choose a range of num
 ##### widgettree
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

@@ -9,7 +9,7 @@ inherits: dxPopup
 The **Popover** is a widget that shows notifications within a box with an arrow pointing to a specified UI element.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

@@ -9,7 +9,7 @@ type: Object
 The **ODataContent** is an object that provides access to an entire OData service.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 This object creates several [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') instances. Each instance accesses an individual entity collection.

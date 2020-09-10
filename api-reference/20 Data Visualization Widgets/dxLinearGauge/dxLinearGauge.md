@@ -12,7 +12,7 @@ The **LinearGauge** is a widget that indicates values on a linear numeric scale.
 value: 50
 
 ##### lib
-dx.viz.js, dx.viz-web.js, dx.all.js
+dx.viz.js, dx.all.js
 
 ---
 #include common-demobutton with {

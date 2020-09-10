@@ -15,7 +15,7 @@ layers: [{
 }]
 
 ##### lib
-dx.viz.js, dx.viz-web.js, dx.all.js
+dx.viz.js, dx.all.js
 
 ---
 #include common-demobutton with {

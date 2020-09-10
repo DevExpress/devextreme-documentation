@@ -12,7 +12,7 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Reference the required libraries**  
-    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. Export also requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> library. In a modular environment, this library is listed in package dependencies and is already added. If your app does not use modules, reference JSZip manually.
+    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries.
 
     ---
     ##### jQuery
@@ -22,7 +22,6 @@ The following instructions show how to enable and configure client-side export:
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
             <!-- reference the DevExtreme sources here -->
         </head>
 
@@ -30,7 +29,7 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         
         @Component({
@@ -61,6 +60,13 @@ The following instructions show how to enable and configure client-side export:
         })
         export class AppModule { }
 
+        <!-- tab: tsconfig.app.json -->
+        "paths": {
+            // ...
+            "exceljs": [
+                "node_modules/exceljs/dist/exceljs.js"
+            ]
+        }
 
     ##### Vue
 
@@ -73,7 +79,7 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
 
         export default {
@@ -93,7 +99,7 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.light.css';
 
         import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
 
         export default function App() {
@@ -135,7 +141,7 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         
         @Component({
@@ -187,7 +193,7 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
 
         import { DxPivotGrid, 
@@ -211,7 +217,7 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
 
         import PivotGrid, {
@@ -274,7 +280,7 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
         import { exportPivotGrid } from 'devextreme/excel_exporter';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         
         @Component({
@@ -284,7 +290,7 @@ The following instructions show how to enable and configure client-side export:
         })
         export class AppComponent {
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();    
+                const workbook = new Workbook();    
                 const worksheet = workbook.addWorksheet('Main sheet');
                 exportPivotGrid({
                     component: e.component,
@@ -342,7 +348,7 @@ The following instructions show how to enable and configure client-side export:
 
         import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
         import { exportPivotGrid } from 'devextreme/excel_exporter';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
 
         export default {
@@ -352,7 +358,7 @@ The following instructions show how to enable and configure client-side export:
             },
             methods: {
                 onExporting(e) {
-                    const workbook = new ExcelJS.Workbook();
+                    const workbook = new Workbook();
                     const worksheet = workbook.addWorksheet('Main sheet');
                     exportPivotGrid({
                         component: e.component,
@@ -381,7 +387,7 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
         import { exportPivotGrid } from 'devextreme/excel_exporter';
@@ -396,7 +402,7 @@ The following instructions show how to enable and configure client-side export:
         }
 
         function onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Main sheet');
             exportPivotGrid({
                 component: e.component,

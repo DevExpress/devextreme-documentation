@@ -81,7 +81,7 @@ You can use this function to adjust column options before export. In the followi
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
     @Component({
@@ -93,7 +93,7 @@ You can use this function to adjust column options before export. In the followi
         onExporting(e) {
             e.component.beginUpdate();
             e.component.columnOption('ID', 'visible', true);
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Employees');
         
             exportDataGrid({
@@ -149,7 +149,7 @@ You can use this function to adjust column options before export. In the followi
 
     import { DxDataGrid, DxExport, DxColumn } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
 
     export default {
@@ -162,7 +162,7 @@ You can use this function to adjust column options before export. In the followi
             onExporting(e) {
                 e.component.beginUpdate();
                 e.component.columnOption('ID', 'visible', true);
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Employees');
             
                 exportDataGrid({
@@ -190,7 +190,7 @@ You can use this function to adjust column options before export. In the followi
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     import DataGrid, { Export, Column } from 'devextreme-react/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
@@ -208,7 +208,7 @@ You can use this function to adjust column options before export. In the followi
         onExporting(e) {
             e.component.beginUpdate();
             e.component.columnOption('ID', 'visible', true);
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Employees');
         
             exportDataGrid({

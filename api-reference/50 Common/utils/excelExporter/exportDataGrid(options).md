@@ -62,7 +62,7 @@ You can call this method at any point in your application. In the example below,
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
     @Component({
@@ -72,7 +72,7 @@ You can call this method at any point in your application. In the example below,
     })
     export class AppComponent {
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();    
+            const workbook = new Workbook();    
             const worksheet = workbook.addWorksheet('Main sheet');
             exportDataGrid({
                 component: e.component,
@@ -127,7 +127,7 @@ You can call this method at any point in your application. In the example below,
 
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
 
     export default {
@@ -137,7 +137,7 @@ You can call this method at any point in your application. In the example below,
         },
         methods: {
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Main sheet');
 
                 exportDataGrid({
@@ -163,7 +163,7 @@ You can call this method at any point in your application. In the example below,
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
@@ -178,7 +178,7 @@ You can call this method at any point in your application. In the example below,
         }
 
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Main sheet');
 
             exportDataGrid({

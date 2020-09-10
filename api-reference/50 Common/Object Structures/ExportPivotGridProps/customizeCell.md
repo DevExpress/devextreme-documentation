@@ -75,7 +75,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
     @Component({
@@ -85,7 +85,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     })
     export class AppComponent {
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Companies');
 
             exportPivotGrid({
@@ -148,7 +148,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
 
     import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
 
     export default {
@@ -158,7 +158,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
         },
         methods: {
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Companies');
 
                 exportPivotGrid({
@@ -192,7 +192,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     import 'devextreme/dist/css/dx.light.css';
 
     import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 
@@ -207,7 +207,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     }
 
     function onExporting(e) {
-        const workbook = new ExcelJS.Workbook();
+        const workbook = new Workbook();
         const worksheet = workbook.addWorksheet('Companies');
 
         exportPivotGrid({

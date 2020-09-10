@@ -13,7 +13,6 @@ You can find all required files in the <a target="_blank" onclick="trackGAEvent(
         <script type="text/javascript" src="js/dx.all.js"></script>
         <!-- <script type="text/javascript" src="js/dx.web.js"></script> -->
         <!-- <script type="text/javascript" src="js/dx.viz.js"></script> -->
-        <!-- <script type="text/javascript" src="js/dx.viz-web.js"></script> -->
     </head>
     <body class="dx-viewport">
         <!-- ... -->

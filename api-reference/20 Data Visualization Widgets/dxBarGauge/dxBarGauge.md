@@ -12,7 +12,7 @@ The **BarGauge** widget contains several circular bars that each indicates a sin
 values: [50, 30, 90]
 
 ##### lib
-dx.viz.js, dx.viz-web.js, dx.all.js
+dx.viz.js, dx.all.js
 
 ---
 #include common-demobutton with {

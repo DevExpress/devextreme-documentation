@@ -6,7 +6,7 @@ id: UI Events
 The events used to handle user interaction with UI elements.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 <a name="introduction"></a>

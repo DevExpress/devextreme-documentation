@@ -11,7 +11,7 @@ The **Slider** is a widget that allows an end user to set a numeric value on a c
 ##### widgettree
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

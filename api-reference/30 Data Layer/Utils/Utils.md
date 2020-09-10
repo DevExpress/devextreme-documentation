@@ -6,6 +6,6 @@ id: Utils
 This section describes the utility objects that the DevExtreme data layer provides.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---

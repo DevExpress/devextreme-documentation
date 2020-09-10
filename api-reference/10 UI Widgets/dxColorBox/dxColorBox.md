@@ -12,7 +12,7 @@ The **ColorBox** is a widget that allows an end user to enter a color or pick it
 opened: true
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

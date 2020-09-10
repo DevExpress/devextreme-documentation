@@ -11,7 +11,7 @@ The **LoadIndicator** is a UI element notifying the viewer that a process is in 
 ##### widgettree
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

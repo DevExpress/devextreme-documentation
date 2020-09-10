@@ -11,7 +11,7 @@ The **CheckBox** is a small box, which when selected by the end user, shows that
 ##### widgettree
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

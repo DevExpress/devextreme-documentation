@@ -12,7 +12,7 @@ The **Popup** widget is a pop-up window overlaying the current view.
 visible: true
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

@@ -52,7 +52,7 @@ The index of the row the cell belongs to.
 The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType').
 
 ##### field(e.text): String
-The cell's [formatted](/api-reference/_hidden/GridBaseColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format') value converted to a string. Available if the **rowType** is *"data"* or *"group"*.
+The cell's [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format') value converted to a string. Available if the **rowType** is *"data"* or *"group"*.
 
 ##### field(e.value): any
 The cell's raw value. Available if the **rowType** is *"data"* or *"group"*.

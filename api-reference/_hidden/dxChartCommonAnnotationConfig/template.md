@@ -5,10 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the annotation. Applies only if the [type]({basewidgetpath}/Configuration/annotations/#type) is *"custom"*.
+Specifies a custom template for the annotation. Applies only if the [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') is *"custom"*.
 
 ##### param(annotation): dxChartAnnotationConfig | any
-The annotation's [configuration object]({basewidgetpath}/Configuration/annotations/).
+The annotation's [configuration object](/api-reference/_hidden/dxChartCommonAnnotationConfig '{basewidgetpath}/Configuration/annotations/').
 
 ##### param(element): SVGGElement
 A container for the template content.

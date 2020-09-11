@@ -54,7 +54,7 @@ Refer to the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Colum
 [Group summary items](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/') displayed in the group row. Objects in this array have the structure of the group summary items extended by the **value** (the summary item value) and **columnCaption** (usually used to present a summary value) fields.
 
 ##### field(cellInfo.text): String
-The group cell's value with applied [format](/api-reference/_hidden/GridBaseColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format').
+The group cell's value with applied [format](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format').
 
 ##### field(cellInfo.value): any
 The group cell's value as it is specified in a data source.

@@ -5,7 +5,7 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies the [target element](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of)'s side or corner where the overlay element should be positioned.
+Specifies the [target element](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of')'s side or corner where the overlay element should be positioned.
 
 ---
 

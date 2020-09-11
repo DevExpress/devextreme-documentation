@@ -12,7 +12,7 @@ Annotations are images and text blocks that provide additional information about
 
 ![DevExtreme VectorMap: Annotations](/images/ChartJS/annotations/vector-map-text-image-annotation.png) 
 
-To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type]({basewidgetpath}/Configuration/annotations/#type) field set to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#template) option:
+To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'), or [template](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/template.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#template') option:
     
 ---
 ##### jQuery
@@ -174,22 +174,22 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
 Annotations can be positioned at specific geographic coordinates or coordinates of the client area:
 
-- **Geographic [coordinates](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#coordinates)**
+- **Geographic [coordinates](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/coordinates.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#coordinates')**
 
         annotations: [{
             coordinates: [-75.4999, 43.00035]
         }]
 
-- **Client area coordinates ([x](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#x) and [y](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#y))**
+- **Client area coordinates ([x](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/x.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#x') and [y](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/y.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#y'))**
 
         annotations: [{
             x: 100,
             y: 200
         }]
 
-When a user long-presses an annotation or hovers the mouse pointer over it, the **VectorMap** displays a [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled).
+When a user long-presses an annotation or hovers the mouse pointer over it, the **VectorMap** displays a [tooltip](/api-reference/_hidden/BaseWidgetAnnotationConfig/tooltipEnabled.md '{basewidgetpath}/Configuration/annotations/#tooltipEnabled').
 
-Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
+Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
 
 #####See Also#####
-- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#customizeAnnotation)
+- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#customizeAnnotation')

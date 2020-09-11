@@ -13,7 +13,7 @@ The current node's data object.
 ---
 This option is in effect for `"verticalContainer"` or `"horizontalContainer"` nodes.
 
-You can also use the [containerKeyExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerKeyExpr) option to provide a container's content.
+You can also use the [containerKeyExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/containerKeyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerKeyExpr') option to provide a container's content.
 
 
     <!-- tab: index.js -->

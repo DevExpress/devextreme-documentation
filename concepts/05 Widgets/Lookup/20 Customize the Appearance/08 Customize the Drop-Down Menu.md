@@ -119,7 +119,7 @@ To customize the **Popup** or **Popover**, use the [dropDownOptions](/api-refere
 
 ---
 
-To change the size of the drop-down menu and position it against a specific element on your page, specify the [height](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#height), [width](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#width) and [position](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#position) options in the **dropDownOptions** object. The following configuration of the **position** option reads as follows: "place **my** *left* side **at** the *left* side **of** the *"#targetElement"*.
+To change the size of the drop-down menu and position it against a specific element on your page, specify the [height](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#height'), [width](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#width') and [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#position') options in the **dropDownOptions** object. The following configuration of the **position** option reads as follows: "place **my** *left* side **at** the *left* side **of** the *"#targetElement"*.
 
 ---
 ##### jQuery
@@ -261,7 +261,7 @@ To change the size of the drop-down menu and position it against a specific elem
 
 ---
 
-The drop-down menu can have a title. Use the **dropDownOptions**.[title](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#title) option to specify its text, or the **dropDownOptions**.[titleTemplate](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#titleTemplate) option to redesign it completely. For details on implementing templates, see the [Customize Item Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/Customize_Item_Appearance/') topic.
+The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#title') option to specify its text, or the **dropDownOptions**.[titleTemplate](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/titleTemplate.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#titleTemplate') option to redesign it completely. For details on implementing templates, see the [Customize Item Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/Customize_Item_Appearance/') topic.
 
 ---
 ##### jQuery
@@ -392,7 +392,7 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/Docume
 
 ---
 
-If you have not specified anything to be displayed in the title, hide it by assigning **false** to the **dropDownOptions**.[showTitle](/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#showTitle) option.
+If you have not specified anything to be displayed in the title, hide it by assigning **false** to the **dropDownOptions**.[showTitle](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#showTitle') option.
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')

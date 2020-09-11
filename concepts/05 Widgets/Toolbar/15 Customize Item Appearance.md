@@ -169,7 +169,7 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#menuItemTemplate') to customize toolbar items and commands in the overflow menu, respectively. In Angular and Vue, you can declare the templates in the markup. In React, you can use rendering functions (shown in the code below) or components.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/#menuItemTemplate') to customize toolbar items and commands in the overflow menu, respectively. In Angular and Vue, you can declare the templates in the markup. In React, you can use rendering functions (shown in the code below) or components.
 
 ---
 ##### Angular

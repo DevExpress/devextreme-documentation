@@ -9,4 +9,4 @@ Specifies whether data from this column should be exported. Applies only if the 
 
 ---
 #####See Also#####
-- [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/)
+- [export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/')

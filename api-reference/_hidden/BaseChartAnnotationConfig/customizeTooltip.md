@@ -9,7 +9,7 @@ notUsedInTheme:
 Customizes the text and appearance of the annotation's tooltip.
 
 ##### param(annotation): BaseChartAnnotationConfig | any
-The annotation's [configuration object](/api-reference/_hidden/dxChartCommonAnnotationConfig '{basewidgetpath}/Configuration/annotations/').
+The annotation's [configuration object](/api-reference/_hidden/BaseChartAnnotationConfig '{basewidgetpath}/Configuration/annotations/').
 
 ##### return: Object
 The tooltip's text or markup and appearance settings.
@@ -20,4 +20,4 @@ The tooltip's text or markup and appearance settings.
 #include dataviz-ref-functioncontext
 
 #####See Also#####
-- [tooltipEnabled](/api-reference/_hidden/dxChartCommonAnnotationConfig/tooltipEnabled.md '{basewidgetpath}/Configuration/annotations/#tooltipEnabled')
+- [tooltipEnabled](/api-reference/_hidden/BaseChartAnnotationConfig/tooltipEnabled.md '{basewidgetpath}/Configuration/annotations/#tooltipEnabled')

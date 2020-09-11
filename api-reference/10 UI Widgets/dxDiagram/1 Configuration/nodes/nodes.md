@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Allows you to bind the collection of diagram nodes to a data source. For more information, see the [Data Binding](/Documentation/Guide/Widgets/Diagram/Data_Binding/) section.
+Allows you to bind the collection of diagram nodes to a data source. For more information, see the [Data Binding](/concepts/05%20Widgets/Diagram/10%20Data%20Binding '/Documentation/Guide/Widgets/Diagram/Data_Binding/') section.
 
 ---
 

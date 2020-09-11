@@ -14,7 +14,7 @@ Data source options.
 The widget's instance.
 
 ##### field(options.dataSource): DataSource_Options
-A [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) instance.
+A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance.
 
 ---
 The **{WidgetName}** generates a header filter's data source automatically based on column values. Use the **dataSource** option to change the generated data source or specify a custom data source.
@@ -27,7 +27,7 @@ To define a data source, set the **dataSource** option to an array of objects. E
 A text string that represents the item in the header filter.
  
  - `value`        
-A filter that the item applies. It can be a single value (for example, 0) or a filter expression. Refer to the [filter](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter) help topic for information on the filter expression syntax.
+A filter that the item applies. It can be a single value (for example, 0) or a filter expression. Refer to the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') help topic for information on the filter expression syntax.
 
 The following code shows how to specify a custom data source:
 
@@ -203,7 +203,7 @@ The following code shows how to specify a custom data source:
 
 Header filter data objects should have the `text` and `value` fields. However, data objects fetched from a server may not have these fields. In this case, map the original data source to the `text` + `value` structure. A mapped data source should also include key fields from the original data source.
 
-[note] We recommend that you keep the [allowSearch]({basewidgetpath}/Configuration/columns/headerFilter/#allowSearch) option set to **false** because searching produces incorrect results when data source fields are mapped.
+[note] We recommend that you keep the [allowSearch](/api-reference/_hidden/GridBaseColumn/headerFilter/allowSearch.md '{basewidgetpath}/Configuration/columns/headerFilter/#allowSearch') option set to **false** because searching produces incorrect results when data source fields are mapped.
 
 In the following code, the `categoryName` and `categoryId` fields are mapped to the `text` and `value` fields. The mapped objects also contain the `categoryId` and `categoryCode` key fields:
 
@@ -415,7 +415,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
 
 ### Change the Generated Data Source
 
-To change the generated data source, set the **dataSource** option to a function. This function accepts an object whose `dataSource` field contains a [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) instance. Define the **DataSource**'s [postProcess](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess) function in which you can change header filter items.
+To change the generated data source, set the **dataSource** option to a function. This function accepts an object whose `dataSource` field contains a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance. Define the **DataSource**'s [postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') function in which you can change header filter items.
 
 In the following code, the **postProcess** function adds a custom item to the generated data source:
 
@@ -596,7 +596,7 @@ In the following code, the **postProcess** function adds a custom item to the ge
 
 ### Customize Item Appearance
 
-You can use [templates](/Documentation/ApiReference/Common/Object_Structures/template/) to customize the appearance of individual items. In the following code, a template makes the `Today` item bold:
+You can use [templates](/api-reference/50%20Common/Object%20Structures/template '/Documentation/ApiReference/Common/Object_Structures/template/') to customize the appearance of individual items. In the following code, a template makes the `Today` item bold:
 
 ---
 ##### jQuery

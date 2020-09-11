@@ -1,4 +1,4 @@
-If you need to update form data at runtime, redefine the [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData') object. In this case, form item values are updated automatically and the widget is rerendered from scratch. In the following example, the [SelectBox](/Documentation/ApiReference/UI_Widgets/dxSelectBox/) widget changes the **formData** object.
+If you need to update form data at runtime, redefine the [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData') object. In this case, form item values are updated automatically and the widget is rerendered from scratch. In the following example, the [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/') widget changes the **formData** object.
 
     <!--JavaScript-->
     var employees = [{

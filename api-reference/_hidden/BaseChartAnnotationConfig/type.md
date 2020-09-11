@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether the annotation displays [text](/api-reference/_hidden/dxChartCommonAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') or an [image](/api-reference/_hidden/dxChartCommonAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'). This is a required setting.
+Specifies whether the annotation displays [text](/api-reference/_hidden/BaseChartAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') or an [image](/api-reference/_hidden/BaseChartAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'). This is a required setting.
 
 ---
 #include common-demobutton with {

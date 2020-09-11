@@ -15,4 +15,4 @@ The built-in shape's connection points are numbered clockwise from the leftmost 
 
 ![Diagram - Shape Points](/images/diagram/point-index-expr.png)
 
-A custom shape's connection points are numbered according to their position in the [connectionPoints](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/connectionPoints/) collection.
+A custom shape's connection points are numbered according to their position in the [connectionPoints](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/connectionPoints '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/connectionPoints/') collection.

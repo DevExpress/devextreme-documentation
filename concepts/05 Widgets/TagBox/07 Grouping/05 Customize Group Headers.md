@@ -1,4 +1,4 @@
-To customize group headers, specify a [groupTemplate](/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#groupTemplate). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component. If the template is unspecified, group headers display the **key** data field in bold font.
+To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component. If the template is unspecified, group headers display the **key** data field in bold font.
 
 ---
 ##### Angular

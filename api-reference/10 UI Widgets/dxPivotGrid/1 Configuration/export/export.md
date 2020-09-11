@@ -103,7 +103,7 @@ The following instructions show how to enable and configure client-side export:
     ---     
 
 2. **Enable the export UI**   
-    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/#enabled') option to **true**. This option enables export for all columns. Set a column's [allowExporting](/api-reference/_hidden/dxPivotGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/columns/#allowExporting') option to **false** to prevent it from being exported:
+    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/#enabled') option to **true**. This option enables export for all columns. Set a column's [allowExporting](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/columns/#allowExporting) option to **false** to prevent it from being exported:
 
     ---
 
@@ -233,7 +233,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the PivotGrid**   
-    Implement the [onExporting](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onExporting) handler and call the [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method in it. In the code below, this method exports the **PivotGrid** as is, but you can use [ExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/#customizeCell). To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
+    Implement the [onExporting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onExporting') handler and call the [exportPivotGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') method in it. In the code below, this method exports the **PivotGrid** as is, but you can use [ExportPivotGridProps](/api-reference/50%20Common/Object%20Structures/ExportPivotGridProps '/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/') to configure export settings, including [cell customization](/api-reference/50%20Common/Object%20Structures/ExportPivotGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/#customizeCell'). To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
 
     ---
     ##### jQuery

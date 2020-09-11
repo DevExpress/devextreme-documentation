@@ -9,4 +9,4 @@ Specifies whether users can drag and drop the annotation.
 
 ---
 #####See Also#####
-- [offsetX]({basewidgetpath}/Configuration/annotations/#offsetX) | [offsetY]({basewidgetpath}/Configuration/annotations/#offsetY)
+- [offsetX](/api-reference/_hidden/BaseWidgetAnnotationConfig/offsetX.md '{basewidgetpath}/Configuration/annotations/#offsetX') | [offsetY](/api-reference/_hidden/BaseWidgetAnnotationConfig/offsetY.md '{basewidgetpath}/Configuration/annotations/#offsetY')

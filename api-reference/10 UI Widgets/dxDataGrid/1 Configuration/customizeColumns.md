@@ -123,4 +123,4 @@ Use this function to make minor adjustments to automatically generated columns. 
     </script>
 
 ---
-[note] Data operations (sorting, filtering, summary) are unavailable for the columns created via **customizeColumns**. To create a fully functioning column, add it to the [columns](/api-reference/10%20UI%20Widgets/dx{WidgetName}/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/') array.
+[note] Data operations (sorting, filtering, summary) are unavailable for the columns created via **customizeColumns**. To create a fully functioning column, add it to the [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/') array.

@@ -132,7 +132,7 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
     </table>
 </div> 
 
-[note] [Reference the Globalize library](/concepts/Common/33%20Localization/05%20Localize%20Dates,%20Numbers,%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') in your application to use other <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">datetime</a> format characters.
+[note] [Reference the Globalize library](/concepts/Common/33%20Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') in your application to use other <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">datetime</a> format characters.
 
 The following code shows how to apply LDML patterns to format numbers and dates:
 

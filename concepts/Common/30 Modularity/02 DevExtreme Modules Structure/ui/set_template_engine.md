@@ -1,1 +1,1 @@
-This module is deprecated. Use the [core/set\_template\_engine](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/020%20core/set_template_engine.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#core/set_template_engine') module instead.
+This module is deprecated. Use the [core/set\_template\_engine](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/core/set_template_engine.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#core/set_template_engine') module instead.

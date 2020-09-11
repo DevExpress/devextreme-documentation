@@ -1,4 +1,4 @@
-Assign a function to the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onSelectionChanged/) option. 
+Assign a function to the [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onSelectionChanged/') option. 
 
     <!-- tab: index.js -->
     $(function() {

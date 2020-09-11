@@ -133,7 +133,7 @@ An item in the **TabPanel** widget includes a tab and a view. For a minor custom
 
 ---
 
-If you need a more flexible solution, define [itemTemplate](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTitleTemplate') for views and tabs, respectively. In Angular and Vue, you can declare them in the markup. In React, you can use rendering functions (shown in the code below) or components.
+If you need a more flexible solution, define [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#itemTitleTemplate') for views and tabs, respectively. In Angular and Vue, you can declare them in the markup. In React, you can use rendering functions (shown in the code below) or components.
 
 ---
 

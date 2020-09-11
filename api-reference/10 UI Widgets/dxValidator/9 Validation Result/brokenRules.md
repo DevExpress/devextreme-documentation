@@ -4,7 +4,7 @@ type: Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, 
 ---
 ---
 ##### shortDescription
-An array of the [validationRules](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/) that failed to pass the check.
+An array of the [validationRules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/') that failed to pass the check.
 
 ---
 The validation rules are checked in the following order:

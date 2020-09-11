@@ -11,7 +11,7 @@ Here, *<bundle_name>* is a name of the configuration file without an extension. 
 
 After the file was created, you can edit it and leave only modules and exports you need.  
 
-[note]To use DevExtreme widgets with jQuery, Knockout, or AngularJS, ensure that you import the [jquery](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/060%20integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery'), [knockout](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/060%20integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout'), or [angular](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/060%20integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') integration module.
+[note]To use DevExtreme widgets with jQuery, Knockout, or AngularJS, ensure that you import the [jquery](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery'), [knockout](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout'), or [angular](/concepts/Common/30%20Modularity/02%20DevExtreme%20Modules%20Structure/integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') integration module.
 
 
 The following command produces a minified bundle.

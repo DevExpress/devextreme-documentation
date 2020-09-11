@@ -1,4 +1,4 @@
-DataSource and Stores support events. The DataSource events are used to track the data loading state. They are used internally by the [DevExtreme widgets](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/'). You can also use them for your purposes. Stores also raise events before and after each operation (loading, update, insertion, etc.).
+DataSource and Stores support events. The DataSource events are used to track the data loading state. They are used internally by the [DevExtreme widgets](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/'). You can also use them for your purposes. Stores also raise events before and after each operation (loading, update, insertion, etc.).
 
 Use one of the following approaches to handle events.
 

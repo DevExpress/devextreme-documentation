@@ -53,7 +53,7 @@ Set the **format** widget option to apply a predefined format. In the following 
 
 The **format** option in the previous example is specified with an object which allows you to specify the precision. However, you can specify the **format** option with a string literal if this is not required.
 
-[note] The predefined formats also include a currency format which adds a dollar sign before the value. You should use [Intl or Globalize](/concepts/Common/33%20Localization/05%20Localize%20Dates,%20Numbers,%20and%20Currencies '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/') in your app to correctly localize and format currencies.
+[note] The predefined formats also include a currency format which adds a dollar sign before the value. You should use [Intl or Globalize](/concepts/Common/33%20Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/') in your app to correctly localize and format currencies.
 
 #####See Also#####
 - [RangeSelector Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/CustomFormatting)

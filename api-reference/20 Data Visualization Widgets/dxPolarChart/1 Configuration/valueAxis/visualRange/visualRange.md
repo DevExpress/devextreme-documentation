@@ -7,7 +7,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/wholeRange '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/wholeRange/').
+Defines the axis' displayed range. Cannot be wider than the [wholeRange](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/wholeRange/).
 
 ---
 #include dataviz-ref-vizrangevariants with {
@@ -17,12 +17,12 @@ Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-re
     elementType: "[valueType](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/#valueType')"
 }
 
-To specify the minimum visual range that a user can set, use the [minVisualRangeLength](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/minVisualRangeLength '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/minVisualRangeLength/') option.
+To specify the minimum visual range that a user can set, use the [minVisualRangeLength](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/minVisualRangeLength/) option.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartZoomingAndScrollingAPI"
 }
 
 #####See Also#####
-- [visualRangeUpdateMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/visualRangeUpdateMode '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/visualRangeUpdateMode/')
-- [onZoomStart](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/onZoomStart.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#onZoomStart') | [onZoomEnd](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/onZoomEnd.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#onZoomEnd')
+- [visualRangeUpdateMode](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/visualRangeUpdateMode/)
+- [onZoomStart](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#onZoomStart) | [onZoomEnd](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#onZoomEnd)

@@ -326,7 +326,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
         // ...
         data() {
             return {
-                calculateCellValue(rowData) {
+                calculateCellValue: function(rowData) {
                     // ...
                     const column = this as any;
                     return column.defaultCalculateCellValue(rowData);

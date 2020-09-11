@@ -1,6 +1,5 @@
 ---
 id: dxDiagramItem
-type: Object
 ---
 ---
 ##### shortDescription

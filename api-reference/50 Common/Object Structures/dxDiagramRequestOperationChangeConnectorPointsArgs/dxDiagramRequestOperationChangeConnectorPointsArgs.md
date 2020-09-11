@@ -1,6 +1,5 @@
 ---
 id: dxDiagramRequestOperationChangeConnectorPointsArgs
-type: Object
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,5 @@
 ---
 id: dxDiagramRequestOperationChangeConnectionArgs
-type: Object
 ---
 ---
 ##### shortDescription

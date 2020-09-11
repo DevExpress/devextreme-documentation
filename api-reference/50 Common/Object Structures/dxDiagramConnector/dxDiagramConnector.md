@@ -1,6 +1,5 @@
 ---
 id: dxDiagramConnector
-type: Object
 inherits: dxDiagramItem
 ---
 ---

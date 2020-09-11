@@ -1,6 +1,5 @@
 ---
 id: dxDiagramRequestOperationBeforeChangeConnectorTextArgs
-type: Object
 ---
 ---
 ##### shortDescription

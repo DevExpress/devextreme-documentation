@@ -1,5 +1,6 @@
 ---
-id: dxDiagramRequestOperationChangeConnectorTextArgs
+id: dxDiagramRequestOperationResizeShapeArgs.newSize
+type: Array<Object>
 ---
 ---
 ##### shortDescription

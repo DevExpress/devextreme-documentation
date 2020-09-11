@@ -20,7 +20,7 @@ The UI element where the **customizeText** function was called: *"row"*, *"filte
 The cell's raw value.
 
 ##### field(cellInfo.valueText): String
-The [fomatted](/api-reference/_hidden/GridBaseColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format') value converted to a string.
+The [fomatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format') value converted to a string.
 
 ##### return: String
 The text the cell should display.

@@ -13,4 +13,4 @@ The current node's data object.
 ---
 The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` type.
 
-To use the **containerKeyExpr** option set the [childrenExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr) option to 'null'.
+To use the **containerKeyExpr** option set the [childrenExpr](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/childrenExpr.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#childrenExpr') option to 'null'.

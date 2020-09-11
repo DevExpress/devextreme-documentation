@@ -19,5 +19,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run generate-content-map
+    - run: npm run update-all-links -- --validation true
       env:
         CI: true

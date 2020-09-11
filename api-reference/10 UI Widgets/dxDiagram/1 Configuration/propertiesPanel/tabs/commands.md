@@ -8,7 +8,7 @@ type: Array<dxDiagramCustomCommand> | Array<String>
 Lists commands in a tab.
 
 ---
-Use the [groups](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/tabs/groups/) option to group commands in the tab. Note, if the [groups](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/tabs/groups/) option is specified, the **commands** option is not in effect.
+Use the [groups](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/propertiesPanel/tabs/groups '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/tabs/groups/') option to group commands in the tab. Note, if the [groups](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/propertiesPanel/tabs/groups '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/tabs/groups/') option is specified, the **commands** option is not in effect.
 
 A properties panel tab can contain default and custom commands. Handle the [CustomCommand](/api-reference/10%20UI%20Widgets/dxDiagram/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#customCommand') event to respond to a custom command click.
 

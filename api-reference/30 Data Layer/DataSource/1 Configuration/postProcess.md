@@ -98,7 +98,7 @@ Data after processing.
 
 ---
 
-[note]When the [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) option is enabled, the **postProcess** function handles only data available for the selected page. If you need to access all data, process data before it is passed to the store.
+[note]When the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') option is enabled, the **postProcess** function handles only data available for the selected page. If you need to access all data, process data before it is passed to the store.
 
 #####See Also#####
 - [Post Processing](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/2%20Post%20Processing.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Post_Processing')

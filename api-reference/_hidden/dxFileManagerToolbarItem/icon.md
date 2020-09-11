@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the icon to be displayed on the toolbar item.
 
 ---
-<!-- Description goes here -->
+#include uiwidgets-ref-icon

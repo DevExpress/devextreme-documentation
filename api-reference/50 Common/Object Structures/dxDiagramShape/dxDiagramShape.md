@@ -1,6 +1,5 @@
 ---
 id: dxDiagramShape
-type: Object
 inherits: dxDiagramItem
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxDiagramRequestOperationChangeConnectorTextArgs
+id: dxDiagramRequestOperationResizeShapeArgs
 ---
 ---
 ##### shortDescription

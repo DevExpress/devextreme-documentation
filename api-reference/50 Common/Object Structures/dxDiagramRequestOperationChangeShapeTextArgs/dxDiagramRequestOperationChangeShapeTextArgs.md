@@ -1,6 +1,5 @@
 ---
 id: dxDiagramRequestOperationChangeShapeTextArgs
-type: Object
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,5 @@
 ---
 id: dxDiagramRequestOperationDeleteConnectorArgs
-type: Object
 ---
 ---
 ##### shortDescription

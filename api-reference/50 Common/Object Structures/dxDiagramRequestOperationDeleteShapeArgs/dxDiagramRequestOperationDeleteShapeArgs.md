@@ -1,6 +1,5 @@
 ---
 id: dxDiagramRequestOperationDeleteShapeArgs
-type: Object
 ---
 ---
 ##### shortDescription

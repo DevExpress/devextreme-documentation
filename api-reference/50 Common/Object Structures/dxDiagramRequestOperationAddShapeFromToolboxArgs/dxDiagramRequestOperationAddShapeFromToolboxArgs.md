@@ -1,6 +1,5 @@
 ---
 id: dxDiagramRequestOperationAddShapeFromToolboxArgs
-type: Object
 ---
 ---
 ##### shortDescription

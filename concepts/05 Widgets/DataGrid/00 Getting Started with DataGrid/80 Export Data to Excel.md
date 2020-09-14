@@ -1,7 +1,29 @@
-asas
+DevExtreme includes a static method [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) that exports grid data to the Excel format. Its minimum configuration requires a **DataGrid** instance and an Excel worksheet to which grid data should be exported. After the export, you should save the data to an Excel file.
+
+To create and manage worksheets and save Excel files, this feature requires the following third-party libraries:
+
+- <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a>
+    - v1.7.0 with Angular (due to the following issue: <a href="https://github.com/exceljs/exceljs/issues/984" target="_blank">exceljs 3.0.1 and Angular 8 installation issue</a>)
+    - v3.3.1+ with other frameworks
+- <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a>
+
+The **exportDataGrid(options)** method can be called at any point in your application. In this tutorial, it is called from the **DataGrid**'s [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) event handler. The `e.cancel` parameter disabled the deprecated built-in export functionality. You should also enable the export UI by setting the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled) option to **true**.
 
 ---
 ##### jQuery
+
+    <!-- tab: index.html -->
+    <html>
+        <head>
+            <!-- ... -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+
+            <!-- DevExtreme scripts are referenced here -->
+            <!-- ... -->
+        </head>
+    </html>
 
     <!-- tab: index.js -->
     $(function() {
@@ -26,21 +48,25 @@ asas
         });
     });
 
-    <!-- tab: index.html -->
-    <html>
-        <head>
-            <!-- ... -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
-
-            <!-- DevExtreme scripts are referenced here -->
-            <!-- ... -->
-        </head>
-    </html>
-
 ##### Angular
+
+    <!-- tab: Installation command -->
+    npm install --save exceljs@1.7.0 file-saver
+
+    <!-- tab: tsconfig.app.json -->
+    {
+        // ...
+        "compilerOptions": {
+            // ...
+            "paths": {
+                // ...
+                "exceljs": [
+                    "node_modules/exceljs/dist/exceljs.js"
+                ]
+            }
+        },
+        // ...
+    }
 
     <!-- tab: app.component.html -->
     <dx-data-grid ...
@@ -73,22 +99,10 @@ asas
         }
     }
 
-    <!-- tab: tsconfig.app.json -->
-    {
-        // ...
-        "compilerOptions": {
-            // ...
-            "paths": {
-                // ...
-                "exceljs": [
-                    "node_modules/exceljs/dist/exceljs.js"
-                ]
-            }
-        },
-        // ...
-    }
-
 ##### Vue
+
+    <!-- tab: Installation command -->
+    npm install --save exceljs file-saver
 
     <!-- tab: App.vue -->
     <template>
@@ -142,6 +156,9 @@ asas
 
 ##### React
 
+    <!-- tab: Installation command -->
+    npm install --save exceljs file-saver
+
     <!-- tab: App.js -->
     import React, { useState } from 'react';
     import 'devextreme/dist/css/dx.common.css';
@@ -190,3 +207,10 @@ asas
     export default App;
     
 ---
+
+Run the code and click the Export button in the upper-right corner. Grid data should be exported to the DataGrid.xlsx file.
+
+You have now configured core **DataGrid** features. For more details on this widget, explore the following resources:
+
+* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/)
+* [API Reference](/Documentation/ApiReference/UI_Widgets/dxDataGrid/)

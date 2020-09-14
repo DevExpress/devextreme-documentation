@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.editorPreparing
 ---
 ---
 ##### shortDescription
-A function used to customize a cell's [editor](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/columns/#editorOptions'). Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/columns/#editCellTemplate').
+A function used to customize a cell's [editor]({basewidgetpath}/columns/#editorOptions). Not executed for cells with an [editCellTemplate]({basewidgetpath}/columns/#editCellTemplate).
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -29,10 +29,10 @@ Indicates whether the editor is disabled.
 
 ##### field(e.editorName): String
 Allows you to change the editor. Accepts names of DevExtreme widgets only, for example, *"dxTextBox"*.      
-Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) option specified in the **editing**.[form]({basewidgetpath}/Configuration/editing/#form) object has precedence over this parameter.
+Import a new editor's module when [DevExtreme modules](/concepts/Common/30%20Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType') option specified in the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object has precedence over this parameter.
 
 ##### field(e.editorOptions): Object
-Gets and sets the editor's configuration. [editorOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions) specified in the **editing**.[form]({basewidgetpath}/Configuration/editing/#form) object have precedence over this parameter.
+Gets and sets the editor's configuration. [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') specified in the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object have precedence over this parameter.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
@@ -244,7 +244,7 @@ Use the **parentType** function parameter to check if the editor being customize
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/"
 }
 
-[note]We do not recommend that you use the onEditorPreparing function to specify an editor's default value. Use the [onInitNewRow]({basewidgetpath}/Configuration/#onInitNewRow) function instead.
+[note]We do not recommend that you use the onEditorPreparing function to specify an editor's default value. Use the [onInitNewRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') function instead.
 
 #####See Also#####
 - **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways')

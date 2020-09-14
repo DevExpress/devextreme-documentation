@@ -62,7 +62,7 @@ To show or hide the **LoadPanel** programmatically, call the [show()](/api-refer
 
 ---
 
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#visible') property of the **LoadPanel** widget to a component property. After that, change this property, and the **LoadPanel** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#visible') property of the **LoadPanel** widget to a component property. After that, change this property, and the **LoadPanel** will appear or disappear.
 
 ---
 ##### Angular

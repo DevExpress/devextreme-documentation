@@ -111,7 +111,7 @@ The following code adds the **Autocomplete** to your page. The simplest configur
 
 ---
 
-If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#valueExpr') option to specify the field providing suggestions.
+If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#valueExpr') option to specify the field providing suggestions.
 
 ---
 ##### jQuery

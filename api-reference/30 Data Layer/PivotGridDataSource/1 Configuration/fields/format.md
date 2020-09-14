@@ -162,7 +162,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 ---
 
-When a format is [exported to Excel](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/), it is converted to an Excel format as follows:
+When a format is [exported to Excel](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/'), it is converted to an Excel format as follows:
 
 - **Numeric**   
 Converted to Number format, except for *"largeNumber"*, which is exported without formatting.
@@ -175,10 +175,10 @@ Converted to the Date or Time format, depending on the cell value.
 Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"minute"* and *"millisecond"* are exported as Long Time.
 
 - **Function**  
-Cannot be converted automatically. Assign this function to the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) option instead of the **format** option.  
+Cannot be converted automatically. Assign this function to the [customizeText](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/customizeText.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText') option instead of the **format** option.  
 
-- [Custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String)   
-Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText) callback as follows:    
+- [Custom format string](/concepts/Common/34%20Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String')   
+Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/customizeText.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText') callback as follows:    
 
     ---
     ##### jQuery

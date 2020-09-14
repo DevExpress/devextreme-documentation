@@ -136,8 +136,10 @@ The **DataGrid** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%
         <DxDataGrid ...
             ref="myDataGrid">
             <DxPaging
-                :page-size.sync="pageSize"
-                :page-index.sync="pageIndex"
+                v-model:page-size="pageSize"
+                @page-size-change="$emit('update:pageSize', $event.target.value)"
+                v-model:page-index="pageIndex"
+                @page-index-change="$emit('update:pageIndex', $event.target.value)"
             />
         </DxDataGrid>
     </template>

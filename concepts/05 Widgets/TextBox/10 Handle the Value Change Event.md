@@ -118,7 +118,8 @@ To process a new **TextBox** value, you need to handle the value change event. I
 
     <template>
         <DxTextBox
-            :value.sync="textBoxValue"
+            v-model:value="textBoxValue"
+            @value-change="$emit('update:textBoxValue', $event.target.value)"
             @value-changed="handleValueChange"
         />
     </template>

@@ -48,7 +48,8 @@ The following code adds a simple **LoadIndicator** to your page. You can change 
 
     <template>
         <DxLoadIndicator
-            :visible.sync="isLoadIndicatorVisible"
+            v-model:visible="isLoadIndicatorVisible"
+            @visible-change="$emit('update:isLoadIndicatorVisible', $event.target.value)"
             :height="40"
             :width="40"
         />
@@ -143,7 +144,8 @@ If you need to use a custom image in the **LoadIndicator**, assign its URL to th
 
     <template>
         <DxLoadIndicator
-            :visible.sync="isLoadIndicatorVisible"
+            v-model:visible="isLoadIndicatorVisible"
+            @visible-change="$emit('update:isLoadIndicatorVisible', $event.target.value)"
             :indicatorSrc="indicatorUrl"
         />
     </template>

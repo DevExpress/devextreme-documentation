@@ -47,7 +47,8 @@ To process a new **ProgressBar** value, you need to handle the value change even
 
     <template>
         <DxProgressBar
-            :value.sync="value"
+            v-model:value="value"
+            @value-change="$emit('update:value', $event.target.value)"
             @value-changed="handleValueChange"
         />
     </template>

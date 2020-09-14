@@ -152,7 +152,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     <!-- tab: App.vue -->
     <template>
         <DxActionSheet
-            :visible.sync="isActionSheetVisible"
+            v-model:visible="isActionSheetVisible"
+            @visible-change="$emit('update:isActionSheetVisible', $event.target.value)"
             :data-source="actionSheetData"
             item-template="link">
             <template #link="{ data }">

@@ -39,7 +39,8 @@ The **Popup** can also be hidden when a user clicks outside it. To control this 
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
+            @visible-change="$emit('update:isPopupVisible', $event.target.value)"
             :close-on-outside-click="true"
             title="Popup Title"
         />

@@ -48,7 +48,8 @@ The following code adds the **CheckBox** to your page.
     <template>
         <DxCheckBox
             text="Check me"
-            :value.sync="checkBoxValue"
+            v-model:value="checkBoxValue"
+            @value-change="$emit('update:checkBoxValue', $event.target.value)"
         />
     </template>
 

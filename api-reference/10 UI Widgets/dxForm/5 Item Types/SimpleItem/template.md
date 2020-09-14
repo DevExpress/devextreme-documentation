@@ -121,7 +121,8 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateB
                 <DxLabel text="Date of birth" />
                 <template #default>
                     <DxDateBox
-                        :value.sync="customer.BirthDate">
+                        v-model:value="customer.BirthDate"
+                        @value-change="$emit('update:customer.BirthDate', $event.target.value)">
                         <DxValidator
                             validation-group="customerData">
                             <DxRequiredRule message="Date of birth is required" />

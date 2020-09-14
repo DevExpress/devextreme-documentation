@@ -78,7 +78,8 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
         </DxChart>
         <DxRangeSelector
             :data-source="data"
-            :value.sync="chart_visualRange">
+            v-model:value="chart_visualRange"
+            @value-change="$emit('update:chart_visualRange', $event.target.value)">
             <!-- Displays the Chart in the background of the RangeSelector -->
             <DxRsChart :series="seriesConfiguration"/>
             <!-- Makes zooming and panning smoother -->

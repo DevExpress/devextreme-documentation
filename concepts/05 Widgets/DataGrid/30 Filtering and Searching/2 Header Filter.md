@@ -164,8 +164,10 @@ A user can change the applied filter by including or excluding values. Use a col
     <template>
         <DxDataGrid ... >           
             <DxColumn 
-                :filter-type.sync="filterType"
-                :filter-values.sync="filterValues" 
+                v-model:filter-type="filterType"
+                @filter-type-change="$emit('update:filterType', $event.target.value)"
+                v-model:filter-values="filterValues"
+                @filter-values-change="$emit('update:filterValues', $event.target.value)" 
                 data-field="OrderDate"
             />
         </DxDataGrid>

@@ -38,7 +38,8 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            :value.sync="color"
+            v-model:value="color"
+            @value-change="$emit('update:color', $event.target.value)"
             apply-value-mode="instantly"
         />
     </template>
@@ -149,7 +150,8 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            :value.sync="color"
+            v-model:value="color"
+            @value-change="$emit('update:color', $event.target.value)"
             @value-changed="handleValueChange"
         />
     </template>

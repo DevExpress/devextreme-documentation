@@ -45,7 +45,8 @@ When the **Popup** is shown, the area beneath it can be shaded. To enable this b
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
+            @visible-change="$emit('update:isPopupVisible', $event.target.value)"
             title="Popup Title"
             :shading="true"
             shading-color="rgba(0, 0, 0, 0.2)">

@@ -141,7 +141,8 @@ With Angular, Vue or React, use a different technique. Bind the [visible](/api-r
         <div>
             <DxPopup
                 title="Popup Title"
-                :visible.sync="isPopupVisible">
+                v-model:visible="isPopupVisible"
+                @visible-change="$emit('update:isPopupVisible', $event.target.value)">
                 <template>
                     <p>Popup content</p>
                 </template>

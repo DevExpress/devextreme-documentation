@@ -156,7 +156,8 @@ If you need a tab to be preselected or to select it programmatically, pass its i
     <template>
         <DxTabs
             :items="tabs"
-            :selected-index.sync="selectedIndex" /> 
+            v-model:selected-index="selectedIndex"
+            @selected-index-change="$emit('update:selectedIndex', $event.target.value)" /> 
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';
@@ -284,7 +285,8 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
         <DxTabs
             :items="tabs"
             selection-mode="multiple"
-            :selected-items.sync="selectedItems" /> 
+            v-model:selected-items="selectedItems"
+            @selected-items-change="$emit('update:selectedItems', $event.target.value)" /> 
     </template>
     <script>
     import 'devextreme/dist/css/dx.common.css';

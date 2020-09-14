@@ -50,7 +50,8 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
         <DxSlider
             :min="0"
             :max="100"
-            :value.sync="value"
+            v-model:value="value"
+            @value-change="$emit('update:value', $event.target.value)"
         />
     </template>
 
@@ -163,7 +164,8 @@ In addition, you can specify the step of **Slider** values using the [step](/api
             :min="0"
             :max="100"
             :step="10"
-            :value.sync="value"
+            v-model:value="value"
+            @value-change="$emit('update:value', $event.target.value)"
         />
     </template>
 

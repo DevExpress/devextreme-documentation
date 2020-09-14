@@ -251,7 +251,8 @@ If you need to render different templates depending on a specific condition, def
         <div>
             <DxToast
                 type="custom"
-                :visible.sync="isVisible"
+                v-model:visible="isVisible"
+                @visible-change="$emit('update:isVisible', $event.target.value)"
                 :contentTemplate="contentTemplate">
                 <template #green>
                     <p style="background-color:green">Green template</p>

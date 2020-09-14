@@ -54,7 +54,8 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     <template>
         <div>
             <DxToast
-                :visible.sync="isVisible"
+                v-model:visible="isVisible"
+                @visible-change="$emit('update:isVisible', $event.target.value)"
                 message="Connection problem"
                 type="error"
             />

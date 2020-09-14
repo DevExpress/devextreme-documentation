@@ -139,7 +139,8 @@ If the **Chart** is [bound to the RangeSelector](/concepts/05%20Widgets/Chart/95
             <DxArgumentAxis :visual-range="chart_visualRange"/>
         </DxChart>
         <DxRangeSelector ...
-            :value.sync="chart_visualRange">
+            v-model:value="chart_visualRange"
+            @value-change="$emit('update:chart_visualRange', $event.target.value)">
         </DxRangeSelector>
     </template>
 

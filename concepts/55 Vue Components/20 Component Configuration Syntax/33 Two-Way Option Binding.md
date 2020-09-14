@@ -1,8 +1,11 @@
-Changes in the `bindingProperty` are propagated to the **TextBox**'s **value** and vice versa. The [`sync`](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier) modifier provides two-way binding.
+Changes in the `bindingProperty` are propagated to the **TextBox**'s **value** and vice versa:
 
     <!-- tab: App.vue -->
     <template>
-        <DxTextBox :value.sync="bindingProperty" />
+        <DxTextBox
+            v-model:value="bindingProperty"
+            @value-change="$emit('update:bindingProperty', $event.target.value)"
+        />
     </template>
 
     <script>

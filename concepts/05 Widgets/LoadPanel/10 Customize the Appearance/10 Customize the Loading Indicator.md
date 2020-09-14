@@ -52,7 +52,8 @@ If you need to use a 3rd-party loading indicator inside the **LoadPanel**, assig
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                :visible.sync="isLoadPanelVisible"
+                v-model:visible="isLoadPanelVisible"
+                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
                 :indicator-src="indicatorUrl"
             />
             <DxButton
@@ -198,7 +199,8 @@ In case you do not need any loading indicator to be shown at all, assign **false
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                :visible.sync="isLoadPanelVisible"
+                v-model:visible="isLoadPanelVisible"
+                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
                 :show-indicator="false"
             />
             <DxButton

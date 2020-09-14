@@ -51,8 +51,10 @@ The following code adds a simple **RangeSlider** to your page. The **start** and
         <DxRangeSlider
             :min="0"
             :max="100"
-            :start.sync="startValue"
-            :end.sync="endValue"
+            v-model:start="startValue"
+            @start-change="$emit('update:startValue', $event.target.value)"
+            v-model:end="endValue"
+            @end-change="$emit('update:endValue', $event.target.value)"
         />
     </template>
 
@@ -170,8 +172,10 @@ In addition, you can specify the step of **RangeSlider** values using the [step]
             :min="0"
             :max="100"
             :step="10"
-            :start.sync="startValue"
-            :end.sync="endValue"
+            v-model:start="startValue"
+            @start-change="$emit('update:startValue', $event.target.value)"
+            v-model:end="endValue"
+            @end-change="$emit('update:endValue', $event.target.value)"
         />
     </template>
 

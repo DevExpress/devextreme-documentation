@@ -58,7 +58,8 @@ The following code adds to your page a simple **LoadPanel** and a [Button](/conc
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                :visible.sync="isLoadPanelVisible"
+                v-model:visible="isLoadPanelVisible"
+                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
             />
             <DxButton
                 text="Show the Load Panel"

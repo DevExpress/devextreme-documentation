@@ -305,7 +305,8 @@ Refer to the subtopics for details on every configuration step. You can also see
             <DxDrawer
                 opened-state-mode="overlap"
                 reveal-mode="expand"
-                :opened.sync="isDrawerOpen"
+                v-model:opened="isDrawerOpen"
+                @opened-change="$emit('update:isDrawerOpen', $event.target.value)"
                 :minSize="37"
                 :height="250"
                 template="list">

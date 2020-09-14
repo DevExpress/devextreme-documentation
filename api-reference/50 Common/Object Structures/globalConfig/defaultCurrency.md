@@ -8,7 +8,7 @@ default: 'USD'
 The default currency. Accepts a 3-letter <a href="https://www.currency-iso.org/en/home/tables/table-a1.html" target="_blank">ISO 4217</a> code.
 
 ---
-[note] [Reference Globalize or Intl](/concepts/Common/33%20Localization/05%20Localize%20Dates,%20Numbers,%20and%20Currencies '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/') if you specify a currency other than "USD".
+[note] [Reference Globalize or Intl](/concepts/Common/33%20Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/') if you specify a currency other than "USD".
 
 Assign the currency code to this field if you use Intl, or do the following if you use Globalize: 
 

@@ -7,7 +7,7 @@ type: String
 Specifies the currency code. Applies only if the [type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') is *"currency"*.
 
 ---
-[note] [Reference Globalize or Intl](/concepts/Common/33%20Localization/05%20Localize%20Dates,%20Numbers,%20and%20Currencies '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies') if you specify a currency code other than "USD".
+[note] [Reference Globalize or Intl](/concepts/Common/33%20Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies') if you specify a currency code other than "USD".
 
 This option accepts a 3-letter <a href="http://www.currency-iso.org/en/home/tables/table-a1.html" target="_blank">ISO 4217</a> code for each currency. Assign the code to this option if you use Intl, or do the following if you use Globalize: 
 

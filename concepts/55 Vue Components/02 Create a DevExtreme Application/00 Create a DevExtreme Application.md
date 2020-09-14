@@ -1,4 +1,4 @@
-If you are starting a project from scratch, use the DevExtreme Vue Template. It is a simple application with a navigation menu and several sample views in a responsive layout.
+If you are starting a project from scratch, use the DevExtreme Vue Template. It is a simple application with a navigation menu and several sample views in a responsive layout (see <a href="https://devexpress.github.io/devextreme-vue-template/#/home">live preview</a>).
 
 ![DevExtreme Vue Template](/images/dx-application-templates/vue-app-template.png)
 
@@ -14,6 +14,6 @@ For further information about DevExtreme Vue components, refer to the following 
 
 - [Component Configuration Syntax](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/')
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Vue/Light)
-- [API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/')
+- [API Reference](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
 
 For more information about the structure and contents of the DevExtreme Vue Template, continue reading this article.

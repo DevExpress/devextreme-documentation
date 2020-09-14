@@ -11,4 +11,4 @@ Moves the annotation horizontally.
 The number assigned to this option specifies the shift in pixels. A negative number shifts the annotation to the left and a positive number shifts it to the right.
 
 #####See Also#####
-- [allowDragging]({basewidgetpath}/Configuration/annotations/#allowDragging)
+- [allowDragging](/api-reference/_hidden/BaseChartAnnotationConfig/allowDragging.md '{basewidgetpath}/Configuration/annotations/#allowDragging')

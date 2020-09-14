@@ -5,16 +5,16 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies how to resolve collisions - when the overlay element exceeds the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
+Specifies how to resolve collisions - when the overlay element exceeds the [boundary](/api-reference/50%20Common/Object%20Structures/positionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary') element.
 
 ---
 You can use the following collision resolution algorithms:
 
 - *"flip"*      
-Move the overlay element to the opposite side of the [target](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of) if that side has more space.
+Move the overlay element to the opposite side of the [target](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of') if that side has more space.
 
 - *"fit"*       
-Move the overlay element to the inside of the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
+Move the overlay element to the inside of the [boundary](/api-reference/50%20Common/Object%20Structures/positionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary') element.
 
 - *"flipfit"*       
 First apply *"flip"*, then *"fit"*.

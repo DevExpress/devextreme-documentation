@@ -8,7 +8,7 @@ This function allows you to customize the toolbar. Depending on the configuratio
 - <img src="/Content/images/doc/20_1/DataGrid/icons/toolbar_applyFilter.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Toolbar ApplyFilterButton" style="margin:1px; vertical-align:middle"/> - *"applyFilterButton"*     
 - [*"searchPanel"*](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/')
 
-The following code shows how you can customize the toolbar using this function.
+The following code shows how to use this function to customize the toolbar:
 
 ---
 ##### jQuery
@@ -18,11 +18,16 @@ The following code shows how you can customize the toolbar using this function.
         $("#treeListContainer").dxTreeList({
             // ...
             onToolbarPreparing: function (e) {
-                var toolbarItems = e.toolbarOptions.items;
+                let toolbarItems = e.toolbarOptions.items;
                 // Modifies an existing item
                 toolbarItems.forEach(function(item) {
                     if (item.name === "saveButton") {
-                        // Change the item options here
+                        item.options = {
+                            icon: "custom-save-icon",
+                            onClick: function(e) {
+                                // Implement custom save logic here
+                            }
+                        }
                     }
                 }); 
 
@@ -43,11 +48,16 @@ The following code shows how you can customize the toolbar using this function.
     // ...
     export class AppComponent {
         onToolbarPreparing (e) { 
-            var toolbarItems = e.toolbarOptions.items;
+            let toolbarItems = e.toolbarOptions.items;
             // Modifies an existing item
             toolbarItems.forEach(function(item) {
                 if (item.name === "saveButton") {
-                    // Change the item options here
+                    item.options = {
+                        icon: "custom-save-icon",
+                        onClick: function(e) {
+                            // Implement custom save logic here
+                        }
+                    }
                 }
             });
             
@@ -98,7 +108,12 @@ The following code shows how you can customize the toolbar using this function.
                 // Modifies an existing item
                 toolbarItems.forEach(function(item) {
                     if (item.name === "saveButton") {
-                        // Change the item options here
+                        item.options = {
+                            icon: "custom-save-icon",
+                            onClick: function(e) {
+                                // Implement custom save logic here
+                            }
+                        }
                     }
                 });
 
@@ -142,7 +157,12 @@ The following code shows how you can customize the toolbar using this function.
             // Modifies an existing item
             toolbarItems.forEach(function(item) {
                 if (item.name === "saveButton") {
-                    // Change the item options here
+                    item.options = {
+                        icon: "custom-save-icon",
+                        onClick: function(e) {
+                            // Implement custom save logic here
+                        }
+                    }
                 }
             });
 
@@ -162,3 +182,5 @@ The following code shows how you can customize the toolbar using this function.
     export default App;
 
 ---
+
+[note]If you use [modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') and set a DevExtreme widget as a toolbar item, import this widget's module. You do not have to import the [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') or [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/') widgets because **TreeList** imports them automatically. 

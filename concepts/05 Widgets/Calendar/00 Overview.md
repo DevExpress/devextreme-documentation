@@ -171,6 +171,6 @@ To specify which day should be considered the beginning of the week, pass its in
 - [Calendar - Customize Cell Appearance](/concepts/05%20Widgets/Calendar/15%20Customize%20Cell%20Appearance.md '/Documentation/Guide/Widgets/Calendar/Customize_Cell_Appearance')
 - [Calendar - Keyboard Support](/concepts/05%20Widgets/Calendar/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Calendar/Keyboard_Support')
 - [Calendar API Reference](/api-reference/10%20UI%20Widgets/dxCalendar '/Documentation/ApiReference/UI_Widgets/dxCalendar/')
-- [DateBox - Getting Started](/Documentation/Guide/Widgets/DateBox/Getting_Started_with_DateBox/)
+- [DateBox - Getting Started](/concepts/05%20Widgets/DateBox/00%20Getting%20Started%20with%20DateBox '/Documentation/Guide/Widgets/DateBox/Getting_Started_with_DateBox/')
 
 [tags]dxcalendar, calendar, editor, scheduling, overview, value format, date format, date range

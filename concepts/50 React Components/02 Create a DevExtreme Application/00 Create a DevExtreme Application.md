@@ -1,6 +1,6 @@
-If you are starting a project from scratch, use the DevExtreme React Template. It is a simple application with a navigation menu and several sample views in a responsive layout.
+If you are starting a project from scratch, use the DevExtreme React Template. It is a simple application with a navigation menu and several sample views in a responsive layout  (see <a href="https://devexpress.github.io/devextreme-react-template/#/home">live preview</a>).
 
-![DevExtreme React Template](/images/dx-application-templates/react-app-template.png)
+<iframe width="100%" height="476" src="https://www.youtube.com/embed/FLDuyQDWv_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="border: 0;"></iframe>
 
 You can generate the application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 
@@ -14,6 +14,6 @@ For further information about DevExtreme React components, refer to the followin
 
 - [Component Configuration Syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/')
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/React/Light)
-- [API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/')
+- [API Reference](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
 
 For more information about the structure and contents of the DevExtreme React Template, continue reading this article.

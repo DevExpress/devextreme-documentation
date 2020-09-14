@@ -2,7 +2,7 @@ Edit the `src\app-navigation.js` file to configure navigation menu items. Each i
 
 - **text** - the item's text
 
-- **icon** - the item's [icon](/Documentation/Guide/Themes_and_Styles/Icons/)
+- **icon** - the item's [icon](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/')
 
 - **path** - a navigation path associated with the item
 

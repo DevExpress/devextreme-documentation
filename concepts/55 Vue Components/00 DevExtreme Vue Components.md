@@ -7,7 +7,7 @@ The DevExtreme Vue Component Suite is a feature-complete set of 65+ responsive a
 
 The DevExtreme Vue Component Suite provides the following platform-specific features:
 
-- [Application template for a quick start](/concepts/55%20Vue%20Components/02%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/')
+- [Application template for a quick start](/concepts/55%20Vue%20Components/02%20Create%20a%20DevExtreme%20Application/00%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/')
 
 - [Declarative configuration syntax](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/')
 

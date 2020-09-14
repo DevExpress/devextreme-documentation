@@ -1,4 +1,4 @@
-To customize views in the **MultiView**, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component.
+To customize views in the **MultiView**, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component.
 
 ---
 

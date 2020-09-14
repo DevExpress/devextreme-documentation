@@ -202,11 +202,15 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
         <div id="app-container">
             <DxTabPanel
                 @selection-changed="switchSDAs">
-                <DxItem #default title="Edit tab">
-                    <p>Edit tab's content</p>
+                <DxItem title="Edit tab">
+                    <template #default>
+                        <p>Edit tab's content</p>
+                    </template>
                 </DxItem>
-                <DxItem #default title="Share tab">
-                    <p>Share tab's content</p>
+                <DxItem title="Share tab">
+                    <template #default>
+                        <p>Share tab's content</p>
+                    </template>
                 </DxItem>
             </DxTabPanel>
             <!-- To be implemented -->

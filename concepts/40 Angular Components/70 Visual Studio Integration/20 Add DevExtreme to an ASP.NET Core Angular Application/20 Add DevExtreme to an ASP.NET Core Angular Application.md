@@ -60,7 +60,7 @@ This article describes how to create an ASP.NET Core Angular application and add
           }
         }
 
-1. **Only .NET Core SDK 2.2 and later**: DevExtreme requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a>. Since JSZip v3.3.0, the library does not need to be registered. If you use an earlier version, register JSZip in the `tsconfig.json` file as shown in the [JSZip Registration](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies/JSZip_Registration) article.
+1. **Only .NET Core SDK 2.2 and later**: DevExtreme requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a>. Since JSZip v3.3.0, the library does not need to be registered. If you use an earlier version, register JSZip in the `tsconfig.json` file as shown in the [JSZip Registration](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/08%20Register%203rd-Party%20Dependencies/01%20JSZip%20Registration.md '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies/JSZip_Registration') article.
 
 1. Open the `ClientApp/src/app/app.module.ts` file and import modules that contain individual DevExtreme widgets or a module containing all the DevExtreme widgets and related utilities:
 

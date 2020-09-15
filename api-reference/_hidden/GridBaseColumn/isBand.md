@@ -5,16 +5,16 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether the column bands other columns.
+Specifies whether the column organizes other columns into bands.
 
 ---
-Unlike normal columns, band columns do not hold data. Instead, they collect two or more columns under one column header. To create such a layout, do one of the following:
+Unlike standard columns, band columns do not contain data. Instead, a band column displays two or more columns underneath its header. To create a banded layout, do one of the following:
 
-* [Nest column configurations inside each other]({basewidgetpath}/Configuration/columns/columns/).
+* [Create nested column configurations]({basewidgetpath}/Configuration/columns/columns/).
 
 * Specify the **isBand** and [ownerBand]({basewidgetpath}/Configuration/columns/#ownerBand) options inside the [customizeColumns]({basewidgetpath}/Configuration/#customizeColumns) function.
 
-The following code uses the **isBand** and **ownerBand** options to band the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* header:
+The following code uses the **isBand** and **ownerBand** options to display the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* band:
 
 ---
 ##### jQuery

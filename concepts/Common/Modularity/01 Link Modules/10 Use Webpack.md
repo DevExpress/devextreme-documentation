@@ -39,10 +39,6 @@
 
         webpack
 
-See examples of using Webpack with <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/webpack-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/webpack-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/webpack-knockout" target="_blank">Knockout</a> on GitHub. The **webpack.config.js**, **index.js**, and **index.html** files contain the main code. 
+See examples of using Webpack with <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/webpack-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/webpack-vue" target="_blank">Vue</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/webpack-react" target="_blank">React</a> on GitHub. The **webpack.config.js**, **index.js**, and **index.html** files contain the main code. 
 
-The following list shows additional modules each library/framework requires: 
-
-- **jQuery**: DevExtreme [jQuery integration](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery') module;
-- **AngularJS**: jQuery, DevExtreme [AngularJS](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') and [jQuery](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery') integration modules;
-- **Knockout**: DevExtreme [Knockout integration](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout') module.
+jQuery also requires the [jQuery integration module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery').

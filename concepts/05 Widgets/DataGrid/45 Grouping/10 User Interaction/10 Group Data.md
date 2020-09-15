@@ -1,6 +1,6 @@
 A user can group data in the **DataGrid** using a column header's context menu or the group panel.
 
-![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Grouping Group Panel Context Menu](/images/DataGrid/visual_elements/groupPanel_contextMenu.png)
+![DevExtreme HTML5 JavaScript jQuery Angular DataGrid Grouping Group Panel Context Menu](/images/DataGrid/visual_elements/groupPanel_contextMenu.png)
 
 Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/contextMenuEnabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#contextMenuEnabled') option adds grouping commands to the context menu. Setting the **groupPanel**.[visible](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#visible') option to **true** shows the group panel. The latter option also accepts the *"auto"* value that hides the group panel on small screens.
 

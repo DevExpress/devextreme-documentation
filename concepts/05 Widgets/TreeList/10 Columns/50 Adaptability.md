@@ -82,7 +82,7 @@ The table layout does not automatically adapt to changes made in the widget's co
 
 Data from hidden columns is still available in adaptive detail rows. A user can expand or collapse these rows by clicking the ellipsis buttons in the adaptive column.
 
-![DevExtreme HTML5 JavaScript jQuery Knockout Angular TreeList Adaptability](/images/treelist/visual_elements/adaptive-column.png)
+![DevExtreme HTML5 JavaScript jQuery Angular TreeList Adaptability](/images/treelist/visual_elements/adaptive-column.png)
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Adaptability/"

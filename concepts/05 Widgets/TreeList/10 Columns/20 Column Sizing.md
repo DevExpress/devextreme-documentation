@@ -124,7 +124,7 @@ The widget allows a user to resize columns in two different modes: by changing t
 ---
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/Resizing/AngularJS/Light/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/Resizing/"
 }
 
 #####See Also#####

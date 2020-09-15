@@ -135,9 +135,35 @@ For a minor customization of **Scheduler** appointments, you can define [specifi
 
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define templates for appointments.
+If you need a more flexible solution, define an [appointmentTemplate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#appointmentTemplate) ([appointmentRender](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#appointmentRender) in React). Within the template, you can access appointment data and index:
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    var schedulerData = [{
+        movie: "His Girl Friday",
+        price: 5,
+        startDate: new Date(2016, 4, 24, 9, 10),
+        endDate: new Date(2016, 4, 24, 11, 20)
+    }, {
+        movie: "Royal Wedding",
+        price: 10,
+        startDate: new Date(2016, 4, 24, 10, 05),
+        endDate: new Date(2016, 4, 24, 11, 30)
+    }, 
+    // ...
+    ];
+
+    $(function () {
+        $("#schedulerContainer").dxScheduler({
+            dataSource: schedulerData,
+            appointmentTemplate: function (model, index, element) {
+                element.append("<i>" + model.appointmentData.movie + "</i>");
+                element.append("<p>Price: $" + model.appointmentData.price + "</p>");
+            }
+        });
+    });
 
 ##### Angular
 
@@ -178,73 +204,6 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         ],
         // ...
     })
-
-#####**AngularJS**
-
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-scheduler="{
-            dataSource: schedulerData,
-            appointmentTemplate: 'appointment',
-            currentDate: currentDate,
-        }" dx-item-alias="model">
-            <div data-options="dxTemplate: { name: 'appointment' }">
-                <i>{{model.appointmentData.movie}}</i>
-                <p>Price: ${{model.appointmentData.price}}</p>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.schedulerData = [{
-                movie: "His Girl Friday",
-                price: 5,
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20)
-            }, {
-                movie: "Royal Wedding",
-                price: 10,
-                startDate: new Date(2016, 4, 24, 10, 05),
-                endDate: new Date(2016, 4, 24, 11, 30)
-            }, 
-            // ...
-            ];
-            $scope.currentDate = new Date(2016, 4, 24); 
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--HTML--><div data-bind="dxScheduler: {
-        dataSource: schedulerData,
-        appointmentTemplate: 'appointment',
-        currentDate: currentDate
-    }">
-        <div data-options="dxTemplate: { name: 'appointment' }">
-            <i data-bind="text: appointmentData.movie"></i>
-            <p>Price: $<span data-bind="text: appointmentData.price"></span></p>
-        </div>
-    </div>
-
-    <!--JavaScript-->var viewModel = {
-        schedulerData: [{
-            movie: "His Girl Friday",
-            price: 5,
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
-        }, {
-            movie: "Royal Wedding",
-            price: 10,
-            startDate: new Date(2016, 4, 24, 10, 05),
-            endDate: new Date(2016, 4, 24, 11, 30)
-        }, 
-        // ...
-        ],
-        currentDate: new Date(2016, 4, 24)
-    };
-
-    ko.applyBindings(viewModel);
 
 ##### Vue
 
@@ -341,34 +300,6 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
 ---
 
-If you use only jQuery, combine HTML markup for appointments manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#appointmentTemplate') callback function as shown in the following code.
-
-[**jQuery**](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component')
-
-    <!--JavaScript-->var schedulerData = [{
-        movie: "His Girl Friday",
-        price: 5,
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
-    }, {
-        movie: "Royal Wedding",
-        price: 10,
-        startDate: new Date(2016, 4, 24, 10, 05),
-        endDate: new Date(2016, 4, 24, 11, 30)
-    }, 
-    // ...
-    ];
-
-    $(function () {
-        $("#schedulerContainer").dxScheduler({
-            dataSource: schedulerData,
-            appointmentTemplate: function (model, index, element) {
-                element.append("<i>" + model.appointmentData.movie + "</i>");
-                element.append("<p>Price: $" + model.appointmentData.price + "</p>");
-            }
-        });
-    });
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"
 }
@@ -388,8 +319,6 @@ You can also customize an individual appointment. For this purpose, declare a te
     }, {
         // ...
     }];
-
-In addition, you can use a 3rd-party template engine to customize the widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [Scheduler - Customize Appointment Tooltip](/concepts/05%20Widgets/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Customize_Appointment_Tooltip/')

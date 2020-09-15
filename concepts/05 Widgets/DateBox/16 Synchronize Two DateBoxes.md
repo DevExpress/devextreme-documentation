@@ -47,43 +47,6 @@
         // ...
     })
 
-##### AngularJS
-
-    <!--HTML--><div dx-date-box="{
-        bindingOptions: {
-            max: 'endValue'
-            value: 'startValue'
-        }
-    }"></div>
-    <div dx-date-box="{
-        bindingOptions: {
-            min: 'startValue'
-            value: 'endValue'
-        }
-    }"></div>
-
-    <!--JavaScript-->function Controller($scope) {
-        $scope.startValue = new Date();
-        $scope.endValue = new Date();
-    }
-
-##### Knockout
-
-    <!--HTML--><div data-bind="dxDateBox: {
-        max: endValue
-        value: startValue
-    }"></div>
-    <div data-bind="dxDateBox: {
-        min: startValue
-        value: endValue
-    }"></div>
-
-    <!--JavaScript-->var viewModel = {
-        startDate: ko.observable(new Date()),
-        endDate: ko.observable(new Date()),
-    };
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <template>

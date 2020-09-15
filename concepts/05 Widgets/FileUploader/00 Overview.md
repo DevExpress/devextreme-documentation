@@ -75,15 +75,15 @@ A user is allowed to upload only one file at a time by default. Set the [multipl
 
 ---
 
-If you need to access the selected files at runtime, get the value of the [value](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#value') option using the following command. It returns an array, whose members are each an instance implementing the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File" target="_blank">File interface</a>.
-
-    <!--JavaScript-->var files = $("#fileUploaderContainer").dxFileUploader("option", "value");
-
-With Angular, AngularJS, or Knockout, use a different technique. Bind the **value** property of the **FileUploader** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, you can access the file array within any method. 
+If you need to access the selected files at runtime, get the **FileUploader**'s [value](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#value'). It contains an array, whose members are each an instance implementing the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File" target="_blank">File interface</a>.
 
 ---
+##### jQuery
 
-#####Angular
+    <!--JavaScript-->
+    var files = $("#fileUploaderContainer").dxFileUploader("option", "value");
+
+##### Angular
 
     <!--TypeScript-->
     import { DxFileUploaderModule } from "devextreme-angular";
@@ -107,43 +107,6 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the **valu
     <dx-file-uploader ...
         [(value)]="value">
     </dx-file-uploader>
-
-#####AngularJS
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.value = [];
-            $scope.getSelectedFiles = function () {
-                return $scope.value;
-            }
-        });
-
-    <!--HTML-->
-    <div dx-file-uploader="{ 
-        ...
-        bindingOptions: {
-            value: 'value'
-        }
-    }"></div>
-
-#####Knockout
-
-    <!--JavaScript-->
-    var viewModel = {
-        value: ko.observableArray(),
-        getSelectedFiles: function () {
-            return viewModel.value();
-        }
-    };
-
-    ko.applyBindings(viewModel);
-
-    <!--HTML-->
-    <div data-bind="dxFileUploader: { 
-        ...
-        value: value
-    }"></div>
 
 ---
 

@@ -1,6 +1,6 @@
 The filter row allows a user to filter data by individual columns' values.  Usually, the filter row's cells are text boxes, but the cells of columns that hold date or Boolean values contain other filtering controls (calendars or select boxes). 
 
-![DevExtreme HTML5 JavaScript jQuery Knockout Angular TreeList Filtering FilterRow](/images/treelist/visual_elements/filter_row.png)
+![DevExtreme HTML5 JavaScript jQuery Angular TreeList Filtering FilterRow](/images/treelist/visual_elements/filter_row.png)
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/UsingFilterRow/"
@@ -89,7 +89,7 @@ A user-specified filter is automatically applied with a delay by default. Altern
 
 Each cell in the filter row contains a magnifying glass icon. Hovering the mouse pointer over it opens a drop-down list with the column's available filter operations.
 
-![DevExtreme HTML5 JavaScript jQuery Knockout Angular TreeList Filtering FilterRow](/images/treelist/visual_elements/filter_row_operation_chooser.png)
+![DevExtreme HTML5 JavaScript jQuery Angular TreeList Filtering FilterRow](/images/treelist/visual_elements/filter_row_operation_chooser.png)
 
 The set of available filter operations can be restricted using the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#filterOperations') option. You can also preselect a filter operation and specify the initial filter value with the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#selectedFilterOperation') and [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#filterValue') options. Call the [columnOption](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_options).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#columnOptionid_options') method at runtime to change these options:
 

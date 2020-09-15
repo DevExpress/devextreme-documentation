@@ -83,65 +83,6 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.store = new DevExpress.data.CustomStore({
-                key: "id",
-                load: function (loadOptions) {
-                    // ...
-                },
-                insert: function (values) {
-                    // ...
-                },
-                update: function (key, values) {
-                    // ...
-                },
-                remove: function (key) {
-                    // ...
-                }
-            });
-
-            // ===== or inside the DataSource =====
-            $scope.dataSource = new DevExpress.data.DataSource({
-                // ...
-                // a mix of CustomStore and DataSource options
-                // ...
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var viewModel = {
-        store: new DevExpress.data.CustomStore({
-            key: "id",
-            load: function (loadOptions) {
-                // ...
-            },
-            insert: function (values) {
-                // ...
-            },
-            update: function (key, values) {
-                // ...
-            },
-            remove: function (key) {
-                // ...
-            }
-        })
-
-        // ===== or inside the DataSource =====
-        dataSource: new DevExpress.data.DataSource({
-            // ...
-            // a mix of CustomStore and DataSource options
-            // ...
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

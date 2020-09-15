@@ -54,41 +54,6 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
     })
     export class AppModule { }
 
-#####AngularJS
-
-    <!--HTML-->
-    <div dx-list="{ }">
-        <div data-options="dxItem: { text: 'Apples', disabled: true }"></div>
-        <div data-options="dxItem: { text: 'Lemons', visible: false }"></div>
-        <div data-options="dxItem: { }">
-            <i>Oranges</i>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            // ...
-        });
-
-#####Knockout
-
-    <!--HTML-->
-    <div data-bind="dxList: { ... }">
-        <div data-options="dxItem: { text: 'Apples', disabled: true }"></div>
-        <div data-options="dxItem: { text: 'Lemons', visible: false }"></div>
-        <div data-options="dxItem: { }">
-            <i>Oranges</i>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        // ...
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

@@ -21,7 +21,7 @@ You should also implement the following features manually: [editing](/api-refere
 
 [/note]
 
-In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') and declare it within a `<table>` element. In other cases, declare the markup in a `<tbody>` element with the `dx-row` class.
+Declare the template's markup in a `<tbody>` element with the `dx-row` class:
 
 ---
 #####jQuery
@@ -69,34 +69,6 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
         ],
         // ...
     })
-
-#####AngularJS
-
-        <!--HTML--><div dx-data-grid="{
-            ...
-            rowTemplate: 'rowTemplateName'
-        }" dx-item-alias="item">
-            <table data-options="dxTemplate: { name: 'rowTemplateName' }" >
-                <tr>
-                    <td>{{item.data.id}}</td>
-                    <td>{{item.data.name}}</td>
-                </tr>
-            </table>
-        </div>
-
-#####Knockout
-
-        <!--HTML--><div data-bind="dxDataGrid: {
-            ...
-            rowTemplate: 'rowTemplateName'
-        }">
-            <table data-options="dxTemplate: { name: 'rowTemplateName' }" >
-                <tr>
-                    <td data-bind="text: data.id"></td>
-                    <td data-bind="text: data.name"></td>
-                </tr>
-            </table>
-        </div>
 
 #####Vue
 

@@ -8,34 +8,6 @@ To get the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentat
 
     <!--JavaScript-->
     var sankeyDataSource = $("#sankeyContainer").dxSankey("getDataSource");
-
-#####**AngularJS**
-
-    <!--JavaScript-->
-    angular.module("DemoApp", ["dx"])
-        .controller("DemoController", function($scope) {
-            $scope.sankeyDataSource = {};
-            $scope.sankeyOptions = {
-                // ...
-                onInitialized: function(e) {
-                    $scope.sankeyDataSource = e.component.getDataSource();  
-                }
-            };
-        });
-
-#####**Knockout**
-
-    <!--JavaScript-->var viewModel = {
-        sankeyDataSource: {},
-        sankeyOptions: {
-            // ...
-            onInitialized: function(e) {
-                viewModel.sankeyDataSource = e.component.getDataSource();    
-            }
-        }
-    };
-    
-    ko.applyBindings(viewModel);
     
 ##### Angular
 

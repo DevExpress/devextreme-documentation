@@ -48,21 +48,6 @@ All group validation errors can be displayed in the [ValidationSummary](/api-ref
     })
     export class AppModule { }
 
-##### AngularJS
-
-    <!--HTML-->
-    <!-- div id="loginGroup" dx-validation-group="{ }" -->
-        ...
-        <div dx-validation-summary="{ }"></div>
-    <!-- /div -->
-
-##### Knockout
-
-    <!--HTML-->
-    <!-- div id="loginGroup" data-bind="dxValidationGroup: { }" -->
-        <div data-bind="dxValidationSummary: { }"></div>
-    <!-- /div -->
-
 ##### Vue
 
     <!-- tab: App.vue -->

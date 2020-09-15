@@ -158,9 +158,48 @@ You can also adjust cells' size in the table and around it using the DevExtreme 
         height: 200px;
     }
 
-For a more detailed customization, define custom templates for cells, time scales, and date scales. DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component for Angular, AngularJS and Knockout apps. The following code shows how to use **dxTemplate** to define templates for timetable parts:
+For a more detailed customization, define a [dataCellTemplate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataCellTemplate), [dateCellTemplate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dateCellTemplate), and [timeCellTemplate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeCellTemplate) ([dataCellRender](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataCellRender), [dateCellRender](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dateCellRender), and [timeCellRender](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeCellRender) in React). Within these templates, you can access cell data and index:
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    var schedulerData = [{
+        text: "His Girl Friday",
+        startDate: new Date(2016, 4, 24, 9, 10),
+        endDate: new Date(2016, 4, 24, 11, 20)
+    }, {
+        text: "Royal Wedding",
+        startDate: new Date(2016, 4, 24, 10, 05),
+        endDate: new Date(2016, 4, 24, 11, 30)
+    }, 
+    // ...
+    ];
+
+    $(function () {
+        $("#schedulerContainer").dxScheduler({
+            dataSource: schedulerData,
+            currentDate: new Date(2016, 4, 24),
+            showAllDayPanel: false,
+            currentView: 'week',
+            dataCellTemplate: function(data, index, element) {
+                return $("<div />")
+                            .css('width', '100%')
+                            .css('height', '40px')
+                            .css('background-color', 'rgba(86, 202, 133, 0.1)');
+            },
+            dateCellTemplate: function(data, index, element) {
+                element.text(data.text)
+                        .css('color', 'green')
+                        .css('font-weight', 'bold');
+            },
+            timeCellTemplate: function(data, index, element) {
+                element.text(data.text)
+                        .css('color', 'green')
+                        .css('font-style', 'italic');
+            }
+        });
+    });
 
 #####Angular
 
@@ -173,13 +212,13 @@ For a more detailed customization, define custom templates for cells, time scale
         dataCellTemplate="dataCellTemplate"
         dateCellTemplate="dateCellTemplate"
         timeCellTemplate="timeCellTemplate">
-        <div *dxTemplate="let data of 'dataCellTemplate'">
+        <div *dxTemplate="let data of 'dataCellTemplate'; let i = index">
             <div style="width: 100%; height: 40px; background-color: rgba(86, 202, 133, 0.1);"></div>
         </div>
-        <div *dxTemplate="let date of 'dateCellTemplate'">
+        <div *dxTemplate="let date of 'dateCellTemplate'; let i = index">
             <b style="color: green">{{date.text}}</b>
         </div>
-        <div *dxTemplate="let time of 'timeCellTemplate'">
+        <div *dxTemplate="let time of 'timeCellTemplate'; let i = index">
             <i style="color: green">{{time.text}}</i>
         </div>
     </dx-scheduler>
@@ -209,89 +248,6 @@ For a more detailed customization, define custom templates for cells, time scale
         // ...
     })
 
-#####**AngularJS**
-
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-scheduler="{
-            dataSource: schedulerData,
-            currentDate: currentDate,
-            showAllDayPanel: false,
-            currentView: 'week',
-            dataCellTemplate: 'dataCellTemplate',
-            dateCellTemplate: 'dateCellTemplate',
-            timeCellTemplate: 'timeCellTemplate'
-        }" dx-item-alias="item">
-            <div data-options="dxTemplate: { name: 'dataCellTemplate' }">
-                <div style="width: 100%; height: 40px; background-color: rgba(86, 202, 133, 0.1);"></div>
-            </div>
-            <div data-options="dxTemplate: { name: 'dateCellTemplate' }">
-                <b style="color: green">{{item.text}}</b>
-            </div>
-            <div data-options="dxTemplate: { name: 'timeCellTemplate' }">
-                <i style="color: green">{{item.text}}</i>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.schedulerData = [{
-                text: "His Girl Friday",
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20)
-            }, {
-                text: "Royal Wedding",
-                startDate: new Date(2016, 4, 24, 10, 05),
-                endDate: new Date(2016, 4, 24, 11, 30)
-            }, 
-            // ...
-            ];
-            $scope.currentDate = new Date(2016, 4, 24); 
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--HTML--><div data-bind="dxScheduler: {
-        dataSource: schedulerData,
-        currentDate: currentDate,
-        showAllDayPanel: false,
-        currentView: 'week',
-        dataCellTemplate: 'dataCellTemplate',
-        dateCellTemplate: 'dateCellTemplate',
-        timeCellTemplate: 'timeCellTemplate'
-    }">
-        <div data-options="dxTemplate: { name: 'dataCellTemplate' }">
-            <div style="width: 100%; height: 40px; background-color: rgba(86, 202, 133, 0.1);"></div>
-        </div>
-        <div data-options="dxTemplate: { name: 'dateCellTemplate' }">
-            <b style="color: green" data-bind="text: text"></b>
-        </div>
-        <div data-options="dxTemplate: { name: 'timeCellTemplate' }">
-            <i style="color: green" data-bind="text: text"></i>
-        </div>
-    </div>
-
-    <!--JavaScript-->var viewModel= {
-        schedulerData: [{
-            movie: "His Girl Friday",
-            price: 5,
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
-        }, {
-            movie: "Royal Wedding",
-            price: 10,
-            startDate: new Date(2016, 4, 24, 10, 05),
-            endDate: new Date(2016, 4, 24, 11, 30)
-        }, 
-        // ...
-        ],
-        currentDate: new Date(2016, 4, 24)
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -308,10 +264,10 @@ For a more detailed customization, define custom templates for cells, time scale
             <template #dataCellTemplate>
                 <div v-bind:style="styles"></div>
             </template>
-            <template #dateCellTemplate="{ data }">
+            <template #dateCellTemplate="{ data, index }">
                 <b v-bind:style="{ color: 'green' }">{{data.text}}</b>     
             </template>
-            <template #timeCellTemplate="{ data }">
+            <template #timeCellTemplate="{ data, index }">
                 <b v-bind:style="{ color: 'green' }">{{data.text}}</b>     
             </template>
         </DxScheduler>
@@ -366,65 +322,24 @@ For a more detailed customization, define custom templates for cells, time scale
             );
         }
 
-        renderDataCell(data, index, element) {
+        renderDataCell(data, index) {
             return <div style={{ width: '100%', height: 40, backgroundColor: 'rgba(86, 202, 133, 0.1)' }}></div>;
         }
-        renderDateCell(data, index, element) {
+        renderDateCell(data, index) {
             return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
         }
-        renderTimeCell(data, index, element) {
+        renderTimeCell(data, index) {
             return <b style={{ color: 'green', fontWeight: 'bold' }}><p>{data.text}</p></b>;
         }
     }
 
     export default App;
 
----
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for time scales and date scales. To apply this markup, use the [timeCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/timeCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeCellTemplate'), [dateCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dateCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dateCellTemplate') and [dataCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataCellTemplate') callback functions as shown in the following code:
-
-    <!--JavaScript-->var schedulerData = [{
-        text: "His Girl Friday",
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
-    }, {
-        text: "Royal Wedding",
-        startDate: new Date(2016, 4, 24, 10, 05),
-        endDate: new Date(2016, 4, 24, 11, 30)
-    }, 
-    // ...
-    ];
-
-    $(function () {
-        $("#schedulerContainer").dxScheduler({
-            dataSource: schedulerData,
-            currentDate: new Date(2016, 4, 24),
-            showAllDayPanel: false,
-            currentView: 'week',
-            dataCellTemplate: function(data, index, element) {
-                return $("<div />")
-                            .css('width', '100%')
-                            .css('height', '40px')
-                            .css('background-color', 'rgba(86, 202, 133, 0.1)');
-            },
-            dateCellTemplate: function(data, index, element) {
-                element.text(data.text)
-                        .css('color', 'green')
-                        .css('font-weight', 'bold');
-            },
-            timeCellTemplate: function(data, index, element) {
-                element.text(data.text)
-                        .css('color', 'green')
-                        .css('font-style', 'italic');
-            }
-        });
-    });
+---  
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }
-
-You can also use a 3rd-party template engine to customize widget appearance. See the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article for more information.
 
 #####See Also#####
 - [Scheduler - Customize Appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Customize_Appointment/')

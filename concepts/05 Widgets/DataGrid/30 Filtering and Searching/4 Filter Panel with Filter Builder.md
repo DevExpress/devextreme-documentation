@@ -1,10 +1,10 @@
 The filter panel displays the applied filter expression.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout DataGrid Filter Panel](/images/DataGrid/visual_elements/filter_panel.png)
+![DevExtreme HTML5 JavaScript jQuery Angular DataGrid Filter Panel](/images/DataGrid/visual_elements/filter_panel.png)
 
 You can click the filter expression to open the integrated filter builder.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout DataGrid Filter Panel](/images/DataGrid/visual_elements/integrated_filter_builder.png)
+![DevExtreme HTML5 JavaScript jQuery Angular DataGrid Filter Panel](/images/DataGrid/visual_elements/integrated_filter_builder.png)
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"

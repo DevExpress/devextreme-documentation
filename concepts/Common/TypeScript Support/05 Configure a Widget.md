@@ -24,36 +24,11 @@ The part that preceeds the type is its namespace. DevExtreme widgets are declare
 - `DevExpress.viz.map` - [dxVectorMap](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/')
 - `DevExpress.ui` - [all other widgets](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
 
-After you have declared a configuration object, pass it to the [jQuery plugin](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component') ...
+After you have declared a configuration object, pass it to the [jQuery plugin](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component'):
 
     $("#chartContainer").dxChart(options);  
 
-... [Knockout binding](/concepts/Getting%20Started/Widget%20Basics%20-%20Knockout/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Create_and_Configure_a_Widget') ...
-
-    var viewModel = {
-        chartOptions: options
-	};
-
-	ko.applyBindings(viewModel);
-
-<!---->
-
-    <!--HTML--><div data-bind="dxChart: chartOptions"></div>
-
-... or [AngularJS directive](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget').
-
-    function Controller($scope) {
-		$scope.chartOptions = options;
-	}
-
-<!---->
-
-    <!--HTML--><div ng-controller="Controller">
-		<div dx-chart="chartOptions"></div>
-	</div>
-
-[note]TypeScript is only for _declaring_ a widget configuration. You still need to use jQuery, Knockout or AngularJS to _apply_ this configuration.
-
+[note]TypeScript is only for _declaring_ a widget configuration. You still need to use jQuery to _apply_ this configuration.
 
 #####See Also#####
 - **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart').[Configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/')

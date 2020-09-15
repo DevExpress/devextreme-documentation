@@ -1,6 +1,22 @@
-For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define templates for cells.
+To specify custom cell appearance, define a [cellTemplate](/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#cellTemplate) ([cellRender](/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#cellRender) in React). Within the template, you can access cell data and index. For example, the following code uses the template to change the style of weekend days:
 
 ---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function () {
+        $("#calendarContainer").dxCalendar({
+            value: new Date(),
+            cellTemplate: function (cellData, cellIndex) {
+                var italic = $("<span>").css('font-style', 'italic')
+                                        .text(cellData.text);
+                var normal = $("<span>").text(cellData.text);
+                return (cellIndex == 0 || cellIndex == 6) ? italic : normal;
+            }
+        });
+    });
+
+
 ##### Angular
 
     <!--HTML-->
@@ -91,23 +107,6 @@ For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](
     export default App;
 
 ---
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for cells. To apply this markup, use the [cellTemplate](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/cellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#cellTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->
-    $(function () {
-        $("#calendarContainer").dxCalendar({
-            value: new Date(),
-            cellTemplate: function (cellData, cellIndex, cellElement) {
-                var italic = $("<span>").css('font-style', 'italic')
-                                        .text(cellData.text);
-                var normal = $("<span>").text(cellData.text);
-                return (cellIndex == 0 || cellIndex == 6) ? italic : normal;
-            }
-        });
-    });
-
-In addition, you can use a 3rd-party template engine to customize widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)

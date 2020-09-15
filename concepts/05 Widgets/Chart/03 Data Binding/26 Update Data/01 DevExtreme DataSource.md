@@ -7,33 +7,6 @@ To get the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentat
 #####**jQuery**
 
     <!--JavaScript-->var ds = $("#chartContainer").dxChart("getDataSource");
-
-#####**AngularJS**
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.ds = {};
-            $scope.chartOptions = {
-                // ...
-                onInitialized: function (e) {
-                    $scope.ds = e.component.getDataSource();  
-                }
-            };
-        });
-
-#####**Knockout**
-
-    <!--JavaScript-->var viewModel = {
-        ds: {},
-        chartOptions: {
-            // ...
-            onInitialized: function (e) {
-                viewModel.ds = e.component.getDataSource();    
-            }
-        }
-    };
-    
-    ko.applyBindings(viewModel);
     
 ##### Angular
 

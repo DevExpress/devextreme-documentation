@@ -9,5 +9,5 @@ Positions the annotation relative to a value on the specified [value axis](/api-
 
 ---
 #####See Also#####
-- [argument](/api-reference/_hidden/dxChartCommonAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument')
-- [x](/api-reference/_hidden/dxChartCommonAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') | [y](/api-reference/_hidden/dxChartCommonAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')
+- [argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument')
+- [x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') | [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')

@@ -9,7 +9,7 @@ inherits: DOMComponent
 The **Resizable** widget enables its content to be resizable in the UI.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-readguidesbutton with {

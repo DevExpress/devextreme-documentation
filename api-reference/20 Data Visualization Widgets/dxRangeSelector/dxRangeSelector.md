@@ -36,7 +36,7 @@ dataSource: [{
 }]
 
 ##### lib
-dx.viz.js, dx.viz-web.js, dx.all.js
+dx.viz.js, dx.all.js
 
 ---
 This widget represents a scale (numeric or date-time) and two sliders. A user selects the required range by moving the sliders.

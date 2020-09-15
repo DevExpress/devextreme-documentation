@@ -12,7 +12,7 @@ The **LoadPanel** is an overlay widget notifying the viewer that loading is in p
 visible: true
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

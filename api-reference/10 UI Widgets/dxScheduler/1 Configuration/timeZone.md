@@ -12,7 +12,7 @@ This option accepts values from the <a href="https://en.wikipedia.org/wiki/List_
 
 If this option is unspecified, appointments are displayed in the client's time zone.
 
-Alternatively, you can specify the [startDateTimeZone](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDateTimeZone) and the [endDateTimeZone](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDateTimeZone) for individual appointments. Note that the **timeZone** option takes precedence over these options.
+Alternatively, you can specify the [startDateTimeZone](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/startDateTimeZone.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDateTimeZone') and the [endDateTimeZone](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDateTimeZone.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDateTimeZone') for individual appointments. Note that the **timeZone** option takes precedence over these options.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"

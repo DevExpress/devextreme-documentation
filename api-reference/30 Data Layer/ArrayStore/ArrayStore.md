@@ -10,7 +10,7 @@ inherits: Store
 The **ArrayStore** is a store that provides an interface for loading and editing an in-memory array and handling related events.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 ---

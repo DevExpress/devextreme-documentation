@@ -2,7 +2,7 @@ Add **Gantt** resources (scripts and styles) onto the page.
 
 - **npm**
 
-    The `devexpress-gantt` is a dependency package of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the **Gantt** widget in your project. Then, add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
+    The `devexpress-gantt` is a dependency package of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm.md '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the **Gantt** widget in your project. Then, add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
 
         <!--HTML-->
         <link rel="stylesheet" href="node_modules/devexpress-gantt/dx-gantt.min.css">

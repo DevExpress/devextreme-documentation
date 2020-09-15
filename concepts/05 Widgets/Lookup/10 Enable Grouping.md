@@ -266,7 +266,7 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
 
 ---
 
-To customize group headers, specify a [groupTemplate](/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#groupTemplate). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 

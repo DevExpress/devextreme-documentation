@@ -433,11 +433,11 @@ The following restrictions apply when users export **DataGrid**:
 
 - Only XLSX files are supported.
 - Excel limits the number of grouping levels to 7, while in the **DataGrid** it is unlimited.
-- Only visible columns are exported. See the [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) option description for a workaround.
-- [Detail rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) are not exported.
-- [Group rows](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType) are always exported in an expanded state and the [isExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded) option is ignored.
-- Modifications made in the [cell](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) and [row](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#rowTemplate) templates are omitted. 
-- [Data mapping](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping) is ignored. Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead.
+- Only visible columns are exported. See the [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting') option description for a workaround.
+- [Detail rows](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/') are not exported.
+- [Group rows](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType') are always exported in an expanded state and the [isExpanded](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/isExpanded.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#isExpanded') option is ignored.
+- Modifications made in the [cell](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate') and [row](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/rowTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#rowTemplate') templates are omitted. 
+- [Data mapping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/1%20Item%20Mapping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping') is ignored. Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead.
 
 #include common-demobutton-named with {
     name: "Overview",

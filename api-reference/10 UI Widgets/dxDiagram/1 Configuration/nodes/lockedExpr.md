@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression whose values indicate
 The current node's data object.
 
 ---
-A locked item can not be moved, changed, or delete. Users can use the [context menu](/Documentation/Guide/Widgets/Diagram/Diagram_Tools/) to lock and unlock an item.
+A locked item can not be moved, changed, or delete. Users can use the [context menu](/concepts/05%20Widgets/Diagram/30%20Diagram%20Tools.md '/Documentation/Guide/Widgets/Diagram/Diagram_Tools/') to lock and unlock an item.
 
 The specified field or expression should return `true` or `false`.
 

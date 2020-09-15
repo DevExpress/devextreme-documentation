@@ -9,7 +9,7 @@ type: Object
 The **XmlaStore** is a store that provides an interface for accessing an OLAP cube according to the XMLA standard.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') which, in turn, is used in the [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/') widget.

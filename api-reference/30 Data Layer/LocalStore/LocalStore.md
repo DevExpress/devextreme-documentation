@@ -10,7 +10,7 @@ inherits: ArrayStore
 The **LocalStore** is a store that provides an interface for loading and editing data from HTML Web Storage (also known as <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">window.localStorage</a>) and handling related events.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data%20Layer/LocalStore/1%20Configuration/name.md '/Documentation/ApiReference/Data_Layer/LocalStore/Configuration/#name') under which data should be saved in the browser's **localStorage** object.

@@ -8,7 +8,7 @@ Exports:
         // ===== or =====
         import { exportDataGrid } from "devextreme/excel_exporter";
 
-- *exportPivotGrid* - The [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method
+- *exportPivotGrid* - The [exportPivotGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') method
 
         require("excel_exporter").exportPivotGrid;
         // ===== or =====

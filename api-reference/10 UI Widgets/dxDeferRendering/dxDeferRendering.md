@@ -9,7 +9,7 @@ inherits: Widget
 The **DeferRendering** is a widget that waits for its content to be ready before rendering it. While the content is getting ready, the **DeferRendering** displays a loading indicator.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #####See Also#####

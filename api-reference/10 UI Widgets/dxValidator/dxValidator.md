@@ -9,7 +9,7 @@ inherits: DOMComponent
 A widget that is used to validate the associated DevExtreme editors against the defined validation rules.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

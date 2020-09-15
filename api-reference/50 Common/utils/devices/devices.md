@@ -8,6 +8,6 @@ export: default
 An object that serves as a namespace for the methods and events specifying information on the current device.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---

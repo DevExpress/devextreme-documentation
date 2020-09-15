@@ -9,7 +9,7 @@ type: Object
 The **Guid** is an object used to generate and contain a GUID.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 #####See Also#####

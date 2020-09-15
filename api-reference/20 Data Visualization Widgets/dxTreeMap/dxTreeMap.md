@@ -26,7 +26,7 @@ dataSource: [{
 }]
 
 ##### lib
-dx.viz.js, dx.viz-web.js, dx.all.js
+dx.viz.js, dx.all.js
 
 ---
 In the **TreeMap** widget, hierarchical data is represented by a set of nested rectangles whose sizes are proportional to the visualized values. **TreeMap** operates with plain and hierarchical [data sources](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#dataSource'). Also, it can visualize a hierarchy reconstructed from a flat data source.

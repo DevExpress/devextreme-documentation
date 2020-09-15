@@ -7,7 +7,7 @@ type: Object
 A custom template's markup.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 The **dxTemplate** markup component specifies a custom template for a container widget or a collection widget's items in Angular, AngularJS and Knockout apps. Place this template within the widget's element, specify the template [name](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/Configuration/#name') and assign it to the corresponding **xxxTemplate** option (for example, **itemTemplate**, **containerTemplate**). You can omit specifying the **xxxTemplate** option if you use the default template name, for instance, *item* for the **itemTemplate**, *content* for the **contentTemplate**. 

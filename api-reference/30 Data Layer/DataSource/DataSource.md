@@ -9,7 +9,7 @@ type: Object
 The **DataSource** is an object that provides an API for processing data from an underlying [store](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/').
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 ---

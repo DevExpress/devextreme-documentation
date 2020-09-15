@@ -8,7 +8,6 @@ DevExtreme provides the following files via CDN:
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.web.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz-web.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.aspnet.mvc.js"></script>
     
     <!-- Development files -->
@@ -17,9 +16,7 @@ DevExtreme provides the following files via CDN:
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.debug.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz.debug.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.web.debug.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz-web.debug.js"></script>
     
-
 ## Stylesheets
 
     <!-- Diagram and Gantt production stylesheets -->

@@ -5,54 +5,16 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether the column bands other columns or not.
+Specifies whether the column organizes other columns into bands.
 
 ---
-Unlike normal columns, band columns do not hold data. Instead, they collect two or more columns under one column header. In most cases, to set up this layout, you can declare the band column using a hierarchical structure. For example, the following code bands three columns under the *"Address"* header.
+Unlike standard columns, band columns do not contain data. Instead, a band column displays two or more columns underneath its header. To create a banded layout, do one of the following:
 
----
-##### jQuery
+* [Create nested column configurations]({basewidgetpath}/Configuration/columns/columns/).
 
-    <!--JavaScript-->$(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
-            // ...
-            columns: [{
-                caption: "Address",
-                columns: ["City", "Street", "Apartment"]
-            }, {
-                // ...
-            }]
-        });
-    });
+* Specify the **isBand** and [ownerBand]({basewidgetpath}/Configuration/columns/#ownerBand) options inside the [customizeColumns]({basewidgetpath}/Configuration/#customizeColumns) function.
 
-##### Angular
-    
-    <!--HTML-->
-    <dx-{widget-name} ... >
-        <dxi-column caption="Address">
-            <dxi-column dataField="City"></dxi-column>
-            <dxi-column dataField="Street"></dxi-column>
-            <dxi-column dataField="Apartment"></dxi-column>
-        </dxi-column>
-    </dx-{widget-name}>
-
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
-    
----
-
-If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeColumns.md '{basewidgetpath}/Configuration/#customizeColumns') option to configure columns, the hierarchical structure cannot be implemented. To band columns in this case, use the **isBand** and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '{basewidgetpath}/Configuration/columns/#ownerBand') options.
+The following code uses the **isBand** and **ownerBand** options to display the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* band:
 
 ---
 ##### jQuery

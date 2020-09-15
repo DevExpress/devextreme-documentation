@@ -12,20 +12,37 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Reference the required libraries**  
-    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. If you use Angular, import **ExcelJS** v1.7.0 and add this library to the `tsconfig.app.json` file.
+    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries
 
     ---
     ##### jQuery
+        
         <!--HTML-->
+        // Reference the libraries:
         <head>
             <!-- ... -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
             <!-- reference the DevExtreme sources here -->
         </head>
 
     ##### Angular   
+        
+        <!-- tab: Installation command -->
+        npm install --save exceljs@4.1.1 file-saver
+
+        <!-- tab: tsconfig.app.json -->
+        // add ExcelJS to the *"paths"* section:
+        "compilerOptions": {
+            // ...
+            "paths": {
+                // ...
+                "exceljs": [
+                    "node_modules/exceljs/dist/exceljs.js"
+                ]
+            }
+        }
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
@@ -60,15 +77,10 @@ The following instructions show how to enable and configure client-side export:
         })
         export class AppModule { }
 
-        <!-- tab: tsconfig.app.json -->
-        "paths": {
-            // ...
-            "exceljs": [
-                "node_modules/exceljs/dist/exceljs.js"
-            ]
-        }
-
     ##### Vue
+
+        <!-- tab: Installation command -->
+        npm install --save exceljs@4.1.1 file-saver
 
         <!-- tab: App.vue -->
         <template>
@@ -93,6 +105,9 @@ The following instructions show how to enable and configure client-side export:
 
     ##### React
 
+        <!-- tab: Installation command -->
+        npm install --save exceljs@4.1.1 file-saver
+
         <!-- tab: App.js -->
         import React from 'react';
         import 'devextreme/dist/css/dx.common.css';
@@ -109,7 +124,7 @@ The following instructions show how to enable and configure client-side export:
     ---     
 
 2. **Enable the export UI**   
-    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/#enabled') option to **true**. This option enables export for all columns. Set a column's [allowExporting](/api-reference/_hidden/dxPivotGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/columns/#allowExporting') option to **false** to prevent it from being exported:
+    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/#enabled') option to **true**:
 
     ---
 
@@ -120,12 +135,7 @@ The following instructions show how to enable and configure client-side export:
             $("#pivotGridContainer").dxPivotGrid({
                 export: {
                     enabled: true
-                },
-                columns: [{ ...
-                    allowExporting: false
-                }, 
-                    // ...
-                ]
+                }
             });
         });
 
@@ -134,9 +144,6 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: app.component.html -->
         <dx-pivot-grid ... >
             <dxo-export [enabled]="true"></dxo-export>
-            <dxi-column ...
-                [allowExporting]="false">
-            </dxi-column>
         </dx-pivot-grid>
 
         <!-- tab: app.component.ts -->
@@ -183,9 +190,6 @@ The following instructions show how to enable and configure client-side export:
                 <DxExport
                     :enabled="true"
                 />
-                <DxColumn ... 
-                    :allow-exporting="false"
-                />
             </DxPivotGrid>
         </template>
 
@@ -229,9 +233,6 @@ The following instructions show how to enable and configure client-side export:
             return (
                 <PivotGrid ... >
                     <Export enabled={true} />
-                    <Column ...
-                        allowExporting={false}
-                    />
                 </PivotGrid>
             );
         }
@@ -261,7 +262,7 @@ The following instructions show how to enable and configure client-side export:
                         excelCell.alignment = { horizontal: 'left' };
                     } 
                 }).then(function() {
-                    workbook.xlsx.writeBuffer().then(function(buffer) { 
+                    workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) { 
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx'); 
                     }); 
                 }); 
@@ -302,7 +303,7 @@ The following instructions show how to enable and configure client-side export:
                     } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer()
-                        .then(function(buffer) {
+                        .then(function(buffer: BlobPart) {
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                         });
                 });
@@ -370,7 +371,7 @@ The following instructions show how to enable and configure client-side export:
                         } 
                     }).then(function() {
                         workbook.xlsx.writeBuffer()
-                            .then(function(buffer) {
+                            .then(function(buffer: BlobPart) {
                                 saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                             });
                     });
@@ -414,7 +415,7 @@ The following instructions show how to enable and configure client-side export:
                 } 
             }).then(function() {
                 workbook.xlsx.writeBuffer()
-                    .then(function(buffer) {
+                    .then(function(buffer: BlobPart) {
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                     });
             });

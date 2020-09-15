@@ -14,20 +14,36 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Reference the required libraries**  
-    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. If you use Angular, import **ExcelJS** v1.7.0 and add this library to the `tsconfig.app.json` file.
+    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries
 
     ---
     ##### jQuery
         <!--HTML-->
+        // Reference the libraries:
         <head>
             <!-- ... -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
             <!-- reference the DevExtreme sources here -->
         </head>
 
     ##### Angular   
+
+        <!-- tab: Installation command -->
+        npm install --save exceljs@4.1.1 file-saver
+
+        <!-- tab: tsconfig.app.json -->
+        // add ExcelJS to the *"paths"* section:
+        "compilerOptions": {
+            // ...
+            "paths": {
+                // ...
+                "exceljs": [
+                    "node_modules/exceljs/dist/exceljs.js"
+                ]
+            }
+        }
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
@@ -62,15 +78,10 @@ The following instructions show how to enable and configure client-side export:
         })
         export class AppModule { }
 
-        <!-- tab: tsconfig.app.json -->
-        "paths": {
-            // ...
-            "exceljs": [
-                "node_modules/exceljs/dist/exceljs.js"
-            ]
-        }
-
     ##### Vue
+
+        <!-- tab: Installation command -->
+        npm install --save exceljs@4.1.1 file-saver
 
         <!-- tab: App.vue -->
         <template>
@@ -94,6 +105,9 @@ The following instructions show how to enable and configure client-side export:
         </script>
 
     ##### React
+
+        <!-- tab: Installation command -->
+        npm install --save exceljs@4.1.1 file-saver
 
         <!-- tab: App.js -->
         import React from 'react';
@@ -131,15 +145,6 @@ The following instructions show how to enable and configure client-side export:
                 ]
             });
         });
-
-        <!--HTML-->
-        <head>
-            <!-- ... -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
-            <!-- reference the DevExtreme sources here -->
-        </head>
 
     ##### Angular   
 

@@ -1,4 +1,4 @@
-Use the [backgroundImageUrl](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/#backgroundImageUrl '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#backgroundImageUrl') option to specify a background image for a shape.
+Use the [backgroundImageUrl](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/backgroundImageUrl.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#backgroundImageUrl') option to specify a background image for a shape.
 
 [note] Shape images should be in SVG format. 
 

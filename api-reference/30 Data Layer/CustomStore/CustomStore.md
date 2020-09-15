@@ -10,7 +10,7 @@ inherits: Store
 The **CustomStore** enables you to implement custom data access logic for consuming data from any source.
 
 ##### lib
-dx.web.js, dx.viz.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.viz.js, dx.all.js
 
 ---
 DevExtreme provides extensions for <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">ASP.NET</a> and <a href="https://github.com/DevExpress/DevExtreme-PHP-Data/blob/master/README.md" target="_blank">PHP</a> that configure the **CustomStore** and implement server-side data processing. A third-party extension is available for <a href="https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md" target="_blank">MongoDB</a>. You can also implement the **CustomStore** manually.

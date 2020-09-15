@@ -1,6 +1,5 @@
 ---
 id: dxDiagramCustomCommand
-type: Object
 ---
 ---
 ##### shortDescription

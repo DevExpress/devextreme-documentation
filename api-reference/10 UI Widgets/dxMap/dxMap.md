@@ -12,7 +12,7 @@ The **Map** is an interactive widget that displays a geographic map with markers
 provider: "bing"
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

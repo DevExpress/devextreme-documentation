@@ -9,7 +9,7 @@ inherits: dxScrollable
 The **ScrollView** is a widget that enables a user to scroll its content.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

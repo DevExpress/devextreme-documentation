@@ -11,7 +11,7 @@ The **TextBox** is a widget that enables a user to enter and edit a single line 
 ##### widgettree
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

@@ -9,7 +9,7 @@ inherits: DataExpressionMixin,dxDropDownEditor
 The **DropDownBox** widget consists of a text field, which displays the current value, and a drop-down field, which can contain any UI element.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-demobutton with {

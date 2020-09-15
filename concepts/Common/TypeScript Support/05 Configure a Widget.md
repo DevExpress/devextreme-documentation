@@ -22,7 +22,7 @@ The part that preceeds the type is its namespace. DevExtreme widgets are declare
 - `DevExpress.viz.rangeSelector` - [dxRangeSelector](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/')
 - `DevExpress.viz.sparklines` - [dxSparkline](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/') and [dxBullet](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/')
 - `DevExpress.viz.map` - [dxVectorMap](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/')
-- `DevExpress.ui` - [all other widgets](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/')
+- `DevExpress.ui` - [all other widgets](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
 
 After you have declared a configuration object, pass it to the [jQuery plugin](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component') ...
 

@@ -3,25 +3,30 @@ DevExtreme provides the following files via CDN:
 ## Scripts
 
     <!-- Production files -->
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-diagram.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-gantt.min.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.web.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz-web.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.aspnet.mvc.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-diagram.min.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-gantt.min.js"></script>
     
     <!-- Development files -->
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-diagram.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-gantt.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.debug.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz.debug.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.web.debug.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.viz-web.debug.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-diagram.js"></script>
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-gantt.js"></script>
     
-
 ## Stylesheets
 
+    <!-- Diagram and Gantt production stylesheets -->
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.min.css" rel="stylesheet">
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-gantt.min.css" rel="stylesheet">
+    <!-- Diagram and Gantt development stylesheets -->
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.css" rel="stylesheet">
+    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-gantt.css" rel="stylesheet">
+
+    <!-- Common DevExtreme stylesheets -->
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css" rel="stylesheet">
 
     <!-- Theme stylesheets -->
@@ -63,10 +68,3 @@ DevExtreme provides the following files via CDN:
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.material.teal.light.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.softblue.compact.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.softblue.css" rel="stylesheet">
-
-    <!-- Stylesheets for the Diagram and Gantt components -->
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-diagram.min.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-gantt.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx-gantt.min.css" rel="stylesheet">
-    

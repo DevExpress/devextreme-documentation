@@ -108,7 +108,7 @@ The **show()** method called without arguments shows the **Tooltip** for the [ta
 
 ---
 
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#visible') property of the **Tooltip** widget to a component property. After that, change this component property, and the **Tooltip** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#visible') property of the **Tooltip** widget to a component property. After that, change this component property, and the **Tooltip** will appear or disappear.
 
 ---
 ##### Angular

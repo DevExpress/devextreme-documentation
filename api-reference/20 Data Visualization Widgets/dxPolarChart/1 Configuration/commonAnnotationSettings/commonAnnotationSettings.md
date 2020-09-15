@@ -122,4 +122,4 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 }
 
 #####See Also#####
-- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#customizeAnnotation)
+- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#customizeAnnotation')

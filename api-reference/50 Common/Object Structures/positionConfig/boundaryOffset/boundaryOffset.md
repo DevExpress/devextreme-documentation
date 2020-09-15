@@ -4,7 +4,7 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies the offset of boundaries from the [boundary](/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary) element.
+Specifies the offset of boundaries from the [boundary](/api-reference/50%20Common/Object%20Structures/positionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary') element.
 
 ---
 The offset is specified in pixels. To set this option, use an object with the **x** and **y** fields. These fields specify  horizontal and vertical offsets, respectively. Alternatively, you can use a string value that indicates the offsets separated by a whitespace character. A positive offset narrows the boundaries; a negative offset widens the boundaries.

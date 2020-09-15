@@ -9,7 +9,7 @@ inherits: DOMComponent
 The **ValidationGroup** is a widget that allows you to validate several editors simultaneously.
 
 ##### lib
-dx.web.js, dx.viz-web.js, dx.all.js
+dx.web.js, dx.all.js
 
 ---
 #include common-readguidesbutton with {

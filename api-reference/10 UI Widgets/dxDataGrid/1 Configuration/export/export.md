@@ -13,7 +13,7 @@ A user can click the **Export** button to save an Excel file with the exported d
 
 The following instructions show how to enable and configure client-side export:
 
-1. **Reference the required libraries**  
+1. **Install or reference the required libraries**  
     Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries
 
     ---

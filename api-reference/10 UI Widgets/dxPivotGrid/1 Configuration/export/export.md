@@ -18,7 +18,6 @@ The following instructions show how to enable and configure client-side export:
     ##### jQuery
         
         <!--HTML-->
-        // Reference the libraries:
         <head>
             <!-- ... -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>

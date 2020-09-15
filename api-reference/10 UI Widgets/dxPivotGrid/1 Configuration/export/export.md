@@ -11,8 +11,8 @@ A user can click the **Export** button to save an Excel file with the exported d
 
 The following instructions show how to enable and configure client-side export:
 
-1. **Reference the required libraries**  
-    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries
+1. **Install or reference the required libraries**  
+    You need the following libraries: <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.1.1 and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2.
 
     ---
     ##### jQuery
@@ -32,7 +32,6 @@ The following instructions show how to enable and configure client-side export:
         npm install --save exceljs@4.1.1 file-saver
 
         <!-- tab: tsconfig.app.json -->
-        // add ExcelJS to the *"paths"* section:
         "compilerOptions": {
             // ...
             "paths": {
@@ -45,8 +44,7 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import { Workbook } from 'exceljs';
-        import saveAs from 'file-saver';
+
         
         @Component({
             selector: 'app-root',
@@ -90,8 +88,6 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
-        import { Workbook } from 'exceljs';
-        import saveAs from 'file-saver';
 
         export default {
             components: {
@@ -113,8 +109,6 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.light.css';
 
         import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
-        import { Workbook } from 'exceljs';
-        import saveAs from 'file-saver';
 
         export default function App() {
             // ...
@@ -147,8 +141,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import { Workbook } from 'exceljs';
-        import saveAs from 'file-saver';
         
         @Component({
             selector: 'app-root',
@@ -196,9 +188,6 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import { Workbook } from 'exceljs';
-        import saveAs from 'file-saver';
-
         import { DxPivotGrid, 
             DxExport,
             DxColumn
@@ -220,9 +209,6 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import { Workbook } from 'exceljs';
-        import saveAs from 'file-saver';
-
         import PivotGrid, {
             Export,
             Column
@@ -239,7 +225,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the PivotGrid**   
-    Implement the [onExporting](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onExporting) handler and call the [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method in it. In the code below, this method exports the **PivotGrid** as is, but you can use [ExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/#customizeCell). To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
+    Import the `ExcelJS` and `FileSaver` libraries. Then implement the [onExporting](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onExporting) handler and call the [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method in it. In the code below, this method exports the **PivotGrid** as is, but you can use [ExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/#customizeCell). To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
 
     ---
     ##### jQuery

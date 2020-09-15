@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.contextMenu
-type: dxGanttContextMenu
+id: dxFileUploader.Options.dropZone
+type: String | Element | jQuery
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -14,7 +14,7 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Install or reference the required libraries**  
-    You need the following libraries: <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.1.1 and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2.
+    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.1.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+.
 
     ---
     ##### jQuery
@@ -76,7 +76,6 @@ The following instructions show how to enable and configure client-side export:
 
     ##### Vue
 
-        <!-- tab: Installation command -->
         npm install --save exceljs@4.1.1 file-saver
 
         <!-- tab: App.vue -->
@@ -100,7 +99,6 @@ The following instructions show how to enable and configure client-side export:
 
     ##### React
 
-        <!-- tab: Installation command -->
         npm install --save exceljs@4.1.1 file-saver
 
         <!-- tab: App.js -->
@@ -265,7 +263,7 @@ The following instructions show how to enable and configure client-side export:
                         excelCell.alignment = { horizontal: 'left' };
                     } 
                 }).then(function() {
-                    workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) { 
+                    workbook.xlsx.writeBuffer().then(function(buffer) { 
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
                     }); 
                 }); 
@@ -374,7 +372,7 @@ The following instructions show how to enable and configure client-side export:
                         } 
                     }).then(function() {
                         workbook.xlsx.writeBuffer()
-                            .then(function(buffer: BlobPart) {
+                            .then(function(buffer) {
                                 saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                             });
                     });
@@ -418,7 +416,7 @@ The following instructions show how to enable and configure client-side export:
                     } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer()
-                        .then(function(buffer: BlobPart) {
+                        .then(function(buffer) {
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                         });
                 });

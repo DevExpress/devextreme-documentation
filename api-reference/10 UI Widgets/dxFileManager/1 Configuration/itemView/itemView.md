@@ -9,7 +9,7 @@ Configures the file and folder view.
 
 ---
 
-[note] Set the [itemView.mode](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/#mode') option to **details** to configure [columns](/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/details/columns/) in the widget.
+[note] Set the [itemView.mode](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/#mode') option to **details** to configure [columns](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/details/columns.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/details/columns/') in the widget.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/UICustomization/"

@@ -28,7 +28,7 @@ The widget has the rich UI that provides the following end-user capabilities:
 - [Summaries](/concepts/05%20Widgets/DataGrid/65%20Summaries '/Documentation/Guide/Widgets/DataGrid/Summaries/')
 - [Focused Row](/concepts/05%20Widgets/DataGrid/73%20Focused%20Row.md '/Documentation/Guide/Widgets/DataGrid/Focused_Row/')
 - [Master-Detail Interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/')
-- [Client-Side Export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/)
+- [Client-Side Export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/')
 
 #####See Also#####
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SimpleArray)

@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.contextMenu
-type: dxGanttContextMenu
+id: dxGanttContextMenu.enabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

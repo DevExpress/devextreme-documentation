@@ -1,6 +1,6 @@
 ---
-id: dxGantt.Options.contextMenu
-type: dxGanttContextMenu
+id: dxGantt.taskClick
+type: eventType
 ---
 ---
 ##### shortDescription

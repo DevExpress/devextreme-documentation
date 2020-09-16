@@ -29,7 +29,7 @@ The following instructions show how to enable and configure client-side export:
     ##### Angular   
         
         <!-- tab: Installation command -->
-        npm install --save exceljs@4.1.1 file-saver
+        npm install --save exceljs file-saver
 
         <!-- tab: tsconfig.app.json -->
         "compilerOptions": {
@@ -40,19 +40,6 @@ The following instructions show how to enable and configure client-side export:
                     "node_modules/exceljs/dist/exceljs.js"
                 ]
             }
-        }
-
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';
-
-        
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
-        export class AppComponent {
-            // ...
         }
 
         <!-- tab: app.module.ts -->
@@ -77,42 +64,12 @@ The following instructions show how to enable and configure client-side export:
     ##### Vue
 
         <!-- tab: Installation command -->
-        npm install --save exceljs@4.1.1 file-saver
-
-        <!-- tab: App.vue -->
-        <template>
-            <!-- ... -->
-        </template>
-        <script>
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
-
-        export default {
-            components: {
-                DxPivotGrid,
-                DxExport
-            },
-            // ...
-        }
-        </script>
+        npm install --save exceljs file-saver
 
     ##### React
 
         <!-- tab: Installation command -->
-        npm install --save exceljs@4.1.1 file-saver
-
-        <!-- tab: App.js -->
-        import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
-
-        export default function App() {
-            // ...
-        }
+        npm install --save exceljs file-saver
 
     ---     
 

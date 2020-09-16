@@ -30,7 +30,7 @@ The following instructions show how to enable and configure client-side export:
     ##### Angular   
 
         <!-- tab: Installation command -->
-        npm install --save exceljs@4.1.1 file-saver
+        npm install --save exceljs file-saver
 
         <!-- tab: tsconfig.app.json -->
         "compilerOptions": {
@@ -41,18 +41,6 @@ The following instructions show how to enable and configure client-side export:
                     "node_modules/exceljs/dist/exceljs.js"
                 ]
             }
-        }
-
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';
-        
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
-        export class AppComponent {
-            // ...
         }
 
         <!-- tab: app.module.ts -->
@@ -76,43 +64,13 @@ The following instructions show how to enable and configure client-side export:
 
     ##### Vue
 
-        npm install --save exceljs@4.1.1 file-saver
+        npm install --save exceljs file-saver
 
-        <!-- tab: App.vue -->
-        <template>
-            <!-- ... -->
-        </template>
-        <script>
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
-
-        export default {
-            components: {
-                DxDataGrid,
-                DxExport
-            },
-            // ...
-        }
-        </script>
-
+        
     ##### React
 
-        npm install --save exceljs@4.1.1 file-saver
-
-        <!-- tab: App.js -->
-        import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import DataGrid, { Export } from 'devextreme-react/data-grid';
-
-        class App extends React.Component {
-            // ...
-        }
-        export default App;
-
+        npm install --save exceljs file-saver
+        
     ---     
 
 2. **Enable the export UI**   

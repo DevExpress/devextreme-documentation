@@ -5,7 +5,38 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the HTML element where users can drag and drop files for uploading. 
 
 ---
-<!-- Description goes here -->
+
+You can use a selector string, jQuery object or DOM element to specify the **dropZone** option:
+
+- String
+
+    ---
+    ##### jQuery
+
+        <!-- tab: JavaScript -->
+        dropZone: '.test-div'
+
+    ---
+
+- jQuery object
+	 
+    ---
+    ##### jQuery
+
+        <!-- tab: JavaScript -->
+        dropZone: $('.test-div')
+
+    ---
+
+- DOM element
+
+    ---
+    ##### jQuery
+
+        <!-- tab: JavaScript -->
+        dropZone: $('.test-div')[0]
+
+    ---

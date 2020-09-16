@@ -1,0 +1,11 @@
+---
+id: dxDiagram.Options.editing.allowDeleteConnector
+type: Boolean
+default: true
+---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
+<!-- Description goes here -->

@@ -12,7 +12,7 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Install or reference the required libraries**  
-    You need the following libraries: <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.1.1 and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2.
+    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.1.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+.
 
     ---
     ##### jQuery
@@ -28,7 +28,7 @@ The following instructions show how to enable and configure client-side export:
 
     ##### Angular   
         
-        <!-- tab: Installation command -->
+        !-- tab: Installation command -->
         npm install --save exceljs file-saver
 
         <!-- tab: tsconfig.app.json -->
@@ -42,33 +42,12 @@ The following instructions show how to enable and configure client-side export:
             }
         }
 
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-        import { DxPivotGridModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxPivotGridModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
-
     ##### Vue
 
-        <!-- tab: Installation command -->
         npm install --save exceljs file-saver
 
     ##### React
 
-        <!-- tab: Installation command -->
         npm install --save exceljs file-saver
 
     ---     

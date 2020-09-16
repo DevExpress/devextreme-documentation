@@ -5,7 +5,7 @@ default: 'Upload cancelled'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The message displayed by the widget when the file upload is cancelled. 
 
 ---
-<!-- Description goes here -->
+This option makes sense only if the [uploadMode](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode) option is not set to "useButtons".

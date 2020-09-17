@@ -217,6 +217,8 @@ A summary value calculation is conducted in three stages: *start*, in which the 
 
 ---
 
+[note]If you need to access all properties of each cell value, do not specify the [dataField](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#dataField) option for the field that contains this function.
+
 #include uiwidgets-ref-functioncontext with { 
     value: "field's configuration"
 }

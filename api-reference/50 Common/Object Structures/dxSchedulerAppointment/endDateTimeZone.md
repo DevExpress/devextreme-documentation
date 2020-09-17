@@ -4,10 +4,11 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the time zone for an appointment's [endDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate'). Applies only if the [timeZone](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/timeZone.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone') option is unspecified.
+Specifies the time zone for an appointment's [endDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate'). Accepts values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA time zone database</a>.
 
 ---
-This option accepts values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA time zone database</a>.
+
+Users can edit the specified time zone in the appointment details form if you enable the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/).[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) option.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"

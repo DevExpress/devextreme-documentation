@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.contextMenu
-type: Object
+type: dxGanttContextMenu
 ---
 ---
 ##### shortDescription

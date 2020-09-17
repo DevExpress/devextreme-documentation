@@ -17,7 +17,7 @@ You can use a selector string, jQuery object or DOM element to specify the **dia
     ##### jQuery
 
         <!-- tab: JavaScript -->
-        dialogTrigger: '.catPicture'
+        dialogTrigger: '.open-button'
 
     ---
 
@@ -27,7 +27,7 @@ You can use a selector string, jQuery object or DOM element to specify the **dia
     ##### jQuery
 
         <!-- tab: JavaScript -->
-        dialogTrigger: $('.catPicture')
+        dialogTrigger: $('.open-button')
 
     ---
 
@@ -37,6 +37,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dia
     ##### jQuery
 
         <!-- tab: JavaScript -->
-        dialogTrigger: $('.catPicture')[0]
+        dialogTrigger: $('.open-button')[0]
 
     ---

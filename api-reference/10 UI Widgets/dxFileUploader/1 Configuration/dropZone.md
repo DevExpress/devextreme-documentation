@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the HTML element where users can drag and drop files for uploading. 
+Specifies the HTML element in which users can drag and drop files for upload. 
 
 ---
 

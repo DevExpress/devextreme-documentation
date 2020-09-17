@@ -5,7 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the processed shape.
 
 ---
-<!-- Description goes here -->

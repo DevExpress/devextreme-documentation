@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The index of the processed point in the shape's connection point collection.
 
 ---
-<!-- Description goes here -->

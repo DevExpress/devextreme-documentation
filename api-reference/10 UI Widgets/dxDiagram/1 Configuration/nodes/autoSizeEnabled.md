@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not a shape size is automatically changed to fit the text when the widget is bound to a data source.
 
 ---
-<!-- Description goes here -->

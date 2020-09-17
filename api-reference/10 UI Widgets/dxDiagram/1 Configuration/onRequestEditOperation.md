@@ -6,31 +6,30 @@ EventForAction: dxDiagram.requestEditOperation
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed in two cases: before a user edits a diagram and before the UI related to an edit operation is updated. Use this function to specify whether the operation is allowed.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.allowed): Boolean
-<!-- Description goes here -->
+Specifies whether the edit operation is allowed.
 
 ##### field(e.args): dxDiagramAddShapeArgs | dxDiagramAddShapeFromToolboxArgs | dxDiagramDeleteShapeArgs | dxDiagramDeleteConnectorArgs | dxDiagramChangeConnectionArgs | dxDiagramChangeConnectorPointsArgs | dxDiagramBeforeChangeShapeTextArgs | dxDiagramChangeShapeTextArgs | dxDiagramBeforeChangeConnectorTextArgs | dxDiagramChangeConnectorTextArgs | dxDiagramResizeShapeArgs
-<!-- Description goes here -->
+An object that contains information about the processed edit operation.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget instance's name.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.operation): 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints' | 'beforeChangeShapeText' | 'changeShapeText' | 'beforeChangeConnectorText' | 'changeConnectorText' | 'resizeShape'
-<!-- Description goes here -->
+The processed operation.
 
 ##### field(e.updateUI): Boolean
-<!-- Description goes here -->
+Returns **true** if the event is raised by UI update; returns **false** if the event is raised by a user action.
 
 ---
-<!-- Description goes here -->

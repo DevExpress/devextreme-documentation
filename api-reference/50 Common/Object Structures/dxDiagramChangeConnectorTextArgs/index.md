@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The index of the processed text in the connector's [texts](/Documentation/ApiReference/Common/Object_Structures/dxDiagramConnector/#texts) collection.
 
 ---
-<!-- Description goes here -->

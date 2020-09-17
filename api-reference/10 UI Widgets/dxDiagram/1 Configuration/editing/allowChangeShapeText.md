@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can change a shape's text.
 
 ---
-<!-- Description goes here -->

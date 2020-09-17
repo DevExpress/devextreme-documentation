@@ -6,7 +6,7 @@ id: dxFileUploader.abortUpload(fileIndex)
 Cancels the file upload.
 
 ##### param(fileIndex): Number
-The index of a file whose upload is being cancelled. 
+The index of the file for which the upload is cancelled.
 
 ---
 
@@ -22,7 +22,7 @@ The index of a file whose upload is being cancelled.
 ---
 
 [note]
-The **abortUpload** method works differently in **useForms**, **useButtons** and **instantly** [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode):
+The **abortUpload** method works differently in the following [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode):
 
 - **useForms**: The method is not supported in this mode.
 

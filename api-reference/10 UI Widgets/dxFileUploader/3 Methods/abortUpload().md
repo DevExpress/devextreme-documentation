@@ -19,7 +19,7 @@ Cancels the file upload.
 ---
 
 [note]
-The **abortUpload** method works differently in **useForms**, **useButtons** and **instantly** [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode):
+The **abortUpload** method works differently in the following [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode):
 
 - **useForms**: The method is not supported in this mode.
 

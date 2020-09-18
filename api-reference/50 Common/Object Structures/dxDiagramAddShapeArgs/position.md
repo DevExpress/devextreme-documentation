@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A position where the shape is being added.
 
 ---
-<!-- Description goes here -->

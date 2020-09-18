@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can delete a connector.
 
 ---
-<!-- Description goes here -->

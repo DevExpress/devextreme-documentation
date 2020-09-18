@@ -4,7 +4,6 @@ type: dxDiagramShape
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The processed shape.
 
 ---
-<!-- Description goes here -->

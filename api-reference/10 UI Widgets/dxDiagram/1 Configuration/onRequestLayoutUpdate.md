@@ -6,25 +6,24 @@ EventForAction: dxDiagram.requestLayoutUpdate
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after diagram data has been changed and the widget rebuilds the diagram. Use this function to specify whether or not the widget should update the diagram layout. 
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.allowed): Boolean
-<!-- Description goes here -->
+Specifies whether or not the diagram layout should be updated.
 
 ##### field(e.changes): Array<any>
-<!-- Description goes here -->
+The received changes.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget instance's name.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->

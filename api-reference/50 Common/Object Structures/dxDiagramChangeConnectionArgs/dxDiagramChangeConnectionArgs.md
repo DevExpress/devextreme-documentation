@@ -3,7 +3,6 @@ id: dxDiagramChangeConnectionArgs
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains information about the processed connection.
 
 ---
-<!-- Description goes here -->

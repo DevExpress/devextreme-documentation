@@ -5,7 +5,6 @@ default: {}
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies which editing operations a user can perform.
 
 ---
-<!-- Description goes here -->

@@ -3,7 +3,6 @@ id: dxDiagramDeleteConnectorArgs
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains information about the processed connector.
 
 ---
-<!-- Description goes here -->

@@ -3,7 +3,6 @@ id: dxDiagramAddShapeArgs
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains information about the processed shape.
 
 ---
-<!-- Description goes here -->

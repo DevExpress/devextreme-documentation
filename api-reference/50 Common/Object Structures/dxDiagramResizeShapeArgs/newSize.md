@@ -4,7 +4,6 @@ type: Array<Object>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The new shape size.
 
 ---
-<!-- Description goes here -->

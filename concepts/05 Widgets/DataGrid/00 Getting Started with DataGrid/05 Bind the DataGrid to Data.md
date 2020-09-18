@@ -3,7 +3,6 @@ The **DataGrid** component can work with different data source types. To use a l
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 - [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
 - [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
-- [OLAP Cube](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OLAP_Cube/)
 - [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
 
 ---

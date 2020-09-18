@@ -8,7 +8,7 @@ Calculated by values from each group; configured in the [groupItems](/Documentat
 
 Each summary item displays a value that is a product of applying an aggregate function to data. The **DataGrid** supports [predefined aggregate functions](/Documentation/Guide/Widgets/DataGrid/Summaries/Predefined_Aggregate_Functions/), such as *"sum"*, *"avg"*, and *"count"*, and allows you to implement a [custom aggregate function](/Documentation/Guide/Widgets/DataGrid/Summaries/Custom_Aggregate_Function/). To specify the applied aggregate function, set the [summaryType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#summaryType) option.
 
-The code below configures a total summary that counts all grid records. The [showInColumn](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#showInColumn) option specifies the column in which this summary is displayed.
+The code below configures a group summary that counts grid records in each group:
 
 ---
 ##### jQuery
@@ -17,15 +17,9 @@ The code below configures a total summary that counts all grid records. The [sho
     $(function() {
         $("#dataGrid").dxDataGrid({
             // ...
-            columns: [{
-                // ...
-                "HomePhone",
-                // ...
-            ],
             summary: {
-                totalItems: [{
-                    summaryType: "count",
-                    showInColumn: "HomePhone"
+                groupItems: [{
+                    summaryType: "count"
                 }]
             },
         });
@@ -36,13 +30,10 @@ The code below configures a total summary that counts all grid records. The [sho
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxi-column dataField="HomePhone"></dxi-column>
-        <!-- ... -->
         <dxo-summary>
-            <dxi-total-item
-                summaryType="count"
-                showInColumn="HomePhone">
-            </dxi-total-item>
+            <dxi-group-item
+                summaryType="count">
+            </dxi-group-item>
         </dxo-summary>
     </dx-data-grid>
 
@@ -53,12 +44,9 @@ The code below configures a total summary that counts all grid records. The [sho
         <div id="app">
             <DxDataGrid ... >
                 <!-- ... -->
-                <DxColumn data-field="HomePhone" />
-                <!-- ... -->
                 <DxSummary>
-                    <DxTotalItem
+                    <DxGroupItem
                         summary-type="count"
-                        show-in-column="HomePhone"
                     />
                 </DxSummary>
             </DxDataGrid>
@@ -68,19 +56,17 @@ The code below configures a total summary that counts all grid records. The [sho
     <script>
     import {
         DxDataGrid,
-        DxColumn,
         // ...
         DxSummary,
-        DxTotalItem
+        DxGroupItem
     } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
             DxDataGrid,
-            DxColumn,
             // ...
             DxSummary,
-            DxTotalItem
+            DxGroupItem
         },
         // ...
     }
@@ -99,7 +85,7 @@ The code below configures a total summary that counts all grid records. The [sho
         Column,
         // ...
         Summary,
-        TotalItem
+        GroupItem
     } from 'devextreme-react/data-grid';
 
     // ...
@@ -109,16 +95,12 @@ The code below configures a total summary that counts all grid records. The [sho
             <div className="App">
                 <DataGrid ... >
                     {/* ... */}
-                    <Column dataField="HomePhone" />
-                    {/* ... */}
                     <Summary>
-                        <TotalItem
+                        <GroupItem
                             summaryType="count"
-                            showInColumn="HomePhone"
                         />
                     </Summary>
                 </DataGrid>
-                <SelectedEmployee employee={selectedEmployee} />
             </div>
         );
     }

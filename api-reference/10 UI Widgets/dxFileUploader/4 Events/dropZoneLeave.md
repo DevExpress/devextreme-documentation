@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when the mouse leaves a drop zone as it drags a file.
 
 ---
-<!-- Description goes here -->
+Main article: [onDropZoneLeave](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#onDropZoneLeave)
+
+#####See Also#####
+#include common-link-handleevents

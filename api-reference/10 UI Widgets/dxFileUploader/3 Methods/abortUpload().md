@@ -23,6 +23,6 @@ The **abortUpload** method works differently in the following [upload modes](/Do
 
 - **useForms**: The method is not supported in this mode.
 
-- **useButtons**: Cancels the file upload and makes the file ready for uploading.  
+- **useButtons**: Cancels the file upload and makes the file available for upload.  
 
 - **instantly**: Cancels the file upload.

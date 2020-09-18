@@ -1,5 +1,3 @@
-#include tutorials-intro-installationnote
-
 **DataGrid** is a widget that represents data from a local or remote source in the form of a grid.
 
 This tutorial shows how to create the **DataGrid** on a page, bind it to data, and configure its core features. As a result, you will get a widget that looks as follows:

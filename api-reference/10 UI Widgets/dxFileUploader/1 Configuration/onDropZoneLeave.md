@@ -6,7 +6,7 @@ EventForAction: dxFileUploader.dropZoneLeave
 ---
 ---
 ##### shortDescription
-A function that is executed when the mouse leaves a drop zone while dragging a file.
+A function that is executed when the mouse leaves a drop zone as it drags a file.
 
 ##### param(e): Object
 Information about the event.

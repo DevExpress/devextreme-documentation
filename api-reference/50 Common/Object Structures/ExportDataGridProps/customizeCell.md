@@ -110,7 +110,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
                     }
                 }
             }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) {
+                workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) {
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });

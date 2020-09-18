@@ -78,7 +78,7 @@ You can call this method at any point in your application. In the example below,
                 worksheet: worksheet
             }).then(function() {
                 workbook.xlsx.writeBuffer()
-                    .then(function(buffer) {
+                    .then(function(buffer: BlobPart) {
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                     });
             });

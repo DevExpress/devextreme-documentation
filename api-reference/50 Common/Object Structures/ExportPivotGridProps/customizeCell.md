@@ -101,7 +101,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
                     }
                 }
             }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) {
+                workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) {
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });

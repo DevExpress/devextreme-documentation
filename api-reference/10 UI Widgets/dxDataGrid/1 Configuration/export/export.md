@@ -14,7 +14,7 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Install or reference the required libraries**  
-    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.1.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+.
+    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ for all frameworks except Angular. The latter requires `ExcelJS` v1.7.0.
 
     ---
     ##### jQuery
@@ -22,7 +22,7 @@ The following instructions show how to enable and configure client-side export:
         <head>
             <!-- ... -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
             <!-- reference the DevExtreme sources here -->
         </head>
@@ -30,7 +30,7 @@ The following instructions show how to enable and configure client-side export:
     ##### Angular   
 
         <!-- tab: Installation command -->
-        npm install --save exceljs file-saver
+        npm install --save exceljs@1.7.0 file-saver
 
         <!-- tab: tsconfig.app.json -->
         "compilerOptions": {
@@ -45,12 +45,12 @@ The following instructions show how to enable and configure client-side export:
 
     ##### Vue
 
-        npm install --save exceljs file-saver
+        npm install --save exceljs@3.3.1 file-saver
 
         
     ##### React
 
-        npm install --save exceljs file-saver
+        npm install --save exceljs@3.3.1 file-saver
         
     ---     
 

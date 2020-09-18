@@ -100,7 +100,7 @@ You can use this function to adjust column options before export. In the followi
                 component: e.component,
                 worksheet: worksheet
             }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) {
+                workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) {
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                 });
             }).then(function() {

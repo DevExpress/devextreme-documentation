@@ -4,7 +4,6 @@ type: Array<Object>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The previous shape size.
 
 ---
-<!-- Description goes here -->

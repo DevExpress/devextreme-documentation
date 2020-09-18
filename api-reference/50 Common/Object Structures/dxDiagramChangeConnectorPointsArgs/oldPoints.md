@@ -4,7 +4,6 @@ type: Array<Object>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The array of previous connection points.
 
 ---
-<!-- Description goes here -->

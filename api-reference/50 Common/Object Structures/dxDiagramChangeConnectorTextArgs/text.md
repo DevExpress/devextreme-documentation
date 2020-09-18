@@ -4,7 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The new connector text.
 
 ---
-<!-- Description goes here -->

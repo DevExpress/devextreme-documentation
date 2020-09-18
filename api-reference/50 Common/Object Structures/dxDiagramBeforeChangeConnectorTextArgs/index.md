@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The processed connector.
 
 ---
-<!-- Description goes here -->

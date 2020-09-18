@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when the mouse enters a drop zone while dragging a file.
 
 ---
-<!-- Description goes here -->
+Main article: [onDropZoneEnter](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#onDropZoneEnter)
+
+#####See Also#####
+#include common-link-handleevents

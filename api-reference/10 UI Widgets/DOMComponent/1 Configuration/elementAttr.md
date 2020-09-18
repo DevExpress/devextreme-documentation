@@ -92,35 +92,5 @@ Specifies the <a href="http://www.w3schools.com/tags/ref_attributes.asp" target=
     }
     export default App;
 
-##### ASP.NET MVC Controls
-
-    <!--Razor C#-->@(Html.DevExtreme().{WidgetName}()
-        .ElementAttr("class", "class-name")
-        // ===== or =====
-        .ElementAttr(new {
-            @id = "elementId",
-            @class = "class-name"
-        })
-        // ===== or =====
-        .ElementAttr(new Dictionary<string, object>() {
-            { "id", "elementId" },
-            { "class", "class-name" }
-        })
-        
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().{WidgetName}() _
-        .ElementAttr("class", "class-name")
-        ' ===== or =====
-        .ElementAttr(New With {
-            .id = "elementId",
-            .class = "class-name"
-        })
-        ' ===== or =====
-        .ElementAttr(New Dictionary(Of String, Object) From {
-            { "id", "elementId" },
-            { "class", "class-name" }
-        })
-    )
 
 ---

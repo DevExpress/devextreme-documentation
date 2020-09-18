@@ -12,7 +12,12 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Install or reference the required libraries**  
-    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ for all frameworks except Angular. The latter requires `ExcelJS` v1.7.0.
+    To create and manage worksheets and save Excel files, this feature requires the following third-party libraries:
+
+    - <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a>
+        - v1.7.0 with Angular (due to the following issue: <a href="https://github.com/exceljs/exceljs/issues/984" target="_blank">exceljs 3.0.1 and Angular 8 installation issue</a>)
+        - v3.3.1+ with other frameworks
+    - <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a>
 
     ---
     ##### jQuery

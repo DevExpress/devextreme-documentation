@@ -161,7 +161,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the PivotGrid**   
-    Шmplement the [onExporting](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onExporting) handler and call the [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method in it. In the code below, this method exports the **PivotGrid** as is, but you can use [ExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/#customizeCell). To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
+    Implement the [onExporting](/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onExporting) handler and call the [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method in it. In the code below, this method exports the **PivotGrid** as is, but you can use [ExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExportPivotGridProps/#customizeCell). The **PivotGrid** is exported to an Excel worksheet that is created using the ExcelJS API. To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
 
     ---
     ##### jQuery
@@ -183,7 +183,7 @@ The following instructions show how to enable and configure client-side export:
                         excelCell.alignment = { horizontal: 'left' };
                     } 
                 }).then(function() {
-                    workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) { 
+                    workbook.xlsx.writeBuffer().then(function(buffer) { 
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx'); 
                     }); 
                 }); 
@@ -292,7 +292,7 @@ The following instructions show how to enable and configure client-side export:
                         } 
                     }).then(function() {
                         workbook.xlsx.writeBuffer()
-                            .then(function(buffer: BlobPart) {
+                            .then(function(buffer) {
                                 saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                             });
                     });
@@ -336,7 +336,7 @@ The following instructions show how to enable and configure client-side export:
                 } 
             }).then(function() {
                 workbook.xlsx.writeBuffer()
-                    .then(function(buffer: BlobPart) {
+                    .then(function(buffer) {
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                     });
             });

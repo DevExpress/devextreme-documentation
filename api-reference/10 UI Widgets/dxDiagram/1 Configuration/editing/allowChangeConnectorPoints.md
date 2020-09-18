@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can change a connector's points.
+Specifies whether a user can change connector points.
 
 ---

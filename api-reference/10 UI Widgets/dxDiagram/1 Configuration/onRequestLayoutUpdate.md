@@ -6,13 +6,13 @@ EventForAction: dxDiagram.requestLayoutUpdate
 ---
 ---
 ##### shortDescription
-A function that is executed after diagram data has been changed and the widget rebuilds the diagram. Use the function to specify whether the widget should update the diagram layout. 
+A function that is executed after diagram data has been changed and the widget rebuilds the diagram. Use this function to specify whether or not the widget should update the diagram layout. 
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.allowed): Boolean
-Specifies whether the diagram layout should be updated.
+Specifies whether or not the diagram layout should be updated.
 
 ##### field(e.changes): Array<any>
 The received changes.

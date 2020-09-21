@@ -8,4 +8,4 @@ default: 'Upload cancelled'
 The message displayed by the widget when the file upload is cancelled. 
 
 ---
-This option is only available only if the [uploadMode](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode) option is set to "instantly".
+This option is only available if the [uploadMode](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode) option is set to "instantly".

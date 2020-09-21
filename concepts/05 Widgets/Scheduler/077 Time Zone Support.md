@@ -1,20 +1,10 @@
-Appointments are displayed in the client time zone. The time-zone offset specified in the [startDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/startDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate') or [endDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate') is also taken into account (if there is any). You can force a time zone for an individual appointment via its [startDateTimeZone](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/startDateTimeZone.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDateTimeZone') and [endDateTimeZone](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDateTimeZone.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDateTimeZone') fields or for all appointments in the widget via its [timeZone](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/timeZone.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone') option. **timeZone** takes precedence over **start**/**endDateTimeZone**.
+The **Scheduler** displays appointments according to the client machine's time zone. If you want to override client settings, use the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) option.
 
-You can use the following formula to calculate an appointment's resulting time-zone offset:
+You can specify an appointment's start/end time in time zones that differ from the **Scheduler**'s time zone. To do this, use the [startDateTimeZone](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDateTimeZone) and [endDateTimeZone](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDateTimeZone) options in the appointment's data object. These time zones are converted to the **Scheduler**'s time zone for display. Users can view and edit them in the appointment details form if you enable the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/).[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) option.
 
-    `resultingOffset` = `timeZoneOffset` - `clientOffset` (or `embeddedOffset` if there is any)
+The **timeZone**, **startDateTimeZone**, and **endDateTimeZone** options accept values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA time zone database</a>. <a href="https://en.wikipedia.org/wiki/Daylight_saving_time" target="_blank">Daylight saving time</a> is taken into account.
 
-where
-
-- `timeZoneOffset` is the offset of the **timeZone** or **start**/**endDateTimeZone**.
-- `clientOffset` is the offset of the client side.
-- `embeddedOffset` is the offset specified in the **start**/**endDate**.
-
-The calculated offset is then added to the date-time value.
-
-For example, if the **timeZone** is *"Europe/Berlin"* (UTC offset +1), and the client is in Tokyo (UTC offset +9), the calculated offset is 1 - 9 = -8. The time of all appointments is shifted back 8 hours: the appointment that started at `2019-01-01T12:00:00` starts at `2019-01-01T04:00:00`. The same applies when the time-zone offset is specified in the date-time value (`2019-01-01T12:00:00+09:00`), except that this offset is used instead of the client offset.
-
-To allow users to change appointment time zones, enable the **editing**.[allowTimeZoneEditing](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowTimeZoneEditing.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing') option.
+[important] When setting an appointment's date and time, we recommend that you use ISO 8601 strings instead of JS Date objects. Date objects set time in the client machine's time zone. ISO 8601 strings are independent of time zones because they represent the date and time in Coordinated Universal Time (UTC).
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport"

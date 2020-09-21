@@ -1,7 +1,7 @@
 ---
 id: dxDiagram.Options.nodes.autoSizeEnabled
 type: Boolean
-default: false
+default: true
 ---
 ---
 ##### shortDescription

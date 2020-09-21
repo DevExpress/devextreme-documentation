@@ -32,7 +32,7 @@ In this tutorial, we display the **filterRow** and **searchPanel**:
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ... >
                 <!-- ... -->
                 <DxFilterRow :visible="true" />

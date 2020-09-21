@@ -11,14 +11,18 @@ $(function() {
         dataSource: employees,
         keyExpr: "EmployeeID",
         allowColumnResizing: true,
-      //  columnAutoWidth: true,
+        columnAutoWidth: true,
+        columnFixing: {
+            enabled: true
+        },
         allowColumnReordering: true,
         columnChooser: { enabled: true },
         columns: [{
             dataField: "FullName",
             validationRules: [{
                 type: "required"
-            }]
+            }],
+            fixed: true
         }, {
             dataField: "Position",
             validationRules: [{
@@ -63,9 +67,8 @@ $(function() {
             });
         },
         summary: {
-            totalItems: [{
-                summaryType: "count",
-                showInColumn: "HomePhone"
+            groupItems: [{
+                summaryType: "count"
             }]
         },
         editing: {

@@ -13,11 +13,11 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
             {
                 dataField: "BirthDate", 
                 dataType: "date",
-                width: 150,
+                width: 100,
             }, {
                 dataField: "HireDate", 
                 dataType: "date",
-                width: 150,
+                width: 100,
             },
             // ...
             ],
@@ -36,12 +36,12 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
         <dxi-column
             dataField="BirthDate"
             dataType="date"
-            [width]="150">
+            [width]="100">
         </dxi-column>
         <dxi-column
             dataField="HireDate"
             dataType="date"
-            [width]="150">
+            [width]="100">
         </dxi-column>
         <!-- ... -->
     </dx-data-grid>
@@ -50,7 +50,7 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ...
                 :allow-column-reordering="true"
                 :column-auto-width="true">
@@ -58,12 +58,12 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
                 <DxColumn
                     data-field="BirthDate"
                     data-type="date"
-                    :width="150">
+                    :width="100">
                 </DxColumn>
                 <DxColumn
                     data-field="HireDate"
                     data-type="date"
-                    :width="150">
+                    :width="100">
                 </DxColumn>
                 <!-- ... -->
             </DxDataGrid>
@@ -107,12 +107,12 @@ Grid columns have equal widths by default. You can set a [width](/Documentation/
                     <Column
                         dataField="BirthDate"
                         dataType="date"
-                        width={150}>
+                        width={100}>
                     </Column>
                     <Column
                         dataField="HireDate"
                         dataType="date"
-                        width={150}>
+                        width={100}>
                     </Column>
                     {/* ... */}
                 </DataGrid>

@@ -38,7 +38,7 @@ You can also group records programmatically. Specify the [groupIndex](/Documenta
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ... >
                 <!-- ... -->
                 <DxColumn

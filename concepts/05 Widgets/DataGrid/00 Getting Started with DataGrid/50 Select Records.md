@@ -24,27 +24,39 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
     <html>
         <!-- ... -->
         <body class="dx-viewport">
-            <div id="dataGrid"></div>
-            <p id="selected-employee"></p>
+            <div id="app-container">
+                <div id="dataGrid"></div>
+                <p id="selected-employee"></p>
+            </div>
         </body>
     </html>
 
     <!-- tab: index.css -->
+    /* ... */
+    #app-container {
+        width: 900px;
+        position: relative;
+    }
+
     #selected-employee {
-        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ...
-        (onSelectionChanged)="selectEmployee($event)">
-        <!-- ... -->
-        <dxo-selection mode="multiple"></dxo-selection>
-    </dx-data-grid>
-    <p id="selected-employee" *ngIf="selectedEmployee">
-        Selected employee: {{ selectedEmployee.FullName }}
-    </p>
+    <div id="app-container">
+        <dx-data-grid ...
+            (onSelectionChanged)="selectEmployee($event)">
+            <!-- ... -->
+            <dxo-selection mode="single"></dxo-selection>
+        </dx-data-grid>
+        <p id="selected-employee" *ngIf="selectedEmployee">
+            Selected employee: {{ selectedEmployee.FullName }}
+        </p>
+    </div>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -74,19 +86,27 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
     }
 
     <!-- tab: app.component.css -->
+    /* ... */
+    #app-container {
+        width: 900px;
+        position: relative;
+    }
+
     #selected-employee {
-        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ...
                 @selection-changed="selectEmployee">
                 <!-- ... -->
-                <DxSelection mode="multiple" />
+                <DxSelection mode="single" />
             </DxDataGrid>
             <p id="selected-employee" v-if="selectedEmployee">
                 Selected employee: {{ selectedEmployee.FullName }}
@@ -126,8 +146,16 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
     </script>
 
     <style>
+    /* ... */
+    #app-container {
+        width: 900px;
+        position: relative;
+    }
+
     #selected-employee {
-        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     </style>
 
@@ -180,8 +208,16 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
     export default App;
 
     <!-- tab: App.css -->
+    /* ... */
+    .App {
+        width: 900px;
+        position: relative;
+    }
+
     #selected-employee {
-        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
 ---

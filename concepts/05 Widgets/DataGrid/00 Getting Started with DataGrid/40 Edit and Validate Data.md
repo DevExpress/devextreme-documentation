@@ -75,7 +75,7 @@ DevExtreme includes a validation engine that validates edited values before they
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ... >
                 <!-- ... -->
                 <DxColumn data-field="FullName">

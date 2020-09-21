@@ -55,7 +55,7 @@ To reorder grid columns, change their order in the **columns** array. Users also
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ...
                 :allow-column-reordering="true">
                 <DxColumn data-field="FullName"></DxColumn>

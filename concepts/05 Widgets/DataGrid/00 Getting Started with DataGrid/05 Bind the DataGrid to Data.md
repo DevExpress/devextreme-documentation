@@ -387,7 +387,7 @@ The **DataGrid** component can work with different data source types. To use a l
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid
                 :data-source="employees"
                 key-expr="EmployeeID">

@@ -35,7 +35,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Widgets/d
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ... >
                 <!-- ... -->
                 <DxColumn

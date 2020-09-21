@@ -30,7 +30,7 @@ The **DataGrid** displays all columns from the **columns** array. To hide a colu
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ... >
                 <!-- ... -->
                 <DxColumn data-field="PostalCode" :visible="false" />

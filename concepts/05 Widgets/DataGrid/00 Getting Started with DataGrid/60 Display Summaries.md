@@ -41,7 +41,7 @@ The code below configures a group summary that counts grid records in each group
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ... >
                 <!-- ... -->
                 <DxSummary>

@@ -1,9 +1,10 @@
-#container {
-  height: 580px;  
+#app-container {
+  height: 550px;
+  position: relative;
 }
 
 #dataGrid {
-  height: 550px;
+  height: 500px;
 }
 
 .employee-photo {
@@ -18,6 +19,7 @@
 }
 
 #selected-employee {
-  text-align: center;
-  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }

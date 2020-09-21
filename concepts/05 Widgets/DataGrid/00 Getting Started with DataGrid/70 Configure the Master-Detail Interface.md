@@ -25,6 +25,28 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
         });
     });
 
+    <!-- tab: data.js -->
+    const employees = [{
+        "EmployeeID": 1,
+        "FullName": "Nancy Davolio",
+        "Position": "Sales Representative",
+        "TitleOfCourtesy": "Ms.",
+        "BirthDate": "1968-12-08T00:00:00.000Z",
+        "HireDate": "2011-05-01T00:00:00.000Z",
+        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
+        "City": "Seattle",
+        "Region": "WA",
+        "PostalCode": "98122",
+        "Country": "USA",
+        "HomePhone": "(206) 555-9857",
+        "Extension": "5467",
+        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
+        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
+        "ReportsTo": 2
+    },
+    // ...
+    ];
+
     <!-- tab: index.css -->
     .employee-photo {
         height: 140px;
@@ -54,6 +76,30 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
         </div>
     </dx-data-grid>
 
+    <!-- tab: employees.service.ts -->
+    // ...
+    const employees: Employee[] = [{
+        "EmployeeID": 1,
+        "FullName": "Nancy Davolio",
+        "Position": "Sales Representative",
+        "TitleOfCourtesy": "Ms.",
+        "BirthDate": "1968-12-08T00:00:00.000Z",
+        "HireDate": "2011-05-01T00:00:00.000Z",
+        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
+        "City": "Seattle",
+        "Region": "WA",
+        "PostalCode": "98122",
+        "Country": "USA",
+        "HomePhone": "(206) 555-9857",
+        "Extension": "5467",
+        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
+        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
+        "ReportsTo": 2
+    },
+    // ...
+    ];
+    // ...
+
     <!-- tab: app.component.css -->
     .employee-photo {
         height: 140px;
@@ -72,7 +118,7 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app">
+        <div id="app-container">
             <DxDataGrid ... >
                 <!-- ... -->
                 <DxMasterDetail
@@ -121,6 +167,28 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
     /* ... */
     </style>
 
+    <!-- tab: employees.service.js -->
+    const employees = [{
+        "EmployeeID": 1,
+        "FullName": "Nancy Davolio",
+        "Position": "Sales Representative",
+        "TitleOfCourtesy": "Ms.",
+        "BirthDate": "1968-12-08T00:00:00.000Z",
+        "HireDate": "2011-05-01T00:00:00.000Z",
+        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
+        "City": "Seattle",
+        "Region": "WA",
+        "PostalCode": "98122",
+        "Country": "USA",
+        "HomePhone": "(206) 555-9857",
+        "Extension": "5467",
+        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
+        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
+        "ReportsTo": 2
+    },
+    // ...
+    ];
+
 ##### React
 
     <!-- tab: App.js -->
@@ -168,6 +236,28 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
 
     export default App;
 
+    <!-- tab: employees.js -->
+    export const employees = [{
+        "EmployeeID": 1,
+        "FullName": "Nancy Davolio",
+        "Position": "Sales Representative",
+        "TitleOfCourtesy": "Ms.",
+        "BirthDate": "1968-12-08T00:00:00.000Z",
+        "HireDate": "2011-05-01T00:00:00.000Z",
+        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
+        "City": "Seattle",
+        "Region": "WA",
+        "PostalCode": "98122",
+        "Country": "USA",
+        "HomePhone": "(206) 555-9857",
+        "Extension": "5467",
+        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
+        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
+        "ReportsTo": 2
+    },
+    // ...
+    ];
+    
     <!-- tab: App.css -->
     /* ... */
     .employee-photo {
@@ -180,7 +270,6 @@ Master-detail data representation is configured in the [masterDetail](/Documenta
         text-align: justify;
         white-space: normal;
     }
-
 
 ---
 

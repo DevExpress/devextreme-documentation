@@ -2,7 +2,7 @@ When the width of all columns exceeds the widget width, horizontal scrolling app
 
 You can also fix a column in code by enabling its [fixed](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixed) option. The column is fixed to the widget's left edge by default. To change the position, set the [fixedPosition](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixedPosition) option.
 
-In the following code, we fix the `FullName` column and allow users to fix and unfix columns at runtime:
+In the following code, we fix the `FullName` column to the default left position and allow users to fix and unfix columns at runtime:
 
 ---
 ##### jQuery

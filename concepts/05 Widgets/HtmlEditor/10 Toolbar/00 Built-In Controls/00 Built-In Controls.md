@@ -4,7 +4,7 @@ Buttons apply single-choice formats to the text or perform actions on it. Select
 
 ![DevExtreme HTML5 JavaScript HtmlEditor Toolbar](/images/htmlEditor/visual_elements/toolbar.png)
  
-To add a button to the toolbar, add its [name](/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#controlNames) to the [items](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/toolbar/items '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/') array:
+To add a button to the toolbar, add its [name](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/toolbar/items '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/') to the [items](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/toolbar/items '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/') array:
  
 ---
 #####jQuery

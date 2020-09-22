@@ -28,7 +28,6 @@ The jQuery event that caused the handler execution. Deprecated in favor of the *
 The model data. Available only if Knockout is used.
 
 ---
-Main article: [onButtonClick]({basewidgetpath}/Configuration/#onButtonClick)
 
 #####See Also#####
 #include common-link-handleevents

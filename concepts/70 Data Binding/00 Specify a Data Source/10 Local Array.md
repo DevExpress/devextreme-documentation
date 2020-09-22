@@ -176,7 +176,7 @@ To bind a widget to a local array, pass this array to the widget's [dataSource](
 
 ---
 
-If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/Documentation/ApiReference/Data_Layer/ArrayStore/#key) option instead of the widget's **keyExpr** to specify the key field. You can further wrap the **ArrayStore** in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') if you need to filter, sort, group, and otherwise shape the data.
+If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') option instead of the widget's **keyExpr** to specify the key field. You can further wrap the **ArrayStore** in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') if you need to filter, sort, group, and otherwise shape the data.
 
 The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview) widget to this **DataSource**:
 

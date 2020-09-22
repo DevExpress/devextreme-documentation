@@ -53,8 +53,7 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         <DxDataGrid :ref="dataGridRefKey">
             <DxColumn
                 data-field="Name"
-                v-model:sort-index="nameSortIndex"
-                @sort-index-change="$emit('update:nameSortIndex', $event.target.value)"
+                :sort-index.sync="nameSortIndex"
             />
         </DxDataGrid>
     </template>

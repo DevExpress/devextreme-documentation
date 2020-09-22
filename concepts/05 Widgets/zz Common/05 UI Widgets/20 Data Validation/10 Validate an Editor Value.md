@@ -108,10 +108,7 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Widg
 
     <!-- tab: App.vue -->
     <template>
-        <DxTextBox
-            v-model:value="login"
-            @value-change="$emit('update:login', $event.target.value)"
-            placeholder="Login">
+        <DxTextBox :value.sync="login" placeholder="Login">
             <DxValidator>
                 <DxRequiredRule />
                 <DxPatternRule pattern="^[a-zA-Z]+$" message="Do not use digits." />

@@ -278,10 +278,8 @@ The set of available filter operations can be restricted using the [filterOperat
             <DxFilterRow :visible="true />
             <DxColumn 
                 :filter-operations="allowedOperations"
-                v-model:selected-filter-operation="selectedOperation"
-                @selected-filter-operation-change="$emit('update:selectedOperation', $event.target.value)"
-                v-model:filter-value="filterValue"
-                @filter-value-change="$emit('update:filterValue', $event.target.value)" 
+                :selected-filter-operation.sync="selectedOperation"
+                :filter-value.sync="filterValue" 
                 data-field="Status"
             />
         </DxDataGrid>

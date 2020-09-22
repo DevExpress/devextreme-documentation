@@ -143,8 +143,7 @@ To process a new **DateBox** value, you need to handle the value change event. I
     <!-- tab: App.vue -->
     <template>
         <DxDateBox
-            v-model:value="date"
-            @value-change="$emit('update:date', $event.target.value)"
+            :value.sync="date"
             @value-changed="handleValueChange"
         />
     </template>

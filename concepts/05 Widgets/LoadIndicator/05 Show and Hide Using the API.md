@@ -56,8 +56,7 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
     <template>
         <div>
             <DxLoadIndicator
-                v-model:visible="isLoadIndicatorVisible"
-                @visible-change="$emit('update:isLoadIndicatorVisible', $event.target.value)"
+                :visible.sync="isLoadIndicatorVisible"
             />
             <DxButton
                 text="Toggle the LoadIndicator"

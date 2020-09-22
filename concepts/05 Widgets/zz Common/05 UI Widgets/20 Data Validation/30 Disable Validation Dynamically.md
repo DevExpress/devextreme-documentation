@@ -157,8 +157,7 @@ The following example illustrates this case. A page contains two [TextBoxes](/ap
             />
 
             <DxCheckBox 
-                v-model:value="checkBoxValue"
-                @value-change="$emit('update:checkBoxValue', $event.target.value)" 
+                :value.sync="checkBoxValue" 
             />
         </div>
     </template>

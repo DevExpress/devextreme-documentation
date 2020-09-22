@@ -166,10 +166,8 @@ You can customize the text field and the drop-down button using the [fieldTempla
     <template>
         <div>
             <DxDropDownBox
-                v-model:value="selectedFruit"
-                @value-change="$emit('update:selectedFruit', $event.target.value)"
-                v-model:opened="isDropDownBoxOpened"
-                @opened-change="$emit('update:isDropDownBoxOpened', $event.target.value)"
+                :value.sync="selectedFruit"
+                :opened.sync="isDropDownBoxOpened"
                 :data-source="dataSource"
                 drop-down-button-template="dropDownButtonTemplate"
                 field-template="fieldTemplate">

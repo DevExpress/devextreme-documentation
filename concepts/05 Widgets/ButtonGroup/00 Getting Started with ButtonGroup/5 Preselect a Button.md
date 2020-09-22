@@ -30,8 +30,7 @@ Populate the [selectedItemKeys](/api-reference/10%20UI%20Widgets/dxButtonGroup/1
     <!-- tab: App.vue -->
     <template> 
         <DxButtonGroup ...
-            v-model:selected-item-keys="selectedFontStyleNames"
-            @selected-item-keys-change="$emit('update:selectedFontStyleNames', $event.target.value)"
+            :selected-item-keys.sync="selectedFontStyleNames"
         />
     </template>
 

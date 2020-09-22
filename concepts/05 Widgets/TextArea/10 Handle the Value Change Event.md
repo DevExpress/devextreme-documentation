@@ -116,8 +116,7 @@ To process a new **TextArea** value, you need to handle the value change event. 
 
     <template>
         <DxTextArea
-            v-model:value="textAreaValue"
-            @value-change="$emit('update:textAreaValue', $event.target.value)"
+            :value.sync="textAreaValue"
             @value-changed="handleValueChange"
         />
     </template>

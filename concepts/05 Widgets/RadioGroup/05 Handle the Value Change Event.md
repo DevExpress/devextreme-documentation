@@ -50,8 +50,7 @@ To process a new **RadioGroup** value, you need to handle the value change event
     <template>
         <DxRadioGroup 
             :data-source="dataSource"
-            v-model:value="radioGroupValue"
-            @value-change="$emit('update:radioGroupValue', $event.target.value)"
+            :value.sync="radioGroupValue"
             @value-changed="handleValueChange"
         />
     </template>

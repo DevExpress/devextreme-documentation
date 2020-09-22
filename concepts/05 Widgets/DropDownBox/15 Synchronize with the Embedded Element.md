@@ -254,11 +254,9 @@ This step's implementation depends on the embedded widget's API and the library/
         <template>
             <div>
                 <DxDropDownBox ...
-                    v-model:value="dropDownBoxValues"
-                    @value-change="$emit('update:dropDownBoxValues', $event.target.value)">
+                    :value.sync="dropDownBoxValues">
                     <DxDataGrid ...
-                        v-model:selected-row-keys="dropDownBoxValues"
-                        @selected-row-keys-change="$emit('update:dropDownBoxValues', $event.target.value)">
+                        :selected-row-keys.sync="dropDownBoxValues">
                         <DxSelection mode="multiple" />
                     </DxDataGrid>
                 </DxDropDownBox>

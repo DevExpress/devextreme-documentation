@@ -91,8 +91,7 @@ If none of the available editors suit your requirements, you can define a custom
             />
             <template #notes>
                 <DxTextArea
-                    v-model:value="employee.notes"
-                    @value-change="$emit('update:employee.notes', $event.target.value)"
+                    :value.sync="employee.notes"
                 />
             </template>
             <template #picture="{ data }">

@@ -164,18 +164,12 @@ Call a group's [validate()](/api-reference/10%20UI%20Widgets/dxValidator/3%20Met
     <!-- tab: App.vue -->
     <template>
         <!-- <DxValidationGroup> -->
-            <DxTextBox
-                placeholder="Login"
-                v-model:value="login"
-                @value-change="$emit('update:login', $event.target.value)">
+            <DxTextBox :value.sync="login" placeholder="Login">
                 <DxValidator>
                     <!-- Login validation rules are configured here -->
                 </DxValidator>
             </DxTextBox>
-            <DxTextBox
-                placeholder="Password"
-                v-model:value="password"
-                @value-change="$emit('update:password', $event.target.value)">
+            <DxTextBox :value.sync="password" placeholder="Password">
                 <DxValidator>
                     <!-- Password validation rules are configured here -->
                 </DxValidator>

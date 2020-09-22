@@ -98,8 +98,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                v-model:visible="isLoadPanelVisible"
-                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
+                :visible.sync="isLoadPanelVisible"
             />
             <DxButton
                 text="Show the Load Panel"
@@ -247,8 +246,7 @@ To execute certain commands before or after the **LoadPanel** is shown/hidden, h
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                v-model:visible="isLoadPanelVisible"
-                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
+                :visible.sync="isLoadPanelVisible"
                 @shown="hideLoadPanel"
             />
             <DxButton

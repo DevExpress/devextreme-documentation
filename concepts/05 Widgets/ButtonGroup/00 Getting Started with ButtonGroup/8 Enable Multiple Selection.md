@@ -57,8 +57,7 @@ Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Confi
     <template> 
         <DxButtonGroup ...
             selection-mode="multiple"
-            v-model:selected-item-keys="selectedFontStyleNames"
-            @selected-item-keys-change="$emit('update:selectedFontStyleNames', $event.target.value)"
+            :selected-item-keys.sync="selectedFontStyleNames"
             @selection-changed="logSelectionChanged"
         />
     </template>

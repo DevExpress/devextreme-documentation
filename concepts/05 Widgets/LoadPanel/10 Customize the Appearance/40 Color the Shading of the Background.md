@@ -51,8 +51,7 @@ When the **LoadPanel** is shown, the area beneath it can be shaded. The shading 
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                v-model:visible="isLoadPanelVisible"
-                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
+                :visible.sync="isLoadPanelVisible"
                 shading-color="rgba(0, 0, 0, 0.2)"
             />
             <DxButton

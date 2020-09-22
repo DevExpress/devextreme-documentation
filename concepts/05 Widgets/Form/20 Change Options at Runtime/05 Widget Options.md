@@ -66,8 +66,7 @@ With Angular, Vue, or React, bind the option that should be changed to a compone
                 :disabled="isFormDisabled" />
             <DxCheckBox
                 text="Disable the Form"
-                v-model:value="isFormDisabled"
-                @value-change="$emit('update:isFormDisabled', $event.target.value)" />
+                :value.sync="isFormDisabled" />
         </div>
     </template>
     <script>

@@ -127,8 +127,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
     <!--tab: App.vue-->
     <template>
         <DxTabPanel
-            v-model:selected-index="selectedIndex"
-            @selected-index-change="$emit('update:selectedIndex', $event.target.value)"
+            :selected-index.sync="selectedIndex"
         />
     </template>
     <script>

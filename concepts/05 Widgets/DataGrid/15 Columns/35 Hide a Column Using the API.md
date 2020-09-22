@@ -57,8 +57,7 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
         <DxDataGrid ... >
             <DxColumn
                 data-field="Email"
-                v-model:visible="isEmailVisible"
-                @visible-change="$emit('update:isEmailVisible', $event.target.value)"
+                :visible.sync="isEmailVisible"
             />
         </DxDataGrid>
     </template>

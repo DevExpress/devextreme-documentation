@@ -74,8 +74,7 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
     <template> 
         <DxChart ... >
             <DxArgumentAxis
-                v-model:visual-range="chart_visualRange"
-                @visual-range-change="$emit('update:chart_visualRange', $event.target.value)"
+                :visual-range.sync="chart_visualRange"
             />
         </DxChart>
         <DxButton

@@ -114,9 +114,7 @@ In the following example, the `order` item contains the [DataGrid](/concepts/05%
             <DxSimpleItem name="showOrder">
                 <DxLabel text="Show the Order" />
                 <template #default>
-                    <DxCheckBox
-                        v-model:value="isOrderVisible"
-                        @value-change="$emit('update:isOrderVisible', $event.target.value)" />
+                    <DxCheckBox :value.sync="isOrderVisible" />
                 </template>
             </DxSimpleItem>
             <DxSimpleItem 

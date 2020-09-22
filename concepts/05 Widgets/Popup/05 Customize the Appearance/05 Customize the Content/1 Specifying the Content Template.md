@@ -60,8 +60,7 @@ The template implementation depends on the used framework or library. Examples o
 
     <template>
         <DxPopup
-            v-model:visible="isPopupVisible"
-            @visible-change="$emit('update:isPopupVisible', $event.target.value)"
+            :visible.sync="isPopupVisible"
             title="Popup Title">
             <template>
                 <p>Static content</p>

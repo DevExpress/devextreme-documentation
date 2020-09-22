@@ -187,8 +187,7 @@ The **DataGrid** provides two methods that select rows at runtime: [selectRows(k
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ...
-            v-model:selected-row-keys="selectedRowKeys"
-            @selected-row-keys-change="$emit('update:selectedRowKeys', $event.target.value)"
+            :selected-row-keys.sync="selectedRowKeys"
             @content-ready="selectFirstRow">
         </DxDataGrid>
     </template>

@@ -53,8 +53,7 @@ Specify the **height** and **width** options to change the **LoadPanel**'s size:
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                v-model:visible="isLoadPanelVisible"
-                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
+                :visible.sync="isLoadPanelVisible"
                 :height="300"
                 :width="500"
             />
@@ -205,8 +204,7 @@ The [container](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/c
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                v-model:visible="isLoadPanelVisible"
-                @visible-change="$emit('update:isLoadPanelVisible', $event.target.value)"
+                :visible.sync="isLoadPanelVisible"
                 container="#container">
                 <DxPosition
                     my="left"

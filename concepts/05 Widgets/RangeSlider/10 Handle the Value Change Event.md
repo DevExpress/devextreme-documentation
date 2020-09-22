@@ -48,10 +48,8 @@ To process new **RangeSlider** values, you need to handle the value change event
 
     <template>
         <DxRangeSlider 
-            v-model:start="startValue"
-            @start-change="$emit('update:startValue', $event.target.value)"
-            v-model:end="endValue"
-            @end-change="$emit('update:endValue', $event.target.value)"
+            :start.sync="startValue"
+            :end.sync="endValue"
             @value-changed="handleValueChange"
         />
     </template>

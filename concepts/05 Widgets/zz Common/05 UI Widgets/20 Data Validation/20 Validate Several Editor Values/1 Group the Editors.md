@@ -104,18 +104,12 @@ Editors belonging to a single **Validation Group** can be validated together. Al
     <!-- tab: App.vue -->
     <template>
         <DxValidationGroup name="loginGroup">
-            <DxTextBox
-                placeholder="Login"
-                v-model:value="login"
-                @value-change="$emit('update:login', $event.target.value)">
+            <DxTextBox :value.sync="login" placeholder="Login">
                 <DxValidator>
                     <!-- Login validation rules are configured here -->
                 </DxValidator>
             </DxTextBox>
-            <DxTextBox
-                placeholder="Password"
-                v-model:value="password"
-                @value-change="$emit('update:password', $event.target.value)">
+            <DxTextBox :value.sync="password" placeholder="Password">
                 <DxValidator>
                     <!-- Password validation rules are configured here -->
                 </DxValidator>

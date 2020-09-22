@@ -127,8 +127,7 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
                 />
             </DxToolbar>
             <DxDrawer ...
-                v-model:opened="isDrawerOpen"
-                @opened-change="$emit('update:isDrawerOpen', $event.target.value)">
+                :opened.sync="isDrawerOpen">
                 <!-- ... -->
             </DxDrawer>
         </div>

@@ -257,8 +257,7 @@ The following tasks require using different API in deferred mode:
         <!-- tab: App.vue -->
         <template>
             <DxDataGrid ...
-                v-model:selection-filter="selectionFilter"
-                @selection-filter-change="$emit('update:selectionFilter', $event.target.value)">
+                :selection-filter.sync="selectionFilter">
             </DxDataGrid>
         </template>
 

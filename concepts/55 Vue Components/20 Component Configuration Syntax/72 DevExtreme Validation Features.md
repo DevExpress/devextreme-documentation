@@ -3,19 +3,14 @@ In the following example, two textboxes are placed in a [validation group](/api-
     <!-- tab: App.vue -->
     <template>
         <DxValidationGroup>
-            <DxTextBox
-                v-model:value="email"
-                @value-change="$emit('update:email', $event.target.value)">
+            <DxTextBox :value.sync="email">
                 <DxValidator>
                     <DxRequiredRule message="Email is required" />
                     <DxEmailRule message="Email is invalid" />
                 </DxValidator>
             </DxTextBox>
 
-            <DxTextBox
-                mode="password"
-                v-model:value="password"
-                @value-change="$emit('update:password', $event.target.value)">
+            <DxTextBox :value.sync="password" mode="password">
                 <DxValidator>
                     <DxRequiredRule message="Password is required" />
                 </DxValidator>

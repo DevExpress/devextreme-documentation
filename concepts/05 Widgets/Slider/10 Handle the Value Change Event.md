@@ -46,8 +46,7 @@ To process a new **Slider** value, you need to handle the value change event. If
 
     <template>
         <DxSlider
-            v-model:value="value"
-            @value-change="$emit('update:value', $event.target.value)"
+            :value.sync="value"
             @value-changed="handleValueChange"
         />
     </template>

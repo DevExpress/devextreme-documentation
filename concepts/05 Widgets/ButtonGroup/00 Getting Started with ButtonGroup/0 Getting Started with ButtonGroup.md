@@ -139,8 +139,7 @@ Refer to the subtopics for details on every configuration step. You can also see
             :items="fontStyles"
             key-expr="style"
             selection-mode="multiple"
-            v-model:selected-item-keys="selectedFontStyleNames"
-            @selected-item-keys-change="$emit('update:selectedFontStyleNames', $event.target.value)"
+            :selected-item-keys.sync="selectedFontStyleNames"
             @selection-changed="logSelectionChanged"
         />
     </template>

@@ -148,8 +148,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
             <img id="image" src="https://url/to/an/image" />
             <DxPopover
                 target="#image"
-                v-model:visible="isPopoverVisible"
-                @visible-change="$emit('update:isPopoverVisible', $event.target.value)">
+                :visible.sync="isPopoverVisible">
                 <template>
                     <p>Popover content</p>
                 </template>

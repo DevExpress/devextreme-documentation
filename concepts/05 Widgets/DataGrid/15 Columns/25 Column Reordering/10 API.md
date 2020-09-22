@@ -127,8 +127,7 @@ The **visibleIndex** option can also be changed at runtime to reorder columns re
         <DxDataGrid ... >
             <DxColumn ... />
             <DxColumn ...
-                v-model:visible-index="secondColVisibleIndex"
-                @visible-index-change="$emit('update:secondColVisibleIndex', $event.target.value)"
+                :visible-index.sync="secondColVisibleIndex"
             />
         </DxDataGrid>
     </template>

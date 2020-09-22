@@ -160,8 +160,7 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Widgets/GridBase/1%20Con
         <DxDataGrid ... >
             <DxSearchPanel 
                 :visible="true"
-                v-model:text="searchText"
-                @text-change="$emit('update:searchText', $event.target.value)" 
+                :text.sync="searchText" 
             />
         </DxDataGrid>
     </template>

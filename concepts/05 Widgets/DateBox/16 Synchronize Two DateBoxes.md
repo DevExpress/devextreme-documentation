@@ -89,16 +89,12 @@
     <template>
         <div>
             <DxDateBox
-                v-model:value="startValue"
-                @value-change="$emit('update:startValue', $event.target.value)"
-                v-model:max="endValue"
-                @max-change="$emit('update:endValue', $event.target.value)"
+                :value.sync="startValue"
+                :max.sync="endValue"
             />
             <DxDateBox
-                v-model:value="endValue"
-                @value-change="$emit('update:endValue', $event.target.value)"
-                v-model:min="startValue"
-                @min-change="$emit('update:startValue', $event.target.value)"
+                :value.sync="endValue"
+                :min.sync="startValue"
             />
         </div>
     </template>

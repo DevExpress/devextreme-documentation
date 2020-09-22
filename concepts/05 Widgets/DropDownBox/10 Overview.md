@@ -71,10 +71,8 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
     <template>
         <div>
             <DxDropDownBox
-                v-model:value="selectedFruit"
-                @value-change="$emit('update:selectedFruit', $event.target.value)"
-                v-model:opened="isDropDownBoxOpened"
-                @opened-change="$emit('update:isDropDownBoxOpened', $event.target.value)"
+                :value.sync="selectedFruit"
+                :opened.sync="isDropDownBoxOpened"
                 :data-source="dataSource">
                 <DxList
                     :data-source="dataSource"
@@ -295,10 +293,8 @@ If your data is an array of objects, specify:
     <template>
         <div>
             <DxDropDownBox
-                v-model:value="selectedValue"
-                @value-change="$emit('update:selectedValue', $event.target.value)"
-                v-model:opened="isDropDownBoxOpened"
-                @opened-change="$emit('update:isDropDownBoxOpened', $event.target.value)"
+                :value.sync="selectedValue"
+                :opened.sync="isDropDownBoxOpened"
                 :data-source="customerDataSource"
                 value-expr="ID"
                 display-expr="companyName">
@@ -306,8 +302,7 @@ If your data is an array of objects, specify:
                     :data-source="customerDataSource"
                     :columns="['companyName', 'city', 'phone']"
                     :height="265"
-                    v-model:selected-row-keys="selectedCustomers"
-                    @selected-row-keys-change="$emit('update:selectedCustomers', $event.target.value)"
+                    :selected-row-keys.sync="selectedCustomers"
                     @selection-changed="changeDropDownBoxValue">
                     <DxSelection mode="single"/>
                 </DxDataGrid>

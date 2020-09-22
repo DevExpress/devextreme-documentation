@@ -45,8 +45,7 @@ The following code adds a simple **ColorBox** to your page.
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            v-model:value="color"
-            @value-change="$emit('update:color', $event.target.value)"
+            :value.sync="color"
         />
     </template>
 

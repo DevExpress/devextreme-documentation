@@ -135,8 +135,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
     <template>
         <DxMultiView
             :data-source="multiViewItems"
-            v-model:selected-index="selectedIndex"
-            @selected-index-change="$emit('update:selectedIndex', $event.target.value)" 
+            :selected-index.sync="selectedIndex" 
         />
     </template>
     <script>

@@ -10,9 +10,9 @@ Specifies whether the column organizes other columns into bands.
 ---
 Unlike standard columns, band columns do not contain data. Instead, a band column displays two or more columns underneath its header. To create a banded layout, do one of the following:
 
-* [Create nested column configurations]({basewidgetpath}/Configuration/columns/columns/).
+* [Create nested column configurations](/api-reference/_hidden/GridBaseColumn/columns '{basewidgetpath}/Configuration/columns/columns/').
 
-* Specify the **isBand** and [ownerBand]({basewidgetpath}/Configuration/columns/#ownerBand) options inside the [customizeColumns]({basewidgetpath}/Configuration/#customizeColumns) function.
+* Specify the **isBand** and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '{basewidgetpath}/Configuration/columns/#ownerBand') options inside the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeColumns.md '{basewidgetpath}/Configuration/#customizeColumns') function.
 
 The following code uses the **isBand** and **ownerBand** options to display the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* band:
 

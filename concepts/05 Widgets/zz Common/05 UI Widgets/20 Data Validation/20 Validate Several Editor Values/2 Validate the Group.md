@@ -164,12 +164,12 @@ Call a group's [validate()](/api-reference/10%20UI%20Widgets/dxValidator/3%20Met
     <!-- tab: App.vue -->
     <template>
         <!-- <DxValidationGroup> -->
-            <DxTextBox :value.sync="login" placeholder="Login">
+            <DxTextBox v-model:value="login" placeholder="Login">
                 <DxValidator>
                     <!-- Login validation rules are configured here -->
                 </DxValidator>
             </DxTextBox>
-            <DxTextBox :value.sync="password" placeholder="Password">
+            <DxTextBox v-model:value="password" placeholder="Password">
                 <DxValidator>
                     <!-- Password validation rules are configured here -->
                 </DxValidator>

@@ -36,7 +36,7 @@ By default, the **Popup** allocates a part of its area to the title, regardless 
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
             :show-title="false"
         />
     </template>
@@ -151,7 +151,7 @@ If you need to define the title completely, specify a template for it as shown i
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
             titleTemplate="title">
             <template>
                 <p>Popup content</p>

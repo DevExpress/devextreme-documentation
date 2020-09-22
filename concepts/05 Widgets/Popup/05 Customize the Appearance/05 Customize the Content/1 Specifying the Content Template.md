@@ -60,7 +60,7 @@ The template implementation depends on the used framework or library. Examples o
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
             title="Popup Title">
             <template>
                 <p>Static content</p>

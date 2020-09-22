@@ -54,7 +54,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     <template>
         <div>
             <DxToast
-                :visible.sync="isVisible"
+                v-model:visible="isVisible"
                 message="Connection problem"
                 type="error"
             />

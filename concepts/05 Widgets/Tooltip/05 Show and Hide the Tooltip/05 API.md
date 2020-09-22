@@ -152,7 +152,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
             <img id="image" src="https://url/to/an/image" />
             <DxTooltip
                 target="#image"
-                :visible.sync="isTooltipVisible">
+                v-model:visible="isTooltipVisible">
                 <template>
                     <p>Tooltip content</p>
                 </template>

@@ -51,7 +51,7 @@ To change the text displayed by the **LoadPanel**, use the [message](/api-refere
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                :visible.sync="isLoadPanelVisible"
+                v-model:visible="isLoadPanelVisible"
                 message="Please, wait..."
             />
             <DxButton

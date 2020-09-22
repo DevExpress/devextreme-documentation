@@ -32,7 +32,7 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Widgets/GridBase/3%20Meth
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ...
-            :selected-row-keys.sync="selectedRowKeys">
+            v-model:selected-row-keys="selectedRowKeys">
         </DxDataGrid>
     </template>
 
@@ -159,7 +159,7 @@ Call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Method
     <template>
         <DxDataGrid ...
             ref="dataGrid"
-            :selected-row-keys.sync="selectedRowKeys">
+            v-model:selected-row-keys="selectedRowKeys">
         </DxDataGrid>
     </template>
 

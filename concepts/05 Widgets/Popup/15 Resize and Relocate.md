@@ -49,7 +49,7 @@ To change the size of the **Popup**, specify the [height](/api-reference/10%20UI
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
             :height="300"
             :width="500"
             title="Popup Title">
@@ -167,7 +167,7 @@ To allow an end user to resize the **Popup**, assign **true** to the [resizeEnab
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
             :resize-enabled="true"
             title="Popup Title"
         />
@@ -279,7 +279,7 @@ If you need to position the **Popup** against a specific element on your page, s
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
             title="Popup Title">
             <DxPosition
                 my="left"
@@ -395,7 +395,7 @@ By default, an end user is allowed to change the **Popup** position only on desk
 
     <template>
         <DxPopup
-            :visible.sync="isPopupVisible"
+            v-model:visible="isPopupVisible"
             :drag-enabled="true"
             title="Popup Title"
         />

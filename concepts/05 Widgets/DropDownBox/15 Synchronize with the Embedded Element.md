@@ -254,9 +254,9 @@ This step's implementation depends on the embedded widget's API and the library/
         <template>
             <div>
                 <DxDropDownBox ...
-                    :value.sync="dropDownBoxValues">
+                    v-model:value="dropDownBoxValues">
                     <DxDataGrid ...
-                        :selected-row-keys.sync="dropDownBoxValues">
+                        v-model:selected-row-keys="dropDownBoxValues">
                         <DxSelection mode="multiple" />
                     </DxDataGrid>
                 </DxDropDownBox>

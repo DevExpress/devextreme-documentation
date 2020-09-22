@@ -89,12 +89,12 @@
     <template>
         <div>
             <DxDateBox
-                :value.sync="startValue"
-                :max.sync="endValue"
+                v-model:value="startValue"
+                v-model:max="endValue"
             />
             <DxDateBox
-                :value.sync="endValue"
-                :min.sync="startValue"
+                v-model:value="endValue"
+                v-model:min="startValue"
             />
         </div>
     </template>

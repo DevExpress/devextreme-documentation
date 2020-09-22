@@ -305,7 +305,7 @@ Refer to the subtopics for details on every configuration step. You can also see
             <DxDrawer
                 opened-state-mode="overlap"
                 reveal-mode="expand"
-                :opened.sync="isDrawerOpen"
+                v-model:opened="isDrawerOpen"
                 :minSize="37"
                 :height="250"
                 template="list">

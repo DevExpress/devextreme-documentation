@@ -136,8 +136,8 @@ The **DataGrid** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%
         <DxDataGrid ...
             ref="myDataGrid">
             <DxPaging
-                :page-size.sync="pageSize"
-                :page-index.sync="pageIndex"
+                v-model:page-size="pageSize"
+                v-model:page-index="pageIndex"
             />
         </DxDataGrid>
     </template>

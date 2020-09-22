@@ -47,7 +47,7 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     <!-- tab: App.vue -->
     <template>
         <DxCheckBox
-            :value.sync="checkBox_value"
+            v-model:value="checkBox_value"
             @value-changed="handleValueChange"
         />
     </template>

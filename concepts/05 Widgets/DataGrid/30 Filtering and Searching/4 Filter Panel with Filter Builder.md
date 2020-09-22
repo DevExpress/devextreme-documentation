@@ -212,7 +212,7 @@ The **filterValue** is updated when a user changes the filter expression from th
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ... 
-            :filter-value.sync="filterValue">
+            v-model:filter-value="filterValue">
             <DxFilterPanel :visible="true" />
         </DxDataGrid>
     </template>
@@ -395,7 +395,7 @@ The **DataGrid** provides the [filterBuilder](/api-reference/10%20UI%20Widgets/G
                 <DxFilterBuilder :custom-operations="customOperations" />
                 <DxFilterBuilderPopup 
                     :width="400"
-                    :visible.sync="popupVisible"
+                    v-model:visible="popupVisible"
                     title="Synchronized Filter"
                 />
             </DxDataGrid>

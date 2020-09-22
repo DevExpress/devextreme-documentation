@@ -55,7 +55,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
         <div>
             <DxLoadPanel
                 :close-on-outside-click="true"
-                :visible.sync="isLoadPanelVisible"
+                v-model:visible="isLoadPanelVisible"
                 :show-pane="false"
             />
             <DxButton

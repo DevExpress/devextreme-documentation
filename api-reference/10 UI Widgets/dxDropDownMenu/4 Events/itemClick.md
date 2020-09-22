@@ -31,7 +31,6 @@ The item's index.
 The model data. Available only if Knockout is used.
 
 ---
-Main article: [onItemClick]({basewidgetpath}/Configuration/#onItemClick)
 
 #####See Also#####
 #include common-link-handleevents

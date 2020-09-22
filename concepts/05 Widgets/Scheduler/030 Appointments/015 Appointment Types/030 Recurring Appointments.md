@@ -2,7 +2,7 @@ A recurring appointment is an appointment that repeats after a specified period 
 
 ![Scheduler Recurring Appointment](/images/UiWidgets/Scheduler_RecurrentAppointment.png)
 
-An object defining a recurring appointment should contain the [recurrenceRule](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule) field that follows the <a href="https://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification.
+An object defining a recurring appointment should contain the [recurrenceRule](/api-reference/10%20UI%20Widgets/dxScheduler/5%20Default%20Appointment%20Template/recurrenceRule.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Default_Appointment_Template/#recurrenceRule') field that follows the <a href="https://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification.
 
     <!--JavaScript-->
     var recurringAppointment = [{
@@ -12,7 +12,7 @@ An object defining a recurring appointment should contain the [recurrenceRule](/
         recurrenceRule: "FREQ=DAILY"
     }];
 
-If you want to exclude appointments from a recurrence, specify exceptions to the current recurring appointment using the [recurrenceException](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceException) option.
+If you want to exclude appointments from a recurrence, specify exceptions to the current recurring appointment using the [recurrenceException](/api-reference/10%20UI%20Widgets/dxScheduler/5%20Default%20Appointment%20Template/recurrenceException.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Default_Appointment_Template/#recurrenceException') option.
 
     <!--JavaScript-->var recurringAppointment = [{
         text: "Meeting",

@@ -91,7 +91,7 @@ Optionally, specify the initial content in the widget's **value**. The content's
 
 The **HtmlEditor** supports a wide range of features:
 
-- Inline, block, and embedded [formats](/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName/formats) 
+- Inline, block, and embedded [formats](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/toolbar/items/formatName.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName') 
 - [Adaptive toolbar](/concepts/05%20Widgets/HtmlEditor/10%20Toolbar/00%20Built-In%20Controls '/Documentation/Guide/Widgets/HtmlEditor/Toolbar/Built-In_Controls/') 
 - [Built-in formats' and modules' extension](/concepts/05%20Widgets/HtmlEditor/33%20Customize%20Built-In%20Formats%20and%20Modules '/Documentation/Guide/Widgets/HtmlEditor/Customize_Built-In_Formats_and_Modules/')
 - [Custom formats and modules](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/get(componentPath).md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#getcomponentPath')

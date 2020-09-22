@@ -3,14 +3,14 @@ id: dxHtmlEditor.formatLine(index, length, formats)
 ---
 ---
 ##### shortDescription
-Applies several [block formats](/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName/formats) to all lines in the given range.
+Applies several [block formats](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/toolbar/items/formatName.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName') to all lines in the given range.
 
 ##### param(index): Number
 A zero-based index at which to begin formatting.
 
 ##### param(length): Number
 The length of the content to be formatted.      
-[Embedded items](/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName/formats) have a length of 1.
+[Embedded items](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/toolbar/items/formatName.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName') have a length of 1.
 
 ##### param(formats): Object
 Formats to be applied.      

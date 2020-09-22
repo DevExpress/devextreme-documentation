@@ -3,7 +3,7 @@ id: ui.dxScheduler
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A namespace object for Scheduler static methods.
 
 ---
 <!-- Description goes here -->

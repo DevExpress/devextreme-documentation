@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.editorPreparing
 ---
 ---
 ##### shortDescription
-A function used to customize a cell's [editor]({basewidgetpath}/columns/#editorOptions). Not executed for cells with an [editCellTemplate]({basewidgetpath}/columns/#editCellTemplate).
+A function used to customize a cell's [editor](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/Configuration/columns/#editorOptions'). Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate').
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

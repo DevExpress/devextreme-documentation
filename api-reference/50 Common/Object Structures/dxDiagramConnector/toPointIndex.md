@@ -4,7 +4,5 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
+The index of the shape connection point where the connector ends.
 ---
-<!-- Description goes here -->

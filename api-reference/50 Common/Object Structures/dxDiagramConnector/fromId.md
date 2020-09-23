@@ -4,7 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the connector's start node identifier.
 
 ---
-<!-- Description goes here -->

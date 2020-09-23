@@ -61,7 +61,7 @@ You can call this method at any point in your application. In the example below,
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
     @Component({
@@ -71,14 +71,14 @@ You can call this method at any point in your application. In the example below,
     })
     export class AppComponent {
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();    
+            const workbook = new Workbook();    
             const worksheet = workbook.addWorksheet('Main sheet');
             exportPivotGrid({
                 component: e.component,
                 worksheet: worksheet
             }).then(function() {
                 workbook.xlsx.writeBuffer()
-                    .then(function(buffer) {
+                    .then(function(buffer: BlobPart) {
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                     });
             });
@@ -126,7 +126,7 @@ You can call this method at any point in your application. In the example below,
 
     import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
 
     export default {
@@ -136,7 +136,7 @@ You can call this method at any point in your application. In the example below,
         },
         methods: {
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Main sheet');
 
                 exportPivotGrid({
@@ -162,7 +162,7 @@ You can call this method at any point in your application. In the example below,
     import 'devextreme/dist/css/dx.light.css';
 
     import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 
@@ -176,7 +176,7 @@ You can call this method at any point in your application. In the example below,
     }
 
     function onExporting(e) {
-        const workbook = new ExcelJS.Workbook();
+        const workbook = new Workbook();
         const worksheet = workbook.addWorksheet('Main sheet');
 
         exportPivotGrid({

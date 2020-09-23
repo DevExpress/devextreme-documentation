@@ -84,7 +84,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
     @Component({
@@ -94,7 +94,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
     })
     export class AppComponent {
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Companies');
 
             exportDataGrid({
@@ -110,7 +110,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
                     }
                 }
             }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) {
+                workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) {
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });
@@ -157,7 +157,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
 
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
 
     export default {
@@ -167,7 +167,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
         },
         methods: {
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Companies');
 
                 exportDataGrid({
@@ -201,7 +201,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
@@ -216,7 +216,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
         }
 
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Companies');
 
             exportDataGrid({

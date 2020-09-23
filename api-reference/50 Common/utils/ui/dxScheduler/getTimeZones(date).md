@@ -5,33 +5,38 @@ export: dxScheduler.getTimeZones
 ---
 ---
 ##### shortDescription
-Gets the list of time zone objects.
+Gets the list of time zones.
 
 ##### param(date): Date | undefined
-Date to return time zone objects for. If no value is specified, current date is used.
-You may want to pass a past date because the returned IANA time zones may be different from those of the current date.
+A date for which to get time zones. If undefined, the current date is used.
 
 ##### return: Array<Object>
-List of time zone objects.
-
-Time zone object has the following fields:
-
-* **id**: String
-Time zone value from the IANA database.
-
-* **offset**: Number
-GMT Offset.
-
-* **title**: String
-Value that consists of the GMT offset and the IANA database value - as shown in the appointment's date editor.
+A list of time zones.
 
 ---
 
-The following example illustrates how to use this function:
+Each time zone is an object with the following fields:
 
-    const timeZones = DevExpress.ui.dxScheduler.getTimeZones(new Date(2015, 4, 25));
+* **id**: String
+A time zone text string from the IANA database.
+
+* **offset**: Number
+A GMT offset.
+
+* **title**: String
+A formatted time zone representation. Includes the **id** and **offset** values.
+
+`getTimeZones` accepts a past date to get a list of time zones valid at a particular moment. This is because time zones change due to daylight savings or other reasons.
+
+The following example illustrates how to use the method:
+
+    const timeZones = DevExpress.ui.dxScheduler.getTimeZones(new Date(2020, 6, 21));
     // ===== or when using modules =====
     import dxScheduler, { getTimeZones } from 'ui/scheduler/ui.scheduler';
-    const timeZones = dxScheduler.getTimeZones(new Date(2015, 4, 25));
-
-The `timeZones` variable is an array that consists of objects like `{offset: 2, title: "(GMT +02:00) Europe/Berlin", id: "Europe/Berlin"}`.
+    const timeZones = dxScheduler.getTimeZones(new Date(2020, 6, 21));
+    // The timeZones array has the summer-time offsets:
+    // [
+    //      { offset: 2, title: "(GMT +02:00) Europe/Berlin", id: "Europe/Berlin" },
+    //      { offset: 2, title: "(GMT +02:00) Europe/Amsterdam", id: "Europe/Amsterdam" }
+    //      ...
+    // ]

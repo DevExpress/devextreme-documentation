@@ -14,7 +14,7 @@ Export settings.
 
 ---
      
-This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer to export data, <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> to save files, and <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> for internal operations.
+This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> 2.0.1+ to save files.
 
 You can call this method at any point in your application. In the example below, this method is called in the [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting') function that is executed before data is exported. The **cancel** parameter is enabled to prevent the built-in export. As a result, the **DataGrid** is exported to a single worksheet. 
 
@@ -27,8 +27,8 @@ You can call this method at any point in your application. In the example below,
             enabled: true
         },
         onExporting: function(e) { 
-            var workbook = new ExcelJS.Workbook(); 
-            var worksheet = workbook.addWorksheet('Main sheet'); 
+            const workbook = new ExcelJS.Workbook(); 
+            const worksheet = workbook.addWorksheet('Main sheet'); 
         
             DevExpress.excelExporter.exportDataGrid({ 
                 worksheet: worksheet, 
@@ -46,8 +46,8 @@ You can call this method at any point in your application. In the example below,
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.1/FileSaver.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
 
@@ -62,7 +62,7 @@ You can call this method at any point in your application. In the example below,
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
     @Component({
@@ -72,14 +72,14 @@ You can call this method at any point in your application. In the example below,
     })
     export class AppComponent {
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();    
+            const workbook = new Workbook();    
             const worksheet = workbook.addWorksheet('Main sheet');
             exportDataGrid({
                 component: e.component,
                 worksheet: worksheet
             }).then(function() {
                 workbook.xlsx.writeBuffer()
-                    .then(function(buffer) {
+                    .then(function(buffer: BlobPart) {
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                     });
             });
@@ -127,7 +127,7 @@ You can call this method at any point in your application. In the example below,
 
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
 
     export default {
@@ -137,7 +137,7 @@ You can call this method at any point in your application. In the example below,
         },
         methods: {
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Main sheet');
 
                 exportDataGrid({
@@ -163,7 +163,7 @@ You can call this method at any point in your application. In the example below,
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import ExcelJS from 'exceljs';
+    import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
@@ -178,7 +178,7 @@ You can call this method at any point in your application. In the example below,
         }
 
         onExporting(e) {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Main sheet');
 
             exportDataGrid({

@@ -13,8 +13,8 @@ A user can click the **Export** button to save an Excel file with the exported d
 
 The following instructions show how to enable and configure client-side export:
 
-1. **Reference the required libraries**  
-    Reference or import the <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v3.3.1 or newer and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> libraries. Export also requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> library. In a modular environment, this library is listed in package dependencies and is already added. If your app does not use modules, reference JSZip manually.
+1. **Install or reference the required libraries**  
+    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+. 
 
     ---
     ##### jQuery
@@ -22,87 +22,36 @@ The following instructions show how to enable and configure client-side export:
         <head>
             <!-- ... -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
             <!-- reference the DevExtreme sources here -->
         </head>
 
     ##### Angular   
 
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';
-        import ExcelJS from 'exceljs';
-        import saveAs from 'file-saver';
-        
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
-        export class AppComponent {
+        <!-- tab: Installation command -->
+        npm install --save exceljs file-saver
+
+        <!-- tab: tsconfig.app.json -->
+        "compilerOptions": {
             // ...
+            "paths": {
+                // ...
+                "exceljs": [
+                    "node_modules/exceljs/dist/exceljs.js"
+                ]
+            }
         }
-
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-        import { DxDataGridModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxDataGridModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
-
 
     ##### Vue
 
-        <!-- tab: App.vue -->
-        <template>
-            <!-- ... -->
-        </template>
-        <script>
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
+        npm install --save exceljs file-saver
 
-        import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
-        import ExcelJS from 'exceljs';
-        import saveAs from 'file-saver';
-
-        export default {
-            components: {
-                DxDataGrid,
-                DxExport
-            },
-            // ...
-        }
-        </script>
-
+        
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import DataGrid, { Export } from 'devextreme-react/data-grid';
-        import ExcelJS from 'exceljs';
-        import saveAs from 'file-saver';
-
-        class App extends React.Component {
-            // ...
-        }
-        export default App;
-
+        npm install --save exceljs file-saver
+        
     ---     
 
 2. **Enable the export UI**   
@@ -126,16 +75,6 @@ The following instructions show how to enable and configure client-side export:
             });
         });
 
-        <!--HTML-->
-        <head>
-            <!-- ... -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
-            <!-- reference the DevExtreme sources here -->
-        </head>
-
     ##### Angular   
 
         <!-- tab: app.component.html -->
@@ -148,8 +87,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import ExcelJS from 'exceljs';
-        import saveAs from 'file-saver';
         
         @Component({
             selector: 'app-root',
@@ -200,9 +137,6 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import ExcelJS from 'exceljs';
-        import saveAs from 'file-saver';
-
         import { DxDataGrid, 
             DxExport,
             DxColumn
@@ -223,9 +157,6 @@ The following instructions show how to enable and configure client-side export:
         import React from 'react';
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
-
-        import ExcelJS from 'exceljs';
-        import saveAs from 'file-saver';
 
         import DataGrid, {
             Export,
@@ -249,7 +180,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the DataGrid**   
-    Implement the [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting') handler and call the [exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') method in it. In the code below, this method exports the **DataGrid** as is, but you can use [ExportDataGridProps](/api-reference/50%20Common/Object%20Structures/ExportDataGridProps '/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/') to configure export settings, including [cell customization](/api-reference/50%20Common/Object%20Structures/ExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell'). To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
+    Implement the [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) handler and call the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method in it. In the code below, this method exports the **DataGrid** as is, but you can use [ExportDataGridProps](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell). The **DataGrid** is exported to an Excel worksheet that is created using the ExcelJS API. To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
 
     ---
     ##### jQuery
@@ -279,16 +210,6 @@ The following instructions show how to enable and configure client-side export:
             }
         });
 
-        <!--HTML-->
-        <head>
-            <!-- ... -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
-            <!-- reference the DevExtreme sources here -->
-        </head>
-
     ##### Angular   
 
         <!-- tab: app.component.html -->
@@ -300,7 +221,7 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
         import { exportDataGrid } from 'devextreme/excel_exporter';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         
         @Component({
@@ -310,7 +231,7 @@ The following instructions show how to enable and configure client-side export:
         })
         export class AppComponent {
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();    
+                const workbook = new Workbook();    
                 const worksheet = workbook.addWorksheet('Main sheet');
                 exportDataGrid({
                     component: e.component,
@@ -322,7 +243,7 @@ The following instructions show how to enable and configure client-side export:
                     } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer()
-                        .then(function(buffer) {
+                        .then(function(buffer: BlobPart) {
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                         });
                 });
@@ -368,7 +289,7 @@ The following instructions show how to enable and configure client-side export:
 
         import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
         import { exportDataGrid } from 'devextreme/excel_exporter';
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
 
         export default {
@@ -378,7 +299,7 @@ The following instructions show how to enable and configure client-side export:
             },
             methods: {
                 onExporting(e) {
-                    const workbook = new ExcelJS.Workbook();
+                    const workbook = new Workbook();
                     const worksheet = workbook.addWorksheet('Main sheet');
                     exportDataGrid({
                         component: e.component,
@@ -407,7 +328,7 @@ The following instructions show how to enable and configure client-side export:
         import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
-        import ExcelJS from 'exceljs';
+        import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         import DataGrid, { Export } from 'devextreme-react/data-grid';
         import { exportDataGrid } from 'devextreme/excel_exporter';
@@ -422,7 +343,7 @@ The following instructions show how to enable and configure client-side export:
                 );
             }
             onExporting(e) {
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Main sheet');
                 exportDataGrid({
                     component: e.component,

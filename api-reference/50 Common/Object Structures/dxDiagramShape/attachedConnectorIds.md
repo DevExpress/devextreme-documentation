@@ -4,7 +4,6 @@ type: Array<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets an array of attached connector identifiers.
 
 ---
-<!-- Description goes here -->

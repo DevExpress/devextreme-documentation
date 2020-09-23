@@ -98,7 +98,7 @@ With Angular, Vue, or React, bind the option that should be changed to a compone
             </DxForm>
             <DxCheckBox
                 text="Show the Phone Number"
-                :value.sync="isPhoneVisible" />
+                v-model:value="isPhoneVisible" />
         </div>
     </template>
     <script>

@@ -82,7 +82,7 @@ The following code adds a simple **ActionSheet** to your page. The widget is sho
     <template>
         <div>
             <DxActionSheet
-                :visible.sync="isActionSheetVisible"
+                v-model:visible="isActionSheetVisible"
                 :data-source="actionSheetData"
             />
             <DxButton

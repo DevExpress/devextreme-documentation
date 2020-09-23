@@ -56,7 +56,7 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
     <template>
         <div>
             <DxLoadIndicator
-                :visible.sync="isLoadIndicatorVisible"
+                v-model:visible="isLoadIndicatorVisible"
             />
             <DxButton
                 text="Toggle the LoadIndicator"

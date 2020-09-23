@@ -141,7 +141,7 @@ With Angular, Vue or React, use a different technique. Bind the [visible](/api-r
         <div>
             <DxPopup
                 title="Popup Title"
-                :visible.sync="isPopupVisible">
+                v-model:visible="isPopupVisible">
                 <template>
                     <p>Popup content</p>
                 </template>

@@ -77,7 +77,7 @@ If you need to render different templates depending on a specific condition, def
         <div>
             <DxPopup
                 title="Popup Title"
-                :visible.sync="isPopupVisible"
+                v-model:visible="isPopupVisible"
                 :contentTemplate="currentTemplate">
                 <template #template1>
                     <p>First template</p>

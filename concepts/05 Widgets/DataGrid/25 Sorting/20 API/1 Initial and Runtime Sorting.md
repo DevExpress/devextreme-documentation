@@ -155,7 +155,7 @@ Change the **sortOrder** and **sortIndex** options using the [columnOption](/api
         <DxDataGrid ...>
             <DxColumn
                 data-field="Country"
-                :sort-order.sync="countrySortOrder"
+                v-model:sort-order="countrySortOrder"
             />
         </DxDataGrid>
     </template>

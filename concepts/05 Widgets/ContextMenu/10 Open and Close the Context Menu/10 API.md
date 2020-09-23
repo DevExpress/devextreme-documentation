@@ -78,7 +78,7 @@ When using Angular, Vue or React, use a different approach. Bind the [visible](/
             <DxContextMenu
                 :items="contextMenuItems"
                 target="#someElement"
-                :visible.sync="isContextMenuVisible"
+                v-model:visible="isContextMenuVisible"
             />
         </div>
     </template>

@@ -126,8 +126,10 @@ When you use a custom button template, the [onClick](/api-reference/_hidden/dxDa
         <Dx{WidgetName} ... >
             <!-- ... -->
             <DxColumn type="buttons">
-                <DxButton #default>
-                    <a href="#" @click="logMyCommandClick">My command</a>
+                <DxButton>
+                    <template #default>
+                        <a href="#" @click="logMyCommandClick">My command</a>
+                    </template>
                 </DxButton>
             </DxColumn>
         </Dx{WidgetName}>

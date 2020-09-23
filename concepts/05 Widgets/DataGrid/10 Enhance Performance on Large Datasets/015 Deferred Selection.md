@@ -257,7 +257,7 @@ The following tasks require using different API in deferred mode:
         <!-- tab: App.vue -->
         <template>
             <DxDataGrid ...
-                :selection-filter.sync="selectionFilter">
+                v-model:selection-filter="selectionFilter">
             </DxDataGrid>
         </template>
 

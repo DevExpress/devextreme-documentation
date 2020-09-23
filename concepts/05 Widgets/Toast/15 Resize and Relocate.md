@@ -57,7 +57,7 @@ To change the size of the **Toast**, specify the [height](/api-reference/10%20UI
     <template>
         <div>
             <DxToast
-                :visible.sync="isVisible"
+                v-model:visible="isVisible"
                 message="Connection problem"
                 type="error"
                 :height="55"
@@ -215,7 +215,7 @@ If you need to position the **Toast** against a specific element on your page, s
     <template>
         <div>
             <DxToast
-                :visible.sync="isVisible"
+                v-model:visible="isVisible"
                 message="Connection problem"
                 type="error">
                 <DxPosition

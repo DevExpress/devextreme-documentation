@@ -32,9 +32,21 @@ DevExtreme collection widgets also support the `DxItem` component. It allows you
     <!-- tab: App.vue -->
     <template>
         <DxList>
-            <DxItem #default>Orange</DxItem>
-            <DxItem #default badge="New">White</DxItem>
-            <DxItem #default>Black</DxItem>
+            <DxItem>
+                <template #default>
+                    Orange
+                </template>
+            </DxItem>
+            <DxItem badge="New">
+                <template #default>
+                    White
+                </template>
+            </DxItem>
+            <DxItem>
+                <template #default>
+                    Black
+                </template>
+            </DxItem>
         </DxList>
     </template>
 
@@ -56,13 +68,18 @@ DevExtreme collection widgets also support the `DxItem` component. It allows you
     <!-- tab: App.vue -->
     <template>
         <DxList>
-            <DxItem #default><h1>Available items</h1></DxItem>
+            <DxItem>
+                <template #default>
+                    <h1>Available items</h1>
+                </template>
+            </DxItem>
             <DxItem
                 v-for="item in listItems"
                 :key="item.text"
-                :badge="item.badge"
-                #default>
-                {{ item.text }}
+                :badge="item.badge">
+                <template #default>
+                    {{ item.text }}
+                </template>
             </DxItem>
         </DxList>
     </template>

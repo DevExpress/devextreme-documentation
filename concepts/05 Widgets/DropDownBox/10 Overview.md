@@ -71,8 +71,8 @@ The simplest widget configuration requires specifying a [dataSource](/api-refere
     <template>
         <div>
             <DxDropDownBox
-                :value.sync="selectedFruit"
-                :opened.sync="isDropDownBoxOpened"
+                v-model:value="selectedFruit"
+                v-model:opened="isDropDownBoxOpened"
                 :data-source="dataSource">
                 <DxList
                     :data-source="dataSource"
@@ -293,8 +293,8 @@ If your data is an array of objects, specify:
     <template>
         <div>
             <DxDropDownBox
-                :value.sync="selectedValue"
-                :opened.sync="isDropDownBoxOpened"
+                v-model:value="selectedValue"
+                v-model:opened="isDropDownBoxOpened"
                 :data-source="customerDataSource"
                 value-expr="ID"
                 display-expr="companyName">
@@ -302,7 +302,7 @@ If your data is an array of objects, specify:
                     :data-source="customerDataSource"
                     :columns="['companyName', 'city', 'phone']"
                     :height="265"
-                    :selected-row-keys.sync="selectedCustomers"
+                    v-model:selected-row-keys="selectedCustomers"
                     @selection-changed="changeDropDownBoxValue">
                     <DxSelection mode="single"/>
                 </DxDataGrid>

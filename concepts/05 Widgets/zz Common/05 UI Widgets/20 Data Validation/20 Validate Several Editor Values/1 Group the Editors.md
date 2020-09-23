@@ -104,12 +104,12 @@ Editors belonging to a single **Validation Group** can be validated together. Al
     <!-- tab: App.vue -->
     <template>
         <DxValidationGroup name="loginGroup">
-            <DxTextBox :value.sync="login" placeholder="Login">
+            <DxTextBox v-model:value="login" placeholder="Login">
                 <DxValidator>
                     <!-- Login validation rules are configured here -->
                 </DxValidator>
             </DxTextBox>
-            <DxTextBox :value.sync="password" placeholder="Password">
+            <DxTextBox v-model:value="password" placeholder="Password">
                 <DxValidator>
                     <!-- Password validation rules are configured here -->
                 </DxValidator>

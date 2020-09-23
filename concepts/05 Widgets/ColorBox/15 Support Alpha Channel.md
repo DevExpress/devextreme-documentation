@@ -38,7 +38,7 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
     <!-- tab: App.vue -->
     <template>
         <DxColorBox
-            :value.sync="color"
+            v-model:value="color"
             :edit-alpha-channel="true"
         />
     </template>

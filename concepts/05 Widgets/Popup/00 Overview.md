@@ -65,7 +65,7 @@ The following code adds a simple **Popup** to your page, along with a [Button](/
         <div>
             <DxPopup
                 title="Popup Title"
-                :visible.sync="isPopupVisible">
+                v-model:visible="isPopupVisible">
                 <template>
                     <p>Popup content</p>
                 </template>

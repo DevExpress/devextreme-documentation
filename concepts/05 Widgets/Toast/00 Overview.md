@@ -215,7 +215,7 @@ If you are going to reuse the **Toast**, then create it on the page using the fo
     <template>
         <div>
             <DxToast
-                :visible.sync="isVisible"
+                v-model:visible="isVisible"
                 message="Connection problem"
                 type="error"
             />

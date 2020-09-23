@@ -91,7 +91,7 @@ If none of the available editors suit your requirements, you can define a custom
             />
             <template #notes>
                 <DxTextArea
-                    :value.sync="employee.notes"
+                    v-model:value="employee.notes"
                 />
             </template>
             <template #picture="{ data }">

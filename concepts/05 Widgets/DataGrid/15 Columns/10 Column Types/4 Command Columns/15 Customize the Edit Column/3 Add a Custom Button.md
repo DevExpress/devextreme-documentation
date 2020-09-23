@@ -221,8 +221,10 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
             <DxColumn type="buttons">
                 <DxButton name="edit" />
                 <DxButton name="delete" />
-                <DxButton #default>
-                    <!-- Declare custom markup here -->
+                <DxButton>
+                    <template #default>
+                        <!-- Declare custom markup here -->
+                    </template>
                 </DxButton>
             </DxColumn>
         </DxDataGrid>

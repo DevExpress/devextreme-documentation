@@ -24,7 +24,7 @@ The widget's instance.
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-The task values.
+The values of the inserted task.
 
 ---
 

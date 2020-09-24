@@ -21,13 +21,13 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
-The task key.
+The key of the deleted task.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-The task values.
+The values of the deleted task.
 
 ---
 

@@ -21,13 +21,13 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
-The key of the processed resource.
+The key of the resource.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-the values of the processed resource and task.
+The values of the processed resource and task.
 
 ---
 

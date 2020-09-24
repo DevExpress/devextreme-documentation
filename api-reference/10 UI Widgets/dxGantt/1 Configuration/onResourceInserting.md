@@ -24,7 +24,7 @@ The widget's instance.
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-The inserted resource values.
+The values of the inserted resource.
 
 ---
 

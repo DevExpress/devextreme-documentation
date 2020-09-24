@@ -21,13 +21,13 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
-The deleted resource key.
+The key of the deleted resource.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-The deleted resource values.
+The values of the deleted resource.
 
 ---
 

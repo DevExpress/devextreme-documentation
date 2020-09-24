@@ -24,7 +24,7 @@ The widget's instance.
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-The values of the resource and task.
+The values of the processed resource and task.
 
 ---
 

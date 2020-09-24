@@ -39,6 +39,7 @@ The inserted resource values.
             onResourceInserting: function (e) {
                 if (e.values.text == " "){
                     //your code
+                    e.cancel = true;
                 }
             }
         });

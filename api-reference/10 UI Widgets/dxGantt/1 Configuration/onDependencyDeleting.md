@@ -42,6 +42,7 @@ The values of the deleted dependency.
             onDependencyDeleting: function (e) {
                 if (e.key != 1) {
                     // your code
+                    e.cancel = true;
                 }
             }
         });

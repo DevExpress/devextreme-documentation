@@ -45,6 +45,7 @@ Model data. Available only if you use Knockout.
             onTaskDblClick: function (e) {
                 if (e.key != 0) {
                     // your code
+                    e.cancel = true;
                 }
             }
         });

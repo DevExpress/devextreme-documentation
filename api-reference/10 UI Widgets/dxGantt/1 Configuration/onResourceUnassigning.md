@@ -42,6 +42,7 @@ the values of the processed resource and task.
             onResourceUnassigning: function (e) {
                 if (e.key != 0) {
                     // your code
+                    e.cancel = true;
                 }
             }
         });

@@ -42,6 +42,7 @@ The deleted resource values.
             onResourceDeleting: function (e) {
                 if (e.key == 0) {
                     // your code
+                    e.cancel = true;
                 }
             }
         });

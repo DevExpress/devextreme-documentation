@@ -39,6 +39,7 @@ The values of the resource and task.
             onResourceAssigning: function (e) {
                 if (e.values.taskID != 0) {
                     // your code
+                    e.cancel = true;
                 }
             }
         });

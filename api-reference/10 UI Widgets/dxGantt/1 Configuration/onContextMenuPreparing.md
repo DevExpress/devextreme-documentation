@@ -47,6 +47,7 @@ The type of right-clicked task or dependency.
             // ...
             onContextMenuPreparing: function (e) {
                 // your code
+                e.cancel = true;
             }
         });
     }); 

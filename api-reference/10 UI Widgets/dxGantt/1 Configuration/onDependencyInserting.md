@@ -39,6 +39,7 @@ The values of the inserted dependency.
             onDependencyInserting: function (e) {
                 if (e.values.type == 3) {
                     // your code
+                    e.cancel = true;
                 }
             }
         });

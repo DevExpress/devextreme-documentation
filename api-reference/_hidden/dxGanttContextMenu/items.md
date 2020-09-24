@@ -6,7 +6,6 @@ inheritsType: dxGanttContextMenuItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures context menu items' settings.
 
 ---
-<!-- Description goes here -->

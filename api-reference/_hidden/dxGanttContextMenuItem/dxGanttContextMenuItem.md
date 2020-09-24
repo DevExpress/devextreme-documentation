@@ -4,7 +4,6 @@ inherits: dxContextMenuItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the context menu item.
 
 ---
-<!-- Description goes here -->

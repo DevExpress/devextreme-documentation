@@ -5,7 +5,8 @@ inheritsType: dxGanttContextMenu
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the context menu settings.
 
 ---
-<!-- Description goes here -->
+
+![](/images/Gantt/context-menu.png)

@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the context menu is enabled in the widget. 
 
 ---
-<!-- Description goes here -->

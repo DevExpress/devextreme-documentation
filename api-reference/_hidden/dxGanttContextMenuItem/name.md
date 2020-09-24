@@ -5,6 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the context menu item's name.
+Specifies the context menu item name.
 
 ---

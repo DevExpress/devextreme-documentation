@@ -6,25 +6,46 @@ EventForAction: dxGantt.dependencyInserting
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a dependency is inserted.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the dependency insertion.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-<!-- Description goes here -->
+The values of the inserted dependency.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onDependencyInserting: function (e) {
+                if (e.values.type == 3) {
+                    // your code
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [dependencyInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#dependencyInserting)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

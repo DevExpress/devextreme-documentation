@@ -6,34 +6,56 @@ EventForAction: dxGantt.taskEditDialogShowing
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before the edit dialog is shown.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the edit dialog showing.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.hiddenFields): Array<String>
-<!-- Description goes here -->
+An array of hidden fields.
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The task key.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.readOnlyFields): Array<String>
-<!-- Description goes here -->
+An array of read-only fields.
 
 ##### field(e.values): any
-<!-- Description goes here -->
+The task values.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onTaskEditDialogShowing: function (e) {
+                if (e.key != 0) {
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [taskEditDialogShowing](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskEditDialogShowing)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

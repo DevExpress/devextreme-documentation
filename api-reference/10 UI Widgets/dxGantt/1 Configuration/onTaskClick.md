@@ -6,28 +6,49 @@ EventForAction: dxGantt.taskClick
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a user clicks a task.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.data): any
-<!-- Description goes here -->
+The task data.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The task key.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onTaskClick: function (e) {
+                if (e.key != 0) {
+                    // your code
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [taskClick](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskClick)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

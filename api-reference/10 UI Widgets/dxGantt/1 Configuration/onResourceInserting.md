@@ -6,25 +6,46 @@ EventForAction: dxGantt.resourceInserting
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a resource is inserted.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the resource insertion.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-<!-- Description goes here -->
+The inserted resource values.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onResourceInserting: function (e) {
+                if (e.values.text == " "){
+                    //your code
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [resourceInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceInserting)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

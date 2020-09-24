@@ -6,25 +6,46 @@ EventForAction: dxGantt.resourceAssigning
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a resource is assigned to a task.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the resource assignment.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-<!-- Description goes here -->
+The values of the resource and task.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onResourceAssigning: function (e) {
+                if (e.values.taskID != 0) {
+                    // your code
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [resourceAssigning](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceAssigning)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

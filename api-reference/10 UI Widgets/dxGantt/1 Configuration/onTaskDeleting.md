@@ -6,28 +6,50 @@ EventForAction: dxGantt.taskDeleting
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a task is deleted.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the task deletion.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The key of the deleted task.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-<!-- Description goes here -->
+The values of the deleted task.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onTaskDeleting: function (e) {
+                if (e.key != 0) {
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [taskDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskDeleting)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

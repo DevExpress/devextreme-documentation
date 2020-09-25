@@ -5,7 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the root task's identifier. 
 
 ---
-<!-- Description goes here -->

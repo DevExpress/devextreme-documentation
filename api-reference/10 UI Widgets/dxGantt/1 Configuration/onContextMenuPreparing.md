@@ -6,34 +6,53 @@ EventForAction: dxGantt.contextMenuPreparing
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before the context menu is rendered.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel showing the context menu.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.data): any
-<!-- Description goes here -->
+Data of the right-clicked task or dependency.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.items): Array<Object>
-<!-- Description goes here -->
+Items to be displayed in the context menu.
 
 ##### field(e.targetKey): any
-<!-- Description goes here -->
+The key of the right-clicked task or dependency.
 
 ##### field(e.targetType): String
-<!-- Description goes here -->
+The type of right-clicked task or dependency.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onContextMenuPreparing: function (e) {
+                // your code
+                e.cancel = true;
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [contextMenuPreparing](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#contextMenuPreparing)

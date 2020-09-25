@@ -6,28 +6,50 @@ EventForAction: dxGantt.resourceUnassigning
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a resource is unassigned from a task.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the resource unassignment.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The key of the resource.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-<!-- Description goes here -->
+The values of the processed resource and task.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onResourceUnassigning: function (e) {
+                if (e.key != 0) {
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [resourceUnassigning](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceUnassigning)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

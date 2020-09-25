@@ -6,19 +6,37 @@ EventForAction: dxGantt.customCommand
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a custom command item was clicked. Allows you to implement a custom command's functionality.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget instance's name.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.name): String
-<!-- Description goes here -->
+The name of the clicked item.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onCustomCommand: function (e) {
+                // your code
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [customCommand](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#customCommand)

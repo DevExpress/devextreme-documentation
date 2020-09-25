@@ -6,28 +6,50 @@ EventForAction: dxGantt.dependencyDeleting
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a dependency is deleted.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the dependency's deletion.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The key of the deleted dependency.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
-<!-- Description goes here -->
+The values of the deleted dependency.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onDependencyDeleting: function (e) {
+                if (e.key != 1) {
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [dependencyDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#dependencyDeleting)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

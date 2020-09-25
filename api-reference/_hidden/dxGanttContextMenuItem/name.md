@@ -5,7 +5,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the context menu item name.
 
 ---
-<!-- Description goes here -->

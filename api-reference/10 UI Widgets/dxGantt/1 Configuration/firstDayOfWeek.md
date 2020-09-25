@@ -19,7 +19,7 @@ The option's value can be from 0 to 6.
 - 5 - Friday
 - 6 - Saturday
 
-The option's default value is provided by the culture settings.
+The culture settings specify the option's default value.
 
 #include common-ref-enum with {
     enum: "`FirstDayOfWeek`",

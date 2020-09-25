@@ -6,7 +6,7 @@ EventForAction: dxGantt.customCommand
 ---
 ---
 ##### shortDescription
-A function that is executed after a custom command item was clicked and allows you to implement the custom command's functionality.
+A function that is executed after a custom command item was clicked. Allows you to implement a custom command's functionality.
 
 ##### param(e): Object
 Information about the event.

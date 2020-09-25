@@ -12,7 +12,7 @@ A function that is executed before a task is moved.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel the task movement.
+Allows you to cancel the task's movement.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

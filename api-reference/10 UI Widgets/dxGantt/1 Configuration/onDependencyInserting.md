@@ -12,7 +12,7 @@ A function that is executed before a dependency is inserted.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel the dependency insertion.
+Allows you to cancel the dependency's insertion.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

@@ -12,7 +12,7 @@ A function that is executed before a dependency is deleted.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel the dependency deletion.
+Allows you to cancel the dependency's deletion.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

@@ -12,7 +12,7 @@ A function that is executed before the context menu is rendered.
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel context menu showing.
+Allows you to cancel showing the context menu.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

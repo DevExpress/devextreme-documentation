@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Positions the annotation relative to a specific argument.
 
 ---
-<!-- Description goes here -->

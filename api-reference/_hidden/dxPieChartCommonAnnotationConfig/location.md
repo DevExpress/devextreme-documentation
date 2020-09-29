@@ -6,7 +6,7 @@ default: 'center'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an annotation's position on the surface of a specific [argument](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonAnnotationSettings/#argument).
 
 ---
 <!-- Description goes here -->

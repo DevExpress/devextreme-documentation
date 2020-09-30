@@ -9,4 +9,4 @@ Configures the context menu settings.
 
 ---
 
-![](/images/Gantt/context-menu.png)
+![DevExtreme Gantt - Context Menu](/images/Gantt/context-menu.png) 

@@ -5,7 +5,7 @@ inheritsType: dxSchedulerScrolling
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures scrolling for a view.
 
 ---
 <!-- Description goes here -->

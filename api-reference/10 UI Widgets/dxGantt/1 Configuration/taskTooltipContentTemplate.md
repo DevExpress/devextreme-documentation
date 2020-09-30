@@ -4,13 +4,12 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies custom content for the task tooltip. 
 
 ##### param(container): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "editor" }
 
 ##### param(task): any
-<!-- Description goes here -->
+The processed task.
 
 ---
-<!-- Description goes here -->

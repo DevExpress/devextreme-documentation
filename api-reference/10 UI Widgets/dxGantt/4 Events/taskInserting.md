@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a task is inserted.
 
 ---
-<!-- Description goes here -->
+Main article: [onTaskInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskInserting)

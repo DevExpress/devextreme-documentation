@@ -38,7 +38,7 @@ The values of the inserted resource.
             // ...
             onResourceInserting: function (e) {
                 if (e.values.text == " "){
-                    //your code
+                    // your code
                     e.cancel = true;
                 }
             }

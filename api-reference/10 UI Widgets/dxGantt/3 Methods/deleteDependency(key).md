@@ -3,10 +3,23 @@ id: dxGantt.deleteDependency(key)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Deletes a dependency.
 
 ##### param(key): Object
-<!-- Description goes here -->
+The dependency key.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.deleteDependency("dependency_key");
+
+---
+
+#####See Also#####
+- [dependencyDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#dependencyDeleting)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

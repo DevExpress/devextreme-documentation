@@ -3,13 +3,25 @@ id: dxGantt.getResourceData(key)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the resource data.
 
 ##### return: Object
-<!-- Description goes here -->
+The resource data.
 
 ##### param(key): Object
-<!-- Description goes here -->
+The resource key.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.getResourceData("resource_key");
+
+---
+
+#####See Also#####
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

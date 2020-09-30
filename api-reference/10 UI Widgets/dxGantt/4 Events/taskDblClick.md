@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a user double-clicks a task.
 
 ---
-<!-- Description goes here -->
+Main article: [onTaskDblClick](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskDblClick)

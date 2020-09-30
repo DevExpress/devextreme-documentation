@@ -3,10 +3,23 @@ id: dxGantt.deleteResource(key)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Deletes a resource.
 
 ##### param(key): Object
-<!-- Description goes here -->
+The resource key.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.deleteResource("resource_key");
+
+---
+
+#####See Also#####
+- [resourceDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceDeleting)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

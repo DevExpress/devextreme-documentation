@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a task is moved.
 
 ---
-<!-- Description goes here -->
+Main article: [onTaskMoving](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskMoving)

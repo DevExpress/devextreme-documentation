@@ -3,13 +3,26 @@ id: dxGantt.unassignResourceFromTask(resourceKey, taskKey)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Removes a resource from the task.
 
 ##### param(resourceKey): Object
-<!-- Description goes here -->
+The resource key.
 
 ##### param(taskKey): Object
-<!-- Description goes here -->
+The task key.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.unassignResourceFromTask(3, 10);
+    
+---
+
+#####See Also#####
+- [resourceUnassigning](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceUnassigning)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

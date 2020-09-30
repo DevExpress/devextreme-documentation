@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after a custom command item was clicked.
 
 ---
-<!-- Description goes here -->
+Main article: [onCustomCommand](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onCustomCommand)

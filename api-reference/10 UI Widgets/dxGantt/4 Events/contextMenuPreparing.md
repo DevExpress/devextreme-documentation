@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before the context menu is rendered.
 
 ---
-<!-- Description goes here -->
+Main article: [onContextMenuPreparing](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onContextMenuPreparing)

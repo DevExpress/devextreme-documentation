@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a user clicks a task.
 
 ---
-<!-- Description goes here -->
+Main article: [onTaskClick](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskClick)

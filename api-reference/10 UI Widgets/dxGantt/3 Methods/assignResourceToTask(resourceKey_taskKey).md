@@ -3,13 +3,26 @@ id: dxGantt.assignResourceToTask(resourceKey, taskKey)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Assigns a resource to a task.
 
 ##### param(resourceKey): Object
-<!-- Description goes here -->
+The resource key.
 
 ##### param(taskKey): Object
-<!-- Description goes here -->
+The task key.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.assignResourceToTask("resource_key","task_key");
+
+---
+
+#####See Also#####
+- [resourceAssigning](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceAssigning)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

@@ -12,9 +12,9 @@ Specifies the scrolling mode.
 The following scrolling modes are available:
 
 - **Standard**       
-All appointments are simultaneously loaded into the DOM and a whole grid is rendered.
+All appointments are simultaneously loaded into the DOM, and the whole grid is rendered.
 
 - **Virtual**          
-Appointments are loaded into the DOM when they get into the viewport and removed once they leave it; a grid is rendered in the current viewport only.
+Appointments are loaded into the DOM when they get into the viewport and removed once they leave it; the grid is rendered within the current viewport only.
 
 [note]The *"virtual"* mode is only available for the *"day"*, *"week"*, and *"workWeek"* [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/).

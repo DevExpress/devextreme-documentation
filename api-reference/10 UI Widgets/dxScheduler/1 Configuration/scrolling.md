@@ -9,4 +9,4 @@ Configures scrolling.
 
 ---
 
-Scrolling allows a user to browse data left outside the current viewport. The widget provides several scrolling modes detailed in the [mode](/Documentation/20_2/ApiReference/UI_Widgets/dxScheduler/Configuration/scrolling/#mode) option description.
+Scrolling allows a user to browse data left outside the current viewport. The widget provides several scrolling modes detailed in the [mode](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/scrolling/#mode) option description.

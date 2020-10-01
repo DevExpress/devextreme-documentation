@@ -12,7 +12,7 @@ A module instance.
 The name of a [registered](/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#registercomponents) module. 
 
 ---
-You can use Quill modules, DevExtreme UI [modules](https://github.com/DevExpress/DevExtreme/tree/20_2/js/ui/html_editor/modules) or use your own custom modules.
+You can use DevExtreme Quill modules, DevExtreme UI [modules](https://github.com/DevExpress/DevExtreme/tree/20_2/js/ui/html_editor/modules) or use your own custom modules.
 
 Make sure that modules you want to get through this method are enabled (see customizeModules).
 

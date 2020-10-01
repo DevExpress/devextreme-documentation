@@ -15,8 +15,7 @@ Open the `config.js` file and configure DevExtreme and its dependencies as follo
             'jszip': 'npm:jszip/dist/jszip.min.js',
 
             // for the HtmlEditor widget
-            'quill': 'npm:quill/dist/quill.min.js',
-            'quill-delta-to-html': 'npm:quill-delta-to-html/dist/browser/QuillDeltaToHtmlConverter.bundle.js'
+            'devextreme-quill': 'npm:quill/dist/dx-quill.min.js'
         },
         packages: {
             // ...

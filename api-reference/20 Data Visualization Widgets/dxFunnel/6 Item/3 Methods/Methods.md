@@ -1,5 +1,0 @@
----
-##### shortDescription
-Methods used to control the funnel item.
-
----

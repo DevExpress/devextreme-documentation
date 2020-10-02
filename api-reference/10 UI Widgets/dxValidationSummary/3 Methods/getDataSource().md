@@ -1,4 +1,0 @@
----
-id: dxValidationSummary.getDataSource()
-hidden: 
----

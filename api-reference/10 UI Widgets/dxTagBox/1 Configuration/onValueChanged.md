@@ -1,1 +1,0 @@
-<!-- A comment to prevent inheritance from the SelectBox -->

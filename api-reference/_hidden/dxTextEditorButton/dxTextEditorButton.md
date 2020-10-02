@@ -1,4 +1,0 @@
----
-id: dxTextEditorButton
-type: Object
----

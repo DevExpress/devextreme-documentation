@@ -1,4 +1,0 @@
----
-id: dxHtmlEditorMediaResizing
-type: Object
----

@@ -1,3 +1,0 @@
----
-id: dxDropDownList.Options.value
----

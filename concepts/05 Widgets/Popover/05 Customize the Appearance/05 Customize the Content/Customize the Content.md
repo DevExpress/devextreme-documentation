@@ -1,1 +1,0 @@
-[tags]popover, overlay, template, customize the content, content template

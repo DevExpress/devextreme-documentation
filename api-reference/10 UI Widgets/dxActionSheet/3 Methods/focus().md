@@ -1,4 +1,0 @@
----
-id: dxActionSheet.focus()
-hidden: 
----

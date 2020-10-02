@@ -1,4 +1,0 @@
----
-id: dxSankeyConnectionInfoObject
-type: Object
----

@@ -1,1 +1,0 @@
-Once you <a href="https://devexpress.github.io/ThemeBuilder/" target="_blank">open the ThemeBuilder</a>, a theme configuration wizard appears. You can choose whether to create a new theme or import an existing DevExtreme or Bootstrap theme.

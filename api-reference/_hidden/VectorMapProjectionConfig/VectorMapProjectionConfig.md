@@ -1,4 +1,0 @@
----
-id: VectorMapProjectionConfig
-type: Object
----

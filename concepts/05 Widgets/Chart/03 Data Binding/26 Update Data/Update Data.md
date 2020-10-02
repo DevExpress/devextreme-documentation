@@ -1,1 +1,0 @@
-[tags]chart, update data, reload data, getDataSource, two-way binding, bindingOptions, observableArray

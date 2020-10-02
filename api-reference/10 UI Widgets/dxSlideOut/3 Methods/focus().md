@@ -1,4 +1,0 @@
----
-id: dxSlideOut.focus()
-hidden: 
----

@@ -1,4 +1,0 @@
----
-id: dxLoadIndicator.focus()
-hidden: 
----

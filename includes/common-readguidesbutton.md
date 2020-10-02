@@ -1,1 +1,0 @@
-<a href="${{url}}" class="button orange small fix-width-155" target="_blank">Read Guides</a>

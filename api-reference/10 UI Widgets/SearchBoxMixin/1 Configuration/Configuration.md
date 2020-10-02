@@ -1,5 +1,0 @@
----
-##### shortDescription
-Configures searching.
-
----

@@ -1,4 +1,0 @@
----
-id: dxHtmlEditorMention
-type: Object
----

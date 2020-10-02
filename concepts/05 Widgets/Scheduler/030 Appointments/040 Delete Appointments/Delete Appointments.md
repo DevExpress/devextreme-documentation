@@ -1,1 +1,0 @@
-[tags]scheduler, delete, disable deletion, onAppointmentDeleted, onAppointmentDeleting, deleteAppointment

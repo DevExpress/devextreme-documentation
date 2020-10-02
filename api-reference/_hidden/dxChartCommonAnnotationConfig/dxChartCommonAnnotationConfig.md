@@ -1,4 +1,0 @@
----
-id: dxChartCommonAnnotationConfig
-type: Object
----

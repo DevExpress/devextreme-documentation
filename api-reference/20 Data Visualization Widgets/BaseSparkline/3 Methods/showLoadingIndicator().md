@@ -1,4 +1,0 @@
----
-id: BaseSparkline.showLoadingIndicator()
-hidden: 
----

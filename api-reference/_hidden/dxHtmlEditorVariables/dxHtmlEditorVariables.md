@@ -1,4 +1,0 @@
----
-id: dxHtmlEditorVariables
-type: Object
----

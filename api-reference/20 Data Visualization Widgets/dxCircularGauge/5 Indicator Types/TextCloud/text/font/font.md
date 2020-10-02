@@ -1,3 +1,0 @@
----
-id: circularTextCloud.text.font
----

@@ -1,4 +1,0 @@
----
-id: dxHtmlEditorToolbarItem
-inherits: dxToolbarItem
----

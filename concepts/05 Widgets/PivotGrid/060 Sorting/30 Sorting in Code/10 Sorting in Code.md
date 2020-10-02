@@ -1,1 +1,0 @@
-In addition to sorting with the **PivotGrid** interface, you can apply sorting in code.

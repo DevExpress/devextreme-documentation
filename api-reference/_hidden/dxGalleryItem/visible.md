@@ -1,4 +1,0 @@
----
-id: dxGalleryItem.visible
-hidden: 
----

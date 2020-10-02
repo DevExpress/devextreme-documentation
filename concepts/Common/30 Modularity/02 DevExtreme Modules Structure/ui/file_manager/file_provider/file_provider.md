@@ -1,1 +1,0 @@
-Exposes file providers used in the **FileManager** widget.

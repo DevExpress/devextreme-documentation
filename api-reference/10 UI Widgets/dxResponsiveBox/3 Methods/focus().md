@@ -1,4 +1,0 @@
----
-id: dxResponsiveBox.focus()
-hidden: 
----

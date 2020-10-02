@@ -1,1 +1,0 @@
-[DevExtreme Data Layer components](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') can perform two types of data operations: shaping (sorting, filtering, grouping) and modification (creation, update, deletion).

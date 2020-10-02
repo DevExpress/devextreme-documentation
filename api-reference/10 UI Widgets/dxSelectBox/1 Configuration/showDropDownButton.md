@@ -1,3 +1,0 @@
----
-id: dxSelectBox.Options.showDropDownButton
----

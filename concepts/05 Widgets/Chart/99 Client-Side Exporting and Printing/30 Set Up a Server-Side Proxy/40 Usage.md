@@ -1,1 +1,0 @@
-To notify the widget that it must export the file through a proxy, specify the **export**.[proxyUrl](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/proxyUrl.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/#proxyUrl') option.

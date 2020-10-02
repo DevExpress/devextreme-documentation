@@ -1,1 +1,0 @@
-[tags]scheduler, update, disable update, onAppointmentUpdated, onAppointmentUpdating, updateAppointment

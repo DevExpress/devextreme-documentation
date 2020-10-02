@@ -1,4 +1,0 @@
----
-id: CollectionWidgetItem
-type: Object
----

@@ -3,7 +3,7 @@ id: dxHtmlEditor.getModule(moduleName)
 ---
 ---
 ##### shortDescription
-Gets instance of a [module](https://github.com/DevExpress/devextreme-quill/tree/master/modules). 
+Gets the instance of a module. 
 
 ##### return: Object
 A module's instance. 

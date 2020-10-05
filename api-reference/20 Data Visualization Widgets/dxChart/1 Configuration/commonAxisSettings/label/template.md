@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 <!-- Description goes here -->
 
-##### param(model): any
+##### param(data): any
 <!-- Description goes here -->
 
 ##### param(element): SVGGElement

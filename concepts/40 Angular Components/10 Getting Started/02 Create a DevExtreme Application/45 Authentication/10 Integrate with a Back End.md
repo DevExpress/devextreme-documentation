@@ -17,6 +17,6 @@ Each function returns an object with the following fields:
     </tr>
     <tr>
         <td>data</td>
-        <td>The request result (user information).</td>
+        <td>The request result (information about the authenticated user).</td>
     </tr>
 </table>

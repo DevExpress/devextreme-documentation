@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a resource is deleted.
 
 ---
-<!-- Description goes here -->
+Main article: [onResourceDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceDeleting)

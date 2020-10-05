@@ -3,13 +3,25 @@ id: dxGantt.getTaskData(key)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the task data.
 
 ##### return: Object
-<!-- Description goes here -->
+The task data.
 
 ##### param(key): Object
-<!-- Description goes here -->
+The task key.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.getTaskData("task_key");
+
+---
+
+#####See Also#####
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

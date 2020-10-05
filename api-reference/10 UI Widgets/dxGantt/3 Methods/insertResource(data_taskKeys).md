@@ -3,13 +3,33 @@ id: dxGantt.insertResource(data, taskKeys)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Inserts a new resource.
 
 ##### param(data): Object
-<!-- Description goes here -->
+The resource data.
 
 ##### param(taskKeys?): Array<Object>
-<!-- Description goes here -->
+An array of task keys.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    // Inserts a new resource 
+    gantt.insertResource({ text: "New Resource" });
+
+    // Inserts a new resource and assigns it to an individual task
+    gantt.insertResource({ text: "New Resource" }, [6]);
+    
+    // Inserts a new resource and assigns it to multiple tasks
+    gantt.insertResource({ text: "New Resource" }, [6,8]);
+    
+---
+
+#####See Also#####
+- [resourceInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceInserting)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

@@ -18,3 +18,4 @@ All appointments are simultaneously loaded into the DOM, and the whole grid is r
 Appointments are loaded into the DOM when they get into the viewport and are then removed once they leave it; the grid is rendered within the current viewport only.
 
 [note]*"Virtual"* mode is only available for *"day"*, *"week"*, and *"workWeek"* [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/).
+

@@ -4,7 +4,7 @@ Click **Save to File** to save a file named `dx.[base-theme-name].[color-scheme-
 
 ![DevExtreme ThemeBuilder UI: Theme Export popup dialog](/images/Common/ThemeBuilder/themebuilder-themeexport-css.png)
 
-Your custom theme uses [icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/'), which should be located next to the theme. When using npm, you can find the `icons` folder in `node_modules/devextreme/dist/css`. In other cases, the folder is in the directory with predefined themes. Copy the `icons` folder to the directory that contains your theme.
+Your custom theme uses [icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/') and fonts. They should be located next to the theme. When using npm, you can find the `icons` and `fonts` folders in `node_modules/devextreme/dist/css`. In other cases, these folders are in the directory with predefined themes. Copy them to the directory that contains your theme.
 
 Finally, [register the exported theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/50%20Apply%20a%20Theme.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Apply_a_Theme'). If you exported a color swatch, apply it as described in [Color Swatches](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/70%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches').
 

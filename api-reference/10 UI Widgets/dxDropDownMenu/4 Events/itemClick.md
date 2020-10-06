@@ -7,7 +7,6 @@ type: eventType
 Raised when a menu item is clicked or tapped.
 
 ---
-Main article: [onItemClick]({basewidgetpath}/Configuration/#onItemClick)
 
 #####See Also#####
 #include common-link-handleevents

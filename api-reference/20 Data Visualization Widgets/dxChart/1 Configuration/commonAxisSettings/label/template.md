@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the axis label.
+Specifies a custom template for axis labels.
 
 ##### param(data): any
 The label's data object.

@@ -5,6 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the root task's identifier. 
+Specifies the root task's identifier.
 
 ---

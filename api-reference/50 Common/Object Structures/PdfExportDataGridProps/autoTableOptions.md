@@ -1,5 +1,7 @@
 ---
-id: ui.dxScheduler
+id: PdfExportDataGridProps.autoTableOptions
+type: Object
+default: undefined
 ---
 ---
 ##### shortDescription

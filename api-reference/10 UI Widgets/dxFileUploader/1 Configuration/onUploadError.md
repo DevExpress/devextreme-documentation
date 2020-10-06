@@ -26,6 +26,9 @@ The error that occurred.
 ##### field(e.file): File
 The uploaded file.
 
+##### field(e.message): String
+<!-- Description goes here -->
+
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 

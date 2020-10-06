@@ -23,6 +23,9 @@ The widget's instance.
 ##### field(e.file): File
 The uploaded file.
 
+##### field(e.message): String
+<!-- Description goes here -->
+
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 

@@ -1,7 +1,7 @@
 ---
 id: dxHtmlEditorMediaResizing.allowedTargets
 type: Array<String>
-default: ['images']
+default: ['image']
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
-id: ui.dxScheduler.getTimeZones(date)
-module: ui/scheduler
-export: dxScheduler.getTimeZones
+id: timeZoneUtils.getTimeZones(date)
+module: time_zone
+export: getTimeZones
 ---
 ---
 ##### shortDescription

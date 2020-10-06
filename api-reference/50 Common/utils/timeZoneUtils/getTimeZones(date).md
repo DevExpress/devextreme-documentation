@@ -1,5 +1,5 @@
 ---
-id: Utils.getTimeZones(date)
+id: timeZoneUtils.getTimeZones(date)
 module: time_zone
 export: getTimeZones
 ---

@@ -27,7 +27,7 @@ The error that occurred.
 The uploaded file.
 
 ##### field(e.message): String
-<!-- Description goes here -->
+The message displayed by the widget on uploading failure.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
@@ -72,3 +72,6 @@ The following code shows how you can handle a network error.
     </dx-fileUploader>
 
 ---
+
+#####See Also#####
+- [uploadFailedMessage](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadFailedMessage)

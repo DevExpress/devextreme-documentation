@@ -2,7 +2,7 @@ Exposes the Upload Info.
 
 Exports:
 
-- *default* - The [Upload Info](/api-reference/50%20Common/Object%20Structures/UploadInfo '/Documentation/ApiReference/Common/Object_Structures/UploadInfo/')
+- *default* - The [UploadInfo](/api-reference/50%20Common/Object%20Structures/UploadInfo '/Documentation/ApiReference/Common/Object_Structures/UploadInfo/') object
 
         require("file_management/upload_info");
         // ===== or =====

@@ -5,16 +5,16 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for the axis label.
 
 ##### param(data): any
-<!-- Description goes here -->
+The label's data object.
 
 ##### param(element): SVGGElement
-<!-- Description goes here -->
+A container for the template content.
 
 ##### return: String | SVGElement | jQuery
-<!-- Description goes here -->
+#include common-template-return-value
 
 ---
 <!-- Description goes here -->

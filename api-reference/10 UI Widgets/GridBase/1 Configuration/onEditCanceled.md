@@ -11,6 +11,9 @@ EventForAction: GridBase.editCanceled
 ##### param(e): Object
 <!-- Description goes here -->
 
+##### field(e.changes): Array<any>
+<!-- Description goes here -->
+
 ##### field(e.component): {WidgetName}
 <!-- Description goes here -->
 

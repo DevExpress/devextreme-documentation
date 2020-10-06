@@ -14,6 +14,9 @@ EventForAction: GridBase.editCanceling
 ##### field(e.cancel): Boolean
 <!-- Description goes here -->
 
+##### field(e.changes): Array<any>
+<!-- Description goes here -->
+
 ##### field(e.component): {WidgetName}
 <!-- Description goes here -->
 

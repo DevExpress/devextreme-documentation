@@ -4,13 +4,13 @@ type: function(config)
 ---
 ---
 ##### shortDescription
-Allows you to customize Quill and 3rd-party modules.
+Allows you to customize the DevExtreme Quill and 3rd-party modules.
 
 ##### param(config): Object
 Module configurations.
 
 ---
-Quill modules and the API you can use to customize them are described in the <a href="https://quilljs.com/docs/modules/" target="_blank">Modules</a> documentation section. For example, the <a href="https://quilljs.com/docs/modules/history/#history-module" target="_blank">History</a> module, which handles the undo and redo operations, can be customized as follows:
+The DevExtreme Quill modules and the API you can use to customize them are described in the <a href="https://github.com/DevExpress/devextreme-quill/tree/master/docs/docs/modules" target="_blank">Modules</a> documentation section. For example, the <a href="https://github.com/DevExpress/devextreme-quill/blob/master/docs/docs/modules/history.md" target="_blank">History</a> module, which handles the undo and redo operations, can be customized as follows:
 
 ---
 ##### jQuery

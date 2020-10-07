@@ -1,8 +1,4 @@
-**HtmlEditor** is a WYSIWYG editor that allows you to format textual and visual content and to output it in HTML or Markdown. **HtmlEditor** is built on top of and requires <a href="https://quilljs.com/" target="_blank">Quill</a>.
-
-#include common-ctp-note with {
-    component: "HtmlEditor"
-}
+**HtmlEditor** is a WYSIWYG editor that allows you to format textual and visual content and to output it in HTML or Markdown. **HtmlEditor** is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/" target="_blank">DevExtreme Quill</a>.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
@@ -10,7 +6,7 @@
 
 Follow the steps below to add the **HtmlEditor** to a page.
 
-1. Reference or import Quill as shown in the code samples below.
+1. Reference or import the DevExtreme Quill as shown in the code samples below.
 2. Set the output markup language (HTML or Markdown) in the [valueType](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/valueType.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/#valueType') option.
 3. If you choose Markdown as the output format, link the **turndown** and **showdown** scripts before the DevExtreme scripts. When you use JavaScript modules, import the Markdown converter instead.
 4. Optionally, specify the initial content in the widget's **value** option. The content's language should correspond to the **valueType**. HTML content can also be declared directly inside the widget's container, in which case the language (HTML) and the **valueType** can differ.
@@ -30,7 +26,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
         <!-- ... -->
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
-        <script type="text/javascript" src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.2.2/js/dx-quill.min.js"></script>
         <!-- Required if valueType is "markdown" -->
         <!-- <script type="text/javascript" src="https://unpkg.com/turndown/dist/turndown.js"></script> -->
         <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script> -->
@@ -140,7 +136,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
             </p>
         </text>)
     )
-    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/20.2.2/js/dx-quill.min.js"></script>
     // Required if valueType is "markdown"
     // <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
     // <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script> 

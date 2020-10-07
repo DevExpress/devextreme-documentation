@@ -9,3 +9,39 @@ default: 'outside'
 Specifies a label position relative to the chart or its axis.
 
 ---
+
+You can specify the following positions for labels on the [valueAxis](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/):
+
+<table class="dx-table">
+    <tr>
+        <th>Value</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>'inside', 'right'</td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/value-axis-label-right.png" /></td>
+    </tr>
+    <tr>
+        <td>'outside', 'left'</td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/value-axis-label-left.png" /></td>
+    </tr>
+</table>
+
+The following positions are available for labels on the [argumentAxis](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/):
+
+<table class="dx-table">
+    <tr>
+        <th>Value</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>'inside', 'top'</td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/argument-axis-label-top.png" /></td>
+    </tr>
+    <tr>
+        <td>'outside', 'bottom'</td>
+        <td><img src="/Content/images/doc/20_2/ChartJS/argument-axis-label-bottom.png" /></td>
+    </tr>
+</table>
+
+The "*inside*" and "*outside*" values allow you to keep the same label's position when the chart is [rotated](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#rotated).

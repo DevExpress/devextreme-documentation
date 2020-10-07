@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Properties that can be passed to the [exportPivotGrid(options)]() method as a parameter.
 
 ---
 <!-- Description goes here -->

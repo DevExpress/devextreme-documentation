@@ -11,7 +11,7 @@ A Promise that is resolved after the file uploaded. It is a <a href="https://dev
 ##### param(fileData): File
 The file that is being uploaded.
 
-##### param(uploadInfo): Object
+##### param(uploadInfo): UploadInfo
 Information about the file upload session.
 
 ##### param(destinationDirectory): FileSystemItem

@@ -7,7 +7,13 @@ default: undefined
 ##### shortDescription
 <!-- Description goes here -->
 
-##### param(data): any
+##### param(data): Object
+<!-- Description goes here -->
+
+##### field(data.value): Date | Number | String
+<!-- Description goes here -->
+
+##### field(data.valueText): String
 <!-- Description goes here -->
 
 ##### param(element): SVGGElement

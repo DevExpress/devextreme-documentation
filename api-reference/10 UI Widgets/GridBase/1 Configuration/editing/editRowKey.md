@@ -6,7 +6,13 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The key value(s) of a row being edited.
 
 ---
-<!-- Description goes here -->
+
+Values for ths option are taken from column(s) specified in the [keyExpr](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr) option.
+
+#include common-demobutton with {
+    <!-- add url when the demo is ready -->
+    <!-- url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/" -->
+}

@@ -1,4 +1,4 @@
-In the closed state, the navigation menu is partially visible because it displays item icons. If the items do not have icons, you can hide the menu. To do this, open the `SideNavOuterToolbar` or `SideNavInnerToolbar` component (depending on the used [layout](/concepts/55%20Vue%20Components/02%20Create%20a%20DevExtreme%20Application/10%20Layouts.md '/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/#Layouts')) and change the `drawerOptions()` computed property as follows:
+In the closed state, the navigation menu is partially visible because it displays item icons. If the items do not have icons, you can hide the menu. To do this, open the `SideNavOuterToolbar` or `SideNavInnerToolbar` component (depending on the used [layout](/Documentation/Guide/Vue_Components/DevExtreme_Application_Template/#Layouts)) and change the `drawerOptions()` computed property as follows:
 
     <!-- tab: side-nav-outer-toolbar.vue -->
     // ...

@@ -6,7 +6,7 @@ default: 'outside'
 ---
 ---
 ##### shortDescription
-Specifies labels position relative to the chart or its axis.
+Specifies the position of labels relative to the chart or its axis.
 
 ---
 You can specify the following positions for labels on the [valueAxis](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/):

@@ -1,6 +1,6 @@
 Each gauge bar can be accompanied by a label that displays the value indicated by this bar. A bar label is colored the same as the corresponding bar. Labels make a gauge more representative and easier to understand.
 
-<img src="/Content/images/doc/20_2/ChartJS/GaugeBarLabels.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge GaugeBarLabels" style="display:block; margin:0 auto" />
+<img src="/images/ChartJS/GaugeBarLabels.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge GaugeBarLabels" style="display:block; margin:0 auto" />
 
 Bar labels can be tuned using [label](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/label/') configuration object options.
 

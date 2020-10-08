@@ -1,7 +1,7 @@
 Topics in this section describe various elements of the **LinearGauge** widget. Each topic gives a detailed overview of the element's purpose and ways of configuring. Below is the element map of the **LinearGauge** widget. **Hover** over the map and you will discover how different gauge elements are called. **Click an element** to navigate to the topic with details on this element.
 
 
-<p><img style="margin:0px auto;display:block" src="/Content/images/doc/20_2/ChartJS/LinearGaugeElementMap.png" alt="" usemap="#linearGaugeElements" /></p>
+<p><img style="margin:0px auto;display:block" src="/images/ChartJS/LinearGaugeElementMap.png" alt="" usemap="#linearGaugeElements" /></p>
 
 <map name="linearGaugeElements">
     <area shape="rect" alt="Title" title="Title" coords="196,16,326,37" href="/Documentation/Guide/Widgets/LinearGauge/Visual_Elements/#Title_and_Subtitle" />

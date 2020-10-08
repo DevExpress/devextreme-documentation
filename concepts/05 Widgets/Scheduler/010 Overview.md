@@ -1,6 +1,6 @@
 The **Scheduler** is a widget that represents scheduled data and allows a user to manage it. The following image is an element map. You can click the desired element to navigate to its dedicated article.
 
-<p style="display:inline-block"><img src="/Content/images/doc/20_2/UiWidgets/Scheduler_Overview.png" usemap="#image-map" alt="DevExtreme HTML5 JavaScript Scheduler"></p>
+<p style="display:inline-block"><img src="/images/UiWidgets/Scheduler_Overview.png" usemap="#image-map" alt="DevExtreme HTML5 JavaScript Scheduler"></p>
 
 <map name="image-map">
     <area target="" alt="View Switcher" title="View Switcher" href="/Documentation/Guide/Widgets/Scheduler/View_Switcher/" coords="480,122,769,70" shape="rect">

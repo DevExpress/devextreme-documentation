@@ -1,6 +1,6 @@
 For the purpose of more intelligible data visualization, scale values can be combined into ranges, each of which can be colored differently. For example, you can indicate the ranges of warm and cold temperatures.
 
-<img src="/Content/images/doc/20_2/ChartJS/CircularGaugeRangeContainer.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeRangeContainer" style="display:block; margin:0 auto" />
+<img src="/images/ChartJS/CircularGaugeRangeContainer.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeRangeContainer" style="display:block; margin:0 auto" />
 
  To specify the ranges, assign an array of objects defining these ranges to the [ranges](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/rangeContainer/ranges '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/rangeContainer/ranges/') option of the **rangeContainer** configuration object.
 

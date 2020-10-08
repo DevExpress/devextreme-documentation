@@ -2,7 +2,7 @@ This guide provides a detailed overview of [VectorMap](/api-reference/20%20Data%
 
 Below is the element map of the **VectorMap** widget. It may be helpful as you begin learning the capabilities of this widget. **Hover** over an element on the map to discover the name of this element. A **click** on an element navigates you to a topic devoted to this element.
 
-<p><img style="margin:0px auto;display:block" src="/Content/images/doc/20_2/ChartJS/MapElementMap.png" alt="DevExtreme dxVectorMap Elements" usemap="#mapElements" /></p>
+<p><img style="margin:0px auto;display:block" src="/images/ChartJS/MapElementMap.png" alt="DevExtreme dxVectorMap Elements" usemap="#mapElements" /></p>
 
 <map name="mapElements">
 	<area shape="circle" title="Control Bar" coords="58,57,30" href="/Documentation/Guide/Widgets/VectorMap/Visual_Elements/#Control_Bar" target="" />

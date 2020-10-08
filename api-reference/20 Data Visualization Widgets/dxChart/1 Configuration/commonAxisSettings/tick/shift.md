@@ -24,12 +24,12 @@ The following table illustrates this option:
     </tr>
     <tr>
         <td><code>shift: 3</code></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/shift-argumentaxis-positive.png" alt="DevExtreme Chart - Positive tick shift on the argument axis" /></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/shift-valueaxis-positive.png" alt="DevExtreme Chart - Positive tick shift on the value axis" /></td>
+        <td><img src="/images/ChartJS/shift-argumentaxis-positive.png" alt="DevExtreme Chart - Positive tick shift on the argument axis" /></td>
+        <td><img src="/images/ChartJS/shift-valueaxis-positive.png" alt="DevExtreme Chart - Positive tick shift on the value axis" /></td>
     </tr>
     <tr>
         <td><code>shift: -3</code></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/shift-argumentaxis-negative.png" alt="DevExtreme Chart - Negative tick shift on the argument axis" /></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/shift-valueaxis-negative.png" alt="DevExtreme Chart - Negative tick shift on the value axis" /></td>
+        <td><img src="/images/ChartJS/shift-argumentaxis-negative.png" alt="DevExtreme Chart - Negative tick shift on the argument axis" /></td>
+        <td><img src="/images/ChartJS/shift-valueaxis-negative.png" alt="DevExtreme Chart - Negative tick shift on the value axis" /></td>
     </tr>
 </table>

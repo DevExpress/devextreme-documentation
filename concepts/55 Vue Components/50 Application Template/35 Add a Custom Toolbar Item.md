@@ -54,4 +54,4 @@ The following code adds a search button to the toolbar:
     };
     </script>
 
-In the code above, the button click handler is declared in the `SideNavOuterToolbar` component. This component applies when the outer toolbar [layout](/Documentation/Guide/Vue_Components/DevExtreme_Application_Template/#Layouts) is used. If the application uses the inner toolbar layout, add the same code to the `SideNavInnerToolbar` component.
+In the code above, the button click handler is declared in the `SideNavOuterToolbar` component. This component applies when the outer toolbar [layout](/Documentation/Guide/Vue_Components/Application_Template/#Layouts) is used. If the application uses the inner toolbar layout, add the same code to the `SideNavInnerToolbar` component.

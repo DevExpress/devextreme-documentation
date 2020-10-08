@@ -43,4 +43,4 @@ The following code adds a search button to the toolbar:
         }
     }
 
-In the code above, the button click handler is declared in the `SideNavOuterToolbarComponent`. This component is applied when the outer toolbar [layout](/Documentation/Guide/Angular_Components/DevExtreme_Application_Template/#Layouts) is used. If the application uses the inner toolbar layout, add the same code to the `SideNavInnerToolbarComponent`.
+In the code above, the button click handler is declared in the `SideNavOuterToolbarComponent`. This component is applied when the outer toolbar [layout](/Documentation/Guide/Angular_Components/Application_Template/#Layouts) is used. If the application uses the inner toolbar layout, add the same code to the `SideNavInnerToolbarComponent`.

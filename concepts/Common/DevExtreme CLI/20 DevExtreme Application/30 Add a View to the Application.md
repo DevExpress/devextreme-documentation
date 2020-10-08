@@ -1,4 +1,4 @@
-The following command adds a view to an application that uses the DevExtreme layout template for [Angular](/Documentation/Guide/Angular_Components/DevExtreme_Application_Template/), [Vue](/Documentation/Guide/Vue_Components/DevExtreme_Application_Template/), or [React](/Documentation/Guide/React_Components/DevExtreme_Application_Template/):
+The following command adds a view to an application that uses the DevExtreme layout template for [Angular](/Documentation/Guide/Angular_Components/Application_Template/), [Vue](/Documentation/Guide/Vue_Components/Application_Template/), or [React](/Documentation/Guide/React_Components/Application_Template/):
 
     devextreme add view view-name [--icon]
     // ===== or =====

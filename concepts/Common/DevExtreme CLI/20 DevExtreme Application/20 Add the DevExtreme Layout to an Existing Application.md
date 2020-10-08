@@ -1,4 +1,4 @@
-Add the [DevExtreme layout template](/Documentation/Guide/Angular_Components/DevExtreme_Application_Template/) to an existing Angular application:
+Add the [DevExtreme layout template](/Documentation/Guide/Angular_Components/Application_Template/) to an existing Angular application:
 
     devextreme add angular-template [--layout][--empty][--resolve-conflicts]
     // ===== or =====
@@ -11,7 +11,7 @@ Specifies the DevExtreme layout to add. Available values:
     * `side-nav-outer-toolbar` (default)
     * `side-nav-inner-toolbar`
 
-    Both layouts are illustrated in the [Layouts](/Documentation/Guide/Angular_Components/DevExtreme_Application_Template/#Layouts) article.
+    Both layouts are illustrated in the [Layouts](/Documentation/Guide/Angular_Components/Application_Template/#Layouts) article.
 
 * `--empty`     
 Specifies whether to skip sample views generation (default: `false`).

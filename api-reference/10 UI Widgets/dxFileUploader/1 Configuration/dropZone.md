@@ -40,3 +40,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
         dropZone: $('.test-div')[0]
 
     ---
+
+[note]
+A custom drop zone (**dropZone** option) is not supported in **useForms** [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode).

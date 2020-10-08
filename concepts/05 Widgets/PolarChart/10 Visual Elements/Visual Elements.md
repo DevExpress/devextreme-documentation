@@ -2,7 +2,7 @@ Topics in this section describe [PolarChart](/api-reference/20%20Data%20Visualiz
 
 The image below is the chart element map, which can be helpful to you as you begin learning about **PolarChart** capabilities. **Hover** over the image to learn how different chart elements are called. **Click an element** to navigate to a topic in which you will find more details.
 
-<p><img style="margin:0px auto;display:block" src="/Content/images/doc/19_2/ChartJS/PolarChartElements.png" alt="ChartJS Polar Chart Elements" usemap="#polarChartElements" /></p>
+<p><img style="margin:0px auto;display:block" src="/images/ChartJS/PolarChartElements.png" alt="ChartJS Polar Chart Elements" usemap="#polarChartElements" /></p>
 
 <map name="polarChartElements">
 	<area alt="Chart Title" title="Chart Title" href="/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Chart_Title" shape="rect" coords="123,5,572,49" />

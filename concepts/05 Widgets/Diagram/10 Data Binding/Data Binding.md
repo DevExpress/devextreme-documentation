@@ -16,26 +16,26 @@ When you bind a **Diagram** widget to a data source, you should specify options 
     </tr>
     <tr style="text-align:center;">
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#keyExpr">nodes.keyExpr</a></td>
-        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+        <td><img src="/images/diagram/yes.png"></td>
+        <td><img src="/images/diagram/yes.png"></td>
+        <td><img src="/images/diagram/yes.png"></td>
     </tr>
     <tr style="text-align:center;">
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#keyExpr">edges.keyExpr</a></td>
-        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+        <td><img src="/images/diagram/yes.png"></td>
+        <td><img src="/images/diagram/no.png"></td>
+        <td><img src="/images/diagram/no.png"></td>
     </tr>
     <tr style="text-align:center;">
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#parentKeyExpr">nodes.parentKeyExpr</a></td>
-        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
+        <td><img src="/images/diagram/no.png"></td>
+        <td><img src="/images/diagram/yes.png"></td>
+        <td><img src="/images/diagram/no.png"></td>
     </tr>
     <tr style="text-align:center;">
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#itemsExpr">nodes.itemsExpr</a></td>
-        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/no.png"></td>
-        <td><img src="/Content/images/doc/20_1/diagram/yes.png"></td>
+        <td><img src="/images/diagram/no.png"></td>
+        <td><img src="/images/diagram/no.png"></td>
+        <td><img src="/images/diagram/yes.png"></td>
     </tr>
 </table>

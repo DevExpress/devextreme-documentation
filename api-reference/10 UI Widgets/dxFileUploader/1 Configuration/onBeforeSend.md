@@ -40,7 +40,7 @@ An object that provides information about the file upload session.
         $("#fileUploaderContainer").dxFileUploader({
             // ...
             onBeforeSend: function(e) {
-                // Your code goes here
+                e.request.withCredentials = true;
             }
         });
     });

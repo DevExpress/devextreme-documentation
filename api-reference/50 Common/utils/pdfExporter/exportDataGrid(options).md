@@ -13,7 +13,7 @@ A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glo
 Export settings.
 
 ---
-This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ to save files.
+This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
 You can call this method at any point in your application.
 
@@ -21,48 +21,56 @@ You can call this method at any point in your application.
 ##### jQuery
 
     <!--JavaScript-->
-    $('#gridContainer').dxDataGrid({
-        export: {
-            enabled: true
-        },
-        onExporting: function(e) { 
-            const workbook = new ExcelJS.Workbook(); 
-            const worksheet = workbook.addWorksheet('Main sheet'); 
-        
-            DevExpress.excelExporter.exportDataGrid({ 
-                worksheet: worksheet, 
-                component: e.component 
-            }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) { 
-                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
-                }); 
-            }); 
-            e.cancel = true; 
-        }
+    $(function(){
+        $('#exportButton').dxButton({
+            // ...
+            onClick: function() {
+                const doc = new jsPDF();
+                DevExpress.pdfExporter.exportDataGrid({
+                    jsPDFDocument: doc,
+                    component: dataGrid
+                }).then(function() {
+                    doc.save('Customers.pdf');
+                });
+            }
+        });
+
+        let dataGrid = $('#gridContainer').dxDataGrid({
+            // Specify grid options here
+        }).dxDataGrid('instance');
     });
+
 
     <!--HTML-->
     <head>
         <!-- ... -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script>
+        <script src=""https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
 
 ##### Angular   
 
+    <!-- tab: Installation command -->
+    npm install jspdf jspdf-autotable
+
     <!-- tab: app.component.html -->
+    <dx-button ... 
+        (onClick)="exportGrid($event)">
+    </dx-button>
+
     <dx-data-grid ...
-        (onExporting)="onExporting($event)">
-        <dxo-export [enabled]="true"></dxo-export>
+        id='gridContainer'
+        ref={this.dataGridRef}
+        >    
+        <!-- Specify grid options here -->
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
-    import saveAs from 'file-saver';
+    import Exporter from 'devextreme/pdf_exporter';
+    import { jsPDF } from 'jspdf';
+    import 'jspdf-autotable';
     
     @Component({
         selector: 'app-root',
@@ -70,19 +78,16 @@ You can call this method at any point in your application.
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        onExporting(e) {
-            const workbook = new Workbook();    
-            const worksheet = workbook.addWorksheet('Main sheet');
-            exportDataGrid({
-                component: e.component,
-                worksheet: worksheet
-            }).then(function() {
-                workbook.xlsx.writeBuffer()
-                    .then(function(buffer: BlobPart) {
-                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
-                    });
-            });
-            e.cancel = true; 
+        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
+
+        exportGrid() {
+            const doc = new jsPDF();
+            Exporter.exportDataGrid({
+                jsPDFDocument: doc,
+                component: this.dataGrid.instance
+            }).then(() => {
+                doc.save('Customers.pdf');
+            })
         }
     }
 
@@ -92,7 +97,7 @@ You can call this method at any point in your application.
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxDataGridModule } from 'devextreme-angular';
+    import { DxDataGridModule, DxButtonModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -100,7 +105,8 @@ You can call this method at any point in your application.
         ],
         imports: [
             BrowserModule,
-            DxDataGridModule
+            DxDataGridModule,
+            DxButtonModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -110,45 +116,60 @@ You can call this method at any point in your application.
 
 ##### Vue
 
+    <!-- tab: Installation command -->
+    npm install jspdf jspdf-autotable
+
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ...
-            @exporting="onExporting">
-            <DxExport
-                :enabled="true"
+        <div>
+            <DxButton ...
+                @click="exportGrid()"
             />
-        </DxDataGrid>
+
+            <DxDataGrid ...
+                :ref="dataGridRef"
+                >
+                <!-- Specify grid options here -->
+            </DxDataGrid>
+        </div>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
-    import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
-    import saveAs from 'file-saver';
+    import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxButton from 'devextreme-vue/button';
+    import { jsPDF } from 'jspdf';
+    import 'jspdf-autotable';
+    import Exporter from 'devextreme/pdf_exporter';
+
+    const dataGridRef = 'dataGrid';
 
     export default {
         components: {
             DxDataGrid,
-            DxExport
+            DxButton
+        },
+        data() {
+            return {
+                dataGridRef
+            };
+        },
+        computed: {
+            dataGrid: function() {
+            return this.$refs[dataGridRef].instance;
+            }
         },
         methods: {
-            onExporting(e) {
-                const workbook = new Workbook();
-                const worksheet = workbook.addWorksheet('Main sheet');
-
-                exportDataGrid({
-                    component: e.component,
-                    worksheet: worksheet
-                }).then(function() {
-                    workbook.xlsx.writeBuffer()
-                        .then(function(buffer) {
-                            saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
-                        });
+            exportGrid() {
+                const doc = new jsPDF();
+                Exporter.exportDataGrid({
+                    jsPDFDocument: doc,
+                    component: this.dataGrid
+                }).then(() => {
+                    doc.save('Customers.pdf');
                 });
-                e.cancel = true;
             }
         }
     }
@@ -156,43 +177,51 @@ You can call this method at any point in your application.
 
 ##### React
 
+    <!-- tab: Installation command -->
+    npm install jspdf jspdf-autotable
+
     <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import { Workbook } from 'exceljs';
-    import saveAs from 'file-saver';
-    import { exportDataGrid } from 'devextreme/excel_exporter';
+    import DataGrid from 'devextreme-react/data-grid';
+    import Button from 'devextreme-react/button';
+    import { jsPDF } from 'jspdf';
+    import 'jspdf-autotable';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ...
-                    onExporting={this.onExporting}>
-                    <Export enabled={true} />
-                </DataGrid>
-            );
-        }
+    import Exporter from 'devextreme/pdf_exporter';
 
-        onExporting(e) {
-            const workbook = new Workbook();
-            const worksheet = workbook.addWorksheet('Main sheet');
+    const dataGridRef = React.createRef();
 
-            exportDataGrid({
-                component: e.component,
-                worksheet: worksheet
-            }).then(function() {
-                workbook.xlsx.writeBuffer()
-                    .then(function(buffer) {
-                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
-                    });
+    export default function App() {
+        function exportGrid() {
+            const doc = new jsPDF();
+            const dataGrid = dataGridRef.current.instance;
+
+            Exporter.exportDataGrid({
+                jsPDFDocument: doc,
+                component: dataGrid
+            }).then(() => {
+                doc.save('Customers.pdf');
             });
-            e.cancel = true;
         }
+
+        return (
+            <React.Fragment>
+                <div>
+                    <Button ...
+                        onClick={exportGrid}
+                    />
+                    <DataGrid ...
+                        ref={dataGridRef}
+                    >
+                        {/* Specify grid options here */}
+                    </DataGrid>
+                </div>
+            </React.Fragment>
+        );
     }
-    export default App;
 
 ---     
 

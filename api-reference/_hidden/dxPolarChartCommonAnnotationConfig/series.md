@@ -19,7 +19,7 @@ For example, the following **PolarChart** fragment displays two series and an an
     }]    
 
 
-<img style="margin-right:50px" src="/Content/images/doc/20_2/ChartJS/annotations/polar-chart-annotation-unanchored-with-caption.png" alt="Polar chart annotation anchored to an argument"> <img  src="/Content/images/doc/20_2/ChartJS/annotations/polar-chart-annotation-anchored-with-caption.png" alt="Polar chart annotation anchored to a series point">
+<img style="margin-right:50px" src="/images/ChartJS/annotations/polar-chart-annotation-unanchored-with-caption.png" alt="Polar chart annotation anchored to an argument"> <img  src="/images/ChartJS/annotations/polar-chart-annotation-anchored-with-caption.png" alt="Polar chart annotation anchored to a series point">
 
 #####See Also#####
 - [x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') | [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')

@@ -20,15 +20,15 @@ When a user selects a series, it may react in one of the following ways dependin
     </tr>
     <tr>
         <td><i>"includePoints"</i></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/area/includePoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/area/includePoints.png" /></td>
     </tr>
     <tr>
         <td><i>"excludePoints"</i></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/area/excludePoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/area/excludePoints.png" /></td>
     </tr>
     <tr>
         <td><i>"none"</i></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/area/none.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/area/none.png" /></td>
     </tr>
 </table>
 

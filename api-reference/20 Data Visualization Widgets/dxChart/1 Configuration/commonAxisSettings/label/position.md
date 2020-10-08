@@ -6,7 +6,7 @@ default: 'outside'
 ---
 ---
 ##### shortDescription
-Specifies a labels position relative to the chart or its axis.
+Specifies the position of labels relative to the chart or its axis.
 
 ---
 

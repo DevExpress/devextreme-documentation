@@ -7,8 +7,14 @@ default: undefined
 ##### shortDescription
 Specifies a custom template for axis labels.
 
-##### param(data): any
+##### param(data): Object
 The label's data object.
+
+##### field(data.value): Date | Number | String
+The raw value.
+
+##### field(data.valueText): String
+The [formatted](/Documentation/ApiReference/Common/Object_Structures/format/) value converted to a string.
 
 ##### param(element): SVGGElement
 A container for the template content.

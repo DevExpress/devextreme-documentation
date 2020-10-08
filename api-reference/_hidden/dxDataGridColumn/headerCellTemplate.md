@@ -22,5 +22,7 @@ The index of the column to which the header belongs.
 The widget's instance.
 
 ---
+When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/), it omits customizations made in this template. However, you can recreate them in the exported file using the ExcelJS API. Use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) function to do this.
+
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')

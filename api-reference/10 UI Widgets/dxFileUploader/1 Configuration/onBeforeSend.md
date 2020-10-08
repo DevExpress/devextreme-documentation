@@ -6,28 +6,43 @@ EventForAction: dxFileUploader.beforeSend
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that allows you to customize the request before it is sent to the server.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.file): File
-<!-- Description goes here -->
+An uploaded file.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ##### field(e.request): XMLHttpRequest
-<!-- Description goes here -->
+An XMLHttpRequest for the file.
 
 ##### field(e.uploadInfo): UploadInfo
-<!-- Description goes here -->
+An object that provides information about the file upload session.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileUploaderContainer").dxFileUploader({
+            // ...
+            onBeforeSend: function(e) {
+                // Your code goes here
+            }
+        });
+    });
+
+---

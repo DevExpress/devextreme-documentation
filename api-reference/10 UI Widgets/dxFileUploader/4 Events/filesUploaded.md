@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when all files are successfully uploaded.
 
 ---
-<!-- Description goes here -->
+Main article: [onFilesUploaded](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#onFilesUploaded)
+
+#####See Also#####
+#include common-link-handleevents

@@ -12,5 +12,5 @@ dxChartSeriesTypes.AreaSeries,dxChartSeriesTypes.StackedAreaSeries,dxChartSeries
 ---
 Hatching is filling an area or a bar (depending on the series type) with parallel diagonal lines. In the **Chart** widget, it applies when a user selects a series.
 
-<img src="/Content/images/doc/20_1/ChartJS/hoverMode/hatching_area.png" />
-<img src="/Content/images/doc/20_1/ChartJS/hoverMode/hatching_bar.png" />
+<img src="/images/ChartJS/hoverMode/hatching_area.png" />
+<img src="/images/ChartJS/hoverMode/hatching_bar.png" />

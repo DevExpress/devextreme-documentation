@@ -13,9 +13,9 @@ The **SelectBox** looks the same on any platform, while **Lookup** changes its a
             <th>Lookup on mobile devices</th>
         </tr>
         <tr>
-            <td><img src="/Content/images/doc/20_1/UiWidgets/selectbox-mobile-desktop.png" alt="SelectBox on any device"></td>
-            <td><img src="/Content/images/doc/20_1/UiWidgets/lookup-desktop.png" alt="Lookup on desktop"></td>
-            <td><img src="/Content/images/doc/20_1/UiWidgets/lookup-mobile.png" alt="Lookup on mobile devices"></td>
+            <td><img src="/images/UiWidgets/selectbox-mobile-desktop.png" alt="SelectBox on any device"></td>
+            <td><img src="/images/UiWidgets/lookup-desktop.png" alt="Lookup on desktop"></td>
+            <td><img src="/images/UiWidgets/lookup-mobile.png" alt="Lookup on mobile devices"></td>
         </tr>
     </table>
 

@@ -21,13 +21,13 @@ The **Gantt** allows you to validate relationships between tasks when they are e
         <td>Move a predecessor task (Task 1) to the left or right.</td>
         <td>
             <b>Finish to Start (FS):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/fs-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
+            <img src="/images/Gantt/fs-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
             <b>Start to Start (SS):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/ss-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
+            <img src="/images/Gantt/ss-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
             <b>Start to Finish (SF):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/sf-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Start To Finish" /><br/>
+            <img src="/images/Gantt/sf-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Start To Finish" /><br/>
             <b>Finish to Finish (FF):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/ff-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Finish To Finish" /><br/>
+            <img src="/images/Gantt/ff-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Finish To Finish" /><br/>
         </td>
         <td>The widget moves a successor task (Task 2) forward or backward to the same time interval.</td>
     </tr>
@@ -35,13 +35,13 @@ The **Gantt** allows you to validate relationships between tasks when they are e
         <td>Move a successor task (Task 2) to the left.</td>
         <td>
             <b>Finish to Start (FS):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/fs-task2-left-shift.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
+            <img src="/images/Gantt/fs-task2-left-shift.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
             <b>Start to Start (SS):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/ss-task2-left-shift.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
+            <img src="/images/Gantt/ss-task2-left-shift.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
             <b>Start to Finish (SF):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/sf-task2-left.png" alt="DevExtreme Gantt - Dependency validation - Start To Finish" /><br/>
+            <img src="/images/Gantt/sf-task2-left.png" alt="DevExtreme Gantt - Dependency validation - Start To Finish" /><br/>
             <b>Finish to Finish (FF):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/ff-task2-left.png" alt="DevExtreme Gantt - Dependency validation - Finish To Finish" /><br/>
+            <img src="/images/Gantt/ff-task2-left.png" alt="DevExtreme Gantt - Dependency validation - Finish To Finish" /><br/>
         </td>
         <td>
             <b>This change is denied as it violates dependency rules.</b><br/>
@@ -57,13 +57,13 @@ The **Gantt** allows you to validate relationships between tasks when they are e
         <td>Move a successor task (Task 2) to the right.</td>
         <td>
             <b>Finish to Start (FS):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/fs-task2-right-shift.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
+            <img src="/images/Gantt/fs-task2-right-shift.png" alt="DevExtreme Gantt - Dependency validation - Finish To Start" /><br/>
             <b>Start to Start (SS):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/ss-task2-right-shift.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
+            <img src="/images/Gantt/ss-task2-right-shift.png" alt="DevExtreme Gantt - Dependency validation - Start To Start" /><br/>
             <b>Start to Finish (SF):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/sf-task2-right.png" alt="DevExtreme Gantt - Dependency validation - Start To Finish" /><br/>
+            <img src="/images/Gantt/sf-task2-right.png" alt="DevExtreme Gantt - Dependency validation - Start To Finish" /><br/>
             <b>Finish to Finish (FF):</b><br/>
-            <img src="/Content/images/doc/20_1/Gantt/ff-task2-right.png" alt="DevExtreme Gantt - Dependency validation - Finish To Finish" /><br/>
+            <img src="/images/Gantt/ff-task2-right.png" alt="DevExtreme Gantt - Dependency validation - Finish To Finish" /><br/>
         </td>
         <td>
             The control displays a popup window and suggests the following actions: <br/>

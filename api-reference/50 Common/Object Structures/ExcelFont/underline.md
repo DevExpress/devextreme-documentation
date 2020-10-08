@@ -15,22 +15,22 @@ The underline formatting style.
     </tr>
     <tr>
         <td><i>"none"</i></td>
-        <td><img src="/Content/images/doc/20_1/ExcelExport/UnderlineStyles/none.png" /></td>
+        <td><img src="/images/ExcelExport/UnderlineStyles/none.png" /></td>
     </tr>
     <tr>
         <td><i>"single"</i></td>
-        <td><img src="/Content/images/doc/20_1/ExcelExport/UnderlineStyles/single.png" /></td>
+        <td><img src="/images/ExcelExport/UnderlineStyles/single.png" /></td>
     </tr>
     <tr>
         <td><i>"double"</i></td>
-        <td><img src="/Content/images/doc/20_1/ExcelExport/UnderlineStyles/double.png" /></td>
+        <td><img src="/images/ExcelExport/UnderlineStyles/double.png" /></td>
     </tr>
     <tr>
         <td><i>"singleAccounting"</i></td>
-        <td><img src="/Content/images/doc/20_1/ExcelExport/UnderlineStyles/singleAccounting.png" /></td>
+        <td><img src="/images/ExcelExport/UnderlineStyles/singleAccounting.png" /></td>
     </tr>
     <tr>
         <td><i>"doubleAccounting"</i></td>
-        <td><img src="/Content/images/doc/20_1/ExcelExport/UnderlineStyles/doubleAccounting.png" /></td>
+        <td><img src="/images/ExcelExport/UnderlineStyles/doubleAccounting.png" /></td>
     </tr>
 </table>

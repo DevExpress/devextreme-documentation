@@ -20,19 +20,19 @@ When a user selects a range bar, its series may react in one of the following wa
     </tr>
     <tr>
         <td><i>"onlyPoint"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/rangebar/onlyPoint.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/rangebar/onlyPoint.png" /></td>
     </tr>
     <tr>
         <td><i>"allSeriesPoints"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/rangebar/allSeriesPoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/rangebar/allSeriesPoints.png" /></td>
     </tr>
     <tr>
         <td><i>"allArgumentPoints"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/rangebar/allArgumentPoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/rangebar/allArgumentPoints.png" /></td>
     </tr>
     <tr>
         <td><i>"none"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/rangebar/none.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/rangebar/none.png" /></td>
     </tr>
 </table>
 

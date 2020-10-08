@@ -18,19 +18,19 @@ When a user points to a series, it may react in one of the following ways depend
     </tr>
     <tr>
         <td><i>"nearestPoint"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/stackedspline/nearestPoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedspline/nearestPoints.png" /></td>
     </tr>
     <tr>
         <td><i>"includePoints"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/stackedspline/includePoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedspline/includePoints.png" /></td>
     </tr>
     <tr>
         <td><i>"excludePoints"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/stackedspline/excludePoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedspline/excludePoints.png" /></td>
     </tr>
     <tr>
         <td><i>"none"</i></td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/hoverMode/series/stackedspline/none.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedspline/none.png" /></td>
     </tr>
 </table>
 

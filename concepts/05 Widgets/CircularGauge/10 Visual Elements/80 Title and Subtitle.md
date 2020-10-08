@@ -1,6 +1,6 @@
 The **CircularGauge** can be displayed with a title and a subtitle. These elements usually contain general explanations about the data represented by the gauge. You can, however, place any kind of information in the gauge title and subtitle.
 
-<img src="/Content/images/doc/20_1/ChartJS/CircularGaugeTitleSubtitle.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeTitleSubtitle" style="display:block; margin:0 auto" />
+<img src="/images/ChartJS/CircularGaugeTitleSubtitle.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeTitleSubtitle" style="display:block; margin:0 auto" />
 
 To specify a gauge title and subtitle, use the [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/') and its nested [subtitle](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/subtitle/') options. Both these options accept either a string with the title/subtitle text:
 

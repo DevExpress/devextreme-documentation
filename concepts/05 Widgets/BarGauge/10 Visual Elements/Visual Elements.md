@@ -2,7 +2,7 @@ Topics in this section describe various elements of the **BarGauge** widget. Eac
 
 <div style="text-align:center">
 
-<p style="display:inline-block"><img src="/Content/images/doc/20_1/ChartJS/BarGaugeElementMap.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge" usemap="#barGaugeElements" /></p>
+<p style="display:inline-block"><img src="/images/ChartJS/BarGaugeElementMap.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge" usemap="#barGaugeElements" /></p>
 
 <map name="barGaugeElements">
     <area shape="rect" alt="Title" title="Title" coords="131,5,237,26" href="/Documentation/Guide/Widgets/BarGauge/Visual_Elements/#Title_and_Subtitle" />

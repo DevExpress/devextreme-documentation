@@ -4,7 +4,7 @@ Start configuring the **Sankey** by binding it to your data source. Refer to the
 
 Next, get familiar with the widget's elements using the following element map. Hover over an element to see its name or click on it to navigate to its article.
 
-<img src="/Content/images/doc/19_2/Sankey/overview.png" style="display:block;margin-left:auto;margin-right:auto" usemap="#image-map" alt="DevExtreme HTML5 JavaScript Sankey">
+<img src="/images/Sankey/overview.png" style="display:block;margin-left:auto;margin-right:auto" usemap="#image-map" alt="DevExtreme HTML5 JavaScript Sankey">
 
 <map name="image-map">
     <area target="_blank" alt="Title" title="Title" href="/Documentation/Guide/Widgets/Sankey/Title_and_Subtitle/" coords="352,27,197,0" shape="rect">

@@ -95,14 +95,14 @@ The following images illustrate how different **barPadding** and **barGroupPaddi
     </tr>
     <tr>
         <td>barGroupPadding: 0 <br/> barPadding: 0</td>
-        <td><img src="/Content/images/doc/19_2/ChartJS/barwidth/1.png" /></td>
+        <td><img src="/images/ChartJS/barwidth/1.png" /></td>
     </tr>
     <tr>
         <td>barGroupPadding: 0.2 <br/> barPadding: 0</td>
-        <td><img src="/Content/images/doc/19_2/ChartJS/barwidth/2.png" /></td>
+        <td><img src="/images/ChartJS/barwidth/2.png" /></td>
     </tr>
     <tr>
         <td>barGroupPadding: 0.2 <br/> barPadding: 0.1</td>
-        <td><img src="/Content/images/doc/19_2/ChartJS/barwidth/3.png" /></td>
+        <td><img src="/images/ChartJS/barwidth/3.png" /></td>
     </tr>
 </table>

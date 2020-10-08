@@ -2,7 +2,7 @@ This guide provides a detailed overview of [Bullet](/api-reference/20%20Data%20V
 
 Below is the element map of the **Bullet** widget. It may be helpful as you begin learning about the capabilities of this widget. **Hover** over an element on the map to discover the name of this element. A **click** on an element navigates you to a topic devoted to this element.
 
-<p><img style="margin:0px auto;display:block" src="/Content/images/doc/19_2/ChartJS/BulletElementMap.png" alt="DevExtreme dxBullet Elements" usemap="#bulletElements" /></p>
+<p><img style="margin:0px auto;display:block" src="/images/ChartJS/BulletElementMap.png" alt="DevExtreme dxBullet Elements" usemap="#bulletElements" /></p>
 
 <map name="bulletElements">
 	<area shape="rect" title="Tooltip" coords="58,9,204,76" href="/Documentation/Guide/Widgets/Bullet/Visual_Elements/#Tooltip" />

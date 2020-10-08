@@ -4,12 +4,12 @@ The **visual range** specifies the axis range visible to the user. Use it to foc
 
 <div id="figures">
     <figure>
-        <img src="/Content/images/doc/19_2/ChartJS/visual-range-unspecified.png" alt="Visual range is unspecified" />
+        <img src="/images/ChartJS/visual-range-unspecified.png" alt="Visual range is unspecified" />
         <figcaption>Visual range is unspecified</figcaption>
     </figure>
 
     <figure>
-        <img src="/Content/images/doc/19_2/ChartJS/visual-range-specified.png" alt='Visual range is ["A", "F"]' />
+        <img src="/images/ChartJS/visual-range-specified.png" alt='Visual range is ["A", "F"]' />
         <figcaption>Visual range is ["A", "F"]</figcaption>
     </figure>
 </div>

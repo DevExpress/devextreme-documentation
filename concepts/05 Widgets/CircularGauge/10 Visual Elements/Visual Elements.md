@@ -3,7 +3,7 @@ Topics in this section describe various elements of the **CircularGauge** widget
 
 <div style="text-align:center">
 
-<p style="display:inline-block"><img src="/Content/images/doc/19_2/ChartJS/CircularGaugeElementMap.png" alt="" usemap="#circularGaugeElements" /></p>
+<p style="display:inline-block"><img src="/images/ChartJS/CircularGaugeElementMap.png" alt="" usemap="#circularGaugeElements" /></p>
 
 <map name="circularGaugeElements">
     <area shape="rect" alt="Title" title="Title" coords="89,5,239,27" href="/Documentation/Guide/Widgets/CircularGauge/Visual_Elements/#Title_and_Subtitle" />

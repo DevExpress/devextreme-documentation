@@ -1,6 +1,6 @@
-To export or print a widget, a user clicks <img src="/Content/images/doc/19_2/ChartJS/icons/export.png" alt="DevExtreme HTML5 DataVisualization Charts Export Print" style="vertical-align:middle"/> and selects a command from the drop-down menu that appears. The **Print** command opens the Print window in the browser that lets the user to select preferred printing options and to send the print job to the printer. The other commands save a file of the selected format on the user's local storage.
+To export or print a widget, a user clicks <img src="/images/ChartJS/icons/export.png" alt="DevExtreme HTML5 DataVisualization Charts Export Print" style="vertical-align:middle"/> and selects a command from the drop-down menu that appears. The **Print** command opens the Print window in the browser that lets the user to select preferred printing options and to send the print job to the printer. The other commands save a file of the selected format on the user's local storage.
 
-<img src="/Content/images/doc/19_2/ChartJS/Client-Side-Export_exportMenu.png" alt="DevExtreme HTML5 DataVisualization Charts Export Print" style="vertical-align:middle"/>
+<img src="/images/ChartJS/Client-Side-Export_exportMenu.png" alt="DevExtreme HTML5 DataVisualization Charts Export Print" style="vertical-align:middle"/>
 
 Exporting and printing in the UI are configured by the [export](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/') object. The following exporting and printing characteristics can be changed using the fields of this object.
 

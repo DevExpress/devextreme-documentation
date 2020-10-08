@@ -18,19 +18,19 @@ When a user points to a series, it may react in one of the following ways depend
     </tr>
     <tr>
         <td><i>"onlyPoint"</i></td>
-        <td><img src="/Content/images/doc/19_2/ChartJS/hoverMode/series/stackedbar/onlyPoint.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedbar/onlyPoint.png" /></td>
     </tr>
     <tr>
         <td><i>"allSeriesPoints"</i></td>
-        <td><img src="/Content/images/doc/19_2/ChartJS/hoverMode/series/stackedbar/allSeriesPoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedbar/allSeriesPoints.png" /></td>
     </tr>
     <tr>
         <td><i>"allArgumentPoints"</i></td>
-        <td><img src="/Content/images/doc/19_2/ChartJS/hoverMode/series/stackedbar/allArgumentPoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedbar/allArgumentPoints.png" /></td>
     </tr>
     <tr>
         <td><i>"none"</i></td>
-        <td><img src="/Content/images/doc/19_2/ChartJS/hoverMode/series/stackedbar/none.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/stackedbar/none.png" /></td>
     </tr>
 </table>
 

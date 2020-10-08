@@ -3,7 +3,7 @@ id: GridBase.navigateToRow(key)
 ---
 ---
 ##### shortDescription
-Navigates the grid to the data page that contains the row with the specified key and scrolls the grid to display the row if it is not in the viewport.
+Navigates the grid to the data page that contains the row with the specified key, expand groups if necessary, and scrolls the grid to display the row if it is outside the viewport.
 
 ##### param(key): any
 The row's key.

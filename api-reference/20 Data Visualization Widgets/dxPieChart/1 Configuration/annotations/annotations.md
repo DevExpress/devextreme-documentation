@@ -183,7 +183,7 @@ To define the position of an unanchored annotation, set the pixel coordinates ([
             y: 200
         }]
 
-- **Annotation anchored to a series or series point**
+- **Annotation anchored to a series point**
 
         annotations: [{
             argument: "California",

@@ -60,7 +60,6 @@ You can call this method at any point in your application.
     </dx-button>
 
     <dx-data-grid ...
-        id='gridContainer'
         ref={this.dataGridRef}
         >    
         <!-- Specify grid options here -->
@@ -68,7 +67,7 @@ You can call this method at any point in your application.
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import Exporter from 'devextreme/pdf_exporter';
+    import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
     
@@ -82,7 +81,7 @@ You can call this method at any point in your application.
 
         exportGrid() {
             const doc = new jsPDF();
-            Exporter.exportDataGrid({
+            DevExpress.excelExporter.exportDataGridToPdf({
                 jsPDFDocument: doc,
                 component: this.dataGrid.instance
             }).then(() => {
@@ -142,7 +141,7 @@ You can call this method at any point in your application.
     import DxButton from 'devextreme-vue/button';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
-    import Exporter from 'devextreme/pdf_exporter';
+    import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = 'dataGrid';
 
@@ -164,7 +163,7 @@ You can call this method at any point in your application.
         methods: {
             exportGrid() {
                 const doc = new jsPDF();
-                Exporter.exportDataGrid({
+                DevExpress.excelExporter.exportDataGridToPdf({
                     jsPDFDocument: doc,
                     component: this.dataGrid
                 }).then(() => {
@@ -190,7 +189,7 @@ You can call this method at any point in your application.
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
 
-    import Exporter from 'devextreme/pdf_exporter';
+    import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = React.createRef();
 
@@ -199,7 +198,7 @@ You can call this method at any point in your application.
             const doc = new jsPDF();
             const dataGrid = dataGridRef.current.instance;
 
-            Exporter.exportDataGrid({
+            DevExpress.excelExporter.exportDataGridToPdf({
                 jsPDFDocument: doc,
                 component: dataGrid
             }).then(() => {

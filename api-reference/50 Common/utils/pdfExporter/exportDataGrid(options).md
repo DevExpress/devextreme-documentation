@@ -81,7 +81,7 @@ You can call this method at any point in your application.
 
         exportGrid() {
             const doc = new jsPDF();
-            DevExpress.excelExporter.exportDataGridToPdf({
+            exportDataGridToPdf({
                 jsPDFDocument: doc,
                 component: this.dataGrid.instance
             }).then(() => {
@@ -163,7 +163,7 @@ You can call this method at any point in your application.
         methods: {
             exportGrid() {
                 const doc = new jsPDF();
-                DevExpress.excelExporter.exportDataGridToPdf({
+                exportDataGridToPdf({
                     jsPDFDocument: doc,
                     component: this.dataGrid
                 }).then(() => {
@@ -197,7 +197,7 @@ You can call this method at any point in your application.
             const doc = new jsPDF();
             const dataGrid = dataGridRef.current.instance;
 
-            DevExpress.excelExporter.exportDataGridToPdf({
+            exportDataGridToPdf({
                 jsPDFDocument: doc,
                 component: dataGrid
             }).then(() => {

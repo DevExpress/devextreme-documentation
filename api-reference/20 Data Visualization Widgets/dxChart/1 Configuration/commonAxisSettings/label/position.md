@@ -43,4 +43,4 @@ The following positions are available for labels on the [argumentAxis](/Document
     </tr>
 </table>
 
-The *"inside"* and *"outside"* values allow you to keep the same label's position when the chart is [rotated](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#rotated).
+The *"inside"* and *"outside"* values allow you to retain the label's position when you [rotate](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#rotated) the chart.

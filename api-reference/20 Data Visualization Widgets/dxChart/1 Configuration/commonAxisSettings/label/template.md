@@ -5,22 +5,22 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for axis labels.
 
 ##### param(data): Object
-<!-- Description goes here -->
+The label's data object.
 
 ##### field(data.value): Date | Number | String
-<!-- Description goes here -->
+The raw value.
 
 ##### field(data.valueText): String
-<!-- Description goes here -->
+The [formatted](/Documentation/ApiReference/Common/Object_Structures/format/) value converted to a string.
 
 ##### param(element): SVGGElement
-<!-- Description goes here -->
+A container for the template content.
 
 ##### return: String | SVGElement | jQuery
-<!-- Description goes here -->
+#include common-template-return-value
 
 ---
 <!-- Description goes here -->

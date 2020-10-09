@@ -53,7 +53,7 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
 ---
 
-![DevExtreme FileManager - Predefined Context Menu Items](~/images/FileManager/context-menu-default-item.png)
+![DevExtreme FileManager - Predefined Context Menu Items](/images/FileManager/context-menu-default-item.png)
 
 **Custom Items**
 
@@ -101,4 +101,4 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
 
 ---
 
-![DevExtreme FileManager - Custom Context Menu Items](~/images/FileManager/context-menu-custom-item.png)
+![DevExtreme FileManager - Custom Context Menu Items](/images/FileManager/context-menu-custom-item.png)

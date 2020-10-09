@@ -8,17 +8,7 @@ inheritsType: dxPieChartCommonAnnotationConfig
 Specifies settings common for all annotations in the **PieChart**.
 
 ---
----
-id: dxPolarChart.Options.commonAnnotationSettings
-type: dxPolarChartCommonAnnotationConfig
-inheritsType: dxPolarChartCommonAnnotationConfig
----
----
-##### shortDescription
-Specifies settings common for all annotations in the **PolarChart**.
-
----
-Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
+Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
 
 The following code shows the **commonAnnotationSettings** declaration syntax:
 
@@ -27,7 +17,7 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
     <!-- tab: index.js -->
     $(function() {
-        $("#polarChart").dxPolarChart({
+        $("#pieChart").dxPieChart({
             // ...
             commonAnnotationSettings: {
                 tooltipEnabled: false
@@ -38,11 +28,11 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-polar-chart ... >
+    <dx-pie-chart ... >
         <dx-common-annotation-settings
             [tooltipEnabled]="false">
         </dx-common-annotation-settings>
-    </dx-polar-chart>
+    </dx-pie-chart>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -61,7 +51,7 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxPolarChartModule } from 'devextreme-angular';
+    import { DxPieChartModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -69,7 +59,7 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
         ],
         imports: [
             BrowserModule,
-            DxPolarChartModule
+            DxPieChartModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -80,21 +70,21 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
     <!-- tab: App.vue -->
     <template>
-        <DxPolarChart ... >
+        <DxPieChart ... >
             <DxCommonAnnotationSettings
                 :tooltip-enabled="false"
             />
-        </DxPolarChart>
+        </DxPieChart>
     </template>
 
     <script>
-    import DxPolarChart, {
+    import DxPieChart, {
         DxCommonAnnotationSettings
-    } from 'devextreme-vue/polar-chart';
+    } from 'devextreme-vue/pie-chart';
 
     export default {
         components: {
-            DxPolarChart,
+            DxPieChart,
             DxCommonAnnotationSettings
         },
         data() {
@@ -108,18 +98,18 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import PolarChart, {
+    import PieChart, {
         CommonAnnotationSettings
-    } from 'devextreme-react/polar-chart';
+    } from 'devextreme-react/pie-chart';
 
     class App extends React.Component {
         render() {
             return (
-                <PolarChart ... >
+                <PieChart ... >
                     <CommonAnnotationSettings
                         tooltipEnabled={false}
                     />
-                </PolarChart>
+                </PieChart>
             );
         }
     }
@@ -127,9 +117,6 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartAnnotations/"
-}
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizeAnnotation)

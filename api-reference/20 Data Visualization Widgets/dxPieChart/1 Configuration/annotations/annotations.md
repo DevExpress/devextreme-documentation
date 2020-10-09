@@ -10,15 +10,16 @@ Specifies the annotation collection.
 ---
 Annotations are images and text blocks that provide additional information about the visualized data.
 
-![DevExtreme PolarChart: Annotations](/images/ChartJS/annotations/polar-chart-text-image-annotation.png)       
-To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'), or [template](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/template.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/annotations/#template') option:
+![DevExtreme PieChart: Annotations](/images/ChartJS/annotations/pie-annotations.png)
+
+To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type]({basewidgetpath}/Configuration/annotations/#type') field set to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/annotations/#template) option:
     
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        $("#polarChart").dxPolarChart({
+        $("#pieChart").dxPieChart({
             annotations: [{
                 type: "text",
                 text: "Annotation text"
@@ -42,7 +43,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-polar-chart ... >
+    <dx-pie-chart ... >
         <dxi-annotation
             type="text"
             text="Annotation text">
@@ -58,7 +59,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
         <svg *dxTemplate="let annotation of 'custom-annotation'">
             <!-- Declare custom SVG markup here -->
         </svg>
-    </dx-polar-chart>
+    </dx-pie-chart>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -76,7 +77,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxPolarChartModule } from 'devextreme-angular';
+    import { DxPieChartModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -84,7 +85,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
         ],
         imports: [
             BrowserModule,
-            DxPolarChartModule
+            DxPieChartModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -95,7 +96,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     <!-- tab: App.vue -->
     <template>
-        <DxPolarChart ... >
+        <DxPieChart ... >
             <DxAnnotation
                 type="text"
                 text="Annotation text"
@@ -113,17 +114,17 @@ To configure annotations, assign an array of objects to the **annotations[]** op
                     <!-- Declare custom SVG markup here -->
                 </svg>
             </template>
-        </DxPolarChart>
+        </DxPieChart>
     </template>
 
     <script>
-    import DxPolarChart, {
+    import DxPieChart, {
         DxAnnotation
-    } from 'devextreme-vue/polar-chart';
+    } from 'devextreme-vue/pie-chart';
 
     export default {
         components: {
-            DxPolarChart,
+            DxPieChart,
             DxAnnotation
         },
         data() {
@@ -137,9 +138,9 @@ To configure annotations, assign an array of objects to the **annotations[]** op
     <!-- tab: App.js -->
     import React from 'react';
 
-    import PolarChart, {
+    import PieChart, {
         Annotation
-    } from 'devextreme-react/polar-chart';
+    } from 'devextreme-react/pie-chart';
 
     function CustomAnnotation(annotation) {
         const data = annotation.data;
@@ -152,7 +153,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
     export default function App() {
         return (
-            <PolarChart ... >
+            <PieChart ... >
                 <Annotation
                     type="text"
                     text="Annotation text"
@@ -165,64 +166,46 @@ To configure annotations, assign an array of objects to the **annotations[]** op
                     type="custom"
                     render={CustomAnnotation}
                 />
-            </PolarChart>
+            </PieChart>
         );
     }
 
 ---
 
-Annotations can be anchored to a **PolarChart** element. To do this, use the [argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument'), [value](/api-reference/_hidden/BaseChartAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value') or [series](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/series.md '{basewidgetpath}/Configuration/annotations/#series') options, depending on the element you want to anchor the annotation to.
+Annotations can be anchored to a **PieChart** element. To do this, use the [argument]({basewidgetpath}/Configuration/annotations/#argument) or [series]({basewidgetpath}/Configuration/annotations/#series) options, depending on the element you want to anchor the annotation to.
 
-To define the position of an unanchored annotation, set the pixel coordinates ([x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') and [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')) or use [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle') and [radius](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/radius.md '{basewidgetpath}/Configuration/annotations/#radius') options.
+To define the position of an unanchored annotation, set the pixel coordinates ([x]({basewidgetpath}/Configuration/annotations/#x) and [y]({basewidgetpath}/Configuration/annotations/#y)) options.
 
 - **Unanchored annotation**
 
         annotations: [{
             x: 100,
             y: 200
-        }, {
-            angle: 45,
-            radius: 100
-        }]
-- **Annotation anchored to a polar chart coordinate**
-
-        annotations: [{
-            argument: new Date(2019, 1, 16),
-            value: 15
         }]
 
 - **Annotation anchored to a series or series point**
 
         annotations: [{
-            argument: new Date(2019, 1, 16),
-            series: "Series 1"
+            argument: "California",
+            series: "States"
         }]
 
-- **Annotation displayed on an axis**
-
-        annotations: [{ 
-            // An annotation on the argument axis 
-            argument: new Date(2019, 1, 16)
-        }, { 
-            // An annotation on the value axis 
-            value: 15
-        }]
-
-- **Mixed anchoring (pixel and chart coordinates used simultaneously)**
+- **Annotation anchored to an argument's edge or center**
 
         annotations: [{
-            argument: new Date(2019, 1, 16),
-            y: 200
+            argument: "California",
+            series: "States",
+            location: "center"
+        }, {
+            argument: "Alaska",
+            series: "States",
+            location: "edge"
         }]
 
 
-When a user long-presses an annotation or hovers the mouse pointer over it, the **PolarChart** displays a [tooltip](/api-reference/_hidden/BaseWidgetAnnotationConfig/tooltipEnabled.md '{basewidgetpath}/Configuration/annotations/#tooltipEnabled').
+When a user long-presses an annotation or hovers the mouse pointer over it, the **PieChart** displays a [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled).
 
-Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartAnnotations/"
-}
+Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizeAnnotation)

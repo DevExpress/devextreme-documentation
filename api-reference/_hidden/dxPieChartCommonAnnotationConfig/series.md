@@ -29,5 +29,5 @@ For example, the following **PieChart** fragment displays two series and an anno
     }]    
 
 #####See Also#####
-- [x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') | [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')
-- [value](/api-reference/_hidden/BaseChartAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value')
+- [x]({basewidgetpath}/Configuration/annotations/#x) | [y]({basewidgetpath}/Configuration/annotations/#y)
+- [value]({basewidgetpath}/Configuration/annotations/#value)

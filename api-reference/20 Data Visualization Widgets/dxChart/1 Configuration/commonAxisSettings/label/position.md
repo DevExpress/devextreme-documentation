@@ -18,11 +18,11 @@ You can specify the following positions for labels on the [valueAxis](/Documenta
     </tr>
     <tr>
         <td>'inside', 'right'</td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/value-axis-label-right.png" /></td>
+        <td><img src="/images/ChartJS/value-axis-label-right.png" /></td>
     </tr>
     <tr>
         <td>'outside', 'left'</td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/value-axis-label-left.png" /></td>
+        <td><img src="/images/ChartJS/value-axis-label-left.png" /></td>
     </tr>
 </table>
 
@@ -35,11 +35,11 @@ The following positions are available for labels on the [argumentAxis](/Document
     </tr>
     <tr>
         <td>'inside', 'top'</td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/argument-axis-label-top.png" /></td>
+        <td><img src="/images/ChartJS/argument-axis-label-top.png" /></td>
     </tr>
     <tr>
         <td>'outside', 'bottom'</td>
-        <td><img src="/Content/images/doc/20_1/ChartJS/argument-axis-label-bottom.png" /></td>
+        <td><img src="/images/ChartJS/argument-axis-label-bottom.png" /></td>
     </tr>
 </table>
 

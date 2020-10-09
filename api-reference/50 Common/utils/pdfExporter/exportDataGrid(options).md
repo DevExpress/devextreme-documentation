@@ -157,7 +157,7 @@ You can call this method at any point in your application.
         },
         computed: {
             dataGrid: function() {
-            return this.$refs[dataGridRef].instance;
+                return this.$refs[dataGridRef].instance;
             }
         },
         methods: {
@@ -188,7 +188,6 @@ You can call this method at any point in your application.
     import Button from 'devextreme-react/button';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
-
     import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = React.createRef();
@@ -214,7 +213,7 @@ You can call this method at any point in your application.
                     />
                     <DataGrid ...
                         ref={dataGridRef}
-                    >
+                        >
                         {/* Specify grid options here */}
                     </DataGrid>
                 </div>

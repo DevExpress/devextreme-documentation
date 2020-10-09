@@ -6,7 +6,7 @@ Each template has access to the following parameters:
 A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
 
 - `index`       
-A zero-based index of the item in the collection. Available only in collection widget templates.
+A zero-based index of the item in the collection. Available only in certain templates.
 
 - `element`     
 A jQuery element that represents the widget element being customized. Available only if you use jQuery.

@@ -6,22 +6,22 @@ EventForAction: GridBase.editCanceled
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A callback function that is executed after a user canceled editing.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.changes): Array<any>
-<!-- Description goes here -->
+An array of objects with edited rows' data.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+The widget's container. It is an  <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" target="_blank">HTML Element</a> or a <a href="https://api.jquery.com/Types/#jQuery" target="_blank">jQuery Element</a> when you use jQuery.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
-<!-- Description goes here -->
+Use this function in row, form, or popup edit [mode](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode) only.

@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after edited data is saved.
 
 ---
-<!-- Description goes here -->
+Main article: [onSaved]('{basewidgetpath}/Configuration/#onSaved')
+
+#####See Also#####
+#include common-link-handleevents

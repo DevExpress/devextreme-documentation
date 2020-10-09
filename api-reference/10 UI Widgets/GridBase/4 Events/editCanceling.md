@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before editing is canceled.
 
 ---
-<!-- Description goes here -->
+Main article: [onEditCanceling]('{basewidgetpath}/Configuration/#onEditCanceling')
+
+#####See Also#####
+#include common-link-handleevents

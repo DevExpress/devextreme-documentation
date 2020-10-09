@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not to shade the widget when the load panel appears.
 
 ---
 <!-- Description goes here -->

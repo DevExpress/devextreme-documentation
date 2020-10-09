@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the shading color. Applies only if [shading](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/loadPanel/shading.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/loadPanel/#shading') is **true**.
 
 ---
-<!-- Description goes here -->
+#include common-colorlist

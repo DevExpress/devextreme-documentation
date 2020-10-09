@@ -8,7 +8,7 @@ inherits: dxChart.Options.commonAnnotationSettings
 Specifies the annotation collection.
 
 ---
-Annotations are images and text blocks that provide additional information on the visualized data. The image below demonstrates their appearance:
+Annotations are containers for images, text blocks and custom content that provide additional information about the visualized data. The image below demonstrates their appearance:
 
 ![DevExtreme Chart: Annotations](/images/ChartJS/visual_elements/annotations.png)
 

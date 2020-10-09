@@ -1,7 +1,7 @@
 ---
-id: GridBase.Options.pager.displayMode
-acceptValues: 'adaptive' | 'compact' | 'full'
-type: String
+id: ExcelExportBaseProps.topLeftCell
+type: CellAddress | String
+default: { row: 1, column: 1 }
 ---
 ---
 ##### shortDescription

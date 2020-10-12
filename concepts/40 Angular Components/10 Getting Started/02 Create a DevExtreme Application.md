@@ -1,8 +1,6 @@
-If you are starting a project from scratch, use the DevExtreme Angular Template. It is a simple application with a navigation menu and several sample views in a responsive layout (see <a href="https://devexpress.github.io/devextreme-angular-template/#/home">live preview</a>).
+If you are starting a project from scratch, use the [DevExtreme Angular Template](/Documentation/Guide/Angular_Components/Application_Template/). It is a simple application with a navigation menu and several sample views in a responsive layout (see <a href="https://devexpress.github.io/devextreme-angular-template/#/home">live preview</a>).
 
-![DevExtreme Angular Template](/images/dx-application-templates/angular-app-template.png)
-
-You can generate the application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
+You can generate this application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 
     npx -p devextreme-cli devextreme new angular-app app-name
     cd app-name
@@ -50,4 +48,4 @@ For further information about DevExtreme Angular components, refer to the follow
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light)
 - [API Reference](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
 
-For more information about the structure and contents of the DevExtreme Angular Template, continue reading this article.
+For more information about the structure and contents of the DevExtreme Angular Template, refer to the [DevExtreme Application Template](/Documentation/Guide/Angular_Components/Application_Template/) article.

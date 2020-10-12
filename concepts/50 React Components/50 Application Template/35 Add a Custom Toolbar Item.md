@@ -34,4 +34,4 @@ The following code adds a search button to the toolbar:
         );
     }
 
-In the code above, the button click handler is declared in the `SideNavOuterToolbar` component. This component applies when the outer toolbar [layout](/concepts/50%20React%20Components/02%20Create%20a%20DevExtreme%20Application/10%20Layouts.md '/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/#Layouts') is used. If the application uses the inner toolbar layout, add the same code to the `SideNavInnerToolbar` component.
+In the code above, the button click handler is declared in the `SideNavOuterToolbar` component. This component applies when the outer toolbar [layout](/Documentation/Guide/React_Components/Application_Template/#Layouts) is used. If the application uses the inner toolbar layout, add the same code to the `SideNavInnerToolbar` component.

@@ -185,7 +185,8 @@ Annotations can be unattached or anchored to a chart element. The following list
 
         annotations: [{
             argument: "California",
-            series: "States"
+            // series: "States"
+            // specify this option if the pie chart contains more than one series 
         }]
 
 - **Annotation positioned at an argument's edge**

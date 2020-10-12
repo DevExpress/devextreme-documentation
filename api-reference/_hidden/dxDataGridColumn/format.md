@@ -9,7 +9,7 @@ Converted to the Number format, except for *"largeNumber"*, which is exported wi
 Converted to the Currency format.
 
 - **Date-Time**  
-Converted to the Date or Time format, depending on the cell value.
+Converted to the Date or Time format, depending on the cell value.      
 Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"minute"* and *"millisecond"* are exported as Long Time.
 
 - **Function**  
@@ -156,5 +156,7 @@ Cannot be converted, the cell value is exported without formatting. To export th
         export default App;
 
     ---
+
+A column's default format depends on the data type, which is detected automatically. If you find that a format is exported incorrectly, you will need to explicitly set the column's [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType).
 
 <!-- import * from "api-reference\_hidden\GridBaseColumn\format.md" -->

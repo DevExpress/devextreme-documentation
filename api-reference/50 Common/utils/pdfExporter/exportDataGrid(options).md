@@ -35,8 +35,8 @@ You can call this method at any point in your application.
             }
         });
 
-        let dataGrid = $('#gridContainer').dxDataGrid({
-            // Specify grid options here
+        const dataGrid = $('#gridContainer').dxDataGrid({
+            // ...
         }).dxDataGrid('instance');
     });
 
@@ -46,7 +46,7 @@ You can call this method at any point in your application.
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script>
         <script src=""https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
-        <!-- reference the DevExtreme sources here -->
+        <!-- DevExtreme sources are referenced here -->
     </head>
 
 ##### Angular   
@@ -126,8 +126,7 @@ You can call this method at any point in your application.
             />
 
             <DxDataGrid ...
-                :ref="dataGridRef"
-                >
+                :ref="dataGridRef">
                 <!-- Specify grid options here -->
             </DxDataGrid>
         </div>

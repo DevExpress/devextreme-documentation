@@ -65,7 +65,7 @@ You can call this method at any point in your application. In this example, we c
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+    import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
     
@@ -138,7 +138,7 @@ You can call this method at any point in your application. In this example, we c
     import DxButton from 'devextreme-vue/button';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
-    import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+    import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = 'dataGrid';
 
@@ -185,7 +185,7 @@ You can call this method at any point in your application. In this example, we c
     import Button from 'devextreme-react/button';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
-    import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+    import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = useRef(null);
 

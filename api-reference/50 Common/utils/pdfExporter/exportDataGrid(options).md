@@ -190,6 +190,8 @@ You can call this method at any point in your application. In this example, we c
     const dataGridRef = useRef(null);
 
     export default function App() {
+        const dataGridRef = useRef(null);
+
         function exportGrid() {
             const doc = new jsPDF();
             const dataGrid = dataGridRef.current.instance;

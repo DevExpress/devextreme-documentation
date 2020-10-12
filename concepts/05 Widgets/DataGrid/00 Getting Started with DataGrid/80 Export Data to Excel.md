@@ -1,11 +1,11 @@
-DevExtreme includes a static method [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) that exports grid data to the Excel format. Its minimum configuration requires a **DataGrid** instance and an Excel worksheet to which grid data should be exported. After the export, you should save the data to an XLSX file.
+DevExtreme includes a static method [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) that exports grid data to the Excel format. Its minimum configuration requires a **DataGrid** instance and an Excel worksheet to which grid data should be exported. After the export, you should save the data to an Excel file.
 
 To create and manage worksheets and save Excel files, this feature requires the following third-party libraries:
 
 - <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+
 - <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
-The **DataGrid** includes an export UI. This tutorial uses it to call the **exportDataGrid(options)** method. Enable the UI by setting the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled) option to **true** and call **exportDataGrid(options)** inside the **DataGrid**'s [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) event handler. You should also disable the deprecated built-in export functionality by setting the `e.cancel` parameter to **true**.
+The **DataGrid** includes an export UI. This tutorial uses it to call the **exportDataGrid(options)** method. Enable the UI by setting the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled) option to **true** and call **exportDataGrid(options)** inside the **DataGrid**'s [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) event handler. You should also set the `e.cancel` parameter to **true** to disable the deprecated built-in export functionality.
 
 ---
 ##### jQuery

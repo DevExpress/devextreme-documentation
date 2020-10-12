@@ -172,9 +172,7 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
 ---
 
-Annotations can be anchored to a **PieChart** element. To do this, use the [argument]({basewidgetpath}/Configuration/annotations/#argument) or [series]({basewidgetpath}/Configuration/annotations/#series) options, depending on the element you want to anchor the annotation to.
-
-To define the position of an unanchored annotation, set the pixel coordinates ([x]({basewidgetpath}/Configuration/annotations/#x) and [y]({basewidgetpath}/Configuration/annotations/#y)) options.
+Annotations can be unattached or anchored to a chart element. The following list shows how to position them. Chart coordinates ([argument]({basewidgetpath}/Configuration/annotations/#argument) and [series]({basewidgetpath}/Configuration/annotations/#series)) specify the element that the annotation's arrow points to; pixel coordinates ([x]({basewidgetpath}/Configuration/annotations/#x) and [y]({basewidgetpath}/Configuration/annotations/#y)) specify the position of the annotation's center.
 
 - **Unanchored annotation**
 
@@ -190,7 +188,7 @@ To define the position of an unanchored annotation, set the pixel coordinates ([
             series: "States"
         }]
 
-- **Annotation anchored to an argument's edge or center**
+- **Annotation positioned at an argument's edge**
 
         annotations: [{
             argument: "California",

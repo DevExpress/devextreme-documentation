@@ -7,7 +7,7 @@ module: pdf_exporter
 Exports grid data to a PDF file.
 
 ##### return: Promise<void>
-A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a> that is resolved with an object that contains the coordinates of the first and last cells.
+A Promise that is resolved when the grid data is prepared for export. It is a native <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
 
 ##### param(options): PdfExportDataGridProps
 Export settings.
@@ -15,7 +15,7 @@ Export settings.
 ---
 This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
-You can call this method at any point in your application.
+You can call this method at any point in your application. In this example, we call this method in a standalone button's [onClick](/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#onClick) handler:
 
 ---
 ##### jQuery
@@ -60,7 +60,7 @@ You can call this method at any point in your application.
     </dx-button>
 
     <dx-data-grid ... >
-        <!-- Specify grid options here -->
+        <!-- ... -->
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -125,7 +125,7 @@ You can call this method at any point in your application.
 
             <DxDataGrid ...
                 :ref="dataGridRef">
-                <!-- Specify grid options here -->
+                <!-- ... -->
             </DxDataGrid>
         </div>
     </template>
@@ -187,7 +187,7 @@ You can call this method at any point in your application.
     import 'jspdf-autotable';
     import { exporDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
-    const dataGridRef = React.createRef();
+    const dataGridRef = useRef(null);
 
     export default function App() {
         function exportGrid() {
@@ -211,7 +211,7 @@ You can call this method at any point in your application.
                     <DataGrid ...
                         ref={dataGridRef}
                         >
-                        {/* Specify grid options here */}
+                        {/* ... */}
                     </DataGrid>
                 </div>
             </React.Fragment>

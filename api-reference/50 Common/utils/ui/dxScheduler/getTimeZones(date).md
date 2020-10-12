@@ -31,10 +31,10 @@ A formatted time zone representation. Includes the **id** and **offset** values.
 
 The following example illustrates how to use the method:
 
-    const timeZones = DevExpress.ui.dxScheduler.getTimeZones(new Date(2020, 6, 21));
+    const timeZones = DevExpress.utils.getTimeZones(new Date(2020, 6, 21));
     // ===== or when using modules =====
-    import dxScheduler, { getTimeZones } from 'ui/scheduler/ui.scheduler';
-    const timeZones = dxScheduler.getTimeZones(new Date(2020, 6, 21));
+    import timeZoneUtils from 'devextreme/time_zone_utils';
+    const timeZones = timeZoneUtils.getTimeZones(new Date(2020, 6, 21));
     // The timeZones constant contains the following array:
     // [
     //      { offset: 2, title: "(GMT +02:00) Europe/Berlin", id: "Europe/Berlin" },

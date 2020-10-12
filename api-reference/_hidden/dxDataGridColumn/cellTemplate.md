@@ -58,7 +58,7 @@ A function that returns the variable that should be tracked.
 A function called when this variable changes.
 
 ---
-The following specificities should be taken into account when you use a **cellTemplate**:
+The following details should be taken into account when you use a **cellTemplate**:
 
 - When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. Use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) function to do this. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSCellCustomization/)
 

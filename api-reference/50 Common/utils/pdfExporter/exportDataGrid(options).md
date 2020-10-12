@@ -59,9 +59,7 @@ You can call this method at any point in your application.
         (onClick)="exportGrid($event)">
     </dx-button>
 
-    <dx-data-grid ...
-        ref={this.dataGridRef}
-        >    
+    <dx-data-grid ... >
         <!-- Specify grid options here -->
     </dx-data-grid>
 

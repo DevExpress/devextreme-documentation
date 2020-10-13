@@ -31,4 +31,4 @@ Assign a Promise to this field to perform an asynchronous operation, such as a r
 
 ---
 
- If the default saving logic is used (e.cancel is false), the widget will save data only when a promise is resolved. Irrespective of the e.cancel value, the 'Error has occured' message is shown when a promise is rejected.
+If the default saving logic is used (e.cancel is false), the widget will save data only when a promise is resolved. Irrespective of the e.cancel value, the 'Error has occured' message is shown when a promise is rejected.

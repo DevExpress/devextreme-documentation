@@ -11,7 +11,7 @@ The column name of a cell being edited.
 ---
 This option can only be used if **editing**.[mode](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode) is *"cell"* or *"batch"*.
 
-Use this option to check if a user edits an item as done in this example:
+The following example checks if a user edits a cell:
 
     $(function() {
         $("#dataGridContainer").dxDataGrid({

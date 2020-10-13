@@ -27,17 +27,4 @@ The widget's container. It is an  <a href="https://developer.mozilla.org/en-US/d
 Model data. Available only if Knockout is used.
 
 ---
-
-This function is 
-
-Each editing mode has its distinctive way to cancel editing:
-
-* Row - the Edit button in the current row +
-
-* Batch - a button to discard all changes in the toolbar -
-
-* Cell - ? +
-
-* Form - the Cancel button in the current form +
-
-* Popup - the Cancel button in the current popup window - 
+<!-- Description goes here -->

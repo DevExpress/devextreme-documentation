@@ -8,7 +8,7 @@ inherits: dxPieChart.Options.commonAnnotationSettings
 Specifies the annotation collection.
 
 ---
-Annotations are containers for images, text blocks and custom content that provide additional information about the visualized data.
+Annotations are containers for images, text blocks, and custom content that provide additional information about the visualized data.
 
 ![DevExtreme PieChart: Annotations](/images/ChartJS/annotations/pie-annotations.png)
 
@@ -197,9 +197,9 @@ Annotations can be unattached or anchored to a chart element. The following list
         }]
 
 
-When a user long-presses an annotation or hovers the mouse pointer over it, the **PieChart** displays a [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled).
+The **PieChart** displays a [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled) when a user long-presses an annotation or hovers the mouse pointer over it.
 
-Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
+Objects in the **annotations[]** array configure individual annotations. To specify options that apply to all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
 
 #####See Also#####
 - [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizeAnnotation)

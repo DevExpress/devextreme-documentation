@@ -18,11 +18,11 @@ Since the changes option is currently marked as CTP, the only way to add an obje
 
 Each object consists of the following fields:
 
-* **type** 
+* **type**         
 The type of operation: "insert", "update", or "remove".
 
-* **data** 
+* **data**          
 The row's inserted or updated data fields. This field is used when the operation type is "insert" or "update".
 
-* **key** 
+* **key**              
 The value of row's key as specified in the keyExpr option.

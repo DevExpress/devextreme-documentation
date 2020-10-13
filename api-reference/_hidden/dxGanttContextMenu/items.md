@@ -10,7 +10,7 @@ Configures context menu item settings.
 
 ---
 
-The **Gantt** widget allows you to add default and custom context menu items. 
+The **Gantt** widget allows you to customize default and add custom context menu items. 
 
 **Predefined Items**
 
@@ -27,7 +27,7 @@ Predefined context menu items include:
 - **'deleteDependency'** - Deletes a dependency.
 - **'taskDetails'** - Opens the edit dialog.
 
-To add a predefined item to the context menu, add its [name](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/#name) and optional settings ('visible', 'beginGroup', 'text', 'icon', 'disabled') to the [items](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/) collection.
+To add a predefined item to the context menu, add its [name](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/#name) and optional settings (for example, 'visible', 'text', and 'icon') to the [items](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/) collection.
 
 ---
 

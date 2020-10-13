@@ -8,7 +8,7 @@ inherits: dxVectorMap.Options.commonAnnotationSettings
 Specifies the annotation collection.
 
 ---
-Annotations are images and text blocks that provide additional information about the visualized data.
+Annotations are containers for images, text blocks, and custom content that provide additional information about the visualized data.
 
 ![DevExtreme VectorMap: Annotations](/images/ChartJS/annotations/vector-map-text-image-annotation.png) 
 

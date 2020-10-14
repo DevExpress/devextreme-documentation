@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the HTML element a click on which invokes the file upload dialog.
+Specifies the HTML element which invokes the file upload dialog.
 
 ---
 

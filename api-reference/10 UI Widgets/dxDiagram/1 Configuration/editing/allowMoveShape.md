@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can move a shape.
 
 ---
-<!-- Description goes here -->

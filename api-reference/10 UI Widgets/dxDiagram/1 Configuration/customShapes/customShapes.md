@@ -277,3 +277,6 @@ Use the [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/t
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithIcons/"
 }
+
+#####See Also#####
+- [Custom Shapes](/Documentation/Guide/Widgets/Diagram/Custom_Shapes/)

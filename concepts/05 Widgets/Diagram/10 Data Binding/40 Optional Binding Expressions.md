@@ -19,7 +19,12 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a></td>
         <td>A parent container node key. The parent container node must be of the <i>verticalContainer</i> or <i>horizontalContainer</i> type. Excludes <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerChildrenExpr">containerChildrenExpr</a>.</td>
         <td>"102"</td>
-    </tr>   
+    </tr>
+    <tr>
+        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#customDataExpr">customDataExpr</a></td>
+        <td>A node's custom data.</td>
+        <td>-</td>
+    </tr>
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#heightExpr">heightExpr</a></td>
         <td>A node's height, in <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#units">units</a>.</td>
@@ -83,6 +88,11 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
         <th>Edge option</th>
         <th>Value the option should return</th>
         <th>Sample return value</th>
+    </tr>
+        <tr>
+        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#customDataExpr">customDataExpr</a></td>
+        <td>An edge's custom data.</td>
+        <td>-</td>
     </tr>
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromExpr">fromExpr</a></td>

@@ -10,22 +10,9 @@ Configures context menu item settings.
 
 ---
 
-The **Gantt** widget allows you to customize default and add custom context menu items. 
+The context menu contains a set of default commands: **'addTask'**, **'taskDetails'** and **'deleteTask'**. Use the [contextMenu](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu) option to recreate the context menu items.
 
-**Predefined Items**
-
-Predefined context menu items include:
-
-- **'undo'** - Reverses the last action.
-- **'redo'** - Repeats the undone action.
-- **'expandAll'** - Expands all tasks.
-- **'collapseAll'** - Collapses all tasks.
-- **'addTask'** - Adds a new task.
-- **'deleteTask'** - Deletes a task.
-- **'zoomIn'** - Zooms in the chart.
-- **'zoomOut'** - Zooms out the chart.
-- **'deleteDependency'** - Deletes a dependency.
-- **'taskDetails'** - Opens the edit dialog.
+![DevExtreme Gantt - Default Context Menu](/images/Gantt/context-menu-default-items.png)
 
 To add a predefined item to the context menu, add its [name](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/#name) and optional settings (for example, 'visible', 'text', and 'icon') to the [items](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/) collection.
 
@@ -58,7 +45,7 @@ To add a predefined item to the context menu, add its [name](/Documentation/ApiR
 
 **Custom Items**
 
-To add a custom context menu item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/#text) and optional settings (for example, a category). Use the [customCommand](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#customCommand) event to handle clicks on custom context menu items.
+To add a custom context menu item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/#text) and optional settings (for example, a name or category). Use the [customCommand](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#customCommand) event to handle clicks on custom context menu items.
 
 ---
 

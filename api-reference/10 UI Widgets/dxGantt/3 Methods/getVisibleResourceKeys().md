@@ -3,10 +3,23 @@ id: dxGantt.getVisibleResourceKeys()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the keys of the visible resources.
 
 ##### return: Array<Object>
-<!-- Description goes here -->
+The keys.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    //...
+    var keys = gantt.getVisibleResourceKeys();
+
+---
+
+#####See Also#####
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

@@ -84,3 +84,5 @@ If the [autoLayout.type](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configur
             points: [{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}],
       },
     ];
+
+The **Diagram** widget reloads the modified diagram data every time the data source changes. The [onRequestLayoutUpdate](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#onRequestLayoutUpdate) function is executed after diagram data is reloaded and allows you to specify whether or not the widget should update the diagram layout.

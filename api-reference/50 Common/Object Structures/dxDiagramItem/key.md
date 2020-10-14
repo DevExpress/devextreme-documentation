@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the item's key from a data source.
 
 ---
-<!-- Description goes here -->

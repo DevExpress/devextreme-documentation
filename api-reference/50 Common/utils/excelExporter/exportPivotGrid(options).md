@@ -9,7 +9,7 @@ Exports pivot grid data to Excel.
 ##### return: Promise<CellRange>
 <!-- %return% -->
 
-##### param(options): ExportPivotGridProps
+##### param(options): ExcelExportPivotGridProps
 <!-- %param(options)% -->
 
 ---

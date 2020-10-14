@@ -3,7 +3,7 @@ id: dxScheduler.showAppointmentPopup(appointmentData, createNewAppointment, curr
 ---
 ---
 ##### shortDescription
-Shows the appointment details form. 
+Shows the appointment details form.
 
 ##### param(appointmentData): Object | undefined
 The initial appointment.

@@ -1,13 +1,13 @@
 ---
 id: utils.getTimeZones(date)
-module: time_zone_utils
+module: utils
 export: getTimeZones
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: Array<Object>
+##### return: Array<dxSchedulerTimeZone>
 <!-- Description goes here -->
 
 ##### param(date): Date | undefined

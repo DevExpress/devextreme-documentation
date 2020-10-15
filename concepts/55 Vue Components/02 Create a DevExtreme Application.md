@@ -2,7 +2,12 @@ If you are starting a project from scratch, use the [DevExtreme Vue Template](/D
 
 You can generate this application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 
+    // Generate a Vue 2 application
     npx -p devextreme-cli devextreme new vue-app app-name
+
+    // Generate a Vue 3 application
+    npx -p devextreme-cli devextreme new vue-app app-name --version=3
+
     cd app-name
     npm run serve
 

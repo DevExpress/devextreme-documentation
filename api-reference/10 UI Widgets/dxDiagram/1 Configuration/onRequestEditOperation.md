@@ -6,7 +6,7 @@ EventForAction: dxDiagram.requestEditOperation
 ---
 ---
 ##### shortDescription
-A function that is executed in two cases: before a user edits a diagram and before the UI related to an edit operation is updated. Use this function to specify whether the operation is allowed.
+A function that allows you to prohibit an edit operation at run time.
 
 ##### param(e): Object
 Information about the event.
@@ -16,7 +16,7 @@ Specifies whether the edit operation is allowed.
 **Default value:** true.
 
 ##### field(e.args): dxDiagramAddShapeArgs | dxDiagramAddShapeFromToolboxArgs | dxDiagramDeleteShapeArgs | dxDiagramDeleteConnectorArgs | dxDiagramChangeConnectionArgs | dxDiagramChangeConnectorPointsArgs | dxDiagramBeforeChangeShapeTextArgs | dxDiagramChangeShapeTextArgs | dxDiagramBeforeChangeConnectorTextArgs | dxDiagramChangeConnectorTextArgs | dxDiagramResizeShapeArgs | dxDiagramMoveShapeArgs
-An object that contains information about the processed edit operation.
+An object that contains information about the processed shape or connector. The parameter's value type depends on the operation.
 
 ##### field(e.component): {WidgetName}
 The widget instance's name.
@@ -31,6 +31,11 @@ Model data. Available only if you use Knockout.
 The processed operation.
 
 ##### field(e.updateUI): Boolean
-Returns **true** if the event is raised by UI update; returns **false** if the event is raised by a user action.
+Identifies the reason why the event is raised. `true` value indicates that the widget is updating the UI. You can prohibit an operation to hide the corresponding UI element. 
+`false` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed, and, for instance, to display an error message if a user tries to perform a prohibited action.
 
 ---
+If you want to disable a specific operation type for the entire diagram, you can also set an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) property to `false`.
+
+#####See Also#####
+- [Restrict Edit Operations](/Documentation/Guide/Widgets/Diagram/Restrict_Edit_Operations)

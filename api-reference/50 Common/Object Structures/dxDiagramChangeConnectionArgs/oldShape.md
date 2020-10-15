@@ -4,7 +4,6 @@ type: dxDiagramShape
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The previous connected shape.
 
 ---
-<!-- Description goes here -->

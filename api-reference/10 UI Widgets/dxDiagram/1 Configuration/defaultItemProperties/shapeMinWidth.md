@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the default minimum width of a shape.
 
 ---
-<!-- Description goes here -->
+The **shapeMinWidth** option specifies the minimum width of a shape if the [minWidth](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#minWidth) option does not provide another value.

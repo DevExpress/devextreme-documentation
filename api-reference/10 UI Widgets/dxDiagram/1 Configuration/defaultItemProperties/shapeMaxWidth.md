@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the default maximum width of a shape.
 
 ---
-<!-- Description goes here -->
+The **shapeMaxWidth** option specifies the maximum width of a shape if the [maxWidth](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#maxWidth) option does not provide another value.

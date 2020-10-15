@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the default minimum height of a shape.
 
 ---
-<!-- Description goes here -->
+The **shapeMinHeight** option specifies the minimum height of a shape if the [minHeight](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#minHeight) option does not provide another value.

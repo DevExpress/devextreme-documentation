@@ -6,23 +6,27 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-An array of objects with edited rows' data.
+An array of objects with unsaved rows' changes.
 
 ---
 
-#include common-ctp-note with {
-    component: "HtmlEditor"
-}
-
-Since the changes option is currently marked as CTP, the only way to add an object of type *"insert"* is thru the interface and with the [addRow](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#addRow) method.
-
 Each object consists of the following fields:
 
-* **type**         
+* **type**                
 The type of operation: "insert", "update", or "remove".
 
-* **data**          
-The row's inserted or updated data fields. This field is used when the operation type is "insert" or "update".
+* **data**             
+The inserted or updated row's data.
 
-* **key**              
-The value of row's key as specified in the keyExpr option.
+* **key**                     
+The key value(s) of a data source.
+
+#include common-ctp-note with {
+    component: "editing.changes"
+}
+
+Due to CTP, objects of type *"insert"* can only be added thru the interface or with the [addRow](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#addRow) method.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"
+}

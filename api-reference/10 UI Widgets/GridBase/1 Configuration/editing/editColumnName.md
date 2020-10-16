@@ -11,7 +11,7 @@ The column name of a cell being edited.
 ---
 This option can only be used if **editing**.[mode](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode) is *"cell"* or *"batch"*.
 
-The following example checks if a user edits a cell:
+The following example prints the column name of a cell being edited to the console:
 
     $(function() {
         $("#dataGridContainer").dxDataGrid({
@@ -19,7 +19,7 @@ The following example checks if a user edits a cell:
             // editing.mode should be "cell" or "batch"
             onOptionChanged: function(e) {
                 var editColumnName = e.component.option("editing.editColumnName");
-                if(editColumnName === null) {
+                if(editColumnName !== null) {
                     console.log('Editing a cell in a column ', editColumnName);
                 } else {
                     console.log('Editing is inactive');
@@ -29,4 +29,4 @@ The following example checks if a user edits a cell:
     });
 
 #####See Also#####
-- [editRowKey](http://localhost:32956/Documentation/20_2/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#editRowKey)
+- [editRowKey](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#editRowKey)

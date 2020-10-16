@@ -39,5 +39,5 @@ Specifies the DevExtreme layout to add. Available values:
 * `--empty`     
 Specifies whether to skip sample views generation (default: `false`).
 
-* `--version` (Vue only)        
+* `--version`, `-v` (Vue only)        
 Specifies whether to generate a Vue 2 or Vue 3 application. Available values: 2 (default) and 3. 

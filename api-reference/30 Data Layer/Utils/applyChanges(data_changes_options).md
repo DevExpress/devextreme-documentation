@@ -5,8 +5,8 @@ export: default
 ---
 ---
 ##### shortDescription
-Applies an array with edited changes to a data source array.
-
+Applies an array with edit changes to a data source array.
+ 
 ##### return: Array<any>
 An array with applied changes.
 
@@ -14,17 +14,20 @@ An array with applied changes.
 The data source array to be updated.
 
 ##### param(changes): Array<any>
-The array with edited data to be applied to a data source array.
+The array with changes data to be applied.
 
 ##### param(options?): Object
 An object defining how to apply changes.
 
 ##### field(options?.immutable): Boolean
-If `true`, a new array with applied changes is returned; the initial `data` array is unchanged.
-If `false`, the initial `data` array is changed in place and then returned.
+A flag that defines immutability of the `data` array.
 
 ##### field(options?.keyExpr): String | Array<String>
-Specifies which data fields provide keys used to locate data source objects to be updated.
-
+Specifies te key fields by which to locate objects for updating.
 ---
-<!-- Description goes here -->
+
+If options.immutable is `true`, the initial `data` array is unchanged; a new array with applied changes is returned. If `false`, the initial `data` array is changed in place and then returned.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"
+}

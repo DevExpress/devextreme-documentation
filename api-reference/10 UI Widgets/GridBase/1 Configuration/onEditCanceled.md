@@ -7,12 +7,12 @@ EventForAction: GridBase.editCanceled
 ---
 ##### shortDescription
 A callback function that is executed after a user cancels editing.
-
+ 
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
 ##### field(e.changes): Array<any>
-An array of objects with edited rows' data.
+An array of objects with unsaved rows' changes.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

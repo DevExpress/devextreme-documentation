@@ -9,7 +9,7 @@ firedEvents: optionChanged
 An array of objects with unsaved rows' changes.
 
 ---
-
+ 
 Each object consists of the following fields:
 
 * **type**                

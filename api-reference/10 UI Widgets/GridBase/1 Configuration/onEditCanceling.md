@@ -7,15 +7,15 @@ EventForAction: GridBase.editCanceling
 ---
 ##### shortDescription
 A callback function that is executed when a user clicks the Cancel button (or [cancelEditData()](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cancelEditData) is called) before editing data is discarded.
-
+ 
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-If true, this flag requires you to implement a custom logic for data discarding.
+If true, this flag disables the default saving logic.
 
 ##### field(e.changes): Array<any>
-An array of objects with edited rows' data.
+An array of objects with unsaved rows' changes.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

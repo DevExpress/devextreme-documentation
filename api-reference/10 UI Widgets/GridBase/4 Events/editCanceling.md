@@ -5,7 +5,7 @@ type: eventType
 ---
 ##### shortDescription
 Raised before editing is canceled.
-
+ 
 ---
 Main article: [onEditCanceling]('{basewidgetpath}/Configuration/#onEditCanceling')
 

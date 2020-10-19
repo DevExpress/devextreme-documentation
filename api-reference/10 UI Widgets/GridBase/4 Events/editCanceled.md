@@ -4,10 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised after editing is canceled.
+Raised after row changes are discarded.
  
 ---
-Main article: [onEditCanceled]('{basewidgetpath}/Configuration/#onEditCanceled')
+Main article: [onEditCanceled]({basewidgetpath}/Configuration/#onEditCanceled)
 
 #####See Also#####
 #include common-link-handleevents

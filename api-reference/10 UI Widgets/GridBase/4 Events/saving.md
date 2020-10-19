@@ -4,10 +4,11 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised before edited data is saved.
+Raised before pending row changes are saved.
+
 
 ---
-Main article: [onSaving]('{basewidgetpath}/Configuration/#onSaving')
+Main article: [onSaving]({basewidgetpath}/Configuration/#onSaving)
 
 #####See Also#####
 #include common-link-handleevents

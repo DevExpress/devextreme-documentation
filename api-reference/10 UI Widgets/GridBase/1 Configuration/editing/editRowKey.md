@@ -6,15 +6,15 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-The key value(s) of a row being edited.
+The key(s) of a row being edited.
  
 ---
 
-Values for this option are taken from the column(s) specified in the [keyExpr](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr) option or the `key` option of the corresponding store object.
+Values for this option are taken from the data field(s) specified in the [keyExpr]({basewidgetpath}/Configuration/#keyExpr) option or the [key](/Documentation/20_2/ApiReference/Data_Layer/CustomStore/Configuration/#key) option of the store.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"
 }
 
 #####See Also#####
-- [editColumnName](http://localhost:32956/Documentation/20_2/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#editColumnName)
+- [editColumnName](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#editColumnName)

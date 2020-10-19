@@ -4,10 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised after edited data is saved.
+Raised after row changes are saved.
 
 ---
-Main article: [onSaved]('{basewidgetpath}/Configuration/#onSaved')
+Main article: [onSaved]({basewidgetpath}/Configuration/#onSaved)
 
 #####See Also#####
 #include common-link-handleevents

@@ -8,11 +8,11 @@ inherits: dxVectorMap.Options.commonAnnotationSettings
 Specifies the annotation collection.
 
 ---
-Annotations are containers for images, text blocks, and custom content that provide additional information about the visualized data.
+Annotations are containers for images, text blocks, and custom content that display additional information about the visualized data.
 
 ![DevExtreme VectorMap: Annotations](/images/ChartJS/annotations/vector-map-text-image-annotation.png) 
 
-To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'), or [template](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/template.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#template') option:
+To create annotations, assign an array of objects to the **annotations[]** option. Each object configures an individual annotation. You can set each annotation's [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') option to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'), or [template](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/template.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#template') option:
     
 ---
 ##### jQuery

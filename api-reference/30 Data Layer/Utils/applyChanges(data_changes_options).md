@@ -21,6 +21,7 @@ Configures how to apply changes.
 
 ##### field(options?.immutable): Boolean
 If `true` (default), the source array remains unchanged; a new array with applied changes is returned.
+
 If `false`, changes are applied directly to the source array which is then returned.
 
 ##### field(options?.keyExpr): String | Array<String>

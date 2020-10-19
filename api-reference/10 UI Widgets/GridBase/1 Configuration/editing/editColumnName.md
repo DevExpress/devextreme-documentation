@@ -6,7 +6,7 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-The [name] of a column being edited. Applies only if **editing**.[mode]({basewidgetpath}/Configuration/editing/#mode) is *"cell"* or *"batch"*.
+The [name]({basewidgetpath}/Configuration/columns/#name) of a column being edited. Applies only if **editing**.[mode]({basewidgetpath}/Configuration/editing/#mode) is *"cell"* or *"batch"*.
 
 ---
 

@@ -18,14 +18,14 @@ The following table illustrates the validation status indicators:
     </tr>
     <tr>
         <td><code>"pending"</code></td>
-        <td><img src="/Content/images/doc/20_2/UiWidgets/text-box-validation-pending.png" alt="DevExtreme editor validation status: pending" /></td>
+        <td><img src="/images/UiWidgets/text-box-validation-pending.png" alt="DevExtreme editor validation status: pending" /></td>
     </tr>
     <tr>
         <td><code>"valid"</code></td>
-        <td><img src="/Content/images/doc/20_2/UiWidgets/text-box-validation-valid.png" alt="DevExtreme editor validation status: valid" /></td>
+        <td><img src="/images/UiWidgets/text-box-validation-valid.png" alt="DevExtreme editor validation status: valid" /></td>
     </tr>
     <tr>
         <td><code>"invalid"</code></td>
-        <td><img src="/Content/images/doc/20_2/UiWidgets/text-box-validation-invalid.png" alt="DevExtreme editor validation status: invalid" /></td>
+        <td><img src="/images/UiWidgets/text-box-validation-invalid.png" alt="DevExtreme editor validation status: invalid" /></td>
     </tr>
 </table>

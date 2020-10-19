@@ -1,6 +1,6 @@
 Major scale ticks can be accompanied by scale labels. These labels display scale values. Scale labels are designed to make data represented by the **LinearGauge** more comprehensible.
 
-<img src="/Content/images/doc/20_2/ChartJS/LinearGaugeScaleLabels.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeScaleLabels" style="display:block; margin:0 auto" />
+<img src="/images/ChartJS/LinearGaugeScaleLabels.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeScaleLabels" style="display:block; margin:0 auto" />
 
 To configure scale labels, use the options within the **scale**.[label](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/scale/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Configuration/scale/label/') object.
 

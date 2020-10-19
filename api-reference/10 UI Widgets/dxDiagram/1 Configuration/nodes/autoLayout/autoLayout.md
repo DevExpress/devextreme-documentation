@@ -14,3 +14,6 @@ The **layout** option is in effect when a diagram is bound to a data source usin
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
 }
+
+#####See Also#####
+- [Diagram Layout](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Diagram_Layout)

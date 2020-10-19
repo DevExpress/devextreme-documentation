@@ -3,10 +3,9 @@ id: dxFileUploader.removeFile(file)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Removes a file.
 
 ##### param(file): File
-<!-- Description goes here -->
+The file that is being removed.
 
 ---
-<!-- Description goes here -->

@@ -2,7 +2,7 @@ This guide gives a detailed overview of [PivotGrid](/api-reference/10%20UI%20Wid
 
 Below is a pivot grid element map. It may be helpful as you begin learning the capabilities of the **PivotGrid** widget. **Hover** over an element on the map to discover the name of this element. A **click** on an element navigates you to a topic devoted to this element.
 
-<p><img style="margin:0px auto;display:block" src="/Content/images/doc/20_2/DataGrid/PivotGridElements.png" alt="DevExtreme dxPivotGrid Elements" usemap="#pivotGridElements" /></p>
+<p><img style="margin:0px auto;display:block" src="/images/DataGrid/PivotGridElements.png" alt="DevExtreme dxPivotGrid Elements" usemap="#pivotGridElements" /></p>
 
 <map id="pivotGridElements" name="pivotGridElements">
     <area shape="rect" alt="Show Field Chooser" title="Show Field Chooser" coords="819,22,856,55" href="/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Chooser" />

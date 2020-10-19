@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the shape maintains its width-to-height ratio on [auto resize](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#autoSizeEnabled).
 
 ---
-<!-- Description goes here -->
+When the **Diagram** widget is bound to a data source, shapes are resized to fit the shape's text. Set the **keepRatioOnAutoSize** option to **true** to maintain the width-to-height ratio of the shape on auto resize.

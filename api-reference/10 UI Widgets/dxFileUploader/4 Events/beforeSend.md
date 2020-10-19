@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before the request is sent to the server and allows you to customize this request.
 
 ---
-<!-- Description goes here -->
+Main article: [onBeforeSend](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#onBeforeSend)
+
+#####See Also#####
+#include common-link-handleevents

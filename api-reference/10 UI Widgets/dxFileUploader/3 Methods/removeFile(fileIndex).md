@@ -3,10 +3,19 @@ id: dxFileUploader.removeFile(fileIndex)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Removes a file with the specified index.
 
 ##### param(fileIndex): Number
-<!-- Description goes here -->
+The file's index.
 
 ---
-<!-- Description goes here -->
+---
+
+##### jQuery
+
+    <!-- tab: JavaScript -->
+    var uploadControl = $("#uploaderContainer").dxFileUploader("instance");
+
+    uploadControl.removeFile(1)
+
+---

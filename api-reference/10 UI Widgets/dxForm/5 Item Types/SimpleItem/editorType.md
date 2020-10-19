@@ -8,7 +8,7 @@ type: String
 Specifies which editor widget is used to display and edit the form item value.
 
 ---
-[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when specifying this option. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"* because the **Form** widget imports them automatically when creating form items. 
+[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when specifying this option. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*, because the **Form** widget imports them automatically when creating form items. 
 
 #include common-ctp-note with {
     component: "HtmlEditor"

@@ -3,11 +3,11 @@
     docsLink: "https://vuejs.org/v2/guide/#Getting-Started"
 }
 
-The DevExtreme Vue Component Suite is a feature-complete set of 65+ responsive and touch-enabled UI components for Vue applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
+The DevExtreme Vue Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Vue applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
 
 The DevExtreme Vue Component Suite provides the following platform-specific features:
 
-- [Application template for a quick start](/concepts/55%20Vue%20Components/02%20Create%20a%20DevExtreme%20Application/00%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/')
+- [Application template for a quick start](/Documentation/Guide/Vue_Components/Application_Template/)
 
 - [Declarative configuration syntax](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/')
 

@@ -24,7 +24,7 @@ The widget's instance.
 The uploaded file.
 
 ##### field(e.message): String
-<!-- Description goes here -->
+The message displayed by the widget when uploading is finished.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
@@ -33,3 +33,6 @@ Model data. Available only if Knockout is used.
 Specifies an XMLHttpRequest for the file.
 
 ---
+
+#####See Also#####
+- [uploadedMessage](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadedMessage)

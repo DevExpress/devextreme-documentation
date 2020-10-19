@@ -5,7 +5,22 @@ default: {}
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies custom data for the upload request.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileUploaderContainer").dxFileUploader({
+            // ...
+            uploadCustomData: {
+                __RequestVerificationToken: document.getElementsByName("__RequestVerificationToken")[0].value
+            }
+        });
+    });
+
+---

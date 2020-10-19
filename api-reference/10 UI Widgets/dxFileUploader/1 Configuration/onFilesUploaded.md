@@ -6,19 +6,34 @@ EventForAction: dxFileUploader.filesUploaded
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when all files are successfully uploaded.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
-<!-- Description goes here -->
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileUploaderContainer").dxFileUploader({
+            // ...
+            onFilesUploaded: function(e) {
+                // Your code goes here
+            }
+        });
+    });
+
+---

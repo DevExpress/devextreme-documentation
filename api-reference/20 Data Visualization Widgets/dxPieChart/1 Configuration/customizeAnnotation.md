@@ -6,13 +6,15 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### param(annotation): dxPieChartAnnotationConfig | any
-<!-- Description goes here -->
+<!-- %param(annotation)% -->
 
 ##### return: dxPieChartAnnotationConfig
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\20 Data Visualization Widgets\dxChart\1 Configuration\customizeAnnotation.md' -->

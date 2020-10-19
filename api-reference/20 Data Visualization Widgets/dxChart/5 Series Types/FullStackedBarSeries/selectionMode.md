@@ -20,19 +20,19 @@ When a user selects a bar, its series may react in one of the following ways dep
     </tr>
     <tr>
         <td><i>"onlyPoint"</i></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/onlyPoint.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/fullstackedbar/onlyPoint.png" /></td>
     </tr>
     <tr>
         <td><i>"allSeriesPoints"</i></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/allSeriesPoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/fullstackedbar/allSeriesPoints.png" /></td>
     </tr>
     <tr>
         <td><i>"allArgumentPoints"</i></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/allArgumentPoints.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/fullstackedbar/allArgumentPoints.png" /></td>
     </tr>
     <tr>
         <td><i>"none"</i></td>
-        <td><img src="/Content/images/doc/20_2/ChartJS/hoverMode/series/fullstackedbar/none.png" /></td>
+        <td><img src="/images/ChartJS/hoverMode/series/fullstackedbar/none.png" /></td>
     </tr>
 </table>
 

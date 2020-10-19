@@ -1,6 +1,6 @@
 Values and subvalues are indicated on the gauge scale that is divided by scale ticks. These ticks can be major or minor.
 
-<img src="/Content/images/doc/20_2/ChartJS/LinearGaugeScaleTicks.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeScaleTicks" style="display:block; margin:0 auto" />
+<img src="/images/ChartJS/LinearGaugeScaleTicks.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeScaleTicks" style="display:block; margin:0 auto" />
 
 To configure major and minor scale ticks, use the **scale**.[tick](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/tick '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Configuration/scale/tick/') and **scale**.[minorTick](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/minorTick '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Configuration/scale/minorTick/') configuration objects, respectively.
 

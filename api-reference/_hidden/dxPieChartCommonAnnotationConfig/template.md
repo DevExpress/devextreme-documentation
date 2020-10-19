@@ -5,16 +5,18 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### param(annotation): dxPieChartCommonAnnotationConfig | any
-<!-- Description goes here -->
+<!-- %param(annotation)% -->
 
 ##### param(element): SVGGElement
-<!-- Description goes here -->
+<!-- %param(element)% -->
 
 ##### return: String | SVGElement | jQuery
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\_hidden\dxChartCommonAnnotationConfig\template.md' -->

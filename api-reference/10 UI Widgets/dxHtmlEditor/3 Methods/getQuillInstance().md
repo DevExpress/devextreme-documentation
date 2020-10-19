@@ -3,9 +3,9 @@ id: dxHtmlEditor.getQuillInstance()
 ---
 ---
 ##### shortDescription
-Gets <a href="https://quilljs.com/docs/api/" target="_blank">Quill</a>'s instance.
+Gets the <a href="https://github.com/DevExpress/devextreme-quill/tree/master/docs/docs/api" target="_blank">DevExtreme Quill</a>'s instance.
 
 ##### return: Object
-<a href="https://quilljs.com/docs/api/" target="_blank">Quill</a>'s instance.
+The DevExtreme Quill's instance.
 
 ---

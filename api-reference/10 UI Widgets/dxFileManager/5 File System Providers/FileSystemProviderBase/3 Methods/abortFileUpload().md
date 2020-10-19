@@ -11,7 +11,7 @@ A Promise that is resolved after the file upload is aborted. It is a <a href="ht
 ##### param(fileData): File
 The file that is being uploaded.
 
-##### param(uploadInfo): Object
+##### param(uploadInfo): UploadInfo
 Information about the file upload session.
 
 ##### param(destinationDirectory): FileSystemItem

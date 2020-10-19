@@ -5,11 +5,11 @@
 
 [note] DevExtreme provides two React component libraries: DevExtreme React Components, which are wrappers over DevExtreme widgets, described here and <a href="https://github.com/DevExpress/devextreme-reactive/blob/master/README.md" target="_blank">DevExtreme Reactive Components</a>. Refer to <a href="https://community.devexpress.com/blogs/oliver/archive/2018/04/20/devextreme-new-react-wrappers-vs-native-react-components.aspx" target="_blank">this blog post</a> for a detailed comparison of the two libraries.
 
-The DevExtreme React Component Suite is a feature-complete set of 65+ responsive and touch-enabled UI components for React applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
+The DevExtreme React Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for React applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
 
 The DevExtreme React Component Suite provides the following platform-specific features:
 
-- [Application template for a quick start](/concepts/50%20React%20Components/02%20Create%20a%20DevExtreme%20Application/00%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/')
+- [Application template for a quick start](/Documentation/Guide/React_Components/Application_Template/)
 
 - [Controlled](/concepts/50%20React%20Components/20%20State%20Management/3%20Controlled%20Mode.md '/Documentation/Guide/React_Components/State_Management/#Controlled_Mode') and [uncontrolled](/concepts/50%20React%20Components/20%20State%20Management/7%20Uncontrolled%20Mode.md '/Documentation/Guide/React_Components/State_Management/#Uncontrolled_Mode') state management modes
 

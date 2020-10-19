@@ -3,11 +3,11 @@
     docsLink: "https://angular.io/docs"
 }
 
-The DevExtreme Angular Component Suite is a feature-complete set of 65+ responsive and touch-enabled UI components for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
+The DevExtreme Angular Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
 
 The DevExtreme Angular Component Suite provides the following platform-specific features:
 
-- [Application template for a quick start](/concepts/40%20Angular%20Components/10%20Getting%20Started/02%20Create%20a%20DevExtreme%20Application/00%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/')
+- [Application template for a quick start](/Documentation/Guide/Angular_Components/Application_Template/)
 
 - Integration with [Angular CLI](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/'), [Webpack](/concepts/40%20Angular%20Components/10%20Getting%20Started/30%20Other%20Approaches/04%20Using%20Webpack '/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_Webpack/'), [Ionic](/concepts/40%20Angular%20Components/10%20Getting%20Started/30%20Other%20Approaches/05%20Using%20Ionic '/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_Ionic/'), [Rollup](/concepts/40%20Angular%20Components/10%20Getting%20Started/30%20Other%20Approaches/06%20Using%20Rollup '/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_Rollup/'), [SystemJS](/concepts/40%20Angular%20Components/10%20Getting%20Started/30%20Other%20Approaches/07%20Using%20SystemJS '/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_SystemJS/')
 

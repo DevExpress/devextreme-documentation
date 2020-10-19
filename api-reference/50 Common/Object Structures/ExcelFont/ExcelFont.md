@@ -1,6 +1,7 @@
 ---
 id: ExcelFont
 type: Object
+deprecated: 
 ---
 ---
 ##### shortDescription

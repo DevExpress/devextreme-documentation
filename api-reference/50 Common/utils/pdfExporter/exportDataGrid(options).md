@@ -4,6 +4,7 @@ module: pdf_exporter
 ---
 ---
 ##### shortDescription
+[tags] ctp
 Exports grid data to a PDF file.
 
 ##### return: Promise<void>
@@ -13,6 +14,9 @@ A Promise that is resolved when the grid data is prepared for export. It is a na
 Export settings.
 
 ---
+
+#include common-ctp-note-wo-devextreme
+
 This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
 You can call this method at any point in your application. In this example, we call this method in a standalone button's [onClick](/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#onClick) handler:

@@ -5,13 +5,22 @@ export: getTimeZones
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the list of IANA time zones.
 
 ##### return: Array<dxSchedulerTimeZone>
-<!-- Description goes here -->
+A list of time zone objects.
 
 ##### param(date): Date | undefined
-<!-- Description goes here -->
+A date for which to get time zones. If undefined, the current date is used.
 
 ---
-<!-- Description goes here -->
+An example of a time zone object:
+
+    { offset: 2, title: "(GMT +02:00) Europe/Berlin", id: "Europe/Berlin" }
+
+The following code illustrates how to use this method:
+
+    const timeZones = DevExpress.utils.getTimeZones(new Date(2020, 6, 21));
+    // ===== or when using modules =====
+    import timeZoneUtils from 'devextreme/time_zone_utils';
+    const timeZones = timeZoneUtils.getTimeZones(new Date(2020, 6, 21));

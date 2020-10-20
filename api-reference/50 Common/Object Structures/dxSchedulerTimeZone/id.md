@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A time zone text string from the IANA database.
 
 ---
 <!-- Description goes here -->

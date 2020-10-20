@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A formatted time zone representation. Includes the **id** and **offset** values.
 
 ---
 <!-- Description goes here -->

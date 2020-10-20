@@ -6,4 +6,6 @@ id: dxSchedulerTimeZone
 A time zone object.     
 
 ---
-<!-- Description goes here -->
+An example of a time zone object:
+
+    { offset: 1, title: "(GMT +01:00) Europe - London", id: "Europe/London" }

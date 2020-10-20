@@ -5,7 +5,7 @@ export: getTimeZones
 ---
 ---
 ##### shortDescription
-Gets the list of IANA time zone objects.
+Gets the list of <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA</a> time zone objects.
 
 ##### return: Array<dxSchedulerTimeZone>
 A list of IANA time zone objects.
@@ -20,10 +20,12 @@ The following code illustrates how to use this method:
     // ===== or when using modules =====
     import timeZoneUtils from 'devextreme/time_zone_utils';
     const timeZones = timeZoneUtils.getTimeZones(new Date(2020, 6, 21));
-
-The returned array consists of objects in the following format:
-
-    { offset: 2, title: "(GMT +02:00) Europe/Berlin", id: "Europe/Berlin" }
+    // The timeZones constant contains the following array:
+    // [
+    //      { offset: 2, title: "(GMT +02:00) Europe/Berlin", id: "Europe/Berlin" },
+    //      { offset: 2, title: "(GMT +02:00) Europe/Amsterdam", id: "Europe/Amsterdam" }
+    //      ...
+    // ]
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport"

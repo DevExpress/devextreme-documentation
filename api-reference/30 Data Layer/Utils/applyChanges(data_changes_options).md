@@ -20,11 +20,17 @@ An array of changes to be applied.
 Configures how to apply changes.
 
 ##### field(options?.immutable): Boolean
+<<<<<<< HEAD
 If `true` (default), the source array remains unchanged; a new array with applied changes is returned.                            
 If `false`, changes are applied directly to the source array which is then returned.
+=======
+If `true` (default), the source array remains unchanged; a new array with applied changes is returned.
+
+If `false`, changes are applied directly to the source array, which is then returned.
+>>>>>>> 5adb6e2aed8105d756a6b63bca170e42ee83de60
 
 ##### field(options?.keyExpr): String | Array<String>
-Specifies the key property (or properties) that provide(s) keys to locate data items.
+Specifies the key property (or properties) that provide(s) keys to locate data items. Default value: *"id"*
 ---
 
 #include common-demobutton with {

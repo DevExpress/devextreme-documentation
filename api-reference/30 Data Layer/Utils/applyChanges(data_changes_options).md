@@ -22,10 +22,10 @@ Configures how to apply changes.
 ##### field(options?.immutable): Boolean
 If `true` (default), the source array remains unchanged; a new array with applied changes is returned.
 
-If `false`, changes are applied directly to the source array which is then returned.
+If `false`, changes are applied directly to the source array, which is then returned.
 
 ##### field(options?.keyExpr): String | Array<String>
-Specifies the key property (or properties) that provide(s) keys to locate data items.
+Specifies the key property (or properties) that provide(s) keys to locate data items. Default value: *"id"*
 ---
 
 #include common-demobutton with {

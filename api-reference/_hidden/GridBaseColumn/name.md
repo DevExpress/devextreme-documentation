@@ -1,7 +1,7 @@
 ---
 id: GridBaseColumn.name
 type: String
-default: [dataField]({basewidgetpath}/Configuration/columns/#dataField) value
+default: undefined
 ---
 ---
 ##### shortDescription

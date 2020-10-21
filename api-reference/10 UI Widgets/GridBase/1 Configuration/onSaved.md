@@ -6,22 +6,22 @@ EventForAction: GridBase.saved
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after row changes are saved.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.changes): Array<any>
-<!-- Description goes here -->
+Saved changes.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
+Raised after row changes are discarded.
+ 
 ---
-<!-- Description goes here -->
+Main article: [onEditCanceled]({basewidgetpath}/Configuration/#onEditCanceled)
+
+#####See Also#####
+#include common-link-handleevents

@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when the edit operation is canceled, but row changes are not yet discarded.
 
 ---
-<!-- Description goes here -->
+Main article: [onEditCanceling]({basewidgetpath}/Configuration/#onEditCanceling)
+
+#####See Also#####
+#include common-link-handleevents

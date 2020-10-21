@@ -6,28 +6,33 @@ EventForAction: GridBase.saving
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before pending row changes are saved.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to **true** if the default saving logic should be disabled.
 
 ##### field(e.changes): Array<any>
-<!-- Description goes here -->
+Pending row changes; a copy of the **editing**.[changes]({basewidgetpath}/Configuration/editing/#changes) array.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The widget's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ##### field(e.promise): Promise<void>
-<!-- Description goes here -->
+Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 
 ---
-<!-- Description goes here -->
+
+A save operation can be initiated from the UI (with the Save button) or programatically (with the [saveEditData()]({basewidgetpath}/Methods/#saveEditData) method).
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"
+}

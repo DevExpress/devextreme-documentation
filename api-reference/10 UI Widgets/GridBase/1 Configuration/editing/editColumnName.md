@@ -6,7 +6,9 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The [name]({basewidgetpath}/Configuration/columns/#name) of a column being edited. Applies only if **editing**.[mode]({basewidgetpath}/Configuration/editing/#mode) is *"cell"* or *"batch"*.
 
 ---
-<!-- Description goes here -->
+
+#####See Also#####
+- [editRowKey](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#editRowKey)

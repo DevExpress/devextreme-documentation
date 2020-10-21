@@ -6,7 +6,7 @@ export: default
 ---
 ##### shortDescription
 Applies an array of changes to a source data array.
- 
+
 ##### return: Array<any>
 An array with applied changes.
 
@@ -25,6 +25,7 @@ If `false`, changes are applied directly to the source array which is then retur
 
 ##### field(options?.keyExpr): String | Array<String>
 Specifies the key property (or properties) that provide(s) keys to locate data items. Default value: *"id"*
+
 ---
 
 #include common-demobutton with {

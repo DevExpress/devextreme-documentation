@@ -7,7 +7,7 @@ EventForAction: GridBase.editCanceled
 ---
 ##### shortDescription
 A function that is executed after row changes are discarded.
- 
+
 ##### param(e): Object
 Information about the event that caused the function's execution.
 

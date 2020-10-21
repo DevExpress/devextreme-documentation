@@ -5,7 +5,7 @@ type: eventType
 ---
 ##### shortDescription
 Raised after row changes are discarded.
- 
+
 ---
 Main article: [onEditCanceled]({basewidgetpath}/Configuration/#onEditCanceled)
 

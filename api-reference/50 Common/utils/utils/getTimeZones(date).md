@@ -14,6 +14,8 @@ A list of IANA time zone objects.
 A date for which to get time zones. If not passed, the current date is used.
 
 ---
+This method can accept a specific date to get a list of time zones valid at a particular moment. This is useful because time zones can be removed or added, and their offsets can change, for example, due to daylight savings.
+
 The following code illustrates how to use this method:
 
     const timeZones = DevExpress.utils.getTimeZones(new Date(2020, 6, 21));

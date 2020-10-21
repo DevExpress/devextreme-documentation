@@ -7,7 +7,7 @@ EventForAction: GridBase.editCanceling
 ---
 ##### shortDescription
 A function that is executed when the edit operation is canceled, but row changes are not yet discarded.
- 
+
 ##### param(e): Object
 Information about the event that caused the function's execution.
 

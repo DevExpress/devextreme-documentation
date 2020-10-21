@@ -7,7 +7,7 @@ firedEvents: optionChanged
 ---
 ##### shortDescription
 The key(s) of a row being edited.
- 
+
 ---
 
 Values for this option are taken from the data field(s) specified in the [keyExpr]({basewidgetpath}/Configuration/#keyExpr) option or the [key](/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key) option of the store.

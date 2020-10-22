@@ -3,7 +3,7 @@ id: dxSchedulerTimeZone
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A time zone object.
 
 ---
 <!-- Description goes here -->

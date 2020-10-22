@@ -5,7 +5,7 @@ The **DataGrid** includes the following UI elements used to filter and search da
 - [filterPanel](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/filterPanel/) with [filterBuilder](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#filterBuilder)
 - [searchPanel](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/searchPanel/)
 
-In this tutorial, we display the **filterRow** and **searchPanel**:
+In this tutorial, the **filterRow** and **searchPanel** are displayed:
 
 ---
 ##### jQuery
@@ -90,4 +90,4 @@ In this tutorial, we display the **filterRow** and **searchPanel**:
 
 ---
 
-Run the code and enter a value into a filter row cell or the search panel. Grid data will be filtered according to this value. In the next step, we will configure grouping.
+Run the code and enter a value into a filter row cell or the search panel. Grid data will be filtered according to this value.

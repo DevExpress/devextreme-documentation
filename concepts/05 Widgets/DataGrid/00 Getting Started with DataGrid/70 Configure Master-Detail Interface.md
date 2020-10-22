@@ -1,6 +1,4 @@
-The master-detail interface adds an expandable section that contains detail data (*"detail section"*) to a standard data row (*"master row"*). The detail section can contain anything.
-
-Master-detail data representation is configured in the [masterDetail](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) object. To specify detail sections' contents, implement the [template](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/#template). Users can expand and collapse details sections if you set the [enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/#enabled) option to **true**:
+**DataGrid** allows you to display expandable detail sections under data rows. To configure such data display, use the [masterDetail](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) object. Set the [enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/#enabled) option to **true** and specify a [template](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/#template) that will serve as detail section content:
 
 ---
 ##### jQuery

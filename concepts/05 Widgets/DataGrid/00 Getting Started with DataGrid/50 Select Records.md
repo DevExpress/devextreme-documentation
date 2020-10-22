@@ -221,5 +221,3 @@ You can access the selected record's data in the [onSelectionChanged](/Documenta
     }
 
 ---
-
-In the next step, we will add a summary to count grid records.

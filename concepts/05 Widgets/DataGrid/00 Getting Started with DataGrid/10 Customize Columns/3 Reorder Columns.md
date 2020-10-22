@@ -134,4 +134,4 @@ To reorder grid columns, change their order in the **columns** array. Users also
 
 ---
 
-In the code above, we also specify the *"date"* [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType) for the `BirthDate` and `HireDate` columns. This is needed because the **DataGrid** detects data types automatically based on column values, and `BirthDate` and `HireDate` values are stored in the data source as strings.
+In the code above, we also specify the *"date"* [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType) for the `BirthDate` and `HireDate` columns. You need to do this because `BirthDate` and `HireDate` are stored as strings, but you want the **DataGrid** to treat them as date-time values.

@@ -84,5 +84,3 @@ The **DataGrid** displays all columns from the **columns** array. To hide a colu
     export default App;
 
 ---
-
-The next step describes how to sort data in code and in the UI.

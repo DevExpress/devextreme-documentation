@@ -1,4 +1,4 @@
-The **DataGrid** component can work with different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource) option and specify the key field in the [keyExpr](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr) option to access data items, as we do in this tutorial. If you want to use another data source type, refer to one of the following articles:
+The **DataGrid** component can work with different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource) option and specify the key field in the [keyExpr](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr) option. If you want to use another data source type, refer to one of the following articles:
 
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 - [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
@@ -755,4 +755,4 @@ The **DataGrid** component can work with different data source types. To use a l
 
 ---
 
-If you run this code, you should see a **DataGrid** in which a column is created for each data field. All the columns have an equal width and the same order as their data fields. In the next step, we will resize, reorder, and hide some of the columns.
+If you run this code, you should see a **DataGrid** in which a column is created for each data field. All the columns have equal width and the same order as their data fields.

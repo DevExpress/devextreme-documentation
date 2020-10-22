@@ -6,7 +6,7 @@ id: dxSortable.update()
 Updates **Sortable**'s dimensions. Call this method after items are added or their dimensions are changed during dragging.
 
 ---
-Depending on the framework, use this method in different places:
+Depending on the framework, call this method as follows:
 
 * **jQuery** - immediately after a markup update;
 

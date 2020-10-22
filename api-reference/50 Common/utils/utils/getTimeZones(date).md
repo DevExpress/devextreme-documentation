@@ -11,10 +11,10 @@ Gets the list of <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time
 A list of IANA time zone objects.
 
 ##### param(date): Date | undefined
-A date for which to get time zones. If not passed, the current date is used.
+A date for which to get time zone objects. If not passed, the current date is used.
 
 ---
-This method can accept a specific date to get a list of time zones valid at a particular moment. This is useful because time zones can be removed or added, and their offsets can change, for example, due to daylight savings.
+This method can accept a specific date to get the list of time zone objects for that date. This is useful because these objects can be removed or added, and time zone offsets can change, for example, due to daylight savings.
 
 The following code illustrates how to use this method:
 

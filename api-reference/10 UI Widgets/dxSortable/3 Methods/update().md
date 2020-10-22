@@ -3,7 +3,18 @@ id: dxSortable.update()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Updates **Sortable**'s dimensions. Call this method after items are added or their dimensions are changed during dragging.
 
 ---
-<!-- Description goes here -->
+Depending on the framework, call this method as follows:
+
+* **jQuery** - immediately after a markup update;
+
+* **React** - in the <a href="https://reactjs.org/docs/hooks-reference.html#useeffect" target="_blank">useEffect</a> hook or in the <a href="https://reactjs.org/docs/react-component.html#componentdidupdate" target="_blank">componentDidUpdate</a> lifecycle method;
+
+* **Angular** - in the `ngAfterContentChecked` hook;
+
+* **Vue** - in the <a href="https://vuejs.org/v2/api/#updated" target="_blank">updated</a> hook.
+
+#####See Also#####
+#include common-link-callmethods

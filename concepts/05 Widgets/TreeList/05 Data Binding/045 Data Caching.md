@@ -1,4 +1,4 @@
-The **TreeList** caches data by default. This allows the widget to decrease the loading time when a user sorts and filters data or expands a row the second time. To update data in cache, call the [refresh()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/refresh().md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#refresh') method of the widget or the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method of the **DataSource**.
+The **TreeList** caches data by default. This allows the widget to decrease the loading time when a user sorts and filters data or expands a row the second time. To update data in cache, call the [refresh()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/refresh().md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#refresh') method of the widget or the [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') method of the **DataSource**.
 
 ---
 ##### jQuery
@@ -7,7 +7,7 @@ The **TreeList** caches data by default. This allows the widget to decrease the 
     $("#treeListContainer").dxTreeList("refresh");
     // ===== or =====
     var treeListDataSource = $("#treeListContainer").dxTreeList("getDataSource");
-    treeListDataSource.load();
+    treeListDataSource.reload();
 
 ##### Angular
 
@@ -23,7 +23,7 @@ The **TreeList** caches data by default. This allows the widget to decrease the 
             this.treeList.instance.refresh();
             // ===== or =====
             let treeListDataSource = this.treeList.instance.getDataSource();
-            treeListDataSource.load();
+            treeListDataSource.reload();
         }
     }
     @NgModule({

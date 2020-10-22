@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-A formatted time zone representation. Includes the **id** and **offset** values.
+A time zone in the following format: `(GMT ±[hh]:[mm]) [id]`.
 
 ---
 <!-- Description goes here -->

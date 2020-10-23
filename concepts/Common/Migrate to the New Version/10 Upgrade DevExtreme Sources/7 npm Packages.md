@@ -5,3 +5,8 @@ Run the following commands:
     npm install devextreme-angular@20.1 --save --save-exact // If you use DevExtreme with Angular
     npm install devextreme-vue@20.1 --save --save-exact // If you use DevExtreme with Vue
     npm install devextreme-react@20.1 --save --save-exact // If you use DevExtreme with React
+
+    npm install devextreme-themebuilder@20.1 --save --save-exact // If the application is created using the DevExtreme CLI
+
+#####See Also#####
+- [DevExtreme CLI: Create a New Application](/Documentation/Guide/Common/DevExtreme_CLI/#DevExtreme_Application)

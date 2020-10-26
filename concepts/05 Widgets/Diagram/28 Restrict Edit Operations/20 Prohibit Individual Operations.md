@@ -1,3 +1,7 @@
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"
+}
+
 Every time a user attempts an edit operation, the widget raises the [requestEditOperation](/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#requestEditOperation) event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
 
 - The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) option is set to `false`, the event does not fire for this operation. The table below lists all available operations.

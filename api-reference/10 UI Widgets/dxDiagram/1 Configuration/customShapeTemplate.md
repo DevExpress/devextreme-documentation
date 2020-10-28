@@ -23,7 +23,6 @@ Use the [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/"
 }
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/"
 }

@@ -194,3 +194,7 @@ You can call this method at any point in your application. In the example below,
 ---     
 
 <!-- import * from 'api-reference\50 Common\utils\excelExporter\exportDataGrid(options).md' -->
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
+}

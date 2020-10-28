@@ -1,0 +1,1 @@
+- **messageHtml** in [dialog]() methods

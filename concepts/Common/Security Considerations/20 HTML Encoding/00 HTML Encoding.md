@@ -1,0 +1,1 @@
+HTML encoding is a simple technique that help protect your web application from cross-site scripting (XSS) attacks. Its operation principle is to convert HTML (safe and unsafe) to plain text.

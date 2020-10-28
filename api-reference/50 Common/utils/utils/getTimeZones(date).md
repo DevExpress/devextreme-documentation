@@ -1,6 +1,6 @@
 ---
 id: utils.getTimeZones(date)
-module: utils
+module: time_zone_utils
 export: getTimeZones
 ---
 ---

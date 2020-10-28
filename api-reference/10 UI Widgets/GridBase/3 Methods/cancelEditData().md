@@ -6,6 +6,10 @@ id: GridBase.cancelEditData()
 Discards changes that a user made to data.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchUpdateRequest/"
+}
+
 #####See Also#####
 #include common-link-callmethods
 - [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '{basewidgetpath}/Methods/#saveEditData')

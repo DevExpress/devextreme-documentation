@@ -234,3 +234,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
 
 
 <!-- import * from 'api-reference\50 Common\Object Structures\ExcelExportDataGridProps\customizeCell.md' -->
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSCellCustomization/"
+}

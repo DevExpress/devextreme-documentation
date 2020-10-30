@@ -191,5 +191,9 @@ When a user long-presses an annotation or hovers the mouse pointer over it, the 
 
 Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomAnnotations/"
+}
+
 #####See Also#####
 - [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#customizeAnnotation')

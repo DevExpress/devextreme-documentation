@@ -33,3 +33,7 @@ Model data. Available only if Knockout is used.
 The target item's node.
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/ContextMenuIntegration/"
+}

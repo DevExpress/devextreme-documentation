@@ -23,4 +23,6 @@ A container for the template content.
 #include common-template-return-value
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsTemplates/"
+}

@@ -201,5 +201,9 @@ The **PieChart** displays a [tooltip]({basewidgetpath}/Configuration/annotations
 
 Objects in the **annotations[]** array configure individual annotations. To specify options that apply to all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithAnnotations/"
+}
+
 #####See Also#####
 - [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizeAnnotation)

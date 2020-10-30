@@ -54,5 +54,9 @@ The type of right-clicked task or dependency.
 
 ---
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ContextMenu/"
+}
+
 #####See Also#####
 - [contextMenuPreparing](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#contextMenuPreparing)

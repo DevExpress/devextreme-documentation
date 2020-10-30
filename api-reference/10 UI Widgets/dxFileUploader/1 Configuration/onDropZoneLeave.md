@@ -27,3 +27,10 @@ A drop zone element.
 Model data. Available only if Knockout is used.
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"
+}
+
+#####See Also#####
+- [dropZone](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#dropZone)

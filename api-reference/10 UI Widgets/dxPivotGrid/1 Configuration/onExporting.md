@@ -27,3 +27,7 @@ The name of the file to which data is about to be exported.
 Model data. Available only if Knockout is used.
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
+}

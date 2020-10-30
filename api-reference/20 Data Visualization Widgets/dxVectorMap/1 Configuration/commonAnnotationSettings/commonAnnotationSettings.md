@@ -117,5 +117,9 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 
 ---
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomAnnotations/"
+}
+
 #####See Also#####
 - [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#customizeAnnotation')

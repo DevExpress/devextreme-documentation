@@ -1,6 +1,6 @@
-Items in collection widgets ([List](), [SelectBox](), [Toolbar]()) can apply appearance based on data source fields (see the [Default Templates]() article). [html]() is one of such fields. It specifies item markup. Its values are not encoded. Ensure they does not contain malicious code or use the [text]() field as an alternative. Unlike **html** values, **text** values are encoded.
+Items in collection widgets ([List](/Documentation/ApiReference/UI_Widgets/dxList/), [SelectBox](/Documentation/ApiReference/UI_Widgets/dxSelectBox/), [Toolbar](/Documentation/ApiReference/UI_Widgets/dxToolbar/)) can apply appearance based on data source fields (see the [Default Templates](/Documentation/Guide/Widgets/Common/Templates/#Default_Templates) article). [html](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/#html) is one of such fields that specifies item markup. Its values are not encoded. Ensure that they does not contain malicious code. Alternatively, you can use the [text](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/#text) field. Unlike **html** values, **text** values are encoded.
 
-The following example illustrates how the **html** field can lead to a potential vulnerability: <a href="https://codepen.io/romantsukanov/pen/gOMvydM?editors=1010" target="_blank">HTML Encoding in List</a>. In this example, the **text** and **html** fields have identical values that contain unsafe HTML, but **html** lines are commented out:
+The following example illustrates how the **html** field can lead to a potential vulnerability: <a href="https://codepen.io/romantsukanov/pen/gOMvydM?editors=1010" target="_blank">HTML Encoding in List</a>. In this example, both **text** and **html** values contain unsafe HTML, but **html** lines are commented out:
 
 
     <!-- tab: JavaScript -->
@@ -20,8 +20,8 @@ The following example illustrates how the **html** field can lead to a potential
 
 When **html** is commented out, **text** applies. You can see that its values are interpreted as text and simply displayed:
 
-%IMAGE%
+![DevExtreme List with enabled HTML encoding](/images/UiWidgets/list-item-text.png)
 
 Uncomment the **html** lines, and you will see an alert pop-up window. This is because unsafe HTML was interpreted as script and executed:
 
-%IMAGE%
+![DevExtreme List with disabled HTML encoding](/images/UiWidgets/list-item-html.png)

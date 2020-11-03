@@ -12,7 +12,7 @@ From this tutorial, you will learn how to create a single- or multi-action FAB a
 
 Code examples in this tutorial use icons from the [Ionicons](https://ionicons.com) library. If you are going to replicate the examples in your Angular, Vue, or React application, install the `ionicons` npm package:
 
-    npm install ionicons --save
+    npm install ionicons@4 --save
 
 With jQuery, reference the Ionicons stylesheet in the `<head>` of your page:
 

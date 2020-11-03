@@ -61,9 +61,10 @@ The following code, which configures the example above, illustrates the describe
             <!-- Custom icons by Ionicons -->
             <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">
 
+            <link rel="stylesheet" href="index.css">
             <script type="text/javascript" src="index.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="app-container">
                 <p>View's content</p>
                 <div id="action-edit"></div>

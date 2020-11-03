@@ -6,7 +6,7 @@ This tutorial describes how to configure basic **ButtonGroup** features. We crea
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/ButtonGroup/index.html, /Content/Applications/20_2/GettingStartedWith/ButtonGroup/index.js, /Content/Applications/20_2/GettingStartedWith/ButtonGroup/index.css"></div>
 
-Refer to the subtopics for details on every configuration step. You can also see the full code below:
+Refer to the subtopics for details on every configuration step. You can also see the full code below or download it from the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-buttongroup" target="_blank"> getting-started-with-buttongroup</a>.
 
 ---
 ##### jQuery
@@ -55,7 +55,7 @@ Refer to the subtopics for details on every configuration step. You can also see
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="myButtonGroup"></div>
         </body>
     </html>
@@ -68,7 +68,7 @@ Refer to the subtopics for details on every configuration step. You can also see
         keyExpr="style"
         selectionMode="multiple"
         [(selectedItemKeys)]="selectedFontStyleNames"
-        (onSelectionChanged)="logSelectionChanged($event)">
+        (onSelectionChanged)="logSelectionChanged()">
     </dx-button-group>
 
     <!-- tab: app.component.ts -->

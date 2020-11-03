@@ -49,9 +49,10 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
             <!-- Custom icons by Ionicons -->
             <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">
 
+            <link rel="stylesheet" href="index.css">
             <script type="text/javascript" src="index.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="app-container">
                 <div id="tab-panel"></div>
                 <div id="action-edit"></div>
@@ -353,7 +354,7 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
             }
         });
 
-        var editAction = $("#action-edit").dxSpeedDialAction({
+        const editAction = $("#action-edit").dxSpeedDialAction({
             hint: "Edit",
             icon: "icon ion-md-create",
             onClick: function() {
@@ -361,7 +362,7 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
             }
         }).dxSpeedDialAction("instance");
 
-        var copyAction = $("#action-copy").dxSpeedDialAction({
+        const copyAction = $("#action-copy").dxSpeedDialAction({
             hint: "Copy to clipboard",
             icon: "icon ion-md-copy",
             visible: false,
@@ -370,7 +371,7 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
             }
         }).dxSpeedDialAction("instance");
 
-        var mailAction = $("#action-mail").dxSpeedDialAction({
+        const mailAction = $("#action-mail").dxSpeedDialAction({
             hint: "Send by email",
             icon: "icon ion-md-mail",
             visible: false,
@@ -379,7 +380,7 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
             }
         }).dxSpeedDialAction("instance");
 
-        var facebookAction = $("#action-facebook").dxSpeedDialAction({
+        const facebookAction = $("#action-facebook").dxSpeedDialAction({
             hint: "Share on Facebook",
             icon: "icon ion-logo-facebook",
             visible: false,
@@ -401,6 +402,22 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
                 mailAction.option("visible", true);
                 facebookAction.option("visible", true);
             }
+        }
+
+        function showNotification(message) {
+            DevExpress.ui.notify({
+                message: message,
+                position: {
+                    my: "left bottom",
+                    at: "left bottom",
+                    of: "#app-container",
+                    offset: "16 -16"
+                },
+                minWidth: null,
+                width: function() {
+                    return $("#app-container").width() * 0.7;
+                }
+            }, "info", 1000);
         }
     });
 
@@ -455,10 +472,10 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
     });
     // ...
     export class AppComponent {
+        currentTab: string;
         constructor() {
             this.currentTab = 'Edit tab';
         }
-        currentTab: string;
         switchSDAs(e) {
             this.currentTab = e.addedItems[0].title; 
         }

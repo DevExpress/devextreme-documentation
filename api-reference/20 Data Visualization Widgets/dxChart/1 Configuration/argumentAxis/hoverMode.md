@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.hoverMode
+id: dxChartArgumentAxis.hoverMode
 acceptValues: 'allArgumentPoints' | 'none'
 type: String
 default: 'none'

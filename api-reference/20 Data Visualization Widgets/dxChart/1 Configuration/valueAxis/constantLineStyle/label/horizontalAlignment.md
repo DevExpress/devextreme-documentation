@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.constantLineStyle.label.horizontalAlignment
+id: dxChartValueAxisConstantLineStyleLabel.horizontalAlignment
 acceptValues: 'center' | 'left' | 'right'
 type: String
 default: 'left'

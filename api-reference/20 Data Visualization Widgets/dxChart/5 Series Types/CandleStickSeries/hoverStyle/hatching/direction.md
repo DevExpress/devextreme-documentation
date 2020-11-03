@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CandleStickSeries.hoverStyle.hatching.direction
+id: dxChartSeriesTypesCandleStickSeriesHoverStyleHatching.direction
 acceptValues: 'left' | 'none' | 'right'
 type: String
 default: 'none'

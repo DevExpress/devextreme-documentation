@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar.opacity
+id: dxChartSeriesTypesCommonSeries.valueErrorBar.opacity
 type: Number
 default: undefined
 ---

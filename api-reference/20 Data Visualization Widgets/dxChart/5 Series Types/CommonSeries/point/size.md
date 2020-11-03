@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.size
+id: dxChartSeriesTypesCommonSeriesPoint.size
 type: Number
 default: 12
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.editing.allowUpdating
+id: dxDataGridEditing.allowUpdating
 type: Boolean | function(options)
 default: false
 ---

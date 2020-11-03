@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.innerColor
+id: dxChartSeriesTypesCommonSeries.innerColor
 type: String
 default: '#ffffff'
 ---

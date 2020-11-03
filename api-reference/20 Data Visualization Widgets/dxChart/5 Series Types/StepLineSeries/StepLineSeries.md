@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.StepLineSeries
-type: Object
+type: dxChartSeriesTypesStepLineSeries
 inherits: dxChartSeriesTypes.CommonSeries
 ---
 ---

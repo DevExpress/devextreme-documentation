@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.argumentFormat
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.argumentFormat
 type: format
 default: undefined
 ---

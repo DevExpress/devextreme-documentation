@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.allowDecimals
+id: dxChartCommonAxisSettings.allowDecimals
 type: Boolean
 default: undefined
 ---

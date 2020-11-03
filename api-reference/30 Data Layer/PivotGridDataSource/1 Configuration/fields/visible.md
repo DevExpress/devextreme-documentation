@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.visible
+id: PivotGridDataSourceField.visible
 type: Boolean
 default: true
 ---

@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.summaryType
+id: PivotGridDataSourceField.summaryType
 acceptValues: 'avg' | 'count' | 'custom' | 'max' | 'min' | 'sum'
 type: String
 default: 'count'

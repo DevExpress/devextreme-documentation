@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.animation.enabled
+id: BaseGaugeAnimation.enabled
 type: Boolean
 default: true
 ---

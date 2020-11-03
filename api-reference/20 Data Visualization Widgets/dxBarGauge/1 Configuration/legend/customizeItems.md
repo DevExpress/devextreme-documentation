@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.legend.customizeItems
+id: dxBarGaugeLegend.customizeItems
 type: function(items)
 ---
 ---

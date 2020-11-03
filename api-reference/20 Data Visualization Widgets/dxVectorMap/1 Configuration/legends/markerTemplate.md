@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.markerTemplate
+id: dxVectorMapLegends.markerTemplate
 type: template
 default: undefined
 ---

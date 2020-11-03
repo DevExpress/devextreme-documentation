@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StepAreaSeries.hoverStyle.border.visible
+id: dxChartSeriesTypesStepAreaSeriesHoverStyleBorder.visible
 type: Boolean
 default: true
 ---

@@ -1,6 +1,6 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.hoverStyle.hatching
-type: Object
+id: dxChartSeriesTypesCommonSeriesHoverStyle.hatching
+type: dxChartSeriesTypesCommonSeriesHoverStyleHatching
 ---
 ---
 ##### shortDescription

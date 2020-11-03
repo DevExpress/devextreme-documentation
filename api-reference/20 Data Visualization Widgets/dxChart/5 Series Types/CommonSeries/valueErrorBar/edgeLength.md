@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar.edgeLength
+id: dxChartSeriesTypesCommonSeries.valueErrorBar.edgeLength
 type: Number
 default: 8
 ---

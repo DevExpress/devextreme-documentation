@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.legend.customizeHint
+id: dxChartLegend.customizeHint
 type: function(seriesInfo)
 ---
 ---

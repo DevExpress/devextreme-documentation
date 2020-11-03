@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.valueField
+id: dxPieChartSeriesTypesCommonPieChartSeries.valueField
 type: String
 default: 'val'
 ---

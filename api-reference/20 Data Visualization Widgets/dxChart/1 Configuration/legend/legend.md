@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.legend
-type: Object
+type: dxChartLegend
 ---
 ---
 ##### shortDescription

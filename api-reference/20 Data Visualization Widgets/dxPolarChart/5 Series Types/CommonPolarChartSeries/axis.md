@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.axis
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.axis
 type: String
 default: undefined
 hidden: 

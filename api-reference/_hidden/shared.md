@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.tooltip.shared
+id: dxPolarChartTooltip.shared
 type: Boolean
 default: false
 ---

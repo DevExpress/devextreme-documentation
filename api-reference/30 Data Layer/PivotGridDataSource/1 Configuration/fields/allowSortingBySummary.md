@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.allowSortingBySummary
+id: PivotGridDataSourceField.allowSortingBySummary
 type: Boolean
 default: false
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.rotationAngle
+id: dxChartSeriesTypesCommonSeriesLabel.rotationAngle
 type: Number
 default: 0
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar
 type: Object
 ---
 ---

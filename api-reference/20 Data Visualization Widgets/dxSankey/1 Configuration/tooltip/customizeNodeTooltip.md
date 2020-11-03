@@ -1,5 +1,5 @@
 ---
-id: dxSankey.Options.tooltip.customizeNodeTooltip
+id: dxSankeyTooltip.customizeNodeTooltip
 type: function(info)
 default: undefined
 ---

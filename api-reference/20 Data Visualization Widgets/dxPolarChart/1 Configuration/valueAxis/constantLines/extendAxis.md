@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.constantLines.extendAxis
+id: dxPolarChartValueAxisConstantLines.extendAxis
 type: Boolean
 default: false
 ---

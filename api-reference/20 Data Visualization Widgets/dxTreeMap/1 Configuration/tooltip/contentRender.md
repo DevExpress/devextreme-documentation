@@ -1,5 +1,5 @@
 ---
-id: dxTreeMap.Options.tooltip.contentRender
+id: dxTreeMapTooltip.contentRender
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.border.opacity
+id: dxChartCommonPaneSettings.border.opacity
 type: Number
 default: undefined
 ---

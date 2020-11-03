@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.border.width
+id: dxChartCommonPaneSettings.border.width
 type: Number
 default: 1
 ---

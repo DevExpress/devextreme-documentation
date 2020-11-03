@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.rangearea
+id: dxChartCommonSeriesSettings.rangearea
 type: Object
 ---
 ---

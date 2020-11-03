@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.originValue
+id: dxPolarChartArgumentAxis.originValue
 type: Number
 default: undefined
 ---

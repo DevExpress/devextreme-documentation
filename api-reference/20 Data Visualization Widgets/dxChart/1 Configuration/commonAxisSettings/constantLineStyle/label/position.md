@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.constantLineStyle.label.position
+id: dxChartCommonAxisSettingsConstantLineStyleLabel.position
 acceptValues: 'inside' | 'outside'
 type: String
 default: 'inside'

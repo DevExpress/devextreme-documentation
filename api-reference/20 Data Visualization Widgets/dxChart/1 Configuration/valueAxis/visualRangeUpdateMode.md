@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.visualRangeUpdateMode
+id: dxChartValueAxis.visualRangeUpdateMode
 acceptValues: 'auto' | 'keep' | 'reset' | 'shift'
 type: String
 default: 'auto'

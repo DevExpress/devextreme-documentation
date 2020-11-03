@@ -1,5 +1,5 @@
 ---
-id: dxOverlay.Options.animation.show
+id: dxOverlayAnimation.show
 type: animationConfig
 default: { type: 'pop', duration: 400, from: { scale: 0.55 } }
 ---

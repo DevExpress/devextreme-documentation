@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.period
+id: dxPolarChartArgumentAxis.period
 type: Number
 default: undefined
 ---

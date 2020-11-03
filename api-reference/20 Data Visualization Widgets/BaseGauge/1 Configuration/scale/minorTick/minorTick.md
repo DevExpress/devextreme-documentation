@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.minorTick
+id: BaseGaugeScale.minorTick
 type: Object
 ---
 ---

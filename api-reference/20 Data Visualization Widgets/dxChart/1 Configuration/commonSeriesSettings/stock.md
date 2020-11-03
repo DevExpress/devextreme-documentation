@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.stock
+id: dxChartCommonSeriesSettings.stock
 type: Object
 ---
 ---

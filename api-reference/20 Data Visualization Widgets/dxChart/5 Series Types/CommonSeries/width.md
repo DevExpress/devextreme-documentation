@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.width
+id: dxChartSeriesTypesCommonSeries.width
 type: Number
 default: 2
 ---

@@ -1,6 +1,6 @@
 ---
-id: dxChartSeriesTypes.FullStackedAreaSeries.label
-type: Object
+id: dxChartSeriesTypesFullStackedAreaSeries.label
+type: dxChartSeriesTypesFullStackedAreaSeriesLabel
 ---
 ---
 ##### shortDescription

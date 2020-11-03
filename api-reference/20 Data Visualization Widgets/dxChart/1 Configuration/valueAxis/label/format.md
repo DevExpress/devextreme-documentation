@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.label.format
+id: dxChartValueAxisLabel.format
 type: format
 default: undefined
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxCircularGauge.Options.scale
-type: Object
+type: dxCircularGaugeScale
 ---
 ---
 ##### shortDescription

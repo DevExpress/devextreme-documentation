@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.displayFolder
+id: PivotGridDataSourceField.displayFolder
 type: String
 default: undefined
 ---

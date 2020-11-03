@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.legend
-type: Object
+type: dxPolarChartLegend
 ---
 ---
 ##### shortDescription

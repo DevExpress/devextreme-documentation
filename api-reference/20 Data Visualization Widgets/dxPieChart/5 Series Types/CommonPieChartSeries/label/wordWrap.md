@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.wordWrap
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.wordWrap
 acceptValues: 'normal' | 'breakWord' | 'none'
 type: String
 default: 'normal'

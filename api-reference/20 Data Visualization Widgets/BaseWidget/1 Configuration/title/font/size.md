@@ -1,4 +1,4 @@
 ---
-id: BaseWidget.Options.title.font.size
+id: BaseWidgetTitle.font.size
 default: 28
 ---

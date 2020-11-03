@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.RangeAreaSeries.point
-type: Object
+id: dxChartSeriesTypesRangeAreaSeries.point
+type: dxChartSeriesTypesRangeAreaSeriesPoint
 ---

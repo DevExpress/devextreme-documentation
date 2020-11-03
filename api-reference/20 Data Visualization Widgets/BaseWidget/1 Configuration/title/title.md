@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.title
-type: Object | String
+type: BaseWidgetTitle | String
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxLinearGauge.Options.rangeContainer.horizontalOrientation
+id: dxLinearGaugeRangeContainer.horizontalOrientation
 acceptValues: 'center' | 'left' | 'right'
 type: String
 default: 'right'

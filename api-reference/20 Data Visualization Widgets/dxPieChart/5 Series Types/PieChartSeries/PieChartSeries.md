@@ -1,7 +1,7 @@
 ---
 id: PieChartSeries
 type: Object
-inherits: dxPieChartSeriesTypes.CommonPieChartSeries
+inherits: dxPieChartSeriesTypesCommonPieChartSeries
 hidden: 
 inlineType: 
 ---

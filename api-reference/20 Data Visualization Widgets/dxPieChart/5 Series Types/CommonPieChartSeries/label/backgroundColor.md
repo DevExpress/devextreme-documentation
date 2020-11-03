@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.backgroundColor
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.backgroundColor
 type: String
 default: undefined
 ---

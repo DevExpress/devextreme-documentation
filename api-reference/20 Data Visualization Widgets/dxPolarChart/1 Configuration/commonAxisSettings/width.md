@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.width
+id: dxPolarChartCommonAxisSettings.width
 type: Number
 default: 1
 ---

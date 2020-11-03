@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.lowValueField
+id: dxChartSeriesTypesCommonSeries.lowValueField
 type: String
 default: 'low'
 notUsedInTheme: 

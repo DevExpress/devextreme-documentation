@@ -1,4 +1,4 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.font.color
+id: dxChartCommonAxisSettingsLabel.font.color
 default: '#767676'
 ---

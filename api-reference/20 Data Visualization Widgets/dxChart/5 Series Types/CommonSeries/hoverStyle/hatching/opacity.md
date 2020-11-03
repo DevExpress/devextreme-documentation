@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.opacity
+id: dxChartSeriesTypesCommonSeriesHoverStyleHatching.opacity
 type: Number
 default: 0.75
 ---

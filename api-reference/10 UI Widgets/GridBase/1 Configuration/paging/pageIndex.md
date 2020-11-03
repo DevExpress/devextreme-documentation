@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.paging.pageIndex
+id: GridBasePaging.pageIndex
 type: Number
 default: 0
 firedEvents: optionChanged

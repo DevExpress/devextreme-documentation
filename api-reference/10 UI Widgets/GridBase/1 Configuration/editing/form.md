@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.form
+id: GridBaseEditing.form
 type: dxForm_Options
 ---
 ---

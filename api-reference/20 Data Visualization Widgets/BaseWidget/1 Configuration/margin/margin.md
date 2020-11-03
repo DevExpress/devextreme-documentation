@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.margin
-type: Object
+type: BaseWidgetMargin
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.argumentType
+id: dxPieChartSeriesTypesCommonPieChartSeries.argumentType
 acceptValues: 'datetime' | 'numeric' | 'string'
 type: String
 default: undefined

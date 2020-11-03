@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.rangeContainer.paletteExtensionMode
+id: BaseGaugeRangeContainer.paletteExtensionMode
 acceptValues: 'alternate' | 'blend' | 'extrapolate'
 type: String
 default: 'blend'

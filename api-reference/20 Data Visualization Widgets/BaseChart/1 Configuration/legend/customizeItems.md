@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.legend.customizeItems
+id: BaseChartLegend.customizeItems
 type: function(items)
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.legend.itemTextFormat
+id: dxBarGaugeLegend.itemTextFormat
 type: format
 default: undefined
 ---

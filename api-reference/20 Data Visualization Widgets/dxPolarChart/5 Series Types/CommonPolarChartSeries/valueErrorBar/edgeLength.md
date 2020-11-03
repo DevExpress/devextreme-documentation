@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.edgeLength
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar.edgeLength
 type: Number
 default: 8
 ---

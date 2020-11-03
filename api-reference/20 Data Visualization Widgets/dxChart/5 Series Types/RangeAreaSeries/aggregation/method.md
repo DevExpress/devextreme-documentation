@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.RangeAreaSeries.aggregation.method
+id: dxChartSeriesTypesRangeAreaSeriesAggregation.method
 acceptValues: 'range' | 'custom'
 type: String
 default: 'range'

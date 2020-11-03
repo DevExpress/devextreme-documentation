@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.name
+id: dxChartValueAxis.name
 type: String
 default: undefined
 notUsedInTheme: 

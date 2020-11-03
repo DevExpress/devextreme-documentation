@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.visible
+id: dxPopupToolbarItem.visible
 type: Boolean
 default: true
 ---

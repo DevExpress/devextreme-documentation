@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.stackedbarpolarseries.selectionMode
+id: dxPolarChartSeriesTypesStackedbarpolarseries.selectionMode
 acceptValues: 'onlyPoint' | 'allSeriesPoints' | 'allArgumentPoints' | 'none'
 type: String
 default: 'onlyPoint'

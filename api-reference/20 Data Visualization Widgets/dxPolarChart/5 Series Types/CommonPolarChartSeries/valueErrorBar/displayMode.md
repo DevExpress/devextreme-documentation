@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.displayMode
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar.displayMode
 acceptValues: 'auto' | 'high' | 'low' | 'none'
 type: String
 default: 'auto'

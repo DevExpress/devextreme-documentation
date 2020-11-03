@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.border.dashStyle
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.border.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: undefined

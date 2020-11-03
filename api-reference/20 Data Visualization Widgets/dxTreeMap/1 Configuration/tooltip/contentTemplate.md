@@ -1,5 +1,5 @@
 ---
-id: dxTreeMap.Options.tooltip.contentTemplate
+id: dxTreeMapTooltip.contentTemplate
 type: template
 default: undefined
 ---

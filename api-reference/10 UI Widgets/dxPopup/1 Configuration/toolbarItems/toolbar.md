@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.toolbar
+id: dxPopupToolbarItem.toolbar
 acceptValues: 'bottom' | 'top'
 type: String
 default: 'top'

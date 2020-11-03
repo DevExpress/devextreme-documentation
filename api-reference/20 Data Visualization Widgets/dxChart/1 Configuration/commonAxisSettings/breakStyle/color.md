@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.breakStyle.color
+id: dxChartCommonAxisSettings.breakStyle.color
 type: String
 default: '#ababab'
 ---

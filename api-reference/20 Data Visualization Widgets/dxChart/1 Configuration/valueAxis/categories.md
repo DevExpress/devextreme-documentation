@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.categories
+id: dxChartValueAxis.categories
 type: Array<Number, String, Date>
 ---
 ---

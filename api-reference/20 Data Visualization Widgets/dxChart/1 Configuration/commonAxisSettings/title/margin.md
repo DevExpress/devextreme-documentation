@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.title.margin
+id: dxChartCommonAxisSettingsTitle.margin
 type: Number
 default: 6
 ---

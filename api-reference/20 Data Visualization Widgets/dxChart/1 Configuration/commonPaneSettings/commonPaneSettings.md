@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonPaneSettings
-type: Object
+type: dxChartCommonPaneSettings
 ---
 ---
 ##### shortDescription

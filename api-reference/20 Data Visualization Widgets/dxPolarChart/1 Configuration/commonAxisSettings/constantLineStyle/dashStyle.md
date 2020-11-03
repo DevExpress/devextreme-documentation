@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.constantLineStyle.dashStyle
+id: dxPolarChartCommonAxisSettingsConstantLineStyle.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: 'solid'

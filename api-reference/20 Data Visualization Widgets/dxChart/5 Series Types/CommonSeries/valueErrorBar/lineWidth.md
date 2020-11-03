@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar.lineWidth
+id: dxChartSeriesTypesCommonSeries.valueErrorBar.lineWidth
 type: Number
 default: 2
 ---

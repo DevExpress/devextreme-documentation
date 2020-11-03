@@ -1,5 +1,5 @@
 ---
-id: dxCircularGauge.Options.scale.label.indentFromTick
+id: dxCircularGaugeScaleLabel.indentFromTick
 type: Number
 default: 10
 ---

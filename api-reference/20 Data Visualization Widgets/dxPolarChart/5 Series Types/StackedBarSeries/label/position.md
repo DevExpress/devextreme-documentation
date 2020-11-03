@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.stackedbarpolarseries.label.position
+id: dxPolarChartSeriesTypesStackedbarpolarseriesLabel.position
 acceptValues: 'inside' | 'outside'
 type: String
 default: 'inside'

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.title.textOverflow
+id: dxChartCommonAxisSettingsTitle.textOverflow
 acceptValues: 'ellipsis' | 'hide' | 'none'
 type: String
 default: 'ellipsis'

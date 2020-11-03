@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.rangeContainer.ranges.endValue
+id: BaseGaugeRangeContainer.ranges.endValue
 type: Number
 ---
 ---

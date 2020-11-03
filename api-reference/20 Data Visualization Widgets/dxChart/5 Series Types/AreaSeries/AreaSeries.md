@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.AreaSeries
-type: Object
+type: dxChartSeriesTypesAreaSeries
 inherits: dxChartSeriesTypes.CommonSeries
 ---
 ---

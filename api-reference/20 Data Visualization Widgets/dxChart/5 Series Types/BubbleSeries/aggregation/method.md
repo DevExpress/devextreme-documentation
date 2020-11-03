@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.BubbleSeries.aggregation.method
+id: dxChartSeriesTypesBubbleSeriesAggregation.method
 acceptValues: 'avg' | 'custom'
 type: String
 default: 'avg'

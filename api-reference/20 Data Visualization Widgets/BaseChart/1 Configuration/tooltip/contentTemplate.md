@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.tooltip.contentTemplate
+id: BaseChartTooltip.contentTemplate
 type: template
 default: undefined
 ---

@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.paging
-type: Object
+type: GridBasePaging
 ---
 ---
 ##### shortDescription

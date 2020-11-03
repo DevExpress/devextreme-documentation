@@ -1,4 +1,4 @@
 ---
 id: dxSankey.Options.tooltip
-type: Object
+type: dxSankeyTooltip
 ---

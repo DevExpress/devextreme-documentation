@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.customPosition
+id: dxChartValueAxis.customPosition
 type: Number | Date | String
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.selectionStyle.size
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.selectionStyle.size
 type: Number
 default: 12
 ---

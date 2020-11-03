@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.markerColor
+id: dxVectorMapLegends.markerColor
 type: String
 default: undefined
 ---

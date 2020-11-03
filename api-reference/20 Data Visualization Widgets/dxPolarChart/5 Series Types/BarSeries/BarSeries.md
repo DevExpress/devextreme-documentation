@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.barpolarseries
-type: Object
+type: dxPolarChartSeriesTypesBarpolarseries
 inherits: dxPolarChartSeriesTypes.CommonPolarChartSeries
 ---
 ---

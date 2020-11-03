@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.border.color
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.border.color
 type: String
 default: '#d3d3d3'
 ---

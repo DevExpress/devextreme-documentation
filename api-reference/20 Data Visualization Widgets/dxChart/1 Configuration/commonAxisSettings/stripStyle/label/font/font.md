@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.stripStyle.label.font
+id: dxChartCommonAxisSettingsStripStyleLabel.font
 type: Object
 inherits: Font
 ---

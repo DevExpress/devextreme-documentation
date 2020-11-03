@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.tick.opacity
+id: BaseGaugeScale.tick.opacity
 type: Number
 default: 1
 ---

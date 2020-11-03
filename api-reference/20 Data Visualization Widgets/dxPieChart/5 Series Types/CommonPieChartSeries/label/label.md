@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label
+id: dxPieChartSeriesTypesCommonPieChartSeries.label
 type: Object
 ---
 ---

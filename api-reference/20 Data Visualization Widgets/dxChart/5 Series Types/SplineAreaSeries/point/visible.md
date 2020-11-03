@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.SplineAreaSeries.point.visible
+id: dxChartSeriesTypesSplineAreaSeriesPoint.visible
 type: Boolean
 default: false
 ---

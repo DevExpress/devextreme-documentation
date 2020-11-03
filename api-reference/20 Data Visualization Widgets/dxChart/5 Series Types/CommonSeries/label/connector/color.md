@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.connector.color
+id: dxChartSeriesTypesCommonSeriesLabel.connector.color
 type: String
 default: undefined
 ---

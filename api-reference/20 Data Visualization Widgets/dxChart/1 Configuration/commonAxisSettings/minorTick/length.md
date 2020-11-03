@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorTick.length
+id: dxChartCommonAxisSettings.minorTick.length
 type: Number
 default: 7
 ---

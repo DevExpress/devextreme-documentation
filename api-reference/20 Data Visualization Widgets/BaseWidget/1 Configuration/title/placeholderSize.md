@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.placeholderSize
+id: BaseWidgetTitle.placeholderSize
 type: Number
 default: undefined
 ---

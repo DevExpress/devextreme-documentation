@@ -1,7 +1,8 @@
 ---
 id: PolarChartSeries
 type: Object
-inherits: dxPolarChartSeriesTypes.CommonPolarChartSeries
+inherits: dxPolarChartSeriesTypesCommonPolarChartSeries
+hidden: 
 inlineType: 
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.arrowLength
+id: BaseWidgetTooltip.arrowLength
 type: Number
 default: 10
 ---

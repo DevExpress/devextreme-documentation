@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.constantLines.label.text
+id: dxPolarChartArgumentAxisConstantLinesLabel.text
 type: String
 default: undefined
 ---

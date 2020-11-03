@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.visualRange
+id: dxChartArgumentAxis.visualRange
 type: Object | Array<Number, String, Date>
 inherits: VizRange
 firedEvents: optionChanged

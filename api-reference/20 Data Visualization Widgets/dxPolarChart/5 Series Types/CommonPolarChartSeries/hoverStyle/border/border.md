@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.border
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.hoverStyle.border
 type: Object
 ---
 ---

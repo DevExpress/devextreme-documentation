@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StackedAreaSeries.selectionMode
+id: dxChartSeriesTypesStackedAreaSeries.selectionMode
 acceptValues: 'includePoints' | 'excludePoints' | 'none'
 type: String
 default: 'includePoints'

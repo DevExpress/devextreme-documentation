@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.visible
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.visible
 type: Boolean
 default: false
 ---

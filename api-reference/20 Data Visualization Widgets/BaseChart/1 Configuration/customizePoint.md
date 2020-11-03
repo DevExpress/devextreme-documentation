@@ -9,7 +9,7 @@ Customizes the appearance of an individual series point.
 ##### param(pointInfo): Object
 Information on the series point.
 
-##### return: dxChartSeriesTypes_CommonSeries_point
+##### return: dxChartSeriesTypesCommonSeries_point
 The point's [configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point/').
 
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.minorGrid.visible
+id: dxPolarChartCommonAxisSettings.minorGrid.visible
 type: Boolean
 default: true
 ---

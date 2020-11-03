@@ -1,6 +1,6 @@
 ---
-id: dxChart.Options.argumentAxis.title
-type: String | Object
+id: dxChartArgumentAxis.title
+type: dxChartArgumentAxisTitle
 ---
 ---
 ##### shortDescription

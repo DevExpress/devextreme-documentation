@@ -1,6 +1,6 @@
 ---
 id: BaseChart.Options.adaptiveLayout
-type: Object
+type: BaseChartAdaptiveLayout
 ---
 ---
 ##### shortDescription

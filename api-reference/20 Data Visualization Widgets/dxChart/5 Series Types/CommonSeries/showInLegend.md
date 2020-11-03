@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.showInLegend
+id: dxChartSeriesTypesCommonSeries.showInLegend
 type: Boolean
 default: true
 ---

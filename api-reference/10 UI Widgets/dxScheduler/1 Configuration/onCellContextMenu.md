@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onCellContextMenu
 type: function(e) | String
 default: null
-EventForAction: dxScheduler.cellContextMenu
 ---
 ---
 ##### shortDescription

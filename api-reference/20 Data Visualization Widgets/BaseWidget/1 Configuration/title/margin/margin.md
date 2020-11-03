@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.margin
+id: BaseWidgetTitle.margin
 type: Number | Object
 default: 10
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxCircularGauge.Options.scale.orientation
+id: dxCircularGaugeScale.orientation
 acceptValues: 'center' | 'inside' | 'outside'
 type: String
 default: 'outside'

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.legend.customizeHint
+id: dxPolarChartLegend.customizeHint
 type: function(seriesInfo)
 ---
 ---

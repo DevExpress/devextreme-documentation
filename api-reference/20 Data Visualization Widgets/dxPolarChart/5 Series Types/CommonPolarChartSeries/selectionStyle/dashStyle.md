@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.dashStyle
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.selectionStyle.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: 'solid'

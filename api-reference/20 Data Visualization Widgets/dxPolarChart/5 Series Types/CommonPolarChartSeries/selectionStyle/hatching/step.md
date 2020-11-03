@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.hatching.step
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.selectionStyle.hatching.step
 type: Number
 default: 6
 ---

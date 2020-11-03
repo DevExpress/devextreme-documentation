@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.alignment
+id: dxChartCommonAxisSettingsLabel.alignment
 acceptValues: 'center' | 'left' | 'right'
 type: String
 default: undefined

@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.size
-type: Object
+type: BaseWidgetSize
 default: undefined
 ---
 ---

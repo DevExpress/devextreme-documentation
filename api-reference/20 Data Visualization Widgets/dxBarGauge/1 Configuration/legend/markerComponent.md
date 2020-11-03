@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.legend.markerComponent
+id: dxBarGaugeLegend.markerComponent
 ---
 ---
 ##### shortDescription

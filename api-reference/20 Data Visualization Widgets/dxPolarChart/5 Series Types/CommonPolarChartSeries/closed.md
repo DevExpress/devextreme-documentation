@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.closed
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.closed
 type: Boolean
 default: true
 ---

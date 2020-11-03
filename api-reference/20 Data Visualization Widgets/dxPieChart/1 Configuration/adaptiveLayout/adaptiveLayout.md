@@ -1,6 +1,6 @@
 ---
 id: dxPieChart.Options.adaptiveLayout
-type: Object
+type: dxPieChartAdaptiveLayout
 ---
 ---
 ##### shortDescription

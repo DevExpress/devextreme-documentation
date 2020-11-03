@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.hoverStyle.size
+id: dxChartSeriesTypesCommonSeriesPoint.hoverStyle.size
 type: Number
 default: undefined
 ---

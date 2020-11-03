@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.minorTick.visible
+id: BaseGaugeScale.minorTick.visible
 type: Boolean
 default: false
 ---

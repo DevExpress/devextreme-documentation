@@ -1,4 +1,4 @@
 ---
 id: dxPolarChart.Options.tooltip
-type: Object
+type: dxPolarChartTooltip
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.tick
+id: dxChartCommonAxisSettings.tick
 type: Object
 ---
 ---

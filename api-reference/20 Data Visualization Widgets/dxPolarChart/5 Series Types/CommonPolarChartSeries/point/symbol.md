@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.symbol
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.symbol
 acceptValues: 'circle' | 'cross' | 'polygon' | 'square' | 'triangle'
 type: String
 default: 'circle'

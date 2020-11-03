@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.border.right
+id: dxChartCommonPaneSettings.border.right
 type: Boolean
 default: true
 ---

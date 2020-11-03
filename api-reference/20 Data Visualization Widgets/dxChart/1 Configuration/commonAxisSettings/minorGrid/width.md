@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorGrid.width
+id: dxChartCommonAxisSettings.minorGrid.width
 type: Number
 default: 1
 ---

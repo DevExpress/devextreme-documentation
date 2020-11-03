@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.highValueField
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar.highValueField
 type: String
 default: undefined
 ---

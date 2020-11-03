@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.minorTick.visible
+id: dxPolarChartCommonAxisSettingsMinorTick.visible
 type: Boolean
 default: false
 ---

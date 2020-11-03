@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.tooltip
-type: Object
+type: dxBarGaugeTooltip
 ---
 ---
 ##### shortDescription

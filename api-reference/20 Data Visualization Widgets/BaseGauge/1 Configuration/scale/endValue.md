@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.endValue
+id: BaseGaugeScale.endValue
 type: Number
 default: 100
 notUsedInTheme: 

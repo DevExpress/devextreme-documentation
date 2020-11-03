@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.customizeText
+id: PivotGridDataSourceField.customizeText
 type: function(cellInfo)
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxTreeList.Options.editing.allowAdding
+id: dxTreeListEditing.allowAdding
 type: Boolean | function(options)
 default: false
 ---

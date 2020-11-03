@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.fullstackedline
+id: dxChartCommonSeriesSettings.fullstackedline
 type: Object
 ---
 ---

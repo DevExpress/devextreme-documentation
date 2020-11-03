@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.export.enabled
+id: BaseWidgetExport.enabled
 type: Boolean
 default: false
 ---

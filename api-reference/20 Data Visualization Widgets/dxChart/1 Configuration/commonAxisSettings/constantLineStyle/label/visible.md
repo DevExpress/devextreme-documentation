@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.constantLineStyle.label.visible
+id: dxChartCommonAxisSettingsConstantLineStyleLabel.visible
 type: Boolean
 default: true
 ---

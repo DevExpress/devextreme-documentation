@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CandleStickSeries.label.customizeText
+id: dxChartSeriesTypesCandleStickSeriesLabel.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.cornerRadius
+id: dxChartSeriesTypesCommonSeries.cornerRadius
 type: Number
 default: 0
 ---

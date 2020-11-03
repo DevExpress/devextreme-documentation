@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorTick
+id: dxChartCommonAxisSettings.minorTick
 type: Object
 ---
 ---

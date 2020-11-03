@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.aggregation.calculate
+id: dxChartSeriesTypesCommonSeriesAggregation.calculate
 type: function(aggregationInfo, series)
 default: undefined
 ---

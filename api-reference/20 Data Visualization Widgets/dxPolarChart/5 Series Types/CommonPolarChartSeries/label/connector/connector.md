@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.connector
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.connector
 type: Object
 ---
 ---

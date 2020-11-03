@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.visible
+id: dxChartSeriesTypesCommonSeriesPoint.visible
 type: Boolean
 default: true
 ---

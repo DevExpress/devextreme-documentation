@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.tick.length
+id: dxPolarChartCommonAxisSettingsTick.length
 type: Number
 default: 7
 ---

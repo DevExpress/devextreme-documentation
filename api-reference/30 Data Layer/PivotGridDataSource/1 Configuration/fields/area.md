@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.area
+id: PivotGridDataSourceField.area
 acceptValues: undefined | 'column' | 'data' | 'filter' | 'row'
 type: String
 default: undefined

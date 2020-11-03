@@ -1,5 +1,7 @@
 ---
-id: dxChart.Options.argumentAxis.tickInterval
+id: dxChartArgumentAxis.tickInterval
+acceptValues: 'day' | 'hour' | 'millisecond' | 'minute' | 'month' | 'quarter' | 'second' | 'week' | 'year'
+type: Number | Object | String
 inherits: VizTimeInterval
 ---
 ---

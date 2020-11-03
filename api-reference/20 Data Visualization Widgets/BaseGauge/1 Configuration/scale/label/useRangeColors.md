@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.label.useRangeColors
+id: BaseGaugeScaleLabel.useRangeColors
 type: Boolean
 default: false
 ---

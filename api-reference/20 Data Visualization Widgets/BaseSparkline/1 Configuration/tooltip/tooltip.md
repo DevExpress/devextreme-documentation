@@ -1,6 +1,6 @@
 ---
 id: BaseSparkline.Options.tooltip
-type: Object
+type: BaseSparklineTooltip
 ---
 ---
 ##### shortDescription

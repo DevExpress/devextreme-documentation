@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.aggregationGroupWidth
+id: dxChartArgumentAxis.aggregationGroupWidth
 type: Number
 default: undefined
 ---

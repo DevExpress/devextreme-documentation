@@ -3,7 +3,6 @@ id: dxLookup.Options.onTitleRendered
 type: function(e)
 default: null
 dep: dxLookup.Options.dropDownOptions
-EventForAction: dxLookup.titleRendered
 ---
 ---
 ##### shortDescription

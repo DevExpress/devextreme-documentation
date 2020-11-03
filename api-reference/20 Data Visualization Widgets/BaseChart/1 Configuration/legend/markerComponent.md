@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.legend.markerComponent
+id: BaseChartLegend.markerComponent
 ---
 ---
 ##### shortDescription

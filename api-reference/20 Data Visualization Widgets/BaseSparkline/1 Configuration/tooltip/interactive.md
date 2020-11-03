@@ -1,5 +1,5 @@
 ---
-id: BaseSparkline.Options.tooltip.interactive
+id: BaseSparklineTooltip.interactive
 type: Boolean
 default: false
 ---

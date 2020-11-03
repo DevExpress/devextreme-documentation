@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.scrolling.rowRenderingMode
+id: GridBaseScrolling.rowRenderingMode
 acceptValues: 'standard' | 'virtual'
 type: String
 default: 'standard'

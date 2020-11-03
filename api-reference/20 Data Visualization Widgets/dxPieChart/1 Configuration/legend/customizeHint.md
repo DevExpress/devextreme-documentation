@@ -1,5 +1,5 @@
 ---
-id: dxPieChart.Options.legend.customizeHint
+id: dxPieChartLegend.customizeHint
 type: function(pointInfo)
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.openValueField
+id: dxChartSeriesTypesCommonSeries.openValueField
 type: String
 default: 'open'
 notUsedInTheme: 

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.discreteAxisDivisionMode
+id: dxPolarChartCommonAxisSettings.discreteAxisDivisionMode
 acceptValues: 'betweenLabels' | 'crossLabels'
 type: String
 default: 'betweenLabels'

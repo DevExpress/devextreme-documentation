@@ -1,6 +1,6 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.tick
-type: Object
+id: dxPolarChartCommonAxisSettings.tick
+type: dxPolarChartCommonAxisSettingsTick
 ---
 ---
 ##### shortDescription

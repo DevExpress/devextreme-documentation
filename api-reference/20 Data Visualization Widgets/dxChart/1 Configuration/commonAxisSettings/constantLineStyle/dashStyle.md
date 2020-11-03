@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.constantLineStyle.dashStyle
+id: dxChartCommonAxisSettingsConstantLineStyle.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: 'solid'

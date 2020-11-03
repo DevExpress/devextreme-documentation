@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.subtitle
+id: BaseWidgetTitle.subtitle
 type: Object | String
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.tick.width
+id: dxChartCommonAxisSettings.tick.width
 type: Number
 default: 1
 ---

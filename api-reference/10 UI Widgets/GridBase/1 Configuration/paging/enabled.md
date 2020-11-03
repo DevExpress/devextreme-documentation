@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.paging.enabled
+id: GridBasePaging.enabled
 type: Boolean
 default: true
 ---

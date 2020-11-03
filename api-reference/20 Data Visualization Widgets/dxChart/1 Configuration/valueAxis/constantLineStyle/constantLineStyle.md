@@ -1,6 +1,6 @@
 ---
-id: dxChart.Options.valueAxis.constantLineStyle
-type: Object
+id: dxChartValueAxis.constantLineStyle
+type: dxChartValueAxisConstantLineStyle
 ---
 ---
 ##### shortDescription

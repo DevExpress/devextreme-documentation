@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.shadow.offsetX
+id: BaseWidgetTooltip.shadow.offsetX
 type: Number
 default: 0
 ---

@@ -2,7 +2,6 @@
 id: dxPivotGrid.Options.onCellPrepared
 type: function(e)
 default: null
-EventForAction: dxPivotGrid.cellPrepared
 ---
 ---
 ##### shortDescription

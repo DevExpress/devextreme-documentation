@@ -1,5 +1,5 @@
 ---
-id: dxPieChart.Options.adaptiveLayout.keepLabels
+id: dxPieChartAdaptiveLayout.keepLabels
 type: Boolean
 default: false
 ---

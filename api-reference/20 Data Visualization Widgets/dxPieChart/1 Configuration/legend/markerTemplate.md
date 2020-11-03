@@ -1,5 +1,5 @@
 ---
-id: dxPieChart.Options.legend.markerTemplate
+id: dxPieChartLegend.markerTemplate
 type: template
 default: undefined
 ---

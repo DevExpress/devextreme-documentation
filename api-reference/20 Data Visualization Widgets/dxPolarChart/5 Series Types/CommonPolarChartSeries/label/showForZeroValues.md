@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.showForZeroValues
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.showForZeroValues
 type: Boolean
 default: true
 ---

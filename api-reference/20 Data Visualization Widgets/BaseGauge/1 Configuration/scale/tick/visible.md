@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.tick.visible
+id: BaseGaugeScale.tick.visible
 type: Boolean
 default: true
 ---

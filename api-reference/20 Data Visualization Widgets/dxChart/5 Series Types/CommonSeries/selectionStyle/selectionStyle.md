@@ -1,6 +1,6 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.selectionStyle
-type: Object
+id: dxChartSeriesTypesCommonSeries.selectionStyle
+type: dxChartSeriesTypesCommonSeriesSelectionStyle
 ---
 ---
 ##### shortDescription

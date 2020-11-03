@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.minorTick.opacity
+id: dxPolarChartCommonAxisSettingsMinorTick.opacity
 type: Number
 default: 0.3
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.showZero
+id: dxPolarChartValueAxis.showZero
 type: Boolean
 default: undefined
 ---

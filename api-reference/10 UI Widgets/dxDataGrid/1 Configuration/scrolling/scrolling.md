@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.scrolling
-type: Object
+type: dxDataGridScrolling
 ---
 ---
 ##### shortDescription

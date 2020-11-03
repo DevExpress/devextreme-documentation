@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.minorTickCount
+id: dxChartValueAxis.minorTickCount
 type: Number
 default: undefined
 ---

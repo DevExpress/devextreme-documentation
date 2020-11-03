@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.FullStackedSplineAreaSeries.aggregation.method
+id: dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation.method
 acceptValues: 'avg' | 'count' | 'max' | 'min' | 'sum' | 'custom'
 type: String
 default: 'avg'

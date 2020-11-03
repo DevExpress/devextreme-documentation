@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.grid
+id: dxPolarChartCommonAxisSettings.grid
 type: Object
 ---
 ---

@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.font.size
+id: dxChartSeriesTypesCommonSeriesLabel.font.size
 default: 14
 ---

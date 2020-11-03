@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.dataField
+id: PivotGridDataSourceField.dataField
 type: String
 default: undefined
 ---

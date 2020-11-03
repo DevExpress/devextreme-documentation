@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.spline
+id: dxChartCommonSeriesSettings.spline
 type: Object
 ---
 ---

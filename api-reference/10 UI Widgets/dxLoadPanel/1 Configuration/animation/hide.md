@@ -1,5 +1,5 @@
 ---
-id: dxLoadPanel.Options.animation.hide
+id: dxLoadPanelAnimation.hide
 type: animationConfig
 default: null
 ---

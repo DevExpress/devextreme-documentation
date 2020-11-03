@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.html
+id: dxPopupToolbarItem.html
 type: String
 ---
 ---

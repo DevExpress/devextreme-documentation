@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.legend.markerRender
+id: dxBarGaugeLegend.markerRender
 ---
 ---
 ##### shortDescription

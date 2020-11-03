@@ -1,5 +1,5 @@
 ---
-id: BaseSparkline.Options.tooltip.contentRender
+id: BaseSparklineTooltip.contentRender
 ---
 ---
 ##### shortDescription

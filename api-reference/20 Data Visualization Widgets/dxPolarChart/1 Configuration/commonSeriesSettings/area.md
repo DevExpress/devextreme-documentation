@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonSeriesSettings.area
+id: dxPolarChartCommonSeriesSettings.area
 type: Object
 ---
 ---

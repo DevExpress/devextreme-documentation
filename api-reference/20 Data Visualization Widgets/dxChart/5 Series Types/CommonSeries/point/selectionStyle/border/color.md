@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.selectionStyle.border.color
+id: dxChartSeriesTypesCommonSeriesPoint.selectionStyle.border.color
 type: String
 default: undefined
 ---

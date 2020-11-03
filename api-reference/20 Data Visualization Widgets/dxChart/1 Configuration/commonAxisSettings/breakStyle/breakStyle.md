@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.breakStyle
+id: dxChartCommonAxisSettings.breakStyle
 type: Object
 ---
 ---

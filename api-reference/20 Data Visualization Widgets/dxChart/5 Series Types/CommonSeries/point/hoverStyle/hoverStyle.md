@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.hoverStyle
+id: dxChartSeriesTypesCommonSeriesPoint.hoverStyle
 type: Object
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.texts.undeleteRow
+id: GridBaseEditingTexts.undeleteRow
 type: String
 default: 'Undelete'
 ---

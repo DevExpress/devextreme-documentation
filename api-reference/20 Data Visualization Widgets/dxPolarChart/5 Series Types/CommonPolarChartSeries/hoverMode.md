@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverMode
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.hoverMode
 acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'excludePoints' | 'includePoints' | 'nearestPoint' | 'none' | 'onlyPoint'
 type: String
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.alignment
+id: dxChartSeriesTypesCommonSeriesLabel.alignment
 acceptValues: 'center' | 'left' | 'right'
 type: String
 default: 'center'

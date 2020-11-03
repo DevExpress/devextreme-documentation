@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.tagField
+id: dxPieChartSeriesTypesCommonPieChartSeries.tagField
 type: String
 default: 'tag'
 ---

@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.changes
+id: GridBaseEditing.changes
 type: Array<any>
 default: []
 firedEvents: optionChanged

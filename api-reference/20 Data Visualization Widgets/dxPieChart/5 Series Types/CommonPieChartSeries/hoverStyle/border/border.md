@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.border
+id: dxPieChartSeriesTypesCommonPieChartSeries.hoverStyle.border
 type: Object
 ---
 ---

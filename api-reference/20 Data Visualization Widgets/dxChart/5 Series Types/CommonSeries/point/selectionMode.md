@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.selectionMode
+id: dxChartSeriesTypesCommonSeriesPoint.selectionMode
 acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'none' | 'onlyPoint'
 type: String
 default: 'onlyPoint'

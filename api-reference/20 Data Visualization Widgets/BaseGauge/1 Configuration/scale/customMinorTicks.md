@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.customMinorTicks
+id: BaseGaugeScale.customMinorTicks
 type: Array<Number>
 default: undefined
 notUsedInTheme: 

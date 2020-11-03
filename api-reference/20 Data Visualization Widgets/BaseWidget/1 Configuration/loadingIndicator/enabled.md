@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.loadingIndicator.enabled
+id: BaseWidgetLoadingIndicator.enabled
 type: Boolean
 default: false
 ---

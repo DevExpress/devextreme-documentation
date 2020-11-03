@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.image.width
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.image.width
 type: Number
 default: 30
 ---

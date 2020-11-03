@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.font
+id: dxVectorMapLegends.font
 type: Object
 inherits: Font
 ---

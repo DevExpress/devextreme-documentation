@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.shadow
+id: BaseWidgetTooltip.shadow
 type: Object
 ---
 ---

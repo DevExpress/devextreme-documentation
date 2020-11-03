@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorGrid.color
+id: dxChartCommonAxisSettings.minorGrid.color
 type: String
 default: '#d3d3d3'
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.image.width.rangeMaxPoint
+id: dxChartSeriesTypesCommonSeriesPoint.image.width.rangeMaxPoint
 type: Number
 default: undefined
 ---

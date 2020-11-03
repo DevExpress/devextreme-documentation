@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.width
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.width
 type: Number
 default: 2
 ---

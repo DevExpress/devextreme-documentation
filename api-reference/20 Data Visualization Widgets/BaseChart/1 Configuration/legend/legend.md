@@ -1,6 +1,6 @@
 ---
 id: BaseChart.Options.legend
-type: Object
+type: BaseChartLegend
 inherits: BaseLegend
 ---
 ---

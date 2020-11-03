@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.animation
-type: Object
+type: BaseGaugeAnimation
 ---
 ---
 ##### shortDescription

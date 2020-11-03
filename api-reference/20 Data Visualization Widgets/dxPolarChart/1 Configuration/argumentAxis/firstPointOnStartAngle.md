@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.firstPointOnStartAngle
+id: dxPolarChartArgumentAxis.firstPointOnStartAngle
 type: Boolean
 default: false
 ---

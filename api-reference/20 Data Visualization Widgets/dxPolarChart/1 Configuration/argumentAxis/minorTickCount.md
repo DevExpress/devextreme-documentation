@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.minorTickCount
+id: dxPolarChartArgumentAxis.minorTickCount
 type: Number
 default: undefined
 ---

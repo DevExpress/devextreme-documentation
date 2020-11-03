@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.allowCrossGroupCalculation
+id: PivotGridDataSourceField.allowCrossGroupCalculation
 type: Boolean
 default: false
 ---

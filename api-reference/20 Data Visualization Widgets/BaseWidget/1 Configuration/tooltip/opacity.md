@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.opacity
+id: BaseWidgetTooltip.opacity
 type: Number
 default: undefined
 ---

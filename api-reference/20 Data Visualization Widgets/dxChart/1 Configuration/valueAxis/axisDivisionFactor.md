@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.axisDivisionFactor
+id: dxChartValueAxis.axisDivisionFactor
 type: Number
 default: 40
 ---

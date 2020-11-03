@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar.displayMode
+id: dxChartSeriesTypesCommonSeries.valueErrorBar.displayMode
 acceptValues: 'auto' | 'high' | 'low' | 'none'
 type: String
 default: 'auto'

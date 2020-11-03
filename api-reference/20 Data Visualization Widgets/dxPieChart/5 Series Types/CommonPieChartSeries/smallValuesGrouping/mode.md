@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping.mode
+id: dxPieChartSeriesTypesCommonPieChartSeries.smallValuesGrouping.mode
 acceptValues: 'none' | 'smallValueThreshold' | 'topN'
 type: String
 default: 'none'

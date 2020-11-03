@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.StockSeries
-type: Object
+type: dxChartSeriesTypesStockSeries
 inherits: dxChartSeriesTypes.CommonSeries
 ---
 ---

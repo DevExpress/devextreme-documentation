@@ -1,4 +1,4 @@
 ---
-id: BaseWidget.Options.title.font.family
+id: BaseWidgetTitle.font.family
 default: '"Segoe UI Light", "Helvetica Neue Light", "Segoe UI", "Helvetica Neue", "Trebuchet MS", Verdana, sans-serif'
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.linearThreshold
+id: dxPolarChartValueAxis.linearThreshold
 type: Number
 default: undefined
 ---

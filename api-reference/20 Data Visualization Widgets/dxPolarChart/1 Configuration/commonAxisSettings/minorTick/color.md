@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.minorTick.color
+id: dxPolarChartCommonAxisSettingsMinorTick.color
 type: String
 default: '#767676'
 ---

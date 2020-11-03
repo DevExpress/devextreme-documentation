@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.label.format
+id: BaseGaugeScaleLabel.format
 type: format
 default: undefined
 ---

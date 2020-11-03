@@ -1,5 +1,5 @@
 ---
-id: dxTreeList.Options.paging.enabled
+id: dxTreeListPaging.enabled
 type: Boolean
 default: false
 ---

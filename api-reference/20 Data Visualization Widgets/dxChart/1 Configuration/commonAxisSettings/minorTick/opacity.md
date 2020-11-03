@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorTick.opacity
+id: dxChartCommonAxisSettings.minorTick.opacity
 type: Number
 default: 0.3
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.color
+id: BaseWidgetTooltip.color
 type: String
 default: '#ffffff'
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.tick.length
+id: dxChartCommonAxisSettings.tick.length
 type: Number
 default: 7
 ---

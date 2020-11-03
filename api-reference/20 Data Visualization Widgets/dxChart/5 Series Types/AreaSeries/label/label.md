@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.AreaSeries.label
-type: Object
+id: dxChartSeriesTypesAreaSeries.label
+type: dxChartSeriesTypesAreaSeriesLabel
 ---

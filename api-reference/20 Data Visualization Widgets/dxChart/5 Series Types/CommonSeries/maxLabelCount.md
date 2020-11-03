@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.maxLabelCount
+id: dxChartSeriesTypesCommonSeries.maxLabelCount
 type: Number
 default: undefined
 ---

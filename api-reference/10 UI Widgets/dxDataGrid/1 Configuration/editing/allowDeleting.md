@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.editing.allowDeleting
+id: dxDataGridEditing.allowDeleting
 type: Boolean | function(options)
 default: false
 ---

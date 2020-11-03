@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.tooltip.customizeTooltip
+id: dxBarGaugeTooltip.customizeTooltip
 type: function(scaleValue)
 default: undefined
 ---

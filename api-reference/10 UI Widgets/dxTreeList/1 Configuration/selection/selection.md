@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.Options.selection
-type: Object
+type: dxTreeListSelection
 ---
 ---
 ##### shortDescription

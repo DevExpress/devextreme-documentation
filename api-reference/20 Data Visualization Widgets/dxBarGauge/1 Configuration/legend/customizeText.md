@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.legend.customizeText
+id: dxBarGaugeLegend.customizeText
 type: function(arg)
 notUsedInTheme: 
 ---

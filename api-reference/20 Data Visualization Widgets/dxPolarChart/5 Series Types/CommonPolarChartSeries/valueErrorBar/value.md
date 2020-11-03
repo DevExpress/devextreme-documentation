@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.value
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar.value
 type: Number
 default: 1
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.margin.bottom
+id: BaseWidgetTitle.margin.bottom
 type: Number
 default: 10
 ---

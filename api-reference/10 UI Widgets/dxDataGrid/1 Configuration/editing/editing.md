@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.editing
-type: Object
+type: dxDataGridEditing
 ---
 ---
 ##### shortDescription

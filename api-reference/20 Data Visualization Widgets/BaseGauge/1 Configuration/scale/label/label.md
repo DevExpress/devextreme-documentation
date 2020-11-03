@@ -1,6 +1,6 @@
 ---
-id: BaseGauge.Options.scale.label
-type: Object
+id: BaseGaugeScale.label
+type: BaseGaugeScaleLabel
 ---
 ---
 ##### shortDescription

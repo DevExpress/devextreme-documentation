@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.tick
+id: BaseGaugeScale.tick
 type: Object
 ---
 ---

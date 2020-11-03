@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.reduction.color
+id: dxChartSeriesTypesCommonSeries.reduction.color
 type: String
 default: '#ff0000'
 ---

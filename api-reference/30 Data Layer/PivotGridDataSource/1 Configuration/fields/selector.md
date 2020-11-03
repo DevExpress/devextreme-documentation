@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.selector
+id: PivotGridDataSourceField.selector
 type: function()
 default: undefined
 ---

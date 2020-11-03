@@ -1,6 +1,6 @@
 ---
 id: dxLoadPanel.Options.animation
-type: Object
+type: dxLoadPanelAnimation
 default: null
 ---
 ---

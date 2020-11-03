@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.backgroundColor
+id: dxChartCommonPaneSettings.backgroundColor
 type: String
 default: 'none'
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.image.height
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.image.height
 type: Number
 default: 30
 ---

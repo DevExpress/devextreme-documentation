@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CandleStickSeries.selectionMode
+id: dxChartSeriesTypesCandleStickSeries.selectionMode
 acceptValues: 'onlyPoint' | 'allSeriesPoints' | 'allArgumentPoints' | 'none'
 type: String
 default: 'onlyPoint'

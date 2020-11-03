@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.container
+id: BaseWidgetTooltip.container
 type: String | Element | jQuery
 default: undefined
 ---

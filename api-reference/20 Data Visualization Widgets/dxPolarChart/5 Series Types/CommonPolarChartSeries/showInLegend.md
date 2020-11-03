@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.showInLegend
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.showInLegend
 type: Boolean
 default: true
 ---

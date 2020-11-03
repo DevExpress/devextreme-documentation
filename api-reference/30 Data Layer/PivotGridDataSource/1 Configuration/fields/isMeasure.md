@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.isMeasure
+id: PivotGridDataSourceField.isMeasure
 type: Boolean
 default: undefined
 ---

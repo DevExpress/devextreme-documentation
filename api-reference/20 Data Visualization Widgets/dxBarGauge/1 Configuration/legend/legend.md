@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.legend
-type: Object
+type: dxBarGaugeLegend
 inherits: BaseLegend
 ---
 ---

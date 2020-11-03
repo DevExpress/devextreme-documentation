@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.stripStyle.paddingLeftRight
+id: dxChartCommonAxisSettingsStripStyle.paddingLeftRight
 type: Number
 default: 10
 ---

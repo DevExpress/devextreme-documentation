@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.valueAxis
-type: Object
+type: dxPolarChartValueAxis
 inherits: dxPolarChart.Options.commonAxisSettings
 ---
 ---

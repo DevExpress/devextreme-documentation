@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.axisDivisionFactor
+id: dxChartArgumentAxis.axisDivisionFactor
 type: Number
 default: 70
 ---

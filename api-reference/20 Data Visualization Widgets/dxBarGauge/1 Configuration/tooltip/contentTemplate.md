@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.tooltip.contentTemplate
+id: dxBarGaugeTooltip.contentTemplate
 type: template
 default: undefined
 ---

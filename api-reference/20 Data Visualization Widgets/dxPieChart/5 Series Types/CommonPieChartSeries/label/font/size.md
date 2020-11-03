@@ -1,4 +1,4 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.font.size
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.font.size
 default: 14
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.export.formats
+id: BaseWidgetExport.formats
 acceptValues: 'GIF' | 'JPEG' | 'PDF' | 'PNG' | 'SVG'
 type: Array<String>
 default: ['PNG', 'PDF', 'JPEG', 'SVG', 'GIF']

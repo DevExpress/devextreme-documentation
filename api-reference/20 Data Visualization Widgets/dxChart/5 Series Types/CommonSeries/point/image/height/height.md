@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.image.height
+id: dxChartSeriesTypesCommonSeriesPoint.image.height
 type: Number | Object
 default: 30
 ---

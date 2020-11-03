@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.SplineAreaSeries.point
-type: Object
+id: dxChartSeriesTypesSplineAreaSeries.point
+type: dxChartSeriesTypesSplineAreaSeriesPoint
 ---

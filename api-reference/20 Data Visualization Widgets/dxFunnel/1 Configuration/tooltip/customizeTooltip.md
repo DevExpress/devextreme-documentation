@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.tooltip.customizeTooltip
+id: dxFunnelTooltip.customizeTooltip
 type: function(info)
 default: undefined
 ---

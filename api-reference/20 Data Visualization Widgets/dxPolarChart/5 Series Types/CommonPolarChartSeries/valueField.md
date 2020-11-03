@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueField
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueField
 type: String
 default: 'val'
 notUsedInTheme: 

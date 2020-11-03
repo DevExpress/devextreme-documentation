@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.label.customizeHint
+id: dxChartArgumentAxisLabel.customizeHint
 type: function(argument)
 ---
 ---

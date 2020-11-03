@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.legend.visible
+id: dxFunnelLegend.visible
 type: Boolean
 default: false
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.loadingIndicator.font
+id: BaseWidgetLoadingIndicator.font
 type: Object
 inherits: Font
 ---

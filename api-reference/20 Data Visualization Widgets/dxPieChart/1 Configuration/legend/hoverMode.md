@@ -1,5 +1,5 @@
 ---
-id: dxPieChart.Options.legend.hoverMode
+id: dxPieChartLegend.hoverMode
 acceptValues: 'none' | 'allArgumentPoints'
 type: String
 default: 'allArgumentPoints'

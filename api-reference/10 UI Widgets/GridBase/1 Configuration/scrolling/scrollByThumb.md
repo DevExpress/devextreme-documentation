@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.scrolling.scrollByThumb
+id: GridBaseScrolling.scrollByThumb
 type: Boolean
 default: false
 ---

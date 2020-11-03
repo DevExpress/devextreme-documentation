@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping.groupName
+id: dxPieChartSeriesTypesCommonPieChartSeries.smallValuesGrouping.groupName
 type: String
 default: 'others'
 ---

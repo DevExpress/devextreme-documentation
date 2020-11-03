@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.argumentFormat
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.argumentFormat
 type: format
 default: undefined
 ---

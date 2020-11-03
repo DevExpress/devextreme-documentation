@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.image.width
+id: dxChartSeriesTypesCommonSeriesPoint.image.width
 type: Number | Object
 default: 30
 ---

@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.scrolling
-type: Object
+type: GridBaseScrolling
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorTick.visible
+id: dxChartCommonAxisSettings.minorTick.visible
 type: Boolean
 default: false
 ---

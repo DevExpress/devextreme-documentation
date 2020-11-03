@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.border.width
+id: BaseWidgetTooltip.border.width
 type: Number
 default: 1
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.border.visible
+id: dxChartCommonPaneSettings.border.visible
 type: Boolean
 default: false
 ---

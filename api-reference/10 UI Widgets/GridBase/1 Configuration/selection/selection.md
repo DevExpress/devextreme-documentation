@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.selection
-type: Object
+type: GridBaseSelection
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minValueMargin
+id: dxChartCommonAxisSettings.minValueMargin
 type: Number
 default: undefined
 ---

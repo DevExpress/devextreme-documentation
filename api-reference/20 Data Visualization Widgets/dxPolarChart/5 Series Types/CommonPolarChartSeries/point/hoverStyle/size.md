@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverStyle.size
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.hoverStyle.size
 type: Number
 default: 12
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.minorTick.length
+id: BaseGaugeScale.minorTick.length
 type: Number
 default: 3
 ---

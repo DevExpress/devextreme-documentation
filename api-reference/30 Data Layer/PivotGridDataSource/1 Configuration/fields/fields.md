@@ -1,6 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields
-type: Array<Object>
+type: Array<PivotGridDataSourceField>
 default: undefined
 ---
 ---

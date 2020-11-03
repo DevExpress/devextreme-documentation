@@ -1,5 +1,5 @@
 ---
-id: BaseSparkline.Options.tooltip.customizeTooltip
+id: BaseSparklineTooltip.customizeTooltip
 type: function(pointsInfo)
 default: undefined
 notUsedInTheme: 

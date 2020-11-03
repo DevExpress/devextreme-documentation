@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.verticalOffset
+id: dxChartSeriesTypesCommonSeriesLabel.verticalOffset
 type: Number
 default: 0
 ---

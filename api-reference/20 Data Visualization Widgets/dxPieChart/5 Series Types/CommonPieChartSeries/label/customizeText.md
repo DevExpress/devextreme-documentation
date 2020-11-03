@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.customizeText
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

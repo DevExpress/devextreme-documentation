@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.groupInterval
+id: PivotGridDataSourceField.groupInterval
 acceptValues: 'day' | 'dayOfWeek' | 'month' | 'quarter' | 'year'
 type: String | Number
 default: undefined

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.argumentType
+id: dxPolarChartArgumentAxis.argumentType
 acceptValues: 'datetime' | 'numeric' | 'string'
 type: String
 default: undefined

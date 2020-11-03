@@ -1,4 +1,4 @@
 ---
 id: dxFunnel.Options.tooltip
-type: Object
+type: dxFunnelTooltip
 ---

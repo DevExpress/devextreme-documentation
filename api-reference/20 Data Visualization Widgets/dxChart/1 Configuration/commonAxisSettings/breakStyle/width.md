@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.breakStyle.width
+id: dxChartCommonAxisSettings.breakStyle.width
 type: Number
 default: 5
 ---

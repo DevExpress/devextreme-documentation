@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.headerFilter
+id: PivotGridDataSourceField.headerFilter
 type: Object
 ---
 ---

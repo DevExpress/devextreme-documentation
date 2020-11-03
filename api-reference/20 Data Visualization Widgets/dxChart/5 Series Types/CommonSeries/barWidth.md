@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.barWidth
+id: dxChartSeriesTypesCommonSeries.barWidth
 type: Number
 default: undefined
 ---

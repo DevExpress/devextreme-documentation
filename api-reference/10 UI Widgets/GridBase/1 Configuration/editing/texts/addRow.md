@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.texts.addRow
+id: GridBaseEditingTexts.addRow
 type: String
 default: 'Add a row'
 ---

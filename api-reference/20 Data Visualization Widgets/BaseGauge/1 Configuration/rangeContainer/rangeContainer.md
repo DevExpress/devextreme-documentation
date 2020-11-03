@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.rangeContainer
-type: Object
+type: BaseGaugeRangeContainer
 ---
 ---
 ##### shortDescription

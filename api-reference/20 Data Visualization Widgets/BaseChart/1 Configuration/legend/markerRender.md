@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.legend.markerRender
+id: BaseChartLegend.markerRender
 ---
 ---
 ##### shortDescription

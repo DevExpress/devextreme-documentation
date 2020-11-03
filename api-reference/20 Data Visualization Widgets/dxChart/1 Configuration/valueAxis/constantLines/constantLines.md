@@ -1,7 +1,7 @@
 ---
-id: dxChart.Options.valueAxis.constantLines
-type: Array<Object>
-inherits: dxChart.Options.commonAxisSettings.constantLineStyle
+id: dxChartValueAxis.constantLines
+type: Array<dxChartValueAxisConstantLines>
+inherits: dxChartCommonAxisSettings.constantLineStyle
 notUsedInTheme: 
 ---
 ---

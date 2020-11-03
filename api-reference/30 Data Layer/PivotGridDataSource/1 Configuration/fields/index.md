@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.index
+id: PivotGridDataSourceField.index
 type: Number
 default: undefined
 hidden: 

@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.RangeBarSeries
-type: Object
+type: dxChartSeriesTypesRangeBarSeries
 inherits: dxChartSeriesTypes.CommonSeries
 ---
 ---

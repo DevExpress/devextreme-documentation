@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.tooltip.contentComponent
+id: BaseGaugeTooltip.contentComponent
 ---
 ---
 ##### shortDescription

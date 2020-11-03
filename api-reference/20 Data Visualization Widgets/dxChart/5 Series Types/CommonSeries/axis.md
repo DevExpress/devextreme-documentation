@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.axis
+id: dxChartSeriesTypesCommonSeries.axis
 type: String
 default: undefined
 ---

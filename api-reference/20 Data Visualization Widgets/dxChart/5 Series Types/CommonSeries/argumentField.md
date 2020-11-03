@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.argumentField
+id: dxChartSeriesTypesCommonSeries.argumentField
 type: String
 default: 'arg'
 notUsedInTheme: 

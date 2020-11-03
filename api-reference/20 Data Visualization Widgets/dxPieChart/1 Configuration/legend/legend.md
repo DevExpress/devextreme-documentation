@@ -1,6 +1,6 @@
 ---
 id: dxPieChart.Options.legend
-type: Object
+type: dxPieChartLegend
 ---
 ---
 ##### shortDescription

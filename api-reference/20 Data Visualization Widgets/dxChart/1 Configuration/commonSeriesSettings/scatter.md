@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.scatter
+id: dxChartCommonSeriesSettings.scatter
 type: Object
 ---
 ---

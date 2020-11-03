@@ -1,6 +1,6 @@
 ---
 id: BaseChart.Options.tooltip
-type: Object
+type: BaseChartTooltip
 ---
 ---
 ##### shortDescription

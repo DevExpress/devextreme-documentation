@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.ignoreEmptyPoints
+id: dxChartSeriesTypesCommonSeries.ignoreEmptyPoints
 type: Boolean
 default: false
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.FullStackedLineSeries.selectionMode
+id: dxChartSeriesTypesFullStackedLineSeries.selectionMode
 acceptValues: 'includePoints' | 'excludePoints' | 'none'
 type: String
 default: 'includePoints'

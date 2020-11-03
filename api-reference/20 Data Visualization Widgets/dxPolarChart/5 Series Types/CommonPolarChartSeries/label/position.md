@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.position
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.position
 acceptValues: 'inside' | 'outside'
 type: String
 default: 'outside'

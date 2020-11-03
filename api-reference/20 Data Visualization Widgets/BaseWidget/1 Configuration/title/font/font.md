@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.font
+id: BaseWidgetTitle.font
 type: Object
 inherits: Font
 ---

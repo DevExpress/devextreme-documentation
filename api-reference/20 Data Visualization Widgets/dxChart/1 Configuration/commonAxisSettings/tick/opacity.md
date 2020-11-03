@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.tick.opacity
+id: dxChartCommonAxisSettings.tick.opacity
 type: Number
 default: undefined
 ---

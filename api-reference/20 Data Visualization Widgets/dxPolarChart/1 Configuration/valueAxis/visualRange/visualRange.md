@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.visualRange
+id: dxPolarChartValueAxis.visualRange
 type: Object | Array<Number, String, Date>
 inherits: VizRange
 firedEvents: optionChanged

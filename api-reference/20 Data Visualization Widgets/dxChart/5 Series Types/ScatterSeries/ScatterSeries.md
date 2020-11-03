@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.ScatterSeries
-type: Object
+type: dxChartSeriesTypesScatterSeries
 inherits: dxChartSeriesTypes.CommonSeries
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxLinearGauge.Options.scale.verticalOrientation
+id: dxLinearGaugeScale.verticalOrientation
 acceptValues: 'bottom' | 'center' | 'top'
 type: String
 default: 'bottom'

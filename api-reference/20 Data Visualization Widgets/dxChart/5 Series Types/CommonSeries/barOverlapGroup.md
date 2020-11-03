@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.barOverlapGroup
+id: dxChartSeriesTypesCommonSeries.barOverlapGroup
 type: String
 default: undefined
 ---

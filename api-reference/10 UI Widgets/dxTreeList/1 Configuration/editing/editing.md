@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.Options.editing
-type: Object
+type: dxTreeListEditing
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.selection.selectAllMode
+id: dxDataGridSelection.selectAllMode
 acceptValues: 'allPages' | 'page'
 type: String
 default: 'allPages'

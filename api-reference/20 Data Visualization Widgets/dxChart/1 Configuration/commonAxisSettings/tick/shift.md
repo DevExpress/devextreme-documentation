@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.tick.shift
+id: dxChartCommonAxisSettings.tick.shift
 type: Number
 default: 3
 ---

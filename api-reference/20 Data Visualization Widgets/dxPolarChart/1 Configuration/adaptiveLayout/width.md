@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.adaptiveLayout.width
+id: dxPolarChartAdaptiveLayout.width
 type: Number
 default: 170
 ---

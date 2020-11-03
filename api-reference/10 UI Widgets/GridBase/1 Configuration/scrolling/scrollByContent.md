@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.scrolling.scrollByContent
+id: GridBaseScrolling.scrollByContent
 type: Boolean
 default: true
 ---

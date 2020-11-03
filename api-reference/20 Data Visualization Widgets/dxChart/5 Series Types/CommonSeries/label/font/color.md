@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.font.color
+id: dxChartSeriesTypesCommonSeriesLabel.font.color
 default: '#FFFFFF'
 ---

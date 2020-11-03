@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.opacity
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar.opacity
 type: Number
 default: undefined
 ---

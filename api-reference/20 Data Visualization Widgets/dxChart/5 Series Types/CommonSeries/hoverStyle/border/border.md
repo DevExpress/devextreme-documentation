@@ -1,6 +1,6 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.hoverStyle.border
-type: Object
+id: dxChartSeriesTypesCommonSeriesHoverStyle.border
+type: dxChartSeriesTypesCommonSeriesHoverStyleBorder
 ---
 ---
 ##### shortDescription

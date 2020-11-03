@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StepLineSeries.label.customizeText
+id: dxChartSeriesTypesStepLineSeriesLabel.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.maxAutoBreakCount
+id: dxChartValueAxis.maxAutoBreakCount
 type: Number
 default: 4
 ---

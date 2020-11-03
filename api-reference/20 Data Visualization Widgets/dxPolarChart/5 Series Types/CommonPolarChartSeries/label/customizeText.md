@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.customizeText
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

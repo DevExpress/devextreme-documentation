@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.tooltip.contentRender
+id: BaseGaugeTooltip.contentRender
 ---
 ---
 ##### shortDescription

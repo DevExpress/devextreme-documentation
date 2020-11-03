@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.overlappingBehavior
+id: dxChartCommonAxisSettingsLabel.overlappingBehavior
 acceptValues: 'rotate' | 'stagger' | 'none' | 'hide'
 type: String
 default: 'hide'

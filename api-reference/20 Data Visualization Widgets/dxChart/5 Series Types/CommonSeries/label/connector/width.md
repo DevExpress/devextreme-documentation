@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.connector.width
+id: dxChartSeriesTypesCommonSeriesLabel.connector.width
 type: Number
 default: 1
 ---

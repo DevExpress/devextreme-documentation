@@ -2,7 +2,6 @@
 id: dxLookup.Options.onPageLoading
 type: function(e)
 default: null
-EventForAction: dxLookup.pageLoading
 ---
 ---
 ##### shortDescription

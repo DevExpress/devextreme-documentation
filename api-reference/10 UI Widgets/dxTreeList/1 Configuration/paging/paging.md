@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.Options.paging
-type: Object
+type: dxTreeListPaging
 ---
 ---
 ##### shortDescription

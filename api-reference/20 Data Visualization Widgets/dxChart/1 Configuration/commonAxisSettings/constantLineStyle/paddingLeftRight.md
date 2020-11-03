@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.constantLineStyle.paddingLeftRight
+id: dxChartCommonAxisSettingsConstantLineStyle.paddingLeftRight
 type: Number
 default: 10
 ---

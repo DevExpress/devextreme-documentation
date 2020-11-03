@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.scale
-type: Object
+type: BaseGaugeScale
 ---
 ---
 ##### shortDescription

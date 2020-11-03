@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.widget
+id: dxPopupToolbarItem.widget
 acceptValues: 'dxAutocomplete' | 'dxButton' | 'dxCheckBox' | 'dxDateBox' | 'dxMenu' | 'dxSelectBox' | 'dxTabs' | 'dxTextBox' | 'dxButtonGroup' | 'dxDropDownButton'
 type: String
 ---

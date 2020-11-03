@@ -1,5 +1,5 @@
 ---
-id: dxToast.Options.animation.hide
+id: dxToastAnimation.hide
 type: animationConfig
 default: { type: 'fade', duration: 400, to: 0 }
 ---

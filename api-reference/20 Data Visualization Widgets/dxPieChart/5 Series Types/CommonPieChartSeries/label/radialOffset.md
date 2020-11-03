@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.radialOffset
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.radialOffset
 type: Number
 default: 0
 ---

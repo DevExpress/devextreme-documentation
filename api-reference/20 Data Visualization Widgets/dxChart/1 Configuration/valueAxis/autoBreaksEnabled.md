@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.autoBreaksEnabled
+id: dxChartValueAxis.autoBreaksEnabled
 type: Boolean
 default: false
 ---

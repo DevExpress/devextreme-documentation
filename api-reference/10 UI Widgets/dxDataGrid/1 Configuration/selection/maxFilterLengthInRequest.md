@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.selection.maxFilterLengthInRequest
+id: dxDataGridSelection.maxFilterLengthInRequest
 type: Number
 default: 1500
 hidden: 

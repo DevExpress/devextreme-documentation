@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StackedBarSeries.selectionMode
+id: dxChartSeriesTypesStackedBarSeries.selectionMode
 acceptValues: 'onlyPoint' | 'allSeriesPoints' | 'allArgumentPoints' | 'none'
 type: String
 default: 'onlyPoint'

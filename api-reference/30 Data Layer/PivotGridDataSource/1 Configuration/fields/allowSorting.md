@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.allowSorting
+id: PivotGridDataSourceField.allowSorting
 type: Boolean
 default: false
 ---

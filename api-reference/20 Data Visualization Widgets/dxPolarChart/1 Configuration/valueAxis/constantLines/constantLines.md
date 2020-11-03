@@ -1,7 +1,7 @@
 ---
-id: dxPolarChart.Options.valueAxis.constantLines
-type: Array<Object>
-inherits: dxPolarChart.Options.commonAxisSettings.constantLineStyle
+id: dxPolarChartValueAxis.constantLines
+type: Array<dxPolarChartValueAxisConstantLines>
+inherits: dxPolarChartCommonAxisSettings.constantLineStyle
 notUsedInTheme: 
 ---
 ---

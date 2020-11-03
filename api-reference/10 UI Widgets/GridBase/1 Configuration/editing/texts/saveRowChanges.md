@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.texts.saveRowChanges
+id: GridBaseEditingTexts.saveRowChanges
 type: String
 default: 'Save'
 ---

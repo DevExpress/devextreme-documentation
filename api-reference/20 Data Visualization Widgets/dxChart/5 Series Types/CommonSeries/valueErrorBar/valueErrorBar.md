@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar
+id: dxChartSeriesTypesCommonSeries.valueErrorBar
 type: Object
 ---
 ---

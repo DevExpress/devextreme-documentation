@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.LineSeries.aggregation
-type: Object
+id: dxChartSeriesTypesLineSeries.aggregation
+type: dxChartSeriesTypesLineSeriesAggregation
 ---

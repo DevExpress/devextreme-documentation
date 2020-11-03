@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.candlestick
+id: dxChartCommonSeriesSettings.candlestick
 type: Object
 ---
 ---

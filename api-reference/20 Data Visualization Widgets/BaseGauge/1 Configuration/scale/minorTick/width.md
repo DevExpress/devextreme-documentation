@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.minorTick.width
+id: BaseGaugeScale.minorTick.width
 type: Number
 default: 1
 ---

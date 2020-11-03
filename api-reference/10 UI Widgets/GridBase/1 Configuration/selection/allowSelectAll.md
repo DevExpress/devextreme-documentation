@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.selection.allowSelectAll
+id: GridBaseSelection.allowSelectAll
 type: Boolean
 default: true
 ---

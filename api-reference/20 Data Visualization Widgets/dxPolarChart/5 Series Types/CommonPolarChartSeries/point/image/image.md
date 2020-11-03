@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.image
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.image
 type: String | Object
 default: undefined
 ---

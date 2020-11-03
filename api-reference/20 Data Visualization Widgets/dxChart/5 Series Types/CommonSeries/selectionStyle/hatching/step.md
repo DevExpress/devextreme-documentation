@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.step
+id: dxChartSeriesTypesCommonSeriesSelectionStyleHatching.step
 type: Number
 default: 6
 ---

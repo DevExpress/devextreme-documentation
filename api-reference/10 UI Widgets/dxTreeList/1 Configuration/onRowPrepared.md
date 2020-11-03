@@ -2,7 +2,6 @@
 id: dxTreeList.Options.onRowPrepared
 type: function(e)
 default: null
-EventForAction: dxTreeList.rowPrepared
 ---
 ---
 ##### shortDescription

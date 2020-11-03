@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.legend.customizeHint
+id: dxFunnelLegend.customizeHint
 type: function(itemInfo)
 ---
 ---

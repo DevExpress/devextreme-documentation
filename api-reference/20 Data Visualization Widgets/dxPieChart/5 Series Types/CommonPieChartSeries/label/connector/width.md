@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.connector.width
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.connector.width
 type: Number
 default: 1
 ---

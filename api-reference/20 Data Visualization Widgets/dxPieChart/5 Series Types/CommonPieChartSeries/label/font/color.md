@@ -1,4 +1,4 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.font.color
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.font.color
 default: '#FFFFFF'
 ---

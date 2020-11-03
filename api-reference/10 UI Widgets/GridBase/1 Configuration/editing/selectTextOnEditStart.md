@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.selectTextOnEditStart
+id: GridBaseEditing.selectTextOnEditStart
 type: Boolean
 default: false
 ---

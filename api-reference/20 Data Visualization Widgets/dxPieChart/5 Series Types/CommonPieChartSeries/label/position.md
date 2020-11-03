@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.position
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.position
 acceptValues: 'columns' | 'inside' | 'outside'
 type: String
 default: 'outside'

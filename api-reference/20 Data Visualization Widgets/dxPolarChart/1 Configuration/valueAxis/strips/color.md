@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.strips.color
+id: dxPolarChartValueAxisStrips.color
 type: String
 default: undefined
 ---

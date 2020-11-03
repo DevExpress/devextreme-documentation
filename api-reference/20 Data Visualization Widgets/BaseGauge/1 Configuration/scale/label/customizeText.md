@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.label.customizeText
+id: BaseGaugeScaleLabel.customizeText
 type: function(scaleValue)
 notUsedInTheme: 
 ---

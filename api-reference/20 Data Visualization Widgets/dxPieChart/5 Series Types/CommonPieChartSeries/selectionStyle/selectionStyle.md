@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle
+id: dxPieChartSeriesTypesCommonPieChartSeries.selectionStyle
 type: Object
 ---
 ---

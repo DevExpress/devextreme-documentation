@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.border.visible
+id: BaseWidgetTooltip.border.visible
 type: Boolean
 default: true
 ---

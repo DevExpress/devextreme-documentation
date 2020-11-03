@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StackedSplineAreaSeries.hoverMode
+id: dxChartSeriesTypesStackedSplineAreaSeries.hoverMode
 acceptValues: 'nearestPoint' | 'includePoints' | 'excludePoints' | 'none'
 type: String
 default: 'nearestPoint'

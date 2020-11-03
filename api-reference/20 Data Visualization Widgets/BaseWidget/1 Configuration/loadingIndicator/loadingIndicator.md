@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.loadingIndicator
-type: Object
+type: BaseWidgetLoadingIndicator
 ---
 ---
 ##### shortDescription

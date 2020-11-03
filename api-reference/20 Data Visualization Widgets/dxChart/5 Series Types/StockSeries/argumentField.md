@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StockSeries.argumentField
+id: dxChartSeriesTypesStockSeries.argumentField
 type: String
 default: 'date'
 ---

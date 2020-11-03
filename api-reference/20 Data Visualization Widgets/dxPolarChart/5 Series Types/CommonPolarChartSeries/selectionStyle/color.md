@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.color
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.selectionStyle.color
 type: String
 default: undefined
 ---

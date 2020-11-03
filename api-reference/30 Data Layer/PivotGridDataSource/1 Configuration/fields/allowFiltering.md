@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.allowFiltering
+id: PivotGridDataSourceField.allowFiltering
 type: Boolean
 default: false
 ---

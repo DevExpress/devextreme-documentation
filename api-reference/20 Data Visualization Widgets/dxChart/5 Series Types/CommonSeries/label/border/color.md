@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.border.color
+id: dxChartSeriesTypesCommonSeriesLabel.border.color
 type: String
 default: '#d3d3d3'
 ---

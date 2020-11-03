@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.hatching.direction
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.hoverStyle.hatching.direction
 acceptValues: 'left' | 'none' | 'right'
 type: String
 default: 'none'

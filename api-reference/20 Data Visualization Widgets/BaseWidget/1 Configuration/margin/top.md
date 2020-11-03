@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.margin.top
+id: BaseWidgetMargin.top
 type: Number
 default: 0
 ---

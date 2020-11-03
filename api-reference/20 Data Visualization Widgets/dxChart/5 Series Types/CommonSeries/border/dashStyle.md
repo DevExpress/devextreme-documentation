@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.border.dashStyle
+id: dxChartSeriesTypesCommonSeriesBorder.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: undefined

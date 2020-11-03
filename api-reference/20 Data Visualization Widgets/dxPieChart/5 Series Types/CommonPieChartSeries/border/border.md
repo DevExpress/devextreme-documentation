@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.border
+id: dxPieChartSeriesTypesCommonPieChartSeries.border
 type: Object
 ---
 ---

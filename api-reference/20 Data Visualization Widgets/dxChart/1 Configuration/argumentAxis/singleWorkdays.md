@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.singleWorkdays
+id: dxChartArgumentAxis.singleWorkdays
 type: Array<Date, String> | Array<Number>
 default: undefined
 ---

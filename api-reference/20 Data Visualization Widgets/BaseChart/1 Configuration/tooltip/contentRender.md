@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.tooltip.contentRender
+id: BaseChartTooltip.contentRender
 ---
 ---
 ##### shortDescription

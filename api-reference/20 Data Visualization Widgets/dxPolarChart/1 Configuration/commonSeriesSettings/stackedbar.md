@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonSeriesSettings.stackedbar
+id: dxPolarChartCommonSeriesSettings.stackedbar
 type: Object
 ---
 ---

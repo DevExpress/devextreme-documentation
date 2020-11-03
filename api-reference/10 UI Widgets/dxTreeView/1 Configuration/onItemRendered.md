@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onItemRendered
 type: function(e)
 default: null
-EventForAction: dxTreeView.itemRendered
 ---
 ---
 ##### param(e): Object

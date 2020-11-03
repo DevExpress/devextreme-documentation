@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.border.visible
+id: dxPieChartSeriesTypesCommonPieChartSeries.selectionStyle.border.visible
 type: Boolean
 default: false
 ---

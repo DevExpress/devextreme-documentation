@@ -1,4 +1,4 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.font.size
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.font.size
 default: 14
 ---

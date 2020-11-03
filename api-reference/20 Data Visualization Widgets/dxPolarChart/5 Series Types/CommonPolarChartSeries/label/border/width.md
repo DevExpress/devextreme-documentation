@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.border.width
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.border.width
 type: Number
 default: 1
 ---

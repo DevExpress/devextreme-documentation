@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.tooltip
-type: Object
+type: BaseGaugeTooltip
 ---
 ---
 ##### shortDescription

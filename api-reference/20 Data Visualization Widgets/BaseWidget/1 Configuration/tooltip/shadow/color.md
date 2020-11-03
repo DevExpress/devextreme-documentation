@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.shadow.color
+id: BaseWidgetTooltip.shadow.color
 type: String
 default: #000000
 ---

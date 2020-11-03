@@ -1,4 +1,4 @@
 ---
-id: BaseWidget.Options.title.subtitle.font.weight
+id: BaseWidgetTitle.subtitle.font.weight
 default: 200
 ---

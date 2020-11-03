@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.minorGrid.color
+id: dxPolarChartCommonAxisSettings.minorGrid.color
 type: String
 default: '#d3d3d3'
 ---

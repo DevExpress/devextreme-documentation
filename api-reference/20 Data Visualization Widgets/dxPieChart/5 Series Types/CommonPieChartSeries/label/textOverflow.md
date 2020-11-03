@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.textOverflow
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.textOverflow
 acceptValues: 'ellipsis' | 'hide' | 'none'
 type: String
 default: 'ellipsis'

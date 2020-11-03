@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.tooltip.interactive
+id: BaseGaugeTooltip.interactive
 type: Boolean
 default: false
 ---

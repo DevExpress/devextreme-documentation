@@ -1,4 +1,4 @@
 ---
-id: BaseWidget.Options.tooltip.font.color
+id: BaseWidgetTooltip.font.color
 default: '#232323'
 ---

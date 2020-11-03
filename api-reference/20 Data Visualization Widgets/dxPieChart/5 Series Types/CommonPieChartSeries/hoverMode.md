@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverMode
+id: dxPieChartSeriesTypesCommonPieChartSeries.hoverMode
 acceptValues: 'none' | 'onlyPoint'
 type: String
 default: 'onlyPoint'

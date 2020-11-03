@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.stepline
+id: dxChartCommonSeriesSettings.stepline
 type: Object
 ---
 ---

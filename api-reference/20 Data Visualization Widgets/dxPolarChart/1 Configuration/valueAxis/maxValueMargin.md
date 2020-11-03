@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.maxValueMargin
+id: dxPolarChartValueAxis.maxValueMargin
 type: Number
 default: undefined
 ---

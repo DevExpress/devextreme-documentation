@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.highValueField
+id: dxChartSeriesTypesCommonSeries.highValueField
 type: String
 default: 'high'
 notUsedInTheme: 

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.position
+id: dxChartSeriesTypesCommonSeriesLabel.position
 acceptValues: 'inside' | 'outside'
 type: String
 default: 'outside'

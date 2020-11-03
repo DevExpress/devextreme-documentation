@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar.color
+id: dxChartSeriesTypesCommonSeries.valueErrorBar.color
 type: String
 default: 'black'
 ---

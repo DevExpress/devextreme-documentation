@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.areapolarseries.selectionMode
+id: dxPolarChartSeriesTypesAreapolarseries.selectionMode
 acceptValues: 'includePoints' | 'excludePoints' | 'none'
 type: String
 default: 'includePoints'

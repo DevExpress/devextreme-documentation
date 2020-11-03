@@ -1,4 +1,4 @@
 ---
-id: dxChart.Options.commonAxisSettings.title.font.size
+id: dxChartCommonAxisSettingsTitle.font.size
 default: 16
 ---

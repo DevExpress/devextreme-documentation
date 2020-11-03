@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.font
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.font
 type: Object
 inherits: Font
 ---

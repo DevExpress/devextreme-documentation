@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar.highValueField
+id: dxChartSeriesTypesCommonSeries.valueErrorBar.highValueField
 type: String
 default: undefined
 ---

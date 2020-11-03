@@ -1,4 +1,4 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.label.font.color
+id: dxPolarChartCommonAxisSettingsLabel.font.color
 default: '#767676'
 ---

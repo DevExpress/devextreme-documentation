@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.inverted
+id: dxChartCommonAxisSettings.inverted
 type: Boolean
 default: false
 ---

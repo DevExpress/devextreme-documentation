@@ -1,5 +1,5 @@
 ---
-id: dxTreeList.Options.editing.allowUpdating
+id: dxTreeListEditing.allowUpdating
 type: Boolean | function(options)
 default: false
 ---

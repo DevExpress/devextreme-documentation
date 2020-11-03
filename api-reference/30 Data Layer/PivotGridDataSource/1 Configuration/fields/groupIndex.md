@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.groupIndex
+id: PivotGridDataSourceField.groupIndex
 type: Number
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.constantLineStyle.label.verticalAlignment
+id: dxChartValueAxisConstantLineStyleLabel.verticalAlignment
 acceptValues: 'bottom' | 'center' | 'top'
 type: String
 default: 'top'

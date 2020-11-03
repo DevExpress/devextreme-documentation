@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.reduction
+id: dxChartSeriesTypesCommonSeries.reduction
 type: Object
 ---
 ---

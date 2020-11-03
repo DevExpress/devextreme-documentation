@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.adaptiveLayout.height
+id: dxPolarChartAdaptiveLayout.height
 type: Number
 default: 170
 ---

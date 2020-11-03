@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.tooltip.contentRender
+id: dxFunnelTooltip.contentRender
 ---
 ---
 ##### shortDescription

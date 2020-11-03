@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.minorTick.opacity
+id: BaseGaugeScale.minorTick.opacity
 type: Number
 default: 1
 ---

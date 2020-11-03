@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.rangeContainer.backgroundColor
+id: BaseGaugeRangeContainer.backgroundColor
 type: String
 default: '#808080'
 ---

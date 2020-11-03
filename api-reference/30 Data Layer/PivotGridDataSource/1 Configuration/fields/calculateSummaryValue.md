@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.calculateSummaryValue
+id: PivotGridDataSourceField.calculateSummaryValue
 type: function(e)
 default: undefined
 ---

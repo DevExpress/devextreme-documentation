@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverStyle.color
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.hoverStyle.color
 type: String
 default: undefined
 ---

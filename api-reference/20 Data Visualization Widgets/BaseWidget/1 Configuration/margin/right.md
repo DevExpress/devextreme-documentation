@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.margin.right
+id: BaseWidgetMargin.right
 type: Number
 default: 0
 ---

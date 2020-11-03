@@ -1,5 +1,5 @@
 ---
-id: dxTreeList.Options.scrolling.mode
+id: dxTreeListScrolling.mode
 acceptValues: 'standard' | 'virtual'
 type: String
 default: 'virtual'

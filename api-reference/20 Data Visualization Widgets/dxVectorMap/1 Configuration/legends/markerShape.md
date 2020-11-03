@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.markerShape
+id: dxVectorMapLegends.markerShape
 acceptValues: 'circle' | 'square'
 type: String
 default: 'square'

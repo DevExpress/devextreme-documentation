@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.opacity
+id: dxPolarChartCommonAxisSettings.opacity
 type: Number
 default: undefined
 ---

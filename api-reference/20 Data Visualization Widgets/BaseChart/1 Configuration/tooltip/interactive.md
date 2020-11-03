@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.tooltip.interactive
+id: BaseChartTooltip.interactive
 type: Boolean
 default: false
 ---

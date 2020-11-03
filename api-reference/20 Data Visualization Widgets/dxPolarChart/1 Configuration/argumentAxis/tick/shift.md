@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.tick.shift
+id: dxPolarChartArgumentAxisTick.shift
 type: Number
 default: 3
 ---

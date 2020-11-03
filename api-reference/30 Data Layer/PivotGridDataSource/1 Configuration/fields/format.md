@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.format
+id: PivotGridDataSourceField.format
 type: format
 default: ''
 ---

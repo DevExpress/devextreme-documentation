@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.BubbleSeries.hoverMode
+id: dxChartSeriesTypesBubbleSeries.hoverMode
 acceptValues: 'onlyPoint' | 'allSeriesPoints' | 'allArgumentPoints' | 'none'
 type: String
 default: 'onlyPoint'

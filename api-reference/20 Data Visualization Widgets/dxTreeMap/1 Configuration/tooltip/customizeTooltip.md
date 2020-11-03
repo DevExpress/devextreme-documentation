@@ -1,5 +1,5 @@
 ---
-id: dxTreeMap.Options.tooltip.customizeTooltip
+id: dxTreeMapTooltip.customizeTooltip
 type: function(info)
 default: undefined
 ---

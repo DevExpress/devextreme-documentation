@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.subtitle.wordWrap
+id: BaseWidgetTitle.subtitle.wordWrap
 acceptValues: 'normal' | 'breakWord' | 'none'
 type: String
 default: 'normal'

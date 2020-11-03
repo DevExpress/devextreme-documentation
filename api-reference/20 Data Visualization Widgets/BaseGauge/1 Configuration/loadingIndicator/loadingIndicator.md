@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.loadingIndicator
-type: Object
+type: BaseGaugeLoadingIndicator
 ---
 ---
 ##### shortDescription

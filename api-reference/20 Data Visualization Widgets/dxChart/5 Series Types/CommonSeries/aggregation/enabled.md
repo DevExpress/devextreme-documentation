@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.aggregation.enabled
+id: dxChartSeriesTypesCommonSeriesAggregation.enabled
 type: Boolean
 default: false
 ---

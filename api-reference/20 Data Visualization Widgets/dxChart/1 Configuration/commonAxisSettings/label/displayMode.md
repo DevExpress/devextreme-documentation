@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.displayMode
+id: dxChartCommonAxisSettingsLabel.displayMode
 acceptValues: 'rotate' | 'stagger' | 'standard'
 type: String
 default: 'standard'

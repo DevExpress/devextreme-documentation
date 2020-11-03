@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.adaptiveLayout.width
+id: BaseChartAdaptiveLayout.width
 type: Number
 default: 80
 ---

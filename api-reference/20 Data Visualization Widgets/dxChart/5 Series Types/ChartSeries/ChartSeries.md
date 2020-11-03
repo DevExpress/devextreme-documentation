@@ -1,7 +1,7 @@
 ---
 id: ChartSeries
 type: Object
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 hidden: 
 inlineType: 
 ---

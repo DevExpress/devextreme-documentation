@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.scaleDivisionFactor
+id: BaseGaugeScale.scaleDivisionFactor
 type: Number
 default: 17
 ---

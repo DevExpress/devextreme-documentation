@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.opacity
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.opacity
 type: Number
 default: 0.5
 ---

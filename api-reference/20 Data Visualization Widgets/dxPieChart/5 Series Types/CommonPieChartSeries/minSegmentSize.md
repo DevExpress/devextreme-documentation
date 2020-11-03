@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.minSegmentSize
+id: dxPieChartSeriesTypesCommonPieChartSeries.minSegmentSize
 type: Number
 default: undefined
 ---

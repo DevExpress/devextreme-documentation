@@ -1,4 +1,4 @@
 ---
-id: dxPolarChartSeriesTypes.stackedbarpolarseries.label
-type: Object
+id: dxPolarChartSeriesTypesStackedbarpolarseries.label
+type: dxPolarChartSeriesTypesStackedbarpolarseriesLabel
 ---

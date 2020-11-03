@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.caption
+id: PivotGridDataSourceField.caption
 type: String
 default: undefined
 ---

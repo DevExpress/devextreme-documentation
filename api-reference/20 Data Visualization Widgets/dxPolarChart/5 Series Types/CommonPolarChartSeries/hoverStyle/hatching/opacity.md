@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.hatching.opacity
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.hoverStyle.hatching.opacity
 type: Number
 default: 0.75
 ---

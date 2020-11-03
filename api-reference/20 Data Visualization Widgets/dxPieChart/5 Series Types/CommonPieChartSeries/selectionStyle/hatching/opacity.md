@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.hatching.opacity
+id: dxPieChartSeriesTypesCommonPieChartSeries.selectionStyle.hatching.opacity
 type: Number
 default: 0.5
 ---

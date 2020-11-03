@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.legend.customizeHint
+id: dxBarGaugeLegend.customizeHint
 type: function(arg)
 ---
 ---

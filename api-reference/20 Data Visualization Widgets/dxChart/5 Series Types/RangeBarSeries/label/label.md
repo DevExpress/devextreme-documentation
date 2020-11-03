@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.RangeBarSeries.label
-type: Object
+id: dxChartSeriesTypesRangeBarSeries.label
+type: dxChartSeriesTypesRangeBarSeriesLabel
 ---

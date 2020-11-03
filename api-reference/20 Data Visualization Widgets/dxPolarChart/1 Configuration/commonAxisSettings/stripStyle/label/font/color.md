@@ -1,4 +1,4 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.stripStyle.label.font.color
+id: dxPolarChartCommonAxisSettingsStripStyleLabel.font.color
 default: '#767676'
 ---

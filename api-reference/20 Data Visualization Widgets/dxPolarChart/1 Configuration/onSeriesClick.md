@@ -2,7 +2,6 @@
 id: dxPolarChart.Options.onSeriesClick
 type: function(e) | String
 default: null
-EventForAction: dxPolarChart.seriesClick
 notUsedInTheme: 
 ---
 ---

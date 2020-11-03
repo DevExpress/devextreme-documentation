@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.symbol
+id: dxChartSeriesTypesCommonSeriesPoint.symbol
 acceptValues: 'circle' | 'cross' | 'polygon' | 'square' | 'triangleDown' | 'triangleUp'
 type: String
 default: 'circle'

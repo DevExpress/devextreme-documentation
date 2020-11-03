@@ -1,7 +1,7 @@
 ---
-id: dxChart.Options.valueAxis.strips
-type: Array<Object>
-inherits: dxChart.Options.commonAxisSettings.stripStyle
+id: dxChartValueAxis.strips
+type: Array<dxChartValueAxisStrips>
+inherits: dxChartCommonAxisSettings.stripStyle
 notUsedInTheme: 
 ---
 ---

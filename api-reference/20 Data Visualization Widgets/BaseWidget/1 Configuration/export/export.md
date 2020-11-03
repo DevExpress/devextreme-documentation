@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.export
-type: Object
+type: BaseWidgetExport
 ---
 ---
 ##### shortDescription

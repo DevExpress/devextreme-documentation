@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.popup
+id: GridBaseEditing.popup
 type: dxPopup_Options
 ---
 ---

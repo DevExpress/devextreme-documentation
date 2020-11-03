@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.font
+id: BaseWidgetTooltip.font
 type: Object
 inherits: Font
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.rangeContainer.palette
+id: BaseGaugeRangeContainer.palette
 acceptValues: 'Bright' | 'Harmony Light' | 'Ocean' | 'Pastel' | 'Soft' | 'Soft Pastel' | 'Vintage' | 'Violet' | 'Carmine' | 'Dark Moon' | 'Dark Violet' | 'Green Mist' | 'Soft Blue' | 'Material' | 'Office'
 type: Array<String> | String
 default: 'Material'

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.breaks
+id: dxChartArgumentAxis.breaks
 type: Array<ScaleBreak>
 inherits: ScaleBreak
 default: undefined

@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.adaptiveLayout
-type: Object
+type: dxPolarChartAdaptiveLayout
 ---
 ---
 ##### shortDescription

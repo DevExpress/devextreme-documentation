@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionMode
+id: dxPieChartSeriesTypesCommonPieChartSeries.selectionMode
 acceptValues: 'none' | 'onlyPoint'
 type: String
 default: 'onlyPoint'

@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.legend.visible
+id: dxBarGaugeLegend.visible
 type: Boolean
 default: false
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.image
+id: dxChartSeriesTypesCommonSeriesPoint.image
 type: String | Object
 default: undefined
 ---

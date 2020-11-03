@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.adaptiveLayout.height
+id: BaseChartAdaptiveLayout.height
 type: Number
 default: 80
 ---

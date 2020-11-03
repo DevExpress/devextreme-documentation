@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.SplineSeries.selectionMode
+id: dxChartSeriesTypesSplineSeries.selectionMode
 acceptValues: 'includePoints' | 'excludePoints' | 'none'
 type: String
 default: 'includePoints'

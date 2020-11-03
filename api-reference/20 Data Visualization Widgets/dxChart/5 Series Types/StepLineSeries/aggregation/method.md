@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StepLineSeries.aggregation.method
+id: dxChartSeriesTypesStepLineSeriesAggregation.method
 acceptValues: 'avg' | 'count' | 'max' | 'min' | 'sum' | 'custom'
 type: String
 default: 'avg'

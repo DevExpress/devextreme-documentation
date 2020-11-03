@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.color
+id: dxChartSeriesTypesCommonSeries.color
 type: String
 default: undefined
 ---

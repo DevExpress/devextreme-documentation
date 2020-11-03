@@ -1,4 +1,4 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.font.color
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.font.color
 default: '#FFFFFF'
 ---

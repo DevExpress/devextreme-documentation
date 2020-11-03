@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.tooltip
-type: Object
+type: BaseWidgetTooltip
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.hoverStyle.border.width
+id: dxChartSeriesTypesCommonSeriesPoint.hoverStyle.border.width
 type: Number
 default: 4
 ---

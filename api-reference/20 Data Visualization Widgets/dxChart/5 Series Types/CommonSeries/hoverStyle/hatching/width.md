@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.width
+id: dxChartSeriesTypesCommonSeriesHoverStyleHatching.width
 type: Number
 default: 2
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.legend.markerComponent
+id: dxFunnelLegend.markerComponent
 ---
 ---
 ##### shortDescription

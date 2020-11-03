@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.scrolling.mode
+id: dxDataGridScrolling.mode
 acceptValues: 'infinite' | 'standard' | 'virtual'
 type: String
 default: 'standard'

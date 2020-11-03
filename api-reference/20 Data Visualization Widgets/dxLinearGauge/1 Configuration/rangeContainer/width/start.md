@@ -1,5 +1,5 @@
 ---
-id: dxLinearGauge.Options.rangeContainer.width.start
+id: dxLinearGaugeRangeContainer.width.start
 type: Number
 default: 5
 ---

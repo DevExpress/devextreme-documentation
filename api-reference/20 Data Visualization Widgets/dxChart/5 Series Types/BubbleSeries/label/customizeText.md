@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.BubbleSeries.label.customizeText
+id: dxChartSeriesTypesBubbleSeriesLabel.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

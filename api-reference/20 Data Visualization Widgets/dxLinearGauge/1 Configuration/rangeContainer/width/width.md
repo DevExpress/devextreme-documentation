@@ -1,5 +1,5 @@
 ---
-id: dxLinearGauge.Options.rangeContainer.width
+id: dxLinearGaugeRangeContainer.width
 type: Object | Number
 ---
 ---

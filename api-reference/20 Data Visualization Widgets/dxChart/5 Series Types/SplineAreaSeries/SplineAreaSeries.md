@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.SplineAreaSeries
-type: Object
+type: dxChartSeriesTypesSplineAreaSeries
 inherits: dxChartSeriesTypes.CommonSeries
 ---
 ---

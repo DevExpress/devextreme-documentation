@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.rotationAngle
+id: dxChartCommonAxisSettingsLabel.rotationAngle
 type: Number
 default: 90
 ---

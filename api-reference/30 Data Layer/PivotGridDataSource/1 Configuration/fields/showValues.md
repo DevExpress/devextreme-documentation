@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.showValues
+id: PivotGridDataSourceField.showValues
 type: Boolean
 default: undefined
 ---

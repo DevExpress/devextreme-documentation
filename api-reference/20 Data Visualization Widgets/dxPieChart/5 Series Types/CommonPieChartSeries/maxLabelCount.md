@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.maxLabelCount
+id: dxPieChartSeriesTypesCommonPieChartSeries.maxLabelCount
 type: Number
 default: undefined
 ---

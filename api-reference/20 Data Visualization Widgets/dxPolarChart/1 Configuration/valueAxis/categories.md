@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.categories
+id: dxPolarChartValueAxis.categories
 type: Array<Number, String, Date>
 ---
 ---

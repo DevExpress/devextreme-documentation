@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.selection.deferred
+id: dxDataGridSelection.deferred
 type: Boolean
 default: false
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.pane
+id: dxChartSeriesTypesCommonSeries.pane
 type: String
 default: 'default'
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.strips.startValue
+id: dxChartArgumentAxisStrips.startValue
 type: Number | Date | String
 default: undefined
 ---

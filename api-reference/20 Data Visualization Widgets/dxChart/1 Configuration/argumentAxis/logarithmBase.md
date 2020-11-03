@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.logarithmBase
+id: dxChartArgumentAxis.logarithmBase
 type: Number
 default: 10
 ---

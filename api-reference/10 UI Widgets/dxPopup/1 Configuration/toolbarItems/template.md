@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.template
+id: dxPopupToolbarItem.template
 type: template
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.minorGrid.opacity
+id: dxPolarChartCommonAxisSettings.minorGrid.opacity
 type: Number
 default: undefined
 ---

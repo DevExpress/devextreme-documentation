@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.subtitle.offset
+id: BaseWidgetTitle.subtitle.offset
 type: Number
 default: 0
 ---

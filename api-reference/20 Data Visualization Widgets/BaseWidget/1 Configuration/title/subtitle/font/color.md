@@ -1,4 +1,4 @@
 ---
-id: BaseWidget.Options.title.subtitle.font.color
+id: BaseWidgetTitle.subtitle.font.color
 default: '#232323'
 ---

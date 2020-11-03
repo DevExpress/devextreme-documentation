@@ -1,5 +1,5 @@
 ---
-id: dxSankey.Options.tooltip.linkTooltipComponent
+id: dxSankeyTooltip.linkTooltipComponent
 ---
 ---
 ##### shortDescription

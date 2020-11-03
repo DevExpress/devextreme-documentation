@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.label.font
+id: dxPolarChartCommonAxisSettingsLabel.font
 type: Object
 inherits: Font
 ---

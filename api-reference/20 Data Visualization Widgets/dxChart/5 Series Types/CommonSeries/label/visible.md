@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.visible
+id: dxChartSeriesTypesCommonSeriesLabel.visible
 type: Boolean
 default: false
 ---

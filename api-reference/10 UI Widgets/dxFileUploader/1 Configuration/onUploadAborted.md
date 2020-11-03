@@ -2,7 +2,6 @@
 id: dxFileUploader.Options.onUploadAborted
 type: function(e)
 default: null
-EventForAction: dxFileUploader.uploadAborted
 ---
 ---
 ##### shortDescription

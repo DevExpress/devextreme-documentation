@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.stripStyle.label.verticalAlignment
+id: dxChartCommonAxisSettingsStripStyleLabel.verticalAlignment
 acceptValues: 'bottom' | 'center' | 'top'
 type: String
 default: 'center'

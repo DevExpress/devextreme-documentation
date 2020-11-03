@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.panes.height
+id: dxChartPanes.height
 type: Number | String
 default: undefined
 ---

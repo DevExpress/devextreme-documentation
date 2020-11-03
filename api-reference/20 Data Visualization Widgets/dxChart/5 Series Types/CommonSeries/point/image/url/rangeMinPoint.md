@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.image.url.rangeMinPoint
+id: dxChartSeriesTypesCommonSeriesPoint.image.url.rangeMinPoint
 type: String
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.border
+id: BaseWidgetTooltip.border
 type: Object
 ---
 ---

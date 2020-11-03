@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.sortBySummaryField
+id: PivotGridDataSourceField.sortBySummaryField
 type: String
 default: undefined
 ---

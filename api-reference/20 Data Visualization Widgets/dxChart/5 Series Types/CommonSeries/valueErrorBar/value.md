@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueErrorBar.value
+id: dxChartSeriesTypesCommonSeries.valueErrorBar.value
 type: Number
 default: 1
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.border.width
+id: dxPieChartSeriesTypesCommonPieChartSeries.hoverStyle.border.width
 type: Number
 default: 3
 ---

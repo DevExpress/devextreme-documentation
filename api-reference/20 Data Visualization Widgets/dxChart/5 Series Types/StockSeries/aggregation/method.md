@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StockSeries.aggregation.method
+id: dxChartSeriesTypesStockSeriesAggregation.method
 acceptValues: 'ohlc' | 'custom'
 type: String
 default: 'ohlc'

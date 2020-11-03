@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.constantLines.value
+id: dxPolarChartArgumentAxisConstantLines.value
 type: Number | Date | String
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.argumentFormat
+id: dxChartSeriesTypesCommonSeriesLabel.argumentFormat
 type: format
 default: undefined
 ---

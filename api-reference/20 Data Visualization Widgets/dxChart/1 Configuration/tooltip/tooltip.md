@@ -1,4 +1,4 @@
 ---
 id: dxChart.Options.tooltip
-type: Object
+type: dxChartTooltip
 ---

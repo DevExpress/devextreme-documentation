@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.headerFilter.width
+id: PivotGridDataSourceField.headerFilter.width
 type: Number
 default: undefined
 ---

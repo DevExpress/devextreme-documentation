@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StackedSplineAreaSeries.label.customizeText
+id: dxChartSeriesTypesStackedSplineAreaSeriesLabel.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

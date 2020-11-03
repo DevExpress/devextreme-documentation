@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.legend.markerTemplate
+id: dxFunnelLegend.markerTemplate
 type: template
 default: undefined
 ---

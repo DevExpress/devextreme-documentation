@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.editColumnName
+id: GridBaseEditing.editColumnName
 type: String
 default: null
 firedEvents: optionChanged

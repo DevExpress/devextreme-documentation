@@ -1,4 +1,4 @@
 ---
-id: dxDataGrid.Options.editing.texts
+id: dxDataGridEditing.texts
 type: Object
 ---

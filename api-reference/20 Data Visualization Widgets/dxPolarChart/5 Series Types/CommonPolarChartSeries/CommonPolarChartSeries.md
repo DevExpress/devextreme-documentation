@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries
-type: Object
+type: dxPolarChartSeriesTypesCommonPolarChartSeries
 hidden: 
 ---
 ---

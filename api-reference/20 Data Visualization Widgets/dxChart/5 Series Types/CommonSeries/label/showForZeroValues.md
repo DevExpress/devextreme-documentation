@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label.showForZeroValues
+id: dxChartSeriesTypesCommonSeriesLabel.showForZeroValues
 type: Boolean
 default: true
 ---

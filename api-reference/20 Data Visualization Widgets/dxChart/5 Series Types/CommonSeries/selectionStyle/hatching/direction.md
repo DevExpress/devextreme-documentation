@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.direction
+id: dxChartSeriesTypesCommonSeriesSelectionStyleHatching.direction
 acceptValues: 'left' | 'none' | 'right'
 type: String
 default: 'right'

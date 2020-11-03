@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.stripStyle.paddingTopBottom
+id: dxChartCommonAxisSettingsStripStyle.paddingTopBottom
 type: Number
 default: 5
 ---

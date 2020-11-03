@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.wholeRange
+id: dxChartArgumentAxis.wholeRange
 type: Object | Array<Number, String, Date>
 inherits: VizRange
 default: undefined

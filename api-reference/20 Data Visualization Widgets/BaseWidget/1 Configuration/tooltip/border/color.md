@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.border.color
+id: BaseWidgetTooltip.border.color
 type: String
 default: '#d3d3d3'
 ---

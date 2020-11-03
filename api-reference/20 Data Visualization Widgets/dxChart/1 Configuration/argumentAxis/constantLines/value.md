@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.constantLines.value
+id: dxChartArgumentAxisConstantLines.value
 type: Number | Date | String
 default: undefined
 ---

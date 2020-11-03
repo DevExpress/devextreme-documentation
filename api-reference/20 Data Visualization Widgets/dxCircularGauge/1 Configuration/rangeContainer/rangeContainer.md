@@ -1,6 +1,6 @@
 ---
 id: dxCircularGauge.Options.rangeContainer
-type: Object
+type: dxCircularGaugeRangeContainer
 ---
 ---
 ##### shortDescription

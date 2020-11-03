@@ -1,5 +1,5 @@
 ---
-id: BaseSparkline.Options.tooltip.contentComponent
+id: BaseSparklineTooltip.contentComponent
 ---
 ---
 ##### shortDescription

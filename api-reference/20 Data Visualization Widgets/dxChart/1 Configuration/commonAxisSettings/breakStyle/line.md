@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.breakStyle.line
+id: dxChartCommonAxisSettings.breakStyle.line
 acceptValues: 'straight' | 'waved'
 type: String
 default: 'waved'

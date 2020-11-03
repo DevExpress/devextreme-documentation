@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.StepAreaSeries.point
-type: Object
+id: dxChartSeriesTypesStepAreaSeries.point
+type: dxChartSeriesTypesStepAreaSeriesPoint
 ---

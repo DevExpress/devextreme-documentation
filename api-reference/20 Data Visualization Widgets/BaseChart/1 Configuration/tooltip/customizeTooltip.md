@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.tooltip.customizeTooltip
+id: BaseChartTooltip.customizeTooltip
 type: function(pointInfo)
 default: undefined
 notUsedInTheme: 

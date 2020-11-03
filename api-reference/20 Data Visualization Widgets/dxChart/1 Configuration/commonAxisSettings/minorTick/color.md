@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorTick.color
+id: dxChartCommonAxisSettings.minorTick.color
 type: String
 default: '#767676'
 ---

@@ -2,7 +2,6 @@
 id: dxFileManager.Options.onErrorOccurred
 type: function(e)
 default: null
-EventForAction: dxFileManager.errorOccurred
 ---
 ---
 ##### shortDescription

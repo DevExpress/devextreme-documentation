@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.strips.color
+id: dxChartArgumentAxisStrips.color
 type: String
 default: undefined
 ---

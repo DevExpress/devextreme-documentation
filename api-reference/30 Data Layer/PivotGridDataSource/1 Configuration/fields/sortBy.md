@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.sortBy
+id: PivotGridDataSourceField.sortBy
 acceptValues: 'displayText' | 'value' | 'none'
 type: String
 default: undefined

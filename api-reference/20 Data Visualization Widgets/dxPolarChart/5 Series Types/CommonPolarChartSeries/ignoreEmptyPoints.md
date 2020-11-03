@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.ignoreEmptyPoints
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.ignoreEmptyPoints
 type: Boolean
 default: false
 ---

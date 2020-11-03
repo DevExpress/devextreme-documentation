@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CandleStickSeries.argumentField
+id: dxChartSeriesTypesCandleStickSeries.argumentField
 type: String
 default: 'date'
 ---

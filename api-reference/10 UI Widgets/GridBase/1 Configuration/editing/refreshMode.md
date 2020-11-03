@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.refreshMode
+id: GridBaseEditing.refreshMode
 acceptValues: 'full' | 'reshape' | 'repaint'
 type: String
 default: 'full'

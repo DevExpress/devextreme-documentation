@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.placeholderSize
+id: dxChartCommonAxisSettings.placeholderSize
 type: Number
 default: null
 ---

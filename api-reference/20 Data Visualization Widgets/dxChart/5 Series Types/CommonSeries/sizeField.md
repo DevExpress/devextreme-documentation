@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.sizeField
+id: dxChartSeriesTypesCommonSeries.sizeField
 type: String
 default: 'size'
 ---

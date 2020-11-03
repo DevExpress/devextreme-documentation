@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.summaryDisplayMode
+id: PivotGridDataSourceField.summaryDisplayMode
 acceptValues: 'absoluteVariation' | 'percentOfColumnGrandTotal' | 'percentOfColumnTotal' | 'percentOfGrandTotal' | 'percentOfRowGrandTotal' | 'percentOfRowTotal' | 'percentVariation'
 type: String
 default: undefined

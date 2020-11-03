@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.runningTotal
+id: PivotGridDataSourceField.runningTotal
 acceptValues: 'column' | 'row'
 type: String
 default: undefined

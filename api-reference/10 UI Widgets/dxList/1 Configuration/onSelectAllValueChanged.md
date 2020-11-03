@@ -2,7 +2,6 @@
 id: dxList.Options.onSelectAllValueChanged
 type: function(e)
 default: null
-EventForAction: dxList.selectAllValueChanged
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.stack
+id: dxChartSeriesTypesCommonSeries.stack
 type: String
 default: 'default'
 ---

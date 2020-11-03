@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.width
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.hoverStyle.width
 type: Number
 default: 3
 ---

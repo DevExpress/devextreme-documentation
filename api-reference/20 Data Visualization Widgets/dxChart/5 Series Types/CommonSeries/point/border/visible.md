@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point.border.visible
+id: dxChartSeriesTypesCommonSeriesPoint.border.visible
 type: Boolean
 default: false
 ---

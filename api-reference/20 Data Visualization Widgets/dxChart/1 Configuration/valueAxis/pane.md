@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.pane
+id: dxChartValueAxis.pane
 type: String
 default: undefined
 ---

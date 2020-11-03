@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.loadingIndicator
-type: Object
+type: dxBarGaugeLoadingIndicator
 ---
 ---
 ##### shortDescription

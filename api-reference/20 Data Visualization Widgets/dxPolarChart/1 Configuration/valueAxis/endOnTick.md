@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.endOnTick
+id: dxPolarChartValueAxis.endOnTick
 type: Boolean
 default: false
 ---

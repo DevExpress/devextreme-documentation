@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.allowDecimals
+id: dxPolarChartCommonAxisSettings.allowDecimals
 type: Boolean
 default: undefined
 ---

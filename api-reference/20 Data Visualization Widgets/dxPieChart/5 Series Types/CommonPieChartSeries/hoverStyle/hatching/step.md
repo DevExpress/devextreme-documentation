@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.hatching.step
+id: dxPieChartSeriesTypesCommonPieChartSeries.hoverStyle.hatching.step
 type: Number
 default: 10
 ---

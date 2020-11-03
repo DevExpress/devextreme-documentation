@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.label.rotationAngle
+id: dxPieChartSeriesTypesCommonPieChartSeries.label.rotationAngle
 type: Number
 default: 0
 ---

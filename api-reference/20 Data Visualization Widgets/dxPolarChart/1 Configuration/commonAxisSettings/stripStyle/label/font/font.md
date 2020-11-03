@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonAxisSettings.stripStyle.label.font
+id: dxPolarChartCommonAxisSettingsStripStyleLabel.font
 type: Object
 inherits: Font
 ---

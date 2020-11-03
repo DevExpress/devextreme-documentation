@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.calculateCustomSummary
+id: PivotGridDataSourceField.calculateCustomSummary
 type: function(options)
 ---
 ---

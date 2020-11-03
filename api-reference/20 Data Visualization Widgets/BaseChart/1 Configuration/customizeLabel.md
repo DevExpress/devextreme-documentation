@@ -9,7 +9,7 @@ Customizes the appearance of an individual point label.
 ##### param(pointInfo): Object
 Information on the series point.
 
-##### return: dxChartSeriesTypes_CommonSeries_label
+##### return: dxChartSeriesTypesCommonSeries_label
 The label's [configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label/').
 
 ---

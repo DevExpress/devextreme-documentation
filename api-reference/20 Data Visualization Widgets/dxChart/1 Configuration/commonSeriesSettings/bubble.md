@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.bubble
+id: dxChartCommonSeriesSettings.bubble
 type: Object
 ---
 ---

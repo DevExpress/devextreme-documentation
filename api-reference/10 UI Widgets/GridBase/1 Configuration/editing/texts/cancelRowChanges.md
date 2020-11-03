@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.texts.cancelRowChanges
+id: GridBaseEditingTexts.cancelRowChanges
 type: String
 default: 'Cancel'
 ---

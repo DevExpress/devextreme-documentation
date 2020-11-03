@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.tagField
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.tagField
 type: String
 default: 'tag'
 notUsedInTheme: 

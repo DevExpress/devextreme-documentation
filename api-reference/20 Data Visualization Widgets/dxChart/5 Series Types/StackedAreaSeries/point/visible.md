@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StackedAreaSeries.point.visible
+id: dxChartSeriesTypesStackedAreaSeriesPoint.visible
 type: Boolean
 default: false
 ---

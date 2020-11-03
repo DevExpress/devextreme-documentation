@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.size.height
+id: BaseWidgetSize.height
 type: Number
 default: undefined
 ---

@@ -1,4 +1,4 @@
 ---
-id: dxPolarChart.Options.argumentAxis.tick
-type: Object
+id: dxPolarChartArgumentAxis.tick
+type: dxPolarChartArgumentAxisTick
 ---

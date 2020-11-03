@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.valueField
+id: dxChartSeriesTypesCommonSeries.valueField
 type: String
 default: 'val'
 notUsedInTheme: 

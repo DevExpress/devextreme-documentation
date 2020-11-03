@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.disabled
+id: dxPopupToolbarItem.disabled
 type: Boolean
 default: false
 ---

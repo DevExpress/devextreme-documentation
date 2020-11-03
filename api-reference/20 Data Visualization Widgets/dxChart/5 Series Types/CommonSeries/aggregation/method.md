@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.aggregation.method
+id: dxChartSeriesTypesCommonSeriesAggregation.method
 acceptValues: 'avg' | 'count' | 'max' | 'min' | 'ohlc' | 'range' | 'sum' | 'custom'
 type: String
 ---

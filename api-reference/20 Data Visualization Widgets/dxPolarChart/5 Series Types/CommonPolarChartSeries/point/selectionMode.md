@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.selectionMode
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint.selectionMode
 acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'none' | 'onlyPoint'
 type: String
 default: 'onlyPoint'

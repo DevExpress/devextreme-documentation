@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.position
+id: dxChartValueAxis.position
 acceptValues: 'bottom' | 'left' | 'right' | 'top'
 type: String
 default: 'left'

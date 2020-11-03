@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CandleStickSeries.aggregation.method
+id: dxChartSeriesTypesCandleStickSeriesAggregation.method
 acceptValues: 'ohlc' | 'custom'
 type: String
 default: 'ohlc'

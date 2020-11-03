@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StepAreaSeries.point.visible
+id: dxChartSeriesTypesStepAreaSeriesPoint.visible
 type: Boolean
 default: false
 ---

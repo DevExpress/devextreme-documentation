@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.rangeContainer.offset
+id: BaseGaugeRangeContainer.offset
 type: Number
 default: 0
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.type
+id: dxChartArgumentAxis.type
 acceptValues: 'continuous' | 'discrete' | 'logarithmic'
 type: String
 default: undefined

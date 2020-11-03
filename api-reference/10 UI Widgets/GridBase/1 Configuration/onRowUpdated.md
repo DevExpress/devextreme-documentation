@@ -2,7 +2,6 @@
 id: GridBase.Options.onRowUpdated
 type: function(e)
 default: null
-EventForAction: GridBase.rowUpdated
 ---
 ---
 ##### shortDescription

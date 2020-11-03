@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.wordWrapEnabled
+id: PivotGridDataSourceField.wordWrapEnabled
 type: Boolean
 default: undefined
 ---

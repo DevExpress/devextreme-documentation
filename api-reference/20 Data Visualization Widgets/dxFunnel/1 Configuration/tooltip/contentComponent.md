@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.tooltip.contentComponent
+id: dxFunnelTooltip.contentComponent
 ---
 ---
 ##### shortDescription

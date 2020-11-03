@@ -1,6 +1,6 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.label
-type: Object
+id: dxChartSeriesTypesCommonSeries.label
+type: dxChartSeriesTypesCommonSeriesLabel
 ---
 ---
 ##### shortDescription

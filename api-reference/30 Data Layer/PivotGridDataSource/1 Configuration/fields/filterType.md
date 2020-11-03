@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.filterType
+id: PivotGridDataSourceField.filterType
 acceptValues: 'exclude' | 'include'
 type: String
 default: 'include'

@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.startEditAction
+id: GridBaseEditing.startEditAction
 acceptValues: 'click' | 'dblClick'
 type: String
 default: 'click'

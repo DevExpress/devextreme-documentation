@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorTick.shift
+id: dxChartCommonAxisSettings.minorTick.shift
 type: Number
 default: 3
 ---

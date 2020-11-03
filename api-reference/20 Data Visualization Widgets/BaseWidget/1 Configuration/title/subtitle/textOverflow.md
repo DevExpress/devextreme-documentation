@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.subtitle.textOverflow
+id: BaseWidgetTitle.subtitle.textOverflow
 acceptValues: 'ellipsis' | 'hide' | 'none'
 type: String
 default: 'ellipsis'

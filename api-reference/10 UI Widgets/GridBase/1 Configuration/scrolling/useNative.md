@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.scrolling.useNative
+id: GridBaseScrolling.useNative
 acceptValues: 'auto'
 type: Boolean | String
 default: 'auto'

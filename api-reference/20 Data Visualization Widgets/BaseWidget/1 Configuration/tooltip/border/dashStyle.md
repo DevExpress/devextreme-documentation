@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.border.dashStyle
+id: BaseWidgetTooltip.border.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: 'solid'

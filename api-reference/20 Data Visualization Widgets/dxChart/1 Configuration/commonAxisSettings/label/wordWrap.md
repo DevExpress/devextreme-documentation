@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.wordWrap
+id: dxChartCommonAxisSettingsLabel.wordWrap
 acceptValues: 'normal' | 'breakWord' | 'none'
 type: String
 default: 'normal'

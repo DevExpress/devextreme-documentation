@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.ScatterSeries.label.customizeText
+id: dxChartSeriesTypesScatterSeriesLabel.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

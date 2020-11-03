@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.opacity
+id: dxChartSeriesTypesCommonSeries.opacity
 type: Number
 default: 0.5
 ---

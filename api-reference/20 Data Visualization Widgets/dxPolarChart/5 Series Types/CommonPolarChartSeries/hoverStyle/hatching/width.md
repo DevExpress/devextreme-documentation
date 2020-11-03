@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.hatching.width
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.hoverStyle.hatching.width
 type: Number
 default: 2
 ---

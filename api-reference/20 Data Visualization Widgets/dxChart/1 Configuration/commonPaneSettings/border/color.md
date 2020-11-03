@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.border.color
+id: dxChartCommonPaneSettings.border.color
 type: String
 default: '#d3d3d3'
 ---

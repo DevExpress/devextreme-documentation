@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.visualRangeUpdateMode
+id: dxPolarChartValueAxis.visualRangeUpdateMode
 acceptValues: 'auto' | 'keep' | 'reset'
 type: String
 default: 'auto'

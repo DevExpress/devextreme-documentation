@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonSeriesSettings.stackedarea
+id: dxChartCommonSeriesSettings.stackedarea
 type: Object
 ---
 ---

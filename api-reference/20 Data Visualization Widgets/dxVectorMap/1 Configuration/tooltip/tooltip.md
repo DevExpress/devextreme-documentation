@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.tooltip
-type: Object
+type: dxVectorMapTooltip
 ---
 ---
 ##### shortDescription

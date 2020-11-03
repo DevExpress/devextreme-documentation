@@ -1,6 +1,6 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.point
-type: Object
+id: dxChartSeriesTypesCommonSeries.point
+type: dxChartSeriesTypesCommonSeriesPoint
 ---
 ---
 ##### shortDescription

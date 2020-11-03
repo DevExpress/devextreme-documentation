@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.Options.scrolling
-type: Object
+type: dxTreeListScrolling
 ---
 ---
 ##### shortDescription

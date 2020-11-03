@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.hatching
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.hoverStyle.hatching
 type: Object
 ---
 ---

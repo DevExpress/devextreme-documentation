@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.headerFilter.allowSearch
+id: PivotGridDataSourceField.headerFilter.allowSearch
 type: Boolean
 default: undefined
 ---

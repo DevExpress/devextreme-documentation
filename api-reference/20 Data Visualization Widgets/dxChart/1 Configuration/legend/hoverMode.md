@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.legend.hoverMode
+id: dxChartLegend.hoverMode
 acceptValues: 'excludePoints' | 'includePoints' | 'none'
 type: String
 default: 'includePoints'

@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.argumentField
+id: dxPieChartSeriesTypesCommonPieChartSeries.argumentField
 type: String
 default: 'arg'
 ---

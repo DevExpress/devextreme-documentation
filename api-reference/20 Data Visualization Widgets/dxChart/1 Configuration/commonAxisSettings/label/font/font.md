@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.font
+id: dxChartCommonAxisSettingsLabel.font
 type: Object
 inherits: Font
 ---

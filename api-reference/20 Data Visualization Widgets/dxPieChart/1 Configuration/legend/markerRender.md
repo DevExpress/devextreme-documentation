@@ -1,5 +1,5 @@
 ---
-id: dxPieChart.Options.legend.markerRender
+id: dxPieChartLegend.markerRender
 ---
 ---
 ##### shortDescription

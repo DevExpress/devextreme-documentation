@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.color
+id: dxChartCommonAxisSettings.color
 type: String
 default: '#767676'
 ---

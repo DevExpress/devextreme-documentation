@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.tooltip.interactive
+id: dxBarGaugeTooltip.interactive
 type: Boolean
 default: false
 ---

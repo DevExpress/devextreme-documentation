@@ -1,6 +1,6 @@
 ---
 id: dxLinearGauge.Options.scale
-type: Object
+type: dxLinearGaugeScale
 ---
 ---
 ##### shortDescription

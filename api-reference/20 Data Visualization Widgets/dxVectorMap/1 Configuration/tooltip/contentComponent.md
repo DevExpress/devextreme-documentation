@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.tooltip.contentComponent
+id: dxVectorMapTooltip.contentComponent
 ---
 ---
 ##### shortDescription

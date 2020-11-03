@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.RangeAreaSeries.hoverMode
+id: dxChartSeriesTypesRangeAreaSeries.hoverMode
 acceptValues: 'nearestPoint' | 'includePoints' | 'excludePoints' | 'none'
 type: String
 default: 'nearestPoint'

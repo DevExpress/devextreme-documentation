@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.rangeContainer.ranges
+id: BaseGaugeRangeContainer.ranges
 type: Array<Object>
 default: []
 notUsedInTheme: 

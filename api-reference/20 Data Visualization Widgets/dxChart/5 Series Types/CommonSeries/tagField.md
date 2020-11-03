@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.tagField
+id: dxChartSeriesTypesCommonSeries.tagField
 type: String
 default: 'tag'
 notUsedInTheme: 

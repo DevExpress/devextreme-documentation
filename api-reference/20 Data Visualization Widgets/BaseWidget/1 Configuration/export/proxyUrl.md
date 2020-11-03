@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.export.proxyUrl
+id: BaseWidgetExport.proxyUrl
 type: String
 default: undefined
 deprecated: [important] Since v10, Safari browser supports API for saving files, and this option is no longer required.

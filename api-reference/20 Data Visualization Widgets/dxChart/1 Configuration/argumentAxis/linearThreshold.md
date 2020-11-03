@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.linearThreshold
+id: dxChartArgumentAxis.linearThreshold
 type: Number
 default: undefined
 ---

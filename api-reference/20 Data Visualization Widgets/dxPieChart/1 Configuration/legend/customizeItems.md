@@ -1,5 +1,5 @@
 ---
-id: dxPieChart.Options.legend.customizeItems
+id: dxPieChartLegend.customizeItems
 type: function(items)
 ---
 ---

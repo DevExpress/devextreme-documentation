@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.type
+id: dxPolarChartValueAxis.type
 acceptValues: 'continuous' | 'discrete' | 'logarithmic'
 type: String
 default: undefined

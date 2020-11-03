@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.selection
-type: Object
+type: dxDataGridSelection
 ---
 ---
 ##### shortDescription

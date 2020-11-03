@@ -1,4 +1,4 @@
 ---
-id: BaseWidget.Options.loadingIndicator.font.color
+id: BaseWidgetLoadingIndicator.font.color
 default: '#767676'
 ---

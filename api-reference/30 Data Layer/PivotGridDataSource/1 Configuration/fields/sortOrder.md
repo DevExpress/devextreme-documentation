@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.sortOrder
+id: PivotGridDataSourceField.sortOrder
 acceptValues: 'asc' | 'desc'
 type: String
 default: 'asc'

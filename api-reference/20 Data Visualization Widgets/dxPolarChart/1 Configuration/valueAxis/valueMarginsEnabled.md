@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.valueMarginsEnabled
+id: dxPolarChartValueAxis.valueMarginsEnabled
 type: Boolean
 default: true
 ---

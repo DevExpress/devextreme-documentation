@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.showTotals
+id: PivotGridDataSourceField.showTotals
 type: Boolean
 default: true
 ---

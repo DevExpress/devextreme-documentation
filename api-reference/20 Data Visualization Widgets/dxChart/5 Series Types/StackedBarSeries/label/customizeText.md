@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.StackedBarSeries.label.customizeText
+id: dxChartSeriesTypesStackedBarSeriesLabel.customizeText
 type: function(pointInfo)
 notUsedInTheme: 
 ---

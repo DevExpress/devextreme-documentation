@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.Component
+id: dxPopupToolbarItem.Component
 ---
 ---
 ##### shortDescription

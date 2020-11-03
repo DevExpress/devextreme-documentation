@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.startValue
+id: BaseGaugeScale.startValue
 type: Number
 default: 0
 notUsedInTheme: 

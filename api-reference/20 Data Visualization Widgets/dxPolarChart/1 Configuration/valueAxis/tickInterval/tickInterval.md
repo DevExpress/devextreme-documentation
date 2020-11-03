@@ -1,5 +1,7 @@
 ---
-id: dxPolarChart.Options.valueAxis.tickInterval
+id: dxPolarChartValueAxis.tickInterval
+acceptValues: 'day' | 'hour' | 'millisecond' | 'minute' | 'month' | 'quarter' | 'second' | 'week' | 'year'
+type: Number | Object | String
 inherits: VizTimeInterval
 ---
 ---

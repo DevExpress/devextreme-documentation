@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries
-type: Object
+type: dxPieChartSeriesTypesCommonPieChartSeries
 hidden: 
 ---
 ---

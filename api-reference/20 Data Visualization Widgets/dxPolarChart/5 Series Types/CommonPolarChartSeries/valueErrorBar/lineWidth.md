@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.lineWidth
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar.lineWidth
 type: Number
 default: 2
 ---

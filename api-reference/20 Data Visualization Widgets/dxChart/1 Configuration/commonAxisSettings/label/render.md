@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.Render
+id: dxChartCommonAxisSettingsLabel.Render
 ---
 ---
 ##### shortDescription

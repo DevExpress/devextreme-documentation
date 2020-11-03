@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.areapolarseries.hoverMode
+id: dxPolarChartSeriesTypesAreapolarseries.hoverMode
 acceptValues: 'nearestPoint' | 'includePoints' | 'excludePoints' | 'none'
 type: String
 default: 'nearestPoint'

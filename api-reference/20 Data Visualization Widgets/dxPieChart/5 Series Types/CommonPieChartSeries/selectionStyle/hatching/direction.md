@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.hatching.direction
+id: dxPieChartSeriesTypesCommonPieChartSeries.selectionStyle.hatching.direction
 acceptValues: 'left' | 'none' | 'right'
 type: String
 default: 'right'

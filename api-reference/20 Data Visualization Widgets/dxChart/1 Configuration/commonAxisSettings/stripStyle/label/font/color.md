@@ -1,4 +1,4 @@
 ---
-id: dxChart.Options.commonAxisSettings.stripStyle.label.font.color
+id: dxChartCommonAxisSettingsStripStyleLabel.font.color
 default: '#767676'
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.source.grouping
+id: dxVectorMapLegends.source.grouping
 type: String
 notUsedInTheme: 
 ---

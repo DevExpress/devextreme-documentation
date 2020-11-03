@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.border
+id: dxChartCommonPaneSettings.border
 type: Object
 ---
 ---

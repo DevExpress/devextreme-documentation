@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.label.font
+id: BaseGaugeScaleLabel.font
 type: Object
 inherits: Font
 ---

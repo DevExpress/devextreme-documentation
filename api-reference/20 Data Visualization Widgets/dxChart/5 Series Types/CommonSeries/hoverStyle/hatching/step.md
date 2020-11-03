@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.step
+id: dxChartSeriesTypesCommonSeriesHoverStyleHatching.step
 type: Number
 default: 6
 ---

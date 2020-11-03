@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.selectionStyle.border.width
+id: dxChartSeriesTypesCommonSeriesSelectionStyleBorder.width
 type: Number
 default: 3
 ---

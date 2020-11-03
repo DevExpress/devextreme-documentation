@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.scrolling.showScrollbar
+id: GridBaseScrolling.showScrollbar
 acceptValues: 'always' | 'never' | 'onHover' | 'onScroll'
 type: String
 default: 'onScroll', 'onHover' (desktop)

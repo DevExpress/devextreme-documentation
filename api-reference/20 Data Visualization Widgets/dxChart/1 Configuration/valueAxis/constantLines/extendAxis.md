@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.constantLines.extendAxis
+id: dxChartValueAxisConstantLines.extendAxis
 type: Boolean
 default: false
 ---

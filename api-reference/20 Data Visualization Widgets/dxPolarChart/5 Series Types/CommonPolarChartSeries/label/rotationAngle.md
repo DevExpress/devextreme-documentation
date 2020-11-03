@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.rotationAngle
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.rotationAngle
 type: Number
 default: 0
 ---

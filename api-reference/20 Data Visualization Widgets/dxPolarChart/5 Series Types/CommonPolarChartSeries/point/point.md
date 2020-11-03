@@ -1,6 +1,6 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point
-type: Object
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.point
+type: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint
 ---
 ---
 ##### shortDescription

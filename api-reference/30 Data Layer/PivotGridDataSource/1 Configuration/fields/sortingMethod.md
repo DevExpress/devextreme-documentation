@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.sortingMethod
+id: PivotGridDataSourceField.sortingMethod
 type: function(a, b)
 default: undefined
 ---

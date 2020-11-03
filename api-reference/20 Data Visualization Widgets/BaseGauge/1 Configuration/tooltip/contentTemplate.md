@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.tooltip.contentTemplate
+id: BaseGaugeTooltip.contentTemplate
 type: template
 default: undefined
 ---

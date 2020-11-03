@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.commonSeriesSettings.scatter
+id: dxPolarChartCommonSeriesSettings.scatter
 type: Object
 ---
 ---

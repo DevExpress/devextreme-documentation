@@ -2,7 +2,6 @@
 id: dxFileManager.Options.onToolbarItemClick
 type: function(e)
 default: null
-EventForAction: dxFileManager.toolbarItemClick
 ---
 ---
 ##### shortDescription

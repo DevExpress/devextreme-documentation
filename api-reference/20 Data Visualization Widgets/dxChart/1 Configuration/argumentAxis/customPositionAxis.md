@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.customPositionAxis
+id: dxChartArgumentAxis.customPositionAxis
 type: String
 default: undefined
 ---

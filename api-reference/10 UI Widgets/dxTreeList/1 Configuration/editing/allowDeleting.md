@@ -1,5 +1,5 @@
 ---
-id: dxTreeList.Options.editing.allowDeleting
+id: dxTreeListEditing.allowDeleting
 type: Boolean | function(options)
 default: false
 ---

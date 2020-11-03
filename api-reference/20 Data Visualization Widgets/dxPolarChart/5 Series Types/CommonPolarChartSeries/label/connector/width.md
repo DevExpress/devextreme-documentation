@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.connector.width
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.connector.width
 type: Number
 default: 1
 ---

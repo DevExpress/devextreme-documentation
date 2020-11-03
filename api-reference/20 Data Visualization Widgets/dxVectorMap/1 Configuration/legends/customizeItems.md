@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.customizeItems
+id: dxVectorMapLegends.customizeItems
 type: function(items)
 ---
 ---

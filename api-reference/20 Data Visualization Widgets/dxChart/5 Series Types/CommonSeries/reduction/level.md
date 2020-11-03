@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.reduction.level
+id: dxChartSeriesTypesCommonSeries.reduction.level
 acceptValues: 'close' | 'high' | 'low' | 'open'
 type: String
 default: 'close'

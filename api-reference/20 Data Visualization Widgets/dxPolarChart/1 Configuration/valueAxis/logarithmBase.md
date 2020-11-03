@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.logarithmBase
+id: dxPolarChartValueAxis.logarithmBase
 type: Number
 default: 10
 ---

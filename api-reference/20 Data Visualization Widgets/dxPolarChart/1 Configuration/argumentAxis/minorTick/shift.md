@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.argumentAxis.minorTick.shift
+id: dxPolarChartArgumentAxisMinorTick.shift
 type: Number
 default: 3
 ---

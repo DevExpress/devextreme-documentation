@@ -1,5 +1,5 @@
 ---
-id: dxSankey.Options.tooltip.enabled
+id: dxSankeyTooltip.enabled
 type: Boolean
 default: true
 ---

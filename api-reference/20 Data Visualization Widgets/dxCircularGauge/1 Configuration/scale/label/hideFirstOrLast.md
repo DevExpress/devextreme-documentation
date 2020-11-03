@@ -1,5 +1,5 @@
 ---
-id: dxCircularGauge.Options.scale.label.hideFirstOrLast
+id: dxCircularGaugeScaleLabel.hideFirstOrLast
 acceptValues: 'first' | 'last'
 type: String
 default: 'last'

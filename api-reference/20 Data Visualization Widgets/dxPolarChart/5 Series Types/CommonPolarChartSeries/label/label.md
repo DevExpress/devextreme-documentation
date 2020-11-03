@@ -1,6 +1,6 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label
-type: Object
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.label
+type: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel
 ---
 ---
 ##### shortDescription

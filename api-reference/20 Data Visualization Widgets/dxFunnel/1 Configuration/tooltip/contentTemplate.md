@@ -1,5 +1,5 @@
 ---
-id: dxFunnel.Options.tooltip.contentTemplate
+id: dxFunnelTooltip.contentTemplate
 type: template
 default: undefined
 ---

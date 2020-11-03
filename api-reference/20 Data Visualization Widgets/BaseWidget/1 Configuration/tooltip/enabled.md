@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.enabled
+id: BaseWidgetTooltip.enabled
 type: Boolean
 default: false
 ---

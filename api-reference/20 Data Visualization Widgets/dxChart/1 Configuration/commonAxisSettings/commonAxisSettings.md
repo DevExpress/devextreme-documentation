@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings
-type: Object
+type: dxChartCommonAxisSettings
 ---
 ---
 ##### shortDescription

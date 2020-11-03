@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.color
+id: dxPieChartSeriesTypesCommonPieChartSeries.selectionStyle.color
 type: String
 default: undefined
 ---

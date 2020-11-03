@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.stack
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.stack
 type: String
 default: 'default'
 ---

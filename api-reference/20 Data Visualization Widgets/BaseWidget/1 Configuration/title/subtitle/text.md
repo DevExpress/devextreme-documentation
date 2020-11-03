@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.title.subtitle.text
+id: BaseWidgetTitle.subtitle.text
 type: String
 default: null
 ---

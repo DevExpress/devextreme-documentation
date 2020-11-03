@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.border.color
+id: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel.border.color
 type: String
 default: '#d3d3d3'
 ---

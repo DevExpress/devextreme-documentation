@@ -2,7 +2,6 @@
 id: Component.Options.onInitialized
 type: function(e)
 default: null
-EventForAction: Component.initialized
 ---
 ---
 ##### shortDescription

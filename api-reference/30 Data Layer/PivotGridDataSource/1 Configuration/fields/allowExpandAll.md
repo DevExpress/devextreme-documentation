@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.allowExpandAll
+id: PivotGridDataSourceField.allowExpandAll
 type: Boolean
 default: false
 ---

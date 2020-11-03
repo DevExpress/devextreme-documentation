@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.zIndex
+id: BaseWidgetTooltip.zIndex
 type: Number
 default: undefined
 ---

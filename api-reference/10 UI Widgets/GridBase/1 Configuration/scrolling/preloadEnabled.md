@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.scrolling.preloadEnabled
+id: GridBaseScrolling.preloadEnabled
 type: Boolean
 default: false
 ---

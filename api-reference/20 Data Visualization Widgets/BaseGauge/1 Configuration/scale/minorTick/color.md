@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.minorTick.color
+id: BaseGaugeScale.minorTick.color
 type: String
 default: '#FFFFFF'
 ---

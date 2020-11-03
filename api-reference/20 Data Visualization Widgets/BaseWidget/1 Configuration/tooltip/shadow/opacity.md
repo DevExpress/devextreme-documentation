@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.shadow.opacity
+id: BaseWidgetTooltip.shadow.opacity
 type: Number
 default: 0.4
 ---

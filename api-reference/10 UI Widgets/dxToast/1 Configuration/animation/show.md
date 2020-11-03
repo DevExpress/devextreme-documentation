@@ -1,5 +1,5 @@
 ---
-id: dxToast.Options.animation.show
+id: dxToastAnimation.show
 type: animationConfig
 default: { type: 'fade', duration: 400, from: 0, to: 1 }
 ---

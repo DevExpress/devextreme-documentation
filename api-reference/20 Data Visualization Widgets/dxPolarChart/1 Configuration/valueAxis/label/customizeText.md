@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.label.customizeText
+id: dxPolarChartValueAxisLabel.customizeText
 type: function(axisValue)
 notUsedInTheme: 
 ---

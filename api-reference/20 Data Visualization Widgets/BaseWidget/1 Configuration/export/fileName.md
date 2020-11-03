@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.export.fileName
+id: BaseWidgetExport.fileName
 type: String
 default: 'file'
 ---

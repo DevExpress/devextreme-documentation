@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.constantLines.displayBehindSeries
+id: dxPolarChartValueAxisConstantLines.displayBehindSeries
 type: Boolean
 default: false
 ---

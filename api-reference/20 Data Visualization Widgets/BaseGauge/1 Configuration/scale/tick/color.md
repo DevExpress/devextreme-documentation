@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.tick.color
+id: BaseGaugeScale.tick.color
 type: String
 default: '#FFFFFF'
 ---

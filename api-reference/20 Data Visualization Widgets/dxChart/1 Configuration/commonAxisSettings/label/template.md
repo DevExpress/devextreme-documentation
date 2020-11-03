@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.template
+id: dxChartCommonAxisSettingsLabel.template
 type: template
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.label.Component
+id: dxChartCommonAxisSettingsLabel.Component
 ---
 ---
 ##### shortDescription

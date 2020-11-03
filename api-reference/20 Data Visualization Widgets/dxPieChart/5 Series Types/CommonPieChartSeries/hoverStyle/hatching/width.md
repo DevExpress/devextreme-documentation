@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.hatching.width
+id: dxPieChartSeriesTypesCommonPieChartSeries.hoverStyle.hatching.width
 type: Number
 default: 4
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.type
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.valueErrorBar.type
 acceptValues: 'fixed' | 'percent' | 'stdDeviation' | 'stdError' | 'variance'
 type: String
 default: undefined

@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.paging.pageSize
+id: GridBasePaging.pageSize
 type: Number
 default: 20
 firedEvents: optionChanged

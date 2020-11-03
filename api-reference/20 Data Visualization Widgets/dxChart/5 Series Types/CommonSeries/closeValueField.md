@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.CommonSeries.closeValueField
+id: dxChartSeriesTypesCommonSeries.closeValueField
 type: String
 default: 'close'
 notUsedInTheme: 

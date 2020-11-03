@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.selection.showCheckBoxesMode
+id: dxDataGridSelection.showCheckBoxesMode
 acceptValues: 'always' | 'none' | 'onClick' | 'onLongTap'
 type: String
 default: 'onClick'

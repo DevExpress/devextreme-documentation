@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.animation.easing
+id: BaseGaugeAnimation.easing
 acceptValues: 'easeOutCubic' | 'linear'
 type: String
 default: 'easeOutCubic'

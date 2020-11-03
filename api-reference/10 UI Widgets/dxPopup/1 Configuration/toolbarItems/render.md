@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.Render
+id: dxPopupToolbarItem.Render
 ---
 ---
 ##### shortDescription

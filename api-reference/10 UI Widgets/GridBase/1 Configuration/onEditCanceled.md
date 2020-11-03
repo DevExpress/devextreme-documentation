@@ -2,7 +2,6 @@
 id: GridBase.Options.onEditCanceled
 type: function(e)
 default: null
-EventForAction: GridBase.editCanceled
 ---
 ---
 ##### shortDescription

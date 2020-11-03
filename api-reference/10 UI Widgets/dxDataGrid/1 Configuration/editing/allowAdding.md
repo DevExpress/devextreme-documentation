@@ -1,5 +1,5 @@
 ---
-id: dxDataGrid.Options.editing.allowAdding
+id: dxDataGridEditing.allowAdding
 type: Boolean
 default: false
 ---

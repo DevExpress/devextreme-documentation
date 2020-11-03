@@ -1,5 +1,5 @@
 ---
-id: dxTreeList.Options.editing.texts.addRowToNode
+id: dxTreeListEditingTexts.addRowToNode
 type: String
 default: 'Add'
 ---

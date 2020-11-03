@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.grid
+id: dxChartCommonAxisSettings.grid
 type: Object
 ---
 ---

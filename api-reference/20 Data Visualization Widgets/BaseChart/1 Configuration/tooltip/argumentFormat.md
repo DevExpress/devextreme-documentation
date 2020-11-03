@@ -1,5 +1,5 @@
 ---
-id: BaseChart.Options.tooltip.argumentFormat
+id: BaseChartTooltip.argumentFormat
 type: format
 default: undefined
 ---

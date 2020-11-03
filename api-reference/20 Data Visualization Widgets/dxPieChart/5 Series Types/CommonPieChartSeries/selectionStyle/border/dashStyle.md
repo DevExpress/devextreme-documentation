@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.border.dashStyle
+id: dxPieChartSeriesTypesCommonPieChartSeries.selectionStyle.border.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: undefined

@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.expanded
+id: PivotGridDataSourceField.expanded
 type: Boolean
 default: false
 ---

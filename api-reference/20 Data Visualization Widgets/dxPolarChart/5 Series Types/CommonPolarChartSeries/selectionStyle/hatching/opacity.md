@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.hatching.opacity
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.selectionStyle.hatching.opacity
 type: Number
 default: 0.5
 ---

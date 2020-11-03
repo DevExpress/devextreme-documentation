@@ -1,6 +1,6 @@
 ---
-id: dxChart.Options.valueAxis.constantLines.label
-type: Object
+id: dxChartValueAxisConstantLines.label
+type: dxChartValueAxisConstantLinesLabel
 ---
 ---
 ##### shortDescription

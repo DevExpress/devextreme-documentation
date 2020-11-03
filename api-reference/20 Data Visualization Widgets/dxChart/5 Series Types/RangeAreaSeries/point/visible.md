@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.RangeAreaSeries.point.visible
+id: dxChartSeriesTypesRangeAreaSeriesPoint.visible
 type: Boolean
 default: false
 ---

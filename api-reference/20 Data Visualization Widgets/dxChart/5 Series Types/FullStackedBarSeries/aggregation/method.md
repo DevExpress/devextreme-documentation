@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.FullStackedBarSeries.aggregation.method
+id: dxChartSeriesTypesFullStackedBarSeriesAggregation.method
 acceptValues: 'avg' | 'count' | 'max' | 'min' | 'sum' | 'custom'
 type: String
 default: 'sum'

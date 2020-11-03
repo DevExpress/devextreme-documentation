@@ -1,6 +1,6 @@
 ---
 id: dxLinearGauge.Options.rangeContainer
-type: Object
+type: dxLinearGaugeRangeContainer
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.options
+id: dxPopupToolbarItem.options
 type: Object
 ---
 ---

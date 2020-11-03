@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.shadow.blur
+id: BaseWidgetTooltip.shadow.blur
 type: Number
 default: 2
 ---

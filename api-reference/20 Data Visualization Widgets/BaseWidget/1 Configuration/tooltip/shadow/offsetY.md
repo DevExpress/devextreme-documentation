@@ -1,5 +1,5 @@
 ---
-id: BaseWidget.Options.tooltip.shadow.offsetY
+id: BaseWidgetTooltip.shadow.offsetY
 type: Number
 default: 4
 ---

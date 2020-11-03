@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.source
+id: dxVectorMapLegends.source
 type: Object
 notUsedInTheme: 
 ---

@@ -1,5 +1,5 @@
 ---
-id: PivotGridDataSource.Options.fields.dataType
+id: PivotGridDataSourceField.dataType
 acceptValues: 'date' | 'number' | 'string'
 type: String
 default: undefined

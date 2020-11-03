@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.minorGrid.opacity
+id: dxChartCommonAxisSettings.minorGrid.opacity
 type: Number
 default: undefined
 ---

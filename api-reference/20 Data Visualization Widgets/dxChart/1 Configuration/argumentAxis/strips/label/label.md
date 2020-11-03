@@ -1,6 +1,6 @@
 ---
-id: dxChart.Options.argumentAxis.strips.label
-type: Object
+id: dxChartArgumentAxisStrips.label
+type: dxChartArgumentAxisStripsLabel
 ---
 ---
 ##### shortDescription

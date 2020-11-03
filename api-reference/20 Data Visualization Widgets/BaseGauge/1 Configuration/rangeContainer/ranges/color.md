@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.rangeContainer.ranges.color
+id: BaseGaugeRangeContainer.ranges.color
 type: String
 ---
 ---

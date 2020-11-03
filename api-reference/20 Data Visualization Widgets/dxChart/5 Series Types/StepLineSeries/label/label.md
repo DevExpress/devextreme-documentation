@@ -1,4 +1,4 @@
 ---
-id: dxChartSeriesTypes.StepLineSeries.label
-type: Object
+id: dxChartSeriesTypesStepLineSeries.label
+type: dxChartSeriesTypesStepLineSeriesLabel
 ---

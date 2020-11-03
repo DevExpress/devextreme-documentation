@@ -1,5 +1,5 @@
 ---
-id: dxLoadPanel.Options.animation.show
+id: dxLoadPanelAnimation.show
 type: animationConfig
 default: null
 ---

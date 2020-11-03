@@ -1,5 +1,5 @@
 ---
-id: dxVectorMap.Options.legends.markerComponent
+id: dxVectorMapLegends.markerComponent
 ---
 ---
 ##### shortDescription

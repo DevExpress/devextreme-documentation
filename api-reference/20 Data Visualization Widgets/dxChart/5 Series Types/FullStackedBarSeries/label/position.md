@@ -1,5 +1,5 @@
 ---
-id: dxChartSeriesTypes.FullStackedBarSeries.label.position
+id: dxChartSeriesTypesFullStackedBarSeriesLabel.position
 acceptValues: 'inside' | 'outside'
 type: String
 default: 'inside'

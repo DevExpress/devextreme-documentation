@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.valueAxis.endOnTick
+id: dxChartValueAxis.endOnTick
 type: Boolean
 default: undefined
 ---

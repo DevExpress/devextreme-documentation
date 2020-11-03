@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping
+id: dxPieChartSeriesTypesCommonPieChartSeries.smallValuesGrouping
 type: Object
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.workWeek
+id: dxChartArgumentAxis.workWeek
 type: Array<Number>
 default: [1, 2, 3, 4, 5]
 ---

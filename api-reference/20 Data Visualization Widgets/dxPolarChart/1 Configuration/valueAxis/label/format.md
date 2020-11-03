@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.label.format
+id: dxPolarChartValueAxisLabel.format
 type: format
 default: undefined
 ---

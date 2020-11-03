@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries
-type: Object
+type: dxChartSeriesTypesCommonSeries
 hidden: 
 ---
 ---

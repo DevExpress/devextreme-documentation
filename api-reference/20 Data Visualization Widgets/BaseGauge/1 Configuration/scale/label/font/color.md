@@ -1,4 +1,4 @@
 ---
-id: BaseGauge.Options.scale.label.font.color
+id: BaseGaugeScaleLabel.font.color
 default: '#767676'
 ---

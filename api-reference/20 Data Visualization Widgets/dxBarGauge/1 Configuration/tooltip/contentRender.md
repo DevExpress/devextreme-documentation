@@ -1,5 +1,5 @@
 ---
-id: dxBarGauge.Options.tooltip.contentRender
+id: dxBarGaugeTooltip.contentRender
 ---
 ---
 ##### shortDescription

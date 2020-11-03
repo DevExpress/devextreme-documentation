@@ -1,5 +1,5 @@
 ---
-id: dxCircularGauge.Options.rangeContainer.width
+id: dxCircularGaugeRangeContainer.width
 type: Number
 default: 5
 ---

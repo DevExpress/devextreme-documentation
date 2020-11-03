@@ -1,5 +1,5 @@
 ---
-id: dxPopup.Options.toolbarItems.location
+id: dxPopupToolbarItem.location
 acceptValues: 'after' | 'before' | 'center'
 type: String
 default: 'center'

@@ -1,5 +1,5 @@
 ---
-id: BaseGauge.Options.scale.tick.width
+id: BaseGaugeScale.tick.width
 type: Number
 default: 2
 ---

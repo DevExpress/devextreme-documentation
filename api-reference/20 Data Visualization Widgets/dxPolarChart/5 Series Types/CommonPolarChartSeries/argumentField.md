@@ -1,5 +1,5 @@
 ---
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.argumentField
+id: dxPolarChartSeriesTypesCommonPolarChartSeries.argumentField
 type: String
 default: 'arg'
 notUsedInTheme: 

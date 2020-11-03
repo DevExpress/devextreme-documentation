@@ -1,5 +1,5 @@
 ---
-id: dxPolarChart.Options.valueAxis.strips.startValue
+id: dxPolarChartValueAxisStrips.startValue
 type: Number | Date | String
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonPaneSettings.border.dashStyle
+id: dxChartCommonPaneSettings.border.dashStyle
 acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
 type: String
 default: 'solid'

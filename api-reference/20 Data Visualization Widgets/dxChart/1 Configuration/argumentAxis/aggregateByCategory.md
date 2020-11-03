@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.aggregateByCategory
+id: dxChartArgumentAxis.aggregateByCategory
 type: Boolean
 default: false
 ---

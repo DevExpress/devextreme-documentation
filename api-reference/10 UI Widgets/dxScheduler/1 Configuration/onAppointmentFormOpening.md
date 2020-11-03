@@ -6,7 +6,7 @@ EventForAction: dxScheduler.appointmentFormOpening
 ---
 ---
 ##### shortDescription
-A function that is executed to customize an appointment details form before it is opened.
+A function that is executed before an appointment details form is opened. Use this function to customize the form.
 
 ##### param(e): Object
 Information about the event.

@@ -1,8 +1,8 @@
-When the width of all columns exceeds the widget width, the grid becomes horizontally scrollable. If you set the [columnFixing](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columnFixing/).[enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columnFixing/#enabled) option to **true**, users can keep certain columns in view regardless of how far they scroll the grid.
+When the width of all columns exceeds the widget's width, users can scroll the grid horizontally. If you set the [columnFixing](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columnFixing/).[enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columnFixing/#enabled) option to **true**, users can show certain columns in the view regardless of how far they scroll the grid.
 
-You can also fix a column in code by enabling its [fixed](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixed) option. The column is fixed to the widget's left edge by default. To change the position, set the [fixedPosition](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixedPosition) option.
+You can also enable a column's [fixed](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixed) option in code. This fixes the column to the widget's left edge. To change the position, set the [fixedPosition](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixedPosition) option.
 
-The following code fixes the `FullName` column to the default left position and allows users to fix and unfix columns at runtime:
+The following code fixes the `FullName` column to the default position and allows users to fix and unfix columns at runtime:
 
 ---
 ##### jQuery

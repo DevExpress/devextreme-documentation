@@ -90,4 +90,4 @@ In this tutorial, the **filterRow** and **searchPanel** are displayed:
 
 ---
 
-Run the code and enter a value into a filter row cell or the search panel. Grid data will be filtered according to this value.
+Run the code and enter a value in a filter row cell or the search panel. Grid data is filtered according to this value.

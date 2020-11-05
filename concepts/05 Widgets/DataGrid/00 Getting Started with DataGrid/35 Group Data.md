@@ -1,6 +1,6 @@
-Grid records can be grouped by values of one or multiple columns. To group records, users should drag and drop column headers onto the [groupPanel](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/). Enable the **groupPanel**.[visible](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#visible) option to display this UI element.
+Grid records can be grouped by single or multiple columns. To group records, users should drag and drop column headers onto the [groupPanel](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/). Enable the **groupPanel**.[visible](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#visible) option to display this UI element.
 
-You can also group records programmatically. Specify the [groupIndex](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex) option for the columns by which records should be grouped. In this tutorial, the **groupIndex** is specified for the `Country` column:
+To group data in code, specify a column's [groupIndex](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex) option. In this tutorial, the **groupIndex** is specified for the `Country` column:
 
 ---
 ##### jQuery
@@ -104,6 +104,4 @@ You can also group records programmatically. Specify the [groupIndex](/Documenta
 
 ---
 
-If you run the code, you should see that records are grouped by the `Country` column. This column's header is on the group panel. Drag and drop column headers to and from the group panel to change the grouping.
-
-In the next step, we will configure data validation and allow users to edit data.
+If you run the code, records are grouped by the `Country` column. This column's header is on the group panel. Drag and drop column headers to and from the group panel to change the grouping.

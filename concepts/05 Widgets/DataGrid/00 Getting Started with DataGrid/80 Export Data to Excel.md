@@ -1,11 +1,11 @@
-DevExtreme includes a static method [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) that exports grid data to the Excel format. Its minimum configuration requires a **DataGrid** instance and an Excel worksheet to which grid data should be exported. After the export, you should save the data to an Excel file.
-
-To create and manage worksheets and save Excel files, this feature requires the following third-party libraries:
+**DataGrid** allows users to export grid data as Excel documents. This feature requires the following third-party libraries:
 
 - <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+
 - <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
-The **DataGrid** includes an export UI. This tutorial uses it to call the **exportDataGrid(options)** method. Enable the UI by setting the [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled) option to **true** and call **exportDataGrid(options)** inside the **DataGrid**'s [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) event handler. You should also set the `e.cancel` parameter to **true** to disable the deprecated built-in export functionality.
+To configure export operations, use the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) method from the [excelExporter](/Documentation/ApiReference/Common/Utils/excelExporter/) module. It requires a **DataGrid** instance and a target Excel worksheet.
+
+This method can be called at any point in your application. The following code calls it in the **DataGrid**'s [onExporting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onExporting) event handler. In this code, **exportDataGrid(options)** exports grid data as a <a href="https://en.wikipedia.org/wiki/Binary_large_object" target="_blank">blob</a> that is then saved to an XLSX file. The `e.cancel` parameter disables the deprecated built-in export functionality. The **onExporting** event handler is executed when users click the Export button. The [export](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/#enabled) option adds this button to the **DataGrid**.
 
 ---
 ##### jQuery
@@ -208,9 +208,7 @@ The **DataGrid** includes an export UI. This tutorial uses it to call the **expo
 
 Run the code and click the Export button in the upper-right corner. Grid data should be exported to the DataGrid.xlsx file.
 
-The **exportDataGrid(options)** method can be called at any point in your application, not necessarily using the **DataGrid**'s export UI. For example, you can implement a standalone button and call this method when the button is clicked.
-
-You have now configured core **DataGrid** features. For more details on this widget, explore the following resources:
+For further information on the **DataGrid** component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/)
 * [API Reference](/Documentation/ApiReference/UI_Widgets/dxDataGrid/)

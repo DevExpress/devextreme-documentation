@@ -1,6 +1,6 @@
 ---
 id: dxValidator.Options.adapter.validationRequestsCallbacks
-type: Array<function()> | jquery.callbacks
+type: Array<function()> | jQuery.Callbacks
 ---
 ---
 ##### shortDescription

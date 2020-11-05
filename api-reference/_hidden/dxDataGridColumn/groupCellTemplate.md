@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a custom template for group headings and group cells (group rows).
+Specifies a custom template for group cells (headings for grouped rows).
 
 ##### param(cellElement): dxElement
 #include common-ref-elementparam with { element: "current group cell" }
@@ -66,7 +66,7 @@ The following details should be taken into account when you use a **groupCellTem
 
 - In [fixed columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
 
-The group heading has the default format of `caption: value` of the column to group by. The following code changes this format to a custom one:
+The default template of a group cell is `caption: value` of a column to group by. The following example sets a custom template:
 
 ---
 ##### jQuery

@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a custom template for group cells (group rows).
+Specifies a custom template for group headings and group cells (group rows).
 
 ##### param(cellElement): dxElement
 #include common-ref-elementparam with { element: "current group cell" }
@@ -65,6 +65,28 @@ The following details should be taken into account when you use a **groupCellTem
 - When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell) function.
 
 - In [fixed columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
+
+The group heading has the default format of `caption: value` of the column to group by. The following code changes this format to a custom one:
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [ "ID", "Country", {
+                        dataField: "City",
+                        groupIndex: 0,
+                        groupCellTemplate: function(element, options) {
+                            element.text(options.value + "located in " + options.caption);
+                        },
+                    },
+            // ...
+            ]
+        });
+    });
+
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')

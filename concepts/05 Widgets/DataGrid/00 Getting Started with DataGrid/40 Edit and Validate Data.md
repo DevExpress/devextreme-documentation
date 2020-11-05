@@ -1,6 +1,6 @@
-Users can add new records and update or delete existing records. To allow each of these operations, enable the [allowAdding](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#allowAdding), [allowUpdating](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#allowUpdating), and [allowDeleting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#allowDeleting) options in the [editing](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/) object. The **DataGrid** also supports multiple [edit modes](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode). This tutorial uses the popup edit mode.
+Users can add new records and update or delete existing records. To allow these operations, enable the [allowAdding](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#allowAdding), [allowUpdating](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#allowUpdating), and [allowDeleting](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#allowDeleting) options in the [editing](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/) object. Multiple [edit modes](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode) are available. This tutorial uses the pop-up edit mode.
 
-DevExtreme includes a validation engine that validates edited values before they are saved. This engine supports different validation rule types, such as [Email](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/EmailRule/), [Compare](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/CompareRule/), [Range](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RangeRule/), and more. Validation rules are specified per column; one column can have multiple rules. In this tutorial, several columns have the [Required](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RequiredRule/) rule.
+DevExtreme includes a validation engine that checks edited values before they are saved. This engine supports different validation rule types, such as [Email](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/EmailRule/), [Compare](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/CompareRule/), [Range](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RangeRule/), and more. Validation rules are specified per column; one column can use multiple rules. The code below assigns the [Required](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RequiredRule/) rule to several columns.
 
 ---
 ##### jQuery
@@ -182,6 +182,4 @@ DevExtreme includes a validation engine that validates edited values before they
 
 ---
 
-Run the code and click the Edit button in any row. You will see a popup window that contains an edit form. Clear the Full Name text box on this form. You should see the following validation error: *"First Name is required"*.
-
-In the following step, we will configure record selection.
+Run the code and click the Edit button in any row. This invokes a pop-up window that contains an edit form. When you clear the Full Name text box on this form, the following validation error is shown: *"First Name is required"*.

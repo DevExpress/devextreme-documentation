@@ -4,6 +4,10 @@
         <th>Angular</th>
     </tr>
     <tr>
+        <td>v20.2.x</td>
+        <td>v7.0.x - v10.0.x</td>
+    </tr>
+    <tr>
         <td>v20.1.x</td>
         <td>v7.0.x - v10.0.x</td>
     </tr>

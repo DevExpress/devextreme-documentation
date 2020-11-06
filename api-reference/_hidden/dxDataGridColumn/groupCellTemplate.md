@@ -61,7 +61,7 @@ The group cell's value as it is specified in a data source.
 
 ---
 
-The format for group cell data is `x: y` followed by an optional summary. `x` is caption and `y` is value of the column used to group data. In the following example, group cells display column value only:
+The format for group cells is `x: y` followed by an optional summary. `x` is caption and `y` is value of the column used to group data. In the following example, group cells display column value only:
 
 ---
 ##### jQuery

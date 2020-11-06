@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a custom template for group cells (headings for grouped rows).
+Specifies a custom template for group cells (group headings).
 
 ##### param(cellElement): dxElement
 #include common-ref-elementparam with { element: "current group cell" }
@@ -61,7 +61,7 @@ The group cell's value as it is specified in a data source.
 
 ---
 
-Group cells display text in the `x: y` format where `x` and `y` are caption and value of the column used to group data. In the following example, group cells display column value only:
+The format for group cells is `x: y`. `x` and `y` are caption and value of the column used to group data. In the following example, group cells display column value only:
 
 ---
 ##### jQuery
@@ -70,13 +70,16 @@ Group cells display text in the `x: y` format where `x` and `y` are caption and 
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
-            columns: [ "ID", "City", {
-                        dataField: "Country",
-                        groupIndex: 0,
-                        groupCellTemplate: function(element, options) {
-                            element.text(options.value);
-                        },
+            columns: [ 
+                "ID",
+                "City",
+                {
+                    dataField: "Country",
+                    groupIndex: 0,
+                    groupCellTemplate: function(element, options) {
+                        element.text(options.value);
                     },
+                },
             // ...
             ]
         });
@@ -98,21 +101,6 @@ Group cells display text in the `x: y` format where `x` and `y` are caption and 
   	    </div>
     </dx-{widget-name}>
 
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -130,9 +118,7 @@ Group cells display text in the `x: y` format where `x` and `y` are caption and 
             </template>
         </Dx{WidgetName}>
     </template>
-
     <script>
-
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
     export default {
@@ -147,7 +133,6 @@ Group cells display text in the `x: y` format where `x` and `y` are caption and 
 
     <!-- tab: App.js -->
     import React from 'react';
-
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
     class App extends React.Component {

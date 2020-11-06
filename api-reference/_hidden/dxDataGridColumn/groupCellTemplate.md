@@ -60,13 +60,8 @@ The group cell's value with applied [format](/api-reference/_hidden/dxDataGridCo
 The group cell's value as it is specified in a data source.
 
 ---
-The following details should be taken into account when you use a **groupCellTemplate**:
 
-- When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell) function.
-
-- In [fixed columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
-
-The default template of a group cell is `caption: value` of a column to group by. The following example sets a custom template:
+Group cells display text in the `x: y` format where `x` and `y` are caption and value of the column used to group data. In the following example, group cells display column value only:
 
 ---
 ##### jQuery
@@ -75,11 +70,11 @@ The default template of a group cell is `caption: value` of a column to group by
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
-            columns: [ "ID", "Country", {
-                        dataField: "City",
+            columns: [ "ID", "City", {
+                        dataField: "Country",
                         groupIndex: 0,
                         groupCellTemplate: function(element, options) {
-                            element.text(options.value + "located in " + options.caption);
+                            element.text(options.value);
                         },
                     },
             // ...
@@ -87,6 +82,106 @@ The default template of a group cell is `caption: value` of a column to group by
         });
     });
 
+##### Angular
+    
+    <!--HTML-->
+    <dx-{widget-name} ... >
+        <dxi-column dataField="City"></dxi-column>
+        <dxi-column 
+            dataField="Country" 
+            [groupIndex]="0" 
+            groupCellTemplate="groupCellTemplate">
+        </dxi-column>
+
+        <div *dxTemplate="let data of 'groupCellTemplate'">
+    	    <div>{{data.value}}</div>
+  	    </div>
+    </dx-{widget-name}>
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        // ...
+    }
+
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn data-field="City"/>
+            <DxColumn
+                data-field="Country"
+                :group-index="0"
+                group-cell-template="groupCellTemplate"
+            />
+
+            <template #groupCellTemplate="{ data }">
+                <div>{{data.value}}</div>
+            </template>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        // ...
+        render() {
+            return (
+                <{WidgetName} ...>
+                    <Column dataField={'City'} />
+                    <Column
+                        dataField={'Country'}
+                        defaultGroupIndex={0}
+                        groupCellRender={GroupCell}/>
+
+                </{WidgetName}>
+            );
+        }
+    }
+
+    function GroupCell(options) {
+        let displayValue = options.value;
+        return (
+            <div>{displayValue}</div>
+        );
+    }
+
+    export default App;
+
+---
+
+The following details should be taken into account when you use a **groupCellTemplate**:
+
+- When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell) function.
+
+- In [fixed columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')

@@ -61,7 +61,7 @@ The group cell's value as it is specified in a data source.
 
 ---
 
-The format for group cells is `x: y`. `x` and `y` are caption and value of the column used to group data. In the following example, group cells display column value only:
+The format for group cell data is `x: y` followed by an optional summary. `x` is caption and `y` is value of the column used to group data. In the following example, group cells display column value only:
 
 ---
 ##### jQuery
@@ -170,3 +170,4 @@ The following details should be taken into account when you use a **groupCellTem
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')
+- [calculateGroupValue](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateGroupValue)

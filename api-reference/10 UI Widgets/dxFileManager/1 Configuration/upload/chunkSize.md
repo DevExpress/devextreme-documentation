@@ -5,7 +5,7 @@ default: 200000
 ---
 ---
 ##### shortDescription
-Specifies a chunk size in bytes.
+Specifies a chunk size, in bytes.
 
 ---
 

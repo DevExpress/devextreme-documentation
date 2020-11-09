@@ -5,7 +5,7 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the maximum upload file size.
+Specifies the maximum upload file size, in bytes.
 
 ---
 

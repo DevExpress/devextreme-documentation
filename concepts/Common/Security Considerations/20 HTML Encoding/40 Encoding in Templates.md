@@ -25,10 +25,10 @@ Angular, Vue, and React always encode values interpolated in templates. Without 
 
 <a href="https://codepen.io/romantsukanov/pen/vYKjzQw?editors=1010" target="_blank">View on CodePen</a>
 
-Inserting unencoded content can open your application to XSS attacks:
+When you insert unencoded content, it can open your application to XSS attacks:
 
 ![DevExtreme Tabs with disabled HTML encoding](/images/UiWidgets/tabs-itemTemplate-unsafe-html.png)
 
-With encoding, the content is interpreted as text and simply displayed:
+The encoded content is interpreted and displayed as text:
 
 ![DevExtreme Tabs with enabled HTML encoding](/images/UiWidgets/tabs-itemTemplate-safe-html.png)

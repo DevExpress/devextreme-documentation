@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a custom template for group cells (group headings).
+Specifies a custom template for group cells (group rows).
 
 ##### param(cellElement): dxElement
 #include common-ref-elementparam with { element: "current group cell" }

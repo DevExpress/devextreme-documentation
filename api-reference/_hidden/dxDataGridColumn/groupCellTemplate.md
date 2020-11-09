@@ -13,10 +13,10 @@ Specifies a custom template for group cells (group headings).
 The current group cell's properties.
 
 ##### field(cellInfo.column): dxDataGridColumn
-The settings of the column the cell belongs to.
+The settings of the column to which the cell belongs.
 
 ##### field(cellInfo.columnIndex): Number
-The index of the column the cell belongs to.        
+The index of the column to which the cell belongs.       
 Refer to the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic for more information on how this index is calculated.
 
 ##### field(cellInfo.component): dxDataGrid
@@ -47,7 +47,7 @@ Contains the **grouping**.[groupContinuesMessage](/api-reference/10%20UI%20Widge
 The cell's row.
 
 ##### field(cellInfo.rowIndex): Number
-The index of the row the cell belongs to. Begins with 0 on each page. Group rows are included.      
+The index of the row to which the cell belongs. Begins with 0 on each page. Group rows are included.      
 Refer to the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic for more information on row indexes.
 
 ##### field(cellInfo.summaryItems): Array<any>
@@ -61,7 +61,7 @@ The group cell's value as it is specified in a data source.
 
 ---
 
-The format for group cells is `x: y` followed by an optional summary. `x` is caption and `y` is value of the column used to group data. In the following example, group cells display column value only:
+The format for group cells is `x: y` followed by an optional summary. `x` is the caption and `y` is the value of the column used to group data. In the following example, group cells display the column value only:
 
 ---
 ##### jQuery

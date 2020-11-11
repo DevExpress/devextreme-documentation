@@ -1,7 +1,8 @@
 ---
 id: dxMap.Options.key
 type: String | Object
-default: ''
+default: { bing: '', google: '', googleStatic: '' }
+dep: dxMap.Options.apiKey
 ---
 ---
 ##### shortDescription

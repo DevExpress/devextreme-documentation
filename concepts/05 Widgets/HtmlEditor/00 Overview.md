@@ -140,7 +140,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
             </p>
         </text>)
     )
-    <script src="https://cdn3.devexpress.com/jslib/20.2.2/js/dx-quill.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/20.2.3/js/dx-quill.min.js"></script>
     // Required if valueType is "markdown"
     // <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
     // <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script> 

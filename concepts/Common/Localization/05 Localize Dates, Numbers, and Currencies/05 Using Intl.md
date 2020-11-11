@@ -224,7 +224,7 @@ Strings, numbers, dates, and currencies are now automatically localized and form
 
     <!-- tab: App.js -->
     import React from 'react';
-
+    import config from 'devextreme/core/config';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 

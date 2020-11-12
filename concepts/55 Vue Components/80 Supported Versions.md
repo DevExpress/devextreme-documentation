@@ -4,7 +4,7 @@
         <th>Vue</th>
     </tr>
     <tr>
-        <td>v20.2.x</td>
+        <td>v21.1.x <br/> v20.2.x</td>
         <td>v2.6.3 - v3.x</td>
     </tr>
     <tr>

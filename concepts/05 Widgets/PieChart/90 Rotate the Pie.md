@@ -73,7 +73,7 @@ The **PieChart** provides two options that control the layout algorithm, allowin
 
 You can try both these options on the **PieChart** below.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/PieChartRotate/rotatePie.html, /Content/Applications/20_2/DataVisualization/Guides/PieChartRotate/rotatePie.js, /Content/Applications/20_2/DataVisualization/Guides/PieChartRotate/rotatePie.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/PieChartRotate/rotatePie.html, /Content/Applications/21_1/DataVisualization/Guides/PieChartRotate/rotatePie.js, /Content/Applications/21_1/DataVisualization/Guides/PieChartRotate/rotatePie.css"></div>
 
 #####See Also#####
 - [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie)

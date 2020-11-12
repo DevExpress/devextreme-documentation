@@ -9,10 +9,10 @@ To switch the **Gallery** to the next or previous image, call the [nextItem(anim
     $(function () {
         const gallery = $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png"
             ],
             height: 300
         }).dxGallery("instance");
@@ -57,10 +57,10 @@ To switch the **Gallery** to the next or previous image, call the [nextItem(anim
         // Prior to Angular 8
         // @ViewChild(DxGalleryComponent) gallery: DxGalleryComponent;
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png"
         ];
         goToNextItem () {
             this.gallery.instance.nextItem(true);
@@ -113,10 +113,10 @@ To switch the **Gallery** to the next or previous image, call the [nextItem(anim
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png'
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png'
                 ]
             };
         },
@@ -141,10 +141,10 @@ To switch the **Gallery** to the next or previous image, call the [nextItem(anim
     import { Button } from 'devextreme-react/button';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png'
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png'
     ];
 
     class App extends React.Component {

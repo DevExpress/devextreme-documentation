@@ -28,14 +28,14 @@ Follow the steps below to add the **HtmlEditor** to a page.
     <!--HTML-->
     <head>
         <!-- ... -->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-quill.min.js"></script>
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx-quill.min.js"></script>
         <!-- Required if valueType is "markdown" -->
         <!-- <script type="text/javascript" src="https://unpkg.com/turndown/dist/turndown.js"></script> -->
         <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script> -->
 
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
     </head>
     <body>
         <div id="htmlEditorContainer">
@@ -140,7 +140,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
             </p>
         </text>)
     )
-    <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx-quill.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx-quill.min.js"></script>
     // Required if valueType is "markdown"
     // <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
     // <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script> 

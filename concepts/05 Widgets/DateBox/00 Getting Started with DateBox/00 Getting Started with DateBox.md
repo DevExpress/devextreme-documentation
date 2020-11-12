@@ -4,7 +4,7 @@
 
 This tutorial shows how to configure basic **DateBox** features. The newly created widget allows users to set the date and time from a specific date range, logs this value to the console, and prevents users from specifying weekend days (Saturday and Sunday) and US bank holidays.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/DateBox/index.html, /Content/Applications/20_2/GettingStartedWith/DateBox/index.js, /Content/Applications/20_2/GettingStartedWith/DateBox/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/DateBox/index.html, /Content/Applications/21_1/GettingStartedWith/DateBox/index.js, /Content/Applications/21_1/GettingStartedWith/DateBox/index.css"></div>
 
 
 Refer to the subtopics for details on each configuration step. You can also see the full code below or download it from the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-datebox" target="_blank">getting-started-with-datebox</a>:
@@ -65,9 +65,9 @@ Refer to the subtopics for details on each configuration step. You can also see 
     <html>
         <head>
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">

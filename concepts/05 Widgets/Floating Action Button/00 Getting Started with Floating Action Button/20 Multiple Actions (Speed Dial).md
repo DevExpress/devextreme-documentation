@@ -1,6 +1,6 @@
 The FAB can open a menu with several related actions (speed dial).
 
-<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/20_2/GettingStartedWith/FloatingActionButton/MultipleActions/index.html, /Content/Applications/20_2/GettingStartedWith/FloatingActionButton/MultipleActions/index.js, /Content/Applications/20_2/GettingStartedWith/FloatingActionButton/MultipleActions/index.css"></div>
+<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/21_1/GettingStartedWith/FloatingActionButton/MultipleActions/index.html, /Content/Applications/21_1/GettingStartedWith/FloatingActionButton/MultipleActions/index.js, /Content/Applications/21_1/GettingStartedWith/FloatingActionButton/MultipleActions/index.css"></div>
 
 To create a FAB that opens a speed dial, add up to five [SpeedDialAction](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/') components to a page, each with an individual [icon](/api-reference/10%20UI%20Widgets/dxSpeedDialAction/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/Configuration/#icon') and [onClick](/api-reference/10%20UI%20Widgets/dxSpeedDialAction/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/Configuration/#onClick') event handler. The actions are sorted according to their [indexes](/api-reference/10%20UI%20Widgets/dxSpeedDialAction/1%20Configuration/index.md '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/Configuration/#index').
 
@@ -73,9 +73,9 @@ The following code configures the example above and shows how to set the describ
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
             <!-- DevExtreme resources -->
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.material.blue.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.material.blue.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
 
             <!-- Custom icons by Ionicons -->
             <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">

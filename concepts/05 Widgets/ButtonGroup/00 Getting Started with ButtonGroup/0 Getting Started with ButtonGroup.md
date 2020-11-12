@@ -4,7 +4,7 @@ The **ButtonGroup** is a set of toggle buttons that can be used as a mode switch
 
 This tutorial describes how to configure basic **ButtonGroup** features. We create a **ButtonGroup** that logs the names of the selected buttons into the browser's console (open the console to see them):
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/ButtonGroup/index.html, /Content/Applications/20_2/GettingStartedWith/ButtonGroup/index.js, /Content/Applications/20_2/GettingStartedWith/ButtonGroup/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/ButtonGroup/index.html, /Content/Applications/21_1/GettingStartedWith/ButtonGroup/index.js, /Content/Applications/21_1/GettingStartedWith/ButtonGroup/index.css"></div>
 
 Refer to the subtopics for details on every configuration step. You can also see the full code below:
 
@@ -50,9 +50,9 @@ Refer to the subtopics for details on every configuration step. You can also see
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body>

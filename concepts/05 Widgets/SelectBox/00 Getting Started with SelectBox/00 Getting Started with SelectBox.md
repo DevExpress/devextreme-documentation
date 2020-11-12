@@ -4,7 +4,7 @@
 
 In this tutorial, we will create the **SelectBox** and configure its basic features. The created widget has a populated drop-down list, allows users to search through it, and logs the previous and current selected items to the console.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/SelectBox/index.html, /Content/Applications/20_2/GettingStartedWith/SelectBox/index.js, /Content/Applications/20_2/GettingStartedWith/SelectBox/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/SelectBox/index.html, /Content/Applications/21_1/GettingStartedWith/SelectBox/index.js, /Content/Applications/21_1/GettingStartedWith/SelectBox/index.css"></div>
 
 Refer to the subtopics for details on every configuration step. You can also see the full code below or download it from <a href="https://github.com/DevExpress-Examples/getting-started-with-selectbox" target="_blank">this GitHub repository</a>.
 
@@ -60,9 +60,9 @@ Refer to the subtopics for details on every configuration step. You can also see
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body>

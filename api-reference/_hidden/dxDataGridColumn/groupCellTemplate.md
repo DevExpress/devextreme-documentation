@@ -61,7 +61,15 @@ The group cell's value as it is specified in a data source.
 
 ---
 
-The format for group cells is `x: y` followed by an optional summary. `x` is the caption and `y` is the value of the column used to group data. In the following example, group cells display the column value only:
+Group cells display the following data:
+
+* The caption and the value of the column by which data is grouped;
+
+* [Group summary items]
+
+* [groupContinuesMessage] and [groupContinuedMessage] (if the group is spread across two pages)
+
+The following example shows how to customize group cells:
 
 ---
 ##### jQuery
@@ -71,13 +79,9 @@ The format for group cells is `x: y` followed by an optional summary. `x` is the
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             columns: [ 
-                "ID",
-                "City",
                 {
                     dataField: "Country",
                     groupIndex: 0,
-                    groupCellTemplate: function(element, options) {
-                        element.text(options.value);
                     },
                 },
             // ...

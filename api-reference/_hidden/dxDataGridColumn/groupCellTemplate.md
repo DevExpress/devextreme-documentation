@@ -127,7 +127,8 @@ The following example shows how to display column value only:
 
     export default {
         components: {
-            DxDataGrid
+            DxDataGrid,
+            DxColumn
         },
         // ...
     }

@@ -103,7 +103,7 @@ The following example shows how to display column value only:
 
         <div *dxTemplate="let data of 'groupCellTemplate'">
     	    <div>{{data.value}}</div>
-  	    </div>
+        </div>
     </dx-data-grid>
 
 ##### Vue

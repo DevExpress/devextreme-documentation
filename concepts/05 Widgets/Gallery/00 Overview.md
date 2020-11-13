@@ -15,10 +15,10 @@ The following code adds the **Gallery** widget to your page. The simplest config
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png"
             ],
             height: 300
         });
@@ -37,10 +37,10 @@ The following code adds the **Gallery** widget to your page. The simplest config
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png"
         ];
     }
     @NgModule({
@@ -73,10 +73,10 @@ The following code adds the **Gallery** widget to your page. The simplest config
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png'
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png'
                 ]
             };
         }
@@ -92,10 +92,10 @@ The following code adds the **Gallery** widget to your page. The simplest config
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person4.png'
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person4.png'
     ];
 
     class App extends React.Component {

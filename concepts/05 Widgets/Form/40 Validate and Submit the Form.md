@@ -304,7 +304,7 @@ The **Form** widget uses the built-in validation engine to validate form item va
 
 A single **Form** editor is validated individually once its value changes. If the value fails to pass the validation check, the editor displays an error message. Note that you can also call the [validate()](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/validate().md '/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#validate') method to validate all **Form** editors simultaneously. In this case, the **Form** can display all validation errors at the bottom if you set the [showValidationSummary](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showValidationSummary.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showValidationSummary') option to **true**. 
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/UIWidgets/dxForm/Validation/markup.html, /Content/Applications/20_2/UIWidgets/dxForm/Validation/script.js, /Content/Applications/20_2/UIWidgets/dxForm/common-styles.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/UIWidgets/dxForm/Validation/markup.html, /Content/Applications/21_1/UIWidgets/dxForm/Validation/script.js, /Content/Applications/21_1/UIWidgets/dxForm/common-styles.css"></div>
 
 Usually, **Form** editors should be submitted to the server after being successfully validated on the client. The following code shows how to do this using a [button form item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/ButtonItem/'). Note that the **Form** widget is wrapped in the <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">`<form>`</a> tag in the markup.
 

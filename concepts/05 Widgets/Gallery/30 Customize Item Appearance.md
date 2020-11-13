@@ -7,10 +7,10 @@
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [{
-                imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                imageSrc: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
                 disabled: true
             }, {
-                imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+                imageSrc: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png",
                 imageAlt: "Peter"
             }],
             height: 300
@@ -30,10 +30,10 @@
     // ...
     export class AppComponent {
         galleryDataSource = [{
-            imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+            imageSrc: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
             disabled: true
         }, {
-            imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png",
+            imageSrc: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png",
             imageAlt: "Peter"
         }];
     }
@@ -67,10 +67,10 @@
         data() {
             return {
                 dataSource: [{
-                    imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png',
                     disabled: true
                 }, {
-                    imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png',
                     imageAlt: 'Peter'
                 }]
             };
@@ -87,10 +87,10 @@
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [{
-        imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png',
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png',
         disabled: true
     }, {
-        imageSrc: 'https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png',
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png',
         imageAlt: 'Peter'
     }];
 
@@ -131,9 +131,9 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     // ...
     export class AppComponent {
         galleryDataSource = [
-            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
-            { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
+            { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png", name: "Maria" },
+            { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png", name: "John" },
+            { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png", name: "Xavier" }
         ];
     }
     @NgModule({
@@ -173,9 +173,9 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         data() {
             return {
                 dataSource: [
-                    { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
-                    { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
-                    { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
+                    { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png", name: "Maria" },
+                    { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png", name: "John" },
+                    { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png", name: "Xavier" }
                 ]
             };
         }
@@ -191,9 +191,9 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png", name: "Maria" },
-        { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person2.png", name: "John" },
-        { path: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person3.png", name: "Xavier" }
+        { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png", name: "Maria" },
+        { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person2.png", name: "John" },
+        { path: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person3.png", name: "Xavier" }
     ];
 
     const renderGalleryItem = (itemData) => {
@@ -244,7 +244,7 @@ You can also customize an individual **Gallery** item. For this purpose, declare
 
     <!--JavaScript-->
     const galleryData = [{
-        imageSrc: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+        imageSrc: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
         imageAlt: "Maria",
         template: $("#individualTemplate"),
     },

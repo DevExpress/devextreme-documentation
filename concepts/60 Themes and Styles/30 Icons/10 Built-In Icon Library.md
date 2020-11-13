@@ -2,4 +2,4 @@ DevExtreme comes with an icon library that provides font icons for all DevExtrem
 
 Available icons are presented below:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/20_2/Icons/markup.html, /Content/Applications/20_2/Icons/script.js, /Content/Applications/20_2/Icons/styles.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/Icons/markup.html, /Content/Applications/21_1/Icons/script.js, /Content/Applications/21_1/Icons/styles.css"></div>

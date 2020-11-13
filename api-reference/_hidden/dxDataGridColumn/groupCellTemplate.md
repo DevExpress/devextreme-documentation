@@ -63,11 +63,11 @@ The group cell's value as it is specified in a data source.
 
 Group cells display the following data:
 
-* The caption and the value of the column by which data is grouped;
+* The caption and the value of the column by which data is grouped
 
-* [Group summary items]
+* [Group summary items](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/)
 
-* [groupContinuesMessage] and [groupContinuedMessage] (if the group is spread across two or more pages)
+* [groupContinuesMessage](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/texts/#groupContinuesMessage) and [groupContinuedMessage](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/texts/#groupContinuedMessage) (if the group is spread across two or more pages)
 
 The following example shows how to display column value only:
 
@@ -123,7 +123,7 @@ The following example shows how to display column value only:
         </DxDataGrid>
     </template>
     <script>
-    import DxDataGrid from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
@@ -137,28 +137,22 @@ The following example shows how to display column value only:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import {DataGrid} from 'devextreme-react/data-grid';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+
+    const GroupCell = options => <div>{options.value}</div>;
 
     export default function App() {
         // ...
         return (
             <DataGrid ...>
                 <Column
-                    dataField={'Country'}
+                    dataField="Country"
                     defaultGroupIndex={0}
-                    groupCellRender={GroupCell}/>
+                    groupCellRender={GroupCell}
+                />
             </DataGrid>
         );
     }
-
-    function GroupCell(options) {
-        let displayValue = options.value;
-        return (
-            <div>{displayValue}</div>
-        );
-    }
-
-    export default App;
 
 ---
 

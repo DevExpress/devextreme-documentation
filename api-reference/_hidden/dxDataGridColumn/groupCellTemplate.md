@@ -102,7 +102,7 @@ The following example shows how to display column value only:
         </dxi-column>
 
         <div *dxTemplate="let data of 'groupCellTemplate'">
-    	    <div>{{data.value}}</div>
+            <div>{{data.value}}</div>
         </div>
     </dx-data-grid>
 

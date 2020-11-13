@@ -108,18 +108,18 @@
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {
-        Scheduler
-    } from 'devextreme-react/scheduler';
+    import { Scheduler } from 'devextreme-react/scheduler';
 
     function App() {
         return (
             <div className="App">
-                <Scheduler id="scheduler"
-                    height={600}
-                    startDayHour={10}
-                    defaultCurrentDate={currentDate}>
-                </Scheduler>
+                <div id="app-container">
+                    <Scheduler
+                        height={600}
+                        startDayHour={10}
+                        defaultCurrentDate={currentDate}>
+                    </Scheduler>
+                  </div>
             </div>
         );
     }

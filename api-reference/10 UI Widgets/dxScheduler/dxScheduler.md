@@ -21,6 +21,9 @@ dx.web.js, dx.all.js
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/Widgets/Scheduler/Overview/"
 }
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/Widgets/DateBox/Getting_Started_with_Scheduler/"
+} 
 
 #####See Also#####
 #include common-link-setupdevextreme

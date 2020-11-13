@@ -67,22 +67,24 @@ Group cells display the following data:
 
 * [Group summary items]
 
-* [groupContinuesMessage] and [groupContinuedMessage] (if the group is spread across two pages)
+* [groupContinuesMessage] and [groupContinuedMessage] (if the group is spread across two or more pages)
 
-The following example shows how to customize group cells:
+The following example shows how to display column value only:
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#dataGridContainer").dxDataGrid({
             // ...
             columns: [ 
                 {
                     dataField: "Country",
                     groupIndex: 0,
-                    },
+                    groupCellTemplate: function(element, options) {
+                        element.text(options.value);
+                    }
                 },
             // ...
             ]
@@ -92,8 +94,7 @@ The following example shows how to customize group cells:
 ##### Angular
     
     <!--HTML-->
-    <dx-{widget-name} ... >
-        <dxi-column dataField="City"></dxi-column>
+    <dx-data-grid ... >
         <dxi-column 
             dataField="Country" 
             [groupIndex]="0" 
@@ -103,14 +104,13 @@ The following example shows how to customize group cells:
         <div *dxTemplate="let data of 'groupCellTemplate'">
     	    <div>{{data.value}}</div>
   	    </div>
-    </dx-{widget-name}>
+    </dx-data-grid>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ... >
-            <DxColumn data-field="City"/>
+        <DxDataGrid ... >
             <DxColumn
                 data-field="Country"
                 :group-index="0"
@@ -120,14 +120,14 @@ The following example shows how to customize group cells:
             <template #groupCellTemplate="{ data }">
                 <div>{{data.value}}</div>
             </template>
-        </Dx{WidgetName}>
+        </DxDataGrid>
     </template>
     <script>
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+    import DxDataGrid from 'devextreme-vue/data-grid';
 
     export default {
         components: {
-            Dx{WidgetName}
+            DxDataGrid
         },
         // ...
     }
@@ -137,22 +137,18 @@ The following example shows how to customize group cells:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import {DataGrid} from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
+    export default function App() {
         // ...
-        render() {
-            return (
-                <{WidgetName} ...>
-                    <Column dataField={'City'} />
-                    <Column
-                        dataField={'Country'}
-                        defaultGroupIndex={0}
-                        groupCellRender={GroupCell}/>
-
-                </{WidgetName}>
-            );
-        }
+        return (
+            <DataGrid ...>
+                <Column
+                    dataField={'Country'}
+                    defaultGroupIndex={0}
+                    groupCellRender={GroupCell}/>
+            </DataGrid>
+        );
     }
 
     function GroupCell(options) {

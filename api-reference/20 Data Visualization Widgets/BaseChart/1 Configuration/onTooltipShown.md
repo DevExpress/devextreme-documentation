@@ -2,7 +2,6 @@
 id: BaseChart.Options.onTooltipShown
 type: function(e)
 default: null
-EventForAction: BaseChart.tooltipShown
 notUsedInTheme: 
 ---
 ---

@@ -12,9 +12,7 @@ A view defines the time interval for which to display appointments. The followin
 
 * [Custom](/Documentation/Guide/Widgets/Scheduler/Views/Customize_Individual_Views/).
 
-Use the views option to specify the following views: "day", "week", "month", and "timelineWeek". We will display the "week" view by default. For this, set the currentView option to *"week"*.  
-
-Additionally, use the startDayHour option to set 10 am as the first hour of the grid's scale.
+Use the views option to specify the following views: "day", "week", "month", and "timelineWeek". We will display the "week" view by default. For this, set the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) option to *"week"*.  
 
 ---
 ##### jQuery
@@ -23,7 +21,8 @@ Additionally, use the startDayHour option to set 10 am as the first hour of the 
     $(function() { 
         $("#scheduler").dx{WidgetName}({ 
             // ...
-            views: ["day", "week", "month", "timelineWeek"]
+            views: ["day", "week", "month", "timelineWeek"],
+            currentView: "week"
         });
     });
 
@@ -32,6 +31,7 @@ Additionally, use the startDayHour option to set 10 am as the first hour of the 
     <!-- tab: app.component.html --> 
     <dx-scheduler ...
         [views]='["day", "week", "month", "timelineWeek"]'
+        currentView="week">
     </dx-scheduler> 
 
 ##### Vue 
@@ -40,6 +40,7 @@ Additionally, use the startDayHour option to set 10 am as the first hour of the 
     <template> 
         <DxScheduler ...
             :views="views"
+            current-view="week">
         </DxScheduler>
     </template> 
 
@@ -77,7 +78,8 @@ Additionally, use the startDayHour option to set 10 am as the first hour of the 
         return (
             <div className="App">
                 <Scheduler ...
-                    views={views}>
+                    views={views}
+                    defaultCurrentView="week">
                 </Scheduler>
             </div>
         );

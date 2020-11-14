@@ -20,8 +20,8 @@ In this step, we will forbid users to drag the appointments.
     <!-- tab: app.component.html --> 
     <dx-scheduler ... >
         <dxo-editing
-            [allowDragging]="false"
-        ></dxo-editing>
+            [allowDragging]="false">
+        </dxo-editing>
     </dx-scheduler> 
 
 ##### Vue 
@@ -29,9 +29,9 @@ In this step, we will forbid users to drag the appointments.
     <!-- tab: App.vue --> 
     <template> 
         <DxScheduler ... >
-        <DxEditing
-            :allow-dragging="false"
-        />
+            <DxEditing
+                :allow-dragging="false"
+            />
         </DxScheduler>
     </template> 
 
@@ -44,7 +44,6 @@ In this step, we will forbid users to drag the appointments.
         name: 'Vue: Getting started with Scheduler',
         components: {
             DxScheduler,
-            DxResource, 
             DxEditing
         },
         // ...

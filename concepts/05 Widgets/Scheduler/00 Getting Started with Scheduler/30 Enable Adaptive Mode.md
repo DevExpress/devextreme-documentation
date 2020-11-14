@@ -32,7 +32,11 @@ Since people use portable devices to work with Scheduler, it should change its i
 ##### React 
 
     <!-- tab: App.js -->
-    // ...
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Scheduler, Resource, Editing } from 'devextreme-react/scheduler';
 
     function App() {
         return (

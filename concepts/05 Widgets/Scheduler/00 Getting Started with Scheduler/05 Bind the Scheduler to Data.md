@@ -121,7 +121,6 @@ The widget supports three types of appointments: one-time, all-day, and recurrin
 
         constructor(service: AppService) {
             this.data = service.getAppointments();
-            this.priorities = service.getPriorities();
         }
     } 
 
@@ -218,7 +217,6 @@ The widget supports three types of appointments: one-time, all-day, and recurrin
     <script>
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
-
     import { data } from './data.js';
 
     export default {

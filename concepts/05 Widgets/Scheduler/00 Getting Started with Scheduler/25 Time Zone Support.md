@@ -8,74 +8,41 @@ Additionally, we will allow users to edit time zones of individual appointments.
     <!-- tab: index.js --> 
     $(function() { 
         $("#scheduler").dx{WidgetName}({ 
-            height: 600,
-            startDayHour: 10,
-            currentDate: new Date(2021, 4, 25),
+            // ...
+            editing: {
+                // ...
+                allowTimeZoneEditing: true
+            },
+            timeZone: "Europe/Berlin"
         });
     });
-
-    <!-- tab: index.html -->
-    <html>
-        <head>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.2.3/css/dx.common.css" />
-            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.2.3/css/dx.light.css" />
-            <script src="https://cdn3.devexpress.com/jslib/20.2.3/js/dx.all.js"></script>
-            <script src="index.js"></script>
-        </head>
-        <body>
-            <div id="scheduler"></div>
-        </body>
-    </html>
 
 ##### Angular 
 
     <!-- tab: app.component.html --> 
-    <dx-scheduler
-        [height]="600"
-        [startDayHour]="10"  
-        [currentDate]="currentDate">
+    <dx-scheduler ...
+        timeZone="Europe/Berlin">
+        <!-- ... -->
+        <dxo-editing ...
+            [allowTimeZoneEditing]="true"
+        ></dxo-editing>
     </dx-scheduler> 
-
-    <!-- tab: app.component.ts --> 
-    import { Component } from '@angular/core'; 
-
-    @Component({ 
-        selector: 'app-root', 
-        templateUrl: './app.component.html', 
-        styleUrls: ['./app.component.css'] 
-    }) 
-    export class AppComponent { 
-        currentDate: Date = new Date(2021, 4, 25);
-    } 
 
 ##### Vue 
 
     <!-- tab: App.vue --> 
     <template> 
-        <DxScheduler
-            :height="600"
-            :start-day-hour="10"
-            :current-date="currentDate">
+        <DxScheduler ...
+            timeZone="Europe/Berlin">
+            <!-- ... -->
+            <DxEditing ...
+                :allow-editing-time-zones="true"
+            />
         </DxScheduler>
     </template> 
 
     <script> 
-    import 'devextreme/dist/css/dx.common.css'; 
-    import 'devextreme/dist/css/dx.light.css'; 
-
-    import DxScheduler from 'devextreme-vue/scheduler'; 
-
-    export default { 
-        components: {
-            DxScheduler,
-        },
-        data() {
-            return {
-                currentDate: new Date(2021, 4, 25),
-            };
-        }
-    } 
+        // ...
     </script> 
 
 ##### React 
@@ -85,15 +52,17 @@ Additionally, we will allow users to edit time zones of individual appointments.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Scheduler } from 'devextreme-react/scheduler';
+    import { Scheduler, Resource, Editing } from 'devextreme-react/scheduler';
 
     function App() {
         return (
             <div className="App">
-                <Scheduler id="scheduler"
-                    height={600}
-                    startDayHour={10}
-                    defaultCurrentDate={currentDate}>
+                <Scheduler ...
+                    timeZone="Europe/Berlin">
+                    {/* ... */}
+                    <Editing ...
+                        allowTimeZoneEditing={true}
+                    />
                 </Scheduler>
             </div>
         );

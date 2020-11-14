@@ -1,7 +1,7 @@
 We will group appointments by priority. For this, do the following:
 1. Create a resource kind. In this example, this is the `priorities` array. It consists of objects each of which defines a priority category: sets its heading, color, and id. 
-2. Use the resources array to add a resource kind: specify the fieldExpr and dataSource fields in the resource object. By this moment, the appointments will be painted based on the priority.
-3. Use the groups option to specify the field by which appointments are categorized by priority.
+2. Use the [resources](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/) array to add a resource kind: specify the [fieldExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr) and [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource) fields in the resource object. By this moment, the appointments will be painted based on the priority.
+3. Use the [groups](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups) option to specify the field by which appointments are categorized.
 
 ---
 ##### jQuery
@@ -26,9 +26,7 @@ We will group appointments by priority. For this, do the following:
     <!-- tab: app.component.html --> 
     <dx-scheduler ...
         [groups]="['priorityId']">
-
         <!-- ... -->
-
         <dxi-resource
             [dataSource]="priorities"
             fieldExpr="priorityId"
@@ -81,7 +79,6 @@ We will group appointments by priority. For this, do the following:
     })
     export class AppService {
         // ...
-
         getPriorities() {
             return prioritiesData;
         }
@@ -93,6 +90,12 @@ We will group appointments by priority. For this, do the following:
     <template> 
         <DxScheduler ...
             :groups="groups">
+            <!-- ... -->
+            <DxResource
+                :data-source="priorities"
+                field-expr="priorityId"
+                label="Priority"
+            />
         </DxScheduler>
     </template> 
 
@@ -105,7 +108,8 @@ We will group appointments by priority. For this, do the following:
 
     export default { 
         components: {
-            DxScheduler,
+            // ...
+            DxResource
         },
         data() {
             return {
@@ -149,9 +153,7 @@ We will group appointments by priority. For this, do the following:
             <div className="App">
                 <Scheduler ... 
                     groups={groups}>
-
                 {/* ... */}
-
                 <Resource
                     fieldExpr="priorityId"
                     dataSource={priorities}

@@ -10,7 +10,7 @@ In this tutorial, we use the **List**:
     <!--tab: index.js-->
     $(function() {
         // Loads the initial page
-        $("#view" ).load( "./inbox.html" );
+        $("#view" ).load( "./pages/inbox.html" );
 
         const drawer = $("#drawer").dxDrawer({
             // ...
@@ -25,7 +25,7 @@ In this tutorial, we use the **List**:
                     width: 200,
                     selectionMode: "single",
                     onSelectionChanged: function(e) {
-                        $("#view").load( e.addedItems[0].filePath + ".html" );
+                        $("#view").load( "./pages/" + e.addedItems[0].filePath + ".html" );
                         drawer.hide();
                     }
                 });
@@ -46,16 +46,16 @@ In this tutorial, we use the **List**:
         margin-right: 10px;
     }
 
-    <!--tab: inbox.html-->
+    <!--tab: pages/inbox.html-->
     <div>Inbox</div>
 
-    <!--tab: sent-mail.html-->
+    <!--tab: pages/sent-mail.html-->
     <div>Sent Mail</div>
 
-    <!--tab: trash.html-->
+    <!--tab: pages/trash.html-->
     <div>Trash</div>
 
-    <!--tab: spam.html-->
+    <!--tab: pages/spam.html-->
     <div>Spam</div>
 
 ##### Angular

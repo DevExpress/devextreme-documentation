@@ -239,7 +239,7 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     }
     </script>
     <style>
-    .dx-fa-button-icon {
+    .dx-fa-button-icon, .dx-fa-button-icon-close {
         text-align: center;
     }
     
@@ -280,7 +280,7 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
 
     import TabPanel, { Item } from 'devextreme-react/tab-panel';
 
-    class FAB extends React.Component {
+    class App extends React.Component {
         switchSDAs(e) {
             // To be implemented
         }
@@ -305,7 +305,7 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     export default App;
 
     <!-- tab: App.css -->
-    .dx-fa-button-icon {
+    .dx-fa-button-icon, .dx-fa-button-icon-close {
         text-align: center;
     }
 
@@ -589,7 +589,7 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
     import config from 'devextreme/core/config';
     import notify from 'devextreme/ui/notify';
 
-    class FAB extends React.Component {
+    class App extends React.Component {
         constructor(props) {
             super(props);
             config({
@@ -664,6 +664,8 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
     export default App;
 
 ---
+
+You can find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button/tree/main/handle-screen-transitions" target="_blank">getting-started-with-floating-action-button/handle-screen-transitions</a>
 
 For more information on the Floating Action Button's functionality, explore the following resources:
 

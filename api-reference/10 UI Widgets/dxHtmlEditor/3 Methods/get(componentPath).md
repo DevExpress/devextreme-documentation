@@ -31,9 +31,9 @@ In the following code, the `bold` format is associated with the `<b>` tag instea
     <!-- tab: index.js -->
     $(function() {
         // ...
-        var htmlEditor = $("#htmlEditorContainer").dxHtmlEditor("instance");
+        const htmlEditor = $("#htmlEditorContainer").dxHtmlEditor("instance");
 
-        var Bold = htmlEditor.get("formats/bold");
+        const Bold = htmlEditor.get("formats/bold");
         Bold.tagName = "b";
 
         htmlEditor.register({ "formats/bold": Bold });

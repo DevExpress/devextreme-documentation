@@ -12,7 +12,7 @@ Configures variables, which are placeholders to be replaced with actual values w
 A user can insert variables in the text and remove them, but never modify them.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -28,7 +28,7 @@ A user can insert variables in the text and remove them, but never modify them.
         })
     })
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-html-editor>

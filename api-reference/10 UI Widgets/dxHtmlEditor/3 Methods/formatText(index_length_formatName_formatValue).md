@@ -20,13 +20,13 @@ A format value.
 
 ---
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     // Makes the first five characters bold
     $("#htmlEditorContainer").dxHtmlEditor("instance").formatText(0, 5, "bold", true);
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

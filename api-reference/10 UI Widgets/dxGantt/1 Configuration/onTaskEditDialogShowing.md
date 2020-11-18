@@ -21,7 +21,7 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.hiddenFields): Array<String>
-An array of hidden fields.
+An array of hidden fields. 
 
 ##### field(e.key): any
 The task key.
@@ -36,6 +36,8 @@ An array of read-only fields.
 The task values.
 
 ---
+
+Note that the **hiddenFields** and **readOnlyFields** parameters affect only task fields. Use the [allowTaskResourceUpdating](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#allowTaskResourceUpdating) option to hide the Resource Manager in the Task Details dialog.
 
 ---
 

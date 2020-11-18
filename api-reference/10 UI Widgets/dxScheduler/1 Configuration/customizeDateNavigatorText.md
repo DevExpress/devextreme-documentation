@@ -85,10 +85,84 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
         // ...
     })
 
-    <!--HTML-->
-    <dx-scheduler ...
-        [(currentView)]="currentView"
-        [customizeDateNavigatorText]="customizeDateNavigatorText">
-    </dx-scheduler>
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ...
+            :customize-date-navigator-text="customizeDateNavigatorText">
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                currentView: 'day',
+                // ...
+            }
+        },
+        methods: {
+            customizeDateNavigatorText(e) {
+                const formatOptions = { 
+                    year: 'numeric', 
+                    month: 'numeric', 
+                    day: 'numeric' 
+                };
+                const formattedStartDate = e.startDate.toLocaleString('en', formatOptions);
+                const formattedEndDate = e.endDate.toLocaleString('en', formatOptions);
+                if(this.currentView === 'day' | 'timelineDay') 
+                    return formattedStartDate;
+                if(this.currentView === 'month' ) 
+                    return e.startDate.toLocaleString('en', { year: 'numeric', month: 'numeric' });
+                return formattedStartDate + ' - ' + formattedEndDate;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useCallback } from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler from 'devextreme-react/scheduler';
+
+    const App = () => {
+        const currentView = 'day';
+        const customizeDateNavigatorText = useCallback((e) => {
+            const formatOptions = { 
+                year: 'numeric', 
+                month: 'numeric', 
+                day: 'numeric' 
+            };
+            const formattedStartDate = e.startDate.toLocaleString('en', formatOptions);
+            const formattedEndDate = e.endDate.toLocaleString('en', formatOptions);
+            if(this.currentView === 'day' | 'timelineDay') 
+                return formattedStartDate;
+            if(this.currentView === 'month' ) 
+                return e.startDate.toLocaleString('en', { year: 'numeric', month: 'numeric' });
+            return formattedStartDate + ' - ' + formattedEndDate;
+        }, [currentView]);
+
+        return (
+            <Scheduler ...
+                customizeDateNavigatorText={customizeDateNavigatorText}
+            />
+        );
+    }
+
+    export default App;
 
 ---

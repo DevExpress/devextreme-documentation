@@ -17,15 +17,15 @@ In this tutorial, we use the **List**:
             template: function(e) {
                 const $list = $("<div/>").dxList({
                     items: [
-                        { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-                        { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-                        { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-                        { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
+                        { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+                        { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+                        { id: 3, text: "Trash", icon: "trash", path: "trash" },
+                        { id: 4, text: "Spam", icon: "mention", path: "spam" }
                     ],
                     width: 200,
                     selectionMode: "single",
                     onSelectionChanged: function(e) {
-                        $("#view").load( "./pages/" + e.addedItems[0].filePath + ".html" );
+                        $("#view").load( "./pages/" + e.addedItems[0].path + ".html" );
                         drawer.hide();
                     }
                 });
@@ -67,39 +67,41 @@ In this tutorial, we use the **List**:
                 [items]="navigation"
                 [width]="200"
                 selectionMode="single"
-                (onSelectionChanged)="loadView($event)">
+                (onSelectionChanged)="this.isDrawerOpen = false"
+                itemTemplate="links">
+                <div *dxTemplate="let link of 'links'">
+                    <a [routerLink]="['/' + link.path]">
+                        <div>
+                            <div class="dx-list-item-icon-container">
+                                <i class="dx-icon dx-list-item-icon dx-icon-{{link.icon}}"></i>
+                            </div>
+                            <span>{{ link.text }}</span>
+                        </div>
+                    </a>
+                </div>
             </dx-list>
         </div>
-        <div id="view"><router-outlet></router-outlet></div>
+        <div id="view">
+            <router-outlet></router-outlet>
+        </div>
     </dx-drawer>
 
     <!-- tab: app.component.ts -->
     import { Component } from "@angular/core";
-    import { Router } from "@angular/router";
 
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css'],
-        providers: []
+        styleUrls: ['./app.component.css']
     })
-
     export class AppComponent {
-        navigation: any;
+        navigation: any[] = [
+            { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+            { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+            { id: 3, text: "Trash", icon: "trash", path: "trash" },
+            { id: 4, text: "Spam", icon: "mention", path: "spam" }
+        ];
         isDrawerOpen: Boolean = false;
-
-        constructor(private router: Router) {
-            this.navigation = [
-                { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-                { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-                { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-                { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
-            ];
-        }
-        loadView(e) {
-            this.router.navigate([e.addedItems[0].filePath]);
-            this.isDrawerOpen = false;
-        }
     }
 
     <!-- tab: app.component.css -->
@@ -238,8 +240,21 @@ In this tutorial, we use the **List**:
             :width="200"
             selection-mode="single"
             :items="navigation"
-            @selection-changed="loadView($event)"
-        />
+            item-template="links"
+            @selection-changed="navigate">
+            <template #links="{ data }">
+                <div>
+                    <router-link :to="'/' + data.path">
+                        <div>
+                            <div class="dx-list-item-icon-container">
+                                <i class="dx-icon dx-list-item-icon" :class="'dx-icon-' + data.icon"></i>
+                            </div>
+                            <span>{{ data.text }}</span>
+                        </div>
+                    </router-link>
+                </div>
+            </template>
+        </DxList>
     </template>
     <script>
     import { DxList } from "devextreme-vue/list";
@@ -250,40 +265,30 @@ In this tutorial, we use the **List**:
         },
         data() {
             const navigation = [
-                { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-                { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-                { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-                { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
+                { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+                { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+                { id: 3, text: "Trash", icon: "trash", path: "trash" },
+                { id: 4, text: "Spam", icon: "mention", path: "spam" }
             ];
             return {
                 navigation
             };
         },
         methods: {
-            loadView(e) {
-                this.$router.push(e.addedItems[0].filePath);
+            navigate() {
                 this.$emit('navigated');
             }
         }
     }
     </script>
 
-    <!-- tab: main.js -->
-    import Vue from 'vue';
-    import VueRouter from 'vue-router';
+    <!-- tab: router/index.js -->
+    import { createRouter, createWebHistory } from 'vue-router';
 
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import App from './App.vue';
-    import InboxComponent from "./components/Inbox.vue";
-    import SentMailComponent from "./components/SentMail.vue";
-    import TrashComponent from "./components/Trash.vue";
-    import SpamComponent from "./components/Spam.vue";
-
-    Vue.config.productionTip = false;
-
-    Vue.use(VueRouter);
+    import InboxComponent from "../components/Inbox.vue";
+    import SentMailComponent from "../components/SentMail.vue";
+    import TrashComponent from "../components/Trash.vue";
+    import SpamComponent from "../components/Spam.vue";
 
     const routes = [
         { path: "", redirect: "/inbox" },
@@ -293,15 +298,24 @@ In this tutorial, we use the **List**:
         { path: "/spam", component: SpamComponent }
     ];
 
-    const router = new VueRouter({
-        mode: "history",
-        routes
+    const router = createRouter({
+        history: createWebHistory(),
+        routes: routes
     });
 
-    new Vue({
-        render: h => h(App),
-        router
-    }).$mount('#app')
+    export default router;
+
+    <!-- tab: main.js -->
+    import { createApp } from 'vue'
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import App from './App.vue'
+    import router from './router'
+
+    const app = createApp(App);
+    app.use(router);
+    app.mount('#app');
 
     <!-- tab: Inbox.vue -->
     <template>
@@ -341,20 +355,37 @@ In this tutorial, we use the **List**:
 
 ##### React
 
-    <!-- tab: DxComponent.js -->
+    <!-- tab: App.js -->
+    // ...
+    import { BrowserRouter, Route } from 'react-router-dom'
+
+    class App extends Component {
+        render() {
+            return (
+                <BrowserRouter>
+                    <div className="App">
+                        <Route component={NavigationDrawer} />
+                    </div>
+                </BrowserRouter>
+            );
+        }
+    }
+    export default App;
+
+
+    <!-- tab: NavigationDrawer.js -->
     // ...
     import NavigationList from "./NavigationList";
 
-    import { Router, Route } from "react-router-dom";
+    import { Switch, Route } from "react-router-dom";
 
     import Inbox from "./views/Inbox";
     import Trash from "./views/Trash";
     import SentMail from "./views/SentMail";
     import Spam from "./views/Spam";
 
-    import history from "./history";
-
-    class DxComponent extends React.Component {
+    class NavigationDrawer extends React.Component {
+        // ...
         renderList = () => {
             const stateHandler = (newState) => this.setState(newState);
             return (
@@ -365,43 +396,57 @@ In this tutorial, we use the **List**:
         render() {
             return (
                 <React.Fragment>
+                    { /* ... */ }
                     <Drawer ...
                         render={this.renderList}>
                         <div id="view">
-                            <Router history={history}>
-                                <div>
-                                    <Route exact path="/" component={Inbox} />
-                                    <Route exact path="/inbox" component={Inbox} />
-                                    <Route exact path="/sent-mail" component={SentMail} />
-                                    <Route exact path="/spam" component={Spam} />
-                                    <Route exact path="/trash" component={Trash} />
-                                </div>
-                            </Router>
+                            <Switch>
+                                <Route exact path="/" component={Inbox} />
+                                <Route exact path="/inbox" component={Inbox} />
+                                <Route exact path="/sent-mail" component={SentMail} />
+                                <Route exact path="/spam" component={Spam} />
+                                <Route exact path="/trash" component={Trash} />
+                            </Switch>
                         </div>
                     </Drawer>
                 </React.Fragment>
             );
         }
     }
-    export default DxComponent;
+    export default NavigationDrawer;
 
     <!-- tab: NavigationList.js -->
     import React from "react";
     import List from "devextreme-react/list";
-    import history from "./history";
+    import { Link } from "react-router-dom";
 
     const navigation = [
-        { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-        { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-        { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-        { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
+        { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+        { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+        { id: 3, text: "Trash", icon: "trash", path: "trash" },
+        { id: 4, text: "Spam", icon: "mention", path: "spam" }
     ];
 
     class NavigationList extends React.PureComponent {
-        loadView(e) {
-            history.push(e.addedItems[0].filePath);
+        closeDrawer = () => {
             this.props.stateHandler({ isDrawerOpen: false });
         }
+
+        renderLink = (data) => {
+            return (
+                <div>
+                    <Link to={'/' + data.path}>
+                        <div>
+                            <div className="dx-list-item-icon-container">
+                                <i className={`dx-icon dx-list-item-icon dx-icon-${data.icon}`}></i>
+                            </div>
+                            <span>{data.text}</span>
+                        </div>
+                    </Link>
+                </div>
+            );
+        }
+
         render() {
             return (
                 <React.Fragment>
@@ -409,25 +454,22 @@ In this tutorial, we use the **List**:
                         items={navigation}
                         width={200} 
                         selectionMode="single"
-                        onSelectionChanged={this.loadView} />
+                        onSelectionChanged={this.closeDrawer}
+                        itemRender={this.renderLink}
+                    />
                 </React.Fragment>
             );
         }
     }
     export default NavigationList;
 
-    <!-- tab: history.js -->
-    import { createBrowserHistory } from "history";
-
-    export default createBrowserHistory()
-
-    <!-- tab: DxComponent.css -->
+    <!-- tab: NavigationDrawer.css -->
     /* ... */
     .dx-list-item-icon {
         margin-right: 10px;
     }
 
-    <!-- tab: Inbox.js -->
+    <!-- tab: views/Inbox.js -->
     import React from "react";
 
     class Inbox extends React.Component {
@@ -439,7 +481,7 @@ In this tutorial, we use the **List**:
     }
     export default Inbox;
 
-    <!-- tab: SentMail.js -->
+    <!-- tab: views/SentMail.js -->
     import React from "react";
 
     class SentMail extends React.Component {
@@ -451,7 +493,7 @@ In this tutorial, we use the **List**:
     }
     export default SentMail;
 
-    <!-- tab: Spam.js -->
+    <!-- tab: views/Spam.js -->
     import React from "react";
 
     class Spam extends React.Component {
@@ -463,7 +505,7 @@ In this tutorial, we use the **List**:
     }
     export default Spam;
 
-    <!-- tab: Trash.js -->
+    <!-- tab: views/Trash.js -->
     import React from "react";
 
     class Trash extends React.Component {
@@ -508,8 +550,10 @@ In this tutorial, we use the **List**:
         }
 
         function list_onSelectionChanged(e) {
+            const drawer = $("#layout-drawer").dxDrawer("instance");
+            drawer.hide();
+            sessionStorage.setItem("isDrawerOpen", JSON.stringify(drawer.option("opened")));
             document.location.pathname = e.addedItems[0].path;
-            $("#layout-drawer").dxDrawer("hide");
         }
 
         function list_onInitialized(e) {

@@ -58,7 +58,7 @@ Data kept in an **ArrayStore** can be processed in the [DataSource](/api-referen
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { fruit: "Apples", count: 10 },
         // ...
     ];

@@ -7,7 +7,7 @@ Pass the index to the [deleteItem(itemIndex)](/api-reference/10%20UI%20Widgets/d
     ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Deletes the item with index 1 
         list.deleteItem(1);
         // Deletes the item with index 0 from the group with index 2
@@ -48,9 +48,9 @@ Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_bla
     ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Finds all List items
-        var itemNodes = $("#listContainer").find(".dx-list-item");
+        const itemNodes = $("#listContainer").find(".dx-list-item");
         // Makes the first item the last
         list.deleteItem(itemNodes[itemNodes.length-1]);
 

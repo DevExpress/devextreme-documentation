@@ -39,7 +39,7 @@ To bind the **List** to an array, pass this array to the [dataSource](/api-refer
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { fruit: "Apples", count: 10 },
         { fruit: "Oranges", count: 12 },
         { fruit: "Lemons", count: 15 },
@@ -96,7 +96,7 @@ If objects in an array need to be processed (sorted, filtered, grouped, etc.), y
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { fruit: "Apples", count: 10 },
         // ...
     ];

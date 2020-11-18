@@ -3,7 +3,7 @@ If the user should be able to collapse or expand a group in the **List**, set th
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruitsVegetables = [{
+    <!--JavaScript-->const fruitsVegetables = [{
         key: "Fruits",
         items: [
             { name: "Apples", count: 10 },
@@ -74,7 +74,7 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
 ##### jQuery
 
     <!--JavaScript-->
-    var list = $("#listContainer").dxList("instance");
+    const list = $("#listContainer").dxList("instance");
     list.collapseGroup(0); // collapses the group with index 0
     list.expandGroup(4); // expands the group with index 4
 

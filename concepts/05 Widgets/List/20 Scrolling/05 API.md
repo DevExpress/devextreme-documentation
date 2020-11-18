@@ -37,8 +37,8 @@ The following examples shows how to call these methods.
 ##### jQuery
 
     <!--JavaScript-->
-    var list = $("#listContainer").dxList("instance");
-    var listItems = list.option("items");
+    const list = $("#listContainer").dxList("instance");
+    const listItems = list.option("items");
 
     // Scrolls the List to the last item
     list.scrollToItem(listItems.length-1);
@@ -53,18 +53,18 @@ The following examples shows how to call these methods.
 
     <!--JavaScript-->
     // Finds the DOM nodes of all items and scrolls the List to the last node
-    var listItemNodes = $("#listContainer").find(".dx-list-item");
+    const listItemNodes = $("#listContainer").find(".dx-list-item");
     list.scrollToItem(listItemNodes[listItemNodes.length-1]);
 
     // Finds the DOM nodes of all groups and scrolls the List to the last node
-    var listGroupNodes = $("#listContainer").find(".dx-list-group");
+    const listGroupNodes = $("#listContainer").find(".dx-list-group");
     list.scrollToItem(listGroupNodes[listGroupNodes.length-1]);
 
 <!---->
 
     <!--JavaScript-->
-    var contentHeight = list.scrollHeight();
-    var scrolledFromTopBy = list.scrollTop();
+    const contentHeight = list.scrollHeight();
+    const scrolledFromTopBy = list.scrollTop();
     list.scrollTo(200);
     list.scrollBy(100);
 

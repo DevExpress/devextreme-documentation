@@ -7,12 +7,12 @@ The **List** widget fires the [selectionChanged](/api-reference/10%20UI%20Widget
         $("#listContainer").dxList({
             // ...
             onSelectionChanged: function(e) {
-                var addedItems = e.addedItems;
-                var removedItems = e.removedItems;
+                const addedItems = e.addedItems;
+                const removedItems = e.removedItems;
                 // Handler of the "selectionChanged" event
             },
             onSelectAllValueChanged: function(e) {
-                var newCheckBoxValue = e.value;
+                const newCheckBoxValue = e.value;
                 // Handler of the "selectAllValueChanged" event
             }
         });
@@ -57,11 +57,11 @@ The **List** widget fires the [selectionChanged](/api-reference/10%20UI%20Widget
 If you are going to change the event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var selectionChangedEventHandler1 = function(e) {
+    const selectionChangedEventHandler1 = function(e) {
         // First handler of the "selectionChanged" event
     };
 
-    var selectionChangedEventHandler2 = function(e) {
+    const selectionChangedEventHandler2 = function(e) {
         // Second handler of the "selectionChanged" event
     };
 

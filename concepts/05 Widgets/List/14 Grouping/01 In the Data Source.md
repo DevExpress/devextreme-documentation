@@ -3,7 +3,7 @@ Items in the **List** are grouped if they are grouped in the data source. The **
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruitsVegetables = [{
+    <!--JavaScript-->const fruitsVegetables = [{
         key: "Fruits",
         items: [
             { name: "Apples", count: 10 },
@@ -83,7 +83,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruitsVegetables = [{
+    <!--JavaScript-->const fruitsVegetables = [{
         type: "Fruits",
         collection: [
             { name: "Apples", count: 10 },
@@ -175,7 +175,7 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruitsVegetables = [
+    <!--JavaScript-->const fruitsVegetables = [
         { type: "Fruits", name: "Apples", count: 10 },
         { type: "Fruits", name: "Oranges", count: 12 },
         { type: "Fruits", name: "Lemons", count: 15 },

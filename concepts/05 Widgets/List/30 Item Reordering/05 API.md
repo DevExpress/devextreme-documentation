@@ -7,7 +7,7 @@ Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20
     ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Places the item with index 1 after the item with index 5 
         list.reorderItem(1, 5);
         // Takes the item with index 0 from the group with index 2
@@ -58,9 +58,9 @@ Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_bla
     ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Finds all List items
-        var itemNodes = $("#listContainer").find(".dx-list-item");
+        const itemNodes = $("#listContainer").find(".dx-list-item");
         // Makes the first item the last
         list.reorderItem(itemNodes[0], itemNodes[itemNodes.length-1]);
 

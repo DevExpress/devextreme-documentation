@@ -7,9 +7,9 @@ To execute certain commands when the **List** is scrolled, handle the [scroll](/
         $("#listContainer").dxList({
             // ...
             onScroll: function(e) {
-                var scrollOffset = e.scrollOffset.top;
-                var scrolledToTop = e.reachedTop;
-                var scrolledToBottom = e.reachedBottom;
+                const scrollOffset = e.scrollOffset.top;
+                const scrolledToTop = e.reachedTop;
+                const scrolledToBottom = e.reachedBottom;
                 // Handler of the "scroll" event
             }
         });
@@ -27,9 +27,9 @@ To execute certain commands when the **List** is scrolled, handle the [scroll](/
     // ...
     export class AppComponent {
         onScroll (e) {
-            var scrollOffset = e.scrollOffset.top;
-            var scrolledToTop = e.reachedTop;
-            var scrolledToBottom = e.reachedBottom;
+            const scrollOffset = e.scrollOffset.top;
+            const scrolledToTop = e.reachedTop;
+            const scrolledToBottom = e.reachedBottom;
             // Handler of the "scroll" event
         }
     }
@@ -46,11 +46,11 @@ To execute certain commands when the **List** is scrolled, handle the [scroll](/
 If you are going to change the **scroll** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var scrollEventHandler1 = function(e) {
+    const scrollEventHandler1 = function(e) {
         // First handler of the "scroll" event
     };
 
-    var scrollEventHandler2 = function(e) {
+    const scrollEventHandler2 = function(e) {
         // Second handler of the "scroll" event
     };
 

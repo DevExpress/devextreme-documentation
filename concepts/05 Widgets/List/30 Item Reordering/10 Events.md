@@ -7,10 +7,10 @@ To execute certain commands when an item changes its position, handle the [itemR
         $("#listContainer").dxList({
             // ...
             onItemReordered: function(e) {
-                var itemData = e.itemData;
-                var itemDomNode = e.itemElement;
-                var from = e.fromIndex;
-                var to = e.toIndex;
+                const itemData = e.itemData;
+                const itemDomNode = e.itemElement;
+                const from = e.fromIndex;
+                const to = e.toIndex;
                 // Handler of the "itemReordered" event
             }
         });
@@ -51,11 +51,11 @@ To execute certain commands when an item changes its position, handle the [itemR
 If you are going to change the **itemReordered** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var itemReorderedEventHandler1 = function(e) {
+    const itemReorderedEventHandler1 = function(e) {
         // First handler of the "itemReordered" event
     };
 
-    var itemReorderedEventHandler2 = function(e) {
+    const itemReorderedEventHandler2 = function(e) {
         // Second handler of the "itemReordered" event
     };
 

@@ -7,15 +7,15 @@ To execute certain commands before or after an item is deleted from the **List**
         $("#listContainer").dxList({
             // ...
             onItemDeleting: function(e) {
-                var itemData = e.itemData;
-                var itemDomNode = e.itemElement;
-                var itemIndex = e.itemIndex;
+                const itemData = e.itemData;
+                const itemDomNode = e.itemElement;
+                const itemIndex = e.itemIndex;
                 // Handler of the "itemDeleting" event
             },
             onItemDeleted: function(e) {
-                var itemData = e.itemData;
-                var itemDomNode = e.itemElement;
-                var itemIndex = e.itemIndex;
+                const itemData = e.itemData;
+                const itemDomNode = e.itemElement;
+                const itemIndex = e.itemIndex;
                 // Handler of the "itemDeleted" event
             },
         });
@@ -61,11 +61,11 @@ To execute certain commands before or after an item is deleted from the **List**
 If you are going to change the event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var itemDeletingEventHandler1 = function(e) {
+    const itemDeletingEventHandler1 = function(e) {
         // First handler of the "itemDeleting" event
     };
 
-    var itemDeletingEventHandler2 = function(e) {
+    const itemDeletingEventHandler2 = function(e) {
         // Second handler of the "itemDeleting" event
     };
 

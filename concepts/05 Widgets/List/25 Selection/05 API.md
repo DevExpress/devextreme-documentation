@@ -7,8 +7,8 @@ Add or remove the key from the [selectedItemKeys](/api-reference/10%20UI%20Widge
     ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
-        var selectedKeys = list.option("selectedItemKeys");
+        const list = $("#listContainer").dxList("instance");
+        let selectedKeys = list.option("selectedItemKeys");
         // Selects the item with key 5
         selectedKeys.push(5);
         list.option("selectedItemKeys", selectedKeys);
@@ -97,13 +97,13 @@ Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20
     ##### jQuery
 
         <!--JavaScript-->
-        var fruits = [
+        const fruits = [
             { fruit: "Apples", count: 10 },
             { fruit: "Oranges", count: 12 },
             { fruit: "Lemons", count: 15 }
         ];
-        var list = $("#listContainer").dxList("instance");
-        var selectedItems = list.option("selectedItems");
+        const list = $("#listContainer").dxList("instance");
+        let selectedItems = list.option("selectedItems");
         // Selects the "Oranges" item
         selectedItems.push(fruits[1]);
         list.option("selectedItems", selectedItems);
@@ -157,7 +157,7 @@ Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20
     ##### jQuery
 
         <!--JavaScript-->
-        var fruits = [
+        const fruits = [
             // ...
         ];
         $(function() {
@@ -200,7 +200,7 @@ Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/d
     ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Selects the item with index 1
         list.selectItem(1);
         // Checks that the item with index 1 is selected; if so, cancels the selection
@@ -210,7 +210,7 @@ Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/d
         // Selects the item with index 3 in the group with index 2
         list.selectItem({ group: 2, item: 3 });
         // Checks that the item with index 3 in the group with index 2 is selected; if so, cancels the selection
-        var itemToUnselect = { group: 2, item: 3 };
+        const itemToUnselect = { group: 2, item: 3 };
         if(list.isItemSelected(itemToUnselect)) {
             list.unselectItem(itemToUnselect);
         }
@@ -265,8 +265,8 @@ Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_bla
     ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
-        var itemNodes = $("#listContainer").find(".dx-list-item");
+        const list = $("#listContainer").dxList("instance");
+        const itemNodes = $("#listContainer").find(".dx-list-item");
         // Selects the last item by its DOM node
         list.selectItem(itemNodes[itemNodes.length-1]);
         // Checks that the last item is selected; if so, cancels the selection
@@ -285,12 +285,12 @@ Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_bla
             // Prior to Angular 8
             // @ViewChild(DxListComponent) list: DxListComponent;
             selectLastItem () {
-                var itemNodes = document.getElementsByClassName("dx-list-item");
+                const itemNodes = document.getElementsByClassName("dx-list-item");
                 // Selects the last item by its DOM node
                 this.list.instance.selectItem(itemNodes[itemNodes.length-1]);
             }
             unselectLastItem () {
-                var itemNodes = document.getElementsByClassName("dx-list-item");
+                const itemNodes = document.getElementsByClassName("dx-list-item");
                 // Checks that the last item is selected; if so, cancels the selection
                 if(this.list.instance.isItemSelected(itemNodes[itemNodes.length-1])) {
                     this.list.instance.unselectItem(itemNodes[itemNodes.length-1]);

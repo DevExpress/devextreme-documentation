@@ -19,10 +19,10 @@ Swipe can be used to [delete an item](/concepts/05%20Widgets/List/35%20Item%20De
     <!-->
 
         <!--JavaScript-->
-        var itemSwipeEventHandler1 = function(e) {
+        const itemSwipeEventHandler1 = function(e) {
             // First handler of the "itemSwipe" event
         }
-        var itemSwipeEventHandler2 = function(e) {
+        const itemSwipeEventHandler2 = function(e) {
             // Second handler of the "itemSwipe" event
         }
         $("#listContainer").dxList("instance")

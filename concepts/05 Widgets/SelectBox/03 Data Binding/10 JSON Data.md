@@ -1,7 +1,7 @@
 Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#dataSource') option. 
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#selectBoxContainer").dxSelectBox({
@@ -11,7 +11,7 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-select-box
@@ -39,7 +39,7 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
 Note that you can also use a JSONP callback parameter supported by <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#selectBoxContainer").dxSelectBox({
@@ -48,7 +48,7 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-select-box ...

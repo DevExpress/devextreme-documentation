@@ -3,7 +3,7 @@ Regardless of the data source you use, the **TagBox** always wraps it in a [Data
 ---
 ##### jQuery
 
-    <!--JavaScript-->var tagBoxDataSource = $("#tagBoxContainer").dxTagBox("getDataSource");
+    <!--JavaScript-->const tagBoxDataSource = $("#tagBoxContainer").dxTagBox("getDataSource");
 
 ##### Angular
 

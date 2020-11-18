@@ -1,7 +1,7 @@
 To execute certain commands when the **List** is scrolled, handle the [scroll](/api-reference/10%20UI%20Widgets/dxList/4%20Events/scroll.md '/Documentation/ApiReference/UI_Widgets/dxList/Events/#scroll') event. If the event handling function is not going to be changed during the lifetime of the widget, assign it to the **onScroll** option when you configure the widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function () {
         $("#listContainer").dxList({
@@ -15,7 +15,7 @@ To execute certain commands when the **List** is scrolled, handle the [scroll](/
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list ...

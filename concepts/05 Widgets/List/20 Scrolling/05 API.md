@@ -34,7 +34,7 @@ The following table gives an overview of scrolling-related methods exposed by th
 The following examples shows how to call these methods.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     var list = $("#listContainer").dxList("instance");
@@ -68,7 +68,7 @@ The following examples shows how to call these methods.
     list.scrollTo(200);
     list.scrollBy(100);
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

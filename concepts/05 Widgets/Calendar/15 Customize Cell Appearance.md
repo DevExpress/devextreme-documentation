@@ -99,9 +99,9 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         $("#calendarContainer").dxCalendar({
             value: new Date(),
             cellTemplate: function (cellData, cellIndex, cellElement) {
-                var italic = $("<span>").css('font-style', 'italic')
+                const italic = $("<span>").css('font-style', 'italic')
                                         .text(cellData.text);
-                var normal = $("<span>").text(cellData.text);
+                const normal = $("<span>").text(cellData.text);
                 return (cellIndex == 0 || cellIndex == 6) ? italic : normal;
             }
         });

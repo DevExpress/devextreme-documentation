@@ -1,7 +1,7 @@
 To execute certain commands when an item changes its position, handle the [itemReordered](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemReordered.md '/Documentation/ApiReference/UI_Widgets/dxList/Events/#itemReordered') event. If the event handling function is not going to be changed during the lifetime of the widget, assign it to the **onItemReordered** option when you configure the widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function () {
         $("#listContainer").dxList({
@@ -16,7 +16,7 @@ To execute certain commands when an item changes its position, handle the [itemR
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list

@@ -4,7 +4,7 @@ You can delete **List** items programmatically in the following ways.
 Pass the index to the [deleteItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/deleteItem(itemIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#deleteItemitemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/'), this method should be given an object with the indexes of the group and the item to be deleted.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         var list = $("#listContainer").dxList("instance");
@@ -13,7 +13,7 @@ Pass the index to the [deleteItem(itemIndex)](/api-reference/10%20UI%20Widgets/d
         // Deletes the item with index 0 from the group with index 2
         list.deleteItem({ group: 2, item: 0 });
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";
@@ -45,7 +45,7 @@ Pass the index to the [deleteItem(itemIndex)](/api-reference/10%20UI%20Widgets/d
 Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_blank">DOM node</a> to the [deleteItem(itemElement)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/deleteItem(itemElement).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#deleteItemitemElement') method.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         var list = $("#listContainer").dxList("instance");
@@ -54,7 +54,7 @@ Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_bla
         // Makes the first item the last
         list.deleteItem(itemNodes[itemNodes.length-1]);
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";

@@ -2,7 +2,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
 
 ---
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -57,7 +57,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
         // ...
     })
 
-#####AngularJS
+##### AngularJS
 
     <!--HTML-->
     <div ng-controller="DemoController">
@@ -108,7 +108,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
 
 [note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
 
-#####Knockout
+##### Knockout
 
     <!--HTML-->
     <div data-bind="dxList: {

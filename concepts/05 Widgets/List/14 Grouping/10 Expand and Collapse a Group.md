@@ -1,7 +1,7 @@
 If the user should be able to collapse or expand a group in the **List**, set the [collapsibleGroups](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/collapsibleGroups.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#collapsibleGroups') option to **true**. In this case, the user can collapse or expand a group with a click on the group header.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->var fruitsVegetables = [{
         key: "Fruits",
@@ -27,7 +27,7 @@ If the user should be able to collapse or expand a group in the **List**, set th
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -71,14 +71,14 @@ If the user should be able to collapse or expand a group in the **List**, set th
 To collapse or expand a specific group programmatically, call the [collapseGroup(groupIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/collapseGroup(groupIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#collapseGroupgroupIndex') or [expandGroup(groupIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/expandGroup(groupIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#expandGroupgroupIndex') method.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     var list = $("#listContainer").dxList("instance");
     list.collapseGroup(0); // collapses the group with index 0
     list.expandGroup(4); // expands the group with index 4
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

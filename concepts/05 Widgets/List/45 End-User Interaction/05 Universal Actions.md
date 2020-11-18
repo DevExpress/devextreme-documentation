@@ -1,7 +1,7 @@
 Universal actions are those actions that raise the same event despite being performed differently on desktop platforms and on touch-enabled devices. For example, both a click and a tap on an item raise the [itemClick](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemClick.md '/Documentation/ApiReference/UI_Widgets/dxList/Events/#itemClick') event. To handle it, assign a function to the [onItemClick](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onItemClick') option, or subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -16,11 +16,11 @@ Universal actions are those actions that raise the same event despite being perf
 <!---->
 
     <!--JavaScript-->
-    var itemClickEventHandler1 = function(e) {
+    const itemClickEventHandler1 = function(e) {
         // First handler of the "itemClick" event
     }
 
-    var itemClickEventHandler2 = function(e) {
+    const itemClickEventHandler2 = function(e) {
         // Second handler of the "itemClick" event
     }
 
@@ -28,7 +28,7 @@ Universal actions are those actions that raise the same event despite being perf
         .on("itemClick", itemClickEventHandler1)
         .on("itemClick", itemClickEventHandler2)
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list ...

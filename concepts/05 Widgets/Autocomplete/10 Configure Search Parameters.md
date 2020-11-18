@@ -4,7 +4,7 @@ The **Autocomplete** can provide suggestions in two different modes: *'contains'
 ##### jQuery
 
     <!--JavaScript-->
-    var autocompleteData = [
+    const autocompleteData = [
         { country: "Afghanistan", capital: "Kabul" },
         { country: "Albania", capital: "Tirana" },
         // ...

@@ -4,7 +4,7 @@ The **List** supports the following touch-screen gestures.
 Swipe can be used to [delete an item](/concepts/05%20Widgets/List/35%20Item%20Deletion/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Item_Deletion/#User_Interaction') or access the commands of the [context menu](/concepts/05%20Widgets/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/Widgets/List/Item_Context_Menu/'). Performing this gesture raises the [itemSwipe](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemSwipe.md '/Documentation/ApiReference/UI_Widgets/dxList/Events/#itemSwipe') event. To handle it, assign a function to the [onItemSwipe](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/onItemSwipe.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onItemSwipe') option, or subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         $(function() {
@@ -29,7 +29,7 @@ Swipe can be used to [delete an item](/concepts/05%20Widgets/List/35%20Item%20De
             .on("itemSwipe", itemSwipeEventHandler1)
             .on("itemSwipe", itemSwipeEventHandler2)
 
-    #####Angular
+    ##### Angular
 
         <!--HTML-->
         <dx-list ...
@@ -60,7 +60,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
     You can also specify the time period the widget should wait before raising the **itemHold** event. For this purpose, change the [itemHoldTimeout](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemHoldTimeout.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemHoldTimeout') option.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         $(function() {
@@ -70,7 +70,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
             });
         });
 
-    #####Angular
+    ##### Angular
 
         <!--HTML-->
         <dx-list ...
@@ -97,7 +97,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
 This gesture refreshes data in the **List**. To enable it, assign **true** to the [pullRefreshEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/pullRefreshEnabled.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pullRefreshEnabled') option.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         $(function() {
@@ -107,7 +107,7 @@ This gesture refreshes data in the **List**. To enable it, assign **true** to th
             });
         });
 
-    #####Angular
+    ##### Angular
 
         <!--HTML-->
         <dx-list ...

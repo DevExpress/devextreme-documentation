@@ -51,7 +51,82 @@ This array should contain one or more values that correspond to the [fieldExpr](
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ...
+            :data-source="dataSource"
+            :groups="groups">
+            <DxResource
+                :data-source="roomsDataSource"
+                field-expr="room"
+            />
+            <DxResource
+                :data-source="teacherDataSource"
+                field-expr="teacher"
+            />
+        </DxScheduler>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxScheduler } from 'devextreme-vue/scheduler';
+
+    export default {
+        components: {
+            DxScheduler
+        },
+        data() {
+            return {
+                dataSource: [],
+                groups: ['room', 'teacher'],
+                roomsDataSource: roomsDataSource,
+                teacherDataSource: teacherDataSource
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Scheduler, { Resource } from 'devextreme-react/scheduler';
+
+    const App = () => {
+        const dataSource = [];
+        const roomsDataSource = [];
+        const teacherDataSource = [];
+        const groups = ['room', 'teacher'];
+
+        return (
+            <Scheduler ...
+                dataSource={dataSource} groups={groups}>
+                <Resource
+                    dataSource={roomsDataSource}
+                    fieldExpr="room"
+                />
+                <Resource
+                    dataSource={teacherDataSource}
+                    fieldExpr="teacher"
+                />
+            </Scheduler>
+        );
+    }
+
+    export default App;
+
+---
+
 ---
 
 To group appointments by resources of one kind, for instance to group appointments that use particular rooms in an office, assign an array with a single element to the **groups** option. To group appointments by several resource kinds, assign an array of elements. Each element will represent a resource by which appointments will be grouped. Each resource will be nested to the resource represented by the previous element in the **groups** array.

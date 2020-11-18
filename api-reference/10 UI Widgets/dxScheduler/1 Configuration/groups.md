@@ -110,7 +110,8 @@ This array should contain one or more values that correspond to the [fieldExpr](
 
         return (
             <Scheduler ...
-                dataSource={dataSource} groups={groups}>
+                dataSource={dataSource}
+                groups={groups}>
                 <Resource
                     dataSource={roomsDataSource}
                     fieldExpr="room"
@@ -124,8 +125,6 @@ This array should contain one or more values that correspond to the [fieldExpr](
     }
 
     export default App;
-
----
 
 ---
 

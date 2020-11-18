@@ -1,11 +1,19 @@
-The **Drawer** is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/') widget to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/').
+The **Drawer** is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/') widget to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/'), as done in this tutorial.
 
-These widgets provide the **onSelectionChanged** function in which we can implement the navigation logic. However, this function is executed only if you enable selection. In the **TreeView**, set the [selectionMode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectionMode') to *"single"* and assign **true** to [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick'); in the **List**, set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*.
-
-In this tutorial, we use the **List**:
+Each list item should navigate to a different view. To implement this, follow the steps below:
 
 ---
 ##### jQuery
+
+1. **Enable item selection**        
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**.
+
+1. **Navigate to a view when selection is changed**
+
+    In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#hide) the **Drawer**.
+
+<!-- -->
 
     <!--tab: index.js-->
     $(function() {
@@ -59,6 +67,20 @@ In this tutorial, we use the **List**:
     <div>Spam</div>
 
 ##### Angular
+
+1. **Configure routing**
+
+    Specify routes and set up the router in the `AppRountingModule`.
+
+1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate)**
+
+    Specify the elements that the template should render and wrap them in an element with the <a href="https://angular.io/api/router/RouterLink" target="_blank">RouterLink</a> directive. In the code below, the *"links"* **itemTemplate** renders an icon and a text.
+
+1. **Enable item selection**
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+
+<!-- -->
 
     <!-- tab: app.component.html -->
     <dx-drawer ... >
@@ -196,43 +218,23 @@ In this tutorial, we use the **List**:
 
 ##### Vue
 
-    <!-- tab: App.vue -->
-    <template>
-        <div>
-            <!-- ... -->
-            <DxDrawer ...
-                template="list">
-                <template #list>
-                    <NavigationList
-                        @navigated="isDrawerOpen = false"
-                    />
-                </template>
-                <div id="view">
-                    <router-view></router-view>
-                </div>
-            </DxDrawer>
-        </div>
-    </template>
+1. **Install <a href="https://router.vuejs.org/" target="_blank">Vue Router</a>**
 
-    <script>
-    // ...
-    import NavigationList from './components/NavigationList.vue';
+        npm install vue-router
 
-    export default {
-        components: {
-            // ...
-            NavigationList
-        },
-        // ...
-    };
-    </script>
+1. **Configure routing**
 
-    <style>
-    /* ... */
-    .dx-list-item-icon {
-        margin-right: 10px;
-    }
-    </style>
+    Specify routes and set up the router in the `main.js` file.
+
+1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate)**
+
+    Specify the elements that the template should render and wrap them in a <a href="https://router.vuejs.org/api/#router-link" target="_blank">`<router-link>`</a>. In the code below, the *"links"* **itemTemplate** renders an icon and a text.
+
+1. **Enable item selection**
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+
+<!-- -->
 
     <!-- tab: NavigationList.vue -->
     <template>
@@ -282,13 +284,60 @@ In this tutorial, we use the **List**:
     }
     </script>
 
-    <!-- tab: router/index.js -->
-    import { createRouter, createWebHistory } from 'vue-router';
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <!-- ... -->
+            <DxDrawer ...
+                template="list">
+                <template #list>
+                    <NavigationList
+                        @navigated="isDrawerOpen = false"
+                    />
+                </template>
+                <div id="view">
+                    <router-view></router-view>
+                </div>
+            </DxDrawer>
+        </div>
+    </template>
 
-    import InboxComponent from "../components/Inbox.vue";
-    import SentMailComponent from "../components/SentMail.vue";
-    import TrashComponent from "../components/Trash.vue";
-    import SpamComponent from "../components/Spam.vue";
+    <script>
+    // ...
+    import NavigationList from './components/NavigationList.vue';
+
+    export default {
+        components: {
+            // ...
+            NavigationList
+        },
+        // ...
+    };
+    </script>
+
+    <style>
+    /* ... */
+    .dx-list-item-icon {
+        margin-right: 10px;
+    }
+    </style>
+
+    <!-- tab: main.js -->
+    import Vue from 'vue';
+    import VueRouter from 'vue-router';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import App from './App.vue';
+    import InboxComponent from "./components/Inbox.vue";
+    import SentMailComponent from "./components/SentMail.vue";
+    import TrashComponent from "./components/Trash.vue";
+    import SpamComponent from "./components/Spam.vue";
+
+    Vue.config.productionTip = false;
+
+    Vue.use(VueRouter);
 
     const routes = [
         { path: "", redirect: "/inbox" },
@@ -298,24 +347,15 @@ In this tutorial, we use the **List**:
         { path: "/spam", component: SpamComponent }
     ];
 
-    const router = createRouter({
-        history: createWebHistory(),
-        routes: routes
+    const router = new VueRouter({
+        mode: "history",
+        routes
     });
 
-    export default router;
-
-    <!-- tab: main.js -->
-    import { createApp } from 'vue'
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import App from './App.vue'
-    import router from './router'
-
-    const app = createApp(App);
-    app.use(router);
-    app.mount('#app');
+    new Vue({
+        render: h => h(App),
+        router
+    }).$mount('#app')
 
     <!-- tab: Inbox.vue -->
     <template>
@@ -354,6 +394,24 @@ In this tutorial, we use the **List**:
     </script>
 
 ##### React
+
+1. **Install <a href="https://reactrouter.com/" target="_blank">React Router</a>**
+
+        npm install react-router-dom --save
+
+1. **Configure routing**
+
+    Wrap the entire `App` component in a `BrowserRouter` and add a <a href="https://reactrouter.com/web/api/Route" target="_blank">`Route`</a> that renders the `NavigationDrawer` component. Define other `Routes` within the `Drawer` markup in the `NavigationDrawer` component.
+
+1. **Define the [itemRender](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemRender) function**
+
+    Specify the elements that the function should render and wrap them in a <a href="https://reactrouter.com/web/api/Link" target="_blank">`Link`</a>. In the code below, the `renderItem` function renders an icon and a text.
+
+1. **Enable item selection**
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+
+<!-- -->
 
     <!-- tab: App.js -->
     // ...
@@ -432,7 +490,7 @@ In this tutorial, we use the **List**:
             this.props.stateHandler({ isDrawerOpen: false });
         }
 
-        renderLink = (data) => {
+        renderItem = (data) => {
             return (
                 <div>
                     <Link to={'/' + data.path}>
@@ -455,7 +513,7 @@ In this tutorial, we use the **List**:
                         width={200} 
                         selectionMode="single"
                         onSelectionChanged={this.closeDrawer}
-                        itemRender={this.renderLink}
+                        itemRender={this.renderItem}
                     />
                 </React.Fragment>
             );
@@ -518,6 +576,16 @@ In this tutorial, we use the **List**:
     export default Trash;
 
 ##### ASP.NET MVC Controls
+
+1. **Enable item selection**        
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**.
+
+1. **Navigate to a view when selection is changed**
+
+    In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#hide) the **Drawer**.
+
+<!-- -->
 
     <!-- tab: _Layout.cshtml -->
     @(Html.DevExtreme().Toolbar()

@@ -13,7 +13,7 @@ Specifies a custom template for group cells (group rows).
 The current group cell's properties.
 
 ##### field(cellInfo.column): dxDataGridColumn
-The settings of the column the cell belongs to.
+The settings of the column to which the cell belongs.
 
 ##### field(cellInfo.columnIndex): Number
 The index of the column the cell belongs to.        
@@ -63,6 +63,103 @@ The group cell's value as it is specified in a data source.
 A template name or container.
 
 ---
+
+Group cells display the following data:
+
+* The caption and the value of the column by which data is grouped
+
+* [Group summary items](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/)
+
+* [groupContinuesMessage](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuesMessage) and [groupContinuedMessage](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuedMessage) (if the group is spread across two or more pages)
+
+The following example shows how to display column value only:
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#dataGridContainer").dxDataGrid({
+            // ...
+            columns: [ 
+                {
+                    dataField: "Country",
+                    groupIndex: 0,
+                    groupCellTemplate: function(element, options) {
+                        element.text(options.value);
+                    }
+                },
+            // ...
+            ]
+        });
+    });
+
+##### Angular
+    
+    <!--HTML-->
+    <dx-data-grid ... >
+        <dxi-column 
+            dataField="Country" 
+            [groupIndex]="0" 
+            groupCellTemplate="groupCellTemplate">
+        </dxi-column>
+
+        <div *dxTemplate="let data of 'groupCellTemplate'">
+            <div>{{data.value}}</div>
+        </div>
+    </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Country"
+                :group-index="0"
+                group-cell-template="groupCellTemplate"
+            />
+
+            <template #groupCellTemplate="{ data }">
+                <div>{{data.value}}</div>
+            </template>
+        </DxDataGrid>
+    </template>
+    <script>
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+
+    const GroupCell = options => <div>{options.value}</div>;
+
+    export default function App() {
+        // ...
+        return (
+            <DataGrid ...>
+                <Column
+                    dataField="Country"
+                    defaultGroupIndex={0}
+                    groupCellRender={GroupCell}
+                />
+            </DataGrid>
+        );
+    }
+
+---
+
 The following details should be taken into account when you use a **groupCellTemplate**:
 
 - When the DataGrid is [exported](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/'), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell') function.
@@ -71,3 +168,4 @@ The following details should be taken into account when you use a **groupCellTem
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+- [calculateGroupValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue)

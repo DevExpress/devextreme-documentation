@@ -12,7 +12,7 @@ A view defines the time interval for which to display appointments. The followin
 
 * [Custom](/Documentation/Guide/Widgets/Scheduler/Views/Customize_Individual_Views/).
 
-Use the views option to specify the following views: "day", "week", "month", and "timelineWeek". We will display the "week" view by default. For this, set the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) option to *"week"*.  
+Use the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) option to specify the following views: "day", "week", "month", and "timelineWeek". We will display the *"week"* view instead of the default *"day"* one. For this, set the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) option to *"week"*.  
 
 ---
 ##### jQuery
@@ -30,7 +30,7 @@ Use the views option to specify the following views: "day", "week", "month", and
 
     <!-- tab: app.component.html --> 
     <dx-scheduler ...
-        [views]='["day", "week", "month", "timelineWeek"]'
+        [views]="['day', 'week', 'month', 'timelineWeek']"
         currentView="week">
     </dx-scheduler> 
 
@@ -52,12 +52,12 @@ Use the views option to specify the following views: "day", "week", "month", and
 
     export default { 
         components: {
-            DxScheduler,
+            DxScheduler
         },
         data() {
             return {
                 // ...
-                views: ["day", "week", "month", "timelineWeek"],
+                views: ["day", "week", "month", "timelineWeek"]
             };
         }
     } 

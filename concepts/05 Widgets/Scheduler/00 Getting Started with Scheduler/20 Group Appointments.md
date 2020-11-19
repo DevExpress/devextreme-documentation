@@ -1,6 +1,6 @@
 We will group appointments by priority. For this, do the following:
 1. Create a resource kind. In this example, this is the `priorities` array. It consists of objects each of which defines a priority category: sets its heading, color, and id. 
-2. Use the [resources](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/) array to add a resource kind: specify the [fieldExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr) and [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource) fields in the resource object. By this moment, the appointments will be painted based on the priority.
+2. Use the [resources](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/) option to add a resource kind: specify the [fieldExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr) and [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource) fields in the resource object. By this moment, the appointments will be painted based on the priority.
 3. Use the [groups](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups) option to specify the field by which appointments are categorized.
 
 ---
@@ -20,6 +20,20 @@ We will group appointments by priority. For this, do the following:
             groups: ["priorityId"],
         });
     });
+
+    <!-- tab: index.js --> 
+    // ...
+    const priorities = [
+        {
+            text: "High priority",
+            id: 1,
+            color: "#cc5c53"
+        }, {
+            text: "Low priority",
+            id: 2,
+            color: "#ff9747"
+        }
+    ];
 
 ##### Angular 
 
@@ -64,11 +78,11 @@ We will group appointments by priority. For this, do the following:
 
     let prioritiesData: Priority[] = [
         {
-            text: "Low Priority",
+            text: "High priority",
             id: 1,
-            color: "#1e90ff"
+            color: "#cc5c53"
         }, {
-            text: "High Priority",
+            text: "Low priority",
             id: 2,
             color: "#ff9747"
         }
@@ -79,7 +93,7 @@ We will group appointments by priority. For this, do the following:
     })
     export class AppService {
         // ...
-        getPriorities() {
+        getPriorities(): Priority[] {
             return prioritiesData;
         }
     }
@@ -180,4 +194,4 @@ We will group appointments by priority. For this, do the following:
 
 ---
 
-If you run this code, you will see the Scheduler grid is split into two columns. Each column displays appointments of either low or high priority.
+If you run this code, you will see the **Scheduler** grid is split into two columns: High priority and Low priority.

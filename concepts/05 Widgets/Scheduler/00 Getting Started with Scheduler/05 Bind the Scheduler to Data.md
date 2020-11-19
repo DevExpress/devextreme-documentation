@@ -10,9 +10,7 @@ The **Scheduler** can load and update data from these data source types:
 
 * Custom data source.
 
-Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) option to specify a data source. In this tutorial, we use a local array. 
-
-The widget supports three types of appointments: one-time, all-day, and recurring. The used data source contains them all. 
+In this tutorial, we will work with a local array. Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) option to specify a data source.
 
 ---
 ##### jQuery
@@ -21,7 +19,7 @@ The widget supports three types of appointments: one-time, all-day, and recurrin
     $(function() { 
         $("#scheduler").dx{WidgetName}({ 
             // ...
-            dataSource: data,
+            dataSource: data
         });
     });
 
@@ -31,13 +29,13 @@ The widget supports three types of appointments: one-time, all-day, and recurrin
             <!-- ... -->
             <script src="data.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="scheduler"></div>
         </body>
     </html>
 
     <!-- tab: data.js -->
-    var data = [
+    const data = [
         {
             text: "Install New Database",
             priorityId: 1,
@@ -107,7 +105,7 @@ The widget supports three types of appointments: one-time, all-day, and recurrin
 
     <!-- tab: app.component.ts --> 
     import { Component } from '@angular/core'; 
-    import {Appointment, AppService} from './app.service';
+    import { Appointment, AppService } from './app.service';
 
     @Component({ 
         selector: 'app-root', 
@@ -222,12 +220,12 @@ The widget supports three types of appointments: one-time, all-day, and recurrin
     export default {
         name: 'Vue: Getting started with Scheduler',
         components: {
-            DxScheduler,
+            DxScheduler
         },
         data() {
             return {
                 // ...
-                dataSource: data,
+                dataSource: data
             };
         }
     }

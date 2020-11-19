@@ -8,7 +8,7 @@
         $("#scheduler").dx{WidgetName}({ 
             height: 600,
             startDayHour: 10,
-            currentDate: new Date(2021, 4, 25),
+            currentDate: new Date(2021, 4, 25)
         });
     });
 
@@ -21,7 +21,7 @@
             <script src="https://cdn3.devexpress.com/jslib/20.2.3/js/dx.all.js"></script>
             <script src="index.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="scheduler"></div>
         </body>
     </html>

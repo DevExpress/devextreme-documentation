@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.CandleStickSeries
 type: dxChartSeriesTypesCandleStickSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

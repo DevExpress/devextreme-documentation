@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.FullStackedBarSeries
 type: dxChartSeriesTypesFullStackedBarSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

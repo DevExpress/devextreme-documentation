@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.ScatterSeries
 type: dxChartSeriesTypesScatterSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

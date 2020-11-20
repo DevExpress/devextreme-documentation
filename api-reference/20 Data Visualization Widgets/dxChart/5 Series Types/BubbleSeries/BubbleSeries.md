@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.BubbleSeries
 type: dxChartSeriesTypesBubbleSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.StepAreaSeries
 type: dxChartSeriesTypesStepAreaSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

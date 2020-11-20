@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.RangeAreaSeries
 type: dxChartSeriesTypesRangeAreaSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

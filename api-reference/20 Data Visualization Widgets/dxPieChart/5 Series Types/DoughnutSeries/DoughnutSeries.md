@@ -1,7 +1,7 @@
 ---
 id: dxPieChartSeriesTypes.DoughnutSeries
 type: Object
-inherits: dxPieChartSeriesTypes.CommonPieChartSeries
+inherits: dxPieChartSeriesTypesCommonPieChartSeries
 ---
 ---
 ##### shortDescription

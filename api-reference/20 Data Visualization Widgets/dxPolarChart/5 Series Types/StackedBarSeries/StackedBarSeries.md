@@ -1,7 +1,7 @@
 ---
 id: dxPolarChartSeriesTypes.stackedbarpolarseries
 type: dxPolarChartSeriesTypesStackedbarpolarseries
-inherits: dxPolarChartSeriesTypes.CommonPolarChartSeries
+inherits: dxPolarChartSeriesTypesCommonPolarChartSeries
 ---
 ---
 ##### shortDescription

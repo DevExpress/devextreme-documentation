@@ -1,7 +1,7 @@
 ---
 id: dxPolarChartSeriesTypes.scatterpolarseries
 type: Object
-inherits: dxPolarChartSeriesTypes.CommonPolarChartSeries
+inherits: dxPolarChartSeriesTypesCommonPolarChartSeries
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxPieChart.Options.commonSeriesSettings
 type: Object
-inherits: dxPieChartSeriesTypes.CommonPieChartSeries
+inherits: dxPieChartSeriesTypesCommonPieChartSeries
 hideDefaults: true
 inheritAll: 
 ---

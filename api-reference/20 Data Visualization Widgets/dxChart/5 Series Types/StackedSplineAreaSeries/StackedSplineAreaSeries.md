@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.StackedSplineAreaSeries
 type: dxChartSeriesTypesStackedSplineAreaSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

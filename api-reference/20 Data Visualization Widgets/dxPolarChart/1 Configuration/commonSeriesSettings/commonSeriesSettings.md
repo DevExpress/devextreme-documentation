@@ -1,7 +1,7 @@
 ---
 id: dxPolarChart.Options.commonSeriesSettings
 type: dxPolarChartCommonSeriesSettings
-inherits: dxPolarChartSeriesTypes.CommonPolarChartSeries
+inherits: dxPolarChartSeriesTypesCommonPolarChartSeries
 hideDefaults: true
 inheritAll: 
 ---

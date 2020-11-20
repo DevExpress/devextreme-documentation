@@ -5,7 +5,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that defines configuration options for chart series.
 
 ---
-<!-- Description goes here -->

@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.commonSeriesSettings
 type: dxChartCommonSeriesSettings
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 hideDefaults: true
 inheritAll: 
 ---

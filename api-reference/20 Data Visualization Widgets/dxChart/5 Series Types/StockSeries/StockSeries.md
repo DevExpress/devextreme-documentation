@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.StockSeries
 type: dxChartSeriesTypesStockSeries
-inherits: dxChartSeriesTypes.CommonSeries
+inherits: dxChartSeriesTypesCommonSeries
 ---
 ---
 ##### shortDescription

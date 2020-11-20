@@ -21,7 +21,7 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.hiddenFields): Array<String>
-An array of hidden fields. 
+An array of hidden fields.
 
 ##### field(e.key): any
 The task key.

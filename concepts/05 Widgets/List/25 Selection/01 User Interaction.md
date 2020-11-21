@@ -1,7 +1,7 @@
 In the **List** widget, selection is disabled by default. To enable it, choose one of selection modes using the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -11,7 +11,7 @@ In the **List** widget, selection is disabled by default. To enable it, choose o
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list ...
@@ -37,7 +37,7 @@ In the **List** widget, selection is disabled by default. To enable it, choose o
 To select a **List** item, an end user simply clicks or taps it. Selected items become shaded. If you want to indicate selected items more manifestly, set the [showSelectionControls](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#showSelectionControls') option to **true**. This setting adds a check box to each item on the **List**. Also, make this setting if you use the *"all"* **selectionMode**. Otherwise, the *"Select All"* check box will be missing.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -47,7 +47,7 @@ To select a **List** item, an end user simply clicks or taps it. Selected items 
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list ...
@@ -73,7 +73,7 @@ To select a **List** item, an end user simply clicks or taps it. Selected items 
 When data in the **List** is [paginated](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/Widgets/List/Paging/'), you can choose whether the *"Select All"* check box will select all items on all pages or items on the currently rendered pages only. To make this choice, specify the [selectAllMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectAllMode') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -83,7 +83,7 @@ When data in the **List** is [paginated](/concepts/05%20Widgets/List/08%20Paging
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list ...

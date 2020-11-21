@@ -1,7 +1,7 @@
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind **SelectBox** to data an OData service provides.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#selectBoxContainer").dxSelectBox({
@@ -14,7 +14,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import ODataStore from "devextreme/data/odata/store";
@@ -45,7 +45,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
 Data kept in the **ODataStore** can be processed in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can filter data.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#selectBoxContainer").dxSelectBox({
@@ -62,7 +62,7 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import "devextreme/data/odata/store";

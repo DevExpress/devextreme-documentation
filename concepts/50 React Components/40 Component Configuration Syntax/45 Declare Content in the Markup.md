@@ -16,12 +16,34 @@ The following is an example with **ScrollView**:
     <!-- tab: App.js -->
     import ScrollView from 'devextreme-react/scroll-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ScrollView>
-                    <div>Some scrollable content</div>
-                </ScrollView>
-            );
-        }
+    function App() {
+        return (
+            <ScrollView>
+                <div>Some scrollable content</div>
+            </ScrollView>
+        );
     }
+
+[important]
+
+These widgets do not support dynamically or conditionally rendered content in their root element. For example, the following code **does not work**:
+
+    <!-- tab: App.js -->
+    <React.Fragment>
+        <Drawer ... >
+            <RouterView></RouterView>
+        </Drawer>
+    </React.Fragment>
+
+Wrap the content in a static element:
+
+    <!-- tab: App.js -->
+    <React.Fragment>
+        <Drawer ... >
+            <div>
+                <RouterView></RouterView>
+            </div>
+        </Drawer>
+    </React.Fragment>
+
+[/important]

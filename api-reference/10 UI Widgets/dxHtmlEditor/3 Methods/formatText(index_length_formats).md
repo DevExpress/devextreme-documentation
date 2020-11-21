@@ -19,13 +19,13 @@ This object should have the following structure:
 
 ---
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     // Makes the first five characters bold and underlined
     $("#htmlEditorContainer").dxHtmlEditor("instance").formatText(0, 5, { "bold": "true", "underline": "true" });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

@@ -22,13 +22,13 @@ A format value.
 [note] The entire line will be formatted even if only a single character from it falls within the given range.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     // Aligns the first line to the right
     $("#htmlEditorContainer").dxHtmlEditor("instance").formatLine(0, 1, "align", "right");
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

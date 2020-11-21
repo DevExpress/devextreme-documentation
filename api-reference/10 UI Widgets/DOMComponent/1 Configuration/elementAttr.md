@@ -9,7 +9,7 @@ Specifies the <a href="http://www.w3schools.com/tags/ref_attributes.asp" target=
 
 ---
 ---
-#####jQuery
+##### jQuery
 
     $(function(){
         $("#{widgetName}Container").dx{WidgetName}({
@@ -21,7 +21,7 @@ Specifies the <a href="http://www.w3schools.com/tags/ref_attributes.asp" target=
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-{widget-name} ...

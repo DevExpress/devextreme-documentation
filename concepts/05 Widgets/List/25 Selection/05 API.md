@@ -4,11 +4,11 @@ You can select an item or cancel its selection in the following ways.
 Add or remove the key from the [selectedItemKeys](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectedItemKeys') collection.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
-        var selectedKeys = list.option("selectedItemKeys");
+        const list = $("#listContainer").dxList("instance");
+        let selectedKeys = list.option("selectedItemKeys");
         // Selects the item with key 5
         selectedKeys.push(5);
         list.option("selectedItemKeys", selectedKeys);
@@ -18,7 +18,7 @@ Add or remove the key from the [selectedItemKeys](/api-reference/10%20UI%20Widge
         });
         list.option("selectedItemKeys", selectedKeys);
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";
@@ -55,7 +55,7 @@ Add or remove the key from the [selectedItemKeys](/api-reference/10%20UI%20Widge
     You can also use the **selectedItemKeys** collection to select items initially.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         $(function() {
@@ -65,7 +65,7 @@ Add or remove the key from the [selectedItemKeys](/api-reference/10%20UI%20Widge
             });
         });
 
-    #####Angular
+    ##### Angular
 
         <!--HTML-->
         <dx-list ...
@@ -94,16 +94,16 @@ Add or remove the key from the [selectedItemKeys](/api-reference/10%20UI%20Widge
 Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectedItems') collection.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
-        var fruits = [
+        const fruits = [
             { fruit: "Apples", count: 10 },
             { fruit: "Oranges", count: 12 },
             { fruit: "Lemons", count: 15 }
         ];
-        var list = $("#listContainer").dxList("instance");
-        var selectedItems = list.option("selectedItems");
+        const list = $("#listContainer").dxList("instance");
+        let selectedItems = list.option("selectedItems");
         // Selects the "Oranges" item
         selectedItems.push(fruits[1]);
         list.option("selectedItems", selectedItems);
@@ -113,7 +113,7 @@ Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20
         });
         list.option("selectedItems", selectedItems);
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";
@@ -154,10 +154,10 @@ Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20
     You can also use the **selectedItems** collection to select items initially.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
-        var fruits = [
+        const fruits = [
             // ...
         ];
         $(function() {
@@ -167,7 +167,7 @@ Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20
             });
         });
 
-    #####Angular
+    ##### Angular
 
         <!--HTML-->
         <dx-list ...
@@ -197,10 +197,10 @@ Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20
 Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#selectItemitemIndex') or [unselectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#unselectItemitemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/'), these methods should be given an object with the indexes of the group and the item.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Selects the item with index 1
         list.selectItem(1);
         // Checks that the item with index 1 is selected; if so, cancels the selection
@@ -210,13 +210,13 @@ Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/d
         // Selects the item with index 3 in the group with index 2
         list.selectItem({ group: 2, item: 3 });
         // Checks that the item with index 3 in the group with index 2 is selected; if so, cancels the selection
-        var itemToUnselect = { group: 2, item: 3 };
+        const itemToUnselect = { group: 2, item: 3 };
         if(list.isItemSelected(itemToUnselect)) {
             list.unselectItem(itemToUnselect);
         }
 
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";
@@ -262,11 +262,11 @@ Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/d
 Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_blank">DOM node</a> to the [selectItem(itemElement)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/selectItem(itemElement).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#selectItemitemElement') or [unselectItem(itemElement)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/unselectItem(itemElement).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#unselectItemitemElement') method.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
-        var itemNodes = $("#listContainer").find(".dx-list-item");
+        const list = $("#listContainer").dxList("instance");
+        const itemNodes = $("#listContainer").find(".dx-list-item");
         // Selects the last item by its DOM node
         list.selectItem(itemNodes[itemNodes.length-1]);
         // Checks that the last item is selected; if so, cancels the selection
@@ -274,7 +274,7 @@ Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_bla
             list.unselectItem(itemNodes[itemNodes.length-1]);
         }
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";
@@ -285,12 +285,12 @@ Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_bla
             // Prior to Angular 8
             // @ViewChild(DxListComponent) list: DxListComponent;
             selectLastItem () {
-                var itemNodes = document.getElementsByClassName("dx-list-item");
+                const itemNodes = document.getElementsByClassName("dx-list-item");
                 // Selects the last item by its DOM node
                 this.list.instance.selectItem(itemNodes[itemNodes.length-1]);
             }
             unselectLastItem () {
-                var itemNodes = document.getElementsByClassName("dx-list-item");
+                const itemNodes = document.getElementsByClassName("dx-list-item");
                 // Checks that the last item is selected; if so, cancels the selection
                 if(this.list.instance.isItemSelected(itemNodes[itemNodes.length-1])) {
                     this.list.instance.unselectItem(itemNodes[itemNodes.length-1]);

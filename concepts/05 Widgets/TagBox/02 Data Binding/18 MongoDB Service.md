@@ -5,7 +5,7 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
 
     <!--JavaScript-->
     $(function() {
-        var serviceUrl = "http://url/to/my/service";
+        const serviceUrl = "http://url/to/my/service";
         $("#tagBoxContainer").dxTagBox({
             dataSource: DevExpress.data.AspNet.createStore({
                 key: "ID",

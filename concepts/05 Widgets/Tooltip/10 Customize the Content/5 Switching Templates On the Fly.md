@@ -234,8 +234,8 @@ If you need to render different templates depending on a specific condition, def
 
     <script type="text/javascript">
         function changeTemplateButton_click() {
-            var tooltip = $("#tooltip").dxTooltip("instance");
-            var currentTemplate = tooltip.option("contentTemplate");
+            const tooltip = $("#tooltip").dxTooltip("instance");
+            const currentTemplate = tooltip.option("contentTemplate");
             tooltip.option("contentTemplate", currentTemplate.selector == "#template1" ? $("#template2") : $("#template1"));
         }
     </script>

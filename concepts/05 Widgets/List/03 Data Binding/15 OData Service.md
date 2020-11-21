@@ -1,7 +1,7 @@
 To bind the **List** to data provided by an OData service, use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
@@ -31,7 +31,7 @@ To bind the **List** to data provided by an OData service, use the [ODataStore](
         margin: 0px 0px 0px 10px;
     }
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";
@@ -76,7 +76,7 @@ To bind the **List** to data provided by an OData service, use the [ODataStore](
 Data kept in the **ODataStore** can be processed in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can group or filter data.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
@@ -97,7 +97,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";

@@ -2,7 +2,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
 
 ---
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -41,7 +41,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
         listDataSource = new DataSource({
             store: fruitsVegetables,
             map: function(groupedItem) {
-                var overallCount = 0;
+                let overallCount = 0;
                 groupedItem.items.forEach(function(item) {
                     overallCount += item.count;
                 })
@@ -57,7 +57,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
         // ...
     })
 
-#####AngularJS
+##### AngularJS
 
     <!--HTML-->
     <div ng-controller="DemoController">
@@ -79,7 +79,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
     <!--JavaScript-->
     angular.module('DemoApp', ['dx'])
         .controller('DemoController', function ($scope) {
-            var fruitsVegetables = [{
+            const fruitsVegetables = [{
                 key: "Fruits",
                 items: [
                     { name: "Apples", count: 10 },
@@ -97,7 +97,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
             $scope.listDataSource = new DevExpress.data.DataSource({
                 store: fruitsVegetables,
                 map: function(groupedItem) {
-                    var overallCount = 0;
+                    let overallCount = 0;
                     groupedItem.items.forEach(function(item) {
                         overallCount += item.count;
                     })
@@ -108,7 +108,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
 
 [note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
 
-#####Knockout
+##### Knockout
 
     <!--HTML-->
     <div data-bind="dxList: {
@@ -125,17 +125,17 @@ By default, group headers contain the text of the **key** field in a bold font. 
         </div>
     </div>
 
-    <!--JavaScript-->var fruitsVegetables = [{
+    <!--JavaScript-->const fruitsVegetables = [{
         // ...
         // omitted for brevity
         // see the AngularJS code
     }];
 
-    var viewModel = {
+    const viewModel = {
         listDataSource: new DevExpress.data.DataSource({
             store: fruitsVegetables,
             map: function(groupedItem) {
-                var overallCount = 0;
+                let overallCount = 0;
                 groupedItem.items.forEach(function(item) {
                     overallCount += item.count;
                 })
@@ -150,7 +150,7 @@ By default, group headers contain the text of the **key** field in a bold font. 
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the [groupTemplate](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#groupTemplate') callback function as shown in the following code.
 
-    <!--JavaScript-->var fruitsVegetables = [{
+    <!--JavaScript-->const fruitsVegetables = [{
         // ...
         // omitted for brevity
         // see the AngularJS code
@@ -161,7 +161,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
             dataSource: new DevExpress.data.DataSource({
                 store: fruitsVegetables,
                 map: function(groupedItem) {
-                    var overallCount = 0;
+                    let overallCount = 0;
                     groupedItem.items.forEach(function(item) {
                         overallCount += item.count;
                     });

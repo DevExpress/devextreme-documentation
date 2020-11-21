@@ -7,8 +7,8 @@ To process a new **RadioGroup** value, you need to handle the value change event
     $(function() {
         $("#radioGroupContainer").dxRadioGroup({
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });

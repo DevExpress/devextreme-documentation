@@ -16,7 +16,7 @@ In the following example, a button validates an editor with an async rule. The *
 
     <!-- tab: index.js -->
     $(function() {
-        var validationGroupName = "myValidationGroup"; 
+        const validationGroupName = "myValidationGroup"; 
 
         $("#textBox").dxTextBox({ ... })
             .dxValidator({

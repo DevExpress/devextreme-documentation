@@ -4,13 +4,13 @@
 ##### jQuery
 
     <!--JavaScript-->$(function() {
-        var startDate = $("#startDate").dxDateBox({
+        const startDate = $("#startDate").dxDateBox({
             value: new Date(),
             onValueChanged: function (e) {
                 endDate.option("min", e.value);
             }
         }).dxDateBox("instance");
-        var endDate = $("#endDate").dxDateBox({
+        const endDate = $("#endDate").dxDateBox({
             value: new Date(),
             onValueChanged: function (e) {
                 startDate.option("max", e.value);
@@ -78,7 +78,7 @@
         value: endValue
     }"></div>
 
-    <!--JavaScript-->var viewModel = {
+    <!--JavaScript-->const viewModel = {
         startDate: ko.observable(new Date()),
         endDate: ko.observable(new Date()),
     };

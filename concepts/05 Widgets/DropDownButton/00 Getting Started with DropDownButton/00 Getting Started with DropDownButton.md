@@ -13,7 +13,7 @@ Refer to the subtopics for details on every configuration step. You can also see
 
     <!-- tab: index.js -->
     $(function() {
-        var actions = [
+        const actions = [
             { id: 1, text: "My profile", icon: "user" },
             { id: 2, text: "Messages", icon: "email" },
             { id: 3, text: "Contacts", icon: "group" },

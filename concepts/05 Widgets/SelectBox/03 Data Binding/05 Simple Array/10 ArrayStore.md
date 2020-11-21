@@ -1,7 +1,7 @@
 Extend a JavaScript array's functionality by placing it into an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). It provides an interface for loading and editing data, and allows you to handle data-related events.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#selectBoxContainer").dxSelectBox({
@@ -16,7 +16,7 @@ Extend a JavaScript array's functionality by placing it into an [ArrayStore](/ap
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import ArrayStore from "devextreme/data/array_store";
@@ -51,10 +51,10 @@ Extend a JavaScript array's functionality by placing it into an [ArrayStore](/ap
 Data kept in the **ArrayStore** can be processed in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can sort data.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var products = [
+    const products = [
         { name: "HD Video Player", price: 100 },
         { name: "SuperHD Video Player", price: 420 },
         { name: "SuperPlasma 50", price: 1500 },
@@ -72,7 +72,7 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import DataSource from "devextreme/data/data_source";

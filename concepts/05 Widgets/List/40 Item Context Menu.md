@@ -1,9 +1,9 @@
 If you want to offer the user a set of commands related to a **List** item, you can do so with the context menu. To specify the commands, use the [menuItems](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/menuItems '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/menuItems/') array. Each object in this array configures a single command.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { fruit: "Apples", count: 10 },
         { fruit: "Oranges", count: 12 },
         { fruit: "Lemons", count: 15 }
@@ -35,7 +35,7 @@ If you want to offer the user a set of commands related to a **List** item, you 
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -95,7 +95,7 @@ The user swipes an item to access the commands. If the **menuItems** array conta
 <!---->
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -105,7 +105,7 @@ The user swipes an item to access the commands. If the **menuItems** array conta
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list

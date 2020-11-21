@@ -16,7 +16,7 @@ If you need to render different templates depending on a specific condition, def
 
     <!--JavaScript-->
     $(function() {
-        var popup = $("#popupContainer").dxPopup({
+        const popup = $("#popupContainer").dxPopup({
             title: "Popup Title",
             visible: true,
             contentTemplate: "template1"
@@ -25,7 +25,7 @@ If you need to render different templates depending on a specific condition, def
         $("#changeTemplateButton").dxButton({
             text: "Change the Template", 
             onClick: function (e) {
-                var currentTemplate = popup.option("contentTemplate");
+                const currentTemplate = popup.option("contentTemplate");
                 popup.option("contentTemplate", currentTemplate == "template1" ? "template2" : "template1");
                 popup.show();
             } 
@@ -212,8 +212,8 @@ If you need to render different templates depending on a specific condition, def
 
     <script type="text/javascript">
         function changeTemplateButton_click() {
-            var popup = $("#popup").dxPopup("instance");
-            var currentTemplate = popup.option("contentTemplate");
+            const popup = $("#popup").dxPopup("instance");
+            const currentTemplate = popup.option("contentTemplate");
             popup.option("contentTemplate", currentTemplate.selector == "#template1" ? $("#template2") : $("#template1"));
             popup.show();
         }

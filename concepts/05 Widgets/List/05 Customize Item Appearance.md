@@ -1,9 +1,9 @@
 For a minor customization of **List** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/') in item data objects. For example, the following code generates three items: each item has a badge, the second is disabled and the third is hidden.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { text: "Apples", badge: 10 },
         { text: "Oranges", badge: 12, disabled: true },
         { text: "Lemons", badge: 15, visible: false }
@@ -15,7 +15,7 @@ For a minor customization of **List** items, you can define [specific fields](/a
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";
@@ -46,7 +46,7 @@ If you need a more flexible solution, define a custom template for widget items.
 
 ---
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -78,7 +78,7 @@ If you need a more flexible solution, define a custom template for widget items.
         // ...
     })
 
-#####AngularJS
+##### AngularJS
 
     <!--HTML-->
     <div ng-controller="DemoController">
@@ -107,7 +107,7 @@ If you need a more flexible solution, define a custom template for widget items.
 
 [note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
 
-#####Knockout
+##### Knockout
 
     <!--HTML-->
     <div data-bind="dxList: {
@@ -122,7 +122,7 @@ If you need a more flexible solution, define a custom template for widget items.
 
 
     <!--JavaScript-->
-    var viewModel = {
+    const viewModel = {
         fruits: [
             { name: "Apples", count: 10 },
             { name: "Oranges", count: 12 },
@@ -139,7 +139,7 @@ If you need a more flexible solution, define a custom template for widget items.
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
-    var fruits = [
+    const fruits = [
         { name: "Apples", count: 10 },
         { name: "Oranges", count: 12 },
         { name: "Lemons", count: 15 },
@@ -167,7 +167,7 @@ You can also customize an individual **List** item. For this purpose, declare a 
     </script>
 
     <!--JavaScript-->
-    var fruits = [
+    const fruits = [
         { name: "Apples", count: 10 },
         { name: "Oranges", count: 12, template: $("#individualTemplate") },
         // ...

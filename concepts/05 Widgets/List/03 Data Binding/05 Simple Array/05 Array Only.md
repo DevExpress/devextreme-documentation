@@ -1,9 +1,9 @@
 To bind the **List** to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#dataSource') option. The array may contain primitive values...
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var fruits = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
+    <!--JavaScript-->const fruits = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
 
     $(function() {
         $("#listContainer").dxList({
@@ -11,7 +11,7 @@ To bind the **List** to an array, pass this array to the [dataSource](/api-refer
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";
@@ -37,9 +37,9 @@ To bind the **List** to an array, pass this array to the [dataSource](/api-refer
 ... or objects.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { fruit: "Apples", count: 10 },
         { fruit: "Oranges", count: 12 },
         { fruit: "Lemons", count: 15 },
@@ -59,7 +59,7 @@ To bind the **List** to an array, pass this array to the [dataSource](/api-refer
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list>
@@ -94,9 +94,9 @@ To bind the **List** to an array, pass this array to the [dataSource](/api-refer
 If objects in an array need to be processed (sorted, filtered, grouped, etc.), you can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'). For example, in the following code, a Query sorts objects in the `fruits` array by the `count` field in descending order.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { fruit: "Apples", count: 10 },
         // ...
     ];
@@ -115,7 +115,7 @@ If objects in an array need to be processed (sorted, filtered, grouped, etc.), y
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";

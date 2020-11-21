@@ -165,7 +165,7 @@ When this option is set to **true**, the following applies:
                 }],
                 onOptionChanged: function(e) {
                     if(e.name == "readOnly") {
-                        var myButton = e.component.getButton("myCustomButton");
+                        const myButton = e.component.getButton("myCustomButton");
                         myButton.option("visible", !e.value); // Hide the button when readOnly: true
                     }
                 }

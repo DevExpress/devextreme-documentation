@@ -15,10 +15,10 @@ A format value.
 If no content is selected, the format applies to the character typed next.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var htmlEditorInstance = $("#htmlEditorContainer").dxHtmlEditor("instance");
+    const htmlEditorInstance = $("#htmlEditorContainer").dxHtmlEditor("instance");
     // Makes text bold
     htmlEditorInstance.format("bold", true); 
     // Inserts a link
@@ -28,7 +28,7 @@ If no content is selected, the format applies to the character typed next.
         title: "Go to Google" 
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

@@ -9,7 +9,7 @@ Specifies the attributes to be passed on to the underlying HTML element.
 
 ---
 ---
-#####jQuery
+##### jQuery
 
     $(function(){
         $("#{widgetName}Container").dx{WidgetName}({
@@ -20,7 +20,7 @@ Specifies the attributes to be passed on to the underlying HTML element.
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-{widget-name} ...
@@ -41,7 +41,7 @@ Specifies the attributes to be passed on to the underlying HTML element.
         // ...
     })
 
-#####ASP.NET MVC Controls
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->@(Html.DevExtreme().{WidgetName}()
         .InputAttr("id", "inputId")

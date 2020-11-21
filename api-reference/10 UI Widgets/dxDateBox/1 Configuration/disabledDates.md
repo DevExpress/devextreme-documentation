@@ -152,10 +152,10 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
         $("#dateBoxContainer").dxDateBox({
             // ...
             disabledDates: function(args) {
-                var dayOfWeek = args.date.getDay(),
-                    month = args.date.getMonth(),
-                    isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                    isMarch = (args.view === "year" || args.view === "month") && month === 2;
+                const dayOfWeek = args.date.getDay();
+                const month = args.date.getMonth();
+                const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+                const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
                 return isWeekend || isMarch;
             }
@@ -179,10 +179,10 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
     })
     export class AppComponent {
         disableDates(args) {
-            var dayOfWeek = args.date.getDay(),
-                month = args.date.getMonth(),
-                isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                isMarch = (args.view === "year" || args.view === "month") && month === 2;
+            const dayOfWeek = args.date.getDay();
+            const month = args.date.getMonth();
+            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+            const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
             return isWeekend || isMarch;
         }
@@ -229,10 +229,10 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
         },
         methods: {
             disableDates(args) {
-                var dayOfWeek = args.date.getDay(),
-                    month = args.date.getMonth(),
-                    isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                    isMarch = (args.view === "year" || args.view === "month") && month === 2;
+                const dayOfWeek = args.date.getDay();
+                const month = args.date.getMonth();
+                const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+                const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
                 return isWeekend || isMarch;
             }
@@ -252,10 +252,10 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
     class App extends React.Component {
         disableDates(args) {
-            var dayOfWeek = args.date.getDay(),
-                month = args.date.getMonth(),
-                isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                isMarch = (args.view === "year" || args.view === "month") && month === 2;
+            const dayOfWeek = args.date.getDay();
+            const month = args.date.getMonth();
+            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+            const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
             return isWeekend || isMarch;
         }

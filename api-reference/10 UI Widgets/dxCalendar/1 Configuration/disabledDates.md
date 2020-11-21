@@ -154,10 +154,10 @@ This option accepts an array of dates...
         $("#calendarContainer").dxCalendar({
             // ...
             disabledDates: function(args) {
-                var dayOfWeek = args.date.getDay(),
-                    month = args.date.getMonth(),
-                    isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                    isMarch = (args.view === "year" || args.view === "month") && month === 2;
+                const dayOfWeek = args.date.getDay();
+                const month = args.date.getMonth();
+                const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+                const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
                 return isWeekend || isMarch;
             }
@@ -181,10 +181,10 @@ This option accepts an array of dates...
     })
     export class AppComponent {
         disableDates(args) {
-            var dayOfWeek = args.date.getDay(),
-                month = args.date.getMonth(),
-                isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                isMarch = (args.view === "year" || args.view === "month") && month === 2;
+            const dayOfWeek = args.date.getDay();
+            const month = args.date.getMonth();
+            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+            const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
             return isWeekend || isMarch;
         }
@@ -231,10 +231,10 @@ This option accepts an array of dates...
         },
         methods: {
             disableDates(args) {
-                var dayOfWeek = args.date.getDay(),
-                    month = args.date.getMonth(),
-                    isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                    isMarch = (args.view === "year" || args.view === "month") && month === 2;
+                const dayOfWeek = args.date.getDay();
+                const month = args.date.getMonth();
+                const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+                const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
                 return isWeekend || isMarch;
             }
@@ -254,10 +254,10 @@ This option accepts an array of dates...
 
     class App extends React.Component {
         disableDates(args) {
-            var dayOfWeek = args.date.getDay(),
-                month = args.date.getMonth(),
-                isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 ),
-                isMarch = (args.view === "year" || args.view === "month") && month === 2;
+            const dayOfWeek = args.date.getDay();
+            const month = args.date.getMonth();
+            const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
+            const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
             return isWeekend || isMarch;
         }

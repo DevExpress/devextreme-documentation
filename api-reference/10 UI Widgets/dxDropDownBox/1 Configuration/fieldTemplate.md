@@ -21,14 +21,14 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
         $("#dropDownBoxContainer").dxDropDownBox({
             // ...
             fieldTemplate: function (value, fieldElement) {
-                var result = $("<div class='custom-item'>");
+                const result = $("<div class='custom-item'>");
                 result
                     .dxTextBox({
                         value: value,
@@ -44,7 +44,7 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         font-size: 16px;
     }
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-drop-down-box ...
@@ -64,7 +64,7 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         font-size: 16px;
     }
 
-#####AngularJS
+##### AngularJS
 
     <!--HTML-->
     <div dx-drop-down-box="{
@@ -83,7 +83,7 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         font-size: 16px;
     }
 
-#####Knockout
+##### Knockout
 
     <!--HTML-->
     <div data-bind="dxDropDownBox: {

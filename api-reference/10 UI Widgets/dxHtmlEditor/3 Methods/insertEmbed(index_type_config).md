@@ -16,7 +16,7 @@ An embedded format's [value](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Do
 
 ---
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     // Adds an image at the beginning of the content
@@ -26,7 +26,7 @@ An embedded format's [value](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Do
         width: "100px"
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

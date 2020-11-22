@@ -18,7 +18,7 @@ Use the returned button instance to call the [**Button** widget's methods](/api-
 ##### jQuery
 
     <!-- tab: index.js -->
-    var myCustomButton = $("#{widgetName}Container").dx{WidgetName}("getButton", "myCustomButton");
+    const myCustomButton = $("#{widgetName}Container").dx{WidgetName}("getButton", "myCustomButton");
     myCustomButton.focus();
 
 ##### Angular

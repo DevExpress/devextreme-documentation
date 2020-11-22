@@ -1,7 +1,7 @@
 To allow the user to delete items from the **List**, set the [allowItemDeleting](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/allowItemDeleting.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#allowItemDeleting') option to **true**. The mode in which the user deletes items depends on the value of the **itemDeleteMode** option. There are several modes that are enumerated in the code below. To spot the difference between them and choose the most suitable one, refer to the example that completes the [option's description](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/itemDeleteMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemDeleteMode') in the API reference.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -12,7 +12,7 @@ To allow the user to delete items from the **List**, set the [allowItemDeleting]
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list ...

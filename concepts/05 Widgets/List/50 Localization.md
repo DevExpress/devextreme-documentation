@@ -1,7 +1,7 @@
 Static messages for any DevExtreme widget are defined in a locale-specific dictionary as key-value pairs. To localize the **List** widget, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->DevExpress.localization.loadMessages({
         // Replace "en" with the target locale of the dictionary
@@ -25,7 +25,7 @@ Static messages for any DevExtreme widget are defined in a locale-specific dicti
     // Sets the locale
     DevExpress.localization.locale(navigator.language);
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { locale, loadMessages } from "devextreme/localization";

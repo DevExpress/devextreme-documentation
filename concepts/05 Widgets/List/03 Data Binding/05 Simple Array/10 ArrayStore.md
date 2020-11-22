@@ -1,7 +1,7 @@
 If you want to extend the functionality of a JavaScript array, place it into an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). It provides an interface for loading and editing data, and allows you to handle data-related events.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
@@ -20,7 +20,7 @@ If you want to extend the functionality of a JavaScript array, place it into an 
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";
@@ -56,9 +56,9 @@ If you want to extend the functionality of a JavaScript array, place it into an 
 Data kept in an **ArrayStore** can be processed in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). Its purpose is similar to that of the [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'), but **DataSource** provides wider capabilities. For example, the **DataSource** can map objects from the array that underlies the **ArrayStore**, as shown in the following code:
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!--JavaScript-->const fruits = [
         { fruit: "Apples", count: 10 },
         // ...
     ];
@@ -77,7 +77,7 @@ Data kept in an **ArrayStore** can be processed in the [DataSource](/api-referen
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";

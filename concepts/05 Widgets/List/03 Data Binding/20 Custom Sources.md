@@ -45,14 +45,14 @@ If the server has not received the **group** parameter, the resulting object sho
 If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35%20Item%20Deletion '/Documentation/Guide/Widgets/List/Item_Deletion/'), the **CustomStore** must implement the [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') operation as well. Below is a generalized configuration of the **CustomStore** for the **List** widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
             dataSource: new DevExpress.data.DataSource({
                 key: "ID",
                 load: function(loadOptions) {
-                    var d = $.Deferred(),
+                    const d = $.Deferred(),
                         params = {};
                     [
                         "skip",     
@@ -90,7 +90,7 @@ If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35
         return value !== undefined && value !== null && value !== "";
     }
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., Inject } from "@angular/core";
@@ -157,7 +157,7 @@ If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35
         [dataSource]="listDataSource">
     </dx-list>
 
-#####Vue
+##### Vue
 
     <template>
         <DxList ... 
@@ -227,7 +227,7 @@ If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35
     }
     </script>
 
-#####React
+##### React
 
     import React from "react";
     import List from "devextreme-react/list";

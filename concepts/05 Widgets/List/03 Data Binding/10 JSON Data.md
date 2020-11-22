@@ -1,7 +1,7 @@
 To bind the **List** to data in a JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#dataSource') option.  
     
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
@@ -19,7 +19,7 @@ To bind the **List** to data in a JSON format, assign the data's URL to the [dat
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -49,7 +49,7 @@ To bind the **List** to data in a JSON format, assign the data's URL to the [dat
 Note that you can also use a JSONP callback parameter supported by <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
@@ -58,7 +58,7 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list

@@ -1,7 +1,7 @@
 Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'): [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') enables paging; [pageSize](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pageSize.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize') specifies how many data items a page should contain.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
@@ -14,7 +14,7 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxListModule } from "devextreme-angular";
@@ -40,7 +40,7 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
         [dataSource]="listDataSource">
     </dx-list>
 
-#####ASP.NET MVC Controls
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().List()
@@ -59,7 +59,7 @@ Paging options are set in the [DataSource](/api-reference/30%20Data%20Layer/Data
 The next page can be rendered when a user scrolls the **List** down to the bottom, or after a user clicks the **More** button. Set the [pageLoadMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pageLoadMode') option to specify the mode:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#listContainer").dxList({
@@ -68,7 +68,7 @@ The next page can be rendered when a user scrolls the **List** down to the botto
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list ...

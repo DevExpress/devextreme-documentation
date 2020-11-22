@@ -12,14 +12,14 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
 
     <!--JavaScript-->
     $(function() {
-        var loadIndicator =  $("#loadIndicatorContainer").dxLoadIndicator({
+        const loadIndicator =  $("#loadIndicatorContainer").dxLoadIndicator({
             visible: false      
         }).dxLoadIndicator("instance");
         
         $("#buttonContainer").dxButton({
             text: "Toggle the LoadIndicator", 
             onClick: function () {
-                var isLoadIndicatorVisible = loadIndicator.option("visible");
+                const isLoadIndicatorVisible = loadIndicator.option("visible");
                 loadIndicator.option("visible", !isLoadIndicatorVisible);
             } 
         });
@@ -146,8 +146,8 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
         .Text("Toggle the LoadIndicator")
         .OnClick(@<text>
             function () {
-                var loadIndicator = $("#loadIndicator").dxLoadIndicator("instance");
-                var isLoadIndicatorVisible = loadIndicator.option("visible");
+                const loadIndicator = $("#loadIndicator").dxLoadIndicator("instance");
+                const isLoadIndicatorVisible = loadIndicator.option("visible");
                 loadIndicator.option("visible", !isLoadIndicatorVisible);
             } 
         </text>)
@@ -167,8 +167,8 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
 
     <script>
         function button_click() {
-            var loadIndicator = $("#loadIndicator").dxLoadIndicator("instance");
-            var isLoadIndicatorVisible = loadIndicator.option("visible");
+            const loadIndicator = $("#loadIndicator").dxLoadIndicator("instance");
+            const isLoadIndicatorVisible = loadIndicator.option("visible");
             loadIndicator.option("visible", !isLoadIndicatorVisible);
         }
     </script>

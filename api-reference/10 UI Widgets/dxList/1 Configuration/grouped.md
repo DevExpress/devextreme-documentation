@@ -10,7 +10,7 @@ Specifies whether data items should be grouped.
 ---
 When this option is **true**, make sure that all data source objects have the following structure:
 
-    <!--JavaScript-->var dataSource = [{
+    <!--JavaScript-->const dataSource = [{
         key: "Group 1", // Group caption 
         items: [ // Items in the group
             { ... },

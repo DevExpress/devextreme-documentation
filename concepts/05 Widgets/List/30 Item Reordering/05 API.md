@@ -4,10 +4,10 @@ You can reorder **List** items from code in the following ways.
 Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/reorderItem(itemIndex_toItemIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#reorderItemitemIndex_toItemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/'), this method should be given two objects with the indexes of the groups and the items.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Places the item with index 1 after the item with index 5 
         list.reorderItem(1, 5);
         // Takes the item with index 0 from the group with index 2
@@ -18,7 +18,7 @@ Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20
         );
 
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";
@@ -55,16 +55,16 @@ Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20
 Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_blank">DOM node</a> to the [reorderItem(itemElement, toItemElement)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/reorderItem(itemElement_toItemElement).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#reorderItemitemElement_toItemElement') method.
 
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
-        var list = $("#listContainer").dxList("instance");
+        const list = $("#listContainer").dxList("instance");
         // Finds all List items
-        var itemNodes = $("#listContainer").find(".dx-list-item");
+        const itemNodes = $("#listContainer").find(".dx-list-item");
         // Makes the first item the last
         list.reorderItem(itemNodes[0], itemNodes[itemNodes.length-1]);
 
-    #####Angular
+    ##### Angular
 
         <!--TypeScript-->
         import { ..., ViewChild } from "@angular/core";

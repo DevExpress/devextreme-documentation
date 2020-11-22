@@ -7,8 +7,8 @@ To process a new **Switch** value, you need to handle the value change event. If
     $(function() {
         $("#switchContainer").dxSwitch({
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
@@ -136,15 +136,15 @@ To process a new **Switch** value, you need to handle the value change event. If
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxSwitch/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
-    var valueChangedHandler1 = function (e) {
-        var previousValue = e.previousValue;
-        var newValue = e.value;
+    const valueChangedHandler1 = function (e) {
+        const previousValue = e.previousValue;
+        const newValue = e.value;
         // First handler of the "valueChanged" event
     };
 
-    var valueChangedHandler2 = function (e) {
-        var previousValue = e.previousValue;
-        var newValue = e.value;
+    const valueChangedHandler2 = function (e) {
+        const previousValue = e.previousValue;
+        const newValue = e.value;
         // Second handler of the "valueChanged" event
     };
 

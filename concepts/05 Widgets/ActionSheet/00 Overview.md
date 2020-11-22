@@ -15,7 +15,7 @@ The following code adds a simple **ActionSheet** to your page. The widget is sho
 
     <!--JavaScript-->
     // Shows a message with a button name
-    var processClick = function (name) {
+    const processClick = function (name) {
         DevExpress.ui.notify(name + " clicked", "success", 3000);
     };
 

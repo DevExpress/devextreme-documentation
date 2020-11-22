@@ -1,11 +1,11 @@
 Regardless of the data source you use, the **SelectBox** always wraps it in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). Call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Methods/#getDataSource') method to get the instance of the **DataSource**.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var selectBoxDataSource = $("#selectBoxContainer").dxSelectBox("getDataSource");
+    <!--JavaScript-->const selectBoxDataSource = $("#selectBoxContainer").dxSelectBox("getDataSource");
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxSelectBoxModule, DxSelectBoxComponent } from "devextreme-angular";

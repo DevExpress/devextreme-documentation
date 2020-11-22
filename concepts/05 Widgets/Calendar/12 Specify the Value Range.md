@@ -106,8 +106,8 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
         $("#calendarContainer").dxCalendar({
             value: new Date(),
             disabledDates: function (data) {
-                var day = data.date.getDay();
-                var isWeekend = (day === 0 || day === 6);
+                const day = data.date.getDay();
+                const isWeekend = (day === 0 || day === 6);
                 return data.view === "month" && isWeekend;
             })
         });

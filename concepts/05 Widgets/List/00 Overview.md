@@ -7,11 +7,11 @@ The **List** is a widget that represents a collection of items in a scrollable l
 The following code adds a simple **List** to your page. The simplest configuration of the widget requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#dataSource') to be specified.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--HTML--><div id="listContainer"></div>
 
-    <!--JavaScript-->var fruits = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
+    <!--JavaScript-->const fruits = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
 
     $(function() {
         $("#listContainer").dxList({
@@ -19,7 +19,7 @@ The following code adds a simple **List** to your page. The simplest configurati
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list

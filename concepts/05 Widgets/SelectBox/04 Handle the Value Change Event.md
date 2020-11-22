@@ -1,10 +1,10 @@
 By default, the value of the **SelectBox** is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#valueChangeEvent') option.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var selectBoxData = [
+    const selectBoxData = [
         { id: 1, country: "Afghanistan" },
         { id: 2, country: "Albania" },
         // ...
@@ -19,7 +19,7 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-select-box
@@ -117,20 +117,20 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
 To process a new **SelectBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged') option when you configure the widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
         $("#selectBoxContainer").dxSelectBox({
             onValueChanged: function (e) {
-                var previousValue = e.previousValue;
-                var newValue = e.value;
+                const previousValue = e.previousValue;
+                const newValue = e.value;
                 // Event handling commands go here
             }
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-select-box ...
@@ -218,15 +218,15 @@ To process a new **SelectBox** value, you need to handle the value change event.
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var valueChangedHandler1 = function (e) {
-        var previousValue = e.previousValue;
-        var newValue = e.value;
+    const valueChangedHandler1 = function (e) {
+        const previousValue = e.previousValue;
+        const newValue = e.value;
         // First handler of the "valueChanged" event
     };
 
-    var valueChangedHandler2 = function (e) {
-        var previousValue = e.previousValue;
-        var newValue = e.value;
+    const valueChangedHandler2 = function (e) {
+        const previousValue = e.previousValue;
+        const newValue = e.value;
         // Second handler of the "valueChanged" event
     };
 

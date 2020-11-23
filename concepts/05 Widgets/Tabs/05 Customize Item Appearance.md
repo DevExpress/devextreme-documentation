@@ -323,7 +323,7 @@ You can also customize individual tabs. In Angular, Vue, and React, declare them
                     return $("<span>").text("User");
                 }
             }, { 
-                template: $("#individualTabTemplate");
+                template: $("#individualTabTemplate")
             }]
         });
     });

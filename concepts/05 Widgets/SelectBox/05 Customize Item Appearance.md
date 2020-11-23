@@ -278,6 +278,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
 
 You can also customize an individual **SelectBox** item. In Angular, Vue, and React, declare them using the [dxItem](/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/) component. When using jQuery, you can declare the tabs as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/items/#template') option or assign a customization function straight to this option.
 
+---
 ##### Angular
 
     <!--HTML-->
@@ -381,6 +382,8 @@ You can also customize an individual **SelectBox** item. In Angular, Vue, and Re
             }]
         });
     });
+
+---
 
 Using similar techniques, you can customize the input field of the **SelectBox**. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#fieldTemplate') option. Note that the input field must contain the [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/') widget.
 

@@ -4,7 +4,7 @@ type: String | function(rowData)
 ---
 ---
 ##### shortDescription
-A field name by which to group cells or a function that returns a field name or a value to perform this operation. This value is also used to sort **DataGrid**'s groups.
+A field name or a function that returns a field name or value by which to group cells. This value is also used to sort **DataGrid**'s groups.
 
 ##### param(rowData): Object
 The current row's data.
@@ -14,14 +14,12 @@ The calculated value to be used for grouping and group sorting.
 
 ---
 
-If you want to use modified values of a grouping column, assign
-
-By default, [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/Widgets/DataGrid/Grouping/') is conducted using the exact values that the grouping column contains. If you want to use calculated values, implement the **calculateGroupValue** function. As a consequence, group cells' headers may display extra or missing information. To remove or add it, implement the [groupCellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellTemplate) option ([groupCellRender](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellRender) in React). The example below displays the *"California"* group always on top regardless of the sort order. For this, **calculateGroupValue** and **groupCellTemplate** are used:
+The **DataGrid** groups its columns by the grouping column. If you want to use custom grouping, change values of this column in the **calculateGroupValue** function. As a result, group cells' headers will display the changed values that may include extra information. To remove it, specify a custom template in the [groupCellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellTemplate) option ([groupCellRender](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellRender) in React). The example below uses this concept to display the *"California"* group always on top regardless of the sort order:
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!--index.js-->
     $(function() {
         $("#dataGridContainer").dxDataGrid({
             // ...
@@ -46,7 +44,7 @@ By default, [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documenta
 
 ##### Angular
     
-    <!--HTML-->
+    <!--app.component.html-->
     <dx-data-grid ...>
         <!-- ... -->
         <dxi-column dataField="City"></dxi-column>
@@ -64,7 +62,7 @@ By default, [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documenta
         </div>
     </dx-data-grid>
 
-    <!--TypeScript-->
+    <!--app.component.ts-->
     import { DxDataGridModule } from "devextreme-angular";
     // ...
     export class AppComponent {

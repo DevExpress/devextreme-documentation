@@ -1,7 +1,7 @@
 A user can select existing values and add new values to the **SelectBox**. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#acceptCustomValue') option. Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onCustomItemCreating') handler to create a new data source entry.
 
 ---
-##### jQueryp
+##### jQuery
 
     <!--HTML-->
     <div id="selectBoxContainer"></div>

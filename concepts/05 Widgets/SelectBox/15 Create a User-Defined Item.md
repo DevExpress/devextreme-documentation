@@ -22,7 +22,8 @@ A user can select existing values and add new values to the **SelectBox**. To en
             acceptCustomValue: true,
             onCustomItemCreating: function(e) {
                 // Generates a new 'id'
-                const nextId = Math.max.apply(Math, selectBoxData.items().map(function(c) { return c.id; })) + 1;
+                let nextId;
+                selectBoxData.store().totalCount().done(count => {nextId = count + 1}); 
                 // Creates a new entry
                 e.customItem = { id: nextId, firstName: e.text };
                 // Adds the entry to the data source
@@ -49,7 +50,8 @@ A user can select existing values and add new values to the **SelectBox**. To en
         });
         onCustomItemCreating (e) {
             // Generates a new 'id'
-            const nextId = Math.max.apply(Math, this.selectBoxData.items().map(c => c.id)) + 1;
+            let nextId;
+            selectBoxData.store().totalCount().done(count => {nextId = count + 1});
             // Creates a new entry
             e.customItem = { id: nextId, firstName: e.text };
             // Adds the entry to the data source
@@ -116,7 +118,8 @@ A user can select existing values and add new values to the **SelectBox**. To en
         methods: {
             customItemCreating(e) {
                 // Generates a new 'id'
-                const nextId = Math.max.apply(Math, selectBoxData.items().map(c => c.id)) + 1;
+                let nextId;
+                selectBoxData.store().totalCount().done(count => {nextId = count + 1});
                 // Creates a new entry
                 e.customItem = { id: nextId, firstName: e.text };
                 // Adds the entry to the data source
@@ -150,7 +153,8 @@ A user can select existing values and add new values to the **SelectBox**. To en
     class App extends React.Component {
         customItemCreating(e) {
             // Generates a new 'id'
-            const nextId = Math.max.apply(Math, selectBoxData.items().map(c => c.id)) + 1;
+            let nextId;
+            selectBoxData.store().totalCount().done(count => {nextId = count + 1});
             // Creates a new entry
             e.customItem = { id: nextId, firstName: e.text };
             // Adds the entry to the data source

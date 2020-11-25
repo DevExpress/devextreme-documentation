@@ -2,7 +2,6 @@
 id: dxMenu.Options.onSubmenuHiding
 type: function(e)
 default: null
-EventForAction: dxMenu.submenuHiding
 ---
 ---
 ##### shortDescription

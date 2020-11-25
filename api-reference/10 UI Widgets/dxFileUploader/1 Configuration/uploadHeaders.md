@@ -1,6 +1,6 @@
 ---
 id: dxFileUploader.Options.uploadHeaders
-type: Object
+type: any
 default: {}
 ---
 ---

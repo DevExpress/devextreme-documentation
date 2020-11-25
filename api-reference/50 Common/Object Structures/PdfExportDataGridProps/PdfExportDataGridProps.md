@@ -1,6 +1,5 @@
 ---
 id: PdfExportDataGridProps
-type: Object
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onKeyDown
 type: function(e)
 default: null
-EventForAction: dxTextEditor.keyDown
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxSortable.Options.onDragMove
 type: function(e)
 default: null
-EventForAction: dxSortable.dragMove
 ---
 ---
 ##### shortDescription

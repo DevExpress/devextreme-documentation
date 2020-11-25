@@ -2,7 +2,6 @@
 id: Guid
 module: core/guid
 export: default
-type: Object
 ---
 ---
 ##### shortDescription

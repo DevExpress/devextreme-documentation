@@ -2,7 +2,6 @@
 id: dxGantt.Options.onTaskDblClick
 type: function(e)
 default: null
-EventForAction: dxGantt.taskDblClick
 ---
 ---
 ##### shortDescription

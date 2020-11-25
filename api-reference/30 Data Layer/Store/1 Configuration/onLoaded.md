@@ -1,7 +1,6 @@
 ---
 id: Store.Options.onLoaded
 type: function(result)
-EventForAction: Store.loaded
 ---
 ---
 ##### shortDescription

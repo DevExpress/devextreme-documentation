@@ -2,7 +2,7 @@
 id: Utils.keyConverters
 module: data/odata/utils
 export: keyConverters
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

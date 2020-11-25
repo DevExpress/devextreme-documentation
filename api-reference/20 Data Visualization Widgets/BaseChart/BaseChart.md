@@ -1,6 +1,5 @@
 ---
 id: BaseChart
-type: Object
 inherits: BaseWidget,DataHelperMixin
 hidden: 
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxSankeyNode.linksIn
-type: Array<Object>
+type: Array<any>
 ---
 ---
 ##### shortDescription

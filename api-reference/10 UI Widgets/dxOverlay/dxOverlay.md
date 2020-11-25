@@ -1,7 +1,6 @@
 ---
 id: dxOverlay
 module: ui/overlay
-type: Object
 inherits: Widget
 hidden: 
 ---

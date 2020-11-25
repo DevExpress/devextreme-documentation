@@ -1,6 +1,6 @@
 ---
 id: BaseChart.Options.series
-type: Object | Array<Object>
+type: any | Array<any>
 default: undefined
 hideDefaults: true
 notUsedInTheme: 

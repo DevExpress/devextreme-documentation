@@ -2,7 +2,6 @@
 id: GridBase.Options.onToolbarPreparing
 type: function(e)
 default: null
-EventForAction: GridBase.toolbarPreparing
 ---
 ---
 ##### shortDescription

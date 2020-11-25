@@ -2,7 +2,6 @@
 id: dxFunnel.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxFunnel.selectionChanged
 notUsedInTheme: 
 ---
 ---

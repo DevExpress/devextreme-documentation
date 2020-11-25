@@ -2,7 +2,6 @@
 id: dxSankey.Options.onLinkClick
 type: function(e) | String
 default: null
-EventForAction: dxSankey.linkClick
 notUsedInTheme: 
 ---
 ---

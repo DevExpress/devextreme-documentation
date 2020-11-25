@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.groupSummary
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

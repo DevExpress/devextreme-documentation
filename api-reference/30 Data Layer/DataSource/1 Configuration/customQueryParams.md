@@ -1,6 +1,6 @@
 ---
 id: DataSource.Options.customQueryParams
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

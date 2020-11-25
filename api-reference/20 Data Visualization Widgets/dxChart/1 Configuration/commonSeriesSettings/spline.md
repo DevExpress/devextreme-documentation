@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.spline
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

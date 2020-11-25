@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.inputAttr
-type: Object
+type: any
 default: {}
 ---
 ---

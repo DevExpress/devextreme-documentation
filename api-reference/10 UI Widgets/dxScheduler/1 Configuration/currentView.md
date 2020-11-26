@@ -13,6 +13,8 @@ Specifies the currently displayed view. Accepts the view's [name](/api-reference
 
 The **Scheduler** displays the first view from the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) array whose **name** or **type** matches the **currentView** value.
 
+To subscribe to changes of the current view, use the [onOptionChanged](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onOptionChanged) option.
+
 #include common-ref-enum with {
     enum: "`SchedulerViewType`",
     values: "`Day`, `Week`, `WorkWeek`, `Month`, `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, `TimelineMonth`, and `Agenda`"

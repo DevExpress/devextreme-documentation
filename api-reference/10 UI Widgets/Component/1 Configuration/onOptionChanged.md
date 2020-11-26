@@ -35,7 +35,7 @@ The following example shows how to subscribe to a desired option of {WidgetName}
         $("#{widgetName}Container").{WidgetName}({
             // ...
             onOptionChanged: function(e) {
-                if(e.name == "currentDate") {
+                if(e.name == "desiredOptionName") {
                     // ...
                 }
             }

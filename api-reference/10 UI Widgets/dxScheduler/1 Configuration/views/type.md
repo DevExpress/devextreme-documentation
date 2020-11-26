@@ -6,9 +6,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The name of the view.
+The type of the view.
 
 ---
+
 #include common-ref-enum with {
     enum: "`SchedulerViewType`",
     values: "`Day`, `Week`, `WorkWeek`, `Month`, `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, `TimelineMonth`, and `Agenda`"

@@ -4,13 +4,13 @@ type: String | function(rowData)
 ---
 ---
 ##### shortDescription
-A field name or a function that returns a field name or value by which to group cells. This value is also used to sort **DataGrid**'s groups.
+A field name by which to group column cells or a function that returns a field name or a calculated value for this operation. This value is also used to sort **DataGrid**'s groups.
 
 ##### param(rowData): Object
 The current row's data.
 
 ##### return: any
-The calculated value to be used for grouping and group sorting.
+The calculated value used to create and sort groups.
 
 ---
 

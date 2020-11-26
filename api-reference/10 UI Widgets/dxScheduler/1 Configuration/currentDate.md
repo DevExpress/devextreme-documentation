@@ -6,7 +6,14 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies a date displayed on the current scheduler [view](/concepts/05%20Widgets/Scheduler/060%20Views/010%20View%20Types '/Documentation/Guide/Widgets/Scheduler/Views/View_Types/') by default.
+Specifies the current date.
 
 ---
-This is the date which is displayed when rendering the widget. Although, an end-user can change the current date by using the Date Navigator.
+
+To subscribe to any changes, use the [onOptionChanged](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onOptionChanged) option.
+
+Users can change this value using the Date Navigator:
+
+![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
+
+

@@ -24,3 +24,22 @@ The modified option if it belongs to the first level. Otherwise, the first-level
 The modified option's new value.
 
 ---
+
+The following example shows how to subscribe to a desired option of {WidgetName}:
+
+---
+##### jQuery
+
+    <!--index.js-->
+    $(function() {
+        $("#{widgetName}Container").{WidgetName}({
+            // ...
+            onOptionChanged: function(e) {
+                if(e.name == "currentDate") {
+                    // ...
+                }
+            }
+        });
+    });
+
+---

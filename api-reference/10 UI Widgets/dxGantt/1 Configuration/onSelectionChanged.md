@@ -2,7 +2,6 @@
 id: dxGantt.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxGantt.selectionChanged
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: DOMComponent
 module: core/dom_component
 export: default
-type: Object
 inherits: Component
 hidden: 
 ---

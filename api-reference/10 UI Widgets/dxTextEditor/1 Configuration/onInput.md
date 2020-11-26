@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onInput
 type: function(e)
 default: null
-EventForAction: dxTextEditor.input
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxOverlay.Options.onHiding
 type: function(e)
 default: null
-EventForAction: dxOverlay.hiding
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,5 @@
 ---
 id: BaseWidget
-type: Object
 inherits: DOMComponent
 hidden: 
 ---

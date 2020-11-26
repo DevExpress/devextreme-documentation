@@ -1,6 +1,5 @@
 ---
 id: ExcelPivotGridCell
-type: Object
 inherits: dxPivotGridPivotGridCell
 ---
 ---

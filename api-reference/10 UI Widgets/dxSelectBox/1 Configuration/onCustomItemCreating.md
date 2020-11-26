@@ -2,7 +2,6 @@
 id: dxSelectBox.Options.onCustomItemCreating
 type: function(e)
 default: function(e) { if(!e.customItem) { e.customItem = e.text; } }
-EventForAction: dxSelectBox.customItemCreating
 ---
 ---
 ##### shortDescription

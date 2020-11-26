@@ -2,7 +2,6 @@
 id: dxContextMenu.Options.onShown
 type: function(e)
 default: null
-EventForAction: dxContextMenu.shown
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxFilterBuilderField.editorOptions
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

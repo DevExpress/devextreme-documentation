@@ -3,7 +3,6 @@ id: CollectionWidget.Options.onItemReordered
 type: function(e)
 default: null
 hidden: 
-EventForAction: CollectionWidget.itemReordered
 ---
 ---
 ##### shortDescription

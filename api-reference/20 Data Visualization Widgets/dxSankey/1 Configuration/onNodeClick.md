@@ -2,7 +2,6 @@
 id: dxSankey.Options.onNodeClick
 type: function(e) | String
 default: null
-EventForAction: dxSankey.nodeClick
 notUsedInTheme: 
 ---
 ---

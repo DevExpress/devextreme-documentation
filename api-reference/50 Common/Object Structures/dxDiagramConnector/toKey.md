@@ -1,6 +1,6 @@
 ---
 id: dxDiagramConnector.toKey
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

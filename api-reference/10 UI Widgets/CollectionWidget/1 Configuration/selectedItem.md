@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.selectedItem
-type: Object
+type: any
 default: null
 firedEvents: selectionChanged
 ---

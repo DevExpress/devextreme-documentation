@@ -1,6 +1,6 @@
 ---
 id: Editor.Options.validationError
-type: Object
+type: any
 default: null
 ---
 ---

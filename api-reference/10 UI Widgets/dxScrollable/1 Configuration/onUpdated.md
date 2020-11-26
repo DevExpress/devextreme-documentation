@@ -2,7 +2,6 @@
 id: dxScrollable.Options.onUpdated
 type: function(e)
 default: null
-EventForAction: dxScrollable.updated
 ---
 ---
 ##### shortDescription

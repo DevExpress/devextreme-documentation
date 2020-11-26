@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.bubble
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

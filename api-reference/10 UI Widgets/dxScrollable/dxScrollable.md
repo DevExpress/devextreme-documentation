@@ -1,6 +1,5 @@
 ---
 id: dxScrollable
-type: Object
 inherits: DOMComponent
 hidden: 
 ---

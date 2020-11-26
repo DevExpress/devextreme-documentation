@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.sort
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

@@ -1,40 +1,32 @@
-A recurring appointment is an appointment that repeats after a specified period of time. 
+A recurring appointment is an appointment that repeats at a certain interval. 
 
 ![Scheduler Recurring Appointment](/images/UiWidgets/Scheduler_RecurrentAppointment.png)
 
-An object defining a recurring appointment should contain the [recurrenceRule](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/recurrenceRule.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule') field that follows the <a href="https://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification.
+To make an appointment recurring, use the [recurrenceRule](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule) option (it follows the <a href="https://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification). You can also exclude certain appointments from a series. Use the [recurrenceException](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceException) option to specify their start date and time.
+
+The appointment below occurs daily since February 20, 2021 - except February 22 and 23, 2021:
 
     <!--JavaScript-->
     var recurringAppointment = [{
-        text: "Meeting",
-        startDate: new Date(2016, 2, 3, 8, 0),
-        endDate: new Date(2016, 2, 3, 9, 0),
-        recurrenceRule: "FREQ=DAILY"
+        text: 'Daily planning',
+        startDate: new Date("2021-02-20T07:00:00.000Z"),
+        endDate: new Date("2021-02-20T08:00:00.000Z"),
+        recurrenceRule: "FREQ=DIALY",
+        recurrenceException: "20210222T070000Z,20210223T070000Z"
     }];
 
-If you want to exclude appointments from a recurrence, specify exceptions to the current recurring appointment using the [recurrenceException](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/recurrenceException.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceException') option.
+[note] If your application works with time zones, we recommend that you specify time values in UTC - as done in example above (see the Z at the end of each string). 
 
-    <!--JavaScript-->var recurringAppointment = [{
-        text: "Meeting",
-        startDate: new Date(2016, 4, 25, 10, 0),
-        endDate: new Date(2016, 4, 25, 11, 00),
-        recurrenceRule: "FREQ=DAILY",
-        // This code excludes the 26-th and 28-th of May from the recurrence
-        recurrenceException: "20160526T100000, 20160528T100000"
-    }];
-
-[note]A time component of each item of the **recurrenceException** field must be the same as the time specified in the **startDate** field.
-
-If your appointments contain other data fields instead of **recurrenceRule** and **recurrenceException**, assign their names to the [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceExceptionExpr') options of the **Scheduler** instead. 
-
+If your appointment data objects already have fields that act as **recurrenceRule** and **recurrenceException**, specify them in the [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceExceptionExpr') options of the **Scheduler**:
 ---
 
 ##### jQuery
 
-    <!--JavaScript-->var recurringAppointments = [{ 
+    <!--JavaScript-->
+    var recurringAppointments = [{ 
         // ...
         rule: "FREQ=DAILY",
-        exception: "20160526T090000, 20160528T090000"
+        exception: "20210222T070000,20210223T070000"
     }];
 
     $(function() {
@@ -61,7 +53,7 @@ If your appointments contain other data fields instead of **recurrenceRule** and
         recurringAppointments = [{ 
             // ...
             rule: "FREQ=DAILY",
-            exception: "20160526T090000, 20160528T090000"
+            exception: "20210222T070000,20210223T070000"
         }];
     }
     @NgModule({
@@ -91,7 +83,7 @@ If your appointments contain other data fields instead of **recurrenceRule** and
     const recurringAppointments = [{ 
         // ...
         rule: "FREQ=DAILY",
-        exception: "20160526T090000, 20160528T090000"
+        exception: "20210222T070000,20210223T070000"
     }];
 
     export default {
@@ -118,7 +110,7 @@ If your appointments contain other data fields instead of **recurrenceRule** and
     const recurringAppointments = [{ 
         // ...
         rule: "FREQ=DAILY",
-        exception: "20160526T090000, 20160528T090000"
+        exception: "20210222T070000,20210223T070000"
     }];
 
     class App extends React.Component {
@@ -140,7 +132,7 @@ In the UI, to mark an appointment as recurring, toggle the *"Repeat"* switcher o
 
 ![Scheduler Recurring Appointment Details](/images/UiWidgets/Scheduler_RecurrentAppointment_Details.png)
 
-These fields will be saved as the **recurrenceRule** field of an appointment object. Note that although a recurring appointment is displayed as several appointments on the timetable, only a single appointment object is saved in the data source.
+The specified values will be saved in the **recurrenceRule** field. Note that although a recurring appointment is displayed as several appointments on the timetable, only a single appointment object is saved in the data source.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/"

@@ -2,7 +2,6 @@
 id: dxFileUploader.Options.onBeforeSend
 type: function(e)
 default: null
-EventForAction: dxFileUploader.beforeSend
 ---
 ---
 ##### shortDescription

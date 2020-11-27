@@ -1,6 +1,6 @@
 ---
 id: dxFileUploader.Options.uploadCustomData
-type: Object
+type: any
 default: {}
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.edges.dataSource
-type: Array<Object> | DataSource | DataSource_Options
+type: Array<any> | DataSource | DataSource_Options
 default: null
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.scatter
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

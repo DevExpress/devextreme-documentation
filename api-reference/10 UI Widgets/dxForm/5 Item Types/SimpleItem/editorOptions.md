@@ -1,6 +1,6 @@
 ---
 id: dxFormSimpleItem.editorOptions
-type: Object
+type: any
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxTabs.Options.items
-type: Array<String, dxTabsItem, Object>
+type: Array<String, dxTabsItem, any>
 firedEvents: optionChanged
 inheritsType: dxTabsItem
 ---

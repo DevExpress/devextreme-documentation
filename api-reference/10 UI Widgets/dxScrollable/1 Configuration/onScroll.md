@@ -2,7 +2,6 @@
 id: dxScrollable.Options.onScroll
 type: function(e)
 default: null
-EventForAction: dxScrollable.scroll
 ---
 ---
 ##### shortDescription

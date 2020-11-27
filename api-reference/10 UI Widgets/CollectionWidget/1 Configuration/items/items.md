@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.items
-type: Array<String, CollectionWidgetItem, Object>
+type: Array<String, CollectionWidgetItem, any>
 firedEvents: optionChanged
 inheritsType: CollectionWidgetItem
 ---

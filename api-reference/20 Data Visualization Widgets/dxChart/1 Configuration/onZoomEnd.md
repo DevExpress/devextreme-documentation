@@ -2,7 +2,6 @@
 id: dxChart.Options.onZoomEnd
 type: function(e)
 default: null
-EventForAction: dxChart.zoomEnd
 notUsedInTheme: 
 ---
 ---

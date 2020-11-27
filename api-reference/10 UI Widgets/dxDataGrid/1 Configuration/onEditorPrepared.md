@@ -2,7 +2,6 @@
 id: dxDataGrid.Options.onEditorPrepared
 type: function(options)
 default: null
-EventForAction: dxDataGrid.editorPrepared
 ---
 ---
 ##### shortDescription

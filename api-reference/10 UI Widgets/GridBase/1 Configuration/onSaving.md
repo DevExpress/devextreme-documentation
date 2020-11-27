@@ -2,7 +2,6 @@
 id: GridBase.Options.onSaving
 type: function(e)
 default: null
-EventForAction: GridBase.saving
 ---
 ---
 ##### shortDescription

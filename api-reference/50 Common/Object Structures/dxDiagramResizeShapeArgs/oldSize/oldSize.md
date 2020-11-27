@@ -1,6 +1,6 @@
 ---
 id: dxDiagramResizeShapeArgs.oldSize
-type: Array<Object>
+type: Object
 ---
 ---
 ##### shortDescription

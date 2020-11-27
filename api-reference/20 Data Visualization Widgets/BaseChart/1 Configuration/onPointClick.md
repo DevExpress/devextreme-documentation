@@ -2,7 +2,6 @@
 id: BaseChart.Options.onPointClick
 type: function(e) | String
 default: null
-EventForAction: BaseChart.pointClick
 notUsedInTheme: 
 ---
 ---

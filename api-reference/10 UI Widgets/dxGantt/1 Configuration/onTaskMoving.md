@@ -2,7 +2,6 @@
 id: dxGantt.Options.onTaskMoving
 type: function(e)
 default: null
-EventForAction: dxGantt.taskMoving
 ---
 ---
 ##### shortDescription

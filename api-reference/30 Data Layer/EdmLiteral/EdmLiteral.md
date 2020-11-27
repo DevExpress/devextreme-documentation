@@ -2,7 +2,6 @@
 id: EdmLiteral
 module: data/odata/utils
 export: EdmLiteral
-type: Object
 ---
 ---
 ##### shortDescription

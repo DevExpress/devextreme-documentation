@@ -2,7 +2,6 @@
 id: dxPolarChart.Options.onZoomEnd
 type: function(e)
 default: null
-EventForAction: dxPolarChart.zoomEnd
 notUsedInTheme: 
 ---
 ---

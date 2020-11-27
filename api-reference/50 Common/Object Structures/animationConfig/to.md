@@ -1,6 +1,6 @@
 ---
 id: animationConfig.to
-type: Number | String | Object
+type: Number | String | any
 default: {}
 ---
 ---

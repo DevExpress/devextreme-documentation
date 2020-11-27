@@ -2,7 +2,6 @@
 id: dxLookup.Options.onScroll
 type: function(e)
 default: null
-EventForAction: dxLookup.scroll
 ---
 ---
 ##### shortDescription

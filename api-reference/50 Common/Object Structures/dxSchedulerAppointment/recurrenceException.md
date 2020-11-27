@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the start date and time of one or more appointments to delete from a series. Requires [recurrenceRule](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule) to be set.
+Specifies the start date and time of one or more appointments to exclude from a series. This option requires that you also set [recurrenceRule]/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule).
 
 ---
 

@@ -2,7 +2,6 @@
 id: dxMap.Options.onClick
 type: function(e) | String
 default: null
-EventForAction: dxMap.click
 ---
 ---
 ##### shortDescription

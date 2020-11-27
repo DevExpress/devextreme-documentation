@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onSelectAllValueChanged
 type: function(e)
 default: null
-EventForAction: dxTreeView.selectAllValueChanged
 ---
 ---
 ##### shortDescription

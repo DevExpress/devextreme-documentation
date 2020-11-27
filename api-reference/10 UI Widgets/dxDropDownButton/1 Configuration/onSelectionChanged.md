@@ -2,7 +2,6 @@
 id: dxDropDownButton.Options.onSelectionChanged
 type: function(e) | String
 default: null
-EventForAction: dxDropDownButton.selectionChanged
 ---
 ---
 ##### shortDescription

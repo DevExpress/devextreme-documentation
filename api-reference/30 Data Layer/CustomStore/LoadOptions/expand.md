@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.expand
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

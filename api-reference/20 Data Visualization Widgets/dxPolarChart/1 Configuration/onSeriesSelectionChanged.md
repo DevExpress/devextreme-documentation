@@ -2,7 +2,6 @@
 id: dxPolarChart.Options.onSeriesSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxPolarChart.seriesSelectionChanged
 notUsedInTheme: 
 ---
 ---

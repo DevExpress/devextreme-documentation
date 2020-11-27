@@ -2,7 +2,6 @@
 id: dxDiagram.Options.onRequestEditOperation
 type: function(e)
 default: null
-EventForAction: dxDiagram.requestEditOperation
 ---
 ---
 ##### shortDescription

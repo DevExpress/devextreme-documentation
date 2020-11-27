@@ -2,7 +2,6 @@
 id: dxContextMenu.Options.onPositioning
 type: function(e)
 default: null
-EventForAction: dxContextMenu.positioning
 ---
 ---
 ##### shortDescription

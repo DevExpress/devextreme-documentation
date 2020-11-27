@@ -2,7 +2,6 @@
 id: dxVectorMap.Options.onTooltipShown
 type: function(e)
 default: null
-EventForAction: dxVectorMap.tooltipShown
 notUsedInTheme: 
 ---
 ---

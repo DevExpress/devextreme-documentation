@@ -1,6 +1,6 @@
 ---
 id: dxValidationGroupResult.validators
-type: Array<Object>
+type: Array<any>
 ---
 ---
 ##### shortDescription

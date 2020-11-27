@@ -2,7 +2,6 @@
 id: dxTreeList.Options.onRowClick
 type: function(e) | String
 default: null
-EventForAction: dxTreeList.rowClick
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
 id: dxBarGauge.Options.animation
-type: Object
+type: any
 inherits: BaseGauge.Options.animation
 ---

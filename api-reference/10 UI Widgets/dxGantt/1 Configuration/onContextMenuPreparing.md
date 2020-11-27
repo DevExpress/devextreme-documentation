@@ -2,7 +2,6 @@
 id: dxGantt.Options.onContextMenuPreparing
 type: function(e)
 default: null
-EventForAction: dxGantt.contextMenuPreparing
 ---
 ---
 ##### shortDescription

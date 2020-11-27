@@ -1,6 +1,6 @@
 ---
 id: dxDataGridRowObject.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

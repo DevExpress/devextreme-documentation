@@ -2,7 +2,6 @@
 id: Store
 module: data/abstract_store
 export: default
-type: Object
 hidden: 
 ---
 ---

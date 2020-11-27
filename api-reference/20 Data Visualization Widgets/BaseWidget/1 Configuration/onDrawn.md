@@ -2,7 +2,6 @@
 id: BaseWidget.Options.onDrawn
 type: function(e)
 default: null
-EventForAction: BaseWidget.drawn
 notUsedInTheme: 
 ---
 ---

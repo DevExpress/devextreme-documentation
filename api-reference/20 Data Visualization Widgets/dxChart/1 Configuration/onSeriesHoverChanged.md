@@ -2,7 +2,6 @@
 id: dxChart.Options.onSeriesHoverChanged
 type: function(e)
 default: null
-EventForAction: dxChart.seriesHoverChanged
 notUsedInTheme: 
 ---
 ---

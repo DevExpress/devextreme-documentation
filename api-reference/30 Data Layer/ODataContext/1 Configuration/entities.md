@@ -1,6 +1,6 @@
 ---
 id: ODataContext.Options.entities
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

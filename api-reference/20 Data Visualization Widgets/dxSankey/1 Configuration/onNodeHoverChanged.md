@@ -2,7 +2,6 @@
 id: dxSankey.Options.onNodeHoverChanged
 type: function(e)
 default: null
-EventForAction: dxSankey.nodeHoverChanged
 notUsedInTheme: 
 ---
 ---

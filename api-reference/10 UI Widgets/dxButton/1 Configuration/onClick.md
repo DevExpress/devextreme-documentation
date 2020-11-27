@@ -2,7 +2,6 @@
 id: dxButton.Options.onClick
 type: function(e)
 default: null
-EventForAction: dxButton.click
 ---
 ---
 ##### shortDescription

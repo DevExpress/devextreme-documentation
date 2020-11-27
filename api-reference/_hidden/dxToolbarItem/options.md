@@ -1,6 +1,6 @@
 ---
 id: dxToolbarItem.options
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

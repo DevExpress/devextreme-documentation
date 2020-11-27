@@ -1,6 +1,6 @@
 ---
 id: dxForm.Options.colCountByScreen
-type: Object
+type: any
 inherits: ColCountResponsible
 default: undefined
 ---

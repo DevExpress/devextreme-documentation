@@ -2,7 +2,6 @@
 id: dxPivotGrid.Options.onExporting
 type: function(e)
 default: null
-EventForAction: dxPivotGrid.exporting
 ---
 ---
 ##### shortDescription

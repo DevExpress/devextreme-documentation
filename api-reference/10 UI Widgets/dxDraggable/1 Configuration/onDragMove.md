@@ -2,7 +2,6 @@
 id: dxDraggable.Options.onDragMove
 type: function(e)
 default: null
-EventForAction: dxDraggable.dragMove
 ---
 ---
 ##### shortDescription

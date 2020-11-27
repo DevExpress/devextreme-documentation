@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.stackedarea
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

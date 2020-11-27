@@ -2,7 +2,6 @@
 id: GridBase.Options.onAdaptiveDetailRowPreparing
 type: function(e)
 default: null
-EventForAction: GridBase.adaptiveDetailRowPreparing
 ---
 ---
 ##### shortDescription

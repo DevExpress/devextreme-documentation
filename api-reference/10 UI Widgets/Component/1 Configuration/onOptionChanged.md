@@ -25,7 +25,7 @@ The modified option's new value.
 
 ---
 
-The following example shows how to subscribe to a desired option of {WidgetName}:
+The following example shows how to subscribe to changes for an option of {WidgetName}:
 
 ---
 ##### jQuery
@@ -35,8 +35,8 @@ The following example shows how to subscribe to a desired option of {WidgetName}
         $("#{widgetName}Container").{WidgetName}({
             // ...
             onOptionChanged: function(e) {
-                if(e.name == "desiredOptionName") {
-                    // ...
+                if(e.name === "changedOption") {
+                    // handle the option change here
                 }
             }
         });

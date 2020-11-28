@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.stackedsplinearea
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

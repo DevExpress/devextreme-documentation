@@ -1,6 +1,6 @@
 ---
 id: PdfDataGridCell.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

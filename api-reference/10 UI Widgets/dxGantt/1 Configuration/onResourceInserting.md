@@ -2,7 +2,6 @@
 id: dxGantt.Options.onResourceInserting
 type: function(e)
 default: null
-EventForAction: dxGantt.resourceInserting
 ---
 ---
 ##### shortDescription

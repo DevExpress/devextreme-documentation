@@ -2,7 +2,6 @@
 id: dxList.Options.onItemClick
 type: function(e) | String
 default: null
-EventForAction: dxList.itemClick
 ---
 ---
 ##### param(e): Object

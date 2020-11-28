@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.annotations
-type: Array<dxChartAnnotationConfig, Object>
+type: Array<dxChartAnnotationConfig, any>
 inherits: dxChart.Options.commonAnnotationSettings
 ---
 ---

@@ -2,7 +2,6 @@
 id: CollectionWidget.Options.onItemClick
 type: function(e) | String
 default: null
-EventForAction: CollectionWidget.itemClick
 ---
 ---
 ##### shortDescription

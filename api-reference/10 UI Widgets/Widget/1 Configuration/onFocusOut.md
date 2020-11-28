@@ -3,7 +3,6 @@ id: Widget.Options.onFocusOut
 type: function(e)
 default: null
 hidden: 
-EventForAction: Widget.focusOut
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxFunnel.Options.onHoverChanged
 type: function(e)
 default: null
-EventForAction: dxFunnel.hoverChanged
 notUsedInTheme: 
 ---
 ---

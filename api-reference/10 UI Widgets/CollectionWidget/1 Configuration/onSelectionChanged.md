@@ -2,7 +2,6 @@
 id: CollectionWidget.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: CollectionWidget.selectionChanged
 ---
 ---
 ##### shortDescription

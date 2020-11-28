@@ -2,7 +2,6 @@
 id: dxResponsiveBox
 module: ui/responsive_box
 export: default
-type: Object
 inherits: CollectionWidget
 ---
 ---

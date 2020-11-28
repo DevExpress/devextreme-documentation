@@ -1,7 +1,6 @@
 ---
 id: Store.Options.onRemoving
 type: function(key)
-EventForAction: Store.removing
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: ODataContext
 module: data/odata/context
 export: default
-type: Object
 ---
 ---
 ##### shortDescription

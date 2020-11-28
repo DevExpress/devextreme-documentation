@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.sortData
-type: Object
+type: any
 default: undefined
 ---
 ---

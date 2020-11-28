@@ -1,7 +1,6 @@
 ---
 id: DataSource.Options.onChanged
 type: function(e)
-EventForAction: DataSource.changed
 ---
 ---
 ##### shortDescription

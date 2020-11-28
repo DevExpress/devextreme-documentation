@@ -2,7 +2,6 @@
 id: DOMComponent.Options.onOptionChanged
 type: function(e)
 default: null
-EventForAction: DOMComponent.optionChanged
 ---
 ---
 ##### param(e): Object

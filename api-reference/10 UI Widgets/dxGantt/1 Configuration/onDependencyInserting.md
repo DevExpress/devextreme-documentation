@@ -2,7 +2,6 @@
 id: dxGantt.Options.onDependencyInserting
 type: function(e)
 default: null
-EventForAction: dxGantt.dependencyInserting
 ---
 ---
 ##### shortDescription

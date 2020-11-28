@@ -1,6 +1,5 @@
 ---
 id: ExcelExportDataGridProps
-type: Object
 inherits: ExcelExportBaseProps
 ---
 ---

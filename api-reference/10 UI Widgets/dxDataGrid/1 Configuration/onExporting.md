@@ -2,7 +2,6 @@
 id: dxDataGrid.Options.onExporting
 type: function(e)
 default: null
-EventForAction: dxDataGrid.exporting
 ---
 ---
 ##### shortDescription

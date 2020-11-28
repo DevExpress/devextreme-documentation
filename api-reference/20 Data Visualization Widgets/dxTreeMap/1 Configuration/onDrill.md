@@ -2,7 +2,6 @@
 id: dxTreeMap.Options.onDrill
 type: function(e)
 default: null
-EventForAction: dxTreeMap.drill
 notUsedInTheme: 
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.stackedbar
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

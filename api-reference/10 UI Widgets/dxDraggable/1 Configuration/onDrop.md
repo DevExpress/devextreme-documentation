@@ -3,7 +3,6 @@ id: dxDraggable.Options.onDrop
 type: function(e)
 default: null
 hidden: 
-EventForAction: dxDraggable.drop
 ---
 ---
 ##### shortDescription

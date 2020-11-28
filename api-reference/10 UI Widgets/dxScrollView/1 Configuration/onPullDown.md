@@ -2,7 +2,6 @@
 id: dxScrollView.Options.onPullDown
 type: function(e)
 default: null
-EventForAction: dxScrollView.pullDown
 ---
 ---
 ##### shortDescription

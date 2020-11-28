@@ -2,7 +2,6 @@
 id: Widget.Options.onContentReady
 type: function(e)
 default: null
-EventForAction: Widget.contentReady
 ---
 ---
 ##### shortDescription

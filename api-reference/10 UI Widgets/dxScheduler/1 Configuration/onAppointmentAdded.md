@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onAppointmentAdded
 type: function(e)
 default: null
-EventForAction: dxScheduler.appointmentAdded
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: LocalStore
 module: data/local_store
 export: default
-type: Object
 inherits: ArrayStore
 ---
 ---

@@ -2,7 +2,6 @@
 id: GridBase.Options.onKeyDown
 type: function(e)
 default: null
-EventForAction: GridBase.keyDown
 ---
 ---
 ##### shortDescription

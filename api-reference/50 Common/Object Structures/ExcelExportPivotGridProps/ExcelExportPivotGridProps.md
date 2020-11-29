@@ -1,6 +1,5 @@
 ---
 id: ExcelExportPivotGridProps
-type: Object
 inherits: ExcelExportBaseProps
 ---
 ---

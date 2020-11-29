@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onChange
 type: function(e)
 default: null
-EventForAction: dxTextEditor.change
 ---
 ---
 ##### shortDescription

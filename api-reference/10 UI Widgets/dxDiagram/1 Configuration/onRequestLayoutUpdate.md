@@ -2,7 +2,6 @@
 id: dxDiagram.Options.onRequestLayoutUpdate
 type: function(e)
 default: null
-EventForAction: dxDiagram.requestLayoutUpdate
 ---
 ---
 ##### shortDescription

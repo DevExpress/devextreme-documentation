@@ -1,6 +1,6 @@
 ---
 id: dxTreeMapNode.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

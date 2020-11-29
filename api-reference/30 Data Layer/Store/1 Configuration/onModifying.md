@@ -1,7 +1,6 @@
 ---
 id: Store.Options.onModifying
 type: function()
-EventForAction: Store.modifying
 ---
 ---
 ##### shortDescription

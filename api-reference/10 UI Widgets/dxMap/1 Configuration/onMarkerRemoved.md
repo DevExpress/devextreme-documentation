@@ -2,7 +2,6 @@
 id: dxMap.Options.onMarkerRemoved
 type: function(e)
 default: null
-EventForAction: dxMap.markerRemoved
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onCellClick
 type: function(e) | String
 default: null
-EventForAction: dxScheduler.cellClick
 ---
 ---
 ##### shortDescription

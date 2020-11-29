@@ -2,7 +2,6 @@
 id: CustomStore
 module: data/custom_store
 export: default
-type: Object
 inherits: Store
 ---
 ---

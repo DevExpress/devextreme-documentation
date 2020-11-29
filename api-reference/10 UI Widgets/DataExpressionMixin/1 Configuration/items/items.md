@@ -1,6 +1,6 @@
 ---
 id: DataExpressionMixin.Options.items
-type: Array<CollectionWidgetItem, Object>
+type: Array<CollectionWidgetItem, any>
 inheritsType: CollectionWidgetItem
 ---
 ---

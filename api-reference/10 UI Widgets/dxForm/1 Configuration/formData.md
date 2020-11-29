@@ -1,6 +1,6 @@
 ---
 id: dxForm.Options.formData
-type: Object
+type: any
 default: {}
 firedEvents: fieldDataChanged
 ---

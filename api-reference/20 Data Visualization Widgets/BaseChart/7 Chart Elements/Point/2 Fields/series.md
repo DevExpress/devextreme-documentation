@@ -1,6 +1,6 @@
 ---
 id: basePointObject.series
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.maskRules
-type: Object
+type: any
 default: '{}'
 ---
 ---

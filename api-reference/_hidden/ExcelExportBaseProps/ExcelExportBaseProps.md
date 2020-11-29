@@ -1,6 +1,5 @@
 ---
 id: ExcelExportBaseProps
-type: Object
 hidden: 
 ---
 ---

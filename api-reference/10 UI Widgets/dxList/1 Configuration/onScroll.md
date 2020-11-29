@@ -2,7 +2,6 @@
 id: dxList.Options.onScroll
 type: function(e)
 default: null
-EventForAction: dxList.scroll
 ---
 ---
 ##### shortDescription

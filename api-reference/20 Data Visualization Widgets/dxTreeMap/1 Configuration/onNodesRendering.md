@@ -2,7 +2,6 @@
 id: dxTreeMap.Options.onNodesRendering
 type: function(e)
 default: null
-EventForAction: dxTreeMap.nodesRendering
 notUsedInTheme: 
 ---
 ---

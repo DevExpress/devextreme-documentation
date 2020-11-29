@@ -1,6 +1,6 @@
 ---
 id: dxSankeyNode.linksOut
-type: Array<Object>
+type: Array<any>
 ---
 ---
 ##### shortDescription

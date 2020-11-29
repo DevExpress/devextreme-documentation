@@ -2,7 +2,6 @@
 id: dxLookup.Options.onPullRefresh
 type: function(e)
 default: null
-EventForAction: dxLookup.pullRefresh
 ---
 ---
 ##### shortDescription

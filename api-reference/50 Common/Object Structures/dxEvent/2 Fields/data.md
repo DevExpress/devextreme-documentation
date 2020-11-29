@@ -1,6 +1,6 @@
 ---
 id: dxEvent.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxTagBox.Options.selectedItems
-type: Array<String, Number, Object>
+type: Array<String, Number, any>
 ---
 ---
 ##### shortDescription

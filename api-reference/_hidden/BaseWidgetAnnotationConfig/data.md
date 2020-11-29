@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

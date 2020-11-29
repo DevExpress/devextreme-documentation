@@ -2,7 +2,6 @@
 id: dxTreeMap.Options.onNodesInitialized
 type: function(e)
 default: null
-EventForAction: dxTreeMap.nodesInitialized
 notUsedInTheme: 
 ---
 ---

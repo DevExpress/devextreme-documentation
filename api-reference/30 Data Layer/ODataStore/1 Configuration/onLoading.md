@@ -1,4 +1,9 @@
 ---
 id: ODataStore.Options.onLoading
-EventForAction: ODataStore.loading
+type: function(loadOptions)
+---
+---
+##### param(loadOptions): LoadOptions
+<!-- Description goes here -->
+
 ---

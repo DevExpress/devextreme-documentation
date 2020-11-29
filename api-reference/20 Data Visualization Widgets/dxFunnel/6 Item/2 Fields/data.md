@@ -1,6 +1,6 @@
 ---
 id: dxFunnelItem.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

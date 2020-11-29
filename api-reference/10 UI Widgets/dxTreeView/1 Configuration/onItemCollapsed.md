@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onItemCollapsed
 type: function(e)
 default: null
-EventForAction: dxTreeView.itemCollapsed
 ---
 ---
 ##### shortDescription

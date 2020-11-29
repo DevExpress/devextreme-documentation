@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.annotations
-type: Array<dxVectorMapAnnotationConfig, Object>
+type: Array<dxVectorMapAnnotationConfig, any>
 inherits: dxVectorMap.Options.commonAnnotationSettings
 ---
 ---

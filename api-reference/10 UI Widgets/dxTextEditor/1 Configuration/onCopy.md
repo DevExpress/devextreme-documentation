@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onCopy
 type: function(e)
 default: null
-EventForAction: dxTextEditor.copy
 ---
 ---
 ##### shortDescription

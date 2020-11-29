@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.commonSeriesSettings.line
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

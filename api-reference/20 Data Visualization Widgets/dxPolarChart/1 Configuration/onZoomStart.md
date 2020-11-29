@@ -2,7 +2,6 @@
 id: dxPolarChart.Options.onZoomStart
 type: function(e)
 default: null
-EventForAction: dxPolarChart.zoomStart
 notUsedInTheme: 
 ---
 ---

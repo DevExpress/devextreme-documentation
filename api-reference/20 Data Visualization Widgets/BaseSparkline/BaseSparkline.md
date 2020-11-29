@@ -1,6 +1,5 @@
 ---
 id: BaseSparkline
-type: Object
 inherits: BaseWidget
 hidden: 
 ---

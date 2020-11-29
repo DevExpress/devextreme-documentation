@@ -2,7 +2,6 @@
 id: dxFilterBuilder.Options.onValueChanged
 type: function(e)
 default: null
-EventForAction: dxFilterBuilder.valueChanged
 ---
 ---
 ##### shortDescription

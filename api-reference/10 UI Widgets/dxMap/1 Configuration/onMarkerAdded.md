@@ -2,7 +2,6 @@
 id: dxMap.Options.onMarkerAdded
 type: function(e)
 default: null
-EventForAction: dxMap.markerAdded
 ---
 ---
 ##### shortDescription

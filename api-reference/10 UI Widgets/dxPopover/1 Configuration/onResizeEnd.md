@@ -3,7 +3,6 @@ id: dxPopover.Options.onResizeEnd
 type: function(e)
 default: null
 hidden: 
-EventForAction: dxPopover.resizeEnd
 ---
 ---
 ##### param(e): Object

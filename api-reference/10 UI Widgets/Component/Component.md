@@ -2,7 +2,6 @@
 id: Component
 module: core/component
 export: default
-type: Object
 hidden: 
 ---
 ---

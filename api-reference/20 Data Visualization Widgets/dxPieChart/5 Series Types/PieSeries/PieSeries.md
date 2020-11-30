@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.PieSeries
-type: Object
+type: any
 inherits: dxPieChartSeriesTypes.CommonPieChartSeries
 ---
 ---

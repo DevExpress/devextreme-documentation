@@ -2,7 +2,6 @@
 id: dxButtonGroup.Options.onItemClick
 type: function(e)
 default: null
-EventForAction: dxButtonGroup.itemClick
 ---
 ---
 ##### shortDescription

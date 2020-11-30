@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onItemHold
 type: function(e)
 default: null
-EventForAction: dxTreeView.itemHold
 ---
 ---
 ##### param(e): Object

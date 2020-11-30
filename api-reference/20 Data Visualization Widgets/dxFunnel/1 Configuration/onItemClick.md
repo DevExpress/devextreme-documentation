@@ -2,7 +2,6 @@
 id: dxFunnel.Options.onItemClick
 type: function(e) | String
 default: null
-EventForAction: dxFunnel.itemClick
 notUsedInTheme: 
 ---
 ---

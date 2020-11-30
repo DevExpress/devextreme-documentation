@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.commonSeriesSettings.stackedbar
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

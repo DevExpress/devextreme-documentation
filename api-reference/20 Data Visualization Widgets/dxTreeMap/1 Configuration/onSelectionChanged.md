@@ -2,7 +2,6 @@
 id: dxTreeMap.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxTreeMap.selectionChanged
 notUsedInTheme: 
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxTreeViewNode.itemData
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

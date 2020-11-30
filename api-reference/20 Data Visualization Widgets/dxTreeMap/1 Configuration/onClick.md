@@ -2,7 +2,6 @@
 id: dxTreeMap.Options.onClick
 type: function(e) | String
 default: null
-EventForAction: dxTreeMap.click
 notUsedInTheme: 
 ---
 ---

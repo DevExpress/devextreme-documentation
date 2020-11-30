@@ -2,7 +2,6 @@
 id: dxPolarChart.Options.onArgumentAxisClick
 type: function(e) | String
 default: null
-EventForAction: dxPolarChart.argumentAxisClick
 notUsedInTheme: 
 ---
 ---

@@ -2,7 +2,6 @@
 id: ArrayStore
 module: data/array_store
 export: default
-type: Object
 inherits: Store
 ---
 ---

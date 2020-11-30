@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onItemSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxTreeView.itemSelectionChanged
 ---
 ---
 ##### shortDescription

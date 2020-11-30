@@ -1,6 +1,6 @@
 ---
 id: dxPopup.Options.toolbarItems.options
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

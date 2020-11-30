@@ -2,7 +2,6 @@
 id: dxTreeList.Options.onFocusedCellChanging
 type: function(e)
 default: null
-EventForAction: dxTreeList.focusedCellChanging
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxDropDownEditor.Options.onClosed
 type: function(e)
 default: null
-EventForAction: dxDropDownEditor.closed
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxFileManager.Options.onSelectedFileOpened
 type: function(e)
 default: null
-EventForAction: dxFileManager.selectedFileOpened
 ---
 ---
 ##### shortDescription

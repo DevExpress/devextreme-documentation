@@ -2,7 +2,6 @@
 id: dxTagBox.Options.onMultiTagPreparing
 type: function(e)
 default: null
-EventForAction: dxTagBox.multiTagPreparing
 ---
 ---
 ##### shortDescription

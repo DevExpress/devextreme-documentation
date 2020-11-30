@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.userData
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

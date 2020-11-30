@@ -2,7 +2,6 @@
 id: dxFunnel.Options.onLegendClick
 type: function(e) | String
 default: null
-EventForAction: dxFunnel.legendClick
 notUsedInTheme: 
 ---
 ---

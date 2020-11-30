@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.minorTickInterval
+acceptValues: 'day' | 'hour' | 'millisecond' | 'minute' | 'month' | 'quarter' | 'second' | 'week' | 'year'
+type: Number | Object | String
 inherits: VizTimeInterval
 ---
 ---

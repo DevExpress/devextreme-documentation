@@ -2,7 +2,6 @@
 id: dxChart.Options.onArgumentAxisClick
 type: function(e) | String
 default: null
-EventForAction: dxChart.argumentAxisClick
 notUsedInTheme: 
 ---
 ---

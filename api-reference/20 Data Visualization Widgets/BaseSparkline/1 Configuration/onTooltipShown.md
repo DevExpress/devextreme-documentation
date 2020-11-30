@@ -2,7 +2,6 @@
 id: BaseSparkline.Options.onTooltipShown
 type: function(e)
 default: null
-EventForAction: BaseSparkline.tooltipShown
 notUsedInTheme: 
 ---
 ---

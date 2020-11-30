@@ -2,7 +2,6 @@
 id: dxResizable.Options.onResizeStart
 type: function(e)
 default: null
-EventForAction: dxResizable.resizeStart
 ---
 ---
 ##### shortDescription

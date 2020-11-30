@@ -1,5 +1,6 @@
 ---
 id: dxFileManagerToolbarItem.visible
+type: Boolean
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxPivotGridFieldChooser.Options.state
-type: Object
+type: any
 default: null
 ---
 ---

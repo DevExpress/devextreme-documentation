@@ -2,7 +2,6 @@
 id: dxFileUploader.Options.onUploadStarted
 type: function(e)
 default: null
-EventForAction: dxFileUploader.uploadStarted
 ---
 ---
 ##### shortDescription

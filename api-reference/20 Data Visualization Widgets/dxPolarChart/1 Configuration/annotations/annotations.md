@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.annotations
-type: Array<dxPolarChartAnnotationConfig, Object>
+type: Array<dxPolarChartAnnotationConfig, any>
 inherits: dxPolarChart.Options.commonAnnotationSettings
 ---
 ---

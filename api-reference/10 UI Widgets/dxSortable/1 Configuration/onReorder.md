@@ -2,7 +2,6 @@
 id: dxSortable.Options.onReorder
 type: function(e)
 default: null
-EventForAction: dxSortable.reorder
 ---
 ---
 ##### shortDescription

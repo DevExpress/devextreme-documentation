@@ -1,6 +1,6 @@
 ---
 id: FileSystemItem.dataItem
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

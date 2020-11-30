@@ -1,7 +1,7 @@
 For a minor customization of **SelectBox** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/items/') in appointment data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -17,7 +17,7 @@ For a minor customization of **SelectBox** items, you can define [specific field
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxSelectBoxModule } from "devextreme-angular";
@@ -112,7 +112,7 @@ For a minor customization of **SelectBox** items, you can define [specific field
 If you need a more flexible solution, define a custom template for widget items. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for the **SelectBox** items.
 
 ---
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-select-box
@@ -244,7 +244,7 @@ If you need a more flexible solution, define a custom template for widget items.
     }
     export default App;
 
-#####AngularJS
+##### AngularJS
 
     <!--HTML-->
     <div ng-controller="DemoController">
@@ -279,7 +279,7 @@ If you need a more flexible solution, define a custom template for widget items.
 
 [note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
 
-#####Knockout
+##### Knockout
 
     <!--HTML-->
     <div data-bind="dxSelectBox: {
@@ -295,7 +295,7 @@ If you need a more flexible solution, define a custom template for widget items.
     </div>
 
     <!--JavaScript-->
-    var viewModel = {
+    const viewModel = {
         selectBoxData: [{
             id: 1,
             name: "HD Video Player",
@@ -316,7 +316,7 @@ If you need a more flexible solution, define a custom template for widget items.
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
-    var selectBoxData = [{
+    const selectBoxData = [{
         id: 1,
         name: "HD Video Player",
         imgSrc: "images/products/1-small.png"
@@ -351,7 +351,7 @@ You can also customize an individual **SelectBox** item. For this purpose, decla
     </script>
 
     <!--JavaScript-->
-    var selectBoxData = [
+    const selectBoxData = [
         { text: "SuperHD Player"},
         { text: "HD Video Player", template: $("#individualTemplate") },
         // . . .
@@ -360,7 +360,7 @@ You can also customize an individual **SelectBox** item. For this purpose, decla
 Using similar techniques, you can customize the input field of the **SelectBox**. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#fieldTemplate') option. Note that the input field must contain the [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/') widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -379,7 +379,7 @@ Using similar techniques, you can customize the input field of the **SelectBox**
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-select-box
@@ -515,7 +515,7 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     }
     export default App;
 
-#####AngularJS
+##### AngularJS
 
     <!--HTML-->
     <div ng-controller="DemoController">
@@ -533,7 +533,7 @@ Using similar techniques, you can customize the input field of the **SelectBox**
         </div>
     </div>
 
-#####Knockout
+##### Knockout
 
     <!--HTML-->
     <div data-bind="dxSelectBox: {

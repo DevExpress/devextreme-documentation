@@ -18,7 +18,7 @@ where `path1` is *formats/[formatName]* for formats or *modules/[moduleName]* fo
     <!-- tab: index.js -->
     $(function() {
         // ...
-        var htmlEditor = $("#htmlEditorContainer").dxHtmlEditor("instance");
+        const htmlEditor = $("#htmlEditorContainer").dxHtmlEditor("instance");
         htmlEditor.register({ "modules/myModule": moduleObject });
     });
 

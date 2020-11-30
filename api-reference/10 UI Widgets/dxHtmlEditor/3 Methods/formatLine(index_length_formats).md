@@ -22,13 +22,13 @@ This object should have the following structure:
 
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     // Aligns the first line to the right and turns it into an ordered list's item.
     $("#htmlEditorContainer").dxHtmlEditor("instance").formatLine(0, 2, { "align": "right", "list": "ordered" });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

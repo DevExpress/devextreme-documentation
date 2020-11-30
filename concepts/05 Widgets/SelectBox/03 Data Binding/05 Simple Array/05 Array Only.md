@@ -1,9 +1,9 @@
 Bind the **SelectBox** to an array by passing it to the [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#dataSource') option. The array may contain primitive values...
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = ["HD Video Player", "SuperHD Video Player", "SuperPlasma 50", "SuperLED 50"];
+    <!--JavaScript-->const products = ["HD Video Player", "SuperHD Video Player", "SuperPlasma 50", "SuperLED 50"];
 
     $(function() {
         $("#selectBoxContainer").dxSelectBox({
@@ -11,7 +11,7 @@ Bind the **SelectBox** to an array by passing it to the [dataSource](/api-refere
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxSelectBoxModule } from "devextreme-angular";
@@ -42,9 +42,9 @@ Bind the **SelectBox** to an array by passing it to the [dataSource](/api-refere
 ... or objects.
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = [
+    <!--JavaScript-->const products = [
         { name: "HD Video Player", price: 100 },
         { name: "SuperHD Video Player", price: 420 },
         { name: "SuperPlasma 50", price: 1500 },
@@ -59,7 +59,7 @@ Bind the **SelectBox** to an array by passing it to the [dataSource](/api-refere
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { DxSelectBoxModule } from "devextreme-angular";
@@ -92,9 +92,9 @@ Bind the **SelectBox** to an array by passing it to the [dataSource](/api-refere
 You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept') if objects in an array need to be processed (sorted, filtered, grouped, etc.). For example, in the following code, a Query sorts objects in the `products` array by the `price` field in descending order:
 
 ---
-#####jQuery
+##### jQuery
 
-    <!--JavaScript-->var products = [
+    <!--JavaScript-->const products = [
         { name: "HD Video Player", price: 100 },
         // ...
     ];
@@ -109,7 +109,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import query from "devextreme/data/query";

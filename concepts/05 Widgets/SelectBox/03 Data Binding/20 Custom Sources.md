@@ -43,14 +43,14 @@ If the **group** setting is absent, the object structure is different:
 If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#value') beforehand, the **CustomStore** should implement the [byKey](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/byKey.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey') operation. If the **SelectBox** allows a user [to add custom items](/concepts/05%20Widgets/SelectBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/Widgets/SelectBox/Create_a_User-Defined_Item/'), implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert') method. Below is a generalized **CustomStore** configuration for the **SelectBox** widget.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#selectBoxContainer").dxSelectBox({
             dataSource: new DevExpress.data.DataSource({
                 key: "ID",
                 load: function(loadOptions) {
-                    var d = $.Deferred(),
+                    const d = $.Deferred(),
                         params = {};
                     [
                         "skip",     
@@ -73,7 +73,7 @@ If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDr
                     return d.promise();
                 },
                 byKey: function(key) {
-                    var d = new $.Deferred();
+                    const d = new $.Deferred();
                     $.get('https://mydomain.com/MyDataService?id=' + key)
                         .done(function(result) {
                             d.resolve(result);
@@ -94,7 +94,7 @@ If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDr
         return value !== undefined && value !== null && value !== "";
     }
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., Inject } from "@angular/core";
@@ -161,7 +161,7 @@ If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDr
         [dataSource]="selectBoxData">
     </dx-select-box>
 
-#####Vue
+##### Vue
 
     <template>
         <DxSelectBox ... 
@@ -235,7 +235,7 @@ If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDr
     }
     </script>
 
-#####React
+##### React
 
     import React from "react";
     import SelectBox from "devextreme-react/select-box";

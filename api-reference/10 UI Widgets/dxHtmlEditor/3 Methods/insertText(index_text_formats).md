@@ -18,7 +18,7 @@ This object should have the following structure:
 
 ---
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     // Inserts bold, green text at the beginning of the content
@@ -27,7 +27,7 @@ This object should have the following structure:
         color: "green" 
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";

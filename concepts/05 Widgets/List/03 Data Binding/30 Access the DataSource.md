@@ -3,7 +3,7 @@ Regardless of the data source you use, the **List** always wraps it in the [Data
 ---
 ##### jQuery
 
-    <!--JavaScript-->var listDataSource = $("#listContainer").dxList("getDataSource");
+    <!--JavaScript-->const listDataSource = $("#listContainer").dxList("getDataSource");
 
 ##### Angular
 

@@ -3,10 +3,10 @@
 Searching is disabled in the **List** widget by default. Assign **true** to the [searchEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#searchEnabled') option to display the search panel. The [searchExpr](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#searchExpr') option specifies which data fields should be searched. Assign an _array_ of field names to it if you need to search several fields.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
-    var listData = [
+    const listData = [
         { id: 1, country: "Afghanistan", capital: "Kabul" },
         { id: 2, country: "Albania", capital: "Tirana" },
         // ...
@@ -23,7 +23,7 @@ Searching is disabled in the **List** widget by default. Assign **true** to the 
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -63,7 +63,7 @@ Searching is disabled in the **List** widget by default. Assign **true** to the 
 When a user types a string in the input field, the **List** suggests all items that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#searchMode') option if you want the **List** to suggest only those items that _start_ with the input string.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -78,7 +78,7 @@ When a user types a string in the input field, the **List** suggests all items t
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list
@@ -115,7 +115,7 @@ When a user types a string in the input field, the **List** suggests all items t
 You can customize the search panel by specifying the [searchEditorOptions](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchEditorOptions.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#searchEditorOptions') option. The following code changes the panel's default width and placeholder:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -133,7 +133,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-list

@@ -2,7 +2,6 @@
 id: Widget
 module: ui/widget/ui.widget
 export: default
-type: Object
 inherits: DOMComponent
 hidden: 
 ---

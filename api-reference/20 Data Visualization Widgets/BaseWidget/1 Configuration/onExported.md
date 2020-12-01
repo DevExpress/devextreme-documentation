@@ -2,7 +2,6 @@
 id: BaseWidget.Options.onExported
 type: function(e)
 default: null
-EventForAction: BaseWidget.exported
 ---
 ---
 ##### shortDescription

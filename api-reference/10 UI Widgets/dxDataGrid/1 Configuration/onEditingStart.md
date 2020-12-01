@@ -2,7 +2,6 @@
 id: dxDataGrid.Options.onEditingStart
 type: function(e)
 default: null
-EventForAction: dxDataGrid.editingStart
 ---
 ---
 ##### shortDescription

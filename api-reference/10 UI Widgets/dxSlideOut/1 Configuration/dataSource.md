@@ -1,5 +1,5 @@
 ---
 id: dxSlideOut.Options.dataSource
-type: String | Array<String, dxSlideOutItem, Object> | DataSource | DataSource_Options
+type: String | Array<String, dxSlideOutItem, any> | DataSource | DataSource_Options
 default: null
 ---

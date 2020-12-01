@@ -2,7 +2,6 @@
 id: dxList.Options.onPageLoading
 type: function(e)
 default: null
-EventForAction: dxList.pageLoading
 ---
 ---
 ##### shortDescription

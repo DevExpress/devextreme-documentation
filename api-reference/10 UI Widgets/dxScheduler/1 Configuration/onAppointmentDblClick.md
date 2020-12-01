@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onAppointmentDblClick
 type: function(e) | String
 default: null
-EventForAction: dxScheduler.appointmentDblClick
 ---
 ---
 ##### shortDescription

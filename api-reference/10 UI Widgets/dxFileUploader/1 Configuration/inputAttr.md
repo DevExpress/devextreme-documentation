@@ -1,6 +1,6 @@
 ---
 id: dxFileUploader.Options.inputAttr
-type: Object
+type: any
 default: {}
 ---
 ---

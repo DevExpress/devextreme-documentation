@@ -2,7 +2,6 @@
 id: dxDataGrid.Options.onCellHoverChanged
 type: function(e)
 default: null
-EventForAction: dxDataGrid.cellHoverChanged
 ---
 ---
 ##### shortDescription

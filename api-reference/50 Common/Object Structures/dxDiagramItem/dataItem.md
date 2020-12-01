@@ -1,6 +1,6 @@
 ---
 id: dxDiagramItem.dataItem
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

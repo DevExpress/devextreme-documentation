@@ -2,7 +2,6 @@
 id: ODataStore
 module: data/odata/store
 export: default
-type: Object
 inherits: Store
 ---
 ---

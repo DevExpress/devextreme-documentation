@@ -1,6 +1,6 @@
 ---
 id: ExcelDataGridCell.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

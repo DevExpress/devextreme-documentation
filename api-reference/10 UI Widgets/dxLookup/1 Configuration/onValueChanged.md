@@ -2,7 +2,6 @@
 id: dxLookup.Options.onValueChanged
 type: function(e)
 default: null
-EventForAction: dxLookup.valueChanged
 ---
 ---
 ##### shortDescription

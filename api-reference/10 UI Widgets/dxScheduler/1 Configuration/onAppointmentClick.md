@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onAppointmentClick
 type: function(e) | String
 default: null
-EventForAction: dxScheduler.appointmentClick
 ---
 ---
 ##### shortDescription

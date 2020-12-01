@@ -1,6 +1,6 @@
 ---
 id: UploadInfo.customData
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

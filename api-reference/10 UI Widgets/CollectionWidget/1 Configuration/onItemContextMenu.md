@@ -2,7 +2,6 @@
 id: CollectionWidget.Options.onItemContextMenu
 type: function(e)
 default: null
-EventForAction: CollectionWidget.itemContextMenu
 ---
 ---
 ##### shortDescription

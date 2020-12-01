@@ -2,7 +2,6 @@
 id: dxFileUploader.Options.onValueChanged
 type: function(e)
 default: null
-EventForAction: dxFileUploader.valueChanged
 ---
 ---
 ##### shortDescription

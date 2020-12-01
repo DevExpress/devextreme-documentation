@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.customQueryParams
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

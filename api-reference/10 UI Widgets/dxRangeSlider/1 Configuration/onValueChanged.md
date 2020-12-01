@@ -2,7 +2,6 @@
 id: dxRangeSlider.Options.onValueChanged
 type: function(e)
 default: null
-EventForAction: dxRangeSlider.valueChanged
 ---
 ---
 ##### param(e): Object

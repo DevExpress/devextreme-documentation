@@ -1,6 +1,6 @@
 ---
 id: MapLayerElement.layer
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

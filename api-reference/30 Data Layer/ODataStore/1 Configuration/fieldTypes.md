@@ -1,6 +1,6 @@
 ---
 id: ODataStore.Options.fieldTypes
-type: Object
+type: any
 default: {}
 ---
 ---

@@ -2,7 +2,6 @@
 id: dxTreeMap.Options.onHoverChanged
 type: function(e)
 default: null
-EventForAction: dxTreeMap.hoverChanged
 notUsedInTheme: 
 ---
 ---

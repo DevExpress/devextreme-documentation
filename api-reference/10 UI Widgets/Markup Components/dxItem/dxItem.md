@@ -1,6 +1,6 @@
 ---
 id: dxItem
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

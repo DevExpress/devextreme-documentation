@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.editorOptions
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

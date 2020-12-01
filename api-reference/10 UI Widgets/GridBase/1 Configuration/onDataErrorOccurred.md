@@ -2,7 +2,6 @@
 id: GridBase.Options.onDataErrorOccurred
 type: function(e)
 default: null
-EventForAction: GridBase.dataErrorOccurred
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxDiagramMoveShapeArgs.newPosition
-type: Array<Object>
+type: Object
 ---
 ---
 ##### shortDescription

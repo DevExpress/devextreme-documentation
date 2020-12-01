@@ -2,6 +2,7 @@
 id: fx
 module: animation/fx
 export: default
+type: Object
 ---
 ---
 ##### shortDescription

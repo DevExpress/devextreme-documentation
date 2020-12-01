@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.resources.dataSource
-type: String | Array<Object> | DataSource | DataSource_Options
+type: String | Array<any> | DataSource | DataSource_Options
 default: null
 ---
 ---

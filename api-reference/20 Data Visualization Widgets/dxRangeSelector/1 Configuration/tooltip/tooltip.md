@@ -1,5 +1,5 @@
 ---
 id: dxRangeSelector.Options.tooltip
-type: BaseWidgetTooltip
+type: Object
 hidden: 
 ---

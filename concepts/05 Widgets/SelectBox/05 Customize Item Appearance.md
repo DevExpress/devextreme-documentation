@@ -94,16 +94,14 @@ For a minor customization of **SelectBox** items, you can define [specific field
         { text: "SuperPlasma 50", visible: false }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={products} 
-                    displayExpr="text"
-                    valueExpr="text"
-                />
-            );
-        }
+    function App(props) {
+        return (
+            <SelectBox ...
+                dataSource={products} 
+                displayExpr="text"
+                valueExpr="text"
+            />
+        );
     }
     export default App;
 
@@ -364,19 +362,17 @@ You can also customize an individual **SelectBox** item. In Angular, Vue, and Re
 
     import { SelectBox, Item } from 'devextreme-react/select-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox>
-                    <Item>
-                        <span>User</span>
-                    </Item>
-                    <Item>
-                        <span>Comment</span>
-                    </Item>
-                </SelectBox>
-            );
-        }
+    function App(props) {
+        return (
+            <SelectBox>
+                <Item>
+                    <span>User</span>
+                </Item>
+                <Item>
+                    <span>Comment</span>
+                </Item>
+            </SelectBox>
+        );
     }
 
     export default App;
@@ -526,18 +522,16 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxData} 
-                    value={1}
-                    displayExpr="name"
-                    valueExpr="id"
-                    fieldRender={renderField}
-                />
-            );
-        }
+    function App(props) {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxData} 
+                value={1}
+                displayExpr="name"
+                valueExpr="id"
+                fieldRender={renderField}
+            />
+        );
     }
     export default App;
 

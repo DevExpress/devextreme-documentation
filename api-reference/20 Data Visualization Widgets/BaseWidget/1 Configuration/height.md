@@ -6,4 +6,7 @@ hidden:
 ---
 ##### shortDescription
 
+##### return: Number | String
+<!-- Description goes here -->
+
 ---

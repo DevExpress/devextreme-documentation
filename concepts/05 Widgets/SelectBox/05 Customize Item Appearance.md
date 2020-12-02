@@ -94,7 +94,7 @@ For a minor customization of **SelectBox** items, you can define [specific field
         { text: "SuperPlasma 50", visible: false }
     ];
 
-    function App(props) {
+    export default function App(props) {
         return (
             <SelectBox ...
                 dataSource={products} 
@@ -103,7 +103,6 @@ For a minor customization of **SelectBox** items, you can define [specific field
             />
         );
     }
-    export default App;
 
 ---
 
@@ -228,7 +227,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     // ...
     ];
 
-    function App(props) {
+    export default function App(props) {
         return (
             <SelectBox ...
                 dataSource={selectBoxData} 
@@ -238,7 +237,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
             />
         );
     }
-    export default App;
 
 ---
 
@@ -362,7 +360,7 @@ You can also customize an individual **SelectBox** item. In Angular, Vue, and Re
 
     import { SelectBox, Item } from 'devextreme-react/select-box';
 
-    function App(props) {
+    export default function App(props) {
         return (
             <SelectBox>
                 <Item>
@@ -374,8 +372,6 @@ You can also customize an individual **SelectBox** item. In Angular, Vue, and Re
             </SelectBox>
         );
     }
-
-    export default App;
 
 ---
 
@@ -522,7 +518,7 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     // ...
     ];
 
-    function App(props) {
+    export default function App(props) {
         return (
             <SelectBox ...
                 dataSource={selectBoxData} 
@@ -533,7 +529,6 @@ Using similar techniques, you can customize the input field of the **SelectBox**
             />
         );
     }
-    export default App;
 
 ---
 

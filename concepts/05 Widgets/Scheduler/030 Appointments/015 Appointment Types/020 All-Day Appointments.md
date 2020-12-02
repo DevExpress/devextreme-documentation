@@ -13,7 +13,7 @@ To make an appointment all-day in code, set its [allDay](/Documentation/ApiRefer
 
 [note]If you set the optional [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) field to a date after the start date, the appointment will last for more than one whole day.
 
-If your data objects already have a field that performs the functions of **allDay**, specify its name in the [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr) option of the **Scheduler**
+If your appointment data objects already have a field that performs the functions of **allDay**, specify its name in the [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr) option of the **Scheduler**
 
 ---
 ##### jQuery

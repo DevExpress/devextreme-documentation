@@ -1,4 +1,4 @@
-Since people use portable devices to work with **Scheduler**, it should change its interface accordingly. Set the adaptivityEnabled option to true and see how the Scheduler adapts its interface. 
+Since people use portable devices to work with **Scheduler**, it should adapt its interface to small screens. To implement this behavior, set the [adaptivityEnabled](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#adaptivityEnabled) option to **true**. 
 
 ---
 ##### jQuery

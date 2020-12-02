@@ -1,4 +1,4 @@
-Users can open an appointment form to update or remove the appointment. They can also remove appointments and change their start and end dates in the grid. Use the editing object to configure allowed editing operations. 
+Users can add, update, and remove appointments. To configure these operations, use the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/) object. 
 
 In this step, we will forbid users to drag the appointments.
 

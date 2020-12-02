@@ -1,7 +1,13 @@
-We will group appointments by priority. For this, do the following:
-1. Create a resource kind. In this example, this is the `priorities` array. It consists of objects each of which defines a priority category: sets its heading, color, and id. 
-2. Use the [resources](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/) array to add a resource kind: specify the [fieldExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr) and [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource) fields in the resource object. By this moment, the appointments will be painted based on the priority.
-3. Use the [groups](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups) option to specify the field by which appointments are categorized.
+**Scheduler** groups appointments by categories called resources. In this tutorial, we will create resources that define the appointments' priorities. The final objective is to implement grouping in accordance with the following algorithm:
+
+1. **Define resource instances**
+A resource instance defines a category by which to group appointments. Each object of a resource instance should consist of the required id, color, and optional text fields. In the data source file, define the priorities array to store the resource instances for high and low priority appointments.
+
+2. **Define resource kinds**
+A resource kind applies a resource instance to the widget. The [resources](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/) option specifies an array of resource kinds. Each array item must specify at least the two fields: [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource) (an array of resource instances) and [fieldExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr) (the data object field that specifies the category). Assign the priorities array to dataSource and the priorityId field to fieldExpr.
+
+3. **Specify the groups option**
+By now, the **Scheduler** has applied the resource kinds: the appointments are colored differently and you can change their priority in the appointment's details form. To display the appointments in columns according to their resource kinds, specify the [groups](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups) option. It is an array that consists of the **fieldExpr** value(s) of the resource kind(s).
 
 ---
 ##### jQuery

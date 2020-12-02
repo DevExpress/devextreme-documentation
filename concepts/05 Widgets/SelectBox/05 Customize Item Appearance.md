@@ -213,7 +213,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         return (
             <div>
                 <img src={data.imgSrc} />
-                <div style="display:inline-block">{data.name}</div>
+                <div style={{display: 'inline-block'}}>{data.name}</div>
             </div>
         );
     }
@@ -230,17 +230,15 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxData} 
-                    displayExpr="name"
-                    valueExpr="id"
-                    itemRender={renderItem}
-                />
-            );
-        }
+    function App(props) {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxData} 
+                displayExpr="name"
+                valueExpr="id"
+                itemRender={renderItem}
+            />
+        );
     }
     export default App;
 

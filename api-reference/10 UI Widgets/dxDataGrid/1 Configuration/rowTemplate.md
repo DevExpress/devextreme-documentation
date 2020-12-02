@@ -12,6 +12,36 @@ Specifies a custom template for rows.
 ##### param(rowInfo): Object
 The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/') object extended by the **DataGrid**'s instance (the **component** field) and column configuration (**columns**).
 
+##### field(rowInfo.columns): Array<dxDataGridColumn>
+<!-- Description goes here -->
+
+##### field(rowInfo.component): dxDataGrid
+<!-- Description goes here -->
+
+##### field(rowInfo.data): any
+<!-- Description goes here -->
+
+##### field(rowInfo.groupIndex): Number
+<!-- Description goes here -->
+
+##### field(rowInfo.isExpanded): Boolean
+<!-- Description goes here -->
+
+##### field(rowInfo.isSelected): Boolean
+<!-- Description goes here -->
+
+##### field(rowInfo.key): any
+<!-- Description goes here -->
+
+##### field(rowInfo.rowIndex): Number
+<!-- Description goes here -->
+
+##### field(rowInfo.rowType): String
+<!-- Description goes here -->
+
+##### field(rowInfo.values): Array<any>
+<!-- Description goes here -->
+
 ---
 The following details should be taken into account when you use a **rowTemplate**:
 

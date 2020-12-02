@@ -106,7 +106,7 @@ For a minor customization of **SelectBox** items, you can define [specific field
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, specify [itemTemplate](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
 
 ---
 ##### Angular
@@ -240,7 +240,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the **itemTemplate** callback function as shown in the following code.
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to create HTML markup for items. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
 
     <!--JavaScript-->
     const selectBoxData = [{

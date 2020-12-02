@@ -1,4 +1,4 @@
-By default, group headers display text of the **key** field in a bold font. If you need a more flexible solution, define an [groupTemplate](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+By default, group headers display text of the **key** field in a bold font. If you need a more flexible solution, specify [groupTemplate](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
 
 ---
 ##### Angular

@@ -2,22 +2,24 @@ A recurring appointment is an appointment that repeats at a certain interval.
 
 ![Scheduler Recurring Appointment](/images/UiWidgets/Scheduler_RecurrentAppointment.png)
 
-To make an appointment recurring, use the [recurrenceRule](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule) option (it follows the <a href="https://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification). You can also exclude certain appointments from a series. Use the [recurrenceException](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceException) option to specify their start date and time.
+To make an appointment recurring in code, specify the [recurrenceRule](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule) field (it follows the <a href="https://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification). You can exclude certain appointments from the created series. Specify the [recurrenceException](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceException) field to set their start date and time.
 
-The appointment below occurs daily since February 20, 2021 - except February 22 and 23, 2021:
+The appointment below occurs daily since February 20, 2021 except February 22 and 23, 2021:
 
     <!--JavaScript-->
     var recurringAppointment = [{
         text: 'Daily planning',
         startDate: new Date("2021-02-20T07:00:00.000Z"),
         endDate: new Date("2021-02-20T08:00:00.000Z"),
-        recurrenceRule: "FREQ=DIALY",
+        recurrenceRule: "FREQ=DAILY",
         recurrenceException: "20210222T070000Z,20210223T070000Z"
     }];
 
-[note] If your application works with time zones, we recommend that you specify time values in UTC - as done in example above (see the Z at the end of each string). 
+[note] If your application works with time zones, we recommend that you specify time values in UTC - as done in example above (see the letter `Z` at the end of each string). 
 
-If your appointment data objects already have fields that act as **recurrenceRule** and **recurrenceException**, specify them in the [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceExceptionExpr') options of the **Scheduler**:
+
+
+If your appointment data objects already have fields that perform the functions of **recurrenceRule** and **recurrenceException**, specify their names in the [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceExceptionExpr') options of the **Scheduler**:
 ---
 
 ##### jQuery

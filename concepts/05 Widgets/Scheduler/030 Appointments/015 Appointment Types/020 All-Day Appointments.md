@@ -2,7 +2,7 @@ An all-day appointment is an appointment that occurs during the whole day.
 
 ![Scheduler All-Day Appointment](/images/UiWidgets/Scheduler_AllDayAppointment.png)
 
-To create such an appointment, set its [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) field to **true** and specify the start day in the [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) field; the time value is optional: 
+To make an appointment all-day in code, set its [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) field to **true**; the time values of [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) and [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) are ignored: 
 
     <!--JavaScript-->
     var allDayAppointment = [{
@@ -11,9 +11,9 @@ To create such an appointment, set its [allDay](/Documentation/ApiReference/Comm
         allDay: true
     }];
 
-[note]If you set the optional [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) field to a date after the start date, the appointment will last for more than one whole days.
+[note]If you set the optional [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) field to a date after the start date, the appointment will last for more than one whole day.
 
-If your appointment data objects already have a field that acts as **allDay**, specify it in the [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr) option of the **Scheduler**:
+If your data objects already have a field that performs the functions of **allDay**, specify its name in the [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr) option of the **Scheduler**
 
 ---
 ##### jQuery

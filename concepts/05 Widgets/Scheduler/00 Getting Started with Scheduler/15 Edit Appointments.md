@@ -1,6 +1,6 @@
 Users can add, update, and remove appointments. To configure these operations, use the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/) object. 
 
-In this step, we will forbid users to drag the appointments.
+In this step, we will forbid users to drag the appointments. For this, set the **editing**.[allowDragging](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDragging) to `false`.
 
 ---
 ##### jQuery

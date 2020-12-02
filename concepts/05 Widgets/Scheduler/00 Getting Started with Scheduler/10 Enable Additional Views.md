@@ -30,7 +30,7 @@ Use the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration
 
     <!-- tab: app.component.html --> 
     <dx-scheduler ...
-        [views]='["day", "week", "month", "timelineWeek"]'
+        [views]="['day', 'week', 'month', 'timelineWeek']"
         currentView="week">
     </dx-scheduler> 
 
@@ -52,12 +52,12 @@ Use the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration
 
     export default { 
         components: {
-            DxScheduler,
+            DxScheduler
         },
         data() {
             return {
                 // ...
-                views: ["day", "week", "month", "timelineWeek"],
+                views: ["day", "week", "month", "timelineWeek"]
             };
         }
     } 

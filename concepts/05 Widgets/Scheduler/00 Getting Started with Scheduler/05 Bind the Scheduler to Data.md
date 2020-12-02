@@ -21,7 +21,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     $(function() { 
         $("#scheduler").dx{WidgetName}({ 
             // ...
-            dataSource: data,
+            dataSource: data
         });
     });
 
@@ -31,13 +31,13 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
             <!-- ... -->
             <script src="data.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="scheduler"></div>
         </body>
     </html>
 
     <!-- tab: data.js -->
-    var data = [
+    const data = [
         {
             text: "Install New Database",
             priorityId: 1,
@@ -107,7 +107,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 
     <!-- tab: app.component.ts --> 
     import { Component } from '@angular/core'; 
-    import {Appointment, AppService} from './app.service';
+    import { Appointment, AppService } from './app.service';
 
     @Component({ 
         selector: 'app-root', 
@@ -222,12 +222,12 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     export default {
         name: 'Vue: Getting started with Scheduler',
         components: {
-            DxScheduler,
+            DxScheduler
         },
         data() {
             return {
                 // ...
-                dataSource: data,
+                dataSource: data
             };
         }
     }

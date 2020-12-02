@@ -7,7 +7,7 @@ Since people use portable devices to work with **Scheduler**, it should adapt it
     $(function() { 
         $("#scheduler").dx{WidgetName}({
             // ...
-            adaptivityEnabled: true,
+            adaptivityEnabled: true
         });
     });
 
@@ -50,7 +50,7 @@ Since people use portable devices to work with **Scheduler**, it should adapt it
 
 ---
 
-You have now configured the basic Scheduler features. For more details on this widget, explore the following resources:
+You have now configured the basic **Scheduler** features. For more details on this widget, explore the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 

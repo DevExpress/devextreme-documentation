@@ -27,6 +27,20 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
         });
     });
 
+    <!-- tab: index.js --> 
+    // ...
+    const priorities = [
+        {
+            text: "High priority",
+            id: 1,
+            color: "#cc5c53"
+        }, {
+            text: "Low priority",
+            id: 2,
+            color: "#ff9747"
+        }
+    ];
+
 ##### Angular 
 
     <!-- tab: app.component.html --> 
@@ -70,11 +84,11 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
 
     let prioritiesData: Priority[] = [
         {
-            text: "Low Priority",
+            text: "High priority",
             id: 1,
-            color: "#1e90ff"
+            color: "#cc5c53"
         }, {
-            text: "High Priority",
+            text: "Low priority",
             id: 2,
             color: "#ff9747"
         }
@@ -85,7 +99,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
     })
     export class AppService {
         // ...
-        getPriorities() {
+        getPriorities(): Priority[] {
             return prioritiesData;
         }
     }
@@ -186,4 +200,4 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
 
 ---
 
-If you run this code, you will see the Scheduler grid is split into two columns. Each column displays appointments of either low or high priority.
+If you run this code, you will see the **Scheduler** grid is split into two columns: High priority and Low priority.

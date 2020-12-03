@@ -1,4 +1,4 @@
-By default, group headers display text of the **key** field in a bold font. You can define a custom template for the group headers if you need to. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for group headers.
+By default, group headers display text of the **key** field in a bold font. If you need a more flexible solution, specify [groupTemplate](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
 
 ---
 ##### Angular
@@ -177,94 +177,9 @@ By default, group headers display text of the **key** field in a bold font. You 
     }
     export default App;
 
-##### AngularJS
-
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-select-box="{
-            dataSource: selectBoxDataSource,
-            grouped: true,
-            groupTemplate: 'group',
-            displayExpr: 'name',
-            valueExpr: 'count'
-        }" dx-item-alias="itemObj">
-            <div data-options="dxTemplate: { name: 'group' }">
-                <p>{{itemObj.key}} | Count: {{itemObj.overallCount}}</p>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            const fruitsVegetables = [{
-                key: "Fruits",
-                items: [
-                    { name: "Apples", count: 10 },
-                    { name: "Oranges", count: 12 },
-                    { name: "Lemons", count: 15 }
-                ]
-            }, {
-                key: "Vegetables",
-                items: [
-                    { name: "Potatoes", count: 5 },
-                    { name: "Tomatoes", count: 9 },
-                    { name: "Turnips", count: 8 }
-                ]
-            }];
-            $scope.selectBoxDataSource = new DevExpress.data.DataSource({
-                store: fruitsVegetables,
-                map: function(groupedItem) {
-                    let overallCount = 0;
-                    groupedItem.items.forEach(function(item) {
-                        overallCount += item.count;
-                    })
-                    return $.extend(groupedItem, { overallCount: overallCount })
-                }
-            });
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-##### Knockout
-
-    <!--HTML-->
-    <div data-bind="dxSelectBox: {
-        dataSource: selectBoxDataSource,
-        grouped: true,
-        groupTemplate: 'group',
-        displayExpr: 'name',
-        valueExpr: 'count'
-    }">
-        <div data-options="dxTemplate: { name: 'group' }">
-            <p data-bind="text: key + ' | Count: ' + overallCount"></p>
-        </div>
-    </div>
-
-    <!--JavaScript-->const fruitsVegetables = [{
-        // ...
-        // omitted for brevity
-        // see the AngularJS code
-    }];
-
-    const viewModel = {
-        selectBoxDataSource: new DevExpress.data.DataSource({
-            store: fruitsVegetables,
-            map: function(groupedItem) {
-                let overallCount = 0;
-                groupedItem.items.forEach(function(item) {
-                    overallCount += item.count;
-                })
-                return $.extend(groupedItem, { overallCount: overallCount })
-            }
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the [groupTemplate](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#groupTemplate') callback function as shown in the following code.
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the **groupTemplate** callback function as shown in the following code.
 
     <!--JavaScript-->const fruitsVegetables = [{
         // ...

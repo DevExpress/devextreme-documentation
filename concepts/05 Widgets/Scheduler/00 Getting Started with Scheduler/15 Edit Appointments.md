@@ -72,4 +72,3 @@ In this step, we will forbid users to drag the appointments. For this, set the *
     }
 
 ---
-

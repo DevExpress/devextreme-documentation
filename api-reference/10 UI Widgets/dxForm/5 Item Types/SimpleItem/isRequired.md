@@ -53,6 +53,48 @@ If you specify validation rules using the [validationRules](/api-reference/10%20
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm ...>
+            <DxSimpleItem ...>
+                <DxRequiredRule .../>
+            </DxSimpleItem>
+        </DxForm>
+    </template>
+    <script>
+    import DxForm, { DxSimpleItem, DxRequiredRule } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxSimpleItem,
+            DxRequiredRule
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Form, { SimpleItem, RequiredRule } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form>
+                    <SimpleItem>
+                        <RequiredRule />
+                    </SimpleItem>
+                </Form>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 [/note]

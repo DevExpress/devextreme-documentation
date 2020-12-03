@@ -47,6 +47,43 @@ For extra small screens, this option always equals *1* to make the widget adapti
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm ...>
+            <DxColCountByScreen :xs="2"/>
+        </DxForm>
+    </template>
+    <script>
+    import DxForm, { DxColCountByScreen } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxColCountByScreen
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Form, { ColCountByScreen } from 'devextreme-react/form';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <Form>
+                    <ColCountByScreen xs={2} />
+                </Form>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 [/note]

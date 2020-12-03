@@ -18,7 +18,7 @@ The initial appointment.
 #include common-ref-elementparam with { element: "clicked" }
 
 ##### field(e.cancel): Boolean
-Allows you to cancel execution of the default appointment click handler.
+If **true**, prevents the appointment details form from opening.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

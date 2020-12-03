@@ -18,7 +18,7 @@ The initial appointment.
 #include common-ref-elementparam with { element: "clicked" }
 
 ##### field(e.cancel): Boolean
-Allows you to cancel execution of the default appointment click handler.
+If true, hides the appointment tooltip.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

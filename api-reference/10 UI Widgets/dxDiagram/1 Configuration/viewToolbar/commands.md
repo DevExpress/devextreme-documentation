@@ -16,7 +16,8 @@ The view toolbar can contain default and custom commands. Handle the [CustomComm
     $(function() {
         var diagram = $("#diagram").dxDiagram({
             viewToolbar: {
-                commands: ["zoomLevel", "fullScreen", "units", {name: "sayHello", text: "Say Hello", icon: "blockquote"}]
+                commands: ["zoomLevel", "fullScreen", "units", {name: "sayHello", text: "Say Hello", icon: "blockquote"},
+                    {name: "export", icon: "export", items: ["exportSvg","exportPng","exportJpg"]}]
             }, 
             onCustomCommand: function(e) {
                 if (e.name == "sayHello")

@@ -81,6 +81,69 @@ The following code shows how to use this function with a remote service:
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxTreeView
+            :create-children="createChildren"
+            :root-value="''"
+            data-structure="plain"
+            />
+        </div>
+    </template>
+    <script>
+
+    import DxTreeView from 'devextreme-vue/tree-view';
+    import 'whatwg-fetch';
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        methods: {
+            createChildren: function(parent) {
+            let parentId = parent ? parent.itemData.id : '';
+
+            return fetch(`https://js.devexpress.com/Demos/Mvc/api/TreeViewData?parentId=${parentId}`)
+                .then(response => response.json())
+                .catch(() => { throw 'Data Loading Error'; });
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+    import 'whatwg-fetch';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <React.Fragment>
+                    <TreeView
+                    dataStructure="plain"
+                    rootValue=""
+                    createChildren={this.createChildren}
+                    />
+                </React.Fragment>
+            );
+        }
+        createChildren(parent) {
+            let parentId = parent ? parent.itemData.id : '';
+
+            return fetch(`https://js.devexpress.com/Demos/Mvc/api/TreeViewData?parentId=${parentId}`)
+            .then(response => response.json())
+            .catch(() => { throw 'Data Loading Error'; });
+        }
+    }
+
+    export default App;  
+
 ---
 
 #include common-demobutton with {

@@ -18,7 +18,7 @@ The initial appointment.
 #include common-ref-elementparam with { element: "clicked" }
 
 ##### field(e.cancel): Boolean
-If **true**, prevents opening of the appointment details form on double click.
+If **true**, does not allow the user to open the appointment details form with double click.
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

@@ -13,34 +13,34 @@ Specifies a custom template for rows.
 The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/') object extended by the **DataGrid**'s instance (the **component** field) and column configuration (**columns**).
 
 ##### field(rowInfo.columns): Array<dxDataGridColumn>
-<!-- Description goes here -->
+Contains an array of grid columns. Each array item is an object with the column settings. The order of columns is the same as in the [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/') array.
 
 ##### field(rowInfo.component): dxDataGrid
-<!-- Description goes here -->
+Contains the **DataGrid** instance.
 
 ##### field(rowInfo.data): any
-<!-- Description goes here -->
+Contains the object of the data source represented by the current row.
 
 ##### field(rowInfo.groupIndex): Number
-<!-- Description goes here -->
+Contains the group index of the current row. Useful if the **rowType** field is *'group'*.
 
 ##### field(rowInfo.isExpanded): Boolean
-<!-- Description goes here -->
+Indicates whether the current row is expanded. Useful if the **rowType** field is *'group'*.
 
 ##### field(rowInfo.isSelected): Boolean
-<!-- Description goes here -->
+Indicates whether the current row is selected.
 
 ##### field(rowInfo.key): any
 The row's key. If a field providing keys is not specified in the data source, the whole [data object](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource) is considered the key.
 
 ##### field(rowInfo.rowIndex): Number
-<!-- Description goes here -->
+Contains the index of the current row. The first row on each page has the index of 0. Note that group cells count as rows and have row indexes. For further information about row indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(rowInfo.rowType): String
-<!-- Description goes here -->
+Defines the type of the current row: *'data'* for data rows and *'group'* for group rows.
 
 ##### field(rowInfo.values): Array<any>
-<!-- Description goes here -->
+Contains an array of values of the current row in the order they exist in the data source.
 
 ---
 The following details should be taken into account when you use a **rowTemplate**:

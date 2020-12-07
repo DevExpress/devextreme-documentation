@@ -37,10 +37,10 @@ The row's key. If a field providing keys is not specified in the data source, th
 Contains the index of the current row. The first row on each page has the index of 0. Note that group cells count as rows and have row indexes. For further information about row indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(rowInfo.rowType): String
-Defines the type of the current row: *'data'* for data rows and *'group'* for group rows.
+Defines the type of the current row: *'data'* for data rows or *'group'* for group rows.
 
 ##### field(rowInfo.values): Array<any>
-Contains an array of values of the current row in the order they exist in the data source.
+Contains an array of values of the current row in the order they appear in the data source.
 
 ---
 The following details should be taken into account when you use a **rowTemplate**:

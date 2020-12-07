@@ -44,6 +44,61 @@ When a user hovers the mouse pointer on a series point, the **PieChart** fires t
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart
+            @point-hover-changed="onPointHoverChanged"
+            ... >
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+
+        methods: {
+            onPointHoverChanged({ target: point }) {
+                if (point.isHovered()) {
+                    // Command to execute when the mouse pointer enters the point
+                } else {
+                    // Command to execute when the mouse pointer leaves the point
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    const onPointHoverChanged = ({ target: point }) => {
+        if (point.isHovered()) {
+            // Command to execute when the mouse pointer enters the point */}
+        } else {
+            // Command to execute when the mouse pointer leaves the point */}
+        }
+    };
+
+    const App = () => {
+        return (
+            <PieChart
+                onPointHoverChanged={onPointHoverChanged}
+                ... >
+            </PieChart>
+        );
+    };
+
+    export default App;
+
 ---
 
 Subscribe to the **pointHoverChanged** event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Methods/#oneventName_eventHandler') method if you are going to change the event handler at runtime or if you need to attach several handlers to it. This approach is more typical of jQuery.

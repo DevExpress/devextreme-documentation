@@ -31,7 +31,7 @@ The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/Ap
 <!-- Description goes here -->
 
 ##### field(rowInfo.key): any
-<!-- Description goes here -->
+The row's key. If a field providing keys is not specified in the data source, the whole [data object](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource) is considered the key.
 
 ##### field(rowInfo.rowIndex): Number
 <!-- Description goes here -->

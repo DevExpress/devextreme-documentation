@@ -55,8 +55,7 @@ The **PieChart** provides an API for showing and hiding a series point at runtim
     <!-- tab: App.vue -->
     <template> 
         <DxPieChart
-            @legend-click="onLegendClick"
-            ... >
+            @legend-click="onLegendClick">
         </DxPieChart>
     </template>
 
@@ -103,8 +102,7 @@ The **PieChart** provides an API for showing and hiding a series point at runtim
     const App = () => {
         return (
             <PieChart
-                onLegendClick={onLegendClick}
-                ... >
+                onLegendClick={onLegendClick}>
             </PieChart>
         );
     };

@@ -82,9 +82,9 @@ When a user hovers the mouse pointer on a series point, the **PieChart** fires t
 
     const onPointHoverChanged = ({ target: point }) => {
         if (point.isHovered()) {
-            // Command to execute when the mouse pointer enters the point */}
+            // Command to execute when the mouse pointer enters the point
         } else {
-            // Command to execute when the mouse pointer leaves the point */}
+            // Command to execute when the mouse pointer leaves the point
         }
     };
 

@@ -50,8 +50,7 @@ When a user selects a series point, the **PieChart** fires the [pointSelectionCh
     <!-- tab: App.vue -->
     <template> 
         <DxPieChart
-            @point-selection-changed="onPointSelectionChanged"
-            ... >
+            @point-selection-changed="onPointSelectionChanged">
         </DxPieChart>
     </template>
 
@@ -92,8 +91,7 @@ When a user selects a series point, the **PieChart** fires the [pointSelectionCh
     const App = () => {
         return (
             <PieChart
-                onPointSelectionChanged={onPointSelectionChanged}
-                ... >
+                onPointSelectionChanged={onPointSelectionChanged}>
             </PieChart>
         );
     };

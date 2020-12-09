@@ -172,7 +172,7 @@ Commonly, a chart contains several series, and many of them have the same argume
     <template> 
         <DxChart ...
             :data-source="fruitProduction">
-            <DxCommonSeriesSettings argument-field="fruit"/>
+            <DxCommonSeriesSettings argument-field="fruit" />
             <DxSeries
                 value-field="year2014"
                 name="2014"

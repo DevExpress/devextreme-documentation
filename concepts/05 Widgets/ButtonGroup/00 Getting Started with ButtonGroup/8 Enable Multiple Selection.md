@@ -27,7 +27,7 @@ Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Confi
     <dx-button-group ...
         selectionMode="multiple"
         [(selectedItemKeys)]="selectedFontStyleNames"
-        (onSelectionChanged)="logSelectionChanged($event)">
+        (onSelectionChanged)="logSelectionChanged()">
     </dx-button-group>
 
     <!-- tab: app.component.ts -->

@@ -132,7 +132,7 @@ You can disable the selection capability by settings the **series**.[selectionMo
     <!-- tab: App.vue -->
     <template> 
         <DxPieChart ... >
-            <DxSeries selection-mode="none"/>
+            <DxSeries selection-mode="none" />
         </DxPieChart>
     </template>
 

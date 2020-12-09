@@ -261,9 +261,8 @@ Settings specified for a series apply to all its points. If you need to customiz
 
     const App = () => {
         return (
-            <PieChart
-                customizePoint={customizePoint}
-                ... >
+            <PieChart ...
+                customizePoint={customizePoint}>
                 <Series color="blue" />
             </PieChart>
         );

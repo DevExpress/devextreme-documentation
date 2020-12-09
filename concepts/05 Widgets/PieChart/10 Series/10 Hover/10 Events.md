@@ -90,9 +90,8 @@ When a user hovers the mouse pointer on a series point, the **PieChart** fires t
 
     const App = () => {
         return (
-            <PieChart
-                onPointHoverChanged={onPointHoverChanged}
-                ... >
+            <PieChart ...
+                onPointHoverChanged={onPointHoverChanged}>
             </PieChart>
         );
     };

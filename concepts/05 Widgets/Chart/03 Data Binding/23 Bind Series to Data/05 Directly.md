@@ -230,9 +230,8 @@ Commonly, a chart contains several series, and many of them have the same argume
 
     const App = () => {
         return (
-            <Chart
-                dataSource={fruitProduction}
-                ... >
+            <Chart ...
+                dataSource={fruitProduction}>
                 <CommonSeriesSettings argumentField="fruit" />
                 <Series
                     valueField="year2014"

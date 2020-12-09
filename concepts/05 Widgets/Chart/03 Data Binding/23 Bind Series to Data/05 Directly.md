@@ -50,9 +50,8 @@ To bind a series to data directly, specify which data source field provides argu
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart
-            :data-source="fruitProduction"
-            ... >
+        <DxChart ... 
+            :data-source="fruitProduction">
             <DxSeries
                 argument-field="fruit"
                 value-field="year2014"

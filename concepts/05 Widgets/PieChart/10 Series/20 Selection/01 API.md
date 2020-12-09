@@ -90,9 +90,8 @@ The selection capability is not provided out of the box, but it can be implement
 
     const App = () => {
         return (
-            <PieChart
-                onPointClick={onPointClick}
-                ... >
+            <PieChart ...
+                onPointClick={onPointClick}>
             </PieChart>
         );
     };

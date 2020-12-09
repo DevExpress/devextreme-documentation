@@ -14,7 +14,7 @@ You can switch a series point into the hover state and back again by calling its
     import { DxPieChartModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        toggleSeriesHoverState (point) {
+        togglePointHoverState (point) {
             !point.isHovered() ? point.hover() : point.clearHover();
         }
     }
@@ -25,6 +25,49 @@ You can switch a series point into the hover state and back again by calling its
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+
+        methods: {
+            togglePointHoverState(point) {
+                !point.isHovered() ? point.hover() : point.clearHover();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    const togglePointHoverState = (point) => {
+        !point.isHovered() ? point.hover() : point.clearHover();
+    };
+
+    const App = () => {
+        return (
+            <PieChart ... >
+            </PieChart>
+        );
+    };
+
+    export default App;
 
 ---
 

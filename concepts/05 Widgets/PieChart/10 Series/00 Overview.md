@@ -35,6 +35,41 @@ The **Pie** series type is used by default, but you can change it to **Doughnut*
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            type="doughnut"> <!-- or "donut" -->
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    const App = () => {
+        return (
+            <PieChart ...
+                type="doughnut"> {/* or "donut" */}
+            </PieChart>
+        );
+    };
+
+    export default App;
+
 ---
 
 Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/') option to configure a series. Pass an object to this option if you have only one series, or an array of objects when you have multiple series. In the latter case, you can also specify settings common for all series in the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonSeriesSettings/') object, for example: 
@@ -80,6 +115,57 @@ Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxCommonSeriesSettings
+                argument-field="year"
+            />
+            <DxSeries value-field="men" />
+            <DxSeries value-field="women" />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxCommonSeriesSettings,
+        DxSeries
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxCommonSeriesSettings,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        CommonSeriesSettings,
+        Series
+    } from 'devextreme-react/pie-chart';
+
+    const App = () => {
+        return (
+            <PieChart ... >
+                <CommonSeriesSettings
+                    argumentField="year"
+                />
+                <Series valueField="men" />
+                <Series valueField="women" />
+            </PieChart>
+        );
+    };
+
+    export default App;
 
 ---
 
@@ -127,6 +213,62 @@ Settings specified for a series apply to all its points. If you need to customiz
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            :customize-point="customizePoint">
+            <DxSeries color="blue" />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries
+        },
+
+        methods: {
+            // All series points with the value more than 100 turn red
+            // Other series points remain blue
+            customizePoint(pointInfo) {
+                return pointInfo.value > 100 ? { color: 'red' } : { };
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series
+    } from 'devextreme-react/pie-chart';
+
+    // All series points with the value more than 100 turn red
+    // Other series points remain blue
+    const customizePoint = (pointInfo) => {
+        return pointInfo.value > 100 ? { color: 'red' } : { };
+    };
+
+    const App = () => {
+        return (
+            <PieChart ...
+                customizePoint={customizePoint}>
+                <Series color="blue" />
+            </PieChart>
+        );
+    };
+
+    export default App;
 
 ---
 

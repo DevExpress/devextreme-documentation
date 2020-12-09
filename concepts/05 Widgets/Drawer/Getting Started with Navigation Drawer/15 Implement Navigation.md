@@ -74,7 +74,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate)**
 
-    Specify the elements that the template should render and wrap them in an element with the <a href="https://angular.io/api/router/RouterLink" target="_blank">RouterLink</a> directive. In the code below, the *"links"* **itemTemplate** renders an icon and a text.
+    Specify the elements that the template should render and wrap them in an element with the <a href="https://angular.io/api/router/RouterLink" target="_blank">RouterLink</a> directive. In the code below, the *"links"* **itemTemplate** renders an icon and text.
 
 1. **Enable item selection**
 
@@ -228,7 +228,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate)**
 
-    Specify the elements that the template should render and wrap them in a <a href="https://router.vuejs.org/api/#router-link" target="_blank">`<router-link>`</a>. In the code below, the *"links"* **itemTemplate** renders an icon and a text.
+    Specify the elements that the template should render and wrap them in a <a href="https://router.vuejs.org/api/#router-link" target="_blank">`<router-link>`</a> component. In the code below, the *"links"* **itemTemplate** renders an icon and text.
 
 1. **Enable item selection**
 
@@ -405,7 +405,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Define the [itemRender](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemRender) function**
 
-    Specify the elements that the function should render and wrap them in a <a href="https://reactrouter.com/web/api/Link" target="_blank">`Link`</a>. In the code below, the `renderItem` function renders an icon and a text.
+    Specify the elements that the function should render and wrap them in a <a href="https://reactrouter.com/web/api/Link" target="_blank">`Link`</a>. In the code below, the `renderItem` function renders an icon and text.
 
 1. **Enable item selection**
 

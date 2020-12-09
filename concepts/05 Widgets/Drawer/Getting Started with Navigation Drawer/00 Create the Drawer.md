@@ -139,16 +139,16 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
 
 ##### React 
 
-    <!-- tab: DxComponent.js -->
+    <!-- tab: NavigationDrawer.js -->
     import React from "react";
     
     import "devextreme/dist/css/dx.common.css";
     import "devextreme/dist/css/dx.light.css";
-    import "./DxComponent.css";
+    import "./NavigationDrawer.css";
 
     import { Drawer } from "devextreme-react/drawer";
 
-    class DxComponent extends React.Component {
+    class NavigationDrawer extends React.Component {
         constructor(props) {
             super(props);
         }
@@ -165,9 +165,9 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
             );
         }
     }
-    export default DxComponent;
+    export default NavigationDrawer;
 
-    <!-- tab: DxComponent.css -->
+    <!-- tab: NavigationDrawer.css -->
     .dx-overlay-content {
         background-color: lightgray;
     }
@@ -179,13 +179,13 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
     <!-- tab: App.js -->
     import React, { Component } from "react";
 
-    import DxComponent from "./components/DxComponent";
+    import NavigationDrawer from "./components/NavigationDrawer";
 
     class App extends Component {
         render() {
             return (
                 <div className="App">
-                    <DxComponent />
+                    <NavigationDrawer />
                 </div>
             );
         }

@@ -22,7 +22,7 @@ Assign a function to the [onSelectionChanged](/api-reference/10%20UI%20Widgets/d
 
     <!-- tab: app.component.html -->
     <dx-button-group ...
-        (onSelectionChanged)="logSelectionChanged($event)">
+        (onSelectionChanged)="logSelectionChanged()">
     </dx-button-group>
 
     <!-- tab: app.component.ts -->

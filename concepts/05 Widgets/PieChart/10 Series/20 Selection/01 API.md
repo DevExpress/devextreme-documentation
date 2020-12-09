@@ -195,9 +195,8 @@ In the previous code example, a specific point's selection was cleared. Call a s
 
     const App = () => {
         return (
-            <PieChart
-                onPointClick={onPointClick}
-                ... >
+            <PieChart ...
+                onPointClick={onPointClick}>
             </PieChart>
         );
     };

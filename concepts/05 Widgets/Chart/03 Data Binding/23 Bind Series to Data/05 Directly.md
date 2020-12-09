@@ -99,9 +99,8 @@ To bind a series to data directly, specify which data source field provides argu
 
     const App = () => {
         return (
-            <Chart
-                dataSource={fruitProduction}
-                ... >
+            <Chart ... 
+                dataSource={fruitProduction}>
                 <Series
                     argumentField="fruit"
                     valueField="year2014"

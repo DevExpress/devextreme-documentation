@@ -70,15 +70,11 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
 
     export class AppComponent {
         isDrawerOpen: Boolean = false;
-        buttonOptions: any;
-
-        constructor() {
-            this.buttonOptions = {
-                icon: "menu",
-                onClick: () => {
-                    this.isDrawerOpen = !this.isDrawerOpen;
-                }
-            };
+        buttonOptions: any = {
+            icon: "menu",
+            onClick: () => {
+                this.isDrawerOpen = !this.isDrawerOpen;
+            }
         }
     }
 
@@ -127,7 +123,7 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
                 />
             </DxToolbar>
             <DxDrawer ...
-                v-model:opened="isDrawerOpen">
+                :opened.sync="isDrawerOpen">
                 <!-- ... -->
             </DxDrawer>
         </div>
@@ -174,12 +170,12 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
 
 ##### React
 
-    <!-- tab: DxComponent.js -->
+    <!-- tab: NavigationDrawer.js -->
     // ...
     import { Drawer } from "devextreme-react/drawer";
     import { Toolbar, Item } from "devextreme-react/toolbar";
 
-    class DxComponent extends React.Component {
+    class NavigationDrawer extends React.Component {
         constructor(props) {
             super(props);
             this.state = {
@@ -209,9 +205,9 @@ In the following code, a toolbar button outside the **Drawer** opens and closes 
             );
         }
     }
-    export default DxComponent;
+    export default NavigationDrawer;
 
-    <!-- tab: DxComponent.css -->
+    <!-- tab: NavigationDrawer.css -->
     /* ... */
     #toolbar {
         background-color: rgba(191, 191, 191, .15);

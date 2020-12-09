@@ -37,9 +37,9 @@ When you open the **Drawer**, it can slide in or expand from the closed position
 
 ##### React
 
-    <!-- tab: DxComponent.js -->
+    <!-- tab: NavigationDrawer.js -->
     // ...
-    class DxComponent extends React.Component {
+    class NavigationDrawer extends React.Component {
         // ...
         render() {
             return (
@@ -51,7 +51,7 @@ When you open the **Drawer**, it can slide in or expand from the closed position
             );
         }
     }
-    export default DxComponent;
+    export default NavigationDrawer;
 
 ##### ASP.NET MVC Controls
 

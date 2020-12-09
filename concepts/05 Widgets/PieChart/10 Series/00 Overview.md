@@ -220,7 +220,7 @@ Settings specified for a series apply to all its points. If you need to customiz
     <template> 
         <DxPieChart ...
             :customize-point="customizePoint">
-            <DxSeries color="blue"/>
+            <DxSeries color="blue" />
         </DxPieChart>
     </template>
 

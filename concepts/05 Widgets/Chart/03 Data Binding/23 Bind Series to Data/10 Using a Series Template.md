@@ -73,7 +73,7 @@ After that, use the **seriesTemplate**.[nameField](/api-reference/20%20Data%20Vi
                 value-field="produced" <!-- or other data fields -->
                 type="bar"
             />
-            <DxSeriesTemplate name-field="year"/>
+            <DxSeriesTemplate name-field="year" />
         </DxChart>
     </template>
 

@@ -151,9 +151,8 @@ In the previous code example, a specific point's selection was cleared. Call a s
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            @point-click="onPointClick"
-            ... >
+        <DxPieChart ...
+            @point-click="onPointClick">
         </DxPieChart>
     </template>
 

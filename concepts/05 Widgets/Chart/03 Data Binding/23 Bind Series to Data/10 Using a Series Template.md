@@ -207,9 +207,8 @@ If you need to change options of a particular series, return an [object with the
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart
-            :data-source="fruitProduction"
-            ... >
+        <DxChart ...
+            :data-source="fruitProduction">
             <DxCommonSeriesSettings
                 argument-field="fruit"
                 value-field="produced"

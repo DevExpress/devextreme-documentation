@@ -127,9 +127,8 @@ After that, use the **seriesTemplate**.[nameField](/api-reference/20%20Data%20Vi
 
     const App = () => {
         return (
-            <Chart
-                dataSource={fruitProduction}
-                ... >
+            <Chart ...
+                dataSource={fruitProduction}>
                 <CommonSeriesSettings
                     argumentField="fruit"
                     valueField="produced" {/* or other data fields */}

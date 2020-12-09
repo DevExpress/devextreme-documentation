@@ -66,9 +66,8 @@ After that, use the **seriesTemplate**.[nameField](/api-reference/20%20Data%20Vi
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart
-            :data-source="fruitProduction"
-            ... >
+        <DxChart ...
+            :data-source="fruitProduction">
             <DxCommonSeriesSettings
                 argument-field="fruit"
                 value-field="produced" <!-- or other data fields -->

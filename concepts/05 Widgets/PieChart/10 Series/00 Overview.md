@@ -124,8 +124,8 @@ Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1
             <DxCommonSeriesSettings
                 argument-field="year"
             />
-            <DxSeries value-field="men"/>
-            <DxSeries value-field="women"/>
+            <DxSeries value-field="men" />
+            <DxSeries value-field="women" />
         </DxPieChart>
     </template>
 

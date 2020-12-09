@@ -62,9 +62,8 @@ The **Pie** series type is used by default, but you can change it to **Doughnut*
 
     const App = () => {
         return (
-            <PieChart
-                type="doughnut" {/* or "donut" */}
-                ... >
+            <PieChart ...
+                type="doughnut"> {/* or "donut" */}
             </PieChart>
         );
     };

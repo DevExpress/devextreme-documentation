@@ -49,9 +49,8 @@ The selection capability is not provided out of the box, but it can be implement
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            @point-click="onPointClick"
-            ... >
+        <DxPieChart ...
+            @point-click="onPointClick">
         </DxPieChart>
     </template>
 

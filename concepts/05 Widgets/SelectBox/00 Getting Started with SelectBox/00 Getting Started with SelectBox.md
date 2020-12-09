@@ -6,6 +6,6 @@ In this tutorial, we will create the **SelectBox** and configure its basic featu
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/SelectBox/index.html, /Content/Applications/20_2/GettingStartedWith/SelectBox/index.js, /Content/Applications/20_2/GettingStartedWith/SelectBox/index.css"></div>
 
-Refer to the following sections for details on each configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-selectbox" target="_blank">getting-started-with-selectbox</a>
+Refer to the following sections for details on each configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-selectbox" target="_blank">getting-started-with-selectbox</a>.
 
 [tags] dxselectbox

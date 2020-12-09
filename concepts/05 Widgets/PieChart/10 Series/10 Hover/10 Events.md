@@ -48,9 +48,8 @@ When a user hovers the mouse pointer on a series point, the **PieChart** fires t
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            @point-hover-changed="onPointHoverChanged"
-            ... >
+        <DxPieChart ...
+            @point-hover-changed="onPointHoverChanged">
         </DxPieChart>
     </template>
 

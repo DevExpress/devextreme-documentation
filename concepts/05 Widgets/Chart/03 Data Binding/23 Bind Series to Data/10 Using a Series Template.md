@@ -275,9 +275,8 @@ If you need to change options of a particular series, return an [object with the
 
     const App = () => {
         return (
-            <Chart
-                dataSource={fruitProduction}
-                ... >
+            <Chart ...
+                dataSource={fruitProduction}>
                 <CommonSeriesSettings
                     argumentField="fruit"
                     valueField="produced"

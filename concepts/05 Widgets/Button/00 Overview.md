@@ -97,11 +97,11 @@ The following code adds a simple **Button** to your page.
 In the previous code, the [click](/api-reference/10%20UI%20Widgets/dxButton/4%20Events/click.md '/Documentation/ApiReference/UI_Widgets/dxButton/Events/#click') event is handled using the [onClick](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#onClick') option. Alternatively, you can attach one or several handlers to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxButton/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
-    var clickHandler1 = function (e) {
+    const clickHandler1 = function (e) {
         // First handler of the "click" event
     };
 
-    var clickHandler2 = function (e) {
+    const clickHandler2 = function (e) {
         // Second handler of the "click" event
     };
 

@@ -259,7 +259,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
                 { text: "Delete", icon: 'close' }
             ],
             itemTemplate: function (itemData, itemIndex, itemElement) {
-                var linkContainer = $("<div class='action-sheet-button'>");
+                const linkContainer = $("<div class='action-sheet-button'>");
                 linkContainer.append("<a href='#'>" + itemData.text + "</a>");
                 itemElement.append(linkContainer);
             }
@@ -281,7 +281,7 @@ You can also customize an individual **ActionSheet** button. For this purpose, d
         <!-- ... -->
     </script>
 
-    <!--JavaScript-->var actionSheetData = [
+    <!--JavaScript-->const actionSheetData = [
         { text: "Reply", template: $('#individualTemplate') },
         { text: "Reply All" },
         // ...

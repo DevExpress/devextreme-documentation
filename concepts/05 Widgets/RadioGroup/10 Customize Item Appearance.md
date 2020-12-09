@@ -214,7 +214,7 @@ You can also customize an individual item. For this purpose, declare a template 
     </script>
 
     <!--JavaScript-->
-    var radioGroupItems = [{
+    const radioGroupItems = [{
         text: "Low",
         template: $("#individualTemplate")
     },

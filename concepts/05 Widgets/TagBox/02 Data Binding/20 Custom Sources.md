@@ -52,7 +52,7 @@ If the **TagBox** allows a user [to add custom items](/concepts/05%20Widgets/Tag
             dataSource: new DevExpress.data.DataSource({
                 key: "ID",
                 load: function(loadOptions) {
-                    var d = $.Deferred(),
+                    const d = $.Deferred(),
                         params = {};
                     [
                         "skip",     

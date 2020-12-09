@@ -20,7 +20,7 @@ If the widget displays a grouped list, specify the target item index using an ob
 <!---->
 
     <!--JavaScript-->
-    var list = $("#myList").dxList("instance");
+    const list = $("#myList").dxList("instance");
     list.scrollToItem({
         group: 3,
         item: 8

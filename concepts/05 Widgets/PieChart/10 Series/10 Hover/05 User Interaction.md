@@ -37,6 +37,57 @@ A series point's style changes when a user hovers the mouse pointer over it.  Th
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxSeries>
+                <DxHoverStyle>
+                    <!-- ... -->
+                </DxHoverStyle>
+            </DxSeries>
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries,
+        DxHoverStyle
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries,
+            DxHoverStyle
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series,
+        HoverStyle
+    } from 'devextreme-react/pie-chart';
+
+    const App = () => {
+        return (
+            <PieChart ... >
+                <Series>
+                    <HoverStyle>
+                        {/* ... */}
+                    </HoverStyle>
+                </Series>
+            </PieChart>
+        );
+    };
+
+    export default App;
+
 ---
 
 You can disable this feature by assigning *"none"* to the **series**.[hoverMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/hoverMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#hoverMode') option.
@@ -73,5 +124,45 @@ You can disable this feature by assigning *"none"* to the **series**.[hoverMode]
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ... >
+            <DxSeries hover-mode="none" />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSeries
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSeries
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart, {
+        Series
+    } from 'devextreme-react/pie-chart';
+
+    const App = () => {
+        return (
+            <PieChart ... >
+                <Series hoverMode="none" />
+            </PieChart>
+        );
+    };
+
+    export default App;
 
 ---

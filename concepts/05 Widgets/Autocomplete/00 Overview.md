@@ -13,7 +13,7 @@ The following code adds the **Autocomplete** to your page. The simplest configur
     <div id="autocompleteContainer"></div>
 
     <!--JavaScript-->
-    var autocompleteData = [
+    const autocompleteData = [
         "Afghanistan",
         "Albania",
         // ...
@@ -117,7 +117,7 @@ If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%
 ##### jQuery
 
     <!--JavaScript-->
-    var autocompleteData = [
+    const autocompleteData = [
         { country: "Afghanistan", capital: "Kabul" },
         { country: "Albania", capital: "Tirana" },
         // ...
@@ -226,7 +226,7 @@ Usually, the data field that provides suggestions is the same data field that is
 ##### jQuery
 
     <!--JavaScript-->
-    var autocompleteData = [
+    const autocompleteData = [
         { country: "Afghanistan", capital: "Kabul" },
         { country: "Albania", capital: "Tirana" },
         // ...

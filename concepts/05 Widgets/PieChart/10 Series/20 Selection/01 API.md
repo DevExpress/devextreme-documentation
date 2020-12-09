@@ -49,9 +49,8 @@ The selection capability is not provided out of the box, but it can be implement
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            @point-click="onPointClick"
-            ... >
+        <DxPieChart ...
+            @point-click="onPointClick">
         </DxPieChart>
     </template>
 
@@ -91,9 +90,8 @@ The selection capability is not provided out of the box, but it can be implement
 
     const App = () => {
         return (
-            <PieChart
-                onPointClick={onPointClick}
-                ... >
+            <PieChart ...
+                onPointClick={onPointClick}>
             </PieChart>
         );
     };
@@ -153,9 +151,8 @@ In the previous code example, a specific point's selection was cleared. Call a s
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            @point-click="onPointClick"
-            ... >
+        <DxPieChart ...
+            @point-click="onPointClick">
         </DxPieChart>
     </template>
 
@@ -197,9 +194,8 @@ In the previous code example, a specific point's selection was cleared. Call a s
 
     const App = () => {
         return (
-            <PieChart
-                onPointClick={onPointClick}
-                ... >
+            <PieChart ...
+                onPointClick={onPointClick}>
             </PieChart>
         );
     };

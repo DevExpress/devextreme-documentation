@@ -39,9 +39,8 @@ The **Pie** series type is used by default, but you can change it to **Doughnut*
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            type="doughnut" <!-- or "donut" -->
-            ... >
+        <DxPieChart ...
+            type="doughnut"> <!-- or "donut" -->
         </DxPieChart>
     </template>
 
@@ -63,9 +62,8 @@ The **Pie** series type is used by default, but you can change it to **Doughnut*
 
     const App = () => {
         return (
-            <PieChart
-                type="doughnut" {/* or "donut" */}
-                ... >
+            <PieChart ...
+                type="doughnut"> {/* or "donut" */}
             </PieChart>
         );
     };
@@ -220,9 +218,8 @@ Settings specified for a series apply to all its points. If you need to customiz
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            :customize-point="customizePoint"
-            ... >
+        <DxPieChart ...
+            :customize-point="customizePoint">
             <DxSeries color="blue"/>
         </DxPieChart>
     </template>
@@ -264,9 +261,8 @@ Settings specified for a series apply to all its points. If you need to customiz
 
     const App = () => {
         return (
-            <PieChart
-                customizePoint={customizePoint}
-                ... >
+            <PieChart ...
+                customizePoint={customizePoint}>
                 <Series color="blue" />
             </PieChart>
         );

@@ -50,9 +50,8 @@ To bind a series to data directly, specify which data source field provides argu
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart
-            :data-source="fruitProduction"
-            ... >
+        <DxChart ... 
+            :data-source="fruitProduction">
             <DxSeries
                 argument-field="fruit"
                 value-field="year2014"
@@ -100,9 +99,8 @@ To bind a series to data directly, specify which data source field provides argu
 
     const App = () => {
         return (
-            <Chart
-                dataSource={fruitProduction}
-                ... >
+            <Chart ... 
+                dataSource={fruitProduction}>
                 <Series
                     argumentField="fruit"
                     valueField="year2014"
@@ -172,9 +170,8 @@ Commonly, a chart contains several series, and many of them have the same argume
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart
-            :data-source="fruitProduction"
-            ... >
+        <DxChart ...
+            :data-source="fruitProduction">
             <DxCommonSeriesSettings argument-field="fruit"/>
             <DxSeries
                 value-field="year2014"
@@ -233,9 +230,8 @@ Commonly, a chart contains several series, and many of them have the same argume
 
     const App = () => {
         return (
-            <Chart
-                dataSource={fruitProduction}
-                ... >
+            <Chart ...
+                dataSource={fruitProduction}>
                 <CommonSeriesSettings argumentField="fruit" />
                 <Series
                     valueField="year2014"

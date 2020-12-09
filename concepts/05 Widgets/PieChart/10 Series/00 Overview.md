@@ -39,9 +39,8 @@ The **Pie** series type is used by default, but you can change it to **Doughnut*
 
     <!-- tab: App.vue -->
     <template> 
-        <DxPieChart
-            type="doughnut" <!-- or "donut" -->
-            ... >
+        <DxPieChart ...
+            type="doughnut"> <!-- or "donut" -->
         </DxPieChart>
     </template>
 

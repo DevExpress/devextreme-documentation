@@ -130,7 +130,7 @@ You can disable this feature by assigning *"none"* to the **series**.[hoverMode]
     <!-- tab: App.vue -->
     <template> 
         <DxPieChart ... >
-            <DxSeries hover-mode="none"/>
+            <DxSeries hover-mode="none" />
         </DxPieChart>
     </template>
 

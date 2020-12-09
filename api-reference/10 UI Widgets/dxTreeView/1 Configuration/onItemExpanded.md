@@ -10,7 +10,7 @@ A function that is executed when a tree view item is expanded.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeView
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,11 +28,14 @@ The expanded item's data.
 ##### field(e.itemIndex): Number
 The item's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.node): dxTreeViewNode
 The item's node.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

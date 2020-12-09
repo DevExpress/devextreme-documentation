@@ -27,5 +27,8 @@ The data object of the row being dragged.
 ##### field(e.itemElement): dxElement
 #include draganddrop-ref-itemelementparam
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel row expansion.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,8 +22,11 @@ The widget's instance.
 ##### field(e.key): any
 The key of the group or master row.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 To cancel row expansion, assign **true** to the **cancel** field of the function parameter.

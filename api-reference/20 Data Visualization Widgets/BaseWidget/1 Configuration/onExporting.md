@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to prevent exporting.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): BaseWidget
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -25,8 +25,11 @@ The name of the file to which the widget is about to be exported.
 ##### field(e.format): String
 The resulting file format. One of PNG, PDF, JPEG, SVG and GIF.
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

@@ -10,7 +10,7 @@ A function that is executed after selecting a row or clearing its selection.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.currentDeselectedRowKeys): Array<any>
@@ -22,7 +22,7 @@ The keys of the rows that have been selected.
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.selectedRowKeys): Array<any>
@@ -31,6 +31,9 @@ The keys of all selected rows.
 ##### field(e.selectedRowsData): Array<Object>
 The data of all selected rows.     
 Does not include [calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue').
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 This function has the following specifics:

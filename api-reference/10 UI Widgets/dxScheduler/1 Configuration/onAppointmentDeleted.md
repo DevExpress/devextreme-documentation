@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.appointmentData): Object
 The deleted appointment's data.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,7 +22,10 @@ The widget's instance.
 ##### field(e.error): Error
 The standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">Error</a> object that defines the occurred error.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

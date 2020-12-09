@@ -18,4 +18,7 @@ The widget instance's name.
 ##### field(e.name): String
 The name of the clicked item.
 
+##### return: any
+<!-- Description goes here -->
+
 ---

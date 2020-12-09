@@ -19,7 +19,7 @@ Allows you to cancel focusing a new cell.
 ##### field(e.columns): Array<dxTreeListColumn>
 The visible columns' properties.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -31,7 +31,7 @@ The widget's instance.
 ##### field(e.isHighlighted): Boolean
 **true** if the cell is highlighted; otherwise **false**, even if the cell's row is highlighted.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newColumnIndex): Number
@@ -48,6 +48,9 @@ The index of the previously focused cell's row.
 
 ##### field(e.rows): Array<dxTreeListRowObject>
 The visible rows' properties.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

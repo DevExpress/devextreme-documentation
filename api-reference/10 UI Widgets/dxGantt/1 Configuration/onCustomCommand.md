@@ -10,7 +10,7 @@ A function that is executed after a custom command item was clicked. Allows you 
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The widget instance's name.
 
 ##### field(e.element): dxElement
@@ -18,6 +18,9 @@ The widget instance's name.
 
 ##### field(e.name): String
 The name of the clicked item.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

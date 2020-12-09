@@ -13,7 +13,7 @@ Information about the event that caused the function execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel exporting data.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,8 +22,11 @@ The widget's instance.
 ##### field(e.fileName): String
 The name of the file where grid data is about to be exported.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 You can use this function to adjust column options before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#visible') option's value is changed to export the hidden `ID` column.  

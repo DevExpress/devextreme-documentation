@@ -24,5 +24,8 @@ The data object of the appointment being dragged.
 ##### field(e.itemElement): dxElement
 #include draganddrop-ref-itemelementparam
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

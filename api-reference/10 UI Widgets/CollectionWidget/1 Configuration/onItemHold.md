@@ -10,7 +10,7 @@ A function that is executed when a collection item has been held for a [specifie
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): CollectionWidget
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,7 +28,10 @@ The data of the item being held.
 ##### field(e.itemIndex): Number
 The item's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

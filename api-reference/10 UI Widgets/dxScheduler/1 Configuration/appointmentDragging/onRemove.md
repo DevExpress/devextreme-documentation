@@ -27,5 +27,8 @@ The data object of the appointment being dragged.
 ##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the appointment's target widget.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

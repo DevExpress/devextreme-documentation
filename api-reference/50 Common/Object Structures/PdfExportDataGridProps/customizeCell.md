@@ -15,5 +15,8 @@ type: function(options)
 ##### field(options.pdfCell): Object
 <!-- Description goes here -->
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

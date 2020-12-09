@@ -14,7 +14,7 @@ Information about the event that caused the function's execution.
 **true**, a Promise resolved with **true**, or a rejected Promise stops row updating.       
 **false** or a Promise resolved with **false** or **undefined** continues row updating.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -23,7 +23,7 @@ The widget's instance.
 ##### field(e.key): any
 The row's key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newData): Object
@@ -31,6 +31,9 @@ The row's updated data.
 
 ##### field(e.oldData): Object
 The row's old data.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 [note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.

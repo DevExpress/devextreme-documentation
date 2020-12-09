@@ -16,7 +16,7 @@ The total count of the uploaded bytes.
 ##### field(e.bytesTotal): Number
 The total count of bytes in the XMLHttpRequest.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileUploader
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,7 +28,7 @@ The widget's instance.
 ##### field(e.file): File
 An uploaded file.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.request): XMLHttpRequest
@@ -36,5 +36,8 @@ An XMLHttpRequest for the file.
 
 ##### field(e.segmentSize): Number
 The size of the uploaded file segment.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

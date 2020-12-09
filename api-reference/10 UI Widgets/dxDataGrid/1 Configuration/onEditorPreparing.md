@@ -14,7 +14,7 @@ Information about the event that caused the function's execution.
 Allows you to cancel the editor's creation.        
 You can set this field's value to **true** and implement a custom editor.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The widget's instance.
 
 ##### field(e.dataField): String
@@ -36,7 +36,7 @@ Gets and sets the editor's configuration. [editorOptions](/api-reference/10%20UI
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.parentType): String
@@ -63,6 +63,9 @@ The editor's value. This field is read-only. To change the editor's value, use t
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 Use this function to:

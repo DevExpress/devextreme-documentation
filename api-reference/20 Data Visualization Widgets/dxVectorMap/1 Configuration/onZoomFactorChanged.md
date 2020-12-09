@@ -11,17 +11,20 @@ A function that is executed each time the zoom factor is changed.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxVectorMap
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.zoomFactor): Number
 The updated zoom factor.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #include common-demobutton with {

@@ -22,17 +22,20 @@ The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20G
 ##### field(e.columnIndex): Number
 The position of a cell's column.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxPivotGrid
 The widget [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Methods/#instance').
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.rowIndex): Number
 The position of a cell's row.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

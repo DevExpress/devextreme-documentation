@@ -16,17 +16,20 @@ Set this field to **true** if the default saving logic should be disabled.
 ##### field(e.changes): Array<any>
 Pending row changes; a copy of the **editing**.[changes]({basewidgetpath}/Configuration/editing/#changes) array.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.promise): Promise<void>
 Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

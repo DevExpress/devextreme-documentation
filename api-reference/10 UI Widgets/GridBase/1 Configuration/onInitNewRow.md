@@ -10,7 +10,7 @@ A function that is executed before a new row is added to the widget.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.data): Object
@@ -19,11 +19,14 @@ The data of the inserted row; initially empty.
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.promise): Promise<void>
 Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 You can use this function to populate a new row with data. Add fields to the **data** object that correspond to the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') object's fields. Note that the **data** object can omit some fields from the data source object. Add only those fields that should initialize specific cells of a new row.

@@ -11,13 +11,16 @@ A function that is executed when a tooltip appears.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): BaseSparkline
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

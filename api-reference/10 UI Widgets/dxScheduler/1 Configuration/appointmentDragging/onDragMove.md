@@ -33,5 +33,8 @@ The instance of the appointment's target widget.
 ##### field(e.toData): any
 Custom [data](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/appointmentDragging/#data') associated with the target widget.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

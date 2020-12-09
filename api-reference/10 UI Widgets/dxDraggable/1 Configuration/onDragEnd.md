@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel the gesture.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDraggable
 The widget that raised the event.
 
 ##### field(e.element): dxElement
@@ -34,7 +34,7 @@ The dragged item's data.
 ##### field(e.itemElement): dxElement
 #include draganddrop-ref-itemelementparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.toComponent): dxSortable | dxDraggable
@@ -42,6 +42,9 @@ The instance of the item's target widget.
 
 ##### field(e.toData): any
 Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the target widget.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel focusing a new row.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,7 +22,7 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newRowIndex): Number
@@ -36,6 +36,9 @@ The index of the previously focused row.
 
 ##### field(e.rows): Array<dxTreeListRowObject>
 The visible rows' properties.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

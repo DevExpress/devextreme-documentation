@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.area): String
 The clicked [area's](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') type.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxPivotGridFieldChooser
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,7 +28,10 @@ The [configuration](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Con
 ##### field(e.items): Array<Object>
 Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/items/') option description.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

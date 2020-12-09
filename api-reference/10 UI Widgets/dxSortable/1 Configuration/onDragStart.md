@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel the gesture.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxSortable
 The widget that raised the event.
 
 ##### field(e.element): dxElement
@@ -34,8 +34,11 @@ The dragged item's data.
 ##### field(e.itemElement): dxElement
 #include draganddrop-ref-itemelementparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

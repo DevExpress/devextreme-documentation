@@ -13,13 +13,13 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel replacing ordinary tags with the multi-tag.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTagBox
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only when using Knockout.
 
 ##### field(e.multiTagElement): dxElement
@@ -30,6 +30,9 @@ The currently selected items.
 
 ##### field(e.text): String
 Allows you to change the multi-tag's text.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #include common-demobutton with {

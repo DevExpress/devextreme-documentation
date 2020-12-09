@@ -42,5 +42,8 @@ Custom [data](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/rowDra
 ##### field(e.toIndex): Number
 The position in which the row is placed. If the row is dragged away from the widget, the value is **-1**.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

@@ -10,7 +10,7 @@ A function that is executed when the Enter key has been pressed while an editor 
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxForm
 The widget's instance.
 
 ##### field(e.dataField): String
@@ -19,8 +19,11 @@ The path to the [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configura
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 [important] This function is executed only if the editor raises the **enterKey** event. See the **Events** section in the editor's API reference for the list of events the editor can raise. If the **enterKey** event is absent from the list, but you need to handle the Enter key press, [use another editor](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType').

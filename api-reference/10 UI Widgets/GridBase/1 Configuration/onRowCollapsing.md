@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel row collapsing.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,8 +22,11 @@ The widget's instance.
 ##### field(e.key): any
 The key of the row.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 To cancel row collapsing, assign **true** to the **cancel** field of the function parameter.

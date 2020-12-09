@@ -14,7 +14,7 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel file saving.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxPivotGrid
 The widget's instance.
 
 ##### field(e.data): Blob
@@ -28,5 +28,8 @@ The name of the file to be saved.
 
 ##### field(e.format): String
 The format of the file to be saved. Equals *'EXCEL'* for an Excel file.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

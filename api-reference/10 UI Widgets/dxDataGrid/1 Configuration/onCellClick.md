@@ -19,7 +19,7 @@ This column's [configuration](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Co
 ##### field(e.columnIndex): Number
 The index of the column to which the cell belongs. For details on indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The widget's instance.
 
 ##### field(e.data): Object
@@ -37,7 +37,7 @@ The cell's displayed value. Differs from the **value** field only when the colum
 ##### field(e.key): any
 The row's key. If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.row): dxDataGridRowObject
@@ -54,5 +54,8 @@ The cell's [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Docum
 
 ##### field(e.value): any
 The cell's raw value.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

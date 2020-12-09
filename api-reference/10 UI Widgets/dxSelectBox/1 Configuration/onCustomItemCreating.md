@@ -10,7 +10,7 @@ A function that is executed when a user adds a custom item. Requires [acceptCust
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxSelectBox
 The widget's instance.
 
 ##### field(e.customItem): String | Object | Promise<any>
@@ -19,11 +19,14 @@ The field where to place a custom item.
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.text): String
 The input field's text.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

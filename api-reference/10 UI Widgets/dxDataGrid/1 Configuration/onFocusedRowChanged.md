@@ -10,13 +10,13 @@ A function that is executed after the focused row changes. Applies only to data 
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.row): dxDataGridRowObject
@@ -27,6 +27,9 @@ The row's properties.
 
 ##### field(e.rowIndex): Number
 The row's index.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #include common-demobutton with {

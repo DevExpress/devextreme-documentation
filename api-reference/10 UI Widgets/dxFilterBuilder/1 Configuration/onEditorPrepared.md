@@ -10,7 +10,7 @@ A function that is executed after an editor is created.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFilterBuilder
 The widget's [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Methods/#instance').
 
 ##### field(e.dataField): String
@@ -31,7 +31,7 @@ The editor's name.
 ##### field(e.filterOperation): String
 The applied filter operation.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.readOnly): Boolean
@@ -51,6 +51,9 @@ The editor's value.
 
 ##### field(e.width): Number
 The editor's width.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 The widget offers a user a different editor for entering a value depending on the field's [dataType](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#dataType'): [Calendar](/concepts/05%20Widgets/Calendar/00%20Overview.md '/Documentation/Guide/Widgets/Calendar/Overview/'), [TextBox](/concepts/05%20Widgets/TextBox/00%20Overview.md '/Documentation/Guide/Widgets/TextBox/Overview/'), [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/'), etc. You can customize automatically created editors using this function.

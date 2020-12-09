@@ -11,7 +11,7 @@ A function that is executed when a node is clicked or tapped.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeMap
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -20,11 +20,14 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.node): dxTreeMapNode
 The clicked node; described in the [Node](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/6%20Node '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Node/') section.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 This function is often used to implement item selection as shown in the following code:

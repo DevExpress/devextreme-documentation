@@ -10,7 +10,7 @@ A function that is executed after a shape or connector is double-clicked.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDiagram
 The widget instance's name.
 
 ##### field(e.element): dxElement
@@ -19,7 +19,10 @@ The widget instance's name.
 ##### field(e.item): dxDiagramItem
 A **dxDiagramItem** object descendant ([DiagramShape](/api-reference/50%20Common/Object%20Structures/dxDiagramShape '/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/') or [DiagramConnector](/api-reference/50%20Common/Object%20Structures/dxDiagramConnector '/Documentation/ApiReference/Common/Object_Structures/dxDiagramConnector/')) related to the event.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

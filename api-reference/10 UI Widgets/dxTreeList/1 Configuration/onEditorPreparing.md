@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 <!-- %field(e.cancel)% -->
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The widget's instance.
 
 ##### field(e.dataField): String
@@ -34,7 +34,7 @@ Indicates whether the editor is disabled.
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.parentType): String
@@ -60,6 +60,9 @@ Gets and sets the delay between the moment a user stops typing a filter value an
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 <!-- %fullDescription% -->

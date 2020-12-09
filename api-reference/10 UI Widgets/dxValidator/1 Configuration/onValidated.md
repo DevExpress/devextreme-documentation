@@ -30,4 +30,7 @@ An array of validation rules specified for the current **dxValidator** object.
 ##### field(validatedInfo.value): Object
 The validated value.
 
+##### return: any
+<!-- Description goes here -->
+
 ---

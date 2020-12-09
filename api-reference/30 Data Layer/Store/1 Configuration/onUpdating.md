@@ -12,6 +12,9 @@ The key of the data item to be updated.
 ##### param(values): Object
 New values for the data item fields.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

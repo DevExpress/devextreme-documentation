@@ -12,4 +12,7 @@ Specifies custom content for the task tooltip.
 ##### param(task): any
 The processed task.
 
+##### return: String | Element | jQuery
+<!-- Description goes here -->
+
 ---

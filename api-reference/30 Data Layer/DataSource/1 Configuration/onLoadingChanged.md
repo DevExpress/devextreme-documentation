@@ -9,6 +9,9 @@ A function that is executed when the data loading status changes.
 ##### param(isLoading): Boolean
 Indicates whether data is being loaded.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

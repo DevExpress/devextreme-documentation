@@ -22,5 +22,8 @@ The widget's instance.
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

@@ -16,7 +16,7 @@ This column's [configuration](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Co
 ##### field(e.columnIndex): Number
 The index of the column on which the context menu is invoked. For details on indexes, see the following help topic: [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_and_Row_Indexes/').
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -25,7 +25,7 @@ The widget's instance.
 ##### field(e.items): Array<Object>
 Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/items/') option description. Each item also contains the [onItemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#onItemClick') event handler, which allows you to access the clicked or tapped item's data.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.row): dxTreeListRowObject
@@ -39,6 +39,9 @@ The name of the element on which the context menu is invoked: *"header"*, *"cont
 
 ##### field(e.targetElement): dxElement
 #include common-ref-elementparam with { element: "element" }
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 In the following code, the **onContextMenuPreparing** function adds a custom item to the context menu invoked when a user right-clicks any column header:

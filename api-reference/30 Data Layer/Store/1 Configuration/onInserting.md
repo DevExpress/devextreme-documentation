@@ -9,6 +9,9 @@ A function that is executed before a data item is added to the store.
 ##### param(values): Object
 The data item to be added.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

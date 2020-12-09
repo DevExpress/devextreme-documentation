@@ -10,7 +10,7 @@ A function that is executed when the widget is in focus and a key has been press
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,8 +22,11 @@ The event that caused the function to execute. It is a [dxEvent](/api-reference/
 ##### field(e.handled): Boolean
 Indicates whether the widget has already handled this event.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

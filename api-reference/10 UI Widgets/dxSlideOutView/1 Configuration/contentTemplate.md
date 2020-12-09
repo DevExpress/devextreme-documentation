@@ -10,6 +10,9 @@ Specifies a custom template for the widget content.
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "widget content" }
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 #####See Also#####
 - [Customize the View](/concepts/05%20Widgets/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/Widgets/SlideOutView/Customize_the_View/')

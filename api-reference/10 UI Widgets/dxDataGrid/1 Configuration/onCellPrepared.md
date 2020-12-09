@@ -19,7 +19,7 @@ This column's [configuration](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Co
 ##### field(e.columnIndex): Number
 The index of the column to which the cell belongs. For details on indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The widget's instance.
 
 ##### field(e.data): Object
@@ -44,7 +44,7 @@ Indicates whether the row is selected.
 The row's key. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.        
 If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.oldValue): any
@@ -74,6 +74,9 @@ A function that returns the variable that should be tracked.
 
 - **handler(newValue)**: Function       
 A function called when this variable changes.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #include common-demobutton with {

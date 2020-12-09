@@ -19,7 +19,7 @@ This column's [configuration](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Co
 ##### field(e.columnIndex): Number
 The index of the column to which the cell belongs.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The widget's instance.
 
 ##### field(e.data): Object
@@ -45,7 +45,7 @@ Indicates whether the row is selected. Available if **rowType** is *"data"* or *
 The row's key. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.       
 For plain data, the key value depends on the [keyExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#keyExpr') option. For hierarchical data, the key is generated automatically or set in the underlying **Store** of the [data source](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#dataSource').
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.oldValue): any
@@ -75,6 +75,9 @@ A function that returns the variable that should be tracked.
 
 - **handler(newValue)**: Function       
 A function called when this variable changes.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 In the following code, the **onCellPrepared** function is used to change a `ProductName`'s color depending on the `Amount` of sold products:

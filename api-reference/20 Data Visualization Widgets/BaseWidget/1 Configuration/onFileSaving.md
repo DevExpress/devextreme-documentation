@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to prevent file saving.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): BaseWidget
 The widget's instance.
 
 ##### field(e.data): Blob
@@ -28,6 +28,9 @@ The name of the file to be saved.
 ##### field(e.format): String
 The format of the file to be saved.         
 Possible Values: 'PNG' | 'PDF' | 'JPEG' | 'SVG' | 'GIF'
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

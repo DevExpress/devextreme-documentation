@@ -10,7 +10,7 @@ A function that is executed when a list item is clicked or tapped.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDropDownList
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,7 +28,10 @@ The item's container.
 ##### field(e.itemIndex): Number | Object
 The clicked item's index. If the widget items are grouped, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

@@ -12,6 +12,9 @@ The updated data item's key.
 ##### param(values): Object
 Updated values.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

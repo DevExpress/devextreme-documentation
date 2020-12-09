@@ -7,7 +7,7 @@ default: null
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): DOMComponent
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -16,7 +16,7 @@ The widget's instance.
 ##### field(e.fullName): String
 The path to the modified option that includes all parent options.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.name): String
@@ -24,5 +24,8 @@ The modified option if it belongs to the first level. Otherwise, the first-level
 
 ##### field(e.value): any
 The modified option's new value.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

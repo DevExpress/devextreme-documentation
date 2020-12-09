@@ -12,6 +12,9 @@ The added data item.
 ##### param(key): Object | String | Number
 The item's key.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

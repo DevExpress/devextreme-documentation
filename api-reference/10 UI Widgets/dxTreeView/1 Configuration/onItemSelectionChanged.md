@@ -10,7 +10,7 @@ A function that is executed when a single **TreeView** item is selected or selec
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeView
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -19,11 +19,14 @@ The widget's instance.
 ##### field(e.itemElement): dxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.node): dxTreeViewNode
 The item's node.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 This function is executed when:

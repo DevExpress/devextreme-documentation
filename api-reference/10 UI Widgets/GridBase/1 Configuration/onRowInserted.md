@@ -10,7 +10,7 @@ A function that is executed after a new row has been inserted into the data sour
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.data): Object
@@ -25,8 +25,11 @@ The standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 ##### field(e.key): any
 The key of the row. If a field providing keys is not specified in the data source, the whole data object is considered the key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 [note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), if several rows have been inserted, this function will be executed for each row individually.

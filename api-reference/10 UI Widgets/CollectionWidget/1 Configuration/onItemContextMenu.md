@@ -10,7 +10,7 @@ A function that is executed when a collection item is right-clicked or pressed.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): CollectionWidget
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,7 +28,10 @@ The item's data.
 ##### field(e.itemIndex): Number
 The item's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

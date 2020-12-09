@@ -9,6 +9,9 @@ A function that is executed before data is loaded to the store.
 ##### param(loadOptions): LoadOptions
 Data processing settings.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

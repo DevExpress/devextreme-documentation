@@ -21,6 +21,9 @@ The index of the column to which the header belongs.
 ##### field(headerInfo.component): dxTreeList
 The widget's instance.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')

@@ -13,16 +13,19 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel submenu hiding.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxMenu
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.rootItem): dxElement
 #include common-ref-elementparam with { element: "root menu element" }
+
+##### return: any
+<!-- Description goes here -->
 
 ---

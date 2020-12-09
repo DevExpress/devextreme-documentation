@@ -10,7 +10,7 @@ A function that is executed when the current directory is changed.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileManager
 The widget's instance.
 
 ##### field(e.directory): FileSystemItem
@@ -19,8 +19,11 @@ The current directory.
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

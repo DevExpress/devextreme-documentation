@@ -10,7 +10,7 @@ A function that is executed when the mouse leaves a drop zone as it drags a file
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileUploader
 The widget's instance.
 
 ##### field(e.dropZoneElement): dxElement
@@ -22,8 +22,11 @@ A drop zone element.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

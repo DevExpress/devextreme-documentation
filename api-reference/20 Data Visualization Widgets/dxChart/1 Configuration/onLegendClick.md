@@ -11,7 +11,7 @@ A function that is executed when a [legend item](/concepts/05%20Widgets/Chart/35
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxChart
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -20,11 +20,14 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.target): chartSeriesObject
 The series that corresponds to the clicked legend item; described in the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/') section.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 [note]

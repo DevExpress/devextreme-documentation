@@ -7,7 +7,7 @@ default: null
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxList
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -25,7 +25,10 @@ The container of the item being held. It is an <a href="https://developer.mozill
 ##### field(e.itemIndex): Number | Object
 The index of the item being held. In a grouped list, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

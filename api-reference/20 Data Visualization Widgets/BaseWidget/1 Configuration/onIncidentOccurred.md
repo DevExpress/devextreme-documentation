@@ -10,17 +10,20 @@ A function that is executed when an error or warning occurs.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): BaseWidget
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.target): any
 Information on the occurred incident.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 The widget notifies you of errors and warnings by passing messages to the browser console. Each message contains the incident's ID, a brief description, and a link to the [Errors and Warnings](/api-reference/20%20Data%20Visualization%20Widgets/Errors%20and%20Warnings '/Documentation/ApiReference/Data_Visualization_Widgets/Errors_and_Warnings/') section where further information about this incident can be found.

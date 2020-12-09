@@ -11,17 +11,20 @@ A function that is executed when a tooltip appears.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): BaseChart
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.target): basePointObject | dxChartAnnotationConfig | any
 The series point whose tooltip is shown; described in the [Point](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

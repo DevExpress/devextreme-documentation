@@ -10,7 +10,7 @@ A function that is executed when an error occurs during the file upload.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileUploader
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,11 +28,14 @@ The uploaded file.
 ##### field(e.message): String
 The message displayed by the widget on uploading failure.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.request): XMLHttpRequest
 Specifies an XMLHttpRequest for the file.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 The following code shows how you can handle a network error.

@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel the task deletion.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,11 +22,14 @@ The widget's instance.
 ##### field(e.key): any
 The key of the deleted task.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
 The values of the deleted task.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

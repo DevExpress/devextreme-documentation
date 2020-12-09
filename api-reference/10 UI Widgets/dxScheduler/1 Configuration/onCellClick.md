@@ -19,7 +19,7 @@ The clicked cell's data.
 ##### field(e.cellElement): dxElement
 #include common-ref-elementparam with { element: "clicked cell" }
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,7 +28,10 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

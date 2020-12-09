@@ -10,10 +10,10 @@ Specifies a custom template for tooltips displayed when users click an appointme
 ##### param(model): Object
 The data of the appointment for which the tooltip is displayed.
 
-##### field(model.appointmentData): Object
+##### field(model.appointmentData): any
 The appointment's data object.
 
-##### field(model.targetedAppointmentData): Object
+##### field(model.targetedAppointmentData): any
 <!-- %field(model.targetedAppointmentData)% -->
 
 ##### param(itemIndex): Number

@@ -11,7 +11,7 @@ A function that is executed after the widget's [value](/api-reference/20%20Data%
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxRangeSelector
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -20,7 +20,7 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam This field is **undefined** if the value is changed programmatically.
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.previousValue): Array<Number, String, Date>
@@ -28,6 +28,9 @@ Two values that represent old start and end values.
 
 ##### field(e.value): Array<Number, String, Date>
 Two values that represent new start and end values.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 The **onValueChanged** function can be called when a user moves a slider or after he/she has stopped moving it. To specify the required mode, use the **behavior**.[callValueChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/behavior/callValueChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/behavior/#callValueChanged') option.

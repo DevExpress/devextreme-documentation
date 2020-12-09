@@ -10,7 +10,7 @@ A function that is executed after an editor is created. Not executed for cells w
 ##### param(options): Object
 Information about the event that caused the function's execution.
 
-##### field(options.component): {WidgetName}
+##### field(options.component): dxDataGrid
 The widget's instance.
 
 ##### field(options.dataField): String
@@ -25,7 +25,7 @@ Indicates whether the editor is disabled.
 ##### field(options.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(options.model): Object
+##### field(options.model): any
 Model data. Only available when using Knockout.
 
 ##### field(options.parentType): String
@@ -52,5 +52,8 @@ The editor's value.
 
 ##### field(options.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

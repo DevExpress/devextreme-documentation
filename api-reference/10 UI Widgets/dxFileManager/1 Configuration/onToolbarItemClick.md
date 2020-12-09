@@ -10,7 +10,7 @@ A function that is executed when a toolbar item is clicked.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileManager
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,8 +28,11 @@ The clicked item's data.
 ##### field(e.itemIndex): Number
 The clicked item's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

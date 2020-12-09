@@ -19,7 +19,7 @@ The initial appointment.
 ##### field(e.cancel): Boolean
 If **true**, does not allow the user to open the appointment details form with double click.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,11 +28,14 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.targetedAppointmentData): Object
 <!-- %field(model.targetedAppointmentData)% -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

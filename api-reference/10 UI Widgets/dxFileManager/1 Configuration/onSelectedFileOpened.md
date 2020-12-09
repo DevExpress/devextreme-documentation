@@ -10,7 +10,7 @@ A function that is executed when the selected file is opened.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileManager
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -19,8 +19,11 @@ The widget's instance.
 ##### field(e.file): FileSystemItem
 The opened file.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 ---

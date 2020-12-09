@@ -10,7 +10,7 @@ A function that is executed when resizing ends.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxResizable
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -22,10 +22,13 @@ The widget's instance.
 ##### field(e.height): Number
 The current widget height.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.width): Number
 The current widget width.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

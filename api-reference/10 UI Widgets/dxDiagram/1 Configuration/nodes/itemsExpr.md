@@ -10,6 +10,9 @@ Specifies the name of a data source field or an expression that provides a node'
 ##### param(data): Object
 The current node's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 Specify this option when your source data has a [hierarchical structure](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array').
 

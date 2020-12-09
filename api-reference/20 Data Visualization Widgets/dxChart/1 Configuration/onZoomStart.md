@@ -20,7 +20,7 @@ The zoomed/panned axis.
 ##### field(e.cancel): Boolean
 Allows you to cancel zooming or panning.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxChart
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -29,11 +29,14 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.range): VizRange
 The [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/visualRange/') when zooming or panning starts.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

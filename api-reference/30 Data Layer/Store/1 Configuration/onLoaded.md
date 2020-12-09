@@ -9,6 +9,9 @@ A function that is executed after data is loaded to the store.
 ##### param(result): Array<any>
 The loaded data.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

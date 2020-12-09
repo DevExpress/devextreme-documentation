@@ -11,7 +11,7 @@ A function that is executed after the pointer enters or leaves a [funnel item](/
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFunnel
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -20,8 +20,11 @@ The widget's instance.
 ##### field(e.item): dxFunnelItem
 The [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/') object.
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 To identify whether the pointer has entered or left the funnel item, call the item's [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item/3%20Methods/isHovered().md 'Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/Methods/#isHovered') method.

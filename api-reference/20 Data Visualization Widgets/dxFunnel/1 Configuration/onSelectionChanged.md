@@ -11,7 +11,7 @@ A function that is executed when a funnel item is selected or selection is cance
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFunnel
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -20,8 +20,11 @@ The widget's instance.
 ##### field(e.item): dxFunnelItem
 The [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/') object.
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 To identify whether the selection has been applied or canceled, call the funnel item's [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item/3%20Methods/isSelected().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/Methods/#isSelected') method.

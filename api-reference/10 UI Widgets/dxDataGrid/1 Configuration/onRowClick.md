@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.columns): Array<Object>
 All column [configurations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/').
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The widget's instance.
 
 ##### field(e.data): Object
@@ -43,7 +43,7 @@ Indicates whether the row is [selected](/concepts/05%20Widgets/DataGrid/50%20Sel
 ##### field(e.key): any
 The row's key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.rowElement): dxElement
@@ -57,6 +57,9 @@ The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md 
 
 ##### field(e.values): Array<any>
 Values displayed in the row cells.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 The widget executes the [onCellClick](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onCellClick.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellClick') function and can also execute internal functions before this function. Use the **handled** field to check whether internal functions were executed.

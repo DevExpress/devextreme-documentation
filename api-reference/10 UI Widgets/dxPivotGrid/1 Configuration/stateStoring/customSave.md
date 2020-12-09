@@ -9,6 +9,9 @@ Specifies a function that is executed on state saving. Applies only if the [type
 ##### param(state): Object
 The current widget state.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 Use the **customSave** and [customLoad](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/customLoad.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions.
  

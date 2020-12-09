@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel showing the context menu.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The widget's instance.
 
 ##### field(e.data): any
@@ -33,6 +33,9 @@ The key of the right-clicked task or dependency.
 
 ##### field(e.targetType): String
 The type of right-clicked task or dependency.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

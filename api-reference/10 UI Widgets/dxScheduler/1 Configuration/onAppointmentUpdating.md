@@ -14,13 +14,13 @@ Information about the event.
 Allows you to prevent an appointment update.    
 If you pass a Promise to this field, the appointment updating is continued or canceled once the Promise has been resolved.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.newData): Object
@@ -28,5 +28,8 @@ The appointment with new data.
 
 ##### field(e.oldData): Object
 The data of the appointment to be updated.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

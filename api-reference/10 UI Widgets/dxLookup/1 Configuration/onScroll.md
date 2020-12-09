@@ -10,7 +10,7 @@ A function that is executed on each scroll gesture performed on the drop-down it
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxLookup
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -19,7 +19,7 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.reachedBottom): Boolean
@@ -36,5 +36,8 @@ Indicates whether the container's top boundary is reached.
 
 ##### field(e.scrollOffset): Object
 The current scroll offset in the following format { top: topOffset, left: leftOffset }.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

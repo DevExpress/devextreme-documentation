@@ -10,17 +10,20 @@ A function that is executed before the toolbar is created.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.toolbarOptions): dxToolbar_Options
 The [options of the toolbar](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/').
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 This function allows you to customize the toolbar. Depending on the configuration, the widget may add the following items to the toolbar:

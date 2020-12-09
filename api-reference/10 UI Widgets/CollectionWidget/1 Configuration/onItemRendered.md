@@ -10,7 +10,7 @@ A function that is executed after a collection item is rendered.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): CollectionWidget
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -25,7 +25,10 @@ The current item's data.
 ##### field(e.itemIndex): Number
 The current item's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

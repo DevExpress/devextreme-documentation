@@ -10,10 +10,10 @@ Specifies a custom template for appointments.
 ##### param(model): Object
 The data of the appointment being customized.
 
-##### field(model.appointmentData): Object
+##### field(model.appointmentData): any
 The appointment's data object.
 
-##### field(model.targetedAppointmentData): Object
+##### field(model.targetedAppointmentData): any
 The appointment's data object.      
 The difference between this and **appointmentData** fields is explained in the [onAppointmentClick](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentClick.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentClick') description.
 

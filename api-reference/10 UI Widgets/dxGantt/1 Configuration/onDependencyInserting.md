@@ -13,17 +13,20 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel the dependency's insertion.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
 The values of the inserted dependency.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

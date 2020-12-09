@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.columns): Array<dxTreeListColumn>
 All column [configurations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/').
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The widget's instance.
 
 ##### field(e.data): Object
@@ -38,7 +38,7 @@ For plain data, the value of the key depends on the [keyExpr](/api-reference/10%
 ##### field(e.level): Number
 The node's [hierarchical level](/api-reference/10%20UI%20Widgets/dxTreeList/4%20Node/level.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Node/#level').
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.node): dxTreeListNode
@@ -55,5 +55,8 @@ The row's [type](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md 
 
 ##### field(e.values): Array<any>
 Values displayed in the row cells.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

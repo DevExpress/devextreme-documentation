@@ -22,6 +22,9 @@ The widget's instance.
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 Assign a function to perform a custom action when a button representing an action sheet item is clicked.
 

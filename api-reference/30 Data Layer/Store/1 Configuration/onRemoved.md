@@ -9,6 +9,9 @@ A function that is executed after a data item is removed from the store.
 ##### param(key): Object | String | Number
 The removed data item's key.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

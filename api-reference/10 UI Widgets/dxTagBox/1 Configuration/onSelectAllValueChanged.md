@@ -10,16 +10,19 @@ A function that is executed when the "Select All" check box value is changed. Ap
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTagBox
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.value): Boolean
 The "Select All" check box's state.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

@@ -13,18 +13,21 @@ Information about the event that caused the function's execution.
 ##### field(e.addedItems): Array<any>
 The data objects that correspond to the selected buttons.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxButtonGroup
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.removedItems): Array<any>
 The data objects that correspond to the buttons whose selection has been canceled. <br/>
 The objects are taken from the [items](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxButtonGroup/Configuration/items/') array.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

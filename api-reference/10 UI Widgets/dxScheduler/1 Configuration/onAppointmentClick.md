@@ -19,7 +19,7 @@ The initial appointment.
 ##### field(e.cancel): Boolean
 If **true**, hides the appointment tooltip.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -28,11 +28,14 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.targetedAppointmentData): Object
 The clicked appointment.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 In case of [recurring appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments) or appointments with [multiple resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources), you may need the data object of the clicked, not the initial, appointment. For this purpose, use the **targetedAppointmentData** field of the function's parameter. Otherwise, use the **appointmentData** field.

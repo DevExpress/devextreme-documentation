@@ -13,4 +13,7 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The widget's instance.
 
+##### return: any
+<!-- Description goes here -->
+
 ---

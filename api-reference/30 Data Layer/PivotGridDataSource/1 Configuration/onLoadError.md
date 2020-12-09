@@ -9,6 +9,9 @@ A function that is executed when data loading fails.
 ##### param(error): Object
 The error.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

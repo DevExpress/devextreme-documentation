@@ -12,6 +12,9 @@ The error.
 ##### field(error.message): String
 The error message.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

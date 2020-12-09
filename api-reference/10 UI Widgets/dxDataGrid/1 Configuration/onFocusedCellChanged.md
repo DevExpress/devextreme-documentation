@@ -19,13 +19,13 @@ The column's properties.
 ##### field(e.columnIndex): Number
 The index of the cell's column.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.row): dxDataGridRowObject
@@ -33,6 +33,9 @@ The row's properties.
 
 ##### field(e.rowIndex): Number
 The index of the cell's row.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

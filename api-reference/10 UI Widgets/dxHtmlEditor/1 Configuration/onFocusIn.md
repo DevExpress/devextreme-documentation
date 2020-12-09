@@ -10,7 +10,7 @@ A function that is executed when the widget gets focus.
 ##### param(e): Object
 Information about the event that caused the function execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxHtmlEditor
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -19,8 +19,11 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

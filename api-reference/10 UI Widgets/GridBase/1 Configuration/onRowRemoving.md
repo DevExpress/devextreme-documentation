@@ -14,7 +14,7 @@ Information about the event that caused the function's execution.
 **true**, a Promise resolved with **true**, or a rejected Promise stops row removal.       
 **false** or a Promise resolved with **false** or **undefined** continues row removal.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): GridBase
 The widget's instance.
 
 ##### field(e.data): Object
@@ -26,8 +26,11 @@ The data of the row that should be removed.
 ##### field(e.key): any
 The row's key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 [note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be removed.

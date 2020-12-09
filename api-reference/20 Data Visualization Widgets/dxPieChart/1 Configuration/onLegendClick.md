@@ -11,7 +11,7 @@ A function that is executed when a [legend item](/concepts/05%20Widgets/PieChart
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxPieChart
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -20,7 +20,7 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.points): Array<piePointObject>
@@ -28,6 +28,9 @@ The [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Ch
 
 ##### field(e.target): String | Number
 The argument of the point(s) corresponding to the clicked legend item.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

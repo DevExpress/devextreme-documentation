@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.columns): Array<dxTreeListColumn>
 The configurations of visible columns.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The widget's instance.
 
 ##### field(e.data): Object
@@ -37,7 +37,7 @@ Indicates whether the row is selected. Available if **rowType** is *"data"* or *
 ##### field(e.key): any
 The row's [key](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/key.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Row/#key'). Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.rowElement): dxElement
@@ -51,6 +51,9 @@ The row's [type](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md 
 
 ##### field(e.values): Array<any>
 Raw values displayed in the row's cells.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 [note] **onRowDblClick** is not executed when the clicked row is in the editing state or switches to this state. You can use **onCellDblClick** instead.

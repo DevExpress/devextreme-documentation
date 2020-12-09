@@ -27,4 +27,7 @@ The model data. Available only if you use Knockout.
 ##### field(e.row): dxTreeListRowObject
 The properties of the button's row.
 
+##### return: any
+<!-- Description goes here -->
+
 ---

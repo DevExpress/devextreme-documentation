@@ -13,6 +13,9 @@ Appears only when the **push(changes)** method is called and the [reshapeOnPush]
 ##### field(e.changes): Array<any>
 The received changes.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

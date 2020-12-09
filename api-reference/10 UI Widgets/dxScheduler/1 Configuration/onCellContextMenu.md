@@ -16,7 +16,7 @@ The data of the cell on which the context menu is invoked.
 ##### field(e.cellElement): dxElement
 #include common-ref-elementparam with { element: "cell" }
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -25,8 +25,11 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #include common-demobutton with {

@@ -27,6 +27,9 @@ The resulting summary item's value.
 ##### field(options.value): any
 If the custom summary item is calculated by a [column](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/column.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#column'), this field contains the value from a cell of this column. Otherwise, it contains a whole object from the data source.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify them in the function.
 

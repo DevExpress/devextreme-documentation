@@ -10,7 +10,7 @@ A function that is called when a draggable item is removed.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxSortable
 The widget that raised the event.
 
 ##### field(e.element): dxElement
@@ -34,7 +34,7 @@ The dragged item's data.
 ##### field(e.itemElement): dxElement
 #include draganddrop-ref-itemelementparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.toComponent): dxSortable | dxDraggable
@@ -45,6 +45,9 @@ Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/d
 
 ##### field(e.toIndex): Number
 The position in which the item is placed. If the item is dragged away from the widget, the value is **-1**.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

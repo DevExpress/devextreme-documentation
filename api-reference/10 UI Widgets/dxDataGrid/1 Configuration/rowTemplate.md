@@ -42,6 +42,9 @@ The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/Ap
 ##### field(rowInfo.values): Array<any>
 <!-- Description goes here -->
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The following details should be taken into account when you use a **rowTemplate**:
 

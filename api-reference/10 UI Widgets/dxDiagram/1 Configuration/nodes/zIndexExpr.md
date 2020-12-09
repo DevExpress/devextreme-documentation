@@ -10,5 +10,8 @@ Specifies the name of a data source field or an expression that provides a node'
 ##### param(data): Object
 The current node's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The z-index specifies the node stack order. A node with greater stack order is in front of a node with a lower stack order.

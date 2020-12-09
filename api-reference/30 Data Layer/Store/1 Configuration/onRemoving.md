@@ -9,6 +9,9 @@ A function that is executed before a data item is removed from the store.
 ##### param(key): Object | String | Number
 The key of the data item to be removed.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

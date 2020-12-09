@@ -10,7 +10,7 @@ A function that is executed after the widget's [value](/api-reference/10%20UI%20
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDropDownList
 The widget's instance.
 
 ##### field(e.element): dxElement
@@ -19,7 +19,7 @@ The widget's instance.
 ##### field(e.event): event
 #include common-ref-eventparam This field is **undefined** if the value is changed programmatically.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.previousValue): Object
@@ -27,5 +27,8 @@ The widget's previous value.
 
 ##### field(e.value): Object
 The widget's new value.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

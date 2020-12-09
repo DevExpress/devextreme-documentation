@@ -13,16 +13,19 @@ Information about the event.
 ##### field(e.addedItems): Array<any>
 The data of the items that have been selected.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): CollectionWidget
 The widget's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.removedItems): Array<any>
 The data of the items whose selection has been canceled.
+
+##### return: any
+<!-- Description goes here -->
 
 ---

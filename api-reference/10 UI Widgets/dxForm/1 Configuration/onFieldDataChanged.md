@@ -10,7 +10,7 @@ A function that is executed when the value of a [formData](/api-reference/10%20U
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxForm
 The widget's instance.
 
 ##### field(e.dataField): String
@@ -19,11 +19,14 @@ The path to the [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configura
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.value): Object
 The field's new value.
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

@@ -170,9 +170,8 @@ Commonly, a chart contains several series, and many of them have the same argume
 
     <!-- tab: App.vue -->
     <template> 
-        <DxChart
-            :data-source="fruitProduction"
-            ... >
+        <DxChart ...
+            :data-source="fruitProduction">
             <DxCommonSeriesSettings argument-field="fruit"/>
             <DxSeries
                 value-field="year2014"

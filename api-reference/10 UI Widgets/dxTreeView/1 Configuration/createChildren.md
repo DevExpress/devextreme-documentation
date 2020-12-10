@@ -119,26 +119,25 @@ The following code shows how to use this function with a remote service:
     import TreeView from 'devextreme-react/tree-view';
     import 'whatwg-fetch';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    rootValue=""
-                    createChildren={this.createChildren}
-                />
-            );
-        }
-        createChildren(parent) {
-            let parentId = parent ? parent.itemData.id : '';
-
-            return fetch(`http://url/to/the/service?parentId=${parentId}`)
-            .then(response => response.json())
-            .catch(() => { throw 'Data Loading Error'; });
-        }
+    const App = () => {
+        return (
+            <TreeView
+                dataStructure="plain"
+                rootValue="''"
+                createChildren={createChildren}
+            />
+        );
     }
 
-    export default App;  
+    const createChildren = (parent) => {
+        let parentId = parent ? parent.itemData.id : '';
+
+        return fetch(`http://url/to/the/service?parentId=${parentId}`)
+            .then(response => response.json())
+            .catch(() => { throw 'Data Loading Error'; });
+    }
+
+    export default App;
 
 ---
 

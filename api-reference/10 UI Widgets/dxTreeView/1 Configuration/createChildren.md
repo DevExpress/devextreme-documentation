@@ -85,13 +85,11 @@ The following code shows how to use this function with a remote service:
 
     <!-- tab: App.vue -->
     <template>
-        <div>
-            <DxTreeView
-                :create-children="createChildren"
-                :root-value="''"
-                data-structure="plain"
-            />
-        </div>
+        <DxTreeView
+            :create-children="createChildren"
+            :root-value="''"
+            data-structure="plain"
+        />
     </template>
     <script>
 
@@ -106,7 +104,7 @@ The following code shows how to use this function with a remote service:
             createChildren: function(parent) {
             let parentId = parent ? parent.itemData.id : '';
 
-            return fetch(`https://js.devexpress.com/Demos/Mvc/api/TreeViewData?parentId=${parentId}`)
+            return fetch(`http://url/to/the/service?parentId=${parentId}`)
                 .then(response => response.json())
                 .catch(() => { throw 'Data Loading Error'; });
             }
@@ -124,19 +122,17 @@ The following code shows how to use this function with a remote service:
     class App extends React.Component {
         render() {
             return (
-                <React.Fragment>
-                    <TreeView
+                <TreeView
                     dataStructure="plain"
                     rootValue=""
                     createChildren={this.createChildren}
-                    />
-                </React.Fragment>
+                />
             );
         }
         createChildren(parent) {
             let parentId = parent ? parent.itemData.id : '';
 
-            return fetch(`https://js.devexpress.com/Demos/Mvc/api/TreeViewData?parentId=${parentId}`)
+            return fetch(`http://url/to/the/service?parentId=${parentId}`)
             .then(response => response.json())
             .catch(() => { throw 'Data Loading Error'; });
         }

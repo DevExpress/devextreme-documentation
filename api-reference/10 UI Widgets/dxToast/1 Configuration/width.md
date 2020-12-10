@@ -5,6 +5,10 @@ default: function() {return $(window).width() * 0.8 }, 'auto' (Android), functio
 ---
 ---
 ##### return: Number | String
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\DOMComponent\1 Configuration\width.md' -->

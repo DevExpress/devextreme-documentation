@@ -8,9 +8,13 @@ default: true
 A Boolean value specifying whether or not the widget is closed if a user clicks outside of the popover window and outside the target element.
 
 ##### param(event): event
-<!-- Description goes here -->
+<!-- %param(event)% -->
 
 ##### return: Boolean
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->

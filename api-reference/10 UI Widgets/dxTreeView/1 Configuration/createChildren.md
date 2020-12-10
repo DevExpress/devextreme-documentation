@@ -87,9 +87,9 @@ The following code shows how to use this function with a remote service:
     <template>
         <div>
             <DxTreeView
-            :create-children="createChildren"
-            :root-value="''"
-            data-structure="plain"
+                :create-children="createChildren"
+                :root-value="''"
+                data-structure="plain"
             />
         </div>
     </template>

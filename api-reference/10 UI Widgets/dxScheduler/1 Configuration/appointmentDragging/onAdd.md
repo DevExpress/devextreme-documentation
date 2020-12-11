@@ -9,6 +9,9 @@ A function that is called when a new appointment is added.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
+##### field(e.component): dxScheduler
+<!-- Description goes here -->
+
 ##### field(e.event): event
 #include common-ref-eventparam
 

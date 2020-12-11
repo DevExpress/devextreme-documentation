@@ -14,7 +14,7 @@ The calculated value used to create and sort groups.
 
 ---
 
-The **DataGrid** groups its columns by the grouping column. If you want to use custom grouping, change values of this column in the **calculateGroupValue** function. As a result, group cells' headers will display the changed values that may include extra information. To remove it, specify a custom template in the [groupCellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellTemplate) option ([groupCellRender](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellRender) in React). Refer to this <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">Github repository</a> for an example. 
+The **DataGrid** groups its rows by the grouping column. If you want to use custom grouping, change values of this column in the **calculateGroupValue** function. As a result, group cells' headers will display the changed values that may include extra information. To remove it, specify a custom template in the [groupCellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellTemplate) option ([groupCellRender](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellRender) in React). Refer to this <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">Github repository</a> for an example. 
 
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"

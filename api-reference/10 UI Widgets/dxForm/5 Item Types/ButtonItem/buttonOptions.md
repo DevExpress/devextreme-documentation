@@ -68,8 +68,8 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
     <template>
         <DxForm ...>
             <DxItem
-                :buttonOptions="buttonOptions"
-                itemType="button"
+                :button-options="buttonOptions"
+                item-type="button"
             />
         </DxForm>
     </template>

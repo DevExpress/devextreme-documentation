@@ -72,15 +72,13 @@ For extra small screens, this option always equals *1* to make the widget adapti
     import React from 'react';
     import Form, { ColCountByScreen } from 'devextreme-react/form';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form>
-                    <ColCountByScreen xs={2} />
-                </Form>
-            );
-        }
-    }
+    const App = () => {
+        return (
+            <Form>
+                <ColCountByScreen xs={2} />
+            </Form>
+        );
+    };
 
     export default App;
 

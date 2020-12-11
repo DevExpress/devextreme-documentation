@@ -83,7 +83,7 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
         },
         data() {
             return {
-            buttonOptions: {
+                buttonOptions: {
                     text: "Do Something",
                     type: "success",
                     onClick: function () {

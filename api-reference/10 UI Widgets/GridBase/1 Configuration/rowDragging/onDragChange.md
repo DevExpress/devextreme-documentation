@@ -12,6 +12,9 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel the gesture.
 
+##### field(e.component): {WidgetName}
+<!-- Description goes here -->
+
 ##### field(e.dropInsideItem): Boolean
 Indicates if the dragged row is dropped inside another row. Available only for the **TreeList** widget.
 

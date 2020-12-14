@@ -3,9 +3,10 @@
 
 [Add DevExtreme to your jQuery application](/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/) and use the following code to create a **Scheduler**:
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     $(function() { 
-        $("#scheduler").dx{WidgetName}({ 
+        $("#scheduler").dxScheduler({
+            // Configuration goes here
             height: 600,
             startDayHour: 10,
             currentDate: new Date(2021, 4, 25)
@@ -16,9 +17,11 @@
     <html>
         <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.2.3/css/dx.common.css" />
-            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.2.3/css/dx.light.css" />
-            <script src="https://cdn3.devexpress.com/jslib/20.2.3/js/dx.all.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css" />
+            <link rel="stylesheet" href="index.css">
+
+            <script src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
             <script src="index.js"></script>
         </head>
         <body class="dx-viewport">
@@ -26,18 +29,21 @@
         </body>
     </html>
 
+    <!-- tab: index.css -->
+    #scheduler {
+        height: 600px;
+    }
+
 ##### Angular 
 
 [Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a **Scheduler**:
 
-    <!-- tab: app.component.html --> 
-    <dx-scheduler
-        [height]="600"
-        [startDayHour]="10"  
-        [currentDate]="currentDate">
+    <!-- tab: app.component.html -->
+    <dx-scheduler id="scheduler">
+        <!-- Configuration goes here -->
     </dx-scheduler> 
 
-    <!-- tab: app.component.ts --> 
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core'; 
 
     @Component({ 
@@ -46,14 +52,14 @@
         styleUrls: ['./app.component.css'] 
     }) 
     export class AppComponent { 
-        currentDate: Date = new Date(2021, 4, 25);
+
     } 
 
-    <!-- tab: app.module.ts --> 
+    <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core'; 
     import { AppComponent } from './app.component'; 
-    import { Dx{WidgetName}Module } from 'devextreme-angular'; 
+    import { dxSchedulerModule } from 'devextreme-angular'; 
 
     @NgModule({ 
         declarations: [ 
@@ -66,13 +72,18 @@
         providers: [ ], 
         bootstrap: [AppComponent] 
     }) 
-    export class AppModule { } 
+    export class AppModule { }
+
+    <!-- tab: app.component.css -->
+    #scheduler {
+        height: 600px;
+    }
 
 ##### Vue 
 
 [Add DevExtreme to your Vue application](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/) and use the following code to create a **Scheduler**:
 
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <DxScheduler
             :height="600"
@@ -97,7 +108,13 @@
             };
         }
     } 
-    </script> 
+    </script>
+
+    <style>
+    #scheduler {
+        height: 600px;
+    }
+    </style>
 
 ##### React 
 
@@ -113,15 +130,20 @@
     function App() {
         return (
             <div className="App">
-                <div id="app-container">
-                    <Scheduler
-                        height={600}
-                        startDayHour={10}
-                        defaultCurrentDate={currentDate}>
-                    </Scheduler>
-                  </div>
+                <Scheduler
+                    height={600}
+                    startDayHour={10}
+                    defaultCurrentDate={currentDate}>
+                </Scheduler>
             </div>
         );
+    }
+
+    export default App;
+
+    <!-- tab: App.css -->
+    #scheduler {
+        height: 600px;
     }
 
 ---

@@ -1,25 +1,27 @@
-A view defines the time interval for which to display appointments. The following view types are supported:
+The **Scheduler** supports the following views:
 
-* [Day](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Day_View) (default);
+* [Day](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Day_View) (default)
 
-* [Week and WorkWeek](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Week_and_WorkWeek_Views) (week is added by default);
+* [Week and WorkWeek](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Week_and_WorkWeek_Views) (week is added by default)
 
-* [Month](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Month_View);
+* [Month](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Month_View)
 
-* [Timeline](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Timeline_Views);
+* [Timeline](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Timeline_Views)
 
-* [Agenda](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Agenda_View);
+* [Agenda](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Agenda_View)
 
-* [Custom](/Documentation/Guide/Widgets/Scheduler/Views/Customize_Individual_Views/).
+* [Customized views](/Documentation/Guide/Widgets/Scheduler/Views/Customize_Individual_Views/).
 
-Use the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) option to specify the following views: *"day"*, *"week"*, *"month"*, and *"timelineWeek"*. We will display the *"week"* view by default. For this, set the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) option to *"week"*.  
+The default views are *"day"* and *"week"*. To use custom one, specify the [views[]](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) property. In this tutorial, we will assign *"day"*, *"week"*, *"month"*, and *"timelineWeek"* to it.
+
+The default view is "day". You can change it in the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) property - we will set it to *"week"*.
 
 ---
 ##### jQuery
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     $(function() { 
-        $("#scheduler").dx{WidgetName}({ 
+        $("#scheduler").dxScheduler({ 
             // ...
             views: ["day", "week", "month", "timelineWeek"],
             currentView: "week"
@@ -28,7 +30,7 @@ Use the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration
 
 ##### Angular 
 
-    <!-- tab: app.component.html --> 
+    <!-- tab: app.component.html -->
     <dx-scheduler ...
         [views]="['day', 'week', 'month', 'timelineWeek']"
         currentView="week">
@@ -36,7 +38,7 @@ Use the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration
 
 ##### Vue 
 
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
             :views="views"
@@ -84,5 +86,7 @@ Use the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration
             </div>
         );
     }
+
+    export default App;
 
 ---

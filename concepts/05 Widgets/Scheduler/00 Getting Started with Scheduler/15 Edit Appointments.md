@@ -5,9 +5,9 @@ In this step, we will forbid users to drag the appointments. For this, set the *
 ---
 ##### jQuery
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     $(function() { 
-        $("#scheduler").dx{WidgetName}({ 
+        $("#scheduler").dxScheduler({ 
             // ...
             editing: {
                 allowDragging: false
@@ -17,7 +17,7 @@ In this step, we will forbid users to drag the appointments. For this, set the *
 
 ##### Angular 
 
-    <!-- tab: app.component.html --> 
+    <!-- tab: app.component.html -->
     <dx-scheduler ... >
         <dxo-editing
             [allowDragging]="false">
@@ -26,7 +26,7 @@ In this step, we will forbid users to drag the appointments. For this, set the *
 
 ##### Vue 
 
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <DxScheduler ... >
             <DxEditing
@@ -70,6 +70,8 @@ In this step, we will forbid users to drag the appointments. For this, set the *
             </div>
         );
     }
+
+    export default App;
 
 ---
 

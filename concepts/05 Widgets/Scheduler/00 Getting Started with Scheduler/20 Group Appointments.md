@@ -4,17 +4,17 @@
 A resource instance defines a category by which to group appointments. Each object of a resource instance should consist of the required id, color, and optional text fields. In the data source file, define the priorities array to store the resource instances for high and low priority appointments.
 
 2. **Define resource kinds**
-A resource kind applies a resource instance to the widget. The [resources](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/) option specifies an array of resource kinds. Each array item must specify at least the two fields: [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource) (an array of resource instances) and [fieldExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr) (the data object field that specifies the category). Assign the priorities array to dataSource and the priorityId field to fieldExpr.
+A resource kind applies a resource instance to the widget. The [resources](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/) property specifies an array of resource kinds. Each array item must specify at least the two fields: [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#dataSource) (an array of resource instances) and [fieldExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/resources/#fieldExpr) (the data object field that specifies the category). Assign the priorities array to dataSource and the priorityId field to fieldExpr.
 
-3. **Specify the groups option**
-By now, the **Scheduler** has applied the resource kinds: the appointments are colored differently and you can change their priority in the appointment's details form. To display the appointments in columns according to their resource kinds, specify the [groups](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups) option. It is an array that consists of the **fieldExpr** value(s) of the resource kind(s).
+3. **Specify the groups property**
+By now, the **Scheduler** has applied the resource kinds: the appointments are colored differently and you can change their priority in the appointment's details form. To display the appointments in columns according to their resource kinds, specify the [groups](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#groups) property. It is an array that consists of the **fieldExpr** value(s) of the resource kind(s).
 
 ---
 ##### jQuery
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     $(function() { 
-        $("#scheduler").dx{WidgetName}({ 
+        $("#scheduler").dxScheduler({ 
             // ...
             resources: [
                 {
@@ -27,7 +27,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
         });
     });
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     // ...
     const priorities = [
         {
@@ -43,7 +43,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
 
 ##### Angular 
 
-    <!-- tab: app.component.html --> 
+    <!-- tab: app.component.html -->
     <dx-scheduler ...
         [groups]="['priorityId']">
         <!-- ... -->
@@ -54,7 +54,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
         </dxi-resource>
     </dx-scheduler> 
 
-    <!-- tab: app.component.ts --> 
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { Appointment, Priority, AppService } from './app.service';
 
@@ -73,7 +73,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
         }
     } 
 
-    <!-- tab: app.service.ts --> 
+    <!-- tab: app.service.ts -->
     // ...
 
     export class Priority {
@@ -106,7 +106,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
 
 ##### Vue 
 
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
             :groups="groups">
@@ -141,7 +141,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
     } 
     </script> 
 
-    <!-- tab: data.js --> 
+    <!-- tab: data.js -->
     // ...
     export const priorities = [
         {
@@ -184,7 +184,9 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
         );
     }
 
-    <!-- tab: data.js --> 
+    export default App;
+
+    <!-- tab: data.js -->
     // ...
     export const priorities = [
         {

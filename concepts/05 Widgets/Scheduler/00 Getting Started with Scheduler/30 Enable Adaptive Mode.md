@@ -1,11 +1,11 @@
-Since people use portable devices to work with **Scheduler**, it should adapt its interface to small screens. To implement this behavior, set the [adaptivityEnabled](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#adaptivityEnabled) option to **true**. 
+Since people use portable devices to work with **Scheduler**, it should adapt its interface to small screens. To implement this behavior, set the [adaptivityEnabled](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#adaptivityEnabled) property to **true**. 
 
 ---
 ##### jQuery
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     $(function() { 
-        $("#scheduler").dx{WidgetName}({
+        $("#scheduler").dxScheduler({
             // ...
             adaptivityEnabled: true
         });
@@ -13,14 +13,14 @@ Since people use portable devices to work with **Scheduler**, it should adapt it
 
 ##### Angular 
 
-    <!-- tab: app.component.html --> 
+    <!-- tab: app.component.html -->
     <dx-scheduler ...
         [adaptivityEnabled]="true">
     </dx-scheduler> 
 
 ##### Vue 
 
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
             :adaptivity-enabled="true">
@@ -47,6 +47,8 @@ Since people use portable devices to work with **Scheduler**, it should adapt it
             </div>
         );
     }
+
+    export default App;
 
 ---
 

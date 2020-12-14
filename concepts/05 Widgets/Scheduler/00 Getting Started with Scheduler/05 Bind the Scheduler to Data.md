@@ -1,14 +1,14 @@
 The **Scheduler** can load and update data from these data source types:
 
-* Local array;
+* [Local array](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/)
 
-* Read-Only Data in JSON Format;
+* [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 
-* OData;
+* [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
 
-* Web API, PHP, MongoDB;
+* [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
 
-* Custom data source.
+* [Custom data sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
 
 Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) option to specify a data source. In this tutorial, we will use a local array. 
 
@@ -17,11 +17,11 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 ---
 ##### jQuery
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     $(function() { 
-        $("#scheduler").dx{WidgetName}({ 
+        $("#scheduler").dxScheduler({
             // ...
-            dataSource: data
+            dataSource: appointments
         });
     });
 
@@ -37,7 +37,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     </html>
 
     <!-- tab: data.js -->
-    const data = [
+    const appointments = [
         {
             text: "Install New Database",
             priorityId: 1,
@@ -100,12 +100,12 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 
 ##### Angular 
 
-    <!-- tab: app.component.html --> 
+    <!-- tab: app.component.html -->
     <dx-scheduler ...
-        [dataSource]="data">
+        [dataSource]="appointments">
     </dx-scheduler> 
 
-    <!-- tab: app.component.ts --> 
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core'; 
     import { Appointment, AppService } from './app.service';
 
@@ -117,14 +117,14 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     }) 
     export class AppComponent { 
         // ...
-        data: Appointment[];
+        appointments: Appointment[];
 
         constructor(service: AppService) {
-            this.data = service.getAppointments();
+            this.appointments = service.getAppointments();
         }
     } 
 
-    <!-- tab: app.service.ts --> 
+    <!-- tab: app.service.ts -->
     import { Injectable } from '@angular/core';
 
     export class Appointment {
@@ -207,17 +207,17 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 
 ##### Vue 
 
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
-            :data-source="dataSource">
+            :data-source="appointments">
         </DxScheduler>
     </template> 
 
     <script>
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
-    import { data } from './data.js';
+    import { appointments } from './data.js';
 
     export default {
         name: 'Vue: Getting started with Scheduler',
@@ -227,14 +227,14 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
         data() {
             return {
                 // ...
-                dataSource: data
+                appointments: appointments
             };
         }
     }
     </script>
 
-    <!-- tab: data.js --> 
-    export const data = [
+    <!-- tab: data.js -->
+    export const appointments = [
         {
             text: "Install New Database",
             priorityId: 1,
@@ -302,22 +302,22 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     import 'devextreme/dist/css/dx.light.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
-    import { data } from './data.js';
+    import { appointments } from './data.js';
 
     function App() {
         return (
             <div className="App">
-                <div id="app-container">
-                    <Scheduler ...
-                        dataSource={data}>
-                    </Scheduler>
-                  </div>
+                <Scheduler ...
+                    dataSource={appointments}>
+                </Scheduler>
             </div>
         );
     }
 
+    export default App;
+
     <!-- tab: data.js -->
-    export const data = [
+    export const appointments = [
         {
             text: "Install New Database",
             priorityId: 1,

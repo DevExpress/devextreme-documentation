@@ -22,7 +22,7 @@ dx.web.js, dx.all.js
     url: "/Documentation/Guide/Widgets/Scheduler/Overview/"
 }
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/Widgets/DateBox/Getting_Started_with_Scheduler/"
+    url: "/Documentation/Guide/Widgets/Scheduler/Getting_Started_with_Scheduler/"
 } 
 
 #####See Also#####

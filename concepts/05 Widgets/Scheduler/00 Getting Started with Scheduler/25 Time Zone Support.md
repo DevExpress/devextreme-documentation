@@ -1,13 +1,13 @@
-**Scheduler** displays all appointments in the client time zone. To change this default behavior, you can specify a different time zone in the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) option. It accepts values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA database</a>. In this tutorial, the 'Europe/Berlin' time zone is used.
+**Scheduler** displays all appointments in the client time zone. To change this default behavior, you can specify a different time zone in the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) property. It accepts values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA database</a>. In this tutorial, the 'Europe/Berlin' time zone is used.
 
-Additionally, we will allow users to edit time zones of individual appointments. For this, enable the **editing**.[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) option.
+Additionally, we will allow users to edit time zones of individual appointments. For this, enable the **editing**.[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) property.
 
 ---
 ##### jQuery
 
-    <!-- tab: index.js --> 
+    <!-- tab: index.js -->
     $(function() { 
-        $("#scheduler").dx{WidgetName}({ 
+        $("#scheduler").dxScheduler({ 
             // ...
             editing: {
                 // ...
@@ -19,7 +19,7 @@ Additionally, we will allow users to edit time zones of individual appointments.
 
 ##### Angular 
 
-    <!-- tab: app.component.html --> 
+    <!-- tab: app.component.html -->
     <dx-scheduler ...
         timeZone="Europe/Berlin">
         <!-- ... -->
@@ -30,7 +30,7 @@ Additionally, we will allow users to edit time zones of individual appointments.
 
 ##### Vue 
 
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
             timeZone="Europe/Berlin">
@@ -67,5 +67,7 @@ Additionally, we will allow users to edit time zones of individual appointments.
             </div>
         );
     }
+
+    export default App;
 
 ---

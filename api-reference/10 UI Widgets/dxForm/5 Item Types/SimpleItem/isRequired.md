@@ -83,9 +83,9 @@ If you specify validation rules using the [validationRules](/api-reference/10%20
 
     const App = () => {
         return (
-            <Form>
-                <SimpleItem>
-                    <RequiredRule />
+            <Form ...>
+                <SimpleItem ...>
+                    <RequiredRule ... />
                 </SimpleItem>
             </Form>
         );

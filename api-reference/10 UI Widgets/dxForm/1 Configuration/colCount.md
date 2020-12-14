@@ -74,7 +74,7 @@ For extra small screens, this option always equals *1* to make the widget adapti
 
     const App = () => {
         return (
-            <Form>
+            <Form ...>
                 <ColCountByScreen xs={2} />
             </Form>
         );

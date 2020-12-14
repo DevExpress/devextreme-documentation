@@ -87,7 +87,7 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
                     text: "Do Something",
                     type: "success",
                     onClick: function () {
-                        // Implement your logic here
+                        // Handle the button click here
                     }
                 }
             };
@@ -105,7 +105,7 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
         text: "Do Something",
         type: "success",
         onClick: function () {
-            // Implement your logic here
+            // Handle the button click here
         }
     };
 

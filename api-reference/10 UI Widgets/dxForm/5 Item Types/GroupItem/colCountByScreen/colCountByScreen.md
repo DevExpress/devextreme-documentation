@@ -93,8 +93,8 @@ Specifies the relation between the [screen size qualifier](/api-reference/10%20U
 
     const App = () => {
         return (
-            <Form>
-                <GroupItem>
+            <Form ...>
+                <GroupItem ...>
                     <ColCountByScreen xs={2} sm={3} />
                     <SimpleItem />
                 </GroupItem>

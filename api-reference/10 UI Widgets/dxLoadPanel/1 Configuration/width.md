@@ -5,6 +5,10 @@ default: 222, 60 (Material)
 ---
 ---
 ##### return: Number | String
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\DOMComponent\1 Configuration\width.md' -->

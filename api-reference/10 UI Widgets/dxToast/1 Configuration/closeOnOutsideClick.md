@@ -5,9 +5,13 @@ default: true (Android)
 ---
 ---
 ##### param(event): event
-<!-- Description goes here -->
+<!-- %param(event)% -->
 
 ##### return: Boolean
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->

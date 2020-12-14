@@ -5,6 +5,10 @@ default: 'auto'
 ---
 ---
 ##### return: Number | String
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\DOMComponent\1 Configuration\height.md' -->

@@ -5,6 +5,10 @@ default: 568 (Material)
 ---
 ---
 ##### return: Number | String
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\maxWidth.md' -->

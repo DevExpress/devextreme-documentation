@@ -12,6 +12,9 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel the gesture.
 
+##### field(e.component): dxScheduler
+<!-- Description goes here -->
+
 ##### field(e.event): event
 #include common-ref-eventparam
 

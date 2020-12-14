@@ -225,7 +225,6 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
 
         return (
             <React.Fragment>
-                <div>
                     <Button ...
                         onClick={exportGrid}
                     />
@@ -234,7 +233,6 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
                         >
                         {/* ... */}
                     </DataGrid>
-                </div>
             </React.Fragment>
         );
     }

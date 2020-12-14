@@ -225,13 +225,13 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
 
         return (
             <React.Fragment>
-                    <Button ...
-                        onClick={exportGrid}
-                    />
-                    <DataGrid ...
-                        ref={dataGridRef}>
-                        {/* ... */}
-                    </DataGrid>
+                <Button ...
+                    onClick={exportGrid}
+                />
+                <DataGrid ...
+                    ref={dataGridRef}>
+                    {/* ... */}
+                </DataGrid>
             </React.Fragment>
         );
     }

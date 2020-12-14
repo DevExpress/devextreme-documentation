@@ -61,4 +61,47 @@ Specifies the relation between the [screen size qualifier](/api-reference/10%20U
     })
     export class AppModule { }
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm ...>
+            <DxGroupItem ...>
+                <DxColCountByScreen :xs="2" :sm="3"/>
+                <DxSimpleItem .../>
+            </DxGroupItem>
+        </DxForm>
+    </template>
+    <script>
+    import DxForm, { DxSimpleItem, DxGroupItem, DxColCountByScreen } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxSimpleItem,
+            DxGroupItem,
+            DxColCountByScreen
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Form, { SimpleItem, GroupItem, ColCountByScreen } from 'devextreme-react/form';
+
+    const App = () => {
+        return (
+            <Form ...>
+                <GroupItem ...>
+                    <ColCountByScreen xs={2} sm={3} />
+                    <SimpleItem />
+                </GroupItem>
+            </Form>
+        );
+    };
+
+    export default App;
+
 ---

@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-A key to authenticate the application within the "Bing" map provider.
+A key to authenticate the application within Bing Maps.
 
 ---
 <!-- Description goes here -->

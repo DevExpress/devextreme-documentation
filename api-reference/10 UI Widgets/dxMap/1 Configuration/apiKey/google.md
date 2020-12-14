@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-A key to authenticate the application within the "Google" map provider.
+A key to authenticate the application within Google Maps.
 
 ---
 <!-- Description goes here -->

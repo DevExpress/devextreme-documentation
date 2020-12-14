@@ -11,7 +11,7 @@ Configures the button.
 See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/') for options that you can specify in this object.
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -32,7 +32,7 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
         });
     });
 
-#####Angular
+##### Angular
 
     <!--HTML-->
     <dx-form ...>
@@ -61,6 +61,63 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm ...>
+            <DxItem
+                :button-options="buttonOptions"
+                item-type="button"
+            />
+        </DxForm>
+    </template>
+    <script>
+    import DxForm, { DxItem } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxItem
+        },
+        data() {
+            return {
+                buttonOptions: {
+                    text: "Do Something",
+                    type: "success",
+                    onClick: function () {
+                        // Handle the button click here
+                    }
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Form, { Item } from 'devextreme-react/form';
+
+    const buttonOptions = {
+        text: "Do Something",
+        type: "success",
+        onClick: function () {
+            // Handle the button click here
+        }
+    };
+
+    const App = () => {
+        return (
+            <Form>
+                <Item itemType="button" buttonOptions={buttonOptions} />
+            </Form>
+        );
+    };    
+
+    export default App;
 
 ---
 

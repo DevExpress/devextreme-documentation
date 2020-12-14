@@ -12,7 +12,7 @@ The **Scheduler** can load and update data from these data source types:
 
 Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) option to specify a data source. In this tutorial, we will use a local array. 
 
-[note] The widget supports three types of appointments: one-time, all-day, and recurring. The used data source contains them all. 
+[note]The widget supports three types of appointments: one-time, all-day, and recurring. The used data source contains them all. 
 
 ---
 ##### jQuery

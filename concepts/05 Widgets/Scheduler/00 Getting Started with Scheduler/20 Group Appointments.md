@@ -27,7 +27,7 @@ By now, the **Scheduler** has applied the resource kinds: the appointments are c
         });
     });
 
-    <!-- tab: index.js -->
+    <!-- tab: data.js --> 
     // ...
     const priorities = [
         {

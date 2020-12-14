@@ -230,8 +230,7 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
                         onClick={exportGrid}
                     />
                     <DataGrid ...
-                        ref={dataGridRef}
-                        >
+                        ref={dataGridRef}>
                         {/* ... */}
                     </DataGrid>
                 </div>

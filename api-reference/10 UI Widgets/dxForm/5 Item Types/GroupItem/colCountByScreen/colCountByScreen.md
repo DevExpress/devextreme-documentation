@@ -91,18 +91,16 @@ Specifies the relation between the [screen size qualifier](/api-reference/10%20U
     import React from 'react';
     import Form, { SimpleItem, GroupItem, ColCountByScreen } from 'devextreme-react/form';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form>
-                    <GroupItem>
-                        <ColCountByScreen xs={2} sm={3} />
-                        <SimpleItem />
-                    </GroupItem>
-                </Form>
-            );
-        }
-    }
+    const App = () => {
+        return (
+            <Form>
+                <GroupItem>
+                    <ColCountByScreen xs={2} sm={3} />
+                    <SimpleItem />
+                </GroupItem>
+            </Form>
+        );
+    };
 
     export default App;
 

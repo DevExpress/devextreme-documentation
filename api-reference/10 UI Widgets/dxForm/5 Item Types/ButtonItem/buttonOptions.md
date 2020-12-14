@@ -109,15 +109,13 @@ See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Con
         }
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form>
-                    <Item itemType="button" buttonOptions={buttonOptions} />
-                </Form>
-            );
-        }
-    }
+    const App = () => {
+        return (
+            <Form>
+                <Item itemType="button" buttonOptions={buttonOptions} />
+            </Form>
+        );
+    };    
 
     export default App;
 

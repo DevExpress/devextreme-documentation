@@ -81,17 +81,15 @@ If you specify validation rules using the [validationRules](/api-reference/10%20
     import React from 'react';
     import Form, { SimpleItem, RequiredRule } from 'devextreme-react/form';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form>
-                    <SimpleItem>
-                        <RequiredRule />
-                    </SimpleItem>
-                </Form>
-            );
-        }
-    }
+    const App = () => {
+        return (
+            <Form>
+                <SimpleItem>
+                    <RequiredRule />
+                </SimpleItem>
+            </Form>
+        );
+    };
 
     export default App;
 

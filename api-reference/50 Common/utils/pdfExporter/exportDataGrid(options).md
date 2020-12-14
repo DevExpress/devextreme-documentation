@@ -191,8 +191,6 @@ You can call this method at any point in your application. In this example, we c
     import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
-    const dataGridRef = useRef(null);
-
     export default function App() {
         const dataGridRef = useRef(null);
 

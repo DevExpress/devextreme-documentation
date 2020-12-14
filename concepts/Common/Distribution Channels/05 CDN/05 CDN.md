@@ -68,3 +68,11 @@ DevExtreme provides the following files via CDN:
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.material.teal.light.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.softblue.compact.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.softblue.css" rel="stylesheet">
+
+DevExtreme scripts and stylesheets are also available on <a href="https://cdnjs.com/" target="_blank">cdnjs</a>:
+
+- <a href="https://cdnjs.com/libraries/devextreme" target="_blank">devextreme</a>
+- <a href="https://cdnjs.com/libraries/devexpress-gantt" target="_blank">devexpress-gantt</a>
+- <a href="https://cdnjs.com/libraries/devexpress-diagram" target="_blank">devexpress-diagram</a>
+- <a href="https://cdnjs.com/libraries/devextreme-quill" target="_blank">devextreme-quill</a>
+- <a href="https://cdnjs.com/libraries/devextreme-aspnet-data" target="_blank">devextreme-aspnet-data</a>

@@ -25,13 +25,13 @@ The modified option's new value.
 
 ---
 
-The following example shows how to subscribe to changes of a **{WidgetName}** option:
+The following example shows how to subscribe to changes of a component option:
 
 ---
 
 ##### jQuery
 
-    <!--index.js-->
+    <!-- index.js -->
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
@@ -45,12 +45,12 @@ The following example shows how to subscribe to changes of a **{WidgetName}** op
 
 ##### Angular 
 
-    <!-- tab: app.component.html --> 
+    <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         (onOptionChanged)="onOptionChanged($event)"> 
     </dx-{widget-name}> 
 
-    <!-- tab: app.component.ts --> 
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core'; 
 
     @Component({ 
@@ -68,7 +68,7 @@ The following example shows how to subscribe to changes of a **{WidgetName}** op
         }
     } 
 
-    <!-- tab: app.module.ts --> 
+    <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core'; 
     import { AppComponent } from './app.component'; 
@@ -90,7 +90,7 @@ The following example shows how to subscribe to changes of a **{WidgetName}** op
 
 ##### Vue 
   
-    <!-- tab: App.vue --> 
+    <!-- tab: App.vue -->
     <template> 
         <Dx{WidgetName} ...
             :on-option-changed="onOptionChanged">            
@@ -121,7 +121,7 @@ The following example shows how to subscribe to changes of a **{WidgetName}** op
 
 ##### React 
 
-    <!-- tab: App.js --> 
+    <!-- tab: App.js -->
     import React from 'react'; 
     import 'devextreme/dist/css/dx.common.css'; 
     import 'devextreme/dist/css/dx.light.css'; 

@@ -31,7 +31,6 @@ The following example shows how to subscribe to changes of a component option:
 
 ##### jQuery
 
-    <!-- index.js -->
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...

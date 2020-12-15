@@ -25,7 +25,7 @@ The modified option's new value.
 
 ---
 
-The following example shows how to subscribe to changes for an option of {WidgetName}:
+The following example shows how to subscribe to changes of a **{WidgetName}** option:
 
 ---
 
@@ -33,7 +33,7 @@ The following example shows how to subscribe to changes for an option of {Widget
 
     <!--index.js-->
     $(function() {
-        $("#{widgetName}Container").{WidgetName}({
+        $("#{widgetName}Container").dx{WidgetName}({
             // ...
             onOptionChanged: function(e) {
                 if(e.name === "changedOption") {
@@ -108,8 +108,8 @@ The following example shows how to subscribe to changes for an option of {Widget
         }, 
         // ...
         methods: { 
-            onOptionChanged: function(args) {
-                if(args.name === "changedOption") {
+            onOptionChanged: function(e) {
+                if(e.name === "changedOption") {
                     // handle the option change here
                 }
             }

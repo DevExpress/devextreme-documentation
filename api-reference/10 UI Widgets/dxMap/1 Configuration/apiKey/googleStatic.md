@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-A key to authenticate the application within Google Maps Static.
+A key to authenticate the component within Google Maps Static.
 
 ---
 <!-- Description goes here -->

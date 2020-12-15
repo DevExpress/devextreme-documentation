@@ -5,7 +5,7 @@ default: { bing: '', google: '', googleStatic: '' }
 ---
 ---
 ##### shortDescription
-A key to authenticate the application within a map provider.
+A key to authenticate the component within a map provider.
 
 ---
 ---

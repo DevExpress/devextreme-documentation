@@ -1,5 +1,4 @@
-You can organize form items in groups, tabs, and columns.
-This tutorial shows how to divide items into groups and columns, and insert [empty spaces](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). 
+The **Form** generates a [simple item]() for each field in the [formData]() object. A simple item is a label-editor pair. The **Form** automatically defines the editor's type depending on the data type of the **formData** object's field. The **Form** in the following example will create the [TextBox](), [NumberBox](), and [DateBox]() editors:
 
 ---
 ##### jQuery
@@ -9,10 +8,9 @@ This tutorial shows how to divide items into groups and columns, and insert [emp
         $("#form").dxForm({
             formData: {
                 name: "John Heart",
-                hireDate: new Date(2012, 4, 13),
-                officeNumber: "901"
-            },
-            items: ["name", "hireDate", "officeNumber"]
+                officeNumber: "901",
+                hireDate: new Date(2012, 4, 13)
+            }
         });
     });
 
@@ -20,8 +18,7 @@ This tutorial shows how to divide items into groups and columns, and insert [emp
 
     <!-- tab: app.component.html -->
     <dx-form
-        [(formData)]="employee",
-        [items]="formItems"
+        [(formData)]="employee"
     >
     </dx-form>
 
@@ -36,11 +33,9 @@ This tutorial shows how to divide items into groups and columns, and insert [emp
     export class AppComponent {
         employee = {
             name: "John Heart",
-            hireDate: new Date(2012, 4, 13),
-            officeNumber: "901"
+            officeNumber: "901",
+            hireDate: new Date(2012, 4, 13)
         }
-
-        formItems = ['name', 'hireDate', 'officeNumber']
     }
 
     <!-- tab: app.module.ts -->
@@ -69,8 +64,7 @@ This tutorial shows how to divide items into groups and columns, and insert [emp
     <template>
         <div id="app-container">
             <DxForm 
-                :form-data="employee"
-                :items="formItems">
+                :form-data="employee">
             </DxForm>
         </div>
     </template>
@@ -89,10 +83,9 @@ This tutorial shows how to divide items into groups and columns, and insert [emp
             return: {
                 employee = {
                     name: "John Heart",
-                    hireDate: new Date(2012, 4, 13),
-                    officeNumber: "901"
-                },
-                formItems = ['name', 'hireDate', 'officeNumber']
+                    officeNumber: "901",
+                    hireDate: new Date(2012, 4, 13)
+                }
             }
         }
     }
@@ -111,18 +104,15 @@ This tutorial shows how to divide items into groups and columns, and insert [emp
 
     const employee = {
         name: "John Heart",
-        hireDate: new Date(2012, 4, 13),
-        officeNumber: "901"
+        officeNumber: "901",
+        hireDate: new Date(2012, 4, 13)
     };
 
-    const formItems = ['name', 'hireDate', 'officeNumber'];
-
-    function App() {
+    const App = () => {
         return (
             <div className="App">
                 <Form
-                    formData={employee}
-                    items={formItems}>
+                    formData={employee}>
                 </Form>
             </div>
         );

@@ -81,6 +81,64 @@ The following code shows how to use this function with a remote service:
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            :create-children="createChildren"
+            :root-value="''"
+            data-structure="plain"
+        />
+    </template>
+    <script>
+
+    import DxTreeView from 'devextreme-vue/tree-view';
+    import 'whatwg-fetch';
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        methods: {
+            createChildren: function(parent) {
+            let parentId = parent ? parent.itemData.id : '';
+
+            return fetch(`http://url/to/the/service?parentId=${parentId}`)
+                .then(response => response.json())
+                .catch(() => { throw 'Data Loading Error'; });
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+    import 'whatwg-fetch';
+
+    const App = () => {
+        return (
+            <TreeView
+                dataStructure="plain"
+                rootValue="''"
+                createChildren={createChildren}
+            />
+        );
+    }
+
+    const createChildren = (parent) => {
+        let parentId = parent ? parent.itemData.id : '';
+
+        return fetch(`http://url/to/the/service?parentId=${parentId}`)
+            .then(response => response.json())
+            .catch(() => { throw 'Data Loading Error'; });
+    }
+
+    export default App;
+
 ---
 
 #include common-demobutton with {

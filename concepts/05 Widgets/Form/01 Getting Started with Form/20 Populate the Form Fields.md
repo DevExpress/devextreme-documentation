@@ -18,8 +18,7 @@ The **Form** generates a [simple item]() for each field in the [formData]() obje
 
     <!-- tab: app.component.html -->
     <dx-form
-        [(formData)]="employee"
-    >
+        [(formData)]="employee">
     </dx-form>
 
     <!-- tab: app.component.ts -->

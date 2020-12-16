@@ -15,6 +15,6 @@
     "update-links-fail-on-change": "dx-tools update-links --docs-root ./ --content-map-path ./ --fail-on-change true",
     "update-all-links": "dx-tools update-links --docs-root ./ --content-map-path ./ --check-all true",
     "update-links": "dx-tools update-links --docs-root ./ --content-map-path ./",
-    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 20.1"
+    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 19.1"
   }
 }

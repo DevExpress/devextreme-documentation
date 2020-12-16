@@ -80,7 +80,7 @@ The **Form** generates a [simple item]() for each field in the [formData]() obje
         },
         data: {
             return: {
-                employee = {
+                employee: {
                     name: "John Heart",
                     officeNumber: "901",
                     hireDate: new Date(2012, 4, 13)

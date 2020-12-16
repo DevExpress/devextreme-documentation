@@ -8,6 +8,9 @@ default: { bing: '', google: '', googleStatic: '' }
 A key to authenticate the component within a map provider.
 
 ---
+
+If you have more than one map provider in your application, specify the keys in the object fields. Otherwise, specify the key as a string.
+
 ---
 ##### jQuery
 

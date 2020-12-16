@@ -24,14 +24,12 @@ To generate items only for the required fields, declare the [items]() array. Eac
 
     <!-- tab: app.component.html -->
     <dx-form
-        [(formData)]="employee"
-    >
+        [(formData)]="employee">
         <dxi-item dataField="name"></dxi-item>
         <dxi-item dataField="officeNumber"></dxi-item>
         <dxi-item 
             dataField="hireDate" 
-            [editorOptions]="dateItemOptions"
-        >
+            [editorOptions]="hireDateOptions">
         </dxi-item>
     </dx-form>
 
@@ -50,9 +48,9 @@ To generate items only for the required fields, declare the [items]() array. Eac
             hireDate: new Date(2012, 4, 13)
         }
 
-        dateItemOptions = {
+        hireDateOptions = {
             disabled: true
-        };
+        }
     }
 
     <!-- tab: app.module.ts -->
@@ -85,7 +83,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
             <DxItem data-field="officeNumber"/>
             <DxItem 
                 data-field="hireDate"
-                :editor-options="dateItemOptions"
+                :editor-options="hireDateOptions"
             />
         </DxForm>
     </template>
@@ -102,7 +100,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
         hireDate: new Date(2012, 4, 13)
     };
 
-    const dateItemOptions = {
+    const hireDateOptions = {
         disabled: true
     };
 
@@ -114,7 +112,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
         data: {
             return: {
                 employee,
-                dateItemOptions
+                hireDateOptions
             }
         }
     }
@@ -138,7 +136,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
         hireDate: new Date(2012, 4, 13)
     };
 
-    const dateItemOptions = {
+    const hireDateOptions = {
         disabled: true
     };
 
@@ -150,7 +148,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
                 <Item dataField="officeNumber" />
                 <Item 
                     dataField="hireDate"
-                    editorOptions={dateItemOptions}
+                    editorOptions={hireDateOptions}
                 />
             </Form>
         );

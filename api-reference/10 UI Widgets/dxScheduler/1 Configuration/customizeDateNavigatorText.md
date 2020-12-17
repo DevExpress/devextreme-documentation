@@ -85,11 +85,18 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
         // ...
     })
 
+    <!--HTML-->
+    <dx-scheduler ...
+        [(currentView)]="currentView"
+        [customizeDateNavigatorText]="customizeDateNavigatorText">
+    </dx-scheduler>
+
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxScheduler ...
+            v-model:current-view="currentView"
             :customize-date-navigator-text="customizeDateNavigatorText">
         </DxScheduler>
     </template>
@@ -132,7 +139,7 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useCallback } from 'react';
+    import React, { useCallback, useState } from 'react';
 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -140,7 +147,14 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
     import Scheduler from 'devextreme-react/scheduler';
 
     const App = () => {
-        const currentView = 'day';
+        const [currentView, setCurrentView] = useState('day');
+
+        const onOptionChanged = useCallback((e) => {
+            if(e.name === 'currentView') {
+                setCurrentView(e.value);
+            }
+        }, [setCurrentView]);
+
         const customizeDateNavigatorText = useCallback((e) => {
             const formatOptions = { 
                 year: 'numeric', 
@@ -158,6 +172,8 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
 
         return (
             <Scheduler ...
+                currentView={currentView}
+                onOptionChanged={onOptionChanged}
                 customizeDateNavigatorText={customizeDateNavigatorText}
             />
         );

@@ -82,7 +82,7 @@ This array should contain one or more values that correspond to the [fieldExpr](
         },
         data() {
             return {
-                dataSource: [],
+                dataSource: [ ... ],
                 groups: ['room', 'teacher'],
                 roomsDataSource: roomsDataSource,
                 teacherDataSource: teacherDataSource

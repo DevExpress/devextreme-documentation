@@ -110,7 +110,7 @@ This array should contain one or more values that correspond to the [fieldExpr](
 
         return (
             <Scheduler ...
-                dataSource={dataSource}
+                dataSource={appointments}
                 groups={groups}>
                 <Resource
                     dataSource={roomsDataSource}

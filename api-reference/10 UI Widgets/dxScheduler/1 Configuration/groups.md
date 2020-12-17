@@ -117,7 +117,7 @@ This array should contain one or more values that correspond to the [fieldExpr](
                     fieldExpr="room"
                 />
                 <Resource
-                    dataSource={teacherDataSource}
+                    dataSource={teachersDataSource}
                     fieldExpr="teacher"
                 />
             </Scheduler>

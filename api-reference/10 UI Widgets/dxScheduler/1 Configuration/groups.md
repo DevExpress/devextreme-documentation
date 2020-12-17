@@ -57,7 +57,7 @@ This array should contain one or more values that correspond to the [fieldExpr](
     <!-- tab: App.vue -->
     <template>
         <DxScheduler ...
-            :data-source="dataSource"
+            :data-source="appointments"
             :groups="groups">
             <DxResource
                 :data-source="roomsDataSource"

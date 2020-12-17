@@ -64,7 +64,7 @@ This array should contain one or more values that correspond to the [fieldExpr](
                 field-expr="room"
             />
             <DxResource
-                :data-source="teacherDataSource"
+                :data-source="teachersDataSource"
                 field-expr="teacher"
             />
         </DxScheduler>

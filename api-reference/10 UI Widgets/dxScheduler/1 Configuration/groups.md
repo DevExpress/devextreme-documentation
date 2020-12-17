@@ -85,7 +85,7 @@ This array should contain one or more values that correspond to the [fieldExpr](
                 dataSource: [ ... ],
                 groups: ['room', 'teacher'],
                 roomsDataSource: [ ... ],
-                teacherDataSource: teacherDataSource
+                teachersDataSource: [ ... ]
                 // ...
             }
         }

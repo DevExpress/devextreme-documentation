@@ -103,9 +103,9 @@ This array should contain one or more values that correspond to the [fieldExpr](
     import Scheduler, { Resource } from 'devextreme-react/scheduler';
 
     const App = () => {
-        const dataSource = [];
-        const roomsDataSource = [];
-        const teacherDataSource = [];
+        const appointments = [ ... ];
+        const roomsDataSource = [ ... ];
+        const teachersDataSource = [ ... ];
         const groups = ['room', 'teacher'];
 
         return (

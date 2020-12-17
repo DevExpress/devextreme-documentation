@@ -84,7 +84,7 @@ This array should contain one or more values that correspond to the [fieldExpr](
             return {
                 dataSource: [ ... ],
                 groups: ['room', 'teacher'],
-                roomsDataSource: roomsDataSource,
+                roomsDataSource: [ ... ],
                 teacherDataSource: teacherDataSource
                 // ...
             }

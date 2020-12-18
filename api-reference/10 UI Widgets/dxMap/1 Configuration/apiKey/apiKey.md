@@ -5,11 +5,11 @@ default: { bing: '', google: '', googleStatic: '' }
 ---
 ---
 ##### shortDescription
-A key to authenticate the component within a map provider.
+Keys to authenticate the component within map providers.
 
 ---
 
-If you have more than one map provider in your application, specify the keys in the object fields. Otherwise, specify the key as a string.
+If you have more than one map provider in your application, specify the keys in the object fields as shown below. Otherwise, you can assign the key directly to the **apiKey** property.
 
 ---
 ##### jQuery

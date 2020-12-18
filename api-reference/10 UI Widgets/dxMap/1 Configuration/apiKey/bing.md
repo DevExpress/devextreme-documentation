@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A key used to authenticate the component within Bing Maps.
 
 ---
 <!-- Description goes here -->

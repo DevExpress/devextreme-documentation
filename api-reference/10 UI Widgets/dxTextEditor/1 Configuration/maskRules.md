@@ -5,11 +5,9 @@ default: '{}'
 ---
 ---
 ##### shortDescription
-
 Specifies custom mask rules.
 
 ---
-
 Each field of an object passed to this option corresponds to a single rule. A field name is a character used in a mask enclosed in quotes. A field accepts the following values.
 
     <!--JavaScript-->

@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-A key to authenticate the component within Google Maps.
+A key used to authenticate the component within Google Maps.
 
 ---
 <!-- Description goes here -->

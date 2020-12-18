@@ -3,9 +3,7 @@ id: dxTextEditor.Options.maskRules
 type: Object
 default: '{}'
 ---
-
 ---
-
 ##### shortDescription
 
 Specifies custom mask rules.

@@ -31,4 +31,4 @@ The data object of the row being dragged.
 #include draganddrop-ref-itemelementparam
 
 ---
-<!-- Description goes here -->
+The widget's instance.

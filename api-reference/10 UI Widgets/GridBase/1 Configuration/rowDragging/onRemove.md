@@ -37,4 +37,4 @@ Custom [data](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/rowDra
 The position in which a row is placed. If the row is dragged away from the widget, the value is **-1**.
 
 ---
-<!-- Description goes here -->
+The widget's instance.

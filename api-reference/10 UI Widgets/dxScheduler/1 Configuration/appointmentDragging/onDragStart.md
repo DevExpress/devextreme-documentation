@@ -25,4 +25,4 @@ The data object of the appointment being dragged.
 #include draganddrop-ref-itemelementparam
 
 ---
-<!-- Description goes here -->
+The widget's instance.

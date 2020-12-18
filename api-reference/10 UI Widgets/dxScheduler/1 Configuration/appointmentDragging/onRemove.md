@@ -28,4 +28,4 @@ The data object of the appointment being dragged.
 The instance of the appointment's target widget.
 
 ---
-<!-- Description goes here -->
+The widget's instance.

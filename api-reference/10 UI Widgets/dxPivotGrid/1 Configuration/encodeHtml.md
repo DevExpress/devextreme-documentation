@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether HTML tags are displayed as plain text or applied to cell values.
 
 ---
-<!-- Description goes here -->
+When **true**, HTML tags are displayed as plain text; when **false**, they are applied to cell values.

@@ -18,7 +18,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
                 officeNumber: 901,
                 phone: "+1(213) 555-9392",
                 skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com"
+                email: "jheart@dx-email.com""
             },
             colCount: 2,
             items: [{
@@ -87,7 +87,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
             officeNumber: 901,
             phone: "+1(213) 555-9392",
             skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com"
+            email: "jheart@dx-email.com""
         }
 
         personalDataOptions = {
@@ -160,7 +160,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com
+        email: "jheart@dx-email.com"
     };
 
     const personalDataOptions = {
@@ -204,7 +204,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com
+        email: "jheart@dx-email.com"
     };
 
     const personalDataOptions = {

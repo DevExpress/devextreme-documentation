@@ -1,4 +1,4 @@
-You can add an empty space to separate form items. To do this, assign "empty" to the [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#itemType) property. In the following example, the empty item [spans](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#colSpan) two columns:
+You can divide form items into several columns. To keep the fixed number of columns, specify the number in the [colCount](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount) property. An item can occupy more than one column. For this, specify the [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) property. In the example below, the `notes` item spans two columns:
 
 ---
 ##### jQuery
@@ -11,15 +11,13 @@ You can add an empty space to separate form items. To do this, assign "empty" to
                 position: "CEO",
                 hireDate: new Date(2012, 4, 13),
                 officeNumber: 901,
-                phone: "+1(213) 555-9392",
-                skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com"
+                notes: "John has been in the Audio/Video industry since 1990."
             },
             colCount: 2,
             items: ["name", "position", "hireDate", "officeNumber", {
-                itemType: "empty",
+                dataField: "notes",
                 colSpan: 2
-            }, "phone", "skype", "email"]
+            }]
         });
     });
 
@@ -34,12 +32,9 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         <dxi-item dataField="hireDate"></dxi-item>
         <dxi-item dataField="officeNumber"></dxi-item>
         <dxi-item 
-            itemType="empty" 
+            dataField="notes" 
             [colSpan]="2">
         </dxi-item>
-        <dxi-item dataField="skype"></dxi-item>
-        <dxi-item dataField="phone"></dxi-item>
-        <dxi-item dataField="email"></dxi-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->
@@ -56,9 +51,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
             position: "CEO",
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            phone: "+1(213) 555-9392",
-            skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com"
+            notes: "John has been in the Audio/Video industry since 1990."
         }
     }
 
@@ -89,16 +82,14 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         <DxForm 
             :form-data="employee"
             :col-count="2">
-            <DxSimpleItem data-field="name"/>
-            <DxSimpleItem data-field="position"/>
-            <DxSimpleItem data-field="hireDate"/>
-            <DxSimpleItem data-field="officeNumber"/>
-            <DxEmptyItem 
+            <DxItem data-field="name"/>
+            <DxItem data-field="position"/>
+            <DxItem data-field="hireDate"/>
+            <DxItem data-field="officeNumber"/>
+            <DxItem 
+                data-field="notes"
                 :col-span="2"
             />
-            <DxSimpleItem dataField="skype"/>
-            <DxSimpleItem dataField="phone"/>
-            <DxSimpleItem dataField="email"/>
         </DxForm>
     </template>
 
@@ -106,23 +97,20 @@ You can add an empty space to separate form items. To do this, assign "empty" to
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxSimpleItem, DxEmptyItem } from 'devextreme-vue/form';
+    import { DxForm, DxItem } from 'devextreme-vue/form';
     
     let employee = {
         name: "John Heart",
         position: "CEO",
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        notes: "John has been in the Audio/Video industry since 1990."
     };
 
     export default {
         components: {
             DxForm,
-            DxSimpleItem,
-            DxEmptyItem
+            DxItem
         },
         data: {
             return: {
@@ -141,8 +129,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
 
     import {
         Form,
-        SimpleItem,
-        EmptyItem
+        Item
     } from 'devextreme-react/form';
 
     let employee = {
@@ -150,9 +137,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         position: "CEO",
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        notes: "John has been in the Audio/Video industry since 1990."
     };
 
     const App = () => {
@@ -160,16 +145,14 @@ You can add an empty space to separate form items. To do this, assign "empty" to
             <Form
                 formData={employee}
                 colCount={2}>
-                <SimpleItem dataField="name" />
-                <SimpleItem dataField="position" />
-                <SimpleItem dataField="hireDate" />
-                <SimpleItem dataField="officeNumber" />
-                <EmptyItem 
+                <Item dataField="name" />
+                <Item dataField="position" />
+                <Item dataField="hireDate" />
+                <Item dataField="officeNumber" />
+                <Item 
+                    dataField="notes"
                     colSpan={2}
                 />
-                <SimpleItem dataField="phone" />
-                <SimpleItem dataField="skype" />
-                <SimpleItem dataField="email" />
             </Form>
         );
     }

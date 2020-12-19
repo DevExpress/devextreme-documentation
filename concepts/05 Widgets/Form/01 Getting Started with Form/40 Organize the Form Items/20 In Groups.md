@@ -1,4 +1,6 @@
-You can add an empty space to separate form items. To do this, assign "empty" to the [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#itemType) property. In the following example, the empty item [spans](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#colSpan) two columns:
+You can divide form items in groups. To do this, declare items with the 'group" [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) array. A group can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). You can configure each group's layout separately. 
+
+The example below shows two groups in a **Form** with two columns. Each group occupies a separate column, and the `Personal Data` group has two columns inside it:
 
 ---
 ##### jQuery
@@ -16,10 +18,16 @@ You can add an empty space to separate form items. To do this, assign "empty" to
                 email: "jheart@dx-email.com"
             },
             colCount: 2,
-            items: ["name", "position", "hireDate", "officeNumber", {
-                itemType: "empty",
-                colSpan: 2
-            }, "phone", "skype", "email"]
+            items: [{
+                itemType: "group",
+                caption: "Personal Data",
+                colCount: 2,
+                items: ["name", "position", "hireDate", "officeNumber"]
+            }, {
+                itemType: "group",
+                caption: "Contacts",
+                items: ["phone", "skype", "email"]
+            }]
         });
     });
 
@@ -29,17 +37,20 @@ You can add an empty space to separate form items. To do this, assign "empty" to
     <dx-form
         [formData]="employee"
         [colCount]="2">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item dataField="position"></dxi-item>
-        <dxi-item dataField="hireDate"></dxi-item>
-        <dxi-item dataField="officeNumber"></dxi-item>
         <dxi-item 
-            itemType="empty" 
-            [colSpan]="2">
+            itemType="group" 
+            caption="Personal Data"
+            [colCount]="2">
+            <dxi-item dataField="name"></dxi-item>
+            <dxi-item dataField="position"></dxi-item>
+            <dxi-item dataField="hireDate"></dxi-item>
+            <dxi-item dataField="officeNumber"></dxi-item>
         </dxi-item>
-        <dxi-item dataField="skype"></dxi-item>
-        <dxi-item dataField="phone"></dxi-item>
-        <dxi-item dataField="email"></dxi-item>
+        <dxi-item itemType="group" caption="Contacts">
+            <dxi-item dataField="phone"></dxi-item>
+            <dxi-item dataField="skype"></dxi-item>
+            <dxi-item dataField="email"></dxi-item>
+        </dx-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->
@@ -89,16 +100,19 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         <DxForm 
             :form-data="employee"
             :col-count="2">
-            <DxSimpleItem data-field="name"/>
-            <DxSimpleItem data-field="position"/>
-            <DxSimpleItem data-field="hireDate"/>
-            <DxSimpleItem data-field="officeNumber"/>
-            <DxEmptyItem 
-                :col-span="2"
-            />
-            <DxSimpleItem dataField="skype"/>
-            <DxSimpleItem dataField="phone"/>
-            <DxSimpleItem dataField="email"/>
+            <DxGroupItem
+                caption="Personal Data"
+                :col-count="2">
+                <DxSimpleItem data-field="name"/>
+                <DxSimpleItem data-field="position"/>
+                <DxSimpleItem data-field="hireDate"/>
+                <DxSimpleItem data-field="officeNumber"/>
+            </DxGroupItem>
+            <DxGroupItem caption="Contacts">
+                <DxSimpleItem data-field="phone"/>
+                <DxSimpleItem data-field="skype"/>
+                <DxSimpleItem data-field="email"/>
+            </DxGroupItem>
         </DxForm>
     </template>
 
@@ -106,7 +120,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxSimpleItem, DxEmptyItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
     
     let employee = {
         name: "John Heart",
@@ -115,14 +129,14 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        email: "jheart@dx-email.com
     };
 
     export default {
         components: {
             DxForm,
             DxSimpleItem,
-            DxEmptyItem
+            DxGroupItem
         },
         data: {
             return: {
@@ -142,7 +156,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
     import {
         Form,
         SimpleItem,
-        EmptyItem
+        GroupItem
     } from 'devextreme-react/form';
 
     let employee = {
@@ -152,7 +166,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        email: "jheart@dx-email.com
     };
 
     const App = () => {
@@ -160,21 +174,24 @@ You can add an empty space to separate form items. To do this, assign "empty" to
             <Form
                 formData={employee}
                 colCount={2}>
-                <SimpleItem dataField="name" />
-                <SimpleItem dataField="position" />
-                <SimpleItem dataField="hireDate" />
-                <SimpleItem dataField="officeNumber" />
-                <EmptyItem 
-                    colSpan={2}
-                />
-                <SimpleItem dataField="phone" />
-                <SimpleItem dataField="skype" />
-                <SimpleItem dataField="email" />
+                <GroupItem 
+                    caption="Personal Data"
+                    colCount={2}>
+                    <SimpleItem dataField="name" />
+                    <SimpleItem dataField="position" />
+                    <SimpleItem dataField="hireDate" />
+                    <SimpleItem dataField="officeNumber" />
+                </GroupItem>
+                <GroupItem caption="Contacts">
+                    <SimpleItem dataField="phone" />
+                    <SimpleItem dataField="skype" />
+                    <SimpleItem dataField="email" />
+                </GroupItem>
             </Form>
         );
     }
 
     export default App;
 
-
 ---
+

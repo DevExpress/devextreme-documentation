@@ -1,4 +1,4 @@
-To generate items only for the required fields, declare the [items]() array. Each item in this array is a string or an object. A string is a name of a field in the [formData]() object. The **Form** will generate a simple item based on this field's value. To customize an item, specify required properties in an object. Use the [dataField]() property to identify the field that provides data for the item. In this example, we [disable]() the editor for the `hireDate` item:
+The [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) array is used to configure form items. This array can contain strings and objects. Strings are names of the [formData](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData) object's fields. Use strings for the fields that the **Form** will render as simple items with default configuration. You can also configure editors for certain fields manually. For this, specify editor settings in an object in the **items[]** array. Use the [dataField](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#dataField) property to identify the field that provides data. In the example below, we configure the `hireDate` field's editor:
 
 ---
 ##### jQuery
@@ -8,7 +8,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
         $("#form").dxForm({
             formData: {
                 name: "John Heart",
-                officeNumber: "901",
+                officeNumber: 901,
                 hireDate: new Date(2012, 4, 13)
             },
             items: ["name", "officeNumber", {
@@ -24,7 +24,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
 
     <!-- tab: app.component.html -->
     <dx-form
-        [(formData)]="employee">
+        [formData]="employee">
         <dxi-item dataField="name"></dxi-item>
         <dxi-item dataField="officeNumber"></dxi-item>
         <dxi-item 
@@ -44,7 +44,7 @@ To generate items only for the required fields, declare the [items]() array. Eac
     export class AppComponent {
         employee = {
             name: "John Heart",
-            officeNumber: "901",
+            officeNumber: 901,
             hireDate: new Date(2012, 4, 13)
         }
 
@@ -94,9 +94,9 @@ To generate items only for the required fields, declare the [items]() array. Eac
 
     import { DxForm, DxItem } from 'devextreme-vue/form';
     
-    const employee = {
+    let employee = {
         name: "John Heart",
-        officeNumber: "901",
+        officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };
 
@@ -130,9 +130,9 @@ To generate items only for the required fields, declare the [items]() array. Eac
         Item
     } from 'devextreme-react/form';
 
-    const employee = {
+    let employee = {
         name: "John Heart",
-        officeNumber: "901",
+        officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };
 

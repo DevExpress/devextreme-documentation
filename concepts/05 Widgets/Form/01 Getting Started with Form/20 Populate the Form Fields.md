@@ -1,4 +1,6 @@
-The **Form** generates a [simple item]() for each field in the [formData]() object. A simple item is a label-editor pair. The **Form** automatically defines the editor's type depending on the data type of the **formData** object's field. The **Form** in the following example will create the [TextBox](), [NumberBox](), and [DateBox]() editors:
+The **Form** generates a [simple item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/) for each field in the [formData]() object. A simple item is a label-editor pair. 
+
+To populate form fields, assign an object to the [formData](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData) property. Each field in this object will be visualized as a label-editor pair. Such pairs are called "simple items". The **Form** automatically defines which editors it will generate for fields in the **formData** object. The editor's type depends on the data type of the field's value. The **Form** in the following example will create the [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/), [NumberBox](/Documentation/ApiReference/UI_Widgets/dxNumberBox/), and [DateBox](/Documentation/ApiReference/UI_Widgets/dxDateBox/) editors:
 
 ---
 ##### jQuery
@@ -8,7 +10,7 @@ The **Form** generates a [simple item]() for each field in the [formData]() obje
         $("#form").dxForm({
             formData: {
                 name: "John Heart",
-                officeNumber: "901",
+                officeNumber: 901,
                 hireDate: new Date(2012, 4, 13)
             }
         });
@@ -18,7 +20,7 @@ The **Form** generates a [simple item]() for each field in the [formData]() obje
 
     <!-- tab: app.component.html -->
     <dx-form
-        [(formData)]="employee">
+        [formData]="employee">
     </dx-form>
 
     <!-- tab: app.component.ts -->
@@ -32,7 +34,7 @@ The **Form** generates a [simple item]() for each field in the [formData]() obje
     export class AppComponent {
         employee = {
             name: "John Heart",
-            officeNumber: "901",
+            officeNumber: 901,
             hireDate: new Date(2012, 4, 13)
         }
     }
@@ -74,17 +76,19 @@ The **Form** generates a [simple item]() for each field in the [formData]() obje
 
     import { DxForm } from 'devextreme-vue/form';
 
+    let employee = {
+        name: "John Heart",
+        officeNumber: 901,
+        hireDate: new Date(2012, 4, 13)
+    };
+
     export default {
         components: {
             DxForm
         },
         data: {
             return: {
-                employee: {
-                    name: "John Heart",
-                    officeNumber: "901",
-                    hireDate: new Date(2012, 4, 13)
-                }
+                employee
             }
         }
     }
@@ -101,9 +105,9 @@ The **Form** generates a [simple item]() for each field in the [formData]() obje
         Form
     } from 'devextreme-react/form';
 
-    const employee = {
+    let employee = {
         name: "John Heart",
-        officeNumber: "901",
+        officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };
 

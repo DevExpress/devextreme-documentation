@@ -15,7 +15,7 @@ The example below shows two groups in a **Form** with two columns. Each group oc
                 officeNumber: 901,
                 phone: "+1(213) 555-9392",
                 skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com""
+                email: "jheart@dx-email.com"
             },
             colCount: 2,
             items: [{
@@ -69,7 +69,7 @@ The example below shows two groups in a **Form** with two columns. Each group oc
             officeNumber: 901,
             phone: "+1(213) 555-9392",
             skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com""
+            email: "jheart@dx-email.com"
         }
     }
 

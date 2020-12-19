@@ -13,7 +13,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
                 officeNumber: 901,
                 phone: "+1(213) 555-9392",
                 skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com""
+                email: "jheart@dx-email.com"
             },
             colCount: 2,
             items: ["name", "position", "hireDate", "officeNumber", {
@@ -58,7 +58,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
             officeNumber: 901,
             phone: "+1(213) 555-9392",
             skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com""
+            email: "jheart@dx-email.com"
         }
     }
 
@@ -115,7 +115,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com""
+        email: "jheart@dx-email.com"
     };
 
     export default {
@@ -152,7 +152,7 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com""
+        email: "jheart@dx-email.com"
     };
 
     const App = () => {

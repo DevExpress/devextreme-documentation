@@ -10,7 +10,7 @@ The **Scheduler** can load and update data from these data source types:
 
 * [Custom data sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
 
-Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) property to specify a data source. In this tutorial, we will use a local array. Its objects have non-standard fields. To specify what standard field each custom one defines, we will use the following **Scheduler**'s properties: [textExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#textExpr), [startDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#startDateExpr), [endDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#endDateExpr), [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr), and [recurrenceRuleExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr).
+Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) property to specify a data source. In this tutorial, we will use a local array. Its objects have custom field names that's why we will specify them in the following **Scheduler**'s properties: [textExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#textExpr), [startDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#startDateExpr), [endDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#endDateExpr), [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr), and [recurrenceRuleExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr).
 
 [note]The UI component supports three types of appointments: one-time, all-day, and recurring. The used data source contains them all. 
 
@@ -99,7 +99,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
             appointmentText: "Open Day",
             priorityId: 2,
             start: new Date("2021-05-27T09:30:00.000Z"),
-            end: new Date("2021-05-27T11:00:00.000Z"),
+            end: new Date("2021-05-27T19:00:00.000Z"),
         }
     ];
 
@@ -203,7 +203,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
             appointmentText: "Open Day",
             priorityId: 2,
             start: new Date("2021-05-27T09:30:00.000Z"),
-            end: new Date("2021-05-27T11:00:00.000Z"),
+            end: new Date("2021-05-27T19:00:00.000Z"),
         }
     ];
 
@@ -306,7 +306,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
             appointmentText: "Open Day",
             priorityId: 2,
             start: new Date("2021-05-27T09:30:00.000Z"),
-            end: new Date("2021-05-27T11:00:00.000Z"),
+            end: new Date("2021-05-27T19:00:00.000Z"),
         }
     ];
 
@@ -394,7 +394,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
             appointmentText: "Open Day",
             priorityId: 2,
             start: new Date("2021-05-27T09:30:00.000Z"),
-            end: new Date("2021-05-27T11:00:00.000Z"),
+            end: new Date("2021-05-27T19:00:00.000Z"),
         }
     ];
 

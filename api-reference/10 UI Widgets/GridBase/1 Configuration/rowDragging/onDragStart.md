@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 Allows you to cancel the gesture.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+<!-- Description goes here -->
 
 ##### field(e.event): event
 #include common-ref-eventparam

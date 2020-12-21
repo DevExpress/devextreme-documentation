@@ -10,7 +10,7 @@ Assign the [Custom](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Sy
 
     <!--JavaScript-->
     $("#file-manager").dxFileManager({
-        // Assigns the Custom file system provider to the widget
+        // Assigns the Custom file system provider to the UI component
         fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({
             // Function to get file system items
             getItems: getItems,

@@ -2,7 +2,7 @@ Exposes the **TileView** UI component.
 
 Exports:
 
-- *default* - The [TileView](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Widgets/dxTileView/') widget
+- *default* - The [TileView](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Widgets/dxTileView/') UI component
 
         require("ui/tile_view");
         // ===== or =====

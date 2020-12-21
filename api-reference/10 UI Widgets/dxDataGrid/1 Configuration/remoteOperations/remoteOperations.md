@@ -35,7 +35,7 @@ The following table lists the possible **remoteOperations** configurations and t
     <td>filtering<sup>1</sup>, sorting<sup>1</sup>, summary calculation<sup>1</sup></td>
  </tr>
  <tr>
-    <td><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the widget)</td>
+    <td><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the UI component)</td>
     <td>paging, filtering, sorting</td>
     <td>grouping<sup>3</sup>, summary calculation<sup>1</sup></td>
  </tr>

@@ -2,7 +2,7 @@ Exposes the **NavBar** UI component.
 
 Exports:
 
-- *default* - The [NavBar](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Widgets/dxNavBar/') widget
+- *default* - The [NavBar](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Widgets/dxNavBar/') UI component
 
         require("ui/nav_bar");
         // ===== or =====

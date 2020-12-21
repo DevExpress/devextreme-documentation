@@ -21,7 +21,7 @@ Row changes to be discarded.
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.

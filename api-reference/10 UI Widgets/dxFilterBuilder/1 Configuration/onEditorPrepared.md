@@ -27,7 +27,7 @@ Indicates whether the editor is disabled.
 The editor's name.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.filterOperation): String
 The applied filter operation.

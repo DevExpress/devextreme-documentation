@@ -18,7 +18,7 @@ Allows you to cancel row expansion.
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The key of the group or master row.

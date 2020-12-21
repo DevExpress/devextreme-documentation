@@ -21,7 +21,7 @@ The keys of the rows whose selection has been cleared.
 The keys of the rows that have been selected.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

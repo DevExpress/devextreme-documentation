@@ -2,7 +2,7 @@ Exposes the **ButtonGroup** UI component.
 
 Exports:
 
-- *default* - The [ButtonGroup](/api-reference/10%20UI%20Widgets/dxButtonGroup '/Documentation/ApiReference/UI_Widgets/dxButtonGroup/') widget
+- *default* - The [ButtonGroup](/api-reference/10%20UI%20Widgets/dxButtonGroup '/Documentation/ApiReference/UI_Widgets/dxButtonGroup/') UI component
 
         require("ui/button_group");
         // ===== or =====

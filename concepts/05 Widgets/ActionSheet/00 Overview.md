@@ -23,7 +23,7 @@ The following code adds a simple **ActionSheet** to your page. The UI component 
         $("#buttonContainer").dxButton({
             text: 'Show the ActionSheet',
             onClick: function () {
-                // Shows the ActionSheet widget
+                // Shows the ActionSheet UI component
                 $("#actionSheetContainer").dxActionSheet("instance").show();
             }
         });

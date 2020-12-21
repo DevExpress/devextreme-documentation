@@ -21,7 +21,7 @@ The keys of the file system items whose selection has been cleared.
 The keys of the file system items that have been selected.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

@@ -35,7 +35,7 @@ Import a new editor's module when [DevExtreme modules](/concepts/Common/Modulari
 Gets and sets the editor configuration.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.filterOperation): String
 The applied filter operation.

@@ -21,7 +21,7 @@ If **true**, prevents the user from opening the appointment details form.
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.form): dxForm
 The form's instance; created only once - when the function is executed for the first time.

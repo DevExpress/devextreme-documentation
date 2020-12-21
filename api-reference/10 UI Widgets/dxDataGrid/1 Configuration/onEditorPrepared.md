@@ -24,7 +24,7 @@ Indicates whether the editor is disabled.
 #include common-ref-elementparam with { element: "editor" }
 
 ##### field(options.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(options.model): Object
 Model data. Only available when using Knockout.

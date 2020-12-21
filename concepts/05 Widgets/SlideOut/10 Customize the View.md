@@ -88,7 +88,7 @@ In the second use-case, you have some component that gets updated each time a us
         $("#slideOutContainer").dxSlideOut({
             dataSource: ["All", "Televisions", "Monitors"],
             contentTemplate: function (viewContent) {
-                // Creates the "List" widget
+                // Creates the "List" UI component
                 $("<div />").dxList(innerListConfiguration)
                             .appendTo(viewContent);
             },

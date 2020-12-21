@@ -32,7 +32,7 @@ The name of the file to be saved.
 The file's format. PNG is used if the browser cannot export the file in the specified format.
 
 ##### field(options.gridLayout): Boolean
-If **true**, UI components are arranged in columns with equal widths (the width of the widest widget).     
+If **true**, UI components are arranged in columns with equal widths (the width of the widest UI component).     
 If **false**, UI components are placed next to each other in rows (default).      
 In any case, each row has the height of the highest UI component in it.
 

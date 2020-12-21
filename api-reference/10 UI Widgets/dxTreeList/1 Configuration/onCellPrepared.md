@@ -31,7 +31,7 @@ The cell's displayed value. Available if the **rowType** is *"data"*.
 Differs from the **value** field only when the cell belongs to the [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/lookup/') column.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
 Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.

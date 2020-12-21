@@ -18,7 +18,7 @@ Allows you to cancel the edit dialog showing.
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.hiddenFields): Array<String>
 An array of hidden fields.

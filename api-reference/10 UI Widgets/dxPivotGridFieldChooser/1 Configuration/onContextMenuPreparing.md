@@ -18,7 +18,7 @@ The clicked [area's](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Co
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam

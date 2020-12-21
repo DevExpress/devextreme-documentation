@@ -21,7 +21,7 @@ The UI component's instance.
 The row's data. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
 Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.

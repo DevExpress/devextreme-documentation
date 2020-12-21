@@ -2,7 +2,7 @@ Exposes the **ActionSheet** UI component.
 
 Exports:
 
-- *default* - The [ActionSheet](/api-reference/10%20UI%20Widgets/dxActionSheet '/Documentation/ApiReference/UI_Widgets/dxActionSheet/') widget
+- *default* - The [ActionSheet](/api-reference/10%20UI%20Widgets/dxActionSheet '/Documentation/ApiReference/UI_Widgets/dxActionSheet/') UI component
 
         require("ui/action_sheet");
         // ===== or =====

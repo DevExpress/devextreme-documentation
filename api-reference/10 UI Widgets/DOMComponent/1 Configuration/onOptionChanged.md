@@ -12,7 +12,7 @@ Information about the event.
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fullName): String
 The path to the modified option that includes all parent options.

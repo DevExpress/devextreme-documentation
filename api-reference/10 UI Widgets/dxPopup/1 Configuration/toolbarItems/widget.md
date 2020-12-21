@@ -16,7 +16,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
     @(Html.DevExtreme().Popup()
         .ToolbarItems(items => {
             items.Add().Widget(w => w
-                // Instead of Button here can be any other widget
+                // Instead of Button here can be any other UI component
                 .Button()
                 .Text("Back")
             );
@@ -27,7 +27,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
     @(Html.DevExtreme().Popup() _
         .ToolbarItems(Sub(items)
             items.Add().Widget(Function(w)
-                ' Instead of Button here can be any other widget
+                ' Instead of Button here can be any other UI component
                 Return w.Button().Text("Back")
             End Function)
         End Sub)

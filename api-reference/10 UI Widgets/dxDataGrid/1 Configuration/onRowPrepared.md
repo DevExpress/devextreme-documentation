@@ -21,7 +21,7 @@ The UI component's instance.
 The row's raw data. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.groupIndex): Number
 The row's [group index](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex'). Available if **rowType** is *"group"*.

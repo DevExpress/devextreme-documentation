@@ -18,7 +18,7 @@ The values that this option accepts depend on the specified [animation type](/ap
 
 - **pop**  
  **from** accepts an object with the **opacity** and **scale** fields; each takes a value from 0 to 1.     
-Opacity is specified the same way as in the **fade** animation type. A scale of 0 hides the widget; a scale of 1 displays the UI component in its default size. 
+Opacity is specified the same way as in the **fade** animation type. A scale of 0 hides the UI component; a scale of 1 displays the UI component in its default size. 
     
         <!--JavaScript-->
         from: {

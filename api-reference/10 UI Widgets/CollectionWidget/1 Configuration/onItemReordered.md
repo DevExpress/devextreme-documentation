@@ -16,7 +16,7 @@ Information about the event.
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fromIndex): Number
 The item's previous index.

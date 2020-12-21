@@ -68,7 +68,7 @@ This article describes how to create an ASP.NET Core Angular application and add
         // Imports an individual UI component
         import { DxDataGridModule } from "devextreme-angular"; 
 
-        // Imports all the DevExtreme widgets
+        // Imports all the DevExtreme UI components
         // import { DevExtremeModule } from "devextreme-angular"; 
 
         @NgModule({ 

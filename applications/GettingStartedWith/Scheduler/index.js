@@ -1,5 +1,5 @@
 $(function(){
-    const data = [
+    const appointments = [
         {
             appointmentText: "Install New Database",
             priorityId: 1,

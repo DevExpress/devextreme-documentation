@@ -12,10 +12,10 @@ A function that is executed before the **ContextMenu** is hidden.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel widget hiding.
+Allows you to cancel UI component hiding.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

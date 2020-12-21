@@ -1,4 +1,4 @@
-Exposes the **Chart** widget.
+Exposes the **Chart** UI component.
 
 Exports:
 

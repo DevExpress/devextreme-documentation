@@ -1,4 +1,4 @@
-Exposes the **TileView** widget.
+Exposes the **TileView** UI component.
 
 Exports:
 

@@ -1,4 +1,4 @@
-Exposes the **TagBox** widget.
+Exposes the **TagBox** UI component.
 
 Exports:
 

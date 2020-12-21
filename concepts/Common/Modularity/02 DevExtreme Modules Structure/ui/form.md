@@ -1,4 +1,4 @@
-Exposes the **Form** widget.
+Exposes the **Form** UI component.
 
 Exports:
 

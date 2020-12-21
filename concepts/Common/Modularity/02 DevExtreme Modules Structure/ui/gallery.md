@@ -1,4 +1,4 @@
-Exposes the **Gallery** widget.
+Exposes the **Gallery** UI component.
 
 Exports:
 

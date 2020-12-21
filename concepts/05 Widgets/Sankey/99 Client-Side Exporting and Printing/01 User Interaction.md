@@ -1,4 +1,4 @@
-To export or print the widget, a user clicks **Exporting/Printing** and selects a command from the drop-down menu.
+To export or print the UI component, a user clicks **Exporting/Printing** and selects a command from the drop-down menu.
 
 The **Print** command opens the browser's **Print** window. This window allows a user to specify the print settings and send the print job to the printer.
 

@@ -1,4 +1,4 @@
-Exposes the **ResponsiveBox** widget.
+Exposes the **ResponsiveBox** UI component.
 
 Exports:
 

@@ -16,7 +16,7 @@ Information about the event.
 Allows you to cancel the item deletion.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
@@ -49,4 +49,4 @@ You can cancel item deletion by setting the handler parameter's **cancel** field
         }
     }
 
-Note that the **onItemDeleted** and **onItemDeleting** handlers are not executed if an item is deleted from the data source without using the widget's UI or API.
+Note that the **onItemDeleted** and **onItemDeleting** handlers are not executed if an item is deleted from the data source without using the UI component's UI or API.

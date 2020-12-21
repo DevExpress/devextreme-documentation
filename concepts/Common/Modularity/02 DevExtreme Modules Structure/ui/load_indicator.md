@@ -1,4 +1,4 @@
-Exposes the **LoadIndicator** widget.
+Exposes the **LoadIndicator** UI component.
 
 Exports:
 

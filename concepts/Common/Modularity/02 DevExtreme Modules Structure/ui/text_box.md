@@ -1,4 +1,4 @@
-Exposes the **TextBox** widget.
+Exposes the **TextBox** UI component.
 
 Exports:
 

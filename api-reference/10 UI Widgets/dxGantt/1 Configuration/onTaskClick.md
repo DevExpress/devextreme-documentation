@@ -12,7 +12,7 @@ A function that is executed when a user clicks a task.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): any
 The task data.

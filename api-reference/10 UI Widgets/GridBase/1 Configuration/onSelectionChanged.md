@@ -12,7 +12,7 @@ A function that is executed after selecting a row or clearing its selection.
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.currentDeselectedRowKeys): Array<any>
 The keys of the rows whose selection has been cleared.

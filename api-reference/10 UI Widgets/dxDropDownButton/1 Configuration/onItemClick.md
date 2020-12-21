@@ -12,7 +12,7 @@ A function that is executed when a drop-down menu item is clicked.
 Information about the event that caused the function to execute.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

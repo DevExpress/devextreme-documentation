@@ -1,4 +1,4 @@
-The **RadioGroup** is a widget that contains a set of radio buttons and allows an end user to make a single selection from the set.
+The **RadioGroup** is a UI component that contains a set of radio buttons and allows an end user to make a single selection from the set.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RadioGroup/Overview/"
@@ -220,7 +220,7 @@ If your data is an array of objects, bind it to the **RadioGroup** using the [di
 
 ---
 
-The **RadioGroup** widget supports horizontal (default for tablets) and vertical (default for other devices) layouts. To change the layout for all types of devices, specify the [layout](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/layout.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#layout') option.
+The **RadioGroup** UI component supports horizontal (default for tablets) and vertical (default for other devices) layouts. To change the layout for all types of devices, specify the [layout](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/layout.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#layout') option.
 
 ---
 ##### jQuery

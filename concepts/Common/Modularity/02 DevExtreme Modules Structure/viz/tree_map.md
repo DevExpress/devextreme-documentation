@@ -1,4 +1,4 @@
-Exposes the **TreeMap** widget.
+Exposes the **TreeMap** UI component.
 
 Exports:
 

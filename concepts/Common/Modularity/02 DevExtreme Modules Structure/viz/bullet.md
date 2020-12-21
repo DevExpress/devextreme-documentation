@@ -1,4 +1,4 @@
-Exposes the **Bullet** widget.
+Exposes the **Bullet** UI component.
 
 Exports:
 

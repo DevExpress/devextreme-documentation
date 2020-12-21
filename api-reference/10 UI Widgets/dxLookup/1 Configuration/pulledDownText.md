@@ -5,6 +5,6 @@ default: 'Release to refresh...'
 ---
 ---
 ##### shortDescription
-Specifies the text displayed in the pullDown panel when the widget is pulled below the refresh threshold.
+Specifies the text displayed in the pullDown panel when the UI component is pulled below the refresh threshold.
 
 ---

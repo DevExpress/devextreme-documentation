@@ -21,7 +21,7 @@ This column's [configuration](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Co
 The index of the column to which the cell belongs.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The data of the row to which the cell belongs. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.

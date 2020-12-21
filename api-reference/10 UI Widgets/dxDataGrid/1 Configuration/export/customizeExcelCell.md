@@ -14,7 +14,7 @@ Excel cell settings.
 The cell background color specified as a *"#RRGGBBAA"* value. <br/> R (red), G (green), B (blue), and A (alpha) are hexadecimal characters (0-9, A-F). A is optional.
 
 ##### field(options.component): dxDataGrid
-The widget's instance.
+The UI component's instance.
 
 ##### field(options.fillPatternColor): String
 The foreground color of the cell fill pattern specified as a *"#RRGGBBAA"* value. <br/> R (red), G (green), B (blue), and A (alpha) are hexadecimal characters (0-9, A-F). A is optional.

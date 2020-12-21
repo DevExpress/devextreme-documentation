@@ -1,4 +1,4 @@
-Exposes the **Box** widget.
+Exposes the **Box** UI component.
 
 Exports:
 

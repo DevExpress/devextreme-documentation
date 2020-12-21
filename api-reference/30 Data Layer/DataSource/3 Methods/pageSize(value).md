@@ -9,7 +9,7 @@ Sets the [page size](/api-reference/30%20Data%20Layer/DataSource/1%20Configurati
 A new page size value.
 
 ---
-Call the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method to update the widget bound to the **DataSource**:
+Call the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method to update the UI component bound to the **DataSource**:
 
 ---
 ##### jQuery

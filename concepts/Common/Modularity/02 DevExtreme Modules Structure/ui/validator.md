@@ -1,4 +1,4 @@
-Exposes the **Validator** widget.
+Exposes the **Validator** UI component.
 
 Exports:
 

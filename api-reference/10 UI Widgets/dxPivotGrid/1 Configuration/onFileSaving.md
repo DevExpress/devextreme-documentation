@@ -16,7 +16,7 @@ Information about the event.
 Allows you to cancel file saving.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Blob
 Exported data as a BLOB.

@@ -6,7 +6,7 @@ default: 'outside'
 ---
 ---
 ##### shortDescription
-Specifies the orientation of the range container in the **CircularGauge** widget.
+Specifies the orientation of the range container in the **CircularGauge** UI component.
 
 ---
 This property specifies the range container's orientation relative to the invisible scale line.

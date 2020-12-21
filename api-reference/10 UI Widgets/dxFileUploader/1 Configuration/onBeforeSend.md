@@ -12,7 +12,7 @@ A function that allows you to customize the request before it is sent to the ser
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

@@ -1,4 +1,4 @@
-Exposes the **Funnel** widget.
+Exposes the **Funnel** UI component.
 
 Exports:
 

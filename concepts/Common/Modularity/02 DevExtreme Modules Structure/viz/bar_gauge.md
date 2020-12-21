@@ -1,4 +1,4 @@
-Exposes the **BarGauge** widget.
+Exposes the **BarGauge** UI component.
 
 Exports:
 

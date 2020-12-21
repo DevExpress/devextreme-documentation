@@ -1,7 +1,7 @@
-The widget allows you to configure upload settings: 
+The UI component allows you to configure upload settings: 
 
 - [maxFileSize](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/upload/maxFileSize.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/upload/#maxFileSize')
-    Specifies the maximum upload file size. The widget does not upload a file and displays the following error message when the file's size exceeds the maximum upload file size.
+    Specifies the maximum upload file size. The UI component does not upload a file and displays the following error message when the file's size exceeds the maximum upload file size.
 
     ![DevExtreme File Manager - Max File Size](/images/FileManager/max-file-size-error-message.png)
 

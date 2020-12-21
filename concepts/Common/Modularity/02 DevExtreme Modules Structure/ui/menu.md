@@ -1,4 +1,4 @@
-Exposes the **Menu** widget.
+Exposes the **Menu** UI component.
 
 Exports:
 

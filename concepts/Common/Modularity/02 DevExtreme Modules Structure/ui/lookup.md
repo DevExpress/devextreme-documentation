@@ -1,4 +1,4 @@
-Exposes the **Lookup** widget.
+Exposes the **Lookup** UI component.
 
 Exports:
 

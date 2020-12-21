@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widget stores the selected drop-down menu item.
+Specifies whether the UI component stores the selected drop-down menu item.
 
 ---
 When you set this option to **true**, the following applies:

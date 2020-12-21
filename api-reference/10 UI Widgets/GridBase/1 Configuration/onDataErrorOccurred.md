@@ -12,7 +12,7 @@ A function that is executed when an error occurs in the data source.
 Information on the occurred error.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

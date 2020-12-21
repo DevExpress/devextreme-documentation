@@ -1,4 +1,4 @@
-Exposes the **Autocomplete** widget.
+Exposes the **Autocomplete** UI component.
 
 Exports:
 

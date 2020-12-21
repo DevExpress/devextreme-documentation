@@ -1,4 +1,4 @@
-Exposes the **Diagram** widget.
+Exposes the **Diagram** UI component.
 
 Exports:
 

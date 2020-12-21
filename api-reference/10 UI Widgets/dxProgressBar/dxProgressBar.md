@@ -6,7 +6,7 @@ inherits: dxTrackBar
 ---
 ---
 ##### shortDescription
-The **ProgressBar** is a widget that shows current progress.
+The **ProgressBar** is a UI component that shows current progress.
 
 ##### widgettree
 

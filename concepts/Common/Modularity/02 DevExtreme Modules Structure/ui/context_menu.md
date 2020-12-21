@@ -1,4 +1,4 @@
-Exposes the **ContextMenu** widget.
+Exposes the **ContextMenu** UI component.
 
 Exports:
 

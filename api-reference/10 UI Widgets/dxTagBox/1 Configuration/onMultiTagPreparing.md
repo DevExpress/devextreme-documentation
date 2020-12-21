@@ -15,7 +15,7 @@ Information about the event.
 Allows you to cancel replacing ordinary tags with the multi-tag.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

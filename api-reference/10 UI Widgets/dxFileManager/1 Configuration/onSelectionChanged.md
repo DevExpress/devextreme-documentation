@@ -12,7 +12,7 @@ A function that is executed when a file system item is selected or selection is 
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.currentDeselectedItemKeys): Array<String>
 The keys of the file system items whose selection has been cleared.

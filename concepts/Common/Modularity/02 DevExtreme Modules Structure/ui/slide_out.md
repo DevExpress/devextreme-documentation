@@ -1,4 +1,4 @@
-Exposes the **SlideOut** widget.
+Exposes the **SlideOut** UI component.
 
 Exports:
 

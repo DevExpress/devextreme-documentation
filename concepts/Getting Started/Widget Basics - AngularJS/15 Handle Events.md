@@ -13,7 +13,7 @@ You can subscribe to an event using a configuration option. All event handling o
         };
         $scope.menuInstance = {};
         $scope.initializedHandler = function (info) {
-            // Saves the widget instance
+            // Saves the UI component instance
             $scope.menuInstance = info.component;   
             // Handles the "initialized" event
         }

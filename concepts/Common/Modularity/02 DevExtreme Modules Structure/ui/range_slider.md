@@ -1,4 +1,4 @@
-Exposes the **RangeSlider** widget.
+Exposes the **RangeSlider** UI component.
 
 Exports:
 

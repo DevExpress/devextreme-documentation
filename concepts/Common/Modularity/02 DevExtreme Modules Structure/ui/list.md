@@ -1,4 +1,4 @@
-Exposes the **List** widget.
+Exposes the **List** UI component.
 
 Exports:
 

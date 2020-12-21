@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised only once, after the widget is initialized.
+Raised only once, after the UI component is initialized.
 
 ---
 Main article: [onInitialized](/api-reference/10%20UI%20Widgets/Component/1%20Configuration/onInitialized.md '{basewidgetpath}/Configuration/#onInitialized')

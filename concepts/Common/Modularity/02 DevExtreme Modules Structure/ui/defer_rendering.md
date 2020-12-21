@@ -1,4 +1,4 @@
-Exposes the **DeferRendering** widget.
+Exposes the **DeferRendering** UI component.
 
 Exports:
 

@@ -1,4 +1,4 @@
-Exposes the **FileManager** widget.
+Exposes the **FileManager** UI component.
 
 Exports:
 

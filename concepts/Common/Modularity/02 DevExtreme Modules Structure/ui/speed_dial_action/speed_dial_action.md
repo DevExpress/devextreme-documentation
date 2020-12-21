@@ -1,4 +1,4 @@
-Exposes the **SpeedDialAction** widget.
+Exposes the **SpeedDialAction** UI component.
 
 Exports:
 

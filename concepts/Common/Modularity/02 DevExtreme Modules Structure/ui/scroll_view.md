@@ -1,4 +1,4 @@
-Exposes the **ScrollView** widget.
+Exposes the **ScrollView** UI component.
 
 Exports:
 

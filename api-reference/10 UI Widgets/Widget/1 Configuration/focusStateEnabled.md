@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widget can be focused using keyboard navigation.
+Specifies whether the UI component can be focused using keyboard navigation.
 
 ---

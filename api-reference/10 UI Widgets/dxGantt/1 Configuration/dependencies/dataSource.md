@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Binds the widget to the data source which contains dependencies.
+Binds the UI component to the data source which contains dependencies.
 
 ---
 

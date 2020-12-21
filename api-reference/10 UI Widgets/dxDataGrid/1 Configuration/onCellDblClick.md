@@ -21,7 +21,7 @@ The column's configuration.
 The index of the column the cell belongs to. For details on indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The data of the row the cell belongs to. Available if the **rowType** is *"data"*, *"detail"*, or *"detailAdaptive"*.

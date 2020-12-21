@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised when the widget's content is ready.
+Raised when the UI component's content is ready.
 
 ---
 Main article: [onContentReady](/api-reference/10%20UI%20Widgets/Widget/1%20Configuration/onContentReady.md '{basewidgetpath}/Configuration/#onContentReady').

@@ -12,7 +12,7 @@ A function that is executed when an error occurs during the file upload.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
@@ -27,7 +27,7 @@ The error that occurred.
 The uploaded file.
 
 ##### field(e.message): String
-The message displayed by the widget on uploading failure.
+The message displayed by the UI component on uploading failure.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.

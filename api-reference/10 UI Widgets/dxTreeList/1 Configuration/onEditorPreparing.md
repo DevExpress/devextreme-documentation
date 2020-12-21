@@ -15,7 +15,7 @@ Information about the event that caused the function's execution.
 <!-- %field(e.cancel)% -->
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.dataField): String
 The name of the field that provides data for the column the editor belongs to.

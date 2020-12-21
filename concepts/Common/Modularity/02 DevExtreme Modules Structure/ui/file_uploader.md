@@ -1,4 +1,4 @@
-Exposes the **FileUploader** widget.
+Exposes the **FileUploader** UI component.
 
 Exports:
 

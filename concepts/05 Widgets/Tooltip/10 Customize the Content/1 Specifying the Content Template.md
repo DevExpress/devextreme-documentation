@@ -11,7 +11,7 @@ The template implementation depends on the used framework or library. Examples o
                 contentElement.append(
                     $("<p />").text("Static content"),
                     $("<div />").attr("id", "switchContainer").dxSwitch({
-                        // The "Switch" widget is configured here
+                        // The "Switch" UI component is configured here
                     })
                 )
             }
@@ -33,7 +33,7 @@ The template implementation depends on the used framework or library. Examples o
         <div *dxTemplate="let data of 'tooltipContent'">
             <p>Static content</p>
             <dx-switch>
-                <!-- The "Switch" widget is configured here -->
+                <!-- The "Switch" UI component is configured here -->
             </dx-switch>
         </div>
     </dx-tooltip>
@@ -64,7 +64,7 @@ The template implementation depends on the used framework or library. Examples o
                 <template>
                     <p>Static content</p>
                     <dx-switch>
-                        <!-- The "Switch" widget is configured here -->
+                        <!-- The "Switch" UI component is configured here -->
                     </dx-switch>
                 </template>
             </DxTooltip>
@@ -99,7 +99,7 @@ The template implementation depends on the used framework or library. Examples o
         return (
             <p>Static content</p>
             <Switch>
-                {/* The "Switch" widget is configured here */}
+                {/* The "Switch" UI component is configured here */}
             </Switch>
         );
     }
@@ -130,7 +130,7 @@ The template implementation depends on the used framework or library. Examples o
         .ContentTemplate(@<text>
             <p>Static content</p>
             @(Html.DevExtreme().Switch()
-                // The "Switch" widget is configured here
+                // The "Switch" UI component is configured here
             )
         </text>)
     )

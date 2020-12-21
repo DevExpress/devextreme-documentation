@@ -14,7 +14,7 @@ To update a data item specified by a key, use the **update(key, values)** method
 
 Note that the second argument of the **update(key, values)** method contains only the options whose values should be changed in the data item, but not the entire item, because it will be merged with the original item object. Before updating, you may need to obtain the required item using the **byKey(key)** method of a store instance.
 
-After a store has been updated, call the [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') method of the DataSource object to update data in your widget as well.
+After a store has been updated, call the [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') method of the DataSource object to update data in your UI component as well.
 
 	<!--JavaScript-->dataSource.reload();
 

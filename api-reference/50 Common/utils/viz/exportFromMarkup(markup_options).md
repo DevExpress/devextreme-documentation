@@ -5,10 +5,10 @@ export: exportFromMarkup
 ---
 ---
 ##### shortDescription
-Allows you to export widgets using their SVG markup.
+Allows you to export UI components using their SVG markup.
 
 ##### param(markup): String
-The SVG markup of the widgets you want to export.
+The SVG markup of the UI components you want to export.
 
 ##### param(options): Object
 Export options.

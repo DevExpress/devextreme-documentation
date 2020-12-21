@@ -1,4 +1,4 @@
-Exposes the **Slider** widget.
+Exposes the **Slider** UI component.
 
 Exports:
 

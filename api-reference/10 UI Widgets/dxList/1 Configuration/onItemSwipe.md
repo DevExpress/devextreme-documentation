@@ -12,7 +12,7 @@ A function that is executed when a list item is swiped.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.direction): String
 The direction in which the item is swiped.

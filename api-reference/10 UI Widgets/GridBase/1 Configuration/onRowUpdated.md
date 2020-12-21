@@ -12,7 +12,7 @@ A function that is executed after a row has been updated in the data source.
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The updated data of the row.

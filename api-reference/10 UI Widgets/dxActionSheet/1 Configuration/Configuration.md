@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **ActionSheet** widget.
+An object defining configuration options for the **ActionSheet** UI component.
 
 ---
 #####See Also#####

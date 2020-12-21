@@ -5,7 +5,7 @@ default: 'content'
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the widget content. Rendered only once - when the widget is created.
+Specifies a custom template for the UI component content. Rendered only once - when the UI component is created.
 
 ##### param(container): dxElement
 #include common-ref-elementparam with { element: "widget content" }

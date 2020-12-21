@@ -12,7 +12,7 @@ A function that is executed when resizing starts.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }
@@ -21,12 +21,12 @@ The widget's instance.
 #include common-ref-eventparam
 
 ##### field(e.height): Number
-The widget's current height.
+The UI component's current height.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
 
 ##### field(e.width): Number
-The widget's current width.
+The UI component's current width.
 
 ---

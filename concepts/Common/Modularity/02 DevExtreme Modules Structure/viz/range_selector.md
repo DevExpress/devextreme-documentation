@@ -1,4 +1,4 @@
-Exposes the **RangeSelector** widget.
+Exposes the **RangeSelector** UI component.
 
 Exports:
 

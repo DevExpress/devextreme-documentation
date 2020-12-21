@@ -1,4 +1,4 @@
-Exposes the **DateBox** widget.
+Exposes the **DateBox** UI component.
 
 Exports:
 

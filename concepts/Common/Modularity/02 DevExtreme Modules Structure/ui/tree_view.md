@@ -1,4 +1,4 @@
-Exposes the **TreeView** widget.
+Exposes the **TreeView** UI component.
 
 Exports:
 

@@ -11,7 +11,7 @@ A handler for the [click](/api-reference/10%20UI%20Widgets/dxButton/4%20Events/c
 Information about the event.
 
 ##### field(e.component): dxActionSheet
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

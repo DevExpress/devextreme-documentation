@@ -8,10 +8,10 @@ default: 'content'
 Specifies a custom template for the drop-down content.
 
 ##### param(templateData): Object
-Data associated with the widget.
+Data associated with the UI component.
 
 ##### field(templateData.component): dxDropDownBox
-The widget's instance.
+The UI component's instance.
 
 ##### field(templateData.value): any
 The currently selected value.

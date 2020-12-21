@@ -1,4 +1,4 @@
-Exposes the **CircularGauge** widget.
+Exposes the **CircularGauge** UI component.
 
 Exports:
 

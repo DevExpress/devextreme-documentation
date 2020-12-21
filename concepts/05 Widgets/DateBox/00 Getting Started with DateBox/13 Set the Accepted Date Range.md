@@ -90,4 +90,4 @@ To define the range from which users can select dates, specify the [min](/api-re
 
 ---
 
-Run the code and ensure that the only available dates are between 1 Jan 1900 and today. Next, we will set the widget's initial value.
+Run the code and ensure that the only available dates are between 1 Jan 1900 and today. Next, we will set the UI component's initial value.

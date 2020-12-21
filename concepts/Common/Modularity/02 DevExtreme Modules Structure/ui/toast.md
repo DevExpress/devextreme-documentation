@@ -1,4 +1,4 @@
-Exposes the **Toast** widget.
+Exposes the **Toast** UI component.
 
 Exports:
 

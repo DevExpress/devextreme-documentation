@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not the widget can be focused.
+Specifies whether or not the UI component can be focused.
 
 ---

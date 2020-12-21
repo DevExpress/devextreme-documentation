@@ -1,4 +1,4 @@
-Exposes the **DataGrid** widget.
+Exposes the **DataGrid** UI component.
 
 Exports:
 

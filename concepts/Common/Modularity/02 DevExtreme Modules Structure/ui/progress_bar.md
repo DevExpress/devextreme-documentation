@@ -1,4 +1,4 @@
-Exposes the **ProgressBar** widget.
+Exposes the **ProgressBar** UI component.
 
 Exports:
 

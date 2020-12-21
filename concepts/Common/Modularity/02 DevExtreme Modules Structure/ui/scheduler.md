@@ -1,4 +1,4 @@
-Exposes the **Scheduler** widget.
+Exposes the **Scheduler** UI component.
 
 Exports:
 

@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end user can resize the widget.
+Specifies whether or not an end user can resize the UI component.
 
 ---

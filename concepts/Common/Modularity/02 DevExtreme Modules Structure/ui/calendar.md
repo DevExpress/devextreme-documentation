@@ -1,4 +1,4 @@
-Exposes the **Calendar** widget.
+Exposes the **Calendar** UI component.
 
 Exports:
 

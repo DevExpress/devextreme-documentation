@@ -1,4 +1,4 @@
-The **day** view displays appointments for a specified date. The **Scheduler** widget arranges appointments from top to bottom. If their time intervals overlap, their width is decreased and they are placed next to each other.
+The **day** view displays appointments for a specified date. The **Scheduler** UI component arranges appointments from top to bottom. If their time intervals overlap, their width is decreased and they are placed next to each other.
 
 ![Day View](/images/UiWidgets/Scheduler_Day_View.png)
 

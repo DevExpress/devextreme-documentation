@@ -18,7 +18,7 @@ Set this field to **true** if the row changes should not be discarded.
 Row changes to be discarded.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

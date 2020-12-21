@@ -1,4 +1,4 @@
-Exposes the **MultiView** widget.
+Exposes the **MultiView** UI component.
 
 Exports:
 

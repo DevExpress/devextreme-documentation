@@ -1,4 +1,4 @@
-Exposes the **Toolbar** widget.
+Exposes the **Toolbar** UI component.
 
 Exports:
 

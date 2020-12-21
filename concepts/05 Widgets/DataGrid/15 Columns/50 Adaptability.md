@@ -102,7 +102,7 @@ When adapting to a small container or screen, the **DataGrid** can hide columns.
 
 [note]
 
-The table layout does not automatically adapt to changes made in the widget's container at runtime. Therefore, if you enable a user to resize the container, call the [updateDimensions()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#updateDimensions') method after each resizing to render the **DataGrid** in the new size.
+The table layout does not automatically adapt to changes made in the UI component's container at runtime. Therefore, if you enable a user to resize the container, call the [updateDimensions()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#updateDimensions') method after each resizing to render the **DataGrid** in the new size.
 
 ---
 ##### jQuery

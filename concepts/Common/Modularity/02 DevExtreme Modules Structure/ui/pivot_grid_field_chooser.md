@@ -1,4 +1,4 @@
-Exposes the **PivotGridFieldChooser** widget.
+Exposes the **PivotGridFieldChooser** UI component.
 
 Exports:
 

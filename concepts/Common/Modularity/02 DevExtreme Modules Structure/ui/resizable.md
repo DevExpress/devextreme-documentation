@@ -1,4 +1,4 @@
-Exposes the **Resizable** widget.
+Exposes the **Resizable** UI component.
 
 Exports:
 

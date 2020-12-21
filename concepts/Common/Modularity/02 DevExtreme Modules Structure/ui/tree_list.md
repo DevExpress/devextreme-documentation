@@ -1,4 +1,4 @@
-Exposes the **TreeList** widget.
+Exposes the **TreeList** UI component.
 
 Exports:
 

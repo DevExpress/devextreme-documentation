@@ -15,7 +15,7 @@ Information about the event that caused the function's execution.
 All column [configurations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/').
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The row's raw data. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.

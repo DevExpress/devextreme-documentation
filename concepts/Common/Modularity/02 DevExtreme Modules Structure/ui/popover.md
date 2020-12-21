@@ -1,4 +1,4 @@
-Exposes the **Popover** widget.
+Exposes the **Popover** UI component.
 
 Exports:
 

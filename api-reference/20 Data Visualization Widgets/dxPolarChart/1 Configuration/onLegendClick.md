@@ -13,7 +13,7 @@ A function that is executed when a [legend item](/concepts/05%20Widgets/PolarCha
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

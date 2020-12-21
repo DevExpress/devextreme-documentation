@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not the widget checks the inner text for spelling mistakes.
+Specifies whether or not the UI component checks the inner text for spelling mistakes.
 
 ---

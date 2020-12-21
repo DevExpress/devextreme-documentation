@@ -1,4 +1,4 @@
-Exposes the **RadioGroup** widget.
+Exposes the **RadioGroup** UI component.
 
 Exports:
 

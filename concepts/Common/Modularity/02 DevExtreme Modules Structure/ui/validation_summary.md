@@ -1,4 +1,4 @@
-Exposes the **ValidationSummary** widget.
+Exposes the **ValidationSummary** UI component.
 
 Exports:
 

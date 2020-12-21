@@ -15,7 +15,7 @@ Information about the event that caused the function execution.
 Allows you to cancel exporting data.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

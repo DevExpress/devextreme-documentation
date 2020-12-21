@@ -6,13 +6,13 @@ EventForAction: GridBase.initNewRow
 ---
 ---
 ##### shortDescription
-A function that is executed before a new row is added to the widget.
+A function that is executed before a new row is added to the UI component.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The data of the inserted row; initially empty.

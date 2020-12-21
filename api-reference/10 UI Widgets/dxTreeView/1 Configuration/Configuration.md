@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TreeView** widget.
+An object defining configuration options for the **TreeView** UI component.
 
 ---
 #####See Also#####

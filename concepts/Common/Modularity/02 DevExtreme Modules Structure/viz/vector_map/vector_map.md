@@ -1,4 +1,4 @@
-Exposes the **VectorMap** widget.
+Exposes the **VectorMap** UI component.
 
 Exports:
 

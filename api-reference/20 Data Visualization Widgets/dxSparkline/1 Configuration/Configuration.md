@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that specifies configuration options for the **Sparkline** widget.
+An object that specifies configuration options for the **Sparkline** UI component.
 
 ---
 #####See Also#####

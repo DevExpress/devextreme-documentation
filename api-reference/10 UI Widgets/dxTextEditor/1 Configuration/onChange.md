@@ -6,13 +6,13 @@ EventForAction: dxTextEditor.change
 ---
 ---
 ##### shortDescription
-A function that is executed when the widget loses focus after the text field's content was changed using the keyboard.
+A function that is executed when the UI component loses focus after the text field's content was changed using the keyboard.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

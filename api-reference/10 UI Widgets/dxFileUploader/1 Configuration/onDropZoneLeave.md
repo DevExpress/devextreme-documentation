@@ -12,7 +12,7 @@ A function that is executed when the mouse leaves a drop zone as it drags a file
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.dropZoneElement): dxElement
 A drop zone element.

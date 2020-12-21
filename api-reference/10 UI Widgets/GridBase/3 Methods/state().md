@@ -3,13 +3,13 @@ id: GridBase.state()
 ---
 ---
 ##### shortDescription
-Gets the current widget state.
+Gets the current UI component state.
 
 ##### return: Object
-The current widget state.
+The current UI component state.
 
 ---
-The following example shows how to save the widget state in the local storage and load it from there:
+The following example shows how to save the UI component state in the local storage and load it from there:
 
 ---
 #####jQuery

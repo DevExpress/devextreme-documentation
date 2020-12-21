@@ -1,4 +1,4 @@
-Exposes the **Switch** widget.
+Exposes the **Switch** UI component.
 
 Exports:
 

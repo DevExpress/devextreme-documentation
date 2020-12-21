@@ -1,4 +1,4 @@
-Exposes the **Popup** widget.
+Exposes the **Popup** UI component.
 
 Exports:
 

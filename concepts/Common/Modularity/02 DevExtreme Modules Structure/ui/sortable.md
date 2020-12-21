@@ -1,4 +1,4 @@
-Exposes the **Sortable** widget.
+Exposes the **Sortable** UI component.
 
 Exports:
 

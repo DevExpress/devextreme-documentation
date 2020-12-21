@@ -15,7 +15,7 @@ Information about the event.
 Allows you to cancel hiding of the action sheet after the Cancel button is clicked.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

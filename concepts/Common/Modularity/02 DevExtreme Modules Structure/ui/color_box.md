@@ -1,4 +1,4 @@
-Exposes the **ColorBox** widget.
+Exposes the **ColorBox** UI component.
 
 Exports:
 

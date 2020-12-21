@@ -18,7 +18,7 @@ The total count of the uploaded bytes.
 The total count of bytes in the XMLHttpRequest.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

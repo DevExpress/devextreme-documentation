@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widgets support a right-to-left representation. Available for individual widgets as well.
+Specifies whether the UI components support a right-to-left representation. Available for individual UI components as well.
 
 ---

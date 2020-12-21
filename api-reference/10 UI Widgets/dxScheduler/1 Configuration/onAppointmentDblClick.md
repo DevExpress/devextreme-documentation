@@ -21,7 +21,7 @@ The initial appointment.
 If **true**, does not allow the user to open the appointment details form with double click.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

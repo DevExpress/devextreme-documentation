@@ -1,4 +1,4 @@
-Exposes the **LinearGauge** widget.
+Exposes the **LinearGauge** UI component.
 
 Exports:
 

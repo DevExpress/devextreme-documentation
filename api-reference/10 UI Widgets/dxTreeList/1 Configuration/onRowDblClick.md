@@ -15,7 +15,7 @@ Information about the event that caused the function's execution.
 The configurations of visible columns.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The row's data.

@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the widget.
+An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
     <tr>
@@ -7,11 +7,11 @@ An end user can use the following keys to interact with the widget.
     </tr>
     <tr>
         <td>&larr;</td>
-        <td>Switches the widget to the previous view.</td>
+        <td>Switches the UI component to the previous view.</td>
     </tr>
     <tr>
         <td>&rarr;</td>
-        <td>Switches the widget to the next view.</td>
+        <td>Switches the UI component to the next view.</td>
     </tr>
 </table>
 

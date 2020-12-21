@@ -1,4 +1,4 @@
-Exposes the **DropDownBox** widget.
+Exposes the **DropDownBox** UI component.
 
 Exports:
 

@@ -9,7 +9,7 @@ Scrolls the content to an item with a specific index.
 The item's index.
 
 ---
-If the widget displays a grouped list, specify the target item index using an object containing the following fields.
+If the UI component displays a grouped list, specify the target item index using an object containing the following fields.
 
 - **group**  
  Specifies the index of the group containing the target item.

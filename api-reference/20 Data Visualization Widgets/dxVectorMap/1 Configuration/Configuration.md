@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that specifies configuration options for the  widget.
+An object that specifies configuration options for the  UI component.
 
 ---
 #####See Also#####

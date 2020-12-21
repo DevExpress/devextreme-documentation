@@ -1,4 +1,4 @@
-Exposes the **Tabs** widget.
+Exposes the **Tabs** UI component.
 
 Exports:
 

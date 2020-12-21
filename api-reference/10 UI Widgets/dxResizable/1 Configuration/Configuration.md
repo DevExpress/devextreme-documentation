@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Resizable** widget.
+An object defining configuration options for the **Resizable** UI component.
 
 ---
 #####See Also#####

@@ -1,4 +1,4 @@
-Exposes the **ValidationGroup** widget.
+Exposes the **ValidationGroup** UI component.
 
 Exports:
 

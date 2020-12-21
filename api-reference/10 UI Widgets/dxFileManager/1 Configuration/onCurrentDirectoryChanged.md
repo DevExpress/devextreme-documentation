@@ -12,7 +12,7 @@ A function that is executed when the current directory is changed.
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.directory): FileSystemItem
 The current directory.

@@ -15,7 +15,7 @@ Information about the event that caused the function's execution.
 Allows you to cancel showing the context menu.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): any
 Data of the right-clicked task or dependency.

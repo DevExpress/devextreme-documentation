@@ -1,4 +1,4 @@
-Exposes the **TextArea** widget.
+Exposes the **TextArea** UI component.
 
 Exports:
 

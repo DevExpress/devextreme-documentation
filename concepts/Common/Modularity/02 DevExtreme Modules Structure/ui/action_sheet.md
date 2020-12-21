@@ -1,4 +1,4 @@
-Exposes the **ActionSheet** widget.
+Exposes the **ActionSheet** UI component.
 
 Exports:
 

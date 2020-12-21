@@ -1,4 +1,4 @@
-Exposes the **TabPanel** widget.
+Exposes the **TabPanel** UI component.
 
 Exports:
 

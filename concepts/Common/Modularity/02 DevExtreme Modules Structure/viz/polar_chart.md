@@ -1,4 +1,4 @@
-Exposes the **PolarChart** widget.
+Exposes the **PolarChart** UI component.
 
 Exports:
 

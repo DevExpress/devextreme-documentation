@@ -1,4 +1,4 @@
-Exposes the **Draggable** widget.
+Exposes the **Draggable** UI component.
 
 Exports:
 

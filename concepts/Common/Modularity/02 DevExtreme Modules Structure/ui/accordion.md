@@ -1,4 +1,4 @@
-Exposes the **Accordion** widget.
+Exposes the **Accordion** UI component.
 
 Exports:
 

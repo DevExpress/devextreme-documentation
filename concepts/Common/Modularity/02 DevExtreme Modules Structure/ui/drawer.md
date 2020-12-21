@@ -1,4 +1,4 @@
-Exposes the **Drawer** widget.
+Exposes the **Drawer** UI component.
 
 Exports:
 

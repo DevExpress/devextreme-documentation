@@ -5,10 +5,10 @@ default: function() {return $(window).width() * 0.8 }
 ---
 ---
 ##### shortDescription
-Specifies the widget's width in pixels.
+Specifies the UI component's width in pixels.
 
 ##### return: Number | String
-The widget's width.
+The UI component's width.
 
 ---
 #include uiwidgets-ref-width

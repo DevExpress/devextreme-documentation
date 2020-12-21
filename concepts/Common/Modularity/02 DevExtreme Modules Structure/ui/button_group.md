@@ -1,4 +1,4 @@
-Exposes the **ButtonGroup** widget.
+Exposes the **ButtonGroup** UI component.
 
 Exports:
 

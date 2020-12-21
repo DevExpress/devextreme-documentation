@@ -1,4 +1,4 @@
-Exposes the **Sparkline** widget.
+Exposes the **Sparkline** UI component.
 
 Exports:
 

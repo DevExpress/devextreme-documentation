@@ -1,4 +1,4 @@
-DevExtreme is supplied with the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/') Store type, which is used to interact with OLAP servers using an XMLA standard. If you intended to use OLAP technology for analyzing your data with the **PivotGrid** widget, follow the steps below and you will learn how to configure the Microsoft Analysis Services and connect the **PivotGrid** widget to it. 
+DevExtreme is supplied with the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/') Store type, which is used to interact with OLAP servers using an XMLA standard. If you intended to use OLAP technology for analyzing your data with the **PivotGrid** UI component, follow the steps below and you will learn how to configure the Microsoft Analysis Services and connect the **PivotGrid** UI component to it. 
 
 [note] If you use another OLAP server that supports an XMLA standard, refer to the documentation for this server and learn how to configure HTTP access to it, then jump to step 6 of the list below.
 

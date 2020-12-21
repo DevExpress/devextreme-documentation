@@ -1,4 +1,4 @@
-Exposes the **Tooltip** widget.
+Exposes the **Tooltip** UI component.
 
 Exports:
 

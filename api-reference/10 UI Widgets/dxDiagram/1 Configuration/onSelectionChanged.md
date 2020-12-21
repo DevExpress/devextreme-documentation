@@ -12,7 +12,7 @@ A function that is executed after the selection is changed in the Diagram.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget instance's name.
+The UI component instance's name.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "widget" }

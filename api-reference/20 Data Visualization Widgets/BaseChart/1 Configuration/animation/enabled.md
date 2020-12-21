@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Enables the animation in the widget.
+Enables the animation in the UI component.
 
 ---

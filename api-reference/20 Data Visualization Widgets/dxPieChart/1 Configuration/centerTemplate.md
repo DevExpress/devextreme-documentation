@@ -8,7 +8,7 @@ default: undefined
 Specifies a custom template for content in the pie's center.
 
 ##### param(component): dxPieChart
-The widget's instance.
+The UI component's instance.
 
 ##### param(element): SVGGElement
 An empty SVGGElement that acts as a container for the template content.

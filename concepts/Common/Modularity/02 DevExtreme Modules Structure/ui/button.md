@@ -1,4 +1,4 @@
-Exposes the **Button** widget.
+Exposes the **Button** UI component.
 
 Exports:
 

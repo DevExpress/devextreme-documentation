@@ -7,9 +7,6 @@
     $(function() { 
         $("#scheduler").dxScheduler({
             // Configuration goes here
-            height: 600,
-            startDayHour: 10,
-            currentDate: new Date(2021, 4, 25)
         });
     });
 
@@ -39,8 +36,9 @@
 [Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a **Scheduler**:
 
     <!-- tab: app.component.html -->
-    <dx-scheduler id="scheduler">
+    <dx-scheduler id="scheduler"
         <!-- Configuration goes here -->
+    >
     </dx-scheduler> 
 
     <!-- tab: app.component.ts -->
@@ -85,10 +83,9 @@
 
     <!-- tab: App.vue -->
     <template> 
-        <DxScheduler
-            :height="600"
-            :start-day-hour="10"
-            :current-date="currentDate">
+        <DxScheduler id="scheduler
+            <!-- Configuration goes here -->
+        >
         </DxScheduler>
     </template> 
 
@@ -101,11 +98,6 @@
     export default { 
         components: {
             DxScheduler,
-        },
-        data() {
-            return {
-                currentDate: new Date(2021, 4, 25),
-            };
         }
     } 
     </script>
@@ -130,10 +122,9 @@
     function App() {
         return (
             <div className="App">
-                <Scheduler
-                    height={600}
-                    startDayHour={10}
-                    defaultCurrentDate={currentDate}>
+                <Scheduler id="dataGrid"
+                    {/* Configuration goes here */}
+                >
                 </Scheduler>
             </div>
         );

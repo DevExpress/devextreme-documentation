@@ -6,6 +6,7 @@ For this, specify the [currentDate](/Documentation/ApiReference/UI_Widgets/dxSch
     <!-- tab: index.js -->
     $(function() { 
         $("#scheduler").dxScheduler({
+            //...
             currentDate: new Date(2021, 4, 25)
         });
     });
@@ -13,7 +14,7 @@ For this, specify the [currentDate](/Documentation/ApiReference/UI_Widgets/dxSch
 ##### Angular 
 
     <!-- tab: app.component.html -->
-    <dx-scheduler id="scheduler"
+    <dx-scheduler id="scheduler" ...
         [(currentDate)]="currentDate">
     </dx-scheduler> 
 
@@ -33,7 +34,7 @@ For this, specify the [currentDate](/Documentation/ApiReference/UI_Widgets/dxSch
 
     <!-- tab: App.vue -->
     <template> 
-        <DxScheduler
+        <DxScheduler ...
             :current-date="currentDate">
         </DxScheduler>
     </template> 
@@ -61,7 +62,7 @@ For this, specify the [currentDate](/Documentation/ApiReference/UI_Widgets/dxSch
     function App() {
         return (
             <div className="App">
-                <Scheduler
+                <Scheduler ...
                     defaultCurrentDate={currentDate}>
                 </Scheduler>
             </div>

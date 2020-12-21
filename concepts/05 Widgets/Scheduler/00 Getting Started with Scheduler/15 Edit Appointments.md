@@ -1,6 +1,22 @@
-Users can add, update, and remove appointments. To configure these operations, use the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/) object. 
+Users can do the following actions on appointments:
 
-In this step, we will forbid users to drag the appointments. For this, set the **editing**.[allowDragging](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDragging) to `false`.
+* Add new appointments
+
+* Change text and date fields in the details form
+
+* Change start and end time zones in the details form
+
+* Rese the appointment's rectangle to change the duration
+
+* Drag the appointment's rectangle to change start and end dates 
+
+* Remove appointments with the help of the appointment's tooltip.
+
+All of these operations - except time zone changing and appointment's dragging and resizing on iOS and Android - are enabled. To change the default settings, use the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/) object.
+
+In this step, we will disable drag appointments' dragging and enable time zone editing. For this, we will set the **editing**.[allowDragging](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDragging) to `false` and editing.[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) to `true`.
+
+[note] The **Scheduler** displays appointment's time zone only when **editing**.**allowTimeZoneEditing** is `true`.
 
 ---
 ##### jQuery

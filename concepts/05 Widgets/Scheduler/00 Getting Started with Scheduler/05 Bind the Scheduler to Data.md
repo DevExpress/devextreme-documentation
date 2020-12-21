@@ -10,9 +10,9 @@ The **Scheduler** can load and update data from these data source types:
 
 * [Custom data sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
 
-Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) option to specify a data source. In this tutorial, we will use a local array. 
+Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) property to specify a data source. In this tutorial, we will use a local array. Its objects have non-standard fields. To specify what standard field each custom one defines, we will use the following **Scheduler**'s properties: [textExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#textExpr), [startDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#startDateExpr), [endDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#endDateExpr), [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr), and [recurrenceRuleExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr).
 
-[note]The widget supports three types of appointments: one-time, all-day, and recurring. The used data source contains them all. 
+[note]The UI component supports three types of appointments: one-time, all-day, and recurring. The used data source contains them all. 
 
 ---
 ##### jQuery
@@ -21,7 +21,13 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     $(function() { 
         $("#scheduler").dxScheduler({
             // ...
-            dataSource: appointments
+            dataSource: appointments,
+            textExpr: "appointmentText",
+            startDateExpr: "start",
+            endDateExpr: "end",
+            allDayExpr: "wholeDay",
+            recurrenceRuleExpr: "recurrence",
+            currentView: "week"
         });
     });
 
@@ -39,61 +45,61 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     <!-- tab: data.js -->
     const appointments = [
         {
-            text: "Install New Database",
+            appointmentText: "Install New Database",
             priorityId: 1,
-            startDate: new Date("2021-05-23T08:45:00.000Z"),
-            endDate: new Date("2021-05-23T09:45:00.000Z")
+            start: new Date("2021-05-23T08:45:00.000Z"),
+            end: new Date("2021-05-23T09:45:00.000Z")
         }, {
-            text: "Create New Online Marketing Strategy",
+            appointmentText: "Create New Online Marketing Strategy",
             priorityId: 1,
-            startDate: new Date("2021-05-24T09:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:00:00.000Z")
+            start: new Date("2021-05-24T09:00:00.000Z"),
+            end: new Date("2021-05-24T11:00:00.000Z")
         }, {
-            text: "Upgrade Personal Computers",
+            appointmentText: "Upgrade Personal Computers",
             priorityId: 1,
-            startDate: new Date("2021-05-25T10:15:00.000Z"),
-            endDate: new Date("2021-05-25T13:30:00.000Z")
+            start: new Date("2021-05-25T10:15:00.000Z"),
+            end: new Date("2021-05-25T13:30:00.000Z")
         }, {
-            text: "Customer Workshop",
+            appointmentText: "Customer Workshop",
             priorityId: 1,
-            startDate: new Date("2021-05-26T08:00:00.000Z"),
-            endDate: new Date("2021-05-26T10:00:00.000Z"),
-            allDay: true,
-            recurrenceRule: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
+            start: new Date("2021-05-26T08:00:00.000Z"),
+            end: new Date("2021-05-26T10:00:00.000Z"),
+            wholeDay: true,
+            recurrence: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
         }, {
-            text: "Prepare Development Plan",
+            appointmentText: "Prepare Development Plan",
             priorityId: 1,
-            startDate: new Date("2021-05-27T08:00:00.000Z"),
-            endDate: new Date("2021-05-27T10:30:00.000Z")
+            start: new Date("2021-05-27T08:00:00.000Z"),
+            end: new Date("2021-05-27T10:30:00.000Z")
         }, {
-            text: "Testing",
+            appointmentText: "Testing",
             priorityId: 2,
-            startDate: new Date("2021-05-23T09:00:00.000Z"),
-            endDate: new Date("2021-05-23T10:00:00.000Z"),
-            recurrenceRule: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
+            start: new Date("2021-05-23T09:00:00.000Z"),
+            end: new Date("2021-05-23T10:00:00.000Z"),
+            recurrence: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
         }, {
-            text: "Meeting of Instructors",
+            appointmentText: "Meeting of Instructors",
             priorityId: 2,
-            startDate: new Date("2021-05-24T10:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:15:00.000Z"),
-            recurrenceRule: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
+            start: new Date("2021-05-24T10:00:00.000Z"),
+            end: new Date("2021-05-24T11:15:00.000Z"),
+            recurrence: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
         }, {
-            text: "Recruiting students",
+            appointmentText: "Recruiting students",
             priorityId: 2,
-            startDate: new Date("2021-05-25T08:00:00.000Z"),
-            endDate: new Date("2021-05-25T09:00:00.000Z"),
-            recurrenceRule: "FREQ=YEARLY",
+            start: new Date("2021-05-25T08:00:00.000Z"),
+            end: new Date("2021-05-25T09:00:00.000Z"),
+            recurrence: "FREQ=YEARLY",
         }, {
-            text: "Monthly Planning",
+            appointmentText: "Monthly Planning",
             priorityId: 2,
-            startDate: new Date("2021-05-26T09:30:00.000Z"),
-            endDate: new Date("2021-05-26T10:45:00.000Z"),
-            recurrenceRule: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
+            start: new Date("2021-05-26T09:30:00.000Z"),
+            end: new Date("2021-05-26T10:45:00.000Z"),
+            recurrence: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
         }, {
-            text: "Open Day",
+            appointmentText: "Open Day",
             priorityId: 2,
-            startDate: new Date("2021-05-27T09:30:00.000Z"),
-            endDate: new Date("2021-05-27T11:00:00.000Z"),
+            start: new Date("2021-05-27T09:30:00.000Z"),
+            end: new Date("2021-05-27T11:00:00.000Z"),
         }
     ];
 
@@ -102,7 +108,12 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 
     <!-- tab: app.component.html -->
     <dx-scheduler ...
-        [dataSource]="appointments">
+        [dataSource]="appointments"
+        textExpr="appointmentText"
+        startDateExpr="start"
+        endDateExpr="end"
+        allDayExpr="wholeDay"
+        recurrenceRuleExpr="recurrence">
     </dx-scheduler> 
 
     <!-- tab: app.component.ts -->
@@ -128,71 +139,71 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     import { Injectable } from '@angular/core';
 
     export class Appointment {
-        text: string;
+        appointmentText: string;
         priorityId: number;
-        startDate: Date;
-        endDate: Date;
-        allDay?: boolean;
-        recurrenceRule?: string;
+        start: Date;
+        end: Date;
+        wholeDay?: boolean;
+        recurrence?: string;
     }
 
     let appointments: Appointment[] = [
         {
-            text: "Install New Database",
+            appointmentText: "Install New Database",
             priorityId: 1,
-            startDate: new Date("2021-05-23T08:45:00.000Z"),
-            endDate: new Date("2021-05-23T09:45:00.000Z")
+            start: new Date("2021-05-23T08:45:00.000Z"),
+            end: new Date("2021-05-23T09:45:00.000Z")
         }, {
-            text: "Create New Online Marketing Strategy",
+            appointmentText: "Create New Online Marketing Strategy",
             priorityId: 1,
-            startDate: new Date("2021-05-24T09:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:00:00.000Z")
+            start: new Date("2021-05-24T09:00:00.000Z"),
+            end: new Date("2021-05-24T11:00:00.000Z")
         }, {
-            text: "Upgrade Personal Computers",
+            appointmentText: "Upgrade Personal Computers",
             priorityId: 1,
-            startDate: new Date("2021-05-25T10:15:00.000Z"),
-            endDate: new Date("2021-05-25T13:30:00.000Z")
+            start: new Date("2021-05-25T10:15:00.000Z"),
+            end: new Date("2021-05-25T13:30:00.000Z")
         }, {
-            text: "Customer Workshop",
+            appointmentText: "Customer Workshop",
             priorityId: 1,
-            startDate: new Date("2021-05-26T08:00:00.000Z"),
-            endDate: new Date("2021-05-26T10:00:00.000Z"),
-            allDay: true,
-            recurrenceRule: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
+            start: new Date("2021-05-26T08:00:00.000Z"),
+            end: new Date("2021-05-26T10:00:00.000Z"),
+            wholeDay: true,
+            recurrence: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
         }, {
-            text: "Prepare Development Plan",
+            appointmentText: "Prepare Development Plan",
             priorityId: 1,
-            startDate: new Date("2021-05-27T08:00:00.000Z"),
-            endDate: new Date("2021-05-27T10:30:00.000Z")
+            start: new Date("2021-05-27T08:00:00.000Z"),
+            end: new Date("2021-05-27T10:30:00.000Z")
         }, {
-            text: "Testing",
+            appointmentText: "Testing",
             priorityId: 2,
-            startDate: new Date("2021-05-23T09:00:00.000Z"),
-            endDate: new Date("2021-05-23T10:00:00.000Z"),
-            recurrenceRule: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
+            start: new Date("2021-05-23T09:00:00.000Z"),
+            end: new Date("2021-05-23T10:00:00.000Z"),
+            recurrence: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
         }, {
-            text: "Meeting of Instructors",
+            appointmentText: "Meeting of Instructors",
             priorityId: 2,
-            startDate: new Date("2021-05-24T10:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:15:00.000Z"),
-            recurrenceRule: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
+            start: new Date("2021-05-24T10:00:00.000Z"),
+            end: new Date("2021-05-24T11:15:00.000Z"),
+            recurrence: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
         }, {
-            text: "Recruiting students",
+            appointmentText: "Recruiting students",
             priorityId: 2,
-            startDate: new Date("2021-05-25T08:00:00.000Z"),
-            endDate: new Date("2021-05-25T09:00:00.000Z"),
-            recurrenceRule: "FREQ=YEARLY",
+            start: new Date("2021-05-25T08:00:00.000Z"),
+            end: new Date("2021-05-25T09:00:00.000Z"),
+            recurrence: "FREQ=YEARLY",
         }, {
-            text: "Monthly Planning",
+            appointmentText: "Monthly Planning",
             priorityId: 2,
-            startDate: new Date("2021-05-26T09:30:00.000Z"),
-            endDate: new Date("2021-05-26T10:45:00.000Z"),
-            recurrenceRule: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
+            start: new Date("2021-05-26T09:30:00.000Z"),
+            end: new Date("2021-05-26T10:45:00.000Z"),
+            recurrence: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
         }, {
-            text: "Open Day",
+            appointmentText: "Open Day",
             priorityId: 2,
-            startDate: new Date("2021-05-27T09:30:00.000Z"),
-            endDate: new Date("2021-05-27T11:00:00.000Z"),
+            start: new Date("2021-05-27T09:30:00.000Z"),
+            end: new Date("2021-05-27T11:00:00.000Z"),
         }
     ];
 
@@ -210,7 +221,12 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
-            :data-source="appointments">
+            :data-source="appointments"
+            textExpr="appointmentText"
+            startDateExpr="start"
+            endDateExpr="end"
+            allDayExpr="wholeDay"
+            recurrenceRuleExpr="recurrence">
         </DxScheduler>
     </template> 
 
@@ -236,61 +252,61 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     <!-- tab: data.js -->
     export const appointments = [
         {
-            text: "Install New Database",
+            appointmentText: "Install New Database",
             priorityId: 1,
-            startDate: new Date("2021-05-23T08:45:00.000Z"),
-            endDate: new Date("2021-05-23T09:45:00.000Z")
+            start: new Date("2021-05-23T08:45:00.000Z"),
+            end: new Date("2021-05-23T09:45:00.000Z")
         }, {
-            text: "Create New Online Marketing Strategy",
+            appointmentText: "Create New Online Marketing Strategy",
             priorityId: 1,
-            startDate: new Date("2021-05-24T09:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:00:00.000Z")
+            start: new Date("2021-05-24T09:00:00.000Z"),
+            end: new Date("2021-05-24T11:00:00.000Z")
         }, {
-            text: "Upgrade Personal Computers",
+            appointmentText: "Upgrade Personal Computers",
             priorityId: 1,
-            startDate: new Date("2021-05-25T10:15:00.000Z"),
-            endDate: new Date("2021-05-25T13:30:00.000Z")
+            start: new Date("2021-05-25T10:15:00.000Z"),
+            end: new Date("2021-05-25T13:30:00.000Z")
         }, {
-            text: "Customer Workshop",
+            appointmentText: "Customer Workshop",
             priorityId: 1,
-            startDate: new Date("2021-05-26T08:00:00.000Z"),
-            endDate: new Date("2021-05-26T10:00:00.000Z"),
-            allDay: true,
-            recurrenceRule: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
+            start: new Date("2021-05-26T08:00:00.000Z"),
+            end: new Date("2021-05-26T10:00:00.000Z"),
+            wholeDay: true,
+            recurrence: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
         }, {
-            text: "Prepare Development Plan",
+            appointmentText: "Prepare Development Plan",
             priorityId: 1,
-            startDate: new Date("2021-05-27T08:00:00.000Z"),
-            endDate: new Date("2021-05-27T10:30:00.000Z")
+            start: new Date("2021-05-27T08:00:00.000Z"),
+            end: new Date("2021-05-27T10:30:00.000Z")
         }, {
-            text: "Testing",
+            appointmentText: "Testing",
             priorityId: 2,
-            startDate: new Date("2021-05-23T09:00:00.000Z"),
-            endDate: new Date("2021-05-23T10:00:00.000Z"),
-            recurrenceRule: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
+            start: new Date("2021-05-23T09:00:00.000Z"),
+            end: new Date("2021-05-23T10:00:00.000Z"),
+            recurrence: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
         }, {
-            text: "Meeting of Instructors",
+            appointmentText: "Meeting of Instructors",
             priorityId: 2,
-            startDate: new Date("2021-05-24T10:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:15:00.000Z"),
-            recurrenceRule: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
+            start: new Date("2021-05-24T10:00:00.000Z"),
+            end: new Date("2021-05-24T11:15:00.000Z"),
+            recurrence: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
         }, {
-            text: "Recruiting students",
+            appointmentText: "Recruiting students",
             priorityId: 2,
-            startDate: new Date("2021-05-25T08:00:00.000Z"),
-            endDate: new Date("2021-05-25T09:00:00.000Z"),
-            recurrenceRule: "FREQ=YEARLY",
+            start: new Date("2021-05-25T08:00:00.000Z"),
+            end: new Date("2021-05-25T09:00:00.000Z"),
+            recurrence: "FREQ=YEARLY",
         }, {
-            text: "Monthly Planning",
+            appointmentText: "Monthly Planning",
             priorityId: 2,
-            startDate: new Date("2021-05-26T09:30:00.000Z"),
-            endDate: new Date("2021-05-26T10:45:00.000Z"),
-            recurrenceRule: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
+            start: new Date("2021-05-26T09:30:00.000Z"),
+            end: new Date("2021-05-26T10:45:00.000Z"),
+            recurrence: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
         }, {
-            text: "Open Day",
+            appointmentText: "Open Day",
             priorityId: 2,
-            startDate: new Date("2021-05-27T09:30:00.000Z"),
-            endDate: new Date("2021-05-27T11:00:00.000Z"),
+            start: new Date("2021-05-27T09:30:00.000Z"),
+            end: new Date("2021-05-27T11:00:00.000Z"),
         }
     ];
 
@@ -308,7 +324,12 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
         return (
             <div className="App">
                 <Scheduler ...
-                    dataSource={appointments}>
+                    dataSource={appointments}
+                    textExpr="appointmentText"
+                    startDateExpr="start"
+                    endDateExpr="end"
+                    allDayExpr="wholeDay"
+                    recurrenceRuleExpr="recurrence">
                 </Scheduler>
             </div>
         );
@@ -319,61 +340,61 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     <!-- tab: data.js -->
     export const appointments = [
         {
-            text: "Install New Database",
+            appointmentText: "Install New Database",
             priorityId: 1,
-            startDate: new Date("2021-05-23T08:45:00.000Z"),
-            endDate: new Date("2021-05-23T09:45:00.000Z")
+            start: new Date("2021-05-23T08:45:00.000Z"),
+            end: new Date("2021-05-23T09:45:00.000Z")
         }, {
-            text: "Create New Online Marketing Strategy",
+            appointmentText: "Create New Online Marketing Strategy",
             priorityId: 1,
-            startDate: new Date("2021-05-24T09:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:00:00.000Z")
+            start: new Date("2021-05-24T09:00:00.000Z"),
+            end: new Date("2021-05-24T11:00:00.000Z")
         }, {
-            text: "Upgrade Personal Computers",
+            appointmentText: "Upgrade Personal Computers",
             priorityId: 1,
-            startDate: new Date("2021-05-25T10:15:00.000Z"),
-            endDate: new Date("2021-05-25T13:30:00.000Z")
+            start: new Date("2021-05-25T10:15:00.000Z"),
+            end: new Date("2021-05-25T13:30:00.000Z")
         }, {
-            text: "Customer Workshop",
+            appointmentText: "Customer Workshop",
             priorityId: 1,
-            startDate: new Date("2021-05-26T08:00:00.000Z"),
-            endDate: new Date("2021-05-26T10:00:00.000Z"),
-            allDay: true,
-            recurrenceRule: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
+            start: new Date("2021-05-26T08:00:00.000Z"),
+            end: new Date("2021-05-26T10:00:00.000Z"),
+            wholeDay: true,
+            recurrence: "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10"
         }, {
-            text: "Prepare Development Plan",
+            appointmentText: "Prepare Development Plan",
             priorityId: 1,
-            startDate: new Date("2021-05-27T08:00:00.000Z"),
-            endDate: new Date("2021-05-27T10:30:00.000Z")
+            start: new Date("2021-05-27T08:00:00.000Z"),
+            end: new Date("2021-05-27T10:30:00.000Z")
         }, {
-            text: "Testing",
+            appointmentText: "Testing",
             priorityId: 2,
-            startDate: new Date("2021-05-23T09:00:00.000Z"),
-            endDate: new Date("2021-05-23T10:00:00.000Z"),
-            recurrenceRule: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
+            start: new Date("2021-05-23T09:00:00.000Z"),
+            end: new Date("2021-05-23T10:00:00.000Z"),
+            recurrence: "FREQ=WEEKLY;INTERVAL=2;COUNT=2"
         }, {
-            text: "Meeting of Instructors",
+            appointmentText: "Meeting of Instructors",
             priorityId: 2,
-            startDate: new Date("2021-05-24T10:00:00.000Z"),
-            endDate: new Date("2021-05-24T11:15:00.000Z"),
-            recurrenceRule: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
+            start: new Date("2021-05-24T10:00:00.000Z"),
+            end: new Date("2021-05-24T11:15:00.000Z"),
+            recurrence: "FREQ=DAILY;BYDAY=WE;UNTIL=20211001"
         }, {
-            text: "Recruiting students",
+            appointmentText: "Recruiting students",
             priorityId: 2,
-            startDate: new Date("2021-05-25T08:00:00.000Z"),
-            endDate: new Date("2021-05-25T09:00:00.000Z"),
-            recurrenceRule: "FREQ=YEARLY",
+            start: new Date("2021-05-25T08:00:00.000Z"),
+            end: new Date("2021-05-25T09:00:00.000Z"),
+            recurrence: "FREQ=YEARLY",
         }, {
-            text: "Monthly Planning",
+            appointmentText: "Monthly Planning",
             priorityId: 2,
-            startDate: new Date("2021-05-26T09:30:00.000Z"),
-            endDate: new Date("2021-05-26T10:45:00.000Z"),
-            recurrenceRule: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
+            start: new Date("2021-05-26T09:30:00.000Z"),
+            end: new Date("2021-05-26T10:45:00.000Z"),
+            recurrence: "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1"
         }, {
-            text: "Open Day",
+            appointmentText: "Open Day",
             priorityId: 2,
-            startDate: new Date("2021-05-27T09:30:00.000Z"),
-            endDate: new Date("2021-05-27T11:00:00.000Z"),
+            start: new Date("2021-05-27T09:30:00.000Z"),
+            end: new Date("2021-05-27T11:00:00.000Z"),
         }
     ];
 

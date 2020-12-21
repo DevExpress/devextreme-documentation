@@ -37,7 +37,7 @@ To call widget methods, you need the widget instance. Define the target componen
     };
     </script>
 
-Alternatively, you can save the widget instance in a component property once the widget is initialized:
+Alternatively, you can assign the UI component instance to a variable and use it to call the methods:
 
     <!-- tab: App.vue -->
     <template>

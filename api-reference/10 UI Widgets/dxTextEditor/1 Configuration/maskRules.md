@@ -43,7 +43,7 @@ The following code snippet demonstrates the use of the function to set a dynamic
  
     <!-- tab: index.js -->
     $(function () {
-        $("#textBox").dxTextBox({
+        $("#{widgetName}").dx{WidgetName}({
             mask: "Hh:Mm",
             maskRules: {
                 H: char => char >= 0 && char <= 2,
@@ -62,51 +62,122 @@ The following code snippet demonstrates the use of the function to set a dynamic
 ##### Angular
  
     <!-- tab: app.component.html -->
-    <dx-text-box mask="Hh:Mm" [maskRules]="rules">
-    </dx-text-box>
+    <dx-{widget-name}
+        mask="Hh:Mm"
+        [maskRules]="rules">
+    </dx-{widget-name}>
  
     <!-- tab: app.component.ts -->
-    import { NgModule, Component, enableProdMode } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-    import { DxTextBoxModule } from 'devextreme-angular';
-
+    import { Component } from '@angular/core';
 
     @Component({
-        styleUrls: ['./app.component.css'],
-        selector: 'demo-app',
-        templateUrl: './app.component.html'
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        rules: any;
-
-        constructor() {
-            this.rules =  {
-                H: char => char >= 0 && char <= 2,
-                h: (char, index, fullStr) => {
-                    if (fullStr[0] == '2')
-                        return [0,1,2,3].includes(parseInt(char));
-                    else
-                        return [0,1,2,3,4,5,6,7,8,9].includes(parseInt(char));
-                },
-                M: char => char >= 0 && char <= 5,
-                m: char => char >= 0 && char <= 9
-            }
+        rules = {
+            H: char => char >= 0 && char <= 2,
+            h: (char, index, fullStr) => {
+                if (fullStr[0] == '2')
+                    return [0,1,2,3].includes(parseInt(char));
+                else
+                    return [0,1,2,3,4,5,6,7,8,9].includes(parseInt(char));
+            },
+            M: char => char >= 0 && char <= 5,
+            m: char => char >= 0 && char <= 9
         }
-
     }
 
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+ 
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
+ 
     @NgModule({
+        declarations: [
+            AppComponent
+        ],
         imports: [
             BrowserModule,
-            DxTextBoxModule
+            Dx{WidgetName}Module
         ],
-        declarations: [AppComponent],
+        providers: [ ],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
 
-    platformBrowserDynamic().bootstrapModule(AppModule);
+##### Vue
 
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}
+            mask="Hh:Mm"
+            :mask-rules="rules"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        data() {
+            return {
+                rules: {
+                    H: char => char >= 0 && char <= 2,
+                    h: (char, index, fullStr) => {
+                        if (fullStr[0] == '2')
+                            return [0,1,2,3].includes(parseInt(char));
+                        else
+                            return [0,1,2,3,4,5,6,7,8,9].includes(parseInt(char));
+                    },
+                    M: char => char >= 0 && char <= 5,
+                    m: char => char >= 0 && char <= 9
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    const App = () => {
+        const rules = {
+            H: char => char >= 0 && char <= 2,
+            h: (char, index, fullStr) => {
+                if (fullStr[0] == '2')
+                    return [0,1,2,3].includes(parseInt(char));
+                else
+                    return [0,1,2,3,4,5,6,7,8,9].includes(parseInt(char));
+            },
+            M: char => char >= 0 && char <= 5,
+            m: char => char >= 0 && char <= 9
+        };
+
+        return (
+            <{WidgetName}
+                mask="Hh:Mm"
+                maskRules={rules}   
+            />
+        );
+    }
+
+    export default App;
  
 ---

@@ -2,9 +2,9 @@ Simple item [labels](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/Si
 
 The **Form** displays labels on the left side of editors. All editors are aligned to the left. To change all location of all labels, use the [labelLocation](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#labelLocation) property. Use **label**.[location](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#location) property to relocate individual labels. You can change the horizontal alignment of individual labels in the [alignment](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#alignment) property.
 
-Use the [showColonAfterLabel]() property to display colons at the end of labels. Use the **label**.[showColon]() property for the same purpose for an individual label. Individual settings override common settings.
+Use the [showColonAfterLabel](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showColonAfterLabel) property to display colons at the end of labels. Use the **label**.[showColon](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#showColon) property for the same purpose for an individual label. Individual settings override common settings.
 
-The following code shows how to locate all labels on top of editors. We also align the `notes` item label's text to the center:
+The following code shows how to locate all labels on top of editors. We align the `notes` item label's text to the center. We also hide the colons after all labels:
 
 ---
 ##### jQuery
@@ -20,6 +20,7 @@ The following code shows how to locate all labels on top of editors. We also ali
                 notes: "John has been in the Audio/Video industry since 1990."
             },
             labelLocation: "top",
+            showColonAfterLabel: false,
             colCount: 2,
             items: ["name", "position", "hireDate", "officeNumber", {
                 dataField: "notes",
@@ -37,7 +38,8 @@ The following code shows how to locate all labels on top of editors. We also ali
     <dx-form
         [formData]="employee"
         [colCount]="2"
-        labelLocation="top">
+        labelLocation="top"
+        [showColonAfterLabel]="false">
         <dxi-item dataField="name"></dxi-item>
         <dxi-item dataField="position"></dxi-item>
         <dxi-item dataField="hireDate"></dxi-item>
@@ -95,7 +97,8 @@ The following code shows how to locate all labels on top of editors. We also ali
         <DxForm 
             :form-data="employee"
             :col-count="2"
-            label-location="top">
+            label-location="top"
+            :show-colon-after-label="false">
             <DxItem data-field="name"/>
             <DxItem data-field="position"/>
             <DxItem data-field="hireDate"/>
@@ -161,7 +164,8 @@ The following code shows how to locate all labels on top of editors. We also ali
             <Form
                 formData={employee}
                 colCount={2}
-                itemLocation="top">
+                itemLocation="top"
+                showColonAfterLable={false}>
                 <Item dataField="name" />
                 <Item dataField="position" />
                 <Item dataField="hireDate" />

@@ -10,7 +10,7 @@ A function that is called when a draggable appointment is removed.
 Information about the event that caused the function's execution.
 
 ##### field(e.component): dxScheduler
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.event): event
 #include common-ref-eventparam

@@ -15,14 +15,15 @@ The example below shows two groups in a **Form** with two columns. Each group oc
                 officeNumber: 901,
                 phone: "+1(213) 555-9392",
                 skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com"
+                email: "jheart@dx-email.com",
+                notes: "John has been in the Audio/Video industry since 1990."
             },
             colCount: 2,
             items: [{
                 itemType: "group",
                 caption: "Personal Data",
                 colCount: 2,
-                items: ["name", "position", "hireDate", "officeNumber"]
+                items: ["name", "position", "hireDate", "officeNumber", "notes"]
             }, {
                 itemType: "group",
                 caption: "Contacts",
@@ -45,6 +46,7 @@ The example below shows two groups in a **Form** with two columns. Each group oc
             <dxi-item dataField="position"></dxi-item>
             <dxi-item dataField="hireDate"></dxi-item>
             <dxi-item dataField="officeNumber"></dxi-item>
+            <dxi-item dataField="notes"></dxi-item>
         </dxi-item>
         <dxi-item itemType="group" caption="Contacts">
             <dxi-item dataField="phone"></dxi-item>
@@ -69,7 +71,8 @@ The example below shows two groups in a **Form** with two columns. Each group oc
             officeNumber: 901,
             phone: "+1(213) 555-9392",
             skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com"
+            email: "jheart@dx-email.com",
+            notes: "John has been in the Audio/Video industry since 1990."
         }
     }
 
@@ -107,6 +110,7 @@ The example below shows two groups in a **Form** with two columns. Each group oc
                 <DxSimpleItem data-field="position"/>
                 <DxSimpleItem data-field="hireDate"/>
                 <DxSimpleItem data-field="officeNumber"/>
+                <DxSimpleItem data-field="notes"/>
             </DxGroupItem>
             <DxGroupItem caption="Contacts">
                 <DxSimpleItem data-field="phone"/>
@@ -129,7 +133,8 @@ The example below shows two groups in a **Form** with two columns. Each group oc
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        email: "jheart@dx-email.com",
+        notes: "John has been in the Audio/Video industry since 1990."
     };
 
     export default {
@@ -166,7 +171,8 @@ The example below shows two groups in a **Form** with two columns. Each group oc
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        email: "jheart@dx-email.com",
+        notes: "John has been in the Audio/Video industry since 1990."
     };
 
     const App = () => {
@@ -181,6 +187,7 @@ The example below shows two groups in a **Form** with two columns. Each group oc
                     <SimpleItem dataField="position" />
                     <SimpleItem dataField="hireDate" />
                     <SimpleItem dataField="officeNumber" />
+                    <SimpleItem dataField="notes" />
                 </GroupItem>
                 <GroupItem caption="Contacts">
                     <SimpleItem dataField="phone" />

@@ -18,13 +18,14 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
                 officeNumber: 901,
                 phone: "+1(213) 555-9392",
                 skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com"
+                email: "jheart@dx-email.com",
+                notes: "John has been in the Audio/Video industry since 1990."
             },
             colCount: 2,
             items: [{
                 itemType: "group",
                 caption: "Employee",
-                items: ["name"]
+                items: ["name", "notes"]
             }, {
                 itemType: "group",
                 caption: "Personal Data",
@@ -54,6 +55,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
             itemType="group" 
             caption="Employee">
             <dxi-item dataField="name"></dxi-item>
+            <dxi-item dataField="notes"></dxi-item>
         </dxi-item>
         <dxi-item itemType="group" caption="Personal Data">
             <dxi-item itemType="tabbed" [tabPanelOptions]="personalDataOptions">
@@ -87,7 +89,8 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
             officeNumber: 901,
             phone: "+1(213) 555-9392",
             skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com"
+            email: "jheart@dx-email.com",
+            notes: "John has been in the Audio/Video industry since 1990."
         }
 
         personalDataOptions = {
@@ -124,6 +127,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
             :col-count="2">
             <DxGroupItem caption="Employee">
                 <DxSimpleItem data-field="name"/>
+                <DxSimpleItem data-field="notes"/>
             </DxGroupItem>
             <DxGroupItem caption="Personal Data">
                 <DxTabbedItem :tab-panel-options="personalDataOptions">
@@ -160,7 +164,8 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        email: "jheart@dx-email.com",
+        notes: "John has been in the Audio/Video industry since 1990."
     };
 
     const personalDataOptions = {
@@ -204,7 +209,8 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
         officeNumber: 901,
         phone: "+1(213) 555-9392",
         skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        email: "jheart@dx-email.com",
+        notes: "John has been in the Audio/Video industry since 1990."
     };
 
     const personalDataOptions = {
@@ -218,6 +224,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
                 colCount={2}>
                 <GroupItem caption="Employee">
                     <SimpleItem dataField="name" />
+                    <SimpleItem dataField="notes" />
                 </GroupItem>
                 <GroupItem caption="Personal Data">
                     <TabbedItem tabPanelOptions={personalDataOptions}>

@@ -1,6 +1,7 @@
 ---
 id: PdfExportDataGridProps.loadPanel
 type: ExportLoadPanel
+inheritsType: ExportLoadPanel
 ---
 ---
 ##### shortDescription

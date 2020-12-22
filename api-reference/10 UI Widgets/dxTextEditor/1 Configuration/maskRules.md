@@ -157,26 +157,24 @@ The following code snippet demonstrates the use of the function to set a dynamic
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
-    const App = () => {
-        const rules = {
-            H: char => char >= 0 && char <= 2,
-            h: (char, index, fullStr) => {
-                if (fullStr[0] == '2')
-                    return [0,1,2,3].includes(parseInt(char));
-                else
-                    return [0,1,2,3,4,5,6,7,8,9].includes(parseInt(char));
-            },
-            M: char => char >= 0 && char <= 5,
-            m: char => char >= 0 && char <= 9
-        };
+    const rules = {
+        H: char => char >= 0 && char <= 2,
+        h: (char, index, fullStr) => {
+            if (fullStr[0] == '2')
+                return [0,1,2,3].includes(parseInt(char));
+            else
+                return [0,1,2,3,4,5,6,7,8,9].includes(parseInt(char));
+        },
+        M: char => char >= 0 && char <= 5,
+        m: char => char >= 0 && char <= 9
+    };
 
-        return (
-            <{WidgetName}
-                mask="Hh:Mm"
-                maskRules={rules}   
-            />
-        );
-    }
+    const App = () => (
+        <{WidgetName}
+            mask="Hh:Mm"
+            maskRules={rules}   
+        />
+    );
 
     export default App;
  

@@ -1,5 +1,6 @@
 ---
 id: dxScheduler.scrollToTime(hours, minutes, date)
+deprecated: 
 ---
 ---
 ##### shortDescription

@@ -9,6 +9,9 @@ A function that is called when the draggable rows are reordered.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
+##### field(e.component): {WidgetName}
+<!-- Description goes here -->
+
 ##### field(e.dropInsideItem): Boolean
 Indicates if the dragged row is dropped inside another row.
 

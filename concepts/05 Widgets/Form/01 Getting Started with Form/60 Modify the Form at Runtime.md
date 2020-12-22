@@ -15,15 +15,10 @@ The following code shows how to dynamically make all editors in the **Form** rea
                 officeNumber: 901,
                 notes: "John has been in the Audio/Video industry since 1990."
             },
-            labelLocation: "top",
-            showColonAfterLabel: false,
             colCount: 2,
             items: ["name", "position", "hireDate", "officeNumber", {
                 dataField: "notes",
-                colSpan: 2,
-                label: {
-                    alignment: "center"
-                }
+                colSpan: 2
             }]
         }).dxForm("instance");
 
@@ -42,8 +37,7 @@ The following code shows how to dynamically make all editors in the **Form** rea
     <dx-form
         [formData]="employee"
         [colCount]="2"
-        labelLocation="top"
-        [showColonAfterLabel]="false">
+        [readOnly]="isFormReadOnly">
         <dxi-item dataField="name"></dxi-item>
         <dxi-item dataField="position"></dxi-item>
         <dxi-item dataField="hireDate"></dxi-item>
@@ -51,10 +45,13 @@ The following code shows how to dynamically make all editors in the **Form** rea
         <dxi-item 
             dataField="notes" 
             [colSpan]="2">
-            <dxo-label alignment="center">
-            </dxo-label>
         </dxi-item>
     </dx-form>
+
+    <dx-check-box
+        text="Enable read-only mode"
+        [(value)]="isFormReadOnly">
+    </dx-check-box>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -72,6 +69,8 @@ The following code shows how to dynamically make all editors in the **Form** rea
             officeNumber: 901,
             notes: "John has been in the Audio/Video industry since 1990."
         }
+
+        isFormReadOnly = false
     }
 
     <!-- tab: app.module.ts -->
@@ -79,7 +78,7 @@ The following code shows how to dynamically make all editors in the **Form** rea
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxFormModule } from 'devextreme-angular';
+    import { DxFormModule, DxCheckBoxModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -87,7 +86,8 @@ The following code shows how to dynamically make all editors in the **Form** rea
         ],
         imports: [
             BrowserModule,
-            DxFormModule
+            DxFormModule,
+            DxCheckBoxModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -98,28 +98,33 @@ The following code shows how to dynamically make all editors in the **Form** rea
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm 
-            :form-data="employee"
-            :col-count="2"
-            label-location="top"
-            :show-colon-after-label="false">
-            <DxItem data-field="name"/>
-            <DxItem data-field="position"/>
-            <DxItem data-field="hireDate"/>
-            <DxItem data-field="officeNumber"/>
-            <DxItem 
-                data-field="notes"
-                :col-span="2">
-                <DxLabel alignment="center"/>
-            </DxItem>
-        </DxForm>
+        <div>
+            <DxForm 
+                :form-data="employee"
+                :col-count="2"
+                :read-only="isFormReadOnly">
+                <DxItem data-field="name"/>
+                <DxItem data-field="position"/>
+                <DxItem data-field="hireDate"/>
+                <DxItem data-field="officeNumber"/>
+                <DxItem 
+                    data-field="notes"
+                    :col-span="2"
+                />
+            </DxForm>
+            <DxCheckBox
+                text="Enable read-only mode"
+                v-model:value="isFormDisabled"
+            />
+        </div>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem, DxLabel } from 'devextreme-vue/form';
+    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxCheckBox } from 'devextreme-vue/check-box';
     
     let employee = {
         name: "John Heart",
@@ -129,15 +134,18 @@ The following code shows how to dynamically make all editors in the **Form** rea
         notes: "John has been in the Audio/Video industry since 1990."
     };
 
+    let isFormDisabled = false;
+
     export default {
         components: {
             DxForm,
             DxItem,
-            DxLabel
+            DxCheckBox
         },
         data: {
             return: {
-                employee
+                employee,
+                isFormDisabled
             }
         }
     }
@@ -146,14 +154,16 @@ The following code shows how to dynamically make all editors in the **Form** rea
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, {useState, useCallback } from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
         Form,
-        Item
+        Item,
     } from 'devextreme-react/form';
+
+    import { CheckBox } from 'devextreme-react/check-box';
 
     let employee = {
         name: "John Heart",
@@ -164,22 +174,34 @@ The following code shows how to dynamically make all editors in the **Form** rea
     };
 
     const App = () => {
+        let [isFormDisabled, setIsFormDisabled] = useState(false);
+
+        const onCheckBoxValueChanged = useCallback((e) => {
+            setIsFormDisabled(e.value);
+        });
+
         return (
-            <Form
-                formData={employee}
-                colCount={2}
-                itemLocation="top"
-                showColonAfterLable={false}>
-                <Item dataField="name" />
-                <Item dataField="position" />
-                <Item dataField="hireDate" />
-                <Item dataField="officeNumber" />
-                <Item 
-                    dataField="notes"
-                    colSpan={2}>
-                    <Label alignment="center" />
-                </Item>
-            </Form>
+            <div>
+                <Form
+                    formData={employee}
+                    colCount={2}
+                    readOnly={isFormDisabled}>
+                    <Item dataField="name" />
+                    <Item dataField="position" />
+                    <Item dataField="hireDate" />
+                    <Item dataField="officeNumber" />
+                    <Item 
+                        dataField="notes"
+                        colSpan={2}
+                    />
+                </Form>
+
+                <CheckBox
+                    text="Enable read-only mode"
+                    value={isFormDisabled}
+                    onValueChanged={onCheckBoxValueChanged} 
+                />
+            </div>
         );
     }
 

@@ -148,7 +148,8 @@ The following code shows how to locate all labels on top of editors. We align th
 
     import {
         Form,
-        Item
+        Item,
+        Label
     } from 'devextreme-react/form';
 
     let employee = {
@@ -164,7 +165,7 @@ The following code shows how to locate all labels on top of editors. We align th
             <Form
                 formData={employee}
                 colCount={2}
-                itemLocation="top"
+                labeLocation="top"
                 showColonAfterLable={false}>
                 <Item dataField="name" />
                 <Item dataField="position" />

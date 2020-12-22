@@ -142,8 +142,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
 ---
 
-... or a function that defines rules controlling whether the currently checked date is disabled.
-Make sure to verify that these rules are applied to the desired view.
+... or a function that defines rules controlling whether the currently checked date is disabled. Make sure to verify that these rules are applied to the desired view.
 
 ---
 ##### jQuery

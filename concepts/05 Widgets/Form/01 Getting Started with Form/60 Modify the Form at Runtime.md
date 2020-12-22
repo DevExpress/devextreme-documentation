@@ -174,11 +174,11 @@ The following code shows how to dynamically make all editors in the **Form** rea
     };
 
     const App = () => {
-        let [isFormDisabled, setIsFormDisabled] = useState(false);
+        const [isFormDisabled, setIsFormDisabled] = useState(false);
 
         const onCheckBoxValueChanged = useCallback((e) => {
             setIsFormDisabled(e.value);
-        });
+        }, []);
 
         return (
             <div>

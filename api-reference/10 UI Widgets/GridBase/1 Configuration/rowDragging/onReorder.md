@@ -10,7 +10,7 @@ A function that is called when the draggable rows are reordered.
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.dropInsideItem): Boolean
 Indicates if the dragged row is dropped inside another row.

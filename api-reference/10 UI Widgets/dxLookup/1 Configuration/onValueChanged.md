@@ -32,3 +32,6 @@ The widget's new value.
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/EventHandling/"
 }
+
+#####See Also#####
+- [valueChangeEvent]({basewidgetpath}/Configuration/#valueChangeEvent)

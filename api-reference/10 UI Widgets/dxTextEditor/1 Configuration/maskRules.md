@@ -36,7 +36,7 @@ A function that specifies a custom rule accepts the following arguments:
 
 The function should return **true** if the character is allowed, otherwise it should return **false**.
 
-The following code snippet demonstrates the use of the function to set a dynamic mask. In this example, the mask enforces correct input of time values:
+The following code snippet demonstrates the use of the function to set a dynamic mask. In this example, the mask enforces the correct input of time values:
 
 ---
 ##### jQuery

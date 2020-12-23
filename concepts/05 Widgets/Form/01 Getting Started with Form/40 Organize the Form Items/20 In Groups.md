@@ -2,7 +2,7 @@ You can divide form items in groups. To do this, declare items with the 'group" 
 
 If you use modular approaches and have more than one item type in a Form, declare the simple items as in the example below.
 
-The code below shows two groups in a Form with two columns. Each group occupies a separate column, and the `Personal Information` group has two columns inside it:
+The folowing code shows two groups in a Form with two columns. Each group occupies a separate column, and the `Personal Information` group has two columns inside it:
 
 ---
 ##### jQuery

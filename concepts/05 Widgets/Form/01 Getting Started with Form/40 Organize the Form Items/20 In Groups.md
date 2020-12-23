@@ -1,6 +1,8 @@
 You can divide form items in groups. To do this, declare items with the 'group" [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) array. A group can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). You can configure each group's layout separately. 
 
-The example below shows two groups in a Form with two columns. Each group occupies a separate column, and the `Personal Data` group has two columns inside it:
+If you use modular approaches and have more than one item type in a Form, declare the simple items as in the example below.
+
+The code below shows two groups in a Form with two columns. Each group occupies a separate column, and the `Personal Information` group has two columns inside it:
 
 ---
 ##### jQuery
@@ -21,7 +23,7 @@ The example below shows two groups in a Form with two columns. Each group occupi
             colCount: 2,
             items: [{
                 itemType: "group",
-                caption: "Personal Data",
+                caption: "Personal Information",
                 colCount: 2,
                 items: ["name", "position", "hireDate", "officeNumber", "notes"]
             }, {
@@ -40,7 +42,7 @@ The example below shows two groups in a Form with two columns. Each group occupi
         [colCount]="2">
         <dxi-item 
             itemType="group" 
-            caption="Personal Data"
+            caption="Personal Information"
             [colCount]="2">
             <dxi-item dataField="name"></dxi-item>
             <dxi-item dataField="position"></dxi-item>
@@ -104,7 +106,7 @@ The example below shows two groups in a Form with two columns. Each group occupi
             :form-data="employee"
             :col-count="2">
             <DxGroupItem
-                caption="Personal Data"
+                caption="Personal Information"
                 :col-count="2">
                 <DxSimpleItem data-field="name"/>
                 <DxSimpleItem data-field="position"/>
@@ -181,7 +183,7 @@ The example below shows two groups in a Form with two columns. Each group occupi
                 formData={employee}
                 colCount={2}>
                 <GroupItem 
-                    caption="Personal Data"
+                    caption="Personal Information"
                     colCount={2}>
                     <SimpleItem dataField="name" />
                     <SimpleItem dataField="position" />

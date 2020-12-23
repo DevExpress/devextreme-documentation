@@ -142,8 +142,7 @@ The [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items
 
     const App = () => {
         return (
-            <Form
-                formData={employee}>
+            <Form formData={employee}>
                 <Item dataField="name" />
                 <Item dataField="officeNumber" />
                 <Item 

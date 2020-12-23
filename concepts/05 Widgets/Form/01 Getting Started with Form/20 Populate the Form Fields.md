@@ -63,11 +63,9 @@ To populate form fields, assign an object to the **formData** property. Each fie
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxForm 
-                :form-data="employee">
-            </DxForm>
-        </div>
+        <DxForm 
+            :form-data="employee">
+        </DxForm>
     </template>
 
     <script>
@@ -113,11 +111,9 @@ To populate form fields, assign an object to the **formData** property. Each fie
 
     const App = () => {
         return (
-            <div className="App">
-                <Form
-                    formData={employee}>
-                </Form>
-            </div>
+            <Form
+                formData={employee}>
+            </Form>
         );
     }
 

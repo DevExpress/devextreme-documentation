@@ -2,7 +2,7 @@ A tab can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/I
 
 The Form uses the [TabPanel](/Documentation/ApiReference/UI_Widgets/dxTabPanel/) component to display tabs. You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object.
 
-The following example shows a Form with two groups. A tabbed item is nested in the `Personal Data` group. We also configure the tab panel's [height](/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object:
+The following example shows a Form with two groups. A tabbed item is nested in the `Personal Information` group. We also configure the tab panel's [height](/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object:
 
 
 ---
@@ -28,7 +28,7 @@ The following example shows a Form with two groups. A tabbed item is nested in t
                 items: ["name", "notes"]
             }, {
                 itemType: "group",
-                caption: "Personal Data",
+                caption: "Personal Information",
                 items: [{
                     itemType: "tabbed",
                     tabPanelOptions: {
@@ -58,7 +58,7 @@ The following example shows a Form with two groups. A tabbed item is nested in t
             <dxi-item dataField="name"></dxi-item>
             <dxi-item dataField="notes"></dxi-item>
         </dxi-item>
-        <dxi-item itemType="group" caption="Personal Data">
+        <dxi-item itemType="group" caption="Personal Information">
             <dxi-item itemType="tabbed" [tabPanelOptions]="personalDataOptions">
                 <dxi-tab title="Profile">
                     <dxi-item dataField="position"></dxi-item>
@@ -130,7 +130,7 @@ The following example shows a Form with two groups. A tabbed item is nested in t
                 <DxSimpleItem data-field="name"/>
                 <DxSimpleItem data-field="notes"/>
             </DxGroupItem>
-            <DxGroupItem caption="Personal Data">
+            <DxGroupItem caption="Personal Information">
                 <DxTabbedItem :tab-panel-options="personalDataOptions">
                     <DxTab title="Profile">
                         <DxSimpleItem data-field="position"/>
@@ -227,7 +227,7 @@ The following example shows a Form with two groups. A tabbed item is nested in t
                     <SimpleItem dataField="name" />
                     <SimpleItem dataField="notes" />
                 </GroupItem>
-                <GroupItem caption="Personal Data">
+                <GroupItem caption="Personal Information">
                     <TabbedItem tabPanelOptions={personalDataOptions}>
                         <Tab title="Profile">
                             <SimpleItem dataField="position" />

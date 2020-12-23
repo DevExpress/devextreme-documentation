@@ -1,27 +1,41 @@
 For the generated application to work in Internet Explorer 11, make the following adjustments:
 
-- .browserslistrc
-change `not IE 11` to  `IE 11`
+1. **Install and enable polyfills**     
 
-- in package.json 
-**scripts**
-`"start": "ng serve", 
-"build": "ng build",` 
-to 
-`"start": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng serve --prod",
- "build": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build --prod",`
-**dependencies**
-add `"classlist.js": "^1.1.20150312",`
+        npm install --save classlist.js core-js
 
-OR
+    <!---->
 
-npm install --save classlist.js
+        <!-- tab: src/polyfills.ts -->
+        // ...
+        import 'core-js/es/array';
+        import 'classlist.js';
+        // ...
 
-- tsconfig.base.json
-`"target": "es2015",` to `"target": "es5",`
+1. **Include IE 11 as a supported browser**      
+Open the .browserslistrc file and change `not IE 11` to  `IE 11`.
 
-- src/polyfills.ts
-uncomment a line
-`// import 'classlist.js';`
+1. **Modify the `start` and `build` commands**          
 
-// - run `npm install`
+        <!-- tab: package.json -->
+        {
+          // ...
+          "scripts": {
+            // ...
+            // "start": "ng serve", 
+            // "build": "ng build",
+            "start": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng serve --prod",
+            "build": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build --prod",
+            // ...
+          }
+        }
+
+1. **Lower the target ECMAScript version**      
+
+        <!-- tab: tsconfig.json -->
+        {
+          // ...
+          // "target": "es2015",
+          "target": "es5",
+          // ...
+        }

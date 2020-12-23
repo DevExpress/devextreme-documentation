@@ -142,7 +142,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
 ---
 
-... or a function that defines rules controlling whether the currently checked date is disabled. Make sure to verify that these rules are applied to the desired view.
+Alternatively, pass a function to disabledDates. This function should define the rules that determine whether the checked date is disabled. A separate set of rules should target every [view](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) individually.
 
 ---
 ##### jQuery

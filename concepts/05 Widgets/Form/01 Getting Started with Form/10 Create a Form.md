@@ -38,9 +38,8 @@
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a **Form**:
 
     <!-- tab: app.component.html -->
-    <dx-form id="form"
+    <dx-form id="form">
         <!-- Configuration goes here -->
-    >
     </dx-form>
 
     <!-- tab: app.component.ts -->

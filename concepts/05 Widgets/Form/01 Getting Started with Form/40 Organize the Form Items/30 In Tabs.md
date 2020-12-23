@@ -42,6 +42,7 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
                         items: ["phone", "skype", "email"]
                     }]
                 }]
+            }]
         });
     });
 

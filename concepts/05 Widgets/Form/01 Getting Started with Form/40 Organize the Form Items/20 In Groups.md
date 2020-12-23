@@ -65,14 +65,14 @@ The example below shows two groups in a **Form** with two columns. Each group oc
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
-            position: "CEO",
+            name: 'John Heart',
+            position: 'CEO',
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            phone: "+1(213) 555-9392",
-            skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com",
-            notes: "John has been in the Audio/Video industry since 1990."
+            phone: '+1(213) 555-9392',
+            skype: 'jheart_DX_skype',
+            email: 'jheart@dx-email.com',
+            notes: 'John has been in the Audio/Video industry since 1990.'
         }
     }
 
@@ -126,15 +126,15 @@ The example below shows two groups in a **Form** with two columns. Each group oc
 
     import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
     
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com",
-        notes: "John has been in the Audio/Video industry since 1990."
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com',
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     export default {
@@ -164,15 +164,15 @@ The example below shows two groups in a **Form** with two columns. Each group oc
         GroupItem
     } from 'devextreme-react/form';
 
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com",
-        notes: "John has been in the Audio/Video industry since 1990."
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com',
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     const App = () => {

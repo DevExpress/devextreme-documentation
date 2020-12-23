@@ -43,7 +43,7 @@ The [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
+            name: 'John Heart',
             officeNumber: 901,
             hireDate: new Date(2012, 4, 13)
         }
@@ -94,8 +94,8 @@ The [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items
 
     import { DxForm, DxItem } from 'devextreme-vue/form';
     
-    let employee = {
-        name: "John Heart",
+    const employee = {
+        name: 'John Heart',
         officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };
@@ -130,8 +130,8 @@ The [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items
         Item
     } from 'devextreme-react/form';
 
-    let employee = {
-        name: "John Heart",
+    const employee = {
+        name: 'John Heart',
         officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };

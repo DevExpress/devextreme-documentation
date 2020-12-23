@@ -33,7 +33,7 @@ To populate form fields, assign an object to the [formData](/Documentation/ApiRe
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
+            name: 'John Heart',
             officeNumber: 901,
             hireDate: new Date(2012, 4, 13)
         }
@@ -76,8 +76,8 @@ To populate form fields, assign an object to the [formData](/Documentation/ApiRe
 
     import { DxForm } from 'devextreme-vue/form';
 
-    let employee = {
-        name: "John Heart",
+    const employee = {
+        name: 'John Heart',
         officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };
@@ -105,8 +105,8 @@ To populate form fields, assign an object to the [formData](/Documentation/ApiRe
         Form
     } from 'devextreme-react/form';
 
-    let employee = {
-        name: "John Heart",
+    const employee = {
+        name: 'John Heart',
         officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };

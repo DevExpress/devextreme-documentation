@@ -84,14 +84,14 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
-            position: "CEO",
+            name: 'John Heart',
+            position: 'CEO',
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            phone: "+1(213) 555-9392",
-            skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com",
-            notes: "John has been in the Audio/Video industry since 1990."
+            phone: '+1(213) 555-9392',
+            skype: 'jheart_DX_skype',
+            email: 'jheart@dx-email.com',
+            notes: 'John has been in the Audio/Video industry since 1990.'
         }
 
         personalDataOptions = {
@@ -158,15 +158,15 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
         DxTab 
     } from 'devextreme-vue/form';
     
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com",
-        notes: "John has been in the Audio/Video industry since 1990."
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com',
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     const personalDataOptions = {
@@ -203,15 +203,15 @@ The following example shows a **Form** with two groups. A tabbed item is nested 
         Tab
     } from 'devextreme-react/form';
 
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com",
-        notes: "John has been in the Audio/Video industry since 1990."
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com',
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     const personalDataOptions = {

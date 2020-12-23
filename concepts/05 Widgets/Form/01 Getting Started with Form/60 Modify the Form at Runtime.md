@@ -63,11 +63,11 @@ The following code shows how to dynamically make all editors in the **Form** rea
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
-            position: "CEO",
+            name: 'John Heart',
+            position: 'CEO',
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            notes: "John has been in the Audio/Video industry since 1990."
+            notes: 'John has been in the Audio/Video industry since 1990.'
         }
 
         isFormReadOnly = false
@@ -126,12 +126,12 @@ The following code shows how to dynamically make all editors in the **Form** rea
     import { DxForm, DxItem } from 'devextreme-vue/form';
     import { DxCheckBox } from 'devextreme-vue/check-box';
     
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        notes: "John has been in the Audio/Video industry since 1990."
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     let isFormDisabled = false;
@@ -165,12 +165,12 @@ The following code shows how to dynamically make all editors in the **Form** rea
 
     import { CheckBox } from 'devextreme-react/check-box';
 
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        notes: "John has been in the Audio/Video industry since 1990."
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     const App = () => {

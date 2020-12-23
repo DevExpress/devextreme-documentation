@@ -79,14 +79,14 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
-            position: "CEO",
+            name: 'John Heart',
+            position: 'CEO',
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            phone: "+1(213) 555-9392",
-            skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com",
-            notes: "John has been in the Audio/Video industry since 1990."
+            phone: '+1(213) 555-9392',
+            skype: 'jheart_DX_skype',
+            email: 'jheart@dx-email.com',
+            notes: 'John has been in the Audio/Video industry since 1990.'
         }
     }
 
@@ -142,15 +142,15 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
 
     import { DxForm, DxSimpleItem, DxNumericRule, DxEmailRule } from 'devextreme-vue/form';
     
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com",
-        notes: "John has been in the Audio/Video industry since 1990."
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com',
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     export default {
@@ -182,15 +182,15 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
         EmailRule
     } from 'devextreme-react/form';
 
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com",
-        notes: "John has been in the Audio/Video industry since 1990."
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com',
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     const App = () => {

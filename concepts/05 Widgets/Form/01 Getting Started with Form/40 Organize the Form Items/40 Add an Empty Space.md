@@ -52,13 +52,13 @@ You can add an empty space to separate form items. To do this, assign "empty" to
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
-            position: "CEO",
+            name: 'John Heart',
+            position: 'CEO',
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            phone: "+1(213) 555-9392",
-            skype: "jheart_DX_skype",
-            email: "jheart@dx-email.com"
+            phone: '+1(213) 555-9392',
+            skype: 'jheart_DX_skype',
+            email: 'jheart@dx-email.com'
         }
     }
 
@@ -108,14 +108,14 @@ You can add an empty space to separate form items. To do this, assign "empty" to
 
     import { DxForm, DxSimpleItem, DxEmptyItem } from 'devextreme-vue/form';
     
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com'
     };
 
     export default {
@@ -145,14 +145,14 @@ You can add an empty space to separate form items. To do this, assign "empty" to
         EmptyItem
     } from 'devextreme-react/form';
 
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        phone: "+1(213) 555-9392",
-        skype: "jheart_DX_skype",
-        email: "jheart@dx-email.com"
+        phone: '+1(213) 555-9392',
+        skype: 'jheart_DX_skype',
+        email: 'jheart@dx-email.com'
     };
 
     const App = () => {

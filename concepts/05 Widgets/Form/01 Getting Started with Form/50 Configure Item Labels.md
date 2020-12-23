@@ -62,11 +62,11 @@ The following code shows how to locate all labels on top of editors. We align th
     })
     export class AppComponent {
         employee = {
-            name: "John Heart",
-            position: "CEO",
+            name: 'John Heart',
+            position: 'CEO',
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            notes: "John has been in the Audio/Video industry since 1990."
+            notes: 'John has been in the Audio/Video industry since 1990.'
         }
     }
 
@@ -117,12 +117,12 @@ The following code shows how to locate all labels on top of editors. We align th
 
     import { DxForm, DxItem, DxLabel } from 'devextreme-vue/form';
     
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        notes: "John has been in the Audio/Video industry since 1990."
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     export default {
@@ -152,12 +152,12 @@ The following code shows how to locate all labels on top of editors. We align th
         Label
     } from 'devextreme-react/form';
 
-    let employee = {
-        name: "John Heart",
-        position: "CEO",
+    const employee = {
+        name: 'John Heart',
+        position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        notes: "John has been in the Audio/Video industry since 1990."
+        notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
     const App = () => {

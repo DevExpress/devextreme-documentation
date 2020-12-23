@@ -4,7 +4,7 @@ The **Form** displays labels on the left side of editors. The text of all editor
 
 Use the [showColonAfterLabel](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showColonAfterLabel) property to display colons at the end of labels. Use the **label**.[showColon](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#showColon) property for the same purpose for an individual label. Individual settings override common settings.
 
-The following code shows how to locate all labels on top of editors. We align the `notes` item label's text to the center. We also hide the colons after all labels:
+The following code shows how to locate all labels on top of editors. We align the `Notes` item label's text to the center. We also hide the colons after all labels:
 
 ---
 ##### jQuery

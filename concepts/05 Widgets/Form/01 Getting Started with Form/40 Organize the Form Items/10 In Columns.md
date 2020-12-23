@@ -1,4 +1,4 @@
-You can divide form items into several columns. To keep the fixed number of columns, specify the number in the [colCount](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount) property. An item can occupy more than one column. For this, specify the [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) property. In the example below, the `notes` item spans two columns:
+You can divide form items into several columns. To keep the fixed number of columns, specify the number in the [colCount](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount) property. An item can occupy more than one column. For this, specify the [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) property. In the example below, the `Notes` item spans two columns:
 
 ---
 ##### jQuery

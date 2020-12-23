@@ -4,7 +4,7 @@ To apply validation rules to a simple item, specify them in the [validationRules
 
 You can specify an item's [isRequired](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property to apply the [Required Rule](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RequiredRule/) to it. The required items are marked with red asterisk signs.
 
-In the following example, we specify the [isRequired](Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property for the `name` item. We also specify the **NumericRule** and **EmailRules** for two other items. The [showValidationSummary](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showValidationSummary) property is set to **true**.
+In the following example, we specify the [isRequired](Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property for the `Name` item. We also specify the **NumericRule** and **EmailRules** for two other items. The [showValidationSummary](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showValidationSummary) property is set to **true**.
 
 ---
 ##### jQuery

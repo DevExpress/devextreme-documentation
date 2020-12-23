@@ -1,6 +1,6 @@
 You can divide form items in groups. To do this, declare items with the 'group" [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) array. A group can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). You can configure each group's layout separately. 
 
-The example below shows two groups in a **Form** with two columns. Each group occupies a separate column, and the `Personal Data` group has two columns inside it:
+The example below shows two groups in a Form with two columns. Each group occupies a separate column, and the `Personal Data` group has two columns inside it:
 
 ---
 ##### jQuery

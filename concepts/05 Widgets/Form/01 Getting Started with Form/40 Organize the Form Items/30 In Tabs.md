@@ -1,8 +1,8 @@
 A tab can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/), other tabs, [groups](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/GroupItem/) or [empty items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). To create a tabbed item, assign "tabbed" to the [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#itemType) option.
 
-The **Form** uses the [TabPanel](/Documentation/ApiReference/UI_Widgets/dxTabPanel/) component to display tabs. You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object.
+The Form uses the [TabPanel](/Documentation/ApiReference/UI_Widgets/dxTabPanel/) component to display tabs. You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object.
 
-The following example shows a **Form** with two groups. A tabbed item is nested in the `Personal Data` group. We also configure the tab panel's [height](/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object:
+The following example shows a Form with two groups. A tabbed item is nested in the `Personal Data` group. We also configure the tab panel's [height](/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object:
 
 
 ---

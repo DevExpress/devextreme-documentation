@@ -1,4 +1,4 @@
-For the generated application to work in Internet Explorer 11, make the following adjustments:
+To make the generated application work in Internet Explorer 11, do the following:
 
 1. **Install and enable polyfills**     
 

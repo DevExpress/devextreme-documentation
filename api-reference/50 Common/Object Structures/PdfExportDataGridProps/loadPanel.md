@@ -1,10 +1,13 @@
 ---
 id: PdfExportDataGridProps.loadPanel
 type: ExportLoadPanel
+inheritsType: ExportLoadPanel
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
 <!-- Description goes here -->
+
+<!-- import * from 'api-reference\_hidden\ExcelExportBaseProps\loadPanel.md' -->

@@ -2,7 +2,7 @@
 id: dxList.Options.pageLoadMode
 acceptValues: 'nextButton' | 'scrollBottom'
 type: String
-default: 'scrollBottom', 'nextButton' (desktop)
+default: 'scrollBottom', 'scrollBottom' (Mac), 'nextButton' (desktop)
 ---
 ---
 ##### shortDescription

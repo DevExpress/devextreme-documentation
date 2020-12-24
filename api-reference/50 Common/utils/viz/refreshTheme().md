@@ -5,7 +5,7 @@ export: refreshTheme
 ---
 ---
 ##### shortDescription
-Refreshes the current theme and palette in all data visualization widgets on the page.
+Refreshes the current theme and palette in all data visualization UI components on the page.
 
 ---
 #####See Also#####

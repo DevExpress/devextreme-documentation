@@ -12,7 +12,7 @@ A function that is executed when a file system item is selected or selection is 
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.currentDeselectedItemKeys): Array<String>
 The keys of the file system items whose selection has been cleared.
@@ -21,7 +21,7 @@ The keys of the file system items whose selection has been cleared.
 The keys of the file system items that have been selected.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

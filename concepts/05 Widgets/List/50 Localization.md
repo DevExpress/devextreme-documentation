@@ -1,4 +1,4 @@
-Static messages for any DevExtreme widget are defined in a locale-specific dictionary as key-value pairs. To localize the **List** widget, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
+Static messages for any DevExtreme UI component are defined in a locale-specific dictionary as key-value pairs. To localize the **List** UI component, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
 
 ---
 ##### jQuery

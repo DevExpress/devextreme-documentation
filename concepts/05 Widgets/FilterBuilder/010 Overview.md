@@ -1,4 +1,4 @@
-The **FilterBuilder** widget allows a user to build complex filter expressions with an unlimited number of filter conditions using the UI. 
+The **FilterBuilder** UI component allows a user to build complex filter expressions with an unlimited number of filter conditions using the UI. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"

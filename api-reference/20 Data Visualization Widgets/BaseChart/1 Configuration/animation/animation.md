@@ -7,7 +7,7 @@ type: Object | Boolean
 Specifies animation options.
 
 ---
-The widget animates its elements at the beginning of its lifetime and when the data source changes.
+The UI component animates its elements at the beginning of its lifetime and when the data source changes.
 
 ---
 ##### jQuery

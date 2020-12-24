@@ -1,4 +1,4 @@
-By default, the widget aligns all editors of all simple items in straight columns. To disable alignment, assign **false** to:
+By default, the UI component aligns all editors of all simple items in straight columns. To disable alignment, assign **false** to:
 
 - [alignItemLabels](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/alignItemLabels.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#alignItemLabels') - for all _root_ simple items;
 - [alignItemLabelsInAllGroups](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/alignItemLabelsInAllGroups.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#alignItemLabelsInAllGroups') - for all simple items nested _in all groups_;

@@ -13,10 +13,10 @@ A function that is executed after a collection item is deleted from the data sou
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.itemData): Object
 The removed item's data.
@@ -31,4 +31,4 @@ The removed item's index.
 Model data. Available only if you use Knockout.
 
 ---
-Note that the **itemDeleted** event is raised only if an item is deleted using the appropriate method of the widget or end-user interaction. If you delete an item from an observable array passed to the **dataSource** or **items** option, the widget entirely reloads the items array without raising the **itemDeleted** and **itemDeleting** events.
+Note that the **itemDeleted** event is raised only if an item is deleted using the appropriate method of the UI component or end-user interaction. If you delete an item from an observable array passed to the **dataSource** or **items** option, the UI component entirely reloads the items array without raising the **itemDeleted** and **itemDeleting** events.

@@ -1,4 +1,4 @@
-In addition to the [axis ticks](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Ticks'), the **PolarChart** widget provides the capability to draw minor ticks.  Minor ticks divide an axis segment that lies between two neighboring axis ticks. 
+In addition to the [axis ticks](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Ticks'), the **PolarChart** UI component provides the capability to draw minor ticks.  Minor ticks divide an axis segment that lies between two neighboring axis ticks. 
 
 ![Minor Ticks](/images/ChartJS/Polar_Minor_Ticks.png)
 

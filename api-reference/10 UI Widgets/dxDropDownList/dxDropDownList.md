@@ -7,6 +7,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-A base class for drop-down list widgets.
+A base class for drop-down list UI components.
 
 ---

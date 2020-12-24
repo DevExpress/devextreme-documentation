@@ -159,7 +159,7 @@ In the following code, a marker is added each time a user clicks someplace on th
         });
     });
 
-With Angular, Vue, or React, use a different technique. Bind the **markers** option of the **Map** widget to a component property. 
+With Angular, Vue, or React, use a different technique. Bind the **markers** option of the **Map** UI component to a component property. 
 
 ---
 ##### Angular

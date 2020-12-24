@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not to display the widget in full-screen mode.
+Specifies whether or not to display the UI component in full-screen mode.
 
 ---

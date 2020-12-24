@@ -1,4 +1,4 @@
-A series point is a visual representation of a series' data point. Because the **PolarChart** widget supports numerous series types, which represent and organize data in different ways, the visual representation of a data point differs from one type to another.
+A series point is a visual representation of a series' data point. Because the **PolarChart** UI component supports numerous series types, which represent and organize data in different ways, the visual representation of a data point differs from one type to another.
 
 ![Series Points](/images/ChartJS/Polar_Series_Points.png)
 

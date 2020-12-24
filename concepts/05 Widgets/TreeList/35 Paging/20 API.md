@@ -31,7 +31,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/p
 
 ---
 
-The **TreeList** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#pageIndexnewIndex') and [pageSize(value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageSize(value).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#pageSizevalue') methods that switch the widget to a specific page and change the page size. They can also be called without arguments, in which case, they return the current page's index and size.
+The **TreeList** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#pageIndexnewIndex') and [pageSize(value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageSize(value).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#pageSizevalue') methods that switch the UI component to a specific page and change the page size. They can also be called without arguments, in which case, they return the current page's index and size.
 
 ---
 

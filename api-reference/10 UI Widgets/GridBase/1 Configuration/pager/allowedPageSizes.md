@@ -9,4 +9,4 @@ default: 'auto'
 Specifies the available page sizes in the page size selector.
 
 ---
-The widget determines the allowed page sizes depending on the amount of data by default.
+The UI component determines the allowed page sizes depending on the amount of data by default.

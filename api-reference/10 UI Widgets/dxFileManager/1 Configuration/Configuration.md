@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes options that configure the **FileManager** widget's contents, behavior, and appearance.
+This section describes options that configure the **FileManager** UI component's contents, behavior, and appearance.
 
 ---
 #####See Also#####

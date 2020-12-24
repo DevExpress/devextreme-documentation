@@ -1,4 +1,4 @@
-The **Scheduler** is a widget that represents scheduled data and allows a user to manage it. The following image is an element map. You can click the desired element to navigate to its dedicated article.
+The **Scheduler** is a UI component that represents scheduled data and allows a user to manage it. The following image is an element map. You can click the desired element to navigate to its dedicated article.
 
 <p style="display:inline-block"><img src="/images/UiWidgets/Scheduler_Overview.png" usemap="#image-map" alt="DevExtreme HTML5 JavaScript Scheduler"></p>
 
@@ -22,7 +22,7 @@ The **Scheduler** is a widget that represents scheduled data and allows a user t
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }
 
-The following code adds the **Scheduler** widget to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate') option.
+The following code adds the **Scheduler** UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate') option.
 
 ---
 

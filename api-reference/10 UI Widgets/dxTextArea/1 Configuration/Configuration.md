@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TextArea** widget.
+An object defining configuration options for the **TextArea** UI component.
 
 ---
 #####See Also#####

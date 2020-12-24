@@ -3,16 +3,16 @@ id: DOMComponent.getInstance(element)
 ---
 ---
 ##### shortDescription
-Gets the instance of a widget found using its DOM node.
+Gets the instance of a UI component found using its DOM node.
 
 ##### return: DOMComponent
-The widget's instance.
+The UI component's instance.
 
 ##### param(element): Element | jQuery
-The widget's container.
+The UI component's container.
 
 ---
-**getInstance** is a static method that the widget class supports. The following code demonstrates how to get the **{WidgetName}** instance found in an element with the `my{WidgetName}` ID:
+**getInstance** is a static method that the UI component class supports. The following code demonstrates how to get the **{WidgetName}** instance found in an element with the `my{WidgetName}` ID:
 
     // Modular approach
     import {WidgetName} from "devextreme/ui/{widget_name}";

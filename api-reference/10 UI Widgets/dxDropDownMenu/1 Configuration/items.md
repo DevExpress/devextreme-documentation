@@ -4,7 +4,7 @@ type: Array<Object>
 ---
 ---
 ##### shortDescription
-An array of items displayed by the widget.
+An array of items displayed by the UI component.
 
 ---
 <!-- Description goes here -->

@@ -9,7 +9,7 @@ default: 'onlyPoint'
 <p>Specifies the chart elements to highlight when the series is selected.</p>
 
 ---
-<p>The **PieChart** widget comes with an API that allows you to select a series or a particular point in code. Use the <b>selectionMode</b> property to specify which series elements to select when the series is selected.</p>
+<p>The **PieChart** UI component comes with an API that allows you to select a series or a particular point in code. Use the <b>selectionMode</b> property to specify which series elements to select when the series is selected.</p>
 
 <ul>
 <li><b>onlyPoint</b><br/>

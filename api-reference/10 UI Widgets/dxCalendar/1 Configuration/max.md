@@ -5,7 +5,7 @@ default: new Date(3000, 0)
 ---
 ---
 ##### shortDescription
-The latest date the widget allows to select.
+The latest date the UI component allows to select.
 
 ---
 #include common-demobutton with {

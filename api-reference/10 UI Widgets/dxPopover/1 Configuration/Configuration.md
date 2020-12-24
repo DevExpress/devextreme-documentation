@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Popover** widget.
+An object defining configuration options for the **Popover** UI component.
 
 ---
 #####See Also#####

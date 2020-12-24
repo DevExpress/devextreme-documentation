@@ -5,6 +5,6 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the key for storing the widget state.
+Specifies the key for storing the UI component state.
 
 ---

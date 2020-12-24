@@ -3,9 +3,9 @@
     docsLink: "https://angular.io/docs"
 }
 
-The DevExtreme Angular Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
+The DevExtreme Angular UI Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
 
-The DevExtreme Angular Component Suite provides the following platform-specific features:
+The DevExtreme Angular UI Component Suite provides the following platform-specific features:
 
 - [Application template for a quick start](/concepts/40%20Angular%20Components/10%20Getting%20Started/02%20Create%20a%20DevExtreme%20Application/00%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/')
 
@@ -21,7 +21,7 @@ The DevExtreme Angular Component Suite provides the following platform-specific 
 
 - [Visual Studio integration](/concepts/40%20Angular%20Components/70%20Visual%20Studio%20Integration '/Documentation/Guide/Angular_Components/Visual_Studio_Integration/')
 
-All DevExtreme component suites, including Angular, share architecture and core features. The following core features are common to all suites:
+All DevExtreme UI component suites, including Angular, share architecture and core features. The following core features are common to all suites:
 
 - [Data layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 
@@ -37,4 +37,4 @@ All DevExtreme component suites, including Angular, share architecture and core 
 
 We also provide [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
-For information on how to integrate DevExtreme Angular components into your application, refer to one of the [Getting Started articles](/concepts/40%20Angular%20Components/10%20Getting%20Started '/Documentation/Guide/Angular_Components/Getting_Started/').
+For information on how to integrate DevExtreme Angular UI components into your application, refer to one of the [Getting Started articles](/concepts/40%20Angular%20Components/10%20Getting%20Started '/Documentation/Guide/Angular_Components/Getting_Started/').

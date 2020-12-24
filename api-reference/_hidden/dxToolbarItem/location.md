@@ -9,7 +9,7 @@ default: 'center'
 Specifies a location for the item on the toolbar.
 
 ---
-Whatever template you use for widget items (default or a custom) will be located according to the value specified for the **location** field in the item data source object.
+Whatever template you use for UI component items (default or a custom) will be located according to the value specified for the **location** field in the item data source object.
 
 #include common-ref-enum with {
     enum: "`ToolbarItemLocation`",

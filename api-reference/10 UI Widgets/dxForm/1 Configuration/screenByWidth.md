@@ -8,7 +8,7 @@ default: null
 Specifies a function that categorizes screens by their width.
 
 ---
-The widget uses the following size qualifiers to categorize screens by width:
+The UI component uses the following size qualifiers to categorize screens by width:
 
 <table class="dx-table">
     <tr>

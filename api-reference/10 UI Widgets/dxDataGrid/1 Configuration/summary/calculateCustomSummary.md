@@ -10,7 +10,7 @@ Specifies a custom aggregate function. This function is called for summary items
 Summary information.
 
 ##### field(options.component): dxDataGrid
-The widget's instance.
+The UI component's instance.
 
 ##### field(options.groupIndex): Number
 A zero-based group level. Available only when calculating group summary items.

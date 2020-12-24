@@ -5,6 +5,6 @@ default: ''
 ---
 ---
 ##### shortDescription
-The text displayed by the widget when the widget value is empty.
+The text displayed by the UI component when the UI component value is empty.
 
 ---

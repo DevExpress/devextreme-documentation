@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not the widget is multiline.
+A Boolean value specifying whether or not the UI component is multiline.
 
 ---

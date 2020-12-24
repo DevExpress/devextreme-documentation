@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TileView** widget.
+An object defining configuration options for the **TileView** UI component.
 
 ---
 #####See Also#####

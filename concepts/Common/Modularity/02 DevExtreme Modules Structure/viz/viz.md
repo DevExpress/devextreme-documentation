@@ -1,1 +1,1 @@
-A folder containing modules that expose data visualization widgets.
+A folder containing modules that expose data visualization UI components.

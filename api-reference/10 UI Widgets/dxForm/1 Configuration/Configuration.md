@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Form** widget.
+An object defining configuration options for the **Form** UI component.
 
 ---
 #####See Also#####

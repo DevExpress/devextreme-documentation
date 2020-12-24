@@ -3,9 +3,9 @@
     docsLink: "https://vuejs.org/v2/guide/#Getting-Started"
 }
 
-The DevExtreme Vue Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Vue applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose widgets.
+The DevExtreme Vue UI Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Vue applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
 
-The DevExtreme Vue Component Suite provides the following platform-specific features:
+The DevExtreme Vue UI Component Suite provides the following platform-specific features:
 
 - [Application template for a quick start](/concepts/55%20Vue%20Components/02%20Create%20a%20DevExtreme%20Application/00%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Vue_Components/Create_a_DevExtreme_Application/')
 
@@ -13,7 +13,7 @@ The DevExtreme Vue Component Suite provides the following platform-specific feat
 
 - [TypeScript support](/concepts/55%20Vue%20Components/70%20TypeScript%20Support.md '/Documentation/Guide/Vue_Components/TypeScript_Support/')
 
-All DevExtreme component suites, including Vue, share architecture and core features. The following core features are common to all suites:
+All DevExtreme UI component suites, including Vue, share architecture and core features. The following core features are common to all suites:
 
 - [Data layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 
@@ -29,4 +29,4 @@ All DevExtreme component suites, including Vue, share architecture and core feat
 
 We also provide [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
-For information on how to integrate DevExtreme Vue components into your application, refer to the [Add DevExtreme to a Vue Application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') article.
+For information on how to integrate DevExtreme Vue UI components into your application, refer to the [Add DevExtreme to a Vue Application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') article.

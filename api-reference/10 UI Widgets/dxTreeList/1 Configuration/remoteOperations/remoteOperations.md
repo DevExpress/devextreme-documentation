@@ -9,9 +9,9 @@ default: 'auto'
 Notifies the **TreeList** of the server's data processing operations. Applies only if data has a [plain structure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#dataStructure').
 
 ---
-Server-side data processing improves the widget's performance on large datasets. When the server does not implement particular operations (and/or the corresponding **remoteOperations** fields are **false**) they are executed on the client. Note that the widget may send queries to the server while executing a client-side operation.
+Server-side data processing improves the UI component's performance on large datasets. When the server does not implement particular operations (and/or the corresponding **remoteOperations** fields are **false**) they are executed on the client. Note that the UI component may send queries to the server while executing a client-side operation.
 
-The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used widget functionality. 
+The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used UI component functionality. 
 
 <table class="dx-table">
  <tr>
@@ -38,7 +38,7 @@ The following table lists the possible **remoteOperations** configurations and t
 
 <div class="footnotes">
     <ul>
-        <li>If this functionality is used in the widget.</li>
+        <li>If this functionality is used in the UI component.</li>
     </ul>
 </div>
 

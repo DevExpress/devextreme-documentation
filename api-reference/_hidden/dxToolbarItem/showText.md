@@ -6,7 +6,7 @@ default: 'always'
 ---
 ---
 ##### shortDescription
-Specifies when to display the text for the widget item.
+Specifies when to display the text for the UI component item.
 
 ---
 The text should be specified in the [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#options') configuration object. 

@@ -6,7 +6,7 @@ inherits: DOMComponent
 ---
 ---
 ##### shortDescription
-The **ValidationGroup** is a widget that allows you to validate several editors simultaneously.
+The **ValidationGroup** is a UI component that allows you to validate several editors simultaneously.
 
 ##### lib
 dx.web.js, dx.viz-web.js, dx.all.js

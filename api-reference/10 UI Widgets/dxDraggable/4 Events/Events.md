@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events raised by the **Draggable** widget.
+This section describes events raised by the **Draggable** UI component.
 
 ---
 #####See Also#####

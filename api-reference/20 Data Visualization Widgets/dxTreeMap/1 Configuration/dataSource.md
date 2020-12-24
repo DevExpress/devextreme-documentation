@@ -5,7 +5,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Binds the widget to data.
+Binds the UI component to data.
 
 ---
 If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
@@ -77,7 +77,7 @@ Set the **dataSource** option to the URL of a JSON file or service that returns 
 Implement an [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').
 
 - **Web API, PHP, MongoDB**     
-Use one of the following extensions to enable the server to process data according to the protocol DevExtreme widgets use:
+Use one of the following extensions to enable the server to process data according to the protocol DevExtreme UI components use:
 
     - <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>
     - <a href="https://github.com/DevExpress/DevExtreme-PHP-Data/blob/master/README.md" target="_blank">DevExtreme-PHP-Data</a>

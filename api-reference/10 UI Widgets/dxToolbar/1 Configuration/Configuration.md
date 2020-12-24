@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Toolbar** widget.
+An object defining configuration options for the **Toolbar** UI component.
 
 ---
 #####See Also#####

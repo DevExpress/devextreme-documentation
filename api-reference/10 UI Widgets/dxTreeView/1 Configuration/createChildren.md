@@ -13,7 +13,7 @@ The node that has been expanded; **null** for the root node.
 A Promise that is resolved with the result from the server or an array of objects to be converted to child nodes.
 
 ---
-**createChildren** is called at the beginning of the widget's lifetime and each time a user expands a node whose child nodes have not been loaded yet. It allows you to load the entire tree in portions: load root nodes first (when the function's **parentNode** parameter is **null**) and the child nodes of each expanded node later.
+**createChildren** is called at the beginning of the UI component's lifetime and each time a user expands a node whose child nodes have not been loaded yet. It allows you to load the entire tree in portions: load root nodes first (when the function's **parentNode** parameter is **null**) and the child nodes of each expanded node later.
 
 This function has the following restrictions:
 

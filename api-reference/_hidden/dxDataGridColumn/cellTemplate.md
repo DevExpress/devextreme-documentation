@@ -20,7 +20,7 @@ The index of the cell's column.
 For more information on how this index is calculated, refer to the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(cellInfo.component): dxDataGrid
-The widget's instance.
+The UI component's instance.
 
 ##### field(cellInfo.data): Object
 The data of the row to which the cell belongs.

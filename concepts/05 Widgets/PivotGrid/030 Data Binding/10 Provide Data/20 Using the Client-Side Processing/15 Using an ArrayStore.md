@@ -1,4 +1,4 @@
-This type of store is great when you need a simple data source with the data lifetime equaling the lifetime of your application. An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') is created from an array of plain objects. The code snippet below illustrates the minimal configuration of an ArrayStore that can be used to provide data for the **PivotGrid** widget.
+This type of store is great when you need a simple data source with the data lifetime equaling the lifetime of your application. An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') is created from an array of plain objects. The code snippet below illustrates the minimal configuration of an ArrayStore that can be used to provide data for the **PivotGrid** UI component.
 
 	<!--JavaScript-->var pivotGridDataSource = {
 		store: {

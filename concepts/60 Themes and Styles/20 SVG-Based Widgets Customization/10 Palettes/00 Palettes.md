@@ -1,4 +1,4 @@
-A palette is a set of colors that mix well with each other. Palettes are used to colorize the following widget elements:
+A palette is a set of colors that mix well with each other. Palettes are used to colorize the following UI component elements:
 
 - **BarGauge**: [bars](/concepts/05%20Widgets/BarGauge/10%20Visual%20Elements/20%20Bars.md '/Documentation/Guide/Widgets/BarGauge/Visual_Elements/#Bars'), [bar labels](/concepts/05%20Widgets/BarGauge/10%20Visual%20Elements/30%20Labels.md '/Documentation/Guide/Widgets/BarGauge/Visual_Elements/#Labels')
 - **Chart**: [series](/concepts/05%20Widgets/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Series/Overview/'), [series points](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Series_Points/Overview/'), [series point labels](/concepts/05%20Widgets/Chart/15%20Point%20Labels/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Point_Labels/Overview/'), [legend items](/concepts/05%20Widgets/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Legend/Overview/')

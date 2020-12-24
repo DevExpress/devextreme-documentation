@@ -30,7 +30,7 @@ Moreover, several data fields may either alternate on the chart plot or not. To 
         alternateDataFields: true // false
     });
 
-Below, use the set of controls under the widgets to change the **putDataFieldsInto** and **alternateDataFields** fields. You can observe how the *"Total"* and *"Avg"* data fields depend on the values of these fields.
+Below, use the set of controls under the UI components to change the **putDataFieldsInto** and **alternateDataFields** fields. You can observe how the *"Total"* and *"Avg"* data fields depend on the values of these fields.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.html, /Content/Applications/20_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.js"></div>
 

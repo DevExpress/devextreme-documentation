@@ -1,8 +1,8 @@
-Exposes the **Draggable** widget.
+Exposes the **Draggable** UI component.
 
 Exports:
 
-- *default* - The [Draggable](/api-reference/10%20UI%20Widgets/dxDraggable '/Documentation/ApiReference/UI_Widgets/dxDraggable/') widget
+- *default* - The [Draggable](/api-reference/10%20UI%20Widgets/dxDraggable '/Documentation/ApiReference/UI_Widgets/dxDraggable/') UI component
 
         require("ui/draggable");
         // ===== or =====

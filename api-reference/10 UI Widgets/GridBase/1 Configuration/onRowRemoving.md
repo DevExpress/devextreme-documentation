@@ -16,13 +16,13 @@ Information about the event that caused the function's execution.
 **false** or a Promise resolved with **false** or **undefined** continues row removal.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The data of the row that should be removed.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The row's key.

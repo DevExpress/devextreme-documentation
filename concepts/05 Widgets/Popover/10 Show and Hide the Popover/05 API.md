@@ -1,4 +1,4 @@
-[note] In this article, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/') widget is used to demonstrate how to show and hide the **Popover**. This choice is made for purely demonstrational purposes, and you can do the same operations using another widget following the same guidelines.
+[note] In this article, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/') UI component is used to demonstrate how to show and hide the **Popover**. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
 To show or hide the **Popover** programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Widgets/dxPopover/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Widgets/dxPopover/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Widgets/dxPopover/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the **Popover**, respectively. This approach is more typical of jQuery and ASP.NET MVC Controls.
 
@@ -105,7 +105,7 @@ The **show()** method called without arguments shows the **Popover** for the [ta
 
 ---
 
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#visible') property of the **Popover** widget to a component property. After that, change them, and the **Popover** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#visible') property of the **Popover** UI component to a component property. After that, change them, and the **Popover** will appear or disappear.
 
 ---
 ##### Angular

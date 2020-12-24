@@ -6,6 +6,6 @@ firedEvents: selectionChanged
 ---
 ---
 ##### shortDescription
-The index of the currently selected widget item.
+The index of the currently selected UI component item.
 
 ---

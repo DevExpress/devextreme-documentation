@@ -21,7 +21,7 @@ This column's [configuration](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Co
 The index of the column to which the cell belongs.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The data of the row to which the cell belongs. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
@@ -31,7 +31,7 @@ The cell's displayed value. Available if the **rowType** is *"data"*.
 Differs from the **value** field only when the cell belongs to the [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/lookup/') column.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
 Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.

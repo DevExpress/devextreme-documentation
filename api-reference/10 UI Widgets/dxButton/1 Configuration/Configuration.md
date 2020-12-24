@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Button** widget.
+An object defining configuration options for the **Button** UI component.
 
 ---
 #####See Also#####

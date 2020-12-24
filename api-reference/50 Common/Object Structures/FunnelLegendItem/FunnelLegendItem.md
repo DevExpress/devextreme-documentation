@@ -5,7 +5,7 @@ inherits: BaseLegendItem
 ---
 ---
 ##### shortDescription
-An object that provides information about a legend item in the [Funnel](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/') widget.
+An object that provides information about a legend item in the [Funnel](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/') UI component.
 
 ---
 #####See Also#####

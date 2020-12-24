@@ -1,4 +1,4 @@
-By default, the widget performs all the operations locally. In the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function of the pivot grid data source, you can just define from what web service return data.
+By default, the UI component performs all the operations locally. In the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function of the pivot grid data source, you can just define from what web service return data.
 
     <!--JavaScript-->
     var pivotGridDataSource = {

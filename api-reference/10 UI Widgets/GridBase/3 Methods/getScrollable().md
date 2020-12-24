@@ -3,7 +3,7 @@ id: GridBase.getScrollable()
 ---
 ---
 ##### shortDescription
-Gets the instance of the widget's scrollable part.
+Gets the instance of the UI component's scrollable part.
 
 ##### return: dxScrollable
 The scrollable part's instance.

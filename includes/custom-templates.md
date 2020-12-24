@@ -6,12 +6,12 @@ Each template has access to the following parameters:
 A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
 
 - `index`       
-A zero-based index of the item in the collection. Available only in collection widget templates.
+A zero-based index of the item in the collection. Available only in collection UI component templates.
 
 - `element`     
-A jQuery element that represents the widget element being customized. Available only if you use jQuery.
+A jQuery element that represents the UI component element being customized. Available only if you use jQuery.
 
-The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Widgets/dxList/) widget:
+The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Widgets/dxList/) UI component:
 
 ---
 ##### jQuery
@@ -149,7 +149,7 @@ The following code shows how to declare a template and use these parameters. Thi
 
 ---
 
-Collection widgets also support templates for individual items. Do not specify the widget's **dataSource** option if you use individual templates.
+Collection UI components also support templates for individual items. Do not specify the UI component's **dataSource** option if you use individual templates.
 
 ---
 ##### jQuery

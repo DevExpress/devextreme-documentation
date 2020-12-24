@@ -1,4 +1,4 @@
-To set the value field name, assign it to the **valueField** option. Similarly to the [argumentField](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/30%20Set%20an%20Argument%20Field.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Set_an_Argument_Field/') option, **valueField** is set differently depending on the widget in use.
+To set the value field name, assign it to the **valueField** option. Similarly to the [argumentField](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/30%20Set%20an%20Argument%20Field.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Set_an_Argument_Field/') option, **valueField** is set differently depending on the UI component in use.
 
 * **Chart**		
 If you have only one series in your chart, specify the **valueField** option within the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') object.
@@ -81,7 +81,7 @@ If you have only one series in your chart, specify the **valueField** option wit
 		});
 
 * **PieChart**		
-To specify the value field for a series in the **PieChart** widget, set the [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#valueField') option within the **series** object.
+To specify the value field for a series in the **PieChart** UI component, set the [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#valueField') option within the **series** object.
 
 		<!--JavaScript-->$("#pieChartContainer").dxPieChart({
 			//...
@@ -92,11 +92,11 @@ To specify the value field for a series in the **PieChart** widget, set the [val
 		});
 
 * **Sparkline**		
-The [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#valueField') option for the **Sparkline** widget must be specified in the root configuration object.
+The [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#valueField') option for the **Sparkline** UI component must be specified in the root configuration object.
 
 		<!--JavaScript-->$("#sparklineContainer").dxSparkline({
 			//...
 			valueField: 'year'
 		});
 
-At this point, you have created a data source and configured data-binding settings of your widget. If your data source is supposed to be invariable, these actions are sufficient to support a correct operation of your widget. But you may have a scenario that requires a data source to be changed dynamically, and these changes must be reflected in your widget. Refer to the next topic to learn the approaches you can use for updating data in that case.
+At this point, you have created a data source and configured data-binding settings of your UI component. If your data source is supposed to be invariable, these actions are sufficient to support a correct operation of your UI component. But you may have a scenario that requires a data source to be changed dynamically, and these changes must be reflected in your UI component. Refer to the next topic to learn the approaches you can use for updating data in that case.

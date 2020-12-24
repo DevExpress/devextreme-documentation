@@ -19,7 +19,7 @@ There are two possible ways to parse binary data for **VectorMap**.
 				}]
 			});
 		});
-	In this code, the function's first argument specifies the URI of the source. Note that the file extension is omitted. In this case, both the *world.shp* and *world.dbf* files will be parsed. Add the *.shp* or *.dbf* extension if you need to parse a certain file. The second argument specifies the precision of the resulting shape coordinates. Within the callback function, which comes as the third argument, the resulting coordinates are assigned to the **layer**.**dataSource** option of the **VectorMap** widget.
+	In this code, the function's first argument specifies the URI of the source. Note that the file extension is omitted. In this case, both the *world.shp* and *world.dbf* files will be parsed. Add the *.shp* or *.dbf* extension if you need to parse a certain file. The second argument specifies the precision of the resulting shape coordinates. Within the callback function, which comes as the third argument, the resulting coordinates are assigned to the **layer**.**dataSource** option of the **VectorMap** UI component.
 
 - **Using Data from a *Buffer* Source**		
 	The following code sample demonstrates how to use the **parse()** method for parsing data from any source of the *<a href="http://nodejs.org/api/buffer.html" target="_blank">Buffer</a>* type.		

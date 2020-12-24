@@ -21,7 +21,7 @@ This column's [configuration](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Co
 The index of the column to which the cell belongs. For details on indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The data of the row to which the cell belongs. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.
@@ -30,7 +30,7 @@ The data of the row to which the cell belongs. Unavailable if **rowType** is *"h
 The cell's displayed value. Differs from the **value** field only when the column to which the prepared cell belongs uses [lookup](/api-reference/_hidden/dxDataGridColumn/lookup '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/lookup/').
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
 Indicates whether the row is expanded or collapsed. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.

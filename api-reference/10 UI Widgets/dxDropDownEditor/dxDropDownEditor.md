@@ -7,7 +7,7 @@ hidden:
 ---
 ---
 ##### shortDescription
-A drop-down editor widget.
+A drop-down editor UI component.
 
 ##### lib
 dx.web.js, dx.all.js

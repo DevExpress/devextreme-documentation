@@ -9,7 +9,7 @@ default: 'single'
 Specifies the sorting mode.
 
 ---
-The following selection modes are available in the widget:
+The following selection modes are available in the UI component:
 
 - **Single**        
 Rows can be sorted by values of a single column only.

@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not the widget supports the "pull down to refresh" gesture.
+A Boolean value specifying whether or not the UI component supports the "pull down to refresh" gesture.
 
 ---
 If the option is set to true, list data is refreshed each time you pull down and release list contents.

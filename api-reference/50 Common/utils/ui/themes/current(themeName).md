@@ -14,7 +14,7 @@ The theme name passed as a parameter should be the value of the **data-theme** a
     <!--HTML--><link rel="dx-theme" data-theme="generic.mytheme-dark" href="css/mytheme-dark.css" data-active="true">
     <link rel="dx-theme" data-theme="generic.mytheme-light" href="css/mytheme-light.css" data-active="false">
 
-... you can switch between them as shown in the code below. Note that you should specify a callback function that repaints all widgets after the theme has been loaded using the [ready(callback)](/api-reference/50%20Common/utils/ui/themes/ready(callback).md '/Documentation/ApiReference/Common/utils/ui/themes/#readycallback') method.
+... you can switch between them as shown in the code below. Note that you should specify a callback function that repaints all UI components after the theme has been loaded using the [ready(callback)](/api-reference/50%20Common/utils/ui/themes/ready(callback).md '/Documentation/ApiReference/Common/utils/ui/themes/#readycallback') method.
 
 ---
 ##### jQuery  

@@ -1,4 +1,4 @@
-The **Calendar** is a widget that displays a calendar and allows an end user to select the required date within a specified date range.
+The **Calendar** is a UI component that displays a calendar and allows an end user to select the required date within a specified date range.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"

@@ -1,8 +1,8 @@
-Exposes the **Lookup** widget.
+Exposes the **Lookup** UI component.
 
 Exports:
 
-- *default* - The [Lookup](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/') widget
+- *default* - The [Lookup](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/') UI component
 
         require("ui/lookup");
         // ===== or =====

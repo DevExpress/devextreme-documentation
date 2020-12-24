@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Slider** widget.
+An object defining configuration options for the **Slider** UI component.
 
 ---
 #####See Also#####

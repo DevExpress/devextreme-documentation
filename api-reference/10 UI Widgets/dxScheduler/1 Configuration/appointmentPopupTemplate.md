@@ -22,7 +22,7 @@ A binding context of an appointment popup template is the data source object tha
 
 So, in **Knockout approach**, you can bind template elements to the appointment object fields directly. To access another binding context within an appointment popup template, use <a href="http://knockoutjs.com/documentation/binding-context.html" target="_blank">Knockout</a> binding variables.
 
-In **AngularJS approach**, if you need to access appointment object's fields within a template, use a variable whose name is assigned to the `dx-item-alias` directive. Add the directive to the widget element to specify an alias to the root object. Without this directive, appointment object fields are beyond reach. To access another binding context within an appointment popup template, use <a href="https://docs.angularjs.org/guide/scope" target="_blank">AngularJS</a> binding variables.
+In **AngularJS approach**, if you need to access appointment object's fields within a template, use a variable whose name is assigned to the `dx-item-alias` directive. Add the directive to the UI component element to specify an alias to the root object. Without this directive, appointment object fields are beyond reach. To access another binding context within an appointment popup template, use <a href="https://docs.angularjs.org/guide/scope" target="_blank">AngularJS</a> binding variables.
 
 #####AngularJS#####
 

@@ -4,10 +4,10 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures the DevExtreme widget used as a toolbar item.
+Configures the DevExtreme UI component used as a toolbar item.
 
 ---
-**options** should contain the options of the DevExtreme widget specified in the [widget](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/toolbarItems/#widget') option. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
+**options** should contain the options of the DevExtreme UI component specified in the [widget](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/toolbarItems/#widget') option. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
 
 ---
 ##### Angular
@@ -103,13 +103,13 @@ Configures the DevExtreme widget used as a toolbar item.
 
 ---
 
-When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, configure the widget with a lambda expression as follows:
+When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, configure the UI component with a lambda expression as follows:
 
     <!--Razor C#-->
     @(Html.DevExtreme().{WidgetName}()
         .ToolbarItems(items => {
             items.Add().Widget(w => w
-                // Instead of Button here can be any other widget
+                // Instead of Button here can be any other UI component
                 .Button()
                 .Text("Back")
             );
@@ -120,7 +120,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
     @(Html.DevExtreme().{WidgetName}() _
         .ToolbarItems(Sub(items)
             items.Add().Widget(Function(w)
-                ' Instead of Button here can be any other widget
+                ' Instead of Button here can be any other UI component
                 Return w.Button().Text("Back")
             End Function)
         End Sub)

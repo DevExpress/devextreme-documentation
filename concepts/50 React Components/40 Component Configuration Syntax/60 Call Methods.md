@@ -1,4 +1,4 @@
-To call widget methods, you need the widget instance. Create a <a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">ref</a> and attach it to the target component via the `ref` attribute. Implement a getter that returns the instance taken from the ref. In the following code, this approach is used to get a `TextBox` instance:
+To call UI component methods, you need the UI component instance. Create a <a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">ref</a> and attach it to the target component via the `ref` attribute. Implement a getter that returns the instance taken from the ref. In the following code, this approach is used to get a `TextBox` instance:
     
     <!-- tab: App.js -->
     import Button from 'devextreme-react/button';
@@ -29,7 +29,7 @@ To call widget methods, you need the widget instance. Create a <a href="https://
         }
     }
 
-Alternatively, you can save the widget instance in a component property once the widget is initialized. This approach is not compatible with <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>.
+Alternatively, you can assign the UI component instance to a variable and use it to call the methods. This approach is not compatible with <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>.
 
     <!-- tab: App.js -->
     import Button from 'devextreme-react/button';

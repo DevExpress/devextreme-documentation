@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-The **SlideOut** widget is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
+The **SlideOut** UI component is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
 
 ##### lib
 dx.all.js

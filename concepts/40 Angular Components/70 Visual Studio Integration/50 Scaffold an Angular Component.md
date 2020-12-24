@@ -1,4 +1,4 @@
-Scaffolding in Visual Studio allows you to generate a component that contains a DevExtreme widget and a data service for the widget. You can scaffold the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light), [TreeList](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/Angular/Light), and [Form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/Angular/Light) widgets.
+Scaffolding in Visual Studio allows you to generate a component that contains a DevExtreme UI component and a data service for the UI component. You can scaffold the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light), [TreeList](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/Angular/Light), and [Form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/Angular/Light).
 
 Scaffolding has the following requirements:
 
@@ -14,11 +14,11 @@ Follow the instructions below to scaffold a component:
 
     ![DevExtreme Angular Component Scaffolding - Add New Scaffolded Item on the context menu](/images/AngularComponentScaffolding/ng-scaffolding-add-new-item.png)
 
-2. In the **Add Scaffold** window, choose **Angular Component with a DevExtreme UI Widget** and click **Add**.
+2. In the **Add Scaffold** window, choose **Angular Component with a DevExtreme UI component** and click **Add**.
 
     ![DevExtreme Angular Component Scaffolding - The Add Scaffold window](/images/AngularComponentScaffolding/ng-scaffolding-add-scaffold.png)
 
-3. In the wizard, enter the component's name, choose the DevExtreme widget to scaffold, and configure data binding and related settings. Click **Add** to finish the scaffolding.
+3. In the wizard, enter the component's name, choose the DevExtreme UI component to scaffold, and configure data binding and related settings. Click **Add** to finish the scaffolding.
 
     ![DevExtreme Angular Component Scaffolding - The Add Angular Component window](/images/AngularComponentScaffolding/ng-scaffolding-add-component.png)
 

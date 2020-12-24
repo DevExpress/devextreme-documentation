@@ -1,4 +1,4 @@
-To call widget methods, you need the widget instance. Define the target component's key in the [`ref`](https://vuejs.org/v2/api/#ref) attribute. Then, pass the key to the [`$refs`](https://vuejs.org/v2/api/#vm-refs) property to get the component. The widget instance is stored in the component's  `instance` field:
+To call UI component methods, you need the UI component instance. Define its key in the [`ref`](https://vuejs.org/v2/api/#ref) attribute. Then, pass the key to the [`$refs`](https://vuejs.org/v2/api/#vm-refs) property to get the component. The UI component instance is stored in the component's  `instance` field:
 
     <!-- tab: App.vue -->
     <template>
@@ -37,7 +37,7 @@ To call widget methods, you need the widget instance. Define the target componen
     };
     </script>
 
-Alternatively, you can save the widget instance in a component property once the widget is initialized:
+Alternatively, you can assign the UI component instance to a variable and use it to call the methods:
 
     <!-- tab: App.vue -->
     <template>

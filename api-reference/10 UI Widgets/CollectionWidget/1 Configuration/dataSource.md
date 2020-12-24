@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Binds the widget to data.
+Binds the UI component to data.
 
 ---
 #include common-dataSource-description with {

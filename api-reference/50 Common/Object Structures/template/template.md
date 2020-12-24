@@ -4,7 +4,7 @@ type: String | function() | Element | jQuery
 ---
 ---
 ##### shortDescription
-A template notation used to specify templates for widget elements.
+A template notation used to specify templates for UI component elements.
 
 ---
 #include custom-templates

@@ -6,7 +6,7 @@ inherits: dxTabs
 ---
 ---
 ##### shortDescription
-The **NavBar** is a widget that navigates the application views.
+The **NavBar** is a UI component that navigates the application views.
 
 ##### widgettree
 dataSource: [{

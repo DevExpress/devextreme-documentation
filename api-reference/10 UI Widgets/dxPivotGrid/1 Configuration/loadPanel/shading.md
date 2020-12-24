@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether to shade the widget when the load panel appears.
+Specifies whether to shade the UI component when the load panel appears.
 
 ---
 <!-- Description goes here -->

@@ -4,6 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies text displayed for the widget item title.
+Specifies text displayed for the UI component item title.
 
 ---

@@ -5,13 +5,13 @@ export: getMarkup
 ---
 ---
 ##### shortDescription
-Gets the SVG markup of specific widgets for their subsequent export.
+Gets the SVG markup of specific UI components for their subsequent export.
 
 ##### return: String
 The widgets' SVG markup. Pass it to the [exportFromMarkup(markup, options)](/api-reference/50%20Common/utils/viz/exportFromMarkup(markup_options).md '/Documentation/ApiReference/Common/utils/viz/#exportFromMarkupmarkup_options') method to export the widgets.
 
 ##### param(widgetInstances): Array<DOMComponent>
-The widget instances.
+The UI component instances.
 
 ---
 

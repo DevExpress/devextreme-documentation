@@ -5,6 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-The minimum value the widget can accept.
+The minimum value the UI component can accept.
 
 ---

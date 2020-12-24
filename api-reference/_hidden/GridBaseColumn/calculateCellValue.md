@@ -365,7 +365,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
     value: "column's configuration"
 }
 
-[note] This function is called multiple times for every record: when the record is rendered, when sorting or filtering is applied, and when summaries are computed. It is recommend that you keep calculations inside this function as simple as possible to avoid hindering widget performance.
+[note] This function is called multiple times for every record: when the record is rendered, when sorting or filtering is applied, and when summaries are computed. It is recommend that you keep calculations inside this function as simple as possible to avoid hindering UI component performance.
 
 #####See Also#####
 - **columns[]**.[customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText')

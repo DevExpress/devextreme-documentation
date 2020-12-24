@@ -1,10 +1,10 @@
-The **MultiView** is a widget that contains several views. An end user navigates through the views by swiping them in the horizontal direction. The widget is often used along with the [Tabs](/api-reference/10%20UI%20Widgets/dxTabs '/Documentation/ApiReference/UI_Widgets/dxTabs/') widget.
+The **MultiView** is a UI component that contains several views. An end user navigates through the views by swiping them in the horizontal direction. The UI component is often used along with the [Tabs](/api-reference/10%20UI%20Widgets/dxTabs '/Documentation/ApiReference/UI_Widgets/dxTabs/') UI component.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
 }
 
-In the most simple case, the **MultiView** widget requires only the [dataSource](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#dataSource') option to be configured. Note that in such a case, data source items should have a structure described in the **dataSource** section. The following code adds the **MultiView** to your page.
+In the most simple case, the **MultiView** UI component requires only the [dataSource](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#dataSource') option to be configured. Note that in such a case, data source items should have a structure described in the **dataSource** section. The following code adds the **MultiView** to your page.
 
 ---
 
@@ -119,4 +119,4 @@ More often, structure of the data source item differs from the default. For corr
 - [MultiView - Loop the Views](/concepts/05%20Widgets/MultiView/15%20Loop%20the%20Views.md '/Documentation/Guide/Widgets/MultiView/Loop_the_Views')
 - [MultiView API Reference](/api-reference/10%20UI%20Widgets/dxMultiView '/Documentation/ApiReference/UI_Widgets/dxMultiView/')
 
-[tags]dxmultiview, multi view, multiView, collection container, collection widget, navigation, overview
+[tags]dxmultiview, multi view, multiView, collection container, collection UI component, navigation, overview

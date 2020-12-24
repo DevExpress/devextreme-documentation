@@ -1,4 +1,4 @@
-Depending on the value the **TextBox** should hold, specify the widget [mode](/api-reference/10%20UI%20Widgets/dxTextBox/1%20Configuration/mode.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#mode') option. When set to *"email"*, *"tel"* or *"url"*, this option affects the set of keyboard buttons shown on a mobile device when the widget gets focused. When set to *"search"* or *"password"*, the **mode** option impacts the visual representation of the widget. For example, the following code hides input characters behind asterisks.
+Depending on the value the **TextBox** should hold, specify the UI component [mode](/api-reference/10%20UI%20Widgets/dxTextBox/1%20Configuration/mode.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#mode') option. When set to *"email"*, *"tel"* or *"url"*, this option affects the set of keyboard buttons shown on a mobile device when the UI component gets focused. When set to *"search"* or *"password"*, the **mode** option impacts the visual representation of the UI component. For example, the following code hides input characters behind asterisks.
 
 ---
 ##### jQuery

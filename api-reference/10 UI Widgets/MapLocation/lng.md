@@ -5,6 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-The longitude location of the widget.
+The longitude location of the UI component.
 
 ---

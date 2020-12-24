@@ -7,7 +7,7 @@ inheritAll:
 ---
 ---
 ##### shortDescription
-An object defining the configuration options that are common for all series of the **PolarChart** widget.
+An object defining the configuration options that are common for all series of the **PolarChart** UI component.
 
 ---
 Use this object's properties to set options for all chart series at once. These can be options common to all series types and options specific to series types.

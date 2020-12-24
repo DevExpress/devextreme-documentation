@@ -1,4 +1,4 @@
-DevExtreme data visualization widgets raise the following exporting-related events:
+DevExtreme data visualization UI components raise the following exporting-related events:
 
 - [exporting](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/4%20Events/exporting.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Events/#exporting')  
 Allows you to request export details or prevent exporting.
@@ -9,7 +9,7 @@ Allows you to notify an end user when exporting is completed.
 - [fileSaving](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/4%20Events/fileSaving.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Events/#fileSaving')        
 Allows you to access exported data in the <a href="https://en.wikipedia.org/wiki/Binary_large_object" target="_blank">BLOB</a> format and/or prevent it from being saved on the user's device.
 
-You can handle these events with functions. If the handling functions are not going to be changed at runtime, assign them to the [onExporting](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExporting.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#onExporting'), [onExported](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExported.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#onExported') and [onFileSaving](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onFileSaving.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#onFileSaving') options when you configure the widget.
+You can handle these events with functions. If the handling functions are not going to be changed at runtime, assign them to the [onExporting](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExporting.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#onExporting'), [onExported](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExported.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#onExported') and [onFileSaving](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onFileSaving.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#onFileSaving') options when you configure the UI component.
 
 ---
 ##### jQuery

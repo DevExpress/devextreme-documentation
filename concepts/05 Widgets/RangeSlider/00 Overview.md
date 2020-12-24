@@ -1,4 +1,4 @@
-The **RangeSlider** is a widget that allows an end user to choose a range of numeric values. Basically, the **RangeSlider** is the [Slider](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/Widgets/Slider/Overview/') widget with a second handle added.
+The **RangeSlider** is a UI component that allows an end user to choose a range of numeric values. Basically, the **RangeSlider** is the [Slider](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/Widgets/Slider/Overview/') UI component with a second handle added.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/"

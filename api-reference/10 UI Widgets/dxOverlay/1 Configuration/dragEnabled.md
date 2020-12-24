@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end-user can drag the widget.
+Specifies whether or not an end-user can drag the UI component.
 
 ---

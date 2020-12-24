@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **DateBox** widget.
+An object defining configuration options for the **DateBox** UI component.
 
 ---
 #####See Also#####

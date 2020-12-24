@@ -3,7 +3,7 @@ id: dxTextEditor.focus()
 ---
 ---
 ##### shortDescription
-Sets focus to the input element representing the widget.
+Sets focus to the input element representing the UI component.
 
 ---
 #####See Also#####

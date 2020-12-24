@@ -11,7 +11,7 @@ Specifies whether a user can delete rows. It is called for each data row when de
 Information about the current row.
 
 ##### field(options.component): dxDataGrid
-The widget's instance.
+The UI component's instance.
 
 ##### field(options.row): dxDataGridRowObject
 The row's properties.

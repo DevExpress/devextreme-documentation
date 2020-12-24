@@ -6,16 +6,16 @@ EventForAction: Component.initialized
 ---
 ---
 ##### shortDescription
-A function used in JavaScript frameworks to save the widget instance.
+A function used in JavaScript frameworks to save the UI component instance.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
 #####See Also#####

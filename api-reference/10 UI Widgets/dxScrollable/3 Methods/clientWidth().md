@@ -3,10 +3,10 @@ id: dxScrollable.clientWidth()
 ---
 ---
 ##### shortDescription
-Gets the widget's width.
+Gets the UI component's width.
 
 ##### return: Number
-The widget's width in pixels.
+The UI component's width in pixels.
 
 ---
 #####See Also#####

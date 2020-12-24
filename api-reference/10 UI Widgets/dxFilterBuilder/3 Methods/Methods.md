@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes methods that control the **FilterBuilder** widget.
+This section describes methods that control the **FilterBuilder** UI component.
 
 ---
 #####See Also#####

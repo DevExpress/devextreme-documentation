@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that defines configuration options for the **CircularGauge** widget.
+An object that defines configuration options for the **CircularGauge** UI component.
 
 ---
 #####See Also#####

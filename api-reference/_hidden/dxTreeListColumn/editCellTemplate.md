@@ -20,7 +20,7 @@ The index of the column the cell belongs to.
 Refer to the [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_and_Row_Indexes/') topic for more information on how this index is calculated.
 
 ##### field(cellInfo.component): dxTreeList
-The widget's instance.
+The UI component's instance.
 
 ##### field(cellInfo.data): Object
 The data of the cell's row.

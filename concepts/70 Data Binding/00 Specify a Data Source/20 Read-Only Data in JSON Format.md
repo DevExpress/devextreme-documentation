@@ -1,6 +1,6 @@
-[note] This article describes how to bind a DevExtreme widget to JSON data in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401021/devextreme-based-controls/concepts/bind-controls-to-data/read-only-data-in-json-format" target="_blank">docs.devexpress.com</a>.
+[note] This article describes how to bind a DevExtreme UI component to JSON data in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401021/devextreme-based-controls/concepts/bind-controls-to-data/read-only-data-in-json-format" target="_blank">docs.devexpress.com</a>.
 
-To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') option.
+To bind a UI component to JSON data, pass the data URL to the UI component's [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') option.
 
 ---
 ##### jQuery
@@ -103,7 +103,7 @@ To bind a widget to JSON data, pass the data URL to the widget's [dataSource](/a
 
 ---
 
-This configuration enables the widget to request data objects. To specify the key field, customize the request, or process response data, use a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). Implement its [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function and enable the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') (except in the **DataGrid**, **TreeList**, **PivotGrid**, and **Scheduler** widgets, in which this mode is already enabled).
+This configuration enables the UI component to request data objects. To specify the key field, customize the request, or process response data, use a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). Implement its [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function and enable the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') (except in the **DataGrid**, **TreeList**, **PivotGrid**, and **Scheduler** widgets, in which this mode is already enabled).
 
 The following code shows a **CustomStore** configuration in which the **load** function sends custom parameters with the request:
 

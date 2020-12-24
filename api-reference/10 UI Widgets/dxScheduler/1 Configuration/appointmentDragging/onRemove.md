@@ -16,10 +16,10 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.fromComponent): dxSortable | dxDraggable
-The instance of the appointment's source widget.
+The instance of the appointment's source UI component.
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/appointmentDragging/#data') associated with the source widget.
+Custom [data](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/appointmentDragging/#data') associated with the source UI component.
 
 ##### field(e.itemData): any
 The data object of the appointment being dragged.
@@ -28,7 +28,7 @@ The data object of the appointment being dragged.
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.toComponent): dxSortable | dxDraggable
-The instance of the appointment's target widget.
+The instance of the appointment's target UI component.
 
 ---
 <!-- Description goes here -->

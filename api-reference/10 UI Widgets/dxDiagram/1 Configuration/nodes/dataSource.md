@@ -8,4 +8,4 @@ default: null
 Binds the **nodes** collection to the specified data. For more information, see the [Data Binding](/concepts/05%20Widgets/Diagram/10%20Data%20Binding '/Documentation/Guide/Widgets/Diagram/Data_Binding/') section.
 
 ---
-The Diagram widget creates a shape for every node in the collection.
+The Diagram UI component creates a shape for every node in the collection.

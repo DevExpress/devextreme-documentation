@@ -1,4 +1,4 @@
-The **FileUploader** widget enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files on the page's **FileUploader** area.
+The **FileUploader** UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files on the page's **FileUploader** area.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/"
@@ -79,7 +79,7 @@ If you need to access the selected files at runtime, get the value of the [value
 
     <!--JavaScript-->var files = $("#fileUploaderContainer").dxFileUploader("option", "value");
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the **value** property of the **FileUploader** widget to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, you can access the file array within any method. 
+With Angular, AngularJS, or Knockout, use a different technique. Bind the **value** property of the **FileUploader** UI component to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, you can access the file array within any method. 
 
 ---
 

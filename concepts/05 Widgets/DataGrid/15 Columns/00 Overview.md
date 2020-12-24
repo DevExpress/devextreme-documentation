@@ -202,7 +202,7 @@ The **DataGrid** generates a column per data field if you do not specify the **c
     
 ---
 
-This topic has outlined the ways to configure columns in the **DataGrid** widget. For a detailed overview of column features, refer to other topics in this section.
+This topic has outlined the ways to configure columns in the **DataGrid** UI component. For a detailed overview of column features, refer to other topics in this section.
 
 #####See Also#####
 - **Column Types**: [Data Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Data_Columns/') | [Band Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Band_Columns/') | [Lookup Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/3%20Lookup%20Columns.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Lookup_Columns/') | [Command Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/')

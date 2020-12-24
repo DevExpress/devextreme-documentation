@@ -1,10 +1,10 @@
-The **ContextMenu** widget displays a single- or multi-level context menu. An end user invokes this menu by a right click or a long press.
+The **ContextMenu** UI component displays a single- or multi-level context menu. An end user invokes this menu by a right click or a long press.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ContextMenu/Basics/"
 }
 
-The following code adds the **ContextMenu** widget to your page and binds it to an image using the [target](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#target') option. Note that the data source of the widget declares several nesting levels. Items in the resulting context menu mirror this structure.
+The following code adds the **ContextMenu** UI component to your page and binds it to an image using the [target](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#target') option. Note that the data source of the UI component declares several nesting levels. Items in the resulting context menu mirror this structure.
 
 ---
 
@@ -196,4 +196,4 @@ The following code adds the **ContextMenu** widget to your page and binds it to 
 - [ContextMenu - Open and Close](/concepts/05%20Widgets/ContextMenu/10%20Open%20and%20Close%20the%20Context%20Menu '/Documentation/Guide/Widgets/ContextMenu/Open_and_Close_the_Context_Menu/')
 - [ContextMenu API Reference](/api-reference/10%20UI%20Widgets/dxContextMenu '/Documentation/ApiReference/UI_Widgets/dxContextMenu/')
 
-[tags]dxcontextmenu, context menu, contextMenu, navigation, collection container, collection widget, overview
+[tags]dxcontextmenu, context menu, contextMenu, navigation, collection container, collection UI component, overview

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that defines the **Gantt** widget's configuration options.
+An object that defines the **Gantt** UI component's configuration options.
 
 ---
 #####See Also#####

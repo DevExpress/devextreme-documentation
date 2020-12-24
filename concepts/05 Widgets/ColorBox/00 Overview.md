@@ -1,4 +1,4 @@
-The **ColorBox** is a widget that allows an end user to enter a color or pick it out from the drop-down editor.
+The **ColorBox** is a UI component that allows an end user to enter a color or pick it out from the drop-down editor.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview/"

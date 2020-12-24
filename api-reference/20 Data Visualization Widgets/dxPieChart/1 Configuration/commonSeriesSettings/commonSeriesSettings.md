@@ -7,7 +7,7 @@ inheritAll:
 ---
 ---
 ##### shortDescription
-An object defining the configuration options that are common for all series of the **PieChart** widget.
+An object defining the configuration options that are common for all series of the **PieChart** UI component.
 
 ---
 Use this object's properties to set options for all chart series at once.

@@ -1,4 +1,4 @@
-<a href="http://www.odata.org" target="_blank">OData</a> is a universal open protocol for consuming data APIs. The DevExtreme data library provides a special type of store to access OData web services, called ODataStore. The following code is sufficient for providing data for a widget using an ODataStore.
+<a href="http://www.odata.org" target="_blank">OData</a> is a universal open protocol for consuming data APIs. The DevExtreme data library provides a special type of store to access OData web services, called ODataStore. The following code is sufficient for providing data for a UI component using an ODataStore.
 
 	<!--JavaScript-->var dataSource = new DevExpress.data.DataSource({
 		store: {

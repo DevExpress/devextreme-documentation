@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Map** widget.
+An object defining configuration options for the **Map** UI component.
 
 ---
 #####See Also#####

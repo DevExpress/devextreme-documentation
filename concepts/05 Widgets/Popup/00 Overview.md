@@ -1,4 +1,4 @@
-The **Popup** widget is a pop-up window overlaying the current view. 
+The **Popup** UI component is a pop-up window overlaying the current view. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/"

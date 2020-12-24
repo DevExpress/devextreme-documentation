@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **CheckBox** widget.
+An object defining configuration options for the **CheckBox** UI component.
 
 ---
 #####See Also#####

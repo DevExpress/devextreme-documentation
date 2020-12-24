@@ -12,10 +12,10 @@ A function that is executed when a series point is selected or selection is canc
 Information about the event.
 
 ##### field(e.component): Object
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): Object
-The widget's container.
+The UI component's container.
 
 ##### field(e.target): basePointObject
 The series point whose selection state has been changed; described in the [Point](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.

@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the maximum width the widget can reach while resizing.
+Specifies the maximum width the UI component can reach while resizing.
 
 ##### return: Number | String
 The maximum width.

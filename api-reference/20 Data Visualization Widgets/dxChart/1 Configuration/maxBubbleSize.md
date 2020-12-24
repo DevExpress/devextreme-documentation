@@ -15,4 +15,4 @@ When defining a bubble series, you are required to specify a [size field](/api-r
 
 *d = maxBubbleSize \* min(height, width)*
 
-Normally, the *height* and *width* from this formula equal the size of the widget container. However, when several [panes](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/panes '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/') are used in the widget, the *height* and *width* equal the pane size.
+Normally, the *height* and *width* from this formula equal the size of the UI component container. However, when several [panes](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/panes '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/') are used in the UI component, the *height* and *width* equal the pane size.

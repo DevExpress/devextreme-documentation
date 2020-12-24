@@ -1,4 +1,4 @@
-To be able to change a widget option, declare its value an <a href="http://knockoutjs.com/documentation/observables.html" target="_blank">observable</a>.
+To be able to change a UI component option, declare its value an <a href="http://knockoutjs.com/documentation/observables.html" target="_blank">observable</a>.
 
     <!--JavaScript-->var viewModel = {
         checkBoxOptions: {
@@ -13,7 +13,7 @@ To be able to change a widget option, declare its value an <a href="http://knock
 
 	ko.applyBindings(viewModel);
 
-Now, if you change an observable in code, the widget will receive the changes and update the UI. And vice versa, if a user changes something in the UI, the observable gets updated.
+Now, if you change an observable in code, the UI component will receive the changes and update the UI. And vice versa, if a user changes something in the UI, the observable gets updated.
 
 [note]Options containing array and specified on the second (or further) level of the configuration object cannot be made observable.
 

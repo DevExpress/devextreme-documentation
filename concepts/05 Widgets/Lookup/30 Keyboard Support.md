@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the widget.
+An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
     <tr>

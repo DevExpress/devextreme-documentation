@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the methods that control the **Sankey** widget.
+This section describes the methods that control the **Sankey** UI component.
 
 ---
 #####See Also#####

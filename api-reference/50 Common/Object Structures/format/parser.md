@@ -13,7 +13,7 @@ The string value to be parsed.
 The value after parsing.
 
 ---
-A widget calls this function internally, for example, when a user enters a value. The following code gives an example of the **formatter** and **parser** functions which turns dates into strings, and parses strings back into dates, respectively.
+A UI component calls this function internally, for example, when a user enters a value. The following code gives an example of the **formatter** and **parser** functions which turns dates into strings, and parses strings back into dates, respectively.
 
     <!--JavaScript-->
     formatter: function (date) {

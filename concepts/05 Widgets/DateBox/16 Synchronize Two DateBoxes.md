@@ -1,4 +1,4 @@
-**DateBox** widgets are often coupled for selecting a date interval. In this case, you need to synchronize the **DateBoxes** to prevent a user from selecting an interval whose start date is later than the end date. For this, limit one **DateBox**'s range depending on the other's value as shown in the example below.
+**DateBox** UI components are often coupled for selecting a date interval. In this case, you need to synchronize the **DateBoxes** to prevent a user from selecting an interval whose start date is later than the end date. For this, limit one **DateBox**'s range depending on the other's value as shown in the example below.
 
 ---
 ##### jQuery

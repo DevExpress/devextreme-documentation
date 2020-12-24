@@ -1,4 +1,4 @@
-The **Sankey** widget has an adaptive layout that enables the widget to hide optional elements if they do not fit in the container. To configure the adaptive layout, use the [adaptiveLayout](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/adaptiveLayout '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/adaptiveLayout/') object. Set its **height** and **width** fields to specify the minimum container size at which the layout retains all its elements.
+The **Sankey** UI component has an adaptive layout that enables the UI component to hide optional elements if they do not fit in the container. To configure the adaptive layout, use the [adaptiveLayout](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/adaptiveLayout '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/adaptiveLayout/') object. Set its **height** and **width** fields to specify the minimum container size at which the layout retains all its elements.
 
 ---
 ##### jQuery
@@ -82,7 +82,7 @@ The **Sankey** widget has an adaptive layout that enables the widget to hide opt
 
 [note]
 
-The layout does not automatically adapt if the widget's container is resized at runtime. If you enable a user to resize the container, call the [render()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/render().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Methods/#render') method each time it is resized to rerender the **Sankey**.
+The layout does not automatically adapt if the UI component's container is resized at runtime. If you enable a user to resize the container, call the [render()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/render().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Methods/#render') method each time it is resized to rerender the **Sankey**.
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-The following code creates the **FileManager** widget and adds it to your page.
+The following code creates the **FileManager** UI component and adds it to your page.
 
 ---
 

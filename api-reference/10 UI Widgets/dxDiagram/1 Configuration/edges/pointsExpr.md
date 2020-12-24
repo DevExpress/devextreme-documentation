@@ -40,6 +40,6 @@ The current edge's data object.
 
 - Predefined edge points are ignored if the [autoLayout.type](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/autoLayout/type.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/autoLayout/#type') option is set to **layered** or **tree**.
 
-- If an edge is connected to nodes, the widget calculates coordinates of connection points and the first and last points specified in a data source are ignored.
+- If an edge is connected to nodes, the UI component calculates coordinates of connection points and the first and last points specified in a data source are ignored.
 
 [/note]

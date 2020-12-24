@@ -11,7 +11,7 @@ Specifies whether a user can add new rows. It is called for each data row when d
 Information about the current row.
 
 ##### field(options.component): dxTreeList
-The widget's instance.
+The UI component's instance.
 
 ##### field(options.row): dxTreeListRowObject
 The row's properties.

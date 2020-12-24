@@ -1,4 +1,4 @@
-When a user types a text into the **TextArea**, the widget writes this text into the **value** option when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need this to happen on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Configuration/#valueChangeEvent') option.
+When a user types a text into the **TextArea**, the UI component writes this text into the **value** option when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need this to happen on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Configuration/#valueChangeEvent') option.
 
 ---
 ##### jQuery 
@@ -69,7 +69,7 @@ When a user types a text into the **TextArea**, the widget writes this text into
 
 ---
 
-To process a new **TextArea** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Configuration/#onValueChanged') option when you configure the widget.
+To process a new **TextArea** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTextArea/Configuration/#onValueChanged') option when you configure the UI component.
 
 ---
 ##### jQuery

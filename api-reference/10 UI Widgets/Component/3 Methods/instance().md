@@ -3,10 +3,10 @@ id: Component.instance()
 ---
 ---
 ##### shortDescription
-Gets the widget's instance. Use it to access other methods of the widget.
+Gets the UI component's instance. Use it to access other methods of the UI component.
 
 ##### return: {WidgetName}
-This widget's instance.
+This UI component's instance.
 
 ---
 #####See Also#####

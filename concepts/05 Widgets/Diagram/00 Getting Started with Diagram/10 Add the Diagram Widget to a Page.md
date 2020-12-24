@@ -28,7 +28,7 @@ Use the the `dx-diagram.css` and `dx-diagram.js` files to add an unminified vers
 
 [note]
 
-The Diagram widget is a jQuery DevExtreme widget. Common DevExtreme resources (listed below) should be included in your page after the Diagram resources.
+The Diagram UI component is a jQuery DevExtreme UI component. Common DevExtreme resources (listed below) should be included in your page after the Diagram resources.
 
         <!--HTML-->
         @* Diagram styles*@
@@ -64,7 +64,7 @@ You should also add the [canvg](https://github.com/canvg/canvg) library to your 
 [/note]
 
 
-Initialize the **Diagram** widget in a DOM element.
+Initialize the **Diagram** UI component in a DOM element.
 
         <!--JavaScript-->
         $(function() {

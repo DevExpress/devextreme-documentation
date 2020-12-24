@@ -15,7 +15,7 @@ Configures toolbar settings.
 
 ![DevExtreme File Manager - Toolbar](/images/FileManager/toolbar.png)
 
-The **FileManager** widget allows you to add default and custom toolbar items.
+The **FileManager** UI component allows you to add default and custom toolbar items.
 
 **Predefined Items**
 
@@ -78,7 +78,7 @@ To add a custom toolbar item, specify its [text](/api-reference/_hidden/Collecti
 
 - [fileSelectionItems](/api-reference/_hidden/dxFileManagerToolbar/fileSelectionItems '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/') - Displays toolbar items when one or more file system items are selected.
 
-The [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#widget') option allows you to specify a widget for a custom toolbar item ([dxButton](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') is the default widget). Use the [toolbarItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/toolbarItemClick.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick') event to handle clicks on custom toolbar items.
+The [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#widget') option allows you to specify a UI component for a custom toolbar item ([dxButton](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') is the default UI component). Use the [toolbarItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/toolbarItemClick.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick') event to handle clicks on custom toolbar items.
 
 ---
 
@@ -89,7 +89,7 @@ The [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiR
         $("#file-manager").dxFileManager({
             toolbar: {
                 items: [
-                    // Specify a custom item as a dxMenu widget
+                    // Specify a custom item as a dxMenu UI component
                     {
                         widget: "dxMenu",
                         location: "before",
@@ -116,7 +116,7 @@ The [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiR
                         }
                 }]
                 fileSelectionItems: [
-                    // Specify a custom item as a default dxButton widget
+                    // Specify a custom item as a default dxButton UI component
                     {
                         options:{
                             text: "Move to Temp",

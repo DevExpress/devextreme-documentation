@@ -41,7 +41,7 @@ A flag that indicates whether the theme is a [color swatch](/concepts/60%20Theme
 The target DevExtreme version.
 
 * `widgets`       
-A list of widgets whose styles are included in the resulting CSS file.
+A list of UI components whose styles are included in the resulting CSS file.
 
 - `assetsBasePath`            
 A path to the folder that contains the DevExtreme `icons` and `fonts` folders. This property is used only if the icons and fonts are not in the same folder as your custom theme.

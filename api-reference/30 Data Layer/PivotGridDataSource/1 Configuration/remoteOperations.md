@@ -8,7 +8,7 @@ default: false
 Specifies whether the data processing operations (filtering, grouping, summary calculation) should be performed on the server.
 
 ---
-If you enable this option, the **PivotGrid** sends several requests to load data. At first launch, the widget sends a request to get the data structure. It contains the following [loadOptions](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/'):
+If you enable this option, the **PivotGrid** sends several requests to load data. At first launch, the UI component sends a request to get the data structure. It contains the following [loadOptions](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/'):
 
     <!--JavaScript-->
     {

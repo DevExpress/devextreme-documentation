@@ -5,7 +5,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised when a widget associated with an element is being removed from the DOM.
+Raised when a UI component associated with an element is being removed from the DOM.
 
 ##### param(event): event
 #include common-ref-eventparam

@@ -3,7 +3,7 @@ id: GridBase.updateDimensions()
 ---
 ---
 ##### shortDescription
-Updates the widget's content after resizing.
+Updates the UI component's content after resizing.
 
 ---
 #####See Also#####

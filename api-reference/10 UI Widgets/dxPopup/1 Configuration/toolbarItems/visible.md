@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not a widget item must be displayed.
+Specifies whether or not a UI component item must be displayed.
 
 ---

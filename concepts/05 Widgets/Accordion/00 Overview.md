@@ -1,4 +1,4 @@
-The **Accordion** widget contains several panels displayed one under another. These panels can be collapsed or expanded by an end user, which makes this widget very useful for presenting information in a limited amount of space.
+The **Accordion** UI component contains several panels displayed one under another. These panels can be collapsed or expanded by an end user, which makes this UI component very useful for presenting information in a limited amount of space.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview/"
@@ -200,4 +200,4 @@ The following code adds a simple **Accordion** to your page. Note that each data
 - [Accordion - Control the Behavior](/concepts/05%20Widgets/Accordion/10%20Control%20the%20Behavior.md '/Documentation/Guide/Widgets/Accordion/Control_the_Behavior')
 - [Accordion API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/dxAccordion/')
 
-[tags] dxaccordion, accordion, collection container, collection widget, overview
+[tags] dxaccordion, accordion, collection container, collection UI component, overview

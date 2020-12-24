@@ -6,7 +6,7 @@ default: 'onScroll', 'onHover' (desktop)
 ---
 ---
 ##### shortDescription
-Specifies when the widget shows the scrollbar.
+Specifies when the UI component shows the scrollbar.
 
 ---
 Setting this option makes sense only when the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '{basewidgetpath}/Configuration/#useNativeScrolling') option is set to **false**.

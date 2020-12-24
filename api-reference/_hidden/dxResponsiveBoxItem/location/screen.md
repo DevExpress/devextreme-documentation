@@ -8,7 +8,7 @@ default: undefined
 Decides on which screens the current **location** settings should be applied to the element.
 
 ---
-Before applying the current **location** settings, the widget considers the screen's width and applies the **location** settings only if the width matches the specified size qualifier. There are four size qualifiers in all.
+Before applying the current **location** settings, the UI component considers the screen's width and applies the **location** settings only if the width matches the specified size qualifier. There are four size qualifiers in all.
 
 <table class="dx-table">
     <tr>

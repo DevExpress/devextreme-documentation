@@ -14,7 +14,7 @@ This field accepts the following values.
 - *"detail"*  
     A row shown in the detail section when a user edits the row in the *"form"* editing [mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#mode').  
 - *"detailAdaptive"*  
-    A row shown in the detail section of the adaptive column. This column appears when the widget adapts to the screen or container size.  
+    A row shown in the detail section of the adaptive column. This column appears when the UI component adapts to the screen or container size.  
 - *"header"*  
     The row containing column headers.
 - *"filter"*  

@@ -38,7 +38,7 @@ The following code illustrates the first use-case. Here, each time a product is 
         });
     });
 
-In the second use-case, you have some component that gets updated each time a user selects a command on the slide-out menu. In the following example, this component is the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/') widget. Note that it is the **List**, not **SlideOut** that is bound to the data source. Note also that the data source is not just a simple array, but a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object provides an interface for processing data, in this example, for mapping and filtering the underlying array.
+In the second use-case, you have some component that gets updated each time a user selects a command on the slide-out menu. In the following example, this component is the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/') UI component. Note that it is the **List**, not **SlideOut** that is bound to the data source. Note also that the data source is not just a simple array, but a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object provides an interface for processing data, in this example, for mapping and filtering the underlying array.
 
     <!--JavaScript-->var products = new DevExpress.data.DataSource({
         store: {
@@ -88,7 +88,7 @@ In the second use-case, you have some component that gets updated each time a us
         $("#slideOutContainer").dxSlideOut({
             dataSource: ["All", "Televisions", "Monitors"],
             contentTemplate: function (viewContent) {
-                // Creates the "List" widget
+                // Creates the "List" UI component
                 $("<div />").dxList(innerListConfiguration)
                             .appendTo(viewContent);
             },

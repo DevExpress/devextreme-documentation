@@ -1,6 +1,6 @@
-Widgets from the DevExtreme library are divided into HTML-based and SVG-based. Styling methods depend on the widget's group.
+Widgets from the DevExtreme library are divided into HTML-based and SVG-based. Styling methods depend on the UI component's group.
 
-The following widgets are SVG-based:
+The following UI components are SVG-based:
 
 - [BarGauge](/concepts/05%20Widgets/BarGauge/10%20Visual%20Elements '/Documentation/Guide/Widgets/BarGauge/Visual_Elements/')
 - [Bullet](/concepts/05%20Widgets/Bullet/10%20Visual%20Elements '/Documentation/Guide/Widgets/Bullet/Visual_Elements/')

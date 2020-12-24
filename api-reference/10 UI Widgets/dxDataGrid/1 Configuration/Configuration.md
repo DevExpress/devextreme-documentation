@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the configuration options of the **DataGrid** widget.
+This section describes the configuration options of the **DataGrid** UI component.
 
 ---
 #####See Also#####

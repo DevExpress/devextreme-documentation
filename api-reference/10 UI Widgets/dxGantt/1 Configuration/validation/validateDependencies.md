@@ -29,7 +29,7 @@ The **Gantt** allows you to validate relationships between tasks when they are e
             <b>Finish to Finish (FF):</b><br/>
             <img src="/images/Gantt/ff-move-task1.png" alt="DevExtreme Gantt - Dependency validation - Finish To Finish" /><br/>
         </td>
-        <td>The widget moves a successor task (Task 2) forward or backward to the same time interval.</td>
+        <td>The UI component moves a successor task (Task 2) forward or backward to the same time interval.</td>
     </tr>
     <tr>
         <td>Move a successor task (Task 2) to the left.</td>

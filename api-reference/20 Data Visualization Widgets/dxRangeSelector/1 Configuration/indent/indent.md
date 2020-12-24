@@ -7,7 +7,7 @@ type: Object
 Range selector's indent options.
 
 ---
-The indent is used to precisely align scales of several widgets arranged vertically. This is the distance between the container edge and the range selector's scale (see the image below).
+The indent is used to precisely align scales of several UI components arranged vertically. This is the distance between the container edge and the range selector's scale (see the image below).
 
 ![RangeSelectorMargin ChartJS](/images/ChartJS/RangeSelectorIndent.png)
 

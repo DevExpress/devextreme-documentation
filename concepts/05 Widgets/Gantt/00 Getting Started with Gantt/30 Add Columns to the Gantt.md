@@ -1,6 +1,6 @@
-Use the [columns](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/columns.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#columns/') option to specify columns that the **Gantt** widget should display in the task list. The widget gets columns from the [tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/') data source.
+Use the [columns](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/columns.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#columns/') option to specify columns that the **Gantt** UI component should display in the task list. The UI component gets columns from the [tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/tasks/') data source.
 
-[note] The **Gantt** widget does not support data sorting.
+[note] The **Gantt** UI component does not support data sorting.
 
     <!-- tab: index.js -->
     $(function() {

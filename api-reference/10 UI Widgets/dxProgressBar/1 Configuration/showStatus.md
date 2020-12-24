@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not the widget displays a progress status.
+Specifies whether or not the UI component displays a progress status.
 
 ---

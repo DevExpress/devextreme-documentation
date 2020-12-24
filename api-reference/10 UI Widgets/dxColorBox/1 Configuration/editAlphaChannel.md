@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not the widget value includes the alpha channel component.
+Specifies whether or not the UI component value includes the alpha channel component.
 
 ---

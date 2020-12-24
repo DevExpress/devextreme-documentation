@@ -1,10 +1,10 @@
-The **Menu** widget is a panel with clickable items. A click on an item opens a drop-down menu, which can contain several submenus.
+The **Menu** UI component is a panel with clickable items. A click on an item opens a drop-down menu, which can contain several submenus.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/"
 }
 
-The following code adds the **Menu** widget to your page. Note that the data source of the widget declares several nesting levels. First-level items produce items for the widget panel, or "root items". Other items go to drop-down menus.
+The following code adds the **Menu** UI component to your page. Note that the data source of the UI component declares several nesting levels. First-level items produce items for the UI component panel, or "root items". Other items go to drop-down menus.
 
 ---
 
@@ -213,4 +213,4 @@ The following code adds the **Menu** widget to your page. Note that the data sou
 - [Menu - Change the Orientation](/concepts/05%20Widgets/Menu/10%20Change%20the%20Orientation.md '/Documentation/Guide/Widgets/Menu/Change_the_Orientation')
 - [Menu API Reference](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Widgets/dxMenu/')
 
-[tags]dxmenu, menu, navigation, collection container, collection widget, overview
+[tags]dxmenu, menu, navigation, collection container, collection UI component, overview

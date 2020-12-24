@@ -1,4 +1,4 @@
-The **TreeList** widget supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode') option to change the current mode.
+The **TreeList** UI component supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode') option to change the current mode.
 
 ---
 ##### jQuery

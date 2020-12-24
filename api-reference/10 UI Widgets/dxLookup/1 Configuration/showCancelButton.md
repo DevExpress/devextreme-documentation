@@ -8,4 +8,4 @@ default: true, false (Material)
 Specifies whether to display the **Cancel** button in the lookup window.
 
 ---
-The **Cancel** button cancels the attempt to change the lookup widget value.
+The **Cancel** button cancels the attempt to change the lookup UI component value.

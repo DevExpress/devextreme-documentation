@@ -4,6 +4,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-Switches the widget to a right-to-left representation.
+Switches the UI component to a right-to-left representation.
 
 ---

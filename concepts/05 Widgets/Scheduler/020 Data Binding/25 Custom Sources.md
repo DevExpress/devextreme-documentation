@@ -12,7 +12,7 @@ After receiving this setting, the server should apply it to data and send back a
         data: [ ... ] // result data objects
     }
 
-If the **Scheduler** allows a user to add, delete or update appointments, the **CustomStore** must implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert'), [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') and [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update') operations as well. Here is a generalized configuration of the **CustomStore** for the **Scheduler** widget.
+If the **Scheduler** allows a user to add, delete or update appointments, the **CustomStore** must implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert'), [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') and [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update') operations as well. Here is a generalized configuration of the **CustomStore** for the **Scheduler** UI component.
 
 ---
 

@@ -1,4 +1,4 @@
-Topics in this section describe various elements of the **BarGauge** widget. Each topic gives a detailed overview of the element's purpose and ways of configuring. Below is the element map of the **BarGauge** widget. **Hover** over the map and you will discover how different gauge elements are called. **Click an element** to navigate to the topic with details on this element.
+Topics in this section describe various elements of the **BarGauge** UI component. Each topic gives a detailed overview of the element's purpose and ways of configuring. Below is the element map of the **BarGauge** UI component. **Hover** over the map and you will discover how different gauge elements are called. **Click an element** to navigate to the topic with details on this element.
 
 <div style="text-align:center">
 

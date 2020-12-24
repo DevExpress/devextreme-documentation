@@ -3,7 +3,7 @@ id: GridBase.filter(filterExpr)
 ---
 ---
 ##### shortDescription
-Applies a filter to the widget's [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
+Applies a filter to the UI component's [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
 
 ##### param(filterExpr): any
 A [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering').

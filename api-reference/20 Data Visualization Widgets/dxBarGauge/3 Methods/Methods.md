@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the methods that can be used in code to manipulate objects related to the **BarGauge** widget.
+This section describes the methods that can be used in code to manipulate objects related to the **BarGauge** UI component.
 
 ---
 #####See Also#####

@@ -95,7 +95,7 @@ To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20C
 
 ---
 
-Note that the widget can automatically change the **center** and **zoom** options to display all [markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers '/Documentation/Guide/Widgets/Map/Configure_Markers/') and [routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes '/Documentation/Guide/Widgets/Map/Configure_Routes/') and align them with the widget's center. To disable this behavior, assign **false** to the [autoAdjust](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/autoAdjust.md '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/#autoAdjust') option.
+Note that the UI component can automatically change the **center** and **zoom** options to display all [markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers '/Documentation/Guide/Widgets/Map/Configure_Markers/') and [routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes '/Documentation/Guide/Widgets/Map/Configure_Routes/') and align them with the UI component's center. To disable this behavior, assign **false** to the [autoAdjust](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/autoAdjust.md '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/#autoAdjust') option.
 
 ---
 ##### jQuery

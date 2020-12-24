@@ -1,1 +1,1 @@
-[note] If your use-case involves widget rerendering, a label's visibility state may be reset. To keep the state, call this method with **true** as an argument.
+[note] If your use-case involves UI component rerendering, a label's visibility state may be reset. To keep the state, call this method with **true** as an argument.

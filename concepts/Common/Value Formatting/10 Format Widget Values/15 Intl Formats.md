@@ -1,6 +1,6 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" target="_blank">Intl</a> is the short name used to refer to a particular <a href="http://ecma-international.org/ecma-402/1.0/" target="_blank">ECMAScript Internationalization API</a> object. DevExtreme supports this API and its value formatting capabilities out of the box.
 
-A widget's **format** option is compatible with the `options` parameter of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat#Parameters" target="_blank">Intl.NumberFormat</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat#Parameters" target="_blank">Intl.DateTimeFormat</a>. To apply an Intl format, specify the `options` parameter's fields in the **format** option:
+A UI component's **format** option is compatible with the `options` parameter of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat#Parameters" target="_blank">Intl.NumberFormat</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat#Parameters" target="_blank">Intl.DateTimeFormat</a>. To apply an Intl format, specify the `options` parameter's fields in the **format** option:
 
 ---
 ##### jQuery

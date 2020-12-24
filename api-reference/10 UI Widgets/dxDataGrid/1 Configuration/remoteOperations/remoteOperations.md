@@ -9,9 +9,9 @@ default: 'auto'
 Notifies the **DataGrid** of the server's data processing operations.
 
 ---
-Server-side data processing improves the widget's performance on large datasets. When the server does not implement particular operations (and/or the corresponding **remoteOperations** fields are **false**) they are executed on the client. Note that the widget may send queries to the server while executing a client-side operation.
+Server-side data processing improves the UI component's performance on large datasets. When the server does not implement particular operations (and/or the corresponding **remoteOperations** fields are **false**) they are executed on the client. Note that the UI component may send queries to the server while executing a client-side operation.
 
-The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used widget functionality.
+The following table lists the possible **remoteOperations** configurations and the operations the server should implement. The server should also implement additional operations depending on the used UI component functionality.
 
 <table class="dx-table">
  <tr>
@@ -35,7 +35,7 @@ The following table lists the possible **remoteOperations** configurations and t
     <td>filtering<sup>1</sup>, sorting<sup>1</sup>, summary calculation<sup>1</sup></td>
  </tr>
  <tr>
-    <td><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the widget)</td>
+    <td><code>remoteOperations: { paging: true }</code><br/>(with grouping used in the UI component)</td>
     <td>paging, filtering, sorting</td>
     <td>grouping<sup>3</sup>, summary calculation<sup>1</sup></td>
  </tr>
@@ -63,7 +63,7 @@ The following table lists the possible **remoteOperations** configurations and t
 
 <div class="footnotes">
     <ol>
-        <li>If this functionality is used in the widget.</li>
+        <li>If this functionality is used in the UI component.</li>
         <li>If <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/">group summary calculation</a> is used.</li>
         <li>If <b>grouping</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#autoExpandAll">autoExpandAll</a> is set to <b>false</b>.</li>
     </ol>
@@ -71,7 +71,7 @@ The following table lists the possible **remoteOperations** configurations and t
 
 [note] Paging, filtering, and sorting are performed on the server side for the [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
 
-The following restrictions apply to widget functionality when operations are remote:
+The following restrictions apply to UI component functionality when operations are remote:
 
 - Columns with the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateDisplayValue') option set cannot be sorted, filtered, or used for grouping.
 

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **SelectBox** widget.
+An object defining configuration options for the **SelectBox** UI component.
 
 ---
 #####See Also#####

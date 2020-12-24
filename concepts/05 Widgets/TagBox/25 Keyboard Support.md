@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the widget.
+An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
     <tr>
@@ -15,7 +15,7 @@ An end user can use the following keys to interact with the widget.
     </tr>
     <tr>
         <td>Esc</td>
-        <td>Closes the drop-down list and removes focus from the widget.</td>
+        <td>Closes the drop-down list and removes focus from the UI component.</td>
     </tr>
     <tr>
         <td>&uarr; / &darr;</td>

@@ -5,6 +5,6 @@ default: 'Select'
 ---
 ---
 ##### shortDescription
-The text displayed by the widget when nothing is selected.
+The text displayed by the UI component when nothing is selected.
 
 ---

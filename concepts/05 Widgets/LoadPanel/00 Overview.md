@@ -1,4 +1,4 @@
-The **LoadPanel** is an overlay widget notifying the viewer that loading is in progress.
+The **LoadPanel** is an overlay UI component notifying the viewer that loading is in progress.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/"

@@ -1,4 +1,4 @@
-To process a new form item value, you need to handle the [fieldDataChanged](/api-reference/10%20UI%20Widgets/dxForm/4%20Events/fieldDataChanged.md '/Documentation/ApiReference/UI_Widgets/dxForm/Events/#fieldDataChanged') event. If the handling function is not going to be changed during the lifetime of the widget, assign it to the [onFieldDataChanged](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/onFieldDataChanged.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#onFieldDataChanged') option when you configure the widget.
+To process a new form item value, you need to handle the [fieldDataChanged](/api-reference/10%20UI%20Widgets/dxForm/4%20Events/fieldDataChanged.md '/Documentation/ApiReference/UI_Widgets/dxForm/Events/#fieldDataChanged') event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onFieldDataChanged](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/onFieldDataChanged.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#onFieldDataChanged') option when you configure the UI component.
 
 ---
 ##### jQuery

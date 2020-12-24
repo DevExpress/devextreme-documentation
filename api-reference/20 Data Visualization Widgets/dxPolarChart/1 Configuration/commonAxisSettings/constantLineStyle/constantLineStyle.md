@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the appearance of all the widget's constant lines.
+Specifies the appearance of all the UI component's constant lines.
 
 ---
 Use this object to set the appearance options for the constant lines of both the argument and value axes. For example, you can change the color, dash style and width of the line using corresponding options or define the look of the labels using the **label** object.

@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The latest date the widget allows you to select.
+The latest date the UI component allows you to select.
 
 ---

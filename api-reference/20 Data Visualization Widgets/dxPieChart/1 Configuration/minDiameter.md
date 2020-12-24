@@ -8,7 +8,7 @@ default: 0.5
 Specifies the minimum diameter of the pie.
 
 ---
-This option specifies the minimum ratio between the pie's diameter and the widget's width or height (depending on which of them is less). For example, assume that the widget's size is 300x500 pixels and the **minDiameter** option is 0.7. Then, the diameter of the pie will never be less than: 
+This option specifies the minimum ratio between the pie's diameter and the UI component's width or height (depending on which of them is less). For example, assume that the UI component's size is 300x500 pixels and the **minDiameter** option is 0.7. Then, the diameter of the pie will never be less than: 
 
 *0.7 * min(300,500) = 0.7 * 300 = 210 pixels*
 

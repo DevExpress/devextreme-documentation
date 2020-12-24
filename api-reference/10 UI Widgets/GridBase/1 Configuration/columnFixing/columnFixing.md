@@ -7,7 +7,7 @@ type: Object
 Configures column fixing.
 
 ---
-When the width of all columns exceeds the widget width, horizontal scrolling appears. If specific columns should be on screen constantly regardless of how far the widget is scrolled, allow a user to fix them at runtime using the context menu. For this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing/enabled.md '{basewidgetpath}/Configuration/columnFixing/#enabled') option to **true**.
+When the width of all columns exceeds the UI component width, horizontal scrolling appears. If specific columns should be on screen constantly regardless of how far the UI component is scrolled, allow a user to fix them at runtime using the context menu. For this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing/enabled.md '{basewidgetpath}/Configuration/columnFixing/#enabled') option to **true**.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout {WidgetName} Column Fixing](/images/{WidgetName}/visual_elements/column_fixing.png)
 

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Gallery** widget.
+An object defining configuration options for the **Gallery** UI component.
 
 ---
 #####See Also#####

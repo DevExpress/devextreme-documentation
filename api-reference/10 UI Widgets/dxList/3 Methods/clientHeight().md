@@ -3,10 +3,10 @@ id: dxList.clientHeight()
 ---
 ---
 ##### shortDescription
-Gets the widget's height in pixels.
+Gets the UI component's height in pixels.
 
 ##### return: Number
-The widget's height in pixels.
+The UI component's height in pixels.
 
 ---
 #####See Also#####

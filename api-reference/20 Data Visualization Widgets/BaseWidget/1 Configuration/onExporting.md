@@ -6,7 +6,7 @@ EventForAction: BaseWidget.exporting
 ---
 ---
 ##### shortDescription
-A function that is executed before the widget is exported.
+A function that is executed before the UI component is exported.
 
 ##### param(e): Object
 Information about the event.
@@ -15,13 +15,13 @@ Information about the event.
 Allows you to prevent exporting.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
-The name of the file to which the widget is about to be exported.
+The name of the file to which the UI component is about to be exported.
 
 ##### field(e.format): String
 The resulting file format. One of PNG, PDF, JPEG, SVG and GIF.

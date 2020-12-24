@@ -1,4 +1,4 @@
-The easiest way to implement a custom palette is to assign an array of colors to the **palette** option (see [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette')). However, this approach is only useful for a single widget or several widgets of the same type.
+The easiest way to implement a custom palette is to assign an array of colors to the **palette** option (see [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette')). However, this approach is only useful for a single UI component or several UI components of the same type.
 
 In other cases, we recommend implementing a custom palette as an object of the following structure:
 

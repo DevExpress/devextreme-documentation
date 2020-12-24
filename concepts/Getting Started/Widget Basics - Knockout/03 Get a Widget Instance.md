@@ -1,4 +1,4 @@
-To get a widget instance, save it in a view model property once the widget is initialized:
+To get a UI component instance, save it in a view model property once the UI component is initialized:
 
     <!--JavaScript-->var viewModel = {
         menuInstance: {},

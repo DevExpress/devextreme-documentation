@@ -1,4 +1,4 @@
-The **TileView** widget contains a collection of tiles. Tiles can store much more information than ordinary buttons, that is why they are very popular in apps designed for touch devices.
+The **TileView** UI component contains a collection of tiles. Tiles can store much more information than ordinary buttons, that is why they are very popular in apps designed for touch devices.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Basics/"
@@ -106,7 +106,7 @@ The following code adds a primitive **TileView** to your page.
 
 Note that field names in these data source items are [conventional](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/items/'). This provides a default tile appearance, which can be customized later. 
 
-By default, the widget is oriented horizontally, but you can orient it vertically using the [direction](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction') option. 
+By default, the UI component is oriented horizontally, but you can orient it vertically using the [direction](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction') option. 
 
 ---
 ##### jQuery
@@ -188,4 +188,4 @@ By default, the widget is oriented horizontally, but you can orient it verticall
 - [TileView - Customize Tile Appearance](/concepts/05%20Widgets/TileView/05%20Customize%20Tile%20Appearance.md '/Documentation/Guide/Widgets/TileView/Customize_Tile_Appearance')
 - [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Widgets/dxTileView/')
 
-[tags]dxtileview, tile view, tileView, collection container, collection widget, navigation, overview
+[tags]dxtileview, tile view, tileView, collection container, collection UI component, navigation, overview

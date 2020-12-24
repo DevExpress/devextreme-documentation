@@ -1,4 +1,4 @@
-The **TextBox** is a widget that enables a user to enter and edit a single line of text.
+The **TextBox** is a UI component that enables a user to enter and edit a single line of text.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"

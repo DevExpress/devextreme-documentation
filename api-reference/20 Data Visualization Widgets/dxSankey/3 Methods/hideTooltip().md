@@ -3,7 +3,7 @@ id: dxSankey.hideTooltip()
 ---
 ---
 ##### shortDescription
-Hides all widget tooltips.
+Hides all UI component tooltips.
 
 ---
 #####See Also#####

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that defines configuration options for the **LinearGauge** widget.
+An object that defines configuration options for the **LinearGauge** UI component.
 
 ---
 #####See Also#####

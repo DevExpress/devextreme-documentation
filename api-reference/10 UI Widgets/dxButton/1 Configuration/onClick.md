@@ -11,10 +11,10 @@ A function that is executed when the **Button** is clicked or tapped.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
@@ -31,8 +31,8 @@ To validate the editors that are related to the [validation group](/api-referenc
 - **group**  
     The name or object of the validation group that is assigned to the button's **validationGroup** option.
 - **validators**  
-    An array of **Validator** widgets that are included to the validation group.
+    An array of **Validator** UI components that are included to the validation group.
 - **validate()**   
-    The method that allows you to validate the widgets included in the validation group.
+    The method that allows you to validate the UI components included in the validation group.
 - **validated**  
     The event that occurs after the group is validated. You can attach/detach a handler using the **on(eventName, eventHandler)**/**off(eventName)** methods of the group.

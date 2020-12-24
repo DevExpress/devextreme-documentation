@@ -15,7 +15,7 @@ Allows you to cancel the editor's creation.
 You can set this field's value to **true** and implement a custom editor.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.dataField): String
 The name of the field that provides data for the column's editor.
@@ -27,14 +27,14 @@ Indicates whether the editor is disabled.
 #include common-ref-elementparam with { element: "editor" }
 
 ##### field(e.editorName): String
-Allows you to change the editor. Accepts names of DevExtreme widgets only, for example, *"dxTextBox"*.      
+Allows you to change the editor. Accepts names of DevExtreme UI components only, for example, *"dxTextBox"*.      
 Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType') option specified in the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object has precedence over this parameter.
 
 ##### field(e.editorOptions): Object
 Gets and sets the editor's configuration. [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') specified in the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object have precedence over this parameter.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

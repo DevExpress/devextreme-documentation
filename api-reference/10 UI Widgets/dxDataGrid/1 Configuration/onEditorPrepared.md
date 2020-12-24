@@ -11,7 +11,7 @@ A function that is executed after an editor is created. Not executed for cells w
 Information about the event that caused the function's execution.
 
 ##### field(options.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(options.dataField): String
 The name of the field that provides data for the column the editor belongs to.
@@ -23,7 +23,7 @@ Indicates whether the editor is disabled.
 #include common-ref-elementparam with { element: "editor" }
 
 ##### field(options.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(options.model): Object
 Model data. Only available when using Knockout.

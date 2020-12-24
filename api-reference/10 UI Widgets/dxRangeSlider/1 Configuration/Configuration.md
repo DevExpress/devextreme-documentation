@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **RangeSlider** widget.
+An object defining configuration options for the **RangeSlider** UI component.
 
 ---
 #####See Also#####

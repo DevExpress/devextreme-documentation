@@ -18,10 +18,10 @@ Specifies whether the edit operation is allowed.
 An object that contains information about the processed shape or connector. The parameter's value type depends on the operation.
 
 ##### field(e.component): {WidgetName}
-The widget instance's name.
+The UI component instance's name.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
@@ -29,8 +29,13 @@ Model data. Available only if you use Knockout.
 ##### field(e.operation): 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints' | 'beforeChangeShapeText' | 'changeShapeText' | 'beforeChangeConnectorText' | 'changeConnectorText' | 'resizeShape' | 'moveShape'
 The processed operation.
 
+##### field(e.updateUI): Boolean
+Identifies the reason why the event is raised. `true` value indicates that the UI component is updating the UI. You can prohibit an operation to hide the corresponding UI element. 
+`false` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed, and, for instance, to display an error message if a user tries to perform a prohibited action.
+
 ##### field(e.reason): 'checkUIElementAvailability' | 'modelModification'
 <!-- Description goes here -->
+
 
 ---
 If you want to disable a specific operation type for the entire diagram, you can also set an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) property to `false`.

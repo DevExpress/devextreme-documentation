@@ -6,7 +6,7 @@ firedEvents: positioned
 ---
 ---
 ##### shortDescription
-Positions the widget.
+Positions the UI component.
 
 ---
 #include uiwidgets-ref-position

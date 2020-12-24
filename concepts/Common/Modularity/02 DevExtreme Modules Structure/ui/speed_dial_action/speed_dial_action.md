@@ -1,8 +1,8 @@
-Exposes the **SpeedDialAction** widget.
+Exposes the **SpeedDialAction** UI component.
 
 Exports:
 
-- *default* - The [SpeedDialAction](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/') widget
+- *default* - The [SpeedDialAction](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/') UI component
 
         require("ui/speed_dial_action");
         // ===== or =====

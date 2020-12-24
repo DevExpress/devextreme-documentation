@@ -1,11 +1,11 @@
 [note]
-Resources and resource assignments are optional in the **Gantt** widget.
+Resources and resource assignments are optional in the **Gantt** UI component.
 
 **Resources** specify people responsible for tasks, equipment, materials, etc.
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources') option to specify whether the **Gantt** widget hides resources or displays them as task labels.
+Use the [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources') option to specify whether the **Gantt** UI component hides resources or displays them as task labels.
 
     $(function() {
         $("#gantt").dxGantt({
@@ -17,13 +17,13 @@ Use the [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configurati
 
 ![DevExtreme Gantt Chart - Resource Assignments](/images/Gantt/resource-assignments.png)
 
-The **Gantt** widget gets data for resources and resource assignments from the following data sources:
+The **Gantt** UI component gets data for resources and resource assignments from the following data sources:
 
 - Resources: [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resources/#dataSource')
 
 - Resource Assignments: [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resourceAssignments/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/resourceAssignments/#dataSource') 
 
-The objects from the data sources are automatically bound to the widget if these objects have the default data fields in its structure. For example:
+The objects from the data sources are automatically bound to the UI component if these objects have the default data fields in its structure. For example:
 
     // Resource
     {        
@@ -36,7 +36,7 @@ The objects from the data sources are automatically bound to the widget if these
         'taskId': 3,
         'resourceId': 1
     }
-The following example illustrates how to bind the widget to resources and resource assignment objects stored in the data sources that contain data fields with conventional names:
+The following example illustrates how to bind the UI component to resources and resource assignment objects stored in the data sources that contain data fields with conventional names:
 
     <!-- tab: index.js -->
     $(function() {

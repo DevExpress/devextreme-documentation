@@ -25,7 +25,7 @@ An object with updated row fields.
 * `key`: any                     
 The key of the row being updated or removed.
 
-The **changes** array can be changed from the UI, with native JavaScript methods, or with widget methods ([addRow]({basewidgetpath}/Methods/#addRow), [editRow]({basewidgetpath}/Methods/#editRowrowIndex), [editCell]({basewidgetpath}/Methods/#editCellrowIndex_dataField), [deleteRow]({basewidgetpath}/Methods/#deleteRowrowIndex)). However, objects with the *"insert"* type cannot be added with native JavaScript methods. We plan to add this functionality in future releases.
+The **changes** array can be changed from the UI, with native JavaScript methods, or with UI component methods ([addRow]({basewidgetpath}/Methods/#addRow), [editRow]({basewidgetpath}/Methods/#editRowrowIndex), [editCell]({basewidgetpath}/Methods/#editCellrowIndex_dataField), [deleteRow]({basewidgetpath}/Methods/#deleteRowrowIndex)). However, objects with the *"insert"* type cannot be added with native JavaScript methods. We plan to add this functionality in future releases.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"

@@ -11,7 +11,7 @@ A function that is executed after selecting a row or clearing its selection.
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.currentDeselectedRowKeys): Array<any>
 The keys of the rows whose selection has been cleared.
@@ -20,7 +20,7 @@ The keys of the rows whose selection has been cleared.
 The keys of the rows that have been selected.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

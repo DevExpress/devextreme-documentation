@@ -29,13 +29,13 @@ The *column* area's fields.
 The index of the column to which the clicked cell belongs.
 
 ##### field(e.component): {WidgetName}
-The widget [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Methods/#instance').
+The UI component [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Methods/#instance').
 
 ##### field(e.dataFields): Array<PivotGridDataSource_Options_fields>
 The *data* area's fields.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam

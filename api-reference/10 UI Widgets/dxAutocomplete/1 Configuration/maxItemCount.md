@@ -5,6 +5,6 @@ default: 10
 ---
 ---
 ##### shortDescription
-Specifies the maximum count of items displayed by the widget.
+Specifies the maximum count of items displayed by the UI component.
 
 ---

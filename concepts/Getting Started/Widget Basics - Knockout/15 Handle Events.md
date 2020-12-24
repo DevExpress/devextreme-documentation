@@ -9,7 +9,7 @@ You can subscribe to an event using a configuration option. All event handling o
                 // Handles the "itemClick" event
             },
             onInitialized: function (info) {
-                // Saves the widget instance
+                // Saves the UI component instance
                 viewModel.menuInstance = info.component;    
                 // Handles the "initialized" event
             }

@@ -6,7 +6,7 @@ default: 'disabled'
 ---
 ---
 ##### shortDescription
-Specifies how the Diagram widget automatically zooms the work area.
+Specifies how the Diagram UI component automatically zooms the work area.
 
 ---
 #include common-ref-enum with {

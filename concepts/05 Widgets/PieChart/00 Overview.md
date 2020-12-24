@@ -1,4 +1,4 @@
-The **PieChart** is an interactive widget that visualizes data as a circle divided into sectors that each represents a portion of the whole.
+The **PieChart** is an interactive UI component that visualizes data as a circle divided into sectors that each represents a portion of the whole.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/PieChartOverview/pieChartExample.html, /Content/Applications/21_1/DataVisualization/Guides/PieChartOverview/pieChartExample.js"></div>
 

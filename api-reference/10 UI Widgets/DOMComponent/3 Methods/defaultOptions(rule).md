@@ -16,7 +16,7 @@ When specifying a function, get information about the current device from the ar
 Options to be applied.
 
 ---
-**defaultOptions** is a static method that the widget class supports. The following code demonstrates how to specify default options for all instances of the **{WidgetName}** widget in an application executed on the desktop.
+**defaultOptions** is a static method that the UI component class supports. The following code demonstrates how to specify default options for all instances of the **{WidgetName}** UI component in an application executed on the desktop.
 
 ---
 ##### jQuery

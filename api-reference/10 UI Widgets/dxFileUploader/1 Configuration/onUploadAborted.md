@@ -11,10 +11,10 @@ A function that is executed when the file upload is aborted.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
@@ -23,7 +23,7 @@ The widget's instance.
 The uploaded file.
 
 ##### field(e.message): String
-The message displayed by the widget when the file upload is cancelled.
+The message displayed by the UI component when the file upload is cancelled.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.

@@ -7,6 +7,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-The base class for widgets containing an item collection.
+The base class for UI components containing an item collection.
 
 ---

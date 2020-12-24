@@ -1,15 +1,15 @@
 ---
 ##### shortDescription
-Gets the instance of a widget found using its DOM node.
+Gets the instance of a UI component found using its DOM node.
 
 ##### param(element): Node|jQuery
-The widget's container.
+The UI component's container.
 
 ##### return: DOMComponent
-The widget's instance.
+The UI component's instance.
 
 ---
-**getInstance** is a static method that the widget class supports. The following code demonstrates how to get the **{WidgetName}** instance found in an element with the `my{WidgetName}` ID:
+**getInstance** is a static method that the UI component class supports. The following code demonstrates how to get the **{WidgetName}** instance found in an element with the `my{WidgetName}` ID:
 
     // Modular approach
     import {WidgetName} from "devextreme/viz/{widget_name}";

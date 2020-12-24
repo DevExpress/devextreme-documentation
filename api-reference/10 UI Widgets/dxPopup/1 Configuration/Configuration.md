@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Popup** widget.
+An object defining configuration options for the **Popup** UI component.
 
 ---
 #####See Also#####

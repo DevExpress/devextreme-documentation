@@ -5,22 +5,22 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when the widget is in focus and a key has been pressed down.
+A function that is executed when the UI component is in focus and a key has been pressed down.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 The event that caused the function to execute. It is a [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery. This event is based on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event" target="_blank">keydown</a> native event.
 
 ##### field(e.handled): Boolean
-Indicates whether the widget has already handled this event.
+Indicates whether the UI component has already handled this event.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

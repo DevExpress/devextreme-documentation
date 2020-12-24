@@ -5,16 +5,16 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when the widget's content is ready and each time the content is changed.
+A function that is executed when the UI component's content is ready and each time the content is changed.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only when using Knockout.

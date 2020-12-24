@@ -14,19 +14,19 @@ Information about the event that caused the function's execution.
 All column [configurations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/').
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The row's data.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
 ##### field(e.handled): Boolean
-Indicates whether internal widget functions have already handled the event.
+Indicates whether internal UI component functions have already handled the event.
 
 ##### field(e.isExpanded): Boolean
 Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.
@@ -63,6 +63,6 @@ The row's [type](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md 
 Values displayed in the row cells.
 
 ---
-Prior to this function, the widget executes the [onCellClick](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onCellClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onCellClick') function and sometimes internal functions. You can use the **handled** field to check whether internal functions were executed.
+Prior to this function, the UI component executes the [onCellClick](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onCellClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onCellClick') function and sometimes internal functions. You can use the **handled** field to check whether internal functions were executed.
 
 [note] When the clicked row is in the editing state or switches to this state, the **onRowClick** function is not executed. Instead, specify the **onCellClick** function.

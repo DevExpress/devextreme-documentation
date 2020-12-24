@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Generates space around the widget.
+Generates space around the UI component.
 
 ---
 ![WidgetMargin DevExtreme ChartJS](/images/ChartJS/WidgetMargin.png)

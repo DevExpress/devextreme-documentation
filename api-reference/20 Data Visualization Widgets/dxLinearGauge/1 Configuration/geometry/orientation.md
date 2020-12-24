@@ -6,7 +6,7 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-Indicates whether to display the **LinearGauge** widget vertically or horizontally.
+Indicates whether to display the **LinearGauge** UI component vertically or horizontally.
 
 ---
 #include common-ref-enum with {

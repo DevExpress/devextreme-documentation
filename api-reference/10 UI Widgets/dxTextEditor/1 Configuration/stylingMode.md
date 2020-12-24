@@ -6,7 +6,7 @@ default: 'outlined', 'underlined' (Material)
 ---
 ---
 ##### shortDescription
-Specifies how the widget's text field is styled.
+Specifies how the UI component's text field is styled.
 
 ---
 The following styles are available: 

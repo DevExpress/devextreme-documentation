@@ -5,6 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-The latitude location of the widget.
+The latitude location of the UI component.
 
 ---

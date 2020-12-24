@@ -1,4 +1,4 @@
-The **PolarChart** widget can include a legend - an explanatory component that helps a user distinguish and identify series. Each series is represented by an item on the legend. An item marker identifies the series color. An item label displays the series title.
+The **PolarChart** UI component can include a legend - an explanatory component that helps a user distinguish and identify series. Each series is represented by an item on the legend. An item marker identifies the series color. An item label displays the series title.
 
 ![Legend](/images/ChartJS/Polar_Legend.png)
 

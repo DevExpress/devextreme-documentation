@@ -31,7 +31,7 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
             <script>
                 DevExpress.localization.locale(navigator.language);
                 // ...
-                // DevExtreme widgets are configured here
+                // DevExtreme UI components are configured here
                 // ...
             </script>
         </body>

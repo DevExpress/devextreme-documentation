@@ -19,7 +19,7 @@ The settings of the column to which the header belongs.
 The index of the column to which the header belongs.
 
 ##### field(headerInfo.component): dxDataGrid
-The widget's instance.
+The UI component's instance.
 
 ---
 When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/), it omits customizations made in this template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell) function.

@@ -1,4 +1,4 @@
-Topics in this section describe various elements of the **LinearGauge** widget. Each topic gives a detailed overview of the element's purpose and ways of configuring. Below is the element map of the **LinearGauge** widget. **Hover** over the map and you will discover how different gauge elements are called. **Click an element** to navigate to the topic with details on this element.
+Topics in this section describe various elements of the **LinearGauge** UI component. Each topic gives a detailed overview of the element's purpose and ways of configuring. Below is the element map of the **LinearGauge** UI component. **Hover** over the map and you will discover how different gauge elements are called. **Click an element** to navigate to the topic with details on this element.
 
 
 <p><img style="margin:0px auto;display:block" src="/images/ChartJS/LinearGaugeElementMap.png" alt="" usemap="#linearGaugeElements" /></p>

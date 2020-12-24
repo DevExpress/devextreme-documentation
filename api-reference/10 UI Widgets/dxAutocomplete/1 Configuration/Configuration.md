@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Autocomplete** widget.
+An object defining configuration options for the **Autocomplete** UI component.
 
 ---
 #####See Also#####

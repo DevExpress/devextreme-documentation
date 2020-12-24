@@ -5,6 +5,6 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies a value the widget displays.
+Specifies a value the UI component displays.
 
 ---

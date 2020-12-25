@@ -5,6 +5,6 @@ default: 30
 ---
 ---
 ##### shortDescription
-Specifies cell duration in minutes. The interval between [startDayHour]({basewidgetpath}/Configuration/#startDayHour) and [endDayHour]({basewidgetpath}/Configuration/#endDayHour) should be divisible by this value.
+Specifies cell duration in minutes. The interval between [startDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#startDayHour) and [endDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#endDayHour) should be divisible by this value.
 
 ---

@@ -135,7 +135,7 @@ The following code shows how to apply LDML patterns to format numbers and dates:
         });
         $("#dateBoxContainer").dxDateBox({
             value: new Date(),
-            displayFormat: "MMM d, YYYY" // "Jun 15, 2018"
+            displayFormat: "MMM d, yyyy" // "Jun 15, 2018"
         });
     });
 
@@ -149,7 +149,7 @@ The following code shows how to apply LDML patterns to format numbers and dates:
     </dx-number-box>
     <dx-date-box
         [(value)]="dateBoxValue"
-        format="MMM d, YYYY"> <!-- "Jun 15, 2018" -->
+        format="MMM d, yyyy"> <!-- "Jun 15, 2018" -->
     </dx-date-box>
 
     <!--TypeScript-->

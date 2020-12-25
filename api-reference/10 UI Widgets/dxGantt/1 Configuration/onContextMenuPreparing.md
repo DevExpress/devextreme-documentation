@@ -52,6 +52,101 @@ The type of right-clicked task or dependency.
         });
     }); 
 
+##### Angular
+
+    <!--TypeScript-->
+    import { DxGanttModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        onContextMenuPreparing(e) {
+            // your code
+            e.cancel = true;
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxGanttModule
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-gantt ...
+        (onContextMenuPreparing)="onContextMenuPreparing($event)">
+    </dx-gantt>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt
+            ...
+            @context-menu-preparing="onContextMenuPreparing"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxGantt from 'devextreme-vue/gantt';
+  
+    export default {
+        components: {
+            DxGantt
+        },
+        methods: {
+            onContextMenuPreparing(e) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Gantt from 'devextreme-react/gantt';
+
+    class App extends React.Component {
+        // ...
+        render() {
+            return (
+                <Gantt
+                     //...
+                     onContextMenuPreparing={this.onContextMenuPreparing}
+                />
+            );
+        }
+        onContextMenuPreparing = (e) => {
+            // your code
+            e.cancel = true;
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ID("gantt")
+        // ...
+        .onContextMenuPreparing("gantt_contextMenuPreparing_handler")
+    )
+    <script>
+        function gantt_contextMenuPreparing_handler(e) {
+            // your code
+            e.cancel = true;
+        }
+    </script>
+
 ---
 
 #include common-demobutton with {

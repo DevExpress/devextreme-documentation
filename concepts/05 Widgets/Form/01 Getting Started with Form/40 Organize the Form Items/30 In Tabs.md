@@ -59,7 +59,9 @@ The following example shows a Form with two groups. A tabbed item is nested in t
             <dxi-item dataField="notes"></dxi-item>
         </dxi-item>
         <dxi-item itemType="group" caption="Personal Information">
-            <dxi-item itemType="tabbed" [tabPanelOptions]="personalDataOptions">
+            <dxi-item itemType="tabbed">
+                <dxo-tab-panel-options [height]="55">
+                </dxo-tab-panel-options>
                 <dxi-tab title="Profile">
                     <dxi-item dataField="position"></dxi-item>
                     <dxi-item dataField="hireDate"></dxi-item>
@@ -92,10 +94,6 @@ The following example shows a Form with two groups. A tabbed item is nested in t
             skype: 'jheart_DX_skype',
             email: 'jheart@dx-email.com',
             notes: 'John has been in the Audio/Video industry since 1990.'
-        }
-
-        personalDataOptions = {
-            height: "55px"
         }
     }
 
@@ -131,7 +129,8 @@ The following example shows a Form with two groups. A tabbed item is nested in t
                 <DxSimpleItem data-field="notes"/>
             </DxGroupItem>
             <DxGroupItem caption="Personal Information">
-                <DxTabbedItem :tab-panel-options="personalDataOptions">
+                <DxTabbedItem>
+                    <DxTabPanelOptions :height="55"/>
                     <DxTab title="Profile">
                         <DxSimpleItem data-field="position"/>
                         <DxSimpleItem dataField="hireDate"/>
@@ -155,7 +154,8 @@ The following example shows a Form with two groups. A tabbed item is nested in t
         DxSimpleItem, 
         DxGroupItem, 
         DxTabbedItem,
-        DxTab 
+        DxTab,
+        DxTabPanelOptions 
     } from 'devextreme-vue/form';
     
     const employee = {
@@ -169,16 +169,13 @@ The following example shows a Form with two groups. A tabbed item is nested in t
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
-    const personalDataOptions = {
-        height: "55px"
-    };
-
     export default {
         components: {
             DxForm,
             DxSimpleItem,
             DxGroupItem,
-            DxTabbedItem
+            DxTabbedItem,
+            DxTabPanelOptions
         },
         data: {
             return: {
@@ -200,7 +197,8 @@ The following example shows a Form with two groups. A tabbed item is nested in t
         SimpleItem,
         GroupItem,
         TabbedItem,
-        Tab
+        Tab,
+        TabPanelOptions
     } from 'devextreme-react/form';
 
     const employee = {
@@ -214,10 +212,6 @@ The following example shows a Form with two groups. A tabbed item is nested in t
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
-    const personalDataOptions = {
-        height: "55px"
-    };
-
     const App = () => {
         return (
             <Form
@@ -228,7 +222,8 @@ The following example shows a Form with two groups. A tabbed item is nested in t
                     <SimpleItem dataField="notes" />
                 </GroupItem>
                 <GroupItem caption="Personal Information">
-                    <TabbedItem tabPanelOptions={personalDataOptions}>
+                    <TabbedItem>
+                        <TabPanelOptions height="55" />
                         <Tab title="Profile">
                             <SimpleItem dataField="position" />
                             <SimpleItem dataField="hireDate" />

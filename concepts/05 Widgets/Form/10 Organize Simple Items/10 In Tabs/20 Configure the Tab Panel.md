@@ -31,11 +31,9 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
         [(formData)]="employee">
         <dxi-item dataField="firstName"></dxi-item>
         <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item itemType="tabbed"
-            [tabPanelOptions]="{
-                height: 250,
-                onTitleClick: tabPanel_tabTitleClick
-            }">
+        <dxi-item itemType="tabbed">
+            <dxo-tab-panel-options [height]="250" [onTitleClick]="tabPanel_tabTitleClick">
+            </dxo-tab-panel-options>
         </dxi-item>
     </dx-form>
 

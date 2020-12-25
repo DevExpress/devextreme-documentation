@@ -4,7 +4,8 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
-<!-- Description goes here -->
+
+<!-- import * from 'api-reference\50 Common\Object Structures\ExcelDataGridCell\data.md' -->

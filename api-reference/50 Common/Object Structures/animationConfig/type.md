@@ -9,7 +9,7 @@ default: 'custom'
 A string value specifying the animation type.
 
 ---
-The value of the option affects the widget's initial and target states, which are specified using the [from](/api-reference/50%20Common/Object%20Structures/animationConfig/from.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#from') and [to](/api-reference/50%20Common/Object%20Structures/animationConfig/to.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#to') options. 
+The value of the option affects the UI component's initial and target states, which are specified using the [from](/api-reference/50%20Common/Object%20Structures/animationConfig/from.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#from') and [to](/api-reference/50%20Common/Object%20Structures/animationConfig/to.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#to') options. 
 
 The type options can take on the following values.
 
@@ -46,4 +46,4 @@ The type options can take on the following values.
 
 If the **type** option is set to "slideIn" or "slideOut", specify the sliding direction using the **direction** option.
 
-When using a widget as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, specify this option using the `AnimationType` enum. This enum accepts the following values: `Css`, `Fade`, `FadeIn`, `FadeOut`, `Pop`, `Slide`, `SlideIn` and `SlideOut`.
+When using a UI component as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, specify this option using the `AnimationType` enum. This enum accepts the following values: `Css`, `Fade`, `FadeIn`, `FadeOut`, `Pop`, `Slide`, `SlideIn` and `SlideOut`.

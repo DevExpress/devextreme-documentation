@@ -19,7 +19,7 @@ The column's properties.
 The index of the cell's column. <br/> Refer to [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### field(cellInfo.component): dxTreeList
-The widget's instance.
+The UI component's instance.
 
 ##### field(cellInfo.data): Object
 The data of the cell's row.

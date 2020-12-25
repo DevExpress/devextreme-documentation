@@ -5,10 +5,10 @@ default: 400
 ---
 ---
 ##### shortDescription
-Specifies the widget's height.
+Specifies the UI component's height.
 
 ##### return: Number | String
-The widget's height.
+The UI component's height.
 
 ---
 #include uiwidgets-ref-height

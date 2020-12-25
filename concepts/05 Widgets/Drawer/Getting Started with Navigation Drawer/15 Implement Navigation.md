@@ -1,31 +1,39 @@
-The **Drawer** is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/') widget to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/').
+The **Drawer** is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/') UI component to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/'), as done in this tutorial.
 
-These widgets provide the **onSelectionChanged** function in which we can implement the navigation logic. However, this function is executed only if you enable selection. In the **TreeView**, set the [selectionMode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectionMode') to *"single"* and assign **true** to [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick'); in the **List**, set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*.
-
-In this tutorial, we use the **List**:
+Each list item should navigate to a different view. To implement this, follow the steps below:
 
 ---
 ##### jQuery
 
+1. **Enable item selection**        
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**.
+
+1. **Navigate to a view when selection is changed**
+
+    In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#hide) the **Drawer**.
+
+<!-- -->
+
     <!--tab: index.js-->
     $(function() {
         // Loads the initial page
-        $("#view" ).load( "./inbox.html" );
+        $("#view" ).load( "./pages/inbox.html" );
 
         const drawer = $("#drawer").dxDrawer({
             // ...
             template: function(e) {
                 const $list = $("<div/>").dxList({
                     items: [
-                        { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-                        { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-                        { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-                        { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
+                        { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+                        { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+                        { id: 3, text: "Trash", icon: "trash", path: "trash" },
+                        { id: 4, text: "Spam", icon: "mention", path: "spam" }
                     ],
                     width: 200,
                     selectionMode: "single",
                     onSelectionChanged: function(e) {
-                        $("#view").load( e.addedItems[0].filePath + ".html" );
+                        $("#view").load( "./pages/" + e.addedItems[0].path + ".html" );
                         drawer.hide();
                     }
                 });
@@ -46,19 +54,33 @@ In this tutorial, we use the **List**:
         margin-right: 10px;
     }
 
-    <!--tab: inbox.html-->
+    <!--tab: pages/inbox.html-->
     <div>Inbox</div>
 
-    <!--tab: sent-mail.html-->
+    <!--tab: pages/sent-mail.html-->
     <div>Sent Mail</div>
 
-    <!--tab: trash.html-->
+    <!--tab: pages/trash.html-->
     <div>Trash</div>
 
-    <!--tab: spam.html-->
+    <!--tab: pages/spam.html-->
     <div>Spam</div>
 
 ##### Angular
+
+1. **Configure routing**
+
+    Specify routes and set up the router in the `AppRountingModule`.
+
+1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate)**
+
+    Specify the elements that the template should render and wrap them in an element with the <a href="https://angular.io/api/router/RouterLink" target="_blank">RouterLink</a> directive. In the code below, the *"links"* **itemTemplate** renders an icon and text.
+
+1. **Enable item selection**
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+
+<!-- -->
 
     <!-- tab: app.component.html -->
     <dx-drawer ... >
@@ -67,39 +89,41 @@ In this tutorial, we use the **List**:
                 [items]="navigation"
                 [width]="200"
                 selectionMode="single"
-                (onSelectionChanged)="loadView($event)">
+                (onSelectionChanged)="this.isDrawerOpen = false"
+                itemTemplate="links">
+                <div *dxTemplate="let link of 'links'">
+                    <a [routerLink]="['/' + link.path]">
+                        <div>
+                            <div class="dx-list-item-icon-container">
+                                <i class="dx-icon dx-list-item-icon dx-icon-{{link.icon}}"></i>
+                            </div>
+                            <span>{{ link.text }}</span>
+                        </div>
+                    </a>
+                </div>
             </dx-list>
         </div>
-        <div id="view"><router-outlet></router-outlet></div>
+        <div id="view">
+            <router-outlet></router-outlet>
+        </div>
     </dx-drawer>
 
     <!-- tab: app.component.ts -->
     import { Component } from "@angular/core";
-    import { Router } from "@angular/router";
 
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css'],
-        providers: []
+        styleUrls: ['./app.component.css']
     })
-
     export class AppComponent {
-        navigation: any;
+        navigation: any[] = [
+            { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+            { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+            { id: 3, text: "Trash", icon: "trash", path: "trash" },
+            { id: 4, text: "Spam", icon: "mention", path: "spam" }
+        ];
         isDrawerOpen: Boolean = false;
-
-        constructor(private router: Router) {
-            this.navigation = [
-                { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-                { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-                { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-                { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
-            ];
-        }
-        loadView(e) {
-            this.router.navigate([e.addedItems[0].filePath]);
-            this.isDrawerOpen = false;
-        }
     }
 
     <!-- tab: app.component.css -->
@@ -194,6 +218,72 @@ In this tutorial, we use the **List**:
 
 ##### Vue
 
+1. **Install <a href="https://router.vuejs.org/" target="_blank">Vue Router</a>**
+
+        npm install vue-router
+
+1. **Configure routing**
+
+    Specify routes and set up the router in the `main.js` file.
+
+1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate)**
+
+    Specify the elements that the template should render and wrap them in a <a href="https://router.vuejs.org/api/#router-link" target="_blank">`<router-link>`</a> component. In the code below, the *"links"* **itemTemplate** renders an icon and text.
+
+1. **Enable item selection**
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+
+<!-- -->
+
+    <!-- tab: NavigationList.vue -->
+    <template>
+        <DxList
+            :width="200"
+            selection-mode="single"
+            :items="navigation"
+            item-template="links"
+            @selection-changed="navigate">
+            <template #links="{ data }">
+                <div>
+                    <router-link :to="'/' + data.path">
+                        <div>
+                            <div class="dx-list-item-icon-container">
+                                <i class="dx-icon dx-list-item-icon" :class="'dx-icon-' + data.icon"></i>
+                            </div>
+                            <span>{{ data.text }}</span>
+                        </div>
+                    </router-link>
+                </div>
+            </template>
+        </DxList>
+    </template>
+    <script>
+    import { DxList } from "devextreme-vue/list";
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            const navigation = [
+                { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+                { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+                { id: 3, text: "Trash", icon: "trash", path: "trash" },
+                { id: 4, text: "Spam", icon: "mention", path: "spam" }
+            ];
+            return {
+                navigation
+            };
+        },
+        methods: {
+            navigate() {
+                this.$emit('navigated');
+            }
+        }
+    }
+    </script>
+
     <!-- tab: App.vue -->
     <template>
         <div>
@@ -231,42 +321,6 @@ In this tutorial, we use the **List**:
         margin-right: 10px;
     }
     </style>
-
-    <!-- tab: NavigationList.vue -->
-    <template>
-        <DxList
-            :width="200"
-            selection-mode="single"
-            :items="navigation"
-            @selection-changed="loadView($event)"
-        />
-    </template>
-    <script>
-    import { DxList } from "devextreme-vue/list";
-
-    export default {
-        components: {
-            DxList
-        },
-        data() {
-            const navigation = [
-                { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-                { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-                { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-                { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
-            ];
-            return {
-                navigation
-            };
-        },
-        methods: {
-            loadView(e) {
-                this.$router.push(e.addedItems[0].filePath);
-                this.$emit('navigated');
-            }
-        }
-    }
-    </script>
 
     <!-- tab: main.js -->
     import Vue from 'vue';
@@ -341,20 +395,55 @@ In this tutorial, we use the **List**:
 
 ##### React
 
-    <!-- tab: DxComponent.js -->
+1. **Install <a href="https://reactrouter.com/" target="_blank">React Router</a>**
+
+        npm install react-router-dom --save
+
+1. **Configure routing**
+
+    Wrap the entire `App` component in a `BrowserRouter` and add a <a href="https://reactrouter.com/web/api/Route" target="_blank">`Route`</a> that renders the `NavigationDrawer` component. Define other `Routes` within the `Drawer` markup in the `NavigationDrawer` component.
+
+1. **Define the [itemRender](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemRender) function**
+
+    Specify the elements that the function should render and wrap them in a <a href="https://reactrouter.com/web/api/Link" target="_blank">`Link`</a>. In the code below, the `renderItem` function renders an icon and text.
+
+1. **Enable item selection**
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+
+<!-- -->
+
+    <!-- tab: App.js -->
+    // ...
+    import { BrowserRouter, Route } from 'react-router-dom'
+
+    class App extends Component {
+        render() {
+            return (
+                <BrowserRouter>
+                    <div className="App">
+                        <Route component={NavigationDrawer} />
+                    </div>
+                </BrowserRouter>
+            );
+        }
+    }
+    export default App;
+
+
+    <!-- tab: NavigationDrawer.js -->
     // ...
     import NavigationList from "./NavigationList";
 
-    import { Router, Route } from "react-router-dom";
+    import { Switch, Route } from "react-router-dom";
 
     import Inbox from "./views/Inbox";
     import Trash from "./views/Trash";
     import SentMail from "./views/SentMail";
     import Spam from "./views/Spam";
 
-    import history from "./history";
-
-    class DxComponent extends React.Component {
+    class NavigationDrawer extends React.Component {
+        // ...
         renderList = () => {
             const stateHandler = (newState) => this.setState(newState);
             return (
@@ -365,43 +454,57 @@ In this tutorial, we use the **List**:
         render() {
             return (
                 <React.Fragment>
+                    { /* ... */ }
                     <Drawer ...
                         render={this.renderList}>
                         <div id="view">
-                            <Router history={history}>
-                                <div>
-                                    <Route exact path="/" component={Inbox} />
-                                    <Route exact path="/inbox" component={Inbox} />
-                                    <Route exact path="/sent-mail" component={SentMail} />
-                                    <Route exact path="/spam" component={Spam} />
-                                    <Route exact path="/trash" component={Trash} />
-                                </div>
-                            </Router>
+                            <Switch>
+                                <Route exact path="/" component={Inbox} />
+                                <Route exact path="/inbox" component={Inbox} />
+                                <Route exact path="/sent-mail" component={SentMail} />
+                                <Route exact path="/spam" component={Spam} />
+                                <Route exact path="/trash" component={Trash} />
+                            </Switch>
                         </div>
                     </Drawer>
                 </React.Fragment>
             );
         }
     }
-    export default DxComponent;
+    export default NavigationDrawer;
 
     <!-- tab: NavigationList.js -->
     import React from "react";
     import List from "devextreme-react/list";
-    import history from "./history";
+    import { Link } from "react-router-dom";
 
     const navigation = [
-        { id: 1, text: "Inbox", icon: "message", filePath: "inbox" },
-        { id: 2, text: "Sent Mail", icon: "check", filePath: "sent-mail" },
-        { id: 3, text: "Trash", icon: "trash", filePath: "trash" },
-        { id: 4, text: "Spam", icon: "mention", filePath: "spam" }
+        { id: 1, text: "Inbox", icon: "message", path: "inbox" },
+        { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
+        { id: 3, text: "Trash", icon: "trash", path: "trash" },
+        { id: 4, text: "Spam", icon: "mention", path: "spam" }
     ];
 
     class NavigationList extends React.PureComponent {
-        loadView(e) {
-            history.push(e.addedItems[0].filePath);
+        closeDrawer = () => {
             this.props.stateHandler({ isDrawerOpen: false });
         }
+
+        renderItem = (data) => {
+            return (
+                <div>
+                    <Link to={'/' + data.path}>
+                        <div>
+                            <div className="dx-list-item-icon-container">
+                                <i className={`dx-icon dx-list-item-icon dx-icon-${data.icon}`}></i>
+                            </div>
+                            <span>{data.text}</span>
+                        </div>
+                    </Link>
+                </div>
+            );
+        }
+
         render() {
             return (
                 <React.Fragment>
@@ -409,25 +512,22 @@ In this tutorial, we use the **List**:
                         items={navigation}
                         width={200} 
                         selectionMode="single"
-                        onSelectionChanged={this.loadView} />
+                        onSelectionChanged={this.closeDrawer}
+                        itemRender={this.renderItem}
+                    />
                 </React.Fragment>
             );
         }
     }
     export default NavigationList;
 
-    <!-- tab: history.js -->
-    import { createBrowserHistory } from "history";
-
-    export default createBrowserHistory()
-
-    <!-- tab: DxComponent.css -->
+    <!-- tab: NavigationDrawer.css -->
     /* ... */
     .dx-list-item-icon {
         margin-right: 10px;
     }
 
-    <!-- tab: Inbox.js -->
+    <!-- tab: views/Inbox.js -->
     import React from "react";
 
     class Inbox extends React.Component {
@@ -439,7 +539,7 @@ In this tutorial, we use the **List**:
     }
     export default Inbox;
 
-    <!-- tab: SentMail.js -->
+    <!-- tab: views/SentMail.js -->
     import React from "react";
 
     class SentMail extends React.Component {
@@ -451,7 +551,7 @@ In this tutorial, we use the **List**:
     }
     export default SentMail;
 
-    <!-- tab: Spam.js -->
+    <!-- tab: views/Spam.js -->
     import React from "react";
 
     class Spam extends React.Component {
@@ -463,7 +563,7 @@ In this tutorial, we use the **List**:
     }
     export default Spam;
 
-    <!-- tab: Trash.js -->
+    <!-- tab: views/Trash.js -->
     import React from "react";
 
     class Trash extends React.Component {
@@ -476,6 +576,16 @@ In this tutorial, we use the **List**:
     export default Trash;
 
 ##### ASP.NET MVC Controls
+
+1. **Enable item selection**        
+
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectByClick') option to **true**.
+
+1. **Navigate to a view when selection is changed**
+
+    In the [onSelectionChanged](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#hide) the **Drawer**.
+
+<!-- -->
 
     <!-- tab: _Layout.cshtml -->
     @(Html.DevExtreme().Toolbar()
@@ -508,8 +618,10 @@ In this tutorial, we use the **List**:
         }
 
         function list_onSelectionChanged(e) {
+            const drawer = $("#layout-drawer").dxDrawer("instance");
+            drawer.hide();
+            sessionStorage.setItem("isDrawerOpen", JSON.stringify(drawer.option("opened")));
             document.location.pathname = e.addedItems[0].path;
-            $("#layout-drawer").dxDrawer("hide");
         }
 
         function list_onInitialized(e) {

@@ -1,8 +1,8 @@
-Exposes the **SelectBox** widget.
+Exposes the **SelectBox** UI component.
 
 Exports:
 
-- *default* - The [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/') widget
+- *default* - The [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/') UI component
 
         require("ui/select_box");
         // ===== or =====

@@ -5,6 +5,6 @@ default: 'Refreshing...'
 ---
 ---
 ##### shortDescription
-Specifies the text displayed in the pullDown panel while the widget is being refreshed.
+Specifies the text displayed in the pullDown panel while the UI component is being refreshed.
 
 ---

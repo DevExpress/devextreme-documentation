@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Tabs** widget.
+An object defining configuration options for the **Tabs** UI component.
 
 ---
 #####See Also#####

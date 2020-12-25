@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Box** widget.
+An object defining configuration options for the **Box** UI component.
 
 ---
 #####See Also#####

@@ -11,10 +11,10 @@ A handler for the [click]({basewidgetpath}/Events/#itemClick) event raised for a
 Information about the event.
 
 ##### field(e.component): dxDropDownButton
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam

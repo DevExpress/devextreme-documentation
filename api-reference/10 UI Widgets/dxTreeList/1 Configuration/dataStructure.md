@@ -6,10 +6,10 @@ default: 'plain'
 ---
 ---
 ##### shortDescription
-Notifies the widget of the used data structure.
+Notifies the UI component of the used data structure.
 
 ---
-The widget expects that data has a plain structure where:
+The UI component expects that data has a plain structure where:
 
 - each data item contains a `parentId` and a unique `id`;
 - data items of the highest hierarchical level have `parentId` equal to **0**, **null** or **undefined**. It indicates that these data items descend from the root node. The root node does not have a visual representation.
@@ -60,7 +60,7 @@ If the **items** field is called differently in your dataset, specify the [items
 
 [note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">this KB</a> to implement it.
 
-If each data item has a Boolean field that specifies whether this data item nests other items, assign the field's name to the [hasItemsExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/hasItemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#hasItemsExpr') option. The widget uses this information to render the expand button. This is required only if the widget is bound to a remote data source.
+If each data item has a Boolean field that specifies whether this data item nests other items, assign the field's name to the [hasItemsExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/hasItemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#hasItemsExpr') option. The UI component uses this information to render the expand button. This is required only if the UI component is bound to a remote data source.
 
 #####See Also#####
 - [Use Plain Data](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Plain_Data/')

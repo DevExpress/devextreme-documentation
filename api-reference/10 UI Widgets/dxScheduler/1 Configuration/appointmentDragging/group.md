@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Allows you to group several widgets so that users can drag and drop appointments between them.
+Allows you to group several UI components so that users can drag and drop appointments between them.
 
 ---
-Set this option to identical values for the widgets you want to collect in a single group.
+Set this option to identical values for the UI components you want to collect in a single group.

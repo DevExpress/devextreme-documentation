@@ -3,7 +3,7 @@ id: dxRangeSelector.render(skipChartAnimation)
 ---
 ---
 ##### shortDescription
-Redraws the widget.
+Redraws the UI component.
 
 ##### param(skipChartAnimation): Boolean
 Specifies whether to animate the background chart on render.

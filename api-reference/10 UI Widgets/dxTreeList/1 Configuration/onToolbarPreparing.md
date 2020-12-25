@@ -1,4 +1,4 @@
-This function allows you to customize the toolbar. Depending on the configuration, the widget may add the following items to the toolbar:
+This function allows you to customize the toolbar. Depending on the configuration, the UI component may add the following items to the toolbar:
 
 - <img src="/images/DataGrid/icons/columnChooser.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Toolbar ColumnChooserButton" style="margin:1px; vertical-align:middle"/> - *"columnChooserButton"*    
 - <img src="/images/DataGrid/icons/toolbar_add.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Toolbar AddButton" style="margin:1px; vertical-align:middle"/> - *"addRowButton"*    
@@ -183,4 +183,4 @@ The following code shows how to use this function to customize the toolbar:
 
 ---
 
-[note]If you use [modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') and set a DevExtreme widget as a toolbar item, import this widget's module. You do not have to import the [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') or [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/') widgets because **TreeList** imports them automatically. 
+[note]If you use [modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') and set a DevExtreme UI component as a toolbar item, import this UI component's module. You do not have to import the [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') or [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/') UI components because **TreeList** imports them automatically. 

@@ -12,6 +12,36 @@ Specifies a custom template for rows.
 ##### param(rowInfo): Object
 The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/') object extended by the **DataGrid**'s instance (the **component** field) and column configuration (**columns**).
 
+##### field(rowInfo.columns): Array<dxDataGridColumn>
+<!-- Description goes here -->
+
+##### field(rowInfo.component): dxDataGrid
+<!-- Description goes here -->
+
+##### field(rowInfo.data): any
+<!-- Description goes here -->
+
+##### field(rowInfo.groupIndex): Number
+<!-- Description goes here -->
+
+##### field(rowInfo.isExpanded): Boolean
+<!-- Description goes here -->
+
+##### field(rowInfo.isSelected): Boolean
+<!-- Description goes here -->
+
+##### field(rowInfo.key): any
+<!-- Description goes here -->
+
+##### field(rowInfo.rowIndex): Number
+<!-- Description goes here -->
+
+##### field(rowInfo.rowType): String
+<!-- Description goes here -->
+
+##### field(rowInfo.values): Array<any>
+<!-- Description goes here -->
+
 ---
 The following details should be taken into account when you use a **rowTemplate**:
 
@@ -175,7 +205,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"
 }
 
-You can also use a 3rd-party template engine to customize row appearance. See the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article for more information. Note that the `<tbody>` element that represents a row should have the `dx-row` class to ensure all widget features work properly.
+You can also use a 3rd-party template engine to customize row appearance. See the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article for more information. Note that the `<tbody>` element that represents a row should have the `dx-row` class to ensure all UI component features work properly.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/Row3RdPartyEngineTemplate/"

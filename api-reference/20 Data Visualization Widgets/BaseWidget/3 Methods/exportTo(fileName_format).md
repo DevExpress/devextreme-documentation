@@ -3,10 +3,10 @@ id: BaseWidget.exportTo(fileName, format)
 ---
 ---
 ##### shortDescription
-Exports the widget.
+Exports the UI component.
 
 ##### param(fileName): String
-The name of the file to which the widget is about to be exported.
+The name of the file to which the UI component is about to be exported.
 
 ##### param(format): String
 The file's format. One of 'PNG', 'PDF', 'JPEG', 'SVG' and 'GIF'.  

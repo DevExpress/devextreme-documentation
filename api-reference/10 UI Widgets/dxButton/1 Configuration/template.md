@@ -5,7 +5,7 @@ default: 'content'
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the **Button** widget.
+Specifies a custom template for the **Button** UI component.
 
 ##### param(buttonData): Object
 The button's data.

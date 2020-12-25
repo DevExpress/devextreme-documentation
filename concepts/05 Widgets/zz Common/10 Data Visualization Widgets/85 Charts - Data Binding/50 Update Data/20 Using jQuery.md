@@ -1,4 +1,4 @@
-When using jQuery, rebind the data source to your widget in order to update data in this widget. To do this, obtain its instance at first. The following code snippet demonstrates how this can be done for a pie chart.
+When using jQuery, rebind the data source to your UI component in order to update data in this UI component. To do this, obtain its instance at first. The following code snippet demonstrates how this can be done for a pie chart.
 
 	<!--JavaScript-->var pieChart = $("#pieChartContainer").dxPieChart("instance");
 
@@ -10,4 +10,4 @@ Alternatively, you can call the **option()** method with two arguments: the name
 
 	<!--JavaScript-->pieChart.option('dataSource', updatedDataSource);
 
-After the option is changed, your widget will be refreshed automatically.
+After the option is changed, your UI component will be refreshed automatically.

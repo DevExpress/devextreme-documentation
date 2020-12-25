@@ -7,6 +7,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-Specifies the widget to be used to display an overflow menu on a toolbar.
+Specifies the UI component to be used to display an overflow menu on a toolbar.
 
 ---

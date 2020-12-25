@@ -28,7 +28,7 @@ Apply one of the following solutions to troubleshoot this issue:
 
 - **Serialize objects in the API controller**
 
-    Modify the API controller (`OrdersController`) that the DevExtreme widget is bound to as shown below:
+    Modify the API controller (`OrdersController`) that the DevExtreme UI component is bound to as shown below:
 
         using Newtonsoft.Json;
         using Newtonsoft.Json.Serialization;

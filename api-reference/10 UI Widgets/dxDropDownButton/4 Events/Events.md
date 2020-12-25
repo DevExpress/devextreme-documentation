@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events that the **DropDownButton** widget raises.
+This section describes events that the **DropDownButton** UI component raises.
 
 ---
 #####See Also#####

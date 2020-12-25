@@ -1,4 +1,4 @@
-The **NavBar** is a widget that navigates the application views. 
+The **NavBar** is a UI component that navigates the application views. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Navbar/Overview/"
@@ -58,4 +58,4 @@ Note that field names in these data source items are [conventional](/api-referen
 - [NavBar - Items Selection](/concepts/05%20Widgets/NavBar/10%20Items%20Selection.md '/Documentation/Guide/Widgets/NavBar/Items_Selection')
 - [NavBar API Reference](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Widgets/dxNavBar/')
 
-[tags]dxnavbar, nav bar, navBar, navigation bar, collection container, collection widget, navigation, overview
+[tags]dxnavbar, nav bar, navBar, navigation bar, collection container, collection UI component, navigation, overview

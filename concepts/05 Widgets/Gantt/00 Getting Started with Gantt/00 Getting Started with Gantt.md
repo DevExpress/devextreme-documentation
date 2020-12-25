@@ -1,4 +1,4 @@
-The **Gantt** widget displays the task flow and dependencies between tasks.
+The **Gantt** UI component displays the task flow and dependencies between tasks.
 
 ![DevExtreme Gantt Chart - Overview](/images/Gantt/overview.png)
 

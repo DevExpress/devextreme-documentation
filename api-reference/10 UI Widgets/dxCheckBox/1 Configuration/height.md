@@ -6,7 +6,7 @@
 
 [note]
 
-The option affects only the size of the widget container. To specify the size of a check box icon, provide the appropriate CSS rules.
+The option affects only the size of the UI component container. To specify the size of a check box icon, provide the appropriate CSS rules.
 
     <!--CSS-->
     #checkBoxContainer .dx-checkbox-icon{

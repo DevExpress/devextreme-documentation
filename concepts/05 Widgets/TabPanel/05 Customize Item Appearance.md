@@ -1,4 +1,4 @@
-An item in the **TabPanel** widget includes a tab and a view. For a minor customization of **TabPanel** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/items/') in item data objects. For example, the following code generates three items: the first has a [badge](/api-reference/_hidden/dxTabPanelItem/badge.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/items/#badge'), the second is disabled, the third has an icon.
+An item in the **TabPanel** UI component includes a tab and a view. For a minor customization of **TabPanel** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/items/') in item data objects. For example, the following code generates three items: the first has a [badge](/api-reference/_hidden/dxTabPanelItem/badge.md '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/items/#badge'), the second is disabled, the third has an icon.
 
 ---
 
@@ -452,7 +452,7 @@ You can also customize individual items. In Angular, Vue, and React, declare the
 
 ---
     
-In addition, you can use a 3rd-party template engine to customize widget appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [TabPanel - Control the Behavior](/concepts/05%20Widgets/TabPanel/15%20Control%20the%20Behavior.md '/Documentation/Guide/Widgets/TabPanel/Control_the_Behavior')

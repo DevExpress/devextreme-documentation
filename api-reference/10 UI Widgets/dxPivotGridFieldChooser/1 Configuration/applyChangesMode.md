@@ -6,7 +6,7 @@ default: 'instantly'
 ---
 ---
 ##### shortDescription
-Specifies when to apply changes made in the widget to the **PivotGrid**.
+Specifies when to apply changes made in the UI component to the **PivotGrid**.
 
 ---
 The following modes are available: 

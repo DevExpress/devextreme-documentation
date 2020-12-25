@@ -5,7 +5,7 @@ default: 0
 ---
 ---
 ##### shortDescription
-The current widget value.
+The current UI component value.
 
 ---
 To create the indeterminate **ProgressBar**, assign **false** to the **value** option.

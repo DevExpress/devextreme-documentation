@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widget responds to user interaction.
+Specifies whether the UI component responds to user interaction.
 
 ---

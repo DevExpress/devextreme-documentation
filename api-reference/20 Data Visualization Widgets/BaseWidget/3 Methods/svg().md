@@ -3,10 +3,10 @@ id: BaseWidget.svg()
 ---
 ---
 ##### shortDescription
-Gets the widget's SVG markup.
+Gets the UI component's SVG markup.
 
 ##### return: String
-The widget's SVG markup.
+The UI component's SVG markup.
 
 ---
 #include common-demobutton with {

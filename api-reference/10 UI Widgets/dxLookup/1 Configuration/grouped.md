@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not to group widget items.
+A Boolean value specifying whether or not to group UI component items.
 
 ---
 If this option is set to **true**, the object assigned to the items option should

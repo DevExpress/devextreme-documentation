@@ -5,6 +5,6 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the current value displayed by the widget.
+Specifies the current value displayed by the UI component.
 
 ---

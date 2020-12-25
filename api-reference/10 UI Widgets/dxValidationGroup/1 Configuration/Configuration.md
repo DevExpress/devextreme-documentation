@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **ValidationGroup** widget.
+An object defining configuration options for the **ValidationGroup** UI component.
 
 ---
 #####See Also#####

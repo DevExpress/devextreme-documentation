@@ -14,7 +14,7 @@ Keys of selected rows. The keys are stored in the order the user selects rows.
 ---
 Below is an example of a **TreeList** with several selected rows:
 
-![Selection in the DevExtreme TreeList widget](/images/treelist/getselectedrowkeys.png)
+![Selection in the DevExtreme TreeList](/images/treelist/getselectedrowkeys.png)
 
 The **getSelectedRowKeys(mode)** method called for this **TreeList** returns different results depending on the **mode** argument:
 

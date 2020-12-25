@@ -1,4 +1,4 @@
-In the **Sankey** widget, nodes represent objects in a system. Nodes have weights and are connected using links that illustrate the weight flow between nodes. The links' width is proportional to the flow magnitude.
+In the **Sankey** UI component, nodes represent objects in a system. Nodes have weights and are connected using links that illustrate the weight flow between nodes. The links' width is proportional to the flow magnitude.
 
 ![Sankey Nodes and Links](/images/sankey/visual_elements/nodes-and-links.png)
 

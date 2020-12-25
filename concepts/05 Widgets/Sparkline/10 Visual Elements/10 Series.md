@@ -13,4 +13,4 @@ Since sparklines are simple in nature, sparkline series offer few configuration 
 
 Series are constructed on the base of data that can be provided using many different approaches. To review them all, refer to the [Data Binding](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/10%20Provide%20Data '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Provide_Data/') guide.
 
-To learn more about series types featured in the **Sparkline** widget, refer to the [Sparkline Series Types](/concepts/05%20Widgets/Sparkline/20%20Series%20Types '/Documentation/Guide/Widgets/Sparkline/Series_Types/') guide.
+To learn more about series types featured in the **Sparkline** UI component, refer to the [Sparkline Series Types](/concepts/05%20Widgets/Sparkline/20%20Series%20Types '/Documentation/Guide/Widgets/Sparkline/Series_Types/') guide.

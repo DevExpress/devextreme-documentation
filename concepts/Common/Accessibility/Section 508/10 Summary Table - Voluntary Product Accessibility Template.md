@@ -7,12 +7,12 @@
     <tr>
         <td>Section 1194.21 Software Applications and Operating Systems</td>
         <td>Not Applicable</td>
-        <td>DevExtreme widgets are not considered a software application or an operating system.</td>
+        <td>DevExtreme UI components are not considered a software application or an operating system.</td>
     </tr>
     <tr>
         <td>Section 1194.22 Web-based Internet Information and Applications </td>
         <td>Supports</td>
-        <td>DevExtreme widgets are not primarily considered a Web-based internet information and applications product, but they are used to build Web-based applications.</td>
+        <td>DevExtreme UI components are not primarily considered a Web-based internet information and applications product, but they are used to build Web-based applications.</td>
     </tr>
     <tr>
         <td>Section 1194.23 Telecommunications Products</td>

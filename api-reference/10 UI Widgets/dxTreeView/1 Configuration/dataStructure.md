@@ -6,10 +6,10 @@ default: 'tree'
 ---
 ---
 ##### shortDescription
-Notifies the widget of the used data structure.
+Notifies the UI component of the used data structure.
 
 ---
-The widget expects that data has a hierarchical structure where each data item contains a `text`, a unique `id`, and an `items` array if the data item nests other data items:
+The UI component expects that data has a hierarchical structure where each data item contains a `text`, a unique `id`, and an `items` array if the data item nests other data items:
 
     <!--JavaScript-->
     var hierarchicalData = [{

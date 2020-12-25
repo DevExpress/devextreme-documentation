@@ -37,4 +37,4 @@ The following code generates ten colors from the Material palette's gradient col
      
     let colors = generateColors('Material', 10, { baseColorSet: 'gradientSet' });
 
-Use the generated colors to paint elements of different widgets in identical colors. For instance, you can assign the same colors to series in two different charts to indicate the visualized information is connected.
+Use the generated colors to paint elements of different UI components in identical colors. For instance, you can assign the same colors to series in two different charts to indicate the visualized information is connected.

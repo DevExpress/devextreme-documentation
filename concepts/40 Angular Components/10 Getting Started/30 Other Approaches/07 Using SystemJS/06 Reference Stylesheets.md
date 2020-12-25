@@ -8,4 +8,4 @@ Open the `index.html` file and reference `dx.common.css` and a [predefined theme
         <!-- ... -->
     </head>
 
-[note] [SVG-based widgets](/concepts/60%20Themes%20and%20Styles/00%20HTML-%20and%20SVG-Based%20Widgets.md '/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_Widgets/') do not require theme stylesheets. If you choose to reference the stylesheets, the widgets apply an appearance that matches them.
+[note] [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20HTML-%20and%20SVG-Based%20Widgets.md '/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_Widgets/') do not require theme stylesheets. If you choose to reference the stylesheets, the UI components apply an appearance that matches them.

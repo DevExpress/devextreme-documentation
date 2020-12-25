@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Tooltip** widget.
+An object defining configuration options for the **Tooltip** UI component.
 
 ---
 #####See Also#####

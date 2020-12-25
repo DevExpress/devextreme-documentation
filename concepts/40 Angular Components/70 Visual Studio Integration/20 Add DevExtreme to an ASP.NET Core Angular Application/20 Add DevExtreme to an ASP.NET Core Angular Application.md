@@ -1,4 +1,4 @@
-This article describes how to create an ASP.NET Core Angular application and add a DevExtreme widget to it. You need Visual Studio 2017 v15.7 or later and .NET Core 2.1 SDK to do this.
+This article describes how to create an ASP.NET Core Angular application and add a DevExtreme UI component to it. You need Visual Studio 2017 v15.7 or later and .NET Core 2.1 SDK to do this.
 
 [note] Earlier Visual Studio and .NET Core SDK versions are supported by DevExtreme v17.2. You can find instructions in [this article](/Documentation/17_2/Guide/VS_Integration/Add_DevExtreme_to_an_ASP.NET_Core_Angular_Application/).
 
@@ -62,13 +62,13 @@ This article describes how to create an ASP.NET Core Angular application and add
 
 1. **Only .NET Core SDK 2.2 and later**: DevExtreme requires the <a href="https://stuk.github.io/jszip/" target="_blank">JSZip library</a>. Since JSZip v3.3.0, the library does not need to be registered. If you use an earlier version, register JSZip in the `tsconfig.json` file as shown in the [JSZip Registration](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/08%20Register%203rd-Party%20Dependencies/01%20JSZip%20Registration.md '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies/JSZip_Registration') article.
 
-1. Open the `ClientApp/src/app/app.module.ts` file and import modules that contain individual DevExtreme widgets or a module containing all the DevExtreme widgets and related utilities:
+1. Open the `ClientApp/src/app/app.module.ts` file and import modules that contain individual DevExtreme UI components or a module containing all the DevExtreme UI components and related utilities:
 
         <!-- tab: app.module.ts -->
-        // Imports an individual widget
+        // Imports an individual UI component
         import { DxDataGridModule } from "devextreme-angular"; 
 
-        // Imports all the DevExtreme widgets
+        // Imports all the DevExtreme UI components
         // import { DevExtremeModule } from "devextreme-angular"; 
 
         @NgModule({ 
@@ -81,7 +81,7 @@ This article describes how to create an ASP.NET Core Angular application and add
             ] 
         })
 
-1. Open the `ClientApp/src/app/fetch-data/fetch-data.component.html` file and replace the table in it with the following code. This code creates the DevExtreme **DataGrid** widget and binds it to sample data the `FetchDataComponent` provides:
+1. Open the `ClientApp/src/app/fetch-data/fetch-data.component.html` file and replace the table in it with the following code. This code creates the DevExtreme **DataGrid** UI component and binds it to sample data the `FetchDataComponent` provides:
 
         <!-- tab: fetch-data.component.html -->
         <dx-data-grid [dataSource]="forecasts"></dx-data-grid>

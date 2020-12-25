@@ -9,7 +9,7 @@ default: 'none'
 Specifies the selection mode.
 
 ---
-The following selection modes are available in the widget:
+The following selection modes are available in the UI component:
 
 - **Single**        
 Only one row can be in the selected state at a time.

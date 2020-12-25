@@ -1,8 +1,8 @@
-Exposes the **ScrollView** widget.
+Exposes the **ScrollView** UI component.
 
 Exports:
 
-- *default* - The [ScrollView](/api-reference/10%20UI%20Widgets/dxScrollView '/Documentation/ApiReference/UI_Widgets/dxScrollView/') widget
+- *default* - The [ScrollView](/api-reference/10%20UI%20Widgets/dxScrollView '/Documentation/ApiReference/UI_Widgets/dxScrollView/') UI component
 
         require("ui/scroll_view");
         // ===== or =====

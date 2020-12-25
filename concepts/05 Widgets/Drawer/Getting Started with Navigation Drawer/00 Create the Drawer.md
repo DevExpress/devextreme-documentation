@@ -1,4 +1,4 @@
-Wrap the view in the **Drawer** and specify a [template](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#template') for the **Drawer**'s content. Inside the **template**, set the **Drawer**'s width. You can use the nested widget's **width** option for this (see [Implement Navigation](/concepts/05%20Widgets/Drawer/Getting%20Started%20with%20Navigation%20Drawer/15%20Implement%20Navigation.md '/Documentation/Guide/Widgets/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation')), but in this tutorial, we use the `width` CSS property. The **Drawer**'s height adjusts to the view's height (specified via the [height](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#height') option).
+Wrap the view in the **Drawer** and specify a [template](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#template') for the **Drawer**'s content. Inside the **template**, set the **Drawer**'s width. You can use the nested UI component's **width** option for this (see [Implement Navigation](/concepts/05%20Widgets/Drawer/Getting%20Started%20with%20Navigation%20Drawer/15%20Implement%20Navigation.md '/Documentation/Guide/Widgets/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation')), but in this tutorial, we use the `width` CSS property. The **Drawer**'s height adjusts to the view's height (specified via the [height](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#height') option).
 
 In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#minSize') option to make the **Drawer** partially visible in the closed state. 
 
@@ -139,16 +139,16 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
 
 ##### React 
 
-    <!-- tab: DxComponent.js -->
+    <!-- tab: NavigationDrawer.js -->
     import React from "react";
     
     import "devextreme/dist/css/dx.common.css";
     import "devextreme/dist/css/dx.light.css";
-    import "./DxComponent.css";
+    import "./NavigationDrawer.css";
 
     import { Drawer } from "devextreme-react/drawer";
 
-    class DxComponent extends React.Component {
+    class NavigationDrawer extends React.Component {
         constructor(props) {
             super(props);
         }
@@ -165,9 +165,9 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
             );
         }
     }
-    export default DxComponent;
+    export default NavigationDrawer;
 
-    <!-- tab: DxComponent.css -->
+    <!-- tab: NavigationDrawer.css -->
     .dx-overlay-content {
         background-color: lightgray;
     }
@@ -179,13 +179,13 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
     <!-- tab: App.js -->
     import React, { Component } from "react";
 
-    import DxComponent from "./components/DxComponent";
+    import NavigationDrawer from "./components/NavigationDrawer";
 
     class App extends Component {
         render() {
             return (
                 <div className="App">
-                    <DxComponent />
+                    <NavigationDrawer />
                 </div>
             );
         }

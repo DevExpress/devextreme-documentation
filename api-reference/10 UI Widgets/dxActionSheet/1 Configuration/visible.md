@@ -6,6 +6,6 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not the **ActionSheet** widget is visible.
+A Boolean value specifying whether or not the **ActionSheet** UI component is visible.
 
 ---

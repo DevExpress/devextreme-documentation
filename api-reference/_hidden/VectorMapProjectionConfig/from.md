@@ -7,7 +7,7 @@ type: function(coordinates)
 Converts coordinates from [x, y] to [lon, lat].
 
 ##### param(coordinates): Array<Number>
-Two coordinates that represent a point in the widget coordinate system.    
+Two coordinates that represent a point in the UI component coordinate system.    
 Each coordinate ranges from -1 to 1.
 
 ##### return: Array<Number>

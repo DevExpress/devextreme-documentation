@@ -2,7 +2,7 @@
 ##### merge
 
 ---
-The search panel allows searching for values in several columns at once. The widget searches against only those columns whose [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '{basewidgetpath}/Configuration/columns/#allowSearch') option is set to **true**.
+The search panel allows searching for values in several columns at once. The UI component searches against only those columns whose [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '{basewidgetpath}/Configuration/columns/#allowSearch') option is set to **true**.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList SearchPanel](/images/treelist/visual_elements/search_panel.png)
 

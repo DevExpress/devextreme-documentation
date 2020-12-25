@@ -6,7 +6,7 @@ inherits: dxTextBox
 ---
 ---
 ##### shortDescription
-The **TextArea** is a widget that enables a user to enter and edit a multi-line text.
+The **TextArea** is a UI component that enables a user to enter and edit a multi-line text.
 
 ##### widgettree
 

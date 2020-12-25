@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the maximum height the widget can reach while resizing.
+Specifies the maximum height the UI component can reach while resizing.
 
 ##### return: Number | String
 The maximum height.

@@ -6,7 +6,7 @@ inherits: BaseSparkline
 ---
 ---
 ##### shortDescription
-The **Bullet** widget is useful when you need to compare a single measure to a target value. The widget comprises a horizontal bar indicating the measure and a vertical line indicating the target value.
+The **Bullet** UI component is useful when you need to compare a single measure to a target value. The UI component comprises a horizontal bar indicating the measure and a vertical line indicating the target value.
 
 ##### widgettree
 target: 30,

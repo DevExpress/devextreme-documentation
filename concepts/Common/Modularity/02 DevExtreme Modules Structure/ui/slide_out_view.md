@@ -1,8 +1,8 @@
-Exposes the **SlideOutView** widget.
+Exposes the **SlideOutView** UI component.
 
 Exports:
 
-- *default* - The [SlideOutView](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/') widget
+- *default* - The [SlideOutView](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/') UI component
 
         require("ui/slide_out_view");
         // ===== or =====

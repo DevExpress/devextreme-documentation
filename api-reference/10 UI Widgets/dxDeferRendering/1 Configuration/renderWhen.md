@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies when the widget content is rendered.
+Specifies when the UI component content is rendered.
 
 ---
-The widget content is rendered when this option is set to **true**, or when a Promise assigned to this option is resolved.
+The UI component content is rendered when this option is set to **true**, or when a Promise assigned to this option is resolved.

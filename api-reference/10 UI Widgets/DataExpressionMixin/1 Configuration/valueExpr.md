@@ -5,7 +5,7 @@ default: 'this'
 ---
 ---
 ##### shortDescription
-Specifies which data field provides unique values to the widget's [value](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value').
+Specifies which data field provides unique values to the UI component's [value](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value').
 
 ##### param(item): Object
 The current item's data object.

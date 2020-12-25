@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **FilterBuilder** widget allows a user to build complex filter expressions with an unlimited number of filter conditions, combined by logical operations using the UI.
+The **FilterBuilder** UI component allows a user to build complex filter expressions with an unlimited number of filter conditions, combined by logical operations using the UI.
 
 ##### widgettree
 allowHierarchicalFields: true,

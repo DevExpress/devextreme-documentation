@@ -1,4 +1,4 @@
-A specific widget instance is required to call methods and subscribe to events. Call the widget class's static **getInstance(element)** method to retrieve the existing widget instance.
+A specific UI component instance is required to call methods and subscribe to events. Call the UI component class's static **getInstance(element)** method to retrieve the existing UI component instance.
 
     // Modular approach
     import Accordion from "devextreme/ui/accordion";
@@ -10,7 +10,7 @@ A specific widget instance is required to call methods and subscribe to events. 
     let element = document.getElementById("myAccordion");
     let instance = DevExpress.ui.dxAccordion.getInstance(element);
 
-You can get and set widget options at runtime using the **option()** method. 
+You can get and set UI component options at runtime using the **option()** method. 
 
     // Get an option value
     let isVisible = instance.option("visible");

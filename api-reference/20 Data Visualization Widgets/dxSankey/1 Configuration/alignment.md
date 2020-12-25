@@ -9,7 +9,7 @@ default: 'center'
 Aligns node columns vertically.
 
 ---
-A string value aligns all node columns uniformly. An array of strings allows you to align each node column individually. For example, the **Sankey** widget contains four columns, and the **alignment** option is specified as follows:
+A string value aligns all node columns uniformly. An array of strings allows you to align each node column individually. For example, the **Sankey** UI component contains four columns, and the **alignment** option is specified as follows:
 
 ---
 ##### jQuery

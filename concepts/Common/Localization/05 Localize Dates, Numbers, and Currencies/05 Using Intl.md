@@ -6,7 +6,7 @@
     <!-- tab: index.js -->
     DevExpress.localization.locale(navigator.language);
     // ...
-    // DevExtreme widgets are configured here
+    // DevExtreme UI components are configured here
     // ...
 
     <!-- tab: index.html -->

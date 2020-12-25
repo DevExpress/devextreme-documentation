@@ -1,4 +1,4 @@
-Data shaping is implemented by the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component and its methods. To call them, get a **DataSource** instance from your widget using the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#getDataSource') method. Alternatively, you can use a standalone instance saved in a constant/component property when you created the **DataSource**.
+Data shaping is implemented by the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component and its methods. To call them, get a **DataSource** instance from your UI component using the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#getDataSource') method. Alternatively, you can use a standalone instance saved in a constant/component property when you created the **DataSource**.
 
 The following code obtains a **DataSource** instance using both approaches and calls one of the data shaping methods&mdash;[filter(filterExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr'). Such methods only set up data shaping settings. To apply them, the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method is called.
 
@@ -13,7 +13,7 @@ The following code obtains a **DataSource** instance using both approaches and c
             // ...
         });
 
-        // ===== or getting a DataSource from the widget (DataGrid here) =====
+        // ===== or getting a DataSource from the UI component (DataGrid here) =====
         var dataSource = $("#dataGridContainer").dxDataGrid("getDataSource");
 
         // ===== applying a filter =====
@@ -49,7 +49,7 @@ The following code obtains a **DataSource** instance using both approaches and c
             }
         }
 
-- **Getting a DataSource instance from the widget (DataGrid here)**
+- **Getting a DataSource instance from the UI component (DataGrid here)**
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
@@ -102,7 +102,7 @@ The following code obtains a **DataSource** instance using both approaches and c
         }
         </script>
 
-- **Getting a DataSource instance from the widget (DataGrid here)**
+- **Getting a DataSource instance from the UI component (DataGrid here)**
 
         <!-- tab: App.vue -->
         <template>
@@ -162,7 +162,7 @@ The following code obtains a **DataSource** instance using both approaches and c
         }
         export default App;
 
-- **Getting a DataSource instance from the widget (DataGrid here)**
+- **Getting a DataSource instance from the UI component (DataGrid here)**
 
         <!-- tab: App.js -->
         import React from 'react';

@@ -13,7 +13,7 @@ The node that has been expanded; **null** for the root node.
 A Promise that is resolved with the result from the server or an array of objects to be converted to child nodes.
 
 ---
-**createChildren** is called at the beginning of the widget's lifetime and each time a user expands a node whose child nodes have not been loaded yet. It allows you to load the entire tree in portions: load root nodes first (when the function's **parentNode** parameter is **null**) and the child nodes of each expanded node later.
+**createChildren** is called at the beginning of the UI component's lifetime and each time a user expands a node whose child nodes have not been loaded yet. It allows you to load the entire tree in portions: load root nodes first (when the function's **parentNode** parameter is **null**) and the child nodes of each expanded node later.
 
 This function has the following restrictions:
 
@@ -80,6 +80,64 @@ The following code shows how to use this function with a remote service:
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeView
+            :create-children="createChildren"
+            :root-value="''"
+            data-structure="plain"
+        />
+    </template>
+    <script>
+
+    import DxTreeView from 'devextreme-vue/tree-view';
+    import 'whatwg-fetch';
+
+    export default {
+        components: {
+            DxTreeView
+        },
+        methods: {
+            createChildren: function(parent) {
+            let parentId = parent ? parent.itemData.id : '';
+
+            return fetch(`http://url/to/the/service?parentId=${parentId}`)
+                .then(response => response.json())
+                .catch(() => { throw 'Data Loading Error'; });
+            }
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import TreeView from 'devextreme-react/tree-view';
+    import 'whatwg-fetch';
+
+    const App = () => {
+        return (
+            <TreeView
+                dataStructure="plain"
+                rootValue="''"
+                createChildren={createChildren}
+            />
+        );
+    }
+
+    const createChildren = (parent) => {
+        let parentId = parent ? parent.itemData.id : '';
+
+        return fetch(`http://url/to/the/service?parentId=${parentId}`)
+            .then(response => response.json())
+            .catch(() => { throw 'Data Loading Error'; });
+    }
+
+    export default App;
 
 ---
 

@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised when the widget's [title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '{basewidgetpath}/Configuration/#title') is rendered.
+Raised when the UI component's [title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '{basewidgetpath}/Configuration/#title') is rendered.
 
 ---
 Main article: [onTitleRendered](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/onTitleRendered.md '{basewidgetpath}/Configuration/#onTitleRendered')

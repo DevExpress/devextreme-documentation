@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Accordion** widget.
+An object defining configuration options for the **Accordion** UI component.
 
 ---
 #####See Also#####

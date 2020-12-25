@@ -6,7 +6,7 @@ inherits: BaseSparkline,DataHelperMixin
 ---
 ---
 ##### shortDescription
-The **Sparkline** widget is a compact chart that contains only one series. Owing to their size, sparklines occupy very little space and can be easily collected in a table or embedded straight in text.
+The **Sparkline** UI component is a compact chart that contains only one series. Owing to their size, sparklines occupy very little space and can be easily collected in a table or embedded straight in text.
 
 ##### widgettree
 dataSource: [{

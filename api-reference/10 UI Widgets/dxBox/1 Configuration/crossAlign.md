@@ -6,7 +6,7 @@ default: 'start'
 ---
 ---
 ##### shortDescription
-Specifies how widget items are aligned cross-wise.
+Specifies how UI component items are aligned cross-wise.
 
 ---
 #include common-ref-enum with {

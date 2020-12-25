@@ -27,7 +27,7 @@ Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Confi
     <dx-button-group ...
         selectionMode="multiple"
         [(selectedItemKeys)]="selectedFontStyleNames"
-        (onSelectionChanged)="logSelectionChanged($event)">
+        (onSelectionChanged)="logSelectionChanged()">
     </dx-button-group>
 
     <!-- tab: app.component.ts -->
@@ -142,7 +142,7 @@ Now you should be able to select multiple buttons and see messages like the foll
 
     The following styles are selected: bold, underline, strike
 
-You have configured basic **ButtonGroup** features. To take a more detailed look at this widget, explore the following resources:
+You have configured basic **ButtonGroup** features. To take a more detailed look at this UI component, explore the following resources:
 
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ButtonGroup/Overview) 
 - [API Reference](/api-reference/10%20UI%20Widgets/dxButtonGroup '/Documentation/ApiReference/UI_Widgets/dxButtonGroup')

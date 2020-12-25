@@ -15,7 +15,7 @@ The index of the item to be reordered.
 The index of the item after which the reordered item should be placed.
 
 ---
-If the widget displays a grouped list, the item index should be specified like the following.
+If the UI component displays a grouped list, the item index should be specified like the following.
 
     <!--JavaScript-->
     {

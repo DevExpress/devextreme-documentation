@@ -11,7 +11,7 @@ Specifies dates that users cannot select. Applies only if [pickerType](/api-refe
 Information about the checked date.
 
 ##### field(data.component): dxDateBox
-The widget's [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Methods/#instance').
+The UI component's [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Methods/#instance').
 
 ##### field(data.date): Date
 The currently checked date.
@@ -23,12 +23,14 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 **true** if the date should be disabled; otherwise **false**.
 
 ---
+This property accepts an array of dates:
+
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        $("#dateBoxContainer").dxDateBox({
+        $("#{widgetName}Container").dx{WidgetName}({
             // ...
             disabledDates: [ 
                 new Date("07/1/2017"),  
@@ -41,9 +43,9 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-date-box ...
+    <dx-{widget-name} ...
         [disabledDates]="disabledDates">
-    </dx-date-box>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -66,7 +68,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxDateBoxModule } from 'devextreme-angular';
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -74,7 +76,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
         ],
         imports: [
             BrowserModule,
-            DxDateBoxModule
+            Dx{WidgetName}Module
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -85,7 +87,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
     <!-- tab: App.vue -->
     <template>
-        <DxDateBox ...
+        <Dx{WidgetName} ...
             :disabled-dates="disabledDates"
         />
     </template>
@@ -94,11 +96,11 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxDateBox from 'devextreme-vue/date-box';
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
     export default {
         components: {
-            DxDateBox
+            Dx{WidgetName}
         },
         data() {
             return {
@@ -120,7 +122,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DateBox from 'devextreme-react/date-box';
+    import {WidgetName} from 'devextreme-react/{widget-name}';
 
     class App extends React.Component {
         constructor() {
@@ -132,7 +134,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
         }
         render() {
             return (
-                <DateBox ...
+                <{WidgetName} ...
                     disabledDates={this.disabledDates} 
                 />
             );
@@ -142,14 +144,14 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
 ---
 
-... or a function that specifies whether the currently checked date is disabled.
+Alternatively, pass a function to **disabledDates**. This function should define the rules that determine whether the checked date is disabled. A separate set of rules should target every view individually.
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        $("#dateBoxContainer").dxDateBox({
+        $("#{widgetName}Container").dx{WidgetName}({
             // ...
             disabledDates: function(args) {
                 const dayOfWeek = args.date.getDay();
@@ -165,9 +167,9 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-date-box ...
+    <dx-{widget-name} ...
         [disabledDates]="disableDates">
-    </dx-date-box>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -193,7 +195,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxDateBoxModule } from 'devextreme-angular';
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -201,7 +203,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
         ],
         imports: [
             BrowserModule,
-            DxDateBoxModule
+            Dx{WidgetName}Module
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -212,7 +214,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
 
     <!-- tab: App.vue -->
     <template>
-        <DxDateBox ...
+        <Dx{WidgetName} ...
             :disabled-dates="disableDates"
         />
     </template>
@@ -221,11 +223,11 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxDateBox from 'devextreme-vue/date-box';
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
     export default {
         components: {
-            DxDateBox
+            Dx{WidgetName}
         },
         methods: {
             disableDates(args) {
@@ -248,7 +250,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import DateBox from 'devextreme-react/date-box';
+    import {WidgetName} from 'devextreme-react/{widget-name}';
 
     class App extends React.Component {
         disableDates(args) {
@@ -261,7 +263,7 @@ The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.
         }
         render() {
             return (
-                <DateBox ...
+                <{WidgetName} ...
                     disabledDates={this.disableDates} 
                 />
             );

@@ -6,7 +6,7 @@ inherits: dxPopup
 ---
 ---
 ##### shortDescription
-The **Popover** is a widget that shows notifications within a box with an arrow pointing to a specified UI element.
+The **Popover** is a UI component that shows notifications within a box with an arrow pointing to a specified UI element.
 
 ##### widgettree
 target: "#widget",

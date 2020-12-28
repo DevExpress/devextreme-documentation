@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a dependency is inserted.
 
 ---
-<!-- Description goes here -->
+Main article: [onDependencyInserted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyInserted)

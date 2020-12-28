@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a task is updated.
 
 ---
-<!-- Description goes here -->
+Main article: [onTaskUpdated](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskUpdated)

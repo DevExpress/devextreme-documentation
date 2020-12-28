@@ -1,0 +1,1 @@
+This topic describes how to bind the [dxVectorMap](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap) UI component to data. To do this, specify data sources for map areas and markers.

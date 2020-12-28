@@ -163,9 +163,9 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
             };
             const formattedStartDate = e.startDate.toLocaleString('en', formatOptions);
             const formattedEndDate = e.endDate.toLocaleString('en', formatOptions);
-            if(this.currentView === 'day' | 'timelineDay') 
+            if(currentView === 'day' | 'timelineDay') 
                 return formattedStartDate;
-            if(this.currentView === 'month' ) 
+            if(currentView === 'month' ) 
                 return e.startDate.toLocaleString('en', { year: 'numeric', month: 'numeric' });
             return formattedStartDate + ' - ' + formattedEndDate;
         }, [currentView]);

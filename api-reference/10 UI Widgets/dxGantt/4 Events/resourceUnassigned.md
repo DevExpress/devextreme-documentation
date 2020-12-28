@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a resource is unassigned from a task.
 
 ---
-<!-- Description goes here -->
+Main article: [onResourceUnassigned](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceUnassigned)

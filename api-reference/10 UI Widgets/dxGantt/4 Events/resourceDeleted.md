@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a resource is deleted.
 
 ---
-<!-- Description goes here -->
+Main article: [onResourceDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceDeleted)

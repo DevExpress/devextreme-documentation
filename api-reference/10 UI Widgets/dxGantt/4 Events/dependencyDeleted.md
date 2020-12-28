@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a dependency is deleted.
 
 ---
-<!-- Description goes here -->
+Main article: [onDependencyDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyDeleted)

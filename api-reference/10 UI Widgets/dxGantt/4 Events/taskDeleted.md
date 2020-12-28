@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a task is deleted.
 
 ---
-<!-- Description goes here -->
+Main article: [onTaskDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskDeleted)

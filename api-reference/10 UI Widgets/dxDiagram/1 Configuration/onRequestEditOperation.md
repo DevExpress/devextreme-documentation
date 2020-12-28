@@ -31,7 +31,7 @@ Model data. Available only if you use Knockout.
 The processed operation.
 
 ##### field(e.reason): 'checkUIElementAvailability' | 'modelModification'
-<!-- Description goes here -->
+Identifies the reason why the event is raised.
 
 ---
 If you want to disable a specific operation type for the entire diagram, you can also set an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) property to `false`.

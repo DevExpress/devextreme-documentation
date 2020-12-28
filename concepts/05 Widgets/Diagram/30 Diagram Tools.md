@@ -90,7 +90,7 @@ The **Diagram** UI component allows you to customize its UI tools with the follo
             }
       }).dxDiagram("instance");
       ...
-	
+
 ##### Angular
 
       <!-- tab: app.component.html -->
@@ -153,6 +153,7 @@ The **Diagram** UI component allows you to customize its UI tools with the follo
                   alert("Hello!")
       }
       // ...
+
 ##### Vue
 
       <!-- tab: App.vue -->
@@ -321,6 +322,7 @@ The **Diagram** UI component allows you to customize its UI tools with the follo
       }
       };
       </script>
+
 ##### React
 
       <!-- tab: App.js -->
@@ -581,4 +583,5 @@ The **Diagram** UI component allows you to customize its UI tools with the follo
                   }
             </text>)
       )
+      
 ---

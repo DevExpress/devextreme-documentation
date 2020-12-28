@@ -131,11 +131,11 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     </tr>
 </table>
 
-- The **updateUI** parameter specifies whether the event responds to a user action or requests instruction on related UI command availability.
+- The **reason** parameter specifies whether the event responds to a user action or requests instruction on related UI command availability.
 
-    - The `true` value indicates that the UI component is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
+    - The `checkUIElementAvailability` value indicates that the UI component is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
 
-    - The `false` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed and display an error message if necessary.
+    - The `modelModification` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed and display an error message if necessary.
 
 ---
 ##### jQuery
@@ -143,16 +143,17 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     $(function() {
         $("#diagram").dxDiagram({
             onRequestEditOperation: function(e) {
-                var dataItem;
                 if(e.operation === "addShape") {
                     if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                        !e.updateUI && showToast("You can add only a 'Team' or 'Employee' shape.");
+                        if(e.reason !== "checkUIElementAvailability")
+                            showToast("You can add only a 'Team' or 'Employee' shape.");
                         e.allowed = false;
                     }
                 }
                 else if(e.operation === "changeShapeText") {
                     if(e.args.text === "") {
-                        !e.updateUI && showToast("A shape text cannot be empty.");
+                        if(e.reason !== "checkUIElementAvailability")
+                            showToast("A shape text cannot be empty.");
                         e.allowed = false;
                     }
                 }
@@ -167,16 +168,17 @@ Every time a user attempts an edit operation, the UI component raises the [reque
 
     <!-- tab: app.component.ts -->
     requestEditOperationHandler(e) {
-        var dataItem;
         if(e.operation === "addShape") {
             if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                !e.updateUI && this.showToast("You can add only a 'Team' or 'Employee' shape.");
+                if(e.reason !== "checkUIElementAvailability")
+                    this.showToast("You can add only a 'Team' or 'Employee' shape.");
                 e.allowed = false;
             }
         }
         else if(e.operation === "changeShapeText") {
             if(e.args.text === "") {
-                !e.updateUI && this.showToast("A shape text cannot be empty.");
+                if(e.reason !== "checkUIElementAvailability")
+                    this.showToast("A shape text cannot be empty.");
                 e.allowed = false;
             }
         }
@@ -191,22 +193,25 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     ...
     methods: {
         onRequestEditOperation(e) {
-        var dataItem;
-        if(e.operation === 'addShape') {
-            if(e.args.shape.type !== 'employee' && e.args.shape.type !== 'team') {
-            !e.updateUI && this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
-            e.allowed = false;
+            if(e.operation === 'addShape') {
+                if(e.args.shape.type !== 'employee' && e.args.shape.type !== 'team') {
+                    if(e.reason !== 'checkUIElementAvailability') {
+                        this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
+                    }
+                e.allowed = false;
+                }
             }
-        }
-        else if(e.operation === 'changeShapeText') {
-            if(e.args.text === '') {
-            !e.updateUI && this.showToast('A shape text cannot be empty.');
-            e.allowed = false;
+            else if(e.operation === 'changeShapeText') {
+                if(e.args.text === '') {
+                    if(e.reason !== 'checkUIElementAvailability') {
+                        this.showToast('A shape text cannot be empty.');
+                    }
+                e.allowed = false;
+                }
             }
-        }
-        else if(e.operation === 'beforeChangeConnectorText') {
-            e.allowed = false;
-        }
+            else if(e.operation === 'beforeChangeConnectorText') {
+                e.allowed = false;
+            }
         ...
 
 ##### React
@@ -214,25 +219,26 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     <Diagram id="diagram" onRequestEditOperation={this.onRequestEditOperation} />
     ...
     onRequestEditOperation(e) {
-        var dataItem;
         if(e.operation === 'addShape') {
             if(e.args.shape.type !== 'employee' && e.args.shape.type !== 'team') {
-                !e.updateUI && this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
+                if(e.reason !== 'checkUIElementAvailability') {
+                this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
+                }
                 e.allowed = false;
-        }
+            }
         }
         else if(e.operation === 'changeShapeText') {
             if(e.args.text === '') {
-                !e.updateUI && this.showToast('A shape text cannot be empty.');
+                if(e.reason !== 'checkUIElementAvailability') {
+                this.showToast('A shape text cannot be empty.');
+                }
                 e.allowed = false;
-        }
+            }
         }
         else if(e.operation === 'beforeChangeConnectorText') {
             e.allowed = false;
         }
         ...
-
-
 
 ##### ASP.NET Core Controls
 
@@ -242,16 +248,17 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     )
     ...
     function onRequestEditOperation(e) {
-        var dataItem;
         if(e.operation === "addShape") {
             if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                !e.updateUI && showToast("You can add only a 'Team' or 'Employee' shape.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("You can add only a 'Team' or 'Employee' shape.");
                 e.allowed = false;
             }
         }
         else if(e.operation === "changeShapeText") {
             if(e.args.text === "") {
-                !e.updateUI && showToast("A shape text cannot be empty.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("A shape text cannot be empty.");
                 e.allowed = false;
             }
         }
@@ -268,16 +275,17 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     )
     ...
     function onRequestEditOperation(e) {
-        var dataItem;
         if(e.operation === "addShape") {
             if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                !e.updateUI && showToast("You can add only a 'Team' or 'Employee' shape.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("You can add only a 'Team' or 'Employee' shape.");
                 e.allowed = false;
             }
         }
         else if(e.operation === "changeShapeText") {
             if(e.args.text === "") {
-                !e.updateUI && showToast("A shape text cannot be empty.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("A shape text cannot be empty.");
                 e.allowed = false;
             }
         }

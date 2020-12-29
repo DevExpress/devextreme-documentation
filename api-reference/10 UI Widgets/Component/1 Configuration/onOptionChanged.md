@@ -6,7 +6,7 @@ EventForAction: Component.optionChanged
 ---
 ---
 ##### shortDescription
-A function that is executed after a UI component option is changed.
+A function that is executed after a UI component property is changed.
 
 ##### param(e): Object
 Information about the event.
@@ -15,17 +15,17 @@ Information about the event.
 The UI component's instance.
 
 ##### field(e.fullName): String
-The path to the modified option that includes all parent options.
+The path to the modified property that includes all parent properties.
 
 ##### field(e.name): String
-The modified option if it belongs to the first level. Otherwise, the first-level option it is nested into.
+The modified property if it belongs to the first level. Otherwise, the first-level property it is nested into.
 
 ##### field(e.value): any
-The modified option's new value.
+The modified property's new value.
 
 ---
 
-The following example shows how to subscribe to changes of a component option:
+The following example shows how to subscribe to changes of a component property:
 
 ---
 
@@ -36,8 +36,8 @@ The following example shows how to subscribe to changes of a component option:
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             onOptionChanged: function(e) {
-                if(e.name === "changedOption") {
-                    // handle the option change here
+                if(e.name === "changedProperty") {
+                    // handle the property change here
                 }
             }
         });
@@ -47,7 +47,7 @@ The following example shows how to subscribe to changes of a component option:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
-        (onOptionChanged)="onOptionChanged($event)"> 
+        (onOptionChanged)="handlePropertyChange($event)"> 
     </dx-{widget-name}> 
 
     <!-- tab: app.component.ts -->
@@ -61,9 +61,9 @@ The following example shows how to subscribe to changes of a component option:
 
     export class AppComponent { 
         // ...
-        onOptionChanged(e) {
-            if(e.name === "changedOption") { 
-                // handle the option change here
+        handlePropertyChange(e) {
+            if(e.name === "changedProperty") { 
+                // handle the property change here
             }
         }
     } 
@@ -93,8 +93,8 @@ The following example shows how to subscribe to changes of a component option:
     <!-- tab: App.vue -->
     <template> 
         <Dx{WidgetName} ...
-            :on-option-changed="onOptionChanged">            
-        </Dx{WidgetName}> 
+            @option-changed="handlePropertyChange"
+        />            
     </template> 
   
     <script> 
@@ -108,9 +108,9 @@ The following example shows how to subscribe to changes of a component option:
         }, 
         // ...
         methods: { 
-            onOptionChanged: function(e) {
-                if(e.name === "changedOption") {
-                    // handle the option change here
+            handlePropertyChange: function(e) {
+                if(e.name === "changedProperty") {
+                    // handle the property change here
                 }
             }
         } 
@@ -128,17 +128,17 @@ The following example shows how to subscribe to changes of a component option:
 
     import {WidgetName} from 'devextreme-react/{widget-name}'; 
 
-    const onOptionChanged = (e) => {
-        if(e.name === "changedOption") {
-            // handle the option change here
+    const handlePropertyChange = (e) => {
+        if(e.name === "changedProperty") {
+            // handle the property change here
         }
     }
 
     export default function App() { 
         return ( 
             <{WidgetName} ...
-                onOptionChanged={onOptionChanged}>        
-            </{WidgetName}> 
+                onOptionChanged={handlePropertyChange}
+            />        
         ); 
     } 
 

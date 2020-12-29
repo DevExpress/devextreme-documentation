@@ -18,7 +18,7 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
-The key of the inserted resource assignment. 
+The key of the inserted resource assignment.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

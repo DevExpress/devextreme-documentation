@@ -13,34 +13,34 @@ Specifies a custom template for rows.
 The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/') object extended by the **DataGrid**'s instance (the **component** field) and column configuration (**columns**).
 
 ##### field(rowInfo.columns): Array<dxDataGridColumn>
-<!-- %param(e.columns)% -->
+<!-- %field(e.columns)% -->
 
 ##### field(rowInfo.component): dxDataGrid
-<!-- %param(e.component)% -->
+<!-- %field(e.component)% -->
 
 ##### field(rowInfo.data): any
-<!-- %param(e.data)% -->
+<!-- %field(e.data)% -->
 
 ##### field(rowInfo.groupIndex): Number
-<!-- %param(e.groupIndex)% -->
+<!-- %field(e.groupIndex)% -->
 
 ##### field(rowInfo.isExpanded): Boolean
-<!-- %param(e.isExpanded)% -->
+<!-- %field(e.isExpanded)% -->
 
 ##### field(rowInfo.isSelected): Boolean
-<!-- %param(e.isSelected)% -->
+<!-- %field(e.isSelected)% -->
 
 ##### field(rowInfo.key): any
-<!-- %param(e.key)% -->
+<!-- %field(e.key)% -->
 
 ##### field(rowInfo.rowIndex): Number
-<!-- %param(e.rowIndex)% -->
+<!-- %field(e.rowIndex)% -->
 
 ##### field(rowInfo.rowType): String
-<!-- %param(e.rowType)% -->
+<!-- %field(e.rowType)% -->
 
 ##### field(rowInfo.values): Array<any>
-<!-- %param(e.values)% -->
+<!-- %field(e.values)% -->
 
 ---
 The following details should be taken into account when you use a **rowTemplate**:

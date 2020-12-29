@@ -165,8 +165,8 @@ The following code shows how to locate all labels on top of editors. We align th
             <Form
                 formData={employee}
                 colCount={2}
-                labeLocation="top"
-                showColonAfterLable={false}>
+                labelLocation="top"
+                showColonAfterLabel={false}>
                 <Item dataField="name" />
                 <Item dataField="position" />
                 <Item dataField="hireDate" />
@@ -184,4 +184,3 @@ The following code shows how to locate all labels on top of editors. We align th
 
 
 ---
-

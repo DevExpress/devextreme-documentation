@@ -1,6 +1,6 @@
-DevExtreme includes a validation engine that checks edited values before they are saved. This engine supports different validation rule types, such as [Email](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/EmailRule/), [Numeric](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/NumericRule/), [Pattern](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/PatternRule/), and more. 
+DevExtreme includes a validation engine that checks edited values before they are saved. This engine supports different [validation rule types](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/). 
 
-To apply validation rules to a simple item, specify them in the [validationRules[]](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#validationRules) array. The Form validates an editor when this editor's value changes. To validate all editors simultaneously, call the [validate()](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#validate) method. 
+To apply validation rules to a simple item, specify them in the [validationRules[]](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#validationRules) array. An editor is validated when its value changes. To validate all editors simultaneously, call the [validate()](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#validate) Form method. 
 
 You can specify an item's [isRequired](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property to implicitly apply the [Required Rule](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RequiredRule/) to it.
 
@@ -221,4 +221,3 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
     export default App;
 
 ---
-

@@ -7,7 +7,7 @@ The following code shows how to dynamically make all editors in the Form read-on
 
     <!-- tab: index.js -->
     $(function() {
-        let form = $("#formContainer").dxForm({
+        const form = $("#formContainer").dxForm({
             formData: {
                 name: "John Heart",
                 position: "CEO",
@@ -209,4 +209,3 @@ The following code shows how to dynamically make all editors in the Form read-on
 
 
 ---
-

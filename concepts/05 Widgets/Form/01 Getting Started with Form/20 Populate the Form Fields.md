@@ -1,6 +1,8 @@
 The Form generates a [simple item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/) for each field in the [formData](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData) object. A simple item is a label-editor pair. 
 
-To populate form fields, assign an object to the **formData** property. Each field in this object will be visualized as a label-editor pair. Such pairs are called "simple items". The Form automatically defines which editors it will generate for fields in the **formData** object. The editor's type depends on the data type of the field's value. The Form in the following example will create the [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/), [NumberBox](/Documentation/ApiReference/UI_Widgets/dxNumberBox/), and [DateBox](/Documentation/ApiReference/UI_Widgets/dxDateBox/) editors:
+To populate form fields, assign an object to the [formData](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData) property. Each data field in this object produces a [simple item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/)&mdash;a label-editor pair in which the label displays the data field name and the editor edits the data field value.
+
+The Form chooses default editors based on the field's data type: [TextBox](/Documentation/ApiReference/UI_Widgets/dxTextBox/) for string values, [NumberBox](/Documentation/ApiReference/UI_Widgets/dxNumberBox/) for numbers, [DateBox](/Documentation/ApiReference/UI_Widgets/dxDateBox/) for dates. You can use the [editorType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType) property to specify an editor explicitly. In the following example, the Form uses default editors:
 
 ---
 ##### jQuery

@@ -26,11 +26,8 @@ The name of the [data source field](/api-reference/_hidden/GridBaseColumn/dataFi
 * **Caption**        
 The text displayed in the column header.
 
-* **Type ([command columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/') only)**       
-The [type](/api-reference/_hidden/dxDataGridColumn/type.md '{basewidgetpath}/Configuration/columns/#type') of the command column.
-
 * **Service String**    
-Any string matching the following format: *"optionName:value"*, where *optionName* is one of the [column options](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/').
+A string that matches the following format: *"optionName:value"*, where *optionName* is one of the [column options](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/'). For example, the following string corresponds to the command column: `"type:buttons"`.
 
 #####See Also#####
 - [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/')

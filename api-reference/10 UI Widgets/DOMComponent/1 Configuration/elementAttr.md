@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Specifies the <a href="http://www.w3schools.com/tags/ref_attributes.asp" target="_blank">attributes</a> to be attached to the widget's root element.
+Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attributes</a> to be attached to the UI component's container element.
 
 ---
 ---

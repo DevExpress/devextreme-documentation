@@ -1,6 +1,6 @@
 The **Diagram** allows you to bind a number of shape and connector visual properties, like type, size, and style. 
 
-[note] If a binding option is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** widget and is lost after a page is reloaded.
+[note] If a binding option is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** UI component and is lost after a page is reloaded.
        
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
 

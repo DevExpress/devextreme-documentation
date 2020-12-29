@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widget adapts to small screens.
+Specifies whether the UI component adapts to small screens.
 
 ---
 #include common-demobutton with {

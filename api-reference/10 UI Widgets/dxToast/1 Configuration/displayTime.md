@@ -5,6 +5,6 @@ default: 2000, 4000 (Material)
 ---
 ---
 ##### shortDescription
-The time span in milliseconds during which the **Toast** widget is visible.
+The time span in milliseconds during which the **Toast** UI component is visible.
 
 ---

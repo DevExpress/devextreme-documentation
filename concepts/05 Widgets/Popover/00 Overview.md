@@ -1,4 +1,4 @@
-The **Popover** is a widget that shows notifications within a box with an arrow pointing to a specified UI element.
+The **Popover** is a UI component that shows notifications within a box with an arrow pointing to a specified UI element.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"

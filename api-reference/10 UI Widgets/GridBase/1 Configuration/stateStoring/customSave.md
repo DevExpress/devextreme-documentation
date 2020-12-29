@@ -7,7 +7,7 @@ type: function(gridState)
 Specifies a function that is executed on state saving. Applies only if the [type](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/stateStoring/type.md '{basewidgetpath}/Configuration/stateStoring/#type') is *"custom"*.
 
 ##### param(gridState): Object
-The current widget state.
+The current UI component state.
 
 ---
 Use the **customSave** and [customLoad](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions.

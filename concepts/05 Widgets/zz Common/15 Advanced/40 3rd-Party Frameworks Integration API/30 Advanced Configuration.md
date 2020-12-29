@@ -1,4 +1,4 @@
-Specify the widget's **integrationOptions** option to provide two-way binding and template support.
+Specify the UI component's **integrationOptions** option to provide two-way binding and template support.
 
     DevExpress.ui.dxAccordion(element, {
         ...
@@ -29,11 +29,11 @@ The **integrationOptions** configuration object contains the following fields:
 
      - **deep** - Specifies whether the watcher uses deep or shallow comparison.
 
- - The method should return a function that is called when watchers related to the widget are deleted.
+ - The method should return a function that is called when watchers related to the UI component are deleted.
 
 - **templates**
 
- This field holds a map of the templates that are added when the widget is initialized. Item keys should correspond to template names. Item values should be objects that contain render functions.
+ This field holds a map of the templates that are added when the UI component is initialized. Item keys should correspond to template names. Item values should be objects that contain render functions.
 
         templates: {
             itemTemplate: {
@@ -51,7 +51,7 @@ The **integrationOptions** configuration object contains the following fields:
 
 - **createTemplate**
 
- A function that processes a custom template. It accepts an HTML markup or a DOM node passed to a widget's **...Template** option and returns an object with a render function.
+ A function that processes a custom template. It accepts an HTML markup or a DOM node passed to a UI component's **...Template** option and returns an object with a render function.
 
         createTemplate: function(source) {
             var template = Hogan.compile(source);

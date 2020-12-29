@@ -2,7 +2,7 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"
 }
 
-Every time a user attempts an edit operation, the widget raises the [requestEditOperation](/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#requestEditOperation) event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
+Every time a user attempts an edit operation, the UI component raises the [requestEditOperation](/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#requestEditOperation) event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
 
 - The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) option is set to `false`, the event does not fire for this operation. The table below lists all available operations.
 
@@ -14,12 +14,12 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     </tr>
     <tr>
         <td>addShape</td>
-        <td>A user is about to add a shape / The widget determines the **Paste** command's visibility.</td>
+        <td>A user is about to add a shape / The UI component determines the **Paste** command's visibility.</td>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/#allowAddShape">allowAddShape</a></td>
     </tr>
     <tr>
         <td>addShapeFromToolbox</td>
-        <td>A user starts dragging a shape from the toolbox / The widget determines the visibility of a shape in the context toolbox.</td>
+        <td>A user starts dragging a shape from the toolbox / The UI component determines the visibility of a shape in the context toolbox.</td>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/#allowAddShape">allowAddShape</a></td>
     </tr>
     <tr>
@@ -34,7 +34,7 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     </tr>
     <tr>
         <td>changeConnection</td>
-        <td>A user is about to link or delink a connector from a shape / The widget determines a connection point's visibility.</td>
+        <td>A user is about to link or delink a connector from a shape / The UI component determines a connection point's visibility.</td>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/#allowChangeConnection">allowChangeConnection</a></td>
     </tr>
     <tr>
@@ -54,12 +54,12 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     </tr>
     <tr>
         <td>deleteConnector</td>
-        <td>A user is about to delete a connector / The widget determines the **Cut** and **Delete** commands' visibility.</td>
+        <td>A user is about to delete a connector / The UI component determines the **Cut** and **Delete** commands' visibility.</td>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/#allowDeleteConnector">allowDeleteConnector</a></td>
     </tr>
     <tr>
         <td>deleteShape</td>
-        <td>A user is about to delete a shape / The widget determines the visibility of the **Cut** and **Delete** commands.</td>
+        <td>A user is about to delete a shape / The UI component determines the visibility of the **Cut** and **Delete** commands.</td>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/#allowDeleteShape">allowDeleteShape</a></td>
     </tr>
     <tr>
@@ -131,11 +131,11 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     </tr>
 </table>
 
-- The **updateUI** parameter specifies whether the event responds to a user action or requests instruction on related UI command availability.
+- The **reason** parameter specifies whether the event responds to a user action or requests instruction on related UI command availability.
 
-    - The `true` value indicates that the widget is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
+    - The `checkUIElementAvailability` value indicates that the UI component is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
 
-    - The `false` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed and display an error message if necessary.
+    - The `modelModification` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed and display an error message if necessary.
 
 ---
 ##### jQuery
@@ -143,16 +143,17 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     $(function() {
         $("#diagram").dxDiagram({
             onRequestEditOperation: function(e) {
-                var dataItem;
                 if(e.operation === "addShape") {
                     if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                        !e.updateUI && showToast("You can add only a 'Team' or 'Employee' shape.");
+                        if(e.reason !== "checkUIElementAvailability")
+                            showToast("You can add only a 'Team' or 'Employee' shape.");
                         e.allowed = false;
                     }
                 }
                 else if(e.operation === "changeShapeText") {
                     if(e.args.text === "") {
-                        !e.updateUI && showToast("A shape text cannot be empty.");
+                        if(e.reason !== "checkUIElementAvailability")
+                            showToast("A shape text cannot be empty.");
                         e.allowed = false;
                     }
                 }
@@ -167,16 +168,17 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
 
     <!-- tab: app.component.ts -->
     requestEditOperationHandler(e) {
-        var dataItem;
         if(e.operation === "addShape") {
             if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                !e.updateUI && this.showToast("You can add only a 'Team' or 'Employee' shape.");
+                if(e.reason !== "checkUIElementAvailability")
+                    this.showToast("You can add only a 'Team' or 'Employee' shape.");
                 e.allowed = false;
             }
         }
         else if(e.operation === "changeShapeText") {
             if(e.args.text === "") {
-                !e.updateUI && this.showToast("A shape text cannot be empty.");
+                if(e.reason !== "checkUIElementAvailability")
+                    this.showToast("A shape text cannot be empty.");
                 e.allowed = false;
             }
         }
@@ -191,22 +193,25 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     ...
     methods: {
         onRequestEditOperation(e) {
-        var dataItem;
-        if(e.operation === 'addShape') {
-            if(e.args.shape.type !== 'employee' && e.args.shape.type !== 'team') {
-            !e.updateUI && this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
-            e.allowed = false;
+            if(e.operation === 'addShape') {
+                if(e.args.shape.type !== 'employee' && e.args.shape.type !== 'team') {
+                    if(e.reason !== 'checkUIElementAvailability') {
+                        this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
+                    }
+                e.allowed = false;
+                }
             }
-        }
-        else if(e.operation === 'changeShapeText') {
-            if(e.args.text === '') {
-            !e.updateUI && this.showToast('A shape text cannot be empty.');
-            e.allowed = false;
+            else if(e.operation === 'changeShapeText') {
+                if(e.args.text === '') {
+                    if(e.reason !== 'checkUIElementAvailability') {
+                        this.showToast('A shape text cannot be empty.');
+                    }
+                e.allowed = false;
+                }
             }
-        }
-        else if(e.operation === 'beforeChangeConnectorText') {
-            e.allowed = false;
-        }
+            else if(e.operation === 'beforeChangeConnectorText') {
+                e.allowed = false;
+            }
         ...
 
 ##### React
@@ -214,25 +219,26 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     <Diagram id="diagram" onRequestEditOperation={this.onRequestEditOperation} />
     ...
     onRequestEditOperation(e) {
-        var dataItem;
         if(e.operation === 'addShape') {
             if(e.args.shape.type !== 'employee' && e.args.shape.type !== 'team') {
-                !e.updateUI && this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
+                if(e.reason !== 'checkUIElementAvailability') {
+                this.showToast('You can add only a \'Team\' or \'Employee\' shape.');
+                }
                 e.allowed = false;
-        }
+            }
         }
         else if(e.operation === 'changeShapeText') {
             if(e.args.text === '') {
-                !e.updateUI && this.showToast('A shape text cannot be empty.');
+                if(e.reason !== 'checkUIElementAvailability') {
+                this.showToast('A shape text cannot be empty.');
+                }
                 e.allowed = false;
-        }
+            }
         }
         else if(e.operation === 'beforeChangeConnectorText') {
             e.allowed = false;
         }
         ...
-
-
 
 ##### ASP.NET Core Controls
 
@@ -242,16 +248,17 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     )
     ...
     function onRequestEditOperation(e) {
-        var dataItem;
         if(e.operation === "addShape") {
             if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                !e.updateUI && showToast("You can add only a 'Team' or 'Employee' shape.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("You can add only a 'Team' or 'Employee' shape.");
                 e.allowed = false;
             }
         }
         else if(e.operation === "changeShapeText") {
             if(e.args.text === "") {
-                !e.updateUI && showToast("A shape text cannot be empty.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("A shape text cannot be empty.");
                 e.allowed = false;
             }
         }
@@ -268,16 +275,17 @@ Every time a user attempts an edit operation, the widget raises the [requestEdit
     )
     ...
     function onRequestEditOperation(e) {
-        var dataItem;
         if(e.operation === "addShape") {
             if(e.args.shape.type !== "employee" && e.args.shape.type !== "team") {
-                !e.updateUI && showToast("You can add only a 'Team' or 'Employee' shape.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("You can add only a 'Team' or 'Employee' shape.");
                 e.allowed = false;
             }
         }
         else if(e.operation === "changeShapeText") {
             if(e.args.text === "") {
-                !e.updateUI && showToast("A shape text cannot be empty.");
+                if(e.reason !== "checkUIElementAvailability")
+                    showToast("A shape text cannot be empty.");
                 e.allowed = false;
             }
         }

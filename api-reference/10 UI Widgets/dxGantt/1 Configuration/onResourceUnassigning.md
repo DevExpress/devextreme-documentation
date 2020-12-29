@@ -15,10 +15,10 @@ Information about the event.
 Allows you to cancel the resource unassignment.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The key of the resource.
@@ -47,6 +47,109 @@ The values of the processed resource and task.
             }
         });
     }); 
+
+##### Angular
+
+    <!--TypeScript-->
+    import { DxGanttModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        onResourceUnassigning(e) {
+            if (e.key != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxGanttModule
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-gantt ...
+        (onResourceUnassigning)="onResourceUnassigning($event)">
+    </dx-gantt>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt
+            ...
+            @resource-unassigning="onResourceUnassigning"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxGantt from 'devextreme-vue/gantt';
+  
+    export default {
+        components: {
+            DxGantt
+        },
+        methods: {
+            onResourceUnassigning(e) {
+                if (e.key != 0) {
+                    // your code
+                    e.cancel = true;
+                }                                                                                  
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Gantt from 'devextreme-react/gantt';
+
+    class App extends React.Component {
+        // ...
+        render() {
+            return (
+                <Gantt
+                     //...
+                     onResourceUnassigning={this.onResourceUnassigning}
+                />
+            );
+        }
+        onResourceUnassigning = (e) => {
+            if (e.key != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ID("gantt")
+        // ...
+        .onResourceUnassigning("gantt_resourceUnassigning_handler")
+    )
+    <script>
+        function gantt_resourceUnassigning_handler(e) {
+            if (e.key != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    </script>
 
 ---
 

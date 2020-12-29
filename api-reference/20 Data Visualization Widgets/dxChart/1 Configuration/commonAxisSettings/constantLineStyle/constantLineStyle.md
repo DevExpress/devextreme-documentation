@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures the appearance of all constant lines in the widget.
+Configures the appearance of all constant lines in the UI component.
 
 ---
 ![DevExtreme HTML5 Charts ConstantLines](/images/ChartJS/visual_elements/constant_lines.png)

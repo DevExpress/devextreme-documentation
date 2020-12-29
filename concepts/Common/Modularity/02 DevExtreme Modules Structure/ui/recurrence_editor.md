@@ -1,6 +1,6 @@
 <!--hidden--><!--/hidden-->
 
-Exposes the **RecurrenceEditor** widget.
+Exposes the **RecurrenceEditor** UI component.
 
 Exports:
 

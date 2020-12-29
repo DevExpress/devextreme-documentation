@@ -9,7 +9,7 @@ Sets the map viewport coordinates.
 New viewport coordinates. Pass **null** to reset the viewport.
 
 ---
-To change the coordinates of the map viewport, pass an array of four values in the [*minLongitude*, *maxLatitude*, *maxLongitude*, *minLatitude*] form as the argument to the **viewport(viewportCoordinates)** method. If the passed coordinates do not fit the aspect ratio of the widget container precisely, either the latitude or longitude will be applied depending on the largest range.
+To change the coordinates of the map viewport, pass an array of four values in the [*minLongitude*, *maxLatitude*, *maxLongitude*, *minLatitude*] form as the argument to the **viewport(viewportCoordinates)** method. If the passed coordinates do not fit the aspect ratio of the UI component container precisely, either the latitude or longitude will be applied depending on the largest range.
 
 In addition, you can get the current coordinates of the map viewport by calling the same method without arguments.
 

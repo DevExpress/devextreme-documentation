@@ -1,4 +1,4 @@
-The **Diagram** widget provides a collection of built-in shapes. Use the [customShapes](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/') option to extend this collection with custom shapes.
+The **Diagram** UI component provides a collection of built-in shapes. Use the [customShapes](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/') option to extend this collection with custom shapes.
 
 The [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/toolbox '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/toolbox/') option allows you to add the custom shapes to the toolbox.
 

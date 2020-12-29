@@ -1,7 +1,7 @@
-You should synchronize the **DropDownBox** widget with an embedded element. The following instructions show how to do it when the embedded element is another DevExtreme widget, but they are also applicable in other cases.
+You should synchronize the **DropDownBox** UI component with an embedded element. The following instructions show how to do it when the embedded element is another DevExtreme UI component, but they are also applicable in other cases.
 
 1. **Specify data sources**    
-The **DropDownBox**'s and embedded widget's data sources can be the same or different. If they are different, the widget's key field should be present in the **DropDownBox**'s data source.        
+The **DropDownBox**'s and embedded UI component's data sources can be the same or different. If they are different, the UI component's key field should be present in the **DropDownBox**'s data source.        
 
         <!--JavaScript-->
         // Different data sources, both have the ID field
@@ -16,8 +16,8 @@ The **DropDownBox**'s and embedded widget's data sources can be the same or diff
             // ...
         ];
 
-1. **Specify which data field provides the DropDownBox's values and the embedded widget's keys**       
-Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#valueExpr') option and to the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') option of the embedded widget's store. The following example shows an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'):
+1. **Specify which data field provides the DropDownBox's values and the embedded UI component's keys**       
+Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#valueExpr') option and to the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') option of the embedded UI component's store. The following example shows an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'):
 
     ---
     ##### jQuery
@@ -176,14 +176,14 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
 
     ---
 
-1. **Synchronize the DropDownBox's value and the embedded widget's selection**        
-This step's implementation depends on the embedded widget's API and the library/framework you use. If the library/framework supports two-way binding, you can bind the **DropDownBox**'s [value](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#value') and the widget's **selectedRowKeys**/**selectedItemKeys** to the same variable. If not, handle events as described below.
-    1. **Set the initial selection in the embedded widget**     
-        Implement the widget's **onContentReady** handler to select data items according to the **DropDownBox**'s initial value. In some widgets, you can set the **selectedRowKeys** or **selectedItemKeys** option instead.
+1. **Synchronize the DropDownBox's value and the embedded UI component's selection**        
+This step's implementation depends on the embedded UI component's API and the library/framework you use. If the library/framework supports two-way binding, you can bind the **DropDownBox**'s [value](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#value') and the UI component's **selectedRowKeys**/**selectedItemKeys** to the same variable. If not, handle events as described below.
+    1. **Set the initial selection in the embedded UI component**     
+        Implement the UI component's **onContentReady** handler to select data items according to the **DropDownBox**'s initial value. In some widgets, you can set the **selectedRowKeys** or **selectedItemKeys** option instead.
     1. **Update the selection**     
         Implement the **DropDownBox**'s [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#onValueChanged') handler to update the selection when the **DropDownBox**'s value changes.
     1. **Update the DropDownBox's value**     
-        Implement the embedded widget's **onSelectionChanged** handler to update the **DropDownBox**'s value when the selection changes.
+        Implement the embedded UI component's **onSelectionChanged** handler to update the **DropDownBox**'s value when the selection changes.
 
     ---
     ##### jQuery

@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the outer borders of the widget are visible.
+Specifies whether the outer borders of the UI component are visible.
 
 ---
 

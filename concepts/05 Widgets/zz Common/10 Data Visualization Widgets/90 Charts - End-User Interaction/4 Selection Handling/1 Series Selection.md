@@ -9,7 +9,7 @@ To select a series, call the **select()** method of the **series** object. For i
 
 Alternatively, you can access a series when required, using one of the following [chart methods](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/3%20Methods '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/'): **getAllSeries()**, **getSeriesByName()** and **getSeriesByPos()**.
 
-[note]There are series that consist of points only, e.g., the _bar-like_ and _candleStick_ series of the **Chart** widget, and the _pie_ and _doughnut_ series of the **PieChart** widget. To select these series types on click, implement the [onPointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointClick') handler. Use the **target.series** field of the object passed to this handler as the parameter to access the series of the clicked point (bar or slice).
+[note]There are series that consist of points only, e.g., the _bar-like_ and _candleStick_ series of the **Chart** UI component, and the _pie_ and _doughnut_ series of the **PieChart** UI component. To select these series types on click, implement the [onPointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointClick') handler. Use the **target.series** field of the object passed to this handler as the parameter to access the series of the clicked point (bar or slice).
 
 A series has a distinctive style when selected. To customize it, use the series **selectionStyle** configuration object. This object can specify settings for all series:
 

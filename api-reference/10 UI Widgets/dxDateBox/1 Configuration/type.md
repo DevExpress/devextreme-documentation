@@ -11,9 +11,9 @@ A format used to display date/time information.
 ---
 You can assign the following values to this option:
 
-- date - the widget displays only the date;
-- time - the widget displays only the time;
-- datetime - the widget displays both the date and time.
+- date - the UI component displays only the date;
+- time - the UI component displays only the time;
+- datetime - the UI component displays both the date and time.
 
 #include common-ref-enum with {
     enum: "`DateBoxType`",

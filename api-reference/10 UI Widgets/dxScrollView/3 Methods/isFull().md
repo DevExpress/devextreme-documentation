@@ -4,7 +4,7 @@ hidden:
 ---
 ---
 ##### shortDescription
-Checks whether the **ScrollView**'s content is larger than the widget container.
+Checks whether the **ScrollView**'s content is larger than the UI component container.
 
 ##### return: Boolean
 **true** if the **ScrollView**'s content is larger; otherwise **false**.

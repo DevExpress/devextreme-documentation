@@ -1,1 +1,1 @@
-The **Diagram** widget allows you to restrict edit operations in the following ways.
+The **Diagram** UI component allows you to restrict edit operations in the following ways.

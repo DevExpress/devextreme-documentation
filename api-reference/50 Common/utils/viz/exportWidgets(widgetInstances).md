@@ -5,7 +5,7 @@ export: exportWidgets
 ---
 ---
 ##### shortDescription
-Exports one or several widgets to PNG.
+Exports one or several UI components to PNG.
 
 ##### param(widgetInstances): Array<Array<DOMComponent>>
 An array with the following format:
@@ -17,7 +17,7 @@ An array with the following format:
         [ widgetInstanceP_1, widgetInstanceP_2, ..., widgetInstanceP_R ]
     ]
 
-Each nested array contains widget instances that should be in the same row in the exported document.
+Each nested array contains UI component instances that should be in the same row in the exported document.
 
 ---
 #include common-demobutton with {

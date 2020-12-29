@@ -1,4 +1,4 @@
-The **Diagram** widget allows you to customize its UI tools with the following options.
+The **Diagram** UI component allows you to customize its UI tools with the following options.
 
 - [contextMenu](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextMenu/')
 - [contextToolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextToolbox '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextToolbox/')
@@ -90,7 +90,7 @@ The **Diagram** widget allows you to customize its UI tools with the following o
             }
       }).dxDiagram("instance");
       ...
-	
+
 ##### Angular
 
       <!-- tab: app.component.html -->
@@ -153,6 +153,7 @@ The **Diagram** widget allows you to customize its UI tools with the following o
                   alert("Hello!")
       }
       // ...
+
 ##### Vue
 
       <!-- tab: App.vue -->
@@ -321,6 +322,7 @@ The **Diagram** widget allows you to customize its UI tools with the following o
       }
       };
       </script>
+
 ##### React
 
       <!-- tab: App.js -->
@@ -581,4 +583,5 @@ The **Diagram** widget allows you to customize its UI tools with the following o
                   }
             </text>)
       )
+      
 ---

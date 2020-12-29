@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events that the **FileManager** widget raises.
+This section describes events that the **FileManager** UI component raises.
 
 ---
 #####See Also#####

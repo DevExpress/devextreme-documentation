@@ -5,10 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the widget's width.
+Specifies the UI component's width.
 
 ##### return: Number | String
-The widget's width.
+The UI component's width.
 
 ---
 #include uiwidgets-ref-width

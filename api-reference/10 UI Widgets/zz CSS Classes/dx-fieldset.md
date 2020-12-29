@@ -20,7 +20,7 @@ Each fieldset item is displayed within a separate field element, which has the [
 
 The field label and value elements can hold plain text, UI widgets, knockout bindings or custom markup.
 
-DevExtreme UI widgets include <a href="http://www.w3.org/WAI/intro/aria.php" target="_blank">WAI-ARIA</a> markup to support screen readers. If you use a widget within a field value element, associate the widget with the field label to allow a screen reader to properly read the field. For this purpose, specify a unique ID for the field label element and assign this ID to the **aria-labeledby** attribute of the associated widget as demonstrated below.
+DevExtreme UI UI components include <a href="http://www.w3.org/WAI/intro/aria.php" target="_blank">WAI-ARIA</a> markup to support screen readers. If you use a UI component within a field value element, associate the UI component with the field label to allow a screen reader to properly read the field. For this purpose, specify a unique ID for the field label element and assign this ID to the **aria-labeledby** attribute of the associated UI component as demonstrated below.
 
     <!--HTML-->
     <div class="dx-field">

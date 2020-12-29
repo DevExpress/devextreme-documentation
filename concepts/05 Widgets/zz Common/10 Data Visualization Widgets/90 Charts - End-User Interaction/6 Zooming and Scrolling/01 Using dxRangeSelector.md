@@ -1,8 +1,8 @@
-The **Chart** and **RangeSelector** widgets can operate together, allowing an end-user to zoom and scroll through a chart. Follow the steps below to implement these capabilities.
+The **Chart** and **RangeSelector** UI components can operate together, allowing an end-user to zoom and scroll through a chart. Follow the steps below to implement these capabilities.
 
 - **Configure Chart**     
 
-    Create and configure the **Chart** widget using one of the available data-binding approaches. For details, see the "Create and Configure a Widget" guide for [jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component'), [AngularJS](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget/') or [Knockout](/concepts/Getting%20Started/Widget%20Basics%20-%20Knockout/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Create_and_Configure_a_Widget/').
+    Create and configure the **Chart** UI component using one of the available data-binding approaches. For details, see the "Create and Configure a Widget" guide for [jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component'), [AngularJS](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget/') or [Knockout](/concepts/Getting%20Started/Widget%20Basics%20-%20Knockout/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Create_and_Configure_a_Widget/').
 
         <!--JavaScript-->var chartOptions = {
             // Chart configuration
@@ -10,7 +10,7 @@ The **Chart** and **RangeSelector** widgets can operate together, allowing an en
         
 - **Configure RangeSelector**     
 
-    Create and configure the **RangeSelector** widget in a similar manner. **Chart** and **RangeSelector** must have completely identical argument axes. Hence, you need to assign the same data source to both widgets.
+    Create and configure the **RangeSelector** UI component in a similar manner. **Chart** and **RangeSelector** must have completely identical argument axes. Hence, you need to assign the same data source to both widgets.
         
         <!--JavaScript-->var dataSource = [...];
         var chartOptions = {

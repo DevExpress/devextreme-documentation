@@ -6,7 +6,7 @@ firedEvents: valueChanged
 ---
 ---
 ##### shortDescription
-Specifies the widget's value.
+Specifies the UI component's value.
 
 ---
 

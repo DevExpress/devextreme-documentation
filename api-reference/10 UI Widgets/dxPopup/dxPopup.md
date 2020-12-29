@@ -6,7 +6,7 @@ inherits: dxOverlay
 ---
 ---
 ##### shortDescription
-The **Popup** widget is a pop-up window overlaying the current view.
+The **Popup** UI component is a pop-up window overlaying the current view.
 
 ##### widgettree
 visible: true

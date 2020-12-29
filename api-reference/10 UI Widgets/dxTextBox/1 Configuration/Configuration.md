@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TextBox** widget.
+An object defining configuration options for the **TextBox** UI component.
 
 ---
 #####See Also#####

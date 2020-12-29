@@ -3,7 +3,7 @@ id: dxOverlay.repaint()
 ---
 ---
 ##### shortDescription
-Recalculates the widget's size and position without rerendering.
+Recalculates the UI component's size and position without rerendering.
 
 ---
 #####See Also#####

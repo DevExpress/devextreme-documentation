@@ -40,7 +40,7 @@ In Angular, Vue, and React, this template can be used instead of [editorType](/a
 
 - Use the same [validationGroup](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#validationGroup') as the **Form** to ensure the custom editor is validated simultaneously with other form editors.
 
-The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Widgets/dxDateBox/') widget in the template. The widget is bound to the `BirthDate` field of  **formData** and has a validation group and two validation rules:
+The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Widgets/dxDateBox/') UI component in the template. The UI component is bound to the `BirthDate` field of  **formData** and has a validation group and two validation rules:
 
 ---
 ##### Angular

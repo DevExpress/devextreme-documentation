@@ -13,7 +13,7 @@ You can use the following library- or framework-specific code to create the **Bu
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="myButtonGroup"></div>
         </body>
     </html>

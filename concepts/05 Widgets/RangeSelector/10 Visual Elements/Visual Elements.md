@@ -1,4 +1,4 @@
-The image below is the **RangeSelector** element map that can be helpful to you as you begin learning about dxRangeSelector capabilities. <b>Hover</b> over the image and you will learn how different **RangeSelector** elements are called. <b>Click an element</b> to navigate to a topic with more details.
+The image below displays the **RangeSelector** element map. **Hover** over the image to show the **RangeSelector** element names. Click an element to navigate to a topic with more information.
 
 <p><img style="margin:0px auto;display:block" src="/Content/images/doc/19_1/ChartJS/RangeSelectorElements.png" alt="" usemap="#rangeSelectorElements" /></p>
 	

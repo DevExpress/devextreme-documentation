@@ -13,41 +13,41 @@ Specifies a custom template for rows.
 The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/') object extended by the **DataGrid**'s instance (the **component** field) and column configuration (**columns**).
 
 ##### field(rowInfo.columns): Array<dxDataGridColumn>
-<!-- Description goes here -->
+<!-- %field(e.columns)% -->
 
 ##### field(rowInfo.component): dxDataGrid
-<!-- Description goes here -->
+<!-- %field(e.component)% -->
 
 ##### field(rowInfo.data): any
-<!-- Description goes here -->
+<!-- %field(e.data)% -->
 
 ##### field(rowInfo.groupIndex): Number
-<!-- Description goes here -->
+<!-- %field(e.groupIndex)% -->
 
 ##### field(rowInfo.isExpanded): Boolean
-<!-- Description goes here -->
+<!-- %field(e.isExpanded)% -->
 
 ##### field(rowInfo.isSelected): Boolean
-<!-- Description goes here -->
+<!-- %field(e.isSelected)% -->
 
 ##### field(rowInfo.key): any
-<!-- Description goes here -->
+<!-- %field(e.key)% -->
 
 ##### field(rowInfo.rowIndex): Number
-<!-- Description goes here -->
+<!-- %field(e.rowIndex)% -->
 
 ##### field(rowInfo.rowType): String
-<!-- Description goes here -->
+<!-- %field(e.rowType)% -->
 
 ##### field(rowInfo.values): Array<any>
-<!-- Description goes here -->
+<!-- %field(e.values)% -->
 
 ---
 The following details should be taken into account when you use a **rowTemplate**:
 
 - Disable [column reordering](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#allowColumnReordering'), [grouping](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowGrouping'), and [column fixing](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columnFixing/') when you specify the row template. Its content cannot automatically synchronize with the column layout, which makes these features inoperative. [Command columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/') are not supported either.
 
-- You should implement the following features manually: [editing](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/editRow(rowIndex).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#editRowrowIndex'), [adaptability](/concepts/05%20Widgets/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/Widgets/DataGrid/Columns/Adaptability/'), [multiple selection](/concepts/05%20Widgets/DataGrid/50%20Selection/20%20API '/Documentation/Guide/Widgets/DataGrid/Selection/#API'), and [master-detail interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface/20%20API.md '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/#API'). Follow the links to see the API that can help you with this task.
+- You should implement the following features manually: [editing](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/editRow(rowIndex).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#editRowrowIndex'), [adaptability](/concepts/05%20Widgets/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/Widgets/DataGrid/Columns/Adaptability/'), [selection](/concepts/05%20Widgets/DataGrid/50%20Selection/20%20API '/Documentation/Guide/Widgets/DataGrid/Selection/#API'), [master-detail interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface/20%20API.md '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/#API'), and [focused row](/Documentation/Guide/Widgets/DataGrid/Focused_Row/). Follow the links to see the API that can help you with this task.
 
 - When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. Use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell) function to do this.
 
@@ -214,3 +214,5 @@ You can also use a 3rd-party template engine to customize row appearance. See th
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')
 - [onRowPrepared](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onRowPrepared.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onRowPrepared')
+
+<!-- import * from 'api-reference\10 UI Widgets\dxDataGrid\1 Configuration\onRowClick.md' -->

@@ -1,8 +1,8 @@
-An all-day appointment is an appointment that occurs during the whole day.
+An all-day appointment occupies the entire day.
 
 ![Scheduler All-Day Appointment](/images/UiWidgets/Scheduler_AllDayAppointment.png)
 
-To make an appointment all-day in code, set its [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) field to **true**; the time values of [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) and [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) are ignored: 
+To make an appointment all-day, set its [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) field to **true**. An all-day appointment must have a [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) field. You can also set an [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) field if the appointment occupies more than one entire day. Time values in these fields are ignored.
 
     <!--JavaScript-->
     var allDayAppointment = [{
@@ -11,9 +11,8 @@ To make an appointment all-day in code, set its [allDay](/Documentation/ApiRefer
         allDay: true
     }];
 
-[note]If you set the optional [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) field to a date after the start date, the appointment will last for more than one whole day.
 
-If your appointment data objects already have a field that performs the functions of **allDay**, specify its name in the [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr) option of the **Scheduler**
+If your appointment data objects contain a different field that performs the functions of **allDay**, specify its name in the **Scheduler**'s [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr) option.
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-This section contains guides on the following end-user interaction features:
+This section contains guides on the following user interaction features:
 
 - [Panning](/Documentation/Guide/Widgets/VectorMap/End-User_Interaction/#Panning)
 - [Zooming](/Documentation/Guide/Widgets/VectorMap/End-User_Interaction/#Zooming)

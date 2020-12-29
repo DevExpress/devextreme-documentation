@@ -14,12 +14,9 @@ To make an appointment recurring, specify the [recurrenceRule](/Documentation/Ap
         recurrenceException: "20210222T070000Z,20210223T070000Z"
     }];
 
-
-
-
 If your appointment data objects contain different fields that perform the functions of **recurrenceRule** and **recurrenceException**, specify their names in the **Scheduler**'s [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceExceptionExpr') options:
----
 
+---
 ##### jQuery
 
     <!--JavaScript-->
@@ -80,6 +77,7 @@ If your appointment data objects contain different fields that perform the funct
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+
     const recurringAppointments = [{ 
         // ...
         rule: "FREQ=DAILY",
@@ -107,6 +105,7 @@ If your appointment data objects contain different fields that perform the funct
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    
     const recurringAppointments = [{ 
         // ...
         rule: "FREQ=DAILY",

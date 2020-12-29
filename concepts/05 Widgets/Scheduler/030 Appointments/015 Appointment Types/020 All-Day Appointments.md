@@ -72,6 +72,7 @@ If your appointment data objects contain a different field that performs the fun
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
+
     const allDayAppointments = [{
         text: "Concert",
         startDate: new Date("2021-07-27T16:00:00.000Z"),
@@ -99,6 +100,7 @@ If your appointment data objects contain a different field that performs the fun
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
+    
     const dataSource = [{
         text: "Concert",
         startDate: new Date("2021-07-27T16:00:00.000Z"),

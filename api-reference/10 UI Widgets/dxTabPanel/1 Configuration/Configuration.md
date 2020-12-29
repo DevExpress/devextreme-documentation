@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TabPanel** widget.
+An object defining configuration options for the **TabPanel** UI component.
 
 ---
 #####See Also#####

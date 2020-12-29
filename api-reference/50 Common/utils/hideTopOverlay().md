@@ -5,9 +5,9 @@ export: default
 ---
 ---
 ##### shortDescription
-Hides the last displayed overlay widget.
+Hides the last displayed overlay UI component.
 
 ##### return: Boolean
-**true** if hiding was successful; **false** if not or if no displayed overlay widget was found.
+**true** if hiding was successful; **false** if not or if no displayed overlay UI component was found.
 
 ---

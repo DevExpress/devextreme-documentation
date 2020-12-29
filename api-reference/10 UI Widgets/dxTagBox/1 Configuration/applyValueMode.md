@@ -6,7 +6,7 @@ default: 'instantly'
 ---
 ---
 ##### shortDescription
-Specifies how the widget applies values.
+Specifies how the UI component applies values.
 
 ---
 The option accepts the following values.

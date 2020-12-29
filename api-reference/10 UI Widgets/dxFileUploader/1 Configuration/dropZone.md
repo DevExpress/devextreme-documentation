@@ -50,7 +50,7 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 }
 
 [note]
-A custom drop zone (**dropZone** option) is not supported in **useForms** [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode).
+A custom drop zone (**dropZone** option) is not supported in **useForm** [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode).
 
 #####See Also#####
 - [onDropZoneEnter](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#onDropZoneEnter)

@@ -8,7 +8,7 @@ default: undefined
 Decides on which screens the current row is rendered.
 
 ---
-Before rendering the row, the widget considers the screen's width. If the width matches the specified size qualifier, the row will be rendered. There are four size qualifiers in all. The **screen** option accepts one or several of them separated by a space.
+Before rendering the row, the UI component considers the screen's width. If the width matches the specified size qualifier, the row will be rendered. There are four size qualifiers in all. The **screen** option accepts one or several of them separated by a space.
 
 <table class="dx-table">
     <tr>

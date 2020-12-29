@@ -15,10 +15,10 @@ Information about the event.
 Allows you to cancel the resource assignment.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
@@ -44,6 +44,109 @@ The values of the processed resource and task.
             }
         });
     }); 
+
+##### Angular
+
+    <!--TypeScript-->
+    import { DxGanttModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        onResourceAssigning(e) {
+            if (e.values.taskID != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxGanttModule
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-gantt ...
+        (onResourceAssigning)="onResourceAssigning($event)">
+    </dx-gantt>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt
+            ...
+            @resource-assigning="onResourceAssigning"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxGantt from 'devextreme-vue/gantt';
+  
+    export default {
+        components: {
+            DxGantt
+        },
+        methods: {
+            onResourceAssigning(e) {
+                if (e.values.taskID != 0) {
+                    // your code
+                    e.cancel = true;
+                }                                                                                  
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Gantt from 'devextreme-react/gantt';
+
+    class App extends React.Component {
+        // ...
+        render() {
+            return (
+                <Gantt
+                     //...
+                     onResourceAssigning={this.onResourceAssigning}
+                />
+            );
+        }
+        onResourceAssigning = (e) => {
+            if (e.values.taskID != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ID("gantt")
+        // ...
+        .onResourceAssigning("gantt_resourceAssigning_handler")
+    )
+    <script>
+        function gantt_resourceAssigning_handler(e) {
+            if (e.values.taskID != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    </script>
 
 ---
 

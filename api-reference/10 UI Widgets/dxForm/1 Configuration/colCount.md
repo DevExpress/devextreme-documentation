@@ -11,7 +11,7 @@ The count of columns in the form layout.
 ---
 [note]
 
-For extra small screens, this option always equals *1* to make the widget adaptive. To override this logic, specify the [colCountByScreen](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/colCountByScreen/') option.
+For extra small screens, this option always equals *1* to make the UI component adaptive. To override this logic, specify the [colCountByScreen](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/colCountByScreen/') option.
 
 ---
 ##### jQuery
@@ -46,6 +46,41 @@ For extra small screens, this option always equals *1* to make the widget adapti
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm ...>
+            <DxColCountByScreen :xs="2"/>
+        </DxForm>
+    </template>
+    <script>
+    import DxForm, { DxColCountByScreen } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            DxColCountByScreen
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Form, { ColCountByScreen } from 'devextreme-react/form';
+
+    const App = () => {
+        return (
+            <Form ...>
+                <ColCountByScreen xs={2} />
+            </Form>
+        );
+    };
+
+    export default App;
 
 ---
 

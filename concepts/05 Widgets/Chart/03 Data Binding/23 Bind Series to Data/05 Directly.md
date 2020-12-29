@@ -46,6 +46,72 @@ To bind a series to data directly, specify which data source field provides argu
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ... 
+            :data-source="fruitProduction">
+            <DxSeries
+                argument-field="fruit"
+                value-field="year2014"
+                name="2014"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples",  year2014: 84, year2015: 82, year2016: 90 },
+        { fruit: "Oranges", year2014: 72, year2015: 70, year2016: 76 }
+    ];
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries
+        },
+
+        data() {
+            return {
+                fruitProduction
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        Series
+    } from 'devextreme-react/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples",  year2014: 84, year2015: 82, year2016: 90 },
+        { fruit: "Oranges", year2014: 72, year2015: 70, year2016: 76 }
+    ];
+
+    const App = () => {
+        return (
+            <Chart ... 
+                dataSource={fruitProduction}>
+                <Series
+                    argumentField="fruit"
+                    valueField="year2014"
+                    name="2014"
+                />
+            </Chart>
+        );
+    };
+
+    export default App;
+
 ---
 
 Commonly, a chart contains several series, and many of them have the same argument field. In this case, you can assign the name of this field to the **argumentField** option of the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object.
@@ -99,6 +165,91 @@ Commonly, a chart contains several series, and many of them have the same argume
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="fruitProduction">
+            <DxCommonSeriesSettings argument-field="fruit" />
+            <DxSeries
+                value-field="year2014"
+                name="2014"
+            />
+            <DxSeries
+                value-field="year2015"
+                name="2015"
+            />
+            <DxSeries
+                value-field="year2016"
+                name="2016"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeries
+    } from 'devextreme-vue/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples",  year2014: 84, year2015: 82, year2016: 90 },
+        { fruit: "Oranges", year2014: 72, year2015: 70, year2016: 76 }
+    ];
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeries
+        },
+
+        data() {
+            return {
+                fruitProduction
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        Series
+    } from 'devextreme-react/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples",  year2014: 84, year2015: 82, year2016: 90 },
+        { fruit: "Oranges", year2014: 72, year2015: 70, year2016: 76 }
+    ];
+
+    const App = () => {
+        return (
+            <Chart ...
+                dataSource={fruitProduction}>
+                <CommonSeriesSettings argumentField="fruit" />
+                <Series
+                    valueField="year2014"
+                    name="2014"
+                />
+                <Series
+                    valueField="year2015"
+                    name="2015"
+                />
+                <Series
+                    valueField="year2016"
+                    name="2016"
+                />
+            </Chart>
+        );
+    };
+
+    export default App;
 
 ---
 

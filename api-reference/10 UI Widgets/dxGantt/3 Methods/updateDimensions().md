@@ -3,7 +3,8 @@ id: dxGantt.updateDimensions()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Updates the dimensions of the UI component contents.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+#include common-link-callmethods

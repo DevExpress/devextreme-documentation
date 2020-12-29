@@ -1,4 +1,4 @@
-The **Chart** is an interactive widget that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/Widgets/Chart/Series_Types/').
+The **Chart** is an interactive UI component that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/Widgets/Chart/Series_Types/').
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/ChartOverview/chartExample.html, /Content/Applications/20_2/DataVisualization/Guides/ChartOverview/chartExample.js"></div>
 

@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A key used to authenticate the component within Google Maps Static.
 
 ---
 <!-- Description goes here -->

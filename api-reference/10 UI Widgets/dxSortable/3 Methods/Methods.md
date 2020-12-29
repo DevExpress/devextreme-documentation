@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes methods that control the **Sortable** widget.
+This section describes methods that control the **Sortable** UI component.
 
 ---
 #####See Also#####

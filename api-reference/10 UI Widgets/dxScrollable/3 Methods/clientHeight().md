@@ -3,10 +3,10 @@ id: dxScrollable.clientHeight()
 ---
 ---
 ##### shortDescription
-Gets the widget's height.
+Gets the UI component's height.
 
 ##### return: Number
-The widget's height in pixels.
+The UI component's height in pixels.
 
 ---
 #####See Also#####

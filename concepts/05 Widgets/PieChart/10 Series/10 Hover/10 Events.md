@@ -1,4 +1,4 @@
-When a user hovers the mouse pointer on a series point, the **PieChart** fires the [pointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Events/#pointHoverChanged') event that you can handle with a function. Assign this function to the [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#onPointHoverChanged') option when you configure the widget if it is going to remain unchanged during the widget's lifetime. Call the point's [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isHovered().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/Methods/#isHovered') method to check whether the pointer entered or left a series point.
+When a user hovers the mouse pointer on a series point, the **PieChart** fires the [pointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Events/#pointHoverChanged') event that you can handle with a function. Assign this function to the [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#onPointHoverChanged') option when you configure the UI component if it is going to remain unchanged during the UI component's lifetime. Call the point's [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isHovered().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/Methods/#isHovered') method to check whether the pointer entered or left a series point.
 
 ---
 ##### jQuery
@@ -43,6 +43,59 @@ When a user hovers the mouse pointer on a series point, the **PieChart** fires t
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPieChart ...
+            @point-hover-changed="onPointHoverChanged">
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart
+        },
+
+        methods: {
+            onPointHoverChanged({ target: point }) {
+                if (point.isHovered()) {
+                    // Command to execute when the mouse pointer enters the point
+                } else {
+                    // Command to execute when the mouse pointer leaves the point
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PieChart from 'devextreme-react/pie-chart';
+
+    const onPointHoverChanged = ({ target: point }) => {
+        if (point.isHovered()) {
+            // Command to execute when the mouse pointer enters the point
+        } else {
+            // Command to execute when the mouse pointer leaves the point
+        }
+    };
+
+    const App = () => {
+        return (
+            <PieChart ...
+                onPointHoverChanged={onPointHoverChanged}>
+            </PieChart>
+        );
+    };
+
+    export default App;
 
 ---
 

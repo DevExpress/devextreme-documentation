@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the widget used to edit the field value.
+Specifies a custom template for the UI component used to edit the field value.
 
 ##### param(conditionInfo): Object
 Information about a **FilterBuilder** field.

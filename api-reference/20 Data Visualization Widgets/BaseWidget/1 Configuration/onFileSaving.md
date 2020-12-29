@@ -6,7 +6,7 @@ EventForAction: BaseWidget.fileSaving
 ---
 ---
 ##### shortDescription
-A function that is executed before a file with exported widget is saved to the user's local storage.
+A function that is executed before a file with exported UI component is saved to the user's local storage.
 
 ##### param(e): Object
 Information about the event.
@@ -15,13 +15,13 @@ Information about the event.
 Allows you to prevent file saving.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Blob
 Exported data as a BLOB.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
 The name of the file to be saved.

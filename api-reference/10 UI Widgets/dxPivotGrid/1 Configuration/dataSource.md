@@ -5,14 +5,14 @@ default: null
 ---
 ---
 ##### shortDescription
-Binds the widget to data.
+Binds the UI component to data.
 
 ---
 If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
 The **PivotGrid** is bound to data via the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/'), a component that allows you to sort, filter, group, and perform other data shaping operations. The **PivotGridDataSource**'s underlying data access logic is isolated in the store. You use different store types for different data sources.
  
-To bind the **PivotGrid** to data, assign a **PivotGridDataSource** to the widget's **dataSource** option. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') option depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
+To bind the **PivotGrid** to data, assign a **PivotGridDataSource** to the UI component's **dataSource** option. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') option depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
 
 - **Data Array**        
 Assign the array to the **store** option. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray)
@@ -21,7 +21,7 @@ Assign the array to the **store** option. [View Demo](https://js.devexpress.com/
 Implement an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'). [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/OLAPDataSource)
 
 - **Web API, PHP, MongoDB**     
-Use one of the following extensions to enable the server to process data according to the protocol DevExtreme widgets use:
+Use one of the following extensions to enable the server to process data according to the protocol DevExtreme UI components use:
 
     - <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>
     - <a href="https://github.com/DevExpress/DevExtreme-PHP-Data/blob/master/README.md" target="_blank">DevExtreme-PHP-Data</a>
@@ -175,7 +175,7 @@ You can call the [getDataSource()](/api-reference/10%20UI%20Widgets/dxPivotGrid/
 
 Please review the following notes about data binding:
 
-- If the **PivotGrid** widget gets data from a server, enable [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') to notify the widget that the server performs data processing operations.
+- If the **PivotGrid** UI component gets data from a server, enable [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') to notify the UI component that the server performs data processing operations.
 
 - Data field names should not contain the following characters: `.`, `,`, `:`, `[`, and `]`.
 

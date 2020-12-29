@@ -1,10 +1,10 @@
-The **ActionSheet** widget is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
+The **ActionSheet** UI component is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics/"
 }
 
-The following code adds a simple **ActionSheet** to your page. The widget is shown on a button click.  
+The following code adds a simple **ActionSheet** to your page. The UI component is shown on a button click.  
 
 ---
 ##### jQuery
@@ -23,7 +23,7 @@ The following code adds a simple **ActionSheet** to your page. The widget is sho
         $("#buttonContainer").dxButton({
             text: 'Show the ActionSheet',
             onClick: function () {
-                // Shows the ActionSheet widget
+                // Shows the ActionSheet UI component
                 $("#actionSheetContainer").dxActionSheet("instance").show();
             }
         });
@@ -188,4 +188,4 @@ Note that every data source object has a **text** field that is rendered on the 
 - [ActionSheet - Specify Display Mode](/concepts/05%20Widgets/ActionSheet/10%20Specify%20Display%20Mode.md '/Documentation/Guide/Widgets/ActionSheet/Specify_Display_Mode')
 - [ActionSheet API Reference](/api-reference/10%20UI%20Widgets/dxActionSheet '/Documentation/ApiReference/UI_Widgets/dxActionSheet/')
 
-[tags] dxactionsheet, action sheet, actionSheet, collection container, collection widget, navigation, overview
+[tags] dxactionsheet, action sheet, actionSheet, collection container, collection UI component, navigation, overview

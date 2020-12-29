@@ -8,7 +8,7 @@ default: undefined
 Specifies the date-time values' serialization format. Use it only if you do not specify the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') at design time.
 
 ---
-Without a data source, the widget cannot detect the date-time values' format. In this case, specify the **dateSerializationFormat** option that supports the following formats:
+Without a data source, the UI component cannot detect the date-time values' format. In this case, specify the **dateSerializationFormat** option that supports the following formats:
 
 - `"yyyy-MM-dd"` - a local date  
 

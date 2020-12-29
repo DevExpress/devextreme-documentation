@@ -1,4 +1,4 @@
-The simplest way of providing data is using an array of plain objects. Each object in this array specifies series values for a particular argument. **PieChart** and **Sparkline** can contain only one series. Therefore, providing data for these widgets requires only one series value to be specified for each argument. The following code snippet shows how to declare an array to be used as a data source for **PieChart** and **Sparkline**.
+The simplest way of providing data is using an array of plain objects. Each object in this array specifies series values for a particular argument. **PieChart** and **Sparkline** can contain only one series. Therefore, providing data for these UI components requires only one series value to be specified for each argument. The following code snippet shows how to declare an array to be used as a data source for **PieChart** and **Sparkline**.
 
 	<!--JavaScript-->var commonDataSource = [
 		{ year: 2005, value: 2450 },
@@ -25,4 +25,4 @@ In **Chart**, the majority of [series types](/concepts/05%20Widgets/Chart/11%20S
 		{ year: 2014, aluminumMin: 3650, aluminumMax: 3850, copperMin: 3500, copperMax: 4300 }
 	];
 
-After you have implemented a data source, bind it to your widget. To learn how to do this, refer to the [Bind Data](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Bind_Data/') topic.
+After you have implemented a data source, bind it to your UI component. To learn how to do this, refer to the [Bind Data](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Bind_Data/') topic.

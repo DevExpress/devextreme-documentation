@@ -128,7 +128,7 @@ If the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configur
 
 ---
 
-When the **uploadMode** is *"useForm"*, define the parameters within hidden inputs. They are sent to the server in an HTML form along with the files. Some DevExtreme widgets have underlying hidden inputs too. Use the widget's **name** option to specify the input's `name` attribute. 
+When the **uploadMode** is *"useForm"*, define the parameters within hidden inputs. They are sent to the server in an HTML form along with the files. Some DevExtreme UI components have underlying hidden inputs too. Use the UI component's **name** option to specify the input's `name` attribute. 
 
 ---
 #####jQuery

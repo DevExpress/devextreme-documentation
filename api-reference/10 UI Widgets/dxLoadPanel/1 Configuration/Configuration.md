@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that defines configuration options for the **LoadPanel** widget.
+An object that defines configuration options for the **LoadPanel** UI component.
 
 ---
 #####See Also#####

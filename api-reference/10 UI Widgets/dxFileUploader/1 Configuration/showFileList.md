@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not the widget displays the list of selected files.
+Specifies whether or not the UI component displays the list of selected files.
 
 ---

@@ -26,7 +26,7 @@ You can also use the [containerKeyExpr](/api-reference/10%20UI%20Widgets/dxDiagr
                 }),
                 keyExpr: "id",
                 parentKeyExpr: "parent_id",
-                containerKeyExpr: "team",
+                containerChildrenExpr: "children",
             },
 
         });

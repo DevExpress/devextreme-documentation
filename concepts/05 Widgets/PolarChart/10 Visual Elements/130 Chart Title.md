@@ -1,4 +1,4 @@
-The **PolarChart** widget can be displayed with a title. You can use the chart title to provide either explanatory text for the displayed data or any additional textual information.
+The **PolarChart** UI component can be displayed with a title. You can use the chart title to provide either explanatory text for the displayed data or any additional textual information.
 
 ![ChartTitle](/images/ChartJS/Polar_ChartTitle.png)
 

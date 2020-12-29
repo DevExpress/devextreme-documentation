@@ -4,7 +4,7 @@ hidden:
 ---
 ---
 ##### shortDescription
-Toggles the widget's loading state.
+Toggles the UI component's loading state.
 
 ##### param(showOrHide): Boolean
 Specifies whether to enable or disable the loading state.

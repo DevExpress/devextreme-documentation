@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes methods that control the **FileManager** widget.
+This section describes methods that control the **FileManager** UI component.
 
 ---

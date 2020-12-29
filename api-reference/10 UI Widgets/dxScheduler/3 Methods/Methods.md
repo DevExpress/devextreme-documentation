@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes methods used to manipulate the widget.
+This section describes methods used to manipulate the UI component.
 
 ---
 #####See Also#####

@@ -12,7 +12,7 @@ Use the [valueChanged](/api-reference/10%20UI%20Widgets/dxFileUploader/4%20Event
             accept: "*",
             value: [],
             uploadMode: "instantly",
-            uploadUrl: "https://js.devexpress.com/Content/Services/upload.aspx",
+            uploadUrl: "https://js.devexpress.com/Demos/NetCore/FileUploader/Upload",
             onValueChanged: function (e) {
                 var url = e.component.option("uploadUrl");
                 url = updateQueryStringParameter(url, "fileGuid", uuidv4());
@@ -61,7 +61,7 @@ Use the [valueChanged](/api-reference/10%20UI%20Widgets/dxFileUploader/4%20Event
     })
     export class AppComponent {
         value: any[] = [];
-        uploadUrl: string = "https://js.devexpress.com/Content/Services/upload.aspx";
+        uploadUrl: string = "https://js.devexpress.com/Demos/NetCore/FileUploader/Upload";
         onValueChanged(e) {
             this.uploadUrl = this.updateQueryStringParameter("fileGuid", this.uuidv4());
         }
@@ -99,7 +99,7 @@ Use the [valueChanged](/api-reference/10%20UI%20Widgets/dxFileUploader/4%20Event
         :accept="accept"
         :multiple="multiple"
         :upload-mode="uploadMode"
-        upload-url="https://js.devexpress.com/Content/Services/upload.aspx"
+        upload-url="https://js.devexpress.com/Demos/NetCore/FileUploader/Upload"
         @value-changed="onValueChanged($event)"
       />
     </template>
@@ -166,7 +166,7 @@ Use the [valueChanged](/api-reference/10%20UI%20Widgets/dxFileUploader/4%20Event
                 multiple: false,
                 uploadMode: "instantly",
                 accept: "*",
-                uploadUrl: "https://js.devexpress.com/Content/Services/upload.aspx"
+                uploadUrl: "https://js.devexpress.com/Demos/NetCore/FileUploader/Upload"
             };
 
             this.onSelectedFilesChanged = this.onSelectedFilesChanged.bind(this);            

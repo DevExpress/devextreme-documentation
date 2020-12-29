@@ -19,7 +19,7 @@ The column's properties.
 The index of the cell's column.
 
 ##### field(cellInfo.component): dxTreeList
-The widget's instance.
+The UI component's instance.
 
 ##### field(cellInfo.data): Object
 The data of the row to which the cell belongs.

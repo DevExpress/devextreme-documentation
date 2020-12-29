@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the methods that control the **Lookup** widget.
+This section describes the methods that control the **Lookup** UI component.
 
 ---
 #####See Also#####

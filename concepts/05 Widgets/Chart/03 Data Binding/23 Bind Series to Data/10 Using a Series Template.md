@@ -35,7 +35,7 @@ After that, use the **seriesTemplate**.[nameField](/api-reference/20%20Data%20Vi
     <!--HTML--><dx-chart [dataSource]="fruitProduction">
         <dxo-common-series-settings
             argumentField="fruit"
-            valueField="produced"
+            valueField="produced" <!-- or other data fields -->
             type="bar">
         </dxo-common-series-settings>
         <dxo-series-template nameField="year"></dxo-series-template>
@@ -62,6 +62,85 @@ After that, use the **seriesTemplate**.[nameField](/api-reference/20%20Data%20Vi
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="fruitProduction">
+            <DxCommonSeriesSettings
+                argument-field="fruit"
+                value-field="produced" <!-- or other data fields -->
+                type="bar"
+            />
+            <DxSeriesTemplate name-field="year" />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeriesTemplate
+    } from 'devextreme-vue/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples", year: 2014, produced: 84 },
+        { fruit: "Apples", year: 2015, produced: 82 },
+        { fruit: "Apples", year: 2016, produced: 90 },
+        { fruit: "Oranges", year: 2014, produced: 72 },
+        { fruit: "Oranges", year: 2015, produced: 70 },
+        { fruit: "Oranges", year: 2016, produced: 76 }
+    ];
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeriesTemplate
+        },
+
+        data() {
+            return {
+                fruitProduction
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        SeriesTemplate
+    } from 'devextreme-react/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples", year: 2014, produced: 84 },
+        { fruit: "Apples", year: 2015, produced: 82 },
+        { fruit: "Apples", year: 2016, produced: 90 },
+        { fruit: "Oranges", year: 2014, produced: 72 },
+        { fruit: "Oranges", year: 2015, produced: 70 },
+        { fruit: "Oranges", year: 2016, produced: 76 }
+    ];
+
+    const App = () => {
+        return (
+            <Chart ...
+                dataSource={fruitProduction}>
+                <CommonSeriesSettings
+                    argumentField="fruit"
+                    valueField="produced" {/* or other data fields */}
+                    type="bar"
+                />
+                <SeriesTemplate nameField="year" />
+            </Chart>
+        );
+    };
+
+    export default App;
+
 ---
 
 If you need to change options of a particular series, return an [object with them](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') from the **seriesTemplate**.[customizeSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesTemplate/customizeSeries.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/seriesTemplate/#customizeSeries') function. This object will be merged with the **commonSeriesSettings** object. To identify a series, use the argument passed to this function.
@@ -86,7 +165,7 @@ If you need to change options of a particular series, return an [object with the
                 nameField: 'year',
                 customizeSeries: function(seriesName) {
                     // Changes the type of the series "2016" from the common "bar" to "line"
-                    return seriesName == 2016 ? { type: 'line' } : { }
+                    return seriesName === 2016 ? { type: 'line' } : { };
                 }
             }
         });
@@ -113,7 +192,7 @@ If you need to change options of a particular series, return an [object with the
         ];
         customizeSeries(seriesName: string) {
             // Changes the type of the series "2016" from the common "bar" to "line"
-            return seriesName == 2016 ? { type: "line" } : { }
+            return seriesName === 2016 ? { type: "line" } : { };
         }
     }
     @NgModule({
@@ -123,6 +202,95 @@ If you need to change options of a particular series, return an [object with the
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart ...
+            :data-source="fruitProduction">
+            <DxCommonSeriesSettings
+                argument-field="fruit"
+                value-field="produced"
+                type="bar"
+            />
+            <DxSeriesTemplate
+                :customize-series="customizeSeries"
+                name-field="year"
+            />
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, {
+        DxCommonSeriesSettings,
+        DxSeriesTemplate
+    } from 'devextreme-vue/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples", year: 2014, produced: 84 },
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxChart,
+            DxCommonSeriesSettings,
+            DxSeriesTemplate
+        },
+
+        data() {
+            return {
+                fruitProduction
+            };
+        },
+
+        methods: {
+            customizeSeries(seriesName) {
+                // Changes the type of the series "2016" from the common "bar" to "line"
+                return seriesName === 2016 ? { type: "line" } : { };
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, {
+        CommonSeriesSettings,
+        SeriesTemplate
+    } from 'devextreme-react/chart';
+
+    const fruitProduction = [
+        { fruit: "Apples", year: 2014, produced: 84 },
+        // ...
+    ];
+
+    const customizeSeries = (seriesName) => {
+        // Changes the type of the series "2016" from the common "bar" to "line"
+        return seriesName === 2016 ? { type: "line" } : { };
+    };
+
+    const App = () => {
+        return (
+            <Chart ...
+                dataSource={fruitProduction}>
+                <CommonSeriesSettings
+                    argumentField="fruit"
+                    valueField="produced"
+                    type="bar"
+                />
+                <SeriesTemplate
+                    nameField="year"
+                    customizeSeries={customizeSeries}
+                />
+            </Chart>
+        );
+    };
+
+    export default App;
 
 ---
 

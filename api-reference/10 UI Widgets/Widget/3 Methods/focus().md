@@ -3,7 +3,7 @@ id: Widget.focus()
 ---
 ---
 ##### shortDescription
-Sets focus on the widget.
+Sets focus on the UI component.
 
 ---
 #####See Also#####

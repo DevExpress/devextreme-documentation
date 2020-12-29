@@ -5,10 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies options for displaying the widget.
+Specifies options for displaying the UI component.
 
 ---
-If you assign only a string that specifies event names on which the widget is shown, the widget will not apply any delay.
+If you assign only a string that specifies event names on which the UI component is shown, the UI component will not apply any delay.
 
     <!--JavaScript-->
     showEvent: "mouseenter"

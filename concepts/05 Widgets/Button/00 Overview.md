@@ -1,4 +1,4 @@
-The **Button** widget is a simple button that performs specified commands when a user clicks it.
+The **Button** UI component is a simple button that performs specified commands when a user clicks it.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
@@ -109,7 +109,7 @@ In the previous code, the [click](/api-reference/10%20UI%20Widgets/dxButton/4%20
         .on("click", clickHandler1)
         .on("click", clickHandler2);
 
-The appearance of the **Button** is predefined by its [type](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#type'). Find more on this and other properties that impact the widget appearance in the [Customize the Appearance](/concepts/05%20Widgets/Button/05%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/Button/Customize_the_Appearance/') article.
+The appearance of the **Button** is predefined by its [type](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#type'). Find more on this and other properties that impact the UI component appearance in the [Customize the Appearance](/concepts/05%20Widgets/Button/05%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/Button/Customize_the_Appearance/') article.
 
 #####See Also#####
 #include common-link-configurewidget

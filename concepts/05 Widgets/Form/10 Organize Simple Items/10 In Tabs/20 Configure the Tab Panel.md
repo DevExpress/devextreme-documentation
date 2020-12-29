@@ -1,4 +1,4 @@
-For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') widget. Therefore, you can specify any [options of the TabPanel](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/') in the [tabPanelOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions') object.
+For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') UI component. Therefore, you can specify any [options of the TabPanel](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/') in the [tabPanelOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions') object.
 
 ---
 ##### jQuery
@@ -31,11 +31,9 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
         [(formData)]="employee">
         <dxi-item dataField="firstName"></dxi-item>
         <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item itemType="tabbed"
-            [tabPanelOptions]="{
-                height: 250,
-                onTitleClick: tabPanel_tabTitleClick
-            }">
+        <dxi-item itemType="tabbed">
+            <dxo-tab-panel-options [height]="250" [onTitleClick]="tabPanel_tabTitleClick">
+            </dxo-tab-panel-options>
         </dxi-item>
     </dx-form>
 

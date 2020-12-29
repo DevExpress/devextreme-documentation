@@ -8,7 +8,7 @@ Assign *"bubble"* to the **series[]**.[type](/api-reference/20%20Data%20Visualiz
 - All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object;
 - All **Bubble** series using the **commonSeriesSettings**.**bubble** object.
 
-Note that **Bubble** series require an additional data field that provides size values. Assign its name to the **series[]**.[sizeField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/sizeField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#sizeField') option. Based on the size values, the widget calculates the actual bubble sizes in pixels, ranging between [minBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/minBubbleSize.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#minBubbleSize') and [maxBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/maxBubbleSize.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#maxBubbleSize').
+Note that **Bubble** series require an additional data field that provides size values. Assign its name to the **series[]**.[sizeField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/sizeField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#sizeField') option. Based on the size values, the UI component calculates the actual bubble sizes in pixels, ranging between [minBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/minBubbleSize.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#minBubbleSize') and [maxBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/maxBubbleSize.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#maxBubbleSize').
 
 ---
 ##### jQuery
@@ -25,7 +25,7 @@ Note that **Bubble** series require an additional data field that provides size 
                 bubble: { ... }
             },
             minBubbleSize: 14, // in pixels
-            maxBubbleSize: 0.3 // in fractions of the widget's height or width, depending on which is smaller
+            maxBubbleSize: 0.3 // in fractions of the UI component's height or width, depending on which is smaller
         });
     });
 

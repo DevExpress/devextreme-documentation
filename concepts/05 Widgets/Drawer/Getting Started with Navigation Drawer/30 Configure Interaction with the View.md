@@ -37,9 +37,9 @@ When the **Drawer** opens, it can overlap, shrink, or partially displace the vie
 
 ##### React
 
-    <!-- tab: DxComponent.js -->
+    <!-- tab: NavigationDrawer.js -->
     // ...
-    class DxComponent extends React.Component {
+    class NavigationDrawer extends React.Component {
         // ...
         render() {
             return (
@@ -51,7 +51,7 @@ When the **Drawer** opens, it can overlap, shrink, or partially displace the vie
             );
         }
     }
-    export default DxComponent;
+    export default NavigationDrawer;
 
 ##### ASP.NET MVC Controls
 

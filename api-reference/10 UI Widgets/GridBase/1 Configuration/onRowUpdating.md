@@ -16,10 +16,10 @@ Information about the event that caused the function's execution.
 **false** or a Promise resolved with **false** or **undefined** continues row updating.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The row's key.

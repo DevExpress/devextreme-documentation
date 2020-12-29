@@ -7,7 +7,7 @@ type: Array<Object>
 Configures toolbar items.
 
 ---
-In the following code, two items are defined on the toolbar: one is plain text, another is the [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') widget:
+In the following code, two items are defined on the toolbar: one is plain text, another is the [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') UI component:
 
 ---
 ##### jQuery

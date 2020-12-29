@@ -14,6 +14,8 @@ A Promise that is resolved after file system items are obtained. It is a <a href
 
 ---
 
+The **getItems** function returns data items and then passes them to the [dataItem](/Documentation/ApiReference/Common/Object_Structures/FileSystemItem/Fields/#dataItem) fields of the [FileSystemItem](/Documentation/ApiReference/Common/Object_Structures/FileSystemItem/) objects. You can call the [getItems](/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Custom/Methods/#getItems) method to get these file system items.
+
 ---
 
 ##### jQuery

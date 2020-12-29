@@ -5,6 +5,6 @@ default: 'No data to display'
 ---
 ---
 ##### shortDescription
-The text or HTML markup displayed by the widget if the item collection is empty.
+The text or HTML markup displayed by the UI component if the item collection is empty.
 
 ---

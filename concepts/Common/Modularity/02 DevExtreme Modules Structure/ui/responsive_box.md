@@ -1,8 +1,8 @@
-Exposes the **ResponsiveBox** widget.
+Exposes the **ResponsiveBox** UI component.
 
 Exports:
 
-- *default* - The [ResponsiveBox](/api-reference/10%20UI%20Widgets/dxResponsiveBox '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/') widget
+- *default* - The [ResponsiveBox](/api-reference/10%20UI%20Widgets/dxResponsiveBox '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/') UI component
 
         require("ui/responsive_box");
         // ===== or =====

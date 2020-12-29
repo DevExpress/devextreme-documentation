@@ -24,7 +24,7 @@ Set the **dataSource** option to the URL of a JSON file or service that returns 
 Implement an [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/').
 
 - **Web API, PHP, MongoDB**     
-Use one of the following extensions to enable the server to process data according to the protocol DevExtreme widgets use:
+Use one of the following extensions to enable the server to process data according to the protocol DevExtreme UI components use:
 
     - <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>
     - <a href="https://github.com/DevExpress/DevExtreme-PHP-Data/blob/master/README.md" target="_blank">DevExtreme-PHP-Data</a>

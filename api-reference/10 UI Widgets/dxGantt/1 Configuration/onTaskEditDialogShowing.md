@@ -15,10 +15,10 @@ Information about the event.
 Allows you to cancel the edit dialog showing.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.hiddenFields): Array<String>
 An array of hidden fields.
@@ -55,6 +55,109 @@ Note that the **hiddenFields** and **readOnlyFields** parameters affect only tas
             }
         });
     }); 
+
+##### Angular
+
+    <!--TypeScript-->
+    import { DxGanttModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        onTaskEditDialogShowing(e) {
+            if (e.key != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxGanttModule
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-gantt ...
+        (onTaskEditDialogShowing)="onTaskEditDialogShowing($event)">
+    </dx-gantt>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt
+            ...
+            @task-edit-dialog-showing="onTaskEditDialogShowing"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxGantt from 'devextreme-vue/gantt';
+  
+    export default {
+        components: {
+            DxGantt
+        },
+        methods: {
+            onTaskEditDialogShowing(e) {
+                if (e.key != 0) {
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Gantt from 'devextreme-react/gantt';
+
+    class App extends React.Component {
+        // ...
+        render() {
+            return (
+                <Gantt
+                     //...
+                     onTaskEditDialogShowing={this.onTaskEditDialogShowing}
+                />
+            );
+        }
+        onTaskEditDialogShowing = (e) => {
+            if (e.key != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ID("gantt")
+        // ...
+        .onTaskEditDialogShowing("gantt_taskEditDialogShowing_handler")
+    )
+    <script>
+        function gantt_taskEditDialogShowing_handler(e) {
+            if (e.key != 0) {
+                // your code
+                e.cancel = true;
+            }
+        }
+    </script>
 
 ---
 

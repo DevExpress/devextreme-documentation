@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the minimum height of the widget.
+Specifies the minimum height of the UI component.
 
 ---
 This option accepts a value of one of the following types:

@@ -5,6 +5,6 @@ default: 1
 ---
 ---
 ##### shortDescription
-Specifies the step by which the widget's value changes when a user drags a handler.
+Specifies the step by which the UI component's value changes when a user drags a handler.
 
 ---

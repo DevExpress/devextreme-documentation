@@ -1,0 +1,1 @@
+This section describes how to select a range of values, move this range on a scale, and handle the range change event. 

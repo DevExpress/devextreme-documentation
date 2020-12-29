@@ -15,7 +15,7 @@ The objects are not processed by the [DataSource](/api-reference/30%20Data%20Lay
 ---
 Below is an example of a **TreeList** with several selected rows:
 
-![Selection in the DevExtreme TreeList widget](/images/treelist/getselectedrowkeys.png)
+![Selection in the DevExtreme TreeList](/images/treelist/getselectedrowkeys.png)
 
 The **getSelectedRowsData(mode)** method called for this **TreeList** returns different results depending on the **mode** argument:
 

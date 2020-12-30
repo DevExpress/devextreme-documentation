@@ -2,7 +2,7 @@ An all-day appointment occupies the entire day.
 
 ![Scheduler All-Day Appointment](/images/UiWidgets/Scheduler_AllDayAppointment.png)
 
-To make an appointment all-day, set its [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) field to **true**. An all-day appointment must have a [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) field. You can also set an [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) field if the appointment occupies more than one entire day. Time values in these fields are ignored.
+To create an all-day appointment, set its [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) field to **true**. An all-day appointment must have a [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) field. You can also set an [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) field if the appointment occupies more than one day. Time values in these fields are ignored.
 
     <!--JavaScript-->
     var allDayAppointment = [{

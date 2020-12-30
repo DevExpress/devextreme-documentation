@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A horizontal position of the point.
 
 ---
-<!-- Description goes here -->

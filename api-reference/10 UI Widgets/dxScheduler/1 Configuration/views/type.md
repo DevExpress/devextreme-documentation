@@ -6,9 +6,12 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The name of the view.
+The type of the view.
 
 ---
+
+For information about available view types, refer to the [View Types](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/) article.
+
 #include common-ref-enum with {
     enum: "`SchedulerViewType`",
     values: "`Day`, `Week`, `WorkWeek`, `Month`, `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, `TimelineMonth`, and `Agenda`"

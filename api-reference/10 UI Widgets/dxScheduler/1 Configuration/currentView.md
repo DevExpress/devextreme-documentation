@@ -10,7 +10,10 @@ firedEvents: optionChanged
 Specifies the currently displayed view. Accepts the view's [name](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/name.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#name') or [type](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#type').
 
 ---
-In all situations when more than one view meets the **currentView** condition, the first matching view from the [views](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/') array takes precedence.
+
+When more than one view matches the **currentView** value, the **Scheduler** displays the first matching view from the [views](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) array.
+
+To subscribe to changes of the current view, use the [onOptionChanged](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onOptionChanged) handler.
 
 #include common-ref-enum with {
     enum: "`SchedulerViewType`",

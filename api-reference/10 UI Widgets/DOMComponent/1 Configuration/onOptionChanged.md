@@ -14,15 +14,15 @@ The widget's instance.
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.fullName): String
-The path to the modified option that includes all parent options.
+The path to the modified property that includes all parent properties.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
 ##### field(e.name): String
-The modified option if it belongs to the first level. Otherwise, the first-level option it is nested into.
+The modified property if it belongs to the first level. Otherwise, the first-level property it is nested into.
 
 ##### field(e.value): any
-The modified option's new value.
+The modified property's new value.
 
 ---

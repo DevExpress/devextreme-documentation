@@ -1,4 +1,4 @@
-For this, specify the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) property.
+To specify the current date, use the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) property:
 
 ---
 ##### jQuery

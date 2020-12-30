@@ -2,17 +2,17 @@ The **Scheduler** can load and update data from these data source types:
 
 * [Local array](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/)
 
-* [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
+* [Read-only data in JSON format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 
 * [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
 
 * [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
 
-* [Custom data sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
+* [Custom data sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
 
 Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource) property to specify a data source. In this tutorial, we will use a local array. Its objects have custom field names that's why we will specify them in the following **Scheduler**'s properties: [textExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#textExpr), [startDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#startDateExpr), [endDateExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#endDateExpr), [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr), and [recurrenceRuleExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr).
 
-[note]The UI component supports three types of appointments: one-time, all-day, and recurring. The used data source contains them all. 
+The **Scheduler** supports one-time, all-day, and recurring [appointment types](/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/). The data source below contains them all.
 
 ---
 ##### jQuery
@@ -20,7 +20,6 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     <!-- tab: index.js -->
     $(function() { 
         $("#scheduler").dxScheduler({
-            // ...
             dataSource: appointments,
             textExpr: "appointmentText",
             startDateExpr: "start",
@@ -107,7 +106,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 ##### Angular 
 
     <!-- tab: app.component.html -->
-    <dx-scheduler ...
+    <dx-scheduler
         [dataSource]="appointments"
         textExpr="appointmentText"
         startDateExpr="start"
@@ -127,7 +126,6 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
         providers: [AppService]
     }) 
     export class AppComponent { 
-        // ...
         appointments: Appointment[];
 
         constructor(service: AppService) {
@@ -220,29 +218,26 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 
     <!-- tab: App.vue -->
     <template> 
-        <DxScheduler ...
+        <DxScheduler
             :data-source="appointments"
-            textExpr="appointmentText"
+            text-expr="appointmentText"
             startDateExpr="start"
             endDateExpr="end"
-            allDayExpr="wholeDay"
-            recurrenceRuleExpr="recurrence">
+            all-day-expr="wholeDay"
+            recurrence-rule-expr="recurrence">
         </DxScheduler>
     </template> 
 
     <script>
-
     import { DxScheduler } from 'devextreme-vue/scheduler';
     import { appointments } from './data.js';
 
     export default {
-        name: 'Vue: Getting started with Scheduler',
         components: {
             DxScheduler
         },
         data() {
             return {
-                // ...
                 appointments: appointments
             };
         }
@@ -323,7 +318,7 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
     function App() {
         return (
             <div className="App">
-                <Scheduler ...
+                <Scheduler
                     dataSource={appointments}
                     textExpr="appointmentText"
                     startDateExpr="start"
@@ -400,4 +395,4 @@ Use the [dataSource](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configur
 
 ---
 
-Run the code and ensure that the widget properly displays all appointments.
+Run the code and ensure that the **Scheduler** properly displays all appointments.

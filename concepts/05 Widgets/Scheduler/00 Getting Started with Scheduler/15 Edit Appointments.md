@@ -2,21 +2,15 @@ Users can do the following actions on appointments:
 
 * Add new appointments
 
-* Change text and date fields in the details form
+* Update appointments in an edit form
 
-* Change start and end time zones in the details form
+* Resize an appointment to change its duration
 
-* Rese the appointment's rectangle to change the duration
+* Drag and drop an appointment to reschedule it
 
-* Drag the appointment's rectangle to change start and end dates 
+* Remove appointments
 
-* Remove appointments with the help of the appointment's tooltip.
-
-All of these operations - except time zone changing and appointment's dragging and resizing on iOS and Android - are enabled. To change the default settings, use the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/) object.
-
-In this step, we will disable drag appointments' dragging and enable time zone editing. For this, we will set the **editing**.[allowDragging](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDragging) to `false` and editing.[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) to `true`.
-
-[note] The **Scheduler** displays appointment's time zone only when **editing**.**allowTimeZoneEditing** is `true`.
+Edit operations are enabled by default. To disable an individual operation, assign **false** to its property in the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/) object. In this tutorial, we use the [allowDragging](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDragging) property to disable appointment drag-and-drop.
 
 ---
 ##### jQuery
@@ -52,12 +46,9 @@ In this step, we will disable drag appointments' dragging and enable time zone e
     </template> 
 
    <script>
-
     import { DxScheduler, DxEditing } from 'devextreme-vue/scheduler';
-    import { data, priorities } from './data.js';
 
     export default {
-        name: 'Vue: Getting started with Scheduler',
         components: {
             DxScheduler,
             DxEditing

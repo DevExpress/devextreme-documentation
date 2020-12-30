@@ -57,7 +57,7 @@
     import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core'; 
     import { AppComponent } from './app.component'; 
-    import { dxSchedulerModule } from 'devextreme-angular'; 
+    import { DxSchedulerModule } from 'devextreme-angular'; 
 
     @NgModule({ 
         declarations: [ 

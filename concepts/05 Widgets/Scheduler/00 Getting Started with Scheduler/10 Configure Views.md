@@ -44,22 +44,14 @@ You can customize any view. For this, add an object to **views** and specify its
     <!-- tab: app.component.html -->
     <dx-scheduler ...
         currentView="week">
-
-        <dxi-view
-            type="day">
-        </dxi-view>
+        <dxi-view type="day"></dxi-view>
         <dxi-view
             type="week"
             [startDayHour]="10"
             [endDayHour]="22">
         </dxi-view>
-        <dxi-view
-            type="month">
-        </dxi-view>
-        <dxi-view
-            type="timelineWeek">
-        </dxi-view>
-
+        <dxi-view type="month"></dxi-view>
+        <dxi-view type="timelineWeek"></dxi-view>
     </dx-scheduler> 
 
 ##### Vue 
@@ -68,22 +60,14 @@ You can customize any view. For this, add an object to **views** and specify its
     <template> 
         <DxScheduler ...
             current-view="week">
-
-            <DxView
-                type="day"
-            />
+            <DxView type="day" />
             <DxView
                 type="week"
                 :start-day-hour="10"
                 :end-day-hour="22"
             />
-            <DxView
-                type="month"
-            />
-            <DxView
-                type="timelineWeek"
-            />
-            
+            <DxView type="month" />
+            <DxView type="timelineWeek" />
         </DxScheduler>
     </template> 
 
@@ -123,22 +107,14 @@ You can customize any view. For this, add an object to **views** and specify its
             <div className="App">
                 <Scheduler ...
                     defaultCurrentView="week">
-
-                    <View
-                        type="day"
-                    />
+                    <View type="day" />
                     <View
                         type="week"
                         startDayHour={10}
                         endDayHour={22}
                     />
-                    <View
-                        type="month"
-                    />
-                    <View
-                        type="timelineWeek"
-                    />
-
+                    <View type="month" />
+                    <View type="timelineWeek" />
                 </Scheduler>
             </div>
         );

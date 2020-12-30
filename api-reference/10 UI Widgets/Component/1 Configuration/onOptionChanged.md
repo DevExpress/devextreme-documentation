@@ -25,7 +25,7 @@ The modified property's new value.
 
 ---
 
-The following example shows how to subscribe to changes of a component property:
+The following example shows how to subscribe to component property changes:
 
 ---
 

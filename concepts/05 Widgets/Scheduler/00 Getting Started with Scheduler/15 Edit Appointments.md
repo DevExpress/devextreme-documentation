@@ -45,12 +45,18 @@ Edit operations are enabled by default. To disable an individual operation, assi
         </DxScheduler>
     </template> 
 
-   <script>
-    import { DxScheduler, DxEditing } from 'devextreme-vue/scheduler';
+    <script>
+    // ...
+    import {
+        DxScheduler,
+        // ...
+        DxEditing
+    } from 'devextreme-vue/scheduler';
 
     export default {
         components: {
             DxScheduler,
+            // ...
             DxEditing
         },
         // ...
@@ -60,19 +66,20 @@ Edit operations are enabled by default. To disable an individual operation, assi
 ##### React 
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { Scheduler, Editing } from 'devextreme-react/scheduler';
+    // ...
+    import {
+        Scheduler,
+        // ...
+        Editing
+    } from 'devextreme-react/scheduler';
 
     function App() {
         return (
             <div className="App">
                 <Scheduler ... >
-                <Editing
-                    allowDragging={false}
-                />
+                    <Editing
+                        allowDragging={false}
+                    />
                 </Scheduler>
             </div>
         );

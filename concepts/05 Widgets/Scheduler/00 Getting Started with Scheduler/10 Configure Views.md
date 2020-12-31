@@ -1,22 +1,18 @@
-The **Scheduler** supports the following views:
+The **Scheduler** supports the following view types:
 
-* [Day](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Day_View) (default)
+* [Day](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Day_View)
 
-* [Week and WorkWeek](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Week_and_WorkWeek_Views) (week is added by default)
+* [Week and Work week](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Week_and_WorkWeek_Views)
 
 * [Month](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Month_View)
 
-* [Timeline](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Timeline_Views)
+* [Timeline Day, Month, Week, and Work week](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Timeline_Views)
 
 * [Agenda](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/#Agenda_View)
 
-* [Customized views](/Documentation/Guide/Widgets/Scheduler/Views/Customize_Individual_Views/).
+Use the [views[]](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) array to configure views. This array can contain strings ([view types](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#type)) and objects (view configurations). Use a string if the default view configuration suits you. Otherwise, declare an object that configures the view and specify the [type](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#type) and [other properties](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) in it. In the code below, the **views[]** array contains the Day, Week, and Month views. We specify the [startDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#startDayHour) and [endDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#endDayHour) properties for Day and Week; Month uses its default configuration.
 
-The default views are *"day"* and *"week"*. To use custom ones, specify the [views[]](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) property. In this tutorial, we will use *"day"*, *"week"*, *"month"*, and *"timelineWeek"* views.
-
-The default view is *"day"*. You can change it in the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) property - we will set it to *"week"*.
-
-You can customize any view. For this, add an object to **views** and specify its [type](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#type) and other properties. In this tutorial, we will set the first and last hours of the *"week"* view's time scale to 10 and 22. For this, we will use the [startDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#startDayHour) and [endDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#endDayHour) properties. 
+To specify the view displayed initially, set the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) option. In the following code, the initial view is Week.
 
 ---
 ##### jQuery
@@ -25,15 +21,16 @@ You can customize any view. For this, add an object to **views** and specify its
     $(function() { 
         $("#scheduler").dxScheduler({ 
             // ...
-            views: [
-                "day",
-                {
-                    type: "week",
-                    startDayHour: 10,
-                    endDayHour: 22
-                },
-                "month", 
-                "timelineWeek"
+            views: [{
+                type: "day",
+                startDayHour: 10,
+                endDayHour: 22
+            }, {
+                type: "week",
+                startDayHour: 10,
+                endDayHour: 22
+            },
+            "month"
             ],
             currentView: "week"
         });
@@ -44,14 +41,17 @@ You can customize any view. For this, add an object to **views** and specify its
     <!-- tab: app.component.html -->
     <dx-scheduler ...
         currentView="week">
-        <dxi-view type="day"></dxi-view>
+        <dxi-view
+            type="day"
+            [startDayHour]="10"
+            [endDayHour]="22">
+        </dxi-view>
         <dxi-view
             type="week"
             [startDayHour]="10"
             [endDayHour]="22">
         </dxi-view>
         <dxi-view type="month"></dxi-view>
-        <dxi-view type="timelineWeek"></dxi-view>
     </dx-scheduler> 
 
 ##### Vue 
@@ -60,61 +60,55 @@ You can customize any view. For this, add an object to **views** and specify its
     <template> 
         <DxScheduler ...
             current-view="week">
-            <DxView type="day" />
+            <DxView
+                type="day"
+                :start-day-hour="10"
+                :end-day-hour="22"
+            />
             <DxView
                 type="week"
                 :start-day-hour="10"
                 :end-day-hour="22"
             />
             <DxView type="month" />
-            <DxView type="timelineWeek" />
         </DxScheduler>
     </template> 
 
     <script> 
-    import 'devextreme/dist/css/dx.common.css'; 
-    import 'devextreme/dist/css/dx.light.css'; 
-
+    // ...
     import { DxScheduler, DxView } from 'devextreme-vue/scheduler';
-
-    import { appointments } from './data.js';
 
     export default { 
         components: {
             DxScheduler,
             DxView
         },
-        data() {
-            return {
-                // ...
-            };
-        }
+        // ...
     } 
     </script> 
 
 ##### React 
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
+    // ...
     import { Scheduler, View } from 'devextreme-react/scheduler';
-    import { appointments } from './data.js';
 
     function App() {
         return (
             <div className="App">
                 <Scheduler ...
                     defaultCurrentView="week">
-                    <View type="day" />
+                    <View
+                        type="day"
+                        startDayHour={10}
+                        endDayHour={22}
+                    />
                     <View
                         type="week"
                         startDayHour={10}
                         endDayHour={22}
                     />
                     <View type="month" />
-                    <View type="timelineWeek" />
                 </Scheduler>
             </div>
         );

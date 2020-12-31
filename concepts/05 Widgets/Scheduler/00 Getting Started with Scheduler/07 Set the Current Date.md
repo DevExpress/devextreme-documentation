@@ -7,14 +7,14 @@ To specify the current date, use the [currentDate](/Documentation/ApiReference/U
     $(function() { 
         $("#scheduler").dxScheduler({
             //...
-            currentDate: new Date(2021, 4, 25)
+            currentDate: new Date(2021, 4, 25),
         });
     });
 
 ##### Angular 
 
     <!-- tab: app.component.html -->
-    <dx-scheduler id="scheduler" ...
+    <dx-scheduler ...
         [(currentDate)]="currentDate">
     </dx-scheduler> 
 
@@ -35,13 +35,12 @@ To specify the current date, use the [currentDate](/Documentation/ApiReference/U
     <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
-            :current-date="currentDate">
+            :current-date.sync="currentDate">
         </DxScheduler>
-    </template> 
+    </template>
 
     <script> 
     // ...
-
     export default { 
         // ...
         data() {
@@ -56,14 +55,21 @@ To specify the current date, use the [currentDate](/Documentation/ApiReference/U
 
     <!-- tab: App.js -->
     // ...
-
-    const currentDate = new Date(2021, 4, 25);
+    import { useCallback, useState } from 'react';
 
     function App() {
+        const [currentDate, setCurrentDate] = useState(new Date(2021, 4, 25));
+        const handlePropertyChange = useCallback((e) => {
+            if(e.name === 'currentDate') {
+                setCurrentDate(e.value);
+            }
+        }, [])
+
         return (
             <div className="App">
                 <Scheduler ...
-                    defaultCurrentDate={currentDate}>
+                    currentDate={currentDate}
+                    onOptionChanged={handlePropertyChange}>
                 </Scheduler>
             </div>
         );

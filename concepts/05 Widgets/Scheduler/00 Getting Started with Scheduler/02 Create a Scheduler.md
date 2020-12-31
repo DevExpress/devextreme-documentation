@@ -36,9 +36,8 @@
 [Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a **Scheduler**:
 
     <!-- tab: app.component.html -->
-    <dx-scheduler id="scheduler"
+    <dx-scheduler id="scheduler">
         <!-- Configuration goes here -->
-    >
     </dx-scheduler> 
 
     <!-- tab: app.component.ts -->
@@ -83,9 +82,8 @@
 
     <!-- tab: App.vue -->
     <template> 
-        <DxScheduler id="scheduler
+        <DxScheduler id="scheduler>
             <!-- Configuration goes here -->
-        >
         </DxScheduler>
     </template> 
 
@@ -93,7 +91,7 @@
     import 'devextreme/dist/css/dx.common.css'; 
     import 'devextreme/dist/css/dx.light.css'; 
 
-    import DxScheduler from 'devextreme-vue/scheduler'; 
+    import { DxScheduler } from 'devextreme-vue/scheduler'; 
 
     export default { 
         components: {
@@ -113,18 +111,17 @@
 [Add DevExtreme to your React application](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/) and use the following code to create a **Scheduler**:
 
     <!-- tab: App.js -->
-    import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
+    import './App.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
 
     function App() {
         return (
             <div className="App">
-                <Scheduler id="dataGrid"
+                <Scheduler id="scheduler">
                     {/* Configuration goes here */}
-                >
                 </Scheduler>
             </div>
         );

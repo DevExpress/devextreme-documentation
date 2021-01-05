@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.useNativeScrolling
 type: Boolean
-default: true, false (desktop), true (Mac)
+default: true, false (desktop except Mac)
 ---
 ---
 ##### shortDescription

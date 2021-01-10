@@ -19,7 +19,7 @@ The data of the appointment for which a form is opened.
 The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.form): dxForm
 The form's instance; created only once - when the function is executed for the first time.

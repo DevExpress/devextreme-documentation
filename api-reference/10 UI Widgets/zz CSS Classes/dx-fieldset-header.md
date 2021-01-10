@@ -14,4 +14,4 @@ A class used to display header of a [dx-fieldset](/api-reference/10%20UI%20Widge
         </div>
     </div>
 
-The **dx-fieldset-header** element can hold plain text, UI UI components, knockout bindings or custom markup.
+The **dx-fieldset-header** element can hold plain text, UI components, knockout bindings or custom markup.

@@ -7,7 +7,7 @@ type: Object
 Specifies markup for a UI component item.
 
 ---
-The **dxItem** component defines custom markup for items in layout and collection widgets. **dxItem** has different options depending on the UI component where it is used. For a full list of them, see the **items** option description in a specific UI component's API Reference.
+The **dxItem** component defines custom markup for items in layout and collection UI components. **dxItem** has different options depending on the UI component where it is used. For a full list of them, see the **items** option description in a specific UI component's API Reference.
 
 ---
 #####jQuery  

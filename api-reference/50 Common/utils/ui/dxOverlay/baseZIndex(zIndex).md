@@ -5,7 +5,7 @@ export: dxOverlay.baseZIndex
 ---
 ---
 ##### shortDescription
-Specifies the base z-index for all overlay widgets.
+Specifies the base z-index for all overlay UI components.
 
 ##### param(zIndex): Number
 The z-index value.
@@ -24,7 +24,7 @@ By default, the base z-index for all overlay UI components except **Toast** is 1
 
 [note]The base z-index for **Toast** UI components is greater than the value specified by this method by 8000. For example, if you pass 2000 to the **baseZIndex** method, the **Toast** base z-index is 10000.
 
-The method affects the following widgets.
+The method affects the following UI components.
 
 - [LoadPanel](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/')
 - [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Widgets/dxPopover/')

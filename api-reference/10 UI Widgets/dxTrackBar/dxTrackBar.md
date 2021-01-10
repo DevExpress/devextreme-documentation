@@ -5,6 +5,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-A base class for track bar widgets.
+A base class for track bar UI components.
 
 ---

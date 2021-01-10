@@ -1,4 +1,4 @@
-The **Toolbar** is a UI component containing items that usually manage screen content. Those items can be plain text or widgets.
+The **Toolbar** is a UI component containing items that usually manage screen content. Those items can be plain text or UI components.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview/"

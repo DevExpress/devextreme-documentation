@@ -5,7 +5,7 @@ export: exportWidgets
 ---
 ---
 ##### shortDescription
-Exports one or several widgets.
+Exports one or several UI components.
 
 ##### param(widgetInstances): Array<Array<DOMComponent>>
 An array with the following format:

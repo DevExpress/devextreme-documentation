@@ -8,6 +8,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-The base class for widgets.
+The base class for UI components.
 
 ---

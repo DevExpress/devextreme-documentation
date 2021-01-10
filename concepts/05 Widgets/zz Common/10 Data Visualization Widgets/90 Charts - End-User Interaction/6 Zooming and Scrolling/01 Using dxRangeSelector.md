@@ -10,7 +10,7 @@ The **Chart** and **RangeSelector** UI components can operate together, allowing
         
 - **Configure RangeSelector**     
 
-    Create and configure the **RangeSelector** UI component in a similar manner. **Chart** and **RangeSelector** must have completely identical argument axes. Hence, you need to assign the same data source to both widgets.
+    Create and configure the **RangeSelector** UI component in a similar manner. **Chart** and **RangeSelector** must have completely identical argument axes. Hence, you need to assign the same data source to both UI components.
         
         <!--JavaScript-->var dataSource = [...];
         var chartOptions = {
@@ -22,7 +22,7 @@ The **Chart** and **RangeSelector** UI components can operate together, allowing
             // ...
         };
         
-    Optionally, you can display the chart in miniature in the background of **RangeSelector**. For this purpose, assign the same array of series configurations to both widgets.
+    Optionally, you can display the chart in miniature in the background of **RangeSelector**. For this purpose, assign the same array of series configurations to both UI components.
 
         <!--JavaScript-->var dataSource = [...];
         var series = [...];

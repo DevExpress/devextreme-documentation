@@ -11,7 +11,7 @@ State storing enables the UI component to save applied settings and restore them
 
 The state is saved with a specified [storage key](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/storageKey.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#storageKey'). 
 
-State storing saves the following options:
+State storing saves the following properties:
 
 <table class="multicolumn-list">
     <tr>

@@ -13,7 +13,7 @@ Specifies the HTML element in which users can drag and drop files for upload.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"
 }
 
-You can use a selector string, jQuery object or DOM element to specify the **dropZone** option:
+You can use a selector string, jQuery object or DOM element to specify the **dropZone** property:
 
 - String
 

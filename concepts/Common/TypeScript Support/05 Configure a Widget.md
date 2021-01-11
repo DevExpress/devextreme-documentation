@@ -2,7 +2,7 @@ The following code example shows how to declare a UI component configuration obj
 
     window.onload = () => {
         var options: DevExpress.viz.charts.dxChartOptions;
-        properties = {
+        options = {
             dataSource: [
                 { fruit: 'Oranges', total: 10 },
                 { fruit: 'Apples', total: 15 },

@@ -23,7 +23,7 @@ Axis properties can be set using the chart's [valueAxis](/api-reference/20%20Dat
 
 [note]If you have set an property within the **valueAxis** or **argumentAxis** configuration object, it will override the common value that is set using the **commonAxisSettings** object.
 
-The following list gives an overview of the common axis options.
+The following list gives an overview of the common axis properties.
 
 * **Visibility**		
 To make axes visible/invisible, use the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonAxisSettings/#visible') property of the **commonAxisSettings** object.

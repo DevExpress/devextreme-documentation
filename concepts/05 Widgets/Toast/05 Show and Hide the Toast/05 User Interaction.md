@@ -1,4 +1,4 @@
-Because the **Toast** is supposed to notify a user when something happens, it cannot be invoked from the UI. However, it may be hidden from the UI in many different ways. To decide which of them are available to the user, specify the following options.
+Because the **Toast** is supposed to notify a user when something happens, it cannot be invoked from the UI. However, it may be hidden from the UI in many different ways. To decide which of them are available to the user, specify the following properties.
 
 <table class="dx-table">
     <tr>

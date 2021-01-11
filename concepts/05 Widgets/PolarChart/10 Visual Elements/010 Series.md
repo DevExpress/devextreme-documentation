@@ -1,4 +1,4 @@
-A series represents a group of related data points. The most important characteristic of a series is its type, which determines a particular visual representation of data. You can find more details on each series type in the corresponding topics of the [PolarChart Series Types](/concepts/05%20Widgets/PolarChart/20%20Series%20Types '/Documentation/Guide/Widgets/PolarChart/Series_Types/') section. Here, you will learn how to set a series type and other series options.
+A series represents a group of related data points. The most important characteristic of a series is its type, which determines a particular visual representation of data. You can find more details on each series type in the corresponding topics of the [PolarChart Series Types](/concepts/05%20Widgets/PolarChart/20%20Series%20Types '/Documentation/Guide/Widgets/PolarChart/Series_Types/') section. Here, you will learn how to set a series type and other series properties.
 
 ![Series](/images/ChartJS/Polar_Series.png)
 

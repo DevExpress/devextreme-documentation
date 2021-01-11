@@ -6,6 +6,6 @@ inlineType:
 ---
 ---
 ##### shortDescription
-Font options.
+Font properties.
 
 ---

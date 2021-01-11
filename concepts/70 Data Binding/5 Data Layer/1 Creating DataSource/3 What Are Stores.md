@@ -1,11 +1,11 @@
 A store is a universal data access interface within the DevExtreme data layer. It includes the following methods that are required for reading and editing data:
 
-- **load(options)** - Loads data. This function accepts an object specifying [sorting](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/1%20Sorting.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Sorting'), [grouping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Grouping'), [filtering](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'), and [data transformation](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation') options.
+- **load(options)** - Loads data. This function accepts an object specifying [sorting](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/1%20Sorting.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Sorting'), [grouping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Grouping'), [filtering](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'), and [data transformation](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation') properties.
 - **insert(values)** - Adds a new item with the passed values.
 - **remove(key)** - Removes the data item the key specifies.
 - **update(key, values)** - Sets the new values to the data item the key specifies.
 - **byKey(key, extraOptions)** - Loads the data item the key specifies. The **extraOptions** argument requires additional implementation properties to get the required item.
-- **totalCount(options)** - Enables you to get the total count of items that satisfy the specified conditions without loading them. The **options** object can contain **filter** and **group** fields that specify filtering and grouping options.
+- **totalCount(options)** - Enables you to get the total count of items that satisfy the specified conditions without loading them. The **options** object can contain **filter** and **group** fields that specify filtering and grouping properties.
 
 DevExtreme includes the following Store implementations for the most common data access scenarios:
 

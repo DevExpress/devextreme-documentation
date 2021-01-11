@@ -2,7 +2,7 @@ A series point is a visual representation of a series' data point. Because the *
 
 ![Series Points](/images/ChartJS/Polar_Series_Points.png)
 
-By default, points are drawn in a line-like series. In area series, points are not visible, but can be shown if required. There are also series where points are represented in a specific way - a bar and stacked bar. These specific presentations of series points are customized via specific series options. You can learn more on them in series types descriptions (see the [Series](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/010%20Series.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series') section). Series with a typical point representation expose the **point** configuration object that can be used for point customization. If you need to apply similar settings to all series in the chart, use the **commonSeriesSettings** configuration object's [point](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonSeriesSettings/point/') object. Note that properties specified individually within [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/') objects override the common settings specified within the **commonSeriesSettings** object.
+By default, points are drawn in a line-like series. In area series, points are not visible, but can be shown if required. There are also series where points are represented in a specific way - a bar and stacked bar. These specific presentations of series points are customized via specific series properties. You can learn more on them in series types descriptions (see the [Series](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/010%20Series.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series') section). Series with a typical point representation expose the **point** configuration object that can be used for point customization. If you need to apply similar settings to all series in the chart, use the **commonSeriesSettings** configuration object's [point](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonSeriesSettings/point/') object. Note that properties specified individually within [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/') objects override the common settings specified within the **commonSeriesSettings** object.
 
 	<!--JavaScript-->var polarChartOptions = {
         // ...
@@ -18,7 +18,7 @@ By default, points are drawn in a line-like series. In area series, points are n
 		}
 	};
 
-The following list provides an overview of the **point** object options.
+The following list provides an overview of the **point** object properties.
 
 * **Visibility**		
 Use the point's [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/point/#visible') property to change point visibility.

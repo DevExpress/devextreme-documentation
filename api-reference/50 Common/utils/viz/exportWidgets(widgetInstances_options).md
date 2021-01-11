@@ -20,7 +20,7 @@ An array with the following format:
 Each nested array contains UI component instances that should be in the same row in the exported document.
 
 ##### param(options): Object
-Export options.
+Export properties.
 
 ##### field(options.backgroundColor): String
 The background color.

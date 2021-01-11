@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies adaptive layout options.
+Specifies adaptive layout properties.
 
 ---
 The adaptive layout enables the UI component to hide optional elements if they do not fit in the container. Elements are hidden in the following sequence:

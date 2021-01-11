@@ -15,7 +15,7 @@ Ticks are child elements of the argument and value axes. To change their setting
 	};
 
 
-The following list provides an overview of tick options.
+The following list provides an overview of tick properties.
 
 * **Visibility**		
 To make ticks visible/invisible, use the [tick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonAxisSettings/tick/') object's [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/tick/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonAxisSettings/tick/#visible') property.

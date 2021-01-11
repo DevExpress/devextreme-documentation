@@ -8,7 +8,7 @@ default: undefined
 Controls the empty space between the minimum series points and the axis. Applies only to the axes of the *"continuous"* and *"logarithmic"* type.
 
 ---
-By default, the axes extend slightly beyond their extrema generating an empty space between the axes and the minimum/maximum series points. It prevents cutting off parts of those points. To control this empty space, use the **minValueMargin** and **maxValueMargin** options. These properties are used in the following formulas for the actual start and end axis values.
+By default, the axes extend slightly beyond their extrema generating an empty space between the axes and the minimum/maximum series points. It prevents cutting off parts of those points. To control this empty space, use the **minValueMargin** and **maxValueMargin** properties. These properties are used in the following formulas for the actual start and end axis values.
 
     startAxisValue = minDataValue - (maxDataValue - minDataValue) * minValueMargin
     endAxisValue = maxDataValue + (maxDataValue - minDataValue) * maxValueMargin

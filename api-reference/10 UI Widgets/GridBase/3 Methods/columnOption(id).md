@@ -6,7 +6,7 @@ id: GridBase.columnOption(id)
 Gets all properties of a column with a specific identifier.
 
 ##### return: Object
-The column's options.
+The column's properties.
 
 ##### param(id): Number | String
 The column's index, data field, caption, type, or unique name.

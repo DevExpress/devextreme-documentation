@@ -11,7 +11,7 @@ Allows you to export UI components using their SVG markup.
 The SVG markup of the UI components you want to export.
 
 ##### param(options): Object
-Export options.
+Export properties.
 
 ##### field(options.backgroundColor): String
 The color that fills transparent regions.

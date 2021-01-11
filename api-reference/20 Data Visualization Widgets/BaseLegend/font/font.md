@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies the legend items' font options.
+Specifies the legend items' font properties.
 
 ---

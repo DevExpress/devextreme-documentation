@@ -6,7 +6,7 @@ id: Component.option()
 Gets all [UI component options](/api-reference/10%20UI%20Widgets/Component/1%20Configuration '{basewidgetpath}/Configuration/').
 
 ##### return: Object
-The UI component's options.
+The UI component's properties.
 
 ---
 #####See Also#####

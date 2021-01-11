@@ -1,4 +1,4 @@
-Hover-related area settings reside in the [layer](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/') configuration object. By default, areas already respond to hovering over them, so there is no need to specify any options. But if this feature is not required, assign **false** to the [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/hoverEnabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#hoverEnabled') field of the area **layer**.
+Hover-related area settings reside in the [layer](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/') configuration object. By default, areas already respond to hovering over them, so there is no need to specify any properties. But if this feature is not required, assign **false** to the [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/hoverEnabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#hoverEnabled') field of the area **layer**.
 
 	<!--JavaScript-->var vectorMapCfg = {
         // ...
@@ -9,7 +9,7 @@ Hover-related area settings reside in the [layer](/api-reference/20%20Data%20Vis
         }]
 	};
 
-If you did not switch the hovering off, specify the appearance of areas in the hovered state using the [hoveredColor](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/hoveredColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#hoveredColor') and [hoveredBorderColor](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/hoveredBorderColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#hoveredBorderColor') options. Both of them specify the color, only the former specifies it for areas, while the latter specifies it for area borders.
+If you did not switch the hovering off, specify the appearance of areas in the hovered state using the [hoveredColor](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/hoveredColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#hoveredColor') and [hoveredBorderColor](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/hoveredBorderColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#hoveredBorderColor') properties. Both of them specify the color, only the former specifies it for areas, while the latter specifies it for area borders.
 
 	<!--JavaScript-->var vectorMapCfg = {
         // ...

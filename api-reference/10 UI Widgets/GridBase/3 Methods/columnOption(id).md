@@ -3,7 +3,7 @@ id: GridBase.columnOption(id)
 ---
 ---
 ##### shortDescription
-Gets all options of a column with a specific identifier.
+Gets all properties of a column with a specific identifier.
 
 ##### return: Object
 The column's options.
@@ -12,7 +12,7 @@ The column's options.
 The column's index, data field, caption, type, or unique name.
 
 ---
-This method gets the options of the first column found by either of the below:
+This method gets the properties of the first column found by either of the below:
 
 * **Name**        
 The [unique name](/api-reference/_hidden/GridBaseColumn/name.md '{basewidgetpath}/Configuration/columns/#name') of the column.

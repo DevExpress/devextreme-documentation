@@ -1,4 +1,4 @@
-Use the following options to create a shape template:
+Use the following properties to create a shape template:
 
 * The [customShapeTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#customShapeTemplate') property defines a common template for all shapes in the UI component.
 * The [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#template') property defines a template for an individual shape.

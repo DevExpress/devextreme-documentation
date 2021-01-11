@@ -17,6 +17,6 @@
     <tr>
         <td>(c) Support services for products shall accommodate the communication needs of end-users with disabilities.</td>
         <td>Supports</td>
-        <td>The DevExtreme Support Team is familiar with features such as keyboard access and other accessibility options relevant to users with disabilities.</td>
+        <td>The DevExtreme Support Team is familiar with features such as keyboard access and other accessibility properties relevant to users with disabilities.</td>
     </tr>
 </table>

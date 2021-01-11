@@ -8,7 +8,7 @@ type: String
 The name used to identify a built-in button.
 
 ---
-To configure a built-in button, assign its name to this property. The other options in the object configure the button. For example, the following code adds a custom CSS class to the **Save** button:
+To configure a built-in button, assign its name to this property. The other properties in the object configure the button. For example, the following code adds a custom CSS class to the **Save** button:
 
 ---
 ##### jQuery  

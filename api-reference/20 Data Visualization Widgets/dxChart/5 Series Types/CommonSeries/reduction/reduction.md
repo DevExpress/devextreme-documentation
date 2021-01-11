@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies reduction options for financial series.
+Specifies reduction properties for financial series.
 
 ##### propertyOf
 dxChartSeriesTypes.CandleStickSeries,dxChartSeriesTypes.StockSeries

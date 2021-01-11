@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-An object defining the border options for a hovered series.
+An object defining the border properties for a hovered series.
 
 ##### propertyOf
 dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarseries

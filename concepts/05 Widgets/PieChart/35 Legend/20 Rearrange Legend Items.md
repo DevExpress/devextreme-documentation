@@ -170,7 +170,7 @@ To distribute all legend items between several columns (in a vertically-oriented
     ---
 
 - **Adjust the empty space between columns and rows**         
-Regardless the legend orientation, you can adjust the empty space between columns and rows using the [columnItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#columnItemSpacing') and [rowItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#rowItemSpacing') options respectively.
+Regardless the legend orientation, you can adjust the empty space between columns and rows using the [columnItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#columnItemSpacing') and [rowItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#rowItemSpacing') properties respectively.
 
     ---
     ##### jQuery
@@ -257,7 +257,7 @@ Regardless the legend orientation, you can adjust the empty space between column
 
     ---
 
-Below, you can try out all the mentioned options in action.
+Below, you can try out all the mentioned properties in action.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/PieChartLegend/rearrangeLegendItems.html, /Content/Applications/20_2/DataVisualization/Guides/PieChartLegend/rearrangeLegendItems.js, /Content/Applications/20_2/DataVisualization/Guides/PieChartLegend/rearrangeLegendItems.css"></div>
 

@@ -1,4 +1,4 @@
-Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#max') options to specify the range of available dates.
+Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#max') properties to specify the range of available dates.
 
 ---
 ##### jQuery

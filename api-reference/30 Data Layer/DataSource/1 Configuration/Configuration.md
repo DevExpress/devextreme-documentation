@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes options that configure the **DataSource**.
+This section describes properties that configure the **DataSource**.
 
 ---
 [note]

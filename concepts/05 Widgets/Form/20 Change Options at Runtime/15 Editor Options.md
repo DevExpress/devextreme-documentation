@@ -1,4 +1,4 @@
-To change the options of an editor, get its instance first using the [getEditor(dataField)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/getEditor(dataField).md '/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#getEditordataField') method. After that, call the **option(optionName, optionValue)** or **option(optionName, options)** method of this instance. This approach is more typical of jQuery. 
+To change the properties of an editor, get its instance first using the [getEditor(dataField)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/getEditor(dataField).md '/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#getEditordataField') method. After that, call the **option(optionName, optionValue)** or **option(optionName, options)** method of this instance. This approach is more typical of jQuery. 
 
     <!--JavaScript-->
     $(function() {

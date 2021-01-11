@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **SelectBox** UI component.
+An object defining configuration properties for the **SelectBox** UI component.
 
 ---
 #####See Also#####

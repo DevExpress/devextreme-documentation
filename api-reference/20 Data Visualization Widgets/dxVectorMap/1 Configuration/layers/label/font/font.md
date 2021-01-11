@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for marker labels.
+Specifies font properties for marker labels.
 
 ---

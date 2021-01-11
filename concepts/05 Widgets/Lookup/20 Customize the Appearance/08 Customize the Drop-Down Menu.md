@@ -119,7 +119,7 @@ To customize the **Popup** or **Popover**, use the [dropDownOptions](/api-refere
 
 ---
 
-To change the size of the drop-down menu and position it against a specific element on your page, specify the [height](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#height'), [width](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#width') and [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#position') options in the **dropDownOptions** object. The following configuration of the **position** property reads as follows: "place **my** *left* side **at** the *left* side **of** the *"#targetElement"*.
+To change the size of the drop-down menu and position it against a specific element on your page, specify the [height](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#height'), [width](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#width') and [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#position') properties in the **dropDownOptions** object. The following configuration of the **position** property reads as follows: "place **my** *left* side **at** the *left* side **of** the *"#targetElement"*.
 
 ---
 ##### jQuery

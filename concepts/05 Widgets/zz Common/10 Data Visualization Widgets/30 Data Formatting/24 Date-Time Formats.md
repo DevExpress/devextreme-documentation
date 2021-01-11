@@ -50,7 +50,7 @@ The **format** property also accepts strings. Use this capability as a shortcut 
         }
     };
     
-Alternatively, you can use a native formatter of the Globalize library. In this case, the **format** property accepts an object whose fields are the same as the options passed to the <a href="https://github.com/jquery/globalize/blob/master/doc/api/date/date-formatter.md" target="_blank">dateFormatter</a>.
+Alternatively, you can use a native formatter of the Globalize library. In this case, the **format** property accepts an object whose fields are the same as the properties passed to the <a href="https://github.com/jquery/globalize/blob/master/doc/api/date/date-formatter.md" target="_blank">dateFormatter</a>.
 
     <!--JavaScript-->var widgetOptions = {
         // ...

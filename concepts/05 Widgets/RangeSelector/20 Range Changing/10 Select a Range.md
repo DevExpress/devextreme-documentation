@@ -1,9 +1,9 @@
-In **RangeSelector**, you can select a range either manually or from code. There are two ways of manual range selection: dragging [sliders](/concepts/05%20Widgets/RangeSelector/10%20Visual%20Elements/20%20Sliders.md '/Documentation/Guide/Widgets/RangeSelector/Visual_Elements/#Sliders') and selecting an area on a [scale](/concepts/05%20Widgets/RangeSelector/10%20Visual%20Elements/10%20Scale '/Documentation/Guide/Widgets/RangeSelector/Visual_Elements/#Scale') using the mouse. The **RangeSelector**'s behavior during manual range selection depends on the specified options of the [behavior](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/behavior '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/behavior/') configuration object.
+In **RangeSelector**, you can select a range either manually or from code. There are two ways of manual range selection: dragging [sliders](/concepts/05%20Widgets/RangeSelector/10%20Visual%20Elements/20%20Sliders.md '/Documentation/Guide/Widgets/RangeSelector/Visual_Elements/#Sliders') and selecting an area on a [scale](/concepts/05%20Widgets/RangeSelector/10%20Visual%20Elements/10%20Scale '/Documentation/Guide/Widgets/RangeSelector/Visual_Elements/#Scale') using the mouse. The **RangeSelector**'s behavior during manual range selection depends on the specified properties of the [behavior](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/behavior '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/behavior/') configuration object.
 
 	<!--JavaScript-->
 	var rangeSelectorOptions = {
 		behavior: {
-			// The options specifying the RangeSelector's behavior go here
+			// The properties specifying the RangeSelector's behavior go here
 		}
 	};
 

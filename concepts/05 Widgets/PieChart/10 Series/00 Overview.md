@@ -169,7 +169,7 @@ Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1
 
 ---
 
-Settings specified for a series apply to all its points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizePoint') property. This function must return an object with options for the point that you want to customize.
+Settings specified for a series apply to all its points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizePoint') property. This function must return an object with properties for the point that you want to customize.
 
 ---
 ##### jQuery

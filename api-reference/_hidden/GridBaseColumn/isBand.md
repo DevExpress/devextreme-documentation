@@ -12,9 +12,9 @@ Unlike standard columns, band columns do not contain data. Instead, a band colum
 
 * [Create nested column configurations](/api-reference/_hidden/GridBaseColumn/columns '{basewidgetpath}/Configuration/columns/columns/').
 
-* Specify the **isBand** and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '{basewidgetpath}/Configuration/columns/#ownerBand') options inside the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeColumns.md '{basewidgetpath}/Configuration/#customizeColumns') function.
+* Specify the **isBand** and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '{basewidgetpath}/Configuration/columns/#ownerBand') properties inside the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeColumns.md '{basewidgetpath}/Configuration/#customizeColumns') function.
 
-The following code uses the **isBand** and **ownerBand** options to display the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* band:
+The following code uses the **isBand** and **ownerBand** properties to display the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* band:
 
 ---
 ##### jQuery

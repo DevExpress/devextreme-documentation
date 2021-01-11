@@ -245,7 +245,7 @@ As you can see, all items in a plain data source have the **id** and **text** fi
 
 ---
 
-Frequently, the **id** of an item is also its **text**. In this case, set both the **keyExpr** and **displayExpr** options to a single value.
+Frequently, the **id** of an item is also its **text**. In this case, set both the **keyExpr** and **displayExpr** properties to a single value.
 
 ---
 ##### jQuery

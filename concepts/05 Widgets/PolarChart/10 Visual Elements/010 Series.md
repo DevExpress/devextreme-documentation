@@ -40,7 +40,7 @@ To set a particular property to a common value for each series, use the [commonS
 	Note that the series values that are set for a specific series type override common values.
 
 * **Individual Series Settings**		
-	To set series options to individual values, use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/') array. The array items represent objects defining each series separately.
+	To set series properties to individual values, use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/') array. The array items represent objects defining each series separately.
 
 		<!--JavaScript-->var polarChartOptions = {
             // ...
@@ -61,7 +61,7 @@ To identify series on the polar chart's [legend](/concepts/05%20Widgets/PolarCha
 		]
 	};
 
-In addition to series options, the **series** configuration object is used to set options of the series [points](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/020%20Series%20Points/10%20Series%20Points.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series_Points') and [labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/030%20Series%20Point%20Labels.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series_Point_Labels').
+In addition to series options, the **series** configuration object is used to set properties of the series [points](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/020%20Series%20Points/10%20Series%20Points.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series_Points') and [labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/030%20Series%20Point%20Labels.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series_Point_Labels').
 
 	<!--JavaScript-->var polarChartOptions = {
         // ...

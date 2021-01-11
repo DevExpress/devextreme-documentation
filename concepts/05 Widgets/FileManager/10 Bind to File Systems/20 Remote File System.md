@@ -8,7 +8,7 @@ Set the [endpointUrl](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20
 
 You can also use helpers for ASP.NET Core and ASP.NET MVC to access different file systems on the server side according to the protocol the **FileManager** UI component uses. Refer to the [online documentation](https://docs.devexpress.com/AspNetCore/DevExtreme.AspNet.Mvc.FileManagement) and [online demos](https://demos.devexpress.com/ASPNetCore/Demo/FileManager/Overview) to get more information about the helpers.
 
-The data object, which is sent back from the server, contains attributes that store the file system items' key, name, size, modification date and so on. If these attribute names differ from the conventional names, use the **[fieldName]Expr** options to map item properties.
+The data object, which is sent back from the server, contains attributes that store the file system items' key, name, size, modification date and so on. If these attribute names differ from the conventional names, use the **[fieldName]Expr** properties to map item properties.
 
 ---
 

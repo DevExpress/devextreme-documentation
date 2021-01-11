@@ -1,4 +1,4 @@
-You can display an image in the background of **RangeSelector**. To do this, use the options within the **background**.[image](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/background/image '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/background/image/') object. Specify the URL of the required image using the **url** property. Then, choose where to place this image on your range selector using the **location** property.
+You can display an image in the background of **RangeSelector**. To do this, use the properties within the **background**.[image](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/background/image '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/background/image/') object. Specify the URL of the required image using the **url** property. Then, choose where to place this image on your range selector using the **location** property.
 
 	<!--JavaScript-->
 	var rangeSelectorOptions = {

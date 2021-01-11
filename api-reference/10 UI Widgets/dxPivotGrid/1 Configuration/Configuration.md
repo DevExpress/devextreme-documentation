@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the configuration options of the **PivotGrid** UI component.
+This section describes the configuration properties of the **PivotGrid** UI component.
 
 ---
 #####See Also#####

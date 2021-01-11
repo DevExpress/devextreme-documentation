@@ -13,7 +13,7 @@ To make the maximum and minimum series points indicated on a sparkline, set the 
 		// ...
 	};
 
-Additionally, you can change the color of these points using the [minColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/minColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#minColor') and [maxColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/maxColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#maxColor') options. These options specify the color of a bar in *bar* and *win-loss* series, or the color of a series point border in other series.
+Additionally, you can change the color of these points using the [minColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/minColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#minColor') and [maxColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/maxColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#maxColor') options. These properties specify the color of a bar in *bar* and *win-loss* series, or the color of a series point border in other series.
 
 The first and last points are indicated on a sparkline by default. However, if you need to change their visibility, use the [showFirstLast](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/showFirstLast.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#showFirstLast') property.
 

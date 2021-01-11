@@ -8,7 +8,7 @@ Use UI components prefixed with `dxo-` ("o" stands for "object"). In the followi
         </dxo-tooltip>
     </dx-tree-map>
 
-Particular options of the object type are not implemented as nested components. These options depend on the values of other options and therefore cannot be typed (**columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editorOptions') in the **DataGrid**, item's [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') in the **Form**, **items[]**.[options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#options') in the **Toolbar**). Specify them with an object:
+Particular properties of the object type are not implemented as nested components. These properties depend on the values of other properties and therefore cannot be typed (**columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editorOptions') in the **DataGrid**, item's [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') in the **Form**, **items[]**.[options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#options') in the **Toolbar**). Specify them with an object:
 
     <!--HTML-->
     <dx-data-grid>

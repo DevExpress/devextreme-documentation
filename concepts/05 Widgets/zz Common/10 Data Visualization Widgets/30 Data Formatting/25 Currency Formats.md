@@ -51,7 +51,7 @@ If you do not need to change neither the **currency** nor the **precision** fiel
         }
     };
     
-Alternatively, you can use a native formatter of the Globalize library. In this case, the **format** property accepts an object whose fields are the same as the options passed to the <a href="https://github.com/jquery/globalize/blob/master/doc/api/currency/currency-formatter.md" target="_blank">currencyFormatter</a>.
+Alternatively, you can use a native formatter of the Globalize library. In this case, the **format** property accepts an object whose fields are the same as the properties passed to the <a href="https://github.com/jquery/globalize/blob/master/doc/api/currency/currency-formatter.md" target="_blank">currencyFormatter</a>.
 
     <!--JavaScript-->var widgetOptions = {
         // ...

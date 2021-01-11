@@ -181,7 +181,7 @@ You can also define custom masking elements using the [maskRules](/api-reference
 
 ---
 
-The masked value goes to the read-only [text](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/text.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#text') property, while its unmasked equivalent goes to the [value](/api-reference/10%20UI%20Widgets/dxTextBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#value') property. If you use jQuery, you can get the value of either of these options using the [option(optionName)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName).md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Methods/#optionoptionName') method.
+The masked value goes to the read-only [text](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/text.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#text') property, while its unmasked equivalent goes to the [value](/api-reference/10%20UI%20Widgets/dxTextBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#value') property. If you use jQuery, you can get the value of either of these properties using the [option(optionName)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName).md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Methods/#optionoptionName') method.
 
     <!--JavaScript-->const maskedValue = $("#textBoxContainer").dxTextBox("option", "text");
     const unmaskedValue = $("#textBoxContainer").dxTextBox("option", "value");

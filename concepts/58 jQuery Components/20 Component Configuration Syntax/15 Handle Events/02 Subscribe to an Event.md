@@ -1,4 +1,4 @@
-You can subscribe to an event using a configuration property. All event handling options are given names that begin with *on*.
+You can subscribe to an event using a configuration property. All event handling properties are given names that begin with *on*.
 
     <!--JavaScript-->
     $("#dataGridContainer").dxDataGrid({

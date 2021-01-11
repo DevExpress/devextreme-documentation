@@ -1,4 +1,4 @@
-The following instructions explain how to dynamically change an editor's options based on another editor's value:
+The following instructions explain how to dynamically change an editor's properties based on another editor's value:
 
 1. **Implement the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onEditorPreparing') event handler**  
 Use this handler's **editorOptions** parameter to change editor options. The code below changes the **disabled** property of the `LastName` editor if the `FirstName` editor has no entered value:

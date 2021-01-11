@@ -25,7 +25,7 @@ Although by default the tooltip displays information about primary and the targe
 		// ...
 	};
 
-Furthermore, there is a number of additional options specifying the appearance of the tooltip. All of them are set in the **tooltip** configuration object. A structured overview of these options is given in the following list.
+Furthermore, there is a number of additional properties specifying the appearance of the tooltip. All of them are set in the **tooltip** configuration object. A structured overview of these properties is given in the following list.
 
 * **Color**			
 You can specify the color of the tooltip using the [color](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/tooltip/#color') property.

@@ -32,4 +32,4 @@ If neither automatically generated ticks nor ticks with a custom interval fit yo
 		}
     };
 
-In addition, you can specify the color, length and width of major and minor ticks using the corresponding options of the **tick** or **minorTick** configuration objects.
+In addition, you can specify the color, length and width of major and minor ticks using the corresponding properties of the **tick** or **minorTick** configuration objects.

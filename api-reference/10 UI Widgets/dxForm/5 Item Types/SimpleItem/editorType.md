@@ -24,7 +24,7 @@ When using an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/de
                 .Editor(e => e.CheckBox()
                     .Value(true)
                     // ...
-                    // other editor options go here
+                    // other editor properties go here
                 )
         })
     )
@@ -38,7 +38,7 @@ When using an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/de
                     Return e.CheckBox() _
                         .Value(True) _
                         ' ...
-                        ' other editor options go here
+                        ' other editor properties go here
                 End Function)
         End Sub)
     )

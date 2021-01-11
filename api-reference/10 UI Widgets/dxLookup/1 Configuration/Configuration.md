@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Lookup** UI component.
+An object defining configuration properties for the **Lookup** UI component.
 
 ---
 #####See Also#####

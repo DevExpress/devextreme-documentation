@@ -92,7 +92,7 @@ To enable the crosshair, set the **crosshair**.[enabled](/api-reference/20%20Dat
 
 ---
 
-For information about all options of the crosshair and its labels, visit the [crosshair](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/crosshair/') section of the API reference.
+For information about all properties of the crosshair and its labels, visit the [crosshair](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/crosshair/') section of the API reference.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Crosshair/"

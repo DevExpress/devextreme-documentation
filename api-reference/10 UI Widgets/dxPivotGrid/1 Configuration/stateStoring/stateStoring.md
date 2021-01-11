@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-A configuration object specifying options related to state storing.
+A configuration object specifying properties related to state storing.
 
 ---
 State storing enables the UI component to save applied settings and restore them the next time the UI component is loaded. Assign **true** to the **stateStoring**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#enabled') property to enable this functionality.

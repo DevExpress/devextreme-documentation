@@ -4,7 +4,7 @@ A store is a universal data access interface within the DevExtreme data layer. I
 - **insert(values)** - Adds a new item with the passed values.
 - **remove(key)** - Removes the data item the key specifies.
 - **update(key, values)** - Sets the new values to the data item the key specifies.
-- **byKey(key, extraOptions)** - Loads the data item the key specifies. The **extraOptions** argument requires additional implementation options to get the required item.
+- **byKey(key, extraOptions)** - Loads the data item the key specifies. The **extraOptions** argument requires additional implementation properties to get the required item.
 - **totalCount(options)** - Enables you to get the total count of items that satisfy the specified conditions without loading them. The **options** object can contain **filter** and **group** fields that specify filtering and grouping options.
 
 DevExtreme includes the following Store implementations for the most common data access scenarios:

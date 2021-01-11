@@ -35,7 +35,7 @@ The Field Panel partially covers the functionality provided by the [Field Choose
         }
     };
 
-Moreover, if the [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowSorting') and [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowFiltering') options are **true**, the user can apply sorting and filtering to fields directly from the Field Panel.
+Moreover, if the [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowSorting') and [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowFiltering') properties are **true**, the user can apply sorting and filtering to fields directly from the Field Panel.
 
 Functional similarities of the Field Panel and the Field Chooser allow them to work in conjunction. When the fields of the Field Panel are draggable, and the Field Chooser is invoked, the user can move the fields not only within these components, but between them as well.
 

@@ -53,7 +53,7 @@ In addition, you can generate **VectorMap**-compatible files from shapefiles to 
 
 This method accepts the URI of the source shapefile as the first argument. When a folder (instead of a file) is passed as the first argument, all shapefiles from this folder will be processed.
 
-The **processFiles(source, options)** method accepts processing options as the second argument. These options include:
+The **processFiles(source, options)** method accepts processing properties as the second argument. These properties include:
 
 - **output** <span style="font-size:10px"><i>string</i></span>		
 Specifies a destination folder. This folder should be created in advance. When this property is not specified, the resulting file is placed in the folder where its source shapefile is located.

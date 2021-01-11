@@ -223,7 +223,7 @@ Point labels are not visible by default. To make them visible, assign **true** t
 
 ---
 
-For details on other options of point labels, refer to the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/label/') section of the API reference and to other topics in this section.
+For details on other properties of point labels, refer to the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/label/') section of the API reference and to other topics in this section.
 
 #####See Also#####
 - [Customize Point Labels](/concepts/05%20Widgets/Chart/15%20Point%20Labels/05%20Customize%20Point%20Labels.md '/Documentation/Guide/Widgets/Chart/Point_Labels/Customize_Point_Labels/')

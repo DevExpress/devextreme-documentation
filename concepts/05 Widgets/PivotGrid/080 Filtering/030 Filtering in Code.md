@@ -1,4 +1,4 @@
-To apply a filter in code, set the [filterType](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/filterType.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterType') and [filterValues](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/filterValues.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterValues') options of the field.
+To apply a filter in code, set the [filterType](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/filterType.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterType') and [filterValues](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/filterValues.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterValues') properties of the field.
 
 The example of filtering data by a field in the hidden 'filter' area is presented below.
 

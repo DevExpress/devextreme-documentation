@@ -11,7 +11,7 @@ A string value specifying the animation type.
 ---
 The value of the property affects the UI component's initial and target states, which are specified using the [from](/api-reference/50%20Common/Object%20Structures/animationConfig/from.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#from') and [to](/api-reference/50%20Common/Object%20Structures/animationConfig/to.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#to') options. 
 
-The type options can take on the following values.
+The type properties can take on the following values.
 
 - "fade"  
  Animates element opacity.

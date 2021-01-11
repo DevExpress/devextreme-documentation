@@ -295,7 +295,7 @@ Note that individual settings override axis-specific settings which, in turn, ov
     
 ---
 
-For information about all options of the constant lines, visit the [constantLines](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/constantLines '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/constantLines/') section of the API reference.
+For information about all properties of the constant lines, visit the [constantLines](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/constantLines '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/constantLines/') section of the API reference.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ServerSideDataProcessing/Knockout/Light/"

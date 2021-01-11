@@ -25,7 +25,7 @@ To change a single item property at runtime, call the [itemOption(id, property, 
         });
     });
 
-To change several options at a time, pass an object to the [itemOption(id, options)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/itemOption(id_options).md '/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#itemOptionid_options') method.
+To change several properties at a time, pass an object to the [itemOption(id, options)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/itemOption(id_options).md '/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#itemOptionid_options') method.
 Being called with the *field* parameter only, this method returns the current configuration of the specified form item.
 
     <!--JavaScript-->

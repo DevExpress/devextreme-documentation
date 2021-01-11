@@ -127,7 +127,7 @@ Note that **Bubble** series require an additional data field that provides size 
 
 ---
 
-Refer to the [BubbleSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/BubbleSeries/') section of the API Reference for a full list of options available to a **Bubble** series.
+Refer to the [BubbleSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/BubbleSeries/') section of the API Reference for a full list of properties available to a **Bubble** series.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble/"

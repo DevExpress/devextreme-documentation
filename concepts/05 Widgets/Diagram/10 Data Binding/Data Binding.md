@@ -5,7 +5,7 @@ The **Diagram** can load external tree-like and graph structures. The supported 
 - [Linear Array](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array'): nodes are maintained in a linear data structure and are connected by _Key_ - _Parent Key_ reference.
 - [Hierarchical Array](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array'): nodes are maintained in hierarchical data structure.
 
-When you bind a **Diagram** UI component to a data source, you should specify options that allow the UI component to create the diagram structure. The supported data structures differ in required options.
+When you bind a **Diagram** UI component to a data source, you should specify properties that allow the UI component to create the diagram structure. The supported data structures differ in required options.
 
 <table class="dx-table">
     <tr>

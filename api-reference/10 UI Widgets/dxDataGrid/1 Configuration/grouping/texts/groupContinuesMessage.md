@@ -12,4 +12,4 @@ When grid records are grouped, the groups might be parted due to the fact that t
 
 Additionally, you can specify the message displayed in a group row when the corresponding group is continued from the previous page. Use the **groupContinuedMessage** property for this purpose.
 
-[note]If a group simultaneously continues on the next page and is continued from the previous page, the texts specified by the **groupContinuedMessage** and **groupContinuesMessage** options will be concatenated.
+[note]If a group simultaneously continues on the next page and is continued from the previous page, the texts specified by the **groupContinuedMessage** and **groupContinuesMessage** properties will be concatenated.

@@ -25,7 +25,7 @@ Then, you are required to specify the text to be displayed by a tooltip. Impleme
 		}
 	};
 
-Furthermore, there is a number of additional options specifying the appearance of tooltips. All of them are set in the **tooltip** configuration object. A structured overview of these options is given in the following list.
+Furthermore, there is a number of additional properties specifying the appearance of tooltips. All of them are set in the **tooltip** configuration object. A structured overview of these properties is given in the following list.
 
 * **Color**			
 You can specify the color of tooltips using the [color](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/tooltip/#color') property. If you need to specify the color of a particular tooltip, assign it to the **color** field of the object returned by the **customizeTooltip** function. 

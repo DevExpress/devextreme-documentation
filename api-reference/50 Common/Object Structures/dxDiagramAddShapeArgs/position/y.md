@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A vertical position where the shape is being added.
 
 ---
-<!-- Description goes here -->

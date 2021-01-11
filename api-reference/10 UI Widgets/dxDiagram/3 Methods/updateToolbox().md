@@ -3,7 +3,6 @@ id: dxDiagram.updateToolbox()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Updates the diagram toolboxes.
 
 ---
-<!-- Description goes here -->

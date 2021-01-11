@@ -102,7 +102,7 @@ The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Se
 
 A bar's maximum width is limited. In single-series charts, it cannot be greater than the interval between two [major ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Ticks/'). In multi-series charts, it depends on the number of [bars in the parent group](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/#Specify_the_Bar_Width') and this group's actual width. 
 
-Bar groups' width can be changed using the [barGroupWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/barGroupWidth.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#barGroupWidth') option. Like **barWidth**, it accepts values ​​in degrees, but unlike it, applies to the entire chart. The groups' maximum width is the interval between two major ticks.
+Bar groups' width can be changed using the [barGroupWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/barGroupWidth.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#barGroupWidth') property. Like **barWidth**, it accepts values ​​in degrees, but unlike it, applies to the entire chart. The groups' maximum width is the interval between two major ticks.
 
 ---
 ##### jQuery

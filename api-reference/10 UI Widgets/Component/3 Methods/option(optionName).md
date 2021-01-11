@@ -3,7 +3,7 @@ id: Component.option(optionName)
 ---
 ---
 ##### shortDescription
-Gets the value of a single option.
+Gets the value of a single property.
 
 ##### return: any
 This option's value.

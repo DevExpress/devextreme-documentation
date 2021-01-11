@@ -1,6 +1,6 @@
-[note] Searching works when inputting a plain data structure only. However, if you need the searching capability and hierarchical data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') option.
+[note] Searching works when inputting a plain data structure only. However, if you need the searching capability and hierarchical data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
-The **Lookup** UI component allows a user to search through its items. Moreover, the UI component offers suggestions while the user types a value into the search box. Usually, the data field that provides suggestions is the same data field that is searched for the typed value. If there are two different fields, assign the field providing suggestions to the **valueExpr** property and the field to be searched to the **searchExpr** option. Assign an array of field names to the **searchExpr** property if you need to search several fields.
+The **Lookup** UI component allows a user to search through its items. Moreover, the UI component offers suggestions while the user types a value into the search box. Usually, the data field that provides suggestions is the same data field that is searched for the typed value. If there are two different fields, assign the field providing suggestions to the **valueExpr** property and the field to be searched to the **searchExpr** property. Assign an array of field names to the **searchExpr** property if you need to search several fields.
 
 ---
 ##### jQuery
@@ -311,7 +311,7 @@ The **Lookup** UI component starts providing suggestions once an end user types 
 
 ---
 
-There is a delay between the moment a user finishes typing and the moment the **Lookup** starts providing suggestions. To increase or descrease it, use the [searchTimeout](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#searchTimeout') option. The delay is measured in milliseconds.
+There is a delay between the moment a user finishes typing and the moment the **Lookup** starts providing suggestions. To increase or descrease it, use the [searchTimeout](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#searchTimeout') property. The delay is measured in milliseconds.
 
 ---
 ##### jQuery

@@ -11,7 +11,7 @@ Data in **DataGrid** can be grouped by one column or by several. Once a column i
 
 By default, the group panel is hidden. To make it visible, set the **groupPanel**.[visible](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#visible') property to **true**. Alternatively, the visibility of the group panel can depend on the device's screen size. To accomplish this behavior, set the **visible** property to *"auto"*.
 
-In case you need to show the group panel, but make it irresponsive, assign **false** to the **groupPanel**.[allowColumnDragging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/allowColumnDragging.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#allowColumnDragging') option. This is useful, for instance, when grid records are grouped initially and when the user needs to know about that grouping, but must not be able to change it.
+In case you need to show the group panel, but make it irresponsive, assign **false** to the **groupPanel**.[allowColumnDragging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/allowColumnDragging.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#allowColumnDragging') property. This is useful, for instance, when grid records are grouped initially and when the user needs to know about that grouping, but must not be able to change it.
 
 #####See Also#####
 - [Grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/Widgets/DataGrid/Grouping/')

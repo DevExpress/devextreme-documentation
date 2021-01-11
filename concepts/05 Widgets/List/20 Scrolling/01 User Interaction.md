@@ -36,7 +36,7 @@ An end user can scroll the **List** with a swipe gesture and with the scrollbar.
 
 ---
 
-The **List** employs native scrolling on most platforms, except non-Mac desktops and devices based on Android older than version 4. To employ native scrolling on all platforms without exception, assign **true** to the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#useNativeScrolling') option. Note that if you assign **false** to this option, the **List** will simulate scrolling on all platforms.
+The **List** employs native scrolling on most platforms, except non-Mac desktops and devices based on Android older than version 4. To employ native scrolling on all platforms without exception, assign **true** to the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#useNativeScrolling') property. Note that if you assign **false** to this option, the **List** will simulate scrolling on all platforms.
 
 ---
 ##### jQuery
@@ -72,7 +72,7 @@ The **List** employs native scrolling on most platforms, except non-Mac desktops
 
 ---
 
-If simulated scrolling is used, you can specify when to show the scrollbar. For this purpose, use the [showScrollbar](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/showScrollbar.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#showScrollbar') option.
+If simulated scrolling is used, you can specify when to show the scrollbar. For this purpose, use the [showScrollbar](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/showScrollbar.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#showScrollbar') property.
 
 ---
 ##### jQuery
@@ -110,7 +110,7 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 
 ---
 
-On mobile devices, the user can pull the **List** to scroll it slightly further than its top or bottom boundary. Once the user releases the **List**, it bounces back to the boundary position. You can disable this effect using the [bounceEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/bounceEnabled.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#bounceEnabled') option.
+On mobile devices, the user can pull the **List** to scroll it slightly further than its top or bottom boundary. Once the user releases the **List**, it bounces back to the boundary position. You can disable this effect using the [bounceEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/bounceEnabled.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#bounceEnabled') property.
 
 ---
 ##### jQuery
@@ -146,7 +146,7 @@ On mobile devices, the user can pull the **List** to scroll it slightly further 
 
 ---
 
-If you want to disable scrolling completely, assign **false** to the [scrollingEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/scrollingEnabled.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#scrollingEnabled') option.
+If you want to disable scrolling completely, assign **false** to the [scrollingEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/scrollingEnabled.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#scrollingEnabled') property.
 
 ---
 ##### jQuery

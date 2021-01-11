@@ -15,9 +15,9 @@ Available when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configu
 
     ![DevExtreme DateBox PickerType DatePicker](/images/UiWidgets/DateBox/pickerTypes_list.png)
 
-By default, the picking control and its appearance vary depending on the platform. If you need to force the use of a certain control, specify the [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#pickerType') option. In the description of this option, you can find information about which control is the default one for a certain platform. The images above show how the controls look in a generic desktop browser.
+By default, the picking control and its appearance vary depending on the platform. If you need to force the use of a certain control, specify the [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#pickerType') property. In the description of this option, you can find information about which control is the default one for a certain platform. The images above show how the controls look in a generic desktop browser.
 
-For the **List** picker, you can specify the step of available time values in minutes using the [interval](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/interval.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#interval') option.
+For the **List** picker, you can specify the step of available time values in minutes using the [interval](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/interval.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#interval') property.
 
 ---
 ##### jQuery

@@ -13,7 +13,7 @@ If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.d
 The following list shows how to specify the **dataSource** property depending on your data source: 
 
 - **Data Array**        
-Assign the array to the **dataSource** option. 
+Assign the array to the **dataSource** property. 
 
 - **Read-Only Data in JSON Format**          
 Set the **dataSource** property to the URL of a JSON file or service that returns JSON data.

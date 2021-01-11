@@ -86,7 +86,7 @@ All options configuring tooltips are collected in the [tooltip](/api-reference/2
 
 ---
 
-Options declared in the **tooltip** object apply to all tooltips in the **Chart**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/tooltip/#customizeTooltip') option. This function must return an object with options for the tooltip that you want to customize.
+Options declared in the **tooltip** object apply to all tooltips in the **Chart**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/tooltip/#customizeTooltip') property. This function must return an object with options for the tooltip that you want to customize.
 
 ---
 ##### jQuery

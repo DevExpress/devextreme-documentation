@@ -87,7 +87,7 @@ To specify the date or time range, use the [min](/api-reference/10%20UI%20Widget
 
 ---
 
-If an entered value falls out of the range, the UI component displays an error message. To change the message text, specify the [dateOutOfRangeMessage](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/dateOutOfRangeMessage.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#dateOutOfRangeMessage') option. 
+If an entered value falls out of the range, the UI component displays an error message. To change the message text, specify the [dateOutOfRangeMessage](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/dateOutOfRangeMessage.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#dateOutOfRangeMessage') property. 
 
 ---
 ##### jQuery

@@ -6,7 +6,7 @@ After a user clicks an appointment, the **Scheduler** displays a tooltip with tw
     </video>
 </div>
 
-If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments'), the **Scheduler** displays a dialog that allows choosing between deleting the current appointment and deleting the entire series of recurring appointments. If you do not want this dialog to appear, choose the edit mode beforehand using the [recurrenceEditMode](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceEditMode.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceEditMode') option.
+If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments'), the **Scheduler** displays a dialog that allows choosing between deleting the current appointment and deleting the entire series of recurring appointments. If you do not want this dialog to appear, choose the edit mode beforehand using the [recurrenceEditMode](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceEditMode.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceEditMode') property.
 
 ---
 

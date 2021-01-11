@@ -1,4 +1,4 @@
-If instead of picking a value, an end user types it into the **DateBox**, this value applies when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be applied on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#valueChangeEvent') option.
+If instead of picking a value, an end user types it into the **DateBox**, this value applies when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be applied on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#valueChangeEvent') property.
 
 ---
 ##### jQuery

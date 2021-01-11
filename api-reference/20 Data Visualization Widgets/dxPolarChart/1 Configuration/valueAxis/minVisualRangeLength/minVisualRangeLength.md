@@ -9,7 +9,7 @@ notUsedInTheme:
 Specifies the minimum length of the [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/visualRange/').
 
 ---
-Assign a number to this property if the visual range is set on a numeric axis. If the axis displays date-time values, assign one of the accepted string values or an object to this option. The object should contain one or several fields described in this section, for example:
+Assign a number to this property if the visual range is set on a numeric axis. If the axis displays date-time values, assign one of the accepted string values or an object to this property. The object should contain one or several fields described in this section, for example:
 
 ---
 ##### jQuery

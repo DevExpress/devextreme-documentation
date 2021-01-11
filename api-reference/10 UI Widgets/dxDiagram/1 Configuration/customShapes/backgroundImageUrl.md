@@ -9,7 +9,7 @@ Specifies the shape background image's URL.
 ---
 A custom shape can be created based on a default shape type (the [baseType](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#baseType) option) or with a custom background image (the **backgroundImageUrl** option). 
 
-Use the [backgroundImageToolboxUrl](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#backgroundImageUrl) property to specify an image displayed for the shape in the toolbox. If the property is not set, the toolbox displays an image specified in the **backgroundImageUrl** option.
+Use the [backgroundImageToolboxUrl](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#backgroundImageUrl) property to specify an image displayed for the shape in the toolbox. If the property is not set, the toolbox displays an image specified in the **backgroundImageUrl** property.
 
 ![Diagram - Custom shape's image properties](/images/diagram/imageURLs.png)
 

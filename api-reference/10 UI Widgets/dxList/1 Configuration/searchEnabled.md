@@ -2,7 +2,7 @@
 ##### merge
 
 ---
-[note] Searching works only if data is specified using the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#dataSource') property and has a plain structure. Subsequently, data can be transformed to hierarchical structure using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') option.
+[note] Searching works only if data is specified using the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#dataSource') property and has a plain structure. Subsequently, data can be transformed to hierarchical structure using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListWithSearchBar/"

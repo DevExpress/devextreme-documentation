@@ -65,7 +65,7 @@ Here, all items have the **id** field, and those items that have a parent includ
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/"
 }
 
-Items on the highest hierarchical level have the parent ID equal to *0*, **null** or **undefined**, which indicates that these items belong to the root node. If you need to use another value, change the [rootValue](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#rootValue') option.
+Items on the highest hierarchical level have the parent ID equal to *0*, **null** or **undefined**, which indicates that these items belong to the root node. If you need to use another value, change the [rootValue](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#rootValue') property.
 
 ---
 ##### jQuery
@@ -116,7 +116,7 @@ Items on the highest hierarchical level have the parent ID equal to *0*, **null*
 
 ---
 
-When you load data from a remote source, and your data objects have a field that defines whether a row has nested rows, assign this field name to the [hasItemsExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/hasItemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#hasItemsExpr') option. It will notify the UI component which rows do not need the expand button. 
+When you load data from a remote source, and your data objects have a field that defines whether a row has nested rows, assign this field name to the [hasItemsExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/hasItemsExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#hasItemsExpr') property. It will notify the UI component which rows do not need the expand button. 
 
 #####See Also#####
 - [TreeList - Use Hierarchical Data](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Hierarchical_Data/')

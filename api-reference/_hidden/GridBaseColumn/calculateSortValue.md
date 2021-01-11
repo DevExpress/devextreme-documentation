@@ -108,7 +108,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
 [note]
 
-Please review the following notes about the **calculateSortValue** option.
+Please review the following notes about the **calculateSortValue** property.
 
 - The `this` keyword refers to the column's configuration.
 

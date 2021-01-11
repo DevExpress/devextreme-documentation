@@ -92,7 +92,7 @@ To cancel a column's sorting settings, the user clicks the column's header while
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget DataGrid Sorting](/images/DataGrid/visual_elements/sorting_context_menu.png)
 
-To disable sorting in the whole UI component, set the **sorting**.**mode** property to *"none"*; to disable sorting only in a specific column, use its [allowSorting](/api-reference/_hidden/GridBaseColumn/allowSorting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowSorting') option.
+To disable sorting in the whole UI component, set the **sorting**.**mode** property to *"none"*; to disable sorting only in a specific column, use its [allowSorting](/api-reference/_hidden/GridBaseColumn/allowSorting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowSorting') property.
 
 ---
 ##### jQuery

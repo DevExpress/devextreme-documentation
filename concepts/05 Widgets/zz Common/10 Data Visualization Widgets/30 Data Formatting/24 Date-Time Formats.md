@@ -17,7 +17,7 @@
 *   *'hour'* - "12"
 *   *'minute'* - "00"
 
-To set a date-time format, assign one of the values above to the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') option. For example, the following code applies the *'monthAndDay'* format to **Chart**'s [argument axis labels](/concepts/05%20Widgets/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Labels/').
+To set a date-time format, assign one of the values above to the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') property. For example, the following code applies the *'monthAndDay'* format to **Chart**'s [argument axis labels](/concepts/05%20Widgets/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Labels/').
 
     <!--JavaScript-->var data = [
 		{ date: new Date(1994,2,3), quantity: 26.25 },

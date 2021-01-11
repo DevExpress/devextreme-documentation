@@ -16,6 +16,6 @@ Depending on the configuration, this data source can produce either two series, 
         { fruit: "Oranges", year2014: 72, year2015: 70, year2016: 76 }
     ];
 
-In this case, you can have up to three series bound to the `year2014`, `year2015` and `year2016` fields respectively, but note that there is no data field that provides names for them. Instead, you need to specify the names using the [name](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#name') option. This is the case when you can bind series to data directly.
+In this case, you can have up to three series bound to the `year2014`, `year2015` and `year2016` fields respectively, but note that there is no data field that provides names for them. Instead, you need to specify the names using the [name](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#name') property. This is the case when you can bind series to data directly.
 
 [tags]chart, line, bar, area, financial series, range, bubble, argumentField, valueField, series template

@@ -1,4 +1,4 @@
-To set a currency format, assign *'currency'* to the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') option.
+To set a currency format, assign *'currency'* to the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') property.
 
     <!--JavaScript-->var widgetOptions = {
         // ...
@@ -17,7 +17,7 @@ To use any currency that differs from USD, follow these steps.
 
 1. Get the *currencies.json* file that corresponds to your locale from one of the folders <a href="https://github.com/unicode-cldr/cldr-numbers-modern/tree/master/main" target="_blank">here</a>.
 2. Load the contents of this file in your app using one of the methods described <a href="https://github.com/jquery/globalize/blob/master/doc/cldr.md#how-do-i-load-cldr-data-into-globalize" target="_blank">here</a>.
-3. Assign the <a href="http://www.currency-iso.org/en/home/tables/table-a1.html" target="_blank">3-letter code</a> of the needed currency to the **format**.[currency](/api-reference/50%20Common/Object%20Structures/format/currency.md '/Documentation/ApiReference/Common/Object_Structures/format/#currency') option.
+3. Assign the <a href="http://www.currency-iso.org/en/home/tables/table-a1.html" target="_blank">3-letter code</a> of the needed currency to the **format**.[currency](/api-reference/50%20Common/Object%20Structures/format/currency.md '/Documentation/ApiReference/Common/Object_Structures/format/#currency') property.
 
         <!--JavaScript-->var widgetOptions = {
             // ...
@@ -29,7 +29,7 @@ To use any currency that differs from USD, follow these steps.
             }
         };
     
-Additionally, you can specify the precision of currency values using the **format**.[precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') option.
+Additionally, you can specify the precision of currency values using the **format**.[precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') property.
 
     <!--JavaScript-->var widgetOptions = {
         // ...
@@ -42,7 +42,7 @@ Additionally, you can specify the precision of currency values using the **forma
         }
     };
     
-If you do not need to change neither the **currency** nor the **precision** field, assign *'currency'* straight to the **format** option. This setting will apply the global default currency.
+If you do not need to change neither the **currency** nor the **precision** field, assign *'currency'* straight to the **format** property. This setting will apply the global default currency.
 
     <!--JavaScript-->var widgetOptions = {
         // ...

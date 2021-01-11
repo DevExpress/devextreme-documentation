@@ -2,7 +2,7 @@ A pane is a chart area containing series. If there are many series in the **Char
 
 ![DevExtreme HTML5 JavaScript Charts Panes](/images/ChartJS/visual_elements/pane.png)
 
-Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/panes '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/') option. For a single-pane chart, this property accepts an object that configures the [background color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/#backgroundColor') and the [border](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/border '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/border/') of the pane.
+Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/panes '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/') property. For a single-pane chart, this property accepts an object that configures the [background color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/#backgroundColor') and the [border](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/border '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/border/') of the pane.
 
 ---
 ##### jQuery

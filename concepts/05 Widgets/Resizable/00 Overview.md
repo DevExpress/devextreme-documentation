@@ -24,7 +24,7 @@ The following code adds a resizable image to your page. Note that the image occu
 
 [note]We recommend specifying the width- and height-related options of the **Resizable**, because the content usually takes them into account.
 
-To specify which sides of the **Resizable** - top, bottom, left, right or all at once - can be used for resizing content, set the [handles](/api-reference/10%20UI%20Widgets/dxResizable/1%20Configuration/handles.md '/Documentation/ApiReference/UI_Widgets/dxResizable/Configuration/#handles') option. Note that this property can accept several values separated with space.
+To specify which sides of the **Resizable** - top, bottom, left, right or all at once - can be used for resizing content, set the [handles](/api-reference/10%20UI%20Widgets/dxResizable/1%20Configuration/handles.md '/Documentation/ApiReference/UI_Widgets/dxResizable/Configuration/#handles') property. Note that this property can accept several values separated with space.
 
     <!--JavaScript-->$(function() {
         $("#resizable").dxResizable({

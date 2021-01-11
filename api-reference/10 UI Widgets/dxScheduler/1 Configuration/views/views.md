@@ -17,7 +17,7 @@ A view name. Use a string if the view does not need customization, but should be
 - **Object**        
 An individual view's configuration. Set the [type](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#type') property to specify the view to which the configuration should apply. This documentation section describes available options. The options set for an individual view have a higher priority than the same options set on the root level for all views.
 
-To specify the default view, use the [currentView](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentView.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView') option.
+To specify the default view, use the [currentView](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentView.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView') property.
 
 #include common-ref-enum with {
     enum: "`SchedulerViewType`",

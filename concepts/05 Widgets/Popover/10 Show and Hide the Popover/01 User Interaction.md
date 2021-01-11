@@ -123,7 +123,7 @@ To specify when the **Popover** should be shown and hidden, set the [showEvent](
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"
 }
 
-The **Popover** can also be hidden when a user clicks outside it. To control this behavior of the **Popover**, use the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#closeOnOutsideClick') option.
+The **Popover** can also be hidden when a user clicks outside it. To control this behavior of the **Popover**, use the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Widgets/dxPopover/Configuration/#closeOnOutsideClick') property.
 
 ---
 ##### jQuery 

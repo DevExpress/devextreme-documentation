@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a fixed angular width for groups of bars with the same argument, measured in degrees. Takes precedence over the [barGroupPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/barGroupPadding.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#barGroupPadding') option.
+Specifies a fixed angular width for groups of bars with the same argument, measured in degrees. Takes precedence over the [barGroupPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/barGroupPadding.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#barGroupPadding') property.
 
 ##### propertyOf
 dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarseries

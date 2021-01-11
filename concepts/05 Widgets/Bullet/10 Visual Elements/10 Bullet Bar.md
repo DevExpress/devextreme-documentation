@@ -2,7 +2,7 @@ A bullet bar is a horizontal bar that indicates a bullet chart's primary value.
 
 ![DevExtreme ChartJS BulletChart BulletGraph](/images/ChartJS/BulletBar.png)
 
-To specify the value indicated by the bullet bar, assign it to the [value](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/value.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#value') option.
+To specify the value indicated by the bullet bar, assign it to the [value](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/value.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#value') property.
 
 	<!--JavaScript-->var bulletOptions = {
 		value: 42
@@ -22,4 +22,4 @@ This value must belong to a range determined by the [startScaleValue](/api-refer
 
 To distinguish positive and negative values visually, the **Bullet** UI component features a [zero level line](/concepts/05%20Widgets/Bullet/10%20Visual%20Elements/30%20Zero%20Level%20Line.md '/Documentation/Guide/Widgets/Bullet/Visual_Elements/#Zero_Level_Line'). Positive values are drawn to the right from this line; negative ones - to the left.
 
-You can change the bar color using the [color](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#color') option.
+You can change the bar color using the [color](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#color') property.

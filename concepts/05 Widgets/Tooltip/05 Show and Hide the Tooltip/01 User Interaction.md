@@ -122,7 +122,7 @@ To specify when the **Tooltip** should be shown and hidden, set the [showEvent](
 
 ---
 
-The **Tooltip** can also be hidden when a user clicks outside it. To control this behavior of the **Tooltip**, use the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#closeOnOutsideClick') option.
+The **Tooltip** can also be hidden when a user clicks outside it. To control this behavior of the **Tooltip**, use the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#closeOnOutsideClick') property.
 
 ---
 ##### jQuery 

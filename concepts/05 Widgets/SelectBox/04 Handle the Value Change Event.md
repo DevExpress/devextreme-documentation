@@ -1,4 +1,4 @@
-By default, the value of the **SelectBox** is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#valueChangeEvent') option.
+By default, the value of the **SelectBox** is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#valueChangeEvent') property.
 
 ---
 ##### jQuery

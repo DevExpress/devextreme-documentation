@@ -134,7 +134,7 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
 
 ---
 
-If you need to position the **Tooltip** against a certain side of the [target element](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#target'), set the [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#position') option.
+If you need to position the **Tooltip** against a certain side of the [target element](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#target'), set the [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#position') property.
 
 ---
 ##### jQuery 

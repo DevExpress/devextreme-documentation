@@ -152,7 +152,7 @@ To change the size of the **Toast**, specify the [height](/api-reference/10%20UI
 
 ---
 
-If you need to position the **Toast** against a specific element on your page, set the [position](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#position') option.
+If you need to position the **Toast** against a specific element on your page, set the [position](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#position') property.
 
 ---
 ##### jQuery

@@ -3,7 +3,7 @@ id: dxForm.itemOption(id, option, value)
 ---
 ---
 ##### shortDescription
-Updates the value of a single item option.
+Updates the value of a single item property.
 
 ##### param(id): String
 An item's **name** or path without spaces if the item is in a group or a tab.     

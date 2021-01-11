@@ -43,7 +43,7 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
     
 ---
 
-If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixed') property and specify its target position in the UI component using the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixedPosition') option.
+If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixed') property and specify its target position in the UI component using the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixedPosition') property.
 
 ---
 ##### jQuery

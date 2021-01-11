@@ -1,4 +1,4 @@
-To add markers at design-time, pass an array of objects to the [markers](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/markers/') option. A marker requires only its [location](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers/location '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/markers/location/') to be specified.
+To add markers at design-time, pass an array of objects to the [markers](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/markers/') property. A marker requires only its [location](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers/location '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/markers/location/') to be specified.
 
 ---
 ##### jQuery

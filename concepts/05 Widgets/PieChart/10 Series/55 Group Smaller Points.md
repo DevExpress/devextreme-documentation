@@ -82,7 +82,7 @@ Points that fall beyond a threshold establish a group. The **smallValuesGrouping
 
     ---
 
-The group for small points is called *"others"* by default. You can change this using the **smallValuesGrouping**.[groupName](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/smallValuesGrouping/groupName.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/smallValuesGrouping/#groupName') option.
+The group for small points is called *"others"* by default. You can change this using the **smallValuesGrouping**.[groupName](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/smallValuesGrouping/groupName.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/smallValuesGrouping/#groupName') property.
 
 
 ---

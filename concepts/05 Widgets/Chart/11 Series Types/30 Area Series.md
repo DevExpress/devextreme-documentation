@@ -6,7 +6,7 @@ Area series also include stacked series types: **Stacked Area** and **Stacked Sp
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/stackedarea.html, /Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/stackedarea.js"></div>
 
-To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') option. You can configure:
+To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') property. You can configure:
 
 - Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') array;
 - All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object;

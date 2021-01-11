@@ -391,7 +391,7 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
 
 ---
 
-If on some screens, all elements should be arranged in a single column, assign the [size qualifiers](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/Widgets/ResponsiveBox/Size_Qualifiers/') of these screens to the [singleColumnScreen](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/singleColumnScreen.md '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/Configuration/#singleColumnScreen') option. In this case, the layout grid will be ignored in favor of the single-column layout, and all layout elements will have equal heights.
+If on some screens, all elements should be arranged in a single column, assign the [size qualifiers](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/Widgets/ResponsiveBox/Size_Qualifiers/') of these screens to the [singleColumnScreen](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/singleColumnScreen.md '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/Configuration/#singleColumnScreen') property. In this case, the layout grid will be ignored in favor of the single-column layout, and all layout elements will have equal heights.
 
 ---
 

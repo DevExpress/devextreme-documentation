@@ -2,7 +2,7 @@ The filter row allows a user to filter data by individual columns' values.  Usua
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Filtering FilterRow](/images/DataGrid/visual_elements/filter_row.png)
 
-To make the filter row visible, assign **true** to the [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/filterRow/').**visible** option. You can set a column's [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowFiltering') property to **false** if data should never be filtered by it.
+To make the filter row visible, assign **true** to the [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/filterRow/').**visible** property. You can set a column's [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowFiltering') property to **false** if data should never be filtered by it.
 
 ---
 ##### jQuery
@@ -212,7 +212,7 @@ Each cell in the filter row contains a magnifying glass icon. Hovering the mouse
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Filtering FilterRow](/images/DataGrid/visual_elements/filter_row_operation_chooser.png)
 
 
-The set of available filter operations can be restricted using the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#filterOperations') option. You can also preselect a filter operation and specify the initial filter value with the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#selectedFilterOperation') and [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#filterValue') options. Call the [columnOption](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_options).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#columnOptionid_options') method at runtime to change these options:
+The set of available filter operations can be restricted using the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#filterOperations') property. You can also preselect a filter operation and specify the initial filter value with the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#selectedFilterOperation') and [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#filterValue') options. Call the [columnOption](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_options).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#columnOptionid_options') method at runtime to change these options:
 
 ---
 ##### jQuery

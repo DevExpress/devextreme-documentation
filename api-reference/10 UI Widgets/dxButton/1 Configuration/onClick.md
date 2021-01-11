@@ -30,7 +30,7 @@ The validation group to which the button is related.
 To validate the editors that are related to the [validation group](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#validationGroup') specified for this button, use the **validationGroup** field of the object passed as the event handler's parameter. The **validationGroup** object has the following structure.
 
 - **group**  
-    The name or object of the validation group that is assigned to the button's **validationGroup** option.
+    The name or object of the validation group that is assigned to the button's **validationGroup** property.
 - **validators**  
     An array of **Validator** UI components that are included to the validation group.
 - **validate()**   

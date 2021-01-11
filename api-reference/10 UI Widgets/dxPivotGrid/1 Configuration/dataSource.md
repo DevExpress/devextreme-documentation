@@ -12,10 +12,10 @@ If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.d
 
 The **PivotGrid** is bound to data via the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/'), a component that allows you to sort, filter, group, and perform other data shaping operations. The **PivotGridDataSource**'s underlying data access logic is isolated in the store. You use different store types for different data sources.
  
-To bind the **PivotGrid** to data, assign a **PivotGridDataSource** to the UI component's **dataSource** option. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') property depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
+To bind the **PivotGrid** to data, assign a **PivotGridDataSource** to the UI component's **dataSource** property. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') property depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
 
 - **Data Array**        
-Assign the array to the **store** option. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray)
+Assign the array to the **store** property. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray)
 
 - **OLAP Data**         
 Implement an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'). [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/OLAPDataSource)

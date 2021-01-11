@@ -6,7 +6,7 @@ The search panel allows searching for values in several columns at once. Search 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/UsingSearchPanel/"
 }
 
-To make the search panel visible, assign **true** to the [searchPanel](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/searchPanel/').**visible** option. You can set a column's [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowSearch') property to **false** if it should be excluded from searching. Note that this property inherits the [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowFiltering') option's value by default.
+To make the search panel visible, assign **true** to the [searchPanel](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/searchPanel/').**visible** property. You can set a column's [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowSearch') property to **false** if it should be excluded from searching. Note that this property inherits the [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowFiltering') option's value by default.
 
 ---
 ##### jQuery

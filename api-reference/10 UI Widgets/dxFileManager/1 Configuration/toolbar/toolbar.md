@@ -39,7 +39,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
 
 - [fileSelectionItems](/api-reference/_hidden/dxFileManagerToolbar/fileSelectionItems '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/') - Displays toolbar items when one or more file system items are selected.
 
-[note] Note that optional settings for predefined toolbar items should be specified at the same level as the item's **name** option.
+[note] Note that optional settings for predefined toolbar items should be specified at the same level as the item's **name** property.
 
 ---
 

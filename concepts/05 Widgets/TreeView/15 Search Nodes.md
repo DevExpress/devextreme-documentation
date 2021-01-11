@@ -279,7 +279,7 @@ When a user types a string in the input field, the **TreeView** suggests all nod
 
 ---
 
-You can customize the search panel by specifying the [searchEditorOptions](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchEditorOptions.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#searchEditorOptions') option. The following code changes the panel's default width and placeholder:
+You can customize the search panel by specifying the [searchEditorOptions](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchEditorOptions.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#searchEditorOptions') property. The following code changes the panel's default width and placeholder:
 
 ---
 #####jQuery

@@ -1,4 +1,4 @@
-Items can be arranged in a row or in a column depending on the value of the [direction](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/#direction') option.
+Items can be arranged in a row or in a column depending on the value of the [direction](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/#direction') property.
 
 ---
 

@@ -90,7 +90,7 @@ The **menuTemplate** property can also accept a function combining the HTML mark
         // The rest is omitted for brevity
     });
 
-By default, the menu slides out from the left side of the screen. To make it slide out from the right side, change the [menuPosition](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/menuPosition.md '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/Configuration/#menuPosition') option. 
+By default, the menu slides out from the left side of the screen. To make it slide out from the right side, change the [menuPosition](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/menuPosition.md '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/Configuration/#menuPosition') property. 
 
     <!--JavaScript-->$(function() {
     	var slideOutView = $("#slideOutView").dxSlideOutView({

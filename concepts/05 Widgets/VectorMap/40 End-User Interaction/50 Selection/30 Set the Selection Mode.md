@@ -8,4 +8,4 @@ Selection can be conducted in single or multiple mode. In single mode, which is 
 		}]
 	};
 
-In addition, you can use the **selectionMode** property to disable the selection capability. For this purpose, assign *'none'* to this option.
+In addition, you can use the **selectionMode** property to disable the selection capability. For this purpose, assign *'none'* to this property.

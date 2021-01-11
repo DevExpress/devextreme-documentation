@@ -9,7 +9,7 @@ Specifies the interval between [major ticks](/api-reference/20%20Data%20Visualiz
 ---
 Major ticks divide an axis into segments, thus improving the viewer's perception of visualized data. Major ticks are generated automatically, unless the **tickInterval** property is set.
 
-If the axis displays numbers, assign a number to this option. If the axis displays date-time values, assign one of the accepted string values or an object to this option. The object should contain one or several fields described in this section, for example:
+If the axis displays numbers, assign a number to this property. If the axis displays date-time values, assign one of the accepted string values or an object to this property. The object should contain one or several fields described in this section, for example:
 
 ---
 ##### jQuery

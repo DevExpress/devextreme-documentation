@@ -12,7 +12,7 @@ By default, the whole Field Panel is hidden. To make it visible, assign **true**
         }
     };
 
-If the Field Panel is made visible, all field areas become visible as well. To hide an individual field area, assign **false** to the dedicated option. 
+If the Field Panel is made visible, all field areas become visible as well. To hide an individual field area, assign **false** to the dedicated property. 
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

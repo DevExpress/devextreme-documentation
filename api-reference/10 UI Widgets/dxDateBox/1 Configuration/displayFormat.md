@@ -17,4 +17,4 @@ The default display format is selected automatically based on the current [local
 }
 
 #####See Also#####
-- [Format Widget Values](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values '/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values')
+- [Format UI component Values](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values '/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values')

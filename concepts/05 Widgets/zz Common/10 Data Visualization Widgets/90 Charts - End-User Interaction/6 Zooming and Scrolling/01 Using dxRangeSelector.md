@@ -39,7 +39,7 @@ The **Chart** and **RangeSelector** UI components can operate together, allowing
             // ...
         };
         
-- **Implement Widget Interaction**      
+- **Implement UI component Interaction**      
 
     To make **Chart** and **RangeSelector** interact with each other, handle the [valueChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/4%20Events/valueChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Events/#valueChanged') event. For this purpose, assign a function to the [onValueChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/#onValueChanged') option of **RangeSelector**. Within this function, call the [zoomArgument](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/3%20Methods/zoomArgument(startValue_endValue).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#zoomArgumentstartValue_endValue') method of the [chart instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#instance'). This method accepts the start and end range values as its parameters.
 

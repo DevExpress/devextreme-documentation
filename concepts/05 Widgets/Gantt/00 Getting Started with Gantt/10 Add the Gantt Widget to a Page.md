@@ -2,7 +2,7 @@ Add **Gantt** resources (scripts and styles) onto the page.
 
 - **npm**
 
-    The `devexpress-gantt` is a dependency package of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm.md '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the **Gantt** widget in your project. Then, add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
+    The `devexpress-gantt` is a dependency package of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm.md '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the **Gantt** UI component in your project. Then, add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
 
         <!--HTML-->
         <link rel="stylesheet" href="node_modules/devexpress-gantt/dx-gantt.min.css">
@@ -28,7 +28,7 @@ Use the `dx-gantt.css` and `dx-gantt.js` files to add an unminified version of t
 
 [note]
 
-The **Gantt** widget is a jQuery DevExtreme widget, and thus requires common DevExtreme resources (listed below) to be included in your page.
+The **Gantt** UI component is a jQuery DevExtreme UI component, and thus requires common DevExtreme resources (listed below) to be included in your page.
 
     <!--HTML-->
     <!-- DevExtreme themes -->
@@ -42,7 +42,7 @@ The **Gantt** widget is a jQuery DevExtreme widget, and thus requires common Dev
 [/note]
 
 
-Initialize the **Gantt** widget in a DOM element.
+Initialize the **Gantt** UI component in a DOM element.
 
     <!--JavaScript-->
     $(function() {

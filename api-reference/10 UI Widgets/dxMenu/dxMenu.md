@@ -6,7 +6,7 @@ inherits: dxMenuBase
 ---
 ---
 ##### shortDescription
-The **Menu** widget is a panel with clickable items. A click on an item opens a drop-down menu, which can contain several submenus.
+The **Menu** UI component is a panel with clickable items. A click on an item opens a drop-down menu, which can contain several submenus.
 
 ##### widgettree
 dataSource: [

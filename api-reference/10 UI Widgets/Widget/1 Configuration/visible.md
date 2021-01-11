@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether the widget is visible.
+Specifies whether the UI component is visible.
 
 ---

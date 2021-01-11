@@ -6,7 +6,7 @@ inherits: dxDropDownEditor
 ---
 ---
 ##### shortDescription
-The **ColorBox** is a widget that allows an end user to enter a color or pick it out from the drop-down editor.
+The **ColorBox** is a UI component that allows an end user to enter a color or pick it out from the drop-down editor.
 
 ##### widgettree
 opened: true

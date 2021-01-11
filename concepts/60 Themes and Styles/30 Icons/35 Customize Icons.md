@@ -1,4 +1,4 @@
-Since DevExtreme icons are shipped as an icon font, they can be customized with the same CSS properties that you would use to customize textual content: `color`, `font-size`, `font-weight`, `text-align`, etc. This is true for icons used in widgets...
+Since DevExtreme icons are shipped as an icon font, they can be customized with the same CSS properties that you would use to customize textual content: `color`, `font-size`, `font-weight`, `text-align`, etc. This is true for icons used in UI components...
 
 ---
 ##### jQuery  
@@ -127,4 +127,4 @@ Since DevExtreme icons are shipped as an icon font, they can be customized with 
         color: blue;
     }
 
-`dx-icon` is a CSS class added to icon elements when DevExtreme widgets render them into the DOM. You cannot use another name for it. However, it is not true for icons in other HTML elements. You can use any name for the class in this case, as demonstrated in the previous example.
+`dx-icon` is a CSS class added to icon elements when DevExtreme UI components render them into the DOM. You cannot use another name for it. However, it is not true for icons in other HTML elements. You can use any name for the class in this case, as demonstrated in the previous example.

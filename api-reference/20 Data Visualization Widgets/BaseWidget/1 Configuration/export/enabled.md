@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Enables the client-side exporting in the widget.
+Enables the client-side exporting in the UI component.
 
 ---

@@ -63,4 +63,4 @@ When you open the **Drawer**, it can slide in or expand from the closed position
 
 ---
 
-Run the code and open the **Drawer**. You should see that the widget gets wider, but its content stays in place, creating an impression that the **Drawer** expands. 
+Run the code and open the **Drawer**. You should see that the UI component gets wider, but its content stays in place, creating an impression that the **Drawer** expands. 

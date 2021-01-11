@@ -6,6 +6,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-A gauge widget.
+A gauge UI component.
 
 ---

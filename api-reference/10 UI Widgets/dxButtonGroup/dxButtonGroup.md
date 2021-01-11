@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **ButtonGroup** is a widget that contains a set of toggle buttons and can be used as a mode switcher.
+The **ButtonGroup** is a UI component that contains a set of toggle buttons and can be used as a mode switcher.
 
 ##### widgettree
 items: [{

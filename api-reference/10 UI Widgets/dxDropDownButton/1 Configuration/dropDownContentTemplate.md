@@ -17,7 +17,7 @@ The array passed to the [items](/api-reference/10%20UI%20Widgets/dxDropDownButto
 A template name or container.
 
 ---
-The drop-down field contains the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI) widget. Implement this template to replace the widget with custom content. The following restrictions apply when the template is specified:
+The drop-down field contains the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI) UI component. Implement this template to replace the UI component with custom content. The following restrictions apply when the template is specified:
 
 - [itemTemplate](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#itemTemplate') is ignored;
 - [onItemClick](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#onItemClick') and [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#onSelectionChanged') are never executed;

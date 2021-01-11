@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-The **ActionSheet** widget is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
+The **ActionSheet** UI component is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
 
 ##### widgettree
 dataSource: [

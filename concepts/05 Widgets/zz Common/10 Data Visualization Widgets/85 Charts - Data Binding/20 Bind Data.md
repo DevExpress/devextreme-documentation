@@ -1,4 +1,4 @@
-Regardless of the approach you've chosen to provide data, after implementing a data source, bind it to your widget using its **dataSource** option. The code snippet below demonstrates how to do this for the **Chart** widget.
+Regardless of the approach you've chosen to provide data, after implementing a data source, bind it to your UI component using its **dataSource** option. The code snippet below demonstrates how to do this for the **Chart** UI component.
 
 	<!--JavaScript-->var chartDataSource = // ...
 	

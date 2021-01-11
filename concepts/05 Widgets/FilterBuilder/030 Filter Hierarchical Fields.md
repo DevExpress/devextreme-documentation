@@ -81,4 +81,4 @@ In the following code, the **FilterBuilder** allows filtering by three fields, t
 }
 
 #####See Also#####
-- [Integrate with a Widget](/concepts/05%20Widgets/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/Widgets/FilterBuilder/Integrate_with_a_Widget/')
+- [Integrate with a UI component](/concepts/05%20Widgets/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/Widgets/FilterBuilder/Integrate_with_a_Widget/')

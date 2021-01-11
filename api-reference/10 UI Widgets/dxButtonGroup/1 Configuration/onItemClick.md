@@ -11,10 +11,10 @@ A function that is executed when a button is clicked or tapped.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-The widget's container.
+The UI component's container.
 
 ##### field(e.event): event
 #include common-ref-eventparam

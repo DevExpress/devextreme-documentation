@@ -14,13 +14,13 @@ Information about the event that caused the function's execution.
 The configurations of visible columns.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The row's data.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
@@ -60,7 +60,7 @@ Raw values displayed in the row's cells.
 
 **onRowDblClick** is not executed when the clicked row enters or is in the editing state. You can use **onCellDblClick** instead.
 
-This event handler is also not executed on mobile devices, because double tap gesture is reserved for zooming. To force **onRowDblClick** execution, add the following CSS property to the widget's container: 
+This event handler is also not executed on mobile devices, because double tap gesture is reserved for zooming. To force **onRowDblClick** execution, add the following CSS property to the UI component's container: 
 
     <!--HTML-->
     <div style="touch-action:manipulation"></div>

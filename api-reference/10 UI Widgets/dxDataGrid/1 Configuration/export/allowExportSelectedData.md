@@ -16,4 +16,4 @@ When this option is set to **true**, a click on <img src="/images/DataGrid/icons
 
 #####See Also#####
 - **export**.**texts**.[exportSelectedRows](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export/texts/exportSelectedRows.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/texts/#exportSelectedRows') - customizes the text of the "Export selected rows" command.
-- **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#mode') - enables selection in the widget.
+- **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#mode') - enables selection in the UI component.

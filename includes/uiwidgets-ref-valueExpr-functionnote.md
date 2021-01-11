@@ -1,1 +1,1 @@
-[note] You cannot specify **valueExpr** as a function when the widget is bound to a remote data source. This is because **valueExpr** is used in a filter the widget sends to the server when querying data. Functions with custom logic cannot be serialized for this filter.
+[note] You cannot specify **valueExpr** as a function when the UI component is bound to a remote data source. This is because **valueExpr** is used in a filter the UI component sends to the server when querying data. Functions with custom logic cannot be serialized for this filter.

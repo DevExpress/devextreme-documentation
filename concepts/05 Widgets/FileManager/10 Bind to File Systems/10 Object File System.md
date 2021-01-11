@@ -1,10 +1,10 @@
-The **FileManager** widget provides the Object file system provider to manage files and folders in an in-memory array of JSON objects.
+The **FileManager** UI component provides the Object file system provider to manage files and folders in an in-memory array of JSON objects.
 
 ![FileManager - Hierarchical Data Structure](/images/FileManager/array-file-system-provider.png)
 
-Create an Object file system provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object/1%20Configuration/data.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#data') option to bind the **FileManager** widget to a hierarchical data structure.
+Create an Object file system provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object/1%20Configuration/data.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/Configuration/#data') option to bind the **FileManager** UI component to a hierarchical data structure.
 
-The provider automatically binds data objects to the widget if the data objects have default fields in their structure. For example:
+The provider automatically binds data objects to the UI component if the data objects have default fields in their structure. For example:
 
     var fileSystem = [
     {
@@ -22,7 +22,7 @@ The provider automatically binds data objects to the widget if the data objects 
     // ...
     ];
 
-In the example below, the **FileManager** widget displays hierarchical data stored in an in-memory array that contains fields with conventional names.
+In the example below, the **FileManager** UI component displays hierarchical data stored in an in-memory array that contains fields with conventional names.
 
 ---
 

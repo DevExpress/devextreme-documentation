@@ -11,13 +11,13 @@ A function that is executed when the current directory is changed.
 Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.directory): FileSystemItem
 The current directory.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 The model data. Available only if you use Knockout.

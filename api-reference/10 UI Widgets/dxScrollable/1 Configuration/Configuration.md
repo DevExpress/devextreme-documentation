@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-An object defining configuration options for the dxScrollable widget.
+An object defining configuration options for the dxScrollable UI component.
 
 ---

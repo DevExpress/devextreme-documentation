@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **SlideOut** widget.
+An object defining configuration options for the **SlideOut** UI component.
 
 ---
 #####See Also#####

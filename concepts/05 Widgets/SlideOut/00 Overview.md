@@ -1,4 +1,4 @@
-The **SlideOut** widget is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
+The **SlideOut** UI component is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slideout/Overview/"
@@ -49,7 +49,7 @@ Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Confi
         });
     });
 
-[note]The **SlideOut** contains the [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/Widgets/List/Overview/') widget in the slide-out menu. If you need to put another collection widget there, use the [SlideOutView](/concepts/05%20Widgets/SlideOutView/00%20Overview.md '/Documentation/Guide/Widgets/SlideOutView/Overview/') instead of the **SlideOut**.
+[note]The **SlideOut** contains the [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/Widgets/List/Overview/') UI component in the slide-out menu. If you need to put another collection UI component there, use the [SlideOutView](/concepts/05%20Widgets/SlideOutView/00%20Overview.md '/Documentation/Guide/Widgets/SlideOutView/Overview/') instead of the **SlideOut**.
 
 #####See Also#####
 #include common-link-configurewidget
@@ -59,4 +59,4 @@ Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Confi
 - [SlideOut - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOut/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/Widgets/SlideOut/Open_and_Close_the_Menu_Using_the_API')
 - [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Widgets/dxSlideOut/')
 
-[tags]dxslideout, slide-out menu, slideOut, navigation, collection container, collection widget, overview
+[tags]dxslideout, slide-out menu, slideOut, navigation, collection container, collection UI component, overview

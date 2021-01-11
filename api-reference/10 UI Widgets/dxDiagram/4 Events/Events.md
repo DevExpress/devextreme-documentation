@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes events this widget fires.
+This section describes events this UI component fires.
 
 ---

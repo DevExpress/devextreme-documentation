@@ -6,7 +6,7 @@ default: 'onHover'
 ---
 ---
 ##### shortDescription
-Specifies when the widget shows a tooltip.
+Specifies when the UI component shows a tooltip.
 
 ---
 #include common-ref-enum with {

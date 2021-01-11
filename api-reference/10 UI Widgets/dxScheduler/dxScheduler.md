@@ -6,7 +6,7 @@ inherits: Widget,DataHelperMixin
 ---
 ---
 ##### shortDescription
-The **Scheduler** is a widget that represents scheduled data and allows a user to manage and edit it.
+The **Scheduler** is a UI component that represents scheduled data and allows a user to manage and edit it.
 
 ##### widgettree
 dataSource: []

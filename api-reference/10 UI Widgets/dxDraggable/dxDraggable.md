@@ -6,7 +6,7 @@ inherits: DraggableBase
 ---
 ---
 ##### shortDescription
-**Draggable** is a user interface utility that allows widget elements to be dragged and dropped.
+**Draggable** is a user interface utility that allows UI component elements to be dragged and dropped.
 
 ---
 

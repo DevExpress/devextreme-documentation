@@ -18,10 +18,10 @@ Allows you to cancel appointment adding.
 If you pass a Promise to this field, appointment adding is continued or canceled once the Promise has been resolved.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.

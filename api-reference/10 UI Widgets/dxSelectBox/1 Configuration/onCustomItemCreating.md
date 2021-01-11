@@ -11,13 +11,13 @@ A function that is executed when a user adds a custom item. Requires [acceptCust
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.customItem): String | Object | Promise<any>
 The field where to place a custom item.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

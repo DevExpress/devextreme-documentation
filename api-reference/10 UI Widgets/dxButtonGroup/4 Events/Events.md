@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events that the **ButtonGroup** widget raises.
+This section describes events that the **ButtonGroup** UI component raises.
 
 ---
 #####See Also#####

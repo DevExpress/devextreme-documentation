@@ -14,13 +14,13 @@ Information about the event that caused the function's execution.
 All column [configurations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/').
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.data): Object
 The row's data.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
@@ -29,7 +29,7 @@ The row's data.
 The row's [group index](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex'). Available if **rowType** is *"group"*.
 
 ##### field(e.handled): Boolean
-Indicates whether internal widget functions have already handled the event.
+Indicates whether internal UI component functions have already handled the event.
 
 ##### field(e.isExpanded): Boolean
 Indicates whether or not the group row is expanded. Available if **rowType** is *"group"*.
@@ -59,7 +59,7 @@ The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md 
 Values displayed in the row cells.
 
 ---
-The widget executes the [onCellClick](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onCellClick.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellClick') function and can also execute internal functions before this function. Use the **handled** field to check whether internal functions were executed.
+The UI component executes the [onCellClick](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onCellClick.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellClick') function and can also execute internal functions before this function. Use the **handled** field to check whether internal functions were executed.
 
 In the following code, the **onRowClick** function calls the [editRow](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/editRow(rowIndex).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#editRowrowIndex') method to switch the clicked row to the editing state. This functionality is best applied in [form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FormEditing) or [popup](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PopupEditing) **editing**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode'):
 

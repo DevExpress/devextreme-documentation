@@ -1,4 +1,4 @@
-The **ContextMenu** widget is not supposed to be opened programmatically, but rare scenarios demand this. This article shows how to do this using the **Button** widget. This choice is made for purely demonstrational purposes, and you can do the same with another widget following the same guidelines.
+The **ContextMenu** UI component is not supposed to be opened programmatically, but rare scenarios demand this. This article shows how to do this using the **Button** UI component. This choice is made for purely demonstrational purposes, and you can do the same with another UI component following the same guidelines.
 
 #####See Also#####
 - [ContextMenu - Overview](/concepts/05%20Widgets/ContextMenu/00%20Overview.md '/Documentation/Guide/Widgets/ContextMenu/Overview/')
@@ -29,7 +29,7 @@ To open or close the **ContextMenu** from code, call the [show()](/api-reference
         });
     });
 
-When using Angular, Vue or React, use a different approach. Bind the [visible](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#visible') property of the **ContextMenu** widget to a component property. After that, change this property or variable, and the context menu will be opened or closed.
+When using Angular, Vue or React, use a different approach. Bind the [visible](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#visible') property of the **ContextMenu** UI component to a component property. After that, change this property or variable, and the context menu will be opened or closed.
 
 ---
 

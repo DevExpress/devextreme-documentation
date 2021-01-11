@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widget can display hierarchical data fields.
+Specifies whether the UI component can display hierarchical data fields.
 
 ---
 #####See Also#####

@@ -1,4 +1,4 @@
-The **Lookup** and [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/') widgets implement a similar functionality - while both consist of a text field and display a collection of items in the drop-down list, they also have differences:
+The **Lookup** and [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/') UI components implement a similar functionality - while both consist of a text field and display a collection of items in the drop-down list, they also have differences:
 
 - **Drop-down field content**   
 The **SelectBox** has only a list of items in a drop-down field whereas **Lookup** also has a search field and the Cancel button.

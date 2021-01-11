@@ -1,4 +1,4 @@
-The **FilterBuilder** widget allows a user to build complex filter expressions with an unlimited number of filter conditions using the UI. 
+The **FilterBuilder** UI component allows a user to build complex filter expressions with an unlimited number of filter conditions using the UI. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"
@@ -80,7 +80,7 @@ The **FilterBuilder** displays the filter expression as a tree structure, where 
 
 #####See Also#####
 #include common-link-configurewidget
-- [Integrate with a Widget](/concepts/05%20Widgets/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/Widgets/FilterBuilder/Integrate_with_a_Widget/')
+- [Integrate with a UI component](/concepts/05%20Widgets/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/Widgets/FilterBuilder/Integrate_with_a_Widget/')
 - [Predefine Filter Values](/concepts/05%20Widgets/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/Widgets/FilterBuilder/Predefine_Filter_Values/')
 - [API Reference](/api-reference/10%20UI%20Widgets/dxFilterBuilder '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/')
 

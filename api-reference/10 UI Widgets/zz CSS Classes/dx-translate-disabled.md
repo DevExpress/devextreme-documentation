@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-Set this class to a widget element to disable translating the widget text to a local language.
+Set this class to a UI component element to disable translating the UI component text to a local language.
 
 ---

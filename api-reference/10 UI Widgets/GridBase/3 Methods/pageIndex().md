@@ -9,7 +9,7 @@ Gets the current page index.
 The current page index.
 
 ---
-When the [scrolling mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/scrolling/mode.md '{basewidgetpath}/Configuration/scrolling/#mode') is *"virtual"* or *"infinite"*, this method returns the index of the page whose row is shown first in the widget. 
+When the [scrolling mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/scrolling/mode.md '{basewidgetpath}/Configuration/scrolling/#mode') is *"virtual"* or *"infinite"*, this method returns the index of the page whose row is shown first in the UI component. 
 
 
 #####See Also#####

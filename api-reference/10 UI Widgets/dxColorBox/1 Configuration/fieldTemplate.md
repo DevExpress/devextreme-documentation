@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the input field. Must contain the [TextBox](/concepts/05%20Widgets/TextBox/00%20Overview.md '/Documentation/Guide/Widgets/TextBox/Overview/') widget.
+Specifies a custom template for the input field. Must contain the [TextBox](/concepts/05%20Widgets/TextBox/00%20Overview.md '/Documentation/Guide/Widgets/TextBox/Overview/') UI component.
 
 ##### param(value): String
 The selected value.

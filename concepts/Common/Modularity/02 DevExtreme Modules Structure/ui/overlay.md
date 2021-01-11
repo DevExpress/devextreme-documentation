@@ -1,4 +1,4 @@
-Exposes methods that work with overlay widgets.
+Exposes methods that work with overlay UI components.
 
 Exports:
 

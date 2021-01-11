@@ -3,7 +3,7 @@ id: Widget.repaint()
 ---
 ---
 ##### shortDescription
-Repaints the widget without reloading data. Call it to update the widget's markup.
+Repaints the UI component without reloading data. Call it to update the UI component's markup.
 
 ---
 #####See Also#####

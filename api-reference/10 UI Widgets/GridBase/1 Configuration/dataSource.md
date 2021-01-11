@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Binds the widget to data.
+Binds the UI component to data.
 
 ---
 #include common-dataSource-description with {
@@ -25,7 +25,7 @@ Binds the widget to data.
 
     custom_store_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomDataSource)",
 
-    remote_operations_note: "- If the **DataGrid** widget gets data from a server, configure [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/remoteOperations/') to notify the widget about data operations the server performs.",
+    remote_operations_note: "- If the **DataGrid** UI component gets data from a server, configure [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/remoteOperations/') to notify the UI component about data operations the server performs.",
 
     calculated_columns_note: "- Features like [export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/') and [selection](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/') work incorrectly with [mapped data objects](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map'). Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead of mapping."
 

@@ -5,6 +5,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-This section describes options and methods that are common to all widgets.
+This section describes options and methods that are common to all UI components.
 
 ---

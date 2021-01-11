@@ -11,13 +11,13 @@ A function that is executed before the **ContextMenu** is shown.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel widget showing.
+Allows you to cancel UI component showing.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

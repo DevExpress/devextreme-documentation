@@ -34,7 +34,7 @@ Identifies the reason why the event is raised. `true` value indicates that the U
 `false` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed, and, for instance, to display an error message if a user tries to perform a prohibited action.
 
 ##### field(e.reason): 'checkUIElementAvailability' | 'modelModification'
-<!-- Description goes here -->
+Identifies the reason why the event is raised.
 
 
 ---

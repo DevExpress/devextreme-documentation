@@ -4,7 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The new shape height.
 
 ---
-<!-- Description goes here -->

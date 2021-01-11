@@ -1,6 +1,6 @@
 In form edit mode, row cells become editable form fields. Form fields are sorted like columns in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/') array.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Editing Form Mode](/images/treelist/editing/form_mode.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Editing Form Mode](/images/treelist/editing/form_mode.png)
 
 Configure the form using the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#form') object. The **TreeList** uses the DevExtreme [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') UI component, so you can specify [any Form options](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/') in this object except those listed in its description.
 

@@ -8,7 +8,7 @@ default: null
 Specifies the function returning the [size qualifier](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/Widgets/ResponsiveBox/Size_Qualifiers/') depending on the screen's width.
 
 ---
-The function passed to this option accepts the screen's width as a parameter and should return a string containing the needed size qualifier.
+The function passed to this property accepts the screen's width as a parameter and should return a string containing the needed size qualifier.
 
     <!--JavaScript-->
     var responsiveBoxOptions: {

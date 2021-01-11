@@ -1,4 +1,4 @@
-Labels are arranged in a column by default. Change the **label**.[position](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/label/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/label/#position') option to display labels beside or inside funnel items.
+Labels are arranged in a column by default. Change the **label**.[position](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/label/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/label/#position') property to display labels beside or inside funnel items.
 
 ---
 ##### jQuery

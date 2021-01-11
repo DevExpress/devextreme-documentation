@@ -187,7 +187,7 @@ Apart from plain text, the **Button** can display an icon. DevExtreme provides [
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/"
 }
 
-If you need to define the **Button** content completely, implement a template for it using the [template](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#template') option as shown in the following example.
+If you need to define the **Button** content completely, implement a template for it using the [template](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#template') property as shown in the following example.
 
 ---
 ##### jQuery

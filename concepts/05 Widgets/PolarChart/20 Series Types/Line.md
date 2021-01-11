@@ -23,7 +23,7 @@ When either argument or value axis is discrete, the line chart joins data points
 
 ![Discrete PolarLineSeriesType ChartJS](/images/ChartJS/PolarLine_Discrete.png)
 
-Note that you can use a spider web for polar charts displaying discrete data. For this purpose, set the UI component's [useSpiderWeb](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/useSpiderWeb.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#useSpiderWeb') option to **true**.
+Note that you can use a spider web for polar charts displaying discrete data. For this purpose, set the UI component's [useSpiderWeb](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/useSpiderWeb.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#useSpiderWeb') property to **true**.
 
 ![SpiderWeb PolarLineSeriesType ChartJS](/images/ChartJS/PolarLine_useSpiderWeb.png)
 

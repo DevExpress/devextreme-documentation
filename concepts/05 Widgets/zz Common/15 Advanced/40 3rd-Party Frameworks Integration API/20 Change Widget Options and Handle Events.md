@@ -12,13 +12,13 @@ A specific UI component instance is required to call methods and subscribe to ev
 
 You can get and set UI component options at runtime using the **option()** method. 
 
-    // Get an option value
+    // Get an property value
     let isVisible = instance.option("visible");
 
-    // Set an option value
+    // Set an property value
     instance.option("visible", false);
 
-To subscribe to an event, you can use an option whose name starts with "on" (for example, "onItemClick").
+To subscribe to an event, you can use an property whose name starts with "on" (for example, "onItemClick").
 
     Accordion(element, {
         ...,

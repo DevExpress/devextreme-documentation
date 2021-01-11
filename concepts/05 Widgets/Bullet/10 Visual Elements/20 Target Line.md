@@ -2,7 +2,7 @@ A target line is a vertical line that indicates a target value. According to the
 
 ![DevExtreme ChartJS BulletChart BulletGraph](/images/ChartJS/BulletTargetLine.png)
 
-To specify the target value, set the [target](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/target.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#target') option of the main configuration object.
+To specify the target value, set the [target](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/target.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#target') property of the main configuration object.
 
 	<!--JavaScript-->var bulletOptions = {
 		target: 50,

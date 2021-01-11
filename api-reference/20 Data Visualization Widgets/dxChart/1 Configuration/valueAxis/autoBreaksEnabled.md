@@ -8,7 +8,7 @@ default: false
 Enables auto-calculated scale breaks. Applies only if the axis' [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#type') is *"continuous"* or *"logarithmic"* and [valueType](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType') is *"numeric"*.
 
 ---
-If this option is **true**, the UI component detects large gaps between side-by-side points and cuts them out, putting scale breaks instead.
+If this property is **true**, the UI component detects large gaps between side-by-side points and cuts them out, putting scale breaks instead.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ScaleBreaks/"

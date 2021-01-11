@@ -17,7 +17,7 @@ To customize scale labels, use the options of the [label](/api-reference/20%20Da
  A brief overview of the scale label options is given below.
 
 - **Visibility**	
- By default, scale labels are visible. To hide them, set the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/label/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/label/#visible') option to **false**.
+ By default, scale labels are visible. To hide them, set the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/label/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/label/#visible') property to **false**.
 
 - **Text Customization**	
 You can specify a [format](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/label/format.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/label/#format') for the value displayed by a label. Moreover, you are not limited to displaying the tick value only - you can customize the label's text per your requirements using the [customizeText](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/label/customizeText.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/label/#customizeText') option.

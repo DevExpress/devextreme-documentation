@@ -29,6 +29,6 @@ The start value of the group indicated by the legend item.
 The text for the hint to display.
 
 ---
-This option accepts a function that must return the required text. When implementing this function, use its parameter to access information on the legend item.
+This property accepts a function that must return the required text. When implementing this function, use its parameter to access information on the legend item.
 
 [note]If you have not provided text for legend items using the [customizeText](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/legends/customizeText.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/legends/#customizeText') option, hints will not appear.

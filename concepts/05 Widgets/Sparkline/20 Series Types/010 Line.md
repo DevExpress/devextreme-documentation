@@ -2,7 +2,7 @@ A *line* series type sparkline presents data as a line that connects invisible p
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineLine.png)
 
-In the **Sparkline** UI component, the *line* series type is used by default.  There may be times, however, when you will need to specify this series type explicitly. To do so, assign *'line'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') option of the main configuration object.
+In the **Sparkline** UI component, the *line* series type is used by default.  There may be times, however, when you will need to specify this series type explicitly. To do so, assign *'line'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') property of the main configuration object.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'line',

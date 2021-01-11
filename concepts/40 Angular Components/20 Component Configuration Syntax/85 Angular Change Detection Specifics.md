@@ -1,4 +1,4 @@
-Angular activates change detection on each option change. This approach backfires when you try to pass functions to UI component options that do not accept them. For example:
+Angular activates change detection on each property change. This approach backfires when you try to pass functions to UI component options that do not accept them. For example:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';

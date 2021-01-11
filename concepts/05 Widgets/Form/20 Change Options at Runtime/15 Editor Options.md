@@ -23,7 +23,7 @@ To change the options of an editor, get its instance first using the [getEditor(
 
 [note]The **getEditor(dataField)** method is available for visible form items only.
 
-With Angular, Vue, or React, bind the option that should be changed in the [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component property.
+With Angular, Vue, or React, bind the property that should be changed in the [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component property.
 
 ---
 

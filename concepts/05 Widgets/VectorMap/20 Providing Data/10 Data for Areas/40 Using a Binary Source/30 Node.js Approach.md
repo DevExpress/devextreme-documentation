@@ -19,7 +19,7 @@ There are two possible ways to parse binary data for **VectorMap**.
 				}]
 			});
 		});
-	In this code, the function's first argument specifies the URI of the source. Note that the file extension is omitted. In this case, both the *world.shp* and *world.dbf* files will be parsed. Add the *.shp* or *.dbf* extension if you need to parse a certain file. The second argument specifies the precision of the resulting shape coordinates. Within the callback function, which comes as the third argument, the resulting coordinates are assigned to the **layer**.**dataSource** option of the **VectorMap** UI component.
+	In this code, the function's first argument specifies the URI of the source. Note that the file extension is omitted. In this case, both the *world.shp* and *world.dbf* files will be parsed. Add the *.shp* or *.dbf* extension if you need to parse a certain file. The second argument specifies the precision of the resulting shape coordinates. Within the callback function, which comes as the third argument, the resulting coordinates are assigned to the **layer**.**dataSource** property of the **VectorMap** UI component.
 
 - **Using Data from a *Buffer* Source**		
 	The following code sample demonstrates how to use the **parse()** method for parsing data from any source of the *<a href="http://nodejs.org/api/buffer.html" target="_blank">Buffer</a>* type.		
@@ -56,13 +56,13 @@ This method accepts the URI of the source shapefile as the first argument. When 
 The **processFiles(source, options)** method accepts processing options as the second argument. These options include:
 
 - **output** <span style="font-size:10px"><i>string</i></span>		
-Specifies a destination folder. This folder should be created in advance. When this option is not specified, the resulting file is placed in the folder where its source shapefile is located.
+Specifies a destination folder. This folder should be created in advance. When this property is not specified, the resulting file is placed in the folder where its source shapefile is located.
 
 - **precision** <span style="font-size:10px"><i>numeric</i></span>		
 Specifies a precision for shape coordinates. By default, no precision applies.
 
 - **isJSON** <span style="font-size:10px"><i>boolean</i></span>		
-Specifies the format of the resulting file. When this option is set to **true**, the resulting file has the *'.json'* extension and can be [used in VectorMap as a JSON object](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/30%20Using%20a%20JSON%20object.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas/Using_a_JSON_object'). When this option is set to **false**, the resulting file has the *'.js'* extension and can be [used in VectorMap as a script](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/20%20Using%20a%20Script.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Script').
+Specifies the format of the resulting file. When this property is set to **true**, the resulting file has the *'.json'* extension and can be [used in VectorMap as a JSON object](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/30%20Using%20a%20JSON%20object.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas/Using_a_JSON_object'). When this property is set to **false**, the resulting file has the *'.js'* extension and can be [used in VectorMap as a script](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/20%20Using%20a%20Script.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Script').
 
 You can use the Node.js console for generating files as well. The accepted string has the following format.
 

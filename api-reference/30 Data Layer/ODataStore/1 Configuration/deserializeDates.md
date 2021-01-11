@@ -13,6 +13,6 @@ ODataStore can parse date-time values in <a href="https://www.w3.org/TR/NOTE-dat
 
 Disabling deserialization may cause filtering issues in UI components bound to the **ODataStore**. When deserialization is disabled in the store, date-time strings are converted to Date objects at the UI component level. When filtering, the UI component reverts an entered date-time value to a string based on the [dateSerializationFormat](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dateSerializationFormat') option's value and passes the string to the **ODataStore** for further processing. OData does not support strings which cause filtering to fail.
 
-To prevent these issues, the store's **deserializeDates** option should be set to **true** or set the UI component's **dateSerializationFormat** option to **null**.
+To prevent these issues, the store's **deserializeDates** property should be set to **true** or set the UI component's **dateSerializationFormat** property to **null**.
 
 [/note]

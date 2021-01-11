@@ -8,7 +8,7 @@ default: false
 Specifies whether the UI component stores the selected drop-down menu item.
 
 ---
-When you set this option to **true**, the following applies:
+When you set this property to **true**, the following applies:
 
 - The [selectedItemKey](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItemKey.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#selectedItemKey') and [selectedItem](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#selectedItem') options can be used.
 

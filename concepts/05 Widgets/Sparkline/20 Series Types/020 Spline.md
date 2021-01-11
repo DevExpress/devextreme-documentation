@@ -2,7 +2,7 @@ A *spline* series type sparkline presents data as a set of invisible points that
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineSpline.png)
 
-To specify the *spline* series type, assign *'spline'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') option of the main configuration object.
+To specify the *spline* series type, assign *'spline'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') property of the main configuration object.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'spline',

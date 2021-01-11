@@ -173,7 +173,7 @@ Bind each of them to a pane using the [pane](/api-reference/20%20Data%20Visualiz
     ---
 
 3. **Bind series to panes**        
-Bind each series to a pane using the [pane](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/pane.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#pane') option like you did for value axes in the previous step. If the **pane** option is missing from the series configuration, such a series will be bound to the [defaultPane](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/defaultPane.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#defaultPane').
+Bind each series to a pane using the [pane](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/pane.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#pane') property like you did for value axes in the previous step. If the **pane** property is missing from the series configuration, such a series will be bound to the [defaultPane](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/defaultPane.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#defaultPane').
 
     ---
     ##### jQuery

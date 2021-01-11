@@ -2,7 +2,7 @@ To bind series to data using a series template, start with setting common option
 
 [note]Certain series types need more than one value field or additional data fields to be specified. These series types are listed in the closing part of the [Bind Series to Data Directly](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data/05%20Directly.md '/Documentation/Guide/Widgets/Chart/Data_Binding/Bind_Series_to_Data/#Directly') topic.
 
-After that, use the **seriesTemplate**.[nameField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesTemplate/nameField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/seriesTemplate/#nameField') option to specify which data source field provides [names](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#name') for series.
+After that, use the **seriesTemplate**.[nameField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesTemplate/nameField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/seriesTemplate/#nameField') property to specify which data source field provides [names](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#name') for series.
 
 ---
 ##### jQuery

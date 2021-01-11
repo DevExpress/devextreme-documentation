@@ -1,4 +1,4 @@
-Setting this option prevents generating an infinite number of small axis values. Set it to an integer value that designates a power of [logarithmBase]({basewidgetpath}/Configuration/${{axis}}/#logarithmBase). The following code sample shows how different **linearThreshold** values affect the linear range when the **logarithmBase** is 10:
+Setting this property prevents generating an infinite number of small axis values. Set it to an integer value that designates a power of [logarithmBase]({basewidgetpath}/Configuration/${{axis}}/#logarithmBase). The following code sample shows how different **linearThreshold** values affect the linear range when the **logarithmBase** is 10:
 
     <!--JavaScript-->
     linearThreshold: -1 // [-0.1; 0.1]

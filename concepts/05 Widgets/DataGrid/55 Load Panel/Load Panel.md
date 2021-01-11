@@ -2,7 +2,7 @@ The load panel is displayed while the UI component loads data. It consists of a 
 
 ![DevExtreme HTML5/JavaScript DataGrid Widget - Load Panel](/images/DataGrid/visual_elements/load_panel.png)
 
-The load panel is shown only for remote data sources by default. To show it regardless of the data source type, assign **true** to the **loadPanel**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/loadPanel/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/loadPanel/#enabled') option. Setting the same option to **false** disables the load panel completely.
+The load panel is shown only for remote data sources by default. To show it regardless of the data source type, assign **true** to the **loadPanel**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/loadPanel/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/loadPanel/#enabled') option. Setting the same property to **false** disables the load panel completely.
 
 ---
 ##### jQuery

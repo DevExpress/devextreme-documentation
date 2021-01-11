@@ -13,7 +13,7 @@ The path may include the group's [name](/api-reference/10%20UI%20Widgets/dxForm/
 The option's name.
 
 ##### param(value): any
-The new option value.
+The new property value.
 
 ---
 The following code shows how to call this method for an item organized in a group:

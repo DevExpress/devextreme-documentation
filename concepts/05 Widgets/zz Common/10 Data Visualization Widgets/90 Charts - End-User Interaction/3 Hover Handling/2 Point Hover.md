@@ -40,14 +40,14 @@ or for an individual series:
 
 [note]The **point** configuration object defines the points of the line-like, scatter and area-like series only. To set the hover style for points of other series types, use the **hoverStyle** configuration object of the parent series.
 
-By default, the chart highlights only the point that was hovered over. But in some scenarios, you may need several points to be highlighted. To specify it, use the **hoverMode** option. Like the hover style, this option can be specified for all, type-specific or an individual series. It can accept one of the following values.
+By default, the chart highlights only the point that was hovered over. But in some scenarios, you may need several points to be highlighted. To specify it, use the **hoverMode** option. Like the hover style, this property can be specified for all, type-specific or an individual series. It can accept one of the following values.
 
 - **onlyPoint** &#8212; highlights only the point that was hovered over
 - **allSeriesPoints** &#8212; highlights all points from the parent series
 - **allArgumentPoints** &#8212; highlights all points with the same argument
 - **none** &#8212; does not highlight anything
 
-To handle the point hover event, assign a function to the [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointHoverChanged') option of the chart.
+To handle the point hover event, assign a function to the [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointHoverChanged') property of the chart.
 
 	<!--JavaScript-->var chartOptions = {
 		onPointHoverChanged: function (info) {

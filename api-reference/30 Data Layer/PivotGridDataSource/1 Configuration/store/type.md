@@ -8,7 +8,7 @@ type: String
 Specifies the **PivotGridDataSource**'s storage type.
 
 ---
-This option accepts one of the following values:
+This property accepts one of the following values:
 
 - "array"  
  Creates an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/').

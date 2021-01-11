@@ -9,7 +9,7 @@ Icons in UI components are inserted into the DOM as `<i>` elements. When you set
 
 This allows DevExtreme UI components to support icons from external icon libraries, provided that they too should be specified in the `class` attribute.
 
-<a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, <a href="https://www.glyphicons.com/" target="_blank">Glyphicons</a>, and <a href="https://ionicons.com/" target="_blank">Ionicons</a> are examples of such libraries. Follow the installation tutorial for the library you want to use and set the **icon** option as follows:
+<a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, <a href="https://www.glyphicons.com/" target="_blank">Glyphicons</a>, and <a href="https://ionicons.com/" target="_blank">Ionicons</a> are examples of such libraries. Follow the installation tutorial for the library you want to use and set the **icon** property as follows:
 
 ---
 ##### jQuery  

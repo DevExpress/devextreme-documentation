@@ -34,7 +34,7 @@ Specify the [keyExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configurat
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/"
 }
 
-If data has a hierarchical structure, set the **dataStructure** option to *"tree"*. Parent and item IDs will be generated automatically. Data items that nest other data items should have an **items** field:
+If data has a hierarchical structure, set the **dataStructure** property to *"tree"*. Parent and item IDs will be generated automatically. Data items that nest other data items should have an **items** field:
 
     <!--JavaScript-->
     var treeListData = [{

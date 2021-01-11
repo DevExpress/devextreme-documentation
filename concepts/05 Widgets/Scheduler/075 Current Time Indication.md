@@ -2,7 +2,7 @@ The **Scheduler** displays a specific indicator that highlights the current time
 
 ![Current Time Indicator](/images/UiWidgets/Scheduler_Current_Time_Indicator.png)
 
-Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/showCurrentTimeIndicator.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#showCurrentTimeIndicator') option to control the indicator's visibility.
+Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/showCurrentTimeIndicator.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#showCurrentTimeIndicator') property to control the indicator's visibility.
 
 ---
 

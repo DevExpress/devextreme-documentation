@@ -15,4 +15,4 @@ When you need to display only a specific region on a map, specify the geographic
 
 If your [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataSource') contains coordinates in a different range, implement a [custom projection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomProjection).
 
-[note] Specifying the **bounds** option with the { minLon: *minLongitude*, maxLat: *maxLatitude*, maxLon: *maxLongitude*, minLat: *minLatitude* } object is now <font color="red">deprecated</font>.
+[note] Specifying the **bounds** property with the { minLon: *minLongitude*, maxLat: *maxLatitude*, maxLon: *maxLongitude*, minLat: *minLatitude* } object is now <font color="red">deprecated</font>.

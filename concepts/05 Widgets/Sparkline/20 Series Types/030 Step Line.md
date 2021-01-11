@@ -2,7 +2,7 @@ A *step line* series type sparkline presents data as a line that connects a set 
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineStepLine.png)
 
-To specify the *step line* series type, assign *'stepline'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') option of the main configuration object.
+To specify the *step line* series type, assign *'stepline'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') property of the main configuration object.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'stepline',

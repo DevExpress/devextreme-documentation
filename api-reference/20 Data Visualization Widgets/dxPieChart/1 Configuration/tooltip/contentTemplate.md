@@ -19,7 +19,7 @@ You can access the following **pointInfo** object fields:
     </tr>
     <tr>
         <td><code>argumentText</code></td>
-        <td>The argument value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/#argumentFormat">argumentFormat</a> option is specified.</td>
+        <td>The argument value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/#argumentFormat">argumentFormat</a> property is specified.</td>
     </tr>
     <tr>
         <td><code>percent</code></td>

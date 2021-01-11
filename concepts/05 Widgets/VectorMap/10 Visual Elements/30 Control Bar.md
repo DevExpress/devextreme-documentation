@@ -14,7 +14,7 @@ Control bar settings are specified using fields of the [controlBar](/api-referen
 The following list provides an overview of control bar properties configurable within this object.
 
 * **Visibility**		
-The control bar is visible by default, but if you need to hide it, set the [enabled](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/controlBar/enabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/controlBar/#enabled') option to **false**.
+The control bar is visible by default, but if you need to hide it, set the [enabled](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/controlBar/enabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/controlBar/#enabled') property to **false**.
 
 * **Color**		
 You can specify individual colors for the outline and the inner area of the control bar elements using the [borderColor](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/controlBar/borderColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/controlBar/#borderColor') and [color](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/controlBar/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/controlBar/#color') options respectively.

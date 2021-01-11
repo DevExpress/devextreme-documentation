@@ -17,7 +17,7 @@ The function's parameter has the following fields:
     </tr>
     <tr>
         <td><code>value</code></td>
-        <td>The primary bullet value with applied formatting if the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/tooltip/#format">format</a> option is specified.</td>
+        <td>The primary bullet value with applied formatting if the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/tooltip/#format">format</a> property is specified.</td>
     </tr>
     <tr>
         <td><code>originalTarget</code></td>
@@ -25,7 +25,7 @@ The function's parameter has the following fields:
     </tr>
     <tr>
         <td><code>target</code></td>
-        <td>The target bullet value with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The target bullet value with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
 </table>
 

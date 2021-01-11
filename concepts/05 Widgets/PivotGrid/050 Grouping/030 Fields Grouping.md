@@ -4,9 +4,9 @@ If your [field](/concepts/05%20Widgets/PivotGrid/020%20Fields%20and%20Areas/10%2
 
 To create a group, follow the steps below.
 
-1. Create an empty field in the **fields** array. Declare a new group by assigning its name to the [groupName](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupName.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupName') option of this field. Specify the area where this group must be located using the [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') option.    
-2. Assign the group's name to the **groupName** option of each field you need to group.     
-3. Order the fields within the group by setting the [groupIndex](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupIndex.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupIndex') option of each field within a group. The order of fields is important because it affects the structure of the resulting hierarchy.
+1. Create an empty field in the **fields** array. Declare a new group by assigning its name to the [groupName](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupName.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupName') property of this field. Specify the area where this group must be located using the [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') option.    
+2. Assign the group's name to the **groupName** property of each field you need to group.     
+3. Order the fields within the group by setting the [groupIndex](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupIndex.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupIndex') property of each field within a group. The order of fields is important because it affects the structure of the resulting hierarchy.
 
 A sample implementation of the **Address** dimension is presented below.
 

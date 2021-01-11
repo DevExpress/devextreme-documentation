@@ -84,7 +84,7 @@ Depending on whether the legend is oriented vertically or horizontally, the **Fu
     [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#horizontalAlignment') option. For details on the legend's location, refer to the [Relocate the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Funnel/Legend/Relocate_the_Legend/') topic.
 
 - **Set the number of columns or rows**     
-To distribute all legend items between several columns (in a vertically-oriented legend) or rows (in a horizontally-oriented legend), set the [columnCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#columnCount') or [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#rowCount') option respectively.
+To distribute all legend items between several columns (in a vertically-oriented legend) or rows (in a horizontally-oriented legend), set the [columnCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#columnCount') or [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/legend/#rowCount') property respectively.
 
 ---
 ##### jQuery

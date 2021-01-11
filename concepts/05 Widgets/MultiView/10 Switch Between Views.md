@@ -1,4 +1,4 @@
-By default, an end user can switch between views by swiping. Assign **false** to the [swipeEnabled](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/swipeEnabled.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#swipeEnabled') option to disable this feature.
+By default, an end user can switch between views by swiping. Assign **false** to the [swipeEnabled](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/swipeEnabled.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#swipeEnabled') property to disable this feature.
 
 ---
 
@@ -214,7 +214,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 
 ---
 
-By default, the **MultiView** UI component animates switching between views. You can disable animation by setting the [animationEnabled](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/animationEnabled.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#animationEnabled') option to **false**.
+By default, the **MultiView** UI component animates switching between views. You can disable animation by setting the [animationEnabled](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/animationEnabled.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#animationEnabled') property to **false**.
 
 ---
 

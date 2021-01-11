@@ -114,7 +114,7 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
 
 ---
 
-To process a new **SelectBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged') option when you configure the UI component.
+To process a new **SelectBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
 ##### jQuery

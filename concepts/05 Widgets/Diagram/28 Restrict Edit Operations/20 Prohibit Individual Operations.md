@@ -4,7 +4,7 @@
 
 Every time a user attempts an edit operation, the UI component raises the [requestEditOperation](/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#requestEditOperation) event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
 
-- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) option is set to `false`, the event does not fire for this operation. The table below lists all available operations.
+- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) property is set to `false`, the event does not fire for this operation. The table below lists all available operations.
 
 <table class="dx-table">
     <tr>
@@ -133,7 +133,7 @@ Every time a user attempts an edit operation, the UI component raises the [reque
 
 - The **reason** parameter specifies whether the event responds to a user action or requests instruction on related UI command availability.
 
-    - The `checkUIElementAvailability` value indicates that the UI component is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
+    - The `checkUIElementAvailability` value indicates that the UI component is updating the UI. Set the **allowed** property to `false` to hide the UI element associated with the specified operation.
 
     - The `modelModification` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed and display an error message if necessary.
 

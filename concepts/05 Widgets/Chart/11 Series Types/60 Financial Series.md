@@ -3,7 +3,7 @@
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/financial.html, /Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/financial.js"></div>
 
-Assign *"candlestick"* or *"stock"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') option to specify the corresponding series type. You can configure:
+Assign *"candlestick"* or *"stock"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') property to specify the corresponding series type. You can configure:
 
 - Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') array;
 - All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object;
@@ -145,7 +145,7 @@ Note that the financial series require four value fields: [openValueField](/api-
 
 ---
 
-Financial series gauge price reduction by comparing the values of two neighboring points. Use the **reduction**.[level](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction/level.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/reduction/#level') option to specify whether it should be the open, close, high, or low values. The **reduction**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/reduction/#color') colors points whose value decreases.
+Financial series gauge price reduction by comparing the values of two neighboring points. Use the **reduction**.[level](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction/level.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/reduction/#level') property to specify whether it should be the open, close, high, or low values. The **reduction**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/reduction/#color') colors points whose value decreases.
 
 ---
 ##### jQuery

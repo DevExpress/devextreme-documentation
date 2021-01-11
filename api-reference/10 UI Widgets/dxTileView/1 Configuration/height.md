@@ -13,4 +13,4 @@ The UI component's height.
 ---
 #include uiwidgets-ref-height
 
-[note] This option does not support the value `"auto"`.
+[note] This property does not support the value `"auto"`.

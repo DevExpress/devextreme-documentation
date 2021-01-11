@@ -14,7 +14,7 @@ You can specify any [Popup option](/api-reference/10%20UI%20Widgets/dxPopup/1%20
 - [showTitle](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#showTitle')
 - [toolbarItems](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/toolbarItems '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/toolbarItems/')
 
-The popup always contains a form whose items are used for editing. Use the [form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') option to customize the form's items.
+The popup always contains a form whose items are used for editing. Use the [form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') property to customize the form's items.
 
 #include widgets-config-object-option-note with {
     optionName: "popup"

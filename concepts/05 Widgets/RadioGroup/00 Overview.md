@@ -4,7 +4,7 @@ The **RadioGroup** is a UI component that contains a set of radio buttons and al
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RadioGroup/Overview/"
 }
 
-The following code adds a simple **RadioGroup** to your page. Here, the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#value') option specifies the initially selected radio button.
+The following code adds a simple **RadioGroup** to your page. Here, the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#value') property specifies the initially selected radio button.
 
 ---
 ##### jQuery
@@ -94,7 +94,7 @@ The following code adds a simple **RadioGroup** to your page. Here, the [value](
 
 ---
 
-If your data is an array of objects, bind it to the **RadioGroup** using the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#displayExpr') and [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#valueExpr') options. **displayExpr** specifies which data source field provides texts for buttons; **valueExpr** specifies which data source field provides values to be written to the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#value') option when a button is selected. Leave **valueExpr** unspecified if you need the entire data object to be written to the **value** option.
+If your data is an array of objects, bind it to the **RadioGroup** using the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#displayExpr') and [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#valueExpr') options. **displayExpr** specifies which data source field provides texts for buttons; **valueExpr** specifies which data source field provides values to be written to the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxRadioGroup/Configuration/#value') property when a button is selected. Leave **valueExpr** unspecified if you need the entire data object to be written to the **value** option.
 
 ---
 ##### jQuery

@@ -2,7 +2,7 @@ The **Sankey**'s algorithm distributes nodes between columns. This distribution 
 
 However, you can sort nodes within a column. Configure the [sortData](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/sortData.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#sortData') object so that its fields correspond to nodes. The field values should be node weights: the heavier the node, the lower it is in its column. Refer to the **sortData** description for an example.
 
-Nodes in a column are separated by a space. You can use the **node**.[padding](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node/padding.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/node/#padding') option to specify this space. In the following code, this distance is reduced to 1 pixel:
+Nodes in a column are separated by a space. You can use the **node**.[padding](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node/padding.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/node/#padding') property to specify this space. In the following code, this distance is reduced to 1 pixel:
 
 ---
 ##### jQuery

@@ -2,7 +2,7 @@ A *step area* series type sparkline presents data as a line of joined horizontal
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineStepArea.png)
 
-To specify the *step area* series type, assign *'steparea'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') option of the main configuration object.
+To specify the *step area* series type, assign *'steparea'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') property of the main configuration object.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'steparea',

@@ -10,7 +10,7 @@ inherits: FileSystemProviderBase
 The **Remote** file system provider works with a file system located on the server.
 
 ---
-Set the [endpointUrl](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote/1%20Configuration/endpointUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl') option to specify the endpoint used to access and modify the file system.
+Set the [endpointUrl](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote/1%20Configuration/endpointUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl') property to specify the endpoint used to access and modify the file system.
 
 The server should return data objects of the following structure:
 

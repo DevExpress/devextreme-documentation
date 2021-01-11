@@ -7,7 +7,7 @@ type: Sort expression
 Specifies data sorting options.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **String**        
 The field name to sort by.

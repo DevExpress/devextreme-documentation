@@ -1,4 +1,4 @@
-If you do not explicitly specify certain columns' [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#width'), the **TreeList** distributes the available space equally among columns at startup. As a result, cell values may appear truncated. Use the [columnMinWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnMinWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#columnMinWidth') option to specify a minimum width for all columns and the [minWidth](/api-reference/_hidden/GridBaseColumn/minWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#minWidth') for an individual column. Note that all these settings may cause horizontal scrolling if columns cannot fit into the UI component's width.
+If you do not explicitly specify certain columns' [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#width'), the **TreeList** distributes the available space equally among columns at startup. As a result, cell values may appear truncated. Use the [columnMinWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnMinWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#columnMinWidth') property to specify a minimum width for all columns and the [minWidth](/api-reference/_hidden/GridBaseColumn/minWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#minWidth') for an individual column. Note that all these settings may cause horizontal scrolling if columns cannot fit into the UI component's width.
 
 ---
 ##### jQuery
@@ -43,7 +43,7 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
     
 ---
 
-Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#columnAutoWidth') option to **true** to make all columns adjust their widths to their content.
+Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#columnAutoWidth') property to **true** to make all columns adjust their widths to their content.
 
 ---
 ##### jQuery

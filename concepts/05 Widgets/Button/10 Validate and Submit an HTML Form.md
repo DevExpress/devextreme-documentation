@@ -1,4 +1,4 @@
-Commonly, editors nested into an HTML form are supposed to be validated on the client and then submitted to the server. The **Button** UI component supports this scenario out of the box. Place the **Button** on the HTML form and set the [useSubmitBehavior](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#useSubmitBehavior') option to **true**.
+Commonly, editors nested into an HTML form are supposed to be validated on the client and then submitted to the server. The **Button** UI component supports this scenario out of the box. Place the **Button** on the HTML form and set the [useSubmitBehavior](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#useSubmitBehavior') property to **true**.
 
 ---
 ##### jQuery
@@ -142,7 +142,7 @@ Commonly, editors nested into an HTML form are supposed to be validated on the c
 
 ---
 
-Note that the [name](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#name') option of the **TextBox** UI components in the previous code specifies the <a href="http://www.w3schools.com/tags/att_input_name.asp" target="_blank">name</a> attribute of the underlying `<input>` element.
+Note that the [name](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#name') property of the **TextBox** UI components in the previous code specifies the <a href="http://www.w3schools.com/tags/att_input_name.asp" target="_blank">name</a> attribute of the underlying `<input>` element.
 
 DevExtreme editors may belong to different [validation groups](/api-reference/10%20UI%20Widgets/dxValidationGroup '/Documentation/ApiReference/UI_Widgets/dxValidationGroup/'). To specify which group the **Button** must validate, use the [validationGroup](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#validationGroup') option. If you do not set this option, the **Button** validates all editors whose validation group is not specified.
 

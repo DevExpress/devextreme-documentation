@@ -20,7 +20,7 @@ The row's key.
 An array of objects or primitives, a store instance, or a **DataSource** configuration.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **Array of objects or primitives**       
 A JavaScript array that contains plain objects or primitives.

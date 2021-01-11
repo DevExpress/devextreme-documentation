@@ -4,7 +4,7 @@ If you assign the name of a method to a **compileGetter**, the getter normally r
     // the getter returns a reference to the 'person.address.getAddress' function and assigns it to the 'getAddressFunction' variable
     var getAddressFunction = getter(person, { functionsAsIs: true }); 
 
-If the getter returns an object containing several functions, the **functionsAsIs** option affects all functions contained in this object.
+If the getter returns an object containing several functions, the **functionsAsIs** property affects all functions contained in this object.
 
 When you use a setter to assign a new value to a property containing an object, the object held in the property is replaced by the new one by default.
 

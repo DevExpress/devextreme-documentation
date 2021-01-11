@@ -8,7 +8,7 @@ default: 10
 Generates a pixel-measured empty space between the left/right side of a constant line and the constant line label.
 
 ---
-This option depends on the **label**.**horizontalAlignment** in the following way.
+This property depends on the **label**.**horizontalAlignment** in the following way.
 
 - **horizontalAlignment** is *"left"* &rarr; padding applies to the left side of a constant line;       
 - **horizontalAlignment** is *"right"* &rarr; padding applies to the right side of a constant line;      

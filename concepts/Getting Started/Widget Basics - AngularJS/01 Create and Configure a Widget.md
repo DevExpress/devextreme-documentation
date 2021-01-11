@@ -23,7 +23,7 @@ To configure a UI component, pass an object to the UI component directive. Note 
         series: { argumentField: 'fruit', valueField: 'total' }
      }"></div>
 
-You can initialize UI component options with the value of a <a href="http://docs.angularjs.org/guide/scope" target="_blank">scope</a> property. For example, the following code declares the `fruitsData` property within the scope of a controller. The **dataSource** option of a dxChart is initialized with the value of this property.
+You can initialize UI component options with the value of a <a href="http://docs.angularjs.org/guide/scope" target="_blank">scope</a> property. For example, the following code declares the `fruitsData` property within the scope of a controller. The **dataSource** property of a dxChart is initialized with the value of this property.
 
     <!--JavaScript-->function Controller ($scope) {
         $scope.fruitsData = [
@@ -42,7 +42,7 @@ You can initialize UI component options with the value of a <a href="http://docs
         }"></div>
     </div>
 
-[note]Initializing UI component options in this manner does not mean that the UI component option will be changed once its scope property is changed. If you are looking for this kind of data binding, refer to the [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options') topic.
+[note]Initializing UI component options in this manner does not mean that the UI component property will be changed once its scope property is changed. If you are looking for this kind of data binding, refer to the [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options') topic.
 
 As an alternative, you can declare the whole object of UI component options in the scope and pass it to the UI component directive.
 

@@ -12,7 +12,7 @@ Annotations are containers for images, text blocks, and custom content that disp
 
 ![DevExtreme PieChart: Annotations](/images/ChartJS/annotations/pie-annotations.png)
 
-To create annotations, assign an array of objects to the **annotations[]** option. Each object configures an individual annotation. You can set each annotation's [type]({basewidgetpath}/Configuration/annotations/#type') option to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/annotations/#template) option:
+To create annotations, assign an array of objects to the **annotations[]** option. Each object configures an individual annotation. You can set each annotation's [type]({basewidgetpath}/Configuration/annotations/#type') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/annotations/#template) option:
     
 ---
 ##### jQuery

@@ -140,7 +140,7 @@ Normally, when records are grouped by a column, the groups are sorted according 
 
 ---
 
-To use these summary items for sorting groups, assign an array of objects to the **sortByGroupSummaryInfo** option. In each object of this array, specify the [summaryItem](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/summaryItem.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#summaryItem') field. This field determines the summary item to be used for summary-based sorting. In the following code, three objects form the **sortByGroupSummaryInfo** array. In each object, the **summaryItem** option determines different summary items using different values.
+To use these summary items for sorting groups, assign an array of objects to the **sortByGroupSummaryInfo** option. In each object of this array, specify the [summaryItem](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/summaryItem.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#summaryItem') field. This field determines the summary item to be used for summary-based sorting. In the following code, three objects form the **sortByGroupSummaryInfo** array. In each object, the **summaryItem** property determines different summary items using different values.
 
 ---
 #####jQuery
@@ -244,7 +244,7 @@ To use these summary items for sorting groups, assign an array of objects to the
 
 ---
 
-After that, set the [groupColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/groupColumn.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#groupColumn') option for objects in the **sortByGroupSummaryInfo** array. This option identifies the column that must be used in grouping in order that a particular summary-based sorting setting be applied. If you have omitted this option from an object, the sorting setting specified by this object will be applied regardless of the column used in grouping.
+After that, set the [groupColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/groupColumn.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#groupColumn') property for objects in the **sortByGroupSummaryInfo** array. This property identifies the column that must be used in grouping in order that a particular summary-based sorting setting be applied. If you have omitted this property from an object, the sorting setting specified by this object will be applied regardless of the column used in grouping.
 
 ---
 #####jQuery

@@ -6,7 +6,7 @@ Although regular series points cannot be indicated on a sparkline, certain serie
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineExtremePoints.png)
 
-To make the maximum and minimum series points indicated on a sparkline, set the [showMinMax](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/showMinMax.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#showMinMax') option to **true**.
+To make the maximum and minimum series points indicated on a sparkline, set the [showMinMax](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/showMinMax.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#showMinMax') property to **true**.
 
 	<!--JavaScript-->var sparklineOptions = {
 		showMinMax: true,
@@ -22,6 +22,6 @@ The first and last points are indicated on a sparkline by default. However, if y
 		// ...
 	};
 
-Additionally, you can change the color of these points using the [firstLastColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/firstLastColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#firstLastColor') option. Similarly to the **minColor** and **maxColor** options, this option specifies the color of a bar in *bar* and *win-loss* series, or the color of a series point border in other series.
+Additionally, you can change the color of these points using the [firstLastColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/firstLastColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#firstLastColor') option. Similarly to the **minColor** and **maxColor** options, this property specifies the color of a bar in *bar* and *win-loss* series, or the color of a series point border in other series.
 
 In line- and area-like series, extreme points have several additional settings. You can choose a symbol that will represent extreme points on a sparkline. For this purpose, use the [pointSymbol](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/pointSymbol.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointSymbol') option. Moreover, you can specify the size and color of extreme points using the [pointSize](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/pointSize.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointSize') and [pointColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/pointColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#pointColor') options.

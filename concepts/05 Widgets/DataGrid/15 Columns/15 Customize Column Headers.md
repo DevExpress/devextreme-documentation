@@ -2,7 +2,7 @@ The **DataGrid** generates column headers based on the names of [data fields](/a
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget DataGrid ColumnHeaders](/images/DataGrid/ColumnHeaders.png)
 
-Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#caption') option to change the column header text.
+Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#caption') property to change the column header text.
 
 ---
 ##### jQuery
@@ -90,7 +90,7 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     
 ---
 
-If you need a more specific customization, define a custom template in the **columns**.[headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#headerCellTemplate') option. This option accepts a function or template container. 
+If you need a more specific customization, define a custom template in the **columns**.[headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#headerCellTemplate') option. This property accepts a function or template container. 
 
 ---
 ##### jQuery

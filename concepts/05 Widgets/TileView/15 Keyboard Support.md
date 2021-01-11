@@ -7,7 +7,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
-        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction">direction</a> option is <i>"horizontal"</i>.</td>
+        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction">direction</a> property is <i>"horizontal"</i>.</td>
     </tr>
     <tr>
         <td>&larr;&rarr;&uarr;&darr;</td>

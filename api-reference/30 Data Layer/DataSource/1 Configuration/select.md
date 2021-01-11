@@ -7,7 +7,7 @@ type: Select expression
 Specifies the fields to select from data objects.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **String**        
 A field name to select.

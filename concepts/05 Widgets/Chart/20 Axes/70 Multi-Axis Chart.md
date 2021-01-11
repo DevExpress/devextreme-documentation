@@ -94,7 +94,7 @@ Declare several objects in the [valueAxis](/api-reference/20%20Data%20Visualizat
     ---
 
 2. **Bind series to value axes**        
-Bind each series to a value axis using the [axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/axis.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#axis') option. If the **axis** option is missing from the series configuration, such a series will be bound to the axis declared first in the **valueAxis** array.
+Bind each series to a value axis using the [axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/axis.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#axis') option. If the **axis** property is missing from the series configuration, such a series will be bound to the axis declared first in the **valueAxis** array.
 
     ---
     ##### jQuery

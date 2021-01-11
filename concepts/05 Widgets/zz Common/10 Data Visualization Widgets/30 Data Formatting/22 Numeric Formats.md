@@ -27,7 +27,7 @@ To set a numeric format, use the **format**.[type](/api-reference/50%20Common/Ob
     
 ![DevExpress HTML5 DataVisualizationWidgets Chart Format Precision](/images/ChartJS/Format_Precision.png)
 
-The **format** option also accepts strings. Use this capability as a shortcut for specifying a predefined format.
+The **format** property also accepts strings. Use this capability as a shortcut for specifying a predefined format.
 
     <!--JavaScript-->var widgetOptions = {
         // ...
@@ -36,7 +36,7 @@ The **format** option also accepts strings. Use this capability as a shortcut fo
         }
     };
     
-Alternatively, you can use a native formatter of the Globalize library. In this case, the **format** option accepts an object whose fields are the same as the options passed to the <a href="https://github.com/jquery/globalize/blob/master/doc/api/number/number-formatter.md" target="_blank">numberFormatter</a>.
+Alternatively, you can use a native formatter of the Globalize library. In this case, the **format** property accepts an object whose fields are the same as the options passed to the <a href="https://github.com/jquery/globalize/blob/master/doc/api/number/number-formatter.md" target="_blank">numberFormatter</a>.
 
     <!--JavaScript-->var widgetOptions = {
         // ...
@@ -48,4 +48,4 @@ Alternatively, you can use a native formatter of the Globalize library. In this 
         }
     };
 
-Note that you must not set the **type** option if you use a Globalize formatter. Also, this approach might require additional <a href="https://github.com/jquery/globalize/blob/master/README.md#2-cldr-content" target="_blank">CLDR modules</a> not shipped with the DevExtreme package.
+Note that you must not set the **type** property if you use a Globalize formatter. Also, this approach might require additional <a href="https://github.com/jquery/globalize/blob/master/README.md#2-cldr-content" target="_blank">CLDR modules</a> not shipped with the DevExtreme package.

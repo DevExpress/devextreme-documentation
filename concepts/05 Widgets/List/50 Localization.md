@@ -92,7 +92,7 @@ Some messages can be defined by **List** options as well as keys. The following 
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#nextButtonText">nextButtonText</a></td>
         <td><code>dxList-nextButtonText</code></td>
-        <td>Displayed on the button that loads the next page. Appears only if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pageLoadMode">pageLoadMode</a> option is <i>"nextButton"</i>.</td>
+        <td>Displayed on the button that loads the next page. Appears only if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pageLoadMode">pageLoadMode</a> property is <i>"nextButton"</i>.</td>
     </tr>
 </table>
 

@@ -104,7 +104,7 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
 
 [note]
 
-Do not specify the **onValueChanged** option in this object. If you need to add custom logic to the default value change handler, override the handler in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#onEditorPreparing') function as follows:
+Do not specify the **onValueChanged** property in this object. If you need to add custom logic to the default value change handler, override the handler in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#onEditorPreparing') function as follows:
 
 ---
 ##### jQuery

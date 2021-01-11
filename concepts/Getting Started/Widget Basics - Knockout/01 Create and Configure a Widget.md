@@ -17,7 +17,7 @@ To configure a UI component, add properties to the object passed to the UI compo
 		series: { argumentField: 'fruit', valueField: 'total' }
     }"></div>
 
-You can initialize a UI component option with the value of a <a href="http://knockoutjs.com/documentation/observables.html#mvvm-and-view-models" target="_blank">view model</a> property. For example, the following code declares the `fruitsData` property within a view model. The **dataSource** option of the **Chart** is initialized with the value of this property.
+You can initialize a UI component property with the value of a <a href="http://knockoutjs.com/documentation/observables.html#mvvm-and-view-models" target="_blank">view model</a> property. For example, the following code declares the `fruitsData` property within a view model. The **dataSource** property of the **Chart** is initialized with the value of this property.
 
     <!--JavaScript-->var viewModel = {
 		fruitsData: [

@@ -16,7 +16,7 @@ The following table shows the operations that are performed after saving changes
     <th>Mode</th>
     <th>Data <a href="/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload">reloading</a> </th>
     <th>Data processing operations<sup>1</sup></th>
-    <th>Widget repaint<sup>2</sup></th>
+    <th>UI component repaint<sup>2</sup></th>
  </tr>
   <tr>
     <td>full</td>

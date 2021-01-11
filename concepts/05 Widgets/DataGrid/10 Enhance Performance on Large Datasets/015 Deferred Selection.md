@@ -205,7 +205,7 @@ The following tasks require using different API in deferred mode:
 
     ---
     
-    The **DataGrid** changes the **selectionFilter** option's value internally when a user selects a row. You can use the following code to obtain this option's value and send it to the server:
+    The **DataGrid** changes the **selectionFilter** property's value internally when a user selects a row. You can use the following code to obtain this property's value and send it to the server:
 
     ---
     #####jQuery

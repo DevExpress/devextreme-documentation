@@ -3,7 +3,7 @@ id: DataSource.filter()
 ---
 ---
 ##### shortDescription
-Gets the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') option's value.
+Gets the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') property's value.
 
 ##### return: Object
 A filter expression.

@@ -35,7 +35,7 @@ The following code shows how to use this function with a remote service:
             createChildren: function (parentNode) {
                 var d = $.Deferred();
                 $.get("http://url/to/the/service", {
-                        // Here, 0 is the "rootValue" option's value.
+                        // Here, 0 is the "rootValue" property's value.
                         parentId: parentNode ? JSON.stringify(parentNode.key) : "0" 
                     })
                     .done(function (result) {
@@ -64,7 +64,7 @@ The following code shows how to use this function with a remote service:
         constructor(@Inject(HttpClient) httpClient: HttpClient) { }
         createChildren = (parentNode) => {
             let params: HttpParams = new HttpParams()
-                // Here, 0 is the "rootValue" option's value.
+                // Here, 0 is the "rootValue" property's value.
                 .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0"); 
             return httpClient.get("http://url/to/the/service", {
                     params: params

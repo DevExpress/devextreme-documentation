@@ -227,7 +227,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 
 ---
 
-[note] Setting the **ODataStore**'s **deserializeDates** property to **false** may cause filtering issues in the **Scheduler**. See this option's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
+[note] Setting the **ODataStore**'s **deserializeDates** property to **false** may cause filtering issues in the **Scheduler**. See this property's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
 
 #####See Also#####
 - [Data Layer - What Are Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores')

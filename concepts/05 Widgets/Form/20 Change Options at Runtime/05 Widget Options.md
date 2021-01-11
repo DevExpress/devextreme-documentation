@@ -154,4 +154,4 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/')
 
-[tags]form, UI component options, change option
+[tags]form, UI component options, change property

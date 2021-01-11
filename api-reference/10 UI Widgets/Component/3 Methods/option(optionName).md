@@ -6,10 +6,10 @@ id: Component.option(optionName)
 Gets the value of a single property.
 
 ##### return: any
-This option's value.
+This property's value.
 
 ##### param(optionName): String
-The option's name or full path.
+The property's name or full path.
 
 ---
 #####See Also#####

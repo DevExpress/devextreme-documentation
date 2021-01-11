@@ -6,7 +6,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
 
 <table class="dx-table">
     <tr>
-        <th>Node option</th>
+        <th>Node property</th>
         <th>Value the property should return</th>
         <th>Sample return value</th>
     </tr>
@@ -85,7 +85,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
 
 <table class="dx-table">
     <tr>
-        <th>Edge option</th>
+        <th>Edge property</th>
         <th>Value the property should return</th>
         <th>Sample return value</th>
     </tr>

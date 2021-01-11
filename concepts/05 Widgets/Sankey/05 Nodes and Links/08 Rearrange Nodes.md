@@ -77,7 +77,7 @@ Nodes in a column are separated by a space. You can use the **node**.[padding](/
 
 ---
 
-Each column can be aligned vertically. You can find an example in the [alignment](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/alignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#alignment') option's description.
+Each column can be aligned vertically. You can find an example in the [alignment](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/alignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#alignment') property's description.
 
 #####See Also#####
 - [Colorize Nodes and Links](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/05%20Colorize%20Nodes%20and%20Links.md '/Documentation/Guide/Widgets/Sankey/Nodes_and_Links/Colorize_Nodes_and_Links/')

@@ -1,5 +1,5 @@
 ---
-id: dxForm.itemOption(id, option, value)
+id: dxForm.itemOption(id, property, value)
 ---
 ---
 ##### shortDescription

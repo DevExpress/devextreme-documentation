@@ -98,7 +98,7 @@ The following code adds a simple **ScrollView** to your page. The [width](/api-r
 
 ---
 
-The **ScrollView** employs native scrolling on most platforms, except desktops. To employ it on all platforms without exception, assign **true** to the [useNative](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/useNative.md '/Documentation/ApiReference/UI_Widgets/dxScrollView/Configuration/#useNative') property. Note that if you assign **false** to this option, the **ScrollView** will simulate scrolling on all platforms.
+The **ScrollView** employs native scrolling on most platforms, except desktops. To employ it on all platforms without exception, assign **true** to the [useNative](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/useNative.md '/Documentation/ApiReference/UI_Widgets/dxScrollView/Configuration/#useNative') property. Note that if you assign **false** to this property, the **ScrollView** will simulate scrolling on all platforms.
 
 ---
 

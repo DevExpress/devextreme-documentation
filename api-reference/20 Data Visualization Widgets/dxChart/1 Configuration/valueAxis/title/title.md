@@ -11,7 +11,7 @@ The axis title is a short text displayed alongside the axis. Usually, the axis t
 
 ![DevExtreme HTML5 Charts AxisTitles](/images/ChartJS/visual_elements/axis_titles.png)
 
-If you assign an object to the **title** option, specifying the **text** field of this object is necessary for the axis title to be displayed. Besides the object, the **title** property accepts a string, thus providing a shortcut for setting the axis title. Therefore, this:
+If you assign an object to the **title** property, specifying the **text** field of this object is necessary for the axis title to be displayed. Besides the object, the **title** property accepts a string, thus providing a shortcut for setting the axis title. Therefore, this:
 
     title: 'Axis Title'
 

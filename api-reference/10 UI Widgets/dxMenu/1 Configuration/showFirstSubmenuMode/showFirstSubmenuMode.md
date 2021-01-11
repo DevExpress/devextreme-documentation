@@ -9,7 +9,7 @@ default: { name: 'onClick', delay: { show: 50, hide: 300 } }
 Specifies options for showing and hiding the first level submenu.
 
 ---
-If you assign a string that specifies the mode name to this option, the UI component will use the default delay value.
+If you assign a string that specifies the mode name to this property, the UI component will use the default delay value.
 
     <!--JavaScript-->
     showFirstSubmenuMode: "onHover"

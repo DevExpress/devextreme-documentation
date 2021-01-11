@@ -36,7 +36,7 @@ An end user can scroll the **List** with a swipe gesture and with the scrollbar.
 
 ---
 
-The **List** employs native scrolling on most platforms, except non-Mac desktops and devices based on Android older than version 4. To employ native scrolling on all platforms without exception, assign **true** to the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#useNativeScrolling') property. Note that if you assign **false** to this option, the **List** will simulate scrolling on all platforms.
+The **List** employs native scrolling on most platforms, except non-Mac desktops and devices based on Android older than version 4. To employ native scrolling on all platforms without exception, assign **true** to the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#useNativeScrolling') property. Note that if you assign **false** to this property, the **List** will simulate scrolling on all platforms.
 
 ---
 ##### jQuery

@@ -9,7 +9,7 @@ Selects all rows.
 A Promise that is resolved after all rows are selected. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
 
 ---
-Depending on the value of the [selectAllMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/selectAllMode.md '{basewidgetpath}/Configuration/selection/#selectAllMode') option, this method selects all rows on all pages or on the currently rendered pages only. If a filter is applied, this method selects only those rows that meet the filtering conditions.
+Depending on the value of the [selectAllMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/selectAllMode.md '{basewidgetpath}/Configuration/selection/#selectAllMode') property, this method selects all rows on all pages or on the currently rendered pages only. If a filter is applied, this method selects only those rows that meet the filtering conditions.
 
 #####See Also#####
 #include common-link-callmethods

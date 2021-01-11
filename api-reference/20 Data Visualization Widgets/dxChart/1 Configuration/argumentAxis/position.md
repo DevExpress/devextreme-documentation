@@ -9,7 +9,7 @@ default: 'bottom'
 Relocates the argument axis.
 
 ---
-Depending on the value of the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#rotated') option, **position** accepts different values.
+Depending on the value of the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#rotated') property, **position** accepts different values.
 
 <table class="dx-table">
     <tr>

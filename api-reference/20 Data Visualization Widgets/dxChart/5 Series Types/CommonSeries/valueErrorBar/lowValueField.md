@@ -8,4 +8,4 @@ default: undefined
 Specifies which data field provides low error values.
 
 ---
-[note]If you are using the **lowValueField** option, do not specify the **valueErrorBar**.**type** property.
+[note]If you are using the **lowValueField** property, do not specify the **valueErrorBar**.**type** property.

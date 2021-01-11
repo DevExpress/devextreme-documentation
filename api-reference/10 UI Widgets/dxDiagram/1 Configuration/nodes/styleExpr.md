@@ -13,7 +13,7 @@ The current node's data object.
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"fill: #d9d9d9; stroke: #999999"`. 
 
-If you provide a function for the **styleExpr** option, the function can return style settings as CSS rules presented in JSON format as well.
+If you provide a function for the **styleExpr** property, the function can return style settings as CSS rules presented in JSON format as well.
 
     <!-- tab: index.js -->
     $(function() {

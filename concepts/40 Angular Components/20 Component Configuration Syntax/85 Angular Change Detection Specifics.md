@@ -26,7 +26,7 @@ In the code above, the `getColumns()` function returns an array of objects, but 
 1. The `getColumns()` function returns an array.
 1. The array gets assigned to the `columns` property. This activates change detection.
 1. When comparing the old and new `columns` values, the change detection mechanism calls `getColumns()` again and receives a different array.
-1. The array gets assigned to the `columns` option, and the cycle repeats infinitely.
+1. The array gets assigned to the `columns` property, and the cycle repeats infinitely.
 
 To workaround this behavior, do one of the following:
 

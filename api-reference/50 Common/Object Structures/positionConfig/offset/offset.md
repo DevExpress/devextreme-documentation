@@ -7,7 +7,7 @@ type: String | Object
 Specifies the overlay element's offset from a specified position.
 
 ---
-The offset is specified in pixels. To set this option, use an object with the **x** and **y** fields. These fields specify horizontal and vertical offsets, respectively. Alternatively, you can use a string value that indicates the offsets separated by a whitespace character. A positive offset shifts the element to the right or down; a negative offset shifts it to the left or up.
+The offset is specified in pixels. To set this property, use an object with the **x** and **y** fields. These fields specify horizontal and vertical offsets, respectively. Alternatively, you can use a string value that indicates the offsets separated by a whitespace character. A positive offset shifts the element to the right or down; a negative offset shifts it to the left or up.
 
 In the following code, the overlay element is shifted 50 pixels to the right and 25 pixels up.
 

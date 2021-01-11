@@ -72,7 +72,7 @@ The **Toast** UI component does not need to be created on the page before it can
 
 ---
 
-If you need to specify other **Toast** options, call the same method, but this time [pass an object as the argument](/api-reference/50%20Common/utils/ui/notify(options_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime'). In this object, you can set [any Toast property](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/').
+If you need to specify other **Toast** properties, call the same method, but this time [pass an object as the argument](/api-reference/50%20Common/utils/ui/notify(options_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime'). In this object, you can set [any Toast property](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/').
 
 ---
 ##### jQuery

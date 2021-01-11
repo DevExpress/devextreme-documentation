@@ -7,7 +7,7 @@ type: Object
 An object defining constant line label properties.
 
 ---
-A constant line label shows information on the constant line. Use the **label** object to configure all the constant line labels simultaneously. Within this object you can set font options, a position and text using corresponding fields.
+A constant line label shows information on the constant line. Use the **label** object to configure all the constant line labels simultaneously. Within this object you can set font properties, a position and text using corresponding fields.
 
 To specify styles for the constant line labels of the argument and value axis separately, use the **argumentAxis**.**constantLineStyle**.[label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/constantLineStyle/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/constantLineStyle/label/') or **valueAxis**.**constantLineStyle**.[label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/constantLineStyle/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/constantLineStyle/label/') configuration object correspondingly. Note that the properties that are set within these objects override the corresponding properties that are set within the **commonAxisSettings**.**constantLineStyle**.**label** object.
 

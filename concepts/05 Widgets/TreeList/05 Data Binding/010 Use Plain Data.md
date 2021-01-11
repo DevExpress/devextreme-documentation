@@ -9,7 +9,7 @@ For an example of plain data, see the following code.
         { id: '2', fullName: "Greta Sims", position: "HR Manager" }
     ];
 
-Here, all items have the **id** field, and those items that have a parent include the **parentId** field. **id** and **parentId** are conventional field names. To use other ones, change the [keyExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#keyExpr') and [parentIdExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#parentIdExpr') options, respectively.
+Here, all items have the **id** field, and those items that have a parent include the **parentId** field. **id** and **parentId** are conventional field names. To use other ones, change the [keyExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#keyExpr') and [parentIdExpr](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#parentIdExpr') properties, respectively.
 
 ---
 ##### jQuery

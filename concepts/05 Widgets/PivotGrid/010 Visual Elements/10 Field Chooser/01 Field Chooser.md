@@ -2,7 +2,7 @@ The Field Chooser is a complementary UI component integrated in the pivot grid t
 
 ![DevExtreme PivotGrid FieldChooser](/images/DataGrid/PivotGridFieldChooser.png)
 
-To configure the Field Chooser, use the [fieldChooser](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldChooser '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/fieldChooser/') object. It has a number of options, which can be specified:
+To configure the Field Chooser, use the [fieldChooser](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldChooser '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/fieldChooser/') object. It has a number of properties, which can be specified:
 
 - [enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldChooser/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/fieldChooser/#enabled') &#8212; enables or disables the Field Chooser;
 - [layout](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldChooser/layout.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/fieldChooser/#layout') &#8212; specifies the field chooser layout;

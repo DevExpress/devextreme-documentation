@@ -18,6 +18,6 @@ Configures the vertical crosshair line only.
 * **crosshair**    
 Configures both the crosshair lines.
 
-Options declared in the **horizontalLine** and **verticalLine** objects override the properties declared in the **crosshair** object.
+Properties declared in the **horizontalLine** and **verticalLine** objects override the properties declared in the **crosshair** object.
 
 [note]Instead of an object, you can assign a Boolean value to the **verticalLine** field. This value will control the visibility of the vertical crosshair line.

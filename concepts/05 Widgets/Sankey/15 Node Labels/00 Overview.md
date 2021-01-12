@@ -2,7 +2,7 @@ A label is an element that accompanies a [node](/concepts/05%20Widgets/Sankey/05
 
 ![Sankey - Node Labels](/images/Sankey/visual_elements/node_labels.png)
 
-Options that configure node labels are collected in the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/label/') object. Refer to its description in the API reference and to other articles in this section for information on node label settings.
+Properties that configure node labels are collected in the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/label/') object. Refer to its description in the API reference and to other articles in this section for information on node label settings.
 
 ---
 ##### jQuery

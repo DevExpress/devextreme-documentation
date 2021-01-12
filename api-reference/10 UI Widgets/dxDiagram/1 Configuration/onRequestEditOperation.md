@@ -29,13 +29,8 @@ Model data. Available only if you use Knockout.
 ##### field(e.operation): 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints' | 'beforeChangeShapeText' | 'changeShapeText' | 'beforeChangeConnectorText' | 'changeConnectorText' | 'resizeShape' | 'moveShape'
 The processed operation.
 
-##### field(e.updateUI): Boolean
-Identifies the reason why the event is raised. `true` value indicates that the UI component is updating the UI. You can prohibit an operation to hide the corresponding UI element. 
-`false` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed, and, for instance, to display an error message if a user tries to perform a prohibited action.
-
 ##### field(e.reason): 'checkUIElementAvailability' | 'modelModification'
 Identifies the reason why the event is raised.
-
 
 ---
 If you want to disable a specific operation type for the entire diagram, you can also set an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) property to `false`.

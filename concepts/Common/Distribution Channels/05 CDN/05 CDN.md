@@ -4,26 +4,23 @@ DevExtreme sources are available on cdnjs:
 
     <!-- Diagram and Gantt -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-diagram/cdnjs_version/dx-diagram.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/cdnjs_version/dx-gantt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/cdnjs_version/dx-gantt.min.js"></script>
 
     <!-- DevExtreme Quill (required by the HtmlEditor UI component) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-quill/cdnjs_version/dx-quill.min.js"></script>
 
     <!-- DevExtreme libraries (reference only one of them) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.viz.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.viz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.web.js"></script>
 
     <!-- DevExpress.AspNet.Data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-aspnet-data/cdnjs_version/dx.aspnet.data.min.js"></script>
 
     <!-- Development scripts -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-diagram/cdnjs_version/dx-diagram.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/cdnjs_version/dx-gantt.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/cdnjs_version/dx-gantt.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-quill/cdnjs_version/dx-quill.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.all.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.viz.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.web.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-aspnet-data/cdnjs_version/dx.aspnet.data.js"></script> -->
     
 ## Stylesheets               

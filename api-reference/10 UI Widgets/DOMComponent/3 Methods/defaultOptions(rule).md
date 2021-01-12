@@ -25,7 +25,7 @@ Options to be applied.
     DevExpress.ui.dx{WidgetName}.defaultOptions({ 
         device: { deviceType: "desktop" },
         options: {
-            // Here go the {WidgetName} options
+            // Here go the {WidgetName} properties
         }
     });
 
@@ -39,7 +39,7 @@ Options to be applied.
             {WidgetName}.defaultOptions({
                 device: { deviceType: "desktop" },
                 options: {
-                    // Here go the {WidgetName} options
+                    // Here go the {WidgetName} properties
                 }
             });
         }
@@ -60,7 +60,7 @@ Options to be applied.
     {WidgetName}.defaultOptions({
         device: { deviceType: "desktop" },
         options: {
-            // Here go the {WidgetName} options
+            // Here go the {WidgetName} properties
         }
     });
 
@@ -83,7 +83,7 @@ Options to be applied.
             dx{WidgetName}.defaultOptions({
                 device: { deviceType: "desktop" },
                 options: {
-                    // Here go the {WidgetName} options
+                    // Here go the {WidgetName} properties
                 }
             })
             return (

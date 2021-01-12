@@ -44,7 +44,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
     // ===== or inside the DataSource =====
     var dataSource = new DevExpress.data.DataSource({
         // ...
-        // a mix of CustomStore and DataSource options
+        // a mix of CustomStore and DataSource properties
         // ...
     });
 
@@ -77,7 +77,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
             // ===== or inside the DataSource =====
             this.dataSource = new DataSource({
                 // ...
-                // a mix of CustomStore and DataSource options
+                // a mix of CustomStore and DataSource properties
                 // ...
             });
         }
@@ -107,7 +107,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
             // ===== or inside the DataSource =====
             $scope.dataSource = new DevExpress.data.DataSource({
                 // ...
-                // a mix of CustomStore and DataSource options
+                // a mix of CustomStore and DataSource properties
                 // ...
             });
         });
@@ -135,7 +135,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
         // ===== or inside the DataSource =====
         dataSource: new DevExpress.data.DataSource({
             // ...
-            // a mix of CustomStore and DataSource options
+            // a mix of CustomStore and DataSource properties
             // ...
         })
     };
@@ -168,7 +168,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
     // ===== or inside the DataSource =====
     const dataSource = new DataSource({
         // ...
-        // a mix of CustomStore and DataSource options
+        // a mix of CustomStore and DataSource properties
         // ...
     });
 
@@ -210,7 +210,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
     // ===== or inside the DataSource =====
     const dataSource = new DataSource({
         // ...
-        // a mix of CustomStore and DataSource options
+        // a mix of CustomStore and DataSource properties
         // ...
     });
 

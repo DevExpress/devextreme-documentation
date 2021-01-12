@@ -2,7 +2,7 @@ In form edit mode, row cells become editable form fields. Form fields are sorted
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Editing Form Mode](/images/treelist/editing/form_mode.png)
 
-Configure the form using the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#form') object. The **TreeList** uses the DevExtreme [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') UI component, so you can specify [any Form options](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/') in this object except those listed in its description.
+Configure the form using the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#form') object. The **TreeList** uses the DevExtreme [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') UI component, so you can specify [any Form properties](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/') in this object except those listed in its description.
 
 For example, you can specify the [items](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items') array to reorder editable fields (or "simple items", as they are called in the **Form** UI component), or organize them in groups and tabs.
 

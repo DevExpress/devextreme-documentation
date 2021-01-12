@@ -27,7 +27,7 @@ The name of the [data source field](/api-reference/_hidden/GridBaseColumn/dataFi
 The text displayed in the column header.
 
 * **Service String**    
-A string that matches the following format: *"optionName:value"*, where *optionName* is one of the [column options](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/'). For example, the following string corresponds to the command column: `"type:buttons"`.
+A string that matches the following format: *"optionName:value"*, where *optionName* is one of the [column properties](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/'). For example, the following string corresponds to the command column: `"type:buttons"`.
 
 #####See Also#####
 - [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/')

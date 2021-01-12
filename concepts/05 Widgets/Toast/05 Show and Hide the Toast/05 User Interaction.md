@@ -2,7 +2,7 @@ Because the **Toast** is supposed to notify a user when something happens, it ca
 
 <table class="dx-table">
     <tr>
-        <th>Option</th>
+        <th>Property</th>
         <th>Description</th>
     </tr>
     <tr>

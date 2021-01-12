@@ -1,4 +1,4 @@
-Since people use portable devices to work with **Scheduler**, it should adapt its interface to small screens. To implement this behavior, set the [adaptivityEnabled](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#adaptivityEnabled) property to **true**. 
+The **Scheduler** can adapt its interface to small screens. To enable this behavior, set the [adaptivityEnabled](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#adaptivityEnabled) property to **true**. A full list of adaptations is given in the [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/) demo description.
 
 ---
 ##### jQuery
@@ -25,19 +25,16 @@ Since people use portable devices to work with **Scheduler**, it should adapt it
         <DxScheduler ...
             :adaptivity-enabled="true">
         </DxScheduler>
-    </template> 
-
-    // ...
+    </template>
+    
+    <script> 
+        // ...
+    </script> 
 
 ##### React 
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { Scheduler, Resource, Editing } from 'devextreme-react/scheduler';
-
+    // ...
     function App() {
         return (
             <div className="App">
@@ -52,7 +49,7 @@ Since people use portable devices to work with **Scheduler**, it should adapt it
 
 ---
 
-You have now configured the basic **Scheduler** features. For more details on this UI component, explore the following resources:
+For further information on the **Scheduler** component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 

@@ -1,6 +1,6 @@
-**Scheduler** displays all appointments in the client time zone. To change this default behavior, you can specify a different time zone in the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) property. It accepts values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA database</a>. In this tutorial, the 'Europe/Berlin' time zone is used.
+The **Scheduler** displays all appointments in the client time zone. To change this default behavior, specify a different time zone in the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) property. It accepts values from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA database</a>. In this tutorial, the "Europe/Berlin" time zone is used.
 
-Additionally, we will allow users to edit time zones of individual appointments. For this, enable the **editing**.[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) property.
+Users can edit the time zones of individual appointments. To enable this functionality, set the **editing**.[allowTimeZoneEditing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing) option to **true**.
 
 ---
 ##### jQuery
@@ -24,8 +24,8 @@ Additionally, we will allow users to edit time zones of individual appointments.
         timeZone="Europe/Berlin">
         <!-- ... -->
         <dxo-editing ...
-            [allowTimeZoneEditing]="true"
-        ></dxo-editing>
+            [allowTimeZoneEditing]="true">
+        </dxo-editing>
     </dx-scheduler> 
 
 ##### Vue 
@@ -33,7 +33,7 @@ Additionally, we will allow users to edit time zones of individual appointments.
     <!-- tab: App.vue -->
     <template> 
         <DxScheduler ...
-            timeZone="Europe/Berlin">
+            time-zone="Europe/Berlin">
             <!-- ... -->
             <DxEditing ...
                 :allow-editing-time-zones="true"
@@ -48,12 +48,7 @@ Additionally, we will allow users to edit time zones of individual appointments.
 ##### React 
 
     <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { Scheduler, Resource, Editing } from 'devextreme-react/scheduler';
-
+    // ...
     function App() {
         return (
             <div className="App">

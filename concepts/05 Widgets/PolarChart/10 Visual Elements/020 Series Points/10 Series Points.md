@@ -29,10 +29,10 @@ You can change the point's shape, color and size, using the [symbol](/api-refere
 * **Border**		
 Make a border visible by setting the **visible** property of the point's [border](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/border '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/point/border/') object. In addition, you can change the border width and color, using the border's **width** and **color** properties.
 
-* **Hover Options**		
+* **Hover Properties**		
 Set a custom color, size and border settings for the "hovered" point state. For this purpose, define the [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/hoverStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/point/hoverStyle/') object within the **point** configuration object.
 
-* **Selection Options**		
+* **Selection Properties**		
 Set a custom color, size and border settings for the "selected" point state. For this purpose, define the [selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/point/selectionStyle/') object within the **point** configuration object.
 
 Series points (regardless of how they are represented) can be accompanied with textual labels. Refer to the [Series Point Labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/030%20Series%20Point%20Labels.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series_Point_Labels') topic for details.

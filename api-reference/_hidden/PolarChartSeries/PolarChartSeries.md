@@ -6,6 +6,6 @@ inlineType:
 ---
 ---
 ##### shortDescription
-Specifies options for PolarChart UI component series.
+Specifies properties for PolarChart UI component series.
 
 ---

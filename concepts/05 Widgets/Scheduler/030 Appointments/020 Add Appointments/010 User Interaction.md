@@ -10,7 +10,7 @@ To add an appointment, a user follows the steps listed below.
     </video>
 </div>
 
-To prevent an end user from adding an appointment, set the **editing**.[allowAdding](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowAdding') option to **false**.
+To prevent an end user from adding an appointment, set the **editing**.[allowAdding](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowAdding') property to **false**.
 
 ---
 

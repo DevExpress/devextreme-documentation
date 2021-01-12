@@ -9,7 +9,7 @@ An array of columns in the **Gantt**.
 
 ---
 
-The **columns** option accepts an array of columns. To configure a column, use a **dxTreeListColumn** object or specify a data source field (as a string value) to which the column is bound.
+The **columns** property accepts an array of columns. To configure a column, use a **dxTreeListColumn** object or specify a data source field (as a string value) to which the column is bound.
 
 [note] The **Gantt** UI component does not support data sorting.
 

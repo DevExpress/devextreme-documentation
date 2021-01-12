@@ -139,7 +139,7 @@ In the following image, the middle column's **shrink** value is more than the ot
 
 ![DevExtreme ResponsiveBox: The middle column and the bottom row shrink more than the other columns and rows](/images/UiWidgets/ResponsiveBox/responsivebox-shrink-unevenly.png)
 
-The collections of rows and columns may differ depending on the screen's [size qualifier](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/Widgets/ResponsiveBox/Size_Qualifiers/'). You can use the **screen** option to specify on which screen types an individual row or column should appear.
+The collections of rows and columns may differ depending on the screen's [size qualifier](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/Widgets/ResponsiveBox/Size_Qualifiers/'). You can use the **screen** property to specify on which screen types an individual row or column should appear.
 
 ---
 

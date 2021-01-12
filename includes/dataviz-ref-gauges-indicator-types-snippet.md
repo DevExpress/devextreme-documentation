@@ -7,7 +7,7 @@
             value: 40,
             valueIndicator: { // or subvalueIndicator
                 type: "${{indicatorTypeCamelCase}}",
-                // The rest of the indicator options go here
+                // The rest of the indicator properties go here
             }
         });
     });
@@ -18,7 +18,7 @@
     <dx-{widget-name} [value]="40">
         <dxo-value-indicator <!-- or dxo-subvalue-indicator -->
             type="${{indicatorTypeCamelCase}}"          
-            <!-- The rest of the indicator options go here -->
+            <!-- The rest of the indicator properties go here -->
         ></dxo-value-indicator>
     <dx-{widget-name}>
 
@@ -43,7 +43,7 @@
         <Dx{WidgetName} :value="40">
             <DxValueIndicator <!-- or DxSubvalueIndicator -->
                 type="${{indicatorTypeCamelCase}}"
-                <!-- The rest of the indicator options go here -->
+                <!-- The rest of the indicator properties go here -->
             /> 
         </Dx{WidgetName}>
     </template>
@@ -76,7 +76,7 @@
                 <{WidgetName} value={40}>
                     <ValueIndicator {/* or SubvalueIndicator */}                        
                         type="${{indicatorTypeCamelCase}}"
-                        {/* The rest of the indicator options go here */}
+                        {/* The rest of the indicator properties go here */}
                     />
                 </{WidgetName}>
             );
@@ -92,7 +92,7 @@
         .Value(40)
         .ValueIndicator(vi => vi // or .SubvalueIndicator
             .Type(GaugeIndicatorType.${{indicatorTypePascalCase}})
-            // The rest of the indicator options go here
+            // The rest of the indicator properties go here
         )
     )
 

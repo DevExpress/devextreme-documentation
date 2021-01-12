@@ -1,4 +1,4 @@
-If the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode') is *"instantly"* or *"useButtons"*, you can add parameters to the URL by modifying the [uploadUrl](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadUrl') option. For example, the following code adds an employee ID and an office number:
+If the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode') is *"instantly"* or *"useButtons"*, you can add parameters to the URL by modifying the [uploadUrl](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadUrl') property. For example, the following code adds an employee ID and an office number:
 
 ---
 #####jQuery
@@ -128,7 +128,7 @@ If the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configur
 
 ---
 
-When the **uploadMode** is *"useForm"*, define the parameters within hidden inputs. They are sent to the server in an HTML form along with the files. Some DevExtreme UI components have underlying hidden inputs too. Use the UI component's **name** option to specify the input's `name` attribute. 
+When the **uploadMode** is *"useForm"*, define the parameters within hidden inputs. They are sent to the server in an HTML form along with the files. Some DevExtreme UI components have underlying hidden inputs too. Use the UI component's **name** property to specify the input's `name` attribute. 
 
 ---
 #####jQuery

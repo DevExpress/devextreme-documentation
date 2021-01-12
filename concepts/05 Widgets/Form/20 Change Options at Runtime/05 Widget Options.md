@@ -20,7 +20,7 @@ To change the [Form configuration](/api-reference/10%20UI%20Widgets/dxForm/1%20C
         });
     });
 
-With Angular, Vue, or React, bind the option that should be changed to a component property.
+With Angular, Vue, or React, bind the property that should be changed to a component property.
 
 ---
 
@@ -154,4 +154,4 @@ With Angular, Vue, or React, bind the option that should be changed to a compone
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/')
 
-[tags]form, UI component options, change option
+[tags]form, UI component properties, change property

@@ -12,7 +12,7 @@ Specifies series elements to be highlighted when a user pauses on a series point
 dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeriesTypes.FullStackedLineSeries,dxChartSeriesTypes.StackedSplineSeries,dxChartSeriesTypes.FullStackedSplineSeries,dxChartSeriesTypes.SplineSeries,dxChartSeriesTypes.StepLineSeries,dxChartSeriesTypes.AreaSeries,dxChartSeriesTypes.StackedAreaSeries,dxChartSeriesTypes.FullStackedAreaSeries,dxChartSeriesTypes.StackedSplineAreaSeries,dxChartSeriesTypes.FullStackedSplineAreaSeries,dxChartSeriesTypes.SplineAreaSeries,dxChartSeriesTypes.StepAreaSeries,dxChartSeriesTypes.RangeAreaSeries,dxChartSeriesTypes.ScatterSeries
 
 ---
-When a user pauses on a series point, this and other series points may react in one of the following ways depending on the value of the **hoverMode** option.
+When a user pauses on a series point, this and other series points may react in one of the following ways depending on the value of the **hoverMode** property.
 
 * **onlyPoint**   
 Only the point that a user pauses on changes its style.

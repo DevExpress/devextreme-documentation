@@ -8,7 +8,7 @@ default: 5
 Generates a pixel-measured empty space between the top/bottom border of a strip and the strip label.
 
 ---
-This option depends on the **label**.**verticalAlignment** in the following way.
+This property depends on the **label**.**verticalAlignment** in the following way.
 
 - **verticalAlignment** is *"top"* &rarr; padding applies to the top border of a strip;       
 - **verticalAlignment** is *"bottom"* &rarr; padding applies to the bottom border of a strip;      

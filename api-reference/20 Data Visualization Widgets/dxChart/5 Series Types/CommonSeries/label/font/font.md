@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for point labels.
+Specifies font properties for point labels.
 
 ---

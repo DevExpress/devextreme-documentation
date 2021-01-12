@@ -8,7 +8,7 @@ default: null
 Specifies the name of a data source item field or an expression whose value is compared to the search criterion.
 
 ---
-In most cases, you should pass the name of a field by whose value data items are searched. If you need to search elements by several field values, assign an array of field names to this option.
+In most cases, you should pass the name of a field by whose value data items are searched. If you need to search elements by several field values, assign an array of field names to this property.
 
     <!--JavaScript-->
     searchExpr: ["firstName", "lastName"]

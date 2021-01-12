@@ -9,7 +9,7 @@ default: 'push'
 Specifies how to highlight the item's drop position.
 
 ---
-This option accepts the following values:
+This property accepts the following values:
 
 - *"push"*    
   Items move apart with animation, allowing room for the dragged item to be placed. To use this mode, ensure that the [allowDropInsideItem](/api-reference/10%20UI%20Widgets/dxSortable/1%20Configuration/allowDropInsideItem.md '/Documentation/ApiReference/UI_Widgets/dxSortable/Configuration/#allowDropInsideItem') is disabled.

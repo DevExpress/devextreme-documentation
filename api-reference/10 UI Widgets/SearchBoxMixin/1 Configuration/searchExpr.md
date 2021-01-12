@@ -8,6 +8,6 @@ default: null
 Specifies a data object's field name or an expression whose value is compared to the search string.
 
 ---
-If you need to search several fields, assign an array of field names to this option.
+If you need to search several fields, assign an array of field names to this property.
 
     searchExpr: ["firstName", "lastName"]

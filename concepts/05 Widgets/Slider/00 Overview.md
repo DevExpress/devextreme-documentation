@@ -4,7 +4,7 @@ The **Slider** is a UI component that allows an end user to set a numeric value 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview/"
 }
 
-The following code adds a simple **Slider** to your page. The **min** and **max** options limit the range of accepted values. The **value** sets the initial value for the UI component.
+The following code adds a simple **Slider** to your page. The **min** and **max** properties limit the range of accepted values. The **value** sets the initial value for the UI component.
 
 ---
 ##### jQuery
@@ -117,7 +117,7 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
 
 ---
 
-In addition, you can specify the step of **Slider** values using the [step](/api-reference/10%20UI%20Widgets/dxSliderBase/1%20Configuration/step.md '/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#step') option.
+In addition, you can specify the step of **Slider** values using the [step](/api-reference/10%20UI%20Widgets/dxSliderBase/1%20Configuration/step.md '/Documentation/ApiReference/UI_Widgets/dxSlider/Configuration/#step') property.
 
 ---
 ##### jQuery

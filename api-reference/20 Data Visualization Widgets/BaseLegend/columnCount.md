@@ -8,7 +8,7 @@ default: 0
 Arranges legend items into several columns.
 
 ---
-Use this option when the legend is [oriented vertically](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/orientation.md '{basewidgetpath}/Configuration/legend/#orientation'). Otherwise, use [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '{basewidgetpath}/Configuration/legend/#rowCount').
+Use this property when the legend is [oriented vertically](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/orientation.md '{basewidgetpath}/Configuration/legend/#orientation'). Otherwise, use [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '{basewidgetpath}/Configuration/legend/#rowCount').
 
 #####See Also#####
 - **legend**.[columnItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnItemSpacing.md '{basewidgetpath}/Configuration/legend/#columnItemSpacing')

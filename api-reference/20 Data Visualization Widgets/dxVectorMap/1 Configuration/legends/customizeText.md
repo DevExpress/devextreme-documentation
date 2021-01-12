@@ -29,4 +29,4 @@ The start value of the group indicated by the legend item.
 The text for the legend item to display.
 
 ---
-This option accepts a function that returns the text for a legend item. When implementing this function, you can access useful data on the legend item using the function's argument.
+This property accepts a function that returns the text for a legend item. When implementing this function, you can access useful data on the legend item using the function's argument.

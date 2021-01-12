@@ -6,7 +6,7 @@ The **agenda** view lists all available appointments grouped by date. This view 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/"
 }
 
-By default, the **agenda** view displays appointments for seven dates at a time from the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate') onward. To change the number of dates, specify the [agendaDuration](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/agendaDuration.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#agendaDuration') option. For details on individual views customization, see [this topic](/concepts/05%20Widgets/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/Widgets/Scheduler/Views/Customize_Individual_Views/').
+By default, the **agenda** view displays appointments for seven dates at a time from the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate') onward. To change the number of dates, specify the [agendaDuration](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/agendaDuration.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#agendaDuration') property. For details on individual views customization, see [this topic](/concepts/05%20Widgets/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/Widgets/Scheduler/Views/Customize_Individual_Views/').
 
 ---
 

@@ -8,7 +8,7 @@ default: undefined
 Formats the point value before it will be displayed in the point label.
 
 ---
-This option accepts an object whose fields are described in the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section. However, there is one more field, called **percentPrecision**, which is available only to full-stacked-like series, where one point always has an absolute and a percentage value. The **percentPrecision** field specifies how many digits after the decimal point to save in the percentage value. See an example in the following code.
+This property accepts an object whose fields are described in the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section. However, there is one more field, called **percentPrecision**, which is available only to full-stacked-like series, where one point always has an absolute and a percentage value. The **percentPrecision** field specifies how many digits after the decimal point to save in the percentage value. See an example in the following code.
 
     format: {
         type: "fixedPoint", // the format of absolute values

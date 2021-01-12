@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the options of the grid summary.
+Specifies the properties of the grid summary.
 
 ---
 A summary is a grid feature that provides a synopsis of data contained in the grid. A summary consists of several items. A summary item displays a value that is a product of applying an aggregate function to the data of a specific column.

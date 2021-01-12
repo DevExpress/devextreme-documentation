@@ -4,7 +4,7 @@ The **ContextMenu** UI component displays a single- or multi-level context menu.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ContextMenu/Basics/"
 }
 
-The following code adds the **ContextMenu** UI component to your page and binds it to an image using the [target](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#target') option. Note that the data source of the UI component declares several nesting levels. Items in the resulting context menu mirror this structure.
+The following code adds the **ContextMenu** UI component to your page and binds it to an image using the [target](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#target') property. Note that the data source of the UI component declares several nesting levels. Items in the resulting context menu mirror this structure.
 
 ---
 

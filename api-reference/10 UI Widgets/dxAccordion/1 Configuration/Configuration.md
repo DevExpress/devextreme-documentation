@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Accordion** UI component.
+An object defining configuration properties for the **Accordion** UI component.
 
 ---
 #####See Also#####

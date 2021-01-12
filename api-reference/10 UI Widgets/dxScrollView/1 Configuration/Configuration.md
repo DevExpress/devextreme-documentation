@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **ScrollView** UI component.
+An object defining configuration properties for the **ScrollView** UI component.
 
 ---
 #####See Also#####

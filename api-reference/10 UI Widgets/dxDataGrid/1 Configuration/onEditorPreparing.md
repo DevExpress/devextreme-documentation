@@ -28,7 +28,7 @@ Indicates whether the editor is disabled.
 
 ##### field(e.editorName): String
 Allows you to change the editor. Accepts names of DevExtreme UI components only, for example, *"dxTextBox"*.      
-Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType') option specified in the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object has precedence over this parameter.
+Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType') property specified in the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object has precedence over this parameter.
 
 ##### field(e.editorOptions): Object
 Gets and sets the editor's configuration. [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorOptions') specified in the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object have precedence over this parameter.
@@ -41,7 +41,7 @@ Model data. Available only if you use Knockout.
 
 ##### field(e.parentType): String
 The editor's location. One of *"dataRow"*, *"filterRow"*, *"headerRow"* or *"searchPanel"*.      
-Options passed to the function depend on this value.
+Properties passed to the function depend on this value.
 
 ##### field(e.readOnly): Boolean
 Indicates whether the editor is read-only.
@@ -250,7 +250,7 @@ Use this function to:
 - Customize editors used in the [search panel](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/'), [filter row](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/'), and [selection column](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Command_Columns/').        
 Use the **parentType** function parameter to check if the editor being customized belongs to one of these UI elements.
 
-- [Dynamically change editor options in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/Widgets/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
+- [Dynamically change editor properties in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/Widgets/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
 
 - Implement other customization cases.
 

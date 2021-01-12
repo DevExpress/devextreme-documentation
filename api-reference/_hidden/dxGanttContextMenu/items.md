@@ -10,7 +10,7 @@ Configures context menu item settings.
 
 ---
 
-The context menu contains a set of default commands: **'addTask'**, **'taskDetails'**, and **'deleteTask'**. Use the [contextMenu](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu) option to recreate the context menu items.
+The context menu contains a set of default commands: **'addTask'**, **'taskDetails'**, and **'deleteTask'**. Use the [contextMenu](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu) property to recreate the context menu items.
 
 ![DevExtreme Gantt - Default Context Menu](/images/Gantt/context-menu-default-items.png)
 

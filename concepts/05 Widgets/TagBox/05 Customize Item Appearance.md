@@ -283,7 +283,7 @@ You can also customize an individual item in the drop-down list. For this purpos
         // ...
     ];
 
-Using similar techniques, you can also customize tags of the selected items. The template for them should be assigned to the [tagTemplate](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/tagTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#tagTemplate') option. 
+Using similar techniques, you can also customize tags of the selected items. The template for them should be assigned to the [tagTemplate](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/tagTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#tagTemplate') property. 
 
 ---
 ##### jQuery

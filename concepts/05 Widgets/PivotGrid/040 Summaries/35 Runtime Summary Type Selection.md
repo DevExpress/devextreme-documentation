@@ -40,7 +40,7 @@ Frequently, the user requires changing the summary type at runtime. Although thi
 
 [note]Applying the *"custom"* summary type demands implementing the [calculateCustomSummary](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/calculateCustomSummary.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#calculateCustomSummary') callback function.
 
-Altering certain parts of this code, you can enable the user to perform a wide range of actions using the context menu. For example, to allow the user to change the [summaryDisplayMode](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryDisplayMode.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryDisplayMode') option at runtime, slightly modify the click handler and the array of items.
+Altering certain parts of this code, you can enable the user to perform a wide range of actions using the context menu. For example, to allow the user to change the [summaryDisplayMode](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryDisplayMode.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryDisplayMode') property at runtime, slightly modify the click handler and the array of items.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

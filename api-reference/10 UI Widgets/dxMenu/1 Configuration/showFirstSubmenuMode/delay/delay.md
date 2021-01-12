@@ -8,7 +8,7 @@ default: { show: 50, hide: 300 }
 Specifies the delay in submenu showing and hiding.
 
 ---
-Passing a number to this option is the same as passing an object whose **show** and **hide** fields hold equal values. For example, the following ways to specify the delay are identical.
+Passing a number to this property is the same as passing an object whose **show** and **hide** fields hold equal values. For example, the following ways to specify the delay are identical.
 
     <!--JavaScript-->
     //number

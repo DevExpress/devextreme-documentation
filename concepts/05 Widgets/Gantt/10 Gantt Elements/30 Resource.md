@@ -5,7 +5,7 @@ Resources and resource assignments are optional in the **Gantt** UI component.
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources') option to specify whether the **Gantt** UI component hides resources or displays them as task labels.
+Use the [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#showResources') property to specify whether the **Gantt** UI component hides resources or displays them as task labels.
 
     $(function() {
         $("#gantt").dxGantt({

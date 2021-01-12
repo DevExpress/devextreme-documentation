@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **NavBar** UI component.
+An object defining configuration properties for the **NavBar** UI component.
 
 ---
 #####See Also#####

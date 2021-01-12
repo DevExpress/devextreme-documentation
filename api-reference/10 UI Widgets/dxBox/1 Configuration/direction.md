@@ -9,7 +9,7 @@ default: 'row'
 Specifies the direction of item positioning in the UI component.
 
 ---
-If the option value is *"row"*, items are located side by side. If the value is *"col"*, items are located one under another.
+If the property value is *"row"*, items are located side by side. If the value is *"col"*, items are located one under another.
 
 #include common-ref-enum with {
     enum: "`BoxDirection`",

@@ -8,4 +8,4 @@ default: 0.4
 Specifies the transparency of a tooltip's shadow.
 
 ---
-This option accepts a value from 0 to 1, where 0 makes the shadow completely transparent, and 1 makes it opaque.
+This property accepts a value from 0 to 1, where 0 makes the shadow completely transparent, and 1 makes it opaque.

@@ -8,7 +8,7 @@ default: 10
 Generates a pixel-measured empty space between the top/bottom side of a constant line and the constant line label.
 
 ---
-This option depends on the **label**.**verticalAlignment** in the following way.
+This property depends on the **label**.**verticalAlignment** in the following way.
 
 - **verticalAlignment** is *"top"* &rarr; padding applies to the top side of a constant line;       
 - **verticalAlignment** is *"bottom"* &rarr; padding applies to the bottom side of a constant line;      

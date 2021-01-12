@@ -1,4 +1,4 @@
-To add routes at design-time, pass an array of objects to the [routes](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/routes/') option. A route requires only its [locations](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/routes/locations '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/routes/locations/') to be specified. The locations will be connected and make up the route.
+To add routes at design-time, pass an array of objects to the [routes](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/routes/') property. A route requires only its [locations](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/routes/locations '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/routes/locations/') to be specified. The locations will be connected and make up the route.
 
 ---
 ##### jQuery
@@ -151,7 +151,7 @@ To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-refe
     // Removes the routes with indexes 0 and 2 in the "routes" array
     map.removeRoute([0, 2]);
 
-With Angular, Vue, or React, use a different technique. Bind the **routes** option of the **Map** UI component to a component property. 
+With Angular, Vue, or React, use a different technique. Bind the **routes** property of the **Map** UI component to a component property. 
 
 ---
 ##### Angular

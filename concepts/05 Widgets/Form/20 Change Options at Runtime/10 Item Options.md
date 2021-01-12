@@ -32,7 +32,7 @@ Being called with the *field* parameter only, this method returns the current co
     $(function() {
         // ...
         $("#buttonContainer").dxButton({
-            text: 'Change the Phone Options',
+            text: 'Change the Phone Properties',
             onClick: function () {
                 form.itemOption("Contacts.phone", {
                     isRequired: true, 

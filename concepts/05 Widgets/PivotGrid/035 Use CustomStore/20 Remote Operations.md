@@ -1,4 +1,4 @@
-Remote operations help to improve the **PivotGrid** performance when the amount of data is large. To enable remote operations, set the [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') option of the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') object to _true_. 
+Remote operations help to improve the **PivotGrid** performance when the amount of data is large. To enable remote operations, set the [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') property of the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') object to _true_. 
 
     <!--JavaScript-->
     var pivotGridDataSource = {
@@ -33,7 +33,7 @@ The example below shows how to implement the **load** function. Note that in thi
                     $.getJSON('http://mydomain.com/MyDataService', {
                         // Passing settings to the server
                         
-                        // Pass if the remoteOperations option is set to true
+                        // Pass if the remoteOperations property is set to true
                         take: loadOptions.take,
                         skip: loadOptions.skip,
                         group: loadOptions.group ? JSON.stringify(loadOptions.group) : "",

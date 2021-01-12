@@ -140,7 +140,7 @@ The following example shows how to display column value only:
     import React from 'react';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    const GroupCell = options => <div>{options.value}</div>;
+    const GroupCell = properties => <div>{options.value}</div>;
 
     export default function App() {
         // ...

@@ -12,4 +12,4 @@ The legend is a component that helps a user identify bars. The legend contains s
 
 ![DevExtreme BarGauge: Legend](/images/bargauge/visual-elements/legend.png)
 
-You can make the legend visible by setting the **legend**.**visible** option to **true**.
+You can make the legend visible by setting the **legend**.**visible** property to **true**.

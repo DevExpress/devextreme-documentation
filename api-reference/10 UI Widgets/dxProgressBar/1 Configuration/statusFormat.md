@@ -17,7 +17,7 @@ The UI component's value.
 The customized progress status string.
 
 ---
-A function passed to this option should take on a numeric value and return a formatted value. For instance, you can add a "%" sign after a value. In this case, the function passed to the **statusFormat** option should look like the following.
+A function passed to this property should take on a numeric value and return a formatted value. For instance, you can add a "%" sign after a value. In this case, the function passed to the **statusFormat** property should look like the following.
 
     <!--JavaScript-->
     function(ratio, value) {

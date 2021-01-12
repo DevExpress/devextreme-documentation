@@ -8,7 +8,7 @@ DevExtreme supplies a jQuery plugin for each UI component. To create, for exampl
 		$("#buttonContainer").dxButton();
 	});
 
-To configure a UI component, pass an object to the plugin as shown in the following code. Properties of this object mirror the options of the UI component.
+To configure a UI component, pass an object to the plugin as shown in the following code. Properties of this object mirror the properties of the UI component.
 
     <!--JavaScript-->$(function () {
         $("#buttonContainer").dxButton({

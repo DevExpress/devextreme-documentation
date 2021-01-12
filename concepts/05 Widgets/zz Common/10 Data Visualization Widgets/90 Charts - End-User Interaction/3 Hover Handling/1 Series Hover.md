@@ -32,9 +32,9 @@ or for an individual series:
         }]
 	};
 
-To choose which series elements to highlight when the series is hovered over, specify the **hoverMode** option. Like the hover style, this option can be specified for all, type-specific or an individual series. There are several hover modes in the chart widgets. Available modes depend on the [series type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') you use.
+To choose which series elements to highlight when the series is hovered over, specify the **hoverMode** property. Like the hover style, this property can be specified for all, type-specific or an individual series. There are several hover modes in the chart widgets. Available modes depend on the [series type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') you use.
 
-To handle the series hover event, assign a function to the [onSeriesHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/onSeriesHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onSeriesHoverChanged') option of the chart.
+To handle the series hover event, assign a function to the [onSeriesHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/onSeriesHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onSeriesHoverChanged') property of the chart.
 
 	<!--JavaScript-->var chartOptions = {
 		onSeriesHoverChanged: function (info) {

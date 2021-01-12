@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the options for the map background.
+Specifies the properties for the map background.
 
 ---
 The map background is a space on a map that does not contain areas. Within the **background** configuration object you can specify colors for the map background and its border.

@@ -8,6 +8,6 @@ default: 10
 Generates an empty space, measured in pixels, around the legend.
 
 ---
-When set to a number, this option applies to all the legend's sides. The object allows you to control each side individually.
+When set to a number, this property applies to all the legend's sides. The object allows you to control each side individually.
 
 ![DevExtreme Legend Margins](/images/ChartJS/LegendMargin.png)

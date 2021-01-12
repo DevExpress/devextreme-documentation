@@ -3,7 +3,7 @@ id: DataSource.select(expr)
 ---
 ---
 ##### shortDescription
-Sets the [select](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/select.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select') option's value.
+Sets the [select](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/select.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select') property's value.
 
 ##### param(expr): any
 A select expression.

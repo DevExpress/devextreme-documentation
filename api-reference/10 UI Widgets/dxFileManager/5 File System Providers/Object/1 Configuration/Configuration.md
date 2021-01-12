@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes options that configure the **Object** file system provider.
+This section describes properties that configure the **Object** file system provider.
 
 ---

@@ -2,7 +2,7 @@ One common pitfall that occurs during communication with remote web services fro
 
 To consume a web service from JavaScript, the web service has to support the <a href="http://www.w3.org/TR/cors/" target="_blank">Cross-Origin Resource Sharing</a> feature, also known as **CORS**.
 
-For read-only access, instead of CORS, a web service may support the JSONP (JSON with padding) technique. Built-in DevExtreme, Data Store classes support JSONP. For example, to connect to an OData service with JSONP support, use the **jsonp** configuration option.
+For read-only access, instead of CORS, a web service may support the JSONP (JSON with padding) technique. Built-in DevExtreme, Data Store classes support JSONP. For example, to connect to an OData service with JSONP support, use the **jsonp** configuration property.
 
     <!--JavaScript-->
     var store = new DevExpress.data.ODataStore({

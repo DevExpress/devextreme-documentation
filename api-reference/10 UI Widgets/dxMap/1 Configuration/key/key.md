@@ -123,4 +123,4 @@ A key used to authenticate the application within the required map provider.
 
 ---
 
-[note] The value of this option cannot be changed dynamically.
+[note] The value of this property cannot be changed dynamically.

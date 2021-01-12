@@ -123,4 +123,4 @@ If you have more than one map provider in your application, specify the keys in 
 
 ---
 
-[note] The value of this option cannot be changed dynamically.
+[note] The value of this property cannot be changed dynamically.

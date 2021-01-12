@@ -2,7 +2,7 @@ The **CircularGauge** can be displayed with a title and a subtitle. These elemen
 
 <img src="/images/ChartJS/CircularGaugeTitleSubtitle.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeTitleSubtitle" style="display:block; margin:0 auto" />
 
-To specify a gauge title and subtitle, use the [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/') and its nested [subtitle](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/subtitle/') options. Both these options accept either a string with the title/subtitle text:
+To specify a gauge title and subtitle, use the [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/') and its nested [subtitle](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/subtitle/') properties. Both these properties accept either a string with the title/subtitle text:
 
     <!--JavaScript-->var gaugeOptions = {
         title: {
@@ -11,7 +11,7 @@ To specify a gauge title and subtitle, use the [title](/api-reference/20%20Data%
 		}
     };
 
-...or an object that configures more title/subtitle options.
+...or an object that configures more title/subtitle properties.
 
 	<!--JavaScript-->var gaugeOptions = {
 		title: {
@@ -30,10 +30,10 @@ To specify a gauge title and subtitle, use the [title](/api-reference/20%20Data%
 		}
     };
 
-Several title options that can be set within the **title** and **subtitle** objects are categorized and listed below.
+Several title properties that can be set within the **title** and **subtitle** objects are categorized and listed below.
 
 * **Location**    
-You can place a title on any side of your gauge. For this purpose, use the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/#horizontalAlignment') and [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/#verticalAlignment') options. Note that if these options are specified, the subtitle will be displayed at the same position as the title.
+You can place a title on any side of your gauge. For this purpose, use the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/#horizontalAlignment') and [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/#verticalAlignment') properties. Note that if these properties are specified, the subtitle will be displayed at the same position as the title.
 
 * **Font Settings**    
-To customize the appearance of the text, define the font options within the [font](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/font '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/font/') configuration object.
+To customize the appearance of the text, define the font properties within the [font](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/font '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/title/font/') configuration object.

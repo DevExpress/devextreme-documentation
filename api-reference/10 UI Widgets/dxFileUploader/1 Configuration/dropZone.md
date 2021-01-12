@@ -13,7 +13,7 @@ Specifies the HTML element in which users can drag and drop files for upload.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"
 }
 
-You can use a selector string, jQuery object or DOM element to specify the **dropZone** option:
+You can use a selector string, jQuery object or DOM element to specify the **dropZone** property:
 
 - String
 
@@ -50,7 +50,7 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 }
 
 [note]
-A custom drop zone (**dropZone** option) is not supported in **useForm** [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode).
+A custom drop zone (**dropZone** property) is not supported in **useForm** [upload modes](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode).
 
 #####See Also#####
 - [onDropZoneEnter](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#onDropZoneEnter)

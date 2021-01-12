@@ -1,7 +1,7 @@
 The following code example shows how to declare a UI component configuration object using TypeScript.
 
     window.onload = () => {
-        var options: DevExpress.viz.charts.dxChartOptions;
+        var properties: DevExpress.viz.charts.dxChartOptions;
         options = {
             dataSource: [
                 { fruit: 'Oranges', total: 10 },

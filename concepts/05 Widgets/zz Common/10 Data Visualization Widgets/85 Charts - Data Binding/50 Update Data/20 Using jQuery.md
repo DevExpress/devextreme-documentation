@@ -6,8 +6,8 @@ After that, call the **option()** method of this instance. Pass an object with t
 
 	<!--JavaScript-->pieChart.option({ dataSource: updatedDataSource });
 
-Alternatively, you can call the **option()** method with two arguments: the name of the option that must be changed and a new value for this option.
+Alternatively, you can call the **option()** method with two arguments: the name of the property that must be changed and a new value for this property.
 
 	<!--JavaScript-->pieChart.option('dataSource', updatedDataSource);
 
-After the option is changed, your UI component will be refreshed automatically.
+After the property is changed, your UI component will be refreshed automatically.

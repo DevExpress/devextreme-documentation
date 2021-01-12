@@ -18,7 +18,7 @@ The shapes object.
 ---
 The template content must be presented as SVG elements.
 
-Use the [customShapeToolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeToolboxTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#customShapeToolboxTemplate') option to define a common template for all diagram shapes in the toolbox.
+Use the [customShapeToolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeToolboxTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#customShapeToolboxTemplate') property to define a common template for all diagram shapes in the toolbox.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/jQuery/Light/"

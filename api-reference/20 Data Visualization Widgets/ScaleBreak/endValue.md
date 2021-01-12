@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Along with the **startValue** option, limits the scale break.
+Along with the **startValue** property, limits the scale break.
 
 ---

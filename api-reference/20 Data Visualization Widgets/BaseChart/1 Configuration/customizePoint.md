@@ -13,9 +13,9 @@ Information on the series point.
 The point's [configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point/').
 
 ---
-By default, all series points in a chart are identical, but you can specify a unique appearance for individual points using the **customizePoint** function. This function should return an object with options that will be changed for a certain point. See the [point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point') object for information about all options available for changing.
+By default, all series points in a chart are identical, but you can specify a unique appearance for individual points using the **customizePoint** function. This function should return an object with properties that will be changed for a certain point. See the [point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point') object for information about all properties available for changing.
 
-[note]The **hoverMode** and **selectionMode** options cannot be changed using the **customizePoint** function, because they do not have anything to do with the appearance of series points.
+[note]The **hoverMode** and **selectionMode** properties cannot be changed using the **customizePoint** function, because they do not have anything to do with the appearance of series points.
 
 The **customizePoint** function accepts an object providing information about the series point. This object contains the following fields.
 

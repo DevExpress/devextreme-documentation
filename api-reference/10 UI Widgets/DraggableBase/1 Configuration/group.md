@@ -8,4 +8,4 @@ default: undefined
 Allows you to group several widgets, so that users can drag and drop items between them.
 
 ---
-Set this option to identical values for the UI components you want to collect into a single group.
+Set this property to identical values for the UI components you want to collect into a single group.

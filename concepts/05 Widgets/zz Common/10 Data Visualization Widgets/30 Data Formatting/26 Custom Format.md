@@ -27,7 +27,7 @@ In addition, you can implement the [parser](/api-reference/50%20Common/Object%20
         }
     };
 
-If **formatter** is the only field that you need to specify in the **format** object, assign the function straight to the **format** option as shown below.
+If **formatter** is the only field that you need to specify in the **format** object, assign the function straight to the **format** property as shown below.
 
     <!--JavaScript-->var widgetOptions = {
         // ...

@@ -32,7 +32,7 @@ The following table lists the available filter operations by [data types](/api-r
 
 The nested filter builder also allows users to select from an extended set of operations that include *"anyof"*, *"noneof"*, *"isblank"*, *"isnotblank"*, and [names](/api-reference/_hidden/dxFilterBuilderCustomOperation/name.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/customOperations/#name') of custom operations (if there are any).
 
-The **filterOperations** option can also accept an empty array. In this case, the selected filter operation is *"="* for all data types, and a user cannot change it.
+The **filterOperations** property can also accept an empty array. In this case, the selected filter operation is *"="* for all data types, and a user cannot change it.
 
 #include common-ref-enum with {
     enum: "`FilterOperations`",

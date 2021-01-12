@@ -3,7 +3,7 @@ id: PivotGridDataSource.field(id)
 ---
 ---
 ##### shortDescription
-Gets all the options of a field with the specified identifier.
+Gets all the properties of a field with the specified identifier.
 
 ##### return: Object
 The field's [options](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/').

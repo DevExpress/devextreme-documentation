@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies options for the form item label.
+Specifies properties for the form item label.
 
 ---
 #####See Also#####

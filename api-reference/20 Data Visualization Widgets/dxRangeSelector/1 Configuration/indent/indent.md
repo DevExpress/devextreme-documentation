@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Range selector's indent options.
+Range selector's indent properties.
 
 ---
 The indent is used to precisely align scales of several UI components arranged vertically. This is the distance between the container edge and the range selector's scale (see the image below).

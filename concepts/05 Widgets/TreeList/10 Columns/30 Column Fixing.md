@@ -2,7 +2,7 @@ In some cases, the UI component contains so many columns that they cause horizon
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList ColumnFixing](/images/treelist/visual_elements/column_fixing.png)
 
-To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columnFixing/#enabled') option to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowFixing') option to **false**.
+To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columnFixing/#enabled') property to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowFixing') property to **false**.
 
 ---
 ##### jQuery
@@ -43,7 +43,7 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
     
 ---
 
-If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixed') option and specify its target position in the UI component using the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixedPosition') option.
+If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixed') property and specify its target position in the UI component using the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#fixedPosition') property.
 
 ---
 ##### jQuery
@@ -81,9 +81,9 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     
 ---
 
-[note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** option, [command columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Command_Columns/') become fixed automatically.
+[note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** property, [command columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Command_Columns/') become fixed automatically.
 
-Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#columnAutoWidth') option is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
+Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#columnAutoWidth') property is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/ColumnFixing/"

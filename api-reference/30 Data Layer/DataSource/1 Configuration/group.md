@@ -4,10 +4,10 @@ type: Group expression
 ---
 ---
 ##### shortDescription
-Specifies data grouping options.
+Specifies data grouping properties.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **String**        
 The field name to group by.

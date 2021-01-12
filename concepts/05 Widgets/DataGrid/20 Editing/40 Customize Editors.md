@@ -393,7 +393,7 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColum
     
 ---
 
-Editors are displayed in cells in the normal state too if you set the **columns**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways') option to **true**.
+Editors are displayed in cells in the normal state too if you set the **columns**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways') property to **true**.
 
 ---
 ##### jQuery

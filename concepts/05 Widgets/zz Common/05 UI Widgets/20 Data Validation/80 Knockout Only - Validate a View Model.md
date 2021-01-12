@@ -1,4 +1,4 @@
-Validating the view model object rather than the editors allows you to separate validation logic from the UI, reuse it between multiple views and unit-test the implementation. To validate a view model's observable, extend it with an object whose **dxValidator** field contains the validator configuration. After that, associate a target editor with the validator using the **isValid** and **validationError** options.
+Validating the view model object rather than the editors allows you to separate validation logic from the UI, reuse it between multiple views and unit-test the implementation. To validate a view model's observable, extend it with an object whose **dxValidator** field contains the validator configuration. After that, associate a target editor with the validator using the **isValid** and **validationError** properties.
 
     <!--JavaScript-->$(function () {
         var viewModel = {

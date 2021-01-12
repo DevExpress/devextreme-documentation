@@ -9,7 +9,7 @@ default: 'excludePoints'
 Specifies series elements to be highlighted when a user points to the series.
 
 ---
-When a user points to the series, it may react in one of the following ways depending on the value of the **hoverMode** option.
+When a user points to the series, it may react in one of the following ways depending on the value of the **hoverMode** property.
 
 * **nearestPoint**   
 The series changes its style along with the point that is nearest to the cursor.

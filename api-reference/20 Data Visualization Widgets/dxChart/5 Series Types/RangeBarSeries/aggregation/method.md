@@ -15,7 +15,7 @@ Series points get aggregated by individual [aggregation intervals](/api-referenc
 Calculates the range of values in an interval.
 
 - *"custom"*        
-Applies a custom aggregate function specified in the [calculate](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation/calculate.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/aggregation/#calculate') option.
+Applies a custom aggregate function specified in the [calculate](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation/calculate.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/aggregation/#calculate') property.
 
 #include common-ref-enum with {
     enum: "`ChartSeriesAggregationMethod`",

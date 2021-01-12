@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the options required to display a chart as the range selector's background.
+Specifies the properties required to display a chart as the range selector's background.
 
 ---
 The **RangeSelector** UI component can be created with a chart as the background. In this instance, the range selector can be used for selecting the required range on the chart. At the same time, the **Chart** UI component can be displayed near the range selector and zoomed or scrolled according to the range selected in the range selector. For details on how to synchronize these two widgets, refer to the [Zooming and Scrolling](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/90%20Charts%20-%20End-User%20Interaction/6%20Zooming%20and%20Scrolling '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_End-User_Interaction/Zooming_and_Scrolling') topic.

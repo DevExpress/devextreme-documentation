@@ -2,13 +2,13 @@ The **FileManager** UI component provides the [Remote](/api-reference/10%20UI%20
 
 ![FileManager - remote file system on the server](/images/FileManager/remote-file-provider.png)
 
-Assign the [Remote](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/') file system provider to the [fileSystemProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileSystemProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider') option to connect the UI component to a file system located on the server. The Remote file system provider exposes APIs to get the file system hierarchy and to manage items.
+Assign the [Remote](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/') file system provider to the [fileSystemProvider](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/fileSystemProvider.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/#fileSystemProvider') property to connect the UI component to a file system located on the server. The Remote file system provider exposes APIs to get the file system hierarchy and to manage items.
 
-Set the [endpointUrl](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote/1%20Configuration/endpointUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl') option to the Url of an endpoint used to access and modify a file system.
+Set the [endpointUrl](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote/1%20Configuration/endpointUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl') property to the Url of an endpoint used to access and modify a file system.
 
 You can also use helpers for ASP.NET Core and ASP.NET MVC to access different file systems on the server side according to the protocol the **FileManager** UI component uses. Refer to the [online documentation](https://docs.devexpress.com/AspNetCore/DevExtreme.AspNet.Mvc.FileManagement) and [online demos](https://demos.devexpress.com/ASPNetCore/Demo/FileManager/Overview) to get more information about the helpers.
 
-The data object, which is sent back from the server, contains attributes that store the file system items' key, name, size, modification date and so on. If these attribute names differ from the conventional names, use the **[fieldName]Expr** options to map item properties.
+The data object, which is sent back from the server, contains attributes that store the file system items' key, name, size, modification date and so on. If these attribute names differ from the conventional names, use the **[fieldName]Expr** properties to map item properties.
 
 ---
 

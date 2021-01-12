@@ -1,4 +1,4 @@
-The **Diagram** UI component allows you to customize its UI tools with the following options.
+The **Diagram** UI component allows you to customize its UI tools with the following properties.
 
 - [contextMenu](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextMenu/')
 - [contextToolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextToolbox '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextToolbox/')

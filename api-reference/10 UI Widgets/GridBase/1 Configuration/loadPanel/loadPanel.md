@@ -11,7 +11,7 @@ The load panel is displayed while the UI component loads data. It consists of a 
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget DataGrid TreeList LoadPanel](/images/DataGrid/visual_elements/load_panel.png)
 
-Since the load panel is, in fact, the DevExtreme [LoadPanel](/concepts/05%20Widgets/LoadPanel/00%20Overview.md '/Documentation/Guide/Widgets/LoadPanel/Overview/') UI component, the **loadPanel** object can contain any options of this UI component along with options described here.
+Since the load panel is, in fact, the DevExtreme [LoadPanel](/concepts/05%20Widgets/LoadPanel/00%20Overview.md '/Documentation/Guide/Widgets/LoadPanel/Overview/') UI component, the **loadPanel** object can contain any properties of this UI component along with properties described here.
 
 #####See Also#####
 - [Load Panel](/concepts/05%20Widgets/DataGrid/55%20Load%20Panel '/Documentation/Guide/Widgets/DataGrid/Load_Panel/')

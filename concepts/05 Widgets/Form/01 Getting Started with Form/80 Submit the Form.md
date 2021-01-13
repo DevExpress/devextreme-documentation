@@ -1,8 +1,6 @@
-To submit the Form, wrap it in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. Then add the [button item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/ButtonItem/) and set its **buttonOptions**.[useSubmitBehavior](/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#useSubmitBehavior) property to **true**. If you specify any validation rules, you can submit the Form data to the server only when all validation checks pass successfully.  
+To submit a form, add the [Button Item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/ButtonItem/) and set the [useSubmitBehavior](/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#useSubmitBehavior) property to **true**. The Form can be submitted to a server only when all the validation checks pass succefully. 
 
-Usually, Form editors should be submitted to the server after being successfully validated on the client. The following code shows how to do this using a button form item. Note that the Form widget is wrapped in the <form> tag in the markup.
-
-In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank">setTimeout</a> function to emulate the form submission. We set the [preventDefault](/Documentation/ApiReference/Common/Object_Structures/dxEvent/Methods/#preventDefault) property to **true** to override the HTML form submit event:
+In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank">setTimeout</a> function to emulate the form submission. The Form is wrapped in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. We set the [preventDefault](/Documentation/ApiReference/Common/Object_Structures/dxEvent/Methods/#preventDefault) property to **true** to override the HTML form submit event:
 
 ---
 ##### jQuery

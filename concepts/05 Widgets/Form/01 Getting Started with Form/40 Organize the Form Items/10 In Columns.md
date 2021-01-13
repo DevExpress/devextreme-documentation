@@ -9,7 +9,7 @@ An item can occupy more than one column. For this, specify the [colSpan](/Docume
 
     <!-- tab: index.js -->
     $(function() {
-        $("#formContainer").dxForm({
+        $("#form").dxForm({
             formData: {
                 name: "John Heart",
                 position: "CEO",

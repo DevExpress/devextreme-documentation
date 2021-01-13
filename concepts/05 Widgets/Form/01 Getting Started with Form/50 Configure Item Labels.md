@@ -1,10 +1,13 @@
-Simple item [labels](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/) display the formatted field names of the [formData](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#formData) object. You can change the displayed text in the **label**.[text](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#text) property. 
+You can configure labels for individual items in the [label](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/) object. 
 
-The Form displays labels on the left side of editors. The text of all editors is aligned to the left. To change location of all labels, use the [labelLocation](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#labelLocation) property. Use **label**.[location](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#location) property to relocate individual labels. You can change the horizontal alignment of individual labels in the [alignment](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#alignment) property.
+The following properties apply to all labels in the Form:
 
-Use the [showColonAfterLabel](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showColonAfterLabel) property to display colons at the end of labels. Use the **label**.[showColon](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#showColon) property for the same purpose for an individual label. Individual settings override common settings.
+- [alignItemLabels](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#alignItemLabels)
+- [alignItemLabelsInAllGroups](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#alignItemLabelsInAllGroups)
+- [labelLocation](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#labelLocation)
+- [showColonAfterLabel](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showColonAfterLabel)
 
-The following code shows how to locate all labels on top of editors. We align the `Notes` item label's text to the center. We also hide the colons after all labels:
+The following code shows how to configure the **labelLocation** property to place all labels on top of editors. We use the **label**.[alignment](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#alignment) property to align the `Notes` item label's text to the center:
 
 ---
 ##### jQuery
@@ -16,7 +19,6 @@ The following code shows how to locate all labels on top of editors. We align th
                 // ...
             },
             labelLocation: "top",
-            showColonAfterLabel: false,
             colCount: 2,
             items: ["name", "position", "hireDate", "officeNumber", {
                 dataField: "notes",
@@ -34,8 +36,7 @@ The following code shows how to locate all labels on top of editors. We align th
     <dx-form
         [formData]="employee"
         [colCount]="2"
-        labelLocation="top"
-        [showColonAfterLabel]="false">
+        labelLocation="top">
         <dxi-item dataField="name"></dxi-item>
         <dxi-item dataField="position"></dxi-item>
         <dxi-item dataField="hireDate"></dxi-item>
@@ -89,8 +90,7 @@ The following code shows how to locate all labels on top of editors. We align th
         <DxForm 
             :form-data="employee"
             :col-count="2"
-            label-location="top"
-            :show-colon-after-label="false">
+            label-location="top">
             <DxSimpleItem data-field="name"/>
             <DxSimpleItem data-field="position"/>
             <DxSimpleItem data-field="hireDate"/>
@@ -149,8 +149,7 @@ The following code shows how to locate all labels on top of editors. We align th
             <Form
                 formData={employee}
                 colCount={2}
-                labelLocation="top"
-                showColonAfterLabel={false}>
+                labelLocation="top">
                 <SimpleItem dataField="name" />
                 <SimpleItem dataField="position" />
                 <SimpleItem dataField="hireDate" />

@@ -1,6 +1,4 @@
-You can modify any form, editor or item properties at runtime. In **jQuery**, use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#optionoptionName_optionValue) method to update a property value. In **Angular**, **Vue** or **React**, bind the property's value to a component property.
-
-The following code shows how to dynamically make all editors in the Form read-only. To achieve this, we modify the [readOnly](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#readOnly) property after the click on [CheckBox](/Documentation/ApiReference/UI_Widgets/dxCheckBox/).
+You can change any form, editor, or item properties at runtime. The following code dynamically makes the entire Form read-only. In **jQuery**, use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#optionoptionName_optionValue) method to update the [readOnly](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#readOnly) property's value. In **Angular**, **Vue** or **React**, bind the property's value to a component property.
 
 ---
 ##### jQuery

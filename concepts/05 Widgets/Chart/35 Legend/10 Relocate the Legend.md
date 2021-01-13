@@ -1,4 +1,4 @@
-The legend can be moved inside the chart using the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#position') option, and also aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#verticalAlignment') option.
+The legend can be moved inside the chart using the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#position') property, and also aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#verticalAlignment') property.
 
 ---
 ##### jQuery
@@ -90,7 +90,7 @@ The legend can be moved inside the chart using the [position](/api-reference/20%
 
 ---
 
-Below, you can try out these options in action.
+Below, you can try out these properties in action.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/Legend/relocateTheLegend.html, /Content/Applications/20_2/DataVisualization/Guides/Legend/relocateTheLegend.js, /Content/Applications/20_2/DataVisualization/Guides/Legend/relocateTheLegend.css"></div>
 

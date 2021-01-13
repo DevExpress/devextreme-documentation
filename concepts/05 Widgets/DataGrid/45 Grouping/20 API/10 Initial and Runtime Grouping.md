@@ -1,4 +1,4 @@
-Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex') option to group data initially. In the following example, data is first grouped by the *"Continent"* field, then by the *"Country"* field.
+Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex') property to group data initially. In the following example, data is first grouped by the *"Continent"* field, then by the *"Country"* field.
 
 ---
 

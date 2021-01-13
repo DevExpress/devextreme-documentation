@@ -25,4 +25,4 @@ Model data. Available only if Knockout is used.
 ---
 Assign a function to perform a custom action when a button representing an action sheet item is clicked.
 
-To navigate to a specific URL when the **click** event fires for action sheet buttons, assign that URL directly to this option.
+To navigate to a specific URL when the **click** event fires for action sheet buttons, assign that URL directly to this property.

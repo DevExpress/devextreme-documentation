@@ -19,4 +19,4 @@ The legend item's text.
 The text to be displayed in the hint.
 
 ---
-This option accepts a function that must return the required text. When implementing this function, use its parameter to access the information on the funnel item that corresponds to the legend item.
+This property accepts a function that must return the required text. When implementing this function, use its parameter to access the information on the funnel item that corresponds to the legend item.

@@ -8,4 +8,4 @@ default: true
 Specifies whether the map should respond to touch gestures.
 
 ---
-Assign **false** to this option if your map is not supposed to be viewed on touch-enabled devices.
+Assign **false** to this property if your map is not supposed to be viewed on touch-enabled devices.

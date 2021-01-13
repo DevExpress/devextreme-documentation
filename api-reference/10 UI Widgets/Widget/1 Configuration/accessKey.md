@@ -8,4 +8,4 @@ default: null
 Specifies the shortcut key that sets focus on the UI component.
 
 ---
-The value of this option will be passed to the <a href="http://www.w3schools.com/tags/att_global_accesskey.asp" target="_blank">`accesskey`</a> attribute of the HTML element that underlies the UI component.
+The value of this property will be passed to the <a href="http://www.w3schools.com/tags/att_global_accesskey.asp" target="_blank">`accesskey`</a> attribute of the HTML element that underlies the UI component.

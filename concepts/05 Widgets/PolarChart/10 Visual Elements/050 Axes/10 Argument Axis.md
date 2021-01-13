@@ -36,7 +36,7 @@ If arguments in the series' data source are numeric or date-time values, a _cont
 
 ![Continuous Argument Axis](/images/ChartJS/Polar_ContinuousArgumentAxis.png)
 
-In addition to discrete and continuous types, you can use the _logarithmic_ axis type. This type can be used with numeric data source values only. Each value on the logarithmic argument axis represents a number (logarithm base) raised to a power. This number is specified by the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#logarithmBase') option. The logarithmic axis is useful when you visualize a huge range of data.
+In addition to discrete and continuous types, you can use the _logarithmic_ axis type. This type can be used with numeric data source values only. Each value on the logarithmic argument axis represents a number (logarithm base) raised to a power. This number is specified by the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#logarithmBase') property. The logarithmic axis is useful when you visualize a huge range of data.
 
 ![Logarithmic Argument Axis](/images/ChartJS/Polar_LogarithmicArgumentAxis.png)
 
@@ -60,9 +60,9 @@ In some scenarios, you may require the type of arguments specified in the data s
 		// ...
 	};
 
-As you can see in the code above, the **argumentAxis** object is used to set custom values for argument axis options.
+As you can see in the code above, the **argumentAxis** object is used to set custom values for argument axis properties.
 
-The following list gives an overview of the argument axis options.
+The following list gives an overview of the argument axis properties.
 
 * **Visibility**		
 To make the argument axis visible/invisible, use the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#visible') property of the **argumentAxis** configuration object.
@@ -74,10 +74,10 @@ You can change the axis color, width and opacity, using the [color](/api-referen
 Ticks and grid lines on a discrete axis can be displayed between series points (appropriate for bar series) or across them (appropriate for line series). To choose the mode that is more appropriate for your series type, use the [discreteAxisDivisionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/discreteAxisDivisionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#discreteAxisDivisionMode') property of the **argumentAxis** configuration object.
 
 * **Logarithmic Axis Ticks Arrangement**		
-You can specify the logarithm base to be used in tick calculation using the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#logarithmBase') option.
+You can specify the logarithm base to be used in tick calculation using the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#logarithmBase') property.
 
 * **Rotate and Invert Axis**		
-To rotate the chart, use the [startAngle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/startAngle.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#startAngle') property. With the [firstPointOnStartAngle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/firstPointOnStartAngle.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#firstPointOnStartAngle') option, the first category of a discrete series can be forced to be at the top.
+To rotate the chart, use the [startAngle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/startAngle.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#startAngle') property. With the [firstPointOnStartAngle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/firstPointOnStartAngle.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#firstPointOnStartAngle') property, the first category of a discrete series can be forced to be at the top.
 You can invert axis coordinates by setting the [inverted](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/inverted.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#inverted') property to _true_.
 
-Use the **argumentAxis** configuration object to define the following axis child elements: [ticks](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Ticks'), [grid lines](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/090%20Grid/01%20Grid.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Grid'), [strips](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/100%20Strips.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Strips') and [labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/070%20Axis%20Labels.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Labels'). Their options are detailed in the corresponding topics.
+Use the **argumentAxis** configuration object to define the following axis child elements: [ticks](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Ticks'), [grid lines](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/090%20Grid/01%20Grid.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Grid'), [strips](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/100%20Strips.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Strips') and [labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/070%20Axis%20Labels.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Labels'). Their properties are detailed in the corresponding topics.

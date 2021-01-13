@@ -4,10 +4,10 @@ type: Sort expression
 ---
 ---
 ##### shortDescription
-Specifies data sorting options.
+Specifies data sorting properties.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **String**        
 The field name to sort by.

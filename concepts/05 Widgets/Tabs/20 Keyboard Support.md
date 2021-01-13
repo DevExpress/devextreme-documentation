@@ -27,7 +27,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
-        <td>Scrolls the tabs left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#scrollingEnabled">scrollingEnabled</a> option is <b>true</b>.</td>
+        <td>Scrolls the tabs left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/#scrollingEnabled">scrollingEnabled</a> property is <b>true</b>.</td>
     </tr>
 </table>
 

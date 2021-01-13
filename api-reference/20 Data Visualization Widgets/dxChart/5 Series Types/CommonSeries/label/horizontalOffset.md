@@ -8,4 +8,4 @@ default: 0
 Along with **verticalOffset**, shifts point labels from their initial positions.
 
 ---
-The number assigned to this option specifies the shift in pixels. A negative number shifts the point labels to the left, a positive number - to the right.
+The number assigned to this property specifies the shift in pixels. A negative number shifts the point labels to the left, a positive number - to the right.

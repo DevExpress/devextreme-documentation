@@ -2,7 +2,7 @@ View switcher is a scheduler element used for quick switching between views.
 
 ![View Switcher](/images/UiWidgets/Scheduler_View_Switcher.png)
 
-To specify what views are available within the switcher, use the [views](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/') option.
+To specify what views are available within the switcher, use the [views](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/') property.
 
 ---
 
@@ -91,7 +91,7 @@ On mobile devices, the view switcher is displayed as a drop-down menu.
 
 ![Drop-down View Switcher](/images/UiWidgets/Scheduler_DropDown_ViewSwitcher.png)
 
-To use the drop-down menu on all types of devices, assign **true** to the [useDropDownViewSwitcher](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/useDropDownViewSwitcher.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#useDropDownViewSwitcher') option; to use tabs - assign **false**.
+To use the drop-down menu on all types of devices, assign **true** to the [useDropDownViewSwitcher](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/useDropDownViewSwitcher.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#useDropDownViewSwitcher') property; to use tabs - assign **false**.
 
 ---
 

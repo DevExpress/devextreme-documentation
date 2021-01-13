@@ -6,10 +6,10 @@ inheritAll:
 ---
 ---
 ##### shortDescription
-Specifies the appearance options of the value indicator.
+Specifies the appearance properties of the value indicator.
 
 ---
-The value indicator is a pointer that designates the main value of the gauge. There are several types of value indicators. Set the required one by using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/valueIndicator/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Configuration/valueIndicator/#type') option, and then specify the options that are specific to this type, if needed. To learn about the options that can be specified for a particular type, refer to one of the following sections.
+The value indicator is a pointer that designates the main value of the gauge. There are several types of value indicators. Set the required one by using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/valueIndicator/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Configuration/valueIndicator/#type') property, and then specify the properties that are specific to this type, if needed. To learn about the properties that can be specified for a particular type, refer to one of the following sections.
 
 - [Circle](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types/Circle '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Indicator_Types/Circle/')
 - [RangeBar](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types/RangeBar '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Indicator_Types/RangeBar/')

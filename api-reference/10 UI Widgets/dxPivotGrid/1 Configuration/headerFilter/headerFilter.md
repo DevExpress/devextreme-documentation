@@ -11,7 +11,7 @@ A header filter allows a user to filter individual field's values by including o
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component Pivot Grid Header Filter](/images/DataGrid/PivotGrid_headerFilter.png)
 
-Assign **true** to the [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowFiltering') option to make the icons visible. To customize a specific field's header filter, use the field's [headerFilter](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/headerFilter '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/headerFilter/') object.
+Assign **true** to the [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowFiltering') property to make the icons visible. To customize a specific field's header filter, use the field's [headerFilter](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/headerFilter '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/headerFilter/') object.
 
 #include datagrid-filtering-selectallmodifiesfiltertype with {
     filterValuesLink: "/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterValues",

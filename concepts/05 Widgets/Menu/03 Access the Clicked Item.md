@@ -1,4 +1,4 @@
-To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/4%20Events/itemClick.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Events/#itemClick') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the [onItemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/#onItemClick') option when you configure the UI component.
+To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/4%20Events/itemClick.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Events/#itemClick') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the [onItemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/#onItemClick') property when you configure the UI component.
 
 ---
 ##### jQuery

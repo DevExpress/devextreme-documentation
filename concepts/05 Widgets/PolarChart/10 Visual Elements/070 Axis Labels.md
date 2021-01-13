@@ -13,7 +13,7 @@ Axis labels are generated automatically. However, you can change their settings 
 		// ...
 	};
 
-The following list provides an overview of label options.
+The following list provides an overview of label properties.
 
 * **Visibility**		
 To mark point labels as visible/invisible, use the **label** object's [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/label/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonAxisSettings/label/#visible') property.

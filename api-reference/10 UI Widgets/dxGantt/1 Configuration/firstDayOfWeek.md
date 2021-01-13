@@ -9,7 +9,7 @@ default: undefined
 Specifies the first day of a week.
 
 ---
-The option's value can be from 0 to 6.
+The property's value can be from 0 to 6.
 
 - 0 - Sunday
 - 1 - Monday
@@ -19,7 +19,7 @@ The option's value can be from 0 to 6.
 - 5 - Friday
 - 6 - Saturday
 
-The culture settings specify the option's default value.
+The culture settings specify the property's default value.
 
 #include common-ref-enum with {
     enum: "`FirstDayOfWeek`",

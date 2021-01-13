@@ -1,5 +1,6 @@
 ---
 ##### shortDescription
-An object defining common configuration options for all UI components.
+An object defining common configuration properties for all UI components.
+
 
 ---

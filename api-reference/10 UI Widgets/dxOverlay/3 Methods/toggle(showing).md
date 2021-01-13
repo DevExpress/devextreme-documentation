@@ -14,7 +14,7 @@ Specifies whether to show or hide the UI component.
 ---
 You can use the **toggle(showing)** method instead of the **show()** and **hide()** methods. In this case, pass true or false as the method parameter to show or hide the UI component.
 
-The UI component is automatically hidden after the time specified in the [displayTime](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/displayTime.md '{basewidgetpath}/Configuration/#displayTime') option.
+The UI component is automatically hidden after the time specified in the [displayTime](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/displayTime.md '{basewidgetpath}/Configuration/#displayTime') property.
 
 #####See Also#####
 #include common-link-callmethods

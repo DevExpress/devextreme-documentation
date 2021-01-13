@@ -8,7 +8,7 @@ default: undefined
 Specifies a <a href="http://www.w3schools.com/cssref/sel_class.asp" target="_blank">CSS class</a> to be applied to the column.
 
 ---
-In the following code, this option is assigned a `cell-highlighted` CSS class that customizes the `position` column's cell and header styles:
+In the following code, this property is assigned a `cell-highlighted` CSS class that customizes the `position` column's cell and header styles:
 
 ---
 #####jQuery

@@ -289,5 +289,4 @@ In addition, you can now format values using structures accepted by <a href="htt
 
 #####See Also#####
 - <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/angular-cli-globalize" target="_blank">DevExtreme sample project with Globalize created using Angular CLI</a>
-- <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/systemjs-angular-globalize" target="_blank">DevExtreme Angular sample project with SystemJS and Globalize</a>
 - [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting')

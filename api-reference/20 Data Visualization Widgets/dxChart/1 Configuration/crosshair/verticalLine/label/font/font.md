@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for the label of the vertical crosshair line.
+Specifies font properties for the label of the vertical crosshair line.
 
 ---

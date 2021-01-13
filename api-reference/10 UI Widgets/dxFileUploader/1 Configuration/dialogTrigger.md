@@ -13,7 +13,7 @@ Specifies the HTML element which invokes the file upload dialog.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"
 }
 
-You can use a selector string, jQuery object or DOM element to specify the **dialogTrigger** option:
+You can use a selector string, jQuery object or DOM element to specify the **dialogTrigger** property:
 
 - String
 

@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-An object defining configuration options for the UI component.
+An object defining configuration properties for the UI component.
 
 ---

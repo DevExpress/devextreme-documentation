@@ -13,7 +13,7 @@ Grid lines are child elements of the argument and value axes. To change their se
 		//...
 	};
 
-The following list overviews grid options.
+The following list overviews grid properties.
 
 * **Visibility**		
 To make a grid visible/invisible, use the **grid** object's [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/grid/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonAxisSettings/grid/#visible') property.

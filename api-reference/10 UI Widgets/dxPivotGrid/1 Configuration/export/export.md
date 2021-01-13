@@ -53,7 +53,7 @@ The following instructions show how to enable and configure client-side export:
     ---     
 
 2. **Enable the export UI**   
-    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/#enabled') option to **true**:
+    Set the **export**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/#enabled') property to **true**:
 
     ---
 

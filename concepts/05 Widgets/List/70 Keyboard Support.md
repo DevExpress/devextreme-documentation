@@ -23,11 +23,11 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Shift + &uarr; / &darr;</td>
-        <td>Shifts the focused item one item up/down. Active if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#allowItemReordering">allowItemReordering</a> option is set to <i>true</i>.</td>
+        <td>Shifts the focused item one item up/down. Active if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#allowItemReordering">allowItemReordering</a> property is set to <i>true</i>.</td>
     </tr>
     <tr>
         <td>Delete</td>
-        <td>Removes the focused item. Active if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#allowItemDeleting">allowItemDeleting</a> option is set to <i>true</i>.</td>
+        <td>Removes the focused item. Active if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#allowItemDeleting">allowItemDeleting</a> property is set to <i>true</i>.</td>
     </tr>
 </table>
 

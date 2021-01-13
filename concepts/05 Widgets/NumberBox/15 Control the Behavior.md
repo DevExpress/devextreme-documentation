@@ -79,7 +79,7 @@ If you need to add spin buttons to the **NumberBox**, set the [showSpinButtons](
 
 ---
 
-To specify the step by which the value is changed, use the [step](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/step.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#step') option.
+To specify the step by which the value is changed, use the [step](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/step.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#step') property.
 
 ---
 ##### jQuery

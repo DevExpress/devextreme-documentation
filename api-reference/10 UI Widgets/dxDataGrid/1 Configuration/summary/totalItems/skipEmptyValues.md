@@ -7,7 +7,7 @@ type: Boolean
 Specifies whether or not to skip *empty strings*, **null** and **undefined** values when calculating a summary.
 
 ---
-Specified in a summary configuration object, this option affects an individual summary item. If you need to apply a single setting to all summaries in a grid, specify the **skipEmptyValues** option in the **summary** object.
+Specified in a summary configuration object, this property affects an individual summary item. If you need to apply a single setting to all summaries in a grid, specify the **skipEmptyValues** property in the **summary** object.
 
 ---
 #####jQuery
@@ -47,9 +47,9 @@ Specified in a summary configuration object, this option affects an individual s
 
 ---
 
-[note]This option does not have any effect when you use a remote data source.
+[note]This property does not have any effect when you use a remote data source.
 
-[note]Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** option. However, you can implement a custom summary, which skips empty values, as follows.
+[note]Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** property. However, you can implement a custom summary, which skips empty values, as follows.
     
 ---
 #####jQuery

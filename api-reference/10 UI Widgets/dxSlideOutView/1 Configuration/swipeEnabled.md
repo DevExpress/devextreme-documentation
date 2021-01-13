@@ -8,4 +8,4 @@ default: true
 Specifies whether or not the menu is shown when a user swipes the UI component content.
 
 ---
-If the option value is **false**, the menu can be shown only programmatically.
+If the property value is **false**, the menu can be shown only programmatically.

@@ -15,14 +15,14 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
                     url: "https://mydomain.com/MyDataService/",
                     method: "POST",
                     data: JSON.stringify(values),
-                    error: function() { throw "Insertion failed" }
+                    error: function(e) { e.statusText = "Insertion failed"; }
                 });
             },
             remove: function(key) {
                 return $.ajax({
                     url: "https://mydomain.com/MyDataService/" + encodeURIComponent(key),
                     method: "DELETE",
-                    error: function() { throw "Deletion failed" }
+                    error: function(e) { e.statusText = "Deletion failed"; }
                 });
             },
             update: function(key, values) {
@@ -30,7 +30,7 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
                     url: "https://mydomain.com/MyDataService/" + encodeURIComponent(key),
                     method: "PUT",
                     data: JSON.stringify(values),
-                    error: function() { throw "Update failed" }
+                    error: function(e) { e.statusText = "Update failed"; }
                 });
             }
         });

@@ -1,6 +1,4 @@
-A tab can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/), other tabs, [groups](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/GroupItem/) or [empty items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). To create a tabbed item, assign "tabbed" to the [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#itemType) option.
-
-The Form uses the [TabPanel](/Documentation/ApiReference/UI_Widgets/dxTabPanel/) component to display tabs. You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object.
+The Form uses the [TabPanel](/Documentation/ApiReference/UI_Widgets/dxTabPanel/) component to display tabs. You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object. A tab can contain any item type.
 
 The following example shows a Form with two groups. A tabbed item is nested in the `Personal Information` group. We also configure the tab panel's [height](/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object:
 
@@ -12,39 +10,43 @@ The following example shows a Form with two groups. A tabbed item is nested in t
     $(function() {
         $("#formContainer").dxForm({
             formData: {
-                name: "John Heart",
-                position: "CEO",
+                name: 'John Heart',
+                position: 'CEO',
                 hireDate: new Date(2012, 4, 13),
                 officeNumber: 901,
-                phone: "+1(213) 555-9392",
-                skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com",
-                notes: "John has been in the Audio/Video industry since 1990."
+                phone: '+1(213) 555-9392',
+                skype: 'jheart_DX_skype',
+                email: 'jheart@dx-email.com',
+                notes: 'John has been in the Audio/Video industry since 1990.'
             },
-            colCount: 2,
             items: [{
                 itemType: "group",
-                caption: "Employee",
-                items: ["name", "notes"]
-            }, {
-                itemType: "group",
-                caption: "Personal Information",
+                colCount: 2,
                 items: [{
-                    itemType: "tabbed",
-                    tabPanelOptions: {
-                        height: "55px"
-                    },
-                    tabs: [{
-                        title: "Profile",
-                        items: ["position", "hireDate", "officeNumber"]
-                    }, {
-                        title: "Contacts",
-                        items: ["phone", "skype", "email"]
+                    itemType: "group",
+                    caption: "Employee",
+                    items: ["name", "position", "hireDate", "officeNumber"]
+                }, {
+                    itemType: "group",
+                    caption: "Personal Information",
+                    items: [{
+                        itemType: "tabbed",
+                        tabPanelOptions: {
+                            height: 280
+                        },
+                        tabs: [{
+                            title: "Contacts",
+                            items: ["skype", "phone",  "email"]
+                        }, {
+                            title: "Note",
+                            items: ["notes"]
+                        }]
                     }]
                 }]
             }]
         });
     });
+
 
 ##### Angular
 
@@ -56,21 +58,21 @@ The following example shows a Form with two groups. A tabbed item is nested in t
             itemType="group" 
             caption="Employee">
             <dxi-item dataField="name"></dxi-item>
-            <dxi-item dataField="notes"></dxi-item>
+            <dxi-item dataField="position"></dxi-item>
+            <dxi-item dataField="hireDate"></dxi-item>
+            <dxi-item dataField="officeNumber"></dxi-item>
         </dxi-item>
         <dxi-item itemType="group" caption="Personal Information">
             <dxi-item itemType="tabbed">
-                <dxo-tab-panel-options [height]="55">
+                <dxo-tab-panel-options [height]="280">
                 </dxo-tab-panel-options>
-                <dxi-tab title="Profile">
-                    <dxi-item dataField="position"></dxi-item>
-                    <dxi-item dataField="hireDate"></dxi-item>
-                    <dxi-item dataField="officeNumber"></dxi-item>
-                </dxi-tab>
                 <dxi-tab title="Contacts">
                 	<dxi-item dataField="skype"></dxi-item>
                     <dxi-item dataField="phone"></dxi-item>
                     <dxi-item dataField="email"></dxi-item>
+                </dxi-tab>
+                <dxi-tab title="Note">
+                    <dxi-item dataField="notes"></dxi-item>
                 </dxi-tab>
             </dxi-item>
         </dxi-item>
@@ -126,20 +128,20 @@ The following example shows a Form with two groups. A tabbed item is nested in t
             :col-count="2">
             <DxGroupItem caption="Employee">
                 <DxSimpleItem data-field="name"/>
-                <DxSimpleItem data-field="notes"/>
+                <DxSimpleItem data-field="position"/>
+                <DxSimpleItem dataField="hireDate"/>
+                <DxSimpleItem dataField="officeNumber"/>
             </DxGroupItem>
             <DxGroupItem caption="Personal Information">
                 <DxTabbedItem>
-                    <DxTabPanelOptions :height="55"/>
-                    <DxTab title="Profile">
-                        <DxSimpleItem data-field="position"/>
-                        <DxSimpleItem dataField="hireDate"/>
-                        <DxSimpleItem dataField="officeNumber"/>
-                    </DxTab>
+                    <DxTabPanelOptions :height="280"/>
                     <DxTab title="Contacts">
                         <DxSimpleItem dataField="skype"/>
                         <DxSimpleItem dataField="phone"/>
                         <DxSimpleItem dataField="email"/>
+                    </DxTab>
+                    <DxTab title="Note">
+                        <DxSimpleItem data-field="notes"/>
                     </DxTab>
                 </DxTabbedItem>
             </DxGroupItem>
@@ -150,7 +152,8 @@ The following example shows a Form with two groups. A tabbed item is nested in t
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, 
+    import { 
+        DxForm, 
         DxSimpleItem, 
         DxGroupItem, 
         DxTabbedItem,
@@ -219,20 +222,20 @@ The following example shows a Form with two groups. A tabbed item is nested in t
                 colCount={2}>
                 <GroupItem caption="Employee">
                     <SimpleItem dataField="name" />
-                    <SimpleItem dataField="notes" />
+                    <SimpleItem dataField="position" />
+                    <SimpleItem dataField="hireDate" />
+                    <SimpleItem dataField="officeNumber" />
                 </GroupItem>
                 <GroupItem caption="Personal Information">
                     <TabbedItem>
-                        <TabPanelOptions height="55" />
-                        <Tab title="Profile">
-                            <SimpleItem dataField="position" />
-                            <SimpleItem dataField="hireDate" />
-                            <SimpleItem dataField="officeNumber" />
-                        </Tab>
+                        <TabPanelOptions height="280" />
                         <Tab title="Contacts">
                             <SimpleItem dataField="phone" />
                             <SimpleItem dataField="skype" />
                             <SimpleItem dataField="email" />
+                        </Tab>
+                        <Tab title="Note">
+                            <SimpleItem dataField="notes" />
                         </Tab>
                     </TabbedItem>
                 </GroupItem>
@@ -244,3 +247,6 @@ The following example shows a Form with two groups. A tabbed item is nested in t
 
 ---
 
+If you run this code, you will get the Form that looks like the following one:
+
+![DevExtreme Form: Tabbed Items](/images/UiWidgets/form-getting-started-tabs.png)

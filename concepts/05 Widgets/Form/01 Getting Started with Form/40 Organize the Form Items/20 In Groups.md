@@ -1,8 +1,6 @@
-You can divide form items in groups. To do this, declare items with the 'group" [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) array. A group can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). You can configure each group's layout separately. 
+To divide items into groups, declare items with the "group" [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items) array. A group can contain [simple items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/). To put an item into a group, declare this item inside the group as shown in the example below. You can configure each group's layout separately. 
 
-If you use modular approaches and have more than one item type in a Form, declare the simple items as in the example below.
-
-The folowing code shows two groups in a Form with two columns. Each group occupies a separate column, and the `Personal Information` group has two columns inside it:
+The following code shows two groups in a Form with two columns. Each group occupies a separate column:
 
 ---
 ##### jQuery
@@ -17,15 +15,13 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
                 officeNumber: 901,
                 phone: "+1(213) 555-9392",
                 skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com",
-                notes: "John has been in the Audio/Video industry since 1990."
+                email: "jheart@dx-email.com"
             },
             colCount: 2,
             items: [{
                 itemType: "group",
                 caption: "Personal Information",
-                colCount: 2,
-                items: ["name", "position", "hireDate", "officeNumber", "notes"]
+                items: ["name", "position", "hireDate", "officeNumber"]
             }, {
                 itemType: "group",
                 caption: "Contacts",
@@ -42,13 +38,11 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
         [colCount]="2">
         <dxi-item 
             itemType="group" 
-            caption="Personal Information"
-            [colCount]="2">
+            caption="Personal Information">
             <dxi-item dataField="name"></dxi-item>
             <dxi-item dataField="position"></dxi-item>
             <dxi-item dataField="hireDate"></dxi-item>
             <dxi-item dataField="officeNumber"></dxi-item>
-            <dxi-item dataField="notes"></dxi-item>
         </dxi-item>
         <dxi-item itemType="group" caption="Contacts">
             <dxi-item dataField="phone"></dxi-item>
@@ -73,8 +67,7 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
             officeNumber: 901,
             phone: '+1(213) 555-9392',
             skype: 'jheart_DX_skype',
-            email: 'jheart@dx-email.com',
-            notes: 'John has been in the Audio/Video industry since 1990.'
+            email: 'jheart@dx-email.com'
         }
     }
 
@@ -106,13 +99,11 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
             :form-data="employee"
             :col-count="2">
             <DxGroupItem
-                caption="Personal Information"
-                :col-count="2">
+                caption="Personal Information">
                 <DxSimpleItem data-field="name"/>
                 <DxSimpleItem data-field="position"/>
                 <DxSimpleItem data-field="hireDate"/>
                 <DxSimpleItem data-field="officeNumber"/>
-                <DxSimpleItem data-field="notes"/>
             </DxGroupItem>
             <DxGroupItem caption="Contacts">
                 <DxSimpleItem data-field="phone"/>
@@ -135,8 +126,7 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
         officeNumber: 901,
         phone: '+1(213) 555-9392',
         skype: 'jheart_DX_skype',
-        email: 'jheart@dx-email.com',
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        email: 'jheart@dx-email.com'
     };
 
     export default {
@@ -173,8 +163,7 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
         officeNumber: 901,
         phone: '+1(213) 555-9392',
         skype: 'jheart_DX_skype',
-        email: 'jheart@dx-email.com',
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        email: 'jheart@dx-email.com'
     };
 
     const App = () => {
@@ -189,7 +178,6 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
                     <SimpleItem dataField="position" />
                     <SimpleItem dataField="hireDate" />
                     <SimpleItem dataField="officeNumber" />
-                    <SimpleItem dataField="notes" />
                 </GroupItem>
                 <GroupItem caption="Contacts">
                     <SimpleItem dataField="phone" />
@@ -204,3 +192,6 @@ The folowing code shows two groups in a Form with two columns. Each group occupi
 
 ---
 
+If you run this code, you will get the Form that looks like the following one:
+
+![DevExtreme Form: Grouped Items](/images/UiWidgets/form-getting-started-groups.png)

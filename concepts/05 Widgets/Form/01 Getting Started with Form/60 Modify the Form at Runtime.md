@@ -9,17 +9,10 @@ The following code shows how to dynamically make all editors in the Form read-on
     $(function() {
         const form = $("#formContainer").dxForm({
             formData: {
-                name: "John Heart",
-                position: "CEO",
-                hireDate: new Date(2012, 4, 13),
-                officeNumber: 901,
-                notes: "John has been in the Audio/Video industry since 1990."
+                // ...
             },
             colCount: 2,
-            items: ["name", "position", "hireDate", "officeNumber", {
-                dataField: "notes",
-                colSpan: 2
-            }]
+            items: ["name", "position", "hireDate", "officeNumber"]
         }).dxForm("instance");
 
         $("#checkBox").dxCheckBox({
@@ -42,10 +35,6 @@ The following code shows how to dynamically make all editors in the Form read-on
         <dxi-item dataField="position"></dxi-item>
         <dxi-item dataField="hireDate"></dxi-item>
         <dxi-item dataField="officeNumber"></dxi-item>
-        <dxi-item 
-            dataField="notes" 
-            [colSpan]="2">
-        </dxi-item>
     </dx-form>
 
     <dx-check-box
@@ -63,11 +52,7 @@ The following code shows how to dynamically make all editors in the Form read-on
     })
     export class AppComponent {
         employee = {
-            name: 'John Heart',
-            position: 'CEO',
-            hireDate: new Date(2012, 4, 13),
-            officeNumber: 901,
-            notes: 'John has been in the Audio/Video industry since 1990.'
+            // ...
         }
 
         isFormReadOnly = false
@@ -103,14 +88,10 @@ The following code shows how to dynamically make all editors in the Form read-on
                 :form-data="employee"
                 :col-count="2"
                 :read-only="isFormReadOnly">
-                <DxItem data-field="name"/>
-                <DxItem data-field="position"/>
-                <DxItem data-field="hireDate"/>
-                <DxItem data-field="officeNumber"/>
-                <DxItem 
-                    data-field="notes"
-                    :col-span="2"
-                />
+                <DxSimpleItem data-field="name"/>
+                <DxSimpleItem data-field="position"/>
+                <DxSimpleItem data-field="hireDate"/>
+                <DxSimpleItem data-field="officeNumber"/>
             </DxForm>
             <DxCheckBox
                 text="Enable read-only mode"
@@ -123,15 +104,11 @@ The following code shows how to dynamically make all editors in the Form read-on
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     import { DxCheckBox } from 'devextreme-vue/check-box';
     
     const employee = {
-        name: 'John Heart',
-        position: 'CEO',
-        hireDate: new Date(2012, 4, 13),
-        officeNumber: 901,
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        // ...
     };
 
     let isFormDisabled = false;
@@ -139,7 +116,7 @@ The following code shows how to dynamically make all editors in the Form read-on
     export default {
         components: {
             DxForm,
-            DxItem,
+            DxSimpleItem,
             DxCheckBox
         },
         data: {
@@ -160,17 +137,13 @@ The following code shows how to dynamically make all editors in the Form read-on
 
     import {
         Form,
-        Item,
+        SimpleItem,
     } from 'devextreme-react/form';
 
     import { CheckBox } from 'devextreme-react/check-box';
 
     const employee = {
-        name: 'John Heart',
-        position: 'CEO',
-        hireDate: new Date(2012, 4, 13),
-        officeNumber: 901,
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        // ...
     };
 
     const App = () => {
@@ -186,14 +159,10 @@ The following code shows how to dynamically make all editors in the Form read-on
                     formData={employee}
                     colCount={2}
                     readOnly={isFormDisabled}>
-                    <Item dataField="name" />
-                    <Item dataField="position" />
-                    <Item dataField="hireDate" />
-                    <Item dataField="officeNumber" />
-                    <Item 
-                        dataField="notes"
-                        colSpan={2}
-                    />
+                    <SimpleItem dataField="name" />
+                    <SimpleItem dataField="position" />
+                    <SimpleItem dataField="hireDate" />
+                    <SimpleItem dataField="officeNumber" />
                 </Form>
 
                 <CheckBox

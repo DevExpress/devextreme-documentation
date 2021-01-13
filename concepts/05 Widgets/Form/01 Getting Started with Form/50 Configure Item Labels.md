@@ -13,11 +13,7 @@ The following code shows how to locate all labels on top of editors. We align th
     $(function() {
         $("#formContainer").dxForm({
             formData: {
-                name: "John Heart",
-                position: "CEO",
-                hireDate: new Date(2012, 4, 13),
-                officeNumber: 901,
-                notes: "John has been in the Audio/Video industry since 1990."
+                // ...
             },
             labelLocation: "top",
             showColonAfterLabel: false,
@@ -62,11 +58,7 @@ The following code shows how to locate all labels on top of editors. We align th
     })
     export class AppComponent {
         employee = {
-            name: 'John Heart',
-            position: 'CEO',
-            hireDate: new Date(2012, 4, 13),
-            officeNumber: 901,
-            notes: 'John has been in the Audio/Video industry since 1990.'
+            // ...
         }
     }
 
@@ -99,15 +91,15 @@ The following code shows how to locate all labels on top of editors. We align th
             :col-count="2"
             label-location="top"
             :show-colon-after-label="false">
-            <DxItem data-field="name"/>
-            <DxItem data-field="position"/>
-            <DxItem data-field="hireDate"/>
-            <DxItem data-field="officeNumber"/>
-            <DxItem 
+            <DxSimpleItem data-field="name"/>
+            <DxSimpleItem data-field="position"/>
+            <DxSimpleItem data-field="hireDate"/>
+            <DxSimpleItem data-field="officeNumber"/>
+            <DxSimpleItem 
                 data-field="notes"
                 :col-span="2">
                 <DxLabel alignment="center"/>
-            </DxItem>
+            </DxSimpleItem>
         </DxForm>
     </template>
 
@@ -115,20 +107,16 @@ The following code shows how to locate all labels on top of editors. We align th
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem, DxLabel } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
     
     const employee = {
-        name: 'John Heart',
-        position: 'CEO',
-        hireDate: new Date(2012, 4, 13),
-        officeNumber: 901,
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        // ...
     };
 
     export default {
         components: {
             DxForm,
-            DxItem,
+            DxSimpleItem,
             DxLabel
         },
         data: {
@@ -148,16 +136,12 @@ The following code shows how to locate all labels on top of editors. We align th
 
     import {
         Form,
-        Item,
+        SimpleItem,
         Label
     } from 'devextreme-react/form';
 
     const employee = {
-        name: 'John Heart',
-        position: 'CEO',
-        hireDate: new Date(2012, 4, 13),
-        officeNumber: 901,
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        // ...
     };
 
     const App = () => {
@@ -167,15 +151,15 @@ The following code shows how to locate all labels on top of editors. We align th
                 colCount={2}
                 labelLocation="top"
                 showColonAfterLabel={false}>
-                <Item dataField="name" />
-                <Item dataField="position" />
-                <Item dataField="hireDate" />
-                <Item dataField="officeNumber" />
-                <Item 
+                <SimpleItem dataField="name" />
+                <SimpleItem dataField="position" />
+                <SimpleItem dataField="hireDate" />
+                <SimpleItem dataField="officeNumber" />
+                <SimpleItem 
                     dataField="notes"
                     colSpan={2}>
                     <Label alignment="center" />
-                </Item>
+                </SimpleItem>
             </Form>
         );
     }

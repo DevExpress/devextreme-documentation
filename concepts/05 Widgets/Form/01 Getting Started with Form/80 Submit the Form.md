@@ -1,5 +1,7 @@
 To submit the Form, wrap it in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. Then add the [button item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/ButtonItem/) and set its **buttonOptions**.[useSubmitBehavior](/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#useSubmitBehavior) property to **true**. If you specify any validation rules, you can submit the Form data to the server only when all validation checks pass successfully.  
 
+Usually, Form editors should be submitted to the server after being successfully validated on the client. The following code shows how to do this using a button form item. Note that the Form widget is wrapped in the <form> tag in the markup.
+
 In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank">setTimeout</a> function to emulate the form submission. We set the [preventDefault](/Documentation/ApiReference/Common/Object_Structures/dxEvent/Methods/#preventDefault) property to **true** to override the HTML form submit event:
 
 ---
@@ -9,14 +11,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
     $(function() {
         $("#form").dxForm({
             formData: {
-                name: "John Heart",
-                position: "CEO",
-                hireDate: new Date(2012, 4, 13),
-                officeNumber: 901,
-                phone: "+1(213) 555-9392",
-                skype: "jheart_DX_skype",
-                email: "jheart@dx-email.com",
-                notes: "John has been in the Audio/Video industry since 1990."
+                // ...
             },
             colCount: 2,
             items: [{
@@ -26,14 +21,14 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                 items: [{
                     dataField: "name",
                     isRequired: "true"
-                }, "position", "hireDate", {
+                }, {
                     dataField: "officeNumber",
                     validationRules: [{
                         type: "numeric",
                         message: "This field should contain a number"
                     }] 
-                }, "notes", "phone", "skype", {
-                    dataField: "name",
+                }, {
+                    dataField: "email",
                     validationRules: [{
                         type: "email",
                         message: "This is not a valid Email"
@@ -51,7 +46,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
         $("#formContainer").on("submit", function(e) {
             setTimeout(function () { 
                 alert("Submitted");          
-            }, 3000);
+            }, 1000);
             
             e.preventDefault();
         });
@@ -75,17 +70,12 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                 [colCount]="2">
                 <dxi-item dataField="name" [isRequired]="true">
                 </dxi-item>
-                <dxi-item dataField="position"></dxi-item>
-                <dxi-item dataField="hireDate"></dxi-item>
                 <dxi-item dataField="officeNumber">
                     <dxi-validation-rule
                         type="numeric"
                         message="This field should contain a number">
                     </dxi-validation-rule>
                 </dxi-item>
-                <dxi-item dataField="notes"></dxi-item>
-                <dxi-item dataField="phone"></dxi-item>
-                <dxi-item dataField="skype"></dxi-item>
                 <dxi-item dataField="email">
                     <dxi-validation-rule
                         type="email"
@@ -110,14 +100,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
     })
     export class AppComponent {
         employee = {
-            name: 'John Heart',
-            position: 'CEO',
-            hireDate: new Date(2012, 4, 13),
-            officeNumber: 901,
-            phone: '+1(213) 555-9392',
-            skype: 'jheart_DX_skype',
-            email: 'jheart@dx-email.com',
-            notes: 'John has been in the Audio/Video industry since 1990.'
+            // ...
         }
 
         submitButtonOptions = {
@@ -128,7 +111,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
         handleSubmit = function(e) {
             setTimeout(() => { 
                 alert("Submitted");          
-            }, 3000);
+            }, 1000);
             
             e.preventDefault();
         }
@@ -165,17 +148,12 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                 <DxGroupItem
                     caption="Personal Information"
                     :col-count="2">
-                    <DxSimpleItem data-field="name :is-required="true"/>
-                    <DxSimpleItem data-field="position"/>
-                    <DxSimpleItem data-field="hireDate"/>
+                    <DxSimpleItem data-field="name" :is-required="true"/>
                     <DxSimpleItem data-field="officeNumber">
                         <DxNumericRule
                             message="This field should contain a number"
                         />
                     </DxSimpleItem>
-                    <DxSimpleItem data-field="notes"/>
-                    <DxSimpleItem data-field="phone"/>
-                    <DxSimpleItem data-field="skype"/>
                     <DxSimpleItem data-field="email">
                         <DxEmailRule
                             message="This is not a valid Email"
@@ -195,20 +173,13 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
         DxForm, 
         DxSimpleItem, 
         DxGroupItem,
-        DxButtonItem
+        DxButtonItem,
         DxNumericRule, 
         DxEmailRule
     } from 'devextreme-vue/form';
     
     const employee = {
-        name: 'John Heart',
-        position: 'CEO',
-        hireDate: new Date(2012, 4, 13),
-        officeNumber: 901,
-        phone: '+1(213) 555-9392',
-        skype: 'jheart_DX_skype',
-        email: 'jheart@dx-email.com',
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        // ...
     };
 
     const submitButtonOptions = {
@@ -235,7 +206,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
             handleSubmit(e) {
                 setTimeout(() => { 
                     alert("Submitted");          
-                }, 3000);
+                }, 1000);
                 
                 e.preventDefault();
             }
@@ -256,18 +227,11 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
         GroupItem,
         ButtonItem,
         NumericRule,
-        EmailRule,
+        EmailRule
     } from 'devextreme-react/form';
 
     const employee = {
-        name: 'John Heart',
-        position: 'CEO',
-        hireDate: new Date(2012, 4, 13),
-        officeNumber: 901,
-        phone: '+1(213) 555-9392',
-        skype: 'jheart_DX_skype',
-        email: 'jheart@dx-email.com',
-        notes: 'John has been in the Audio/Video industry since 1990.'
+        // ...
     };
 
     const submitButtonOptions = {
@@ -279,7 +243,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
         const handleSubmit = React.useCallback((e) => {
             setTimeout(() => { 
                 alert("Submitted");          
-            }, 3000);
+            }, 1000);
 
             e.preventDefault();
         }, []);
@@ -293,16 +257,11 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                         caption="Personal Information"
                         colCount={2}>
                         <SimpleItem dataField="name" isRequired={true} />
-                        <SimpleItem dataField="position" />
-                        <SimpleItem dataField="hireDate" />
                         <SimpleItem dataField="officeNumber">
                             <NumericRule
                                 message="This field should contain a number"
                             />
                         </SimpleItem>
-                        <SimpleItem dataField="notes" />
-                        <SimpleItem dataField="phone" />
-                        <SimpleItem dataField="skype" />
                         <SimpleItem dataField="email">
                             <EmailRule
                                 message="This is not a valid Email"

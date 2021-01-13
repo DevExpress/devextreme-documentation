@@ -1,4 +1,8 @@
-You can divide form items into several columns. To keep the fixed number of columns, specify the number in the [colCount](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount) property. An item can occupy more than one column. For this, specify the [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) property. In the example below, the `Notes` item spans two columns:
+To keep the fixed number of columns, specify the number in the [colCount](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount) property. 
+
+The Form can also automatically adjust the number of columns to the screen width. Specify the [screenByWidth](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#screenByWidth) and [colCountByScreen](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/colCountByScreen/) properties to enable this feature. 
+
+An item can occupy more than one column. For this, specify the [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) property. In the example below, the `Notes` item spans two columns:
 
 ---
 ##### jQuery
@@ -82,11 +86,11 @@ You can divide form items into several columns. To keep the fixed number of colu
         <DxForm 
             :form-data="employee"
             :col-count="2">
-            <DxItem data-field="name"/>
-            <DxItem data-field="position"/>
-            <DxItem data-field="hireDate"/>
-            <DxItem data-field="officeNumber"/>
-            <DxItem 
+            <DxSimpleItem data-field="name"/>
+            <DxSimpleItem data-field="position"/>
+            <DxSimpleItem data-field="hireDate"/>
+            <DxSimpleItem data-field="officeNumber"/>
+            <DxSimpleItem 
                 data-field="notes"
                 :col-span="2"
             />
@@ -97,7 +101,7 @@ You can divide form items into several columns. To keep the fixed number of colu
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     
     const employee = {
         name: 'John Heart',
@@ -110,7 +114,7 @@ You can divide form items into several columns. To keep the fixed number of colu
     export default {
         components: {
             DxForm,
-            DxItem
+            DxSimpleItem
         },
         data: {
             return: {
@@ -129,7 +133,7 @@ You can divide form items into several columns. To keep the fixed number of colu
 
     import {
         Form,
-        Item
+        SimpleItem
     } from 'devextreme-react/form';
 
     const employee = {
@@ -145,11 +149,11 @@ You can divide form items into several columns. To keep the fixed number of colu
             <Form
                 formData={employee}
                 colCount={2}>
-                <Item dataField="name" />
-                <Item dataField="position" />
-                <Item dataField="hireDate" />
-                <Item dataField="officeNumber" />
-                <Item 
+                <SimpleItem dataField="name" />
+                <SimpleItem dataField="position" />
+                <SimpleItem dataField="hireDate" />
+                <SimpleItem dataField="officeNumber" />
+                <SimpleItem 
                     dataField="notes"
                     colSpan={2}
                 />

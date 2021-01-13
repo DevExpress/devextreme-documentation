@@ -79,9 +79,9 @@ Use the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#i
     <template>
         <DxForm 
             :form-data="employee">
-            <DxItem data-field="name"/>
-            <DxItem data-field="officeNumber"/>
-            <DxItem 
+            <DxSimpleItem data-field="name"/>
+            <DxSimpleItem data-field="officeNumber"/>
+            <DxSimpleItem 
                 data-field="hireDate"
                 :editor-options="hireDateOptions"
             />
@@ -92,7 +92,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#i
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxItem } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     
     const employee = {
         name: 'John Heart',
@@ -107,7 +107,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#i
     export default {
         components: {
             DxForm,
-            DxItem
+            DxSimpleItem
         },
         data: {
             return: {
@@ -127,7 +127,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#i
 
     import {
         Form,
-        Item
+        SimpleItem
     } from 'devextreme-react/form';
 
     const employee = {
@@ -143,9 +143,9 @@ Use the [items[]](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#i
     const App = () => {
         return (
             <Form formData={employee}>
-                <Item dataField="name" />
-                <Item dataField="officeNumber" />
-                <Item 
+                <SimpleItem dataField="name" />
+                <SimpleItem dataField="officeNumber" />
+                <SimpleItem 
                     dataField="hireDate"
                     editorOptions={hireDateOptions}
                 />

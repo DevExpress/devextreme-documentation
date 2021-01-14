@@ -10,7 +10,7 @@ Configures the columns.
 
 ---
 
-This option accepts an array of objects, where each object configures a single column. If a column does not need to be customized, this array may include the name of the field that provides data for this column.
+This property accepts an array of objects, where each object configures a single column. If a column does not need to be customized, this array may include the name of the field that provides data for this column.
 
 ![DevExtreme File Manager - Columns](/images/FileManager/details-columns.png)
 

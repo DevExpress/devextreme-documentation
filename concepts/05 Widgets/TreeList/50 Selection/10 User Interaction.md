@@ -1,4 +1,4 @@
-The **TreeList** UI component supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode') option to change the current mode.
+The **TreeList** UI component supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode') property to change the current mode.
 
 ---
 ##### jQuery
@@ -40,7 +40,7 @@ In the single mode, only one row can be selected at a time. In multiple mode, ro
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Sorting](/images/treelist/selection.png)
 
-You can disable the latter feature by setting the **selection**.[allowSelectAll](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#allowSelectAll') option to **false**.
+You can disable the latter feature by setting the **selection**.[allowSelectAll](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#allowSelectAll') property to **false**.
 
 ---
 ##### jQuery
@@ -80,7 +80,7 @@ You can disable the latter feature by setting the **selection**.[allowSelectAll]
     
 ---
 
-Selection is non-recursive by default, that is, only the clicked row is selected. Assign **true** to the **selection**.[recursive](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/selection/recursive.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#recursive') option to make selection recursive. After that, a click on a row also selects nested rows, and a click on the column header's check box selects all rows disregarding applied filters.
+Selection is non-recursive by default, that is, only the clicked row is selected. Assign **true** to the **selection**.[recursive](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/selection/recursive.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#recursive') property to make selection recursive. After that, a click on a row also selects nested rows, and a click on the column header's check box selects all rows disregarding applied filters.
 
 ---
 ##### jQuery

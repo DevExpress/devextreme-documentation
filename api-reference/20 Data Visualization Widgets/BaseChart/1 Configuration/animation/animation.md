@@ -4,7 +4,7 @@ type: Object | Boolean
 ---
 ---
 ##### shortDescription
-Specifies animation options.
+Specifies animation properties.
 
 ---
 The UI component animates its elements at the beginning of its lifetime and when the data source changes.

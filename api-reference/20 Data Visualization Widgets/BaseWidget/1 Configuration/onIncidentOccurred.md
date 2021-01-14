@@ -32,7 +32,7 @@ The incident's ID. The full list of IDs can be found in the **Errors and Warning
 * **type**        
 The incident's type: *"error"* or *"warning"*.
 * **args**    
-The argument of the incident's message. Depends on the incident. For example, it may be the name of the data source field that was specified incorrectly, or the name of the option that was not set properly.
+The argument of the incident's message. Depends on the incident. For example, it may be the name of the data source field that was specified incorrectly, or the name of the property that was not set properly.
 * **text**        
 The text passed to the browser's console. Includes the **args** content, if there is any.
 * **widget**    

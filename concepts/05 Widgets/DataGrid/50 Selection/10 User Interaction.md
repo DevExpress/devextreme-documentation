@@ -1,4 +1,4 @@
-The **DataGrid** UI component supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#mode') option to change the current mode.
+The **DataGrid** UI component supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#mode') property to change the current mode.
 
 ---
 ##### jQuery
@@ -184,7 +184,7 @@ The check box in the column's header selects all rows or only the currently rend
 
 ---
 
-You can prevent users from selecting all rows by setting the **selection**.[allowSelectAll](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#allowSelectAll') option to **false**.
+You can prevent users from selecting all rows by setting the **selection**.[allowSelectAll](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#allowSelectAll') property to **false**.
 
 ---
 ##### jQuery
@@ -279,7 +279,7 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     
 ---
 
-The [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#showCheckBoxesMode') option specifies when the UI component renders check boxes in the selection column. For example, the following code tells the UI component to never render them, though a user can still select rows using [keyboard shortcuts](/concepts/05%20Widgets/DataGrid/75%20Keyboard%20Support.md '/Documentation/Guide/Widgets/DataGrid/Keyboard_Support/'):
+The [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#showCheckBoxesMode') property specifies when the UI component renders check boxes in the selection column. For example, the following code tells the UI component to never render them, though a user can still select rows using [keyboard shortcuts](/concepts/05%20Widgets/DataGrid/75%20Keyboard%20Support.md '/Documentation/Guide/Widgets/DataGrid/Keyboard_Support/'):
 
 ---
 ##### jQuery

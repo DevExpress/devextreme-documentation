@@ -11,7 +11,7 @@ Specifies whether a single or multiple nodes can be in the selected state simult
 ---
 In a *single* mode, only one node can be in the selected state at one moment. When the user selects another node, the formerly selected node becomes unselected. In a *multiple* mode, any number of nodes can be in the selected state.
 
-To implement selection, assign the following or similar callback function to the [onClick](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/onClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#onClick') option.
+To implement selection, assign the following or similar callback function to the [onClick](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/onClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#onClick') property.
 
     <!--JavaScript-->var treeMapOptions = {
         // ...

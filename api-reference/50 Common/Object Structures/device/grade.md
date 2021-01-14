@@ -19,7 +19,7 @@ iPhone 4- devices, Android 4.3 -
 - **'C'**  
 No devices with this grade are known now.
 
-Use the **grade** option when specifying the device on which a particular animation can be used. 
+Use the **grade** property when specifying the device on which a particular animation can be used. 
 
     <!--JavaScript-->DevExpress.animationPresets.registerPreset("my-animation", {
         animation: 'fade',

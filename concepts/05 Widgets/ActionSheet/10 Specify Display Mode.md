@@ -1,4 +1,4 @@
-By default, the **ActionSheet** comes up from the bottom of the page. If you set the [usePopover](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#usePopover') option to **true**, the action sheet will pop over a certain element on the page. Use the [target](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#target') option to specify this element.
+By default, the **ActionSheet** comes up from the bottom of the page. If you set the [usePopover](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#usePopover') property to **true**, the action sheet will pop over a certain element on the page. Use the [target](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxActionSheet/Configuration/#target') property to specify this element.
 
 ---
 ##### jQuery

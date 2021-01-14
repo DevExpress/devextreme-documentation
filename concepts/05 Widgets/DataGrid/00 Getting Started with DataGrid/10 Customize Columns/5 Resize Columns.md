@@ -1,4 +1,4 @@
-Grid columns have equal widths by default. You can set each column's [width](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#width) or indicate that all columns should adjust their widths to their content ([columnAutoWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnAutoWidth)). Users can resize columns if you enable the [allowColumnResizing](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#allowColumnResizing) option.
+Grid columns have equal widths by default. You can set each column's [width](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#width) or indicate that all columns should adjust their widths to their content ([columnAutoWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnAutoWidth)). Users can resize columns if you enable the [allowColumnResizing](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#allowColumnResizing) property.
 
 ---
 ##### jQuery

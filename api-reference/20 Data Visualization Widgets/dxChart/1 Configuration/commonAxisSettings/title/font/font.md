@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for the axis title.
+Specifies font properties for the axis title.
 
 ---

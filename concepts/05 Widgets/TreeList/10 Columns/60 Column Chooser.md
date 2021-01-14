@@ -40,7 +40,7 @@ The column chooser allows a user to change the set of columns at runtime. It is 
 
 <img src="/images/treelist/visual_elements/column-chooser_draganddrop-mode.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList ColumnChooser" style="margin-right:60px" /> <img src="/images/treelist/visual_elements/column-chooser_select-mode.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList ColumnChooser" style="margin-right:90px" />
 
-Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowHiding') option to **false** if it should never be hidden. For columns whose headers should never appear in the column chooser, set the [showInColumnChooser](/api-reference/_hidden/GridBaseColumn/showInColumnChooser.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#showInColumnChooser') option to **false**.
+Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowHiding') property to **false** if it should never be hidden. For columns whose headers should never appear in the column chooser, set the [showInColumnChooser](/api-reference/_hidden/GridBaseColumn/showInColumnChooser.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#showInColumnChooser') property to **false**.
 
 ---
 ##### jQuery

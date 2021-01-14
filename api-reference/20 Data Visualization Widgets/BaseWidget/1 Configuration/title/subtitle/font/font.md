@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for the subtitle.
+Specifies font properties for the subtitle.
 
 ---

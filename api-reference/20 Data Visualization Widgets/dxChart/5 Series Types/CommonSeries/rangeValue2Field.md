@@ -6,7 +6,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Coupled with the **rangeValue1Field** option, specifies which data source field provides values for a range-like series.
+Coupled with the **rangeValue1Field** property, specifies which data source field provides values for a range-like series.
 
 ##### propertyOf
 dxChartSeriesTypes.RangeBarSeries,dxChartSeriesTypes.RangeAreaSeries

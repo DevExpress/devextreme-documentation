@@ -9,7 +9,7 @@ default: 'date'
 A format used to display date/time information.
 
 ---
-You can assign the following values to this option:
+You can assign the following values to this property:
 
 - date - the UI component displays only the date;
 - time - the UI component displays only the time;

@@ -9,7 +9,7 @@ default: 'localStorage'
 Specifies the type of storage where the state is saved.
 
 ---
-This option accepts the following values: 
+This property accepts the following values: 
 
 - *"sessionStorage"*    
     The state is stored for the duration of the browser's session.

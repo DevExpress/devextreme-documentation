@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Toast** UI component.
+An object defining configuration properties for the **Toast** UI component.
 
 ---
 #####See Also#####

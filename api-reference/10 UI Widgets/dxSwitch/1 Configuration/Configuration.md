@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **Switch** UI component.
+An object defining configuration properties for the **Switch** UI component.
 
 ---
 #####See Also#####

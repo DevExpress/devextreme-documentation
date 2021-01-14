@@ -9,9 +9,9 @@ default: 'onlyPoint'
 Specifies series elements to be highlighted when a user selects a point.
 
 ---
-[note]Though not provided out of the box, the selection capability can be implemented using the UI component API. Refer to the [onPointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointClick') option description for details.
+[note]Though not provided out of the box, the selection capability can be implemented using the UI component API. Refer to the [onPointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointClick') property description for details.
 
-When a user selects a point, its series may react in one of the following ways depending on the value of the **selectionMode** option.
+When a user selects a point, its series may react in one of the following ways depending on the value of the **selectionMode** property.
 
 * **onlyPoint**   
 Only the selected series point changes its style.

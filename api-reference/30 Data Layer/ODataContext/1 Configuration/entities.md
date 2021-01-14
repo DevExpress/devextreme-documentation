@@ -7,7 +7,7 @@ type: any
 Specifies entity collections to be accessed.
 
 ---
-The **ODataContext** creates an **ODataStore** per entity collection, so you need to use [ODataStore options](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/') for configuring access to entity collections. In the following code, access to the `Employees` and `Customers` entity collections is configured, but only `Customers` is loaded using the [load()](/api-reference/30%20Data%20Layer/Store/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#load') method:
+The **ODataContext** creates an **ODataStore** per entity collection, so you need to use [ODataStore properties](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/') for configuring access to entity collections. In the following code, access to the `Employees` and `Customers` entity collections is configured, but only `Customers` is loaded using the [load()](/api-reference/30%20Data%20Layer/Store/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#load') method:
 
 ---
 #####jQuery

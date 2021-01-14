@@ -5,6 +5,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-An object that defines configuration options for chart series.
+An object that defines configuration properties for chart series.
 
 ---

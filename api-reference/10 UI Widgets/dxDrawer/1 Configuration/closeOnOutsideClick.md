@@ -14,7 +14,7 @@ The raised event. It is a [dxEvent](/api-reference/50%20Common/Object%20Structur
 **true** if the UI component should be closed; otherwise **false**.
 
 ---
-The function passed to this option enables you to specify a custom condition for UI component closing. For instance, you can prevent closing until a user clicks a specific element on the view:
+The function passed to this property enables you to specify a custom condition for UI component closing. For instance, you can prevent closing until a user clicks a specific element on the view:
 
 ---
 #####jQuery

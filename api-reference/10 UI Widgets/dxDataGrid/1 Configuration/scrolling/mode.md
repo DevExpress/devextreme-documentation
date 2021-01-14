@@ -17,12 +17,12 @@ A user scrolls a single page only. Scrolling is available only if [all the page'
 - **Infinite**      
 Each next page is loaded once the scrollbar reaches the end of its scale. In this mode, users scroll data gradually from the first to the last page.
 
-    [note]Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#allowCollapsing') option to **false** when using infinite scrolling in conjunction with grouping.
+    [note]Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#allowCollapsing') property to **false** when using infinite scrolling in conjunction with grouping.
     
 - **Virtual**       
 Rows are loaded when they get into the viewport and removed once they leave it. If the rows take time to be loaded and rendered, they display gray boxes. [Rendering optimization](/concepts/05%20Widgets/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/030%20Rendering%20Optimization.md '/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization') can reduce rendering time and remove gray boxes. In this mode, users can move to any page instantly.
 
-Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') option to specify the number of rows on a page.
+Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') property to specify the number of rows on a page.
 
 #include common-ref-enum with {
     enum: "`GridScrollingMode`",

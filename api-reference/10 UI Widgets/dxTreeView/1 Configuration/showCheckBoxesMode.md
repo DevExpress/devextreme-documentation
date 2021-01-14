@@ -9,7 +9,7 @@ default: 'none'
 Specifies the checkbox display mode.
 
 ---
-The option accepts the following values:
+The property accepts the following values:
 
 - *"none"*    
 The UI component does not display checkboxes.

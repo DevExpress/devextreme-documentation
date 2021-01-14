@@ -1,4 +1,4 @@
-When the **LoadPanel** is shown, the area beneath it can be shaded. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#shadingColor') option.
+When the **LoadPanel** is shown, the area beneath it can be shaded. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#shadingColor') property.
 
 ---
 ##### jQuery

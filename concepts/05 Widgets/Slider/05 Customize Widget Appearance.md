@@ -212,7 +212,7 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
 
 ---
 
-To specify whether or not the part of the scale from the beginning to the slider handle should be highlighted, use the **showRange** option.
+To specify whether or not the part of the scale from the beginning to the slider handle should be highlighted, use the **showRange** property.
 
 ---
 ##### jQuery

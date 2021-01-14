@@ -1,4 +1,4 @@
-To change the text displayed by the **LoadPanel**, use the [message](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/message.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#message') option.
+To change the text displayed by the **LoadPanel**, use the [message](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/message.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#message') property.
 
 ---
 ##### jQuery

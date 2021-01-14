@@ -6,6 +6,6 @@ dep: dxLookup.Options.dropDownOptions
 ---
 ---
 ##### shortDescription
-An object defining UI component [positioning options](/api-reference/50%20Common/Object%20Structures/positionConfig '/Documentation/ApiReference/Common/Object_Structures/positionConfig/').
+An object defining UI component [positioning properties](/api-reference/50%20Common/Object%20Structures/positionConfig '/Documentation/ApiReference/Common/Object_Structures/positionConfig/').
 
 ---

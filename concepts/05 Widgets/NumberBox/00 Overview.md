@@ -88,7 +88,7 @@ The following code adds the **NumberBox** to your page. The simplest configurati
 
 ---
 
-In most cases, it is useful to specify the range of possible values. For this purpose, set the [min](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/min.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/max.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#max') options.
+In most cases, it is useful to specify the range of possible values. For this purpose, set the [min](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/min.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/max.md '/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/#max') properties.
 
 ---
 ##### jQuery

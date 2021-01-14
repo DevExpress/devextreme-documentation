@@ -9,7 +9,7 @@ Gets subvalues.
 The subvalues.
 
 ---
-See the **subvalues** option description for more information on gauge subvalues.
+See the **subvalues** property description for more information on gauge subvalues.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ValueIndicatorsApi/"

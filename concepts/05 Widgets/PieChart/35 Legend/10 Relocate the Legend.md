@@ -1,4 +1,4 @@
-The legend can be aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#verticalAlignment') option.
+The legend can be aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/#verticalAlignment') property.
 
 ---
 ##### jQuery
@@ -84,7 +84,7 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
 
 ---
 
-Below, you can try out these options in action.
+Below, you can try out these properties in action.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/PieChartLegend/relocateTheLegend.html, /Content/Applications/21_1/DataVisualization/Guides/PieChartLegend/relocateTheLegend.js, /Content/Applications/21_1/DataVisualization/Guides/PieChartLegend/relocateTheLegend.css"></div>
 

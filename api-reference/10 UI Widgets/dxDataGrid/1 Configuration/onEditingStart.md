@@ -15,7 +15,7 @@ Information about the event that caused the function's execution.
 Allows you to cancel row editing.
 
 ##### field(e.column): Object
-The [configuration](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/') of the column whose cell is switching to the editing state. Available in the *"batch"* [editing mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode').
+The [configuration](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/') of the column whose cell is switching to the editing state. Available in the *"cell"* and *"batch"* [editing modes](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode').
 
 ##### field(e.component): {WidgetName}
 The widget's instance.

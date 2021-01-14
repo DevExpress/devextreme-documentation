@@ -28,6 +28,7 @@ The values of the deleted dependency.
 
 ---
 
+![DevExtreme Gantt - Dependency](~/images/Gantt/dependency-element.png)
 
 ---
 

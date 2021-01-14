@@ -1,8 +1,8 @@
-Exposes the **Diagram** widget.
+Exposes the **Diagram** UI component.
 
 Exports:
 
-- *default* - The [Diagram](/api-reference/10%20UI%20Widgets/dxDiagram '/Documentation/ApiReference/UI_Widgets/dxDiagram/') widget
+- *default* - The [Diagram](/api-reference/10%20UI%20Widgets/dxDiagram '/Documentation/ApiReference/UI_Widgets/dxDiagram/') UI component
 
         require("ui/diagram") ; 
         // ===== or =====

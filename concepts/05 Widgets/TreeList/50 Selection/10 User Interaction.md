@@ -1,4 +1,4 @@
-The **TreeList** widget supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode') option to change the current mode.
+The **TreeList** UI component supports single and multiple row selection. Use the **selection**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode') option to change the current mode.
 
 ---
 ##### jQuery
@@ -38,7 +38,7 @@ The **TreeList** widget supports single and multiple row selection. Use the **se
 
 In the single mode, only one row can be selected at a time. In multiple mode, rows are supplied with check boxes for multiple selection. A check box in the first column's header allows a user to select all rows at once. Clicking this check box selects only those rows that meet the filtering conditions if a filter is applied.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList Sorting](/images/treelist/selection.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Sorting](/images/treelist/selection.png)
 
 You can disable the latter feature by setting the **selection**.[allowSelectAll](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#allowSelectAll') option to **false**.
 

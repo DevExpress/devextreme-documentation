@@ -3,10 +3,10 @@ id: GridBase.hasEditData()
 ---
 ---
 ##### shortDescription
-Checks whether the widget has unsaved changes.
+Checks whether the UI component has unsaved changes.
 
 ##### return: Boolean
-**true** if the widget has unsaved changes; otherwise - **false**.
+**true** if the UI component has unsaved changes; otherwise - **false**.
 
 ---
 #####See Also#####

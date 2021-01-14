@@ -111,4 +111,4 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
 
 ---
 
-See <a href="https://community.devexpress.com/blogs/oliver/archive/2017/03/24/devextreme-real-world-patterns.aspx" target="_blank">this series of blog posts</a> for more information on using DevExtreme widgets in applications with MongoDB.
+See <a href="https://community.devexpress.com/blogs/oliver/archive/2017/03/24/devextreme-real-world-patterns.aspx" target="_blank">this series of blog posts</a> for more information on using DevExtreme UI components in applications with MongoDB.

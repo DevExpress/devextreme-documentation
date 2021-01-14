@@ -5,6 +5,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-A base class for text editing widgets.
+A base class for text editing UI components.
 
 ---

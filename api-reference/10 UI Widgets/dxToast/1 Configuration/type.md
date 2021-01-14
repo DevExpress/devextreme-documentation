@@ -6,12 +6,12 @@ default: 'info'
 ---
 ---
 ##### shortDescription
-Specifies the **Toast** widget type.
+Specifies the **Toast** UI component type.
 
 ---
 The available toast types (except for "custom") only differ by the icon and background color.
 
-If you assign "custom" to the **type** option, the `dx-toast-custom` class is applied to the widget element. Implement the appropriate CSS class to specify toast appearance.
+If you assign "custom" to the **type** option, the `dx-toast-custom` class is applied to the UI component element. Implement the appropriate CSS class to specify toast appearance.
 
 #include common-ref-enum with {
     enum: "`ToastType`",

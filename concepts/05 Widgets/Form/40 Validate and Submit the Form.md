@@ -1,4 +1,4 @@
-The **Form** widget uses the built-in validation engine to validate form item values. You can attach validation rules to a simple item using its [validationRules](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/validationRules.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#validationRules') option when you [create items explicitly](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/01%20Create%20a%20Simple%20Item.md '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/#Create_a_Simple_Item')...
+The **Form** UI component uses the built-in validation engine to validate form item values. You can attach validation rules to a simple item using its [validationRules](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/validationRules.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#validationRules') option when you [create items explicitly](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/01%20Create%20a%20Simple%20Item.md '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/#Create_a_Simple_Item')...
 
 ---
 ##### jQuery
@@ -306,7 +306,7 @@ A single **Form** editor is validated individually once its value changes. If th
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/UIWidgets/dxForm/Validation/markup.html, /Content/Applications/20_1/UIWidgets/dxForm/Validation/script.js, /Content/Applications/20_1/UIWidgets/dxForm/common-styles.css"></div>
 
-Usually, **Form** editors should be submitted to the server after being successfully validated on the client. The following code shows how to do this using a [button form item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/ButtonItem/'). Note that the **Form** widget is wrapped in the <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">`<form>`</a> tag in the markup.
+Usually, **Form** editors should be submitted to the server after being successfully validated on the client. The following code shows how to do this using a [button form item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/ButtonItem/'). Note that the **Form** UI component is wrapped in the <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">`<form>`</a> tag in the markup.
 
 ---
 ##### jQuery

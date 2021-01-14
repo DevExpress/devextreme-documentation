@@ -1,8 +1,8 @@
-The **Chart** and **RangeSelector** widgets can operate together, allowing an end-user to zoom and scroll through a chart. Follow the steps below to implement these capabilities.
+The **Chart** and **RangeSelector** UI components can operate together, allowing an end-user to zoom and scroll through a chart. Follow the steps below to implement these capabilities.
 
 - **Configure Chart**     
 
-    Create and configure the **Chart** widget using one of the available data-binding approaches. For details, see the "Create and Configure a Widget" guide for [jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component'), [AngularJS](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget/') or [Knockout](/concepts/Getting%20Started/Widget%20Basics%20-%20Knockout/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Create_and_Configure_a_Widget/').
+    Create and configure the **Chart** UI component using one of the available data-binding approaches. For details, see the "Create and Configure a Widget" guide for [jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component'), [AngularJS](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget/') or [Knockout](/concepts/Getting%20Started/Widget%20Basics%20-%20Knockout/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Create_and_Configure_a_Widget/').
 
         <!--JavaScript-->var chartOptions = {
             // Chart configuration
@@ -10,7 +10,7 @@ The **Chart** and **RangeSelector** widgets can operate together, allowing an en
         
 - **Configure RangeSelector**     
 
-    Create and configure the **RangeSelector** widget in a similar manner. **Chart** and **RangeSelector** must have completely identical argument axes. Hence, you need to assign the same data source to both widgets.
+    Create and configure the **RangeSelector** UI component in a similar manner. **Chart** and **RangeSelector** must have completely identical argument axes. Hence, you need to assign the same data source to both UI components.
         
         <!--JavaScript-->var dataSource = [...];
         var chartOptions = {
@@ -22,7 +22,7 @@ The **Chart** and **RangeSelector** widgets can operate together, allowing an en
             // ...
         };
         
-    Optionally, you can display the chart in miniature in the background of **RangeSelector**. For this purpose, assign the same array of series configurations to both widgets.
+    Optionally, you can display the chart in miniature in the background of **RangeSelector**. For this purpose, assign the same array of series configurations to both UI components.
 
         <!--JavaScript-->var dataSource = [...];
         var series = [...];
@@ -39,7 +39,7 @@ The **Chart** and **RangeSelector** widgets can operate together, allowing an en
             // ...
         };
         
-- **Implement Widget Interaction**      
+- **Implement UI component Interaction**      
 
     To make **Chart** and **RangeSelector** interact with each other, handle the [valueChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/4%20Events/valueChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Events/#valueChanged') event. For this purpose, assign a function to the [onValueChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/#onValueChanged') option of **RangeSelector**. Within this function, call the [zoomArgument](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/3%20Methods/zoomArgument(startValue_endValue).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#zoomArgumentstartValue_endValue') method of the [chart instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#instance'). This method accepts the start and end range values as its parameters.
 

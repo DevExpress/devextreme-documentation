@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-An object defining common configuration options for all widgets.
+An object defining common configuration options for all UI components.
 
 ---

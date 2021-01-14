@@ -1,4 +1,4 @@
-In the widgets provided by the DevExtreme Data Visualization library, you can easily customize the automatically generated text for the following widget elements.
+In the UI components provided by the DevExtreme Data Visualization library, you can easily customize the automatically generated text for the following UI component elements.
 
 **Chart** and **PolarChart**
     
@@ -42,9 +42,9 @@ In the widgets provided by the DevExtreme Data Visualization library, you can ea
 
 - [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/tooltip/')
 
-For this purpose, the widgets provide a uniform set of options. No matter where you need to customize text, you always have the **format** and **customizeText** (or **customizeTooltip** for tooltips) options.
+For this purpose, the UI components provide a uniform set of options. No matter where you need to customize text, you always have the **format** and **customizeText** (or **customizeTooltip** for tooltips) options.
 
-Also, DevExtreme widgets provide a set of predefined formats that cover most cases of applying a format. These formats can be divided into three groups.
+Also, DevExtreme UI components provide a set of predefined formats that cover most cases of applying a format. These formats can be divided into three groups.
 
 - **Numeric Formats**
 - **Date-Time Formats**

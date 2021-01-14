@@ -109,7 +109,7 @@ The following code adds the **CheckBox** to your page.
 
 ---
 
-The **CheckBox** widget can have the following states: checked (the **value** option is _true_), unchecked (**value** is _false_), undetermined (**value** is _undefined_).
+The **CheckBox** UI component can have the following states: checked (the **value** option is _true_), unchecked (**value** is _false_), undetermined (**value** is _undefined_).
 
 #####See Also#####
 #include common-link-configurewidget

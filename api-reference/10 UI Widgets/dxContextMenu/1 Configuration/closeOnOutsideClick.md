@@ -8,13 +8,13 @@ default: true
 Specifies whether to close the **ContextMenu** if a user clicks outside it.
 
 ##### param(event): event
-The event that caused widget closing. It is a [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery.
+The event that caused UI component closing. It is a [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery.
 
 ##### return: Boolean
-**true** if the widget should be closed; otherwise **false**.
+**true** if the UI component should be closed; otherwise **false**.
 
 ---
-The function passed to this option enables you to specify a custom condition for closing the widget. For instance, you can prevent closing until a user clicks a certain element.
+The function passed to this option enables you to specify a custom condition for closing the UI component. For instance, you can prevent closing until a user clicks a certain element.
 
 ---
 #####jQuery

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes options that configure the **Sankey** widget's contents, behavior and appearance.
+This section describes options that configure the **Sankey** UI component's contents, behavior and appearance.
 
 ---
 #####See Also#####

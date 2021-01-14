@@ -1,4 +1,4 @@
-The **TreeList** is a widget that represents data from a local or remote source in the form of a multi-column tree view.
+The **TreeList** is a UI component that represents data from a local or remote source in the form of a multi-column tree view.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/UiWidgets/Guides/TreeListOverview/treeListExample.html, /Content/Applications/20_1/UiWidgets/Guides/TreeListOverview/treeListExample.js"></div>
 

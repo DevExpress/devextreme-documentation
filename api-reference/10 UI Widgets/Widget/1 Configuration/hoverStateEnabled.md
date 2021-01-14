@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widget changes its state when a user pauses on it.
+Specifies whether the UI component changes its state when a user pauses on it.
 
 ---

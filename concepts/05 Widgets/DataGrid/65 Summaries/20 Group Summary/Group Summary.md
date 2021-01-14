@@ -1,6 +1,6 @@
 A group summary aggregates data in groups by columns. You can associate each column with one or more summary items of different types.
 
-![DevExtreme HTML5/JavaScript DataGrid Widget Group Summary](/images/DataGrid/GroupSummary.png)
+![DevExtreme HTML5/JavaScript DataGrid UI component Group Summary](/images/DataGrid/GroupSummary.png)
 
 Configure each summary item in the **summary**.[groupItems](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/') array. The simplest item configuration requires a [column that provides data](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/column.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#column') and the [aggregate function](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#summaryType') to be specified. Note that each group summary item is calculated only for those rows that meet filtering conditions if a filter is applied.
 

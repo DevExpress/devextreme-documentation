@@ -19,7 +19,7 @@ Specifies whether *a* goes before *b*.
 ---
 When this option is set to **true**, the series points are drawn in order of increasing argument. Otherwise, the order of drawing the series points is the same as the order of objects in the data source.
 
-[note]We recommend setting this option to **false** if objects in the data source are already sorted properly. This will improve widget performance.
+[note]We recommend setting this option to **false** if objects in the data source are already sorted properly. This will improve UI component performance.
 
 Alternatively, you can specify the drawing order using a comparison function. It accepts two data source objects and should return the value on which the order will depend. For example, assume that *A* and *B* objects represent two series points. If the function returns a value less than 0, point *A* will be drawn _before_ point *B*. If the function returns a value greater than 0, point *A* will be drawn _after_ point *B*. If the function returns 0, the drawing order of *A* and *B* remains unchanged.
 

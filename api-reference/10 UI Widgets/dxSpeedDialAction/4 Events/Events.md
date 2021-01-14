@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events raised by the **SpeedDialAction** widget.
+This section describes events raised by the **SpeedDialAction** UI component.
 
 ---
 #####See Also#####

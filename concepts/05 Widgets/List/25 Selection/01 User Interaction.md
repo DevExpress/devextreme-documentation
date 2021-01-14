@@ -1,4 +1,4 @@
-In the **List** widget, selection is disabled by default. To enable it, choose one of selection modes using the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') option.
+In the **List** UI component, selection is disabled by default. To enable it, choose one of selection modes using the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#selectionMode') option.
 
 ---
 ##### jQuery

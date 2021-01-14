@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes options that configure **Sortable** widget content, behavior, and appearance.
+This section describes options that configure **Sortable** UI component content, behavior, and appearance.
 
 ---
 #####See Also#####

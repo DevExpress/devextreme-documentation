@@ -1,4 +1,4 @@
-With the **DataGrid** widget, a user can sort by single and multiple columns. Use the **sorting**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sorting/#mode') option to specify the current sorting mode.
+With the **DataGrid** UI component, a user can sort by single and multiple columns. Use the **sorting**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sorting/#mode') option to specify the current sorting mode.
 
 ---
 ##### jQuery
@@ -86,13 +86,13 @@ In multiple mode, the user clicks a column header while pressing the Shift key t
 
 In both modes, the user can use the column header's context menu to apply sorting.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget DataGrid Sorting](/images/DataGrid/visual_elements/sorting_sorted_columns.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Sorting](/images/DataGrid/visual_elements/sorting_sorted_columns.png)
 
 To cancel a column's sorting settings, the user clicks the column's header while pressing Ctrl or uses the context menu:
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget DataGrid Sorting](/images/DataGrid/visual_elements/sorting_context_menu.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Sorting](/images/DataGrid/visual_elements/sorting_context_menu.png)
 
-To disable sorting in the whole widget, set the **sorting**.**mode** option to *"none"*; to disable sorting only in a specific column, use its [allowSorting](/api-reference/_hidden/GridBaseColumn/allowSorting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowSorting') option.
+To disable sorting in the whole UI component, set the **sorting**.**mode** option to *"none"*; to disable sorting only in a specific column, use its [allowSorting](/api-reference/_hidden/GridBaseColumn/allowSorting.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowSorting') option.
 
 ---
 ##### jQuery

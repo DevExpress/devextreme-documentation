@@ -1,4 +1,4 @@
-When choosing the layout for a specific screen, the widget considers the screen's size qualifier. There are four size qualifiers in all.
+When choosing the layout for a specific screen, the UI component considers the screen's size qualifier. There are four size qualifiers in all.
 
 <table class="dx-table">
     <tr>

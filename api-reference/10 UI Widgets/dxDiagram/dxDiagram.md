@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **Diagram** widget provides a visual interface to help you design new and modify existing diagrams.
+The **Diagram** UI component provides a visual interface to help you design new and modify existing diagrams.
 
 ##### widgettree
 width: 500,

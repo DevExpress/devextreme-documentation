@@ -6,7 +6,7 @@ inheritsType: dxHtmlEditorToolbar
 ---
 ---
 ##### shortDescription
-Configures the widget's toolbar.
+Configures the UI component's toolbar.
 
 ---
 ![DevExtreme HTML5 JavaScript HtmlEditor Toolbar](/images/htmlEditor/visual_elements/toolbar.png)

@@ -11,7 +11,7 @@ Specifies the header filter's data source.
 Data source options.
 
 ##### field(options.component): Object
-The widget's instance.
+The UI component's instance.
 
 ##### field(options.dataSource): DataSource_Options
 A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance.

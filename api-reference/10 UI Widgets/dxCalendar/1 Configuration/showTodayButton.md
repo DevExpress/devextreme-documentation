@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not the widget displays a button that selects the current date.
+Specifies whether or not the UI component displays a button that selects the current date.
 
 ---

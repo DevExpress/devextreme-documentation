@@ -1,4 +1,4 @@
-The **Tooltip** widget displays a tooltip for a specified element on the page.
+The **Tooltip** UI component displays a tooltip for a specified element on the page.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview/"

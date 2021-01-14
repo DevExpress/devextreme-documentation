@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-A widget for displaying the result of checking [validation rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/') for editors.
+A UI component for displaying the result of checking [validation rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/') for editors.
 
 ##### lib
 dx.web.js, dx.viz-web.js, dx.all.js

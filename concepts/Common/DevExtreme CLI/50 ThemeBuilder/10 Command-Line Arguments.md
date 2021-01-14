@@ -23,7 +23,7 @@ Exports only base variables used to produce derived variables.
 Specifies the target DevExtreme version or a tag that points to it (the default value is `latest`).
 
 * `--widgets`       
-Specifies a comma-separated list of widgets whose styles should be included in the resulting CSS file. If this argument is not specified, styles of all widgets are included. Syntax example:
+Specifies a comma-separated list of UI components whose styles should be included in the resulting CSS file. If this argument is not specified, styles of all UI components are included. Syntax example:
 
         --widgets=datagrid,treelist,selectbox
 

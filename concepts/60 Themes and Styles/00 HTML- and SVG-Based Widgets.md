@@ -1,6 +1,6 @@
-Widgets from the DevExtreme library are divided into HTML-based and SVG-based. Styling methods depend on the widget's group.
+UI components from the DevExtreme library are divided into HTML-based and SVG-based. Styling methods depend on the UI component's group.
 
-The following widgets are SVG-based:
+The following UI components are SVG-based:
 
 - [BarGauge](/concepts/05%20Widgets/BarGauge/10%20Visual%20Elements '/Documentation/Guide/Widgets/BarGauge/Visual_Elements/')
 - [Bullet](/concepts/05%20Widgets/Bullet/10%20Visual%20Elements '/Documentation/Guide/Widgets/Bullet/Visual_Elements/')
@@ -16,4 +16,4 @@ The following widgets are SVG-based:
 - [TreeMap](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/')
 - [VectorMap](/concepts/05%20Widgets/VectorMap/10%20Visual%20Elements '/Documentation/Guide/Widgets/VectorMap/Visual_Elements/')
 
-Widget customization is described in the [HTML-Based Widgets Customization](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Widgets%20Customization '/Documentation/Guide/Themes_and_Styles/HTML-Based_Widgets_Customization/') and [SVG-Based Widgets Customization](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/') articles. However, we recommend that you choose a [theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') to start customization.
+UI component customization is described in the [HTML-Based UI components Customization](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Widgets%20Customization '/Documentation/Guide/Themes_and_Styles/HTML-Based_Widgets_Customization/') and [SVG-Based UI components Customization](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/') articles. However, we recommend that you choose a [theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') to start customization.

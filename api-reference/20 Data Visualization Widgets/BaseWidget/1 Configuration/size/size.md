@@ -5,10 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the widget's size in pixels.
+Specifies the UI component's size in pixels.
 
 ---
-The widget occupies its container's entire area by default. Use the **size** object to specify the widget's size if it should be different from that of its container. Assign 0 to **size** object's **height** and **width** options to hide the widget.
+The UI component occupies its container's entire area by default. Use the **size** object to specify the UI component's size if it should be different from that of its container. Assign 0 to **size** object's **height** and **width** options to hide the UI component.
 
 ---
 ##### jQuery
@@ -118,7 +118,7 @@ The widget occupies its container's entire area by default. Use the **size** obj
 
 ---
 
-Alternatively, you can style the widget's container using CSS:
+Alternatively, you can style the UI component's container using CSS:
 
 ---
 ##### jQuery

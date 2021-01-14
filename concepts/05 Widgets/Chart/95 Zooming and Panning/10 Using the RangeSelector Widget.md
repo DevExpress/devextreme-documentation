@@ -1,13 +1,13 @@
-The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20Widgets/RangeSelector/10%20Visual%20Elements '/Documentation/Guide/Widgets/RangeSelector/Visual_Elements/') widget. The following code shows how to bind these widgets. Note that the **Chart** and **RangeSelector** have a common data source and may have the same series configuration if the **RangeSelector** should display the **Chart** in the background.
+The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20Widgets/RangeSelector/10%20Visual%20Elements '/Documentation/Guide/Widgets/RangeSelector/Visual_Elements/') UI component. The following code shows how to bind these UI components. Note that the **Chart** and **RangeSelector** have a common data source and may have the same series configuration if the **RangeSelector** should display the **Chart** in the background.
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
     $(function() {
-        // Common data source for both widgets
+        // Common data source for both UI components
         var data = [ ... ];
-        // Common series configuration for both widgets
+        // Common series configuration for both UI components
         var seriesConfiguration = [ ... ];
 
         var chart = $("#chartContainer").dxChart({
@@ -53,9 +53,9 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
     // ...
     export class AppComponent {
         chart_visualRange = [ ... ];
-        // Common data source for both widgets
+        // Common data source for both UI components
         data = [ ... ];
-        // Common series configuration for both widgets
+        // Common series configuration for both UI components
         seriesConfiguration = [ ... ];
     }
     @NgModule({
@@ -106,9 +106,9 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
         data() {
             return {
                 chart_visualRange: [ ... ],
-                // Common data source for both widgets
+                // Common data source for both UI components
                 data: [ ... ],
-                // Common series configuration for both widgets
+                // Common series configuration for both UI components
                 seriesConfiguration: [ ... ]
             };
         }
@@ -127,9 +127,9 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
         Behavior
     } from 'devextreme-react/range-selector';
 
-    // Common data source for both widgets
+    // Common data source for both UI components
     const data = [ ... ];
-    // Common series configuration for both widgets
+    // Common series configuration for both UI components
     const seriesConfiguration = [ ... ];
 
     class App extends React.Component {

@@ -12,4 +12,4 @@ If some values for a series are set to zero or not specified, bars that represen
 
 To set a custom angle for bars, as well as the spacing between bars, use the [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/barWidth.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#barWidth') option.
 
-If the widget's container is not large enough to contain bars of the specified width along with the specified spacing between them, the spacing will be ignored.
+If the UI component's container is not large enough to contain bars of the specified width along with the specified spacing between them, the spacing will be ignored.

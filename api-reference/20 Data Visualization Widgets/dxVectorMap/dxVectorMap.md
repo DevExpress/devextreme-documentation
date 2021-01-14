@@ -6,7 +6,7 @@ inherits: BaseWidget
 ---
 ---
 ##### shortDescription
-The **VectorMap** is a widget that visualizes geographical locations. This widget represents a geographical map that contains areas and markers. Areas embody continents and countries. Markers flag specific points on the map, for example, towns, cities or capitals.
+The **VectorMap** is a UI component that visualizes geographical locations. This UI component represents a geographical map that contains areas and markers. Areas embody continents and countries. Markers flag specific points on the map, for example, towns, cities or capitals.
 
 ##### widgettree
 layers: [{

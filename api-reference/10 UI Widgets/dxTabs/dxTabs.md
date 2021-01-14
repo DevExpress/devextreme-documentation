@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-The **Tabs** is a tab strip used to switch between pages or views. This widget is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') widget, but you can use the **Tabs** separately as well.
+The **Tabs** is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') UI component, but you can use the **Tabs** separately as well.
 
 ##### widgettree
 dataSource: [

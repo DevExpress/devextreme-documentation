@@ -10,7 +10,7 @@ Customizes the [filter expression's](/api-reference/10%20UI%20Widgets/GridBase/1
 Information about the current filter expression.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.filterValue): Object
 The current filter expression.

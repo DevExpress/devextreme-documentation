@@ -12,7 +12,7 @@
     <tr>
         <td>(b) End-users shall have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request, at no additional charge.</td>
         <td>Not Supported</td>
-        <td>The information about DevExtreme widgets’ accessibility and compatibility features is available only in digital format online.</td>
+        <td>The information about DevExtreme UI components’ accessibility and compatibility features is available only in digital format online.</td>
     </tr>
     <tr>
         <td>(c) Support services for products shall accommodate the communication needs of end-users with disabilities.</td>

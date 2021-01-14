@@ -22,7 +22,7 @@ Contains the X and Y coordinates of two diagonally-opposite points in the follow
 The sum total value of all nodes on the current level.
 
 ---
-Layout algorithms determine the position and size of tiles and groups. Therefore, the chosen algorithm plays the definitive role in the resulting look of the widget. **TreeMap** provides the following algorithms out of the box.
+Layout algorithms determine the position and size of tiles and groups. Therefore, the chosen algorithm plays the definitive role in the resulting look of the UI component. **TreeMap** provides the following algorithms out of the box.
 
 * **Squarified**        
 This algorithm lays the items out so that the aspect ratio will be closer to 1. In other words, this algorithm tries to make items as square as possible. 

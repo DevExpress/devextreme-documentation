@@ -12,7 +12,7 @@ A function that is executed after a UI component property is changed.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.fullName): String
 The path to the modified property that includes all parent properties.

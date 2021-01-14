@@ -11,7 +11,7 @@ Specifies a format for the progress status.
 The ratio of the current progress to the entire range. (From 0 to 1)
 
 ##### param(value): Number
-The widget's value.
+The UI component's value.
 
 ##### return: String
 The customized progress status string.

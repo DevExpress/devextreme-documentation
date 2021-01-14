@@ -8,7 +8,7 @@ default: false
 Enables the virtual mode in which nodes are loaded on demand. Use it to enhance the performance on large datasets.
 
 ---
-If this option is **true**, the widget initially loads only the root nodes. Child nodes are loaded when their parent is being expanded.
+If this option is **true**, the UI component initially loads only the root nodes. Child nodes are loaded when their parent is being expanded.
 
 The virtual mode has the following restrictions:
 

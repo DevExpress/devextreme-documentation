@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that specifies configuration options for the **Bullet** widget.
+An object that specifies configuration options for the **Bullet** UI component.
 
 ---
 #####See Also#####

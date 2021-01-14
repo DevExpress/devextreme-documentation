@@ -5,7 +5,7 @@ default: 'title'
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the widget title. Does not apply if the [title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#title') is defined.
+Specifies a custom template for the UI component title. Does not apply if the [title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#title') is defined.
 
 ##### param(titleElement): dxElement
 #include common-ref-elementparam with { element: "title" }

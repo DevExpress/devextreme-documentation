@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the widget allows a user to enter a custom value.
+Specifies whether the UI component allows a user to enter a custom value.
 
 ---

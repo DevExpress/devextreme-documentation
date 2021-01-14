@@ -5,7 +5,7 @@ inherits: BaseLegendItem
 ---
 ---
 ##### shortDescription
-An object that provides information about a legend item in the [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/') and [PolarChart](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/') widgets.
+An object that provides information about a legend item in the [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/') and [PolarChart](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/') UI components.
 
 ---
 #####See Also#####

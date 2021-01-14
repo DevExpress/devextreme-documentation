@@ -12,16 +12,16 @@ A function that is executed when resizing ends.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
 ##### field(e.height): Number
-The current widget height.
+The current UI component height.
 
 ##### field(e.jQueryEvent).deprecated
 Use 'event' instead.
@@ -33,6 +33,6 @@ The jQuery event that caused the handler execution. Deprecated in favor of the *
 Model data. Available only if Knockout is used.
 
 ##### field(e.width): Number
-The current widget width.
+The current UI component width.
 
 ---

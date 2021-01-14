@@ -1,4 +1,4 @@
-The **Switch** is a widget that can be in two states: "On" (when [value](/api-reference/10%20UI%20Widgets/dxSwitch/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxSwitch/Configuration/#value') is **true**) and "Off" (when [value](/api-reference/10%20UI%20Widgets/dxSwitch/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxSwitch/Configuration/#value') is **false**).
+The **Switch** is a UI component that can be in two states: "On" (when [value](/api-reference/10%20UI%20Widgets/dxSwitch/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxSwitch/Configuration/#value') is **true**) and "Off" (when [value](/api-reference/10%20UI%20Widgets/dxSwitch/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxSwitch/Configuration/#value') is **false**).
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/"

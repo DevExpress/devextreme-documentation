@@ -9,7 +9,7 @@ default: 'roadmap'
 The type of a map to display.
 
 ---
-The available option values are based on map types supported by the Google map provider. If you use the Bing map, the widget casts the option value to the appropriate value supported by the "Bing" provider.
+The available option values are based on map types supported by the Google map provider. If you use the Bing map, the UI component casts the option value to the appropriate value supported by the "Bing" provider.
 
 - hybrid -> Aerial
 - roadmap -> Road

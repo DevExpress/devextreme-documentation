@@ -1,4 +1,4 @@
-The following widgets allow you to declare their content directly in the markup:
+The following UI components allow you to declare their content directly in the markup:
 
 - [Drawer](/api-reference/10%20UI%20Widgets/dxDrawer '/Documentation/ApiReference/UI_Widgets/dxDrawer/')
 - [DropDownBox](/api-reference/10%20UI%20Widgets/dxDropDownBox '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/')

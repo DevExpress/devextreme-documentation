@@ -19,7 +19,7 @@ The settings of the column to which the header belongs.
 The index of the column to which the header belongs.
 
 ##### field(headerInfo.component): dxTreeList
-The widget's instance.
+The UI component's instance.
 
 ---
 #####See Also#####

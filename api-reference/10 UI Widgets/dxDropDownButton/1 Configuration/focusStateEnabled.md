@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether users can use keyboard to focus the widget.
+Specifies whether users can use keyboard to focus the UI component.
 
 ---

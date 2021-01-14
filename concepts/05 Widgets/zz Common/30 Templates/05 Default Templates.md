@@ -1,4 +1,4 @@
-Default templates are based on data source fields. You can control appearance by adding or removing particular fields from data source objects. For example, the **List** widget's [default template for items](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/') contains the **text**, **visible**, and **disabled** fields, among others. If you assign the following array to the widget's **items** or **dataSource** option, the first item will be disabled, the second hidden, both of them will have text, and the third item will render a custom markup:
+Default templates are based on data source fields. You can control appearance by adding or removing particular fields from data source objects. For example, the **List** UI component's [default template for items](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/') contains the **text**, **visible**, and **disabled** fields, among others. If you assign the following array to the UI component's **items** or **dataSource** option, the first item will be disabled, the second hidden, both of them will have text, and the third item will render a custom markup:
 
     <!--JavaScript-->
     function customMarkup() {
@@ -12,7 +12,7 @@ Default templates are based on data source fields. You can control appearance by
         { template: customMarkup }
     ];
 
-You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component that supports default and [custom templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates'). Do not set the widget's **dataSource** option in this case. 
+You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component that supports default and [custom templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates'). Do not set the UI component's **dataSource** option in this case. 
 
 ---
 #####jQuery  
@@ -147,4 +147,4 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
 
 ---
 
-Default templates and the fields available in them depend on the widget. Refer to the **items** option description of a particular widget for a list of template fields.
+Default templates and the fields available in them depend on the UI component. Refer to the **items** option description of a particular UI component for a list of template fields.

@@ -5,7 +5,7 @@ inherits: BaseLegendItem
 ---
 ---
 ##### shortDescription
-An object that provides information about a legend item in the [PieChart](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/') widget.
+An object that provides information about a legend item in the [PieChart](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/') UI component.
 
 ---
 #####See Also#####

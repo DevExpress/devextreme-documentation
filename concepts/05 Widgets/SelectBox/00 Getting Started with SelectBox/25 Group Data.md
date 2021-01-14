@@ -139,9 +139,9 @@ To group data, specify the data field to group by in the **DataSource**'s [group
 
 If your data is already grouped, ensure each group has the **key** and **items** fields as shown in [this article](/concepts/05%20Widgets/SelectBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/SelectBox/Grouping/In_the_Data_Source/'). If the fields are named differently, implement the **DataSource**'s [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') function to create **key** + **items** field mappings.
 
-Run the code and ensure the widget's data is grouped.
+Run the code and ensure the UI component's data is grouped.
 
-You have configured basic **SelectBox** features. To take a more detailed look at this widget, explore the following resources:
+You have configured basic **SelectBox** features. To take a more detailed look at this UI component, explore the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
 * [API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/')

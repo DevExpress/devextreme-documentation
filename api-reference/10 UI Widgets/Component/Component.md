@@ -7,6 +7,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-A base class for all components and widgets.
+A base class for all components and UI components.
 
 ---

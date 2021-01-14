@@ -270,14 +270,12 @@ Your data source should contain data objects. If their fields match the [predefi
 
     function App() {
         return (
-            <div className="App">
-                <Scheduler
-                    dataSource={appointments}
-                    textExpr="title"
-                    allDayExpr="dayLong"
-                    recurrenceRuleExpr="recurrence">
-                </Scheduler>
-            </div>
+            <Scheduler
+                dataSource={appointments}
+                textExpr="title"
+                allDayExpr="dayLong"
+                recurrenceRuleExpr="recurrence">
+            </Scheduler>
         );
     }
 

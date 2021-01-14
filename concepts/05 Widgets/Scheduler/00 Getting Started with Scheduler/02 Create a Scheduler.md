@@ -119,11 +119,9 @@
 
     function App() {
         return (
-            <div className="App">
-                <Scheduler id="scheduler">
-                    {/* Configuration goes here */}
-                </Scheduler>
-            </div>
+            <Scheduler id="scheduler">
+                {/* Configuration goes here */}
+            </Scheduler>
         );
     }
 

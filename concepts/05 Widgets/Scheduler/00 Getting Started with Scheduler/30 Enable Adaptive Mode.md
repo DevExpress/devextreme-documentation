@@ -37,11 +37,9 @@ The **Scheduler** can adapt its interface to small screens. To enable this behav
     // ...
     function App() {
         return (
-            <div className="App">
-                <Scheduler ...
-                    adaptivityEnabled={true}>
-                </Scheduler>
-            </div>
+            <Scheduler ...
+                adaptivityEnabled={true}>
+            </Scheduler>
         );
     }
 

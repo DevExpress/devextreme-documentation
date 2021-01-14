@@ -66,12 +66,10 @@ To specify the current date, use the [currentDate](/Documentation/ApiReference/U
         }, [])
 
         return (
-            <div className="App">
-                <Scheduler ...
-                    currentDate={currentDate}
-                    onOptionChanged={handlePropertyChange}>
-                </Scheduler>
-            </div>
+            <Scheduler ...
+                currentDate={currentDate}
+                onOptionChanged={handlePropertyChange}>
+            </Scheduler>
         );
     }
 

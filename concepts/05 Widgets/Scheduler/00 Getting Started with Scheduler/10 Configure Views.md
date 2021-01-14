@@ -95,22 +95,20 @@ To specify the view displayed initially, set the [currentView](/Documentation/Ap
 
     function App() {
         return (
-            <div className="App">
-                <Scheduler ...
-                    defaultCurrentView="week">
-                    <View
-                        type="day"
-                        startDayHour={10}
-                        endDayHour={22}
-                    />
-                    <View
-                        type="week"
-                        startDayHour={10}
-                        endDayHour={22}
-                    />
-                    <View type="month" />
-                </Scheduler>
-            </div>
+            <Scheduler ...
+                defaultCurrentView="week">
+                <View
+                    type="day"
+                    startDayHour={10}
+                    endDayHour={22}
+                />
+                <View
+                    type="week"
+                    startDayHour={10}
+                    endDayHour={22}
+                />
+                <View type="month" />
+            </Scheduler>
         );
     }
 

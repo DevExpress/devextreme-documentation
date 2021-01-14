@@ -75,13 +75,11 @@ Edit operations are enabled by default. To disable an individual operation, assi
 
     function App() {
         return (
-            <div className="App">
-                <Scheduler ... >
-                    <Editing
-                        allowDragging={false}
-                    />
-                </Scheduler>
-            </div>
+            <Scheduler ... >
+                <Editing
+                    allowDragging={false}
+                />
+            </Scheduler>
         );
     }
 

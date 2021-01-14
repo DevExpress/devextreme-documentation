@@ -51,15 +51,13 @@ Users can edit the time zones of individual appointments. To enable this functio
     // ...
     function App() {
         return (
-            <div className="App">
-                <Scheduler ...
-                    timeZone="Europe/Berlin">
-                    {/* ... */}
-                    <Editing ...
-                        allowTimeZoneEditing={true}
-                    />
-                </Scheduler>
-            </div>
+            <Scheduler ...
+                timeZone="Europe/Berlin">
+                {/* ... */}
+                <Editing ...
+                    allowTimeZoneEditing={true}
+                />
+            </Scheduler>
         );
     }
 

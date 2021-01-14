@@ -30,6 +30,8 @@ The values of the deleted task.
 
 ---
 
+![DevExtreme Gantt Chart - Task Element](~/images/Gantt/task-element.png)
+
 ---
 
 ##### jQuery

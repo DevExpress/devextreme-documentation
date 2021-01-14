@@ -12,7 +12,7 @@ The **Scheduler** supports the following view types:
 
 Use the [views[]](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) array to configure views. This array can contain strings ([view types](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#type)) and objects (view configurations). Use a string if the default view configuration suits you. Otherwise, declare an object that configures the view and specify the [type](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#type) and [other properties](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/) in it. In the code below, the **views[]** array contains the Day, Week, and Month views. We specify the [startDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#startDayHour) and [endDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#endDayHour) properties for Day and Week; Month uses its default configuration.
 
-To specify the view displayed initially, set the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) option. In the following code, the initial view is Week.
+To specify the view displayed initially, set the [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView) property. In the following code, the initial view is Week.
 
 ---
 ##### jQuery

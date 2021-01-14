@@ -9,7 +9,7 @@ Configures the header filter feature.
 ---
 A header filter allows a user to filter individual field's values by including or excluding them from the applied filter. Cicking a header filter icon invokes a popup menu displaying all the unique field values. 
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget Pivot Grid Field Chooser Header Filter](/images/DataGrid/PivotGridFieldChooser_headerFilter.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component Pivot Grid Field Chooser Header Filter](/images/DataGrid/PivotGridFieldChooser_headerFilter.png)
 
 Assign **true** to the [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowFiltering') property to make the icons visible. 
 

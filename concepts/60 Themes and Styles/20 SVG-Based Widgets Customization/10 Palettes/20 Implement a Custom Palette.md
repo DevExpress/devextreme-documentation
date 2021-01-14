@@ -21,6 +21,6 @@ The custom palette should be registered using the [registerPalette(paletteName, 
     
     registerPalette("myCustomPalette", myPalette);
 
-To apply it, assign the name used in the registration to the widgets' **palette** properties as shown in the [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette') article.
+To apply it, assign the name used in the registration to the UI components' **palette** properties as shown in the [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette') article.
 
     

@@ -88,7 +88,7 @@ The **DataGrid** UI component supports single and multiple row selection. Use th
 In the single mode, only one row can be selected at a time, while in the multiple mode, several rows can be selected with check boxes that appear in the selection column.
 
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget DataGrid Sorting](/images/DataGrid/selection.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Sorting](/images/DataGrid/selection.png)
 
 The check box in the column's header selects all rows or only the currently rendered ones, depending on the [selectAllMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/selectAllMode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#selectAllMode'). Note that clicking this check box selects/deselects only those rows that meet filtering conditions if a filter is applied.
 

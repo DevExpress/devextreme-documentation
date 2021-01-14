@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes properties that are common for all widgets.
+This section describes properties that are common for all UI components.
 
 ---

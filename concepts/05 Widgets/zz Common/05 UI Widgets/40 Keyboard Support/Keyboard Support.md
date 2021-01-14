@@ -1,4 +1,4 @@
-The DevExtreme UI UI components enable you to use the keyboard to switch between UI components within a view. The UI component tabbing order is specified by the **tabIndex** property. When an end-user presses **Tab** or **Shift**+**Tab**, focus is moved to the UI component with a higher or lower **tabIndex** value respectively.
+The DevExtreme UI components enable you to use the keyboard to switch between UI components within a view. The UI component tabbing order is specified by the **tabIndex** property. When an end-user presses **Tab** or **Shift**+**Tab**, focus is moved to the UI component with a higher or lower **tabIndex** value respectively.
 
     <!--JavaScript-->
     var buttonOptions = {

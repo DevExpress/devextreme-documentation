@@ -15,7 +15,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
     <!--Razor C#-->@(Html.DevExtreme().Toolbar()
         .Items(items => {
             items.Add().Widget(w => w
-                // Instead of Button here you can use any other widget
+                // Instead of Button here you can use any other UI component
                 .Button()
                 .Text("Back")
             );
@@ -25,7 +25,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
     <!--Razor VB-->@(Html.DevExtreme().Toolbar() _
         .Items(Sub(items)
             items.Add().Widget(Function(w)
-                ' Instead of Button here you can use any other widget
+                ' Instead of Button here you can use any other UI component
                 Return w.Button().Text("Back")
             End Function)
         End Sub)

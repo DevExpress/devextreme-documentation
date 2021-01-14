@@ -11,7 +11,7 @@ Changes the current theme for all data visualization UI components on the page.
 The new theme's name.
 
 ---
-Only the UI components created after calling this method use the new theme. Use the [DevExpress.viz.refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/utils/viz/#refreshTheme') method to refresh the styling settings in other widgets.
+Only the UI components created after calling this method use the new theme. Use the [DevExpress.viz.refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/utils/viz/#refreshTheme') method to refresh the styling settings in other UI components.
 
 #####See Also#####
 - [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Themes')

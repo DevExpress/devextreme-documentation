@@ -11,7 +11,7 @@ The **dx-field** field element may include label and value elements intended to 
         <div class="dx-field-value-static">John Smith</div>
     </div>
 
-DevExtreme UI UI components include <a href="http://www.w3.org/WAI/intro/aria.php" target="_blank">WAI-ARIA</a> markup to support screen readers. If you use a UI component within a field value element, associate the UI component with the field label to allow a screen reader to properly read the field. For this purpose, specify a unique ID for the field label element and assign this ID to the **aria-labeledby** attribute of the associated UI component as demonstrated below.
+DevExtreme UI components include <a href="http://www.w3.org/WAI/intro/aria.php" target="_blank">WAI-ARIA</a> markup to support screen readers. If you use a UI component within a field value element, associate the UI component with the field label to allow a screen reader to properly read the field. For this purpose, specify a unique ID for the field label element and assign this ID to the **aria-labeledby** attribute of the associated UI component as demonstrated below.
 
     <!--HTML-->
     <div class="dx-field">

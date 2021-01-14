@@ -33,7 +33,7 @@ To specify which sides of the **Resizable** - top, bottom, left, right or all at
         });
     });
 
-If the **Resizable** UI component contains other widgets, make sure that it is instantiated _before_ the widgets. For example, the following code creates a resizable [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/'). Note that the **Resizable** goes _before_ the **Chart** in the JavaScript code, and that makes the **Resizable** instantiated before the **Chart**.
+If the **Resizable** UI component contains other UI components, make sure that it is instantiated _before_ the UI components. For example, the following code creates a resizable [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/'). Note that the **Resizable** goes _before_ the **Chart** in the JavaScript code, and that makes the **Resizable** instantiated before the **Chart**.
 
     <!--HTML--><div id="resizable">
         <div id="chart"></div>

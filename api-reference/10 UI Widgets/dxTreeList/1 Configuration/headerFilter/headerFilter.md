@@ -4,7 +4,7 @@
 ---
 A header filter allows a user to filter values in an individual column by including or excluding them from the applied filter. A click on a header filter icon invokes a popup menu with all unique values in the column. By selecting or clearing the selection of values in this menu, the user includes or excludes them from the filter.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget TreeList HeaderFilter](/images/treelist/visual_elements/header_filter.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList HeaderFilter](/images/treelist/visual_elements/header_filter.png)
 
 To make header filter icons visible, assign **true** to the **headerFilter**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/headerFilter/visible.md '{basewidgetpath}/Configuration/headerFilter/#visible') property. Data in the popup menu can be customized using the [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '{basewidgetpath}/Configuration/columns/headerFilter/') property of a specific column.
 

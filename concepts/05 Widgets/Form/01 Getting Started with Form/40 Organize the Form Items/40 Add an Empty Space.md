@@ -7,7 +7,7 @@ In the following example, the empty item [spans](/Documentation/ApiReference/UI_
 
     <!-- tab: index.js -->
     $(function() {
-        $("#formContainer").dxForm({
+        $("#form").dxForm({
             formData: {
                 // ...
             },

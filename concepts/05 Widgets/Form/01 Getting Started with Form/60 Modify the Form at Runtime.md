@@ -5,7 +5,7 @@ You can change any form, editor, or item properties at runtime. The following co
 
     <!-- tab: index.js -->
     $(function() {
-        const form = $("#formContainer").dxForm({
+        const form = $("#form").dxForm({
             formData: {
                 // ...
             },

@@ -1,4 +1,4 @@
-You can configure labels for individual items in the [label](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/) object. 
+You can configure labels for individual items in the [label](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/) object. This object's section lists all available properties.
 
 The following properties apply to all labels in the Form:
 
@@ -14,7 +14,7 @@ The following code shows how to configure the **labelLocation** property to plac
 
     <!-- tab: index.js -->
     $(function() {
-        $("#formContainer").dxForm({
+        $("#form").dxForm({
             formData: {
                 // ...
             },

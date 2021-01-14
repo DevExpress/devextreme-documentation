@@ -11,7 +11,7 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
 
     <!-- tab: index.js -->
     $(function() {
-        $("#formContainer").dxForm({
+        $("#form").dxForm({
             formData: {
                 // ...
             },

@@ -8,7 +8,7 @@ The following example shows a Form with two groups. A tabbed item is nested in t
 
     <!-- tab: index.js -->
     $(function() {
-        $("#formContainer").dxForm({
+        $("#form").dxForm({
             formData: {
                 name: 'John Heart',
                 position: 'CEO',

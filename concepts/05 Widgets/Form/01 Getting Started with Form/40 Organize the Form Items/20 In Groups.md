@@ -7,7 +7,7 @@ The following code shows two groups in a Form with two columns. Each group occup
 
     <!-- tab: index.js -->
     $(function() {
-        $("#formContainer").dxForm({
+        $("#form").dxForm({
             formData: {
                 name: "John Heart",
                 position: "CEO",

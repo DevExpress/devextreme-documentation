@@ -36,6 +36,8 @@ The task values.
 
 ---
 
+![DevExtreme Gantt Chart - Task Edit Dialog](~/images/Gantt/task-edit-dialog.png)
+
 ---
 
 ##### jQuery

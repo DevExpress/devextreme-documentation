@@ -3,7 +3,7 @@ id: dxScheduler.scrollTo(date, group, allDay)
 ---
 ---
 ##### shortDescription
-Scrolls the current view to a specified date, time, and optionally, appointment group.
+Scrolls the current view to a specified date, time, and optionally, appointment group. Requires the [height](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#height) property to be set.
 
 ##### param(date): Date
 A date and time.
@@ -16,7 +16,7 @@ If **true**, scrolls to the top of the view. Appliable for the *"day"* and *"wee
 
 ---
 
-This method is available for all views except *"month"* and *"agenda"*.
+This method is available for all views except *"agenda"*.
 
 [note] If you need to navigate to a date outside of the current view, use the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) property instead. 
 

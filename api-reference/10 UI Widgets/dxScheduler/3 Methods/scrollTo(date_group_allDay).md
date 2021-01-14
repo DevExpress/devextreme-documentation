@@ -18,7 +18,7 @@ If **true**, scrolls to the top of the view. Appliable for the *"day"* and *"wee
 
 This method is available for all views except *"month"* and *"agenda"*.
 
-[note] If you need to display a date outside of the current view, use the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) property instead. 
+[note] If you need to navigate to a date outside of the current view, use the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) property instead. 
 
 #####See Also#####
 #include common-link-callmethods

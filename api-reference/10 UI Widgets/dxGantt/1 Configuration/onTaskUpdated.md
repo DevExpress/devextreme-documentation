@@ -28,6 +28,8 @@ The task values after update.
 
 ---
 
+![DevExtreme Gantt Chart - Task Element](~/images/Gantt/task-element.png)
+
 ---
 
 ##### jQuery

@@ -28,6 +28,7 @@ The values of the processed resource and task.
 
 ---
 
+![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
 ---
 

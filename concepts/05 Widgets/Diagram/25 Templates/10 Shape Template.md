@@ -3,6 +3,12 @@ Use the following properties to create a shape template:
 * The [customShapeTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#customShapeTemplate') property defines a common template for all shapes in the UI component.
 * The [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#template') property defines a template for an individual shape.
 
+[note]
+If the [textExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#textExpr) option is specified, template content may overlap with text from the data source. 
+
+Since the [textExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#textExpr) option has the default value `'text'`, the widget will obtain node texts from the data source’s 'text' field. To prevent his behavior, set the option to an empty string: `nodes: { textExpr: "", ...`
+[/note]
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"
 }

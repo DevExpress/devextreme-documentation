@@ -11,27 +11,42 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
                 // ...
             },
             insert: function(values) {
-                return $.ajax({
+                var deferred = $.Deferred();
+                $.ajax({
                     url: "https://mydomain.com/MyDataService/",
                     method: "POST",
-                    data: JSON.stringify(values),
-                    error: function(e) { e.statusText = "Insertion failed"; }
+                    data: JSON.stringify(values)
+                })
+                .done(deferred.resolve)
+                .fail(function(e){
+                    deferred.reject("Insertion failed");
                 });
+                return deferred.promise();
             },
             remove: function(key) {
-                return $.ajax({
+                var deferred = $.Deferred();
+                $.ajax({
                     url: "https://mydomain.com/MyDataService/" + encodeURIComponent(key),
-                    method: "DELETE",
-                    error: function(e) { e.statusText = "Deletion failed"; }
-                });
+                    method: "DELETE"
+                })
+                .done(deferred.resolve)
+                .fail(function(e){
+                    deferred.reject("Deletion failed");
+                };
+                return deferred.promise();
             },
             update: function(key, values) {
-                return $.ajax({
+                var deferred = $.Deferred();
+                $.ajax({
                     url: "https://mydomain.com/MyDataService/" + encodeURIComponent(key),
                     method: "PUT",
-                    data: JSON.stringify(values),
-                    error: function(e) { e.statusText = "Update failed"; }
-                });
+                    data: JSON.stringify(values)
+                })
+                .done(deferred.resolve)
+                .fail(function(e){
+                    deferred.reject("Update failed");
+                };
+                return deferred.promise();
             }
         });
 

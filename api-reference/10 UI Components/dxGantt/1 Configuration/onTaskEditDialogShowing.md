@@ -60,4 +60,4 @@ Note that the **hiddenFields** and **readOnlyFields** parameters affect only tas
 
 #####See Also#####
 - [taskEditDialogShowing](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskEditDialogShowing)
-- [Gantt Elements](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

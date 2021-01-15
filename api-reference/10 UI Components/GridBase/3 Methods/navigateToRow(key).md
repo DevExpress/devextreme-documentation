@@ -25,4 +25,4 @@ The following requirements apply when you use this method:
 
 #####See Also#####
 #include common-link-callmethods
-- [Focused Row](/concepts/05%20Widgets/DataGrid/73%20Focused%20Row.md '/Documentation/Guide/Widgets/{WidgetName}/Focused_Row/')
+- [Focused Row](/concepts/05%20UI%20Components/DataGrid/73%20Focused%20Row.md '/Documentation/Guide/UI_Components/{WidgetName}/Focused_Row/')

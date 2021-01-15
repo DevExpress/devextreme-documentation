@@ -7,7 +7,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-A function that is executed when a [legend item](/concepts/05%20Widgets/Funnel/35%20Legend/00%20Overview.md '/Documentation/Guide/Widgets/Funnel/Legend/Overview/') is clicked or tapped.
+A function that is executed when a [legend item](/concepts/05%20UI%20Components/Funnel/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Legend/Overview/') is clicked or tapped.
 
 ##### param(e): Object
 Information about the event.

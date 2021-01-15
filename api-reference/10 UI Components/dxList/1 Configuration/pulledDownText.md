@@ -9,4 +9,4 @@ Specifies the text displayed in the pullDown panel when the list is pulled below
 
 ---
 #####See Also#####
-- [List - Localization](/concepts/05%20Widgets/List/50%20Localization.md '/Documentation/Guide/Widgets/List/Localization/')
+- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/Documentation/Guide/UI_Components/List/Localization/')

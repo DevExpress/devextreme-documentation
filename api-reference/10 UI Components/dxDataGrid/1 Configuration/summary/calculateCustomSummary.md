@@ -128,4 +128,4 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 }
 
 #####See Also#####
-- [Custom Aggregate Function](/concepts/05%20Widgets/DataGrid/65%20Summaries/07%20Custom%20Aggregate%20Function '/Documentation/Guide/Widgets/DataGrid/Summaries/Custom_Aggregate_Function/')
+- [Custom Aggregate Function](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/07%20Custom%20Aggregate%20Function '/Documentation/Guide/UI_Components/DataGrid/Summaries/Custom_Aggregate_Function/')

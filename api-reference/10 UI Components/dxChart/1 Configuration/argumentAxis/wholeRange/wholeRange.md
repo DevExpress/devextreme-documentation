@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Defines the range where the axis can be [zoomed and panned](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/Widgets/Chart/Zooming_and_Panning/').
+Defines the range where the axis can be [zoomed and panned](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/').
 
 ---
 #include dataviz-ref-vizrangevariants with {
@@ -17,6 +17,6 @@ Defines the range where the axis can be [zoomed and panned](/concepts/05%20Widge
 }
 
 #####See Also#####
-- [Visual and Whole Ranges](/concepts/05%20Widgets/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/Widgets/Chart/Axes/Visual_and_Whole_Ranges/')
+- [Visual and Whole Ranges](/concepts/05%20UI%20Components/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/UI_Components/Chart/Axes/Visual_and_Whole_Ranges/')
 - [visualRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/')
 - [zoomAndPan](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/')

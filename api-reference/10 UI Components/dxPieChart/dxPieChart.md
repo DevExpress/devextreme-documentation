@@ -52,7 +52,7 @@ dx.viz.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/PieChart/Overview/"
+    url: "/Documentation/Guide/UI_Components/PieChart/Overview/"
 }
 
 #####See Also#####

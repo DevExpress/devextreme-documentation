@@ -78,4 +78,4 @@ Assigning an array to the **store** option automatically creates an **ArrayStore
 
 ---
 
-See the [Use CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/Widgets/PivotGrid/Use_CustomStore/') topic for information on how to implement custom data access logic.
+See the [Use CustomStore](/concepts/05%20UI%20Components/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/') topic for information on how to implement custom data access logic.

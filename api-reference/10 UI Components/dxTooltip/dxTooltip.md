@@ -20,7 +20,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Tooltip/Overview/"
+    url: "/Documentation/Guide/UI_Components/Tooltip/Overview/"
 }
 
 #####See Also#####

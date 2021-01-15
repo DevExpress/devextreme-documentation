@@ -55,4 +55,4 @@ The task values before moving.
 
 #####See Also#####
 - [taskMoving](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskMoving)
-- [Gantt Elements](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

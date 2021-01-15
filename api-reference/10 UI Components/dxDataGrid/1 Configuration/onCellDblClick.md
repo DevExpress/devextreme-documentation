@@ -18,7 +18,7 @@ Information about the event that caused the function's execution.
 The column's configuration.
 
 ##### field(e.columnIndex): Number
-The index of the column the cell belongs to. For details on indexes, see the [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') topic.
+The index of the column the cell belongs to. For details on indexes, see the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.
@@ -37,7 +37,7 @@ Differs from the **value** field only when the cell belongs to a [lookup](/api-r
 #include common-ref-eventparam
 
 ##### field(e.key): any
-The row's [key](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#key') or a group row's [key](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Group_Index_and_Key'). Available if the **rowType** is *"data"*, *"detail"*, *"detailAdaptive"*, or *"group"*.
+The row's [key](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#key') or a group row's [key](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Group_Index_and_Key'). Available if the **rowType** is *"data"*, *"detail"*, *"detailAdaptive"*, or *"group"*.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

@@ -14,5 +14,5 @@ To obtain items in the same order as they are displayed in the UI component, [re
 [note] On Android devices, this option applies only if the [useNativeScrolling](/api-reference/10%20UI%20Components/dxList/1%20Configuration/useNativeScrolling.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#useNativeScrolling') option is set to **false**.
 
 #####See Also#####
-- [List - Item Reordering - User Interaction](/concepts/05%20Widgets/List/30%20Item%20Reordering/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Item_Reordering/#User_Interaction')
+- [List - Item Reordering - User Interaction](/concepts/05%20UI%20Components/List/30%20Item%20Reordering/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Item_Reordering/#User_Interaction')
 - [itemReordered](/api-reference/10%20UI%20Components/dxList/4%20Events/itemReordered.md '/Documentation/ApiReference/UI_Components/dxList/Events/#itemReordered')

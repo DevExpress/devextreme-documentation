@@ -20,7 +20,7 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
 
 #####See Also#####
 - [showResources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources')
-- [Gantt Elements - Resources](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/30%20Resource.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/#Resource')
+- [Gantt Elements - Resources](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/30%20Resource.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/#Resource')
 
 ---
 

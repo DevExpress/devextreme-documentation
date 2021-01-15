@@ -16,4 +16,4 @@ Users can switch between pages and change paging settings using the [pager](/api
 }
 
 #####See Also#####
-- [Paging](/concepts/05%20Widgets/TreeList/35%20Paging '/Documentation/Guide/Widgets/TreeList/Paging/')
+- [Paging](/concepts/05%20UI%20Components/TreeList/35%20Paging '/Documentation/Guide/UI_Components/TreeList/Paging/')

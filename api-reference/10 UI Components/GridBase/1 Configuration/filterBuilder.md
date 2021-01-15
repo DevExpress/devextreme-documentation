@@ -15,4 +15,4 @@ See the [FilterBuilder configuration](/api-reference/10%20UI%20Components/dxFilt
 }
 
 #####See Also#####
-- [Filter Panel with Filter Builder](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/4%20Filter%20Panel%20with%20Filter%20Builder.md '/Documentation/Guide/Widgets/{WidgetName}/Filtering_and_Searching/#Filter_Panel_with_Filter_Builder')
+- [Filter Panel with Filter Builder](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/4%20Filter%20Panel%20with%20Filter%20Builder.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Filter_Panel_with_Filter_Builder')

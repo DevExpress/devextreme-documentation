@@ -19,7 +19,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
 }
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/Widgets/DateBox/Getting_Started_with_DateBox/"
+    url: "/Documentation/Guide/UI_Components/DateBox/Getting_Started_with_DateBox/"
 }
 
 #####See Also#####

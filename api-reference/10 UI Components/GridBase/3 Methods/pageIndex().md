@@ -14,4 +14,4 @@ When the [scrolling mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Con
 
 #####See Also#####
 #include common-link-callmethods
-- [Paging - API](/concepts/05%20Widgets/DataGrid/35%20Paging/20%20API.md '/Documentation/Guide/Widgets/{WidgetName}/Paging/#API')
+- [Paging - API](/concepts/05%20UI%20Components/DataGrid/35%20Paging/20%20API.md '/Documentation/Guide/UI_Components/{WidgetName}/Paging/#API')

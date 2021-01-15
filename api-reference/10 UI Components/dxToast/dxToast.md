@@ -21,7 +21,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toast/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Toast/Overview/"
+    url: "/Documentation/Guide/UI_Components/Toast/Overview/"
 }
 
 #####See Also#####

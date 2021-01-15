@@ -46,4 +46,4 @@ If you want to disable a specific operation type for the entire diagram, you can
 }
 
 #####See Also#####
-- [Restrict Edit Operations](/concepts/05%20Widgets/Diagram/28%20Restrict%20Edit%20Operations '/Documentation/Guide/Widgets/Diagram/Restrict_Edit_Operations')
+- [Restrict Edit Operations](/concepts/05%20UI%20Components/Diagram/28%20Restrict%20Edit%20Operations '/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations')

@@ -13,4 +13,4 @@ If the option is set to true, list data is refreshed each time you pull down and
 [note]The "pull down to refresh" gesture is not supported by desktop browsers. You can use it only in mobile themes.
 
 #####See Also#####
-- [List - Touch-Screen Gestures](/concepts/05%20Widgets/List/45%20End-User%20Interaction/01%20Touch-Screen%20Gestures.md '/Documentation/Guide/Widgets/List/End-User_Interaction/Touch-Screen_Gestures/')
+- [List - Touch-Screen Gestures](/concepts/05%20UI%20Components/List/45%20End-User%20Interaction/01%20Touch-Screen%20Gestures.md '/Documentation/Guide/UI_Components/List/End-User_Interaction/Touch-Screen_Gestures/')

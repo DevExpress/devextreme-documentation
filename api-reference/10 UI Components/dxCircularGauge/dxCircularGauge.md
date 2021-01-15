@@ -19,7 +19,7 @@ dx.viz.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/CircularGauge/Visual_Elements/"
+    url: "/Documentation/Guide/UI_Components/CircularGauge/Visual_Elements/"
 }
 
 #####See Also#####

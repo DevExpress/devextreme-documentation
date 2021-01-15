@@ -19,4 +19,4 @@ Use the **height** and **width** options in the **adaptiveLayout** object to spe
 <a href="https://jsfiddle.net/ChartJS/j1v235o8/" class="button orange small fix-width-155" target="_blank">View Demo on JSFiddle</a>
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/Funnel/89%20Adaptive%20Layout.md '/Documentation/Guide/Widgets/Funnel/Adaptive_Layout/')
+- [Adaptive Layout](/concepts/05%20UI%20Components/Funnel/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Funnel/Adaptive_Layout/')

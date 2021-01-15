@@ -12,4 +12,4 @@ The row's index.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [Editing - Delete](/concepts/05%20Widgets/DataGrid/20%20Editing/20%20API/30%20Delete.md '/Documentation/Guide/Widgets/DataGrid/Editing/#API/Delete')
+- [Editing - Delete](/concepts/05%20UI%20Components/DataGrid/20%20Editing/20%20API/30%20Delete.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#API/Delete')

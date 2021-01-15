@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the settings of the [scroll bar](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning/03%20Using%20the%20Scroll%20Bar.md '/Documentation/Guide/Widgets/Chart/Zooming_and_Panning/#Using_the_Scroll_Bar').
+Specifies the settings of the [scroll bar](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning/03%20Using%20the%20Scroll%20Bar.md '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/#Using_the_Scroll_Bar').
 
 ---
 The scroll bar allows a user to pan the chart. To use it, you need to enable [zooming and panning](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/') in your chart.

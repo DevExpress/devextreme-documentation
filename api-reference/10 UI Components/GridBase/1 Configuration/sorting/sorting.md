@@ -20,4 +20,4 @@ To apply sorting to a column, a user clicks its header or selects a command from
 }
 
 #####See Also#####
-- [Sorting](/concepts/05%20Widgets/DataGrid/25%20Sorting '/Documentation/Guide/Widgets/DataGrid/Sorting/')
+- [Sorting](/concepts/05%20UI%20Components/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/DataGrid/Sorting/')

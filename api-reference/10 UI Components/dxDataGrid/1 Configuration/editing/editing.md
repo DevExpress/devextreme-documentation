@@ -16,4 +16,4 @@ The UI component can allow a user to add, update and delete data. To control whi
 }
 
 #####See Also#####
-- [Editing](/concepts/05%20Widgets/DataGrid/20%20Editing '/Documentation/Guide/Widgets/DataGrid/Editing/')
+- [Editing](/concepts/05%20UI%20Components/DataGrid/20%20Editing '/Documentation/Guide/UI_Components/DataGrid/Editing/')

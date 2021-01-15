@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Allows you to build a [master-detail interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/') in the grid.
+Allows you to build a [master-detail interface](/concepts/05%20UI%20Components/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/UI_Components/DataGrid/Master-Detail_Interface/') in the grid.
 
 ---
 In **DataGrid**, a master-detail interface supplies a usual data row with an expandable section that contains the details on this data row. In that case, the data row is called "master row", while the section is called "detail section".
@@ -16,4 +16,4 @@ To enable the master-detail interface, assign **true** to the **masterDetail**.[
 }
 
 #####See Also#####
-- [Master-Detail Interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/')
+- [Master-Detail Interface](/concepts/05%20UI%20Components/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/UI_Components/DataGrid/Master-Detail_Interface/')

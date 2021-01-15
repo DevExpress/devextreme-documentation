@@ -63,4 +63,4 @@ Refer to the [Server-Side Data Processing](/concepts/70%20Data%20Binding/00%20Sp
 }
 
 #####See Also#####
-- [Configure the CustomStore for Local and Remote Operations](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/Widgets/PivotGrid/Use_CustomStore/')
+- [Configure the CustomStore for Local and Remote Operations](/concepts/05%20UI%20Components/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/')

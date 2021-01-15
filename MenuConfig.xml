@@ -16,17 +16,17 @@
 
   <MenuRule SourcePattern="Howto:^Common/(Migrate to the New Version.*?)" Destination="bz $1" />
   
-  <MenuRule SourcePattern="Howto:^05 Widgets$" Destination="bb65 Widgets" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/(SlideOut|SlideOutView|NavBar).*?" Destination="" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/15 Advanced/40 (3rd-Party Frameworks.*?)" Destination="bb80 Common Features/zz $1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components$" Destination="bb65 UI Components" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/(SlideOut|SlideOutView|NavBar).*?" Destination="" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 (3rd-Party Frameworks.*?)" Destination="bb80 Common Features/zz $1" />
  
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common" Destination="" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common" Destination="" />
 
-  <MenuRule SourcePattern="Howto:^05 Widgets/(.*?)" Destination="bb65 Widgets/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets" Destination="" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/(.*?)" Destination="bb65 UI Components/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components" Destination="" />
 
   <MenuRule SourcePattern="Howto:^99 VS Integration(.*?)" Destination="" />
 

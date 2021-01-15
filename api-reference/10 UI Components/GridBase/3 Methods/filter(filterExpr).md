@@ -15,7 +15,7 @@ Pass an array with the following members to this method:
 2. The comparison operator. The following operators are available: "=", "<>", ">", ">=", "<", "<=", "startswith", "endswith", "contains", "notcontains".
 3. The value with which data source field values should be compared.
 
-The filter passed to this method is not reflected in [any of the filtering UI elements](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/Widgets/{WidgetName}/Filtering_and_Searching/') and is applied before these elements' filters. To clear all filters applied in code and the UI, call the [clearFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/clearFilter().md '{basewidgetpath}/Methods/#clearFilter') method.
+The filter passed to this method is not reflected in [any of the filtering UI elements](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/') and is applied before these elements' filters. To clear all filters applied in code and the UI, call the [clearFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/clearFilter().md '{basewidgetpath}/Methods/#clearFilter') method.
 
 #####See Also#####
 #include common-link-callmethods

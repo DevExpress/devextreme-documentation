@@ -16,7 +16,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Box/Overview/"
+    url: "/Documentation/Guide/UI_Components/Box/Overview/"
 }
 
 #####See Also#####

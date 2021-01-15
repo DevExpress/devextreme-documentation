@@ -39,7 +39,7 @@ Indicates whether or not the group row is expanded. Available if **rowType** is 
 Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.
 
 ##### field(e.isSelected): Boolean
-Indicates whether the row is [selected](/concepts/05%20Widgets/DataGrid/50%20Selection '/Documentation/Guide/Widgets/DataGrid/Selection/').
+Indicates whether the row is [selected](/concepts/05%20UI%20Components/DataGrid/50%20Selection '/Documentation/Guide/UI_Components/DataGrid/Selection/').
 
 ##### field(e.jQueryEvent).deprecated
 Use 'event' instead.
@@ -57,7 +57,7 @@ Model data. Available only if Knockout is used.
 #include common-ref-elementparam with { element: "row" }
 
 ##### field(e.rowIndex): Number
-The row's index. Refer to [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') for more information.
+The row's index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### field(e.rowType): String
 The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType').

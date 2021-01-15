@@ -30,4 +30,4 @@ HTML form upload. Files are uploaded when the HTML form is submitted.
 }
 
 #####See Also#####
-- [Upload Mode](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings/05%20Upload%20Mode.md '/Documentation/Guide/Widgets/FileUploader/Upload_Files/Client-Side_Settings/#Upload_Mode')
+- [Upload Mode](/concepts/05%20UI%20Components/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings/05%20Upload%20Mode.md '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/#Upload_Mode')

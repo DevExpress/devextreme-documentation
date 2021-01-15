@@ -13,6 +13,6 @@ The **columnType** field has the following values:
 - *'D'*  
     A data field.
 - *'T'*  
-    The [Total](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Totals') column.
+    The [Total](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals') column.
 - *'GT'*  
-    The [Grand total](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Totals') column.
+    The [Grand total](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals') column.

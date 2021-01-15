@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-This section describes the **Axis** object. This object represents a [chart axis](/concepts/05%20Widgets/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Axes/Overview/').
+This section describes the **Axis** object. This object represents a [chart axis](/concepts/05%20UI%20Components/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/').
 
 ---
 You can call one of the following **Chart** instance methods to access this object:

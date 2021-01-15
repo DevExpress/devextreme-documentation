@@ -15,4 +15,4 @@ There are several predefined rule types. Each rule type demands a specific set o
 }
 
 #####See Also#####
-- [Validate and Submit the Form](/concepts/05%20Widgets/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/Widgets/Form/Validate_and_Submit_the_Form/')
+- [Validate and Submit the Form](/concepts/05%20UI%20Components/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/UI_Components/Form/Validate_and_Submit_the_Form/')

@@ -23,7 +23,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RadioGroup/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/RadioGroup/Overview/"
+    url: "/Documentation/Guide/UI_Components/RadioGroup/Overview/"
 }
 
 #####See Also#####

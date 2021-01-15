@@ -10,7 +10,7 @@ Specifies the current date.
 
 ---
 
-Users can change the current date in the [Date Navigator](/concepts/05%20Widgets/Scheduler/055%20Date%20Navigator.md '/Documentation/Guide/Widgets/Scheduler/Date_Navigator/'):
+Users can change the current date in the [Date Navigator](/concepts/05%20UI%20Components/Scheduler/055%20Date%20Navigator.md '/Documentation/Guide/UI_Components/Scheduler/Date_Navigator/'):
 
 ![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
 

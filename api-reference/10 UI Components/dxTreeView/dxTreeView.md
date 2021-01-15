@@ -107,7 +107,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/TreeView/Overview/"
+    url: "/Documentation/Guide/UI_Components/TreeView/Overview/"
 }
 
 #####See Also#####

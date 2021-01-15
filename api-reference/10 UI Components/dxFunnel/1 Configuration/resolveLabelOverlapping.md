@@ -6,7 +6,7 @@ default: 'shift'
 ---
 ---
 ##### shortDescription
-Specifies how [item labels](/concepts/05%20Widgets/Funnel/17%20Item%20Labels/00%20Overview.md '/Documentation/Guide/Widgets/Funnel/Item_Labels/Overview/') should behave when they overlap.
+Specifies how [item labels](/concepts/05%20UI%20Components/Funnel/17%20Item%20Labels/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Item_Labels/Overview/') should behave when they overlap.
 
 ---
 The following modes are available:

@@ -221,4 +221,4 @@ In AngularJs and Knockout apps, you can define different templates intended for 
     </div>
 
 #####See Also#####
-- [Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates '/Documentation/Guide/Widgets/Common/Templates/')
+- [Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/')

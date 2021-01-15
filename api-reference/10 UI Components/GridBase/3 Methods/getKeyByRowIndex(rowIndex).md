@@ -9,7 +9,7 @@ Gets the key of a row with a specific index.
 The row's key; **undefined** if nothing found.
 
 ##### param(rowIndex): Number
-The row's visible index. Refer to [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
+The row's visible index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
 
 ---
 #####See Also#####

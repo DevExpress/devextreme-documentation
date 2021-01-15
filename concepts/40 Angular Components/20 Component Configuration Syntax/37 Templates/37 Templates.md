@@ -16,7 +16,7 @@ Templates allow you to customize UI component elements. In the following code, a
 
 [note] The `dxTemplate` attribute directive cannot be used on custom markup elements. 
 
-Refer to the common [Custom Templates](/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates) article for more information.
+Refer to the common [Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates) article for more information.
 
 [note]
 

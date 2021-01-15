@@ -17,4 +17,4 @@ Note that rows are sorted within their hierarchical level.
 }
 
 #####See Also#####
-- [Sorting](/concepts/05%20Widgets/TreeList/30%20Sorting '/Documentation/Guide/Widgets/TreeList/Sorting/')
+- [Sorting](/concepts/05%20Widgets/TreeList/30%20Sorting '/Documentation/Guide/UI_Components/TreeList/Sorting/')

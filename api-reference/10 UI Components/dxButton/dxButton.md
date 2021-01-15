@@ -20,7 +20,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Button/Overview/"
+    url: "/Documentation/Guide/UI_Components/Button/Overview/"
 }
 
 #####See Also#####

@@ -52,4 +52,4 @@ The values of the processed resource and task.
 
 #####See Also#####
 - [resourceUnassigning](/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceUnassigning)
-- [Gantt Elements](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

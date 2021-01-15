@@ -30,7 +30,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Menu/Overview/"
+    url: "/Documentation/Guide/UI_Components/Menu/Overview/"
 }
 
 #####See Also#####

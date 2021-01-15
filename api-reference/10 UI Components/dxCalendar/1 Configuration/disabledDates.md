@@ -30,6 +30,6 @@ The current view.
 }
 
 #####See Also#####
-- [Specify the Value Range](/concepts/05%20Widgets/Calendar/12%20Specify%20the%20Value%20Range.md '/Documentation/Guide/Widgets/Calendar/Specify_the_Value_Range/')
+- [Specify the Value Range](/concepts/05%20UI%20Components/Calendar/12%20Specify%20the%20Value%20Range.md '/Documentation/Guide/UI_Components/Calendar/Specify_the_Value_Range/')
 
 <!-- import * from 'api-reference\10 UI Widgets\dxDateBox\1 Configuration\disabledDates.md' -->

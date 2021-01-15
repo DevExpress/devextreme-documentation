@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The appointment details form is displayed inside a popup. These elements are implemented by the [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') and [Popup](/concepts/05%20Widgets/Popup/00%20Overview.md '/Documentation/Guide/Widgets/Popup/Overview/') UI components. Their instances are passed to the **onAppointmentFormOpening** function in the **form** and **popup** fields. Use the [Form API](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to customize the corresponding UI component.
+The appointment details form is displayed inside a popup. These elements are implemented by the [Form](/concepts/05%20UI%20Components/Form/00%20Overview.md '/Documentation/Guide/UI_Components/Form/Overview/') and [Popup](/concepts/05%20UI%20Components/Popup/00%20Overview.md '/Documentation/Guide/UI_Components/Popup/Overview/') UI components. Their instances are passed to the **onAppointmentFormOpening** function in the **form** and **popup** fields. Use the [Form API](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to customize the corresponding UI component.
 
 Form items are organized into two groups:
 
@@ -291,4 +291,4 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
 The `mainGroup` consists of two columns. To make a custom item span both columns, set its [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan') to 2 - as shown in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`. 
 
 #####See Also#####
-- [Form - Change Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/05%20Widget%20Options.md '/Documentation/Guide/Widgets/Form/Change_Options_at_Runtime/Widget_Options/')
+- [Form - Change Options at Runtime](/concepts/05%20UI%20Components/Form/20%20Change%20Options%20at%20Runtime/05%20Widget%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Options_at_Runtime/Widget_Options/')

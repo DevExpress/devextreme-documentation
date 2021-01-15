@@ -48,4 +48,4 @@ When using an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/de
 }
 
 #####See Also#####
-- [Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/')
+- [Configure Simple Items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')

@@ -25,4 +25,4 @@ The UI component's container.
     let instance = DevExpress.ui.dx{WidgetName}.getInstance(element);
 
 #####See Also#####
-- [3rd-Party Frameworks Integration API](/concepts/05%20Widgets/zz%20Common/15%20Advanced/40%203rd-Party%20Frameworks%20Integration%20API '/Documentation/Guide/Widgets/Common/Advanced/3rd-Party_Frameworks_Integration_API/')
+- [3rd-Party Frameworks Integration API](/concepts/05%20UI%20Components/zz%20Common/15%20Advanced/40%203rd-Party%20Frameworks%20Integration%20API '/Documentation/Guide/UI_Components/Common/Advanced/3rd-Party_Frameworks_Integration_API/')

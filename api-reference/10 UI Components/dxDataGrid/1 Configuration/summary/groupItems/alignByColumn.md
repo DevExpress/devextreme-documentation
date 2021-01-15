@@ -19,4 +19,4 @@ You can also display group summary items in a group footer by setting the [showI
 }
 
 #####See Also#####
-- [Group Summary - Alignment and Location](/concepts/05%20Widgets/DataGrid/65%20Summaries/20%20Group%20Summary/10%20Alignment%20and%20Location.md '/Documentation/Guide/Widgets/DataGrid/Summaries/Group_Summary/#Alignment_and_Location')
+- [Group Summary - Alignment and Location](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/20%20Group%20Summary/10%20Alignment%20and%20Location.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/#Alignment_and_Location')

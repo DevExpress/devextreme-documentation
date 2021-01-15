@@ -22,5 +22,5 @@ If **true**, scrolls to the all-day panel of the specified group. Applies only i
 #include common-link-callmethods
 - [Group Appointments by Resources](/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/)
 - [currentView](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentView)
-- [startDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#startDayHour)
-- [endDayHour](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#endDayHour)
+- [scrolling](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/scrolling/)
+- [crossScrollingEnabled](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#crossScrollingEnabled)

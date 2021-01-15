@@ -15,6 +15,8 @@ When more than one view matches the **currentView** value, the **Scheduler** dis
 
 To subscribe to changes of the current view, use the [onOptionChanged](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onOptionChanged) handler.
 
+You can to scroll to a specified position in the current view. For this, use the [scrollTo(date, group, allDay)](/Documentation/ApiReference/UI_Widgets/dxScheduler/Methods/#scrollTodate_group_allDay) method.
+
 #include common-ref-enum with {
     enum: "`SchedulerViewType`",
     values: "`Day`, `Week`, `WorkWeek`, `Month`, `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, `TimelineMonth`, and `Agenda`"

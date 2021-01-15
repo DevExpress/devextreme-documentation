@@ -12,10 +12,9 @@ A date and time to scroll to.
 An appointment group (optional).
 
 ##### param(allDay): Boolean | undefined
-If **true**, scrolls the view to the all-day panel. Applies only if the all-day panel is [visible](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#showAllDayPanel).
+If **true**, scrolls to the all-day panel of the specified group. Applies only if the all-day panel is [visible](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#showAllDayPanel).
 
 ---
-
 
 [note] If you need to navigate to a date outside of the current view, use the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) property instead. 
 

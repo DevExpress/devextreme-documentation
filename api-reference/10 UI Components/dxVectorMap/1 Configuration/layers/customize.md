@@ -1,0 +1,33 @@
+---
+id: dxVectorMap.Options.layers.customize
+type: function(elements)
+notUsedInTheme: 
+---
+---
+##### shortDescription
+Specifies the function that customizes each layer element individually.
+
+##### param(elements): Array<MapLayerElement>
+The array of [layer elements](/api-reference/10%20UI%20Components/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element').
+
+---
+Only the following properties can be changed in the **customize** function.
+
+- [borderColor](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/borderColor.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#borderColor')
+- [borderWidth](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/borderWidth.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#borderWidth')
+- [color](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/color.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#color')
+- [hoveredBorderColor](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/hoveredBorderColor.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#hoveredBorderColor')
+- [hoveredBorderWidth](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/hoveredBorderWidth.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#hoveredBorderWidth')
+- [hoveredColor](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/hoveredColor.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#hoveredColor')
+- [label](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/label '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/label/') (but not **enabled**)
+- [opacity](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/opacity.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#opacity')
+- [selectedBorderColor](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/selectedBorderColor.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#selectedBorderColor')
+- [selectedBorderWidth](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/selectedBorderWidth.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#selectedBorderWidth')
+- [selectedColor](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/selectedColor.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#selectedColor')
+- [size](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/size.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#size')
+
+#include dataviz-ref-functioncontext
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/"
+}

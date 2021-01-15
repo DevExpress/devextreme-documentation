@@ -1,0 +1,14 @@
+---
+id: dxChart.Options.containerBackgroundColor
+type: String
+default: '#FFFFFF'
+---
+---
+##### shortDescription
+Colors the background of the chart container.
+
+---
+If the background of your page has a color different from white, assign this color to the **containerBackgroundColor** property to ensure that the UI component will blend smoothly into your page. Certain UI component elements, such as series points in the [hovered state](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#hoverMode'), will use this color when coordinating with the page.
+
+#####See Also#####
+- **panes**.[backgroundColor](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/#backgroundColor') - colors the background of the chart plot.

@@ -5,7 +5,7 @@ default: 'this'
 ---
 ---
 ##### shortDescription
-Specifies one or several [data fields](/api-reference/_hidden/dxHtmlEditorMention/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/mentions/#dataSource') to search.
+Specifies one or several [data fields](/api-reference/_hidden/dxHtmlEditorMention/dataSource.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#dataSource') to search.
 
 ---
 <!--->

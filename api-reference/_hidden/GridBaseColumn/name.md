@@ -9,4 +9,4 @@ Specifies the column's unique identifier. If not set in code, this value is inhe
 
 ---
 
-This property's value is used to refer to the column in code, for example, when [changing a column property]({basewidgetpath}/Methods/#columnOptionid_optionName_optionValue).
+This property's value is used to refer to the column in code, for example, when [changing a column property](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '{basewidgetpath}/Methods/#columnOptionid_optionName_optionValue').

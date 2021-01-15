@@ -241,4 +241,4 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
 ---
 
 #####See Also#####
-- **pdfExporter**.[exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions)
+- **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions')

@@ -1,0 +1,20 @@
+---
+id: GridBase.columnOption(id, optionName, optionValue)
+---
+---
+##### shortDescription
+Updates the value of a single column property.
+
+##### param(id): Number | String
+The column's index, data field, caption, type, or unique name. Refer to [columnOption(id)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id).md '{basewidgetpath}/Methods/#columnOptionid') for details.
+
+##### param(optionName): String
+The property's name.
+
+##### param(optionValue): any
+The property's new value.
+
+---
+#####See Also#####
+- [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/'')
+#include common-link-callmethods

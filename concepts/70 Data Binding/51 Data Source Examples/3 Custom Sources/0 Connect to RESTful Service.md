@@ -46,8 +46,8 @@ Note that all user functions return the result of the jQuery AJAX call, which is
 
 The **load** function accepts a number of **loadOptions** (sorting, filtering, paging, etc.). Send them to a remote storage where you can generate the resulting dataset based on these properties.
 
-Note that certain UI components have peculiarities in the **CustomStore** implemenation. For example, in case of the [DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Widgets/dxDataGrid/'), the **load** function should also return the total count of received records.
+Note that certain UI components have peculiarities in the **CustomStore** implemenation. For example, in case of the [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/'), the **load** function should also return the total count of received records.
 
 #####See Also#####
 - [DataGrid - Use CustomStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
-- [PivotGrid - Use CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/Widgets/PivotGrid/Use_CustomStore/')
+- [PivotGrid - Use CustomStore](/concepts/05%20UI%20Components/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/')

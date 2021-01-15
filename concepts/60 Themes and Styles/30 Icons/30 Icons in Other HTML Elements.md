@@ -1,4 +1,4 @@
-If an HTML element should display a DevExtreme icon, add a [dx-icon-IconName](/api-reference/10%20UI%20Widgets/zz%20CSS%20Classes/dx-icon-IconName.md '/Documentation/ApiReference/UI_Widgets/CSS_Classes/#dx-icon-IconName') class to it. We recommend using inline HTML elements (`<i>` or `<span>`).
+If an HTML element should display a DevExtreme icon, add a [dx-icon-IconName](/api-reference/10%20UI%20Components/zz%20CSS%20Classes/dx-icon-IconName.md '/Documentation/ApiReference/UI_Components/CSS_Classes/#dx-icon-IconName') class to it. We recommend using inline HTML elements (`<i>` or `<span>`).
 
     <!--HTML-->
     <i class="dx-icon-email"></i>

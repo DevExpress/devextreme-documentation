@@ -2,7 +2,7 @@ Exposes the **Menu** UI component.
 
 Exports:
 
-- *default* - The [Menu](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Widgets/dxMenu/') UI component
+- *default* - The [Menu](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/') UI component
 
         require("ui/menu");
         // ===== or =====

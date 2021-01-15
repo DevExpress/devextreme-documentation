@@ -9,4 +9,4 @@ Specifies the minimum number of characters that a user should type to trigger th
 
 ---
 #####See Also#####
-- [searchTimeout](/api-reference/_hidden/dxHtmlEditorMention/searchTimeout.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/mentions/#searchTimeout')
+- [searchTimeout](/api-reference/_hidden/dxHtmlEditorMention/searchTimeout.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#searchTimeout')

@@ -1,4 +1,4 @@
-To open or close the **SlideOut** menu programmatically, call the [showMenu()](/api-reference/10%20UI%20Widgets/dxSlideOut/3%20Methods/showMenu().md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Methods/#showMenu') or [hideMenu()](/api-reference/10%20UI%20Widgets/dxSlideOut/3%20Methods/hideMenu().md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Methods/#hideMenu') method. You can do the same thing using the [toggleMenuVisibility(showing)](/api-reference/10%20UI%20Widgets/dxSlideOut/3%20Methods/toggleMenuVisibility(showing).md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Methods/#toggleMenuVisibilityshowing') method. Pass **true** or **false** to this method to open or close the menu, respectively. For example, the following code shows how to close the slide-out menu when a user selects a command on it.
+To open or close the **SlideOut** menu programmatically, call the [showMenu()](/api-reference/10%20UI%20Components/dxSlideOut/3%20Methods/showMenu().md '/Documentation/ApiReference/UI_Components/dxSlideOut/Methods/#showMenu') or [hideMenu()](/api-reference/10%20UI%20Components/dxSlideOut/3%20Methods/hideMenu().md '/Documentation/ApiReference/UI_Components/dxSlideOut/Methods/#hideMenu') method. You can do the same thing using the [toggleMenuVisibility(showing)](/api-reference/10%20UI%20Components/dxSlideOut/3%20Methods/toggleMenuVisibility(showing).md '/Documentation/ApiReference/UI_Components/dxSlideOut/Methods/#toggleMenuVisibilityshowing') method. Pass **true** or **false** to this method to open or close the menu, respectively. For example, the following code shows how to close the slide-out menu when a user selects a command on it.
 
     <!--JavaScript-->var products = [
         { text: "SuperLCD 42", price: "$1200" },
@@ -19,7 +19,7 @@ To open or close the **SlideOut** menu programmatically, call the [showMenu()](/
         });
     });
 
-In this code, the slide-out menu is being closed from within the **SlideOut** UI component. If another component should open or close the slide-out menu, call the methods in a different manner. The following example shows how a click on a [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') can open the **SlideOut** menu. 
+In this code, the slide-out menu is being closed from within the **SlideOut** UI component. If another component should open or close the slide-out menu, call the methods in a different manner. The following example shows how a click on a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') can open the **SlideOut** menu. 
 
     <!--JavaScript-->$(function () {
         $("#buttonContainer").dxButton({
@@ -32,7 +32,7 @@ In this code, the slide-out menu is being closed from within the **SlideOut** UI
         });
     });
 
-When using AngularJS or Knockout, you can still call these methods, but as an alternative, you can bind the [menuVisible](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/menuVisible.md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/#menuVisible') property of the **SlideOut** UI component to a scope property (in AngularJS) or an observable variable (in Knockout). After that, change this scope property or observable variable, and the slide-out menu will be opened or closed.
+When using AngularJS or Knockout, you can still call these methods, but as an alternative, you can bind the [menuVisible](/api-reference/10%20UI%20Components/dxSlideOut/1%20Configuration/menuVisible.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#menuVisible') property of the **SlideOut** UI component to a scope property (in AngularJS) or an observable variable (in Knockout). After that, change this scope property or observable variable, and the slide-out menu will be opened or closed.
 
 ---
 #####**AngularJS**
@@ -110,6 +110,6 @@ When using AngularJS or Knockout, you can still call these methods, but as an al
 
 #####See Also#####
 - [SlideOut Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slideout/Overview)
-- [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Widgets/dxSlideOut/')
+- [SlideOut API Reference](/api-reference/10%20UI%20Components/dxSlideOut '/Documentation/ApiReference/UI_Components/dxSlideOut/')
 
 [tags]slide-out menu, slideOut, open, show, close, hide

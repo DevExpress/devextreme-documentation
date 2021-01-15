@@ -2,7 +2,7 @@ A series is a collection of related data points.
 
 ![DevExtreme HTML5 JavaScript Charts Series](/images/ChartJS/visual_elements/series.png)
 
-The most important characteristic of a series is its type. The **Chart** provides over 20 series types, and all of them are described in the [Series Types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/Widgets/Chart/Series_Types/') article. You can specify the type of a series using its [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') option.
+The most important characteristic of a series is its type. The **Chart** provides over 20 series types, and all of them are described in the [Series Types](/Documentation/Guide/Widgets/Chart/Series_Types/) article. You can specify the type of a series using its [type](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') option.
 
 ---
 ##### jQuery
@@ -81,7 +81,7 @@ The most important characteristic of a series is its type. The **Chart** provide
 
 ---
 
-A single **Chart** can contain several series at once. In this case, the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') option accepts an array of series objects. To enable a user to identify a series among others on the [chart legend](/concepts/05%20Widgets/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Legend/Overview/'), specify its [name](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#name').
+A single **Chart** can contain several series at once. In this case, the [series](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') option accepts an array of series objects. To enable a user to identify a series among others on the [chart legend](/concepts/05%20Widgets/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Legend/Overview/'), specify its [name](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#name').
 
 ---
 ##### jQuery
@@ -180,7 +180,7 @@ A single **Chart** can contain several series at once. In this case, the [series
 
 ---
 
-Objects in the **series** array specify individual settings for series. You can also specify common settings for all chart series using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object. Individual series settings override common settings.
+Objects in the **series** array specify individual settings for series. You can also specify common settings for all chart series using the [commonSeriesSettings](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object. Individual series settings override common settings.
 
 ---
 ##### jQuery

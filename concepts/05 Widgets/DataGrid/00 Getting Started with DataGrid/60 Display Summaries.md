@@ -1,12 +1,12 @@
 Summaries can be divided into two groups:
 
 - **Total summaries**       
-Calculated against all grid records; configured in the [totalItems](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/) array.
+Calculated against all grid records; configured in the [totalItems](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/) array.
 
 - **Group summaries**       
-Calculated for each data group; configured in the [groupItems](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/) array.
+Calculated for each data group; configured in the [groupItems](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/) array.
 
-Each summary item displays a value that is the result of applying an aggregate function to data. You can use [predefined aggregate functions](/Documentation/Guide/Widgets/DataGrid/Summaries/Predefined_Aggregate_Functions/), such as *"sum"*, *"avg"*, and *"count"*, or implement a [custom aggregate function](/Documentation/Guide/Widgets/DataGrid/Summaries/Custom_Aggregate_Function/). To apply an aggregate function, set the [summaryType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#summaryType) option.
+Each summary item displays a value that is the result of applying an aggregate function to data. You can use [predefined aggregate functions](/concepts/05%20Widgets/DataGrid/65%20Summaries/05%20Predefined%20Aggregate%20Functions.md '/Documentation/Guide/Widgets/DataGrid/Summaries/Predefined_Aggregate_Functions/'), such as *"sum"*, *"avg"*, and *"count"*, or implement a [custom aggregate function](/Documentation/Guide/Widgets/DataGrid/Summaries/Custom_Aggregate_Function/). To apply an aggregate function, set the [summaryType](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType) option.
 
 The code below configures a group summary that counts grid records in each group:
 

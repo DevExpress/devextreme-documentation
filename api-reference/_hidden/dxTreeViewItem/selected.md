@@ -10,4 +10,4 @@ Specifies whether the **TreeView** item should be displayed as selected.
 ---
 
 #####See Also#####
-- [selectedExpr](/api-reference/10%20UI%20Widgets/HierarchicalCollectionWidget/1%20Configuration/selectedExpr.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectedExpr')
+- [selectedExpr](/api-reference/10%20UI%20Components/HierarchicalCollectionWidget/1%20Configuration/selectedExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectedExpr')

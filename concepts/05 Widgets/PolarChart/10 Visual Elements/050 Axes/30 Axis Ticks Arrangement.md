@@ -4,7 +4,7 @@ There are two ways of arranging ticks.
 
 <h4>Set Ticks Explicitly</h4>
 
-Use this approach if you know for certain the exact range of series point values. In this instance, you can set the minimum value, maximum value and a tick interval for the [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/valueAxis/') and/or [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/') configuration objects. For this purpose, use the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/tickInterval/') property. The following example demonstrates this approach.
+Use this approach if you know for certain the exact range of series point values. In this instance, you can set the minimum value, maximum value and a tick interval for the [valueAxis](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/') and/or [argumentAxis](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/') configuration objects. For this purpose, use the [tickInterval](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/tickInterval/') property. The following example demonstrates this approach.
 
 	<!--JavaScript-->var polarChartOptions = {
         // ...
@@ -17,7 +17,7 @@ Use this approach if you know for certain the exact range of series point values
 
 <h4>Set Ticks Implicitly</h4>
 
-Use this approach when you do not know the exact values of series points. In this instance, you can specify a relative value (factor) of how closely axis labels should be placed to each other. To do so, use the [axisDivisionFactor](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/argumentAxis/#axisDivisionFactor') property. The following example demonstrates this approach for an argument axis.
+Use this approach when you do not know the exact values of series points. In this instance, you can specify a relative value (factor) of how closely axis labels should be placed to each other. To do so, use the [axisDivisionFactor](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#axisDivisionFactor') property. The following example demonstrates this approach for an argument axis.
 
 	<!--JavaScript-->var polarChartOptions = {
         // ...

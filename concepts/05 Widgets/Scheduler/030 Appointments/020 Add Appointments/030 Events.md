@@ -1,4 +1,4 @@
-To execute certain commands before or after an appointment was added, handle the [appointmentAdding](/api-reference/10%20UI%20Widgets/dxScheduler/4%20Events/appointmentAdding.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Events/#appointmentAdding') or [appointmentAdded](/api-reference/10%20UI%20Widgets/dxScheduler/4%20Events/appointmentAdded.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Events/#appointmentAdded') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the corresponding **on*EventName*** option when you configure the UI component.
+To execute certain commands before or after an appointment was added, handle the [appointmentAdding](/api-reference/10%20UI%20Components/dxScheduler/4%20Events/appointmentAdding.md '/Documentation/ApiReference/UI_Components/dxScheduler/Events/#appointmentAdding') or [appointmentAdded](/api-reference/10%20UI%20Components/dxScheduler/4%20Events/appointmentAdded.md '/Documentation/ApiReference/UI_Components/dxScheduler/Events/#appointmentAdded') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the corresponding **on*EventName*** option when you configure the UI component.
 
 ---
 
@@ -111,7 +111,7 @@ To execute certain commands before or after an appointment was added, handle the
     
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var addedEventHandler1 = function (e) {
@@ -130,4 +130,4 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #include common-link-handleevents
 #include common-link-callmethods
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Widgets/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

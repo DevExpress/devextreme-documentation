@@ -2,7 +2,7 @@ Exposes the **PolarChart** UI component.
 
 Exports:
 
-- *default* - The [PolarChart](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/') UI component
+- *default* - The [PolarChart](/api-reference/10%20UI%20Components/dxPolarChart '/Documentation/ApiReference/UI_Components/dxPolarChart/') UI component
 
         require("viz/polar_chart");
         // ===== or =====

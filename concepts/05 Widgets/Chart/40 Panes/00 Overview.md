@@ -2,7 +2,7 @@ A pane is a chart area containing series. If there are many series in the **Char
 
 ![DevExtreme HTML5 JavaScript Charts Panes](/images/ChartJS/visual_elements/pane.png)
 
-Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/panes '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/') option. For a single-pane chart, this option accepts an object that configures the [background color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/#backgroundColor') and the [border](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/border '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/panes/border/') of the pane.
+Panes are configured by the [panes](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/panes '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/') option. For a single-pane chart, this option accepts an object that configures the [background color](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/#backgroundColor') and the [border](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonPaneSettings/border '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/border/') of the pane.
 
 ---
 ##### jQuery
@@ -106,6 +106,6 @@ For a multi-pane chart, the **panes** option accepts an array. For further detai
 
 #####See Also#####
 - [Multiple Panes Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes)
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/')
+- [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, panes, overview, single-pane chart

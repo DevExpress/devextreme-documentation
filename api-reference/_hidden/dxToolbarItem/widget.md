@@ -5,10 +5,10 @@ type: String
 ---
 ---
 ##### shortDescription
-A UI component that presents a toolbar item. To configure it, use the [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#options') object.
+A UI component that presents a toolbar item. To configure it, use the [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options') object.
 
 ---
-[note]Import the specified UI component's module when using [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'). 
+[note]Import the specified UI component's module when using [DevExtreme modules](/Documentation/Guide/Common/Modularity/). 
 
 When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, configure this option with a lambda expression as follows:
 

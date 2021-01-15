@@ -1,0 +1,63 @@
+---
+id: dxGantt.Options.onTaskEditDialogShowing
+type: function(e)
+default: null
+EventForAction: dxGantt.taskEditDialogShowing
+---
+---
+##### shortDescription
+A function that is executed before the edit dialog is shown.
+
+##### param(e): Object
+Information about the event.
+
+##### field(e.cancel): Boolean
+Allows you to cancel the edit dialog showing.
+
+##### field(e.component): {WidgetName}
+The UI component's instance.
+
+##### field(e.element): dxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.hiddenFields): Array<String>
+An array of hidden fields.
+
+##### field(e.key): any
+The task key.
+
+##### field(e.model): Object
+Model data. Available only if you use Knockout.
+
+##### field(e.readOnlyFields): Array<String>
+An array of read-only fields.
+
+##### field(e.values): any
+The task values.
+
+---
+
+Note that the **hiddenFields** and **readOnlyFields** parameters affect only task fields. Use the [allowTaskResourceUpdating](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#allowTaskResourceUpdating) option to hide the Resource Manager in the Task Details dialog.
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#gantt").dxGantt({
+            // ...
+            onTaskEditDialogShowing: function (e) {
+                if (e.key != 0) {
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        });
+    }); 
+
+---
+
+#####See Also#####
+- [taskEditDialogShowing](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskEditDialogShowing)
+- [Gantt Elements](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/Widgets/Gantt/Gantt_Elements/')

@@ -2,45 +2,45 @@ In the UI components provided by the DevExtreme Data Visualization library, you 
 
 **Chart** and **PolarChart**
     
-- [legend items](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/')     
-- [point labels](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/label/')     
-- [axis labels](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/label/')    
-- [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/tooltip/')     
+- [legend items](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/')     
+- [point labels](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/')     
+- [axis labels](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/label/')    
+- [tooltips](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/')     
 
 **PieChart**
 
-- [legend items](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/legend '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/legend/')       
-- [point labels](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/')     
-- [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/')     
+- [legend items](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/legend/')       
+- [point labels](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/')     
+- [tooltips](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/')     
 
 **TreeMap**       
 
-- [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/tooltip/')  
+- [tooltips](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/tooltip/')  
 
 **CircularGauge** and **LinearGauge**
 
-- [subvalue indicators](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/subvalueIndicator/') <span style="font-size:11px">of the *textCloud* type</span>
-- [value indicator](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/valueIndicator '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/valueIndicator/') <span style="font-size:11px">of the *rangeBar* type</span>     
-- [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/tooltip/')     
+- [subvalue indicators](/api-reference/10%20UI%20Components/dxCircularGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/subvalueIndicator/') <span style="font-size:11px">of the *textCloud* type</span>
+- [value indicator](/api-reference/10%20UI%20Components/dxCircularGauge/1%20Configuration/valueIndicator '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/valueIndicator/') <span style="font-size:11px">of the *rangeBar* type</span>     
+- [tooltips](/api-reference/10%20UI%20Components/BaseGauge/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/tooltip/')     
 
 **BarGuage**	
 
-- [bar labels](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/label/')	
-- [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/tooltip/')
+- [bar labels](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/label '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/')	
+- [tooltips](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/tooltip/')
 
 **RangeSelector**
 
-- [scale labels](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/label/')      
-- [scale markers](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/marker '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/marker/')      
-- [slider markers](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/sliderMarker '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/sliderMarker/')      
+- [scale labels](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/scale/label '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/label/')      
+- [scale markers](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/scale/marker '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/marker/')      
+- [slider markers](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/sliderMarker '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/sliderMarker/')      
 
 **Bullet** and **Sparkline**
 
-- [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/BaseSparkline/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/tooltip/')
+- [tooltips](/api-reference/10%20UI%20Components/BaseSparkline/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/tooltip/')
 
 
 
-- [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/tooltip/')
+- [tooltips](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/tooltip/')
 
 For this purpose, the UI components provide a uniform set of options. No matter where you need to customize text, you always have the **format** and **customizeText** (or **customizeTooltip** for tooltips) options.
 

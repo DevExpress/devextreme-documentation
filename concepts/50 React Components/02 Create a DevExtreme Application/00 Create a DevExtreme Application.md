@@ -14,6 +14,6 @@ For further information about DevExtreme React UI components, refer to the follo
 
 - [Component Configuration Syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/')
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/React/Light)
-- [API Reference](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
+- [API Reference](/api-reference/10%20UI%20Components '/Documentation/ApiReference/UI_Components/')
 
 For more information about the structure and contents of the DevExtreme React Template, continue reading this article.

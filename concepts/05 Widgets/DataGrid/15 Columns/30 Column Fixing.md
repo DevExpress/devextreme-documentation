@@ -2,7 +2,7 @@ In some cases, the UI component contains so many columns that they cause horizon
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid ColumnFixing](/images/DataGrid/visual_elements/column_fixing.png)
 
-To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columnFixing/#enabled') option to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowFixing') option to **false**.
+To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/#enabled') option to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowFixing') option to **false**.
 
 ---
 ##### jQuery
@@ -97,7 +97,7 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
     
 ---
 
-If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixed') option and specify its target position in the UI component using the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#fixedPosition') option.
+If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed') option and specify its target position in the UI component using the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition') option.
 
 ---
 ##### jQuery
@@ -187,7 +187,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
 
 [note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** option, [command columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/') become fixed automatically.
 
-Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnAutoWidth') option is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
+Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth') option is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
 
 #####See Also#####
 - [Adaptability](/concepts/05%20Widgets/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/Widgets/DataGrid/Columns/Adaptability/')

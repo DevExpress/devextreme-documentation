@@ -1,4 +1,4 @@
-When a user selects a series point, its style changes to the one specified by the **series**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/selectionStyle/') object.
+When a user selects a series point, its style changes to the one specified by the **series**.[selectionStyle](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/selectionStyle/') object.
 
 ---
 ##### jQuery
@@ -92,7 +92,7 @@ When a user selects a series point, its style changes to the one specified by th
 
 ---
 
-You can disable the selection capability by settings the **series**.[selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/selectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#selectionMode') option to *"none"*.
+You can disable the selection capability by settings the **series**.[selectionMode](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/selectionMode.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#selectionMode') option to *"none"*.
 
 ---
 ##### jQuery
@@ -173,7 +173,7 @@ You can disable the selection capability by settings the **series**.[selectionMo
 
 ---
 
-Only a single point can be in the selected state at a time by default. If you need to allow multiple points to be in this state, assign *"multiple"* to the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#pointSelectionMode') option.
+Only a single point can be in the selected state at a time by default. If you need to allow multiple points to be in this state, assign *"multiple"* to the [pointSelectionMode](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#pointSelectionMode') option.
 
 ---
 ##### jQuery

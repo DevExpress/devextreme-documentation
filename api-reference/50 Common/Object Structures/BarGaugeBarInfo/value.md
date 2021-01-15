@@ -4,6 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-The bar's [value](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/values.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/#values').
+The bar's [value](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/values.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/#values').
 
 ---

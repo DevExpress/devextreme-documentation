@@ -1,4 +1,4 @@
-The following code shows the [onValueChanged](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#onValueChanged') event handler's implementation that limits the number of tags a user can select in the **TagBox**:
+The following code shows the [onValueChanged](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onValueChanged') event handler's implementation that limits the number of tags a user can select in the **TagBox**:
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-If the user should be able to collapse or expand a group in the **List**, set the [collapsibleGroups](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/collapsibleGroups.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#collapsibleGroups') option to **true**. In this case, the user can collapse or expand a group with a click on the group header.
+If the user should be able to collapse or expand a group in the **List**, set the [collapsibleGroups](/api-reference/10%20UI%20Components/dxList/1%20Configuration/collapsibleGroups.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#collapsibleGroups') option to **true**. In this case, the user can collapse or expand a group with a click on the group header.
 
 ---
 ##### jQuery
@@ -68,7 +68,7 @@ If the user should be able to collapse or expand a group in the **List**, set th
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
 }
 
-To collapse or expand a specific group programmatically, call the [collapseGroup(groupIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/collapseGroup(groupIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#collapseGroupgroupIndex') or [expandGroup(groupIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/expandGroup(groupIndex).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#expandGroupgroupIndex') method.
+To collapse or expand a specific group programmatically, call the [collapseGroup(groupIndex)](/api-reference/10%20UI%20Components/dxList/3%20Methods/collapseGroup(groupIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#collapseGroupgroupIndex') or [expandGroup(groupIndex)](/api-reference/10%20UI%20Components/dxList/3%20Methods/expandGroup(groupIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#expandGroupgroupIndex') method.
 
 ---
 ##### jQuery
@@ -108,6 +108,6 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
 #####See Also#####
 #include common-link-callmethods
 - [List - Grouping in the Data Source](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/')
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, expand, collapse, collapsibleGroups, collapseGroup, expandGroup

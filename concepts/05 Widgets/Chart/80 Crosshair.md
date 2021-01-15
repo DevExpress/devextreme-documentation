@@ -2,7 +2,7 @@ Crosshair is a pointer represented by two mutually-crossing lines stretched over
 
 ![DevExtreme HTML5 JavaScript Charts Crosshair](/images/ChartJS/visual_elements/crosshair.png)
 
-To enable the crosshair, set the **crosshair**.[enabled](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair/enabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/crosshair/#enabled') option to **true**. To show the crosshair labels, do the same with the **crosshair**.[label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/crosshair/label/').**visible** option.
+To enable the crosshair, set the **crosshair**.[enabled](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair/enabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/#enabled') option to **true**. To show the crosshair labels, do the same with the **crosshair**.[label](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/label/').**visible** option.
 
 ---
 ##### jQuery
@@ -92,7 +92,7 @@ To enable the crosshair, set the **crosshair**.[enabled](/api-reference/20%20Dat
 
 ---
 
-For information about all options of the crosshair and its labels, visit the [crosshair](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/crosshair/') section of the API reference.
+For information about all options of the crosshair and its labels, visit the [crosshair](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/') section of the API reference.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Crosshair/"

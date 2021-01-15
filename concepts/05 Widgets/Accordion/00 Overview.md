@@ -198,6 +198,6 @@ The following code adds a simple **Accordion** to your page. Note that each data
 #include common-link-configurewidget
 - [Accordion - Customize Item Appearance](/concepts/05%20Widgets/Accordion/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Accordion/Customize_Item_Appearance/')
 - [Accordion - Control the Behavior](/concepts/05%20Widgets/Accordion/10%20Control%20the%20Behavior.md '/Documentation/Guide/Widgets/Accordion/Control_the_Behavior')
-- [Accordion API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/dxAccordion/')
+- [Accordion API Reference](/api-reference/10%20UI%20Components/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
 
 [tags] dxaccordion, accordion, collection container, collection UI component, overview

@@ -363,7 +363,7 @@ The following code declares a custom group for the `ShippingDate` data field. Th
 
 ---
 
-When a format is [exported to Excel](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/export/'), it is converted to an Excel format as follows:
+When a format is [exported to Excel](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/'), it is converted to an Excel format as follows:
 
 - **Numeric**   
 Converted to Number format, except for *"largeNumber"*, which is exported without formatting.

@@ -164,6 +164,6 @@ Note that the data source in the code above has a hierarchical structure, howeve
 - [TreeView - Customize Node Appearance](/concepts/05%20Widgets/TreeView/30%20Customize%20Node%20Appearance.md '/Documentation/Guide/Widgets/TreeView/Customize_Node_Appearance')
 - [TreeView - Enhance Performance on Large Datasets](/concepts/05%20Widgets/TreeView/32%20Enhance%20Performance%20on%20Large%20Datasets.md '/Documentation/Guide/Widgets/TreeView/Enhance_Performance_on_Large_Datasets')
 - [TreeView - Keyboard Support](/concepts/05%20Widgets/TreeView/35%20Keyboard%20Support.md '/Documentation/Guide/Widgets/TreeView/Keyboard_Support')
-- [TreeView API Reference](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/')
+- [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
 [tags]dxtreeview, treeview, tree view, collection container, collection UI component, overview

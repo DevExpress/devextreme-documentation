@@ -1,4 +1,4 @@
-Columns represent sets of data values that have the same type. To configure columns, assign an array of objects to the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/') option. Each object in it configures a single column. If a column does not need to be customized, this array may include the name of the field that provides data for this column.
+Columns represent sets of data values that have the same type. To configure columns, assign an array of objects to the [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') option. Each object in it configures a single column. If a column does not need to be customized, this array may include the name of the field that provides data for this column.
 
 ---
 ##### jQuery
@@ -45,7 +45,7 @@ Columns represent sets of data values that have the same type. To configure colu
     
 ---
 
-The **TreeList** generates a column per data field if you do not specify the **columns** array. You can make minor adjustments to these columns with the [customizeColumns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#customizeColumns') function. Use the function's parameter to access the column configurations.
+The **TreeList** generates a column per data field if you do not specify the **columns** array. You can make minor adjustments to these columns with the [customizeColumns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#customizeColumns') function. Use the function's parameter to access the column configurations.
 
 ---
 ##### jQuery

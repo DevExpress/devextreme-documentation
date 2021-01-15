@@ -1,11 +1,11 @@
 The UI component allows you to configure upload settings: 
 
-- [maxFileSize](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/upload/maxFileSize.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/upload/#maxFileSize')
+- [maxFileSize](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/upload/maxFileSize.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#maxFileSize')
     Specifies the maximum upload file size. The UI component does not upload a file and displays the following error message when the file's size exceeds the maximum upload file size.
 
     ![DevExtreme File Manager - Max File Size](/images/FileManager/max-file-size-error-message.png)
 
-- [chunkSize](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/upload/chunkSize.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/upload/#chunkSize')
+- [chunkSize](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/upload/chunkSize.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#chunkSize')
     Specifies a chunk size to divide a large file in parts and upload them in separate requests.
 
 ---

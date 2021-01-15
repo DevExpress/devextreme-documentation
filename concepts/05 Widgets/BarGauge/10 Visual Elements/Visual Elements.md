@@ -20,4 +20,4 @@ Topics in this section describe various elements of the **BarGauge** UI componen
 </div>
 
 #####See Also#####
-- [BarGauge API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge')
+- [BarGauge API Reference](/api-reference/10%20UI%20Components/dxBarGauge '/Documentation/ApiReference/UI_Components/dxBarGauge')

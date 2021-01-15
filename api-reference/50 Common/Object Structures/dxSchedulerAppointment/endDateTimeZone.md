@@ -8,7 +8,7 @@ Specifies the time zone for an appointment's [endDate](/api-reference/50%20Commo
 
 ---
 
-Users can view and edit the specified time zone in the appointment details form if you enable the [editing](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/').[allowTimeZoneEditing](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowTimeZoneEditing.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowTimeZoneEditing') option.
+Users can view and edit the specified time zone in the appointment details form if you enable the [editing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/').[allowTimeZoneEditing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/allowTimeZoneEditing.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowTimeZoneEditing') option.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"

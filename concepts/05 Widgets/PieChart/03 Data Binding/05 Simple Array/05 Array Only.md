@@ -1,4 +1,4 @@
-To bind the **PieChart** to an array, pass this array to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#dataSource') option. The array should contain objects.
+To bind the **PieChart** to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#dataSource') option. The array should contain objects.
 
 ---
 ##### jQuery

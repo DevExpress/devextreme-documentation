@@ -1,4 +1,4 @@
-When a user presses or hovers over funnel items, they change their style to the one specified by the **item**.[hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/item/hoverStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/item/hoverStyle/') object.
+When a user presses or hovers over funnel items, they change their style to the one specified by the **item**.[hoverStyle](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/item/hoverStyle '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/item/hoverStyle/') object.
 
 ---
 ##### jQuery
@@ -97,7 +97,7 @@ When a user presses or hovers over funnel items, they change their style to the 
 
 ---
 
-If you need to disable this feature, set the [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/hoverEnabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#hoverEnabled') option to **false**.
+If you need to disable this feature, set the [hoverEnabled](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/hoverEnabled.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#hoverEnabled') option to **false**.
 
 ---
 ##### jQuery

@@ -4,13 +4,13 @@ In addition to the major grid built on major ticks, the **Chart** provides a min
 
 The minor grid is the exact copy of the major grid. Therefore, all settings applicable to the major grid are applicable to the minor grid as well. You can configure the minor grid using one of the following objects.
 
-- **argumentAxis**.[minorGrid](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/minorGrid/')     
+- **argumentAxis**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/minorGrid/')     
 Settings for the minor grid lines that ascend from the argument axis.
 
-- **valueAxis**.[minorGrid](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/minorGrid/')         
+- **valueAxis**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/minorGrid/')         
 Settings for the minor grid lines that ascend from the value axis.
 
-- **commonAxisSettings**.[minorGrid](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/minorGrid/')         
+- **commonAxisSettings**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorGrid/')         
 Settings for all minor grid lines in the **Chart**.
 
 #####See Also#####

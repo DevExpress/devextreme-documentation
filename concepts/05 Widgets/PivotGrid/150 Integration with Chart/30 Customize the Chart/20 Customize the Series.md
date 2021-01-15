@@ -19,7 +19,7 @@ The options of the series.
     * **pane**: <span style="font-size:12px">String</span>      
     The name of the pane the series occupies. Has a value only when there are several panes in the chart.
     
-The **seriesOptions** can contain any appearance-related options from the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') section of the reference.
+The **seriesOptions** can contain any appearance-related options from the [series](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') section of the reference.
 
 When series were generated from several data fields, they can be arranged in three different manners.
 

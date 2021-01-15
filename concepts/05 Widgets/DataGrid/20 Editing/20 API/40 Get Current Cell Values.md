@@ -1,6 +1,6 @@
-To get current cell values, call the [cellValue(rowIndex, dataField)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#cellValuerowIndex_dataField') method. If a cell is being edited, this method returns the *unsaved* cell value.
+To get current cell values, call the [cellValue(rowIndex, dataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') method. If a cell is being edited, this method returns the *unsaved* cell value.
 
-The **cellValue(rowIndex, dataField)** method requires a row index. Use the [getRowIndexByKey(key)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#getRowIndexByKeykey') method to use a key to get the row index. Obtaining the key to use depends on your particular scenario. If you want to get the key of the row being edited, you can use the parameter passed to the [onEditingStart](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditingStart.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onEditingStart') event handler:
+The **cellValue(rowIndex, dataField)** method requires a row index. Use the [getRowIndexByKey(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') method to use a key to get the row index. Obtaining the key to use depends on your particular scenario. If you want to get the key of the row being edited, you can use the parameter passed to the [onEditingStart](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditingStart.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart') event handler:
 
 ---
 ##### jQuery
@@ -174,7 +174,7 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
 
 ---
 
-To access a cell value after the user has edited it, but before it is saved to the data source, use the [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#setCellValue') function as an alternative. In addition to edited cell values, it allows you to get the cell values before user edits. **setCellValue** is set individually for each column.
+To access a cell value after the user has edited it, but before it is saved to the data source, use the [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') function as an alternative. In addition to edited cell values, it allows you to get the cell values before user edits. **setCellValue** is set individually for each column.
 
 ---
 ##### jQuery

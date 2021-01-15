@@ -14,6 +14,6 @@ For further information about DevExtreme Vue components, refer to the following 
 
 - [Component Configuration Syntax](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/')
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Vue/Light)
-- [API Reference](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
+- [API Reference](/api-reference/10%20UI%20Components '/Documentation/ApiReference/UI_Components/')
 
 For more information about the structure and contents of the DevExtreme Vue Template, continue reading this article.

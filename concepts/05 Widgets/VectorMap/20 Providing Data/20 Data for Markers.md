@@ -1,6 +1,6 @@
-To provide data for map markers, assign an array of objects to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataSource') option of a corresponding layer. For any marker type, each object of the **markers** array must contain the **coordinates** field, which must be assigned to an array of two values: the first is the longitude and the second is the latitude of a map marker. 
+To provide data for map markers, assign an array of objects to the [dataSource](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource') option of a corresponding layer. For any marker type, each object of the **markers** array must contain the **coordinates** field, which must be assigned to an array of two values: the first is the longitude and the second is the latitude of a map marker. 
 
-Optionally, you can specify the **attributes** field to store additional information for each marker there. Depending on the marker [elementType](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/elementType.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#elementType') used, the **attributes** object may contain different fields. 
+Optionally, you can specify the **attributes** field to store additional information for each marker there. Depending on the marker [elementType](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/elementType.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#elementType') used, the **attributes** object may contain different fields. 
 
 	<!--JavaScript-->var markersArray = [{
 		coordinates: [-121.2808, 38.3320],
@@ -22,7 +22,7 @@ Optionally, you can specify the **attributes** field to store additional informa
 
 The code above is sufficient for configuring markers of the *dot* type. For markers of other types, you need to specify several additional fields.
 
-If you use markers of the *bubble* type, add a numeric field to each object in the **markers** array. The value of this field will define the size of the bubble marker. Then, assign this field to the *marker* layer using the [dataField](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataField') option.
+If you use markers of the *bubble* type, add a numeric field to each object in the **markers** array. The value of this field will define the size of the bubble marker. Then, assign this field to the *marker* layer using the [dataField](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/dataField.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataField') option.
 
 
 	<!--JavaScript-->var markersArray = [{

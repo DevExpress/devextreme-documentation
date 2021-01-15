@@ -1,4 +1,4 @@
-You can switch a series point into the hover state and back again by calling its [hover()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/hover().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/Methods/#hover') and [clearHover()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/clearHover().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/Methods/#clearHover') method, respectively.
+You can switch a series point into the hover state and back again by calling its [hover()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/3%20Methods/hover().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#hover') and [clearHover()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/3%20Methods/clearHover().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#clearHover') method, respectively.
 
 ---
 ##### jQuery

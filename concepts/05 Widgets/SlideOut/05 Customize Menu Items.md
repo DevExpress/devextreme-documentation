@@ -1,4 +1,4 @@
-For a minor customization of menu items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/items/') in item data objects. For example, in the following code, *"Favorites"* is disabled and *"Help"* is hidden.
+For a minor customization of menu items, you can define [specific fields](/api-reference/10%20UI%20Components/dxSlideOut/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/items/') in item data objects. For example, in the following code, *"Favorites"* is disabled and *"Help"* is hidden.
 
     <!--JavaScript-->var menuItems = [
         { text: "Home" },
@@ -26,7 +26,7 @@ For a minor customization of menu items, you can define [specific fields](/api-r
         width: 100%;
     }
 
-If you need a more flexible solution, define a custom template. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize the items of a slide-out menu.
+If you need a more flexible solution, define a custom template. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize the items of a slide-out menu.
 
 ---
 
@@ -96,7 +96,7 @@ If you need a more flexible solution, define a custom template. For AngularJS an
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the [menuItemTemplate](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/#menuItemTemplate') callback function as shown in the following code.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the [menuItemTemplate](/api-reference/10%20UI%20Components/dxSlideOut/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#menuItemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->var menuItems = [
         { text: "Home", icon: "home" },
@@ -124,7 +124,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         });
     });
 
-You can also customize an individual menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [menuTemplate](/api-reference/_hidden/dxSlideOutItem/menuTemplate.md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/items/#menuTemplate') field of the item's data object.
+You can also customize an individual menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [menuTemplate](/api-reference/_hidden/dxSlideOutItem/menuTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/items/#menuTemplate') field of the item's data object.
 
     <!--HTML--><script id="individualTemplate" type="text/html">
         <!-- ... -->
@@ -144,6 +144,6 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 #####See Also#####
 - [SlideOut - Group Menu Items](/concepts/05%20Widgets/SlideOut/08%20Group%20Menu%20Items.md '/Documentation/Guide/Widgets/SlideOut/Group_Menu_Items')
 - [SlideOut Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slideout/Overview)
-- [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Widgets/dxSlideOut/')
+- [SlideOut API Reference](/api-reference/10%20UI%20Components/dxSlideOut '/Documentation/ApiReference/UI_Components/dxSlideOut/')
 
 [tags]slide-out menu, slideOut, item appearance, customize, templates

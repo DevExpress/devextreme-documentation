@@ -1,4 +1,4 @@
-To change a node or link's hover state, pass **true** or **false** to their [hover(state)](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/3%20Methods/hover(state).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Node/Methods/#hoverstate') method. You can call the [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/3%20Methods/isHovered().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Node/Methods/#isHovered') method to check the current state.
+To change a node or link's hover state, pass **true** or **false** to their [hover(state)](/api-reference/10%20UI%20Components/dxSankey/6%20Node/3%20Methods/hover(state).md '/Documentation/ApiReference/UI_Components/dxSankey/Node/Methods/#hoverstate') method. You can call the [isHovered()](/api-reference/10%20UI%20Components/dxSankey/6%20Node/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxSankey/Node/Methods/#isHovered') method to check the current state.
 
 ---
 ##### jQuery

@@ -1,15 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MenuRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <MenuRule SourcePattern="ApiReference:^10 UI Widgets/Errors and Warnings.*" Destination="" />
-  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets/Errors and Warnings.*" Destination="" />
+  <MenuRule SourcePattern="ApiReference:^10 UI Components/Errors and Warnings.*" Destination="" />
   <MenuRule SourcePattern="ApiReference:^30 Data Layer/zz Errors and Warnings.*" Destination="" />
   <MenuRule SourcePattern="ApiReference:^50 Common/utils/zz Errors and Warnings.*" Destination="" />
 
-  <MenuRule SourcePattern="ApiReference:^10 UI Widgets$" Destination="aa01 API Reference/10 UI Widgets" />
-  <MenuRule SourcePattern="ApiReference:^10 UI Widgets/(.*?)" Destination="aa01 API Reference/10 UI Widgets/$1" />
-  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets/(([a-z]{2})?(\d{2,3})?\s)?(.*)" Destination="aa01 API Reference/10 UI Widgets/$4" />
-  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets" Destination="" />
   <MenuRule SourcePattern="ApiReference:^50 Common/utils(.*?)" Destination="aa01 API Reference/Utilities$1" />
   <MenuRule SourcePattern="ApiReference:^50 Common/Object Structures(.*?)" Destination="aa01 API Reference/Types$1" />
   <MenuRule SourcePattern="ApiReference:^50 Common(.*?)" Destination="aa01 API Reference$1" />

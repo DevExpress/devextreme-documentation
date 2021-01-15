@@ -2,7 +2,7 @@ Exposes the **Popup** UI component.
 
 Exports:
 
-- *default* - The [Popup](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Widgets/dxPopup/') UI component
+- *default* - The [Popup](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/') UI component
 
         require("ui/popup");
         // ===== or =====

@@ -1,4 +1,4 @@
-Frequently, the user requires changing the summary type at runtime. Although this capability is not provided out-of-the-box, you can easily implement it using the [onContextMenuPreparing](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/onContextMenuPreparing.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#onContextMenuPreparing') event handler. For example, consider the following self-explanatory code sample.
+Frequently, the user requires changing the summary type at runtime. Although this capability is not provided out-of-the-box, you can easily implement it using the [onContextMenuPreparing](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/onContextMenuPreparing.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onContextMenuPreparing') event handler. For example, consider the following self-explanatory code sample.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

@@ -9,4 +9,4 @@ Specifies whether to render the column after other columns and elements. Use if 
 
 ---
 #####See Also#####
-- [renderAsync](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/renderAsync.md '{basewidgetpath}/Configuration/#renderAsync')
+- [renderAsync](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/renderAsync.md '{basewidgetpath}/Configuration/#renderAsync')

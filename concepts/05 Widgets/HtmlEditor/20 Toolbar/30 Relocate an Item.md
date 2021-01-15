@@ -1,4 +1,4 @@
-Toolbar items are aligned to the left (right if [rtlEnabled](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/rtlEnabled.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/#rtlEnabled') is **true**) and preserve the order they have in the **items** array.  Use the [location](/api-reference/_hidden/dxHtmlEditorToolbarItem/location.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#location') option to override the order.
+Toolbar items are aligned to the left (right if [rtlEnabled](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/rtlEnabled.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#rtlEnabled') is **true**) and preserve the order they have in the **items** array.  Use the [location](/api-reference/_hidden/dxHtmlEditorToolbarItem/location.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#location') option to override the order.
 
 This option accepts the *"before"*, *"center"*, and *"after"* values that specify a toolbar item's location relative to that of other items. In the code below, it is used to order items as follows: `alignLeft`, `alignRight`, `color`, `background`, `undo`, and `redo`. Note that `alignLeft` and `alignRight` assume the default value, *"before"*.
 
@@ -135,7 +135,7 @@ This option accepts the *"before"*, *"center"*, and *"after"* values that specif
 
 ---
 
-If the toolbar cannot fit all the items, some of them are collected in the overflow menu. Use the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#locateInMenu') option to change this behavior:
+If the toolbar cannot fit all the items, some of them are collected in the overflow menu. Use the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#locateInMenu') option to change this behavior:
 
 ---
 ##### jQuery

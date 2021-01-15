@@ -1,4 +1,4 @@
-Items in the **SelectBox** can be grouped if they are grouped in the data source. The **SelectBox** recognizes a group when it finds an object with the **key** and **items** fields. The **key** is the group header, the **items** are items that fall into the group. For example, the `fruitsVegetables` array from the following code produces two groups with three items each. Note that the **SelectBox** needs to be informed that it deals with grouped data, therefore its [grouped](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#grouped') option is set to **true**.
+Items in the **SelectBox** can be grouped if they are grouped in the data source. The **SelectBox** recognizes a group when it finds an object with the **key** and **items** fields. The **key** is the group header, the **items** are items that fall into the group. For example, the `fruitsVegetables` array from the following code produces two groups with three items each. Note that the **SelectBox** needs to be informed that it deals with grouped data, therefore its [grouped](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#grouped') option is set to **true**.
 
 ---
 ##### jQuery
@@ -501,6 +501,6 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
 
 #####See Also#####
 - [SelectBox - Grouping | Customize Group Headers](/concepts/05%20Widgets/SelectBox/07%20Grouping/05%20Customize%20Group%20Headers.md '/Documentation/Guide/Widgets/SelectBox/Grouping/Customize_Group_Headers/')
-- [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/')
+- [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 
 [tags]selectBox, grouped, key, items, group items, map items

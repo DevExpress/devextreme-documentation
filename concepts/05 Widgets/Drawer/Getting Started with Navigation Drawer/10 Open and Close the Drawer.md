@@ -1,4 +1,4 @@
-Depending on the library or framework you use, call the [toggle()](/api-reference/10%20UI%20Widgets/dxDrawer/3%20Methods/toggle().md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#toggle') method or bind the [opened](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/opened.md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Configuration/#opened') option to a component property.
+Depending on the library or framework you use, call the [toggle()](/api-reference/10%20UI%20Components/dxDrawer/3%20Methods/toggle().md '/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#toggle') method or bind the [opened](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/opened.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#opened') option to a component property.
 
 In the following code, a toolbar button outside the **Drawer** opens and closes it:
 

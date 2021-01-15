@@ -1,4 +1,4 @@
-The **Button** UI component provides five predefined appearances controlled by the [type](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#type') option. The **type** can be *"normal"*, *"default"*, *"back"*, *"danger"* or *"success"*. Choose the proper type depending on the commands that the **Button** performs.
+The **Button** UI component provides five predefined appearances controlled by the [type](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type') option. The **type** can be *"normal"*, *"default"*, *"back"*, *"danger"* or *"success"*. Choose the proper type depending on the commands that the **Button** performs.
 
 ---
 ##### jQuery
@@ -90,7 +90,7 @@ The **Button** UI component provides five predefined appearances controlled by t
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
 }
 
-Apart from plain text, the **Button** can display an icon. DevExtreme provides [built-in icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library') that change their appearance depending on the platform. Alternatively, you can [use an external icon library](/concepts/60%20Themes%20and%20Styles/30%20Icons/50%20External%20Icon%20Libraries.md '/Documentation/Guide/Themes_and_Styles/Icons/#External_Icon_Libraries') or [standalone icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/40%20Custom%20Images%20as%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/#Custom_Images_as_Icons'). To specify the icon, set the [icon](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#icon') option.
+Apart from plain text, the **Button** can display an icon. DevExtreme provides [built-in icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library') that change their appearance depending on the platform. Alternatively, you can [use an external icon library](/concepts/60%20Themes%20and%20Styles/30%20Icons/50%20External%20Icon%20Libraries.md '/Documentation/Guide/Themes_and_Styles/Icons/#External_Icon_Libraries') or [standalone icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/40%20Custom%20Images%20as%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/#Custom_Images_as_Icons'). To specify the icon, set the [icon](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon') option.
 
 ---
 ##### jQuery
@@ -187,7 +187,7 @@ Apart from plain text, the **Button** can display an icon. DevExtreme provides [
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/"
 }
 
-If you need to define the **Button** content completely, implement a template for it using the [template](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#template') option as shown in the following example.
+If you need to define the **Button** content completely, implement a template for it using the [template](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#template') option as shown in the following example.
 
 ---
 ##### jQuery
@@ -297,6 +297,6 @@ If you need to define the **Button** content completely, implement a template fo
     
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')
-- [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/')
+- [Button API Reference](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 
 [tags]button, appearance, customize, templates, type, icon

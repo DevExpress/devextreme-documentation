@@ -1,7 +1,7 @@
 Use the following options to create a shape template:
 
-* The [customShapeTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#customShapeTemplate') option defines a common template for all shapes in the UI component.
-* The [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#template') option defines a template for an individual shape.
+* The [customShapeTemplate](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#customShapeTemplate') option defines a common template for all shapes in the UI component.
+* The [template](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') option defines a template for an individual shape.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"

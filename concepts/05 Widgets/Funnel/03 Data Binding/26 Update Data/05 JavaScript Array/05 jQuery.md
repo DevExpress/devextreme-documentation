@@ -1,4 +1,4 @@
-Make changes to the array using <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a>. Then, reassign the updated array to the **Funnel** using the [option(optionName, optionValue)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Methods/#optionoptionName_optionValue') method.
+Make changes to the array using <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a>. Then, reassign the updated array to the **Funnel** using the [option(optionName, optionValue)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#optionoptionName_optionValue') method.
 
     <!--JavaScript-->var fruits = [
         { fruit: 'Apples', count: 10 },

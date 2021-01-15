@@ -1,4 +1,4 @@
-The **PieChart** UI component comprises of a pie and other elements which can affect the pie's size. This means that pies in several side-by-side **PieCharts** may differ in size. Collect all these UI components in a single size group by setting their [sizeGroup](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#sizeGroup') options to identical values to avoid this.
+The **PieChart** UI component comprises of a pie and other elements which can affect the pie's size. This means that pies in several side-by-side **PieCharts** may differ in size. Collect all these UI components in a single size group by setting their [sizeGroup](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#sizeGroup') options to identical values to avoid this.
 
 ---
 ##### jQuery

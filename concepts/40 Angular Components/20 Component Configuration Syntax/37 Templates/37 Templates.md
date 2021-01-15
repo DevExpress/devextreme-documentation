@@ -1,4 +1,4 @@
-Templates allow you to customize UI component elements. In the following code, an [itemTemplate](/api-reference/10%20UI%20UI components/CollectionUI component/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_UI components/dxList/Configuration/#itemTemplate') called `listItem` and a [groupTemplate](/api-reference/10%20UI%20UI components/dxList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_UI components/dxList/Configuration/#groupTemplate') called `listGroup` customize items and groups in the [List](https://js.devexpress.com/Demos/UI componentsGallery/Demo/List/GroupedList/Angular/Light). Inside the templates, the `itemData` and `groupData` variables expose item and group data objects; the `itemIndex` variable gives access to the item index.
+Templates allow you to customize UI component elements. In the following code, an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate) called `listItem` and a [groupTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#groupTemplate) called `listGroup` customize items and groups in the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/Angular/Light). Inside the templates, the `itemData` and `groupData` variables expose item and group data objects; the `itemIndex` variable gives access to the item index.
 
     <!--HTML-->
     <dx-list
@@ -16,7 +16,7 @@ Templates allow you to customize UI component elements. In the following code, a
 
 [note] The `dxTemplate` attribute directive cannot be used on custom markup elements. 
 
-Refer to the common [Custom Templates](/concepts/05%20UI components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI components/Common/Templates/#Custom_Templates') article for more information.
+Refer to the common [Custom Templates](/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates) article for more information.
 
 [note]
 

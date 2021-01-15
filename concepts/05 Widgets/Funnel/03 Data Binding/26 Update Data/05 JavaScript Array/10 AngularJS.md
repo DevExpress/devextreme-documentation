@@ -1,4 +1,4 @@
-Declare two-way binding between the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#dataSource') option and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. For this, configure the **bindingOptions** object of the **Funnel** as follows.
+Declare two-way binding between the [dataSource](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#dataSource') option and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. For this, configure the **bindingOptions** object of the **Funnel** as follows.
 
     <!--HTML--><div ng-controller="DemoController">
         <div dx-funnel="{

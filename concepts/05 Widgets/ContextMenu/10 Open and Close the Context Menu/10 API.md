@@ -4,7 +4,7 @@ The **ContextMenu** UI component is not supposed to be opened programmatically, 
 - [ContextMenu - Overview](/concepts/05%20Widgets/ContextMenu/00%20Overview.md '/Documentation/Guide/Widgets/ContextMenu/Overview/')
 - [Button - Overview](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/')
 
-To open or close the **ContextMenu** from code, call the [show()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/hide().md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#hide') method. You can do the same thing using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Methods/#toggleshowing') method. Pass **true** or **false** to this method to open or close the context menu, respectively.
+To open or close the **ContextMenu** from code, call the [show()](/api-reference/10%20UI%20Components/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxContextMenu/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#hide') method. You can do the same thing using the [toggle(showing)](/api-reference/10%20UI%20Components/dxContextMenu/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#toggleshowing') method. Pass **true** or **false** to this method to open or close the context menu, respectively.
 
     <!--JavaScript-->
     var contextMenuItems = [
@@ -29,7 +29,7 @@ To open or close the **ContextMenu** from code, call the [show()](/api-reference
         });
     });
 
-When using Angular, Vue or React, use a different approach. Bind the [visible](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#visible') property of the **ContextMenu** UI component to a component property. After that, change this property or variable, and the context menu will be opened or closed.
+When using Angular, Vue or React, use a different approach. Bind the [visible](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#visible') property of the **ContextMenu** UI component to a component property. After that, change this property or variable, and the context menu will be opened or closed.
 
 ---
 
@@ -172,7 +172,7 @@ When using Angular, Vue or React, use a different approach. Bind the [visible](/
 
 ---
 
-When invoking the context menu from code, you may want to specify its [position](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/position.md '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/#position').
+When invoking the context menu from code, you may want to specify its [position](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#position').
 
 ---
 

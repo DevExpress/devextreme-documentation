@@ -1,4 +1,4 @@
-You can use the **Funnel** UI component to create a pyramid chart. Change the [algorithm](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/algorithm.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#algorithm') option to *"dynamicHeight"* and the [inverted](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/inverted.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#inverted') option to **true**.
+You can use the **Funnel** UI component to create a pyramid chart. Change the [algorithm](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/algorithm.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#algorithm') option to *"dynamicHeight"* and the [inverted](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/inverted.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#inverted') option to **true**.
 
 ---
 ##### jQuery

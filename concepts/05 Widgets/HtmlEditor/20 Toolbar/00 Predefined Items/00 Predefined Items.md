@@ -14,8 +14,8 @@ The following table lists toolbar items and the formats they apply (if applicabl
 <table class="dx-table">
     <tr>
         <th>Toolbar Item</th>
-        <th><a href="/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName">formatName</a></th>
-        <th><a href="/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatValues">formatValue</a></th>
+        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName">formatName</a></th>
+        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatValues">formatValue</a></th>
     </tr>
     <tr>
         <td>"background"</td>
@@ -149,7 +149,7 @@ The following table lists toolbar items and the formats they apply (if applicabl
     </tr>
 </table>
  
-To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/Widgets/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/') array:
+To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/Widgets/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') array:
  
 ---
 ##### jQuery
@@ -263,7 +263,7 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
 
 ---
  
-To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName') and [formatValues](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatValues.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatValues'):
+To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName') and [formatValues](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatValues.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatValues'):
  
 ---
 ##### jQuery

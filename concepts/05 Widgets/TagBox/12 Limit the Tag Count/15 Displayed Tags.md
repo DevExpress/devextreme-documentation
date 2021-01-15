@@ -1,4 +1,4 @@
-Specify the [maxDisplayedTags](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/maxDisplayedTags.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#maxDisplayedTags') option to limit the number of displayed tags. In this case, when the specified limit is exceeded, the UI component replaces tags with a single multi-tag displaying the number of selected items. The **TagBox** can display the multi-tag alone or with ordinary tags depending on the [showMultiTagOnly](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/showMultiTagOnly.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#showMultiTagOnly') option's value.
+Specify the [maxDisplayedTags](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/maxDisplayedTags.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#maxDisplayedTags') option to limit the number of displayed tags. In this case, when the specified limit is exceeded, the UI component replaces tags with a single multi-tag displaying the number of selected items. The **TagBox** can display the multi-tag alone or with ordinary tags depending on the [showMultiTagOnly](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/showMultiTagOnly.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly') option's value.
 
 ---
 ##### jQuery
@@ -115,7 +115,7 @@ Specify the [maxDisplayedTags](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Con
 
 ---
 
-You can also customize the multi-tag within the [onMultiTagPreparing](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/onMultiTagPreparing.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#onMultiTagPreparing') event handler. In the following code, the multi-tag's text is changed and it is shown only when a user selects all items:
+You can also customize the multi-tag within the [onMultiTagPreparing](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/onMultiTagPreparing.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onMultiTagPreparing') event handler. In the following code, the multi-tag's text is changed and it is shown only when a user selects all items:
 
 ---
 ##### jQuery

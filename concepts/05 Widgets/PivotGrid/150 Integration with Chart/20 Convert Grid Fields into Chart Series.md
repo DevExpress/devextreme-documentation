@@ -82,4 +82,4 @@ The resulting item that will be passed on to the chart data source. The fields o
     * **val**: <span style="font-size:12px">Number | String | Date</span>      
     The value of the data item.
     
-In this topic, you have discovered how to process data coming from **PivotGrid** to **Chart** using the second argument of the [bindChart(chart, integrationOptions)](/api-reference/10%20UI%20Widgets/dxPivotGrid/3%20Methods/bindChart(chart_integrationOptions).md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Methods/#bindChartchart_integrationOptions') method. The final topic provides an overview of fields that customize the resulting look of **Chart**.
+In this topic, you have discovered how to process data coming from **PivotGrid** to **Chart** using the second argument of the [bindChart(chart, integrationOptions)](/api-reference/10%20UI%20Components/dxPivotGrid/3%20Methods/bindChart(chart_integrationOptions).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#bindChartchart_integrationOptions') method. The final topic provides an overview of fields that customize the resulting look of **Chart**.

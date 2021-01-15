@@ -2,7 +2,7 @@ This section describes how to configure the pager, a component that allows users
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Pager](/images/DataGrid/visual_elements/pager.png)
 
-Set the [showNavigationButtons](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/showNavigationButtons.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/#showNavigationButtons') and the [showPageSizeSelector](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/showPageSizeSelector.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/#showPageSizeSelector') options to **true** to show the navigation buttons and the page size selector. The set of available page sizes depends on how large the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') is. You can change it using the [allowedPageSizes](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/allowedPageSizes.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/#allowedPageSizes') option.
+Set the [showNavigationButtons](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/showNavigationButtons.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/#showNavigationButtons') and the [showPageSizeSelector](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/showPageSizeSelector.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/#showPageSizeSelector') options to **true** to show the navigation buttons and the page size selector. The set of available page sizes depends on how large the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') is. You can change it using the [allowedPageSizes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/allowedPageSizes.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/#allowedPageSizes') option.
 
 ---
 
@@ -105,7 +105,7 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Widgets/GridBase/1%20Co
 
 ---
 
-Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/showInfo.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/#showInfo') option to show the page information. You can change the default text by specifiyng the [infoText](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/infoText.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/#infoText').
+Assign **true** to the [showInfo](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/showInfo.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/#showInfo') option to show the page information. You can change the default text by specifiyng the [infoText](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/infoText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/#infoText').
 
 
 ---
@@ -208,4 +208,4 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20
 }
 
 #####See Also#####
-- [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/remoteOperations/')
+- [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')

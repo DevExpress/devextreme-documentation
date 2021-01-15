@@ -1,4 +1,4 @@
-To bind a series to data directly, specify which data source field provides arguments and which provides values. For this purpose, use the [argumentField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/argumentField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#argumentField') and [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#valueField') options of the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/') configuration object.
+To bind a series to data directly, specify which data source field provides arguments and which provides values. For this purpose, use the [argumentField](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/argumentField.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#argumentField') and [valueField](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#valueField') options of the [series](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/') configuration object.
 
 ---
 ##### jQuery
@@ -48,7 +48,7 @@ To bind a series to data directly, specify which data source field provides argu
 
 ---
 
-The **PieChart** may contain several series that have the same argument field. In this case, you can assign the field's name to the **argumentField** option of the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonSeriesSettings/') object.
+The **PieChart** may contain several series that have the same argument field. In this case, you can assign the field's name to the **argumentField** option of the [commonSeriesSettings](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/') object.
 
 ---
 ##### jQuery

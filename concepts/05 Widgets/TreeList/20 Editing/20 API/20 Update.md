@@ -1,4 +1,4 @@
-The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex_value).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#cellValuerowIndex_visibleColumnIndex_value') method updates a cell's value. This cell can be located using its row and column indexes. If the cell's data field is known, you can pass it instead of the column index. After a value is updated, save it to the data source by calling the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#saveEditData') method.
+The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex_value).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#cellValuerowIndex_visibleColumnIndex_value') method updates a cell's value. This cell can be located using its row and column indexes. If the cell's data field is known, you can pass it instead of the column index. After a value is updated, save it to the data source by calling the [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#saveEditData') method.
 
 ---
 ##### jQuery
@@ -47,7 +47,7 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20W
     
 ---
 
-The **TreeList** UI component allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#setCellValue') function before this value is saved to the data source. 
+The **TreeList** UI component allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#setCellValue') function before this value is saved to the data source. 
 
 ---
 ##### jQuery
@@ -105,7 +105,7 @@ The **TreeList** UI component allows you to process an updated cell value in the
     
 ---
 
-Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hasEditData().md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#hasEditData') to check if there are any unsaved changes. You can save or cancel them using the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#saveEditData') or [cancelEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cancelEditData().md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#cancelEditData') method, respectively.
+Call the [hasEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/hasEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#hasEditData') to check if there are any unsaved changes. You can save or cancel them using the [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#saveEditData') or [cancelEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cancelEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#cancelEditData') method, respectively.
 
 ---
 ##### jQuery

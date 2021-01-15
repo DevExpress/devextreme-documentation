@@ -2,7 +2,7 @@ Exposes the **ValidationSummary** UI component.
 
 Exports:
 
-- *default* - The [ValidationSummary](/api-reference/10%20UI%20Widgets/dxValidationSummary '/Documentation/ApiReference/UI_Widgets/dxValidationSummary/') UI component
+- *default* - The [ValidationSummary](/api-reference/10%20UI%20Components/dxValidationSummary '/Documentation/ApiReference/UI_Components/dxValidationSummary/') UI component
 
         require("ui/validation_summary");
         // ===== or =====

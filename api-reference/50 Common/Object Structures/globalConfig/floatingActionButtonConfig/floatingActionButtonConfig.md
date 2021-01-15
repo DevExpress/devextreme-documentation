@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures a Floating Action Button (FAB) that emits a stack of [related actions](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/') (speed dial).
+Configures a Floating Action Button (FAB) that emits a stack of [related actions](/api-reference/10%20UI%20Components/dxSpeedDialAction '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/') (speed dial).
 
 ---
 #include common-demobutton with {

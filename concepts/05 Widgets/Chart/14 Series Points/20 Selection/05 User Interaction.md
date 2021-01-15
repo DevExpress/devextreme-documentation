@@ -2,10 +2,10 @@
 
 When a user selects a series point, it changes its style to the one specified by the following objects.
 
-- **series**.**point**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/selectionStyle/')        
+- **series**.**point**.[selectionStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/selectionStyle/')        
 The selection style for all points of an individual series.
 
-- **commonSeriesSettings**.**point**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/point/selectionStyle/')         
+- **commonSeriesSettings**.**point**.[selectionStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/point/selectionStyle/')         
 The selection style for all series points in the **Chart**.
 
 Individual series settings override common settings.
@@ -147,7 +147,7 @@ Individual series settings override common settings.
 ---
 
 
-To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this option can be specified for all points belonging to an individual series or for all series points in the **Chart**.
+To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this option can be specified for all points belonging to an individual series or for all series points in the **Chart**.
 
 ---
 ##### jQuery
@@ -245,7 +245,7 @@ To choose which elements should be highlighted when a user selects a point, spec
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Selection/"
 }
 
-By default, only a single point can be in the selected state at a time. If you need to allow multiple points to be in this state, assign *"multiple"* to the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#pointSelectionMode') option.
+By default, only a single point can be in the selected state at a time. If you need to allow multiple points to be in this state, assign *"multiple"* to the [pointSelectionMode](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#pointSelectionMode') option.
 
 ---
 ##### jQuery

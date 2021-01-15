@@ -45,6 +45,6 @@ The following code adds the **SlideOutView** UI component to your page. The view
 - [SlideOutView - Customize the Menu](/concepts/05%20Widgets/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/Widgets/SlideOutView/Customize_the_Menu/')
 - [SlideOutView - Customize the View](/concepts/05%20Widgets/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/Widgets/SlideOutView/Customize_the_View/')
 - [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/Widgets/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
-- [SlideOutView API Reference](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/')
+- [SlideOutView API Reference](/api-reference/10%20UI%20Components/dxSlideOutView '/Documentation/ApiReference/UI_Components/dxSlideOutView/')
 
 [tags]dxslideoutview, slideOutView, slide-out menu, navigation, overview

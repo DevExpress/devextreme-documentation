@@ -2,7 +2,7 @@ Error bars are used on charts to indicate an error or uncertainty in a reported 
 
 ![DevExtreme HTML5 JavaScript Charts Error Bars](/images/ChartJS/visual_elements/error_bars.png)
 
-Error bars can be generated either from concrete or calculated values. To generate one error bar, two values, high and low, are needed. If your data source provides concrete high and low values, assign the required data source fields to the [highValueField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/highValueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/#highValueField') and [lowValueField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/lowValueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/#lowValueField') options of the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/').[valueErrorBar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/') object.
+Error bars can be generated either from concrete or calculated values. To generate one error bar, two values, high and low, are needed. If your data source provides concrete high and low values, assign the required data source fields to the [highValueField](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/highValueField.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#highValueField') and [lowValueField](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/lowValueField.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#lowValueField') options of the [series](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/').[valueErrorBar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/') object.
 
 ---
 ##### jQuery
@@ -128,7 +128,7 @@ Error bars can be generated either from concrete or calculated values. To genera
 
 ---
 
-Alternatively, error bar values can be calculated according to an algorithm. In this case, choose the needed algorithm using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/#type') option and specify the value to be used in calculation using the [value](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/value.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/#value') option.
+Alternatively, error bar values can be calculated according to an algorithm. In this case, choose the needed algorithm using the [type](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#type') option and specify the value to be used in calculation using the [value](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/value.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#value') option.
 
 ---
 ##### jQuery
@@ -228,7 +228,7 @@ Alternatively, error bar values can be calculated according to an algorithm. In 
 
 ---
 
-If error bars should have uniform settings, you can specify them using one of the **commonSeriesSettings**.[valueErrorBar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/valueErrorBar/') object. Individual series settings override common settings.
+If error bars should have uniform settings, you can specify them using one of the **commonSeriesSettings**.[valueErrorBar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/valueErrorBar/') object. Individual series settings override common settings.
 
 ---
 ##### jQuery
@@ -348,7 +348,7 @@ If error bars should have uniform settings, you can specify them using one of th
 
 ---
 
-For information about all options of the error bars, visit the [valueErrorBar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/valueErrorBar/') section of the API reference.
+For information about all options of the error bars, visit the [valueErrorBar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/') section of the API reference.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ErrorBars/"

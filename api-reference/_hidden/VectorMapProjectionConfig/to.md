@@ -7,7 +7,7 @@ type: function(coordinates)
 Converts coordinates from [lon, lat] to [x, y].
 
 ##### param(coordinates): Array<Number>
-Two coordinates that represent a point in the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataSource') coordinate system.
+Two coordinates that represent a point in the [dataSource](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource') coordinate system.
 
 ##### return: Array<Number>
 Two coordinates that represent the same point in the UI component coordinate system.    

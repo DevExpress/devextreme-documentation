@@ -1,10 +1,10 @@
 If the **TreeView** performance is low, consider enabling the Virtual Mode. In this mode, the **TreeView** loads a set of child nodes once their parent node is expanded. The Virtual Mode can be enabled only if your data source satisfies the following conditions.
 
 - It has a [plain structure](/concepts/05%20Widgets/TreeView/07%20Use%20Plain%20Data.md '/Documentation/Guide/Widgets/TreeView/Use_Plain_Data').
-- Root nodes have the [parentId](/api-reference/_hidden/dxTreeViewItem/parentId.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/#parentId') field set to the [rootValue](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#rootValue').
-- Nodes that do not have children, have the [hasItems](/api-reference/_hidden/dxTreeViewItem/hasItems.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/#hasItems') field set to **false**.
+- Root nodes have the [parentId](/api-reference/_hidden/dxTreeViewItem/parentId.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#parentId') field set to the [rootValue](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#rootValue').
+- Nodes that do not have children, have the [hasItems](/api-reference/_hidden/dxTreeViewItem/hasItems.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#hasItems') field set to **false**.
 
-To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/virtualModeEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#virtualModeEnabled') option to **true**.
+To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/virtualModeEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#virtualModeEnabled') option to **true**.
 
 ---
 ##### jQuery
@@ -134,7 +134,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/VirtualMode/"
 }
 
-If the Virtual Mode does not meet your requirements, you can get full control over nodes and how to load them in the [createChildren](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/createChildren.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#createChildren') function. This function will be called at the beginning of the UI component's lifetime and each time a user expands a node whose child nodes have not been loaded yet.
+If the Virtual Mode does not meet your requirements, you can get full control over nodes and how to load them in the [createChildren](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/createChildren.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#createChildren') function. This function will be called at the beginning of the UI component's lifetime and each time a user expands a node whose child nodes have not been loaded yet.
 
 ---
 ##### jQuery
@@ -259,6 +259,6 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
 
 #####See Also#####
 - [TreeView - Expand and Collapse Nodes](/concepts/05%20Widgets/TreeView/20%20Expand%20and%20Collapse%20Nodes '/Documentation/Guide/Widgets/TreeView/Expand_and_Collapse_Nodes')
-- [TreeView API Reference](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/')
+- [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
 [tags]treeview, tree view, enhance performance, big data, large data, virtual mode, virtualModeEnabled, createChildren

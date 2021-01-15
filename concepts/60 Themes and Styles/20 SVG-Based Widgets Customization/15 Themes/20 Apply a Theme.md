@@ -1,4 +1,4 @@
-To apply an SVG theme to a single UI component, assign the theme's name to the UI component's [theme](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/theme.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#theme') property. 
+To apply an SVG theme to a single UI component, assign the theme's name to the UI component's [theme](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/theme.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#theme') property. 
 
 You can also pass the theme's name to the [DevExpress.viz.currentTheme(theme)](/api-reference/50%20Common/utils/viz/currentTheme(theme).md '/Documentation/ApiReference/Common/utils/viz/#currentThemetheme') method to apply the theme to all SVG-based UI components on the page. If the UI components were created before the method call, use the [DevExpress.viz.refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/utils/viz/#refreshTheme') method to refresh the styling settings.
 

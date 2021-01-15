@@ -1,14 +1,14 @@
-Exposes the [DevExpress.excelExporter](/api-reference/50%20Common/utils/excelExporter '/Documentation/ApiReference/Common/Utils/excelExporter/') object's methods.
+Exposes the [DevExpress.excelExporter](/api-reference/50%20Common/utils/excelExporter '/api-reference/50%20Common/utils/excelExporter '/Documentation/ApiReference/Common/Utils/excelExporter/'') object's methods.
 
 Exports:
 
-- *exportDataGrid* - The [exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') method
+- *exportDataGrid* - The [exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/api-reference/50%20Common/utils/excelExporter '/Documentation/ApiReference/Common/Utils/excelExporter/'#exportDataGridoptions') method
 
         require("excel_exporter").exportDataGrid;
         // ===== or =====
         import { exportDataGrid } from "devextreme/excel_exporter";
 
-- *exportPivotGrid* - The [exportPivotGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') method
+- *exportPivotGrid* - The [exportPivotGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/api-reference/50%20Common/utils/excelExporter '/Documentation/ApiReference/Common/Utils/excelExporter/'#exportPivotGridoptions') method
 
         require("excel_exporter").exportPivotGrid;
         // ===== or =====

@@ -2,7 +2,7 @@ Exposes the **Toast** UI component.
 
 Exports:
 
-- *default* - The [Toast](/api-reference/10%20UI%20Widgets/dxToast '/Documentation/ApiReference/UI_Widgets/dxToast/') UI component
+- *default* - The [Toast](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/') UI component
 
         require("ui/toast");
         // ===== or =====

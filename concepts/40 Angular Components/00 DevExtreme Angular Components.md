@@ -7,7 +7,7 @@ The DevExtreme Angular UI Component Suite is a feature-complete set of [65+ resp
 
 The DevExtreme Angular UI Component Suite provides the following platform-specific features:
 
-- [Application template for a quick start](/Documentation/Guide/Angular_Components/Application_Template/)
+- [Application template for a quick start](/concepts/40%20Angular%20Components/30%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Angular_Components/Application_Template/')
 
 - Integration with [Angular CLI](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/'), [Webpack](/concepts/40%20Angular%20Components/10%20Getting%20Started/30%20Other%20Approaches/04%20Using%20Webpack '/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_Webpack/'), [Ionic](/concepts/40%20Angular%20Components/10%20Getting%20Started/30%20Other%20Approaches/05%20Using%20Ionic '/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_Ionic/'), [Rollup](/concepts/40%20Angular%20Components/10%20Getting%20Started/30%20Other%20Approaches/06%20Using%20Rollup '/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_Rollup/')
 
@@ -19,13 +19,13 @@ The DevExtreme Angular UI Component Suite provides the following platform-specif
 
 - [Angular Forms support](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/75%20Angular%20Forms%20Support.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Angular_Forms_Support')
 
-- [Visual Studio integration](/concepts/40%20Angular%20Components/70%20Visual%20Studio%20Integration '/Documentation/Guide/Angular_Components/Visual_Studio_Integration/')
+- [Visual Studio integration](/Documentation/Guide/Angular_Components/Visual_Studio_Integration/)
 
 All DevExtreme UI component suites, including Angular, share architecture and core features. The following core features are common to all suites:
 
 - [Data layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 
-- [Client-side data validation](/concepts/05%20Widgets/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/Widgets/Common/UI_Widgets/Data_Validation/')
+- [Client-side data validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
 
 - [Themes and styles](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')
 
@@ -33,8 +33,8 @@ All DevExtreme UI component suites, including Angular, share architecture and co
 
 - [Modularity](/concepts/Common/Modularity/01%20Link%20Modules '/Documentation/Guide/Common/Modularity/Link_Modules/')
 
-- [Customization using templates](/concepts/05%20Widgets/zz%20Common/30%20Templates '/Documentation/Guide/Widgets/Common/Templates/')
+- [Customization using templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/')
 
 We also provide [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
-For information on how to integrate DevExtreme Angular UI components into your application, refer to one of the [Getting Started articles](/concepts/40%20Angular%20Components/10%20Getting%20Started '/Documentation/Guide/Angular_Components/Getting_Started/').
+For information on how to integrate DevExtreme Angular UI components into your application, refer to one of the [Getting Started articles](/Documentation/Guide/Angular_Components/Getting_Started/).

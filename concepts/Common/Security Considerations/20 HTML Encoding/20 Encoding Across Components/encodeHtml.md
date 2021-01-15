@@ -1,4 +1,4 @@
-**encodeHtml** is a Boolean property that you can set for a column in the [DataGrid](/Documentation/ApiReference/UI_Widgets/dxDataGrid/) and [TreeList](/Documentation/ApiReference/UI_Widgets/dxTreeList/) components. Its default value is **true**, which means that column values are encoded. If you set it to **false**, the encoding is disabled, and malicious code can be executed. We recommend that you keep this property set to **true**.
+**encodeHtml** is a Boolean property that you can set for a column in the [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/) and [TreeList](/Documentation/ApiReference/UI_Components/dxTreeList/) components. Its default value is **true**, which means that column values are encoded. If you set it to **false**, the encoding is disabled, and malicious code can be executed. We recommend that you keep this property set to **true**.
 
 Open the following example to learn how disabling the **encodeHtml** property can affect your application: <a href="https://codepen.io/romantsukanov/pen/QWEpQQQ?editors=1010" target="_blank">HTML Encoding in DataGrid</a>. In this example, malicious code is saved in the data source:
 

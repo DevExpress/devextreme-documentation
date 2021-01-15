@@ -56,7 +56,7 @@ As an alternative, you can declare the whole object of UI component properties i
     <!--HTML--><div data-bind="dxChart: chartOptions"></div>
 
 #####See Also#####
-- **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart').[Configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/')
+- **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart').[Configuration](/api-reference/10%20UI%20Components/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/')
 - [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20Knockout/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_Knockout/Change_Options')
 
 [tags]basics, knockout, create, configure, initialize, design time, view model

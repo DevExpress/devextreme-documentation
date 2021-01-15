@@ -2,7 +2,7 @@ Exposes the **SlideOut** UI component.
 
 Exports:
 
-- *default* - The [SlideOut](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Widgets/dxSlideOut/') UI component
+- *default* - The [SlideOut](/api-reference/10%20UI%20Components/dxSlideOut '/Documentation/ApiReference/UI_Components/dxSlideOut/') UI component
 
         require("ui/slide_out");
         // ===== or =====

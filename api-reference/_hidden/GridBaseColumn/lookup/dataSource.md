@@ -45,4 +45,4 @@ If the lookup data source contains objects, specify the [valueExpr](/api-referen
 }
 
 #####See Also#####
-- [How to: Bind a Lookup Column to a Custom Data Source](/concepts/05%20Widgets/DataGrid/99%20How%20To/Bind%20a%20Lookup%20Column%20to%20a%20Custom%20Data%20Source.md '/Documentation/Guide/Widgets/{WidgetName}/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/')
+- [How to: Bind a Lookup Column to a Custom Data Source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Bind%20a%20Lookup%20Column%20to%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/{WidgetName}/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/')

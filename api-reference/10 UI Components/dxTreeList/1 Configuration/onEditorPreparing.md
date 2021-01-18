@@ -65,4 +65,4 @@ The editor's width; equals **null** for all editors except for those whose **par
 ---
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxDataGrid\1 Configuration\onEditorPreparing.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onEditorPreparing.md' -->

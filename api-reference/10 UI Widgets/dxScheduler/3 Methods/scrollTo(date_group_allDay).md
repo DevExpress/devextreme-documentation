@@ -16,9 +16,14 @@ If **true**, scrolls the view to the all-day panel of the specified group. Appli
 
 ---
 
-The following example shows how to call this method:
+The following example shows how to use this method:
 
-    schedulerInstance.scrollTo(new Date(2021, 5, 14, 17, 30), {priorityId: 2}, false);
+    // Scroll to January 14, 2021
+    scrollTo(new Date(2021, 0, 14));
+    // Scroll to January 14, 2021, 5:30 p.m. of the second group
+    scrollTo(new Date(2021, 0, 14, 17, 30), {groupId: 2})
+    // Scroll to the all-day panel of the second group
+    scrollTo(new Date(2021, 0, 14, 17, 30), {groupId: 2}, true);
 
 [note] If you need to navigate to a date outside the current view, use the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) property instead. 
 

@@ -4,7 +4,7 @@ type: String | function(rowData)
 ---
 ---
 ##### shortDescription
-Calculates custom values to be used in sorting.
+Calculates custom values to be used in sorting. Applies to the column specified in the **columns**.[dataField]({basewidgetpath}/Configuration/columns/#dataField) property.
 
 ##### param(rowData): Object
 The data of the row to which the cell belongs.
@@ -13,7 +13,7 @@ The data of the row to which the cell belongs.
 The value to be used in sorting.
 
 ---
-This option accepts the name of the [data source field](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides values to be used in sorting...
+This option accepts the data source name of the column that provides values to be used in sorting...
 
 ---
 ##### jQuery
@@ -22,7 +22,7 @@ This option accepts the name of the [data source field](/api-reference/10%20UI%2
         $("#{widgetName}Container").dx{WidgetName}({
             columns: [{
                 dataField: "Position", // provides values for the column
-                calculateSortValue: "isOnVacation" // provides values to be used in sorting 
+                calculateSortValue: "isOnVacation" // provides values for sorting of the `Position` column
             }]
         });
     });
@@ -106,13 +106,13 @@ This option accepts the name of the [data source field](/api-reference/10%20UI%2
     
 ---
 
-[note]
+To apply the sorting, users have to click the specified column header. If you need to sort data when the UI component loads, set the **columns[]**.[sortOrder]({basewidgetpath}/Configuration/columns/#sortOrder) property also.
 
-Please review the following notes about the **calculateSortValue** option.
+[note]
 
 - The `this` keyword refers to the column's configuration.
 
-- When the **DataGrid** is [grouped](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/Widgets/DataGrid/Grouping/') by the column, this option is ignored. Use the [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateGroupValue') option instead or additionally.
+- If the DataGrid data is [grouped](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/Widgets/DataGrid/Grouping/'), this option does not apply. To sort group rows, use the [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateGroupValue') and [groupCellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellTemplate) properties. Refer to this <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">Github repository</a> for an example. 
 
 [/note]
 

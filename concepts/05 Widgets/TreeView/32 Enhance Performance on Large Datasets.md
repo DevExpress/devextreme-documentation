@@ -4,7 +4,7 @@ If the **TreeView** performance is low, consider enabling the Virtual Mode. In t
 - Root nodes have the [parentId](/api-reference/_hidden/dxTreeViewItem/parentId.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/#parentId') field set to the [rootValue](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#rootValue').
 - Nodes that do not have children, have the [hasItems](/api-reference/_hidden/dxTreeViewItem/hasItems.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/items/#hasItems') field set to **false**.
 
-To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/virtualModeEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#virtualModeEnabled') option to **true**.
+To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/virtualModeEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#virtualModeEnabled') property to **true**.
 
 ---
 ##### jQuery

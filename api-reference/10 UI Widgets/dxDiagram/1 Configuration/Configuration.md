@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that defines the **Diagram** UI component's configuration options. 
+An object that defines the **Diagram** UI component's configuration properties. 
 
 ---
 #####See Also#####

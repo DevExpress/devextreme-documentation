@@ -39,7 +39,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
 
 - [fileSelectionItems](/api-reference/_hidden/dxFileManagerToolbar/fileSelectionItems '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/') - Displays toolbar items when one or more file system items are selected.
 
-[note] Note that optional settings for predefined toolbar items should be specified at the same level as the item's **name** option.
+[note] Note that optional settings for predefined toolbar items should be specified at the same level as the item's **name** property.
 
 ---
 
@@ -78,7 +78,7 @@ To add a custom toolbar item, specify its [text](/api-reference/_hidden/Collecti
 
 - [fileSelectionItems](/api-reference/_hidden/dxFileManagerToolbar/fileSelectionItems '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/fileSelectionItems/') - Displays toolbar items when one or more file system items are selected.
 
-The [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#widget') option allows you to specify a UI component for a custom toolbar item ([dxButton](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') is the default UI component). Use the [toolbarItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/toolbarItemClick.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick') event to handle clicks on custom toolbar items.
+The [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/toolbar/items/#widget') property allows you to specify a UI component for a custom toolbar item ([dxButton](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') is the default UI component). Use the [toolbarItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/toolbarItemClick.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#toolbarItemClick') event to handle clicks on custom toolbar items.
 
 ---
 

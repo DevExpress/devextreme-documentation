@@ -8,7 +8,7 @@ default: false
 Enables the user to group data using the context menu.
 
 ---
-Set this option to **true** to enable grouping using the context menu. In this case, to group/ungroup data, the user right-clicks a column header and chooses the required item from the appeared context menu.
+Set this property to **true** to enable grouping using the context menu. In this case, to group/ungroup data, the user right-clicks a column header and chooses the required item from the appeared context menu.
 
 
 #####See Also#####

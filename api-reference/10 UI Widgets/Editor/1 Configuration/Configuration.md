@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes options used to configure the UI component.
+This section describes properties used to configure the UI component.
 
 ---

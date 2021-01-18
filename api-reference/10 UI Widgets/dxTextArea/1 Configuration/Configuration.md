@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TextArea** UI component.
+An object defining configuration properties for the **TextArea** UI component.
 
 ---
 #####See Also#####

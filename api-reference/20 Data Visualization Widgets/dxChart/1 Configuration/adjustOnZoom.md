@@ -10,7 +10,7 @@ Specifies whether to adjust the value axis's [visualRange](/api-reference/20%20D
 ---
 When a user zooms or pans the argument axis, the range of displayed [series](/concepts/05%20Widgets/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Series/Overview/') values changes accordingly. To display this entire range without unused space on the value axis, the value axis's visual range gets widened or narrowed.
 
-Set this option to **false** if the visual range should be constant and equal to the series values' maximum range.
+Set this property to **false** if the visual range should be constant and equal to the series values' maximum range.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ZoomingAndScrolling/"

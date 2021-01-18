@@ -3,20 +3,20 @@ id: DOMComponent.defaultOptions(rule)
 ---
 ---
 ##### shortDescription
-Specifies the device-dependent default configuration options for this component.
+Specifies the device-dependent default configuration properties for this component.
 
 ##### param(rule): Object
-The component's default device options.
+The component's default device properties.
 
 ##### field(rule.device): Device | Array<Device> | function()
 [Device parameters](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/').      
-When specifying a function, get information about the current device from the argument. Return **true** if the options should be applied to the device.
+When specifying a function, get information about the current device from the argument. Return **true** if the properties should be applied to the device.
 
 ##### field(rule.options): Object
 Options to be applied.
 
 ---
-**defaultOptions** is a static method that the UI component class supports. The following code demonstrates how to specify default options for all instances of the **{WidgetName}** UI component in an application executed on the desktop.
+**defaultOptions** is a static method that the UI component class supports. The following code demonstrates how to specify default properties for all instances of the **{WidgetName}** UI component in an application executed on the desktop.
 
 ---
 ##### jQuery
@@ -25,7 +25,7 @@ Options to be applied.
     DevExpress.ui.dx{WidgetName}.defaultOptions({ 
         device: { deviceType: "desktop" },
         options: {
-            // Here go the {WidgetName} options
+            // Here go the {WidgetName} properties
         }
     });
 
@@ -39,7 +39,7 @@ Options to be applied.
             {WidgetName}.defaultOptions({
                 device: { deviceType: "desktop" },
                 options: {
-                    // Here go the {WidgetName} options
+                    // Here go the {WidgetName} properties
                 }
             });
         }
@@ -60,7 +60,7 @@ Options to be applied.
     {WidgetName}.defaultOptions({
         device: { deviceType: "desktop" },
         options: {
-            // Here go the {WidgetName} options
+            // Here go the {WidgetName} properties
         }
     });
 
@@ -83,7 +83,7 @@ Options to be applied.
             dx{WidgetName}.defaultOptions({
                 device: { deviceType: "desktop" },
                 options: {
-                    // Here go the {WidgetName} options
+                    // Here go the {WidgetName} properties
                 }
             })
             return (

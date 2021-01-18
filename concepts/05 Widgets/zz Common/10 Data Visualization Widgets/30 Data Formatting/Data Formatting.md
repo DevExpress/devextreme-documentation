@@ -42,7 +42,7 @@ In the UI components provided by the DevExtreme Data Visualization library, you 
 
 - [tooltips](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/tooltip/')
 
-For this purpose, the UI components provide a uniform set of options. No matter where you need to customize text, you always have the **format** and **customizeText** (or **customizeTooltip** for tooltips) options.
+For this purpose, the UI components provide a uniform set of properties. No matter where you need to customize text, you always have the **format** and **customizeText** (or **customizeTooltip** for tooltips) properties.
 
 Also, DevExtreme UI components provide a set of predefined formats that cover most cases of applying a format. These formats can be divided into three groups.
 

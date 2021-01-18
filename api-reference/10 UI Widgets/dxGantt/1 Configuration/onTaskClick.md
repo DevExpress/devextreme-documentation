@@ -30,6 +30,8 @@ Model data. Available only if you use Knockout.
 
 ---
 
+![DevExtreme Gantt Chart - Task Element](~/images/Gantt/task-element.png)
+
 ---
 
 ##### jQuery

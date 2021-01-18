@@ -18,7 +18,15 @@ The processed shape's object.
 ---
 The template content must be presented as SVG elements.
 
-Use the [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#template') option to define a template of an individual shape.
+Use the [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#template') property to define a template of an individual shape.
+
+[note]
+
+If the [textExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#textExpr) option is specified, template content may overlap with text from the data source. 
+
+Since the [textExpr](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#textExpr) option has the default value `'text'`, the widget will obtain node texts from the data source’s 'text' field. To prevent his behavior, set the option to an empty string: `nodes: { textExpr: "", ...`.
+
+[/note]
 
 #include common-demobutton with {
     name: "Templates",

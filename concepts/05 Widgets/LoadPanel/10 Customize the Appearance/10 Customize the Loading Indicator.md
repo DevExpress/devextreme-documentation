@@ -1,4 +1,4 @@
-If you need to use a 3rd-party loading indicator inside the **LoadPanel**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#indicatorSrc') option.
+If you need to use a 3rd-party loading indicator inside the **LoadPanel**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#indicatorSrc') property.
 
 ---
 ##### jQuery
@@ -145,7 +145,7 @@ If you need to use a 3rd-party loading indicator inside the **LoadPanel**, assig
 
 ---
 
-In case you do not need any loading indicator to be shown at all, assign **false** to the [showIndicator](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#showIndicator') option.
+In case you do not need any loading indicator to be shown at all, assign **false** to the [showIndicator](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#showIndicator') property.
 
 ---
 ##### jQuery

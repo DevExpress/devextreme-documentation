@@ -1,6 +1,6 @@
     <?php
         // Checks whether the array of uploaded files exists
-        // Here, "file" is a string specified in the FileUploader's name option
+        // Here, "file" is a string specified in the FileUploader's name property
         if(!isset($_FILES['file'])) {
             exit;
         }

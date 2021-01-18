@@ -19,7 +19,7 @@ An array of [validationRules](/api-reference/10%20UI%20Widgets/dxValidator/8%20V
 Indicates whether the value satisfies all rules.
 
 ##### field(validatedInfo.name): String
-The value of the [name](/api-reference/10%20UI%20Widgets/dxValidator/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/dxValidator/Configuration/#name') option.
+The value of the [name](/api-reference/10%20UI%20Widgets/dxValidator/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/dxValidator/Configuration/#name') property.
 
 ##### field(validatedInfo.status): 'valid' | 'invalid' | 'pending'
 Indicates the validation [status](/api-reference/10%20UI%20Widgets/dxValidator/9%20Validation%20Result/status.md '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Result/#status').

@@ -1,4 +1,4 @@
-[note]In this document, "size" is an item's width or height, depending on whether the [direction](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/#direction') option is set to *"row"* or *"col"*.
+[note]In this document, "size" is an item's width or height, depending on whether the [direction](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/#direction') property is set to *"row"* or *"col"*.
 
 The [baseSize](/api-reference/_hidden/dxBoxItem/baseSize.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/items/#baseSize'), [ratio](/api-reference/_hidden/dxBoxItem/ratio.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/items/#ratio'), and [shrink](/api-reference/_hidden/dxBoxItem/shrink.md '/Documentation/ApiReference/UI_Widgets/dxBox/Configuration/items/#shrink') settings specify an item's size. The **baseSize** defines the item's initial size in pixels. The item's size changes according to **ratio** and **shrink** if the **Box**'s size changes.
 

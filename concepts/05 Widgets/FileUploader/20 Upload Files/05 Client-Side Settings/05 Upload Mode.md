@@ -4,7 +4,7 @@ Depending on the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/File_Uploader/FileUploading/"
 }
 
-The following examples show how to configure the **FileUploader** for each upload mode. Therein, the [name](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#name') option is required to access uploaded files on the server.
+The following examples show how to configure the **FileUploader** for each upload mode. Therein, the [name](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#name') property is required to access uploaded files on the server.
 
 - **Ajax upload**
 
@@ -105,7 +105,7 @@ The following examples show how to configure the **FileUploader** for each uploa
 
     ---
 
-[note] If you allow a user to upload multiple files using an HTML form, the **name** option's value must end with square brackets as shown in the commented-out code line in the example above.
+[note] If you allow a user to upload multiple files using an HTML form, the **name** property's value must end with square brackets as shown in the commented-out code line in the example above.
 
 #####See Also#####
 - [FileUploader - Upload Files | Server-Side Implementation in ASP.NET](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/10%20Server-Side%20Implementation%20in%20ASP.NET '/Documentation/Guide/Widgets/FileUploader/Upload_Files/Server-Side_Implementation_in_ASP.NET/')

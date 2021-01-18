@@ -17,14 +17,14 @@ You can access the following fields of the **Sparkline**:
     </tr>
     <tr>
         <td><code>firstValue</code></td>
-        <td>The first value of a sparkline with applied formatting if the <a href="{basewidgetpath}/Configuration/tooltip/#format">format</a> option is specified.</td>
+        <td>The first value of a sparkline with applied formatting if the <a href="{basewidgetpath}/Configuration/tooltip/#format">format</a> property is specified.</td>
     </tr><tr>
         <td><code>originalLastValue</code></td>
         <td>The last value of a sparkline as it is specified in a data source.</td>
     </tr>
     <tr>
         <td><code>lastValue</code></td>
-        <td>The last value of a sparkline with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The last value of a sparkline with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
     <tr>
         <td><code>originalMinValue</code></td>
@@ -32,7 +32,7 @@ You can access the following fields of the **Sparkline**:
     </tr>
     <tr>
         <td><code>minValue</code></td>
-        <td>The minimum value of a sparkline with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The minimum value of a sparkline with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
     <tr>
         <td><code>originalMaxValue</code></td>
@@ -40,7 +40,7 @@ You can access the following fields of the **Sparkline**:
     </tr>
     <tr>
         <td><code>maxValue</code></td>
-        <td>The maximum value of a sparkline with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The maximum value of a sparkline with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
 </table>
 
@@ -53,11 +53,11 @@ The following fields are available for a sparkline of the "winloss" [type](/api-
     </tr>
     <tr>
         <td><code>originalThresholdValue</code></td>    
-        <td>The threshold value of a winloss sparkline as it is assigned to the <a href="{basewidgetpath}/Configuration/#winlossThreshold">winlossThreshold</a> option.</td>
+        <td>The threshold value of a winloss sparkline as it is assigned to the <a href="{basewidgetpath}/Configuration/#winlossThreshold">winlossThreshold</a> property.</td>
     </tr>
     <tr>
         <td><code>thresholdValue</code></td>     
-        <td>The threshold value of a winloss sparkline with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The threshold value of a winloss sparkline with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
 </table>
 

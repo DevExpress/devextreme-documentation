@@ -1,4 +1,4 @@
-To configure the data selector for [dates](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/dataType.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#dataType'), assign one of the following strings to the [groupInterval](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupInterval.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupInterval') option.
+To configure the data selector for [dates](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/dataType.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#dataType'), assign one of the following strings to the [groupInterval](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupInterval.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupInterval') property.
 
 - "*year*" &#8212 groups by years
 - "*quarter*" &#8212 groups by quarters

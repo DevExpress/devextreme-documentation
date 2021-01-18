@@ -8,7 +8,7 @@ default: undefined
 Specifies whether the field should be treated as a measure (a field providing data for calculation).
 
 ---
-There are no restrictions for rearranging fields in the [areas](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') using the [field chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Chooser'). However, we recommend restricting measures to the data area by setting their **isMeasure** option to **true**. You can also set this option to **false** for a non-measure field to prohibit placing it in the data area.
+There are no restrictions for rearranging fields in the [areas](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') using the [field chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Chooser'). However, we recommend restricting measures to the data area by setting their **isMeasure** property to **true**. You can also set this property to **false** for a non-measure field to prohibit placing it in the data area.
 
 ---
 ##### jQuery

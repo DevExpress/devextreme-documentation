@@ -1,6 +1,6 @@
 The focused row feature allows you to display master-detail relationships and improve navigation through records.
 
-To allow users to focus rows, set the [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowEnabled') option to **true**.
+To allow users to focus rows, set the [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowEnabled') property to **true**.
 
 Users can control the focused row using the following mouse and keyboard commands:
 
@@ -25,7 +25,7 @@ Users can control the focused row using the following mouse and keyboard command
     </tr>
 </table>
 
-You can specify the initially focused row using the [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowKey') or [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowIndex') option. The grid is scrolled down to it. If you also set the [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedColumnIndex') option, a specific cell in this row is focused.
+You can specify the initially focused row using the [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowKey') or [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedRowIndex') property. The grid is scrolled down to it. If you also set the [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#focusedColumnIndex') property, a specific cell in this row is focused.
 
 ---
 ##### jQuery
@@ -67,7 +67,7 @@ You can specify the initially focused row using the [focusedRowKey](/api-referen
 
 ---
 
-Change the same options using the [option(optionName, optionValue)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#optionoptionName_optionValue') method to focus a row or cell programmatically. You can also use the [navigateToRow(key)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/navigateToRow(key).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#navigateToRowkey') method to focus a row. This approach is more typical of jQuery and ASP.NET MVC Controls. With JavaScript frameworks, use property binding.
+Change the same properties using the [option(optionName, optionValue)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#optionoptionName_optionValue') method to focus a row or cell programmatically. You can also use the [navigateToRow(key)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/navigateToRow(key).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#navigateToRowkey') method to focus a row. This approach is more typical of jQuery and ASP.NET MVC Controls. With JavaScript frameworks, use property binding.
 
     <!--JavaScript-->
     var treeList = $("#treeListContainer").dxTreeList("instance");

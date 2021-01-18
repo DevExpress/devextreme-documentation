@@ -27,6 +27,7 @@ The values of the inserted resource.
 
 ---
 
+![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
 ---
 

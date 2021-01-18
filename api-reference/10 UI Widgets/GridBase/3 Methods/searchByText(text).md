@@ -3,7 +3,7 @@ id: GridBase.searchByText(text)
 ---
 ---
 ##### shortDescription
-Seeks a search string in the columns whose [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '{basewidgetpath}/Configuration/columns/#allowSearch') option is **true**.
+Seeks a search string in the columns whose [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '{basewidgetpath}/Configuration/columns/#allowSearch') property is **true**.
 
 ##### param(text): String
 A search string. Pass an empty string to clear search results.

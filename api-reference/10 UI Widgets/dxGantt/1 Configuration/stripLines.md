@@ -14,7 +14,7 @@ Configures strip lines.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/StripLines/"
 }
 
-Strip lines allows you to highlight certain time or time intervals in the chart. Use the [start](/api-reference/_hidden/dxGanttStripLine/start.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/stripLines/#start') option to specify an individual line or combine it with the [end](/api-reference/_hidden/dxGanttStripLine/end.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/stripLines/#end') option setting to specify a time interval.
+Strip lines allows you to highlight certain time or time intervals in the chart. Use the [start](/api-reference/_hidden/dxGanttStripLine/start.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/stripLines/#start') property to specify an individual line or combine it with the [end](/api-reference/_hidden/dxGanttStripLine/end.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/stripLines/#end') property setting to specify a time interval.
 
 ![DevExtreme Gantt - Strip Lines](/images/Gantt/strip-lines.png)
 

@@ -8,7 +8,7 @@ default: 'content'
 Specifies custom content for the drop-down field.
 
 ##### param(data): Array<String, Number, Object> | DataSource
-The array passed to the [items](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/items/') option or a **DataSource** instance created using the [dataSource](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#dataSource') configuration.
+The array passed to the [items](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/items/') property or a **DataSource** instance created using the [dataSource](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#dataSource') configuration.
 
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "drop-down field" }

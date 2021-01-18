@@ -27,7 +27,7 @@ Specifies the argument value of the represented point with applied formatting if
 * **percent**    
 Specifies the proportional value of the represented point in a floating point format.
 * **percentText**    
-Specifies the value of the represented point as a percentage with a precision of the **format**.**percentPrecision** option.
+Specifies the value of the represented point as a percentage with a precision of the **format**.**percentPrecision** property.
 * **point.tag**        
 Specifies the tag of the represented point.
 

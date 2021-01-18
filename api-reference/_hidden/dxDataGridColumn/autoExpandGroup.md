@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether groups appear expanded or not when records are grouped by a specific column. Setting this option makes sense only when grouping is [allowed](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowGrouping') for this column.
+Specifies whether groups appear expanded or not when records are grouped by a specific column. Setting this property makes sense only when grouping is [allowed](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowGrouping') for this column.
 
 ---
 #####See Also#####

@@ -1,1 +1,1 @@
-All operations with UI component options are carried out using the **option()** method. You can use it to do the following.
+All operations with UI component properties are carried out using the **option()** method. You can use it to do the following.

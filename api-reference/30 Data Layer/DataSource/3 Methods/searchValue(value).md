@@ -3,7 +3,7 @@ id: DataSource.searchValue(value)
 ---
 ---
 ##### shortDescription
-Sets the [searchValue](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchValue.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchValue') option's value.
+Sets the [searchValue](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchValue.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchValue') property's value.
 
 ##### param(value): any
 A new value.

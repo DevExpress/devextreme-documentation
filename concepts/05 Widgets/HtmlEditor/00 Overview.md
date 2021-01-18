@@ -11,9 +11,9 @@
 Follow the steps below to add the **HtmlEditor** to a page.
 
 1. Reference or import the DevExtreme Quill as shown in the code samples below.
-2. Set the output markup language (HTML or Markdown) in the [valueType](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/valueType.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/#valueType') option.
+2. Set the output markup language (HTML or Markdown) in the [valueType](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/valueType.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/#valueType') property.
 3. If you choose Markdown as the output format, link the **turndown** and **showdown** scripts before the DevExtreme scripts. When you use JavaScript modules, import the Markdown converter instead.
-4. Optionally, specify the initial content in the UI component's **value** option. The content's language should correspond to the **valueType**. HTML content can also be declared directly inside the UI component's container, in which case the language (HTML) and the **valueType** can differ.
+4. Optionally, specify the initial content in the UI component's **value** property. The content's language should correspond to the **valueType**. HTML content can also be declared directly inside the UI component's container, in which case the language (HTML) and the **valueType** can differ.
 
 ---
 ##### jQuery

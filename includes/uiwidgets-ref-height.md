@@ -1,4 +1,4 @@
-This option accepts a value of one of the following types:
+This property accepts a value of one of the following types:
 
 - **Number**  
 The height in pixels.

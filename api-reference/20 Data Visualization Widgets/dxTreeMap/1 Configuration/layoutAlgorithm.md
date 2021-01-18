@@ -43,7 +43,7 @@ This algorithm uses parallel lines to divide an available area into rectangles r
 
 ![DevExpress DevExtreme HTML5 TreeMap Squarified SliceAndDice Strip](/images/ChartJS/TreeMap_layoutAlgorithms.png)
 
-If none of the predefined algorithms satisfy your needs, implement your own algorithm. For this purpose, assign a function to the **layoutAlgorithm** option. Basically, this function should calculate the coordinates of two diagonally-opposite points defining a rectangle and assign them to the needed item. To access a set of items to distribute, use the **items** field of the function's parameter. All available fields of the parameter are listed in the header of this description.
+If none of the predefined algorithms satisfy your needs, implement your own algorithm. For this purpose, assign a function to the **layoutAlgorithm** property. Basically, this function should calculate the coordinates of two diagonally-opposite points defining a rectangle and assign them to the needed item. To access a set of items to distribute, use the **items** field of the function's parameter. All available fields of the parameter are listed in the header of this description.
 
     <!--JavaScript-->var treeMapOptions = {
         // ...
@@ -58,7 +58,7 @@ If none of the predefined algorithms satisfy your needs, implement your own algo
         }
     };
 
-In addition, you can change the layout direction. For this purpose, use the [layoutDirection](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/layoutDirection.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#layoutDirection') option.
+In addition, you can change the layout direction. For this purpose, use the [layoutDirection](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/layoutDirection.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#layoutDirection') property.
 
 #include common-ref-enum with {
     enum: "`TreeMapLayoutAlgorithm`",

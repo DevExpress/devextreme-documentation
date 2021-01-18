@@ -9,7 +9,7 @@ To specify the title text, use the [title](/api-reference/20%20Data%20Visualizat
 		title: 'Experiment Results'
 	};
 
-The **title** property may also be assigned an object that customizes default title options. In that case, the title text must be assigned to the **text** field of this object.
+The **title** property may also be assigned an object that customizes default title properties. In that case, the title text must be assigned to the **text** field of this object.
 
 	<!--JavaScript-->var polarChartOptions = {
 		title: {
@@ -18,7 +18,7 @@ The **title** property may also be assigned an object that customizes default ti
 		}
 	};
 
-The following list provides an overview of title options.
+The following list provides an overview of title properties.
 
 * **Title Location**		
 You can place the title on any side of the chart. For this purpose, use the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/title/#horizontalAlignment') and [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/title/#verticalAlignment') properties of the chart's **title** configuration object.

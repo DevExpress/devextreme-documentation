@@ -8,7 +8,7 @@ default: undefined
 Configures the form item's editor.
 
 ---
-**editorOptions** should contain the options of the DevExtreme editor specified in the [editorType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType'). Because of this dependency, **editorOptions** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering. Alternatively, you can configure a custom editor in a [template](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#template').
+**editorOptions** should contain the properties of the DevExtreme editor specified in the [editorType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#editorType'). Because of this dependency, **editorOptions** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering. Alternatively, you can configure a custom editor in a [template](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#template').
 
 ---
 ##### Angular
@@ -114,7 +114,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
                 .Editor(e => e.TextBox()
                     .Placeholder("Type a text here...")
                     // ...
-                    // other editor options go here
+                    // other editor properties go here
                 )
         })
     )
@@ -128,7 +128,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
                     Return e.TextBox() _
                         .Placeholder("Type a text here...") _
                         ' ...
-                        ' other editor options go here
+                        ' other editor properties go here
                 End Function)
         End Sub)
     )
@@ -137,7 +137,7 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/Mvc/Light/"
 }
 
-[note] If you set the `id` and `name` attributes using the [inputAttr](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#inputAttr') option, they will be overwritten. The **Form** generates these attributes automatically and uses them for addressing the DOM elements.
+[note] If you set the `id` and `name` attributes using the [inputAttr](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#inputAttr') property, they will be overwritten. The **Form** generates these attributes automatically and uses them for addressing the DOM elements.
 
 #####See Also#####
 - [Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/')

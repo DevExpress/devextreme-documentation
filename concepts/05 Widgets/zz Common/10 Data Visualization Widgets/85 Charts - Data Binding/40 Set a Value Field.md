@@ -1,7 +1,7 @@
-To set the value field name, assign it to the **valueField** option. Similarly to the [argumentField](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/30%20Set%20an%20Argument%20Field.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Set_an_Argument_Field/') option, **valueField** is set differently depending on the UI component in use.
+To set the value field name, assign it to the **valueField** property. Similarly to the [argumentField](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/30%20Set%20an%20Argument%20Field.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Set_an_Argument_Field/') property, **valueField** is set differently depending on the UI component in use.
 
 * **Chart**		
-If you have only one series in your chart, specify the **valueField** option within the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') object.
+If you have only one series in your chart, specify the **valueField** property within the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') object.
 
 		<!--JavaScript-->var chartOptions = {
 			//...
@@ -11,7 +11,7 @@ If you have only one series in your chart, specify the **valueField** option wit
 			}
 		};
 
-	If you have several series in your chart, assign an array of objects to the **series** option and specify an individual value field for each object of this array. 
+	If you have several series in your chart, assign an array of objects to the **series** property and specify an individual value field for each object of this array. 
 
 		<!--JavaScript-->var chartOptions = {
 			//...
@@ -24,7 +24,7 @@ If you have only one series in your chart, specify the **valueField** option wit
 			}]
 		};
 
-	Certain series types require several value fields to be specified for one series. In these instances, data source fields must be set using options particular to a specific series type. For example, the following code snippet shows how to specify value fields for a [range series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/').
+	Certain series types require several value fields to be specified for one series. In these instances, data source fields must be set using properties particular to a specific series type. For example, the following code snippet shows how to specify value fields for a [range series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/').
 
 		<!--JavaScript-->var rangeDataSource = [
 			{ month: 'January', min1: 36, max1: 43.29, min2:  42.12, max2: 49.91 },
@@ -81,7 +81,7 @@ If you have only one series in your chart, specify the **valueField** option wit
 		});
 
 * **PieChart**		
-To specify the value field for a series in the **PieChart** UI component, set the [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#valueField') option within the **series** object.
+To specify the value field for a series in the **PieChart** UI component, set the [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/#valueField') property within the **series** object.
 
 		<!--JavaScript-->$("#pieChartContainer").dxPieChart({
 			//...
@@ -92,7 +92,7 @@ To specify the value field for a series in the **PieChart** UI component, set th
 		});
 
 * **Sparkline**		
-The [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#valueField') option for the **Sparkline** UI component must be specified in the root configuration object.
+The [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#valueField') property for the **Sparkline** UI component must be specified in the root configuration object.
 
 		<!--JavaScript-->$("#sparklineContainer").dxSparkline({
 			//...

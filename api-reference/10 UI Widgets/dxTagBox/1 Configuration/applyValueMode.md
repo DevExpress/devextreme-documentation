@@ -9,7 +9,7 @@ default: 'instantly'
 Specifies how the UI component applies values.
 
 ---
-The option accepts the following values.
+The property accepts the following values.
 
 - **instantly**  
  Applies values when they are selected.

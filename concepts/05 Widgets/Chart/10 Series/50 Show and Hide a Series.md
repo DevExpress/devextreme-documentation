@@ -105,7 +105,7 @@ The **Chart** provides an API for showing and hiding a series at runtime. The mo
 
 ---
 
-A series can be hidden initially. For this, assign **false** to the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#visible') option of the object that configures the series.
+A series can be hidden initially. For this, assign **false** to the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/visible.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#visible') property of the object that configures the series.
 
 ---
 ##### jQuery

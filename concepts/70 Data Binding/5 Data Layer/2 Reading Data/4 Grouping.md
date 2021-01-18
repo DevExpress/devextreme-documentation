@@ -29,7 +29,7 @@ Consider grouping on the following examples. Begin with the creation of a sample
     ];
     var dataSource = new DevExpress.data.DataSource(data);
 
-The group expression is stored in the [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') option of the DataSource. You can get and modify the option value via the [group()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#group') and [group(groupExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group(groupExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#groupgroupExpr') methods respectively. To group the given array by 'birthYear', call the **group(groupExpr)** method and pass "birthYear" as an argument.
+The group expression is stored in the [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property of the DataSource. You can get and modify the property value via the [group()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#group') and [group(groupExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/group(groupExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#groupgroupExpr') methods respectively. To group the given array by 'birthYear', call the **group(groupExpr)** method and pass "birthYear" as an argument.
 
     <!--JavaScript-->dataSource.group("birthYear");
     dataSource.load().done(function(result) {

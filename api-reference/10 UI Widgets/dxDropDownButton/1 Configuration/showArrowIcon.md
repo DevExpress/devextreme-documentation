@@ -8,7 +8,7 @@ default: true
 Specifies whether the arrow icon should be displayed.
 
 ---
-The following table demonstrates how the **showArrowIcon** option affects the **DropDownButton**'s appearance:
+The following table demonstrates how the **showArrowIcon** property affects the **DropDownButton**'s appearance:
 
 <table class="dx-table">
     <tr>
@@ -17,10 +17,10 @@ The following table demonstrates how the **showArrowIcon** option affects the **
     </tr>
     <tr>
         <td><code>showArrowIcon: true</code></td>
-        <td><img src="/images/DevExtreme/show-arrow-icon-true.png" alt="DevExtreme DropDownButton with the showArrowIcon option set to true" /></td>
+        <td><img src="/images/DevExtreme/show-arrow-icon-true.png" alt="DevExtreme DropDownButton with the showArrowIcon property set to true" /></td>
     </tr>
     <tr>
         <td><code>showArrowIcon: false</code></td>
-        <td><img src="/images/DevExtreme/show-arrow-icon-false.png" alt="DevExtreme DropDownButton with the showArrowIcon option set to false" /></td>
+        <td><img src="/images/DevExtreme/show-arrow-icon-false.png" alt="DevExtreme DropDownButton with the showArrowIcon property set to false" /></td>
     </tr>
 </table>

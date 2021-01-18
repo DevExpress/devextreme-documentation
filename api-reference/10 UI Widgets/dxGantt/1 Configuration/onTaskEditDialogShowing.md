@@ -36,6 +36,10 @@ The task values.
 
 ---
 
+Note that the **hiddenFields** and **readOnlyFields** parameters affect only task fields. Use the [allowTaskResourceUpdating](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#allowTaskResourceUpdating) property to hide the Resource Manager in the Task Details dialog.
+
+![DevExtreme Gantt Chart - Task Edit Dialog](~/images/Gantt/task-edit-dialog.png)
+
 ---
 
 ##### jQuery

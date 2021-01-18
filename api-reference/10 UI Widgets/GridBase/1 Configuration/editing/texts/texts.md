@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Contains options that specify texts for editing-related UI elements.
+Contains properties that specify texts for editing-related UI elements.
 
 ---
 The following code shows the **editing**.**texts** declaration syntax:

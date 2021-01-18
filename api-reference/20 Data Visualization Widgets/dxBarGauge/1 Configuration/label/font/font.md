@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for bar labels.
+Specifies font properties for bar labels.
 
 ---

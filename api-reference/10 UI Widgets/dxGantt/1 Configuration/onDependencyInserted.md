@@ -12,10 +12,10 @@ A function that is executed when a dependency is inserted.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The key of the inserted dependency.
@@ -28,6 +28,7 @@ The values of the inserted dependency.
 
 ---
 
+![DevExtreme Gantt - Dependency](~/images/Gantt/dependency-element.png)
 
 ---
 
@@ -144,6 +145,7 @@ The values of the inserted dependency.
             }
         }
     </script>
+    
 ---
 
 #####See Also#####

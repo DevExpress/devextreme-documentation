@@ -8,11 +8,11 @@ default: true
 Specifies whether or not to skip *empty strings*, **null** and **undefined** values when calculating a summary.
 
 ---
-Specified in the **summary** object, this option affects all summaries in the grid. In addition, the same option can be specified for an individual summary. It will override the global setting.
+Specified in the **summary** object, this property affects all summaries in the grid. In addition, the same property can be specified for an individual summary. It will override the global setting.
 
-[note]This option does not have any effect when you use a remote data source.
+[note]This property does not have any effect when you use a remote data source.
 
-[note]Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** option. However, you can implement a custom summary, which skips empty values, as follows.
+[note]Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** property. However, you can implement a custom summary, which skips empty values, as follows.
     
 ---
 #####jQuery

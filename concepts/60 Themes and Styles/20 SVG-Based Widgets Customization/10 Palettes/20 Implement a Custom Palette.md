@@ -1,4 +1,4 @@
-The easiest way to implement a custom palette is to assign an array of colors to the **palette** option (see [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette')). However, this approach is only useful for a single UI component or several UI components of the same type.
+The easiest way to implement a custom palette is to assign an array of colors to the **palette** property (see [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette')). However, this approach is only useful for a single UI component or several UI components of the same type.
 
 In other cases, we recommend implementing a custom palette as an object of the following structure:
 
@@ -21,6 +21,6 @@ The custom palette should be registered using the [registerPalette(paletteName, 
     
     registerPalette("myCustomPalette", myPalette);
 
-To apply it, assign the name used in the registration to the widgets' **palette** options as shown in the [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette') article.
+To apply it, assign the name used in the registration to the UI components' **palette** properties as shown in the [Apply a Palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/10%20Apply%20a%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Apply_a_Palette') article.
 
     

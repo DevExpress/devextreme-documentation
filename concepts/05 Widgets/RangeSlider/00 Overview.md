@@ -4,7 +4,7 @@ The **RangeSlider** is a UI component that allows an end user to choose a range 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/"
 }
 
-The following code adds a simple **RangeSlider** to your page. The **start** and **end** options specify the selected interval. The **min** and **max** options limit the range of accepted values.
+The following code adds a simple **RangeSlider** to your page. The **start** and **end** properties specify the selected interval. The **min** and **max** properties limit the range of accepted values.
 
 ---
 ##### jQuery
@@ -123,7 +123,7 @@ The following code adds a simple **RangeSlider** to your page. The **start** and
 
 ---
 
-In addition, you can specify the step of **RangeSlider** values using the [step](/api-reference/10%20UI%20Widgets/dxSliderBase/1%20Configuration/step.md '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/Configuration/#step') option.
+In addition, you can specify the step of **RangeSlider** values using the [step](/api-reference/10%20UI%20Widgets/dxSliderBase/1%20Configuration/step.md '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/Configuration/#step') property.
 
 ---
 ##### jQuery
@@ -245,7 +245,7 @@ In addition, you can specify the step of **RangeSlider** values using the [step]
 
 #####See Also#####
 #include common-link-configurewidget
-- [RangeSlider - Customize Widget Appearance](/concepts/05%20Widgets/RangeSlider/05%20Customize%20Widget%20Appearance.md '/Documentation/Guide/Widgets/RangeSlider/Customize_Widget_Appearance')
+- [RangeSlider - Customize UI component Appearance](/concepts/05%20Widgets/RangeSlider/05%20Customize%20Widget%20Appearance.md '/Documentation/Guide/Widgets/RangeSlider/Customize_Widget_Appearance')
 - [RangeSlider - Handle the Value Change Event](/concepts/05%20Widgets/RangeSlider/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/RangeSlider/Handle_the_Value_Change_Event')
 - [RangeSlider API Reference](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/')
 - [Slider - Overview](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/Widgets/Slider/Overview/')

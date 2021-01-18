@@ -1,4 +1,4 @@
-To prohibit an operation, set the corresponding *allow{Operation}* [editing](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) option to `false`.
+To prohibit an operation, set the corresponding *allow{Operation}* [editing](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) property to `false`.
 
 ---
 ##### jQuery

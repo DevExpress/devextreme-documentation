@@ -7,6 +7,6 @@ inlineType:
 ---
 ---
 ##### shortDescription
-Specifies options for Chart UI component series.
+Specifies properties for Chart UI component series.
 
 ---

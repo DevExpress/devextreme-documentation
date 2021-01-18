@@ -3,7 +3,7 @@
         $max_file_size = 700*1024;
 
         // Specifies the path to the file
-        // Here, "file" is a string specified in the FileUploader's "name" option
+        // Here, "file" is a string specified in the FileUploader's "name" property
         $path_to_file = "images/".$_FILES['file']['name'];
 
         try {

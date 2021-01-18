@@ -8,7 +8,7 @@ default: {}
 Specifies the initial animation state.
 
 ---
-The values that this option accepts depend on the specified [animation type](/api-reference/50%20Common/Object%20Structures/animationConfig/type.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#type'). The following list illustrates the dependency:
+The values that this property accepts depend on the specified [animation type](/api-reference/50%20Common/Object%20Structures/animationConfig/type.md '/Documentation/ApiReference/Common/Object_Structures/animationConfig/#type'). The following list illustrates the dependency:
 
 - **fade**  
  **from** accepts a number from 0 to 1 and specifies the UI component's opacity. 0 makes the UI component completely transparent; 1 makes it opaque.
@@ -52,7 +52,7 @@ Opacity is specified the same way as in the **fade** animation type. The UI comp
         .fade-out-visibility { opacity: 0; }
         .fade-out-text { font-size: 5pt; }
 
-When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, you can specify this option with an object instead of the usual lambda expression.
+When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, you can specify this property with an object instead of the usual lambda expression.
 
     <!--Razor C#-->@(Html.DevExtreme().WidgetName()
         .Animation(a => a

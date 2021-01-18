@@ -23,7 +23,7 @@ Changes the appearance of the points that correspond to the argument of the hove
 * **none**   
 The appearance of the hovered point is not changed.
 
-To set custom options for the 'hover' style, which is applied when a point is hovered over, use the **hoverStyle** configuration object defining it for an individual series (**series**.**point**.**hoverStyle**), for all series of a particular type (**commonSeriesSettings**.**area**/**line**/... | **point**.**hoverStyle**), or all series in the chart (see **commonSeriesSettings**.**point**.**hoverStyle**).
+To set custom properties for the 'hover' style, which is applied when a point is hovered over, use the **hoverStyle** configuration object defining it for an individual series (**series**.**point**.**hoverStyle**), for all series of a particular type (**commonSeriesSettings**.**area**/**line**/... | **point**.**hoverStyle**), or all series in the chart (see **commonSeriesSettings**.**point**.**hoverStyle**).
 
 #include common-ref-enum with {
     enum: "`ChartPointInteractionMode`",

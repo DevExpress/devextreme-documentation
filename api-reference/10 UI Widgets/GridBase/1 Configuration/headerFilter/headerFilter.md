@@ -9,11 +9,11 @@ Configures the header filter feature.
 ---
 A header filter allows a user to filter values in an individual column by including/excluding them in/from the applied filter. A click on a header filter icon invokes a popup menu with all unique values in the column. By selecting or clearing the selection of values in this menu, the user includes/excludes them in/from the filter.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget {WidgetName} HeaderFilter](/images/{WidgetName}/visual_elements/header_filter.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component {WidgetName} HeaderFilter](/images/{WidgetName}/visual_elements/header_filter.png)
 
-To make header filter icons visible, assign **true** to the **headerFilter**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/headerFilter/visible.md '{basewidgetpath}/Configuration/headerFilter/#visible') option.
+To make header filter icons visible, assign **true** to the **headerFilter**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/headerFilter/visible.md '{basewidgetpath}/Configuration/headerFilter/#visible') property.
 
-A header filter's popup menu lists all column values. If they are numbers or dates, you can group them using the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') option in the column's [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '{basewidgetpath}/Configuration/columns/headerFilter/'). You can also provide a custom data source for a header filter using the [dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') option.
+A header filter's popup menu lists all column values. If they are numbers or dates, you can group them using the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property in the column's [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '{basewidgetpath}/Configuration/columns/headerFilter/'). You can also provide a custom data source for a header filter using the [dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') property.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/Filtering/"

@@ -4,7 +4,7 @@ The **FilterBuilder** UI component allows a user to build complex filter express
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"
 }
 
-The following code adds a simple **FilterBuilder** to your page. Note that each item in the [fields](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#fields') array contains the [dataField](/api-reference/_hidden/dxFilterBuilderField/dataField.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#dataField'). The filter expression is defined in the [value](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#value') option and should contain only those data fields that are present in the **fields** array.
+The following code adds a simple **FilterBuilder** to your page. Note that each item in the [fields](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#fields') array contains the [dataField](/api-reference/_hidden/dxFilterBuilderField/dataField.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#dataField'). The filter expression is defined in the [value](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#value') property and should contain only those data fields that are present in the **fields** array.
 
 ---
 #####jQuery

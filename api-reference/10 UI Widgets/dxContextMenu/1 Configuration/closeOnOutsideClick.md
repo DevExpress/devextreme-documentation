@@ -14,7 +14,7 @@ The event that caused UI component closing. It is a [dxEvent](/api-reference/50%
 **true** if the UI component should be closed; otherwise **false**.
 
 ---
-The function passed to this option enables you to specify a custom condition for closing the UI component. For instance, you can prevent closing until a user clicks a certain element.
+The function passed to this property enables you to specify a custom condition for closing the UI component. For instance, you can prevent closing until a user clicks a certain element.
 
 ---
 #####jQuery

@@ -12,10 +12,10 @@ A function that is executed when a resource is deleted.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The key of the deleted resource.
@@ -28,6 +28,7 @@ The values of the deleted resource.
 
 ---
 
+![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
 ---
 

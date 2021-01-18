@@ -5,7 +5,7 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for the title.
+Specifies font properties for the title.
 
 ---
 ---

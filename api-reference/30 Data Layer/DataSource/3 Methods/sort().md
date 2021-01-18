@@ -3,7 +3,7 @@ id: DataSource.sort()
 ---
 ---
 ##### shortDescription
-Gets the [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') option's value.
+Gets the [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') property's value.
 
 ##### return: any
 A sort expression.

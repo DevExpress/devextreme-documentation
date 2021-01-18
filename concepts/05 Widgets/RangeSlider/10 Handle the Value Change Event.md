@@ -1,4 +1,4 @@
-To process new **RangeSlider** values, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxRangeSlider/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/Configuration/#onValueChanged') option when you configure the UI component.
+To process new **RangeSlider** values, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxRangeSlider/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
 ##### jQuery

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **ColorBox** UI component.
+An object defining configuration properties for the **ColorBox** UI component.
 
 ---
 #####See Also#####

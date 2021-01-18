@@ -9,7 +9,7 @@ Configures the pager.
 ---
 The pager is an element that allows users to navigate through pages and change their size at runtime. The pager consists of the page navigator and several optional elements: the page size selector, navigation buttons, and page information.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout Widget {WidgetName} Pager](/images/{WidgetName}/visual_elements/pager.png)
+![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component {WidgetName} Pager](/images/{WidgetName}/visual_elements/pager.png)
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/RecordPaging/"

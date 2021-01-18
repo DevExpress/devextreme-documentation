@@ -4,7 +4,7 @@ The **MultiView** is a UI component that contains several views. An end user nav
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
 }
 
-In the most simple case, the **MultiView** UI component requires only the [dataSource](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#dataSource') option to be configured. Note that in such a case, data source items should have a structure described in the **dataSource** section. The following code adds the **MultiView** to your page.
+In the most simple case, the **MultiView** UI component requires only the [dataSource](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxMultiView/Configuration/#dataSource') property to be configured. Note that in such a case, data source items should have a structure described in the **dataSource** section. The following code adds the **MultiView** to your page.
 
 ---
 

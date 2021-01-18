@@ -9,4 +9,4 @@ Specifies the data field that provides keys for dependencies.
 
 ---
 
-Refer to the [dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/') option to see how to specify the **keyExpr** option.
+Refer to the [dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/') property to see how to specify the **keyExpr** property.

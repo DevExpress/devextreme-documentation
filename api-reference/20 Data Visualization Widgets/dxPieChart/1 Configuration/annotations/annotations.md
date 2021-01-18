@@ -12,7 +12,7 @@ Annotations are containers for images, text blocks, and custom content that disp
 
 ![DevExtreme PieChart: Annotations](/images/ChartJS/annotations/pie-annotations.png)
 
-To create annotations, assign an array of objects to the **annotations[]** option. Each object configures an individual annotation. You can set each annotation's [type]({basewidgetpath}/Configuration/annotations/#type') option to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/annotations/#template) option:
+To create annotations, assign an array of objects to the **annotations[]** property. Each object configures an individual annotation. You can set each annotation's [type]({basewidgetpath}/Configuration/annotations/#type') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/annotations/#template) property:
     
 ---
 ##### jQuery
@@ -199,7 +199,7 @@ Annotations can be unattached or anchored to a chart element. The following list
 
 The **PieChart** displays a [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled) when a user long-presses an annotation or hovers the mouse pointer over it.
 
-Objects in the **annotations[]** array configure individual annotations. To specify options that apply to all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
+Objects in the **annotations[]** array configure individual annotations. To specify properties that apply to all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithAnnotations/"

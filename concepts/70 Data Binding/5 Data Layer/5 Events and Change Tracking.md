@@ -1,12 +1,12 @@
-DataSource and Stores support events. The DataSource events are used to track the data loading state. They are used internally by the [DevExtreme widgets](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/'). You can also use them for your purposes. Stores also raise events before and after each operation (loading, update, insertion, etc.).
+DataSource and Stores support events. The DataSource events are used to track the data loading state. They are used internally by the [DevExtreme UI components](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/'). You can also use them for your purposes. Stores also raise events before and after each operation (loading, update, insertion, etc.).
 
 Use one of the following approaches to handle events.
 
-<a id="UseOption"></a><h4>Assign a Handler to a Configuration Option</h4>
+<a id="UseOption"></a><h4>Assign a Handler to a Configuration Property</h4>
 
-To attach a handler for a certain event to a DataSource or Data Store, use the corresponding configuration option. The options that take on event handling functions have names starting with *on*.
+To attach a handler for a certain event to a DataSource or Data Store, use the corresponding configuration property. The properties that take on event handling functions have names starting with *on*.
 
-The following example demonstrates how to use a configuration option to handle an event.
+The following example demonstrates how to use a configuration property to handle an event.
 
 	<!--JavaScript-->var dataSource = new DevExpress.data.DataSource({
 		sort: "name",

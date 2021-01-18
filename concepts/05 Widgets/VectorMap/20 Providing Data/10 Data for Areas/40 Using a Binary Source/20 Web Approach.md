@@ -25,7 +25,7 @@ The referenced script contains the **parse()** method for parsing a binary sourc
 				}]
 			});
 		});
-	In this code, the function's first argument specifies the URI of the source. Note that the file extension is omitted. In this case, both the *world.shp* and *world.dbf* files will be parsed. Add the *.shp* or *.dbf* extension if you need to parse a certain file. The second argument specifies the precision of the resulting shape coordinates. Within the callback function, which comes as the third argument, the resulting coordinates are assigned to the **layer**.**dataSource** option of the **VectorMap** UI component.
+	In this code, the function's first argument specifies the URI of the source. Note that the file extension is omitted. In this case, both the *world.shp* and *world.dbf* files will be parsed. Add the *.shp* or *.dbf* extension if you need to parse a certain file. The second argument specifies the precision of the resulting shape coordinates. Within the callback function, which comes as the third argument, the resulting coordinates are assigned to the **layer**.**dataSource** property of the **VectorMap** UI component.
 
 - **Using Data from an *ArrayBuffer* Source**		
 	The **parse()** method can also parse any source of the *<a href="https://developer.mozilla.org/en-US/docs/Web/API/ArrayBuffer" target="_blank">ArrayBuffer</a>* type. You can get a source of this type, for instance, by sending a request and specifying 'arraybuffer' as a response type.

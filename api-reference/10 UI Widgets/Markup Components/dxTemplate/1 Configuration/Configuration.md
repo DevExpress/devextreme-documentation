@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes configuration options used to create a template.
+This section describes configuration properties used to create a template.
 
 ---

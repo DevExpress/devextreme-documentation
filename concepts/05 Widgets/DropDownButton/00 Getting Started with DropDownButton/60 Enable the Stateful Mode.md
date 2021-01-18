@@ -1,4 +1,4 @@
-If the **DropDownButton** should remember the selected drop-down menu item, switch it to the stateful mode. Set the **useSelectMode** option to **true** and make the following replacements in your code:
+If the **DropDownButton** should remember the selected drop-down menu item, switch it to the stateful mode. Set the **useSelectMode** property to **true** and make the following replacements in your code:
 
 - Use [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#onSelectionChanged') instead of **onItemClick**.        
 
@@ -6,7 +6,7 @@ If the **DropDownButton** should remember the selected drop-down menu item, swit
 
 - Use the [selectedItemKey](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItemKey.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#selectedItemKey') to specify the initially selected item.
 
-    In stateful mode, the main button area displays the text and icon from the selected item. The **selectedItemKey** allows you to get or set the current selection. Items are identified using keys from the data field that you assigned to the [keyExpr](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#keyExpr') option (see the [Populate the Drop-Down Menu](/concepts/05%20Widgets/DropDownButton/00%20Getting%20Started%20with%20DropDownButton/30%20Populate%20the%20Drop-Down%20Menu.md '/Documentation/Guide/Widgets/DropDownButton/Getting_Started_with_DropDownButton/#Populate_the_Drop-Down_Menu') step).
+    In stateful mode, the main button area displays the text and icon from the selected item. The **selectedItemKey** allows you to get or set the current selection. Items are identified using keys from the data field that you assigned to the [keyExpr](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#keyExpr') property (see the [Populate the Drop-Down Menu](/concepts/05%20Widgets/DropDownButton/00%20Getting%20Started%20with%20DropDownButton/30%20Populate%20the%20Drop-Down%20Menu.md '/Documentation/Guide/Widgets/DropDownButton/Getting_Started_with_DropDownButton/#Populate_the_Drop-Down_Menu') step).
 
 For more information on the stateful mode, refer to the [useSelectMode](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/useSelectMode.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#useSelectMode') description.
 

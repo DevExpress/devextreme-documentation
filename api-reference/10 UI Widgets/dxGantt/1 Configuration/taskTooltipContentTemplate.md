@@ -18,6 +18,8 @@ The processed task.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ChartAppearance/"
 }
 
+Note that the **container** parameter contains the content of the default tooltip. You should clear the **container** parameter to specify custom content for the task tooltip.
+
 ---
 ##### jQuery
 

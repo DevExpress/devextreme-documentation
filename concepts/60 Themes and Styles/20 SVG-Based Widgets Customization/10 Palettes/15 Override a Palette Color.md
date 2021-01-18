@@ -1,4 +1,4 @@
-Set a UI component element's **color** option to override a palette color for this element:
+Set a UI component element's **color** property to override a palette color for this element:
 
 ---
 ##### jQuery  

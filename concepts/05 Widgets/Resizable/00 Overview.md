@@ -22,9 +22,9 @@ The following code adds a resizable image to your page. Note that the image occu
         width: 100%
     }
 
-[note]We recommend specifying the width- and height-related options of the **Resizable**, because the content usually takes them into account.
+[note]We recommend specifying the width- and height-related properties of the **Resizable**, because the content usually takes them into account.
 
-To specify which sides of the **Resizable** - top, bottom, left, right or all at once - can be used for resizing content, set the [handles](/api-reference/10%20UI%20Widgets/dxResizable/1%20Configuration/handles.md '/Documentation/ApiReference/UI_Widgets/dxResizable/Configuration/#handles') option. Note that this option can accept several values separated with space.
+To specify which sides of the **Resizable** - top, bottom, left, right or all at once - can be used for resizing content, set the [handles](/api-reference/10%20UI%20Widgets/dxResizable/1%20Configuration/handles.md '/Documentation/ApiReference/UI_Widgets/dxResizable/Configuration/#handles') property. Note that this property can accept several values separated with space.
 
     <!--JavaScript-->$(function() {
         $("#resizable").dxResizable({
@@ -33,7 +33,7 @@ To specify which sides of the **Resizable** - top, bottom, left, right or all at
         });
     });
 
-If the **Resizable** UI component contains other widgets, make sure that it is instantiated _before_ the widgets. For example, the following code creates a resizable [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/'). Note that the **Resizable** goes _before_ the **Chart** in the JavaScript code, and that makes the **Resizable** instantiated before the **Chart**.
+If the **Resizable** UI component contains other UI components, make sure that it is instantiated _before_ the UI components. For example, the following code creates a resizable [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/'). Note that the **Resizable** goes _before_ the **Chart** in the JavaScript code, and that makes the **Resizable** instantiated before the **Chart**.
 
     <!--HTML--><div id="resizable">
         <div id="chart"></div>

@@ -1,7 +1,7 @@
 Although the legend's layout is virtually universal, in some cases, you may need to slightly adjust it, for example, rearrange legend items. You can learn how to do it from the following instructions.
 
 - **Choose legend orientation**        
-Depending on whether the legend is oriented vertically or horizontally, the **Chart** arranges legend items in columns or in rows. To change the legend orientation, use the [orientation](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/orientation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#orientation') option.
+Depending on whether the legend is oriented vertically or horizontally, the **Chart** arranges legend items in columns or in rows. To change the legend orientation, use the [orientation](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/orientation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#orientation') property.
 
     ---
     ##### jQuery
@@ -81,10 +81,10 @@ Depending on whether the legend is oriented vertically or horizontally, the **Ch
 
     ---
 
-    [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#horizontalAlignment') option. For details on the location of the legend on a chart, refer to the [Relocate the Legend](/concepts/05%20Widgets/Chart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Chart/Legend/Relocate_the_Legend/') topic.
+    [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#horizontalAlignment') property. For details on the location of the legend on a chart, refer to the [Relocate the Legend](/concepts/05%20Widgets/Chart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Chart/Legend/Relocate_the_Legend/') topic.
 
 - **Set the number of columns or rows**     
-To distribute all legend items between several columns (in a vertically-oriented legend) or rows (in a horizontally-oriented legend), set the [columnCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#columnCount') or [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#rowCount') option respectively.
+To distribute all legend items between several columns (in a vertically-oriented legend) or rows (in a horizontally-oriented legend), set the [columnCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#columnCount') or [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#rowCount') property respectively.
 
     ---
     ##### jQuery
@@ -168,7 +168,7 @@ To distribute all legend items between several columns (in a vertically-oriented
     ---
 
 - **Adjust the empty space between columns and rows**         
-Regardless the legend orientation, you can adjust the empty space between columns and rows using the [columnItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#columnItemSpacing') and [rowItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#rowItemSpacing') options respectively.
+Regardless the legend orientation, you can adjust the empty space between columns and rows using the [columnItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#columnItemSpacing') and [rowItemSpacing](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowItemSpacing.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#rowItemSpacing') properties respectively.
 
     ---
     ##### jQuery
@@ -257,7 +257,7 @@ Regardless the legend orientation, you can adjust the empty space between column
 
     ---
 
-Below, you can try out all the mentioned options in action.
+Below, you can try out all the mentioned properties in action.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/Legend/rearrangeLegendItems.html, /Content/Applications/20_2/DataVisualization/Guides/Legend/rearrangeLegendItems.js, /Content/Applications/20_2/DataVisualization/Guides/Legend/rearrangeLegendItems.css"></div>
 

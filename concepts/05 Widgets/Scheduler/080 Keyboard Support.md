@@ -2,12 +2,12 @@ An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table full-width">
     <tr>
-        <th>Widget Element</th>
+        <th>UI component Element</th>
         <th>Key / Key Combination</th>        
         <th>Action</th>
     </tr>
     <tr>
-        <td rowspan="2">Scheduler Widget</td>
+        <td rowspan="2">Scheduler UI component</td>
         <td>Tab / Shift+Tab</td>        
         <td>Shifts focus to the next/previous appointment.</td>
     </tr>

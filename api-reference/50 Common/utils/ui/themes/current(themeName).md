@@ -21,7 +21,7 @@ The theme name passed as a parameter should be the value of the **data-theme** a
 
     <!--JavaScript-->DevExpress.ui.themes.ready(function () {
         $("#dataGridContainer").dxDataGrid("repaint");
-        // Call other widgets' repaint() method here
+        // Call other UI components' repaint() method here
     });
     DevExpress.ui.themes.current('mytheme-light');
     // DevExpress.ui.themes.current('mytheme-dark');

@@ -10,7 +10,7 @@ To invoke an operation and get its return value, use the [get()](/api-reference/
     <!--JavaScript-->
     context.get("GetSomeValue", { param: "value" });
     
-One interesting case is a service operation which supports querying on top of it. In this case, the operation may be treated as a read-only entity, and input parameters can be passed to the **customQueryParams** extension of the DataSource load options.
+One interesting case is a service operation which supports querying on top of it. In this case, the operation may be treated as a read-only entity, and input parameters can be passed to the **customQueryParams** extension of the DataSource load properties.
 
     <!--JavaScript-->
     var context = new DevExpress.data.ODataContext({

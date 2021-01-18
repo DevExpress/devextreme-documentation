@@ -117,7 +117,7 @@ The following code adds the **TagBox** to your page. The simplest configuration 
 If your data is an array of objects, specify: 
 
 - [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#valueExpr')     
-    The data field whose value will be written into the [value](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#value') option.  
+    The data field whose value will be written into the [value](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#value') property.  
 - [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#displayExpr')     
     The data field whose value will be displayed in the drop-down list and in the input field of the UI component.
 

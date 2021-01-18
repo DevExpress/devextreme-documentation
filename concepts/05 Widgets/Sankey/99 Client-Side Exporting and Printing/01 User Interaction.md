@@ -90,7 +90,7 @@ Set [export](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20C
 
 ---
 
-Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/export/#formats') array to limit the set of export formats. You can also set the [fileName](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/export/#fileName') option to specify the export file's name.
+Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/export/#formats') array to limit the set of export formats. You can also set the [fileName](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/export/#fileName') property to specify the export file's name.
 
 ---
 ##### jQuery

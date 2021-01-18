@@ -11,4 +11,4 @@ default: 344 (Material)
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\minWidth.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\minWidth.md' -->

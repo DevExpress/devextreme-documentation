@@ -5,4 +5,4 @@
     name: "Chart"
 }
 
-<!-- import * from 'api-reference\20 Data Visualization Widgets\BaseWidget\1 Configuration\title\title.md' -->
+<!-- import * from 'api-reference\10 UI Components\BaseWidget\1 Configuration\title\title.md' -->

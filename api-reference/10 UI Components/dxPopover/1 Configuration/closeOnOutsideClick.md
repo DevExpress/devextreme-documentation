@@ -17,4 +17,4 @@ A Boolean value specifying whether or not the UI component is closed if a user c
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->

@@ -215,4 +215,4 @@ You can also use a 3rd-party template engine to customize row appearance. See th
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
 - [onRowPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared')
 
-<!-- import * from 'api-reference\10 UI Widgets\dxDataGrid\1 Configuration\onRowClick.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onRowClick.md' -->

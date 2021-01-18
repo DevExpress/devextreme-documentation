@@ -11,4 +11,4 @@ default: 60 (Material)
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\maxWidth.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\maxWidth.md' -->

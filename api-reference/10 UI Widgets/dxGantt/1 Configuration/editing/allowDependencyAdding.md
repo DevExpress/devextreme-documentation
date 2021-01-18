@@ -8,6 +8,15 @@ default: true
 Specifies whether a user can add [dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '{basewidgetpath}/Configuration/#dependencies').
 
 ---
+
+![DevExtreme Gantt - Dependency](~/images/Gantt/dependency-element.png)
+
+To add a dependency between two tasks, use the [insertDependency](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#insertDependencydata) method or move the mouse pointer over the preceding task's edge (marked with a circle) and drag the connector to the edge of the next task.
+
+"Finish-To-Start" dependency between tasks:
+
+![DevExtreme Gantt - Insert Dependency](~/images/Gantt/add-dependency.png)
+
 ---
 ##### jQuery
 
@@ -22,3 +31,9 @@ Specifies whether a user can add [dependencies](/api-reference/10%20UI%20Widgets
     }); 
 
 ---
+
+#####See Also#####
+- [onDependencyInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyInserting)
+- [onDependencyInserted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyInserted)
+- [insertDependency](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#insertDependencydata)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

@@ -4,7 +4,7 @@ type: String | function(rowData)
 ---
 ---
 ##### shortDescription
-Calculates custom values to be used in sorting. Applies to the column specified in the **columns**.[dataField]({basewidgetpath}/Configuration/columns/#dataField) property.
+Calculates custom values to be used in sorting of the column values.
 
 ##### param(rowData): Object
 The data of the row to which the cell belongs.
@@ -13,7 +13,7 @@ The data of the row to which the cell belongs.
 The value to be used in sorting.
 
 ---
-This option accepts the data source name of the column that provides values to be used in sorting...
+This option accepts the name of the [data source field](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides values by which to sort the column's data...
 
 ---
 ##### jQuery
@@ -53,7 +53,7 @@ This option accepts the data source name of the column that provides values to b
     
 ---
 
-... or a function that returns such a value.
+... or a function that returns such values:
 
 ---
 ##### jQuery
@@ -106,7 +106,7 @@ This option accepts the data source name of the column that provides values to b
     
 ---
 
-To apply the sorting, users have to click the specified column header. If you need to sort data when the UI component loads, set the **columns[]**.[sortOrder]({basewidgetpath}/Configuration/columns/#sortOrder) property also.
+To apply the sorting, users have to click the specified column header. If you need to sort data when the UI component loads, set the **columns[]**.[sortOrder]({basewidgetpath}/Configuration/columns/#sortOrder) property in addition.
 
 [note]
 

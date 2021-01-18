@@ -14,4 +14,4 @@ A data object.
 ---
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxTreeView\3 Methods\selectAll().md' -->
+<!-- import * from 'api-reference\10 UI Components\dxTreeView\3 Methods\selectAll().md' -->

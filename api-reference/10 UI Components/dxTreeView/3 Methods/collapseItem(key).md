@@ -13,4 +13,4 @@ The item's key.
 
 ---
 
-<!-- import * from 'api-reference\10 UI Widgets\dxTreeView\3 Methods\collapseItem(itemData).md' -->
+<!-- import * from 'api-reference\10 UI Components\dxTreeView\3 Methods\collapseItem(itemData).md' -->

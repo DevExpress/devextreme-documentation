@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that defines configuration options for the **RangeSelector** widget.
+An object that defines configuration options for the **RangeSelector** UI component.
 
 ---
 #####See Also#####

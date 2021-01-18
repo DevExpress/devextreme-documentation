@@ -5,7 +5,7 @@ dep: dxSwitch.Options.switchedOffText
 ---
 ---
 ##### shortDescription
-Text displayed when the widget is in a disabled state.
+Text displayed when the UI component is in a disabled state.
 
 ---
-[note]The widget may or may not display text depending on the current theme.
+[note]The UI component may or may not display text depending on the current theme.

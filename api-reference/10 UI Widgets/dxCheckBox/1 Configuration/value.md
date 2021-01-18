@@ -6,7 +6,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies the widget state.
+Specifies the UI component state.
 
 ---
 The check box can be in one of the following states depending on the **value** option value.
@@ -20,7 +20,7 @@ The check box can be in one of the following states depending on the **value** o
 - undetermined  
  value is **undefined**
 
-An end-user can change the widget value using the **Space** key.
+An end-user can change the UI component value using the **Space** key.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"

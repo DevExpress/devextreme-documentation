@@ -6,7 +6,7 @@ inherits: BaseGauge
 ---
 ---
 ##### shortDescription
-The **LinearGauge** is a widget that indicates values on a linear numeric scale.
+The **LinearGauge** is a UI component that indicates values on a linear numeric scale.
 
 ##### widgettree
 value: 50

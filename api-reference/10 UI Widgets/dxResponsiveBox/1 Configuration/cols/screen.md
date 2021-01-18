@@ -8,7 +8,7 @@ default: undefined
 Decides on which screens the current column is rendered.
 
 ---
-Before rendering the column, the widget considers the screen's width. If the width matches the specified size qualifier, the column will be rendered. There are four size qualifiers in all. The **screen** option accepts one or several of them separated by a space.
+Before rendering the column, the UI component considers the screen's width. If the width matches the specified size qualifier, the column will be rendered. There are four size qualifiers in all. The **screen** option accepts one or several of them separated by a space.
 
 <table class="dx-table">
     <tr>

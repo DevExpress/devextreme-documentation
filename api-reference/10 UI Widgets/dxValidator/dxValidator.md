@@ -6,7 +6,7 @@ inherits: DOMComponent
 ---
 ---
 ##### shortDescription
-A widget that is used to validate the associated DevExtreme editors against the defined validation rules.
+A UI component that is used to validate the associated DevExtreme editors against the defined validation rules.
 
 ##### lib
 dx.web.js, dx.viz-web.js, dx.all.js

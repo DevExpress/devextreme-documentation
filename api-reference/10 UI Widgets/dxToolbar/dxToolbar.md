@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-The **Toolbar** is a widget containing items that usually manage screen content. Those items can be plain text or widgets.
+The **Toolbar** is a UI component containing items that usually manage screen content. Those items can be plain text or UI components.
 
 ##### widgettree
 dataSource: [{

@@ -1,4 +1,4 @@
-Titles and subtitles are textual elements that provide an overview of what the widget visualizes.
+Titles and subtitles are textual elements that provide an overview of what the UI component visualizes.
 
 ![Sankey Title and Subtitle](/images/sankey/visual_elements/title.png)
 

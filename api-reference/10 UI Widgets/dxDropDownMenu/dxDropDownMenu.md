@@ -7,7 +7,7 @@ hidden:
 ---
 ---
 ##### shortDescription
-A drop-down menu widget.
+A drop-down menu UI component.
 
 ##### lib
 dx.web.js, dx.viz-web.js, dx.all.js

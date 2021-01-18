@@ -6,7 +6,7 @@ inherits: dxPopover
 ---
 ---
 ##### shortDescription
-The **Tooltip** widget displays a tooltip for a specified element on the page.
+The **Tooltip** UI component displays a tooltip for a specified element on the page.
 
 ##### widgettree
 target: "#widget",

@@ -6,7 +6,7 @@ default: 'contains'
 ---
 ---
 ##### shortDescription
-Specifies a comparison operation used to search widget items.
+Specifies a comparison operation used to search UI component items.
 
 ---
 #include common-ref-enum with {

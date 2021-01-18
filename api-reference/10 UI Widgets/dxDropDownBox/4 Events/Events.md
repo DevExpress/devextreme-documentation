@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events that this widget raises.
+This section describes events that this UI component raises.
 
 ---
 #####See Also#####

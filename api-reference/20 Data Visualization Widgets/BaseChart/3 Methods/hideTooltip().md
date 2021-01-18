@@ -3,10 +3,10 @@ id: BaseChart.hideTooltip()
 ---
 ---
 ##### shortDescription
-Hides all widget tooltips.
+Hides all UI component tooltips.
 
 ---
-Use this method to hide all widget tooltips programmatically.
+Use this method to hide all UI component tooltips programmatically.
 
 #####See Also#####
 #include common-link-callmethods

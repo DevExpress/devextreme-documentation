@@ -7,7 +7,7 @@ type: Object
 Configures the loading indicator.
 
 ---
-When the widget is bound to a remote data source, it can display a loading indicator while data is loading.
+When the UI component is bound to a remote data source, it can display a loading indicator while data is loading.
 
 ![DevExtreme Gauges - Loading indicator](/images/ChartJS/visual_elements/gauges_loadingindicator.png)
 

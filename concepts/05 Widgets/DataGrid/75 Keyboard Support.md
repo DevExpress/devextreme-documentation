@@ -1,4 +1,4 @@
-A user can interact with the widget using the following keys:
+A user can interact with the UI component using the following keys:
 
 <table class="dx-table full-width">
     <tr>

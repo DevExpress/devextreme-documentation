@@ -6,16 +6,16 @@ EventForAction: dxTextEditor.focusOut
 ---
 ---
 ##### shortDescription
-A function that is executed when the widget loses focus.
+A function that is executed when the UI component loses focus.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The widget's instance.
+The UI component's instance.
 
 ##### field(e.element): dxElement
-#include common-ref-elementparam with { element: "widget" }
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam

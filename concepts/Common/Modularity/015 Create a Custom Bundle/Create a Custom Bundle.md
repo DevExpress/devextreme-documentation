@@ -11,7 +11,7 @@ Here, *<bundle_name>* is a name of the configuration file without an extension. 
 
 After the file was created, you can edit it and leave only modules and exports you need.  
 
-[note]To use DevExtreme widgets with jQuery, Knockout, or AngularJS, ensure that you import the [jquery](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery'), [knockout](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout'), or [angular](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') integration module.
+[note]To use DevExtreme UI components with jQuery, Knockout, or AngularJS, ensure that you import the [jquery](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery'), [knockout](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout'), or [angular](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') integration module.
 
 
 The following command produces a minified bundle.
@@ -79,7 +79,7 @@ The example below demonstrates how to create an application with a single button
     /* UI core (dx.module-core.js) */
     var ui = DevExpress.ui = require("devextreme/bundles/modules/ui");
     ui.dialog = require("devextreme/ui/dialog");
-    /* Base widgets (dx.module-widgets-base.js) */
+    /* Base UI components (dx.module-widgets-base.js) */
     ui.dxButton = require("devextreme/ui/button");
 
 
@@ -133,7 +133,7 @@ The example below demonstrates how to create an application with a single button
     /* UI core (dx.module-core.js) */
     var ui = DevExpress.ui = require("devextreme/bundles/modules/ui");
     ui.dialog = require("devextreme/ui/dialog");
-    /* Base widgets (dx.module-widgets-base.js) */
+    /* Base UI components (dx.module-widgets-base.js) */
     ui.dxButton = require("devextreme/ui/button");
 
 
@@ -185,7 +185,7 @@ The example below demonstrates how to create an application with a single button
     /* UI core (dx.module-core.js) */
     var ui = DevExpress.ui = require("devextreme/bundles/modules/ui");
     ui.dialog = require("devextreme/ui/dialog");
-    /* Base widgets (dx.module-widgets-base.js) */
+    /* Base UI components (dx.module-widgets-base.js) */
     ui.dxButton = require("devextreme/ui/button");
 
 ---

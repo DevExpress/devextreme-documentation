@@ -12,13 +12,13 @@ Specifies the checkbox display mode.
 The option accepts the following values:
 
 - *"none"*    
-The widget does not display checkboxes.
+The UI component does not display checkboxes.
 
 - *"normal"*        
-The widget displays one checkbox per item.
+The UI component displays one checkbox per item.
 
 - *"selectAll"*       
-The widget displays one checkbox per item and one "Select All" checkbox at the top of the widget. The [selectionMode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectionMode') should be *"multiple"*.
+The UI component displays one checkbox per item and one "Select All" checkbox at the top of the UI component. The [selectionMode](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#selectionMode') should be *"multiple"*.
 
 #include common-ref-enum with {
     enum: "`TreeViewCheckBoxMode`",

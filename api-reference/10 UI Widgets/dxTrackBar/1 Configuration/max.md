@@ -5,6 +5,6 @@ default: 100
 ---
 ---
 ##### shortDescription
-The maximum value the widget can accept.
+The maximum value the UI component can accept.
 
 ---

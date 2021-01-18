@@ -1,4 +1,4 @@
-The **Funnel** is a widget that visualizes a value at different stages in the form of a funnel. It helps assess value changes throughout these stages and identify potential issues.
+The **Funnel** is a UI component that visualizes a value at different stages in the form of a funnel. It helps assess value changes throughout these stages and identify potential issues.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
@@ -15,7 +15,7 @@ You can also check if a pyramid chart is more suitable for your needs:
 
 - [Pyramid Chart](/concepts/05%20Widgets/Funnel/10%20Pyramid%20Chart.md '/Documentation/Guide/Widgets/Funnel/Pyramid_Chart/')
 
-After that, give the widget a distinctive look and make it more informative with the following elements:
+After that, give the UI component a distinctive look and make it more informative with the following elements:
 
 - [Funnel Items](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/Widgets/Funnel/Funnel_Items/Overview/')
 - [Item Labels](/concepts/05%20Widgets/Funnel/17%20Item%20Labels/00%20Overview.md '/Documentation/Guide/Widgets/Funnel/Item_Labels/Overview/')

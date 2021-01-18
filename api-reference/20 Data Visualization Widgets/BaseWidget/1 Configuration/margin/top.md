@@ -5,6 +5,6 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the top margin of the widget in pixels.
+Specifies the top margin of the UI component in pixels.
 
 ---

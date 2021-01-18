@@ -3,18 +3,18 @@ id: BaseWidget.getSize()
 ---
 ---
 ##### shortDescription
-Gets the current widget size.
+Gets the current UI component size.
 
 ##### return: BaseWidget_Options_size
-The current widget size.
+The current UI component size.
 
 ---
 Returns an object with the following fields.
 
 - **width**        
-The width of the widget in pixels.
+The width of the UI component in pixels.
 - **height**    
-The height of the widget in pixels.
+The height of the UI component in pixels.
 
 #####See Also#####
 #include common-link-callmethods

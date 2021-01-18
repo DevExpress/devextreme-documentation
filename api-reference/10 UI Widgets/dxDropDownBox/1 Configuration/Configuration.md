@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **DropDownBox** widget.
+An object defining configuration options for the **DropDownBox** UI component.
 
 ---
 #####See Also#####

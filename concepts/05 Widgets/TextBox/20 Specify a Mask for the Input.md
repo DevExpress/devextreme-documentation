@@ -186,7 +186,7 @@ The masked value goes to the read-only [text](/api-reference/10%20UI%20Widgets/d
     <!--JavaScript-->const maskedValue = $("#textBoxContainer").dxTextBox("option", "text");
     const unmaskedValue = $("#textBoxContainer").dxTextBox("option", "value");
     
-By default, the widget uses underscores to designate blanks in the masked value. You can specify another symbol using the [maskChar](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/maskChar.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#maskChar') option.
+By default, the UI component uses underscores to designate blanks in the masked value. You can specify another symbol using the [maskChar](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/maskChar.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#maskChar') option.
 
 ---
 ##### jQuery

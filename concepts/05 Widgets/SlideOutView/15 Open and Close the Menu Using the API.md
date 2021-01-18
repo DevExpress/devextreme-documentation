@@ -44,7 +44,7 @@ To open or close the **SlideOutView** menu programmatically, call the [showMenu(
         width: 100%;
     }
 
-When using AngularJS or Knockout, you can still call the methods mentioned before, but as an alternative, you can bind the [menuVisible](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/menuVisible.md '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/Configuration/#menuVisible') property of the **SlideOutView** widget to a scope property (in AngularJS) or an observable variable (in Knockout). After that, change this scope property or observable variable, and the slide-out menu will be opened or closed.
+When using AngularJS or Knockout, you can still call the methods mentioned before, but as an alternative, you can bind the [menuVisible](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/menuVisible.md '/Documentation/ApiReference/UI_Widgets/dxSlideOutView/Configuration/#menuVisible') property of the **SlideOutView** UI component to a scope property (in AngularJS) or an observable variable (in Knockout). After that, change this scope property or observable variable, and the slide-out menu will be opened or closed.
 
 ---
 #####**AngularJS**

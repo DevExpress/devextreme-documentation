@@ -1,10 +1,10 @@
-The **Tabs** is a tab strip used to switch between pages or views. This widget is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') widget, but you can use the **Tabs** separately as well.
+The **Tabs** is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') UI component, but you can use the **Tabs** separately as well.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"
 }
 
-The following code adds the **Tabs** widget to your page. One of the tabs has an icon, another has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#badge').
+The following code adds the **Tabs** UI component to your page. One of the tabs has an icon, another has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Widgets/dxTabs/Configuration/items/#badge').
 
 ---
 
@@ -113,4 +113,4 @@ Note that field names in these data source items are [conventional](/api-referen
 - [Tabs - Keyboard Support](/concepts/05%20Widgets/Tabs/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Tabs/Keyboard_Support')
 - [Tabs API Reference](/api-reference/10%20UI%20Widgets/dxTabs '/Documentation/ApiReference/UI_Widgets/dxTabs/')
 
-[tags]dxtabs, tabs, collection container, collection widget, navigation, overview
+[tags]dxtabs, tabs, collection container, collection UI component, navigation, overview

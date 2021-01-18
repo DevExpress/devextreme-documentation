@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **List** widget.
+An object defining configuration options for the **List** UI component.
 
 ---
 #####See Also#####

@@ -1,4 +1,4 @@
-To get a widget instance, save it in a scope property once the widget is initialized:
+To get a UI component instance, save it in a scope property once the UI component is initialized:
 
     <!--JavaScript-->function Controller ($scope) {
         $scope.menuInstance = {};

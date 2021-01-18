@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the width of the widget in pixels.
+Specifies the width of the UI component in pixels.
 
 ---

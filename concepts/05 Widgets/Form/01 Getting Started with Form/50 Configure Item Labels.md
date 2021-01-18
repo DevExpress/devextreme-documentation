@@ -1,4 +1,4 @@
-You can configure labels for individual items in the [label](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/) object. This object's section lists all available properties.
+You can configure individual labels in the [label](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/) object. This object's section lists all available properties.
 
 The following properties apply to all labels in the Form:
 

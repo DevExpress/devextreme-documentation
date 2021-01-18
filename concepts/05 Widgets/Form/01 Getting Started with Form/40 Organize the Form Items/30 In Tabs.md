@@ -1,6 +1,10 @@
 The Form uses the [TabPanel](/Documentation/ApiReference/UI_Widgets/dxTabPanel/) component to display tabs. You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object. A tab can contain any item type.
 
-The following example shows a Form with two groups. A tabbed item is nested in the `Personal Information` group. We also configure the tab panel's [height](/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object:
+The following example shows a tabbed item nested in the `Personal Information` group. The resulting Form looks like this:
+
+![DevExtreme Form: Tabbed Items](/images/UiWidgets/form-getting-started-tabs.png)
+
+We also configure the tab panel's [height](/Documentation/ApiReference/UI_Widgets/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object.
 
 
 ---
@@ -246,7 +250,3 @@ The following example shows a Form with two groups. A tabbed item is nested in t
     export default App;
 
 ---
-
-If you run this code, you will get the Form that looks like the following one:
-
-![DevExtreme Form: Tabbed Items](/images/UiWidgets/form-getting-started-tabs.png)

@@ -4,7 +4,7 @@ To apply validation rules to a simple item, specify them in the [validationRules
 
 An editor is validated when its value changes. To validate all editors simultaneously, call the [validate()](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#validate) Form method. 
 
-In the following example, we specify the [isRequired](Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property for the `Name` item. We also specify the **NumericRule** for `officeNumber` and **EmailRules** for `Email` items.
+In the following example, we specify the [isRequired](Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property for the `Name` item. We also specify the **NumericRule** for `officeNumber` and **EmailRule** for `Email` items.
 
 ---
 ##### jQuery
@@ -18,7 +18,7 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
             colCount: 2,
             items: [{
                 dataField: "name",
-                isRequired: "true"
+                isRequired: true
             }, {
                 dataField: "officeNumber",
                 validationRules: [{
@@ -183,4 +183,3 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
     export default App;
 
 ---
-

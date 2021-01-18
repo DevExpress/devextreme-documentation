@@ -1,6 +1,4 @@
-To keep the fixed number of columns, specify the number in the [colCount](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount) property. 
-
-The Form can also automatically adjust the number of columns to the screen width. Specify the [screenByWidth](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#screenByWidth) and [colCountByScreen](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/colCountByScreen/) properties to enable this feature. 
+The Form can organize items in a fixed number of columns or automatically adjust it to the screen width. To set the fixed number of columns, assign it to the [colCount](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#colCount) property as done in the code below. If the number should be auto-adjusted, configure the [screenByWidth](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#screenByWidth) and [colCountByScreen](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/colCountByScreen/) properties. 
 
 An item can occupy more than one column. For this, specify the [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#colSpan) property. In the example below, the `Notes` item spans two columns:
 
@@ -164,4 +162,3 @@ An item can occupy more than one column. For this, specify the [colSpan](/Docume
     export default App;
 
 ---
-

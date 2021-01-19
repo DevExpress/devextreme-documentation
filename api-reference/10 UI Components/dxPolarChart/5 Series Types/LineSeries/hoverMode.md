@@ -26,5 +26,5 @@ The series does not react to pointing to it.
 } Note that although this enum accepts more values, only the listed ones can be applied to a line series.
 
 #####See Also#####
-- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/hoverStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Series_Types/LineSeries/hoverStyle/')
-- **point**.[hoverMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/hoverMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Series_Types/LineSeries/point/#hoverMode')
+- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/hoverStyle/')
+- **point**.[hoverMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/point/#hoverMode')

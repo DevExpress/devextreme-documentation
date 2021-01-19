@@ -12,7 +12,7 @@ A function that is executed after a row is created.
 Information about the event that caused the function's execution.
 
 ##### field(e.columns): Array<dxDataGridColumn>
-All column [configurations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/').
+All column [configurations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/').
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.
@@ -24,7 +24,7 @@ The row's raw data. Unavailable if **rowType** is *"header"*, *"filter"*, or *"t
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.groupIndex): Number
-The row's [group index](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex'). Available if **rowType** is *"group"*.
+The row's [group index](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex'). Available if **rowType** is *"group"*.
 
 ##### field(e.isExpanded): Boolean
 Indicates whether the row is expanded or collapsed. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.
@@ -37,7 +37,7 @@ Indicates whether the prepared row is [selected](/concepts/05%20Widgets/DataGrid
 
 ##### field(e.key): any
 The row's key.     
-If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
+If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.
@@ -49,7 +49,7 @@ Model data. Available only if Knockout is used.
 The row's index. Refer to [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### field(e.rowType): String
-The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType').
+The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType').
 
 ##### field(e.values): Array<any>
 Values displayed in the row cells.

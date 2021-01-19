@@ -7,4 +7,4 @@ type: eventType
 Raised before the edit dialog is shown.
 
 ---
-Main article: [onTaskEditDialogShowing](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskEditDialogShowing)
+Main article: [onTaskEditDialogShowing](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskEditDialogShowing)

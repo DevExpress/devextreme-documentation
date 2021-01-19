@@ -43,7 +43,7 @@ This field's [configuration](/api-reference/30%20Data%20Layer/PivotGridDataSourc
 Available for fields in the [field panel](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/15%20Field%20Panel.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Panel') only.
 
 ##### field(e.items): Array<Object>
-An array of items to be displayed by the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/items/') property description.
+An array of items to be displayed by the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description.
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.

@@ -6,7 +6,7 @@ If you [validate data](/concepts/05%20Widgets/TreeList/20%20Editing/50%20Data%20
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Editing Cell Mode Validation](/images/treelist/editing/cell_mode_validation.png)
 
-Clicking the *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#confirmDelete') property to hide this dialog.
+Clicking the *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#confirmDelete') property to hide this dialog.
 
 ---
 ##### jQuery

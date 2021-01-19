@@ -11,7 +11,7 @@ Specifies whether a user can add [dependencies](/api-reference/10%20UI%20Widgets
 
 ![DevExtreme Gantt - Dependency](~/images/Gantt/dependency-element.png)
 
-To add a dependency between two tasks, use the [insertDependency](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#insertDependencydata) method or move the mouse pointer over the preceding task's edge (marked with a circle) and drag the connector to the edge of the next task.
+To add a dependency between two tasks, use the [insertDependency](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertDependencydata) method or move the mouse pointer over the preceding task's edge (marked with a circle) and drag the connector to the edge of the next task.
 
 "Finish-To-Start" dependency between tasks:
 
@@ -33,7 +33,7 @@ To add a dependency between two tasks, use the [insertDependency](/Documentation
 ---
 
 #####See Also#####
-- [onDependencyInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyInserting)
-- [onDependencyInserted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyInserted)
-- [insertDependency](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#insertDependencydata)
+- [onDependencyInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyInserting)
+- [onDependencyInserted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyInserted)
+- [insertDependency](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertDependencydata)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

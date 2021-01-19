@@ -7,7 +7,7 @@ type: eventType
 Raised before an appointment is deleted from the data source.
 
 ---
-Main article: [onAppointmentDeleting](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentDeleting.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentDeleting')
+Main article: [onAppointmentDeleting](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentDeleting.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting')
 
 #####See Also#####
 #include common-link-handleevents

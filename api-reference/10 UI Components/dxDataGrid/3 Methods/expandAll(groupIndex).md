@@ -9,7 +9,7 @@ Expands master rows or groups of a specific level. Does not apply if data is rem
 The group's level. Pass **undefined** to expand all groups. Pass *-1* to expand all master rows.
 
 ---
-[note] The [onRowExpanding](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onRowExpanding) and [onRowExpanded](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onRowExpanded) functions are not executed when you call this method.
+[note] The [onRowExpanding](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowExpanding) and [onRowExpanded](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowExpanded) functions are not executed when you call this method.
 
 #####See Also#####
 #include common-link-callmethods

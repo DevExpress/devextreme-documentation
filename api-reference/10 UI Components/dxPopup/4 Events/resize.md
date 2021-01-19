@@ -7,7 +7,7 @@ type: eventType
 Raised each time the UI component is resized by one pixel.
 
 ---
-Main article: [onResize](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/onResize.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#onResize')
+Main article: [onResize](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/onResize.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#onResize')
 
 #####See Also#####
 #include common-link-handleevents

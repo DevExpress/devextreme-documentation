@@ -122,7 +122,7 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
 
 ---
 
-**Lookup** renders the next page once a user scrolls the item list to the bottom. If you set the [pageLoadMode](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#pageLoadMode') to *"nextButton"*, **Lookup** renders the next page when a user clicks the **Next** button. You can change this button's text using the [nextButtonText](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/nextButtonText.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#nextButtonText') property:
+**Lookup** renders the next page once a user scrolls the item list to the bottom. If you set the [pageLoadMode](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#pageLoadMode') to *"nextButton"*, **Lookup** renders the next page when a user clicks the **Next** button. You can change this button's text using the [nextButtonText](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/nextButtonText.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#nextButtonText') property:
 
 ---
 ##### jQuery

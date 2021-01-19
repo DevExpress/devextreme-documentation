@@ -1,4 +1,4 @@
-You can execute certain commands before or after a row was expanded or collapsed by handling the [rowExpanding](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowExpanding.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowExpanding'), [rowExpanded](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowExpanded.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowExpanded'), [rowCollapsing](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowCollapsing.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowCollapsing') or [rowCollapsed](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowCollapsed.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/#rowCollapsed') event. Assign event handling functions to the corresponding **on*EventName*** properties when you configure the UI component if these functions are going to remain unchanged. 
+You can execute certain commands before or after a row was expanded or collapsed by handling the [rowExpanding](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowExpanding.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Events/#rowExpanding'), [rowExpanded](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowExpanded.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Events/#rowExpanded'), [rowCollapsing](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Events/#rowCollapsing') or [rowCollapsed](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowCollapsed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Events/#rowCollapsed') event. Assign event handling functions to the corresponding **on*EventName*** properties when you configure the UI component if these functions are going to remain unchanged. 
 
 ---
 ##### jQuery
@@ -57,7 +57,7 @@ You can execute certain commands before or after a row was expanded or collapsed
     
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var rowCollapsedEventHandler1 = function (e) {

@@ -35,7 +35,7 @@ The widget displays a delete confirmation message when you want to remove a depe
 ---
 
 #####See Also#####
-- [onDependencyDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyDeleting)
-- [onDependencyDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyDeleted)
-- [deleteDependency](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#deleteDependencykey)
+- [onDependencyDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyDeleting)
+- [onDependencyDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyDeleted)
+- [deleteDependency](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#deleteDependencykey)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

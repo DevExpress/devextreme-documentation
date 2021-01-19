@@ -26,4 +26,4 @@ The series does not react to pointing to it.
 } Note that although this enum accepts more values, only the listed ones can be applied to a candlestick series.
 
 #####See Also#####
-- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries/hoverStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/CandleStickSeries/hoverStyle/') - specifies the appearance of series in the hover state.
+- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/hoverStyle/') - specifies the appearance of series in the hover state.

@@ -16,4 +16,4 @@ Specifies the message that is shown if the rule is broken.
 }
 
 - **Get the message from the server**       
-See the example in the [validationCallback](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules/AsyncRule/validationCallback.md '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/AsyncRule/#validationCallback') description.
+See the example in the [validationCallback](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules/AsyncRule/validationCallback.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/AsyncRule/#validationCallback') description.

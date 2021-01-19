@@ -1,4 +1,4 @@
-Use the [uploadHeaders](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadHeaders.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadHeaders') property to specify a header for the request.
+Use the [uploadHeaders](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadHeaders.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadHeaders') property to specify a header for the request.
 
 ---
 ##### jQuery

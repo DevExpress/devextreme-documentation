@@ -1,4 +1,4 @@
-For a minor customization of **Scheduler** appointments, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource') in appointment data objects. For example, the following code generates three appointments: the first is not customized, the second is hidden, and the third is disabled.
+For a minor customization of **Scheduler** appointments, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') in appointment data objects. For example, the following code generates three appointments: the first is not customized, the second is hidden, and the third is disabled.
 
 ---
 
@@ -135,7 +135,7 @@ For a minor customization of **Scheduler** appointments, you can define [specifi
 
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define templates for appointments.
+If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define templates for appointments.
 
 ---
 
@@ -341,7 +341,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
 ---
 
-If you use only jQuery, combine HTML markup for appointments manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#appointmentTemplate') callback function as shown in the following code.
+If you use only jQuery, combine HTML markup for appointments manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTemplate') callback function as shown in the following code.
 
 [**jQuery**](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component')
 
@@ -396,7 +396,7 @@ In addition, you can use a 3rd-party template engine to customize the UI compone
 - [Scheduler - Customize Appointment Details Form](/concepts/05%20Widgets/Scheduler/030%20Appointments/070%20Customize%20Appointment%20Details%20Form.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Customize_Appointment_Details_Form/')
 - [Scheduler - Customize Resource Headers](/concepts/05%20Widgets/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/Widgets/Scheduler/Resources/Customize_Resource_Headers/')
 - [Scheduler - Customize Timetable](/concepts/05%20Widgets/Scheduler/050%20Timetable.md '/Documentation/Guide/Widgets/Scheduler/Timetable/')
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Widgets/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 
 [tags]scheduler, appointment appearance, customize, templates

@@ -7,4 +7,4 @@ type: eventType
 Raised before a dependency is deleted.
 
 ---
-Main article: [onDependencyDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyDeleting)
+Main article: [onDependencyDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyDeleting)

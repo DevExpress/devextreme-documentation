@@ -18,7 +18,7 @@ Information about the currently processed shape.
 ---
 The template content must be presented as SVG elements.
 
-Use the [toolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/toolboxTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#toolboxTemplate') property to define a template for each shape in the toolbox.
+Use the [toolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/toolboxTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#toolboxTemplate') property to define a template for each shape in the toolbox.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/"

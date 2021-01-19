@@ -17,7 +17,7 @@ A zero-based index of the hovered bar. The closer this bar is to the gauge's cen
 The raw value.
 
 ##### field(scaleValue.valueText): String
-The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/format.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/tooltip/#format') value converted to a string.
+The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/format.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/tooltip/#format') value converted to a string.
 
 ##### return: Object
 The tooltip's text or markup and color.

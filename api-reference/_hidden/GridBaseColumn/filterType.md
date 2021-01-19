@@ -16,7 +16,7 @@ Values in the header filter are unselected initially, and a user can select valu
 - **exclude**       
 All values in the header filter are selected initially. A user can deselect values to change the filter.
 
-This property changes when the user clicks the **Select All** checkbox in the [header filter](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/headerFilter '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/headerFilter/'):
+This property changes when the user clicks the **Select All** checkbox in the [header filter](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/headerFilter '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/headerFilter/'):
 
 <table class="dx-table">
     <tr>

@@ -1,4 +1,4 @@
-The selection capability is not provided out of the box, but it can be implemented using the [onItemClick](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/onItemClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#onItemClick') event handler. The following code gives an example for the scenario when a click on a funnel item selects it, and a subsequent click on the same item clears the selection. To check whether the funnel item is already selected, its [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item/3%20Methods/isSelected().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/Methods/#isSelected') method is called.
+The selection capability is not provided out of the box, but it can be implemented using the [onItemClick](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#onItemClick') event handler. The following code gives an example for the scenario when a click on a funnel item selects it, and a subsequent click on the same item clears the selection. To check whether the funnel item is already selected, its [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item/3%20Methods/isSelected().md '/Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#isSelected') method is called.
 
 ---
 ##### jQuery
@@ -83,7 +83,7 @@ The selection capability is not provided out of the box, but it can be implement
 
 ---
 
-In the previous code example, selection was cleared of a specific item. If you need to clear selection of all items, call the **Funnel**'s [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/3%20Methods/clearSelection().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Methods/#clearSelection') method.
+In the previous code example, selection was cleared of a specific item. If you need to clear selection of all items, call the **Funnel**'s [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#clearSelection') method.
 
 ---
 ##### jQuery

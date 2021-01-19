@@ -37,7 +37,7 @@ Click the cross icon (on the right side of the resource) to remove the resource 
 ---
 
 #####See Also#####
-- [assignResourceToTask](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#assignResourceToTaskresourceKey_taskKey)
-- [unassignResourceFromTask](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#unassignResourceFromTaskresourceKey_taskKey)
+- [assignResourceToTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#assignResourceToTaskresourceKey_taskKey)
+- [unassignResourceFromTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#unassignResourceFromTaskresourceKey_taskKey)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
 

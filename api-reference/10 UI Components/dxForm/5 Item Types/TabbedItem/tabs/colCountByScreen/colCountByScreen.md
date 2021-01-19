@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the relation between the [screen size qualifier](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#screenByWidth') and the number of columns in the tabbed layout.
+Specifies the relation between the [screen size qualifier](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#screenByWidth') and the number of columns in the tabbed layout.
 
 ---
 ---

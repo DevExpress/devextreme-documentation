@@ -104,9 +104,9 @@ The following code adds a primitive **TileView** to your page.
 
 ---
 
-Note that field names in these data source items are [conventional](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/items/'). This provides a default tile appearance, which can be customized later. 
+Note that field names in these data source items are [conventional](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/'). This provides a default tile appearance, which can be customized later. 
 
-By default, the UI component is oriented horizontally, but you can orient it vertically using the [direction](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction') property. 
+By default, the UI component is oriented horizontally, but you can orient it vertically using the [direction](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#direction') property. 
 
 ---
 ##### jQuery
@@ -186,6 +186,6 @@ By default, the UI component is oriented horizontally, but you can orient it ver
 #include common-link-configurewidget
 - [TileView - Specify the Size of Tiles](/concepts/05%20Widgets/TileView/03%20Specify%20the%20Size%20of%20Tiles.md '/Documentation/Guide/Widgets/TileView/Specify_the_Size_of_Tiles')
 - [TileView - Customize Tile Appearance](/concepts/05%20Widgets/TileView/05%20Customize%20Tile%20Appearance.md '/Documentation/Guide/Widgets/TileView/Customize_Tile_Appearance')
-- [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Widgets/dxTileView/')
+- [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
 [tags]dxtileview, tile view, tileView, collection container, collection UI component, navigation, overview

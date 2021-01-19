@@ -2,10 +2,10 @@ The **Scatter** series type visualizes data as a collection of scattered points.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/scatter.html, /Content/Applications/20_2/DataVisualization/Guides/ChartSeriesTypes/scatter.js"></div>
 
-To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') property. You can configure:
+To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property. You can configure:
 
-- Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') array;
-- All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object;
+- Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') array;
+- All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object;
 - All **Scatter** series using the **commonSeriesSettings**.**scatter** object.
 
 <!---->
@@ -112,7 +112,7 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
 
 ---
 
-Refer to the [ScatterSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ScatterSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/ScatterSeries/') section of the API Reference for a full list of properties available to a **Scatter** series.
+Refer to the [ScatterSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ScatterSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/ScatterSeries/') section of the API Reference for a full list of properties available to a **Scatter** series.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Scatter/"

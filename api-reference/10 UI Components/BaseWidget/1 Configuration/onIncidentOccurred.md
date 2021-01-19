@@ -24,7 +24,7 @@ The model data. Available only if you use Knockout.
 Information on the occurred incident.
 
 ---
-The UI component notifies you of errors and warnings by passing messages to the browser console. Each message contains the incident's ID, a brief description, and a link to the [Errors and Warnings](/api-reference/20%20Data%20Visualization%20Widgets/Errors%20and%20Warnings '/Documentation/ApiReference/Data_Visualization_Widgets/Errors_and_Warnings/') section where further information about this incident can be found.
+The UI component notifies you of errors and warnings by passing messages to the browser console. Each message contains the incident's ID, a brief description, and a link to the [Errors and Warnings](/api-reference/20%20Data%20Visualization%20Widgets/Errors%20and%20Warnings '/Documentation/ApiReference/UI_Components/Errors_and_Warnings/') section where further information about this incident can be found.
 
 The **onIncidentOccurred** function allows you to handle errors and warnings the way you require. The object passed to it contains the **target** field. This field provides information about the occurred incident and contains the following properties:
 

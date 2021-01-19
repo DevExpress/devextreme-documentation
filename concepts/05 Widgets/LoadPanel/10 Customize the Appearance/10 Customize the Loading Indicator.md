@@ -1,4 +1,4 @@
-If you need to use a 3rd-party loading indicator inside the **LoadPanel**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#indicatorSrc') property.
+If you need to use a 3rd-party loading indicator inside the **LoadPanel**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
 
 ---
 ##### jQuery
@@ -145,7 +145,7 @@ If you need to use a 3rd-party loading indicator inside the **LoadPanel**, assig
 
 ---
 
-In case you do not need any loading indicator to be shown at all, assign **false** to the [showIndicator](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#showIndicator') property.
+In case you do not need any loading indicator to be shown at all, assign **false** to the [showIndicator](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#showIndicator') property.
 
 ---
 ##### jQuery
@@ -294,6 +294,6 @@ In case you do not need any loading indicator to be shown at all, assign **false
 - [LoadPanel - Color the Shading of the Background](/concepts/05%20Widgets/LoadPanel/10%20Customize%20the%20Appearance/40%20Color%20the%20Shading%20of%20the%20Background.md '/Documentation/Guide/Widgets/LoadPanel/Customize_the_Appearance/Color_the_Shading_of_the_Background/')
 - [LoadPanel - Resize and Relocate](/concepts/05%20Widgets/LoadPanel/15%20Resize%20and%20Relocate.md '/Documentation/Guide/Widgets/LoadPanel/Resize_and_Relocate/')
 - [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
-- [LoadPanel API Reference](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/')
+- [LoadPanel API Reference](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
 [tags]loadPanel, load panel, overlay, loading indicator, customize indicator, hide indicator

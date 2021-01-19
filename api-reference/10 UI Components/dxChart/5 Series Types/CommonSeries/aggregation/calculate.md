@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a custom aggregate function. Applies only if the [aggregation method](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation/method.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/aggregation/#method') is *"custom"*.
+Specifies a custom aggregate function. Applies only if the [aggregation method](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation/method.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/#method') is *"custom"*.
 
 ##### param(aggregationInfo): chartPointAggregationInfoObject
 An object with information about the aggregation interval and the data objects that fall within it.

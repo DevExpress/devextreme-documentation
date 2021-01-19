@@ -6,7 +6,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Customizes an individual [annotation](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/annotations '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/annotations/').
+Customizes an individual [annotation](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/annotations '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/annotations/').
 
 ##### param(annotation): dxPolarChartAnnotationConfig | any
 The annotation before customizations.
@@ -150,5 +150,5 @@ The following code shows how to use the **customizeAnnotation** function to appl
 ---
 
 #####See Also#####
-- [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/annotations/)
-- [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAnnotationSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonAnnotationSettings/')
+- [annotations[]](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/annotations/)
+- [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAnnotationSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonAnnotationSettings/')

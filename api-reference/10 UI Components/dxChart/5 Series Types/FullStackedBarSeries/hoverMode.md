@@ -40,4 +40,4 @@ When a user points to a series, it may react in one of the following ways depend
 } Note that although this enum accepts more values, only the listed ones can be applied to a full-stacked bar series.
 
 #####See Also#####
-- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/hoverStyle/') - specifies the appearance of series in the hover state.
+- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/hoverStyle/') - specifies the appearance of series in the hover state.

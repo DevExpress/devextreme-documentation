@@ -11,7 +11,7 @@ Specifies dates that users cannot select.
 Information about the checked date.
 
 ##### field(data.component): Object
-The UI component's [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Methods/#instance').
+The UI component's [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxCalendar/Methods/#instance').
 
 ##### field(data.date): Date
 The currently checked date.

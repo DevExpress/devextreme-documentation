@@ -1,4 +1,4 @@
-Node labels can overlap when the **Sankey** contains many nodes. You can specify the **label**.[overlappingBehavior](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/label/overlappingBehavior.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/label/#overlappingBehavior') property to resolve overlapping: you can hide overlapping labels, truncate them with ellipsis, or leave them overlapped:
+Node labels can overlap when the **Sankey** contains many nodes. You can specify the **label**.[overlappingBehavior](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/label/overlappingBehavior.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/label/#overlappingBehavior') property to resolve overlapping: you can hide overlapping labels, truncate them with ellipsis, or leave them overlapped:
 
 ---
 ##### jQuery
@@ -76,4 +76,4 @@ Node labels can overlap when the **Sankey** contains many nodes. You can specify
 ---
 
 #####See Also#####
-- [Sankey API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/')
+- [Sankey API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey '/Documentation/ApiReference/UI_Components/dxSankey/')

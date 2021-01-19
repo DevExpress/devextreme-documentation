@@ -19,23 +19,23 @@ The default editor UI component depends on the column configuration. The followi
     <tr>
         <td rowspan="4"><a href="{basewidgetpath}/Configuration/columns/#dataType">dataType</a>:</td>
         <td>"date" <br> "datetime"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/">DateBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/">DateBox</a></td>
     </tr>
     <tr>
         <td>"number"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/">NumberBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/">NumberBox</a></td>
     </tr>
     <tr>
         <td>"boolean"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxCheckBox/Configuration/">CheckBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/">CheckBox</a></td>
     </tr>
     <tr>
         <td>"string" <br> "object"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/">TextBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/">TextBox</a></td>
     </tr>
     <tr>
         <td colspan="2"><a href="{basewidgetpath}/Configuration/columns/lookup/">lookup</a> is defined</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/">SelectBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/">SelectBox</a></td>
     </tr>
 </table>
 

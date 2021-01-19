@@ -1,6 +1,6 @@
-[Simple items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/') may require a value or may allow a user to skip it. Both types of items can be marked with a symbol or text. Required items are those whose [isRequired](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired') property is **true**, others are considered optional.
+[Simple items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/') may require a value or may allow a user to skip it. Both types of items can be marked with a symbol or text. Required items are those whose [isRequired](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') property is **true**, others are considered optional.
 
-To specify the mark or text for required and optional items, use the [requiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/requiredMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#requiredMark') and [optionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/optionalMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#optionalMark') properties. Note that the "optional" mark will not be displayed until you set the [showOptionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showOptionalMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showOptionalMark') property to **true**. You can also hide the "required" mark using the [showRequiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showRequiredMark.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showRequiredMark') property.
+To specify the mark or text for required and optional items, use the [requiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/requiredMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#requiredMark') and [optionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/optionalMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#optionalMark') properties. Note that the "optional" mark will not be displayed until you set the [showOptionalMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showOptionalMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showOptionalMark') property to **true**. You can also hide the "required" mark using the [showRequiredMark](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showRequiredMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showRequiredMark') property.
 
 ---
 ##### jQuery
@@ -129,7 +129,7 @@ To specify the mark or text for required and optional items, use the [requiredMa
 
 ---
 
-Each label ends with a colon. To hide it, assign **false** to the [showColonAfterLabel](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showColonAfterLabel.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showColonAfterLabel') property. Note that you can show/hide a colon for an individual item using the **label**.[showColon](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/label/showColon.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#showColon') property.
+Each label ends with a colon. To hide it, assign **false** to the [showColonAfterLabel](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/showColonAfterLabel.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showColonAfterLabel') property. Note that you can show/hide a colon for an individual item using the **label**.[showColon](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/label/showColon.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#showColon') property.
 
 ---
 ##### jQuery
@@ -260,6 +260,6 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
 - [Form - Change Editor Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/Widgets/Form/Change_Options_at_Runtime/Editor_Options/')
 - [Form - Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/')
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
-- [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/')
+- [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
 [tags]form, required, optional, mark, colon

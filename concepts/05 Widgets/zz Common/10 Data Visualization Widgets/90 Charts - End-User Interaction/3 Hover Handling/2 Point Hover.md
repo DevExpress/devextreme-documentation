@@ -47,7 +47,7 @@ By default, the chart highlights only the point that was hovered over. But in so
 - **allArgumentPoints** &#8212; highlights all points with the same argument
 - **none** &#8212; does not highlight anything
 
-To handle the point hover event, assign a function to the [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointHoverChanged') property of the chart.
+To handle the point hover event, assign a function to the [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onPointHoverChanged') property of the chart.
 
 	<!--JavaScript-->var chartOptions = {
 		onPointHoverChanged: function (info) {
@@ -55,6 +55,6 @@ To handle the point hover event, assign a function to the [onPointHoverChanged](
 		}
 	};
 
-The **onPointHoverChanged** function accepts an object that contains information on the hover event. Among fields of this object, you can find the point whose hover state has been changed. An object that represents this point is described in the [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/') section. Use the [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isHovered().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#isHovered') method of this object to identify whether the point has been hovered over or hovered out.
+The **onPointHoverChanged** function accepts an object that contains information on the hover event. Among fields of this object, you can find the point whose hover state has been changed. An object that represents this point is described in the [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/') section. Use the [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#isHovered') method of this object to identify whether the point has been hovered over or hovered out.
 
 [note] Frequently, points that appear hovered over are not actually so, due to the *'allArgumentPoints'* or *'allSeriesPoints'* hover mode being set. For these points, the *pointHoverChanged* event does not occur and their *isHovered()* method returns **false**.

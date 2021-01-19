@@ -6,7 +6,7 @@ id: dxHtmlEditor.format(formatName, formatValue)
 Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/Widgets/HtmlEditor/Formats/').
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
-A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#formatName').
+A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName').
 
 ##### param(formatValue): any
 A format value.
@@ -60,4 +60,4 @@ If no content is selected, the format applies to the character typed next.
 ---
 
 #####See Also#####
-- [insertEmbed()](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/insertEmbed(index_type_config).md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#insertEmbedindex_type_config')
+- [insertEmbed()](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/insertEmbed(index_type_config).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#insertEmbedindex_type_config')

@@ -5,7 +5,7 @@ default: 5
 ---
 ---
 ##### shortDescription
-Adds a pixel-measured empty space between two side-by-side value axes. Applies if several value axes are [located on one side](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#position') of the chart.
+Adds a pixel-measured empty space between two side-by-side value axes. Applies if several value axes are [located on one side](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/position.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#position') of the chart.
 
 ---
 The order of axes in the **valueAxis** array plays a significant role when you specify this property. When you need to add an empty space between two side-by-side axes, set the **multipleAxesSpacing** property for the axis declared last in the **valueAxis** array. For example, to add space between the second and the third axes, set the **multipleAxesSpacing** property for the third axis.

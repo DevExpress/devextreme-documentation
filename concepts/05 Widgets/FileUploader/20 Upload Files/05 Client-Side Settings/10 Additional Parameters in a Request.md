@@ -1,4 +1,4 @@
-If the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadMode') is *"instantly"* or *"useButtons"*, you can add parameters to the URL by modifying the [uploadUrl](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadUrl.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadUrl') property. For example, the following code adds an employee ID and an office number:
+If the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode') is *"instantly"* or *"useButtons"*, you can add parameters to the URL by modifying the [uploadUrl](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/uploadUrl.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadUrl') property. For example, the following code adds an employee ID and an office number:
 
 ---
 #####jQuery

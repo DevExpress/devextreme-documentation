@@ -11,7 +11,7 @@ You can access the following **pointInfo** object fields:
     </tr>
     <tr>
         <td><code>valueText</code></td>
-        <td>The value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/#format">format</a> property is specified.</td>
+        <td>The value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#format">format</a> property is specified.</td>
     </tr>
     <tr>
         <td><code>argument</code></td>
@@ -19,7 +19,7 @@ You can access the following **pointInfo** object fields:
     </tr>
     <tr>
         <td><code>argumentText</code></td>
-        <td>The argument value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/#argumentFormat">argumentFormat</a> property is specified.</td>
+        <td>The argument value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#argumentFormat">argumentFormat</a> property is specified.</td>
     </tr>
     <tr>
         <td><code>percent</code></td>
@@ -31,7 +31,7 @@ You can access the following **pointInfo** object fields:
     </tr>
     <tr>
         <td><code>point</code></td>
-        <td>Information on the point being hovered over. To learn more about the field and methods of the point object, refer to the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/">Point</a> topic.</td>
+        <td>Information on the point being hovered over. To learn more about the field and methods of the point object, refer to the <a href="/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/">Point</a> topic.</td>
     </tr>
 </table>
 

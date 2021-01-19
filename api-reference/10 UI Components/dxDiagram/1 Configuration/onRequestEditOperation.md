@@ -34,7 +34,7 @@ The processed operation.
 Identifies the reason why the event is raised.
 
 ---
-If you want to disable a specific operation type for the entire diagram, you can also set an [Allow{Operation}](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/editing/) property to `false`.
+If you want to disable a specific operation type for the entire diagram, you can also set an [Allow{Operation}](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) property to `false`.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"

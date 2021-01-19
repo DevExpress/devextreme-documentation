@@ -31,4 +31,4 @@ Model data. Available only if Knockout is used.
 
 ---
 #####See Also#####
-- [grouped](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#grouped')
+- [grouped](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#grouped')

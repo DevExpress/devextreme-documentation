@@ -143,5 +143,5 @@ The values of the deleted dependency.
 ---
 
 #####See Also#####
-- [dependencyDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#dependencyDeleted)
+- [dependencyDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Events/#dependencyDeleted)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

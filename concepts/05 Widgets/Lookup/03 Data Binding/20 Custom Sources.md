@@ -40,7 +40,7 @@ If the **group** setting is absent, the object structure is different:
         data: [ ... ] // result data objects
     }
 
-If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#value') beforehand, the **CustomStore** should implement the [byKey](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/byKey.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey') operation as well. Below is a generalized **CustomStore** configuration for the **Lookup** UI component.
+If you specify the **Lookup**'s [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') beforehand, the **CustomStore** should implement the [byKey](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/byKey.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey') operation as well. Below is a generalized **CustomStore** configuration for the **Lookup** UI component.
 
 ---
 ##### jQuery

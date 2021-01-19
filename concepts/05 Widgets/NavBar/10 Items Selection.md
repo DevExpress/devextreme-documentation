@@ -1,4 +1,4 @@
-An end user can select **NavBar** items in two different modes: *'single'* (by default) or *'multiple'*.  You can use the [selectionMode](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Widgets/dxNavBar/Configuration/#selectionMode') property to change the mode. 
+An end user can select **NavBar** items in two different modes: *'single'* (by default) or *'multiple'*.  You can use the [selectionMode](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectionMode') property to change the mode. 
 
 ---
 ##### jQuery
@@ -36,7 +36,7 @@ An end user can select **NavBar** items in two different modes: *'single'* (by d
 
 ---
 
-If you need an item to be preselected, pass its index in the data source array to the [selectedIndex](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Widgets/dxNavBar/Configuration/#selectedIndex') property.
+If you need an item to be preselected, pass its index in the data source array to the [selectedIndex](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectedIndex') property.
 
 ---
 ##### jQuery
@@ -80,7 +80,7 @@ If you need an item to be preselected, pass its index in the data source array t
 
 ---
 
-As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Widgets/dxNavBar/Configuration/#selectedItem') (for *"single"* **selectionMode**) or [selectedItems](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Widgets/dxNavBar/Configuration/#selectedItems') (for *"multiple"* **selectionMode**) properties. This approach is suitable if the **NavBar** items are specified using an array rather than the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') markup component.
+As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectedItem') (for *"single"* **selectionMode**) or [selectedItems](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectedItems') (for *"multiple"* **selectionMode**) properties. This approach is suitable if the **NavBar** items are specified using an array rather than the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') markup component.
 
 ---
 ##### jQuery
@@ -142,6 +142,6 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
 #####See Also#####
 - [NavBar - Customize Item Appearance](/concepts/05%20Widgets/NavBar/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/NavBar/Customize_Item_Appearance')
 - [NavBar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Navbar/Overview)
-- [NavBar API Reference](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Widgets/dxNavBar/')
+- [NavBar API Reference](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Components/dxNavBar/')
 
 [tags]nav bar, navBar, navigation bar, select, selection, item, items, index

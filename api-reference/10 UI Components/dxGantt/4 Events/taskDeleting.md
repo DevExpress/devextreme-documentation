@@ -7,4 +7,4 @@ type: eventType
 Raised before a task is deleted.
 
 ---
-Main article: [onTaskDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskDeleting)
+Main article: [onTaskDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleting)

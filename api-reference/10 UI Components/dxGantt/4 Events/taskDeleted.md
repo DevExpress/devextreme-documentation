@@ -7,4 +7,4 @@ type: eventType
 Raised when a task is deleted.
 
 ---
-Main article: [onTaskDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskDeleted)
+Main article: [onTaskDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleted)

@@ -8,7 +8,7 @@ default: 'content'
 Specifies custom content for the drop-down field.
 
 ##### param(data): Array<String, Number, Object> | DataSource
-The array passed to the [items](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/items/') property or a **DataSource** instance created using the [dataSource](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#dataSource') configuration.
+The array passed to the [items](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/') property or a **DataSource** instance created using the [dataSource](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#dataSource') configuration.
 
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "drop-down field" }
@@ -19,9 +19,9 @@ A template name or container.
 ---
 The drop-down field contains the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI) UI component. Implement this template to replace the UI component with custom content. The following restrictions apply when the template is specified:
 
-- [itemTemplate](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#itemTemplate') is ignored;
-- [onItemClick](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#onItemClick') and [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#onSelectionChanged') are never executed;
-- [selectedItemKey](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItemKey.md '/Documentation/ApiReference/UI_Widgets/dxDropDownButton/Configuration/#selectedItemKey') should be updated manually.
+- [itemTemplate](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#itemTemplate') is ignored;
+- [onItemClick](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onItemClick') and [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onSelectionChanged') are never executed;
+- [selectedItemKey](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItemKey.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItemKey') should be updated manually.
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')

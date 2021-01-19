@@ -13,15 +13,15 @@ The function's parameter has the following fields:
     </tr>
     <tr>
         <td><code>originalValue</code></td>
-        <td>The primary bullet value as it is assigned to the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#value">value</a> property.</td>
+        <td>The primary bullet value as it is assigned to the <a href="/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#value">value</a> property.</td>
     </tr>
     <tr>
         <td><code>value</code></td>
-        <td>The primary bullet value with applied formatting if the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/tooltip/#format">format</a> property is specified.</td>
+        <td>The primary bullet value with applied formatting if the <a href="/Documentation/ApiReference/UI_Components/dxBullet/Configuration/tooltip/#format">format</a> property is specified.</td>
     </tr>
     <tr>
         <td><code>originalTarget</code></td>
-        <td>The target bullet value as it is assigned to the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxBullet/Configuration/#target">target</a> property.</td>
+        <td>The target bullet value as it is assigned to the <a href="/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#target">target</a> property.</td>
     </tr>
     <tr>
         <td><code>target</code></td>

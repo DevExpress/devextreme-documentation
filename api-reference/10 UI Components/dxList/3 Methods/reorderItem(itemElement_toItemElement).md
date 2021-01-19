@@ -15,7 +15,7 @@ The DOM node of the item to be reordered.
 The DOM node of the item after which the reordered item should be placed.
 
 ---
-[note]This method reorders items in the [items](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/') array, but it does not affect the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#dataSource').
+[note]This method reorders items in the [items](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') array, but it does not affect the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource').
 
 #####See Also#####
 #include common-link-callmethods

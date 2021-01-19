@@ -4,7 +4,7 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-Specifies a custom aggregate function. This function is called for summary items whose [summaryType](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#summaryType') is *"custom"*.
+Specifies a custom aggregate function. This function is called for summary items whose [summaryType](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType') is *"custom"*.
 
 ##### param(options): Object
 Summary information.
@@ -16,7 +16,7 @@ The UI component's instance.
 A zero-based group level. Available only when calculating group summary items.
 
 ##### field(options.name): String
-The summary item's [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#name').
+The summary item's [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name').
 
 ##### field(options.summaryProcess): String
 Indicates the stage of the summary item calculation; equals *"start"*, *"calculate"* or *"finalize"*.
@@ -25,10 +25,10 @@ Indicates the stage of the summary item calculation; equals *"start"*, *"calcula
 The resulting summary item's value.
 
 ##### field(options.value): any
-If the custom summary item is calculated by a [column](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/column.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#column'), this field contains the value from a cell of this column. Otherwise, it contains a whole object from the data source.
+If the custom summary item is calculated by a [column](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/column.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column'), this field contains the value from a cell of this column. Otherwise, it contains a whole object from the data source.
 
 ---
-This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify them in the function.
+This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify them in the function.
 
 A summary value calculation is conducted in three stages: *start* - the **totalValue** is initialized; *calculate* - the **totalValue** is modified; *finalize* - the **totalValue** is adjusted. To identify the current stage, check the value of the **summaryProcess** field that belongs to the function's parameter:
 

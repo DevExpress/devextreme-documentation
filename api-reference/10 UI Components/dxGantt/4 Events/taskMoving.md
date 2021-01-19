@@ -7,4 +7,4 @@ type: eventType
 Raised before a task is moved.
 
 ---
-Main article: [onTaskMoving](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskMoving)
+Main article: [onTaskMoving](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskMoving)

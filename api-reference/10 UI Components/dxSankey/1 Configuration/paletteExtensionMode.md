@@ -6,7 +6,7 @@ default: 'blend'
 ---
 ---
 ##### shortDescription
-Specifies how to extend the [palette](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/palette.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#palette') when it contains less colors than the number of sankey nodes.
+Specifies how to extend the [palette](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/palette.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#palette') when it contains less colors than the number of sankey nodes.
 
 ---
 #include dataviz-ref-paletteextensionmode

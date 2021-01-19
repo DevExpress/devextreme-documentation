@@ -7,4 +7,4 @@ type: eventType
 Raised before a resource is inserted.
 
 ---
-Main article: [onResourceInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceInserting)
+Main article: [onResourceInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceInserting)

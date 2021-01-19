@@ -1,12 +1,12 @@
 The **Diagram** UI component allows you to customize its UI tools with the following properties.
 
-- [contextMenu](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextMenu/')
-- [contextToolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextToolbox '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/contextToolbox/')
-- [historyToolbar](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/historyToolbar '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/historyToolbar/')
-- [mainToolbar](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/mainToolbar '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/mainToolbar/')
-- [propertiesPanel](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/propertiesPanel '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/propertiesPanel/')
-- [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/toolbox '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/toolbox/')
-- [viewToolbar](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/viewToolbar '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/viewToolbar/')
+- [contextMenu](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/contextMenu/')
+- [contextToolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/contextToolbox '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/contextToolbox/')
+- [historyToolbar](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/historyToolbar '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/historyToolbar/')
+- [mainToolbar](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/mainToolbar '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/')
+- [propertiesPanel](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/propertiesPanel '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/propertiesPanel/')
+- [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/toolbox '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/')
+- [viewToolbar](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/viewToolbar '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/viewToolbar/')
 
 ![Diagram control data toolbox](/images/diagram/ui-customization.png)
 

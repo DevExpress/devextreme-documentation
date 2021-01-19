@@ -2,7 +2,7 @@ A tooltip is a small pop-up rectangle displaying information about a series poin
 
 ![DevExtreme HTML5 JavaScript PieChart Tooltip](/images/PieChart/visual_elements/tooltip.png)
 
-All properties configuring tooltips are collected in the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/') object. For example, to enable the tooltips, assign **true** to the **enabled** property of this object.
+All properties configuring tooltips are collected in the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/') object. For example, to enable the tooltips, assign **true** to the **enabled** property of this object.
 
 ---
 ##### jQuery
@@ -80,7 +80,7 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
 
 ---
 
-Properties declared in the **tooltip** object apply to all tooltips in the **PieChart**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip that you want to customize.
+Properties declared in the **tooltip** object apply to all tooltips in the **PieChart**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip that you want to customize.
 
 ---
 ##### jQuery

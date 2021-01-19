@@ -9,5 +9,5 @@ Specifies which data source field provides values for funnel items. The value de
 
 ---
 #####See Also#####
-- [argumentField](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/argumentField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#argumentField')
-- [colorField](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/colorField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#colorField')
+- [argumentField](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/argumentField.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#argumentField')
+- [colorField](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/colorField.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#colorField')

@@ -1,4 +1,4 @@
-For a minor customization of **Menu** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/items/') in item data objects. For example, the following code generates two root items with two drop-down menu items each. The root items are supplied with [icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
+For a minor customization of **Menu** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/') in item data objects. For example, the following code generates two root items with two drop-down menu items each. The root items are supplied with [icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
 
 ---
 
@@ -136,7 +136,7 @@ For a minor customization of **Menu** items, you can define [specific fields](/a
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 
@@ -298,7 +298,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
 
 ---
 
-You can also customize an individual menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/items/#template') field of the item's data object.
+You can also customize an individual menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#template') field of the item's data object.
 
 ---
 
@@ -334,6 +334,6 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 
 #####See Also#####
 - [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)
-- [Menu API Reference](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Widgets/dxMenu/')
+- [Menu API Reference](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
 [tags]menu, item appearance, customize, templates

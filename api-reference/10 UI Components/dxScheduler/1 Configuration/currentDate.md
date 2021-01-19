@@ -14,4 +14,4 @@ Users can change the current date in the [Date Navigator](/Documentation/Guide/W
 
 ![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
 
-To subscribe to changes of the current date, use the [onOptionChanged](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onOptionChanged) handler.
+To subscribe to changes of the current date, use the [onOptionChanged](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onOptionChanged) handler.

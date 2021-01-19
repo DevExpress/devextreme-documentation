@@ -1,4 +1,4 @@
-Declare two-way binding between the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#dataSource') property and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. For this, configure the **bindingOptions** object of the **PieChart** as follows.
+Declare two-way binding between the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#dataSource') property and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. For this, configure the **bindingOptions** object of the **PieChart** as follows.
 
     <!--HTML--><div ng-controller="DemoController">
         <div dx-pie-chart="{

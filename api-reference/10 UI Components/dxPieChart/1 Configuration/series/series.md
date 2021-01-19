@@ -15,4 +15,4 @@ A series represents a group of related data points. To configure a series, assig
 
 The definitive characteristic of a series is its type. The **PieChart** UI component provides two series types - *Pie* and *Doughnut*.
 
-When you have a multi-series pie, settings that are common for all series can be specified all together. Use the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonSeriesSettings/') object to do this.
+When you have a multi-series pie, settings that are common for all series can be specified all together. Use the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/') object to do this.

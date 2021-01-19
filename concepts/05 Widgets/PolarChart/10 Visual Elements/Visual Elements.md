@@ -1,4 +1,4 @@
-Topics in this section describe [PolarChart](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/') UI component elements. Each topic gives an overview of the element's purpose, and details how to enable and tune the chart element to your needs.
+Topics in this section describe [PolarChart](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart '/Documentation/ApiReference/UI_Components/dxPolarChart/') UI component elements. Each topic gives an overview of the element's purpose, and details how to enable and tune the chart element to your needs.
 
 The image below is the chart element map, which can be helpful to you as you begin learning about **PolarChart** capabilities. **Hover** over the image to learn how different chart elements are called. **Click an element** to navigate to a topic in which you will find more details.
 

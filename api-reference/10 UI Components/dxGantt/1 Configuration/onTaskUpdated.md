@@ -148,5 +148,5 @@ The task values after update.
 ---
 
 #####See Also#####
-- [taskUpdated](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskUpdated)
+- [taskUpdated](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskUpdated)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

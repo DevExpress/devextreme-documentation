@@ -2,7 +2,7 @@ Exposes the **Button** UI component.
 
 Exports:
 
-- *default* - The [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') UI component
+- *default* - The [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component
 
         require("ui/button");
         // ===== or =====

@@ -7,7 +7,7 @@ type: eventType
 Raised after an appointment is added to the data source.
 
 ---
-Main article: [onAppointmentAdded](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentAdded.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#onAppointmentAdded')
+Main article: [onAppointmentAdded](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentAdded.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentAdded')
 
 #####See Also#####
 #include common-link-handleevents

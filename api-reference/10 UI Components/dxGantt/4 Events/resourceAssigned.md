@@ -7,4 +7,4 @@ type: eventType
 Raised when a resource is assigned to a task.
 
 ---
-Main article: [onResourceAssigned](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceAssigned)
+Main article: [onResourceAssigned](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceAssigned)

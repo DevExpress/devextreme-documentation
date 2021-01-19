@@ -1,4 +1,4 @@
-This guide gives a detailed overview of [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/') visual elements. Each topic in this guide contains a brief description of an element and its main features, which can be configured.
+This guide gives a detailed overview of [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/') visual elements. Each topic in this guide contains a brief description of an element and its main features, which can be configured.
 
 Below is a pivot grid element map. It may be helpful as you begin learning the capabilities of the **PivotGrid** UI component. **Hover** over an element on the map to discover the name of this element. A **click** on an element navigates you to a topic devoted to this element.
 

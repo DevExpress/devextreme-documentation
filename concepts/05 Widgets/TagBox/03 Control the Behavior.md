@@ -1,4 +1,4 @@
-By default, the **TagBox** closes the drop-down list _immediately_ after a user selects an item from it. Therefore, the user has to open the list again if he/she wants to select another item. To enable the user to select multiple items without reopening the list, set the [applyValueMode](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#applyValueMode') property to *"useButtons"*. In this case, the list is not closed until the user clicks the **OK** button. To make multiple selection even easier for the user, add selection controls to the **TagBox** using the [showSelectionControls](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#showSelectionControls') property.
+By default, the **TagBox** closes the drop-down list _immediately_ after a user selects an item from it. Therefore, the user has to open the list again if he/she wants to select another item. To enable the user to select multiple items without reopening the list, set the [applyValueMode](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#applyValueMode') property to *"useButtons"*. In this case, the list is not closed until the user clicks the **OK** button. To make multiple selection even easier for the user, add selection controls to the **TagBox** using the [showSelectionControls](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showSelectionControls') property.
 
 ---
 ##### jQuery
@@ -109,7 +109,7 @@ By default, the **TagBox** closes the drop-down list _immediately_ after a user 
 
 ---
 
-When selected items overflow the input field, they are arranged in several lines. To disable this behavior, set the [multiline](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/multiline.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#multiline') property to **false**.
+When selected items overflow the input field, they are arranged in several lines. To disable this behavior, set the [multiline](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/multiline.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#multiline') property to **false**.
 
 ---
 ##### jQuery
@@ -216,7 +216,7 @@ When selected items overflow the input field, they are arranged in several lines
 
 ---
 
-By default, selected items stay in the drop-down list. If they should be hidden after being selected, set the [hideSelectedItems](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/hideSelectedItems.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#hideSelectedItems') property to **true**.
+By default, selected items stay in the drop-down list. If they should be hidden after being selected, set the [hideSelectedItems](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/hideSelectedItems.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#hideSelectedItems') property to **true**.
 
 ---
 ##### jQuery
@@ -323,7 +323,7 @@ By default, selected items stay in the drop-down list. If they should be hidden 
 
 ---
 
-The **TagBox** allows a user to clear selection in one click on the **Clear** button. To show this button, assign **true** to the [showClearButton](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/showClearButton.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#showClearButton') property.
+The **TagBox** allows a user to clear selection in one click on the **Clear** button. To show this button, assign **true** to the [showClearButton](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/showClearButton.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showClearButton') property.
 
 ---
 ##### jQuery
@@ -434,7 +434,7 @@ The **TagBox** allows a user to clear selection in one click on the **Clear** bu
 - [TagBox - Handle the Value Change Event](/concepts/05%20Widgets/TagBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/TagBox/Handle_the_Value_Change_Event/')
 - [TagBox - Create a User-Defined Item](/concepts/05%20Widgets/TagBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/Widgets/TagBox/Create_a_User-Defined_Item/')
 - [TagBox - Configure Search Parameters](/concepts/05%20Widgets/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/Widgets/TagBox/Configure_Search_Parameters/')
-- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Widgets/dxTagBox/')
+- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
 
 [tags]tagBox, tag box, editor, apply value mode, select all, selection controls, hide selected items, clear selection, clear button

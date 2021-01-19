@@ -11,7 +11,7 @@ Binds the UI component to data.
 #include common-dataSource-description with {
     widget_works_with: "The **DataGrid** works with collections of objects.",
 
-    array_key_note: " and specify the [keyExpr](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#keyExpr')",
+    array_key_note: " and specify the [keyExpr](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr')",
 
     array_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing)",
 
@@ -25,8 +25,8 @@ Binds the UI component to data.
 
     custom_store_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomDataSource)",
 
-    remote_operations_note: "- If the **DataGrid** UI component gets data from a server, configure [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/remoteOperations/') to notify the UI component about data operations the server performs.",
+    remote_operations_note: "- If the **DataGrid** UI component gets data from a server, configure [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') to notify the UI component about data operations the server performs.",
 
-    calculated_columns_note: "- Features like [export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/') and [selection](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/') work incorrectly with [mapped data objects](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map'). Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#calculateCellValue') instead of mapping."
+    calculated_columns_note: "- Features like [export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/') and [selection](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/') work incorrectly with [mapped data objects](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map'). Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') instead of mapping."
 
 }

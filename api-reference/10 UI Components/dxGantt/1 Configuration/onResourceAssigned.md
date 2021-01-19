@@ -148,5 +148,5 @@ The values of the processed resource and task.
 ---
 
 #####See Also#####
-- [resourceAssigned](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceAssigned)
+- [resourceAssigned](/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceAssigned)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

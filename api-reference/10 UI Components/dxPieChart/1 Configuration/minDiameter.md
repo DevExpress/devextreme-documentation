@@ -12,8 +12,8 @@ This property specifies the minimum ratio between the pie's diameter and the UI 
 
 *0.7 * min(300,500) = 0.7 * 300 = 210 pixels*
 
-[note]This property is ignored if the [diameter](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/diameter.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#diameter') property is set.
+[note]This property is ignored if the [diameter](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/diameter.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#diameter') property is set.
 
 #####See Also#####
-- [size](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/size '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/size/')
-- [sizeGroup](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#sizeGroup')
+- [size](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/size/')
+- [sizeGroup](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#sizeGroup')

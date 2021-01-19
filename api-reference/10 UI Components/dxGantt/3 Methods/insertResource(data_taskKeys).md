@@ -31,5 +31,5 @@ An array of task keys.
 ---
 
 #####See Also#####
-- [resourceInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceInserting)
+- [resourceInserting](/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceInserting)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

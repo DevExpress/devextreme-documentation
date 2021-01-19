@@ -10,19 +10,19 @@ A function that validates the target value.
 An object that defines validation parameters.
 
 ##### field(options.column): Object
-The column to which the cell being validated belongs. Exists only when you validate a built-in editor in the [DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Widgets/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Widgets/dxTreeList '/Documentation/ApiReference/UI_Widgets/dxTreeList').
+The column to which the cell being validated belongs. Exists only when you validate a built-in editor in the [DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Widgets/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList').
 
 ##### field(options.data): Object
 The current row's data. Exists only when you validate a **DataGrid** or **TreeList** cell's value.
 
 ##### field(options.formItem): Object
-The form item being validated. Exists only when you validate a built-in editor in the [Form](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/') UI component.
+The form item being validated. Exists only when you validate a built-in editor in the [Form](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') UI component.
 
 ##### field(options.rule): Object
 The rule being checked.
 
 ##### field(options.validator): Object
-The [Validator](/api-reference/10%20UI%20Widgets/dxValidator '/Documentation/ApiReference/UI_Widgets/dxValidator') object that initiated the validation.
+The [Validator](/api-reference/10%20UI%20Widgets/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator') object that initiated the validation.
 
 ##### field(options.value): String | Number
 The validated value.

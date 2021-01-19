@@ -6,7 +6,7 @@ EventForAction: dxLookup.valueChanged
 ---
 ---
 ##### shortDescription
-A function that is executed after the UI component's [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxLookup/Configuration/#value') is changed.
+A function that is executed after the UI component's [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') is changed.
 
 ##### param(e): Object
 Information about the event.

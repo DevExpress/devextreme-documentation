@@ -1,10 +1,10 @@
-In form edit mode, row cells become editable form fields. Form fields are sorted like columns in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/') array.
+In form edit mode, row cells become editable form fields. Form fields are sorted like columns in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') array.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Editing Form Mode](/images/treelist/editing/form_mode.png)
 
-Configure the form using the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#form') object. The **TreeList** uses the DevExtreme [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') UI component, so you can specify [any Form properties](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/') in this object except those listed in its description.
+Configure the form using the **editing**.[form](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#form') object. The **TreeList** uses the DevExtreme [Form](/concepts/05%20Widgets/Form/00%20Overview.md '/Documentation/Guide/Widgets/Form/Overview/') UI component, so you can specify [any Form properties](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') in this object except those listed in its description.
 
-For example, you can specify the [items](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items') array to reorder editable fields (or "simple items", as they are called in the **Form** UI component), or organize them in groups and tabs.
+For example, you can specify the [items](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') array to reorder editable fields (or "simple items", as they are called in the **Form** UI component), or organize them in groups and tabs.
 
 In the following code, the items with the specified **dataField** are simple items. Identical **dataFields** connect a simple item with a column:
 
@@ -133,7 +133,7 @@ In the following code, the items with the specified **dataField** are simple ite
 #####See Also#####
 - [Organize Simple Items](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items '/Documentation/Guide/Widgets/Form/Organize_Simple_Items')
 
-You can use a column's [formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#formItem') object to customize an individual simple item. See an example in its description. 
+You can use a column's [formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#formItem') object to customize an individual simple item. See an example in its description. 
 
 If you need to validate form values, specify validation rules as described in the [Data Validation](/concepts/05%20Widgets/TreeList/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/Widgets/TreeList/Editing/#Data_Validation') article.
 

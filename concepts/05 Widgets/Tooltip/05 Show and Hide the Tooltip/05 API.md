@@ -1,6 +1,6 @@
 [note] In this article, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/') UI component is used to demonstrate how to show and hide the **Tooltip**. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
-To show or hide the **Tooltip** programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the **Tooltip**, respectively.
+To show or hide the **Tooltip** programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxTooltip/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxTooltip/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxTooltip/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the **Tooltip**, respectively.
 
 ---
 ##### jQuery 
@@ -79,7 +79,7 @@ To show or hide the **Tooltip** programmatically, call the [show()](/api-referen
 
 ---
 
-The **show()** method called without arguments shows the **Tooltip** for the [target specified beforehand](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#target'). If you need to change the target once, call the [show(target)](/api-reference/10%20UI%20Widgets/dxPopover/3%20Methods/show(target).md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Methods/#showtarget') method.
+The **show()** method called without arguments shows the **Tooltip** for the [target specified beforehand](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#target'). If you need to change the target once, call the [show(target)](/api-reference/10%20UI%20Widgets/dxPopover/3%20Methods/show(target).md '/Documentation/ApiReference/UI_Components/dxTooltip/Methods/#showtarget') method.
 
 ---
 ##### jQuery 
@@ -108,7 +108,7 @@ The **show()** method called without arguments shows the **Tooltip** for the [ta
 
 ---
 
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Widgets/dxTooltip/Configuration/#visible') property of the **Tooltip** UI component to a component property. After that, change this component property, and the **Tooltip** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#visible') property of the **Tooltip** UI component to a component property. After that, change this component property, and the **Tooltip** will appear or disappear.
 
 ---
 ##### Angular

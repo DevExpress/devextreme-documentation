@@ -24,5 +24,5 @@ The task data.
 ---
 
 #####See Also#####
-- [taskUpdating](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskUpdating)
+- [taskUpdating](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskUpdating)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

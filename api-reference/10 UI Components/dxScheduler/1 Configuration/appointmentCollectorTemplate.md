@@ -131,4 +131,4 @@ A template name or container.
 ---
 
 #####See Also#####
-- **views[]**.[appointmentCollectorTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/appointmentCollectorTemplate.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/views/#appointmentCollectorTemplate')
+- **views[]**.[appointmentCollectorTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/appointmentCollectorTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#appointmentCollectorTemplate')

@@ -4,7 +4,7 @@ The **TagBox** UI component is an editor that allows an end user to select multi
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview/"
 }
 
-The following code adds the **TagBox** to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#placeholder') to be displayed when the **TagBox** is empty.
+The following code adds the **TagBox** to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#placeholder') to be displayed when the **TagBox** is empty.
 
 ---
 ##### jQuery
@@ -116,9 +116,9 @@ The following code adds the **TagBox** to your page. The simplest configuration 
 
 If your data is an array of objects, specify: 
 
-- [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#valueExpr')     
-    The data field whose value will be written into the [value](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#value') property.  
-- [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#displayExpr')     
+- [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#valueExpr')     
+    The data field whose value will be written into the [value](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#value') property.  
+- [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#displayExpr')     
     The data field whose value will be displayed in the drop-down list and in the input field of the UI component.
 
 <!---->
@@ -238,6 +238,6 @@ If your data is an array of objects, specify:
 - [TagBox - Configure Search Parameters](/concepts/05%20Widgets/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/Widgets/TagBox/Configure_Search_Parameters/')
 - [TagBox - Create a User-Defined Item](/concepts/05%20Widgets/TagBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/Widgets/TagBox/Create_a_User-Defined_Item/')
 - [TagBox - Keyboard Support](/concepts/05%20Widgets/TagBox/25%20Keyboard%20Support.md '/Documentation/Guide/Widgets/TagBox/Keyboard_Support/')
-- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Widgets/dxTagBox/')
+- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 
 [tags]dxtagbox, tagBox, tag box, editor, overview, data source, value, display expression

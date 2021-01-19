@@ -1,4 +1,4 @@
-To allow a user to add, delete and update data in the **TreeList**, assign **true** to the corresponding field of the [editing](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/editing '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/') object. 
+To allow a user to add, delete and update data in the **TreeList**, assign **true** to the corresponding field of the [editing](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/') object. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/"

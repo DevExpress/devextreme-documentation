@@ -41,9 +41,9 @@ Objects that have a hierarchical structure are visualized by groups of tiles. Fo
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HierarchicalDataStructure/"
 }
 
-For both structures, set the [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#valueField') and [labelField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/labelField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#labelField'); for the hierarchical structure, also set the [childrenField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/childrenField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#childrenField').
+For both structures, set the [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/valueField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#valueField') and [labelField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/labelField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#labelField'); for the hierarchical structure, also set the [childrenField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/childrenField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#childrenField').
 
-A plain data array can imply a hierarchical structure. An example of such array is given below. In this case, set the [idField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/idField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#idField') and [parentField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/parentField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#parentField') in addition to the **valueField** and **labelField**.
+A plain data array can imply a hierarchical structure. An example of such array is given below. In this case, set the [idField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/idField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#idField') and [parentField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/parentField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#parentField') in addition to the **valueField** and **labelField**.
 
     let data = [
         { id: 1, name: "Fruits"},
@@ -208,7 +208,7 @@ Use one of the following extensions to enable the server to process data accordi
 - **Any other data source**     
 Implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/').
 
-Regardless of the data source on the input, the **TreeMap** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Methods/#getDataSource') method.
+Regardless of the data source on the input, the **TreeMap** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Methods/#getDataSource') method.
 
 [note]
 

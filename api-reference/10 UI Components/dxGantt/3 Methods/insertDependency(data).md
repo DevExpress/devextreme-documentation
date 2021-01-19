@@ -21,5 +21,5 @@ The dependency data.
 ---
 
 #####See Also#####
-- [dependencyInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#dependencyInserting)
+- [dependencyInserting](/Documentation/ApiReference/UI_Components/dxGantt/Events/#dependencyInserting)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

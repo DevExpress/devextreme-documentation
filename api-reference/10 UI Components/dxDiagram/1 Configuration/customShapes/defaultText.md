@@ -8,4 +8,4 @@ Specifies the initial text of the shape.
 
 ---
 #####See Also#####
-[allowEditText](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/allowEditText.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#allowEditText')
+[allowEditText](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/allowEditText.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditText')

@@ -16,7 +16,7 @@ Specifies whether a new appointment is created when editing is finished.
 
 ---
 
-If invoked without parameters, the method shows a new appointment window. Its start and end dates are prepopulated in accordance with the [currentDate](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#currentDate) value. The default appointment duration is 30 minutes.
+If invoked without parameters, the method shows a new appointment window. Its start and end dates are prepopulated in accordance with the [currentDate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate) value. The default appointment duration is 30 minutes.
 
 #####See Also#####
 #include common-link-callmethods

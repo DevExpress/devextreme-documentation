@@ -1,4 +1,4 @@
-For a minor customization of **Accordion** panels, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxAccordion/Configuration/items/') in panel data objects. For example, the following code generates three panels, the first and third are not customized, the second is disabled.
+For a minor customization of **Accordion** panels, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/items/') in panel data objects. For example, the following code generates three panels, the first and third are not customized, the second is disabled.
    
 ---
 
@@ -128,7 +128,7 @@ For a minor customization of **Accordion** panels, you can define [specific fiel
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Widgets/dxAccordion/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Widgets/dxAccordion/Configuration/#itemTitleTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#itemTitleTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component
 
 ---
 
@@ -312,7 +312,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview/"
 }
 
-You can also customize individual items. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxItem/') component. When using jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Widgets/dxAccordion/Configuration/items/#template') property or assign a customization function straight to this property.
+You can also customize individual items. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/items/#template') property or assign a customization function straight to this property.
 
 ---
 
@@ -427,6 +427,6 @@ You can also customize individual items. In Angular, Vue, and React, declare the
 In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [Accordion API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Widgets/dxAccordion/')
+- [Accordion API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
 
 [tags]accordion, item appearance, customize, templates

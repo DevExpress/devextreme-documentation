@@ -20,7 +20,7 @@ The UI element where the **customizeText** function was called: *"row"*, *"filte
 The cell's raw value.
 
 ##### field(cellInfo.valueText): String
-The [fomatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format') value converted to a string.
+The [fomatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#format') value converted to a string.
 
 ##### return: String
 The text the cell should display.
@@ -163,7 +163,7 @@ The text the cell should display.
 
 ---
 
-[note] The specified text is not used to sort, filter, and group data or calculate summaries. If it should be, specify the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/#calculateCellValue') function instead.
+[note] The specified text is not used to sort, filter, and group data or calculate summaries. If it should be, specify the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#calculateCellValue') function instead.
 
 The **customizeText** function can be called to highlight the matching text correctly when the data displayed in the column matches the search condition.
 

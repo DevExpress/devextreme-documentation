@@ -35,9 +35,11 @@
   <MenuRule SourcePattern="Howto:^40 Angular Components/(.*?)" Destination="bb10 Angular/ab$1" />
   <MenuRule SourcePattern="Howto:^40 Angular Components" Destination="" />
   
+  <MenuRule SourcePattern="Howto:^50 React Components/(02 Create a DevExtreme Application|05 Add DevExtreme to a React Application)" Destination="bb12 React/ab02 Getting Started/$1" />
   <MenuRule SourcePattern="Howto:^50 React Components/(.*?)" Destination="bb12 React/ab$1" />
   <MenuRule SourcePattern="Howto:^50 React Components" Destination="" />
 
+  <MenuRule SourcePattern="Howto:^55 Vue Components/(02 Create a DevExtreme Application|05 Add DevExtreme to a Vue Application)" Destination="bb14 Vue/ab02 Getting Started/$1" />
   <MenuRule SourcePattern="Howto:^55 Vue Components/(.*?)" Destination="bb14 Vue/ab$1" />
   <MenuRule SourcePattern="Howto:^55 Vue Components" Destination="" />
 

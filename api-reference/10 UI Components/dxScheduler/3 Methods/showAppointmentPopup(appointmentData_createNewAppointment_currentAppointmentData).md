@@ -19,4 +19,4 @@ Specifies whether a new appointment is created when editing is finished.
 #####See Also#####
 #include common-link-callmethods
 
-<!-- import * from 'api-reference\10 UI Widgets\dxScheduler\1 Configuration\appointmentTemplate.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxScheduler\1 Configuration\appointmentTemplate.md' -->

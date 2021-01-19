@@ -54,6 +54,6 @@ The visible rows' properties.
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxDataGrid\1 Configuration\onFocusedCellChanging.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onFocusedCellChanging.md' -->
     
 ---

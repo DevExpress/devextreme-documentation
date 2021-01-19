@@ -25,6 +25,7 @@ A user can interact with the UI component using the following keys:
             <li>Switches a cell to the editing state.<sup>1</sup></li>
             <li>Moves focus to the next cell.<sup>2</sup></li>
             <li>Saves changes made in a cell or row and switches it back to its normal state.</li>
+            <li>Executes an action on a focused element.</li>
         </ul>
         </td>        
     </tr>
@@ -46,7 +47,7 @@ A user can interact with the UI component using the following keys:
     </tr>
     <tr>
         <td>Ctrl + &larr; &rarr; &uarr; &darr;</td>
-        <td>Navigates between the headers, filter panel, filter row, data area, and pager.</td>
+        <td>Navigates between column header, column filter, data area, filter builder, and pager.</td>
     </tr>
     <tr>
         <td>Ctrl + Space or Ctrl + Click</td>

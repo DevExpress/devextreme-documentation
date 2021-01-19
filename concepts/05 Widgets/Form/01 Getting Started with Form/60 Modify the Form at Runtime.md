@@ -1,4 +1,6 @@
-You can change any form, editor, or item properties at runtime. The following code dynamically makes the entire Form read-only. In **jQuery**, use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#optionoptionName_optionValue) method to update the [readOnly](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#readOnly) property's value. In **Angular**, **Vue** or **React**, bind the property's value to a component property.
+You can change any form, editor, or item properties at runtime. In **jQuery**, use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property. In **Angular**, **Vue** or **React**, bind the property's value to a component property.
+
+In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#readOnly) property's value:
 
 ---
 ##### jQuery

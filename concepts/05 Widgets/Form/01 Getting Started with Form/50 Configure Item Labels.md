@@ -7,7 +7,9 @@ The following properties apply to all labels in the Form:
 - [labelLocation](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#labelLocation)
 - [showColonAfterLabel](/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#showColonAfterLabel)
 
-The following code shows how to configure the **labelLocation** property to place all labels on top of editors. We use the **label**.[alignment](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#alignment) property to align the `Notes` item label's text to the center:
+The following code shows how to configure the **labelLocation** property to place all labels on top of editors. We use the **label**.[alignment](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/label/#alignment) property to align the `Notes` item label's text to the center. The labels then will look as follows:
+
+![DevExtreme Form: Item Labels](/images/UiWidgets/form-getting-started-configure-labels.png)
 
 ---
 ##### jQuery

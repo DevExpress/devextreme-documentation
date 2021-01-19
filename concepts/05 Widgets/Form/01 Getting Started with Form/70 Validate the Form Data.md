@@ -2,9 +2,9 @@ DevExtreme includes a validation engine that checks edited values before they ar
 
 To apply validation rules to a simple item, specify them in the [validationRules[]](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#validationRules) array. You can specify an item's [isRequired](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property to implicitly apply the [RequiredRule](/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/RequiredRule/) to it.
 
-An editor is validated when its value changes. To validate all editors simultaneously, call the [validate()](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#validate) Form method. 
-
 In the following example, we specify the [isRequired](Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#isRequired) property for the `Name` item. We also specify the **NumericRule** for `officeNumber` and **EmailRule** for `Email` items.
+
+An editor is validated when its value changes. To validate all editors simultaneously, call the [validate()](/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#validate) Form method. 
 
 ---
 ##### jQuery
@@ -22,14 +22,12 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
             }, {
                 dataField: "officeNumber",
                 validationRules: [{
-                    type: "numeric",
-                    message: "This field should contain a number"
+                    type: "numeric"
                 }] 
             }, {
                 dataField: "email",
                 validationRules: [{
-                    type: "email",
-                    message: "This is not a valid Email"
+                    type: "email"
                 }] 
             }]
         });
@@ -44,15 +42,11 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
         <dxi-item dataField="name" [isRequired]="true">
         </dxi-item>
         <dxi-item dataField="officeNumber">
-            <dxi-validation-rule
-                type="numeric"
-                message="This field should contain a number">
+            <dxi-validation-rule type="numeric">
             </dxi-validation-rule>
         </dxi-item>
         <dxi-item dataField="email">
-            <dxi-validation-rule
-                type="email"
-                message="This is not a valid Email">
+            <dxi-validation-rule type="email">
             </dxi-validation-rule>
         </dxi-item>
     </dx-form>
@@ -100,14 +94,10 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
             :col-count="2">
             <DxSimpleItem data-field="name :is-required="true"/>
             <DxSimpleItem data-field="officeNumber">
-                <DxNumericRule
-                    message="This field should contain a number"
-                />
+                <DxNumericRule/>
             </DxSimpleItem>
             <DxSimpleItem data-field="email">
-                <DxEmailRule
-                    message="This is not a valid Email"
-                />
+                <DxEmailRule/>
             </DxSimpleItem>
         </DxForm>
     </template>
@@ -167,14 +157,10 @@ In the following example, we specify the [isRequired](Documentation/ApiReference
                 colCount={2}>
                 <SimpleItem dataField="name" isRequired={true} />
                 <SimpleItem dataField="officeNumber">
-                    <NumericRule
-                        message="This field should contain a number"
-                    />
+                    <NumericRule />
                 </SimpleItem>
                 <SimpleItem dataField="email">
-                    <EmailRule
-                        message="This is not a valid Email"
-                    />
+                    <EmailRule />
                 </SimpleItem>
             </Form>
         );

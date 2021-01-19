@@ -1,6 +1,10 @@
 If you need to add an empty space between neighboring items, use an empty item. To create it, assign "empty" to the [itemType](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#itemType) property. To define how many columns the empty item must span, specify the [colSpan](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#colSpan) option. For the full list of available properties, visit the [Empty Item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/) section.
 
-In the following example, the empty item [spans](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#colSpan) two columns:
+
+
+In the following example, the empty item [spans](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/EmptyItem/#colSpan) two columns. The resulting layout looks as follows:
+
+![DevExtreme Form: Empty Item](/images/UiWidgets/form-getting-started-empty-item.png)
 
 ---
 ##### jQuery

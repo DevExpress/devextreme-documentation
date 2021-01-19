@@ -1,6 +1,6 @@
 To submit a form, add the [Button Item](/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/ButtonItem/) and set the [useSubmitBehavior](/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#useSubmitBehavior) property to **true**. The Form can be submitted to a server only when all the validation checks pass successfully. 
 
-In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank">setTimeout</a> function to emulate the form submission. The Form is wrapped in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. We set the [preventDefault](/Documentation/ApiReference/Common/Object_Structures/dxEvent/Methods/#preventDefault) property to **true** to override the HTML form submit event:
+In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank">setTimeout</a> function to emulate the form submission. The Form is wrapped in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. We set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to **true** to override the HTML form submit event:
 
 ---
 ##### jQuery
@@ -22,14 +22,12 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                 }, {
                     dataField: "officeNumber",
                     validationRules: [{
-                        type: "numeric",
-                        message: "This field should contain a number"
+                        type: "numeric"
                     }] 
                 }, {
                     dataField: "email",
                     validationRules: [{
-                        type: "email",
-                        message: "This is not a valid Email"
+                        type: "email"
                     }] 
                 }]
             }, {
@@ -41,7 +39,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
             }]
         });
 
-        $("#formContainer").on("submit", function(e) {
+        $("#form-container").on("submit", function(e) {
             setTimeout(function () { 
                 alert("Submitted");          
             }, 1000);
@@ -51,7 +49,7 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
     });
 
     <!-- tab: index.html -->
-    <form action="/employee-page" id="formContainer">
+    <form action="/employee-page" id="form-container">
         <div id="form"></div>
     </form>
 
@@ -69,15 +67,11 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                 <dxi-item dataField="name" [isRequired]="true">
                 </dxi-item>
                 <dxi-item dataField="officeNumber">
-                    <dxi-validation-rule
-                        type="numeric"
-                        message="This field should contain a number">
+                    <dxi-validation-rule type="numeric">
                     </dxi-validation-rule>
                 </dxi-item>
                 <dxi-item dataField="email">
-                    <dxi-validation-rule
-                        type="email"
-                        message="This is not a valid Email">
+                    <dxi-validation-rule type="email">
                     </dxi-validation-rule>
                 </dxi-item>
             </dxi-item>
@@ -148,14 +142,10 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                     :col-count="2">
                     <DxSimpleItem data-field="name" :is-required="true"/>
                     <DxSimpleItem data-field="officeNumber">
-                        <DxNumericRule
-                            message="This field should contain a number"
-                        />
+                        <DxNumericRule/>
                     </DxSimpleItem>
                     <DxSimpleItem data-field="email">
-                        <DxEmailRule
-                            message="This is not a valid Email"
-                        />
+                        <DxEmailRule/>
                     </DxSimpleItem>
                 </DxGroupItem>
                 <DxButtonItem :button-options="submitButtonOptions"/>
@@ -256,14 +246,10 @@ In this tutorial, we use the <a href="https://developer.mozilla.org/en-US/docs/W
                         colCount={2}>
                         <SimpleItem dataField="name" isRequired={true} />
                         <SimpleItem dataField="officeNumber">
-                            <NumericRule
-                                message="This field should contain a number"
-                            />
+                            <NumericRule />
                         </SimpleItem>
                         <SimpleItem dataField="email">
-                            <EmailRule
-                                message="This is not a valid Email"
-                            />
+                            <EmailRule />
                         </SimpleItem>
                     </GroupItem>
                     <ButtonItem buttonOptions={submitButtonOptions} />

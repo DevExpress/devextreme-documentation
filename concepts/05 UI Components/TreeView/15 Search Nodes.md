@@ -427,6 +427,6 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 ---
 
 #####See Also#####
-- [TreeView - Access a Node](/concepts/05%20Widgets/TreeView/10%20Access%20a%20Node '/Documentation/Guide/Widgets/TreeView/Access_a_Node')
+- [TreeView - Access a Node](/concepts/05%20Widgets/TreeView/10%20Access%20a%20Node '/Documentation/Guide/UI_Components/TreeView/Access_a_Node')
 
 [tags]treeView, collection UI component, search, search mode, search expression

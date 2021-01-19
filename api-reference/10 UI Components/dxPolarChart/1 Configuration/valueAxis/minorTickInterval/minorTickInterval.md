@@ -4,7 +4,7 @@ inherits: VizTimeInterval
 ---
 ---
 ##### shortDescription
-Specifies the interval between [minor ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Ticks/').
+Specifies the interval between [minor ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/').
 
 ---
 To divide a lengthy chart axis into shorter segments, major and minor ticks are used. Between each pair of neighboring major ticks, several minor ticks reside. Minor ticks are required when major ticks are far from each other. To set a custom minor tick interval, use the **minorTickInterval** property. If this property is not set, minor ticks are arranged automatically.

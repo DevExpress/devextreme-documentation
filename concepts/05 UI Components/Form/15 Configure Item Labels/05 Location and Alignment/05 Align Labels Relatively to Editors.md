@@ -134,7 +134,7 @@ The **Form** UI component displays labels on the left side of their editors and 
 
 ---
 
-A label placed on the left or right side of the editor is centered vertically in most cases. The labels of the editors that occupy much screen space like the [Calendar](/concepts/05%20Widgets/Calendar/00%20Overview.md '/Documentation/Guide/Widgets/Calendar/Overview/'), [TextArea](/concepts/05%20Widgets/TextArea/00%20Overview.md '/Documentation/Guide/Widgets/TextArea/Overview/'), and [RadioGroup](/concepts/05%20Widgets/RadioGroup/00%20Overview.md '/Documentation/Guide/Widgets/RadioGroup/Overview/') are aligned at the top, but you can center them using the following code:
+A label placed on the left or right side of the editor is centered vertically in most cases. The labels of the editors that occupy much screen space like the [Calendar](/concepts/05%20Widgets/Calendar/00%20Overview.md '/Documentation/Guide/UI_Components/Calendar/Overview/'), [TextArea](/concepts/05%20Widgets/TextArea/00%20Overview.md '/Documentation/Guide/UI_Components/TextArea/Overview/'), and [RadioGroup](/concepts/05%20Widgets/RadioGroup/00%20Overview.md '/Documentation/Guide/UI_Components/RadioGroup/Overview/') are aligned at the top, but you can center them using the following code:
 
     <!--CSS-->
     .dx-label-h-align {

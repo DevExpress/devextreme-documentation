@@ -19,4 +19,4 @@ Use the **height** and **width** properties in the **adaptiveLayout** object to 
 <a href="https://jsfiddle.net/ChartJS/2arphpsx/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Demo on JSFiddle</a>
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/PieChart/89%20Adaptive%20Layout.md '/Documentation/Guide/Widgets/PieChart/Adaptive_Layout/')
+- [Adaptive Layout](/concepts/05%20Widgets/PieChart/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/PieChart/Adaptive_Layout/')

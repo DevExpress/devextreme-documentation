@@ -19,4 +19,4 @@ The DOM node of the item after which the reordered item should be placed.
 
 #####See Also#####
 #include common-link-callmethods
-- [List - Item Reordering API](/concepts/05%20Widgets/List/30%20Item%20Reordering/05%20API.md '/Documentation/Guide/Widgets/List/Item_Reordering/#API')
+- [List - Item Reordering API](/concepts/05%20Widgets/List/30%20Item%20Reordering/05%20API.md '/Documentation/Guide/UI_Components/List/Item_Reordering/#API')

@@ -22,7 +22,7 @@ dx.viz.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/VectorMap/Visual_Elements/"
+    url: "/Documentation/Guide/UI_Components/VectorMap/Visual_Elements/"
 }
 
 #####See Also#####

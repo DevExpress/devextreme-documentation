@@ -7,7 +7,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-A function that is executed after the pointer enters or leaves a [funnel item](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/Widgets/Funnel/Funnel_Items/Overview/').
+A function that is executed after the pointer enters or leaves a [funnel item](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Overview/').
 
 ##### param(e): Object
 Information about the event.

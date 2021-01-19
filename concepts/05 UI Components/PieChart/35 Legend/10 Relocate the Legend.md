@@ -89,5 +89,5 @@ Below, you can try out these properties in action.
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/PieChartLegend/relocateTheLegend.html, /Content/Applications/20_2/DataVisualization/Guides/PieChartLegend/relocateTheLegend.js, /Content/Applications/20_2/DataVisualization/Guides/PieChartLegend/relocateTheLegend.css"></div>
 
 #####See Also#####
-- [Rearrange Legend Items](/concepts/05%20Widgets/PieChart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/Widgets/PieChart/Legend/Rearrange_Legend_Items/')
+- [Rearrange Legend Items](/concepts/05%20Widgets/PieChart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/PieChart/Legend/Rearrange_Legend_Items/')
 - [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithMultipleSeries)

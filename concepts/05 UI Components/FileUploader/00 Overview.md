@@ -147,12 +147,12 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the **valu
 
 ---
 
-The **FileUploader** can operate in two different modes, each demanding a different client- and server-side configuration. See the [Client-Side Settings](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings '/Documentation/Guide/Widgets/FileUploader/Upload_Files/Client-Side_Settings/') article for more details.
+The **FileUploader** can operate in two different modes, each demanding a different client- and server-side configuration. See the [Client-Side Settings](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/') article for more details.
 
 #####See Also#####
 #include common-link-configurewidget
-- **Upload Files - Server Side**: [ASP.NET](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/10%20Server-Side%20Implementation%20in%20ASP.NET '/Documentation/Guide/Widgets/FileUploader/Upload_Files/Server-Side_Implementation_in_ASP.NET/') | [PHP](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/20%20Server-Side%20Implementation%20in%20PHP '/Documentation/Guide/Widgets/FileUploader/Upload_Files/Server-Side_Implementation_in_PHP/')
-- [File Validation](/concepts/05%20Widgets/FileUploader/40%20File%20Validation.md '/Documentation/Guide/Widgets/FileUploader/File_Validation/')
+- **Upload Files - Server Side**: [ASP.NET](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/10%20Server-Side%20Implementation%20in%20ASP.NET '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Server-Side_Implementation_in_ASP.NET/') | [PHP](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/20%20Server-Side%20Implementation%20in%20PHP '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Server-Side_Implementation_in_PHP/')
+- [File Validation](/concepts/05%20Widgets/FileUploader/40%20File%20Validation.md '/Documentation/Guide/UI_Components/FileUploader/File_Validation/')
 - [FileUploader API Reference](/api-reference/10%20UI%20Widgets/dxFileUploader '/Documentation/ApiReference/UI_Components/dxFileUploader/')
 
 [tags]dxfileuploader, file uploader, fileUploader, overview, accepted file types, multiple files, access files in code

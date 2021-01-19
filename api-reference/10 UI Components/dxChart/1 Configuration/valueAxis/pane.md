@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Binds the value axis to a [pane](/concepts/05%20Widgets/Chart/40%20Panes/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Panes/Overview/').
+Binds the value axis to a [pane](/concepts/05%20Widgets/Chart/40%20Panes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Panes/Overview/').
 
 ---
 #####See Also#####

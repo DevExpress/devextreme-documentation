@@ -222,6 +222,6 @@ Point labels are not visible by default. To make them visible, assign **true** t
 For details on other properties of point labels, refer to the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/') section of the API reference and to other topics in this section.
 
 #####See Also#####
-- [Customize Labels](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/05%20Customize%20Labels.md '/Documentation/Guide/Widgets/PieChart/Point_Labels/Customize_Labels/')
-- [Resolve Label Overlapping](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/Widgets/PieChart/Point_Labels/Resolve_Overlapping/')
+- [Customize Labels](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/05%20Customize%20Labels.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Customize_Labels/')
+- [Resolve Label Overlapping](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Resolve_Overlapping/')
 - [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie)

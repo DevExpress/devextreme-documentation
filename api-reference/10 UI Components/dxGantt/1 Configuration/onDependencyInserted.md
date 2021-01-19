@@ -150,4 +150,4 @@ The values of the inserted dependency.
 
 #####See Also#####
 - [dependencyInserted](/Documentation/ApiReference/UI_Components/dxGantt/Events/#dependencyInserted)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

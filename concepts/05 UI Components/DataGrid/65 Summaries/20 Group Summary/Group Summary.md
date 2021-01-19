@@ -71,7 +71,7 @@ Configure each summary item in the **summary**.[groupItems](/api-reference/10%20
 }
 
 #####See Also#####
-- [Grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/Widgets/DataGrid/Grouping/')
+- [Grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/')
 - [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
 
 [tags]dataGrid, data grid, group summary, aggregate function, sort by summary, sortByGroupSummaryInfo, summaryType, alignment, location, alignByColumn. showInColumn, showInGroupFooter

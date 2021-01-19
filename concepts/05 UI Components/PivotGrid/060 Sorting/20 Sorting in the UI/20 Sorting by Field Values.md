@@ -1,8 +1,8 @@
-To sort fields by their own values, the user invokes the [Field Chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Chooser'). There, each item of the *"Row Fields"* and *"Column Fields"* areas has an arrow icon on its right side. The user clicks (or taps) this icon to sort the values of the corresponding field.
+To sort fields by their own values, the user invokes the [Field Chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Chooser'). There, each item of the *"Row Fields"* and *"Column Fields"* areas has an arrow icon on its right side. The user clicks (or taps) this icon to sort the values of the corresponding field.
 
 ![DevExtreme PivotGrid FieldChooser SortingIcons](/images/DataGrid/PivotGrid_fieldChooser_sortingIcons.png)
 
-Alternatively, this type of sorting can be performed using the [Field Panel](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/15%20Field%20Panel.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Panel'). Each item on it has the same clickable arrow icon that sorts the values of the corresponding field.
+Alternatively, this type of sorting can be performed using the [Field Panel](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/15%20Field%20Panel.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Panel'). Each item on it has the same clickable arrow icon that sorts the values of the corresponding field.
 
 ![DevExtreme PivotGrid FieldPanel](/images/DataGrid/PivotGrid_fieldPanel_sortingIcons.png)
 

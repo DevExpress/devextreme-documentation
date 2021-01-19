@@ -200,7 +200,7 @@ If your data source changes frequently, disable caching by assigning **false** t
 
 #####See Also#####
 #include common-link-callmethods
-- [DataGrid - Access the DataSource](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Access_the_DataSource/')
+- [DataGrid - Access the DataSource](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/DataGrid/Data_Binding/Access_the_DataSource/')
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalDataSource)
 
 [tags] dataGrid, data grid, caching, cache, enable caching, cacheEnabled

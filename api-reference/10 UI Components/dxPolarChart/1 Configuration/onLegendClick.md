@@ -7,7 +7,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-A function that is executed when a [legend item](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/120%20Legend.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Legend') is clicked or tapped.
+A function that is executed when a [legend item](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/120%20Legend.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Legend') is clicked or tapped.
 
 ##### param(e): Object
 Information about the event.

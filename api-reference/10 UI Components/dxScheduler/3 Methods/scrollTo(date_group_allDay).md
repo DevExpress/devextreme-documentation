@@ -29,7 +29,7 @@ The following example shows how to use this method:
 
 #####See Also#####
 #include common-link-callmethods
-- [Group Appointments by Resources](/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/)
+- [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/)
 - [currentView](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentView)
 - [scrolling](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/scrolling/)
 - [crossScrollingEnabled](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#crossScrollingEnabled)

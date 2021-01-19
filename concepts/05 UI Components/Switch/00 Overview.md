@@ -95,8 +95,8 @@ The following code adds the **Switch** to your page.
 
 #####See Also#####
 #include common-link-configurewidget
-- [Switch - Handle the Value Change Event](/concepts/05%20Widgets/Switch/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/Switch/Handle_the_Value_Change_Event')
-- [Switch - Keyboard Support](/concepts/05%20Widgets/Switch/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Switch/Keyboard_Support')
+- [Switch - Handle the Value Change Event](/concepts/05%20Widgets/Switch/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Switch/Handle_the_Value_Change_Event')
+- [Switch - Keyboard Support](/concepts/05%20Widgets/Switch/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Switch/Keyboard_Support')
 - [Switch API Reference](/api-reference/10%20UI%20Widgets/dxSwitch '/Documentation/ApiReference/UI_Components/dxSwitch/')
 
 [tags]dxswitch, switch, editor, overview

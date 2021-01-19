@@ -18,7 +18,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/CheckBox/Overview/"
+    url: "/Documentation/Guide/UI_Components/CheckBox/Overview/"
 }
 
 #####See Also#####

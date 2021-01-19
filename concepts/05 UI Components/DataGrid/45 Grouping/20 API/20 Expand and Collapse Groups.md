@@ -162,5 +162,5 @@ The **DataGrid** provides the following API for expanding and collapsing groups:
     ---
 
 #####See Also#####
-- [Group Index and Key](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Group_Index_and_Key')
-- [User Interaction - Expand and Collapse Groups](/concepts/05%20Widgets/DataGrid/45%20Grouping/10%20User%20Interaction/20%20Expand%20and%20Collapse%20Groups.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#User_Interaction/Expand_and_Collapse_Groups')
+- [Group Index and Key](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Group_Index_and_Key')
+- [User Interaction - Expand and Collapse Groups](/concepts/05%20Widgets/DataGrid/45%20Grouping/10%20User%20Interaction/20%20Expand%20and%20Collapse%20Groups.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Expand_and_Collapse_Groups')

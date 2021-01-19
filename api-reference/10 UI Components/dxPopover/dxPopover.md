@@ -20,7 +20,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Popover/Overview/"
+    url: "/Documentation/Guide/UI_Components/Popover/Overview/"
 }
 
 #####See Also#####

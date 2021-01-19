@@ -279,7 +279,7 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     
 ---
 
-The [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#showCheckBoxesMode') property specifies when the UI component renders check boxes in the selection column. For example, the following code tells the UI component to never render them, though a user can still select rows using [keyboard shortcuts](/concepts/05%20Widgets/DataGrid/75%20Keyboard%20Support.md '/Documentation/Guide/Widgets/DataGrid/Keyboard_Support/'):
+The [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#showCheckBoxesMode') property specifies when the UI component renders check boxes in the selection column. For example, the following code tells the UI component to never render them, though a user can still select rows using [keyboard shortcuts](/concepts/05%20Widgets/DataGrid/75%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/DataGrid/Keyboard_Support/'):
 
 ---
 ##### jQuery
@@ -377,4 +377,4 @@ The [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configu
 
 #####See Also#####
 - [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
-- [Deferred Selection](/concepts/05%20Widgets/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/015%20Deferred%20Selection.md '/Documentation/Guide/Widgets/DataGrid/Enhance_Performance_on_Large_Datasets/#Deferred_Selection')
+- [Deferred Selection](/concepts/05%20Widgets/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/015%20Deferred%20Selection.md '/Documentation/Guide/UI_Components/DataGrid/Enhance_Performance_on_Large_Datasets/#Deferred_Selection')

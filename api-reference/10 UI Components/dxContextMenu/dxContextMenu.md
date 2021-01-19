@@ -31,7 +31,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ContextMenu/Basics/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/ContextMenu/Overview/"
+    url: "/Documentation/Guide/UI_Components/ContextMenu/Overview/"
 }
 
 #####See Also#####

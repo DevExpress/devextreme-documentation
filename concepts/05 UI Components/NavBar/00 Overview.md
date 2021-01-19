@@ -54,8 +54,8 @@ Note that field names in these data source items are [conventional](/api-referen
 
 #####See Also#####
 #include common-link-configurewidget
-- [NavBar - Customize Item Appearance](/concepts/05%20Widgets/NavBar/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/NavBar/Customize_Item_Appearance')
-- [NavBar - Items Selection](/concepts/05%20Widgets/NavBar/10%20Items%20Selection.md '/Documentation/Guide/Widgets/NavBar/Items_Selection')
+- [NavBar - Customize Item Appearance](/concepts/05%20Widgets/NavBar/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/NavBar/Customize_Item_Appearance')
+- [NavBar - Items Selection](/concepts/05%20Widgets/NavBar/10%20Items%20Selection.md '/Documentation/Guide/UI_Components/NavBar/Items_Selection')
 - [NavBar API Reference](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Components/dxNavBar/')
 
 [tags]dxnavbar, nav bar, navBar, navigation bar, collection container, collection UI component, navigation, overview

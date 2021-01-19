@@ -1,4 +1,4 @@
-By default, the slide-out menu is empty. To specify its content, declare a template for it. Although the slide-out menu can contain any UI component, we recommend you place a collection UI component there. For example, in the following code, the slide-out menu contains the [TreeView](/concepts/05%20Widgets/TreeView/00%20Overview.md '/Documentation/Guide/Widgets/TreeView/Overview/') UI component. Note that this UI component is placed into a [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') whose name is assigned to the [menuTemplate](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/menuTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Configuration/#menuTemplate') property of the **SlideOutView**. All the other code configures the **TreeView** and does not affect the **SlideOutView** directly.
+By default, the slide-out menu is empty. To specify its content, declare a template for it. Although the slide-out menu can contain any UI component, we recommend you place a collection UI component there. For example, in the following code, the slide-out menu contains the [TreeView](/concepts/05%20Widgets/TreeView/00%20Overview.md '/Documentation/Guide/UI_Components/TreeView/Overview/') UI component. Note that this UI component is placed into a [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') whose name is assigned to the [menuTemplate](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/menuTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Configuration/#menuTemplate') property of the **SlideOutView**. All the other code configures the **TreeView** and does not affect the **SlideOutView** directly.
 
     <!--HTML--><div id="slideOutView">
         <div data-options="dxTemplate: { name: 'content' }">
@@ -102,11 +102,11 @@ By default, the menu slides out from the left side of the screen. To make it sli
         // ...
     });
 
-In addition, you can use a 3rd-party template engine to customize the menu. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize the menu. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
  
 #####See Also#####
-- [SlideOutView - Customize the View](/concepts/05%20Widgets/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/Widgets/SlideOutView/Customize_the_View/')
-- [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/Widgets/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
+- [SlideOutView - Customize the View](/concepts/05%20Widgets/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_View/')
+- [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/UI_Components/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
 - [SlideOutView API Reference](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Components/dxSlideOutView/')
 
 [tags]slideOutView, slide-out menu, navigation, menu appearance, customize, templates

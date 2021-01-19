@@ -15,7 +15,7 @@ Present if [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configurat
 Present if the **DataSource**'s [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') property is set.
 
 - **Filtering settings**: [filter](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/filter.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#filter')    
-Present if the **DataSource**'s [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') property is set or [searching is enabled](/concepts/05%20Widgets/List/27%20Searching.md '/Documentation/Guide/Widgets/List/Searching/') in the UI component.
+Present if the **DataSource**'s [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') property is set or [searching is enabled](/concepts/05%20Widgets/List/27%20Searching.md '/Documentation/Guide/UI_Components/List/Searching/') in the UI component.
 
 - **Searching settings**: [searchExpr](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/searchExpr.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#searchExpr'), [searchOperation](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/searchOperation.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#searchOperation'), and [searchValue](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/searchValue.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#searchValue')     
 Present if [corresponding properties](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchExpr.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr') are set in the **DataSource**.
@@ -42,7 +42,7 @@ If the server has not received the **group** parameter, the resulting object sho
         totalCount: 100
     }
 
-If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35%20Item%20Deletion '/Documentation/Guide/Widgets/List/Item_Deletion/'), the **CustomStore** must implement the [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') operation as well. Below is a generalized configuration of the **CustomStore** for the **List** UI component.
+If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35%20Item%20Deletion '/Documentation/Guide/UI_Components/List/Item_Deletion/'), the **CustomStore** must implement the [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') operation as well. Below is a generalized configuration of the **CustomStore** for the **List** UI component.
 
 ---
 ##### jQuery
@@ -296,8 +296,8 @@ If the **List** allows the user to [delete items](/concepts/05%20Widgets/List/35
 - [Data Layer - DataSource Examples | Custom Sources](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources')
 - [Data Layer - DataSource Examples | Connect to a RESTful Service](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources/0%20Connect%20to%20RESTful%20Service.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources/Connect_to_RESTful_Service')
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
-- [List - Access the DataSource](/concepts/05%20Widgets/List/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/Widgets/List/Data_Binding/Access_the_DataSource/')
-- [List - Paging](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/Widgets/List/Paging/')
+- [List - Access the DataSource](/concepts/05%20Widgets/List/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/List/Data_Binding/Access_the_DataSource/')
+- [List - Paging](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/UI_Components/List/Paging/')
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 
 [tags]list, data binding, provide data, custom data source, CustomStore, DataSource, load

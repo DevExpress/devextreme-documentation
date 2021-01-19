@@ -9,7 +9,7 @@ default: 'pie'
 Specifies the type of the pie chart series.
 
 ---
-See [Series Overview](/concepts/05%20Widgets/PieChart/10%20Series/00%20Overview.md '/Documentation/Guide/Widgets/PieChart/Series/Overview/') for details.
+See [Series Overview](/concepts/05%20Widgets/PieChart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/PieChart/Series/Overview/') for details.
 
 #include common-ref-enum with {
     enum: "`PieChartType`",

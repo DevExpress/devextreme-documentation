@@ -21,7 +21,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndApi/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/List/Overview/"
+    url: "/Documentation/Guide/UI_Components/List/Overview/"
 }
 
 #####See Also#####

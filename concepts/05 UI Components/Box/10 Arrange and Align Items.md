@@ -196,7 +196,7 @@ If the **Box** items do not occupy the entire **Box**, you can align them along 
 ---
 
 #####See Also#####
-- [Box - Nest One Box into Another](/concepts/05%20Widgets/Box/15%20Nest%20One%20Box%20Into%20Another.md '/Documentation/Guide/Widgets/Box/Nest_One_Box_into_Another/')
+- [Box - Nest One Box into Another](/concepts/05%20Widgets/Box/15%20Nest%20One%20Box%20Into%20Another.md '/Documentation/Guide/UI_Components/Box/Nest_One_Box_into_Another/')
 - [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
 - [Box API Reference](/api-reference/10%20UI%20Widgets/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 

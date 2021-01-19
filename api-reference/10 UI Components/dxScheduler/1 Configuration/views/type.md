@@ -10,7 +10,7 @@ The type of the view.
 
 ---
 
-For information about available view types, refer to the [View Types](/Documentation/Guide/Widgets/Scheduler/Views/View_Types/) article.
+For information about available view types, refer to the [View Types](/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/) article.
 
 #include common-ref-enum with {
     enum: "`SchedulerViewType`",

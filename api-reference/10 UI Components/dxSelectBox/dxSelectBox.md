@@ -31,7 +31,7 @@ dx.web.js, dx.all.js
 
 ---
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/Widgets/SelectBox/Getting_Started_with_SelectBox/" 
+    url: "/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/" 
 }
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/"

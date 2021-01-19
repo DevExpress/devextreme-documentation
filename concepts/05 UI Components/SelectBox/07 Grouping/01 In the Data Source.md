@@ -500,7 +500,7 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
 }
 
 #####See Also#####
-- [SelectBox - Grouping | Customize Group Headers](/concepts/05%20Widgets/SelectBox/07%20Grouping/05%20Customize%20Group%20Headers.md '/Documentation/Guide/Widgets/SelectBox/Grouping/Customize_Group_Headers/')
+- [SelectBox - Grouping | Customize Group Headers](/concepts/05%20Widgets/SelectBox/07%20Grouping/05%20Customize%20Group%20Headers.md '/Documentation/Guide/UI_Components/SelectBox/Grouping/Customize_Group_Headers/')
 - [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 
 [tags]selectBox, grouped, key, items, group items, map items

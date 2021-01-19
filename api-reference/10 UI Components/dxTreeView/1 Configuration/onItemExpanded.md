@@ -37,4 +37,4 @@ The item's node.
 
 ---
 #####See Also#####
-- [Expand and Collapse Nodes - Events](/concepts/05%20Widgets/TreeView/20%20Expand%20and%20Collapse%20Nodes/10%20Events.md '/Documentation/Guide/Widgets/TreeView/Expand_and_Collapse_Nodes/#Events')
+- [Expand and Collapse Nodes - Events](/concepts/05%20Widgets/TreeView/20%20Expand%20and%20Collapse%20Nodes/10%20Events.md '/Documentation/Guide/UI_Components/TreeView/Expand_and_Collapse_Nodes/#Events')

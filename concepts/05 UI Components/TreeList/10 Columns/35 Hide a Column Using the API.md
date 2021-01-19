@@ -30,4 +30,4 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
 ---
 
 #####See Also#####
-- [Column Chooser](/concepts/05%20Widgets/TreeList/10%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Chooser/')
+- [Column Chooser](/concepts/05%20Widgets/TreeList/10%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Chooser/')

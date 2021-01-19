@@ -21,4 +21,4 @@ For the **timelineDay**, **timelineMonth**, **timelineWeek**, and **timelineWork
 }
 
 #####See Also#####
-- [Group Appointments by Resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/')
+- [Group Appointments by Resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/')

@@ -72,7 +72,7 @@ Some messages can be defined by **List** properties as well as keys. The followi
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pullingDownText">pullingDownText</a></td>
         <td><code>dxList-pullingDownText</code></td>
-        <td>Displayed when the user begins <a href="/Documentation/Guide/Widgets/List/End-User_Interaction/Touch-Screen_Gestures/">pulling</a> the <b>List</b> down.</td>
+        <td>Displayed when the user begins <a href="/Documentation/Guide/UI_Components/List/End-User_Interaction/Touch-Screen_Gestures/">pulling</a> the <b>List</b> down.</td>
     </tr>
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pulledDownText">pulledDownText</a></td>
@@ -87,7 +87,7 @@ Some messages can be defined by **List** properties as well as keys. The followi
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadingText">pageLoadingText</a></td>
         <td><code>dxList-pageLoadingText</code></td>
-        <td>Displayed while another <a href="/Documentation/Guide/Widgets/List/Paging/">page</a> is loading.</td>
+        <td>Displayed while another <a href="/Documentation/Guide/UI_Components/List/Paging/">page</a> is loading.</td>
     </tr>
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#nextButtonText">nextButtonText</a></td>

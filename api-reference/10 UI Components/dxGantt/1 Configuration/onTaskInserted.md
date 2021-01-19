@@ -149,4 +149,4 @@ The values of the inserted task.
 
 #####See Also#####
 - [taskInserted](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskInserted)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

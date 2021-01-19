@@ -140,4 +140,4 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
 [note] If you set the `id` and `name` attributes using the [inputAttr](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#inputAttr') property, they will be overwritten. The **Form** generates these attributes automatically and uses them for addressing the DOM elements.
 
 #####See Also#####
-- [Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/')
+- [Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')

@@ -62,7 +62,7 @@ Specifies a destination folder. This folder should be created in advance. When t
 Specifies a precision for shape coordinates. By default, no precision applies.
 
 - **isJSON** <span style="font-size:10px"><i>boolean</i></span>		
-Specifies the format of the resulting file. When this property is set to **true**, the resulting file has the *'.json'* extension and can be [used in VectorMap as a JSON object](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/30%20Using%20a%20JSON%20object.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas/Using_a_JSON_object'). When this property is set to **false**, the resulting file has the *'.js'* extension and can be [used in VectorMap as a script](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/20%20Using%20a%20Script.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Script').
+Specifies the format of the resulting file. When this property is set to **true**, the resulting file has the *'.json'* extension and can be [used in VectorMap as a JSON object](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/30%20Using%20a%20JSON%20object.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data/#Data_for_Areas/Using_a_JSON_object'). When this property is set to **false**, the resulting file has the *'.js'* extension and can be [used in VectorMap as a script](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/20%20Using%20a%20Script.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Script').
 
 You can use the Node.js console for generating files as well. The accepted string has the following format.
 

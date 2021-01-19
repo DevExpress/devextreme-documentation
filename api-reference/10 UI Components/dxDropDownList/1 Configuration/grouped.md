@@ -27,5 +27,5 @@ You can supply data to this structure using the **DataSource** object's [group](
 #####See Also#####
 - [SelectBox - Grouped Items Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/GroupedItems)
 - [TagBox - Grouped Items Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/GroupedItems)
-- [SelectBox - Grouping](/concepts/05%20Widgets/SelectBox/07%20Grouping '/Documentation/Guide/Widgets/SelectBox/Grouping/')
-- [TagBox - Grouping](/concepts/05%20Widgets/TagBox/07%20Grouping '/Documentation/Guide/Widgets/TagBox/Grouping/')
+- [SelectBox - Grouping](/concepts/05%20Widgets/SelectBox/07%20Grouping '/Documentation/Guide/UI_Components/SelectBox/Grouping/')
+- [TagBox - Grouping](/concepts/05%20Widgets/TagBox/07%20Grouping '/Documentation/Guide/UI_Components/TagBox/Grouping/')

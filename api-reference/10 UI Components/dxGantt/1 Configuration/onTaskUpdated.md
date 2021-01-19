@@ -149,4 +149,4 @@ The task values after update.
 
 #####See Also#####
 - [taskUpdated](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskUpdated)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

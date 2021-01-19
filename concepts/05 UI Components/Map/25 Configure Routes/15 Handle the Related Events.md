@@ -160,8 +160,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
         .on("routeRemoved", routeRemovedHandler2);
 
 #####See Also#####
-- [Map - Customize Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/Widgets/Map/Configure_Routes/Customize/')
-- [Map - Add and Remove Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes/05%20Add%20and%20Remove.md '/Documentation/Guide/Widgets/Map/Configure_Routes/Add_and_Remove/')
+- [Map - Customize Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Customize/')
+- [Map - Add and Remove Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Add_and_Remove/')
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
 - [Map API Reference](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 

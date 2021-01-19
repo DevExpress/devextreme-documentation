@@ -238,11 +238,11 @@ Usually, the **Chart** chooses the axis type automatically according to the type
     
 ---
 
-For better readability of visualized data, any axis is divided into parts using ticks. Different axis types demand ticks to be arranged differently. See the [Arrange Axis Ticks](/concepts/05%20Widgets/Chart/20%20Axes/10%20Arrange%20Axis%20Ticks '/Documentation/Guide/Widgets/Chart/Axes/Arrange_Axis_Ticks/') topic for further details.
+For better readability of visualized data, any axis is divided into parts using ticks. Different axis types demand ticks to be arranged differently. See the [Arrange Axis Ticks](/concepts/05%20Widgets/Chart/20%20Axes/10%20Arrange%20Axis%20Ticks '/Documentation/Guide/UI_Components/Chart/Axes/Arrange_Axis_Ticks/') topic for further details.
 
 #####See Also#####
-- [Rotate and Invert the Chart](/concepts/05%20Widgets/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/Widgets/Chart/Rotate_and_Invert_the_Chart/')
-- [Multi-Axis Chart](/concepts/05%20Widgets/Chart/20%20Axes/70%20Multi-Axis%20Chart.md '/Documentation/Guide/Widgets/Chart/Axes/Multi-Axis_Chart/')
+- [Rotate and Invert the Chart](/concepts/05%20Widgets/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/UI_Components/Chart/Rotate_and_Invert_the_Chart/')
+- [Multi-Axis Chart](/concepts/05%20Widgets/Chart/20%20Axes/70%20Multi-Axis%20Chart.md '/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/')
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LogarithmicAxis)
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 

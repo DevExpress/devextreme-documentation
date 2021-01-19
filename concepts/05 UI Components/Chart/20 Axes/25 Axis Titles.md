@@ -182,8 +182,8 @@ is the same as this:
 In addition to the **text** field, the **title** object may contain fields that specify the [font](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/title/font '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/title/font/') and [margin](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/title/margin.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/title/#margin') of the axis title.
 
 #####See Also#####
-- [Chart Title and Subtitle](/concepts/05%20Widgets/Chart/58%20Title%20and%20Subtitle.md '/Documentation/Guide/Widgets/Chart/Title_and_Subtitle/')
-- [Limit and Relocate the Axes](/concepts/05%20Widgets/Chart/20%20Axes/40%20Limit%20and%20Relocate%20the%20Axes.md '/Documentation/Guide/Widgets/Chart/Axes/Limit_and_Relocate_the_Axes/')
+- [Chart Title and Subtitle](/concepts/05%20Widgets/Chart/58%20Title%20and%20Subtitle.md '/Documentation/Guide/UI_Components/Chart/Title_and_Subtitle/')
+- [Limit and Relocate the Axes](/concepts/05%20Widgets/Chart/20%20Axes/40%20Limit%20and%20Relocate%20the%20Axes.md '/Documentation/Guide/UI_Components/Chart/Axes/Limit_and_Relocate_the_Axes/')
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble)
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 

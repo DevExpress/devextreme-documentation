@@ -8,4 +8,4 @@ The scroll bar is configured using the [scrollBar](/api-reference/20%20Data%20Vi
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ZoomingAndScrolling/"
 }
 
-To learn more about the scroll bar as a visual element, refer to the **Chart Elements** | [Scroll Bar](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning/03%20Using%20the%20Scroll%20Bar.md '/Documentation/Guide/Widgets/Chart/Zooming_and_Panning/#Using_the_Scroll_Bar') topic.
+To learn more about the scroll bar as a visual element, refer to the **Chart Elements** | [Scroll Bar](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning/03%20Using%20the%20Scroll%20Bar.md '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/#Using_the_Scroll_Bar') topic.

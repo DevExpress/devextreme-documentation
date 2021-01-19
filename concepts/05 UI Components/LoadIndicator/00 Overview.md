@@ -200,8 +200,8 @@ If you need to use a custom image in the **LoadIndicator**, assign its URL to th
 
 #####See Also#####
 #include common-link-configurewidget
-- [LoadIndicator - Show and Hide Using the API](/concepts/05%20Widgets/LoadIndicator/05%20Show%20and%20Hide%20Using%20the%20API.md '/Documentation/Guide/Widgets/LoadIndicator/Show_and_Hide_Using_the_API/')
+- [LoadIndicator - Show and Hide Using the API](/concepts/05%20Widgets/LoadIndicator/05%20Show%20and%20Hide%20Using%20the%20API.md '/Documentation/Guide/UI_Components/LoadIndicator/Show_and_Hide_Using_the_API/')
 - [LoadIndicator API Reference](/api-reference/10%20UI%20Widgets/dxLoadIndicator '/Documentation/ApiReference/UI_Components/dxLoadIndicator/')
-- [LoadPanel - Overview](/concepts/05%20Widgets/LoadPanel/00%20Overview.md '/Documentation/Guide/Widgets/LoadPanel/Overview/')
+- [LoadPanel - Overview](/concepts/05%20Widgets/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/')
 
 [tags]dxloadindicator, loadIndicator, load indicator, loading indicator, overview, overlay

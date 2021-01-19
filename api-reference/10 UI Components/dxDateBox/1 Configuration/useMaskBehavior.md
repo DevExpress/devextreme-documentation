@@ -13,4 +13,4 @@ Specifies whether to control user input using a mask created based on the [displ
 }
 
 #####See Also#####
-- [Value Formatting and Masked Input](/concepts/05%20Widgets/DateBox/04%20Value%20Formatting%20and%20Masked%20Input.md '/Documentation/Guide/Widgets/DateBox/Value_Formatting_and_Masked_Input/')
+- [Value Formatting and Masked Input](/concepts/05%20Widgets/DateBox/04%20Value%20Formatting%20and%20Masked%20Input.md '/Documentation/Guide/UI_Components/DateBox/Value_Formatting_and_Masked_Input/')

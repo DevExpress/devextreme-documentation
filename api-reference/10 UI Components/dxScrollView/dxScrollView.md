@@ -16,7 +16,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/ScrollView/Overview/"
+    url: "/Documentation/Guide/UI_Components/ScrollView/Overview/"
 }
 
 #####See Also#####

@@ -178,9 +178,9 @@ Axes can be relocated to their opposite side using the [position](/api-reference
 ![DevExtreme HTML5 JavaScript Charts ArgumentAxis ValueAxis](/images/ChartJS/visual_elements/axes_relocated.png)
 
 #####See Also#####
-- [Axis Titles](/concepts/05%20Widgets/Chart/20%20Axes/25%20Axis%20Titles.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Titles/')
-- [Axis Labels](/concepts/05%20Widgets/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Labels/')
-- [Multi-Axis Chart](/concepts/05%20Widgets/Chart/20%20Axes/70%20Multi-Axis%20Chart.md '/Documentation/Guide/Widgets/Chart/Axes/Multi-Axis_Chart/')
+- [Axis Titles](/concepts/05%20Widgets/Chart/20%20Axes/25%20Axis%20Titles.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Titles/')
+- [Axis Labels](/concepts/05%20Widgets/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Labels/')
+- [Multi-Axis Chart](/concepts/05%20Widgets/Chart/20%20Axes/70%20Multi-Axis%20Chart.md '/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, min axis value, max axis value, axis margins, valueMarginsEnabled, minValueMargin, maxValueMargin, axis position, rotated chart

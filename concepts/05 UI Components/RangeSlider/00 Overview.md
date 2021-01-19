@@ -1,4 +1,4 @@
-The **RangeSlider** is a UI component that allows an end user to choose a range of numeric values. Basically, the **RangeSlider** is the [Slider](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/Widgets/Slider/Overview/') UI component with a second handle added.
+The **RangeSlider** is a UI component that allows an end user to choose a range of numeric values. Basically, the **RangeSlider** is the [Slider](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/UI_Components/Slider/Overview/') UI component with a second handle added.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/"
@@ -245,9 +245,9 @@ In addition, you can specify the step of **RangeSlider** values using the [step]
 
 #####See Also#####
 #include common-link-configurewidget
-- [RangeSlider - Customize UI component Appearance](/concepts/05%20Widgets/RangeSlider/05%20Customize%20Widget%20Appearance.md '/Documentation/Guide/Widgets/RangeSlider/Customize_Widget_Appearance')
-- [RangeSlider - Handle the Value Change Event](/concepts/05%20Widgets/RangeSlider/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/RangeSlider/Handle_the_Value_Change_Event')
+- [RangeSlider - Customize UI component Appearance](/concepts/05%20Widgets/RangeSlider/05%20Customize%20Widget%20Appearance.md '/Documentation/Guide/UI_Components/RangeSlider/Customize_Widget_Appearance')
+- [RangeSlider - Handle the Value Change Event](/concepts/05%20Widgets/RangeSlider/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/RangeSlider/Handle_the_Value_Change_Event')
 - [RangeSlider API Reference](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/')
-- [Slider - Overview](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/Widgets/Slider/Overview/')
+- [Slider - Overview](/concepts/05%20Widgets/Slider/00%20Overview.md '/Documentation/Guide/UI_Components/Slider/Overview/')
 
 [tags]dxrangeslider, rangeSlider, range slider, editor, overview, range, min, max, start, end, step

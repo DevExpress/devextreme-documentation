@@ -36,4 +36,4 @@ To add a dependency between two tasks, use the [insertDependency](/Documentation
 - [onDependencyInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyInserting)
 - [onDependencyInserted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyInserted)
 - [insertDependency](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertDependencydata)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

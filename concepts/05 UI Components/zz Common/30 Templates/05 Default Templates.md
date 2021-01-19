@@ -12,7 +12,7 @@ Default templates are based on data source fields. You can control appearance by
         { template: customMarkup }
     ];
 
-You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component that supports default and [custom templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates'). Do not set the UI component's **dataSource** property in this case. 
+You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component that supports default and [custom templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates'). Do not set the UI component's **dataSource** property in this case. 
 
 ---
 #####jQuery  

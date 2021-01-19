@@ -1,4 +1,4 @@
-A target line is a vertical line that indicates a target value. According to the concept of a bullet chart, the target value is supposed to be reached by the primary value, which is indicated on a bullet chart by the [bullet bar](/concepts/05%20Widgets/Bullet/10%20Visual%20Elements/10%20Bullet%20Bar.md '/Documentation/Guide/Widgets/Bullet/Visual_Elements/#Bullet_Bar').
+A target line is a vertical line that indicates a target value. According to the concept of a bullet chart, the target value is supposed to be reached by the primary value, which is indicated on a bullet chart by the [bullet bar](/concepts/05%20Widgets/Bullet/10%20Visual%20Elements/10%20Bullet%20Bar.md '/Documentation/Guide/UI_Components/Bullet/Visual_Elements/#Bullet_Bar').
 
 ![DevExtreme ChartJS BulletChart BulletGraph](/images/ChartJS/BulletTargetLine.png)
 

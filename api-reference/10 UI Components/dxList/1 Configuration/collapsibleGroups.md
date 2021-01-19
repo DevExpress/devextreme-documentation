@@ -13,7 +13,7 @@ This property makes sense if the [grouped](/api-reference/10%20UI%20Widgets/dxLi
 If the **collapsibleGroups** property is set to **true**, the down arrow is displayed to the right of a group header. An end-user can collapse or expand a group simply clicking the group header.
 
 #####See Also#####
-- [List - Expand and Collapse a Group](/concepts/05%20Widgets/List/14%20Grouping/10%20Expand%20and%20Collapse%20a%20Group.md '/Documentation/Guide/Widgets/List/Grouping/Expand_and_Collapse_a_Group/')
+- [List - Expand and Collapse a Group](/concepts/05%20Widgets/List/14%20Grouping/10%20Expand%20and%20Collapse%20a%20Group.md '/Documentation/Guide/UI_Components/List/Grouping/Expand_and_Collapse_a_Group/')
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"

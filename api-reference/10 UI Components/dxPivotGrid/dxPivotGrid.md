@@ -35,7 +35,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/LocalDataSource/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/"
+    url: "/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/"
 }
 
 #####See Also#####

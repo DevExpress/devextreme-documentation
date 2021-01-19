@@ -12,4 +12,4 @@ When this property is set to **false** for a series, the series appears invisibl
 
 In addition, you can show/hide series at runtime by using the [show()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxPolarChart/Chart_Elements/Series/Methods/#show') or [hide()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPolarChart/Chart_Elements/Series/Methods/#hide') method of a particular series respectively.
 
-[note] When the series is invisible, the marker of its [legend item](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/120%20Legend.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Legend') is faded.
+[note] When the series is invisible, the marker of its [legend item](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/120%20Legend.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Legend') is faded.

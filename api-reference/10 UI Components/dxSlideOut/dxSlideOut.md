@@ -16,7 +16,7 @@ dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slideout/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/SlideOut/Overview/"
+    url: "/Documentation/Guide/UI_Components/SlideOut/Overview/"
 }
 
 #####See Also#####

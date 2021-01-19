@@ -1,4 +1,4 @@
-UI elements like [tooltips](/concepts/05%20Widgets/Chart/30%20Tooltips/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Tooltips/Overview/') and [axis labels](/concepts/05%20Widgets/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/Widgets/Chart/Axes/Axis_Labels/') display incorrect data when you convert the chart's values from positive to negative. You can fix this by customizing these elements' text:
+UI elements like [tooltips](/concepts/05%20Widgets/Chart/30%20Tooltips/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Overview/') and [axis labels](/concepts/05%20Widgets/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Labels/') display incorrect data when you convert the chart's values from positive to negative. You can fix this by customizing these elements' text:
 
 ---
 ##### jQuery
@@ -139,7 +139,7 @@ UI elements like [tooltips](/concepts/05%20Widgets/Chart/30%20Tooltips/00%20Over
 
 ---
 
-You can also adjust the bar's width. See [Specify the Bar Width](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/#Specify_the_Bar_Width') for details.
+You can also adjust the bar's width. See [Specify the Bar Width](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/UI_Components/Chart/Series_Types/Bar_Series/#Specify_the_Bar_Width') for details.
 
 This article outlined the steps to implement a bi-directional bar chart and provided code examples for each step. Refer to the **Bi-Directional Bar Chart** demo for the full code.
 

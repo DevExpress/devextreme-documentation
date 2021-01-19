@@ -266,8 +266,8 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 
 #####See Also#####
 #include common-link-configurewidget
-- [ScrollView - Handle Scroll Gestures](/concepts/05%20Widgets/ScrollView/10%20Handle%20Scroll%20Gestures.md '/Documentation/Guide/Widgets/ScrollView/Handle_Scroll_Gestures/')
-- [ScrollView - Scroll the Content](/concepts/05%20Widgets/ScrollView/05%20Scroll%20the%20Content '/Documentation/Guide/Widgets/ScrollView/Scroll_the_Content/')
+- [ScrollView - Handle Scroll Gestures](/concepts/05%20Widgets/ScrollView/10%20Handle%20Scroll%20Gestures.md '/Documentation/Guide/UI_Components/ScrollView/Handle_Scroll_Gestures/')
+- [ScrollView - Scroll the Content](/concepts/05%20Widgets/ScrollView/05%20Scroll%20the%20Content '/Documentation/Guide/UI_Components/ScrollView/Scroll_the_Content/')
 - [ScrollView API Reference](/api-reference/10%20UI%20Widgets/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')
 
 [tags]dxscrollview, scrollView, scroll view, overview, scrolling direction, native scrolling, simulated scrolling, scrollbar

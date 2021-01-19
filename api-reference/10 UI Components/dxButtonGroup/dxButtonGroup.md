@@ -28,7 +28,7 @@ selectionMode: "multiple"
 
 ---
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/Widgets/ButtonGroup/Getting_Started_with_ButtonGroup/" 
+    url: "/Documentation/Guide/UI_Components/ButtonGroup/Getting_Started_with_ButtonGroup/" 
 }
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ButtonGroup/Overview/"

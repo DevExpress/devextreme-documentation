@@ -105,7 +105,7 @@ The selection capability is not provided out of the box, but it can be implement
 
 ---
 
-There are series that consist of points only, for example, [bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/Widgets/Chart/Series_Types/Bar_Series/') or [financial](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Financial_Series/') series. For these series, subscribe to the [pointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointClick.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#pointClick') event instead of **seriesClick**.
+There are series that consist of points only, for example, [bar](/concepts/05%20Widgets/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/UI_Components/Chart/Series_Types/Bar_Series/') or [financial](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Financial_Series/') series. For these series, subscribe to the [pointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointClick.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#pointClick') event instead of **seriesClick**.
 
 ---
 ##### jQuery
@@ -293,7 +293,7 @@ In the previous code examples, selection was cleared of a specific series. If yo
 ---
 
 #####See Also#####
-- [Access a Series Using the API](/concepts/05%20Widgets/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/Widgets/Chart/Series/Access_a_Series_Using_the_API/')
+- [Access a Series Using the API](/concepts/05%20Widgets/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Access_a_Series_Using_the_API/')
 #include common-link-handleevents
 #include common-link-callmethods
-- [Point Selection Using the API](/concepts/05%20Widgets/Chart/14%20Series%20Points/20%20Selection/01%20API.md '/Documentation/Guide/Widgets/Chart/Series_Points/Selection/#API')
+- [Point Selection Using the API](/concepts/05%20Widgets/Chart/14%20Series%20Points/20%20Selection/01%20API.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Selection/#API')

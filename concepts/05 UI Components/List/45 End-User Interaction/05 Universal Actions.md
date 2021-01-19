@@ -55,20 +55,20 @@ Universal actions are those actions that raise the same event despite being perf
 
 The **List** supports other universal actions, which are provided as a part of basic **List** functionality. They are described in the following topics.
 
-- [Scrolling - Configure User Interaction](/concepts/05%20Widgets/List/20%20Scrolling/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Scrolling/#User_Interaction')
-- [Scrolling - Handle Related Events](/concepts/05%20Widgets/List/20%20Scrolling/10%20Events.md '/Documentation/Guide/Widgets/List/Scrolling/#Events')
+- [Scrolling - Configure User Interaction](/concepts/05%20Widgets/List/20%20Scrolling/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Scrolling/#User_Interaction')
+- [Scrolling - Handle Related Events](/concepts/05%20Widgets/List/20%20Scrolling/10%20Events.md '/Documentation/Guide/UI_Components/List/Scrolling/#Events')
 <!---->
 
-- [Selection - Configure User Interaction](/concepts/05%20Widgets/List/25%20Selection/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Selection/#User_Interaction')
-- [Selection - Handle Related Events](/concepts/05%20Widgets/List/25%20Selection/10%20Events.md '/Documentation/Guide/Widgets/List/Selection/#Events')
+- [Selection - Configure User Interaction](/concepts/05%20Widgets/List/25%20Selection/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Selection/#User_Interaction')
+- [Selection - Handle Related Events](/concepts/05%20Widgets/List/25%20Selection/10%20Events.md '/Documentation/Guide/UI_Components/List/Selection/#Events')
 <!---->
 
-- [Item Reordering - Configure User Interaction](/concepts/05%20Widgets/List/30%20Item%20Reordering/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Item_Reordering/#User_Interaction')
-- [Item Reordering - Handle Related Events](/concepts/05%20Widgets/List/30%20Item%20Reordering/10%20Events.md '/Documentation/Guide/Widgets/List/Item_Reordering/#Events')
+- [Item Reordering - Configure User Interaction](/concepts/05%20Widgets/List/30%20Item%20Reordering/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Item_Reordering/#User_Interaction')
+- [Item Reordering - Handle Related Events](/concepts/05%20Widgets/List/30%20Item%20Reordering/10%20Events.md '/Documentation/Guide/UI_Components/List/Item_Reordering/#Events')
 <!---->
 
-- [Item Deletion - Configure User Interaction](/concepts/05%20Widgets/List/35%20Item%20Deletion/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Item_Deletion/#User_Interaction')
-- [Item Deletion - Handle Related Events](/concepts/05%20Widgets/List/35%20Item%20Deletion/10%20Events.md '/Documentation/Guide/Widgets/List/Item_Deletion/#Events')
+- [Item Deletion - Configure User Interaction](/concepts/05%20Widgets/List/35%20Item%20Deletion/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Item_Deletion/#User_Interaction')
+- [Item Deletion - Handle Related Events](/concepts/05%20Widgets/List/35%20Item%20Deletion/10%20Events.md '/Documentation/Guide/UI_Components/List/Item_Deletion/#Events')
 
 #####See Also#####
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)

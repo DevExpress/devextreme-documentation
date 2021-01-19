@@ -112,7 +112,7 @@ Please review the following notes about the **calculateSortValue** property.
 
 - The `this` keyword refers to the column's configuration.
 
-- When the **DataGrid** is [grouped](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/Widgets/DataGrid/Grouping/') by the column, this property is ignored. Use the [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue') property instead or additionally.
+- When the **DataGrid** is [grouped](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') by the column, this property is ignored. Use the [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue') property instead or additionally.
 
 [/note]
 

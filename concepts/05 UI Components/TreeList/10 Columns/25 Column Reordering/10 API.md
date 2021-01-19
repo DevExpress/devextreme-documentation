@@ -72,4 +72,4 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
 
 #####See Also#####
 #include common-link-callmethods
-- [Data Columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Data_Columns/')
+- [Data Columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Data_Columns/')

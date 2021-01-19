@@ -138,7 +138,7 @@ Allows you to distribute bars of a single argument between several side-by-side 
 <a href="/Demos/WidgetsGallery/Demo/Charts/StandardBar/" class="button orange small fix-width-155" target="_blank">Bar Series Demos</a>
 
 #####See Also#####
-- [Series Points](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Series_Points/Overview/')
-- [Bind Series to Data](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/Widgets/Chart/Data_Binding/Bind_Series_to_Data/')
-- [Range Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/')
-- [Bi-Directional Bar Chart](/concepts/05%20Widgets/Chart/92%20Bi-Directional%20Bar%20Chart/00%20Bi-Directional%20Bar%20Chart.md '/Documentation/Guide/Widgets/Chart/Bi-Directional_Bar_Chart/')
+- [Series Points](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/')
+- [Bind Series to Data](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/')
+- [Range Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/')
+- [Bi-Directional Bar Chart](/concepts/05%20Widgets/Chart/92%20Bi-Directional%20Bar%20Chart/00%20Bi-Directional%20Bar%20Chart.md '/Documentation/Guide/UI_Components/Chart/Bi-Directional_Bar_Chart/')

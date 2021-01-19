@@ -284,6 +284,6 @@ If you need to clear selection of all series in the **Chart** along with their p
 #####See Also#####
 #include common-link-handleevents
 #include common-link-callmethods
-- [Access a Series Point Using the API](/concepts/05%20Widgets/Chart/14%20Series%20Points/25%20Access%20a%20Series%20Point%20Using%20the%20API.md '/Documentation/Guide/Widgets/Chart/Series_Points/Access_a_Series_Point_Using_the_API/')
-- [Access a Series Using the API](/concepts/05%20Widgets/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/Widgets/Chart/Series/Access_a_Series_Using_the_API/')
-- [Series Selection Using the API](/concepts/05%20Widgets/Chart/10%20Series/20%20Selection/01%20API.md '/Documentation/Guide/Widgets/Chart/Series/Selection/#API')
+- [Access a Series Point Using the API](/concepts/05%20Widgets/Chart/14%20Series%20Points/25%20Access%20a%20Series%20Point%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Access_a_Series_Point_Using_the_API/')
+- [Access a Series Using the API](/concepts/05%20Widgets/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Access_a_Series_Using_the_API/')
+- [Series Selection Using the API](/concepts/05%20Widgets/Chart/10%20Series/20%20Selection/01%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Selection/#API')

@@ -18,7 +18,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/RangeSlider/Overview/"
+    url: "/Documentation/Guide/UI_Components/RangeSlider/Overview/"
 }
 
 #####See Also#####

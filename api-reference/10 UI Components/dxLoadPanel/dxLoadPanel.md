@@ -19,7 +19,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/LoadPanel/Overview/"
+    url: "/Documentation/Guide/UI_Components/LoadPanel/Overview/"
 }
 
 #####See Also#####

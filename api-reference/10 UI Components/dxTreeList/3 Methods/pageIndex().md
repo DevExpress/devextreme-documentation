@@ -6,4 +6,4 @@ When the [scrolling mode](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Config
 
 #####See Also#####
 #include common-link-callmethods
-- [Paging - API](/concepts/05%20Widgets/TreeList/35%20Paging/20%20API.md '/Documentation/Guide/Widgets/TreeList/Paging/#API')
+- [Paging - API](/concepts/05%20Widgets/TreeList/35%20Paging/20%20API.md '/Documentation/Guide/UI_Components/TreeList/Paging/#API')

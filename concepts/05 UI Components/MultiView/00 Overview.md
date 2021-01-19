@@ -110,13 +110,13 @@ In the most simple case, the **MultiView** UI component requires only the [dataS
 
 ---
 
-More often, structure of the data source item differs from the default. For correct rendering of views, specify a [custom template](/concepts/05%20Widgets/MultiView/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/MultiView/Customize_Item_Appearance'). 
+More often, structure of the data source item differs from the default. For correct rendering of views, specify a [custom template](/concepts/05%20Widgets/MultiView/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/MultiView/Customize_Item_Appearance'). 
 
 #####See Also#####
 #include common-link-configurewidget
-- [MultiView - Customize Item Appearance](/concepts/05%20Widgets/MultiView/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/MultiView/Customize_Item_Appearance')
-- [MultiView - Switch Between Views](/concepts/05%20Widgets/MultiView/10%20Switch%20Between%20Views.md '/Documentation/Guide/Widgets/MultiView/Switch_Between_Views')
-- [MultiView - Loop the Views](/concepts/05%20Widgets/MultiView/15%20Loop%20the%20Views.md '/Documentation/Guide/Widgets/MultiView/Loop_the_Views')
+- [MultiView - Customize Item Appearance](/concepts/05%20Widgets/MultiView/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/MultiView/Customize_Item_Appearance')
+- [MultiView - Switch Between Views](/concepts/05%20Widgets/MultiView/10%20Switch%20Between%20Views.md '/Documentation/Guide/UI_Components/MultiView/Switch_Between_Views')
+- [MultiView - Loop the Views](/concepts/05%20Widgets/MultiView/15%20Loop%20the%20Views.md '/Documentation/Guide/UI_Components/MultiView/Loop_the_Views')
 - [MultiView API Reference](/api-reference/10%20UI%20Widgets/dxMultiView '/Documentation/ApiReference/UI_Components/dxMultiView/')
 
 [tags]dxmultiview, multi view, multiView, collection container, collection UI component, navigation, overview

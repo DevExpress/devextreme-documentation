@@ -14,7 +14,7 @@ The **visual range** specifies the axis range visible to the user. Use it to foc
     </figure>
 </div>
 
-Users can change the visual range if [zooming and panning](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/Widgets/Chart/Zooming_and_Panning/') are enabled. However, users cannot move the visual range outside the data range (to an area with no data). If they should be able to do this, specify the **whole range**. It sets new limits for the visual range.
+Users can change the visual range if [zooming and panning](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/') are enabled. However, users cannot move the visual range outside the data range (to an area with no data). If they should be able to do this, specify the **whole range**. It sets new limits for the visual range.
 
 Both ranges can be specified using the start and end values or length. Refer to the [visualRange](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') or [wholeRange](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/wholeRange/') property's description for more information.
 
@@ -156,8 +156,8 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
 An axis' visual range can behave differently when chart data is updated. See the **visualRangeUpdateMode** property for the [argument axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode') or [value axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#visualRangeUpdateMode') for more information.
 
 #####See Also#####
-- [Scale Breaks](/concepts/05%20Widgets/Chart/20%20Axes/33%20Scale%20Breaks.md '/Documentation/Guide/Widgets/Chart/Axes/Scale_Breaks/')
-- [Rotate and Invert the Chart](/concepts/05%20Widgets/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/Widgets/Chart/Rotate_and_Invert_the_Chart/')
+- [Scale Breaks](/concepts/05%20Widgets/Chart/20%20Axes/33%20Scale%20Breaks.md '/Documentation/Guide/UI_Components/Chart/Axes/Scale_Breaks/')
+- [Rotate and Invert the Chart](/concepts/05%20Widgets/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/UI_Components/Chart/Rotate_and_Invert_the_Chart/')
 
 <style>
     #figures {

@@ -10,7 +10,7 @@ notUsedInTheme:
 Specifies properties for series.
 
 ---
-A Series represents a grouping of related data points. The most important characteristic of a series is its type, which determines a particular visual representation of data. You can find more details on each series type in the corresponding topics in the [Series](/concepts/05%20Widgets/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Series/Overview/') help section.
+A Series represents a grouping of related data points. The most important characteristic of a series is its type, which determines a particular visual representation of data. You can find more details on each series type in the corresponding topics in the [Series](/concepts/05%20Widgets/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/') help section.
 
 To define a single series, assign an object defining the series to the **series** configuration object. In the series' object, specify the series type and data source fields. In addition, you can specify the appearance of the series points and other properties.
 

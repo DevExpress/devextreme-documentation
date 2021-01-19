@@ -21,5 +21,5 @@ To subscribe to changes of the current view, use the [onOptionChanged](/Document
 }
 
 #####See Also#####
-- [Views](/concepts/05%20Widgets/Scheduler/060%20Views '/Documentation/Guide/Widgets/Scheduler/Views/')
-- [View Switcher](/concepts/05%20Widgets/Scheduler/070%20View%20Switcher.md '/Documentation/Guide/Widgets/Scheduler/View_Switcher/')
+- [Views](/concepts/05%20Widgets/Scheduler/060%20Views '/Documentation/Guide/UI_Components/Scheduler/Views/')
+- [View Switcher](/concepts/05%20Widgets/Scheduler/070%20View%20Switcher.md '/Documentation/Guide/UI_Components/Scheduler/View_Switcher/')

@@ -1,4 +1,4 @@
-To select a data point, use its **select()** method. For instance, you can select a point on a click using the chart's **onPointClick** handler (see [Click Handling](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/90%20Charts%20-%20End-User%20Interaction/2%20Click%20Handling '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_End-User_Interaction/Click_Handling')).
+To select a data point, use its **select()** method. For instance, you can select a point on a click using the chart's **onPointClick** handler (see [Click Handling](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/90%20Charts%20-%20End-User%20Interaction/2%20Click%20Handling '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_End-User_Interaction/Click_Handling')).
 
 	<!--JavaScript-->var chartOptions = {
 		onPointClick: function (info) {

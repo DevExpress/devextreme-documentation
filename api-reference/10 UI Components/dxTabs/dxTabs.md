@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-The **Tabs** is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') UI component, but you can use the **Tabs** separately as well.
+The **Tabs** is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/UI_Components/TabPanel/Overview/') UI component, but you can use the **Tabs** separately as well.
 
 ##### widgettree
 dataSource: [
@@ -22,7 +22,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Tabs/Overview/"
+    url: "/Documentation/Guide/UI_Components/Tabs/Overview/"
 }
 
 #####See Also#####

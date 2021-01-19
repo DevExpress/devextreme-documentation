@@ -157,6 +157,6 @@ Another way to deal with overlapping labels is to hide all labels of a specific 
 }
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/PieChart/89%20Adaptive%20Layout.md '/Documentation/Guide/Widgets/PieChart/Adaptive_Layout/')
-- [Relocate Labels](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/07%20Relocate%20Labels.md '/Documentation/Guide/Widgets/PieChart/Point_Labels/Relocate_Labels/')
-- [Equally-Sized Pies](/concepts/05%20Widgets/PieChart/95%20Equally-Sized%20Pies.md '/Documentation/Guide/Widgets/PieChart/Equally-Sized_Pies/')
+- [Adaptive Layout](/concepts/05%20Widgets/PieChart/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/PieChart/Adaptive_Layout/')
+- [Relocate Labels](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/07%20Relocate%20Labels.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Relocate_Labels/')
+- [Equally-Sized Pies](/concepts/05%20Widgets/PieChart/95%20Equally-Sized%20Pies.md '/Documentation/Guide/UI_Components/PieChart/Equally-Sized_Pies/')

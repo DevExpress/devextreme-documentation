@@ -55,4 +55,4 @@ The task values before update.
 
 #####See Also#####
 - [taskUpdating](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskUpdating)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

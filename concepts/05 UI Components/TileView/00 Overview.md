@@ -184,8 +184,8 @@ By default, the UI component is oriented horizontally, but you can orient it ver
 
 #####See Also#####
 #include common-link-configurewidget
-- [TileView - Specify the Size of Tiles](/concepts/05%20Widgets/TileView/03%20Specify%20the%20Size%20of%20Tiles.md '/Documentation/Guide/Widgets/TileView/Specify_the_Size_of_Tiles')
-- [TileView - Customize Tile Appearance](/concepts/05%20Widgets/TileView/05%20Customize%20Tile%20Appearance.md '/Documentation/Guide/Widgets/TileView/Customize_Tile_Appearance')
+- [TileView - Specify the Size of Tiles](/concepts/05%20Widgets/TileView/03%20Specify%20the%20Size%20of%20Tiles.md '/Documentation/Guide/UI_Components/TileView/Specify_the_Size_of_Tiles')
+- [TileView - Customize Tile Appearance](/concepts/05%20Widgets/TileView/05%20Customize%20Tile%20Appearance.md '/Documentation/Guide/UI_Components/TileView/Customize_Tile_Appearance')
 - [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
 [tags]dxtileview, tile view, tileView, collection container, collection UI component, navigation, overview

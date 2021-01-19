@@ -3,19 +3,19 @@ The **Scheduler** is a UI component that represents scheduled data and allows a 
 <p style="display:inline-block"><img src="/images/UiWidgets/Scheduler_Overview.png" usemap="#image-map" alt="DevExtreme HTML5 JavaScript Scheduler"></p>
 
 <map name="image-map">
-    <area target="" alt="View Switcher" title="View Switcher" href="/Documentation/Guide/Widgets/Scheduler/View_Switcher/" coords="480,122,769,70" shape="rect">
-    <area target="" alt="Resource Headers" title="Resource Headers" href="/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/" coords="131,161,769,123" shape="rect">
-    <area target="" alt="All-Day Panel" title="All-Day Panel" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/#All-Day_Appointments" coords="234,167,234,236,507,238,509,198,769,200,770,189,493,189,494,164,377,165" shape="poly">
-    <area target="" alt="Appointment Tooltip" title="Appointment Tooltip" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Customize_Appointment_Tooltip/" coords="507,291,758,202" shape="rect">
-    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/" coords="236,432,477,340" shape="rect">
-    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/" coords="237,311,477,239" shape="rect">
-    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/" coords="501,384,741,308" shape="rect">
-    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/" coords="499,184,767,162" shape="rect">
-    <area target="" alt="Current Time Indicator" title="Current Time Indicator" href="/Documentation/Guide/Widgets/Scheduler/Current_Time_Indication/" coords="226,442,237,443,237,474,249,478,770,478,770,493,240,490,238,499,237,516,227,517,226,477" shape="poly">
-    <area target="" alt="Timetable" title="Timetable" href="/Documentation/Guide/Widgets/Scheduler/Timetable/" coords="132,166,231,162,232,313,481,315,483,241,504,242,503,290,761,294,771,365,746,362,747,306,502,302,499,390,628,393,629,475,240,470,240,442,481,439,483,338,233,335,222,427,223,514,133,514" shape="poly">
-    <area target="" alt="Timetable" title="Timetable" href="/Documentation/Guide/Widgets/Scheduler/Timetable/" coords="244,495,243,514,769,518,767,498,713,501" shape="poly">
-    <area target="" alt="Drop-Down List" title="Drop-Down List" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Cell_Overflow_Indicator/" coords="635,464,849,402" shape="rect">
-    <area target="" alt="Cell Overflow Indicator" title="Cell Overflow Indicator" href="/Documentation/Guide/Widgets/Scheduler/Appointments/Cell_Overflow_Indicator/" coords="745,385,769,366" shape="rect">
+    <area target="" alt="View Switcher" title="View Switcher" href="/Documentation/Guide/UI_Components/Scheduler/View_Switcher/" coords="480,122,769,70" shape="rect">
+    <area target="" alt="Resource Headers" title="Resource Headers" href="/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/" coords="131,161,769,123" shape="rect">
+    <area target="" alt="All-Day Panel" title="All-Day Panel" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#All-Day_Appointments" coords="234,167,234,236,507,238,509,198,769,200,770,189,493,189,494,164,377,165" shape="poly">
+    <area target="" alt="Appointment Tooltip" title="Appointment Tooltip" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/" coords="507,291,758,202" shape="rect">
+    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/" coords="236,432,477,340" shape="rect">
+    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/" coords="237,311,477,239" shape="rect">
+    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/" coords="501,384,741,308" shape="rect">
+    <area target="" alt="Appointment" title="Appointment" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/" coords="499,184,767,162" shape="rect">
+    <area target="" alt="Current Time Indicator" title="Current Time Indicator" href="/Documentation/Guide/UI_Components/Scheduler/Current_Time_Indication/" coords="226,442,237,443,237,474,249,478,770,478,770,493,240,490,238,499,237,516,227,517,226,477" shape="poly">
+    <area target="" alt="Timetable" title="Timetable" href="/Documentation/Guide/UI_Components/Scheduler/Timetable/" coords="132,166,231,162,232,313,481,315,483,241,504,242,503,290,761,294,771,365,746,362,747,306,502,302,499,390,628,393,629,475,240,470,240,442,481,439,483,338,233,335,222,427,223,514,133,514" shape="poly">
+    <area target="" alt="Timetable" title="Timetable" href="/Documentation/Guide/UI_Components/Scheduler/Timetable/" coords="244,495,243,514,769,518,767,498,713,501" shape="poly">
+    <area target="" alt="Drop-Down List" title="Drop-Down List" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/" coords="635,464,849,402" shape="rect">
+    <area target="" alt="Cell Overflow Indicator" title="Cell Overflow Indicator" href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/" coords="745,385,769,366" shape="rect">
 </map>
 
 #include common-demobutton with {
@@ -314,8 +314,8 @@ If your appointments have a different structure, specify:
 ---
 
 #####See Also#####
-- [Scheduler - Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/Widgets/Scheduler/Data_Binding/')
-- [Scheduler - Views](/concepts/05%20Widgets/Scheduler/060%20Views '/Documentation/Guide/Widgets/Scheduler/Views/')
-- [Scheduler - Keyboard Support](/concepts/05%20Widgets/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Scheduler/Keyboard_Support/')
+- [Scheduler - Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/UI_Components/Scheduler/Data_Binding/')
+- [Scheduler - Views](/concepts/05%20Widgets/Scheduler/060%20Views '/Documentation/Guide/UI_Components/Scheduler/Views/')
+- [Scheduler - Keyboard Support](/concepts/05%20Widgets/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Keyboard_Support/')
 
 [tags]dxscheduler, scheduler, overview, textExpr, startDateExpr, endDateExpr

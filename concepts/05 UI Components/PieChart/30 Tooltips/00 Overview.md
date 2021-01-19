@@ -199,5 +199,5 @@ Options declared in the **tooltip** object apply to all tooltips in the **PieCha
 }
 
 #####See Also#####
-- [Show and Hide a Tooltip](/concepts/05%20Widgets/PieChart/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/Widgets/PieChart/Tooltips/Show_and_Hide_a_Tooltip/')
-- [Handle Tooltip Events](/concepts/05%20Widgets/PieChart/30%20Tooltips/20%20Handle%20Tooltip%20Events.md '/Documentation/Guide/Widgets/PieChart/Tooltips/Handle_Tooltip_Events/')
+- [Show and Hide a Tooltip](/concepts/05%20Widgets/PieChart/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/PieChart/Tooltips/Show_and_Hide_a_Tooltip/')
+- [Handle Tooltip Events](/concepts/05%20Widgets/PieChart/30%20Tooltips/20%20Handle%20Tooltip%20Events.md '/Documentation/Guide/UI_Components/PieChart/Tooltips/Handle_Tooltip_Events/')

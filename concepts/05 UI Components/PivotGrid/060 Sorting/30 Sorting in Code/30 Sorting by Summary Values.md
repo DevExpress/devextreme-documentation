@@ -26,7 +26,7 @@ In this case, to sort the *"Region"* field by summary values, call the [field(id
     });
     pivotGridDataSource.load();
     
-The code snippet above will sort the *"Region"* field by [Grand Totals](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Totals'). To sort the same field by Totals of a specific column, specify the path to this column using the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/sortBySummaryPath.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryPath') option. For example, the following code will sort the *"Region"* field by Totals of the *"2015"* column.
+The code snippet above will sort the *"Region"* field by [Grand Totals](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals'). To sort the same field by Totals of a specific column, specify the path to this column using the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/sortBySummaryPath.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryPath') option. For example, the following code will sort the *"Region"* field by Totals of the *"2015"* column.
 
     <!--JavaScript-->var pivotGridDataSource = pivotGridInstance.getDataSource();
     pivotGridDataSource.field("Region", {

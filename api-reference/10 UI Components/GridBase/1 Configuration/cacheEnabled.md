@@ -15,5 +15,5 @@ To update data in cache, call the [refresh()](/api-reference/10%20UI%20Widgets/G
 [note]If you fetch data from the server, some operations with data can be executed [remotely](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/'), while others - locally. If you perform basic operations (sorting, filtering, and paging) remotely and advanced operations (grouping and summary calculation) locally, certain user actions will force **DataGrid** to query the server for data repeatedly despite caching being enabled. Particularly, the advanced operations demand data to be reloaded completely  from the server to provide correct results.
 
 #####See Also#####
-- [Data Caching](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/35%20Data%20Caching.md '/Documentation/Guide/Widgets/DataGrid/Data_Binding/Data_Caching/')
+- [Data Caching](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/35%20Data%20Caching.md '/Documentation/Guide/UI_Components/DataGrid/Data_Binding/Data_Caching/')
 - [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '{basewidgetpath}/Methods/#getDataSource')

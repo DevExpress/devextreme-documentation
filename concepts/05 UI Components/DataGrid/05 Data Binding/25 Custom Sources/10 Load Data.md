@@ -2,14 +2,14 @@ The **CustomStore** requires the [load](/api-reference/30%20Data%20Layer/CustomS
 
 - **Paging settings**: [take](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/take.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#take'), [skip](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/skip.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#skip'), [requireTotalCount](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/requireTotalCount.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#requireTotalCount')    
 
-    [note] When [scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/Widgets/DataGrid/Scrolling/') is infinite, **requireTotalCount** is **false**. It should not be changed to ensure scrolling works properly.
+    [note] When [scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/UI_Components/DataGrid/Scrolling/') is infinite, **requireTotalCount** is **false**. It should not be changed to ensure scrolling works properly.
 
 - **Sorting settings**: [sort](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/sort.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#sort')         
 
 - **Filtering settings**: [filter](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/filter.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#filter')    
 
 - **Grouping settings**: [group](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/group.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#group')      
- The **groupInterval** field of the **group** setting is present only when the UI component requests the [header filter](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/Widgets/DataGrid/Filtering_and_Searching/#Header_Filter')'s data, and only if this data contains numbers or dates. Note that for numbers, the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') option should be specified explicitly.
+ The **groupInterval** field of the **group** setting is present only when the UI component requests the [header filter](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Header_Filter')'s data, and only if this data contains numbers or dates. Note that for numbers, the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') option should be specified explicitly.
 
 - **Summary calculation settings**: [totalSummary](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/totalSummary.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#totalSummary'), [groupSummary](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/groupSummary.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#groupSummary')      
 

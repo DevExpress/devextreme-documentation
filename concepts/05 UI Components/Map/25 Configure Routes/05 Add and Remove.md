@@ -326,8 +326,8 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** opti
 ---
 
 #####See Also#####
-- [Map - Customize Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/Widgets/Map/Configure_Routes/Customize/')
-- [Map - Handle Route Related Events](/concepts/05%20Widgets/Map/25%20Configure%20Routes/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/Widgets/Map/Configure_Routes/Handle_the_Related_Events/')
+- [Map - Customize Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Customize/')
+- [Map - Handle Route Related Events](/concepts/05%20Widgets/Map/25%20Configure%20Routes/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Handle_the_Related_Events/')
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
 - [Map API Reference](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 

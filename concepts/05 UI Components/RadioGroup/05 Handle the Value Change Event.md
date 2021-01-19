@@ -148,7 +148,7 @@ If you are going to change event handlers at runtime, or if you need to attach s
 
 #####See Also#####
 #include common-link-handleevents
-- [RadioGroup - Customize Item Appearance](/concepts/05%20Widgets/RadioGroup/10%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/RadioGroup/Customize_Item_Appearance')
+- [RadioGroup - Customize Item Appearance](/concepts/05%20Widgets/RadioGroup/10%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/RadioGroup/Customize_Item_Appearance')
 - [RadioGroup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RadioGroup/Overview)
 - [RadioGroup API Reference](/api-reference/10%20UI%20Widgets/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/')
 

@@ -24,7 +24,7 @@ items: [
 
 ---
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/Widgets/DropDownButton/Getting_Started_with_DropDownButton/"
+    url: "/Documentation/Guide/UI_Components/DropDownButton/Getting_Started_with_DropDownButton/"
 }
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton/Overview/"

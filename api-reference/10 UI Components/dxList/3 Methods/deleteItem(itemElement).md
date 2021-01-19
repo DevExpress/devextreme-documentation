@@ -14,4 +14,4 @@ The item's DOM node.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [List - Item Deletion API](/concepts/05%20Widgets/List/35%20Item%20Deletion/05%20API.md '/Documentation/Guide/Widgets/List/Item_Deletion/#API')
+- [List - Item Deletion API](/concepts/05%20Widgets/List/35%20Item%20Deletion/05%20API.md '/Documentation/Guide/UI_Components/List/Item_Deletion/#API')

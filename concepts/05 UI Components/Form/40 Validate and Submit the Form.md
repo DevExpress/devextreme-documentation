@@ -1,4 +1,4 @@
-The **Form** UI component uses the built-in validation engine to validate form item values. You can attach validation rules to a simple item using its [validationRules](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/validationRules.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules') option when you [create items explicitly](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/01%20Create%20a%20Simple%20Item.md '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/#Create_a_Simple_Item')...
+The **Form** UI component uses the built-in validation engine to validate form item values. You can attach validation rules to a simple item using its [validationRules](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/validationRules.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules') option when you [create items explicitly](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/01%20Create%20a%20Simple%20Item.md '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/#Create_a_Simple_Item')...
 
 ---
 ##### jQuery
@@ -149,7 +149,7 @@ The **Form** UI component uses the built-in validation engine to validate form i
 
 ---
 
-... or when you [customize automatically generated items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/#Customize_a_Simple_Item').
+... or when you [customize automatically generated items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/#Customize_a_Simple_Item').
 
 ---
 ##### jQuery
@@ -439,8 +439,8 @@ Usually, **Form** editors should be submitted to the server after being successf
 }
 
 #####See Also#####
-- [Data Validation](/concepts/05%20Widgets/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/Widgets/Common/UI_Widgets/Data_Validation/')
+- [Data Validation](/concepts/05%20Widgets/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
 - <a href="https://docs.devexpress.com/AspNetCore/400576/devextreme-based-controls/concepts/data-validation#validate-and-submit-the-form-control" target="_blank">ASP.NET MVC Controls - Validate and Submit the Form Control</a>
-- [Button - Validate and Submit an HTML Form](/concepts/05%20Widgets/Button/10%20Validate%20and%20Submit%20an%20HTML%20Form.md '/Documentation/Guide/Widgets/Button/Validate_and_Submit_an_HTML_Form/')
+- [Button - Validate and Submit an HTML Form](/concepts/05%20Widgets/Button/10%20Validate%20and%20Submit%20an%20HTML%20Form.md '/Documentation/Guide/UI_Components/Button/Validate_and_Submit_an_HTML_Form/')
 
 [tags]form, validation, validation rules, validate, validation summary, validation group, validationGroup, submit form, submit behavior

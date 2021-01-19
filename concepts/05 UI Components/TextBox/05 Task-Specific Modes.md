@@ -72,7 +72,7 @@ Depending on the value the **TextBox** should hold, specify the UI component [mo
 ---
 
 #####See Also#####
-- [TextBox - Specify a Mask for the Input](/concepts/05%20Widgets/TextBox/20%20Specify%20a%20Mask%20for%20the%20Input.md '/Documentation/Guide/Widgets/TextBox/Specify_a_Mask_for_the_Input/')
+- [TextBox - Specify a Mask for the Input](/concepts/05%20Widgets/TextBox/20%20Specify%20a%20Mask%20for%20the%20Input.md '/Documentation/Guide/UI_Components/TextBox/Specify_a_Mask_for_the_Input/')
 - [TextBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview)
 - [TextBox API Reference](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/')
 

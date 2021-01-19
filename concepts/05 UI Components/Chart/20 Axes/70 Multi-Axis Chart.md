@@ -307,8 +307,8 @@ All value axes in the **Chart** are synchronized by default, but you can explici
 }
 
 #####See Also#####
-- [Multi-Pane Chart](/concepts/05%20Widgets/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/Widgets/Chart/Panes/Multi-Pane_Chart/')
-- [Limit and Relocate the Axes](/concepts/05%20Widgets/Chart/20%20Axes/40%20Limit%20and%20Relocate%20the%20Axes.md '/Documentation/Guide/Widgets/Chart/Axes/Limit_and_Relocate_the_Axes/')
+- [Multi-Pane Chart](/concepts/05%20Widgets/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/UI_Components/Chart/Panes/Multi-Pane_Chart/')
+- [Limit and Relocate the Axes](/concepts/05%20Widgets/Chart/20%20Axes/40%20Limit%20and%20Relocate%20the%20Axes.md '/Documentation/Guide/UI_Components/Chart/Axes/Limit_and_Relocate_the_Axes/')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, multiple value axes, synchronize axes, synchronizedValue, multipleAxesSpacing

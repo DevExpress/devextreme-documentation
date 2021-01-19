@@ -3,14 +3,14 @@ id: dxHtmlEditor.formatText(index, length, formatName, formatValue)
 ---
 ---
 ##### shortDescription
-Applies a single [text format](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/Widgets/HtmlEditor/Formats/') to all characters in the given range.
+Applies a single [text format](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') to all characters in the given range.
 
 ##### param(index): Number
 A zero-based index at which to begin formatting.
 
 ##### param(length): Number
 The length of the content to be formatted.      
-[Embedded items](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/Widgets/HtmlEditor/Formats/') have a length of 1.
+[Embedded items](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') have a length of 1.
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
 A format name.

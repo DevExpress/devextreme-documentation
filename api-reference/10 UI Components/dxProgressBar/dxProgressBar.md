@@ -18,7 +18,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/ProgressBar/Overview/"
+    url: "/Documentation/Guide/UI_Components/ProgressBar/Overview/"
 }
 
 #####See Also#####

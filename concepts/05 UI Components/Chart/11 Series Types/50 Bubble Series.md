@@ -1,4 +1,4 @@
-The **Bubble** series type visualizes data as individual points of different sizes called "bubbles". Because **Bubble** series have the additional size characteristic, they can convey more information than, for example, [Line](/concepts/05%20Widgets/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Line_Series/') or [Scatter](/concepts/05%20Widgets/Chart/11%20Series%20Types/40%20Scatter%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Scatter_Series/') series.
+The **Bubble** series type visualizes data as individual points of different sizes called "bubbles". Because **Bubble** series have the additional size characteristic, they can convey more information than, for example, [Line](/concepts/05%20Widgets/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Line_Series/') or [Scatter](/concepts/05%20Widgets/Chart/11%20Series%20Types/40%20Scatter%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Scatter_Series/') series.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bubble.html, /Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bubble.js"></div>
 
@@ -134,5 +134,5 @@ Refer to the [BubbleSeries](/api-reference/20%20Data%20Visualization%20Widgets/d
 }
 
 #####See Also#####
-- [Series Points](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Series_Points/Overview/')
-- [Bind Series to Data](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/Widgets/Chart/Data_Binding/Bind_Series_to_Data/')
+- [Series Points](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/')
+- [Bind Series to Data](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/')

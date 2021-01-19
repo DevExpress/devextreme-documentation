@@ -285,7 +285,7 @@ If you need to disable the mouse wheel or touch support, set the [allowMouseWhee
 
 ---
 
-Users cannot zoom or scroll the chart out of the whole range. Refer to the [Visual and Whole Ranges](/concepts/05%20Widgets/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/Widgets/Chart/Axes/Visual_and_Whole_Ranges/') article for more information.
+Users cannot zoom or scroll the chart out of the whole range. Refer to the [Visual and Whole Ranges](/concepts/05%20Widgets/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/UI_Components/Chart/Axes/Visual_and_Whole_Ranges/') article for more information.
 
 #####See Also#####
-- [Set the Initial Zoom](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning/15%20Set%20the%20Initial%20Zoom.md '/Documentation/Guide/Widgets/Chart/Zooming_and_Panning/#Set_the_Initial_Zoom')
+- [Set the Initial Zoom](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning/15%20Set%20the%20Initial%20Zoom.md '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/#Set_the_Initial_Zoom')

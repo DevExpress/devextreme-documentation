@@ -161,4 +161,4 @@ You can set the title's text more concisely if you assign it directly to the **t
 }
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/Sankey/89%20Adaptive%20Layout.md '/Documentation/Guide/Widgets/Sankey/Adaptive_Layout/')
+- [Adaptive Layout](/concepts/05%20Widgets/Sankey/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Sankey/Adaptive_Layout/')

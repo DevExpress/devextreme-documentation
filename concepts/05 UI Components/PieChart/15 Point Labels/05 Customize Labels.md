@@ -237,5 +237,5 @@ You can also customize an individual label. For this purpose, assign a function 
 ---
 
 #####See Also#####
-- [Resolve Label Overlapping](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/Widgets/PieChart/Point_Labels/Resolve_Overlapping/')
-- [Access a Label Using the API](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/15%20Access%20a%20Label%20Using%20the%20API.md '/Documentation/Guide/Widgets/PieChart/Point_Labels/Access_a_Label_Using_the_API/')
+- [Resolve Label Overlapping](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Resolve_Overlapping/')
+- [Access a Label Using the API](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/15%20Access%20a%20Label%20Using%20the%20API.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Access_a_Label_Using_the_API/')

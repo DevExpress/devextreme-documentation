@@ -194,7 +194,7 @@ Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20
     ---
 
 - **By index**        
-Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') or [unselectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/'), these methods should be given an object with the indexes of the group and the item.
+Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') or [unselectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/'), these methods should be given an object with the indexes of the group and the item.
 
     ---
     ##### jQuery

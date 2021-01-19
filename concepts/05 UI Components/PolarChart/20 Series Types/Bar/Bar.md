@@ -1,4 +1,4 @@
-In the *bar* series type, data is displayed as sets of rectangular bars with lengths proportional to the values that they represent. Often, *bar* series are used to compare values in different discrete categories such as months, countries, age, etc. When there are several bar series, bars for each argument are displayed side-by-side. If you need to show bars for each series stacked on each other, use the *stackedBar* series type (see [Stacked Bar](/concepts/05%20Widgets/PolarChart/20%20Series%20Types/Stacked%20Bar.md '/Documentation/Guide/Widgets/PolarChart/Series_Types/#Stacked_Bar')).
+In the *bar* series type, data is displayed as sets of rectangular bars with lengths proportional to the values that they represent. Often, *bar* series are used to compare values in different discrete categories such as months, countries, age, etc. When there are several bar series, bars for each argument are displayed side-by-side. If you need to show bars for each series stacked on each other, use the *stackedBar* series type (see [Stacked Bar](/concepts/05%20Widgets/PolarChart/20%20Series%20Types/Stacked%20Bar.md '/Documentation/Guide/UI_Components/PolarChart/Series_Types/#Stacked_Bar')).
 
 ![PolarBarSeriesType ChartJS](/images/ChartJS/PolarBar.png)
 
@@ -15,7 +15,7 @@ To use the *bar* series type, assign *'bar'* to the **type** property of the **s
         }
     };
 
-To learn how to specify data for a series, refer to the [Data Binding](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/10%20Provide%20Data '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Provide_Data/') topic.
+To learn how to specify data for a series, refer to the [Data Binding](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/10%20Provide%20Data '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Provide_Data/') topic.
 
 To change the series default appearance, set the options of the **series** configuration object. For instance, you can change the following.
 
@@ -29,6 +29,6 @@ To change the series default appearance, set the options of the **series** confi
     Set a corner radius for bars using the series' **cornerRadius** property. This is helpful if you need rounded corners in bars.
     
 *   **Bar Label Options**  
-    Make bar labels visible by setting the **visible** property of the series' [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/label/') object. For details on other label options, refer to the [Series Point Labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/030%20Series%20Point%20Labels.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Series_Point_Labels') topic.
+    Make bar labels visible by setting the **visible** property of the series' [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/label/') object. For details on other label options, refer to the [Series Point Labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/030%20Series%20Point%20Labels.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Series_Point_Labels') topic.
 
 These and other options that can be set for *bar* series are explained in the [BarSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/BarSeries '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/') Reference section. Set the required series options within the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/') object of the chart's configuration object.

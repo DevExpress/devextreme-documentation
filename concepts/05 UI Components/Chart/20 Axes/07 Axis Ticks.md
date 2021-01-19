@@ -97,7 +97,7 @@ To configure major or minor ticks, use the [tick](/api-reference/20%20Data%20Vis
 ---
 
 #####See Also#####
-- [Arrange Axis Ticks](/concepts/05%20Widgets/Chart/20%20Axes/10%20Arrange%20Axis%20Ticks '/Documentation/Guide/Widgets/Chart/Axes/Arrange_Axis_Ticks/')
+- [Arrange Axis Ticks](/concepts/05%20Widgets/Chart/20%20Axes/10%20Arrange%20Axis%20Ticks '/Documentation/Guide/UI_Components/Chart/Axes/Arrange_Axis_Ticks/')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, axis ticks, major ticks, minor ticks, ticks' appearance

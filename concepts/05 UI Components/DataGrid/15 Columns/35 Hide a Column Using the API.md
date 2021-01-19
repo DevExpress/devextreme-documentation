@@ -142,4 +142,4 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
 ---
 
 #####See Also#####
-- [Column Chooser](/concepts/05%20Widgets/DataGrid/15%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Chooser/')
+- [Column Chooser](/concepts/05%20Widgets/DataGrid/15%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Chooser/')

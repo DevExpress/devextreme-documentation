@@ -18,7 +18,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Switch/Overview/"
+    url: "/Documentation/Guide/UI_Components/Switch/Overview/"
 }
 
 #####See Also#####

@@ -20,7 +20,7 @@ The **Scheduler** UI component supports the following timeline views.
 
 [note] An appointment's size depends on its duration in days. Even if an appointment lasts only for several hours or minutes, it occupies the entire day cell.
 
-If you [group appointments by resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/Widgets/Scheduler/Resources/Group_Appointments_by_Resources/'), the resource headers are located at the left side of the view.
+If you [group appointments by resources](/concepts/05%20Widgets/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/'), the resource headers are located at the left side of the view.
 
 ![Resource Headers](/images/UiWidgets/Scheduler_Timeline_Resource_Headers.png)
 

@@ -240,4 +240,4 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 }
 
 #####See Also#####
-- [Customize Column Headers](/concepts/05%20Widgets/DataGrid/15%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/Widgets/DataGrid/Columns/Customize_Column_Headers/')
+- [Customize Column Headers](/concepts/05%20Widgets/DataGrid/15%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Column_Headers/')

@@ -198,5 +198,5 @@ The value axis supports auto-calculated scale breaks, which can be enabled by se
 ---
 
 #####See Also#####
-- [Strips](/concepts/05%20Widgets/Chart/60%20Strips.md '/Documentation/Guide/Widgets/Chart/Strips/')
-- [Constant Lines](/concepts/05%20Widgets/Chart/65%20Constant%20Lines.md '/Documentation/Guide/Widgets/Chart/Constant_Lines/')
+- [Strips](/concepts/05%20Widgets/Chart/60%20Strips.md '/Documentation/Guide/UI_Components/Chart/Strips/')
+- [Constant Lines](/concepts/05%20Widgets/Chart/65%20Constant%20Lines.md '/Documentation/Guide/UI_Components/Chart/Constant_Lines/')

@@ -12,5 +12,5 @@ The column chooser allows a user to hide columns at runtime. To enable it, assig
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout {WidgetName} Column Chooser](/images/{WidgetName}/visual_elements/column_chooser.png)
 
 #####See Also#####
-- [Column Chooser](/concepts/05%20Widgets/DataGrid/15%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Chooser/')
+- [Column Chooser](/concepts/05%20Widgets/DataGrid/15%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Chooser/')
 - **columns[]**.[allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.md '{basewidgetpath}/Configuration/columns/#allowHiding')

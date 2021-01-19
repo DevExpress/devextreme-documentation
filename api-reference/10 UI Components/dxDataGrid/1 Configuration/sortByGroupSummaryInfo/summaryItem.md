@@ -236,4 +236,4 @@ The **summaryItem** option accepts one of the following values.
     ---
 
 #####See Also#####
--[Sort by Group Summary](/concepts/05%20Widgets/DataGrid/65%20Summaries/20%20Group%20Summary/15%20Sort%20by%20Group%20Summary.md '/Documentation/Guide/Widgets/DataGrid/Summaries/Group_Summary/#Sort_by_Group_Summary')
+-[Sort by Group Summary](/concepts/05%20Widgets/DataGrid/65%20Summaries/20%20Group%20Summary/15%20Sort%20by%20Group%20Summary.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/#Sort_by_Group_Summary')

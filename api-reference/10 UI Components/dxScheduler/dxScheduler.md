@@ -19,7 +19,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Scheduler/Overview/"
+    url: "/Documentation/Guide/UI_Components/Scheduler/Overview/"
 }
 
 #####See Also#####

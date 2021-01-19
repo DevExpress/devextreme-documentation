@@ -10,7 +10,7 @@ The **Drawer** is a dismissible or permanently visible panel used for navigation
 
 ---
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/Widgets/Drawer/Getting_Started_with_Navigation_Drawer/" 
+    url: "/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/" 
 }
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/HorizontalOpening/"

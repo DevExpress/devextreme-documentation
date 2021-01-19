@@ -114,7 +114,7 @@ If your data is an array of objects, specify:
 - [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#valueExpr')     
     The data field whose value will be written into the [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') option.
 - [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#displayExpr')     
-    The data field whose value will be displayed within the inner [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/Widgets/List/Overview') UI component and in the input field of the **Lookup**.
+    The data field whose value will be displayed within the inner [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview') UI component and in the input field of the **Lookup**.
 
 <!---->
 
@@ -227,12 +227,12 @@ If your data is an array of objects, specify:
 
 #####See Also#####
 #include common-link-configurewidget
-- [Lookup - Configure Search Parameters](/concepts/05%20Widgets/Lookup/05%20Configure%20Search%20Parameters.md '/Documentation/Guide/Widgets/Lookup/Configure_Search_Parameters/')
-- [Lookup - Enable Grouping](/concepts/05%20Widgets/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/Widgets/Lookup/Enable_Grouping/')
-- [Lookup - Enable Paging](/concepts/05%20Widgets/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/Widgets/Lookup/Enable_Paging/')
-- [Lookup - Customize the Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/')
-- [Lookup - Handle the Value Change Event](/concepts/05%20Widgets/Lookup/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/Lookup/Handle_the_Value_Change_Event/')
+- [Lookup - Configure Search Parameters](/concepts/05%20Widgets/Lookup/05%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Lookup/Configure_Search_Parameters/')
+- [Lookup - Enable Grouping](/concepts/05%20Widgets/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/')
+- [Lookup - Enable Paging](/concepts/05%20Widgets/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
+- [Lookup - Customize the Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')
+- [Lookup - Handle the Value Change Event](/concepts/05%20Widgets/Lookup/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Lookup/Handle_the_Value_Change_Event/')
 - [Lookup API Reference](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')
-- [Lookup vs SelectBox](/concepts/05%20Widgets/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/Widgets/Lookup/Lookup_vs_SelectBox/')
+- [Lookup vs SelectBox](/concepts/05%20Widgets/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/')
 
 [tags]dxlookup, lookup, overview, data source, value, display expression, displayExpr, valueExpr

@@ -16,4 +16,4 @@ The DevExtreme UI components enable you to use the keyboard to switch between UI
 
 If a UI component is focused, the **dx-state-focused** css class is applied to the UI component element. You can modify this class to use a custom style for a UI component when it is focused.
 
-Focused UI components can be fully controlled with the keyboard. To learn how to control a certain UI component using the keyboard, refer to the UI component description in the [UI Widgets](/concepts/05%20Widgets '/Documentation/Guide/Widgets/') guides.
+Focused UI components can be fully controlled with the keyboard. To learn how to control a certain UI component using the keyboard, refer to the UI component description in the [UI Widgets](/concepts/05%20Widgets '/Documentation/Guide/UI_Components/') guides.

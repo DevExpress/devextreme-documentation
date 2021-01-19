@@ -115,12 +115,12 @@ The following code adds the **Gallery** UI component to your page. The simplest 
 
 #####See Also#####
 #include common-link-configurewidget
-- [Gallery - Switch Between Images](/concepts/05%20Widgets/Gallery/05%20Switch%20Between%20Images '/Documentation/Guide/Widgets/Gallery/Switch_Between_Images/')
-- [Gallery - Set the Initial Image](/concepts/05%20Widgets/Gallery/10%20Set%20the%20Initial%20Image.md '/Documentation/Guide/Widgets/Gallery/Set_the_Initial_Image/')
-- [Gallery - Enable the Slideshow](/concepts/05%20Widgets/Gallery/15%20Enable%20the%20Slideshow.md '/Documentation/Guide/Widgets/Gallery/Enable_the_Slideshow/')
-- [Gallery - Animate the Image Change](/concepts/05%20Widgets/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/Widgets/Gallery/Animate_the_Image_Change/')
-- [Gallery - Transform and Combine Images](/concepts/05%20Widgets/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/Widgets/Gallery/Transform_and_Combine_Images/')
-- [Gallery - Customize Item Appearance](/concepts/05%20Widgets/Gallery/30%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Gallery/Customize_Item_Appearance/')
+- [Gallery - Switch Between Images](/concepts/05%20Widgets/Gallery/05%20Switch%20Between%20Images '/Documentation/Guide/UI_Components/Gallery/Switch_Between_Images/')
+- [Gallery - Set the Initial Image](/concepts/05%20Widgets/Gallery/10%20Set%20the%20Initial%20Image.md '/Documentation/Guide/UI_Components/Gallery/Set_the_Initial_Image/')
+- [Gallery - Enable the Slideshow](/concepts/05%20Widgets/Gallery/15%20Enable%20the%20Slideshow.md '/Documentation/Guide/UI_Components/Gallery/Enable_the_Slideshow/')
+- [Gallery - Animate the Image Change](/concepts/05%20Widgets/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/UI_Components/Gallery/Animate_the_Image_Change/')
+- [Gallery - Transform and Combine Images](/concepts/05%20Widgets/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
+- [Gallery - Customize Item Appearance](/concepts/05%20Widgets/Gallery/30%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Gallery/Customize_Item_Appearance/')
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 

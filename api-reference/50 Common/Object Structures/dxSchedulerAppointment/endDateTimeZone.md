@@ -15,4 +15,4 @@ Users can view and edit the specified time zone in the appointment details form 
 }
 
 #####See Also#####
-- [Time Zone Support](/concepts/05%20Widgets/Scheduler/077%20Time%20Zone%20Support.md '/Documentation/Guide/Widgets/Scheduler/Time_Zone_Support/')
+- [Time Zone Support](/concepts/05%20Widgets/Scheduler/077%20Time%20Zone%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Time_Zone_Support/')

@@ -16,7 +16,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Common/UI_Widgets/Data_Validation/"
+    url: "/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/"
 }
 
 #####See Also#####

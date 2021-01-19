@@ -7,7 +7,7 @@ type: Object
 Configures the header filter feature.
 
 ---
-A header filter allows a user to filter individual field's values by including or excluding them from the applied filter. Clicking a header filter icon in the [field chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Chooser') or the [field panel](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/15%20Field%20Panel.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Panel') invokes a popup menu displaying all the unique field values. 
+A header filter allows a user to filter individual field's values by including or excluding them from the applied filter. Clicking a header filter icon in the [field chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Chooser') or the [field panel](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/15%20Field%20Panel.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Panel') invokes a popup menu displaying all the unique field values. 
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component Pivot Grid Header Filter](/images/DataGrid/PivotGrid_headerFilter.png)
 
@@ -19,4 +19,4 @@ Assign **true** to the [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivot
 }
 
 #####See Also#####
-- [Filtering](/concepts/05%20Widgets/PivotGrid/080%20Filtering '/Documentation/Guide/Widgets/PivotGrid/Filtering/')
+- [Filtering](/concepts/05%20Widgets/PivotGrid/080%20Filtering '/Documentation/Guide/UI_Components/PivotGrid/Filtering/')

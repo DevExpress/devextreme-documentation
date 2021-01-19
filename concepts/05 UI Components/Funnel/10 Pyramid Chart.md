@@ -79,4 +79,4 @@ You can use the **Funnel** UI component to create a pyramid chart. Change the [a
 }
 
 #####See Also#####
-- [Funnel Items Overview](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/Widgets/Funnel/Funnel_Items/Overview/')
+- [Funnel Items Overview](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Overview/')

@@ -104,5 +104,5 @@ To configure the elements' appearance, use the [node](/api-reference/20%20Data%2
 }
 
 #####See Also#####
-- [Colorize Nodes and Links](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/05%20Colorize%20Nodes%20and%20Links.md '/Documentation/Guide/Widgets/Sankey/Nodes_and_Links/Colorize_Nodes_and_Links/')
-- [Rearrange Nodes](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/08%20Rearrange%20Nodes.md '/Documentation/Guide/Widgets/Sankey/Nodes_and_Links/Rearrange_Nodes/')
+- [Colorize Nodes and Links](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/05%20Colorize%20Nodes%20and%20Links.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Colorize_Nodes_and_Links/')
+- [Rearrange Nodes](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/08%20Rearrange%20Nodes.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Rearrange_Nodes/')

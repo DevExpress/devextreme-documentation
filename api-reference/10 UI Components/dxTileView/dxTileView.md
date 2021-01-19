@@ -148,7 +148,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Basics/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/TileView/Overview/"
+    url: "/Documentation/Guide/UI_Components/TileView/Overview/"
 }
 
 #####See Also#####

@@ -13,6 +13,6 @@ Depending on the value of the [selectAllMode](/api-reference/10%20UI%20Widgets/d
 
 #####See Also#####
 #include common-link-callmethods
-- [Initial and Runtime Selection](/concepts/05%20Widgets/DataGrid/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/Widgets/DataGrid/Selection/#API/Initial_and_Runtime_Selection')
+- [Initial and Runtime Selection](/concepts/05%20Widgets/DataGrid/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/DataGrid/Selection/#API/Initial_and_Runtime_Selection')
 - [selectRows(keys, preserve)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/selectRows(keys_preserve).md '{basewidgetpath}/Methods/#selectRowskeys_preserve') 
 - [selection](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection '{basewidgetpath}/Configuration/selection/')

@@ -270,7 +270,7 @@ Settings specified for a series apply to all its points. If you need to customiz
 Refer to other topics in this section for details on main series features.
 
 #####See Also#####
-- [Series Hover](/concepts/05%20Widgets/PieChart/10%20Series/10%20Hover '/Documentation/Guide/Widgets/PieChart/Series/Hover/')
-- [Series Selection](/concepts/05%20Widgets/PieChart/10%20Series/20%20Selection '/Documentation/Guide/Widgets/PieChart/Series/Selection/')
-- [Access a Point Using the API](/concepts/05%20Widgets/PieChart/10%20Series/45%20Access%20a%20Point%20Using%20the%20API.md '/Documentation/Guide/Widgets/PieChart/Series/Access_a_Point_Using_the_API/')
-- [Bind Series to Data](/concepts/05%20Widgets/PieChart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/Widgets/PieChart/Data_Binding/Bind_Series_to_Data/')
+- [Series Hover](/concepts/05%20Widgets/PieChart/10%20Series/10%20Hover '/Documentation/Guide/UI_Components/PieChart/Series/Hover/')
+- [Series Selection](/concepts/05%20Widgets/PieChart/10%20Series/20%20Selection '/Documentation/Guide/UI_Components/PieChart/Series/Selection/')
+- [Access a Point Using the API](/concepts/05%20Widgets/PieChart/10%20Series/45%20Access%20a%20Point%20Using%20the%20API.md '/Documentation/Guide/UI_Components/PieChart/Series/Access_a_Point_Using_the_API/')
+- [Bind Series to Data](/concepts/05%20Widgets/PieChart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/PieChart/Data_Binding/Bind_Series_to_Data/')

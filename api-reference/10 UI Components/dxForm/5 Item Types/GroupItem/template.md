@@ -29,4 +29,4 @@ Use the **template** option of a group item to display custom content under a gr
 [note]To define a custom template used to render group items, assign the required template name or template container to each simple item's template option.
 
 #####See Also#####
-- [Custom Content within a Group](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/10%20Custom%20Content%20within%20a%20Group.md '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Groups/#Custom_Content_within_a_Group')
+- [Custom Content within a Group](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/10%20Custom%20Content%20within%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/#Custom_Content_within_a_Group')

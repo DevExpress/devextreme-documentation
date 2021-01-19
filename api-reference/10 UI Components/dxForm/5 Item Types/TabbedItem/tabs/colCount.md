@@ -65,4 +65,4 @@ For extra small screens, this option always equals *1* to make the UI component 
 
 [/note]
 
-- [Columns within a Tab](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs/05%20Columns%20within%20a%20Tab.md '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Tabs/#Columns_within_a_Tab')
+- [Columns within a Tab](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs/05%20Columns%20within%20a%20Tab.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/#Columns_within_a_Tab')

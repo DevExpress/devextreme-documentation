@@ -1,7 +1,7 @@
 Scrolling allows browsing data outside the UI component's viewport. The following scrolling modes are available in the **DataGrid**:
 
 - **Standard**      
-Loads all rows simultaneously. A user scrolls within one page if [paging](/concepts/05%20Widgets/DataGrid/35%20Paging '/Documentation/Guide/Widgets/DataGrid/Paging/') is enabled.
+Loads all rows simultaneously. A user scrolls within one page if [paging](/concepts/05%20Widgets/DataGrid/35%20Paging '/Documentation/Guide/UI_Components/DataGrid/Paging/') is enabled.
 
 - **Virtual**       
 Pages are loaded when entering the viewport and removed once they leave. This mode allows users to scroll data by jumping swiftly from one row to another. Scrolling in this mode becomes smoother if the UI component preloads the adjacent pages. You can enable this feature by setting the **scrolling**.[preloadEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/scrolling/preloadEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#preloadEnabled') option to **true**, but note that it may cause lags on low-performing devices.

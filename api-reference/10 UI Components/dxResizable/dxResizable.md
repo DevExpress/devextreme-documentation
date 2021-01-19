@@ -13,7 +13,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
 
 ---
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Resizable/Overview/"
+    url: "/Documentation/Guide/UI_Components/Resizable/Overview/"
 }
 
 #####See Also#####

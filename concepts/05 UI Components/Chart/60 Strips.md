@@ -299,6 +299,6 @@ Note that individual settings override axis-specific settings which, in turn, ov
 For information about all options of the strips, visit the [strips](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/strips '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/strips/') section of the API reference.
 
 #####See Also#####
-- [Constant Lines](/concepts/05%20Widgets/Chart/65%20Constant%20Lines.md '/Documentation/Guide/Widgets/Chart/Constant_Lines/')
+- [Constant Lines](/concepts/05%20Widgets/Chart/65%20Constant%20Lines.md '/Documentation/Guide/UI_Components/Chart/Constant_Lines/')
 
 [tags]chart, strips

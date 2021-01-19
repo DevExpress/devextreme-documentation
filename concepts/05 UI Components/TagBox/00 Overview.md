@@ -232,12 +232,12 @@ If your data is an array of objects, specify:
 
 #####See Also#####
 #include common-link-configurewidget
-- [TagBox - Control the Behavior](/concepts/05%20Widgets/TagBox/03%20Control%20the%20Behavior.md '/Documentation/Guide/Widgets/TagBox/Control_the_Behavior/')
-- [TagBox - Handle the Value Change Event](/concepts/05%20Widgets/TagBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/TagBox/Handle_the_Value_Change_Event/')
-- [TagBox - Customize Item Appearance](/concepts/05%20Widgets/TagBox/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/TagBox/Customize_Item_Appearance/')
-- [TagBox - Configure Search Parameters](/concepts/05%20Widgets/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/Widgets/TagBox/Configure_Search_Parameters/')
-- [TagBox - Create a User-Defined Item](/concepts/05%20Widgets/TagBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/Widgets/TagBox/Create_a_User-Defined_Item/')
-- [TagBox - Keyboard Support](/concepts/05%20Widgets/TagBox/25%20Keyboard%20Support.md '/Documentation/Guide/Widgets/TagBox/Keyboard_Support/')
+- [TagBox - Control the Behavior](/concepts/05%20Widgets/TagBox/03%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/TagBox/Control_the_Behavior/')
+- [TagBox - Handle the Value Change Event](/concepts/05%20Widgets/TagBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TagBox/Handle_the_Value_Change_Event/')
+- [TagBox - Customize Item Appearance](/concepts/05%20Widgets/TagBox/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/TagBox/Customize_Item_Appearance/')
+- [TagBox - Configure Search Parameters](/concepts/05%20Widgets/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/TagBox/Configure_Search_Parameters/')
+- [TagBox - Create a User-Defined Item](/concepts/05%20Widgets/TagBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/TagBox/Create_a_User-Defined_Item/')
+- [TagBox - Keyboard Support](/concepts/05%20Widgets/TagBox/25%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/TagBox/Keyboard_Support/')
 - [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 
 [tags]dxtagbox, tagBox, tag box, editor, overview, data source, value, display expression

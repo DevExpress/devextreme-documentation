@@ -11,5 +11,5 @@ Specifies the length of aggregation intervals in pixels. Does not apply if [aggr
 For data aggregation, the argument axis is divided into intervals. Series points that fall within the same interval get aggregated together. The **aggregationGroupWidth** option defines the length of each interval in pixels.
 
 #####See Also#####
-- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/Widgets/Chart/Data_Aggregation/')
+- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')
 - **series**.[aggregation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/')

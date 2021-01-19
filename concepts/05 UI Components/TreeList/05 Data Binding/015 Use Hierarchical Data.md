@@ -145,7 +145,7 @@ When you load data from a remote source, and your data objects have a field that
 [note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">this KB</a> to implement it.
 
 #####See Also#####
-- [TreeList - Use Plain Data](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Plain_Data/')
+- [TreeList - Use Plain Data](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Plain_Data/')
 - [TreeList API Reference](/api-reference/10%20UI%20Widgets/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/')
 
 [tags]treeList, hierarchical data, tree-like data, tree data structure, dataStructure, children, itemsExpr

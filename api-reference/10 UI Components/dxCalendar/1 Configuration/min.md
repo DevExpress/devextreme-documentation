@@ -13,4 +13,4 @@ The earliest date the UI component allows to select.
 }
 
 #####See Also#####
-- [Specify the Value Range](/concepts/05%20Widgets/Calendar/12%20Specify%20the%20Value%20Range.md '/Documentation/Guide/Widgets/Calendar/Specify_the_Value_Range/')
+- [Specify the Value Range](/concepts/05%20Widgets/Calendar/12%20Specify%20the%20Value%20Range.md '/Documentation/Guide/UI_Components/Calendar/Specify_the_Value_Range/')

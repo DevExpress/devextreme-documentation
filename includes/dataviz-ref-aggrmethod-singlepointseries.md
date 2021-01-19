@@ -21,4 +21,4 @@ Applies a custom aggregate function specified in the [calculate](/api-reference/
 Use the `ChartSeriesAggregationMethod` enum to specify this option when the UI component is used as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>. This enum accepts the following values: `Avg`, `Count`, `Max`, `Min`, `Sum`, and `Custom`. Note that although this enum accepts more values, only these can be applied to a **${{seriesType}}** series.
 
 #####See Also#####
-- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation/Data%20Aggregation.md '/Documentation/Guide/Widgets/Chart/Data_Aggregation/')
+- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation/Data%20Aggregation.md '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')

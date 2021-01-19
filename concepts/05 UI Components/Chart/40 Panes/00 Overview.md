@@ -102,7 +102,7 @@ Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20W
 
 ---
 
-For a multi-pane chart, the **panes** option accepts an array. For further details, refer to the [Multi-Pane Chart](/concepts/05%20Widgets/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/Widgets/Chart/Panes/Multi-Pane_Chart/') topic.
+For a multi-pane chart, the **panes** option accepts an array. For further details, refer to the [Multi-Pane Chart](/concepts/05%20Widgets/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/UI_Components/Chart/Panes/Multi-Pane_Chart/') topic.
 
 #####See Also#####
 - [Multiple Panes Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes)

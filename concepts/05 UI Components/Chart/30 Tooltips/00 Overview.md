@@ -1,4 +1,4 @@
-A tooltip is a small pop-up rectangle displaying information about a [series point](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Series_Points/Overview/') that the user pauses on. By default, the information is the point value, but it is possible to display anything in a tooltip.
+A tooltip is a small pop-up rectangle displaying information about a [series point](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/') that the user pauses on. By default, the information is the point value, but it is possible to display anything in a tooltip.
 
 ![DevExtreme HTML5 JavaScript Charts Tooltip](/images/ChartJS/visual_elements/tooltip.png)
 
@@ -196,8 +196,8 @@ Options declared in the **tooltip** object apply to all tooltips in the **Chart*
 ---
 
 #####See Also#####
-- [Show and Hide a Tooltip](/concepts/05%20Widgets/Chart/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/Widgets/Chart/Tooltips/Show_and_Hide_a_Tooltip/')
-- [Handle Tooltip Events](/concepts/05%20Widgets/Chart/30%20Tooltips/20%20Handle%20Tooltip%20Events.md '/Documentation/Guide/Widgets/Chart/Tooltips/Handle_Tooltip_Events/')
+- [Show and Hide a Tooltip](/concepts/05%20Widgets/Chart/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Show_and_Hide_a_Tooltip/')
+- [Handle Tooltip Events](/concepts/05%20Widgets/Chart/30%20Tooltips/20%20Handle%20Tooltip%20Events.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Handle_Tooltip_Events/')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, tooltips, enable tooltips, customizeTooltip

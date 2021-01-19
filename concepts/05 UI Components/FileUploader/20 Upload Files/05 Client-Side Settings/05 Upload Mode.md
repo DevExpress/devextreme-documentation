@@ -108,6 +108,6 @@ The following examples show how to configure the **FileUploader** for each uploa
 [note] If you allow a user to upload multiple files using an HTML form, the **name** option's value must end with square brackets as shown in the commented-out code line in the example above.
 
 #####See Also#####
-- [FileUploader - Upload Files | Server-Side Implementation in ASP.NET](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/10%20Server-Side%20Implementation%20in%20ASP.NET '/Documentation/Guide/Widgets/FileUploader/Upload_Files/Server-Side_Implementation_in_ASP.NET/')
-- [FileUploader - Upload Files | Server-Side Implementation in PHP](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/20%20Server-Side%20Implementation%20in%20PHP '/Documentation/Guide/Widgets/FileUploader/Upload_Files/Server-Side_Implementation_in_PHP/')
+- [FileUploader - Upload Files | Server-Side Implementation in ASP.NET](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/10%20Server-Side%20Implementation%20in%20ASP.NET '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Server-Side_Implementation_in_ASP.NET/')
+- [FileUploader - Upload Files | Server-Side Implementation in PHP](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/20%20Server-Side%20Implementation%20in%20PHP '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Server-Side_Implementation_in_PHP/')
 - [FileUploader API Reference](/api-reference/10%20UI%20Widgets/dxFileUploader '/Documentation/ApiReference/UI_Components/dxFileUploader/')

@@ -104,13 +104,13 @@ Commonly, a chart contains several series, and many of them have the same argume
 
 The following series types need more than one value field or additional data fields.
 
-- **[Bubble Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/50%20Bubble%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Bubble_Series/')**      
+- **[Bubble Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/50%20Bubble%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Bubble_Series/')**      
 Need one **argumentField**, one **valueField**, and one [sizeField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/sizeField.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/#sizeField').
 
-- **[Financial Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Financial_Series/')**       
+- **[Financial Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Financial_Series/')**       
 Need one **argumentField** and four value fields: [openValueField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/openValueField.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/#openValueField'), [closeValueField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/closeValueField.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/#closeValueField'), [highValueField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/highValueField.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/#highValueField') and [lowValueField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/lowValueField.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/#lowValueField').
 
-- **[Range Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/')**      
+- **[Range Series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/')**      
 Need one **argumentField** and two value fields: [rangeValue1Field](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/rangeValue1Field.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/#rangeValue1Field') and [rangeValue2Field](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/rangeValue2Field.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/#rangeValue2Field').
 
 <a href="/Demos/WidgetsGallery/Demo/Charts/Bubble/" class="button orange small fix-width-155" target="_blank">Bubble Series Demo</a>

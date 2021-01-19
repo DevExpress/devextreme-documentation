@@ -48,7 +48,7 @@ The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5
 
 ---
 
-A bar's maximum angular width is limited. In single-series charts, it cannot be greater than the interval between two [major ticks](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Ticks'). In multi-series charts, it depends on the number of [bars in the parent group](/concepts/05%20Widgets/PolarChart/20%20Series%20Types/Bar/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/Widgets/PolarChart/Series_Types/#Bar/Specify_the_Bar_Width') and this group's actual angular width. 
+A bar's maximum angular width is limited. In single-series charts, it cannot be greater than the interval between two [major ticks](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Axis_Ticks'). In multi-series charts, it depends on the number of [bars in the parent group](/concepts/05%20Widgets/PolarChart/20%20Series%20Types/Bar/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/UI_Components/PolarChart/Series_Types/#Bar/Specify_the_Bar_Width') and this group's actual angular width. 
 
 Bar groups' angular width can be changed using the [barGroupWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/barGroupWidth.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#barGroupWidth') option. Like **barWidth**, it accepts values ​​in degrees, but unlike it, applies to the entire chart. The groups' maximum angular width is the interval between two major ticks.
 

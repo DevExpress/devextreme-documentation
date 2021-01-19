@@ -320,7 +320,7 @@ If you want to process each scroll gesture performed by a user, handle the [scro
 
 #####See Also#####
 #include common-link-handleevents
-- [ScrollView - Scroll the Content](/concepts/05%20Widgets/ScrollView/05%20Scroll%20the%20Content '/Documentation/Guide/Widgets/ScrollView/Scroll_the_Content/')
+- [ScrollView - Scroll the Content](/concepts/05%20Widgets/ScrollView/05%20Scroll%20the%20Content '/Documentation/Guide/UI_Components/ScrollView/Scroll_the_Content/')
 - [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview)
 - [ScrollView API Reference](/api-reference/10%20UI%20Widgets/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')
 

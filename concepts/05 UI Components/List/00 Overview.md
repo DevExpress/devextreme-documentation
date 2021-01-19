@@ -45,7 +45,7 @@ The following code adds a simple **List** to your page. The simplest configurati
 The **List** supports a great variety of features. To learn more about a particular feature, refer to a dedicated topic in this documentation section.
 
 #####See Also#####
-- [List - Data Binding](/concepts/05%20Widgets/List/03%20Data%20Binding '/Documentation/Guide/Widgets/List/Data_Binding/')
+- [List - Data Binding](/concepts/05%20Widgets/List/03%20Data%20Binding '/Documentation/Guide/UI_Components/List/Data_Binding/')
 #include common-link-configurewidget
 - [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 

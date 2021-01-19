@@ -109,12 +109,12 @@ In the previous code, the [click](/api-reference/10%20UI%20Widgets/dxButton/4%20
         .on("click", clickHandler1)
         .on("click", clickHandler2);
 
-The appearance of the **Button** is predefined by its [type](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type'). Find more on this and other properties that impact the UI component appearance in the [Customize the Appearance](/concepts/05%20Widgets/Button/05%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/Button/Customize_the_Appearance/') article.
+The appearance of the **Button** is predefined by its [type](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type'). Find more on this and other properties that impact the UI component appearance in the [Customize the Appearance](/concepts/05%20Widgets/Button/05%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/Button/Customize_the_Appearance/') article.
 
 #####See Also#####
 #include common-link-configurewidget
-- [Button - Customize the Appearance](/concepts/05%20Widgets/Button/05%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/Button/Customize_the_Appearance/')
-- [Button - Validate and Submit an HTML form](/concepts/05%20Widgets/Button/10%20Validate%20and%20Submit%20an%20HTML%20Form.md '/Documentation/Guide/Widgets/Button/Validate_and_Submit_an_HTML_Form/')
+- [Button - Customize the Appearance](/concepts/05%20Widgets/Button/05%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/Button/Customize_the_Appearance/')
+- [Button - Validate and Submit an HTML form](/concepts/05%20Widgets/Button/10%20Validate%20and%20Submit%20an%20HTML%20Form.md '/Documentation/Guide/UI_Components/Button/Validate_and_Submit_an_HTML_Form/')
 - [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 
 [tags]dxbutton, button, overview, click

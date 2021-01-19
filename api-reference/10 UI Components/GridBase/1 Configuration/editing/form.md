@@ -265,4 +265,4 @@ Also, the [colCount](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/c
 If you need to customize an individual form item, use the [formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') object.
 
 #####See Also#####
-- [Form Guides](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/')
+- [Form Guides](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')

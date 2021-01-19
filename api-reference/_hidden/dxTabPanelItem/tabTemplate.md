@@ -18,4 +18,4 @@ The following types of the specified value are available.
 - Assign a function that returns the jQuery object or a DOM Node of the template's container.
 
 #####See Also#####
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')
+- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

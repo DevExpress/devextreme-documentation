@@ -29,7 +29,7 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Widgets/GridBase/3%20Meth
     
 ---
 
-The [deselectAll()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/deselectAll().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#deselectAll') method clears selection of all visible rows and can be used when you apply a [filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching '/Documentation/Guide/Widgets/TreeList/Filtering_and_Searching/') and want to keep the selection of invisible rows that do not meet the filtering conditions. To clear the selection of all rows regardless of their visibility, call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#clearSelection') method.
+The [deselectAll()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/deselectAll().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#deselectAll') method clears selection of all visible rows and can be used when you apply a [filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/') and want to keep the selection of invisible rows that do not meet the filtering conditions. To clear the selection of all rows regardless of their visibility, call the [clearSelection()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#clearSelection') method.
 
 ---
 ##### jQuery

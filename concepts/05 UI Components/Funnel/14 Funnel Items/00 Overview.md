@@ -200,6 +200,6 @@ To configure other aspects of the funnel items' appearance, use the [item](/api-
 Refer to other topics in this section for details on the main funnel item features.
 
 #####See Also#####
-- [Funnel Item Hover](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/10%20Hover '/Documentation/Guide/Widgets/Funnel/Funnel_Items/Hover/')
-- [Funnel Item Selection](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/20%20Selection '/Documentation/Guide/Widgets/Funnel/Funnel_Items/Selection/')
+- [Funnel Item Hover](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/10%20Hover '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Hover/')
+- [Funnel Item Selection](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/20%20Selection '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Selection/')
 - [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)

@@ -13,5 +13,5 @@ The **Chart** provides [several aggregation methods](/api-reference/20%20Data%20
 
 #####See Also#####
 - **Points Aggregation Demo**: [Multi-Series Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointsAggregation) | [Financial Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointsAggregationFinancialChart)
-- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/Widgets/Chart/Data_Aggregation/')
+- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')
 - [autoHidePointMarkers](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/autoHidePointMarkers.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#autoHidePointMarkers')

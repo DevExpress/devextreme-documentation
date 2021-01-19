@@ -5,7 +5,7 @@ type: Array<String> | Array<String>
 ---
 ---
 ##### shortDescription
-Lists the shapes in the group. The built-in shape types are shown in the [Shape Types](/concepts/05%20Widgets/Diagram/40%20Shape%20Types.md '/Documentation/Guide/Widgets/Diagram/Shape_Types/') section.
+Lists the shapes in the group. The built-in shape types are shown in the [Shape Types](/concepts/05%20Widgets/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/') section.
 
 ---
 

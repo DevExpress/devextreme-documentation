@@ -160,8 +160,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
         .on("markerRemoved", markerRemovedHandler2);
 
 #####See Also#####
-- [Map - Customize Markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/Widgets/Map/Configure_Markers/Customize/')
-- [Map - Add and Remove Markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers/05%20Add%20and%20Remove.md '/Documentation/Guide/Widgets/Map/Configure_Markers/Add_and_Remove/')
+- [Map - Customize Markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Customize/')
+- [Map - Add and Remove Markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Add_and_Remove/')
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers)
 - [Map API Reference](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 

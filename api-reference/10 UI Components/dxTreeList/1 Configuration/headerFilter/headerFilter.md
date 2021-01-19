@@ -13,7 +13,7 @@ To make header filter icons visible, assign **true** to the **headerFilter**.[vi
 }
 
 #####See Also#####
-- [Header Filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/Widgets/TreeList/Filtering_and_Searching/#Header_Filter')
+- [Header Filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Header_Filter')
 - **columns[]**.[allowHeaderFiltering](/api-reference/_hidden/GridBaseColumn/allowHeaderFiltering.md '{basewidgetpath}/Configuration/columns/#allowHeaderFiltering')
 - [filter(filterExpr)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/filter(filterExpr).md '{basewidgetpath}/Methods/#filterfilterExpr')
 - [clearFilter(filterName)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/clearFilter(filterName).md '{basewidgetpath}/Methods/#clearFilterfilterName')

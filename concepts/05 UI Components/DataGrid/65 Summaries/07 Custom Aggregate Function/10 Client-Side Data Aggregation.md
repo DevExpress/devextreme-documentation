@@ -59,4 +59,4 @@ Follow the steps below to configure custom client-side data aggregation.
 }
 
 #####See Also#####
-- [Format Text and Value](/concepts/05%20Widgets/DataGrid/65%20Summaries/40%20Format%20Text%20and%20Value.md '/Documentation/Guide/Widgets/DataGrid/Summaries/Format_Text_and_Value/')
+- [Format Text and Value](/concepts/05%20Widgets/DataGrid/65%20Summaries/40%20Format%20Text%20and%20Value.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Format_Text_and_Value/')

@@ -4,7 +4,7 @@ The **Toolbar** is a UI component containing items that usually manage screen co
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview/"
 }
 
-The following code adds a simple **Toolbar** to your page. Three items are plain text and one is a [Button](/concepts/05%20Widgets/Button '/Documentation/Guide/Widgets/Button/') UI component. 
+The following code adds a simple **Toolbar** to your page. Three items are plain text and one is a [Button](/concepts/05%20Widgets/Button '/Documentation/Guide/UI_Components/Button/') UI component. 
 
 ---
 ##### jQuery
@@ -170,9 +170,9 @@ Note that field names in these data source items are [conventional](/api-referen
 
 #####See Also#####
 #include common-link-configurewidget
-- [Toolbar - Specify Item Type](/concepts/05%20Widgets/Toolbar/05%20Specify%20Item%20Type.md '/Documentation/Guide/Widgets/Toolbar/Specify_Item_Type')
-- [Toolbar - Specify Item Location](/concepts/05%20Widgets/Toolbar/10%20Specify%20Item%20Location.md '/Documentation/Guide/Widgets/Toolbar/Specify_Item_Location')
-- [Toolbar - Customize Item Appearance](/concepts/05%20Widgets/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Toolbar/Customize_Item_Appearance')
+- [Toolbar - Specify Item Type](/concepts/05%20Widgets/Toolbar/05%20Specify%20Item%20Type.md '/Documentation/Guide/UI_Components/Toolbar/Specify_Item_Type')
+- [Toolbar - Specify Item Location](/concepts/05%20Widgets/Toolbar/10%20Specify%20Item%20Location.md '/Documentation/Guide/UI_Components/Toolbar/Specify_Item_Location')
+- [Toolbar - Customize Item Appearance](/concepts/05%20Widgets/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Toolbar/Customize_Item_Appearance')
 - [Toolbar API Reference](/api-reference/10%20UI%20Widgets/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
 [tags]dxtolbar, toolbar, collection container, collection UI component, overview

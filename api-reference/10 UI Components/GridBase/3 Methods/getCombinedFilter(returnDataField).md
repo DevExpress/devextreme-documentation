@@ -12,7 +12,7 @@ A [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading
 Specifies whether the total filter should contain data fields instead of [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters').
 
 ---
-Use this method to get the total filter. This filter combines filters applied using [filtering UI elements](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/Widgets/{WidgetName}/Filtering_and_Searching/') and the [filter(filterExpr)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/filter(filterExpr).md '{basewidgetpath}/Methods/#filterfilterExpr') method.
+Use this method to get the total filter. This filter combines filters applied using [filtering UI elements](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/') and the [filter(filterExpr)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/filter(filterExpr).md '{basewidgetpath}/Methods/#filterfilterExpr') method.
 
 #####See Also#####
 #include common-link-callmethods

@@ -173,5 +173,5 @@ All adaptive detail rows contain the [DevExtreme Form UI component](/api-referen
 ---
 
 #####See Also#####
-- [Column Fixing](/concepts/05%20Widgets/TreeList/10%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Fixing/')
-- [Column Chooser](/concepts/05%20Widgets/TreeList/10%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Chooser/')
+- [Column Fixing](/concepts/05%20Widgets/TreeList/10%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Fixing/')
+- [Column Chooser](/concepts/05%20Widgets/TreeList/10%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Chooser/')

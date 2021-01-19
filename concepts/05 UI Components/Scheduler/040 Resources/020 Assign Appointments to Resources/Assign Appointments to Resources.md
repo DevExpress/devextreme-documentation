@@ -3,7 +3,7 @@ The **Scheduler** UI component allows you to assign appointments to a set of pre
 To define resource kinds, assign an array of objects specifying them to the [resources](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/') option. Each object must have at least the following fields.
 
 - [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#dataSource')
-    All available resource instances (for example, room101, room102). For information on different techniques that you can use to provide data for resources, see the [Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/Widgets/Scheduler/Data_Binding/') topic.
+    All available resource instances (for example, room101, room102). For information on different techniques that you can use to provide data for resources, see the [Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/UI_Components/Scheduler/Data_Binding/') topic.
 - [fieldExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/fieldExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr')
     The data field that binds an appointment to a resource instance.
 

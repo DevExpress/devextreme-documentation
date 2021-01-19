@@ -45,7 +45,7 @@ The **PolarChart** UI component visualizes data in a polar coordinate system. In
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ContinuousData/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/PolarChart/Visual_Elements/"
+    url: "/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/"
 }
 
 #####See Also#####

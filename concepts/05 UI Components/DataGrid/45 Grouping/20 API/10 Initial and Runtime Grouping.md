@@ -81,5 +81,5 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
 ---
 
 #####See Also#####
-- [User Interaction - Group Data](/concepts/05%20Widgets/DataGrid/45%20Grouping/10%20User%20Interaction/10%20Group%20Data.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#User_Interaction/Group_Data')
+- [User Interaction - Group Data](/concepts/05%20Widgets/DataGrid/45%20Grouping/10%20User%20Interaction/10%20Group%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Group_Data')
 

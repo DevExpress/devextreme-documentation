@@ -316,4 +316,4 @@ By default, only a single series can be in the selected state at a time. If you 
 }
 
 #####See Also#####
-- [Point Selection - User Interaction](/concepts/05%20Widgets/Chart/14%20Series%20Points/20%20Selection/05%20User%20Interaction.md '/Documentation/Guide/Widgets/Chart/Series_Points/Selection/#User_Interaction')
+- [Point Selection - User Interaction](/concepts/05%20Widgets/Chart/14%20Series%20Points/20%20Selection/05%20User%20Interaction.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Selection/#User_Interaction')

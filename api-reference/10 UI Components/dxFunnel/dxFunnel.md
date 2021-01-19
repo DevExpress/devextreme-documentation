@@ -32,7 +32,7 @@ dx.viz.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Funnel/Overview/"
+    url: "/Documentation/Guide/UI_Components/Funnel/Overview/"
 }
 
 #####See Also#####

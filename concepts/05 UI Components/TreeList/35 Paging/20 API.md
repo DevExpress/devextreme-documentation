@@ -75,4 +75,4 @@ The **TreeList** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%
 ---
 
 #####See Also#####
-- [Scrolling](/concepts/05%20Widgets/TreeList/45%20Scrolling '/Documentation/Guide/Widgets/TreeList/Scrolling/')
+- [Scrolling](/concepts/05%20Widgets/TreeList/45%20Scrolling '/Documentation/Guide/UI_Components/TreeList/Scrolling/')

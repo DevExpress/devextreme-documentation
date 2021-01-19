@@ -145,7 +145,7 @@ Use it to replace the default editor.
 Use it to:
     - Change the editor type.
     - Override the default editor's **onValueChanged** handler.
-    - [Dynamically change editor options in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/Widgets/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
+    - [Dynamically change editor options in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
     - Implement other customization cases.
 
 #####See Also#####

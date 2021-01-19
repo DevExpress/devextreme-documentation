@@ -9,4 +9,4 @@ Specifies a pattern for the *"min"* summary items displayed in a group row or in
 
 ---
 #####See Also#####
-- [Group Summary](/concepts/05%20Widgets/DataGrid/65%20Summaries/20%20Group%20Summary '/Documentation/Guide/Widgets/DataGrid/Summaries/Group_Summary/')
+- [Group Summary](/concepts/05%20Widgets/DataGrid/65%20Summaries/20%20Group%20Summary '/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/')

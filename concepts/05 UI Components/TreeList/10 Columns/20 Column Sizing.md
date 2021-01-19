@@ -128,4 +128,4 @@ The UI component allows a user to resize columns in two different modes: by chan
 }
 
 #####See Also#####
-- [TreeList - Column Reordering](/concepts/05%20Widgets/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/Widgets/TreeList/Columns/Column_Reordering/')
+- [TreeList - Column Reordering](/concepts/05%20Widgets/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/')

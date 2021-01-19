@@ -252,7 +252,7 @@ You can also specify the time interval the UI component should wait before provi
 ---
 
 #####See Also#####
-- [Autocomplete - Customize Item Appearance](/concepts/05%20Widgets/Autocomplete/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Autocomplete/Customize_Item_Appearance/')
+- [Autocomplete - Customize Item Appearance](/concepts/05%20Widgets/Autocomplete/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Autocomplete/Customize_Item_Appearance/')
 - [Autocomplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview)
 - [Autocomplete API Reference](/api-reference/10%20UI%20Widgets/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 

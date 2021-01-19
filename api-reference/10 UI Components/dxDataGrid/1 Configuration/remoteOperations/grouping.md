@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/Widgets/DataGrid/Grouping/') must be performed on the server side.
+Specifies whether or not [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') must be performed on the server side.
 
 ---
 #include common-demobutton with {

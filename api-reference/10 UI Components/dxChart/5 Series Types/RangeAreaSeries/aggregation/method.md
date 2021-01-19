@@ -23,4 +23,4 @@ Applies a custom aggregate function specified in the [calculate](/api-reference/
 } Note that although this enum accepts more values, only these can be applied to a **Range Area** series.
 
 #####See Also#####
-- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/Widgets/Chart/Data_Aggregation/')
+- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')

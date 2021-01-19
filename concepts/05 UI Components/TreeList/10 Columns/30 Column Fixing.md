@@ -81,7 +81,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     
 ---
 
-[note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** option, [command columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Command_Columns/') become fixed automatically.
+[note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** option, [command columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/') become fixed automatically.
 
 Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth') option is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
 
@@ -90,4 +90,4 @@ Since column fixing is effective only with horizontal scrolling, using it makes 
 }
 
 #####See Also#####
-- [Adaptability](/concepts/05%20Widgets/TreeList/10%20Columns/50%20Adaptability.md '/Documentation/Guide/Widgets/TreeList/Columns/Adaptability/')
+- [Adaptability](/concepts/05%20Widgets/TreeList/10%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/TreeList/Columns/Adaptability/')

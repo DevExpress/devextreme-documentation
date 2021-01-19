@@ -112,7 +112,7 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
 
 ---
 
-You can prevent a user from dragging columns to the group panel, in which case it becomes an informative component only: a user can see the columns that participate in grouping, but cannot change them. Set the **groupPanel**.[allowColumnDragging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/allowColumnDragging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#allowColumnDragging') option to **false** to activate this behavior. You might want to group data [initially](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/10%20Initial%20and%20Runtime%20Grouping.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Initial_and_Runtime_Grouping') in this case.
+You can prevent a user from dragging columns to the group panel, in which case it becomes an informative component only: a user can see the columns that participate in grouping, but cannot change them. Set the **groupPanel**.[allowColumnDragging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/allowColumnDragging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#allowColumnDragging') option to **false** to activate this behavior. You might want to group data [initially](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/10%20Initial%20and%20Runtime%20Grouping.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Initial_and_Runtime_Grouping') in this case.
 
 ---
 

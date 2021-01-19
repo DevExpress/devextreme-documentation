@@ -1,4 +1,4 @@
-The **Tabs** is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/Widgets/TabPanel/Overview/') UI component, but you can use the **Tabs** separately as well.
+The **Tabs** is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/concepts/05%20Widgets/TabPanel/00%20Overview.md '/Documentation/Guide/UI_Components/TabPanel/Overview/') UI component, but you can use the **Tabs** separately as well.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"
@@ -108,9 +108,9 @@ Note that field names in these data source items are [conventional](/api-referen
 
 #####See Also#####
 #include common-link-configurewidget
-- [Tabs - Customize Item Appearance](/concepts/05%20Widgets/Tabs/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Tabs/Customize_Item_Appearance')
-- [Tabs - Control the Behavior](/concepts/05%20Widgets/Tabs/15%20Control%20the%20Behavior.md '/Documentation/Guide/Widgets/Tabs/Control_the_Behavior')
-- [Tabs - Keyboard Support](/concepts/05%20Widgets/Tabs/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/Tabs/Keyboard_Support')
+- [Tabs - Customize Item Appearance](/concepts/05%20Widgets/Tabs/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Tabs/Customize_Item_Appearance')
+- [Tabs - Control the Behavior](/concepts/05%20Widgets/Tabs/15%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/Tabs/Control_the_Behavior')
+- [Tabs - Keyboard Support](/concepts/05%20Widgets/Tabs/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Tabs/Keyboard_Support')
 - [Tabs API Reference](/api-reference/10%20UI%20Widgets/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/')
 
 [tags]dxtabs, tabs, collection container, collection UI component, navigation, overview

@@ -32,4 +32,4 @@ When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devex
     )
 
 #####See Also#####
-- [Toolbar - Specify Item Type](/concepts/05%20Widgets/Toolbar/05%20Specify%20Item%20Type.md '/Documentation/Guide/Widgets/Toolbar/Specify_Item_Type/')
+- [Toolbar - Specify Item Type](/concepts/05%20Widgets/Toolbar/05%20Specify%20Item%20Type.md '/Documentation/Guide/UI_Components/Toolbar/Specify_Item_Type/')

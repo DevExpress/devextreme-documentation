@@ -16,4 +16,4 @@ Users can switch between pages and change paging settings using the [pager](/api
 }
 
 #####See Also#####
-- [Paging](/concepts/05%20Widgets/DataGrid/35%20Paging '/Documentation/Guide/Widgets/{WidgetName}/Paging/')
+- [Paging](/concepts/05%20Widgets/DataGrid/35%20Paging '/Documentation/Guide/UI_Components/{WidgetName}/Paging/')

@@ -34,4 +34,4 @@ To specify the exact manner, use the **dataFieldsDisplayMode** field.
         dataFieldsDisplayMode: 'splitAxes' | 'singleAxis' | 'splitPanes'
     });
     
-[note]If you have set the [putDataFieldsInto](/concepts/05%20Widgets/PivotGrid/150%20Integration%20with%20Chart/20%20Convert%20Grid%20Fields%20into%20Chart%20Series.md '/Documentation/Guide/Widgets/PivotGrid/Integration_with_Chart/#Convert_Grid_Fields_into_Chart_Series') field to *"args"*, **dataFieldsDisplayMode** will be set to *"singleAxis"* forcedly.
+[note]If you have set the [putDataFieldsInto](/concepts/05%20Widgets/PivotGrid/150%20Integration%20with%20Chart/20%20Convert%20Grid%20Fields%20into%20Chart%20Series.md '/Documentation/Guide/UI_Components/PivotGrid/Integration_with_Chart/#Convert_Grid_Fields_into_Chart_Series') field to *"args"*, **dataFieldsDisplayMode** will be set to *"singleAxis"* forcedly.

@@ -279,4 +279,4 @@ The UI component allows a user to resize columns in two different modes: by chan
 }
 
 #####See Also#####
-- [DataGrid - Column Reordering](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/Widgets/DataGrid/Columns/Column_Reordering/')
+- [DataGrid - Column Reordering](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Reordering/')

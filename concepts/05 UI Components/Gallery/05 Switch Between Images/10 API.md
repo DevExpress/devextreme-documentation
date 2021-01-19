@@ -1,4 +1,4 @@
-[note]In this article, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/') UI component is used to switch images. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
+[note]In this article, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/') UI component is used to switch images. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
 To switch the **Gallery** to the next or previous image, call the [nextItem(animation)](/api-reference/10%20UI%20Widgets/dxGallery/3%20Methods/nextItem(animation).md '/Documentation/ApiReference/UI_Components/dxGallery/Methods/#nextItemanimation') or [prevItem(animation)](/api-reference/10%20UI%20Widgets/dxGallery/3%20Methods/prevItem(animation).md '/Documentation/ApiReference/UI_Components/dxGallery/Methods/#prevItemanimation') method, respectively.
 

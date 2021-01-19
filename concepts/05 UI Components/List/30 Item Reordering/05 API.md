@@ -1,7 +1,7 @@
 You can reorder **List** items from code in the following ways.
 
 - **By index**        
-Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/reorderItem(itemIndex_toItemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#reorderItemitemIndex_toItemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/'), this method should be given two objects with the indexes of the groups and the items.
+Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/reorderItem(itemIndex_toItemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#reorderItemitemIndex_toItemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/'), this method should be given two objects with the indexes of the groups and the items.
 
     ---
     ##### jQuery

@@ -171,9 +171,9 @@ If the entered value falls out of the range, the UI component sets the value to 
 
 #####See Also#####
 #include common-link-configurewidget
-- [NumberBox - Handle the Value Change Event](/concepts/05%20Widgets/NumberBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/NumberBox/Handle_the_Value_Change_Event')
-- [NumberBox - Control the Behavior](/concepts/05%20Widgets/NumberBox/15%20Control%20the%20Behavior.md '/Documentation/Guide/Widgets/NumberBox/Control_the_Behavior')
-- [NumberBox - Keyboard Support](/concepts/05%20Widgets/NumberBox/20%20Keyboard%20Support.md '/Documentation/Guide/Widgets/NumberBox/Keyboard_Support')
+- [NumberBox - Handle the Value Change Event](/concepts/05%20Widgets/NumberBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/NumberBox/Handle_the_Value_Change_Event')
+- [NumberBox - Control the Behavior](/concepts/05%20Widgets/NumberBox/15%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/NumberBox/Control_the_Behavior')
+- [NumberBox - Keyboard Support](/concepts/05%20Widgets/NumberBox/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/NumberBox/Keyboard_Support')
 - [NumberBox API Reference](/api-reference/10%20UI%20Widgets/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/')
 
 [tags]dxnumberbox, number box, numberBox, editor, overview

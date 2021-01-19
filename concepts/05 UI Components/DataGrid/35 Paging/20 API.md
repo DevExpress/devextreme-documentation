@@ -244,4 +244,4 @@ The **DataGrid** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%
 
 #####See Also#####
 - [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
-- [Scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/Widgets/DataGrid/Scrolling/')
+- [Scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/UI_Components/DataGrid/Scrolling/')

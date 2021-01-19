@@ -666,6 +666,6 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
 To get the current scroll position against the top left corner, call the [scrollOffset()](/api-reference/10%20UI%20Widgets/dxScrollable/3%20Methods/scrollOffset().md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollOffset') method. It returns an object of the following format: { top: *topScrollOffset*, left: *leftScrollOffset* }. If you need to get only the top or left scroll offset, use the [scrollTop()](/api-reference/10%20UI%20Widgets/dxScrollable/3%20Methods/scrollTop().md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollTop') and [scrollLeft()](/api-reference/10%20UI%20Widgets/dxScrollable/3%20Methods/scrollLeft().md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollLeft') methods, respectively.
 
 #####See Also#####
-- [ScrollView - Handle Scroll Gestures](/concepts/05%20Widgets/ScrollView/10%20Handle%20Scroll%20Gestures.md '/Documentation/Guide/Widgets/ScrollView/Handle_Scroll_Gestures/')
+- [ScrollView - Handle Scroll Gestures](/concepts/05%20Widgets/ScrollView/10%20Handle%20Scroll%20Gestures.md '/Documentation/Guide/UI_Components/ScrollView/Handle_Scroll_Gestures/')
 - [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview)
 - [ScrollView API Reference](/api-reference/10%20UI%20Widgets/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')

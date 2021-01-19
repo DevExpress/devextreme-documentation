@@ -19,7 +19,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Map/Overview/"
+    url: "/Documentation/Guide/UI_Components/Map/Overview/"
 }
 
 #####See Also#####

@@ -13,5 +13,5 @@ To make the search panel visible, set the **searchPanel**.[visible](/api-referen
 }
 
 #####See Also#####
-- [Search Panel](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/Widgets/TreeList/Filtering_and_Searching/#Search_Panel')
+- [Search Panel](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Search_Panel')
 - [searchByText(text)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/searchByText(text).md '{basewidgetpath}/Methods/#searchByTexttext')

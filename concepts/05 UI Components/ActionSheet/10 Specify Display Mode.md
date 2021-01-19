@@ -85,7 +85,7 @@ By default, the **ActionSheet** comes up from the bottom of the page. If you set
 }
 
 #####See Also#####
-- [ActionSheet - Customize Item Appearance](/concepts/05%20Widgets/ActionSheet/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/ActionSheet/Customize_Item_Appearance/')
+- [ActionSheet - Customize Item Appearance](/concepts/05%20Widgets/ActionSheet/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/ActionSheet/Customize_Item_Appearance/')
 - [ActionSheet API Reference](/api-reference/10%20UI%20Widgets/dxActionSheet '/Documentation/ApiReference/UI_Components/dxActionSheet/')
 #include common-link-configurewidget
 

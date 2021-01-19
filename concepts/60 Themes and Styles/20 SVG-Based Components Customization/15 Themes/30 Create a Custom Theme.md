@@ -28,4 +28,4 @@ You should use the [DevExpress.viz.registerTheme(customTheme, baseTheme)](/api-r
 
     registerTheme(customTheme, "generic.light");
 
-Next, use the theme's name (`myTheme`) to [apply the theme](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/20%20Apply%20a%20Theme.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Themes/Apply_a_Theme').
+Next, use the theme's name (`myTheme`) to [apply the theme](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/20%20Apply%20a%20Theme.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes/Apply_a_Theme').

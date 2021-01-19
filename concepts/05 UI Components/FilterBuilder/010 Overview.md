@@ -80,7 +80,7 @@ The **FilterBuilder** displays the filter expression as a tree structure, where 
 
 #####See Also#####
 #include common-link-configurewidget
-- [Integrate with a Widget](/concepts/05%20UI%20Components/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/UI_Components/FilterBuilder/Integrate_with_a_Widget/')
+- [Integrate with a DevExtreme UI Component](/concepts/05%20UI%20Components/FilterBuilder/020%20Integrate%20with%20a%20DevExtreme%20UI%20Component.md '/Documentation/Guide/UI_Components/FilterBuilder/Integrate_with_a_DevExtreme_UI_Component/')
 - [Predefine Filter Values](/concepts/05%20UI%20Components/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/UI_Components/FilterBuilder/Predefine_Filter_Values/')
 - [API Reference](/api-reference/10%20UI%20Components/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/')
 

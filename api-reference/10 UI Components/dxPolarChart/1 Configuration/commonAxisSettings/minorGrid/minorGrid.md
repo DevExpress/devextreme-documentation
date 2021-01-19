@@ -7,7 +7,7 @@ type: Object
 Specifies the properties of the minor grid.
 
 ---
-In addition to the [major grid](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/grid '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/commonAxisSettings/grid/') built on major ticks, the **PolarChart** UI component provides the minor grid that is built on minor ticks. The lines of the minor grid extend from the minor ticks throughout the entire chart's plot.
+In addition to the [major grid](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/grid '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonAxisSettings/grid/') built on major ticks, the **PolarChart** UI component provides the minor grid that is built on minor ticks. The lines of the minor grid extend from the minor ticks throughout the entire chart's plot.
 
 [note]Neither minor ticks, nor the minor grid can be used if the axis is *discrete*.
 

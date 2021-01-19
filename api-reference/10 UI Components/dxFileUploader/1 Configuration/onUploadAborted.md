@@ -34,4 +34,4 @@ Specifies an XMLHttpRequest for the file.
 ---
 
 #####See Also#####
-- [uploadAbortedMessage](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#uploadAbortedMessage)
+- [uploadAbortedMessage](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadAbortedMessage)

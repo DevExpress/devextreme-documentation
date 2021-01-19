@@ -38,5 +38,5 @@ Allows you to change the multi-tag's text.
 
 #####See Also#####
 - [Limit the Tag Count](/concepts/05%20Widgets/TagBox/12%20Limit%20the%20Tag%20Count '/Documentation/Guide/Widgets/TagBox/Limit_the_Tag_Count/')
-- [maxDisplayedTags](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/maxDisplayedTags.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#maxDisplayedTags')
-- [showMultiTagOnly](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/showMultiTagOnly.md '/Documentation/ApiReference/UI_Widgets/dxTagBox/Configuration/#showMultiTagOnly')
+- [maxDisplayedTags](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/maxDisplayedTags.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#maxDisplayedTags')
+- [showMultiTagOnly](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/showMultiTagOnly.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly')

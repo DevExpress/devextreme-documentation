@@ -67,6 +67,6 @@ In the following code, the **Add** button is added to rows whose status is _not_
 ---
 
 #####See Also#####
-- [onRowInserting](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowInserting.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onRowInserting')
-- [onRowInserted](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowInserted.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onRowInserted')
-- [addRow()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/addRow().md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#addRow')
+- [onRowInserting](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowInserting.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onRowInserting')
+- [onRowInserted](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowInserted.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onRowInserted')
+- [addRow()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/addRow().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#addRow')

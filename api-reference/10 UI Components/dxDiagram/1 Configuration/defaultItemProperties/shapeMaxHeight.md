@@ -8,4 +8,4 @@ default: undefined
 Specifies the default maximum height of a shape.
 
 ---
-The **shapeMaxHeight** property specifies the maximum height of a shape if the [maxHeight](/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#maxHeight) property does not provide another value.
+The **shapeMaxHeight** property specifies the maximum height of a shape if the [maxHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#maxHeight) property does not provide another value.

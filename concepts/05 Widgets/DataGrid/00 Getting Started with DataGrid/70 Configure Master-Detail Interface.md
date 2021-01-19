@@ -1,4 +1,4 @@
-**DataGrid** allows you to display expandable detail sections under data rows. To configure a UI like this, use the [masterDetail](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/) object. Set the [enabled](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/#enabled) property to **true** and specify a [template](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/#template) that is used as the detail section's content:
+**DataGrid** allows you to display expandable detail sections under data rows. To configure a UI like this, use the [masterDetail](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/) object. Set the [enabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/#enabled) property to **true** and specify a [template](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/#template) that is used as the detail section's content:
 
 ---
 ##### jQuery

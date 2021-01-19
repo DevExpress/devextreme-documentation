@@ -8,7 +8,7 @@ inheritsType: dxPieChartCommonAnnotationConfig
 Specifies settings common for all annotations in the **PieChart**.
 
 ---
-Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
+Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
 
 The following code shows the **commonAnnotationSettings** declaration syntax:
 
@@ -122,4 +122,4 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 }
 
 #####See Also#####
-- [customizeAnnotation](/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizeAnnotation)
+- [customizeAnnotation](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizeAnnotation)

@@ -36,7 +36,7 @@ Set the **allowResourceDeleting** option to **false** to disable the **Delete** 
 
 ---
 
-Note that you cannot open the "Resource Manager" dialog if the **allowResourceDeleting** and [allowResourceAdding](/Documentation/ApiReference/UI_Widgets/dxGantt/editing/#allowResourceAdding) options are set to **false**.
+Note that you cannot open the "Resource Manager" dialog if the **allowResourceDeleting** and [allowResourceAdding](/Documentation/ApiReference/UI_Components/dxGantt/editing/#allowResourceAdding) options are set to **false**.
 
 ![DevExtreme Gantt Chart - Disabled Resource Manager](~/images/Gantt/edit-dialog-diable-resource-manager.png)
 
@@ -57,8 +57,8 @@ Note that you cannot open the "Resource Manager" dialog if the **allowResourceDe
 ---
 
 #####See Also#####
-- [onResourceDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceDeleting)
-- [onResourceDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceDeleted)
-- [deleteResource](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#deleteResourcekey)
+- [onResourceDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceDeleting)
+- [onResourceDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceDeleted)
+- [deleteResource](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#deleteResourcekey)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
 

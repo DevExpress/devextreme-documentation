@@ -1,4 +1,4 @@
-To bind the **TreeList** to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#dataSource') property.
+To bind the **TreeList** to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource') property.
 
 ---
 ##### jQuery

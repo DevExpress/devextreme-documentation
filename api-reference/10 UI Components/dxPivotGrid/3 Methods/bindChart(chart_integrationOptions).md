@@ -3,7 +3,7 @@ id: dxPivotGrid.bindChart(chart, integrationOptions)
 ---
 ---
 ##### shortDescription
-Binds a [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/') to the **PivotGrid**.
+Binds a [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') to the **PivotGrid**.
 
 ##### return: function() | null
 Unbinds the **Chart**. If **null**, then binding failed.

@@ -13,7 +13,7 @@ The summary item's data.
 The summary item's value as it was calculated.
 
 ##### field(itemInfo.valueText): String
-The summary item's [formatted](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/valueFormat.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/totalItems/#valueFormat') value.
+The summary item's [formatted](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/valueFormat.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#valueFormat') value.
 
 ##### return: String
 The text for the summary item to display.

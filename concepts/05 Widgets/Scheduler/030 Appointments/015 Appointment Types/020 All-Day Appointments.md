@@ -12,7 +12,7 @@ To create an all-day appointment, set its [allDay](/Documentation/ApiReference/C
     }];
 
 
-If your appointment data objects contain a different field that performs the functions of **allDay**, specify its name in the **Scheduler**'s [allDayExpr](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#allDayExpr) property.
+If your appointment data objects contain a different field that performs the functions of **allDay**, specify its name in the **Scheduler**'s [allDayExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr) property.
 
 ---
 ##### jQuery
@@ -125,4 +125,4 @@ To mark an appointment as all-day in the UI, toggle the *"All day"* switcher on 
 
 ![Scheduler All Day Appointment Details](/images/UiWidgets/Scheduler_AllDayAppointment_Details.png)
 
-All-day appointments are displayed in the All-day panel. If you do not use such appointments, disable the [showAllDayPanel](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/showAllDayPanel.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#showAllDayPanel') property to hide the All-day panel.
+All-day appointments are displayed in the All-day panel. If you do not use such appointments, disable the [showAllDayPanel](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/showAllDayPanel.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#showAllDayPanel') property to hide the All-day panel.

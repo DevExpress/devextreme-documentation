@@ -27,11 +27,11 @@ This property accepts a function whose parameter exposes the following fields.
     </tr>
     <tr>
         <td>value</td>
-        <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+        <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
     </tr>
     <tr>
         <td>valueText</td>
-        <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>originalArgument</td>
@@ -39,11 +39,11 @@ This property accepts a function whose parameter exposes the following fields.
     </tr>
     <tr>
         <td>argument</td>
-        <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
+        <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
     </tr>
     <tr>
         <td>argumentText</td>
-        <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#argumentFormat">format</a> and converted to string.</td>
+        <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#argumentFormat">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>size</td>
@@ -55,7 +55,7 @@ This property accepts a function whose parameter exposes the following fields.
     </tr>
     <tr>
         <td>point</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/">Point</a> object.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/">Point</a> object.</td>
     </tr>
     <tr>
         <td>seriesName</td>
@@ -76,7 +76,7 @@ The following fields are inherent to stacked-like series only.
     </tr>
     <tr>
         <td>percentText</td>
-        <td>The <i>percent</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>percent</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>total</td>
@@ -84,11 +84,11 @@ The following fields are inherent to stacked-like series only.
     </tr>
     <tr>
         <td>totalText</td>
-        <td>The <i>total</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>total</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
 </table>
 
-The following fields are inherent to financial series ([candlestick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/CandleStickSeries/') and [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/StockSeries/')) only.
+The following fields are inherent to financial series ([candlestick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') and [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/')) only.
 
 <table class="dx-table full-width">
     <tr>
@@ -101,11 +101,11 @@ The following fields are inherent to financial series ([candlestick](/api-refere
     </tr>
     <tr>
         <td>openValue</td>
-        <td>The <i>originalOpenValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+        <td>The <i>originalOpenValue</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
     </tr>
     <tr>
         <td>openValueText</td>
-        <td>The <i>openValue</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>openValue</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>originalCloseValue</td>
@@ -113,11 +113,11 @@ The following fields are inherent to financial series ([candlestick](/api-refere
     </tr>
     <tr>
         <td>closeValue</td>
-        <td>The <i>originalCloseValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+        <td>The <i>originalCloseValue</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
     </tr>
     <tr>
         <td>closeValueText</td>
-        <td>The <i>closeValue</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>closeValue</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>originalHighValue</td>
@@ -125,11 +125,11 @@ The following fields are inherent to financial series ([candlestick](/api-refere
     </tr>
     <tr>
         <td>highValue</td>
-        <td>The <i>originalHighValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+        <td>The <i>originalHighValue</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
     </tr>
     <tr>
         <td>highValueText</td>
-        <td>The <i>highValue</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>highValue</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>originalLowValue</td>
@@ -137,19 +137,19 @@ The following fields are inherent to financial series ([candlestick](/api-refere
     </tr>
     <tr>
         <td>lowValue</td>
-        <td>The <i>originalLowValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+        <td>The <i>originalLowValue</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
     </tr>
     <tr>
         <td>lowValueText</td>
-        <td>The <i>lowValue</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>lowValue</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>reductionValue</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/reduction/">reduction</a> value.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/reduction/">reduction</a> value.</td>
     </tr>
     <tr>
         <td>reductionValueText</td>
-        <td>The <i>reductionValue</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>reductionValue</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
 </table>
 

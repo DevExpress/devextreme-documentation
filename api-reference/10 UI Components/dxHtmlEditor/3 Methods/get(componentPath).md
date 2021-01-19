@@ -23,7 +23,7 @@ You can extend **HtmlEditor**'s <a href="https://github.com/DevExpress/DevExtrem
 - **Create a custom format based on the Parchment**     
 Refer to the <a href="https://github.com/quilljs/parchment/blob/master/README.md" target="_blank">Parchment documentation</a> for more information.
 
-In the following code, the `bold` format is associated with the `<b>` tag instead of the default `<strong>` tag. After the modification, the format is [registered](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/register(components).md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#registercomponents').
+In the following code, the `bold` format is associated with the `<b>` tag instead of the default `<strong>` tag. After the modification, the format is [registered](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/register(components).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#registercomponents').
 
 ---
 ##### jQuery
@@ -173,5 +173,5 @@ In the following code, the `bold` format is associated with the `<b>` tag instea
 ---
 
 #####See Also#####
-- [register(components)](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/register(components).md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Methods/#registercomponents')
-- [customizeModules](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/customizeModules.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/#customizeModules')
+- [register(components)](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/register(components).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#registercomponents')
+- [customizeModules](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/customizeModules.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#customizeModules')

@@ -6,10 +6,10 @@ Area series also include stacked series types: **Stacked Area** and **Stacked Sp
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/ChartSeriesTypes/stackedarea.html, /Content/Applications/21_1/DataVisualization/Guides/ChartSeriesTypes/stackedarea.js"></div>
 
-To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#type') property. You can configure:
+To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property. You can configure:
 
-- Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/') array;
-- All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonSeriesSettings/') object;
+- Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') array;
+- All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object;
 - All series of a specific type using objects nested in **commonSeriesSettings**: **area**, **splinearea**, **steparea**, etc.
 
 <!---->
@@ -156,7 +156,7 @@ To specify one or another series type, assign its name to the **series[]**.[type
 
 ---
 
-Refer to the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') section of the API Reference for a full list of properties available to a specific series type.
+Refer to the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API Reference for a full list of properties available to a specific series type.
 
 <a href="/Demos/WidgetsGallery/Demo/Charts/Area/" class="button orange small fix-width-155" target="_blank">Area Series Demos</a>
 

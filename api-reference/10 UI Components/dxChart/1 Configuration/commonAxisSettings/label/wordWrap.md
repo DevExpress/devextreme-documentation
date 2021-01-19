@@ -10,5 +10,5 @@ Specifies how to wrap texts that do not fit into a single line.
 
 ---
 #include dataviz-ref-wordwrap with {
-    textOverflow_link: "/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAxisSettings/label/#textOverflow"
+    textOverflow_link: "/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/label/#textOverflow"
 }

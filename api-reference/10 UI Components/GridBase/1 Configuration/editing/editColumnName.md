@@ -11,4 +11,4 @@ The [name]({basewidgetpath}/Configuration/columns/#name) of a column being edite
 ---
 
 #####See Also#####
-- [editRowKey](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#editRowKey)
+- [editRowKey](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#editRowKey)

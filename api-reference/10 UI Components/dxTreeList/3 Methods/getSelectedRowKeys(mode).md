@@ -35,4 +35,4 @@ Returns only leaves' keys.
 
 #####See Also#####
 #include common-link-callmethods
-- [getSelectedRowsData(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowsData(mode).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#getSelectedRowsDatamode')
+- [getSelectedRowsData(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowsData(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowsDatamode')

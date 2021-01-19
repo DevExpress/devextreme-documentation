@@ -7,4 +7,4 @@ type: eventType
 Raised before a dependency is inserted.
 
 ---
-Main article: [onDependencyInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyInserting)
+Main article: [onDependencyInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyInserting)

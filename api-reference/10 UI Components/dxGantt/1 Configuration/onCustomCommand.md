@@ -129,4 +129,4 @@ The name of the clicked item.
 ---
 
 #####See Also#####
-- [customCommand](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#customCommand)
+- [customCommand](/Documentation/ApiReference/UI_Components/dxGantt/Events/#customCommand)

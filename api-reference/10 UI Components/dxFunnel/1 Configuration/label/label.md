@@ -12,4 +12,4 @@ Configures funnel item labels.
 }
 
 #####See Also#####
-- [resolveLabelOverlapping](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/resolveLabelOverlapping.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#resolveLabelOverlapping')
+- [resolveLabelOverlapping](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/resolveLabelOverlapping.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#resolveLabelOverlapping')

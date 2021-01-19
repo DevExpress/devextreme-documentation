@@ -12,7 +12,7 @@ Annotations are containers for images, text blocks, and custom content that disp
 
 ![DevExtreme Chart: Annotations](/images/ChartJS/visual_elements/annotations.png)
 
-To create annotations, assign an array of objects to the **annotations[]** property. Each object configures an individual annotation. You can set each annotation's [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#type') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/image/'), [template](/api-reference/_hidden/dxChartCommonAnnotationConfig/template.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#template') property:
+To create annotations, assign an array of objects to the **annotations[]** property. Each object configures an individual annotation. You can set each annotation's [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#type') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/image/'), [template](/api-reference/_hidden/dxChartCommonAnnotationConfig/template.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#template') property:
 
 ---
 ##### jQuery
@@ -172,7 +172,7 @@ To create annotations, assign an array of objects to the **annotations[]** prope
 
 ---
 
-Annotations can be unattached or anchored to a chart element. The following list shows how to position them. Chart coordinates ([argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#argument'), [value](/api-reference/_hidden/BaseChartAnnotationConfig/value.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#value'), [axis](/api-reference/_hidden/dxChartCommonAnnotationConfig/axis.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#axis'), [series](/api-reference/_hidden/BaseChartAnnotationConfig/series.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#series')) specify the element that the annotation's arrow points to; pixel coordinates ([x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#x') and [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#y')) specify the position of the annotation's center.
+Annotations can be unattached or anchored to a chart element. The following list shows how to position them. Chart coordinates ([argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#argument'), [value](/api-reference/_hidden/BaseChartAnnotationConfig/value.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#value'), [axis](/api-reference/_hidden/dxChartCommonAnnotationConfig/axis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#axis'), [series](/api-reference/_hidden/BaseChartAnnotationConfig/series.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#series')) specify the element that the annotation's arrow points to; pixel coordinates ([x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#x') and [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#y')) specify the position of the annotation's center.
 
 - **Unanchored annotation**
 
@@ -214,13 +214,13 @@ Annotations can be unattached or anchored to a chart element. The following list
             y: 200
         }]
 
-When a user long-presses an annotation or hovers the mouse pointer over it, the **Chart** displays a [tooltip](/api-reference/_hidden/BaseWidgetAnnotationConfig/tooltipEnabled.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/annotations/#tooltipEnabled').
+When a user long-presses an annotation or hovers the mouse pointer over it, the **Chart** displays a [tooltip](/api-reference/_hidden/BaseWidgetAnnotationConfig/tooltipEnabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#tooltipEnabled').
 
-Objects in the **annotations[]** array configure individual annotations. To specify properties common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAnnotationSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
+Objects in the **annotations[]** array configure individual annotations. To specify properties common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAnnotationSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Annotation/"
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeAnnotation')

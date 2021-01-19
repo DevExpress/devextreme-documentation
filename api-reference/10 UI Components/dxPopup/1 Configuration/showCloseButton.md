@@ -8,4 +8,4 @@ default: false, true (desktop)
 Specifies whether or not the UI component displays the Close button.
 
 ---
-[note]The property makes sense only if the [showTitle](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#showTitle') property is set to **true**.
+[note]The property makes sense only if the [showTitle](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle') property is set to **true**.

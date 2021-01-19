@@ -26,7 +26,7 @@ The name of the file where grid data is about to be exported.
 Model data. Available only if Knockout is used.
 
 ---
-You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column.  
+You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column.  
 
 ---
 
@@ -230,4 +230,4 @@ You can use this function to adjust column properties before export. In the foll
 ---
 
 #####See Also#####
-- [export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/')
+- [export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/')

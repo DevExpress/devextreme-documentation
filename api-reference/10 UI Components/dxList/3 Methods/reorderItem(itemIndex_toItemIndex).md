@@ -37,7 +37,7 @@ Where the **group** property specifies the group index, and the **index** proper
 
 This code will move the 4th item of the 1st group to the 3rd position in the 3rd group.
 
-[note]This method reorders items in the [items](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/items/') array, but it does not affect the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#dataSource').
+[note]This method reorders items in the [items](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') array, but it does not affect the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource').
 
 #####See Also#####
 #include common-link-callmethods

@@ -7,4 +7,4 @@ type: eventType
 Raised before a resource is deleted.
 
 ---
-Main article: [onResourceDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onResourceDeleting)
+Main article: [onResourceDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceDeleting)

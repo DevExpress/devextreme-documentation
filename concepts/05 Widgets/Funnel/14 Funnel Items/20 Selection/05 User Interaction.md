@@ -1,4 +1,4 @@
-When a user selects funnel items, they change their style to the one specified by the **item**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/item/selectionStyle '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/item/selectionStyle/') object.
+When a user selects funnel items, they change their style to the one specified by the **item**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/item/selectionStyle '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/item/selectionStyle/') object.
 
 ---
 ##### jQuery

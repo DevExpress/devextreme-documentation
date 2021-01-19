@@ -37,8 +37,8 @@ Right-click a task or a cell in the Gantt chart and select the "Add" context men
 ---
 
 #####See Also#####
-- [onTaskInserting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskInserting)
-- [onTaskInserted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskInserted)
-- [insertTask](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#insertTaskdata)
+- [onTaskInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserting)
+- [onTaskInserted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserted)
+- [insertTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertTaskdata)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
 

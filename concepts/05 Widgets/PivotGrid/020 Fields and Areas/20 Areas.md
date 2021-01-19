@@ -10,7 +10,7 @@ The [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuratio
 
 With the **PivotGrid** UI component you can organize fields related to a single dimension into groups. To learn more about this functionality, refer to the [Fields Grouping](/concepts/05%20Widgets/PivotGrid/050%20Grouping/030%20Fields%20Grouping.md '/Documentation/Guide/Widgets/PivotGrid/Grouping/#Fields_Grouping') article.
 
-[note] Fields with no area defined will not be displayed in the pivot grid, although, they will be available in the [Field Chooser](/api-reference/10%20UI%20Widgets/dxPivotGridFieldChooser '/Documentation/ApiReference/UI_Widgets/dxPivotGridFieldChooser/'), which can be used to put a field into an area.
+[note] Fields with no area defined will not be displayed in the pivot grid, although, they will be available in the [Field Chooser](/api-reference/10%20UI%20Widgets/dxPivotGridFieldChooser '/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/'), which can be used to put a field into an area.
 
 ![](/Content/images/doc/21_1/DataGrid/PivotGrid_3D.png)
 

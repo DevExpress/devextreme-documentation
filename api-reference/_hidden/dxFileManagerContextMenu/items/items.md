@@ -26,7 +26,7 @@ Predefined context menu items include:
 - **'rename'** - Renames files and directories.
 - **'delete'** - Deletes files and directories.
 
-To add a predefined item to the context menu, add its [name](/api-reference/_hidden/dxFileManagerContextMenuItem/name.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/contextMenu/items/#name') and optional settings ('visible', 'beginGroup', 'text', 'icon', 'disabled') to the [items](/api-reference/_hidden/dxFileManagerContextMenu/items '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/contextMenu/items/') array.
+To add a predefined item to the context menu, add its [name](/api-reference/_hidden/dxFileManagerContextMenuItem/name.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/items/#name') and optional settings ('visible', 'beginGroup', 'text', 'icon', 'disabled') to the [items](/api-reference/_hidden/dxFileManagerContextMenu/items '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/items/') array.
 
 ---
 
@@ -57,7 +57,7 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
 **Custom Items**
 
-To add a custom context menu item, specify its [text](/api-reference/_hidden/dxMenuBaseItem/text.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/contextMenu/items/#text') and optional settings (for example, a file extension for a newly created file). Use the [contextMenuItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/contextMenuItemClick.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Events/#contextMenuItemClick') event to handle clicks on custom context menu items.
+To add a custom context menu item, specify its [text](/api-reference/_hidden/dxMenuBaseItem/text.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/items/#text') and optional settings (for example, a file extension for a newly created file). Use the [contextMenuItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/contextMenuItemClick.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#contextMenuItemClick') event to handle clicks on custom context menu items.
 
 ---
 

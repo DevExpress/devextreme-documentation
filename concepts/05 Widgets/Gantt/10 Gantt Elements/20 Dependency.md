@@ -20,7 +20,7 @@ The **Gantt** UI component supports the following dependency types:
 
     ![DevExtreme Gantt Chart - Finish-To-Finish Dependency](/images/Gantt/dependency-type-sf.png)
 
-The **Gantt** UI component gets data for dependencies from a data source ([dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/#dataSource')). Dependency objects from the data source are automatically bound to the UI component if these objects have the default 'id', 'type', etc., data fields in their structure. For example:
+The **Gantt** UI component gets data for dependencies from a data source ([dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/#dataSource')). Dependency objects from the data source are automatically bound to the UI component if these objects have the default 'id', 'type', etc., data fields in their structure. For example:
 
     {
         'id': 0,

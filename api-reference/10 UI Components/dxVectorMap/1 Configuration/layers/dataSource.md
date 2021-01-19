@@ -15,6 +15,6 @@ Specifies a data source for the layer.
 #####See Also#####
 - [VectorMap - Data for Areas](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Areas')
 - [VectorMap - Data for Markers](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/20%20Data%20for%20Markers.md '/Documentation/Guide/Widgets/VectorMap/Providing_Data/#Data_for_Markers')
-- **Layer**.[getDataSource()](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/7%20Map%20Elements/Layer/3%20Methods/getDataSource().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Map_Elements/Layer/Methods/#getDataSource')
+- **Layer**.[getDataSource()](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/7%20Map%20Elements/Layer/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer/Methods/#getDataSource')
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer')
 - [Data Layer - Data Source Examples](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples '/Documentation/Guide/Data_Binding/Data_Source_Examples')

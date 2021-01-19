@@ -6,7 +6,7 @@ default: 'bottom'
 ---
 ---
 ##### shortDescription
-Specifies the orientation of the range container. Applies only if the **geometry**.[orientation](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/geometry/orientation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Configuration/geometry/#orientation') property is *"horizontal"*.
+Specifies the orientation of the range container. Applies only if the **geometry**.[orientation](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/geometry/orientation.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/geometry/#orientation') property is *"horizontal"*.
 
 ---
 This property specifies the range container orientation relative to an invisible scale line.

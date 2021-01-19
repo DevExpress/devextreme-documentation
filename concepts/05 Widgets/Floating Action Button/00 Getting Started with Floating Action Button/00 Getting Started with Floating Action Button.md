@@ -4,7 +4,7 @@ The Floating Action Button (FAB) is the primary action button on a screen that i
 
 There should be **only one** FAB on a screen, but its action(s) can be different for different screens. For more details on the FAB concept and best practices, refer to the following topic: <a href="https://material.io/design/components/buttons-floating-action-button.html" target="_blank">Material Design Guidelines</a>.
 
-In DevExtreme, the FAB is implemented as a container that collects and stores [SpeedDialAction](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Widgets/dxSpeedDialAction/') components.
+In DevExtreme, the FAB is implemented as a container that collects and stores [SpeedDialAction](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/') components.
 
 From this tutorial, you will learn how to create a single- or multi-action FAB and alter action sets during screen transitions.
 

@@ -1,4 +1,4 @@
-The **Autocomplete** can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#searchMode') property to change the mode.
+The **Autocomplete** can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchMode') property to change the mode.
 
 ---
 ##### jQuery
@@ -107,7 +107,7 @@ The **Autocomplete** can provide suggestions in two different modes: *'contains'
 
 ---
 
-By default, the **Autocomplete** UI component starts providing suggestions once an end user types the first character. To increase the number of characters that triggers suggestions, use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#minSearchLength') property. 
+By default, the **Autocomplete** UI component starts providing suggestions once an end user types the first character. To increase the number of characters that triggers suggestions, use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#minSearchLength') property. 
 
 ---
 ##### jQuery
@@ -179,7 +179,7 @@ By default, the **Autocomplete** UI component starts providing suggestions once 
 
 ---
 
-You can also specify the time interval the UI component should wait before providing suggestions. Assign this time interval measured in milliseconds to the [searchTimeout](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/Configuration/#searchTimeout') property.
+You can also specify the time interval the UI component should wait before providing suggestions. Assign this time interval measured in milliseconds to the [searchTimeout](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchTimeout') property.
 
 ---
 ##### jQuery
@@ -254,6 +254,6 @@ You can also specify the time interval the UI component should wait before provi
 #####See Also#####
 - [Autocomplete - Customize Item Appearance](/concepts/05%20Widgets/Autocomplete/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Autocomplete/Customize_Item_Appearance/')
 - [Autocomplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview)
-- [Autocomplete API Reference](/api-reference/10%20UI%20Widgets/dxAutocomplete '/Documentation/ApiReference/UI_Widgets/dxAutocomplete/')
+- [Autocomplete API Reference](/api-reference/10%20UI%20Widgets/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 
 [tags]autocomplete, search, search mode, time interval, min search length

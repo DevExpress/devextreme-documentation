@@ -4,10 +4,10 @@ type: any
 ---
 ---
 ##### shortDescription
-The [data object](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#dataSource') represented by the row.
+The [data object](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') represented by the row.
 
 ---
-The contents of this object depend on the value of the [rowType](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType') property. The following list illustrates this dependency.
+The contents of this object depend on the value of the [rowType](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') property. The following list illustrates this dependency.
 
 - **rowType** is *"data"* &rArr; **data** contains the data object of the row
 - **rowType** is *"detail"* &rArr; **data** contains the data object of the master row in the [master-detail interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/')

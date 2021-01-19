@@ -2,7 +2,7 @@ The **month** view displays appointments for a month. The **Scheduler** UI compo
 
 ![Month View](/images/UiWidgets/Scheduler_Month_View.png)
 
-You can use the [maxAppointmentsPerCell](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/maxAppointmentsPerCell.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#maxAppointmentsPerCell') property to set a limit on the number of full-sized appointments displayed in a single cell. Appointments that exceed this limit are hidden, and a [cell overflow indicator](/concepts/05%20Widgets/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Cell_Overflow_Indicator/') is displayed instead. If hidden appointments are associated with the same resource, the indicator will have the same color as this resource. Otherwise, the indicator has a default color.
+You can use the [maxAppointmentsPerCell](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/maxAppointmentsPerCell.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#maxAppointmentsPerCell') property to set a limit on the number of full-sized appointments displayed in a single cell. Appointments that exceed this limit are hidden, and a [cell overflow indicator](/concepts/05%20Widgets/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Cell_Overflow_Indicator/') is displayed instead. If hidden appointments are associated with the same resource, the indicator will have the same color as this resource. Otherwise, the indicator has a default color.
 
 ![Scheduler: Cell overflow indicator on a month view](/images/UiWidgets/scheduler-month-view-cell-overflow-indicator.png)
 

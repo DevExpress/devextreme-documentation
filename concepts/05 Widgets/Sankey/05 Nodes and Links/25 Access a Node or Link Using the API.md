@@ -1,4 +1,4 @@
-Call the [getAllNodes()](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/3%20Methods/getAllNodes().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Methods/#getAllNodes') method to access all nodes. It returns a collection of [Node](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Node/') objects. Similarly, you can call the [getAllLinks()](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/3%20Methods/getAllLinks().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Methods/#getAllLinks') method to get a collection of [Link](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/7%20Link '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Link/') objects:
+Call the [getAllNodes()](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/3%20Methods/getAllNodes().md '/Documentation/ApiReference/UI_Components/dxSankey/Methods/#getAllNodes') method to access all nodes. It returns a collection of [Node](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node '/Documentation/ApiReference/UI_Components/dxSankey/Node/') objects. Similarly, you can call the [getAllLinks()](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/3%20Methods/getAllLinks().md '/Documentation/ApiReference/UI_Components/dxSankey/Methods/#getAllLinks') method to get a collection of [Link](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/7%20Link '/Documentation/ApiReference/UI_Components/dxSankey/Link/') objects:
 
 ---
 ##### jQuery
@@ -91,7 +91,7 @@ Call the [getAllNodes()](/api-reference/20%20Data%20Visualization%20Widgets/dxSa
 
 ---
 
-You can also access a node or link in the event handlers. For example, the [onNodeClick](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/onNodeClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#onNodeClick') event handler gets the clicked node in the argument:
+You can also access a node or link in the event handlers. For example, the [onNodeClick](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/onNodeClick.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#onNodeClick') event handler gets the clicked node in the argument:
 
 ---
 ##### jQuery

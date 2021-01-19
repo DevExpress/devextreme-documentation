@@ -21,5 +21,5 @@ The resource key.
 ---
 
 #####See Also#####
-- [resourceDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceDeleting)
+- [resourceDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceDeleting)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

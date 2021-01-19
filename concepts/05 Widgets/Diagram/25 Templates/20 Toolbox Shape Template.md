@@ -1,7 +1,7 @@
 Use the following properties to create a template for a shape in the toolbox:
 
-- The [customShapeToolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeToolboxTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#customShapeToolboxTemplate') property defines a common template for all shapes in the toolbox.
-- The [toolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/toolboxTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/customShapes/#toolboxTemplate') property defines a template for a shape in the toolbox.
+- The [customShapeToolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeToolboxTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#customShapeToolboxTemplate') property defines a common template for all shapes in the toolbox.
+- The [toolboxTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/toolboxTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#toolboxTemplate') property defines a template for a shape in the toolbox.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/jQuery/Light/"

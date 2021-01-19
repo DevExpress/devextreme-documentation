@@ -1,4 +1,4 @@
-Commonly, editors nested into an HTML form are supposed to be validated on the client and then submitted to the server. The **Button** UI component supports this scenario out of the box. Place the **Button** on the HTML form and set the [useSubmitBehavior](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#useSubmitBehavior') property to **true**.
+Commonly, editors nested into an HTML form are supposed to be validated on the client and then submitted to the server. The **Button** UI component supports this scenario out of the box. Place the **Button** on the HTML form and set the [useSubmitBehavior](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior') property to **true**.
 
 ---
 ##### jQuery
@@ -142,9 +142,9 @@ Commonly, editors nested into an HTML form are supposed to be validated on the c
 
 ---
 
-Note that the [name](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/name.md '/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/#name') property of the **TextBox** UI components in the previous code specifies the <a href="http://www.w3schools.com/tags/att_input_name.asp" target="_blank">name</a> attribute of the underlying `<input>` element.
+Note that the [name](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/name.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#name') property of the **TextBox** UI components in the previous code specifies the <a href="http://www.w3schools.com/tags/att_input_name.asp" target="_blank">name</a> attribute of the underlying `<input>` element.
 
-DevExtreme editors may belong to different [validation groups](/api-reference/10%20UI%20Widgets/dxValidationGroup '/Documentation/ApiReference/UI_Widgets/dxValidationGroup/'). To specify which group the **Button** must validate, use the [validationGroup](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#validationGroup') property. If you do not set this property, the **Button** validates all editors whose validation group is not specified.
+DevExtreme editors may belong to different [validation groups](/api-reference/10%20UI%20Widgets/dxValidationGroup '/Documentation/ApiReference/UI_Components/dxValidationGroup/'). To specify which group the **Button** must validate, use the [validationGroup](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#validationGroup') property. If you do not set this property, the **Button** validates all editors whose validation group is not specified.
 
 [note]Although the **Button** may validate different validation groups, it always submits a definite HTML form - the one in which it is nested. To avoid mixing up validated and submitted values, we recommend that a single HTML form contain only a single validation group.
 
@@ -152,6 +152,6 @@ DevExtreme editors may belong to different [validation groups](/api-reference/10
 - <a href="https://docs.devexpress.com/AspNetCore/400576/devextreme-based-controls/concepts/data-validation#validate-and-submit-an-html-form" target="_blank">ASP.NET MVC Controls - Validate and Submit an HTML Form</a>
 - [Form - Validate and Submit](/concepts/05%20Widgets/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/Widgets/Form/Validate_and_Submit_the_Form/')
 - [Button Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons)
-- [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/')
+- [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 
 [tags]button, validate a form, submit a form, submit editors

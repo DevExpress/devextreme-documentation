@@ -1,4 +1,4 @@
-Map elements may appear selected when the map is loaded. To accomplish this, implement the [customize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#customize') function that must return an object with the **isSelected** field set to **true** for those areas or markers that must appear selected. The following code snippet provides an example of implementing this function.
+Map elements may appear selected when the map is loaded. To accomplish this, implement the [customize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize') function that must return an object with the **isSelected** field set to **true** for those areas or markers that must appear selected. The following code snippet provides an example of implementing this function.
 
 	<!--JavaScript-->var vectorMapCfg = {
 		// ...

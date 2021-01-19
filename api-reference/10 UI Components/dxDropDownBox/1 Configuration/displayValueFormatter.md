@@ -7,13 +7,13 @@ type: function(value)
 Customizes text before it is displayed in the input field.
 
 ##### param(value): String | Array<any>
-One or more values from the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#displayExpr') that correspond(s) to the selected UI component [values](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#value').
+One or more values from the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') that correspond(s) to the selected UI component [values](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value').
 
 ##### return: String
 Text for the input field.
 
 ---
-This function receives values from the data field set in the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Widgets/dxDropDownBox/Configuration/#displayExpr') property and should return a string that contains text for the input field. If the **displayExpr** is not set, the function receives full data objects. 
+This function receives values from the data field set in the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') property and should return a string that contains text for the input field. If the **displayExpr** is not set, the function receives full data objects. 
 
 The following code demonstrates how to change separators from commas to semicolons by using the **displayValueFormatter** function. You can try it if you copy this code to the [Multiple Selection demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/MultipleSelection):
 

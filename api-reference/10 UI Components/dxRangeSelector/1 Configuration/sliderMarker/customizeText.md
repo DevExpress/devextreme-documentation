@@ -14,7 +14,7 @@ Information on the scale value.
 The raw value.
 
 ##### field(scaleValue.valueText): String
-The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/sliderMarker/format.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/sliderMarker#format') value converted to a string.
+The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/sliderMarker/format.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/sliderMarker#format') value converted to a string.
 
 ##### return: String
 The text for the slider marker to display.

@@ -1,4 +1,4 @@
-When the **LoadPanel** is shown, the area beneath it can be shaded. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/Configuration/#shadingColor') property.
+When the **LoadPanel** is shown, the area beneath it can be shaded. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#shadingColor') property.
 
 ---
 ##### jQuery
@@ -147,6 +147,6 @@ When the **LoadPanel** is shown, the area beneath it can be shaded. The shading 
 - [LoadPanel - Hide the Pane](/concepts/05%20Widgets/LoadPanel/10%20Customize%20the%20Appearance/30%20Hide%20the%20Pane.md '/Documentation/Guide/Widgets/LoadPanel/Customize_the_Appearance/Hide_the_Pane/')
 - [LoadPanel - Resize and Relocate](/concepts/05%20Widgets/LoadPanel/15%20Resize%20and%20Relocate.md '/Documentation/Guide/Widgets/LoadPanel/Resize_and_Relocate/')
 - [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
-- [LoadPanel API Reference](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/')
+- [LoadPanel API Reference](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
 [tags]loadPanel, load panel, overlay, load panel shading, background, shading color

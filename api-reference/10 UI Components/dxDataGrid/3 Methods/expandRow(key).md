@@ -12,9 +12,9 @@ A Promise that is resolved after the row is expanded. It is a <a href="https://d
 The key of the group or the master row.
 
 ---
-To expand a group row, call this method with an array (each member of which is a grouping value). To expand a [master row](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/'), pass its key to this method.
+To expand a group row, call this method with an array (each member of which is a grouping value). To expand a [master row](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/'), pass its key to this method.
 
-A group row can also be expanded when you navigate to a data row within it. See [navigateToRow(key)](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#navigateToRowkey) for more information.
+A group row can also be expanded when you navigate to a data row within it. See [navigateToRow(key)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#navigateToRowkey) for more information.
 
 #####See Also#####
 #include common-link-callmethods

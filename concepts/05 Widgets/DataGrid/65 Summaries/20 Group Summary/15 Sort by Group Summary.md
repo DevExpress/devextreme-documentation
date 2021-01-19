@@ -1,4 +1,4 @@
-Groups are sorted by values of a column they are grouped by. You can also sort them by a group summary item, for example, by the number of records in each group. Specify which summary item to sort by in the [sortByGroupSummaryInfo](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/') array item's [summaryItem](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/summaryItem.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#summaryItem') field. The **summaryItem** can be the item name, item type, item index or column name. You can change the default sort order using the **sortByGroupSummaryInfo**.[sortOrder](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/sortOrder.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#sortOrder') property.
+Groups are sorted by values of a column they are grouped by. You can also sort them by a group summary item, for example, by the number of records in each group. Specify which summary item to sort by in the [sortByGroupSummaryInfo](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sortByGroupSummaryInfo/') array item's [summaryItem](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/summaryItem.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sortByGroupSummaryInfo/#summaryItem') field. The **summaryItem** can be the item name, item type, item index or column name. You can change the default sort order using the **sortByGroupSummaryInfo**.[sortOrder](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/sortOrder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sortByGroupSummaryInfo/#sortOrder') property.
 
 ---
 #####jQuery
@@ -56,7 +56,7 @@ Groups are sorted by values of a column they are grouped by. You can also sort t
 
 ---
 
-Summary-based sorting is applied when you group data by any column. If you need to apply it only when a specific column groups data, specify its name in the [groupColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/groupColumn.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sortByGroupSummaryInfo/#groupColumn') field.
+Summary-based sorting is applied when you group data by any column. If you need to apply it only when a specific column groups data, specify its name in the [groupColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/sortByGroupSummaryInfo/groupColumn.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sortByGroupSummaryInfo/#groupColumn') field.
 
 ---
 #####jQuery

@@ -9,7 +9,7 @@ Adds a marker to the map.
 A Promise that is resolved with an original marker instance when the marker is added. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
 
 ##### param(markerOptions): Object | Array<Object>
-The [Marker](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/markers/') object(s).
+The [Marker](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/') object(s).
 
 ---
 The marker object should include the following fields.

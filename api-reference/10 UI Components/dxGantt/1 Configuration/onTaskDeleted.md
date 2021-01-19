@@ -147,5 +147,5 @@ The values of the deleted task.
 ---
 
 #####See Also#####
-- [taskDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskDeleted)
+- [taskDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskDeleted)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

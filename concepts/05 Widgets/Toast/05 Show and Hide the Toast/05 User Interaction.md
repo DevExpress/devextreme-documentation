@@ -6,15 +6,15 @@ Because the **Toast** is supposed to notify a user when something happens, it ca
         <th>Description</th>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#closeOnClick">closeOnClick</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxToast/Configuration/#closeOnClick">closeOnClick</a></td>
         <td>Hides the <b>Toast</b> when a user clicks/presses it.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxToast/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
         <td>Hides the <b>Toast</b> when a user clicks/presses outside of it.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxToast/Configuration/#closeOnSwipe">closeOnSwipe</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxToast/Configuration/#closeOnSwipe">closeOnSwipe</a></td>
         <td>Hides the <b>Toast</b> when a user swipes it out of the screen.</td>
     </tr>
 </table>

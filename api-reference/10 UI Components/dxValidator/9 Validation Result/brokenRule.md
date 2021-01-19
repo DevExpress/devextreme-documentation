@@ -4,6 +4,6 @@ type: RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | C
 ---
 ---
 ##### shortDescription
-A rule that failed to pass the check. Contains the first item from the [brokenRules](/api-reference/10%20UI%20Widgets/dxValidator/9%20Validation%20Result/brokenRules.md '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Result/#brokenRules') array.
+A rule that failed to pass the check. Contains the first item from the [brokenRules](/api-reference/10%20UI%20Widgets/dxValidator/9%20Validation%20Result/brokenRules.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Result/#brokenRules') array.
 
 ---

@@ -3,7 +3,7 @@ id: PivotGridDataSource.state()
 ---
 ---
 ##### shortDescription
-Gets the current **PivotGridDataSource** state. Part of the **PivotGrid** UI component's [state storing](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/') feature.
+Gets the current **PivotGridDataSource** state. Part of the **PivotGrid** UI component's [state storing](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/stateStoring/') feature.
 
 ##### return: Object
 The **PivotGridDataSource** state - fields configuration, filters, expanded headers, etc.

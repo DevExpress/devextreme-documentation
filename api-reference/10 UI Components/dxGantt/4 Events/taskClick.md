@@ -7,4 +7,4 @@ type: eventType
 Raised when a user clicks a task.
 
 ---
-Main article: [onTaskClick](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onTaskClick)
+Main article: [onTaskClick](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskClick)

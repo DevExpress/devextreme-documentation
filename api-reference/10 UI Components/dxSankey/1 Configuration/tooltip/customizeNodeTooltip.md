@@ -11,7 +11,7 @@ Customizes node tooltips' appearance.
 Information about a sankey node being pressed or hovered over.
 
 ##### field(info.label): String
-The node's [label](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/2%20Fields/label.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Node/Fields/#label').
+The node's [label](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/2%20Fields/label.md '/Documentation/ApiReference/UI_Components/dxSankey/Node/Fields/#label').
 
 ##### field(info.title).deprecated
 Use 'label' instead.

@@ -39,6 +39,6 @@ Next, get familiar with the UI component's elements using the following element 
 }
 
 #####See Also#####
-- [Sankey API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/')
+- [Sankey API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey '/Documentation/ApiReference/UI_Components/dxSankey/')
 
 [tags] dxsankey

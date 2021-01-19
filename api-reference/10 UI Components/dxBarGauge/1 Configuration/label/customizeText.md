@@ -14,7 +14,7 @@ Information on the bar value.
 The raw value.
 
 ##### field(barValue.valueText): String
-The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/label/format.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/label/#format') value converted to a string.
+The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/label/format.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/#format') value converted to a string.
 
 ##### return: String
 The text for the label to display.

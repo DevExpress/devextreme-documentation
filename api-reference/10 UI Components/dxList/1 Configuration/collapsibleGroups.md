@@ -8,7 +8,7 @@ default: false
 Specifies whether or not an end-user can collapse groups.
 
 ---
-This property makes sense if the [grouped](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#grouped') property is set to **true**.
+This property makes sense if the [grouped](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#grouped') property is set to **true**.
 
 If the **collapsibleGroups** property is set to **true**, the down arrow is displayed to the right of a group header. An end-user can collapse or expand a group simply clicking the group header.
 

@@ -17,7 +17,7 @@ The tooltip's text or markup and appearance settings.
 ---
 #include dataviz-customize-tooltip-return
 
-The **pointInfo** object has different fields for the different [series types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/'). The following fields are available for all the series types:
+The **pointInfo** object has different fields for the different [series types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/'). The following fields are available for all the series types:
 
 <table class="dx-table full-width">
     <tr>
@@ -30,7 +30,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
     <tr>
         <td><code>value</code></td>
-        <td>The value of the represented point. Differs from the <b>originalValue</b> when the axis <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">value type</a> is specified explicitly. In this instance, the <b>value</b> field contains a value of the specified type.</td>
+        <td>The value of the represented point. Differs from the <b>originalValue</b> when the axis <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">value type</a> is specified explicitly. In this instance, the <b>value</b> field contains a value of the specified type.</td>
     </tr>
     <tr>
         <td><code>valueText</code></td>
@@ -42,7 +42,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
     <tr>
         <td><code>argument</code></td>
-        <td>The argument value of the represented point. Differs from the <b>originalArgument</b> when the axis <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#argumentType">argument type</a> differs from the argument type in the data source. In this instance, <b>argument</b> has the similar type as the argument axis.</td>
+        <td>The argument value of the represented point. Differs from the <b>originalArgument</b> when the axis <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType">argument type</a> differs from the argument type in the data source. In this instance, <b>argument</b> has the similar type as the argument axis.</td>
     </tr>
     <tr>
         <td><code>argumentText</code></td>
@@ -54,11 +54,11 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
     <tr>
         <td><code>point</code></td>
-        <td>Information on the point being hovered over. To learn more about the field and methods of the point object, refer to the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/">Point</a> topic.</td>
+        <td>Information on the point being hovered over. To learn more about the field and methods of the point object, refer to the <a href="/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/">Point</a> topic.</td>
     </tr>
     <tr>
         <td><code>points</code></td>
-        <td>An array of points with the same argument as the point being hovered over. This field is accessible when the <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/tooltip/#shared">shared</a> property of the <b>tooltip</b> is set to <b>true</b>.
+        <td>An array of points with the same argument as the point being hovered over. This field is accessible when the <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#shared">shared</a> property of the <b>tooltip</b> is set to <b>true</b>.
     </tr>
     <tr>
         <td><code>size</code> (for bubble series only)</td>
@@ -66,7 +66,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
 </table>
 
-The folllowing **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedAreaSeries/'):
+The folllowing **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -89,7 +89,7 @@ The folllowing **pointInfo** fields are available for the stacked-like series su
     </tr>
 </table>
 
-The folllowing **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/'):
+The folllowing **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -102,7 +102,7 @@ The folllowing **pointInfo** fields are available for the range-like series, suc
     </tr>
     <tr>
         <td><code>rangeValue1</code></td>        
-        <td>The first range value of the point being hovered over. Differs from the <b>originalMinValue</b> when the axis <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">value type</a> is specified explicitly. In this instance, the <b>rangeValue1</b> field contains the first range value of the specified type.</td>
+        <td>The first range value of the point being hovered over. Differs from the <b>originalMinValue</b> when the axis <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">value type</a> is specified explicitly. In this instance, the <b>rangeValue1</b> field contains the first range value of the specified type.</td>
     </tr>
     <tr>
         <td><code>rangeValue1Text</code></td>   
@@ -114,7 +114,7 @@ The folllowing **pointInfo** fields are available for the range-like series, suc
     </tr>
     <tr>
         <td><code>rangeValue2</code></td>        
-        <td>The second range value of the point being hovered over. Differs from the <b>originalValue</b> when the axis <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">value type</a> is specified explicitly. In this instance, the <b>rangeValue2</b> field contains the second range value in the specified type.</td>
+        <td>The second range value of the point being hovered over. Differs from the <b>originalValue</b> when the axis <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">value type</a> is specified explicitly. In this instance, the <b>rangeValue2</b> field contains the second range value in the specified type.</td>
     </tr>
     <tr>
         <td><code>rangeValue2Text</code></td>   
@@ -127,7 +127,7 @@ The folllowing **pointInfo** fields are available for the range-like series, suc
     </tr>
 </table>
 
-The folllowing **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/StockSeries/'):
+The folllowing **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/'):
 
 <table class="dx-table full-width">
     <tr>

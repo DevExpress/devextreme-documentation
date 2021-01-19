@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-A complementary UI component for the [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/') that allows you to manage data displayed in the **PivotGrid**. The field chooser is already integrated in the **PivotGrid** and can be invoked using the context menu. If you need to continuously display the field chooser near the **PivotGrid** UI component, use the **PivotGridFieldChooser** UI component.
+A complementary UI component for the [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/') that allows you to manage data displayed in the **PivotGrid**. The field chooser is already integrated in the **PivotGrid** and can be invoked using the context menu. If you need to continuously display the field chooser near the **PivotGrid** UI component, use the **PivotGridFieldChooser** UI component.
 
 ##### lib
 dx.web.js, dx.all.js

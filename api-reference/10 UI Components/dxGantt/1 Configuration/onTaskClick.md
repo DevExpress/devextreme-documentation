@@ -150,5 +150,5 @@ Model data. Available only if you use Knockout.
 ---
 
 #####See Also#####
-- [taskClick](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskClick)
+- [taskClick](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskClick)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

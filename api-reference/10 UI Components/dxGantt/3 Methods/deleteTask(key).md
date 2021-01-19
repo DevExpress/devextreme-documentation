@@ -21,5 +21,5 @@ The task key.
 ---
 
 #####See Also#####
-- [taskDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#taskDeleting)
+- [taskDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskDeleting)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

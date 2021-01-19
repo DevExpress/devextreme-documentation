@@ -7,7 +7,7 @@ type: eventType
 Raised when the file upload is started.
 
 ---
-Main article: [onUploadStarted](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/onUploadStarted.md '/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#onUploadStarted')
+Main article: [onUploadStarted](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/onUploadStarted.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#onUploadStarted')
 
 #####See Also#####
 #include common-link-handleevents

@@ -16,6 +16,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [Button Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons)
-- [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/')
+- [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 
 [tags]button, accessibility, keyboard shortcuts

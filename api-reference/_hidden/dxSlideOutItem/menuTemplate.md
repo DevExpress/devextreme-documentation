@@ -12,7 +12,7 @@ A template name or a template container.
 ---
 The following types of the specified value are available.
 
-- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Widgets/Markup_Components/dxTemplate/').
+- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
 - Assign a jQuery object of the template's container.
 - Assign a DOM Node of the template's container.
 - Assign a function that returns the jQuery object or a DOM Node of the template's container.

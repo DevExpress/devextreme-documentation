@@ -6,7 +6,7 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Specifies how the axis's [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/visualRange/') should behave when chart data is updated.
+Specifies how the axis's [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') should behave when chart data is updated.
 
 ---
 The following modes are available:
@@ -15,7 +15,7 @@ The following modes are available:
 The visual range moves to the axis's end. The range's length does not change.
 
 - *"reset"*     
-The visual range becomes equal to the [whole range](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/wholeRange '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/wholeRange/').
+The visual range becomes equal to the [whole range](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/wholeRange/').
 
 - *"keep"*      
 The visual range does not change.
@@ -26,4 +26,4 @@ The applied mode changes depending on the visual range's position on the axis:
     - if set to view the whole range, then *"reset"* (the visual range remains equal to the whole range).
 
 #####See Also#####
-- **Axis**.[visualRange()](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Axis/Methods/#visualRange')
+- **Axis**.[visualRange()](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/Methods/#visualRange')

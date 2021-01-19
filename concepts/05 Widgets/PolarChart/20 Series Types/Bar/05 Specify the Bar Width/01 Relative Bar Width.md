@@ -1,4 +1,4 @@
-Regulating the empty space on a bar's sides controls the relative angular bar width. Use the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/barPadding.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/series/#barPadding') property to specify how much of the available sector should be empty. For example, a **barPadding** of 0.1 leaves 10% of the available sector empty giving the rest to the bar.
+Regulating the empty space on a bar's sides controls the relative angular bar width. Use the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#barPadding') property to specify how much of the available sector should be empty. For example, a **barPadding** of 0.1 leaves 10% of the available sector empty giving the rest to the bar.
 
 ---
 ##### jQuery
@@ -50,7 +50,7 @@ Regulating the empty space on a bar's sides controls the relative angular bar wi
 
 In single-series charts, the available sector equals the interval between two [major ticks](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/Widgets/PolarChart/Visual_Elements/#Axis_Ticks'). In multi-series charts, it depends on the number of [bars in the parent group](/concepts/05%20Widgets/PolarChart/20%20Series%20Types/Bar/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/Widgets/PolarChart/Series_Types/#Bar/Specify_the_Bar_Width') and the group's angular width.
 
-The parent group's width can be specified using the [barGroupPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/barGroupPadding.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#barGroupPadding') property. It works like **barPadding**, dividing the available sector between the bar group and an empty space. For example, a **barGroupPadding** of 0.2 leaves 20% of the sector empty. The available sector is the interval between two major ticks. Unlike **barPadding**, which can be specified for each series individually, **barGroupPadding** applies to the whole chart.
+The parent group's width can be specified using the [barGroupPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/barGroupPadding.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#barGroupPadding') property. It works like **barPadding**, dividing the available sector between the bar group and an empty space. For example, a **barGroupPadding** of 0.2 leaves 20% of the sector empty. The available sector is the interval between two major ticks. Unlike **barPadding**, which can be specified for each series individually, **barGroupPadding** applies to the whole chart.
 
 ---
 ##### jQuery

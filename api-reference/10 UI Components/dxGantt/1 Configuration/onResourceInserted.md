@@ -147,5 +147,5 @@ The values of the inserted resource.
 ---
 
 #####See Also#####
-- [resourceInserted](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#resourceInserted)
+- [resourceInserted](/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceInserted)
 - [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

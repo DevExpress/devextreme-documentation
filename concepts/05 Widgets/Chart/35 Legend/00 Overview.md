@@ -2,7 +2,7 @@ The legend is a chart component that helps a user identify series. It contains s
 
 ![DevExtreme HTML5 JavaScript Charts Legend](/images/ChartJS/visual_elements/legend.png)
 
-To configure the appearance, location, and content of the legend, use properties collected in the [legend](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/') object. 
+To configure the appearance, location, and content of the legend, use properties collected in the [legend](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/') object. 
 
 ---
 ##### jQuery
@@ -85,6 +85,6 @@ To configure the appearance, location, and content of the legend, use properties
 - [Rearrange Legend Items](/concepts/05%20Widgets/Chart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/Widgets/Chart/Legend/Rearrange_Legend_Items/')
 - [User Interaction with the Legend](/concepts/05%20Widgets/Chart/35%20Legend/30%20User%20Interaction.md '/Documentation/Guide/Widgets/Chart/Legend/User_Interaction/')
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine)
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/')
+- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, legend, overview

@@ -15,4 +15,4 @@ Scrolling allows a user to browse data left outside the current viewport. The UI
 
 #####See Also#####
 - [Scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/Widgets/DataGrid/Scrolling/')
-- [pager](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/pager/')
+- [pager](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/')

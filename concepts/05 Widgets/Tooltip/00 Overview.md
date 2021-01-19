@@ -132,6 +132,6 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
 - [Tooltip - Show and Hide](/concepts/05%20Widgets/Tooltip/05%20Show%20and%20Hide%20the%20Tooltip '/Documentation/Guide/Widgets/Tooltip/Show_and_Hide_the_Tooltip/')
 - [Tooltip - Customize the Content](/concepts/05%20Widgets/Tooltip/10%20Customize%20the%20Content '/Documentation/Guide/Widgets/Tooltip/Customize_the_Content/')
 - [Tooltip - Resize and Relocate](/concepts/05%20Widgets/Tooltip/15%20Resize%20and%20Relocate.md '/Documentation//Guide/Widgets/Tooltip/Resize_and_Relocate/')
-- [Tooltip API Reference](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Widgets/dxTooltip/')
+- [Tooltip API Reference](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 
 [tags]dxtooltip, tooltip, overview, overlay

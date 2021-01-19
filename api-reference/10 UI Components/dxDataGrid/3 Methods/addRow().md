@@ -273,4 +273,4 @@ This method works only when **paging**.[enabled](/api-reference/10%20UI%20Widget
 
 #####See Also#####
 #include common-link-callmethods
-- **editing**.[allowUpdating](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#allowAdding')
+- **editing**.[allowUpdating](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding')

@@ -1,4 +1,4 @@
-Assign a function to the [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Widgets/dxButtonGroup/Configuration/#onSelectionChanged') property. In this tutorial, the function logs the added or removed style's name to the browser's console: 
+Assign a function to the [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onSelectionChanged') property. In this tutorial, the function logs the added or removed style's name to the browser's console: 
 
 ---
 ##### jQuery

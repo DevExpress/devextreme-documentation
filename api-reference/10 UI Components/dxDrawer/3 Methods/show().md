@@ -10,4 +10,4 @@ A Promise that is resolved after the drawer is opened. It is a <a href="https://
 
 ---
 #####See Also#####
-- [toggle](/api-reference/10%20UI%20Widgets/dxDrawer/3%20Methods/toggle().md '/Documentation/ApiReference/UI_Widgets/dxDrawer/Methods/#toggle')
+- [toggle](/api-reference/10%20UI%20Widgets/dxDrawer/3%20Methods/toggle().md '/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#toggle')

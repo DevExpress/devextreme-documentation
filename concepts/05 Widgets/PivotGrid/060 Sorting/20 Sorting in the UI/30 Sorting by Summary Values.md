@@ -2,7 +2,7 @@ To understand how fields are sorted by summary values, consider two dimensions: 
 
 ![DevExtreme PivotGrid FieldChooser SortingIcons](/images/DataGrid/PivotGrid_sortingBySummary_contextMenu.png)
 
-To allow the user to perform this type of sorting, set the [allowSortingBySummary](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSortingBySummary.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#allowSortingBySummary') property to **true**.
+To allow the user to perform this type of sorting, set the [allowSortingBySummary](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSortingBySummary.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSortingBySummary') property to **true**.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

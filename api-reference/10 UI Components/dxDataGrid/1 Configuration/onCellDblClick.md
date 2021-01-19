@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a cell is double-clicked or double-tapped. Executed before [onRowDblClick](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onRowDblClick.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onRowDblClick').
+A function that is executed when a cell is double-clicked or double-tapped. Executed before [onRowDblClick](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onRowDblClick.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowDblClick').
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -27,7 +27,7 @@ The data of the row the cell belongs to. Available if the **rowType** is *"data"
 
 ##### field(e.displayValue): any
 The value displayed in the cell. Available if the **rowType** is *"data"* or *"group"*.      
-Differs from the **value** field only when the cell belongs to a [lookup](/api-reference/_hidden/dxDataGridColumn/lookup '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/lookup/') column.
+Differs from the **value** field only when the cell belongs to a [lookup](/api-reference/_hidden/dxDataGridColumn/lookup '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/') column.
 
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "UI component" }
@@ -36,7 +36,7 @@ Differs from the **value** field only when the cell belongs to a [lookup](/api-r
 #include common-ref-eventparam
 
 ##### field(e.key): any
-The row's [key](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/key.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#key') or a group row's [key](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Group_Index_and_Key'). Available if the **rowType** is *"data"*, *"detail"*, *"detailAdaptive"*, or *"group"*.
+The row's [key](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#key') or a group row's [key](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Group_Index_and_Key'). Available if the **rowType** is *"data"*, *"detail"*, *"detailAdaptive"*, or *"group"*.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
@@ -48,10 +48,10 @@ The row's properties. Available if the **rowType** is *"data"*, *"detail"*, *"de
 The index of the row the cell belongs to.
 
 ##### field(e.rowType): String
-The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType').
+The row's [type](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType').
 
 ##### field(e.text): String
-The cell's [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#format') value converted to a string. Available if the **rowType** is *"data"* or *"group"*.
+The cell's [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#format') value converted to a string. Available if the **rowType** is *"data"* or *"group"*.
 
 ##### field(e.value): any
 The cell's raw value. Available if the **rowType** is *"data"* or *"group"*.

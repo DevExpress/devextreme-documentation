@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a row is double-clicked or double-tapped. Executed after [onCellDblClick](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onCellDblClick.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onCellDblClick').
+A function that is executed when a row is double-clicked or double-tapped. Executed after [onCellDblClick](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onCellDblClick.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onCellDblClick').
 
 ##### param(e): Object
 Information about the event that caused the function's execution.
@@ -35,7 +35,7 @@ Indicates that the row is added, but not yet saved. Available if **rowType** is 
 Indicates whether the row is selected. Available if **rowType** is *"data"* or *"detail"*.
 
 ##### field(e.key): any
-The row's [key](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/key.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Row/#key'). Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
+The row's [key](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#key'). Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
@@ -47,7 +47,7 @@ Model data. Available only if you use Knockout.
 The row's index. Refer to [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### field(e.rowType): String
-The row's [type](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Row/#rowType').
+The row's [type](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#rowType').
 
 ##### field(e.values): Array<any>
 Raw values displayed in the row's cells.

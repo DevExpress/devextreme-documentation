@@ -9,7 +9,7 @@ notUsedInTheme:
 Defines properties for the series template.
 
 ---
-In most cases, you can organize the array that is assigned to the chart's [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#dataSource') property in the following way.
+In most cases, you can organize the array that is assigned to the chart's [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#dataSource') property in the following way.
 
     [
         {arg: arg1Value, series1Value: val11, series2Value: val12, ...}
@@ -31,6 +31,6 @@ However, there are some scenarios in which you do not know exactly how many seri
         ...
     ]
 
-If you define a data source in this manner, set the argument and value fields using the [argumentField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/argumentField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonSeriesSettings/#argumentField') and [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonSeriesSettings/#valueField') properties of the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonSeriesSettings/') configuration object (for all series at once). Then, define a template for the series using the **seriesTemplate** configuration object. Within this object, set the data source field that specifies the series name to the **nameField** property.
+If you define a data source in this manner, set the argument and value fields using the [argumentField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/argumentField.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/#argumentField') and [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/#valueField') properties of the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/') configuration object (for all series at once). Then, define a template for the series using the **seriesTemplate** configuration object. Within this object, set the data source field that specifies the series name to the **nameField** property.
 
 If you need to specify individual values for properties of a particular series, assign a callback function to the **customizeSeries** property of the **seriesTemplate** object.

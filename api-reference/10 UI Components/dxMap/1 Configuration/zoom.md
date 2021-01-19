@@ -6,6 +6,6 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-The map's zoom level. The UI component can change this value if [autoAdjust](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/autoAdjust.md '/Documentation/ApiReference/UI_Widgets/dxMap/Configuration/#autoAdjust') is enabled.
+The map's zoom level. The UI component can change this value if [autoAdjust](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/autoAdjust.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#autoAdjust') is enabled.
 
 ---

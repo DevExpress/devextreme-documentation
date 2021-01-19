@@ -50,7 +50,7 @@ The **customizePoint** function accepts an object providing information about th
     </tr>
 </table>
 
-In the [*range bar*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeBarSeries/') and [*range area*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/RangeAreaSeries/') series, the **value** field is replaced by the following fields.
+In the [*range bar*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/') and [*range area*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') series, the **value** field is replaced by the following fields.
 
 <table class="dx-table full-width">
     <tr>
@@ -59,15 +59,15 @@ In the [*range bar*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/
     </tr>
     <tr>
         <td>rangeValue1</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#rangeValue1Field">first value</a> of the series point.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#rangeValue1Field">first value</a> of the series point.</td>
     </tr>
     <tr>
         <td>rangeValue2</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#rangeValue2Field">second value</a> of the series point.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#rangeValue2Field">second value</a> of the series point.</td>
     </tr>
 </table>
 
-In the financial series ([*candlestick*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/CandleStickSeries/') and [*stock*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/StockSeries/')), the **value** field is replaced by the following fields.
+In the financial series ([*candlestick*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') and [*stock*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/')), the **value** field is replaced by the following fields.
 
 <table class="dx-table full-width">
     <tr>
@@ -76,23 +76,23 @@ In the financial series ([*candlestick*](/api-reference/20%20Data%20Visualizatio
     </tr>
     <tr>
         <td>openValue</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#openValueField">open value</a> of the series point.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#openValueField">open value</a> of the series point.</td>
     </tr>
     <tr>
         <td>closeValue</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#closeValueField">close value</a> of the series point.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#closeValueField">close value</a> of the series point.</td>
     </tr>
     <tr>
         <td>lowValue</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#lowValueField">low value</a> of the series point.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#lowValueField">low value</a> of the series point.</td>
     </tr>
     <tr>
         <td>highValue</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#highValueField">high value</a> of the series point.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#highValueField">high value</a> of the series point.</td>
     </tr>
     <tr>
         <td>reductionValue</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/reduction/">reduction</a> value of the series point.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/reduction/">reduction</a> value of the series point.</td>
     </tr>
 </table>
 

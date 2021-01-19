@@ -12,7 +12,7 @@ Annotations are containers for images, text blocks, and custom content that disp
 
 ![DevExtreme VectorMap: Annotations](/images/ChartJS/annotations/vector-map-text-image-annotation.png) 
 
-To create annotations, assign an array of objects to the **annotations[]** property. Each object configures an individual annotation. You can set each annotation's [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'), or [template](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/template.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#template') property:
+To create annotations, assign an array of objects to the **annotations[]** property. Each object configures an individual annotation. You can set each annotation's [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text'), [image](/api-reference/_hidden/BaseWidgetAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/'), or [template](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/template.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/annotations/#template') property:
     
 ---
 ##### jQuery
@@ -174,13 +174,13 @@ To create annotations, assign an array of objects to the **annotations[]** prope
 
 Annotations can be positioned at specific geographic coordinates or coordinates of the client area:
 
-- **Geographic [coordinates](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/coordinates.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#coordinates')**
+- **Geographic [coordinates](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/coordinates.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/annotations/#coordinates')**
 
         annotations: [{
             coordinates: [-75.4999, 43.00035]
         }]
 
-- **Client area coordinates ([x](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/x.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#x') and [y](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/y.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#y'))**
+- **Client area coordinates ([x](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/x.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/annotations/#x') and [y](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/y.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/annotations/#y'))**
 
         annotations: [{
             x: 100,
@@ -196,4 +196,4 @@ Objects in the **annotations[]** array configure individual annotations. To spec
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#customizeAnnotation')

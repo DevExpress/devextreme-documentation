@@ -24,7 +24,7 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ##### field(e.points): Array<piePointObject>
-The [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/') object(s).
+The [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') object(s).
 
 ##### field(e.target): String | Number
 The argument of the point(s) corresponding to the clicked legend item.

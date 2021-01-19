@@ -1,4 +1,4 @@
-The selection capability is not provided out of the box, but it can be implemented using the [pointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Events/#pointClick') event. The following code gives an example for the scenario when a click on a point selects it, and a subsequent click on the same point clears the selection. To check whether the point is already selected, its [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isSelected().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#isSelected') method is called.
+The selection capability is not provided out of the box, but it can be implemented using the [pointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointClick.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#pointClick') event. The following code gives an example for the scenario when a click on a point selects it, and a subsequent click on the same point clears the selection. To check whether the point is already selected, its [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isSelected().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#isSelected') method is called.
 
 ---
 ##### jQuery
@@ -107,7 +107,7 @@ The selection capability is not provided out of the box, but it can be implement
 
 ---
 
-In the previous code example, selection was cleared of a specific point. If you need to clear selection of all points in a series, you can use the [deselectPoint(point)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/deselectPoint(point).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#deselectPointpoint') method of that series.
+In the previous code example, selection was cleared of a specific point. If you need to clear selection of all points in a series, you can use the [deselectPoint(point)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/deselectPoint(point).md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#deselectPointpoint') method of that series.
 
 ---
 ##### jQuery
@@ -198,7 +198,7 @@ In the previous code example, selection was cleared of a specific point. If you 
 
 ---
 
-If you need to clear selection of all series in the **Chart** along with their points, call the [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#clearSelection') method of the **Chart** instance.
+If you need to clear selection of all series in the **Chart** along with their points, call the [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#clearSelection') method of the **Chart** instance.
 
 ---
 ##### jQuery

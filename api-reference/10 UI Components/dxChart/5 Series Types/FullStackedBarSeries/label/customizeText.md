@@ -27,11 +27,11 @@ This property accepts a function whose parameter exposes the following fields.
     </tr>
     <tr>
         <td>value</td>
-        <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
+        <td>The <i>originalValue</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType">type cast</a>.</td>
     </tr>
     <tr>
         <td>valueText</td>
-        <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/label/#format">format</a> and converted to string.</td>
+        <td>The <i>value</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>originalArgument</td>
@@ -39,11 +39,11 @@ This property accepts a function whose parameter exposes the following fields.
     </tr>
     <tr>
         <td>argument</td>
-        <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
+        <td>The <i>originalArgument</i> after <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType">type cast</a>.</td>
     </tr>
     <tr>
         <td>argumentText</td>
-        <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/label/#argumentFormat">format</a> and converted to string.</td>
+        <td>The <i>argument</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/label/#argumentFormat">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>percent</td>
@@ -51,7 +51,7 @@ This property accepts a function whose parameter exposes the following fields.
     </tr>
     <tr>
         <td>percentText</td>
-        <td>The <i>percent</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/label/#format">format</a> and converted to string.</td>
+        <td>The <i>percent</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>total</td>
@@ -59,11 +59,11 @@ This property accepts a function whose parameter exposes the following fields.
     </tr>
     <tr>
         <td>totalText</td>
-        <td>The <i>total</i> with an applied <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/FullStackedBarSeries/label/#format">format</a> and converted to string.</td>
+        <td>The <i>total</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>point</td>
-        <td>The <a href="/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/">Point</a> object.</td>
+        <td>The <a href="/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/">Point</a> object.</td>
     </tr>
     <tr>
         <td>seriesName</td>

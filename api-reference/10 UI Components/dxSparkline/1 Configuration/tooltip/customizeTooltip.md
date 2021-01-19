@@ -44,7 +44,7 @@ You can access the following fields of the **Sparkline**:
     </tr>
 </table>
 
-The following fields are available for a sparkline of the "winloss" [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSparkline/Configuration/#type') only:
+The following fields are available for a sparkline of the "winloss" [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') only:
 
 <table class="dx-table full-width">
     <tr>

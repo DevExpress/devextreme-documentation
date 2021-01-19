@@ -5,8 +5,8 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Days to be excluded from the scale when [workdaysOnly](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/workdaysOnly.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/#workdaysOnly') is **true**.
+Days to be excluded from the scale when [workdaysOnly](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/workdaysOnly.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/#workdaysOnly') is **true**.
 
 ---
 #####See Also#####
-- [workWeek](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/workWeek.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/scale/#workWeek')
+- [workWeek](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/workWeek.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/#workWeek')

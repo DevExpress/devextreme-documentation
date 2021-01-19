@@ -9,7 +9,7 @@ default: 'rangeBar'
 Specifies the type of the value indicator.
 
 ---
-Different properties of the **valueIndicator** configuration object can be set for different types of the value indicator. These properties are listed within the [Indicator Types](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxLinearGauge/Indicator_Types/') section.
+Different properties of the **valueIndicator** configuration object can be set for different types of the value indicator. These properties are listed within the [Indicator Types](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/') section.
 
 #include common-ref-enum with {
     enum: "`GaugeIndicatorType`",

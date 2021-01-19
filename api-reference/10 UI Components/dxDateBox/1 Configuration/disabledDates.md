@@ -5,13 +5,13 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies dates that users cannot select. Applies only if [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#pickerType') is *"calendar"*.
+Specifies dates that users cannot select. Applies only if [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') is *"calendar"*.
 
 ##### param(data): Object
 Information about the checked date.
 
 ##### field(data.component): dxDateBox
-The UI component's [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Methods/#instance').
+The UI component's [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#instance').
 
 ##### field(data.date): Date
 The currently checked date.

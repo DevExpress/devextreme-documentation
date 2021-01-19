@@ -8,6 +8,17 @@ default: true
 Specifies whether a user can delete [dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '{basewidgetpath}/Configuration/#dependencies').
 
 ---
+
+![DevExtreme Gantt - Dependency](~/images/Gantt/dependency-element.png)
+
+Select a dependency and click **Delete** to delete this dependency. 
+
+![DevExtreme Gantt - Delete Dependency](~/images/Gantt/delete-dependency.png)
+
+The widget displays a delete confirmation message when you want to remove a dependency.
+
+![[DevExtreme Gantt - Confirm Dependency Deletion](~/images/Gantt/confirm-delete-dependency.png)
+
 ---
 ##### jQuery
 
@@ -22,3 +33,9 @@ Specifies whether a user can delete [dependencies](/api-reference/10%20UI%20Widg
     }); 
 
 ---
+
+#####See Also#####
+- [onDependencyDeleting](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyDeleting)
+- [onDependencyDeleted](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/#onDependencyDeleted)
+- [deleteDependency](/Documentation/ApiReference/UI_Widgets/dxGantt/Methods/#deleteDependencykey)
+- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)

@@ -21,4 +21,4 @@ Configures both the labels.
 These objects have identical structure, but the **label** settings declared in the **horizontalLine** or **verticalLine** object override the **label** settings declared directly in the **crosshair** object.
 
 #####See Also#####
-- **crosshair**.**verticalLine**.[label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair/verticalLine/label '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/crosshair/verticalLine/label/') - configures the label that belongs to the vertical crosshair line.
+- **crosshair**.**verticalLine**.[label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair/verticalLine/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/verticalLine/label/') - configures the label that belongs to the vertical crosshair line.

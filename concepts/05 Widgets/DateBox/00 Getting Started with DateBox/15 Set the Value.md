@@ -1,4 +1,4 @@
-To set the UI component's value, specify the [value](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/#value') option. In this tutorial, it is equal to the current date and time.
+To set the UI component's value, specify the [value](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#value') option. In this tutorial, it is equal to the current date and time.
 
 ---
 ##### jQuery

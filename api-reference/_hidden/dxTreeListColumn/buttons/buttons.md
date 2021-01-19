@@ -6,7 +6,7 @@ inheritsType: dxTreeListColumnButton
 ---
 ---
 ##### shortDescription
-Allows you to customize buttons in the edit column or create a custom [command column](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Command_Columns/'). Applies only if the column's [type](/api-reference/_hidden/dxTreeListColumn/type.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#type') is *"buttons"*.
+Allows you to customize buttons in the edit column or create a custom [command column](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Command_Columns/'). Applies only if the column's [type](/api-reference/_hidden/dxTreeListColumn/type.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#type') is *"buttons"*.
 
 ---
 #####See Also#####

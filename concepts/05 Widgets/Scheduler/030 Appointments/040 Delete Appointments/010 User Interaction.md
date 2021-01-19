@@ -1,4 +1,4 @@
-After a user clicks an appointment, the **Scheduler** displays a tooltip with two buttons. To delete an appointment, a user clicks the button with a bucket icon. Note that the appointment will be deleted from the [data source](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#dataSource').
+After a user clicks an appointment, the **Scheduler** displays a tooltip with two buttons. To delete an appointment, a user clicks the button with a bucket icon. Note that the appointment will be deleted from the [data source](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource').
 
 <div>
     <video width="640px" controls="yes">
@@ -6,7 +6,7 @@ After a user clicks an appointment, the **Scheduler** displays a tooltip with tw
     </video>
 </div>
 
-If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments'), the **Scheduler** displays a dialog that allows choosing between deleting the current appointment and deleting the entire series of recurring appointments. If you do not want this dialog to appear, choose the edit mode beforehand using the [recurrenceEditMode](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceEditMode.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceEditMode') option.
+If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments'), the **Scheduler** displays a dialog that allows choosing between deleting the current appointment and deleting the entire series of recurring appointments. If you do not want this dialog to appear, choose the edit mode beforehand using the [recurrenceEditMode](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceEditMode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceEditMode') option.
 
 ---
 
@@ -84,7 +84,7 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
 
 ---
 
-To prevent a user from deleting an appointment, set the **editing**.[allowDeleting](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowDeleting.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDeleting') option to **false**.
+To prevent a user from deleting an appointment, set the **editing**.[allowDeleting](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowDeleting.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowDeleting') option to **false**.
 
 ---
 

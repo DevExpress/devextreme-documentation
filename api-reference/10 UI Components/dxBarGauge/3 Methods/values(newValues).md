@@ -3,7 +3,7 @@ id: dxBarGauge.values(newValues)
 ---
 ---
 ##### shortDescription
-Updates all the [values](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/values.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxBarGauge/Configuration/#values').
+Updates all the [values](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/values.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/#values').
 
 ##### param(values): Array<Number>
 New values.

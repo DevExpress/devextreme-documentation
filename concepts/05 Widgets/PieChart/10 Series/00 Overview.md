@@ -2,7 +2,7 @@ A series is a collection of related data points. The most important characterist
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/PieChartSeriesTypes/pie.html, /Content/Applications/20_1/DataVisualization/Guides/PieChartSeriesTypes/pie.js"></div>
 
-The **Pie** series type is used by default, but you can change it to **Doughnut** using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#type') option. 
+The **Pie** series type is used by default, but you can change it to **Doughnut** using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#type') option. 
 
 ---
 ##### jQuery
@@ -72,7 +72,7 @@ The **Pie** series type is used by default, but you can change it to **Doughnut*
 
 ---
 
-Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/') option to configure a series. Pass an object to this option if you have only one series, or an array of objects when you have multiple series. In the latter case, you can also specify settings common for all series in the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/commonSeriesSettings/') object, for example: 
+Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/') option to configure a series. Pass an object to this option if you have only one series, or an array of objects when you have multiple series. In the latter case, you can also specify settings common for all series in the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/') object, for example: 
 
 ---
 ##### jQuery
@@ -165,7 +165,7 @@ Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1
 
 ---
 
-Settings specified for a series apply to all its points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#customizePoint') option. This function must return an object with options for the point that you want to customize.
+Settings specified for a series apply to all its points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizePoint') option. This function must return an object with options for the point that you want to customize.
 
 ---
 ##### jQuery

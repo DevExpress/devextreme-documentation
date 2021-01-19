@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Enables [task dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/dependencies/') validation.
+Enables [task dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/') validation.
 
 ---
 

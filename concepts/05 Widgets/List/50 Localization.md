@@ -65,39 +65,39 @@ Some messages can be defined by **List** options as well as keys. The following 
         <th>Description</th>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#noDataText">noDataText</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#noDataText">noDataText</a></td>
         <td><code>dxCollectionWidget-noDataText</code></td>
         <td>Displayed when the <b>List</b> is empty.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pullingDownText">pullingDownText</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pullingDownText">pullingDownText</a></td>
         <td><code>dxList-pullingDownText</code></td>
         <td>Displayed when the user begins <a href="/Documentation/Guide/Widgets/List/End-User_Interaction/Touch-Screen_Gestures/">pulling</a> the <b>List</b> down.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pulledDownText">pulledDownText</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pulledDownText">pulledDownText</a></td>
         <td><code>dxList-pulledDownText</code></td>
         <td>Displayed when the user have pulled the <b>List</b> down.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#refreshingText">refreshingText</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#refreshingText">refreshingText</a></td>
         <td><code>dxList-refreshingText</code></td>
         <td>Displayed while data in the <b>List</b> is being refreshed.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pageLoadingText">pageLoadingText</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadingText">pageLoadingText</a></td>
         <td><code>dxList-pageLoadingText</code></td>
         <td>Displayed while another <a href="/Documentation/Guide/Widgets/List/Paging/">page</a> is loading.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#nextButtonText">nextButtonText</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#nextButtonText">nextButtonText</a></td>
         <td><code>dxList-nextButtonText</code></td>
-        <td>Displayed on the button that loads the next page. Appears only if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#pageLoadMode">pageLoadMode</a> option is <i>"nextButton"</i>.</td>
+        <td>Displayed on the button that loads the next page. Appears only if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadMode">pageLoadMode</a> option is <i>"nextButton"</i>.</td>
     </tr>
 </table>
 
 #####See Also#####
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, localization, translation, localization keys, localize messages, localize texts

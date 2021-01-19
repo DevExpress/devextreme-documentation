@@ -45,7 +45,7 @@ The editor's location. One of *"dataRow"*, *"filterRow"*, *"headerRow"* or *"sea
 Indicates whether the editor is read-only.
 
 ##### field(e.row): dxTreeListRowObject
-The [properties](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row '/Documentation/ApiReference/UI_Widgets/dxTreeList/Row/') of the row the editor belongs to.
+The [properties](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row '/Documentation/ApiReference/UI_Components/dxTreeList/Row/') of the row the editor belongs to.
 
 ##### field(e.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.

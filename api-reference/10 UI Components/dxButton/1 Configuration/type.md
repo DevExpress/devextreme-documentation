@@ -23,4 +23,4 @@ DevExtreme provides the following button types.
 }
 
 #####See Also#####
-- [stylingMode](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/stylingMode.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#stylingMode')
+- [stylingMode](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/stylingMode.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#stylingMode')

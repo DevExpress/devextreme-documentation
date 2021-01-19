@@ -1,4 +1,4 @@
-Call the [getAllItems()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/3%20Methods/getAllItems().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Methods/#getAllItems') method to access funnel items. It returns a collection of objects whose fields and methods are described in the [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Item/') section.
+Call the [getAllItems()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/3%20Methods/getAllItems().md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#getAllItems') method to access funnel items. It returns a collection of objects whose fields and methods are described in the [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') section.
 
 ---
 ##### jQuery
@@ -79,7 +79,7 @@ Call the [getAllItems()](/api-reference/20%20Data%20Visualization%20Widgets/dxFu
 
 ---
 
-You can also access a funnel item in the event handlers. For example, the [onItemClick](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/onItemClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/#onItemClick') event handler gets the clicked item in the argument.
+You can also access a funnel item in the event handlers. For example, the [onItemClick](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#onItemClick') event handler gets the clicked item in the argument.
 
 ---
 ##### jQuery

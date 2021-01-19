@@ -10,7 +10,7 @@ Specifies the file system provider.
 ---
 File system providers are components that provide APIs used to access and modify virtual file systems.
 
-The following example illustrates how to configure an [Object](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/Object/') file system provider:
+The following example illustrates how to configure an [Object](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/') file system provider:
 
 ---
 
@@ -76,4 +76,4 @@ The following example illustrates how to configure an [Object](/api-reference/10
 ---
 
 
-Refer to [File System Providers](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers '/Documentation/ApiReference/UI_Widgets/dxFileManager/File_System_Providers/') for information on supported file system providers.
+Refer to [File System Providers](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/') for information on supported file system providers.

@@ -7,7 +7,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
-        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTileView/Configuration/#direction">direction</a> option is <i>"horizontal"</i>.</td>
+        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#direction">direction</a> option is <i>"horizontal"</i>.</td>
     </tr>
     <tr>
         <td>&larr;&rarr;&uarr;&darr;</td>
@@ -32,6 +32,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview)
-- [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Widgets/dxTileView/')
+- [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
 [tags]tile view, tileView, accessibility, keyboard shortcuts

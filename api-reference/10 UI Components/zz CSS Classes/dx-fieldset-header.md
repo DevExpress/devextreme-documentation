@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-A class used to display header of a [dx-fieldset](/api-reference/10%20UI%20Widgets/zz%20CSS%20Classes/dx-fieldset.md '/Documentation/ApiReference/UI_Widgets/CSS_Classes/#dx-fieldset') element.
+A class used to display header of a [dx-fieldset](/api-reference/10%20UI%20Widgets/zz%20CSS%20Classes/dx-fieldset.md '/Documentation/ApiReference/UI_Components/CSS_Classes/#dx-fieldset') element.
 
 ---
 <!--->

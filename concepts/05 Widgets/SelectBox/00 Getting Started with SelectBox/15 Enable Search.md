@@ -1,4 +1,4 @@
-To allow users to search through **SelectBox** values, set [searchEnabled](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#searchEnabled') to **true**:
+To allow users to search through **SelectBox** values, set [searchEnabled](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchEnabled') to **true**:
 
 ---
 ##### jQuery

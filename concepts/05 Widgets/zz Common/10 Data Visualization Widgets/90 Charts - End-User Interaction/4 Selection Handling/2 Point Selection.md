@@ -7,7 +7,7 @@ To select a data point, use its **select()** method. For instance, you can selec
 		}
 	};
 
-In addition, you can select a specific point in a series using the series' **selectPoint(point)** function. The [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/') object exposes methods that can help you find the required point to be selected: **getAllPoints()**, **getPointByPos()** and **getPointsByArg()**.
+In addition, you can select a specific point in a series using the series' **selectPoint(point)** function. The [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/') object exposes methods that can help you find the required point to be selected: **getAllPoints()**, **getPointByPos()** and **getPointsByArg()**.
 
 A point has a distinctive style when selected. To customize it, use the **selectionStyle** configuration object. This object can specify settings for all chart points:
 
@@ -58,9 +58,9 @@ By default, the chart highlights the selected point only. But in some scenarios,
 - **allArgumentPoints** &#8212; highlights all points with the same argument
 - **none** &#8212; does not highlight anything
 
-You can also allow the user to select multiple points. For this purpose, set the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#pointSelectionMode') option to *'multiple'*.
+You can also allow the user to select multiple points. For this purpose, set the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#pointSelectionMode') option to *'multiple'*.
 
-To handle the point selection event, assign a function to the [onPointSelectionChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointSelectionChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointSelectionChanged') option of the chart.
+To handle the point selection event, assign a function to the [onPointSelectionChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onPointSelectionChanged') option of the chart.
 
 	<!--JavaScript-->var chartOptions = {
 		onPointSelectionChanged: function (info) {
@@ -68,7 +68,7 @@ To handle the point selection event, assign a function to the [onPointSelectionC
 		}
 	};
 
-The **onPointSelectionChanged** function accepts an object that contains information on the selection event. Among fields of this object, you can find the point whose selection state has been changed. An object that represents this point is described in the [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/') section. Use the [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isSelected().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Point/Methods/#isSelected') method of this object to check the selection state of a point.
+The **onPointSelectionChanged** function accepts an object that contains information on the selection event. Among fields of this object, you can find the point whose selection state has been changed. An object that represents this point is described in the [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/') section. Use the [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isSelected().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/Methods/#isSelected') method of this object to check the selection state of a point.
 
 [note] Frequently, points that appear selected are not actually so, due to the *'allArgumentPoints'* or *'allSeriesPoints'* selection mode having been set. For these points, the *pointSelectionChanged* event does not occur and their *isSelected()* method returns **false**.
     

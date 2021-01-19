@@ -1,4 +1,4 @@
-The legend can be moved inside the chart using the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#position') option, and also aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/legend/#verticalAlignment') option.
+The legend can be moved inside the chart using the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend/position.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#position') option, and also aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#verticalAlignment') option.
 
 ---
 ##### jQuery
@@ -97,6 +97,6 @@ Below, you can try out these options in action.
 #####See Also#####
 - [Rearrange Legend Items](/concepts/05%20Widgets/Chart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/Widgets/Chart/Legend/Rearrange_Legend_Items/')
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine)
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/')
+- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, legend, position, horizontal alignment, horizontalAlignment, vertical alignment, verticalAlignment, move the legend

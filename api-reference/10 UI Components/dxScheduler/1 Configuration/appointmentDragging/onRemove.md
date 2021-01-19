@@ -16,7 +16,7 @@ Information about the event that caused the function's execution.
 The instance of the appointment's source UI component.
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/appointmentDragging/#data') associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/appointmentDragging/#data') associated with the source UI component.
 
 ##### field(e.itemData): any
 The data object of the appointment being dragged.

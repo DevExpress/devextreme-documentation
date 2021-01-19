@@ -102,6 +102,6 @@ The state includes field configurations, expanded headers, and other settings. T
 }
 
 #####See Also#####
-- [applyChanges()](/api-reference/10%20UI%20Widgets/dxPivotGridFieldChooser/3%20Methods/applyChanges().md '/Documentation/ApiReference/UI_Widgets/dxPivotGridFieldChooser/Methods/#applyChanges')
-- [cancelChanges()](/api-reference/10%20UI%20Widgets/dxPivotGridFieldChooser/3%20Methods/cancelChanges().md '/Documentation/ApiReference/UI_Widgets/dxPivotGridFieldChooser/Methods/#cancelChanges')
+- [applyChanges()](/api-reference/10%20UI%20Widgets/dxPivotGridFieldChooser/3%20Methods/applyChanges().md '/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Methods/#applyChanges')
+- [cancelChanges()](/api-reference/10%20UI%20Widgets/dxPivotGridFieldChooser/3%20Methods/cancelChanges().md '/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Methods/#cancelChanges')
 - [PivotGridDataSource - state()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/state().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#state')

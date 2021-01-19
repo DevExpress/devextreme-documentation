@@ -12,4 +12,4 @@ A Promise that is resolved after data is loaded. It is a <a href="https://develo
 Pass **true** to repaint elements whose data changed; **false** to repaint the entire UI component.
 
 ---
-Main article: [refresh()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/refresh().md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#refresh')
+Main article: [refresh()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/refresh().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#refresh')

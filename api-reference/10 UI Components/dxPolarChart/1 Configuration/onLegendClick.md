@@ -31,12 +31,12 @@ The jQuery event that caused the handler execution. Deprecated in favor of the *
 The model data. Available only if you use Knockout.
 
 ##### field(e.target): polarChartSeriesObject
-The series that corresponds to the clicked legend item; described in the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Chart_Elements/Series/') section.
+The series that corresponds to the clicked legend item; described in the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxPolarChart/Chart_Elements/Series/') section.
 
 ---
 [note]
 
-The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/onSeriesClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/#onSeriesClick') function is executed after this function. The following code shows how to prevent this: 
+The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/onSeriesClick.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#onSeriesClick') function is executed after this function. The following code shows how to prevent this: 
 
 ---
 ##### jQuery

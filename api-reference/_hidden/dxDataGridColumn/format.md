@@ -1,6 +1,6 @@
 <!-- %fullDescription% -->
 
-When being [exported to Excel](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/export/'), the specified format is converted to an Excel format as follows:
+When being [exported to Excel](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/'), the specified format is converted to an Excel format as follows:
 
 - **Numeric**   
 Converted to the Number format, except for *"largeNumber"*, which is exported without formatting.
@@ -13,10 +13,10 @@ Converted to the Date or Time format, depending on the cell value.
 Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"minute"* and *"millisecond"* are exported as Long Time.
 
 - **Function**  
-Cannot be converted automatically. Assign this function to the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText') option instead of the **format** option.   
+Cannot be converted automatically. Assign this function to the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#customizeText') option instead of the **format** option.   
 
 - [Custom format string](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String')   
-Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#customizeText') callback as follows:
+Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#customizeText') callback as follows:
 
     ---
     ##### jQuery
@@ -157,6 +157,6 @@ Cannot be converted, the cell value is exported without formatting. To export th
 
     ---
 
-A column's default format depends on the data type, which is detected automatically. If you find that a format is exported incorrectly, you will need to explicitly set the column's [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType).
+A column's default format depends on the data type, which is detected automatically. If you find that a format is exported incorrectly, you will need to explicitly set the column's [dataType](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType).
 
 <!-- import * from "api-reference\_hidden\GridBaseColumn\format.md" -->

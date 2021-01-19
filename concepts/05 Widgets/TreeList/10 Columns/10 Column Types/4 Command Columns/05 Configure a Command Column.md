@@ -1,6 +1,6 @@
-All columns are configured in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/') array. Assign a command column's name to the [type](/api-reference/_hidden/dxTreeListColumn/type.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#type') option and specify the other column options.
+All columns are configured in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') array. Assign a command column's name to the [type](/api-reference/_hidden/dxTreeListColumn/type.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#type') option and specify the other column options.
 
-The following example shows how to specify the adaptive column's [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#width'):
+The following example shows how to specify the adaptive column's [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width'):
 
 ---
 ##### jQuery
@@ -39,7 +39,7 @@ The following example shows how to specify the adaptive column's [width](/api-re
     
 ---
 
-If a command column should have custom content, specify the column's [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#cellTemplate') and [headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#headerCellTemplate'):
+If a command column should have custom content, specify the column's [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#cellTemplate') and [headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#headerCellTemplate'):
 
 ---
 ##### jQuery

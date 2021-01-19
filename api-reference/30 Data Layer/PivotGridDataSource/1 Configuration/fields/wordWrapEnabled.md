@@ -9,4 +9,4 @@ Specifies whether text that does not fit into a [header item](/concepts/05%20Wid
 
 ---
 #####See Also#####
-- **PivotGrid**.[wordWrapEnabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/wordWrapEnabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/#wordWrapEnabled')
+- **PivotGrid**.[wordWrapEnabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/wordWrapEnabled.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#wordWrapEnabled')

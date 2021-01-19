@@ -4,7 +4,7 @@ type: Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, 
 ---
 ---
 ##### shortDescription
-Specifies [validation rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/') to be checked when cell values are updated.
+Specifies [validation rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') to be checked when cell values are updated.
 
 ---
 #include common-demobutton with {

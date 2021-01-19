@@ -8,7 +8,7 @@ default: false
 Indicates whether diagram content has been changed.
 
 ---
-The **hasChanges** option is set to **true** on any diagram change. You can use this option together with the [optionChanged](/api-reference/10%20UI%20Widgets/DOMComponent/4%20Events/optionChanged.md '/Documentation/ApiReference/UI_Widgets/dxDiagram/Events/#optionChanged') event to implement diagram content autosave.
+The **hasChanges** option is set to **true** on any diagram change. You can use this option together with the [optionChanged](/api-reference/10%20UI%20Widgets/DOMComponent/4%20Events/optionChanged.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#optionChanged') event to implement diagram content autosave.
 
 #####jQuery
 

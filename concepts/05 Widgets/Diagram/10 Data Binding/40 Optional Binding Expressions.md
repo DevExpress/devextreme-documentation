@@ -11,66 +11,66 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
         <th>Sample return value</th>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerChildrenExpr">containerChildrenExpr</a></td>
-        <td>A container's nested items. This option is in effect for <i>verticalContainer</i> or <i>horizontalContainer</i> nodes. Excludes <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a>.</td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerChildrenExpr">containerChildrenExpr</a></td>
+        <td>A container's nested items. This option is in effect for <i>verticalContainer</i> or <i>horizontalContainer</i> nodes. Excludes <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a>.</td>
         <td>[{"id":"112","text":"Ana\nTrujillo"}, {"id":"113","text":"Antonio\nMoreno"}]</td>    
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a></td>
-        <td>A parent container node key. The parent container node must be of the <i>verticalContainer</i> or <i>horizontalContainer</i> type. Excludes <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#containerChildrenExpr">containerChildrenExpr</a>.</td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a></td>
+        <td>A parent container node key. The parent container node must be of the <i>verticalContainer</i> or <i>horizontalContainer</i> type. Excludes <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerChildrenExpr">containerChildrenExpr</a>.</td>
         <td>"102"</td>
     </tr>   
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#heightExpr">heightExpr</a></td>
-        <td>A node's height, in <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#units">units</a>.</td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#heightExpr">heightExpr</a></td>
+        <td>A node's height, in <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units">units</a>.</td>
         <td>0.625</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#imageUrlExpr">imageUrlExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#imageUrlExpr">imageUrlExpr</a></td>
         <td>A node's image URL or Base64 encoded image. This option is in effect for nodes of the <i>cardWithImageOnLeft</i>, <i>cardWithImageOnTop</i>, or <i>cardWithImageOnRight</i> type.</td>
         <td>"images/employees/30.png"</td>
     </tr> 
     <tr>
-    <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#leftExpr">leftExpr</a></td>
-        <td>The x-coordinate of a node's left border, in <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#units">units</a>.</td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#leftExpr">leftExpr</a></td>
+        <td>The x-coordinate of a node's left border, in <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units">units</a>.</td>
         <td>0.5</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#lockedExpr">lockedExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#lockedExpr">lockedExpr</a></td>
         <td>A value that indicates whether a node is locked.</br>Should return <i>true</i> or <i>false</i>.</td>
         <td>true</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#styleExpr">styleExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#styleExpr">styleExpr</a></td>
         <td>A node's style.</td>
         <td>{ "stroke": "red" }</td>
     </tr>
-    <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#textExpr">textExpr</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr">textExpr</a></td>
         <td>A node's text.</td>
         <td>"ASP.NET"</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#textStyleExpr">textStyleExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textStyleExpr">textStyleExpr</a></td>
         <td>A node's text style.</td>
         <td>{ "font-weight": "bold", "text-decoration": "underline" }</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#topExpr">topExpr</a></td>
-        <td>The y-coordinate of a node's top border, in <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#units">units</a>.</td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#topExpr">topExpr</a></td>
+        <td>The y-coordinate of a node's top border, in <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units">units</a>.</td>
         <td>0.875</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#typeExpr">typeExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#typeExpr">typeExpr</a></td>
         <td>A node's shape type. Built-in shape types are shown in the <a href="/Documentation/Guide/Widgets/Diagram/Shape_Types/">Shape Types</a> section.</td>
         <td>"horizontalContainer"</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#widthExpr">widthExpr</a></td>
-        <td>A node's width, in <a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/#units">units</a>.</td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#widthExpr">widthExpr</a></td>
+        <td>A node's width, in <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units">units</a>.</td>
         <td>2</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/nodes/#zIndexExpr">zIndexExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#zIndexExpr">zIndexExpr</a></td>
         <td>A node's z-index.</td>
         <td>1</td>
     </tr>
@@ -85,66 +85,66 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
         <th>Sample return value</th>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromExpr">fromExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#fromExpr">fromExpr</a></td>
         <td>An edge's start node key.</td>
         <td>"101",</td>
     </tr>    
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromLineEndExpr">fromLineEndExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#fromLineEndExpr">fromLineEndExpr</a></td>
         <td>An edge's line start tip.</br>Should return <i>"arrow"</i>, <i>"filledTriangle"</i>, <i>"outlinedTriangle"</i>, or <i>"none"</i>.</td>
         <td>"none"</td>
     </tr>   
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#fromPointIndexExpr">fromPointIndexExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#fromPointIndexExpr">fromPointIndexExpr</a></td>
         <td>A shape's connection point index where an edge begins.</td>
         <td>1</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#lineTypeExpr">lineTypeExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#lineTypeExpr">lineTypeExpr</a></td>
         <td>An edge's line type.</br>Should return <i>"orthogonal"</i> or <i>"straight"</i>.</td>
         <td>"straight"</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#lockedExpr">lockedExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#lockedExpr">lockedExpr</a></td>
         <td>A value that indicates whether a node is locked.</br>Should return <i>true</i> or <i>false</i>.</td>
         <td>false</td>
     </tr> 
     <tr>
-    <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#pointsExpr">pointsExpr</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#pointsExpr">pointsExpr</a></td>
         <td>An edge's key points.</td>
         <td>[{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}]</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#styleExpr">styleExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#styleExpr">styleExpr</a></td>
         <td>An edge's style.</td>
         <td>{"stroke-dasharray":"4"}</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#textExpr">textExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#textExpr">textExpr</a></td>
         <td>An edge's text.</td>
         <td>"text" or { 0.3: "text1", 0.8: "text2" }</td>
     </tr>    
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr">textStyleExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#toExpr">textStyleExpr</a></td>
         <td>An edge's text style.</td>
         <td>{ "font-weight": "bold"}</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toExpr">toExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#toExpr">toExpr</a></td>
         <td>An edge's end node key.</td>
         <td>"102",</td>
     </tr>    
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toLineEndExpr">toLineEndExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#toLineEndExpr">toLineEndExpr</a></td>
         <td>An edge's line end tip.</br>Should return <i>"arrow"</i>, <i>"filledTriangle"</i>, <i>"outlinedTriangle"</i>, or <i>"none"</i>.</td>
         <td>"filledTriangle"</td>
     </tr>
-    <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#toPointIndexExpr">toPointIndexExpr</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#toPointIndexExpr">toPointIndexExpr</a></td>
         <td>A shape's connection point index where an edge ends.</td>
         <td>11</td>
     </tr> 
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDiagram/Configuration/edges/#zIndexExpr">zIndexExpr</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#zIndexExpr">zIndexExpr</a></td>
         <td>A edge's z-index.</td>
         <td>0</td>
     </tr>

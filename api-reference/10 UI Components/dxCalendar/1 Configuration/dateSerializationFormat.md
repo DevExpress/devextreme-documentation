@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the date-time value serialization format. Use it only if you do not specify the [value](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Widgets/dxCalendar/Configuration/#value') at design time.
+Specifies the date-time value serialization format. Use it only if you do not specify the [value](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#value') at design time.
 
 ---
 Without a value, the UI component cannot detect its format. In this case, specify the **dateSerializationFormat** option that supports the following formats:

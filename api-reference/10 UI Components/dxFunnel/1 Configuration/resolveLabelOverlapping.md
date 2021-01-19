@@ -26,4 +26,4 @@ Item labels overlap.
 }
 
 #####See Also#####
-- **label**.[position](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/label/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxFunnel/Configuration/label/#position')
+- **label**.[position](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/label/position.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/label/#position')

@@ -1,4 +1,4 @@
-Universal actions are those actions that raise the same event despite being performed differently on desktop platforms and on touch-enabled devices. For example, both a click and a tap on an item raise the [itemClick](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemClick.md '/Documentation/ApiReference/UI_Widgets/dxList/Events/#itemClick') event. To handle it, assign a function to the [onItemClick](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#onItemClick') option, or subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method.
+Universal actions are those actions that raise the same event despite being performed differently on desktop platforms and on touch-enabled devices. For example, both a click and a tap on an item raise the [itemClick](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemClick.md '/Documentation/ApiReference/UI_Components/dxList/Events/#itemClick') event. To handle it, assign a function to the [onItemClick](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onItemClick') option, or subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method.
 
 ---
 ##### jQuery
@@ -72,6 +72,6 @@ The **List** supports other universal actions, which are provided as a part of b
 
 #####See Also#####
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, item click, onItemClick

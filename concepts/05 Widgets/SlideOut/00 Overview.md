@@ -27,7 +27,7 @@ The following code adds a primitive **SlideOut** to your page.
         width: 100%;
     }
 
-Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/#dataSource') option accepts an array of strings. An individual menu item will be generated for each of these strings. As an alternative, the **dataSource** option accepts an array of objects. In this case, each of these objects should posess the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Widgets/dxSlideOut/Configuration/items/#text') field, otherwise the menu item for it will be unnamed.
+Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#dataSource') option accepts an array of strings. An individual menu item will be generated for each of these strings. As an alternative, the **dataSource** option accepts an array of objects. In this case, each of these objects should posess the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/items/#text') field, otherwise the menu item for it will be unnamed.
 
     <!--JavaScript-->var displays = [
         { text: "SuperLCD 42", price: "$1200" },
@@ -57,6 +57,6 @@ Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Confi
 - [SlideOut - Group Menu Items](/concepts/05%20Widgets/SlideOut/08%20Group%20Menu%20Items.md '/Documentation/Guide/Widgets/SlideOut/Group_Menu_Items')
 - [SlideOut - Customize the View](/concepts/05%20Widgets/SlideOut/10%20Customize%20the%20View.md '/Documentation/Guide/Widgets/SlideOut/Customize_the_View')
 - [SlideOut - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOut/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/Widgets/SlideOut/Open_and_Close_the_Menu_Using_the_API')
-- [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Widgets/dxSlideOut/')
+- [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Components/dxSlideOut/')
 
 [tags]dxslideout, slide-out menu, slideOut, navigation, collection container, collection UI component, overview

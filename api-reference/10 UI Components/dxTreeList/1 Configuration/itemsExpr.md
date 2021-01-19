@@ -5,7 +5,7 @@ default: 'items'
 ---
 ---
 ##### shortDescription
-Specifies which data field contains nested items. Set this option when your data has a [hierarchical structure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#dataStructure').
+Specifies which data field contains nested items. Set this option when your data has a [hierarchical structure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure').
 
 ---
 #####See Also#####

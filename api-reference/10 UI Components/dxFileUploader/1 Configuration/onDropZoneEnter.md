@@ -33,4 +33,4 @@ Model data. Available only if Knockout is used.
 }
 
 #####See Also#####
-- [dropZone](/Documentation/ApiReference/UI_Widgets/dxFileUploader/Configuration/#dropZone)
+- [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone)

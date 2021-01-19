@@ -8,7 +8,7 @@ inheritsType: dxPolarChartCommonAnnotationConfig
 Specifies settings common for all annotations in the **PolarChart**.
 
 ---
-Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxPolarChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
+Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
 
 The following code shows the **commonAnnotationSettings** declaration syntax:
 
@@ -128,4 +128,4 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeAnnotation')

@@ -1,4 +1,4 @@
-By default, the value of the **SelectBox** is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#valueChangeEvent') option.
+By default, the value of the **SelectBox** is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueChangeEvent') option.
 
 ---
 ##### jQuery
@@ -114,7 +114,7 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
 
 ---
 
-To process a new **SelectBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#onValueChanged') option when you configure the UI component.
+To process a new **SelectBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onValueChanged') option when you configure the UI component.
 
 ---
 ##### jQuery
@@ -215,7 +215,7 @@ To process a new **SelectBox** value, you need to handle the value change event.
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxSelectBox/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     const valueChangedHandler1 = function (e) {
@@ -238,7 +238,7 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #include common-link-handleevents
 - [SelectBox - Configure Search Parameters](/concepts/05%20Widgets/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/Widgets/SelectBox/Configure_Search_Parameters/')
 - [SelectBox - Create a User-Defined Item](/concepts/05%20Widgets/SelectBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/Widgets/SelectBox/Create_a_User-Defined_Item/')
-- [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Widgets/dxSelectBox/')
+- [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
 
 [tags]selectBox, select box, editor, get value, set value, change value, valueChangeEvent, valueChanged

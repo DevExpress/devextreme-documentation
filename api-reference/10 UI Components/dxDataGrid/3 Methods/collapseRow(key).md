@@ -12,7 +12,7 @@ A Promise that is resolved after the row is collapsed. It is a <a href="https://
 The key of the group or the master row.
 
 ---
-To collapse a group row, call this method with an array each member of which is a grouping value. To collapse a [master row](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/masterDetail/'), pass its key to this method.
+To collapse a group row, call this method with an array each member of which is a grouping value. To collapse a [master row](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/'), pass its key to this method.
 
 #####See Also#####
 #include common-link-callmethods

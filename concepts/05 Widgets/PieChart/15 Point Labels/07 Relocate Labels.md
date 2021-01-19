@@ -1,4 +1,4 @@
-Labels are located beside their series points by default. Change the **series**.**label**.[position](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label/position.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/series/label/#position') option to rearrange labels in columns or place them inside series points.
+Labels are located beside their series points by default. Change the **series**.**label**.[position](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label/position.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#position') option to rearrange labels in columns or place them inside series points.
 
 ---
 ##### jQuery

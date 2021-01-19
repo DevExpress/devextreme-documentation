@@ -30,7 +30,7 @@ Alternatively, the same data sources can be accessed and referenced using the De
 	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/vectormap-data/europe.js"></script>
 	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_1/js/vectormap-data/usa.js"></script>
 
-After that, set the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/#dataSource') option for a layer to the array defined in the referenced file.
+After that, set the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource') option for a layer to the array defined in the referenced file.
 
 	<!--JavaScript-->var vectorMapCfg = {
         // ...

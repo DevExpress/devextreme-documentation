@@ -83,19 +83,19 @@ A user can interact with the UI component using the following keys:
 
 <div class="footnotes">
     <ol>
-        <li>If the <a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"startEdit"</i>.</li>
-        <li>If the <b>edititng</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#mode">mode</a> is <i>"cell"</i> or <i>"batch"</i> and the <a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"moveFocus"</i>.</li>
-        <li>The <b>editing</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/editing/#mode">mode</a> should be <i>"cell"</i> or <i>"batch"</i>.</li>
+        <li>If the <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"startEdit"</i>.</li>
+        <li>If the <b>edititng</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode">mode</a> is <i>"cell"</i> or <i>"batch"</i> and the <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"moveFocus"</i>.</li>
+        <li>The <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode">mode</a> should be <i>"cell"</i> or <i>"batch"</i>.</li>
         <li>A select box appears in a cell of a <a href="/Documentation/Guide/Widgets/TreeList/Columns/Column_Types/Lookup_Columns/">lookup column</a>.</li>
-        <li>A calendar appears in a data cell when a column contains <i>"date"</i> <a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#dataType">type</a> data.</li>
-        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode">mode</a> must be different from <i>"none"</i>.</li>
-        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#mode">mode</a> must be <i>"multiple"</i>.</li>
-        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#recursive">recursive</a> must be <i>false</i>.</li>
-        <li>If the <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, the rows should be visible simultaneously. If the mode is <i>"standard"</i>, the rows should be on one page.</li>
-        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/selection/#allowSelectAll">allowSelectAll</a> must be <i>true</i>.</li>
+        <li>A calendar appears in a data cell when a column contains <i>"date"</i> <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#dataType">type</a> data.</li>
+        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode">mode</a> must be different from <i>"none"</i>.</li>
+        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode">mode</a> must be <i>"multiple"</i>.</li>
+        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#recursive">recursive</a> must be <i>false</i>.</li>
+        <li>If the <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, the rows should be visible simultaneously. If the mode is <i>"standard"</i>, the rows should be on one page.</li>
+        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#allowSelectAll">allowSelectAll</a> must be <i>true</i>.</li>
         <li>The <a href="/Documentation/Guide/Widgets/TreeList/Filtering_and_Searching/#Search_Panel">search panel</a> must be visible.</li>
-        <li><b>sorting</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/sorting/#mode">mode</a> must be <i>"multiple"</i>.</li>
+        <li><b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode">mode</a> must be <i>"multiple"</i>.</li>
     </ol>
 </div>
 
-You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#onKeyDown') event handler.
+You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onKeyDown') event handler.

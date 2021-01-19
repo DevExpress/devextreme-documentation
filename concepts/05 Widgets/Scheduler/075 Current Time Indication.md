@@ -2,7 +2,7 @@ The **Scheduler** displays a specific indicator that highlights the current time
 
 ![Current Time Indicator](/images/UiWidgets/Scheduler_Current_Time_Indicator.png)
 
-Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/showCurrentTimeIndicator.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#showCurrentTimeIndicator') option to control the indicator's visibility.
+Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/showCurrentTimeIndicator.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#showCurrentTimeIndicator') option to control the indicator's visibility.
 
 ---
 
@@ -78,7 +78,7 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/
 
 ---
 
-Additionally, you can apply shading to cover the timetable up to the current time by assigning **true** to the [shadeUntilCurrentTime](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/shadeUntilCurrentTime.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#shadeUntilCurrentTime') option.
+Additionally, you can apply shading to cover the timetable up to the current time by assigning **true** to the [shadeUntilCurrentTime](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/shadeUntilCurrentTime.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#shadeUntilCurrentTime') option.
 
 ---
 
@@ -167,4 +167,4 @@ Additionally, you can apply shading to cover the timetable up to the current tim
 }
 
 #####See Also#####
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Widgets/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

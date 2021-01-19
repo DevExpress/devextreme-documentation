@@ -7,7 +7,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
-        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#scrollDirection">scrollDirection</a> option is <i>"horizontal"</i> or <i>"both"</i>.</td>
+        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#scrollDirection">scrollDirection</a> option is <i>"horizontal"</i> or <i>"both"</i>.</td>
     </tr>
     <tr>
         <td>&uarr; / &darr;</td>
@@ -27,11 +27,11 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Asterisk Sign (*)</td>
-        <td>Expands all nodes. Available only if <a href="/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is set to <i>true</i>.</td>
+        <td>Expands all nodes. Available only if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is set to <i>true</i>.</td>
     </tr>
     <tr>
         <td>Minus Sign (-)</td>
-        <td>Collapses all nodes. Available only if <a href="/Documentation/ApiReference/UI_Widgets/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is set to <i>true</i>.</td>
+        <td>Collapses all nodes. Available only if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is set to <i>true</i>.</td>
     </tr>
     <tr>
         <td>Enter or Space</td>
@@ -56,6 +56,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [TreeView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure)
-- [TreeView API Reference](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/')
+- [TreeView API Reference](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
 [tags]treeview, tree view, navigation, accessibility, keyboard shortcuts

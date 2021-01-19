@@ -2,7 +2,7 @@ When the **Chart** visualizes local data, loading is instant. But when the **Cha
 
 ![DevExtreme HTML5 JavaScript Charts LoadingIndicator](/images/ChartJS/visual_elements/loading_indicator.png)
 
-To activate the loading indicator, assign **true** to the [loadingIndicator](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/loadingIndicator '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/loadingIndicator/').**enabled** option. When activated, the indicator will be displayed or hidden automatically as the chart's data is updated.
+To activate the loading indicator, assign **true** to the [loadingIndicator](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/loadingIndicator '/Documentation/ApiReference/UI_Components/dxChart/Configuration/loadingIndicator/').**enabled** option. When activated, the indicator will be displayed or hidden automatically as the chart's data is updated.
 
 ---
 ##### jQuery
@@ -84,7 +84,7 @@ To activate the loading indicator, assign **true** to the [loadingIndicator](/ap
 
 ---
 
-If you need to show or hide the loading indicator at runtime, call the [showLoadingIndicator()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/showLoadingIndicator().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#showLoadingIndicator') or [hideLoadingIndicator()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/hideLoadingIndicator().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#hideLoadingIndicator') method.
+If you need to show or hide the loading indicator at runtime, call the [showLoadingIndicator()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/showLoadingIndicator().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#showLoadingIndicator') or [hideLoadingIndicator()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/hideLoadingIndicator().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#hideLoadingIndicator') method.
 
 ---
 ##### jQuery
@@ -181,6 +181,6 @@ If you need to show or hide the loading indicator at runtime, call the [showLoad
 
 #####See Also#####
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ClientSideDataProcessing)
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/')
+- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, load indicator, loading indicator

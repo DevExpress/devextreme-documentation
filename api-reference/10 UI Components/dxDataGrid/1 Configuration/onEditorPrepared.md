@@ -6,7 +6,7 @@ EventForAction: dxDataGrid.editorPrepared
 ---
 ---
 ##### shortDescription
-A function that is executed after an editor is created. Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#editCellTemplate').
+A function that is executed after an editor is created. Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate').
 
 ##### param(options): Object
 Information about the event that caused the function's execution.
@@ -37,7 +37,7 @@ Options passed to the function depend on this value.
 Indicates whether the editor is read-only.
 
 ##### field(options.row): dxDataGridRowObject
-The [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/') of the row the editor belongs to.
+The [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') of the row the editor belongs to.
 
 ##### field(options.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.

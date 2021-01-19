@@ -14,7 +14,7 @@ To make an appointment recurring, specify the [recurrenceRule](/Documentation/Ap
         recurrenceException: "20210222T070000Z,20210223T070000Z"
     }];
 
-If your appointment data objects contain different fields that perform the functions of **recurrenceRule** and **recurrenceException**, specify their names in the **Scheduler**'s [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#recurrenceExceptionExpr') options:
+If your appointment data objects contain different fields that perform the functions of **recurrenceRule** and **recurrenceException**, specify their names in the **Scheduler**'s [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceExceptionExpr') options:
 
 ---
 ##### jQuery
@@ -143,4 +143,4 @@ The Scheduler control saves the specified values in the appointment's **recurren
 - [Scheduler - Delete Appointments](/concepts/05%20Widgets/Scheduler/030%20Appointments/040%20Delete%20Appointments '/Documentation/Guide/Widgets/Scheduler/Appointments/Delete_Appointments/')
 - [Scheduler - Customize Appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/Widgets/Scheduler/Appointments/Customize_Appointment/')
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Widgets/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

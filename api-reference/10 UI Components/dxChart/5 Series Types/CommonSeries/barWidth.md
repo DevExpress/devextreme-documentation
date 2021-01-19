@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a fixed width for all bars in a series, measured in pixels. Takes precedence over the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barPadding.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#barPadding') option.
+Specifies a fixed width for all bars in a series, measured in pixels. Takes precedence over the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#barPadding') option.
 
 ##### propertyOf
 dxChartSeriesTypes.BarSeries,dxChartSeriesTypes.StackedBarSeries,dxChartSeriesTypes.FullStackedBarSeries,dxChartSeriesTypes.RangeBarSeries
@@ -15,5 +15,5 @@ A bar's maximum width is limited. In single-series charts, it cannot be greater 
 
 
 #####See Also#####
-- [barGroupWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/barGroupWidth.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#barGroupWidth')
-- **series**.[minBarSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/minBarSize.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/series/#minBarSize')
+- [barGroupWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/barGroupWidth.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#barGroupWidth')
+- **series**.[minBarSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/minBarSize.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#minBarSize')

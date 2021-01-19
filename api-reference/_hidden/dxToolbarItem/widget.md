@@ -5,7 +5,7 @@ type: String
 ---
 ---
 ##### shortDescription
-A UI component that presents a toolbar item. To configure it, use the [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Widgets/dxToolbar/Configuration/items/#options') object.
+A UI component that presents a toolbar item. To configure it, use the [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options') object.
 
 ---
 [note]Import the specified UI component's module when using [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'). 

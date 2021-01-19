@@ -8,7 +8,7 @@ default: true
 Specifies or indicates whether the editor's value is valid.
 
 ---
-[note]When you use [async rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules/AsyncRule '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Rules/AsyncRule/'), **isValid** is **true** if the [status](/api-reference/10%20UI%20Widgets/dxValidator/9%20Validation%20Result/status.md '/Documentation/ApiReference/UI_Widgets/dxValidator/Validation_Result/#status') is *"pending"* or *"valid"*.
+[note]When you use [async rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules/AsyncRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/AsyncRule/'), **isValid** is **true** if the [status](/api-reference/10%20UI%20Widgets/dxValidator/9%20Validation%20Result/status.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Result/#status') is *"pending"* or *"valid"*.
 
 #####See Also#####
 

@@ -11,6 +11,6 @@ Specifies the name of the data source field that provides nested items for a gro
 In hierarchical data sources, objects normally have at least one nested array of objects. To specify the field providing this array, assign its name to the **childrenField** option. Such hierarchical objects will be visualized by groups of tiles.
 
 #####See Also#####
-- [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/dataSource.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#dataSource') - specifies the origin of data for the UI component.
-- [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/valueField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#valueField') - specifies the data source field that provides values for tiles.
-- [labelField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/labelField.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/#labelField') - specifies the data source field that provides texts for tile and group labels.
+- [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#dataSource') - specifies the origin of data for the UI component.
+- [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/valueField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#valueField') - specifies the data source field that provides values for tiles.
+- [labelField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/labelField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#labelField') - specifies the data source field that provides texts for tile and group labels.

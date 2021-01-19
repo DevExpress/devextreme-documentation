@@ -2,7 +2,7 @@ The date navigator is an element that allows you to change the date displayed on
 
 ![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
 
-You can specify the range of available dates in the [min](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#max') options:
+You can specify the range of available dates in the [min](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#max') options:
 
 ---
 ##### jQuery
@@ -113,4 +113,4 @@ You can specify the range of available dates in the [min](/api-reference/10%20UI
 
 ---
 
-Use the [customizeDateNavigatorText](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/customizeDateNavigatorText.md 'Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#customizeDateNavigatorText') function to customize the navigator's text. Refer to the function's description for an example.
+Use the [customizeDateNavigatorText](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/customizeDateNavigatorText.md 'Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#customizeDateNavigatorText') function to customize the navigator's text. Refer to the function's description for an example.

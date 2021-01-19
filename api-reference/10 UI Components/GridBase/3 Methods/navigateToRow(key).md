@@ -21,7 +21,7 @@ The following requirements apply when you use this method:
 
 - Rows should be initially sorted by keys. You can sort them on the server or use a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '{basewidgetpath}/Configuration/columns/#sortOrder') or the **DataSource**'s [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') option to sort the rows on the client.
 
-- [Scrolling mode](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/scrolling/#mode) should not be *"infinite"*.
+- [Scrolling mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode) should not be *"infinite"*.
 
 #####See Also#####
 #include common-link-callmethods

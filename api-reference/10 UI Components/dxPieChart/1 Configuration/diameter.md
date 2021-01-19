@@ -13,6 +13,6 @@ This option accepts a number that identifies the ratio between the pie's diamete
 *0.5 * min(300,500) = 0.5 * 300 = 150 pixels*
 
 #####See Also#####
-- [minDiameter](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/minDiameter.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#minDiameter')
-- [size](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/size '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/size/')
-- [sizeGroup](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Configuration/#sizeGroup')
+- [minDiameter](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/minDiameter.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#minDiameter')
+- [size](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/size/')
+- [sizeGroup](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#sizeGroup')

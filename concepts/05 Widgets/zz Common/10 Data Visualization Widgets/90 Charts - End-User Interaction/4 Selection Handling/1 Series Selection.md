@@ -7,9 +7,9 @@ To select a series, call the **select()** method of the **series** object. For i
 		}
 	};
 
-Alternatively, you can access a series when required, using one of the following [chart methods](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/3%20Methods '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/'): **getAllSeries()**, **getSeriesByName()** and **getSeriesByPos()**.
+Alternatively, you can access a series when required, using one of the following [chart methods](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/3%20Methods '/Documentation/ApiReference/UI_Components/dxChart/Methods/'): **getAllSeries()**, **getSeriesByName()** and **getSeriesByPos()**.
 
-[note]There are series that consist of points only, e.g., the _bar-like_ and _candleStick_ series of the **Chart** UI component, and the _pie_ and _doughnut_ series of the **PieChart** UI component. To select these series types on click, implement the [onPointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onPointClick') handler. Use the **target.series** field of the object passed to this handler as the parameter to access the series of the clicked point (bar or slice).
+[note]There are series that consist of points only, e.g., the _bar-like_ and _candleStick_ series of the **Chart** UI component, and the _pie_ and _doughnut_ series of the **PieChart** UI component. To select these series types on click, implement the [onPointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onPointClick') handler. Use the **target.series** field of the object passed to this handler as the parameter to access the series of the clicked point (bar or slice).
 
 A series has a distinctive style when selected. To customize it, use the series **selectionStyle** configuration object. This object can specify settings for all series:
 
@@ -45,11 +45,11 @@ or for an individual series:
         }]
 	};
 
-To choose which series elements to highlight in the selected state, specify the **selectionMode** option. Like the selection style, this option can be specified for all, type-specific or an individual series. There are several selection modes in the chart UI components. Available modes depend on the [series type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Series_Types/') you use.
+To choose which series elements to highlight in the selected state, specify the **selectionMode** option. Like the selection style, this option can be specified for all, type-specific or an individual series. There are several selection modes in the chart UI components. Available modes depend on the [series type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') you use.
 
-You can also allow the user to select multiple series. For this purpose, set the [seriesSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#seriesSelectionMode') option to *'multiple'*.
+You can also allow the user to select multiple series. For this purpose, set the [seriesSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#seriesSelectionMode') option to *'multiple'*.
 
-To handle the series selection event, assign a function to the [onSeriesSelectionChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/onSeriesSelectionChanged.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#onSeriesSelectionChanged') option of the chart.
+To handle the series selection event, assign a function to the [onSeriesSelectionChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/onSeriesSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onSeriesSelectionChanged') option of the chart.
 
 	<!--JavaScript-->var chartOptions = {
 		onSeriesSelectionChanged: function (info) {
@@ -57,7 +57,7 @@ To handle the series selection event, assign a function to the [onSeriesSelectio
 		}
 	};
 
-The **onSeriesSelectionChanged** function accepts an object that contains information on the selection event. Among fields of this object, you can find the series whose selection state has been changed. An object that represents this series is described in the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/') section. Use the [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isHovered().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Chart_Elements/Series/Methods/#isHovered') method of this object to check the selection state of a series.
+The **onSeriesSelectionChanged** function accepts an object that contains information on the selection event. Among fields of this object, you can find the series whose selection state has been changed. An object that represents this series is described in the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/') section. Use the [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#isHovered') method of this object to check the selection state of a series.
 
 To clear the series selection, call the **clearSelection()** method of the series or the same method of the chart instance.
 

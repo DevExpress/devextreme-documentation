@@ -1,9 +1,9 @@
 The **DataGrid** includes the following UI elements used to filter and search data:
 
-- [filterRow](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/filterRow/)
-- [headerFilter](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/headerFilter/)
-- [filterPanel](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/filterPanel/) with [filterBuilder](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#filterBuilder)
-- [searchPanel](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/searchPanel/)
+- [filterRow](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/)
+- [headerFilter](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/)
+- [filterPanel](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterPanel/) with [filterBuilder](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterBuilder)
+- [searchPanel](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/)
 
 In this tutorial, the **filterRow** and **searchPanel** are displayed:
 

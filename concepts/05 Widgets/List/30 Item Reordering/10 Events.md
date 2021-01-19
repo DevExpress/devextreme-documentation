@@ -1,4 +1,4 @@
-To execute certain commands when an item changes its position, handle the [itemReordered](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemReordered.md '/Documentation/ApiReference/UI_Widgets/dxList/Events/#itemReordered') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the **onItemReordered** option when you configure the UI component.
+To execute certain commands when an item changes its position, handle the [itemReordered](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemReordered.md '/Documentation/ApiReference/UI_Components/dxList/Events/#itemReordered') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the **onItemReordered** option when you configure the UI component.
 
 ---
 ##### jQuery
@@ -48,7 +48,7 @@ To execute certain commands when an item changes its position, handle the [itemR
 
 ---
 
-If you are going to change the **itemReordered** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Widgets/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change the **itemReordered** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     const itemReorderedEventHandler1 = function(e) {
@@ -66,4 +66,4 @@ If you are going to change the **itemReordered** event handler at runtime, or if
 #####See Also#####
 #include common-link-handleevents
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')

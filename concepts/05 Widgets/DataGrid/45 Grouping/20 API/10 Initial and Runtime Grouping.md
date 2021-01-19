@@ -1,4 +1,4 @@
-Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupIndex') option to group data initially. In the following example, data is first grouped by the *"Continent"* field, then by the *"Country"* field.
+Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex') option to group data initially. In the following example, data is first grouped by the *"Continent"* field, then by the *"Country"* field.
 
 ---
 
@@ -46,7 +46,7 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
 
 ---
 
-You can change a column's **groupIndex** at runtime using the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. 
+You can change a column's **groupIndex** at runtime using the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. 
 
 ---
 

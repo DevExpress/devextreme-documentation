@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Enables auto-calculated scale breaks. Applies only if the axis' [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#type') is *"continuous"* or *"logarithmic"* and [valueType](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#valueType') is *"numeric"*.
+Enables auto-calculated scale breaks. Applies only if the axis' [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type') is *"continuous"* or *"logarithmic"* and [valueType](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType') is *"numeric"*.
 
 ---
 If this option is **true**, the UI component detects large gaps between side-by-side points and cuts them out, putting scale breaks instead.
@@ -15,5 +15,5 @@ If this option is **true**, the UI component detects large gaps between side-by-
 }
 
 #####See Also#####
-- [maxAutoBreakCount](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/maxAutoBreakCount.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/#maxAutoBreakCount')
-- [breaks[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/valueAxis/breaks/)
+- [maxAutoBreakCount](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/maxAutoBreakCount.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#maxAutoBreakCount')
+- [breaks[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/breaks/)

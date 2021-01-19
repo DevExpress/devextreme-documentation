@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-Defines the appearance of an element displaying a field-value pair within a [dx-fieldset](/api-reference/10%20UI%20Widgets/zz%20CSS%20Classes/dx-fieldset.md '/Documentation/ApiReference/UI_Widgets/CSS_Classes/#dx-fieldset') element.
+Defines the appearance of an element displaying a field-value pair within a [dx-fieldset](/api-reference/10%20UI%20Widgets/zz%20CSS%20Classes/dx-fieldset.md '/Documentation/ApiReference/UI_Components/CSS_Classes/#dx-fieldset') element.
 
 ---
 The **dx-field** field element may include label and value elements intended to display the field name and value respectively. Use the **dx-field-label**, **dx-field-value** and **dx-field-value-static** classes to create label and value elements.

@@ -2,7 +2,7 @@ A user can group data in the **DataGrid** using a column header's context menu o
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Grouping Group Panel Context Menu](/images/DataGrid/visual_elements/groupPanel_contextMenu.png)
 
-Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/contextMenuEnabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/grouping/#contextMenuEnabled') option adds grouping commands to the context menu. Setting the **groupPanel**.[visible](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#visible') option to **true** shows the group panel. The latter option also accepts the *"auto"* value that hides the group panel on small screens.
+Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/contextMenuEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#contextMenuEnabled') option adds grouping commands to the context menu. Setting the **groupPanel**.[visible](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#visible') option to **true** shows the group panel. The latter option also accepts the *"auto"* value that hides the group panel on small screens.
 
 ---
 
@@ -112,7 +112,7 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
 
 ---
 
-You can prevent a user from dragging columns to the group panel, in which case it becomes an informative component only: a user can see the columns that participate in grouping, but cannot change them. Set the **groupPanel**.[allowColumnDragging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/allowColumnDragging.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/groupPanel/#allowColumnDragging') option to **false** to activate this behavior. You might want to group data [initially](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/10%20Initial%20and%20Runtime%20Grouping.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Initial_and_Runtime_Grouping') in this case.
+You can prevent a user from dragging columns to the group panel, in which case it becomes an informative component only: a user can see the columns that participate in grouping, but cannot change them. Set the **groupPanel**.[allowColumnDragging](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/allowColumnDragging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#allowColumnDragging') option to **false** to activate this behavior. You might want to group data [initially](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/10%20Initial%20and%20Runtime%20Grouping.md '/Documentation/Guide/Widgets/DataGrid/Grouping/#API/Initial_and_Runtime_Grouping') in this case.
 
 ---
 
@@ -220,7 +220,7 @@ You can prevent a user from dragging columns to the group panel, in which case i
 
 ---
 
-If a specific column should never take part in grouping, set its [allowGrouping](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowGrouping') option to **false**. Such a column cannot be dragged to the group panel, and its context menu does not contain grouping commands.
+If a specific column should never take part in grouping, set its [allowGrouping](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowGrouping') option to **false**. Such a column cannot be dragged to the group panel, and its context menu does not contain grouping commands.
 
 ---
 

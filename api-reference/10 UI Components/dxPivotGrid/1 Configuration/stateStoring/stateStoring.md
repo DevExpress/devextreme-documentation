@@ -7,9 +7,9 @@ type: Object
 A configuration object specifying options related to state storing.
 
 ---
-State storing enables the UI component to save applied settings and restore them the next time the UI component is loaded. Assign **true** to the **stateStoring**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/enabled.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#enabled') option to enable this functionality.
+State storing enables the UI component to save applied settings and restore them the next time the UI component is loaded. Assign **true** to the **stateStoring**.[enabled](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/enabled.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/stateStoring/#enabled') option to enable this functionality.
 
-The state is saved with a specified [storage key](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/storageKey.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#storageKey'). 
+The state is saved with a specified [storage key](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/storageKey.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/stateStoring/#storageKey'). 
 
 State storing saves the following options:
 
@@ -37,7 +37,7 @@ State storing saves the following options:
     </tr>
 </table>  
 
-To specify the time in milliseconds between automatic state saves, set the [savingTimeout](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/savingTimeout.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#savingTimeout') option. To specify the lifetime of the saved state, set the storage [type](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/type.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Configuration/stateStoring/#type').
+To specify the time in milliseconds between automatic state saves, set the [savingTimeout](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/savingTimeout.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/stateStoring/#savingTimeout') option. To specify the lifetime of the saved state, set the storage [type](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/stateStoring/type.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/stateStoring/#type').
 
 Use the **PivotGridDataSource**'s [state](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/state().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#state') method to manage the **PivotGrid**'s state at runtime. 
 

@@ -1,5 +1,5 @@
-Set the [allowColumnReordering](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/#allowColumnReordering') option to **true** to allow a user to reorder columns. 
-If a specific column should not be moved, set its [allowReordering](/api-reference/_hidden/GridBaseColumn/allowReordering.md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Configuration/columns/#allowReordering') option to **false**.
+Set the [allowColumnReordering](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnReordering') option to **true** to allow a user to reorder columns. 
+If a specific column should not be moved, set its [allowReordering](/api-reference/_hidden/GridBaseColumn/allowReordering.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowReordering') option to **false**.
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-Not only you can bind the **Form** to an existing data object, but you can also generate a new data object directly from the **Form** items. For this purpose, bind simple items from the [items](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Widgets/dxForm/Configuration/#items') array to not-yet-existing data fields using the [dataField](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Widgets/dxForm/Item_Types/SimpleItem/#dataField') option. Once a user enters a value into such an item, the corresponding data field is created in the data object. To obtain this data object, get the value of the **formData** option using the [option(optionName)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName).md '/Documentation/ApiReference/UI_Widgets/dxForm/Methods/#optionoptionName') method.
+Not only you can bind the **Form** to an existing data object, but you can also generate a new data object directly from the **Form** items. For this purpose, bind simple items from the [items](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') array to not-yet-existing data fields using the [dataField](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField') option. Once a user enters a value into such an item, the corresponding data field is created in the data object. To obtain this data object, get the value of the **formData** option using the [option(optionName)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName') method.
 
 ---
 ##### jQuery
@@ -128,6 +128,6 @@ Not only you can bind the **Form** to an existing data object, but you can also 
 - [Form - Validate and Submit the Form](/concepts/05%20Widgets/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/Widgets/Form/Validate_and_Submit_the_Form/')
 - [Form - Update Form Data Using the API](/concepts/05%20Widgets/Form/30%20Update%20Form%20Data%20Using%20the%20API.md '/Documentation/Guide/Widgets/Form/Update_Form_Data_Using_the_API/')
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview)
-- [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Widgets/dxForm/')
+- [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
 [tags]form, generate data, generate data object

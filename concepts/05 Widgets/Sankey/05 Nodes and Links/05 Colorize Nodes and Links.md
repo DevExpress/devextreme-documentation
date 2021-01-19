@@ -1,6 +1,6 @@
-Nodes are painted in different colors using a [palette](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/palette.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#palette'). You can apply a DevExtreme palette or create a custom palette.
+Nodes are painted in different colors using a [palette](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/palette.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#palette'). You can apply a DevExtreme palette or create a custom palette.
 
-When the palette does not have enough colors to paint each node differently, it is extended in one of the [palette extension modes](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/paletteExtensionMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/#paletteExtensionMode'). The following code shows how to specify the palette and its extension mode:
+When the palette does not have enough colors to paint each node differently, it is extended in one of the [palette extension modes](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/paletteExtensionMode.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#paletteExtensionMode'). The following code shows how to specify the palette and its extension mode:
 
 ---
 ##### jQuery
@@ -82,7 +82,7 @@ When the palette does not have enough colors to paint each node differently, it 
 
 ---
 
-Links also support several [colorization modes](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/colorMode.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/link/#colorMode'). They can inherit the color from the source or target node or use a gradient between those two colors:
+Links also support several [colorization modes](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/colorMode.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#colorMode'). They can inherit the color from the source or target node or use a gradient between those two colors:
 
 ---
 ##### jQuery
@@ -159,7 +159,7 @@ Links also support several [colorization modes](/api-reference/20%20Data%20Visua
 
 ---
 
-To colorize nodes or links uniformly, specify the color using the **node**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/node/#color') or **link**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/color.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Configuration/link/#color') option. Note that the links' **colorMode** option should be *"none"* (which is its default value): 
+To colorize nodes or links uniformly, specify the color using the **node**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/node/#color') or **link**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#color') option. Note that the links' **colorMode** option should be *"none"* (which is its default value): 
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-The selection capability is not provided out of the box, but it can be implemented using the [pointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointClick.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Events/#pointClick') event. The following code gives an example of a scenario when clicking on a point selects it, and clicking on it again clears the selection. Call a point's [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isSelected().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Point/Methods/#isSelected') method to check whether it is selected.
+The selection capability is not provided out of the box, but it can be implemented using the [pointClick](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointClick.md '/Documentation/ApiReference/UI_Components/dxPieChart/Events/#pointClick') event. The following code gives an example of a scenario when clicking on a point selects it, and clicking on it again clears the selection. Call a point's [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isSelected().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#isSelected') method to check whether it is selected.
 
 ---
 ##### jQuery
@@ -101,7 +101,7 @@ The selection capability is not provided out of the box, but it can be implement
 
 ---
 
-In the previous code example, a specific point's selection was cleared. Call a series' [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/clearSelection().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Chart_Elements/Series/Methods/#clearSelection') method if you need to clear all the selected points in that series.
+In the previous code example, a specific point's selection was cleared. Call a series' [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#clearSelection') method if you need to clear all the selected points in that series.
 
 ---
 ##### jQuery
@@ -204,7 +204,7 @@ In the previous code example, a specific point's selection was cleared. Call a s
 
 ---
 
-In a multi-series **PieChart**, you can clear the entire selection at once by calling the **PieChart** instance's [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/Methods/#clearSelection') method.
+In a multi-series **PieChart**, you can clear the entire selection at once by calling the **PieChart** instance's [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#clearSelection') method.
 
 ---
 ##### jQuery

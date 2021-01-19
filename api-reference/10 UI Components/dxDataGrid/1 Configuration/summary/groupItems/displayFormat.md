@@ -10,8 +10,8 @@ Specifies the summary item's text.
 ---
 You can use the following position markers in this text: 
 
-- {0} - [formatted](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems/valueFormat.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/#valueFormat') summary value.
-- {1} - the parent column's [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#caption'). Available if the [showInColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems/showInColumn.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/#showInColumn') option is specified.
+- {0} - [formatted](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems/valueFormat.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#valueFormat') summary value.
+- {1} - the parent column's [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption'). Available if the [showInColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems/showInColumn.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#showInColumn') option is specified.
 
 ---
 #####jQuery
@@ -127,4 +127,4 @@ You can use the following position markers in this text:
     
 ---
 
-Use the [customizeText](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems/customizeText.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/summary/groupItems/#customizeText') option for more advanced text customizations.
+Use the [customizeText](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/groupItems/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#customizeText') option for more advanced text customizations.

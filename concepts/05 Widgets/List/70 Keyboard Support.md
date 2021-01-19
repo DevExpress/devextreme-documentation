@@ -23,11 +23,11 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Shift + &uarr; / &darr;</td>
-        <td>Shifts the focused item one item up/down. Active if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#allowItemReordering">allowItemReordering</a> option is set to <i>true</i>.</td>
+        <td>Shifts the focused item one item up/down. Active if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemReordering">allowItemReordering</a> option is set to <i>true</i>.</td>
     </tr>
     <tr>
         <td>Delete</td>
-        <td>Removes the focused item. Active if the <a href="/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#allowItemDeleting">allowItemDeleting</a> option is set to <i>true</i>.</td>
+        <td>Removes the focused item. Active if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemDeleting">allowItemDeleting</a> option is set to <i>true</i>.</td>
     </tr>
 </table>
 
@@ -37,6 +37,6 @@ An end user can use the following keys to interact with the UI component.
 #include common-link-callmethods
 - [List - Item Deletion - User Interaction](/concepts/05%20Widgets/List/35%20Item%20Deletion/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Item_Deletion/#User_Interaction')
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Widgets/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, accessibility, keyboard shortcuts

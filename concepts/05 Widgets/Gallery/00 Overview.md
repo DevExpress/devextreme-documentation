@@ -4,7 +4,7 @@ The **Gallery** is a UI component that displays a collection of images in a caro
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview/"
 }
 
-The following code adds the **Gallery** UI component to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#dataSource') and [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Widgets/dxGallery/Configuration/#height') to be specified.
+The following code adds the **Gallery** UI component to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#dataSource') and [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#height') to be specified.
 
 ---
 ##### jQuery
@@ -122,6 +122,6 @@ The following code adds the **Gallery** UI component to your page. The simplest 
 - [Gallery - Transform and Combine Images](/concepts/05%20Widgets/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/Widgets/Gallery/Transform_and_Combine_Images/')
 - [Gallery - Customize Item Appearance](/concepts/05%20Widgets/Gallery/30%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Gallery/Customize_Item_Appearance/')
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
-- [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Widgets/dxGallery/')
+- [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]dxgallery, gallery, overview

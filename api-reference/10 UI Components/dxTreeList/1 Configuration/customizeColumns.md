@@ -12,6 +12,6 @@ All column [configurations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Conf
 ---
 <!-- %fullDescription% -->
  
-<!-- import * from 'api-reference\10 UI Widgets\dxDataGrid\1 Configuration\customizeColumns.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\customizeColumns.md' -->
 
 ---

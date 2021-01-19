@@ -36,4 +36,4 @@ Model data. Available only if Knockout is used.
 
 ---
 
-<!-- import * from 'api-reference\10 UI Widgets\dxScheduler\1 Configuration\appointmentTemplate.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxScheduler\1 Configuration\appointmentTemplate.md' -->

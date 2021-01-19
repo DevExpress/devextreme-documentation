@@ -18,4 +18,4 @@ Specifies whether to close the drop-down menu if a user clicks outside it.
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->

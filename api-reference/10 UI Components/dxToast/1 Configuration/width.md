@@ -11,4 +11,4 @@ default: function() {return $(window).width() * 0.8 }, 'auto' (Android), functio
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\DOMComponent\1 Configuration\width.md' -->
+<!-- import * from 'api-reference\10 UI Components\DOMComponent\1 Configuration\width.md' -->

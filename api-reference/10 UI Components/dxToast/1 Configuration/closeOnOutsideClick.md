@@ -14,4 +14,4 @@ default: true (Android)
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->

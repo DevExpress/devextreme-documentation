@@ -11,4 +11,4 @@ firedEvents: resize
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\DOMComponent\1 Configuration\width.md' -->
+<!-- import * from 'api-reference\10 UI Components\DOMComponent\1 Configuration\width.md' -->

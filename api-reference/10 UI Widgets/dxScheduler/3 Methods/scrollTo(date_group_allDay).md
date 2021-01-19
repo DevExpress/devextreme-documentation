@@ -20,7 +20,7 @@ The following example shows how to use this method:
 
     // Scroll to January 14, 2021
     scrollTo(new Date(2021, 0, 14));
-    // Scroll to January 14, 2021, 5:30 p.m. of the second group
+    // Scroll to the second group at 5:30 p.m. on January 14, 2021
     scrollTo(new Date(2021, 0, 14, 17, 30), {groupId: 2})
     // Scroll to the all-day panel of the second group
     scrollTo(new Date(2021, 0, 14, 17, 30), {groupId: 2}, true);

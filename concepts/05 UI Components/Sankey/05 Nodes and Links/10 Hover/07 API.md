@@ -56,4 +56,4 @@ To change a node or link's hover state, pass **true** or **false** to their [hov
 ---
 
 #####See Also#####
-- [Access a Node or Link Using the API](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/25%20Access%20a%20Node%20or%20Link%20Using%20the%20API.md '/Documentation/Guide/Widgets/Sankey/Nodes_and_Links/Access_a_Node_or_Link_Using_the_API/')
+- [Access a Node or Link Using the API](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/25%20Access%20a%20Node%20or%20Link%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Access_a_Node_or_Link_Using_the_API/')

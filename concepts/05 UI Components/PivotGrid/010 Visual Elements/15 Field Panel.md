@@ -25,7 +25,7 @@ If the Field Panel is made visible, all field areas become visible as well. To h
         }
     };
     
-The Field Panel partially covers the functionality provided by the [Field Chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Chooser'). For example, the user can reorder fields within a single field area or even between them. If this capability is not required, assign **false** to the **fieldPanel**.[allowFieldDragging](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldPanel/allowFieldDragging.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/#allowFieldDragging') property.
+The Field Panel partially covers the functionality provided by the [Field Chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Chooser'). For example, the user can reorder fields within a single field area or even between them. If this capability is not required, assign **false** to the **fieldPanel**.[allowFieldDragging](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldPanel/allowFieldDragging.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/#allowFieldDragging') property.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

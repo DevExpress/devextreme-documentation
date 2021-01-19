@@ -15,4 +15,4 @@ Specifies the minimum [zoom level](/api-reference/10%20UI%20Widgets/dxCalendar/1
 }
 
 #####See Also#####
-- [Specify Zoom Level](/concepts/05%20Widgets/Calendar/10%20Specify%20Zoom%20Level.md '/Documentation/Guide/Widgets/Calendar/Specify_Zoom_Level/')
+- [Specify Zoom Level](/concepts/05%20Widgets/Calendar/10%20Specify%20Zoom%20Level.md '/Documentation/Guide/UI_Components/Calendar/Specify_Zoom_Level/')

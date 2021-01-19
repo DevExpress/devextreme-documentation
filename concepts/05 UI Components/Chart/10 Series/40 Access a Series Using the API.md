@@ -332,10 +332,10 @@ Apart from the API methods, you can access a series in the event handlers. For e
 
 ---
 
-Once you get the series, you can access its child points. For further information, refer to the [Access a Series Point Using the API](/concepts/05%20Widgets/Chart/14%20Series%20Points/25%20Access%20a%20Series%20Point%20Using%20the%20API.md '/Documentation/Guide/Widgets/Chart/Series_Points/Access_a_Series_Point_Using_the_API/') topic.
+Once you get the series, you can access its child points. For further information, refer to the [Access a Series Point Using the API](/concepts/05%20Widgets/Chart/14%20Series%20Points/25%20Access%20a%20Series%20Point%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Access_a_Series_Point_Using_the_API/') topic.
 
 #####See Also#####
-- [Show and Hide a Series](/concepts/05%20Widgets/Chart/10%20Series/50%20Show%20and%20Hide%20a%20Series.md '/Documentation/Guide/Widgets/Chart/Series/Show_and_Hide_a_Series/')
+- [Show and Hide a Series](/concepts/05%20Widgets/Chart/10%20Series/50%20Show%20and%20Hide%20a%20Series.md '/Documentation/Guide/UI_Components/Chart/Series/Show_and_Hide_a_Series/')
 #include common-link-callmethods
 
 [tags]chart, series, get series, getAllSeries, get series by name, getSeriesByName, get series by index, getSeriesByPos

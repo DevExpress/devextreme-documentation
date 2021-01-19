@@ -61,4 +61,4 @@ For extra small screens, this property always equals *1* to make the UI componen
 [/note]
 
 #####See Also#####
-- [Columns within a Group](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/05%20Columns%20within%20a%20Group.md '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Groups/#Columns_within_a_Group')
+- [Columns within a Group](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/05%20Columns%20within%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/#Columns_within_a_Group')

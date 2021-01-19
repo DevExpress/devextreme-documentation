@@ -35,7 +35,7 @@ variables: {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/HtmlEditor/Overview/"
+    url: "/Documentation/Guide/UI_Components/HtmlEditor/Overview/"
 }
 
 #####See Also#####

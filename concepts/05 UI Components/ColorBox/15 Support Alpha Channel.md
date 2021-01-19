@@ -101,7 +101,7 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
 ---
 
 #####See Also#####
-- [ColorBox - Handle the Value Change Event](/concepts/05%20Widgets/ColorBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/ColorBox/Handle_the_Value_Change_Event')
+- [ColorBox - Handle the Value Change Event](/concepts/05%20Widgets/ColorBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/ColorBox/Handle_the_Value_Change_Event')
 - [ColorBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview)
 - [ColorBox API Reference](/api-reference/10%20UI%20Widgets/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/')
 

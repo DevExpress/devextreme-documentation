@@ -1,4 +1,4 @@
-To change a single item property at runtime, call the [itemOption(id, option, value)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/itemOption(id_option_value).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value') method.  This approach is more typical of jQuery. If the needed item is [in a group](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Groups/') or [in a tab](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/Widgets/Form/Organize_Simple_Items/In_Tabs/'), the *field* parameter should be given the group caption or tab title followed by the item's name. An example is shown below.
+To change a single item property at runtime, call the [itemOption(id, option, value)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/itemOption(id_option_value).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value') method.  This approach is more typical of jQuery. If the needed item is [in a group](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/') or [in a tab](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/'), the *field* parameter should be given the group caption or tab title followed by the item's name. An example is shown below.
 
     <!--JavaScript-->
     $(function() {
@@ -187,8 +187,8 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
 
 #####See Also#####
 #include common-link-callmethods
-- [Form - Change Editor Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/Widgets/Form/Change_Options_at_Runtime/Editor_Options/')
-- [Form - Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/Widgets/Form/Configure_Simple_Items/')
+- [Form - Change Editor Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Options_at_Runtime/Editor_Options/')
+- [Form - Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 

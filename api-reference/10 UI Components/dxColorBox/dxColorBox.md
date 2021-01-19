@@ -19,7 +19,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/ColorBox/Overview/"
+    url: "/Documentation/Guide/UI_Components/ColorBox/Overview/"
 }
 
 #####See Also#####

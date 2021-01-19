@@ -9,4 +9,4 @@ Specifies which data field contains nested items. Set this property when your da
 
 ---
 #####See Also#####
-- [Use Hierarchical Data](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/Widgets/TreeList/Data_Binding/Use_Hierarchical_Data/')
+- [Use Hierarchical Data](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Hierarchical_Data/')

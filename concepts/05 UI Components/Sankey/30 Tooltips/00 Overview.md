@@ -112,4 +112,4 @@ Properties that configure tooltips are collected in the [tooltip](/api-reference
 }
 
 #####See Also#####
-- [Show and Hide a Tooltip](/concepts/05%20Widgets/Sankey/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/Widgets/Sankey/Tooltips/Show_and_Hide_a_Tooltip/')
+- [Show and Hide a Tooltip](/concepts/05%20Widgets/Sankey/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Sankey/Tooltips/Show_and_Hide_a_Tooltip/')

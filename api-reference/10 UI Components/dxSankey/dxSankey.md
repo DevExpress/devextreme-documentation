@@ -29,7 +29,7 @@ link: { colorMode: "gradient" }
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Sankey/Overview/"
+    url: "/Documentation/Guide/UI_Components/Sankey/Overview/"
 }
 
 #####See Also#####

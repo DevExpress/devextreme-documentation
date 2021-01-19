@@ -29,4 +29,4 @@ You can supply data to this structure using the **DataSource** object's [group](
 [note]Only one-level grouping is supported.
 
 #####See Also#####
-- [List - Grouping](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/')
+- [List - Grouping](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/')

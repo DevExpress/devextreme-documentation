@@ -2,7 +2,7 @@ To export a UI component in code, call its [exportTo(fileName, format)](/api-ref
 
     <!--JavaScript-->widgetInstance.exportTo('Test Chart', 'PDF');
     
-To print a UI component, call its [print()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/print().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#print') method. Like the **Print** command in the [**Exporting/Printing** menu](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/80%20Client-Side%20Exporting%20and%20Printing/10%20Exporting%20and%20Printing%20in%20the%20UI.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Client-Side_Exporting_and_Printing/#Exporting_and_Printing_in_the_UI'), this method opens the Print window in the browser.
+To print a UI component, call its [print()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/print().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#print') method. Like the **Print** command in the [**Exporting/Printing** menu](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/80%20Client-Side%20Exporting%20and%20Printing/10%20Exporting%20and%20Printing%20in%20the%20UI.md '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Client-Side_Exporting_and_Printing/#Exporting_and_Printing_in_the_UI'), this method opens the Print window in the browser.
 
     <!--JavaScript-->widgetInstance.print();
     

@@ -137,4 +137,4 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 ---
 
 #####See Also#####
-- [Customize Column Headers](/concepts/05%20Widgets/TreeList/10%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/Widgets/TreeList/Columns/Customize_Column_Headers/')
+- [Customize Column Headers](/concepts/05%20Widgets/TreeList/10%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Column_Headers/')

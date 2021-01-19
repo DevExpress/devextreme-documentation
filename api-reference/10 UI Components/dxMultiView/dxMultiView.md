@@ -25,7 +25,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/MultiView/Overview/"
+    url: "/Documentation/Guide/UI_Components/MultiView/Overview/"
 }
 
 #####See Also#####

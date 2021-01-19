@@ -81,9 +81,9 @@ To configure the appearance, location, and content of the legend, use properties
 ---
 
 #####See Also#####
-- [Relocate the Legend](/concepts/05%20Widgets/Chart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Chart/Legend/Relocate_the_Legend/')
-- [Rearrange Legend Items](/concepts/05%20Widgets/Chart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/Widgets/Chart/Legend/Rearrange_Legend_Items/')
-- [User Interaction with the Legend](/concepts/05%20Widgets/Chart/35%20Legend/30%20User%20Interaction.md '/Documentation/Guide/Widgets/Chart/Legend/User_Interaction/')
+- [Relocate the Legend](/concepts/05%20Widgets/Chart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/Chart/Legend/Relocate_the_Legend/')
+- [Rearrange Legend Items](/concepts/05%20Widgets/Chart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Chart/Legend/Rearrange_Legend_Items/')
+- [User Interaction with the Legend](/concepts/05%20Widgets/Chart/35%20Legend/30%20User%20Interaction.md '/Documentation/Guide/UI_Components/Chart/Legend/User_Interaction/')
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine)
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 

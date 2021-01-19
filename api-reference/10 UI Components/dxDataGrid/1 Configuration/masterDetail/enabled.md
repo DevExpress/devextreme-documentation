@@ -19,4 +19,4 @@ Setting this property to **false** is recommended if you need a custom logic of 
 }
 
 #####See Also#####
-- [Master-Detail Interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/Widgets/DataGrid/Master-Detail_Interface/')
+- [Master-Detail Interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/UI_Components/DataGrid/Master-Detail_Interface/')

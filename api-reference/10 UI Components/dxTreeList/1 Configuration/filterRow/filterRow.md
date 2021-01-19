@@ -17,7 +17,7 @@ To make the filter row visible, assign **true** to the **filterRow**.[visible](/
 }
 
 #####See Also#####
-- [Filter Row](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/Widgets/TreeList/Filtering_and_Searching/#Filter_Row')
+- [Filter Row](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Filter_Row')
 - [expandNodesOnFiltering](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/expandNodesOnFiltering.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandNodesOnFiltering')
 - [filter(filterExpr)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/filter(filterExpr).md '{basewidgetpath}/Methods/#filterfilterExpr')
 - [clearFilter(filterName)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/clearFilter(filterName).md '{basewidgetpath}/Methods/#clearFilterfilterName')

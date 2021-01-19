@@ -30,7 +30,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Navbar/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/NavBar/Overview/"
+    url: "/Documentation/Guide/UI_Components/NavBar/Overview/"
 }
 
 #####See Also#####

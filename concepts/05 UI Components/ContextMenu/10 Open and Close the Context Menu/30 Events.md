@@ -153,6 +153,6 @@ If you are going to change event handlers at runtime, or if you need to attach s
 
 #####See Also#####
 #include common-link-handleevents
-- [ContextMenu - Access the Clicked Item](/concepts/05%20Widgets/ContextMenu/03%20Access%20the%20Clicked%20Item.md '/Documentation/Guide/Widgets/ContextMenu/Access_the_Clicked_Item/')
+- [ContextMenu - Access the Clicked Item](/concepts/05%20Widgets/ContextMenu/03%20Access%20the%20Clicked%20Item.md '/Documentation/Guide/UI_Components/ContextMenu/Access_the_Clicked_Item/')
 - [Toast Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toast/Overview)
 - [Toast API Reference](/api-reference/10%20UI%20Widgets/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')

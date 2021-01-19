@@ -16,4 +16,4 @@ The **layout** property is in effect when a diagram is bound to a data source us
 }
 
 #####See Also#####
-- [Diagram Layout](/Documentation/Guide/Widgets/Diagram/Data_Binding/#Diagram_Layout)
+- [Diagram Layout](/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Diagram_Layout)

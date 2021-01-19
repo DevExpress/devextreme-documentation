@@ -169,5 +169,5 @@ You can set the title's text more concisely by assigning it directly to the **ti
 For information about all properties of the title and subtitle, visit the [title](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/title/') section of the API reference.
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/PieChart/89%20Adaptive%20Layout.md '/Documentation/Guide/Widgets/PieChart/Adaptive_Layout/')
-- [Equally-Sized Pies](/concepts/05%20Widgets/PieChart/95%20Equally-Sized%20Pies.md '/Documentation/Guide/Widgets/PieChart/Equally-Sized_Pies/')
+- [Adaptive Layout](/concepts/05%20Widgets/PieChart/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/PieChart/Adaptive_Layout/')
+- [Equally-Sized Pies](/concepts/05%20Widgets/PieChart/95%20Equally-Sized%20Pies.md '/Documentation/Guide/UI_Components/PieChart/Equally-Sized_Pies/')

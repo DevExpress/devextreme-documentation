@@ -14,5 +14,5 @@ dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarse
 This property accepts a value from **0** to **1** that specifies the correlation between the empty space on a bar group's sides and the group's angular width: **0** - the bar group occupies the whole allocated sector; **1** - virtually hides the bar group leaving the whole sector empty.
 
 #####See Also#####
-- [Specify the Bar Width](/concepts/05%20Widgets/PolarChart/20%20Series%20Types/Bar/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/Widgets/PolarChart/Series_Types/#Bar/Specify_the_Bar_Width')
+- [Specify the Bar Width](/concepts/05%20Widgets/PolarChart/20%20Series%20Types/Bar/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/UI_Components/PolarChart/Series_Types/#Bar/Specify_the_Bar_Width')
 - [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#barPadding')

@@ -15,4 +15,4 @@ Specifies whether an item context menu is shown when a user holds or swipes an i
 }
 
 #####See Also#####
-- [List - Item Context Menu](/concepts/05%20Widgets/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/Widgets/List/Item_Context_Menu/')
+- [List - Item Context Menu](/concepts/05%20Widgets/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/UI_Components/List/Item_Context_Menu/')

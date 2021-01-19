@@ -17,7 +17,7 @@ The settings of the column the cell belong to.
 
 ##### field(cellInfo.columnIndex): Number
 The index of the column the cell belongs to.        
-Refer to the [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_and_Row_Indexes/') topic for more information on how this index is calculated.
+Refer to the [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/') topic for more information on how this index is calculated.
 
 ##### field(cellInfo.component): dxTreeList
 The UI component's instance.
@@ -33,7 +33,7 @@ The cell's row.
 
 ##### field(cellInfo.rowIndex): Number
 The index of the row the cell belongs to. Begins with 0 on each page. Group rows are included.      
-Refer to the [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/Widgets/TreeList/Columns/Column_and_Row_Indexes/') topic for more information on row indexes.
+Refer to the [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/') topic for more information on row indexes.
 
 ##### field(cellInfo.rowType): String
 The row's [type](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
@@ -76,11 +76,11 @@ Use it to specify the default editor's properties (except **onValueChanged**).
 Use it to:
     - Change the editor's type.
     - Override the default editor's **onValueChanged** handler.
-    - [Dynamically change the editor's properties in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/Widgets/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
+    - [Dynamically change the editor's properties in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
     - Implement other customization cases.
 
 [note] If you implement two-way data binding in your template, set [twoWayBindingEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/twoWayBindingEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#twoWayBindingEnabled') to **false** to disable this feature's default implementation.
 
 #####See Also#####
 - **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#showEditorAlways')
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')
+- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

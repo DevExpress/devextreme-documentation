@@ -1,4 +1,4 @@
-Similar to the [slide-out menu](/concepts/05%20Widgets/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/Widgets/SlideOutView/Customize_the_Menu/'), the view also demands a template to be specified. For example, in the following code, the view contains the [Toolbar](/concepts/05%20Widgets/Toolbar/00%20Overview.md '/Documentation/Guide/Widgets/Toolbar/Overview/') and the [Chart](/concepts/05%20Widgets/Chart/00%20Overview.md '/Documentation/Guide/Widgets/Chart/Overview/') UI components. They are both placed into a [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') whose name is assigned to the [contentTemplate](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Configuration/#contentTemplate') property of the **SlideOutView**. All the other code configures the **Toolbar** and the **Chart** and does not affect the **SlideOutView** directly.
+Similar to the [slide-out menu](/concepts/05%20Widgets/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_Menu/'), the view also demands a template to be specified. For example, in the following code, the view contains the [Toolbar](/concepts/05%20Widgets/Toolbar/00%20Overview.md '/Documentation/Guide/UI_Components/Toolbar/Overview/') and the [Chart](/concepts/05%20Widgets/Chart/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Overview/') UI components. They are both placed into a [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') whose name is assigned to the [contentTemplate](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Configuration/#contentTemplate') property of the **SlideOutView**. All the other code configures the **Toolbar** and the **Chart** and does not affect the **SlideOutView** directly.
 
     <!--HTML--><div id="slideOutView">
         <div data-options="dxTemplate: { name: 'content' }">
@@ -90,11 +90,11 @@ The **contentTemplate** property can also accept a function combining the HTML m
         // The rest is omitted for brevity
     });
 
-In addition, you can use a 3rd-party template engine to customize the view. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize the view. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [SlideOutView - Customize the Menu](/concepts/05%20Widgets/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/Widgets/SlideOutView/Customize_the_Menu/')
-- [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/Widgets/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
+- [SlideOutView - Customize the Menu](/concepts/05%20Widgets/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_Menu/')
+- [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/UI_Components/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
 - [SlideOutView API Reference](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Components/dxSlideOutView/')
 
 [tags]slideOutView, slide-out menu, navigation, view appearance, customize, templates

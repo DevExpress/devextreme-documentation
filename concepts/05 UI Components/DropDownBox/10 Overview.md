@@ -464,6 +464,6 @@ If your data is an array of objects, specify:
 ---
 
 #####See Also#####
-- [DropDownBox - Customize the Appearance](/concepts/05%20Widgets/DropDownBox/20%20Customize%20the%20Appearance.md '/Documentation/Guide/Widgets/DropDownBox/Customize_the_Appearance/')
+- [DropDownBox - Customize the Appearance](/concepts/05%20Widgets/DropDownBox/20%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/DropDownBox/Customize_the_Appearance/')
 
 [tags]dxdropdownbox

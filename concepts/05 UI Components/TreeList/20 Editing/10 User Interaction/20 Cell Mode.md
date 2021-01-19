@@ -2,7 +2,7 @@ In the cell mode, a user edits data cell by cell. Changes are saved once a cell 
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Editing Cell Mode](/images/treelist/editing/cell_mode.png)
 
-If you [validate data](/concepts/05%20Widgets/TreeList/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/Widgets/TreeList/Editing/#Data_Validation'), a cell is locked in the editing state until a user enters a valid value or clicks the *"Cancel Changes"* button.
+If you [validate data](/concepts/05%20Widgets/TreeList/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/TreeList/Editing/#Data_Validation'), a cell is locked in the editing state until a user enters a valid value or clicks the *"Cancel Changes"* button.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Editing Cell Mode Validation](/images/treelist/editing/cell_mode_validation.png)
 
@@ -102,4 +102,4 @@ Clicking the *"Delete"* button invokes the confirmation dialog that allows a use
 }
 
 #####See Also#####
-- [Data Validation](/concepts/05%20Widgets/TreeList/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/Widgets/TreeList/Editing/#Data_Validation')
+- [Data Validation](/concepts/05%20Widgets/TreeList/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/TreeList/Editing/#Data_Validation')

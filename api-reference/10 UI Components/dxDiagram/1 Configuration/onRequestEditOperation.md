@@ -40,4 +40,4 @@ If you want to disable a specific operation type for the entire diagram, you can
 }
 
 #####See Also#####
-- [Restrict Edit Operations](/Documentation/Guide/Widgets/Diagram/Restrict_Edit_Operations)
+- [Restrict Edit Operations](/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations)

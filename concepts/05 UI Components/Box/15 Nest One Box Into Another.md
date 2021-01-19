@@ -201,7 +201,7 @@ This code yields the following result.
 ![DevExtreme HTML5 LayoutWidget Box](/images/UiWidgets/Box/Box_nested-boxes.png)
 
 #####See Also#####
-- [Box - Arrange and Align Items](/concepts/05%20Widgets/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/Widgets/Box/Arrange_and_Align_Items/')
+- [Box - Arrange and Align Items](/concepts/05%20Widgets/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/UI_Components/Box/Arrange_and_Align_Items/')
 - [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
 - [Box API Reference](/api-reference/10%20UI%20Widgets/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 

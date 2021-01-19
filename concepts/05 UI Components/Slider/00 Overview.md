@@ -233,9 +233,9 @@ In addition, you can specify the step of **Slider** values using the [step](/api
 
 #####See Also#####
 #include common-link-configurewidget
-- [Slider - Customize Widget Appearance](/concepts/05%20Widgets/Slider/05%20Customize%20Widget%20Appearance.md '/Documentation/Guide/Widgets/Slider/Customize_Widget_Appearance')
-- [Slider - Handle the Value Change Event](/concepts/05%20Widgets/Slider/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/Slider/Handle_the_Value_Change_Event')
+- [Slider - Customize Widget Appearance](/concepts/05%20Widgets/Slider/05%20Customize%20Widget%20Appearance.md '/Documentation/Guide/UI_Components/Slider/Customize_Widget_Appearance')
+- [Slider - Handle the Value Change Event](/concepts/05%20Widgets/Slider/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Slider/Handle_the_Value_Change_Event')
 - [Slider API Reference](/api-reference/10%20UI%20Widgets/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
-- [RangeSlider - Overview](/concepts/05%20Widgets/RangeSlider/00%20Overview.md '/Documentation/Guide/Widgets/RangeSlider/Overview/')
+- [RangeSlider - Overview](/concepts/05%20Widgets/RangeSlider/00%20Overview.md '/Documentation/Guide/UI_Components/RangeSlider/Overview/')
 
 [tags]dxslider, slider, editor, overview, min, max, step

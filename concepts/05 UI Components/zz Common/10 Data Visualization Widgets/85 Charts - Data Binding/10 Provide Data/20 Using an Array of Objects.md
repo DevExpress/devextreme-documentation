@@ -16,7 +16,7 @@ This array can be used as a data source in **Chart** as well, but in this case, 
 		{ year: 2014, aluminum: 3650, nickel: 3254, copper: 4052 }
 	];
 
-In **Chart**, the majority of [series types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/Widgets/Chart/Series_Types/') requires one value for one argument to define one series point. Data sources for such series are represented above. However, there are series types that require two or more values for one argument to define one point. For example, [range series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Range_Series/') need two values, while [financial series](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/Widgets/Chart/Series_Types/Financial_Series/') series need four values for one argument. The code snippet below shows how to implement a data source for two series of the range bar type.
+In **Chart**, the majority of [series types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/UI_Components/Chart/Series_Types/') requires one value for one argument to define one series point. Data sources for such series are represented above. However, there are series types that require two or more values for one argument to define one point. For example, [range series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/') need two values, while [financial series](/concepts/05%20Widgets/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Financial_Series/') series need four values for one argument. The code snippet below shows how to implement a data source for two series of the range bar type.
 
 	<!--JavaScript-->var rangeDataSource = [
 		{ year: 2005, aluminumMin: 2450, aluminumMax: 2750, copperMin: 2230, copperMax: 2600 },
@@ -25,4 +25,4 @@ In **Chart**, the majority of [series types](/concepts/05%20Widgets/Chart/11%20S
 		{ year: 2014, aluminumMin: 3650, aluminumMax: 3850, copperMin: 3500, copperMax: 4300 }
 	];
 
-After you have implemented a data source, bind it to your UI component. To learn how to do this, refer to the [Bind Data](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/Widgets/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Bind_Data/') topic.
+After you have implemented a data source, bind it to your UI component. To learn how to do this, refer to the [Bind Data](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Bind_Data/') topic.

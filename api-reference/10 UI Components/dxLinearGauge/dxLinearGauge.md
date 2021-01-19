@@ -19,7 +19,7 @@ dx.viz.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleCustomTickInterval/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/LinearGauge/Visual_Elements/"
+    url: "/Documentation/Guide/UI_Components/LinearGauge/Visual_Elements/"
 }
 
 #####See Also#####

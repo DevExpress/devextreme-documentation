@@ -51,7 +51,7 @@ To bind the **Chart** to an array, pass this array to the [dataSource](/api-refe
 
 ---
 
-After that, you need to bind one or several **Chart** series to data. Depending on the [series type](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/Widgets/Chart/Series_Types/') you chose, use one of the techniques described in the [Bind Series to Data](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/Widgets/Chart/Data_Binding/Bind_Series_to_Data/') topic.
+After that, you need to bind one or several **Chart** series to data. Depending on the [series type](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/UI_Components/Chart/Series_Types/') you chose, use one of the techniques described in the [Bind Series to Data](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/') topic.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource/"
@@ -114,7 +114,7 @@ If objects in an array need to be processed (sorted, filtered, etc.), you can cr
 
 #####See Also#####
 - [Update Data in the Chart](/concepts/70%20Data%20Binding/03%20Update%20Data '/Documentation/Guide/Data_Binding/Update_Data/')
-- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/Widgets/Chart/Data_Aggregation/')
+- [Data Aggregation](/concepts/05%20Widgets/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, data binding, provide data, array, process data, Query

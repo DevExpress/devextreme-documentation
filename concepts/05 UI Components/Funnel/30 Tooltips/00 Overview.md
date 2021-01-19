@@ -187,5 +187,5 @@ Properties declared in the **tooltip** object apply to all tooltips in the **Fun
 ---
 
 #####See Also#####
-- [Show and Hide a Tooltip](/concepts/05%20Widgets/Funnel/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/Widgets/Funnel/Tooltips/Show_and_Hide_a_Tooltip/')
+- [Show and Hide a Tooltip](/concepts/05%20Widgets/Funnel/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Funnel/Tooltips/Show_and_Hide_a_Tooltip/')
 - [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)

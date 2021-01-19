@@ -150,7 +150,7 @@ DevExtreme editors may belong to different [validation groups](/api-reference/10
 
 #####See Also#####
 - <a href="https://docs.devexpress.com/AspNetCore/400576/devextreme-based-controls/concepts/data-validation#validate-and-submit-an-html-form" target="_blank">ASP.NET MVC Controls - Validate and Submit an HTML Form</a>
-- [Form - Validate and Submit](/concepts/05%20Widgets/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/Widgets/Form/Validate_and_Submit_the_Form/')
+- [Form - Validate and Submit](/concepts/05%20Widgets/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/UI_Components/Form/Validate_and_Submit_the_Form/')
 - [Button Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons)
 - [Button API Reference](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 

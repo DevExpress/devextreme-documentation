@@ -12,5 +12,5 @@ Specifies [validation rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Va
 }
 
 #####See Also#####
-- [Data Validation](/concepts/05%20Widgets/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/Widgets/{WidgetName}/Editing/#Data_Validation')
+- [Data Validation](/concepts/05%20Widgets/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/{WidgetName}/Editing/#Data_Validation')
 - [rowValidating](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/rowValidating.md '{basewidgetpath}/Events/#rowValidating')

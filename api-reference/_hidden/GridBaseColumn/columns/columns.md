@@ -176,5 +176,5 @@ Band columns support hierarchies of any nesting level. It means that the followi
 Band columns have the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#isBand') flag. Banded columns have the [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#ownerBand') property set. Use these properties to distinguish band and banded columns from regular ones in code.
 
 #####See Also#####
-- [Band Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Band_Columns/')
-- [Column Fixing](/concepts/05%20Widgets/DataGrid/15%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Fixing/')
+- [Band Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Band_Columns/')
+- [Column Fixing](/concepts/05%20Widgets/DataGrid/15%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Fixing/')

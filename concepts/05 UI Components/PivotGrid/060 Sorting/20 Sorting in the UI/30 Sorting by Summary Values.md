@@ -1,4 +1,4 @@
-To understand how fields are sorted by summary values, consider two dimensions: [column header and row header](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Headers'). To sort fields of one dimension, the user right-clicks (or performs a long tap) on a field of another dimension. In the appeared context menu, he or she chooses the required item.
+To understand how fields are sorted by summary values, consider two dimensions: [column header and row header](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Headers'). To sort fields of one dimension, the user right-clicks (or performs a long tap) on a field of another dimension. In the appeared context menu, he or she chooses the required item.
 
 ![DevExtreme PivotGrid FieldChooser SortingIcons](/images/DataGrid/PivotGrid_sortingBySummary_contextMenu.png)
 

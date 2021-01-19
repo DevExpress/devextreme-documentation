@@ -10,4 +10,4 @@ Handling a click on a marker and handling a click on an area are similar in natu
 		}
 	};
 
-Frequently, it is required that you select a marker on a click. Learn how to implement this from the [Implement Selection](/concepts/05%20Widgets/VectorMap/40%20End-User%20Interaction/50%20Selection/20%20Implement%20Selection.md '/Documentation/Guide/Widgets/VectorMap/End-User_Interaction/#Selection/Implement_Selection') topic.
+Frequently, it is required that you select a marker on a click. Learn how to implement this from the [Implement Selection](/concepts/05%20Widgets/VectorMap/40%20End-User%20Interaction/50%20Selection/20%20Implement%20Selection.md '/Documentation/Guide/UI_Components/VectorMap/End-User_Interaction/#Selection/Implement_Selection') topic.

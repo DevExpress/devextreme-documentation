@@ -95,7 +95,7 @@ Below, you can try out these properties in action.
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/Legend/relocateTheLegend.html, /Content/Applications/21_1/DataVisualization/Guides/Legend/relocateTheLegend.js, /Content/Applications/21_1/DataVisualization/Guides/Legend/relocateTheLegend.css"></div>
 
 #####See Also#####
-- [Rearrange Legend Items](/concepts/05%20Widgets/Chart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/Widgets/Chart/Legend/Rearrange_Legend_Items/')
+- [Rearrange Legend Items](/concepts/05%20Widgets/Chart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Chart/Legend/Rearrange_Legend_Items/')
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine)
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 

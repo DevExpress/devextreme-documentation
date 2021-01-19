@@ -60,5 +60,5 @@ Note that you cannot open the "Resource Manager" dialog if the **allowResourceDe
 - [onResourceDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceDeleting)
 - [onResourceDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceDeleted)
 - [deleteResource](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#deleteResourcekey)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
 

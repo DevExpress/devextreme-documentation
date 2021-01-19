@@ -9,4 +9,4 @@ Specifies which editing operations a user can perform.
 
 ---
 #####See Also#####
-- [Restrict Edit Operations](/Documentation/Guide/Widgets/Diagram/Restrict_Edit_Operations)
+- [Restrict Edit Operations](/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations)

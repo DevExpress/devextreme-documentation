@@ -55,4 +55,4 @@ You can change a funnel item's hover state by passing **true** or **false** to t
 ---
 
 #####See Also#####
-- [Access a Funnel Item Using the API](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/25%20Access%20a%20Funnel%20Item%20Using%20the%20API.md '/Documentation/Guide/Widgets/Funnel/Funnel_Items/Access_a_Funnel_Item_Using_the_API/')
+- [Access a Funnel Item Using the API](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/25%20Access%20a%20Funnel%20Item%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Access_a_Funnel_Item_Using_the_API/')

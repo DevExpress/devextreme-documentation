@@ -107,7 +107,7 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
 
 #####See Also#####
 #include common-link-callmethods
-- [List - Grouping in the Data Source](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/Widgets/List/Grouping/In_the_Data_Source/')
+- [List - Grouping in the Data Source](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/')
 - [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, expand, collapse, collapsibleGroups, collapseGroup, expandGroup

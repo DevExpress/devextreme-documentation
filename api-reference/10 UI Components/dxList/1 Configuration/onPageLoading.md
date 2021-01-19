@@ -21,4 +21,4 @@ Model data. Available only if Knockout is used.
 
 ---
 #####See Also#####
-- [Paging](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/Widgets/List/Paging/')
+- [Paging](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/UI_Components/List/Paging/')

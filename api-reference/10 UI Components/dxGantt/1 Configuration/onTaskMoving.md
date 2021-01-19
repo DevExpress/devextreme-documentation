@@ -159,4 +159,4 @@ The task values before moving.
 
 #####See Also#####
 - [taskMoving](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskMoving)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

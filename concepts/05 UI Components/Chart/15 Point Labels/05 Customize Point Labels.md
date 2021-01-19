@@ -241,8 +241,8 @@ You can also customize an individual label. For this purpose, assign a function 
 }
 
 #####See Also#####
-- [Resolve Label Overlapping](/concepts/05%20Widgets/Chart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/Widgets/Chart/Point_Labels/Resolve_Overlapping/')
-- [Access a Point Label Using the API](/concepts/05%20Widgets/Chart/15%20Point%20Labels/15%20Access%20a%20Point%20Label%20Using%20the%20API.md '/Documentation/Guide/Widgets/Chart/Point_Labels/Access_a_Point_Label_Using_the_API/')
+- [Resolve Label Overlapping](/concepts/05%20Widgets/Chart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Resolve_Overlapping/')
+- [Access a Point Label Using the API](/concepts/05%20Widgets/Chart/15%20Point%20Labels/15%20Access%20a%20Point%20Label%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Access_a_Point_Label_Using_the_API/')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, point labels, customize label, customizeLabel, customize text, customizeText

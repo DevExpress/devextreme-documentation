@@ -165,7 +165,7 @@ If you are going to change the handling functions at runtime, or if you need to 
 #####See Also#####
 #include common-link-handleevents
 #include common-link-callmethods
-- [TextBox - Handle the Value Change Event](/concepts/05%20Widgets/TextBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/Widgets/TextBox/Handle_the_Value_Change_Event/')
+- [TextBox - Handle the Value Change Event](/concepts/05%20Widgets/TextBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TextBox/Handle_the_Value_Change_Event/')
 - [TextBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview)
 
 [tags]textBox, text box, editor, keyboard events, keyup, keydown, keypress, enterkey

@@ -42,4 +42,4 @@ The following code shows how to get an editor of an item in a group:
 
 #####See Also#####
 #include common-link-callmethods
-- [Change Options at Runtime - Editor Options](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/Widgets/Form/Change_Options_at_Runtime/Editor_Options/')
+- [Change Options at Runtime - Editor Options](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Options_at_Runtime/Editor_Options/')

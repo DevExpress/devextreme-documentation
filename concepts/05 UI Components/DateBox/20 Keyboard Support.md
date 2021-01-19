@@ -2,7 +2,7 @@ An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
     <tr>
-        <th><a href="/Documentation/Guide/Widgets/DateBox/Platform-Specific_Value_Pickers">Value Picker</a></th>
+        <th><a href="/Documentation/Guide/UI_Components/DateBox/Platform-Specific_Value_Pickers">Value Picker</a></th>
         <th>Key</th>
         <th>Action</th>
     </tr>

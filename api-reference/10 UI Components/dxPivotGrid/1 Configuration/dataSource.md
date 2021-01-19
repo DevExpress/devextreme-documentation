@@ -167,7 +167,7 @@ Use one of the following extensions to enable the server to process data accordi
 
 
 - **Any other data source**     
-Implement a [CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/Widgets/PivotGrid/Use_CustomStore/').
+Implement a [CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/').
 
 You can call the [getDataSource()](/api-reference/10%20UI%20Widgets/dxPivotGrid/3%20Methods/getDataSource().md '{basewidgetpath}/Methods/#getDataSource') method to access the **PivotGridDataSource** instance associated with the **PivotGrid**.
 

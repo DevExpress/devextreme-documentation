@@ -22,4 +22,4 @@ Note that the result of the method execution depends on the current value of the
 
 #####See Also#####
 #include common-link-callmethods
-- [List - Selection API](/concepts/05%20Widgets/List/25%20Selection/05%20API.md '/Documentation/Guide/Widgets/List/Selection/#API')
+- [List - Selection API](/concepts/05%20Widgets/List/25%20Selection/05%20API.md '/Documentation/Guide/UI_Components/List/Selection/#API')

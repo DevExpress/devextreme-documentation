@@ -109,7 +109,7 @@ In the second use-case, you have some component that gets updated each time a us
 As you can see in the code above, a markup for the **SlideOut** view is defined in the [contentTemplate](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#contentTemplate') function. Unlike **itemTemplate**, this function is called only once - when the **SlideOut** is being rendered.
 
 #####See Also#####
-- [SlideOut - Customize Menu Items](/concepts/05%20Widgets/SlideOut/05%20Customize%20Menu%20Items.md '/Documentation/Guide/Widgets/SlideOut/Customize_Menu_Items')
+- [SlideOut - Customize Menu Items](/concepts/05%20Widgets/SlideOut/05%20Customize%20Menu%20Items.md '/Documentation/Guide/UI_Components/SlideOut/Customize_Menu_Items')
 - [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 - [SlideOut Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slideout/Overview)
 - [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Components/dxSlideOut/')

@@ -79,7 +79,7 @@ Depending on whether the legend is oriented vertically or horizontally, the **Pi
 
     ---
 
-    [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/legend/#horizontalAlignment') property. For details on the legend's location, refer to the [Relocate the Legend](/concepts/05%20Widgets/PieChart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/PieChart/Legend/Relocate_the_Legend/') topic.
+    [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/legend/#horizontalAlignment') property. For details on the legend's location, refer to the [Relocate the Legend](/concepts/05%20Widgets/PieChart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/PieChart/Legend/Relocate_the_Legend/') topic.
 
 - **Set the number of columns or rows**     
 To distribute all legend items between several columns (in a vertically-oriented legend) or rows (in a horizontally-oriented legend), set the [columnCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/columnCount.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/legend/#columnCount') or [rowCount](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/rowCount.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/legend/#rowCount') property respectively.
@@ -262,5 +262,5 @@ Below, you can try out all the mentioned properties in action.
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/PieChartLegend/rearrangeLegendItems.html, /Content/Applications/21_1/DataVisualization/Guides/PieChartLegend/rearrangeLegendItems.js, /Content/Applications/21_1/DataVisualization/Guides/PieChartLegend/rearrangeLegendItems.css"></div>
 
 #####See Also#####
-- [Relocate the Legend](/concepts/05%20Widgets/PieChart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/PieChart/Legend/Relocate_the_Legend/')
+- [Relocate the Legend](/concepts/05%20Widgets/PieChart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/PieChart/Legend/Relocate_the_Legend/')
 - [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithMultipleSeries)

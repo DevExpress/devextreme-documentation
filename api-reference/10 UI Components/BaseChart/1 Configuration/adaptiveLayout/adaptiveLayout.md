@@ -21,4 +21,4 @@ Use the **height** and **width** properties in the **adaptiveLayout** object to 
 <a href="https://jsfiddle.net/ChartJS/2m1pv4ag/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Demo on JSFiddle</a>
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/Chart/89%20Adaptive%20Layout.md '/Documentation/Guide/Widgets/{WidgetName}/Adaptive_Layout/')
+- [Adaptive Layout](/concepts/05%20Widgets/Chart/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/{WidgetName}/Adaptive_Layout/')

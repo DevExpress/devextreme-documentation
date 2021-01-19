@@ -114,8 +114,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
 
 #####See Also#####
 #include common-link-handleevents
-- [ContextMenu - Customize Item Appearance](/concepts/05%20Widgets/ContextMenu/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/ContextMenu/Customize_Item_Appearance')
-- [ContextMenu - Open and Close](/concepts/05%20Widgets/ContextMenu/10%20Open%20and%20Close%20the%20Context%20Menu '/Documentation/Guide/Widgets/ContextMenu/Open_and_Close_the_Context_Menu/')
+- [ContextMenu - Customize Item Appearance](/concepts/05%20Widgets/ContextMenu/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/ContextMenu/Customize_Item_Appearance')
+- [ContextMenu - Open and Close](/concepts/05%20Widgets/ContextMenu/10%20Open%20and%20Close%20the%20Context%20Menu '/Documentation/Guide/UI_Components/ContextMenu/Open_and_Close_the_Context_Menu/')
 - [ContextMenu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ContextMenu/Basics)
 - [ContextMenu API Reference](/api-reference/10%20UI%20Widgets/dxContextMenu '/Documentation/ApiReference/UI_Components/dxContextMenu/')
 

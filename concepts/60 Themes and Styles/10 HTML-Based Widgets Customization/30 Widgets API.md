@@ -77,4 +77,4 @@ Each UI component has an API described in the UI component's [API reference sect
 
 If your page contains multiple instances of the same UI component, you can use the [defaultOptions(rule)](/api-reference/10%20UI%20Widgets/DOMComponent/3%20Methods/defaultOptions(rule).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#defaultOptionsrule') method to specify a default configuration for all of them in one place. The same method allows you to specify different default configurations for different devices.
 
-In addition, UI components provide [templates](/concepts/05%20Widgets/zz%20Common/30%20Templates '/Documentation/Guide/Widgets/Common/Templates/') that you can use for more in-depth customization.
+In addition, UI components provide [templates](/concepts/05%20Widgets/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/') that you can use for more in-depth customization.

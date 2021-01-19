@@ -1,4 +1,4 @@
-On desktops and iOS devices, the drop-down menu is the [Popover](/concepts/05%20Widgets/Popover/00%20Overview.md '/Documentation/Guide/Widgets/Popover/Overview/') UI component; on other devices, it is the [Popup](/concepts/05%20Widgets/Popup/00%20Overview.md '/Documentation/Guide/Widgets/Popup/Overview/') UI component. To use the **Popup** on all devices, assign **false** to the [usePopover](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#usePopover') property.
+On desktops and iOS devices, the drop-down menu is the [Popover](/concepts/05%20Widgets/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/Overview/') UI component; on other devices, it is the [Popup](/concepts/05%20Widgets/Popup/00%20Overview.md '/Documentation/Guide/UI_Components/Popup/Overview/') UI component. To use the **Popup** on all devices, assign **false** to the [usePopover](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#usePopover') property.
 
 To customize the **Popup** or **Popover**, use the [dropDownOptions](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dropDownOptions') object. For example, the following code removes shading from beneath the **Popup** and disables full-screen mode:
 
@@ -261,7 +261,7 @@ To change the size of the drop-down menu and position it against a specific elem
 
 ---
 
-The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#title') property to specify its text, or the **dropDownOptions**.[titleTemplate](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/titleTemplate.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#titleTemplate') property to redesign it completely. For details on implementing templates, see the [Customize Item Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/Customize_Item_Appearance/') topic.
+The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#title') property to specify its text, or the **dropDownOptions**.[titleTemplate](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/titleTemplate.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#titleTemplate') property to redesign it completely. For details on implementing templates, see the [Customize Item Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/Customize_Item_Appearance/') topic.
 
 ---
 ##### jQuery
@@ -395,7 +395,7 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-re
 If you have not specified anything to be displayed in the title, hide it by assigning **false** to the **dropDownOptions**.[showTitle](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showTitle') property.
 
 #####See Also#####
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Custom_Templates')
+- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
 - [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Templates)
 
 

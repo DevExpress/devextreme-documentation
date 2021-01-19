@@ -17,4 +17,4 @@ Setting this property makes sense only when the [useNativeScrolling](/api-refere
 }
 
 #####See Also#####
-- [List - Scrolling - User Interaction](/concepts/05%20Widgets/List/20%20Scrolling/01%20User%20Interaction.md '/Documentation/Guide/Widgets/List/Scrolling/#User_Interaction')
+- [List - Scrolling - User Interaction](/concepts/05%20Widgets/List/20%20Scrolling/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Scrolling/#User_Interaction')

@@ -126,5 +126,5 @@ If you are going to change the event handler at runtime or if you need to attach
 
 #####See Also#####
 #include common-link-handleevents
-- [Series Hover Events](/concepts/05%20Widgets/Chart/10%20Series/10%20Hover/10%20Events.md '/Documentation/Guide/Widgets/Chart/Series/Hover/#Events')
+- [Series Hover Events](/concepts/05%20Widgets/Chart/10%20Series/10%20Hover/10%20Events.md '/Documentation/Guide/UI_Components/Chart/Series/Hover/#Events')
 - [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')

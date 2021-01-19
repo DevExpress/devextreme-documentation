@@ -39,7 +39,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/FilterBuilder/Overview/"
+    url: "/Documentation/Guide/UI_Components/FilterBuilder/Overview/"
 }
 
 #####See Also#####

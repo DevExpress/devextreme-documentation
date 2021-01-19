@@ -14,4 +14,4 @@ Configures custom filter operations.
 }
 
 #####See Also#####
-- [Implement a Custom Operation](/concepts/05%20Widgets/FilterBuilder/50%20Implement%20a%20Custom%20Operation.md '/Documentation/Guide/Widgets/FilterBuilder/Implement_a_Custom_Operation/')
+- [Implement a Custom Operation](/concepts/05%20Widgets/FilterBuilder/50%20Implement%20a%20Custom%20Operation.md '/Documentation/Guide/UI_Components/FilterBuilder/Implement_a_Custom_Operation/')

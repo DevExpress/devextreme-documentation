@@ -246,5 +246,5 @@ Below is a demo in which you can choose different predefined palettes, palette e
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/SankeyColorization/colorizeNodes.html, /Content/Applications/21_1/DataVisualization/Guides/SankeyColorization/colorizeNodes.js, /Content/Applications/21_1/DataVisualization/Guides/SankeyColorization/colorizeNodes.css"></div>
 
 #####See Also#####
-- [Colorize Node Labels](/concepts/05%20Widgets/Sankey/15%20Node%20Labels/03%20Colorize%20Labels.md '/Documentation/Guide/Widgets/Sankey/Node_Labels/Colorize_Labels/')
-- [Rearrange Nodes](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/08%20Rearrange%20Nodes.md '/Documentation/Guide/Widgets/Sankey/Nodes_and_Links/Rearrange_Nodes/')
+- [Colorize Node Labels](/concepts/05%20Widgets/Sankey/15%20Node%20Labels/03%20Colorize%20Labels.md '/Documentation/Guide/UI_Components/Sankey/Node_Labels/Colorize_Labels/')
+- [Rearrange Nodes](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/08%20Rearrange%20Nodes.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Rearrange_Nodes/')

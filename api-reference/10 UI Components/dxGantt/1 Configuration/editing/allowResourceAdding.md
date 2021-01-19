@@ -60,4 +60,4 @@ Note that you cannot open the "Resource Manager" dialog if the **allowResourceAd
 - [onResourceInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceInserting)
 - [onResourceInserted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceInserted)
 - [insertResource](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertResourcedata_taskKeys)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

@@ -70,7 +70,7 @@ To select a **List** item, an end user simply clicks or taps it. Selected items 
 
 ---
 
-When data in the **List** is [paginated](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/Widgets/List/Paging/'), you can choose whether the *"Select All"* check box will select all items on all pages or items on the currently rendered pages only. To make this choice, specify the [selectAllMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectAllMode') property.
+When data in the **List** is [paginated](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/UI_Components/List/Paging/'), you can choose whether the *"Select All"* check box will select all items on all pages or items on the currently rendered pages only. To make this choice, specify the [selectAllMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectAllMode') property.
 
 ---
 ##### jQuery
@@ -112,4 +112,4 @@ When data in the **List** is [paginated](/concepts/05%20Widgets/List/08%20Paging
 
 #####See Also#####
 #include common-link-configurewidget
-- [List - Localization](/concepts/05%20Widgets/List/50%20Localization.md '/Documentation/Guide/Widgets/List/Localization/')
+- [List - Localization](/concepts/05%20Widgets/List/50%20Localization.md '/Documentation/Guide/UI_Components/List/Localization/')

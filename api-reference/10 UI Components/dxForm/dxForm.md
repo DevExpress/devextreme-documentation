@@ -29,7 +29,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Form/Overview/"
+    url: "/Documentation/Guide/UI_Components/Form/Overview/"
 }
  
 #####See Also#####

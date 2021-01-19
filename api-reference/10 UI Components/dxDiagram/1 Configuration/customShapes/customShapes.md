@@ -279,4 +279,4 @@ Use the [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/t
 }
 
 #####See Also#####
-- [Custom Shapes](/Documentation/Guide/Widgets/Diagram/Custom_Shapes/)
+- [Custom Shapes](/Documentation/Guide/UI_Components/Diagram/Custom_Shapes/)

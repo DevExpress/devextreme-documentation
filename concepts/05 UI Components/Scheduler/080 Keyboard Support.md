@@ -16,7 +16,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Scrolls the content left/right if the horizontal scrolling is taking place.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/Guide/Widgets/Scheduler/View_Switcher/">View Switcher</a></td>
+        <td><a href="/Documentation/Guide/UI_Components/Scheduler/View_Switcher/">View Switcher</a></td>
         <td>&larr;  or &rarr; </td>        
         <td>Switches between scheduler views.</td>
     </tr>
@@ -65,7 +65,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Deletes the current appointment.</td>
     </tr>
     <tr>
-        <td rowspan="2"><a href="/Documentation/Guide/Widgets/Scheduler/Appointments/Customize_Appointment_Tooltip/">Appointment Tooltip</a></td>
+        <td rowspan="2"><a href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/">Appointment Tooltip</a></td>
         <td>Tab / Shift+Tab</td>        
         <td>Shifts focus between tooltip elements.</td>
     </tr>

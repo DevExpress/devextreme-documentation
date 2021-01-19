@@ -77,6 +77,6 @@ Properties that configure the legend's appearance, location, and content are col
 ---
 
 #####See Also#####
-- [Relocate the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/Widgets/Funnel/Legend/Relocate_the_Legend/')
-- [Rearrange Legend Items](/concepts/05%20Widgets/Funnel/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/Widgets/Funnel/Legend/Rearrange_Legend_Items/')
-- [User Interaction with the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/30%20User%20Interaction.md '/Documentation/Guide/Widgets/Funnel/Legend/User_Interaction/')
+- [Relocate the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/Funnel/Legend/Relocate_the_Legend/')
+- [Rearrange Legend Items](/concepts/05%20Widgets/Funnel/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Funnel/Legend/Rearrange_Legend_Items/')
+- [User Interaction with the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/30%20User%20Interaction.md '/Documentation/Guide/UI_Components/Funnel/Legend/User_Interaction/')

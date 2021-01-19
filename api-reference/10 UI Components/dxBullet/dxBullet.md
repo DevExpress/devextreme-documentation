@@ -20,7 +20,7 @@ dx.viz.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleBullets/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Bullet/Visual_Elements/"
+    url: "/Documentation/Guide/UI_Components/Bullet/Visual_Elements/"
 }
 
 #####See Also#####

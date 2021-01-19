@@ -80,8 +80,8 @@ The **FilterBuilder** displays the filter expression as a tree structure, where 
 
 #####See Also#####
 #include common-link-configurewidget
-- [Integrate with a UI component](/concepts/05%20Widgets/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/Widgets/FilterBuilder/Integrate_with_a_Widget/')
-- [Predefine Filter Values](/concepts/05%20Widgets/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/Widgets/FilterBuilder/Predefine_Filter_Values/')
+- [Integrate with a UI component](/concepts/05%20Widgets/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/UI_Components/FilterBuilder/Integrate_with_a_Widget/')
+- [Predefine Filter Values](/concepts/05%20Widgets/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/UI_Components/FilterBuilder/Predefine_Filter_Values/')
 - [API Reference](/api-reference/10%20UI%20Widgets/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/')
 
 [tags]dxfilterbuilder, filter builder, filterBuilder, filter expression, condition, overview

@@ -434,9 +434,9 @@ Using similar techniques, you can customize the input field of the **Lookup**. T
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Templates/"
 }
 
-In addition, you can use a 3rd-party template engine to perform the needed customizations. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/Widgets/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to perform the needed customizations. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [Lookup - Customize the Drop-Down Menu](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/08%20Customize%20the%20Drop-Down%20Menu.md '/Documentation/Guide/Widgets/Lookup/Customize_the_Appearance/Customize_the_Drop-Down_Menu/')
+- [Lookup - Customize the Drop-Down Menu](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/08%20Customize%20the%20Drop-Down%20Menu.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/Customize_the_Drop-Down_Menu/')
 
 [tags]lookup, item appearance, customize, templates, template, field template

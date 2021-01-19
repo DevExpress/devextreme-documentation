@@ -66,7 +66,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr> 
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#typeExpr">typeExpr</a></td>
-        <td>A node's shape type. Built-in shape types are shown in the <a href="/Documentation/Guide/Widgets/Diagram/Shape_Types/">Shape Types</a> section.</td>
+        <td>A node's shape type. Built-in shape types are shown in the <a href="/Documentation/Guide/UI_Components/Diagram/Shape_Types/">Shape Types</a> section.</td>
         <td>"horizontalContainer"</td>
     </tr>
     <tr>
@@ -81,7 +81,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr>
 </table>
 
-[note] If you bind a **Diagram** to a [linear](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/Widgets/Diagram/Data_Binding/#Linear_Array') or [hierarchical array](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/Widgets/Diagram/Data_Binding/#Hierarchical_Array'), edge binding properties are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
+[note] If you bind a **Diagram** to a [linear](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Linear_Array') or [hierarchical array](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Hierarchical_Array'), edge binding properties are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
 
 <table class="dx-table">
     <tr>

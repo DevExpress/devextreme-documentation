@@ -13,7 +13,7 @@ dx.web.js, dx.all.js
 
 ---
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/Widgets/Common/UI_Widgets/Data_Validation/#Validate_Several_Editor_Values/Validate_the_Group"
+    url: "/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/#Validate_Several_Editor_Values/Validate_the_Group"
 }
 
 [note]Nested validation groups are not supported.

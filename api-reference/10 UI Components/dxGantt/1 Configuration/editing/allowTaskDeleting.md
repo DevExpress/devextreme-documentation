@@ -36,5 +36,5 @@ The alert message notifies users that deleting a task creates a gap in the workf
 - [onTaskDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleting|)
 - [onTaskDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#|onTaskDeleted)
 - [deleteTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#deleteTaskkey)
-- [Gantt Elements](/Documentation/Guide/Widgets/Gantt/Gantt_Elements/)
+- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
 

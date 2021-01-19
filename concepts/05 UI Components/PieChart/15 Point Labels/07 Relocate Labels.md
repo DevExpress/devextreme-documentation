@@ -93,4 +93,4 @@ Labels are located beside their series points by default. Change the **series**.
 }
 
 #####See Also#####
-- [Resolve Label Overlapping](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/Widgets/PieChart/Point_Labels/Resolve_Overlapping/')
+- [Resolve Label Overlapping](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Resolve_Overlapping/')

@@ -5,13 +5,13 @@ The name of the UI component that should represent the toolbar item.
 ---
 [note]Import the specified UI component's module when using [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'). 
 
-Configure the specified UI component in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#options') object. You can find information on available UI component properties in the UI component's API reference.
+Configure the specified UI component in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object. You can find information on available UI component properties in the UI component's API reference.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/ToolbarCustomization/"
 }
 
-In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxCheckBox '/Documentation/ApiReference/UI_Widgets/dxCheckBox/') UI component is added as a custom toolbar item. It has a label and a custom **valueChanged** event handler. The toolbar item's [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/#locateInMenu') property is set to *"never"* to specify that the toolbar item should never be hidden in the overflow menu.
+In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxCheckBox '/Documentation/ApiReference/UI_Components/dxCheckBox/') UI component is added as a custom toolbar item. It has a label and a custom **valueChanged** event handler. The toolbar item's [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#locateInMenu') property is set to *"never"* to specify that the toolbar item should never be hidden in the overflow menu.
 
 ---
 #####jQuery
@@ -93,4 +93,4 @@ In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxChec
 ---
 
 #####See Also#####
-- [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/toolbar/items/')
+- [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/')

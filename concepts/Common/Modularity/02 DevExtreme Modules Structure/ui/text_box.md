@@ -1,8 +1,8 @@
-Exposes the **TextBox** widget.
+Exposes the **TextBox** UI component.
 
 Exports:
 
-- *default* - The [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/') widget
+- *default* - The [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') UI component
 
         require("ui/text_box");
         // ===== or =====

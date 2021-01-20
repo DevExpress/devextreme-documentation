@@ -3,14 +3,14 @@ id: DataSource.filter(filterExpr)
 ---
 ---
 ##### shortDescription
-Sets the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') option's value.
+Sets the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') property's value.
 
 ##### param(filterExpr): Object
 A filter expression.      
 Pass **null** to clear filtering settings.
 
 ---
-Call the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method to update the widget bound to the **DataSource**:
+Call the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method to update the UI component bound to the **DataSource**:
 
 ---
 ##### jQuery

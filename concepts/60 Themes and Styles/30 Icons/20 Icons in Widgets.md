@@ -1,4 +1,4 @@
-Icons can be used in those widgets that have an **icon** option. For instance, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/Widgets/Button/Overview/') widget has this option [on the first level of the configuration object](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#icon'). Icons in the following code samples are taken from the [built-in icon library](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
+Icons can be used in those UI components that have an **icon** property. For instance, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/') UI component has this property [on the first level of the configuration object](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon'). Icons in the following code samples are taken from the [built-in icon library](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
 
 ---
 ##### jQuery  
@@ -82,7 +82,7 @@ Icons can be used in those widgets that have an **icon** option. For instance, t
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/"
 }
 
-Many [default templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/05%20Default%20Templates.md '/Documentation/Guide/Widgets/Common/Templates/#Default_Templates') provide the **icon** option as well, the [ContextMenu](/concepts/05%20Widgets/ContextMenu/00%20Overview.md '/Documentation/Guide/Widgets/ContextMenu/Overview/') widget's [default item template](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Widgets/dxContextMenu/Configuration/items/') being an example:
+Many [default templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/05%20Default%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Default_Templates') provide the **icon** property as well, the [ContextMenu](/concepts/05%20Widgets/ContextMenu/00%20Overview.md '/Documentation/Guide/UI_Components/ContextMenu/Overview/') UI component's [default item template](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') being an example:
 
 ---
 ##### jQuery  
@@ -174,4 +174,4 @@ Many [default templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/05%20
 
 ---
 
-To find a list of widgets that support icons, search for "icon" in the left-hand menu.
+To find a list of UI components that support icons, search for "icon" in the left-hand menu.

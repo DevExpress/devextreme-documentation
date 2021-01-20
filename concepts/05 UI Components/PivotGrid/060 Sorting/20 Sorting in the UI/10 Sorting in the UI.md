@@ -1,0 +1,1 @@
+Topics from this section describe the properties that configure sorting for the end-user.

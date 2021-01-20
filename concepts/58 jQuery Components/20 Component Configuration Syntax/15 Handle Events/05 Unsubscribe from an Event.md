@@ -12,11 +12,11 @@ You can also use this method to detach all handlers from a particular event.
     // Detaches all handlers from the "cellClick" event
     dataGridInstance.off("cellClick")
 
-If you subscribed to an event using an **on*EventName*** option, you can unsubscribe from it by setting this option to **undefined**.
+If you subscribed to an event using an **on*EventName*** property, you can unsubscribe from it by setting this property to **undefined**.
 
     <!--JavaScript-->
     var dataGridInstance = $("#dataGridContainer").dxDataGrid("instance");
     dataGridInstance.option("onCellClick", undefined);
 
 #####See Also#####
-- **API Reference**.**WidgetName**.**Events**, for example, **API Reference**.[DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Widgets/dxDataGrid/').[Events](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/')
+- **API Reference**.**WidgetName**.**Events**, for example, **API Reference**.[DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/').[Events](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events '/Documentation/ApiReference/UI_Components/dxDataGrid/Events/')

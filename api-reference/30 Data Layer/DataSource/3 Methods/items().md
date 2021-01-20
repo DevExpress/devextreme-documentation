@@ -3,10 +3,10 @@ id: DataSource.items()
 ---
 ---
 ##### shortDescription
-Gets data items the **DataSource** performs operations on.
+Gets an array of data items on the current [page](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Paging).
 
 ##### return: Array<any>
-The data items.
+Data items.
 
 ---
 ---

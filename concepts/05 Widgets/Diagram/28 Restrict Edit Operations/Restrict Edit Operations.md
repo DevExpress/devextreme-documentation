@@ -1,1 +1,0 @@
-The **Diagram** widget allows you to restrict edit operations in the following ways.

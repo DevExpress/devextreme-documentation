@@ -30,7 +30,7 @@
         }
 
         componentWillUnmount() {
-            // A DataSource instance created outside a widget should be disposed of manually
+            // A DataSource instance created outside a UI component should be disposed of manually
             this.dataSource.dispose();
         }
     }
@@ -59,7 +59,7 @@ If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">R
             });
         }, []);
         useEffect(() => {
-            // A DataSource instance created outside a widget should be disposed of manually
+            // A DataSource instance created outside a UI component should be disposed of manually
             return () => { dataSource.dispose(); }
         }, []);
         return (

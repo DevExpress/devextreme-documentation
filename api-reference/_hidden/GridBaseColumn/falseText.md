@@ -5,7 +5,7 @@ default: 'false'
 ---
 ---
 ##### shortDescription
-In a [boolean](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType') column, replaces all **false** items with a specified text. Applies only if [showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '{basewidgetpath}/Configuration/columns/#showEditorAlways') option is **false**.
+In a [boolean](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType') column, replaces all **false** items with a specified text. Applies only if [showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '{basewidgetpath}/Configuration/columns/#showEditorAlways') property is **false**.
 
 ---
 #####See Also#####

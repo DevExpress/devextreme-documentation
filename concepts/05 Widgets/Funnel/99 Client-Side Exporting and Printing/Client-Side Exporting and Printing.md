@@ -1,1 +1,0 @@
-Although DevExtreme data visualization widgets can be displayed on any device, a user may need a widget printed or in the form of a document. For these cases, the widgets provide client-side exporting and printing. This guide shows how to configure these features for the user, and how to export and print the **Funnel** widget using the API. 

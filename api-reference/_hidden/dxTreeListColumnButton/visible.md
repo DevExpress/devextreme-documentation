@@ -14,7 +14,7 @@ Information about the row and column that contain the button.
 The column's properties.
 
 ##### field(options.component): dxTreeList
-The widget's instance.
+The UI component's instance.
 
 ##### field(options.row): dxTreeListRowObject
 The row's properties.
@@ -23,7 +23,7 @@ The row's properties.
 **true** if the button should be visible; otherwise, **false**.
 
 ---
-Use the function when you need to show or hide the button for specific rows. For example, the widget lists online orders and allows users to edit them. A **Cancel** button should allow users to cancel their orders. However, completed orders should not be canceled. The **visible** function in this case may look as follows:
+Use the function when you need to show or hide the button for specific rows. For example, the UI component lists online orders and allows users to edit them. A **Cancel** button should allow users to cancel their orders. However, completed orders should not be canceled. The **visible** function in this case may look as follows:
 
 ---
 ##### jQuery  

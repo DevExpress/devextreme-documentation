@@ -26,7 +26,7 @@ Create a simple [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Docum
 
     <!--JavaScript-->var dataSource = new DevExpress.data.DataSource(data);
 
-The sorting condition can be specified using the [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') configuration option or the [sort(sortExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/sort(sortExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#sortsortExpr') method of the DataSource. The value assigned to the option or passed to the method is a sorting expression, which can have one of the following formats.
+The sorting condition can be specified using the [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') configuration property or the [sort(sortExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/sort(sortExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#sortsortExpr') method of the DataSource. The value assigned to the property or passed to the method is a sorting expression, which can have one of the following formats.
 
 - **A single expression**
 

@@ -3,7 +3,7 @@ id: validationEngine.registerModelForValidation(model)
 ---
 ---
 ##### shortDescription
-Registers all the [Validator](/api-reference/10%20UI%20Widgets/dxValidator '/Documentation/ApiReference/UI_Widgets/dxValidator/') objects extending fields of the specified ViewModel.
+Registers all the [Validator](/api-reference/10%20UI%20Widgets/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator/') objects extending fields of the specified ViewModel.
 
 ##### param(model): Object
 The ViewModel object has fields extended by the **dxValidator** objects.

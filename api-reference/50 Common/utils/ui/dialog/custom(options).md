@@ -38,7 +38,7 @@ The dialog's title.
 ---
 The dialog's message can contain HTML markup. Make sure this markup is secure. 
 
-The **custom(options)** method only creates a dialog. To display it, call the dialog instance's **show()** method. This method returns a Promise. To identify the clicked button, implement a Promise fulfillment handler. The dialog result is passed to the handler and contains anything you return from the clicked button's [onClick](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#onClick') function. 
+The **custom(options)** method only creates a dialog. To display it, call the dialog instance's **show()** method. This method returns a Promise. To identify the clicked button, implement a Promise fulfillment handler. The dialog result is passed to the handler and contains anything you return from the clicked button's [onClick](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') function. 
 
 In the following code, the clicked button is identified by its text. The **messageHtml** field contains text with HTML tags. 
 

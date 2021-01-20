@@ -9,4 +9,4 @@ Positions the annotation's center at specified geographic coordinates: [longitud
 
 ---
 #####See Also#####
-- [x](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/x.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#x') | [y](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/y.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/annotations/#y')
+- [x](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/x.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/annotations/#x') | [y](/api-reference/_hidden/dxVectorMapCommonAnnotationConfig/y.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/annotations/#y')

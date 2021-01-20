@@ -10,11 +10,11 @@ Configures context menu item settings.
 
 ---
 
-The context menu contains a set of default commands: **'addTask'**, **'taskDetails'**, and **'deleteTask'**. Use the [contextMenu](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu) property to recreate the context menu items.
+The context menu contains a set of default commands: **'addTask'**, **'taskDetails'**, and **'deleteTask'**. Use the [contextMenu](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/contextMenu) property to recreate the context menu items.
 
 ![DevExtreme Gantt - Default Context Menu](/images/Gantt/context-menu-default-items.png)
 
-To add a predefined item to the context menu, add its [name](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/#name) and optional settings (for example, 'visible', 'text', and 'icon') to the [items](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/) collection.
+To add a predefined item to the context menu, add its [name](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/contextMenu/items/#name) and optional settings (for example, 'visible', 'text', and 'icon') to the [items](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/contextMenu/items/) collection.
 
 ---
 
@@ -45,7 +45,7 @@ To add a predefined item to the context menu, add its [name](/Documentation/ApiR
 
 **Custom Items**
 
-To add a custom context menu item, specify its [text](/Documentation/ApiReference/UI_Widgets/dxGantt/Configuration/contextMenu/items/#text) and optional settings (for example, name or category). Use the [customCommand](/Documentation/ApiReference/UI_Widgets/dxGantt/Events/#customCommand) event to handle clicks on custom context menu items.
+To add a custom context menu item, specify its [text](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/contextMenu/items/#text) and optional settings (for example, name or category). Use the [customCommand](/Documentation/ApiReference/UI_Components/dxGantt/Events/#customCommand) event to handle clicks on custom context menu items.
 
 ---
 

@@ -1,8 +1,5 @@
 We recommend that you apply the following settings to improve performance:
 
-* **Substitute checkboxes for `true` or `false` text values**          
-For this, disable the **columns[]**.[showEditorAlways](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways) property if enabled in columns of [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType) *"boolean"*.
-
 * **Make certain elements render after others**           
 To implement this, enable the [renderAsync](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#renderAsync) property. It affects filter row, command columns, and columns with [showEditorAlways](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways) set to **true**.
 
@@ -14,6 +11,9 @@ For this, disable the [columnAutoWidth](/Documentation/ApiReference/UI_Widgets/d
 
 * **Specify widths for all [command columns](/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/)**         
 If the **columns[]**.[width](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#width) property is not set, specify it because [columnWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnWidth) does not affect these columns.
+
+* **Substitute checkboxes for `true` or `false` text values**          
+For this, disable the **columns[]**.[showEditorAlways](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways) property if enabled in columns of [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType) *"boolean"*.
 
 * **Implement [onCellPrepared](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellPrepared) instead of [cellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) for conditional formatting**        
 Do this only if you use Angular, React, or Vue.

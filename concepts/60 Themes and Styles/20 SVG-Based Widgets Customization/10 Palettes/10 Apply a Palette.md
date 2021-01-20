@@ -1,4 +1,4 @@
-Every UI component that supports palettes has a [palette](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/palette.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/#palette') option. It accepts the name of a predefined or [registered custom palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/20%20Implement%20a%20Custom%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Implement_a_Custom_Palette') or an array of colors. In most UI components, this option should be set on the first level of the configuration object:
+Every UI component that supports palettes has a [palette](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/palette.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#palette') option. It accepts the name of a predefined or [registered custom palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/20%20Implement%20a%20Custom%20Palette.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes/Implement_a_Custom_Palette') or an array of colors. In most UI components, this option should be set on the first level of the configuration object:
 
 ---
 ##### jQuery  
@@ -83,7 +83,7 @@ Every UI component that supports palettes has a [palette](/api-reference/20%20Da
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
 }
 
-In the **CircularGauge** and **LinearGauge**, the palette can be specified in the [rangeContainer](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/rangeContainer '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/rangeContainer/') and [subvalueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/Data_Visualization_Widgets/dxCircularGauge/Configuration/subvalueIndicator/') objects.
+In the **CircularGauge** and **LinearGauge**, the palette can be specified in the [rangeContainer](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/rangeContainer '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/rangeContainer/') and [subvalueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/subvalueIndicator/') objects.
 
 ---
 ##### jQuery  
@@ -207,7 +207,7 @@ In the **CircularGauge** and **LinearGauge**, the palette can be specified in th
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/"
 }
 
-In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/colorizer '/Documentation/ApiReference/Data_Visualization_Widgets/dxTreeMap/Configuration/colorizer/'). In the **VectorMap**, it should be set for a specific [layer](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/layers/'). In the **RangeSelector**, the palette is specified in the [chart](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/Configuration/chart/') object.
+In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/colorizer '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/colorizer/'). In the **VectorMap**, it should be set for a specific [layer](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/'). In the **RangeSelector**, the palette is specified in the [chart](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/') object.
 
 ---
 ##### jQuery  

@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies how the field's values in the [headers](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Headers') should be sorted.
+Specifies how the field's values in the [headers](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Headers') should be sorted.
 
 ---
 Dimension attributes have a value and a display text. For example, a "Month" attribute's display text can be "January", "February", ..., "December"; its values can be 1, 2, ..., 12. "January" is first when sorting by values, and "April" is first when sorting by display text.

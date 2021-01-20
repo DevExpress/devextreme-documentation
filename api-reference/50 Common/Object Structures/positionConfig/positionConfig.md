@@ -7,7 +7,7 @@ type: Object
 Configures the position of an overlay element.
 
 ---
-Assign this object to the **position** option of an overlay UI component ([Popup](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Widgets/dxPopup/'), [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Widgets/dxPopover/'), [Tooltip](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Widgets/dxTooltip/'), etc.).
+Assign this object to the **position** option of an overlay UI component ([Popup](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/'), [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/'), [Tooltip](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/'), etc.).
 
 To position an element, specify the [my](/api-reference/50%20Common/Object%20Structures/positionConfig/my '/Documentation/ApiReference/Common/Object_Structures/positionConfig/my/'), [at](/api-reference/50%20Common/Object%20Structures/positionConfig/at '/Documentation/ApiReference/Common/Object_Structures/positionConfig/at/'), and [of](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of') options. In the following code, the **Popup** UI component's left side is aligned with the target's right side. This configuration reads as follows: "place **my** *left* side **at** the *right* side of the *#target* element."
 

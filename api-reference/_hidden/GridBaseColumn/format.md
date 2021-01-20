@@ -128,7 +128,7 @@ In the following code, the *"fixedPoint"* [format type](/api-reference/50%20Comm
 
 ---
 
-The **format** option also limits user input in cells that use the [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Widgets/dxDateBox/') UI component for editing. For cells that use the [NumberBox](/api-reference/10%20UI%20Widgets/dxNumberBox '/Documentation/ApiReference/UI_Widgets/dxNumberBox/') UI component, you can specify the [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/Configuration/columns/#editorOptions').**format** option, as shown in the following demo:
+The **format** option also limits user input in cells that use the [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component for editing. For cells that use the [NumberBox](/api-reference/10%20UI%20Widgets/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/') UI component, you can specify the [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/Configuration/columns/#editorOptions').**format** option, as shown in the following demo:
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecalculateWhileEditing/"

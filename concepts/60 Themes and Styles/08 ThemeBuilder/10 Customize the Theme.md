@@ -7,7 +7,7 @@ The main view consists of the following elements:
 - **Settings list** (left-hand menu)     
 Contains all customization settings divided into groups:
 
-    - **Basic Settings** - settings used by multiple widgets
+    - **Basic Settings** - settings used by multiple UI components
 
     - **Typography Settings** - settings that configure fonts
 

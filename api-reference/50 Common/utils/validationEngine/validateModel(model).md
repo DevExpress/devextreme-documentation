@@ -6,7 +6,7 @@ id: validationEngine.validateModel(model)
 Validates a view model.
 
 ##### return: Object
-The [validation result](/api-reference/10%20UI%20Widgets/dxValidationGroup/9%20Validation%20Result '/Documentation/ApiReference/UI_Widgets/dxValidationGroup/Validation_Result/').
+The [validation result](/api-reference/10%20UI%20Widgets/dxValidationGroup/9%20Validation%20Result '/Documentation/ApiReference/UI_Components/dxValidationGroup/Validation_Result/').
 
 ##### param(model): Object
 The ViewModel object that has fields extended by the **dxValidator** objects.

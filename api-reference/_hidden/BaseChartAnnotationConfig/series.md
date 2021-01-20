@@ -8,7 +8,7 @@ default: undefined
 Anchors the annotation to a series point. Accepts the [name](/api-reference/_hidden/PolarChartSeries/name.md '{basewidgetpath}/Configuration/series/#name') of the point's series.
 
 ---
-Use this option when the annotation is positioned relative to an [argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument').
+Use this property when the annotation is positioned relative to an [argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument').
 
 For example, the following chart displays two series and an annotation. The annotation is positioned relative to the argument `B` but not anchored to any of the two series points that correspond to this argument:
 

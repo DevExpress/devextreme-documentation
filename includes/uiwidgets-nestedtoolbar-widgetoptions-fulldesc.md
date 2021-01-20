@@ -1,4 +1,4 @@
-**options** should contain the options of the DevExtreme UI component specified in the [widget]({basewidgetpath}/Configuration/toolbar/${{nestedOption}}/#widget) option. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
+**options** should contain the properties of the DevExtreme UI component specified in the [widget]({basewidgetpath}/Configuration/toolbar/${{nestedOption}}/#widget) property. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
 
 ---
 ##### Angular
@@ -103,4 +103,4 @@
 
 ---
 
-[note]If you use the **Menu** UI component as a toolbar item, the [adaptivityEnabled](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Widgets/dxMenu/Configuration/#adaptivityEnabled') option does not apply.
+[note]If you use the **Menu** UI component as a toolbar item, the [adaptivityEnabled](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled') property does not apply.

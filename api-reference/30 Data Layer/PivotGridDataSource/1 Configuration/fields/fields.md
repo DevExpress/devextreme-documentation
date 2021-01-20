@@ -8,7 +8,7 @@ default: undefined
 Configures pivot grid fields.
 
 ---
-This option accepts an array of objects where each object configures a single field. Each pivot grid field must be associated with a data field using the [dataField](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/dataField.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#dataField') option. Fields with the specified [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') option are displayed in the pivot grid; other fields' headers are displayed in the [field chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Field_Chooser').
+This property accepts an array of objects where each object configures a single field. Each pivot grid field must be associated with a data field using the [dataField](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/dataField.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#dataField') property. Fields with the specified [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') property are displayed in the pivot grid; other fields' headers are displayed in the [field chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Chooser').
 
 ---
 ##### jQuery
@@ -155,9 +155,9 @@ This option accepts an array of objects where each object configures a single fi
 
 ---
 
-If the [retrieveFields](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/retrieveFields.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#retrieveFields') option is **true**, fields configured in the **fields** array are accompanied by auto-generated fields that do not belong to any area. However, a user can move them to any area using the field chooser.
+If the [retrieveFields](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/retrieveFields.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#retrieveFields') property is **true**, fields configured in the **fields** array are accompanied by auto-generated fields that do not belong to any area. However, a user can move them to any area using the field chooser.
 
 #####See Also#####
-- [Fields and Areas](/concepts/05%20Widgets/PivotGrid/020%20Fields%20and%20Areas '/Documentation/Guide/Widgets/PivotGrid/Fields_and_Areas/')
+- [Fields and Areas](/concepts/05%20Widgets/PivotGrid/020%20Fields%20and%20Areas '/Documentation/Guide/UI_Components/PivotGrid/Fields_and_Areas/')
 - [field(id)](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/field(id).md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#fieldid') | [field(id, options)](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/field(id_options).md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#fieldid_options')
 - [fields()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/fields().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#fields') | [fields(fields)](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/fields(fields).md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#fieldsfields')

@@ -1,4 +1,4 @@
-Angular activates change detection on each option change. This approach backfires when you try to pass functions to UI component options that do not accept them. For example:
+Angular activates change detection on each property change. This approach backfires when you try to pass functions to UI component properties that do not accept them. For example:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -24,9 +24,9 @@ Angular activates change detection on each option change. This approach backfire
 In the code above, the `getColumns()` function returns an array of objects, but this array is created from scratch each time the function is called. This is what happens when you run this code:
 
 1. The `getColumns()` function returns an array.
-1. The array gets assigned to the `columns` option. This activates change detection.
+1. The array gets assigned to the `columns` property. This activates change detection.
 1. When comparing the old and new `columns` values, the change detection mechanism calls `getColumns()` again and receives a different array.
-1. The array gets assigned to the `columns` option, and the cycle repeats infinitely.
+1. The array gets assigned to the `columns` property, and the cycle repeats infinitely.
 
 To workaround this behavior, do one of the following:
 

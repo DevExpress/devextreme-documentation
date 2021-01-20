@@ -2,4 +2,4 @@ The ThemeBuilder allows you to create custom themes based on Bootstrap or predef
 
 ![DevExtreme ThemeBuilder UI: Main View](/images/Common/ThemeBuilder/themebuilder-main.png)
 
-[important] The ThemeBuilder works only with HTML-based widgets. To create a custom theme for an SVG-based UI component, follow the instructions from [this article](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/30%20Create%20a%20Custom%20Theme.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Themes/Create_a_Custom_Theme').
+[important] The ThemeBuilder works only with HTML-based UI components. To create a custom theme for an SVG-based UI component, follow the instructions from [this article](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/30%20Create%20a%20Custom%20Theme.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Themes/Create_a_Custom_Theme').

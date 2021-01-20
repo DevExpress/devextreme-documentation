@@ -7,4 +7,4 @@ type: String
 Specifies the text of a badge displayed for the list item.
 
 ---
-If the option value is **undefined** or an empty string, the badge is not displayed.
+If the property value is **undefined** or an empty string, the badge is not displayed.

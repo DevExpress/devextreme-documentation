@@ -30,7 +30,7 @@ The application already contains the [DataGrid](https://js.devexpress.com/Demos/
         </dx-button>
         <!-- ... -->
 
-2. Declare callback functions, event handlers, and binding properties in the application class. In this example, we declare the [onClick](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#onClick') event handler in the `src\app\pages\home\home.component.ts` file:
+2. Declare callback functions, event handlers, and binding properties in the application class. In this example, we declare the [onClick](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler in the `src\app\pages\home\home.component.ts` file:
 
         <!-- tab: home.component.ts -->
         // ...
@@ -46,6 +46,6 @@ For further information about DevExtreme Angular components, refer to the follow
 
 - [Component Configuration Syntax](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/')
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light)
-- [API Reference](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Widgets/')
+- [API Reference](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Components/')
 
 For more information about the structure and contents of the DevExtreme Angular Template, refer to the [DevExtreme Application Template](/Documentation/Guide/Angular_Components/Application_Template/) article.

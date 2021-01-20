@@ -1,4 +1,4 @@
-Exposes an object that serves as a namespace for methods used for working with [UI events](/api-reference/10%20UI%20Widgets/UI%20Events '/Documentation/ApiReference/UI_Widgets/UI_Events/').
+Exposes an object that serves as a namespace for methods used for working with [UI events](/api-reference/10%20UI%20Widgets/UI%20Events '/Documentation/ApiReference/UI_Components/UI_Events/').
 
 Exports:
 

@@ -5,7 +5,7 @@ export: exportWidgets
 ---
 ---
 ##### shortDescription
-Exports one or several widgets.
+Exports one or several UI components.
 
 ##### param(widgetInstances): Array<Array<DOMComponent>>
 An array with the following format:
@@ -20,7 +20,7 @@ An array with the following format:
 Each nested array contains UI component instances that should be in the same row in the exported document.
 
 ##### param(options): Object
-Export options.
+Export properties.
 
 ##### field(options.backgroundColor): String
 The background color.
@@ -63,13 +63,13 @@ The parameter contains the following fields:
 - **cancel** - when assigned **true**, prevents the file from being saved.
 
 ##### field(options.proxyUrl).deprecated
-[important] Since v10, Safari browser supports API for saving files, and this option is no longer required.
+[important] Since v10, Safari browser supports API for saving files, and this property is no longer required.
 
 ##### field(options.proxyUrl): String
-The URL of a server-side proxy. No longer required. See [proxyUrl](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/proxyUrl.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/#proxyUrl') for more details.
+The URL of a server-side proxy. No longer required. See [proxyUrl](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/proxyUrl.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#proxyUrl') for more details.
 
 ##### field(options.svgToCanvas): function()
-A function that renders SVG markup on the HTML canvas. Refer to the [svgToCanvas](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/svgToCanvas.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/#svgToCanvas') description for details.
+A function that renders SVG markup on the HTML canvas. Refer to the [svgToCanvas](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/svgToCanvas.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#svgToCanvas') description for details.
 
 ##### field(options.verticalAlignment): 'bottom' | 'center' | 'top'
 Vertically aligns UI components in their rows.
@@ -80,4 +80,4 @@ Vertically aligns UI components in their rows.
 }
 
 #####See Also#####
-- [exportTo(fileName, format)](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/exportTo(fileName_format).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#exportTofileName_format')
+- [exportTo(fileName, format)](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/exportTo(fileName_format).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#exportTofileName_format')

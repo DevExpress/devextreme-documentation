@@ -1,7 +1,14 @@
-The UI component renders all rows and columns once the data is loaded. To improve performance, set the [rowRenderingMode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/scrolling/rowRenderingMode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/scrolling/#rowRenderingMode') and [columnRenderingMode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/scrolling/#columnRenderingMode') options in the **scrolling** object to *"virtual"*. These options specify that UI elements are only rendered when they come into the viewport.
+If your DataGrid performance is low, we recommend that you apply the following settings to improve it:
 
-Use virtual row rendering when [paging is disabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#enabled') or the [pageSize](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/paging/#pageSize') is more than the default value.
+* Disable [showEditorAlways](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways) for columns of [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType) *"boolean"*         
+This will substitute checkboxes for `true` or `false` text values.
 
-Virtual column rendering can be used when there are more than 20 columns outside the viewport.
+* Enable [renderAsync](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#renderAsync)         
+As a result, filter row, command columns, and columns with showEditorAlways set to **true** will render after other elements. Additionally, enable the **columns[]**.[renderAsync](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#renderAsync) property for columns with a complex [template](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate).
 
-Cells with complex content (predefined templates, command columns, editors) can be rendered after cells with simple content. To do that, enable the [renderAsync](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/renderAsync.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#renderAsync') option. In addition, you can enable [the same option](/api-reference/_hidden/GridBaseColumn/renderAsync.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#renderAsync') for individual columns if they use a content-heavy [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate').
+* Disable [columnAutoWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnAutoWidth)         
+Thus, columns will not adjust to the content and will be of the same width. Still, you can can set a custom width for all or individual columns in the [columnWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnWidth) and **columns[]**.[width](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#width) properties.
+
+* Specify width for all [command columns](/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/)         
+
+* If you use conditional formatting in an Angular, React, or Vue application, implement [onCellPrepared](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellPrepared) instead of [cellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate)

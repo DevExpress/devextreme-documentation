@@ -1,15 +1,15 @@
 #form {
-    height: 35em;
-    margin: 20px 0 0 20px;
+    height: 480px;
     padding: 10px;
     border: 1px solid;
 }
 
 #check-box {
-    margin: 20px;
+    margin-top: 10px;
 }
 
 #app-container {
     width: 900px;
+    height: 500px;
     position: relative;
 }

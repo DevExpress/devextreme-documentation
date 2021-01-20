@@ -7,7 +7,7 @@ type: Object
 Configures the UI component used to edit the field value.
 
 ---
-Depending on the [dataType](/api-reference/_hidden/dxFilterBuilderField/editorOptions.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#editorOptions'), the **FilterBuilder** offers a user different UI components for editing: [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Widgets/dxTextBox/'), [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Widgets/dxDateBox/'), [Lookup](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Widgets/dxLookup/'), etc. In the **editorOptions** object, you can specify options for the UI component.
+Depending on the [dataType](/api-reference/_hidden/dxFilterBuilderField/editorOptions.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#editorOptions'), the **FilterBuilder** offers a user different UI components for editing: [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/'), [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/'), [Lookup](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/'), etc. In the **editorOptions** object, you can specify options for the UI component.
 
 Because **editorOptions** depend on the **dataType**, they cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
 
@@ -104,7 +104,7 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
 
 [note]
 
-Do not specify the **onValueChanged** option in this object. If you need to add custom logic to the default value change handler, override the handler in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/#onEditorPreparing') function as follows:
+Do not specify the **onValueChanged** option in this object. If you need to add custom logic to the default value change handler, override the handler in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#onEditorPreparing') function as follows:
 
 ---
 ##### jQuery

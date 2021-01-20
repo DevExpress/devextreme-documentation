@@ -51,9 +51,9 @@ Unlike normal columns, band columns do not hold data. Instead, they collect two 
     
 ---
 
-A nested column has almost every option a regular column has. These options are described in the [columns](/api-reference/_hidden/GridBaseColumn '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/') section of the Reference.
+A nested column has almost every option a regular column has. These options are described in the [columns](/api-reference/_hidden/GridBaseColumn '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/') section of the Reference.
 
-[note]There is an exception though: nested columns cannot be [fixed](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columnFixing/') alone, therefore specifying the [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/#fixed') and [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/#fixedPosition') options for them is useless. However, the whole band column can be fixed as usual.
+[note]There is an exception though: nested columns cannot be [fixed](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columnFixing/') alone, therefore specifying the [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#fixed') and [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#fixedPosition') options for them is useless. However, the whole band column can be fixed as usual.
 
 For example, the following code specifies the **width** and **sortOrder** options of the *"Street"* column nested within the fixed *"Address"* band column.
 
@@ -173,8 +173,8 @@ Band columns support hierarchies of any nesting level. It means that the followi
     
 ---
 
-Band columns have the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/#isBand') flag. Banded columns have the [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Configuration/columns/#ownerBand') option set. Use these options to distinguish band and banded columns from regular ones in code.
+Band columns have the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#isBand') flag. Banded columns have the [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#ownerBand') option set. Use these options to distinguish band and banded columns from regular ones in code.
 
 #####See Also#####
-- [Band Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Band_Columns/')
-- [Column Fixing](/concepts/05%20Widgets/DataGrid/15%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Fixing/')
+- [Band Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Band_Columns/')
+- [Column Fixing](/concepts/05%20Widgets/DataGrid/15%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Fixing/')

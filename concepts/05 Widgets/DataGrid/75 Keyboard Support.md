@@ -47,7 +47,7 @@ A user can interact with the UI component using the following keys:
     </tr>
     <tr>
         <td>Ctrl + &uarr; &darr;</td>
-        <td>Navigates between column header and header filter, filter row, data area, filter panel, and pager.</td>
+        <td>Navigates between column header, filter row, data area, filter panel, and pager.</td>
     </tr>
     <tr>
         <td>Ctrl + Space or Ctrl + Click</td>

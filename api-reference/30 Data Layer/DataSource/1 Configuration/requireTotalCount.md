@@ -21,4 +21,4 @@ If this property is set to **true**, the Promise that the [load()](/api-referenc
             // "extra" contains the "totalCount" field
         });
 
-[note] When [scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/Widgets/DataGrid/Scrolling/') is infinite in the **DataGrid**, this property's value is always **false**.
+[note] When [scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/UI_Components/DataGrid/Scrolling/') is infinite in the **DataGrid**, this property's value is always **false**.

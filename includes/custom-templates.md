@@ -11,7 +11,7 @@ A zero-based index of the item in the collection. Available only in collection U
 - `element`     
 A jQuery element that represents the UI component element being customized. Available only if you use jQuery.
 
-The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Widgets/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Widgets/dxList/) UI component:
+The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
 
 ---
 ##### jQuery

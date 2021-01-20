@@ -149,4 +149,4 @@ Specifies the field's order among the other fields in the same area. Corresponds
 
 ---
 
-[note] The field's order affects the [headers](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/Widgets/PivotGrid/Visual_Elements/#Headers')'s hierarchy structure and is not related to the sorting concept.
+[note] The field's order affects the [headers](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Headers')'s hierarchy structure and is not related to the sorting concept.

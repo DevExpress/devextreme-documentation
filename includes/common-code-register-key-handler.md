@@ -1,4 +1,4 @@
-You can implement a custom handler for a key using the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Widgets/dx{WidgetName}/Methods/#registerKeyHandlerkey_handler') method.
+You can implement a custom handler for a key using the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Methods/#registerKeyHandlerkey_handler') method.
 
 ---
 

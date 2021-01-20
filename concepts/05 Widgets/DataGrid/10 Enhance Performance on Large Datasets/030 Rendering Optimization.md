@@ -1,14 +1,19 @@
-If your DataGrid performance is low, we recommend that you apply the following settings to improve it:
+We recommend that you apply the following settings to improve performance:
 
-* Disable [showEditorAlways](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways) for columns of [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType) *"boolean"*         
-This will substitute checkboxes for `true` or `false` text values.
+* **Substitute checkboxes for `true` or `false` text values**          
+For this, disable the **columns[]**.[showEditorAlways](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways) property in columns of [dataType](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType) *"boolean"*.
 
-* Enable [renderAsync](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#renderAsync)         
-As a result, filter row, command columns, and columns with showEditorAlways set to **true** will render after other elements. Additionally, enable the **columns[]**.[renderAsync](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#renderAsync) property for columns with a complex [template](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate).
+* **Make certain elements render after others**           
+To implement this, enable the [renderAsync](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#renderAsync) property. It affects filter row, command columns, and columns with [showEditorAlways](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#showEditorAlways) set to **true**.
 
-* Disable [columnAutoWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnAutoWidth)         
-Thus, columns will not adjust to the content and will be of the same width. Still, you can can set a custom width for all or individual columns in the [columnWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnWidth) and **columns[]**.[width](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#width) properties.
+* **Make columns with a complex [template](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) render after others**               
+For this, enable the **columns[]**.[renderAsync](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#renderAsync) property.
 
-* Specify width for all [command columns](/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/)         
+* **Prevent columns from adjusting their widths to the content**                    
+For this, disable the [columnAutoWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnAutoWidth) property. Additionally, you can set a custom width for all or individual columns in the [columnWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnWidth) and **columns[]**.[width](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#width) properties respectively.
 
-* If you use conditional formatting in an Angular, React, or Vue application, implement [onCellPrepared](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellPrepared) instead of [cellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate)
+* **Specify widths for all [command columns](/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Command_Columns/)**         
+If the **columns[]**.[width](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#width) property is not set, specify it because [columnWidth](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#columnWidth) does not affect these columns.
+
+* **Implement [onCellPrepared](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onCellPrepared) instead of [cellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) for conditional formatting**        
+Do this only if you use Angular, React, or Vue.

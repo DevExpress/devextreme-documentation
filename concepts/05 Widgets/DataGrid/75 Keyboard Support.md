@@ -46,8 +46,8 @@ A user can interact with the UI component using the following keys:
         <td>Selects the focused row and clears the selection of previously selected rows.<sup>3</sup></td>        
     </tr>
     <tr>
-        <td>Ctrl + &larr; &rarr; &uarr; &darr;</td>
-        <td>Navigates between column header, column filter, data area, filter builder, and pager.</td>
+        <td>Ctrl + &uarr; &darr;</td>
+        <td>Navigates between column header and header filter, filter row, data area, filter panel, and pager.</td>
     </tr>
     <tr>
         <td>Ctrl + Space or Ctrl + Click</td>
@@ -73,7 +73,7 @@ A user can interact with the UI component using the following keys:
     </tr>
     <tr>
         <td>Tab / Shift + Tab</td>
-        <td>Moves the focus one cell forward/back.<br /> Focuses the first/last cell in the next/previous row if cells in the current row run out.</td>
+        <td>Moves the focus one element forward/back.<br /> Focuses the first/last element in the next/previous row if elements in the current row run out.</td>
     </tr>
     <tr>
         <td>

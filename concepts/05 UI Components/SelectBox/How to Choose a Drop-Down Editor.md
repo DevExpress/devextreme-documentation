@@ -1,4 +1,4 @@
-DevExtreme has five drop-down editors:
+DevExtreme has five drop-down text editors:
 
 - [SelectBox](/Documentation/ApiReference/UI_Components/dxSelectBox/)
 - [TagBox](/Documentation/ApiReference/UI_Components/dxTagBox/)
@@ -83,9 +83,9 @@ The following table lists available drop-down editor features:
     </tr>
 </table>
 
-Drop-Down Box has a flexible API that allows you to implement multiple features, including the following (see [dropDownOptions](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dropDownOptions)):
+Among other drop-down editor, the Drop-Down Box UI component has the most flexible API. This API requires that you implement features manually (see [dropDownOptions](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dropDownOptions). The list of the features that are unique to Drop-Down Box includes the following:
 
-- Custom drop-down field
+- Custom drop-down
 - Multiple columns in the drop-down field
 - Group paging
 

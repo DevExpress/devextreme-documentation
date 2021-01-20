@@ -19,4 +19,4 @@ If you subscribed to an event using an **on*EventName*** option, you can unsubsc
     dataGridInstance.option("onCellClick", undefined);
 
 #####See Also#####
-- **API Reference**.**WidgetName**.**Events**, for example, **API Reference**.[DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Widgets/dxDataGrid/').[Events](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Events/')
+- **API Reference**.**WidgetName**.**Events**, for example, **API Reference**.[DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/').[Events](/api-reference/10%20UI%20Widgets/dxDataGrid/4%20Events '/Documentation/ApiReference/UI_Components/dxDataGrid/Events/')

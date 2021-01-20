@@ -10,7 +10,7 @@ Specifies whether to display the Clear button in lookup column cells while they 
 ---
 Set this option to **true** only if your data source accepts null values.
 
-To specify this option based on a condition, set the [showClearButton](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/showClearButton.md '/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/#showClearButton') option instead. This is an option of the [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview) UI component which is used as an editor for lookup column cells. **allowClearing** is an alias for this option in the **{WidgetName}**. The following code shows how to set **showClearButton** in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing') event handler:
+To specify this option based on a condition, set the [showClearButton](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/showClearButton.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#showClearButton') option instead. This is an option of the [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview) UI component which is used as an editor for lookup column cells. **allowClearing** is an alias for this option in the **{WidgetName}**. The following code shows how to set **showClearButton** in the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing') event handler:
 
 ---
 ##### jQuery

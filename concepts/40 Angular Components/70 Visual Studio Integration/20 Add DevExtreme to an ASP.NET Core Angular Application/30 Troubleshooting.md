@@ -1,6 +1,6 @@
 ### Error E1046: The [FieldName] key field is not found in data objects
 
-In ASP.NET Core, property names are converted to lowerCamelCase during serialization to JSON. If [column data fields](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataField') use the UpperCamelCase, then error E1046 occurs.
+In ASP.NET Core, property names are converted to lowerCamelCase during serialization to JSON. If [column data fields](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') use the UpperCamelCase, then error E1046 occurs.
 
 Apply one of the following solutions to troubleshoot this issue:
 

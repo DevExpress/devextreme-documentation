@@ -16,6 +16,6 @@ As an alternative, you can [obtain the UI component instance](/concepts/58%20jQu
     var fruitsSeries = chartInstance.getSeriesByName("fruits");
 
 #####See Also#####
-- **API Reference**.**WidgetName**.**Methods**, for example, **API Reference**.[Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/').[Methods](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/3%20Methods '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/')
+- **API Reference**.**WidgetName**.**Methods**, for example, **API Reference**.[Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/').[Methods](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/3%20Methods '/Documentation/ApiReference/UI_Components/dxChart/Methods/')
 
 [tags]basics, jquery, call methods, UI component instance, method arguments

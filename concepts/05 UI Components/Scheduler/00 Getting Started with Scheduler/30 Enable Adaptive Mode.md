@@ -1,4 +1,4 @@
-The **Scheduler** can adapt its interface to small screens. To enable this behavior, set the [adaptivityEnabled](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#adaptivityEnabled) property to **true**. A full list of adaptations is given in the [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/) demo description.
+The **Scheduler** can adapt its interface to small screens. To enable this behavior, set the [adaptivityEnabled](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#adaptivityEnabled) property to **true**. A full list of adaptations is given in the [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/) demo description.
 
 ---
 ##### jQuery
@@ -51,4 +51,4 @@ For further information on the **Scheduler** component, refer to the following r
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 
-* [API Reference](/Documentation/ApiReference/UI_Widgets/dxScheduler/)
+* [API Reference](/Documentation/ApiReference/UI_Components/dxScheduler/)

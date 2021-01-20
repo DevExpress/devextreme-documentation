@@ -19,7 +19,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/Widgets/Scheduler/Getting_Started_with_Scheduler/"
+    url: "/Documentation/Guide/UI_Components/Scheduler/Getting_Started_with_Scheduler/"
 } 
 
 #####See Also#####

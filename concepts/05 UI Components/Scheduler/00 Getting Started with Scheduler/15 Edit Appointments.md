@@ -10,7 +10,7 @@ Users can do the following actions on appointments:
 
 * Remove appointments
 
-Edit operations are enabled by default. To disable an individual operation, assign **false** to its property in the [editing](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/) object. In this tutorial, we use the [allowDragging](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/editing/#allowDragging) property to disable appointment drag-and-drop.
+Edit operations are enabled by default. To disable an individual operation, assign **false** to its property in the [editing](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/) object. In this tutorial, we use the [allowDragging](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowDragging) property to disable appointment drag-and-drop.
 
 ---
 ##### jQuery

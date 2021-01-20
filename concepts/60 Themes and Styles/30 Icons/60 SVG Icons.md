@@ -1,22 +1,22 @@
-You can use SVG icons instead of font icons. The following code demonstrates how to use them in the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons) widget. The same technique can be used for widgets with the [icon](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#icon') option. 
+In addition to font icons, DevExtreme supplies the same icons in the SVG format. You can find SVG icons in the <a href="https://github.com/DevExpress/DevExtreme/tree/20_2/images/icons" target="_blank">DevExtreme repository</a> on GitHub.
 
-An SVG icon can be specified as follows:
+The following code uses SVG icons in the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons) UI component. The same technique can be used with any other UI component that has the [icon](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon') property. 
 
-1. **By the URL**:
+1. **Use the icon's URL**:
 
         <!-- tab: JavaScript -->
         new DevExpress.ui.dxButton(targetElement, {
-            icon: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+            icon: "https://path/to/the/icon.svg"
         });
 
-1. **Inserted inline**:
+1. **Insert SVG content inline**:
 
         <!-- tab: JavaScript -->
         new DevExpress.ui.dxButton(targetElement, {
             icon: "<svg>SVG_CONTENT</svg>"
         });
 
-1. **Imported**:
+1. **Import the icon**:
 
         <!-- tab: JavaScript -->
         import * as myIcon from "./assets/icon.svg";
@@ -24,4 +24,4 @@ An SVG icon can be specified as follows:
             icon: myIcon
         });
 
-[important]The SVG format allows you to run executable code that might be malicious. It is strongly recommended that you use SVG icons only from trusted sources.
+[important]The SVG format allows running executable code that might be malicious. We strongly recommend that you use SVG icons only from trusted sources.

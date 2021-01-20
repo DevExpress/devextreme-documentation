@@ -3,7 +3,7 @@ id: PivotGridDataSource.filter(filterExpr)
 ---
 ---
 ##### shortDescription
-Sets the [filter](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#filter') option's value. Does not affect an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/').
+Sets the [filter](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#filter') property's value. Does not affect an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/').
 
 ##### param(filterExpr): Object
 A filter expression.

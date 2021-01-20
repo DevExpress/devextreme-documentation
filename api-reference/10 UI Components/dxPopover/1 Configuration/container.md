@@ -1,0 +1,1 @@
+The container is defined during the UI component's initialization. The container by default is the viewport. If the viewport is not found, it is the body element. If the viewport and the body element are absent, the **container** is the parent element.

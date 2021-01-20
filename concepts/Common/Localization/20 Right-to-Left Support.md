@@ -1,6 +1,6 @@
-Right-to-left (RTL) support allows the widget to adapt its content to right-to-left locales.
+Right-to-left (RTL) support allows the UI component to adapt its content to right-to-left locales.
 
-RTL layout can be specified for an individual widget using its **rtlEnabled** option:
+RTL layout can be specified for an individual UI component using its **rtlEnabled** property:
 
 ---
 ##### jQuery
@@ -97,7 +97,7 @@ RTL layout can be specified for an individual widget using its **rtlEnabled** op
 
 ---
 
-To apply RTL to your entire application, set the same option globally using the [config()](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig') function:
+To apply RTL to your entire application, set the same property globally using the [config()](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig') function:
 
 ---
 #####jQuery

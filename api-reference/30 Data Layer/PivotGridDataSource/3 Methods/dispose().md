@@ -73,4 +73,4 @@ Disposes of all the resources allocated to the **PivotGridDataSource** instance.
 
 ---
 
-[note] Do not call this method if the widget created the **PivotGridDataSource** instance.
+[note] Do not call this method if the UI component created the **PivotGridDataSource** instance.

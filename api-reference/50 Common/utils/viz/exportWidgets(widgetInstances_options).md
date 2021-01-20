@@ -5,7 +5,7 @@ export: exportWidgets
 ---
 ---
 ##### shortDescription
-Exports one or several widgets.
+Exports one or several UI components.
 
 ##### param(widgetInstances): Array<Array<DOMComponent>>
 An array with the following format:
@@ -17,10 +17,10 @@ An array with the following format:
         [ widgetInstanceP_1, widgetInstanceP_2, ..., widgetInstanceP_R ]
     ]
 
-Each nested array contains widget instances that should be in the same row in the exported document.
+Each nested array contains UI component instances that should be in the same row in the exported document.
 
 ##### param(options): Object
-Export options.
+Export properties.
 
 ##### field(options.backgroundColor): String
 The background color.
@@ -32,12 +32,12 @@ The name of the file to be saved.
 The file's format. PNG is used if the browser cannot export the file in the specified format.
 
 ##### field(options.gridLayout): Boolean
-If **true**, widgets are arranged in columns with equal widths (the width of the widest widget).     
-If **false**, widgets are placed next to each other in rows (default).      
-In any case, each row has the height of the highest widget in it.
+If **true**, UI components are arranged in columns with equal widths (the width of the widest UI component).     
+If **false**, UI components are placed next to each other in rows (default).      
+In any case, each row has the height of the highest UI component in it.
 
 ##### field(options.horizontalAlignment): 'center' | 'left' | 'right'
-Horizontally aligns widgets in their columns. Applies only when **gridLayout** is **true**.
+Horizontally aligns UI components in their columns. Applies only when **gridLayout** is **true**.
 
 ##### field(options.margin): Number
 Margins to be added to each side of the document; measured in pixels.
@@ -63,16 +63,16 @@ The parameter contains the following fields:
 - **cancel** - when assigned **true**, prevents the file from being saved.
 
 ##### field(options.proxyUrl).deprecated
-[important] Since v10, Safari browser supports API for saving files, and this option is no longer required.
+[important] Since v10, Safari browser supports API for saving files, and this property is no longer required.
 
 ##### field(options.proxyUrl): String
-The URL of a server-side proxy. No longer required. See [proxyUrl](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/proxyUrl.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/#proxyUrl') for more details.
+The URL of a server-side proxy. No longer required. See [proxyUrl](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/proxyUrl.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#proxyUrl') for more details.
 
 ##### field(options.svgToCanvas): function()
-A function that renders SVG markup on the HTML canvas. Refer to the [svgToCanvas](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/svgToCanvas.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/export/#svgToCanvas') description for details.
+A function that renders SVG markup on the HTML canvas. Refer to the [svgToCanvas](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/svgToCanvas.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#svgToCanvas') description for details.
 
 ##### field(options.verticalAlignment): 'bottom' | 'center' | 'top'
-Vertically aligns widgets in their rows.
+Vertically aligns UI components in their rows.
 
 ---
 #include common-demobutton with {
@@ -80,4 +80,4 @@ Vertically aligns widgets in their rows.
 }
 
 #####See Also#####
-- [exportTo(fileName, format)](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/exportTo(fileName_format).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#exportTofileName_format')
+- [exportTo(fileName, format)](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/exportTo(fileName_format).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#exportTofileName_format')

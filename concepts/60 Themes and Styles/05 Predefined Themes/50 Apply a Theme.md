@@ -17,7 +17,7 @@ Configure the module bundler you use and import `dx.common.css` and a theme styl
                 .Include("~/Content/dx.common.css")
                 .Include("~/Content/dx.light.css");
 
-4. Open the Views/Shared/_Layout.cshtml file and add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all page elements (and not only to DevExtreme widgets).
+4. Open the Views/Shared/_Layout.cshtml file and add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all page elements (and not only to DevExtreme UI components).
 
             <!-- tab: _Layout.cshtml -->
             <body style="padding-top: 5rem;" class="dx-viewport">
@@ -33,7 +33,7 @@ Configure the module bundler you use and import `dx.common.css` and a theme styl
             <!-- tab: _Layout.cshtml -->
             <link href="~/lib/devextreme/css/dx.light.css" rel="stylesheet">
 
-4. Add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all page elements (and not only to DevExtreme widgets).
+4. Add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all page elements (and not only to DevExtreme UI components).
 
             <!-- tab: _Layout.cshtml -->
             <body class="dx-viewport">

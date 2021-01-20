@@ -19,7 +19,7 @@ Export settings.
 
 This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
-You can call this method at any point in your application. In this example, we call this method in a standalone button's [onClick](/Documentation/ApiReference/UI_Widgets/dxButton/Configuration/#onClick) handler:
+You can call this method at any point in your application. In this example, we call this method in a standalone button's [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler:
 
 ---
 ##### jQuery
@@ -190,8 +190,6 @@ You can call this method at any point in your application. In this example, we c
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
-
-    const dataGridRef = useRef(null);
 
     export default function App() {
         const dataGridRef = useRef(null);

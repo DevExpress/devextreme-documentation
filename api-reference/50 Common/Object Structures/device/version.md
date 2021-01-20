@@ -7,7 +7,7 @@ type: Array<Number>
 Specifies an array with the major and minor versions of the device platform.
 
 ---
-This option accepts an array of numbers, e.g. [8,1], which means that the platform version is "8.1".
+This property accepts an array of numbers, e.g. [8,1], which means that the platform version is "8.1".
 
 The version of the device platform is important for native styling of the application according to the guidelines provided for each platform version.
 

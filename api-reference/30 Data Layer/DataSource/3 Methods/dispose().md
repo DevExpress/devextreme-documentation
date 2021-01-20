@@ -78,4 +78,4 @@ Disposes of all the resources allocated to the **DataSource** instance.
 
 ---
 
-[note] Do not call this method if the **DataSource** instance was created by a widget.
+[note] Do not call this method if the **DataSource** instance was created by a UI component.

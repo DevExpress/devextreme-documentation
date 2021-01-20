@@ -27,7 +27,7 @@ dx.web.js, dx.viz.js, dx.all.js
     var store = new DevExpress.data.ArrayStore({
         key: "id",
         data: states,
-        // Other ArrayStore options go here
+        // Other ArrayStore properties go here
     });
 
     // ===== or inside the DataSource =====
@@ -36,9 +36,9 @@ dx.web.js, dx.viz.js, dx.all.js
             type: "array",
             key: "id",
             data: states,
-            // Other ArrayStore options go here
+            // Other ArrayStore properties go here
         },
-        // Other DataSource options go here
+        // Other DataSource properties go here
     });
 
 ##### Angular  
@@ -60,7 +60,7 @@ dx.web.js, dx.viz.js, dx.all.js
             this.store = new ArrayStore({
                 key: "id",
                 data: this.states,
-                // Other ArrayStore options go here
+                // Other ArrayStore properties go here
             });
 
             // ===== or inside the DataSource =====
@@ -68,9 +68,9 @@ dx.web.js, dx.viz.js, dx.all.js
                 store: new ArrayStore({
                     key: "id",
                     data: this.states,
-                    // Other ArrayStore options go here
+                    // Other ArrayStore properties go here
                 }),
-                // Other DataSource options go here
+                // Other DataSource properties go here
             });
         }
     }
@@ -89,7 +89,7 @@ dx.web.js, dx.viz.js, dx.all.js
             $scope.store = new DevExpress.data.ArrayStore({
                 key: "id",
                 data: states,
-                // Other ArrayStore options go here
+                // Other ArrayStore properties go here
             });
 
             // ===== or inside the DataSource =====
@@ -98,9 +98,9 @@ dx.web.js, dx.viz.js, dx.all.js
                     type: "array",
                     key: "id",
                     data: states,
-                    // Other ArrayStore options go here
+                    // Other ArrayStore properties go here
                 },
-                // Other DataSource options go here
+                // Other DataSource properties go here
             });
         });
 
@@ -118,7 +118,7 @@ dx.web.js, dx.viz.js, dx.all.js
         store: new DevExpress.data.ArrayStore({
             key: "id",
             data: states,
-            // Other ArrayStore options go here
+            // Other ArrayStore properties go here
         })
 
         // ===== or inside the DataSource =====
@@ -127,9 +127,9 @@ dx.web.js, dx.viz.js, dx.all.js
                 type: "array",
                 key: "id",
                 data: states,
-                // Other ArrayStore options go here
+                // Other ArrayStore properties go here
             },
-            // Other DataSource options go here
+            // Other DataSource properties go here
         })
     };
 
@@ -152,7 +152,7 @@ dx.web.js, dx.viz.js, dx.all.js
     const store = new ArrayStore({
         key: 'id',
         data: states,
-        // Other ArrayStore options go here
+        // Other ArrayStore properties go here
     });
 
     // ===== or inside the DataSource =====
@@ -160,9 +160,9 @@ dx.web.js, dx.viz.js, dx.all.js
         store: new ArrayStore({
             key: 'id',
             data: states,
-            // Other ArrayStore options go here
+            // Other ArrayStore properties go here
         }),
-        // Other DataSource options go here
+        // Other DataSource properties go here
     });
 
     export default {
@@ -194,7 +194,7 @@ dx.web.js, dx.viz.js, dx.all.js
     const store = new ArrayStore({
         key: 'id',
         data: states,
-        // Other ArrayStore options go here
+        // Other ArrayStore properties go here
     });
 
     // ===== or inside the DataSource =====
@@ -202,9 +202,9 @@ dx.web.js, dx.viz.js, dx.all.js
         store: new ArrayStore({
             key: 'id',
             data: states,
-            // Other ArrayStore options go here
+            // Other ArrayStore properties go here
         }),
-        // Other DataSource options go here
+        // Other DataSource properties go here
     });
 
     class App extends React.Component {

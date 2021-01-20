@@ -5,8 +5,8 @@ inherits: BaseLegendItem
 ---
 ---
 ##### shortDescription
-An object that provides information about a legend item in the [VectorMap](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap '/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/') widget.
+An object that provides information about a legend item in the [VectorMap](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap '/Documentation/ApiReference/UI_Components/dxVectorMap/') UI component.
 
 ---
 #####See Also#####
-- [legends[]](/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/Configuration/legends/)
+- [legends[]](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/legends/)

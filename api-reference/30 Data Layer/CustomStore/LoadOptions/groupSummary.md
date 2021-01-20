@@ -11,4 +11,4 @@ Contains group summary definitions with the following structure, where **summary
 
     { selector: "field", summaryType: "sum" }
 
-When this option is specified, each data object should have a **summary** array that contains the resulting values in the same order as the summary definitions.
+When this property is specified, each data object should have a **summary** array that contains the resulting values in the same order as the summary definitions.

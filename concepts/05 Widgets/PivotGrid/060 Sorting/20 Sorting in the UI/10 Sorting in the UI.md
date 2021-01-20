@@ -1,1 +1,0 @@
-Topics from this section describe the options that configure sorting for the end-user.

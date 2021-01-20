@@ -1,4 +1,4 @@
-Loading data in raw mode allows you to configure the CustomStore more easily. You can use it only if all data shaping operations are supposed to be performed on the client. In raw mode, the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function should get raw, unprocessed data from the server, and the CustomStore will perform data shaping automatically, without any input from you. To switch to the raw mode, assign *"raw"* to the [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') option.
+Loading data in raw mode allows you to configure the CustomStore more easily. You can use it only if all data shaping operations are supposed to be performed on the client. In raw mode, the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function should get raw, unprocessed data from the server, and the CustomStore will perform data shaping automatically, without any input from you. To switch to the raw mode, assign *"raw"* to the [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') property.
 
     <!--JavaScript-->
     var store = new DevExpress.data.CustomStore({
@@ -15,7 +15,7 @@ Once loaded, data is stored in the cache. If you need to clear the cache at some
     <!--JavaScript-->
     store.clearRawDataCache();
 
-To switch data caching off, assign **false** to the [cacheRawData](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/cacheRawData.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#cacheRawData') option. Note that in this case, the CustomStore will reload all data on every call of the **load**, **byKey** and **totalCount** functions.
+To switch data caching off, assign **false** to the [cacheRawData](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/cacheRawData.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#cacheRawData') property. Note that in this case, the CustomStore will reload all data on every call of the **load**, **byKey** and **totalCount** functions.
 
     <!--JavaScript-->
     var store = new DevExpress.data.CustomStore({

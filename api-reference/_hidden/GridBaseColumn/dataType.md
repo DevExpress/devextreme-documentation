@@ -9,7 +9,7 @@ default: undefined
 Casts column values to a specific data type.
 
 ---
-If a data field provides values of one data type, but the widget should cast them to another, specify the proper type in this option. In the following code, values of the `ID` and `hireDate` fields are cast to numeric and date data types, respectively.
+If a data field provides values of one data type, but the UI component should cast them to another, specify the proper type in this property. In the following code, values of the `ID` and `hireDate` fields are cast to numeric and date data types, respectively.
 
 ---
 #####jQuery
@@ -157,4 +157,4 @@ If a data field provides values of one data type, but the widget should cast the
 }
 
 #####See Also#####
-- [Data Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Column_Types/Data_Columns/')
+- [Data Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Data_Columns/')

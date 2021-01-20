@@ -1,4 +1,4 @@
-This option should be assigned a function that returns an object with the following fields:
+This property should be assigned a function that returns an object with the following fields:
 
 <table class="dx-table full-width">
     <tr>

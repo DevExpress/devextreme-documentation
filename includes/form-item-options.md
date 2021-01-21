@@ -1,0 +1,1 @@
+When you update an item, the Form also refreshes all other items in its group. If an item is not in a group, the whole Form is refreshed. To update only the items of your choice, wrap them into a separate group.

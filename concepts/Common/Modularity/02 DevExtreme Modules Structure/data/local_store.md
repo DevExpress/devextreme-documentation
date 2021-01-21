@@ -1,8 +1,8 @@
-Exposes the LocalStore data access interface.
+Exposes the LocalStore dataaccess component.
 
 Exports:
 
-- *default* - The [LocalStore](/api-reference/30%20Data%20Layer/LocalStore '/Documentation/ApiReference/Data_Layer/LocalStore/') data access interface
+- *default* - The [LocalStore](/api-reference/30%20Data%20Layer/LocalStore '/Documentation/ApiReference/Data_Layer/LocalStore/') dataaccess component
 
         require("data/local_store");
         // ===== or =====

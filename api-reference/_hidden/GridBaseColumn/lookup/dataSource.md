@@ -25,7 +25,7 @@ This option accepts one of the following:
 - **Array of objects or primitives**       
 A JavaScript array that contains plain objects or primitives.
 
-- [**DataSource configuration object**](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/')       
+- [**DataSource configuration object**](/Documentation/Guide/Widgets/DataGrid/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/)       
 A **DataSource** configuration object. For more information about the **DataSource** and DevExtreme Data Layer, refer to the [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') article.
 
     [important] **DataSource** instances are not supported.

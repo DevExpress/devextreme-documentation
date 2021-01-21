@@ -1,9 +1,7 @@
-You can change any form, editor, or item properties at runtime. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
-
 ---
 ##### jQuery
 
-Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property.
+You can change any form, editor, or item properties at runtime. For this, use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: index.js -->
     $(function() {
@@ -11,8 +9,9 @@ Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Compone
             formData: {
                 // ...
             },
-            colCount: 2,
-            items: ["name", "position", "hireDate", "officeNumber"]
+            items: [
+                // ...
+            ]
         }).dxForm("instance");
 
         $("#checkBox").dxCheckBox({
@@ -26,17 +25,13 @@ Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Compone
 
 ##### Angular
 
-To update a property value, bind it to a component property as follows:
+You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: app.component.html -->
     <dx-form
         [formData]="employee"
-        [colCount]="2"
         [readOnly]="isFormReadOnly">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item dataField="position"></dxi-item>
-        <dxi-item dataField="hireDate"></dxi-item>
-        <dxi-item dataField="officeNumber"></dxi-item>
+        <!-- ... -->
     </dx-form>
 
     <dx-check-box
@@ -83,19 +78,15 @@ To update a property value, bind it to a component property as follows:
 
 ##### Vue
 
-To update a property value, bind it to a component property as follows:
+You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: App.vue -->
     <template>
         <div>
             <DxForm 
                 :form-data="employee"
-                :col-count="2"
                 :read-only="isFormReadOnly">
-                <DxSimpleItem data-field="name"/>
-                <DxSimpleItem data-field="position"/>
-                <DxSimpleItem data-field="hireDate"/>
-                <DxSimpleItem data-field="officeNumber"/>
+                <!-- ... -->
             </DxForm>
             <DxCheckBox
                 text="Enable read-only mode"
@@ -108,7 +99,9 @@ To update a property value, bind it to a component property as follows:
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
+    import { DxForm, 
+        // ... 
+    } from 'devextreme-vue/form';
     import { DxCheckBox } from 'devextreme-vue/check-box';
     
     const employee = {
@@ -120,7 +113,7 @@ To update a property value, bind it to a component property as follows:
     export default {
         components: {
             DxForm,
-            DxSimpleItem,
+            // ...
             DxCheckBox
         },
         data: {
@@ -134,7 +127,7 @@ To update a property value, bind it to a component property as follows:
 
 ##### React
 
-To update a property value, bind it to a component property as follows:
+You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: App.js -->
     import React, {useState, useCallback } from 'react';
@@ -143,7 +136,7 @@ To update a property value, bind it to a component property as follows:
 
     import {
         Form,
-        SimpleItem,
+        // ...
     } from 'devextreme-react/form';
 
     import { CheckBox } from 'devextreme-react/check-box';
@@ -163,12 +156,8 @@ To update a property value, bind it to a component property as follows:
             <div>
                 <Form
                     formData={employee}
-                    colCount={2}
                     readOnly={isFormDisabled}>
-                    <SimpleItem dataField="name" />
-                    <SimpleItem dataField="position" />
-                    <SimpleItem dataField="hireDate" />
-                    <SimpleItem dataField="officeNumber" />
+                    {/* ... */}
                 </Form>
 
                 <CheckBox

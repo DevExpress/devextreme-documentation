@@ -1,8 +1,8 @@
-Exposes the ODataStore data access interface.
+Exposes the ODataStore data access component.
 
 Exports:
 
-- *default* - The [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') data access interface
+- *default* - The [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') data access component
 
         require("data/odata/store");
         // ===== or =====

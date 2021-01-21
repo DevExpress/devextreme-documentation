@@ -1,4 +1,4 @@
-A store is a universal data access interface within the DevExtreme data layer. It includes the following methods that are required for reading and editing data:
+A store is a universal data access component within the DevExtreme data layer. It includes the following methods that are required for reading and editing data:
 
 - **load(options)** - Loads data. This function accepts an object specifying [sorting](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/1%20Sorting.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Sorting'), [grouping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Grouping'), [filtering](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'), and [data transformation](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation') options.
 - **insert(values)** - Adds a new item with the passed values.

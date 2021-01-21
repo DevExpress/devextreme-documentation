@@ -1,6 +1,6 @@
-To divide items into groups, declare items with the "group" [itemType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array. Items of this type can contain [simple items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/). To put an item into a group, declare this item inside the group as shown in the example below. You can configure each group's layout separately. 
+Form items can be grouped and displayed under a single caption. To implement this layout, create a [group item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/) and nest other items within it, as shown in the code below. Group items can nest items of any type, including other group items. You can configure each group's layout separately. 
 
-The following code creates two groups, each one occupies a separate column. The resulting layout looks as follows:
+The following code creates two groups, each occupies a separate column. The resulting layout looks as follows:
 
 ![DevExtreme Form: Grouped Items](/images/UiWidgets/form-getting-started-groups.png)
 

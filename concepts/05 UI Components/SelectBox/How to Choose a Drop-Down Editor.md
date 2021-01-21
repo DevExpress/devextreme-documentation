@@ -83,22 +83,9 @@ The following table compares the drop-down editors by a number of features:
     </tr>
 </table>
 
-Among other drop-down editors, the DropDownBox UI component has the most flexible API. This API requires that you implement features manually (see [dropDownOptions](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dropDownOptions). The list of the features that are unique to DropDownBox includes the following:
+The DropDownBox UI component's API allows you to display custom content in its drop-down field. This API requires that you manually implement other components within DropDownBox and their features (see [dropDownOptions](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dropDownOptions). 
 
-- Custom drop-down
-- Multiple columns in the drop-down field
-- Group paging
-
-Refer to the [guides](/Documentation/Guide/UI_Components/DropDownBox/Overview/) section for the DropDownBox to see more available customizations. 
-
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/",
-    name: "Drop-Down Box - Single Selection"
-} 
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/MultipleSelection/",
-    name: "Drop-Down Box - Multiple Selection"
-}
+Refer to the [guides](/Documentation/Guide/UI_Components/DropDownBox/Overview/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/) sections for the DropDownBox to see more available customizations. 
 
 #####See Also#####
 - [Lookup vs SelectBox](/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/)

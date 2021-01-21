@@ -1,9 +1,9 @@
-You can change any form, editor, or item properties at runtime. In **jQuery**, use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property. In **Angular**, **Vue** or **React**, bind the property's value to a component property.
-
-In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any form, editor, or item properties at runtime. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
 ---
 ##### jQuery
+
+Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property.
 
     <!-- tab: index.js -->
     $(function() {
@@ -25,6 +25,8 @@ In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Compo
     });
 
 ##### Angular
+
+To update a property value, bind it to a component property as follows:
 
     <!-- tab: app.component.html -->
     <dx-form
@@ -81,6 +83,8 @@ In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Compo
 
 ##### Vue
 
+To update a property value, bind it to a component property as follows:
+
     <!-- tab: App.vue -->
     <template>
         <div>
@@ -129,6 +133,8 @@ In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Compo
     </script>
 
 ##### React
+
+To update a property value, bind it to a component property as follows:
 
     <!-- tab: App.js -->
     import React, {useState, useCallback } from 'react';

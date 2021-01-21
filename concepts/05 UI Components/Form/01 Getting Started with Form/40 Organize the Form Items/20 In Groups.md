@@ -1,6 +1,6 @@
-To divide items into groups, declare items with the "group" [itemType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array. A group can contain [simple items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/). To put an item into a group, declare this item inside the group as shown in the example below. You can configure each group's layout separately. 
+To divide items into groups, declare items with the "group" [itemType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#itemType) in the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array. Items of this type can contain [simple items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/), other groups, [tabs](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/) or [empty items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/). To put an item into a group, declare this item inside the group as shown in the example below. You can configure each group's layout separately. 
 
-The following code creates two groups, each group occupies a separate column. The resulting layout looks as follows:
+The following code creates two groups, each one occupies a separate column. The resulting layout looks as follows:
 
 ![DevExtreme Form: Grouped Items](/images/UiWidgets/form-getting-started-groups.png)
 

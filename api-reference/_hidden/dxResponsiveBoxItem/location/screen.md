@@ -8,7 +8,7 @@ default: undefined
 Decides on which screens the current **location** settings should be applied to the element.
 
 ---
-Before applying the current **location** settings, the widget considers the screen's width and applies the **location** settings only if the width matches the specified size qualifier. There are four size qualifiers in all.
+Before applying the current **location** settings, the UI component considers the screen's width and applies the **location** settings only if the width matches the specified size qualifier. There are four size qualifiers in all.
 
 <table class="dx-table">
     <tr>
@@ -33,7 +33,7 @@ Before applying the current **location** settings, the widget considers the scre
     </tr>
 </table>
 
-The **screen** option accepts one or several size qualifiers separated by a space. For example, the following settings apply to an element on medium and large screens only.
+The **screen** property accepts one or several size qualifiers separated by a space. For example, the following settings apply to an element on medium and large screens only.
 
     <!--HTML--><div id="responsiveBoxContainer">
         <div data-options="dxItem: {
@@ -49,5 +49,5 @@ The **screen** option accepts one or several size qualifiers separated by a spac
 }
 
 #####See Also#####
-- [Arrange Layout Elements](/concepts/05%20Widgets/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/Widgets/ResponsiveBox/Arrange_Layout_Elements/')
-- [screenByWidth](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Widgets/dxResponsiveBox/Configuration/#screenByWidth')
+- [Arrange Layout Elements](/concepts/05%20Widgets/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')
+- [screenByWidth](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/#screenByWidth')

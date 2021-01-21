@@ -1,4 +1,4 @@
-Change the array using <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a> and reassign it to the **dataSource** option using the [option(optionName, optionValue)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Methods/#optionoptionName_optionValue') method.
+Change the array using <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a> and reassign it to the **dataSource** property using the [option(optionName, optionValue)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#optionoptionName_optionValue') method.
 
     <!--JavaScript-->
     var fruits = [

@@ -1,11 +1,11 @@
 ---
 ##### shortDescription
-This section describes options that configure the **PivotGridDataSource**.
+This section describes properties that configure the **PivotGridDataSource**.
 
 ---
 [note]
 
-The **PivotGridDataSource** allows specifying [**CustomStore** options](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/') in its configuration object, as shown in the following code:
+The **PivotGridDataSource** allows specifying [**CustomStore** properties](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/') in its configuration object, as shown in the following code:
 
 ---
 ##### jQuery

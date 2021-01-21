@@ -1,4 +1,4 @@
-Store the array in the state and pass it to the **dataSource** option. When you need to modify the array, create a new array and use `this.setState` to save it in the state. Do not use standard array modification methods, such as `push()` or `pop()`. They modify the original array, and thus violate the <a href="https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly" target="_blank">rules of React state updates</a>.
+Store the array in the state and pass it to the **dataSource** property. When you need to modify the array, create a new array and use `this.setState` to save it in the state. Do not use standard array modification methods, such as `push()` or `pop()`. They modify the original array, and thus violate the <a href="https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly" target="_blank">rules of React state updates</a>.
 
     <!-- tab: App.js -->
     import React from 'react';

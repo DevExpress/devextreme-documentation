@@ -16,7 +16,7 @@ type: function(options)
 A **PivotGrid** cell.
 
 ---
-In the following code, the **customizeCell** function customizes <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells that display regular summaries (whose [rowType](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20Grid%20Cell/rowType.md '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/Pivot_Grid_Cell/#rowType') is *"D"*):
+In the following code, the **customizeCell** function customizes <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells that display regular summaries (whose [rowType](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20Grid%20Cell/rowType.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/#rowType') is *"D"*):
 
 ---
 ##### jQuery
@@ -231,6 +231,8 @@ In the following code, the **customizeCell** function customizes <a href="https:
     }
 
 --- 
-
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSCellCustomization/"
+}
 
 <!-- import * from 'api-reference\50 Common\Object Structures\ExcelExportDataGridProps\customizeCell.md' -->

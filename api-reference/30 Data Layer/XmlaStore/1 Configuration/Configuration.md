@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes options that configure the **XmlaStore**.
+This section describes properties that configure the **XmlaStore**.
 
 ---

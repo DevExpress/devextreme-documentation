@@ -1,6 +1,6 @@
 Data modification is implemented by the store and its methods. To call them, you need a store instance that you can get using the **DataSource**'s [store()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/store().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#store') method.
 
-Stores provide three data modification methods: [insert(values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#insertvalues'), [update(key, values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/update(key_values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#updatekey_values'), and [remove(key)](/api-reference/30%20Data%20Layer/Store/3%20Methods/remove(key).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#removekey'). Use them to edit local and remote data. Call the **DataSource**'s [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method afterwards to update the **DataSource**.
+Stores provide three data modification methods: [insert(values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#insertvalues'), [update(key, values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/update(key_values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#updatekey_values'), and [remove(key)](/api-reference/30%20Data%20Layer/Store/3%20Methods/remove(key).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#removekey'). Use them to edit local and remote data. Call the **DataSource**'s [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') method afterwards to update data in the **DataSource**.
 
 ---
 ##### jQuery
@@ -15,19 +15,19 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
 
         store.insert({ id: 1, name: "John Doe" })
             .done(function (dataObj, key) {
-                dataSource.load();
+                dataSource.reload();
             })
             .fail(function (error) { /* ... */ });
 
         store.update(1, { name: "John Smith" })
             .done(function (dataObj, key) {
-                dataSource.load();
+                dataSource.reload();
             })
             .fail(function (error) { /* ... */ });
 
         store.remove(1)
             .done(function (key) {
-                dataSource.load();
+                dataSource.reload();
             })
             .fail(function (error) { /* ... */ });
     });
@@ -54,7 +54,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.insert({ id: 1, name: "John Doe" })
                 .then(
                     (dataObj) => {
-                        this.dataSource.load();
+                        this.dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -62,7 +62,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.update(1, { name: "John Smith" })
                 .then(
                     (dataObj) => {
-                        this.dataSource.load();
+                        this.dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -70,7 +70,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.remove(1)
                 .then(
                     (key) => {
-                        this.dataSource.load();
+                        this.dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -96,7 +96,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.insert({ id: 1, name: "John Doe" })
                 .then(
                     (dataObj) => {
-                        dataSource.load();
+                        dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -104,7 +104,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.update(1, { name: "John Smith" })
                 .then(
                     (dataObj) => {
-                        dataSource.load();
+                        dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -112,7 +112,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.remove(1)
                 .then(
                     (key) => {
-                        dataSource.load();
+                        dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -138,7 +138,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.insert({ id: 1, name: "John Doe" })
                 .then(
                     (dataObj) => {
-                        dataSource.load();
+                        dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -146,7 +146,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.update(1, { name: "John Smith" })
                 .then(
                     (dataObj) => {
-                        dataSource.load();
+                        dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );
@@ -154,7 +154,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
             store.remove(1)
                 .then(
                     (key) => {
-                        dataSource.load();
+                        dataSource.reload();
                     },
                     (error) => { /* ... */ }
                 );

@@ -1,0 +1,25 @@
+#app-container {
+  height: 550px;
+  position: relative;
+}
+
+#dataGrid {
+  height: 500px;
+}
+
+.employee-photo {
+  height: 140px;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+.employee-notes {
+  text-align: justify;
+  white-space: normal;
+}
+
+#selected-employee {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

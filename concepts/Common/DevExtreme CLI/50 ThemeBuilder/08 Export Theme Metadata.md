@@ -3,19 +3,19 @@ Theme metadata is a JSON object that describes the theme. It is used to export o
     {
         "items": [
             {
-                "key": "@base-text-color",
+                "key": "$base-text-color",
                 "value": "rgba(94, 33, 33, 0.87)"
             },
             {
-                "key": "@base-accent",
+                "key": "$base-accent",
                 "value": "rgba(64, 156, 199, 1)"
             }
         ],
         "baseTheme": "material.blue.light.compact",
         "outputColorScheme": "custom-scheme",
         "makeSwatch": true,
-        "version": "19.1.4",
-        "widgets": "datagrid,treelist,selectbox",
+        "version": "minor_20_2",
+        "widgets": ["datagrid","treelist","selectbox"],
         "assetsBasePath": "../../../node_modules/devextreme/dist/css/"
     }
 
@@ -41,7 +41,7 @@ A flag that indicates whether the theme is a [color swatch](/concepts/60%20Theme
 The target DevExtreme version.
 
 * `widgets`       
-A list of widgets whose styles are included in the resulting CSS file.
+A list of UI components whose styles are included in the resulting CSS file.
 
 - `assetsBasePath`            
 A path to the folder that contains the DevExtreme `icons` and `fonts` folders. This property is used only if the icons and fonts are not in the same folder as your custom theme.

@@ -3,7 +3,7 @@ id: DataSource.key()
 ---
 ---
 ##### shortDescription
-Gets the value of the underlying store's **key** option.
+Gets the value of the underlying store's **key** property.
 
 ##### return: Object | String | Number
 A key expression.

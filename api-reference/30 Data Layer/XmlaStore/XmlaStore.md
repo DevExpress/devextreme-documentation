@@ -12,7 +12,7 @@ The **XmlaStore** is a store that provides an interface for accessing an OLAP cu
 dx.web.js, dx.all.js
 
 ---
-The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') which, in turn, is used in the [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Widgets/dxPivotGrid/') widget.
+The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') which, in turn, is used in the [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/') UI component.
 
 ---
 ##### jQuery  
@@ -32,7 +32,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
             catalog: "AdventureWorksDW2012",
             cube: "Adventure Works"
         },
-        // Other PivotGridDataSource options go here
+        // Other PivotGridDataSource properties go here
     });
 
 ##### Angular  
@@ -59,7 +59,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
                     catalog: "AdventureWorksDW2012",
                     cube: "Adventure Works"
                 },
-                // Other PivotGridDataSource options go here
+                // Other PivotGridDataSource properties go here
             });
         }
     }
@@ -83,7 +83,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
                     catalog: "AdventureWorksDW2012",
                     cube: "Adventure Works"
                 },
-                // Other PivotGridDataSource options go here
+                // Other PivotGridDataSource properties go here
             });
         });
 
@@ -105,7 +105,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
                 catalog: "AdventureWorksDW2012",
                 cube: "Adventure Works"
             },
-            // Other PivotGridDataSource options go here
+            // Other PivotGridDataSource properties go here
         })
     };
 
@@ -132,7 +132,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
             catalog: 'AdventureWorksDW2012',
             cube: 'Adventure Works'
         },
-        // Other PivotGridDataSource options go here
+        // Other PivotGridDataSource properties go here
     });
 
     export default {
@@ -166,7 +166,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
             catalog: 'AdventureWorksDW2012',
             cube: 'Adventure Works'
         },
-        // Other PivotGridDataSource options go here
+        // Other PivotGridDataSource properties go here
     });
 
     class App extends React.Component {

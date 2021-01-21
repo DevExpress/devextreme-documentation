@@ -7,7 +7,7 @@ type: Object
 A sort expression.
 
 ---
-Defines sorting options. This object can have the following fields:
+Defines sorting properties. This object can have the following fields:
 
 * **selector**: <span style="font-size:smaller">String</span>     
 The field name to sort by.

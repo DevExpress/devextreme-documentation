@@ -1,8 +1,8 @@
-Exposes the **LoadPanel** widget.
+Exposes the **LoadPanel** UI component.
 
 Exports:
 
-- *default* - The [LoadPanel](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Widgets/dxLoadPanel/') widget
+- *default* - The [LoadPanel](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/') UI component
 
         require("ui/load_panel");
         // ===== or =====

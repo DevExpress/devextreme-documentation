@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Places an annotation at the specified distance from the center of the widget.
+Places an annotation at the specified distance from the center of the UI component.
 
 ---
      

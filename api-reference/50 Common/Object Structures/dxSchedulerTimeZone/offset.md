@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A GMT offset.
 
 ---
 <!-- Description goes here -->

@@ -5,25 +5,29 @@ export: default
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Applies an array of changes to a source data array.
 
 ##### return: Array<any>
-<!-- Description goes here -->
+An array with applied changes.
 
 ##### param(data): Array<any>
-<!-- Description goes here -->
+A source data array to be updated.
 
 ##### param(changes): Array<any>
-<!-- Description goes here -->
+An array of changes to be applied.
 
 ##### param(options?): Object
-<!-- Description goes here -->
+Configures how to apply changes.
 
 ##### field(options?.immutable): Boolean
-<!-- Description goes here -->
+If `true` (default), the source array remains unchanged; a new array with applied changes is returned.                            
+If `false`, changes are applied directly to the source array which is then returned.
 
 ##### field(options?.keyExpr): String | Array<String>
-<!-- Description goes here -->
+Specifies the key property (or properties) that provide(s) keys to locate data items. Default value: *"id"*
 
 ---
-<!-- Description goes here -->
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"
+}

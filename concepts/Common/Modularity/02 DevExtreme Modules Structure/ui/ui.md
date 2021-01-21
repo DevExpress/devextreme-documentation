@@ -1,1 +1,1 @@
-A folder that contains modules exposing UI widgets.
+A folder that contains modules exposing UI components.

@@ -6,7 +6,7 @@ DevExtreme has five drop-down text editors:
 - [Autocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/)
 - [DropDownBox](/Documentation/ApiReference/UI_Components/dxDropDownBox/)
 
-The following table lists available drop-down editor features:
+The following table compares the drop-down editors by a number of features:
 
 <table class="dx-table full-width">
     <tr>
@@ -42,7 +42,7 @@ The following table lists available drop-down editor features:
         <td>Requires custom configuration</td>
     </tr>
     <tr>
-        <td>Search box in drop down</td>
+        <td>Search box in a drop-down field</td>
         <td>-</td>
         <td>-</td>
         <td><a href="/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled">Yes</a></td>

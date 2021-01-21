@@ -12,9 +12,9 @@ Create a new <a href="https://devexpress.github.io/devextreme-angular-template" 
 
 Create a new <a href="https://devexpress.github.io/devextreme-vue-template" target="_blank">DevExtreme Vue application</a> that uses the [DevExtreme layout template](/Documentation/Guide/Vue_Components/Application_Template/):
 
-    devextreme new vue-app app-name [--layout][--empty]
+    devextreme new vue-app app-name [--layout][--empty][--version]
     // ===== or without installing the DevExtreme CLI =====
-    npx -p devextreme-cli devextreme new vue-app app-name [--layout][--empty]
+    npx -p devextreme-cli devextreme new vue-app app-name [--layout][--empty][--version]
 
 
 ##### React
@@ -38,3 +38,6 @@ Specifies the DevExtreme layout to add. Available values:
 
 * `--empty`     
 Specifies whether to skip sample views generation (default: `false`).
+
+* `--version`, `-v` (Vue only)        
+Specifies whether to generate a Vue 2 or Vue 3 application. Available values: 2 (default) and 3. 

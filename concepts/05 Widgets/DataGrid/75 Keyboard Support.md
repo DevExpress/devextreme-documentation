@@ -73,7 +73,7 @@ A user can interact with the UI component using the following keys:
     </tr>
     <tr>
         <td>Tab / Shift + Tab</td>
-        <td>Moves the focus one element forward/back.<br /> Focuses the first/last element in the next/previous row if elements in the current row run out.</td>
+        <td>Moves the focus one element forward/back.<br /> Focuses the first/last element in the next/previous row if there are no more elements in the current row.</td>
     </tr>
     <tr>
         <td>

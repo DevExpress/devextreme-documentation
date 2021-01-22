@@ -25,6 +25,7 @@ A user can interact with the UI component using the following keys:
             <li>Switches a cell to the editing state.<sup>1</sup></li>
             <li>Moves focus to the next cell.<sup>2</sup></li>
             <li>Saves changes made in a cell or row and switches it back to its normal state.</li>
+            <li>Executes an action on a focused element.</li>
         </ul>
         </td>        
     </tr>
@@ -66,7 +67,7 @@ A user can interact with the UI component using the following keys:
     </tr>
     <tr>
         <td>Tab / Shift + Tab</td>
-        <td>Moves the focus one cell forward/back.<br /> Focuses the first/last cell in the next/previous row if cells in the current row run out.</td>
+        <td>Moves the focus one element forward/back.<br /> Focuses the first/last element in the next/previous row if there are no more elements in the current row.</td>
     </tr>
     <tr>
         <td>
@@ -78,6 +79,10 @@ A user can interact with the UI component using the following keys:
     <tr>
         <td>Ctrl + &rarr; / Ctrl + &larr;</td>
         <td>Expands/collapses the focused row.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &uarr; / Ctrl + &darr;</td>
+        <td>Navigates between a column header, filter row, data area, filter panel, and pager.</td>
     </tr>
 </table>
 

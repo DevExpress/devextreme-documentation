@@ -1,6 +1,6 @@
 ---
-id: dxDropDownBox.Options.items
-type: Array<any>
+id: dxVectorMap.Options.layers.paletteIndex
+type: Number
 ---
 ---
 ##### shortDescription

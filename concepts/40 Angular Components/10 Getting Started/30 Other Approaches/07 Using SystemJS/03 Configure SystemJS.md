@@ -11,6 +11,9 @@ Open the `config.js` file and configure DevExtreme and its dependencies as follo
             'devextreme': 'npm:devextreme',
             'devextreme-angular': 'npm:devextreme-angular',
 
+            // for client-side Excel export in the PivotGrid UI component
+            'jszip': 'npm:jszip/dist/jszip.min.js',
+
             // for the HtmlEditor UI component
             'quill': 'npm:quill/dist/quill.min.js',
             'quill-delta-to-html': 'npm:quill-delta-to-html/dist/browser/QuillDeltaToHtmlConverter.bundle.js'

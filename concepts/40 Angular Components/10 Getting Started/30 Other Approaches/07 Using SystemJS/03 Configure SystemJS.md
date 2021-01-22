@@ -11,7 +11,7 @@ Open the `config.js` file and configure DevExtreme and its dependencies as follo
             'devextreme': 'npm:devextreme',
             'devextreme-angular': 'npm:devextreme-angular',
 
-            // for client-side Excel export in the DataGrid UI component
+            // for client-side Excel export in the PivotGrid UI component
             'jszip': 'npm:jszip/dist/jszip.min.js',
 
             // for the HtmlEditor UI component

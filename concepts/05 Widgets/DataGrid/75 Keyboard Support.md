@@ -86,18 +86,18 @@ A user can interact with the UI component using the following keys:
 
 <div class="footnotes">
     <ol>
-        <li>If the <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"startEdit"</i>.</li>
-        <li>If the <b>edititng</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode">mode</a> is <i>"cell"</i> or <i>"batch"</i> and the <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"moveFocus"</i>.</li>
-        <li>The <b>editing</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/editing/#mode">mode</a> should be <i>"cell"</i> or <i>"batch"</i>.</li>
-        <li>A select box appears in a cell of a <a href="/Documentation/Guide/Widgets/DataGrid/Columns/Column_Types/Lookup_Columns/">lookup column</a>.</li>
-        <li>A calendar appears in a data cell when a column contains <i>"date"</i> <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#dataType">type</a> data.</li>
-        <li>The <b>selection</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#mode">mode</a> should be different from <i>"none"</i>.</li>
-        <li>The <b>selection</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#mode">mode</a> should be <i>"multiple"</i>.</li>
-        <li>If the <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, the rows should be visible simultaneously. If the mode is <i>"standard"</i>, the rows should be on one page.</li>
-        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#allowSelectAll">allowSelectAll</a> should be <i>true</i>.</li>
-        <li>The <a href="/Documentation/Guide/Widgets/DataGrid/Filtering_and_Searching/#Search_Panel">search panel</a> should be visible.</li>
-        <li>The <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/sorting/#mode">mode</a> should be <i>"multiple"</i>.</li>
+        <li>If the <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"startEdit"</i>.</li>
+        <li>If the <b>edititng</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is <i>"cell"</i> or <i>"batch"</i> and the <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"moveFocus"</i>.</li>
+        <li>The <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> should be <i>"cell"</i> or <i>"batch"</i>.</li>
+        <li>A select box appears in a cell of a <a href="/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Lookup_Columns/">lookup column</a>.</li>
+        <li>A calendar appears in a data cell when a column contains <i>"date"</i> <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType">type</a> data.</li>
+        <li>The <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode">mode</a> should be different from <i>"none"</i>.</li>
+        <li>The <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode">mode</a> should be <i>"multiple"</i>.</li>
+        <li>If the <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, the rows should be visible simultaneously. If the mode is <i>"standard"</i>, the rows should be on one page.</li>
+        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll">allowSelectAll</a> should be <i>true</i>.</li>
+        <li>The <a href="/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Search_Panel">search panel</a> should be visible.</li>
+        <li>The <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode">mode</a> should be <i>"multiple"</i>.</li>
     </ol>
 </div>
 
-You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/#onKeyDown') event handler.
+You can override these shortcuts or create your own shortcuts using the [onKeyDown](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onKeyDown) event handler.

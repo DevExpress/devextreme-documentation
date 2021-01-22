@@ -1,6 +1,7 @@
 ---
-id: dxDropDownBox.Options.items
-type: Array<Object>
+id: dxTreeMap.Options.group.padding
+type: Number
+default: 4
 ---
 ---
 ##### shortDescription

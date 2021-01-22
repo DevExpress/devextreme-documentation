@@ -1,6 +1,6 @@
 ---
 id: dxSchedulerAppointment.startDate
-type: Date
+type: Date | String
 ---
 ---
 ##### shortDescription

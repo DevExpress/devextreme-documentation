@@ -1,3 +1,8 @@
+---
+id: dxDropDownBox.Options.dataSource
+type: String | Array<CollectionWidgetItem, Object> | DataSource | DataSource_Options
+default: null
+---
 #include common-dataSource-description with {
     widget_works_with: "The **DropDownBox** works with collections of objects or `string`, `number`, or `boolean` values. ",
 

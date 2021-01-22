@@ -1,6 +1,6 @@
 ---
 id: dxDropDownBox.Options.dataSource
-type: String | Array<CollectionWidgetItem, Object> | DataSource | DataSource_Options
+type: String | Array<Object> | DataSource | DataSource_Options
 default: null
 ---
 #include common-dataSource-description with {

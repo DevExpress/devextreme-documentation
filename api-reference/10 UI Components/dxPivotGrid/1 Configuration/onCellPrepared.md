@@ -14,7 +14,7 @@ Information about the event.
 The [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') to which the prepared cell belongs.
 
 ##### field(e.cell): dxPivotGridPivotGridCell
-The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/').
+The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/'). This field is read-only. 
 
 ##### field(e.cellElement): dxElement
 #include common-ref-elementparam with { element: "prepared cell" }
@@ -37,6 +37,8 @@ The position of a cell's row.
 ---
 
 In the following code the **onCellPrepared** event handler is used to customize cells' apperance depending on the area and field types:
+
+The following code how to locate and customize cells under different conditions:
 
 ---
 ##### jQuery

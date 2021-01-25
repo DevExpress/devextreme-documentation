@@ -378,7 +378,7 @@ Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"min
 - **Function**  
 Cannot be converted automatically. Assign this function to the [customizeText](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/customizeText.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText') property instead of the **format** property.  
 
-- [Custom format string](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String')   
+- [Custom format string](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String')   
 Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/customizeText.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText') callback as follows:    
 
     ---

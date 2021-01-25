@@ -4,7 +4,7 @@ type: String | function(rowData)
 ---
 ---
 ##### shortDescription
-Specifies a field name by which to group column cells or a function that returns a field name or a calculated value for this operation. This value is also used to sort **DataGrid**'s groups.
+Sets custom values for the column by which to group grid's records.
 
 ##### param(rowData): Object
 The current row's data.
@@ -13,22 +13,40 @@ The current row's data.
 The calculated value used to create and sort groups.
 
 ---
+This property accepts the name of the data source field that provides these values...
 
-The following example shows how to group data by date relative to the current date:
+    {
+        dataField: "Country",
+        groupIndex: 0,
+        calculateGroupValue: "groupDataField"
+    }
 
+... or a function that calculates them:
+
+    // groups records by date
     calculateGroupValue: function(rowData){
-        let date = new Date(rowData.DateColumn);
-        if(date = isTodayDate()){
+        const convertDateToString = date => {
+            return date.toISOString().split('T')[0].replaceAll('-', '/');
+        };
+
+        const date = rowData.HireDate;
+        const yesterdayDate = new Date();
+        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+
+        const today = convertDateToString(new Date());
+        const yesterday = convertDateToString(yesterdayDate);
+
+        if(date === today) {
             return "Today";
         }
-        if(date = isYesterdayDate()){
+        if(date === yesterday) {
             return "Yesterday";
         }
         //...
         return "Older";
     }
 
-The **DataGrid** groups its rows by the grouping column. If you want to use custom grouping, change values of this column in the **calculateGroupValue** function. As a result, group cells' headers will display the changed values that may include extra information. To remove it, specify a custom template in the [groupCellTemplate](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellTemplate) property ([groupCellRender](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#groupCellRender) in React). Refer to this <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">Github repository</a> for implementation.
+Group headers display the values of **calculateGroupValue**. The DataGrid also uses them to sort groups. To preserve a custom sorting and apply a custom template for the group headers, define the [groupCellTemplate] ([groupCellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellRender) in React). Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>.
 
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"

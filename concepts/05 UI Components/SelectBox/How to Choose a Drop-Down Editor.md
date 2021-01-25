@@ -83,9 +83,7 @@ The following table compares the drop-down editors by a number of features:
     </tr>
 </table>
 
-The DropDownBox UI component's API allows you to display custom content in its drop-down field. This API requires that you manually implement other components within DropDownBox and their features (see [dropDownOptions](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dropDownOptions). 
-
-Refer to the [guides](/Documentation/Guide/UI_Components/DropDownBox/Overview/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/) sections for the DropDownBox to see more available customizations. 
+Unlike the rest of the editors, DropDownBox allows you to put any content in its drop-down field. This feature makes it more versatile but at the same time requires more effort from the developer. We recommend using DropDownBox in those advanced use cases that cannot be satisfied by other editors. Refer to the DropDownBox [help topics](/Documentation/Guide/UI_Components/DropDownBox/Overview/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/) for further information.
 
 #####See Also#####
 - [Lookup vs SelectBox](/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/)

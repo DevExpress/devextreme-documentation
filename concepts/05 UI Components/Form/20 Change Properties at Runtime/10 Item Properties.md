@@ -190,7 +190,7 @@ In Angular, Vue, or React, bind the property that should be changed to a compone
 
 #####See Also#####
 #include common-link-callmethods
-- [Form - Change Editor Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Options_at_Runtime/Editor_Options/')
+- [Form - Change Editor Properties at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/Editor_Properties/')
 - [Form - Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')

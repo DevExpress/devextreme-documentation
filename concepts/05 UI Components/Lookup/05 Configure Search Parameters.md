@@ -1,6 +1,6 @@
 [note] Searching works when inputting a plain data structure only. However, if you need the searching capability and hierarchical data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') option.
 
-The **Lookup** UI component allows a user to search through its items. Moreover, the UI component offers suggestions while the user types a value into the search box. Usually, the data field that provides suggestions is the same data field that is searched for the typed value. If there are two different fields, assign the field providing suggestions to the **valueExpr** option and the field to be searched to the **searchExpr** option. Assign an array of field names to the **searchExpr** option if you need to search several fields.
+The **Lookup** UI component allows a user to search through its items. Moreover, the UI component offers suggestions while the user types a value into the search box. Usually, the data field that provides suggestions is the same data field that is searched for the typed value. If there are two different fields, assign the field providing suggestions to the **valueExpr** property and the field to be searched to the **searchExpr** option. Assign an array of field names to the **searchExpr** property if you need to search several fields.
 
 ---
 ##### jQuery
@@ -117,7 +117,7 @@ The **Lookup** UI component allows a user to search through its items. Moreover,
 
 ---
 
-The **Lookup** UI component can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchMode') option to change the mode. You can also use the [searchPlaceholder](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/searchPlaceholder.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchPlaceholder') option to specify a placeholder for an empty search box.
+The **Lookup** UI component can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchMode') property to change the mode. You can also use the [searchPlaceholder](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/searchPlaceholder.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchPlaceholder') property to specify a placeholder for an empty search box.
 
 ---
 ##### jQuery
@@ -234,7 +234,7 @@ The **Lookup** UI component can provide suggestions in two different modes: *'co
 
 ---
 
-The **Lookup** UI component starts providing suggestions once an end user types the first character by default. Use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#minSearchLength') option to increase the number of characters that triggers suggestions. 
+The **Lookup** UI component starts providing suggestions once an end user types the first character by default. Use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#minSearchLength') property to increase the number of characters that triggers suggestions. 
 
 ---
 ##### jQuery
@@ -387,7 +387,7 @@ There is a delay between the moment a user finishes typing and the moment the **
 
 ---
 
-The **Lookup** UI component also clears previous search results before the drop-down menu is displayed by default. Assign **false** to the [cleanSearchOnOpening](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/cleanSearchOnOpening.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#cleanSearchOnOpening') option to keep them.
+The **Lookup** UI component also clears previous search results before the drop-down menu is displayed by default. Assign **false** to the [cleanSearchOnOpening](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/cleanSearchOnOpening.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#cleanSearchOnOpening') property to keep them.
 
 ---
 ##### jQuery
@@ -463,7 +463,7 @@ The **Lookup** UI component also clears previous search results before the drop-
 
 ---
 
-Assign **false** to the [searchEnabled](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled') option if you need to disable searching.
+Assign **false** to the [searchEnabled](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled') property if you need to disable searching.
 
 ---
 ##### jQuery

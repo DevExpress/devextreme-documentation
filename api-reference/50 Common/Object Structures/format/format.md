@@ -15,7 +15,7 @@ The value to be formatted.
 The value after formatting.
 
 ---
-This option accepts three types of values:
+This property accepts three types of values:
 
 * **String**  
  A [predefined format](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') or [custom format string](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Custom_Format_String').

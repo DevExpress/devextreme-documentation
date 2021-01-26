@@ -1,4 +1,4 @@
-The [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') supports the [select](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/select.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select') option intended to specify the structure of an item of the array being loaded. The DataSource passes the value of this option to the underlying Store when loading data. Therefore, this data transformation can be performed on the server side if the Store supports it. 
+The [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') supports the [select](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/select.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select') property intended to specify the structure of an item of the array being loaded. The DataSource passes the value of this property to the underlying Store when loading data. Therefore, this data transformation can be performed on the server side if the Store supports it. 
 
 To consider a select expression syntax, begin by creating an array of sample data.
 
@@ -20,7 +20,7 @@ To consider a select expression syntax, begin by creating an array of sample dat
         }
     ];
 
-You can define the select option value via the [configuration object](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/') passed to the DataSource constructor.
+You can define the select property value via the [configuration object](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/') passed to the DataSource constructor.
 
     <!--JavaScript-->
     var dataSource = new DevExpress.data.DataSource({
@@ -28,7 +28,7 @@ You can define the select option value via the [configuration object](/api-refer
         select: "lastName"
     });
 
-To modify the **select** option, pass the new option value to the [select(expr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/select(expr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#selectexpr') method of the DataSource.
+To modify the **select** option, pass the new property value to the [select(expr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/select(expr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#selectexpr') method of the DataSource.
 
     <!--JavaScript-->
     dataSource.select("firstName", "city");

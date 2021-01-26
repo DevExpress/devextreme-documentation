@@ -147,7 +147,7 @@ Individual series settings override common settings.
 ---
 
 
-To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this option can be specified for all points belonging to an individual series or for all series points in the **Chart**.
+To choose which elements should be highlighted when a user selects a point, specify the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/selectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#selectionMode') option. Just like **selectionStyle**, this property can be specified for all points belonging to an individual series or for all series points in the **Chart**.
 
 ---
 ##### jQuery

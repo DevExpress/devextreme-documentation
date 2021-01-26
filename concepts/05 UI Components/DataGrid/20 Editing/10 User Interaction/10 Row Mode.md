@@ -2,7 +2,7 @@ In this mode a user edits data row by row. When a user clicks an *"Edit"* button
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Editing Row Mode Editing State](/images/DataGrid/editing/row_mode_editing_state.png)
 
-Clicking the *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#confirmDelete') option to hide this dialog.
+Clicking the *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#confirmDelete') property to hide this dialog.
 
 ---
 ##### jQuery

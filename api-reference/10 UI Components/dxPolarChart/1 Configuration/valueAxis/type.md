@@ -13,11 +13,11 @@ The 'discrete' type is set when string values are specified in the data source o
 
 The 'continuous' type is set when numeric or date-time values are specified in the series data source. The continuous axis is divided automatically.
 
-The 'logarithmic' type can be set when numeric values are specified in the series data source. The logarithmic axis is useful when you visualize a dataset of rapidly-growing values. Each axis tick represents a particular value that is raised to the next power in turn. This particular value is specified by the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#logarithmBase') option. For example, if you set this option to 5, the following ticks will be generated: 5<sup>0</sup>, 5<sup>1</sup>, 5<sup>2</sup>, 5<sup>3</sup>, etc.
+The 'logarithmic' type can be set when numeric values are specified in the series data source. The logarithmic axis is useful when you visualize a dataset of rapidly-growing values. Each axis tick represents a particular value that is raised to the next power in turn. This particular value is specified by the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#logarithmBase') option. For example, if you set this property to 5, the following ticks will be generated: 5<sup>0</sup>, 5<sup>1</sup>, 5<sup>2</sup>, 5<sup>3</sup>, etc.
 
 On continuous and logarithmic axes, ticks and grid lines are generated automatically. In addition, you can set a custom tick interval (the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/tickInterval/') or [axisDivisionFactor](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/axisDivisionFactor.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/#axisDivisionFactor') options).
 
-[note] If you require a discrete axis when numeric or date-time values are specified in the data source, set the **type** option to 'discrete' explicitly.
+[note] If you require a discrete axis when numeric or date-time values are specified in the data source, set the **type** property to 'discrete' explicitly.
 
 #include common-ref-enum with {
     enum: "`AxisScaleType`",

@@ -4,7 +4,7 @@ Depending on the [uploadMode](/api-reference/10%20UI%20Widgets/dxFileUploader/1%
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/File_Uploader/FileUploading/"
 }
 
-The following examples show how to configure the **FileUploader** for each upload mode. Therein, the [name](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/name.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#name') option is required to access uploaded files on the server.
+The following examples show how to configure the **FileUploader** for each upload mode. Therein, the [name](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/name.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#name') property is required to access uploaded files on the server.
 
 - **Ajax upload**
 

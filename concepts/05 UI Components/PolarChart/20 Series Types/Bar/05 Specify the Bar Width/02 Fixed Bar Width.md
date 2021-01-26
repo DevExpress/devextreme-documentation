@@ -1,4 +1,4 @@
-The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/barWidth.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#barWidth') option specifies fixed angular bar width in degrees. This option is available for each series.
+The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/barWidth.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#barWidth') property specifies fixed angular bar width in degrees. This property is available for each series.
 
 ---
 ##### jQuery

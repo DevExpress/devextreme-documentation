@@ -166,7 +166,7 @@ The **Chart** can be zoomed and panned using the [RangeSelector](/concepts/05%20
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ZoomingAndScrollingAPI/"
 }
 
-When your data source is updated in real time, the behavior of both the **Chart**'s [visual range](/concepts/05%20Widgets/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/UI_Components/Chart/Axes/Visual_and_Whole_Ranges/') and the **RangeSelector**'s selected range depends on the [selectedRangeUpdateMode](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/selectedRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#selectedRangeUpdateMode') option specified for the **RangeSelector**:
+When your data source is updated in real time, the behavior of both the **Chart**'s [visual range](/concepts/05%20Widgets/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/UI_Components/Chart/Axes/Visual_and_Whole_Ranges/') and the **RangeSelector**'s selected range depends on the [selectedRangeUpdateMode](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/selectedRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#selectedRangeUpdateMode') property specified for the **RangeSelector**:
 
 ---
 ##### jQuery

@@ -1,6 +1,6 @@
-When the width of all columns exceeds the UI component's width, users can scroll the grid horizontally. If you set the [columnFixing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/).[enabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/#enabled) option to **true**, users can show certain columns in the view regardless of how far they scroll the grid.
+When the width of all columns exceeds the UI component's width, users can scroll the grid horizontally. If you set the [columnFixing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/).[enabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/#enabled) property to **true**, users can show certain columns in the view regardless of how far they scroll the grid.
 
-You can also enable a column's [fixed](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed) option in code. This fixes the column to the UI component's left edge. To change the position, set the [fixedPosition](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition) option.
+You can also enable a column's [fixed](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed) property in code. This fixes the column to the UI component's left edge. To change the position, set the [fixedPosition](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition) option.
 
 The following code fixes the `FullName` column to the default position and allows users to fix and unfix columns at runtime:
 

@@ -9,7 +9,7 @@ default: 'include'
 Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values.
 
 ---
-This option accepts the following values:
+This property accepts the following values:
 
 - **include**       
 Values in the [header filter](/concepts/05%20Widgets/PivotGrid/080%20Filtering/020%20Filtering%20in%20the%20UI.md '/Documentation/Guide/UI_Components/PivotGrid/Filtering/#Filtering_in_the_UI') are unselected initially. Users change the filter by selecting the values.

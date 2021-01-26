@@ -3,7 +3,7 @@ id: Component.resetOption(optionName)
 ---
 ---
 ##### shortDescription
-Resets an option to its default value.
+Resets an property to its default value.
 
 ##### param(optionName): String
 An option's name.

@@ -2,7 +2,7 @@ A series is a group of related data points. The most important characteristic of
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineAllTypesWithCaptions.png)
 
-To set the series type that best suits your needs, specify the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') option of the main configuration object. By default, the [line](/concepts/05%20Widgets/Sparkline/20%20Series%20Types/010%20Line.md '/Documentation/Guide/UI_Components/Sparkline/Series_Types/#Line') series type is set.
+To set the series type that best suits your needs, specify the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') property of the main configuration object. By default, the [line](/concepts/05%20Widgets/Sparkline/20%20Series%20Types/010%20Line.md '/Documentation/Guide/UI_Components/Sparkline/Series_Types/#Line') series type is set.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'line',

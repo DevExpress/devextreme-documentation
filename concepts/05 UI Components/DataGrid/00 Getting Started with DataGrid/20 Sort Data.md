@@ -1,4 +1,4 @@
-The **sorting**.[mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode) option specifies whether users can sort grid records by single or multiple columns. This tutorial uses the default sorting mode - single. 
+The **sorting**.[mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode) property specifies whether users can sort grid records by single or multiple columns. This tutorial uses the default sorting mode - single. 
 
 You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortOrder) and [sortIndex](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex) options to specify the initial sorting settings. **sortIndex** applies only in multiple sorting mode.
 

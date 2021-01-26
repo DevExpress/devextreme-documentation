@@ -47,7 +47,7 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Widgets/GridBase/1%20Co
 
 ---
 
-Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/showInfo.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/pager/#showInfo') option to show the page information. You can change the default text by specifiyng the [infoText](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/infoText.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/pager/#infoText').
+Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/showInfo.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/pager/#showInfo') property to show the page information. You can change the default text by specifiyng the [infoText](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/infoText.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/pager/#infoText').
 
 
 ---

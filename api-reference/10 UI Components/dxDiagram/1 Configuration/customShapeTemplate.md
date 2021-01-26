@@ -18,7 +18,7 @@ The processed shape's object.
 ---
 The template content must be presented as SVG elements.
 
-Use the [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') option to define a template of an individual shape.
+Use the [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') property to define a template of an individual shape.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"

@@ -7,7 +7,7 @@ type: Group expression
 Specifies data grouping options.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **String**        
 The field name to group by.

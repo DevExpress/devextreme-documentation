@@ -9,7 +9,7 @@ Specifies an array of path keys to the current location.
 
 ---
 
-Each path part has each own key. For example, path "folder1/folder2" has two parts: 'folder1' with the 'f1' key and folder2 with the 'f2' key. To open this location, assign the ["f1","f2"] array of strings to the **currentPathKeys** option value. 
+Each path part has each own key. For example, path "folder1/folder2" has two parts: 'folder1' with the 'f1' key and folder2 with the 'f2' key. To open this location, assign the ["f1","f2"] array of strings to the **currentPathKeys** property value. 
 
 ---
 

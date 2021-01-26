@@ -9,4 +9,4 @@ firedEvents: showing, hiding
 A Boolean value specifying whether or not the UI component is visible.
 
 ---
-Use this option to display/hide a context menu in code.
+Use this property to display/hide a context menu in code.

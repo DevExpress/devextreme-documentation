@@ -94,7 +94,7 @@ Paging is used to load data in portions, which improves the UI component's perfo
 
 ---
 
-When working with small datasets, you can disable paging by setting the **paging**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#enabled') option to **false**.
+When working with small datasets, you can disable paging by setting the **paging**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#enabled') property to **false**.
 
 ---
 

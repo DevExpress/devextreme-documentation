@@ -83,7 +83,7 @@ If you need to shift the menu panel towards the bottom or the left side, specify
 
     <!--HTML--><div id="menuContainer" style="padding-top:500px"></div>
 
-When the UI component is positioned at the bottom or at the left side, you may want to change the direction in which the drop-down menus open. For this purpose, set the [submenuDirection](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/submenuDirection.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#submenuDirection') option to _"rightOrTop"_.
+When the UI component is positioned at the bottom or at the left side, you may want to change the direction in which the drop-down menus open. For this purpose, set the [submenuDirection](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/submenuDirection.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#submenuDirection') property to _"rightOrTop"_.
 
 ---
 ##### jQuery

@@ -317,7 +317,7 @@ If you need to position the **Toast** against a specific element on your page, s
 
 ---
 
-This configuration of the **position** option reads as follows: "place **my** _left_ side **at** the _left_ side **of** the *"#targetElement"*.
+This configuration of the **position** property reads as follows: "place **my** _left_ side **at** the _left_ side **of** the *"#targetElement"*.
 
 #####See Also#####
 - [Toast - Customize the Content](/concepts/05%20Widgets/Toast/10%20Customize%20the%20Content.md '/Documentation/Guide/UI_Components/Toast/Customize_the_Content/')

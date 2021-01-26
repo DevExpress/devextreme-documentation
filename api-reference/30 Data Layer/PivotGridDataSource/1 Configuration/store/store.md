@@ -7,7 +7,7 @@ type: Store | Store_Options | XmlaStore | XmlaStore_Options | Array<Object> | Ob
 Configures the **DataSource**'s underlying store.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 * **Store instance**            
 An [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'), [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'), [LocalStore](/api-reference/30%20Data%20Layer/LocalStore '/Documentation/ApiReference/Data_Layer/LocalStore/'), [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/'), or [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/') instance.
@@ -16,7 +16,7 @@ An [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiRef
 An **XmlaStore**, **ArrayStore**, **LocalStore**, or **ODataStore** configuration object. Make sure to set the [type](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store/type.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/#type') option.
 
 * **Array**         
-Assigning an array to the **store** option automatically creates an **ArrayStore** in the **PivotGridDataSource**.
+Assigning an array to the **store** property automatically creates an **ArrayStore** in the **PivotGridDataSource**.
 
 ---
 ##### jQuery

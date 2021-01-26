@@ -10,7 +10,7 @@ This type of store is helpful when you use an HTML5 Web Storage (also known as <
 
 [note]We recommend turning pagination off when using a DataSource. This action will prevent your data from partitioning.
 
-In addition, you can specify the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/LocalStore/Configuration/#key') option to have a read-write access to data. 
+In addition, you can specify the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/LocalStore/Configuration/#key') property to have a read-write access to data. 
 
 After that, populate the store (which lays under the DataSource) with data using its [insert(values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/LocalStore/Methods/#insertvalues') method.
 

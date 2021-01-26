@@ -1,18 +1,18 @@
 The **Diagram** allows you to bind a number of shape and connector visual properties, like type, size, and style. 
 
-[note] If a binding option is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** UI component and is lost after a page is reloaded.
+[note] If a binding property is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** UI component and is lost after a page is reloaded.
        
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
 
 <table class="dx-table">
     <tr>
         <th>Node option</th>
-        <th>Value the option should return</th>
+        <th>Value the property should return</th>
         <th>Sample return value</th>
     </tr>
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerChildrenExpr">containerChildrenExpr</a></td>
-        <td>A container's nested items. This option is in effect for <i>verticalContainer</i> or <i>horizontalContainer</i> nodes. Excludes <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a>.</td>
+        <td>A container's nested items. This property is in effect for <i>verticalContainer</i> or <i>horizontalContainer</i> nodes. Excludes <a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr">containerKeyExpr</a>.</td>
         <td>[{"id":"112","text":"Ana\nTrujillo"}, {"id":"113","text":"Antonio\nMoreno"}]</td>    
     </tr>
     <tr>
@@ -27,7 +27,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr> 
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#imageUrlExpr">imageUrlExpr</a></td>
-        <td>A node's image URL or Base64 encoded image. This option is in effect for nodes of the <i>cardWithImageOnLeft</i>, <i>cardWithImageOnTop</i>, or <i>cardWithImageOnRight</i> type.</td>
+        <td>A node's image URL or Base64 encoded image. This property is in effect for nodes of the <i>cardWithImageOnLeft</i>, <i>cardWithImageOnTop</i>, or <i>cardWithImageOnRight</i> type.</td>
         <td>"images/employees/30.png"</td>
     </tr> 
     <tr>
@@ -81,7 +81,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
 <table class="dx-table">
     <tr>
         <th>Edge option</th>
-        <th>Value the option should return</th>
+        <th>Value the property should return</th>
         <th>Sample return value</th>
     </tr>
     <tr>
@@ -150,7 +150,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr>
 </table>
 
-You can set a binding option to a name of a data source field that provides item values, or to an expression that returns a constant value or calculates a value in runtime based on conditions.
+You can set a binding property to a name of a data source field that provides item values, or to an expression that returns a constant value or calculates a value in runtime based on conditions.
 
 ![Diagram - Data Bound Diagram](/images/diagram/data-bound-diagram.png)
 

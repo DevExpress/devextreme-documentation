@@ -2,7 +2,7 @@ Similarly to [area](/concepts/05%20Widgets/Sparkline/20%20Series%20Types/040%20A
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineSplineArea.png)
 
-To specify the *spline area* series type, assign *'splinearea'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') option of the main configuration object.
+To specify the *spline area* series type, assign *'splinearea'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') property of the main configuration object.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'splinearea',

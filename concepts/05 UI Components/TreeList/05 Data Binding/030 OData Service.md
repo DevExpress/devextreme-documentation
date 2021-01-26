@@ -93,7 +93,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 
 ---
 
-[note] Setting the **ODataStore**'s **deserializeDates** option to **false** may cause filtering issues in the **TreeList**. See this option's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
+[note] Setting the **ODataStore**'s **deserializeDates** property to **false** may cause filtering issues in the **TreeList**. See this option's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
 
 #####See Also#####
 - [Data Layer - Data Source Examples | OData](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData')

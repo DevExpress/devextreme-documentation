@@ -1,4 +1,4 @@
-To configure a data field for using one of the predefined aggregation methods, set the [summaryType](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryType.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryType') option to one of the following values.
+To configure a data field for using one of the predefined aggregation methods, set the [summaryType](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryType.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryType') property to one of the following values.
 
 - *"sum"*		
 Sums up all [facts](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/04%20Summary%20Values.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Summary_Values') within an area.

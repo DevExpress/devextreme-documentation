@@ -1,5 +1,5 @@
 
-The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barWidth.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#barWidth') option specifies fixed bar width in pixels. This option is available for each series.
+The [barWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barWidth.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#barWidth') property specifies fixed bar width in pixels. This property is available for each series.
 
 ---
 ##### jQuery

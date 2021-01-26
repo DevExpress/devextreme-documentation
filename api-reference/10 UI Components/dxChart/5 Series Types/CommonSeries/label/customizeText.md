@@ -14,7 +14,7 @@ Information on the series point.
 The text for the label to display.
 
 ---
-This option accepts a function whose parameter exposes the following fields.
+This property accepts a function whose parameter exposes the following fields.
 
 <table class="dx-table full-width">
     <tr>

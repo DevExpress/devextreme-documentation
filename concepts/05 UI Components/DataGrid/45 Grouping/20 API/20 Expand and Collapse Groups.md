@@ -1,7 +1,7 @@
 The **DataGrid** provides the following API for expanding and collapsing groups:
 
 - **All groups**    
-    You can expand and collapse all groups at once by calling the [expandAll(groupIndex)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/expandAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAllgroupIndex') and [collapseAll(groupIndex)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/collapseAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseAllgroupIndex') methods without arguments. Groups appear already expanded, a behavior you can change by setting the **grouping**.[autoExpandAll](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll') option to **false**.
+    You can expand and collapse all groups at once by calling the [expandAll(groupIndex)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/expandAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAllgroupIndex') and [collapseAll(groupIndex)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/collapseAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseAllgroupIndex') methods without arguments. Groups appear already expanded, a behavior you can change by setting the **grouping**.[autoExpandAll](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll') property to **false**.
     
     ---
 
@@ -58,7 +58,7 @@ The **DataGrid** provides the following API for expanding and collapsing groups:
     ---
 
 - **Groups of a specific level**    
-    The same **expandAll(groupIndex)** and **collapseAll(groupIndex)** methods expand and collapse groups of a specific level if you pass a non-negative integer as the **groupIndex** parameter to them. It is the same **groupIndex** that a column gets when it participates in grouping. The column's [autoExpandGroup](/api-reference/_hidden/dxDataGridColumn/autoExpandGroup.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#autoExpandGroup') option specifies the initial state of groups of this level.
+    The same **expandAll(groupIndex)** and **collapseAll(groupIndex)** methods expand and collapse groups of a specific level if you pass a non-negative integer as the **groupIndex** parameter to them. It is the same **groupIndex** that a column gets when it participates in grouping. The column's [autoExpandGroup](/api-reference/_hidden/dxDataGridColumn/autoExpandGroup.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#autoExpandGroup') property specifies the initial state of groups of this level.
 
     ---
 

@@ -2,7 +2,7 @@ The **TreeList** generates column headers based on the names of [data fields](/a
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList ColumnHeaders](/images/treelist/visual_elements/column_headers.png)
 
-Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#caption') option to change the column header text.
+Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#caption') property to change the column header text.
 
 ---
 ##### jQuery
@@ -41,7 +41,7 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     
 ---
 
-If you need a more specific customization, define a custom template in the **columns**.[headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#headerCellTemplate') option. This option accepts a function or template container. 
+If you need a more specific customization, define a custom template in the **columns**.[headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#headerCellTemplate') option. This property accepts a function or template container. 
 
 ---
 ##### jQuery

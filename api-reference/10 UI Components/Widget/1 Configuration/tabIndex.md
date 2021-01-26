@@ -8,4 +8,4 @@ default: 0
 Specifies the number of the element when the Tab key is used for navigating.
 
 ---
-The value of this option will be passed to the <a href="https://www.w3schools.com/tags/att_global_tabindex.asp" target="_blank">`tabindex`</a> attribute of the HTML element that underlies the UI component.
+The value of this property will be passed to the <a href="https://www.w3schools.com/tags/att_global_tabindex.asp" target="_blank">`tabindex`</a> attribute of the HTML element that underlies the UI component.

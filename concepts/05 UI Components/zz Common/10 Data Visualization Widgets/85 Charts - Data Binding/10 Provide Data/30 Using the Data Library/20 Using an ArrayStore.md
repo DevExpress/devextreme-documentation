@@ -15,6 +15,6 @@ This type of store is great when you need a simple data source with the data lif
 
 [note]We recommend turning pagination off when using a DataSource. This action will prevent your data from partitioning.
 
-In addition, you can specify the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') option to get a read-write access to data. An ArrayStore has many more options available for configuring. For the full list of them, refer to the [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') reference section.
+In addition, you can specify the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') property to get a read-write access to data. An ArrayStore has many more options available for configuring. For the full list of them, refer to the [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') reference section.
 
 After you have created a DataSource, you need to bind it to your chart. Refer to the [Bind Data](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Bind_Data/') section to learn how to do this.

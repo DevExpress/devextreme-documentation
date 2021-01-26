@@ -21,4 +21,4 @@ Leaves axis labels overlapped.
     values: "`Hide` and `None`"
 }
 
-[note] Specifying this option with the *"enlargeTickInterval"* and *"ignore"* values is <span style="color:red">deprecated</span>.
+[note] Specifying this property with the *"enlargeTickInterval"* and *"ignore"* values is <span style="color:red">deprecated</span>.

@@ -25,7 +25,7 @@ Navigation properties are usually deferred and are not loaded automatically toge
         expand: [ "Category" ]
     });
     
-The **expand** option is also supported by the [byKey](/api-reference/30%20Data%20Layer/ODataStore/3%20Methods/byKey(key_extraOptions).md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#byKeykey_extraOptions') method.
+The **expand** property is also supported by the [byKey](/api-reference/30%20Data%20Layer/ODataStore/3%20Methods/byKey(key_extraOptions).md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#byKeykey_extraOptions') method.
 
     <!--JavaScript-->
     context.Products.byKey(1, { expand: [ "Category" ] });

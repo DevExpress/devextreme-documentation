@@ -8,7 +8,7 @@ default: true
 Adds an empty space between the axis and the minimum and maximum series points.
 
 ---
-By default, the axes extend slightly beyond their extrema. It prevents cutting off parts of the minimum and maximum series points. To disable this feature, set the **valueMarginsEnabled** option to **false**.
+By default, the axes extend slightly beyond their extrema. It prevents cutting off parts of the minimum and maximum series points. To disable this feature, set the **valueMarginsEnabled** property to **false**.
 
 #####See Also#####
 - **commonAxisSettings**.[minValueMargin](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/minValueMargin.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/#minValueMargin') - sets a custom margin for minimum series points.

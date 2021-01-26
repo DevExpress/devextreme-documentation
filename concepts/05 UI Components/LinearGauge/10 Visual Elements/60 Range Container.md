@@ -2,7 +2,7 @@ For the purpose of more intelligible data visualization, scale values can be com
 
 <img src="/images/ChartJS/LinearGaugeRangeContainer.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeRangeContainer" style="display:block; margin:0 auto" />
 
- To specify the ranges, assign an array of objects defining these ranges to the [ranges](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/rangeContainer/ranges '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/rangeContainer/ranges/') option of the **rangeContainer** configuration object.
+ To specify the ranges, assign an array of objects defining these ranges to the [ranges](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/rangeContainer/ranges '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/rangeContainer/ranges/') property of the **rangeContainer** configuration object.
 
 	<!--JavaScript-->var gaugeOptions = {
         rangeContainer: {

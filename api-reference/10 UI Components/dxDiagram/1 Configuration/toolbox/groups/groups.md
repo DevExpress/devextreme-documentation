@@ -14,4 +14,4 @@ Lists toolbox groups.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/ImagesInShapes/"
 }
 
-Use the **groups** option to customize the toolbox's content. You can populate it with default or custom groups.
+Use the **groups** property to customize the toolbox's content. You can populate it with default or custom groups.

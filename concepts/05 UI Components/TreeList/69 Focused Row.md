@@ -1,6 +1,6 @@
 The focused row feature allows you to display master-detail relationships and improve navigation through records.
 
-To allow users to focus rows, set the [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#focusedRowEnabled') option to **true**.
+To allow users to focus rows, set the [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#focusedRowEnabled') property to **true**.
 
 Users can control the focused row using the following mouse and keyboard commands:
 

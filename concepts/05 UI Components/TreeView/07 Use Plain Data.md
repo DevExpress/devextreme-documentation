@@ -1,4 +1,4 @@
-If you use plain data in the **TreeView**, set the [dataStructure](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure') option to *"plain"*. For an example of plain data, see the following code snippet. 
+If you use plain data in the **TreeView**, set the [dataStructure](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure') property to *"plain"*. For an example of plain data, see the following code snippet. 
 
 ---
 ##### jQuery

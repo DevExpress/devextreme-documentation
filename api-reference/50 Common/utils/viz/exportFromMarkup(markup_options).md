@@ -73,7 +73,7 @@ The parameter contains the following fields:
 </div>
 
 ##### field(options.proxyUrl).deprecated
-[important] Since v10, Safari browser supports API for saving files, and this option is no longer required.
+[important] Since v10, Safari browser supports API for saving files, and this property is no longer required.
 
 ##### field(options.proxyUrl): String
 The URL of a server-side proxy required for export in Safari on Mac OS. See [proxyUrl](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/proxyUrl.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#proxyUrl') for details.

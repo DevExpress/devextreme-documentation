@@ -118,7 +118,7 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     
 ---
 
-If your data source accepts **null** values, set the [allowClearing](/api-reference/_hidden/GridBaseColumn/lookup/allowClearing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/#allowClearing') option to **true**. In editing state, each of the lookup column's cells will have a button that nullifies the value.
+If your data source accepts **null** values, set the [allowClearing](/api-reference/_hidden/GridBaseColumn/lookup/allowClearing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/#allowClearing') property to **true**. In editing state, each of the lookup column's cells will have a button that nullifies the value.
 
 Each cell in the lookup column is based on the [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/') UI component. Use [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#editorOptions') to customize it. See the [Customize Editors](/concepts/05%20Widgets/TreeList/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/TreeList/Editing/#Customize_Editors') topic for more details.
 

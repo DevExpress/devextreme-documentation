@@ -17,5 +17,5 @@ Binds the UI component to data.
 
     additional_data_binding_actions: "After providing data, [bind series to it](/concepts/05%20Widgets/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/').",
 
-    paginate_note: "- If you wrap the store into the **DataSource** object explicitly, set the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') option to **false** to prevent data from partitioning."
+    paginate_note: "- If you wrap the store into the **DataSource** object explicitly, set the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') property to **false** to prevent data from partitioning."
 }

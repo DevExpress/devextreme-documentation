@@ -1,4 +1,4 @@
-All operations with UI component options are carried out through the scope properties these options are bound to. To bind a UI component option to a scope property, use the **bindingOptions** object as shown in the following code. Note that the scope property name in this object is enclosed in quotes.
+All operations with UI component options are carried out through the scope properties these options are bound to. To bind a UI component property to a scope property, use the **bindingOptions** object as shown in the following code. Note that the scope property name in this object is enclosed in quotes.
 
     <!--HTML--><div ng-controller="Controller">
         <div dx-check-box="{
@@ -44,7 +44,7 @@ If you bind a UI component to a collection, the UI component gets updated only w
 
 The code above forces the UI component to use the <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watch" target="_blank">$watch</a> listener instead of the default <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watchCollection" target="_blank">$watchCollection</a> listener. Note that the use of the **$watch** listener may impact the UI component's peformance.
 
-[note]We strongly do _not_ recommend binding a UI component to the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') using the **bindingOptions** object. The **DataSource** contains internal circular links that get updated during its lifetime. Tracking changes in them by means of the AngularJS Framework may lead to unexpected results. Instead of using the **bindingOptions** object, simply assign the scope property with the **DataSource** to the **dataSource** option of the UI component. If you nevertheless decided to use the **bindingOptions** object, set its **deep** field to **false** explicitly.
+[note]We strongly do _not_ recommend binding a UI component to the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') using the **bindingOptions** object. The **DataSource** contains internal circular links that get updated during its lifetime. Tracking changes in them by means of the AngularJS Framework may lead to unexpected results. Instead of using the **bindingOptions** object, simply assign the scope property with the **DataSource** to the **dataSource** property of the UI component. If you nevertheless decided to use the **bindingOptions** object, set its **deep** field to **false** explicitly.
 
 
 #####See Also#####

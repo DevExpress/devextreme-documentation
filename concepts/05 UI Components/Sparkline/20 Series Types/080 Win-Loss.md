@@ -2,7 +2,7 @@ The *win-loss* series type will suit you best when you need to demonstrate wheth
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineWinLoss.png)
 
-To specify the *win-loss* series type, assign *'winloss'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') option of the main configuration object.
+To specify the *win-loss* series type, assign *'winloss'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') property of the main configuration object.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'winloss',

@@ -1,7 +1,7 @@
 Smaller points on the **PieChart** can be collected in a single group in one of the following modes:
 
 - **Top N**     
-Top N points with the biggest values remain ungrouped; all other points form a group. The **smallValuesGrouping**.[topCount](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/smallValuesGrouping/topCount.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/smallValuesGrouping/#topCount') option specifies the N.
+Top N points with the biggest values remain ungrouped; all other points form a group. The **smallValuesGrouping**.[topCount](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/smallValuesGrouping/topCount.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/smallValuesGrouping/#topCount') property specifies the N.
 
     ---
     ##### jQuery
@@ -88,7 +88,7 @@ Top N points with the biggest values remain ungrouped; all other points form a g
     ---
 
 - **Threshold**         
-Points that fall beyond a threshold establish a group. The **smallValuesGrouping**.[threshold](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/smallValuesGrouping/threshold.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/smallValuesGrouping/#threshold') option specifies the threshold.
+Points that fall beyond a threshold establish a group. The **smallValuesGrouping**.[threshold](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/smallValuesGrouping/threshold.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/smallValuesGrouping/#threshold') property specifies the threshold.
 
     ---
     ##### jQuery

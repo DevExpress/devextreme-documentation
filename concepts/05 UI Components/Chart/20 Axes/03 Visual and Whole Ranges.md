@@ -153,7 +153,7 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
 
 ---
 
-An axis' visual range can behave differently when chart data is updated. See the **visualRangeUpdateMode** option for the [argument axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode') or [value axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#visualRangeUpdateMode') for more information.
+An axis' visual range can behave differently when chart data is updated. See the **visualRangeUpdateMode** property for the [argument axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode') or [value axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#visualRangeUpdateMode') for more information.
 
 #####See Also#####
 - [Scale Breaks](/concepts/05%20Widgets/Chart/20%20Axes/33%20Scale%20Breaks.md '/Documentation/Guide/UI_Components/Chart/Axes/Scale_Breaks/')

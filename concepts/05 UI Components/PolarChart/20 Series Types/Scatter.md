@@ -17,7 +17,7 @@ To understand how polar charts are built, imagine how a chart in a rectangular c
 
 To learn how to specify data for a chart series, refer to the [Data Binding](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/10%20Provide%20Data '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Provide_Data/') topic.
 
-Note that you can use a spider web for polar charts displaying discrete data. For this purpose, set the UI component's [useSpiderWeb](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/useSpiderWeb.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#useSpiderWeb') option to **true**.
+Note that you can use a spider web for polar charts displaying discrete data. For this purpose, set the UI component's [useSpiderWeb](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/useSpiderWeb.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#useSpiderWeb') property to **true**.
 
 ![SpiderWeb PolarScatterSeriesType ChartJS](/images/ChartJS/PolarScatter_useSpiderWeb.png)
 

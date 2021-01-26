@@ -48,7 +48,7 @@ To bind a series to data directly, specify which data source field provides argu
 
 ---
 
-Commonly, a chart contains several series, and many of them have the same argument field. In this case, you can assign the name of this field to the **argumentField** option of the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object.
+Commonly, a chart contains several series, and many of them have the same argument field. In this case, you can assign the name of this field to the **argumentField** property of the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object.
 
 ---
 ##### jQuery

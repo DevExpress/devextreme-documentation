@@ -1,4 +1,4 @@
-The [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') configuration option of the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') enables you to modify each item of the loaded array. A function passed to this option takes an initial item as a parameter and returns the processed item. This function is performed within the DataSource and is not passed to the underlying Store.
+The [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') configuration property of the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') enables you to modify each item of the loaded array. A function passed to this property takes an initial item as a parameter and returns the processed item. This function is performed within the DataSource and is not passed to the underlying Store.
 
 Begin with the creation of a sample array.
 
@@ -20,7 +20,7 @@ Begin with the creation of a sample array.
         }
     ];
 
-Assign the required function to the [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') configuration option of the DataSource.
+Assign the required function to the [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') configuration property of the DataSource.
 
     <!--JavaScript-->var dataSource = new DevExpress.data.DataSource({
         store: data,

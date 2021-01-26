@@ -2,7 +2,7 @@
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/range.html, /Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/range.js"></div>
 
-Assign *"rangearea"* or *"rangebar"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') option to specify the corresponding series type. You can configure:
+Assign *"rangearea"* or *"rangebar"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property to specify the corresponding series type. You can configure:
 
 - Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') array;
 - All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object;

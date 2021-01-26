@@ -1,4 +1,4 @@
-Regulating the empty space on a bar's sides controls the relative bar width. Use the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#barPadding') option to specify how much of the available sector should be empty. For example, a **barPadding** of 0.1 leaves 10% of the available space empty giving the rest to the bar.
+Regulating the empty space on a bar's sides controls the relative bar width. Use the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#barPadding') property to specify how much of the available sector should be empty. For example, a **barPadding** of 0.1 leaves 10% of the available space empty giving the rest to the bar.
 
 ---
 ##### jQuery

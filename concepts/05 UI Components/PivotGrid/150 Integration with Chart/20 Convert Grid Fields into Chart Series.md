@@ -16,14 +16,14 @@ In the example below, toggle the check box to change the value of the **inverted
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/GridChartIntegration/inverted.html, /Content/Applications/20_1/DataVisualization/Guides/GridChartIntegration/inverted.js"></div>
 
-When the grid contains several data fields, they may be turned into either sets of series or sets of arguments. To specify this, set the **putDataFieldsInto** field to *"series"* or *"args"* correspondingly. By default, this option is set to *"series"*.
+When the grid contains several data fields, they may be turned into either sets of series or sets of arguments. To specify this, set the **putDataFieldsInto** field to *"series"* or *"args"* correspondingly. By default, this property is set to *"series"*.
 
     <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
         // ...
         putDataFieldsInto: "series" // "args"
     });
         
-Moreover, several data fields may either alternate on the chart plot or not. To specify this feature, set the **alternateDataFields** field to **true** or **false** respectively. By default, this option is **true**.
+Moreover, several data fields may either alternate on the chart plot or not. To specify this feature, set the **alternateDataFields** field to **true** or **false** respectively. By default, this property is **true**.
 
     <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
         // ...

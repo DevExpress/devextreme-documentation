@@ -6,7 +6,7 @@ Use one of the following approaches to handle events.
 
 To attach a handler for a certain event to a DataSource or Data Store, use the corresponding configuration option. The options that take on event handling functions have names starting with *on*.
 
-The following example demonstrates how to use a configuration option to handle an event.
+The following example demonstrates how to use a configuration property to handle an event.
 
 	<!--JavaScript-->var dataSource = new DevExpress.data.DataSource({
 		sort: "name",

@@ -9,7 +9,7 @@ default: 'dialog'
 Specifies the edit mode for recurring appointments.
 
 ---
-This option accepts the following values:
+This property accepts the following values:
 
 - *"series"*  
  Enables a user to edit only entire appointment series.

@@ -2,7 +2,7 @@ An *area* series type sparkline is helpful when you need to emphasize a change i
 
 ![DevExtreme ChartJS Sparkline](/images/ChartJS/SparklineArea.png)
 
-To specify the *area* series type, assign *'area'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') option of the main configuration object.
+To specify the *area* series type, assign *'area'* to the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#type') property of the main configuration object.
 
 	<!--JavaScript-->var sparklineOptions = {
 		type: 'area',

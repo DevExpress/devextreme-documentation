@@ -7,7 +7,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
-        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#scrollDirection">scrollDirection</a> option is <i>"horizontal"</i> or <i>"both"</i>.</td>
+        <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#scrollDirection">scrollDirection</a> property is <i>"horizontal"</i> or <i>"both"</i>.</td>
     </tr>
     <tr>
         <td>&uarr; / &darr;</td>

@@ -170,7 +170,7 @@ If you need to define the **Toast** content completely, specify a template for i
         });
     });
 
-[note]To avoid rendering issues, always set the [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') option to *"custom"* when you use a custom template.
+[note]To avoid rendering issues, always set the [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') property to *"custom"* when you use a custom template.
 
 If you need to render different templates depending on a specific condition, define them inside the **Toast** container using the DevExtreme [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. To switch the templates on-the-fly, change the value of the [contentTemplate](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate') option.
 

@@ -17,7 +17,7 @@ Allows you to cancel the gesture processing.
 The ratio between the swipe distance and the target element's width or height.
 
 ---
-The event supports the **direction** option that specifies whether the event is raised for horizontal or vertical scrolling. The option can take on the "vertical" and "horizontal" values. The default option value is "horizontal".
+The event supports the **direction** property that specifies whether the event is raised for horizontal or vertical scrolling. The property can take on the "vertical" and "horizontal" values. The default property value is "horizontal".
 
 #####See Also#####
 - [UI Events - Introduction](/api-reference/10%20UI%20Widgets/UI%20Events '/Documentation/ApiReference/UI_Components/UI_Events/')

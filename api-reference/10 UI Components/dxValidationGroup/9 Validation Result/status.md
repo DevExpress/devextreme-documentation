@@ -8,7 +8,7 @@ type: String
 Indicates the validation status.
 
 ---
-This option can have one of the following values:
+This property can have one of the following values:
 
 - *"valid"* - all validation checks passed
 - *"pending"* - there are pending (not fulfilled or rejected) [async rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules/AsyncRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/AsyncRule/')

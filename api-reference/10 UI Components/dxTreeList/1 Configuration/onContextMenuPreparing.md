@@ -24,7 +24,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.items): Array<Object>
-Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') option description. Each item also contains the [onItemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#onItemClick') event handler, which allows you to access the clicked or tapped item's data.
+Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description. Each item also contains the [onItemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#onItemClick') event handler, which allows you to access the clicked or tapped item's data.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.

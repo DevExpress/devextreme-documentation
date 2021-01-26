@@ -8,7 +8,7 @@ default: undefined
 Holds an array of form items displayed within the tab.
 
 ---
-Like the [items](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') option of the **Form** UI component, the array passed to the **items** field of a tab can hold items of the following types.
+Like the [items](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') property of the **Form** UI component, the array passed to the **items** field of a tab can hold items of the following types.
 
 - [Simple](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/')  
  A standard item consisting of a label and an editor UI component used to specify a value of the associated data field.

@@ -1,4 +1,4 @@
-By default, the **ColorBox** does _not_ allow an end user to control the transparency, or alpha channel component, of the selected color. If you need to allow this, set the [editAlphaChannel](/api-reference/10%20UI%20Widgets/dxColorBox/1%20Configuration/editAlphaChannel.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#editAlphaChannel') option to **true**. This setting adds a slider that regulates transparency to the drop-down editor, and changes the textual representation of the selected color from hexadecimal to RGBA.
+By default, the **ColorBox** does _not_ allow an end user to control the transparency, or alpha channel component, of the selected color. If you need to allow this, set the [editAlphaChannel](/api-reference/10%20UI%20Widgets/dxColorBox/1%20Configuration/editAlphaChannel.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#editAlphaChannel') property to **true**. This setting adds a slider that regulates transparency to the drop-down editor, and changes the textual representation of the selected color from hexadecimal to RGBA.
 
 ---
 ##### jQuery

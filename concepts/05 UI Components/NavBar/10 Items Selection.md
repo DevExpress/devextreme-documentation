@@ -1,4 +1,4 @@
-An end user can select **NavBar** items in two different modes: *'single'* (by default) or *'multiple'*.  You can use the [selectionMode](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectionMode') option to change the mode. 
+An end user can select **NavBar** items in two different modes: *'single'* (by default) or *'multiple'*.  You can use the [selectionMode](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectionMode') property to change the mode. 
 
 ---
 ##### jQuery

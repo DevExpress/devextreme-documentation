@@ -1,4 +1,4 @@
-This option supports the following colors:
+This property supports the following colors:
 
 * Hexadecimal colors
 * RGB colors

@@ -114,7 +114,7 @@ All layout elements are arranged against a [layout grid](/concepts/05%20Widgets/
 
 ---
 
-Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxItem/location '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/items/location/') option that allows you to relocate the element within the layout grid or hide it on [screens of a specific size](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/'). For example, in the following code, the *"Left-Side Bar"* and *"Right-Side Bar"* elements are present only on medium and large screens. All the other elements have individual settings for screens of each size.
+Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxItem/location '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/items/location/') property that allows you to relocate the element within the layout grid or hide it on [screens of a specific size](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/'). For example, in the following code, the *"Left-Side Bar"* and *"Right-Side Bar"* elements are present only on medium and large screens. All the other elements have individual settings for screens of each size.
 
 ---
 

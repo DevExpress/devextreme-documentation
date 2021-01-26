@@ -7,7 +7,7 @@ type: Boolean
 Specifies whether the **DataSource** requests the total count of data items in the storage.
 
 ---
-If this option is set to **true**, the Promise that the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method returns is resolved with a second argument that contains the **totalCount** field:
+If this property is set to **true**, the Promise that the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method returns is resolved with a second argument that contains the **totalCount** field:
 
     <!--JavaScript-->
     var ds = new DevExpress.data.DataSource({

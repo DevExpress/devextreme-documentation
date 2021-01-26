@@ -353,9 +353,9 @@ If you need to position the **Popup** against a specific element on your page, s
 
 ---
 
-This configuration of the **position** option reads as follows: "place **my** _left_ side **at** the _left_ side **of** the *"#targetElement"*.
+This configuration of the **position** property reads as follows: "place **my** _left_ side **at** the _left_ side **of** the *"#targetElement"*.
 
-By default, an end user is allowed to change the **Popup** position only on desktops. To enable this feature on other devices too, set the [dragEnabled](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/dragEnabled.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled') option to **true**. Note that the user drags the **Popup** by its title, so the title should _not_ be hidden.  
+By default, an end user is allowed to change the **Popup** position only on desktops. To enable this feature on other devices too, set the [dragEnabled](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/dragEnabled.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled') property to **true**. Note that the user drags the **Popup** by its title, so the title should _not_ be hidden.  
 
 ---
 ##### jQuery

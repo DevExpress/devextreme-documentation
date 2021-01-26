@@ -16,7 +16,7 @@ To set data for a series, there are several approaches. You can set a common dat
 There can be several series displayed in the polar chart. In this instance, **series** is an array of series objects. You can specify series settings in the following three layers.
 
 * **Common Series Settings**		
-To set a particular option to a common value for each series, use the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/') configuration object.
+To set a particular property to a common value for each series, use the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/') configuration object.
 
 		<!--JavaScript-->var polarChartOptions = {
             // ...
@@ -26,7 +26,7 @@ To set a particular option to a common value for each series, use the [commonSer
 		};
 
 * **Common Type-Specific Series Settings**		
-	To set a particular option to a common value for each series of a certain type, use the corresponding type-specific configuration object within the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/') configuration object. There are type-specific configuration objects for all series types: [area](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/AreaSeries '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/'), [line](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/LineSeries '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/'), etc.
+	To set a particular property to a common value for each series of a certain type, use the corresponding type-specific configuration object within the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/') configuration object. There are type-specific configuration objects for all series types: [area](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/AreaSeries '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/'), [line](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/LineSeries '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/'), etc.
 
 		<!--JavaScript-->var polarChartOptions = {
             // ...

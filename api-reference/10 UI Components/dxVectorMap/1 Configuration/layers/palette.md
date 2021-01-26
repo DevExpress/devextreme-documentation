@@ -14,7 +14,7 @@ A palette defines a range of colors that are used to paint layer elements. This 
 In order to apply a palette to a map, follow the next steps.
 
 - Assign the name of the required palette (or an array of two colors) to the **palette** option.
-- Use the **paletteSize** option to define how many colors should be produced from the palette or array specified in the previous step.
+- Use the **paletteSize** property to define how many colors should be produced from the palette or array specified in the previous step.
 - Specify the index of the color from the colors array, which should be used for coloring an area, using the **paletteIndex** field of the object returned by the [customize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize') callback function.
 
 #include common-ref-enum with {

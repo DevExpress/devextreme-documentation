@@ -1,4 +1,4 @@
-If you use hierarchical data, set the [dataStructure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure') option to *'tree'*. For an example of hierarchical data, see the following code.
+If you use hierarchical data, set the [dataStructure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure') property to *'tree'*. For an example of hierarchical data, see the following code.
 
 ---
 ##### jQuery

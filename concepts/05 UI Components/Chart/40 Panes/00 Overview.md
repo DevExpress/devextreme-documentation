@@ -2,7 +2,7 @@ A pane is a chart area containing series. If there are many series in the **Char
 
 ![DevExtreme HTML5 JavaScript Charts Panes](/images/ChartJS/visual_elements/pane.png)
 
-Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/panes '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/') option. For a single-pane chart, this option accepts an object that configures the [background color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/#backgroundColor') and the [border](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/border '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/border/') of the pane.
+Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/panes '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/') option. For a single-pane chart, this property accepts an object that configures the [background color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/#backgroundColor') and the [border](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonPaneSettings/border '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/border/') of the pane.
 
 ---
 ##### jQuery
@@ -102,7 +102,7 @@ Panes are configured by the [panes](/api-reference/20%20Data%20Visualization%20W
 
 ---
 
-For a multi-pane chart, the **panes** option accepts an array. For further details, refer to the [Multi-Pane Chart](/concepts/05%20Widgets/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/UI_Components/Chart/Panes/Multi-Pane_Chart/') topic.
+For a multi-pane chart, the **panes** property accepts an array. For further details, refer to the [Multi-Pane Chart](/concepts/05%20Widgets/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/UI_Components/Chart/Panes/Multi-Pane_Chart/') topic.
 
 #####See Also#####
 - [Multiple Panes Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes)

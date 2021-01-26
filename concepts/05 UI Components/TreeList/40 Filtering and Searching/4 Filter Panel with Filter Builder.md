@@ -10,7 +10,7 @@ You can click the filter expression to open the integrated filter builder.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/FilterPanel/"
 }
 
-Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterPanel/visible.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterPanel/#visible') option to **true** to make the filter panel visible. 
+Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterPanel/visible.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterPanel/#visible') property to **true** to make the filter panel visible. 
 
 ---
 #####jQuery
@@ -32,7 +32,7 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
 
 ---
 
-If a user changes the filter expression in the filter panel or filter builder, the changes are reflected in the [filter row](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Filter_Row') and [header filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Header_Filter'), and vice versa. Set the [filterSyncEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterSyncEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#filterSyncEnabled') option to **false** to disable this synchronization. In this case, the filter panel remains synchronized with the filter builder.
+If a user changes the filter expression in the filter panel or filter builder, the changes are reflected in the [filter row](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Filter_Row') and [header filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Header_Filter'), and vice versa. Set the [filterSyncEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterSyncEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#filterSyncEnabled') property to **false** to disable this synchronization. In this case, the filter panel remains synchronized with the filter builder.
 
 ---
 #####jQuery

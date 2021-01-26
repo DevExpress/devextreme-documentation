@@ -1,17 +1,17 @@
 The **DateBox** provides the following controls for picking values.
 
 - [Calendar](/concepts/05%20Widgets/Calendar/00%20Overview.md '/Documentation/Guide/UI_Components/Calendar/Overview/')       
-Available when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') option is set to *"date"* or *"datetime"*.
+Available when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to *"date"* or *"datetime"*.
 
     ![DevExtreme DateBox PickerType DatePicker](/images/UiWidgets/DateBox/pickerTypes_calendar.png)
 
 - **Rollers**       
-Available when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') option is set to *"date"*, *"time"* or *"datetime"*.
+Available when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to *"date"*, *"time"* or *"datetime"*.
 
     ![DevExtreme DateBox PickerType DatePicker](/images/UiWidgets/DateBox/pickerTypes_rollers.png)
 
 - **List**          
-Available when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') option is set to *"time"*.
+Available when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to *"time"*.
 
     ![DevExtreme DateBox PickerType DatePicker](/images/UiWidgets/DateBox/pickerTypes_list.png)
 

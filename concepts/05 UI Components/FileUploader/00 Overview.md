@@ -4,7 +4,7 @@ The **FileUploader** UI component enables an end user to upload files to the ser
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/"
 }
 
-The following code adds the **FileUploader** to your page. Use the [accept](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/accept.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept') option to restrict the file types that can be uploaded to the server. This option is like the underlying `<input>` element's *"accept"* attribute and accepts the same values described <a href="http://www.w3schools.com/TAGs/att_input_accept.asp" target="_blank">here</a>.
+The following code adds the **FileUploader** to your page. Use the [accept](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/accept.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept') property to restrict the file types that can be uploaded to the server. This property is like the underlying `<input>` element's *"accept"* attribute and accepts the same values described <a href="http://www.w3schools.com/TAGs/att_input_accept.asp" target="_blank">here</a>.
 
 ---
 #####jQuery
@@ -41,7 +41,7 @@ The following code adds the **FileUploader** to your page. Use the [accept](/api
 
 ---
 
-A user is allowed to upload only one file at a time by default. Set the [multiple](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple') option to **true** to allow uploading several files at once.
+A user is allowed to upload only one file at a time by default. Set the [multiple](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple') property to **true** to allow uploading several files at once.
 
 ---
 #####jQuery
@@ -75,7 +75,7 @@ A user is allowed to upload only one file at a time by default. Set the [multipl
 
 ---
 
-If you need to access the selected files at runtime, get the value of the [value](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#value') option using the following command. It returns an array, whose members are each an instance implementing the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File" target="_blank">File interface</a>.
+If you need to access the selected files at runtime, get the value of the [value](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#value') property using the following command. It returns an array, whose members are each an instance implementing the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File" target="_blank">File interface</a>.
 
     <!--JavaScript-->var files = $("#fileUploaderContainer").dxFileUploader("option", "value");
 

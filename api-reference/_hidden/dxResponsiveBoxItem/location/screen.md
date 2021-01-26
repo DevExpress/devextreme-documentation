@@ -33,7 +33,7 @@ Before applying the current **location** settings, the UI component considers th
     </tr>
 </table>
 
-The **screen** option accepts one or several size qualifiers separated by a space. For example, the following settings apply to an element on medium and large screens only.
+The **screen** property accepts one or several size qualifiers separated by a space. For example, the following settings apply to an element on medium and large screens only.
 
     <!--HTML--><div id="responsiveBoxContainer">
         <div data-options="dxItem: {

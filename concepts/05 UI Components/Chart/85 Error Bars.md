@@ -128,7 +128,7 @@ Error bars can be generated either from concrete or calculated values. To genera
 
 ---
 
-Alternatively, error bar values can be calculated according to an algorithm. In this case, choose the needed algorithm using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#type') option and specify the value to be used in calculation using the [value](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/value.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#value') option.
+Alternatively, error bar values can be calculated according to an algorithm. In this case, choose the needed algorithm using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#type') property and specify the value to be used in calculation using the [value](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar/value.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/#value') option.
 
 ---
 ##### jQuery

@@ -220,7 +220,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
 
 ---
 
-You can also customize individual tabs. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the tabs as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template') option or assign a customization function straight to this option.
+You can also customize individual tabs. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the tabs as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template') property or assign a customization function straight to this option.
 
 ---
 ##### jQuery

@@ -270,7 +270,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
         });
     });
 
-You can also customize an individual **SelectBox** item. In Angular, Vue, and React, declare them using the [dxItem](/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/) component. In jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') property or assign a customization function straight to this option:
+You can also customize an individual **SelectBox** item. In Angular, Vue, and React, declare them using the [dxItem](/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/) component. In jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') property or assign a customization function straight to this property:
 
 ---
 ##### jQuery

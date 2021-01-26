@@ -83,7 +83,7 @@ The following table compares the drop-down editors according to features:
     </tr>
 </table>
 
-Unlike the rest of the editors, DropDownBox allows you to put any content in its drop-down field. This feature makes it more versatile but at the same time requires more effort from the developer. We recommend using DropDownBox in those advanced use cases that cannot be satisfied by other editors. Refer to the DropDownBox [help topics](/Documentation/Guide/UI_Components/DropDownBox/Overview/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/) for further information.
+Unlike the rest of the editors, DropDownBox allows you to put any content in its drop-down field. This feature makes it more versatile but it is also more complex to implement. For instance, you can embed another DevExtreme component and use it to display data. Refer to the DropDownBox [help topics](/Documentation/Guide/UI_Components/DropDownBox/Overview/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/) for further information.
 
 #####See Also#####
 - [Lookup vs SelectBox](/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/)

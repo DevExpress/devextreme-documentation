@@ -14,7 +14,7 @@ The following list provides an overview of group features that you can configure
 * **Labels**      
 Each group is identified by a label. Its appearance can be changed using the fields of the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/group/label '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/group/label/') object. If the group's width is too small, the label will be hidden.
 * **Headers' Height**      
-Group headers contain labels. To specify the height of the group headers, use the [headerHeight](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/group/headerHeight.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/group/#headerHeight') option.
+Group headers contain labels. To specify the height of the group headers, use the [headerHeight](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/group/headerHeight.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/group/#headerHeight') property.
 * **Color**     
 There are several approaches to colorizing the group headers. Refer to the [color](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/group/color.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/group/#color') property description to find information about all of them.
 * **Hover and Selection Styles**        

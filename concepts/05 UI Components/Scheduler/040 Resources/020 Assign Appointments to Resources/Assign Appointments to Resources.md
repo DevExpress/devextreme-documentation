@@ -1,6 +1,6 @@
 The **Scheduler** UI component allows you to assign appointments to a set of predefined resources. Consider the following example: in an educational center lectures are held in two rooms. In scheduling terms, a lecture is an appointment, a room is a resource instance, and all rooms are considered the resource kind.
 
-To define resource kinds, assign an array of objects specifying them to the [resources](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/') option. Each object must have at least the following fields.
+To define resource kinds, assign an array of objects specifying them to the [resources](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/') property. Each object must have at least the following fields.
 
 - [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#dataSource')
     All available resource instances (for example, room101, room102). For information on different techniques that you can use to provide data for resources, see the [Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/UI_Components/Scheduler/Data_Binding/') topic.

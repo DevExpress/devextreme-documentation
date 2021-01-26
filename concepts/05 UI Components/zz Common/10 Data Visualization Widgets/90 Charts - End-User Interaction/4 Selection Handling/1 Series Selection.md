@@ -45,7 +45,7 @@ or for an individual series:
         }]
 	};
 
-To choose which series elements to highlight in the selected state, specify the **selectionMode** option. Like the selection style, this property can be specified for all, type-specific or an individual series. There are several selection modes in the chart UI components. Available modes depend on the [series type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') you use.
+To choose which series elements to highlight in the selected state, specify the **selectionMode** property. Like the selection style, this property can be specified for all, type-specific or an individual series. There are several selection modes in the chart UI components. Available modes depend on the [series type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') you use.
 
 You can also allow the user to select multiple series. For this purpose, set the [seriesSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#seriesSelectionMode') property to *'multiple'*.
 

@@ -8,7 +8,7 @@ default: 'ease'
 A string specifying the easing function for animation.
 
 ---
-DevExtreme supports predefined jQuery easing (*"linear"* and *"swing"*) and CSS transition timing functions (*"linear"*, *"ease"*, *"ease-in"*, *"ease-out"*, *"ease-in-out"*, *"cubic-besier(0,1,1,0)"*, etc.). For more information on CSS transition timing functions, see <a href="http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp" target="_blank">CSS3 transition-timing-function Property</a>. You can also register a custom easing function using jQuery and pass its name to the **easing** option.
+DevExtreme supports predefined jQuery easing (*"linear"* and *"swing"*) and CSS transition timing functions (*"linear"*, *"ease"*, *"ease-in"*, *"ease-out"*, *"ease-in-out"*, *"cubic-besier(0,1,1,0)"*, etc.). For more information on CSS transition timing functions, see <a href="http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp" target="_blank">CSS3 transition-timing-function Property</a>. You can also register a custom easing function using jQuery and pass its name to the **easing** property.
 
     <!--JavaScript-->
     $.easing.customEasing = function(t, millisecondsSince, startValue, endValue, totalDuration) {

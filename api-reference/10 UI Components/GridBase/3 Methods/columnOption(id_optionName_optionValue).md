@@ -3,7 +3,7 @@ id: GridBase.columnOption(id, optionName, optionValue)
 ---
 ---
 ##### shortDescription
-Updates the value of a single column option.
+Updates the value of a single column property.
 
 ##### param(id): Number | String
 The column's index, data field, caption, type, or unique name. Refer to [columnOption(id)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id).md '{basewidgetpath}/Methods/#columnOptionid') for details.

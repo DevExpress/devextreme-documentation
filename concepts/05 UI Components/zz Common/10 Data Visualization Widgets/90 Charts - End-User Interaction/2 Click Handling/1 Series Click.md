@@ -1,4 +1,4 @@
-You can handle a series click. To do this, implement a callback function and assign it to the chart's **onSeriesClick** option.
+You can handle a series click. To do this, implement a callback function and assign it to the chart's **onSeriesClick** property.
 
     <!--JavaScript-->var chartOptions = {
         onSeriesClick: function (info) {

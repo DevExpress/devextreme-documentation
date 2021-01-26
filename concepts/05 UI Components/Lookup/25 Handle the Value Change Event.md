@@ -1,4 +1,4 @@
-By default, the **Lookup** applies a value immediately after an end user chooses an item from the drop-down menu. To change this behavior and apply the value after a user clicks the "Apply" button, assign *'useButtons'* to the [applyValueMode](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#applyValueMode') option.
+By default, the **Lookup** applies a value immediately after an end user chooses an item from the drop-down menu. To change this behavior and apply the value after a user clicks the "Apply" button, assign *'useButtons'* to the [applyValueMode](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#applyValueMode') property.
 
 ---
 ##### jQuery

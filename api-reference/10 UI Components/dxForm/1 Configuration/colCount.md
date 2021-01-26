@@ -11,7 +11,7 @@ The count of columns in the form layout.
 ---
 [note]
 
-For extra small screens, this property always equals *1* to make the UI component adaptive. To override this logic, specify the [colCountByScreen](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/') option.
+For extra small screens, this property always equals *1* to make the UI component adaptive. To override this logic, specify the [colCountByScreen](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/') property.
 
 ---
 ##### jQuery

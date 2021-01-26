@@ -16,4 +16,4 @@ The appearance of the major ticks can be customized using the properties of the 
 		}
 	};
 
-Major ticks can be arranged on the scale in several different ways. By default, major ticks arrange automatically. If you are not satisfied with major ticks arranged like that, you can specify a custom interval for the ticks using the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/tickInterval '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/tickInterval/') option.
+Major ticks can be arranged on the scale in several different ways. By default, major ticks arrange automatically. If you are not satisfied with major ticks arranged like that, you can specify a custom interval for the ticks using the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/tickInterval '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/tickInterval/') property.

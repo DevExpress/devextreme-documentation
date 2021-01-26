@@ -12,7 +12,7 @@ Annotations are images and text blocks that provide additional information on th
 
 ![DevExtreme Chart: Annotations](/images/ChartJS/visual_elements/annotations.png)
 
-To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/BaseChartAnnotationConfig/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#type') field set to *"text"* or *"image"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseChartAnnotationConfig/text.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#text') or [image](/api-reference/_hidden/BaseChartAnnotationConfig/image '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/image/') option:
+To configure annotations, assign an array of objects to the **annotations[]** property. Each object should have the [type](/api-reference/_hidden/BaseChartAnnotationConfig/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#type') field set to *"text"* or *"image"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseChartAnnotationConfig/text.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/#text') or [image](/api-reference/_hidden/BaseChartAnnotationConfig/image '/Documentation/ApiReference/UI_Components/dxChart/Configuration/annotations/image/') option:
 
 ---
 ##### jQuery

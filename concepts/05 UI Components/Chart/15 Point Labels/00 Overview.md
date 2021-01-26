@@ -122,7 +122,7 @@ To configure point labels, use the fields of the [label](/api-reference/20%20Dat
 
 ---
 
-Point labels are not visible by default. To make them visible, assign **true** to the **label**.**visible** option. With this configuration, point labels are displayed detached from their respective series points. You can make the connection between labels and points more evident by making label connectors visible. For this purpose, assign **true** to the **label**.[connector](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/connector '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/connector/').**visible** option.
+Point labels are not visible by default. To make them visible, assign **true** to the **label**.**visible** property. With this configuration, point labels are displayed detached from their respective series points. You can make the connection between labels and points more evident by making label connectors visible. For this purpose, assign **true** to the **label**.[connector](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/connector '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/connector/').**visible** property.
 
 ---
 ##### jQuery

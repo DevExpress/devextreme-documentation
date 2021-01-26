@@ -1,4 +1,4 @@
-To arrange items on the menu panel in a row (horizontally) or in a column (vertically), use the [orientation](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/orientation.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#orientation') option.
+To arrange items on the menu panel in a row (horizontally) or in a column (vertically), use the [orientation](/api-reference/10%20UI%20Widgets/dxMenu/1%20Configuration/orientation.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#orientation') property.
 
 ---
 ##### jQuery

@@ -15,4 +15,4 @@ When you use a *twoColorNeedle* indicator, define the colors for it using the **
 
 #include common-colorlist
 
-In addition, you can specify the ratio between the main and the second color using the **secondFraction** option.
+In addition, you can specify the ratio between the main and the second color using the **secondFraction** property.

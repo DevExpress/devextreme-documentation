@@ -9,7 +9,7 @@ To specify the *win-loss* series type, assign *'winloss'* to the [type](/api-ref
 		// ...
 	};
 
-After that, specify the value to be used as the threshold. Assign this value to the [winlossThreshold](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/winlossThreshold.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#winlossThreshold') option.
+After that, specify the value to be used as the threshold. Assign this value to the [winlossThreshold](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/winlossThreshold.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#winlossThreshold') property.
 
 	<!--JavaScript-->var sparklineOptions = {
 		winlossThreshold: 2000,

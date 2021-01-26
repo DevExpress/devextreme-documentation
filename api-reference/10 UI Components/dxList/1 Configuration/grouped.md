@@ -24,7 +24,7 @@ When this property is **true**, make sure that all data source objects have the 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
 }
 
-You can supply data to this structure using the **DataSource** object's [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') option.
+You can supply data to this structure using the **DataSource** object's [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
 [note]Only one-level grouping is supported.
 

@@ -123,7 +123,7 @@ The following code adds a simple **RangeSlider** to your page. The **start** and
 
 ---
 
-In addition, you can specify the step of **RangeSlider** values using the [step](/api-reference/10%20UI%20Widgets/dxSliderBase/1%20Configuration/step.md '/Documentation/ApiReference/UI_Components/dxRangeSlider/Configuration/#step') option.
+In addition, you can specify the step of **RangeSlider** values using the [step](/api-reference/10%20UI%20Widgets/dxSliderBase/1%20Configuration/step.md '/Documentation/ApiReference/UI_Components/dxRangeSlider/Configuration/#step') property.
 
 ---
 ##### jQuery

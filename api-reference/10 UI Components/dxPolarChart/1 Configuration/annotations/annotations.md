@@ -12,7 +12,7 @@ Specifies the annotation collection.
 Annotations are images and text blocks that provide additional information about the visualized data.
 
 ![DevExtreme PolarChart: Annotations](/images/ChartJS/annotations/polar-chart-text-image-annotation.png)       
-To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/BaseChartAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"* or *"image"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseChartAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') or [image](/api-reference/_hidden/BaseChartAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/') option:
+To configure annotations, assign an array of objects to the **annotations[]** property. Each object should have the [type](/api-reference/_hidden/BaseChartAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"* or *"image"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseChartAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') or [image](/api-reference/_hidden/BaseChartAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/') option:
     
 ---
 ##### jQuery

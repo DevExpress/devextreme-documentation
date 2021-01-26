@@ -30,7 +30,7 @@ However, there are some scenarios in which you do not know exactly how many seri
         ...
     ]
 
-If you define a data source in this manner, set the argument and value fields using the **argumentField** and **valueField** properties of the **commonSeriesSettings** configuration object (for all series at once). Then, define a template for the series using the **seriesTemplate** configuration object. Within this object, set the data source field that specifies the series name to the **nameField** option. 
+If you define a data source in this manner, set the argument and value fields using the **argumentField** and **valueField** properties of the **commonSeriesSettings** configuration object (for all series at once). Then, define a template for the series using the **seriesTemplate** configuration object. Within this object, set the data source field that specifies the series name to the **nameField** property. 
 
 If you need to specify individual values for the properties of a particular series, assign a callback function to the **customizeSeries** property of the **seriesTemplate** object.
 

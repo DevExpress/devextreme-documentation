@@ -3,7 +3,7 @@ id: GridBase.columnOption(id, optionName)
 ---
 ---
 ##### shortDescription
-Gets the value of a single column option.
+Gets the value of a single column property.
 
 ##### return: any
 The option's value.

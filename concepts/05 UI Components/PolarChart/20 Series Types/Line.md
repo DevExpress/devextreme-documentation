@@ -27,11 +27,11 @@ Note that you can use a spider web for polar charts displaying discrete data. Fo
 
 ![SpiderWeb PolarLineSeriesType ChartJS](/images/ChartJS/PolarLine_useSpiderWeb.png)
 
-Line polar charts are appropriate for data whose values span cyclically repeating arguments. In this instance, set the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/').[period](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/period.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#period') option.
+Line polar charts are appropriate for data whose values span cyclically repeating arguments. In this instance, set the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/').[period](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/period.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#period') property.
 
 ![Cyclic PolarLineSeriesType ChartJS](/images/ChartJS/PolarLine_Smooth_Cyclic.png)
 
-In some scenarios, you may need to close the line chart by joining the first point and the last point. For this purpose, set the series' [closed](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/closed.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/#closed') option.
+In some scenarios, you may need to close the line chart by joining the first point and the last point. For this purpose, set the series' [closed](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/closed.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/#closed') property.
 
 ![Closed Cyclic PolarLineSeriesType ChartJS](/images/ChartJS/PolarLine_Smooth_Cyclic_Closed.png)
 

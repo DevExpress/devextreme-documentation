@@ -96,7 +96,7 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
 
 ---
 
-If you need to disable specific dates, use the [disabledDates](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/disabledDates.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#disabledDates') option. You can specify either an array of predefined dates or a function that determines whether a date is available. For example, the following code disables weekends:
+If you need to disable specific dates, use the [disabledDates](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/disabledDates.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#disabledDates') property. You can specify either an array of predefined dates or a function that determines whether a date is available. For example, the following code disables weekends:
 
 ---
 ##### jQuery

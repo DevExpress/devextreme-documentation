@@ -13,7 +13,7 @@ The function's parameter has the following fields:
     </tr>
     <tr>
         <td><code>originalValue</code></td>
-        <td>The primary bullet value as it is assigned to the <a href="/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#value">value</a> option.</td>
+        <td>The primary bullet value as it is assigned to the <a href="/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#value">value</a> property.</td>
     </tr>
     <tr>
         <td><code>value</code></td>
@@ -21,7 +21,7 @@ The function's parameter has the following fields:
     </tr>
     <tr>
         <td><code>originalTarget</code></td>
-        <td>The target bullet value as it is assigned to the <a href="/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#target">target</a> option.</td>
+        <td>The target bullet value as it is assigned to the <a href="/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#target">target</a> property.</td>
     </tr>
     <tr>
         <td><code>target</code></td>

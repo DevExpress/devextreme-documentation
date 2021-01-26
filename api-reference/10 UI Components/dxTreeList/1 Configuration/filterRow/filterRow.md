@@ -10,7 +10,7 @@ Each cell in the filter row contains a magnifying glass icon, pausing on which o
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList FilterRow](/images/treelist/visual_elements/filter_row_operation_chooser.png)
 
-To make the filter row visible, assign **true** to the **filterRow**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow/visible.md '{basewidgetpath}/Configuration/filterRow/#visible') option.
+To make the filter row visible, assign **true** to the **filterRow**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow/visible.md '{basewidgetpath}/Configuration/filterRow/#visible') property.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/UsingFilterRow/"

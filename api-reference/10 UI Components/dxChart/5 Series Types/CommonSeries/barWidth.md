@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a fixed width for all bars in a series, measured in pixels. Takes precedence over the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#barPadding') option.
+Specifies a fixed width for all bars in a series, measured in pixels. Takes precedence over the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#barPadding') property.
 
 ##### propertyOf
 dxChartSeriesTypes.BarSeries,dxChartSeriesTypes.StackedBarSeries,dxChartSeriesTypes.FullStackedBarSeries,dxChartSeriesTypes.RangeBarSeries

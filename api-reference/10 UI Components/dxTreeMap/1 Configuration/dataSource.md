@@ -68,7 +68,7 @@ A plain data array can imply a hierarchical structure. An example of such array 
 Depending on your data source, bind the **TreeMap** to data as follows.
 
 - **Data Array**        
-Assign the array to the **dataSource** option. 
+Assign the array to the **dataSource** property. 
 
 - **Read-Only Data in JSON Format**          
 Set the **dataSource** property to the URL of a JSON file or service that returns JSON data.

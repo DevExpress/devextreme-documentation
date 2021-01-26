@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a fixed angular width for all bars in a series, measured in degrees. Takes precedence over the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#barPadding') option.
+Specifies a fixed angular width for all bars in a series, measured in degrees. Takes precedence over the [barPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/barPadding.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#barPadding') property.
 
 ##### propertyOf
 dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarseries

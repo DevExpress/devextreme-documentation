@@ -5,7 +5,7 @@ By default, any map is centered on a (0, 0) geographical point. To center the ma
 		center: [-87.627778, 41.881944] // centers the map on Chicago
 	};
 
-If you need to restrict the view area to specific coordinates, set the [bounds](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/bounds.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#bounds') option. This property accepts an array of geographical coordinates in the following format: *[minLongitude, maxLatitude, maxLongitude, minLatitude]*.
+If you need to restrict the view area to specific coordinates, set the [bounds](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/bounds.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#bounds') property. This property accepts an array of geographical coordinates in the following format: *[minLongitude, maxLatitude, maxLongitude, minLatitude]*.
 
 	<!--JavaScript-->var vectorMapCfg = {
 		// ...

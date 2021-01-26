@@ -23,7 +23,7 @@ By default, scale ticks are generated automatically. If you are not satisfied wi
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleMinorTicks/"
 }
 
-If neither automatically generated ticks nor ticks with a custom interval fit your requirements, you can place major and minor ticks at specific scale values. Assign an array of required values to the [customTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customTicks.md '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/scale/#customTicks') or [customMinorTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customMinorTicks.md '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/scale/#customMinorTicks') option.
+If neither automatically generated ticks nor ticks with a custom interval fit your requirements, you can place major and minor ticks at specific scale values. Assign an array of required values to the [customTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customTicks.md '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/scale/#customTicks') or [customMinorTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customMinorTicks.md '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/scale/#customMinorTicks') property.
 
 	<!--JavaScript-->var gaugeOptions = {
 		scale: {

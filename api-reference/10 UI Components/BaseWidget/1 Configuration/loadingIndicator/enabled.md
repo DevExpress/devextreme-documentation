@@ -12,4 +12,4 @@ The loading indicator's visibility is tied to the [DataSource](/api-reference/30
 
 [note] The [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') property does not have to be set to a **DataSource** instance because the UI component wraps anything passed to this property in the **DataSource**. 
 
-If you want to change the loading indicator's visibility, use the [show](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/loadingIndicator/show.md '{basewidgetpath}/Configuration/loadingIndicator/#show') option.
+If you want to change the loading indicator's visibility, use the [show](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/loadingIndicator/show.md '{basewidgetpath}/Configuration/loadingIndicator/#show') property.

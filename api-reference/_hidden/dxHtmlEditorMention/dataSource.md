@@ -13,7 +13,7 @@ If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.d
 Depending on your data source, specify this property as described in the following list. The data source can provide `string` values or objects. In the latter case, also specify the [displayExpr](/api-reference/_hidden/dxHtmlEditorMention/displayExpr.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#displayExpr') and [valueExpr](/api-reference/_hidden/dxHtmlEditorMention/valueExpr.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#valueExpr').
 
 - **Data Array**        
-Assign the array to the **dataSource** option. 
+Assign the array to the **dataSource** property. 
 
 - **Read-Only Data in JSON Format**          
 Set the **dataSource** property to the URL of a JSON file or service that returns JSON data.

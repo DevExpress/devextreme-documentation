@@ -41,7 +41,7 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     
 ---
 
-If you need a more specific customization, define a custom template in the **columns**.[headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#headerCellTemplate') option. This property accepts a function or template container. 
+If you need a more specific customization, define a custom template in the **columns**.[headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#headerCellTemplate') property. This property accepts a function or template container. 
 
 ---
 ##### jQuery
@@ -103,7 +103,7 @@ If you need a more specific customization, define a custom template in the **col
     
 ---
 
-To hide column headers, assign **false** to the [showColumnHeaders](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/showColumnHeaders.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#showColumnHeaders') option.
+To hide column headers, assign **false** to the [showColumnHeaders](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/showColumnHeaders.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#showColumnHeaders') property.
 
 ---
 ##### jQuery

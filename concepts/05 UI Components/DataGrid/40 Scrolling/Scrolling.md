@@ -110,7 +110,7 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Con
     
 ---
 
-The **DataGrid** adapts its scrolling mechanism to the current platform. It utilizes native scrolling on most platforms, except non-Mac desktops and Android 4.0 below devices, where the UI component simulates scrolling. You can force the **DataGrid** to use native or simulated scrolling on all platforms by setting the [useNative](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/scrolling/useNative.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#useNative') option.
+The **DataGrid** adapts its scrolling mechanism to the current platform. It utilizes native scrolling on most platforms, except non-Mac desktops and Android 4.0 below devices, where the UI component simulates scrolling. You can force the **DataGrid** to use native or simulated scrolling on all platforms by setting the [useNative](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/scrolling/useNative.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#useNative') property.
 
 ---
 ##### jQuery

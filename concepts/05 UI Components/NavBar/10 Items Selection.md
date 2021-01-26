@@ -36,7 +36,7 @@ An end user can select **NavBar** items in two different modes: *'single'* (by d
 
 ---
 
-If you need an item to be preselected, pass its index in the data source array to the [selectedIndex](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectedIndex') option.
+If you need an item to be preselected, pass its index in the data source array to the [selectedIndex](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#selectedIndex') property.
 
 ---
 ##### jQuery

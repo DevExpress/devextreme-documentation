@@ -36,7 +36,7 @@ The following list describes the available post-processing functions. These func
 
 You can implement the capability to select the post-processing function at runtime using instructions from the [Runtime Summary Type Selection](/concepts/05%20Widgets/PivotGrid/040%20Summaries/35%20Runtime%20Summary%20Type%20Selection.md '/Documentation/Guide/UI_Components/PivotGrid/Summaries/#Runtime_Summary_Type_Selection') article.
 
-To specify a custom post-processing function, use the [calculateSummaryValue](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/calculateSummaryValue.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#calculateSummaryValue') option.
+To specify a custom post-processing function, use the [calculateSummaryValue](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/calculateSummaryValue.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#calculateSummaryValue') property.
 
 #include common-ref-enum with {
     enum: "`PivotGridSummaryDisplayMode`",

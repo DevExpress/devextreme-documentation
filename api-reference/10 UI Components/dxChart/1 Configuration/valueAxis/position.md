@@ -26,4 +26,4 @@ Depending on the value of the [rotated](/api-reference/20%20Data%20Visualization
     </tr>
 </table>
 
-If the predefined positions do not meet your requirements, use the [customPosition](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/customPosition.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#customPosition') option.
+If the predefined positions do not meet your requirements, use the [customPosition](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/customPosition.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#customPosition') property.

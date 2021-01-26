@@ -1,4 +1,4 @@
-When the **Popup** is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shading') option. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shadingColor') option.
+When the **Popup** is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shading') property. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shadingColor') property.
 
 ---
 ##### jQuery

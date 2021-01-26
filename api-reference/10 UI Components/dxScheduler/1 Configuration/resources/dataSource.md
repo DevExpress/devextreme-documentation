@@ -15,7 +15,7 @@ Each resource instance is an object with the  `id`, `color`, and `text` fields. 
 Depending on your data source, specify the **dataSource** property as follows. In each case, also specify the [fieldExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resources/fieldExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr') property to [bind appointments to resource instances](/concepts/05%20Widgets/Scheduler/040%20Resources/020%20Assign%20Appointments%20to%20Resources '/Documentation/Guide/UI_Components/Scheduler/Resources/Assign_Appointments_to_Resources/'). 
 
 - **Data Array**        
-Assign the array to the **dataSource** option. 
+Assign the array to the **dataSource** property. 
 
 - **Read-Only Data in JSON Format**          
 Set the **dataSource** property to the URL of a JSON file or service that returns JSON data.

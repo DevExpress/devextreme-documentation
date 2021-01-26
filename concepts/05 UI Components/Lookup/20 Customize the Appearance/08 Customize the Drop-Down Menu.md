@@ -1,4 +1,4 @@
-On desktops and iOS devices, the drop-down menu is the [Popover](/concepts/05%20Widgets/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/Overview/') UI component; on other devices, it is the [Popup](/concepts/05%20Widgets/Popup/00%20Overview.md '/Documentation/Guide/UI_Components/Popup/Overview/') UI component. To use the **Popup** on all devices, assign **false** to the [usePopover](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#usePopover') option.
+On desktops and iOS devices, the drop-down menu is the [Popover](/concepts/05%20Widgets/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/Overview/') UI component; on other devices, it is the [Popup](/concepts/05%20Widgets/Popup/00%20Overview.md '/Documentation/Guide/UI_Components/Popup/Overview/') UI component. To use the **Popup** on all devices, assign **false** to the [usePopover](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#usePopover') property.
 
 To customize the **Popup** or **Popover**, use the [dropDownOptions](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dropDownOptions') object. For example, the following code removes shading from beneath the **Popup** and disables full-screen mode:
 
@@ -392,7 +392,7 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-re
 
 ---
 
-If you have not specified anything to be displayed in the title, hide it by assigning **false** to the **dropDownOptions**.[showTitle](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showTitle') option.
+If you have not specified anything to be displayed in the title, hide it by assigning **false** to the **dropDownOptions**.[showTitle](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showTitle') property.
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

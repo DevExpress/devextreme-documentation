@@ -129,7 +129,7 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
 
 ---
 
-If you need to position the **Popover** against a certain side of the [target element](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target'), set the [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#position') option.
+If you need to position the **Popover** against a certain side of the [target element](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target'), set the [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#position') property.
 
 ---
 ##### jQuery 

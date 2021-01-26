@@ -49,7 +49,7 @@ Specified in a summary configuration object, this property affects an individual
 
 [note]This property does not have any effect when you use a remote data source.
 
-[note]Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** option. However, you can implement a custom summary, which skips empty values, as follows.
+[note]Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** property. However, you can implement a custom summary, which skips empty values, as follows.
     
 ---
 #####jQuery

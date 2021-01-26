@@ -78,7 +78,7 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Widgets/dxScheduler/
 
 ---
 
-Additionally, you can apply shading to cover the timetable up to the current time by assigning **true** to the [shadeUntilCurrentTime](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/shadeUntilCurrentTime.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#shadeUntilCurrentTime') option.
+Additionally, you can apply shading to cover the timetable up to the current time by assigning **true** to the [shadeUntilCurrentTime](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/shadeUntilCurrentTime.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#shadeUntilCurrentTime') property.
 
 ---
 

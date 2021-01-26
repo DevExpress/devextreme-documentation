@@ -12,7 +12,7 @@ Specifies the type of the argument axis.
 The argument axis can have one of the following types.
 
 - **Continuous**        
-Displays numeric and date-time arguments. To divide this axis into intervals, use the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/tickInterval/') option.
+Displays numeric and date-time arguments. To divide this axis into intervals, use the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/tickInterval/') property.
 - **Discrete**       
 Displays string arguments called "categories". To sort them, use the [categories](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/categories.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#categories') array.
 - **Logarithmic**       

@@ -1,4 +1,4 @@
-To reorder grid columns, change their order in the **columns** array. Users can also reorder columns if you enable the [allowColumnReordering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering) option.
+To reorder grid columns, change their order in the **columns** array. Users can also reorder columns if you enable the [allowColumnReordering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering) property.
 
 ---
 ##### jQuery

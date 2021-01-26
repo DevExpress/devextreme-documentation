@@ -53,7 +53,7 @@ The following fields are available for a sparkline of the "winloss" [type](/api-
     </tr>
     <tr>
         <td><code>originalThresholdValue</code></td>    
-        <td>The threshold value of a winloss sparkline as it is assigned to the <a href="{basewidgetpath}/Configuration/#winlossThreshold">winlossThreshold</a> option.</td>
+        <td>The threshold value of a winloss sparkline as it is assigned to the <a href="{basewidgetpath}/Configuration/#winlossThreshold">winlossThreshold</a> property.</td>
     </tr>
     <tr>
         <td><code>thresholdValue</code></td>     

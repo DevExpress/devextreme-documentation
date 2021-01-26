@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Formats the point argument before it is displayed in the point label. To format the point value, use the [format](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/format.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#format') option.
+Formats the point argument before it is displayed in the point label. To format the point value, use the [format](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/format.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#format') property.
 
 ---
 A point label displays only the point value by default. Using the **label**.[customizeText](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/customizeText.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#customizeText') option, you can instruct the label to display the point argument as well. The **argumentFormat** property applies in this case only. This property accepts an object whose fields are described in the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section.

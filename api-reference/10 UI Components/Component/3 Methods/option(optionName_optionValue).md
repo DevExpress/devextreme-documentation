@@ -3,7 +3,7 @@ id: Component.option(optionName, optionValue)
 ---
 ---
 ##### shortDescription
-Updates the value of a single option.
+Updates the value of a single property.
 
 ##### param(optionName): String
 The option's name or full path.

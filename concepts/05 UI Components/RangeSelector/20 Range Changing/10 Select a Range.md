@@ -11,7 +11,7 @@ When you are selecting a range using sliders, one slider can be dragged across a
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/RangeSelectorHowTos/allowSlidersSwap.html, /Content/Applications/20_1/DataVisualization/RangeSelectorHowTos/allowSlidersSwap.js"></div>
 
-There is one more property that specifies **RangeSelector** behavior when you select a range using sliders. When you let a slider off, it either stays at the place where you released it or moves to the nearest scale tick. To specify how a slider should behave in this case, use the [snapToTicks](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/behavior/snapToTicks.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/behavior/#snapToTicks') option.
+There is one more property that specifies **RangeSelector** behavior when you select a range using sliders. When you let a slider off, it either stays at the place where you released it or moves to the nearest scale tick. To specify how a slider should behave in this case, use the [snapToTicks](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/behavior/snapToTicks.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/behavior/#snapToTicks') property.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/RangeSelectorHowTos/snapToTicks.html, /Content/Applications/20_1/DataVisualization/RangeSelectorHowTos/snapToTicks.js"></div>
 

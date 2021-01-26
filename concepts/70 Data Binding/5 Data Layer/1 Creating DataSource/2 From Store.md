@@ -12,7 +12,7 @@ If you need to specify other DataSource [options](/api-reference/30%20Data%20Lay
         store: store
     });
 
-In this example, the Store instance is passed to the [store](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#store') configuration option.
+In this example, the Store instance is passed to the [store](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#store') configuration property.
 
 A Store can be specified implicitly. Two possibilities are described above ([From Array](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/0%20From%20Array.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/From_Array') and [From Url](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/1%20From%20url.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/From_url')). In addition, you can use the following.
 

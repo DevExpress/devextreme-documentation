@@ -28,7 +28,7 @@ Although by default the tooltip displays information about extreme sparkline val
 Furthermore, there is a number of additional properties specifying the appearance of the tooltip. All of them are set in the **tooltip** configuration object. A structured overview of these properties is given in the following list.
 
 * **Color**			
-You can specify the color of the tooltip using the [color](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/color.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/tooltip/#color') option.
+You can specify the color of the tooltip using the [color](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/color.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/tooltip/#color') property.
 
 * **Font Settings**			
 To change the font of the text displayed by the tooltip, use fields of the [font](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/font '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/tooltip/font/') object.

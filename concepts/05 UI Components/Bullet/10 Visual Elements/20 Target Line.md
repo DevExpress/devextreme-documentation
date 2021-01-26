@@ -9,4 +9,4 @@ To specify the target value, set the [target](/api-reference/20%20Data%20Visuali
 		// ...
 	};
 
-Additionally, you can customize the appearance of the target line. Particularly, you can specify its color using the [targetColor](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetColor.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetColor') option, and its width using the [targetWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetWidth.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetWidth') option.
+Additionally, you can customize the appearance of the target line. Particularly, you can specify its color using the [targetColor](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetColor.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetColor') option, and its width using the [targetWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetWidth.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetWidth') property.

@@ -2,7 +2,7 @@ Bar series visualize data as a collection of bars. Those bars can be displayed s
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bar.html, /Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bar.js"></div>
 
-To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') option. You can configure:
+To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property. You can configure:
 
 - Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') array;
 - All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object;

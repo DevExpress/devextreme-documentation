@@ -2,7 +2,7 @@ A series is a collection of related data points.
 
 ![DevExtreme HTML5 JavaScript Charts Series](/images/ChartJS/visual_elements/series.png)
 
-The most important characteristic of a series is its type. The **Chart** provides over 20 series types, and all of them are described in the [Series Types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/UI_Components/Chart/Series_Types/') article. You can specify the type of a series using its [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') option.
+The most important characteristic of a series is its type. The **Chart** provides over 20 series types, and all of them are described in the [Series Types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/UI_Components/Chart/Series_Types/') article. You can specify the type of a series using its [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property.
 
 ---
 ##### jQuery

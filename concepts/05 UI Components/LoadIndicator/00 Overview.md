@@ -103,7 +103,7 @@ The following code adds a simple **LoadIndicator** to your page. You can change 
 
 ---
 
-If you need to use a custom image in the **LoadIndicator**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadIndicator/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#indicatorSrc') option.
+If you need to use a custom image in the **LoadIndicator**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadIndicator/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#indicatorSrc') property.
 
 ---
 ##### jQuery

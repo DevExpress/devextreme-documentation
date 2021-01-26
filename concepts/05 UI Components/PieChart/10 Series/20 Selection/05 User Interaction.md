@@ -173,7 +173,7 @@ You can disable the selection capability by settings the **series**.[selectionMo
 
 ---
 
-Only a single point can be in the selected state at a time by default. If you need to allow multiple points to be in this state, assign *"multiple"* to the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#pointSelectionMode') option.
+Only a single point can be in the selected state at a time by default. If you need to allow multiple points to be in this state, assign *"multiple"* to the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#pointSelectionMode') property.
 
 ---
 ##### jQuery

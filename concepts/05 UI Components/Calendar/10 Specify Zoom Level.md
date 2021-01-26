@@ -1,4 +1,4 @@
-To specify which calendar view (month, year, decade or century) should be displayed at first, set the [zoomLevel](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/zoomLevel.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel') option.
+To specify which calendar view (month, year, decade or century) should be displayed at first, set the [zoomLevel](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/zoomLevel.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel') property.
 
 ---
 ##### jQuery

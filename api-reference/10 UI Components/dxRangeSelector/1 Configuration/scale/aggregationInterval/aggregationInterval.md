@@ -9,7 +9,7 @@ Specifies the length of aggregation intervals in scale units. Applies only to th
 ---
 For data aggregation, the scale is divided into intervals. Series points that fall within the same interval get aggregated together. The **aggregationInterval** property defines the length of each interval. 
 
-If the scale displays numbers, assign a number to this option. For example, an **aggregationInterval** of 100 produces the following intervals: 0 to 100, 100 to 200, 200 to 300, etc. If the scale displays date-time values, set this property to one of the accepted string values. Alternatively, you can set it to an object that contains one of the fields described in this section.
+If the scale displays numbers, assign a number to this property. For example, an **aggregationInterval** of 100 produces the following intervals: 0 to 100, 100 to 200, 200 to 300, etc. If the scale displays date-time values, set this property to one of the accepted string values. Alternatively, you can set it to an object that contains one of the fields described in this section.
 
 ---
 ##### jQuery

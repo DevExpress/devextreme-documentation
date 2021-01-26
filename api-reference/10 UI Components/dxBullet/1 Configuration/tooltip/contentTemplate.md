@@ -12,7 +12,7 @@ You can access the following **pointsInfo** fields.
     </tr>
     <tr>
         <td><code>originalValue</code></td>
-        <td>The primary bullet value assigned to the <a href="{basewidgetpath}/Configuration/#value">value</a> option.</td>
+        <td>The primary bullet value assigned to the <a href="{basewidgetpath}/Configuration/#value">value</a> property.</td>
     </tr>
     <tr>
         <td><code>value</code></td>
@@ -20,7 +20,7 @@ You can access the following **pointsInfo** fields.
     </tr>
     <tr>
         <td><code>originalTarget</code></td>
-        <td>The target bullet value assigned to the <a href="{basewidgetpath}/Configuration/#target">target</b> option.</td>
+        <td>The target bullet value assigned to the <a href="{basewidgetpath}/Configuration/#target">target</b> property.</td>
     </tr>
     <tr>
         <td><code>target</code></td>

@@ -14,9 +14,9 @@ The constant line label displays the value of the constant line.
 The **label** object specifies the following characteristics of the constant line label.
 
 * **Visibility**    
-By default, the constant line label is visible. To hide it, assign **false** to the **visible** option.
+By default, the constant line label is visible. To hide it, assign **false** to the **visible** property.
 * **Text**      
-By default, the constant line label displays the [value of the constant line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/constantLines/value.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/#value'). To assign a custom text to the constant line label, use the **text** option.
+By default, the constant line label displays the [value of the constant line](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/constantLines/value.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/#value'). To assign a custom text to the constant line label, use the **text** property.
 * **Position**      
 The constant line label can be located inside or outside the chart plot. Use the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/constantLineStyle/label/position.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#position') property to change this setting.
 * **Alignment**     

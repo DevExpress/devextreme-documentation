@@ -2,7 +2,7 @@ View switcher is a scheduler element used for quick switching between views.
 
 ![View Switcher](/images/UiWidgets/Scheduler_View_Switcher.png)
 
-To specify what views are available within the switcher, use the [views](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') option.
+To specify what views are available within the switcher, use the [views](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') property.
 
 ---
 

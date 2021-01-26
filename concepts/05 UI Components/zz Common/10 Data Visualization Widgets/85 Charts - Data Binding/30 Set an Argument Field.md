@@ -1,4 +1,4 @@
-After you have bound data to your UI component, you need to specify which fields of a data source object must be used to provide arguments and values for chart points. To specify the argument field name, assign it to the **argumentField** option. This property can be specified differently depending on the UI component you use.
+After you have bound data to your UI component, you need to specify which fields of a data source object must be used to provide arguments and values for chart points. To specify the argument field name, assign it to the **argumentField** property. This property can be specified differently depending on the UI component you use.
 
 * **Chart**		
 Usually, **Chart** contains several series that have the same argument field. You can specify the argument field for all these series at once within the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object.

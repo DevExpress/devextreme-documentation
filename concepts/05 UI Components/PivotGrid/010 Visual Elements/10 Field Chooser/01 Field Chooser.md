@@ -1,4 +1,4 @@
-The Field Chooser is a complementary UI component integrated in the pivot grid that allows you to manage the displayed data. To invoke the Field Chooser, right-click the row or column header, and choose the "Show Field Chooser" option. Also, the Field Chooser can be invoked by clicking the top-left empty area of the pivot grid.
+The Field Chooser is a complementary UI component integrated in the pivot grid that allows you to manage the displayed data. To invoke the Field Chooser, right-click the row or column header, and choose the "Show Field Chooser" property. Also, the Field Chooser can be invoked by clicking the top-left empty area of the pivot grid.
 
 ![DevExtreme PivotGrid FieldChooser](/images/DataGrid/PivotGridFieldChooser.png)
 

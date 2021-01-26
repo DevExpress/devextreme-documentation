@@ -89,7 +89,7 @@ The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Co
 
 ---
 
-You can set the title's text more concisely if you assign it directly to the **title** option. This is useful if you do not want to change the title's default settings and do not need a subtitle. 
+You can set the title's text more concisely if you assign it directly to the **title** property. This is useful if you do not want to change the title's default settings and do not need a subtitle. 
 
 ---
 ##### jQuery

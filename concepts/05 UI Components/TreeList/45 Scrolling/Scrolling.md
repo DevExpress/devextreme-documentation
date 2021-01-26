@@ -44,7 +44,7 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Con
     
 ---
 
-The **TreeList** adapts its scrolling mechanism to the current platform. It utilizes native scrolling on most platforms, except non-Mac desktops and Android 4.0 below devices, where the UI component simulates scrolling. You can force the **TreeList** to use native or simulated scrolling on all platforms by setting the [useNative](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/scrolling/useNative.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#useNative') option.
+The **TreeList** adapts its scrolling mechanism to the current platform. It utilizes native scrolling on most platforms, except non-Mac desktops and Android 4.0 below devices, where the UI component simulates scrolling. You can force the **TreeList** to use native or simulated scrolling on all platforms by setting the [useNative](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/scrolling/useNative.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#useNative') property.
 
 ---
 ##### jQuery

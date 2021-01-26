@@ -89,7 +89,7 @@ Declare several objects in the [panes](/api-reference/20%20Data%20Visualization%
 
 2. **Bind value axes to panes**         
 If a **Chart** has multiple panes, it most likely has [multiple value axes](/concepts/05%20Widgets/Chart/20%20Axes/70%20Multi-Axis%20Chart.md '/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/').
-Bind each of them to a pane using the [pane](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/pane.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#pane') option.
+Bind each of them to a pane using the [pane](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/pane.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#pane') property.
 
     ---
     ##### jQuery

@@ -14,7 +14,7 @@ The value of this property should be specified in the same format as the values 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisCustomPosition/"
 }
 
-[note]This property overrides the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/position.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#position') option.
+[note]This property overrides the [position](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/position.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#position') property.
 
 ##### See also #####
 - **valueAxis**.[customPosition](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/customPosition.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#customPosition')

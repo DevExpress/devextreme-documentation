@@ -10,7 +10,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Opens the drop-down menu.</td>
     </tr>
     <tr>
-        <td>Enter or Backspace</td>
+        <td>Enter or Space</td>
         <td>If the drop-down menu is closed, opens it; otherwise selects the current item.</td>
     </tr>
     <tr>

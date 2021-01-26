@@ -9,7 +9,7 @@ When you bind a **Diagram** UI component to a data source, you should specify pr
 
 <table class="dx-table">
     <tr>
-        <th>Required Options</th>
+        <th>Required Properties</th>
         <th>Node and Edge Arrays</th>
         <th>Linear Array</th>
         <th>Hierarchical Array</th>

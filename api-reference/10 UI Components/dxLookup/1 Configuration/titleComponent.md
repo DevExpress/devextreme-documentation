@@ -1,6 +1,6 @@
 ---
 id: dxLookup.Options.titleComponent
-dep: dxLookup.Options.dropDowComponent
+deprecated: 
 ---
 ---
 ##### shortDescription

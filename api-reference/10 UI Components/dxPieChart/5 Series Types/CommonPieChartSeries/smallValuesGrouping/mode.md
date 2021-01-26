@@ -13,7 +13,7 @@ If you need to group specific chart segments into one, set the properties of the
 
 Use a *'topN'* mode to group all segments with an index that is equal to or greater than the value of the **topCount** property.
 
-To group all segments with a value less than the value of the **threshold** option, set a *'smallValueThreshold'* mode.
+To group all segments with a value less than the value of the **threshold** property, set a *'smallValueThreshold'* mode.
 
 To switch the grouping off, assign *'none'* to the **mode** property.
 

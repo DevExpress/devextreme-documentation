@@ -1,4 +1,4 @@
-To be able to change a UI component option, declare its value an <a href="http://knockoutjs.com/documentation/observables.html" target="_blank">observable</a>.
+To be able to change a UI component property, declare its value an <a href="http://knockoutjs.com/documentation/observables.html" target="_blank">observable</a>.
 
     <!--JavaScript-->var viewModel = {
         checkBoxOptions: {

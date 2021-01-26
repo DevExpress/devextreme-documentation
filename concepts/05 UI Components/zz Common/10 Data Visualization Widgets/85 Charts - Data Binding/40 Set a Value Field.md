@@ -1,4 +1,4 @@
-To set the value field name, assign it to the **valueField** property. Similarly to the [argumentField](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/30%20Set%20an%20Argument%20Field.md '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Set_an_Argument_Field/') option, **valueField** is set differently depending on the UI component in use.
+To set the value field name, assign it to the **valueField** property. Similarly to the [argumentField](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/30%20Set%20an%20Argument%20Field.md '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Set_an_Argument_Field/') property, **valueField** is set differently depending on the UI component in use.
 
 * **Chart**		
 If you have only one series in your chart, specify the **valueField** property within the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') object.

@@ -401,4 +401,4 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
 
 ---
 
-[note] If you pass a JavaScript array to a UI component's **dataSource** option, the UI component automatically places it in an **ArrayStore** that is wrapped in a **DataSource**. You can then call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getDataSource') method to get this **DataSource**.
+[note] If you pass a JavaScript array to a UI component's **dataSource** property, the UI component automatically places it in an **ArrayStore** that is wrapped in a **DataSource**. You can then call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getDataSource') method to get this **DataSource**.

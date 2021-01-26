@@ -1,6 +1,6 @@
 The UI component's **icon** property accepts URLs, so you can assign the image's URL to it. However, it is better to encode the image in the Base64 type instead to reduce the amount of transferred data. Search for an image to Base64 converter on the web.
 
-Although Base64 code can be assigned directly to the **icon** option, we recommend placing it in the CSS because of its length. Add the following CSS rule to your stylesheet:
+Although Base64 code can be assigned directly to the **icon** property, we recommend placing it in the CSS because of its length. Add the following CSS rule to your stylesheet:
 
     <!--CSS-->
     .dx-icon-customicon { // in Angular apps, add ::ng-deep before

@@ -31,4 +31,4 @@ The text for the hint to display.
 ---
 This property accepts a function that must return the required text. When implementing this function, use its parameter to access information on the legend item.
 
-[note]If you have not provided text for legend items using the [customizeText](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/legends/customizeText.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/legends/#customizeText') option, hints will not appear.
+[note]If you have not provided text for legend items using the [customizeText](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/legends/customizeText.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/legends/#customizeText') property, hints will not appear.

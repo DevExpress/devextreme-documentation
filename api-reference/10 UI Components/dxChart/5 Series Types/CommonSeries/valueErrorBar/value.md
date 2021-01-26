@@ -8,7 +8,7 @@ default: 1
 Specifies the value to be used for generating error bars.
 
 ---
-Depending on the value of the **type** option, the **value** property applies as follows.
+Depending on the value of the **type** property, the **value** property applies as follows.
 
 - **type**: *'percent'*        
 The **value** property specifies the percentage of the series point value to be taken.

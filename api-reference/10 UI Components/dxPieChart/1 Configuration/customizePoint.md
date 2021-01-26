@@ -9,7 +9,7 @@ By default, all the points of a pie are displayed identically. But you can speci
 * [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/hoverStyle/')
 * [selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/selectionStyle/')
 
-When implementing a callback function for this option, use the argument or value of a point. They can be accessed using the following fields of the function's parameter.
+When implementing a callback function for this property, use the argument or value of a point. They can be accessed using the following fields of the function's parameter.
 
 <table class="dx-table">
     <tr>

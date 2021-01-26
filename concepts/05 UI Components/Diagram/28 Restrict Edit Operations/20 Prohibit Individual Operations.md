@@ -10,7 +10,7 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     <tr>
         <th>Operation</th>
         <th>User action / IU update operation causes the event to be raised</th>
-        <th>Allow{Operation} option</th>
+        <th>Allow{Operation} property</th>
     </tr>
     <tr>
         <td>addShape</td>

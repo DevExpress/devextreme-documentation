@@ -5,7 +5,7 @@ ${{widget_works_with}}
 Depending on your data source, bind the **{WidgetName}** to data as follows. ${{object_structure_notes}}
 
 - **Data Array**        
-Assign the array to the **dataSource** option${{array_key_note}}. ${{array_view_demo}}
+Assign the array to the **dataSource** property${{array_key_note}}. ${{array_view_demo}}
 
 - **Read-Only Data in JSON Format**          
 Set the **dataSource** property to the URL of a JSON file or service that returns JSON data. ${{json_view_demo}}

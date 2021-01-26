@@ -21,6 +21,6 @@ If items in the row header represent a hierarchical structure, they can have two
 When the user right-clicks a header, a context menu appears. There is a number of properties related to that context menu.
 
 * [allowExpandAll](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowExpandAll.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowExpandAll') &#8212; allows the user to expand/collapse all header items within a header level;
-* [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowFiltering') &#8212; allows the user to change filtering options;
-* [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') &#8212; allows the user to change sorting options;
+* [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowFiltering') &#8212; allows the user to change filtering properties;
+* [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') &#8212; allows the user to change sorting properties;
 * [allowSortingBySummary](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSortingBySummary.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSortingBySummary') &#8212; allows the user to sort columns by summary values.

@@ -1,4 +1,4 @@
-The **DataGrid** UI component raises events before and after a row is inserted, updated or removed from the data source. If the event handlers are going to remain unchanged during the UI component's lifetime, assign them to corresponding **on*EventName*** options:
+The **DataGrid** UI component raises events before and after a row is inserted, updated or removed from the data source. If the event handlers are going to remain unchanged during the UI component's lifetime, assign them to corresponding **on*EventName*** properties:
 
 - [onRowInserting](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowInserting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserting')
 - [onRowInserted](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowInserted.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted')

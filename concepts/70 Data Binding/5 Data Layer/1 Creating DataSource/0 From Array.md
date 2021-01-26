@@ -8,7 +8,7 @@ If you need to specify other DataSource [configuration properties](/api-referenc
         // array of data
         store: array,
 
-        // additional configuration options
+        // additional configuration properties
         sort: "name",
         pageSize: 10
     });

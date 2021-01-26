@@ -2,7 +2,7 @@ Users can zoom the chart by rotating the mouse wheel and pan it using the drag g
 
 ![DevExtreme HTML5 JavaScript Charts Zooming Panning](/images/ChartJS/devextreme-chart-NewZoomScroll.gif)
 
-Zooming and panning are configured in the [zoomAndPan](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/') object. You can enable them separately for the argument and value axes by specifying the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/argumentAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#argumentAxis') and [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/valueAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#valueAxis') options:
+Zooming and panning are configured in the [zoomAndPan](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/') object. You can enable them separately for the argument and value axes by specifying the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/argumentAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#argumentAxis') and [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/valueAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#valueAxis') properties:
 
 ---
 ##### jQuery

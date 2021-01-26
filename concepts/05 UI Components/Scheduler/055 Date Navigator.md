@@ -2,7 +2,7 @@ The date navigator is an element that allows you to change the date displayed on
 
 ![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
 
-You can specify the range of available dates in the [min](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#max') options:
+You can specify the range of available dates in the [min](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#max') properties:
 
 ---
 ##### jQuery

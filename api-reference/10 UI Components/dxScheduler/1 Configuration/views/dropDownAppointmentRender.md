@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.views.dropDownAppointmentRender
-dep: dxScheduler.Options.views.appointmentTooltipRender
+deprecated: 
 ---
 ---
 ##### shortDescription

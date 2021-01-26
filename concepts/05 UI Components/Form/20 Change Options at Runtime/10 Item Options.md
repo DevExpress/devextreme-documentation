@@ -26,7 +26,7 @@ To change a single item property at runtime, call the [itemOption(id, option, va
     });
 
 To change several properties at a time, pass an object to the [itemOption(id, options)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/itemOption(id_options).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_options') method.
-Being called with the *field* parameter only, this method returns the current configuration of the specified form item.
+When you call it with the *field* parameter only, this method returns the current configuration of the specified form item.
 
     <!--JavaScript-->
     $(function() {
@@ -42,7 +42,7 @@ Being called with the *field* parameter only, this method returns the current co
         });
     });
 
-With Angular, Vue, or React, bind the property that should be changed to a component property.
+In Angular, Vue, or React, bind the property that should be changed to a component property.
 
 ---
 

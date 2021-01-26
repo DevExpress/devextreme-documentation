@@ -27,7 +27,7 @@ Note that you can use a spider web for polar charts displaying discrete data. Fo
 
 ![SpiderWeb PolarAreaSeriesType ChartJS](/images/ChartJS/PolarArea_useSpiderWeb.png)
 
-To change the series default appearance, set the options of the **series** configuration object. For instance, you can change the following.
+To change the series default appearance, set the properties of the **series** configuration object. For instance, you can change the following.
 
 *   **Area Color**  
     A color from the chart's [palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/00%20Palettes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes') is used by default. Set a custom color using the series' [color](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/') property. This color will be used for the series' border. The color of the series area will be the same, but a specified capacity will be applied.
@@ -41,4 +41,4 @@ To change the series default appearance, set the options of the **series** confi
 *   **Point Label Options**  
     Make point labels visible by setting the **visible** property of the series' [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/label/') object. For details on other label options, refer to the [Series Point Labels](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/030%20Series%20Point%20Labels.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Series_Point_Labels') topic.
 
-These and other options that can be set for series of the *area* type are explained in the [AreaSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/AreaSeries '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/') Reference section. Set the required series options within the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/') object of the chart's configuration object.
+These and other properties that can be set for series of the *area* type are explained in the [AreaSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/AreaSeries '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/') Reference section. Set the required series properties within the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/') object of the chart's configuration object.

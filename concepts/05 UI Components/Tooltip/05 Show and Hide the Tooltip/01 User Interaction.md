@@ -1,4 +1,4 @@
-To specify when the **Tooltip** should be shown and hidden, set the [showEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/showEvent/') and [hideEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/hideEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/hideEvent/') options. These options can accept several events at once as well as an object.
+To specify when the **Tooltip** should be shown and hidden, set the [showEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/showEvent/') and [hideEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/hideEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/hideEvent/') options. These properties can accept several events at once as well as an object.
 
 ---
 ##### jQuery 

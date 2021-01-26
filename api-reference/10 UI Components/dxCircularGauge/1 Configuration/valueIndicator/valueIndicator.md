@@ -6,10 +6,10 @@ inheritAll:
 ---
 ---
 ##### shortDescription
-Specifies the appearance options of the value indicator.
+Specifies the appearance properties of the value indicator.
 
 ---
-The value indicator is a pointer which designates the main value of the gauge. There are several types of value indicators. Set the required one by using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/valueIndicator/type.md '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/valueIndicator/#type') option, and then specify the options that are specific to this type, if needed. To learn the options that can be specified for a particular type, refer to one of the following sections.
+The value indicator is a pointer which designates the main value of the gauge. There are several types of value indicators. Set the required one by using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/valueIndicator/type.md '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/valueIndicator/#type') option, and then specify the properties that are specific to this type, if needed. To learn the properties that can be specified for a particular type, refer to one of the following sections.
 
 - [RangeBar](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/5%20Indicator%20Types/RangeBar '/Documentation/ApiReference/UI_Components/dxCircularGauge/Indicator_Types/RangeBar/')
 - [RectangleNeedle](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/5%20Indicator%20Types/RectangleNeedle '/Documentation/ApiReference/UI_Components/dxCircularGauge/Indicator_Types/RectangleNeedle/')

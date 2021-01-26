@@ -108,7 +108,7 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
 
 ---
 
-Change the **sortOrder** and **sortIndex** options using the [columnOption](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method to sort at runtime.
+Change the **sortOrder** and **sortIndex** properties using the [columnOption](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method to sort at runtime.
 
 ---
 ##### jQuery

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the hatching options to be applied when a series is selected.
+Specifies the hatching properties to be applied when a series is selected.
 
 ##### propertyOf
 dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarseries

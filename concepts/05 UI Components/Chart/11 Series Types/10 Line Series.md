@@ -156,7 +156,7 @@ To specify one or another series type, assign its name to the **series[]**.[type
 
 ---
 
-Refer to the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API Reference for a full list of options available to a specific series type.
+Refer to the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API Reference for a full list of properties available to a specific series type.
 
 <a href="/Demos/WidgetsGallery/Demo/Charts/Line/" class="button orange small fix-width-155" style="margin-right:5px;" target="_blank">Line Demo</a>
 <a href="/Demos/WidgetsGallery/Demo/Charts/Spline/" class="button orange small fix-width-155" target="_blank">Spline Demo</a>

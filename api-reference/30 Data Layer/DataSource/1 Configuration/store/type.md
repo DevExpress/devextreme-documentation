@@ -19,6 +19,6 @@ This property accepts one of the following values:
 - "odata"  
  Creates an [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').
 
-Each store has options that are detailed in the links above. Declare these options in the **store** object.
+Each store has properties that are detailed in the links above. Declare these properties in the **store** object.
 
 You can implement custom data access logic as described in the [Custom Sources](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources') topic if these stores are not suitable.

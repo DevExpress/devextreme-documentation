@@ -82,7 +82,7 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
 
 ---
 
-Below, you can try out these options in action.
+Below, you can try out these properties in action.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.html, /Content/Applications/20_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.js, /Content/Applications/20_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.css"></div>
 

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-This article describes configuration options of an empty form item.
+This article describes configuration properties of an empty form item.
 
 ---
 An empty item used to add a space between neighboring items. 

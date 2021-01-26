@@ -1,4 +1,4 @@
-Specify the **height** and **width** options to change the **LoadPanel**'s size:
+Specify the **height** and **width** properties to change the **LoadPanel**'s size:
 
 ---
 ##### jQuery

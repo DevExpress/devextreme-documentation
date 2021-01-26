@@ -4,7 +4,7 @@ Use one of the following approaches to handle events.
 
 <a id="UseOption"></a><h4>Assign a Handler to a Configuration Option</h4>
 
-To attach a handler for a certain event to a DataSource or Data Store, use the corresponding configuration option. The options that take on event handling functions have names starting with *on*.
+To attach a handler for a certain event to a DataSource or Data Store, use the corresponding configuration option. The properties that take on event handling functions have names starting with *on*.
 
 The following example demonstrates how to use a configuration property to handle an event.
 

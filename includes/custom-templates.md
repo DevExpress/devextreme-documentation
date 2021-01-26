@@ -1,4 +1,4 @@
-Templates are passed as options that end with **...Template** (in jQuery, Angular, and Vue) or **...Render**/**...Component** (in React).
+Templates are passed as properties that end with **...Template** (in jQuery, Angular, and Vue) or **...Render**/**...Component** (in React).
 
 Each template has access to the following parameters:
 

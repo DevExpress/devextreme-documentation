@@ -18,7 +18,7 @@ If items in the row header represent a hierarchical structure, they can have two
         rowHeaderLayout: 'tree' // 'standard'    
     };
 
-When the user right-clicks a header, a context menu appears. There is a number of options related to that context menu.
+When the user right-clicks a header, a context menu appears. There is a number of properties related to that context menu.
 
 * [allowExpandAll](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowExpandAll.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowExpandAll') &#8212; allows the user to expand/collapse all header items within a header level;
 * [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowFiltering') &#8212; allows the user to change filtering options;

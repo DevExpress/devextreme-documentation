@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Defines options for the series template.
+Defines properties for the series template.
 
 ---
 In most cases, you can organize the array that is assigned to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#dataSource') property in the following way.
@@ -32,7 +32,7 @@ However, there are some scenarios in which you do not know exactly how many seri
 
 If you define a data source in this manner, set the argument and value fields using the **argumentField** and **valueField** properties of the **commonSeriesSettings** configuration object (for all series at once). Then, define a template for the series using the **seriesTemplate** configuration object. Within this object, set the data source field that specifies the series name to the **nameField** option. 
 
-If you need to specify individual values for the options of a particular series, assign a callback function to the **customizeSeries** property of the **seriesTemplate** object.
+If you need to specify individual values for the properties of a particular series, assign a callback function to the **customizeSeries** property of the **seriesTemplate** object.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ChartOnBackgroundWithSeriesTemplate/"

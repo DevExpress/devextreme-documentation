@@ -6,7 +6,7 @@ Use UI components prefixed with `dxi-` ("i" stands for "item"). The following ex
         <dxi-column dataField="lastName" caption="Last Name" [visible]="false"></dxi-column>
     </dx-data-grid>
 
-For options that accept either an object or a collection, use UI components prefixed with `dxi-` as well. The [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') and [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/') options in the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview/Angular/Light) UI component exemplify this case:
+For properties that accept either an object or a collection, use UI components prefixed with `dxi-` as well. The [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') and [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/') properties in the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview/Angular/Light) UI component exemplify this case:
 
     <!--HTML-->
     <dx-chart>

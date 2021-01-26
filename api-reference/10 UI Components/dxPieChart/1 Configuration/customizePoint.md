@@ -2,7 +2,7 @@
 ##### merge
 
 ---
-By default, all the points of a pie are displayed identically. But you can specify different appearance for certain points using the **customizePoint** field. Assign a function to this field. This function should return an object with options that should be changed for a certain point. The following pie options can be changed.
+By default, all the points of a pie are displayed identically. But you can specify different appearance for certain points using the **customizePoint** field. Assign a function to this field. This function should return an object with properties that should be changed for a certain point. The following pie properties can be changed.
 
 * [border](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/border '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/border/')
 * [color](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/5%20Series%20Types/CommonPieChartSeries/color.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#color')

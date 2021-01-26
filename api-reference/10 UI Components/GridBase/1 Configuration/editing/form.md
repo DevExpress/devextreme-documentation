@@ -248,7 +248,7 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
 
 ---
 
-Do not specify the following options in the **form** object:
+Do not specify the following properties in the **form** object:
 
 - [readOnly](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly') (use [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing.md '{basewidgetpath}/Configuration/columns/#allowEditing') instead)          
 

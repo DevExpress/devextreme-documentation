@@ -22,6 +22,6 @@ This property accepts one of the following values:
 - "xmla"  
  Creates an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/').
 
-Each store has options that are detailed in the links above. Declare these options in the **store** object.
+Each store has properties that are detailed in the links above. Declare these properties in the **store** object.
 
 You can also implement custom data access logic as described in the [Use CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/') topic.

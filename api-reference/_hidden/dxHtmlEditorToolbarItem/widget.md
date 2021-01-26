@@ -5,7 +5,7 @@ The name of the UI component that should represent the toolbar item.
 ---
 [note]Import the specified UI component's module when using [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'). 
 
-Configure the specified UI component in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object. You can find information on available UI component options in the UI component's API reference.
+Configure the specified UI component in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object. You can find information on available UI component properties in the UI component's API reference.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/ToolbarCustomization/"

@@ -1,4 +1,4 @@
-**options** should contain the options of the DevExtreme UI component specified in the [widget]({basewidgetpath}/Configuration/toolbar/${{nestedOption}}/#widget) option. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
+**options** should contain the properties of the DevExtreme UI component specified in the [widget]({basewidgetpath}/Configuration/toolbar/${{nestedOption}}/#widget) option. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
 
 ---
 ##### Angular

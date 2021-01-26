@@ -251,7 +251,7 @@ In the example below, the **FileManager** UI component displays hierarchical dat
 
 ---
 
-If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** options when you specify the file system item's name, size, and so on.
+If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties when you specify the file system item's name, size, and so on.
 
 ---
 

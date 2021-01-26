@@ -93,7 +93,7 @@ The default size of the **Map** UI component is 300x300 pixels. To change it, us
 
 ---
 
-If you prefer specifying the UI component size using CSS, set the **width** and **height** options to **null**. 
+If you prefer specifying the UI component size using CSS, set the **width** and **height** properties to **null**. 
 
 ---
 ##### jQuery

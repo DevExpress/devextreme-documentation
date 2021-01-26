@@ -8,7 +8,7 @@ default: undefined
 Configures the button.
 
 ---
-See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/') for options that you can specify in this object.
+See the [Button configuration](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/') for properties that you can specify in this object.
 
 ---
 #####jQuery

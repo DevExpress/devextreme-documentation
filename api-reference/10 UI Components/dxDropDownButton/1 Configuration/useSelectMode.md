@@ -10,7 +10,7 @@ Specifies whether the UI component stores the selected drop-down menu item.
 ---
 When you set this property to **true**, the following applies:
 
-- The [selectedItemKey](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItemKey.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItemKey') and [selectedItem](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItem') options can be used.
+- The [selectedItemKey](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItemKey.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItemKey') and [selectedItem](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItem') properties can be used.
 
 - The [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onSelectionChanged') function can be executed.
 

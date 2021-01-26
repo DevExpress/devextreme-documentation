@@ -6,7 +6,7 @@ All DevExtreme UI components can be created on a page in the same manner - using
 
     <!--HTML--><div data-bind="dxChart: { }"></div>
 
-To configure a UI component, add properties to the object passed to the UI component binding. Note that these properties mirror the options of the UI component.
+To configure a UI component, add properties to the object passed to the UI component binding. Note that these properties mirror the properties of the UI component.
 
     <!--HTML--><div data-bind="dxChart: {
         dataSource: [
@@ -36,7 +36,7 @@ You can initialize a UI component property with the value of a <a href="http://k
 		series: { argumentField: 'fruit', valueField: 'total' }
     }"></div>
 
-As an alternative, you can declare the whole object of UI component options in the view model and pass it to the UI component binding.
+As an alternative, you can declare the whole object of UI component properties in the view model and pass it to the UI component binding.
 
     <!--JavaScript-->var viewModel = {
         chartOptions: {

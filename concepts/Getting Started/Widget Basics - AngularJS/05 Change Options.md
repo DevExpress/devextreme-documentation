@@ -1,4 +1,4 @@
-All operations with UI component options are carried out through the scope properties these options are bound to. To bind a UI component property to a scope property, use the **bindingOptions** object as shown in the following code. Note that the scope property name in this object is enclosed in quotes.
+All operations with UI component properties are carried out through the scope properties these properties are bound to. To bind a UI component property to a scope property, use the **bindingOptions** object as shown in the following code. Note that the scope property name in this object is enclosed in quotes.
 
     <!--HTML--><div ng-controller="Controller">
         <div dx-check-box="{

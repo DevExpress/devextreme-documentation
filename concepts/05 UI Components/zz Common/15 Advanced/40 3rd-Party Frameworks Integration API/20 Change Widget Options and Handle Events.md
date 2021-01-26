@@ -10,7 +10,7 @@ A specific UI component instance is required to call methods and subscribe to ev
     let element = document.getElementById("myAccordion");
     let instance = DevExpress.ui.dxAccordion.getInstance(element);
 
-You can get and set UI component options at runtime using the **option()** method. 
+You can get and set UI component properties at runtime using the **option()** method. 
 
     // Get an property value
     let isVisible = instance.option("visible");

@@ -9,7 +9,7 @@ default: 'none'
 Specifies the segment grouping mode.
 
 ---
-If you need to group specific chart segments into one, set the options of the **smallValuesGrouping** configuration object. Using the **mode** property of this object, you can define the grouping mode.
+If you need to group specific chart segments into one, set the properties of the **smallValuesGrouping** configuration object. Using the **mode** property of this object, you can define the grouping mode.
 
 Use a *'topN'* mode to group all segments with an index that is equal to or greater than the value of the **topCount** option.
 

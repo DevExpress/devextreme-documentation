@@ -11,7 +11,7 @@ To set tooltip options, use the [tooltip](/api-reference/20%20Data%20Visualizati
 		}
 	};
 
-You can specify the tooltip appearance by changing options listed below.
+You can specify the tooltip appearance by changing properties listed below.
 
 * **Color**		
 By default, a tooltip has the color of the series that is currently hovered over. You can set a custom color for all tooltips in the chart. For this purpose, use the [color](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/color.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/tooltip/#color') property of the **tooltip** configuration object.

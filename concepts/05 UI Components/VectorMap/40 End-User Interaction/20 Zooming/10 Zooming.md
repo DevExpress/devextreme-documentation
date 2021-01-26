@@ -2,4 +2,4 @@ Zooming allows the end-user to enlarge a map in order to view those parts of it 
 
 When zoomed, a map does not exceed the container size. Instead, it leaves only a certain region of itself visible. In order to navigate to concealed regions of the map, [panning](/concepts/05%20Widgets/VectorMap/40%20End-User%20Interaction/10%20Panning '/Documentation/Guide/UI_Components/VectorMap/End-User_Interaction/#Panning') must be used.
 
-Apart from zooming in UI, **VectorMap** supplies you with several options and methods configuring and managing zooming in code. For more information about these options, navigate to the following subtopics.
+Apart from zooming in UI, **VectorMap** supplies you with several properties and methods configuring and managing zooming in code. For more information about these options, navigate to the following subtopics.

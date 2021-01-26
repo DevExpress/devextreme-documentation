@@ -1,4 +1,4 @@
-The following instructions explain how to dynamically change a form item's options based on another form editor's value:
+The following instructions explain how to dynamically change a form item's properties based on another form editor's value:
 
 1. **Implement the [onEditingStart](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditingStart.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart') event handler**       
 This handler is used to save the key of the row that enters the editing state, and we use this key to get this row's index in step 2.
@@ -234,7 +234,7 @@ This handler is used to save the key of the row that enters the editing state, a
         
     ---
 1. **Specify the [form.customizeItem](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/customizeItem.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#customizeItem') callback function**       
-This function allows you to change form item options dynamically. Within this function, [get the index of the row being edited](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item options.
+This function allows you to change form item properties dynamically. Within this function, [get the index of the row being edited](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item options.
 
     In the following code, the `"AddressRequired"` value affects the `"Home Address"` item's visibility:
     

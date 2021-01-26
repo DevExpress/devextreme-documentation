@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the hatching options to be applied when a series is hovered over.
+Specifies the hatching properties to be applied when a series is hovered over.
 
 ##### propertyOf
 dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarseries

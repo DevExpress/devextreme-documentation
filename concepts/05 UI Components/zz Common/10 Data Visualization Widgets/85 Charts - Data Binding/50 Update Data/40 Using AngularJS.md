@@ -1,4 +1,4 @@
-In order to update data in your UI component when using AngularJS, provide two-way binding between the **dataSource** property and the corresponding field of the <a href="https://docs.angularjs.org/guide/scope" target="_blank">$scope</a> object. For this purpose, add the **bindingOptions** field to the UI component configuration object. This field is assigned an object containing options that require two-way binding. In your case, the **dataSource** is such an option. In the following code snippet, the *dataSource* **$scope** field is used to provide data for **Chart**.
+In order to update data in your UI component when using AngularJS, provide two-way binding between the **dataSource** property and the corresponding field of the <a href="https://docs.angularjs.org/guide/scope" target="_blank">$scope</a> object. For this purpose, add the **bindingOptions** field to the UI component configuration object. This field is assigned an object containing properties that require two-way binding. In your case, the **dataSource** is such an option. In the following code snippet, the *dataSource* **$scope** field is used to provide data for **Chart**.
 
 	<!--HTML--><div ng-controller="myController">
 		<div dx-chart="{
@@ -14,7 +14,7 @@ In order to update data in your UI component when using AngularJS, provide two-w
 		$scope.dataSource = dataArray;
 	});
 
-[note]When specifying options within the **bindingOptions** object, you must use the name of the corresponding **$scope** object field instead of the field itself.
+[note]When specifying properties within the **bindingOptions** object, you must use the name of the corresponding **$scope** object field instead of the field itself.
 
 In order to keep data in your UI component up-to-date after the data source is changed, you need to wrap actions that modify the data source in the following construction.
 

@@ -24,7 +24,7 @@ If you have only one series in your chart, specify the **valueField** property w
 			}]
 		};
 
-	Certain series types require several value fields to be specified for one series. In these instances, data source fields must be set using options particular to a specific series type. For example, the following code snippet shows how to specify value fields for a [range series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/').
+	Certain series types require several value fields to be specified for one series. In these instances, data source fields must be set using properties particular to a specific series type. For example, the following code snippet shows how to specify value fields for a [range series](/concepts/05%20Widgets/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/').
 
 		<!--JavaScript-->var rangeDataSource = [
 			{ month: 'January', min1: 36, max1: 43.29, min2:  42.12, max2: 49.91 },

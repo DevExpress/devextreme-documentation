@@ -2,7 +2,7 @@ A tooltip is a small pop-up rectangle that displays information about a funnel i
 
 ![Funnel Tooltip](/images/Funnel/visual_elements/tooltip.png)
 
-All options configuring tooltips are collected in the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/') object. For example, to enable tooltips, assign **true** to this object's **enabled** option.
+All properties configuring tooltips are collected in the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/') object. For example, to enable tooltips, assign **true** to this object's **enabled** option.
 
 ---
 ##### jQuery
@@ -80,7 +80,7 @@ All options configuring tooltips are collected in the [tooltip](/api-reference/2
 
 ---
 
-Options declared in the **tooltip** object apply to all tooltips in the **Funnel**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/#customizeTooltip') option. This function must return an object with options for the tooltip you want to customize.
+Options declared in the **tooltip** object apply to all tooltips in the **Funnel**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/#customizeTooltip') option. This function must return an object with properties for the tooltip you want to customize.
 
 ---
 ##### jQuery

@@ -210,7 +210,7 @@ When you specify an item template in Knockout apps, you can bind this template's
 
 ---
 
-In AngularJs and Knockout apps, you can define different templates intended for different devices. Specify the [device object's](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/') fields as the **dxTemplate**'s markup options to set a target device for a template. 
+In AngularJs and Knockout apps, you can define different templates intended for different devices. Specify the [device object's](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/') fields as the **dxTemplate**'s markup properties to set a target device for a template. 
 
     <!--JavaScript-->
     <div data-options="dxTemplate: { name: 'item', platform: 'ios', phone: true }">

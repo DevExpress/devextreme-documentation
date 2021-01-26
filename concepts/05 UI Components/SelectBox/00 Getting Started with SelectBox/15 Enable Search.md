@@ -51,7 +51,7 @@ To allow users to search through **SelectBox** values, set [searchEnabled](/api-
 
 ---
 
-There are additional search options demonstrated in the following demo:
+There are additional search properties demonstrated in the following demo:
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing"

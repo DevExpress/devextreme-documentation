@@ -4,7 +4,7 @@ The **RangeSlider** is a UI component that allows an end user to choose a range 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/"
 }
 
-The following code adds a simple **RangeSlider** to your page. The **start** and **end** options specify the selected interval. The **min** and **max** options limit the range of accepted values.
+The following code adds a simple **RangeSlider** to your page. The **start** and **end** properties specify the selected interval. The **min** and **max** properties limit the range of accepted values.
 
 ---
 ##### jQuery

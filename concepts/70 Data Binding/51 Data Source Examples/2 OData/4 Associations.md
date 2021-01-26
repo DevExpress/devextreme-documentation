@@ -17,7 +17,7 @@ Consider the following ODataContext.
 
 Assume that each **Product** entity is connected to a **Category** via the **Product.Category** navigation property.
 
-Navigation properties are usually deferred and are not loaded automatically together with the owning entity. To load both entities at once, use the [expand](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/expand.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#expand') load options extension, specific for ODataStore.
+Navigation properties are usually deferred and are not loaded automatically together with the owning entity. To load both entities at once, use the [expand](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/expand.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#expand') load properties extension, specific for ODataStore.
 
     <!--JavaScript-->
     var productSource = new DevExpress.data.DataSource({

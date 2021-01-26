@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for the loading indicator.
+Specifies font properties for the loading indicator.
 
 ---

@@ -9,7 +9,7 @@ default: 'single'
 Specifies whether single or multiple map elements can be selected on a vector map.
 
 ---
-Several options and methods are connected with the selection operation. To specify whether single or multiple areas can be selected at a time, use the **selectionMode** option. To determine whether a certain area is selected when the UI component is created, use the **isSelected** field of the object returned by the [customize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize') callback function.
+Several properties and methods are connected with the selection operation. To specify whether single or multiple areas can be selected at a time, use the **selectionMode** option. To determine whether a certain area is selected when the UI component is created, use the **isSelected** field of the object returned by the [customize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize') callback function.
 
 At runtime, you can do the following operations.
 

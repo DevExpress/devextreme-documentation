@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes options that configure the **PivotGridDataSource**.
+This section describes properties that configure the **PivotGridDataSource**.
 
 ---
 [note]

@@ -11,12 +11,12 @@ A value indicator is a pointer that designates the [main value](/api-reference/2
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypesLinearGauge/"
 }
 
-In order to customize the appearance of a value indicator, use the [valueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/valueIndicator '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/valueIndicator/') configuration object. Set its **type** property and then the required type-specific options. The type-specific options are listed within the UI component's [Indicator Types](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/') reference section. 
+In order to customize the appearance of a value indicator, use the [valueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/valueIndicator '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/valueIndicator/') configuration object. Set its **type** property and then the required type-specific options. The type-specific properties are listed within the UI component's [Indicator Types](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/') reference section. 
 
 	<!--JavaScript-->var gaugeOptions = {
         valueIndicator: {
             type: 'rangeBar',
-			// Set type-specific options here
+			// Set type-specific properties here
         }
     };
 

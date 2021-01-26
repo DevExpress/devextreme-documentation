@@ -112,7 +112,7 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
 
 ---
 
-Refer to the [ScatterSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ScatterSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/ScatterSeries/') section of the API Reference for a full list of options available to a **Scatter** series.
+Refer to the [ScatterSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ScatterSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/ScatterSeries/') section of the API Reference for a full list of properties available to a **Scatter** series.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Scatter/"

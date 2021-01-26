@@ -7,7 +7,7 @@ type: Object
 Configures zooming and panning.
 
 ---
-You can enable zooming and panning for the argument and value axes independently. Set the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/argumentAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#argumentAxis') and [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/valueAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#valueAxis') options to enable zooming, panning, or both for a specific axis.
+You can enable zooming and panning for the argument and value axes independently. Set the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/argumentAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#argumentAxis') and [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan/valueAxis.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/#valueAxis') properties to enable zooming, panning, or both for a specific axis.
 
 Users can use the mouse and touch gestures to zoom and pan. The following table illustrates user interaction:
 

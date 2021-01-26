@@ -9,7 +9,7 @@ default: 'processed'
 Specifies how data returned by the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function is treated.
 
 ---
-Specify this property depending on the behavior you implemented for the **load** function. If this function sends data shaping options to the server and fetches processed data, then **loadMode** should be *"processed"*. If the **load** function simply fetches raw, unprocessed data from the server, set **loadMode** to *"raw"*. In this case, the raw data will be processed on the client automatically.
+Specify this property depending on the behavior you implemented for the **load** function. If this function sends data shaping properties to the server and fetches processed data, then **loadMode** should be *"processed"*. If the **load** function simply fetches raw, unprocessed data from the server, set **loadMode** to *"raw"*. In this case, the raw data will be processed on the client automatically.
 
 #####See Also#####
 - [Load Data in Raw Mode](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources/1%20Load%20Data%20in%20Raw%20Mode.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources/Load_Data_in_Raw_Mode')

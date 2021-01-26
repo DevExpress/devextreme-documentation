@@ -2,7 +2,7 @@ Gauge bars display [values](/api-reference/20%20Data%20Visualization%20Widgets/d
 
 <img src="/images/ChartJS/GaugeBars.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge GaugeBars" style="display:block; margin:0 auto" />
 
-There are several options for customizing the bar's appearance and arrangement. A brief overview of them is explained below.
+There are several properties for customizing the bar's appearance and arrangement. A brief overview of them is explained below.
 
 - **Color**		
 Although you cannot color each bar explicitly, you can use a palette instead. A number of [predefined palettes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/00%20Palettes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes') are available for this purpose. In addition, you can specify your own palette by assigning an array of colors to the [palette](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/palette.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/#palette') option. The background color can be specified in addition to the bar color. The bar's background is the remaining segment of the bar's track. It can be colored using the [backgroundColor](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/#backgroundColor') option.

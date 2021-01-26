@@ -1,8 +1,4 @@
-**Specify a styling mode**           
-The styling mode defines whether a Button has a colored border (*"outlined"*), a colored background (*"contained*" - default), or none of them (*"text"*). We will use a colored border. For this, set the [stylingMode](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#stylingMode) property to *"outlined"*.
-
-**Specify a type**                  
-The button [type](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type) property defines its color. The following types are available: *"danger"* (red), *"default"* (blue), *"normal"* (transparent), *"success"* (green), and *"back"* (transparent). The type of *"back"* is special - it ignores the **text**, **stylingMode** and other properties and transforms the UI component into a left arrow button. In this tutorial, we will set the **type** to *"success"*.
+The Button supports several predefined color schemes. To specify one of them, set the [type](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type) property. You can also use the [stylingMode](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#stylingMode) property to customize the fill and borders. Refer to the [Predefined Types](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/) demo for more information about these properties.
 
 ---
 ##### jQuery

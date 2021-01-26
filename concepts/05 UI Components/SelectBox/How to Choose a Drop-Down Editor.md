@@ -6,7 +6,7 @@ DevExtreme has five drop-down text editors:
 - [Autocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/)
 - [DropDownBox](/Documentation/ApiReference/UI_Components/dxDropDownBox/)
 
-The following table compares the drop-down editors by a number of features:
+The following table compares the drop-down editors according to features:
 
 <table class="dx-table full-width">
     <tr>

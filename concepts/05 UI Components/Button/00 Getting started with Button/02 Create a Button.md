@@ -5,8 +5,8 @@
 
     <!-- tab: index.js -->
     $(function() {
-        $("#dataGrid").dxDataGrid({
-            // Configuration goes here
+        $("#button").dxButton({
+            text: "Click me!"
         });
     });
 
@@ -21,27 +21,20 @@
             <link rel="stylesheet" href="index.css">
 
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
-            <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">
-            <div id="dataGrid"></div>
+            <div id="button"></div>
         </body>
     </html>
-
-    <!-- tab: index.css -->
-    #dataGrid {
-        height: 500px;
-    }
 
 ##### Angular
 
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/'), create a Button and set its text to "Click me!":
 
     <!-- tab: app.component.html -->
-    <dx-data-grid id="dataGrid"
-        <!-- Configuration goes here -->
-    >
-    </dx-data-grid>
+    <dx-button
+        text="Click me!">
+    </dx-button>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -51,16 +44,13 @@
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css']
     })
-    export class AppComponent {
-
-    }
+    export class AppComponent { }
 
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
+    import {DxButtonModule} from 'devextreme-angular';
     import { AppComponent } from './app.component';
-
-    import { DxDataGridModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -68,17 +58,12 @@
         ],
         imports: [
             BrowserModule,
-            DxDataGridModule
+            DxButtonModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
-
-    <!-- tab: app.component.css -->
-    #dataGrid {
-        height: 500px;
-    }
 
 ##### Vue
 
@@ -86,60 +71,51 @@
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid id="dataGrid">
-                <!-- Configuration goes here -->
-            </DxDataGrid>
-        </div>
+        <DxButton
+            text="Click me!"
+            @click="showMessage()"
+            styling-mode="outlined"
+            type="success"
+            icon="comment"
+        />
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { DxDataGrid } from 'devextreme-vue/data-grid';
+    import DxButton from 'devextreme-vue/button';
+    import notify from 'devextreme/ui/notify';
 
     export default {
-        components: {
-            DxDataGrid
+    name: 'App',
+    components: {
+        DxButton
+    },
+    methods: {
+        showMessage() {
+            notify("The button was clicked");
         }
     }
-    </script>
-
-    <style>
-    #dataGrid {
-        height: 500px;
     }
-    </style>
+    </script>
 
 ##### React
 
 [Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/'), create a Button and set its text to "Click me!":
 
     <!-- tab: App.js -->
-    import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
-
-    import {
-        DataGrid
-    } from 'devextreme-react/data-grid';
+    import { Button } from 'devextreme-react/button';
 
     function App() {
         return (
             <div className="App">
-                <DataGrid id="dataGrid">
-                    {/* Configuration goes here */}
-                </DataGrid>
-            </div>
+                <Button
+                    text="Click me!"
+                />
+                </div>
         );
     }
 
     export default App;
-
-    <!-- tab: App.css -->
-    #dataGrid {
-        height: 500px;
-    }
 
 ---

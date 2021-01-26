@@ -2,7 +2,7 @@ The legend is a component that helps a user identify funnel items. The legend co
 
 ![Funnel Legend](/images/Funnel/visual_elements/legend.png)
 
-Options that configure the legend's appearance, location, and content are collected in the [legend](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/') object. To make the legend visible, set the **legend**.**visible** property to **true**.
+Propertiesthat configure the legend's appearance, location, and content are collected in the [legend](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/') object. To make the legend visible, set the **legend**.**visible** property to **true**.
 
 ---
 ##### jQuery

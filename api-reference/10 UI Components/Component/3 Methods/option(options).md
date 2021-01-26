@@ -6,7 +6,7 @@ id: Component.option(options)
 Updates the values of several options.
 
 ##### param(options): Object
-Options with their new values.
+Propertieswith their new values.
 
 ---
 #####See Also#####

@@ -15,7 +15,7 @@ To be able to change a UI component property, declare its value an <a href="http
 
 Now, if you change an observable in code, the UI component will receive the changes and update the UI. And vice versa, if a user changes something in the UI, the observable gets updated.
 
-[note]Options containing array and specified on the second (or further) level of the configuration object cannot be made observable.
+[note]Propertiescontaining array and specified on the second (or further) level of the configuration object cannot be made observable.
 
 #####See Also#####
 - **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[CheckBox](/api-reference/10%20UI%20Widgets/dxCheckBox '/Documentation/ApiReference/UI_Components/dxCheckBox/').[Configuration](/api-reference/10%20UI%20Widgets/dxCheckBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/')

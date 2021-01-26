@@ -13,7 +13,7 @@ The component's default device options.
 When specifying a function, get information about the current device from the argument. Return **true** if the properties should be applied to the device.
 
 ##### field(rule.options): Object
-Options to be applied.
+Propertiesto be applied.
 
 ---
 **defaultOptions** is a static method that the UI component class supports. The following code demonstrates how to specify default properties for all instances of the **{WidgetName}** UI component in an application executed on the desktop.

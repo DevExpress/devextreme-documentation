@@ -40,7 +40,7 @@ Data in the drill-down data source is paginated by default. Only the items on th
     });
 
     var drillDownDataSource = pivotGridDataSource.createDrillDownDataSource({
-        // Options are passed here
+        // Propertiesare passed here
     });
 
     drillDownDataSource.paginate(false);
@@ -68,7 +68,7 @@ Data in the drill-down data source is paginated by default. Only the items on th
             });
 
             this.drillDownDataSource = this.pivotGridDataSource.createDrillDownDataSource({
-                // Options are passed here
+                // Propertiesare passed here
             });
 
             this.drillDownDataSource.paginate(false);
@@ -94,7 +94,7 @@ Data in the drill-down data source is paginated by default. Only the items on th
     export default {
         mounted() {
             this.drillDownDataSource = pivotGridDataSource.createDrillDownDataSource({
-                // Options are passed here
+                // Propertiesare passed here
             });
 
             this.drillDownDataSource.paginate(false);
@@ -124,7 +124,7 @@ Data in the drill-down data source is paginated by default. Only the items on th
             super(props);
             
             this.drillDownDataSource = pivotGridDataSource.createDrillDownDataSource({
-                // Options are passed here
+                // Propertiesare passed here
             });
 
             this.drillDownDataSource.paginate(false);

@@ -6,10 +6,10 @@ id: Component.option(optionName, optionValue)
 Updates the value of a single property.
 
 ##### param(optionName): String
-The option's name or full path.
+The property's name or full path.
 
 ##### param(optionValue): any
-This option's new value.
+This property's new value.
 
 ---
 #####See Also#####

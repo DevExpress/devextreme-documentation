@@ -20,7 +20,7 @@ If you need to specify this property based on a condition, set the [showClearBut
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             onEditorPreparing: function (e) {
-                if (/* a condition to set the option's value */) {
+                if (/* a condition to set the property's value */) {
                     e.editorOptions.showClearButton = true;
                 }
             }
@@ -39,7 +39,7 @@ If you need to specify this property based on a condition, set the [showClearBut
     })
     export class AppComponent {
         onEditorPreparing(e) {
-            if (/* a condition to set the option's value */) {
+            if (/* a condition to set the property's value */) {
                 e.editorOptions.showClearButton = true;
             }
         }
@@ -93,7 +93,7 @@ If you need to specify this property based on a condition, set the [showClearBut
         // ...
         methods: {
             onEditorPreparing(e) {
-                if (/* a condition to set the option's value */) {
+                if (/* a condition to set the property's value */) {
                     e.editorOptions.showClearButton = true;
                 }
             }
@@ -113,7 +113,7 @@ If you need to specify this property based on a condition, set the [showClearBut
 
     class App extends React.Component {
         onEditorPreparing(e) {
-            if (/* a condition to set the option's value */) {
+            if (/* a condition to set the property's value */) {
                 e.editorOptions.showClearButton = true;
             }
         }

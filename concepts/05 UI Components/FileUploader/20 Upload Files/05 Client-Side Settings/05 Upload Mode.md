@@ -105,7 +105,7 @@ The following examples show how to configure the **FileUploader** for each uploa
 
     ---
 
-[note] If you allow a user to upload multiple files using an HTML form, the **name** option's value must end with square brackets as shown in the commented-out code line in the example above.
+[note] If you allow a user to upload multiple files using an HTML form, the **name** property's value must end with square brackets as shown in the commented-out code line in the example above.
 
 #####See Also#####
 - [FileUploader - Upload Files | Server-Side Implementation in ASP.NET](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/10%20Server-Side%20Implementation%20in%20ASP.NET '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Server-Side_Implementation_in_ASP.NET/')

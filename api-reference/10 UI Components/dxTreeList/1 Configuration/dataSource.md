@@ -3,7 +3,7 @@
 
 ---
 #include common-dataSource-description with {
-    widget_works_with: "The **TreeList** works with object collections that can have a plain or hierarchical structure. Depending on the structure, the objects should provide different data fields. Specify the [dataStructure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure') property to notify the **TreeList** of the used structure and refer to the option's description for information on the required fields.",
+    widget_works_with: "The **TreeList** works with object collections that can have a plain or hierarchical structure. Depending on the structure, the objects should provide different data fields. Specify the [dataStructure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure') property to notify the **TreeList** of the used structure and refer to the property's description for information on the required fields.",
 
     array_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure)",
 

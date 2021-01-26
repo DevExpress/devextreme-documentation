@@ -54,7 +54,7 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
 ---
 
-You can define the filter expression programmatically with the [filterValue](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#filterValue') property. See the option's description for the full list of available filter operations and their peculiarities.
+You can define the filter expression programmatically with the [filterValue](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#filterValue') property. See the property's description for the full list of available filter operations and their peculiarities.
 
 The **filterValue** is updated when a user changes the filter expression from the UI. Use the [option](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#optionoptionName_optionValue') method to update it from the API:
 

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies image options.
+Specifies image properties.
 
 ---
 You can display an image as the background of a range selector instead of the default color. Set the image's URL and location using the corresponding properties of the **image** object to do this.

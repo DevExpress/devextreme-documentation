@@ -4,7 +4,7 @@ type: Sort expression
 ---
 ---
 ##### shortDescription
-Specifies data sorting options.
+Specifies data sorting properties.
 
 ---
 This property accepts one of the following:

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures edit options.
+Configures edit properties.
 
 ---
 

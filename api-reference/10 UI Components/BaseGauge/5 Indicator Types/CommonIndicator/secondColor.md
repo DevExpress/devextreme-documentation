@@ -11,7 +11,7 @@ Specifies the second color for the indicator of the *twoColorNeedle* type.
 circularTwoColorNeedle
 
 ---
-When you use a *twoColorNeedle* indicator, define the colors for it using the **color** and **secondColor** options. The **color** property sets the color for the base of the needle. The **secondColor** property sets the color for the tip of the needle.
+When you use a *twoColorNeedle* indicator, define the colors for it using the **color** and **secondColor** properties. The **color** property sets the color for the base of the needle. The **secondColor** property sets the color for the tip of the needle.
 
 #include common-colorlist
 

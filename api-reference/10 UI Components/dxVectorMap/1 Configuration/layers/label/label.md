@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies marker label options.
+Specifies marker label properties.
 
 ---
 A marker label is a text that accompanies a [map marker](/concepts/05%20Widgets/VectorMap/10%20Visual%20Elements/20%20Markers.md '/Documentation/Guide/UI_Components/VectorMap/Visual_Elements/#Markers'). Usually, a marker label displays the name of a certain geographical point.

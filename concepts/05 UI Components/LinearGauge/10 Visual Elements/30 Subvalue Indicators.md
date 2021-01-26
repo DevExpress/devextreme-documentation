@@ -11,7 +11,7 @@ Subvalue indicators are pointers that indicate extra values on the **LinearGauge
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentSubvalueIndicatorTypesLinearGauge/"
 }
 
-In order to customize the appearance of the subvalue indicators, use the [subvalueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/subvalueIndicator/') configuration object. Set its **type** property and then the required type-specific options. The type-specific properties are listed within the UI component's [Indicator Types](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/') reference section. 
+In order to customize the appearance of the subvalue indicators, use the [subvalueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/subvalueIndicator/') configuration object. Set its **type** property and then the required type-specific properties. The type-specific properties are listed within the UI component's [Indicator Types](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/') reference section. 
 
 	<!--JavaScript-->var gaugeOptions = {
         subvalueIndicator: {

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-An object defining the label configuration options.
+An object defining the label configuration properties.
 
 ---
 Each [series point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/') can be accompanied by a text label that represents data related to the point. These are called series point labels. Use the **label** object's properties to set label properties for all chart series at once.

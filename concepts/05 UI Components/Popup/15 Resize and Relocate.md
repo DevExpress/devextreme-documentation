@@ -1,4 +1,4 @@
-To change the size of the **Popup**, specify the [height](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#width') options.
+To change the size of the **Popup**, specify the [height](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#width') properties.
 
 ---
 ##### jQuery

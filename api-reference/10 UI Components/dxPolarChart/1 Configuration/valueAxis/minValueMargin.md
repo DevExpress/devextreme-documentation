@@ -10,7 +10,7 @@ Specifies a coefficient that determines the spacing between the minimum series p
 ---
 When [margins are enabled](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/valueMarginsEnabled.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/#valueMarginsEnabled') in a chart, an axis extends slightly beyond its start and end values. It is required for preventing the cutting off of parts of the minimum and maximum series points.
 
-By default, margins are calculated automatically and equal to half of an axis' [tick interval](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/050%20Axes/30%20Axis%20Ticks%20Arrangement.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Axes/Axis_Ticks_Arrangement'). If you need to specify custom margins, use the **minValueMargin** and **maxValueMargin** options. These properties accept coefficients that are used to calculate the actual start and end values for an axis with applied margin susing the following formulas:
+By default, margins are calculated automatically and equal to half of an axis' [tick interval](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/050%20Axes/30%20Axis%20Ticks%20Arrangement.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Axes/Axis_Ticks_Arrangement'). If you need to specify custom margins, use the **minValueMargin** and **maxValueMargin** properties. These properties accept coefficients that are used to calculate the actual start and end values for an axis with applied margin susing the following formulas:
 
     startAxisValue = minDataValue - (maxDataValue - minDataValue) * minValueMargin
     endAxisValue = maxDataValue + (maxDataValue - minDataValue) * maxValueMargin

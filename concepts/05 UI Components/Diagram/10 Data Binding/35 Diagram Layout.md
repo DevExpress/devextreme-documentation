@@ -1,4 +1,4 @@
-The UI component creates a diagram layout based on the algorithm specified by the [autoLayout.orientation](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/autoLayout/orientation.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#orientation') and [autoLayout.type](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/autoLayout/type.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#type') options.
+The UI component creates a diagram layout based on the algorithm specified by the [autoLayout.orientation](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/autoLayout/orientation.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#orientation') and [autoLayout.type](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/nodes/autoLayout/type.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#type') properties.
 
         <!-- tab: index.js -->
         $(function() {

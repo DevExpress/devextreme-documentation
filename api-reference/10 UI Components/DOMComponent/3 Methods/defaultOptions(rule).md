@@ -6,7 +6,7 @@ id: DOMComponent.defaultOptions(rule)
 Specifies the device-dependent default configuration properties for this component.
 
 ##### param(rule): Object
-The component's default device options.
+The component's default device properties.
 
 ##### field(rule.device): Device | Array<Device> | function()
 [Device parameters](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/').      

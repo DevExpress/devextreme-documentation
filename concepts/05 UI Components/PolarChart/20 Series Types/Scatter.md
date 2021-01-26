@@ -21,7 +21,7 @@ Note that you can use a spider web for polar charts displaying discrete data. Fo
 
 ![SpiderWeb PolarScatterSeriesType ChartJS](/images/ChartJS/PolarScatter_useSpiderWeb.png)
 
-You can change the default appearance using series options. For instance, you can change the following.
+You can change the default appearance using series properties. For instance, you can change the following.
 
 *   **Point Color**  
     A color from the chart's [palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/10%20Palettes/00%20Palettes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Palettes') is used by default. Set a custom color using the series' [color](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/') property.

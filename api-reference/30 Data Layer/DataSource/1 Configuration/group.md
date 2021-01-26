@@ -4,7 +4,7 @@ type: Group expression
 ---
 ---
 ##### shortDescription
-Specifies data grouping options.
+Specifies data grouping properties.
 
 ---
 This property accepts one of the following:

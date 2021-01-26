@@ -11,7 +11,7 @@ To change the default legend appearance, use the properties of the [legend](/api
 		// ...
 	};
 
-The following list provides an overview of the **legend** object options.
+The following list provides an overview of the **legend** object properties.
 
 * **Visibility**		
 To change the legend's visibility, use the **legend**.[visible](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/visible.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/legend/#visible') property.

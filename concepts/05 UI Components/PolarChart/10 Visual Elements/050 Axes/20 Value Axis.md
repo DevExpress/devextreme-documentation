@@ -67,7 +67,7 @@ In some scenarios, you may require the type of the values specified in the data 
 		// ...
 	};
 
-The following list gives an overview of the value axis options.
+The following list gives an overview of the value axis properties.
 
 * **Visibility**		
 To make the value axis visible/invisible, use the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/visible.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/#visible') property of the **valueAxis** configuration object.

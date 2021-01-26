@@ -234,7 +234,7 @@ This handler is used to save the key of the row that enters the editing state, a
         
     ---
 1. **Specify the [form.customizeItem](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/customizeItem.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#customizeItem') callback function**       
-This function allows you to change form item properties dynamically. Within this function, [get the index of the row being edited](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item options.
+This function allows you to change form item properties dynamically. Within this function, [get the index of the row being edited](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item properties.
 
     In the following code, the `"AddressRequired"` value affects the `"Home Address"` item's visibility:
     
@@ -398,7 +398,7 @@ This function allows you to change form item properties dynamically. Within this
     ---
 
 1. **Specify the [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') callback function**  
-Specify **setCellValue** for those columns whose editors affect other form items. In the function, call its default implementation as shown below. This call forces all form items to re-render themselves with the new options.
+Specify **setCellValue** for those columns whose editors affect other form items. In the function, call its default implementation as shown below. This call forces all form items to re-render themselves with the new properties.
 
     In the following code, we declare the **setCellValue** function for the `"AddressRequired"` column:
 

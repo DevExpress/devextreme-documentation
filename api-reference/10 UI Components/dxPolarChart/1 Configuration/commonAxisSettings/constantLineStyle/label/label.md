@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-An object defining constant line label options.
+An object defining constant line label properties.
 
 ---
 A constant line label shows information on the constant line. Use the **label** object to configure all the constant line labels simultaneously. Within this object you can set font options, a position and text using corresponding fields.

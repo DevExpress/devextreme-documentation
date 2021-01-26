@@ -60,9 +60,9 @@ In some scenarios, you may require the type of arguments specified in the data s
 		// ...
 	};
 
-As you can see in the code above, the **argumentAxis** object is used to set custom values for argument axis options.
+As you can see in the code above, the **argumentAxis** object is used to set custom values for argument axis properties.
 
-The following list gives an overview of the argument axis options.
+The following list gives an overview of the argument axis properties.
 
 * **Visibility**		
 To make the argument axis visible/invisible, use the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/visible.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#visible') property of the **argumentAxis** configuration object.

@@ -2,7 +2,7 @@ The **Chart** UI component allows you to enable built-in scrolling and zooming. 
 
 ![DevExtreme ChartJS Zooming Scrolling](/images/ChartJS/devextreme-chart-NewZoomScroll.gif)
 
-You can enable mouse support, touch support or both by assigning corresponding values to the [scrollingMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/scrollingMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#scrollingMode') and/or [zoomingMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomingMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#zoomingMode') options.
+You can enable mouse support, touch support or both by assigning corresponding values to the [scrollingMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/scrollingMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#scrollingMode') and/or [zoomingMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomingMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#zoomingMode') properties.
 
 	<!--JavaScript-->var chartOptions = {
 		// ...

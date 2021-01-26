@@ -1,4 +1,4 @@
-If the size of the UI component should be fixed, specify it using the [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#width') options.
+If the size of the UI component should be fixed, specify it using the [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#width') properties.
 
 ---
 ##### jQuery
@@ -77,7 +77,7 @@ If the size of the UI component should be fixed, specify it using the [height](/
 
 ---
 
-Alternatively, the UI component's height can adapt to the UI component's contents. In this case, instead of specifying the **height** property, you need to set the **autoResizeEnabled** property to **true**. To specify the minimum and maximum height that the adapted **TextArea** can occupy, set the **minHeight** and **maxHeight** options.
+Alternatively, the UI component's height can adapt to the UI component's contents. In this case, instead of specifying the **height** property, you need to set the **autoResizeEnabled** property to **true**. To specify the minimum and maximum height that the adapted **TextArea** can occupy, set the **minHeight** and **maxHeight** properties.
 
 ---
 ##### jQuery

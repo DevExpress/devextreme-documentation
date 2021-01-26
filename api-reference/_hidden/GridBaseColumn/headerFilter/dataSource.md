@@ -8,7 +8,7 @@ default: undefined
 Specifies the header filter's data source.
 
 ##### param(options): Object
-Data source options.
+Data source properties.
 
 ##### field(options.component): Object
 The UI component's instance.

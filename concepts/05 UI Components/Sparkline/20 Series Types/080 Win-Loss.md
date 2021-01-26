@@ -16,7 +16,7 @@ After that, specify the value to be used as the threshold. Assign this value to 
 		// ...
 	};
 
-The color of a particular bar in a *win-loss* series depends on the value it represents. If this value is greater than the threshold, this bar is painted in a "win" color. Otherwise, it is painted in a "loss" color. These colors can be specified using the [winColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/winColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#winColor') and [lossColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/lossColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#lossColor') options.
+The color of a particular bar in a *win-loss* series depends on the value it represents. If this value is greater than the threshold, this bar is painted in a "win" color. Otherwise, it is painted in a "loss" color. These colors can be specified using the [winColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/winColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#winColor') and [lossColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/lossColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#lossColor') properties.
 
 In addition, you can indicate extreme points on a *win-loss* sparkline. To learn how to do this, refer to the [Series Points](/concepts/05%20Widgets/Sparkline/10%20Visual%20Elements/20%20Series%20Points.md '/Documentation/Guide/UI_Components/Sparkline/Visual_Elements/#Series_Points') topic.
 

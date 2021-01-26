@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes the **ODataStore**'s configuration options.
+This section describes the **ODataStore**'s configuration properties.
 
 ---

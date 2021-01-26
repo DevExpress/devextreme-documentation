@@ -9,7 +9,7 @@ To specify the value indicated by the bullet bar, assign it to the [value](/api-
 		// ...
 	};
 
-This value must belong to a range determined by the [startScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/startScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#startScaleValue') and [endScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/endScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#endScaleValue') options. When you arrange several **Bullet** UI components in a column, set the same range for them so that their bullet bars can be compared visually.
+This value must belong to a range determined by the [startScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/startScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#startScaleValue') and [endScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/endScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#endScaleValue') properties. When you arrange several **Bullet** UI components in a column, set the same range for them so that their bullet bars can be compared visually.
 
     <!--JavaScript-->var bulletOptions = {
         value: 42,

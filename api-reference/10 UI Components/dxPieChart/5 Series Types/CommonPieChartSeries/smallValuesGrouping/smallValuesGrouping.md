@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies chart segment grouping options.
+Specifies chart segment grouping properties.
 
 ---
 If you need to group specific chart segments into one, use the properties of the **smallValuesGrouping** configuration object.

@@ -60,7 +60,7 @@ Some messages can be defined by **List** properties as well as keys. The followi
 
 <table class="dx-table">
     <tr>
-        <th>Option</th>
+        <th>Property</th>
         <th>Key</th>
         <th>Description</th>
     </tr>

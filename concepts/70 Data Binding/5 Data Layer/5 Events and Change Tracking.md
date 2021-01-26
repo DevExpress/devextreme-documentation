@@ -2,7 +2,7 @@ DataSource and Stores support events. The DataSource events are used to track th
 
 Use one of the following approaches to handle events.
 
-<a id="UseOption"></a><h4>Assign a Handler to a Configuration Option</h4>
+<a id="UseOption"></a><h4>Assign a Handler to a Configuration Property</h4>
 
 To attach a handler for a certain event to a DataSource or Data Store, use the corresponding configuration property. The properties that take on event handling functions have names starting with *on*.
 

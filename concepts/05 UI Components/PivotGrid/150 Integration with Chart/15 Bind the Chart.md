@@ -55,7 +55,7 @@ For example, assume you have the following code that creates a pivot grid in the
 
 ---
 
-To bind these two UI components together without changing the default integration options, call the `bindChart(chart, integrationOptions)` using one of the following constructions.
+To bind these two UI components together without changing the default integration properties, call the `bindChart(chart, integrationOptions)` using one of the following constructions.
 
     <!--JavaScript-->// Passing the chart instance
     var chartInstance = $("#chartWidget").dxChart("instance");

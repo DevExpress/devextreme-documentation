@@ -2,7 +2,7 @@ A strip is a colored piece of the chart's background that highlights a range of 
 
 ![DevExtreme HTML5 JavaScript Charts Strips](/images/ChartJS/visual_elements/strips.png)
 
-To configure the strips, declare the [strips](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/strips '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/strips/') array in the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/') or [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/') object. This array should contain objects, and each of them configures a single strip. To limit a strip, set its **startValue** and **endValue** options. You may set only one of them, in which case the strip will not have a limit at one end. Note that setting the **color** option is also necessary for a strip to be displayed.
+To configure the strips, declare the [strips](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/strips '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/strips/') array in the [argumentAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/') or [valueAxis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/') object. This array should contain objects, and each of them configures a single strip. To limit a strip, set its **startValue** and **endValue** properties. You may set only one of them, in which case the strip will not have a limit at one end. Note that setting the **color** property is also necessary for a strip to be displayed.
 
 ---
 ##### jQuery
@@ -296,7 +296,7 @@ Note that individual settings override axis-specific settings which, in turn, ov
 
 ---
 
-For information about all options of the strips, visit the [strips](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/strips '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/strips/') section of the API reference.
+For information about all properties of the strips, visit the [strips](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/strips '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/strips/') section of the API reference.
 
 #####See Also#####
 - [Constant Lines](/concepts/05%20Widgets/Chart/65%20Constant%20Lines.md '/Documentation/Guide/UI_Components/Chart/Constant_Lines/')

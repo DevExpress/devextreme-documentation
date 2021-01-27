@@ -23,7 +23,7 @@ Changes the appearance of the points that correspond to the argument of the sele
 * **none**   
 The appearance of the selected point is not changed.
 
-To set custom options for the 'selected' style, which is applied when a point is selected, use the **selectionStyle** configuration object defining it for an individual series (**series**.**point**.**selectionStyle**), for all series of a particular type (**commonSeriesSettings**.**area**/**line**/... | **point**.**selectionStyle**), or all series in the chart (see **commonSeriesSettings**.**point**.**selectionStyle**).
+To set custom properties for the 'selected' style, which is applied when a point is selected, use the **selectionStyle** configuration object defining it for an individual series (**series**.**point**.**selectionStyle**), for all series of a particular type (**commonSeriesSettings**.**area**/**line**/... | **point**.**selectionStyle**), or all series in the chart (see **commonSeriesSettings**.**point**.**selectionStyle**).
 
 #include common-ref-enum with {
     enum: "`ChartPointInteractionMode`",

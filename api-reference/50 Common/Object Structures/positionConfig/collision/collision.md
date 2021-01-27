@@ -22,7 +22,7 @@ First apply *"flip"*, then *"fit"*.
 - *"none"*      
 Ignore the collision.
 
-To set the **collision** option, use an object with the **x** and **y** fields. These fields specify how to resolve horizontal and vertical collisions, respectively. Alternatively, you can use a string shortcut from the accepted values list.
+To set the **collision** property, use an object with the **x** and **y** fields. These fields specify how to resolve horizontal and vertical collisions, respectively. Alternatively, you can use a string shortcut from the accepted values list.
 
 ---
 ##### jQuery

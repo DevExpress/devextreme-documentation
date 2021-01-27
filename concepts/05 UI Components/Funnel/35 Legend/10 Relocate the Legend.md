@@ -1,4 +1,4 @@
-The legend can be aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/#verticalAlignment') option.
+The legend can be aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/#verticalAlignment') property.
 
 ---
 ##### jQuery
@@ -82,7 +82,7 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
 
 ---
 
-Below, you can try out these options in action.
+Below, you can try out these properties in action.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.html, /Content/Applications/20_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.js, /Content/Applications/20_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.css"></div>
 

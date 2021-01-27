@@ -4,7 +4,7 @@ You need to configure the **CustomStore** in detail for accessing a server built
 
 #include common-code-customsource-rawmode-pagingdisabled
 
-In the latter case, use the **CustomStore**'s **load** function to send data processing settings to the server. These settings are passed as a parameter to the **load** function. In case of the **Scheduler**, the only relevant setting is [filter](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/filter.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#filter'). It is passed when the **Scheduler**'s [remoteFiltering](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/remoteFiltering.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#remoteFiltering') option is set to **true**.
+In the latter case, use the **CustomStore**'s **load** function to send data processing settings to the server. These settings are passed as a parameter to the **load** function. In case of the **Scheduler**, the only relevant setting is [filter](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/filter.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#filter'). It is passed when the **Scheduler**'s [remoteFiltering](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/remoteFiltering.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#remoteFiltering') property is set to **true**.
 
 After receiving this setting, the server should apply it to data and send back an object with the following structure:
 

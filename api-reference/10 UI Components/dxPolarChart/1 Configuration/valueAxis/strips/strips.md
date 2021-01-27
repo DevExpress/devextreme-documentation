@@ -6,7 +6,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Specifies options for value axis strips.
+Specifies properties for value axis strips.
 
 ---
 Strips are the highlighted areas in a chart within the defined range of values (minimum and maximum) for an axis to which they belong. In general, strips are used to visually represent a range of values behind a series to trace whether the series points' values fall in or out of that range. For more details on strips, refer to the [Strips](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/100%20Strips.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Strips') topic.

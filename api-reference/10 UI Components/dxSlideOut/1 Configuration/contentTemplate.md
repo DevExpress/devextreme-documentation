@@ -14,9 +14,9 @@ Specifies a custom template for the UI component content. Rendered only once - w
 A template name or container.
 
 ---
-Use to manage the content regardless of which view is selected. You can use the [onSelectionChanged](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#onSelectionChanged') option to manually update the content when a title is clicked.
+Use to manage the content regardless of which view is selected. You can use the [onSelectionChanged](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#onSelectionChanged') property to manually update the content when a title is clicked.
 
-If this option is defined, the [itemTemplate](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#itemTemplate') option is ignored.
+If this property is defined, the [itemTemplate](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#itemTemplate') property is ignored.
 
 #####See Also#####
 - [Customize the View](/concepts/05%20Widgets/SlideOut/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOut/Customize_the_View/')

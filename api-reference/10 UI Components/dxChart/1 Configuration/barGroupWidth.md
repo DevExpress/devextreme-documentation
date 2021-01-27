@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a fixed width for groups of bars with the same argument, measured in pixels. Takes precedence over the [barGroupPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/barGroupPadding.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#barGroupPadding') option.
+Specifies a fixed width for groups of bars with the same argument, measured in pixels. Takes precedence over the [barGroupPadding](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/barGroupPadding.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#barGroupPadding') property.
 
 ##### propertyOf
 dxChartSeriesTypes.BarSeries,dxChartSeriesTypes.StackedBarSeries,dxChartSeriesTypes.FullStackedBarSeries,dxChartSeriesTypes.RangeBarSeries

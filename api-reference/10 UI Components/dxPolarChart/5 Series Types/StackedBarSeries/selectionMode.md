@@ -9,7 +9,7 @@ default: 'onlyPoint'
 Specifies series elements to be highlighted when a user selects the series.
 
 ---
-When a user selects the series, it may react in one of the following ways depending on the value of the **selectionMode** option.
+When a user selects the series, it may react in one of the following ways depending on the value of the **selectionMode** property.
 
 * **onlyPoint**   
 Only the selected series point changes its style.

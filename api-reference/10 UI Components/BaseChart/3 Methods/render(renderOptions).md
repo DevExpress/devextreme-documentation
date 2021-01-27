@@ -6,7 +6,7 @@ id: BaseChart.render(renderOptions)
 Redraws the UI component.
 
 ##### param(renderOptions): Object
-Rendering options.
+Rendering properties.
 
 ---
 You can call the **render** method without parameters after the size or visibility of the UI component container is changed. Alternatively, call the **render** method passing an object as the parameter. This object must contain the **force** field set to *'true'*. In addition, you can use this object to specify whether or not to perform animation on redrawing with the **animate** field.

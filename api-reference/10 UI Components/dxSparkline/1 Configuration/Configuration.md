@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that specifies configuration options for the **Sparkline** UI component.
+An object that specifies configuration properties for the **Sparkline** UI component.
 
 ---
 #####See Also#####

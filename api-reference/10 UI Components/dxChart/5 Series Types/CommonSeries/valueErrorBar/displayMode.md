@@ -9,7 +9,7 @@ default: 'auto'
 Specifies whether error bars must be displayed in full or partially.
 
 ---
-This option accepts the following values.
+This property accepts the following values.
 
 <table class="dx-table">
     <tr>

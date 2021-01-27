@@ -11,7 +11,7 @@ Tooltips are configured using fields of the [tooltip](/api-reference/20%20Data%2
 		}
 	};
 
-Then, you are required to specify the text to be displayed by a tooltip. Implement a function returning an object with the **text** field set and assign this function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/tooltip/#customizeTooltip') option. When implementing it, you can use the [Layer Element](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/') object passed to this function as the argument. To distinguish areas from markers, check the **layer.type** field of this object against being equal to *'area'* or *'marker'*. For example, the following code snippet shows how to provide text only for marker tooltips.
+Then, you are required to specify the text to be displayed by a tooltip. Implement a function returning an object with the **text** field set and assign this function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/tooltip/#customizeTooltip') property. When implementing it, you can use the [Layer Element](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/') object passed to this function as the argument. To distinguish areas from markers, check the **layer.type** field of this object against being equal to *'area'* or *'marker'*. For example, the following code snippet shows how to provide text only for marker tooltips.
 
 	<!--JavaScript-->var vectorMapOptions = {
 		// ...
@@ -25,10 +25,10 @@ Then, you are required to specify the text to be displayed by a tooltip. Impleme
 		}
 	};
 
-Furthermore, there is a number of additional options specifying the appearance of tooltips. All of them are set in the **tooltip** configuration object. A structured overview of these options is given in the following list.
+Furthermore, there is a number of additional properties specifying the appearance of tooltips. All of them are set in the **tooltip** configuration object. A structured overview of these properties is given in the following list.
 
 * **Color**			
-You can specify the color of tooltips using the [color](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/color.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/tooltip/#color') option. If you need to specify the color of a particular tooltip, assign it to the **color** field of the object returned by the **customizeTooltip** function. 
+You can specify the color of tooltips using the [color](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/color.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/tooltip/#color') property. If you need to specify the color of a particular tooltip, assign it to the **color** field of the object returned by the **customizeTooltip** function. 
 
 * **Font Settings**			
 To change the font of the text displayed by a tooltip, use the fields of the [font](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/tooltip/font '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/tooltip/font/') object.

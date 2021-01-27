@@ -2,7 +2,7 @@ Each [series point](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/020
 
 ![Point Labels](/images/ChartJS/Polar_SeriesLabels.png)
 
-To change the default label appearance, use options of the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/label/') object. This object should be defined within the [series](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/010%20Series.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Series') whose labels must be customized. If you need to provide the same options for point labels in all series in the chart, define the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/label/') object within the **commonSeriesSettings** configuration object.
+To change the default label appearance, use properties of the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/label/') object. This object should be defined within the [series](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/010%20Series.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Series') whose labels must be customized. If you need to provide the same properties for point labels in all series in the chart, define the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/label/') object within the **commonSeriesSettings** configuration object.
 
 	<!--JavaScript-->var polarChartOptions = {
         // ...
@@ -18,7 +18,7 @@ To change the default label appearance, use options of the [label](/api-referenc
 		}
 	};
 
-The following list provides an overview of the **label** object options.
+The following list provides an overview of the **label** object properties.
 
 * **Visibility**		
 To make point labels visible, set the **label** object's [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label/visible.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/label/#visible') property to _true_. If there are too many labels and they are not required to be shown all together, you can set a maximum for the count of labels that can be shown. For this purpose, use the [maxLabelCount](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/maxLabelCount.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#maxLabelCount') property of a particular series or of the **commonSeriesSettings** object.

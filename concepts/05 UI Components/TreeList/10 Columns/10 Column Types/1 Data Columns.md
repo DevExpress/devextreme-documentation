@@ -2,7 +2,7 @@ Data columns are the most common type of columns used in the **TreeList** UI com
 
 ![DevExtreme HTML5 JavaScript TreeList DataColumns](/images/treelist/visual_elements/column-types_data.png)
 
-If data column values should be cast to another type (for example, date values stored as strings), specify the target type using the [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#dataType') option.
+If data column values should be cast to another type (for example, date values stored as strings), specify the target type using the [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#dataType') property.
 
 ---
 ##### jQuery

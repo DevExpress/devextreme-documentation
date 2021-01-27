@@ -8,6 +8,6 @@ default: '#9d9d9d'
 Specifies a color for the border of the layer elements.
 
 ---
-This option does not apply if the [layer type](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/type.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#type') is *"line"*.
+This property does not apply if the [layer type](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/type.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#type') is *"line"*.
 
 #include common-colorlist

@@ -6,7 +6,7 @@ id: PivotGridDataSource.getAreaFields(area, collectGroups)
 Gets all the fields within an area.
 
 ##### return: Array<PivotGridDataSource_Options_fields>
-All the [options](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/') of all the fields within the area.
+All the [properties](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/') of all the fields within the area.
 
 ##### param(area): String
 The [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') that contains the fields to get.

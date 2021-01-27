@@ -12,7 +12,7 @@ Specifies the annotation collection.
 Annotations are images and text blocks that provide additional information about the visualized data.
 
 ![DevExtreme PolarChart: Annotations](/images/ChartJS/annotations/polar-chart-text-image-annotation.png)       
-To configure annotations, assign an array of objects to the **annotations[]** option. Each object should have the [type](/api-reference/_hidden/BaseChartAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"* or *"image"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseChartAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') or [image](/api-reference/_hidden/BaseChartAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/') option:
+To configure annotations, assign an array of objects to the **annotations[]** property. Each object should have the [type](/api-reference/_hidden/BaseChartAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type') field set to *"text"* or *"image"*. Depending on the **type**, specify the annotation's [text](/api-reference/_hidden/BaseChartAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') or [image](/api-reference/_hidden/BaseChartAnnotationConfig/image '{basewidgetpath}/Configuration/annotations/image/') property:
     
 ---
 ##### jQuery
@@ -137,9 +137,9 @@ To configure annotations, assign an array of objects to the **annotations[]** op
 
 ---
 
-Annotations can be anchored to a **PolarChart** element. To do this, use the [argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument'), [value](/api-reference/_hidden/BaseChartAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value') or [series](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/series.md '{basewidgetpath}/Configuration/annotations/#series') options, depending on the element you want to anchor the annotation to.
+Annotations can be anchored to a **PolarChart** element. To do this, use the [argument](/api-reference/_hidden/BaseChartAnnotationConfig/argument.md '{basewidgetpath}/Configuration/annotations/#argument'), [value](/api-reference/_hidden/BaseChartAnnotationConfig/value.md '{basewidgetpath}/Configuration/annotations/#value') or [series](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/series.md '{basewidgetpath}/Configuration/annotations/#series') properties, depending on the element you want to anchor the annotation to.
 
-To define the position of an unanchored annotation, set the pixel coordinates ([x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') and [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')) or use [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle') and [radius](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/radius.md '{basewidgetpath}/Configuration/annotations/#radius') options.
+To define the position of an unanchored annotation, set the pixel coordinates ([x](/api-reference/_hidden/BaseChartAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') and [y](/api-reference/_hidden/BaseChartAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')) or use [angle](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/angle.md '{basewidgetpath}/Configuration/annotations/#angle') and [radius](/api-reference/_hidden/dxPolarChartCommonAnnotationConfig/radius.md '{basewidgetpath}/Configuration/annotations/#radius') properties.
 
 - **Unanchored annotation**
 
@@ -184,7 +184,7 @@ To define the position of an unanchored annotation, set the pixel coordinates ([
 
 When a user long-presses an annotation or hovers the mouse pointer over it, the **PolarChart** displays a [tooltip](/api-reference/_hidden/BaseChartAnnotationConfig/tooltipEnabled.md '{basewidgetpath}/Configuration/annotations/#tooltipEnabled').
 
-Objects in the **annotations[]** array configure individual annotations. To specify options common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
+Objects in the **annotations[]** array configure individual annotations. To specify properties common for all annotations, use the [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartAnnotations/"

@@ -1,4 +1,4 @@
-To bind the **TreeList** to data in the JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource') option.  
+To bind the **TreeList** to data in the JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource') property.  
 
 ---
 ##### jQuery

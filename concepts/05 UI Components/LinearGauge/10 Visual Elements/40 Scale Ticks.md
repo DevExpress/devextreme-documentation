@@ -15,15 +15,15 @@ To configure major and minor scale ticks, use the **scale**.[tick](/api-referenc
 		}
     };
 
-Major ticks are visible by default. To display minor ticks, you need to set the **minorTick**.**visible** option to **true**. You can change the visibility of the major ticks using the same option within the **tick** configuration object.
+Major ticks are visible by default. To display minor ticks, you need to set the **minorTick**.**visible** property to **true**. You can change the visibility of the major ticks using the same property within the **tick** configuration object.
 
-By default, scale ticks are generated automatically. If you are not satisfied with the automatically generated ticks, you can specify a custom interval for major and minor ticks. To do this, use the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/tickInterval.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#tickInterval') and [minorTickInterval](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/minorTickInterval.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#minorTickInterval') options, respectively.
+By default, scale ticks are generated automatically. If you are not satisfied with the automatically generated ticks, you can specify a custom interval for major and minor ticks. To do this, use the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/tickInterval.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#tickInterval') and [minorTickInterval](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/minorTickInterval.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#minorTickInterval') properties, respectively.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleCustomTickInterval/"
 }
 
-If neither automatically generated ticks nor ticks with a custom interval fit your requirements, you can place major and minor ticks at specific scale values. Assign an array of required values to the [customTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customTicks.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#customTicks') or [customMinorTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customMinorTicks.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#customMinorTicks') option.
+If neither automatically generated ticks nor ticks with a custom interval fit your requirements, you can place major and minor ticks at specific scale values. Assign an array of required values to the [customTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customTicks.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#customTicks') or [customMinorTicks](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/scale/customMinorTicks.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/scale/#customMinorTicks') property.
 
 	<!--JavaScript-->var gaugeOptions = {
 		scale: {
@@ -36,4 +36,4 @@ If neither automatically generated ticks nor ticks with a custom interval fit yo
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleCustomTickValues/"
 }
 
-In addition, you can specify the color, length and width of major and minor ticks using the corresponding options of the **tick** or **minorTick** configuration objects.
+In addition, you can specify the color, length and width of major and minor ticks using the corresponding properties of the **tick** or **minorTick** configuration objects.

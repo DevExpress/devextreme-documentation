@@ -5,6 +5,6 @@ hidden:
 ---
 ---
 ##### shortDescription
-An object that defines configuration options for polar chart series.
+An object that defines configuration properties for polar chart series.
 
 ---

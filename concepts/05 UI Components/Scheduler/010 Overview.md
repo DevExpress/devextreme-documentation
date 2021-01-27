@@ -22,7 +22,7 @@ The **Scheduler** is a UI component that represents scheduled data and allows a 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }
 
-The following code adds the **Scheduler** UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') option.
+The following code adds the **Scheduler** UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') property.
 
 ---
 
@@ -152,7 +152,7 @@ The following code adds the **Scheduler** UI component to your page. The simples
 
 ---
 
-Each data source object represents an appointment to be scheduled and has a special structure. This structure should be similar to that described in the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') option. The fields listed below should be present in every appointment.
+Each data source object represents an appointment to be scheduled and has a special structure. This structure should be similar to that described in the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property. The fields listed below should be present in every appointment.
 
 - **text**  
     The subject of an appointment.

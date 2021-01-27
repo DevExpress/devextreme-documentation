@@ -1,4 +1,4 @@
-By default, exactly one panel can be in the expanded state at one moment. To change this, switch the [collapsible](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/collapsible.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#collapsible') and [multiple](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#multiple') options to _true_.
+By default, exactly one panel can be in the expanded state at one moment. To change this, switch the [collapsible](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/collapsible.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#collapsible') and [multiple](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#multiple') properties to _true_.
 
 ---
 

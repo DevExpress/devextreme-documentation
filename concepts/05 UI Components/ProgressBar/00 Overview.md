@@ -4,7 +4,7 @@ The **ProgressBar** is a UI component that shows current progress.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview/"
 }
 
-The following code adds a simple **ProgressBar** to your page. The **value** option specifies the current value. The **min** and **max** options limit the range of accepted values. The progress is measured in percentages and calculated by the following formula: `(value / max) * 100`. If the current progress is unknown yet, set the **value** option to **false**.
+The following code adds a simple **ProgressBar** to your page. The **value** property specifies the current value. The **min** and **max** properties limit the range of accepted values. The progress is measured in percentages and calculated by the following formula: `(value / max) * 100`. If the current progress is unknown yet, set the **value** property to **false**.
 
 ---
 ##### jQuery

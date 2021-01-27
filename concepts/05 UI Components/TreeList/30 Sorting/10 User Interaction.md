@@ -1,4 +1,4 @@
-With the **TreeList** UI component, a user can sort by single and multiple columns. Use the **sorting**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') option to specify the current sorting mode.
+With the **TreeList** UI component, a user can sort by single and multiple columns. Use the **sorting**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') property to specify the current sorting mode.
 
 ---
 ##### jQuery
@@ -48,7 +48,7 @@ To cancel a column's sorting settings, the user clicks the column's header while
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Sorting](/images/treelist/visual_elements/sorting_context_menu.png)
 
-To disable sorting in the whole UI component, set the **sorting**.**mode** option to *"none"*; to disable sorting only in a specific column, use its [allowSorting](/api-reference/_hidden/GridBaseColumn/allowSorting.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowSorting') option.
+To disable sorting in the whole UI component, set the **sorting**.**mode** property to *"none"*; to disable sorting only in a specific column, use its [allowSorting](/api-reference/_hidden/GridBaseColumn/allowSorting.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowSorting') property.
 
 ---
 ##### jQuery

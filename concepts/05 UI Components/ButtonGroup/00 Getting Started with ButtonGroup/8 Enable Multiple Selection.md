@@ -1,4 +1,4 @@
-Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectionMode') option to *"multiple"* to allow users to select multiple buttons. You can also change the **onSelectionChanged** handler from the previous step to log all the selected styles in the console:
+Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectionMode') property to *"multiple"* to allow users to select multiple buttons. You can also change the **onSelectionChanged** handler from the previous step to log all the selected styles in the console:
 
 ---
 ##### jQuery

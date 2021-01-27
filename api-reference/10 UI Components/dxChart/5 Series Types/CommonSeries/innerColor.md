@@ -12,5 +12,5 @@ dxChartSeriesTypes.CandleStickSeries
 
 ---
 #####See Also#####
-- [reduction](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/reduction/') - specifies the price reduction options for financial series.
+- [reduction](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/reduction '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/reduction/') - specifies the price reduction properties for financial series.
 - [color](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/#color') - colors the frame of a series point in *candlestick* series.

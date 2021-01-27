@@ -12,4 +12,4 @@ The legend is a component that helps a user identify funnel items. The legend co
 
 ![DevExtreme HTML5 Javacript Funnel Legend](/images/funnel/visual_elements/legend.png)
 
-You can make the legend visible by setting the **legend**.**visible** option to **true**.
+You can make the legend visible by setting the **legend**.**visible** property to **true**.

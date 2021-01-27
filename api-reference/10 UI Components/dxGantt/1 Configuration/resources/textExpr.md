@@ -9,4 +9,4 @@ Specifies the data field that provides resource texts.
 
 ---
 
-Refer to the [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/') option to see how to specify the **textExpr** option.
+Refer to the [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/') property to see how to specify the **textExpr** property.

@@ -4,7 +4,7 @@ The **LoadIndicator** is a UI element notifying the viewer that a process is in 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadIndicator/Overview/"
 }
 
-The following code adds a simple **LoadIndicator** to your page. You can change the UI component size, using the [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#height') options.
+The following code adds a simple **LoadIndicator** to your page. You can change the UI component size, using the [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#height') properties.
 
 ---
 ##### jQuery
@@ -103,7 +103,7 @@ The following code adds a simple **LoadIndicator** to your page. You can change 
 
 ---
 
-If you need to use a custom image in the **LoadIndicator**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadIndicator/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#indicatorSrc') option.
+If you need to use a custom image in the **LoadIndicator**, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadIndicator/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#indicatorSrc') property.
 
 ---
 ##### jQuery

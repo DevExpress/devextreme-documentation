@@ -10,7 +10,7 @@ The count of columns in the group layout.
 ---
 [note]
 
-For extra small screens, this option always equals *1* to make the UI component adaptive. Specify the [colCountByScreen](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/GroupItem/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/colCountByScreen/') option to override this logic.
+For extra small screens, this property always equals *1* to make the UI component adaptive. Specify the [colCountByScreen](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/GroupItem/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/colCountByScreen/') property to override this logic.
 
 ---
 ##### jQuery

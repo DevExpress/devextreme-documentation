@@ -1,4 +1,4 @@
-Specify the UI component's **integrationOptions** option to provide two-way binding and template support.
+Specify the UI component's **integrationOptions** property to provide two-way binding and template support.
 
     DevExpress.ui.dxAccordion(element, {
         ...
@@ -51,7 +51,7 @@ The **integrationOptions** configuration object contains the following fields:
 
 - **createTemplate**
 
- A function that processes a custom template. It accepts an HTML markup or a DOM node passed to a UI component's **...Template** option and returns an object with a render function.
+ A function that processes a custom template. It accepts an HTML markup or a DOM node passed to a UI component's **...Template** property and returns an object with a render function.
 
         createTemplate: function(source) {
             var template = Hogan.compile(source);

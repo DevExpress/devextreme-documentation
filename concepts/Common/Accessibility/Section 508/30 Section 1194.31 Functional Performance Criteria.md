@@ -32,6 +32,6 @@
     <tr>
         <td>(f) At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach and strength shall be provided.</td>
         <td>Supports with Exceptions</td>
-        <td>DevExtreme UI components support forward interior element navigation using the Tab key if the <b>tabIndex</b> option is specified. When a UI component is focussed, its internal elements can be operated using the keyboard.</td>
+        <td>DevExtreme UI components support forward interior element navigation using the Tab key if the <b>tabIndex</b> property is specified. When a UI component is focussed, its internal elements can be operated using the keyboard.</td>
     </tr>
 </table>

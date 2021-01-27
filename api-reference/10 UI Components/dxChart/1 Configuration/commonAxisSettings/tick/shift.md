@@ -14,7 +14,7 @@ In the reference position, the axis runs through the center of each tick:
 
 Positive values shift ticks toward axis labels; negative values shift ticks in the opposite direction.
 
-The following table illustrates this option:
+The following table illustrates this property:
 
 <table  class="dx-table">
     <tr>

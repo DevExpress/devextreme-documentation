@@ -9,7 +9,7 @@ default: 'none'
 Specifies chart elements to be highlighted when a user points to an axis label.
 
 ---
-This option accepts one of the following values.
+This property accepts one of the following values.
 
 * **none**    
 Axis labels do not respond to pointing to them.

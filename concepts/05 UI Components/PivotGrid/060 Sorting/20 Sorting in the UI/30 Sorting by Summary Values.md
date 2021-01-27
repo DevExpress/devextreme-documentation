@@ -2,14 +2,14 @@ To understand how fields are sorted by summary values, consider two dimensions: 
 
 ![DevExtreme PivotGrid FieldChooser SortingIcons](/images/DataGrid/PivotGrid_sortingBySummary_contextMenu.png)
 
-To allow the user to perform this type of sorting, set the [allowSortingBySummary](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSortingBySummary.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSortingBySummary') option to **true**.
+To allow the user to perform this type of sorting, set the [allowSortingBySummary](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSortingBySummary.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSortingBySummary') property to **true**.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...
         allowSortingBySummary: true // allows the end-user to sort by summary for all column and row fields
     };
     
-If you need to allow sorting by summary for an individual field only, set the [same option](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSortingBySummary.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSortingBySummary') inside the configuration object of this field.
+If you need to allow sorting by summary for an individual field only, set the [same property](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSortingBySummary.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSortingBySummary') inside the configuration object of this field.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

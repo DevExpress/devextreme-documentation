@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-An object defining configuration options for gauge UI components.
+An object defining configuration properties for gauge UI components.
 
 ---

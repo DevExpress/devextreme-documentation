@@ -4,6 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies options defining the appearance of scale ticks.
+Specifies properties defining the appearance of scale ticks.
 
 ---

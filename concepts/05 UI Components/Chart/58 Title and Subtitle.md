@@ -99,7 +99,7 @@ The title is configured by the [title](/api-reference/20%20Data%20Visualization%
 
 ---
 
-You can set the title's text more concisely by assigning it directly to the **title** option. This is useful if you are satisfied with the default settings of the title and do not need a subtitle. 
+You can set the title's text more concisely by assigning it directly to the **title** property. This is useful if you are satisfied with the default settings of the title and do not need a subtitle. 
 
 ---
 ##### jQuery
@@ -174,7 +174,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
 
 ---
 
-For information about all options of the title and subtitle, visit the [title](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/') section of the API reference.
+For information about all properties of the title and subtitle, visit the [title](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/') section of the API reference.
 
 #####See Also#####
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource)

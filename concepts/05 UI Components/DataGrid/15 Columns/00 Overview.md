@@ -1,4 +1,4 @@
-Columns represent sets of data values that have the same type. To configure columns, assign an array of objects to the [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') option. Each object in it configures a single column. If a column does not need to be customized, this array may include the name of the field that provides data for this column.
+Columns represent sets of data values that have the same type. To configure columns, assign an array of objects to the [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') property. Each object in it configures a single column. If a column does not need to be customized, this array may include the name of the field that provides data for this column.
 
 ---
 ##### jQuery

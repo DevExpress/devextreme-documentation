@@ -1,4 +1,4 @@
-When you need to place the center into a different geographical point, use the [center(centerCoordinates)](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/3%20Methods/center(centerCoordinates).md '/Documentation/ApiReference/UI_Components/dxVectorMap/Methods/#centercenterCoordinates') method. Call this method with an array of two values: the longitude and the latitude of the new center, similar to the array the **center** option accepts.
+When you need to place the center into a different geographical point, use the [center(centerCoordinates)](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/3%20Methods/center(centerCoordinates).md '/Documentation/ApiReference/UI_Components/dxVectorMap/Methods/#centercenterCoordinates') method. Call this method with an array of two values: the longitude and the latitude of the new center, similar to the array the **center** property accepts.
 
 	<!--JavaScript-->vectorMapInstance.center([-106.61, 35.110833]); // moves the center to Albuquerque
 

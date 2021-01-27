@@ -9,7 +9,7 @@ default: 'instantly'
 Specifies the way an end-user applies the selected value.
 
 ---
-The option accepts the following values.
+The property accepts the following values.
 
 - "useButtons"  
  Enables an end-user to apply the selected value or cancel the selection using the Apply and Cancel buttons respectively.

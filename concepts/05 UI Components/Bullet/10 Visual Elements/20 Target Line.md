@@ -2,11 +2,11 @@ A target line is a vertical line that indicates a target value. According to the
 
 ![DevExtreme ChartJS BulletChart BulletGraph](/images/ChartJS/BulletTargetLine.png)
 
-To specify the target value, set the [target](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#target') option of the main configuration object.
+To specify the target value, set the [target](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#target') property of the main configuration object.
 
 	<!--JavaScript-->var bulletOptions = {
 		target: 50,
 		// ...
 	};
 
-Additionally, you can customize the appearance of the target line. Particularly, you can specify its color using the [targetColor](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetColor.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetColor') option, and its width using the [targetWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetWidth.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetWidth') option.
+Additionally, you can customize the appearance of the target line. Particularly, you can specify its color using the [targetColor](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetColor.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetColor') property, and its width using the [targetWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetWidth.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetWidth') property.

@@ -3,10 +3,10 @@ id: Component.option(options)
 ---
 ---
 ##### shortDescription
-Updates the values of several options.
+Updates the values of several properties.
 
 ##### param(options): Object
-Options with their new values.
+Propertieswith their new values.
 
 ---
 #####See Also#####

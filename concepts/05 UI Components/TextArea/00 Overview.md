@@ -77,7 +77,7 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
 
 ---
 
-By default, the **TextArea** checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** option.
+By default, the **TextArea** checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** property.
 
 ---
 ##### jQuery
@@ -148,7 +148,7 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
 
 ---
 
-If an end user should _not_ be able to edit the text in the **TextArea**, assign **true** to the **readOnly** option. In this case, make sure to set the **value** option too.
+If an end user should _not_ be able to edit the text in the **TextArea**, assign **true** to the **readOnly** property. In this case, make sure to set the **value** property too.
 
 ---
 ##### jQuery

@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Along with the **endValue** option, limits the scale break.
+Along with the **endValue** property, limits the scale break.
 
 ---

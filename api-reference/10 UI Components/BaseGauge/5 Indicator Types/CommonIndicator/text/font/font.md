@@ -5,7 +5,7 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for the text displayed by the indicator.
+Specifies font properties for the text displayed by the indicator.
 
 ##### propertyOf
 circularRangeBar,linearRangeBar,circularTextCloud,linearTextCloud

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies options for the date-time scale's markers.
+Specifies properties for the date-time scale's markers.
 
 ---
 When a scale is of the date-time type, scale markers can be displayed. If a major tick interval is set in days, a marker will be displayed between the last day of the month and the first day of the new month. The marker will indicate the new month. The same logic for setting markers is used when a tick interval is set using other date-time units.

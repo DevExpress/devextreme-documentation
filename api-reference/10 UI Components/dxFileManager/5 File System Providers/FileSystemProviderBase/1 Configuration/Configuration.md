@@ -1,4 +1,4 @@
 ---
 ##### shortDescription
-This section describes the file system provider's options.
+This section describes the file system provider's properties.
 ---

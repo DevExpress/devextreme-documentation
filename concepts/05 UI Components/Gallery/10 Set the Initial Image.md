@@ -1,4 +1,4 @@
-By default, the image that the **Gallery** UI component displays initially is the first item of the data source. To specify another item to be initially displayed, assign its index in the [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#dataSource') to the [selectedIndex](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedIndex') option.
+By default, the image that the **Gallery** UI component displays initially is the first item of the data source. To specify another item to be initially displayed, assign its index in the [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#dataSource') to the [selectedIndex](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedIndex') property.
 
 ---
 ##### jQuery
@@ -105,7 +105,7 @@ By default, the image that the **Gallery** UI component displays initially is th
 
 ---
 
-As an alternative, you can specify the initial image using its data source object. In this case, assign the object to the [selectedItem](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedItem') option.
+As an alternative, you can specify the initial image using its data source object. In this case, assign the object to the [selectedItem](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedItem') property.
 
 ---
 ##### jQuery

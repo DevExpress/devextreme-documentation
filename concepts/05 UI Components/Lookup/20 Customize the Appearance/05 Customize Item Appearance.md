@@ -289,7 +289,7 @@ You can also customize an individual **Lookup** item. For this purpose, declare 
         // ...
     ];
 
-Using similar techniques, you can customize the input field of the **Lookup**. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#fieldTemplate') option. 
+Using similar techniques, you can customize the input field of the **Lookup**. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#fieldTemplate') property. 
 
 ---
 ##### jQuery

@@ -1,0 +1,52 @@
+Apart from text, buttons can also display [icons from different sources](/Documentation/Guide/Themes_and_Styles/Icons/). To add an icon, specify the [icon](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon) property (applies to all types except *"back"*). In this tutorial, we will use the [DevExtreme icon library](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library):
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#button").dxButton({
+            // ...
+            icon: "comment"
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-button ...
+        icon="comment">
+    </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxButton ...
+            icon="comment"
+        />
+    </template>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+
+    function App() {
+        return (
+            <div className="App">
+                <Button ...
+                    icon="comment"
+                />
+            </div>
+        );
+    }
+
+    export default App;
+
+---
+
+You have configured basic Button features. To take a more detailed look at this UI component, explore the following resources:
+
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Overview) 
+- [API Reference](/Documentation/ApiReference/UI_Components/dxButton/)

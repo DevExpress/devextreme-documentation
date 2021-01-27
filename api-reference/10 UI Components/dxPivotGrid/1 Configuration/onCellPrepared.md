@@ -53,6 +53,7 @@ The following code how to locate and customize cells under different conditions:
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
                     e.cellElement.css("backgroundColor", "lightGreen")
                 if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName") {
+                    // apply the cell value as HTML code
                     e.cellElement.html(e.cell.text)
                 }
             }

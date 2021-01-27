@@ -27,3 +27,6 @@ The **SelectBox** looks the same on any platform, while **Lookup** changes its a
     name: "Lookup",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/"
 }
+
+#####See Also#####
+- [How to Choose a Drop-Down Editor](/Documentation/Guide/UI_Components/SelectBox/How_to_Choose_a_Drop-Down_Editor/)

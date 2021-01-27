@@ -47,11 +47,14 @@ The following code how to locate and customize cells under different conditions:
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
-            onCellPrepared: function(e) {          
+            onCellPrepared: function(e) {
                 if(e.area === "row" || e.area === "column") 
                     e.cellElement.css("font-weight", "bold")
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
                     e.cellElement.css("backgroundColor", "lightGreen")
+                if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName") {
+                    e.cellElement.html(e.cell.text)
+                }
             }
         });
     });

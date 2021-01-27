@@ -11,7 +11,7 @@ The scrollable part's instance.
 ---
 For information on API members of the scrollable part, refer to the [ScrollView](/api-reference/10%20UI%20Widgets/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/') section, but bear in mind that several members described there are unavailable. Those are the following.
 
-**Options:** 
+**Properties:** 
 
 - *pullingDownText*  
 - *pulledDownText*  

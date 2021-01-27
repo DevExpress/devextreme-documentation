@@ -14,7 +14,7 @@
         public string FileGuid { get; set; }
     }
     [HttpPost]
-    // "file" is the value of the FileUploader's "name" option
+    // "file" is the value of the FileUploader's "name" property
     public ActionResult ChunkUpload(HttpPostedFileBase file, string chunkMetadata)
     {
         // Specifies the location for temporary files

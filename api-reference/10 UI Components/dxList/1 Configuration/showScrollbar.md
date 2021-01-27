@@ -9,7 +9,7 @@ default: 'onScroll', 'onHover' (desktop)
 Specifies when the UI component shows the scrollbar.
 
 ---
-Setting this option makes sense only when the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '{basewidgetpath}/Configuration/#useNativeScrolling') option is set to **false**.
+Setting this property makes sense only when the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '{basewidgetpath}/Configuration/#useNativeScrolling') property is set to **false**.
 
 #include common-ref-enum with {
     enum: "`ShowScrollbarMode`",

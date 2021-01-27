@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for the text displayed by the range selector slider markers.
+Specifies font properties for the text displayed by the range selector slider markers.
 
 ---

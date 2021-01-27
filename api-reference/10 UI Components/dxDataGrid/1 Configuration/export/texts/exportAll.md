@@ -12,6 +12,6 @@ If you allow users to [export selected rows](/api-reference/10%20UI%20Widgets/dx
 
 ![DevExtreme HTML5 Data Grid Export All Text on Small Screen](/images/DataGrid/export_texts/export_all_on_small_screen.png) ![DevExtreme HTML5 Data Grid Export All and Selected Data Text](/images/DataGrid/export_texts/export_all_and_selected_data.png)
 
-In other cases, this option specifies the **Export** button's hint.
+In other cases, this property specifies the **Export** button's hint.
 
 ![DevExtreme HTML5 Data Grid Export All Text](/images/DataGrid/export_texts/export_all_default.png)

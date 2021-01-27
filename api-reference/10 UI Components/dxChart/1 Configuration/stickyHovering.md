@@ -8,9 +8,9 @@ default: true
 Specifies whether a point should remain in the hover state when the mouse pointer moves away.
 
 ---
-When this option is **true**, a point remains in the hover state until the mouse pointer moves over to another point or outside the chart plot.
+When this property is **true**, a point remains in the hover state until the mouse pointer moves over to another point or outside the chart plot.
 
-When this option is **false**, a point remains in the hover state until the mouse pointer moves away from the point.
+When this property is **false**, a point remains in the hover state until the mouse pointer moves away from the point.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"

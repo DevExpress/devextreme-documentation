@@ -32,7 +32,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
             catalog: "AdventureWorksDW2012",
             cube: "Adventure Works"
         },
-        // Other PivotGridDataSource options go here
+        // Other PivotGridDataSource properties go here
     });
 
 ##### Angular  
@@ -59,7 +59,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
                     catalog: "AdventureWorksDW2012",
                     cube: "Adventure Works"
                 },
-                // Other PivotGridDataSource options go here
+                // Other PivotGridDataSource properties go here
             });
         }
     }
@@ -83,7 +83,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
                     catalog: "AdventureWorksDW2012",
                     cube: "Adventure Works"
                 },
-                // Other PivotGridDataSource options go here
+                // Other PivotGridDataSource properties go here
             });
         });
 
@@ -105,7 +105,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
                 catalog: "AdventureWorksDW2012",
                 cube: "Adventure Works"
             },
-            // Other PivotGridDataSource options go here
+            // Other PivotGridDataSource properties go here
         })
     };
 
@@ -132,7 +132,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
             catalog: 'AdventureWorksDW2012',
             cube: 'Adventure Works'
         },
-        // Other PivotGridDataSource options go here
+        // Other PivotGridDataSource properties go here
     });
 
     export default {
@@ -166,7 +166,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
             catalog: 'AdventureWorksDW2012',
             cube: 'Adventure Works'
         },
-        // Other PivotGridDataSource options go here
+        // Other PivotGridDataSource properties go here
     });
 
     class App extends React.Component {

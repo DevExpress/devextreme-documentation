@@ -8,7 +8,7 @@ default: undefined
 Formats the item value before displaying it in the label.
 
 ---
-This option accepts an object whose fields are described in the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section. The **percentPrecision** filed specifies how many decimal places should be included in the percentage value. See an example in the following code:
+This property accepts an object whose fields are described in the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section. The **percentPrecision** filed specifies how many decimal places should be included in the percentage value. See an example in the following code:
 
     format: {
         type: "fixedPoint", // the format of absolute values

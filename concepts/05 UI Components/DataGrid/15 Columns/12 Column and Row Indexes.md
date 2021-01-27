@@ -8,7 +8,7 @@ The following indexes can be used in methods and callback functions:
 
     ![DevExtreme HTML5 JavaScript DataGrid Visible Column Index](/images/DataGrid/visual_elements/columnIndexes.png)
 
-    This index is not equal to the index set in the **column**.[visibleIndex](/api-reference/_hidden/GridBaseColumn/visibleIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visibleIndex') option. The latter is used to reorder columns.
+    This index is not equal to the index set in the **column**.[visibleIndex](/api-reference/_hidden/GridBaseColumn/visibleIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visibleIndex') property. The latter is used to reorder columns.
 
 - **Row Index**         
     Equals a row's order among rendered rows. This index starts from 0 and increases by 1 per row (includes group and detail rows).

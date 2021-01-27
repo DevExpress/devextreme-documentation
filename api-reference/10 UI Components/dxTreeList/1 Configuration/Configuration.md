@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TreeList** UI component.
+An object defining configuration properties for the **TreeList** UI component.
 
 ---
 #####See Also#####

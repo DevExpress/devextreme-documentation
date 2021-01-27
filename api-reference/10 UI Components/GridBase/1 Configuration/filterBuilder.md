@@ -8,7 +8,7 @@ default: {}
 Configures the integrated filter builder.
 
 ---
-See the [FilterBuilder configuration](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/') for options that you can specify in this object.
+See the [FilterBuilder configuration](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/') for properties that you can specify in this object.
 
 #include widgets-config-object-option-note with {
     optionName: "filterBuilder"

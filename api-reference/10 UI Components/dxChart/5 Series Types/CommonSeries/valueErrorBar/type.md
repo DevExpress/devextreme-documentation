@@ -18,7 +18,7 @@ Depending on the type of errors you need to visualize, use error bars of one of 
     </tr>
     <tr>
         <td>"percent"</td>
-        <td>Defines the <a href="http://en.wikipedia.org/wiki/Confidence_interval">confidential interval</a> in percentages. Error bar values are calculated as a percentage of the series point value. The percentage value is determined by the <b>value</b> option. The high and low error bar values are drawn symmetrically up and down from the series point.</td>
+        <td>Defines the <a href="http://en.wikipedia.org/wiki/Confidence_interval">confidential interval</a> in percentages. Error bar values are calculated as a percentage of the series point value. The percentage value is determined by the <b>value</b> property. The high and low error bar values are drawn symmetrically up and down from the series point.</td>
     </tr>
     <tr>
         <td>"stdError"</td>
@@ -34,7 +34,7 @@ Depending on the type of errors you need to visualize, use error bars of one of 
     </tr>
     <tr>
         <td>"fixed"</td>
-        <td>Defines the confidential interval in constant values. Error bar values are determined by the <b>value</b> option. The high and low error bar values are drawn symmetrically up and down from the series point.</td>
+        <td>Defines the confidential interval in constant values. Error bar values are determined by the <b>value</b> property. The high and low error bar values are drawn symmetrically up and down from the series point.</td>
     </tr>
 </table>
 

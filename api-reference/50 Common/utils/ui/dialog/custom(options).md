@@ -11,7 +11,7 @@ Creates a dialog with custom buttons.
 An object that represents the dialog.
 
 ##### param(options): Object
-The dialog's options.
+The dialog's properties.
 
 ##### field(options.buttons): Array<dxButton_Options>
 Buttons to be displayed in the dialog.

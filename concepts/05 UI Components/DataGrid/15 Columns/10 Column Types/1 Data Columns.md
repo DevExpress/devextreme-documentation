@@ -2,7 +2,7 @@ Data columns are the most common type of columns used in the **DataGrid** UI com
 
 ![DevExtreme HTML5 JavaScript DataGrid DataColumns](/images/DataGrid/visual_elements/column-types_data.png)
 
-A data column automatically detects the type of its values. However, if the values should be converted (for example, if dates are stored as strings), set the target type using the [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') option. The UI component takes the data type into account when [filtering](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/'), [sorting](/concepts/05%20Widgets/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/DataGrid/Sorting/'), and performing other data operations.
+A data column automatically detects the type of its values. However, if the values should be converted (for example, if dates are stored as strings), set the target type using the [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') property. The UI component takes the data type into account when [filtering](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/'), [sorting](/concepts/05%20Widgets/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/DataGrid/Sorting/'), and performing other data operations.
 
 ---
 ##### jQuery

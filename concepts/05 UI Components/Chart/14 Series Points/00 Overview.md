@@ -126,7 +126,7 @@ A dedicated object is not provided for series whose points have a distinctive ap
 
 [note] Individual settings override common settings.
 
-Settings specified in the manner described above apply to a congregation of series points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizePoint') option. This function must return an object with options for the point that you want to customize.
+Settings specified in the manner described above apply to a congregation of series points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizePoint') property. This function must return an object with properties for the point that you want to customize.
 
 ---
 ##### jQuery

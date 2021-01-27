@@ -7,4 +7,4 @@ type: String | function()
 Specifies which data field defines whether the node has children.
 
 ---
-If you load data from the server, you need to set this option so that the UI component does not render the expand button for nodes without children.
+If you load data from the server, you need to set this property so that the UI component does not render the expand button for nodes without children.

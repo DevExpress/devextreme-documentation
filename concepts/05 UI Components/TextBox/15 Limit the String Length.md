@@ -1,4 +1,4 @@
-To limit the string length, assign an integer number to the **maxLength** option. By default, the string length is unlimited.
+To limit the string length, assign an integer number to the **maxLength** property. By default, the string length is unlimited.
 
 ---
 ##### jQuery

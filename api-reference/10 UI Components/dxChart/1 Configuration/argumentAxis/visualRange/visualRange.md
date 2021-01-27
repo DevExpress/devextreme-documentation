@@ -21,7 +21,7 @@ Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-re
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ZoomingAndScrolling/"
 }
 
-To specify the minimum visual range that a user can set, use the [minVisualRangeLength](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/minVisualRangeLength '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/minVisualRangeLength/') option.
+To specify the minimum visual range that a user can set, use the [minVisualRangeLength](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/minVisualRangeLength '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/minVisualRangeLength/') property.
 
 #####See Also#####
 - [Visual and Whole Ranges](/concepts/05%20Widgets/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/UI_Components/Chart/Axes/Visual_and_Whole_Ranges/')

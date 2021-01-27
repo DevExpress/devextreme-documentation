@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes options that configure the **CustomStore**.
+This section describes properties that configure the **CustomStore**.
 
 ---

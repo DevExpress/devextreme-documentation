@@ -9,7 +9,7 @@ default: 'bottom'
 Relocates the argument axis.
 
 ---
-Depending on the value of the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') option, **position** accepts different values.
+Depending on the value of the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') property, **position** accepts different values.
 
 <table class="dx-table">
     <tr>
@@ -26,4 +26,4 @@ Depending on the value of the [rotated](/api-reference/20%20Data%20Visualization
     </tr>
 </table>
 
-If the predefined positions do not meet your requirements, use the [customPosition](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/customPosition.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#customPosition') option.
+If the predefined positions do not meet your requirements, use the [customPosition](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/customPosition.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#customPosition') property.

@@ -31,7 +31,7 @@ Model data. Only available when using Knockout.
 
 ##### field(options.parentType): String
 The editor's location. One of *"dataRow"*, *"filterRow"*, *"headerRow"* or *"searchPanel"*.      
-Options passed to the function depend on this value.
+Propertiespassed to the function depend on this value.
 
 ##### field(options.readOnly): Boolean
 Indicates whether the editor is read-only.

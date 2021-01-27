@@ -1,6 +1,6 @@
 DevExtreme integrates a data library, which allows you to read and write data.  A comprehensive overview of data library features is provided in the [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') topic. This data library is comprised of a DataSource and a Store.
 
-A DataSource is a stateful object that keeps sorting, grouping, filtering and data transformation options, and applies them each time data is loaded. It also provides events intended to handle data and state changes. More information on the DataSource object can be found in the [Reference](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') section.
+A DataSource is a stateful object that keeps sorting, grouping, filtering and data transformation properties, and applies them each time data is loaded. It also provides events intended to handle data and state changes. More information on the DataSource object can be found in the [Reference](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') section.
 
 A Store is a universal data access component that is comprised of a number of methods for reading and editing data. You can find a listing of these methods in the [What Are Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') topic. There are four types of stores.
 

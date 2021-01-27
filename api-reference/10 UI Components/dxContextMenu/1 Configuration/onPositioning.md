@@ -30,6 +30,6 @@ The jQuery event that caused the handler execution. Deprecated in favor of the *
 Model data. Available only if you use Knockout.
 
 ##### field(e.position): positionConfig
-The [positioning options](/api-reference/50%20Common/Object%20Structures/positionConfig '/Documentation/ApiReference/Common/Object_Structures/positionConfig/').
+The [positioning properties](/api-reference/50%20Common/Object%20Structures/positionConfig '/Documentation/ApiReference/Common/Object_Structures/positionConfig/').
 
 ---

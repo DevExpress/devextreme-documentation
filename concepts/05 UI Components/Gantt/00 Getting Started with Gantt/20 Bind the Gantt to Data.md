@@ -98,7 +98,7 @@ The example below illustrates how to bind the **Gantt** UI component to the data
         // ...
     ];
 
-If your data sources' field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties when you specify the **tasks**, **resources**, **dependencies**, and **resource assignments** configuration options.
+If your data sources' field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties when you specify the **tasks**, **resources**, **dependencies**, and **resource assignments** configuration properties.
 
     <!-- tab: index.js -->
     $(function() {

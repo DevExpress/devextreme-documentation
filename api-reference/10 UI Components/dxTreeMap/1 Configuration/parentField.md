@@ -25,7 +25,7 @@ In certain cases, you may have a plain data source that implies a hierarchical s
         ]
     };
 
-Note that in this data source, objects that have children have the *"id"* field whose value is unique. Their children have the *"parent"* field pointing at the parent's ID. The *"id"* and *"parent"* fields can have other names, but in any case they must be assigned to the [idField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/idField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#idField') and **parentField** options.
+Note that in this data source, objects that have children have the *"id"* field whose value is unique. Their children have the *"parent"* field pointing at the parent's ID. The *"id"* and *"parent"* fields can have other names, but in any case they must be assigned to the [idField](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/idField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#idField') and **parentField** properties.
 
     <!--JavaScript-->var treeMapOptions = {
         // ...

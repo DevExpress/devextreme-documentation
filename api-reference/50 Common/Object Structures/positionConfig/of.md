@@ -7,7 +7,7 @@ type: String | Element | jQuery | Window
 The target element relative to which the overlay element should be positioned.
 
 ---
-This option accepts the following value types:
+This property accepts the following value types:
 
 - <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a> (or <a href="https://api.jquery.com/category/selectors/" target="_blank">jQuery selector</a> if jQuery is used)
 

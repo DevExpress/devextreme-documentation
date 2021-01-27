@@ -14,7 +14,7 @@ A row's data.
 The displayed value.
 
 ---
-This option accepts a string - the name of the data field that provides displayed values, or a function that returns the displayed value.
+This property accepts a string - the name of the data field that provides displayed values, or a function that returns the displayed value.
 
 [note]
 

@@ -20,7 +20,7 @@ The appearance of the selected series is not changed.
 </li>
 </ul>
 
-<p>To set custom options for the 'selected' style (which is applied when a series is selected), use the <b>selectionStyle</b> configuration object.</p>
+<p>To set custom properties for the 'selected' style (which is applied when a series is selected), use the <b>selectionStyle</b> configuration object.</p>
 
 #include common-ref-enum with {
     enum: "`PieChartSeriesInteractionMode`",

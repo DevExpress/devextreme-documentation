@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-The **BaseChart** options.
+The **BaseChart** properties.
 
 ---

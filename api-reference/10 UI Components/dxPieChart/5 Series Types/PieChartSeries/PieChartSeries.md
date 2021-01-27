@@ -7,6 +7,6 @@ inlineType:
 ---
 ---
 ##### shortDescription
-Specifies options for the series of the PieChart UI component.
+Specifies properties for the series of the PieChart UI component.
 
 ---

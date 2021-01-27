@@ -276,4 +276,4 @@ When invoking the context menu from code, you may want to specify its [position]
 
 ---
 
-This configuration of the **position** option reads as follows: "place **my** _top right_ corner **at** the _top left_ corner of the target element".
+This configuration of the **position** property reads as follows: "place **my** _top right_ corner **at** the _top left_ corner of the target element".

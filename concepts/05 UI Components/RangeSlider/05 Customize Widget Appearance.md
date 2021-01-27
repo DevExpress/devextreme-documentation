@@ -212,7 +212,7 @@ The **RangeSlider** can also display a tooltip for the slider handles. To config
 
 ---
 
-To specify whether or not the selected range should be highlighted, use the **showRange** option.
+To specify whether or not the selected range should be highlighted, use the **showRange** property.
 
 ---
 ##### jQuery

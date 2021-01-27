@@ -6,7 +6,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Specifies options for **VectorMap** UI component layers.
+Specifies properties for **VectorMap** UI component layers.
 
 ---
 The vector map may contain several different layers. Each layer can be of *"area"*, *"line"* or *"marker"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/type.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#type').

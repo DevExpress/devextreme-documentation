@@ -9,7 +9,7 @@ default: 'indicate'
 Specifies how to highlight the row's drop position.
 
 ---
-This option accepts the following values:
+This property accepts the following values:
 
 - *"indicate"*    
   Rows do not animate, a blue square appears at the place where the dragged row is going to be placed.

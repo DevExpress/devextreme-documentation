@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-An object defining configuration options for the dxDropDownList UI component.
+An object defining configuration properties for the dxDropDownList UI component.
 
 ---

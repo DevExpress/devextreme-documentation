@@ -11,7 +11,7 @@ Allows you to group bar series so that bars with the same argument overlap.
 dxChartSeriesTypes.BarSeries,dxChartSeriesTypes.RangeBarSeries
 
 ---
-Set this option to identical values for the series you want to collect in a single group.
+Set this property to identical values for the series you want to collect in a single group.
 
 The following image shows a regular bar chart with two series...
 

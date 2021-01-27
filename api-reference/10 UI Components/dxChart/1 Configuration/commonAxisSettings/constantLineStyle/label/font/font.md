@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for constant line labels.
+Specifies font properties for constant line labels.
 
 ---

@@ -20,7 +20,7 @@ The row's key.
 An array of objects or primitives, a store instance, or a **DataSource** configuration.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **Array of objects or primitives**       
 A JavaScript array that contains plain objects or primitives.
@@ -36,7 +36,7 @@ An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiR
 - **Function**      
 A function that returns one of the above.
 
-If the lookup data source contains objects, specify the [valueExpr](/api-reference/_hidden/GridBaseColumn/lookup/valueExpr.md '{basewidgetpath}/Configuration/columns/lookup/#valueExpr') and [displayExpr](/api-reference/_hidden/GridBaseColumn/lookup/displayExpr.md '{basewidgetpath}/Configuration/columns/lookup/#displayExpr') options in addition to the **dataSource**.
+If the lookup data source contains objects, specify the [valueExpr](/api-reference/_hidden/GridBaseColumn/lookup/valueExpr.md '{basewidgetpath}/Configuration/columns/lookup/#valueExpr') and [displayExpr](/api-reference/_hidden/GridBaseColumn/lookup/displayExpr.md '{basewidgetpath}/Configuration/columns/lookup/#displayExpr') properties in addition to the **dataSource**.
 
 [note] Collections of primitives are not supported if you use the <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a> library API <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference" target="_blank">directly</a> or via a server-side wrapper (<a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400704/concepts/data-binding#aspnet-mvc-and-web-api-controllers" target="_blank">as with the DevExtreme ASP.NET MVC Controls</a>) to load the collections from a remote data source. Reconfigure the data source to return collections of objects.
 

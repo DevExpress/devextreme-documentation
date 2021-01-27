@@ -9,7 +9,7 @@ default: 'nearestPoint'
 Specifies series elements to be highlighted when a user points to a series.
 
 ---
-When a user points to a series, it may react in one of the following ways depending on the value of the **hoverMode** option.
+When a user points to a series, it may react in one of the following ways depending on the value of the **hoverMode** property.
 
 <table class="dx-table">
     <tr>

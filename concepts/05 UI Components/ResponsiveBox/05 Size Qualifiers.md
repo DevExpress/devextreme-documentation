@@ -23,7 +23,7 @@ When choosing the layout for a specific screen, the UI component considers the s
     </tr>
 </table>
 
-If a size qualifier should be identified with other screen width values, use the [screenByWidth](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/#screenByWidth') option to specify the relation.
+If a size qualifier should be identified with other screen width values, use the [screenByWidth](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/#screenByWidth') property to specify the relation.
 
 ---
 

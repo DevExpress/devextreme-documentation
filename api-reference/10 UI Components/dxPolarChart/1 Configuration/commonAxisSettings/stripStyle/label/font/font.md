@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for a strip label.
+Specifies font properties for a strip label.
 
 ---

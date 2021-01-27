@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies the labels' font options.
+Specifies the labels' font properties.
 
 ---

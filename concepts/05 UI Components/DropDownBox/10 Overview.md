@@ -192,7 +192,7 @@ The simplest UI component configuration requires specifying a [dataSource](/api-
 If your data is an array of objects, specify: 
 
 - [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueExpr')     
-    The data field whose value is written into the [value](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') option.
+    The data field whose value is written into the [value](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') property.
 - [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr')     
     The data field whose value is displayed in the input field of the UI component.
 

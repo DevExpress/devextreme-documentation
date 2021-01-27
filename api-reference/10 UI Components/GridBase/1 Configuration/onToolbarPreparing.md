@@ -21,7 +21,7 @@ The UI component's instance.
 Model data. Available only if you use Knockout.
 
 ##### field(e.toolbarOptions): dxToolbar_Options
-The [options of the toolbar](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/').
+The [properties of the toolbar](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/').
 
 ---
 This function allows you to customize the toolbar. Depending on the configuration, the UI component may add the following items to the toolbar:

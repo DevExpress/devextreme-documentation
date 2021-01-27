@@ -4,6 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Defines animation options.
+Defines animation properties.
 
 ---

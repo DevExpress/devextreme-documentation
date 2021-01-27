@@ -8,4 +8,4 @@ default: true
 Indicates whether or not animation is enabled.
 
 ---
-When this option is set to **true**, gauge indicators move smoothly to the specified values.
+When this property is set to **true**, gauge indicators move smoothly to the specified values.

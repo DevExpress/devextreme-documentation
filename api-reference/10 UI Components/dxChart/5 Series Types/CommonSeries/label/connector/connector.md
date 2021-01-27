@@ -12,4 +12,4 @@ dxChartSeriesTypes.AreaSeries,dxChartSeriesTypes.BarSeries,dxChartSeriesTypes.Bu
 ---
 A point label is always displayed near its series point, though the label is placed separately. To make the relationship between the series point and its label evident, use a connector.
 
-By default, label connectors are hidden. To make them visible, set the **connector**.**visible** option to **true**.
+By default, label connectors are hidden. To make them visible, set the **connector**.**visible** property to **true**.

@@ -51,16 +51,16 @@ or for points of an individual series:
 
 [note]The **point** configuration object defines the points of the line-like, scatter and area-like series only. To set the selection style for points of other series, use the **series**.**selectionStyle** object.
 
-By default, the chart highlights the selected point only. But in some scenarios, you may need several points to be highlighted. To specify this, use the **selectionMode** option. Like the selection style, this option can be specified for all, type-specific or points of an individual series. It can accept one of the following values.
+By default, the chart highlights the selected point only. But in some scenarios, you may need several points to be highlighted. To specify this, use the **selectionMode** property. Like the selection style, this property can be specified for all, type-specific or points of an individual series. It can accept one of the following values.
 
 - **onlyPoint** &#8212; highlights only the selected point
 - **allSeriesPoints** &#8212; highlights all points from the parent series
 - **allArgumentPoints** &#8212; highlights all points with the same argument
 - **none** &#8212; does not highlight anything
 
-You can also allow the user to select multiple points. For this purpose, set the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#pointSelectionMode') option to *'multiple'*.
+You can also allow the user to select multiple points. For this purpose, set the [pointSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#pointSelectionMode') property to *'multiple'*.
 
-To handle the point selection event, assign a function to the [onPointSelectionChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onPointSelectionChanged') option of the chart.
+To handle the point selection event, assign a function to the [onPointSelectionChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onPointSelectionChanged') property of the chart.
 
 	<!--JavaScript-->var chartOptions = {
 		onPointSelectionChanged: function (info) {

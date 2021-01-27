@@ -159,7 +159,7 @@ Links also support several [colorization modes](/api-reference/20%20Data%20Visua
 
 ---
 
-To colorize nodes or links uniformly, specify the color using the **node**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/node/#color') or **link**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#color') option. Note that the links' **colorMode** option should be *"none"* (which is its default value): 
+To colorize nodes or links uniformly, specify the color using the **node**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/node/#color') or **link**.[color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#color') property. Note that the links' **colorMode** property should be *"none"* (which is its default value): 
 
 ---
 ##### jQuery

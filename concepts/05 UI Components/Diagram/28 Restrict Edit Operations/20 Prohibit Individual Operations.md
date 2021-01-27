@@ -4,13 +4,13 @@
 
 Every time a user attempts an edit operation, the UI component raises the [requestEditOperation](/Documentation/ApiReference/UI_Components/dxDiagram/Events/#requestEditOperation) event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
 
-- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) option is set to `false`, the event does not fire for this operation. The table below lists all available operations.
+- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) property is set to `false`, the event does not fire for this operation. The table below lists all available operations.
 
 <table class="dx-table">
     <tr>
         <th>Operation</th>
         <th>User action / IU update operation causes the event to be raised</th>
-        <th>Allow{Operation} option</th>
+        <th>Allow{Operation} property</th>
     </tr>
     <tr>
         <td>addShape</td>
@@ -133,7 +133,7 @@ Every time a user attempts an edit operation, the UI component raises the [reque
 
 - The **updateUI** parameter specifies whether the event responds to a user action or requests instruction on related UI command availability.
 
-    - The `true` value indicates that the UI component is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
+    - The `true` value indicates that the UI component is updating the UI. Set the **allowed** property to `false` to hide the UI element associated with the specified operation.
 
     - The `false` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed and display an error message if necessary.
 

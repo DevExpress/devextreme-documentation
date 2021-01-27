@@ -1,4 +1,4 @@
-To limit the text length, assign an integer number to the **maxLength** option. By default, the text length is unlimited.
+To limit the text length, assign an integer number to the **maxLength** property. By default, the text length is unlimited.
 
 ---
 ##### jQuery

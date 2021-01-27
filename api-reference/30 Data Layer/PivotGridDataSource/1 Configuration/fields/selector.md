@@ -8,7 +8,7 @@ default: undefined
 Specifies a function that combines the field's values into groups for the [headers](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Headers'). Cannot be used with an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/') or [remote operations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations').
 
 ---
-This function is an alternative to the [groupInterval](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupInterval.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupInterval') option and should return a group name that corresponds to a data object. The function's parameter represents this data object. For example, the **selector** function in the following code groups birth dates by decades:
+This function is an alternative to the [groupInterval](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupInterval.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupInterval') property and should return a group name that corresponds to a data object. The function's parameter represents this data object. For example, the **selector** function in the following code groups birth dates by decades:
 
 ---
 ##### jQuery

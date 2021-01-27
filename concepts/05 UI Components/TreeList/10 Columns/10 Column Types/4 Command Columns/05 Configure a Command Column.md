@@ -1,4 +1,4 @@
-All columns are configured in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') array. Assign a command column's name to the [type](/api-reference/_hidden/dxTreeListColumn/type.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#type') option and specify the other column options.
+All columns are configured in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') array. Assign a command column's name to the [type](/api-reference/_hidden/dxTreeListColumn/type.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#type') property and specify the other column properties.
 
 The following example shows how to specify the adaptive column's [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width'):
 

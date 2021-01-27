@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures validation options.
+Configures validation properties.
 
 ---
 

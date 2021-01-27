@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the date display format. Ignored if the [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') option is *"native"*
+Specifies the date display format. Ignored if the [pickerType](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') property is *"native"*
 
 ---
 Set [useMaskBehavior](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/useMaskBehavior.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#useMaskBehavior') to **true** to control user input according to the display format.

@@ -1,4 +1,4 @@
-The **Map** UI component allows you to provide a single icon for all markers. For this purpose, assign the URL of the icon to the [markerIconSrc](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markerIconSrc.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#markerIconSrc') option. In addition, you can customize the icon of an individual marker using the [iconScr](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers/iconSrc.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/#iconSrc') option.
+The **Map** UI component allows you to provide a single icon for all markers. For this purpose, assign the URL of the icon to the [markerIconSrc](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markerIconSrc.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#markerIconSrc') property. In addition, you can customize the icon of an individual marker using the [iconScr](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers/iconSrc.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/#iconSrc') property.
 
 ---
 ##### jQuery

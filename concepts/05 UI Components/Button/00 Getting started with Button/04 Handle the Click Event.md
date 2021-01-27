@@ -16,8 +16,7 @@ You can implement any behavior that occurs when a user clicks a Button. For this
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-button
-          <!-- ... -->
+    <dx-button ...
         (onClick)="showMessage()">
     </dx-button>
 
@@ -40,8 +39,7 @@ You can implement any behavior that occurs when a user clicks a Button. For this
 
     <!-- tab: App.vue -->
     <template>
-        <DxButton
-            <!-- ... -->
+        <DxButton ...
             @click="showMessage()"
         />
     </template>
@@ -76,8 +74,7 @@ You can implement any behavior that occurs when a user clicks a Button. For this
     function App() {
         return (
             <div className="App">
-                <Button
-                    // ...
+                <Button ...
                     onClick={showMessage}
                 />
             </div>

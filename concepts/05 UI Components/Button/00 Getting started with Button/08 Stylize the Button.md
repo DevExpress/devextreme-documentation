@@ -15,8 +15,7 @@ The Button supports several predefined color schemes. To specify one of them, se
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-button
-        <!-- ... -->
+    <dx-button ...
         stylingMode="outlined"
         type="success">
     </dx-button>
@@ -25,8 +24,7 @@ The Button supports several predefined color schemes. To specify one of them, se
 
     <!-- tab: App.vue -->
     <template>
-        <DxButton
-            <!-- ... -->
+        <DxButton ...
             styling-mode="outlined"
             type="success"
         />
@@ -40,8 +38,7 @@ The Button supports several predefined color schemes. To specify one of them, se
     function App() {
         return (
             <div className="App">
-                <Button
-                    // ...
+                <Button ...
                     stylingMode="outlined"
                     type="success"
                 />

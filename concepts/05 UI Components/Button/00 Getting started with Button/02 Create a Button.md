@@ -49,7 +49,7 @@
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
-    import {DxButtonModule} from 'devextreme-angular';
+    import { DxButtonModule } from 'devextreme-angular';
     import { AppComponent } from './app.component';
 
     @NgModule({
@@ -73,10 +73,6 @@
     <template>
         <DxButton
             text="Click me!"
-            @click="showMessage()"
-            styling-mode="outlined"
-            type="success"
-            icon="comment"
         />
     </template>
 

@@ -1,4 +1,4 @@
-Apart from text, buttons can also display [icons from different sources](https://js.devexpress.com/Documentation/Guide/Themes_and_Styles/Icons/). To add an icon, specify the [icon](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon) property (applies to all types except *"back"*). In this tutorial, we will use the [DevExtreme icon library](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library):
+Apart from text, buttons can also display [icons from different sources](/Documentation/Guide/Themes_and_Styles/Icons/). To add an icon, specify the [icon](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon) property (applies to all types except *"back"*). In this tutorial, we will use the [DevExtreme icon library](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library):
 
 ---
 ##### jQuery
@@ -14,8 +14,7 @@ Apart from text, buttons can also display [icons from different sources](https:/
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-button
-        <!-- ... -->
+    <dx-button ...
         icon="comment">
     </dx-button>
 
@@ -23,8 +22,7 @@ Apart from text, buttons can also display [icons from different sources](https:/
 
     <!-- tab: App.vue -->
     <template>
-        <DxButton
-            <!-- ... -->
+        <DxButton ...
             icon="comment"
         />
     </template>
@@ -37,8 +35,7 @@ Apart from text, buttons can also display [icons from different sources](https:/
     function App() {
         return (
             <div className="App">
-                <Button
-                    // ...
+                <Button ...
                     icon="comment"
                 />
             </div>

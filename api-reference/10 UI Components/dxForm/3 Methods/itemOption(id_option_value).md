@@ -44,5 +44,7 @@ The following code shows how to call this method for an item organized in a grou
     form.itemOption("Contacts.phone", "visible", false);
 
 
+#include form-item-options
+
 #####See Also#####
 #include common-link-callmethods

@@ -9,7 +9,7 @@ You can subscribe to an event using a configuration option. All event handling o
                 // Handles the "itemClick" event
             },
             onInitialized: function (info) {
-                // Saves the widget instance
+                // Saves the UI component instance
                 viewModel.menuInstance = info.component;    
                 // Handles the "initialized" event
             }
@@ -23,6 +23,6 @@ You can subscribe to an event using a configuration option. All event handling o
 }
 
 #####See Also#####
-- **API Reference**.**WidgetName**.**Events**, for example, **API Reference**.[Menu](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Widgets/dxMenu/').[Events](/api-reference/10%20UI%20Widgets/dxMenu/4%20Events '/Documentation/ApiReference/UI_Widgets/dxMenu/Events/')
+- **API Reference**.**WidgetName**.**Events**, for example, **API Reference**.[Menu](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/').[Events](/api-reference/10%20UI%20Widgets/dxMenu/4%20Events '/Documentation/ApiReference/UI_Components/dxMenu/Events/')
 
 [tags]basics, knockout, handle events, subscribe

@@ -10,4 +10,4 @@ Specifies the sort order of column values.
 
 ---
 
-Use the **sortOrder** and the [sortIndex](/api-reference/_hidden/dxFileManagerDetailsColumn/sortIndex.md '/Documentation/ApiReference/UI_Widgets/dxFileManager/Configuration/itemView/details/columns/#sortIndex') options to sort file system items by multiple columns.
+Use the **sortOrder** and the [sortIndex](/api-reference/_hidden/dxFileManagerDetailsColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/details/columns/#sortIndex') options to sort file system items by multiple columns.

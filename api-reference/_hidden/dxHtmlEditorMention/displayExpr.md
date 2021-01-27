@@ -19,4 +19,4 @@ The displayed value.
 Do not change the default value if the data source contains primitives.
 
 #####See Also#####
-- [valueExpr](/api-reference/_hidden/dxHtmlEditorMention/valueExpr.md '/Documentation/ApiReference/UI_Widgets/dxHtmlEditor/Configuration/mentions/#valueExpr')
+- [valueExpr](/api-reference/_hidden/dxHtmlEditorMention/valueExpr.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#valueExpr')

@@ -8,7 +8,7 @@ default: false
 Specifies whether the data processing operations (filtering, grouping, summary calculation) should be performed on the server.
 
 ---
-If you enable this option, the **PivotGrid** sends several requests to load data. At first launch, the widget sends a request to get the data structure. It contains the following [loadOptions](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/'):
+If you enable this option, the **PivotGrid** sends several requests to load data. At first launch, the UI component sends a request to get the data structure. It contains the following [loadOptions](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/'):
 
     <!--JavaScript-->
     {
@@ -63,4 +63,4 @@ Refer to the [Server-Side Data Processing](/concepts/70%20Data%20Binding/00%20Sp
 }
 
 #####See Also#####
-- [Configure the CustomStore for Local and Remote Operations](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/Widgets/PivotGrid/Use_CustomStore/')
+- [Configure the CustomStore for Local and Remote Operations](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/')

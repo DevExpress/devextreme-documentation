@@ -1,0 +1,1 @@
+This section shows how to bind the [dxVectorMap](/Documentation/ApiReference/UI_Components/dxVectorMap) UI component to data. To do this, specify data sources for map areas and markers.

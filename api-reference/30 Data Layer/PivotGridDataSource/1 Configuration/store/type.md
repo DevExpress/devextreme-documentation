@@ -24,4 +24,4 @@ This option accepts one of the following values:
 
 Each store has options that are detailed in the links above. Declare these options in the **store** object.
 
-You can also implement custom data access logic as described in the [Use CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/Widgets/PivotGrid/Use_CustomStore/') topic.
+You can also implement custom data access logic as described in the [Use CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/') topic.

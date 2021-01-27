@@ -11,7 +11,7 @@ Configures toolbar items' settings.
 
 ---
 
-The **FileManager** widget allows you to add default and create custom toolbar items.
+The **FileManager** UI component allows you to add default and create custom toolbar items.
 
 
 ---

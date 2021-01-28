@@ -96,7 +96,7 @@ The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Co
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
 }
 
-You can set the title's text more concisely by assigning it directly to the **title** option. This is useful if you are satisfied with the title's default settings and do not need a subtitle. 
+You can set the title's text more concisely by assigning it directly to the **title** property. This is useful if you are satisfied with the title's default settings and do not need a subtitle. 
 
 ---
 ##### jQuery
@@ -163,7 +163,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
 
 ---
 
-Refer to the API reference's [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/') section for information about all the title and subtitle options.
+Refer to the API reference's [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/') section for information about all the title and subtitle properties.
 
 #####See Also#####
 - [Adaptive Layout](/concepts/05%20Widgets/Funnel/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Funnel/Adaptive_Layout/')

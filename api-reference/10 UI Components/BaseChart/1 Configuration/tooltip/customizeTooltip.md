@@ -46,7 +46,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
     <tr>
         <td><code>argumentText</code></td>
-        <td>The argument value of the represented point with applied formatting if the <b>argumentFormat</b> option is specified.</td>
+        <td>The argument value of the represented point with applied formatting if the <b>argumentFormat</b> property is specified.</td>
     </tr>
     <tr>
         <td><code>seriesName</code></td>
@@ -58,7 +58,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
     <tr>
         <td><code>points</code></td>
-        <td>An array of points with the same argument as the point being hovered over. This field is accessible when the <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#shared">shared</a> option of the <b>tooltip</b> is set to <b>true</b>.
+        <td>An array of points with the same argument as the point being hovered over. This field is accessible when the <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#shared">shared</a> property of the <b>tooltip</b> is set to <b>true</b>.
     </tr>
     <tr>
         <td><code>size</code> (for bubble series only)</td>
@@ -85,7 +85,7 @@ The folllowing **pointInfo** fields are available for the stacked-like series su
         <td>The total value of all the points with the same argument as the point being hovered over.
     <tr>
         <td><code>totalText</code></td>          
-        <td>The total value of all the points with the same argument as the point being hovered over. This value is displayed with applied formatting if the <b>format</b> option is specified.</td> 
+        <td>The total value of all the points with the same argument as the point being hovered over. This value is displayed with applied formatting if the <b>format</b> property is specified.</td> 
     </tr>
 </table>
 
@@ -149,7 +149,7 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
     </tr>
     <tr>
         <td><code>openValueText</code></td>    
-        <td>The open value of the point being hovered over with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The open value of the point being hovered over with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
     <tr>
         <td><code>originalCloseValue</code></td>    
@@ -161,7 +161,7 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
     </tr>
     <tr>
         <td><code>closeValueText</code></td>    
-        <td>The close value of the point being hovered over with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The close value of the point being hovered over with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
     <tr>
         <td><code>originalHighValue</code></td>    
@@ -173,7 +173,7 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
     </tr>
     <tr>
         <td><code>highValueText</code></td>    
-        <td>The high value of the point being hovered over with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The high value of the point being hovered over with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
     <tr>
         <td><code>originalLowValue</code></td>    
@@ -185,7 +185,7 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
     </tr>
     <tr>
         <td><code>lowValueText</code></td>    
-        <td>The low value of the point being hovered over with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The low value of the point being hovered over with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
     <tr>
         <td><code>reductionValue</code></td>    
@@ -193,7 +193,7 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
     </tr>
     <tr>
         <td><code>reductionValueText</code></td>    
-        <td>The reduction value of the point being hovered over with applied formatting if the <b>format</b> option is specified.</td>
+        <td>The reduction value of the point being hovered over with applied formatting if the <b>format</b> property is specified.</td>
     </tr>
 </table>
 

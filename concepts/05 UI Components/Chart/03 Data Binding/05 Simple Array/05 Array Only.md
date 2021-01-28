@@ -1,4 +1,4 @@
-To bind the **Chart** to an array, pass this array to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource') option. The array should contain objects.
+To bind the **Chart** to an array, pass this array to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource') property. The array should contain objects.
 
 ---
 ##### jQuery

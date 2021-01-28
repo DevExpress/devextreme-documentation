@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the configuration options of the **LoadIndicator** UI component.
+This section describes the configuration properties of the **LoadIndicator** UI component.
 
 ---
 #####See Also#####

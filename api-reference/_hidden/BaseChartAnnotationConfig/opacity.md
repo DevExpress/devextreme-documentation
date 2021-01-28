@@ -8,4 +8,4 @@ default: 0.9
 Specifies the annotation's opacity.
 
 ---
-This option accepts a value from 0 to 1: 0 makes the annotation transparent; 1 makes it opaque.
+This property accepts a value from 0 to 1: 0 makes the annotation transparent; 1 makes it opaque.

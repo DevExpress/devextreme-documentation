@@ -1,6 +1,6 @@
 We recommend customizing a UI component using its API. Unlike [CSS classes](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Widgets%20Customization/40%20Individual%20CSS%20Classes.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Widgets_Customization/#Individual_CSS_Classes'), the API is changed rarely, and if it happens, the UI component populates the browser console with warnings that help you mend your code.
 
-Each UI component has an API described in the UI component's [API reference section](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Components/'). For example, you can specify the UI component's width via a [corresponding option](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#width'). In the following example, this option is set for the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI) UI component.
+Each UI component has an API described in the UI component's [API reference section](/api-reference/10%20UI%20Widgets '/Documentation/ApiReference/UI_Components/'). For example, you can specify the UI component's width via a [corresponding property](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#width'). In the following example, this property is set for the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI) UI component.
 
 ---
 ##### jQuery  

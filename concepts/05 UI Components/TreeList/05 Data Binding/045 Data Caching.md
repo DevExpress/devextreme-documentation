@@ -38,7 +38,7 @@ The **TreeList** caches data by default. This allows the UI component to decreas
 
 [note]When data processing operations are [delegated to the server](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/'), data is loaded every time these operations are performed even if caching is enabled. 
 
-If your data source changes frequently, disable caching by assigning **false** to the **cacheEnabled** option. 
+If your data source changes frequently, disable caching by assigning **false** to the **cacheEnabled** property. 
 
 ---
 ##### jQuery

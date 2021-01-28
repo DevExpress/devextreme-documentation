@@ -11,9 +11,9 @@ Specifies the name of a data source field or an expression that provides a node'
 The current node's data object.
 
 ---
-A data source field specified by this option must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 
+A data source field specified by this property must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 
 
-If you provide a function for the **textStyleExpr** option, the function can return style settings as CSS rules in JSON format.
+If you provide a function for the **textStyleExpr** property, the function can return style settings as CSS rules in JSON format.
 
     <!-- tab: index.js -->
     $(function() {

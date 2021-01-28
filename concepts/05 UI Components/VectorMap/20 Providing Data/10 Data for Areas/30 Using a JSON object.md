@@ -1,4 +1,4 @@
-If you have your data as a JSON object, assign its <a href="http://en.wikipedia.org/wiki/Uniform_resource_identifier" target="_blank">URI</a> to the **layers**.**dataSource** option. This way, no other actions will be required.
+If you have your data as a JSON object, assign its <a href="http://en.wikipedia.org/wiki/Uniform_resource_identifier" target="_blank">URI</a> to the **layers**.**dataSource** property. This way, no other actions will be required.
 
 	<!--JavaScript-->var vectorMapCfg = {
         // ...

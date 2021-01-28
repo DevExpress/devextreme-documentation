@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies tooltips' font options.
+Specifies tooltips' font properties.
 
 ---

@@ -1,6 +1,6 @@
 Buttons are configured by objects that can contain custom and [predefined fields](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/'). For instance, the `fontStyles` array in the following code has four data objects with one predefined field ([`icon`](/api-reference/_hidden/dxButtonGroupItem/icon.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#icon')) and one custom field (`style`) each.
 
-Assign the array to the [items](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/') option and use the [keyExpr](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#keyExpr') to specify `style` as the key field. We log the field's values into the console at a later step.
+Assign the array to the [items](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/') property and use the [keyExpr](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#keyExpr') to specify `style` as the key field. We log the field's values into the console at a later step.
 
 ---
 ##### jQuery

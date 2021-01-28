@@ -5,7 +5,7 @@ A number of classes are [documented](/api-reference/10%20UI%20Widgets/zz%20CSS%2
 - <a href="https://www.devexpress.com/Support/Center/Question/Details/K18570/how-to-inspect-css-rules" target="_blank">How to inspect CSS rules</a>
 - <a href="https://www.devexpress.com/Support/Center/Question/Details/T632424/how-to-implement-css-related-solutions-for-devexpress-components" target="_blank">How to implement CSS-related solutions for DevExpress components</a>
 
-Classes can be added to the UI component element in the markup using the `class` attribute as usual. If it is not possible to change the markup, use the UI component's [elementAttr](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/elementAttr.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#elementAttr') option for the same purpose.
+Classes can be added to the UI component element in the markup using the `class` attribute as usual. If it is not possible to change the markup, use the UI component's [elementAttr](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/elementAttr.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#elementAttr') property for the same purpose.
 
 [note] The internal CSS structure may be changed between releases without notice. Taking that into account, we recommend customizing UI components [using their API](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Widgets%20Customization/30%20Widgets%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Widgets_Customization/#Widgets_API') instead of CSS if it is possible because you will be notified if the API is changed.
 

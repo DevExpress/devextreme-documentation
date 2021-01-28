@@ -6,14 +6,14 @@ Alternatively, this type of sorting can be performed using the [Field Panel](/co
 
 ![DevExtreme PivotGrid FieldPanel](/images/DataGrid/PivotGrid_fieldPanel_sortingIcons.png)
 
-To allow the user to sort by field values, set the [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') option to **true**.
+To allow the user to sort by field values, set the [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') property to **true**.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...
         allowSorting: true // allows the end-user to sort all column and row fields
     };
     
-If you need to allow sorting for an individual field only, set the [same option](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSorting.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSorting') inside the configuration object of this field.
+If you need to allow sorting for an individual field only, set the [same property](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSorting.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSorting') inside the configuration object of this field.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

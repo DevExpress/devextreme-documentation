@@ -9,4 +9,4 @@ Specifies how many [minor ticks](/api-reference/20%20Data%20Visualization%20Widg
 
 ---
 #####See Also#####
-- **valueAxis**.[minorTickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/minorTickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/minorTickInterval/') - specifies the interval between minor ticks. Has a higher priority than the **minorTickCount** option.
+- **valueAxis**.[minorTickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/minorTickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/minorTickInterval/') - specifies the interval between minor ticks. Has a higher priority than the **minorTickCount** property.

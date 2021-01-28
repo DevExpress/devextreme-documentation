@@ -10,4 +10,4 @@ Sets a color for the bars indicating negative values. Available for a sparkline 
 ---
 #include common-colorlist
 
-To set a color for the bars indicating positive values, specify the [barPositiveColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/barPositiveColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#barPositiveColor') option.
+To set a color for the bars indicating positive values, specify the [barPositiveColor](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/barPositiveColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#barPositiveColor') property.

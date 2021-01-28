@@ -8,7 +8,7 @@ default: undefined
 Decides on which screens the current column is rendered.
 
 ---
-Before rendering the column, the UI component considers the screen's width. If the width matches the specified size qualifier, the column will be rendered. There are four size qualifiers in all. The **screen** option accepts one or several of them separated by a space.
+Before rendering the column, the UI component considers the screen's width. If the width matches the specified size qualifier, the column will be rendered. There are four size qualifiers in all. The **screen** property accepts one or several of them separated by a space.
 
 <table class="dx-table">
     <tr>
@@ -33,7 +33,7 @@ Before rendering the column, the UI component considers the screen's width. If t
     </tr>
 </table>
 
-[note] When this option is undefined, the column is rendered on all screens.
+[note] When this property is undefined, the column is rendered on all screens.
 
 #####See Also#####
 - [ResponsiveBox - Create the Layout Grid](/concepts/05%20Widgets/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/')

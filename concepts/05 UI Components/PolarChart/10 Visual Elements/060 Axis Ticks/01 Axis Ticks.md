@@ -1,4 +1,4 @@
-Ticks divide an axis into sections by a step that is determined automatically, or by the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/tickInterval/') and [axisDivisionFactor](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#axisDivisionFactor') options of an axis. Ticks improve the comprehension of chart data. 
+Ticks divide an axis into sections by a step that is determined automatically, or by the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/tickInterval/') and [axisDivisionFactor](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#axisDivisionFactor') properties of an axis. Ticks improve the comprehension of chart data. 
 
 ![Axis Ticks](/images/ChartJS/Polar_Ticks.png)
 
@@ -15,7 +15,7 @@ Ticks are child elements of the argument and value axes. To change their setting
 	};
 
 
-The following list provides an overview of tick options.
+The following list provides an overview of tick properties.
 
 * **Visibility**		
 To make ticks visible/invisible, use the [tick](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonAxisSettings/tick/') object's [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/commonAxisSettings/tick/visible.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonAxisSettings/tick/#visible') property.

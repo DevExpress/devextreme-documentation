@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-This article describes configuration options of a tabbed form item.
+This article describes configuration properties of a tabbed form item.
 
 ---
 An item representing a tabbed container for other form items. 

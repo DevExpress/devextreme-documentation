@@ -12,6 +12,6 @@ Configures the toolbox settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
 }
 
-The toolbox contains groups of shapes. Use this option to access the toolbox settings.
+The toolbox contains groups of shapes. Use this property to access the toolbox settings.
 
 ![Diagram toolbox](/images/diagram/toolbox.png)

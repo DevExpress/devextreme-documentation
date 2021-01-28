@@ -9,7 +9,7 @@ default: undefined
 Specifies the first day of a week.
 
 ---
-The option can take on a value from 0 to 6.
+The property can take on a value from 0 to 6.
 
 - 0 - Sunday
 - 1 - Monday

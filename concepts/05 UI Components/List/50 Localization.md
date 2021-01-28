@@ -56,11 +56,11 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
 
 [note] DevExtreme ships several predefined dictionaries for most locales. See the [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/') topic for more information. 
 
-Some messages can be defined by **List** options as well as keys. The following table illustrates the options and keys that define the same messages. Note that the options always take precedence over keys.
+Some messages can be defined by **List** properties as well as keys. The following table illustrates the properties and keys that define the same messages. Note that the properties always take precedence over keys.
 
 <table class="dx-table">
     <tr>
-        <th>Option</th>
+        <th>Property</th>
         <th>Key</th>
         <th>Description</th>
     </tr>
@@ -92,7 +92,7 @@ Some messages can be defined by **List** options as well as keys. The following 
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#nextButtonText">nextButtonText</a></td>
         <td><code>dxList-nextButtonText</code></td>
-        <td>Displayed on the button that loads the next page. Appears only if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadMode">pageLoadMode</a> option is <i>"nextButton"</i>.</td>
+        <td>Displayed on the button that loads the next page. Appears only if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadMode">pageLoadMode</a> property is <i>"nextButton"</i>.</td>
     </tr>
 </table>
 

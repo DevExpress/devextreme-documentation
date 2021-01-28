@@ -8,7 +8,7 @@ default: undefined
 Specifies the column's width in pixels or as a percentage. Ignored if it is less than [minWidth](/api-reference/_hidden/GridBaseColumn/minWidth.md '{basewidgetpath}/Configuration/columns/#minWidth').
 
 ---
-The option supports the following types of values:
+The property supports the following types of values:
 
  - **Number**  
     The column's width in pixels.

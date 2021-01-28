@@ -8,7 +8,7 @@ default: undefined
 Specifies a path to the column or row whose summary values should be used to sort the field's values in the [headers](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Headers').
 
 ---
-This and the [sortBySummaryField](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/sortBySummaryField.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryField') options are applied together. If this option is not specified, the field's values are sorted by the [grand totals](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals') of the measure that **sortBySummaryField** specifies.
+This and the [sortBySummaryField](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/sortBySummaryField.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryField') properties are applied together. If this property is not specified, the field's values are sorted by the [grand totals](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals') of the measure that **sortBySummaryField** specifies.
 
 In the following example, geographic regions displayed in the row header are sorted by sales in the second quarter of 2015:
 

@@ -27,7 +27,7 @@ The following code adds a primitive **SlideOut** to your page.
         width: 100%;
     }
 
-Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#dataSource') option accepts an array of strings. An individual menu item will be generated for each of these strings. As an alternative, the **dataSource** option accepts an array of objects. In this case, each of these objects should posess the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/items/#text') field, otherwise the menu item for it will be unnamed.
+Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#dataSource') property accepts an array of strings. An individual menu item will be generated for each of these strings. As an alternative, the **dataSource** property accepts an array of objects. In this case, each of these objects should posess the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/items/#text') field, otherwise the menu item for it will be unnamed.
 
     <!--JavaScript-->var displays = [
         { text: "SuperLCD 42", price: "$1200" },

@@ -5,7 +5,7 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies the legend subtitle's font options.
+Specifies the legend subtitle's font properties.
 
 ---
 ---

@@ -2,13 +2,13 @@ The **Bubble** series type visualizes data as individual points of different siz
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bubble.html, /Content/Applications/20_1/DataVisualization/Guides/ChartSeriesTypes/bubble.js"></div>
 
-Assign *"bubble"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') option to specify the **Bubble** series type. You can configure:
+Assign *"bubble"* to the **series[]**.[type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property to specify the **Bubble** series type. You can configure:
 
 - Each series individually using the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') array;
 - All series in the **Chart** using the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/') object;
 - All **Bubble** series using the **commonSeriesSettings**.**bubble** object.
 
-Note that **Bubble** series require an additional data field that provides size values. Assign its name to the **series[]**.[sizeField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/sizeField.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#sizeField') option. Based on the size values, the UI component calculates the actual bubble sizes in pixels, ranging between [minBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/minBubbleSize.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#minBubbleSize') and [maxBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/maxBubbleSize.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#maxBubbleSize').
+Note that **Bubble** series require an additional data field that provides size values. Assign its name to the **series[]**.[sizeField](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/sizeField.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#sizeField') property. Based on the size values, the UI component calculates the actual bubble sizes in pixels, ranging between [minBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/minBubbleSize.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#minBubbleSize') and [maxBubbleSize](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/maxBubbleSize.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#maxBubbleSize').
 
 ---
 ##### jQuery
@@ -127,7 +127,7 @@ Note that **Bubble** series require an additional data field that provides size 
 
 ---
 
-Refer to the [BubbleSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/') section of the API Reference for a full list of options available to a **Bubble** series.
+Refer to the [BubbleSeries](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/') section of the API Reference for a full list of properties available to a **Bubble** series.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble/"

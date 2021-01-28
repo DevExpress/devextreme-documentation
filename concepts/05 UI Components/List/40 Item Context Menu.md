@@ -84,7 +84,7 @@ If you want to offer the user a set of commands related to a **List** item, you 
 
 ---
 
-The user can access the commands in one of the following ways depending on the value of the [menuMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/menuMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#menuMode') option.
+The user can access the commands in one of the following ways depending on the value of the [menuMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/menuMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#menuMode') property.
 
 - ***"context"***       
 The user right-clicks or performs a long tap on an item to open the context menu with the commands.

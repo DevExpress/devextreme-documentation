@@ -5,6 +5,6 @@ inherits: Font
 ---
 ---
 ##### shortDescription
-Specifies font options for axis labels.
+Specifies font properties for axis labels.
 
 ---

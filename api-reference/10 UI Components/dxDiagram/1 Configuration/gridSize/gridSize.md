@@ -7,9 +7,9 @@ type: Number | Object
 Specifies the grid pitch.
 
 ---
-When the [showGrid](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/showGrid.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#showGrid') option is set to **true**, the Diagram UI component displays grid lines that help users align diagram elements. Use the **gridSize** option to specify the grid pitch.
+When the [showGrid](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/showGrid.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#showGrid') property is set to **true**, the Diagram UI component displays grid lines that help users align diagram elements. Use the **gridSize** property to specify the grid pitch.
 
-The [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units') option specifies the measurement unit.
+The [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units') property specifies the measurement unit.
 
 ---
 ##### jQuery  

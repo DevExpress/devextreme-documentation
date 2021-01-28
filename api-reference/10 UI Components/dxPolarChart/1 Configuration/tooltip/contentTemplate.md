@@ -27,7 +27,7 @@ You can access the following **pointInfo** object fields:
     </tr>
     <tr>
         <td><code>argumentText</code></td>
-        <td>The argument value of the represented point with applied formatting if the <a href="/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/tooltip/#argumentFormat">argumentFormat</a> option is specified.</td>
+        <td>The argument value of the represented point with applied formatting if the <a href="/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/tooltip/#argumentFormat">argumentFormat</a> property is specified.</td>
     </tr>
     <tr>
         <td><code>seriesName</code></td>
@@ -39,6 +39,6 @@ You can access the following **pointInfo** object fields:
     </tr>
     <tr>
         <td><code>points</code></td>
-        <td>An array of points with the same argument as the point being hovered over. This field is accessible when the <a href="/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/tooltip/#shared">shared</a> option of the <b>tooltip</b> is set to <b>true</b>.
+        <td>An array of points with the same argument as the point being hovered over. This field is accessible when the <a href="/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/tooltip/#shared">shared</a> property of the <b>tooltip</b> is set to <b>true</b>.
     </tr>
 </table>

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration options for the **TagBox** UI component.
+An object defining configuration properties for the **TagBox** UI component.
 
 ---
 #####See Also#####

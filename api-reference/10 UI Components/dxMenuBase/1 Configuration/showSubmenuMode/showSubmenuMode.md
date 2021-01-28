@@ -6,7 +6,7 @@ default: { name: 'onHover', delay: { show: 0, hide: 0 } }
 ---
 ---
 ##### shortDescription
-Specifies options of submenu showing and hiding.
+Specifies properties of submenu showing and hiding.
 
 ---
 #include common-ref-enum with {

@@ -20,7 +20,7 @@ For an example of hierarchical data, see the following code snippet.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/HierarchicalDataStructure/"
 }
 
-As you can see, all items in a hierarchical data source have the **id** and **text** fields, and items with children have the **items** field. Those are [conventional field names](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/'). To use other names, change the [keyExpr](/api-reference/10%20UI%20Widgets/HierarchicalCollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#keyExpr'), [displayExpr](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#displayExpr') and [itemsExpr](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/itemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#itemsExpr') options, respectively.
+As you can see, all items in a hierarchical data source have the **id** and **text** fields, and items with children have the **items** field. Those are [conventional field names](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/'). To use other names, change the [keyExpr](/api-reference/10%20UI%20Widgets/HierarchicalCollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#keyExpr'), [displayExpr](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#displayExpr') and [itemsExpr](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/itemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#itemsExpr') properties, respectively.
 
 ---
 ##### jQuery
@@ -174,7 +174,7 @@ As you can see, all items in a hierarchical data source have the **id** and **te
 
 ---
 
-Frequently, the **id** of an item is also its **text**. In this case, set both the **keyExpr** and **displayExpr** options to a single value.
+Frequently, the **id** of an item is also its **text**. In this case, set both the **keyExpr** and **displayExpr** properties to a single value.
 
 ---
 ##### jQuery

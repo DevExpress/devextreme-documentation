@@ -20,7 +20,7 @@ The row's properties.
 **true** if the row can be deleted; otherwise **false**.
 
 ---
-See an example in the [allowAdding](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowAdding') option.
+See an example in the [allowAdding](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowAdding') property.
 
 #####See Also#####
 - [onRowRemoved](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowRemoved.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onRowRemoved')

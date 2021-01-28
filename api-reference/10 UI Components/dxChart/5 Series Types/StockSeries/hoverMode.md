@@ -9,7 +9,7 @@ default: 'onlyPoint'
 Specifies series elements to be highlighted when a user pauses on a series.
 
 ---
-When a user pauses on a series, it may react in one of the following ways depending on the value of the **hoverMode** option.
+When a user pauses on a series, it may react in one of the following ways depending on the value of the **hoverMode** property.
 
 * **onlyPoint**   
 Only the series point that a user pauses on changes its style.

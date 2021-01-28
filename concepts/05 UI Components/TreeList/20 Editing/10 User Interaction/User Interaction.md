@@ -1,4 +1,4 @@
-The **TreeList** UI component allows a user to add, delete and update data. Assign **true** to the corresponding field of the [editing](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/') object to enable an operation. You can set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowEditing') option to **false** if its data should not be edited.
+The **TreeList** UI component allows a user to add, delete and update data. Assign **true** to the corresponding field of the [editing](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/') object to enable an operation. You can set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowEditing') property to **false** if its data should not be edited.
 
 ---
 ##### jQuery
@@ -47,7 +47,7 @@ The **TreeList** UI component allows a user to add, delete and update data. Assi
     
 ---
 
-With the **TreeList** you can edit data in several modes. Use the **editing**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode') option to specify it. 
+With the **TreeList** you can edit data in several modes. Use the **editing**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode') property to specify it. 
 
 ---
 ##### jQuery

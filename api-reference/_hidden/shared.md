@@ -8,6 +8,6 @@ default: false
 Specifies the kind of information to display in a tooltip.
 
 ---
-By default, a tooltip displays information about the currently hovered series point. If you set the **shared** option to **true**, the tooltip will display information about all the points that have the same argument as the hovered point at once.
+By default, a tooltip displays information about the currently hovered series point. If you set the **shared** property to **true**, the tooltip will display information about all the points that have the same argument as the hovered point at once.
 
-If the text displayed in the tooltip by default doesn't suit your needs, you can customize it using the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/tooltip/#customizeTooltip') option.
+If the text displayed in the tooltip by default doesn't suit your needs, you can customize it using the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/tooltip/#customizeTooltip') property.

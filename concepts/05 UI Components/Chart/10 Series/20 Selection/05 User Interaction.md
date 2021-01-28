@@ -126,7 +126,7 @@ Individual settings override common settings.
 
 ---
 
-To choose which series elements should be highlighted when a user selects a series, specify the **selectionMode** option. Just like **selectionStyle**, this option can be specified for all series in the **Chart** or for an individual series. Depending on the series type, the **selectionMode** option accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **selectionMode** option description.
+To choose which series elements should be highlighted when a user selects a series, specify the **selectionMode** property. Just like **selectionStyle**, this property can be specified for all series in the **Chart** or for an individual series. Depending on the series type, the **selectionMode** property accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **selectionMode** property description.
 
 ---
 ##### jQuery
@@ -235,7 +235,7 @@ To choose which series elements should be highlighted when a user selects a seri
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Selection/"
 }
 
-By default, only a single series can be in the selected state at a time. If you need to allow multiple series to be in this state, assign *"multiple"* to the [seriesSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#seriesSelectionMode') option.
+By default, only a single series can be in the selected state at a time. If you need to allow multiple series to be in this state, assign *"multiple"* to the [seriesSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#seriesSelectionMode') property.
 
 ---
 ##### jQuery

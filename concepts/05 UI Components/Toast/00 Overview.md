@@ -4,7 +4,7 @@ The **Toast** is a UI component that provides pop-up notifications.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toast/Overview/"
 }
 
-The **Toast** UI component does not need to be created on the page before it can be shown. You can simply call the [notify(message, type, displayTime)](/api-reference/50%20Common/utils/ui/notify(message_type_displayTime).md '/Documentation/ApiReference/Common/utils/ui/#notifymessage_type_displayTime') method with values for the [message](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message'), [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') and [displayTime](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/displayTime.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime') options passed as the arguments.
+The **Toast** UI component does not need to be created on the page before it can be shown. You can simply call the [notify(message, type, displayTime)](/api-reference/50%20Common/utils/ui/notify(message_type_displayTime).md '/Documentation/ApiReference/Common/utils/ui/#notifymessage_type_displayTime') method with values for the [message](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message'), [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') and [displayTime](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/displayTime.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime') properties passed as the arguments.
 
 ---
 ##### jQuery
@@ -72,7 +72,7 @@ The **Toast** UI component does not need to be created on the page before it can
 
 ---
 
-If you need to specify other **Toast** options, call the same method, but this time [pass an object as the argument](/api-reference/50%20Common/utils/ui/notify(options_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime'). In this object, you can set [any Toast option](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration '/Documentation/ApiReference/UI_Components/dxToast/Configuration/').
+If you need to specify other **Toast** properties, call the same method, but this time [pass an object as the argument](/api-reference/50%20Common/utils/ui/notify(options_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime'). In this object, you can set [any Toast property](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration '/Documentation/ApiReference/UI_Components/dxToast/Configuration/').
 
 ---
 ##### jQuery

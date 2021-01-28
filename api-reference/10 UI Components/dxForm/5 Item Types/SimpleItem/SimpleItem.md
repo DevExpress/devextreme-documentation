@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-This article describes configuration options of a simple form item.
+This article describes configuration properties of a simple form item.
 
 ---
 A simple form item is an editor-label pair usually bound to a [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object field used to display and modify this field.

@@ -1,4 +1,4 @@
-If instead of picking a value, an end user types it into the **DateBox**, this value applies when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be applied on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#valueChangeEvent') option.
+If instead of picking a value, an end user types it into the **DateBox**, this value applies when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be applied on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#valueChangeEvent') property.
 
 ---
 ##### jQuery
@@ -94,7 +94,7 @@ If instead of picking a value, an end user types it into the **DateBox**, this v
 
 ---
 
-To process a new **DateBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onValueChanged') option when you configure the UI component.
+To process a new **DateBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
 ##### jQuery

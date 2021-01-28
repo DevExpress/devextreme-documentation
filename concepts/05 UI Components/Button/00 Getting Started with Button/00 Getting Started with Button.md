@@ -1,4 +1,4 @@
-The Button is the UI component that performs an action when a user clicks it. This tutorial shows how to add the Button to a page, apply styling, and configure the core features. As a result, you will get the following UI component:
+This tutorial shows how to add a Button to a page, apply styling, and configure its core features. As a result, you will create the following UI component:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/GettingStartedWith/Button/index.html, /Content/Applications/20_1/GettingStartedWith/Button/index.js, /Content/Applications/20_1/GettingStartedWith/Button/index.css"></div>
 

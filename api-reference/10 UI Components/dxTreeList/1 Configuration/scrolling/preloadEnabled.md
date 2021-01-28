@@ -1,3 +1,4 @@
+---
 ##### shortDescription
 Specifies whether the UI component should load adjacent pages. Applies only if **scrolling**.[mode](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#mode) is *"virtual"*.
 

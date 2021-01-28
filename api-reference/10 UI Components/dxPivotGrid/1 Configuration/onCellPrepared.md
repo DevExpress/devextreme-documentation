@@ -22,7 +22,7 @@ The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20G
 ##### field(e.columnIndex): Number
 The position of a cell's column.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): PivotGrid
 The UI component [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#instance').
 
 ##### field(e.element): dxElement
@@ -45,17 +45,17 @@ The following code how to locate and customize cells under different conditions:
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#pivotGridContainer").dxPivotGrid({
             // ...
             onCellPrepared: function(e) {
                 if(e.area === "row" || e.area === "column") 
                     e.cellElement.css("font-weight", "bold")
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
                     e.cellElement.css("backgroundColor", "lightGreen")
-                if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName") {
-                    // apply the cell value as HTML code
-                    e.cellElement.html(e.cell.text)
-                }
+                if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
+                    e.cellElement.html(
+                        // Specify content for a separate cell here
+                    )
             }
         });
     });
@@ -63,9 +63,9 @@ The following code how to locate and customize cells under different conditions:
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} ...
+    <dx-pivot-grid ...
         (onCellPrepared)="onCellPrepared($event)">
-    </dx-{widget-name}>
+    </dx-pivot-grid>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -81,6 +81,10 @@ The following code how to locate and customize cells under different conditions:
                 e.cellElement.style.fontWeight = "bold";
             if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
                 e.cellElement.style.backgroundColor = "lightGreen";
+            if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
+                e.cellElement.html(
+                    // Specify content for a separate cell here
+                )
         }
     }
 
@@ -89,7 +93,7 @@ The following code how to locate and customize cells under different conditions:
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxPivotGridModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -97,7 +101,7 @@ The following code how to locate and customize cells under different conditions:
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxPivotGridModule
         ],
         bootstrap: [AppComponent]
     })
@@ -107,7 +111,7 @@ The following code how to locate and customize cells under different conditions:
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ...
+        <DxPivotGrid ...
             @cell-prepared="onCellPrepared"
         />
     </template>
@@ -116,11 +120,11 @@ The following code how to locate and customize cells under different conditions:
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+    import DxPivotGrid from 'devextreme-vue/pivot-grid';
 
     export default {
         components: {
-            Dx{WidgetName}
+            DxPivotGrid
         },
         methods: {
             onCellPrepared(e) {          
@@ -128,6 +132,10 @@ The following code how to locate and customize cells under different conditions:
                     e.cellElement.style.fontWeight = "bold";
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
                     e.cellElement.style.backgroundColor = "lightGreen";
+                if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
+                    e.cellElement.html(
+                        // Specify content for a separate cell here
+                    )
             }
         }
     }
@@ -141,12 +149,12 @@ The following code how to locate and customize cells under different conditions:
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import PivotGrid from 'devextreme-react/pivot-grid';
 
     class App extends React.Component {
         render() {
             return (
-                <{WidgetName} ...
+                <PivotGrid ...
                     onCellPrepared={this.onCellPrepared}
                 />
             );
@@ -156,6 +164,10 @@ The following code how to locate and customize cells under different conditions:
                 e.cellElement.style.fontWeight = "bold";
             if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
                 e.cellElement.style.backgroundColor = "lightGreen";
+            if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
+                e.cellElement.html(
+                    // Specify content for a separate cell here
+                )
         }
     }
     export default App;

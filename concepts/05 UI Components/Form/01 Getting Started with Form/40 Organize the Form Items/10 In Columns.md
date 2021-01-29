@@ -1,6 +1,6 @@
-The Form can organize items in a fixed number of columns or automatically adjust it to the screen width. To set the fixed number of columns, assign it to the [colCount](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount) property as done in the code below. If the number should be auto-adjusted, configure the [screenByWidth](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#screenByWidth) and [colCountByScreen](/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/) properties. 
+The Form can organize items into a fixed number of columns or automatically adjust the layout based on the screen width. To set a fixed number of columns, initialize the [colCount](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount) property as done in the code below. To create an adaptive layout, configure the [screenByWidth](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#screenByWidth) and [colCountByScreen](/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/) properties. 
 
-An item can occupy more than one column. For this, specify the [colSpan](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan) property. In the example below, the `Notes` item spans two columns:
+An item can span multiple columns. The example below sets [colSpan](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan) property for the `Notes` item so that it spans two columns.
 
 ---
 ##### jQuery

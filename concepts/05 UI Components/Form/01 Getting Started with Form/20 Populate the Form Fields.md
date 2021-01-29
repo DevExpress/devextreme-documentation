@@ -1,4 +1,4 @@
-To populate form fields, assign an object to the [formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) property. Each data field in this object produces a [simple item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/)&mdash;a label-editor pair in which the label displays the data field name and the editor edits the data field value.
+To create a data entry UI, assign an object to the [formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) property. Each data field in this object produces a [simple item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/)&mdash;a label-editor pair. 
 
 The Form chooses default editors based on value types: [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) for string values, [NumberBox](/Documentation/ApiReference/UI_Components/dxNumberBox/) for numbers, [DateBox](/Documentation/ApiReference/UI_Components/dxDateBox/) for dates. You can use the [editorType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) property to specify an editor explicitly. In the following example, the Form uses default editors:
 
@@ -121,4 +121,4 @@ The Form chooses default editors based on value types: [TextBox](/Documentation/
 
 ---
 
-When you implement this code, the Form is created with the following simple items - TextBox for the `name`, NumberBox for the `officeNumber`, and DateBox for the `hireDate` data field.
+When you implement this code, the Form is created with the following simple items - TextBox for `name`, NumberBox for `officeNumber`, and DateBox for the `hireDate` data field.

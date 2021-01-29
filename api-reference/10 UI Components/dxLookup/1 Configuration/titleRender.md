@@ -1,6 +1,6 @@
 ---
 id: dxLookup.Options.titleRender
-dep: dxLookup.Options.dropDowRender
+deprecated: 
 ---
 ---
 ##### shortDescription

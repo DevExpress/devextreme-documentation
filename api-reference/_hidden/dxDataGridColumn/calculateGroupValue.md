@@ -4,7 +4,7 @@ type: String | function(rowData)
 ---
 ---
 ##### shortDescription
-Sets custom values used to group grid records by this column.
+Sets custom column values used to group grid records.
 
 ##### param(rowData): Object
 The current row's data.

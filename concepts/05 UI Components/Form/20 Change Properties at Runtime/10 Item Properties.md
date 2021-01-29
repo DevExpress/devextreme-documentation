@@ -26,7 +26,7 @@ To change a single item property at runtime, call the [itemOption(id, property, 
     });
 
 To change several properties at a time, pass an object to the [itemOption(id, options)](/api-reference/10%20UI%20Widgets/dxForm/3%20Methods/itemOption(id_options).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_options') method.
-Being called with the *field* parameter only, this method returns the current configuration of the specified form item.
+When you call it with the *id* parameter only, this method returns the current configuration of the specified form item.
 
     <!--JavaScript-->
     $(function() {
@@ -42,7 +42,7 @@ Being called with the *field* parameter only, this method returns the current co
         });
     });
 
-With Angular, Vue, or React, bind the property that should be changed to a component property.
+In Angular, Vue, or React, bind the property that should be changed to a component property.
 
 ---
 
@@ -185,9 +185,12 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
 
 ---
 
+
+#include form-item-options
+
 #####See Also#####
 #include common-link-callmethods
-- [Form - Change Editor Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Options_at_Runtime/Editor_Options/')
+- [Form - Change Editor Properties at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/Editor_Properties/')
 - [Form - Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')

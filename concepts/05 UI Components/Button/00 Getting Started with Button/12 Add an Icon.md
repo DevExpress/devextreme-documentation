@@ -46,7 +46,7 @@ Use the [icon](/Documentation/ApiReference/UI_Components/dxButton/Configuration/
 
 ---
 
-You have configured basic Button features. To take a more detailed look at this UI component, explore the following resources:
+For more information on this UI component, refer to the following resources:
 
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Overview) 
 - [API Reference](/Documentation/ApiReference/UI_Components/dxButton/)

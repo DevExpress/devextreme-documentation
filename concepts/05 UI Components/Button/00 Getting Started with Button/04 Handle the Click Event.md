@@ -1,4 +1,4 @@
-To respond to user clicks, write an [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler. This tutorial displays a toast message:
+To respond to user clicks, write an [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler. The example used in this tutorial displays a toast message:
 
 ---
 ##### jQuery

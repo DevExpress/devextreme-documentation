@@ -1,4 +1,4 @@
-The [icon](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon) property adds a glyph to the button. You can load a custom icon or display one of the ready-to-use images from [multiple supported image sources](/Documentation/Guide/Themes_and_Styles/Icons/). The sample below shows how to display a glyph from the [DevExtreme library](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library):
+Use the [icon](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon) property to add a glyph to the button. You can load a custom icon or display one of the ready-to-use images from [different image sources](/Documentation/Guide/Themes_and_Styles/Icons/). The sample below shows how to use a glyph from the [DevExtreme library](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library):
 
 ---
 ##### jQuery

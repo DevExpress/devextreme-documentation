@@ -6,13 +6,13 @@ For operating with AngularJS, DevExtreme includes an <a href="https://docs.angul
 
     <!--JavaScript-->angular.module('myApp', [ 'dx' ]);
 
-The *"dx"* module contains <a href="http://docs.angularjs.org/guide/directive" target="_blank">directives</a> that you use to create any DevExtreme UI component. For instance, the `dx-button` directive creates a [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Widgets/dxButton/') UI component, `dx-range-slider` creates a [RangeSlider](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/'), etc. Note that all DevExtreme directives satisfy the <a href="https://docs.angularjs.org/guide/directive#normalization" target="_blank">AngularJS normalization rules</a>: **dx-***UI-component-name*.
+The *"dx"* module contains <a href="http://docs.angularjs.org/guide/directive" target="_blank">directives</a> that you use to create any DevExtreme UI component. For instance, the `dx-button` directive creates a [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component, `dx-range-slider` creates a [RangeSlider](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/'), etc. Note that all DevExtreme directives satisfy the <a href="https://docs.angularjs.org/guide/directive#normalization" target="_blank">AngularJS normalization rules</a>: **dx-***UI-component-name*.
 
-Any DevExtreme directive should be associated with a `<div>` HTML element, which plays the role of a container for the UI component. For example, the following code creates a [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/') UI component in a `<div>` container.
+Any DevExtreme directive should be associated with a `<div>` HTML element, which plays the role of a container for the UI component. For example, the following code creates a [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') UI component in a `<div>` container.
 
     <!--HTML--><div dx-chart=""></div>
 
-To configure a UI component, pass an object to the UI component directive. Note that the properties of this object mirror the options of the UI component.
+To configure a UI component, pass an object to the UI component directive. Note that the properties of this object mirror the properties of the UI component.
 
     <!--HTML--><div dx-chart="{ 
         dataSource: [
@@ -23,7 +23,7 @@ To configure a UI component, pass an object to the UI component directive. Note 
         series: { argumentField: 'fruit', valueField: 'total' }
      }"></div>
 
-You can initialize UI component options with the value of a <a href="http://docs.angularjs.org/guide/scope" target="_blank">scope</a> property. For example, the following code declares the `fruitsData` property within the scope of a controller. The **dataSource** option of a dxChart is initialized with the value of this property.
+You can initialize UI component properties with the value of a <a href="http://docs.angularjs.org/guide/scope" target="_blank">scope</a> property. For example, the following code declares the `fruitsData` property within the scope of a controller. The **dataSource** property of a dxChart is initialized with the value of this property.
 
     <!--JavaScript-->function Controller ($scope) {
         $scope.fruitsData = [
@@ -42,9 +42,9 @@ You can initialize UI component options with the value of a <a href="http://docs
         }"></div>
     </div>
 
-[note]Initializing UI component options in this manner does not mean that the UI component option will be changed once its scope property is changed. If you are looking for this kind of data binding, refer to the [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options') topic.
+[note]Initializing UI component properties in this manner does not mean that the UI component property will be changed once its scope property is changed. If you are looking for this kind of data binding, refer to the [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options') topic.
 
-As an alternative, you can declare the whole object of UI component options in the scope and pass it to the UI component directive.
+As an alternative, you can declare the whole object of UI component properties in the scope and pass it to the UI component directive.
 
     <!--JavaScript-->function Controller($scope) {
         $scope.chartOptions = {
@@ -64,7 +64,7 @@ As an alternative, you can declare the whole object of UI component options in t
     </div>
 
 #####See Also#####
-- **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart').[Configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration '/Documentation/ApiReference/Data_Visualization_Widgets/dxChart/Configuration/')
+- **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart').[Configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/')
 - [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options')
 
 [tags]basics, angularjs, create, configure, initialize, design time, scope properties

@@ -8,7 +8,7 @@ export: default
 Configures your application before its launch.
 
 ##### param(config): globalConfig
-Global configuration options.
+Global configuration properties.
 
 ---
 

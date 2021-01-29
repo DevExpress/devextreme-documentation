@@ -14,4 +14,4 @@ id: Store.off(eventName)
 ---
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\Component\3 Methods\off(eventName).md' -->
+<!-- import * from 'api-reference\10 UI Components\Component\3 Methods\off(eventName).md' -->

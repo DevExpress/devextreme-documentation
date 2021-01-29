@@ -7,7 +7,7 @@ type: Object
 Configures the default UI component used for [editing](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing '{basewidgetpath}/Configuration/editing/') and filtering in the [filter row](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
 
 ---
-In this object, you can specify the default UI component's options (except **onValueChanged**, which you can specify in [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')).
+In this object, you can specify the default UI component's properties (except **onValueChanged**, which you can specify in [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')).
 
 The default editor UI component depends on the column configuration. The following table illustrates the dependency:
 
@@ -19,23 +19,23 @@ The default editor UI component depends on the column configuration. The followi
     <tr>
         <td rowspan="4"><a href="{basewidgetpath}/Configuration/columns/#dataType">dataType</a>:</td>
         <td>"date" <br> "datetime"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxDateBox/Configuration/">DateBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/">DateBox</a></td>
     </tr>
     <tr>
         <td>"number"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxNumberBox/Configuration/">NumberBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/">NumberBox</a></td>
     </tr>
     <tr>
         <td>"boolean"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxCheckBox/Configuration/">CheckBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/">CheckBox</a></td>
     </tr>
     <tr>
         <td>"string" <br> "object"</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxTextBox/Configuration/">TextBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/">TextBox</a></td>
     </tr>
     <tr>
         <td colspan="2"><a href="{basewidgetpath}/Configuration/columns/lookup/">lookup</a> is defined</td>
-        <td><a href="/Documentation/ApiReference/UI_Widgets/dxSelectBox/Configuration/">SelectBox</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/">SelectBox</a></td>
     </tr>
 </table>
 
@@ -136,7 +136,7 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
 }
 
-Other options that allow editor customization include:
+Other properties that allow editor customization include:
 
 - **columns[]**.[editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate')         
 Use it to replace the default editor.
@@ -145,7 +145,7 @@ Use it to replace the default editor.
 Use it to:
     - Change the editor type.
     - Override the default editor's **onValueChanged** handler.
-    - [Dynamically change editor options in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/Widgets/DataGrid/How_To/Dynamically_Change_Editor_Options_in_the_Editing_State/').
+    - [Dynamically change editor properties in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Editor_Properties_in_the_Editing_State/').
     - Implement other customization cases.
 
 #####See Also#####

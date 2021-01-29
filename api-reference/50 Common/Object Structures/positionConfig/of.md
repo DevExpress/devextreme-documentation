@@ -7,7 +7,7 @@ type: String | Element | jQuery | Window
 The target element relative to which the overlay element should be positioned.
 
 ---
-This option accepts the following value types:
+This property accepts the following value types:
 
 - <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a> (or <a href="https://api.jquery.com/category/selectors/" target="_blank">jQuery selector</a> if jQuery is used)
 
@@ -188,7 +188,7 @@ This option accepts the following value types:
 
 - [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') (or <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> if jQuery is used)
 
- The overlay element is positioned at the **event.pageX** and **event.pageY** coordinates. In the following example, the [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Widgets/dxPopover/') UI component is positioned at the point where the user has clicked.
+ The overlay element is positioned at the **event.pageX** and **event.pageY** coordinates. In the following example, the [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/') UI component is positioned at the point where the user has clicked.
 
     ---
     ##### jQuery

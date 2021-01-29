@@ -3,10 +3,10 @@ id: Store.key()
 ---
 ---
 ##### shortDescription
-Gets the key property (or properties) as specified in the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '{basewidgetpath}/Configuration/#key') option.
+Gets the key property (or properties) as specified in the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '{basewidgetpath}/Configuration/#key') property.
 
 ##### return: any
-The **key** option's value.
+The **key** property's value.
 
 ---
 ---

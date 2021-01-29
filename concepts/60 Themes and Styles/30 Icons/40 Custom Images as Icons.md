@@ -1,6 +1,6 @@
-The UI component's **icon** option accepts URLs, so you can assign the image's URL to it. However, it is better to encode the image in the Base64 type instead to reduce the amount of transferred data. Search for an image to Base64 converter on the web.
+The UI component's **icon** property accepts URLs, so you can assign the image's URL to it. However, it is better to encode the image in the Base64 type instead to reduce the amount of transferred data. Search for an image to Base64 converter on the web.
 
-Although Base64 code can be assigned directly to the **icon** option, we recommend placing it in the CSS because of its length. Add the following CSS rule to your stylesheet:
+Although Base64 code can be assigned directly to the **icon** property, we recommend placing it in the CSS because of its length. Add the following CSS rule to your stylesheet:
 
     <!--CSS-->
     .dx-icon-customicon { // in Angular apps, add ::ng-deep before
@@ -9,7 +9,7 @@ Although Base64 code can be assigned directly to the **icon** option, we recomme
         background-position: 0px 0px;
     }
 
-`customicon` here is the icon's name that you should [assign to the UI component's **icon** option](/concepts/60%20Themes%20and%20Styles/30%20Icons/20%20Icons%20in%20Widgets.md '/Documentation/Guide/Themes_and_Styles/Icons/#Icons_in_Widgets').
+`customicon` here is the icon's name that you should [assign to the UI component's **icon** property](/concepts/60%20Themes%20and%20Styles/30%20Icons/20%20Icons%20in%20Widgets.md '/Documentation/Guide/Themes_and_Styles/Icons/#Icons_in_DevExtreme_UI_Components').
 
 In addition, you can provide a specific icon variant for different states of a UI component element. In the following code, a special icon is provided for selected tabs:
 

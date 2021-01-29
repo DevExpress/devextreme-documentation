@@ -1,4 +1,4 @@
-This option accepts the following value types:    
+This property accepts the following value types:    
 
 - **String**    
   A CSS selector. For example: `"#elementId"`.

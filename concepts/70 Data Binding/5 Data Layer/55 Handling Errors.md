@@ -5,7 +5,7 @@ DevExtreme provides the [errorHandler](/api-reference/30%20Data%20Layer/Utils/er
         console.log(error.message);
     };
 
-A Store enables you to handle errors that occur only within itself. To handle Store errors, assign an error handling function to the **handleError** configuration option of the Store.
+A Store enables you to handle errors that occur only within itself. To handle Store errors, assign an error handling function to the **handleError** configuration property of the Store.
 
     <!--JavaScript-->
     var store = new DevExpress.data.LocalStore({

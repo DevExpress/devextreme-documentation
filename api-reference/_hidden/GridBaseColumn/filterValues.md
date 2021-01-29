@@ -6,10 +6,10 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies values selected in the column's [header filter](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/Widgets/{WidgetName}/Filtering_and_Searching/#Header_Filter').
+Specifies values selected in the column's [header filter](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Header_Filter').
 
 ---
-If the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') option is set, each value in the **filterValues** array specifies the beginning of an interval instead of an exact value:
+If the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property is set, each value in the **filterValues** array specifies the beginning of an interval instead of an exact value:
 
 ---
 #####jQuery
@@ -61,4 +61,4 @@ If the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/he
 #include datagrid-filtering-rowandheaderconflicts
 
 #####See Also#####
-- [Filtering - Header Filter](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/Widgets/{WidgetName}/Filtering_and_Searching/#Header_Filter')
+- [Filtering - Header Filter](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Header_Filter')

@@ -14,4 +14,4 @@ id: DataSource.on(events)
 ---
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\Component\3 Methods\on(events).md' -->
+<!-- import * from 'api-reference\10 UI Components\Component\3 Methods\on(events).md' -->

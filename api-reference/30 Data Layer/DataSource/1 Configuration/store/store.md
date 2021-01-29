@@ -7,16 +7,16 @@ type: Store | Store_Options | Array<any> | any
 Configures the store underlying the **DataSource**.
 
 ---
-This option accepts one of the following:
+This property accepts one of the following:
 
 * **Store instance**            
 An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'), [LocalStore](/api-reference/30%20Data%20Layer/LocalStore '/Documentation/ApiReference/Data_Layer/LocalStore/'), [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/'), or [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/') instance.
 
 * **Store configuration object**        
-An **ArrayStore**, **LocalStore**, or **ODataStore** configuration object. Make sure to set the [type](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store/type.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/#type') option.
+An **ArrayStore**, **LocalStore**, or **ODataStore** configuration object. Make sure to set the [type](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store/type.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/#type') property.
 
 * **Array**         
-Assigning an array to the **store** option automatically creates an **ArrayStore** in the **DataSource**.
+Assigning an array to the **store** property automatically creates an **ArrayStore** in the **DataSource**.
 
 ---
 ##### jQuery

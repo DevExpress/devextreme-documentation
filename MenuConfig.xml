@@ -1,15 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MenuRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <MenuRule SourcePattern="ApiReference:^10 UI Widgets/Errors and Warnings.*" Destination="" />
-  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets/Errors and Warnings.*" Destination="" />
+  <MenuRule SourcePattern="ApiReference:^10 UI Components/Errors and Warnings.*" Destination="" />
   <MenuRule SourcePattern="ApiReference:^30 Data Layer/zz Errors and Warnings.*" Destination="" />
   <MenuRule SourcePattern="ApiReference:^50 Common/utils/zz Errors and Warnings.*" Destination="" />
 
-  <MenuRule SourcePattern="ApiReference:^10 UI Widgets$" Destination="aa01 API Reference/10 UI Widgets" />
-  <MenuRule SourcePattern="ApiReference:^10 UI Widgets/(.*?)" Destination="aa01 API Reference/10 UI Widgets/$1" />
-  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets/(([a-z]{2})?(\d{2,3})?\s)?(.*)" Destination="aa01 API Reference/10 UI Widgets/$4" />
-  <MenuRule SourcePattern="ApiReference:^20 Data Visualization Widgets" Destination="" />
   <MenuRule SourcePattern="ApiReference:^50 Common/utils(.*?)" Destination="aa01 API Reference/Utilities$1" />
   <MenuRule SourcePattern="ApiReference:^50 Common/Object Structures(.*?)" Destination="aa01 API Reference/Types$1" />
   <MenuRule SourcePattern="ApiReference:^50 Common(.*?)" Destination="aa01 API Reference$1" />
@@ -21,17 +16,17 @@
 
   <MenuRule SourcePattern="Howto:^Common/(Migrate to the New Version.*?)" Destination="bz $1" />
   
-  <MenuRule SourcePattern="Howto:^05 Widgets$" Destination="bb65 Widgets" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/(SlideOut|SlideOutView|NavBar).*?" Destination="" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common/15 Advanced/40 (3rd-Party Frameworks.*?)" Destination="bb80 Common Features/zz $1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components$" Destination="bb65 UI Components" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/(SlideOut|SlideOutView|NavBar).*?" Destination="" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 (3rd-Party Frameworks.*?)" Destination="bb80 Common Features/zz $1" />
  
-  <MenuRule SourcePattern="Howto:^05 Widgets/zz Common" Destination="" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/zz Common" Destination="" />
 
-  <MenuRule SourcePattern="Howto:^05 Widgets/(.*?)" Destination="bb65 Widgets/$1" />
-  <MenuRule SourcePattern="Howto:^05 Widgets" Destination="" />
+  <MenuRule SourcePattern="Howto:^05 UI Components/(.*?)" Destination="bb65 UI Components/$1" />
+  <MenuRule SourcePattern="Howto:^05 UI Components" Destination="" />
 
   <MenuRule SourcePattern="Howto:^99 VS Integration(.*?)" Destination="" />
 

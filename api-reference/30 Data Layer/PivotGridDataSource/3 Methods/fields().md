@@ -6,7 +6,7 @@ id: PivotGridDataSource.fields()
 Gets all the fields including those [generated automatically](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/retrieveFields.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#retrieveFields').
 
 ##### return: Array<PivotGridDataSource_Options_fields>
-All [options](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/') of all the fields.
+All [properties](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/') of all the fields.
 
 ---
 ---

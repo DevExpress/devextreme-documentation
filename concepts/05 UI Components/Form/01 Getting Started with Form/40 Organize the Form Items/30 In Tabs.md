@@ -1,4 +1,4 @@
-The Form uses the [TabPanel](/Documentation/ApiReference/UI_Components/dxTabPanel/) component to display tabs. You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object. A tab can contain any item type.
+The Form uses the [TabPanel](/Documentation/ApiReference/UI_Components/dxTabPanel/) component to display [tabs](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/). You can specify the tab panel's settings in the [tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object. A tab can contain any item type.
 
 The following example shows a tabbed item nested in the `Personal Information` group. The resulting Form looks like this:
 

@@ -20,10 +20,13 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
     <!--JavaScript-->$(function() {
         $("#{widgetName}Container").dx{WidgetName}({
-            columns: [{
-                dataField: "Position", // provides values for the column
-                calculateSortValue: "isOnVacation" // provides values for sorting of the `Position` column
-            }]
+            columns: [
+                {
+                    dataField: "Position", // provides values for the column
+                    calculateSortValue: "isOnVacation" // provides values for sorting of the `Position` column
+                },
+                "isOnVacation"
+            ]
         });
     });
 
@@ -34,6 +37,9 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         <dxi-column
             dataField="Position" <!--provides values for the column -->
             calculateSortValue="isOnVacation"> <!-- provides values to be used in sorting -->
+        </dxi-column>
+        <dxi-column
+            dataField="isOnVacation"
         </dxi-column>
     </dx-{widget-name}>
 
@@ -51,6 +57,58 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         // ...
     })
     
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Position"
+                calculate-sort-value="isOnVacation"
+            />
+            <DxColumn
+                data-field="isOnVacation"
+            />
+        </DxDataGrid>
+    </template>
+    <script>
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+
+    const GroupCell = options => <div>{options.value}</div>;
+
+    function App() {
+        // ...
+        return (
+            <DataGrid ...>
+                <Column
+                    dataField="Position"
+                    calculateSortValue="isOnVacation"
+                />
+                <Column
+                    dataField="isOnVacation"
+                />
+            </DataGrid>
+        );
+    }
+
+    export default App();
+
 ---
 
 ... or a function that returns such values:

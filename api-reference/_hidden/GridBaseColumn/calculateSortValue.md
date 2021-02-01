@@ -107,7 +107,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         );
     }
 
-    export default App();
+    export default App;
 
 ---
 
@@ -122,8 +122,9 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
                 dataField: "Position",
                 sortOrder: "asc",
                 calculateSortValue: function (rowData) {
+                    const column = this;
                     if (rowData.Position == "CEO")
-                        return {widgetName}.columnOption("Position", "sortOrder") == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                        return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
                     else
                         return rowData.Position; // Others are sorted as usual
                 }
@@ -138,7 +139,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     // ...
     export class AppComponent {
         customSortingFunction (rowData) {
-            let column = this as any;
+            const column = this as any;
             if (rowData.Position == "CEO")
                 return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
             else
@@ -162,6 +163,68 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         </dxi-column>
     </dx-{widget-name}>
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Position"
+                :calculate-sort-value="customSortingFunction"
+            />
+        </DxDataGrid>
+    </template>
+    <script>
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return {
+                // ...
+                customSortingFunction(rowData) {
+                    const column = this;
+                    if (rowData.Position == "CEO")
+                        return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                    else 
+                        return rowData.Position; // Others are sorted as usual
+                },
+            };
+        },
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+
+    function customSortingFunction(rowData){
+        const column = this;
+        if (rowData.Position == "CEO")
+            return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+        else 
+            return rowData.Position; // Others are sorted as usual
+    }
+
+    function App() {
+        // ...
+        return (
+            <DataGrid ...>
+                <Column
+                    dataField="Position"
+                    calculateSortValue={customSortingFunction}
+                />
+            </DataGrid>
+        );
+    }
+
+    export default App;
+
 ---
 
 [note]

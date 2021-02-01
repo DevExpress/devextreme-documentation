@@ -4,7 +4,7 @@ The **LoadPanel** is an overlay UI component notifying the viewer that loading i
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/"
 }
 
-The following code adds to your page a simple **LoadPanel** and a [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/') that invokes it. The [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick') property set to **true** instructs the **LoadPanel** to hide once a user clicks outside it.
+The following code adds to your page a simple **LoadPanel** and a [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/) that invokes it. The [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick') property set to **true** instructs the **LoadPanel** to hide once a user clicks outside it.
 
 ---
 ##### jQuery

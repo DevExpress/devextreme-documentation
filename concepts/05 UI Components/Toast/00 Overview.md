@@ -160,7 +160,7 @@ If you need to specify other **Toast** properties, call the same method, but thi
 
 ---
 
-If you are going to reuse the **Toast**, then create it on the page using the following code. Note that in this code, the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/') UI component invokes the **Toast**.
+If you are going to reuse the **Toast**, then create it on the page using the following code. Note that in this code, the [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/) UI component invokes the **Toast**.
 
 ---
 ##### jQuery

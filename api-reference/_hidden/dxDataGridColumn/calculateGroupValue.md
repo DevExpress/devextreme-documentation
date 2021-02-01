@@ -13,7 +13,7 @@ The current row's data.
 The calculated value used to create and sort groups.
 
 ---
-This property accepts the name of the data source field that provides these values...
+This property accepts the name of the data source field that provides values by which to group grid records...
 
     {
         dataField: "Country",
@@ -21,7 +21,7 @@ This property accepts the name of the data source field that provides these valu
         calculateGroupValue: "groupDataField"
     }
 
-... or a function that calculates them:
+... or a function that creates custom groups:
 
     // groups records by date
     calculateGroupValue: function(rowData){

@@ -1,4 +1,4 @@
-The template implementation depends on the used framework or library. Examples of jQuery, Angular, and ASP.NET MVC are presented below. They show how to create a template consisting of static (text) and dynamic (the [Button](/concepts/05%20Widgets/Button/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/') UI component) content. 
+The template implementation depends on the used framework or library. Examples of jQuery, Angular, and ASP.NET MVC are presented below. They show how to create a template consisting of static (text) and dynamic (the [Button](/Documentation/ApiReference/UI_Components/dxButton/) UI component) content. 
 
 ---
 ##### jQuery 

@@ -4,10 +4,10 @@ type: Array<Object>
 ---
 ---
 ##### shortDescription
-An array of items displayed by the UI component.
+An array of items used to synchronize the DropDownBox with an embedded UI component.
 
 ---
-The **items** array defines the **DropDownBox**'s content. However, it does not ensure that the UI component will render the content. The **DropDownBox** uses embedded UI components to render its content. Use the **contentTemplate** to embed other UI components such as the **List** or the **TreeView**. In this case, the content is displayed in accordance with the configuration and functionality of the embedded UI component. The **items** array can contain objects with fields described in this section.
+The **DropDownBox** uses other UI components to render the **items**. Use the [contentTemplate](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate) to embed a UI component such as the [List](/Documentation/ApiReference/UI_Components/dxList/) or the [TreeView](/Documentation/ApiReference/UI_Components/dxTreeView/). In this case, the **items** are displayed in accordance with the configuration and functionality of the embedded UI component.
 
 If you need to update the UI component items, reassign the entire **items** array as shown in the following example:
 

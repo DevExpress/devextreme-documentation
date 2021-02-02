@@ -90,7 +90,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     import React from 'react';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    const GroupCell = options => <div>{options.value}</div>;
 
     function App() {
         // ...

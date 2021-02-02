@@ -93,8 +93,6 @@ This property accepts the name of the data source field that provides values by 
     import React from 'react';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    const GroupCell = options => <div>{options.value}</div>;
-
     function App() {
         // ...
         return (
@@ -148,7 +146,7 @@ This property accepts the name of the data source field that provides values by 
                             return "Yesterday";
                         }
                         //...
-                        return "Older";
+                        return "Earlier";
                     }
                 }
             ]
@@ -298,7 +296,7 @@ This property accepts the name of the data source field that provides values by 
 
 ---
 
-Group captions and appearance can be customized. To do this, define the [groupCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate) ([groupCellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellRender) in React). Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>.
+Group captions and appearance can be customized. To do this, define the [groupCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate). Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>.
 
 **calculateGroupValue** is also used to sort groups when the column is grouped.
 

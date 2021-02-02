@@ -24,9 +24,8 @@ This property accepts the name of the data source field that provides values by 
                 {
                     dataField: "Country",
                     groupIndex: 0,
-                    calculateGroupValue: "groupDataField"
+                    calculateGroupValue: "City" // specifies the column used to group grid records
                 },
-                "groupDataField"
             ]
         });
     });
@@ -38,10 +37,7 @@ This property accepts the name of the data source field that provides values by 
         <dxi-column
             dataField="Country"
             [groupIndex]="0"
-            calculateGroupValue="groupDataField">
-        </dxi-column>
-        <dxi-column
-            dataField="groupDataField"
+            calculateGroupValue="City"> <!-- specifies the column used to group grid records -->
         </dxi-column>
     </dx-{widget-name}>
 
@@ -68,10 +64,7 @@ This property accepts the name of the data source field that provides values by 
             <DxColumn
                 data-field="Position"
                 :group-index="0"
-                calculate-group-value="groupDataField"
-            />
-            <DxColumn
-                data-field="groupDataField"
+                calculate-group-value="City" <!-- specifies the column used to group grid records -->
             />
         </DxDataGrid>
     </template>
@@ -100,10 +93,7 @@ This property accepts the name of the data source field that provides values by 
                 <Column
                     dataField="Position"
                     groupIndex={0}
-                    calculateGroupValue="groupDataField"
-                />
-                <Column
-                    dataField="groupDataField"
+                    calculateGroupValue="City" // specifies the column used to group grid records
                 />
             </DataGrid>
         );
@@ -139,14 +129,17 @@ This property accepts the name of the data source field that provides values by 
                         const today = convertDateToString(new Date());
                         const yesterday = convertDateToString(yesterdayDate);
 
-                        if(date === today) {
-                            return "Today";
+                        switch (date) {
+                            case today:
+                                return "Today";
+                                break;
+                            case yesterday:
+                                return "Yesterday";
+                                break; 
+                            // ...
+                            default:
+                                return "Earlier";
                         }
-                        if(date === yesterday) {
-                            return "Yesterday";
-                        }
-                        //...
-                        return "Earlier";
                     }
                 }
             ]
@@ -183,14 +176,17 @@ This property accepts the name of the data source field that provides values by 
             const today = convertDateToString(new Date());
             const yesterday = convertDateToString(yesterdayDate);
 
-            if (date === today) {
-                return "Today";
+            switch (date) {
+                case today:
+                    return "Today";
+                    break;
+                case yesterday:
+                    return "Yesterday";
+                    break; 
+                // ...
+                default:
+                    return "Earlier";
             }
-            if (date === yesterday) {
-                return "Yesterday";
-            }
-            //...
-            return "Older";
         }
     }
     @NgModule({
@@ -236,14 +232,17 @@ This property accepts the name of the data source field that provides values by 
                 const today = convertDateToString(new Date());
                 const yesterday = convertDateToString(yesterdayDate);
 
-                if (date === today) {
-                    return "Today";
+                switch (date) {
+                    case today:
+                        return "Today";
+                        break;
+                    case yesterday:
+                        return "Yesterday";
+                        break; 
+                    // ...
+                    default:
+                        return "Earlier";
                 }
-                if (date === yesterday) {
-                    return "Yesterday";
-                }
-                //...
-                return "Older";
             }
         }
         // ...
@@ -268,14 +267,17 @@ This property accepts the name of the data source field that provides values by 
         const today = convertDateToString(new Date());
         const yesterday = convertDateToString(yesterdayDate);
 
-        if (date === today) {
-            return "Today";
+        switch (date) {
+            case today:
+                return "Today";
+                break;
+            case yesterday:
+                return "Yesterday";
+                break; 
+            // ...
+            default:
+                return "Earlier";
         }
-        if (date === yesterday) {
-            return "Yesterday";
-        }
-        //...
-        return "Older";
     };
 
     function App() {

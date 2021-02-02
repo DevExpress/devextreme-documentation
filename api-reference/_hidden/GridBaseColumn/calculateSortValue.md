@@ -24,8 +24,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
                 {
                     dataField: "Position", // provides values for the column
                     calculateSortValue: "isOnVacation" // provides values for sorting of the `Position` column
-                },
-                "isOnVacation"
+                }
             ]
         });
     });
@@ -37,9 +36,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         <dxi-column
             dataField="Position" <!--provides values for the column -->
             calculateSortValue="isOnVacation"> <!-- provides values to be used in sorting -->
-        </dxi-column>
-        <dxi-column
-            dataField="isOnVacation"
         </dxi-column>
     </dx-{widget-name}>
 
@@ -64,11 +60,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <template>
         <DxDataGrid ... >
             <DxColumn
-                data-field="Position"
-                calculate-sort-value="isOnVacation"
-            />
-            <DxColumn
-                data-field="isOnVacation"
+                data-field="Position" <!--provides values for the column -->
+                calculate-sort-value="isOnVacation" <!-- provides values to be used in sorting -->
             />
         </DxDataGrid>
     </template>
@@ -96,11 +89,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         return (
             <DataGrid ...>
                 <Column
-                    dataField="Position"
-                    calculateSortValue="isOnVacation"
-                />
-                <Column
-                    dataField="isOnVacation"
+                    dataField="Position" // provides values for the column
+                    calculateSortValue="isOnVacation" // provides values for sorting of the `Position` column
                 />
             </DataGrid>
         );

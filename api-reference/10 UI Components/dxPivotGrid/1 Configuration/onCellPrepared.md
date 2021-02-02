@@ -35,8 +35,7 @@ Model data. Available only if Knockout is used.
 The position of a cell's row.
 
 ---
-
-In the following code the **onCellPrepared** event handler is used to customize cells' apperance depending on the area and field types:
+The **onCellPrepared** handler is useful when you want to customize cell appearance or replace cell values with custom content. 
 
 The following code how to locate and customize cells under different conditions:
 
@@ -51,10 +50,10 @@ The following code how to locate and customize cells under different conditions:
                 if(e.area === "row" || e.area === "column") 
                     e.cellElement.css("font-weight", "bold")
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                    e.cellElement.css("backgroundColor", "lightGreen")
+                    e.cellElement.addClass("your-custom-class")
                 if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
                     e.cellElement.html(
-                        // Specify content for a separate cell here
+                        // Specify custom content for a separate cell here
                     )
             }
         });
@@ -78,12 +77,12 @@ The following code how to locate and customize cells under different conditions:
     export class AppComponent {
        onCellPrepared(e) {          
             if(e.area === "row" || e.area === "column") 
-                e.cellElement.style.fontWeight = "bold";
+                e.cellElement.css("font-weight", "bold")
             if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                e.cellElement.style.backgroundColor = "lightGreen";
+                e.cellElement.addClass("your-custom-class")
             if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
                 e.cellElement.html(
-                    // Specify content for a separate cell here
+                    // Specify custom content for a separate cell here
                 )
         }
     }
@@ -129,12 +128,12 @@ The following code how to locate and customize cells under different conditions:
         methods: {
             onCellPrepared(e) {          
                 if(e.area === "row" || e.area === "column") 
-                    e.cellElement.style.fontWeight = "bold";
+                    e.cellElement.css("font-weight", "bold")
                 if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                    e.cellElement.style.backgroundColor = "lightGreen";
+                    e.cellElement.addClass("your-custom-class")
                 if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
                     e.cellElement.html(
-                        // Specify content for a separate cell here
+                        // Specify custom content for a separate cell here
                     )
             }
         }
@@ -161,15 +160,19 @@ The following code how to locate and customize cells under different conditions:
         }
         onCellPrepared(e) {          
             if(e.area === "row" || e.area === "column") 
-                e.cellElement.style.fontWeight = "bold";
+                e.cellElement.style("font-weight", "bold")
             if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                e.cellElement.style.backgroundColor = "lightGreen";
+                e.cellElement.addClass("your-custom-class")
             if(e.cell.rowPath === "requiredRowName" && e.cell.columnPath === "requiredColumnName")
                 e.cellElement.html(
-                    // Specify content for a separate cell here
+                    // Specify custom content for a separate cell here
                 )
         }
     }
     export default App;
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSCellCustomization/"
+}

@@ -5,7 +5,7 @@ default: 4
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the distance in pixels between group borders and content. 
 
 ---
 <!-- Description goes here -->

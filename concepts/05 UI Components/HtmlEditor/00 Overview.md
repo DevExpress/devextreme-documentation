@@ -131,6 +131,13 @@ Follow the steps below to add the **HtmlEditor** to a page.
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
+    <script src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx-quill.min.js"></script>
+    // Required if valueType is "markdown"
+    // <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script>
+
+    // Reference the DevExtreme sources here
+
     @(Html.DevExtreme().HtmlEditor()
         .ValueType(HtmlEditorValueType.Html) // or HtmlEditorValueType.Markdown
         .Content(@<text>
@@ -141,10 +148,6 @@ Follow the steps below to add the **HtmlEditor** to a page.
         </text>)
     )
     
-    <script src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx-quill.min.js"></script>
-    // Required if valueType is "markdown"
-    // <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
-    // <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script>
 
 ---
 

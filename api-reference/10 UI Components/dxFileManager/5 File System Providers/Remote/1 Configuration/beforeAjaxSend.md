@@ -16,7 +16,7 @@ Custom data (key/value pairs) that is sent to the server with the request.
 The request headers.
 
 ##### field(options.xhrFields): Object
-Native <a href="https://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">XMLHttpRequest object properties</a>.
+An object of fieldName-fieldValue pairs to set on the native <a href="https://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">XMLHttpRequest object</a>.
 
 ---
 

@@ -28,7 +28,7 @@ The resulting summary item's value.
 If the custom summary item is calculated by a [column](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/column.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column'), this field contains the value from a cell of this column. Otherwise, it contains a whole object from the data source.
 
 ---
-This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify them in the function.
+This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify it in the function.
 
 A summary value calculation is conducted in three stages: *start* - the **totalValue** is initialized; *calculate* - the **totalValue** is modified; *finalize* - the **totalValue** is adjusted. To identify the current stage, check the value of the **summaryProcess** field that belongs to the function's parameter:
 
@@ -120,6 +120,144 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         ],
         // ...
     })
+
+---
+
+calculateCustomSummary is called before calculateCellValue. That's why if you want create an unbound data column and use its values in a custom summary, you should call this function from calculateCustomSummary as follows:
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function(){
+        const  myCalculateFunction = (rowData) => {
+            return rowData.width * rowData.height;
+        }
+    
+        $("#gridContainer").dxDataGrid({
+            dataSource: dimensions,
+            columns: [
+                "width", "height",
+                {
+                    dataField: "Area",
+                    calculateCellValue: myCalculateFunction
+                }
+            ],
+            summary: {
+                totalItems: [{
+                        name: "AreaSummary",
+                        showInColumn: "Area",
+                        displayFormat: "Total area: {0}",
+                        valueFormat: "decimal",
+                        summaryType: "custom"
+                    }
+                ],
+                calculateCustomSummary: function (options) {
+                    if (options.name === "AreaSummary") {
+                        if (options.summaryProcess === "start") {
+                            options.totalValue = 0;
+                        }
+                        if (options.summaryProcess === "calculate") {
+                            options.totalValue += myCalculateFunction(options.value);
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+##### Angular
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        customSortingFunction (rowData) {
+            const column = this as any;
+            if (rowData.Position == "CEO")
+                return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+            else
+                return rowData.Position; // Others are sorted as usual
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-{widget-name} ... >
+        <dxi-column
+            dataField="Position"
+            sortOrder="asc"
+            [calculateSortValue]="customSortingFunction">
+        </dxi-column>
+    </dx-{widget-name}>
+    
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="Position"
+                :calculate-sort-value="customSortingFunction"
+            />
+        </DxDataGrid>
+    </template>
+    <script>
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return {
+                // ...
+                customSortingFunction(rowData) {
+                    const column = this;
+                    if (rowData.Position == "CEO")
+                        return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                    else 
+                        return rowData.Position; // Others are sorted as usual
+                },
+            };
+        },
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+
+    function customSortingFunction(rowData){
+        const column = this;
+        if (rowData.Position == "CEO")
+            return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+        else 
+            return rowData.Position; // Others are sorted as usual
+    }
+
+    function App() {
+        // ...
+        return (
+            <DataGrid ...>
+                <Column
+                    dataField="Position"
+                    calculateSortValue={customSortingFunction}
+                />
+            </DataGrid>
+        );
+    }
+
+    export default App;
 
 ---
 

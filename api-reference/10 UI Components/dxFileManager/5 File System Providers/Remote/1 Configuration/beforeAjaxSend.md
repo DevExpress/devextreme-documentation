@@ -4,19 +4,40 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a function that customizes an Ajax request before it is sent to the server.
 
 ##### param(options): Object
-<!-- Description goes here -->
+The request parameters.
 
 ##### field(options.formData): Object
-<!-- Description goes here -->
+Custom data (key/value pairs) that is sent to the server with the request.
 
 ##### field(options.headers): Object
-<!-- Description goes here -->
+The request headers.
 
 ##### field(options.xhrFields): Object
-<!-- Description goes here -->
+Native <a href="https://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">XMLHttpRequest object properties</a>.
 
 ---
-<!-- Description goes here -->
+
+[note] Use the [beforeSubmit](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#beforeSubmit) function to customize the **file download** requests.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
+                endpointUrl: "https://mydomain.com/api/files",
+                // ...
+                beforeAjaxSend: function({ headers, formData, xhrFields }) {
+                    headers.RequestVerificationToken = document.getElementsByName("__RequestVerificationToken")[0].value;
+                    formData.dataValue = "some data";
+                    xhrFields.withCredentials = true;
+                }  
+            })
+        });
+    });
+
+---

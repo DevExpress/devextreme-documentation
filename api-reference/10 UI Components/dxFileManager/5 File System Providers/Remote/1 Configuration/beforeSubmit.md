@@ -4,13 +4,32 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a function that customizes a form submit request before it is sent to the server.
 
 ##### param(options): Object
-<!-- Description goes here -->
+The request parameters.
 
 ##### field(options.formData): Object
-<!-- Description goes here -->
+Custom data (key/value pairs) that is sent to the server with the request.
 
 ---
-<!-- Description goes here -->
+
+[note] Use the **beforeSubmit** function to customize the **file download** requests only. To customize other requests, use the [beforeAjaxSend](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#beforeAjaxSend) function.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
+                endpointUrl: "https://mydomain.com/api/files",
+                // ...
+                beforeSubmit: function({ formData }) {
+                    formData.value = document.getElementsByName("__RequestVerificationToken")[0].value;
+                }  
+            })
+        });
+    });
+
+---

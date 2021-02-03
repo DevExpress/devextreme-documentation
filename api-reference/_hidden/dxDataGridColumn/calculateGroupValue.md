@@ -109,7 +109,8 @@ This property accepts the name of the data source field that provides values by 
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             columns: [
                 // ...
@@ -117,34 +118,36 @@ This property accepts the name of the data source field that provides values by 
                     dataField: "HireDate",
                     dataType: "date",
                     groupIndex: 0,
-                    calculateGroupValue: function(rowData){
-                        const convertDateToString = date => {
-                            return date.toISOString().split('T')[0].replaceAll('-', '/');
-                        };
-
-                        const date = rowData.HireDate;
-                        const yesterdayDate = new Date();
-                        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-
-                        const today = convertDateToString(new Date());
-                        const yesterday = convertDateToString(yesterdayDate);
-
-                        switch (date) {
-                            case today:
-                                return "Today";
-                                break;
-                            case yesterday:
-                                return "Yesterday";
-                                break; 
-                            // ...
-                            default:
-                                return "Earlier";
-                        }
-                    }
+                    calculateGroupValue: groupByDate
                 }
             ]
         });
     });
+
+    const groupByDate = (rowData) => {
+        const convertDateToString = date => {
+            return date.toISOString().split('T')[0].replaceAll('-', '/');
+        };
+
+        const date = rowData.HireDate;
+        const yesterdayDate = new Date();
+        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+
+        const today = convertDateToString(new Date());
+        const yesterday = convertDateToString(yesterdayDate);
+
+        switch (date) {
+            case today:
+                return "Today";
+                break;
+            case yesterday:
+                return "Yesterday";
+                break; 
+            // ...
+            default:
+                return "Earlier";
+        }      
+    }
 
 ##### Angular
     
@@ -300,7 +303,7 @@ This property accepts the name of the data source field that provides values by 
 
 Group captions and appearance can be customized. To do this, define the [groupCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate). Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>.
 
-**calculateGroupValue** is also used to sort groups when the column is grouped.
+**calculateGroupValue** is also used to sort groups when grid records are grouped by this column.
 
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"

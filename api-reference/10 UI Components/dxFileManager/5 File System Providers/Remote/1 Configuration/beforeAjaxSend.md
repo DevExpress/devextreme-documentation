@@ -29,7 +29,6 @@ Native <a href="https://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">XMLHt
     $(function() {
         $("#fileManagerContainer").dxFileManager({
             fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
-                endpointUrl: "https://mydomain.com/api/files",
                 // ...
                 beforeAjaxSend: function({ headers, formData, xhrFields }) {
                     headers.RequestVerificationToken = document.getElementsByName("__RequestVerificationToken")[0].value;

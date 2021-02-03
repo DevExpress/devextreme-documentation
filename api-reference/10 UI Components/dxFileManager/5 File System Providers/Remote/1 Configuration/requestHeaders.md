@@ -22,7 +22,6 @@ Specifies the request headers.
                     YourHeaderName: "YourHeaderValue"
                 },
                 // ...
-                }  
             })
         });
     });

@@ -22,9 +22,9 @@ This property accepts the name of the data source field that provides values by 
         $("#{widgetName}Container").dx{WidgetName}({
             columns: [
                 {
-                    dataField: "Country",
+                    dataField: "ColumnValues",
                     groupIndex: 0,
-                    calculateGroupValue: "City" // specifies the column used to group grid records
+                    calculateGroupValue: "GroupingValues"
                 },
             ]
         });
@@ -35,9 +35,9 @@ This property accepts the name of the data source field that provides values by 
     <!--HTML-->
     <dx-{widget-name} ... >
         <dxi-column
-            dataField="Country"
+            dataField="ColumnValues"
             [groupIndex]="0"
-            calculateGroupValue="City"> <!-- specifies the column used to group grid records -->
+            calculateGroupValue="GroupingValues">
         </dxi-column>
     </dx-{widget-name}>
 
@@ -62,9 +62,9 @@ This property accepts the name of the data source field that provides values by 
     <template>
         <DxDataGrid ... >
             <DxColumn
-                data-field="Position"
+                data-field="ColumnValues"
                 :group-index="0"
-                calculate-group-value="City" <!-- specifies the column used to group grid records -->
+                calculate-group-value="GroupingValues" 
             />
         </DxDataGrid>
     </template>
@@ -91,9 +91,9 @@ This property accepts the name of the data source field that provides values by 
         return (
             <DataGrid ...>
                 <Column
-                    dataField="Position"
+                    dataField="ColumnValues"
                     groupIndex={0}
-                    calculateGroupValue="City" // specifies the column used to group grid records
+                    calculateGroupValue="GroupingValues" 
                 />
             </DataGrid>
         );

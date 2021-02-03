@@ -20,12 +20,10 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
     <!--JavaScript-->$(function() {
         $("#{widgetName}Container").dx{WidgetName}({
-            columns: [
-                {
-                    dataField: "Position", // provides values for the column
-                    calculateSortValue: "isOnVacation" // provides values for sorting of the `Position` column
-                }
-            ]
+            columns: [{
+                    dataField: "Position", // provides column values 
+                    calculateSortValue: "isOnVacation" // provides values used to sort the Position column
+            }]
         });
     });
 
@@ -34,8 +32,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <!--HTML-->
     <dx-{widget-name} ... >
         <dxi-column
-            dataField="Position" <!--provides values for the column -->
-            calculateSortValue="isOnVacation"> <!-- provides values to be used in sorting -->
+            dataField="Position" <!-- provides column values -->
+            calculateSortValue="isOnVacation"> <!-- provides values used to sort the Position column -->
         </dxi-column>
     </dx-{widget-name}>
 
@@ -60,8 +58,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <template>
         <DxDataGrid ... >
             <DxColumn
-                data-field="Position" <!--provides values for the column -->
-                calculate-sort-value="isOnVacation" <!-- provides values to be used in sorting -->
+                data-field="Position" <!-- provides column values -->
+                calculate-sort-value="isOnVacation" <!-- provides values used to sort the Position column -->
             />
         </DxDataGrid>
     </template>
@@ -89,8 +87,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         return (
             <DataGrid ...>
                 <Column
-                    dataField="Position" // provides values for the column
-                    calculateSortValue="isOnVacation" // provides values for sorting of the `Position` column
+                    dataField="Position" // provides column values
+                    calculateSortValue="isOnVacation" // provides values used to sort the Position column
                 />
             </DataGrid>
         );

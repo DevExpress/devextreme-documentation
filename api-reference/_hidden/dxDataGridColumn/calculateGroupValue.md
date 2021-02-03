@@ -20,13 +20,11 @@ This property accepts the name of the data source field that provides values by 
 
     <!--JavaScript-->$(function() {
         $("#{widgetName}Container").dx{WidgetName}({
-            columns: [
-                {
+            columns: [{
                     dataField: "ColumnValues",
                     groupIndex: 0,
                     calculateGroupValue: "GroupingValues"
-                },
-            ]
+                }]
         });
     });
 
@@ -110,6 +108,10 @@ This property accepts the name of the data source field that provides values by 
 ##### jQuery
 
     <!--JavaScript-->
+    const convertDateToString = date => {
+        return date.toISOString().split('T')[0].replaceAll('-', '/');
+    };
+
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             columns: [
@@ -118,36 +120,28 @@ This property accepts the name of the data source field that provides values by 
                     dataField: "HireDate",
                     dataType: "date",
                     groupIndex: 0,
-                    calculateGroupValue: groupByDate
+                    calculateGroupValue: function(rowData) => {       
+                        const date = rowData.HireDate;
+                        const yesterdayDate = new Date();
+                        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+
+                        const today = convertDateToString(new Date());
+                        const yesterday = convertDateToString(yesterdayDate);
+
+                        switch (date) {
+                            case today:
+                                return "Today";
+                            case yesterday:
+                                return "Yesterday";
+                            // ...
+                            default:
+                                return "Earlier";
+                        }      
+                    }
                 }
             ]
         });
     });
-
-    const groupByDate = (rowData) => {
-        const convertDateToString = date => {
-            return date.toISOString().split('T')[0].replaceAll('-', '/');
-        };
-
-        const date = rowData.HireDate;
-        const yesterdayDate = new Date();
-        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-
-        const today = convertDateToString(new Date());
-        const yesterday = convertDateToString(yesterdayDate);
-
-        switch (date) {
-            case today:
-                return "Today";
-                break;
-            case yesterday:
-                return "Yesterday";
-                break; 
-            // ...
-            default:
-                return "Earlier";
-        }      
-    }
 
 ##### Angular
     
@@ -165,13 +159,14 @@ This property accepts the name of the data source field that provides values by 
     <!--TypeScript-->
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
+
+    const convertDateToString = (date) => {
+        return date.toISOString().split("T")[0].replaceAll("-", "/");
+    };
+
     export class AppComponent {
         // ...
-        groupByDate(rowData) {
-            const convertDateToString = (date) => {
-                return date.toISOString().split("T")[0].replaceAll("-", "/");
-            };
-
+        groupByDate(rowData) {         
             const date = rowData.HireDate;
             const yesterdayDate = new Date();
             yesterdayDate.setDate(yesterdayDate.getDate() - 1);
@@ -182,10 +177,8 @@ This property accepts the name of the data source field that provides values by 
             switch (date) {
                 case today:
                     return "Today";
-                    break;
                 case yesterday:
                     return "Yesterday";
-                    break; 
                 // ...
                 default:
                     return "Earlier";
@@ -217,17 +210,17 @@ This property accepts the name of the data source field that provides values by 
     <script>
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
+    const convertDateToString = (date) => {
+        return date.toISOString().split("T")[0].replaceAll("-", "/");
+    };
+
     export default {
         components: {
             DxDataGrid,
             DxColumn
         },
         methods: {
-            groupByDate(rowData) {
-                const convertDateToString = (date) => {
-                    return date.toISOString().split("T")[0].replaceAll("-", "/");
-                };
-
+            groupByDate(rowData) {               
                 const date = rowData.HireDate;
                 const yesterdayDate = new Date();
                 yesterdayDate.setDate(yesterdayDate.getDate() - 1);
@@ -238,10 +231,8 @@ This property accepts the name of the data source field that provides values by 
                 switch (date) {
                     case today:
                         return "Today";
-                        break;
                     case yesterday:
                         return "Yesterday";
-                        break; 
                     // ...
                     default:
                         return "Earlier";
@@ -258,33 +249,31 @@ This property accepts the name of the data source field that provides values by 
     import React from 'react';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    const groupByDate = (rowData) => {
-        const convertDateToString = (date) => {
-            return date.toISOString().split("T")[0].replaceAll("-", "/");
-        };
-
-        const date = rowData.HireDate;
-        const yesterdayDate = new Date();
-        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-
-        const today = convertDateToString(new Date());
-        const yesterday = convertDateToString(yesterdayDate);
-
-        switch (date) {
-            case today:
-                return "Today";
-                break;
-            case yesterday:
-                return "Yesterday";
-                break; 
-            // ...
-            default:
-                return "Earlier";
-        }
+    const convertDateToString = (date) => {
+        return date.toISOString().split("T")[0].replaceAll("-", "/");
     };
 
     function App() {
         // ...
+        const groupByDate = (rowData) => {          
+            const date = rowData.HireDate;
+            const yesterdayDate = new Date();
+            yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+
+            const today = convertDateToString(new Date());
+            const yesterday = convertDateToString(yesterdayDate);
+
+            switch (date) {
+                case today:
+                    return "Today";
+                case yesterday:
+                    return "Yesterday";
+                // ...
+                default:
+                    return "Earlier";
+            }
+        };  
+
         return (
             <DataGrid ...>
                 <Column

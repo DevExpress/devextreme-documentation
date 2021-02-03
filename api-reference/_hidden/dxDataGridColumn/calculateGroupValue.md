@@ -120,7 +120,7 @@ This property accepts the name of the data source field that provides values by 
                     dataField: "HireDate",
                     dataType: "date",
                     groupIndex: 0,
-                    calculateGroupValue: function(rowData) => {       
+                    calculateGroupValue: function(rowData){       
                         const date = rowData.HireDate;
                         const yesterdayDate = new Date();
                         yesterdayDate.setDate(yesterdayDate.getDate() - 1);

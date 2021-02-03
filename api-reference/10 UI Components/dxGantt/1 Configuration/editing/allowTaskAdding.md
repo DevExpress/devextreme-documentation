@@ -11,15 +11,15 @@ Specifies whether a user can add [tasks](/api-reference/10%20UI%20Widgets/dxGant
 
 Right-click a task or a cell in the Gantt chart and select the "Add" context menu item to add a new task or subtask.
 
-![DevExtreme Gantt Chart - Add Tasks](~/images/Gantt/add-tasks.png)
+![DevExtreme Gantt Chart - Add Tasks](/images/Gantt/add-tasks.png)
 
 - "New Task" - Appends a new task at the same level as the selected cell/task.
 
-    ![DevExtreme Gantt Chart - Add Task](~/images/Gantt/add-task.png)
+    ![DevExtreme Gantt Chart - Add Task](/images/Gantt/add-task.png)
 
 - "New Subtask" - Adds a child task to the selected cell/task.
 
-    ![DevExtreme Gantt Chart - Add Subtask](~/images/Gantt/add-subtask.png)
+    ![DevExtreme Gantt Chart - Add Subtask](/images/Gantt/add-subtask.png)
 
 ---
 ##### jQuery

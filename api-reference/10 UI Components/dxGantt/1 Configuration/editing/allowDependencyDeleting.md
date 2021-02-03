@@ -9,15 +9,15 @@ Specifies whether a user can delete [dependencies](/api-reference/10%20UI%20Widg
 
 ---
 
-![DevExtreme Gantt - Dependency](~/images/Gantt/dependency-element.png)
+![DevExtreme Gantt - Dependency](/images/Gantt/dependency-element.png)
 
 Select a dependency and click **Delete** to delete this dependency. 
 
-![DevExtreme Gantt - Delete Dependency](~/images/Gantt/delete-dependency.png)
+![DevExtreme Gantt - Delete Dependency](/images/Gantt/delete-dependency.png)
 
 The widget displays a delete confirmation message when you want to remove a dependency.
 
-![[DevExtreme Gantt - Confirm Dependency Deletion](~/images/Gantt/confirm-delete-dependency.png)
+![[DevExtreme Gantt - Confirm Dependency Deletion](/images/Gantt/confirm-delete-dependency.png)
 
 ---
 ##### jQuery

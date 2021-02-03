@@ -28,7 +28,7 @@ The values of the inserted dependency.
 
 ---
 
-![DevExtreme Gantt - Dependency](~/images/Gantt/dependency-element.png)
+![DevExtreme Gantt - Dependency](/images/Gantt/dependency-element.png)
 
 ---
 

@@ -28,7 +28,7 @@ The values of the inserted task.
 
 ---
 
-![DevExtreme Gantt Chart - Task Element](~/images/Gantt/task-element.png)
+![DevExtreme Gantt Chart - Task Element](/images/Gantt/task-element.png)
 
 ---
 

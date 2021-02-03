@@ -11,15 +11,15 @@ Specifies whether users can update a [task's resources](/api-reference/10%20UI%2
 
 Double-click a task or use the context menu to open the "Task Details" dialog window to manage resources. Click the "Resources" field to open a drop-down list with the available resources. Select a resource to link it to the edited task.
 
-![DevExtreme Gantt Chart - Assign Resources to Task](~/images/Gantt/assign-resource-to-task.png)
+![DevExtreme Gantt Chart - Assign Resources to Task](/images/Gantt/assign-resource-to-task.png)
 
 Note that you can assign multiple resources to a task.
 
-![DevExtreme Gantt Chart - Assign Multiple Resources to Task](~/images/Gantt/task-with-multiple-resources.png)
+![DevExtreme Gantt Chart - Assign Multiple Resources to Task](/images/Gantt/task-with-multiple-resources.png)
 
 Click the cross icon (on the right side of the resource) to remove the resource from the task.
 
-![DevExtreme Gantt Chart - Remove Resources from Task](~/images/Gantt/unassign-resource-from-task.png)
+![DevExtreme Gantt Chart - Remove Resources from Task](/images/Gantt/unassign-resource-from-task.png)
 
 ---
 ##### jQuery

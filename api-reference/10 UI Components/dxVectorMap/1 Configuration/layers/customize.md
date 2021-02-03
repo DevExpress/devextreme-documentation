@@ -5,13 +5,13 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Specifies the function that customizes each layer element individually.
+A function that customizes each layer element individually.
 
 ##### param(elements): Array<MapLayerElement>
 The array of [layer elements](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element').
 
 ---
-Only the following properties can be changed in the **customize** function.
+You can change only the following properties in the **customize** function:
 
 - [borderColor](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/borderColor.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#borderColor')
 - [borderWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/borderWidth.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#borderWidth')

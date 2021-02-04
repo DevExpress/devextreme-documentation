@@ -230,7 +230,7 @@ The code below shows how to add a submit button, but does not show how to implem
     };
 
     const App = () => {
-        const handleSubmit = React.useCallback((e) => {
+        const handleSubmit = useCallback((e) => {
             setTimeout(() => { 
                 alert("Submitted");          
             }, 1000);

@@ -25,7 +25,7 @@ Indicates the stage of the summary item calculation; equals *"start"*, *"calcula
 The resulting summary item's value.
 
 ##### field(options.value): any
-If **totalItems**.[column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) is set, this field contains the value from this column. If **totalItems**.[showInColumn](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn) is used instead, this field contains all values from a row.
+If the **totalItems**.[column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) property is set, this field contains the value from this column. If **totalItems**.[showInColumn](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn) is used instead, this field contains all values from a row.
 
 ---
 This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify it in the function.

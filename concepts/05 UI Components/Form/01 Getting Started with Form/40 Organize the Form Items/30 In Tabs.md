@@ -4,7 +4,7 @@ The following example shows a tabbed item nested in the `Personal Information` g
 
 ![DevExtreme Form: Tabbed Items](/images/UiWidgets/form-getting-started-tabs.png)
 
-We also configure the tab panel's [height](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object.
+The code also shows how to configure the tab panel's [height](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#height) property in the **tabPanelOptions** object.
 
 
 ---

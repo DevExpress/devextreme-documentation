@@ -1,4 +1,4 @@
-Form items can be grouped and displayed under a single caption. To implement this layout, create a [group item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/) and nest other items within it, as shown in the code below. Group items can nest items of any type, including other group items. You can configure each group's layout separately. 
+You can add groups to better organize the data entry form. To add a group, create a [group item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/) and nest other items within it, as shown in the code below. Group items can nest items of any type, including other group items. You can configure each group's layout separately. 
 
 The following code creates two groups, each occupies a separate column. The resulting layout looks as follows:
 

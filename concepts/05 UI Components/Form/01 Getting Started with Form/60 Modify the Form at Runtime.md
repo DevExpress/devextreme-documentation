@@ -78,7 +78,7 @@ You can change any form, editor, or item properties at runtime. To update a prop
 
 ##### Vue
 
-You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. The code below shows how to modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: App.vue -->
     <template>
@@ -127,7 +127,7 @@ You can change any form, editor, or item properties at runtime. To update a prop
 
 ##### React
 
-You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. In the code below, we modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. The code below shows how to modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: App.js -->
     import React, {useState, useCallback } from 'react';

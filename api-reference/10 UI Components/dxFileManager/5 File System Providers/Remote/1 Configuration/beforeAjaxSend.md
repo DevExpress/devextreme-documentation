@@ -10,7 +10,7 @@ Specifies a function that customizes an Ajax request before it is sent to the se
 The request parameters.
 
 ##### field(options.formData): Object
-Custom data (key/value pairs) that is sent to the server with the request.
+Custom data (key/value pairs) that are sent to the server with the request.
 
 ##### field(options.headers): Object
 The request headers.

@@ -25,7 +25,7 @@ Indicates the stage of the summary item calculation; equals *"start"*, *"calcula
 The resulting summary item's value.
 
 ##### field(options.value): any
-If the custom summary item is calculated by a [column](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/column.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column'), this field contains the value from a cell of this column. Otherwise, it contains a whole object from the data source.
+If **totalItems**.[column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) is set, this field contains the value from this column. If **totalItems**.[showInColumn](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn) is used instead, this field contains all values from a row.
 
 ---
 This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify it in the function.
@@ -123,33 +123,32 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
 ---
 
-calculateCustomSummary is called before calculateCellValue. That's why if you want create an unbound data column and use its values in a custom summary, you should call this function from calculateCustomSummary as follows:
+**calculateCustomSummary** is called before [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue). If you want to create a new column and use it in a custom summary, the following example demonstrates how to do this:
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
     $(function(){
-        const  myCalculateFunction = (rowData) => {
+        const  calculateArea = (rowData) => {
             return rowData.width * rowData.height;
         }
     
         $("#gridContainer").dxDataGrid({
-            dataSource: dimensions,
+            // ...
             columns: [
                 "width", "height",
                 {
                     dataField: "Area",
-                    calculateCellValue: myCalculateFunction
+                    calculateCellValue: calculateArea
                 }
             ],
             summary: {
                 totalItems: [{
                         name: "AreaSummary",
+                        summaryType: "custom"
                         showInColumn: "Area",
                         displayFormat: "Total area: {0}",
-                        valueFormat: "decimal",
-                        summaryType: "custom"
                     }
                 ],
                 calculateCustomSummary: function (options) {
@@ -158,7 +157,7 @@ calculateCustomSummary is called before calculateCellValue. That's why if you wa
                             options.totalValue = 0;
                         }
                         if (options.summaryProcess === "calculate") {
-                            options.totalValue += myCalculateFunction(options.value);
+                            options.totalValue += calculateArea(options.value);
                         }
                     }
                 }
@@ -172,12 +171,24 @@ calculateCustomSummary is called before calculateCellValue. That's why if you wa
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
-        customSortingFunction (rowData) {
-            const column = this as any;
-            if (rowData.Position == "CEO")
-                return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
-            else
-                return rowData.Position; // Others are sorted as usual
+        constructor(private service: Service) {
+            // ...
+            this.calculateAreaSummary = this.calculateAreaSummary.bind(this);
+        }
+
+        calculateArea(rowData) {
+            return rowData.width * rowData.height;
+        }
+
+        calculateAreaSummary(options) {
+            if (options.name === "SelectedRowsSummary") {
+                if (options.summaryProcess === "start") {
+                    options.totalValue = 0;
+                }
+                if (options.summaryProcess === "calculate") {
+                    options.totalValue += this.calculateArea(options.value);
+                }
+            }
         }
     }
     @NgModule({
@@ -190,11 +201,22 @@ calculateCustomSummary is called before calculateCellValue. That's why if you wa
 
     <!--HTML-->
     <dx-{widget-name} ... >
+        <dxi-column dataField="width"></dxi-column>
+        <dxi-column dataField="height"></dxi-column>
         <dxi-column
-            dataField="Position"
-            sortOrder="asc"
-            [calculateSortValue]="customSortingFunction">
-        </dxi-column>
+            dataField="Area"
+            [calculateCellValue]="calculateArea"
+        ></dxi-column>
+
+        <dxo-summary [calculateCustomSummary]="calculateAreaSummary">
+            <dxi-total-item
+                name="SelectedRowsSummary"
+                summaryType="custom"
+                showInColumn="Area"
+                displayFormat="Total area: {0}"
+            >
+            </dxi-total-item>
+        </dxo-summary>
     </dx-{widget-name}>
     
 ##### Vue
@@ -202,29 +224,47 @@ calculateCustomSummary is called before calculateCellValue. That's why if you wa
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ... >
-            <DxColumn
-                data-field="Position"
-                :calculate-sort-value="customSortingFunction"
+            <DxColumn data-field="width" />
+            <DxColumn data-field="height" />
+            <DxColumn 
+                data-field="Area" 
+                :calculate-cell-value="calculateArea" 
             />
+            <DxSummary :calculate-custom-summary="calculateAreaSummary">
+                <DxTotalItem
+                    name="AreaSummary"
+                    summary-type="custom"
+                    show-in-column="Area"
+                    display-format="Total Area: {0}"
+                />
+            </DxSummary>
         </DxDataGrid>
     </template>
     <script>
-    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxColumn, DxSummary, DxTotalItem } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
             DxDataGrid,
-            DxColumn
+            DxColumn,
+            DxSummary, 
+            DxTotalItem
         },
         data() {
             return {
                 // ...
-                customSortingFunction(rowData) {
-                    const column = this;
-                    if (rowData.Position == "CEO")
-                        return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
-                    else 
-                        return rowData.Position; // Others are sorted as usual
+                calculateArea(rowData) {
+                    return rowData.width * rowData.height;
+                },
+                calculateAreaSummary(options) {
+                    if (options.name === "AreaSummary") {
+                        if (options.summaryProcess === "start") {
+                            options.totalValue = 0;
+                        }
+                        if (options.summaryProcess === "calculate") {
+                            options.totalValue += this.calculateArea(options.value);
+                        }
+                    }
                 },
             };
         },
@@ -235,24 +275,38 @@ calculateCustomSummary is called before calculateCellValue. That's why if you wa
 
     <!-- tab: App.js -->
     import React from 'react';
-    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    import DataGrid, { Column, Summary, TotalItem } from 'devextreme-react/data-grid';
 
-    function customSortingFunction(rowData){
-        const column = this;
-        if (rowData.Position == "CEO")
-            return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
-        else 
-            return rowData.Position; // Others are sorted as usual
+    function calculateArea(rowData) {
+        return rowData.width * rowData.height;
+    };
+
+    function calculateAreaSummary(options) {
+        if (options.name === "AreaSummary") {
+            if (options.summaryProcess === "start") {
+                options.totalValue = 0;
+            }
+            if (options.summaryProcess === "calculate") {
+                options.totalValue += calculateArea(options.value);
+            }
+        }
     }
 
     function App() {
         // ...
         return (
             <DataGrid ...>
-                <Column
-                    dataField="Position"
-                    calculateSortValue={customSortingFunction}
-                />
+                <Column dataField="width" />
+                <Column dataField="height" />
+                <Column dataField="Area" calculateCellValue={this.calculateArea} />
+                <Summary calculateCustomSummary={this.calculateAreaSummary}>
+                    <TotalItem
+                        name="AreaSummary"
+                        summaryType="custom"
+                        showInColumn="Area"
+                        displayFormat="Total Area: {0}"
+                    />
+                </Summary>
             </DataGrid>
         );
     }
@@ -260,6 +314,8 @@ calculateCustomSummary is called before calculateCellValue. That's why if you wa
     export default App;
 
 ---
+
+Note that the example above uses totalItems.**showInColumn** instead of totalItems.**column**. This is because **calculateCustomSummary** uses values from multiple columns.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomSummaries/"

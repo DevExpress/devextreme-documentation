@@ -6,7 +6,7 @@ default: true
 ---
 ##### shortDescription
 Specifies whether a user can add [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
-
+[tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
 ---
 
 ![DevExtreme Gantt Chart - Task Resources](/images/Gantt/resource-assignments.png)
@@ -36,7 +36,7 @@ Set the **allowResourceAdding** option to **false** to disable the **Add** butto
 
 ---
 
-Note that you cannot open the "Resource Manager" dialog if the **allowResourceAdding** and [allowResourceDeleting](/Documentation/ApiReference/UI_Components/dxGantt/editing/#allowResourceDeleting) options are set to **false**.
+Note that you cannot open the "Resource Manager" dialog if the **allowResourceAdding** and [allowResourceDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowResourceDeleting) options are set to **false**.
 
 ![DevExtreme Gantt Chart - Disabled Resource Manager](/images/Gantt/edit-dialog-diable-resource-manager.png)
 

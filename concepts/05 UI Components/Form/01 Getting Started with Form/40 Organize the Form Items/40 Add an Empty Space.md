@@ -1,4 +1,4 @@
-If you need to add an empty space between neighboring items, use an empty item. To create it, assign "empty" to the [itemType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#itemType) property. To define how many columns the empty item must span, specify the [colSpan](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#colSpan) option. For the full list of available properties, visit the [Empty Item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/) section.
+If you need to add an empty space between neighboring items, use an empty item. To create an empty item, assign "empty" to the [itemType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#itemType) property. To define how many columns the empty item should span, specify the [colSpan](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#colSpan) option. For a list of available properties, refer to the [Empty Item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/) section.
 
 
 
@@ -159,4 +159,3 @@ In the following example, the empty item [spans](/Documentation/ApiReference/UI_
     export default App;
 
 ---
-

@@ -56,7 +56,6 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
                                 break;
                             case "finalize":
                                 // Assigning the final value to "totalValue" here
-                                break;
                         }
                     }
 
@@ -102,7 +101,6 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
                         break;
                     case "finalize":
                         // Assigning the final value to "totalValue" here
-                        break;
                 }
             }
 
@@ -123,17 +121,28 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
 ---
 
-**calculateCustomSummary** is called before [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue). If you want to create a new column and use it in a custom summary, the following example demonstrates how to do this:
+**calculateCustomSummary** is called before [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue). If you want to create a new column and use its values in a custom summary, the following example demonstrates how to implement these functions:
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
-    $(function(){
-        const  calculateArea = (rowData) => {
-            return rowData.width * rowData.height;
+    const  calculateArea = (rowData) => {
+        return rowData.width * rowData.height;
+    }
+
+    function calculateAreaSummary(options) {
+        if (options.name === "calculateAreaSummary") {
+            if (options.summaryProcess === "start") {
+                options.totalValue = 0;
+            }
+            if (options.summaryProcess === "calculate") {
+                    options.totalValue += calculateArea(options.value);
+            }
         }
-    
+    }
+
+    $(function(){    
         $("#gridContainer").dxDataGrid({
             // ...
             columns: [
@@ -148,19 +157,10 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
                         name: "AreaSummary",
                         summaryType: "custom"
                         showInColumn: "Area",
-                        displayFormat: "Total area: {0}",
+                        displayFormat: "Total Area: {0}",
                     }
                 ],
-                calculateCustomSummary: function (options) {
-                    if (options.name === "AreaSummary") {
-                        if (options.summaryProcess === "start") {
-                            options.totalValue = 0;
-                        }
-                        if (options.summaryProcess === "calculate") {
-                            options.totalValue += calculateArea(options.value);
-                        }
-                    }
-                }
+                calculateCustomSummary: calculateAreaSummary
             }
         });
     });
@@ -181,7 +181,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         }
 
         calculateAreaSummary(options) {
-            if (options.name === "SelectedRowsSummary") {
+            if (options.name === "calculateAreaSummary") {
                 if (options.summaryProcess === "start") {
                     options.totalValue = 0;
                 }
@@ -210,10 +210,10 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
         <dxo-summary [calculateCustomSummary]="calculateAreaSummary">
             <dxi-total-item
-                name="SelectedRowsSummary"
+                name="AreaSummary"
                 summaryType="custom"
                 showInColumn="Area"
-                displayFormat="Total area: {0}"
+                displayFormat="Total Area: {0}"
             >
             </dxi-total-item>
         </dxo-summary>
@@ -257,7 +257,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
                     return rowData.width * rowData.height;
                 },
                 calculateAreaSummary(options) {
-                    if (options.name === "AreaSummary") {
+                    if (options.name === "calculateAreaSummary") {
                         if (options.summaryProcess === "start") {
                             options.totalValue = 0;
                         }
@@ -282,7 +282,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     };
 
     function calculateAreaSummary(options) {
-        if (options.name === "AreaSummary") {
+        if (options.name === "calculateAreaSummary") {
             if (options.summaryProcess === "start") {
                 options.totalValue = 0;
             }
@@ -298,8 +298,8 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
             <DataGrid ...>
                 <Column dataField="width" />
                 <Column dataField="height" />
-                <Column dataField="Area" calculateCellValue={this.calculateArea} />
-                <Summary calculateCustomSummary={this.calculateAreaSummary}>
+                <Column dataField="Area" calculateCellValue={calculateArea} />
+                <Summary calculateCustomSummary={calculateAreaSummary}>
                     <TotalItem
                         name="AreaSummary"
                         summaryType="custom"
@@ -315,7 +315,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
 ---
 
-Note that the example above uses totalItems.**showInColumn** instead of totalItems.**column**. This is because **calculateCustomSummary** uses values from multiple columns.
+Note that the example above uses totalItems.**showInColumn** instead of totalItems.**column**. This is because **calculateCustomSummary** works with values from multiple columns.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomSummaries/"

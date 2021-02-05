@@ -62,7 +62,6 @@ An error message can be specified as follows:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxTextBox } from 'devextreme-vue/text-box';
@@ -85,7 +84,6 @@ An error message can be specified as follows:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { TextBox } from 'devextreme-react/text-box';
@@ -172,7 +170,6 @@ An error message can be specified as follows:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxTextBox } from 'devextreme-vue/text-box';
@@ -195,7 +192,6 @@ An error message can be specified as follows:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { TextBox } from 'devextreme-react/text-box';
@@ -283,7 +279,6 @@ An error message can be specified as follows:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxTextBox } from 'devextreme-vue/text-box';
@@ -305,7 +300,6 @@ An error message can be specified as follows:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { TextBox } from 'devextreme-react/text-box';

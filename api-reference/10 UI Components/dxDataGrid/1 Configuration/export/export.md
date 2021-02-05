@@ -134,7 +134,6 @@ The following instructions show how to enable and configure client-side export:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxDataGrid, 
@@ -155,7 +154,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DataGrid, {
@@ -284,7 +282,6 @@ The following instructions show how to enable and configure client-side export:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
@@ -325,7 +322,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { Workbook } from 'exceljs';

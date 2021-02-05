@@ -93,7 +93,6 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20W
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';    
         
         import {

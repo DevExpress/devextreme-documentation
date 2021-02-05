@@ -59,7 +59,6 @@ The **FileManager** can divide a large file in parts and upload them in separate
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';    
         
         import {

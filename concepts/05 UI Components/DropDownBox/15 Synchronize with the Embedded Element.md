@@ -96,7 +96,6 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxDropDownBox from "devextreme-vue/drop-down-box";
@@ -124,7 +123,6 @@ Assign the field's name to the **DropDownBox**'s [valueExpr](/api-reference/10%2
     ##### React
 
         import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DropDownBox } from 'devextreme-react/drop-down-box';
@@ -264,7 +262,6 @@ This step's implementation depends on the embedded UI component's API and the li
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxDropDownBox from "devextreme-vue/drop-down-box";
@@ -300,7 +297,6 @@ This step's implementation depends on the embedded UI component's API and the li
     ##### React
 
         import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DropDownBox } from 'devextreme-react/drop-down-box';

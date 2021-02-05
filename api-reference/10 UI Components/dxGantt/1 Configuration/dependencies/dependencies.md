@@ -205,7 +205,6 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 

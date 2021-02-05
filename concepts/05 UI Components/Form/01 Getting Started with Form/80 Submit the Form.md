@@ -2,7 +2,7 @@ To submit a form, add a [Button Item](/Documentation/ApiReference/UI_Components/
 
 The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. You should also set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to **true** to override the HTML form submit event as shown in the code example.
 
-The code below shows how to add a submit button, but does not show how to implement the backend. The example displays a fake confirmation message after a timeout:
+The code below shows how to add a submit button, but does not show how to implement the backend. The example displays a confirmation message after the timeout:
 
 ---
 ##### jQuery

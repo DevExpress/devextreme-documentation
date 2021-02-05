@@ -1,6 +1,6 @@
 The Form component creates a data entry UI for the underlying data object. The interface consists of automatically-arranged label-editor pairs that correspond to data fields. You can change data values, validate user input, and send the resulting data to the server.
 
-This tutorial shows you the basics of **Form** component configuration. The preview below shows the expected result:
+This tutorial shows basic Form component configuration.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/Form/index.html, /Content/Applications/20_2/GettingStartedWith/Form/index.js, /Content/Applications/20_2/GettingStartedWith/Form/index.css"></div>
 

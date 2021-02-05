@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-You can change any form, editor, or item properties at runtime. Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property. The code below modifies the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any properties of the form, its items or editors at runtime. Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property. The code below modifies the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: index.js -->
     $(function() {
@@ -25,7 +25,7 @@ You can change any form, editor, or item properties at runtime. Use the [option(
 
 ##### Angular
 
-You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. The code below modifies the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any properties of the form, its items or editors at runtime. To update a property value, bind it to a component property. The code below modifies the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: app.component.html -->
     <dx-form
@@ -78,7 +78,7 @@ You can change any form, editor, or item properties at runtime. To update a prop
 
 ##### Vue
 
-You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. The code below shows how to modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any properties of the form, its items or editors at runtime. To update a property value, bind it to a component property. The code below shows how to modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: App.vue -->
     <template>
@@ -127,7 +127,7 @@ You can change any form, editor, or item properties at runtime. To update a prop
 
 ##### React
 
-You can change any form, editor, or item properties at runtime. To update a property value, bind it to a component property. The code below shows how to modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any properties of the form, its items or editors at runtime. To update a property value, bind it to a component property. The code below shows how to modify the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: App.js -->
     import React, {useState, useCallback } from 'react';

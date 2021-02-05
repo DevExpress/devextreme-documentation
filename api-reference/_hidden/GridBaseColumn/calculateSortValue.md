@@ -112,7 +112,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
                 calculateSortValue: function (rowData) {
                     const column = this;
                     if (rowData.Position == "CEO")
-                        return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                        return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
                     else
                         return rowData.Position; // Others are sorted as usual
                 }
@@ -129,7 +129,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         customSortingFunction (rowData) {
             const column = this as any;
             if (rowData.Position == "CEO")
-                return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
             else
                 return rowData.Position; // Others are sorted as usual
         }
@@ -176,7 +176,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
                 customSortingFunction(rowData) {
                     const column = this;
                     if (rowData.Position == "CEO")
-                        return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+                        return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
                     else 
                         return rowData.Position; // Others are sorted as usual
                 },
@@ -194,7 +194,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     function customSortingFunction(rowData){
         const column = this;
         if (rowData.Position == "CEO")
-            return column.sortOrder == "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
+            return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
         else 
             return rowData.Position; // Others are sorted as usual
     }

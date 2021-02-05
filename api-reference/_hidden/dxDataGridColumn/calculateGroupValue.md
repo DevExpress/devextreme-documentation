@@ -111,7 +111,7 @@ This property accepts the name of the data source field that provides values by 
     <!--JavaScript-->
     const convertDateToString = date => {
         return date.toISOString().split('T')[0].replaceAll('-', '/');
-    };
+    }
 
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
@@ -163,7 +163,7 @@ This property accepts the name of the data source field that provides values by 
 
     const convertDateToString = (date) => {
         return date.toISOString().split("T")[0].replaceAll("-", "/");
-    };
+    }
 
     export class AppComponent {
         // ...
@@ -213,7 +213,7 @@ This property accepts the name of the data source field that provides values by 
 
     const convertDateToString = (date) => {
         return date.toISOString().split("T")[0].replaceAll("-", "/");
-    };
+    }
 
     export default {
         components: {
@@ -252,7 +252,7 @@ This property accepts the name of the data source field that provides values by 
 
     const convertDateToString = (date) => {
         return date.toISOString().split("T")[0].replaceAll("-", "/");
-    };
+    }
 
     function App() {
         // ...

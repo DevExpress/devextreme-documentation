@@ -21,10 +21,10 @@ This property accepts the name of the data source field that provides values by 
     <!--JavaScript-->$(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             columns: [{
-                    dataField: "ColumnValues",
-                    groupIndex: 0,
-                    calculateGroupValue: "GroupingValues"
-                }]
+                dataField: "ColumnValues",
+                groupIndex: 0,
+                calculateGroupValue: "GroupingValues"
+            }]
         });
     });
 

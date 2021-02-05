@@ -5,7 +5,25 @@ default: {}
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the request headers.
 
 ---
-<!-- Description goes here -->
+
+[note] The **requestHeaders** option is not in effect for the file download requests. 
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
+                requestHeaders: {
+                    YourHeaderName: "YourHeaderValue"
+                },
+                // ...
+            })
+        });
+    });
+
+---

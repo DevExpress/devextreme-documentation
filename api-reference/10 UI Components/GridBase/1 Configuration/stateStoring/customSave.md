@@ -48,7 +48,7 @@ In the following code, the state is saved and loaded from a remote storage:
                 enabled: true,
                 type: "custom",
                 customLoad: function () {
-                    return sendStorageRequest("storageKey", "json", "GET");;
+                    return sendStorageRequest("storageKey", "json", "GET");
                 },
                 customSave: function (state) {
                     sendStorageRequest("storageKey", "text", "PUT", state);
